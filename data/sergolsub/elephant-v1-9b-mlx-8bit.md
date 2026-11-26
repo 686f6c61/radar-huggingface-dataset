@@ -2,109 +2,113 @@
 
 ## Resumen
 
-Elephant v1 9B MLX 8-bit (identificador `sergolsub/elephant-v1-9B-MLX-8bit`) es una conversión cuantizada a 8 bits en formato MLX del modelo `baselabs/elephant-1`, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería `mlx_lm`. No se trata de un modelo nuevo ni de un reentrenamiento: el autor indica explícitamente que la conversión solo aplica cuantización de 8 bits, sin cambios de arquitectura ni ajuste adicional, y que la licencia MIT se hereda de los pesos originales.
+Elephant-v1-9B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo base `baselabs/elephant-1`, publicada por el usuario sergolsub. No se trata de un modelo nuevo entrenado desde cero, sino de una versión optimizada para su ejecución en Apple Silicon mediante la librería `mlx_lm`. El peso de los parámetros originales (9.409.813.744) se mantiene íntegro; la conversión solo aplica cuantización de 8 bits sin cambios arquitectónicos ni reentrenamiento.
 
-El modelo cuenta con 9.409.813.744 parámetros totales y un repositorio de 11,4 GB distribuido en tres shards de safetensors. La etiqueta `qwen3_5` en Hugging Face sugiere una arquitectura derivada de la familia Qwen 3.5, e incluye atención lineal (`linear_attn`) en al menos la primera capa del modelo de lenguaje, según el informe de auditoría KL incluido en el repositorio.
+El modelo destaca por incorporar una "cabeza de decisión" (decision head) que permite formular tareas de clasificación estructurada —binaria, de elección múltiple o de puntuación— a partir de texto e imágenes. Según la model card, la versión de 8 bits conserva prácticamente intacta la calidad del bf16 original: precisión del 92,2 %, PPL de calibración de 1,769 frente a 1,771, y una KL de salida media de 3,05e-04. Todo ello con un tamaño en disco de 11,4 GB frente a los 18,84 GB del original.
 
-La relevancia de esta ficha radica en que el modelo incorpora una interfaz de decisión estructurada (cabecera de decisión con tipos `noul`, `choice` y `score`) orientada a tareas de clasificación y enrutamiento, además de soporte de imagen. El autor publica métricas de calidad tras la cuantización (accuracy 92,2 % en 8-bit frente a 92,2 % en bf16) y un índice propio, el Decision Index 0.4.1, con valor 62,11.
+La relevancia de esta ficha radica en que ofrece una alternativa práctica para desarrolladores que trabajan en Mac con chip M-series y necesitan desplegar un modelo de ~9B parámetros con capacidades de decisión estructurada sin depender de GPU dedicadas. La licencia MIT del modelo original se mantiene, lo que facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención lineal (tag `qwen3_5`; derivada de Qwen 3.5), con cabecera de decisión y soporte multimodal de imagen |
-| Parámetros totales | 9.409.813.744 |
-| Parámetros activos | No aplica (no es MoE según la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | 8-bit (MLX); los pesos originales están en bf16 |
-| Idiomas soportados | No disponible |
-| Licencia | MIT (heredada de `baselabs/elephant-1`) |
-| Formato de pesos | Safetensors en layout MLX (3 shards: 4,30 GB + 4,32 GB + 2,75 GB) |
+| Arquitectura | Transformer (familia qwen3_5, según tag); incluye módulos de atención lineal (`linear_attn`) y cabeza de decisión |
+| Parametros totales | 9.409.813.744 |
+| Parametros activos | no disponible (no es MoE según los tags) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 8 bits (MLX); existe también una versión 4 bits del mismo autor |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (MLX, 3 shards) + archivos de configuración y glue de inferencia (`*_mlx.py`, `decision_config.json`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla el proceso de entrenamiento del modelo original `baselabs/elephant-1`: no se especifican el número de tokens, la composición del dataset ni si hubo RLHF, DPO u otras fases de alineación. La etiqueta `qwen3_5` apunta a una arquitectura de la familia Qwen 3.5, y el informe de auditoría KL identifica capas de atención lineal (`model.language_model.layers.0.linear_attn.in_proj_a.weight`), lo que confirma un esquema híbrido con atención lineal en al menos parte de las capas.
+La arquitectura subyacente corresponde a la familia `qwen3_5`, según los tags del repositorio, e incorpora capas de atención lineal (`linear_attn`) junto con atención estándar. El modelo base `baselabs/elephant-1` incluye una cabeza de decisión que permite plantear preguntas estructuradas con tipos `noul` (sí/no), `choice` (elección entre criterios) y `score` (puntuación sobre una escala). Esta versión MLX no modifica la arquitectura: solo cuantiza los pesos a 8 bits y añade el glue de inferencia necesario (`onejev_mlx`, `engine.py`, `decision_config.json`, `joint_config.json`) para ejecutar el modelo con `mlx_lm` en Apple Silicon.
 
-La innovación principal de esta variante es la interfaz de decisión: el repositorio incluye `onejev_mlx.py`, `decision_config.json` y `joint_config.json`, que implementan una cabecera de decisión con tres tipos de tarea (`noul` para preguntas binarias, `choice` para selección entre criterios y `score` para puntuación ordinal). El modelo también procesa imágenes, según las mediciones del autor con entradas de 512x512 píxeles. La cuantización a 8 bits se auditó tensor a tensor: 760 tensores comparados, KL medio de 2,16e-04, KL máximo de 5,57e-03 y 249 tensores con KL distinto de cero, con la peor capa en `linear_attn.in_proj_a.weight` de la capa 0.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original. La model card de esta conversión no documenta esos detalles y se limita a describir el proceso de cuantización. La auditoría de pesos incluida (`kl_audit.json`) compara 760 tensores entre el original y la versión 8 bits, con una KL media de 2,16e-04 y un máximo de 5,57e-03 en la capa `model.language_model.layers.0.linear_attn.in_proj_a.weight`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con soporte de plantilla de chat (`chat_template.jinja`).
-- Decisión estructurada mediante cabecera dedicada: preguntas binarias (`noul`), elección entre opciones (`choice`) y puntuación ordinal (`score`).
-- Procesamiento de imágenes combinadas con texto (entrada de 512x512 píxeles medida por el autor); la detección de cajas delimitadoras (box) no está soportada.
-- Inferencia en Apple Silicon mediante `mlx_lm` y el cargador propio `onejev_mlx.OneJev`.
-- Servidor compatible con endpoint `/v1/systemone` (incluido como `serve.patch` en el repositorio).
-- Soporte multilingüe: no disponible en la información proporcionada.
-- Tool calling, function calling y razonamiento multi-paso en agentes: no disponible en la información proporcionada.
+- Generación de texto y razonamiento general, heredadas del modelo base `baselabs/elephant-1`.
+- Decisión estructurada: clasificación binaria (`noul`), elección múltiple (`choice`) y puntuación ordinal (`score`) mediante la cabeza de decisión.
+- Procesamiento de imagen: la model card reporta latencias para entradas de imagen 512x512 combinadas con texto, lo que indica capacidades multimodales de entrada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
+- Detección de cajas (box): la model card indica explícitamente "Box: not supported".
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo puede clasificar una incidencia en un equipo concreto (`choice`) a partir de criterios como facturación o envío, con una latencia mediana de decisión de 657 ms y 2,56 decisiones cortas por segundo en un Mac mini M4 Pro.
-- Detección de intención de reembolso: con el tipo `noul`, permite responder preguntas binarias del tipo "¿el cliente quiere un reembolso?" sobre el texto de la incidencia, adecuado para triaje automático en atención al cliente.
-- Priorización de incidencias: el tipo `score` con criterios ordinales (cosmético, molesto, bloqueante) permite asignar severidad a errores de sistema, como fallos de exportación por cuota de disco.
-- Moderación o filtrado de contenido: la interfaz de decisión binaria se puede reutilizar para clasificadores de sí/no sobre texto, con la ventaja de que la salida está restringida a las opciones definidas.
-- Análisis de capturas o documentos escaneados: al aceptar imagen de 512x512 junto con texto, puede clasificar el contenido de una captura (por ejemplo, un error en pantalla) y combinarlo con una decisión estructurada, con latencias de unos 2,4 s por consulta.
-- Prototipado local en Mac: con 12,21 GB de memoria residente máxima y carga en 5,08 s, es viable ejecutar el modelo en un Mac mini M4 Pro de 48 GB para pruebas de pipelines de decisión sin depender de GPU dedicadas.
-- Servicio interno de clasificación: el parche `serve.patch` y el cargador `onejev_mlx.py` permiten desplegar un endpoint compatible con `/v1/systemone` para integrar las decisiones en un backend existente.
+- Triaje de tickets de soporte: el modelo puede clasificar automáticamente si un cliente solicita un reembolso (`noul`), asignar el ticket al equipo adecuado (`choice` entre facturación y envíos) o puntuar la severidad de una incidencia (`score`). La latencia medida de 657 ms por decisión permite integrarlo en un pipeline de atención al cliente en tiempo real.
+- Enrutamiento de incidencias técnicas: con la modalidad `choice`, se puede dirigir un error de exportación o un fallo de cuota de disco al equipo correspondiente, usando los criterios definidos en la llamada.
+- Moderación de contenido con imagen: al aceptar entradas de imagen 512x512 junto con texto (2,4 s por decisión), puede emplearse para clasificar publicaciones que combinan texto e imagen en categorías predefinidas.
+- Priorización de colas de soporte: la modalidad `score` con criterios ordinales ("cosmetic", "annoying", "blocks") permite ordenar incidencias por impacto sin necesidad de un modelo generativo adicional.
+- Automatización de formularios y encuestas: la clasificación binaria (`noul`) sobre respuestas de texto libre permite extraer intenciones de forma estructurada y alimentar bases de datos relacionales.
+- Despliegue en estaciones de trabajo Mac: al ejecutarse con `mlx_lm` en un Mac mini M4 Pro con 48 GB de RAM (12,21 GB de RSS pico), es adecuado para prototipado y producción ligera en entornos sin GPU NVIDIA.
+- Evaluación de calidad de conversaciones: la modalidad `score` puede puntuar interacciones de chat según criterios definidos por el equipo, con una precisión del 88 % reportada en el conjunto de evaluación del autor.
 
 ## Benchmarks y rendimiento
 
-El autor publica métricas propias de calidad y de rendimiento, no benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K). No se han publicado resultados de benchmarks estándar en la información disponible.
+Los datos disponibles provienen de la evaluación propia del autor de la conversión, no de benchmarks estándar como MMLU o HumanEval.
 
-| Métrica | 8-bit (MLX) | bf16 (referencia) |
-|---|---|---|
-| Accuracy | 92,2 % | 92,2 % |
-| Noul | 95,0 % | 95,0 % |
-| Choice | 92,0 % | 92,0 % |
-| Score | 88,0 % | 88,0 % |
-| Perplejidad de calibración | 1,769 | 1,771 |
-| Decision Index 0.4.1 | 62,11 | No disponible |
+| Metrica | Original (bf16) | 8 bits (MLX) | 4 bits (MLX) |
+|---|---|---|---|
+| Precisión | 92,2 % | 92,2 % | 86,7 % |
+| `noul` | 95,0 % | 95,0 % | 92,5 % |
+| `choice` | 92,0 % | 92,0 % | 84,0 % |
+| `score` | 88,0 % | 88,0 % | 80,0 % |
+| PPL de calibración | 1,771 | 1,769 | 1,897 |
+| KL de salida vs original | — (referencia) | 3,05e-04 | 3,28e-02 |
+| Tamaño en disco | 18,84 GB | 11,4 GB | 7,43 GB |
+| Latencia mediana | 735 ms | 657 ms | 1654 ms |
 
-| Medición en Mac mini M4 Pro 48 GB | Valor |
+| Metrica adicional (8 bits, Mac mini M4 Pro 48 GB) | Valor |
 |---|---|
-| Carga del modelo | 5,08 s (5,32 s en la medición de disco) |
-| Memoria residente máxima | 12,21 GB |
-| Texto de 512 tokens (492 tok), media de 5 tras 3 de calentamiento | 1.425 ms (binario), 1.430 ms (multichoice), 1.435 ms (score) |
-| Imagen 512x512 + texto | 2.407 ms (binario), 2.404 ms (multichoice), 2.400 ms (score) |
-| Latencia mediana de decisión | 657 ms |
-| Decisiones cortas sostenidas | 2,56 por segundo |
-| Cajas delimitadoras (box) | No soportado |
+| Carga del modelo | 5,08 s |
+| RSS pico | 12,21 GB |
+| Texto 512 tokens (492 tok), media de 5 tras 3 warm-ups | 1425-1435 ms |
+| Imagen 512x512 + texto | 2400-2407 ms |
+| Decisiones cortas sostenidas | 2,56/s |
+| Decision Index 0.4.1 | 62,11 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 12,21 GB de memoria residente máxima medida en MLX 8-bit; el repositorio ocupa 11,4 GB en disco.
-- Hardware de referencia del autor: Mac mini M4 Pro con 48 GB de memoria unificada.
-- GPU dedicadas (A100, H100, RTX 4090): no disponible; el formato MLX está orientado a Apple Silicon, por lo que no se contempla su ejecución directa en CUDA sin reconversión.
-- ¿Cabe en GPU de consumo? En el ecosistema Apple, sí: un Mac con 16 GB o más de memoria unificada debería poder alojar los 12,21 GB medidos, aunque no se han publicado pruebas en configuraciones inferiores a 48 GB.
-- Opciones de despliegue: `mlx_lm` con el cargador `onejev_mlx.OneJev`; servidor mediante `serve.patch` (endpoint `/v1/systemone`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: latencia mediana de decisión de 657 ms y 2,56 decisiones cortas por segundo en el hardware de referencia; 1,43 s por consulta de texto de 512 tokens y 2,40 s con imagen 512x512.
+- VRAM/RAM estimada para inferencia: 12,21 GB de RSS pico medidos en MLX 8 bits; el modelo ocupa 11,4 GB en disco.
+- GPU recomendadas: Apple Silicon (M1/M2/M3/M4). La medición oficial se realizó en un Mac mini M4 Pro con 48 GB de memoria unificada.
+- Compatibilidad con GPU consumer NVIDIA: no disponible; el formato MLX está diseñado para Apple Silicon.
+- Cabe en consumer GPU: sí, en equipos Apple Silicon con al menos 16 GB de memoria unificada (recomendable 24 GB o más para margen).
+- Opciones de despliegue: `mlx_lm` (librería oficial), el runtime `onejev_mlx` incluido en el repositorio, y el servidor `/v1/systemone` mencionado en la model card.
+- Latencia y throughput: 657 ms de latencia mediana por decisión; 2,56 decisiones cortas por segundo sostenidas; 1,4 s para 512 tokens de texto; 2,4 s para imagen 512x512 + texto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks estándar ni de especificaciones completas de los modelos comparables en la información proporcionada. La comparación se limita a los datos disponibles del propio modelo y de su base.
-
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| elephant-v1-9B-MLX-8bit (este) | 9,41 B | No disponible | 8-bit MLX | MIT | Safetensors MLX |
-| baselabs/elephant-1 (base) | 9,41 B (según pesos derivados) | No disponible | bf16 | MIT | Safetensors |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+| sergolsub/elephant-v1-9B-MLX-8bit | 9,41B | no disponible | MIT | safetensors MLX 8-bit | Hugging Face |
+| sergolsub/elephant-v1-9B-MLX-4bit | 9,41B | no disponible | MIT | safetensors MLX 4-bit | Hugging Face |
+| baselabs/elephant-1 (bf16) | 9,41B | no disponible | MIT | safetensors bf16 | Hugging Face |
+
+La comparación con modelos de otras familias (por ejemplo, Qwen 2.5 7B o Llama 3.1 8B) no está disponible en la información proporcionada, ya que no se han publicado resultados de benchmarks estándar para elephant-1 que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos del modelo original ni de la conversión; se desconoce su comportamiento en dominios sensibles.
-- Riesgo de alucinación: no evaluado en la información disponible; las métricas publicadas miden precisión en tareas de decisión restringidas, no generación abierta.
-- Idiomas soportados: no disponible; no se puede garantizar un rendimiento multilingüe sin evaluación adicional.
-- Longitud de contexto: no disponible; limita el diseño de aplicaciones con documentos largos o conversaciones multi-turno extensas.
-- La licencia MIT se hereda de los pesos originales; el autor advierte de que, en caso de conflicto, prevalece la licencia del repositorio upstream `baselabs/elephant-1`.
-- El formato MLX está orientado a Apple Silicon; no hay soporte documentado para CUDA, vLLM, llama.cpp, Ollama ni TGI, lo que restringe su uso en infraestructura de GPU convencional.
-- La detección de cajas delimitadoras no está soportada.
-- La cuantización introduce una degradación mínima pero no nula: 249 de 760 tensores presentan KL distinto de cero, con un máximo de 5,57e-03 en la capa de atención lineal 0.
-- El modelo incluye código de carga propio (`onejev_mlx.py`, `serve.patch`, `setup.sh`) que debe auditarse antes de ejecutarlo en producción; el autor proporciona checksums SHA-256 de todos los archivos para verificación.
+- La model card no documenta sesgos conocidos del modelo base; se desconoce su comportamiento en dominios sensibles.
+- Riesgo de alucinación: no cuantificado en la información disponible. La cabeza de decisión está diseñada para tareas cerradas, lo que reduce el riesgo en ese modo, pero la generación libre no ha sido evaluada.
+- Limitaciones de contexto e idioma: no se especifican ni la longitud de contexto ni los idiomas soportados.
+- La modalidad de detección de cajas ("box") no está soportada explícitamente.
+- La licencia MIT se hereda del modelo original; en caso de conflicto, prevalece la licencia del repositorio upstream `baselabs/elephant-1`.
+- La conversión no ha sido validada con benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K); las métricas reportadas son de evaluación propia del autor y podrían no ser representativas.
+- El formato MLX limita el despliegue a Apple Silicon; no es directamente portable a CUDA, ROCm ni CPU genérica sin reconversión.
+- El repositorio tiene un número reducido de descargas (345) y ningún "like", lo que sugiere una validación comunitaria limitada.
+- La fecha de creación (2026-10-24) y actualización (2026-11-22) indican que el modelo es muy reciente; puede haber cambios en el repositorio.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/elephant-v1-9B-MLX-8bit
-- Modelo base: https://huggingface.co/baselabs/elephant-1
-- Auditoría KL por tensor: `kl_audit.json` dentro del repositorio
-- Checksums SHA-256: sección "Checksums" de la model card del repositorio
-- Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.
+- Modelo base (bf16): https://huggingface.co/baselabs/elephant-1
+- Versión 4 bits del mismo autor: https://huggingface.co/sergolsub/elephant-v1-9B-MLX-4bit
+- Librería MLX: https://github.com/ml-explore/mlx
+- Documentación de `mlx_lm`: https://github.com/ml-explore/mlx-examples/tree/main/llms

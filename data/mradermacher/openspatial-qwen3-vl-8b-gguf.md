@@ -2,73 +2,92 @@
 
 ## Resumen
 
-OpenSpatial-Qwen3-VL-8B-GGUF es una colección de cuantizaciones GGUF del modelo OpenSpatial-Qwen3-VL-8B, desarrollado por VINHYU. Este modelo base es un sistema de visión-lenguaje (VLM) especializado en razonamiento espacial, diseñado para comprender relaciones geométricas, posiciones y disposiciones de objetos en imágenes. La versión GGUF, creada por mradermacher, permite ejecutar el modelo en hardware de consumo mediante formatos optimizados para inferencia local, sin necesidad de infraestructura de servidor dedicada.
+OpenSpatial-Qwen3-VL-8B-GGUF es la distribucion en formato GGUF del modelo VINHYU/OpenSpatial-Qwen3-VL-8B, un modelo vision-language de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) afinado para razonamiento espacial. El repositorio lo publica mradermacher, que actua unicamente como cuantizador: no entrena ni modifica el modelo, sino que genera versiones estaticas en GGUF a partir de los pesos originales en safetensors para permitir su ejecucion en llama.cpp y herramientas compatibles.
 
-El modelo cuenta con aproximadamente 8,19 mil millones de parámetros y está disponible en múltiples niveles de cuantización, desde Q2_K hasta f16, además de los proyectores multimodales (mmproj) necesarios para procesar entradas visuales. Su licencia Apache-2.0 facilita su uso comercial y académico. Aunque la información pública no detalla la arquitectura interna ni los datos de entrenamiento, el nombre sugiere una base sobre Qwen3-VL, un modelo multimodal de Qwen con capacidades avanzadas de percepción visual y razonamiento.
+El modelo base parte de la familia Qwen3-VL, de ahi su arquitectura transformer multimodal con torre de vision y capacidades conversacionales, y anade un ajuste especifico orientado a tareas de comprension espacial: localizacion de objetos, relaciones entre elementos de una imagen y razonamiento sobre disposiciones fisicas. La licencia Apache 2.0 facilita su adopcion tanto en investigacion como en productos comerciales.
 
-Esta ficha se centra en la versión cuantizada, que es la que se distribuye en este repositorio, y no en el modelo original. Los datos técnicos provienen exclusivamente de la model card del autor de la cuantización y de los metadatos de Hugging Face.
+La relevancia de esta ficha radica en que el repositorio GGUF es la via practica para desplegar el modelo en hardware de consumo: ofrece 13 cuantizaciones desde Q2_K hasta f16, ademas de los suplementos multimodales mmproj en Q8_0 y f16, lo que permite ajustar el equilibrio entre calidad y VRAM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de vision-lenguaje, probablemente basado en Qwen3-VL) |
+| Arquitectura | Transformer multimodal vision-language (base Qwen3-VL) |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | no aplica (modelo denso) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con archivos mmproj para el proyector multimodal) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repositorio); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base OpenSpatial-Qwen3-VL-8B. Por el nombre y las etiquetas, se infiere que se trata de un modelo de vision-lenguaje con capacidades de razonamiento espacial, posiblemente derivado de la familia Qwen3-VL de Alibaba, aunque no hay confirmacion explicita en la documentacion proporcionada. El proceso de cuantizacion realizado por mradermacher es estatico, es decir, convierte los pesos del modelo original a formatos de menor precision (GGUF) sin reentrenamiento. No se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas como RLHF o DPO.
+El modelo base VINHYU/OpenSpatial-Qwen3-VL-8B es un transformer multimodal derivado de Qwen3-VL, con un codificador de vision acoplado a un modelo de lenguaje de aproximadamente 8.000 millones de parametros. El repositorio GGUF conserva esa arquitectura y anade los tensores del proyector multimodal (mmproj) en archivos separados, necesarios para procesar imagenes en llama.cpp.
+
+No se dispone en la informacion proporcionada de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas especificas del ajuste espacial. El autor del repositorio solo documenta el proceso de cuantizacion estatica (quantize_version 2, convert_type hf) y remite a los quants con imatrix en un repositorio separado (OpenSpatial-Qwen3-VL-8B-i1-GGUF) para quienes priorizan calidad sobre tamano.
 
 ## Capacidades
 
-- Procesamiento multimodal: acepta entradas de imagen y texto, generando respuestas textuales basadas en el contenido visual.
-- Razonamiento espacial: segun las etiquetas, esta especializado en tareas que requieren comprender relaciones espaciales, posiciones relativas y disposicion de objetos en una escena.
-- Conversacion: el tag "conversational" indica que puede mantener dialogos multi-turno, aunque no se especifica la longitud de contexto.
-- No se mencionan capacidades adicionales como tool calling, agentes o soporte de audio.
+- Generacion de texto conversacional en ingles, con formato de chat multi-turno.
+- Procesamiento de imagenes mediante el proyector multimodal incluido en los archivos mmproj.
+- Razonamiento espacial: comprension de relaciones posicionales entre objetos, disposiciones y estructura de escenas.
+- Respuestas sobre contenido visual combinadas con texto, orientadas a tareas de vision-language.
+- Compatibilidad con endpoints en infraestructuras tipo llama.cpp (tag endpoints_compatible).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades de audio o modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Analisis de imagenes con comprension espacial: el modelo puede interpretar fotografias o capturas para responder preguntas sobre la ubicacion de objetos, distancias o disposiciones, util en aplicaciones de asistencia visual o catalogacion automatica.
-- Navegacion robotica: en entornos controlados, podria procesar imagenes de camaras para ayudar a un robot a identificar obstaculos y planificar rutas basandose en la posicion de los elementos.
-- Inspeccion industrial: revision de imagenes de lineas de produccion para detectar si los componentes estan correctamente alineados o colocados, gracias a su capacidad de razonamiento espacial.
-- Sistemas de recomendacion visual: dado un conjunto de imagenes, el modelo puede sugerir ordenaciones o agrupaciones basadas en criterios espaciales, como proximidad o simetria.
-- Asistencia a personas con discapacidad visual: descripcion de escenas con detalle de la posicion de los objetos, ayudando a entender el entorno.
-- Investigacion en vision por computador: como modelo de referencia para experimentos de razonamiento espacial, gracias a su licencia abierta y su tamano moderado.
+- Analisis de imagenes en local: el modelo puede describir y razonar sobre fotografias o capturas usando los archivos mmproj, sin depender de APIs externas, gracias a su formato GGUF ejecutable en llama.cpp.
+- Robotica y navegacion asistida: el ajuste espacial permite interpretar la posicion relativa de objetos en una escena, util para generar instrucciones de movimiento o validar percepcion en prototipos.
+- Accesibilidad visual: descripcion de escenas y localizacion de objetos para aplicaciones de asistencia a personas con discapacidad visual, ejecutandose en estaciones de trabajo con GPU de consumo.
+- Etiquetado y anotacion de datasets: generacion de descripciones y relaciones espaciales sobre lotes de imagenes para preanotar corpus de vision por computador antes de la revision humana.
+- Prototipado en estaciones sin conexion: al distribuirse en cuantizaciones desde 3,4 GB (Q2_K), permite desplegar un VLM en portatiles o equipos de campo con conectividad limitada.
+- Educacion e investigacion en vision-language: base reproducible con licencia Apache 2.0 para experimentos de razonamiento espacial, comparando el efecto de distintas cuantizaciones sobre la calidad de las respuestas.
+- Verificacion de inventario o estanterias: analisis de imagenes para comprobar la colocacion y presencia de productos, aprovechando la capacidad de razonamiento sobre disposicion espacial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni metricas especificas de razonamiento espacial para este modelo cuantizado ni para el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los archivos GGUF varian en tamano: desde 3,4 GB (Q2_K) hasta 16,5 GB (f16). El proyector multimodal (mmproj) anade entre 0,9 y 1,3 GB adicionales.
-- Para una cuantizacion Q4_K_M (5,1 GB) mas el mmproj (0,9 GB), se necesitan aproximadamente 6 GB de VRAM, lo que cabe en GPUs de consumo como la RTX 3060 (12 GB) o RTX 4060 (8 GB).
-- Las cuantizaciones mas altas (Q8_0, f16) requieren al menos 10-18 GB de VRAM, recomendandose GPUs como RTX 3090, RTX 4090 o A100 para f16.
-- El modelo puede ejecutarse con llama.cpp, Ollama, LM Studio o cualquier runtime compatible con GGUF. Tambien es posible usar vLLM si se convierte a otro formato, aunque no esta documentado.
-- No se proporcionan datos de latencia ni throughput.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K unos 3,4 GB de pesos; Q4_K_M unos 5,1 GB; Q8_0 unos 8,8 GB; f16 unos 16,5 GB. A esta cifra hay que sumar el mmproj (0,9 GB en Q8_0 o 1,3 GB en f16) y el espacio para el contexto KV cache.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para cuantizaciones Q5 a Q8 con contexto amplio; A100 o H100 para despliegues concurrentes o f16.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas usando Q4_K_M o inferiores con contexto moderado; en 6 GB es viable con Q3_K_M o Q2_K.
+- Opciones de despliegue: llama.cpp y sus frontends (Ollama, LM Studio, llama-server); el tag endpoints_compatible sugiere compatibilidad con servidores de inferencia estilo OpenAI. vLLM y TGI no estan confirmados para este formato GGUF en la informacion disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa. El modelo base OpenSpatial-Qwen3-VL-8B no tiene una pagina publica con especificaciones detalladas, y no se conocen alternativas directas en el ambito del razonamiento espacial con el mismo tamano. Como referencia, el modelo Qwen3-VL-8B-Instruct (del que probablemente deriva) tiene una arquitectura multimodal con 8B parametros y contexto de 128K tokens, pero no se puede confirmar que OpenSpatial comparta esas caracteristicas. Se recomienda consultar la documentacion oficial de VINHYU para obtener datos comparativos.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| OpenSpatial-Qwen3-VL-8B-GGUF | 8,19 B | no disponible | Apache 2.0 | GGUF | Ajuste especifico de razonamiento espacial |
+| Qwen3-VL-8B (base de la familia) | ~8 B | no disponible | no disponible | safetensors, GGUF | Modelo generalista sin el ajuste espacial |
+| mradermacher/OpenSpatial-Qwen3-VL-8B-i1-GGUF | 8,19 B | no disponible | Apache 2.0 | GGUF (imatrix) | Misma base con cuantizacion ponderada de mayor calidad |
+
+La comparacion con alternativas de otros fabricantes (Llama 3.2 Vision, Gemma 3, Pixtral) no se incluye porque la informacion proporcionada no aporta datos de rendimiento que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Al ser una cuantizacion, se produce una perdida de precision respecto al modelo original en float32. Las cuantizaciones mas agresivas (Q2_K, Q3_K) pueden degradar notablemente la calidad de las respuestas, especialmente en tareas de razonamiento complejo.
-- El modelo solo soporta ingles, lo que limita su uso en entornos multilingues.
-- No se han publicado evaluaciones de sesgos o alucinaciones. Como cualquier VLM, puede generar descripciones inexactas o inventar detalles sobre las imagenes.
-- La longitud de contexto no esta documentada, por lo que no se conoce el limite de tokens de entrada que puede manejar.
-- Aunque la licencia Apache-2.0 permite uso comercial, el modelo base podria tener restricciones adicionales no reflejadas en esta cuantizacion. Se recomienda verificar la licencia del modelo original.
-- El repositorio no incluye informacion sobre el proceso de entrenamiento ni sobre la calidad de los datos, por lo que su comportamiento en produccion debe validarse con casos reales.
+- El modelo solo declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Al ser un ajuste especializado en razonamiento espacial, puede degradarse en tareas generales de texto frente a su base Qwen3-VL.
+- Riesgo de alucinacion inherente a los modelos vision-language, especialmente en descripciones detalladas de imagenes ambiguas o de baja resolucion.
+- Las cuantizaciones Q2_K y Q3_K_S sacrifican calidad de forma notable; para produccion se recomienda Q4_K_M o superior.
+- La longitud de contexto no esta documentada en la informacion disponible, por lo que no debe asumirse la ventana nativa de Qwen3-VL sin verificarla.
+- La licencia Apache 2.0 permite uso comercial, pero el repositorio es una cuantizacion de terceros: conviene revisar la model card del modelo base para condiciones adicionales.
+- El repositorio tiene un volumen de descargas bajo (245) y cero likes, lo que reduce la validacion comunitaria sobre su calidad.
+- Los archivos mmproj son imprescindibles para el procesamiento de imagenes; sin ellos el modelo solo funciona como LLM de texto.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/OpenSpatial-Qwen3-VL-8B-GGUF
-- Modelo base (referenciado en la model card): https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B
-- Repositorio de Qwen3-VL (posible base arquitectonica): https://github.com/QwenLM/Qwen3-VL
-- Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Repositorio GGUF: https://huggingface.co/mradermacher/OpenSpatial-Qwen3-VL-8B-GGUF
+- Modelo base: https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B
+- Quants con imatrix: https://huggingface.co/mradermacher/OpenSpatial-Qwen3-VL-8B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#OpenSpatial-Qwen3-VL-8B-GGUF
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

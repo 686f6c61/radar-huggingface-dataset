@@ -36,7 +36,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 7615616512,
@@ -54,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OceanLabs/Ocean-Coder-7B-Fusion-max",
+  "renamed_at": "2026-11-26T04:47:00.200Z",
   "benchmarks": [],
   "sources": []
 }

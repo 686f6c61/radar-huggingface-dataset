@@ -2,49 +2,49 @@
 
 ## Resumen
 
-`mradermacher/minicpm5-1b-kids-storyteller-i1-GGUF` es una publicacion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `ThePradip/minicpm5-1b-kids-storyteller`. No se trata de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos en multiples niveles de cuantizacion (Q2_K, IQ3_M, Q4_K_M, Q5_K_M, Q6_K, entre otros) pensada para ejecucion local en CPU y GPU de gama baja.
+minicpm5-1b-kids-storyteller-i1-GGUF es la versión cuantizada en formato GGUF del modelo ThePradip/minicpm5-1b-kids-storyteller, un ajuste fino de MiniCPM5 de 1B de parámetros orientado a la generación de cuentos infantiles en inglés. La cuantización la ha realizado mradermacher, un perfil habitual en Hugging Face especializado en publicar versiones GGUF (estáticas e imatrix) de modelos populares para su uso con llama.cpp y derivados. El modelo base parte de la familia MiniCPM, desarrollada por OpenBMB, aunque esta ficha se centra en el artefacto cuantizado publicado.
 
-El nombre sugiere un modelo derivado de la familia MiniCPM, con aproximadamente 1.000 millones de parametros (el campo `safetensors` del repo indica 690.312, un dato que no cuadra con la nomenclatura "1b" y que probablemente refleja un recuento parcial o erroneo en los metadatos de Hugging Face). El sufijo "kids-storyteller" apunta a un ajuste fino orientado a la generacion de cuentos infantiles.
+El interés principal de esta publicación es práctico: ofrece un modelo de 1.080.632.832 parámetros (aproximadamente 1,08 mil millones) en cuantizaciones que van desde IQ1_S (0,5 GB) hasta Q6_K (1,0 GB), lo que permite ejecutarlo en hardware muy modesto, incluidos portátiles sin GPU dedicada o dispositivos de borde. La licencia Apache 2.0 facilita su uso comercial y su integración en productos.
 
-La relevancia de esta ficha es limitada por la escasez de informacion publicada: el repositorio no incluye model card descriptiva, no declara licencia, no especifica idiomas y no reporta benchmarks. Cualquier evaluacion en produccion requerira validacion empirica directa sobre los pesos.
+La información disponible sobre el modelo base es escasa: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks. La model card del repositorio cuantizado se limita a listar los ficheros GGUF generados, el enlace al modelo original y notas genéricas sobre el uso de cuantizaciones. Por tanto, esta ficha distingue explícitamente entre los datos confirmados del artefacto y los aspectos no disponibles del modelo subyacente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso, derivado de MiniCPM) |
-| Parametros totales | no disponible (la nomenclatura indica 1B; el campo safetensors del repo muestra 690.312, dato inconsistente) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base MiniCPM5, familia transformer; detalles no publicados en la informacion disponible) |
+| Parametros totales | 1.080.632.832 (~1,08 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (imatrix) |
+| Idiomas soportados | ingles (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base `ThePradip/minicpm5-1b-kids-storyteller`. El nombre indica una base MiniCPM (familia de transformers densos desarrollada por OpenBMB) con aproximadamente 1.000 millones de parametros y un ajuste fino especifico para narracion infantil. No se han publicado detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de RLHF, DPO o SFT.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base ThePradip/minicpm5-1b-kids-storyteller. Por el nombre y el tamano, se trata de un ajuste fino de un modelo de la familia MiniCPM5 con aproximadamente 1,08 mil millones de parametros, orientado a la generacion de cuentos infantiles en ingles. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-Respecto al proceso de cuantizacion, la model card tecnica del repositorio indica el uso de cuantizaciones ponderadas con matriz de importancia (`weighted/imatrix quants`), lo que suele mejorar la calidad de los niveles bajos (IQ2, IQ3) frente a cuantizaciones sin imatrix. Tambien se observa la etiqueta `vocab_type` vacia y `convert_type: hf`, lo que sugiere una conversion desde pesos Hugging Face a formato GGUF mediante las herramientas habituales de llama.cpp.
+El artefacto publicado por mradermacher consiste en cuantizaciones GGUF generadas con el metodo imatrix (importance matrix), que calcula una matriz de importancia a partir de datos de calibracion para mejorar la calidad de las cuantizaciones de baja precision. El repositorio incluye tambien el fichero imatrix.gguf (0,1 GB) por si el usuario quiere generar sus propias cuantizaciones. Se ofrecen variantes IQ (basadas en cuantizacion con matriz de importancia) y variantes K-quant clasicas, con tamanos que oscilan entre 0,5 GB y 1,0 GB.
 
 ## Capacidades
 
-- Generacion de texto narrativo, presumiblemente orientado a cuentos infantiles por el ajuste fino declarado en el nombre.
-- Ejecucion local en CPU y GPU mediante llama.cpp y ecosistemas compatibles con GGUF.
-- Multiples niveles de cuantizacion que permiten ajustar el equilibrio entre calidad y consumo de memoria.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generacion de texto conversacional en ingles, con especializacion en la creacion de cuentos infantiles.
+- Generacion de narrativa creativa adaptada a un publico infantil (tono, vocabulario y estructura propios del genero).
+- Conversacion multi-turno basica (el tag "conversational" aparece en los metadatos del repositorio).
+- Inferencia local en CPU y GPU mediante llama.cpp y ecosistemas compatibles con GGUF.
+- Compatibilidad con text-generation-inference segun los tags del repositorio, aunque el formato GGUF esta pensado principalmente para llama.cpp.
+- No hay evidencia de soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito en la informacion disponible.
 
 ## Casos de uso
 
-- Generacion de cuentos infantiles en local: el ajuste fino declarado permite producir narraciones breves para ninos sin depender de servicios en la nube, ejecutando una cuantizacion Q4_K_M en un portatil convencional.
-- Prototipado de aplicaciones educativas: integracion en juguetes o apps de lectura que generen historias personalizadas, con la ventaja de que el modelo cabe en dispositivos de gama baja.
-- Evaluacion de cuantizaciones: el repositorio ofrece mas de veinte variantes, lo que lo convierte en un banco de pruebas util para medir la degradacion de calidad entre Q2_K y Q6_K sobre una tarea concreta de narracion.
-- Despliegue en entornos sin conectividad: al ser un GGUF de ~1B, puede empaquetarse en aplicaciones de escritorio o moviles con llama.cpp y funcionar completamente offline.
-- Filtrado y generacion de contenido infantil en pipelines editoriales: uso como borrador automatizado de textos que un editor humano revisa y pule.
-- Experimentacion academica sobre ajuste fino especializado: permite estudiar como un modelo pequeno ajustado a un dominio estrecho se comporta bajo cuantizacion agresiva, comparando variantes IQ frente a Q_K.
+- Generacion de cuentos personalizados para ninos: el modelo puede producir historias breves en ingles a partir de una premisa o unos personajes dados, con un tono adecuado al publico infantil. Su tamano reducido permite ejecutarlo en local sin depender de APIs externas.
+- Prototipado rapido de aplicaciones educativas: sirve para validar flujos de generacion de contenido infantil (cuentos, adivinanzas, descripciones sencillas) antes de invertir en modelos mayores.
+- Juguetes conectados y dispositivos de borde: con cuantizaciones de 0,5 a 1,0 GB, puede desplegarse en Raspberry Pi, moviles de gama alta o mini-PC sin GPU dedicada, generando cuentos bajo demanda sin conexion.
+- Aplicaciones de lectura asistida para ninos: integrado en una app de lectura, el modelo puede generar variaciones de una historia o continuaciones sencillas a partir de una semilla, manteniendo un vocabulario controlado.
+- Filtrado y generacion de contenido en plataformas infantiles: puede emplearse como generador de borradores de contenido que luego pasa por revision humana, reduciendo el coste de produccion editorial.
+- Experimentacion e investigacion en ajuste fino: al ser un modelo de 1B con licencia Apache 2.0, es util como base para experimentos de fine-tuning orientados a dominios concretos con recursos limitados.
+- Demostraciones de inferencia local en talleres y docencia: su reducido consumo de memoria permite ejecutar ejemplos practicos de generacion de texto en portatiles convencionales durante clases o talleres.
 
 ## Benchmarks y rendimiento
 
@@ -52,38 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para un modelo de ~1B en GGUF, aproximadamente 0,7-1,0 GB en Q4_K_M, 0,5-0,7 GB en Q2_K y 1,2-1,5 GB en Q6_K (estimaciones orientativas; no confirmadas por el autor).
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; tambien funciona en CPU.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (RTX 3060, RTX 4060, GTX 1660, e incluso iGPU con suficiente memoria compartida).
-- Opciones de despliegue: llama.cpp, Ollama (mediante importacion manual del GGUF), LM Studio, koboldcpp y servidores compatibles con llama.cpp. vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: entre 0,5 GB (IQ1_S) y 1,0 GB (Q6_K) solo para los pesos; anadir entre 0,2 y 0,5 GB adicionales para el contexto KV y el overhead del runtime, dependiendo de la longitud de contexto configurada.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM efectiva; tarjetas como GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060 o superiores funcionan sin problema. Tambien es viable en GPUs integradas con suficiente memoria compartida.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU pura.
+- Opciones de despliegue: llama.cpp (nativo), Ollama (mediante importacion del GGUF), LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera una generacion en tiempo real en CPU moderna y muy rapida en GPU de consumo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| mradermacher/minicpm5-1b-kids-storyteller-i1-GGUF | ~1B (segun nombre) | no disponible | no disponible | GGUF en HF |
-| ThePradip/minicpm5-1b-kids-storyteller (base) | ~1B (segun nombre) | no disponible | no disponible | safetensors en HF |
-| MiniCPM-1B / MiniCPM-2B (OpenBMB) | 1B / 2B | hasta 4K-128K segun version | licencia propia de MiniCPM | safetensors y GGUF en HF |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | safetensors y GGUF en HF |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | safetensors y GGUF en HF |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| minicpm5-1b-kids-storyteller-i1-GGUF | ~1,08 B | no disponible | Apache 2.0 | GGUF (imatrix) | Especializado en cuentos infantiles en ingles |
+| ThePradip/minicpm5-1b-kids-storyteller | ~1,08 B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva esta publicacion |
+| mradermacher/minicpm5-1b-kids-storyteller-GGUF | ~1,08 B | no disponible | Apache 2.0 | GGUF (estatico) | Cuantizaciones estaticas del mismo modelo base, alternativa a las imatrix |
 
-La comparativa es aproximada: no hay datos publicados de rendimiento para este ajuste fino concreto, por lo que la seleccion frente a TinyLlama o Qwen2.5-1.5B deberia basarse en pruebas propias sobre la tarea de narracion infantil.
+No se dispone de datos de rendimiento comparativo con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan datos de entrenamiento, sesgos, idiomas ni comportamiento esperado.
-- Licencia no declarada: no se puede garantizar el uso comercial; es imprescindible contactar con el autor del modelo base antes de desplegarlo en produccion.
-- El recuento de parametros del campo safetensors (690.312) es inconsistente con el nombre "1b"; conviene verificar el tamano real de los pesos antes de planificar recursos.
-- Riesgo elevado de alucinacion en un modelo de ~1B ajustado a un dominio estrecho; no es adecuado para tareas factuales sin verificacion.
-- Calidad degradada en cuantizaciones IQ1/IQ2; para uso real se recomienda Q4_K_M o superior.
-- Sin garantias de soporte multilingue: probablemente rinda mejor en el idioma dominante del dataset de ajuste (no declarado).
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
-- No apto para tareas de codigo, matematicas o razonamiento complejo sin evaluacion previa.
+- Especializacion estrecha: el modelo esta ajustado para cuentos infantiles en ingles; su rendimiento en otras tareas (codigo, matematicas, razonamiento general) es probablemente limitado y no esta documentado.
+- Idioma: la model card solo declara ingles; no hay evidencia de soporte multilingue, por lo que no se recomienda su uso en castellano sin evaluacion previa.
+- Longitud de contexto desconocida: al no publicarse la ventana de contexto, no se puede garantizar el manejo de conversaciones o documentos largos.
+- Riesgo de alucinacion: como cualquier modelo generativo de este tamano, puede producir contenido incoherente o factualmente incorrecto; en un contexto infantil esto exige revision humana del contenido generado.
+- Sesgos: no se han publicado evaluaciones de sesgo; los modelos entrenados con datos web pueden reproducir estereotipos, algo especialmente sensible en contenido dirigido a menores.
+- Cuantizaciones de muy baja precision: las variantes IQ1 e IQ2 (0,5-0,6 GB) degradan notablemente la calidad; para uso en produccion se recomienda Q4_K_M o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original y de los datos de entrenamiento, no documentadas en la informacion disponible.
+- Ausencia de benchmarks: no hay metricas publicadas que permitan comparar su calidad con alternativas, lo que dificulta una evaluacion objetiva antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/minicpm5-1b-kids-storyteller-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/minicpm5-1b-kids-storyteller-i1-GGUF
 - Modelo base: https://huggingface.co/ThePradip/minicpm5-1b-kids-storyteller
-- Familia MiniCPM (OpenBMB): https://huggingface.co/openbmb
-- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/minicpm5-1b-kids-storyteller-GGUF
+- Pagina de resumen y descargas del autor de las cuantizaciones: https://hf.tst.eu/model#minicpm5-1b-kids-storyteller-i1-GGUF
+- README de referencia sobre el uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

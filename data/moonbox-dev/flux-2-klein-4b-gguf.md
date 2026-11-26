@@ -1,102 +1,97 @@
 # moonbox-dev/FLUX.2-klein-4B-GGUF
 
 ## Resumen
+FLUX.2-klein-4B-GGUF es una colección de pesos cuantizados en formato GGUF del modelo de difusión FLUX.2 [klein] 4B de Black Forest Labs, publicada por moonbox-dev para su uso en dispositivo (on-device). Se trata de un transformer de flujo rectificado (rectified flow) de aproximadamente 3.875 millones de parámetros (3,875.544.576 exactos) que unifica generación de imágenes a partir de texto y edición de imágenes con múltiples referencias en una sola arquitectura compacta. La relevancia de esta publicación radica en que reduce el peso del transformer a ficheros de entre 2,29 GB y 7,75 GB, lo que permite ejecutar el modelo en GPUs de consumo con 6-8 GB de VRAM.
 
-FLUX.2 [klein] 4B es un modelo de difusión de texto a imagen desarrollado por Black Forest Labs (BFL), presentado como el miembro más compacto y rápido de la familia FLUX.2. Con 3.875.544.576 parámetros, es un transformer de flujo rectificado (rectified flow transformer) que unifica generación de imágenes a partir de texto y edición de imágenes con múltiples referencias en una única arquitectura. Su propuesta de valor es clara: calidad de estado del arte con inferencia de extremo a extremo en menos de un segundo y ejecución en GPUs de consumo con tan solo 13 GB de VRAM.
+El repositorio incluye cinco niveles de cuantización (F16, BF16, Q8_0, Q6_K, Q5_K_M y Q4_K_M) más los pesos sin cuantizar de referencia. Cada fichero ha sido verificado tensor a tensor contra los pesos BF16 originales y evaluado con un benchmark de 100 prompts PartiPrompts para medir la degradación de calidad. Solo se convierten los pesos del transformer: el codificador de texto (Qwen3-4B) y el VAE se toman del repositorio original de Black Forest Labs.
 
-La ficha que nos ocupa, `moonbox-dev/FLUX.2-klein-4B-GGUF`, es una conversión a formato GGUF realizada por Moonbox para uso en dispositivo (on-device), pensada para integrarse en ComfyUI mediante el nodo ComfyUI-GGUF. Solo se convierten los pesos del transformer; el codificador de texto (Qwen3-4B), el VAE y el tokenizador provienen del repositorio original de BFL. Se ofrecen seis precisiones, desde F16/BF16 (7,75 GB) hasta Q4_K_M (2,29 GB), lo que permite ajustar el modelo a tarjetas de 6, 8 o más GB de VRAM.
-
-El modelo base se distribuye bajo licencia Apache 2.0, lo que lo hace plenamente utilizable en producción comercial. Es relevante ahora porque combina tres factores poco habituales en modelos de difusión abiertos: licencia permisiva, edición multi-referencia en el mismo modelo y latencia sub-segundo, lo que lo posiciona como candidato para flujos interactivos y despliegues en el borde.
+La licencia es Apache-2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales. El modelo está pensado para generación de imágenes en tiempo real, desarrollo local y despliegue en el borde, con inferencia end-to-end en menos de un segundo según el autor original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de flujo rectificado (rectified flow transformer) de difusión |
-| Parametros totales | 3.875.544.576 (4B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen; codificador de texto Qwen3-4B) |
+| Arquitectura | Transformer de flujo rectificado (rectified flow) para difusión |
+| Parametros totales | 3.875.544.576 (aprox. 3,88 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de difusión, no de texto) |
 | Tipos de cuantizacion | F16, BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (single-file por precisión); original en safetensors |
+| Idiomas soportados | no disponible (el prompt se procesa vía Qwen3-4B; idiomas no declarados) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (fichero único por precisión) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer de flujo rectificado de 4 mil millones de parámetros que unifica generación texto-a-imagen y edición de imágenes con múltiples referencias. La familia FLUX.2 [klein] está diseñada para inferencia rápida mediante destilación de pocos pasos (few-step distillation), lo que permite generar imágenes con tan solo 4 pasos y CFG 1, como se documenta en el benchmark del repositorio. El codificador de texto es Qwen3-4B y el VAE es `flux2-vae.safetensors`, ambos tomados del repositorio original.
 
-FLUX.2 [klein] 4B es un transformer de flujo rectificado (rectified flow transformer) de 4 mil millones de parámetros. La familia [klein] se presenta como la más rápida de BFL hasta la fecha y unifica generación texto-imagen y edición imagen-imagen con múltiples referencias en una sola arquitectura compacta. El modelo base es destilado, lo que explica su latencia sub-segundo frente a otros modelos de difusión de tamaño similar. La canalización completa incluye un codificador de texto Qwen3-4B y un VAE que no forman parte de esta conversión GGUF y deben tomarse del repositorio original de BFL.
-
-Sobre el proceso de entrenamiento no se detallan en la información disponible el número de tokens, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La model card original tampoco especifica innovaciones de decodificación más allá de la propia arquitectura de flujo rectificado y la destilación. Las conversiones GGUF fueron generadas por Moonbox a partir de la revisión `e7b7dc27f9` del modelo original: pesos BF16 convertidos a GGUF F16/BF16 y posteriormente cuantizados con `llama-quantize` de llama.cpp, con verificación tensor a tensor contra los pesos originales antes de la subida.
+Los ficheros GGUF se generaron a partir de la revisión `e7b7dc27f9` del modelo original: primero se convirtieron los pesos BF16 a GGUF F16/BF16 y después se cuantizaron con `llama-quantize` de llama.cpp. Cada fichero fue verificado contra los pesos originales antes de la subida, con los hashes SHA-256 documentados. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO, ya que la model card del repositorio cuantizado no los detalla.
 
 ## Capacidades
-
-- Generación de imágenes a partir de descripciones textuales (text-to-image).
-- Edición de imágenes (image-to-image) en el mismo modelo unificado.
-- Edición con múltiples referencias (multi-reference editing), lo que permite combinar varias imágenes de entrada.
-- Inferencia de extremo a extremo en menos de un segundo (modelo destilado).
-- Ejecución en GPUs de consumo con aproximadamente 13 GB de VRAM en el modelo original.
-- Integración con ComfyUI (mediante ComfyUI-GGUF), Diffusers (`Flux2KleinPipeline`) y la API de BFL.
-- Disponibilidad de pesos abiertos para uso comercial bajo Apache 2.0.
+- Generación de imágenes a partir de descripciones textuales (text-to-image) con resolución de 1024 x 1024 en el benchmark.
+- Edición de imágenes (image editing) sobre imágenes de entrada.
+- Edición con múltiples referencias (multi-reference editing).
+- Inferencia rápida mediante destilación de pocos pasos: 4 pasos con CFG 1 en la configuración de benchmark.
+- Ejecución en hardware de consumo gracias a las cuantizaciones GGUF.
+- Integración con ComfyUI mediante el nodo Unet Loader (GGUF) del plugin ComfyUI-GGUF.
+- Compatibilidad con stable-diffusion.cpp para inferencia en CUDA.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio.
 
 ## Casos de uso
-
-- **Generación interactiva en local**: con la precisión Q4_K_M (2,29 GB) el transformer cabe en tarjetas de 6 GB, lo que permite generar imágenes en un portátil con GPU de gama media usando ComfyUI y el codificador Qwen3-4B y el VAE originales.
-- **Prototipado rápido de producto**: la latencia sub-segundo del modelo base lo hace adecuado para interfaces donde el usuario itera sobre prompts en tiempo real, ajustando estilo o composición sin esperas perceptibles.
-- **Edición de imágenes con múltiples referencias**: útil para flujos de diseño gráfico donde se combinan varias imágenes de referencia (por ejemplo, un producto y una ambientación) para producir variantes consistentes.
-- **Producción con licencia permisiva**: al ser Apache 2.0, puede integrarse en servicios comerciales sin obligaciones de atribución más allá de las estándar, a diferencia de otros modelos de difusión con licencias restrictivas.
-- **Despliegue en el borde (edge)**: con Q5_K_M o Q6_K (2,77-3,24 GB) el transformer se ajusta a GPUs de 8 GB, habilitando generación de imágenes en dispositivos con recursos limitados o en contenedores sin aceleradores de gran tamaño.
-- **Pipelines de aumento de datos**: la generación controlada por texto permite sintetizar datasets de imágenes para entrenamiento o evaluación, con la ventaja de ejecutarse localmente y sin coste por llamada de API.
-- **Investigación en cuantización**: la tabla de error RMS relativo frente a BF16 (0,55 % en Q8_0, 6,9 % en Q4_K_M) proporciona una referencia útil para estudiar el impacto de la cuantización en la calidad de imagen.
+- Generación de imágenes en local para desarrollo: un desarrollador puede cargar el fichero Q8_0 (4,17 GB) en ComfyUI con una RTX 3080 o similar y generar imágenes de 1024 x 1024 en 4 pasos, sin depender de servicios en la nube.
+- Prototipado rápido de pipelines de difusión: los ficheros Q4_K_M (2,29 GB) y Q5_K_M (2,77 GB) permiten probar flujos de trabajo completos en GPUs de 6-8 GB de VRAM antes de escalar a los pesos completos.
+- Edición de imágenes con múltiples referencias en producción: el modelo unifica generación y edición, de modo que un mismo pipeline puede recibir una o varias imágenes de referencia y un prompt para producir variaciones consistentes.
+- Despliegue en el borde (edge deployment): con Q4_K_M en 2,29 GB, el transformer cabe en dispositivos con recursos limitados, lo que habilita generación de imágenes en estaciones de trabajo modestas o entornos embebidos con GPU.
+- Evaluación comparativa de cuantizaciones: los datos de LPIPS, PSNR, ImageReward, HPSv2 y CLIP de la model card permiten elegir la precisión adecuada según el equilibrio entre tamaño y fidelidad visual para un caso concreto.
+- Re-cuantización o investigación: los ficheros BF16 y F16 (7,75 GB) sirven como referencia para re-cuantizar a otros formatos o para estudiar el efecto de la cuantización en modelos de difusión destilados.
+- Generación de imágenes en tiempo real: la destilación de pocos pasos y la inferencia en menos de un segundo que declara el autor original lo hacen apto para aplicaciones interactivas donde la latencia es crítica.
 
 ## Benchmarks y rendimiento
+El repositorio documenta un benchmark de imágenes con 100 prompts PartiPrompts (todas las categorías), una imagen de 1024 x 1024 por prompt, semilla 1000 + id de prompt, ejecutado con stable-diffusion.cpp master-465adf3 en CUDA sobre una RTX 3080 Laptop, 4 pasos, CFG 1 y sampler euler. Las métricas comparan cada precisión contra las imágenes BF16 con los mismos prompts y semillas.
 
-No se han publicado resultados de benchmarks en la información disponible. La model card original no incluye tablas comparativas con MMLU, HumanEval, GSM8K ni métricas de calidad de imagen (FID, CLIP score, etc.). La única métrica cuantitativa disponible es el error RMS relativo de los pesos cuantizados frente a BF16, que se recoge en la siguiente tabla:
+| Precision | Tamano | Error RMS pesos | LPIPS | PSNR (dB) | ImageReward | HPSv2 | CLIP |
+|---|---|---|---|---|---|---|---|
+| F16 | 7,75 GB | 0,000001 % | 0,005 | 39,5 | -0,001 | +0,0000 | -0,01 |
+| BF16 | 7,75 GB | exacto (referencia) | — | — | — | — | — |
+| Q8_0 | 4,17 GB | 0,55 % | 0,019 | 31,5 | +0,007 | +0,0001 | -0,05 |
+| Q6_K | 3,24 GB | 1,8 % | 0,054 | 25,7 | -0,019 | -0,0002 | -0,13 |
+| Q5_K_M | 2,77 GB | 3,5 % | 0,095 | 22,6 | -0,013 | -0,0008 | -0,01 |
+| Q4_K_M | 2,29 GB | 6,9 % | 0,162 | 19,3 | -0,018 | +0,0005 | -0,12 |
 
-| Precision | Tamano | Error RMS relativo vs BF16 |
-|---|---|---|
-| F16 | 7,75 GB | 0,000001 % (7,8e-9) |
-| BF16 | 7,75 GB | exacto |
-| Q8_0 | 4,17 GB | 0,55 % |
-| Q6_K | 3,24 GB | 1,8 % |
-| Q5_K_M | 2,77 GB | 3,5 % |
-| Q4_K_M | 2,29 GB | 6,9 % |
+Criterio de aprobado del autor: ImageReward medio dentro de 0,05 del BF16 y HPSv2 dentro de 0,003. Todas las precisiones lo superan. Los intervalos de confianza pareados al 95 % con 100 prompts son aproximadamente ±0,04 y ±0,001. El autor señala que los modelos destilados de pocos pasos mueven detalles ante pequeños cambios en los pesos, por lo que LPIPS crece al bajar de precisión mientras las puntuaciones de calidad se mantienen planas. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) porque no aplican a un modelo de difusión.
 
 ## Requisitos de hardware
-
-- **VRAM estimada para el transformer**: aproximadamente 13 GB en el modelo original (BF16); con GGUF, entre 2,29 GB (Q4_K_M) y 7,75 GB (F16/BF16) solo para los pesos del transformer.
-- **VRAM total del pipeline**: hay que sumar el codificador de texto Qwen3-4B y el VAE, que no están incluidos en esta conversión y deben cargarse desde el repositorio original.
-- **GPU recomendadas**: RTX 3090 o RTX 4070 para el modelo original en BF16 (según BFL); para las versiones GGUF, tarjetas de 6 GB (Q4_K_M), 8 GB (Q6_K, Q5_K_M) o más (Q8_0).
-- **Cabe en GPU de consumo**: sí, según BFL el modelo base corre en GPUs de consumo con unos 13 GB de VRAM; las cuantizaciones GGUF reducen aún más el requisito del transformer.
-- **Opciones de despliegue**: ComfyUI con ComfyUI-GGUF (Unet Loader GGUF), Diffusers (`Flux2KleinPipeline`), API de BFL y el repositorio de referencia `black-forest-labs/flux2`.
-- **Latencia y throughput**: BFL declara inferencia de extremo a extremo en menos de un segundo para el modelo base; no se proporcionan cifras de throughput ni latencia para las versiones GGUF.
+- VRAM estimada para el transformer según cuantización: Q4_K_M ~2,3 GB, Q5_K_M ~2,8 GB, Q6_K ~3,2 GB, Q8_0 ~4,2 GB, F16/BF16 ~7,8 GB. A esto hay que sumar el codificador de texto Qwen3-4B y el VAE, que el autor original cifra en un mínimo de 13 GB de VRAM para el pipeline completo.
+- GPU recomendadas: RTX 3090 y RTX 4070 como referencia del autor original para el modelo completo; RTX 3080 Laptop se usó en el benchmark del repositorio.
+- Cabe en GPU de consumo: sí. El autor indica Q6_K y Q5_K_M para tarjetas de 8 GB y Q4_K_M para tarjetas de 6 GB (solo el transformer; el pipeline completo requiere más memoria).
+- Opciones de despliegue: ComfyUI con ComfyUI-GGUF (nodo Unet Loader GGUF), stable-diffusion.cpp con CUDA. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión.
+- Latencia y throughput: el autor original declara inferencia end-to-end en menos de un segundo para la familia FLUX.2 [klein]; el benchmark usa 4 pasos con CFG 1. No se proporcionan cifras de throughput (imágenes por segundo) en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de rendimiento de modelos comparables (por ejemplo, otras variantes de FLUX.2 o modelos de difusión de tamaño similar) que permitan una comparación rigurosa de benchmarks. A continuación se comparan únicamente los datos estructurales conocidos:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FLUX.2-klein-4B-GGUF (este) | 3,88 mil millones | no aplica | Apache-2.0 | GGUF | Cuantizaciones verificadas con benchmark de fidelidad visual |
+| FLUX.2-klein-4B (original) | 3,88 mil millones | no aplica | Apache-2.0 | safetensors (BF16) | Pesos completos, requiere ~13 GB VRAM para el pipeline |
+| Alternativas de difusión de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
-| Modelo | Parametros | Licencia | Formato | Notas |
-|---|---|---|---|---|
-| FLUX.2 [klein] 4B (original) | 4B | Apache 2.0 | safetensors | Modelo base de BFL, ~13 GB VRAM |
-| FLUX.2 [klein] 4B GGUF (esta ficha) | 4B | Apache 2.0 | GGUF | Cuantizaciones de 2,29 a 7,75 GB |
-| Alternativas de misma categoria | no disponible | no disponible | no disponible | Sin datos en la información disponible |
+No se dispone de información sobre otros modelos de difusión comparables (por ejemplo, variantes cuantizadas de Stable Diffusion o de otras familias FLUX) en los datos proporcionados, por lo que la comparativa se limita al modelo base original.
 
 ## Limitaciones y advertencias
-
-- **Sesgos**: no se documentan en la información disponible sesgos específicos del modelo; como todo modelo de difusión entrenado con datos web a gran escala, es probable que reproduzca estereotipos presentes en esos datos.
-- **Alucinación visual**: los modelos de difusión pueden generar contenido plausible pero incorrecto (texto ilegible en imágenes, anatomía inconsistente, objetos incoherentes); no se aportan métricas de fidelidad en la información disponible.
-- **Cuantización**: Q4_K_M introduce un 6,9 % de error RMS relativo frente a BF16, lo que puede degradar detalles finos; para producción de alta calidad se recomienda Q8_0 o superior.
-- **Dependencias externas**: esta conversión GGUF solo contiene el transformer; el codificador Qwen3-4B y el VAE deben obtenerse del repositorio original, lo que añade VRAM y complejidad al despliegue.
-- **Idiomas**: no se especifican idiomas soportados; el comportamiento multilingüe del codificador de texto no está documentado en esta ficha.
-- **Licencia**: Apache 2.0 permite uso comercial, pero los archivos son un derivado del modelo original y heredan su licencia; conviene revisar la model card original para cualquier restricción adicional.
-- **Madurez del repositorio**: el repositorio tiene 91 descargas y 0 likes en el momento de la consulta, y la model card indica que las puntuaciones de calidad de imagen se irán añadiendo a medida que cada precisión pase la evaluación; no hay aún validación publicada de calidad por precisión.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo texto-a-imagen, hereda los sesgos de sus datos de entrenamiento, que no se detallan.
+- Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir contenido inexacto o no solicitado; la model card no cuantifica este riesgo.
+- Limitaciones de contexto o idioma: no se declaran idiomas soportados; el procesamiento del prompt depende del codificador Qwen3-4B, cuyas capacidades multilingües no se especifican en esta ficha.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero los ficheros son un derivado del modelo original y su licencia gobierna el uso; se debe conservar la atribución correspondiente.
+- Caveat para producción: solo se cuantiza el transformer; el codificador de texto y el VAE deben obtenerse del repositorio original, y el pipeline completo requiere aproximadamente 13 GB de VRAM según el autor, muy por encima de los 6-8 GB que ocupa el transformer cuantizado.
+- Degradación por cuantización: Q4_K_M presenta un error RMS de pesos del 6,9 % y un LPIPS de 0,162 frente a BF16; en aplicaciones donde el detalle fino sea crítico conviene usar Q8_0 o superior.
+- Verificación: los hashes SHA-256 documentados permiten comprobar la integridad de los ficheros, pero no se dispone de auditorías independientes del benchmark de imágenes.
 
 ## Enlaces
-
-- Repositorio Hugging Face (esta conversión): https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
-- Blog de BFL sobre FLUX.2 [klein]: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
-- Repositorio de referencia: https://github.com/black-forest-labs/flux2
-- ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
-- Diffusers: https://github.com/huggingface/diffusers
-- API de BFL: https://bfl.ai
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Repositorio Hugging Face: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF
+- Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Blog del autor original: https://bfl.ai/blog/flux2-klein-towards-interactive
+- Plugin ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
+- Fichero F16: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-F16.gguf
+- Fichero BF16: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-BF16.gguf
+- Fichero Q8_0: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-Q8_0.gguf
+- Fichero Q6_K: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-Q6_K.gguf
+- Fichero Q5_K_M: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-Q5_K_M.gguf
+- Fichero Q4_K_M: https://huggingface.co/moonbox-dev/FLUX.2-klein-4B-GGUF/blob/main/flux-2-klein-4b-Q4_K_M.gguf

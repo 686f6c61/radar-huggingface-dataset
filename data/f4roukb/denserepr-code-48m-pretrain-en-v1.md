@@ -2,75 +2,110 @@
 
 ## Resumen
 
-El modelo `f4roukb/denserepr-code-48M-pretrain-EN-v1` es un modelo publicado en Hugging Face por el usuario f4roukb bajo licencia Apache 2.0. Por su identificador, se trata de un modelo de representación densa (dense representation) orientado a código, con aproximadamente 48 millones de parámetros, entrenado en fase de preentrenamiento (pretrain) sobre datos en inglés (EN) y en su primera versión (v1). Este tipo de modelos se emplea habitualmente para generar embeddings densos de fragmentos de código, útiles en tareas de búsqueda semántica, recuperación de código (code retrieval) y similitud entre fragmentos.
+denserepr-code-48M-pretrain-EN-v1 es un modelo de embeddings densos de 47.662.464 parámetros (aproximadamente 48M) especializado en recuperación de código (code retrieval). Lo desarrolla Farouk B. (usuario f4roukb) y se construye mediante preentrenamiento contrastivo continuado sobre ibm-granite/granite-embedding-small-english-r2, un modelo ModernBERT de IBM. Genera un único vector de 384 dimensiones por texto, con similitud coseno y una longitud máxima de secuencia de 8.192 tokens.
 
-La model card publicada no incluye información técnica adicional más allá de la licencia. No se especifican arquitectura, datos de entrenamiento, tokenizador, dimensión de los embeddings ni procedimiento de entrenamiento. Tampoco se han publicado resultados de benchmarks ni detalles sobre el pipeline de uso.
+El modelo resuelve el problema de la búsqueda semántica de código: dada una consulta en lenguaje natural (por ejemplo, "leer un CSV en una lista de diccionarios"), devuelve fragmentos de código relevantes. Su relevancia actual radica en que, con solo 48M de parámetros, alcanza 64,84 de nDCG@10 medio en el benchmark CoIR (10 tareas), una mejora de +11,4 puntos sobre el modelo base, y se sitúa en la frontera de Pareto de modelos densos de embeddings en MTEB CoIR para modelos por debajo de 80M de parámetros.
 
-Por tanto, esta ficha se limita a recoger los datos disponibles y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. El modelo es relevante únicamente como artefacto de investigación en fase temprana: su utilidad en producción no puede evaluarse sin documentación adicional.
+Esta es la etapa de preentrenamiento: no se emplearon negativos duros, destilación ni fine-tuning posterior. Su sucesor afinado es denserepr-code-48M-EN-v1, que alcanza 68,86 en CoIR. La licencia es Apache-2.0 y los pesos se distribuyen en safetensors fp32.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 48M (inferido del nombre del modelo; no confirmado en la model card) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (inferido del sufijo "EN" del nombre; no confirmado en la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | ModernBERT (heredada de ibm-granite/granite-embedding-small-english-r2) |
+| Parametros totales | 47.662.464 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en fp32 safetensors; entrenamiento con autocast bf16) |
+| Idiomas soportados | en (consultas en inglés; código en Python, Go, Java, PHP, JavaScript, Ruby y SQL) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (fp32) |
+| Dimension del embedding | 384-d, pooling CLS, similitud coseno |
+| Libreria | sentence-transformers |
+| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (transformer, encoder, etc.), el tokenizador, la dimensionalidad de las representaciones, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de ajuste como contrastive learning, RLHF o DPO. El nombre del modelo sugiere un preentrenamiento sobre código en inglés con el objetivo de producir representaciones densas, pero no hay documentación que lo confirme.
+El modelo parte de la arquitectura ModernBERT del modelo base de IBM y se entrena mediante preentrenamiento contrastivo continuado con negativos en lote (in-batch negatives) únicamente, sin negativos duros. El objetivo es producir un vector denso por texto, con pooling CLS y similitud coseno, sin prompts ni instrucciones: consultas y documentos se codifican de la misma forma.
+
+Los datos de entrenamiento suman unos 23,1M de pares tras el proceso de limpieza (24,8M antes). Las fuentes son: lightonai/cornstack (docstring → código en Python, Go, Java, PHP, JavaScript y Ruby, 21,5M de pares), codefuse-ai/F2LLM-v2 (OCGI, instrucción → Python, y xCodeEval, problema → solución, 1,1M de pares) y los splits de entrenamiento de las 10 tareas de CoIR-Retrieval (2,2M de pares). La limpieza incluye deduplicación exacta de pares normalizados, eliminación de código stub (cuerpos vacíos, `pass`, `return true`) mediante tree-sitter en 14 lenguajes y descontaminación frente a los conjuntos de test de CoIR y NanoCoIR. El entrenamiento usa pesos en fp32 con autocast bf16; las puntuaciones de CoIR se midieron en bf16.
 
 ## Capacidades
 
-- Generación de representaciones densas de código: por el nombre del modelo, se orienta a producir embeddings vectoriales de fragmentos de código, aunque no se documenta la dimensionalidad ni la normalización.
-- Búsqueda semántica y recuperación de código: uso potencial en sistemas de retrieval sobre repositorios, aunque sin benchmarks publicados no puede confirmarse su calidad.
-- Similitud entre fragmentos de código: uso potencial para detectar duplicados o código equivalente.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el sufijo "EN" sugiere entrenamiento en inglés únicamente.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de embeddings densos de 384 dimensiones para textos y fragmentos de código, con similitud coseno.
+- Recuperación de código a partir de consultas en lenguaje natural en inglés (text-to-code retrieval).
+- Recuperación de código a partir de código (code-to-code), útil en tareas de traducción y detección de duplicados.
+- Recuperación texto-a-SQL (evaluada en SyntheticText2SQL).
+- Respuesta a preguntas técnicas sobre Stack Overflow (evaluada en StackOverflowQA).
+- Manejo de secuencias largas de hasta 8.192 tokens, adecuado para funciones y ficheros de código extensos.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo de embeddings, no un modelo generativo.
+- Capacidad monolingüe: consultas en inglés; el código cubre seis lenguajes de cornstack más SQL.
 
 ## Casos de uso
 
-- Búsqueda semántica de código en repositorios internos: el modelo podría indexar funciones y ficheros como vectores densos y servir consultas en lenguaje natural, siempre que se valide empíricamente su calidad de recuperación, ya que no hay benchmarks publicados.
-- Detección de código duplicado o casi duplicado: comparando embeddings de fragmentos para identificar clones semánticos en una base de código, sujeto a validación previa.
-- Clasificación de fragmentos de código por temática: usando los embeddings como entrada a un clasificador ligero (regresión logística, k-NN) para etiquetar ficheros por dominio o lenguaje.
-- Filtrado de datasets de código: agrupando fragmentos por similitud para eliminar duplicados antes de entrenar modelos mayores.
-- Prototipado de sistemas de retrieval-augmented generation para asistentes de programación: como componente de recuperación en un pipeline RAG, con la advertencia de que su rendimiento no está documentado.
-- Investigación sobre representaciones de código a pequeña escala: su tamaño de 48M permite experimentar en una sola GPU consumer con ciclos de iteración rápidos.
+- Búsqueda semántica en repositorios de código: indexar funciones y ficheros como vectores de 384 dimensiones y recuperar los fragmentos relevantes para una consulta en lenguaje natural, gracias a su ventana de 8.192 tokens que permite indexar funciones completas sin truncar.
+- Asistentes de programación con recuperación aumentada (RAG): alimentar un LLM generativo con los fragmentos de código recuperados por este modelo para responder preguntas sobre una base de código, manteniendo bajo el coste de indexación por su reducido tamaño.
+- Detección de código duplicado o clonado: comparar embeddings de fragmentos para identificar implementaciones equivalentes entre módulos o repositorios, aprovechando la tarea code-to-code.
+- Traducción de código entre lenguajes: localizar la implementación equivalente en otro lenguaje mediante recuperación cross-lingüe de código (evaluado en CodeTransOcean).
+- Generación de SQL asistida: recuperar consultas SQL de ejemplo a partir de una descripción en lenguaje natural, como se evalúa en SyntheticText2SQL.
+- Atención a desarrolladores en foros y documentación: responder consultas técnicas recuperando respuestas previas de Stack Overflow o documentación interna.
+- Filtrado y curación de datasets de código: agrupar y deduplicar semánticamente grandes corpus de código antes de usarlos en entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados en CoIR (MTEB), nDCG@10 ×100, medidos a 8.192 tokens con mteb 2.27.8:
+
+| Tarea | Modelo base | Este modelo |
+|---|---|---|
+| AppsRetrieval | 13,48 | 30,75 |
+| CodeFeedbackMT | 52,20 | 81,19 |
+| CodeFeedbackST | 76,84 | 81,26 |
+| CodeSearchNetCCRetrieval | 48,42 | 75,97 |
+| CodeTransOceanContest | 77,63 | 80,00 |
+| CodeTransOceanDL | 33,63 | 34,84 |
+| CosQA | 35,40 | 33,84 |
+| COIRCodeSearchNetRetrieval | 60,42 | 79,90 |
+| StackOverflowQA | 90,04 | 90,97 |
+| SyntheticText2SQL | 46,44 | 59,69 |
+| Media | 53,45 | 64,84 |
+
+El modelo mejora al base en 9 de las 10 tareas; solo retrocede en CosQA (35,40 → 33,84). En el momento de la publicación (2026-11-14) figura como el mejor modelo denso por debajo de 80M de parámetros con las 10 tareas de CoIR en el repositorio de resultados de MTEB (datos al 2026-11-12).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; con ~48M parámetros, en fp32 ocuparía aproximadamente 192 MB de pesos, en fp16 unos 96 MB y en int8 unos 48 MB, sin contar overhead de runtime.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre debería ser suficiente para inferencia en fp32, aunque no se documenta el runtime recomendado.
-- GPU consumer: sí, cabe holgadamente en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en CPU para lotes pequeños.
-- Opciones de despliegue: no disponible; al no documentarse la arquitectura ni el formato de pesos, no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (48M de parámetros), lo que permite ejecutarlo en CPU con latencia baja para lotes moderados.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es más que suficiente; en entornos de servidor, A100 o H100 no son necesarias pero permiten alto throughput por lotes.
+- Cabe holgadamente en cualquier GPU consumer, e incluso en CPU y en dispositivos de gama baja.
+- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (TEI), endpoints compatibles de Hugging Face; exportación a ONNX no indicada en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada modelos comparables de representación densa de código con los que establecer una comparación fiable de parámetros, contexto, rendimiento o licencia.
+| Modelo | Parametros | Contexto | CoIR (nDCG@10 medio) | Licencia |
+|---|---|---|---|---|
+| denserepr-code-48M-pretrain-EN-v1 | 47,7M | 8.192 | 64,84 | Apache-2.0 |
+| denserepr-code-48M-EN-v1 (sucesor afinado) | 47,7M | no disponible | 68,86 | no disponible |
+| ibm-granite/granite-embedding-small-english-r2 (base) | 47,7M | no disponible | 53,45 | Apache-2.0 |
+
+No se dispone de datos de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card solo contiene la licencia; no hay información sobre arquitectura, datos, tokenizador ni uso previsto.
-- Sin benchmarks: no puede evaluarse su calidad frente a alternativas establecidas para retrieval de código.
-- Idiomas: el sufijo "EN" sugiere entrenamiento exclusivo en inglés; el soporte de otros idiomas no está confirmado y probablemente sea nulo o muy limitado.
-- Sesgos: no documentados; al entrenarse sobre código, puede heredar sesgos de estilo, lenguaje o licencias del corpus de origen, que se desconoce.
-- Alucinación: no aplica de forma directa si el modelo solo produce embeddings, pero no puede descartarse que se haya publicado como modelo generativo; no hay información al respecto.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero el autor no ofrece garantías ni documentación sobre la procedencia de los datos de entrenamiento, lo que introduce riesgo legal si el corpus contiene código con licencias restrictivas.
-- Producción: no recomendable sin una evaluación previa propia, dado que no hay evidencia publicada de su rendimiento ni de su estabilidad.
+- Solo admite consultas en inglés; el código cubierto se limita principalmente a los seis lenguajes de cornstack (Python, Go, Java, PHP, JavaScript, Ruby) más SQL.
+- Es un modelo de embeddings, no generativo: no produce texto, código ni respuestas, solo vectores.
+- No se emplearon negativos duros ni destilación; el sucesor afinado obtiene 5,02 puntos más de media en CoIR, por lo que para producción conviene evaluar esa variante.
+- Retrocede ligeramente frente al modelo base en CosQA (35,40 → 33,84).
+- Riesgo de falsos positivos en recuperación por similitud coseno en dominios de código no representados en el entrenamiento.
+- Al ser una versión modificada de un modelo de IBM, no debe presentarse como modelo de IBM.
+- Licencia Apache-2.0, que permite uso comercial; deben respetarse las atribuciones de los datasets de entrenamiento (algunos con CC-BY-4.0 y CC-BY-SA).
+- No se han publicado datos sobre sesgos, latencia ni comportamiento en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/f4roukb/denserepr-code-48M-pretrain-EN-v1
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/f4roukb/denserepr-code-48M-pretrain-EN-v1
+- Sucesor afinado: https://huggingface.co/f4roukb/denserepr-code-48M-EN-v1
+- Modelo base: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2
+- Dataset cornstack: https://huggingface.co/datasets/lightonai/cornstack
+- Dataset F2LLM-v2: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2
+- Organización CoIR-Retrieval: https://huggingface.co/CoIR-Retrieval
+- Dataset StackOverflowQA: https://huggingface.co/datasets/mteb/StackOverflowQA

@@ -5,7 +5,7 @@
   "author": "Pathumi",
   "url": "https://huggingface.co/Pathumi/reuters-gpt2-from-scratch",
   "created_at": "2026-11-25T04:55:06.000Z",
-  "updated_at": "2026-11-25T05:02:26.000Z",
+  "updated_at": "2026-11-25T05:12:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 16504320,
   "parameters_human": "16.5M",

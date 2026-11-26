@@ -2,87 +2,84 @@
 
 ## Resumen
 
-research-assistant-gemma4-12b-rewrite-GGUF es un modelo de lenguaje y visión derivado de Gemma 4 12B (arquitectura `gemma4_unified`), afinado por el usuario khaleddiab y convertido a formato GGUF mediante Unsloth. El modelo está pensado como asistente de investigación y reescritura de texto, con soporte multimodal a través de un proyector de visión separado (`F16-mmproj`). Cuenta con 11.907.350.576 parámetros totales según los pesos safetensors publicados.
+research-assistant-gemma4-12b-rewrite-GGUF es un ajuste fino (fine-tuning) del modelo Gemma 4 de 12B de parámetros, publicado por el usuario khaleddiab en Hugging Face y orientado a tareas de asistencia a la investigación. El modelo parte de una base Gemma 4 instruction-tuned de aproximadamente 11.900 millones de parámetros y se ha especializado, según el nombre del repositorio, en tareas de reescritura ("rewrite") dentro de flujos de trabajo de investigación.
 
-La relevancia del modelo radica en su formato: al distribuirse en GGUF cuantizado (Q4_K_M) y con un proyector multimodal independiente, está preparado para ejecutarse en `llama.cpp` y en entornos de consumo sin necesidad de GPU de datacenter. El repositorio ocupa 7,5 GB, lo que confirma que la distribución principal es la variante cuantizada.
+El autor ha distribuido únicamente la versión cuantizada en formato GGUF, generada con la herramienta Unsloth, lo que facilita su ejecución en llama.cpp y en entornos de consumo. El repositorio incluye una cuantización Q4_K_M para el modelo de lenguaje y un proyector multimodal en F16 (`F16-mmproj.gguf`), lo que indica que conserva capacidades de visión heredadas del modelo base Gemma 4.
 
-Se trata de un modelo recién publicado (noviembre de 2026) sin descargas ni valoraciones, sin model card detallada más allá de las instrucciones de uso, y sin información sobre licencia, idiomas o pipeline declarados en Hugging Face. Toda la información técnica disponible proviene de los metadatos del repositorio y de la propia model card.
+La relevancia del modelo radica en su formato de despliegue ligero y su orientación a tareas concretas de reescritura y asistencia investigadora, aunque la información pública disponible es muy limitada: no se detallan datos de entrenamiento, licencia explícita ni idiomas soportados, por lo que su adopción en producción requiere validación adicional por parte del usuario.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `gemma4_unified` (transformer multimodal, familia Gemma 4) |
-| Parámetros totales | 11.907.350.576 (11,9 mil millones) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Gemma 4, vision-language model); detalles no disponibles |
+| Parametros totales | 11.907.350.576 (aprox. 11,9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M (archivo principal) y F16 para el proyector multimodal (mmproj) |
+| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje), F16 (proyector multimodal mmproj) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en Hugging Face) |
-| Formato de pesos | GGUF (`gemma-4-12b-it.Q4_K_M.gguf`, `gemma-4-12b-it.F16-mmproj.gguf`) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (safetensors solo como referencia de parametros) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 12B en su variante instruct (`gemma-4-12b-it`, según el nombre de los archivos) y emplea la arquitectura `gemma4_unified`, que en la familia Gemma 4 integra capacidades de visión junto al decodificador de texto. La distribución separa el modelo de lenguaje cuantizado en Q4_K_M del proyector de visión en F16 (`mmproj`), un patrón habitual en `llama.cpp` para modelos multimodales.
+El modelo es un ajuste fino de Gemma 4 de 12B, una familia de modelos transformer de Google. La presencia de un fichero `mmproj` en F16 confirma que se trata de un modelo vision-language (VLM), capaz de procesar imágenes además de texto. El ajuste fino se realizó y convirtió a GGUF con Unsloth, según indica el autor, lo que sugiere el uso de técnicas de entrenamiento eficiente en memoria (LoRA/QLoRA u optimizaciones equivalentes de Unsloth), aunque no se especifican hiperparámetros, número de tokens de entrenamiento ni composición del dataset.
 
-El autor indica que el ajuste fino y la conversión a GGUF se realizaron con Unsloth, que según la model card permitió entrenar "2x más rápido". No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o preferencias. Tampoco se detalla ninguna innovación arquitectónica adicional más allá de lo heredado de Gemma 4.
+No se dispone de información sobre si el ajuste incluyó RLHF, DPO u otras etapas de alineación posteriores, ni sobre innovaciones técnicas específicas del fine-tuning (por ejemplo, decodificación especulativa o atención lineal). El nombre "rewrite" sugiere un entrenamiento orientado a tareas de reescritura de texto, probablemente en el contexto de asistencia a la investigación, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
-- Generación de texto y reescritura: el nombre del modelo (`rewrite`) sugiere un ajuste orientado a reescritura y asistencia a la investigación.
-- Comprensión de imágenes: dispone de un proyector multimodal (`F16-mmproj.gguf`) utilizable con `llama-mtmd-cli`.
-- Conversación multi-turno: etiquetado como `conversational` en Hugging Face.
-- Compatibilidad con `llama.cpp`: soporta plantillas Jinja mediante el flag `--jinja`.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto y razonamiento: heredadas del modelo base Gemma 4 instruction-tuned.
+- Capacidades de visión: el repositorio incluye proyector multimodal (`F16-mmproj.gguf`), lo que permite procesar imágenes con `llama-mtmd-cli`.
+- Reescritura de texto: el nombre del modelo indica especialización en tareas de reescritura, presumiblemente en contextos de investigación.
+- Conversación multi-turno: la etiqueta `conversational` y el uso de `--jinja` en llama.cpp sugieren soporte de plantillas de chat.
+- Tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: no disponible (no se especifican idiomas).
 
 ## Casos de uso
 
-- Asistente de reescritura académica: el ajuste específico sobre Gemma 4 12B orientado a `rewrite` permite reformular párrafos, resumir secciones y adaptar el registro de textos de investigación manteniendo el contenido técnico.
-- Investigación con documentos escaneados: gracias al proyector de visión, el modelo puede recibir imágenes de páginas, figuras o tablas y extraer o describir su contenido en el flujo de trabajo del investigador.
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF Q4_K_M (7,5 GB de repositorio), puede ejecutarse con `llama.cpp` en equipos sin GPU dedicada de gran capacidad, lo que facilita su uso en entornos con requisitos de privacidad.
-- Servicio conversacional autoalojado: la etiqueta `endpoints_compatible` y el soporte de plantilla Jinja permiten exponerlo como endpoint conversacional en infraestructura propia.
-- Procesamiento por lotes de reescritura: mediante `llama-cli` o scripts sobre `llama.cpp` se pueden reescribir grandes volúmenes de borradores o notas de investigación sin depender de APIs externas.
-- Prototipado multimodal: el par de archivos (modelo + mmproj) permite experimentar con entrada de imagen y texto en pipelines de `llama.cpp` sin necesidad de convertir pesos manualmente.
-- Integración en asistentes de documentación técnica: el modelo puede reescribir y clarificar documentación interna a partir de capturas o diagramas, combinando las capacidades de texto y visión.
+- Reescritura de textos académicos: el modelo puede reformular párrafos, resúmenes o abstracts manteniendo el significado, aprovechando su especialización declarada en tareas de "rewrite".
+- Asistencia a la investigación documental: puede ayudar a sintetizar y reformular notas o borradores de artículos, aunque requiere validación humana por la falta de benchmarks publicados.
+- Procesamiento de documentos con imágenes: gracias al proyector multimodal, puede extraer y reescribir información de figuras, tablas escaneadas o capturas, integrándose en pipelines de investigación.
+- Despliegue local en estaciones de trabajo: al estar en GGUF Q4_K_M, puede ejecutarse en llama.cpp sobre hardware de consumo, útil para prototipos y pruebas offline.
+- Generación de borradores en entornos con requisitos de privacidad: al ejecutarse localmente, permite procesar textos sensibles sin enviarlos a servicios en la nube.
+- Integración en herramientas CLI: mediante `llama-cli` o `llama-mtmd-cli` con `--jinja`, se puede incorporar en scripts de automatización de reescritura por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en Q4_K_M: aproximadamente 7-8 GB para el modelo de lenguaje, más un margen adicional para el proyector de visión y la caché KV.
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, una GPU con 12-16 GB de VRAM (por ejemplo, RTX 4070 Ti Super, RTX 4080, RTX 4090) es un objetivo razonable para la variante Q4_K_M.
-- GPU de consumo: sí, la cuantización Q4_K_M está pensada para caber en GPUs de consumo de gama alta; en GPUs con menos VRAM puede recurrirse a descarga parcial a CPU.
-- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-mtmd-cli`), y creación de modelo en Ollama mediante `Modelfile` a partir del modelo bf16 fusionado (Ollama no admite mmproj separado).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: el fichero Q4_K_M de un modelo de ~11,9B ocupa aproximadamente 7-8 GB; el proyector mmproj en F16 añade un tamaño adicional (no especificado). El repositorio completo pesa 15,0 GB, aunque no todo es necesario para inferencia.
+- GPU recomendadas: no disponibles de forma específica; por tamaño, una GPU con 12-16 GB de VRAM debería ser suficiente para Q4_K_M.
+- GPU de consumo: probablemente cabe en RTX 3060 12GB, RTX 4060 Ti 16GB, RTX 4070/4080 y superiores, aunque no hay datos oficiales de rendimiento.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`), y por extensión cualquier frontend compatible con GGUF (Ollama, LM Studio, etc.), aunque no se documenta soporte explícito.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| research-assistant-gemma4-12b-rewrite-GGUF | 11,9 mil millones | no disponible | Sí (mmproj) | no disponible | GGUF |
-| Gemma 4 12B IT (base) | ~12 mil millones | no disponible | Sí | no disponible | safetensors / GGUF |
-| Alternativas de ~12B con visión | no disponible | no disponible | no disponible | no disponible | no disponible |
+| research-assistant-gemma4-12b-rewrite-GGUF | ~11,9B | no disponible | no disponible | GGUF | Fine-tuning especializado en reescritura |
+| Gemma 4 12B (base) | ~12B | no disponible | no disponible | safetensors/GGUF | Modelo original de Google; referencia directa |
+| Alternativas de 12B (p. ej. Mistral/Llama de tamaño similar) | ~7-13B | variable | variable | variable | No se dispone de comparación de rendimiento |
 
-No se dispone de datos de rendimiento comparado ni de información suficiente sobre alternativas equivalentes en la información proporcionada.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica la licencia del modelo ni las condiciones de uso comercial, lo que impide confirmar su viabilidad en producción sin consultar al autor.
-- Idiomas no declarados: no hay información sobre el soporte multilingüe; el ajuste fino podría haber reducido el rendimiento en idiomas distintos al del dataset de entrenamiento.
-- Contexto desconocido: se desconoce la longitud máxima de contexto efectiva del modelo ajustado.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en tareas de investigación donde la verificación factual es crítica.
-- Sesgos: no se documentan sesgos conocidos ni procesos de mitigación.
-- Modelo sin validación comunitaria: cero descargas y cero valoraciones en el momento de la consulta; no hay evidencia externa de calidad.
-- Compatibilidad con Ollama limitada para visión: Ollama no soporta archivos mmproj separados, por lo que requiere crear un modelo unificado en bf16, con mayor consumo de recursos.
-- Fecha de publicación futura en los metadatos (2026): conviene verificar la integridad y procedencia del repositorio antes de usarlo en producción.
+- Licencia no especificada: no se indica la licencia del modelo, lo que impide confirmar si se permite uso comercial; debe consultarse al autor o al modelo base Gemma 4.
+- Idiomas no documentados: no se confirma el soporte multilingüe ni la calidad en castellano.
+- Riesgo de alucinación: al ser un fine-tuning sin benchmarks publicados, no hay garantías de fiabilidad en tareas de investigación.
+- Contexto desconocido: se desconoce la longitud máxima de contexto, lo que limita la planificación de casos de uso con documentos largos.
+- Datos de entrenamiento no documentados: no se puede evaluar sesgos ni composición del dataset.
+- Solo distribución GGUF: no se ofrecen pesos en safetensors para reentrenamiento o inspección.
+- Uso en producción: requiere validación empírica previa, dado que no hay métricas ni evaluación independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/khaleddiab/research-assistant-gemma4-12b-rewrite-GGUF
-- Unsloth (repositorio): https://github.com/unslothai/unsloth
-- llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
+- Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth
+- llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

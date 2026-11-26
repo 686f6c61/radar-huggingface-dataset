@@ -2,48 +2,57 @@
 
 ## Resumen
 
-Este repositorio contiene una coleccion de cuantizaciones GGUF estaticas generadas por mradermacher a partir del modelo base `3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash`. Se trata, por tanto, de un artefacto de conversion y no de un modelo entrenado de forma original por el autor del repo: el trabajo de mradermacher consiste en aplicar su pipeline habitual de cuantizacion (herramientas de llama.cpp) sobre los pesos en BF16 publicados por el autor original y ofrecer variantes listas para inferencia local.
+Esta ficha describe la publicación de cuantizaciones GGUF realizada por mradermacher sobre el modelo `3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash`, un modelo de lenguaje de aproximadamente 26.896 millones de parámetros (26,9B) derivado de la familia Qwen y destilado a partir de DeepSeek-V4. El repositorio no contiene un modelo entrenado desde cero, sino una colección de pesos cuantizados en formato GGUF generados a partir del checkpoint base en BF16, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El nombre del modelo es un compendio de etiquetas encadenadas ("Qwen3.8-27B", "3MPER0RR", "abliterated", "DeepSeek-V4-Flash") que no se corresponde con los datos verificables del repositorio. El unico dato estructural fiable es el recuento de parametros obtenido de los safetensors del modelo base: 460.730.096 parametros, es decir, aproximadamente 0,46 mil millones, muy lejos de los 27B que sugiere el nombre. El tamano del repo (1,6 GB) es coherente con ese orden de magnitud para pesos en BF16 o cuantizaciones de alta precision.
+El modelo base combina tres señales en su nombre: una base Qwen de 27B, un proceso de "abliteration" (eliminación o atenuación de los mecanismos de rechazo aprendidos durante el alineamiento) y una destilación desde DeepSeek-V4 sobre el dataset `Jackrong/DeepSeek-V4-Distill-8000x`. La licencia declarada es Apache 2.0 y el único idioma indicado en la model card es el inglés. El repositorio incluye además ficheros `mmproj` (proyector multimodal), lo que sugiere capacidades de visión en el modelo base.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: sirve como ejemplo de repositorio con metadatos inconsistentes (nombre, parametros, pipeline y licencia sin declarar) y como advertencia para cualquiera que pretenda evaluar o desplegar el modelo basandose solo en su identificador. No hay model card sustantiva, ni pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks.
+La relevancia de esta publicación es práctica: ofrece 12 cuantizaciones estáticas (de Q2_K a Q8_0) más dos variantes del proyector multimodal, con tamaños que van de 11,2 GB a 28,7 GB, lo que permite desplegar un modelo de ~27B en GPUs de consumo con 16-24 GB de VRAM según el nivel de compresión elegido. No se han publicado resultados de benchmarks ni especificaciones detalladas de contexto o entrenamiento en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere una familia tipo Qwen, sin confirmar) |
-| Parametros totales | 460.730.096 (segun safetensors del modelo base) |
-| Parametros activos | no disponible (no se declara que sea MoE) |
+| Arquitectura | no disponible (modelo base derivado de Qwen, transformer; detalles no publicados) |
+| Parametros totales | 26.895.998.464 (~26,9B), dato real de safetensors |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se publica en BF16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (inglés), según la model card |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo de cuantizaciones); el base en safetensors/BF16 |
+| Tamano del repo | 189,4 GB |
+| Dataset de destilacion | Jackrong/DeepSeek-V4-Distill-8000x |
+| Modelo base | 3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash |
+| Descargas / likes | 924 / 1 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. El identificador incluye la cadena "Qwen3.8-27B", que sugiere una hipotetica variante de la familia Qwen, pero ni el recuento de parametros (0,46B) ni la ausencia de model card permiten confirmarlo. Tampoco se documenta el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni si hubo fases de RLHF, DPO o similares.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Por el nombre y el tamaño (~26,9B parámetros) se trata de un transformer denso derivado de la familia Qwen de 27B, aunque no se confirman número de capas, dimensiones ocultas, mecanismo de atención ni longitud de contexto. El sufijo "abliterated" indica que el checkpoint ha pasado por un proceso de abliteration, una técnica de modificación de pesos orientada a reducir las respuestas de rechazo del modelo alineado original.
 
-El unico proceso tecnico verificable es el de cuantizacion: el autor aplica su pipeline estandar (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1) para generar variantes GGUF estaticas a partir de los pesos BF16. La etiqueta "abliterated" en el nombre alude a una tecnica de modificacion de pesos orientada a eliminar direcciones de rechazo, pero no hay documentacion en este repositorio sobre como se aplico ni con que metodologia.
+El entrenamiento del modelo base combina, según los metadatos, una destilación desde DeepSeek-V4 sobre el dataset `Jackrong/DeepSeek-V4-Distill-8000x` (8.000 ejemplos, a juzgar por el nombre). No se especifican el número total de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La presencia de ficheros `mmproj` en el repo de cuantizaciones sugiere que el modelo base incorpora un proyector multimodal para entrada de imágenes, aunque no se detalla la arquitectura de visión ni el encoder utilizado.
+
+La innovación técnica destacable de esta publicación no está en el entrenamiento, sino en la cadena de cuantización: mradermacher genera cuantizaciones estáticas (no imatrix) con distintos niveles de compresión, e indica que las cuantizaciones ponderadas con imatrix están disponibles en un repositorio separado (`-i1-GGUF`). El repo incluye también un gráfico comparativo de perplejidad entre tipos de cuantización de baja calidad.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: capacidad basica esperable en cualquier modelo de lenguaje, aunque no verificada en este repo.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se declaran capacidades multilingues ni idiomas cubiertos.
-- No se declaran capacidades especiales (modo thinking, vision, audio, decodificacion especulativa).
-- La etiqueta "abliterated" implica, en principio, una reduccion de los rechazos del modelo base, pero su efecto real no esta medido ni documentado aqui.
+- Generación de texto conversacional multi-turno, según la etiqueta `conversational` del repositorio.
+- Razonamiento y generación de código: capacidades heredadas del modelo base Qwen de 27B, aunque no se documentan explícitamente en la model card.
+- Procesamiento multimodal: la presencia de ficheros `mmproj-Q8_0` y `mmproj-f16` indica soporte de entrada de imágenes en el modelo base, no confirmado con detalle.
+- Destilación desde DeepSeek-V4: el modelo ha sido entrenado para imitar el comportamiento del profesor, lo que puede reflejar estilos de razonamiento y formato de respuesta de DeepSeek.
+- Comportamiento "abliterated": reducción de rechazos y filtros de seguridad respecto al modelo alineado original.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: solo se declara inglés (`en`); no se confirman otros idiomas.
 
 ## Casos de uso
 
-- Evaluacion de pipelines de cuantizacion: el repo sirve para probar el flujo de mradermacher (generacion de multiples niveles de quant desde BF16) sobre un modelo pequeno de 0,46B, util para validar herramientas antes de aplicarlas a modelos mayores.
-- Pruebas de inferencia en llama.cpp: las variantes Q4_K_M y Q5_K_M permiten verificar el correcto funcionamiento de llama.cpp con pesos de este repositorio en entornos de desarrollo.
-- Benchmarking de cuantizaciones: comparar perplejidad o calidad de salida entre Q2_K, Q4_K_M y Q8_0 sobre el mismo modelo base para calibrar el impacto de la cuantizacion.
-- Experimentacion con modelos "abliterated": investigadores interesados en estudiar el efecto de la ablacion de direcciones de rechazo pueden usar este modelo como caso de prueba, siempre que verifiquen primero el modelo base original.
-- Despliegue en hardware muy limitado: con 0,46B parametros, las variantes Q4_K_S o Q2_K caben en CPU y en GPUs de gama baja, lo que permite prototipado rapido de interfaces de chat.
-- Docencia y formacion: como ejemplo practico de repositorio con metadatos inconsistentes, util para ensenar a auditores de modelos a no fiarse del nombre del repo.
+- Despliegue local en estación de trabajo con GPU de consumo: con las cuantizaciones Q4_K_M (16,8 GB) o Q5_K_M (19,4 GB) el modelo cabe en GPUs de 24 GB como la RTX 4090, permitiendo inferencia privada sin conexión a servicios externos.
+- Experimentación con modelos sin filtros de rechazo: el proceso de abliteration hace que el modelo sea adecuado para investigación sobre comportamiento de modelos y estudios de alineamiento, siempre con las cautelas éticas y legales correspondientes.
+- Prototipado de asistentes conversacionales en inglés: la etiqueta `conversational` y la destilación desde DeepSeek-V4 permiten usar el modelo como base para chatbots de dominio general en entornos de desarrollo.
+- Evaluación de destilaciones: útil para investigadores que quieran comparar el comportamiento de un modelo destilado de DeepSeek-V4 frente al profesor original en tareas de razonamiento y generación.
+- Pruebas de cuantización y benchmarking de llama.cpp: el repositorio ofrece 12 niveles de cuantización, lo que permite medir el impacto de la compresión en calidad (perplejidad) y velocidad en un mismo modelo.
+- Procesamiento de imágenes con el proyector multimodal: cargando los ficheros `mmproj` junto con los pesos principales en llama.cpp, se puede experimentar con entrada de imágenes, aunque la calidad y el soporte exacto no están documentados.
+- Fine-tuning posterior sobre los pesos BF16 del modelo base: el checkpoint original en BF16 permite reentrenar o adaptar el modelo con LoRA/QLoRA antes de volver a cuantizar.
 
 ## Benchmarks y rendimiento
 
@@ -51,37 +60,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 0,46B parametros, aproximadamente 0,9 GB en BF16, 0,5 GB en Q8_0, 0,3 GB en Q4_K_M y 0,2 GB en Q2_K (estimaciones teoricas segun recuento de parametros; no verificadas en este repo).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tambien funciona en CPU.
-- Cabe en GPU consumer: si, practicamente cualquier GPU moderna (GTX 1050 en adelante) e incluso en Raspberry Pi con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama (previa conversion a Modelfile), y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto):
+  - Q2_K: ~11,2 GB.
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~12,2 / 13,6 / 14,8 GB.
+  - IQ4_XS / Q4_K_S / Q4_K_M: ~15,5 / 15,7 / 16,8 GB.
+  - Q5_K_S / Q5_K_M: ~18,8 / 19,4 GB.
+  - Q6_K: ~22,2 GB.
+  - Q8_0: ~28,7 GB.
+  - Proyector multimodal: +0,7 GB (Q8_0) o +1,0 GB (f16).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para los mismos niveles; A100 40/80 GB o H100 para Q8_0 y BF16; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo para Q2_K y Q3_K_S con contexto reducido.
+- ¿Cabe en GPU de consumo? Sí: Q4_K_S y Q4_K_M en GPUs de 24 GB; Q3_K_S en GPUs de 16 GB; Q2_K en GPUs de 12 GB con contexto limitado.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), LM Studio, text-generation-webui, y servidores compatibles con la API de endpoints indicada en los tags (`endpoints_compatible`). vLLM y TGI no soportan GGUF de forma nativa para este caso, por lo que requerirían el checkpoint BF16.
+- Latencia y throughput: no disponibles; dependen del hardware, del nivel de cuantización y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este repo (Qwen3.8-27B-...-GGUF) | 0,46B (segun safetensors) | no disponible | no disponible | GGUF | Hugging Face |
-| Modelo base 3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash | no disponible | no disponible | no disponible | BF16 | Hugging Face |
-| Qwen2.5-0.5B (referencia de tamano similar) | 0,49B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Este modelo (Qwen3.8-27B abliterated DeepSeek-V4 Flash, GGUF) | ~26,9B | no disponible | Apache 2.0 | GGUF | Destilado de DeepSeek-V4, abliterated, multimodal (mmproj) |
+| Modelo base BF16 (3MPER0RR/Qwen3.8-27B-...) | ~26,9B | no disponible | Apache 2.0 | safetensors/BF16 | Checkpoint original sin cuantizar |
+| Qwen2.5-32B-Instruct | ~32,8B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Referencia de la familia Qwen; contexto y benchmarks públicos |
+| DeepSeek-V4 (profesor) | no disponible | no disponible | no disponible | no disponible | Modelo del que se destila; sin datos públicos en esta ficha |
 
-La comparativa con Qwen2.5-0.5B se incluye solo como referencia de orden de magnitud; no implica que este modelo pertenezca a esa familia ni que sus capacidades sean equiparables.
+La comparativa con alternativas concretas queda limitada porque no se dispone de benchmarks ni de especificaciones de contexto del modelo evaluado. Los modelos citados como referencia (Qwen2.5-32B-Instruct) son orientativos por familia y tamaño, no equivalentes funcionales verificados.
 
 ## Limitaciones y advertencias
 
-- Metadatos inconsistentes: el nombre sugiere 27B parametros, pero los safetensors del modelo base indican 0,46B. Cualquier evaluacion basada en el nombre sera erronea.
-- Ausencia total de model card sustantiva: no hay descripcion de arquitectura, entrenamiento, datos, sesgos ni evaluaciones.
-- Licencia no declarada: no es posible determinar si el uso comercial esta permitido. En la practica, esto bloquea su adopcion en produccion hasta que el autor original aclare la licencia.
-- Riesgo de alucinacion: no evaluado; al ser un modelo pequeno (0,46B), la tasa de alucinacion sera previsiblemente alta en tareas de conocimiento factual.
-- Etiqueta "abliterated": implica modificacion de pesos para reducir rechazos, lo que puede aumentar la probabilidad de generar contenido danino o inapropiado. No hay evaluacion de seguridad publicada.
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
-- Contexto no declarado: no se puede planificar su uso en tareas de contexto largo.
-- Repo con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
-- Origen del modelo base incierto: el nombre encadena etiquetas de varias familias (Qwen, DeepSeek) sin que se pueda verificar su procedencia real.
+- El proceso de abliteration elimina o atenúa los mecanismos de rechazo del modelo alineado: puede generar contenido dañino, ofensivo o inseguro sin las salvaguardas habituales. No es adecuado para aplicaciones de cara al público sin capas adicionales de moderación.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al ser un modelo destilado, puede reproducir errores del profesor o inventar datos con seguridad aparente.
+- Idiomas: solo se declara inglés (`en`); el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Longitud de contexto: no disponible; no se debe asumir una ventana concreta sin verificarla en el modelo base.
+- Licencia Apache 2.0 declarada, pero el modelo base incorpora pesos derivados de Qwen y una destilación de DeepSeek-V4; conviene revisar las condiciones de los modelos originales antes de un uso comercial, especialmente por las cláusulas de los términos de DeepSeek.
+- El repositorio es una publicación de cuantizaciones de un tercero (mradermacher), no el modelo original; la responsabilidad sobre el entrenamiento y el alineamiento recae en el autor del modelo base.
+- El tamaño del repo (189,4 GB) implica descargas largas y espacio en disco considerable si se quieren varias cuantizaciones.
+- No hay garantías de soporte del proyector multimodal en todas las versiones de llama.cpp; la funcionalidad de visión debe validarse empíricamente.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) degradan la perplejidad de forma notable; para producción se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash-GGUF
-- Modelo base (BF16): https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp
+- Modelo base: https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash-GGUF
+- Dataset de destilación: https://huggingface.co/datasets/Jackrong/DeepSeek-V4-Distill-8000x
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

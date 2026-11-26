@@ -2,110 +2,114 @@
 
 ## Resumen
 
-Ornith-1.5-9B-Abliterated es una variante del modelo Ornith-1.5-9B de ornith-ai (DeepReinforce), un modelo denso de 9.000 millones de parametros orientado a tareas agénticas y generación de código, entrenado con un bucle de auto-mejora que combina propuesta de tareas, generación de scaffolds y rollouts para aprendizaje por refuerzo. La version abliterada, publicada por PocketAI Model Lab, elimina los rechazos de seguridad del modelo original para permitir un comportamiento menos restrictivo en entornos de investigacion y agentes.
+Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF es una cuantizacion especializada del modelo multimodal Ornith-1.5-9B en su variante "abliterated" (con las direcciones de rechazo eliminadas), empaquetada en formatos ROCmFP4 y ROCmFPX especificamente optimizados para GPUs integradas AMD Strix Halo (gfx1151, Radeon 8060S). El trabajo de abliteracion, conversion y validacion original corresponde a PocketAI Model Lab, mientras que el modelo base es de ornith-ai; este repositorio anade unicamente la escalera de cuantizacion ROCmFP4/ROCmFPX, la compilacion de doble backend (HIP y Vulkan) y las mediciones de rendimiento.
 
-Este repositorio concreto, creado por kingjones777, anade una escalera de cuantizaciones ROCmFP4/ROCmFPX especificamente compiladas y medidas para la GPU integrada Radeon 8060S del AMD Ryzen AI Max+ 395 (arquitectura gfx1151, tambien conocida como Strix Halo). La particularidad es que cada archivo funciona tanto con el backend HIP (ROCm) como con Vulkan desde un unico binario, seleccionable en tiempo de ejecucion mediante la opcion `-dev`. El modelo es multimodal (image-text-to-text) e incluye un proyector de vision en F16 que funciona con todas las cuantizaciones.
+El modelo resuelve un problema muy concreto: ejecutar un transformer denso de 9B parametros con capacidad de vision en hardware AMD integrado (Ryzen AI Max+ 395), con un unico binario que soporta tanto el backend ROCm como Vulkan seleccionable en tiempo de ejecucion mediante el flag `-dev`. Con 8.953.803.264 parametros reales, ofrece seis niveles de cuantizacion que van de 4,72 GiB a 8,77 GiB, mas un proyector de vision F16 de 0,86 GiB.
 
-La relevancia actual radica en que demuestra la viabilidad de ejecutar modelos de 9B con razonamiento y vision en hardware integrado de AMD de alta gama, con rendimientos de decodificacion superiores a 35 tokens por segundo en las cuantizaciones de 4 bits, y con una calidad medida por perplexity que en algunos casos supera a la cuantizacion Q8 de referencia.
+Su relevancia actual radica en que demuestra que en un modelo denso de 9B el backend importa mucho menos que en su hermano mayor de 35B (MoE), donde la eleccion de backend valia aproximadamente 10 veces mas que la eleccion de tier. Es un caso practico de referencia para quien despliegue modelos multimodales en hardware AMD de consumo profesional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (image-text-to-text) |
-| Parametros totales | 8.953.803.264 (~8,95 B) |
+| Arquitectura | Transformer denso (no MoE), multimodal image-text-to-text |
+| Parametros totales | 8.953.803.264 (8,95B) |
 | Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (configuracion medida; maximo oficial no disponible) |
-| Tipos de cuantizacion | ROCmFP4 (Q4_0) y ROCmFPX (Q8_0, Q6_0) en seis variantes: STRIX_LEAN, FAST, COHERENT, AGENT, referencia y Q6 |
+| Longitud de contexto | 32.768 tokens (configuracion medida con `-c 32768`) |
+| Tipos de cuantizacion | ROCmFP4 (tipos ggml 100-119): Q4_0_ROCMFP4_STRIX_LEAN, Q4_0_ROCMFP4_FAST, Q4_0_ROCMFP4_COHERENT; ROCmFPX: Q8_0_ROCMFPX_AGENT, Q8_0_ROCMFPX, Q6_0_ROCMFPX_AGENT; proyector de vision F16 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con tipos tensoriales ROCmFP4/ROCmFPX, numeros 100-119) |
+| Formato de pesos | GGUF (tipos de tensor ggml 100-119, requieren build ROCmFPX con Vulkan) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-9B es un transformer denso de 9B parametros, disenado para tareas agénticas y generacion de codigo. Segun la informacion publicada por ornith-ai, la familia Ornith-1.5 se entrena con un bucle de auto-mejora de extremo a extremo: el modelo propone nuevas tareas, genera scaffolds especificos para cada tarea y produce rollouts de soluciones que se utilizan para aprendizaje por refuerzo. No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
+Se trata de un transformer denso de 8,95B parametros con capacidad multimodal (procesamiento de imagen y texto), derivado de ornith-ai/Ornith-1.5-9B y posteriormente sometido a un proceso de abliteration por PocketAI Model Lab, que elimina las direcciones de activacion asociadas al rechazo de peticiones. El modelo incorpora un proyector de vision en F16 (0,86 GiB) que funciona con todos los niveles de cuantizacion.
 
-La variante abliterada, realizada por PocketAI Model Lab, elimina los mecanismos de rechazo del modelo original. El presente repositorio anade la cuantizacion ROCmFP4/ROCmFPX, un formato de compresion desarrollado para GPUs AMD que utiliza tipos tensoriales GGML numerados del 100 al 119, no soportados por llama.cpp estandar. El modelo incluye un proyector de vision en F16 (0,86 GiB) que permite procesar imagenes junto con texto.
+La innovacion tecnica principal de este repositorio no esta en el modelo sino en el empaquetado: los formatos ROCmFP4 y ROCmFPX utilizan tipos de tensor ggml en el rango 100-119, que la tabla de tipos de llama.cpp upstream (que llega hasta 43) rechaza de forma explicita. Por ello es necesario compilar una version con `-DGGML_HIP=ON -DGGML_VULKAN=ON -DAMDGPU_TARGETS=gfx1151`, de modo que un unico binario exponga ambos dispositivos (ROCm0 y Vulkan0) y el backend se elija en tiempo de ejecucion. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso: el modelo emite un bloque de razonamiento antes de la respuesta final, lo que requiere presupuestos de tokens elevados (se midieron entre 301 y 708 tokens de completacion para una peticion corta de escritura de funcion).
-- Generacion de codigo: orientado a tareas de programacion, con soporte para agentes y tool calling (no se detalla la implementacion exacta, pero es un modelo de la familia agéntica Ornith).
-- Capacidades multimodales: procesa imagenes mediante el proyector de vision F16 incluido, permitiendo entradas image-text-to-text.
-- Ejecucion dual-backend: cada archivo GGUF funciona tanto con HIP (ROCm) como con Vulkan, seleccionable en tiempo de ejecucion sin recompilar.
-- Auto-mejora: el modelo base fue entrenado con un bucle de auto-mejora que le permite proponer tareas y generar scaffolds, aunque esta capacidad no se detalla en la version cuantizada.
+- Generacion de texto conversacional multi-turno con contexto de hasta 32.768 tokens.
+- Razonamiento explicito: el modelo emite un bloque de razonamiento (`reasoning_content`) antes de la respuesta final, con presupuestos medidos de entre 301 y 708 tokens de completion para una peticion corta segun el tier.
+- Generacion de codigo, con rendimiento medido especificamente en tareas de codigo (35,22 tok/s en `COHERENT`/ROCm).
+- Generacion de prosa y de JSON estructurado (medidos por separado en la tabla de rendimiento del autor).
+- Capacidades multimodales de imagen a texto mediante el proyector F16 (`mmproj-*-F16.gguf`), compatible con todos los tiers.
+- Soporte de plantillas Jinja (`--jinja`) para formateo de chat.
+- Ejecucion dual-backend HIP (ROCm) y Vulkan desde un unico binario.
+- Capacidad de agentes y razonamiento multi-paso (el autor advierte sobre bucles de repeticion en turnos agenticos largos si se desactiva el control de repeticion).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Agentes de codigo en entornos de desarrollo: el modelo puede integrarse en pipelines de CI/CD para generar, revisar o completar codigo, aprovechando su capacidad de razonamiento previo y su orientacion a tareas agénticas. Su licencia MIT permite uso comercial sin restricciones.
-- Asistentes de programacion locales en portatiles con Ryzen AI Max: gracias a las cuantizaciones ROCmFP4, se puede ejecutar en equipos con la GPU integrada Radeon 8060S sin necesidad de GPU discreta, con velocidades superiores a 35 tok/s en decodificacion.
-- Analisis de imagenes con contexto largo: el proyector de vision F16 permite enviar capturas de pantalla, diagramas o documentacion visual junto con prompts de codigo, util para depuracion visual o generacion de codigo a partir de mockups.
-- Investigacion en alineacion y seguridad: la version abliterada elimina los rechazos, lo que permite estudiar el comportamiento del modelo sin restricciones de seguridad, aunque con las advertencias eticas correspondientes.
-- Despliegue en entornos con restriccion de VRAM: las cuantizaciones Q4_0 ocupan entre 4,72 y 5,19 GiB, lo que permite ejecutar el modelo en GPUs integradas con memoria compartida o en tarjetas de gama media con 8 GB de VRAM.
-- Servidores de inferencia locales con llama.cpp: el repositorio incluye comandos de `llama-server` con configuracion optimizada (contexto 32K, cache q8_0, prefill de 8192 tokens) para servir el modelo via HTTP en redes locales.
+- Despliegue local en AMD Strix Halo: ejecutar el modelo en un Ryzen AI Max+ 395 (Radeon 8060S) usando el tier `Q4_0_ROCMFP4_STRIX_LEAN` (4,89 GiB), que ofrece la mejor relacion velocidad/perplejidad del conjunto y supera en perplejidad al Q8 completo.
+- Asistente de codigo en estacion de trabajo: con 35,22 tok/s en generacion de codigo sobre ROCm y prefill de 407-443 tok/s, es viable para autocompletado y explicacion de funciones en un IDE local sin GPU dedicada.
+- Procesamiento de documentos con imagenes: el proyector de vision F16 permite extraer y razonar sobre contenido de capturas, diagramas o formularios, manteniendo el modelo de lenguaje en 4 bits para ahorrar memoria.
+- Generacion de JSON estructurado en pipelines: el tier `COHERENT` mantiene 35,17 tok/s en salida JSON, adecuado para extraccion de datos y respuestas de API con esquema fijo.
+- Prototipado de agentes conversacionales: con contexto de 32K y plantillas Jinja, sirve para cadenas de razonamiento multi-paso, siempre con `--repeat-penalty 1.05 --repeat-last-n 256` para evitar bucles de repeticion.
+- Investigacion sobre cuantizacion en hardware AMD: el repositorio incluye mediciones completas de seis tiers en dos backends, util como referencia para comparar ROCm frente a Vulkan en GPUs integradas gfx1151.
+- Escenarios que requieren menor censura en las respuestas: la variante abliterated elimina las direcciones de rechazo, util en investigacion sobre alineacion y en tareas creativas o de red teaming controlado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos de rendimiento son los medidos por el autor del repositorio en un Ryzen AI Max+ 395 (Radeon 8060S), que se resumen a continuacion.
+Perplejidad medida sobre wikitext-2 (100 chunks):
 
-Perplexity en wikitext-2 (100 chunks, menor es mejor):
+| Tier | ftype | Tamano | PPL |
+|---|---|---|---|
+| Q8_0_ROCMFPX_AGENT | 115 | 8,77 GiB | 9,4163 |
+| Q4_0_ROCMFP4_STRIX_LEAN | 106 | 4,89 GiB | 9,4313 |
+| Q8_0_ROCMFPX | 111 | 8,64 GiB | 9,4559 |
+| Q4_0_ROCMFP4_FAST | 103 | 4,72 GiB | 9,4571 |
+| Q4_0_ROCMFP4_COHERENT | 102 | 5,19 GiB | 9,4576 |
+| Q6_0_ROCMFPX_AGENT | 114 | 7,88 GiB | 9,5850 |
 
-| Cuantizacion | Tamano | Perplexity |
-|---|---|---|
-| Q4_0_ROCMFP4_STRIX_LEAN | 4,89 GiB | 9,4313 |
-| Q4_0_ROCMFP4_FAST | 4,72 GiB | 9,4571 |
-| Q4_0_ROCMFP4_COHERENT | 5,19 GiB | 9,4576 |
-| Q8_0_ROCMFPX_AGENT | 8,77 GiB | 9,4163 |
-| Q8_0_ROCMFPX | 8,64 GiB | 9,4559 |
-| Q6_0_ROCMFPX_AGENT | 7,88 GiB | 9,5850 |
+Velocidad de decodificacion (tok/s, mediana de 2 repeticiones, `n_predict=400`, `-c 32768`):
 
-Velocidad de decodificacion (tok/s, mediana de 2 repeticiones, contexto 32K, un solo usuario):
-
-| Cuantizacion | Backend | code | prose | reason | json | prefill (code) |
+| Tier | Backend | codigo | prosa | razonamiento | json | prefill (codigo) |
 |---|---|---|---|---|---|---|
 | COHERENT | ROCm0 | 35,22 | 34,78 | 34,69 | 35,17 | 407 |
 | COHERENT | Vulkan0 | 34,57 | 34,58 | 34,62 | 34,58 | 367 |
 | FAST | ROCm0 | 35,52 | 35,53 | 35,44 | 35,98 | 443 |
-| FAST | Vulkan0 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Q6_AGENT | ROCm0 | 24,4 | no disponible | no disponible | no disponible | no disponible |
+| Q6_AGENT | Vulkan0 | 21,1 | no disponible | no disponible | no disponible | no disponible |
 
-El autor reporta que los backends ROCm y Vulkan estan dentro de un 1 % de diferencia en las cuantizaciones de 4 bits, y que la cuantizacion Q6 esta estrictamente dominada por las de 4 bits en velocidad, tamano y perplexity. Ademas, el modelo base Ornith-1.5-9B alcanza, segun datos del fabricante (promedio de cinco ejecuciones), 47,0 en Terminal-Bench 2.1 y 70,6 en otro benchmark no especificado.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 4,72 GiB (Q4_0_FAST) y 8,77 GiB (Q8_0_AGENT) para el modelo, mas 0,86 GiB del proyector de vision F16 si se usa multimodal.
-- GPU recomendada: AMD Radeon 8060S integrada en Ryzen AI Max+ 395 (gfx1151), que es el hardware de referencia del autor. Tambien deberia funcionar en otras GPUs AMD con soporte ROCm o Vulkan, aunque no se ha verificado.
-- Compatibilidad con GPU de consumo: cabe en GPUs integradas con memoria compartida (como la Radeon 8060S) y en tarjetas discretas con 8 GB o mas de VRAM, siempre que el backend ROCm o Vulkan este disponible.
-- Opciones de despliegue: llama.cpp con una build personalizada que incluya los tipos ROCmFPX (GGML_HIP=ON y GGML_VULKAN=ON, con AMDGPU_TARGETS=gfx1151). No es compatible con llama.cpp estandar ni con Ollama, vLLM o TGI sin modificaciones.
-- Latencia y throughput: decodificacion de 34-36 tok/s en las cuantizaciones de 4 bits, prefill de 367-443 tok/s (medido en el hardware de referencia). La cuantizacion Q6 baja a 24,4 tok/s en ROCm y 21,1 tok/s en Vulkan.
+- VRAM estimada: entre 5,58 GiB (FAST + proyector F16) y 9,63 GiB (Q8_AGENT + proyector) para pesos; anadir overhead de KV cache con `-ctk q8_0 -ctv q8_0` a 32K de contexto.
+- GPU objetivo: AMD Radeon 8060S integrada en Ryzen AI Max+ 395, arquitectura gfx1151 (Strix Halo). Todas las mediciones se realizaron en este hardware.
+- GPU dedicadas: no disponible; el autor no publica mediciones en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: si, en el iGPU Strix Halo con memoria unificada; no se confirma compatibilidad con GPUs consumer NVIDIA.
+- Despliegue: exclusivamente mediante `llama-server` compilado con ROCmFPX (tipos ggml 100-119). Un llama.cpp estandar rechaza estos ficheros. Compilacion requerida: `-DGGML_HIP=ON -DGGML_VULKAN=ON -DGGML_NATIVE=ON -DVulkan_GLSLC_EXECUTABLE=/usr/bin/glslc -DAMDGPU_TARGETS=gfx1151`. Verificar con `--list-devices` que aparecen ROCm0 y Vulkan0.
+- Latencia y throughput: 35,22-35,98 tok/s en decodificacion (tiers de 4 bits, ROCm), prefill de 407-443 tok/s en codigo. En Vulkan la diferencia es inferior al 1 % en tiers de 4 bits, pero del -13,6 % en Q6.
+- Flags recomendados: `-fa on -ngl 999 -fit off -np 1 -ctk q8_0 -ctv q8_0 -c 32768 -b 8192 -ub 2048 -t 4 --poll 100 --jinja --repeat-penalty 1.05 --repeat-last-n 256`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizaciones | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B (base) | 8,95 B | no disponible | MIT | no disponible | Modelo original sin abliterar, con entrenamiento de auto-mejora |
-| Ornith-1.5-9B-Abliterated (PocketAiHub) | 8,95 B | no disponible | MIT | GGUF estandar | Version abliterada sin cuantizaciones ROCmFPX |
-| Ornith-1.5-35B (MoE) | 35 B (MoE) | no disponible | MIT | no disponible | Hermano mayor, con diferencias de rendimiento entre backends (el backend era ~10x mas importante que el tier) |
-| Ornith-1.5-9B-Mobile | 9 B | no disponible | MIT | no disponible | Version cuantizada para iPhone y Android, segun llm-releases.com |
+| Ornith-1.5-9B-Abliterated-ROCmFP4 (este) | 8,95B denso | 32.768 | GGUF ROCmFP4/FPX | MIT | Optimizado para gfx1151, doble backend HIP/Vulkan |
+| Ornith-1.5-9B-Abliterated-GGUF (PocketAiHub) | 8,95B denso | no disponible | GGUF convencional | MIT | Modelo de origen; sin cuantizacion ROCmFP4 |
+| Ornith-1.5-9B (ornith-ai) | 8,95B denso | no disponible | no disponible | no disponible | Modelo base sin abliteration |
+| Hermano de 35B (MoE) mencionado por el autor | ~35B MoE | no disponible | ROCmFP4/FPX | no disponible | En el, el backend valia ~10x mas que el tier |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de 9B fuera de la familia Ornith.
+No se dispone de comparaciones con modelos de otros fabricantes (Llama, Qwen, Mistral) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere una build personalizada de llama.cpp: los tipos tensoriales ROCmFP4/ROCmFPX (numeros 100-119) no son reconocidos por llama.cpp estandar, que solo soporta hasta el tipo 43. Sin la compilacion con `-DGGML_HIP=ON -DGGML_VULKAN=ON -DAMDGPU_TARGETS=gfx1151`, los archivos no cargan en ningun backend.
-- El modelo razona antes de responder: si el presupuesto de `max_tokens` se agota durante el bloque de razonamiento, la API devuelve un HTTP 200 con el campo `content` vacio, lo que puede interpretarse como un modelo roto. Se recomienda un presupuesto minimo de 1024 tokens.
-- Riesgo de bucles de repeticion: con el control de repeticion desactivado, el modelo puede caer en bucles de candidatos repetidos en turnos agénticos largos. Se recomienda usar `--repeat-penalty 1.05 --repeat-last-n 256`.
-- La cuantizacion Q6 esta estrictamente dominada: es mas lenta, mas grande y con peor perplexity que las de 4 bits en este modelo. No se recomienda su uso.
-- Version abliterada: al eliminar los rechazos de seguridad, el modelo puede generar contenido que el modelo original rechazaria. Esto implica riesgos de sesgo, alucinacion y contenido inapropiado, especialmente en produccion.
-- Datos de entrenamiento no publicados: no se conocen la composicion del dataset, el numero de tokens ni los detalles del proceso de RL, lo que dificulta evaluar sesgos y limitaciones de idioma.
-- Soporte de idiomas no documentado: no se ha especificado que idiomas soporta el modelo, aunque al estar entrenado principalmente para codigo y tareas agénticas, es probable que el ingles domine.
-- Hardware especifico: las mediciones se realizaron exclusivamente en Ryzen AI Max+ 395 (gfx1151). El rendimiento en otras GPUs AMD o en hardware NVIDIA no esta verificado.
+- Requiere un build no estandar de llama.cpp: los tipos de tensor 100-119 no existen en upstream, por lo que un binario convencional rechaza los ficheros en cualquier backend.
+- El modelo razona antes de responder: con `max_tokens` bajo (por ejemplo 300) devuelve un HTTP 200 con `content` vacio. Se recomienda presupuestar al menos 1024 tokens y leer `reasoning_content` por separado.
+- Riesgo de bucles de repeticion en turnos agenticos largos si se desactiva el control de repeticion; el autor recomienda `--repeat-penalty 1.05 --repeat-last-n 256`.
+- El tier Q6_0_ROCMFPX_AGENT esta estrictamente dominado: mas lento (24,4 frente a ~35,5 tok/s), mas grande (7,88 frente a ~4,9 GiB) y peor perplejidad (9,5850). No usarlo.
+- La variante abliterated elimina las direcciones de rechazo, lo que incrementa el riesgo de generar contenido inapropiado, danino o no filtrado. No es adecuada para despliegues publicos sin moderacion adicional.
+- Las mediciones provienen de un unico hardware (Ryzen AI Max+ 395, gfx1151) y un unico asiento; no son extrapolables a otras GPUs.
+- No se han publicado datos sobre sesgos, idiomas soportados ni evaluaciones de seguridad.
+- Licencia MIT permite uso comercial, pero la ausencia de filtros de rechazo traslada al desplegador la responsabilidad legal y etica del contenido generado.
+- El repositorio ocupa 44 GB y las descargas son bajas (255), lo que implica poca validacion comunitaria independiente.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF
-- Modelo base abliterado (PocketAI Model Lab): https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF
-- Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Repositorio de GitHub de la familia Ornith: https://github.com/ornith-ai/Ornith-1
-- Pagina en Ollama: https://ollama.com/library/ornith-1.5
-- Ficha en LLM Releases: https://www.llm-releases.com/models/ornith-1-5-9b
-- Repositorio hermano con cuantizacion ROCmFPX AGENT: https://huggingface.co/kingjones777/Ornith-1.5-9B-ROCmFPX-AGENT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF
+- Modelo de origen (PocketAI Model Lab): https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF
+- Modelo base (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Organizacion ornith-ai: https://huggingface.co/ornith-ai

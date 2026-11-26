@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/story-api-GGUF",
+  "slug": "mradermacher-story-api-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/story-api-GGUF",
+  "created_at": "2025-03-02T19:52:16.000Z",
+  "updated_at": "2026-11-25T22:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:abdalraheemdmd/story-api",
+    "base_model:quantized:abdalraheemdmd/story-api",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 163037184,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1588314560,
+  "storage_human": "1.6 GB",
+  "context_length": 1024,
+  "base_model": "abdalraheemdmd/story-api",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

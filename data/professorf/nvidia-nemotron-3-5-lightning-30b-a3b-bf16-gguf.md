@@ -2,89 +2,103 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 es un modelo de lenguaje de gran tamano (LLM) desarrollado por NVIDIA, publicado en agosto de 2026. Se trata de la version en precision completa (BF16) de Nemotron 3.5 Lightning, un modelo de arquitectura hibrida Mixture-of-Experts (MoE) que combina capas intercaladas de Mamba-2, capas MoE y capas de atencion selectivas. Con 30.000 millones de parametros totales y solo 3.000 millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional.
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 es la publicacion en precision completa (BF16) del modelo Nemotron 3.5 Lightning de NVIDIA, un LLM de arquitectura hibrida Mixture-of-Experts con 30 000 millones de parametros totales y 3000 millones activos por token. Desarrollado por NVIDIA Corporation entre diciembre de 2025 y mayo de 2026, se distribuye como pesos de referencia pensados para personalizacion (SFT, RL, destilacion, adaptacion de dominio) y para generar variantes cuantizadas propias, no como checkpoint optimizado para inferencia en produccion.
 
-El modelo esta disenado como punto de partida para personalizacion: post-entrenamiento (SFT, RL, destilacion), adaptacion a dominios especificos y creacion de variantes cuantizadas. Destaca por su ventana de contexto de hasta 1 millon de tokens en hardware Blackwell, soporte de decodificacion especulativa DSpark y un modo de razonamiento configurable. Esta disponible bajo la licencia OpenMDW-1.1, que permite uso comercial.
+La innovacion principal reside en su arquitectura: intercala capas Mamba-2 con capas MoE y capas de atencion selectivas, lo que reduce el coste computacional del contexto largo frente a un transformer denso equivalente. Soporta hasta 1 millon de tokens de contexto en Blackwell (GB200, B200) y en configuraciones multi-GPU Hopper (8x H100 con TP8 + EP), mientras que en una sola H100 80 GB el contexto validado baja a 256K por limites de memoria. Incluye un modo de razonamiento configurable mediante la plantilla de chat y metodos de decodificacion especulativa (DSpark) para despliegues de baja concurrencia.
 
-La relevancia de este lanzamiento radica en su arquitectura hibrida SSM-MoE-Attention, que reduce el coste de inferencia frente a modelos densos de tamano similar, y en su publicacion junto a metodos de decodificacion especulativa para acelerar la generacion de texto. El repositorio de profesorF contiene los pesos en formato GGUF, cuantizados a partir de los pesos BF16 de referencia.
+El checkpoint que nos ocupa, publicado por el usuario professorf (Nick V. Flor, PhD) bajo el identificador `professorf/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-gguf`, es una conversion a formato GGUF de los pesos BF16 originales, con fines de reproducibilidad en investigacion. Conviene senalar que el repositorio pesa 250 GB, coherente con pesos BF16 sin cuantizar empaquetados en GGUF, no con una cuantizacion comprimida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida: Mamba-2 + MoE + Attention (intercaladas) |
-| Parametros totales | 32.913.266.240 (30B declarados) |
-| Parametros activos | 3B |
-| Longitud de contexto | Hasta 1M tokens (validado en GB200 y B200); 256K en H100 80GB monogpu |
-| Tipos de cuantizacion | BF16 (referencia); GGUF disponible en este repositorio; NVFP4 en lanzamiento oficial |
-| Idiomas soportados | Ingles, espanol, frances, aleman, italiano, japones (segun model card); la version base declara 20 idiomas y 43 lenguajes de programacion |
-| Licencia | OpenMDW-1.1 (uso comercial permitido) |
-| Formato de pesos | safetensors (BF16), GGUF (este repositorio) |
+| Arquitectura | MoE hibrida: capas Mamba-2 intercaladas con capas MoE y capas de atencion selectivas |
+| Parametros totales | 32 913 266 240 (~30B, segun safetensors); la model card indica 30B |
+| Parametros activos | ~3B por token |
+| Longitud de contexto | Hasta 1M tokens (GB200, B200, 8x H100 TP8+EP); 256K validado en 1x H100 80 GB |
+| Tipos de cuantizacion | Este repositorio: BF16 (sin cuantizar, en GGUF). NVIDIA publica ademas una variante NVFP4 y existe un GGUF oficial en ggml-org |
+| Idiomas soportados | Ingles (y lenguajes de programacion), espanol, frances, aleman, italiano, japones |
+| Licencia | OpenMDW License Agreement, version 1.1 (`openmdw-1.1`) |
+| Formato de pesos | GGUF (conversion del checkpoint BF16 original en safetensors) |
+| Precision de referencia | BF16 |
+| Fecha de publicacion | 11 de agosto de 2026 |
+| Muestreo recomendado | Temperature 1.0, Top_P 0.95 |
+| Hardware soportado | NVIDIA Blackwell (GB200, B200), Hopper (H100, H200), Ampere (A100) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de Nemotron 3.5 Lightning es hibrida: intercala capas Mamba-2 (modelos de espacio de estados), capas de mezcla de expertos (MoE) y capas de atencion selectivas. Este diseno busca combinar la eficiencia de las SSM para secuencias largas con la capacidad de los MoE para escalar parametros sin incrementar el coste por token. El modelo activa 3.000 millones de parametros de un total de 30.000 millones.
+El modelo emplea una arquitectura hibrida que combina capas Mamba-2 (modelo de espacio de estados) con capas de mezcla de expertos y un subconjunto de capas de atencion clasica. Esta disposicion busca escalar la longitud de contexto sin el crecimiento cuadratico en coste de atencion de un transformer denso, manteniendo al mismo tiempo la capacidad de recuperacion precisa que aportan las capas de atencion. Con 30B parametros totales y solo 3B activos por token, el coste de inferencia por token se aproxima al de un modelo mucho mas pequeno, lo que explica la designacion "Lightning" y su orientacion a agentes.
 
-Los datos de entrenamiento provienen de los datasets nvidia/nemotron-pre-training-datasets (corte en septiembre de 2025) y nvidia/nemotron-post-training-v3 (corte en mayo de 2026). El modelo incluye un modo de razonamiento configurable mediante la plantilla de chat (`enable_thinking=True/False`). Ademas, se publica con soporte para decodificacion especulativa DSpark, orientada a despliegues de centro de datos con baja concurrencia. Los detalles completos sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, tecnicas de alineacion) no estan disponibles en la informacion proporcionada.
+Los datos de entrenamiento provienen de los conjuntos publicados por NVIDIA: `nvidia/nemotron-pre-training-datasets` para la fase de preentrenamiento, con fecha de corte en septiembre de 2025, y `nvidia/nemotron-post-training-v3` para el postentrenamiento, con corte en mayo de 2026. La model card no detalla el numero exacto de tokens de preentrenamiento ni la composicion porcentual del dataset, ni especifica que tecnicas de alineacion (RLHF, DPO u otras) se aplicaron en la fase de postentrenamiento. Si se documenta la existencia de decodificacion especulativa mediante el metodo DSpark, orientado a despliegues de centro de datos con baja concurrencia, y un modo de razonamiento activable o desactivable a traves de la plantilla de chat (`enable_thinking=True/False`).
 
 ## Capacidades
 
-- Generacion de texto en seis idiomas: ingles, espanol, frances, aleman, italiano y japones.
-- Razonamiento configurable: el modo thinking puede activarse o desactivarse via plantilla de chat.
-- Manejo de contexto extremadamente largo: hasta 1M tokens en hardware Blackwell (GB200, B200) y 256K en H100 80GB monogpu.
-- Soporte de decodificacion especulativa DSpark para acelerar la inferencia en despliegues de baja concurrencia.
-- Capacidad de personalizacion: disenado para SFT, RL, destilacion y adaptacion a dominios especificos.
-- Soporte de tool calling y function calling: no se menciona explicitamente en la informacion disponible, aunque la arquitectura y el proposito de agentes sugieren compatibilidad.
-- Capacidades de codigo: la version base se entrena con 43 lenguajes de programacion, aunque no se confirma para esta version instruct.
+- Generacion de texto conversacional multi-turno en seis idiomas: ingles, espanol, frances, aleman, italiano y japones.
+- Razonamiento configurable: modo "thinking" activable o desactivable por peticion mediante la plantilla de chat, lo que permite separar respuestas rapidas de respuestas con cadena de razonamiento.
+- Generacion de codigo, con soporte explicito de lenguajes de programacion segun la model card.
+- Procesamiento de contexto muy largo: hasta 1M tokens en hardware Blackwell y configuraciones multi-GPU Hopper, habilitando tareas de recuperacion y sintesis sobre documentos extensos.
+- Capacidad de ajuste fino: al ser pesos de referencia BF16, sirve como base para SFT, RL, destilacion y adaptacion de dominio.
+- Produccion de variantes cuantizadas: punto de partida para generar checkpoints NVFP4, GGUF u otros formatos optimizados.
+- Despliegue en una sola GPU de 80 GB (H100 o A100) con contexto de 256K.
+- Decodificacion especulativa DSpark para reducir latencia en escenarios de baja concurrencia.
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, vision, audio ni capacidades multimodales.
 
 ## Casos de uso
 
-- Agentes conversacionales multilingues: con soporte para seis idiomas y modo de razonamiento configurable, el modelo puede gestionar conversaciones complejas en entornos de atencion al cliente internacional, alternando entre respuestas rapidas y razonamiento profundo segun la dificultad de la consulta.
-- Analisis de documentos extensos: su ventana de contexto de hasta 1M tokens permite procesar libros completos, expedientes legales o codigos fuente de repositorios enteros sin necesidad de chunking ni RAG.
-- Desarrollo de variantes cuantizadas: los pesos BF16 de referencia son el punto de partida ideal para investigadores que quieran producir sus propias cuantizaciones (GGUF, AWQ, GPTQ) adaptadas a hardware especifico.
-- Investigacion en arquitecturas hibridas: la combinacion Mamba-2 + MoE + Attention lo convierte en un objeto de estudio relevante para comparar SSM con transformers puros en tareas de razonamiento y generacion de codigo.
-- Despliegue en entornos con restriccion de VRAM: gracias a sus 3B parametros activos, el modelo puede ejecutarse en GPUs de consumo con cuantizacion GGUF, manteniendo una calidad superior a modelos densos de tamano similar.
-- Personalizacion para dominios verticales: la licencia permite uso comercial y el modelo esta disenado para post-entrenamiento, lo que facilita su adaptacion a sectores como legal, medico o financiero con datos propios.
+- Ajuste fino supervisado (SFT) para dominio especializado: al tratarse de pesos BF16 de referencia, es el punto de partida natural para entrenar un modelo vertical (legal, sanitario, financiero) sin partir de un checkpoint cuantizado con perdida de precision.
+- Destilacion hacia modelos menores: los 30B totales con solo 3B activos permiten usar el modelo como profesor en pipelines de destilacion, generando trazas de razonamiento y respuestas de alta calidad para entrenar modelos mas pequenos.
+- Generacion de variantes cuantizadas propias: investigadores pueden producir sus propios GGUF, NVFP4 o AWQ a partir de estos pesos y comparar la degradacion respecto al original, que es precisamente el proposito declarado del repositorio.
+- Analisis de documentos extensos en una sola H100: con 256K tokens de contexto validados en una GPU de 80 GB, cabe procesar informes anuales, expedientes o bases de codigo completas sin fragmentacion agresiva.
+- Evaluacion y benchmarking a precision completa: util para obtener lineas base de referencia frente a versiones cuantizadas y medir el impacto real de la cuantizacion en tareas de razonamiento y codigo.
+- Investigacion en arquitecturas hibridas Mamba-2/MoE: el modelo permite estudiar el comportamiento de capas SSM intercaladas con atencion en tareas de contexto largo, comparandolo con transformers densos de tamano similar.
+- Asistencia conversacional multilingue en europeo: cobertura nativa de espanol, frances, aleman e italiano, adecuada para productos dirigidos al mercado europeo sin depender de traduccion intermedia.
+- Despliegue en centro de datos con baja concurrencia y baja latencia: la combinacion de 3B activos y decodificacion especulativa DSpark esta pensada para escenarios interactivos donde el tiempo hasta el primer token es critico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una grafica de precision (accuracy_plot.png) pero no se proporcionan los datos numericos. Se recomienda consultar la documentacion oficial de NVIDIA para obtener resultados comparativos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una grafica de precision (`accuracy_plot.png`) sin valores numericos textuales, y no se proporcionan cifras de MMLU, HumanEval, GSM8K ni de otras evaluaciones en los datos disponibles.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos BF16 completos requieren aproximadamente 66 GB (32.9B parametros x 2 bytes), por lo que caben en una H100 o A100 de 80GB. Con cuantizacion GGUF de 8 bits se reduce a unos 33 GB; con 4 bits, a unos 17 GB.
-- GPU recomendadas: NVIDIA Blackwell (GB200, B200) para contexto completo de 1M; H100 80GB o A100 80GB para 256K de contexto en monogpu; RTX 5090 o DGX Spark para ejecucion local con GGUF.
-- En consumer GPU: si, con cuantizacion GGUF de 4 bits cabe en GPUs de 24 GB como la RTX 4090 o RTX 5090, aunque con contexto reducido.
-- Opciones de despliegue: vLLM y SGLang para inferencia optimizada; llama.cpp y Ollama para ejecucion local con GGUF; NVIDIA NIM para despliegue en produccion.
-- Latencia y throughput: no disponibles en la informacion proporcionada. La decodificacion especulativa DSpark esta disenada para mejorar el throughput en despliegues de baja concurrencia.
+- VRAM para inferencia en BF16: aproximadamente 66 GB solo para pesos (32 913 266 240 parametros x 2 bytes), mas overhead de cache KV y activaciones. En la practica requiere una GPU de 80 GB para contexto reducido.
+- GPU recomendadas segun la model card: GB200 y B200 (Blackwell) para contexto de 1M; H100 80 GB y H200 (Hopper); A100 80 GB (Ampere).
+- Configuracion multi-GPU: 8x H100 con TP8 + EP permite 1M tokens de contexto en BF16 mediante vLLM.
+- GPU de consumo: este checkpoint BF16 no cabe en ninguna GPU de consumo actual. Para RTX 5090, DGX Spark o RTX 6000 Pro, NVIDIA remite al checkpoint GGUF oficial de ggml-org y a la variante NVFP4.
+- Opciones de despliegue documentadas: vLLM (`--max-model-len 1048576`) y SGLang (`--context-length 1048576`) en BF16. El formato GGUF de este repositorio es compatible con llama.cpp y derivados, aunque el tamano de 250 GB hace inviable su uso en hardware de consumo sin cuantizar.
+- Latencia y throughput: no se proporcionan cifras concretas en la informacion disponible. Cabe esperar una ventaja de throughput derivada de los 3B parametros activos frente a un modelo denso de 30B, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Arquitectura | Licencia |
-|---|---|---|---|---|---|
-| Nemotron 3.5 Lightning 30B A3B | 30B | 3B | 1M | Hibrida Mamba-2 + MoE + Attn | OpenMDW-1.1 |
-| Nemotron 3.5 Lightning 30B A3B NVFP4 | 30B | 3B | 1M | Hibrida Mamba-2 + MoE + Attn | OpenMDW-1.1 |
-| DeepSeek-V3 (referencia MoE) | 671B | 37B | 128K | MoE densa | MIT |
+| Modelo | Parametros | Activos | Contexto | Arquitectura | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Nemotron 3.5 Lightning 30B-A3B (este) | ~30B | ~3B | 1M (Blackwell / 8x H100); 256K en 1x H100 | Mamba-2 + MoE + atencion | OpenMDW 1.1 | BF16, GGUF, NVFP4 |
+| Nemotron 3.5 Lightning 30B-A3B NVFP4 | ~30B | ~3B | 1M (segun hardware) | Mamba-2 + MoE + atencion | OpenMDW 1.1 | NVFP4 |
+| Nemotron 3.5 Lightning 30B-A3B GGUF (ggml-org) | ~30B | ~3B | Segun cuantizacion y hardware | Mamba-2 + MoE + atencion | OpenMDW 1.1 | GGUF cuantizado |
 
-La comparativa con modelos de la misma categoria (MoE hibridos de ~30B) no esta disponible en la informacion proporcionada. El NVFP4 es la misma arquitectura con cuantizacion optimizada para NVIDIA, mientras que DeepSeek-V3 se incluye como referencia de un MoE denso de mayor escala, aunque con contexto muy inferior.
+No se dispone en la informacion proporcionada de datos de rendimiento que permitan comparar este modelo con alternativas de otros fabricantes de tamano o categoria similares. La comparativa se limita a las variantes del mismo modelo publicadas por NVIDIA y por ggml-org.
 
 ## Limitaciones y advertencias
 
-- La informacion disponible no detalla sesgos especificos del modelo, pero al ser un modelo multilingue entrenado con datos web, es probable que herede sesgos presentes en dichos datos.
-- Riesgo de alucinacion: no se proporcionan datos especificos, pero es un riesgo inherente a todos los LLM, especialmente con contextos muy largos donde puede perder coherencia.
-- Limitaciones de contexto: el contexto de 1M tokens solo esta validado en hardware Blackwell (GB200, B200). En H100 monogpu el contexto se reduce a 256K por limitaciones de memoria.
-- Restricciones de licencia: OpenMDW-1.1 permite uso comercial, pero es una licencia nueva y especifica; se recomienda revisar los terminos completos antes de su uso en produccion.
-- Este repositorio concreto (professorf) es una cuantizacion GGUF realizada por un tercero, no por NVIDIA. Los pesos oficiales de referencia estan en el repositorio de nvidia.
-- No se proporcionan datos de benchmarks ni evaluaciones de seguridad en la informacion disponible.
-- La fecha de creacion del repositorio (agosto de 2026) es posterior al lanzamiento oficial del modelo, lo que sugiere que es una adaptacion de la comunidad.
+- Este repositorio concreto es una conversion no oficial a GGUF de los pesos BF16, publicada por un tercero (professorf) con fines de reproducibilidad. No es el checkpoint de referencia de NVIDIA ni ha pasado por su proceso de validacion.
+- El repositorio pesa 250 GB y contiene pesos BF16 sin cuantizar: no aporta ninguna ventaja de despliegue frente al safetensors original y no cabe en hardware de consumo.
+- Riesgo de alucinacion: no se documenta en la informacion disponible ninguna evaluacion especifica de tasas de alucinacion ni de calibracion.
+- Sesgos: la model card no incluye una seccion de sesgos conocidos, evaluaciones de equidad ni recomendaciones de mitigacion. Los datos de preentrenamiento y postentrenamiento provienen de los datasets de NVIDIA, cuya composicion no se detalla.
+- Cobertura idiomatica limitada a seis idiomas; el rendimiento fuera de ellos no esta garantizado ni documentado.
+- El contexto de 1M tokens solo esta validado en Blackwell y en configuraciones de 8x H100; en una sola H100 80 GB el limite practico es 256K.
+- Licencia OpenMDW 1.1: aunque la model card declara que el modelo esta listo para uso comercial, es una licencia con terminos propios distintos de Apache 2.0 o MIT. Debe revisarse el texto completo antes de integrarlo en un producto.
+- El modo de razonamiento y el muestreo recomendado (temperature 1.0, top_p 0.95) condicionan la calidad de salida; desviarse de ellos sin reevaluar puede degradar resultados.
+- No se documenta soporte de tool calling ni de agentes multi-paso en la informacion disponible, pese a que la familia Nemotron se orienta a la construccion de agentes. Conviene validarlo empiricamente antes de disenar flujos que dependan de ello.
+- Al ser pesos de referencia para personalizacion, no incorporan las optimizaciones de inferencia de la variante NVFP4; para produccion con latencia critica, NVIDIA recomienda explicitamente esa variante.
 
 ## Enlaces
 
-- Repositorio de este modelo: https://huggingface.co/professorf/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-gguf
-- Modelo oficial BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- Version NVFP4 optimizada: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
-- Version base (sin instruct): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
-- GGUF oficial de ggml-org: https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
-- Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b
-- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Repositorio en Hugging Face: https://huggingface.co/professorF/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-gguf
+- Variante NVFP4 oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Checkpoint GGUF oficial (ggml-org): https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
+- Demo en NVIDIA Build: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b
 - Pagina de desarrollador de Nemotron: https://developer.nvidia.com/nemotron
+- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Texto de la licencia OpenMDW 1.1 (GitHub): https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
+- Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
+- Datasets de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets

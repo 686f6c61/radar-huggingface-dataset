@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "djvanleeuwen/work-classification-2023",
+  "slug": "djvanleeuwen-work-classification-2023",
+  "author": "djvanleeuwen",
+  "url": "https://huggingface.co/djvanleeuwen/work-classification-2023",
+  "created_at": "2026-11-25T22:07:16.000Z",
+  "updated_at": "2026-11-25T22:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "14 Best Natural and Non-Toxic Laundry Detergents - Live Simply",
+      "url": "https://livesimply.me/switching-to-natural-products-laundry-detergent-and-soap/",
+      "snippet": "Oct 12, 2023 · The best natura and non-toxic laundry detergent options I've tried! Easy-to-find brands and DIY laundry soap recipes."
+    }
+  ]
+}

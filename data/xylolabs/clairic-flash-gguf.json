@@ -50,5 +50,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "モデルの記事 - Local LLM Wiki",
+      "url": "https://localllmwiki.com/category/models/",
+      "snippet": "Cloudflareのclairic-flashをベースとしたGGUF形式の量子化モデル「Xylolabs/clairic-flash-GGUF」がHugging Face上で更新されました。Apache-2.0ライセンスで利用可能です ..."
+    }
+  ]
 }

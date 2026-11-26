@@ -2,99 +2,105 @@
 
 ## Resumen
 
-feishengmt-GGUF es la versión cuantizada en formato GGUF del modelo hsilvosa/feishengmt, un ajuste fino de tencent/Hy-MT2-1.8B orientado a la traducción del chino al inglés de ficción wuxia y xianxia (novelas web). El autor, hsilvosa, publica esta variante Q4_K_M (1,1 GB) para su uso con llama.cpp, manteniendo la licencia Apache-2.0 del modelo base de Tencent. El modelo está pensado para traducir capítulos completos de novelas web chinas con un pipeline que trocea el texto en ventanas de párrafos, aplica un glosario y valida la respuesta.
+feishengmt-GGUF es la version cuantizada en formato GGUF del modelo hsilvosa/feishengmt, un ajuste fino de tencent/Hy-MT2-1.8B orientado a la traduccion de ficcion china (wuxia y xianxia) al ingles, con capacidad adicional de responder en frances, portugues, espanol, indonesio, japones y coreano. Lo desarrolla el usuario independiente hsilvosa y se distribuye bajo licencia Apache-2.0, sin respaldo de Tencent. La version documentada es la 1.2.
 
-El modelo resuelve un problema muy concreto: la traducción automática genérica pierde terminología de artes marciales, nombres propios y convenciones de diálogo de la ficción wuxia/xianxia. El ajuste fino sobre Hy-MT2-1.8B incorpora un glosario y un formato de prompt específicos, y el paquete incluye una CLI (`webnovel_mt.translate`) que gestiona el troceado y la verificación. Aunque el entrenamiento se centra en chino→inglés, el modelo también responde en francés, portugués, español, indonesio, japonés y coreano.
+El modelo resuelve un problema muy concreto: la traduccion de novelas web chinas de tematica de artes marciales y cultivacion, un dominio con terminologia propia (nombres de tecnicas, rangos, toponimos) que los traductores genericos suelen degradar. Para ello incorpora un glosario y un pipeline de traduccion por ventanas de parrafos que verifica la respuesta, lo que reduce la perdida de parrafos y la fuga de caracteres chinos en la salida.
 
-Con 1.791.080.448 parámetros (aproximadamente 1,8 mil millones), es un modelo pequeño que cabe en GPU de consumo y en CPU. La cuantización Q4_K_M apenas degrada la calidad: la model card reporta pérdidas de 0,1 a 1,2 puntos chrF respecto al checkpoint bf16 en las cinco variantes de texto evaluadas. Es relevante para quien necesite traducir novelas web de forma local, sin depender de APIs, con un coste de hardware mínimo.
+Tecnicamente es un transformer denso de 1.791.080.448 parametros (aproximadamente 1,8 mil millones), distribuido principalmente como cuantizacion Q4_K_M de 1,1 GB dentro de un repositorio de 4,5 GB. Su relevancia practica esta en que permite ejecutar traduccion especializada de forma local en hardware de consumo, con un rendimiento medido en una RTX 3060 de 1,73 s por ventana en peticion unica y 1,06 s con cuatro en paralelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de tencent/Hy-MT2-1.8B; detalles de atención no disponibles) |
+| Arquitectura | Transformer denso (fine-tune de tencent/Hy-MT2-1.8B) |
 | Parametros totales | 1.791.080.448 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8.192 tokens configurados en llama-server; 2.048 tokens por slot con `-np 4`; contexto nativo del modelo base no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (única variante publicada en este repo) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 8.192 tokens por instancia de llama-server; 2.048 tokens por slot con `-np 4` |
+| Tipos de cuantizacion | Q4_K_M (unica publicada en el repo); checkpoint bf16 fusionado de referencia (3,6 GB) |
 | Idiomas soportados | zh, en, fr, pt, es, id, ja, ko |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 2,3 GB; archivo Q4_K_M de 1,1 GB) |
+| Formato de pesos | GGUF (Q4_K_M, 1,1 GB); bf16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de tencent/Hy-MT2-1.8B, un modelo de traducción de 1,8 mil millones de parámetros. La model card de esta variante GGUF no detalla la arquitectura interna del modelo base (tipo de atención, normalización, tokenizador), por lo que esos datos quedan como no disponibles en la información proporcionada. El ajuste fino se realizó sobre datos de ficción wuxia y xianxia, presumiblemente pares de capítulos chinos e ingleses, con un glosario asociado que el pipeline aplica durante la inferencia.
+El modelo es un fine-tune del checkpoint tencent/Hy-MT2-1.8B, un transformer denso de aproximadamente 1,8 mil millones de parametros especializado en traduccion. Sobre esa base, hsilvosa aplico un ajuste orientado al dominio de la ficcion wuxia y xianxia con el par chino-ingles como direccion principal, manteniendo capacidad de respuesta en frances, portugues, espanol, indonesio, japones y coreano. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO; esa informacion se remite a la model card del modelo base hsilvosa/feishengmt y al blog del autor.
 
-La innovación principal no está en la arquitectura sino en el pipeline de traducción: el texto se corta en ventanas de párrafos (hasta 400 caracteres por ventana según la configuración documentada), se inyectan las líneas del glosario y se valida la respuesta del modelo. La model card no especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La cuantización Q4_K_M se evaluó contra el checkpoint bf16 fusionado (3,6 GB) con decodificación greedy, una sola ejecución y 40 ventanas por variante (28 para la variante de comillas partidas entre párrafos).
+La innovacion practica no esta en la arquitectura sino en el pipeline de inferencia: el repositorio incluye una carpeta `pipeline/` con el glosario y una CLI de traduccion que divide el texto en ventanas de parrafos, las envia al servidor y valida la respuesta. La cuantizacion Q4_K_M apenas altera las metricas de calidad respecto al checkpoint bf16 fusionado, lo que hace viable el despliegue en local sin penalizacion apreciable. El modelo esta pensado para ejecutarse con llama.cpp y se ha probado exclusivamente con llama-server (build 10615).
 
 ## Capacidades
 
-- Traducción chino→inglés de ficción wuxia y xianxia, con terminología específica del género.
-- Traducción a francés, portugués, español, indonesio, japonés y coreano (adaptación secundaria; no medida en la variante GGUF).
-- Manejo de texto con comillas angulares `「」` y comillas partidas entre párrafos.
-- Manejo de caracteres tradicionales y simplificados.
-- Formato conversacional (tag `conversational` en Hugging Face) compatible con endpoints.
-- Integración con llama.cpp mediante `llama-server` y flag `--jinja`.
-- Pipeline incluido con glosario y CLI de traducción por ventanas.
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
+- Traduccion chino-ingles de ficcion wuxia y xianxia con terminologia especializada.
+- Traduccion y respuesta en frances, portugues, espanol, indonesio, japones y coreano, aunque las metricas publicadas solo cubren el ingles.
+- Procesamiento por ventanas de parrafos de hasta 400 caracteres, con glosario inyectado en el prompt.
+- Verificacion de la salida: el pipeline comprueba que el numero de parrafos coincida con el origen y detecta caracteres chinos residuales.
+- Generacion de texto conversacional (tag `conversational` en el repo).
+- Compatibilidad con endpoints estilo OpenAI (`endpoints_compatible`).
+- Soporte de plantillas de chat mediante `--jinja` en llama-server.
+- No se documentan capacidades de tool calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Traducción de capítulos de novelas web wuxia/xianxia: el pipeline `webnovel_mt.translate` trocea el capítulo en ventanas de párrafos, aplica el glosario y valida la respuesta, lo que permite procesar capítulos completos de forma desatendida con consistencia terminológica.
-- Traducción local sin conexión: al ser un GGUF Q4_K_M de 1,1 GB, se ejecuta en un portátil o en una máquina sin GPU dedicada mediante llama.cpp, útil para traductores que trabajan con material sensible o sin acceso estable a APIs.
-- Servicio multi-cliente con slots paralelos: `llama-server -c 8192 -np 4` reparte 2.048 tokens de contexto por slot, suficiente para una ventana de hasta 400 caracteres más el glosario y la respuesta, lo que permite atender cuatro peticiones concurrentes en un solo proceso.
-- Preprocesado de corpus para investigación: traducir grandes volúmenes de ficción china a inglés para análisis literario, estudios de recepción o construcción de datasets paralelos, con coste de cómputo marginal.
-- Traducción asistida para equipos de scanlation y fan translation: el glosario configurable permite fijar la traducción de nombres de técnicas, personajes y lugares, reduciendo la revisión manual posterior.
-- Prototipado de productos de traducción especializada: sirve como base para evaluar la viabilidad de un traductor de género antes de invertir en modelos mayores o en entrenamiento propio, dado su bajo requisito de hardware.
-- Traducción multilingüe exploratoria a español, francés, portugués, indonesio, japonés y coreano: útil para obtener primeras versiones que luego se revisan, aunque el autor advierte que estas lenguas no se midieron en la variante GGUF.
+- Traduccion de novelas web chinas al ingles a escala: el pipeline divide capitulos en ventanas de parrafos y valida cada respuesta, lo que permite procesar obras largas de forma automatizada manteniendo la coherencia de parrafos (98,9 % de coincidencia en el test externo).
+- Traduccion de ficcion wuxia y xianxia con glosario propio: la inyeccion de lineas de glosario en el prompt preserva nombres de tecnicas, rangos y toponimos que un traductor generico deformaria.
+- Despliegue local para editores y traductores independientes: con 1,1 GB en Q4_K_M cabe en GPU de consumo y permite traducir sin enviar el texto a servicios en la nube.
+- Pre-traduccion asistida para revisores humanos: la salida en ingles sirve como borrador de alta fidelidad que un editor corrige, reduciendo el coste por capitulo.
+- Traduccion multilingue de resumenes o fragmentos: el modelo puede responder en espanol, frances, portugues, indonesio, japones y coreano, util para fichas de obra o material promocional.
+- Servicio de traduccion concurrente: con `-np 4` y `-c 8192` atiende cuatro peticiones en paralelo a 1,06 s por ventana en una RTX 3060, adecuado para una pequena cola de trabajos por lotes.
+- Prototipado de pipelines de traduccion: la CLI incluida y la compatibilidad con endpoints OpenAI facilitan integrar el modelo en flujos existentes de procesamiento de texto.
 
 ## Benchmarks y rendimiento
 
-La model card reporta chrF sobre ventanas retenidas de un conjunto de capítulos (set 2 de la model card principal), 40 ventanas por variante (28 para la variante de comillas partidas), pipeline en modo ventanas, decodificación greedy y una sola ejecución. No se publican MMLU, HumanEval, GSM8K ni otros benchmarks generales.
+Test externo de la model card principal (ventana completa como un unico prompt, decodificacion greedy, una ejecucion):
 
-| Variante del texto fuente | bf16 chrF | GGUF Q4_K_M chrF | Comillas como referencia (bf16 / GGUF) |
-|---|---|---|---|
-| Limpio | 47,9 | 47,6 | 97,5 % / 95 % |
-| Comillas angulares `「」` | 48,1 | 47,7 | 95 % / 95 % |
-| Comillas partidas entre párrafos | 48,3 | 47,1 | 96 % / 93 % |
-| Caracteres tradicionales | 47,1 | 47,0 | 97,5 % / 95 % |
-| Tradicionales y `「」` | 47,1 | 47,0 | 95 % / 95 % |
+| Metrica | bf16 (checkpoint fusionado, 3,6 GB) | GGUF Q4_K_M (este archivo) |
+|---|---|---|
+| chrF | 53,0 | 53,0 |
+| BLEU | 22,6 | 22,7 |
+| Parrafos identicos al origen | 98,9 % | 98,9 % |
+| Chino residual en la salida | 0,4 % | 1,5 % |
 
-La pérdida por cuantización oscila entre 0,1 y 1,2 chrF, del orden del ruido de una sola ejecución según el autor. Las demás lenguas no se midieron en el GGUF.
+Velocidad en RTX 3060 con llama.cpp sobre las mismas ventanas:
+
+| Modelo | 1 peticion | 4 en paralelo |
+|---|---|---|
+| feishengmt Q4_K_M | 1,73 s/ventana | 1,06 s/ventana |
+| Index-Translate-2B Q4_K_M | 2,02 s/ventana | 1,17 s/ventana |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible, ni mediciones de los idiomas distintos del ingles sobre el GGUF.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,5-2 GB con Q4_K_M (archivo de 1,1 GB más overhead de contexto y KV cache); el contexto de 8.192 tokens incrementa el uso de KV cache.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sobradamente. También es viable en CPU.
-- Cabe en GPU de consumo: sí, en todas las GPU modernas con al menos 4 GB de VRAM; también en iGPU y en CPU.
-- Opciones de despliegue: llama.cpp (`llama-server`, build 10615 probado por el autor). Ollama y LM Studio no fueron probados según la model card. vLLM y TGI no se documentan para este formato GGUF.
-- Latencia y throughput: no disponibles. La configuración recomendada (`-c 8192 -np 4`) permite cuatro slots concurrentes de 2.048 tokens cada uno.
+- VRAM estimada para inferencia: aproximadamente 1,5-2 GB con Q4_K_M considerando pesos (1,1 GB) y cache KV para 8.192 tokens; el checkpoint bf16 requiere unos 4-5 GB.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; el autor valida el rendimiento en RTX 3060.
+- Cabe en GPU de consumo: si, en tarjetas tipo RTX 3060, RTX 4060, RTX 4070 y superiores; tambien es viable en CPU mediante llama.cpp con latencia mayor.
+- Opciones de despliegue: llama.cpp con llama-server (unico runtime probado, build 10615). Ollama y LM Studio no han sido probados por el autor.
+- Configuracion recomendada: `llama-server -m feishengmt-Q4_K_M.gguf -c 8192 -np 4 --jinja --port 8080`.
+- Latencia y throughput: 1,73 s por ventana en peticion unica y 1,06 s con cuatro en paralelo en RTX 3060; el throughput escala con el numero de slots hasta el limite de contexto por slot (2.048 tokens con `-np 4`).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| feishengmt-GGUF (este) | 1,79 B | 8.192 configurado | Traducción zh→en de wuxia/xianxia | Apache-2.0 | GGUF Q4_K_M |
-| tencent/Hy-MT2-1.8B (base) | 1,8 B | no disponible | Traducción general | Apache-2.0 | safetensors |
-| hsilvosa/feishengmt (bf16) | 1,79 B | no disponible | Traducción zh→en de wuxia/xianxia | Apache-2.0 | safetensors (3,6 GB) |
+| feishengmt-GGUF | 1,79 B | 8.192 tokens (2.048 por slot con `-np 4`) | Traduccion zh-en de wuxia/xianxia, multilingue secundario | Apache-2.0 | GGUF Q4_K_M en Hugging Face |
+| Index-Translate-2B (Q4_K_M) | ~2 B | no disponible | Traduccion generica | no disponible | GGUF; 2,02 s/ventana en RTX 3060 segun el autor |
+| tencent/Hy-MT2-1.8B | ~1,8 B | no disponible | Traduccion base sin ajuste de dominio | Apache-2.0 | Pesos originales en Hugging Face |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de traducción en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento frente a alternativas.
+El dato comparativo disponible es la velocidad: feishengmt Q4_K_M es entre un 10 y un 17 % mas rapido que Index-Translate-2B Q4_K_M en las mismas ventanas (1,73 frente a 2,02 s en peticion unica; 1,06 frente a 1,17 s en paralelo). No hay datos publicados de calidad comparada entre estos modelos en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- El entrenamiento y la evaluación se centran en chino→inglés; las traducciones a francés, portugués, español, indonesio, japonés y coreano no se midieron en la variante GGUF y deben considerarse secundarias.
-- La evaluación se hizo con una sola ejecución y 40 ventanas por variante; la variabilidad entre ejecuciones puede ser del orden de la diferencia observada entre bf16 y Q4_K_M.
-- La variante de comillas partidas entre párrafos es la que más pierde con la cuantización (48,3 → 47,1 chrF) y la que peor preserva las comillas como referencia (96 % → 93 %).
-- Solo se probó con `llama-server` build 10615; Ollama y LM Studio no fueron validados por el autor.
-- El pipeline está pensado para inglés; para otras lenguas hay que usar el prompt de la model card principal.
-- No es un modelo de propósito general: no se documentan capacidades de razonamiento, código, matemáticas, tool calling ni agentes.
-- Riesgo de alucinación y de invención de terminología en pasajes ambiguos o con jerga muy específica no cubierta por el glosario.
-- No está respaldado por Tencent; es una versión modificada y cuantizada del modelo original, sujeta a los términos de la licencia Apache-2.0 y al aviso `NOTICE` del repositorio.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- El ajuste esta optimizado para chino-ingles; las metricas de calidad de frances, portugues, espanol, indonesio, japones y coreano no se han medido sobre el GGUF.
+- La cuantizacion Q4_K_M eleva el chino residual en la salida del 0,4 % al 1,5 %, un aumento de casi cuatro veces respecto al bf16; conviene filtrar o revisar la salida en produccion.
+- Solo se ha probado con llama-server build 10615; otros runtimes como Ollama o LM Studio pueden comportarse de forma distinta.
+- El contexto util por peticion se reduce a 2.048 tokens con `-np 4`, suficiente para ventanas de hasta 400 caracteres pero no para documentos largos en una sola pasada.
+- No hay datos publicados sobre sesgos, tasa de alucinacion en dominios ajenos a la ficcion ni comportamiento fuera del par zh-en.
+- Es un fine-tune independiente no respaldado por Tencent; la calidad y el mantenimiento dependen de un unico autor.
+- Aunque la licencia es Apache-2.0, se debe conservar el aviso `NOTICE` y la atribucion a Hy-MT2 de Tencent por tratarse de una version modificada y cuantizada.
+- El repositorio tiene 267 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria muy limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hsilvosa/feishengmt-GGUF
-- Modelo base (bf16): https://huggingface.co/hsilvosa/feishengmt
+- Modelo base (fine-tune): https://huggingface.co/hsilvosa/feishengmt
 - Modelo original de Tencent: https://huggingface.co/tencent/Hy-MT2-1.8B
-- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Blog del autor con el desarrollo completo: https://hsilvosa.com/projects/feishengmt/

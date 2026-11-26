@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "infil00p/all-MiniLM-L6-v2-GGUF",
+  "slug": "infil00p-all-minilm-l6-v2-gguf",
+  "author": "infil00p",
+  "url": "https://huggingface.co/infil00p/all-MiniLM-L6-v2-GGUF",
+  "created_at": "2026-11-25T21:08:58.000Z",
+  "updated_at": "2026-11-25T21:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "llama-cpp",
+    "sentence-similarity",
+    "embeddings",
+    "bert",
+    "feature-extraction",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22565376,
+  "parameters_human": "22.6M",
+  "storage_bytes": 71506240,
+  "storage_human": "72 MB",
+  "context_length": 512,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

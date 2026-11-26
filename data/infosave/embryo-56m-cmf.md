@@ -2,113 +2,111 @@
 
 ## Resumen
 
-Embryo-56M es un modelo de lenguaje de 55,9 millones de parámetros desarrollado por infosave (Oleg Kirichenko) y entrenado desde cero en una única GPU de portátil (Apple M4), sin reutilizar pesos de terceros. Emplea una arquitectura propia implementada en el runtime `cortiq` y un formato de fichero propietario (`.cmf`) que empaqueta los pesos cuantizados junto con una base de registros factuales: 4.265 fichas de plantas medicinales y 663 tarjetas sobre países, elementos químicos, ciencia, informática, historia, libros y guías prácticas.
+Embryo-56M es un modelo de lenguaje de 56 millones de parametros desarrollado por infosave (Oleg Kirichenko) que se presenta como la primera version experimental de una pila tecnologica completa y propia: arquitectura, formato de fichero, enrutador, runtime y entrenador. El modelo se entrena desde cero sobre una unica GPU de portatil (Apple M4) con kernels Metal propios, sin reutilizar pesos de terceros. Combina una red neuronal pequena con un sistema de "registros" factuales embebidos en el mismo fichero de pesos, de modo que las respuestas factuales se recuperan de forma verbatim de esos registros y no se generan por muestreo.
 
-La propuesta técnica no es competir en capacidad generativa, sino separar el conocimiento factual de la red neuronal mediante un mecanismo de enrutamiento por resonancia: cada registro ocupa un subespacio aislado de estados ocultos y una consulta se dirige al registro con menor error de reconstrucción, sin clasificador ni reglas de palabras clave. Las respuestas factuales son literales del registro; cuando la pregunta queda fuera de la base, el modelo responde con una negativa explícita en lugar de improvisar.
+La arquitectura emplea atencion de memoria constante (gated delta mixers con dos anclas acotadas), enrutamiento por resonancia (cada registro es un subespacio aislado de estados ocultos y la consulta se dirige al de menor error de reconstruccion) y ejecucion unificada en un solo contenedor. El resultado es un modelo conversacional bilingue (ingles y ruso) con respuestas cortas, una huella de 91 MB en cuantizacion q8_2f y un estado por secuencia de 10,1 MB independiente de la longitud de contexto.
 
-Es relevante como experimento de arquitectura: atención de memoria constante (sin KV cache que crezca con el contexto), enrutamiento de expertos FFN por token y un formato de ejecución unificado que permite añadir registros sin modificar los pesos. El modelo conversa en inglés y ruso con respuestas cortas y gramaticales, pero deliberadamente débil fuera de sus registros.
+Es relevante ahora por dos motivos: demuestra que es viable entrenar y desplegar un modelo funcional con recursos de consumidor, y propone un enfoque hibrido entre red neuronal y base de conocimiento estructurada que reduce la alucinacion en dominios acotados (4.265 plantas medicinales, 663 fichas de paises, elementos quimicos, ciencia, informatica, historia, libros y guias practicas) a costa de rechazar explicitamente lo que no esta en los registros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con attention de memoria constante (gated delta mixers y dos anclas acotadas), enrutamiento por resonancia y expertos FFN por token |
+| Arquitectura | Transformer con atencion de memoria constante (gated delta mixers y dos anclas acotadas), enrutamiento por resonancia y ejecucion unificada |
 | Parametros totales | 55,9 M |
 | Parametros activos | 34,7 M por token |
-| Longitud de contexto | No disponible (el estado por secuencia es constante: 10,1 MB independientemente de la longitud) |
-| Tipos de cuantizacion | q8_2f (formato propio del runtime cortiq) |
-| Idiomas soportados | Ingles y ruso |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `.cmf` (contenedor propio de cortiq; incluye pesos y registros factuales) |
+| Longitud de contexto | no disponible (el estado por secuencia es constante, 10,1 MB, a cualquier longitud) |
+| Tipos de cuantizacion | q8_2f (formato propio CMF) |
+| Idiomas soportados | ingles, ruso |
+| Licencia | Apache 2.0 |
+| Formato de pesos | CMF (formato propio, fichero de 91 MB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina tres mecanismos patentados (solicitudes de patente estadounidenses 19/452.440, 19/731.402 y 19/738.763). El enrutamiento por resonancia trata cada registro como un subespacio aislado de estados ocultos: la consulta se asigna al registro con el menor error de reconstrucción, medido sobre los tokens del nombre de la entidad preguntada y el resto del mensaje. El mismo principio selecciona un experto FFN por token. La atención de memoria constante usa gated delta mixers y dos anclas acotadas, de modo que el estado no crece con el contexto y no hay KV cache que desalojar. La ejecución unificada permite añadir registros al contenedor sin modificar un solo byte del backbone compartido.
+El modelo es un transformer con atencion de memoria constante basada en gated delta mixers y dos anclas acotadas, de forma que no existe KV cache que evacuar y el estado por secuencia no crece con el contexto. Sobre esa columna vertebral se aplica enrutamiento por resonancia: cada registro factual es un subespacio aislado de estados ocultos y una consulta se dirige al registro con el menor error de reconstruccion, medido sobre los tokens del nombre al que se refiere la pregunta y el resto del mensaje. El mismo principio selecciona un experto FFN por token. No hay clasificador ni reglas de palabras clave. La ejecucion es unificada: columna vertebral compartida y registros anadidos sin modificar un solo byte de los pesos existentes.
 
-El entrenamiento se ejecutó en la GPU del M4 con kernels Metal propios, en dos fases: primero texto crudo y después chat con respuestas enmascaradas y replay de texto crudo. Los datos incluyen FineWeb-edu, FineWeb-2, corpus de código y matemáticas, SmolTalk, OASST2 y GrandMaster-PRO-MAX (cuyas respuestas fueron generadas por GPT-4-Turbo). Las fichas de plantas provienen de una referencia herbal propia del autor. No se documenta el número total de tokens de entrenamiento ni si hubo RLHF o DPO.
+El entrenamiento se ejecuto en la GPU del Apple M4 con kernels Metal propios, en dos fases: primero texto crudo y despues chat con respuesta unicamente en el turno del asistente y replay de texto crudo. Los datos incluyen FineWeb-edu, FineWeb-2, corpus de codigo y matematicas, SmolTalk, OASST2 y GrandMaster-PRO-MAX (cuyas respuestas fueron escritas por GPT-4-Turbo). Las fichas de plantas provienen de una referencia herbal propia. El autor declara tres solicitudes de patente estadounidenses asociadas a los mecanismos: enrutamiento por resonancia (19/452.440), ejecucion unificada (19/731.402) y atencion de memoria constante (19/738.763).
 
 ## Capacidades
 
-- Conversación corta y gramatical en inglés y ruso, con calidad limitada por el tamaño del modelo.
-- Respuesta factual literal desde registros internos: 4.265 fichas de plantas medicinales y 663 tarjetas sobre países, elementos químicos, ciencia, informática, historia, libros y guías prácticas.
-- Negativa explícita ("I don't know") ante preguntas factuales fuera de los registros, con indicación de los temas cubiertos.
-- Seguimiento de preguntas de continuación sobre una entidad ya mencionada, mediante subespacios de resonancia dedicados.
-- Enrutamiento determinista e inspeccionable: el campo `x_cortiq_route` de la API y la última línea de `cortiq run` indican qué registro respondió.
-- Servidor compatible con la API de OpenAI (`cortiq serve`).
-- No se documenta soporte de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
+- Generacion de texto conversacional corto y gramatical en ingles y ruso.
+- Recuperacion factual verbatim desde registros embebidos: 4.265 plantas medicinales y 663 fichas sobre paises, elementos quimicos, ciencia, informatica, historia, libros y guias practicas.
+- Rechazo explicito ("I don't know") cuando la pregunta factual cae fuera de los registros, en lugar de generar una respuesta especulativa.
+- Seguimiento de conversacion multi-turno sobre una entidad (por ejemplo, repreguntas sobre una planta en lenguaje natural).
+- Seleccion de experto FFN por token mediante enrutamiento por resonancia.
+- Servidor con API compatible con OpenAI (`cortiq serve`) que expone la ruta elegida en `x_cortiq_route`.
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Consulta de fitoterapia con trazabilidad: desplegar el modelo como servicio interno que responde sobre las 4.265 plantas medicinales devolviendo texto literal del registro, útil en herramientas de consulta donde se exige que la respuesta no se parafrasee ni se invente.
-- Base de datos conversacional de países y datos básicos: preguntas sobre capitales, moneda e idioma oficial respondidas desde las 663 tarjetas, con la ventaja de que el estado por secuencia es constante (10,1 MB) y el coste de memoria no crece con el histórico de la conversación.
-- Asistente educativo de bajo consumo: al ejecutarse en CPU a unas 470 tok/s en un M4 y ocupar 91 MB en disco, puede embeberse en aplicaciones de escritorio o dispositivos con recursos limitados para responder preguntas de ciencia, historia o informática.
-- Demostración e investigación de enrutamiento por resonancia: el modelo sirve como banco de pruebas reproducible de atención de memoria constante y selección de expertos por error de reconstrucción, con métricas publicadas de recuperación de palabras clave (62 % a 128 tokens, 47 % a 1.800 tokens con K = 4).
-- Filtro de abstención en pipelines RAG: usar la negativa calibrada del modelo (38 de 44 preguntas fuera de registros rechazadas) como capa que detecta consultas sin cobertura factual antes de derivarlas a un modelo mayor.
-- Servicio compatible con OpenAI en prototipos: `cortiq serve` expone una API compatible que permite sustituir un endpoint existente en pruebas de integración sin adaptar el cliente, con un consumo de VRAM mínimo.
-- Chat multilingüe básico inglés-ruso: para respuestas cortas en escenarios de atención al cliente de baja complejidad donde la latencia importa más que la profundidad (hasta 925 tok/s en una RTX 2000 Ada).
+- Consulta de referencia herbal: el modelo responde con la ficha verbatim de una planta medicinal (indicaciones, propiedades) a partir del registro `herbs`, lo que resulta adecuado para prototipos de buscadores internos donde la exactitud del texto importa mas que la fluidez.
+- Asistente de repreguntas sobre una entidad concreta: gracias al enrutamiento de seguimiento, un usuario puede preguntar primero por una planta y despues pedir aclaraciones en lenguaje llano; el modelo mantiene el subespacio de la entidad y responde desde el mismo registro.
+- Fichas de paises y elementos quimicos en ruso e ingles: util para demos de asistentes bilingues de consulta rapida (capital, moneda, idioma oficial) con respuestas exactas y sin generacion libre.
+- Despliegue en hardware de consumo: con 91 MB de fichero y 10,1 MB de estado por secuencia, cabe en portatiles y GPUs de gama baja; sirve para validar pipelines de inferencia (cortiq-cli, servidor compatible con OpenAI) antes de escalar a modelos mayores de la misma familia.
+- Filtro de abstención en produccion: el comportamiento de rechazo ante preguntas fuera de dominio (38 de 44 en la medicion del autor) es aprovechable como capa de derivacion a un sistema mayor o a un humano cuando la consulta no esta cubierta.
+- Experimentacion con arquitecturas de atencion de memoria constante: investigadores pueden medir el comportamiento de gated delta mixers y del enrutamiento por resonancia con un modelo pequeno, reproducible y de licencia permisiva.
+- Generacion de texto corto para tareas auxiliares (resumenes breves, respuestas de una frase) donde la calidad linguistica del modelo pequeno sea suficiente y el coste computacional sea el criterio dominante.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas propias de evaluación:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor publica metricas propias de velocidad y de acierto sobre sus registros:
 
 | Metrica | Resultado |
 |---|---|
-| Preguntas simples sobre plantas, formulación no vista en el ajuste | 155 de 180 |
+| Decodificacion, Apple M4 GPU | ~650 tok/s |
+| Decodificacion, Apple M4 CPU | ~470 tok/s |
+| Decodificacion, NVIDIA RTX 2000 Ada / host EPYC 7443P | 925 / 612 tok/s |
+| Decodificacion, NVIDIA RTX A5000 (CUDA, cortiq 0.8.96) | 870-920 tok/s |
+| Decodificacion tras prompt de 2000 tokens, M4 GPU / CPU | 535 / 379 tok/s |
+| Decodificacion tras prompt de 2000 tokens, RTX 2000 Ada / EPYC | 796 / 405 tok/s |
+| 3000 tokens en una ejecucion, M4 GPU / CPU | 389 / 398 tok/s |
+| Preguntas llanas sobre plantas, formulacion no vista en entrenamiento | 155 de 180 |
 | Hechos de plantas, preguntas reservadas | 218 de 223 |
-| Continuaciones sobre una planta en lenguaje llano, formulación no vista | 900 de 1.200 |
-| Mensajes no relacionados tomados como continuación (falsos positivos) | 41 de 1.380 |
+| Repreguntas sobre una planta en lenguaje llano, formulacion no vista | 900 de 1200 |
+| Mensajes no relacionados tomados por repregunta | 41 de 1380 |
 | Preguntas factuales fuera de los registros, rechazadas | 38 de 44 |
 | Peticiones ordinarias rechazadas por error | 1 de 40 |
 | Preguntas sobre entidades del mundo excluidas del ajuste | 367 de 445 |
-| Prompts generales respondidos desde un registro | 86 de 1.444 |
-| Prompts generales rechazados | 243 de 1.444 |
-| Recuerdo de palabra clave, K = 4, distancia 128 / 512 / 1.024 / 1.800 tokens | 62 / 70 / 56 / 47 % |
-
-Rendimiento de decodificación medido por el autor:
-
-| Plataforma | tok/s (decodificación) | tok/s tras prompt de 2.000 tokens |
-|---|---|---|
-| Apple M4 GPU | ~650 | 535 |
-| Apple M4 CPU | ~470 | 379 |
-| NVIDIA RTX 2000 Ada | 925 | 796 |
-| EPYC 7443P (CPU) | 612 | 405 |
-
-En una ejecución continua de 3.000 tokens en el M4: 389 tok/s en GPU y 398 tok/s en CPU (la GPU se ralentiza tras varios segundos de trabajo sostenido).
+| Prompts generales respondidos desde un registro | 86 de 1444 |
+| Prompts generales rechazados | 243 de 1444 |
+| Recuerdo de una palabra clave en texto, K=4, distancia 128/512/1024/1800 tokens | 62 / 70 / 56 / 47 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: mínima; el fichero completo ocupa 91 MB y el estado por secuencia es de 10,1 MB constante, por lo que cabe holgadamente en cualquier GPU consumer e incluso en memoria unificada de un Apple M4.
-- GPU recomendadas: RTX 2000 Ada (925 tok/s medidos), Apple M4 (650 tok/s en GPU). Cualquier GPU con soporte Metal o CUDA del runtime cortiq es suficiente; no requiere A100 ni H100.
-- Cabe en GPU consumer: sí, en cualquier modelo actual; también funciona íntegramente en CPU a velocidades superiores a 400 tok/s.
-- Opciones de despliegue: runtime `cortiq` (CLI y servidor con API compatible con OpenAI). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, dado el formato propietario `.cmf`.
-- Latencia y throughput: ver tabla de benchmarks; el rendimiento se degrada moderadamente con prompts largos (535 frente a 650 tok/s en M4 GPU tras 2.000 tokens) y en ejecuciones sostenidas en GPU.
+- VRAM estimada: inferior a 1 GB para inferencia; el fichero de pesos ocupa 91 MB y el estado por secuencia 10,1 MB.
+- GPU recomendadas: cualquier GPU con soporte del runtime cortiq (Apple M4 con Metal, NVIDIA RTX 2000 Ada, RTX A5000); el autor reporta mediciones en estas.
+- Cabe en GPU de consumo: si, incluida la GPU integrada de un Apple M4 y GPUs de portatil de gama baja.
+- Opciones de despliegue: `cortiq-cli` (con feature `gpu`, version 0.8.53 o superior) y `cortiq serve` con API compatible con OpenAI en el puerto indicado. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, dado que el formato CMF es propio.
+- Latencia y throughput: 650 tok/s en M4 GPU y 925 tok/s en RTX 2000 Ada en decodificacion; el rendimiento cae a 389 tok/s en M4 GPU tras varios segundos de trabajo continuo (por debajo del CPU en esa prueba).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Embryo-56M | 55,9 M (34,7 M activos) | No disponible (estado constante de 10,1 MB) | en, ru | Apache-2.0 | `.cmf` (cortiq) |
-| SmolLM2-135M | 135 M | 8.192 tokens | en (principalmente) | Apache-2.0 | safetensors, GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | multilingüe (29 idiomas) | Apache-2.0 | safetensors, GGUF |
-| Gemma 3 270M | 270 M | 32.768 tokens | multilingüe | Gemma Terms of Use | safetensors, GGUF |
+No se dispone de datos de benchmarks estandar para Embryo-56M que permitan una comparacion de rendimiento homogenea. La comparativa se limita a caracteristicas estructurales:
 
-La comparación directa es limitada: Embryo-56M no persigue rendimiento generativo general, sino respuestas factuales verbatim desde registros internos con abstención calibrada, algo que los modelos de la tabla no ofrecen de serie. A cambio, su formato propietario restringe el ecosistema de herramientas y no se han publicado resultados en benchmarks estándar que permitan situarlo frente a SmolLM2 o Qwen2.5 en tareas de lenguaje general.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Embryo-56M | 55,9 M (34,7 M activos) | no disponible (estado constante) | Apache 2.0 | CMF propio | Registros factuales embebidos, runtime propio |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Modelo pequeno convencional, ecosistema amplio |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Mayor capacidad general, requiere mas recursos |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Enfocado a texto general, sin registros factuales |
+
+La comparacion de rendimiento con estas alternativas no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Fuera de los registros, las respuestas proceden de una red muy pequeña: gramaticales y cortas, pero a menudo vacías o genéricas (véase el ejemplo del dragón en la model card).
-- Riesgo de enrutamiento erróneo: 86 de 1.444 prompts generales se respondieron desde un registro, y aproximadamente una quinta parte de esos casos fue una tarjeta correcta que no respondía a la pregunta.
-- No debe usarse para decisiones médicas: las fichas de plantas describen uso tradicional y evidencia, no constituyen consejo clínico.
-- Cobertura factual cerrada: cualquier entidad fuera de las 4.265 plantas y 663 tarjetas queda sin respuesta útil; 78 de 445 preguntas sobre entidades excluidas del ajuste no se resolvieron correctamente.
-- Recuerdo limitado en contextos largos: la recuperación de una palabra clave cae del 62 % a 128 tokens al 47 % a 1.800 tokens.
-- Solo inglés y ruso; no hay soporte documentado de otros idiomas.
-- Formato y runtime propietarios (`.cmf`, `cortiq`): dependencia de una única implementación, con requisito de cortiq 0.8.53 o superior y sin integración con vLLM, llama.cpp u Ollama.
-- Licencia Apache-2.0 permite uso comercial, pero existen solicitudes de patente estadounidenses en trámite sobre los mecanismos de enrutamiento, ejecución unificada y atención; conviene revisar posibles reclamaciones de propiedad intelectual antes de un despliegue comercial a gran escala.
-- No se documentan sesgos específicos ni evaluación de seguridad; el tamaño del modelo y la ausencia de RLHF declarado limitan la robustez ante entradas adversarias.
+- Fuera de los registros, las respuestas son las de un modelo muy pequeno: gramaticales, cortas y a menudo vacias; el propio autor lo califica de "debil".
+- Riesgo de alucinacion en el dominio factual: 86 de 1444 prompts generales se respondieron desde un registro, y aproximadamente una quinta parte de esos casos eran una ficha correcta que no respondia a la pregunta.
+- El rechazo no es perfecto: 6 de 44 preguntas fuera de los registros recibieron respuesta de un registro en lugar de abstrucion.
+- Cobertura limitada a ingles y ruso; no se documenta soporte de otros idiomas.
+- No debe usarse para decisiones medicas: las fichas describen uso tradicional y la model card advierte explicitamente contra ello.
+- El formato de pesos es propietario (CMF) y el unico runtime documentado es cortiq, lo que limita la portabilidad y el uso de herramientas estandar del ecosistema.
+- El recuerdo de informacion en texto largo es bajo y decrece con la distancia (47 % a 1800 tokens), lo que desaconseja tareas de recuperacion sobre contextos extensos.
+- La licencia Apache 2.0 permite uso comercial, pero las solicitudes de patente del autor sobre los mecanismos de enrutamiento, ejecucion y atencion deben evaluarse antes de reimplementarlos.
+- El rendimiento en GPU puede degradarse en ejecuciones continuadas (el autor observa caida tras unos segundos en el M4), por lo que las cifras de decodificacion no son sostenidas en todos los casos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/infosave/Embryo-56M-cmf
-- Demo (Space): https://huggingface.co/spaces/infosave/embryo-56m
-- Repositorio y CLI cortiq: instalación mediante `cargo install cortiq-cli --features gpu`
-- Solicitudes de patente citadas: USPTO 19/452.440 (resonance routing), 19/731.402 (unified execution), 19/738.763 (constant-memory attention)
+- Demo en Space: https://huggingface.co/spaces/infosave/embryo-56m
+- Repositorio de imagenes y recursos del modelo: https://huggingface.co/infosave/Embryo-56M-cmf/tree/main/assets
+- No se han proporcionado enlaces a papers, blogs o repositorios adicionales en la informacion disponible.

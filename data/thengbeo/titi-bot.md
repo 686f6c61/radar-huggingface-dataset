@@ -2,86 +2,86 @@
 
 ## Resumen
 
-TiTi Bot es un modelo de lenguaje de pequeno tamano (63,52 millones de parametros) desarrollado por Ho Ngoc Thang dentro del proyecto "TiTi Genesis AGI", una iniciativa personal orientada a construir una flota de micro-bots satelite ligeros. El modelo esta disenado especificamente para el idioma vietnamita y cumple tres funciones diferenciadas: modelado de lenguaje causal para preentrenamiento, clasificacion y filtrado de datos web (spam, juego, SEO clickbait, OCR corrupto, traduccion rota) y extraccion de spans para busqueda extractiva.
+TiTi Bot es un modelo de lenguaje de pequeno tamano (63,52 millones de parametros) desarrollado por Ho Ngoc Thang en el marco del proyecto "TiTi Genesis AGI". Se trata de un modelo orientado especificamente al idioma vietnamita, con un vocabulario de 32.768 tokens "puramente vietnamita" y una arquitectura transformer de 6 capas con dimension oculta de 768. Su proposito principal no es la generacion de texto general, sino actuar como filtro de datos y extractor de spans para un sistema mayor de busqueda y limpieza de corpus.
 
-Tecnicamente se trata de un transformer decoder-only de 6 capas con dimension oculta de 768, 12 cabezas de atencion con Grouped Query Attention (4 cabezas KV, ratio 3:1) y un vocabulario de 32.768 tokens "puramente vietnamita". La arquitectura sigue convenciones de modelos como Llama-3 o Qwen2.5 en el diseno de atencion, con RMSNorm, SwiGLU y Rotary Embeddings (RoPE). El autor lo presenta como una evolucion de una version previa de 512 dimensiones y 65.536 tokens de vocabulario, eliminando tokens ingleses y de herramientas de codigo.
+El modelo implementa tres cabeceras funcionales sobre un mismo backbone: un cabecera de modelado de lenguaje causal (para preentrenamiento), una cabecera de clasificacion de calidad de datos en cinco clases (KEEP_CLEAN, DROP_SPAM_GAMBLING, DROP_SEO_CLICKBAIT, DROP_GARBLED_OCR, DROP_BROKEN_TRANSLATION) con puntuacion continua de 0.0 a 1.0, y una cabecera de extraccion de spans para busqueda extractiva. Esta especializacion lo hace relevante para pipelines de curacion de datos en vietnamita, aunque su utilidad fuera de ese nicho es muy limitada.
 
-Es relevante en el nicho de modelos ultra-ligeros para tareas de curaduria de datos en vietnamita, un idioma con relativamente pocos recursos especificos. Sin embargo, no hay evidencia publica de que el modelo haya sido entrenado con datos reales: la model card describe scripts de inicializacion de pesos (`init_weights.py`) y pruebas de forma y flujo de gradiente, no resultados de entrenamiento convergido. Esto es un caveat critico para cualquier evaluacion practica.
+La relevancia actual del modelo reside en su enfoque de "micro-flota" de bots especializados de bajo coste computacional, disenados para tareas concretas de filtrado y extraccion en lugar de generacion abierta. No obstante, la informacion publica es escasa: no se han publicado resultados de benchmarks, no se especifica la licencia y el modelo parece encontrarse en una fase inicial de desarrollo con pesos de inicializacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (6 capas, 768D, RMSNorm, SwiGLU, RoPE, GQA) |
-| Parametros totales | 63,52 M (25,17 M embedding + 37,76 M backbone) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la model card no especifica el contexto maximo de entrenamiento) |
-| Tipos de cuantizacion | no disponible (pesos descritos como fp16 ~127 MB y fp32 ~242 MB) |
-| Idiomas soportados | vietnamita (vocabulario disenado al 100% para vietnamita) |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (se menciona `titi_filter_init.pt` como checkpoint de inicializacion) |
+| Arquitectura | Transformer decoder-only (6 capas, 768 dimension oculta, 12 cabezas de atencion, 4 cabezas KV con GQA 3:1, FFN SwiGLU de 2048, RoPE, RMSNorm) |
+| Parametros totales | 63,52 millones (37,76M en backbone transformer, 25,17M en embeddings) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos publicados en FP32, ~254 MB; FP16 estimado ~127 MB) |
+| Idiomas soportados | Vietnamita (vocabulario de 32.768 tokens disenado para vietnamita) |
+| Licencia | No disponible |
+| Formato de pesos | PyTorch (.pt) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 6 capas con `hidden_dim=768`, `num_heads=12`, `num_kv_heads=4` (GQA 3:1), `ffn_dim=2048` con activacion SwiGLU, RMSNorm y Rotary Embeddings. El vocabulario es de 32.768 tokens (2^15) filtrado para eliminar tokens ingleses y etiquetas de herramientas de codigo/matematicas. La model card indica que el preentrenamiento causal se realizaria sobre aproximadamente 300 millones de tokens de libros y material educativo limpio (`loai_2.jsonl`), pero no se aportan curvas de perdida, tokens efectivamente procesados ni detalles del dataset mas alla de esa cifra.
+La arquitectura es un transformer decoder-only de 6 capas con dimension oculta de 768, 12 cabezas de atencion y 4 cabezas KV (GQA con ratio 3:1, siguiendo el esquema de Llama-3 y Qwen2.5). Emplea RMSNorm, activacion SwiGLU con dimension FFN de 2048 y embeddings rotatorios (RoPE). El vocabulario de 32.768 tokens (2^15) esta disenado exclusivamente para vietnamita, eliminando los 32.768 tokens en ingles que estaban presentes en una version anterior de 65.536 tokens, lo que reduce el desperdicio de parametros en la matriz de embeddings. El modelo incorpora tres cabeceras: `forward_loss` para modelado causal, `forward_filter` para clasificacion en 5 clases con puntuacion de calidad, y `forward_span` para prediccion de coordenadas start/end en busqueda extractiva.
 
-La innovacion principal es la cabeza triple: una cabeza de modelado causal (`forward`/`forward_loss`), una cabeza de filtrado de datos (`forward_filter`) que clasifica en 5 clases y puntua calidad de 0,0 a 1,0, y una cabeza de extraccion de spans (`forward_span`) que emite coordenadas inicio/fin sobre un par pregunta-articulo. La model card describe pruebas de consistencia de KV-cache (error de 2,91e-6 frente a forward completo) y de flujo de gradiente en las tres cabezas, pero estas pruebas validan la implementacion, no el aprendizaje. No se menciona RLHF, DPO ni ajuste por instrucciones.
+Segun la model card, el modelo fue preentrenado sobre aproximadamente 300 millones de tokens de libros y material educativo limpio (archivo `loai_2.jsonl`). No se especifica si hubo fases de RLHF, DPO o ajuste fino supervisado adicional. Los pesos publicados (`titi_bot_vi.pt`) corresponden a una inicializacion FP32 generada por el script `init_weights.py`, lo que sugiere que el modelo podria no estar completamente entrenado en el momento de la publicacion. La model card menciona que el modelo supero 9 pruebas tecnicas de integridad (formas de logits, flujo de gradientes, consistencia de KV-cache con error de 2,91e-6, guardado y carga de checkpoints, tokenizacion vietnamita), pero estas pruebas verifican correccion estructural, no calidad de aprendizaje.
 
 ## Capacidades
 
-- Generacion de texto causal en vietnamita (preentrenamiento de lenguaje base).
-- Filtrado y clasificacion de documentos web en 5 categorias: `KEEP_CLEAN`, `DROP_SPAM_GAMBLING`, `DROP_SEO_CLICKBAIT`, `DROP_GARBLED_OCR`, `DROP_BROKEN_TRANSLATION`.
-- Puntuacion de calidad de texto en rango continuo [0,0, 1,0].
-- Extraccion extractiva de spans (respuesta basada en coordenadas inicio/fin sobre un texto fuente), disenada para reducir alucinacion en busqueda.
-- Tokenizacion especifica para vietnamita con cobertura de todos los tonos, digrafos y signos de puntuacion.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento explicito.
+- Modelado de lenguaje causal en vietnamita (generacion de texto basica).
+- Clasificacion de calidad de datos en 5 categorias: KEEP_CLEAN, DROP_SPAM_GAMBLING, DROP_SEO_CLICKBAIT, DROP_GARBLED_OCR, DROP_BROKEN_TRANSLATION.
+- Puntuacion continua de calidad de texto en el rango [0.0, 1.0].
+- Extraccion de spans para busqueda extractiva: dado un par [pregunta + articulo web], predice coordenadas start..end del fragmento relevante.
+- Tokenizacion especializada en vietnamita con cobertura de tonos, palabras compuestas, puntuacion, aritmetica y caracteres basicos.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
+- Capacidad multilingue: no disponible (el vocabulario es exclusivamente vietnamita).
 
 ## Casos de uso
 
-- Curaduria de corpus web en vietnamita: el modelo puede puntuar y clasificar paginas rastreadas antes de incorporarlas a un pipeline de entrenamiento, descartando spam, clickbait SEO y texto OCR corrupto mediante la cabeza de filtrado.
-- Busqueda extractiva sobre articulos: dado un par pregunta-articulo, la cabeza de span devuelve la respuesta literal del texto, lo que permite construir un buscador que cite fuente y evite respuestas generadas.
-- Limpieza de datasets de traduccion automatica: la clase `DROP_BROKEN_TRANSLATION` permite detectar pares con traduccion defectuosa antes de usarlos en ajuste fino de modelos mayores.
-- Preprocesado en pipelines RAG: como etapa previa a un LLM grande, TiTi Bot filtra documentos irrelevantes y extrae fragmentos, reduciendo el contexto enviado al modelo principal y el coste por consulta.
-- Moderacion de foros y comentarios en vietnamita: la clasificacion de spam y juego encaja en un sistema de moderacion ligero que puede ejecutarse en CPU.
-- Prototipado de investigacion en modelos pequenos: sirve como banco de pruebas para estudiar vocabularios especificos de idioma, GQA en modelos diminutos o arquitecturas multi-cabeza con un coste computacional minimo.
-- Despliegue en dispositivos con recursos limitados: con ~127 MB en fp16, puede ejecutarse en entornos edge o contenedores sin GPU dedicada.
+- Curacion de corpus web en vietnamita: el modelo puede clasificar paginas como spam de juego, clickbait SEO, OCR corrupto o traduccion defectuosa antes de incorporarlas a un dataset de entrenamiento, reduciendo el ruido en pipelines de datos a gran escala.
+- Busqueda extractiva en articulos: dado un articulo y una pregunta, `forward_span` devuelve las coordenadas del fragmento que responde a la consulta, lo que permite construir un motor de busqueda que devuelve citas textuales en lugar de texto generado, mitigando alucinaciones.
+- Filtrado de datos para preentrenamiento de modelos mayores: el modelo actua como primera etapa de un pipeline de limpieza, descartando documentos de baja calidad antes de pasarlos a un modelo de mayor tamano, con un coste computacional minimo (63M de parametros).
+- Deteccion de traduccion automatica defectuosa: la clase DROP_BROKEN_TRANSLATION permite identificar textos traducidos de forma deficiente en corpus multilingues, un problema frecuente en datasets raspados de la web.
+- Control de calidad en plataformas de contenido: integracion en un backend para moderar contenido generado por usuarios en vietnamita, marcando spam o clickbait antes de su publicacion.
+- Preprocesamiento en sistemas RAG: el modelo puede puntuar la calidad de los documentos recuperados y extraer el span relevante antes de pasarlo a un modelo generativo, mejorando la precision y reduciendo el contexto enviado al LLM principal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta pruebas de implementacion (formas de tensores, flujo de gradiente, consistencia de KV-cache con error de 2,91e-6, guardado y carga de checkpoint), no metricas de calidad como MMLU, HumanEval o GSM8K, ni evaluaciones en tareas de filtrado o extraccion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta pruebas de integridad estructural (formas de tensores, flujo de gradientes, consistencia de KV-cache, guardado/carga de checkpoints y tokenizacion), sin metricas de calidad como MMLU, HumanEval, GSM8K ni evaluaciones de clasificacion o extraccion de spans.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp16 (~127 MB de pesos mas cache de activaciones), y del orden de 250 MB en fp32.
-- GPU recomendadas: cualquier GPU moderna es sobredimensionada; el modelo cabe en GPUs integradas y en tarjetas de gama baja como GTX 1650 o RTX 3050.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; el codigo se distribuye como paquete Python propio (`model.py`, `attention.py`, `layers.py`) con checkpoint `.pt`, por lo que la integracion requeriria adaptar el codigo del autor.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 (~254 MB de pesos mas overhead de activaciones); en FP16 aproximadamente 127 MB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en GTX 1650, RTX 3060, RTX 4090 o incluso en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 1 GB de VRAM, y es viable en CPU para inferencia por lotes.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al ser un modelo PyTorch personalizado con cabeceras propias, requeriria un wrapper de inferencia a medida.
+- Latencia y throughput estimados: no disponibles. Por el tamano (63M de parametros), se espera un throughput alto en GPU y aceptable en CPU, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| TiTi Bot | 63,52 M | no disponible | Filtrado y extraccion en vietnamita | no disponible |
-| DistilBERT (multilingue) | 66 M | 512 tokens | Clasificacion/encoder | Apache 2.0 |
-| PhoBERT-base | ~135 M | 256 tokens | Encoder vietnamita | MIT |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | LLM generativo multilingue | Apache 2.0 |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TiTi Bot | 63,52M | No disponible | Filtrado de datos y extraccion de spans en vietnamita | No disponible | Hugging Face (pesos .pt) |
+| DistilBERT | 66M | 512 tokens | Clasificacion y representaciones generales | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| PhoBERT-base | ~135M | 256 tokens | Representaciones y clasificacion en vietnamita | MIT | Hugging Face, VinAI |
+| XLM-RoBERTa-base | ~278M | 512 tokens | Clasificacion multilingue | MIT | Hugging Face |
 
-La comparacion es aproximada: TiTi Bot es un decoder con cabezas auxiliares, mientras que DistilBERT y PhoBERT son encoders de clasificacion y Qwen2.5-0.5B es un LLM generativo. TiTi Bot ofrece un tamano menor que todos ellos y una especializacion en vietnamita mas agresiva, pero carece de benchmarks publicados y de licencia declarada, lo que limita su comparacion objetiva.
+La comparacion es aproximada: TiTi Bot no es un modelo de representaciones generico sino un sistema especializado con cabeceras de filtrado y extraccion, por lo que la comparacion directa con encoder-only como DistilBERT o PhoBERT es limitada. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No hay evidencia publica de entrenamiento real: la model card describe inicializacion de pesos y pruebas de forma, no un modelo convergido con perdida reportada.
-- Ausencia total de benchmarks: no se puede verificar calidad en filtrado, extraccion o generacion.
-- Licencia no especificada: impide evaluar uso comercial y obliga a contactar al autor.
-- Vocabulario exclusivamente vietnamita: el modelo no es util para otros idiomas y puede degradarse con texto mixto vietnamita-ingles.
-- Longitud de contexto no documentada: no se puede planificar su uso en documentos largos.
-- Riesgo de alucinacion en la cabeza causal: al ser un modelo diminuto y sin ajuste por instrucciones, la generacion libre sera limitada; la cabeza de span es la via recomendada para evitar invencion.
-- Sesgos desconocidos: no se documenta composicion del corpus ni evaluacion de sesgos.
-- Proyecto personal sin gobernanza: sin releases versionadas, sin issues publicos ni mantenimiento garantizado.
-- Formato de pesos propietario (`.pt`): requiere cargar codigo del autor, con el riesgo de seguridad que implica ejecutar Python de terceros.
+- No se ha publicado la licencia, por lo que el uso comercial queda sin regularizar y requiere contacto con el autor.
+- Los pesos publicados parecen corresponder a una inicializacion (`init_weights.py`), no a un modelo completamente entrenado; la calidad real del modelo es incierta.
+- No hay benchmarks publicados que validen el rendimiento en las tareas declaradas (filtrado, puntuacion de calidad, extraccion de spans).
+- El vocabulario es exclusivamente vietnamita, lo que limita su uso a ese idioma y puede degradar el rendimiento en texto con mezcla de ingles u otros idiomas.
+- La longitud de contexto no esta documentada, lo que impide planificar su uso en documentos largos.
+- Riesgo de alucinacion en la cabecera causal: al ser un modelo de 63M de parametros, la generacion de texto libre sera de baja calidad y propensa a incoherencias.
+- El modelo no dispone de integraciones estandar (vLLM, llama.cpp, Ollama), lo que anade coste de ingenieria para su despliegue en produccion.
+- No se documentan sesgos especificos, pero el entrenamiento sobre ~300M de tokens de libros y material educativo puede introducir sesgos de dominio y estilo.
+- La model card esta redactada en vietnamita y contiene afirmaciones tecnicas no verificables de forma independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Thengbeo/titi-bot
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.
+- Hugging Face: https://huggingface.co/Thengbeo/titi-bot
+- No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -4,8 +4,8 @@
   "slug": "cracked-anj-orcarouter-qwen3-8-flash-next-uncensored-nvfp4-gptq-strata",
   "author": "Cracked-ANJ",
   "url": "https://huggingface.co/Cracked-ANJ/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-NVFP4-GPTQ-Strata",
-  "created_at": "2026-11-24T22:00:28.000Z",
-  "updated_at": "2026-11-24T23:04:59.000Z",
+  "created_at": "2026-11-25T03:26:46.000Z",
+  "updated_at": "2026-11-25T03:26:46.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -15,7 +15,6 @@
     "zh"
   ],
   "tags": [
-    "gguf",
     "qwen",
     "qwen3.8",
     "flash-next",
@@ -32,12 +31,10 @@
     "base_model:Qwen/Qwen3.8-Flash-Next",
     "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
     "license:other",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 76,
   "trending_score": 0,
   "parameters": 125743801216,
   "parameters_human": "125.74B",
@@ -45,10 +42,8 @@
   "storage_human": "198.5 GB",
   "context_length": 262144,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4, Qwen/Qwen3.8-Flash-Next",
-  "formats": [
-    "gguf"
-  ],
-  "is_conversational": true,
+  "formats": [],
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,

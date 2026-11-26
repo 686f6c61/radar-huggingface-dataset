@@ -50,13 +50,13 @@
       "task": null,
       "dataset": "SUN RGB-D",
       "metric": "mAP@0.25",
-      "value": 66.67
+      "value": 66.77
     },
     {
       "task": null,
       "dataset": "SUN RGB-D",
       "metric": "mAP@0.5",
-      "value": 50.37
+      "value": 50.15
     }
   ],
   "sources": []

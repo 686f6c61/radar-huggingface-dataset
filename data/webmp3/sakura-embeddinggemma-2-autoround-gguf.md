@@ -2,121 +2,125 @@
 
 ## Resumen
 
-Sakura-EmbeddingGemma-2-AutoRound-GGUF es una version cuantizada del modelo de embeddings google/embeddinggemma-2, publicada por el usuario webmp3 (Sakura). Se trata de un modelo de representaciones densas (text embeddings) de aproximadamente 271 millones de parametros, convertido a formato GGUF mediante cuantizacion Q4_0 generada con Intel AutoRound v0.5.2, una tecnica de ajuste de pesos por descenso de gradiente de signo (SignRound) en lugar del redondeo post-hoc clasico de llama-quantize.
+Sakura-EmbeddingGemma-2-AutoRound-GGUF es una familia de tres modelos de embeddings de texto cuantizados en formato GGUF, derivados del modelo base `google/embeddinggemma-2`. El autor, `webmp3`, aplica un pipeline propio de cuantización AutoRound (SignRoundV2 de AutoRound 0.16.0) sobre la arquitectura `gemma-embedding2` para producir variantes de precisión mixta nativa orientadas a llama.cpp. El modelo resuelve el problema de desplegar embeddings de alta fidelidad con huella de memoria mínima (entre 170 y 232 MiB según la variante) en entornos de CPU y consumer GPU, sin sacrificar apenas similitud coseno respecto al BF16 original.
 
-El modelo resuelve tareas de recuperacion semantica, similitud de frases y extraccion de caracteristicas sobre texto en ingles y otros idiomas, con soporte nativo de representaciones Matryoshka (MRL): el mismo vector puede truncarse a 768, 512, 256 o 128 dimensiones segun el equilibrio deseado entre precision y coste de almacenamiento. Esto resulta relevante para indexado vectorial a gran escala, sistemas RAG y busqueda semantica en produccion.
+La relevancia actual reside en la combinación de tres factores: cuantización calibrada con AutoRound en lugar de `llama-quantize` estándar, soporte nativo de Matryoshka Representation Learning (MRL) que permite truncar los embeddings de 768 a 512, 256 o 128 dimensiones con renormalización L2, y una licencia Gemma que permite uso comercial bajo condiciones. Los tres tiers (Q4_K_S, Q5_K_S y Q6_K) están calibrados con 256 muestras sintéticas de retrieval independientes del benchmark de evaluación, lo que evita contaminación de las métricas reportadas.
 
-La publicacion incluye una evaluacion empirica de fidelidad frente al modelo original en BF16 sobre 300 elementos de prueba, con metricas de coseno medio, correlacion de Spearman y capacidad de recuperacion. El checkpoint es unicamente de texto (backbone de ~271M de parametros) y requiere una version reciente de llama.cpp que incluya la PR #30054 para reconocer la arquitectura `gemma-embedding2`.
+Con aproximadamente 271 millones de parámetros en la ruta de texto (413 tensores), el modelo es adecuado para pipelines de búsqueda semántica, deduplicación y clasificación donde el coste de almacenamiento de vectores y la latencia importan.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `gemma-embedding2` (transformer encoder, 24 bloques, 413 tensores) |
-| Parametros totales | 271.002.648 (~271M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_0 (218 tensores), Q6_K (capa `output.weight`), F32 (194 tensores de normalizacion y escalado) |
+| Arquitectura | gemma-embedding2 (transformer encoder de embeddings) |
+| Parametros totales | 271.002.648 (~271M, ruta de texto) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (cuantización calibrada con seqlen 128) |
+| Tipos de cuantizacion | Q4_K_S, Q5_K_S, Q6_K (precisión mixta nativa AutoRound; tensores PLE en Q8_0) |
 | Idiomas soportados | en, multilingual |
-| Licencia | gemma (Gemma Terms of Use) |
-| Formato de pesos | GGUF (llama.cpp); existe release complementaria en Safetensors W4A16 |
-| Dimension de salida | 768 dimensiones nativas; Matryoshka a 768, 512, 256 y 128 d |
-| Tamano del repo | 0,2 GB |
-| Tamano del archivo | 160,79 MB (168.595.552 bytes) |
-| Checksum SHA256 | `9e9702166102a929f90374e1e7205d96b9b000507397523f60d11322ffc6313f` |
-| Commit del snapshot base | `914f7f89142e33e77833254d9c9b90c3cef7303b` |
-| Commit llama.cpp verificado | `51ce9c11a6f2dfa895696c0048c4333e8953b728` (incluye PR #30054) |
+| Licencia | gemma |
+| Formato de pesos | GGUF (3 ficheros standalone, sin `mmproj`) |
+
+| Variante | Fichero | Bytes | MiB | SHA256 |
+|---|---|---:|---:|---|
+| Q4 HQ | `sakura-embeddinggemma-2-autoround-v2-Q4_K_S-HQ-cal256.gguf` | 178.033.120 | 169,79 | `e01262207bf83d43043f9c880d4388b8b35f002c3fdaf86101252b3356f62ab1` |
+| Q5 HQ | `sakura-embeddinggemma-2-autoround-v2-Q5_K_S-HQ-cal256.gguf` | 209.585.440 | 199,88 | `d0b5f556ed4916425a3512e4af1f0d7e631f9f85b6224b6b6d956c8f33adfaa0` |
+| Q6 HQ | `sakura-embeddinggemma-2-autoround-v2-Q6_K-HQ-cal256.gguf` | 243.008.800 | 231,75 | `e5c8680e1562e47ac5d379a25dc98972ccbd037df858dbca387c1df316ae0430` |
+
+| Dimension de embedding | Valor |
+|---|---|
+| Nativa | 768d |
+| MRL tras truncado + renormalización L2 | 512 / 256 / 128 |
+
+| Composicion de tensores por variante | Q4_K | Q8_0 | Q6_K | F32 |
+|---|---:|---:|---:|---:|
+| Q4 HQ | 169 | 49 | 1 | 194 |
+| Q5 HQ | 169 | 50 | 0 | 194 |
+| Q6 HQ | 169 | 50 | 0 | 194 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es `gemma-embedding2`, un transformer encoder derivado de la familia Gemma orientado a embeddings. El modelo base google/embeddinggemma-2 incluye, segun la PR #30054 de llama.cpp, rutas de texto, vision y audio; sin embargo, esta release GGUF concreta contiene unicamente el backbone de texto (~271M de parametros, 413 tensores). La estructura comprende 24 bloques transformer con capas de atencion (`attn_q`, `attn_k`, `attn_v`, `attn_output`), capas feed-forward (`ffn_gate`, `ffn_up`, `ffn_down`), capas `inp_gate` y `proj`, ademas de normalizaciones RMSNorm y escalas de salida por capa.
+El modelo base `google/embeddinggemma-2` usa la arquitectura `gemma-embedding2`, un transformer encoder dedicado a la extracción de representaciones (pipeline `feature-extraction`), con 413 tensores y aproximadamente 271M de parámetros en la ruta de texto. Produce embeddings de 768 dimensiones y soporta truncado Matryoshka (MRL) a 512, 256 y 128 dimensiones con renormalización L2 posterior, lo que permite ajustar el compromiso entre precisión de recuperación y coste de almacenamiento en el índice vectorial. El snapshot BF16 de referencia está fijado en `914f7f89142e33e77833254d9c9b90c3cef7303b`.
 
-La innovacion tecnica principal de esta publicacion es el proceso de cuantizacion. En lugar de usar `llama-quantize` sobre pesos ya entrenados, se aplico Intel AutoRound v0.5.2 con `SignRoundConfig`: 50 iteraciones de ajuste por bloque y 64 muestras de calibracion con seqlen=128. Los factores de escala optimizados se transfirieron directamente a los bloques GGML Q4_0 mediante `ggml_quant`. Los 218 tensores cuantizados a Q4_0 incluyen las 216 capas lineales de los 24 bloques, el `token_embd.weight` y el `per_layer_model_proj.weight` (proyeccion Per-Layer Embedding). La capa `output.weight` (cabeza de salida de 768d) se conserva en Q6_K, y los 194 tensores de normalizacion y escalado permanecen en F32.
-
-La conversion se realizo con una version limpia de llama.cpp que incorpora la PR #30054, sin parches de arquitectura personalizados ni remapeos ad-hoc de tensores.
+El proceso de cuantización es la innovación técnica central: AutoRound 0.16.0 con SignRoundV2 nativo (`enable_alg_ext=True`), 50 iteraciones, calibración con 256 muestras sintéticas de retrieval independientes (48 consultas EN, 48 documentos EN, 48 consultas DE, 48 documentos DE, 32 consultas de código y 32 fragmentos de código, con solapamiento cero con el benchmark), seqlen 128, batch size 1, semilla 42, sobre CPU. Se optimizan 216 lineales del transformer y se empaquetan directamente los estados de escala, mínimo y doble escala sin pasar por `llama-quantize` ni por desquantización/requantización. Los tensores PLE (Per-Layer Embeddings) se almacenan en Q8_0 y las normas/escalares en F32. La variante Q5 incluye una corrección local al empaquetador Q5_K de AutoRound (enmascarado de nibbles bajos antes de combinar códigos de 5 bits y uso de `bits=5` en la ruta del token no calibrado), validada con siete tests de roundtrip y todas las comprobaciones de tensores optimizados. Los ficheros de AutoRound instalados y llama.cpp no se modifican.
 
 ## Capacidades
 
-- Generacion de embeddings de texto para similitud de frases (`sentence-similarity`) y extraccion de caracteristicas (`feature-extraction`).
-- Soporte nativo de Matryoshka Representation Learning (MRL): truncado del vector a 768, 512, 256 o 128 dimensiones.
-- Recuperacion semantica de texto (documentos, consultas) y de codigo (fragmentos y consultas de codigo), segun la evaluacion del autor.
-- Capacidades multilingues (etiquetas `en` y `multilingual`).
-- Compatible con endpoints: se puede servir mediante `llama-server --embedding` y consumir por API compatible con OpenAI o por el endpoint nativo `/embedding`.
-- No realiza generacion de texto, razonamiento generativo, tool calling ni function calling; es un modelo exclusivamente de embeddings.
-- La release GGUF no incluye las torres de vision ni de audio presentes en la arquitectura upstream (estan preservadas en la release W4A16 en Safetensors, no en este GGUF).
+- Generación de embeddings de texto para similitud semántica y recuperación de información (pipeline `feature-extraction`).
+- Embeddings multilingües con soporte declarado de inglés y multilingüe.
+- Recuperación sobre código: el benchmark interno evalúa consultas y fragmentos de código por separado (Code Top-5 y Code nDCG@10).
+- Truncado Matryoshka (MRL) a 512, 256 y 128 dimensiones con renormalización L2, para índices vectoriales de tamaño reducido.
+- Compatibilidad con llama.cpp y endpoints compatibles (tag `endpoints_compatible`).
+- No soporta tool calling, agentes ni generación de texto: es un modelo exclusivamente de embeddings.
+- No dispone de visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Busqueda semantica en documentacion tecnica: indexar manuales y guias como vectores de 256 o 512 dimensiones para reducir el almacenamiento, manteniendo un 100% de Recall@5 medido en la evaluacion del autor.
-- Sistemas RAG sobre bases de conocimiento internas: generar embeddings de fragmentos y consultas en ingles o multilingue, con la capa de salida de 768d para maxima fidelidad respecto al modelo original.
-- Deduplicacion y agrupacion de contenidos: calcular similitud coseno entre articulos, tickets o correos para detectar duplicados; la correlacion de Spearman de 0,9742 en 768d indica que el ordenamiento por similitud se preserva tras la cuantizacion.
-- Recuperacion de codigo en asistentes de desarrollo: indexar repositorios y devolver fragmentos relevantes; segun los datos del autor, el 100% de Recall@5 en codigo se mantiene en las cuatro dimensiones Matryoshka.
-- Clasificacion y clustering de texto: usar los embeddings como caracteristicas de entrada para clasificadores posteriores (spam, tematizacion, enrutado de soporte).
-- Despliegue en entornos con recursos limitados: al ocupar 160,79 MB en disco y ~271M de parametros, puede ejecutarse en CPU o en GPU de gama baja para servicios de embeddings de alto volumen.
-- Filtrado previo en pipelines de recomendacion: precalcular embeddings de candidatos y consultas para una primera fase de recuperacion sobre grandes catalogos con vectores truncados a 128d.
-- Evaluacion de similitud en investigacion NLP: usar el modelo como extractor de caracteristicas en experimentos de recuperacion, con la opcion de comparar contra el backbone BF16 de referencia.
+- Búsqueda semántica en producción: el modelo genera embeddings de 768d (o 256d tras truncado MRL) indexables en bases vectoriales; la variante Q5 HQ ofrece un 95,40% de Text Top-5 con solo 200 MiB en disco, adecuada para corpus de documentación técnica.
+- Deduplicación de documentos y detección de near-duplicates: la alta fidelidad coseno (0,9983 de media en Q5 HQ) permite fijar umbrales de similitud ajustados sin recalibrar contra el BF16.
+- Recuperación de código en asistentes de desarrollo: la variante Q6 HQ alcanza un 97,20% de Code Top-5 y 0,9937 de Code nDCG@10, útil para indexar repositorios y sugerir fragmentos relevantes.
+- Clasificación y clustering de tickets de soporte: con embeddings de 128d MRL y Q4 HQ (170 MiB) se puede ejecutar clustering en CPU sobre lotes grandes con huella mínima.
+- RAG ligero en edge o portátil: los tres ficheros caben en cualquier GPU consumer y en CPU; Q4 HQ es un 28,45% más pequeño que el UD-Q6_K_XL de Unsloth, lo que facilita el despliegue en dispositivos con almacenamiento limitado.
+- Filtrado multilingüe EN/DE: la calibración incluye muestras alemanas y el modelo declara soporte multilingüe, permitiendo recuperación cruzada en pipelines de contenido europeo.
+- Servicio de embeddings de baja latencia: al ser un encoder de 271M en GGUF, la inferencia en llama.cpp sobre CPU es viable para servicios internos con throughput moderado y sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-Datos de fidelidad publicados por el autor, medidos sobre 300 elementos de prueba (100 consultas de texto, 100 documentos de texto, 50 consultas de codigo, 50 fragmentos de codigo) frente al original en BF16:
+Evaluación interna del autor sobre el mismo benchmark BF16, 768d, combinando 300 vectores (100 consultas de texto, 100 documentos, 50 consultas de código y 50 fragmentos de código). Todas las filas usan la misma referencia, prefijos, funciones de métrica y flags de runtime.
 
-| Dimension | Coseno medio | Coseno minimo | Spearman | Text Top-5 agree | Text Recall@5 | Code Top-5 agree | Code Recall@5 |
-|---|---|---|---|---|---|---|---|
-| 768d (nativa) | 0,9863 | 0,9582 | 0,9742 | 86,20% | 100,0% | 82,80% | 100,0% |
-| 512d | 0,9866 | 0,9575 | 0,9744 | 85,60% | 100,0% | 82,80% | 100,0% |
-| 256d | 0,9878 | 0,9614 | 0,9763 | 85,00% | 100,0% | 85,20% | 100,0% |
-| 128d | 0,9913 | 0,9699 | 0,9760 | 80,20% | 100,0% | 80,00% | 100,0% |
+| Variante | MiB | Mean Cosine | Min Cosine | Spearman | Text Top-5 | Code Top-5 | Text/Code Recall@5 | Text nDCG@10 | Code nDCG@10 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Sakura Q4 HQ | 169,79 | 0,99400270 | 0,98141599 | 0,98857239 | 90,00% | 87,60% | 100% / 100% | 0,97668917 | 0,97540851 |
+| Unsloth UD-Q4_K_XL | 167,54 | 0,99354154 | 0,97681332 | 0,98770997 | 89,60% | 88,40% | 100% / 100% | 0,97352332 | 0,97615687 |
+| Sakura Q5 HQ | 199,88 | 0,99828082 | 0,99384677 | 0,99664205 | 95,40% | 92,80% | 100% / 100% | 0,98892991 | 0,99019274 |
+| Unsloth UD-Q5_K_XL | 200,32 | 0,99833661 | 0,99317700 | 0,99675520 | 94,80% | 94,40% | 100% / 100% | 0,98853356 | 0,99009068 |
+| Sakura Q6 HQ | 231,75 | 0,99940187 | 0,99797606 | 0,99879852 | 96,80% | 97,20% | 100% / 100% | 0,99555133 | 0,99365559 |
+| Unsloth UD-Q6_K_XL | 237,29 | 0,99926049 | 0,99767995 | 0,99853696 | 96,60% | 96,40% | 100% / 100% | 0,99417562 | 0,99165804 |
 
-Comparativa lado a lado publicada por el autor:
+Comparación de tamaño verificada:
 
-| Modelo | Formato / ambito | Tamano en disco | Coseno medio (768d) | Spearman (768d) | Text Top-5 agree | Text Recall@5 |
-|---|---|---|---|---|---|---|
-| BF16 Text Reference | Ruta de texto (BF16) | ~542 MB | 1,0000 | 1,0000 | 100,0% | 100,0% |
-| Sakura AutoRound Q4_0 GGUF (este modelo) | Embedding de texto (Q4_0) | 160,8 MB | 0,9863 | 0,9742 | 86,20% | 100,0% |
-| Unsloth Community Baseline | Embedding de texto (UD-Q4_K_XL) | 167,5 MB | 0,9935 | 0,9876 | 89,60% | 100,0% |
-| Sakura AutoRound W4A16 | Checkpoint multimodal completo (Safetensors) | 1.236 MB | 0,9878 | 0,9781 | 87,60% | 100,0% |
+| Tier | Sakura HQ (MiB) | Unsloth mismo tier (MiB) | Ventaja de tamaño Sakura |
+|---|---:|---:|---|
+| Q4 | 169,79 | 167,54 | 1,34% más grande |
+| Q5 | 199,88 | 200,32 | 0,22% más pequeño |
+| Q6 | 231,75 | 237,29 | 2,33% más pequeño |
 
-No se han publicado resultados de benchmarks estandar (MMLU, MTEB u otros) en la informacion disponible.
+El autor indica que las comparaciones con Unsloth son específicas por métrica y no se reclama superioridad universal. No se han publicado resultados de benchmarks estándar externos (MMLU, HumanEval, MTEB) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: minima, el archivo GGUF pesa 160,79 MB y el modelo tiene ~271M de parametros; el consumo sera del orden de unos pocos cientos de MB contando buffers de contexto.
-- Cabe sin problema en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.), e incluso en iGPU o CPU.
-- GPU profesionales (A100, H100) no son necesarias para este modelo; se usarian solo en escenarios de altisimo throughput o indexado masivo por lotes.
-- Opciones de despliegue: llama.cpp (obligatorio un build con PR #30054, commit `4fbc76d` o posterior), `llama-server` con el flag `--embedding`, y servidores compatibles que consuman GGUF.
-- Se puede exponer como endpoint compatible con OpenAI o mediante el endpoint nativo `/embedding` en el puerto configurado (ejemplo del autor: puerto 8080).
-- Aviso de compatibilidad: builds antiguos de llama.cpp devuelven `unknown model architecture: 'gemma-embedding2'`.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: al tratarse de un encoder de 271M en GGUF, los pesos ocupan entre 170 y 232 MiB; el consumo real de VRAM lo determina el tamaño de lote y la longitud de secuencia, no el modelo.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM libre es suficiente; A100, H100 y RTX 4090 quedan sobradamente dimensionadas y solo aportan ventaja en throughput por lotes grandes.
+- Cabe en GPU consumer: sí, en cualquier RTX (3060 en adelante) y en GPUs integradas; también funciona en CPU.
+- Opciones de despliegue: llama.cpp (formato nativo), servidores compatibles con endpoints (tag `endpoints_compatible`), Ollama mediante importación del GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Coseno medio (768d) | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|---|
-| Sakura-EmbeddingGemma-2-AutoRound-GGUF (este) | ~271M | no disponible | 0,9863 | gemma | GGUF Q4_0, 160,8 MB |
-| Unsloth Community Baseline (embeddinggemma-2 UD-Q4_K_XL) | ~271M (base) | no disponible | 0,9935 | gemma | GGUF, 167,5 MB |
-| Sakura AutoRound W4A16 (multimodal) | ~271M backbone de texto + torres vision/audio | no disponible | 0,9878 | gemma | Safetensors, 1.236 MB |
-| BF16 Text Reference | ~271M | no disponible | 1,0000 | gemma | BF16, ~542 MB |
+| Modelo | Parámetros | Contexto | Dimensiones | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Sakura-EmbeddingGemma-2 Q5 HQ | ~271M | no disponible | 768 (MRL 512/256/128) | gemma | GGUF | Mean Cosine 0,9983; Text Top-5 95,40% |
+| Unsloth UD-Q5_K_XL (embeddinggemma-2) | ~271M | no disponible | 768 (MRL) | gemma | GGUF | Mean Cosine 0,9983; Text Top-5 94,80%; 200,32 MiB |
+| Unsloth UD-Q6_K_XL (embeddinggemma-2) | ~271M | no disponible | 768 (MRL) | gemma | GGUF | Mean Cosine 0,9993; Text Top-5 96,60%; 237,29 MiB |
+| google/embeddinggemma-2 (BF16) | ~271M | no disponible | 768 (MRL) | gemma | safetensors | Referencia de fidelidad; sin cuantización |
 
-La comparativa se limita a variantes de cuantizacion del mismo modelo base; no se dispone de datos de otros modelos de embeddings de tamano similar en la informacion proporcionada.
+Las alternativas comparables documentadas son las variantes GGUF de Unsloth del mismo modelo base, que comparten arquitectura, licencia y dimensiones; la diferencia principal es el pipeline de cuantización (AutoRound nativo frente al esquema UD de Unsloth) y el tamaño resultante por tier.
 
 ## Limitaciones y advertencias
 
-- Es un modelo exclusivamente de embeddings: no genera texto, no razona de forma generativa ni soporta tool calling o function calling.
-- La cuantizacion Q4_0 introduce perdida de fidelidad frente al BF16: el coseno medio en 768d es 0,9863 y la coincidencia exacta del Top-5 de texto baja al 86,20%, aunque el Recall@5 se mantiene en el 100% en las pruebas del autor.
-- Frente al baseline comunitario Unsloth (UD-Q4_K_XL), este modelo presenta una fidelidad ligeramente inferior (coseno 0,9863 frente a 0,9935 y Top-5 86,20% frente a 89,60%) segun los datos del propio autor.
-- La release GGUF solo cubre la ruta de texto; no incluye vision ni audio, a pesar de que la arquitectura upstream los soporte.
-- No se ha especificado la longitud de contexto soportada, dato relevante para indexar documentos largos.
-- La evaluacion de fidelidad se realizo sobre 300 elementos y dimensiones MRL; no sustituye a una evaluacion estandar tipo MTEB.
-- Licencia `gemma`: el uso comercial esta sujeto a los Terminos de Uso de Gemma de Google, que imponen obligaciones de atribucion y restricciones de uso. Conviene revisarlos antes de un despliegue en produccion.
-- Riesgo de sesgos y de alucinacion en la similitud: al ser un modelo de representaciones, puede heredar sesgos del corpus de entrenamiento del modelo base y producir agrupaciones semanticas sesgadas.
-- Requiere obligatoriamente un build reciente de llama.cpp (PR #30054); versiones antiguas no cargan la arquitectura.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
+- Es un modelo exclusivamente de embeddings: no genera texto, no razona de forma autoregresiva y no soporta tool calling ni agentes.
+- Riesgo de alucinación no aplica directamente (no genera texto), pero los embeddings pueden producir recuperaciones espurias en dominios fuera de la distribución de calibración (EN, DE y código).
+- La calibración usó seqlen 128; no hay datos publicados sobre el comportamiento con secuencias largas, por lo que la longitud de contexto efectiva no está verificada.
+- Los idiomas declarados son inglés y multilingüe, con calibración específica en EN y DE; el rendimiento en otras lenguas no está medido.
+- La licencia Gemma impone condiciones de uso (política de uso aceptable de Google) y requiere revisión antes de uso comercial; no es una licencia permisiva tipo Apache o MIT.
+- Las métricas reportadas provienen de un benchmark interno del autor con muestras sintéticas; no hay validación externa en MTEB ni en conjuntos públicos independientes.
+- La variante Q5 incluye una corrección local al empaquetador de AutoRound; aunque el autor documenta hashes y tests, conviene verificar la integridad SHA256 antes de desplegar.
+- El repositorio tiene 227 descargas y 2 likes en el momento de la consulta, lo que indica adopción comunitaria todavía baja.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF
-- Modelo base: https://huggingface.co/google/embeddinggemma-2
-- Release complementaria en Safetensors (W4A16 multimodal): https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound
-- PR de llama.cpp con soporte de la arquitectura: PR #30054 (`model: support embeddinggemma2 (text+vision+audio)`), commit `4fbc76d` o posterior
-- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
-- Intel AutoRound: no se ha proporcionado enlace en la informacion disponible
+- [Hugging Face: webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF](https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF)
+- [Modelo base: google/embeddinggemma-2](https://huggingface.co/google/embeddinggemma-2)
+- [Ficheros oficiales de Unsloth: unsloth/embeddinggemma-2-GGUF](https://huggingface.co/unsloth/embeddinggemma-2-GGUF/tree/main)
+- [AutoRound (Intel)](https://github.com/intel/auto-round)
+- [llama.cpp](https://github.com/ggerganov/llama.cpp)

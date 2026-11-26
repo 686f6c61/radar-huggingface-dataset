@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/atom-v1-preview-8b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/atom-v1-preview-8b-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "mradermacher/atom-v1-preview-8b-i1-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/atom-v1-preview-8b-i1-GGUF/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "atom-v1-preview-8b-i1-GGUF huggingface.co api & mradermacher atom-v1 ...",
-      "url": "https://www.toolify.ai/ai-model/mradermacher-atom-v1-preview-8b-i1-gguf",
-      "snippet": "atom-v1-preview-8b-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find atom-v1-preview-8b-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of atom-v1-preview-8b-i1-GGUF install, users can directly use atom-v1-preview-8b-i1-GGUF installed effect in huggingface.co for debugging and trial. It also supports ..."
-    },
-    {
-      "title": "GitHub - ProteinDesignLab/protpardelle: Diffusion-based all-atom ...",
-      "url": "https://github.com/ProteinDesignLab/protpardelle",
-      "snippet": "Model weights are provided for both the backbone-only and all-atom versions of Protpardelle. Both of these are trained unconditionally; we will release conditional models in a later update."
-    },
-    {
-      "title": "Mradermacher - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
-      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
-    }
-  ]
+  "sources": []
 }

@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "josie-labs/Qwen3.5-0.8B-gabliterated",
+  "renamed_at": "2026-11-26T03:24:51.330Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,96 +2,99 @@
 
 ## Resumen
 
-Llama-3.2-1B-SAM (Small Assistant Model) es un ajuste fino mediante QLoRA del modelo `meta-llama/Llama-3.2-1B-Instruct`, desarrollado por el usuario sam-llm-dev y distribuido en formato GGUF. El objetivo declarado del autor es ofrecer explicaciones educativas densas en hechos, rápidas y con un consumo de VRAM muy reducido, de modo que pueda ejecutarse en hardware de consumo modesto, dispositivos de borde e incluso entornos móviles.
+Llama-3.2-1B-SAM (Small Assistant Model) es un ajuste fino mediante QLoRA de `meta-llama/Llama-3.2-1B-Instruct`, desarrollado por el usuario independiente sam-llm-dev. El modelo está orientado a la generación de explicaciones educativas densas en datos factuales y al despliegue en entornos con recursos limitados, como hardware de consumo, dispositivos de borde y moviles. Se distribuye principalmente en formato GGUF cuantizado, lo que permite su ejecución en equipos con poca VRAM.
 
-El modelo parte de la arquitectura Llama 3.2 de Meta con 1.235.814.432 parámetros totales, lo que lo sitúa en la gama ultra-ligera. Se ha entrenado sobre el dataset propio `sam-llm-dev/SAM-Family-Dataset` y se publica bajo la licencia Llama 3.2 Community License. Su relevancia actual radica en la combinación de un tamaño mínimo (capaz de correr con ~1 GB de VRAM en cuantización Q4_K_M) con un enfoque especializado en divulgación educativa, lo que lo hace atractivo para prototipos docentes y despliegues con recursos limitados.
+El modelo parte de la arquitectura transformer decoder-only de Llama 3.2 1B, con 1.235.814.432 parámetros totales. Su propuesta de valor no es la competición en benchmarks de razonamiento, sino la ligereza: el autor reporta que la versión Q4_K_M puede ejecutarse con aproximadamente 1,0–1,3 GB de VRAM o RAM, y la FP16 con unos 2,5–3,0 GB. Está entrenado exclusivamente en inglés y su licencia es la Llama 3.2 Community License.
 
-No obstante, se trata de un modelo con cero descargas en el momento de redactar esta ficha, sin benchmarks publicados (el autor indica que las métricas están "en progreso") y con un roadmap que incluye para la v2.0 un pipeline RAG y herramientas de cálculo/ejecución de código. Por tanto, debe evaluarse con cautela y validarse empíricamente antes de cualquier uso en producción.
+Es relevante ahora como ejemplo de ajuste fino ligero y educativo: demuestra un flujo QLoRA sobre un modelo pequeño y su empaquetado en GGUF para inferencia local. No obstante, sus resultados de evaluación son modestos (20–40 % en una prueba propia de 20 preguntas), y el propio autor advierte que no debe usarse para matemáticas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama 3.2) |
+| Arquitectura | Transformer decoder-only (Llama 3.2) |
 | Parametros totales | 1.235.814.432 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Llama 3.2-1B-Instruct, no confirmada en la model card) |
-| Tipos de cuantizacion | FP16, Q8_0, Q4_K_M (formato GGUF) |
-| Idiomas soportados | en (inglés) |
-| Licencia | llama3.2 (Llama 3.2 Community License Agreement) |
-| Formato de pesos | GGUF (repo de 2,5 GB); también etiquetado como transformers |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M (GGUF) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Llama 3.2 Community License |
+| Formato de pesos | GGUF (repo de 4,6 GB); etiquetas de transformers y qlora |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Llama 3.2, con 1.235.814.432 parámetros, derivado del checkpoint instruct de Meta (`meta-llama/Llama-3.2-1B-Instruct`). El ajuste se realizó mediante QLoRA, técnica que congela los pesos base en cuantización de 4 bits e introduce adaptadores de bajo rango entrenables, reduciendo drásticamente los requisitos de memoria durante el entrenamiento.
+El modelo es un transformer decoder-only derivado de Llama 3.2 1B Instruct, con 1.235.814.432 parámetros. El ajuste se realizó mediante QLoRA, técnica que congela los pesos base en cuantización de baja precisión e inyecta adaptadores de bajo rango entrenables, reduciendo drásticamente los requisitos de memoria durante el entrenamiento. No se especifican en la información disponible el número de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO posteriores al ajuste supervisado.
 
-El dataset de ajuste es `sam-llm-dev/SAM-Family-Dataset`, de composición no detallada en la model card. No se especifican el número de tokens de entrenamiento, la mezcla de datos, ni si hubo etapas de RLHF o DPO adicionales. La innovación declarada no es arquitectónica sino de propósito: el ajuste busca respuestas "densas en hechos" y explicaciones didácticas concisas, orientadas a estudiantes y docentes. El autor anuncia para la v2.0 la incorporación de un pipeline RAG y una herramienta de calculadora/ejecución de Python para verificar hechos, lo que sugiere que la veracidad factual es una debilidad reconocida en la versión actual.
+El dataset empleado es `sam-llm-dev/SAM-Family-Dataset`. En el changelog se indica que la versión v1.1 utilizó un conjunto de entrenamiento deduplicado para aumentar la variedad del ajuste fino. La innovación destacable no es arquitectónica sino de despliegue: la distribución en GGUF con tres niveles de cuantización (F16, Q8_0 y Q4_K_M) permite ejecutar el modelo en hardware de gama baja. No se documentan técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con orientación a explicaciones educativas.
-- Desglose de conceptos técnicos y científicos de forma concisa (fine-tuning específico para docencia).
-- Razonamiento básico y respuesta a preguntas, limitado por el tamaño de 1B parámetros.
-- Capacidad multilingüe: únicamente inglés declarado; el resto de idiomas no está soportado oficialmente.
-- Tool calling / function calling: no disponible de forma nativa en esta versión (el autor lo sitúa en el roadmap de la v2.0).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo thinking explícito: no disponible.
-- Visión o audio: no disponible.
-- Ejecución en entornos de baja VRAM y dispositivos de borde gracias al formato GGUF.
+- Generación de texto conversacional en inglés, orientada a explicaciones educativas concisas y densas en hechos.
+- Explicación de conceptos para estudiantes y educadores (caso de uso declarado por el autor).
+- Ejecución en entornos de baja VRAM y dispositivos de borde gracias a las cuantizaciones GGUF.
+- Capacidad limitada de cálculo aritmético: el autor desaconseja explícitamente su uso para matemáticas.
+- Integración con intérprete de código Python: la evaluación del autor incluye una variante "con Python", lo que sugiere soporte de ejecución de código externa, aunque no se documenta tool calling nativo.
+- Soporte multilingüe: no disponible (solo inglés).
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Tutor educativo en local: el modelo puede desplegarse en un portátil con GPU de gama baja o incluso en CPU (Q4_K_M, ~1 GB) para ofrecer explicaciones paso a paso de conceptos de matemáticas, física o programación a estudiantes, sin depender de la nube.
-- Asistente de estudio offline en dispositivos de borde: al caber en Raspberry Pi o móviles de gama alta con llama.cpp, permite crear aplicaciones de repaso académico sin conexión, útil en entornos con conectividad limitada.
-- Generación de material didáctico breve: redacción de resúmenes, definiciones y ejemplos para fichas de asignatura, aprovechando el ajuste orientado a densidad de hechos y concisión.
-- Prototipado rápido de chatbots educativos: su reducido tamaño permite iterar con bajo coste en fases de diseño de producto antes de migrar a modelos mayores.
-- Filtro o primer nivel en pipelines RAG: puede actuar como modelo de reranking o de generación preliminar en sistemas de recuperación aumentada (especialmente en la v2.0 anunciada), reduciendo latencia y coste.
-- Demostraciones y talleres de fine-tuning: sirve como caso práctico para enseñar QLoRA y despliegue GGUF en cursos de IA, dado su tamaño manejable y su procedencia abierta.
-- Evaluación comparativa de modelos pequeños: útil como baseline en investigaciones sobre eficiencia de modelos de 1B parámetros en tareas educativas.
+- Tutor educativo local: el modelo puede generar explicaciones breves de conceptos para estudiantes en un portátil sin GPU dedicada, usando la cuantización Q4_K_M con ~1,0–1,3 GB de VRAM o RAM. Es adecuado por su ajuste específico a explicaciones didácticas y su bajo coste de despliegue.
+- Asistente conversacional en dispositivos de borde: puede integrarse en aplicaciones móviles o embebidas en inglés donde el presupuesto de memoria es inferior a 2 GB, aprovechando la versión Q8_0.
+- Prototipado rápido de pipelines de IA: sirve como modelo de prueba en fases de desarrollo antes de escalar a modelos mayores, gracias a su reducido tamaño y a la compatibilidad con endpoints y librerías estándar (transformers).
+- Generación de material de estudio: puede producir resúmenes y desgloses de conceptos para profesores que necesiten borradores rápidos en inglés, siempre con revisión humana por el riesgo de alucinación.
+- Demostraciones de ajuste fino QLoRA: el modelo y su dataset sirven como caso de estudio reproducible para quienes aprenden a adaptar modelos pequeños con recursos limitados.
+- Inferencia offline en entornos sin conectividad: al ejecutarse en GGUF con llama.cpp u Ollama, puede desplegarse en equipos aislados para consultas educativas básicas en inglés.
+- Evaluación de asistentes con intérprete de código: el autor reporta mejoras al añadir Python (de 35 % a 40 % en F16), lo que sugiere su uso en pipelines donde el cálculo se delega a herramientas externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que las métricas de evaluación inicial están "en progreso" y se actualizarán en una próxima versión.
+El autor publica una evaluación propia sobre 20 preguntas, sin especificar el conjunto de datos ni la metodología:
+
+| Variante | Sin Python | Con Python |
+|---|---|---|
+| Llama-3.2-1B-SAM-v1.0-F16.gguf | 35,0 % (7/20) | 40,0 % (8/20) |
+| Llama-3.2-1B-SAM-v1.0-Q8_0.gguf | 25,0 % (5/20) | 40,0 % (8/20) |
+| Llama-3.2-1B-SAM-v1.0-Q4_K_M.gguf | 20,0 % (4/20) | 20,0 % (4/20) |
+
+El autor reconoce que los resultados no son óptimos y que el modelo no debe usarse para matemáticas. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada (según el autor):
-  - FP16: ~2,5 GB – 3,0 GB.
-  - Q8_0: ~1,5 GB – 2,0 GB.
-  - Q4_K_M: ~1,0 GB – 1,3 GB.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 3050, RTX 4060) para FP16; para Q4 basta con GPU integradas modernas o CPU.
-- Cabe en GPU consumer: sí, en todas las GPU con ≥2 GB de VRAM; también en CPU y dispositivos de borde.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (llama-cpp-python). El repo se etiqueta también como `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints.
-- Latencia y throughput: no disponibles (sin datos publicados). Por tamaño (1B) y cuantización 4-bit, se espera una generación de decenas de tokens por segundo en GPU consumer, pero es una estimación no verificada.
+- VRAM/RAM estimada según el autor: FP16 ~2,5–3,0 GB; Q8_0 ~1,5–2,0 GB; Q4_K_M ~1,0–1,3 GB (incluye overhead de la ventana de contexto).
+- Cabe en GPU de consumo: cualquier GPU con 2 GB o más de VRAM puede ejecutar la versión Q4_K_M; una RTX 3060, RTX 4060 o superior ejecuta sin problemas las tres variantes.
+- También puede ejecutarse en CPU usando RAM del sistema si no hay offloading a GPU.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el repo está etiquetado como compatible con endpoints y con la librería transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Benchmarks publicados |
-|---|---|---|---|---|---|---|
-| Llama-3.2-1B-SAM (este) | 1,24 B | no disponible | en | Llama 3.2 | GGUF | No |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 K (según Meta) | multilingüe | Llama 3.2 | safetensors, GGUF | Sí (Meta) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K | multilingüe | Apache 2.0 | safetensors, GGUF | Sí |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8 K | en (principalmente) | Apache 2.0 | safetensors, GGUF | Sí |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Llama-3.2-1B-SAM | 1,23 B | no disponible | Llama 3.2 Community | GGUF en HF | Ajuste QLoRA educativo, solo inglés |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23 B | 128 K (modelo base oficial) | Llama 3.2 Community | HF oficial | Modelo base; contexto oficial no confirmado en esta ficha para el derivado |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K (oficial) | Apache 2.0 | HF oficial | Multilingüe, licencia permisiva |
+| Gemma-2-2B-it | 2,6 B | 8 K (oficial) | Gemma Terms | HF oficial | Algo mayor, requiere más VRAM |
 
-Nota: los datos de los modelos comparativos provienen de sus respectivas model cards públicas; el modelo de este análisis no ha publicado métricas, por lo que la comparación de rendimiento no puede establecerse con rigor.
+Nota: los datos de contexto y licencia de los modelos comparables provienen de sus fichas oficiales; no se dispone de benchmarks comparativos en la información proporcionada para este modelo.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar la calidad del ajuste frente al modelo base.
-- Riesgo elevado de alucinación: el autor reconoce implícitamente esta limitación al planificar un pipeline RAG y herramientas de verificación para la v2.0.
-- Solo inglés: no soporta castellano ni otros idiomas de forma oficial.
-- Contexto no confirmado: aunque el modelo base Llama 3.2-1B-Instruct soporta 128 K tokens, la model card no confirma que el ajuste preserve esa ventana.
-- Licencia Llama 3.2 Community License: impone restricciones de uso comercial (límite de 700 millones de usuarios mensuales para productos derivados) y obliga a incluir el aviso "Built with Llama" y a cumplir la política de uso aceptable de Meta.
-- Modelo con cero descargas y un solo "like": sin validación comunitaria, lo que desaconseja su uso en producción sin evaluación previa.
-- Tamaño de 1B parámetros: capacidad de razonamiento limitada en tareas complejas (matemáticas avanzadas, código extenso, agentes multi-paso).
-- Dataset de ajuste no documentado: se desconoce su composición, posible sesgo y procedencia, lo que dificulta auditar el comportamiento del modelo.
-- Fecha de creación futura (2026-11-22): conviene verificar la autenticidad y vigencia del repositorio antes de integrarlo.
+- Rendimiento bajo en la evaluación propia del autor (20–40 % en 20 preguntas); no es fiable para tareas que requieran precisión factual o matemática.
+- El autor advierte explícitamente que no debe usarse para matemáticas.
+- Riesgo elevado de alucinación, habitual en modelos de 1B de parámetros ajustados con datasets pequeños.
+- Solo soporta inglés; no hay capacidades multilingües documentadas.
+- Longitud de contexto no documentada; no debe asumirse el contexto nativo de Llama 3.2 sin verificación.
+- La licencia Llama 3.2 Community License impone restricciones de uso comercial y obligaciones de atribución; debe revisarse antes de producción.
+- El modelo se distribuye principalmente en GGUF; la disponibilidad de pesos safetensors para fine-tuning adicional no está confirmada.
+- Proyecto de un desarrollador individual con pocas descargas (606) y likes (2); sin garantías de mantenimiento.
+- No se documentan sesgos específicos, pero al derivar de Llama 3.2 hereda los sesgos del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sam-llm-dev/Llama-3.2-1B-SAM-GGUF
-- Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-- Dataset de ajuste: https://huggingface.co/datasets/sam-llm-dev/SAM-Family-Dataset
+- Hugging Face: https://huggingface.co/sam-llm-dev/Llama-3.2-1B-SAM-GGUF
+- Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
+- Dataset: https://huggingface.co/datasets/sam-llm-dev/SAM-Family-Dataset
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Política de uso aceptable de Meta: https://www.llama.com/llama3_2/use-policy/
 - Contacto del autor: samllmdev@gmail.com

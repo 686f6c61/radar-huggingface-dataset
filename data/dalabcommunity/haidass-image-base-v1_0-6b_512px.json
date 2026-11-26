@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "DALabCommunity/Haidass-Image-Base-v1_0.6B_512px",
+  "slug": "dalabcommunity-haidass-image-base-v1_0-6b_512px",
+  "author": "DALabCommunity",
+  "url": "https://huggingface.co/DALabCommunity/Haidass-Image-Base-v1_0.6B_512px",
+  "created_at": "2026-11-26T02:17:57.000Z",
+  "updated_at": "2026-11-26T03:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-image",
+    "flow-matching",
+    "qwen-image",
+    "ascend",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4788512938,
+  "storage_human": "4.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

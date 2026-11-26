@@ -2,83 +2,96 @@
 
 ## Resumen
 
-OrcaRouter publica una versión "uncensored" (abliterated) del modelo GLM-5.3-Flash de Z.ai, adaptada al ecosistema MLX para Apple Silicon y cuantizada a 4 bits. El modelo base es un mixture-of-experts (MoE) de 320 mil millones de parámetros totales y 18 mil millones activos, con licencia MIT, lanzado en agosto de 2026 como parte del proyecto "Ox Alpha". La versión de OrcaRouter elimina los mecanismos de rechazo directamente en los pesos, sin emplear LoRA ni jailbreak, mediante una edición de los pesos FP8 originales. El repositorio MLX contiene un archivo safetensors con 58.243.415.870 parámetros, lo que sugiere una cuantización agresiva o una selección parcial de pesos, aunque el modelo base conserva su arquitectura completa. Esta variante está pensada para tareas de red-teaming, investigación de seguridad y generación de contenido sin restricciones, manteniendo las capacidades multimodales (imagen-texto), function calling y razonamiento del original.
+GLM-5.3-Flash-Uncensored-MLX es una versión "abliterated" (sin las capas de rechazo alineadas) del modelo zai-org/GLM-5.3-Flash, convertida a formato MLX de 4 bits por el usuario orcarouter para su ejecución en Apple Silicon. Se trata de un modelo de lenguaje y visión con arquitectura Mixture-of-Experts (tag `moe`), orientado a conversación, razonamiento, function calling y red-teaming. El repositorio ocupa 780,7 GB y declara 341.119.860.542 parámetros totales en los pesos safetensors.
 
-## Especificaciones tecnicas
+El modelo base pertenece a la familia GLM-5 de Zhipu AI (zai-org) y su nombre interno en los tags es `glm5_next`, con soporte declarado de Multi-Token Prediction (MTP) y modalidad image-text-to-text. La variante publicada aquí elimina los mecanismos de rechazo mediante técnicas de abliteration, lo que la hace atractiva para investigación en seguridad, pruebas de robustez y generación de contenido sin filtros, pero también la convierte en una opción inadecuada para despliegues de producción orientados al público general.
 
-| Parametro | Valor |
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo frontera de gran escala (341B parámetros totales), una cuantización agresiva a 4 bits para hardware Apple, y una licencia MIT sobre una obra derivada de un modelo restringido. El acceso está limitado (gated) en Hugging Face y requiere aceptar condiciones, lo que condiciona su distribución y uso comercial.
+
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) transformer, multimodal (imagen-texto) |
-| Parametros totales | 58.243.415.870 (según safetensors del repo MLX; el modelo base GLM-5.3-Flash tiene 320B totales / 18B activos) |
-| Parametros activos | 18B (del modelo base) |
+| Arquitectura | Mixture-of-Experts (MoE), transformer con capacidades de visión y Multi-Token Prediction (MTP) |
+| Parámetros totales | 341.119.860.542 (341,1 B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (MLX), FP8 nativo (modelo base) |
-| Idiomas soportados | en, zh |
+| Tipos de cuantización | 4 bits (MLX), safetensors cuantizados |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (MLX) |
+| Formato de pesos | safetensors (MLX, 4 bits) |
+| Modalidad | image-text-to-text (visión-lenguaje) |
+| Modelo base | zai-org/GLM-5.3-Flash |
+| Acceso | restringido (gated) |
+| Tamaño del repositorio | 780,7 GB |
+| Descargas / likes | 233 / 58 |
+| Fecha de creación | 2026-08-31 |
+| Última actualización | 2026-10-27 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es un transformer MoE con 320B parámetros totales y 18B activos por token, desarrollado por Z.ai. Incorpora capacidades de visión-lenguaje (procesa imágenes y texto), function calling, razonamiento multi-paso y decodificación con MTP (Multi-Token Prediction). El entrenamiento original incluye datos multilingües (principalmente inglés y chino) y técnicas de alineación estándar. La versión de OrcaRouter aplica un proceso de "abliteration" que modifica los pesos FP8 del modelo para eliminar los comportamientos de rechazo (refusals) sin necesidad de adaptadores externos ni instrucciones de jailbreak. Posteriormente, el modelo se convierte a formato MLX y se cuantiza a 4 bits para su ejecución eficiente en hardware Apple Silicon. No se han publicado detalles sobre el dataset de entrenamiento específico de esta variante.
+La información disponible no detalla la configuración interna de la arquitectura más allá de las etiquetas del repositorio. Se sabe que se trata de un modelo Mixture-of-Experts (`moe`) con 341,1 mil millones de parámetros totales, capacidades de visión-lenguaje (`vision-language`, pipeline `image-text-to-text`) y soporte de Multi-Token Prediction (`mtp`), técnica que permite predecir varios tokens por paso de decodificación y que suele emplearse para acelerar la inferencia o como objetivo auxiliar de entrenamiento. El tag `glm5_next` sugiere que el modelo base pertenece a una generación posterior de la familia GLM-5.
+
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO u otras técnicas de alineación en el modelo base. La variante publicada aquí ha sido sometida a un proceso de abliteration que elimina o neutraliza las direcciones de activación asociadas al rechazo, y posteriormente cuantizada a 4 bits en formato MLX para su ejecución en Apple Silicon. No se especifican los detalles del proceso de cuantización (grupo de escala, calibración, etc.).
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo en inglés y chino.
-- Comprensión y generación multimodal: acepta imágenes como entrada y produce texto (image-text-to-text).
-- Function calling / tool calling: puede invocar herramientas externas de forma estructurada.
-- Razonamiento multi-paso y planificación de agentes.
-- Soporte de decodificación MTP (Multi-Token Prediction) para mayor velocidad de inferencia.
-- Sin restricciones de contenido: el modelo no rechaza peticiones sobre temas sensibles (por diseño, orientado a red-teaming).
-- Cuantización 4-bit optimizada para MLX, lo que permite ejecución en Apple Silicon con uso eficiente de memoria.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Razonamiento (tag `reasoning`) y resolución de problemas de varios pasos.
+- Comprensión de imágenes y texto combinados (image-text-to-text), con capacidad de responder preguntas sobre contenido visual.
+- Function calling / tool calling (tag `function-calling`), lo que permite integrarlo en pipelines de agentes.
+- Multi-Token Prediction (MTP) como mecanismo de aceleración de decodificación.
+- Comportamiento sin filtros de rechazo (abliterated/uncensored), orientado a red-teaming y pruebas de seguridad (tags `ai-red-team`, `red-teaming`).
+- Ejecución nativa en Apple Silicon mediante la librería MLX.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Red-teaming y evaluación de seguridad: el modelo permite probar sistemas de moderación y detectar vulnerabilidades en pipelines de IA generativa, al no aplicar filtros de contenido.
-- Investigación académica sobre alineación y sesgos: estudiar el comportamiento de un modelo sin restricciones ayuda a entender los límites de la alineación estándar.
-- Generación de contenido creativo sin censura: escritura de ficción, guiones o material que requiera explorar temas tabú sin bloqueos automáticos.
-- Desarrollo de agentes autónomos: gracias al function calling y al razonamiento multi-paso, puede integrarse en sistemas de automatización que requieran tomar decisiones complejas.
-- Análisis de documentos multimodales: procesar imágenes con texto (capturas, diagramas) para extraer información o generar descripciones.
-- Pruebas de robustez de modelos: comparar el comportamiento de la versión uncensored frente a la original para medir el impacto de la ablación de rechazos.
+- Red-teaming y evaluación de seguridad: el modelo, al carecer de capas de rechazo, permite generar respuestas que un modelo alineado bloquearía, lo que resulta útil para construir conjuntos de pruebas adversarias y medir la robustez de clasificadores o filtros de contenido.
+- Investigación en abliteration: sirve como caso de estudio para analizar qué capacidades se degradan y cuáles se preservan tras eliminar las direcciones de rechazo en un MoE de gran escala.
+- Asistencia conversacional local en Mac: con cuantización 4 bits y MLX, puede desplegarse en equipos Apple Silicon de gama alta para prototipos de chat privados sin conexión a servicios en la nube.
+- Análisis de documentos con imágenes: al aceptar entrada image-text-to-text, permite extraer información de capturas, diagramas o documentos escaneados y responder preguntas sobre ellos en inglés o chino.
+- Automatización de tareas con function calling: integrable en agentes que invocan APIs externas, con la salvedad de que el comportamiento sin filtros exige validación adicional de las salidas antes de ejecutar acciones.
+- Generación de contenido creativo sin restricciones temáticas: útil en entornos controlados de escritura, guionización o prototipado donde se necesita explorar ideas que los modelos alineados rechazan por defecto.
+- Evaluación comparativa de cuantizaciones: al existir en formato MLX 4 bits, permite medir la pérdida de calidad frente al modelo base en tareas de razonamiento y visión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta versión MLX uncensored en la informacion disponible. El modelo base GLM-5.3-Flash de Z.ai cuenta con métricas propias, pero no se incluyen en los materiales consultados. Se recomienda consultar el repositorio oficial de Z.ai para datos de rendimiento del modelo original.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo MLX, requiere Apple Silicon (M1, M2, M3, M4 o posteriores) con memoria unificada.
-- VRAM estimada para la versión 4-bit: aproximadamente 29 GB (58B parámetros × 0,5 bytes), aunque el tamaño real del repo (780,7 GB) sugiere que incluye múltiples archivos o precisiones adicionales.
-- Se recomienda un Mac con al menos 32 GB de RAM unificada para cargar el modelo en memoria.
-- Para inferencia, se puede usar el framework MLX (mlx-lm) o herramientas compatibles como llama.cpp con backend MLX.
-- No es adecuado para GPUs NVIDIA o AMD sin conversión previa a otros formatos (GGUF, etc.).
-- La latencia y el throughput dependen del chip; en un M2 Max se pueden esperar decenas de tokens por segundo, pero no hay datos oficiales.
+- El repositorio completo ocupa 780,7 GB, aunque la cuantización 4 bits reduce el peso efectivo de los pesos; el tamaño exacto de los archivos cuantizados no se detalla en la información proporcionada.
+- VRAM/unified memory estimada: no disponible con precisión; un modelo MoE de 341B parámetros en 4 bits requiere del orden de cientos de gigabytes de memoria unificada, lo que en la práctica limita su ejecución a equipos Apple Silicon con memoria muy alta (Mac Studio con 192 GB o superior, o configuraciones con memoria ampliada), sin que se confirme que quepa íntegramente en dichas configuraciones.
+- GPU recomendadas: el formato MLX está diseñado para Apple Silicon (series M1/M2/M3/M4 y variantes Pro, Max y Ultra); no es compatible de forma nativa con CUDA.
+- No cabe en GPU de consumo convencionales (RTX 4090 con 24 GB) ni en la mayoría de equipos Apple Silicon de gama de entrada.
+- Opciones de despliegue: MLX (librería `mlx`), con posibles adaptaciones a `mlx-lm` para texto; no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B total / 18B activo | no disponible | MIT | Hugging Face (gated) |
-| OrcaRouter GLM-5.3-Flash-Uncensored-MLX | 58B (según safetensors) | no disponible | MIT | Hugging Face (gated) |
-| Llama 3.1 405B | 405B denso | 128K | Llama 3.1 Community | Hugging Face |
-| Mixtral 8x22B | 141B total / 39B activo | 64K | Apache 2.0 | Hugging Face |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-Uncensored-MLX (este) | 341,1 B (MoE) | no disponible | texto + visión | MIT (derivada, acceso gated) | Hugging Face, gated |
+| zai-org/GLM-5.3-Flash (base) | no disponible | no disponible | texto + visión | no disponible en la información | Hugging Face |
+| Alternativas de la familia GLM-5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa es orientativa; no se dispone de datos de rendimiento directos para la versión MLX. El modelo base destaca por su licencia MIT y su arquitectura MoE eficiente, mientras que la variante uncensored añade la eliminación de rechazos.
+No se dispone de datos suficientes para comparar parámetros, contexto o rendimiento con alternativas concretas de la misma categoría. La comparación más directa es con el modelo base zai-org/GLM-5.3-Flash, del que esta versión deriva mediante abliteration y cuantización 4 bits MLX.
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado para eliminar rechazos, lo que implica un alto riesgo de generar contenido dañino, ilegal o éticamente problemático. Su uso debe limitarse a entornos controlados de investigación y red-teaming.
-- Puede presentar sesgos heredados del entrenamiento original, especialmente en idiomas distintos de inglés y chino.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar información, especialmente en dominios especializados.
-- La longitud de contexto no está documentada en la información disponible; se desconoce si mantiene la ventana del modelo base.
-- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face, a pesar de la licencia MIT.
-- La cuantización 4-bit puede degradar ligeramente la calidad de salida en comparación con el modelo FP8 original.
-- No se garantiza soporte para producción; es un conjunto de pesos de investigación.
+- Modelo abliterated: la eliminación de las capas de rechazo implica que puede generar contenido dañino, ilegal o éticamente problemático sin advertencia; no es apto para aplicaciones de cara al público sin moderación externa.
+- Sesgos: al no disponer de información sobre el dataset de entrenamiento, no es posible caracterizar los sesgos; se heredan los del modelo base, que no se documentan aquí.
+- Riesgo de alucinación: no cuantificado en la información disponible; la cuantización a 4 bits puede incrementar la degradación en tareas de razonamiento y matemáticas.
+- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano no está garantizado y probablemente sea inferior.
+- Licencia: aunque el repositorio declara MIT, se trata de una obra derivada de un modelo base cuyo acceso está restringido y cuyas condiciones de uso deben respetarse; la licencia MIT del derivado no exime de las obligaciones del modelo original.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede limitar la redistribución y el uso automatizado.
+- Compatibilidad: formato MLX exclusivo para Apple Silicon; no ejecutable en CUDA sin reconversión.
+- Longitud de contexto y parámetros activos no disponibles, lo que impide estimar costes de inferencia y planificar despliegues con precisión.
+- El tamaño del repositorio (780,7 GB) y la ausencia de benchmarks publicados dificultan la validación previa a su adopción en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-MLX
-- Blog de ExplainX sobre el lanzamiento: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026
-- Página de API de OrcaRouter para GLM 5.3 Flash: https://www.orcarouter.ai/models/z-ai/glm-5.3-flash
-- Publicación en LinkedIn: https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30
-- Publicación en X: https://x.com/OrcaRouter/status/2093612518396871075
-- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-MLX
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

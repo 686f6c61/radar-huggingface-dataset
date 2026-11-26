@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "axteam/Qwen3.5-0.8B-AWQ-4bit · Hugging Face",
-      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-4bit",
-      "snippet": "Image-Text-to-Text model with 0.9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "axteam/Qwen3.5-2B-AWQ-4bit · Hugging Face",
-      "url": "https://huggingface.co/axteam/Qwen3.5-2B-AWQ-4bit",
-      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
-      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
-    },
-    {
-      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
-      "url": "https://github.com/ABDtmx/Qwen3.5",
-      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
-    },
-    {
-      "title": "Qwen 3.5 API Complete Guide (2026): Models & Pricing",
-      "url": "https://kissapi.ai/blog/qwen-3-5-api-complete-guide-2026.html",
-      "snippet": "Complete guide to the Qwen 3.5 model family in 2026. Covers all 10+ models from 0.8B to 397B, API pricing across providers, setup with Python and Node.js, and local deployment with Ollama."
-    }
-  ]
+  "sources": []
 }

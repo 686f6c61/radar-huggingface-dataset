@@ -2,87 +2,92 @@
 
 ## Resumen
 
-GLM-OCR-8bit es una conversión a formato MLX del modelo `zai-org/GLM-OCR`, un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y extracción de texto desde imágenes. La ficha corresponde al repositorio `goodmai/GLM-OCR-8bit`, una redistribución del trabajo original de Z.ai (Zhipu AI) publicada con cuantización de 8 bits para su ejecución en hardware Apple Silicon mediante el framework MLX. El modelo cuenta con 1.107.405.824 parámetros (aproximadamente 1,1 mil millones) y un tamaño de repositorio de 1,6 GB.
+GLM-OCR-8bit es una conversión al formato MLX, en cuantización de 8 bits, del modelo `zai-org/GLM-OCR`, un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y extracción de texto a partir de imágenes. La conversión la publica el usuario `goodmai` y está pensada para ejecutarse en Apple Silicon mediante la librería `mlx-vlm` (versión 0.3.11), lo que permite inferencia local en macOS sin depender de CUDA ni de Python en el caso del runtime Basalt que acompaña a la publicación.
 
-El modelo resuelve el problema de la transcripción de texto en imágenes y documentos con soporte multilingüe: según las etiquetas del repositorio, cubre chino, inglés, francés, español, ruso, alemán, japonés y coreano. Su pipeline declarado es `image-to-text`, y se distribuye bajo licencia MIT, lo que facilita su integración tanto en proyectos comerciales como de investigación.
+El modelo cuenta con 1.107.405.824 parámetros (aproximadamente 1,1 mil millones), lo que lo sitúa en la gama compacta de modelos multimodales y lo hace viable en hardware de consumo. Está etiquetado con el pipeline `image-to-text` y el tipo de modelo `glm_ocr`, y declara soporte para ocho idiomas: chino, inglés, francés, español, ruso, alemán, japonés y coreano. La licencia es MIT, lo que facilita su uso comercial y su integración en productos.
 
-La relevancia de esta ficha concreta radica en su orientación a la inferencia local en equipos Apple Silicon: la conversión a MLX con cuantización de 8 bits permite ejecutar un modelo de OCR multimodal en un Mac sin depender de GPUs dedicadas ni de infraestructura en la nube. El repositorio incluye integración con la herramienta Basalt (macOS 27+, Swift 6.4) para su despliegue como servicio OCR.
+Su relevancia actual radica en que ofrece una alternativa ligera y de código abierto para tareas de digitalización de documentos y extracción de texto estructurado, ejecutable en portátiles con chip Apple. Al ser una conversión de un modelo upstream, hereda las capacidades del original, aunque la model card publicada es muy escueta y no detalla el proceso de entrenamiento ni resultados de evaluación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje (image-text-to-text); arquitectura interna no detallada en la información disponible |
-| Parámetros totales | 1.107.405.824 (≈1,1 mil millones) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo de visión-lenguaje, tipo `glm_ocr`, conversión MLX de `zai-org/GLM-OCR`) |
+| Parametros totales | 1.107.405.824 (≈1,1 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 8 bits (esta versión); el modelo original admite otras conversiones no detalladas |
-| Idiomas soportados | chino, inglés, francés, español, ruso, alemán, japonés, coreano |
+| Tipos de cuantizacion | 8 bits (esta versión); el repo upstream `mlx-community/GLM-OCR-8bit` sugiere que existen conversiones MLX equivalentes |
+| Idiomas soportados | zh, en, fr, es, ru, de, ja, ko |
 | Licencia | MIT |
-| Formato de pesos | safetensors (formato MLX) |
+| Formato de pesos | safetensors (formato MLX), librería `transformers`, tag `mlx` |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo más allá de su naturaleza multimodal de tipo imagen-a-texto, propia de un modelo de visión-lenguaje orientado a OCR. El modelo original es `zai-org/GLM-OCR`, desarrollado por Z.ai (Zhipu AI), y esta versión ha sido convertida a MLX mediante `mlx-vlm` versión 0.3.11. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El modelo se distribuye bajo el tipo `glm_ocr` y la pipeline `image-text-to-text`, lo que indica un modelo multimodal que combina un codificador visual con un decodificador de lenguaje para producir texto a partir de imágenes. La conversión a MLX se realizó con `mlx-vlm` 0.3.11 a partir de `zai-org/GLM-OCR`, y la cuantización aplicada es de 8 bits.
 
-La innovación técnica destacable de esta ficha es la conversión a formato MLX con cuantización de 8 bits, que reduce el peso del modelo a 1,6 GB y permite su ejecución nativa en Apple Silicon. La integración con la herramienta Basalt (v0.11.0) permite desplegar el modelo como servicio OCR mediante un comando `basalt serve`, sin necesidad de Python.
+Tampoco se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Para obtener estos detalles sería necesario consultar la model card del modelo original `zai-org/GLM-OCR`, que no forma parte de los datos proporcionados.
 
 ## Capacidades
 
 - Reconocimiento óptico de caracteres (OCR) sobre imágenes y documentos.
-- Extracción de texto en ocho idiomas: chino, inglés, francés, español, ruso, alemán, japonés y coreano.
-- Generación de texto descriptivo a partir de imágenes (pipeline `image-to-text`).
-- Inferencia local en Apple Silicon mediante MLX, sin dependencia de GPUs dedicadas.
-- Integración con la CLI y el servidor de Basalt para despliegue como servicio OCR.
-- Compatibilidad con la librería `transformers` y con `mlx-vlm` para generación por línea de comandos.
-- Soporte de tool calling, agentes o modo de razonamiento extendido: no disponible en la información proporcionada.
+- Extracción de texto a partir de imágenes (pipeline `image-to-text`).
+- Generación de descripciones de imágenes, según el ejemplo de uso de la model card (`"Describe this image."`).
+- Soporte multilingüe declarado para ocho idiomas: chino, inglés, francés, español, ruso, alemán, japonés y coreano.
+- Ejecución local en Apple Silicon mediante MLX (`mlx-vlm`), sin necesidad de GPU NVIDIA.
+- Integración con el runtime Basalt (macOS, Swift) para servir el modelo vía REST.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalización de documentos en macOS: el modelo puede procesar imágenes de documentos y extraer su texto ejecutándose localmente en un Mac con Apple Silicon gracias a la conversión MLX de 8 bits, sin enviar datos a servicios externos.
-- Extracción de texto multilingüe en aplicaciones de archivo: al cubrir ocho idiomas, resulta adecuado para digitalizar facturas, contratos o formularios en entornos con documentación en varios idiomas.
-- Servicio OCR autoalojado: mediante `basalt serve --pipeline-ocr-model goodmai/GLM-OCR-8bit --rest` se puede exponer el modelo como endpoint REST para integrarlo en pipelines internos de procesamiento documental.
-- Preprocesamiento para sistemas RAG: el texto extraído de imágenes y PDFs escaneados puede alimentar índices de recuperación, aprovechando la inferencia local para mantener la confidencialidad de los documentos.
-- Automatización de accesibilidad: transcripción de texto contenido en imágenes para lectores de pantalla o generación de descripciones textuales a partir de capturas.
-- Prototipado e investigación en visión-lenguaje: su tamaño reducido (1,1 mil millones de parámetros) y licencia MIT lo hacen adecuado para experimentación académica y ajuste fino sobre tareas específicas de OCR.
-- Digitalización de archivos históricos o material impreso en varios idiomas, ejecutando el modelo en estaciones de trabajo locales sin infraestructura de GPU.
+- Digitalización de documentos en macOS: el modelo puede procesar imágenes de páginas escaneadas y devolver el texto extraído, ejecutándose localmente en un Mac con Apple Silicon gracias a la conversión MLX y a la cuantización de 8 bits, lo que evita enviar documentos sensibles a servicios en la nube.
+- Extracción de texto en aplicaciones de escritorio: mediante el runtime Basalt y su endpoint REST (`basalt serve ... --rest`), se puede integrar el OCR en una aplicación Swift nativa sin dependencias de Python.
+- Procesamiento de facturas y recibos: al soportar varios idiomas (incluido el español), puede emplearse para extraer campos de documentos comerciales en flujos de contabilidad automatizada.
+- Accesibilidad: conversión de imágenes con texto en audio o texto legible para usuarios con discapacidad visual, aprovechando la capacidad image-to-text del modelo.
+- Archivado y búsqueda de documentos: indexación de texto extraído de imágenes para construir motores de búsqueda internos sobre archivos escaneados.
+- Prototipado e investigación en visión-lenguaje: al ser un modelo de ~1,1 B parámetros con licencia MIT, es adecuado para experimentar con pipelines multimodales en hardware de consumo y para fine-tuning ligero.
+- Digitalización multilingüe: procesamiento de documentos en chino, japonés, coreano, ruso, francés, alemán, inglés y español dentro de una misma aplicación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de una conversión MLX de 8 bits, el peso del modelo es de aproximadamente 1,6 GB; la memoria unificada necesaria en Apple Silicon será algo superior por el estado de la caché y el procesamiento de imágenes, aunque no se detalla una cifra exacta en la información disponible.
-- GPU recomendadas: hardware Apple Silicon (la model card indica macOS 27+ y Swift 6.4 para Basalt); no se especifican GPUs NVIDIA en la información disponible.
-- Compatibilidad con GPU de consumo: el modelo está pensado para ejecutarse en equipos Apple Silicon con memoria unificada; no se detalla compatibilidad con GPUs de consumo NVIDIA en la información proporcionada.
-- Opciones de despliegue: `mlx-vlm` (generación por línea de comandos), Basalt v0.11.0 (servidor con endpoint REST), y la librería `transformers`.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM/ memoria unificada estimada: con 1,1 B parámetros en 8 bits, los pesos ocupan aproximadamente 1,1 GB (el repositorio completo pesa 1,6 GB), más el overhead del codificador visual y del runtime. Se estima un uso de memoria en torno a 2-4 GB, aunque no se confirma en la documentación.
+- GPU recomendadas: el formato es MLX, por lo que el hardware objetivo son chips Apple Silicon (series M1, M2, M3, M4 y superiores). No se indica soporte nativo para GPU NVIDIA en esta conversión.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente (16 GB o más recomendable). No se dispone de datos para GPUs NVIDIA consumer en esta versión.
+- Opciones de despliegue: `mlx-vlm` (Python) mediante `python -m mlx_vlm.generate`; runtime Basalt v0.11.0 (macOS, Swift) con modo servidor REST; integración vía `transformers` según los tags del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables que permitan una comparativa rigurosa. Se indica a continuación únicamente lo que puede contrastarse a nivel de metadatos:
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa, esta conversión deriva del modelo `zai-org/GLM-OCR` y existe una conversión equivalente publicada por `mlx-community/GLM-OCR-8bit`, que comparte arquitectura, parámetros y licencia, diferenciándose únicamente en el mantenedor de la conversión.
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-OCR-8bit (esta ficha) | ≈1,1 mil millones | no disponible | MIT | safetensors (MLX, 8 bits) | Conversión MLX para Apple Silicon |
-| zai-org/GLM-OCR | no disponible | no disponible | no disponible en esta ficha | no disponible | Modelo original del que deriva esta conversión |
-| Alternativas de OCR multimodal | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
+| goodmai/GLM-OCR-8bit | ≈1,1 B | no disponible | MIT | safetensors (MLX) | Hugging Face |
+| mlx-community/GLM-OCR-8bit | ≈1,1 B (mismo origen) | no disponible | MIT | safetensors (MLX) | Hugging Face |
+| zai-org/GLM-OCR (upstream) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- La información disponible no documenta sesgos conocidos del modelo; al ser un modelo de OCR multilingüe, es previsible que el rendimiento varíe según el idioma y la calidad de la imagen, pero no se aportan datos concretos.
-- Riesgo de alucinación: no se documenta en la información proporcionada; en modelos de visión-lenguaje orientados a OCR existe riesgo de generar texto no presente en la imagen, aunque no se confirma para este modelo.
-- Limitaciones de contexto e idioma: se soportan ocho idiomas (chino, inglés, francés, español, ruso, alemán, japonés y coreano); no se detalla la longitud de contexto ni el rendimiento por idioma.
-- La licencia MIT permite uso comercial, pero esta ficha es una conversión de terceros (`goodmai`); conviene verificar la licencia y condiciones del modelo original `zai-org/GLM-OCR` antes de un despliegue en producción.
-- Esta versión está orientada a MLX y Apple Silicon; no se garantiza su funcionamiento en otras plataformas sin reconversión.
-- El repositorio tiene un número reducido de descargas (79) y ningún "like", lo que sugiere poca validación comunitaria de esta conversión concreta.
-- No se dispone de información sobre latencia, throughput ni precisión en producción.
+- La model card es muy escueta y no documenta el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación, lo que dificulta valorar su fiabilidad en producción.
+- Al ser un modelo especializado en OCR, su rendimiento fuera de tareas de extracción de texto a partir de imágenes probablemente sea limitado; no se debe asumir capacidad de razonamiento general.
+- Riesgo de alucinación: como todo modelo generativo, puede producir texto que no aparece en la imagen, especialmente con imágenes de baja calidad o documentos complejos; se recomienda validación posterior en flujos críticos.
+- Limitaciones de idioma: aunque declara ocho idiomas, no se especifica el nivel de cobertura ni la calidad por idioma.
+- La licencia MIT permite uso comercial, pero se recomienda verificar la licencia del modelo upstream `zai-org/GLM-OCR` y de los datos de entrenamiento originales.
+- Esta conversión está orientada a MLX y Apple Silicon; no es directamente utilizable en entornos CUDA sin reconversión.
+- El ejemplo de la model card para Basalt incluye una referencia a otro modelo (`goodmai/gemma-4-12B-it-qat-4bit`) como modelo principal del servidor, lo que puede confundir sobre el papel exacto del OCR en ese pipeline.
+- No se dispone de información sobre límites de contexto, resolución máxima de imagen soportada ni latencia, aspectos críticos para dimensionar un despliegue real.
 
 ## Enlaces
 
-- Repositorio de esta ficha: https://huggingface.co/goodmai/GLM-OCR-8bit
-- Modelo original: https://huggingface.co/zai-org/GLM-OCR
+- Modelo en Hugging Face: https://huggingface.co/goodmai/GLM-OCR-8bit
+- Modelo upstream original: https://huggingface.co/zai-org/GLM-OCR
 - Conversión MLX de referencia: https://huggingface.co/mlx-community/GLM-OCR-8bit
-- Herramienta Basalt (release v0.11.0): https://github.com/goodmai/basalt/releases/tag/v0.11.0
-- Demo de ejecución con Basalt: https://goodmai-run-with-basalt.static.hf.space/?model=goodmai%2FGLM-OCR-8bit&role=ocr
+- Runtime Basalt (repositorio): https://github.com/goodmai/basalt/releases/tag/v0.11.0
+- Sitio web de Basalt: https://bas-alt.vercel.app
+- Demo de ejecución: https://goodmai-run-with-basalt.static.hf.space/?model=goodmai%2FGLM-OCR-8bit&role=ocr
+- Librería mlx-vlm: no disponible enlace directo en la información proporcionada

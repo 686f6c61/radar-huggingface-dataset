@@ -2,50 +2,49 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF` contiene una coleccion de cuantizaciones estaticas en formato GGUF derivadas del modelo `llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic`. Se trata, por tanto, de un artefacto de distribucion y no de un modelo entrenado desde cero por el autor del repositorio; mradermacher actua aqui como conversor y publicador de cuantizaciones para su uso con llama.cpp y herramientas compatibles.
+Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF es una distribucion de pesos en formato GGUF del modelo llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic, publicada por mradermacher. Se trata de una variante "abliterated"/"decensored" del Qwen3.5-35B-A3B original de Alibaba Qwen, es decir, un ajuste que elimina o atenua los mecanismos de rechazo y alineacion de seguridad del modelo base, manteniendo la arquitectura y el conocimiento subyacente.
 
-La nomenclatura del nombre sugiere una base Qwen3.5 de tipo Mixture of Experts con 35.000 millones de parametros totales y 3.000 millones activos (patron "35B-A3B"), afinada para reducir el alineamiento de rechazo ("uncensored") y con un ajuste adicional de tipo "heretic". No obstante, la informacion disponible no confirma estos extremos: el unico dato de parametros verificable en la ficha de Hugging Face es de 446.571.248 parametros en safetensors, muy inferior a los 35.000 millones que sugiere el nombre, lo que impide validar la arquitectura y el tamano reales.
+El modelo conserva la estructura del Qwen3.5-35B-A3B: un transformer de tipo Mixture-of-Experts (MoE) con aproximadamente 34.660 millones de parametros totales (segun los safetensors del modelo base) y un subconjunto de parametros activos por token, tal como indica el sufijo "A3B" (del orden de 3.000 millones de parametros activos). Esta publicacion concreta ofrece unicamente cuantizaciones estaticas GGUF (de Q2_K a Q8_0, ademas de IQ4_XS) y suplementos multimodales mmproj, lo que la hace util para inferencia local con llama.cpp y herramientas compatibles.
 
-La relevancia del repositorio es practica: ofrece variantes de cuantizacion en un rango amplio de precisiones (desde Q2_K hasta F16, incluyendo IQ4_XS y Q8_0), lo que permite desplegar el modelo en hardware muy diverso. El repositorio es de creacion reciente (23 de noviembre de 2026), no registra descargas ni likes, y no declara licencia ni idiomas soportados, por lo que su evaluacion en produccion exige verificacion adicional por parte del usuario.
+Su relevancia es doble: por un lado, permite ejecutar un modelo MoE de ~35B en hardware de consumo gracias a la cuantizacion y a la baja activacion por token; por otro, su naturaleza "uncensored" lo hace interesante para investigacion sobre alineacion, red-teaming y estudios de robustez, aunque con implicaciones eticas y de seguridad importantes que se detallan mas abajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere MoE con 35B totales y 3B activos, sin confirmar) |
-| Parametros totales | 446.571.248 segun safetensors de la ficha; el nombre indica 35B (dato no confirmado) |
-| Parametros activos | no disponible (el nombre sugiere 3B activos, sin confirmar) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), derivado de Qwen3.5-35B-A3B |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | no disponible (el sufijo "A3B" sugiere ~3B activos, sin confirmar en la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo origen se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (segun model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas) y mmproj para multimodal |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura interna del modelo base en la documentacion proporcionada. El nombre del repositorio apunta a una familia Qwen3.5 con topologia Mixture of Experts (35B totales, 3B activos), pero este dato no se confirma en la model card ni en los metadatos de la ficha, y contrasta con el recuento de parametros en safetensors (446,5 millones), que corresponde a un modelo de escala muy distinta. Tampoco se detallan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineacion.
+El modelo subyacente es un transformer con arquitectura Mixture-of-Experts, heredada de Qwen3.5-35B-A3B. El sufijo "A3B" indica que, pese a tener ~34,7B parametros totales, solo se activa una fraccion reducida por token (del orden de 3B, aunque el dato exacto no se confirma en la informacion disponible). Esta configuracion MoE permite un equilibrio entre capacidad total del modelo y coste computacional por token, lo que explica que las cuantizaciones Q4 (~20-21 GB) sean viables en GPUs de consumo.
 
-Lo unico verificable es el proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe una conversion desde pesos en formato Hugging Face a GGUF con cuantizacion estatica de tensores. Las etiquetas del nombre ("ultra-uncensored", "heretic") sugieren un ajuste orientado a reducir comportamientos de rechazo, pero no se aporta ninguna descripcion tecnica del procedimiento, de los datos empleados ni de las metricas de evaluacion asociadas.
+Sobre el proceso de "heretic"/"abliterated": la model card no documenta el metodo exacto de entrenamiento ni los datos utilizados. Los tags "heretic", "uncensored", "decensored" y "abliterated" indican una modificacion de los pesos orientada a eliminar el comportamiento de rechazo (refusal) caracteristico de los modelos alineados. No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset ni uso de RLHF/DPO en esta variante. La publicacion de mradermacher es exclusivamente una conversion y cuantizacion estatica del modelo de llmfan46; no aporta entrenamiento adicional.
 
 ## Capacidades
 
-- Generacion de texto en formato GGUF, ejecutable con llama.cpp y derivados (Ollama, LM Studio, etc.).
-- Razonamiento y conversacion multi-turno: capacidad esperada por herencia de la familia Qwen, no verificada en la informacion disponible.
-- Generacion de codigo y matematicas: no confirmado en la documentacion proporcionada.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Modo "thinking", vision o audio: no disponible.
-- Comportamiento "uncensored": el nombre indica un ajuste para reducir rechazos, sin documentacion tecnica que lo respalde.
+- Generacion de texto conversacional en ingles, sin los filtros de rechazo del modelo original.
+- Razonamiento y respuesta a instrucciones heredados del Qwen3.5-35B-A3B base.
+- Capacidades multimodales: la presencia de archivos mmproj (Q8_0 y f16) indica soporte de entrada de imagen/vision en la version GGUF.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible (probable por herencia del base, sin verificar).
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: la model card declara unicamente "en"; el soporte de otros idiomas del base Qwen no se confirma para esta variante.
+- Modo "thinking" o razonamiento extendido: no disponible en la informacion.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en equipos con GPU de consumo mediante llama.cpp, siempre que se valide primero el tamano real de los pesos descargados.
-- Experimentacion con modelos sin alineamiento de rechazo: util para investigacion sobre seguridad, evaluacion de sesgos y estudios de comportamiento en entornos controlados y aislados.
-- Prototipado rapido de asistentes conversacionales: la disponibilidad de multiples niveles de cuantizacion facilita iterar entre calidad y velocidad segun los recursos del equipo.
-- Pruebas comparativas de cuantizacion: el repositorio cubre desde Q2_K hasta F16, lo que permite medir la degradacion de calidad por nivel de precision en una misma familia de pesos.
-- Integracion en pipelines de inferencia CPU/GPU mixtos: el formato GGUF con soporte de offloading parcial encaja en entornos sin aceleradores de gama alta.
-- Evaluacion de riesgos antes de produccion: dado que no hay licencia declarada ni benchmarks publicados, el modelo es adecuado como banco de pruebas interno, no como componente directo de un servicio al cliente.
+- Investigacion sobre alineacion y red-teaming: el modelo permite estudiar como responde un LLM sin mecanismos de rechazo ante prompts sensibles, util para evaluar robustez de sistemas de moderacion y para documentar comportamientos no deseados en entornos controlados.
+- Inferencia local en hardware de consumo: gracias a las cuantizaciones Q4_K_S/Q4_K_M (~20-21 GB) y a la activacion MoE reducida, puede ejecutarse en una GPU con 24 GB de VRAM (por ejemplo, RTX 4090) mediante llama.cpp, sirviendo como asistente personal sin dependencia de la nube.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o sensibles, donde los filtros del modelo base resultarian limitantes, siempre con revision humana del contenido.
+- Prototipado de pipelines multimodales: el uso de los archivos mmproj permite experimentar con entrada de imagenes en local (descripcion, analisis de capturas) integrando el modelo en herramientas compatibles con GGUF multimodal.
+- Experimentos de destilacion y evaluacion comparativa: al ser una variante "abliterated" del mismo base, permite comparar directamente el efecto de la eliminacion de rechazos sobre benchmarks de seguridad, utilidad y calidad.
+- Desarrollo de sistemas de moderacion y clasificacion: usar el modelo como generador adversarial para entrenar o validar clasificadores de contenido y filtros de seguridad en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +52,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision. Si el modelo real tuviera 35B parametros, F16 requeriria del orden de 70 GB y Q4_K_M en torno a 20-22 GB; si el recuento de safetensors (446,5 M) fuera el correcto, cabria en cualquier GPU de consumo con menos de 2 GB en F16. La discrepancia impide dar una cifra fiable.
-- GPU recomendadas: no disponible. Para un hipotetico modelo de 35B en Q4_K_M se necesitarian GPU con 24 GB o mas (RTX 3090, RTX 4090, A100 40 GB, H100); para el recuento de 446,5 M bastaria una GPU integrada o una RTX 3060.
-- Cabe en GPU de consumo: probablemente si en cuantizaciones bajas (Q2_K a Q4_K_S), condicionado al tamano real de los pesos.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF (llama-cpp-python, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~13 GB
+  - Q3_K_S: ~15,3 GB; Q3_K_M: ~16,9 GB; Q3_K_L: ~18,2 GB
+  - IQ4_XS: ~19 GB
+  - Q4_K_S: ~20 GB; Q4_K_M: ~21,3 GB
+  - Q5_K_S: ~24,1 GB; Q5_K_M: ~24,8 GB
+  - Q6_K: ~28,6 GB
+  - Q8_0: ~37 GB
+- GPU recomendadas:
+  - Consumer: RTX 4090 (24 GB) admite hasta Q5_K_M ajustado; Q4_K_M es la opcion recomendada por el autor para velocidad y calidad.
+  - Profesional/datacenter: A100 40/80 GB, H100, L40S para cuantizaciones altas (Q6_K, Q8_0) y contextos largos.
+- Cabe en GPU de consumo: si, en tarjetas de 16-24 GB con cuantizaciones Q3-Q4; en 12 GB solo con Q2_K y contexto reducido, con posible offload a CPU.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, y servidores compatibles con GGUF; el autor menciona endpoints compatibles en los tags.
+- Latencia y throughput: no disponibles en la informacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF) | 446,5 M segun safetensors; 35B segun el nombre (no confirmado) | no disponible | no disponible | GGUF | Hugging Face, 0 descargas |
-| Qwen2.5-32B-Instruct (referencia de la familia) | 32,5 B | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Amplia, con benchmarks publicos |
-| Mixtral 8x7B Instruct | 46,7 B (12,9 B activos) | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Amplia, con benchmarks publicos |
-| Llama 3.1 70B Instruct | 70,6 B | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | Amplia, con benchmarks publicos |
-
-La comparativa es orientativa: los datos del modelo de este repositorio no estan confirmados y las alternativas citadas corresponden a familias conocidas con documentacion publica. No se dispone de datos de rendimiento del modelo evaluado para contrastar con las alternativas.
+| Este modelo (Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF) | ~34,7B totales (MoE) | no disponible | apache-2.0 | GGUF | Variante abliterated, multimodal via mmproj |
+| Qwen3.5-35B-A3B (base) | ~34,7B totales (MoE) | no disponible | apache-2.0 | safetensors | Modelo original alineado, con filtros de seguridad |
+| llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic | ~34,7B totales (MoE) | no disponible | apache-2.0 | safetensors | Fuente de esta cuantizacion, sin cuantizar |
+| Otras variantes abliterated de Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion |
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica de parametros: el nombre indica 35B-A3B, pero la ficha declara 446.571.248 parametros en safetensors. Es imprescindible verificar el tamano real de los ficheros GGUF antes de planificar el despliegue.
-- Licencia no declarada: sin licencia explicita no se puede asumir permiso para uso comercial; hay que contactar con el autor o consultar el modelo origen.
-- Sin benchmarks publicados: no hay evidencia de calidad en MMLU, HumanEval, GSM8K ni otras tareas.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publicada no puede acotarse.
-- Ajuste "uncensored" y "heretic": reduce los rechazos de seguridad, lo que incrementa el riesgo de generar contenido danino, sesgado o ilegal. No apto para exposicion directa a usuarios finales sin filtros adicionales.
-- Idiomas no declarados: el soporte multilingue, en particular del castellano, no esta garantizado.
-- Contexto desconocido: no puede dimensionarse el uso en tareas de contexto largo.
-- Repositorio sin traccion (0 descargas, 0 likes) y creado en noviembre de 2026: sin validacion comunitaria ni issues que reporten comportamiento en produccion.
-- Origen derivado: cualquier problema de calidad o licencia del modelo base (`llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic`) se hereda en estas cuantizaciones.
+- Modelo "uncensored"/"abliterated": se ha eliminado o atenuado el comportamiento de rechazo, por lo que puede generar contenido ofensivo, ilegal o peligroso. No apto para exposicion directa a usuarios sin moderacion.
+- Riesgo elevado de alucinacion: la modificacion de pesos puede degradar la coherencia y la fidelidad factual respecto al base; no se han publicado evaluaciones que lo cuantifiquen.
+- Idiomas: la model card declara solo ingles; el rendimiento en castellano no esta verificado y podria ser deficiente.
+- Contexto: la longitud de contexto no se especifica en la informacion; debe consultarse en el modelo base antes de usarlo en tareas de contexto largo.
+- Licencia apache-2.0: permite uso comercial, pero el autor enlaza la licencia del Qwen3.5-35B-A3B original; conviene verificar terminos adicionales del modelo base y las implicaciones legales del contenido generado.
+- Responsabilidad legal y etica: el uso en produccion exige filtros propios, auditoria de contenido y cumplimiento normativo (por ejemplo, AI Act en la UE).
+- Cuantizaciones bajas (Q2_K, Q3_K_S): perdida notable de calidad; el autor recomienda Q4_K_S/Q4_K_M como compromiso velocidad/calidad.
+- Sin garantias de soporte: publicacion de cuantizacion de un tercero, sin mantenimiento ni benchmarks propios.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF
-- Modelo origen: https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Modelo base (fuente): https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-ultra-uncensored-heretic
+- Modelo original Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-ultra-uncensored-heretic-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-35B-A3B-ultra-uncensored-heretic-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

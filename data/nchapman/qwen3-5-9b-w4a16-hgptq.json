@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64",
-      "snippet": "Instructions to use nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 with Transformers:"
-    },
-    {
-      "title": "nchapman/Qwen3.5-9B-W4A16-GPTQ · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-GPTQ",
-      "snippet": "INT4 weight-only quantization of Qwen/Qwen3.5-9B, produced with llm-compressor. Targets NVIDIA Ampere and newer (e.g. RTX 3090 Ti, 24 GB) — served by vLLM via Marlin/pack-quantized INT4 kernels. Also runs on Blackwell/GB-class GPUs ..."
-    }
-  ]
+  "sources": []
 }

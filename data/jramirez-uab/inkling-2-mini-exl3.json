@@ -5,7 +5,7 @@
   "author": "JRamirez-UAB",
   "url": "https://huggingface.co/JRamirez-UAB/Inkling-2-Mini-EXL3",
   "created_at": "2026-11-24T04:33:40.000Z",
-  "updated_at": "2026-11-24T22:26:42.000Z",
+  "updated_at": "2026-11-25T08:16:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 5814367360,
   "parameters_human": "5.81B",

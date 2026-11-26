@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/?hl=tr",
-      "snippet": "Google'ın yapay zeka asistanı Gemini ile tanışın. Yazı yazma, planlama, beyin fırtınası yapma ve daha pek çok konuda yardım …"
-    },
-    {
-      "title": "Google'dan yapay zeka asistanınız Gemini",
-      "url": "https://gemini.google/tr/about/?hl=tr",
-      "snippet": "Google'ın yapay zeka asistanıyla yaratıcılığınıza ve üretkenliğinize güç katın. Yeni fikirler üretin, karmaşık konuları sadeleştirin ve …"
-    },
-    {
-      "title": "Cemine : Kullanımı, Yan Etkileri, Etkileşimler, Dozaj / Pillintrip",
-      "url": "https://pillintrip.com/tr/medicine/cemine",
-      "snippet": "Dec 22, 2025 · Cemine, aktif farmasötik bileşen olarak Setirizin Hidroklorür içeren bir ilaç ürünüdür. Bu madde, hidroksizinden …"
-    },
-    {
-      "title": "İstanbul Cemevi Eğitim ve Kültür Vakfı",
-      "url": "https://istanbulcemevi.org/hidrellez-cemine-davet-2026/",
-      "snippet": "Baharın gelişi, bereketin ve umudun simgesi Hıdırellez vesilesiyle bir araya geliyoruz. Canlarımızı birlik, rızalık ve muhabbet içinde …"
-    },
-    {
-      "title": "OFFICIAL WEBSITE INTERNATIONAL | CELINE",
-      "url": "https://www.celine.com/home",
-      "snippet": "Official CELINE International website. Explore and browse all the latest collections: handbags, leather goods, ready to wear, shoes, …"
-    }
-  ]
+  "sources": []
 }

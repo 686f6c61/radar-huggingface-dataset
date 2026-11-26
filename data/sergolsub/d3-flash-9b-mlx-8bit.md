@@ -2,111 +2,112 @@
 
 ## Resumen
 
-d3-flash-9B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo vllm-sr/d3-flash, publicada por el usuario sergolsub. Está pensada para ejecutar inferencia en Apple Silicon mediante la librería `mlx_lm`, sin reentrenamiento ni cambios de arquitectura respecto a los pesos originales en bf16. El repositorio contiene 8.392.695.024 parámetros en safetensors (aproximadamente 9,4 GB en total) y una licencia Apache 2.0 heredada del modelo base.
+d3-flash-9B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo vllm-sr/d3-flash, publicada por el usuario sergolsub. No se trata de un modelo de propósito general: la model card describe una API de decisión (`model.decide`) con cabezas de tarea específicas (binaria, elección múltiple, puntuación) y soporte de entrada de imagen, orientada a clasificar y enrutar casos concretos (por ejemplo, tickets de soporte) en lugar de generar texto libre. El modelo base tiene 8.392.695.024 parámetros reales según los safetensors, y esta versión ocupa 9,35 GB en disco frente a los 16,79 GB del bf16 original.
 
-El modelo no es un generador de texto convencional: su interfaz principal es `model.decide()`, que recibe un texto (y opcionalmente una imagen) junto con una definición de tareas de decisión tipadas (`noul`, `choice`, `score`). Esto lo orienta a clasificación estructurada, enrutamiento y puntuación de casos, más que a la generación libre de prosa. La model card reporta métricas de calidad tras la cuantización (accuracy 90,0 % frente a 90,0 % en bf16; PPL de calibración 1,843 frente a 1,850) y un Decision Index 0.4.1 de 54,21.
+La relevancia de esta ficha es doble. Por un lado, demuestra el flujo de cuantización MLX con auditoría de calidad: el autor publica KL por tensor, KL de salida sobre probabilidades de decisión y checksums SHA-256 de todos los ficheros, lo que permite verificar que la pérdida de precisión es mínima (KL media de 2,96e-04 frente a bf16). Por otro, ofrece un punto de comparación directo con su variante de 4 bits, que pierde 3,3 puntos de accuracy (86,7 % frente a 90,0 %).
 
-La relevancia actual reside en que permite desplegar un modelo de ~8,4 B parámetros con capacidades multimodales ligeras (procesa imágenes de 512x512 junto a texto) en hardware de consumo Apple, con un pico de RSS medido de unos 10 GB en un Mac mini M4 Pro de 48 GB. La información pública disponible es limitada: no hay datos de benchmarks estándar (MMLU, HumanEval, GSM8K) ni especificación de idiomas soportados.
+La información disponible es limitada en varios frentes: no hay datos sobre la arquitectura interna del modelo base, longitud de contexto, idiomas soportados ni resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). Todo lo que sigue se limita a lo publicado en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención lineal en las capas iniciales (tag `qwen3_5`, código personalizado); incluye cabezas de decisión (`decision_config.json`, `joint_config.json`) |
+| Arquitectura | no disponible (tag `qwen3_5` con `custom_code`; sin detalle en la model card) |
 | Parametros totales | 8.392.695.024 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (sin indicios de MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (MLX); los pesos originales del modelo base están en bf16 |
+| Tipos de cuantizacion | 8 bits (MLX); existe variante 4 bits del mismo autor |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (heredada de vllm-sr/d3-flash) |
-| Formato de pesos | safetensors en layout MLX (4 shards) + `readout.safetensors`; incluye `d3_mlx.py` como cargador |
+| Licencia | Apache 2.0 (heredada del modelo base) |
+| Formato de pesos | safetensors en layout MLX (4 shards), más `readout.safetensors` |
+| Tamano en disco | 9,35 GB (bf16 original: 16,79 GB) |
+| Biblioteca | mlx (`mlx_lm`) |
+| Modelo base | vllm-sr/d3-flash |
+| Descargas / likes | 336 / 0 |
+| Fecha de creacion | 2026-10-24 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla el proceso de entrenamiento del modelo base vllm-sr/d3-flash: no se especifican número de tokens, composición del dataset ni si hubo RLHF o DPO. La arquitectura se infiere de los metadatos: el tag `qwen3_5` y la presencia de una capa `language_model.layers.0.linear_attn.in_proj_a.weight` (identificada como la peor capa en la auditoría KL) apuntan a un transformer híbrido con atención lineal en las primeras capas. El repositorio incluye además un `preprocessor_config.json` y un `video_preprocessor_config.json`, lo que sugiere soporte de entrada visual (imagen y, potencialmente, vídeo), aunque la model card solo reporta pruebas con imágenes de 512x512.
+No hay información publicada sobre la arquitectura del modelo base más allá de los tags del repositorio: `qwen3_5` y `custom_code`, lo que sugiere una variante de la familia Qwen 3.5 con código de carga personalizado. Tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La model card del repositorio de cuantización indica explícitamente que la conversión no implica reentrenamiento ni cambios de arquitectura: solo cuantización a 8 bits para MLX.
 
-La innovación técnica principal de esta publicación es la conversión a 8 bits para MLX con auditoría de cuantización: se comparan 759 tensores contra los originales bf16 mediante KL sobre histogramas de 512 bins, con un KL medio de 2,17e-04 y un máximo de 5,49e-03. La tabla completa por tensor está en `kl_audit.json`. También se incluyen sumas SHA-256 de todos los ficheros para verificación de descargas. No hay decodificación especulativa ni otras optimizaciones de inferencia documentadas.
+Lo que sí está documentado es la infraestructura de inferencia. El repositorio incluye `d3_mlx.py` (40,7 KB), `decision_config.json` y `joint_config.json`, que implementan las cabezas de decisión sobre el modelo de lenguaje. La API expone tres tipos de tarea: `noul` (pregunta binaria sí/no), `choice` (selección entre criterios con etiqueta) y `score` (puntuación sobre una lista ordenada de criterios). Además, el modelo acepta entrada de imagen (se midió con imágenes de 512x512), aunque la detección de cajas delimitadoras («box») no está soportada.
+
+La auditoría de cuantización es el elemento técnico más destacable. Se compararon 759 tensores con KL de histograma sobre 512 bins: KL media de 2,17e-04 y máxima de 5,49e-03, concentrada en `language_model.layers.0.linear_attn.in_proj_a.weight`. La perplejidad de calibración pasa de 1,850 (bf16) a 1,843 (8 bits), es decir, no se degrada. El KL de salida sobre probabilidades de decisión es de 2,96e-04 de media (p95 1,09e-03, máximo 3,24e-03) sobre 100 filas de evaluación.
 
 ## Capacidades
 
-- Clasificación binaria de texto mediante tareas de tipo `noul` (por ejemplo, "¿el cliente quiere un reembolso?").
-- Clasificación multietiqueta mediante tareas de tipo `choice` con criterios definidos por el usuario (por ejemplo, enrutamiento a equipos de facturación o envíos).
-- Puntuación ordinal mediante tareas de tipo `score` con criterios ordenados (por ejemplo, severidad: cosmético, molesto, bloqueante).
-- Procesamiento conjunto de imagen y texto: la model card reporta latencias para entradas de imagen 512x512 más texto.
-- Interfaz programática de decisión multi-tarea: varias preguntas pueden definirse como objetos independientes en una misma llamada.
-- Detección de cajas (bounding boxes): no soportada según la model card ("Box: not supported").
-- Generación de texto libre, razonamiento, código, matemáticas, tool calling y modo thinking: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible.
+- Clasificación y decisión estructurada mediante `model.decide`, con tres modos: binario (`noul`), elección entre criterios (`choice`) y puntuación ordinal (`score`).
+- Procesamiento de texto y de imagen en la misma llamada (medido con imágenes de 512x512 acompañadas de texto).
+- Enrutamiento de casos a equipos o categorías mediante el modo `choice` con criterios etiquetados.
+- Evaluación de severidad o urgencia mediante el modo `score` con una escala de criterios ordenados.
+- Respuestas binarias con instrucciones en lenguaje natural en el modo `noul`.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, modo thinking ni generación de texto libre en la información disponible.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: usar `decide()` con tareas `choice` para enrutar cada incidencia al equipo adecuado (facturación, envíos, técnico) según criterios definidos, con latencias de ~1,3-1,4 s por consulta en M4 Pro.
-- Clasificación de severidad de incidencias: tareas `score` con criterios ordinales (cosmético, molesto, bloqueante) para priorizar colas de trabajo en sistemas de observabilidad o helpdesk.
-- Verificación de intención del cliente: tareas `noul` para detectar si un mensaje solicita reembolso, cancelación o escalado antes de pasarlo a un agente humano.
-- Moderación o filtrado de contenido con señal visual: al aceptar imagen más texto, puede clasificar publicaciones con captura adjunta (por ejemplo, capturas de errores o de pantallas de pago) en categorías predefinidas.
-- Procesamiento local en estaciones de trabajo Apple: al requerir ~10 GB de RSS en un Mac mini M4 Pro, encaja en flujos de clasificación on-device donde no se permite enviar datos a la nube.
-- Etiquetado asistido de datasets: aplicar las cabezas de decisión para preanotar grandes lotes de texto o pares imagen-texto con categorías consistentes, dado el bajo coste por inferencia (~1,3 s en hardware de consumo).
-- Enrutamiento en pipelines de agentes: usar la salida tipada (`noul`/`choice`/`score`) como señal estructurada para decidir la siguiente acción de un sistema mayor, evitando parsear texto libre.
+- Triaje de tickets de soporte: el modo `choice` permite asignar cada incidencia a un equipo (por ejemplo, `billing` o `shipping`) pasando criterios etiquetados; el ejemplo de la model card resuelve un caso de seguimiento de envío con esta llamada.
+- Detección de intención de reembolso: el modo `noul` responde a preguntas binarias como «¿el cliente quiere un reembolso?» sobre el texto del ticket, lo que permite disparar flujos automáticos sin un LLM generativo completo.
+- Priorización de incidencias técnicas: el modo `score` con criterios como `cosmetic`, `annoying` o `blocks` clasifica la severidad de errores (por ejemplo, «disk quota exceeded») para ordenar la cola de trabajo.
+- Clasificación multimodal de capturas: al aceptar imagen más texto, puede etiquetar capturas de pantalla de errores o de la interfaz junto con la descripción del usuario, útil en soporte de aplicaciones móviles.
+- Enrutamiento en bandeja de entrada compartida: con una latencia mediana de 646 ms en un Mac mini M4 Pro, es viable procesar cada mensaje entrante en tiempo casi interactivo dentro de un flujo de correo o chat.
+- Despliegue local en estaciones Apple Silicon: al ocupar 9,35 GB y un pico de RSS de 9,96 GB, cabe en un Mac con 16 GB de memoria unificada, lo que permite ejecutar el clasificador sin enviar datos de clientes a la nube.
+- Control de calidad de pipelines de etiquetado: la coincidencia exacta de accuracy entre bf16 y 8 bits (90,0 %) permite sustituir el modelo original por esta versión en entornos de anotación sin recalibrar umbrales.
 
 ## Benchmarks y rendimiento
 
-La model card reporta evaluaciones propias de calidad tras la cuantización y latencias medidas, pero no benchmarks estándar (MMLU, HumanEval, GSM8K).
+Los únicos datos publicados son la evaluación propia del autor sobre su conjunto de evaluación, no benchmarks estándar.
 
-| Metrica | 8-bit (MLX) | bf16 (referencia) |
-|---|---|---|
-| Accuracy | 90,0 % | 90,0 % |
-| Noul | 92,5 % | 92,5 % |
-| Choice | 88,0 % | 88,0 % |
-| Score | 88,0 % | 88,0 % |
-| PPL de calibración | 1,843 | 1,850 |
-| Decision Index 0.4.1 | 54,21 | no disponible |
+| Metrica | bf16 (original) | 8 bits (este repo) | 4 bits |
+|---|---|---|---|
+| Accuracy | 90,0 % | 90,0 % | 86,7 % |
+| noul | 92,5 % | 92,5 % | 85,0 % |
+| choice | 88,0 % | 88,0 % | 88,0 % |
+| score | 88,0 % | 88,0 % | 88,0 % |
+| Perplejidad de calibracion | 1,850 | 1,843 | 1,899 |
+| KL de salida vs original (media) | referencia | 2,96e-04 | 2,14e-02 |
+| Disco | 16,79 GB | 9,35 GB | 5,38 GB |
+| Latencia mediana | 634 ms | 646 ms | 604 ms |
+| Decision Index 0.4.1 | no disponible | 54,21 | no disponible |
 
-Latencias medidas en Mac mini M4 Pro 48 GB (media de 5 ejecuciones tras 3 de calentamiento):
+Mediciones de inferencia en Mac mini M4 Pro de 48 GB con MLX 8 bits: carga en 4,41 s y pico de RSS de 9,96 GB. Texto de 512 tokens (479 reales), media de 5 ejecuciones tras 3 de calentamiento: 1317 ms (binario), 1417 ms (elección múltiple), 1316 ms (puntuación). Imagen de 512x512 más texto: 2279 ms, 2290 ms y 2276 ms respectivamente, con pico de RSS de 10,06 GB. La detección de cajas delimitadoras no está soportada.
 
-| Escenario | Binary | Multichoice | Score | Peak RSS |
-|---|---|---|---|---|
-| Carga del modelo | 4,41 s | — | — | 9,96 GB |
-| Texto 512 tokens (479 tok) | 1317 ms | 1417 ms | 1316 ms | 9,98 GB |
-| Imagen 512x512 + texto | 2279 ms | 2290 ms | 2276 ms | 10,06 GB |
-
-No se han publicado resultados de benchmarks estándar en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RSS estimada: ~10 GB de pico en inferencia con 8 bits (medido: 9,96-10,06 GB en Mac mini M4 Pro).
-- Hardware validado: Apple Silicon con MLX; el autor reporta pruebas en Mac mini M4 Pro de 48 GB de memoria unificada.
-- GPU NVIDIA: no disponible; el formato MLX no es compatible con CUDA sin conversión.
-- Cabe en GPU de consumo: no aplicable directamente (MLX es específico de Apple Silicon); en Mac, requiere al menos ~10 GB de memoria unificada disponible.
-- Opciones de despliegue: `mlx_lm` con el cargador incluido `d3_mlx.py`; vLLM, llama.cpp, Ollama y TGI no están documentados para este repositorio.
-- Latencia: ~1,3-1,4 s por consulta de texto de 512 tokens; ~2,3 s con imagen 512x512 adjunta (M4 Pro).
+- VRAM o memoria unificada: el pico de RSS medido es de 9,96 GB en texto y 10,06 GB con imagen; el peso en disco es de 9,35 GB.
+- Cabe en Apple Silicon con 16 GB de memoria unificada o más; el autor lo midió en un Mac mini M4 Pro de 48 GB.
+- No hay datos de ejecución en GPU NVIDIA ni CUDA: el formato es MLX y la biblioteca declarada es `mlx`, por lo que el despliegue está orientado a Apple Silicon.
+- Opciones de despliegue: `mlx_lm` con el cargador `d3_mlx.py` incluido en el repositorio; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia medida: 634-646 ms de mediana por decisión en texto; 1316-1417 ms para 479 tokens de entrada; 2276-2290 ms con imagen de 512x512.
 - Throughput: no disponible.
+- Para comparar, la variante de 4 bits ocupa 5,38 GB y reduce la latencia mediana a 604 ms, a costa de 3,3 puntos de accuracy.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directos en la documentación proporcionada. El modelo base vllm-sr/d3-flash sería la referencia natural, pero sus especificaciones (contexto, idiomas, benchmarks) no están disponibles en esta ficha. Tampoco se documentan alternativas de clasificación estructurada con interfaz de decisión tipada.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Accuracy (eval del autor) | Licencia | Formato |
 |---|---|---|---|---|---|
-| sergolsub/d3-flash-9B-MLX-8bit | 8,39 B | no disponible | Apache 2.0 | safetensors MLX 8-bit | Objeto de esta ficha |
-| vllm-sr/d3-flash | no disponible | no disponible | Apache 2.0 | bf16 | Modelo base upstream |
-| Alternativas | no disponible | no disponible | no disponible | no disponible | No se dispone de datos |
+| sergolsub/d3-flash-9B-MLX-8bit | 8,39 B | no disponible | 90,0 % | Apache 2.0 | MLX safetensors 8 bits |
+| sergolsub/d3-flash-9B-MLX-4bit | 8,39 B | no disponible | 86,7 % | Apache 2.0 | MLX safetensors 4 bits |
+| vllm-sr/d3-flash (bf16) | 8,39 B | no disponible | 90,0 % | Apache 2.0 | safetensors bf16 |
+
+La comparación con modelos de otras familias no es posible con los datos disponibles: no se publican benchmarks estándar ni especificaciones de contexto que permitan situar este modelo frente a alternativas de clasificación o enrutamiento de propósito general. La comparación más informativa es interna, entre las tres versiones del mismo modelo: la de 8 bits iguala al bf16 en las cuatro métricas de accuracy y en perplejidad, mientras que la de 4 bits pierde 5 puntos en `noul` y 3,3 puntos en accuracy global.
 
 ## Limitaciones y advertencias
 
-- La información pública es escasa: no hay datos de benchmarks estándar, longitud de contexto, idiomas soportados ni detalles de entrenamiento, lo que dificulta evaluar su idoneidad frente a alternativas.
-- El modelo está especializado en tareas de decisión tipadas; no se documenta como generador de texto libre ni se reportan capacidades de razonamiento, código o matemáticas.
-- La detección de cajas (bounding boxes) no está soportada, lo que limita su uso en tareas de visión que requieran localización de objetos.
-- Solo se ha validado en Apple Silicon con MLX; no hay evidencia de funcionamiento en CUDA, ROCm ni CPU convencional sin conversión adicional.
-- El rendimiento medido corresponde a un único equipo (Mac mini M4 Pro 48 GB); las latencias pueden variar en otros chips de la familia M.
-- La licencia Apache 2.0 se hereda del modelo base, pero la model card indica que, en caso de conflicto, prevalece la licencia del repositorio upstream; conviene verificar el LICENSE de vllm-sr/d3-flash antes de uso comercial.
-- Riesgo de alucinación y sesgos: no documentado en la información disponible; al ser un modelo de clasificación, el riesgo se traslada a etiquetas incorrectas en lugar de texto inventado.
-- El código de carga (`d3_mlx.py`, 40 KB) es personalizado y debe revisarse antes de usarlo en producción; se incluyen sumas SHA-256 para verificar la integridad de los ficheros.
+- La model card no documenta sesgos conocidos, tasas de alucinación ni comportamiento fuera del conjunto de evaluación del autor; los porcentajes de accuracy (90,0 %) corresponden a un eval propio no publicado en detalle.
+- El modelo está diseñado para tareas de decisión con cabezas específicas, no para generación de texto libre; usarlo como LLM conversacional no está soportado por la documentación.
+- No se documentan la longitud de contexto ni los idiomas soportados, lo que impide garantizar su comportamiento en castellano o en entradas largas.
+- La detección de cajas delimitadoras («box») no está soportada, lo que limita su uso en tareas de grounding visual o extracción de regiones.
+- El despliegue está atado a MLX y Apple Silicon; no hay pesos GGUF ni compatibilidad declarada con CUDA, vLLM o llama.cpp.
+- La licencia Apache 2.0 se hereda del modelo base; ante cualquier conflicto, prevalece la licencia del repositorio upstream `vllm-sr/d3-flash`.
+- El repositorio incluye código Python personalizado (`d3_mlx.py`, 40,7 KB) que se ejecuta al cargar el modelo; conviene revisarlo y verificar los checksums SHA-256 publicados antes de usarlo en producción.
+- El modelo tiene 0 likes y 336 descargas, y fue creado en octubre de 2026; la validación externa es escasa.
+- La fecha de actualización (2026-11-22) es posterior a la de creación, pero no se detalla qué cambió entre versiones.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/d3-flash-9B-MLX-8bit
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
-- Auditoría KL por tensor: `kl_audit.json` en el repositorio
-- Configuración de decisión: `decision_config.json` en el repositorio
-- Cargador MLX: `d3_mlx.py` en el repositorio
-- Paper, blog o demo: no disponible
+- Variante de 4 bits: https://huggingface.co/sergolsub/d3-flash-9B-MLX-4bit

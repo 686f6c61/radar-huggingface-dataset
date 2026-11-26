@@ -2,91 +2,95 @@
 
 ## Resumen
 
-Axiom Effect es un modelo de estimación de efectos causales para datos tabulares desarrollado por Max Pagels. Dado un conjunto de datos tabular, un grafo causal (DAG) sobre sus columnas y un par tratamiento-resultado, el modelo estima el efecto de intervenir el tratamiento sobre el resultado, es decir, E[Y | do(T = b)] - E[Y | do(T = a)], junto con intervalos de confianza al 90% y 50% y la curva dosis-respuesta completa. No es un modelo de lenguaje: es un estimador neuronal especializado que se distribuye como pesos safetensors de 6,5 millones de parámetros en fp32 (26 MB).
+Axiom Effect es un modelo de inferencia causal para datos tabulares desarrollado por Max Pagels. Su funcion es estimar el efecto causal de un tratamiento sobre una variable de resultado a partir de una tabla: calcula el efecto medio (ATE), el efecto sobre los tratados (ATT) y sobre los controles (ATC) para tratamientos binarios, y el efecto entre dos valores, la curva dosis-respuesta y el efecto por fila (CATE) para tratamientos continuos, todo con intervalos del 90% y del 50%.
 
-La innovación principal reside en que el grafo causal determina el conjunto de ajuste: el modelo lee únicamente el tratamiento, el resultado y el conjunto de ajuste óptimo derivado del grafo, de modo que mediadores, colisionadores y otras variables que sesgarían la estimación nunca entran en el cálculo. El grafo puede provenir de conocimiento de dominio o del modelo hermano Axiom (axiom-discovery), orientado al descubrimiento causal.
+El modelo emplea la red de CausalPFN (Balazadeh et al. 2025, arXiv:2506.07918), que a su vez deriva de TabDPT, y se entrena partiendo de los pesos de CausalPFN, extendidos a tratamientos continuos y a grafos causales. Con 19,8 millones de parametros en safetensors fp32 (79 MB), es un modelo pequeno que se ejecuta en CPU sin dificultad. Funciona sin grafo causal (asumiendo que todas las covariables son pre-tratamiento) o con un DAG, y puede integrarse con Axiom, el modelo hermano de descubrimiento causal, para leer el rol de cada covariable (confusor, instrumento, mediador, colisionador) como probabilidades.
 
-La versión 0.0.1 es explícitamente experimental: la API y los pesos cambiarán en releases 0.0.x. El modelo se ha entrenado y validado exclusivamente sobre datos simulados con efecto verdadero conocido, por lo que su comportamiento en datos reales aún no está caracterizado. Es relevante ahora como aproximación práctica a la inferencia causal con ajuste automático, aunque con caveats importantes sobre identificación y cobertura de intervalos.
+Su relevancia radica en que automatiza el ajuste por confusores en escenarios tabulares, un paso habitualmente manual y propenso a errores en analisis observacional. La version 0.1.0 es experimental: la API y los pesos cambiaran en releases 0.x.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal para estimación de efectos causales sobre datos tabulares (detalles internos no disponibles) |
-| Parámetros totales | 6.532.232 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo tabular; conjunto de ajuste de hasta 18 variables y 128-1024 filas) |
-| Tipos de cuantización | no disponible; pesos publicados en fp32 |
-| Idiomas soportados | no aplica (modelo numérico/tabular) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (fp32, 26 MB) |
+| Arquitectura | Red neuronal CausalPFN (derivada de TabDPT), ajuste por confusores sobre datos tabulares |
+| Parametros totales | 19.817.735 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible; entrenado con tablas de 128 a 2048 filas |
+| Tipos de cuantizacion | no disponible; pesos en fp32 |
+| Idiomas soportados | no disponible (modelo no linguistico, opera sobre datos tabulares) |
+| Licencia | Apache 2.0 (con NOTICE y LICENSE-CausalPFN para los pesos heredados de CausalPFN) |
+| Formato de pesos | safetensors (fp32, 79 MB) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la información disponible la arquitectura interna exacta (capas, mecanismos de atención o diseño de la red). Se sabe que es un modelo neuronal implementado en PyTorch, con 6.532.232 parámetros, que lee únicamente el tratamiento, el resultado y el conjunto de ajuste óptimo derivado del grafo causal proporcionado. Las columnas se estandarizan internamente y los resultados se devuelven en las unidades originales de los datos.
+La red es la de CausalPFN, un modelo de inferencia causal amortizada que estima efectos contrafactuales directamente sobre una tabla de entrada. El entrenamiento parte de los pesos publicados de CausalPFN y los extiende para cubrir tratamientos continuos (ademas de binarios) y grafos causales: cuando se le pasa un DAG, el modelo descarta los descendientes del tratamiento y ajusta solo por el conjunto de ajuste valido; cuando recibe un resultado de `discover()` de Axiom, interpreta el rol de cada covariable como probabilidades. El modelo se entrena sobre datos simulados en los que se conoce el efecto real de cada fila, lo que permite supervisar directamente la estimacion del efecto y calibrar los intervalos.
 
-El entrenamiento se realizó sobre modelos causales simulados en los que el efecto verdadero es conocido, con tablas de entre 128 y 1024 filas y conjuntos de ajuste de hasta 18 variables. Los intervalos de confianza son los propios cuantiles del modelo, calibrados conformalmente sobre datos simulados retenidos de su distribución de entrenamiento. No se especifica el número de tokens ni la composición exacta del dataset, ni si se emplearon técnicas de RLHF o DPO (no aplicables a este tipo de modelo).
+Como innovaciones destacables, la version 0.0.2 incorporo como entrada y linea base un ajuste por minimos cuadrados del resultado, lo que mejora la precision en datos lineales y bajo solapamiento pobre, y garantiza que el efecto de un valor a si mismo sea exactamente cero. La version 0.1.0 reemplaza la firma de la API (`effect(df, treatment, outcome, graph=None)`) e incorpora el modo `debiased`, que combina las predicciones del modelo con una propension logistica en un estimador doblemente robusto (AIPW) para tratamientos binarios.
 
 ## Capacidades
 
-- Estimación del efecto causal de una intervención sobre un tratamiento continuo: contraste E[Y | do(T = b)] - E[Y | do(T = a)].
-- Cálculo de intervalos de confianza al 90% y al 50% para el contraste principal.
-- Generación de la curva dosis-respuesta completa con intervalos puntuales por valor de tratamiento.
-- Ajuste automático basado en el grafo causal: identifica y usa el conjunto de ajuste óptimo, excluyendo mediadores y colisionadores.
-- Aceptación de grafos en múltiples formatos: lista de pares (causa, efecto), matriz de adyacencia (d, d), DataFrame de pandas con nombres de columna o resultado de `discover()` de Axiom.
-- Detección de ausencia de camino dirigido entre tratamiento y resultado, devolviendo efecto exactamente 0 con intervalo de anchura cero.
-- Manejo de tablas con más columnas que el conjunto de ajuste (solo se leen las relevantes).
-- Advertencia cuando el tratamiento tiene menos de 20 valores distintos o la tabla tiene menos de 128 filas.
+- Estimacion de ATE, ATT y ATC para tratamientos binarios, con intervalos del 90% y del 50%.
+- Estimacion del efecto por fila (CATE) para tratamientos binarios y continuos.
+- Curva dosis-respuesta para tratamientos continuos, con contraste configurable (`contrast`) y valores de curva (`values`).
+- Ajuste por confusores sin grafo (asumiendo covariables pre-tratamiento) o con un DAG explicito (lista de aristas, matriz de adyacencia o DataFrame de adyacencia).
+- Integracion con el modelo de descubrimiento causal Axiom: lectura del rol de cada covariable como probabilidades y exposicion en `r.roles`.
+- Estimador doblemente robusto (AIPW) opcional para tratamientos binarios mediante `r.debiased`.
+- Manejo de tablas de hasta 84 covariables; las tablas grandes se dividen en subconjuntos disjuntos de hasta 2048 filas (1024 con mas de 34 covariables) y se combinan.
+- No soporta valores faltantes en las columnas utilizadas ni confusores no medidos.
 
 ## Casos de uso
 
-- Análisis de elasticidad de precio: estimar cómo varían las ventas al modificar el precio de un producto, usando un grafo que incluya edad del cliente o segmento como confusores. El modelo devuelve la curva dosis-respuesta en unidades monetarias directamente interpretables.
-- Evaluación de políticas de marketing: cuantificar el efecto de distintos niveles de inversión publicitaria sobre conversiones, ajustando por variables observables del grafo y obteniendo intervalos para la toma de decisiones.
-- Optimización de dosis en ensayos o procesos: estimar el efecto de dosis continuas (fármacos, fertilizantes, temperatura de proceso) sobre un resultado medido, con intervalos que reflejan la incertidumbre del modelo.
-- Análisis de sensibilidad en modelos de negocio: dado un DAG de dominio validado por expertos, cuantificar qué variables son candidatas a intervención y con qué magnitud e incertidumbre.
-- Investigación observacional con datos tabulares: obtener una primera estimación del efecto de un tratamiento continuo antes de recurrir a métodos econométricos clásicos, como cribado rápido.
-- Integración con pipelines de descubrimiento causal: encadenar Axiom (axiom-discovery) para descubrir el grafo y Axiom Effect para estimar el efecto, automatizando el flujo completo sobre tablas de 128-1024 filas.
-- Educación y prototipado en inferencia causal: experimentar con el flujo do-calculus sobre datos simulados o reales con estructura conocida, gracias a su API sencilla y pesos ligeros.
+- Analisis de campanas de descuento: estimar el efecto de aplicar un descuento frente a no aplicarlo sobre el gasto del cliente (`effect(df, "discount", "spend")`), obteniendo ATE, ATT y el efecto individual por cliente para segmentar la politica comercial.
+- Evaluacion de tratamientos medicos observacionales: con un DAG que refleje el conocimiento clinico, estimar el efecto de una intervencion sobre un biomarcador descartando mediadores y colisionadores del ajuste.
+- Analisis de politicas publicas con datos administrativos: calcular el efecto de un programa sobre la poblacion tratada (ATT) y sobre los controles (ATC) para valorar expansion o focalizacion.
+- Optimizacion de precios con tratamientos continuos: obtener la curva dosis-respuesta del precio sobre la conversion y el efecto entre dos niveles de precio concretos mediante `contrast=(a, b)`.
+- Analisis de experimentos A/B con covariables: usar `r.debiased` (AIPW) como contraste frente a la estimacion directa del modelo para comprobar la robustez del efecto estimado.
+- Integracion en pipelines de analitica causal: encadenar Axiom (`discover()`) con Axiom Effect para pasar de un grafo descubierto a una estimacion del efecto ajustada por roles, automatizando el flujo completo sobre tablas nuevas.
+- Analisis de sensibilidad y exploracion: comparar estimaciones con y sin grafo, o con distintos grafos candidatos, para identificar que covariables cambian la conclusion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica únicamente que el modelo se ha entrenado y validado sobre datos simulados, sin evaluación sobre datos reales, y que en escenarios de solapamiento pobre o datos puramente lineales los estimadores clásicos pueden ser más precisos.
+El autor indica que el modelo se entrena con datos simulados y se evalua con datos semisinteticos (IHDP, ACIC 2016) con covariables reales, pero no se han publicado cifras de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 (26 MB de pesos más overhead de PyTorch y los datos tabulares en memoria).
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo es tan pequeño que la inferencia puede ejecutarse en CPU con latencia aceptable.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: instalación vía pip desde el repositorio de Hugging Face (`pip install "git+https://huggingface.co/maxpagels/axiom-effect"`), uso directo con PyTorch. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput: no disponibles en la información proporcionada; dado el tamaño (6,5M parámetros) y la naturaleza tabular, se espera baja latencia, pero no se aportan cifras.
+- VRAM estimada: inferior a 1 GB; los pesos ocupan 79 MB en fp32 y el modelo tiene 19,8 M de parametros.
+- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es mas que suficiente, y la inferencia en CPU es viable.
+- Cabe en cualquier GPU consumer y en entornos sin GPU.
+- Opciones de despliegue: paquete Python propio (`pip install "git+https://huggingface.co/maxpagels/axiom-effect"`), con integracion opcional del paquete `axiom` para descubrimiento causal. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto / filas | Licencia | Disponibilidad |
+| Modelo | Parametros | Enfoque | Tratamientos | Grafo causal | Licencia |
 |---|---|---|---|---|---|
-| Axiom Effect | Estimador de efectos causales neuronales | 6,5M | 128-1024 filas, 18 variables de ajuste | Apache 2.0 | Hugging Face |
-| Axiom (axiom-discovery) | Descubrimiento causal | no disponible | no disponible | no disponible | Hugging Face (modelo hermano) |
-| Estimadores clásicos (p. ej. regresión ajustada, IPW) | Estadística causal | no aplica | sin límite práctico | según implementación | Amplia |
+| Axiom Effect | 19,8 M | Inferencia causal tabular (CausalPFN) | Binarios y continuos | Opcional (DAG o descubierto) | Apache 2.0 |
+| CausalPFN (vdblm) | no disponible | Inferencia causal tabular (base de Axiom Effect) | no disponible en la informacion | no disponible en la informacion | Apache 2.0 (segun la model card de Axiom Effect) |
+| Axiom (maxpagels/axiom-discovery) | no disponible | Descubrimiento causal (modelo hermano) | no aplica | Produce el grafo | no disponible en la informacion |
 
-No se dispone de información sobre otros modelos neuronales comparables de estimación de efectos causales tabulares en la documentación proporcionada. La comparación con estimadores clásicos se limita a la nota de la model card de que estos pueden ser más precisos en datos lineales o con solapamiento pobre.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El grafo se toma como verdadero: un confusor omitido o una arista invertida sesga la respuesta y el intervalo no se ensancha por ello.
-- No admite confusores ocultos: no soporta front-door, variables instrumentales ni otras estrategias de identificación más allá del ajuste, y nunca declara "no identificable".
-- Solo tratamientos continuos con al menos 20 valores distintos; tratamientos binarios y categóricos no están soportados todavía.
-- Solo efectos promedio; no calcula efectos por fila ni condicionales.
-- Entrenado y validado exclusivamente con datos simulados: no hay evaluación sobre datos reales, y la cobertura de los intervalos en datos reales es desconocida.
-- En escenarios de solapamiento pobre (el conjunto de ajuste casi determina el tratamiento) y en datos puramente lineales, los estimadores clásicos pueden ser más precisos.
-- Los valores de tratamiento fuera de los cuantiles 2-98% se rechazan salvo que se use `extrapolate=True`, ya que no hay soporte en los datos.
-- No admite valores faltantes en tratamiento, resultado ni conjunto de ajuste.
-- Con más de 1024 filas, `effect` promedia 8 subconjuntos aleatorios de 1024 filas, con intervalos correspondientes a 1024 filas (más anchos de lo que correspondería).
-- Los intervalos de la curva dosis-respuesta son puntuales, no simultáneos.
-- Versión 0.0.1 experimental: la API y los pesos cambiarán en releases 0.0.x.
-- Licencia Apache 2.0 permite uso comercial, pero la falta de validación en datos reales desaconseja su uso en producción sin verificación previa.
+- No maneja confusores ocultos: la identificacion es solo por ajuste, y se asume que no existen causas comunes no medidas del tratamiento y el resultado.
+- Un DAG se toma como verdadero; un grafo descubierto se lee como probabilidades, pero puede estar equivocado de formas que las probabilidades no reflejan.
+- Las tablas grandes y anchas se dividen en subconjuntos de filas y el modelo es mas debil en ellas que en tablas pequenas.
+- `r.debiased` no es de forma fiable mejor que `r.ate`; se incluye para comparar.
+- Entrenado con datos simulados y evaluado con datos semisinteticos (IHDP, ACIC 2016); no hay evaluacion sobre efectos reales.
+- Los intervalos son los cuantiles propios del modelo, calibrados sobre sus datos simulados; se desconoce su cobertura en otros dominios.
+- No soporta valores faltantes en las columnas utilizadas.
+- Los tratamientos continuos deben tener al menos 10 valores distintos y situarse dentro de sus cuantiles 2-98%.
+- Version 0.1.0 experimental: la API y los pesos cambiaran en releases 0.x, con cambios incompatibles ya documentados entre versiones.
+- Los pesos heredados de CausalPFN estan sujetos a los terminos Apache 2.0 y a los archivos NOTICE y LICENSE-CausalPFN del repositorio.
+- No se documentan sesgos especificos ni comportamiento multilingue (el modelo no procesa lenguaje).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/maxpagels/axiom-effect
-- Modelo hermano Axiom (descubrimiento causal): https://huggingface.co/maxpagels/axiom-discovery
-- Página del proyecto: https://maxpagels.com/axiom
+- Modelo hermano de descubrimiento causal: https://huggingface.co/maxpagels/axiom-discovery
+- Modelo base CausalPFN: https://huggingface.co/vdblm/causalpfn
+- Paper de CausalPFN (Balazadeh et al. 2025): https://arxiv.org/abs/2506.07918
+- Pagina del proyecto: https://maxpagels.com/axiom
+- Instalacion del paquete: `pip install "git+https://huggingface.co/maxpagels/axiom-effect"`

@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "DaveyD347/malicious-url-classifier",
+  "slug": "daveyd347-malicious-url-classifier",
+  "author": "DaveyD347",
+  "url": "https://huggingface.co/DaveyD347/malicious-url-classifier",
+  "created_at": "2026-11-26T00:20:46.000Z",
+  "updated_at": "2026-11-26T00:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "tfidf-logreg+urlflags",
+    "cybersecurity",
+    "security",
+    "phishing",
+    "malware",
+    "malicious-url",
+    "url-classification",
+    "explainable-ai",
+    "tfidf",
+    "logistic-regression",
+    "skops",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8912448,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Synthetic defanged URLs (template-disjoint test split)",
+      "metric": null,
+      "value": 0.962
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Synthetic defanged URLs (template-disjoint test split)",
+      "metric": "Macro F1",
+      "value": 0.962
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Synthetic defanged URLs (template-disjoint test split)",
+      "metric": null,
+      "value": 0.973
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Synthetic defanged URLs (template-disjoint test split)",
+      "metric": null,
+      "value": 0.949
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Synthetic defanged URLs (template-disjoint test split)",
+      "metric": null,
+      "value": 0.989
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Hand-written challenge set (real benign URLs, real-brand impersonation)",
+      "metric": null,
+      "value": 0.983
+    },
+    {
+      "task": "Malicious URL detection",
+      "dataset": "Hand-written challenge set (real benign URLs, real-brand impersonation)",
+      "metric": "Macro F1",
+      "value": 0.983
+    }
+  ],
+  "sources": []
+}

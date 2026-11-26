@@ -2,100 +2,96 @@
 
 ## Resumen
 
-G4-Hearthveil-12B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo base G4-Hearthveil-12B, publicada por el usuario mradermacher. El modelo original, alojado en el repositorio OutisR/G4-Hearthveil-12B, cuenta con 11.907.350.576 parámetros (aproximadamente 12B) según los datos de safetensors. Esta publicación no contiene los pesos originales, sino conversiones cuantizadas pensadas para su uso con llama.cpp y herramientas compatibles con GGUF.
+G4-Hearthveil-12B-i1-GGUF es la version cuantizada con imatrix del modelo G4-Hearthveil-12B, un modelo de lenguaje de aproximadamente 11.900 millones de parametros orientado a roleplay, escritura creativa y narracion (storywriting). El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF de modelos abiertos, mientras que el modelo base original es de OutisR. La ficha que nos ocupa corresponde unicamente al repositorio de pesos cuantizados en formato GGUF, no al modelo original.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de 12B en hardware de consumo mediante cuantizaciones que van desde IQ1_S hasta Q6_K, cubriendo un amplio espectro de compromisos entre calidad y uso de memoria. El repositorio ocupa 90,9 GB en total, lo que refleja la suma de todas las variantes de cuantización publicadas. La información disponible sobre el modelo base (arquitectura, datos de entrenamiento, licencia, idiomas) es muy limitada: la model card se reduce a metadatos de la herramienta de cuantización y no aporta detalles técnicos del modelo original.
+El modelo se distribuye bajo licencia Apache 2.0 y esta pensado para ejecutarse en entornos de inferencia locales mediante llama.cpp y herramientas compatibles con GGUF (Ollama, LM Studio, etc.). El repositorio incluye una bateria amplia de cuantizaciones, desde IQ1_S (3,1 GB) hasta Q6_K (9,9 GB), lo que permite desplegarlo desde equipos con poca VRAM hasta configuraciones mas holgadas.
 
-El autor de la cuantización, mradermacher, es conocido en el ecosistema por publicar versiones GGUF de modelos open source con cuantizaciones ponderadas mediante imatrix, una técnica que mejora la calidad de las cuantizaciones de baja precisión al calibrar los pesos según su importancia. Esta ficha documenta exclusivamente lo que puede verificarse a partir de los metadatos y la model card proporcionados.
+La relevancia de esta ficha radica en que el modelo base esta etiquetado como `gemma4`, lo que sugiere que deriva de la familia Gemma 4, y ademas la model card indica que es un modelo de vision (los ficheros `mmproj` estarian en el repositorio estatico). Sin embargo, no se dispone de informacion detallada sobre arquitectura, contexto o datos de entrenamiento en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base G4-Hearthveil-12B, detalles no publicados en la información disponible) |
-| Parametros totales | 11.907.350.576 (aprox. 12B, dato real de safetensors) |
+| Arquitectura | no disponible (etiquetado como `gemma4`; probablemente transformer derivado de Gemma 4) |
+| Parametros totales | 11.907.350.576 (aprox. 11,9 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones del modelo base en safetensors) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | en, ru, multilingual (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (mas fichero imatrix para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base G4-Hearthveil-12B en los datos proporcionados. El recuento de parámetros (11.907.350.576) es coherente con un transformer denso de aproximadamente 12B, pero no se confirma el tipo de arquitectura, el número de capas, la dimensión de los embeddings ni el mecanismo de atención. Tampoco se documentan los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se proporciona informacion detallada sobre la arquitectura del modelo base en la documentacion disponible. La etiqueta `gemma4` sugiere que OutisR/G4-Hearthveil-12B deriva de un modelo de la familia Gemma 4, pero no se confirma si se trata de un fine-tuning completo, un merge o una adaptacion con LoRA. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras variantes de alineamiento.
 
-La única información técnica verificable se refiere al proceso de cuantización: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala una conversión desde pesos en formato Hugging Face a GGUF mediante la herramienta de cuantización de llama.cpp. Las cuantizaciones son ponderadas mediante imatrix (matriz de importancia), una técnica que estima la relevancia de cada tensor a partir de un corpus de calibración y ajusta la cuantización para preservar mejor la calidad en precisiones bajas como IQ1, IQ2 e IQ3. El tag `nicoboss` sugiere el uso de una herramienta o flujo de trabajo asociado a ese identificador, aunque no se detalla su función.
+La model card del repositorio cuantizado menciona que se trata de un modelo de vision y que los ficheros `mmproj` (proyector multimodal) se encontrarian en el repositorio estatico hermano (mradermacher/G4-Hearthveil-12B-GGUF), no en este repositorio de cuantizaciones i1. La cuantizacion se ha realizado con el metodo imatrix (importance matrix), que ajusta la perdida de calidad de las cuantizaciones de baja precision usando estadisticas de activacion.
 
 ## Capacidades
 
-- Generación de texto: el modelo base es un modelo de lenguaje de 12B parámetros, por lo que se espera capacidad de generación de texto general, aunque no se documentan capacidades específicas.
-- Razonamiento y matemáticas: no disponible en la información proporcionada.
-- Generación de código: no disponible en la información proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (idiomas no especificados).
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Ejecución local: las cuantizaciones GGUF permiten inferencia en CPU y GPU mediante llama.cpp y herramientas compatibles, incluyendo opciones de muy baja precisión (IQ1_S, IQ2_XXS) para hardware con memoria limitada.
+- Generacion de texto orientada a roleplay y escritura creativa, segun las etiquetas del repositorio.
+- Narracion y storywriting, con enfasis en continuidad de personajes y estilo.
+- Capacidad multilingue: la model card declara ingles, ruso y soporte multilingue generico.
+- Posible soporte de vision (la model card indica "This is a vision model"), aunque los ficheros mmproj no estan en este repositorio.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
+- No se documenta modo "thinking" explicito ni capacidades de audio.
 
 ## Casos de uso
 
-- Inferencia local en hardware de consumo: las cuantizaciones Q4_K_M o Q4_K_S permiten ejecutar un modelo de 12B en GPUs con 8-12 GB de VRAM o en CPU con suficiente RAM, adecuado para prototipado y uso personal sin depender de servicios en la nube.
-- Despliegue en equipos con memoria muy limitada: las variantes IQ1_S, IQ2_XXS e IQ2_XS reducen el peso del modelo a rangos que pueden caber en sistemas con 4-6 GB de memoria, a costa de una pérdida de calidad que debe evaluarse empíricamente.
-- Experimentación con cuantizaciones: el repositorio ofrece 24 variantes de cuantización, lo que permite comparar el impacto de la precisión en la calidad de salida sobre el mismo modelo base, útil para investigación en eficiencia de inferencia.
-- Integración en aplicaciones de escritorio: mediante llama.cpp u Ollama, el modelo puede integrarse en aplicaciones locales que requieran generación de texto sin conexión, con la ventaja de privacidad que supone no enviar datos a un servidor.
-- Evaluación de modelos desconocidos: dado que el modelo base carece de documentación pública, estas cuantizaciones sirven para que investigadores evalúen empíricamente el comportamiento del modelo G4-Hearthveil-12B en tareas concretas antes de decidir si invertir en los pesos originales.
-- Servicio de inferencia de bajo coste: en un servidor con GPU modesta, una cuantización Q5_K_M o Q6_K puede ofrecer un equilibrio razonable entre calidad y throughput para cargas de trabajo ligeras, aunque la falta de datos de benchmarks impide garantizar el rendimiento.
+- Roleplay conversacional local: el modelo puede gestionar dialogos multi-turno manteniendo el personaje gracias a su naturaleza afinada para roleplay; se desplegaria con llama.cpp u Ollama en un equipo con GPU consumer.
+- Escritura creativa asistida: generacion de relatos, dialogos y descripciones con estilo consistente, adecuado para autores que quieran un asistente local sin dependencia de la nube.
+- Prototipado de narrativa interactiva: integracion en motores de ficcion interactiva o videojuegos narrativos donde se necesita generar respuestas de personajes en tiempo real.
+- Generacion de contenido multilingue en ingles y ruso: util para proyectos editoriales o de localizacion que requieran ambos idiomas, con la cautela de que el castellano no esta declarado explicitamente.
+- Experimentacion e investigacion en cuantizacion: el repositorio incluye el fichero imatrix y multiples niveles de cuantizacion, lo que permite estudiar el impacto de la precision en la calidad de salida.
+- Despliegue en hardware modesto: las variantes IQ2 e IQ3 (3-6 GB) permiten ejecutar el modelo en GPU con 6-8 GB de VRAM para pruebas de concepto y demos.
+- Fine-tuning posterior sobre GGUF: aunque el formato GGUF no es el ideal para reentrenar, la existencia del modelo base en safetensors (OutisR/G4-Hearthveil-12B) permite adaptaciones con LoRA sobre el modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según el tamaño de cada cuantización para 12B parámetros):
-  - IQ1_S / IQ1_M: en torno a 3-4 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: en torno a 4-5 GB.
-  - Q2_K / Q2_K_S / IQ3_XXS / IQ3_XS: en torno a 5-6 GB.
-  - IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: en torno a 6-7 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / IQ4_XS / small-IQ4_NL: en torno a 7-8 GB.
-  - Q4_K_M: en torno a 8 GB.
-  - Q5_K_S / Q5_K_M: en torno a 9-10 GB.
-  - Q6_K: en torno a 11-12 GB.
-  - Nota: estas cifras son estimaciones basadas en el tamaño típico de cuantizaciones para modelos de 12B; no se han verificado con los archivos reales.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 para las cuantizaciones medias y altas; A100 o H100 para las variantes Q6_K y para despliegues con mayor concurrencia.
-- Cabe en GPU de consumo: sí, las cuantizaciones Q4_K_M e inferiores caben en GPUs de 8-12 GB; las variantes IQ1 e IQ2 caben en GPUs de 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para servidores de alto rendimiento, vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que habría que usar los pesos originales en safetensors.
-- Latencia y throughput: no disponibles; dependen del hardware, de la cuantización y de la longitud de contexto, que no se ha documentado.
+- VRAM estimada para inferencia (aproximada, segun tamano de fichero GGUF mas overhead de contexto):
+  - IQ1_S (3,1 GB): ~4 GB de VRAM.
+  - IQ2_M (4,5 GB): ~5,5 GB de VRAM.
+  - IQ3_M (5,8 GB): ~7 GB de VRAM.
+  - Q4_K_M (7,5 GB): ~9 GB de VRAM.
+  - Q5_K_M (8,6 GB): ~10 GB de VRAM.
+  - Q6_K (9,9 GB): ~11,5 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones medias y altas; A100/H100 para despliegues con contexto largo o batched.
+- Cabe en GPU consumer: si, desde IQ1/IQ2 en GPUs de 6-8 GB; Q4_K_M y superiores requieren 10-12 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, KoboldCpp y cualquier runtime compatible con GGUF. Para vision seria necesario cargar el mmproj del repositorio estatico.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre el modelo base G4-Hearthveil-12B (arquitectura, contexto, rendimiento, licencia) para establecer una comparativa rigurosa con alternativas. A continuación se indican modelos de tamaño comparable en el ecosistema GGUF, pero los datos del modelo de esta ficha no permiten una comparación directa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| G4-Hearthveil-12B-i1-GGUF | ~11,9 B | no disponible | Apache 2.0 | GGUF | Cuantizacion imatrix de un fine-tuning orientado a roleplay sobre base tipo Gemma 4 |
+| OutisR/G4-Hearthveil-12B (base) | ~11,9 B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar; permite fine-tuning y conversion |
+| mradermacher/G4-Hearthveil-12B-GGUF (estatico) | ~11,9 B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas; incluye ficheros mmproj para vision |
 
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
-|---|---|---|---|---|
-| G4-Hearthveil-12B (esta ficha) | ~12B | no disponible | no disponible | sí (i1, imatrix) |
-| Mistral-Nemo-12B | 12B | 128K | Apache 2.0 | sí |
-| Gemma-2-9B | 9B | 8K | Gemma license | sí |
-| Qwen2.5-14B | 14B | 32K | Apache 2.0 | sí |
-
-La comparación de rendimiento, contexto y licencia no es posible para el modelo de esta ficha por falta de datos publicados.
+No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Falta total de documentación del modelo base: no se especifican arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para uso comercial o producción.
-- Licencia no disponible: no puede confirmarse si el uso comercial está permitido; debe consultarse el repositorio original OutisR/G4-Hearthveil-12B antes de cualquier despliegue.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin benchmarks ni evaluación publicada no puede cuantificarse su fiabilidad.
-- Degradación por cuantización: las variantes IQ1 e IQ2, aunque ponderadas con imatrix, pueden perder calidad de forma notable en tareas de razonamiento y generación de código; se recomienda Q4_K_M o superior para uso serio.
-- Idiomas no documentados: no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas distintos del inglés.
-- Contexto desconocido: sin la longitud de contexto documentada, no se pueden planificar casos de uso que requieran ventanas largas.
-- Repositorio sin descargas ni likes en el momento de la consulta: indica ausencia de validación por parte de la comunidad; conviene tratar los pesos con cautela y verificar su integridad.
-- Tamaño del repo (90,9 GB): la descarga completa de todas las cuantizaciones es costosa en almacenamiento; se recomienda descargar solo la variante necesaria.
+- No se han publicado evaluaciones de sesgo, toxicidad o alucinacion para este modelo en la informacion disponible.
+- El modelo esta afinado para roleplay y ficcion, por lo que puede no ser fiable en tareas factuales, tecnicas o de razonamiento estricto.
+- Los idiomas declarados son ingles, ruso y multilingue generico; no se garantiza un rendimiento solido en castellano.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; la propia model card las describe como "for the desperate" o "mostly desperate".
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base original y de la familia Gemma 4 de la que deriva, ya que podrian imponer restricciones adicionales de uso.
+- La funcionalidad de vision requiere descargar los ficheros mmproj desde el repositorio estatico; este repositorio por si solo no la habilita.
+- No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines automatizados que dependan de function calling.
+- El repositorio ocupa 140,4 GB en total por incluir todas las cuantizaciones; conviene descargar solo el fichero GGUF necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/G4-Hearthveil-12B-i1-GGUF
-- Modelo base original: https://huggingface.co/OutisR/G4-Hearthveil-12B
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama (runtime compatible con GGUF): https://ollama.com
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-Hearthveil-12B-i1-GGUF
+- Modelo base: https://huggingface.co/OutisR/G4-Hearthveil-12B
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/G4-Hearthveil-12B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#G4-Hearthveil-12B-i1-GGUF
+- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

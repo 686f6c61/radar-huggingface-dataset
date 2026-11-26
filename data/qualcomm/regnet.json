@@ -41,29 +41,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "RegNet - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/regnet",
-      "snippet": "RegNet Imagenet classifier and general purpose backbone. RegNet is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
     },
     {
-      "title": "qualcomm/RegNet · Hugging Face",
-      "url": "https://huggingface.co/qualcomm/RegNet",
-      "snippet": "RegNet: Optimized for Qualcomm Devices RegNet is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases. This is based on the implementation of RegNet found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub ..."
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …Read more"
     },
     {
-      "title": "All Models - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/en-US/models",
-      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+      "title": "fr - Qualcomm",
+      "url": "https://www.qualcomm.com/fr",
+      "snippet": "Qualcomm relentlessly innovates to deliver intelligent computing everywhere, helping the world tackle some of its most important …Read more"
     },
     {
-      "title": "ai-hub-models/qai_hub_models/models/regnet/README.md at main · qualcomm ...",
-      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/regnet/README.md",
-      "snippet": "This is based on the implementation of RegNet found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …Read more"
     },
     {
-      "title": "qualcomm-ai-hub-models/qai_hub_models/models/regnet/README.md at main ...",
-      "url": "https://github.com/A-Kuo/qualcomm-ai-hub-models/blob/main/qai_hub_models/models/regnet/README.md",
-      "snippet": "This is based on the implementation of RegNet found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Sep 27, 2026 · Qualcomm Earnings Release Available on Company's Investor Relations Website View All Press Releases"
     }
   ]
 }

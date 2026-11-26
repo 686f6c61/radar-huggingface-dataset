@@ -2,106 +2,92 @@
 
 ## Resumen
 
-10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid_VBVR_FUSED es un modelo de difusion para generacion de video (text-to-video, image-to-video y audio-video) publicado por el usuario ibyteohdear en Hugging Face. Se trata de un modelo derivado de MiniMax-H3, presentado como un checkpoint "TURBO" de 8 pasos de muestreo con una LoRA (`H3_VBVR_Pro-V2`) fusionada directamente en los pesos con fuerza 1, de modo que no requiere cargar adaptadores en tiempo de ejecucion. El repositorio contiene aproximadamente 20.111 millones de parametros en formato safetensors y ocupa 40,2 GB.
+10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid_VBVR_FUSED es un modelo de difusión para generación de vídeo (texto-a-vídeo, imagen-a-vídeo y vídeo con audio) publicado por el usuario ibyteohdear en Hugging Face. Se trata de un fine-tune del modelo base multimodalart/MiniMax-H3-Pruned, del que hereda la arquitectura de difusión MiniMax-H3, y está empaquetado para su uso con la librería `diffusers` mediante pipelines modulares. El repositorio ocupa 40,2 GB e incluye pesos en formato safetensors con 20.111.462.920 parámetros totales.
 
-El modelo resuelve la generacion de video condicionada por texto, imagen y audio, con un pipeline modular implementado sobre `diffusers`. Su relevancia practica radica en la reduccion del numero de pasos de inferencia (8 pasos TURBO) y en la simplificacion del despliegue al llevar la LoRA ya integrada, evitando la composicion manual de adaptadores. El autor lo etiqueta explicitamente como contenido "not-for-all-audiences", lo que restringe su uso a contextos con control de acceso.
+El modelo se distribuye con la etiqueta "not-for-all-audiences" y el prefijo "10Eros", lo que sitúa su uso previsto en la generación de contenido audiovisual para adultos. Incorpora en su nombre las etiquetas "8stepTURBO" (destilación para reducir el número de pasos de denoising) y "hybrid_VBVR_FUSED", que sugieren una fusión de componentes de audio y vídeo, aunque el autor no documenta estos términos en la model card. La información técnica publicada es muy escasa: no hay descripción de arquitectura, datos de entrenamiento, benchmarks ni licencia.
 
-La informacion disponible es escasa en cuanto a licencia, idiomas, datos de entrenamiento y benchmarks. Esta ficha se limita a los datos verificables del repositorio, la model card y los metadatos de Hugging Face, indicando explicitamente "no disponible" en los campos que no constan.
+La relevancia del modelo es limitada y fundamentalmente experimental: se trata de un fine-tune de la comunidad sin documentación rigurosa, orientado a un nicho concreto y con un pipeline de inferencia que depende de código personalizado (`custom_code`) y de un LLM auxiliar (Qwen3-VL) para la codificación de texto. Para desarrolladores e investigadores, su interés principal es como ejemplo de integración de pipelines modulares de `diffusers` con cuantización Int8 y offloading de grupos, no como modelo de referencia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion para video (MiniMax-H3), pipeline modular en diffusers |
-| Parametros totales | 20.111.462.920 (~20,1 mil millones) |
-| Parametros activos | no disponible (no consta como MoE) |
-| Longitud de contexto | no disponible (modelo de video, no LLM; sin ventana de contexto textual declarada) |
-| Tipos de cuantizacion | no disponible como listado oficial; el codigo de ejemplo usa `Int8WeightOnlyConfig` de torchao y pesos en bfloat16 |
+| Arquitectura | Difusión (MiniMax-H3), transformer multimodal vídeo+audio; detalles no disponibles |
+| Parametros totales | 20.111.462.920 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Int8 weight-only (torchao `Int8WeightOnlyConfig`); bnb nf4 en el LLM de texto auxiliar; otras no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (repo de 40,2 GB), libreria diffusers |
-| Tamano del repositorio | 40,2 GB |
-| Modelo base | ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid |
-| LoRA fusionada | ibyteohdear/h3Lora/H3_VBVR_Pro-V2.safetensors, strength 1 |
-| Tensores fusionados | 312 |
-| Fecha de fusion | 2026-11-22 |
-| Pipeline | image-to-video |
+| Formato de pesos | safetensors (repo de 40,2 GB, carpeta `diffusers/`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer de difusion del linaje MiniMax-H3, organizado como pipeline modular de `diffusers` con etapas separadas de preparacion de latents, layout, timesteps, encoder de texto, denoise y decodificacion mediante VAE (incluyendo un VAE de audio, `AutoencoderKLMiniMaxH3Audio`). El checkpoint se distribuye como un modelo TURBO de 8 pasos, es decir, disenado para muestrear con un numero reducido de pasos de denoise. La model card indica que el delta TURBO ya esta incorporado en los pesos y advierte explicitamente contra apilar una LoRA turbo adicional (por ejemplo `larryvrh/MiniMax-H3-Turbo-Lora` o `lightx2v`), porque se aplicaria dos veces.
+El modelo es un fine-tune del checkpoint multimodalart/MiniMax-H3-Pruned, que a su vez deriva de la familia MiniMax-H3. La model card no describe la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El nombre del repositorio indica una destilación tipo "TURBO" a 8 pasos de denoising, una estrategia habitual para acelerar la inferencia de modelos de difusión, pero no se aportan detalles del procedimiento de destilación ni de la fusión "VBVR" que aparece en el nombre.
 
-El proceso de fusion esta documentado con detalle: la LoRA `H3_VBVR_Pro-V2` se fusiono desde pesos limpios con fuerza 1 (alpha/rank x strength, rank [128], alpha por clave de 208), afectando 312 tensores y sin descartar ninguno. Antes de la subida se verifico que el conjunto de claves coincide exactamente con el base, que los dtypes por clave no cambiaron, que todos los tensores fusionados se movieron y que los tensores no tocados son identicos bit a bit al base. La tabla AdaLN de rank 8 es exacta sobre la rejilla de 1025 pasos del sampler y aproximada fuera de ella, por lo que se recomienda muestrear dentro de la rejilla. No se dispone de informacion sobre volumen de tokens, composicion del dataset ni uso de RLHF/DPO.
+El código de ejemplo revela parte del diseño de inferencia: se usan pipelines modulares de `diffusers` (`MiniMaxH3PrepareLatentsStep`, `MiniMaxH3DenoiseStep`, `MiniMaxH3DecodeStep`, `MiniMaxH3TextEncoderStep`, entre otros), autoencoders específicos de vídeo y audio (`AutoencoderKLMiniMaxH3`, `AutoencoderKLMiniMaxH3Audio`), cuantización Int8 weight-only con torchao y offloading por grupos. La codificación de texto se delega en un modelo Qwen3-VL (8B o 32B, según configuración) y existe un adaptador opcional `ClipProj-MiniMax-H3` para proyección de embeddings. No hay información sobre innovaciones técnicas adicionales.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video).
-- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado del repositorio.
-- Generacion de video con audio (audio-video), mediante el VAE de audio incluido en el pipeline.
-- Muestreo acelerado en 8 pasos (TURBO), con delta ya integrado en los pesos.
-- Composicion de LoRA preintegrada (`H3_VBVR_Pro-V2`) sin carga en tiempo de ejecucion.
-- Integracion con `diffusers` mediante `AutoModel.from_pretrained` con `trust_remote_code=True`.
-- Control de keyframes automatico (etapa `MiniMaxH3AutoKeyframeVaeEncoderStep`).
-- Cuantizacion en inferencia mediante torchao (`Int8WeightOnlyConfig`).
-- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: no disponibles.
+- Generación de vídeo a partir de texto (text-to-video).
+- Generación de vídeo a partir de una imagen (image-to-video), que es el pipeline declarado en la ficha del repositorio.
+- Generación conjunta de vídeo y audio (audio-video), según las etiquetas del repositorio.
+- Inferencia acelerada a 8 pasos de denoising (destilación "TURBO"), según el nombre del modelo.
+- Codificación de texto mediante un LLM externo Qwen3-VL, lo que permite prompts descriptivos complejos.
+- Soporte de cuantización Int8 y offloading para reducir requisitos de VRAM.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües explícitas.
+- No se documenta un modo "thinking" ni otras capacidades especiales más allá de la generación audiovisual.
 
 ## Casos de uso
 
-- Prototipado de video generativo en entornos de investigacion: el modelo permite obtener clips a partir de prompts de texto o imagenes con solo 8 pasos de muestreo, lo que reduce el coste por iteracion frente a samplers de decenas de pasos.
-- Generacion de video a partir de storyboard o imagen de referencia: util para previsualizar animaciones o transiciones a partir de un frame fijo, usando el pipeline image-to-video declarado.
-- Video con audio sincronizado: el pipeline incluye un VAE de audio, lo que permite generar clips con banda sonora asociada en un unico flujo.
-- Despliegue en Hugging Face Spaces con GPU bajo demanda: el codigo de ejemplo incorpora el decorador `spaces.GPU(duration=1500)` y deteccion de `SPACES_ZERO_GPU`, pensado para ejecucion en infraestructura de Spaces.
-- Experimentacion con fusion de LoRAs: el repositorio documenta metadatos de fusion (`fusion_metadata.txt`), lo que lo convierte en una referencia para estudiar el efecto de fusionar adaptadores con strength 1 en un transformer de difusion.
-- Generacion de material audiovisual con control de acceso: dado el tag "not-for-all-adults", encaja en entornos cerrados con moderacion y no en productos de consumo abiertos.
-- Evaluacion comparativa de samplers acelerados: al ser un checkpoint TURBO de 8 pasos, sirve como baseline para medir calidad frente a samplers completos en tareas de video.
+- Generación de vídeo para adultos: el modelo está etiquetado como "not-for-all-audiences" y su prefijo "10Eros" indica que su uso previsto es la creación de contenido audiovisual para adultos; requiere verificación de edad y cumplimiento normativo.
+- Prototipado de imagen-a-vídeo: animar una imagen fija de entrada mediante el pipeline `image-to-video` declarado, útil para pruebas rápidas de animación en estudios pequeños.
+- Experimentación con destilación de difusión: el modelo sirve como caso de estudio de un fine-tune "TURBO" a 8 pasos, útil para investigadores que analicen la pérdida de calidad frente a modelos de más pasos.
+- Pruebas de pipelines modulares de `diffusers`: el código de ejemplo muestra cómo componer bloques modulares con autoencoders de vídeo y audio, lo que lo convierte en material de referencia para desarrolladores que integren `diffusers.modular_pipelines`.
+- Generación de clips con audio sincronizado: las etiquetas "audio-video" y el uso de `AutoencoderKLMiniMaxH3Audio` permiten experimentar con vídeo y audio conjuntos en un solo pipeline.
+- Evaluación de cuantización Int8 en difusión: el uso de `Int8WeightOnlyConfig` y offloading por grupos permite medir el impacto de la cuantización en calidad y VRAM en un modelo de 20B parámetros.
+- Investigación sobre sesgos y seguridad en modelos de la comunidad: al ser un fine-tune sin documentación ni licencia clara, es un caso útil para estudiar riesgos de modelos no auditados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. El repo pesa 40,2 GB en safetensors; con pesos en bfloat16 el modelo completo requiere del orden de decenas de GB de VRAM, y el codigo de ejemplo contempla cuantizacion Int8 weight-only mediante torchao para reducir huella.
-- GPU recomendadas: no disponibles como listado del autor. Por tamano (~20,1 mil millones de parametros) y naturaleza de video, se encuadra en GPUs de datacenter tipo A100/H100; no consta validacion en consumer GPU.
-- Compatibilidad con consumer GPU: no disponible. No hay datos que confirmen ejecucion en RTX 4090 u otras consumer.
-- Opciones de despliegue: `diffusers` (pipeline modular MiniMax-H3), Hugging Face Spaces con GPU bajo demanda, `torchao` para cuantizacion Int8. No consta soporte oficial de vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo de difusion de video).
-- Latencia y throughput: no disponibles. Solo consta el diseno para 8 pasos de muestreo TURBO, que reduce el numero de evaluaciones del denoiser frente a samplers convencionales, pero sin cifras publicadas.
+- VRAM estimada: no disponible de forma oficial. Con 20.111 millones de parámetros, en bf16 los pesos ocuparían aproximadamente 40 GB; en Int8 weight-only, alrededor de 20 GB, a lo que hay que sumar activaciones, autoencoders de vídeo y audio y el LLM de texto auxiliar (Qwen3-VL 8B o 32B).
+- El código de ejemplo incluye `apply_group_offloading`, lo que sugiere que el autor prevé ejecución con offloading entre CPU y GPU para reducir la VRAM pico.
+- GPU recomendadas: no disponibles. Por tamaño, un despliegue sin offloading requeriría GPUs de 80 GB (A100, H100) o múltiples GPUs; con offloading podría intentarse en GPUs consumer de 24 GB (RTX 4090) o 16 GB, aunque no hay confirmación del autor.
+- El código contempla ejecución en Hugging Face Spaces con `spaces.GPU(duration=1500)`, es decir, GPUs efímeras de la plataforma.
+- Opciones de despliegue: `diffusers` con pipelines modulares, torchao para cuantización Int8, `transformers` para el LLM de texto, y `peft`/`huggingface_hub` para carga de adaptadores. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de este tipo).
+- Latencia y throughput: no disponibles; el nombre "8stepTURBO" sugiere 8 pasos de denoising, pero no se aportan tiempos medidos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / pasos | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| 10Eros-Max TURBO VBVR FUSED (este) | ~20,1 mil millones | 8 pasos TURBO; contexto textual no disponible | no disponible | Hugging Face, diffusers |
-| ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid (base) | no disponible en la informacion | 8 pasos TURBO | no disponible | Hugging Face |
-| MiniMax-H3 (linaje de referencia) | no disponible en la informacion | no disponible | no disponible | no disponible en esta ficha |
+| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| 10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid_VBVR_FUSED | 20,1B | no disponible | Difusión vídeo+audio (fine-tune) | no disponible | Hugging Face (347 descargas) |
+| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no disponible | Difusión vídeo (poda) | no disponible | Hugging Face |
+| MiniMax-H3 (familia original) | no disponible | no disponible | Difusión vídeo+audio | no disponible | no disponible en la información |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido marcado como "not-for-all-audiences": no apto para distribucion abierta ni para productos sin moderacion.
-- Licencia no disponible: no se puede confirmar el permiso de uso comercial; debe verificarse con el autor antes de cualquier despliegue productivo.
-- La fuerza de la LoRA esta fijada en 1 y no es ajustable en este repositorio; si el efecto es demasiado intenso, la solucion indicada por el autor es usar otro repositorio, no cambiar ajustes.
-- No se debe apilar otra LoRA turbo encima: el delta TURBO ya esta en los pesos y se aplicaria dos veces.
-- La tabla AdaLN de rank 8 es exacta solo en la rejilla de 1025 pasos del sampler; fuera de ella es una aproximacion, por lo que se recomienda muestrear dentro de la rejilla.
-- Riesgo de alucinacion y artefactos: no cuantificado en la informacion disponible; es un riesgo inherente a los modelos generativos de video, pero no hay datos especificos del autor.
-- Sesgos conocidos: no disponibles.
-- Limitaciones de contexto o idioma: no disponibles; no consta lista de idiomas soportados ni ventana de contexto textual.
-- Idiomas: no disponibles, lo que impide garantizar calidad multilingue en los prompts.
-- Datos de entrenamiento no disponibles: no se puede auditar la composicion del dataset ni posibles sesgos de origen.
-- Requiere `trust_remote_code=True` y codigo personalizado (`custom_code` en los tags), lo que implica ejecutar logica del autor no auditada por terceros.
-- El codigo de ejemplo depende de repositorios externos (`NicoLab28/ClipProj-MiniMax-H3`, `patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4`), lo que anade dependencias y superficies de fallo a la reproducibilidad.
-- Ausencia de benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
+- Ausencia total de licencia declarada: no se especifican condiciones de uso comercial, redistribución ni modificación, lo que impide un uso en producción con garantías legales.
+- Etiqueta "not-for-all-audiences": el contenido generado puede ser explícito; requiere control de acceso, verificación de edad y cumplimiento de la normativa aplicable.
+- Falta de documentación técnica: no hay información sobre datos de entrenamiento, sesgos, evaluación de calidad ni procedimiento de destilación, lo que dificulta evaluar su fiabilidad.
+- Riesgo de alucinación visual y artefactos: como todo modelo de difusión sin benchmarks publicados, puede generar incoherencias temporales, deformaciones anatómicas y desincronización audio-vídeo.
+- Dependencia de código personalizado (`custom_code`) y de un LLM externo (Qwen3-VL): la reproducibilidad depende de versiones concretas de `diffusers`, `transformers`, `torchao` y `peft`.
+- Requisitos de hardware elevados: 20B parámetros y 40,2 GB de repo hacen inviable la inferencia en la mayoría de equipos sin offloading o cuantización.
+- Sin datos sobre idiomas soportados: no se puede garantizar el rendimiento en castellano ni en otros idiomas.
+- Modelo de la comunidad con 0 likes y 347 descargas: no ha pasado por una revisión de seguridad ni por evaluaciones independientes.
+- El nombre del modelo incluye términos ("VBVR", "FUSED", "hybrid") que el autor no define, por lo que no deben interpretarse como garantías técnicas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid_VBVR_FUSED
-- Modelo base (sin fusion): https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid
-- Repositorio de LoRAs del autor: https://huggingface.co/ibyteohdear/h3Lora
-- Repositorio ClipProj MiniMax-H3: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
-- Encoder de texto de referencia usado en el ejemplo: https://huggingface.co/patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4
-- LoRA turbo mencionada como no apilable: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
-- Documentacion de diffusers: https://huggingface.co/docs/diffusers
-- Paper, blog o demo oficial: no disponibles en la informacion proporcionada.
+- Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid_VBVR_FUSED
+- Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
+- Repositorio del adaptador ClipProj (referenciado en el código): https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- LLM de texto auxiliar (referenciado en el código): https://huggingface.co/ibyteohdear/qwen3_vl_32b_bnb_nf4
+- LLM alternativo 8B (referenciado en el código): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- LLM alternativo 4B (referenciado en el código): https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2

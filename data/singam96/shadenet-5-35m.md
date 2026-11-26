@@ -2,107 +2,108 @@
 
 ## Resumen
 
-ShadeNet-5-35M es un modelo de *inverse rendering* de una sola imagen desarrollado por el usuario singam96. A partir de una única fotografía RGB predice tres mapas intrínsecos: albedo (color base), profundidad relativa y normales de superficie. El modelo se construye sobre un backbone DINOv2 ViT-S/14 de Meta AI congelado, al que se añade una UNet paralela entrenable que aplica una corrección residual sobre un prior derivado de la propia foto.
+ShadeNet-5 es un modelo de renderizado inverso a partir de una única imagen RGB, desarrollado por el usuario singam96 y publicado en Hugging Face bajo licencia Apache-2.0. Dada una fotografía, el modelo predice de forma directa tres mapas intrínsecos: albedo (color base), profundidad relativa y normales de superficie. Se trata de un modelo de imagen a imagen de tamaño reducido, con 34,65 millones de parámetros totales, de los cuales 12,6 millones son entrenables y 22,1 millones corresponden al tronco DINOv2 ViT-S/14 congelado de Meta AI.
 
-La arquitectura es una ParallelUNet con diccionarios de parches y cabezas de salida por mapa, con un total de 34,6 millones de parámetros, de los cuales solo 12,6 millones son entrenables (los 22,1 millones restantes corresponden al tronco DINOv2 congelado). El modelo opera con entradas de 448x448 píxeles (o múltiplos de 448) y produce una salida de 7 canales en el rango [-1, 1]: los tres primeros para albedo, uno para profundidad y tres para normales.
+La arquitectura es una ParallelUNet que opera sobre un prior fijado derivado de la propia foto y aprende una corrección residual en una sola pasada hacia delante, sin iteración, sin embeddings temporales ni esquema de difusión. Esto lo distingue de aproximaciones generativas como Marigold, que requieren múltiples pasos de muestreo. El modelo se entrega con un refinador UNet opcional de 0,91 millones de parámetros que aproxima el resultado de promediar seis pasadas (espejo y rotaciones) con un coste mucho menor.
 
-Su relevancia radica en que resuelve la descomposición intrínseca en un único pase hacia adelante, sin difusión ni iteración, lo que lo hace mucho más ligero que alternativas generativas como Marigold. La licencia Apache-2.0 facilita su uso comercial. No obstante, el propio autor advierte que las métricas se han medido sobre un conjunto de validación de solo 23 imágenes con pseudo-etiquetas, por lo que deben considerarse indicativas y no comparables a un benchmark formal.
+Es relevante ahora porque ofrece una alternativa de inferencia rápida y ligera para descomposición intrínseca, con exportaciones ONNX de 4 y 8 bits que permiten ejecución en CPU, y porque demuestra que un tronco congelado de tipo ViT combinado con un decodificador ligero puede competir en tareas de renderizado inverso con pipelines generativos mucho más costosos. La validación publicada es reducida (23 imágenes), por lo que los números deben tomarse como indicativos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ParallelUNet con backbone DINOv2 ViT-S/14 congelado; corrección residual sobre prior fijo derivado de la foto |
-| Parametros totales | 34.652.431 (12.595.855 entrenables + 22,1M del tronco DINOv2 congelado) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión; entrada de 448x448 o 896x896) |
-| Tipos de cuantizacion | exportaciones ONNX de 4 y 8 bits del modelo podado (descritas en la model card) |
-| Idiomas soportados | no disponible (modelo de imagen, sin procesamiento de lenguaje) |
+| Arquitectura | ParallelUNet sobre tronco DINOv2 ViT-S/14 congelado, corrección residual sobre prior fijo derivado de la foto |
+| Parametros totales | 34.652.431 (12.595.855 entrenables; 22,1 M del tronco DINOv2 congelado) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen de 448x448 o 896x896) |
+| Tipos de cuantizacion | exportaciones ONNX de 4 y 8 bits del modelo podado |
+| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | PyTorch (repo de 0,2 GB); exportaciones ONNX cuantizadas disponibles |
+| Formato de pesos | PyTorch y ONNX (4/8 bits); tamano del repo 0,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina un codificador DINOv2 ViT-S/14 congelado con una UNet paralela entrenable. La UNet incorpora diccionarios de parches (8.582.400 parámetros distribuidos en cuello de botella y tres niveles de decodificador) y patrones fijos plegados en entrada, cinco niveles del encoder, tres del decodificador y salida. La red no predice los mapas directamente, sino una corrección residual sobre un prior "mix" fijo derivado de la propia fotografía, lo que estabiliza el entrenamiento y reduce la carga de la red entrenable.
+El modelo es una ParallelUNet que recibe una imagen de 3 canales más un estado de 7 canales y produce una salida de 7 canales: albedo (3), profundidad relativa (1) y normales (3), todos en el rango [-1, 1]. La red incorpora diccionarios de parches (8.582.400 parámetros distribuidos en cuello de botella y niveles d0, d1, d2) y patrones fijos plegados en entrada, salidas y niveles intermedios. El tronco DINOv2 ViT-S/14 permanece congelado y alimenta los saltos del decodificador. La predicción es una corrección residual sobre un prior fijo derivado de la foto, en una única pasada hacia delante.
 
-El checkpoint presentado corresponde a la época 19 de entrenamiento y está podado. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO (no aplicables en un modelo de visión). Las etiquetas de validación son pseudo-etiquetas generadas con Marigold-V2 (la profundidad se decodifica de la visualización en color de Marigold), y la pérdida de profundidad es invariante a escala y desplazamiento. Respecto a la versión anterior (ShadeNet-3.2), este modelo elimina el canal de sombreado (7 canales en lugar de 8). El autor señala que el salto de rendimiento frente al run previo (MobileNetV2, pérdida L1 enmascarada, 384px, 6 épocas) no puede atribuirse a un único cambio, ya que se modificaron simultáneamente backbone, pérdida, resolución y duración del entrenamiento.
+El refinador es una UNet pequeña de 0,91 millones de parámetros, 4 niveles y GroupNorm, cuya última capa se inicializa a cero. Se entrena por destilación: el objetivo es la salida del promedio de seis pasadas (espejo y rotaciones de ±4°) para la misma foto, sin necesidad de etiquetas. Se usaron 8.024 fotos del split de validación de Open Images V7 con licencia CC BY 2.0 (7.724 para entrenamiento y 300 reservadas), con recortes aleatorios de 320x320 y espejos, pérdida L1, AdamW con tasa 3e-4 y decaimiento coseno, durante 6.000 pasos con lote de 16 (unos 25 minutos en una RTX A4000). No se documentan en la información disponible detalles sobre el conjunto de entrenamiento principal del modelo base (número de tokens o composición), ni sobre uso de RLHF o DPO, que no aplican a este tipo de modelo.
 
 ## Capacidades
 
-- Descomposición intrínseca de una sola imagen en albedo, profundidad relativa y normales de superficie en un único pase hacia adelante.
-- Salida de 7 canales en el rango [-1, 1]: `[0:3]` albedo, `[3:4]` profundidad, `[4:7]` normales.
-- Estimación de profundidad relativa por imagen (no métrica ni absoluta).
-- Generación de mapas de normales de superficie con posibilidad de reescalado a longitud unitaria.
-- Ensamblado en tiempo de test: promedio sobre la imagen espejada y sobre rotaciones de ±4 grados (seis pases) para mejorar las métricas.
-- Entrada de alta resolución limitada a múltiplos de 448 (448 o 896 píxeles).
-- Exportación a ONNX en 4 y 8 bits del modelo podado.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües (es un modelo puramente visual).
+- Renderizado inverso a partir de una sola imagen RGB: descomposición en albedo, profundidad relativa y normales de superficie.
+- Salida de 7 canales con convención fija: `[0:3]` albedo, `[3:4]` profundidad, `[4:7]` normales, todos en [-1, 1].
+- Inferencia en una sola pasada hacia delante, sin iteración ni esquema de difusión.
+- Modo con refinador opcional que aproxima el promedio de seis pasadas (espejo y rotaciones) con un coste adicional de unos 12 ms.
+- Modo de seis pasadas disponible para mayor calidad a mayor coste (unos 353 ms por imagen en A4000 en bf16).
+- Entrada limitada a múltiplos de 448 (448 o 896 píxeles).
+- Exportaciones ONNX de 4 y 8 bits para despliegue en CPU.
+- No dispone de soporte de tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, al ser un modelo puramente visual.
 
 ## Casos de uso
 
-- **Previsualización de materiales en pipelines de renderizado**: el modelo genera albedo y normales por imagen para alimentar motores de renderizado o herramientas de *relighting* sin necesidad de captura multi-iluminación, gracias a su salida de 7 canales en un solo pase.
-- **Generación de *assets* para videojuegos y VFX**: a partir de fotografías de referencia se obtienen mapas de albedo y normales utilizables como texturas base, con la ventaja de que la licencia Apache-2.0 permite uso comercial.
-- **Reconstrucción 3D aproximada y *depth completion***: la profundidad relativa sirve como inicialización para pipelines de fotogrametría o para tareas de *inpainting* de profundidad en escenas donde solo se dispone de una vista.
-- **Edición de imagen basada en intrinsics**: separar albedo de iluminación permite recolorear objetos o simular cambios de iluminación en postproducción fotográfica, usando el albedo como capa de color base.
-- **Preprocesado para modelos de visión posteriores**: los mapas de normales y profundidad pueden alimentar detectores, segmentadores o modelos de *novel view synthesis* que requieran información geométrica adicional.
-- **Prototipado rápido en investigación**: al ser un modelo pequeño (34,7M parámetros, 0,2 GB) y de un solo pase, es adecuado para experimentos de descomposición intrínseca en entornos con recursos limitados, con la salvedad de que sus métricas son indicativas.
-- **Herramienta de anotación asistida**: generar pseudo-etiquetas de albedo, profundidad y normales para preanotar datasets de imágenes, que luego se revisan manualmente.
+- Descomposición intrínseca en pipelines de posproducción: separar albedo y sombreado de una foto para recolorear materiales o ajustar iluminación sin re-renderizar, aprovechando la salida de albedo del modelo.
+- Reconstrucción 3D y modelado por fotogrametría: usar el mapa de normales y la profundidad relativa como entrada para algoritmos de reconstrucción de superficie o generación de mallas a partir de una sola vista.
+- Realce de imágenes y relighting: emplear albedo y normales para aplicar nuevas fuentes de luz sobre una foto existente en herramientas de edición.
+- Preprocesado para modelos de difusión o generativos: proporcionar mapas de profundidad y normales como condicionamiento en pipelines de imagen a imagen.
+- Automatización de anotación de datasets: generar etiquetas de profundidad relativa y normales de forma rápida (57-68 ms por imagen en A4000) para conjuntos de imágenes a gran escala.
+- Aplicaciones en el navegador o en dispositivos sin GPU: gracias a las exportaciones ONNX de 4 y 8 bits y a la ejecución en CPU (unos 0,26 s por imagen a 448x448 en la versión ONNX), puede integrarse en demos web o herramientas de escritorio.
+- Análisis de escenas en robótica o visión por computador embebida: obtener profundidad relativa y normales con un modelo de 34,7 M de parámetros y latencia baja para tareas de percepción.
 
 ## Benchmarks y rendimiento
 
-Resultados de L1 por mapa (salida cruda frente a etiqueta; albedo y normales enmascarados donde la etiqueta no es válida) sobre la partición de validación de 23 imágenes a 448px, checkpoint de la época 19 podado:
+Resultados de L1 por mapa (salida cruda frente a etiqueta, albedo y normales enmascarados donde la etiqueta no es válida) sobre el split de validación reservado de 23 imágenes a 448 px, mejor checkpoint (época 19, podado):
 
-| Mapa | Pase único | Promedio espejo + normales unitarias | Espejo + rotaciones ±4° + normales unitarias |
+| Mapa | Una pasada (normales unitarias) | Una pasada + refinador | Seis pasadas (espejo + rotaciones ±4°) |
 |---|---|---|---|
-| Albedo | 0,1804 | 0,1794 | 0,1734 |
-| Profundidad | 0,1754 | 0,1704 | 0,1653 |
-| Normales | 0,1730 | 0,1537 | 0,1497 |
-| **Media** | 0,1763 | 0,1679 | **0,1628** |
+| Albedo | 0,1804 | 0,1762 | 0,1734 |
+| Profundidad | 0,1754 | 0,1746 | 0,1653 |
+| Normales | 0,1713 | 0,1509 | 0,1497 |
+| **Media** | 0,1757 | **0,1673** | 0,1628 |
+| Tiempo por imagen (A4000, bf16) | 57 ms | 68 ms | 353 ms |
 
-Comparación con el run anterior (MobileNetV2, pérdida L1 enmascarada, 384px, 6 épocas), ambos como pase único sobre las mismas 23 imágenes:
+Comparación con la ejecución anterior (mismo split de 23 imágenes, mismas etiquetas, misma métrica L1, ambas en una sola pasada; la anterior usaba tronco MobileNetV2, pérdida L1 enmascarada, entradas de 384 px y 6 épocas):
 
-| Mapa | Run anterior | Este modelo |
+| Mapa | Ejecución anterior | Este modelo |
 |---|---|---|
 | Albedo | 0,2474 | 0,1804 |
 | Profundidad | 0,3628 | 0,1754 |
 | Normales | 0,2744 | 0,1730 |
 | **Media** | 0,3141 | **0,1763** |
 
-El error angular medio de las normales baja de 20,6° a 18,3° con el promedio espejo y a 17,7° con rotaciones añadidas. El coste del ensamblado de seis pases es de aproximadamente 262 ms por imagen frente a 52 ms del pase único en una RTX A4000, incluyendo remuestreo. El autor advierte que la partición de validación es pequeña (23 imágenes) y que todas las etiquetas son pseudo-etiquetas de Marigold-V2, por lo que los números son indicativos y no de grado benchmark.
+El refinador recupera el 65% de la ganancia del promedio de seis pasadas (0,0084 de 0,0129 de L1 media) con unos 12 ms adicionales frente a los 296 ms de las cinco pasadas extra. Frente al objetivo de seis pasadas en fotos reservadas, la L1 media bajó de 0,0567 (una pasada) a 0,0398 (con refinador). El split de validación es pequeño (23 imágenes) y todas las etiquetas son pseudo-etiquetas de Marigold-V2 (la profundidad se decodifica de la visualización en color de Marigold), por lo que deben considerarse indicativas y no de nivel de benchmark. La pérdida de profundidad es invariante a escala y desplazamiento, por lo que la L1 cruda de profundidad no es lo que optimiza.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el modelo es muy ligero (34,7M parámetros, repo de 0,2 GB); la inferencia cabe holgadamente en GPUs de consumo con 4-6 GB de VRAM, incluso con entradas de 896x896.
-- **GPUs recomendadas**: RTX A4000 (medida por el autor: 52 ms por pase único, 262 ms con ensamblado de seis pases), RTX 3060/4060 o superiores; A100/H100 no son necesarias.
-- **Cabe en GPU de consumo**: sí, en cualquier GPU moderna con al menos 4 GB de VRAM.
-- **Opciones de despliegue**: PyTorch nativo; exportaciones ONNX de 4 y 8 bits del modelo podado para despliegue en CPU o entornos con ONNX Runtime. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de imagen de este tipo).
-- **Latencia y throughput**: 52 ms por imagen en pase único y 262 ms con el ensamblado de seis pases sobre RTX A4000, incluyendo remuestreo; el throughput no se detalla en la información disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 34,7 M de parámetros totales y pesos en bf16 (unos 70 MB), el modelo es muy ligero y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: RTX A4000 (referencia de los tiempos publicados), así como cualquier GPU con al menos unos pocos GB de VRAM; también RTX 4090, A100 o H100 sin problema.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna, dado el reducido tamaño del modelo.
+- Opciones de despliegue: PyTorch, ONNX (exportaciones de 4 y 8 bits), y la demo en el Space de Hugging Face en CPU.
+- Latencia y throughput estimados: 57 ms por imagen en una sola pasada y 68 ms con refinador en A4000 en bf16; 353 ms para seis pasadas; unos 0,26 s por imagen a 448x448 en CPU con la versión ONNX.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Enfoque | Contexto/entrada | Licencia | Disponibilidad |
+| Modelo | Parametros | Enfoque | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShadeNet-5-35M | 34,7M (12,6M entrenables) | Feed-forward, un pase, corrección residual sobre prior | 448x448 u 896x896 | Apache-2.0 | Hugging Face (singam96/ShadeNet-5-35M) |
-| Marigold (usado para pseudo-etiquetas) | no disponible en la información | Difusión, múltiples pasos | no disponible | no disponible en la información | no disponible en la información |
-| Run anterior de ShadeNet (MobileNetV2) | no disponible en la información | Feed-forward, 384px, 6 épocas | 384x384 | no disponible en la información | no disponible en la información |
+| ShadeNet-5 | 34,7 M (12,6 M entrenables) | Feed-forward, una pasada + refinador opcional | Imagen 448/896 px | Apache-2.0 | Hugging Face, ONNX 4/8 bits |
+| Marigold (referencia de etiquetas) | no disponible | Difusión, múltiples pasos | Imagen | no disponible | no disponible |
+| Ejecución anterior de ShadeNet (MobileNetV2) | no disponible | Feed-forward, una pasada | Imagen 384 px | no disponible | no disponible |
 
-No se dispone en la información proporcionada de datos suficientes sobre modelos comparables de terceros (parámetros, contexto, licencia) para establecer una comparativa rigurosa más allá de las referencias internas del propio autor.
+No se dispone en la información proporcionada de datos comparativos de parámetros, contexto o rendimiento de alternativas como Marigold más allá de su uso como generador de pseudo-etiquetas, por lo que la comparativa cuantitativa con modelos de la misma categoría queda limitada a la ejecución anterior del propio autor.
 
 ## Limitaciones y advertencias
 
-- **Validación muy limitada**: las métricas proceden de solo 23 imágenes y de pseudo-etiquetas de Marigold-V2, por lo que no son comparables a un benchmark formal y pueden no generalizar.
-- **Profundidad relativa, no métrica**: la pérdida de profundidad es invariante a escala y desplazamiento; la salida no debe interpretarse como distancia absoluta en metros.
-- **Riesgo de alucinación geométrica**: al ser un modelo feed-forward entrenado con pseudo-etiquetas, puede producir normales o albedos plausibles pero incorrectos en escenas fuera de distribución.
-- **Resolución restringida**: solo acepta múltiplos de 448 (448 u 896); no admite resoluciones arbitrarias sin remuestreo.
-- **Sin canal de sombreado**: a diferencia de ShadeNet-3.2, esta versión elimina el canal de shading (7 canales en lugar de 8), lo que es un cambio incompatible para pipelines que esperasen la salida anterior.
-- **Ensamblado costoso**: la receta de seis pases multiplica por cinco el tiempo de inferencia (262 ms frente a 52 ms) para una mejora modesta en L1.
-- **Sin soporte de lenguaje ni agentes**: no es un modelo conversacional ni soporta tool calling; su ámbito es exclusivamente la imagen.
-- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base DINOv2 (Meta AI) debe verificarse por separado para confirmar el cumplimiento en producción.
-- **Atribución de mejoras**: el salto frente al run anterior no puede atribuirse a un único cambio (backbone, pérdida, resolución y épocas se modificaron a la vez).
+- El split de validación es muy reducido (23 imágenes) y las etiquetas son pseudo-etiquetas de Marigold-V2, por lo que los números publicados son indicativos y no de nivel de benchmark.
+- La profundidad es relativa y por imagen, no métrica; la pérdida es invariante a escala y desplazamiento.
+- La entrada está restringida a múltiplos de 448 (448 o 896 píxeles), lo que limita resoluciones arbitrarias.
+- El refinador no reproduce los cambios del promedio de seis pasadas en los niveles globales de profundidad, por lo que la profundidad refinada es esencialmente la de una sola pasada.
+- Cambio incompatible respecto a ShadeNet-3.2: este modelo no tiene canal de sombreado (7 canales en lugar de 8).
+- No se documentan en la información disponible sesgos conocidos ni riesgos específicos de alucinación; al ser un modelo de visión, el riesgo principal es la imprecisión en mapas intrínsecos en escenas fuera de distribución.
+- Licencia Apache-2.0, que permite uso comercial con atribución y sin restricciones adicionales conocidas; conviene revisar los términos exactos del repositorio.
+- El modelo base DINOv2 ViT-S/14 es de Meta AI y permanece congelado; su licencia debe verificarse por separado si se redistribuye.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/singam96/ShadeNet-5-35M
-- Modelo base DINOv2-small: https://huggingface.co/facebook/dinov2-small
-- Repositorio de DINOv2 (Meta AI): https://github.com/facebookresearch/dinov2
-- Marigold (generador de pseudo-etiquetas mencionado): no disponible en la información proporcionada
+- Demo en el Space: https://huggingface.co/spaces/singam96/ShadeNet-5
+- Modelo base DINOv2 ViT-S/14: https://huggingface.co/facebook/dinov2-small
+- Repositorio de etiquetas Marigold-V2: no disponible en la información proporcionada
+- Paper o blog del autor: no disponible en la información proporcionada

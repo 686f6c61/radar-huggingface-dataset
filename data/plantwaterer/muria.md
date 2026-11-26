@@ -2,102 +2,95 @@
 
 ## Resumen
 
-muria es un ajuste fino (fine-tune) de google/gemma-4-12B-it desarrollado por el usuario plantwaterer, orientado especificamente a la toma de decisiones mediante preguntas de opcion multiple. En lugar de generar texto libre, el modelo devuelve una distribucion de probabilidad sobre un conjunto de opciones etiquetadas (A-Z, a-z) o sobre respuestas si/no, lo que lo convierte en un componente de decision mas que en un chatbot al uso. Su relevancia actual radica en que aborda un nicho poco cubierto: modelos que producen decisiones calibradas y cuantificadas en lugar de respuestas generativas.
+muria es un ajuste fino (fine-tune) de google/gemma-4-12B-it desarrollado por el usuario plantwaterer, orientado especificamente a la toma de decisiones mediante preguntas de opcion multiple. A diferencia de un modelo de chat convencional, muria no devuelve texto libre: devuelve una distribucion de probabilidad calibrada sobre las opciones de una pregunta, lo que lo convierte en un componente de inferencia para sistemas que necesitan elegir entre alternativas de forma cuantificable.
 
-El modelo tiene 11.959.730.224 parametros (aproximadamente 12B) y una ventana de contexto de 32.768 tokens, sin truncacion: las peticiones que no caben en ese limite se rechazan explicitamente. Incorpora una cabeza calibrada de ultima capa (`vbll_head.safetensors`) que transforma los logits de las letras de las opciones en probabilidades. Para preguntas de opcion multiple aplica un softmax dividido por una temperatura ajustada (T = 0.970); para preguntas si/no aplica un residuo bayesiano de ultima capa (posterior de Laplace) sobre el estado oculto del modelo.
+El modelo parte del checkpoint Gemma 4 12B instruct (aproximadamente 11.960 millones de parametros) y anade una cabeza de calibracion de ultima capa (`vbll_head.safetensors`) que transforma los logits de las letras de las opciones en probabilidades. Para preguntas de opcion multiple aplica un softmax con temperatura ajustada (T = 0.970); para preguntas de si/no aplica un posterior de Laplace sobre el estado oculto que corrige los dos logits. La licencia es Apache-2.0.
 
-La arquitectura de atencion es un punto critico: las capas de atencion completa son bidireccionales dentro de cada prompt (cada token atiende a todos los tokens del mismo prompt), mientras que las capas de ventana deslizante permanecen causales con ventana de 1.024 tokens. Esto obliga a servir el modelo con la funcion de atencion `jev_mem` incluida en `fullft_mem.py`, ya que la atencion estandar de transformers produciria respuestas distintas. La licencia es Apache-2.0 tanto para pesos como para codigo.
+Su relevancia actual reside en el nicho: no compite como modelo generativo generalista, sino como motor de decision probabilistica dentro del ecosistema Decision Index. Requiere una atencion no estandar (funcion `jev_mem` en `fullft_mem.py`) y una GPU con capacidad suficiente para servir los pesos en bf16 (24 GB) mas las activaciones de filas empaquetadas de hasta 32.768 tokens.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base: google/gemma-4-12B-it), con capas de atencion completa bidireccional y capas de ventana deslizante causal (1.024 tokens); cabeza de calibracion VBLL de ultima capa |
-| Parametros totales | 11.959.730.224 |
+| Arquitectura | Transformer decoder (Gemma 4) con capas de atencion completa bidireccional y capas locales causales de ventana 1.024; cabeza de calibracion VBLL adicional |
+| Parametros totales | 11.959.730.224 (11,96 B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (sin truncacion; las peticiones que exceden el limite se reportan como no soportadas) |
-| Tipos de cuantizacion | no disponible (los pesos se sirven en bf16; el repo ocupa 24,0 GB) |
+| Longitud de contexto | 32.768 tokens por peticion (sin truncado; las peticiones que exceden se rechazan) |
+| Tipos de cuantizacion | bf16 (unico formato documentado y soportado por el motor) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (pesos y codigo) |
-| Formato de pesos | safetensors (`model-*.safetensors`, `vbll_head.safetensors`) |
-| Modelo base | google/gemma-4-12B-it (revision 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7) |
-| Biblioteca | transformers (con motor propio Decision Index) |
-| Tamano del repositorio | 24,0 GB |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (`model-*.safetensors`, `vbll_head.safetensors`, `vbll_head.json`) |
 
 ## Arquitectura y entrenamiento
 
-muria parte de google/gemma-4-12B-it y le aplica el diseno de entrenamiento de plantwaterer/allec. El resultado es la media uniforme (0,50 / 0,50, en fp32) de dos ajustes finos completos con semillas 0 y 1. Cada semilla se entrena durante 600 actualizaciones con batch global de 64 sobre el mismo manifiesto de 38.400 preguntas (`M2.1sP`, hasta 8.192 tokens). Se usa AdamW fusionado en fp32 con betas (0,9, 0,95), weight decay 0,0, clip de gradiente 1,0, LR pico de 2,5e-6, 50 pasos de warmup, decaimiento coseno hasta 0,1 del pico y mezcla de soft-labels del modelo padre con peso 0,15. La torre de vision del modelo base se mantiene congelada.
+muria es el resultado de aplicar el diseno de entrenamiento de plantwaterer/allec sobre google/gemma-4-12B-it (revision `707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7`, con la torre de vision congelada). El ajuste es la media uniforme en fp32 (0,50 / 0,50) de dos fine-tunes completos con semillas 0 y 1. Cada semilla se entreno con 600 actualizaciones, batch global de 64 sobre el mismo manifiesto de 38.400 preguntas (`M2.1sP`, hasta 8.192 tokens), AdamW fusionado en fp32 con betas (0,9, 0,95), weight decay 0,0, clipping 1,0, LR pico 2,5e-6, warmup de 50 pasos y decaimiento coseno hasta 0,1 del pico, con mezcla de etiquetas suaves del modelo padre a peso 0,15.
 
-La innovacion tecnica principal es el esquema de atencion hibrido: las capas de atencion completa son bidireccionales dentro de cada prompt, mientras que las capas de ventana deslizante permanecen causales con ventana de 1.024 tokens. Tras promediar los dos ajustes, se calibra la cabeza sobre 16.384 preguntas de ajuste y 4.086 de calibracion, fijando la temperatura T = 0.970. La cabeza combina, para opcion multiple, el softmax de los logits de las letras en la posicion de respuesta dividido por la temperatura; para si/no, un residuo bayesiano de ultima capa (posterior de Laplace integrado) ajusta los dos logits. El motor de inferencia agrupa los prompts de una peticion en filas empaquetadas de hasta 32.768 tokens, cada prompt con sus propias posiciones, de modo que solo atiende a si mismo.
+La innovacion principal es la cabeza de calibracion: se ajusto tras la media sobre 16.384 preguntas de ajuste y 4.086 de calibracion, con temperatura T = 0.970. Para opcion multiple, la salida es el softmax de los logits de las letras en la posicion de respuesta; para si/no, un posterior de Laplace integrado sobre el estado oculto corrige los dos logits. La atencion tambien es no estandar: en las capas de atencion completa cada prompt atiende a todos los tokens del mismo prompt (bidireccional), mientras que las capas de ventana deslizante permanecen causales. El motor de inferencia rechaza cualquier otra funcion de atencion que no sea `jev_mem` sobre PyTorch SDPA.
 
 ## Capacidades
 
-- Decision por opcion multiple: devuelve una probabilidad por cada opcion etiquetada (A-Z, a-z), con soporte para mas de 52 opciones en dos rondas.
-- Decision binaria si/no: ajusta los dos logits mediante un residuo bayesiano de ultima capa, con definiciones opcionales de "si" y "no" via `criteria`.
-- Calibracion de probabilidades: la cabeza VBLL produce probabilidades calibradas (temperatura T = 0.970) en lugar de logits sin normalizar.
-- Procesamiento por lotes empaquetado: multiples prompts de una misma peticion en filas de hasta 32.768 tokens con posiciones independientes.
-- Entrada image-text-to-text: hereda la capacidad multimodal del modelo base (torre de vision congelada durante el ajuste).
-- Generacion de texto y conversacion: el pipeline declarado es text-generation y el modelo conserva las capacidades conversacionales del base.
-- Sin truncacion de contexto: rechaza explicitamente peticiones que no caben en 32.768 tokens en lugar de recortarlas.
+- Respuesta a preguntas de opcion multiple con una probabilidad calibrada por opcion (hasta 52 opciones en una ronda; mas de 52 en dos rondas).
+- Respuesta a preguntas de si/no con correccion bayesiana de los dos logits mediante posterior de Laplace.
+- Decision condicionada por contexto: acepta un enunciado de situacion y criterios por opcion (por ejemplo, `Yes: <definicion>` / `No: <definicion>`).
+- Procesamiento por lotes empaquetado de hasta 32.768 tokens por peticion, con posiciones independientes por prompt.
+- Hereda del modelo base la torre de vision (congelada durante el ajuste), aunque la model card no documenta el uso de entrada imagen-texto en el flujo de decision.
+- No soporta generacion de texto libre como salida principal: la respuesta es la distribucion de probabilidad, no una cadena generada.
+- Tool calling, function calling, agentes multi-paso y modo thinking: no documentados en la informacion disponible.
 
 ## Casos de uso
 
-- Triage clinico asistido: dado un conjunto de opciones de derivacion (urgencias, consulta externa, observacion), el modelo devuelve una probabilidad por opcion que permite priorizar casos con umbrales configurables, aprovechando la calibracion de la cabeza.
-- Enrutamiento de tickets de soporte: clasificar cada incidencia entre categorias de equipo o nivel de escalado, usando las probabilidades para decidir cuando derivar a un humano (por ejemplo, cuando la opcion ganadora no supera un umbral de confianza).
-- Decisiones operativas con incertidumbre: escenarios como el ejemplo de la model card (condiciones meteorologicas y decision de jugar, mover a interior o posponer), donde interesa una distribucion de probabilidad y no una respuesta categorica.
-- Evaluacion de riesgo en creditos o seguros: preguntas si/no con definiciones explicitas de criterios ("si: cumple X", "no: no cumple X") para obtener una probabilidad calibrada sobre el cumplimiento de una politica.
-- Moderacion de contenido con criterios multiples: formular preguntas si/no sobre politicas concretas y usar las probabilidades para fijar umbrales de accion, con la ventaja de que el modelo no genera texto libre que pueda desviarse del criterio.
-- Sistemas de agentes con seleccion de herramienta: elegir entre un conjunto de acciones o herramientas disponibles (opciones etiquetadas) y devolver la probabilidad de cada una para que el orquestador decida o consulte a un humano en caso de empate.
-- Investigacion en calibracion: banco de pruebas para estudiar cabezas bayesianas de ultima capa y atencion bidireccional en tareas de decision, dado que el codigo del motor y la cabeza estan publicados.
+- Triaje de incidencias en produccion: dado un informe de error y un conjunto de categorias de severidad, muria devuelve la probabilidad de cada categoria, lo que permite enrutar automaticamente y aplicar umbrales de confianza antes de escalar a un humano.
+- Seleccion de accion en sistemas de recomendacion con criterios explicitos: se presentan las alternativas como opciones con definiciones y el modelo devuelve la probabilidad de cada una, util para ranking con incertidumbre calibrada.
+- Verificacion binaria de politicas: preguntas de si/no (por ejemplo, si un texto cumple una politica interna) con la definicion de "si" y "no" en los criterios, aprovechando la correccion bayesiana de los logits.
+- Evaluacion de hipotesis en investigacion: comparar la probabilidad asignada a opciones mutuamente excluyentes bajo distintos enunciados de contexto, con temperatura fija que hace comparables las salidas entre ejecuciones.
+- Enrutamiento de consultas en atencion al cliente: clasificar una consulta entre un conjunto acotado de intenciones (hasta 52 opciones) con una unica pasada de inferencia por pregunta y latencia mediana de 48 ms en el hardware probado.
+- Control de calidad de anotaciones: usar la distribucion de probabilidad como senal de acuerdo o desacuerdo con la etiqueta humana, marcando para revision los casos de baja confianza.
+- Sistemas de decision con contexto largo: peticiones que requieren hasta 32.768 tokens (por ejemplo, un contrato o un informe completo) sin truncado, siempre que quepan en el limite documentado.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen de la propia model card y de la ejecucion del kit publico Decision Index 0.3 (37 benchmarks), no de un leaderboard oficial.
+Resultados publicados en la model card sobre el tablero Decision Index 0.4.1 (instantanea del 2026-11-21 14:35 UTC, 345 modelos):
 
-| Metrica | Resultado |
-|---|---|
-| Decision Index, suite publica (37 benchmarks) | 51,40 |
-| Decision Index, tests privados (Full) | 52,55 |
-| Dominios nuevos | 39,8 |
-| Comparacion con Gemma 4 12B sin ajustar | +1,5 en dominios nuevos |
-| Comparacion con allec 31B (Full) | 66,96 (muria: 52,55) |
-| Latencia mediana por pasada | 48 ms |
+| Metrica | muria (Gemma 4 12B) | Referencia: allec 31B | Referencia: Gemma 4 12B sin ajustar |
+|---|---|---|---|
+| Full score | 52,55 (puesto 140) | 66,96 | no disponible (la card indica +1,5 por encima de una entrada sin ajustar) |
+| Same-skill score | 53,50 (puesto 147) | no disponible | no disponible |
+| New-domain score | 39,78 (puesto 124) | no disponible | no disponible |
+| Suite publica | 51,40 | no disponible | no disponible |
+| Latencia mediana por pasada | 48 ms | no disponible | no disponible |
 
-La evaluacion se ejecuto en bf16 sobre 8 shards en GPUs individuales (shards 0, 1, 2 y 7 en H100 80 GB; shards 3 a 6 en RTX PRO 6000), fusionados sin cambios. Los resultados en bf16 difieren ligeramente entre tipos de GPU.
+El Full score se compone como 0,60 x same-skill + 0,40 x new-domain y proviene unicamente de los tests privados de los mantenedores del tablero. No se han publicado resultados de MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en bf16 ocupan 24 GB; a ello se suman las activaciones de las filas empaquetadas de hasta 32.768 tokens.
-- GPU probadas: 1 x H100 80 GB y 1 x RTX PRO 6000 (96 GB), con torch 2.14.1 (CUDA 13.0), transformers 5.12.1, huggingface_hub, safetensors y numpy.
-- GPU de consumo: no disponible como configuracion validada; 24 GB de pesos en bf16 exceden la VRAM de la mayoria de GPUs de consumo, aunque una RTX 4090 (24 GB) queda en el limite sin margen para activaciones.
-- Despliegue: motor propio `dikit_engine.py` del kit Decision Index (commit 9eb2dbe2), con `garas_vbll_engine.py`, `vbll_core.py`, `fullft_mem.py`, `garas_engine.py` y `garas_core.py`; la atencion debe ser `jev_mem` sobre PyTorch SDPA (kernels memory-efficient y flash). El motor rechaza cualquier otra atencion.
-- Cabeza en CPU: la cabeza VBLL se ejecuta en CPU en float64; el modelo en bf16 en "cuda".
-- Latencia: mediana de 48 ms por pasada segun la model card.
-- Throughput: no disponible.
+- VRAM estimada: 24 GB solo para los pesos en bf16, mas las activaciones de las filas empaquetadas de hasta 32.768 tokens; se recomienda margen adicional sobre los 24 GB.
+- GPU probadas por el autor: 1 x H100 80 GB y 1 x RTX PRO 6000 96 GB, con torch 2.14.1 (CUDA 13.0) y transformers 5.12.1.
+- No cabe en GPUs de consumo de 24 GB sin margen para activaciones; no se documenta soporte de cuantizacion a 8 o 4 bits.
+- Despliegue: motor propio `dikit_engine.py` sobre Decision Index (`pip install "git+https://github.com/apolinario/decision-index@9eb2dbe..."`), con `PYTHONPATH` apuntando al snapshot del repositorio. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- La cabeza de calibracion se ejecuta en CPU en float64; el modelo en bf16 en CUDA.
+- Latencia: mediana de 48 ms por pasada segun la model card; el throughput no esta documentado. Los resultados en bf16 varian ligeramente entre tipos de GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muria | 11,96B | 32.768 | Decision por opcion multiple con cabeza calibrada | Apache-2.0 | Hugging Face + GitHub |
-| google/gemma-4-12B-it | ~12B (no confirmado en la informacion) | no disponible | Modelo base conversacional multimodal | no disponible en la informacion | Hugging Face |
-| plantwaterer/allec | 31B (segun la model card) | no disponible | Mismo diseno de entrenamiento, mayor tamano | no disponible en la informacion | Hugging Face |
+| muria | 11,96 B | 32.768 tokens por peticion | Decision probabilistica con cabeza calibrada | Apache-2.0 | Hugging Face (266 descargas) |
+| plantwaterer/allec | no disponible (referencia de 31B en el tablero) | no disponible | Mismo diseno de decision, mayor escala | no disponible | Hugging Face |
+| google/gemma-4-12B-it | no disponible en la informacion | no disponible | Modelo instruct generativo generalista | no disponible | Hugging Face |
 
-La comparativa con alternativas de la misma categoria (modelos de decision calibrada) no esta disponible en la informacion proporcionada.
+La comparacion con alternativas generativas del mismo tamano no es directa: muria no produce texto libre y su evaluacion se realiza sobre el tablero Decision Index, mientras que los modelos instruct se evaluan con benchmarks generativos. No se dispone de datos de MMLU, HumanEval o GSM8K para ninguno de los tres en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera respuestas de texto libre en su modo principal: devuelve probabilidades sobre opciones; usarlo como chatbot requiere adaptar el flujo.
-- La atencion bidireccional en capas completas es obligatoria: servir el modelo con la atencion estandar de transformers produce respuestas distintas e incorrectas.
-- Sin truncacion: las peticiones que exceden 32.768 tokens se reportan como no soportadas, lo que limita casos con documentos muy largos.
+- La salida es una distribucion de probabilidad sobre opciones, no texto generado; no es sustituible por un modelo de chat en tareas abiertas.
+- Requiere la funcion de atencion `jev_mem`; transformers con atencion causal estandar produce respuestas distintas. El motor rechaza cualquier otra atencion, lo que limita la portabilidad a otros stacks de inferencia.
+- Sin truncado: las peticiones que no caben en 32.768 tokens se reportan como no soportadas.
+- Solo se documenta bf16; no hay cuantizaciones publicadas, lo que encarece el despliegue.
+- La calibracion de la cabeza se ajusto sobre datos no comerciales segun la propia model card; conviene revisar las condiciones de uso comercial aunque la licencia de los pesos sea Apache-2.0.
 - Los resultados en bf16 varian ligeramente entre tipos de GPU, lo que puede afectar a la reproducibilidad de las probabilidades.
-- La calibracion de la cabeza se ajusto sobre un conjunto especifico (16.384 preguntas de ajuste y 4.086 de calibracion); su transferencia a dominios muy distintos no esta validada mas alla de los 39,8 puntos obtenidos en dominios nuevos.
-- El rendimiento en dominios nuevos (39,8) es notablemente inferior al de la suite publica (51,40), lo que sugiere degradacion fuera de distribucion.
-- Idiomas soportados no disponibles en la informacion; no se puede confirmar el comportamiento multilingue.
-- Sesgos conocidos: no disponibles en la informacion; al derivar de Gemma 4, hereda los sesgos del modelo base, no documentados aqui.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; el formato de salida restringido a opciones reduce el riesgo de texto inventado, pero no el de decisiones mal calibradas.
-- Uso comercial: permitido por Apache-2.0, aunque la model card menciona "Non-commercial data in the head" en relacion con los datos de calibracion, lo que conviene revisar antes de un despliegue comercial.
-- Requiere instalar el kit Decision Index desde un commit concreto de GitHub, lo que anade una dependencia externa al pipeline de produccion.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al tratarse de un fine-tune de Gemma 4, hereda los sesgos del modelo base, no cuantificados en la card.
+- Idiomas soportados no disponibles; no se garantiza un comportamiento multilingue calibrado.
+- El rendimiento en dominios nuevos es notablemente inferior (39,78) al de same-skill (53,50), lo que desaconseja su uso sin validacion en dominios alejados del entrenamiento.
 
 ## Enlaces
 
@@ -106,5 +99,4 @@ La comparativa con alternativas de la misma categoria (modelos de decision calib
 - Diseno de entrenamiento de referencia: https://huggingface.co/plantwaterer/allec
 - Espejo en GitHub (codigo y model card): https://github.com/treewaterer/muria
 - Kit Decision Index: https://github.com/apolinario/decision-index
-- Commit del kit usado en la evaluacion: https://github.com/apolinario/decision-index@9eb2dbe2a358004c8782c66e40a83ac07b953fec
-- Ejecucion de evaluacion (referencia truncada en la model card): https://huggingface.co/plantwaterer/muri
+- Tablero Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index

@@ -2,107 +2,90 @@
 
 ## Resumen
 
-Confucius4-T3PO-GGUF es una distribucion de cuantizaciones estaticas en formato GGUF del modelo netease-youdao/Confucius4-T3PO, publicada por el usuario mradermacher, conocido por convertir y cuantizar modelos abiertos para su uso con llama.cpp y derivados. No se trata por tanto de un modelo entrenado desde cero, sino de un artefacto de despliegue: el repositorio empaqueta multiples niveles de cuantizacion del mismo checkpoint base para facilitar su ejecucion en hardware diverso, desde GPUs de consumo hasta servidores.
+Confucius4-T3PO es un modelo de traduccion simultanea y en streaming desarrollado por NetEase Youdao, especializado en los pares de idiomas chino-ingles e ingles-chino. El modelo base, `netease-youdao/Confucius4-T3PO`, se distribuye con licencia Apache 2.0 y esta disenado para tareas de traduccion en tiempo real, donde la salida debe generarse de forma incremental a medida que llega la entrada, en lugar de esperar a disponer de la frase completa.
 
-El modelo subyacente, Confucius4-T3PO, procede de NetEase Youdao y pertenece a la familia Confucius, si bien la informacion proporcionada no incluye su model card original, su licencia ni la descripcion de su arquitectura o entrenamiento. El dato objetivo disponible es el recuento de parametros del checkpoint original en safetensors: 14.770.033.664 parametros, es decir, aproximadamente 14,8 mil millones, lo que situa al modelo en la categoria de 14-15B, con un tamano de repositorio de 93,9 GB debido a la coexistencia de todos los niveles de cuantizacion.
+La version aqui descrita es una cuantizacion GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo cuenta con aproximadamente 14.770 millones de parametros (14,77 B) en formato safetensors, lo que lo situa en la categoria de modelos de tamano medio con requisitos de memoria moderados cuando se cuantiza a 4 bits.
 
-La relevancia de esta ficha es practica: permite a un desarrollador saber que existe una via de ejecucion local del modelo mediante GGUF con 12 variantes de cuantizacion distintas (desde Q2_K hasta f16), pero tambien advierte de que la documentacion del modelo base esta ausente en la informacion disponible, por lo que cualquier evaluacion de capacidades, contexto o licencia requiere consultar directamente el repositorio de NetEase Youdao.
+La relevancia de este modelo radica en su enfoque especifico hacia la traduccion streaming, un caso de uso con demandas de latencia muy estrictas que los modelos de traduccion por lotes no cubren bien. Al estar disponible en GGUF, facilita su despliegue local en escenarios de interpretacion simultanea, subtitulado en vivo o comunicacion multilingue en tiempo real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: netease-youdao/Confucius4-T3PO) |
+| Arquitectura | no disponible (modelo base de tipo transformer, segun la libreria transformers) |
 | Parametros totales | 14.770.033.664 (14,77 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el checkpoint original esta en safetensors |
-| Version de cuantizacion | quantize_version: 2; output_tensor_quantised: 1 |
-| Tipo de conversion | hf (a partir del checkpoint Hugging Face del modelo base) |
-| Tamano del repositorio | 93,9 GB (todas las cuantizaciones en un mismo repo) |
-| Pipeline declarado | no disponible (tags: gguf, endpoints_compatible, conversational) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | chino (zh) e ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El repositorio es exclusivamente un artefacto de conversion: la model card se limita a indicar "static quants of https://huggingface.co/netease-youdao/Confucius4-T3PO" y una serie de metadatos de la herramienta de cuantizacion (version 2, cuantizacion de tensores de salida activada, tipo de conversion desde Hugging Face). No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. El modelo se distribuye a traves de la libreria transformers y cuenta con 14,77 mil millones de parametros, lo que sugiere una arquitectura transformer densa de tamano medio. No se especifica si emplea tecnicas como attention lineal, mezcla de expertos o decodificacion especulativa.
 
-En consecuencia, no es posible determinar si el modelo emplea un transformer denso clasico, una arquitectura MoE o un esquema hibrido. El unico indicio estructural es que el recuento total de parametros coincide con el numero de parametros almacenados, sin senales de parametros activos reducidos. La cuantizacion estatica aplicada cubre desde Q2_K (aproximadamente 2 bits por peso en la mayoria de tensores) hasta f16 sin perdida, con las variantes intermedias habituales de la familia K-quant de llama.cpp, incluida IQ4_XS como opcion de 4 bits con metodos de importancia.
+Respecto al entrenamiento, la model card del repositorio GGUF no incluye datos sobre el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La unica informacion disponible es la orientacion del modelo hacia tareas de traduccion simultanea y streaming, lo que implica un entrenamiento especifico para generar traducciones incrementales con baja latencia. El sufijo T3PO en el nombre del modelo base sugiere una variante de optimizacion de preferencias, pero no se confirma en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la unica etiqueta funcional declarada en el repositorio es "conversational", lo que apunta a un uso de dialogo multi-turno.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el artefacto GGUF esta pensado para servirse a traves de endpoints compatibles con la API de inferencia de Hugging Face (por ejemplo, text-generation-inference o soluciones equivalentes que consumen GGUF).
-- Razonamiento, codigo, matematicas, vision o audio: no disponible en la informacion proporcionada.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (la familia Confucius de NetEase Youdao se asocia historicamente a traduccion automatica, pero este extremo no se confirma en los datos disponibles).
-- Modo de pensamiento explicito (thinking mode): no disponible.
-- Capacidad de ejecucion local en CPU/GPU mixta: si, derivada del formato GGUF, no de una caracteristica del modelo en si.
+- Traduccion simultanea chino-ingles e ingles-chino, con generacion incremental de la salida.
+- Traduccion en streaming, disenada para producir fragmentos de traduccion a medida que se recibe la entrada.
+- Generacion de texto conversacional (tag `conversational`).
+- Soporte de los idiomas chino e ingles exclusivamente.
+- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision, audio ni modos de razonamiento extendido.
 
 ## Casos de uso
 
-- Despliegue local de un asistente conversacional en GPU de consumo: gracias a las variantes Q4_K_M (aproximadamente 9 GB) o IQ4_XS, el modelo puede ejecutarse con llama.cpp u Ollama en una GPU con 12-16 GB de VRAM, lo que permite prototipar aplicaciones de chat sin depender de APIs externas.
-- Servicio de inferencia en servidor con cuantizacion intermedia: las variantes Q5_K_M y Q6_K ofrecen un equilibrio entre calidad y memoria para despliegues con vLLM (soporte GGUF parcial) o llama.cpp server sobre GPUs de 16-24 GB.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 niveles distintos del mismo checkpoint, lo que lo hace util para medir la degradacion de calidad frente al coste de memoria en un pipeline de evaluacion propio.
-- Prototipado de producto conversacional antes de comprometer presupuesto de inferencia: al disponer de la version f16 y de versiones muy comprimidas, se puede validar la calidad del modelo base con f16 y despues desplegar con Q4_K_M o Q5_K_M si los resultados son aceptables.
-- Ejecucion en entornos sin GPU: las cuantizaciones Q2_K y Q3_K permiten inferencia en CPU con llama.cpp, util para demos offline o entornos de desarrollo sin acelerador.
-- Integracion en herramientas de escritorio o plugins: el formato GGUF es consumible por bindings de Python, Rust, Go y Node, lo que facilita incrustar el modelo en aplicaciones locales de escritorio.
-- Investigacion sobre tecnicas de cuantizacion: al convivir en un solo repositorio las variantes K-quant e IQ4_XS, resulta un caso de estudio para analisis de perplejidad y divergencia de salidas entre niveles de bits.
+- Interpretacion simultanea en reuniones: el modelo traduce en streaming conversaciones entre hablantes de chino e ingles, generando la salida de forma incremental para reducir la latencia percibida por los participantes.
+- Subtitulado en vivo: integrado en un pipeline de reconocimiento de voz, el modelo puede traducir los subtitulos a medida que se transcribe el audio, adecuado para retransmisiones o eventos en directo.
+- Atencion al cliente bilingue: permite gestionar conversaciones multi-turno entre clientes chinos e ingleses, traduciendo mensajes en tiempo real dentro de un chat de soporte.
+- Traduccion de reuniones y transcripciones: procesa flujos de texto continuo para generar traducciones alineadas con el original, util para actas y resumenes bilingues.
+- Comunicacion en videojuegos o chats en linea: el modelo puede traducir mensajes de chat entre jugadores de habla china e inglesa con baja latencia, gracias a su orientacion a streaming.
+- Despliegue local en estaciones de trabajo: las cuantizaciones GGUF permiten ejecutar el modelo en equipos con GPU de consumo para prototipos de traduccion en tiempo real sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los resultados de busqueda proporcionados incluyen datos de MMLU, HumanEval, GSM8K, MT-Bench ni metricas de traduccion del modelo base. Tampoco se documentan mediciones de throughput o latencia para ninguna de las cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos, sin contar cache KV ni overhead de runtime), calculada a partir de los 14,77 B de parametros:
-  - Q2_K: aproximadamente 5,6-6 GB
-  - Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 7,0 / 7,4 / 7,9 GB
-  - IQ4_XS: aproximadamente 8,0 GB
-  - Q4_K_S / Q4_K_M: aproximadamente 8,5 / 9,0 GB
-  - Q5_K_S / Q5_K_M: aproximadamente 10,1 / 10,5 GB
-  - Q6_K: aproximadamente 12,2 GB
-  - Q8_0: aproximadamente 15,7 GB
-  - f16: aproximadamente 29,5 GB
-- Sumar a esas cifras entre 1 y 4 GB adicionales para cache KV y buffers, en funcion de la longitud de contexto configurada (desconocida para este modelo).
-- GPU recomendadas: no disponibles en la informacion proporcionada. Como orientacion generica por tamano, las variantes de 4 bits caben en RTX 3060 12 GB, RTX 4070, RTX 4080 y RTX 4090; Q8_0 requiere una GPU de 24 GB (RTX 3090/4090) o reparto CPU/GPU; f16 necesita 40 GB o mas (A100 40/80 GB, H100, o dos GPUs de 24 GB).
-- Cabe en GPU de consumo: si, con las cuantizaciones de 2 a 5 bits en tarjetas de 12-16 GB; con las de 6 a 8 bits en tarjetas de 16-24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime que consuma GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia alojados que aceptan este formato; el soporte de vLLM para GGUF es parcial y depende de la version.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia segun cuantizacion (pesos, sin contar el contexto):
+  - Q2_K: ~5,9 GB
+  - Q3_K_S: ~6,8 GB
+  - Q3_K_M: ~7,4 GB
+  - Q3_K_L: ~8,0 GB
+  - IQ4_XS: ~8,3 GB
+  - Q4_K_S: ~8,7 GB
+  - Q4_K_M: ~9,1 GB
+  - Q5_K_S: ~10,4 GB
+  - Q5_K_M: ~10,6 GB
+  - Q6_K: ~12,2 GB
+  - Q8_0: ~15,8 GB
+- GPU recomendadas: no disponibles de forma especifica. Para cuantizaciones de 4 bits (Q4_K_M, ~9,1 GB) es necesario al menos 10-12 GB de VRAM efectiva, lo que incluye modelos como RTX 3080 de 10 GB, RTX 4080 o RTX 4090. Para Q8_0 (~15,8 GB) se recomienda una GPU de 16 GB o superior, como RTX 4090, A100 o H100.
+- Cabe en GPU de consumo: si, en cuantizaciones Q4 o inferiores con GPUs de 10-12 GB o mas; las cuantizaciones Q6 y Q8 requieren GPUs de gama alta o profesionales.
+- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF. El modelo base puede ejecutarse con transformers y, previsiblemente, con vLLM o TGI, aunque no se confirma en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-El repositorio no ofrece metricas ni documentacion del modelo base, por lo que la comparacion solo puede ser estructural (tamano y formato), no de rendimiento.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Confucius4-T3PO (este repo, GGUF) | 14,77 B | no disponible | GGUF (12 cuantizaciones) | no disponible | Hugging Face, autor mradermacher |
-| netease-youdao/Confucius4-T3PO | 14,77 B | no disponible | safetensors | no disponible | Hugging Face, NetEase Youdao |
-| Qwen2.5-14B-Instruct (referencia de categoria) | 14,7 B | 32.768 tokens | safetensors, GGUF, AWQ | Apache 2.0 | Hugging Face, Alibaba |
-| Mistral-Nemo-Instruct-2407 (referencia de categoria) | 12,2 B | 128.000 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face, Mistral AI y NVIDIA |
-
-Las dos ultimas filas se incluyen unicamente como referencia de categoria por tamano y formato, ya que no existen datos publicados que permitan comparar el rendimiento real de Confucius4-T3PO frente a ellos.
+No se dispone de informacion sobre modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa fiable con alternativas de traduccion simultanea o de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion del modelo base en el repositorio: no hay model card, ni descripcion de arquitectura, ni datos de entrenamiento, ni evaluacion de sesgos.
-- Licencia no declarada: no se puede confirmar que el uso comercial este permitido. Es imprescindible verificar la licencia en el repositorio original de NetEase Youdao antes de cualquier despliegue en produccion.
-- Idiomas soportados no declarados: no se puede asumir cobertura multilingue ni un rendimiento homogeneo entre idiomas.
-- Longitud de contexto desconocida: no es posible planificar aplicaciones que dependan de ventanas largas ni estimar con precision la memoria de la cache KV.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; ademas, la cuantizacion agresiva (Q2_K, Q3_K_S) tiende a incrementar la perplejidad y la probabilidad de degradacion en tareas de razonamiento o codigo.
-- Sin resultados de benchmarks: no hay evidencia publicada de calidad en tareas concretas, por lo que no se recomienda seleccionar este modelo para produccion sin una evaluacion propia.
-- Repositorio de 93,9 GB: la descarga completa incluye todas las cuantizaciones; conviene descargar solo el archivo GGUF del nivel deseado mediante descarga selectiva.
-- El contador de descargas y likes del repositorio es cero en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- Los metadatos de cuantizacion (quantize_version 2, output_tensor_quantised 1) implican una cuantizacion estatica con los tensores de salida tambien cuantizados; esto puede afectar ligeramente a la calidad respecto a esquemas que preservan ciertas capas en mayor precision.
+- El modelo solo soporta chino e ingles; no se ha confirmado soporte para otros idiomas.
+- No se dispone de informacion sobre sesgos conocidos ni sobre el riesgo de alucinacion en tareas de traduccion.
+- Se desconoce la longitud de contexto soportada, lo que limita la planificacion de despliegues con documentos largos.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar la calidad de la traduccion; se recomienda Q4_K_M o superior para produccion.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse el cumplimiento de las condiciones del modelo base y de los terminos de uso de los datos de entrenamiento, no detallados en la informacion disponible.
+- Al ser una cuantizacion estatica sin imatrix (segun la model card), la calidad puede ser inferior a la de cuantizaciones ponderadas equivalentes.
+- No se dispone de informacion sobre el rendimiento real en produccion, latencia ni throughput.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Confucius4-T3PO-GGUF
 - Modelo base: https://huggingface.co/netease-youdao/Confucius4-T3PO
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Organizacion NetEase Youdao en Hugging Face: https://huggingface.co/netease-youdao
-
-Nota: los resultados de busqueda web proporcionados no contenian ningun enlace relevante sobre este modelo; los resultados obtenidos trataban sobre ChatGPT, GitHub Copilot y GPT-SoVITS, sin relacion con Confucius4-T3PO.
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Confucius4-T3PO-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

@@ -2,83 +2,107 @@
 
 ## Resumen
 
-El modelo `kayceesamuel/Qwen3.5-9B-NF4DQ` es una cuantización NF4 con double quantization (NF4DQ) del modelo base Qwen3.5-9B, desarrollado por el usuario de Hugging Face kayceesamuel. Qwen3.5-9B es un modelo denso multimodal de 9 mil millones de parámetros perteneciente a la familia Qwen3.5 de Alibaba, diseñado para razonamiento eficiente, generación de código y comprensión visual en una arquitectura compacta. Esta versión cuantizada reduce significativamente los requisitos de memoria y cómputo, lo que permite su despliegue en hardware de consumo y entornos con recursos limitados, manteniendo un rendimiento cercano al modelo original.
+Qwen3.5-9B-NF4DQ es una cuantización del modelo Qwen/Qwen3.5-9B (8.953.803.264 parámetros) realizada por el usuario kayceesamuel mediante NF4DQ, un nuevo tipo de bloque ggml (tipo 43) que no forma parte de la implementación estándar de llama.cpp. El resultado ocupa 4,346 GiB, un 17,7 % menos que Q4_K_M, con un incremento de perplejidad de solo el 2,6 % (8,4181 frente a 8,2055 en wikitext-2 a contexto 512). Frente a Q3_K_M, de tamaño prácticamente idéntico, la perplejidad mejora un 9,5 %.
 
-La relevancia de esta ficha radica en que ofrece una alternativa accesible para desarrolladores que necesitan un modelo multimodal de alto rendimiento sin requerir GPUs de gama alta. La licencia Apache 2.0 facilita su uso comercial y su integración en productos. Aunque la información específica de esta cuantización es escasa, los datos del modelo base indican que soporta contextos largos de hasta 262K-1M tokens, lo que lo hace adecuado para tareas de razonamiento complejo y agentes.
+La relevancia de esta ficha no reside en el modelo base, sino en el formato de cuantización: NF4DQ almacena 1024 pesos en 532 bytes (4,1562 bits por peso) combinando índices NF4 de 4 bits sobre un codebook int8, un índice de escala de 4 bits por cada subbloque de 32 pesos y una superescala fp16 por bloque. Esa segunda etapa de cuantización de las escalas es lo que permite bajar de los 4,50 bits por peso de Q4_K.
+
+La advertencia principal es operativa: el archivo no carga en llama.cpp, Ollama ni LM Studio de serie. Requiere la aplicación CIU (macOS Apple Silicon y Windows x64) o compilar la bifurcación `nf4dq` del repositorio de runciu. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (visión-lenguaje) |
-| Parametros totales | 9 mil millones (9B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262K-1M tokens (según fuente del modelo base) |
-| Tipos de cuantizacion | NF4DQ (NF4 con double quantization) |
-| Idiomas soportados | No disponible (el modelo base Qwen3.5 es multilingüe, pero no se confirma para esta versión) |
+| Arquitectura | no disponible (modelo base Qwen3.5-9B; el repo solo distribuye pesos GGUF cuantizados) |
+| Parámetros totales | 8.953.803.264 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de uso emplean `-c 8192` y `-c 4096` |
+| Tipos de cuantización | NF4DQ (ggml type 43), 4,1562 bits por peso; 1024 pesos en 532 bytes |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (presumiblemente safetensors, pero no confirmado) |
+| Formato de pesos | GGUF (4,346 GiB; repositorio de 4,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.5-9B es un modelo denso basado en la arquitectura transformer, con un enfoque de fusión temprana de tokens multimodales que integra visión y lenguaje desde las primeras capas. Según la información disponible, el entrenamiento incorpora técnicas de aprendizaje por refuerzo a gran escala y mejoras en eficiencia arquitectónica, logrando un rendimiento superior a Qwen3-30B en la mayoría de benchmarks y superando a GPT-5-Nano en tareas de visión. El modelo base fue entrenado con un dataset multimodal extenso, aunque no se especifican los detalles exactos de composición ni el número de tokens.
+No se dispone de información sobre la arquitectura del modelo base Qwen3.5-9B en la documentación proporcionada: no se detalla si es un transformer denso, MoE o híbrido, ni el volumen o composición de los datos de entrenamiento, ni si hubo fases de RLHF o DPO. El repositorio es exclusivamente una distribución de pesos cuantizados y no documenta el proceso de preentrenamiento ni el alineamiento.
 
-La versión NF4DQ aplica cuantización de 4 bits con double quantization, una técnica que reduce el tamaño del modelo a aproximadamente un cuarto del original, minimizando la pérdida de precisión mediante una segunda cuantización de las constantes de escala. Esta técnica es común en despliegues locales y en entornos con VRAM limitada, y es compatible con frameworks como llama.cpp y vLLM.
+La innovación técnica documentada es el formato NF4DQ. Se trata de un tipo de bloque ggml nuevo, no una receta compuesta de tipos existentes. Cada bloque almacena los pesos como índices de 4 bits en una tabla NF4, acompañados de un índice de escala de 4 bits por cada subbloque de 32 pesos que apunta a un codebook fijo, más una superescala fp16 por bloque. La model card indica que el modelo no dispone de cabeza de predicción multi-token, por lo que `--spec-type draft-mtp` no es aplicable. Las notas de diseño, los datos de ajuste de cada constante y los enfoques medidos y descartados están en el documento de diseño de la bifurcación.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: el modelo base destaca en tareas de razonamiento lógico y matemático, superando a modelos de mayor tamaño como Qwen3-30B.
-- Comprensión visual: al ser multimodal, puede procesar imágenes y responder preguntas sobre su contenido, con rendimiento superior a GPT-5-Nano en benchmarks de visión.
-- Generación de código: soporta tareas de programación, incluyendo generación, completado y depuración de código en múltiples lenguajes.
-- Comportamiento agéntico: diseñado para tareas de agente, incluyendo planificación multi-paso y uso de herramientas (tool calling).
-- Contexto largo: con una ventana de hasta 1M tokens, puede manejar documentos extensos, conversaciones largas y razonamiento sobre grandes volúmenes de información.
-- Multilingüismo: aunque no se confirma para esta cuantización, el modelo base Qwen3.5 es multilingüe, con soporte para numerosos idiomas.
+- Generación de texto conversacional: la etiqueta `conversational` y el pipeline `text-generation` confirman el uso previsto.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con APIs compatibles con OpenAI a través de CIU, que sirve en `127.0.0.1:8674`.
+- Inferencia local en CPU y GPU: soporte de backend CUDA y Metal en la bifurcación; salida idéntica token a token entre CPU y Metal a temperatura 0.
+- Razonamiento, código, matemáticas, visión, tool calling, agentes y capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Asistentes virtuales con visión: integrar el modelo en un chatbot que pueda analizar imágenes enviadas por el usuario (por ejemplo, fotografías de productos, capturas de pantalla) y responder con texto coherente, gracias a su capacidad multimodal y contexto largo.
-- Análisis de documentos extensos: procesar contratos, informes o artículos científicos de cientos de páginas, extrayendo información relevante y respondiendo preguntas específicas, aprovechando la ventana de contexto de hasta 1M tokens.
-- Generación de código en entornos de desarrollo: usar el modelo como autocompletado o asistente de programación en IDEs, con soporte para múltiples lenguajes y razonamiento sobre el contexto del proyecto.
-- Automatización de atención al cliente: desplegar el modelo en un sistema de tickets que gestione conversaciones multi-turno, manteniendo el historial completo y resolviendo consultas complejas con razonamiento paso a paso.
-- Agentes autónomos para tareas web: el modelo puede actuar como agente que navega por páginas web, extrae datos y ejecuta acciones, gracias a su capacidad de tool calling y planificación multi-paso.
-- Educación y tutoría personalizada: crear un tutor que explique conceptos de matemáticas o ciencias, con capacidad de procesar diagramas o fórmulas escritas a mano, y adaptar las explicaciones al nivel del estudiante.
+- Despliegue en equipos con memoria ajustada: con 4,346 GiB, el modelo cabe completo en una GPU de 16 GB (el ejemplo de Colab con T4 lo confirma) dejando espacio para caché de contexto; es adecuado cuando Q4_K_M (5,280 GiB) no entra pero Q3_K_M degrada demasiado la calidad.
+- Estaciones de trabajo Apple Silicon de gama baja: en un M1 con 8 GB y Metal se miden 13,19 t/s en prefill y 10,28 t/s en decode, suficiente para asistentes interactivos locales sin conexión.
+- Servicio de API local compatible con OpenAI: CIU expone el modelo en `127.0.0.1:8674`, de modo que herramientas existentes pueden apuntar a él sin cambios de código, útil para prototipado con datos que no deben salir de la máquina.
+- Evaluación de formatos de cuantización: investigadores que comparan PPL y tamaño entre Q4_K_M, Q3_K_M y NF4DQ sobre el mismo checkpoint pueden reproducir las mediciones con el binario de la bifurcación.
+- Entornos de CI con GPU modesta: la compilación en T4 con `-DCMAKE_CUDA_ARCHITECTURES="75;80;89"` permite levantar un servidor en unos quince minutos para pruebas de integración.
+- Inferencia en CPU como respaldo: aunque lenta (0,81 t/s prefill, 0,72 t/s decode en M1 sin Metal), sirve para validación funcional y comparación de salidas deterministas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para la versión cuantizada NF4DQ en la información disponible. Los datos de rendimiento del modelo base Qwen3.5-9B indican que supera a Qwen3-30B en la mayoría de benchmarks y a GPT-5-Nano en tareas de visión, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K, etc.) en las fuentes consultadas. Se recomienda consultar la documentación oficial de Qwen para obtener métricas detalladas.
+Perplejidad en wikitext-2, contexto 512, A100-80GB, archivo de test completo, mismos pesos de origen, mismo binario:
+
+| Build | Tamaño | PPL @512 |
+|---|---|---|
+| Q4_K_M | 5,280 GiB | 8,2055 |
+| NF4DQ | 4,346 GiB | 8,4181 |
+| Q3_K_M | 4,342 GiB | 9,2978 |
+
+Throughput en Apple M1 de 8 GB con Metal:
+
+| Configuración | Prefill | Decode |
+|---|---|---|
+| Metal | 13,19 t/s | 10,28 t/s |
+| Solo CPU | 0,81 t/s | 0,72 t/s |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de capacidad en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización NF4DQ, un modelo de 9B parámetros ocupa aproximadamente 4,5-5 GB en memoria, más overhead de activaciones. Se estima que se puede ejecutar con 6-8 GB de VRAM para contextos moderados.
-- GPU recomendadas: tarjetas de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o RTX 4090 (24 GB) son suficientes. También puede ejecutarse en GPUs de datacenter como A10 o A100, aunque no son necesarias.
-- Compatibilidad con hardware de consumo: sí, cabe en GPUs de gama media y baja, así como en Apple Silicon con suficiente memoria unificada.
-- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM, TGI y otros frameworks que soporten cuantización NF4. También puede usarse con transformers de Hugging Face mediante la carga de pesos cuantizados.
-- Latencia y throughput: no se dispone de datos específicos para esta cuantización. En general, un modelo 9B en NF4 puede generar entre 20-40 tokens por segundo en una RTX 4090, dependiendo del contexto y la implementación.
+- VRAM estimada: 4,346 GiB para los pesos; con contexto de 8k y `-np 1` hay que sumar la caché KV correspondiente.
+- GPU recomendadas: A100-80GB para las mediciones de referencia; T4 de 16 GB validada en el ejemplo de Colab; cualquier GPU NVIDIA con soporte CUDA y suficiente VRAM.
+- Consumer GPU: cabe en tarjetas de 8 GB o más; en un M1 de 8 GB funciona con Metal.
+- Backends: CUDA y Metal en la bifurcación `nf4dq`; no hay backend Vulkan. No funciona con llama.cpp, Ollama ni LM Studio de serie.
+- Opciones de despliegue: CIU (macOS Apple Silicon y Windows 10/11 x64; Intel Mac y Linux no soportados aún) o compilación manual de la bifurcación con `cmake -B build -DCMAKE_BUILD_TYPE=Release` y `-DGGML_CUDA=ON` para NVIDIA.
+- Aviso de contexto: `llama-server` usa 4 slots por defecto y `-c` es por slot; sin `-np 1`, una petición de 8k asigna 32k tokens de caché.
+- Latencia y throughput: ver tabla de benchmarks; el M1 representa el suelo de ancho de banda de memoria de la gama Apple Silicon, no una cifra representativa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Notas |
-|---|---|---|---|---|---|
-| Qwen3.5-9B (base) | 9B | 262K-1M | Sí | Apache 2.0 | Modelo original, mayor precisión pero mayor uso de memoria |
-| Qwen3-30B | 30B | 128K (aprox.) | No (solo texto) | Apache 2.0 | Modelo más grande, superado por Qwen3.5-9B en la mayoría de benchmarks |
-| GPT-5-Nano | No disponible | No disponible | Sí | Propietaria | Superado por Qwen3.5-9B en tareas de visión |
+| Modelo | Parámetros | Contexto | Tamaño | PPL @512 (wikitext-2) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.5-9B-NF4DQ | 8.953.803.264 | no disponible | 4,346 GiB | 8,4181 | Apache 2.0 | Requiere CIU o bifurcación nf4dq |
+| Qwen3.5-9B Q4_K_M | 8.953.803.264 | no disponible | 5,280 GiB | 8,2055 | Apache 2.0 | llama.cpp estándar |
+| Qwen3.5-9B Q3_K_M | 8.953.803.264 | no disponible | 4,342 GiB | 9,2978 | Apache 2.0 | llama.cpp estándar |
 
-La versión NF4DQ se posiciona como una alternativa eficiente en memoria al modelo base, con una pérdida de precisión mínima gracias a la double quantization. Comparada con Qwen3-30B, ofrece un rendimiento superior con un tamaño mucho menor, lo que la hace más adecuada para despliegues en edge o en GPUs de consumo.
+La comparativa se limita a las cuantizaciones del mismo modelo base documentadas por el autor; no se dispone de datos de modelos alternativos de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización NF4DQ introduce una ligera degradación en la precisión numérica, que puede afectar a tareas que requieren alta exactitud, como matemáticas avanzadas o razonamiento lógico muy fino.
-- No se dispone de información sobre sesgos específicos del modelo, pero al ser un modelo entrenado con datos web, puede heredar sesgos sociales, culturales o de género presentes en el corpus de entrenamiento.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en contextos largos o con preguntas ambiguas.
-- La ventana de contexto de 262K-1M es teórica; en la práctica, el rendimiento puede degradarse con contextos muy largos y el uso de memoria aumenta considerablemente.
-- La licencia Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar los términos de la familia Qwen para asegurar el cumplimiento.
-- No se han publicado resultados de benchmarks específicos para esta cuantización, por lo que el rendimiento real puede variar respecto al modelo base.
+- Incompatibilidad con herramientas estándar: el archivo no carga en llama.cpp, Ollama ni LM Studio sin la bifurcación o CIU; descargarlo sin ellas deja un archivo de 4,35 GiB que ninguna herramienta abre.
+- Colisión de tipos futura: el tipo 43 es el siguiente hueco libre en upstream; si upstream lo reclama, una compilación estándar leerá estos archivos como ese tipo y decodificará basura en lugar de rechazar la carga. Ante salidas incorrectas, verificar primero qué binario se ejecuta.
+- Plataformas no soportadas: CIU no soporta Intel Mac ni Linux; la vía manual requiere compilar.
+- Backend limitado: no hay soporte Vulkan.
+- Sin decodificación especulativa: el modelo carece de cabeza de predicción multi-token.
+- Pérdida de calidad respecto a Q4_K_M: 2,6 % más de perplejidad a cambio de un 17,7 % menos de tamaño.
+- Sesgos, riesgo de alucinación y limitaciones idiomáticas: no disponible en la información proporcionada.
+- Licencia: Apache 2.0, apta para uso comercial; el autor señala que la cuantización no crea una obra nueva.
+- Builds sin firma de código: el primer arranque de CIU requiere un paso adicional descrito en `FIRST-RUN.txt`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kayceesamuel/Qwen3.5-9B-NF4DQ
-- Página de Qwen3.5:9b en Ollama: https://ollama.com/library/qwen3.5:9b
-- Catálogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.5-9b
-- Ficha en NanoGPT: https://nano-gpt.com/models/text/qwen/qwen3.5-9b
-- Ficha en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/
-- Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-5-9b/
+- Modelo en Hugging Face: https://huggingface.co/kayceesamuel/Qwen3.5-9B-NF4DQ
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Bifurcación de llama.cpp con soporte NF4DQ: https://github.com/runciu/llama.cpp/tree/nf4dq
+- Binarios precompilados de llama-server: https://github.com/runciu/llama.cpp/releases
+- Documento de diseño de NF4DQ: https://github.com/runciu/llama.cpp/blob/nf4dq/docs/nf4dq-design.md
+- Aplicación CIU (macOS Apple Silicon): https://github.com/runciu/ciu/releases/latest/download/ciu-macos-arm64.zip
+- Aplicación CIU (Windows x64): https://github.com/runciu/ciu/releases/latest/download/ciu-windows-x64.zip
+- Issues de CIU: https://github.com/runciu/ciu/issues
+- Contacto del autor: hello@runciu.com

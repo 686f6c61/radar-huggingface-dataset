@@ -1,91 +1,100 @@
 # gradium/phonon-31m-en-compute-flow
 
 ## Resumen
-Phonon-31m-en-compute-flow es un paquete de despliegue del modelo de sintesis de voz (text-to-speech) phonon-31m-en, desarrollado por Gradium, adaptado para funcionar con Arm Compute Flow. Se trata de la misma red neuronal que el modelo original, pero reempaquetada en multiples formatos (ONNX, GGUF, LiteRT/TFLite) para integrarse en el ecosistema de inferencia de Arm sin necesidad de modificar codigo, ya que Phonon comparte arquitectura con Pocket TTS de Kyutai.
 
-El modelo cuenta con 18.916.352 parametros reales (aunque se comercializa como "31m" por convencion de la familia) y esta especializado exclusivamente en ingles. Su relevancia actual radica en que permite ejecutar sintesis de voz de alta calidad en dispositivos de borde (edge), moviles y navegadores, con un peso total de repositorio de solo 0,1 GB, lo que lo hace apto para despliegues con recursos muy limitados.
+phonon-31m-en-compute-flow es un paquete de despliegue del modelo de sintesis de voz (text-to-speech) phonon-31m-en de Gradium, adaptado especificamente para Arm Compute Flow. No se trata de un modelo nuevo: es el mismo modelo base, con los mismos pesos convertidos, empaquetado en los formatos que consume el runtime de Compute Flow (ONNX, GGUF, LiteRT y SentencePiece). Su interes radica en que permite ejecutar TTS de baja latencia sobre hardware Arm usando el brick estandar `tts:pocket-tts` sin modificar codigo, ya que Phonon comparte arquitectura con Pocket TTS de Kyutai.
 
-La licencia Apache 2.0 y la disponibilidad de formatos optimizados para llama.cpp, ONNX Runtime y LiteRT lo posicionan como una alternativa practica para aplicaciones de voz en tiempo real que requieren baja latencia y no pueden depender de servicios en la nube.
+El modelo es un sistema TTS generativo basado en flow matching, con un transformer de aproximadamente 18,9 millones de parametros y un decodificador Mimi en formato LiteRT a precision completa. El repositorio ocupa unos 0,1 GB y esta pensado para inferencia en dispositivo (edge), no para servidores de gran escala. La licencia Apache 2.0 facilita su integracion comercial, aunque el modelo solo soporta ingles.
+
+Su relevancia actual esta en la tendencia a empaquetar modelos pequenos de voz para despliegue en movil y sistemas embebidos. Frente al runtime nativo de Phonon (CLI, Python, navegador, iOS, Android), esta variante prioriza la portabilidad a traves de Compute Flow, a costa de algunas diferencias numericas y funcionales que el autor documenta explicitamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de flow-matching (basado en Pocket TTS) con decodificador Mimi |
-| Parametros totales | 18.916.352 |
+| Arquitectura | Transformer de flow matching (generacion de latentes) con decodificador Mimi; compatible con Pocket TTS |
+| Parametros totales | 18.916.352 (segun safetensors del modelo base) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (limitado a 500 frames, 40 segundos de audio por peticion) |
-| Tipos de cuantizacion | Q8_0 (GGUF), f32 (LiteRT/TFLite), ONNX (precision no especificada) |
+| Longitud de contexto | no disponible (limite practico: 500 frames, 40 segundos de audio por peticion) |
+| Tipos de cuantizacion | Q8_0 (8 bits) en el transformer de flow matching; decodificador Mimi en f32 |
 | Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF, ONNX, TFLite, NPY, SentencePiece |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (flowlm.q8_0.gguf), ONNX (text_encoder, simple_mlpada_ln, latent_proj), LiteRT/TFLite (mimi_decoder.tflite), SentencePiece (tokenizer.model), NumPy (assets) |
 
 ## Arquitectura y entrenamiento
-El modelo se basa en la arquitectura de Pocket TTS de Kyutai, que combina un transformer de flow-matching para generar latentes de audio paso a paso, una cabeza de flujo (flow head) que muestrea un latente por paso y una cabeza de fin de voz (end-of-speech head). El decodificador Mimi, desarrollado tambien por Kyutai, convierte los latentes en audio streaming a precision completa (f32) mediante LiteRT.
 
-El entrenamiento se realizo sobre datos no especificados en la informacion disponible. No se detalla el numero de tokens, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La innovacion tecnica principal reside en su empaquetado para Compute Flow: el transformer de flow-matching se exporta a GGUF con cuantizacion Q8_0 para llama.cpp, mientras que el encoder de texto, la proyeccion de latentes y las cabezas se exportan a ONNX Runtime, y el decodificador Mimi a TFLite. Esta division permite ejecutar cada componente en el runtime mas adecuado para hardware Arm.
+El modelo sigue el diseno de Pocket TTS: un transformer de flow matching que genera latentes de audio frame a frame, condicionado por embeddings de texto, y un decodificador neuronal Mimi (codec de Kyutai) que convierte esos latentes en forma de onda. El texto se procesa con un tokenizador SentencePiece y una tabla de embeddings exportada a ONNX. La generacion es autorregresiva a nivel de frame, con una proyeccion (`latent_proj.onnx`) que realimenta el latente generado como entrada del siguiente frame, y cabezas separadas (`simple_mlpada_ln.onnx`) para el flow head y la deteccion de fin de habla.
+
+No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del corpus ni si se aplicaron tecnicas de RLHF o DPO. El autor indica que este paquete se convirtio desde los pesos originales y se verifico componente a componente contra el runtime de Phonon sobre las mismas entradas. Las diferencias documentadas son cuatro: llama.cpp usa la aproximacion tanh de GELU en lugar de la exacta; los condicionadores de hablante y duracion se pliegan en un sesgo constante con sus valores por defecto (no modificables); el brick conserva dos frames mas tras el fin de habla y usa su propio generador de ruido, por lo que el audio no es identico muestra a muestra; y el prompt de voz se reinyecta en cada peticion, lo que retrasa el primer audio respecto al runtime nativo.
 
 ## Capacidades
-- Sintesis de voz (text-to-speech) en ingles a partir de texto plano.
-- Generacion de audio streaming con decodificador Mimi a 40 segundos maximo por peticion (500 frames).
-- Integracion con Arm Compute Flow mediante el brick `tts:pocket-tts` sin cambios de codigo.
-- Soporte de tokenizacion SentencePiece para el texto de entrada.
-- Voz por defecto incluida en el paquete (assets/default.npy).
-- No soporta tool calling, function calling ni razonamiento multi-paso.
-- No dispone de modo thinking, vision ni audio de entrada.
-- Multilingue: no, unicamente ingles.
+
+- Sintesis de voz en ingles a partir de texto, con salida de audio streaming.
+- Generacion de hasta 40 segundos de audio por peticion (500 frames en el manifiesto).
+- Deteccion automatica de fin de habla mediante una cabeza dedicada y un umbral de +4,0.
+- Voz por defecto incluida en el paquete (`assets/default.npy`); no incluye otras voces.
+- Muestreo con temperatura 0,3 (parametro `rng_std` en el manifiesto es su raiz cuadrada).
+- Integracion directa con Arm Compute Flow mediante el brick `tts:pocket-tts` y el identificador `phonon-31m-en-q8-0`.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente TTS.
+- No soporta vision, audio de entrada ni otras modalidades.
+- Capacidad multilingue limitada al ingles; el texto debe escribirse con numeros, simbolos y abreviaturas desarrollados en palabras, ya que el brick no normaliza.
 
 ## Casos de uso
-- Sintesis de voz en aplicaciones moviles Android e iOS: el modelo se puede integrar mediante LiteRT y el runtime de Phonon, permitiendo generar voz en el dispositivo sin conexion a internet, con un peso inferior a 75 MB.
-- Lectura de textos en navegador: al ejecutarse en el navegador con un peso reducido, permite convertir articulos o notificaciones en audio en tiempo real sin enviar datos a servidores externos.
-- Asistentes de voz para dispositivos IoT: gracias a su tamano reducido y a la compatibilidad con Arm Compute Flow, puede ejecutarse en placas como Raspberry Pi o dispositivos con CPU Arm de gama baja para dar respuestas habladas.
-- Accesibilidad para personas con discapacidad visual: integrado en aplicaciones de lectura de pantalla, convierte texto en voz de forma local, eliminando la dependencia de APIs en la nube y reduciendo la latencia.
-- Generacion de avisos y alertas en sistemas embebidos: el modelo puede sintetizar mensajes cortos (hasta 40 segundos) para sistemas de navegacion, electrodomesticos o maquinaria industrial que requieran feedback auditivo.
-- Pruebas automatizadas de interfaces de voz: los desarrolladores pueden generar audio de prueba con la voz por defecto para validar pipelines de reconocimiento de voz o sistemas de dialogo, sin coste por peticion.
-- Creacion de contenido educativo en ingles: sintesis de lecciones o narraciones para plataformas de e-learning que necesiten generar audio bajo demanda sin depender de servicios externos.
+
+- Sintesis de voz en dispositivos Arm: el paquete esta disenado para ejecutarse en hardware Arm mediante Compute Flow, lo que permite integrar TTS en sistemas embebidos, wearables o equipos de sobremesa sin depender de la nube.
+- Asistentes de voz locales: con un modelo de 18,9 millones de parametros y un repositorio de 0,1 GB, cabe en dispositivos con recursos limitados y permite respuestas habladas sin enviar texto a un servidor externo.
+- Lectura de notificaciones y accesibilidad: la ventana de 40 segundos por peticion cubre avisos, mensajes cortos y fragmentos de interfaz; el flujo streaming del decodificador Mimi reduce la latencia percibida.
+- Prototipado rapido de productos de voz: el comando `compute-flow model install tts:pocket-tts phonon-31m-en-q8-0` descarga y verifica el modelo contra `SHA256SUMS`, lo que simplifica la puesta en marcha en equipos de desarrollo.
+- Generacion de audio para pruebas automatizadas: al ser determinista en estructura (con las salvedades de ruido documentadas), sirve para validar pipelines de audio en CI sin depender de servicios externos.
+- Sistemas de interaccion por voz en ingles en entornos con conectividad limitada: al ejecutarse en local, mantiene la funcionalidad sin acceso a internet y con la licencia Apache 2.0 para uso comercial.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: al tratarse de un modelo de 18,9 millones de parametros, la huella de memoria es muy reducida. En cuantizacion Q8_0, el transformer ocupa aproximadamente 19 MB; el resto de componentes (ONNX, TFLite) anaden unos pocos MB adicionales. El paquete completo pesa 0,1 GB.
-- GPU recomendadas: no se especifican GPU dedicadas. El modelo esta disenado para ejecutarse en CPU Arm, NPU o GPU integrada en dispositivos de borde.
-- Cabe en GPU consumer: si, en cualquier GPU consumer, aunque su uso tipico es en CPU o aceleradores de borde.
-- Opciones de despliegue: Arm Compute Flow (brick `tts:pocket-tts`), llama.cpp (para el transformer GGUF), ONNX Runtime (para encoder y cabezas), LiteRT/TFLite (para el decodificador Mimi). Tambien existe un runtime propio de Phonon en GitHub (gradium-ai/xn-ptts) para linea de comandos, Python, navegador, iOS y Android.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Se menciona que el modelo permite TTS en navegadores con un peso inferior a 75 MB, pero sin cifras concretas de latencia.
+
+- VRAM estimada: no disponible de forma explicita. Con 18,9 millones de parametros en Q8_0 para el transformer y el decodificador Mimi en f32, el modelo es muy ligero; el repositorio completo ocupa 0,1 GB.
+- GPU recomendadas: no disponible. El destino principal es hardware Arm con Compute Flow, no GPU de servidor.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; el modelo esta empaquetado para LiteRT, ONNX Runtime y llama.cpp, lo que en principio permite ejecucion en CPU y en aceleradores compatibles.
+- Opciones de despliegue: Arm Compute Flow (brick `tts:pocket-tts`), con componentes ejecutados por ONNX Runtime, llama.cpp y LiteRT. Para el runtime nativo de Phonon (CLI, Python, navegador, iOS, Android) existe el paquete `gradium/phonon-31m-en`; para llama.cpp y audio.cpp, `gradium/phonon-31m-en-llamacpp` y `gradium/phonon-31m-en-audiocpp`.
+- Latencia y throughput: no disponibles. El autor senala que el primer audio llega mas tarde que en el runtime de Phonon porque el prompt de voz se reinyecta en cada peticion, y que el brick conserva dos frames adicionales tras el fin de habla.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| gradium/phonon-31m-en-compute-flow | 18,9 M | 500 frames (40 s audio) | en | Apache 2.0 | GGUF, ONNX, TFLite | Hugging Face |
-| gradium/phonon-31m-en | no disponible | no disponible | en | Apache 2.0 | safetensors | Hugging Face |
-| Kokoro | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto / limite | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| gradium/phonon-31m-en-compute-flow | 18,9 M | 40 s de audio por peticion | en | Apache 2.0 | GGUF, ONNX, LiteRT, SentencePiece |
+| gradium/phonon-31m-en | 18,9 M (mismo modelo) | 40 s de audio por peticion | en | Apache 2.0 | pesos del runtime Phonon |
+| gradium/phonon-31m-en-llamacpp | 18,9 M (mismo modelo) | no disponible | en | Apache 2.0 | GGUF para llama.cpp |
+| gradium/phonon-31m-en-audiocpp | 18,9 M (mismo modelo) | no disponible | en | Apache 2.0 | formato de audio.cpp |
 
-No se dispone de datos suficientes para una comparativa cuantitativa con alternativas como Kokoro. La informacion disponible solo menciona que Phonon compite con Kokoro en el segmento de TTS en dispositivo, pero sin cifras de rendimiento.
+No se dispone de datos de benchmarks ni de comparaciones con modelos TTS de otros desarrolladores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- El modelo solo soporta ingles. No se debe esperar un rendimiento adecuado en otros idiomas.
-- La voz incluida es unicamente la voz por defecto del modelo. No se pueden seleccionar otras voces sin modificar el paquete.
-- La longitud maxima de audio por peticion es de 40 segundos (500 frames). Textos mas largos deben dividirse en fragmentos.
-- El texto de entrada debe escribirse con numeros, simbolos y abreviaturas desarrollados en palabras. El runtime de Phonon realiza esta normalizacion con `--lang en`, pero el brick de Compute Flow no lo hace automaticamente.
-- La temperatura de muestreo recomendada es 0,3. El umbral de fin de voz es +4,0. Modificar estos valores puede degradar la calidad.
-- El paquete no es identico muestra a muestra al runtime original de Phonon: la aproximacion tanh de GELU en llama.cpp, la fijacion de los condicionadores (numero de hablantes y duracion) como sesgo constante, y el uso de un generador de ruido propio introducen diferencias sutiles en el audio.
-- El brick alimenta el prompt de voz al modelo en cada peticion, por lo que el primer audio tarda mas que en el runtime de Phonon, que condiciona la voz una sola vez.
-- Riesgo de alucinacion: no aplica de la misma forma que en modelos de lenguaje, pero puede generar artefactos de audio o pronunciaciones incorrectas en textos complejos o poco frecuentes.
-- Licencia Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y atribuir a Gradium, Kyutai y los componentes subyacentes (Pocket TTS, Mimi).
+
+- Solo soporta ingles; no hay capacidades multilingues.
+- Una unica voz (la voz por defecto del modelo); no se pueden seleccionar otras voces ni modificar los condicionadores de hablante o duracion, que estan fijados como sesgo constante.
+- El texto no se normaliza: numeros, simbolos y abreviaturas deben escribirse en palabras.
+- Limite de 500 frames (40 segundos) por peticion.
+- Diferencias numericas respecto al runtime de Phonon: aproximacion tanh de GELU en llama.cpp, dos frames extra tras el fin de habla y generador de ruido propio, por lo que el audio no es identico muestra a muestra.
+- Mayor latencia inicial que el runtime nativo al reinyectar el prompt de voz en cada peticion.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo TTS, el riesgo se manifiesta en pronunciacion incorrecta o prosodia anomalia, no en contenido factual.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo se apoya en Pocket TTS y el codec Mimi de Kyutai; conviene revisar las condiciones de esos componentes.
+- El paquete depende de la version del registro de bricks de Compute Flow; si `compute-flow model install` no encuentra el modelo, hay que borrar `cache.json` y ejecutar `compute-flow update`.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/gradium/phonon-31m-en-compute-flow
+
+- Modelo en Hugging Face: https://huggingface.co/gradium/phonon-31m-en-compute-flow
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
-- Version para llama.cpp: https://huggingface.co/gradium/phonon-31m-en-llamacpp
-- Version para audio.cpp: https://huggingface.co/gradium/phonon-31m-en-audiocpp
-- Blog de Gradium: https://gradium.ai/blog/release-phonon-open-weight
-- Documentacion de Transformers: https://huggingface.co/docs/transformers/model_doc/gradium_phonon_tts
-- Repositorio del runtime: https://github.com/gradium-ai/xn-ptts
+- Variante para llama.cpp: https://huggingface.co/gradium/phonon-31m-en-llamacpp
+- Variante para audio.cpp: https://huggingface.co/gradium/phonon-31m-en-audiocpp
+- Coleccion de modelos Phonon: https://huggingface.co/collections/gradium/phonon
+- Runtime en GitHub: https://github.com/gradium-ai/xn-ptts
 - Arm Compute Flow: https://github.com/ARM-software/compute-flow
+- Bricks de Compute Flow: https://github.com/ARM-software/compute-flow-bricks
 - Pocket TTS (Kyutai): https://github.com/kyutai-labs/pocket-tts
-- Coleccion Phonon: https://huggingface.co/collections/gradium/phonon
-- Articulo en Unite.AI: https://www.unite.ai/gradiums-on-device-phonon-tts-passes-200-000-downloads-in-two-weeks/
-- Articulo en AlphaSignal: https://alphasignal.ai/news/gradium-s-phonon-runs-text-to-speech-in-browsers-at-under-75-mb
-- Comparativa con Kokoro en explainx.ai: https://explainx.ai/blog/gradium-phonon-31m-open-on-device-tts-apache-browser-10ms-kokoro-comparison-2026
+- Sitio de Gradium: https://gradium.ai/
+- Blog de Gradium: https://gradium.ai/blog/gradium
+- Articulo de Le Monde sobre Gradium: https://www.lemonde.fr/economie/article/2025/12/02/gradium-nouvelle-start-up-francaise-specialiste-d-ia-vocale_6655699_3234.html
+- Articulo de L'Usine Digitale sobre la financiacion de Gradium: https://www.usine-digitale.fr/start-up/financement/investissement/100-millions-de-dollars-de-financement-gradium-la-pepite-francaise-de-lia-vocale-accueille-nvidia-parmi-ses-investisseurs-et-setend-aux-etats-unis.ZDLFPAJCJBH6JHG5Z4HIFTPYG4.html

@@ -2,117 +2,114 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint experimental de cuatro bits derivado de `Qwen/Qwen3.8-Flash-Next` (revision `de4b8e4d43b917e7706784d8bb445c9af86a3540`), publicado por el usuario `matteiuspi`. No es un modelo nuevo entrenado desde cero, sino una cuantizacion W4A16 con grupos de 128 pesos orientada especificamente a dos tarjetas Atlas 300I Duo, que el sistema expone como cuatro dispositivos Ascend 310P3. El autor lo etiqueta explicitamente como un checkpoint de servicio de texto en fase experimental, con un runtime de desarrollo propio y operadores de 310P compilados, por lo que no es sustituible directamente en una instalacion estandar de vLLM Ascend.
+Qwen3.8-Flash-Next W4A16-G128-300i es un checkpoint cuantizado a 4 bits del modelo multimodal Qwen/Qwen3.8-Flash-Next, publicado por el usuario matteiuspi. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión completa de pesos orientada a la inferencia sobre hardware Ascend: concretamente dos tarjetas Atlas 300I Duo expuestas como cuatro dispositivos Ascend 310P3. El checkpoint mantiene las capacidades texto-imagen del modelo base, pero reorganiza los pesos de los expertos enrutados en INT4 empaquetado con grupos asimétricos de 128.
 
-El modelo base es un transformer disperso de tipo mezcla de expertos (MoE) con atencion dispersa, componentes Gated DeltaNet y pesos de vision y MTP, del que se han cuantizado 73.728 proyecciones de expertos enrutados. El checkpoint exporta 121.489.440.659 parametros distribuidos en 1.610 fragmentos de Safetensors y 222.746 tensores, con un peso en disco de 181.713.896.545 bytes (unos 181,7 GB), de los cuales aproximadamente 102,40 GB corresponden a la tabla PLE, que se mantiene en coma flotante. La ventana de contexto configurada para el servicio es de 262.144 tokens, con un maximo de dos secuencias concurrentes.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso práctico de cuantización W4A16/W4A8 sobre una arquitectura MoE multimodal con atención dispersa y componentes Gated DeltaNet, algo poco habitual en el ecosistema abierto. Por otro, evidencia las dependencias de despliegue: el autor advierte explícitamente de que requiere un fork específico de vLLM (OpenSensor vLLM Ascend), un runtime de desarrollo y operadores personalizados compilados, por lo que no es un modelo que funcione directamente en vLLM Ascend estándar.
 
-Su relevancia es acotada pero clara: documenta una ruta de cuantizacion INT4 agrupada para aceleradores Ascend de generacion anterior, con cifras medidas de memoria residente y velocidad de decodificacion, y con una declaracion explicita de que la validacion de calidad a nivel de modelo completo sigue pendiente. Es, por tanto, material de evaluacion para ingenieria de inferencia sobre hardware Ascend, no un modelo listo para produccion general.
+El modelo tiene 121.489.440.659 parámetros totales según los safetensors, ocupa 181,7 GB en el repositorio y se distribuye bajo licencia qwen-community-1.0. Su pipeline declarado es image-text-to-text y su uso previsto es conversacional, con soporte declarado para decodificación especulativa mediante MTP.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atencion dispersa, componentes Gated DeltaNet, vision y MTP (pesos no expertos en coma flotante) |
-| Parametros totales | 121.489.440.659 (segun el indice de Safetensors del repositorio) |
+| Arquitectura | Transformer MoE multimodal con atención dispersa y Gated DeltaNet (según la model card) |
+| Parametros totales | 121.489.440.659 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens configurados como maximo de servicio (prompt mas completado); no validado en peticiones completas de esa longitud |
-| Tipos de cuantizacion | W4A16 con grupos de 128 en los expertos enrutados (INT4 con signo empaquetado, RTN asimetrico por grupo min/max, escalas FP16, puntos cero INT8); activaciones FP16. Existe un checkpoint complementario W8A8 dinamico |
+| Longitud de contexto | 262.144 tokens (límite de servicio usado en las mediciones del autor) |
+| Tipos de cuantizacion | INT4 empaquetado (W4A16 y W4A8 para expertos enrutados), W8A8 dinámico en checkpoint complementario; componentes no expertos en FP16/FP32 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (campo `license: other` con `license_name: qwen-community-1.0`) |
-| Formato de pesos | Safetensors (1.610 fragmentos, 222.746 tensores; 181.637.185.528 bytes de payload) con metadatos de carga para vLLM |
-| Variante de cuantizacion declarada | `qwen4exp_w4a16_group_v1` en `text_config.ascend_expert_quantization` |
-| Hardware objetivo | Dos Atlas 300I Duo (cuatro dispositivos Ascend 310P3), paralelismo de tensor de 4 |
-| Tamano del repositorio | 181,7 GB |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors (1.610 shards, 222.746 tensores) |
+| Tamano del repo | 181,7 GB |
+| Grupo de cuantizacion | 128 pesos por grupo, asimétrico, min/max RTN |
+| Escalas y puntos cero | escalas FP16, puntos cero INT8 |
+| Identificador de cuantizacion | `qwen4exp_w4a16_group_v1` en `text_config.ascend_expert_quantization` |
+| Hardware objetivo | 2x Atlas 300I Duo (4x Ascend 310P3), TP4 con expert parallelism |
+| Libreria | vLLM (fork OpenSensor vLLM Ascend) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint no aporta informacion sobre el entrenamiento del modelo base: no se detallan el numero de tokens, la composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. Lo que si se documenta es la arquitectura efectiva del modelo servido: un MoE con atencion dispersa y componentes Gated DeltaNet, con pesos de vision y de MTP (multi-token prediction) presentes, y una gran tabla PLE que se mantiene fuera de la cuantizacion. Esta ficha, por tanto, no puede describir el proceso de entrenamiento original.
+El checkpoint deriva del modelo base Qwen/Qwen3.8-Flash-Next en la revisión `de4b8e4d43b917e7706784d8bb445c9af86a3540`. La model card describe una arquitectura MoE con atención dispersa y componentes Gated DeltaNet, además de una tabla PLE (probablemente embedding posicional o de lookup específico) de aproximadamente 102,40 GB incluida en el total. No se aportan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esa información no está disponible en el material proporcionado.
 
-En cuanto a la innovacion tecnica, el trabajo se centra en el pipeline de cuantizacion. Ascend ModelSlim IR convirtio 73.728 proyecciones de expertos enrutados desde BF16 mediante RTN asimetrico por grupo min/max, con grupos de 128 pesos. Cada byte empaqueta dos valores INT4 con signo, con el nibble bajo primero. Las escalas son FP16 y los puntos cero INT8. Quedan en coma flotante el router, los expertos compartidos, la atencion, Gated DeltaNet, los embeddings, la tabla PLE, los componentes de vision y los pesos MTP. Los tensores origen BF16 se exportaron como FP16 para la ruta de servicio en 310P, mientras que los tensores origen FP32 permanecen en FP32. Existe un experimento separado de kernel W4A8 que no ha superado las pruebas de velocidad y calidad a nivel de modelo completo y que no constituye el modo de ejecucion declarado.
+La conversión la realizó Ascend ModelSlim IR sobre 73.728 proyecciones de expertos enrutados, partiendo del checkpoint BF16 original y aplicando cuantización RTN asimétrica por grupo de 128 pesos con min/max. Cada byte empaqueta dos valores INT4 con signo, con el nibble bajo primero. Router, expertos compartidos, atención, Gated DeltaNet, embeddings, tabla PLE, componentes de visión y pesos MTP permanecen en coma flotante; los tensores BF16 se exportaron como FP16 para la ruta de servicio en 310P y los FP32 se mantuvieron en FP32.
+
+La innovación técnica destacable es la política de ejecución de expertos en tiempo de ejecución: si el modelo permite cuantización de activaciones se usa W4A8 nativo (cuantización INT8 por grupo de activaciones, empaquetado y multiplicación INT4 x INT4 a INT32); si se requieren activaciones FP16 se usa el backend W4A16 existente; y existe un checkpoint W8A8 dinámico complementario. La selección se hace antes de la captura de grafo y no cambia silenciosamente la precisión de activaciones. Además, la forma de decodificación c1 usa un schedule de pesos en streaming fijado en compilación, mientras que c2-c4 instancian el schedule de pesos residentes.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` figura entre las del repositorio.
-- Aritmetica, conteo y produccion de salida en Python: verificados mediante comprobaciones de humo segun la model card.
-- Llamada a herramientas (tool calling): validada en las comprobaciones de humo realizadas sobre cuatro dispositivos.
-- Recuperacion de contrasenas de 8K: completada en una prueba independiente de dos peticiones sin expropiacion de secuencias.
-- Prediccion multi-token (MTP): el servicio experimental usa MTP de dos tokens; los pesos MTP se mantienen en coma flotante.
-- Vision: el checkpoint conserva componentes de vision en coma flotante, aunque no se documenta ninguna validacion de capacidades multimodales.
-- Razonamiento multi-paso y agentes: no disponible (no se ha completado ninguna evaluacion de este tipo).
-- Capacidades multilingues: no disponible.
-- Modo de pensamiento explicito: no disponible.
+- Generación de texto conversacional multi-turno, con pipeline declarado image-text-to-text.
+- Comprensión de imágenes y texto combinados (componentes de visión conservados en coma flotante).
+- Razonamiento y generación de código: capacidades heredadas del modelo base, no verificadas de forma independiente en la información disponible.
+- Decodificación especulativa mediante MTP (multi-token prediction), con contadores de tokens aceptados reportados por el autor.
+- Ejecución MoE con expert parallelism sobre cuatro dispositivos Ascend 310P3.
+- Soporte de cuantización mixta a nivel de capa: expertos enrutados en INT4 y resto en FP16/FP32.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluacion de cuantizacion INT4 sobre Ascend: comparar este checkpoint con el W8A8 dinamico del mismo autor en la misma topologia de dos Atlas 300I Duo para medir memoria residente por rango y velocidad de decodificacion, teniendo en cuenta que sus configuraciones de servicio difieren.
-- Servicio de texto en infraestructura Ascend existente: desplegar con vLLM Ascend mas los operadores 310P W4 compilados para atender conversaciones cortas con un maximo de dos secuencias concurrentes.
-- Investigacion de atencion dispersa y MoE en hardware no CUDA: usar el checkpoint como banco de pruebas para reproducir el comportamiento de la atencion dispersa y del enrutado de expertos en cuatro dispositivos 310P3.
-- Validacion de recuperacion de contexto largo: aprovechar la ventana configurada de 262.144 tokens para estudiar el prefill en frio y el comportamiento del prefijo cacheado, dado que el estudio registro peticiones con 23.168 tokens de prefijo en cache.
-- Pruebas de integracion de tool calling en pipelines internos: verificar el ciclo completo de invocacion de funciones antes de construir un agente sobre esta base, dado que las comprobaciones de humo ya cubren llamadas a herramientas.
-- Auditoria de reproducibilidad de checkpoints cuantizados: emplear `PROVENANCE.json` y el recuento de bytes para auditar la trazabilidad de una conversion BF16 a INT4 con empaquetado de nibbles.
-- Analisis de viabilidad de vision multimodal en 310P: comprobar si los componentes de vision conservados en coma flotante pueden activarse en esta ruta de servicio, algo que la documentacion no confirma.
+- Despliegue de inferencia multimodal en infraestructura Ascend: el checkpoint está pensado para dos Atlas 300I Duo con TP4 y expert parallelism, de modo que encaja en entornos con hardware Huawei donde no se dispone de GPUs NVIDIA. Requiere el fork OpenSensor de vLLM Ascend y operadores personalizados compilados.
+- Servicio conversacional con contexto largo: el límite de servicio medido es de 262.144 tokens con cuatro slots de planificador y 512 tokens por lote, adecuado para asistentes que manejan documentos extensos o historiales largos.
+- Procesamiento de documentos con imagen y texto: al conservar los componentes de visión en coma flotante y mantener el pipeline image-text-to-text, puede emplearse para extracción y resumen de información en capturas, formularios o páginas escaneadas.
+- Evaluación de cuantización en producción: sirve como referencia para medir el impacto de W4A16 frente a W4A8 nativo en un MoE multimodal, con métricas de throughput c1 y c4 agregadas y una puerta de calidad fija de 228 preguntas.
+- Investigación sobre decodificación especulativa: el modo MTP con `mtp_expert_execution=w8a8_grouped` permite estudiar la aceptación de tokens especulativos (81,65% reportado) y su efecto en latencia sobre NPU.
+- Banco de pruebas de compatibilidad de runtimes: útil para validar forks de vLLM Ascend, captura de grafos con entradas cambiantes y rutas de pesos en streaming frente a residentes, dado que el autor documenta pruebas de grafo con rutas y pesos variables.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no se ha completado una repeticion completa de GPQA, ningun benchmark de codigo ni ningun resultado de precision independiente sobre un conjunto retenido para este checkpoint W4, y que su calidad de cuantizacion no puede inferirse de los resultados de conversion del modelo W8 complementario, que usaba otra configuracion de servicio.
+Los datos disponibles son mediciones de throughput del autor, no benchmarks académicos estándar. Se obtuvieron con el checkpoint real, dos Atlas 300I Duo, TP4 con expert parallelism, MTP2, grafos `FULL_DECODE_ONLY`, límite de 262.144 tokens, cuatro slots de planificador, 512 tokens por lote y afinidad de CPU fija, excluyendo el warmup de las medianas.
 
-Las unicas cifras disponibles son mediciones de servicio de la propia card, que no constituyen benchmarks de calidad:
+| Carga | Baseline residente | W4A8 nativo retenido | Cambio |
+|---|---:|---:|---:|
+| Decodificación c1, mediana | 28,1735 tok/s | 29,8610 tok/s | +5,99% |
+| Decodificación c1, pico | no disponible | 30,3191 tok/s | no disponible |
+| Decodificación c4 agregada, mediana | 59,6759 tok/s | 59,5233 tok/s | -0,26% |
 
-| Medicion | Resultado observado |
-|---|---|
-| Pesos residentes por rango (W4) | 19,382 GiB |
-| Pesos residentes por rango (W8, mismo control de memoria) | 33,040 GiB |
-| Decodificacion W4, prompts cortos, tres completados de 512 tokens | 14,71 tokens/s de mediana |
-| Decodificacion W4, prompts de ~23,4K tokens, tres completados de 512 tokens | 14,60 tokens/s de mediana |
-| Contexto maximo configurado (prompt mas completado) | 262.144 tokens |
-| Secuencias concurrentes maximas configuradas | 2 |
-| Comprobaciones superadas | Aritmetica, conteo, salida Python, llamada a herramientas, recuperacion de contrasena de 8K |
-| Comprobaciones no realizadas | GPQA completo, benchmark de codigo, precision retenida independiente |
+Con la actualización de MTP agrupado (`mtp_expert_execution=w8a8_grouped`), cinco ejecuciones c1 dieron mediana de 29,7374 tok/s, media de 30,8504 tok/s y pico de 34,3382 tok/s. Tres ensayos c4 dieron 61,3700, 60,8789 y 59,4403 tok/s agregados, con mediana de 60,8789 tok/s, un 2,28% por encima de la mediana c4 de W4A8 nativo, mientras c1 varió -0,41%, dentro de la variación entre ejecuciones.
 
-Las medianas de decodificacion son mediciones de streaming de cliente con peticion unica, excluyen el tiempo hasta el primer token y proceden de un estudio de optimizacion del runtime W4 que comparo dos compilaciones con el mismo checkpoint y las mismas peticiones. No se reejecuto el W8 en esa misma configuracion.
+La puerta de calidad fija de 228 preguntas zero-shot puntuó 206/228 con cero respuestas inválidas. El autor subraya que es una muestra fija, no una puntuación MMLU oficial sobre el dataset completo. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM o memoria por dispositivo: aproximadamente 19,382 GiB de pesos residentes por rango con el checkpoint W4, medidos en la comprobacion controlada W4/W8. La cifra de 181,7 GB del repositorio corresponde a los ficheros del checkpoint, no al uso por dispositivo.
-- GPU o acelerador admitido: exclusivamente Ascend. El objetivo declarado son dos tarjetas Atlas 300I Duo expuestas como cuatro dispositivos Ascend 310P3, con `--tensor-parallel-size 4`. No se documenta soporte para A100, H100 ni RTX 4090.
-- GPU de consumo: no aplicable. El checkpoint requiere operadores 310P compilados y no esta destinado a CUDA.
-- Opciones de despliegue: vLLM Ascend mediante un fork especifico (OpenSensor vLLM), junto con una instantanea de desarrollo de vLLM Ascend con capacidad W4 y operadores W4 para 310P. No es compatible directamente con vLLM Ascend estandar ni con llama.cpp, Ollama o TGI, que no aparecen en la informacion disponible.
-- Backend de cuantizacion: el backend por defecto `eager_dequant` admite aislamiento basico; la ruta de grafo medida selecciono explicitamente `cube_310_routed`.
-- Latencia y throughput: 14,71 tokens/s de mediana con prompts cortos y 14,60 tokens/s con prompts de aproximadamente 23,4K tokens, en completados de 512 tokens y con peticion unica. Estos valores excluyen el tiempo hasta el primer token y dependen del hardware, la afinidad de CPU y la compilacion del runtime.
-- Limites operativos: el maximo de secuencias concurrentes configurado es 2. La peticion completa de dos ventanas de 262K se detuvo durante el prefill en frio por un guardin conservador de crecimiento de swap; ni una peticion completa de 262K ni dos ventanas completas simultaneas han sido validadas.
+- VRAM equivalente: el repositorio ocupa 181,7 GB, con un payload de tensores de 181.637.185.528 bytes (169,16 GiB), incluyendo la tabla PLE de aproximadamente 102,40 GB.
+- Hardware objetivo: dos tarjetas Atlas 300I Duo, expuestas como cuatro dispositivos Ascend 310P3, con TP4 y expert parallelism.
+- GPUs NVIDIA: no disponible; el checkpoint está diseñado para Ascend y no se documenta su funcionamiento en A100, H100 o RTX 4090.
+- GPU de consumo: no disponible; por tamaño y formato no es un modelo apto para GPUs de consumo convencionales.
+- Despliegue: fork OpenSensor de vLLM Ascend, runtime de desarrollo OpenSensor vLLM Ascend y operadores personalizados compilados. No es compatible de forma directa con vLLM Ascend estándar.
+- Throughput medido: aproximadamente 29,9 tok/s en decodificación c1 y 59,5-60,9 tok/s agregados en c4 con cuatro peticiones concurrentes, según la configuración descrita.
+- Memoria y planificación: requiere perfilado de memoria y warmup de grafos; el autor reporta pruebas de grafo con entradas cambiantes y rutas variables en NPU real.
 
 ## Comparativa con modelos similares
 
-Los unicos elementos comparables documentados son el modelo base en BF16 y el checkpoint complementario W8A8 del mismo autor. No se dispone de datos de otros modelos de la misma categoria.
-
-| Variante | Cuantizacion de expertos | Ruta de activacion en 310P | Ficheros del checkpoint | Pesos residentes por rango | Estado de validacion |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (W4A16 G128) | INT4 con signo empaquetado, grupos de 128 | Entrada FP16 a la matmul de expertos solo pesos | 181,71 GB | 19,382 GiB | Comprobaciones de humo y recall de 8K; sin validacion de calidad a nivel de modelo |
-| Companion W8A8 Dynamic | INT8 por canal de salida | Entrada FP16 con INT8 dinamico por token dentro de la matmul agrupada; MTP con ruta W8A16 solo pesos | 240,06 GB | 33,040 GiB | Resultados de conversion en tiempo de cuantizacion; no reejecutado en la configuracion W4 |
-| Base `Qwen/Qwen3.8-Flash-Next` | BF16 sin cuantizar | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-Flash-Next W4A16-G128-300i | 121,49 B totales | 262.144 tokens en servicio | INT4 W4A16/W4A8 para expertos | qwen-community-1.0 | Hugging Face, requiere fork de vLLM Ascend |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | BF16 original | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next W8A8-DYNAMIC-300i | no disponible | no disponible | W8A8 dinámico | qwen-community-1.0 | Hugging Face, checkpoint complementario del mismo autor |
 
-Las dos variantes cuantizadas usan configuraciones de servicio distintas, por lo que sus tasas de decodificacion medidas no deben interpretarse como una comparacion controlada de cuantizacion.
+La comparación con alternativas de otros fabricantes no está disponible en la información proporcionada. Los dos modelos comparables son el base BF16 y el checkpoint W8A8 del mismo autor, ambos orientados al mismo hardware Ascend.
 
 ## Limitaciones y advertencias
 
-- Checkpoint experimental: la propia model card advierte de que requiere un runtime de desarrollo propio y operadores Ascend 310P compilados, y de que no es un modelo sustituible directamente en vLLM Ascend estandar.
-- Calidad no validada: no se ha completado ninguna repeticion de GPQA, ningun benchmark de codigo ni ningun resultado de precision independiente sobre datos retenidos. Las comprobaciones de humo y el recall de contrasenas no establecen calidad amplia.
-- Sin revision publica del runtime: la revision publica definitiva del runtime aun no se ha congelado, lo que compromete la reproducibilidad del despliegue.
-- Contexto no validado en el extremo: los 262.144 tokens son un limite configurado, no una capacidad verificada. No se ha validado una peticion completa de 262K ni dos ventanas completas simultaneas, y una prueba de dos peticiones de 262K se interrumpio durante el prefill en frio.
-- Concurrencia muy limitada: el maximo configurado es de dos secuencias concurrentes, insuficiente para cargas de produccion con trafico real.
-- Sesgos conocidos: no disponible. No se documenta ninguna evaluacion de sesgo ni de alineamiento para este checkpoint.
-- Riesgo de alucinacion: no disponible. No se aportan metricas de fidelidad ni de veracidad.
-- Idiomas: no disponible. La ficha no declara cobertura idiomatica alguna, lo que impide planificar despliegues multilingues.
-- Licencia: `qwen-community-1.0`, registrada como `license: other`. Es una licencia propia de la comunidad Qwen cuyos terminos deben revisarse antes de cualquier uso comercial; la informacion proporcionada no detalla condiciones de atribucion, redistribucion ni restricciones de uso.
-- Repositorio sin traccion: cero descargas y cero valoraciones en el momento de la consulta, lo que reduce la probabilidad de que los problemas de integracion ya hayan sido reportados por terceros.
-- Dependencia de hardware obsoleto: el objetivo son aceleradores Ascend 310P3, lo que limita la portabilidad y el soporte a largo plazo.
-- Fichero truncado en la documentacion: el ejemplo de servicio de la model card aparece cortado en la informacion disponible, por lo que la configuracion completa de despliegue no puede reproducirse a partir de esta ficha.
+- Checkpoint experimental: el autor lo califica explícitamente como experimental y no apto como sustituto directo en vLLM Ascend estándar.
+- Dependencia de un fork y de operadores compilados: requiere OpenSensor vLLM Ascend, runtime de desarrollo y operadores personalizados; la reproducibilidad fuera de ese entorno no está garantizada.
+- Licencia qwen-community-1.0: es necesario revisar sus términos antes de uso comercial; la model card no detalla restricciones adicionales.
+- Idiomas soportados no documentados: no se especifica cobertura multilingüe ni calidad por idioma.
+- Riesgo de alucinación: no se documentan evaluaciones de veracidad ni de sesgos; la puerta de calidad de 206/228 es una muestra fija y no sustituye una evaluación completa.
+- Contexto: los 262.144 tokens corresponden al límite de servicio usado en las mediciones, no necesariamente a la longitud de contexto nativa del modelo base.
+- Precisión mixta: los expertos enrutados están en INT4 mientras atención, embeddings, visión y MTP permanecen en FP16/FP32; el impacto de esta mezcla en calidad no se ha medido de forma exhaustiva.
+- Throughput dependiente de la configuración: las cifras c1 y c4 se obtuvieron con MTP2, grafos de solo decodificación y afinidad de CPU fija; otros ajustes pueden dar resultados distintos.
+- Sin datos de tool calling, agentes ni benchmarks estándar: no se puede asumir su comportamiento en pipelines de agentes sin validación propia.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i
+- Modelo en Hugging Face: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Checkpoint complementario W8A8 Dynamic: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i
-- Procedencia y auditoria de conversion: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i/blob/main/PROVENANCE.json
-- Resumen de benchmarks de servicio: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i/blob/main/benchmark-summary-20260927.json
-- Licencia: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i/blob/main/LICENSE
+- Checkpoint W8A8 complementario: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i
+- Commit del fork vLLM Ascend: https://github.com/opensensor/vllm-ascend/commit/d4d2c42f1
+- Notas de resultados c1: https://github.com/opensensor/vllm-ascend/blob/0637d3baa6bc2000ba6433b301f233c6516847b4/artifacts/native-int4-20260927-pass3/WEIGHT-PIPELINE-C1-RESULTS.md
+- Commit de MTP agrupado: https://github.com/opensensor/vllm-ascend/commit/17954180d003ed1be4c799c305ec38cc33b55c1c
+- Resultados en JSON: native-w4a8-results-20260928.json (incluido en el repositorio del modelo)
+- Procedencia: PROVENANCE.json (incluido en el repositorio del modelo)
+- Licencia: LICENSE (incluido en el repositorio del modelo)

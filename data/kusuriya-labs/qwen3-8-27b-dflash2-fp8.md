@@ -2,98 +2,110 @@
 
 ## Resumen
 
-Qwen3.8-27B-DFlash2-FP8 es una cuantizacion en FP8 (E4M3) del modelo borrador DFlash 2, desarrollado originalmente por inco.ai y publicado en Hugging Face como `z-lab/Qwen3.8-27B-DFlash2`. La cuantizacion la firma kusuriya-labs y su objetivo es reducir el coste de memoria y el tiempo de computo del borrador dentro de un pipeline de decodificacion especulativa. No se trata de un modelo de lenguaje autonomo: genera tokens candidatos que el modelo objetivo Qwen/Qwen3.8-27B verifica despues, de modo que la salida final es la del propio modelo objetivo en modo greedy.
+Qwen3.8-27B-DFlash2-FP8 es una cuantización en FP8 (formato E4M3) del modelo borrador DFlash 2 publicado originalmente por inco.ai como `incoai/Qwen3.8-27B-DFlash2` y alojado en `z-lab/Qwen3.8-27B-DFlash2`. No es un modelo de lenguaje autónomo: se trata de un *draft model* diseñado para decodificación especulativa, que propone tokens que el modelo objetivo Qwen3.8-27B verifica en cada ronda. El repositorio lo mantiene kusuriya-labs y está pensado para ejecutarse en el runtime `shelf` sobre hardware AMD ROCm.
 
-El modelo cuenta con 1.924.404.480 parametros (aproximadamente 1,9 mil millones) y un tamano de repositorio de 2,1 GB, con un fichero `model.safetensors` de 1,97 GiB frente a los 3,58 GiB de la version BF16 original. La licencia es Apache-2.0, heredada del modelo base. Su relevancia actual radica en que permite acelerar la inferencia especulativa en hardware AMD (gfx1201) manteniendo la identidad exacta de los tokens generados respecto a la decodificacion greedy no especulativa.
+La relevancia de esta ficha radica en que reduce el peso del borrador de 3,58 GiB (BF16) a 1,97 GiB manteniendo la fidelidad de las propuestas, lo que se traduce en una mejora medible de velocidad de decodificación sin degradar la salida del modelo objetivo. Con 1.924.404.480 parámetros reales en safetensors y licencia Apache-2.0, es una pieza de infraestructura de inferencia más que un modelo generativo de propósito general.
 
-La cuantizacion se aplica a 36 capas lineales (fc, Q/K/V/O y gate/up/down de las cinco capas) mediante escalas por bloques de 128x128, mientras que las normas, convoluciones dinamicas y tensores auxiliares permanecen en BF16. El runtime de carga de borradores cuantizados aun no se ha publicado, por lo que su uso en produccion es limitado en el momento de redactar esta ficha.
+El modelo está etiquetado como `inference: false` porque requiere un runtime de decodificación especulativa (shelf) y un modelo objetivo compatible; no puede cargarse de forma independiente en pipelines estándar de `transformers` para generar texto por sí solo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con convoluciones dinamicas y selector de candidatos (modelo borrador DFlash 2) |
-| Parametros totales | 1.924.404.480 (aprox. 1,9 mil millones) |
+| Arquitectura | Transformer borrador (draft model) de 5 capas para decodificación especulativa DFlash 2; incluye capa `fc`, convoluciones dinámicas y selector de candidatos |
+| Parametros totales | 1.924.404.480 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 E4M3 con escalas por bloques de 128x128; tensores auxiliares en BF16 |
+| Tipos de cuantizacion | FP8 E4M3 con escalas BF16 por bloques de 128x128; esquema de activación dinámica; tensores pequeños (norms, convoluciones, selector) en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (`model.safetensors`, 1,97 GiB) con `quantization_config` FP8 en `config.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un borrador de decodificacion especulativa, no un modelo de lenguaje independiente. Su arquitectura se basa en un transformer con cinco capas que incorpora convoluciones dinamicas y un selector de candidatos, disenado para proponer multiples tokens por ronda que el modelo objetivo Qwen3.8-27B verifica posteriormente. Los embeddings y la cabeza LM no forman parte del borrador: el runtime los toma prestados del modelo objetivo.
+El modelo es un borrador de 5 capas que acompaña a Qwen3.8-27B en un esquema de decodificación especulativa DFlash 2. Contiene 36 capas lineales cuantizadas (`fc`, Q/K/V/O, gate/up/down de las 5 capas) en FP8 E4M3 con escalas BF16 por bloques de 128x128, y 45 tensores pequeños en BF16 sin cuantizar (norms, convoluciones dinámicas y selector de candidatos). No incluye embeddings ni LM head: el runtime los toma prestados del modelo objetivo. El proceso de cuantización es puramente post-entrenamiento, sin calibración: cada bloque de 128x128 se escala con `amax / 448` y se redondea a E4M3.
 
-La cuantizacion FP8 se realizo sin calibracion: cada bloque de 128x128 calcula su escala como `amax / 448`, se almacena en BF16 y el bloque se redondea a E4M3 con esa escala. El layout de tensores (`.weight` / `.weight_scale_inv`) sigue la convencion FP8 del checkpoint Qwen3.8-27B. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
+No se dispone de información sobre el dataset de entrenamiento del borrador original, número de tokens, ni si hubo fases de RLHF o DPO; la model card solo describe el proceso de cuantización. La innovación técnica destacable es la propia arquitectura DFlash 2 de decodificación especulativa, que permite al borrador proponer varios tokens por ronda (7 en las evaluaciones publicadas) y al modelo objetivo verificarlos en paralelo, con aceptación media de ~2,9 borradores por ronda.
 
 ## Capacidades
 
-- Generacion de tokens candidatos para decodificacion especulativa sobre Qwen3.8-27B.
-- Propuesta de multiples borradores por ronda (configurable, por ejemplo `--dflash2-drafts 7`).
-- Preservacion exacta de la salida greedy del modelo objetivo: los identificadores generados coinciden con los de la decodificacion no especulativa en 16 de 16 prompts evaluados.
-- Reduccion del tiempo de GPU dedicado al borrador: 6,23 ms por ronda frente a 8,48 ms en BF16.
-- Compatibilidad con el runtime `shelf` en hardware AMD gfx1201 (Radeon AI PRO R9700).
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso por si mismo, ya que no es un modelo autonomo.
-- Capacidades multilingues: no disponible.
-- No dispone de modo thinking, vision ni audio.
+- Generación de tokens candidatos para decodificación especulativa: propone hasta `--dflash2-drafts 7` tokens por ronda que el modelo objetivo Qwen3.8-27B verifica.
+- Preservación de la salida del modelo objetivo: en las 16 prompts evaluadas, los IDs generados coinciden al 100% con la decodificación greedy no especulativa.
+- Compatibilidad con decodificación greedy y con temperatura 0,7 (mediciones posteriores del runtime shelf).
+- Soporte de caché de prefijo (restauración de 4.096 tokens de prefijo en pruebas con tensor parallelism).
+- Soporte de tensor parallelism en dos GPU con el modelo objetivo FP8.
+- No soporta tool calling, agentes, visión, audio ni capacidades multilingües por sí mismo: hereda el comportamiento del modelo objetivo Qwen3.8-27B.
+- No es un modelo de chat ni de instrucciones: no genera texto de forma autónoma.
 
 ## Casos de uso
 
-- Aceleracion de inferencia en produccion: integrar el borrador FP8 en un runtime de decodificacion especulativa para reducir la latencia de generacion de Qwen3.8-27B en tareas de chat y codigo, aprovechando el incremento del 5,9 por ciento en tokens por segundo observado en la evaluacion.
-- Despliegue en hardware AMD: utilizar el modelo en GPUs Radeon AI PRO R9700 (gfx1201) dentro del runtime `shelf`, que es el unico entorno probado para esta cuantizacion.
-- Servicio de generacion de texto de alto rendimiento: emplear el borrador para mantener la identidad exacta de la salida greedy mientras se reduce el coste computacional por ronda, algo critico en APIs con requisitos de reproducibilidad.
-- Edicion de ficheros y generacion de JSON: el modelo ha sido evaluado en categorias de file edit y json de BetterBench, por lo que es adecuado para pipelines que requieren salidas estructuradas verificadas por el modelo objetivo.
-- Resumen y prosa: con prompts de summarization y prose, el borrador acelera la generacion de textos largos de hasta 512 tokens nuevos por prompt.
-- Razonamiento y matematicas: en tareas de reasoning y math, el borrador mantiene la calidad del objetivo mientras reduce el tiempo de GPU dedicado a la fase de drafting.
-- Investigacion en decodificacion especulativa: sirve como referencia para estudiar el impacto de la cuantizacion FP8 en la tasa de aceptacion de borradores (2,939 borradores aceptados por ronda frente a 2,933 en BF16).
+- Aceleración de inferencia de Qwen3.8-27B en producción: desplegar este borrador junto al modelo objetivo en el runtime shelf reduce el tiempo por ronda del borrador de 8,48 ms (BF16) a 6,23 ms, con un aumento de throughput de decodificación de +5,9% (69,13 a 73,19 tok/s) en una Radeon AI PRO R9700.
+- Servicio de chat de baja latencia: al mantener la fidelidad exacta de los IDs generados respecto a la decodificación greedy, es adecuado para aplicaciones interactivas donde la reproducibilidad importa.
+- Generación de código en pipelines: las pruebas cubren categorías de código, edición de ficheros y JSON, con salidas idénticas al modo no especulativo, lo que permite integrarlo en flujos de generación de código sin cambiar los resultados.
+- Razonamiento y matemáticas: las categorías de evaluación incluyen math y reasoning, con aceptación de borradores estable, lo que lo hace viable para asistentes de resolución de problemas.
+- Despliegue en hardware AMD ROCm: es una de las pocas opciones de borrador cuantizado probadas en `gfx1201` (R9700), útil para entornos con GPU AMD en lugar de NVIDIA.
+- Inferencia con tensor parallelism multi-GPU: el test con dos GPU y caché de prefijo de 4.096 tokens demuestra su uso en despliegues con paralelismo de tensores y reutilización de prefijos largos.
+- Reducción de huella de memoria en servidores: al pasar de 3,58 GiB a 1,97 GiB, libera VRAM para el modelo objetivo o para mayor batch.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la evaluacion del autor con el runtime `shelf` sobre una AMD Radeon AI PRO R9700 (gfx1201), modelo objetivo Qwen3.8-27B EXL3-INT8 4 bpw, decodificacion greedy, `--dflash2-drafts 7`, 16 prompts de categorias BetterBench (chat, code, file edit, json, math, prose, reasoning, summarization) con hasta 512 tokens nuevos y una sola ejecucion por prompt.
+Mediciones publicadas en la model card con el runtime `shelf` sobre una AMD Radeon AI PRO R9700 (gfx1201), objetivo Qwen3.8-27B EXL3-INT8 4 bpw, greedy, 7 borradores por ronda, 16 prompts (BetterBench: chat, code, file edit, json, math, prose, reasoning, summarization), hasta 512 tokens nuevos, una ejecución por prompt:
 
-| Modelo borrador | Borradores aceptados por ronda | Tokens/s de decodificacion | Identicos a greedy no especulativo |
+| Modelo borrador | Borradores aceptados / ronda | Decode tok/s | IDs idénticos vs greedy no especulativo |
 |---|---:|---:|---|
-| BF16 original | 2,933 | 69,13 | si (16/16) |
-| FP8 (este modelo) | 2,939 (100,2 % de BF16) | 73,19 (+5,9 %) | si (16/16) |
-| EXL3-INT8 4 bpw | 2,884 | 73,35 (+6,1 %) | si (16/16) |
+| BF16 original | 2,933 | 69,13 | sí (16/16) |
+| FP8 (este modelo) | 2,939 (100,2% de BF16) | 73,19 (+5,9%) | sí (16/16) |
+| EXL3-INT8 4 bpw (repo hermano) | 2,884 | 73,35 (+6,1%) | sí (16/16) |
 
-El tiempo de GPU del borrador por ronda fue de 8,48 ms en BF16 y 6,23 ms en esta version FP8. El autor advierte que la diferencia de velocidad proviene de una unica ejecucion por prompt y no ha sido validada estadisticamente. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+Tiempo de GPU del borrador por ronda: 8,48 ms (BF16) frente a 6,23 ms (FP8). El autor advierte que la diferencia de velocidad proviene de una sola ejecución por prompt y no ha sido validada estadísticamente.
+
+Mediciones posteriores con objetivo EXL3-INT8 3,05 bpw y KV en BF16, una R9700 con ROCm 10.2, seis peticiones secuenciales (JSON, código y prosa), greedy y temperatura 0,7, 7 borradores sin árbol y caché de prefijo caliente:
+
+| Configuración | tok/s | Borradores aceptados / ronda | IDs idénticos |
+|---|---:|---:|---|
+| Cabeza de propuesta original | 112,42 | 3,395 | sí (6/6) |
+| Cabeza de propuesta optimizada | 114,10 | 3,395 | sí (6/6) |
+
+Sobre 384 tokens generados, cada configuración medida una vez. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de calidad, ya que el modelo no es evaluable de forma autónoma.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero `model.safetensors` ocupa 1,97 GiB, por lo que el borrador requiere al menos 2 GB de VRAM adicionales a los del modelo objetivo.
-- GPU recomendadas: AMD Radeon AI PRO R9700 (gfx1201) es la unica probada por el autor. No se dispone de datos para A100, H100 ni RTX 4090.
-- Compatibilidad con GPU de consumo: no confirmada; el runtime `shelf` esta orientado a AMD gfx1201 y no se ha validado en otras arquitecturas.
-- Opciones de despliegue: unicamente el runtime `shelf` (AMD gfx1201). No hay soporte publicado para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 6,23 ms de GPU del borrador por ronda y 73,19 tokens/s de decodificacion en la configuracion evaluada.
-- Nota critica: la carga de borradores cuantizados en `shelf` no esta publicada todavia, por lo que no existe un runtime publico disponible en el momento de redactar esta ficha.
+- VRAM estimada para el borrador: ~1,97 GiB en FP8 (frente a 3,58 GiB en BF16), más la memoria del modelo objetivo Qwen3.8-27B y la caché KV.
+- GPU probada: AMD Radeon AI PRO R9700 (gfx1201) con ROCm 10.2; también validado en configuración de dos GPU con tensor parallelism.
+- No se ha probado en GPU NVIDIA ni en GPU de consumo; la model card solo confirma compatibilidad con `shelf` sobre ROCm.
+- Opciones de despliegue: exclusivamente el runtime `shelf` (soporte de borradores cuantizados desde el PR #20); no se ha validado con vLLM, llama.cpp, Ollama ni TGI.
+- Throughput medido: 73,19 tok/s de decodificación con objetivo EXL3-INT8 4 bpw en una R9700; 114,10 tok/s con objetivo 3,05 bpw y cabeza optimizada.
+- Latencia del borrador por ronda: 6,23 ms en FP8.
+- El formato FP8 por bloques es estándar, pero el repositorio solo ha sido probado con `shelf`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Precision | Formato | Licencia | Runtime |
+| Modelo | Parámetros | Precisión | Licencia | Runtime | Rendimiento |
 |---|---|---|---|---|---|
-| kusuriya-labs/Qwen3.8-27B-DFlash2-FP8 | 1,9 mil millones | FP8 E4M3 (bloques 128x128) | safetensors | Apache-2.0 | `shelf` (no publicado) |
-| z-lab/Qwen3.8-27B-DFlash2 (BF16) | 1,9 mil millones | BF16 | safetensors | Apache-2.0 | `shelf` |
-| kusuriya-labs/Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw | 1,9 mil millones | EXL3 INT8 4 bpw | safetensors | Apache-2.0 | `shelf` |
+| Qwen3.8-27B-DFlash2-FP8 (este) | 1.924.404.480 | FP8 E4M3, bloques 128x128 | Apache-2.0 | shelf (ROCm) | 73,19 tok/s, 2,939 borradores/ronda |
+| Qwen3.8-27B-DFlash2 (BF16 original) | no disponible | BF16 | Apache-2.0 | shelf (ROCm) | 69,13 tok/s, 2,933 borradores/ronda |
+| Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw | no disponible | EXL3-INT8 4 bpw | Apache-2.0 | shelf (ROCm) | 73,35 tok/s, 2,884 borradores/ronda |
 
-No se dispone de informacion sobre otros borradores de decodificacion especulativa comparables en la busqueda realizada.
+No se dispone de información sobre otros borradores de decodificación especulativa comparables (por ejemplo, EAGLE o Medusa) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje autonomo: requiere Qwen3.8-27B como modelo objetivo y un runtime de decodificacion especulativa.
-- El runtime de carga de borradores cuantizados (`shelf`) no esta publicado, por lo que no hay una via publica de uso en el momento de redactar esta ficha.
-- Solo se ha probado en hardware AMD gfx1201 (Radeon AI PRO R9700); no hay validacion en GPUs NVIDIA ni en otras arquitecturas AMD.
-- Los datos de rendimiento provienen de una unica ejecucion por prompt y no han sido validados estadisticamente, segun admite el propio autor.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion ni limitaciones idiomaticas del modelo original.
-- La licencia Apache-2.0 permite uso comercial, pero al depender de Qwen3.8-27B conviene revisar tambien la licencia del modelo objetivo.
-- El layout FP8 es un formato comun con escalas por bloques, pero solo ha sido probado con `shelf`; su portabilidad a otros runtimes no esta garantizada.
-- No hay informacion sobre la longitud de contexto soportada por el borrador.
+- No es un modelo de lenguaje autónomo: requiere el runtime `shelf` y el modelo objetivo Qwen3.8-27B; no funciona en pipelines estándar de `transformers`.
+- Solo se ha validado con `shelf` sobre ROCm y GPU AMD R9700; no hay evidencia de funcionamiento en CUDA, vLLM, llama.cpp, Ollama o TGI.
+- Las mediciones de velocidad provienen de una sola ejecución por prompt y no han sido validadas estadísticamente; el autor lo advierte explícitamente.
+- La cuantización es post-entrenamiento sin calibración (escala `amax / 448` por bloque), lo que puede introducir error en distribuciones de activación atípicas, aunque en las pruebas publicadas los IDs generados coinciden al 100%.
+- No se dispone de información sobre sesgos, riesgo de alucinación o cobertura idiomática del borrador; estas propiedades dependen del modelo objetivo.
+- La licencia Apache-2.0 permite uso comercial, pero la responsabilidad sobre el modelo objetivo Qwen3.8-27B y su licencia recae en el usuario.
+- El repositorio tiene 234 descargas y 1 like, con actualización en noviembre de 2026; es un artefacto reciente y con poca validación comunitaria.
+- El formato FP8 por bloques es estándar, pero la falta de pruebas fuera de `shelf` limita la portabilidad a otros stacks de inferencia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-FP8
-- Modelo base (BF16): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Variante EXL3-INT8 4 bpw: https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw
+- Hugging Face: https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-FP8
+- Modelo base (borrador BF16): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Repositorio hermano EXL3-INT8 4 bpw: https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
-- Publicacion original de inco.ai: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Runtime shelf: https://github.com/kusuriya-labs/shelf
+- PR de soporte de borradores cuantizados: https://github.com/kusuriya-labs/shelf/pull/20
+- Comparativa de cabezas DFlash2: https://github.com/kusuriya-labs/shelf/blob/1fb31fd963cc4c71210aa0c9c461679af150be71/docs/research/20261122/dflash2_phase3a/README.md
+- Test de caché de prefijo con tensor parallelism: https://github.com/kusuriya-labs/shelf/blob/1fb31fd963cc4c71210aa0c9c461679af150be71/docs/research/20261116/prefix_cache_radix_checkpoints.md

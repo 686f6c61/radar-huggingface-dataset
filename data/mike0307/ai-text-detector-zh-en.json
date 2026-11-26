@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 257,
+  "downloads_30d": 264,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -51,11 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mike Ye - GenAI Technical Lead - LinkedIn",
-      "url": "https://tw.linkedin.com/in/mike-ye-09a8791b1/zh-tw",
-      "snippet": "GenAI Technical Lead · As the GenAI Technical Lead at CloudMile, I specialize in architecting enterprise-grade Agentic AI workflows, RAG solutions, ..."
-    }
-  ]
+  "sources": []
 }

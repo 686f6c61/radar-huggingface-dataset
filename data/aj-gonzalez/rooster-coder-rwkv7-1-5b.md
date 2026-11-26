@@ -2,116 +2,109 @@
 
 ## Resumen
 
-rooster-coder-rwkv7-1.5b es un adaptador LoRA (PEFT) sobre el checkpoint base RWKV/RWKV7-G1k-1.5B-20260930, desarrollado por AJ-Gonzalez. El adaptador se ha entrenado mediante SFT sobre el perfil "coder" del corpus de razonamiento Qwen4 Max, con el objetivo de transferir a la arquitectura RWKV v7 el estilo de traza de razonamiento (`<think` ... `</think`) propio de los modelos Qwen4 Max en tareas de codigo y razonamiento tecnico. No se trata de un preentrenamiento nuevo, sino de un ajuste supervisado de bajo rango sobre un modelo base de 1.527.799.808 parametros.
+rooster-coder-rwkv7-1.5b es un adaptador LoRA PEFT sobre el checkpoint base RWKV/RWKV7-G1k-1.5B-20260930, desarrollado por AJ-Gonzalez. No se trata de un modelo preentrenado nuevo, sino de un ajuste supervisado (SFT) sobre el perfil "coder" del corpus de razonamiento Qwen4 Max, con el objetivo de enseñar al modelo base el estilo de traza de razonamiento de dicho corpus. El modelo base emplea la arquitectura RWKV-7, una familia de modelos recurrentes con atención lineal que prescinde del mecanismo de atención cuadrática de los transformers clásicos.
 
-La relevancia tecnica del artefacto no esta en el rendimiento del modelo (los datos publicados son diagnosticos de entrenamiento, no benchmarks), sino en el hecho de que demuestra el flujo completo de adaptacion y despliegue de RWKV v7 en tres formatos: adaptador PEFT, GGUF para llama.cpp (arquitectura `rwkv7`) y MLX 4-bit para Apple Silicon. El repositorio incluye los pesos fusionados en Q6_K, Q4_K_M y MLX 4-bit, ademas del adaptador original de 56,7 MB.
+El adaptador tiene 14.155.776 parámetros (0,9183% del total) y el modelo fusionado resultante mantiene los 1.527.799.808 parámetros del checkpoint base. El contexto de entrenamiento fue de 2048 tokens. La relevancia de esta ficha es doble: por un lado documenta un adaptador de código sobre RWKV-7; por otro, el autor lo publica explícitamente como un resultado negativo medido, ya que el ajuste degrada la capacidad general de generación de código (HumanEval+ cae 13,4 puntos) pese a mejorar la pérdida en distribución.
 
-El modelo base es un transformer hibrido lineal de tipo RWKV (no attention cuadratica), con 1.500 millones de parametros, licencia Apache-2.0 y plantilla de chat propia. El adaptador se distribuye con la misma licencia y esta orientado exclusivamente a ingles.
+El repositorio incluye tanto el adaptador PEFT como artefactos fusionados listos para inferencia (GGUF Q6_K y Q4_K_M para llama.cpp, y MLX 4-bit), todos derivados de los mismos pesos. La licencia es Apache-2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | RWKV v7 (recurrente lineal, `rwkv7` en llama.cpp) |
-| Parametros totales | 1.527.799.808 (modelo fusionado) |
+| Arquitectura | RWKV-7 (modelo recurrente con atención lineal, familia RWKV) |
+| Parametros totales | 1.527.799.808 (modelo fusionado); adaptador LoRA: 14.155.776 (0,9183%) |
 | Parametros activos | no disponible (no es MoE) |
-| Parametros del adaptador LoRA | 14.155.776 (0,9183 % del total) |
-| Longitud de contexto | no disponible en la informacion proporcionada; el entrenamiento usa secuencias de 2048 tokens |
-| Tipos de cuantizacion | Q6_K (1,34 GB), Q4_K_M (990 MB), MLX 4-bit (4,972 bpw, 907 MB); adaptador LoRA en safetensors |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT), GGUF (llama.cpp), MLX (4-bit) |
-| Modelo base | RWKV/RWKV7-G1k-1.5B-20260930 |
-| Dataset de entrenamiento | AJ-Gonzalez/qwen4-max-reasoning-250x (perfil coder) |
-| Tamano del repo | 3,3 GB |
+| Longitud de contexto | 2048 tokens (longitud máxima de secuencia usada en entrenamiento) |
+| Tipos de cuantizacion | GGUF Q6_K, GGUF Q4_K_M, MLX 4-bit (4,972 bpw); entrenamiento e inferencia PyTorch en fp32 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador PEFT), GGUF (llama.cpp, arquitectura `rwkv7`), MLX 4-bit |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es RWKV v7, una arquitectura recurrente lineal que sustituye la atencion cuadratica por un mecanismo de mezcla temporal (time-mix) con estado recurrente, lo que permite inferencia con coste lineal respecto a la longitud de secuencia. El adaptador LoRA se aplica sobre las proyecciones `receptance`, `key`, `value` y `output`; dado que el nombre `key`/`value` tambien coincide con las proyecciones del bloque FFN, el adaptador alcanza 14.155.776 parametros. La configuracion es r=16, alpha=32, dropout 0,05, `task_type=CAUSAL_LM`.
+El modelo base es RWKV-7, una arquitectura recurrente con atención lineal que evita el coste cuadrático de la atención estándar de los transformers. El adaptador es un LoRA plano (no QLoRA) con r=16, alpha=32, dropout 0,05, `task_type=CAUSAL_LM`, aplicado sobre las proyecciones `receptance`, `key`, `value` y `output`. El emparejamiento por nombre también alcanza las proyecciones `key`/`value` de la FFN, lo que explica el tamaño del adaptador. Se entrenó durante 3 épocas con batch 1 y acumulación de gradiente 8, learning rate 1e-4, warmup 10, optimizador AdamW, gradient checkpointing y secuencia máxima de 2048 tokens.
 
-El entrenamiento se realizo sobre 70 filas del corpus qwen4-max-reasoning-250x (32 de `1_code`, 29 de `2_cs`, 9 de `4_stats`), con trazas generadas por `qwen/qwen4-max-20261115` via OpenRouter. Tras el troceado a 2048 tokens con solapamiento de 256, el split de entrenamiento contiene 356 chunks (667.970 tokens) y el de validacion 46 chunks (88.854 tokens). Se hicieron 3 epocas, batch 1 con acumulacion de gradiente 8, lr 1e-4, warmup 10, AdamW, gradient checkpointing y max sequence 2048. El entrenamiento se ejecuto deliberadamente en fp32 porque el checkpoint base es bf16-nativo y fp16 produjo logits NaN y `grad_norm: nan` desde el primer paso en una Tesla T4 (que no soporta bf16). El pico de memoria fue de 11,43 GiB y el tiempo total de 2,46 h para 135 pasos de optimizador en una unica T4.
-
-La fusion del adaptador se realizo con un merge LoRA en streaming (escala 2,0) sobre el base en bf16, seguido de `convert_hf_to_gguf.py` de llama.cpp master. El GGUF resultante conserva los 678 tensores y las mismas formas que el GGUF base publicado, con los mapeos `att.ln1` -> `attn_norm`, `att.ln2` -> `attn_norm_2`, `att.ln_x` -> `time_mix_ln` y el apilado de los seis vectores `att.x_*` en `time_mix_lerp_fused`. En MLX, `att.ln_x` se mapea a `g_norm` tras reshape a `(heads, head_dim)` y se transpone las matrices de compuerta de bajo rango.
+Los datos provienen de 70 filas del corpus AJ-Gonzalez/qwen4-max-reasoning-250x (32 de `1_code`, 29 de `2_cs`, 9 de `4_stats`), con trazas generadas por qwen/qwen4-max-20261115 vía OpenRouter. Cada traza de razonamiento se almacena con el formato `<think` + razonamiento + `</think` + contenido, verificado contra `chat_template.jinja`. Tras el renderizado con la plantilla RWKV y el troceado a 2048 tokens con 256 de solapamiento, el conjunto resultó en 356 chunks de entrenamiento (667.970 tokens) y 46 de validación (88.854 tokens). El entrenamiento se realizó deliberadamente en fp32 porque el checkpoint es bf16 nativo y fp16 producía logits NaN y `grad_norm: nan` desde el primer paso en una T4; el pico de memoria fue de 11,43 GiB y el tiempo total de 2,46 horas para 135 pasos de optimizador en una sola Tesla T4 (Kaggle). La pérdida de entrenamiento final fue 1,6735 y la de evaluación 1,9399.
 
 ## Capacidades
 
-- Generacion de codigo en Python y otros lenguajes, con estilo de traza de razonamiento previa (`<think` ... `</think`) heredado del corpus Qwen4 Max.
-- Razonamiento tecnico en tareas de ciencias de la computacion (`2_cs`) y estadistica (`4_stats`), segun la composicion del dataset.
-- Soporte de plantilla de chat con modo `thinking=True` en `apply_chat_template`.
-- Generacion de texto autoregresiva con decodificacion greedy (`do_sample=False`, `temp=0`).
-- Inferencia en llama.cpp mediante la arquitectura `rwkv7` y en Apple Silicon via MLX.
-- Capacidad multilingue limitada al ingles.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible de forma verificada; el estilo de traza sugiere razonamiento paso a paso, pero no hay evaluacion publicada.
-- Vision y audio: no soportados.
+- Generación de texto y razonamiento en formato de traza explícita (`<think` ... `</think`), aprendido del corpus Qwen4 Max.
+- Generación de código en Python y otras tareas de programación, si bien con capacidad general degradada respecto al modelo base.
+- Razonamiento matemático y de estadística, cubierto parcialmente por las filas `4_stats` del corpus.
+- Soporte de plantilla de chat con `thinking=True` para activar el modo de razonamiento.
+- Capacidades multilingües limitadas al inglés (idioma declarado: en).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso más allá de la traza de razonamiento.
+- No dispone de visión ni audio.
 
 ## Casos de uso
 
-- Generacion de codigo asistida en local: el modelo puede ejecutarse en una GPU de consumo o en un portatil Apple Silicon usando los GGUF Q4_K_M (990 MB) o MLX 4-bit (907 MB), lo que permite autocompletado y generacion de funciones en entornos sin conexion.
-- Prototipado de pipelines de razonamiento sobre arquitecturas lineales: sirve para validar el flujo completo (adaptador PEFT -> merge -> GGUF/MLX) en un modelo pequeno antes de escalar a variantes RWKV de mayor tamano.
-- Educacion y demostraciones de RWKV v7: el repo incluye tokenizer, plantilla de chat y codigo remoto (`configuration_rwkv7.py`, `modeling_rwkv7.py`, `tokenization_rwkv7.py`) empaquetados junto al adaptador, lo que facilita su carga sin depender del repositorio base.
-- Generacion de explicaciones tecnicas paso a paso: el adaptador ha sido entrenado para producir trazas de razonamiento en tareas de codigo, ciencias de la computacion y estadistica, util para generar documentacion explicativa de algoritmos.
-- Evaluacion de tecnicas de cuantizacion en modelos recurrentes: los tres artefactos fusionados (Q6_K, Q4_K_M, MLX 4-bit) permiten comparar calidad y throughput de cuantizacion sobre la misma arquitectura.
-- Inferencia de bajo coste en produccion: con 1.5B parametros y arquitectura lineal, el coste por token es inferior al de transformers cuadraticos del mismo tamano, adecuado para servicios con alta concurrencia y contexto moderado.
-- Fine-tuning incremental sobre dominio propio: al ser un adaptador LoRA pequeno (56,7 MB), se puede reentrenar o combinar con otros adaptadores sin tocar los pesos base.
+- Investigación sobre ajuste fino con LoRA en arquitecturas RWKV: el repositorio sirve como referencia reproducible de un SFT completo (datos, hiperparámetros, diagnóstico de pérdida y artefactos fusionados) para estudiar cómo un adaptador pequeño afecta a un modelo recurrente.
+- Estudio de resultados negativos en ajuste fino: útil para analizar el sobreajuste al estilo de traza y su impacto en benchmarks de código, con métricas concretas de HumanEval y HumanEval+.
+- Experimentación con formatos de despliegue ligeros: los GGUF Q4_K_M (990 MB) y Q6_K (1,34 GB) permiten probar la arquitectura `rwkv7` en llama.cpp en hardware modesto.
+- Pruebas de inferencia en Apple Silicon: el artefacto MLX 4-bit (907 MB, pico de 1,076 GB) permite ejecutar el modelo en un M1 Air con 46,0 t/s de generación en modo greedy.
+- Generación de trazas de razonamiento con estilo concreto: útil en entornos controlados donde se quiera reproducir el formato de razonamiento del corpus de entrenamiento, no para código de producción.
+- Docencia y demostraciones de arquitecturas no transformer: el modelo fusionado permite mostrar el comportamiento de RWKV-7 en tareas de código con un consumo de memoria reducido.
+- Evaluación comparativa de adaptadores: como referencia para medir la degradación de HumanEval+ al ajustar con pocos datos (70 filas) y learning rate alto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor indica explicitamente que no se ejecuto una evaluacion antes/despues y que no se reclama ningun delta. Los unicos datos publicados son diagnosticos de entrenamiento y medidas de throughput en hardware concreto:
+Los benchmarks fueron medidos por el autor con el mismo arnés para ambas filas: una T4, fp32, plantilla RWKV con `thinking=True`, decodificación greedy, 768 tokens nuevos, evalplus 0.3.1 con sanitize + evaluate. NLL es entropía cruzada a nivel de token; los chunks retenidos son los 46 de validación (88.677 tokens) y SWE20 son los mismos 20 enunciados de SWE-bench usados en entrenamiento (15.427 tokens).
 
-| Metrica | Valor |
-|---|---|
-| Train loss | 1,6735 |
-| Eval loss (46 chunks) | 1,9399 |
-| NLL en 20 enunciados SWE-bench | 1,7227 (perplejidad 5,60; 15.427 tokens) |
-| Prompt throughput Q6_K GGUF (M1 Air, greedy) | 173,6 t/s |
-| Generacion Q6_K GGUF (M1 Air, greedy) | 32,0 t/s |
-| Prompt throughput Q4_K_M GGUF (M1 Air, greedy) | 173,8 t/s |
-| Generacion Q4_K_M GGUF (M1 Air, greedy) | 36,1 t/s |
-| Prompt throughput MLX 4-bit (M1 Air, greedy) | 19,6 t/s |
-| Generacion MLX 4-bit (M1 Air, greedy) | 46,0 t/s |
-| Pico de memoria MLX 4-bit | 1,076 GB |
+| Modelo | HumanEval | HumanEval+ | NLL retenido | NLL SWE20 |
+|---|---:|---:|---:|---:|
+| Base RWKV7-G1k-1.5B | 0,341 | 0,329 | 2,2417 | 1,6097 |
+| + este adaptador | 0,201 | 0,195 | 2,1179 | 1,7227 |
 
-Estas cifras son pruebas de humo (smoke tests), no benchmarks comparativos.
+El adaptador mejora la NLL en distribución (2,2417 -> 2,1179) pero degrada HumanEval+ en 13,4 puntos (0,329 -> 0,195); la NLL de SWE20 también empeora. El autor lo publica como resultado negativo medido, no como modelo de código recomendado.
+
+Rendimiento de inferencia medido en un M1 Air (Metal, greedy):
+
+| Artefacto | Prompt | Generación | Pico de memoria |
+|---|---:|---:|---:|
+| GGUF Q6_K | 173,6 t/s | 32,0 t/s | no disponible |
+| GGUF Q4_K_M | 173,8 t/s | 36,1 t/s | no disponible |
+| MLX 4-bit | 19,6 t/s | 46,0 t/s | 1,076 GB |
+
+Estos datos son pruebas de humo, no benchmarks formales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,0-1,5 GB para GGUF Q4_K_M y MLX 4-bit; alrededor de 1,4-1,8 GB para Q6_K; el adaptador PEFT en fp32 requiere cargar el base completo (unos 6 GB en fp32, 3 GB en bf16) mas el adaptador.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para los formatos cuantizados; Tesla T4, RTX 3060/4090, A100 y H100 son validas. El entrenamiento del adaptador se realizo en una unica Tesla T4 con 11,43 GiB de pico.
-- Cabe en GPU de consumo: si, en RTX 3060 (12 GB), RTX 4060/4070/4090 y en Apple Silicon (M1 Air medido). Tambien en portatiles con 8 GB de RAM unificada usando MLX 4-bit.
-- Opciones de despliegue: llama.cpp (`llama-cli` con arquitectura `rwkv7`), MLX (`mlx_lm`), y PyTorch con `transformers` + `peft` en fp32. No se menciona soporte verificado de vLLM, TGI ni Ollama en la informacion proporcionada.
-- Latencia y throughput: en M1 Air con greedy, 32,0-46,0 t/s de generacion segun formato; 173,6-173,8 t/s de prompt en GGUF y 19,6 t/s en MLX. No hay mediciones en GPU publicadas.
+- Inferencia en PyTorch: fp32 obligatorio por la inestabilidad de fp16 en esta arquitectura; el entrenamiento consumió 11,43 GiB de pico en una T4.
+- GPU recomendadas: Tesla T4 es suficiente para entrenamiento e inferencia en fp32; para mayor comodidad, A100 o H100 con memoria holgada.
+- GPU de consumo: los GGUF Q4_K_M (990 MB) y Q6_K (1,34 GB) caben en GPUs consumer con 4 GB o más; el MLX 4-bit (907 MB) cabe en Apple Silicon con 1,1 GB de memoria.
+- Despliegue: llama.cpp con arquitectura `rwkv7` (GGUF), mlx_lm (MLX 4-bit), y transformers + PEFT con `trust_remote_code=True` para el adaptador.
+- Throughput medido en M1 Air: 32,0 t/s (Q6_K), 36,1 t/s (Q4_K_M) y 46,0 t/s (MLX 4-bit) en generación greedy.
+- No se dispone de datos de latencia o throughput en GPU para este adaptador.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| rooster-coder-rwkv7-1.5b | 1.527.799.808 | no disponible | Apache-2.0 | safetensors, GGUF, MLX | Adaptador coder sobre RWKV v7; sin benchmarks publicados |
-| RWKV/RWKV7-G1k-1.5B-20260930 (base) | 1.527.799.808 | no disponible | Apache-2.0 | safetensors, GGUF | Checkpoint base sin ajuste de instrucciones; los GGUF existentes no incluyen este adaptador |
-| Qwen2.5-Coder-1.5B | 1.500 millones | 32.768 tokens (segun ficha publica de Qwen) | Apache-2.0 | safetensors, GGUF | Alternativa transformer cuadratica con benchmarks publicados; no disponible en la informacion proporcionada para comparacion directa |
-| SmolLM2-1.7B | 1.700 millones | 8.192 tokens (segun ficha publica) | Apache-2.0 | safetensors, GGUF | Alternativa transformer de tamano similar; no evaluada aqui |
+| Modelo | Parámetros | Contexto | HumanEval+ | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| rooster-coder-rwkv7-1.5b | 1.527.799.808 | 2048 | 0,195 | apache-2.0 | HF (adaptador + GGUF + MLX) |
+| RWKV7-G1k-1.5B (base) | 1.527.799.808 | no disponible | 0,329 | apache-2.0 | HF |
+| Alternativas de 1,5B para código | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion cuantitativa con alternativas no esta disponible porque el autor no publico benchmarks. La diferencia arquitectonica principal frente a Qwen2.5-Coder y SmolLM2 es el mecanismo de atencion lineal de RWKV v7, que reduce el coste de inferencia en secuencias largas a cambio de una menor madurez del ecosistema (menos soporte en frameworks y menos herramientas de evaluacion).
+La única comparación directa disponible en la información es con el modelo base, que supera al adaptador en HumanEval+ (0,329 frente a 0,195). No se han proporcionado datos de otros modelos comparables de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El checkpoint base no esta ajustado a instrucciones; el adaptador ensena el estilo de traza coder, no conversacion general.
-- El corpus de entrenamiento es muy pequeno (70 filas, 667.970 tokens de entrenamiento). Se debe esperar la transferencia de estilo, no una mejora sustancial de capacidad.
-- No hay benchmarks antes/despues ni evaluacion HumanEval; no se puede afirmar ninguna mejora medible sobre el base.
-- La inferencia en fp16 de esta arquitectura es inestable (el autor reporta NaN en entrenamiento); se recomienda fp32 en PyTorch. Los GGUF y MLX fusionados evitan este problema.
-- Los GGUF de RWKV7-G1k-1.5B ya publicados corresponden al modelo base y no contienen este adaptador; hay que usar los del repositorio del adaptador.
-- Las trazas de razonamiento provienen de Qwen4 Max via OpenRouter y los prompts del corpus derivan de TeichAI/MiMo; se aplican los terminos de uso upstream ademas de la licencia Apache-2.0.
-- Idioma limitado al ingles; no hay soporte verificado de castellano ni de otros idiomas.
-- No hay informacion sobre sesgos, alucinacion o robustez en produccion; al ser un modelo de 1.5B, el riesgo de alucinacion en codigo y matematicas es alto y requiere validacion externa.
-- El soporte de tool calling y agentes no esta verificado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay validacion de la comunidad.
+- El modelo base no está ajustado a instrucciones; el adaptador enseña el estilo de traza del corpus, no conversación general.
+- Sobreajuste severo: 70 filas con learning rate 1e-4 durante 3 épocas degradan HumanEval+ en 13,4 puntos y empeoran la NLL en SWE20.
+- La inferencia en fp16 de esta arquitectura es poco fiable (el entrenamiento se hizo en fp32 por logits NaN y gradientes NaN); usar fp32 en PyTorch.
+- Los GGUF existentes de RWKV7-G1k-1.5B son del modelo base y no contienen este adaptador.
+- El corpus de razonamiento deriva de prompts de TeichAI/MiMo y trazas de Qwen4 Max; aplican los términos de uso de las fuentes originales.
+- Idioma limitado al inglés; no se documenta soporte multilingüe.
+- Contexto máximo de 2048 tokens, insuficiente para tareas de código con repositorios grandes.
+- Riesgo de alucinación no cuantificado en la información disponible; al ser un modelo de 1,5B con ajuste mínimo, se espera un comportamiento limitado en razonamiento complejo.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad.
+- Uso comercial permitido por Apache-2.0, pero el autor no lo recomienda como modelo de código en producción.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/AJ-Gonzalez/rooster-coder-rwkv7-1.5b
+- Modelo en Hugging Face: https://huggingface.co/AJ-Gonzalez/rooster-coder-rwkv7-1.5b
 - Modelo base: https://huggingface.co/RWKV/RWKV7-G1k-1.5B-20260930
-- Dataset de razonamiento: https://huggingface.co/datasets/AJ-Gonzalez/qwen4-max-reasoning-250x
-- Dataset de SFT (Kaggle): https://www.kaggle.com/datasets/aliciajgonzalez/rooster-coder-rwkv7-sft-data
-- Repositorio llama.cpp (conversion GGUF): https://github.com/ggml-org/llama.cpp
-- Repositorio MLX: https://github.com/ml-explore/mlx
-- Repositorio PEFT: https://github.com/huggingface/peft
+- Dataset de entrenamiento: https://huggingface.co/datasets/AJ-Gonzalez/qwen4-max-reasoning-250x
+- Dataset SFT en Kaggle: https://www.kaggle.com/datasets/aliciajgonzalez/rooster-coder-rwkv7-sft-data
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

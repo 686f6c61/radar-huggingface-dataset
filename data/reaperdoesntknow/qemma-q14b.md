@@ -2,51 +2,55 @@
 
 ## Resumen
 
-Qemma-Q14B es un modelo de lenguaje presentado por el usuario reaperdoesntknow (Convergent Intelligence LLC: Research Division) que se describe como un híbrido nativo de Hugging Face construido mediante la fusión a nivel de pesos de dos arquitecturas distintas: el cuerpo MLP de Gemma-3 (1B) y la atención/cabeza de Qwen-3 (14B), proyectadas y alineadas al tamaño oculto de Gemma. El resultado se somete después a un ajuste fino supervisado (SFT) orientado a seguir instrucciones y razonamiento paso a paso.
+Qemma-Q14B es un modelo experimental de generación de texto publicado por el usuario reaperdoesntknow (Convergent Intelligence LLC: Research Division) que fusiona a nivel de pesos dos arquitecturas distintas: el cuerpo MLP de Gemma-3 (1B) y la atención de Qwen3-14B, proyectada y alineada a la dimensión oculta de Gemma. El resultado es un modelo híbrido que, pese a su nombre, contiene 1.009.478.016 parámetros reales según los safetensors del repositorio, no 14B.
 
-El modelo se enmarca en una formulación matemática propia del autor, el "Discrepancy Calculus" (DISC) y su "Gap Envelope Integral" (GEI), que el autor presenta como herramienta para medir las discontinuidades que aparecen al fusionar geometrías de pesos de arquitecturas diferentes. Esta variante incorpora además un segundo merge con Qwen3-14B y escalado de RoPE basado en YaRN con una relación 1:* respecto a `max_position_embeddings = 524288`.
+La propuesta del autor se apoya en una formulación matemática propia denominada Discrepancy Calculus (DISC), con una "Gap Envelope Integral" que cuantifica el desajuste en las fronteras de fusión entre geometrías de pesos distintas. Sobre esa base se aplica un ajuste supervisado (SFT) breve con ultrachat_200k y MathInstruct para razonamiento paso a paso, más un escalado RoPE de tipo YaRN.
 
-Es relevante ahora como experimento de fusión cross-architecture a nivel de pesos, un enfoque poco habitual frente a los adaptadores o al ensemble en inferencia. Conviene advertir que la model card mezcla especificaciones contradictorias (parámetros del backbone y del modelo fusionado) y que el recuento real de safetensors publicado es de 1.009.478.016 parámetros, muy por debajo de los 14B que sugiere el nombre.
+Es relevante ahora como caso de estudio de fusión cross-architecture y de técnicas de merge a nivel de capa, más que como modelo listo para producción. Su licencia OSL-3.0, su soporte exclusivo de inglés y su documentación atípica lo sitúan en el terreno de la investigación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida por fusión de pesos: cuerpo MLP de Gemma-3 (1B) + atención/cabeza de Qwen-3 (14B), alineadas al hidden size de Gemma; transformer con escalado RoPE tipo YaRN |
-| Parametros totales | 1.009.478.016 (según safetensors publicados); la model card cita componentes de 14B y 1B de forma no reconciliada |
+| Arquitectura | Híbrida: backbone Gemma-3 (26 capas, hidden 1152, MLP 6912) con atención estilo Qwen (head_dim 128, 40 cabezas de atención, 8 cabezas KV, intermediate_size 17408) reagrupada a 4x256 cabezas de Gemma |
+| Parametros totales | 1.009.478.016 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | `max_position_embeddings = 524288` con RoPE Scaling YaRN (relación 1:*); contexto efectivo no verificado |
-| Tipos de cuantizacion | no disponible (repo en safetensors, presumiblemente bfloat16) |
-| Idiomas soportados | en |
-| Licencia | osl-3.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Longitud de contexto | max_position_embeddings = 524288 con RoPE scaling YaRN (ratio 1:*) |
+| Tipos de cuantizacion | no disponible (repo solo en safetensors; no se publican GGUF ni cuantizaciones) |
+| Idiomas soportados | inglés (en) |
+| Licencia | OSL-3.0 |
+| Formato de pesos | safetensors |
+| Tokenizer | Gemma-3 tokenizer y chat template (chat_template.jinja) |
+| Modelos base | google/gemma-3-1b-it, Qwen/Qwen3-14B |
+| Tamano del repo | 24,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del backbone de Gemma-3 con 26 capas, hidden 1152 y MLP 6912, sobre el que se injerta una atención de estilo Qwen reagrupada a las 4×256 cabezas de Gemma (head_dim=128, hidden=5120, intermediate_size=17408, 40 cabezas de atención, 8 cabezas KV y 40 capas ocultas según la model card). El tokenizador y la plantilla de chat son los de Gemma-3 (`chat_template.jinja`). La fusión se realiza a nivel de pesos, sin adaptadores, con una lógica de fusión por capas y una ronda posterior de alineamiento de embeddings (8 pasos).
+La arquitectura es una fusión a nivel de pesos sin adaptadores: se toma el cuerpo y MLP de Gemma-3 (26 capas, hidden 1152, MLP 6912) y se injerta la atención de Qwen3-14B, reagrupada a la disposición de cabezas de Gemma (4x256, head_dim 128). La atención de Qwen opera con 40 cabezas y 8 cabezas KV sobre un hidden de 5120 e intermediate_size de 17408, y se proyecta y alinea a la dimensión oculta de Gemma. El tokenizer y la plantilla de chat son los de Gemma-3. La variante Qemma-Q14B incorpora además un segundo merge entre Qemma-redux y Qwen3-14B, con lógica de fusión actualizada para permitir fusión por capa y alineación de embeddings posterior a la fusión.
 
-El entrenamiento consiste en aproximadamente 512 pasos de warm-start sobre HuggingFaceH4/ultrachat_200k y unos 256 pasos de SFT con TIGER-Lab/MathInstruct más ultrachat_200k. No se documentan fases de RLHF ni DPO. Las versiones de framework declaradas son TRL 0.25.0, Transformers 4.57.1, PyTorch 2.8.0+cpu, Datasets 4.4.1 y Tokenizers 0.22.1. La innovación técnica declarada es el marco DISC/GEI para cuantificar el desajuste en las fronteras de fusión, aunque no se aportan métricas reproducibles de dicho desajuste ni evaluaciones del modelo resultante.
+El entrenamiento es un SFT ligero: aproximadamente 512 pasos de warm-start sobre HuggingFaceH4/ultrachat_200k, seguidos de unas 8 iteraciones de entrenamiento posterior a la fusión para favorecer la realineación de embeddings, y unos 256 pasos de SFT con TIGER-Lab/MathInstruct más ultrachat_200k. No se documentan fases de RLHF ni DPO. El stack empleado es TRL 0.25.0, Transformers 4.57.1, PyTorch 2.8.0+cpu, Datasets 4.4.1 y Tokenizers 0.22.1. La innovación declarada es la formulación DISC/GEI para medir el salto en las fronteras de fusión, además del escalado YaRN sobre max_position_embeddings de 524288.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con plantilla de chat de Gemma-3.
-- Seguimiento de instrucciones y razonamiento paso a paso, reforzado mediante SFT sobre ultrachat_200k y MathInstruct.
-- Razonamiento matemático básico derivado del ajuste con MathInstruct.
-- Modo de razonamiento explícito mediante etiquetas `<think>` y `<reasoning_step>` en el prompt de ejemplo.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso autónomo: no disponible (no documentado más allá del formato de thinking).
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Capacidades especiales (visión, audio): no disponible.
+- Generación de texto conversacional en inglés con plantilla de chat de Gemma-3 (`<|user|>`, `<|assistant|>`).
+- Razonamiento paso a paso: el SFT sobre MathInstruct y ultrachat_200k busca instrucciones y razonamiento por etapas; la plantilla de ejemplo incluye marcadores `<think><reasoning_step>`.
+- Resolución de problemas matemáticos elementales derivados de MathInstruct.
+- Seguimiento de instrucciones en formato multi-turno (ultrachat_200k).
+- Capacidad de base para ajuste posterior (SFT/RLHF), según el uso previsto declarado por el autor.
+- Soporte de tool calling / function calling: no disponible (no se documenta).
+- Soporte de agentes y multi-step reasoning: no disponible como capacidad verificada; solo se menciona razonamiento paso a paso.
+- Multilingüismo: limitado a inglés.
+- Capacidades especiales (visión, audio): no disponibles; el modelo es text-generation.
 
 ## Casos de uso
 
-- Experimentación en investigación sobre fusión cross-architecture: el modelo sirve como banco de pruebas para estudiar la alineación de embeddings y el desajuste entre geometrías de pesos de Gemma y Qwen, validando o refutando el marco DISC/GEI.
-- Generación de texto conversacional en inglés para prototipos: puede gestionar diálogos multi-turno usando la plantilla de chat de Gemma-3 y un contexto declarado muy amplio, útil en demos y pruebas de concepto.
-- Razonamiento matemático asistido en entornos de investigación: el SFT con MathInstruct permite generar cadenas de razonamiento paso a paso para problemas de nivel educativo, siempre con verificación humana.
-- Reproducción de experimentos de merge: dado que documenta pasos de warm-start y SFT, es adecuado para replicar el pipeline de fusión y medir su impacto frente a los modelos base.
-- Base para SFT/RLHF posterior: la model card indica explícitamente su uso para ajuste adicional, por lo que puede servir como punto de partida en pipelines de TRL.
-- Evaluación comparativa de tokenizadores y plantillas: al usar el tokenizador de Gemma-3 sobre un cuerpo híbrido, resulta útil para estudiar discrepancias de tokenización en modelos fusionados.
-- Docencia y divulgación sobre arquitecturas híbridas: permite ilustrar de forma práctica qué ocurre al combinar atención y MLP de modelos distintos.
+- Investigación en fusión de arquitecturas: reproducir el pipeline de merge Gemma-3 + Qwen3-14B a nivel de pesos y evaluar la metodología DISC/GEI sobre las fronteras de capa. Adecuado por ser un artefacto abierto en safetensors y con la receta de entrenamiento documentada.
+- Experimentos de alineación de embeddings: usar los ~8 pasos de entrenamiento post-fusión como referencia para estudiar la realineación de embeddings tras un merge cross-architecture.
+- Generación de texto conversacional en inglés para prototipos: con 1.000 millones de parámetros efectivos, encaja en entornos de pruebas donde no se requiere calidad de producción.
+- Razonamiento matemático guiado: aprovechar el SFT sobre MathInstruct para generar cadenas de razonamiento en problemas de nivel educativo, siempre con verificación humana.
+- Base para SFT/RLHF propio: el autor declara explícitamente este uso; el modelo sirve como punto de partida para ajustes posteriores con datasets propios en inglés.
+- Estudio de escalado de contexto: validar el comportamiento del escalado RoPE YaRN configurado sobre max_position_embeddings de 524288 en tareas de contexto largo, midiendo degradación real.
+- Docencia y divulgación: ilustrar en un curso o artículo cómo se compone un modelo híbrido a partir de dos checkpoints y qué compromisos introduce.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +58,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1.009.478.016 parámetros, en bfloat16 requiere aproximadamente 2 GB de pesos; en float32, unos 4 GB. El tamaño del repo (24,3 GB) sugiere artefactos adicionales u otros formatos, por lo que conviene verificar los ficheros antes de desplegar.
-- GPU recomendadas: cualquier GPU consumer con 6-8 GB o más (RTX 3060, RTX 4060, RTX 4090) debería acomodar el modelo en bfloat16 o float16; para el contexto máximo declarado de 524288 tokens se necesitaría memoria KV adicional considerable, no cuantificada en la información disponible.
-- Cabe en GPU consumer: sí, según el recuento de parámetros publicado; no verificado en la práctica.
-- Opciones de despliegue: transformers (soporte nativo declarado), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); vLLM, llama.cpp y Ollama no están documentados para este modelo.
+- VRAM estimada para inferencia: con 1.009.478.016 parámetros, en bfloat16 requiere aproximadamente 2 GB de pesos; en float32, unos 4 GB. El repo ocupa 24,3 GB, lo que sugiere artefactos adicionales u optimizador incluidos, pero la inferencia en bf16 se mantiene en el entorno de 2 GB más overhead de activaciones y KV cache.
+- GPU recomendadas: cualquier GPU con 8 GB o más es suficiente para bf16; una RTX 3060/4060, RTX 4090, A100 o H100 cubren el modelo con holgura.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs consumer modernas con 6-8 GB de VRAM.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag endpoints_compatible). No se publican pesos GGUF, por lo que llama.cpp y Ollama requerirían conversión propia.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qemma-Q14B | 1.009.478.016 (safetensors) | 524288 (YaRN declarado) | osl-3.0 | Fusión de pesos Gemma-3 + Qwen-3 con SFT |
-| google/gemma-3-1b-it | ~1B | no disponible en la información | Gemma Terms of Use | Modelo base instruct de Gemma-3 |
-| Qwen/Qwen3-14B | 14B | no disponible en la información | Apache 2.0 (según el modelo base, no verificado aquí) | Modelo base de Qwen-3 |
-
-La comparación directa de rendimiento no es posible porque no se han publicado benchmarks del modelo fusionado. La diferencia principal frente a los modelos base es el enfoque de fusión a nivel de pesos y el marco teórico DISC/GEI, no una mejora cuantificada de capacidades.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qemma-Q14B | 1.009.478.016 | 524288 (YaRN) | OSL-3.0 | safetensors | Fusión híbrida Gemma-3 + Qwen3-14B; solo inglés |
+| google/gemma-3-1b-it | ~1B | 32768 (modelo base) | Gemma Terms | safetensors, GGUF | Modelo base del backbone; multilingüe, soporte de visión en la familia |
+| Qwen/Qwen3-14B | ~14B | 32768 nativo (extensible) | Apache 2.0 | safetensors, GGUF | Modelo base de la atención; multilingüe y con modo thinking |
+| Qwen3-1.7B | ~1,7B | 32768 | Apache 2.0 | safetensors, GGUF | Alternativa compacta de la misma familia para comparación de tamaño |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación reconocido explícitamente por el autor; no debe usarse en decisiones críticas de seguridad, médicas, legales o financieras.
-- Inconsistencia documental: el nombre y la model card sugieren 14B, pero el recuento real de safetensors es de ~1.009 millones de parámetros; conviene auditar los pesos antes de cualquier uso en producción.
-- Contexto declarado de 524288 tokens con YaRN no verificado empíricamente; el rendimiento en ventanas largas puede degradarse.
-- Idioma limitado al inglés según el campo `language`; no hay evidencia de capacidades multilingües.
-- Licencia OSL-3.0: impone obligaciones de copyleft sobre el código derivado; revisar compatibilidad antes de uso comercial.
-- Entrenamiento muy corto (~512 pasos de warm-start y ~256 de SFT) y sin RLHF/DPO, lo que limita la robustez del alineamiento.
-- Ausencia total de benchmarks publicados y de evaluaciones de seguridad.
-- El marco teórico DISC/GEI no cuenta con validación independiente en la información disponible.
-- Tags de dataset y modelo base que mezclan componentes de 1B y 14B, lo que dificulta la trazabilidad del linaje.
+- El nombre "Q14B" induce a error: el modelo tiene 1.009.478.016 parámetros reales, no 14B. Cualquier estimación de capacidad basada en el nombre será incorrecta.
+- El autor advierte riesgo de alucinación y desaconseja explícitamente su uso en decisiones críticas de seguridad, médicas, legales o financieras.
+- Idiomas: únicamente inglés; no hay soporte multilingüe documentado.
+- Licencia OSL-3.0: impone obligaciones de reciprocidad (copyleft) sobre obras derivadas; debe revisarse antes de cualquier uso comercial o distribución.
+- Entrenamiento muy ligero (~512 pasos de warm-start, ~256 de SFT y 8 de realineación), insuficiente para esperar calidad de instrucción robusta.
+- La fusión cross-architecture introduce discontinuidades en las fronteras de capa; el propio autor las describe como no suaves y las cuantifica con su formalismo DISC, lo que sugiere degradación frente a los modelos base.
+- Contexto declarado de 524288 mediante YaRN: no se aportan evaluaciones de calidad en contextos largos; el rendimiento efectivo a esa longitud es desconocido.
+- Sin benchmarks publicados ni cuantizaciones oficiales; el soporte de la comunidad es mínimo (3 likes, 2.469 descargas).
+- Documentación atípica, con referencias a una monografía propia no revisada por pares; tratar las afirmaciones matemáticas con cautela.
 
 ## Enlaces
 
-- [Hugging Face: reaperdoesntknow/Qemma-Q14B](https://huggingface.co/reaperdoesntknow/Qemma-Q14B)
-- [Perfil del autor en Hugging Face](https://huggingface.co/reaperdoesntknow)
-- [Modelo base: google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
-- [Modelo base: Qwen/Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B)
-- [Dataset: HuggingFaceH4/ultrachat_200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)
-- [Dataset: TIGER-Lab/MathInstruct](https://huggingface.co/datasets/TIGER-Lab/MathInstruct)
-- [TRL: Transformer Reinforcement Learning](https://github.com/huggingface/trl)
-- [Colección DistilQwen del autor](https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c)
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qemma-Q14B
+- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Modelo base Gemma-3-1B-IT: https://huggingface.co/google/gemma-3-1b-it
+- Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
+- Dataset ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
+- Dataset MathInstruct: https://huggingface.co/datasets/TIGER-Lab/MathInstruct
+- Repositorio TRL: https://github.com/huggingface/trl
+- Colección DistilQwen del autor: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c

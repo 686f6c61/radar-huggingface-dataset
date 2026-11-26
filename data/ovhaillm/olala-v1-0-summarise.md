@@ -2,94 +2,93 @@
 
 ## Resumen
 
-Olala-v1.0-summarise es un modelo especializado en resumen de documentos, obtenido por ajuste fino (fine-tuning) del modelo base OVHaiLLM/Olala-v1.0-mini-7A1B, desarrollado por OVHaiLLM (OVHcloud). Su propósito es generar resúmenes estructurados y fieles a la fuente a partir de documentos de muy diversa naturaleza: noticias, diálogos, hilos de foro, llamadas de resultados financieros, proyectos de ley, informes gubernamentales y artículos científicos. El modelo razona antes de redactar el resumen, lo que le permite mantener la fidelidad al contenido original y adaptarse a la forma solicitada por el usuario ("en una frase", "en viñetas", etc.).
+Olala-v1.0-summarise es un modelo especializado en resumen de documentos desarrollado por OVHaiLLM (OVHcloud), obtenido mediante fine-tuning del modelo post-entrenado Olala-v1.0-mini-7A1B. Su particularidad es que razona antes de redactar el resumen, lo que le permite generar síntesis estructuradas y fieles a la fuente en lugar de extractos superficiales. Está pensado para documentos heterogéneos: noticias, diálogos, hilos de foro, llamadas de resultados financieros, proyectos de ley, informes gubernamentales y artículos científicos.
 
-La arquitectura es híbrida Mamba-MoE (según las etiquetas del autor: mamba, hybrid, moe), con 6.773.124.144 parámetros totales según los pesos en safetensors. El modelo base fue preentrenado con 12,8 billones de tokens y posteriormente sometido a ajuste supervisado y a una fase de RL antes de la especialización en resumen. El identificador "7A1B" del modelo base sugiere 7.000 millones de parámetros totales con 1.000 millones activos por token, si bien esta correspondencia no está confirmada de forma explícita en la información disponible.
+El modelo parte de una arquitectura híbrida Mamba + MoE (según los tags del repositorio), con 6.773.124.144 parámetros totales en pesos safetensors y un tamaño de repositorio de 13,6 GB. La model card lo describe como un modelo de 7A1B (aproximadamente 7.000 millones de parámetros totales con 1.000 millones activos), aunque la cifra exacta de parámetros activos no se detalla en la información disponible.
 
-El modelo es relevante porque combina un tamaño contenido (apto para despliegue en infraestructura moderada) con una especialización clara en una tarea de alto valor empresarial como es el resumen documental, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. Está disponible tanto en Hugging Face como a través de los AI Endpoints de OVHcloud.
+Es relevante ahora porque combina razonamiento previo a la generación con un control explícito del formato de salida ("en una frase", "en viñetas") y porque, según el autor, produce resúmenes más concisos que 16 de los 17 modelos con los que se comparó. Se distribuye bajo licencia Apache 2.0 y está disponible tanto en Hugging Face como en los AI Endpoints de OVHcloud.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-MoE (transformer híbrido con mezcla de expertos, según etiquetas del autor) |
+| Arquitectura | Híbrida Mamba + MoE (según tags del repositorio; detalles exactos no disponibles) |
 | Parametros totales | 6.773.124.144 |
-| Parametros activos | no disponible (el identificador "7A1B" del modelo base sugiere ~1B activos, sin confirmación explícita) |
+| Parametros activos | no disponible (denominación "7A1B" sugiere ~7B totales y ~1B activos, sin confirmación oficial) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (requiere custom_code) |
+| Formato de pesos | safetensors (librería transformers, custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura híbrida que combina capas Mamba con mezcla de expertos (MoE), según las etiquetas declaradas por el autor (mamba, hybrid, moe, custom_code). Esta combinación busca un equilibrio entre eficiencia computacional en secuencias largas (ventaja de los modelos de espacio de estados como Mamba) y capacidad de modelado mediante expertos dispersos. El modelo requiere cargar código personalizado (custom_code) a través de la librería transformers, lo que implica que no es un transformer estándar y necesita confiar en la implementación del autor al cargarlo.
+El modelo se basa en Olala-v1.0-mini-7A1B, un modelo post-entrenado de la familia Olala que combina capas Mamba con mezcla de expertos (MoE), según los tags del repositorio. El modelo base pre-entrenado (Olala-v1.0-mini-7A1B-base) se entrenó con 12,8 billones de tokens; sobre él se aplicó un proceso de supervisión fina (SFT) y posteriormente un post-entrenamiento orientado a razonamiento, chat y uso de herramientas, antes de la especialización final en resumen.
 
-El modelo base Olala-v1.0-mini-7A1B-base fue preentrenado con 12,8 billones de tokens. Sobre él se aplicó un ajuste supervisado (SFT) y posteriormente una fase de aprendizaje por refuerzo (RL), dando lugar al modelo post-entrenado Olala-v1.0-mini-7A1B, orientado a razonamiento, chat y uso de herramientas. Olala-v1.0-summarise es un ajuste fino adicional de ese modelo post-entrenado, especializado en resumen documental con razonamiento previo a la generación. No se dispone de información detallada sobre la composición del dataset de especialización ni sobre el algoritmo de RL empleado.
+La especialización en resumen se realizó mediante fine-tuning sobre el modelo post-entrenado. El autor indica que el modelo fue entrenado para razonar antes de escribir el resumen, para producir salidas estructuradas (secciones o viñetas etiquetadas) fieles a la fuente y para respetar restricciones de formato explícitas. No se especifican en la información disponible el número de tokens de entrenamiento del fine-tuning, la composición del dataset de resumen ni si se emplearon técnicas de RLHF o DPO en esta etapa concreta.
 
 ## Capacidades
 
-- Generación de resúmenes de documentos de múltiples tipos: noticias, diálogos, hilos de foro, llamadas de resultados financieros, proyectos de ley, informes gubernamentales y artículos científicos.
-- Razonamiento previo a la escritura: el modelo razona antes de producir el resumen, lo que favorece la fidelidad al contenido fuente.
-- Resúmenes estructurados: capacidad de generar secciones o viñetas etiquetadas.
-- Adaptación a la forma solicitada: puede producir resúmenes "en una frase", "en viñetas" u otros formatos indicados en la instrucción.
+- Generación de resúmenes de documentos de múltiples tipos: noticias, diálogos, hilos de foro, llamadas de resultados, proyectos de ley, informes gubernamentales y artículos científicos.
+- Razonamiento previo a la generación del resumen (modo de razonamiento interno antes de la salida).
+- Resúmenes estructurados: secciones o viñetas etiquetadas.
+- Control del formato de salida bajo instrucción explícita ("en una frase", "en viñetas").
+- Fidelidad a la fuente como objetivo de entrenamiento declarado.
 - Concisión: según el autor, sus resúmenes son más cortos que los de 16 de los 17 modelos comparados.
-- Conversación multi-turno: heredada del modelo base post-entrenado (etiqueta conversational).
-- Razonamiento y uso de herramientas: capacidades heredadas del modelo base Olala-v1.0-mini-7A1B (reasoning, tool use), aunque la especialización en resumen puede priorizar la tarea principal.
-- Idiomas: únicamente inglés.
+- Capacidades heredadas del modelo base: conversación, razonamiento y uso de herramientas (tool use), según la descripción del modelo post-entrenado del que deriva.
+- Capacidad multilingüe: limitada al inglés según el campo `language` del repositorio.
 
 ## Casos de uso
 
-- Resumen de noticias para agregadores y boletines: el modelo puede condensar artículos periodísticos en resúmenes breves y estructurados, adecuado por su entrenamiento específico en documentos tipo noticia y su tendencia a la concisión.
-- Síntesis de llamadas de resultados financieros: permite extraer los puntos clave de transcripciones de earnings calls en viñetas etiquetadas, útil para equipos de análisis financiero que necesitan procesar muchas llamadas en poco tiempo.
-- Resumen de informes gubernamentales y proyectos de ley: su entrenamiento en documentos administrativos y legislativos lo hace adecuado para tareas de análisis normativo y seguimiento regulatorio.
-- Revisión de literatura científica: puede generar resúmenes estructurados de artículos científicos, facilitando la revisión rápida de publicaciones y la extracción de secciones clave.
-- Moderación y síntesis de foros y comunidades: resumen de hilos de discusión largos en puntos clave, útil para plataformas comunitarias que quieren ofrecer resúmenes automáticos a sus usuarios.
-- Resumen de conversaciones y diálogos: aplicable a transcripciones de atención al cliente o reuniones, generando actas concisas y fieles con formato configurable.
-- Integración en pipelines documentales vía AI Endpoints: al estar disponible en el catálogo de AI Endpoints de OVHcloud, puede consumirse como servicio gestionado para automatizar el resumen en flujos de gestión documental.
+- Resumen de artículos científicos para revisión rápida de literatura: el modelo puede condensar papers en secciones o viñetas estructuradas, respetando la fidelidad a la fuente, lo que encaja con su entrenamiento específico en documentos científicos.
+- Síntesis de llamadas de resultados financieros: permite generar resúmenes concisos y estructurados de transcripciones largas, útil para equipos de análisis que necesitan extraer puntos clave sin leer el documento completo.
+- Procesamiento de informes gubernamentales y proyectos de ley: el modelo está entrenado para este tipo de documentos y puede producir resúmenes con secciones etiquetadas que faciliten la revisión por parte de equipos legales o de políticas públicas.
+- Resumen de hilos de foro y conversaciones: adecuado para destilar discusiones multi-turno en puntos accionables, gracias a su entrenamiento específico en diálogos y foros.
+- Moderación y triaje de contenido en plataformas: al poder resumir en una sola frase o en viñetas, se puede integrar en pipelines que clasifican y priorizan grandes volúmenes de documentos entrantes.
+- Generación de resúmenes ejecutivos con formato controlado: la capacidad de seguir instrucciones de formato ("en una frase", "como viñetas") lo hace apto para informes automatizados donde el formato de salida está estandarizado.
+- Integración vía API en productos SaaS: al estar disponible en los AI Endpoints de OVHcloud, puede consumirse como servicio gestionado para funcionalidades de resumen dentro de aplicaciones sin necesidad de desplegar infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona una comparación cualitativa de concisión (resúmenes más cortos que 16 de 17 modelos comparados), sin cifras de MMLU, HumanEval, GSM8K ni métricas de resumen como ROUGE.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta una comparación cualitativa de concisión (resúmenes más cortos que 16 de 17 modelos comparados), sin cifras de MMLU, HumanEval, GSM8K ni métricas de resumen como ROUGE.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 6.773 millones de parámetros, en precisión de 16 bits se requieren aproximadamente 13,5 GB solo para los pesos, más memoria para el contexto y el estado de inferencia; el repositorio ocupa 13,6 GB en safetensors.
-- En cuantización de 8 bits se estiman unos 7-8 GB de VRAM; en 4 bits, unos 4-5 GB, aunque no se confirman formatos de cuantización publicados por el autor.
-- GPU recomendadas: para fp16 sin cuantizar, GPU con 24 GB o más (RTX 4090, L40S, A100 40 GB, H100). Para cuantización 4/8 bits, GPU consumer de gama alta con 8-16 GB podrían ser suficientes, sujeto a la compatibilidad del código personalizado Mamba-MoE.
-- Cabe en GPU consumer: probablemente en RTX 4090 (24 GB) en fp16 y en GPUs de 8-16 GB con cuantización, si bien la arquitectura híbrida con custom_code puede limitar las opciones de despliegue.
-- Opciones de despliegue: transformers con custom_code (requisito del autor). No se confirma soporte para vLLM, llama.cpp, Ollama o TGI, dado que la arquitectura Mamba-MoE personalizada suele requerir implementaciones específicas. OVHcloud ofrece el modelo vía AI Endpoints como alternativa gestionada.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño (6,77 mil millones de parámetros), en FP16 se requieren aproximadamente 13,5 GB solo para pesos, más overhead de activaciones y caché; en cuantización de 8 bits, en torno a 7 GB; en 4 bits, en torno a 4 GB. Estas cifras son estimaciones por tamaño, no datos publicados por el autor.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría esperar ejecución en GPUs de 24 GB o más (RTX 4090, A10G, L4 con cuantización) y en A100/H100 para despliegues de producción, pero el autor no lo especifica.
+- Cabe en GPU de consumo: probable en cuantización de 4-8 bits en GPUs de 8-24 GB, aunque no confirmado por el autor.
+- Opciones de despliegue: transformers (librería declarada, con `custom_code`), lo que implica cargar código personalizado del repositorio. El soporte en vLLM, llama.cpp, Ollama o TGI no está confirmado en la información disponible; la arquitectura híbrida Mamba + MoE y el uso de `custom_code` pueden limitar la compatibilidad con motores de inferencia estándar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Olala-v1.0-summarise | 6,77B | no disponible | Resumen documental | Apache 2.0 | Hugging Face, OVHcloud AI Endpoints |
-| Olala-v1.0-mini-7A1B | ~7B (según nombre) | no disponible | Razonamiento, chat, tool use | Apache 2.0 | Hugging Face |
-| Olala-v1.0-translate | no disponible | no disponible | Traducción automática | Apache 2.0 | Hugging Face |
-| Modelos de resumen de propósito general (p. ej. variantes de 7-8B) | 7-8B | variable | Generalista | variable | variable |
+No se dispone de datos de benchmarks ni de especificaciones detalladas de los 17 modelos con los que el autor compara cualitativamente, por lo que no es posible construir una comparativa numérica fiable. A continuación se indican alternativas de la misma categoría (modelos pequeños especializados en resumen o de propósito general con capacidad de resumen), con los datos disponibles:
 
-No se dispone de datos de rendimiento comparativo en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Olala-v1.0-summarise | 6,77B totales | no disponible | Apache 2.0 | Especializado en resumen, razona antes de escribir |
+| Olala-v1.0-mini-7A1B | ~7B (7A1B) | no disponible | Apache 2.0 | Modelo base post-entrenado, propósito general |
+| Olala-v1.0-translate | ~7B (7A1B) | no disponible | Apache 2.0 | Variante especializada en traducción |
+| Modelos de resumen de propósito general de 7B | variable | variable | variable | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte para inglés; su uso en castellano u otros idiomas no está garantizado y probablemente degrade la calidad.
-- Riesgo de alucinación: como todo modelo generativo, puede introducir información no presente en el documento fuente, aunque su entrenamiento busca la fidelidad.
-- Contexto: se desconoce la longitud máxima de contexto, lo que impide garantizar el resumen de documentos muy largos sin truncamiento.
-- Arquitectura personalizada: requiere custom_code y confiar en la implementación del autor; la integración con frameworks de inferencia estándar (vLLM, llama.cpp, TGI) no está confirmada.
-- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse presumiblemente con datos mayoritariamente en inglés, puede reflejar sesgos culturales y lingüísticos de esos datos.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de los datos de entrenamiento del modelo base, no detalladas.
-- Madurez: el modelo tiene muy pocas descargas (5) y ninguna interacción (0 likes) en el momento de la ficha, lo que sugiere poca validación por parte de la comunidad.
-- Especialización estrecha: está optimizado para resumen; su rendimiento en otras tareas puede ser inferior al del modelo base del que deriva.
+- Idiomas: el repositorio declara únicamente inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Riesgo de alucinación: como todo modelo generativo, puede introducir información no presente en la fuente, aunque su entrenamiento prioriza la fidelidad; conviene validar resúmenes en contextos críticos.
+- Longitud de contexto no documentada: se desconoce la ventana máxima, lo que dificulta planificar el resumen de documentos muy largos sin truncado.
+- Compatibilidad de despliegue: el uso de `custom_code` y una arquitectura híbrida Mamba + MoE puede requerir código específico del repositorio y limitar el soporte en motores de inferencia populares (vLLM, llama.cpp, TGI).
+- Parámetros activos no confirmados: la denominación "7A1B" sugiere una MoE con ~1B activos, pero no se detalla oficialmente, lo que afecta a las estimaciones de coste computacional.
+- Sesgos: no se documentan sesgos conocidos en la información disponible; al entrenarse sobre datos web y financieros, puede heredar sesgos de esas fuentes.
+- Licencia: Apache 2.0 permite uso comercial, pero al derivar de un modelo base de OVHaiLLM conviene revisar los términos del modelo base y del código personalizado incluido.
+- Especialización estrecha: está optimizado para resumen; para otras tareas conviene usar el modelo base Olala-v1.0-mini-7A1B.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/OVHaiLLM/Olala-v1.0-summarise
-- Modelo base: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B
-- Modelo base preentrenado: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base
+- Modelo en Hugging Face: https://huggingface.co/OVHaiLLM/Olala-v1.0-summarise
+- Modelo base post-entrenado: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B
+- Modelo base pre-entrenado: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base
 - Modelo tras SFT: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-SFT
-- Modelo especializado en traducción: https://huggingface.co/OVHaiLLM/Olala-v1.0-translate
+- Variante de traducción: https://huggingface.co/OVHaiLLM/Olala-v1.0-translate
 - Informe técnico (PDF): https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf
-- Catálogo AI Endpoints de OVHcloud: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-1.0-mini/
+- AI Endpoints de OVHcloud: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-summarise/
 - Playground: https://olala.ovh.com

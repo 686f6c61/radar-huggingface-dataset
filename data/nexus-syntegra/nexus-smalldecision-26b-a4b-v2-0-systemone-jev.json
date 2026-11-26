@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "nexus-syntegra/Nexus-SmallDecision-26B-A4B-v2.0-SystemOne-Jev",
+  "slug": "nexus-syntegra-nexus-smalldecision-26b-a4b-v2-0-systemone-jev",
+  "author": "nexus-syntegra",
+  "url": "https://huggingface.co/nexus-syntegra/Nexus-SmallDecision-26B-A4B-v2.0-SystemOne-Jev",
+  "created_at": "2026-11-21T04:16:40.000Z",
+  "updated_at": "2026-11-25T22:39:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "decision-making",
+    "calibration",
+    "classification",
+    "nvfp4",
+    "vllm",
+    "en",
+    "arxiv:2204.08582",
+    "arxiv:2012.15349",
+    "arxiv:2406.18518",
+    "base_model:nvidia/Gemma-4-26B-A4B-NVFP4",
+    "base_model:finetune:nvidia/Gemma-4-26B-A4B-NVFP4",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14386941232,
+  "parameters_human": "14.39B",
+  "storage_bytes": 18822243387,
+  "storage_human": "18.8 GB",
+  "context_length": null,
+  "base_model": "nvidia/Gemma-4-26B-A4B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nexus Mods - Mods and Community",
+      "url": "https://www.nexusmods.com/",
+      "snippet": "Forums Discord Support authors Contact us Support Nexus Mods Mod faster with premium Network stats Members 80,662,479 …Read more"
+    },
+    {
+      "title": "Nexus – Magazine d’information indépendant",
+      "url": "https://www.nexus.fr/",
+      "snippet": "Nexus publie une information libre et documentée qui revisite les concepts établis en science, santé, énergie, conscience, exologie, …Read more"
+    },
+    {
+      "title": "Mods - Nexus Mods",
+      "url": "https://www.nexusmods.com/mods",
+      "snippet": "All 61 cutscenes of the German version of KOTOR 1, upscaled x4 to 2560 pixels wide: German opening crawl and burned-in German …Read more"
+    },
+    {
+      "title": "Magazine Nexus - YouTube",
+      "url": "https://www.youtube.com/channel/UCJRVmR4NWAKIx-e-c40qKxQ",
+      "snippet": "Nexus publie des sujets inédits en science, santé, spiritualité, société, environnement... 112 pages sans censure, sans pub, sans …Read more"
+    },
+    {
+      "title": "Toutes l'actualité consacrée aux sciences et alternatives – Nexus",
+      "url": "https://www.nexus.fr/actualite/",
+      "snippet": "Articles offerts, exclusivités Web, vidéos : retrouvez toute l’actualité du Magazine Nexus en ligne !"
+    }
+  ]
+}

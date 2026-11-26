@@ -2,49 +2,48 @@
 
 ## Resumen
 
-Aletheia-1.0-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Aletheia-1.0, publicado originalmente por el usuario Openwist en Hugging Face. El repositorio lo mantiene mradermacher, conocido por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 1.170.340.608 parametros segun los pesos en safetensors, lo que lo situa en la franja de aproximadamente 1,2 mil millones de parametros, un tamano orientado a inferencia en hardware de consumo.
+Aletheia-1.0 es un modelo de lenguaje conversacional de aproximadamente 1.170 millones de parametros, desarrollado originalmente por Openwist y distribuido en formato GGUF por mradermacher. El modelo parte de una base afinada mediante LoRA y fusionada (merged), orientada a despliegue en dispositivo (on-device) y conversacion en ingles. Esta ficha documenta concretamente la version cuantizada GGUF, que es la unica publicacion disponible en el repositorio de mradermacher.
 
-La relevancia de esta ficha radica en que permite ejecutar Aletheia-1.0 en entornos con recursos limitados mediante cuantizaciones que van desde Q2_K hasta F16, cubriendo un rango amplio de compromisos entre calidad y consumo de memoria. El repositorio ocupa 10,6 GB en total, lo que refleja la suma de todas las variantes de cuantizacion incluidas. No se dispone de informacion publica sobre la arquitectura exacta, los datos de entrenamiento, la licencia ni los idiomas soportados por el modelo base.
+La relevancia de esta publicacion radica en su empaquetado: mradermacher ofrece doce variantes de cuantizacion estatica que van desde Q2_K (0,6 GB) hasta f16 (2,4 GB), lo que permite ejecutar el modelo en hardware de consumo modesto mediante llama.cpp u otros runners compatibles con GGUF. El modelo base declara licencia lfm1.0 (Liquid Foundation Model license), lo que condiciona el uso comercial.
 
-La model card del repositorio se limita a metadatos de la herramienta de cuantizacion (quantize_version 2, convert_type hf, lista de quants generados) y a la referencia al modelo original. No incluye descripcion funcional, benchmarks ni indicaciones de uso, por lo que gran parte de los apartados de esta ficha deben marcarse como no disponibles.
+No se dispone de informacion publica sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks en la informacion proporcionada. La model card del repositorio GGUF es exclusivamente tecnica sobre el proceso de cuantizacion y no documenta capacidades del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.170.340.608 |
-| Parametros activos | no aplica (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base transformer, inferido por el formato de pesos; no confirmado en la informacion) |
+| Parametros totales | 1.170.340.608 (dato real de safetensors) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles, segun la model card) |
+| Licencia | lfm1.0 (Liquid Foundation Model license) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base Aletheia-1.0 en los datos disponibles. El recuento de parametros (1.170.340.608) es compatible con un transformer decoder-only de aproximadamente 1,2 mil millones de parametros, pero no se confirma ni el tipo de atencion, ni la funcion de activacion, ni si emplea tecnicas como grouped-query attention o attention lineal. Tampoco consta si es un modelo denso o una variante MoE; el numero de parametros activos no se indica y, por coherencia con el tamano, se asume denso sin confirmacion.
+La informacion disponible no detalla la arquitectura interna del modelo base Openwist/Aletheia-1.0. Los tags del repositorio indican que se trata de un modelo afinado mediante LoRA y posteriormente fusionado (merged), con orientacion a despliegue on-device. El recuento de parametros (1.170 millones) situa al modelo en la categoria de pequenos modelos de lenguaje, coherente con su uso en dispositivo.
 
-Respecto al entrenamiento, no hay datos sobre el numero de tokens, la composicion del corpus, el uso de RLHF, DPO o cualquier otra fase de alineamiento. La unica informacion tecnica verificable proviene de los metadatos de cuantizacion: el proceso se realizo con quantize_version 2, convert_type hf (conversion desde pesos Hugging Face) y output_tensor_quantised 1, lo que indica una cuantizacion por tensor de salida. No se documentan innovaciones tecnicas adicionales.
+No se han publicado en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas. El proceso de cuantizacion aplicado por mradermacher es estatico (quantize_version 2, output_tensor_quantised 1) y no incluye cuantizaciones ponderadas por imatrix, que el autor senala como no disponibles en el momento de la publicacion.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio sugiere un ajuste orientado a dialogo, aunque no se detalla el formato de prompt ni las plantillas de chat.
-- Razonamiento y generacion general: no hay documentacion que confirme capacidades especificas de razonamiento, matematicas o codigo.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas en la model card.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; no se mencionan modalidades adicionales.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse mediante la infraestructura de inference endpoints de Hugging Face con el formato GGUF.
+- Generacion de texto conversacional en ingles, segun la orientacion declarada del modelo base.
+- Afinado mediante LoRA fusionada, lo que sugiere especializacion en el dominio del dataset de ajuste (no documentado).
+- Despliegue on-device: el tag `on-device` indica optimizacion para ejecucion local en hardware limitado.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite su despliegue en infraestructuras de inferencia compatibles con Hugging Face.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido (thinking mode) en la informacion disponible.
+- Capacidades multilingues: solo se declara ingles; no se confirma soporte de otros idiomas.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M o Q5_K_M, el modelo puede ejecutarse en GPUs con 8-12 GB de VRAM o en CPU mediante llama.cpp, lo que permite prototipar asistentes conversacionales en equipos de sobremesa sin aceleradores dedicados.
-- Experimentacion con llama.cpp y Ollama: al estar en formato GGUF, se integra directamente en flujos de trabajo locales para pruebas de generacion de texto y comparacion de cuantizaciones.
-- Evaluacion de calidad frente a tamano: la disponibilidad de variantes desde Q2_K hasta F16 permite medir la degradacion de calidad segun la cuantizacion en tareas de generacion libre, un caso util para investigadores que calibran pipelines de compresion.
-- Servicio de chat ligero en entornos con recursos acotados: si el modelo base esta ajustado para conversacion, puede emplearse como backend de un chatbot de bajo coste en CPU, siempre que se valide previamente su calidad.
-- Pruebas de integracion con endpoints compatibles: la etiqueta `endpoints_compatible` facilita desplegar el modelo en infraestructura gestionada de Hugging Face para validar latencia y throughput antes de comprometer recursos propios.
-- Base para fine-tuning o destilacion: al ser un modelo de ~1,2 B de parametros, puede servir como punto de partida para ajustes especificos de dominio en entornos con presupuesto limitado, aunque la ausencia de licencia clara obliga a verificar los terminos antes de usarlo comercialmente.
+- Asistente conversacional local en ingles: el modelo puede ejecutarse en un portatil o mini-PC mediante llama.cpp con la cuantizacion Q4_K_M (0,8 GB), ofreciendo respuestas conversacionales sin conexion a internet ni dependencia de APIs externas.
+- Prototipado rapido de chatbots: con un peso de 0,6-0,8 GB en Q2_K o Q4_K_S, es viable iterar sobre prompts y flujos conversacionales en entornos de desarrollo con recursos limitados.
+- Inferencia en dispositivos edge: el tag `on-device` y el tamano reducido permiten desplegar el modelo en dispositivos con poca memoria (Raspberry Pi, mini-PC, moviles de gama alta con runners GGUF), para tareas de clasificacion o generacion de texto breve.
+- Educacion e investigacion: sirve como caso de estudio de un pipeline completo de afinado LoRA + fusion + cuantizacion GGUF, util para quienes quieran replicar el flujo con sus propios datos.
+- Generacion de texto en pipelines offline: integrable en scripts de procesamiento por lotes donde no se requiere conexion a servicios en la nube y el volumen de texto es moderado.
+- Pruebas de cuantizacion y evaluacion de calidad: las doce variantes permiten comparar el impacto de la cuantizacion (Q2_K frente a Q8_0) en la perplejidad y calidad de salida sobre un mismo modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +51,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,7-0,9 GB en Q2_K, 1,0-1,2 GB en Q4_K_M, 1,3-1,5 GB en Q8_0 y 2,3-2,5 GB en F16, calculados a partir del recuento de parametros y el numero de bits por peso (sin contar overhead de contexto y cache KV).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradamente suficientes para el modelo completo en F16.
-- Cabe en GPU de consumo: si, en practicamente todas las GPUs dedicadas modernas, incluso en F16; en iGPU y CPU tambien es viable con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (llama-cpp-python, text-generation-webui) y endpoints de Hugging Face con soporte GGUF. No se confirma soporte de vLLM o TGI para este repositorio concreto.
-- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
+- VRAM estimada: entre 0,6 GB (Q2_K) y 2,4 GB (f16) para los pesos; anadir margen para el contexto KV cache (dependiente de la longitud de contexto, no disponible).
+- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM libre para las cuantizaciones bajas; RTX 3060, RTX 4060 o superiores para las cuantizaciones altas con contexto extendido.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer modernas (GTX 1650 en adelante) e incluso en CPU con RAM suficiente.
+- Opciones de despliegue: llama.cpp, Ollama (previa conversion o importacion del GGUF), y runners compatibles con GGUF. El modelo base es compatible con transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Aletheia-1.0-GGUF | 1,17 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente replicado |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Hugging Face, Ollama |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+No se dispone de datos de benchmarks ni de especificaciones del modelo base (contexto, arquitectura) que permitan una comparacion rigurosa con alternativas. La siguiente tabla recoge solo los datos verificables del modelo frente a la ausencia de datos de los comparables.
 
-La comparativa se ofrece como referencia de categoria (modelos densos de 1-2 B de parametros); no se dispone de datos de rendimiento de Aletheia-1.0 que permitan una comparacion cuantitativa. TinyLlama, Qwen2.5-1.5B y SmolLM2-1.7B cuentan con licencias permisivas y documentacion publica extensa, mientras que Aletheia-1.0 carece de informacion sobre licencia y contexto.
+| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks |
+|---|---|---|---|---|---|
+| Aletheia-1.0 (GGUF) | 1.170 M | no disponible | lfm1.0 | GGUF | no disponible |
+| Alternativas de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se identifican en la informacion proporcionada modelos comparables de la misma categoria con datos verificables.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card funcional: no se documentan arquitectura, datos de entrenamiento, contexto ni idiomas, lo que impide evaluar su idoneidad para produccion sin pruebas empiricas previas.
-- Licencia no especificada: no se puede confirmar el uso comercial; es imprescindible contactar con el autor original (Openwist) o revisar el repositorio base antes de desplegarlo en entornos productivos.
-- Riesgo de alucinacion: inherente a los modelos de ~1,2 B de parametros, especialmente en tareas de conocimiento factual y razonamiento complejo; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible identificar sesgos de genero, idioma, cultura o dominio.
-- Limitaciones de contexto e idioma: se desconocen la ventana de contexto y los idiomas soportados; el uso en castellano no esta verificado.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S pueden degradar notablemente la coherencia en un modelo de este tamano; se recomienda Q4_K_M o superior para uso real.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que existan reportes de la comunidad sobre su comportamiento.
-- Fecha de creacion futura en los metadatos (2026-11-23): conviene verificar la integridad del repositorio y la autenticidad de los pesos antes de confiar en el.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- No hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad; se desconoce el riesgo de alucinacion y de contenido danino.
+- La licencia lfm1.0 (Liquid Foundation Model license) impone restricciones que deben revisarse antes de cualquier uso comercial; no es una licencia permisiva tipo Apache 2.0 o MIT.
+- La longitud de contexto no esta documentada, lo que impide planificar aplicaciones que requieran ventanas largas.
+- Las cuantizaciones Q2_K y Q3_K_M pueden degradar notablemente la calidad; el autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S o Q4_K_M para un equilibrio velocidad/calidad.
+- No hay cuantizaciones ponderadas por imatrix disponibles, lo que limita la calidad de las cuantizaciones bajas frente a alternativas con calibracion.
+- El modelo base es un afinado LoRA fusionado sobre una base no identificada en la informacion; su procedencia y calidad original no estan verificadas.
+- El repositorio tiene un numero muy bajo de descargas (479) y likes (1), lo que sugiere escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Aletheia-1.0-GGUF
 - Modelo base: https://huggingface.co/Openwist/Aletheia-1.0
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Pagina de descargas del autor: https://hf.tst.eu/model#Aletheia-1.0-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

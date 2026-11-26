@@ -2,98 +2,105 @@
 
 ## Resumen
 
-Olala-v1.0-translate es un modelo de traduccion automatica especializado en documentos financieros, desarrollado por OVHaiLLM (OVHcloud) y publicado como un fine-tune de Olala-v1.0-mini-7A1B. El modelo parte de una arquitectura hibrida con componentes Mamba y Mixture of Experts (MoE), con 6.773 millones de parametros totales almacenados en safetensors, y esta orientado a la traduccion controlable entre 18 idiomas, con enfasis en textos regulatorios, informes anuales, fichas de fondos y prospectos.
+Olala-v1.0-translate es un modelo de traduccion automatica neuronal desarrollado por OVHaiLLM (OVHcloud) mediante fine-tuning del modelo base Olala-v1.0-mini-7A1B. Esta especializado en traduccion de documentos financieros, aunque mantiene capacidades generales de traduccion sobre texto periodistico. Cubre 18 idiomas: lenguas europeas (ingles, frances, aleman, espanol, italiano, neerlandes, portugues, sueco, danes, noruego, finlandes, polaco, checo, ruso) mas arabe, chino simplificado y tradicional, japones y coreano.
 
-La propuesta diferencial del modelo es la controlabilidad terminologica: acepta un mapeo de terminologia proporcionado por el usuario, se adapta al dominio del documento y preserva el formato (mayusculas y etiquetas en linea), lo que resulta critico en traduccion financiera donde los terminos deben ser consistentes y auditables. Segun la model card, alcanza 62,6 BLEU en DOLFIN ingles-frances (8,6 puntos por delante del siguiente modelo comparado), el mejor COMET-22 (88,0) en texto periodistico y financiero, y queda a menos de 0,3 BLEU del mejor en noticias WMT.
+El modelo parte de una arquitectura hibrida que combina capas Mamba con mezcla de expertos (MoE), con aproximadamente 6.770 millones de parametros totales (dato real de safetensors) sobre un backbone de tipo 7A1B. Incorpora control de terminologia, adaptacion al dominio documental (informes anuales, fichas de fondos, prospectos, textos regulatorios) y preservacion de mayusculas y etiquetas en linea, lo que lo hace especialmente util en pipelines de localizacion financiera.
 
-El modelo se distribuye con licencia Apache 2.0, lo que facilita su uso comercial, y esta disponible tanto en Hugging Face como a traves de los AI Endpoints de OVHcloud. Su relevancia actual radica en cubrir un nicho poco atendido por los modelos generalistas: la traduccion de alta fidelidad en el dominio financiero multilingue, con control explicito de terminologia y formato.
+Su relevancia actual radica en que ofrece un rendimiento de traduccion especializada en finanzas significativamente superior al de modelos genericos comparables (62,6 BLEU en DOLFIN EN-FR, 8,6 puntos por delante del siguiente modelo comparado), con licencia Apache 2.0 y disponibilidad tanto en Hugging Face como en AI Endpoints de OVHcloud.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida Mamba + MoE (transformer hibrido, segun tags del modelo) |
-| Parametros totales | 6.773.124.144 (6,77 mil millones) |
-| Parametros activos | no disponible (la nomenclatura "7A1B" del modelo base sugiere 7 mil millones totales y 1 mil millones activos, pero no se confirma en la informacion disponible) |
+| Arquitectura | Hibrida Mamba + MoE (mezcla de expertos), transformer-like con custom_code |
+| Parametros totales | 6.773.124.144 (~6,77 mil millones) |
+| Parametros activos | no disponible (denominacion 7A1B sugiere ~1B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 18: en, fr, de, es, it, nl, pt, sv, da, no, fi, pl, cs, ru, ar, zh (simplificado y tradicional), ja, ko |
+| Idiomas soportados | en, fr, de, es, it, nl, pt, sv, da, no, fi, pl, cs, ru, ar, zh (simplificado y tradicional), ja, ko |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers, custom_code) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Olala-v1.0-mini-7A1B, descrito en la model card como un modelo hibrido con componentes Mamba y MoE. El modelo base fue preentrenado con 12,8 billones (12,8T) de tokens, seguido de un proceso de supervised fine-tuning (SFT) y un posterior post-entrenamiento con RL que dio lugar al modelo final de razonamiento, chat y uso de herramientas. Olala-v1.0-translate es un fine-tune especializado de ese modelo final, orientado especificamente a traduccion automatica, incluyendo documentos financieros.
+El modelo se construye sobre Olala-v1.0-mini-7A1B, un backbone preentrenado con 12,8 billones (T) de tokens segun la model card del autor. La arquitectura declarada es hibrida, combinando capas Mamba (modelos de espacio de estados) con mezcla de expertos (MoE), lo que sugiere un diseno orientado a eficiencia computacional en inferencia manteniendo capacidad parametrica. El modelo requiere `custom_code` para cargarse con transformers, lo que implica que la implementacion de las capas Mamba/MoE no es la estandar del framework.
 
-La informacion disponible no detalla la composicion exacta del dataset de fine-tuning, el numero de tokens de traduccion utilizados ni si se emplearon tecnicas como DPO o RLHF especificas para la tarea de traduccion. Tampoco se especifican innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal mas alla de la arquitectura hibrida Mamba+MoE heredada del modelo base. La model card si destaca la capacidad de seguir un mapeo de terminologia proporcionado por el usuario, adaptarse al dominio del documento y preservar mayusculas y etiquetas en linea, lo que sugiere un entrenamiento orientado a la fidelidad de formato y consistencia terminologica.
+El proceso de entrenamiento parte de un modelo base preentrenado, pasa por una fase de supervised fine-tuning (SFT) y despues por RL, segun la jerarquia de modelos publicada por OVHaiLLM (base, SFT, post-trained, summarise, translate). El fine-tuning especifico de traduccion se orienta a documentos financieros, con capacidad de seguir un mapeo de terminologia proporcionado por el usuario, adaptarse al dominio del documento y preservar casing y etiquetas en linea. No se especifica en la informacion disponible el volumen de tokens de la fase de fine-tuning de traduccion, la composicion del dataset ni el metodo exacto de RL.
 
 ## Capacidades
 
-- Traduccion automatica multilingue entre 18 idiomas, con cobertura de lenguas europeas, arabe, chino simplificado y tradicional, japones y coreano.
-- Traduccion controlable mediante mapeo de terminologia proporcionado por el usuario, lo que permite imponer glosarios y traducciones consistentes de terminos tecnicos o regulatorios.
-- Adaptacion al dominio del documento: informes anuales, fichas de fondos, prospectos y textos regulatorios.
-- Preservacion de mayusculas y etiquetas en linea durante la traduccion, util para documentos con formato estructurado.
-- Especializacion en documentos financieros, con rendimiento destacado en DOLFIN y textos financieros segun la model card.
-- Capacidades heredadas del modelo base (razonamiento, chat y uso de herramientas) presentes en la familia Olala-v1.0-mini-7A1B, aunque la model card de esta variante se centra en traduccion.
-- Soporte de generacion de texto via pipeline text-generation con transformers.
+- Traduccion automatica entre 18 idiomas, con especial enfasis en combinaciones que incluyen lenguas europeas, arabe, chino, japones y coreano.
+- Traduccion especializada en documentos financieros: informes anuales, fichas de fondos, prospectos y textos regulatorios.
+- Control de terminologia: acepta un mapeo de terminos proporcionado por el usuario para forzar traducciones consistentes.
+- Adaptacion al dominio documental segun el tipo de documento.
+- Preservacion de mayusculas y etiquetas en linea (inline tags), util para formatos con markup.
+- Generacion de texto general (pipeline text-generation).
+- Capacidades conversacionales heredadas del modelo base post-trained.
+- Soporte multilingue amplio (18 idiomas declarados).
+- Capacidad de tool calling y razonamiento multi-paso heredada del modelo base (segun descripcion del modelo post-trained del que deriva), aunque la especializacion efectiva del checkpoint es la traduccion.
 
 ## Casos de uso
 
-- Traduccion de informes anuales y memorias financieras: el modelo puede traducir documentos corporativos extensos preservando la terminologia contable y las etiquetas de formato, gracias a su especializacion en dominio financiero y a la preservacion de mayusculas y etiquetas en linea.
-- Localizacion de prospectos y fichas de fondos: permite imponer un glosario de terminos regulatorios por producto, asegurando consistencia entre idiomas en documentos sujetos a supervision financiera.
-- Traduccion de textos regulatorios multilingues: con 18 idiomas soportados, incluidos arabe, chino, japones y coreano, es adecuado para entidades que deben publicar documentacion regulatoria en multiples jurisdicciones.
-- Atencion al cliente financiera multilingue: puede traducir conversaciones y respuestas entre cliente y entidad, manteniendo terminologia consistente mediante el mapeo de terminologia configurable.
-- Enriquecimiento de bases de conocimiento internas: traduccion de documentacion financiera interna entre las lenguas del grupo (por ejemplo, de frances a espanol, aleman o italiano) preservando el formato original.
-- Pipelines de publicacion de contenido financiero: integracion en flujos editoriales donde se requiere traduccion con control de glosario y conservacion de etiquetas HTML o marcado en linea.
-- Traduccion de noticias y contenido periodistico economico: la model card reporta el mejor COMET-22 (88,0) en texto periodistico y financiero, lo que lo hace adecuado para medios especializados.
+- Traduccion de informes anuales y memorias financieras: el modelo esta fine-tuneado sobre documentos de este tipo y preserva terminologia contable y regulatoria, lo que reduce la necesidad de revision terminologica posterior.
+- Localizacion de fichas de fondos y prospectos: permite aplicar un mapeo de terminologia por producto o por jurisdiccion, manteniendo coherencia entre documentos de una misma gestora.
+- Traduccion de textos regulatorios multilingues: con 18 idiomas cubiertos, sirve para producir versiones de cumplimiento normativo en paralelo para distintas jurisdicciones.
+- Pipelines de localizacion con markup: la preservacion de etiquetas en linea lo hace adecuado para traduccion de contenido con HTML, XML o marcado interno sin romper la estructura.
+- Traduccion de documentacion tecnica y financiera para equipos internos: al estar disponible en AI Endpoints de OVHcloud, puede integrarse como servicio gestionado en flujos de trabajo corporativos.
+- Traduccion de noticias y contenido periodistico economico: obtiene el mejor COMET-22 (88,0) en texto periodistico y financiero segun el autor, y queda a menos de 0,3 BLEU del mejor modelo comparado en WMT news.
+- Preprocesamiento multilingue para analisis de sentimiento financiero: traduccion previa de documentos en 18 idiomas a un idioma pivote antes de aplicar modelos de analisis.
+- Generacion de versiones multilingues de material de marketing financiero con control de terminologia de marca.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| DOLFIN en-fr (BLEU) | 62,6 | 8,6 puntos por delante del siguiente modelo comparado, segun la model card |
-| COMET-22 (noticias y texto financiero) | 88,0 | Mejor puntuacion entre los modelos comparados, segun la model card |
-| WMT noticias (BLEU) | a menos de 0,3 BLEU del mejor | Sin cifra absoluta publicada en la informacion disponible |
+Datos publicados por el autor en la model card:
 
-No se han publicado en la informacion disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K para esta variante.
+| Benchmark | Resultado | Nota |
+|---|---|---|
+| DOLFIN EN-FR (BLEU) | 62,6 | 8,6 puntos por delante del siguiente modelo comparado |
+| COMET-22 (noticias y texto financiero) | 88,0 | Mejor puntuacion frente a los modelos comparados |
+| WMT news (BLEU) | no disponible (valor absoluto) | A menos de 0,3 BLEU del mejor modelo comparado |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 6,77 mil millones de parametros en precision FP16 requiere aproximadamente 13,5 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits rondaria 7-8 GB y en 4 bits unos 4-5 GB, aunque estos valores no estan confirmados por el autor.
-- GPU recomendadas: no especificadas por el autor. Por tamano, una A100 (40/80 GB), H100 o L40S son adecuadas para FP16; una RTX 4090 (24 GB) puede alojar el modelo en FP16 con margen limitado o en cuantizacion de 8 bits.
-- Cabe en GPU de consumo: probablemente en RTX 4090 (24 GB) en FP16 con contexto moderado, y en GPUs de 16-24 GB con cuantizacion; no confirmado por el autor.
-- Opciones de despliegue: transformers (libreria indicada, con custom_code); no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 13,5 GB solo para pesos (6,77 mil millones de parametros), mas overhead de activaciones y cache, en torno a 15-18 GB en total.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 7-8 GB para pesos.
+- VRAM estimada en cuantizacion de 4 bits: aproximadamente 3,5-4,5 GB para pesos (los tipos de cuantizacion concretos no estan confirmados en la informacion disponible).
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o similares para despliegue en produccion con batching; RTX 4090 (24 GB) suficiente para inferencia en fp16 sin batching agresivo.
+- Cabe en GPU consumer: si, en RTX 4090 (24 GB) en fp16 y en GPUs de 8-12 GB con cuantizacion.
+- Opciones de despliegue: transformers con `custom_code` (requerido por la arquitectura Mamba/MoE), vLLM y TGI solo si soportan las capas custom del modelo; llama.cpp/Ollama no estan confirmados por la falta de pesos GGUF publicados.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Olala-v1.0-translate | 6,77 mil millones | no disponible | Traduccion financiera controlable, 18 idiomas | Apache 2.0 | Hugging Face, OVHcloud AI Endpoints |
-| Olala-v1.0-summarise | no disponible | no disponible | Resumen de documentos | Apache 2.0 | Hugging Face |
-| Olala-v1.0-mini-7A1B | 7A1B (segun nomenclatura) | no disponible | Razonamiento, chat y tool use | Apache 2.0 | Hugging Face |
-| Modelos de traduccion generalistas | no disponible | no disponible | Traduccion multilingue general | variable | no disponible |
+| Olala-v1.0-translate | ~6,77 B | no disponible | Traduccion financiera, 18 idiomas | Apache 2.0 | Hugging Face, OVHcloud AI Endpoints |
+| Modelos NLLB-200 (Meta) | 600M-54B variantes | no disponible | Traduccion multilingue general (200 idiomas) | CC-BY-NC (no comercial en muchas variantes) | Hugging Face |
+| Helsinki-NLP opus-mt | ~75M por par | no disponible | Traduccion por pares de idiomas | Apache 2.0 / MIT segun variante | Hugging Face |
+| MADLAD-400 (Google) | 3B / 7B / 10B | no disponible | Traduccion multilingue masiva (400+ idiomas) | Apache 2.0 | Hugging Face |
 
-La model card menciona comparaciones con modelos competidores en DOLFIN, COMET-22 y WMT, pero no identifica sus nombres ni proporciona sus especificaciones en la informacion disponible.
+La comparativa cuantitativa frente a estos modelos no esta disponible en la informacion proporcionada; el autor solo indica comparaciones relativas en DOLFIN, COMET-22 y WMT news.
 
 ## Limitaciones y advertencias
 
-- El modelo esta especializado en traduccion, especialmente financiera; su uso para otras tareas (razonamiento general, codigo) no esta validado en esta variante.
-- No se detallan sesgos conocidos ni evaluaciones de sesgo en la informacion disponible.
-- Riesgo de alucinacion inherente a los modelos generativos: en traduccion puede producir terminos o cifras incorrectas, especialmente en textos con alta densidad numerica o regulatoria; se recomienda revision humana en contextos auditables.
-- La longitud de contexto no esta publicada, lo que dificulta planificar la traduccion de documentos muy extensos sin fragmentacion.
-- Aunque soporta 18 idiomas, el rendimiento puede variar significativamente entre pares de idiomas; los benchmarks publicados se centran en en-fr y noticias WMT.
-- Licencia Apache 2.0 permite uso comercial, pero se debe verificar el cumplimiento de las condiciones de los datos de entrenamiento del modelo base, no detalladas en la informacion disponible.
-- El modelo requiere custom_code en transformers, lo que puede complicar el despliegue en entornos con versiones estandar de la libreria.
-- El numero de descargas (15) y likes (0) indica adopcion muy temprana; la comunidad aun no ha validado el modelo de forma independiente.
+- Es un modelo fine-tuneado para traduccion; su uso como modelo generativo general puede degradarse respecto al modelo base Olala-v1.0-mini-7A1B.
+- Riesgo de alucinacion inherente a modelos generativos, especialmente en terminologia financiera no cubierta por el mapeo proporcionado.
+- La preservacion de etiquetas en linea y casing depende de que el input este bien formado; entradas malformadas pueden producir traducciones inconsistentes.
+- La longitud de contexto no esta documentada, lo que limita la planificacion de traduccion de documentos largos sin fragmentacion previa.
+- Requiere `trust_remote_code` por el uso de `custom_code`, lo que implica riesgo de seguridad si no se audita la implementacion.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los terminos del modelo base y de los datasets de entrenamiento no detallados.
+- No hay informacion sobre sesgos por idioma o dominio; los idiomas con menos recursos (por ejemplo, finlandes, checo, coreano) pueden tener peor calidad que los pares europeos principales.
+- No se han publicado benchmarks completos ni evaluaciones de robustez fuera de DOLFIN, COMET-22 y WMT news.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/OVHaiLLM/Olala-v1.0-translate
+- Modelo en Hugging Face: https://huggingface.co/OVHaiLLM/Olala-v1.0-translate
 - Modelo base: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B
 - Modelo base preentrenado: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base
-- Modelo base tras SFT: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-SFT
-- Variante de resumen: https://huggingface.co/OVHaiLLM/Olala-v1.0-summarise
+- Modelo SFT: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-SFT
+- Modelo de resumen: https://huggingface.co/OVHaiLLM/Olala-v1.0-summarise
 - Informe tecnico (PDF): https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf
+- AI Endpoints (OVHcloud): https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-translate/
 - Playground: https://olala.ovh.com
-- AI Endpoints de OVHcloud: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/#try-our-models

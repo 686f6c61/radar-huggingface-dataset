@@ -2,100 +2,98 @@
 
 ## Resumen
 
-Lensetek-Edge-Loop-3B es un modelo de lenguaje de pequeno tamano (SLM) publicado por lensetek, distribuido exclusivamente en formato GGUF y disenado para inferencia en equipos edge sin GPU dedicada. Se construye como un fine-tune de Qwen/Qwen2.5-3B-Instruct, sobre el que el autor aplica un entrenamiento orientado a razonamiento agentico con bucles de computo adaptativos, recuperacion de errores multi-turno y abstención calibrada frente a la alucinacion. La propuesta central es ejecutar tareas de agente (function calling, RAG cerrado, diagnostico tecnico) en entornos aislados de red, con un consumo de RAM activa declarado por debajo de 2,5 GB.
+Lensetek-Edge-Loop-3B es un modelo de lenguaje pequeno (SLM) de 3.085.938.688 parametros (~3B) desarrollado por lensetek, derivado mediante ajuste fino del modelo base Qwen/Qwen2.5-3B-Instruct. Esta disenado especificamente para computacion de borde en entornos industriales aislados (air-gapped), con el objetivo declarado de ofrecer razonamiento agentico y llamadas a funciones con un consumo de RAM activa inferior a 2,5 GB. El repositorio distribuido en Hugging Face contiene pesos cuantizados a 4 bits en formato GGUF (`Q4_K_M`, ~1,93 GB), pensados para ejecutarse en mini PC, SBC o CPU sin GPU dedicada.
 
-El modelo se presenta con seis "clusters curriculares" de entrenamiento: recursos naturales y mineria remota, sanidad aislada, manufactura confidencial, seguridad maritima y fronteriza, microempresa rural y supervivencia de emergencia. Incorpora un modo de esfuerzo conmutables mediante etiquetas en el prompt (`[EFFORT:LOW]` y `[EFFORT:HIGH]`), donde el segundo habilita un scratchpad interno `<think>`. El autor declara un entrenamiento con GRPO/RLVR y penalizaciones asimetricas para forzar la abstención cuando falta contexto.
+El modelo se presenta como una variante especializada que incorpora un "System-2 Agentic Compute Loop" y modos de esfuerzo adaptativos (`[EFFORT:LOW]` y `[EFFORT:HIGH]`), junto con entrenamiento mediante GRPO/RLVR orientado a la abstencion calibrada y la recuperacion de errores multi-turno. Segun la model card, el ajuste se realizo sobre pesos compatibles con `Qwen2ForCausalLM` sin modificar la arquitectura subyacente, por lo que el "looped transformer" del nombre hace referencia a un bucle de computo a nivel de inferencia y no a un cambio estructural del transformer.
 
-La relevancia actual del modelo reside en su encaje en el nicho de despliegue offline en hardware de bajo coste (Intel N100, i3) y en el cumplimiento de requisitos de soberania de datos. No obstante, la informacion disponible procede unicamente de la model card del autor: no hay benchmarks publicos verificables, el repositorio registra cero descargas y la fecha de creacion indicada es posterior a la actual, lo que obliga a tratar las metricas declaradas como afirmaciones no contrastadas.
+Es relevante ahora porque cubre un nicho concreto: despliegue de agentes con tool calling en hardware de muy bajos recursos y sin conectividad, un escenario comun en IoT industrial, mantenimiento de campo y soberania de datos. Su licencia Apache 2.0 y su compatibilidad con llama.cpp facilitan la evaluacion y el despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Qwen2.5-3B-Instruct, con "bucles de computo adaptativos" (looped transformer) segun el autor |
-| Parametros totales | 3B (heredados del modelo base Qwen2.5-3B-Instruct) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 4096 tokens en los ejemplos de despliegue; no se declara contexto nativo distinto del base |
-| Tipos de cuantizacion | GGUF Q4_K_M (calibracion nativa declarada); no se detallan otros niveles |
-| Idiomas soportados | ingles (en), indonesio (id), chino (zh) |
+| Arquitectura | Transformer decoder-only (Qwen2ForCausalLM), con bucle de computo agentico a nivel de inferencia |
+| Parametros totales | 3.085.938.688 (~3B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF `Q4_K_M` (4 bits); safetensors BF16 en el repo base |
+| Idiomas soportados | en, id, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (para llama.cpp / Ollama); no se publican safetensors |
+| Formato de pesos | GGUF (repo actual); safetensors BF16 (repo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-3B-Instruct, un transformer decoder-only denso de 3.000 millones de parametros, y anade segun la model card un esquema de "Adaptive Compute Loops" inspirado en arquitecturas recurrentes y looped transformers (el autor cita como referencia el trabajo *Inkling* de Thinking Machines Lab). En la practica, el control de esfuerzo se expone mediante etiquetas en el prompt: en modo bajo el modelo responde de forma directa y determinista en menos de 25 tokens, mientras que en modo alto dispone de un presupuesto de scratchpad `<think>` de entre 150 y 250 tokens para razonamiento multi-paso.
+El modelo parte de los pesos de Qwen2.5-3B-Instruct, un transformer decoder-only denso de ~3B parametros, y aplica ajuste fino supervisado mas optimizacion por refuerzo (GRPO/RLVR) sobre un curriculo de aproximadamente 3.000 trayectorias organizadas en seis clusters: llamada a herramientas determinista (~17%), recuperacion de errores multi-turno (~33%), abstencion calibrada (~17%), bucles de esfuerzo ajustables (~13%), supervivencia offline e IoT (~12%) y un sexto cluster no detallado en la informacion disponible. El 35% del dataset contiene trayectorias de fallo planificadas para entrenar la autocorreccion.
 
-El entrenamiento declarado incluye tres componentes: un 35% del dataset compuesto por trayectorias de fallo planificadas para ensenar recuperacion de errores multi-turno y reformulacion de llamadas a herramientas; un ajuste con GRPO/RLVR y recompensas asimetricas (abstenerse cuando falta contexto recibe +0,8, alucinar fuera de contexto recibe -2,0); y una calibracion consciente de cuantizacion para que el paso a Q4_K_M no degrade el cumplimiento de esquemas JSON ni la precision de citas. No se especifican el numero total de tokens de entrenamiento, la composicion exacta del dataset ni los hiperparametros de RL.
+La innovacion declarada no reside en la arquitectura, que se mantiene compatible con llama.cpp, sino en el ajuste de comportamiento: penalizaciones asimetricas en GRPO (+0,8 por abstenerse correctamente, -2,0 por alucinar fuera de contexto), etiquetas de esfuerzo que controlan el presupuesto de tokens de razonamiento (`[EFFORT:LOW]` bajo 25 tokens, `[EFFORT:HIGH]` con scratchpad `<think>` de 150-250 tokens) y calibracion consciente de cuantizacion para preservar el cumplimiento de esquemas JSON en 4 bits. No se especifican en la informacion proporcionada el numero total de tokens de entrenamiento, la composicion exacta del dataset ni los hiperparametros de RL.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento agentico multi-paso con bucle interno de auto-correccion.
-- Function calling y tool calling, con reformulacion autonoma de llamadas tras errores (parseo de codigos de error en turnos posteriores).
-- Modo de esfuerzo conmutable: `[EFFORT:LOW]` para ejecucion directa de herramientas y `[EFFORT:HIGH]` para razonamiento extendido con scratchpad `<think>`.
-- Abstención calibrada: respuesta explicita de "dato no encontrado en los documentos locales" cuando el contexto es insuficiente.
-- RAG de dominio cerrado con citas y cumplimiento estricto de esquemas JSON.
-- Capacidades multilingues en ingles, indonesio y chino, con cambio de codigo tecnico (code-switching) en terminologia industrial.
-- Conocimiento de dominio inyectado: diagnostico de maquinaria pesada (CAN-bus/OBD), telemetria de calderas, monitorizacion Modbus RS-485/PLC, triaje START, potabilizacion de agua, sistemas de carga solar 12V, calculo de antenas y radio de emergencia.
-- No se declaran capacidades de vision, audio ni generacion de imagenes.
+- Generacion de texto conversacional en ingles, indonesio y chino.
+- Llamada a funciones y tool calling con argumentos JSON validos para herramientas como `rag_search`, `read_sensor` y `run_command`.
+- Razonamiento agentico multi-paso con recuperacion de errores entre turnos (reformulacion de llamadas tras codigos de error).
+- Abstencion calibrada: rechazo explicito a responder cuando la informacion no esta en el contexto local.
+- Modos de esfuerzo adaptativos: respuesta directa de baja latencia o razonamiento extendido con scratchpad interno.
+- RAG en dominio cerrado sobre documentos locales, con citas.
+- Capacidades de dominio industrial y de supervivencia: triaje de victimas (START), purificacion de agua en cuatro etapas, protocolos Modbus/CAN-bus.
+- Comprension de terminologia industrial indonesia y code-switching tecnico.
+- No se documentan capacidades de vision, audio ni matematica avanzada.
 
 ## Casos de uso
 
-- Diagnostico de maquinaria en planta remota: el modelo interpreta codigos de error CAN-bus u OBD y propone secuencias de verificacion paso a paso, funcionando sin conectividad en el propio equipo de campo y reformulando la consulta si la primera herramienta devuelve un error.
-- Asistente clinico en entornos aislados: extraccion de datos de historia clinica electronica y soporte a decisiones con abstención obligatoria cuando el dato no figura en los documentos locales, lo que encaja con requisitos de privacidad tipo UU PDP.
-- Monitorizacion industrial de baja latencia: integrado contra registros Modbus RS-485 o PLC, con el modo `[EFFORT:LOW]` para respuestas deterministas por debajo de 320 ms y sin coste de API en la nube.
-- Agente de RAG documental cerrado: consulta sobre procedimientos operativos (SOP) y manuales internos con citas verificables, apoyado en el modo `[EFFORT:HIGH]` para cruzar varios documentos.
-- Automatizacion de atencion tecnica multi-turno: gestion de conversaciones donde el usuario aporta codigos de error sucesivos, aprovechando las trayectorias de recuperacion entrenadas para reintentar tool calls fallidas.
-- Logistica y microempresa rural: scoring de credito cooperativo offline y seguimiento de tanques de combustible (ATG) o cadena de frio de vacunas en puntos sin red.
-- Soporte a emergencias y supervivencia: triaje de victimas, calculo de antenas de hilo largo, frecuencias de emergencia y esquemas de circuitos en ASCII, todo ejecutable en un portatil de 4-8 GB de RAM.
+- Atencion al cliente o soporte tecnico en planta: el modelo gestiona conversaciones multi-turno y consulta una base documental local mediante `rag_search`, absteniendose cuando no hay cobertura documental, lo que reduce respuestas inventadas en entornos regulados.
+- Automatizacion de mantenimiento industrial: integrado en un mini PC junto a sensores, usa `read_sensor` y `run_command` para diagnosticar lecturas anomalas y proponer acciones correctivas siguiendo procedimientos operativos estandar.
+- Asistente de campo en zonas sin conectividad: desplegado en una SBC con menos de 2,5 GB de RAM, ofrece guias de triaje y protocolos de emergencia sin depender de la nube.
+- Agente de RAG air-gapped para documentacion interna: indexa manuales y normativas en SQLite local y responde con citas, adecuado por su tasa declarada de alucinacion nula en dominio cerrado.
+- Automatizacion de pipelines de tool calling: su cumplimiento de esquema JSON en cuantizacion 4 bits lo hace apto para orquestar APIs internas o sistemas SCADA mediante llamadas estructuradas.
+- Procesamiento de lenguaje natural en logistica y operaciones en Indonesia: cubre terminologia local y code-switching, util para digitalizar SOP y comunicaciones tecnicas.
+- Prototipado rapido de agentes en CPU: al ejecutarse con llama.cpp en hardware de bajo coste, sirve para validar flujos agenticos antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente declara metricas internas del autor, no verificables de forma independiente:
+| Metrica | Resultado declarado | Condiciones |
+|---|---|---|
+| Tasa de completitud de tareas end-to-end | 100,0% | 300 escenarios reservados, pipelines multi-paso |
+| Tasa de alucinacion en dominio cerrado | 0,0% | 300 escenarios reservados, benchmarks documentales empresariales |
+| Latencia en modo `[EFFORT:LOW]` | < 320 ms | Respuesta bajo 25 tokens |
+| Precision de tool calling | 100% (declarada) | Esquemas JSON validos en cuantizacion `Q4_K_M` |
 
-| Metrica declarada | Valor |
-|---|---|
-| Tasa de completitud end-to-end en pipelines multi-herramienta | >95% |
-| Tasa de alucinacion en dominio cerrado | <1,0% |
-| Velocidad de inferencia (Intel N100 / Core i3, CPU) | 18-35 tokens/s |
-| Time-to-first-token en modo bajo | <350 ms |
-| Presupuesto de respuesta en modo bajo | <25 tokens |
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las metricas anteriores son autoinformadas por el autor y no han sido verificadas de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: aproximadamente 2,05 GB en disco para el GGUF Q4_K_M; RAM activa declarada de unos 2,49 GB (pesos ~2,0 GB, cache KV a 4 bits ~140 MB, runtime ~150 MB); techo de sistema declarado de 3,69 GB.
-- GPU: no requiere GPU discreta; el autor lo posiciona para CPU Intel N100 o Core i3. Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090) si se desea acelerar.
-- Consumer GPU: si, en cualquier tarjeta con 4 GB o mas de VRAM, aunque el caso de uso previsto es CPU.
-- Despliegue: llama.cpp (`llama-server` con `-ctk q4_0 -ctv q4_0`), Ollama (`ollama run hf.co/lensetek/lensetek-edge-loop-3b-GGUF`), llama-cpp-python con `flash_attn=True`. No se mencionan vLLM ni TGI, que no soportan GGUF de forma nativa en su flujo habitual.
-- Latencia y throughput: 18-35 tokens/s en CPU N100/i3 segun el autor; TTFT inferior a 350 ms en modo de bajo esfuerzo. No hay mediciones independientes.
+- VRAM/RAM para inferencia: ~1,93 GB de pesos en `Q4_K_M`; RAM activa declarada por debajo de 2,5 GB y techo de sistema de 3,7 GB.
+- Cabe en CPU y en hardware de borde: mini PC, SBC y sistemas sin GPU dedicada.
+- En GPU consumer (por ejemplo, RTX 3060/4060 con 8-12 GB) cabe con holgura, aunque el diseno apunta a ejecucion en CPU.
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio); el repo base BF16 admite vLLM y SGLang.
+- Latencia: inferior a 320 ms en modo de bajo esfuerzo segun el autor; no se proporcionan cifras de throughput (tokens/s) ni de latencia en modo `[EFFORT:HIGH]`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Lensetek-Edge-Loop-3B | 3B | 4096 (en ejemplos) | en, id, zh | Apache 2.0 | GGUF | Fine-tune agentico con abstención calibrada; sin benchmarks publicos |
-| Qwen2.5-3B-Instruct | 3B | 32.768 nativo | multilingue (incluye en, zh) | Apache 2.0 | safetensors, GGUF | Modelo base; benchmarks publicos disponibles |
-| Llama 3.2 3B Instruct | 3B | 128.000 | multilingue | Llama 3.2 Community License | safetensors, GGUF | Contexto muy superior; licencia con restricciones |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | multilingue | MIT | safetensors, GGUF | Alternativa densa con contexto largo y benchmarks publicados |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Lensetek-Edge-Loop-3B | ~3B | no disponible | en, id, zh | Apache 2.0 | Agentes de borde, tool calling, abstencion |
+| Qwen2.5-3B-Instruct (base) | ~3B | 32.768 tokens (segun documentacion de Qwen) | multilingue amplio | Apache 2.0 | Instrucciones generales |
+| Llama 3.2 3B Instruct | ~3B | 128.000 tokens (segun documentacion de Meta) | multilingue | Llama 3.2 Community License | Instrucciones generales, edge |
+| Phi-3.5-mini | ~3,8B | 128.000 tokens (segun documentacion de Microsoft) | multilingue | MIT | Razonamiento y codigo en edge |
 
-La comparacion directa de rendimiento no es posible: Lensetek no publica resultados en benchmarks estandar, mientras que los tres alternativos si cuentan con evaluaciones publicas. La ventaja diferencial declarada de Lensetek es el consumo de RAM (<2,5 GB) y el entrenamiento especifico en abstención y recuperacion de errores, no la capacidad bruta.
+La comparativa de rendimiento frente a estas alternativas no esta disponible en la informacion proporcionada; los datos de contexto de los modelos comparables proceden de su documentacion publica y no de una evaluacion conjunta.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicos verificables: todas las metricas (>95% de completitud, <1,0% de alucinacion) son declaraciones del autor sin replicacion independiente.
-- Repositorio con cero descargas y cero likes en el momento de la consulta, y fecha de creacion registrada como posterior a la actual; la madurez y el mantenimiento del proyecto no estan contrastados.
-- Contexto efectivo limitado a 4096 tokens en los ejemplos de despliegue, muy por debajo del contexto nativo de 32.768 tokens de Qwen2.5-3B-Instruct; el RAG multi-documento queda restringido.
-- Cobertura idiomatica reducida a ingles, indonesio y chino; no se declara soporte de castellano, por lo que su uso en espanol no esta garantizado ni evaluado.
-- Riesgo de alucinacion persistente pese a la calibracion declarada, especialmente fuera del dominio cerrado de los seis clusters curriculares y en preguntas abiertas de cultura general.
-- Sesgo potencial hacia el contexto industrial y geografico indonesio (terminologia, SOP locales, normativa UU PDP), que puede no transferir a otros mercados.
-- El termino "proprietary" en la model card contrasta con la licencia Apache 2.0 de los metadatos; conviene verificar las condiciones reales de uso comercial antes de desplegar en produccion.
-- Solo se distribuyen pesos GGUF; no hay safetensors para fine-tuning adicional ni para servir con vLLM o TGI.
-- El modo `<think>` con presupuesto de 150-250 tokens limita la profundidad del razonamiento en tareas que requieran cadenas largas.
-- Al ser un fine-tune de un modelo de 3B, la calidad en matematicas complejas y codigo de produccion sera inferior a la de modelos de mayor tamano; no se aportan datos que lo cuantifiquen.
+- Las metricas de 100% de completitud y 0% de alucinacion son autoinformadas sobre 300 escenarios y no han sido replicadas de forma independiente; deben tratarse con cautela en produccion.
+- El modelo conserva los sesgos del corpus de Qwen2.5-3B-Instruct y de los datos de ajuste, con fuerte orientacion al contexto industrial indonesio.
+- Cobertura linguistica limitada a ingles, indonesio y chino; el castellano no esta entre los idiomas soportados declarados.
+- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar cargas de RAG con documentos largos.
+- El termino "looped transformer" del nombre no implica cambios arquitectonicos; el bucle es de inferencia, por lo que las ventajas de razonamiento dependen del prompting y del ajuste, no de la estructura.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-3B-Instruct debe respetar sus propios terminos.
+- El repo tiene muy poca traccion (280 descargas, 1 like) y fue creado recientemente; no hay evidencia de validacion por terceros.
+- El repo base en safetensors figura como "en cola de subida" en la model card, por lo que la unica distribucion verificable es la cuantizada GGUF.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/lensetek/lensetek-edge-loop-3b-GGUF
+- Repositorio GGUF: https://huggingface.co/lensetek/lensetek-edge-loop-3b-GGUF
+- Repositorio base BF16: https://huggingface.co/lensetek/lensetek-edge-loop-3b
+- Hub de aplicaciones y agente: https://huggingface.co/lensetek/lensetek-edge-ai-agent
+- Descarga directa del GGUF: https://huggingface.co/lensetek/lensetek-edge-loop-3b-GGUF/resolve/main/lensetek-edge-loop-3b-q4_k_m.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Repositorio de aplicaciones del autor (referenciado en la model card como "lensetek/lens", enlace incompleto en la informacion disponible): no disponible
-- Paper de referencia citado (*Inkling*, Thinking Machines Lab): no disponible
-- Demos, blog tecnico y resultados de benchmarks: no disponibles

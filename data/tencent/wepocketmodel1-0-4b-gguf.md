@@ -2,87 +2,92 @@
 
 ## Resumen
 
-WePocketModel 1.0 4B GGUF es la variante cuantizada para CPU del modelo multimodal WePocketModel 1.0 4B, desarrollado por WeChat AI (Tencent) para aplicaciones en dispositivo. Se trata de un modelo vision-lenguaje que comparte un mismo backbone y un codificador visual para cubrir tres capacidades en un solo modelo: generación de texto condicionada por texto e imagen, embeddings multimodales con normalización L2 y decisiones estructuradas (elecciones, puntuaciones y juicios binarios).
+WePocketModel 1.0 4B GGUF es la distribucion cuantizada en formato GGUF del checkpoint multimodal de 4B de la familia WePocketModel (WePM), desarrollada por WeChat AI (Tencent) para aplicaciones que se ejecutan en dispositivo. El modelo comparte un unico backbone de lenguaje y un codificador de vision para cubrir tres tareas distintas: generacion de texto condicionada por texto e imagen, generacion de embeddings multimodales normalizados en L2 y emision de decisiones estructuradas (elecciones, puntuaciones y juicios binarios). Esta variante concreta esta pensada para inferencia en CPU mediante un runtime propio construido sobre una revision fijada de llama.cpp.
 
-El modelo base cuenta con 4.205.751.296 parámetros y una dimensión de embedding completa de 2.048. Esta distribución GGUF separa los pesos del lenguaje (cuantizados en Q4_K_M o BF16) de los pesos compartidos de visión y tareas, que se almacenan en BF16 y se computan en FP32 mediante el runtime CPU propio de WePM, construido sobre una revisión fijada de llama.cpp.
+El interes practico del modelo reside en su empaquetado: separa los pesos de lenguaje (cuantizados a Q4_K_M o BF16) de los tensores compartidos de vision y de tarea, que se mantienen en BF16 y se computan en FP32. Con Q4_K_M el bundle completo ocupa 3,42 GB en disco, lo que lo situa en el rango de equipos de consumo sin GPU dedicada. Los embeddings soportan Matryoshka Representation Learning (MRL), permitiendo truncar la dimension a 64, 128, 256, 512, 1024 o 2048 sin reentrenar, lo que facilita el almacenamiento y la busqueda vectorial en entornos con recursos limitados.
 
-Su relevancia actual radica en que empaqueta en un solo artefacto de 3,42 GB (Q4_K_M) capacidades que habitualmente requieren modelos separados de generación, retrieval y clasificación, lo que simplifica el despliegue local en entornos sin GPU. La licencia de los pesos está pendiente de confirmación según la propia model card.
+El modelo base cuenta con 4.205.751.296 parametros y se distribuye bajo licencia Apache 2.0 tanto en pesos como en codigo de inferencia. La model card no detalla la longitud de contexto, los idiomas soportados ni resultados numericos de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje con backbone de lenguaje tipo transformer (tag `qwen3_5`) y codificador visual compartido; cabezas de tarea para embeddings y decisiones estructuradas |
-| Parametros totales | 4.205.751.296 |
+| Arquitectura | Vision-language con backbone de lenguaje compartido y codificador de vision; etiqueta `qwen3_5` en Hugging Face |
+| Parametros totales | 4.205.751.296 (4B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (por defecto) y BF16 para los pesos de lenguaje; vision y tareas en BF16 |
+| Tipos de cuantizacion | Q4_K_M (por defecto) y BF16 para pesos de lenguaje; vision y cabezas de tarea en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card indica que la licencia de los pesos esta pendiente de confirmacion; el codigo de inferencia es Apache 2.0) |
-| Formato de pesos | GGUF (ficheros `language-Q4_K_M.gguf`, `language-BF16.gguf` y `multimodal-BF16.gguf`) |
+| Licencia | Apache 2.0 (pesos y codigo de inferencia) |
+| Formato de pesos | GGUF (`language-Q4_K_M.gguf`, `language-BF16.gguf`, `multimodal-BF16.gguf`) |
+| Dimension de embedding | 2048 completa; truncable a 64, 128, 256, 512, 1024 via MRL |
+| Tamano en disco | 3,42 GB (Q4_K_M + multimodal BF16); 9,14 GB (BF16 + multimodal BF16) |
+| Runtime | `libwepm_gguf` sobre llama.cpp fijado; codificador de vision y cabezas en runtime Python |
 
 ## Arquitectura y entrenamiento
 
-WePocketModel emplea una arquitectura multimodal con un backbone de lenguaje compartido (etiquetado como `qwen3_5`) y un codificador visual común. Sobre esa base se añaden cabezas de tarea que permiten tres modos de operación: generación autoregresiva de texto a partir de texto e imágenes intercaladas, producción de embeddings multimodales con normalización L2 y emisión de decisiones estructuradas (selección entre opciones, puntuaciones y juicios binarios). El checkpoint de 4B tiene una dimensión de embedding completa de 2.048.
+La familia WePM emplea un backbone compartido y un unico codificador de vision que alimentan tres cabezas funcionales: generacion autoregresiva de texto, proyeccion de embeddings multimodales y cabezas de decision estructurada. La etiqueta `qwen3_5` en el repositorio sugiere una base derivada de la familia Qwen 3.5, aunque la model card no documenta la arquitectura interna con detalle. El checkpoint de 4B produce embeddings de 2048 dimensiones, normalizados en L2 por el runtime, y admite truncamiento Matryoshka a 64, 128, 256, 512 o 1024 dimensiones.
 
-Una innovación destacable es el uso de Matryoshka Representation Learning (MRL) en los embeddings multimodales, que permite truncar la representación a 64, 128, 256, 512, 1.024 o 2.048 dimensiones y normalizar L2 el prefijo seleccionado en tiempo de ejecución, sin reentrenar. En esta distribución GGUF la cuantización se aplica únicamente a los pesos de lenguaje, mientras que los tensores de visión y de tareas permanecen en BF16 y se computan en FP32 en el runtime CPU. No se dispone de información sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Tampoco se detalla el proceso de alineacion. La innovacion tecnica documentada es el empaquetado para CPU: el runtime separa la ejecucion del backbone de lenguaje (llama.cpp) de la del codificador de vision y las cabezas (Python), y mantiene los tensores compartidos en BF16 computados en FP32 para preservar la calidad de las representaciones multimodales, mientras solo los pesos de lenguaje se cuantizan.
 
 ## Capacidades
 
-- Generación de texto condicionada por texto e imagen (pipeline `image-text-to-text`), incluida la generación con entradas intercaladas.
-- Embeddings multimodales normalizados en L2 con dimensiones seleccionables mediante MRL: 64, 128, 256, 512, 1.024 y 2.048.
-- Decisiones estructuradas: elección entre opciones, asignación de puntuaciones y juicios binarios.
-- Ejecución en CPU mediante un runtime C++ propio (`libwepm_gguf`) construido sobre llama.cpp.
-- Soporte de plantilla de chat y procesador multimodal incluidos en el bundle.
-- Tool calling, function calling, modo thinking, audio y capacidades de agente multi-paso: no disponibles en la información proporcionada.
-- Cobertura multilingüe: no disponible.
+- Generacion de texto a partir de texto e imagenes (pipeline `image-text-to-text`), incluyendo entradas intercaladas de imagen y texto.
+- Generacion de embeddings multimodales normalizados en L2 con dimension configurable mediante MRL (64 a 2048).
+- Decisiones estructuradas: eleccion entre opciones, asignacion de puntuaciones y juicios binarios.
+- Procesamiento multimodal conjunto en un unico modelo, sin necesidad de cargar modulos separados para retrieval y generacion.
+- Ejecucion en CPU sin GPU dedicada mediante el runtime `libwepm_gguf`.
+- Soporte de plantilla de chat y procesador incluidos en el bundle (`bundle.json`, config, tokenizer, processor, chat template).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking, audio o vision adicional: solo vision, segun la documentacion.
 
 ## Casos de uso
 
-- Búsqueda multimodal local: indexar imágenes y texto en un dispositivo usando los embeddings MRL del modelo, eligiendo 256 o 512 dimensiones para reducir memoria y latencia en el índice vectorial, y 2.048 cuando se requiera máxima fidelidad.
-- Clasificación visual en el borde: usar la tarea de decisión estructurada para asignar etiquetas o juicios binarios sobre imágenes (por ejemplo, verificación de contenido) sin depender de un servicio en la nube.
-- Asistentes de escritorio sin GPU: desplegar la variante Q4_K_M (3,42 GB en disco) en portátiles o mini-PC para generar descripciones de imágenes y respuestas conversacionales con el runtime CPU incluido.
-- Enrutamiento y filtrado previo: emplear las puntuaciones y elecciones estructuradas para decidir si una consulta o imagen debe escalarse a un modelo mayor, aprovechando el bajo coste de un modelo de 4B en CPU.
-- Deduplicación y agrupación de imágenes: calcular embeddings con dimensión reducida para clustering y detección de duplicados en catálogos fotográficos locales.
-- Prototipado de pipelines multimodales: usar el mismo bundle para generación, embedding y decisión, evitando mantener tres modelos distintos durante la fase de experimentación.
-- Validación de decisiones antes de acciones: integrar los juicios binarios del modelo como paso de verificación en flujos que disparan acciones, tal como recomienda la propia model card.
+- Busqueda multimodal en dispositivo: generar embeddings de imagen y texto con dimensiones truncadas a 256 o 512 para indexar y recuperar productos, capturas o fotos en un catalogo local sin enviar datos a la nube; el soporte MRL reduce el coste de almacenamiento del indice vectorial.
+- Clasificacion y filtrado de imagenes en el borde: usar las cabezas de decision para emitir juicios binarios o puntuaciones sobre imagenes capturadas por la camara de un movil o un dispositivo IoT, con umbrales validados por el desarrollador antes de disparar acciones.
+- Asistente conversacional local con contexto visual: mantener conversaciones multi-turno en las que el usuario adjunta imagenes, aprovechando la plantilla de chat incluida y la generacion condicionada por imagen en CPU.
+- Moderacion de contenido asistida: combinar la generacion de texto con las decisiones estructuradas para prefiltrar contenido y derivar solo los casos dudosos a un modelo mayor en servidor.
+- Deduplicacion y agrupacion de imagenes: calcular embeddings de 128 o 256 dimensiones para detectar near-duplicates en galerias fotograficas locales mediante similitud coseno.
+- Prototipado de pipelines RAG multimodales: usar el mismo bundle para generar respuestas y embeddings, simplificando el despliegue en entornos de desarrollo sin GPU y facilitando la iteracion sobre la calidad de recuperacion.
+- Evaluacion de decisiones automatizadas en local: ejecutar el modelo como juez binario o comparador de opciones en pipelines de validacion, con la advertencia de validar las decisiones estructuradas antes de que activen acciones.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una imagen comparativa de resultados de la familia WePM en tareas de embedding, generación y decisión, pero no se proporcionan cifras numéricas en la información disponible.
+La model card incluye una imagen de comparacion de benchmarks de la familia WePM en tareas de embedding, generacion y decision, pero no se proporcionan los valores numericos en el texto disponible.
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el runtime oficial está diseñado para CPU, con Python 3.10–3.13, CMake 3.20 o superior y compilador C++17.
-- Espacio en disco: 3,42 GB para el bundle Q4_K_M (lenguaje Q4_K_M más visión/tareas BF16) y 9,14 GB para el bundle BF16.
-- Memoria en ejecución: depende de la variante, de las entradas, del tamaño de contexto y de la sobrecarga del backend; no se publican cifras concretas.
-- GPU: no se especifican GPU recomendadas ni requisitos de VRAM; el flujo documentado es exclusivamente CPU.
-- Despliegue: runtime propio `libwepm_gguf` sobre llama.cpp, con CLI `inference/infer_cpu.py` y scripts de ejemplo en `examples/cpu/` para generación, embedding y decisión.
-- vLLM, TGI, Ollama y llama.cpp estándar: no se documenta soporte directo; el runtime fija una revisión concreta de llama.cpp.
+- VRAM estimada: no aplica para el bundle Q4_K_M, disenado para CPU; el consumo de memoria en tiempo de ejecucion depende de la variante, las entradas, el tamano de contexto y el overhead del backend.
+- Tamano en disco: 3,42 GB con Q4_K_M y 9,14 GB con BF16 (ambos incluyen `multimodal-BF16.gguf`).
+- GPU recomendadas: no se documentan; el runtime oficial es de CPU. No se confirma soporte de aceleracion por GPU en la informacion proporcionada.
+- Cabe en equipos de consumo: si, en el caso de Q4_K_M, por su tamano de 3,42 GB en disco; el requisito real de RAM no se especifica.
+- Opciones de despliegue: runtime propio `libwepm_gguf` (basado en una revision fijada de llama.cpp) mas `inference/infer_cpu.py` para tareas de generacion, embedding y decision. No se documenta soporte de vLLM, TGI, Ollama ni llama.cpp estandar.
+- Requisitos de compilacion: Python 3.10-3.13, Git, CMake 3.20 o superior y compilador C++17; PyTorch 2.10.0 y torchvision 0.25.0 en variante CPU para el runtime Python.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa fiable con alternativas de la misma categoría. A modo de referencia estructural:
+| Modelo | Parametros | Contexto | Multimodal | Embeddings | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| WePocketModel 1.0 4B GGUF | 4B | no disponible | Si (imagen-texto) | Si, MRL 64-2048 | Apache 2.0 | GGUF |
+| WePocketModel 1.0 2B GGUF | 2B | no disponible | Si (imagen-texto) | Si (familia WePM) | Apache 2.0 | GGUF |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Capacidades | Licencia | Formato |
-|---|---|---|---|---|---|
-| WePocketModel 1.0 4B GGUF | 4,2 B | no disponible | Generación imagen-texto, embeddings MRL, decisiones estructuradas | no disponible | GGUF |
-| WePocketModel 1.0 2B | no disponible | no disponible | Misma familia, menor tamaño | no disponible | safetensors, GGUF |
-| Alternativas de 4B vision-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
+La model card solo referencia las variantes 2B y 4B de la propia familia WePM (safetensors y GGUF). No se dispone de datos de rendimiento ni de especificaciones de modelos competidores en la informacion proporcionada para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- La licencia de los pesos está pendiente de confirmación; no debe asumirse uso comercial hasta que se publique. Solo el código de inferencia es Apache 2.0.
-- La cuantización Q4_K_M puede degradar la calidad respecto al checkpoint BF16; la model card recomienda evaluar la calidad de salida en entradas representativas.
-- Las decisiones estructuradas deben validarse antes de disparar acciones automáticas, según advierte el propio autor.
-- No se documentan sesgos conocidos, cobertura de idiomas ni tasas de alucinación.
-- No se publica la longitud de contexto soportada, lo que dificulta planificar cargas con entradas largas.
-- El runtime está acoplado a una revisión fijada de llama.cpp y a un script de compilación propio, lo que añade complejidad de despliegue frente a soluciones estándar.
-- El repositorio puede requerir autenticación para la descarga.
-- El modelo está orientado a aplicaciones locales; no se documenta soporte para servidores de inferencia de alto rendimiento.
+- La model card no documenta sesgos conocidos; al ser un modelo derivado de una base tipo Qwen, es razonable esperar sesgos heredados del corpus de entrenamiento, pero no hay evidencia publicada en la informacion disponible.
+- Riesgo de alucinacion no cuantificado; la documentacion recomienda evaluar la calidad de las salidas en entradas representativas.
+- Las decisiones estructuradas deben validarse antes de usarlas para disparar acciones; el modelo no garantiza correccion en juicios binarios o puntuaciones.
+- No se especifican idiomas soportados ni longitud de contexto, lo que impide garantizar cobertura multilingue o ventanas largas en produccion.
+- El runtime oficial es de CPU y esta acoplado a una revision fijada de llama.cpp; no se confirma compatibilidad con ecosistemas estandar como Ollama o vLLM, lo que limita la portabilidad.
+- La cuantizacion solo afecta a los pesos de lenguaje; los tensores de vision y tarea permanecen en BF16 y se computan en FP32, de modo que el ahorro de memoria es parcial.
+- Licencia Apache 2.0 permite uso comercial, pero los componentes de terceros conservan sus licencias originales y deben revisarse por separado.
+- El modelo base (safetensors) es el artefacto de referencia para fine-tuning; esta variante GGUF esta pensada para inferencia y no se documenta como apta para reentrenamiento.
 
 ## Enlaces
 
@@ -91,6 +96,6 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 - Hugging Face (2B safetensors): https://huggingface.co/tencent/WePocketModel1.0-2B
 - Hugging Face (2B GGUF): https://huggingface.co/tencent/WePocketModel1.0-2B-GGUF
 - Repositorio GitHub: https://github.com/Tencent/WePocketModel
-- Guía de inferencia GGUF en CPU: https://github.com/Tencent/WePocketModel/blob/main/inference/README.md#gguf-on-cpu
-- Licencia del código: https://github.com/Tencent/WePocketModel/blob/main/LICENSE
-- Paper (arXiv): https://arxiv.org/abs/2611.27365
+- Guia de inferencia GGUF en CPU: https://github.com/Tencent/WePocketModel/blob/main/inference/README.md#gguf-on-cpu
+- Licencia del codigo: https://github.com/Tencent/WePocketModel/blob/main/LICENSE
+- Paper referenciado (arXiv 2611.27365): no disponible como enlace directo en la informacion proporcionada

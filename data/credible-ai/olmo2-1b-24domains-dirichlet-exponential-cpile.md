@@ -2,106 +2,94 @@
 
 ## Resumen
 
-`olmo2-1B-24domains-dirichlet-exponential-cpile` es un modelo de lenguaje de 1.414.678.528 parámetros (1,41B) desarrollado por credible-ai y construido sobre la arquitectura OLMo 2 (`Olmo2ForCausalLM`), con 18 capas y un tamaño oculto de 2048. Se trata de un artefacto de investigación cuyo propósito es reproducir los experimentos del artículo LinMix sobre mezcla de datos (*data mixing*): el modelo se preentrena con 32.000 millones de tokens procedentes del corpus WebOrganizer, combinando sus 24 temáticas con pesos de mezcla optimizados mediante Olmix para minimizar *bits per byte* sobre texto retenido del Common Pile.
+olmo2-1B-24domains-dirichlet-exponential-cpile es un modelo de lenguaje de 1.414.678.528 parámetros (aproximadamente 1,41B) desarrollado por credible-ai, un grupo de investigación centrado en mezcla de datos (data mixing) para entrenamiento de modelos. Se trata de un artefacto de investigación concebido para reproducir los experimentos del artículo LinMix (Data Mixing as Linear Domain Attribution), no de un modelo de propósito general. Está construido sobre la arquitectura OLMo 2 de AI2 (clase `Olmo2ForCausalLM`), con 18 capas y un tamaño de ocultación de 2048.
 
-El interés técnico no reside en el modelo en sí, sino en el método: los pesos de la mezcla se obtienen ajustando un sustituto exponencial sobre un enjambre de modelos proxy de 30M de parámetros entrenados con distribuciones Dirichlet (`credible-ai/olmo2-30M-24domains-dirichlet`). El resultado se materializa en un modelo de escala 1B entrenado con OLMo-core y publicado junto a un fichero `mix.json` que documenta la mezcla exacta utilizada.
+El modelo ha sido preentrenado con 32.000 millones de tokens extraídos del corpus WebOrganizer, que organiza el contenido en 24 temáticas o dominios. La innovación principal no está en la arquitectura, sino en la estrategia de mezcla de datos: los pesos de mezcla entre los 24 dominios se optimizaron mediante Olmix, un método que ajusta un surrogate exponencial sobre un enjambre de mezclas Dirichlet, empleando bits per byte sobre texto de retención de Common Pile como métrica objetivo. El modelo proxy utilizado para guiar esa optimización es olmo2-30M-24domains-dirichlet, un modelo de 30M parámetros del mismo autor.
 
-Es relevante ahora porque ofrece un punto de comparación reproducible y de código abierto (licencia MIT) para estudiar cómo las decisiones de mezcla de dominios afectan al rendimiento de un modelo pequeño, y porque permite validar empíricamente si las optimizaciones realizadas a escala proxy (30M) transfieren a escala 1B. No es un modelo de propósito general ni está alineado para instrucciones: es una base preentrenada, en inglés, pensada para experimentación.
+Su relevancia es metodológica: sirve como referencia para validar técnicas de atribución lineal de dominios en la composición de datasets de preentrenamiento. El tokenizador es GPT-NeoX-20B con un vocabulario de 50.432 entradas, los pesos están en bfloat16 y el repositorio ocupa 2,8 GB. El modelo solo declara soporte para inglés y se distribuye bajo licencia MIT.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | OLMo 2 (`Olmo2ForCausalLM`), transformer decoder-only |
-| Parámetros totales | 1.414.678.528 (1,41B) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no especificada en la model card) |
-| Tipos de cuantización | pesos originales en bfloat16; no se han publicado variantes cuantizadas (GGUF, AWQ, GPTQ) |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | OLMo 2 (`Olmo2ForCausalLM`), transformer decoder-only, 18 capas, hidden size 2048 |
+| Parametros totales | 1.414.678.528 (aproximadamente 1,41B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (repositorio de 2,8 GB), bfloat16 |
-| Capas | 18 |
-| Tamaño oculto | 2048 |
-| Tokenizador | GPT-NeoX-20B, vocabulario de 50.432 tokens |
-| Tokens de entrenamiento | 32.000 millones |
-| Framework de entrenamiento | OLMo-core |
-| Método de mezcla | Olmix: sustituto exponencial ajustado sobre enjambre Dirichlet |
-| Fecha de publicación | 2026-10-27 |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura OLMo 2, un transformer decoder-only implementado en Transformers como `Olmo2ForCausalLM`, con 18 capas y dimensión oculta de 2048, lo que arroja 1,41B de parámetros. El tokenizador es el de GPT-NeoX-20B, con un vocabulario de 50.432 entradas, y los pesos se distribuyen en bfloat16. El entrenamiento se realizó con OLMo-core sobre 32.000 millones de tokens, un volumen bajo en relación con el tamaño del modelo (ratio aproximado de 22 tokens por parámetro, por debajo de las recomendaciones tipo Chinchilla), lo que sugiere que el modelo está infraentrenado y que su prioridad es la reproducibilidad experimental, no la calidad final.
+El modelo sigue la arquitectura OLMo 2 de AI2, un transformer decoder-only con 18 capas y dimensión de ocultación de 2048, implementado en la clase `Olmo2ForCausalLM` de Transformers. No emplea mezcla de expertos ni mecanismos híbridos: es un transformer denso convencional. El tokenizador es el de GPT-NeoX-20B, con un vocabulario de 50.432 tokens.
 
-La contribución metodológica es la mezcla de datos. El corpus de origen, WebOrganizer/Corpus-200B, está organizado en 24 temáticas; los pesos de muestreo entre ellas no se fijan a mano, sino que se optimizan con Olmix mediante un sustituto exponencial ajustado sobre un enjambre de modelos proxy de 30M de parámetros entrenados con pesos muestreados de una distribución de Dirichlet. El objetivo de la optimización es *bits per byte* sobre texto retenido del Common Pile. La mezcla resultante se publica como `mix.json` en el repositorio, y las secuencias tokenizadas exactas usadas en el entrenamiento están disponibles en el dataset `credible-ai/weborganizer-corpus-200b-tokenized`. No se documenta en la información disponible el uso de RLHF, DPO ni ninguna fase de alineación posterior al preentrenamiento.
+El entrenamiento se realizó con OLMo-core sobre 32.000 millones de tokens procedentes del corpus WebOrganizer/Corpus-200B, que deriva del pool DCLM 1b-1x (licencia CC-BY-4.0) y está sujeto a los términos de uso de Common Crawl. La contribución técnica destacable es la mezcla de datos: los pesos de muestreo entre los 24 dominios temáticos se optimizaron con Olmix, que ajusta un surrogate exponencial sobre un enjambre de mezclas Dirichlet generadas con un modelo proxy de 30M parámetros (olmo2-30M-24domains-dirichlet). El objetivo de optimización es bits per byte sobre texto de retención de Common Pile. El repositorio incluye un fichero `mix.json` con la mezcla exacta empleada. No se documentan fases de RLHF, DPO ni ajuste fino por instrucciones.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés, como modelo base preentrenado (`text-generation`).
-- Modelado de lenguaje y cálculo de *bits per byte* / perplejidad sobre corpus de evaluación, que es su función principal como artefacto de investigación.
-- Capacidad de servir como base para *fine-tuning* supervisado o continuación de preentrenamiento en experimentos controlados.
-- Reproducción de experimentos de mezcla de dominios: permite comparar el efecto de la mezcla Olmix frente a mezclas uniformes o heurísticas.
-- No dispone de *chat template*, ajuste por instrucciones, *tool calling*, capacidades de agente, visión, audio ni modo de razonamiento explícito.
-- Multilingüismo limitado al inglés según la model card; no se declaran capacidades en otros idiomas.
+- Generación de texto autoregresiva en inglés, como modelo base de lenguaje.
+- Modelado de lenguaje puro: no se ha sometido a ajuste por instrucciones, por lo que no sigue instrucciones de forma fiable sin un post-entrenamiento adicional.
+- Reproducción de experimentos de mezcla de datos: sirve como referencia para validar métodos de atribución lineal de dominios (LinMix).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües limitadas al inglés según la model card.
+- No se documentan modos especiales (thinking, visión, audio).
 
 ## Casos de uso
 
-- Reproducción de los experimentos del artículo LinMix: cargar el modelo y el `mix.json` asociado para verificar los resultados de mezcla de dominios a escala 1B frente a los proxies de 30M.
-- Estudio de transferencia de escala en mezcla de datos: comparar el rendimiento de este modelo con el del enjambre proxy `olmo2-30M-24domains-dirichlet` para medir si los pesos óptimos de mezcla obtenidos a 30M siguen siendo válidos a 1,41B.
-- Línea base en experimentos de *data curation*: usar los 32B tokens y la mezcla publicada como referencia controlada frente a nuevas estrategias de muestreo o filtrado sobre WebOrganizer/Corpus-200B.
-- Evaluación de metodologías de optimización de mezclas: servir de punto de comparación para técnicas alternativas (regresión sobre *scaling laws*, bandits, búsqueda bayesiana) midiendo *bits per byte* sobre Common Pile retenido.
-- Continuación de preentrenamiento en dominios concretos: al ser un modelo de 1,41B con licencia MIT, es viable partir de estos pesos para *domain adaptation* sobre subconjuntos de las 24 temáticas y estudiar la degradación o mejora por dominio.
-- Experimentación en hardware modesto: con pesos bf16 de unos 2,8 GB, el modelo cabe en GPUs de consumo y en CPU, lo que facilita barridos de hiperparámetros y ablaciones sin clúster.
-- Docencia e investigación sobre tokenización y composición de corpus: analizar cómo el tokenizador GPT-NeoX-20B distribuye tokens entre las 24 temáticas del corpus y cómo ello interactúa con los pesos de mezcla.
+- Reproducción de experimentos de LinMix: el modelo permite replicar los resultados del artículo arXiv:2610.37390 comparando la mezcla optimizada por Olmix con mezclas alternativas sobre los mismos 24 dominios.
+- Investigación en data mixing: sirve como punto de control de 1B para estudiar cómo los pesos de mezcla entre dominios afectan a bits per byte en texto de retención.
+- Validación de modelos proxy: permite contrastar si las decisiones de mezcla tomadas con el proxy de 30M parámetros se transfieren correctamente a escala de 1B.
+- Estudio de atribución lineal de dominios: al estar entrenado sobre 24 temáticas delimitadas, facilita analizar la contribución marginal de cada dominio al rendimiento final.
+- Base para ajuste fino experimental: al ser un modelo base de 1,41B con licencia MIT, puede servir de punto de partida en entornos académicos que necesiten un modelo pequeño entrenado con una mezcla controlada.
+- Docencia y formación en metodología de preentrenamiento: su tamaño reducido y su documentación de mezcla lo hacen adecuado para ilustrar pipelines de entrenamiento con OLMo-core.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo menciona que la mezcla se optimizó para *bits per byte* sobre texto retenido del Common Pile, sin aportar valores numéricos, y no se incluyen resultados de MMLU, HumanEval, GSM8K ni de ninguna otra tarea estándar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 2,8 GB solo para pesos; con caché KV y activaciones, del orden de 4-5 GB en función de la longitud de secuencia (estimación, no medida publicada).
-- VRAM estimada en cuantización INT8: en torno a 1,4-2 GB; en INT4, en torno a 0,7-1,5 GB (estimaciones; no hay ficheros cuantizados publicados, habría que generarlos).
-- GPU recomendadas: cualquier GPU con 8 GB o más es suficiente en bf16 (RTX 3060 Ti, RTX 4060, RTX 4070, RTX 4090, A10, L4). Para entrenamiento o *fine-tuning* completo conviene A100/H100 por memoria y ancho de banda.
-- Cabe holgadamente en GPU de consumo; también es viable la inferencia en CPU, dado el tamaño reducido.
-- Opciones de despliegue: Transformers con `AutoModelForCausalLM` (soporte nativo de `Olmo2ForCausalLM`), vLLM y TGI para servir, llama.cpp u Ollama tras convertir los pesos a GGUF (conversión no incluida en el repositorio).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 2,8 GB solo para pesos, más memoria para activaciones y caché KV; en la práctica, entre 4 y 6 GB con contexto moderado.
+- En cuantización de 8 bits: alrededor de 1,5 GB de pesos; en 4 bits, alrededor de 0,8 GB (estimaciones teóricas, no verificadas por el autor).
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bfloat16; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son válidas. Cabe en GPU de consumo.
+- Opciones de despliegue: Transformers (soporte nativo de `Olmo2ForCausalLM`), vLLM y TGI si incluyen soporte de la arquitectura OLMo 2; llama.cpp y Ollama requerirían conversión a GGUF, no documentada por el autor.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-Datos de los modelos comparables tomados de sus model cards públicas; no se han reverificado en esta ficha.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| olmo2-1B-24domains-dirichlet-exponential-cpile | 1,41B | no disponible | MIT | Base de investigación con mezcla Olmix sobre 24 dominios |
+| olmo2-30M-24domains-dirichlet (credible-ai) | 30M | no disponible | no disponible | Proxy de 30M para el enjambre Dirichlet |
+| OLMo 2 1B (AI2) | aproximadamente 1B | no disponible en la informacion disponible | Apache 2.0 (modelo base de AI2) | Modelo base de propósito general |
+| Modelos base de 1B tipo Llama 3.2 1B | aproximadamente 1,2B | 128K | Llama Community License | Modelo base/instruido de propósito general |
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile | 1,41B | no disponible | MIT | Mezcla de dominios optimizada (Olmix), preentrenamiento de 32B tokens | Hugging Face, safetensors |
-| allenai/OLMo-2-0425-1B | 1,24B (aproximado) | 4096 | Apache 2.0 | Modelo base generalista con receta completa publicada | Hugging Face, safetensors |
-| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8192 | Apache 2.0 | Modelo base y variantes instruct de alta calidad | Hugging Face, safetensors, GGUF |
-| TinyLlama/TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Preentrenamiento de 3B tokens sobre corpus mixto, con variante chat | Hugging Face, safetensors |
-| EleutherAI/pythia-1.4b | 1,41B | 2048 | Apache 2.0 | Suites de checkpoints para investigación de entrenamiento | Hugging Face, safetensors |
-
-La diferencia clave frente a todos ellos es que este modelo no se publica como base generalista: su valor está en la mezcla de datos documentada (`mix.json`) y en la reproducibilidad del pipeline Olmix/LinMix, no en su rendimiento en tareas de usuario final.
+La comparación con OLMo 2 1B de AI2 es la más directa por compartir arquitectura y tokenizador, pero las diferencias de licencia y de propósito (investigación frente a uso general) son sustanciales. Los datos de benchmarks comparativos no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de propósito general: la propia model card lo describe como un artefacto de investigación para reproducir LinMix, no como un LM listo para uso.
-- Sin alineación: no hay ajuste por instrucciones, RLHF ni DPO, por lo que no sigue instrucciones de forma fiable ni mantiene formatos de conversación.
-- Infraentrenado: 32B tokens para 1,41B parámetros es un ratio bajo; es esperable una calidad de generación limitada en comparación con modelos de tamaño similar entrenados con billones de tokens.
-- Solo inglés declarado; no se garantiza comportamiento correcto en castellano ni en otros idiomas.
-- Riesgo de alucinación y de reproducir sesgos presentes en Common Crawl y en el pool DCLM, sin filtrado de seguridad documentado.
-- Longitud de contexto no especificada en la información disponible: no debe asumirse una ventana concreta sin verificarla empíricamente.
-- Restricciones de datos: los pesos son MIT, pero los datos de entrenamiento derivan del DCLM 1b-1x pool (CC-BY-4.0) y están sujetos a los términos de uso de Common Crawl; cualquier uso comercial debe evaluar esa cadena de licencias.
-- Sin resultados de benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
-- Advertencia sobre la búsqueda web: los resultados devueltos no guardan relación con este modelo (contenido sobre Claude AI y GitHub Copilot), por lo que no se han podido incorporar enlaces externos adicionales verificados.
+- Es un artefacto de investigación, no un modelo de propósito general; no debe usarse en producción como asistente.
+- No ha recibido ajuste por instrucciones ni RLHF, por lo que no sigue instrucciones de forma fiable.
+- Solo declara soporte de inglés; el rendimiento en otros idiomas no está documentado.
+- La longitud de contexto no está especificada en la model card.
+- Riesgo de alucinación y de sesgos heredados del corpus DCLM/Common Crawl, sin filtrado documentado más allá del temático.
+- Los datos de entrenamiento están sujetos a los términos de uso de Common Crawl y a la licencia CC-BY-4.0 del pool DCLM; conviene revisar obligaciones de atribución aunque los pesos sean MIT.
+- No se documentan cuantizaciones oficiales ni conversiones a GGUF; el uso en llama.cpp u Ollama requeriría trabajo adicional no validado por el autor.
+- El rendimiento real de la mezcla optimizada solo está validado, según la model card, mediante bits per byte en texto de retención de Common Pile, no mediante benchmarks de tareas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile
-- Modelo proxy del enjambre Dirichlet (30M): https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
-- Dataset de origen: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
-- Dataset tokenizado usado en el entrenamiento: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
-- Pool DCLM 1b-1x: https://huggingface.co/datasets/mlfoundations/dclm-pool-1b-1x
-- Código LinMix: https://github.com/credibleai/linmix
-- Framework de entrenamiento OLMo-core: https://github.com/allenai/OLMo-core
-- Documentación de `Olmo2ForCausalLM` en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo2
+- Modelo proxy de 30M: https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
+- Paper LinMix: https://arxiv.org/abs/2610.37390
+- Repositorio de código: https://github.com/credibleai/linmix
+- Documentación de OLMo 2 en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo2
 - Tokenizador GPT-NeoX-20B: https://huggingface.co/EleutherAI/gpt-neox-20b
+- Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
+- Dataset tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
+- Pool DCLM 1b-1x: https://huggingface.co/datasets/mlfoundations/dclm-pool-1b-1x
+- OLMo-core: https://github.com/allenai/OLMo-core
 - Términos de uso de Common Crawl: https://commoncrawl.org/terms-of-use

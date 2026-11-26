@@ -2,93 +2,97 @@
 
 ## Resumen
 
-Tenet-14B-Qwen3-Unslop-v2-i1-GGUF es una cuantizacion en formato GGUF del modelo Tenet-14B-Qwen3-Unslop-v2, publicado por el usuario mradermacher en Hugging Face. El modelo base es un ajuste fino (fine-tune) de la familia Tenet sobre Qwen3, con aproximadamente 14.768 millones de parametros totales, orientado a uso conversacional. Esta publicacion concreta no contiene los pesos originales, sino una coleccion de cuantizaciones generadas con imatrix (importance matrix) para su uso en llama.cpp y entornos compatibles.
+Tenet-14B-Qwen3-Unslop-v2-i1-GGUF es la versión cuantizada en formato GGUF del modelo Tenet-14B-Qwen3-Unslop-v2, desarrollado originalmente por mr-andrey-isachenko y empaquetado por mradermacher. Se trata de un modelo de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones) construido sobre la base de Qwen3, orientado a razonamiento (reasoning/thinking), uso de herramientas (tool-use), generación de código y flujos agénticos. El sufijo "Unslop" y las etiquetas "abliterated" y "uncensored" indican que se ha aplicado un proceso de reducción de respuestas evasivas y de eliminación de rechazos (abliteration), lo que lo aleja del comportamiento fuertemente alineado del modelo base.
 
-El interes de esta ficha es doble: por un lado documenta el proceso de cuantizacion de un modelo de 14B con licencia no declarada; por otro, advierte de que la model card original es extremadamente escueta y no aporta informacion sobre datos de entrenamiento, idiomas, licencia ni evaluaciones. La informacion disponible procede casi exclusivamente de los metadatos del repositorio y de la propia model card del cuantizador.
+El modelo original se distribuye en precisión completa con pesos safetensors y licencia Apache 2.0, y esta versión GGUF ofrece un conjunto amplio de cuantizaciones (desde IQ1_S de 3,7 GB hasta Q6_K de 12,2 GB) generadas con imatrix ponderada, lo que permite desplegarlo en hardware de consumo. Está pensado para desarrolladores que quieren ejecutar localmente un modelo de 14B con capacidades de razonamiento y agentes sin depender de infraestructura en la nube.
 
-Se trata, por tanto, de una publicacion de tipo "repack" de un fine-tune comunitario, no de un modelo fundacional. Su relevancia practica radica en que permite ejecutar un modelo de 14B en hardware de consumo mediante cuantizaciones de 2 a 6 bits, si bien la falta de transparencia sobre el modelo base limita su uso en produccion sin evaluacion previa.
+La relevancia actual radica en la combinación de tres factores: un tamaño de 14B manejable en GPU de consumo, una orientación explícita a flujos agénticos y tool calling, y un proceso de "unslop" que busca respuestas más directas y menos plantillas de rechazo. No obstante, la información pública disponible sobre el proceso de entrenamiento, los datos utilizados y los resultados de benchmarks es muy limitada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3, segun el nombre del modelo) |
-| Parametros totales | 14.768.307.200 (14,77 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix) |
+| Arquitectura | Transformer (derivada de Qwen3; detalles específicos no disponibles) |
+| Parámetros totales | 14.768.307.200 (≈14,8 B) |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de cuantizaciones estáticas en el repo hermano) |
+| Idiomas soportados | Inglés (según el campo `language` de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite detallar la arquitectura interna del modelo base. El nombre "Tenet-14B-Qwen3-Unslop-v2" sugiere que se trata de un fine-tune de la familia Tenet sobre una base Qwen3 de aproximadamente 14B parametros, con un proceso de "unslop" (habitualmente orientado a reducir el estilo de respuesta excesivamente formal o "slop" generado por ajustes RLHF previos). No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT.
+La información disponible no detalla la arquitectura interna más allá de que deriva de Qwen3, un transformer decoder-only. El modelo base Tenet-14B-Qwen3-Unslop-v2 ha sido sometido a un proceso de fine-tuning que las etiquetas describen como "unslop" (reducción de respuestas genéricas o evasivas) y "abliterated" (eliminación de direcciones de rechazo en el espacio de activaciones). Las etiquetas también mencionan GRPO, lo que sugiere que se empleó aprendizaje por refuerzo con Group Relative Policy Optimization en alguna fase del entrenamiento, aunque no se especifican los detalles del dataset, el número de tokens ni la composición de los datos.
 
-Respecto a la publicacion que nos ocupa, el cuantizador indica en la model card que se trata de cuantizaciones "weighted/imatrix" del modelo mr-andrey-isachenko/Tenet-14B-Qwen3-Unslop-v2, generadas con quantize_version 2 y convert_type hf. La lista de cuantizaciones incluye desde IQ1_S e IQ1_M (1 bit) hasta Q6_K (6 bits), pasando por todas las variantes intermedias de K-quants e I-quants. No se documenta ninguna innovacion arquitectonica adicional (atencion lineal, decodificacion especulativa, SSM, etc.).
+Las cuantizaciones de esta versión se han generado con imatrix ponderada (weighted/imatrix quants), una técnica que calibra la cuantización con estadísticas de activaciones para preservar mejor la calidad en bits bajos. El repositorio incluye el fichero imatrix para que otros usuarios puedan generar sus propias cuantizaciones. No se dispone de información sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" y deriva de un fine-tune orientado a dialogo.
-- Razonamiento y codigo: presumiblemente heredadas de la base Qwen3, aunque no se documentan explicitamente en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (los idiomas no estan declarados).
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio puede servirse a traves de la infraestructura de endpoints de Hugging Face.
+- Generación de texto conversacional en inglés.
+- Razonamiento explícito con modo "thinking" (etiqueta `reasoning`/`thinking`).
+- Generación de código (etiqueta `coding`).
+- Tool calling y function calling (etiqueta `tool-use`).
+- Flujos agénticos y razonamiento multi-paso (etiqueta `agentic`).
+- Comportamiento "uncensored"/"abliterated": menor tendencia a rechazar peticiones.
+- Compatible con endpoints (etiqueta `endpoints_compatible`) y con vLLM y OpenRouter según las etiquetas del modelo base.
+- Capacidades multilingües limitadas: la model card solo declara inglés.
+- No se ha documentado soporte de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de 14B en GPUs con 8-12 GB de VRAM o en CPU con 16 GB de RAM, lo que facilita pruebas de concepto sin infraestructura dedicada.
-- Evaluacion comparativa de fine-tunes comunitarios: al existir variantes de 1 a 6 bits, se puede medir el impacto de la cuantizacion en la calidad conversacional de un mismo modelo base.
-- Chat conversacional offline: el modelo puede integrarse en interfaces tipo llama.cpp u Ollama para asistentes de escritorio sin conexion, siempre que se valide previamente su calidad.
-- Generacion de texto en pipelines de bajo coste: las variantes IQ2/IQ3 permiten desplegar el modelo en entornos con restricciones severas de memoria, aceptando la perdida de calidad asociada.
-- Investigacion sobre cuantizacion con imatrix: el repositorio sirve como referencia para estudiar como afectan las matrices de importancia a distintas precisiones (Q2 a Q6).
-- Prototipado de aplicaciones conversacionales: util para validar prompts y flujos de dialogo antes de migrar a un modelo con licencia clara y evaluaciones publicas.
+- Asistente de código local: el modelo puede integrarse en un IDE o CLI para autocompletado, explicación y refactorización de código, aprovechando su especialización en `coding` y su tamaño de 14B, que cabe en una GPU de consumo con cuantización Q4_K_M (9,1 GB).
+- Agente autónomo con tool calling: al soportar function calling y flujos multi-paso, puede conectarse a APIs externas (búsqueda, cálculo, bases de datos) en pipelines agénticos ejecutados en local con llama.cpp u Ollama.
+- Razonamiento con cadena de pensamiento: útil para tareas de análisis, depuración lógica o resolución de problemas matemáticos donde se quiere inspeccionar el proceso de razonamiento del modelo.
+- Prototipado de chatbots sin filtros: para investigación sobre alineación, evaluación de sesgos o experimentos que requieren respuestas directas sin rechazos, gracias a su naturaleza abliterated.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse en GGUF sobre hardware propio, permite procesar datos sensibles sin enviarlos a servicios en la nube.
+- Evaluación comparativa de cuantizaciones: el amplio abanico de quants (de IQ1_S a Q6_K) permite estudiar el compromiso calidad/tamaño en un modelo de 14B con imatrix, útil para investigación en compresión de modelos.
+- Generación de documentación técnica y resúmenes en inglés dentro de pipelines de CI/CD, con la ventaja de no depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y overhead de llama.cpp):
-  - IQ1_S / IQ1_M: en torno a 3-4 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M / Q2_K: en torno a 4-5 GB.
-  - IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M / Q3_K_S / Q3_K_M: en torno a 6-7 GB.
-  - Q3_K_L / IQ4_XS / IQ4_NL / Q4_0 / Q4_1 / Q4_K_S: en torno a 8-9 GB.
-  - Q4_K_M / Q5_K_S: en torno a 9-10 GB.
-  - Q5_K_M / Q6_K: en torno a 11-13 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti, RTX 4080, RTX 4090, A100 o H100 para las variantes de mayor precision y contextos largos.
-- Cabe en GPU de consumo: si, en RTX 3060 12 GB o superiores para cuantizaciones Q4 y Q5; las variantes IQ2/IQ3 caben en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. La etiqueta "endpoints_compatible" sugiere soporte en Hugging Face Endpoints.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (aproximada, según tamaño del fichero GGUF más overhead de contexto):
+  - i1-IQ1_S (3,7 GB): ~4-5 GB de VRAM.
+  - i1-IQ2_M (5,4 GB): ~6-7 GB de VRAM.
+  - i1-IQ3_M (7,0 GB): ~8-9 GB de VRAM.
+  - i1-Q4_K_M (9,1 GB): ~10-11 GB de VRAM.
+  - i1-Q5_K_M (10,6 GB): ~12 GB de VRAM.
+  - i1-Q6_K (12,2 GB): ~13-14 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4/Q5; RTX 4090 (24 GB) para Q6_K con contexto amplio; A100/H100 para despliegues de mayor concurrencia o precisión completa.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB (Q4_K_M) hasta una RTX 4090 (Q6_K). Las cuantizaciones IQ1/IQ2 permiten incluso GPUs de 6-8 GB con pérdida notable de calidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF. Para el modelo base en safetensors, vLLM y TGI según las etiquetas.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Tenet-14B-Qwen3-Unslop-v2-i1-GGUF (este) | 14,77 B | no disponible | no disponible | GGUF (multiples quants) | Fine-tune comunitario, sin benchmarks publicos |
-| mradermacher/Tenet-4B-Qwen3-Unslop-v2-i1-GGUF | ~4 B | no disponible | no disponible | GGUF | Misma familia, menor tamano, aparece en directorios de modelos "abliterated" |
-| Qwen3-14B (base hipotetica) | ~14 B | no disponible | no disponible | safetensors, GGUF | Base presumible del fine-tune; sin datos confirmados en la informacion disponible |
+| Tenet-14B-Qwen3-Unslop-v2 (este) | 14,8 B | No disponible | Apache 2.0 | GGUF / safetensors | Abliterated, orientado a agentes y razonamiento |
+| Qwen3-14B (base) | ~14 B | No disponible en esta ficha | Apache 2.0 | safetensors / GGUF | Modelo original de Alibaba, alineado y con rechazos |
+| Alternativas de 14B abliterated | No disponible | No disponible | Variable | GGUF | No se dispone de datos verificables en la información proporcionada |
 
-No se dispone de informacion suficiente para comparar rendimiento numerico con alternativas de la misma categoria.
+No se dispone de datos de rendimiento comparativos verificables en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base (mr-andrey-isachenko/Tenet-14B-Qwen3-Unslop-v2) antes de cualquier despliegue en produccion.
-- Ausencia de benchmarks: no hay evaluaciones publicas que permitan estimar su calidad frente a modelos comparables.
-- Model card minima: no se documentan datos de entrenamiento, idiomas, sesgos ni limitaciones conocidas.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; sin evaluacion especifica no puede cuantificarse.
-- Idiomas no declarados: no se puede garantizar un rendimiento adecuado en castellano.
-- Proceso "unslop": los fine-tunes de este tipo pueden reducir filtros de seguridad y aumentar la probabilidad de respuestas inapropiadas; conviene auditar el comportamiento antes de exponerlo a usuarios finales.
-- Cuantizaciones de 1-2 bits: las variantes IQ1 e IQ2 degradan notablemente la coherencia; no se recomiendan para uso conversacional serio.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- La información sobre el proceso de entrenamiento, datos y benchmarks es muy escasa; no es posible validar afirmaciones de calidad con evidencia publicada.
+- El proceso de abliteration y "unslop" reduce los rechazos, lo que implica mayor riesgo de generar contenido inapropiado, sesgado o dañino; requiere filtros y políticas de uso adicionales en producción.
+- Riesgo de alucinación inherente a los modelos de 14B, especialmente en tareas factuales y con cuantizaciones agresivas (IQ1/IQ2).
+- Soporte declarado únicamente en inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- La longitud de contexto no está especificada en la información disponible; conviene verificarla en el modelo base antes de diseñar aplicaciones con contexto largo.
+- Las cuantizaciones por debajo de Q3 pierden calidad de forma significativa según las propias notas del autor ("very low quality", "for the desperate").
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo abliterated puede conllevar riesgos reputacionales y de cumplimiento; se recomienda auditoría previa.
+- El modelo tiene 0 likes y 774 descargas en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tenet-14B-Qwen3-Unslop-v2-i1-GGUF
-- Modelo base del cuantizador: https://huggingface.co/mr-andrey-isachenko/Tenet-14B-Qwen3-Unslop-v2
-- Directorio de modelos relacionados: https://huggingface.co/models?other=qwen2&p=5&sort=trending
-- Directorio Model Heretic: https://modelheretic.com/
-- Local AI Release Board: https://recentmodel.com/
+- Repositorio Hugging Face (este GGUF): https://huggingface.co/mradermacher/Tenet-14B-Qwen3-Unslop-v2-i1-GGUF
+- Modelo base: https://huggingface.co/mr-andrey-isachenko/Tenet-14B-Qwen3-Unslop-v2
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Tenet-14B-Qwen3-Unslop-v2-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Tenet-14B-Qwen3-Unslop-v2-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

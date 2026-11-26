@@ -62,21 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=qwen2&p=5&sort=trending",
-      "snippet": "huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2. Text Generation ... mradermacher/Mukesh-AI-Coder-1.5B-Uncensored-GGUF. 2B • Updated 4 days ago ..."
-    },
-    {
-      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
-      "url": "https://modelheretic.com/",
-      "snippet": "GGUF, mradermacher. mradermacher/Tenet-4B-Qwen3-Unslop-v2-i1-GGUF. Qwen 3 4B. repack abliterated coding. 0, MacWinLinCPU. ~7 GB CPU 16 GB (slow). repack."
-    },
-    {
-      "title": "Local AI Release Board",
-      "url": "https://recentmodel.com/",
-      "snippet": "... 2, a multimodal classification model on Qwen3.8-27B. Dense, 26B params ... 1-Unslop-v1 is a Tenet fine-tune of meta-llama/Llama-3.1-8B-Instruct ..."
-    }
-  ]
+  "sources": []
 }

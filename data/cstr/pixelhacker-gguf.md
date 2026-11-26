@@ -2,97 +2,97 @@
 
 ## Resumen
 
-PixelHacker-GGUF es una conversión al formato GGUF del modelo de inpainting de imágenes PixelHacker, desarrollado originalmente por el grupo hustvl (Huazhong University of Science and Technology, Vision and Learning Lab). El modelo resuelve la tarea de eliminación y reconstrucción de regiones enmascaradas de una imagen (image inpainting), es decir, rellenar de forma coherente los huecos indicados por una máscara. La relevancia de esta publicación concreta no está en el modelo en sí, sino en que ofrece los pesos en formato GGUF con distintos niveles de cuantización, pensados para ejecutarse en el motor nativo de inpainting de CrispEmbed.
+PixelHacker-GGUF es una conversión al formato GGUF del modelo PixelHacker, un modelo de difusión latente especializado en inpainting de imágenes (relleno de regiones enmascaradas). El trabajo de conversión y cuantización lo firma el usuario cstr, mientras que el modelo original procede del repositorio hustvl/PixelHacker (checkpoint `ft_places2` entrenado sobre Places2). El modelo no genera texto ni razona: es un componente visual puro que reconstruye contenido coherente dentro de una máscara, apoyándose en un VAE SDXL como codificador y decodificador latente.
 
-El repositorio lo publica el usuario cstr y contiene cuatro variantes (F32, F16, Q8_0 y Q4_K), todas copias exactas de ficheros ya cualificados, sin recuantización adicional. El modelo tiene 862.251.708 parámetros según los safetensors de referencia y el repositorio ocupa 6,6 GB en total. La arquitectura subyacente es un modelo de difusión latente (diffusion_pytorch_model.bin) entrenado sobre Places2 y que requiere un VAE complementario (SDXL-VAE) para operar en el espacio latente.
+Con 862.251.708 parámetros, el modelo se distribuye en cuatro variantes de precisión (F32, F16, Q8_0 y Q4_K) con barras de aceptación explícitas de similitud coseno respecto al original en PyTorch. La conversión es relevante porque permite ejecutar inpainting de calidad en el motor nativo de CrispEmbed sin depender de PyTorch, y porque publica verificaciones de fidelidad numérica por variante, algo poco habitual en conversiones de modelos de difusión a GGUF.
 
-La publicación es explícitamente experimental: los ficheros solo funcionan dentro del motor de inpainting de CrispEmbed y detrás de flags desactivados por defecto (`CRISPEMBED_PIXELHACKER=1` y, para cuantizaciones no F32, `CRISPEMBED_INPAINT_QUANT=1`). No es un modelo de propósito general ni se puede cargar con librerías estándar como transformers o llama.cpp.
+La publicación es experimental: los ficheros solo funcionan dentro de CrispEmbed bajo flags desactivados por defecto (`CRISPEMBED_PIXELHACKER=1` y, para variantes cuantizadas, `CRISPEMBED_INPAINT_QUANT=1`). No es un modelo autónomo ni un paquete listo para usar en otros runners.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión latente (diffusion_pytorch_model) para inpainting; requiere VAE SDXL complementario |
-| Parámetros totales | 862.251.708 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
-| Tipos de cuantización | F32, F16, Q8_0, Q4_K |
-| Idiomas soportados | no disponible (modelo de imagen) |
-| Licencia | MIT (pesos); código upstream Apache-2.0; flash-linear-attention MIT |
-| Formato de pesos | GGUF (variantes f32, f16, q8_0, q4_k) |
+| Arquitectura | Modelo de difusión latente para inpainting (checkpoint `ft_places2`); requiere VAE SDXL como companion |
+| Parametros totales | 862.251.708 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | F32, F16, Q8_0, Q4_K |
+| Idiomas soportados | No disponible (modelo sin entrada de texto) |
+| Licencia | MIT (pesos); código upstream Apache-2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-PixelHacker es un modelo de difusión latente especializado en inpainting. El checkpoint original (`ft_places2/diffusion_pytorch_model.bin`, sha256 `ef5e28199cd03344ac22a6e6ff456ba8b868e83fb90d8174cc2ad83d7ef4296c`) fue entrenado sobre Places2, un dataset de escenas naturales a gran escala. El modelo opera en el espacio latente de un VAE SDXL, por lo que necesita el VAE complementario (publicado aparte en `cstr/SDXL-VAE-inpaint-GGUF`) emparejado al mismo nivel de precisión que el UNet de inpainting. La información disponible no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO (poco habituales en modelos de difusión de imagen).
+El modelo original es un modelo de difusión latente para inpainting entrenado sobre Places2 (checkpoint `ft_places2`), según la lineage declarada en la model card. Opera en el espacio latente de un VAE SDXL: el VAE codifica la imagen y la máscara, el modelo de difusión reconstruye la región enmascarada y el VAE decodifica el resultado. La conversión a GGUF se realizó con el script `models/convert-latent-inpaint-to-gguf.py` y el cuantizador `crispembed-quantize` (política `inpaint-v1`); los ficheros publicados son copias exactas de los ya cualificados, sin recuantización adicional.
 
-La innovación técnica relevante en este repositorio es el proceso de conversión y cuantización: el script `models/convert-latent-inpaint-to-gguf.py` transforma el checkpoint PyTorch a GGUF y el cuantizador `crispembed-quantize` (política `inpaint-v1`) genera las variantes F16, Q8_0 y Q4_K. El autor documenta barreras de aceptación basadas en la similitud coseno de la salida final respecto al modelo PyTorch original (panel sintético) o respecto a F32 nativo (fotos reales): F32 > 0,99, F16 > 0,98, Q8_0 > 0,97, Q4_K > 0,94. Los ports nativos estudian además flash-linear-attention (MIT).
+No se dispone de información sobre el número de tokens o pasos de entrenamiento, la composición exacta del dataset más allá de Places2, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO (no aplicables en un modelo de difusión de este tipo). La innovación técnica destacable es la propia cadena de conversión y validación: cada variante se contrasta contra el modelo PyTorch original con una métrica de coseno mínimo sobre casos sintéticos (y sobre fotos reales en Q8_0 y Q4_K), con barras de aceptación publicadas.
 
 ## Capacidades
 
-- Inpainting de imágenes: reconstrucción de regiones enmascaradas de forma coherente con el contexto visual.
-- Eliminación de objetos: rellenar el hueco dejado al borrar un objeto de una fotografía.
-- Operación en espacio latente SDXL: requiere emparejamiento con el VAE SDXL correspondiente (F32 con F32, F16 con F16, etc.).
-- Cuantización con degradación controlada: Q8_0 mantiene coseno mínimo de 0,9859; Q4_K de 0,9425 (borderline en fotos).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo puramente visual de inpainting.
-- No dispone de modo thinking, visión general, audio ni generación de texto.
+- Inpainting de imágenes: reconstrucción de regiones enmascaradas con coherencia visual respecto al contexto circundante.
+- Integración con VAE SDXL: requiere el companion `cstr/SDXL-VAE-inpaint-GGUF` en la misma precisión que el modelo (F32 con F32, Q8_0 con Q8_0, etc.).
+- Ejecución nativa en CrispEmbed: motor de inpainting propio, sin dependencia de PyTorch en tiempo de inferencia.
+- Cuantización con fidelidad verificada: coseno mínimo de 0,9859 (Q8_0) y 0,9425 (Q4_K) frente al original.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
+- No procesa entrada de texto ni tiene capacidades multilingües.
 
 ## Casos de uso
 
-- Retoque fotográfico automatizado: eliminar objetos no deseados de una foto proporcionando una máscara; el modelo rellena la región con contenido coherente usando el contexto latente SDXL.
-- Restauración de imágenes dañadas: reconstruir zonas con arañazos, marcas de agua o elementos corruptos en digitalizaciones, indicando las regiones afectadas mediante máscara.
-- Limpieza de datasets visuales: eliminar logos, marcas de agua o texto superpuesto de imágenes de entrenamiento antes de reutilizarlas en pipelines de visión por computador.
-- Edición de producto en e-commerce: borrar fondos no deseados o elementos distractores en fotos de catálogo manteniendo la coherencia de la escena.
-- Preprocesado en pipelines de generación aumentada: rellenar huecos en imágenes antes de pasarlas a un modelo de captioning o de detección, reduciendo artefactos que confundan al siguiente modelo.
-- Investigación en cuantización de modelos de difusión: las variantes Q8_0 y Q4_K con métricas de coseno documentadas sirven para estudiar el impacto de la cuantización en tareas de inpainting en entornos con VRAM limitada.
-- Prototipado dentro de CrispEmbed: validar el motor nativo de inpainting con flags experimentales antes de integrarlo en un producto, usando F32 como referencia de calidad.
+- Restauración de fotografías: eliminar objetos no deseados o reconstruir zonas dañadas en imágenes de archivo, usando el modelo con el VAE SDXL en la misma precisión para mantener la coherencia cromática.
+- Edición de producto en e-commerce: borrar fondos o elementos accesorios en fotos de catálogo y rellenar con textura coherente, aprovechando que el checkpoint está entrenado sobre Places2 (escenas y entornos).
+- Limpieza de imágenes médicas o de inspección: eliminar anotaciones, marcas de agua o artefactos sobre regiones enmascaradas antes de pasarlas a un pipeline de análisis posterior.
+- Preprocesado para datasets de visión: generar variaciones controladas de imágenes enmascaradas para aumento de datos, con la variante Q4_K si el presupuesto de VRAM es ajustado.
+- Integración en herramientas de edición dentro de CrispEmbed: el modelo se invoca desde el motor nativo con los flags `CRISPEMBED_PIXELHACKER=1` y `CRISPEMBED_INPAINT_QUANT=1`, adecuado para flujos de edición interactiva donde no se quiere cargar PyTorch.
+- Prototipado de pipelines de inpainting sin GPU de datacenter: la variante Q4_K (487 MB) permite experimentar en hardware modesto antes de escalar a F16 o F32 para producción.
+- Validación de conversiones GGUF: servir como caso de referencia para equipos que conviertan modelos de difusión a GGUF y quieran replicar la metodología de barras de coseno por variante.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (PSNR, SSIM, FID, LPIPS) en la información disponible. El autor sí documenta métricas internas de fidelidad respecto al modelo original:
+La model card publica métricas de fidelidad de la conversión (coseno mínimo sobre casos), no benchmarks de calidad de inpainting tipo FID o LPIPS.
 
-| Variante | Fichero | Bytes | Coseno mínimo | Barrera | Notas |
+| Variante | Fichero | Bytes | Coseno mínimo | Barra | Notas |
 |---|---|---|---|---|---|
-| F32 | `pixelhacker-f32.gguf` | 3.449.075.872 | 1,0 | 0,99 | emparejar con SDXL-VAE F32 |
-| F16 | `pixelhacker-f16.gguf` | 1.725.648.672 | 0,999999 | 0,98 | solo panel sintético; sin ejecución F16 en fotos |
-| Q8_0 | `pixelhacker-q8_0.gguf` | 917.886.464 | 0,9859 | 0,97 | emparejar con SDXL-VAE Q8_0 |
-| Q4_K | `pixelhacker-q4_k.gguf` | 487.079.936 | 0,9425 | 0,94 | borderline: 0,9425 en fotos; emparejar con SDXL-VAE Q4_K |
+| F32 | `pixelhacker-f32.gguf` | 3.449.075.872 | 1,0 | > 0,99 | Emparejar con SDXL-VAE F32 |
+| F16 | `pixelhacker-f16.gguf` | 1.725.648.672 | 0,999999 | > 0,98 | Solo panel sintético; sin ejecución F16 sobre fotos |
+| Q8_0 | `pixelhacker-q8_0.gguf` | 917.886.464 | 0,9859 | > 0,97 | Emparejar con SDXL-VAE Q8_0 |
+| Q4_K | `pixelhacker-q4_k.gguf` | 487.079.936 | 0,9425 | > 0,94 | Al límite: 0,9425 sobre fotos |
+
+No se han publicado resultados de benchmarks de calidad de imagen (FID, LPIPS, PSNR) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Como referencia, el fichero F32 ocupa 3,45 GB y el Q4_K 487 MB; a ello hay que sumar el VAE SDXL complementario y las activaciones del motor de difusión.
-- GPU recomendadas: no disponible. Por tamaño, el F32 debería caber en GPUs consumer con 8-12 GB de VRAM, pero el autor no lo confirma.
-- ¿Cabe en GPU consumer? Probablemente sí en el caso de Q8_0 y Q4_K, pero no hay confirmación oficial en la información proporcionada.
-- Opciones de despliegue: exclusivamente el motor nativo de inpainting de CrispEmbed, con las flags `CRISPEMBED_PIXELHACKER=1` y `CRISPEMBED_INPAINT_QUANT=1` (para F16/Q8_0/Q4_K). No es compatible con vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: no disponible de forma explícita; como referencia, el fichero F32 ocupa 3,45 GB y el Q4_K 487 MB, a lo que hay que sumar el VAE SDXL companion en la misma precisión.
+- GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU con al menos 8 GB de VRAM debería manejar la variante Q8_0 junto al VAE, y 16 GB o más para F32.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060/4060 y superiores para Q4_K y Q8_0; F32 requiere más margen.
+- Opciones de despliegue: exclusivamente el motor nativo de CrispEmbed; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (son runners de texto y este es un modelo de difusión).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| PixelHacker-GGUF (este) | 862 M | no aplica | Inpainting | MIT (pesos) / Apache-2.0 (código) | GGUF | Solo CrispEmbed |
-| PixelHacker original (hustvl) | 862 M | no aplica | Inpainting | MIT (pesos) / Apache-2.0 (código) | PyTorch (.bin) | Hugging Face, uso general |
-| Stable Diffusion Inpainting (SD 1.5/2.x) | ~860 M (UNet) | no aplica | Inpainting | CreativeML OpenRAIL-M | safetensors, ckpt | Amplia (diffusers, A1111, ComfyUI) |
-| LaMa | ~51 M | no aplica | Inpainting | Apache-2.0 | PyTorch | Amplia (librerías de inpainting) |
+| Modelo | Parámetros | Formato | Licencia | Contexto/entrada | Disponibilidad |
+|---|---|---|---|---|---|
+| PixelHacker-GGUF (cstr) | 862 M | GGUF (F32/F16/Q8_0/Q4_K) | MIT (pesos) | Imagen + máscara | Hugging Face, solo CrispEmbed |
+| PixelHacker original (hustvl) | 862 M | PyTorch `.bin` | MIT (pesos), Apache-2.0 (código) | Imagen + máscara | Hugging Face, PyTorch |
+| SDXL-VAE-inpaint-GGUF (cstr) | No disponible | GGUF | No disponible en la información | Imagen latente | Hugging Face, companion obligatorio |
 
-La comparativa se limita a los datos disponibles. PixelHacker original es la referencia directa; SD Inpainting y LaMa son alternativas de la misma categoría, pero no se dispone de comparaciones de rendimiento publicadas en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos de inpainting (p. ej. LaMa, MAT) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado experimental: los ficheros solo se ejecutan en CrispEmbed con flags desactivadas por defecto; no son utilizables en otros entornos sin adaptación.
-- Dependencia del VAE SDXL: es obligatorio emparejar cada variante con el VAE del mismo nivel de precisión (`cstr/SDXL-VAE-inpaint-GGUF`); un emparejamiento incorrecto degrada la calidad.
-- Q4_K es borderline: el coseno mínimo de 0,9425 en fotos está muy cerca de la barrera de 0,94, por lo que en producción conviene usar Q8_0 o superior.
-- F16 no se ha validado en fotos reales, solo en panel sintético; su comportamiento en imágenes reales es incierto.
-- Riesgo de alucinación visual: como todo modelo generativo de inpainting, puede inventar contenido plausible pero incorrecto en la región enmascarada.
-- Sesgos: no documentados en la información disponible; al entrenarse sobre Places2, puede estar sesgado hacia escenas naturales y tener dificultades con dominios muy distintos (texto, ilustración, médico).
-- Sin soporte de texto, tool calling ni agentes: no es un modelo de lenguaje.
-- Licencia MIT para los pesos, pero el código upstream es Apache-2.0; revisar los ficheros `licenses/` del repositorio antes de uso comercial.
-- Sin datos de benchmarks estándar de calidad de imagen (PSNR, SSIM, FID, LPIPS), lo que dificulta comparar con alternativas.
+- Estado experimental: los ficheros solo se ejecutan en CrispEmbed y con flags desactivados por defecto; no hay garantía de funcionamiento en otros runners.
+- Dependencia obligatoria de un VAE SDXL companion en la misma precisión; mezclar precisiones entre modelo y VAE no está validado.
+- La variante Q4_K está al límite de su barra de aceptación (0,9425 frente a 0,94 sobre fotos), por lo que puede degradar resultados en casos exigentes.
+- La variante F16 solo se validó sobre panel sintético, sin ejecución sobre fotos reales.
+- Entrenado sobre Places2: el dominio son escenas y entornos, no retratos, texto o ilustraciones; el rendimiento fuera de ese dominio no está documentado.
+- Riesgo de artefactos y de relleno incoherente en regiones grandes o con estructura compleja, inherente a los modelos de difusión de inpainting.
+- No hay información sobre sesgos demográficos o culturales del checkpoint original.
+- Licencia MIT para los pesos, pero el código upstream es Apache-2.0; conviene revisar los ficheros `licenses/` incluidos antes de uso comercial.
+- Sin soporte de texto, tool calling ni agentes: no es sustituible por un LLM en ningún flujo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/cstr/PixelHacker-GGUF
-- VAE complementario: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
+- VAE companion: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
 - Código upstream PixelHacker: https://github.com/hustvl/PixelHacker/tree/f5567db2871598aa178fe7a34c520dd478a0b41b
 - Pesos originales: https://huggingface.co/hustvl/PixelHacker/resolve/012fd343158936a265b8a0ee38a791a7a2841f45/ft_places2/diffusion_pytorch_model.bin
-- Documentación de CrispEmbed: `docs/inpainting-cli.md` y `docs/inpainting-precision.md` (no se proporciona URL pública)
-- flash-linear-attention: no se proporciona URL en la información disponible
+- Documentación de CrispEmbed sobre inpainting: `docs/inpainting-cli.md` y `docs/inpainting-precision.md` (referenciadas en la model card, sin URL pública en la información disponible)

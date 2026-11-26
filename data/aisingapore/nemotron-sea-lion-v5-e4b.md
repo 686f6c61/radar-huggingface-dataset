@@ -2,53 +2,53 @@
 
 ## Resumen
 
-Nemotron-SEA-LION-v5-E4B es un modelo de lenguaje de tipo "small language model" desarrollado por el AI Products Pillar de AI Singapore, con financiación del National Research Foundation Singapore, dentro de la familia SEA-LION (Southeast Asian Languages In One Network). Se obtiene mediante post-entrenamiento del modelo `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` de NVIDIA, que a su vez es una versión post-entrenada de `google/gemma-4-E4B-it` de Google DeepMind. El objetivo es adaptar un modelo compacto de origen occidental a las lenguas del sudeste asiático y al inglés, manteniendo sus capacidades de razonamiento y de uso de herramientas.
+Nemotron-SEA-LION-v5-E4B es un modelo de lenguaje de tipo "small language model" desarrollado por el AI Products Pillar de AI Singapore, financiado por el National Research Foundation de Singapur. Se trata de un post-entrenamiento sobre nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, que a su vez deriva de google/gemma-4-E4B-it. El modelo cuenta con 8.000 millones de parámetros totales y 4.000 millones efectivos, con una ventana de contexto de 64.000 tokens y capacidad multimodal de entrada imagen-texto.
 
-El modelo cuenta con 7.996.156.490 parámetros totales según los pesos en safetensors, pero opera con 4B parámetros efectivos, lo que lo sitúa en la categoría de modelos eficientes en memoria. Mantiene una ventana de contexto de 64K tokens, heredada sin cambios de Nemotron, y conserva la arquitectura, el tokenizador, las plantillas de chat y los valores de muestreo del modelo base. La única modificación estructural declarada es que el modo de razonamiento (thinking) viene activado por defecto.
+El objetivo del modelo es cubrir las lenguas del sudeste asiático (SEA), una región tradicionalmente infrarrepresentada en los grandes modelos fundacionales. Para ello, AI Singapore ha realizado un ajuste fino sobre el modelo base de NVIDIA utilizando el dataset aisingapore/SEA-Instruct-2602, preservando la arquitectura, el tokenizador, la plantilla de chat y los valores de muestreo originales, con la única modificación de que el modo de razonamiento (thinking) queda activado por defecto.
 
-Su relevancia actual radica en dos factores: por un lado, cubre nueve idiomas (inglés, chino, birmano, indonesio, filipino, malayo, tamil, tailandés y vietnamita) con una licencia MIT permisiva; por otro, está diseñado para asistentes locales, personas interactivas e interfaces embebidas, con baja latencia de primer token y bajo consumo de memoria, lo que facilita su despliegue en entornos con recursos limitados.
+Su relevancia actual radica en la combinación de tres factores: licencia MIT (plenamente permisiva para uso comercial), un tamaño reducido que permite despliegue en hardware modesto con baja latencia de primer token, y cobertura de nueve idiomas incluyendo birmano, tamil y tailandés, además de inglés y chino. Esto lo posiciona como una opción práctica para asistentes locales, agentes embebidos y aplicaciones multilingües en la región.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (heredada de NVIDIA Nemotron-3.5-Bolt-E4B, basada en Google Gemma 4 E4B; familia transformer multimodal) |
-| Parametros totales | 7.996.156.490 |
-| Parametros activos | 4B efectivos (modelo de 8B con 4B efectivos) |
-| Longitud de contexto | 64K tokens |
-| Tipos de cuantizacion | No disponible |
+| Arquitectura | Transformer multimodal (base gemma4), post-entrenado por NVIDIA |
+| Parametros totales | 7.996.156.490 (~8B) |
+| Parametros activos | ~4B efectivos |
+| Longitud de contexto | 64.000 tokens |
+| Tipos de cuantizacion | BF16 (original), FP8, INT4, GGUF (variantes publicadas) |
 | Idiomas soportados | Ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes, vietnamita |
 | Licencia | MIT |
-| Formato de pesos | Safetensors (libreria transformers) |
+| Formato de pesos | safetensors (Transformers); GGUF disponible en variante separada |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura concreta no se detalla en la informacion disponible mas alla de que se hereda sin cambios de `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`, un modelo pequeno de 8B parametros con 4B efectivos construido sobre `google/gemma-4-E4B-it`. El pipeline declarado en Hugging Face es `text-generation`, aunque los tags incluyen `image-text-to-text` y la carga se realiza con `AutoModelForMultimodalLM` y `AutoProcessor`, lo que sugiere una base multimodal. El tokenizador, la plantilla de chat y los valores de muestreo por defecto se mantienen identicos al modelo base; la unica diferencia declarada es que el razonamiento (thinking) queda habilitado por defecto.
+El modelo hereda la arquitectura completa de nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, que es la versión post-entrenada por NVIDIA de google/gemma-4-E4B-it. Se trata por tanto de un transformer multimodal con capacidad de entrada imagen-texto y salida de texto, con aproximadamente 8.000 millones de parámetros totales y 4.000 millones efectivos. AI Singapore no modifica la arquitectura, el tokenizador, la plantilla de chat ni los valores de muestreo por defecto; únicamente activa el modo de razonamiento (thinking) por defecto en la configuración de generación.
 
-El post-entrenamiento se realizo en ingles y lenguas del sudeste asiatico utilizando el dataset `aisingapore/SEA-Instruct-2602`. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo hereda de Nemotron 3.5 Bolt E4B capacidades como el razonamiento con presupuesto de thinking configurable en tiempo de ejecucion, un modo de respuesta directa, un modo conversacional para respuestas breves de estilo hablado, y mejoras en uso de herramientas multi-turno, seguimiento de instrucciones y anclaje de la entrada (input grounding).
+El ajuste fino se realizó en inglés y lenguas del sudeste asiático utilizando el dataset aisingapore/SEA-Instruct-2602. La model card no especifica el número exacto de tokens de entrenamiento ni la composición detallada del dataset, ni confirma el uso de RLHF o DPO en esta etapa de post-entrenamiento. Del modelo base se heredan innovaciones relevantes: modo de respuesta directa y presupuesto de razonamiento configurable en tiempo de ejecución, modo conversacional para respuestas concisas de estilo hablado con menos formateo, uso mejorado de herramientas multi-turno, seguimiento de instrucciones y anclaje de entrada (input grounding), así como una operación de baja memoria y bajo tiempo hasta el primer token orientada a asistentes de voz y dispositivos locales.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo thinking activado por defecto, desactivable mediante `enable_thinking=False`.
-- Presupuesto de razonamiento configurable en tiempo de ejecucion (runtime thinking budget).
-- Modo de respuesta directa, sin cadena de pensamiento.
-- Modo conversacional (`conversational_mode: True`) para respuestas concisas de estilo hablado y con menos formato.
-- Uso de herramientas y function calling multi-turno mejorado, con soporte en vLLM mediante `--enable-auto-tool-choice` y `--tool-call-parser gemma4`.
-- Seguimiento de instrucciones y anclaje de la entrada (input grounding) reforzados respecto al modelo base.
-- Capacidades multilingues en nueve idiomas: ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
-- Capacidad multimodal potencial segun los tags (`image-text-to-text`) y la clase `AutoModelForMultimodalLM`; en el ejemplo de vLLM se limitan explicitamente imagen, video y audio a cero, por lo que el uso documentado es texto.
-- Orientado a asistentes de voz y dispositivo, personas interactivas e interfaces embebidas.
-- Baja memoria y bajo tiempo hasta el primer token (time-to-first-token).
+- Generación de texto y razonamiento con modo thinking activado por defecto, con posibilidad de desactivarlo (`enable_thinking=False`) o de fijar un presupuesto de razonamiento en tiempo de ejecución.
+- Modo de respuesta directa para consultas que no requieren cadena de pensamiento.
+- Modo conversacional (`conversational_mode`) que produce respuestas concisas de estilo hablado con menos formateo, orientado a asistentes de voz.
+- Entrada multimodal imagen-texto (etiqueta image-text-to-text), aunque las variantes de despliegue documentadas limitan imágenes, vídeo y audio a cero en vLLM.
+- Soporte de tool calling / function calling, con parser dedicado `gemma4` en vLLM y `--enable-auto-tool-choice`.
+- Uso de herramientas multi-turno mejorado y seguimiento de instrucciones reforzado.
+- Capacidades multilingües en inglés, chino, birmano, indonesio, filipino, malayo, tamil, tailandés y vietnamita.
+- Anclaje de entrada (input grounding) para reducir desviaciones respecto al contexto proporcionado.
+- Decodificación especulativa mediante el modelo auxiliar aisingapore/Nemotron-SEA-LION-v5-E4B-SpecDecoder.
 
 ## Casos de uso
 
-- Atencion al cliente en lenguas del sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandes, vietnamita o filipino con una ventana de 64K tokens, suficiente para incorporar historial extenso y documentacion de producto en el mismo contexto.
-- Asistentes de voz y dispositivos locales: su bajo consumo de memoria y su baja latencia de primer token lo hacen adecuado para integrarse en altavoces inteligentes o asistentes embebidos que necesitan respuestas rapidas en modo conversacional.
-- Automatizacion de tramites y logistica regional: el ejemplo de la model card (exportacion de durian congelado de Medan a Singapur) ilustra su uso para generar respuestas estructuradas en formato de puntos sobre documentacion, tiempos de transito y riesgos de cadena de frio en indonesio.
-- Agentes con tool calling: mediante function calling multi-turno puede orquestar llamadas a APIs, como consultas meteorologicas o sistemas de reservas, integrándose en vLLM con el parser `gemma4`.
-- Generacion de contenido multilingue para mercados del sudeste asiatico: redaccion de textos de marketing, FAQ o documentacion en varios idiomas desde un unico modelo con licencia MIT.
-- Razonamiento asistido con presupuesto de thinking: tareas que requieren pasos intermedios, como analisis de incidencias o planificacion, usando el modo thinking por defecto y limitando el presupuesto en tiempo de ejecucion para controlar coste y latencia.
-- Despliegue en infraestructura limitada: al operar con 4B parametros efectivos, puede ejecutarse en GPUs de gama media o en entornos con memoria restringida, dejando margen para pipelines adyacentes.
+- Atención al cliente multilingüe en el sudeste asiático: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandés o vietnamita con hasta 64.000 tokens de contexto, lo que permite mantener el historial completo de la conversación y documentación de producto en la misma ventana.
+- Asistentes de voz y dispositivos locales: el modo conversacional genera respuestas concisas de estilo hablado y el modelo está optimizado para bajo tiempo hasta el primer token y baja memoria, lo que encaja en interfaces embebidas y altavoces inteligentes.
+- Agentes con uso de herramientas: el soporte de function calling con parser `gemma4` en vLLM permite integrar el modelo en pipelines de agentes que consultan APIs, bases de datos o servicios externos en varios pasos.
+- Procesamiento de documentación comercial regional: con entrada imagen-texto y contexto largo, puede extraer y resumir información de facturas, formularios o documentos escaneados en lenguas SEA, por ejemplo para logística de exportación entre Indonesia y Singapur.
+- Generación de código y asistencia técnica en inglés: el modelo hereda las capacidades de razonamiento del base y puede emplearse en tareas de generación y explicación de código dentro de herramientas de desarrollo.
+- Moderación y clasificación de contenido multilingüe: su cobertura de nueve idiomas permite construir clasificadores y filtros para foros y plataformas que operan en varios países de la región.
+- Educación y tutoría localizada: respuestas en la lengua del usuario con razonamiento paso a paso, útil para plataformas de aprendizaje en tamil, birmano o filipino.
+- Despliegue en hardware de gama media: al ser un modelo de ~8B con variantes INT4 y GGUF, puede ejecutarse en estaciones de trabajo con GPU de consumo para prototipado y demos.
 
 ## Benchmarks y rendimiento
 
@@ -56,38 +56,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. Como referencia orientativa, un modelo de 8B parametros totales requiere aproximadamente 16 GB en BF16 para los pesos, y alrededor de 8 GB en cuantizacion de 8 bits; el uso de 4B parametros efectivos reduce el coste computacional por token, pero no se han publicado cifras oficiales.
-- GPU recomendadas: no disponibles en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada; el tamano de pesos en BF16 (repo de 16 GB) sugiere que podria caber en GPUs de consumo con 16 GB o mas, pero no hay datos oficiales.
-- Opciones de despliegue documentadas: Transformers (`AutoProcessor` y `AutoModelForMultimodalLM`), vLLM (con `--reasoning-parser gemma4`, `--enable-auto-tool-choice` y `--tool-call-parser gemma4`) y SGLang (mencionado como soportado, sin ejemplo detallado).
-- Latencia y throughput: no disponibles; la model card solo indica baja memoria y bajo tiempo hasta el primer token como objetivos de diseno.
+- VRAM estimada para inferencia: en BF16, aproximadamente 16 GB solo para pesos, más overhead de contexto y activaciones; en FP8, en torno a 8 GB; en INT4, alrededor de 4-5 GB para pesos.
+- GPU recomendadas: A100 o H100 para despliegue en producción con contexto largo y concurrencia; L40S o A10G como alternativas de inference server; RTX 4090 (24 GB) para BF16 en una sola GPU.
+- Cabe en GPU de consumo: sí, en RTX 4090 con BF16; en RTX 3090/4080 con FP8 o INT4; en GPUs de 8-12 GB con la variante INT4 o GGUF cuantizada.
+- Opciones de despliegue: Transformers (`AutoModelForMultimodalLM`), vLLM (con `--reasoning-parser gemma4` y `--tool-call-parser gemma4`), SGLang y llama.cpp mediante la variante GGUF.
+- Latencia y throughput: la model card destaca baja memoria y bajo tiempo hasta el primer token, pero no se publican cifras concretas de latencia ni de tokens por segundo en la información disponible.
+- Aceleración adicional: el SpecDecoder permite decodificación especulativa para aumentar la velocidad de generación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-SEA-LION-v5-E4B | 8B totales / 4B efectivos | 64K | Si (9 idiomas) | MIT | Hugging Face |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | 8B totales / 4B efectivos | 64K | No especificado | No disponible | Hugging Face |
-| google/gemma-4-E4B-it | 4B efectivos | No disponible | No especificado | No disponible | Hugging Face |
+| Nemotron-SEA-LION-v5-E4B | ~8B (4B efectivos) | 64K | Birmano, indonesio, filipino, malayo, tamil, tailandes, vietnamita | MIT | Hugging Face (BF16, FP8, INT4, GGUF) |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | ~8B (4B efectivos) | 64K | No especificado | No disponible | Hugging Face |
+| google/gemma-4-E4B-it | ~8B (4B efectivos) | No disponible | No especificado | No disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+La comparativa con alternativas específicas para lenguas del sudeste asiático no está disponible en la información proporcionada. Frente a su modelo base, la diferencia principal es el ajuste fino en lenguas SEA y la activación del modo thinking por defecto.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgo en la informacion disponible; al derivar de un modelo base entrenado principalmente en ingles y chino, es previsible un desequilibrio de calidad entre idiomas, aunque no esta cuantificado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan tasas de alucinacion ni mecanismos de mitigacion especificos.
-- El modo thinking viene activado por defecto, lo que incrementa la latencia y el consumo de tokens si no se desactiva o se limita el presupuesto de razonamiento.
-- La cobertura multilingue se limita a los nueve idiomas declarados; no se garantiza calidad en otras lenguas del sudeste asiatico no listadas.
-- Aunque los tags incluyen `image-text-to-text`, el uso documentado en vLLM desactiva imagen, video y audio, por lo que las capacidades multimodales no estan confirmadas para produccion.
-- La licencia MIT permite uso comercial sin restricciones adicionales, pero se recomienda verificar las condiciones del modelo base NVIDIA y de Gemma 4 de los que deriva.
-- No hay datos publicados sobre latencia, throughput ni requisitos minimos de hardware, lo que dificulta el dimensionamiento previo en produccion.
+- La model card no documenta sesgos conocidos ni evaluaciones de sesgo; se recomienda auditar el comportamiento en cada idioma antes de producción.
+- Riesgo de alucinación inherente a los modelos de ~8B, especialmente en tareas de conocimiento factual y en lenguas de bajos recursos como el birmano o el tamil.
+- El modo thinking está activado por defecto, lo que incrementa el consumo de tokens y la latencia si no se desactiva explícitamente o se limita el presupuesto de razonamiento.
+- Aunque la arquitectura soporta entrada de imagen, las instrucciones de despliegue en vLLM desactivan imagen, vídeo y audio (`--limit-mm-per-prompt '{"image":0,"video":0,"audio":0}'`), por lo que la multimodalidad práctica queda limitada en ese backend.
+- La cobertura de idiomas se limita a los nueve declarados; no hay garantías de calidad fuera de ellos.
+- No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset SEA-Instruct-2602 ni el uso de RLHF/DPO, lo que dificulta evaluar la reproducibilidad del ajuste.
+- La licencia MIT permite uso comercial sin restricciones, pero conviene verificar las condiciones del modelo base de NVIDIA y de Gemma subyacentes.
+- El modelo tiene pocas descargas (324) y un solo like en el momento de la consulta, lo que sugiere una adopción todavía incipiente y poca validación comunitaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B
-- Coleccion SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5-6afab40ea2b5b627e9930703
+- Colección SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5
+- Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Modelo Gemma original: https://huggingface.co/google/gemma-4-E4B-it
+- Variante FP8: https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-FP8
+- Variante INT4: https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-INT4
+- Variante GGUF (llama.cpp): https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF
+- Modelo auxiliar para decodificación especulativa: https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-SpecDecoder
+- Dataset de ajuste: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
 - Sitio oficial de SEA-LION: https://sea-lion.ai
-- Modelo base NVIDIA Nemotron 3.5 Bolt E4B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Modelo Gemma 4 E4B it: https://huggingface.co/google/gemma-4-E4B-it
-- Dataset SEA-Instruct-2602: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
-- Licencia MIT: https://mit-license.org/
+- Texto de la licencia MIT: https://mit-license.org/

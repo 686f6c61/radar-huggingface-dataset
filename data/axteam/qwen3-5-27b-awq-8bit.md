@@ -2,99 +2,112 @@
 
 ## Resumen
 
-`axteam/Qwen3.5-27B-AWQ-8bit` es una cuantización de 8 bits del modelo multimodal `Qwen/Qwen3.5-27B`, publicada por el usuario axteam para servir el modelo con vLLM de forma eficiente en memoria. No es un modelo nuevo: es un derivado PTQ (post-training quantization) que conserva tokenizador, `chat_template` y `generation_config` del original, por lo que el comportamiento esperado es el del modelo base con una pérdida de calidad medida de aproximadamente el 0,0 % en perplejidad.
+Qwen3.5-27B-AWQ-8bit es una cuantización de 8 bits del modelo multimodal Qwen/Qwen3.5-27B, publicada por el usuario axteam. Se trata de una conversión post-entrenamiento (PTQ) mediante AWQ en esquema W8A16 (pesos INT8 simétricos con grupo de 32, activaciones en BF16), empaquetada en formato `compressed-tensors` `pack-quantized` y pensada específicamente para servir el modelo con vLLM. El modelo base es un transformer híbrido (atención lineal combinada con atención completa), denso, con torre de visión y una cabeza de predicción multi-token (MTP), con 27.781.427.952 parámetros totales.
 
-El modelo base es un transformer denso de 27.781.427.952 parámetros (unos 27,8 B) con arquitectura híbrida de atención lineal y atención completa, torre visual (pipeline `image-text-to-text`) y un cabezal MTP (*multi-token prediction*). La cuantización aplica AWQ INT8 en esquema W8A16: pesos INT8 simétricos con grupo de 32 y activaciones en BF16, almacenados en formato `compressed-tensors` `pack-quantized`.
+El objetivo de esta publicación no es mejorar el modelo original, sino reducir su huella en memoria y facilitar su despliegue en producción sin degradar de forma apreciable la calidad. Según las mediciones del autor, la cuantización conserva una perplejidad prácticamente idéntica a la del original en BF16 (1,3606 frente a 1,3603) y una tasa de coincidencia del 99,0% en el siguiente token predicho. La licencia es Apache-2.0, heredada del modelo base.
 
-Su relevancia es práctica: permite ejecutar un modelo multimodal de clase 27B en una sola GPU de 48-80 GB con un peso en disco de ~30,5 GB, frente a los ~55 GB que ocuparía el original en BF16, manteniendo una fidelidad muy alta respecto al modelo sin cuantizar según las métricas publicadas por el autor.
+Es relevante ahora porque permite ejecutar un modelo multimodal de casi 28.000 millones de parámetros en aproximadamente 32,7 GB en disco, con soporte nativo en vLLM, lo que lo hace viable en GPUs de 48 GB o en configuraciones multi-GPU más modestas que las que exigiría el original en BF16. La información disponible no detalla idiomas soportados ni la longitud de contexto, por lo que esos datos se indican como no disponibles.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso híbrido (atención lineal + atención completa), multimodal con torre visual y cabezal MTP |
-| Parametros totales | 27.781.427.952 (~27,8 B) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer híbrido (atención lineal + atención completa), denso, multimodal (visión), con cabeza MTP |
+| Parámetros totales | 27.781.427.952 |
+| Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | AWQ INT8 W8A16 (pesos INT8 simétricos, grupo 32, activaciones BF16); torre visual, proyector, cabezal MTP, RMSNorms, embeddings, LM head y partes no lineales del SSM (`linear_attn.conv1d`, `A_log`, `dt_bias`) se mantienen en BF16 |
-| Idiomas soportados | No disponible en la model card; el conjunto de evaluación interno es mixto inglés/coreano |
+| Tipos de cuantización | AWQ INT8 W8A16 (pesos INT8 simétricos, grupo de 32, activaciones BF16); el repositorio incluye únicamente esta variante |
+| Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors con `compressed-tensors` (`pack-quantized`); ~30,5 GB en disco, repo de 32,7 GB |
+| Formato de pesos | `compressed-tensors` `pack-quantized` (safetensors), para vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base emplea una arquitectura híbrida que combina capas de atención lineal con capas de atención completa, lo que reduce el coste de memoria y cómputo del *KV cache* en secuencias largas frente a un transformer de atención completa pura. Es un modelo denso (no MoE) de 27,8 B de parámetros, con torre visual y proyector para entrada de imagen, y un cabezal MTP que habilita decodificación multi-token. El proceso de cuantización conserva en BF16 los componentes sensibles a la precisión: torre visual y proyector (`model.visual.*`), cabezal MTP (`mtp.*`), todas las RMSNorm, embeddings de tokens, LM head y las partes no lineales del bloque SSM (`linear_attn.conv1d/A_log/dt_bias`).
+El modelo base Qwen3.5-27B emplea una arquitectura híbrida que combina capas de atención lineal con capas de atención completa, lo que reduce el coste computacional en secuencias largas manteniendo la capacidad de atención global. Es un modelo denso (no MoE) que incorpora una torre de visión y un proyector para entrada de imagen y texto, además de una cabeza de predicción multi-token (MTP) que puede aprovecharse para decodificación especulativa. Los parámetros totales ascienden a 27.781.427.952.
 
-No se ha reentrenado nada: es PTQ puro sobre los pesos del modelo base. La calibración de AWQ se hizo con 256 muestras de un corpus mixto con predominio de coreano, sin gradientes, con el objetivo de proteger los canales de pesos más relevantes antes del redondeo a INT8. El autor no documenta la composición del dataset de preentrenamiento, el número de tokens, ni si el modelo base usó RLHF/DPO; tampoco se detalla en la información disponible el mecanismo exacto de atención lineal empleado más allá de la etiqueta `qwen3_5` y la presencia de componentes SSM.
+Esta publicación concreta no entrena el modelo: aplica cuantización post-entrenamiento con AWQ, que utiliza un conjunto de calibración de 256 muestras (corpus mixto con predominio de coreano) y sin gradientes para proteger los canales de pesos más sensibles antes del redondeo. Se mantienen en BF16 la torre de visión y el proyector (`model.visual.*`), la cabeza MTP (`mtp.*`), todas las RMSNorm, los embeddings de tokens, la LM head y las partes no lineales del bloque SSM (`linear_attn.conv1d`, `A_log`, `dt_bias`), lo que supone aproximadamente el 12% de los parámetros sin cuantizar. Una revisión del 1 de noviembre de 2026 restauró de forma bit-exacta los pesos de RMSNorm no suavizados desde el original, eliminando el ruido de redondeo BF16 (hasta un 0,4% en la ganancia efectiva) que había introducido el manejo de offset-norm de llm-compressor.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en formato chat, con plantilla idéntica a la del modelo original.
-- Entrada de imagen y texto (`image-text-to-text`): la torre visual y el proyector se conservan en BF16, por lo que la ruta multimodal no sufre la cuantización INT8.
-- Razonamiento general y respuesta a instrucciones heredados del modelo base Qwen3.5-27B. Los benchmarks concretos del base no se incluyen en la información disponible.
-- Cabezal MTP conservado en BF16, pensado para decodificación especulativa o multi-token si el stack de serving lo aprovecha.
-- Atención híbrida (lineal + completa) que reduce el coste por token en contextos largos.
-- Soporte de *tool calling* / *function calling*: no documentado en la model card.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la model card.
-- Capacidades multilingües: no documentadas; la única evidencia es el conjunto de evaluación interno inglés/coreano.
-- Modo *thinking* explícito, audio o vídeo: no documentado.
+- Generación de texto conversacional multi-turno.
+- Razonamiento y respuesta a preguntas de conocimiento general (evaluado en MMLU, ARC-Challenge y Winogrande).
+- Comprensión de imágenes y texto combinados (pipeline `image-text-to-text`), gracias a la torre de visión conservada en BF16.
+- Razonamiento matemático básico (evaluado en GSM8K, con resultados dependientes del formato de respuesta).
+- Capacidades multilingües, con rendimiento medido en coreano (KMMLU, HAE-RAE) además de inglés.
+- Cabeza de predicción multi-token (MTP), aprovechable para decodificación especulativa en vLLM.
+- No se dispone de información sobre soporte de tool calling, function calling o flujos de agentes multi-paso en la documentación proporcionada.
 
 ## Casos de uso
 
-- **Servicio multimodal en producción con vLLM**: `vllm serve axteam/Qwen3.5-27B-AWQ-8bit` arranca directamente con un peso de ~30,5 GB, lo que permite atender peticiones de imagen + texto en una única GPU de 48-80 GB sin recurrir al modelo BF16.
-- **Extracción de datos de documentos escaneados**: facturas, albaranes o formularios en imagen se envían junto a una instrucción de extracción estructurada; la torre visual en BF16 evita degradar la calidad de percepción que introduciría cuantizar la visión.
-- **Atención al cliente automatizada multi-turno**: la arquitectura híbrida de atención lineal reduce el coste del *KV cache* en conversaciones largas, lo que abarata mantener historiales extensos en memoria frente a un transformer de atención completa equivalente.
-- **Generación de descripciones y alt-text a escala**: procesamiento por lotes de catálogos de imágenes en una sola GPU, con throughput limitado por la VRAM disponible (no se han publicado cifras de throughput).
-- **Validación de fidelidad de cuantizaciones**: el modelo sirve como referencia reproducible para comparar perplejidad y acuerdo top-1 frente al BF16 original con el mismo arnés de evaluación (100 prompts, respuestas greedy).
-- **Despliegue on-premise con requisitos de privacidad**: al ser Apache-2.0 y ejecutarse en un solo nodo, encaja en entornos donde los datos no pueden salir de la infraestructura propia.
-- **Decodificación especulativa**: si el stack de serving soporta el cabezal MTP preservado en BF16, puede reducir la latencia de generación en cargas interactivas (no hay mediciones publicadas).
+- Servicio de chat multimodal en producción: el modelo acepta imagen y texto y puede desplegarse con vLLM en un único servidor con GPU de 48 GB, gestionando conversaciones multi-turno con el `chat_template` original intacto.
+- Asistencia sobre documentos escaneados: al conservar la torre de visión en BF16, puede extraer y razonar sobre contenido de imágenes sin la pérdida de precisión que supondría cuantizarla.
+- Despliegue con requisitos de memoria ajustados: los ~32,7 GB en disco y el esquema W8A16 permiten servir un modelo de 27.800 millones de parámetros donde el BF16 original no cabría en una sola GPU de 48 GB.
+- Evaluación comparativa de técnicas de cuantización: el repositorio publica resultados medidos con lm-evaluation-harness frente a FP8-dynamic, NVFP4A16, NVFP4 y AWQ-4bit, lo que lo convierte en una referencia útil para decidir el esquema de cuantización en pipelines propios.
+- Aplicaciones en coreano e inglés: los benchmarks KMMLU (69,84) y HAE-RAE (77,64) indican un rendimiento sólido en coreano, adecuado para asistentes o clasificación de texto en ese idioma.
+- Decodificación especulativa: la cabeza MTP incluida en BF16 permite integrar el modelo en configuraciones de speculative decoding dentro de vLLM para reducir la latencia por token.
+- Prototipado e investigación: al ser Apache-2.0 y estar integrado en vLLM, sirve como base para experimentos de cuantización y ajuste fino sobre un modelo multimodal de tamaño medio-grande.
 
 ## Benchmarks y rendimiento
 
-El autor solo publica métricas de fidelidad frente al modelo BF16 original, medidas sobre un conjunto interno mixto inglés/coreano de 100 prompts, con respuestas greedy BF16 puntuadas bajo cada build y el mismo arnés para todas las filas. No son puntuaciones absolutas de tarea.
+Resultados medidos por el autor con lm-evaluation-harness sobre vLLM, decodificación greedy, prompts de estilo completion sin plantilla de chat. MMLU corresponde a la variante generativa (`mmlu_generative`), no directamente comparable con puntuaciones obtenidas por log-likelihood. Los porcentajes entre paréntesis indican la recuperación respecto al original en BF16.
 
-| Metrica | Este modelo (AWQ INT8) | Original BF16 | Diferencia |
-|---|---|---|---|
-| Perplejidad (menor = más cercano) | 1,3606 | 1,3603 | +0,0 % |
-| Acuerdo top-1 en siguiente token | 99,0 % | 99,3 % | -0,3 pp |
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit (este repo) | NVFP4A16 | NVFP4 | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generativo) | 86,02 | 86,01 (100,0%) | 86,05 (100,0%) | 86,07 (100,1%) | 86,01 (100,0%) | 86,08 (100,1%) |
+| GSM8K (5-shot, estricto) | 37,00 | 38,06 (102,9%) | 34,80 (94,1%) | 81,43 (220,1%) | 71,27 (192,6%) | 82,87 (224,0%) |
+| ARC-Challenge (0-shot) | 61,18 | 61,69 (100,8%) | 61,60 (100,7%) | 60,84 (99,4%) | 60,58 (99,0%) | 60,84 (99,4%) |
+| Winogrande (5-shot) | 80,43 | 80,03 (99,5%) | 80,58 (100,2%) | 79,64 (99,0%) | 79,48 (98,8%) | 80,11 (99,6%) |
+| KMMLU (5-shot, directo) | 69,79 | 69,83 (100,1%) | 69,84 (100,1%) | 69,61 (99,7%) | 69,19 (99,1%) | 68,98 (98,8%) |
+| HAE-RAE (0-shot) | 76,99 | 77,36 (100,5%) | 77,64 (100,8%) | 75,89 (98,6%) | 75,71 (98,3%) | 76,44 (99,3%) |
+| Media | 68,57 | 68,83 (100,4%) | 68,42 (99,8%) | 75,58 (110,2%) | 73,71 (107,5%) | 75,89 (110,7%) |
+| Media sin GSM8K | 74,88 | 74,98 (100,1%) | 75,14 (100,4%) | 74,41 (99,4%) | 74,19 (99,1%) | 74,49 (99,5%) |
 
-No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, MMMU u otros) en la información disponible, ni para esta cuantización ni para el modelo base.
+Fidelidad respecto al original en BF16 sobre un conjunto interno mixto inglés/coreano de 100 prompts:
+
+| Métrica | Este modelo | BF16 original |
+|---|---|---|
+| Perplejidad (menor = más cercano) | 1,3606 | 1,3603 (+0,0%) |
+| Coincidencia top-1 en el siguiente token | 99,0% | 99,3% |
+
+El autor advierte que GSM8K se puntúa sobre texto generado y depende del formato de respuesta: las construcciones BF16, FP8-dynamic y AWQ-8bit obtienen 34,8–38,1, mientras que NVFP4A16, NVFP4 y AWQ-4bit alcanzan 71,3–82,9, con el mismo patrón en la puntuación flexible (39,7–42,4 frente a 74,0–84,7). La causa no se investigó.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: ~31-33 GB solo para pesos (27,8 B en INT8 ≈ 27,8 GB, más torre visual, proyector, MTP, normas, embeddings y LM head en BF16). Con *KV cache* y overhead de vLLM, el consumo realista arranca en ~40 GB y crece con la longitud de contexto, que no está documentada.
-- **GPU recomendadas**: A100 80 GB, H100 80 GB, L40S 48 GB, RTX 6000 Ada 48 GB o A6000 48 GB. Una GPU de 40 GB es el mínimo ajustado.
-- **Consumer GPU**: no cabe en una RTX 4090 (24 GB) ni deja margen útil en una RTX 5090 (32 GB) una vez descontados pesos y *KV cache*. Requeriría tensor parallelism con 2× RTX 4090, configuración no validada por el autor.
-- **Despliegue**: vLLM es la vía soportada y recomendada (formato `compressed-tensors`). llama.cpp y Ollama no soportan este esquema INT8 `pack-quantized`, por lo que no son opciones directas sin reconversión no documentada. TGI no está confirmado en la información disponible.
-- **Parámetros de muestreo recomendados por Qwen**: `temperature=0.7`, `top_p=0.8`, `top_k=20`.
-- **Latencia y throughput**: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: el repositorio ocupa ~32,7 GB en disco; el runtime de vLLM añade overhead de caché KV y activaciones, por lo que se recomienda un mínimo de 48 GB de VRAM.
+- GPUs recomendadas: A100 80 GB, H100 80 GB o L40S 48 GB para una sola GPU; configuraciones multi-GPU para tarjetas de menor capacidad.
+- Compatibilidad con GPU de consumo: no disponible con precisión; una RTX 4090 (24 GB) no puede alojar los pesos completos sin una estrategia adicional de offloading o paralelismo.
+- Opciones de despliegue: vLLM es el runtime previsto y probado (vLLM 0.32.0; la arquitectura requiere vLLM ≥ 0.17.0). El formato `compressed-tensors` `pack-quantized` no es directamente compatible con llama.cpp u Ollama.
+- Dependencias del runtime: Python 3.11–3.14, torch 2.13 (build CUDA 13.0, requiere driver NVIDIA con soporte CUDA 13), transformers ≥5.16.1,<5.20 y compressed-tensors 0.17.0 (fijado por vLLM; no actualizar por separado).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-27B-AWQ-8bit | 27,8 B (denso) | No disponible | AWQ INT8 W8A16, ~30,5 GB | Apache-2.0 | Hugging Face, 0 descargas |
-| Qwen/Qwen3.5-27B (original) | 27,8 B (denso) | No disponible | BF16, ~55 GB | Apache-2.0 | Hugging Face |
-| Versiones W4A16/GGUF de 27B de la familia Qwen | ~27-28 B | No disponible | 4 bits, ~14-17 GB | Apache-2.0 (según base) | Existen en el ecosistema, pero las encontradas corresponden a otras versiones de la familia, no comparables directamente |
+| axteam/Qwen3.5-27B-AWQ-8bit | 27,78 B (denso) | No disponible | compressed-tensors AWQ INT8 W8A16 | Apache-2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.5-27B (BF16) | 27,78 B (denso) | No disponible | safetensors BF16 | Apache-2.0 | Hugging Face |
+| Variantes FP8-dynamic del mismo modelo | 27,78 B (denso) | No disponible | FP8 | Apache-2.0 | No disponible como repositorio concreto |
+| Variantes NVFP4A16 / NVFP4 | 27,78 B (denso) | No disponible | FP4 | Apache-2.0 | No disponible como repositorio concreto |
 
-Frente al original BF16, esta cuantización reduce el peso a prácticamente la mitad (~30,5 GB frente a ~55 GB) con una perplejidad prácticamente idéntica (1,3606 frente a 1,3603) según la medición del autor. Frente a alternativas de 4 bits del mismo tamaño, el coste es mayor en VRAM a cambio de una fidelidad previsiblemente superior; no hay datos públicos que permitan cuantificar esa diferencia para esta familia concreta.
+Las variantes FP8-dynamic, NVFP4A16, NVFP4 y AWQ-4bit aparecen únicamente como columnas de comparación en los benchmarks del autor; no se dispone de sus repositorios ni de sus especificaciones completas. No se dispone de datos de contexto ni de comparación con modelos de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- **Evaluación de fidelidad con muestra pequeña**: 100 prompts de un conjunto interno inglés/coreano, sin publicación del conjunto ni del arnés. Las cifras de perplejidad y acuerdo top-1 no son extrapolables a otras lenguas o dominios.
-- **Calibración sesgada al coreano**: las 256 muestras de calibración tienen predominio de coreano; el comportamiento en castellano o en otros idiomas puede desviarse más respecto al BF16 de lo que indican las métricas publicadas.
-- **Idiomas no documentados**: la model card no declara la lista de idiomas soportados. No debe asumirse cobertura multilingüe sin validación propia.
-- **Contexto no documentado**: se desconoce la longitud máxima de contexto del modelo base en esta ficha; planificar el dimensionado de VRAM sin ese dato es arriesgado.
-- **Riesgo de alucinación**: inherente al modelo base y no mitigado por la cuantización; no se han publicado evaluaciones de factualidad.
-- **Capacidades no confirmadas**: *tool calling*, uso como agente y modo *thinking* no aparecen documentados; conviene verificarlos antes de diseñar arquitecturas que dependan de ellos.
-- **Licencia**: Apache-2.0 permite uso comercial, pero los derechos sobre pesos originales, tokenizador y `chat_template` pertenecen al equipo de Qwen; revisar el fichero LICENSE enlazado en el repo del modelo base.
-- **Restricciones de despliegue**: el formato INT8 `pack-quantized` limita las opciones a stacks que soporten `compressed-tensors`; no hay ruta directa a llama.cpp u Ollama.
-- **Madurez del artefacto**: 0 descargas y 0 *likes* en el momento de la consulta, con creación y última actualización separadas por unos 11 minutos; no hay evidencia de uso en producción.
+- Alucinación: no se han publicado evaluaciones específicas de tasa de alucinación; el modelo base puede generar contenido plausible pero incorrecto, especialmente en tareas de conocimiento factual.
+- GSM8K: la puntuación de esta variante (34,80) es inferior a la del original en BF16 (37,00) y muy inferior a la de otras cuantizaciones del mismo modelo; el autor no investigó la causa, por lo que no debe asumirse un rendimiento fiable en aritmética de varios pasos sin validación propia.
+- Idiomas: la model card no declara la lista de idiomas soportados; los benchmarks solo cubren inglés y coreano, y la calibración AWQ tuvo predominio de coreano, lo que puede sesgar la preservación de canales hacia ese idioma.
+- Contexto: no se especifica la longitud máxima de contexto en la información disponible, lo que impide planificar despliegues con secuencias largas sin consultar la model card del modelo base.
+- Licencia: Apache-2.0 permite uso comercial, pero conviene revisar la licencia del modelo base enlazada por el autor para confirmar condiciones adicionales.
+- Runtime: la arquitectura exige vLLM ≥ 0.17.0 y el checkpoint se guardó con compressed-tensors 0.19.0 mientras que vLLM 0.32.0 fija la 0.17.0; actualizar esa dependencia por separado puede romper la carga.
+- Formato: al ser `pack-quantized` para vLLM, no es portable a otros motores de inferencia sin reconversión.
+- Madurez: el repositorio tiene 254 descargas y 1 like en el momento de la consulta, y la revisión de pesos es del 2 de noviembre de 2026; se trata de una publicación reciente con validación externa limitada.
+- Sesgos: no se han publicado análisis de sesgo en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-27B-AWQ-8bit
+- Repositorio Hugging Face: https://huggingface.co/axteam/Qwen3.5-27B-AWQ-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE
-- Listado de modelos con cuantización W4A16 en Hugging Face: https://huggingface.co/models?other=w4a16
-- Listado de modelos con cuantización INT4 en Hugging Face: https://huggingface.co/models?other=int4&p=2&sort=trending
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- vLLM: https://github.com/vllm-project/vllm
+- compressed-tensors: https://github.com/neuralmagic/compressed-tensors

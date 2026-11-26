@@ -2,109 +2,104 @@
 
 ## Resumen
 
-Qwen3-1.7B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2 es un modelo especialista multi-tarea derivado de Qwen3-1.7B, publicado por el usuario eduardoworrel. No es un modelo generativo de propósito general: es un clasificador con tres cabezas independientes montadas sobre el transformer base, una para ContractNLI (determinar si un NDA implica, contradice o no menciona una hipótesis), otra para CLINC150 (decidir si una consulta está dentro o fuera de dominio) y una tercera para la clasificación temática de SIB-200 en inglés y portugués. Cada tarea se resuelve en un único forward pass, devolviendo una opción tipada, una probabilidad y un margen de decisión.
+Qwen3-1.7B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2 es una especializacion multitarea del modelo base Qwen3-1.7B de Alibaba Cloud, publicada por el usuario eduardoworrel. Sobre el transformer de 1.700 millones de parametros se anaden tres cabezas de clasificacion independientes: ContractNLI (determinar si una hipotesis se deduce, se contradice o no se menciona en un contrato de confidencialidad), CLINC150 (decidir si una consulta esta dentro o fuera de dominio) y SIB-200 (clasificacion tematica en ingles y portugues). Cada cabeza resuelve su tarea en un unico forward pass, devolviendo una opcion tipada, una probabilidad y un margen de decision.
 
-El interés técnico reside en su empaquetado y en el patrón de inferencia que propone. Los pesos están exportados como grafo ONNX int4 para onnxruntime-genai con soporte WebGPU, lo que permite ejecutar el modelo íntegramente en el navegador con una descarga de 0,98 GB. Sobre esa base, el autor implementa un esquema System 1 / System 2: la cabeza clasificadora responde en una sola pasada y, solo cuando el margen cae por debajo de un umbral calibrado, se escala a una generación completa con el modelo base para justificar la decisión.
+El modelo se distribuye como grafo ONNX cuantizado a int4 para onnxruntime-genai, pensado para ejecutarse en el navegador mediante WebGPU con la libreria s1s2 del mismo autor. Esta orientado a un patron de inferencia en dos niveles: un "System 1" rapido que responde con la cabeza de clasificacion y un "System 2" opcional que invoca generacion de texto cuando el margen de confianza es bajo, escalando solo los casos dudosos.
 
-El modelo es relevante como ejemplo de despliegue de clasificadores especializados de bajo coste sobre LLM pequeños cuantizados, con aplicaciones directas en filtrado de consultas, revisión contractual asistida y etiquetado temático multilingüe. Su licencia CC BY-SA 4.0, heredada de SIB-200, condiciona el uso comercial.
+Es relevante por su enfoque practico: empaqueta tareas de clasificacion juridica y de dominio en un unico modelo pequeno (0,98 GB de descarga) ejecutable en cliente, sin servidor GPU, con decisiones calibradas y trazabilidad del margen. La licencia es CC BY-SA 4.0 por herencia del dataset SIB-200.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3) con cabezas de clasificación por tarea (pointer/choice head) |
-| Parametros totales | 1,7 mil millones (modelo base Qwen3-1.7B) |
+| Arquitectura | Transformer decoder-only (Qwen3) con cabezas de clasificacion multitarea anadidas; grafo ONNX para onnxruntime-genai |
+| Parametros totales | 1.700 millones (modelo base Qwen3-1.7B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.048 tokens para ContractNLI; no disponible para el resto de tareas |
-| Tipos de cuantizacion | int4 (grafo ONNX) |
-| Idiomas soportados | inglés (en), portugués (pt) |
-| Licencia | CC BY-SA 4.0 |
-| Formato de pesos | ONNX (onnxruntime-genai), grafo int4 para WebGPU; adaptador LoRA y cabezas en PyTorch en repo separado |
+| Longitud de contexto | 2.048 tokens para entradas ContractNLI; no se especifica para el resto |
+| Tipos de cuantizacion | int4 (grafo onnxruntime-genai); existe build alternativo MLC q4f16_1 |
+| Idiomas soportados | en, pt |
+| Licencia | cc-by-sa-4.0 |
+| Formato de pesos | ONNX (onnxruntime-genai int4); variantes Transformers.js y MLC q4f16_1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer decoder-only de 1,7 mil millones de parámetros, y le añade cabezas de decisión específicas por tarea entrenadas mediante un adaptador LoRA (publicado en el repo eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-LoRA). La receta de la cabeza pointer y el procedimiento de entrenamiento siguen el proyecto Kev (Apache-2.0). Cada cabeza lee el prompt con un conjunto cerrado y exacto de palabras de opción (por ejemplo, "Entailment", "Contradiction", "Not mentioned" para ContractNLI) y emite una distribución sobre esas opciones en una única pasada, sin generación autorregresiva.
+El modelo parte de Qwen3-1.7B, un transformer decoder-only, y le superpone tres cabezas de clasificacion entrenadas de forma especifica: ContractNLI (3 clases: Entailment, Contradiction, Not mentioned), CLINC150 (2 clases: Yes/No para dentro/fuera de dominio) y SIB-200 (7 clases tematicas, con etiquetas en ingles y portugues). Cada cabeza lee el estado del modelo tras un unico forward pass y emite una distribucion de probabilidad sobre las opciones, de la que se derivan la eleccion y el margen. Las opciones de respuesta estan fijadas literalmente en el entrenamiento ("Entailment", "Contradiction", "Not mentioned"; "Yes"/"No"; las etiquetas tematicas en cada idioma), de modo que cambiar las palabras altera el prompt que lee la cabeza y rompe el comportamiento.
 
-El entrenamiento combina tres conjuntos de datos públicos: ContractNLI (Koreeda y Manning, 2021; CC BY 4.0), CLINC150 (Larson et al., 2019; CC BY 3.0) y SIB-200 (Adelani et al., 2024; CC BY-SA 4.0), este último para clasificación temática en inglés y portugués. No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO; el ajuste es supervisado sobre las cabezas. La innovación destacable es el esquema S1S2: decisión tipada en un forward pass (System 1) con escalado condicionado por margen a generación completa (System 2), más una cabeza de evidencia (heads/evidence_cnli/) que localiza los extremos del span relevante dentro del contrato, aunque la versión 0.1 de s1s2 todavía no la explota.
+Los datos de entrenamiento provienen de tres conjuntos publicos: ContractNLI (Koreeda y Manning, 2021; CC BY 4.0), CLINC150 (Larson et al., 2019; CC BY 3.0) y SIB-200 (Adelani et al., 2024; CC BY-SA 4.0). No se detalla en la informacion disponible el numero de tokens ni si hubo RLHF o DPO; el entrenamiento es de adaptacion supervisada de las cabezas sobre el modelo base cuantizado. La innovacion principal es el esquema S1S2: una pasada de clasificacion barata con umbral de margen calibrable sobre datos propios, que escala a generacion de texto ("System 2") solo cuando la confianza es baja, manteniendo la respuesta tipada original. Incluye tambien una cabeza de evidencia (`heads/evidence_cnli/`) que selecciona el fragmento del contrato que sustenta la decision, aunque la version 0.1 de s1s2 aun no la explota directamente.
 
 ## Capacidades
 
-- Clasificación de relación contractual (ContractNLI): decide si un fragmento de NDA implica, contradice o no menciona una hipótesis dada, devolviendo opción, probabilidad y margen.
-- Detección de consultas fuera de dominio (CLINC150): clasificación binaria dentro/fuera de alcance para enrutado de consultas.
-- Clasificación temática multilingüe (SIB-200): siete categorías (ciencia/tecnología, viaje, política, deportes, salud, entretenimiento, geografía) en inglés y portugués.
-- Decisión en un único forward pass con salida tipada (System 1), sin generación de texto.
-- Escalado a generación (System 2) con umbral de margen calibrable sobre datos propios etiquetados, manteniendo la respuesta tipada original.
-- Generación de texto breve para justificar decisiones (por ejemplo, explicación en una frase con maxNewTokens=64).
-- Ejecución en navegador mediante WebGPU a través de la librería s1s2.
-- Localización de evidencia en el contrato mediante la cabeza auxiliar de spans (no integrada aún en s1s2 0.1).
-- No soporta tool calling, function calling ni razonamiento multi-paso general; sus capacidades están acotadas a las tres tareas entrenadas.
+- Clasificacion de implicacion en contratos NDA (ContractNLI): decide si una hipotesis se deduce, se contradice o no se menciona, con probabilidad y margen.
+- Deteccion de consultas fuera de dominio (CLINC150) en formato binario dentro/fuera de alcance.
+- Clasificacion tematica SIB-200 en ingles y portugues (ciencia/tecnologia, viaje, politica, deportes, salud, entretenimiento, geografia).
+- Generacion de texto bajo demanda como "System 2" para explicar o razonar sobre una decision (heredada del modelo base Qwen3-1.7B).
+- Escalado por umbral de margen: politica configurable que deriva respuestas de baja confianza a generacion.
+- Salida tipada estructurada (opcion, confianza, margen, ruta de decision) apta para pipelines automatizados.
+- Capacidad multilingue limitada a ingles y portugues para las tareas especializadas.
+- Ejecucion en navegador con WebGPU y fallback a CPU via onnxruntime-web WASM.
 
 ## Casos de uso
 
-- Triaje de consultas en atención al cliente: la cabeza CLINC150 clasifica en una sola pasada si una consulta entrante está dentro del dominio cubierto por el bot; las consultas fuera de alcance se derivan a un agente humano, reduciendo coste frente a invocar un LLM generativo por cada mensaje.
-- Revisión asistida de NDAs: la cabeza ContractNLI evalúa hipótesis concretas ("la parte receptora debe destruir la información confidencial al terminar el acuerdo") sobre contratos de hasta 2.048 tokens y devuelve entailment, contradicción o no mención con probabilidad y margen, útil como primera pasada en herramientas de legal tech.
-- Filtrado previo en pipelines RAG: clasificar la consulta del usuario antes de recuperar documentos evita búsquedas innecesarias cuando la pregunta queda fuera del corpus cubierto, con latencia de un forward pass.
-- Etiquetado temático de noticias y contenidos en inglés y portugués: la cabeza SIB-200 asigna una de siete categorías por documento, adecuada para enrutado editorial o construcción de datasets anotados a bajo coste.
-- Ejecución en el navegador para privacidad de datos: al correr con WebGPU y onnxruntime-genai, el texto del contrato o de la consulta no abandona el dispositivo del usuario, lo que facilita el cumplimiento en entornos con requisitos estrictos de residencia de datos.
-- Enrutado con escalado selectivo: en producción, las decisiones con margen alto se aceptan directamente (System 1) y solo el 15 % de menor margen se escala a generación con el modelo base, equilibrando coste y precisión con un umbral calibrado sobre datos de desarrollo propios.
-- Clasificación de intenciones en asistentes de voz o chat embebidos: el grafo int4 de 0,98 GB cabe en dispositivos con WebGPU y permite clasificación local sin backend.
+- Revision automatizada de NDA en navegador: dado un contrato de confidencialidad y una hipotesis concreta (por ejemplo, obligacion de destruir informacion al terminar), el modelo devuelve Entailment/Contradiction/Not mentioned con probabilidad, sin enviar el documento a un servidor, lo que encaja con requisitos de privacidad juridica.
+- Triaje de consultas en atencion al cliente: CLINC150 permite decidir en un forward pass si una consulta entrante esta dentro del dominio soportado; las consultas fuera de alcance se derivan a un humano o a otro sistema, reduciendo falsos positivos en el enrutado.
+- Clasificacion tematica de articulos o tickets en ingles y portugues: SIB-200 asigna una de siete categorias con 88,1 % (en) y 84,8 % (pt) de balanced accuracy, util para etiquetado editorial o enrutado de soporte en mercados lusofonos.
+- Asistente juridico con explicabilidad: usando el patron S1S2, las decisiones de alto margen se responden de inmediato y las de bajo margen se escalan a generacion para producir una justificacion en una frase, manteniendo la respuesta tipada como fuente de verdad.
+- Despliegue en aplicaciones web sin backend GPU: el grafo int4 de 0,98 GB se carga en el navegador con WebGPU (por ejemplo, en un portatil con Apple M2 Pro), habilitando funciones de analisis de contratos o de dominio en herramientas SaaS sin coste de inferencia en servidor.
+- Filtrado previo en pipelines RAG o de agentes: CLINC150 y SIB-200 actuan como clasificadores rapidos que deciden si una consulta merece recuperacion o generacion, ahorrando llamadas a modelos mayores.
+- Calibracion y monitorizacion en produccion: el margen devuelto por cada cabeza permite definir umbrales sobre datos etiquetados propios (`thresholdFromQuantile`) y auditar la fiabilidad del clasificador antes de automatizar decisiones.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos por el autor sobre el grafo int4 con ONNX Runtime CPU (x86) en los splits de test oficiales, usando balanced accuracy de la cabeza de cada tarea:
+Resultados medidos sobre el grafo int4 con ONNX Runtime CPU (x86), en los splits de test oficiales, con balanced accuracy por cabeza:
 
-| Test set | Balanced accuracy (%) | Azar (%) | n |
-|---|---|---|---|
-| CLINC150 out-of-scope | 88,2 | 50 | 2.000 |
-| ContractNLI | 67,5 | 33,3 | 1.190 |
-| SIB-200 inglés | 88,1 | 14,3 | 204 |
-| SIB-200 portugués | 84,8 | 14,3 | 204 |
+| Conjunto de test | Balanced accuracy (%) | Azar (%) |
+|---|---|---|
+| CLINC150 fuera de dominio (n = 2.000) | 88,2 | 50 |
+| ContractNLI (n = 1.190) | 67,5 | 33,3 |
+| SIB-200 ingles (n = 204) | 88,1 | 14,3 |
+| SIB-200 portugues (n = 204) | 84,8 | 14,3 |
 
-En navegador (Chrome, WebGPU, Apple M2 Pro) sobre el split de desarrollo: CLINC150 91,6 y ContractNLI 64,2. El autor indica que la prueba en navegador sobre test no se ha realizado todavía.
+En navegador (Chrome, WebGPU, Apple M2 Pro) sobre el split de desarrollo: CLINC150 91,6 / ContractNLI 64,2. Los registros de fidelidad frente al modelo bf16 en PyTorch (n = 992 items de desarrollo) muestran la misma decision en el 90,6 % de los casos con lectura por cabeza (intervalo del 95 %: 88,7 a 92,3) y en el 84,2 % con lectura por logits. Las cabezas SIB-200 no tienen medicion de fidelidad por falta de salidas de referencia en desarrollo.
 
 ## Requisitos de hardware
 
-- Descarga del grafo int4: 0,98 GB; tamaño del repositorio completo: 1,0 GB.
-- Inferencia en CPU x86 mediante ONNX Runtime sin GPU dedicada (configuración usada para los benchmarks publicados).
-- Ejecución en navegador con WebGPU; probado en Chrome sobre Apple M2 Pro (GPU integrada).
-- VRAM estimada: no disponible de forma explícita; por el tamaño del grafo int4 (0,98 GB) más buffers de activación, cabe holgadamente en GPUs de consumo con 4-8 GB, aunque el autor no publica cifras.
-- GPUs recomendadas: no disponible; el diseño apunta a WebGPU y CPU, no a aceleradores de datacenter.
-- Opciones de despliegue: onnxruntime-genai (formato nativo del repo), librería s1s2 (npm, github.com/eduardoworrel/s1s2) para navegador; el adaptador LoRA en PyTorch está en repo separado, pero no se documenta un camino de despliegue con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; solo se reporta que cada decisión System 1 requiere un único forward pass.
+- Descarga del grafo int4: 0,98 GB; el repositorio completo ocupa 1,0 GB.
+- Inferencia en navegador con WebGPU (probado en Chrome sobre Apple M2 Pro); no requiere GPU dedicada en servidor.
+- Fallback a CPU en navegador via onnxruntime-web WASM: 15,0 veces mas lento que WebGPU en CLINC150, con decisiones identicas en 118 de 120 items; las entradas largas de ContractNLI tardan unos 43 s por decision en CPU (120 items no completaron en 2 horas).
+- GPU de servidor: no se especifican requisitos de VRAM; el modelo base Qwen3-1.7B en bf16 requiere del orden de 3,4 GB de VRAM para pesos, pero esta cifra no esta confirmada en la informacion disponible para este build.
+- Despliegue: onnxruntime-genai (WebGPU y WASM) mediante la libreria s1s2; existe variante Transformers.js y build MLC q4f16_1 como formatos alternativos.
+- Latencia y throughput: no disponibles salvo la comparativa relativa WebGPU frente a CPU indicada arriba.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Formato |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-1.7B + cabezas) | 1,7 B | 2.048 (ContractNLI) | Clasificación multi-tarea (ContractNLI, CLINC150, SIB-200) | CC BY-SA 4.0 | ONNX int4 |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | no disponible en la información | Generación general | Apache-2.0 | safetensors |
-| eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-LoRA | 1,7 B | no disponible | Mismas tareas con adaptador y cabezas | no disponible en la información | PyTorch (LoRA) |
-| aliasrobotics/alias3-web (precursor citado) | no disponible | no disponible | Clasificación en navegador (Browser Immune System) | no disponible | no disponible |
+| Qwen3-1.7B-ContractNLI-CLINC-SIB (este) | 1.700 M | 2.048 (ContractNLI) | Clasificacion multitarea + generacion | CC BY-SA 4.0 | ONNX int4, Transformers.js, MLC |
+| Qwen/Qwen3-1.7B (base) | 1.700 M | no disponible en la informacion | Generacion de texto general | Apache-2.0 | safetensors, GGUF, etc. |
+| Variante LoRA del mismo autor (Qwen3-1.7B-ContractNLI-CLINC-SIB-LoRA) | 1.700 M + adaptador | no disponible | Mismas tareas en PyTorch | no disponible en la informacion | adaptador PyTorch + cabezas |
 
-No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada para establecer una comparación cuantitativa de rendimiento.
+No se dispone de datos de benchmarks comparativos con otros modelos de clasificacion juridica o de dominio en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- ContractNLI solo procesa NDAs de hasta 2.048 tokens; contratos más largos requieren truncado o segmentación.
-- CLINC150 se reformula como clasificación binaria dentro/fuera de alcance, no como clasificación de las 150 intenciones originales.
-- Las etiquetas de SIB-200 en portugués se proyectan desde el inglés, lo que puede introducir sesgo de traducción en esa lengua.
-- Las cabezas solo funcionan con las palabras de opción exactas del entrenamiento; cualquier variación en el prompt cambia la entrada que lee la cabeza y rompe la predicción.
-- El umbral de escalado a System 2 debe calibrarse sobre datos propios etiquetados; el valor por defecto no está validado para dominios distintos.
-- La cabeza de evidencia (heads/evidence_cnli/) no está integrada en s1s2 0.1, por lo que la localización de spans no está disponible en el flujo estándar.
-- La prueba en navegador solo se ha hecho sobre el split de desarrollo, no sobre test; el rendimiento real en WebGPU puede diferir del reportado en CPU.
-- Licencia CC BY-SA 4.0 con cláusula ShareAlike: obliga a compartir bajo la misma licencia las obras derivadas, lo que puede ser incompatible con productos propietarios; requiere mantener la atribución a ContractNLI, CLINC150, SIB-200 y al modelo base.
-- No se documentan evaluaciones de sesgo, robustez adversarial ni tasas de alucinación en la generación de justificaciones (System 2).
-- El modelo no es un generador de propósito general; usarlo fuera de las tres tareas entrenadas no está validado.
+- ContractNLI solo admite NDA de hasta 2.048 tokens; documentos mas largos quedan truncados o fuera de alcance.
+- CLINC150 esta planteado como clasificacion binaria dentro/fuera de dominio, no como clasificador de intenciones completo.
+- Las etiquetas portuguesas de SIB-200 se proyectan desde el ingles, lo que puede introducir sesgo de traduccion.
+- Las opciones de respuesta estan fijadas literalmente; usar otras palabras en el prompt rompe el comportamiento de las cabezas.
+- La fidelidad frente al modelo bf16 es del 90,6 % (lectura por cabeza) y del 84,2 % (logits) en desarrollo: hay un 10-16 % de divergencia respecto a la referencia en servidor.
+- La cabeza de evidencia existe pero s1s2 0.1 no la explota; la explicabilidad se limita a la justificacion generada en System 2.
+- Riesgo de alucinacion en el modo de generacion (System 2), ya que hereda el comportamiento del modelo base; la respuesta tipada debe prevalecer.
+- Licencia CC BY-SA 4.0 (ShareAlike) por herencia de SIB-200: obliga a compartir bajo la misma licencia las obras derivadas, lo que puede condicionar el uso comercial propietario.
+- No se han publicado mediciones de sesgo ni evaluaciones de robustez frente a entradas adversariales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2
-- Adaptador LoRA y cabezas en PyTorch: https://huggingface.co/eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-LoRA
+- Variante LoRA en PyTorch: https://huggingface.co/eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-LoRA
+- Variante Transformers.js: https://huggingface.co/eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2
+- Variante MLC q4f16_1: https://huggingface.co/eduardoworrel/Qwen3-1.7B-ContractNLI-CLINC-SIB-MLC-q4f16_1-S1S2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Librería s1s2: https://github.com/eduardoworrel/s1s2
+- Libreria s1s2: https://github.com/eduardoworrel/s1s2
 - Dataset ContractNLI: https://stanfordnlp.github.io/contract-nli/
 - Dataset CLINC150: https://github.com/clinc/oos-eval
 - Dataset SIB-200: https://huggingface.co/datasets/Davlan/sib200
-- Receta de la cabeza pointer (Kev): https://github.com/jaredpalmer/kev
-- Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
-- Paper Browser Immune System: https://arxiv.org/abs/2611.15302

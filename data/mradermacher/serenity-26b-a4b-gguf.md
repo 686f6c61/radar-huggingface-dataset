@@ -2,84 +2,95 @@
 
 ## Resumen
 
-Serenity-26B-A4B es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 26 000 millones de parámetros totales y 4 000 millones activos, desarrollado por ReadyArt y cuantizado a formato GGUF por mradermacher. Está basado en la arquitectura Gemma-4 y está diseñado específicamente para tareas de roleplay, conversación y generación de texto instructivo, con un enfoque en contenido no alineado (sin restricciones de seguridad) y soporte para contenido adulto explícito. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para desarrolladores que buscan un modelo flexible y desplegable localmente.
+Serenity-26B-A4B-GGUF es la distribucion en formato GGUF del modelo Serenity-26B-A4B, publicado por el usuario mradermacher a partir de los pesos originales de ReadyArt. Se trata de un modelo afinado para roleplay y conversacion instructiva, orientado a contenido adulto y "unaligned", con un total de 25.233.142.046 parametros (aproximadamente 25,2 mil millones) y una nomenclatura "A4B" que sugiere una arquitectura de mezcla de expertos con unos 4 mil millones de parametros activos por token, aunque el autor no documenta explicitamente la configuracion MoE.
 
-La relevancia de este modelo radica en su combinación de eficiencia (solo 4B activos) y capacidad de generación creativa, junto con la disponibilidad de múltiples cuantizaciones GGUF que permiten ejecutarlo en hardware de consumo. Además, incluye archivos multimodales (mmproj) que sugieren capacidades de visión, aunque no se detallan en la documentación. Es una opción popular para aplicaciones de roleplay y generación de narrativa sin censura, aunque su naturaleza no alineada implica riesgos de contenido inapropiado.
+El modelo se etiqueta como basado en "gemma-4", lo que lo situa en la estela de la familia Gemma de Google, si bien no se aporta verificacion tecnica de esa ascendencia ni detalles sobre el proceso de entrenamiento o afinado. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque el contenido para adultos y las etiquetas "unaligned" y "nsfw" condicionan fuertemente su aplicacion practica.
+
+La relevancia de esta ficha es doble: por un lado, documenta una de las pocas cuantizaciones disponibles de un modelo de roleplay de ~25B con posible arquitectura MoE; por otro, advierte de que la informacion tecnica publicada es muy escasa (sin benchmarks, sin model card detallada del autor original y sin especificaciones de contexto), por lo que cualquier evaluacion debe hacerse empiricamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en Gemma-4 |
-| Parametros totales | 25 233 142 046 (25,2B) |
-| Parametros activos | 4 000 millones (4B) |
+| Arquitectura | Transformer con posible mezcla de expertos (MoE), segun la nomenclatura "A4B"; no confirmado en la informacion disponible |
+| Parametros totales | 25.233.142.046 (~25,2B) |
+| Parametros activos | ~4B (inferido de "A4B"; no confirmado) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | ingles (en) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (con ficheros mmproj separados para el componente multimodal) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, ReadyArt/Serenity-26B-A4B, emplea una arquitectura de mezcla de expertos (MoE) con 26 000 millones de parámetros totales, de los cuales solo 4 000 millones se activan por token, lo que reduce significativamente el coste computacional en inferencia. Está construido sobre la familia Gemma-4 de Google, que utiliza un transformer estándar con atención de múltiples cabezas y capas de normalización. No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. Dado que el modelo se describe como "unaligned" (no alineado), es probable que no haya pasado por procesos de refuerzo con preferencias humanas, lo que explica su capacidad para generar contenido sin restricciones.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta "gemma-4" y la nomenclatura "A4B", que en la convencion habitual de modelos MoE indica aproximadamente 4 mil millones de parametros activos sobre un total de 25,2 mil millones. No se especifica el numero de expertos, el mecanismo de enrutamiento ni la dimension de las capas. Tampoco se documenta la longitud de contexto nativa, aunque la presencia de ficheros `mmproj` sugiere un componente multimodal (vision) heredado del modelo base.
 
-La cuantización GGUF realizada por mradermacher incluye versiones estáticas (sin imatrix) y una variante con imatrix en un repositorio separado. Los archivos mmproj sugieren que el modelo puede procesar entradas multimodales (imagen y texto), aunque no se especifica el tipo de vision encoder utilizado. La ausencia de datos sobre el contexto máximo y el entrenamiento limita la evaluación técnica, pero la arquitectura MoE es adecuada para despliegues eficientes en hardware con VRAM limitada.
+No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o afinado supervisado. El modelo original de ReadyArt se presenta como un afinado orientado a roleplay conversacional y contenido adulto, con etiquetas que lo describen como "unaligned" y "mature"; el trabajo de mradermacher consiste unicamente en la conversion a GGUF y la generacion de cuantizaciones estaticas (sin imatrix, que se ofrecen en un repositorio aparte).
 
 ## Capacidades
 
-- Generacion de texto creativo y narrativo, especialmente optimizado para roleplay y conversacion.
-- Soporte de instrucciones (instruct) para tareas de seguimiento de comandos.
-- Capacidad multimodal (vision) gracias a los archivos mmproj, aunque no se detalla su alcance.
-- Generacion de contenido adulto y explicito sin restricciones de seguridad (modelo no alineado).
-- Conversacion multi-turno con contexto largo (longitud no especificada).
-- No se menciona soporte explicito para tool calling o function calling.
-- No se mencionan capacidades de razonamiento avanzado o agentes.
+- Generacion de texto conversacional multi-turno, con enfasis en roleplay y narrativa interactiva.
+- Modo instructivo para seguir instrucciones en ingles.
+- Componente multimodal: los ficheros `mmproj-f16` y `mmproj-Q8_0` indican soporte de entrada de imagenes en el modelo base (no verificado en la cuantizacion).
+- Contenido para adultos y escenarios explicitos, segun las etiquetas del autor (nsfw, adult-content, explicit, erp).
+- Comportamiento "unaligned": menor rechazo a peticiones que otros modelos filtrarian, lo que implica menor seguridad por defecto.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: solo ingles declarado.
 
 ## Casos de uso
 
-- Roleplay y juegos de rol interactivos: el modelo puede mantener personajes coherentes y dialogos fluidos en escenarios de fantasia o ciencia ficcion, gracias a su entrenamiento especifico para este tipo de tareas.
-- Generacion de narrativa erotica o adulta: su naturaleza no alineada permite crear contenido explicito sin filtros, util para escritores o plataformas de ficcion para adultos.
-- Asistente conversacional personalizado: puede integrarse en chatbots locales para conversaciones informales o de soporte, aprovechando su capacidad de generar respuestas naturales y variadas.
-- Creacion de contenido creativo (cuentos, poemas, guiones): su habilidad para seguir instrucciones y generar texto coherente lo hace adecuado para herramientas de escritura asistida.
-- Prototipado de aplicaciones de IA generativa: al ser ligero (4B activos) y con licencia Apache 2.0, es ideal para pruebas de concepto en entornos de desarrollo sin coste de licencia.
-- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar el modelo en GPUs de consumo (8-12 GB VRAM), habilitando aplicaciones offline de generacion de texto.
+- Roleplay conversacional de larga duracion: el modelo esta afinado especificamente para mantener personajes y coherencia narrativa en sesiones multi-turno, con cuantizaciones Q4_K_M o Q5_K_M que caben en GPUs de consumo.
+- Escritura creativa para adultos: generacion de ficcion explicita y narrativa madura, aprovechando el afinado "unaligned" que evita rechazos moralizantes.
+- Prototipado de chatbots de personaje en local: con llama.cpp u Ollama y una cuantizacion Q4_K_S (15,6 GB) se puede desplegar en una RTX 4090 o en un Mac con memoria unificada de 24 GB o mas.
+- Investigacion sobre alineamiento y seguridad: el modelo sirve como caso de estudio de un sistema deliberadamente "unaligned", util para medir tasas de cumplimiento de peticiones daninas en entornos controlados.
+- Evaluacion de tecnicas de cuantizacion: el repositorio ofrece 11 variantes de cuantizacion del mismo modelo, lo que permite comparar degradacion de calidad (perplejidad, coherencia) entre Q2_K y Q8_0 sobre una misma base.
+- Generacion de dialogos sinteticos para entrenamiento: util para producir corpus conversacionales en ingles con estilo roleplay, siempre que se filtre el contenido generado antes de reutilizarlo.
+- Experimentacion multimodal en local: cargando el fichero `mmproj` junto con el GGUF se puede probar entrada de imagenes en un entorno de escritorio sin dependencias de API.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun la cuantizacion, desde 10,7 GB (Q2_K) hasta 27 GB (Q8_0). Para uso practico, se recomienda al menos 12 GB de VRAM con Q4_K_M (16,9 GB) o Q5_K_M (19,2 GB).
-- GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para cuantizaciones Q4/Q5, o A100/H100 (40-80 GB) para Q8_0 o despliegues de alta concurrencia.
-- En consumer GPU: si, con cuantizaciones Q4_K_S o Q4_K_M en GPUs de 16-24 GB (por ejemplo, RTX 4080, RTX 4090). Para GPUs de 8 GB, solo Q2_K o Q3_K_S con calidad reducida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o servidores de inferencia como vLLM (si se convierte a formato compatible). Los archivos GGUF son directamente utilizables con llama.cpp y sus derivados.
-- Latencia y throughput: no disponible, pero al ser un modelo MoE con solo 4B activos, la velocidad de generacion es significativamente mayor que un modelo denso de 26B, estimandose entre 20-40 tokens/segundo en una RTX 4090 con Q4_K_M (dependiendo de la implementacion).
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q2_K ~11-12 GB; Q3_K_M ~14-15 GB; IQ4_XS ~15-16 GB; Q4_K_M ~18-19 GB; Q5_K_M ~20-21 GB; Q6_K ~24-25 GB; Q8_0 ~28-29 GB.
+- Ficheros `mmproj` anaden 0,9 GB (Q8_0) o 1,3 GB (f16) si se usa el componente multimodal.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para las mismas; A100 40 GB o H100 para Q8_0 con contexto largo; multiples GPUs para Q6_K/Q8_0 con ventanas amplias.
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 (16 GB, solo Q2_K/Q3_K_S) y en equipos Apple Silicon con 24-32 GB de memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa para este formato.
+- Latencia y throughput estimados: no disponibles; al tratarse de un posible MoE con ~4B activos, el throughput deberia ser superior al de un denso de 25B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Serenity-26B-A4B (este) | 25,2B | 4B | no disponible | Apache 2.0 | GGUF |
-| Gemma-4-26B-A4B-it (base) | 25,2B | 4B | no disponible | Apache 2.0 | safetensors |
-| Mixtral-8x7B | 46,7B | 12,9B | 32k | Apache 2.0 | safetensors/GGUF |
-| Qwen2.5-14B | 14,8B | 14,8B | 32k | Apache 2.0 | safetensors/GGUF |
+| Serenity-26B-A4B-GGUF | ~25,2B totales / ~4B activos (inferido) | no disponible | Apache 2.0 | GGUF | Roleplay adulto, unaligned, multimodal |
+| ReadyArt/Serenity-26B-A4B | ~25,2B totales / ~4B activos (inferido) | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| mradermacher/Serenity-26B-A4B-i1-GGUF | ~25,2B totales / ~4B activos (inferido) | no disponible | Apache 2.0 | GGUF (imatrix) | Variante con cuantizacion ponderada, mayor calidad por bit |
+| Gemma 2 27B (referencia de familia) | 27B densos | 8K | Gemma license | safetensors, GGUF | Modelo generalista de Google, no especializado en roleplay |
 
-La comparativa se basa en modelos MoE o densos de tamano similar. Serenity-26B-A4B se distingue por su enfoque en roleplay y contenido no alineado, mientras que Mixtral y Qwen ofrecen mejor documentacion y soporte de herramientas. No se dispone de datos de rendimiento comparativo.
+La comparacion con modelos de roleplay de tamano similar (por ejemplo, variantes de Mistral o Llama afinadas) no puede establecerse con rigor porque no hay benchmarks publicados para Serenity-26B-A4B.
 
 ## Limitaciones y advertencias
 
-- Modelo no alineado: puede generar contenido ofensivo, violento, sexualmente explicito o perjudicial sin filtros. No es adecuado para aplicaciones publicas sin moderacion.
-- Sesgos desconocidos: al no tener informacion sobre el dataset de entrenamiento, no se pueden evaluar sesgos de genero, raza o ideologicos.
-- Riesgo de alucinacion: como todo LLM, puede inventar hechos o informacion falsa, especialmente en contextos largos.
-- Idioma limitado: solo soporta ingles, lo que restringe su uso en entornos multilingues.
-- Longitud de contexto no documentada: se desconoce el maximo de tokens que puede procesar, lo que puede causar fallos en conversaciones muy largas.
-- Restricciones de licencia: aunque Apache 2.0 permite uso comercial, el contenido generado puede violar politicas de plataformas o leyes locales si se distribuye.
-- Calidad de cuantizacion: las versiones Q2_K y Q3_K pueden degradar significativamente la coherencia y el rendimiento; se recomienda Q4_K_M o superior para produccion.
+- Contenido para adultos: el modelo esta afinado para material explicito y "nsfw"; no es adecuado para aplicaciones dirigidas al publico general ni para entornos sin control de edad.
+- Comportamiento "unaligned": menor rechazo a peticiones sensibles, lo que incrementa el riesgo de generar contenido danino, ilegal o eticamente problematico sin las salvaguardas habituales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; en tareas de conocimiento especializado no debe confiarse en sus respuestas sin verificacion.
+- Solo ingles declarado: no hay soporte documentado de otros idiomas, incluido el castellano.
+- Longitud de contexto desconocida: no se puede garantizar el rendimiento en conversaciones muy largas ni en tareas de recuperacion sobre documentos extensos.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas locales sobre material adulto; la responsabilidad recae en el desplegador.
+- Procedencia tecnica no verificada: la etiqueta "gemma-4" no va acompanada de documentacion que confirme la arquitectura ni los datos de entrenamiento.
+- Repositorio con muy poca traccion (245 descargas, 1 like): no hay comunidad que haya validado el modelo ni reportado fallos.
+- El componente multimodal requiere cargar ficheros `mmproj` adicionales y no esta verificado que funcione correctamente en todas las cuantizaciones.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF
-- Modelo base: https://huggingface.co/ReadyArt/Serenity-26B-A4B
-- Repositorio con imatrix: https://huggingface.co/mradermacher/Serenity-26B-A4B-i1-GGUF
-- Guia de cuantizacion (referencia): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF
+- Modelo base original: https://huggingface.co/ReadyArt/Serenity-26B-A4B
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Serenity-26B-A4B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Serenity-26B-A4B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests

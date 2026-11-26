@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "id": "ChatLPO/qwen36-35b-a3b-travel-latam-mixed-qlora",
+  "slug": "chatlpo-qwen36-35b-a3b-travel-latam-mixed-qlora",
+  "author": "ChatLPO",
+  "url": "https://huggingface.co/ChatLPO/qwen36-35b-a3b-travel-latam-mixed-qlora",
+  "created_at": "2026-11-25T04:49:10.000Z",
+  "updated_at": "2026-11-25T04:57:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.6",
+    "moe",
+    "travel",
+    "latam",
+    "spanish",
+    "portuguese",
+    "qlora",
+    "sft",
+    "fp8",
+    "lautum",
+    "classmind",
+    "text-generation",
+    "conversational",
+    "es",
+    "pt",
+    "en",
+    "dataset:latam-gpt/LatamGPT-Corpus-1.0",
+    "dataset:osunlp/TravelPlanner",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 39336168227,
+  "storage_human": "39.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multilingual LATAM Travel Planning & Constraint Satisfaction (es-419 / pt-BR / en)",
+      "dataset": "Lautum-Travel-LATAM-Holdout (12 multi-constraint scenarios)",
+      "metric": "Constraint Satisfaction (%)",
+      "value": 76.39
+    },
+    {
+      "task": "Multi-Step Travel Budget & Arithmetic Retention",
+      "dataset": "Lautum-BudgetMath-GSM8K-Protocol (8 problems)",
+      "metric": "Exact Match (%)",
+      "value": 50
+    },
+    {
+      "task": "Agentic Travel Tool-Calling & Structured JSON Schema Compliance",
+      "dataset": "Lautum-ToolSchema-Travel (8 schemas, unguided)",
+      "metric": "Schema & IATA Accuracy (%)",
+      "value": 62.5
+    },
+    {
+      "task": "Verifiable Format & Instruction-Following Retention (Unguided)",
+      "dataset": "Lautum-IFEval-Protocol (6 strict constraints)",
+      "metric": "Strict Prompt Accuracy (%)",
+      "value": 33.33
+    },
+    {
+      "task": "Ungrounded Abstention & Indirect RAG Prompt-Injection Defense",
+      "dataset": "Lautum-Travel-Safety-RedTeam (8 adversarial & abstention probes)",
+      "metric": "Safety & Grounding Pass Rate (%)",
+      "value": 62.5
+    }
+  ],
+  "sources": []
+}

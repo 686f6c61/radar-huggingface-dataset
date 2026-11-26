@@ -2,95 +2,107 @@
 
 ## Resumen
 
-El modelo `scholzmx/parakeet-tdt-0.6b-v3-gguf` es una colección de archivos GGUF cuantizados del modelo de reconocimiento automático de voz (ASR) `nvidia/parakeet-tdt-0.6b-v3`, desarrollado por NVIDIA. Este modelo base emplea una arquitectura FastConformer combinada con un transductor TDT (Time-Delayed Transformer) y está diseñado para el reconocimiento de voz multilingüe en 25 idiomas europeos, incluyendo español, inglés, alemán, francés e italiano, entre otros.
+Parakeet-tdt-0.6b-v3-gguf es una colección de cuantizaciones GGUF calibradas del modelo de reconocimiento automático del habla nvidia/parakeet-tdt-0.6b-v3, publicada por el usuario scholzmx. El modelo base, desarrollado por NVIDIA, emplea una arquitectura FastConformer con transductor TDT (Token-and-Duration Transducer) y está orientado a transcripción multilingüe en 25 idiomas europeos. Esta versión GGUF no es un modelo nuevo, sino una reempaquetadura optimizada para inferencia local y en dispositivos de recursos limitados.
 
-La relevancia de esta versión cuantizada radica en que permite ejecutar un modelo ASR de alta calidad en hardware con recursos limitados, reduciendo el tamaño del modelo de aproximadamente 2,5 GB (en precisión f32) a tamaños que van desde los 906 MB (Q8_0) hasta los 325 MB (IQ2_XXS). El autor, scholzmx, ha aplicado un proceso de cuantización calibrada utilizando una matriz de importancia (imatrix) recopilada sobre audio real de los 25 idiomas soportados, lo que minimiza la pérdida de precisión en los niveles de cuantización más altos.
+La relevancia de esta ficha radica en que el autor no se limita a convertir pesos: aplica una matriz de importancia (importance matrix) recogida sobre audio real en los 25 idiomas soportados y valida cada nivel de cuantización mediante WER con intervalos de confianza bootstrap. El resultado es un conjunto de ficheros que van desde 906 MB (Q8_0) hasta 325 MB (IQ2_XXS), con evidencia medida de que los niveles iguales o superiores a Q4 son indistinguibles del modelo en f32 sobre audio limpio y con ruido a 5 dB.
 
-Estos archivos GGUF siguen el contrato de tensores de Starling y requieren el motor de inferencia `starling-serve` o la librería `libstarling_ggml` para su ejecución. No son compatibles con llama.cpp, whisper.cpp o parakeet.cpp. La licencia del modelo base es CC-BY-4.0, lo que permite su uso comercial con atribución.
+Un detalle crítico es que estos GGUF siguen el contrato de tensores del motor Starling y no son compatibles con llama.cpp, whisper.cpp ni parakeet.cpp. Se ejecutan mediante el binario starling-serve o la librería libstarling_ggml. El modelo base cuenta con 627.090.582 parámetros y licencia CC-BY-4.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer + TDT transducer |
+| Arquitectura | FastConformer + transductor TDT (Token-and-Duration Transducer) |
 | Parametros totales | 627.090.582 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, Q3_K_M, Q2_K, IQ2_XXS |
-| Idiomas soportados | en, de, fr, es, it, nl, pl, pt, ru, uk, sv, da, fi, cs, sk, sl, hr, bg, el, hu, ro, et, lv, lt, mt |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | GGUF (Starling tensor contract) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, Q3_K_M, Q2_K, Q4_0 (q4pw), IQ2_XXS |
+| Idiomas soportados | en, de, fr, es, it, nl, pl, pt, ru, uk, sv, da, fi, cs, sk, sl, hr, bg, el, hu, ro, et, lv, lt, mt (25 idiomas europeos) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | GGUF (contrato de tensores Starling; no compatible con llama.cpp/whisper.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `nvidia/parakeet-tdt-0.6b-v3` utiliza una arquitectura FastConformer, una variante eficiente del conformer optimizada para velocidad, combinada con un decodificador transductor TDT. Esta combinación es especialmente adecuada para tareas de ASR en streaming y no streaming, ofreciendo un buen equilibrio entre latencia y precisión.
+El modelo base es un FastConformer con cabecera transductora TDT, una variante que predice conjuntamente tokens y duraciones, lo que reduce el número de pasos de decodificación frente a un transductor convencional. El modelo original fue entrenado por NVIDIA; esta publicación no aporta detalles sobre el corpus de entrenamiento, el número de tokens ni si hubo etapas de ajuste fino supervisado o preferencias. Esa información debe consultarse en la model card de nvidia/parakeet-tdt-0.6b-v3.
 
-El proceso de cuantización aplicado por scholzmx utiliza la pipeline de cuantización de Starling, que implementa niveles de cuantización de bloques similares a los de llama.cpp (Q8_0 hasta IQ2). La característica distintiva es el uso de una matriz de importancia (imatrix) recopilada sobre audio real de FLEURS train, con 48 clips por idioma en 24 de los 25 idiomas soportados (el esloveno no estuvo disponible durante la recopilación). Esta matriz pondera las escalas de bloque durante la cuantización, lo que permite que los niveles Q4_K_M y superiores sean indistinguibles del modelo en f32 en términos de WER.
-
-Los lineales de la capa joint/LSTM de 640 filas se mantienen automáticamente en Q8_0 en todos los niveles de cuantización, siguiendo la regla de tamaño de bloque. El modelo base fue entrenado por NVIDIA, aunque los detalles específicos del entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) no se detallan en la información proporcionada.
+La innovación de esta versión GGUF reside en el pipeline de cuantización. El autor convierte los pesos a F32 y aplica cuantización por bloques al estilo llama.cpp, pero ponderando las escalas de bloque con una matriz de importancia recogida sobre el split de entrenamiento de FLEURS (48 clips por idioma, 24 de los 25 idiomas; el shard de esloveno no estaba disponible). La calibración se valida con WER e intervalos bootstrap. Entre los hallazgos medidos: las estadísticas de la matriz saturan con aproximadamente una docena de clips por idioma (cinco veces más audio cambió la matriz menos del 1 % y el WER nada), y la mezcla lingüística de calibración no es un factor medible para inglés y alemán una vez existe matriz. Lo que sí importa es calibrar frente a no calibrar: un Q2_K uniforme degrada a 30 % de WER en inglés y 17 % en alemán, mientras que el build calibrado iguala a f32. Los lineales de 640 filas del joint y del LSTM se mantienen automáticamente en Q8_0 en todos los niveles.
 
 ## Capacidades
 
-- Reconocimiento de voz automático (ASR) multilingüe en 25 idiomas europeos: inglés, alemán, francés, español, italiano, neerlandés, polaco, portugués, ruso, ucraniano, sueco, danés, finés, checo, eslovaco, esloveno, croata, búlgaro, griego, húngaro, rumano, estonio, letón, lituano y maltés.
-- Transcripción de audio a texto con alta precisión, verificada mediante WER (Word Error Rate) con intervalos de confianza bootstrap.
-- Soporte para audio limpio y con ruido (verificado con audio con ruido de 5 dB).
-- Múltiples niveles de cuantización que permiten adaptar el modelo a diferentes restricciones de memoria y requisitos de calidad.
-- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto, ya que es exclusivamente un modelo de ASR.
+- Reconocimiento automático del habla (ASR) en 25 idiomas europeos: inglés, alemán, francés, español, italiano, neerlandés, polaco, portugués, ruso, ucraniano, sueco, danés, finés, checo, eslovaco, esloveno, croata, búlgaro, griego, húngaro, rumano, estonio, letón, lituano y maltés.
+- Transcripción de audio con predicción conjunta de tokens y duraciones mediante el transductor TDT.
+- Inferencia en CPU y GPU mediante el motor Starling, con un motor Vulkan rápido para dispositivos móviles.
+- Compatibilidad de carga con GGUF de la comunidad en los dialectos cstr/parakeet.cpp y transcribe.cpp a través de la capa de compatibilidad del loader de Starling.
+- No se documentan capacidades de traducción, diarización de hablantes, tool calling ni razonamiento multi-paso; es un modelo exclusivamente ASR.
 
 ## Casos de uso
 
-- Transcripción de reuniones y videollamadas: el modelo puede transcribir conversaciones en tiempo real o de forma diferida en múltiples idiomas europeos, lo que resulta útil para herramientas de productividad empresarial y generación de actas automáticas.
-- Subtitulado automático de vídeos: su soporte multilingüe permite generar subtítulos para contenido audiovisual en 25 idiomas, reduciendo costes de producción y acelerando el flujo de trabajo.
-- Asistentes de voz y sistemas de dictado: el modelo puede integrarse en aplicaciones de dictado por voz para entornos médicos, legales o de desarrollo de software, con la ventaja de poder ejecutarse localmente en hardware modesto gracias a las versiones cuantizadas.
-- Análisis de llamadas de atención al cliente: las empresas pueden transcribir y analizar llamadas de soporte en varios idiomas para extraer métricas de calidad, detectar problemas recurrentes o entrenar modelos de análisis de sentimiento.
-- Accesibilidad para personas con discapacidad auditiva: la transcripción en tiempo real de conversaciones, clases o eventos públicos puede facilitar la inclusión de personas con problemas de audición en entornos educativos y laborales.
-- Procesamiento de archivos de audio en lote: su capacidad para ejecutarse en GPU o CPU con recursos limitados permite procesar grandes volúmenes de audio (podcasts, archivos de radio, entrevistas) de forma eficiente y económica.
+- Transcripción de reuniones y notas de voz en entornos multilingües: el modelo cubre 25 idiomas europeos y el fichero Q4_K_M de 704 MB mantiene la calidad de f32, lo que permite desplegarlo en servidores modestos para transcribir audio de equipos distribuidos.
+- Subtitulado automático de vídeo en producción: los niveles Q4 y superiores son indistinguibles de f32 en audio limpio y con ruido a 5 dB, de modo que se puede generar pistas de subtítulos sin pérdida medible de precisión.
+- Dictado y transcripción en aplicaciones móviles: el fichero q4pw de 364 MB está pensado para teléfonos; en un Pixel 10 Pro con motor Vulkan registra 2,06 s para un clip de 22 s y 6,91 s para uno de 74 s, con un RSS pico de 778 MB y aproximadamente un 15 % menos de energía por transcripción que el q4_k_m-shrink16.
+- Procesamiento por lotes de archivos de audio en pipelines de datos: el nivel Q2_K de 574 MB ofrece cobertura multilingüe uniforme (WER medio de 25 idiomas de 16,9 frente a 14,0 en f32) para tareas donde el coste de almacenamiento y memoria prima sobre la precisión máxima.
+- Transcripción en inglés con restricciones extremas de espacio: el fichero IQ2_XXS de 325 MB está indicado para despliegues English-first; su WER en inglés es de 8,39 % frente a 6,50 % en f32, mientras que la degradación se concentra en idiomas como lituano, letón, esloveno, maltés, húngaro y eslovaco.
+- Investigación en cuantización de modelos ASR: el repositorio incluye la receta de cuantización (parakeet-q4pw-fullimx.recipe) y la matriz de importancia (parakeet-full.imx), lo que permite reproducir los resultados y estudiar el efecto de la calibración sobre el WER.
+- Integración en herramientas de accesibilidad: la transcripción en tiempo real de audio en directo para personas con discapacidad auditiva puede ejecutarse localmente con los ficheros Q4, sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-La información proporcionada incluye resultados de WER (Word Error Rate) medidos en el conjunto de test de FLEURS, con intervalos de confianza bootstrap al 95%. Los datos comparan el modelo en f32 con varias versiones cuantizadas:
+Resultados de WER sobre el split de test de FLEURS (media [IC bootstrap del 95 %]):
 
-| Build | Aleman (WER) | Ingles (WER) |
-|---|---|---|
-| f32 (2508 MB) | 5.30 [4.48–6.14] | 6.50 [5.57–7.36] |
-| q4_k_m (704 MB) | 5.31 [4.49–6.16] | 6.41 [5.55–7.24] |
-| q2_k (574 MB) | 6.03 [5.19–6.91] | 6.36 [5.51–7.24] |
-| iq2_xxs + shrink16 (325 MB) | 9.38 [8.30–10.44] | 8.39 [7.34–9.36] |
+| Build | Tamaño | Alemán | Inglés |
+|---|---|---|---|
+| f32 | 2508 MB | 5,30 [4,48–6,14] | 6,50 [5,57–7,36] |
+| q4_k_m | 704 MB | 5,31 [4,49–6,16] | 6,41 [5,55–7,24] |
+| q2_k | 574 MB | 6,03 [5,19–6,91] | 6,36 [5,51–7,24] |
+| iq2_xxs + shrink16 | 325 MB | 9,38 [8,30–10,44] | 8,39 [7,34–9,36] |
 
-La media de WER en 25 idiomas es: f32 14.0, q2_k 16.9 e iq2_xxs 26.4 (48 clips por idioma). La degradación en iq2_xxs se concentra principalmente en los idiomas lituano, letón, esloveno, maltés, húngaro y eslovaco. No se han publicado resultados de benchmarks comparativos con otros modelos ASR en la información disponible.
+WER medio en los 25 idiomas (48 clips por idioma): f32 14,0; q2_k 16,9; iq2_xxs 26,4. La brecha del IQ2_XXS se concentra en lituano, letón, esloveno, maltés, húngaro y eslovaco.
+
+Comparativa del fichero para teléfono frente a f32 y q4_k_m-shrink16:
+
+| Métrica | F32 | q4_k_m-shrink16 | q4pw |
+|---|---|---|---|
+| Tamaño | 2357 MB | 553 MB | 364 MB |
+| WER FLEURS en100 | 5,61 % | 5,42 % | 5,33 % (Δ pareado vs F32 −0,31 [−0,80, +0,13]) |
+| WER FLEURS de100 | 4,68 % | 4,72 % | 4,46 % (−0,20 [−0,60, +0,19]) |
+
+Rendimiento en Pixel 10 Pro con motor Vulkan rápido, frente a q4_k_m-shrink16: carga 1,88 s frente a 2,30 s; clip de 22 s en 2,06 s frente a 2,26 s; clip de 74 s en 6,91 s frente a 7,69 s; RSS pico de 778 MB frente a 1180 MB; aproximadamente un 15 % menos de energía por transcripción; transcripciones idénticas en los ficheros de prueba.
+
+No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a un modelo ASR.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los archivos GGUF varían entre 325 MB (IQ2_XXS) y 906 MB (Q8_0), por lo que el modelo cabe en cualquier GPU con al menos 1 GB de VRAM, incluyendo GPUs integradas y tarjetas de gama baja.
-- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA, desde GTX 1650 hasta RTX 4090 o A100. También puede ejecutarse en CPU, aunque con mayor latencia.
-- Compatibilidad con GPU de consumo: sí, todas las versiones cuantizadas caben en GPUs de consumo de 4 GB o más, e incluso las versiones más pequeñas pueden ejecutarse en dispositivos con 512 MB de VRAM.
-- Opciones de despliegue: el modelo requiere el binario nativo `starling-serve` o la librería `libstarling_ggml` del repositorio Starling. No es compatible con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no se proporcionan datos específicos de latencia o throughput en la información disponible.
+- VRAM/RAM estimada para inferencia: desde 325 MB (IQ2_XXS) hasta 906 MB (Q8_0) para los pesos; el RSS pico medido en móvil con el fichero q4pw es de 778 MB, y con q4_k_m-shrink16 de 1180 MB.
+- GPU recomendadas: no se especifican modelos de GPU de escritorio; el autor documenta ejecución en un Pixel 10 Pro mediante el motor Vulkan rápido de Starling.
+- Cabe en GPU de consumo: sí, dado el tamaño reducido de todos los ficheros (el mayor, Q8_0, ocupa 906 MB); no se detallan requisitos de VRAM por GPU concreta.
+- Opciones de despliegue: binario starling-serve o librería libstarling_ggml del repositorio de Starling. No es compatible con llama.cpp, whisper.cpp ni parakeet.cpp. El motor Starling sí puede cargar GGUF de parakeet de la comunidad en los dialectos cstr/parakeet.cpp y transcribe.cpp.
+- Latencia y throughput: en Pixel 10 Pro con Vulkan, 2,06 s para un clip de 22 s y 6,91 s para uno de 74 s con el fichero q4pw. No se publican cifras de throughput para otras plataformas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos ASR en la información proporcionada. Sin embargo, por su arquitectura y propósito, los modelos comparables serían:
+| Modelo | Parámetros | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| scholzmx/parakeet-tdt-0.6b-v3-gguf | 627.090.582 | 25 europeos | cc-by-4.0 | GGUF (Starling) | Cuantizaciones calibradas con imatrix; WER validado por nivel |
+| nvidia/parakeet-tdt-0.6b-v3 | 627.090.582 | 25 europeos | cc-by-4.0 | safetensors (formato original) | Modelo base; referencia de calidad f32 con WER 14,0 medio en 25 idiomas |
+| Whisper (variantes de OpenAI) | no disponible | multilingüe amplio | licencia permisiva (según variante) | múltiples | No se dispone de datos comparativos en la información proporcionada |
 
-| Modelo | Parametros | Idiomas | Licencia | Formato |
-|---|---|---|---|---|
-| nvidia/parakeet-tdt-0.6b-v3 (base) | 627M | 25 | CC-BY-4.0 | safetensors |
-| scholzmx/parakeet-tdt-0.6b-v3-gguf | 627M | 25 | CC-BY-4.0 | GGUF (Starling) |
-| whisper-small (OpenAI) | 244M | ~100 | MIT | safetensors, GGUF |
-
-La comparación con whisper-small es orientativa: whisper-small tiene más idiomas pero una arquitectura diferente (encoder-decoder transformer) y un rendimiento inferior en idiomas europeos según benchmarks públicos. No se dispone de datos de WER comparativos en la información proporcionada.
+No se dispone de datos de benchmarks comparativos directos con otras alternativas ASR en la información proporcionada; la única comparación medida es interna, entre los distintos niveles de cuantización y el modelo f32.
 
 ## Limitaciones y advertencias
 
-- Los archivos GGUF de este repositorio no son compatibles con llama.cpp, whisper.cpp ni parakeet.cpp; requieren específicamente el motor Starling (`starling-serve` o `libstarling_ggml`).
-- La versión IQ2_XXS (325 MB) degrada significativamente la precisión en idiomas minoritarios (lt, lv, sl, mt, hu, sk), con una media de WER en 25 idiomas de 26.4 frente al 14.0 del modelo f32. Solo se recomienda para despliegues centrados en inglés.
-- El modelo es exclusivamente de reconocimiento de voz; no puede generar texto, responder preguntas ni realizar tareas de razonamiento.
-- La licencia CC-BY-4.0 permite uso comercial, pero requiere atribución al autor original (NVIDIA) y al autor de la cuantización.
-- No se proporciona información sobre la longitud de contexto, por lo que no se conocen las limitaciones de duración de audio que puede procesar el modelo.
-- El modelo puede presentar sesgos en el reconocimiento de acentos, dialectos o habla no nativa, especialmente en los niveles de cuantización más agresivos.
-- La calibración de la imatrix se realizó con 48 clips por idioma de FLEURS train; el esloveno no se incluyó en la recopilación, aunque el autor indica que la mezcla de idiomas de calibración no es un factor medible en el rendimiento.
+- Compatibilidad restringida: los ficheros no funcionan en llama.cpp, whisper.cpp ni parakeet.cpp; requieren el motor Starling. Un usuario que espere un GGUF convencional no podrá cargarlos.
+- El fichero IQ2_XXS degrada notablemente la precisión en idiomas con pocos recursos del conjunto (lituano, letón, esloveno, maltés, húngaro, eslovaco); solo es adecuado para despliegues English-first.
+- El fichero Q2_K reduce la cobertura multilingüe uniforme: WER medio de 16,9 frente a 14,0 en f32.
+- La calibración se realizó con 24 de los 25 idiomas (falta el shard de esloveno); el autor argumenta que la insensibilidad medida a la mezcla lingüística lo hace irrelevante, pero es una limitación documentada.
+- Riesgo de alucinación: no se documenta para este modelo; en ASR, los errores se manifiestan como sustituciones, omisiones e inserciones de texto, no como contenido inventado de forma deliberada.
+- Sesgos: no se documentan sesgos específicos de acento, género o dominio en la información proporcionada.
+- Licencia CC-BY-4.0: permite uso comercial con atribución; es necesario citar al autor del modelo base y respetar los términos de la licencia.
+- Las cifras de latencia y consumo energético proceden de un único dispositivo (Pixel 10 Pro) y no deben extrapolarse sin validación.
+- No se documentan capacidades de diarización, puntuación o marcas de tiempo; deben verificarse en la model card del modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/scholzmx/parakeet-tdt-0.6b-v3-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Repositorio Starling: https://github.com/sims1253/starling
+- Repositorio del motor Starling: https://github.com/sims1253/starling
+- Documentación del pipeline de cuantización: docs/quantization.md en el repositorio de Starling

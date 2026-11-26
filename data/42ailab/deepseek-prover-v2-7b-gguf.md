@@ -2,48 +2,50 @@
 
 ## Resumen
 
-DeepSeek-Prover-V2-7B es un modelo de lenguaje especializado en demostración formal de teoremas en Lean 4, desarrollado originalmente por DeepSeek y publicado bajo licencia MIT. El repositorio `42ailab/DeepSeek-Prover-V2-7B-GGUF` no contiene un modelo nuevo ni una conversión propia: es una copia byte a byte de los ficheros GGUF generados por unsloth en `unsloth/DeepSeek-Prover-V2-7B-GGUF`, publicada como respaldo para garantizar la disponibilidad a largo plazo de los mismos pesos.
+DeepSeek-Prover-V2-7B es un modelo de lenguaje especializado en demostración formal de teoremas en Lean 4, desarrollado por DeepSeek y publicado bajo licencia MIT. Su tarea principal es recibir un enunciado de teorema escrito en Lean 4 y generar una prueba formal verificable por el comprobador de Lean. Se trata de un modelo derivado de la familia DeepSeek-Prover-V2, orientado a la automatización de matemáticas formales y a la verificación de código y demostraciones.
 
-El modelo resuelve una tarea muy concreta: recibe un enunciado de teorema en Lean 4 y genera la prueba correspondiente. Está construido sobre una base de aproximadamente 6.910.365.696 parámetros (unos 6,9 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para ejecución local. El repositorio incluye únicamente una cuantización Q4_K_M en formato GGUF de 3,93 GiB, pensada para inferencia en hardware de consumo.
+El repositorio analizado, `42ailab/DeepSeek-Prover-V2-7B-GGUF`, no es una versión nueva del modelo, sino un empaquetado en formato GGUF del modelo original. Según la model card, los pesos fueron convertidos por unsloth y publicados en `unsloth/DeepSeek-Prover-V2-7B-GGUF`; los ficheros de este repositorio son idénticos byte a byte a los de esa conversión. 42ailab mantiene el repositorio para su integración en la aplicación de escritorio 42model, fijando los ficheros por hash sha256 para garantizar su inmutabilidad.
 
-La relevancia de esta ficha radica en su naturaleza de espejo verificable: los nombres de fichero, tamaños y digests sha256 coinciden con el repositorio original de unsloth, lo que permite a pipelines de investigación y producción fijar una fuente estable de los pesos sin depender de que la cuenta del conversor permanezca inalterada.
+El modelo cuenta con 6.910.365.696 parámetros (aproximadamente 6,9 mil millones) y se distribuye en un único fichero cuantizado Q4_K_M de 3,93 GiB. Su relevancia actual radica en que permite ejecutar localmente un demostrador de teoremas en Lean 4 con requisitos de hardware moderados, algo poco habitual en el ecosistema de matemáticas formales, donde predominan modelos de mayor tamaño o servicios en la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base DeepSeek-Prover-V2-7B; detalles de arquitectura no incluidos en la informacion proporcionada) |
-| Parametros totales | 6.910.365.696 (dato de safetensors del modelo base) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo derivado de la familia DeepSeek; detalles de arquitectura no especificados en la informacion proporcionada) |
+| Parametros totales | 6.910.365.696 (aproximadamente 6,9 mil millones) |
+| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repo) |
+| Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repositorio) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (un fichero: `DeepSeek-Prover-V2-7B-Q4_K_M.gguf`, 3,93 GiB, sha256 `1f6039c37ea4197436b3f4fa707afbb83a285c9173a60583e5df063ba432b2d9`) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo base (tipo de transformer, número de capas, dimensiones de atención, mecanismo de atención o composición del dataset de entrenamiento). Lo que sí se especifica es su propósito: es un modelo entrenado para la demostración formal de teoremas en Lean 4, es decir, un modelo de generación de texto condicionado a un enunciado formal que debe producir una prueba verificable por el comprobador de Lean.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. La model card del repositorio de 42ailab se limita a describir el propósito (demostración de teoremas en Lean 4) y el proceso de empaquetado, sin detallar si se trata de un transformer denso, un modelo con atención lineal u otra variante. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o aprendizaje por refuerzo con verificación formal.
 
-El repositorio en cuestión no aporta información sobre el proceso de entrenamiento (número de tokens, datos de preentrenamiento, uso de RLHF/DPO o técnicas de decodificación especulativa). La única intervención técnica documentada es la conversión a GGUF realizada por unsloth y el uso de imatrix, según las etiquetas del repositorio, para mejorar la calidad de la cuantización Q4_K_M.
+Lo que sí se indica es que el modelo fue construido por DeepSeek y liberado bajo licencia MIT, y que la conversión a GGUF fue realizada por unsloth. La model card menciona que el modelo está pensado específicamente para Lean 4 y que su función es generar pruebas a partir de enunciados de teoremas. Cualquier innovación técnica concreta (decodificación especulativa, modos de razonamiento extendido, etc.) no está documentada en la información disponible.
 
 ## Capacidades
 
 - Generación de demostraciones formales en Lean 4 a partir de un enunciado de teorema.
-- Generación de texto conversacional (etiqueta `conversational` en el repositorio).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estándar.
-- Cuantización Q4_K_M optimizada con imatrix para reducir la pérdida de calidad respecto a los pesos originales.
-- No se documentan capacidades de visión, audio, tool calling, agentes ni multilingüismo en la información disponible.
+- Razonamiento matemático orientado a la verificación formal, con salida comprobable por el comprobador de Lean.
+- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
+- Compatibilidad con endpoints de inferencia, según la etiqueta `endpoints_compatible`.
+- Especialización en un dominio acotado (teoremas en Lean 4); no se documentan capacidades generales de código, visión, audio ni tool calling.
+- Soporte multilingüe: no disponible en la información proporcionada.
+- Modo de razonamiento extendido (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Asistencia a matemáticos formales: el modelo recibe un `theorem` en Lean 4 y propone una prueba que el usuario puede verificar con el comprobador de Lean, acelerando la formalización de resultados.
-- Docencia de lógica y matemáticas formales: integrado en un entorno Lean, permite a estudiantes ver propuestas de demostración y compararlas con las suyas propias.
-- Automatización de pipelines de verificación: al estar en GGUF y ser compatible con endpoints, puede conectarse a un servicio que reciba enunciados y devuelva pruebas candidatas para su validación automática.
-- Investigación en demostración automática de teoremas: sirve como modelo de referencia de 7B para comparar estrategias de prompting, cuantización o decodificación en tareas Lean 4.
-- Ejecución local en estaciones de trabajo: el fichero Q4_K_M de 3,93 GiB permite desplegar el modelo en portátiles y equipos de sobremesa con GPU de consumo, sin depender de servicios en la nube.
-- Replicación y auditoría de resultados: al ser una copia byte a byte con digests verificables, permite reproducir experimentos y auditar que los pesos usados son exactamente los publicados por unsloth.
-- Archivado a largo plazo: organizaciones que necesitan garantizar la disponibilidad de los pesos pueden fijar esta copia como fuente estable en sus propios repositorios.
+- Asistencia a matemáticos formales: el modelo recibe un `theorem` en Lean 4 y propone una prueba que el investigador puede verificar y refinar. Es adecuado porque su entrenamiento está orientado específicamente a la sintaxis y semántica de Lean 4.
+- Automatización de tareas de demostración en proyectos de formalización: integrado en un pipeline que envía enunciados pendientes al modelo y comprueba las pruebas generadas con Lean, permite reducir el trabajo manual en bibliotecas como Mathlib.
+- Docencia de lógica y matemáticas formales: sirve para generar ejemplos de demostraciones paso a paso que los estudiantes pueden comprobar en Lean 4, con la ventaja de que la salida es verificable mecánicamente.
+- Verificación de lemas auxiliares: en un flujo de trabajo de formalización, el modelo puede generar pruebas de lemas intermedios que luego se incorporan al desarrollo principal.
+- Ejecución local en estaciones de trabajo: al distribuirse en GGUF Q4_K_M (3,93 GiB), puede ejecutarse en equipos sin GPU dedicada de gama alta mediante llama.cpp u Ollama, lo que facilita su uso en entornos con requisitos de privacidad.
+- Integración en la aplicación 42model: el repositorio está empaquetado para descarga directa desde la biblioteca de modelos de la aplicación de escritorio 42model, con ficheros fijados por hash sha256.
+- Investigación en generación de pruebas: como modelo pequeño y de licencia permisiva (MIT), es útil como línea base para experimentos de fine-tuning o para comparar estrategias de búsqueda de pruebas.
 
 ## Benchmarks y rendimiento
 
@@ -51,37 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 4-5 GB para el fichero Q4_K_M de 3,93 GiB, más el overhead del contexto y del runtime.
-- GPU recomendadas: no se especifican en la información proporcionada; por tamaño, el modelo es apto para GPU de consumo con al menos 6-8 GB de VRAM.
-- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más (por ejemplo, RTX 3060 Ti, RTX 4060, RTX 3070 y superiores). No confirmado por el autor.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; también compatible con endpoints según las etiquetas del repositorio.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 4-5 GiB con la cuantización Q4_K_M publicada (fichero de 3,93 GiB más overhead de contexto y caché KV).
+- GPU recomendadas: no se especifican en la documentación. Por tamaño, cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070 (12 GB) y superiores; también en A100, H100 o L40S si se busca mayor throughput.
+- Cabe en GPU de consumo: sí, con la cuantización Q4_K_M, en cualquier GPU con al menos 6 GB de VRAM efectiva.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia, aunque no se detalla cuáles.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-Prover-V2-7B (este repo, GGUF Q4_K_M) | ~6,9B | no disponible | GGUF | MIT | Hugging Face, ModelScope, 42model |
-| unsloth/DeepSeek-Prover-V2-7B-GGUF (original) | ~6,9B | no disponible | GGUF | MIT | Hugging Face, ModelScope |
-| deepseek-ai/DeepSeek-Prover-V2-7B (pesos oficiales) | ~6,9B | no disponible | safetensors (presumiblemente) | MIT | ModelScope |
+| DeepSeek-Prover-V2-7B (este repositorio, GGUF Q4_K_M) | ~6,9 mil millones | no disponible | GGUF | MIT | Hugging Face, ModelScope, 42model |
+| DeepSeek-Prover-V2-7B (original) | ~6,9 mil millones | no disponible | no disponible en la informacion | MIT | Repositorio oficial deepseek-ai/DeepSeek-Prover-V2-7B |
+| unsloth/DeepSeek-Prover-V2-7B-GGUF | ~6,9 mil millones | no disponible | GGUF | MIT | Hugging Face, ModelScope |
 
-No se dispone de información sobre otros modelos comparables de demostración formal en Lean 4 en la información proporcionada.
+No se dispone de información sobre otros modelos comparables de demostración formal en Lean 4 (por ejemplo, variantes de Goedel-Prover, Kimina-Prover u otros) en la documentación proporcionada, por lo que no se incluyen en la comparativa.
 
 ## Limitaciones y advertencias
 
-- Este repositorio no es un modelo nuevo ni una conversión propia: es una copia byte a byte de los GGUF de unsloth; cualquier problema de calidad de la cuantización es atribuible al conversor original.
-- Solo se publica una cuantización (Q4_K_M); no hay versiones Q5, Q6, Q8 ni FP16 en este repositorio.
-- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones idiomáticas en la información disponible.
-- El modelo está especializado en Lean 4; su uso fuera de tareas de demostración formal puede degradar la calidad de las respuestas.
-- La licencia MIT permite uso comercial, pero conviene verificar la licencia del modelo base original y citar adecuadamente a DeepSeek y a unsloth.
-- No se especifican la longitud de contexto ni los idiomas soportados, lo que impide garantizar su comportamiento en conversaciones largas o multilingües.
-- El repositorio tiene muy pocas descargas (75) y ningún "like" en el momento de la consulta, por lo que su adopción comunitaria es mínima.
+- Dominio muy restringido: el modelo está especializado en Lean 4; su uso fuera de la demostración formal de teoremas no está documentado y probablemente ofrezca resultados pobres.
+- Riesgo de alucinación: como todo modelo generativo, puede producir pruebas sintácticamente plausibles pero incorrectas; es imprescindible verificar cada salida con el comprobador de Lean 4.
+- Longitud de contexto no documentada: se desconoce la ventana máxima, lo que limita la planificación de pipelines con teoremas o contextos extensos.
+- Idiomas no documentados: no se especifica qué idiomas naturales soporta; la salida esperada es código Lean 4.
+- Licencia MIT: permisiva para uso comercial, pero el repositorio de 42ailab es un empaquetado de terceros; la autoría del modelo corresponde a DeepSeek y la conversión a unsloth.
+- Inmutabilidad del repositorio: los ficheros están fijados por hash sha256 y no cambiarán aunque el repositorio original se renombre o elimine; conviene comprobar los digests antes de usar los pesos.
+- Cuantización única: solo se publica Q4_K_M, por lo que no hay opción de mayor precisión (Q8, FP16) en este repositorio; para esos formatos habría que acudir a la conversión de unsloth.
+- Sin datos de benchmarks: no hay evidencia publicada en la información disponible sobre su rendimiento en tareas de demostración, lo que dificulta evaluar su calidad frente a alternativas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/42ailab/DeepSeek-Prover-V2-7B-GGUF
-- Repositorio ModelScope: https://modelscope.cn/models/42ailab/DeepSeek-Prover-V2-7B-GGUF
-- Repositorio original de la conversión GGUF (unsloth): https://www.modelscope.cn/models/unsloth/DeepSeek-Prover-V2-7B-GGUF
-- Pesos oficiales del modelo base: https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V2-7B
-- Sitio del autor: https://42ailab.com
-- Herramienta de despliegue del autor: https://42model.com
+- ModelScope: https://modelscope.cn/models/42ailab/DeepSeek-Prover-V2-7B-GGUF
+- Conversión GGUF original de unsloth: https://www.modelscope.cn/models/unsloth/DeepSeek-Prover-V2-7B-GGUF
+- Repositorio oficial del modelo: deepseek-ai/DeepSeek-Prover-V2-7B (referenciado en la model card; URL no incluida en la información proporcionada)
+- Sitio de 42ailab: https://42ailab.com
+- Aplicación 42model: https://42model.com

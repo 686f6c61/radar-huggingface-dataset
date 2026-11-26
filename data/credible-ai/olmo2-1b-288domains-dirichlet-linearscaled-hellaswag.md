@@ -2,101 +2,95 @@
 
 ## Resumen
 
-`olmo2-1B-288domains-dirichlet-linearscaled-hellaswag` es un modelo de lenguaje de 1.414.678.528 parámetros (aproximadamente 1,41B) desarrollado por credible-ai, un grupo de investigación centrado en la mezcla de datos (data mixing) para el preentrenamiento. Se trata de un artefacto de investigación: un modelo base preentrenado desde cero sobre 32.000 millones de tokens del corpus WebOrganizer, con pesos de mezcla optimizados mediante LinMix para maximizar el rendimiento en HellaSwag. No es un modelo de propósito general ni ha pasado por ajuste por instrucciones.
+`olmo2-1B-288domains-dirichlet-linearscaled-hellaswag` es un modelo de lenguaje de 1.414 millones de parametros desarrollado por credible-ai como artefacto de investigacion para reproducir los experimentos del paper LinMix (Data Mixing as Linear Domain Attribution). No es un modelo de proposito general: es un checkpoint de preentrenamiento especifico cuyo objetivo es validar una metodologia de mezcla de datos (data mixing) sobre 288 dominios tematicos y de formato del corpus WebOrganizer.
 
-El interés del modelo es metodológico, no de producto. LinMix propone ajustar un surrogate lineal sobre un enjambre de mezclas Dirichlet evaluadas con modelos proxy pequeños (en este caso `olmo2-60M-288domains-dirichlet`) y usar esos coeficientes para construir la mezcla de datos final del modelo grande. Esta ficha reproduce un punto concreto del espacio de ablaciones: surrogate lineal, coeficientes divididos por su error estándar (β/SE) y utilidad lineal con r = 0, evaluado sobre HellaSwag.
+El modelo parte de la arquitectura OLMo 2 (`Olmo2ForCausalLM`), con 18 capas y un tamano de hidden de 2048, y utiliza el tokenizador GPT-NeoX-20B con un vocabulario de 50.432 tokens. Se ha preentrenado sobre 32.000 millones de tokens extraidos del corpus WebOrganizer, con pesos de mezcla optimizados mediante LinMix para el benchmark HellaSwag.
 
-Arquitectónicamente es un transformer decoder-only de la familia OLMo 2 (`Olmo2ForCausalLM`), con 18 capas y dimensión oculta 2048, tokenizador GPT-NeoX-20B de 50.432 entradas y pesos en bfloat16 bajo licencia MIT. Su relevancia ahora es servir como pieza reproducible para estudiar cómo las decisiones de mezcla de dominios afectan al rendimiento en una tarea concreta, con código, datos tokenizados y la mezcla exacta (`mix.json`) publicados.
+Su relevancia es metodologica, no de producto: sirve para estudiar como la atribucion lineal de dominios y el escalado de coeficientes (β/SE con utilidad lineal, r = 0) afectan a la composicion optima del dataset de preentrenamiento. Los pesos se distribuyen en bfloat16 bajo licencia MIT.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only OLMo 2 (`Olmo2ForCausalLM`), 18 capas, hidden size 2048 |
-| Parámetros totales | 1.414.678.528 (≈1,41B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (la model card no la especifica) |
-| Tipos de cuantización | Solo pesos bfloat16 publicados; no se distribuyen GGUF ni cuantizaciones oficiales (convertibles por el usuario) |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | OLMo 2 (`Olmo2ForCausalLM`), transformer decoder-only |
+| Parametros totales | 1.414.678.528 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | safetensors, bfloat16 (repo de 2,8 GB); incluye `mix.json` con la mezcla de datos |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura OLMo 2 en configuración pequeña: transformer decoder-only denso con 18 capas, dimensión oculta 2048 y 1,41B de parámetros, serializado como `Olmo2ForCausalLM` en Transformers. El tokenizador es el de GPT-NeoX-20B, con un vocabulario de 50.432 tokens, lo que sitúa al modelo en la estela de la familia OLMo y facilita comparaciones directas con otros miembros del mismo enjambre experimental.
+El modelo sigue la arquitectura OLMo 2 implementada en Transformers: un transformer decoder-only con 18 capas, hidden size de 2048 y tokenizador GPT-NeoX-20B (vocabulario de 50.432 entradas). Los pesos se publican en bfloat16 y el repositorio ocupa 2,8 GB. No se documentan en la informacion disponible detalles sobre mecanismos de atencion especificos, activaciones ni innovaciones arquitectonicas adicionales mas alla de lo que define la familia OLMo 2.
 
-El preentrenamiento se realizó con OLMo-core sobre 32.000 millones de tokens del corpus WebOrganizer, derivado del pool DCLM 1b-1x. La particularidad está en la composición: los datos se organizan en 288 dominios que combinan tema y formato, y la proporción de cada dominio se fija mediante LinMix. Para esta variante concreta, el surrogate es un ajuste lineal sobre el enjambre Dirichlet del proxy de 60M, con los coeficientes divididos por su error estándar (β/SE) y una utilidad lineal (π con r = 0), optimizando HellaSwag como métrica objetivo. La relación tokens/parámetro es de aproximadamente 22,6, en línea con el régimen Chinchilla. No se documentan fases de RLHF, DPO ni ajuste por instrucciones: es un modelo estrictamente base.
+El preentrenamiento se realizo con OLMo-core sobre 32.000 millones de tokens del corpus WebOrganizer, derivado del pool DCLM 1b-1x (CC-BY-4.0) y sujeto a los terminos de uso de Common Crawl. La innovacion principal es el procedimiento de mezcla de datos: se ajusta un surrogate lineal sobre un enjambre Dirichlet de 288 dominios (tema x formato), se dividen los coeficientes por sus errores estandar (β/SE) y se aplica una utilidad lineal (r = 0). El modelo proxy del enjambre es `credible-ai/olmo2-60M-288domains-dirichlet`. El repositorio incluye un fichero `mix.json` con la mezcla de datos de entrenamiento. No se documentan fases de RLHF, DPO ni ajuste por instrucciones.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés, sin ajuste por instrucciones ni formato conversacional.
-- Modelo base: continúa texto, completa fragmentos y sirve como punto de partida para fine-tuning supervisado.
-- Razonamiento y sentido común a pequeña escala, evaluable en tareas tipo HellaSwag, para la que fue explícitamente optimizado.
-- Capacidad limitada de código y matemáticas, no medida ni reportada en la información disponible.
-- Sin soporte documentado de tool calling ni function calling.
-- Sin soporte documentado de agentes, multi-step reasoning ni modos de pensamiento (thinking).
-- Sin capacidades de visión ni audio.
-- Multilingüismo prácticamente nulo: solo inglés declarado.
-- Reutilizable como proxy o baseline en experimentos de mezcla de datos gracias a la publicación de `mix.json` y de los datos tokenizados.
+- Generacion de texto autoregresiva basica en ingles, heredada del preentrenamiento sobre corpus web.
+- Modelado de lenguaje y evaluacion de perplejidad sobre dominios tematicos y de formato del corpus WebOrganizer.
+- Reproduccion de experimentos de data mixing: permite analizar el efecto de la mezcla optimizada sobre el rendimiento en HellaSwag.
+- Servir como checkpoint de referencia para comparar con el modelo proxy de 60M y con otras configuraciones de mezcla.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues limitadas al ingles.
+- No se documenta modo de razonamiento (thinking), vision ni audio.
 
 ## Casos de uso
 
-- Reproducción de experimentos de LinMix: el modelo materializa una celda concreta de la ablación (surrogate lineal, β/SE, r = 0, objetivo HellaSwag) y permite verificar los resultados del paper con los mismos datos y la misma mezcla.
-- Estudio de mezcla de dominios: al disponer de `mix.json` y del corpus tokenizado, se puede correlacionar la proporción asignada a cada uno de los 288 dominios con el rendimiento final y analizar la sensibilidad del optimizador.
-- Baseline en evaluación de data mixing: sirve como referencia entrenada con 32B tokens frente a la que comparar otras estrategias de mezcla (por ejemplo, mezclas uniformes o ajustadas por proxy de mayor tamaño).
-- Investigación sobre scaling de proxies: junto al proxy de 60M del mismo enjambre, permite medir cuánto se degrada la mezcla óptima al pasar de un modelo pequeño a uno de 1,41B.
-- Punto de partida para fine-tuning: al ser un base de 1,41B con licencia MIT y pesos bf16, es viable ajustarlo con SFT/LoRA para tareas concretas en inglés y comparar si la mezcla optimizada para HellaSwag transfiere a la tarea objetivo.
-- Experimentos de eficiencia en hardware modesto: sus 2,8 GB en bf16 permiten ejecutar estudios de inferencia y de dinámica de entrenamiento en una sola GPU consumer.
-- Docencia y divulgación: ejemplo completo y abierto de pipeline de preentrenamiento (corpus, tokenización, mezcla, entrenamiento con OLMo-core) que se puede recorrer de extremo a extremo.
+- Reproduccion de experimentos de LinMix: cargar el checkpoint y el `mix.json` para replicar la ablacion de muestreo y escalado descrita en el paper, comparando la mezcla optimizada con mezclas uniformes o heuristicas.
+- Investigacion en data mixing: usar el modelo como punto de comparacion frente a otros checkpoints de la misma familia (por ejemplo, variantes con distintas estrategias de escalado de coeficientes) para medir el impacto en HellaSwag.
+- Estudio de atribucion de dominios: analizar como los pesos de mezcla derivados de 288 dominios tema x formato se traducen en diferencias de rendimiento, apoyandose en el corpus tokenizado publicado.
+- Validacion de pipelines de preentrenamiento con OLMo-core: servir de referencia para verificar que una configuracion de entrenamiento reproduce los resultados esperados sobre 32.000 millones de tokens.
+- Benchmarking de metodologias de seleccion de datos: comparar LinMix frente a otras tecnicas de mezcla sobre el mismo corpus base y el mismo presupuesto de tokens.
+- Analisis de eficiencia en modelos pequenos: estudiar el comportamiento de un modelo de 1,4B parametros entrenado con una mezcla optimizada, como paso previo al escalado a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que la mezcla se optimizó para HellaSwag, pero no incluye cifras de accuracy ni comparaciones numéricas con otros modelos. Tampoco se reportan resultados de MMLU, HumanEval, GSM8K ni de evaluaciones multilingües.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente indica que la mezcla de datos fue optimizada para el benchmark HellaSwag, sin reportar la puntuacion obtenida.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bfloat16: aproximadamente 2,8 GB solo para pesos; con caché KV y activaciones, un entorno realista se sitúa en torno a 3,5-4 GB para contextos cortos.
-- VRAM en fp32: unos 5,7 GB; en int8, unos 1,4 GB; en int4, aproximadamente 0,7 GB (requiere cuantización propia, no hay artefactos publicados).
-- GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4090) para bf16; A100/H100 solo tienen sentido en escenarios de mucho paralelismo o entrenamiento.
-- Cabe holgadamente en GPU consumer, incluidas soluciones de 8 GB; también es viable en CPU con llama.cpp tras convertir los pesos.
-- Opciones de despliegue: Transformers (`AutoModelForCausalLM`), vLLM o TGI para serving; llama.cpp y Ollama requieren conversión a GGUF, que no se distribuye en el repo.
-- Latencia y throughput estimados: no disponibles; no se han publicado medidas.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 2,8 GB solo para pesos, mas memoria para activaciones y cache KV; en la practica, entre 4 y 6 GB para contextos cortos.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 1,5 GB para pesos; en 4 bits, en torno a 0,8 GB (las cuantizaciones no estan publicadas por el autor y requeririan conversion propia).
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bfloat16; A100, H100 o RTX 4090 ofrecen margen sobrado.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090.
+- Opciones de despliegue: transformers (soporte nativo de `Olmo2ForCausalLM`), vLLM y TGI si incorporan soporte para la arquitectura OLMo 2; llama.cpp y Ollama requeririan conversion a GGUF, no documentada por el autor.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este modelo (olmo2-1B-288domains-dirichlet-linearscaled-hellaswag) | 1,41B | No disponible | No reportado (optimizado para HellaSwag) | MIT | Pesos safetensors en HF, 0 descargas |
-| OLMo 2 1B (base oficial de AllenAI) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Pesos públicos en HF |
-| credible-ai/olmo2-60M-288domains-dirichlet (proxy del enjambre) | ≈60M (según su nombre) | No disponible | No disponible | No disponible en la información proporcionada | Pesos públicos en HF |
-| Modelos base de ~1B de otras familias (p. ej. Llama 3.2 1B, Qwen2.5 1.5B) | No verificado en esta búsqueda | No verificado | No verificado | No verificado | Pesos públicos |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
+|---|---|---|---|---|
+| olmo2-1B-288domains-dirichlet-linearscaled-hellaswag | 1,41B | no disponible | MIT | Artefacto de investigacion en data mixing |
+| credible-ai/olmo2-60M-288domains-dirichlet | ~60M | no disponible | no disponible | Modelo proxy del enjambre Dirichlet |
+| OLMo 2 1B (AllenAI) | ~1B | no disponible | no disponible | Modelo base de proposito general |
 
-La comparación cuantitativa no es posible con los datos disponibles: el modelo es un artefacto de ablación y no se han publicado métricas propias ni de las alternativas en la información proporcionada. Cualquier comparación de rendimiento requeriría ejecutar la misma batería de evaluación sobre cada checkpoint.
+La comparacion con alternativas de la misma categoria es limitada: el checkpoint esta disenado para reproducir experimentos concretos y no para competir en tareas genericas. No se dispone de datos de rendimiento comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de investigación, no un modelo de propósito general; la propia model card lo declara explícitamente.
-- No ha recibido ajuste por instrucciones ni alineamiento (sin RLHF/DPO): no sigue instrucciones de forma fiable y no debe usarse como asistente conversacional.
-- Entrenado solo con 32B tokens y 1,41B de parámetros: alta propensión a alucinaciones y conocimiento factual limitado incluso frente a modelos base de mayor escala.
-- Solo inglés declarado; el rendimiento en castellano no está evaluado y previsiblemente será pobre.
-- La mezcla de datos está optimizada para HellaSwag, lo que puede implicar un sesgo de composición hacia los dominios que favorecen esa tarea y un rendimiento peor en otras.
-- Riesgo de sesgos heredados de Common Crawl y del pool DCLM: toxicidad, estereotipos y sobrerrepresentación de contenido en inglés y de determinadas fuentes web.
-- Licencia MIT para los pesos, pero los datos de entrenamiento provienen de DCLM 1b-1x (CC-BY-4.0) y están sujetos a los términos de uso de Common Crawl; conviene revisar las obligaciones de atribución antes de un uso comercial.
-- Longitud de contexto no documentada: no se debe asumir una ventana concreta sin verificarla empíricamente.
-- Sin cuantizaciones oficiales ni artefactos GGUF; el despliegue en llama.cpp/Ollama exige conversión y validación propias.
-- Sin benchmarks publicados: no hay evidencia numérica de calidad más allá de la métrica usada para optimizar la mezcla.
+- No es un modelo de proposito general: el propio autor lo describe como artefacto de investigacion, no apto para uso en produccion.
+- Entrenado unicamente en ingles; no se garantiza un comportamiento correcto en otros idiomas.
+- Entrenado sobre corpus web (DCLM/Common Crawl), por lo que puede reproducir sesgos presentes en esos datos.
+- Riesgo de alucinacion elevado al no haber pasado por fases de alineacion (RLHF/DPO) ni ajuste por instrucciones.
+- No se documenta la longitud de contexto soportada, lo que impide planificar su uso en tareas de contexto largo.
+- La licencia MIT cubre los pesos, pero los datos de entrenamiento estan sujetos a los terminos de uso de Common Crawl y a la licencia CC-BY-4.0 del pool DCLM; conviene revisar esas condiciones antes de un uso comercial.
+- La mezcla de datos esta optimizada especificamente para HellaSwag, lo que puede introducir sesgo hacia ese benchmark y limitar la generalizacion.
+- No hay garantias de soporte en herramientas de despliegue como vLLM, TGI, llama.cpp u Ollama sin conversion o configuracion adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linearscaled-hellaswag
-- Modelo proxy del enjambre (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
-- Código de LinMix: https://github.com/credibleai/linmix
+- Paper LinMix: https://arxiv.org/abs/2610.37390
+- Codigo LinMix: https://github.com/credibleai/linmix
+- Modelo proxy: https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
 - Dataset tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
 - Pool DCLM 1b-1x: https://huggingface.co/datasets/mlfoundations/dclm-pool-1b-1x
 - Tokenizador GPT-NeoX-20B: https://huggingface.co/EleutherAI/gpt-neox-20b
-- Documentación de OLMo 2 en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo2
-- Framework de entrenamiento OLMo-core: https://github.com/allenai/OLMo-core
-- Términos de uso de Common Crawl: https://commoncrawl.org/terms-of-use
-
-Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre este modelo ni sobre LinMix; los resultados obtenidos correspondían a entidades sin relación. No se han incluido.
+- Documentacion OLMo 2 en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo2
+- OLMo-core: https://github.com/allenai/OLMo-core
+- Terminos de uso de Common Crawl: https://commoncrawl.org/terms-of-use

@@ -2,92 +2,98 @@
 
 ## Resumen
 
-LFM2.5-1.2B-Distilled-SFT es un modelo de lenguaje de 1.200 millones de parámetros desarrollado por Reaperdoesntrun (división de investigación de Convergent Intelligence LLC) a partir de `liquid/LFM2.5-1.2B-Instruct`. Se trata de un ajuste fino en dos etapas sobre la arquitectura híbrida LFM2.5 de Liquid AI, que combina capas SSM (modelos de espacio de estados) con atención, y que está optimizada para inferencia en dispositivos de borde. El modelo añade razonamiento estructurado en STEM (matemáticas, física, álgebra lineal, ecuaciones diferenciales, electromagnetismo) e inferencia lógica formal sobre la base instruct original.
+LFM2.5-1.2B-Distilled-SFT es un modelo de lenguaje de 1.200 millones de parametros desarrollado por reaperdoesntknow (Convergent Intelligence LLC, Research Division) a partir del modelo base liquid/LFM2.5-1.2B-Instruct. Se construye en dos etapas: una destilacion de conocimiento desde un profesor MoE hibrido de 24B (liquid/LFM2-24B-A2B) sobre datos de chain-of-thought de STEM, seguida de un ajuste supervisado (SFT) sobre inferencia logica formal. El resultado es un modelo pequeno orientado a razonamiento estructurado en matematicas, fisica y logica, pensado para despliegue en dispositivos de borde.
 
-La relevancia del modelo reside en su pipeline de entrenamiento: es, según el autor, la primera destilación ponderada por demostración combinada con SFT aplicada a una arquitectura no transformer. La primera etapa destila conocimiento de un profesor MoE híbrido de 24B parámetros (`liquid/LFM2-24B-A2B`, con solo 2B activos por token) sobre 2.802 muestras de cadena de pensamiento STEM; la segunda etapa aplica SFT sobre el dataset LogicInference_OA, con aproximadamente 54.607 pares instrucción-respuesta. El resultado es un modelo de 1,3B parámetros que corre a 239 tok/s en CPU AMD y ocupa menos de 1 GB de RAM, con licencia Apache 2.0.
+La arquitectura es LFM2.5, un hibrido de SSM (modelos de espacio de estados) y atencion, no un transformer puro. Esta eleccion es relevante porque los componentes SSM propagan estado secuencial de forma eficiente, lo que encaja con cadenas de inferencia logica y derivaciones paso a paso. El autor lo presenta como la primera canalizacion de destilacion ponderada por prueba mas SFT sobre una arquitectura no transformer.
 
-El modelo está pensado para razonamiento lógico y derivaciones STEM en entornos con recursos limitados: móvil, IoT, NPU y CPU sin GPU. Su ventana de contexto es reducida (1024 tokens en entrenamiento), lo que lo circunscribe a tareas de razonamiento acotadas más que a conversaciones largas o procesamiento de documentos extensos.
+El modelo es relevante por su perfil de eficiencia: segun la model card, alcanza 239 tok/s en CPU AMD y 82 tok/s en NPU movil, con un consumo de RAM inferior a 1 GB. Su licencia Apache 2.0 y su tamano lo hacen atractivo para entornos con recursos limitados donde no cabe un modelo mayor. La longitud de contexto indicada en la model card es de 1024 tokens en entrenamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LFM2.5 híbrida (SSM + atención) |
-| Parámetros totales | 1.304.558.336 (1,3B) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | LFM2.5 (hibrido SSM + atencion) |
+| Parametros totales | 1.304.558.336 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1024 tokens (entrenamiento) |
-| Tipos de cuantización | GGUF disponible en repositorio separado; cuantizaciones específicas no detalladas |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | GGUF disponible en repositorio separado; niveles concretos no disponibles |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (transformers); GGUF en repo aparte |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es LFM2.5 de Liquid AI, un modelo híbrido que intercala capas SSM con capas de atención. El componente SSM propaga un estado secuencial a través de las premisas, lo que el autor argumenta que encaja de forma natural con la inferencia lógica proposicional: cada premisa actualiza un estado lógico y la conclusión se deriva del estado final. Esta arquitectura reduce el coste computacional frente a un transformer puro del mismo tamaño, lo que explica las cifras de rendimiento en CPU (239 tok/s en AMD, 82 tok/s en NPU móvil) y el consumo de menos de 1 GB de RAM.
+El modelo parte de liquid/LFM2.5-1.2B-Instruct, una arquitectura hibrida que combina capas SSM con capas de atencion. El profesor es liquid/LFM2-24B-A2B, un MoE hibrido de 24B con 2B de parametros activos por token. Al compartir familia arquitectonica, la divergencia KL entre profesor y alumno transfiere patrones de razonamiento entre modelos compatibles, segun explica la model card.
 
-El entrenamiento se divide en dos etapas. La primera es una destilación de conocimiento desde `liquid/LFM2-24B-A2B` (profesor MoE híbrido de 24B con 2B activos) sobre 2.802 muestras CoT STEM de cinco dominios: álgebra lineal (667), ecuaciones diferenciales (636), electromagnetismo (580), matemáticas (576) y mecánica clásica (343). La función de pérdida combina entropía cruzada ponderada por demostración (55%, con peso 2,5→1,5 sobre tokens de derivación) y divergencia KL de destilación (45%, T=2,0 escalada por T²). Se usó 1 época, batch efectivo de 8, LR 1,5e-5→1e-6 con decaimiento coseno y precisión bf16. La segunda etapa es un SFT sobre `KK04/LogicInference_OA` (reproducción del dataset LogicInference de Santiago Ontañón, Google Research), con 5.491 problemas de inferencia únicos extendidos a ~54.607 pares instrucción-respuesta, 1 época, batch efectivo de 8, LR 5e-6 y gradient checkpointing activado.
+La etapa 1 (destilacion) usa 2.802 muestras de CoT de STEM en cinco dominios: algebra lineal (667), ecuaciones diferenciales (636), electromagnetismo (580), matematicas (576) y mecanica clasica (343), todas del autor 0xZee. La funcion de perdida combina cross-entropy ponderada por prueba (55%, con peso 2,5 a 1,5 sobre tokens de derivacion) y divergencia KL de destilacion (45%, T=2,0 escalada por T²). Se entrena 1 epoca con batch efectivo 8, learning rate 1,5e-5 a 1e-6 con decaimiento coseno y precision bf16.
+
+La etapa 2 hace SFT sobre KK04/LogicInference_OA, una reproduccion del dataset LogicInference de Santiago Ontanon (Google Research) formateada para instrucciones: 5.491 problemas unicos de inferencia extendidos a unos 54.607 pares instruccion-respuesta. Se usa 1 epoca, batch efectivo 8, learning rate 5e-6 (conservador para preservar el backbone), gradient checkpointing activado y bf16. El autor argumenta que los componentes SSM encajan con la propagacion secuencial de estado que exige la inferencia logica formal.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en cadena de pensamiento (chain-of-thought) con formato de derivación rigurosa.
-- Razonamiento matemático: álgebra lineal, ecuaciones diferenciales, matemáticas generales.
-- Razonamiento físico: electromagnetismo y mecánica clásica.
-- Inferencia lógica formal: lógica proposicional, deducción a partir de premisas, formato LOGICINFERENCEe (inferencia primero, respuesta al final).
-- Resolución de sistemas de ecuaciones y problemas STEM con pasos intermedios explícitos.
-- Conversación en inglés (heredada del modelo instruct base).
-- Inferencia en dispositivos de borde: CPU, NPU móvil, IoT.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio.
+- Generacion de texto conversacional en ingles.
+- Razonamiento matematico con derivaciones paso a paso (algebra lineal, ecuaciones diferenciales, matematicas generales).
+- Razonamiento fisico (electromagnetismo, mecanica clasica) con formato de prueba y respuesta final.
+- Inferencia logica formal: silogismos, logica proposicional y cadenas de premisas.
+- Chain-of-thought explicito en formato "Problem / Proof / Final Answer" y en formato "Instruction / Response".
+- Ejecucion en dispositivos de borde: CPU, NPU movil e IoT segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; el razonamiento multi-paso se limita al CoT interno.
+- Capacidades multilingues: solo ingles.
+- Capacidades especiales: modo de derivacion STEM y modo de inferencia logica; no se documentan vision ni audio.
 
 ## Casos de uso
 
-- Tutoría STEM en dispositivos: el modelo puede generar derivaciones paso a paso de problemas de álgebra lineal o mecánica clásica directamente en un móvil o tableta sin conexión, gracias a su consumo inferior a 1 GB de RAM y a los 82 tok/s en NPU móvil.
-- Asistente de lógica en entornos educativos: resuelve problemas de inferencia proposicional (por ejemplo, cadenas de implicaciones) con el formato `### Instruction:` / `### Response:`, adecuado para ejercicios de lógica de nivel universitario.
-- Verificación de razonamiento en pipelines de CI: integrado como comprobador de pasos lógicos en flujos de validación de problemas matemáticos, donde la ventana de 1024 tokens es suficiente para un enunciado y su derivación.
-- Procesamiento en IoT y sistemas embebidos: al correr en CPU AMD a 239 tok/s y en NPU móvil a 82 tok/s, puede desplegarse en dispositivos sin GPU para tareas de clasificación lógica o resolución de problemas acotados.
-- Generación de explicaciones matemáticas en herramientas de documentación: produce derivaciones con formato de "Proof" y "Final Answer" que pueden insertarse en manuales técnicos o apuntes generados automáticamente.
-- Prototipado de investigación en destilación: sirve como referencia reproducible para estudiar la transferencia de razonamiento entre arquitecturas híbridas compatibles (profesor MoE de 24B y estudiante de 1,2B), con hiperparámetros y datasets documentados.
-- Filtrado y clasificación de problemas lógicos: dado su entrenamiento en LogicInference, puede etiquetar o resolver problemas de inferencia en lotes pequeños dentro de un pipeline de datos.
+- Tutoria de matematicas en dispositivos: el modelo puede resolver sistemas de ecuaciones y mostrar la derivacion completa en formato "Problem / Proof / Final Answer", adecuado para apps educativas que corren en movil con menos de 1 GB de RAM.
+- Asistente de fisica en el aula: con datos de electromagnetismo y mecanica clasica, puede guiar al estudiante en la resolucion de problemas paso a paso, explicando cada premisa antes de la respuesta final.
+- Verificacion de razonamiento logico en pipelines: dado un conjunto de premisas, el modelo infiere la conclusion en formato Instruction/Response, util para automatizar comprobaciones de consistencia en sistemas expertos ligeros.
+- Preprocesado de problemas STEM en entornos IoT: al ejecutarse a 82 tok/s en NPU movil, puede clasificar y estructurar enunciados de matematicas o fisica antes de enviarlos a un modelo mayor en la nube.
+- Generacion de explicaciones para plataformas de e-learning: el modelo produce cadenas de razonamiento detalladas que pueden mostrarse como soluciones explicadas en cursos de algebra o ecuaciones diferenciales.
+- Prototipado rapido de asistentes de razonamiento en CPU: con 239 tok/s en CPU AMD y licencia Apache 2.0, sirve para validar flujos de CoT y logica en entornos sin GPU antes de escalar a modelos mayores.
+- Filtrado y anotacion de datasets logicos: el formato de inferencia permite generar pares premisa-conclusion para aumentar corpus de logica proposicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de inferencia: 239 tok/s en CPU AMD, 82 tok/s en NPU móvil y menos de 1 GB de RAM.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta metricas de eficiencia: 239 tok/s en CPU AMD, 82 tok/s en NPU movil y consumo de RAM inferior a 1 GB.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo tiene 1,3B parámetros; en bf16 requiere aproximadamente 2,6 GB (tamaño del repositorio), y en fp32 unos 5,2 GB. En cuantización GGUF de 4 bits cabría por debajo de 1 GB, coherente con la afirmación del autor de "menos de 1 GB de RAM".
-- GPU recomendadas: no se especifican; el modelo está optimizado para CPU y NPU. Cualquier GPU consumer con 4 GB o más (por ejemplo, RTX 3050, RTX 4060) puede alojarlo en bf16.
-- Cabe en GPU consumer: sí, en todas las GPU con al menos 4 GB de VRAM en bf16; en cuantización de 4 bits, en dispositivos integrados.
-- Opciones de despliegue: transformers (con `AutoModelForCausalLM`), llama.cpp/Ollama mediante los GGUF del repositorio `reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT-GGUF`. vLLM y TGI no se mencionan en la documentación.
-- Latencia y throughput: 239 tok/s en CPU AMD y 82 tok/s en NPU móvil, según el autor.
+- VRAM estimada para inferencia: en bf16, aproximadamente 2,6 GB de pesos; en fp32, unos 5,2 GB; con cuantizacion GGUF de 4 bits, en torno a 0,7-0,9 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para bf16 (RTX 3050, RTX 4060, T4); para fp32 se recomienda 8 GB o mas (RTX 3070, A10).
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de consumo con 4 GB o mas; tambien en CPU y NPU movil segun el autor.
+- Opciones de despliegue: transformers (referencia de la model card), llama.cpp y Ollama mediante los GGUF del repositorio reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT-GGUF; vLLM y TGI no estan documentados para esta arquitectura hibrida en la informacion disponible.
+- Latencia y throughput: 239 tok/s en CPU AMD y 82 tok/s en NPU movil, segun la model card; no se reportan cifras para GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| LFM2.5-1.2B-Distilled-SFT | 1,3B | 1024 | Apache 2.0 | Razonamiento STEM y lógica en borde |
-| liquid/LFM2.5-1.2B-Instruct (base) | 1,2B | no disponible | Apache 2.0 | Instrucciones generales, sin especialización STEM/lógica |
-| liquid/LFM2-24B-A2B (profesor) | 24B totales, 2B activos | no disponible | no disponible | MoE híbrido de mayor escala, usado como profesor en la destilación |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| LFM2.5-1.2B-Distilled-SFT | 1,2B | 1024 | Hibrido SSM + atencion | Apache 2.0 | Razonamiento STEM y logica en borde |
+| liquid/LFM2.5-1.2B-Instruct (base) | 1,2B | no disponible | Hibrido SSM + atencion | Apache 2.0 | Instrucciones generales |
+| liquid/LFM2-24B-A2B (profesor) | 24B (2B activos) | no disponible | MoE hibrido SSM + atencion | no disponible | Razonamiento general a mayor escala |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Transformer | Apache 2.0 | Instrucciones generales y codigo |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento entre estos modelos; la comparación se limita a parámetros, contexto, licencia y enfoque.
+La comparativa con modelos transformer de tamano similar es limitada porque no hay benchmarks publicados de este modelo; la ventaja documentada frente a alternativas es la eficiencia en CPU y NPU y el enfoque especifico en derivaciones STEM y logica formal.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto de solo 1024 tokens en entrenamiento: inadecuado para conversaciones largas, documentos extensos o razonamientos que requieran mantener mucho estado.
-- Entrenado únicamente en inglés: no hay soporte documentado para castellano ni otros idiomas.
-- Riesgo de alucinación en derivaciones matemáticas y físicas: el modelo puede producir pasos plausibles pero incorrectos, especialmente fuera de los dominios del dataset de entrenamiento (álgebra lineal, ecuaciones diferenciales, electromagnetismo, matemáticas, mecánica clásica y lógica proposicional).
-- Sesgos: no se documentan evaluaciones de sesgo; al derivar de un modelo instruct general, puede heredar sesgos del modelo base y del profesor.
-- Especialización estrecha: el SFT en lógica y la destilación en STEM pueden degradar capacidades generales de conversación respecto al modelo base.
-- Dataset de entrenamiento pequeño en la etapa 1 (2.802 muestras): la cobertura de temas STEM es limitada y puede no generalizar a problemas atípicos.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción ni sobre la exactitud de las derivaciones.
-- El autor describe el pipeline como "primera prueba" de destilación ponderada por demostración en arquitectura no transformer; se trata de un resultado de investigación, no de un modelo validado para producción crítica.
+- Entrenado unicamente en ingles; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Contexto de entrenamiento de solo 1024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Riesgo de alucinacion en derivaciones matematicas y fisicas: el ajuste se hizo sobre 2.802 muestras, un volumen reducido que puede limitar la generalizacion fuera de los dominios cubiertos.
+- La etapa 2 se entreno sobre un unico dataset de inferencia logica (KK04/LogicInference_OA); puede sobreajustar al formato LOGICINFERENCEe y degradar el formato STEM si no se usa el prompt adecuado.
+- El ajuste SFT con learning rate bajo busca preservar el backbone, pero no se documentan evaluaciones de regresion sobre las capacidades originales del modelo base.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y el profesor pueden tener condiciones adicionales que conviene revisar.
+- No se documentan garantias de tool calling ni de comportamiento agentico en produccion.
+- El modelo es un experimento de investigacion de Convergent Intelligence LLC; no hay evidencia de validacion independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT
-- GGUF: https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT-GGUF
+- Version GGUF: https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT-GGUF
 - Modelo base: https://huggingface.co/liquid/LFM2.5-1.2B-Instruct
 - Modelo profesor: https://huggingface.co/liquid/LFM2-24B-A2B
-- Dataset LogicInference_OA: https://huggingface.co/datasets/KK04/LogicInference_OA
-- Paper de LogicInference (Santiago Ontañón, Google Research): https://openreview.net/pdf?id=HAGeIS_Lcg9
-- Datasets CoT de 0xZee: https://huggingface.co/0xZee
+- Dataset de inferencia logica: https://huggingface.co/datasets/KK04/LogicInference_OA
+- Paper de LogicInference (Ontanon, Google Research): https://openreview.net/pdf?id=HAGeIS_Lcg9
+- Autor de los datasets STEM: https://huggingface.co/0xZee
 - Convergent Intelligence LLC: https://convergentintel.com

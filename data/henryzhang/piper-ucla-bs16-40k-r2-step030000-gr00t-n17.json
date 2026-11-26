@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "HenryZhang/piper-ucla-bs16-40k-r2-step030000-gr00t-n17",
+  "slug": "henryzhang-piper-ucla-bs16-40k-r2-step030000-gr00t-n17",
+  "author": "HenryZhang",
+  "url": "https://huggingface.co/HenryZhang/piper-ucla-bs16-40k-r2-step030000-gr00t-n17",
+  "created_at": "2026-11-26T00:24:00.000Z",
+  "updated_at": "2026-11-26T00:26:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:thecqzzz/piper_vla_ucla",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576235424,
+  "storage_human": "12.6 GB",
+  "context_length": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

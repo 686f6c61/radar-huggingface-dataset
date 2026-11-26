@@ -2,137 +2,125 @@
 
 ## Resumen
 
-XHToken-Spark-X2.5-4B-GGUF es la version cuantizada en formato GGUF (Q4_K_M) del modelo XHToken/Spark-X2.5-4B, publicada por el usuario sigmanih a traves de su herramienta Sigma Studio (tambien conocida como SigmaEngine). Se trata de un modelo de generacion de texto conversacional de aproximadamente 4.112 millones de parametros, distribuido con un peso en disco de 2,42 GB y pensado para ejecutarse en hardware modesto: la propia model card indica que funciona con GPU de 6-8 GB de VRAM o con unos 3,9 GB de RAM en modo CPU/hibrido.
+XHToken-Spark-X2.5-4B-GGUF es la distribucion en formato GGUF del modelo XHToken/Spark-X2.5-4B, publicada por el usuario sigmanih a traves de su herramienta Sigma Studio. Se trata de un modelo de generacion de texto de tipo causal (CausalLM) con 4.112.079.360 parametros, pensado para despliegue en dispositivos con recursos limitados. La version cuantizada Q4_K_M ocupa aproximadamente 2,6 GB en el repositorio, lo que lo hace viable en GPUs de consumo con 6-8 GB de VRAM o en CPU.
 
-El modelo declara una arquitectura base denominada `spark2_5`, con 36 capas y una dimension oculta de 2560, y una ventana de contexto de 1.048.576 tokens. Soporta dos modos de inferencia: respuesta directa (No-Thinking) y razonamiento paso a paso (Deep Thinking CoT), ademas de un protocolo de tool calling evaluado por el autor. Los idiomas declarados son ingles (en) e italiano (it).
+El modelo declara una ventana de contexto de 32.768 tokens y soporte para ingles e italiano, segun las etiquetas del repositorio. Su orientacion es conversacional y de agentes, con un protocolo de tool calling evaluado por el propio autor. La relevancia actual radica en su perfil de "edge model": un 4B que aspira a funcionar en tiempo real para agentes de voz y entornos con poca memoria, aunque los resultados publicados son modestos y deben interpretarse con cautela.
 
-Su relevancia potencial reside en la combinacion de tamano reducido, cuantizacion de 4 bits y contexto declarado de un millon de tokens, orientada a agentes de voz en tiempo real y despliegue en dispositivos de borde. Sin embargo, el repositorio no tiene descargas ni valoraciones, no existe publicacion cientifica asociada y los benchmarks publicados se han medido sobre porciones muy pequenas de cada suite, por lo que las cifras deben interpretarse como preliminares y no comparables con evaluaciones completas.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del autor. No hay paper, blog tecnico ni documentacion independiente sobre el entrenamiento, por lo que muchos datos de arquitectura y datos de entrenamiento quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `spark2_5` (no se detalla si es transformer denso, MoE o hibrida); 36 capas, dimension oculta 2560 |
-| Parametros totales | 4.112.079.360 (4,11 B), dato de safetensors |
-| Parametros activos | No disponible. La model card indica "Active Parameters: 4B" sin especificar que la arquitectura sea MoE |
-| Longitud de contexto | 1.048.576 tokens segun la model card (no verificado de forma independiente) |
-| Tipos de cuantizacion | Repositorio publicado unicamente en GGUF Q4_K_M; no se listan otras cuantizaciones |
-| Idiomas soportados | Ingles (en) e italiano (it) |
-| Licencia | `other` en los metadatos de Hugging Face; la model card muestra un badge de Apache-2.0. Discrepancia sin resolver |
-| Formato de pesos | GGUF (Q4_K_M) |
+| Arquitectura | CausalLM (transformer causal, detalles no disponibles) |
+| Parametros totales | 4.112.079.360 (~4B) |
+| Parametros activos | no disponible (no se declara MoE) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | GGUF Q4_K_M (unica variante publicada en este repo) |
+| Idiomas soportados | Ingles (en), italiano (it) |
+| Licencia | other (la model card muestra un badge Apache-2.0, pero el campo de licencia del repo es "other"; discrepancia sin aclarar) |
+| Formato de pesos | GGUF |
 | Modelo base | XHToken/Spark-X2.5-4B |
-| Tamano del repositorio | 2,6 GB (huella en disco declarada: 2,42 GB) |
-| Herramienta de publicacion | Sigma Studio / SigmaEngine (autor: sigmanih) |
+| Tamano del repositorio | 2,6 GB |
+| VRAM estimada (offload completo) | ~4,0 GB |
+| RAM estimada (CPU/hibrido) | ~3,6 GB |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la proporcionada en la tabla de especificaciones de la model card: arquitectura base `spark2_5`, 36 capas de transformer, dimension oculta 2560 y 4.112 millones de parametros totales. No se especifica si se trata de un transformer denso, de una mezcla de expertos (MoE) o de una arquitectura hibrida, ni se detalla el mecanismo de atencion, el tokenizador, el vocabulario o la estrategia de extension de contexto empleada para alcanzar los 1.048.576 tokens declarados.
+La informacion disponible indica que el modelo base es un CausalLM, es decir, un transformer decoder-only con atencion causal estandar. No se especifica si emplea atencion lineal, decodificacion especulativa, atencion por ventanas o alguna variante hibrida. Tampoco se detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el vocabulario. La model card describe la variante GGUF como "optimizada y publicada" mediante el modulo Model Hub de Sigma Studio, sin aportar detalles sobre el proceso de cuantizacion mas alla del identificador Q4_K_M.
 
-Tampoco hay informacion sobre el proceso de entrenamiento: no se indica el numero de tokens, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste por instrucciones, ni los datos de la cuantizacion mas alla del hecho de que el repositorio contiene pesos GGUF Q4_K_M derivados de XHToken/Spark-X2.5-4B. La presencia de dos modos de operacion (No-Thinking y Deep Thinking CoT) sugiere un ajuste posterior orientado a razonamiento y a control del presupuesto de tokens de pensamiento, pero el autor no documenta el procedimiento. No se declara ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, destilacion) en la informacion disponible.
+Respecto al entrenamiento, no se publican datos sobre el numero de tokens, la composicion del dataset, el uso de RLHF, DPO o instruccion tuning. La unica informacion de evaluacion es la que el autor incluye en la model card, generada con su propio motor (SigmaEngine) y su propio protocolo (code_execution, continuation_logprob, cot_generation, letter_logprob, temperatura 0.0, semilla 42). No hay evidencia independiente que valide estos resultados. El modelo declara un modo de razonamiento "Deep Thinking" (chain-of-thought) frente a un modo directo "No-Thinking", con una diferencia declarada de +2,6 puntos porcentuales a favor del CoT.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles e italiano.
-- Dos modos de inferencia: "No-Thinking" (respuesta directa, sin tokens de razonamiento) y "Deep Thinking" (traza de razonamiento CoT paso a paso). Segun el autor, el modo CoT aporta +2,6 puntos porcentuales de precision a cambio de mayor latencia.
-- Razonamiento logico y cientifico basico: 100% en las porciones evaluadas de ARC-Challenge (9/9) y BIG-Bench Hard (7/7), y 9/9 en GSM8K.
-- Generacion de codigo Python: 57% en HumanEval (4/7) y 67% en MBPP (6/9), siempre sobre subconjuntos reducidos.
-- Tool calling / function calling: el autor declara una adherencia al protocolo de herramientas del 79,3% y "cero funciones alucinadas", pero el mismo informe muestra 0/92 criterios analiticos verificados y 0,0% de completado autonomo de tareas.
-- Capacidades de agente multi-paso: no verificadas en la practica; el unico escenario autonomo evaluado no se completo.
-- Capacidades multilingues: limitadas a en e it; no se declara soporte de castellano.
-- Vision, audio, OCR o multimodalidad: no disponibles / no declaradas.
-- Cumplimiento de limites de sandbox: 100% declarado (ningun intento de escape del espacio de trabajo aislado).
+- Generacion de texto conversacional multi-turno, orientada a dialogos.
+- Razonamiento con modo chain-of-thought opcional ("Deep Thinking") frente a respuesta directa ("No-Thinking").
+- Tool calling y function calling: la model card reporta un 79,3% de adherencia al protocolo de herramientas en pruebas del propio autor.
+- Ejecucion de tareas agente multi-paso en un sandbox de sistema de ficheros (creacion, inspeccion, modificacion y busqueda de archivos).
+- Generacion de codigo en Python (evaluado con HumanEval y MBPP por el autor).
+- Razonamiento matematico basico y de competicion (GSM8K y MATH en la evaluacion del autor).
+- Capacidades multilingues limitadas a ingles e italiano segun las etiquetas del repositorio.
+- No se declaran capacidades de vision, audio ni modalidades adicionales.
 
 ## Casos de uso
 
-- Agentes de voz en tiempo real en el borde: el modo No-Thinking evita tokens de razonamiento y el autor indica latencia minima con generacion inmediata del primer token, por lo que encaja en asistentes de voz locales sobre GPU de 6-8 GB.
-- Asistente conversacional offline en portatil: con 2,42 GB de pesos y ~3,9 GB de RAM en modo CPU/hibrido, puede ejecutarse en equipos sin GPU dedicada mediante llama.cpp, util para entornos sin conectividad o con requisitos de privacidad.
-- Procesamiento de documentos extensos en ingles o italiano: la ventana declarada de 1.048.576 tokens permitiria, en teoria, resumir o consultar expedientes completos sin fragmentacion; requiere verificacion real de memoria y calidad en contextos largos.
-- Generacion asistida de codigo Python en pipelines internos: con 57% en HumanEval y 67% en MBPP sobre subconjuntos pequenos, es apto como autocompletado o generador de borradores con revision humana, no como sustituto de un modelo de codigo especializado.
-- Chat de atencion al cliente en italiano o ingles: el formato GGUF Q4_K_M permite desplegarlo en una sola GPU de gama media con coste bajo por token, gestionando conversaciones multi-turno.
-- Evaluacion y prototipado de pipelines RAG locales: al ser un modelo pequeno y cuantizado, sirve para validar recuperacion aumentada en hardware de desarrollo antes de escalar a modelos mayores.
-- Clasificacion y resumen de texto en aplicaciones embebidas: con 4,11 B de parametros y cuantizacion de 4 bits, es viable en dispositivos de borde y moviles con memoria limitada.
-- Experimentacion con modos de razonamiento: la conmutacion No-Thinking/CoT permite comparar coste-latencia frente a precision en tareas de logica o matematicas basicas.
+- Agentes de voz en tiempo real: el modelo cabe en ~4 GB de VRAM y esta pensado para latencia baja en modo directo, lo que permite integrarlo en pipelines de ASR + LLM + TTS en dispositivos edge o servidores modestos.
+- Asistentes conversacionales en italiano e ingles: su ventana de 32.768 tokens permite mantener historiales de conversacion largos sin truncar, adecuado para atencion al cliente en esos dos idiomas.
+- Automatizacion de tareas sobre sistemas de ficheros: la evaluacion del autor en sandbox muestra capacidad para crear, inspeccionar y modificar archivos mediante tool calling, util para scripts de mantenimiento o asistentes de desarrollo locales.
+- Prototipado rapido en portatiles: con cuantizacion Q4_K_M y ~3,6 GB de RAM en modo CPU/hibrido, permite probar flujos de agentes sin GPU dedicada.
+- Generacion de codigo asistida en entornos con restricciones de memoria: soporta Python y tool calling, por lo que puede integrarse en editores o pipelines ligeros, aunque su pass@1 reportado en HumanEval es del 57%.
+- Filtrado y clasificacion de texto en produccion: su tamano reducido permite desplegar muchas instancias en paralelo para tareas de etiquetado, resumen o extraccion, con coste de inferencia bajo.
+- Educacion y tutoria automatizada en matematicas basicas: el autor reporta buenos resultados en GSM8K (9/9 en su protocolo), lo que lo hace candidato para ejercicios de primaria y secundaria, con supervision humana.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (Sigma Studio Training Lab, seed 42, temperatura 0, motores `code_execution`, `continuation_logprob`, `cot_generation`, `letter_logprob`; hash de reproducibilidad `SHA256-7D9AD07F135D2701`). El propio autor advierte que las puntuaciones se han medido sobre una porcion de cada suite y no son comparables con ejecuciones de la suite completa.
+Los unicos datos disponibles son los publicados por el autor en la model card, generados con su propio motor y protocolo. No hay validacion independiente.
 
-| Suite | Dominio | Correctas / Total | Precision |
-|---|---|---|---|
-| ARC-Challenge | Ciencia y razonamiento escolar | 9 / 9 | 100% |
-| BIG-Bench Hard | Logica compleja y simbolica | 7 / 7 | 100% |
-| GSM8K | Matematicas escolares multi-paso | 9 / 9 | 100% |
-| MATH | Matematicas de competicion | 6 / 9 | 67% |
-| MBPP | Programacion Python con tests | 6 / 9 | 67% |
-| TruthfulQA | Factualidad y anti-alucinacion | 6 / 9 | 67% |
-| HumanEval | Codigo Python (pass@1) | 4 / 7 | 57% |
-| MMLU | Conocimiento general multi-materia | 5 / 14 | 36% |
-| HellaSwag | Sentido comun y NLI situacional | 3 / 9 | 33% |
-| MMLU-Pro | Razonamiento avanzado multi-paso | 3 / 9 | 33% |
-| GPQA | Razonamiento academico de posgrado | 1 / 9 | 11% |
-| Total agregado | Todas las suites evaluadas | 59 / 100 | 59% |
-
-Comparacion de modos de razonamiento:
-
-| Modo | Precision | Preguntas superadas | Perfil operativo declarado |
-|---|---|---|---|
-| No-Thinking (respuesta directa) | 57,9% | 33 / 57 | Latencia minima, sin tokens de razonamiento |
-| Deep Thinking (CoT) | 60,5% | 26 / 43 | Traza estructurada multi-paso, +2,6 puntos |
-
-Benchmark de protocolo de herramientas y agentes (Sandbox Jail):
-
-| Metrica | Resultado | Criterio de validacion |
+| Benchmark | Resultado reportado | Preguntas evaluadas |
 |---|---|---|
-| Adherencia al protocolo de herramientas | 79,3% | 0 / 92 criterios analiticos verificados |
-| Completado autonomo de tarea | 0,0% | 0 / 1 escenarios completados con el fichero objetivo exacto |
-| Contencion en el sandbox | 100% conforme | Cero intentos de escape del espacio de trabajo |
-| Eficiencia de ejecucion | 0 turnos (0,0 s) | Uso optimo de turnos y presupuesto de tokens |
+| ARC-Challenge | 100% | 9/9 |
+| BIG-Bench Hard | 100% | 7/7 |
+| GPQA | 11% | 1/9 |
+| GSM8K | 100% | 9/9 |
+| HellaSwag | 33% | 3/9 |
+| HumanEval (pass@1) | 57% | 4/7 |
+| MATH | 67% | 6/9 |
+| MBPP | 67% | 6/9 |
+| MMLU | 36% | 5/14 |
+| MMLU-Pro | 33% | 3/9 |
+| TruthfulQA | 67% | 6/9 |
+| Total agregado | 59% | 59/100 |
 
-Los resultados deben leerse con cautela: cada suite se ha evaluado con entre 7 y 14 preguntas, los agregados mezclan dominios muy distintos y el informe de agentes contiene afirmaciones internamente contradictorias (79,3% de adherencia frente a 0/92 criterios verificados y 0% de tareas completadas).
+| Modo de ejecucion | Precision reportada | Preguntas superadas |
+|---|---|---|
+| No-Thinking (directo) | 57,9% | 33/57 |
+| Deep Thinking (CoT) | 60,5% | 26/43 |
+
+| Metrica de agente (sandbox) | Resultado |
+|---|---|
+| Adherencia al protocolo de herramientas | 79,3% (73/92 criterios) |
+| Completitud autonoma de tareas | 50,0% (4/8 escenarios) |
+| Contencion en sandbox | 100% conforme |
+| Eficiencia de ejecucion | 84 turnos (164,5 s) |
+
+Advertencia: los tamanos de muestra son muy pequenos (entre 7 y 14 preguntas por benchmark) y el protocolo es propio del autor, por lo que estos numeros no son comparables con evaluaciones estandar de la comunidad.
 
 ## Requisitos de hardware
 
-- VRAM declarada para inferencia: ~4,1 GB con descarga completa en GPU (full offload); ~3,9 GB de RAM en modo CPU/hibrido.
-- GPU recomendada por el autor: cualquier GPU con 6-8 GB de VRAM. En la practica, encaja en RTX 3060, RTX 4060, RTX 2060 6 GB, GTX 1660 6 GB, Tesla T4, Apple Silicon con memoria unificada de 8 GB o superior.
-- Sistema: 16 GB de RAM recomendados si se ejecuta en CPU o de forma hibrida.
-- Tamano: 2,42 GB en disco (2,6 GB de repositorio), lo que permite incluirlo en imagenes de contenedor ligeras o en dispositivos de borde.
-- Advertencia sobre el contexto: la cifra de ~4,1 GB de VRAM corresponde a contextos cortos; activar la ventana declarada de 1.048.576 tokens incrementaria la cache KV de forma proporcional y no esta cuantificada en la informacion disponible.
-- Opciones de despliegue: llama.cpp (etiqueta explicita del repositorio). Compatible con el ecosistema GGUF habitual (Ollama, LM Studio, llama-cpp-python). La etiqueta `endpoints_compatible` indica compatibilidad con endpoints gestionados de Hugging Face. Soporte de vLLM, TGI u otros servidores de alto rendimiento: no documentado.
-- Latencia y throughput: no disponibles. La model card solo ofrece una descripcion cualitativa ("latencia minima, primer token inmediato") sin cifras de tokens por segundo.
+- VRAM estimada para inferencia: ~4,0 GB con offload completo en GPU (cuantizacion Q4_K_M).
+- RAM estimada en modo CPU o hibrido: ~3,6 GB.
+- GPU recomendadas por el autor: GPU con 6-8 GB de VRAM, o 16 GB de RAM de sistema en modo CPU.
+- Cabe en GPUs de consumo: si, en RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070 y similares; tambien en GPUs integradas con suficiente memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; la model card menciona compatibilidad con endpoints y el motor propietario SigmaEngine.
+- Latencia y throughput: no se publican cifras de tokens por segundo. La unica referencia temporal es la evaluacion de agente (164,5 s para 84 turnos en el entorno del autor), que no equivale a throughput de inferencia.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye resultados comparativos frente a modelos de terceros, por lo que no es posible cumplimentar una comparativa sin inventar datos. Se indica a continuacion lo unico verificable y se senalan las celdas vacias.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| XHToken-Spark-X2.5-4B-GGUF | ~4B | 32.768 | other | GGUF | Evaluacion solo del autor, muestras pequenas |
+| Qwen2.5-3B-Instruct | ~3B | 32.768 | Apache-2.0 | safetensors, GGUF | Amplia validacion comunitaria y benchmarks publicos |
+| Llama-3.2-3B-Instruct | ~3B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | Contexto mucho mayor, ecosistema amplio |
+| Phi-3.5-mini-instruct | ~3,8B | 128.000 | MIT | safetensors, GGUF | Buen rendimiento en razonamiento y codigo |
 
-| Criterio | XHToken-Spark-X2.5-4B-GGUF | Alternativas de ~3-4 B (Qwen2.5-3B, Llama-3.2-3B, Phi-3.5-mini) |
-|---|---|---|
-| Parametros | 4,11 B | no disponible en la informacion proporcionada |
-| Contexto | 1.048.576 tokens (segun el autor) | no disponible en la informacion proporcionada |
-| Rendimiento | 59% en suite parcial propia (100 preguntas) | no disponible; no se han publicado comparaciones cruzadas |
-| Licencia | `other` (badge Apache-2.0 en la model card) | no disponible en la informacion proporcionada |
-| Disponibilidad en GGUF | Si (Q4_K_M) | no disponible en la informacion proporcionada |
+La comparativa se ofrece a nivel de categoria y especificaciones; no se dispone de resultados de benchmarks independientes del modelo XHToken que permitan una comparacion numerica fiable con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Cifras de benchmark sobre muestras minimas: entre 7 y 14 preguntas por suite. Un 100% en ARC-Challenge equivale a 9 respuestas correctas; el margen de error es enorme y los agregados no son comparables con ejecuciones completas, como advierte el propio autor.
-- Rendimiento bajo y probablemente real en conocimiento general y factualidad: 36% en MMLU, 33% en MMLU-Pro, 11% en GPQA y 33% en HellaSwag. No es un modelo adecuado para tareas que exijan conocimiento enciclopedico o razonamiento cientifico avanzado.
-- Evidencia de tool calling no concluyente: el informe declara 79,3% de adherencia al protocolo pero 0/92 criterios verificados y 0,0% de completado autonomo. No debe asumirse que el modelo funcione como agente fiable en produccion.
-- Riesgo de alucinacion: 67% en TruthfulQA sobre 9 preguntas no permite descartar invencion de hechos, especialmente fuera de los dominios evaluados.
-- Contexto de 1M tokens sin verificar: es una cifra inusual para un modelo de ~4 B con 36 capas y dimension oculta 2560; no se documenta la tecnica de extension de contexto ni se aportan pruebas de recuperacion en ventanas largas.
-- Idiomas limitados a ingles e italiano: no se declara soporte de castellano, por lo que su uso en produccion en espanol requeriria evaluacion previa.
-- Licencia ambigua: los metadatos de Hugging Face indican `other` mientras la model card muestra un badge Apache-2.0. Antes de un uso comercial debe aclararse la licencia del modelo base XHToken/Spark-X2.5-4B, que tampoco documenta condiciones en la informacion disponible.
-- Falta de trazabilidad del entrenamiento: sin datos de dataset, numero de tokens, fases de alineacion ni tokenizador, no es posible evaluar sesgos ni procedencia de los datos.
-- Ausencia de validacion externa: 0 descargas y 0 "likes" en el momento de la consulta; no hay evaluaciones independientes ni terceros que reproduzcan los resultados.
-- Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026-09-26) y la nomenclatura "X2.5" no se corresponden con ningun linaje de modelos conocido, lo que refuerza la necesidad de verificar el origen antes de integrarlo.
-- Ambiguedad en "Active Parameters: 4B": se declara sin especificar si la arquitectura es MoE, lo que impide interpretar correctamente el coste real de inferencia.
-- Cuantizacion unica Q4_K_M: no hay variantes de mayor precision (Q8_0, F16) en el repositorio, lo que limita el analisis de la perdida de calidad introducida por la cuantizacion.
+- Los benchmarks publicados proceden exclusivamente del autor, con protocolo propio y muestras de 7 a 14 preguntas por suite; no son estadisticamente representativos ni comparables con evaluaciones estandar.
+- Resultados bajos en MMLU (36%), MMLU-Pro (33%), HellaSwag (33%) y GPQA (11%) sugieren conocimiento general y razonamiento avanzado limitados; riesgo alto de alucinacion en preguntas factuales o academicas.
+- Solo se declaran ingles e italiano; no hay soporte documentado de castellano ni de otros idiomas.
+- La licencia figura como "other" en el repositorio, aunque la model card muestra un badge Apache-2.0. Esta discrepancia debe resolverse antes de cualquier uso comercial; no se puede asumir Apache-2.0 sin confirmacion del autor.
+- No hay informacion sobre sesgos, datos de entrenamiento ni procesos de alineacion (RLHF/DPO), lo que impide evaluar riesgos de sesgo sistematico.
+- El modelo base (XHToken/Spark-X2.5-4B) no cuenta con documentacion tecnica publica verificable; la trazabilidad del entrenamiento es nula.
+- En tareas de agente, la completitud autonoma reportada es del 50% (4/8 escenarios), lo que exige supervision humana en produccion.
+- El contexto de 32.768 tokens es inferior al de alternativas contemporaneas de tamano similar (128K en Llama-3.2-3B o Phi-3.5-mini).
+- El repositorio tiene muy poca traccion (273 descargas, 1 like en el momento de la consulta), lo que reduce la probabilidad de que los fallos hayan sido detectados por la comunidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
-- Repositorio de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Repositorio Sigma Studio en GitHub: https://github.com/Sigmanih/SigmaStudio
 - Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
-- Licencia Apache-2.0 citada en el badge de la model card: https://opensource.org/licenses/Apache-2.0
-- Paper o publicacion tecnica: no disponible
-- Demo o espacio interactivo: no disponible
+- Repositorio citado en la model card (variante Q4_K_M): https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF_Q4_K_M

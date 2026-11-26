@@ -2,100 +2,100 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-FP8 es una cuantizacion de pesos en FP8 del modelo multimodal SenseNova-Loop-9B, publicado por el usuario letechlead. El modelo original, desarrollado por SenseNova, es un decodificador multimodal de 9.412.963.952 parametros construido sobre una arquitectura de transformer con bucles (looped transformer): 32 capas fisicas que se ejecutan como 56 pasadas de capa, con atencion hibrida lineal/completa y un esquema de dos flujos denominado mHC. Esta pensado para generacion de texto e imagen-texto-a-texto en ingles y chino.
+SenseNova-Loop-9B-FP8 es una cuantizacion en FP8 de los pesos del modelo multimodal SenseNova-Loop-9B, desarrollado originalmente por SenseNova y cuantizado por el usuario LeTechLead. Se trata de un decodificador multimodal de 9.412.963.952 parametros (aproximadamente 9,4 mil millones) que combina un transformer con capas "looped" (32 capas fisicas ejecutadas como 56 pasadas de capa), atencion hibrida lineal/completa y un esquema de dos flujos mHC. El checkpoint reduce el peso de 18,83 GB en BF16 a 11,56 GB en FP8, una reduccion del 38,6 %, manteniendo la semantica del modelo original.
 
-La relevancia de esta version concreta es practica: reduce el peso del checkpoint de 18,83 GB en BF16 a 11,55 GB en FP8 (un 38,7% menos), manteniendo el diseno de cuantizacion block-wise compatible con el esquema de los releases oficiales FP8 de Qwen. Esto permite cargar el modelo en una unica RTX 4090 de 24 GB, algo que en BF16 resulta mas ajustado.
+La relevancia de esta version radica en que permite servir un modelo multimodal de 9B con contexto muy largo (hasta 160.000 tokens) en una unica GPU de consumo de 24 GB, como una RTX 3090, mediante vLLM con kernels Marlin W8A16. El autor reporta paridad casi exacta con la version BF16 en generacion greedy para matematicas y codigo, y una prueba de recuperacion de informacion (needle-in-a-haystack) satisfactoria a 159.119 tokens.
 
-El checkpoint esta pensado para motores de inferencia con soporte nativo de FP8 (vLLM y SGLang mediante PRs especificos para esta arquitectura). Para transformers, el codigo de modelado personalizado carga en BF16, por lo que el autor incluye un script de dequantizacion a BF16 verificado. La licencia es Apache-2.0, heredada del modelo original.
+La cuantizacion es weight-only, sin datos de calibracion, con escalas por bloque de 128x128 y formato e4m3fn, siguiendo el esquema de los releases FP8 oficiales de Qwen. La licencia es Apache-2.0, heredada del modelo base, lo que facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con bucles (looped transformer), atencion hibrida lineal/full, dos flujos mHC, vision encoder |
+| Arquitectura | Transformer con capas looped (32 capas fisicas, 56 pasadas), atencion hibrida lineal/full, dos flujos mHC, vision encoder |
 | Parametros totales | 9.412.963.952 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 e4m3fn block-wise (128x128), peso-only; BF16 en tensores no cuantizados; variante AWQ oficial del modelo base |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Longitud de contexto | hasta 160.000 tokens (probado en vLLM; KV cache de 184.258 tokens a 0,93 de utilizacion) |
+| Tipos de cuantizacion | FP8 e4m3fn weight-only, escalas por bloque 128x128 (weight_scale_inv), sin calibracion; pesos sensibles en BF16/FP32 |
+| Idiomas soportados | ingles (en) y chino (zh) segun tags de la model card |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (FP8 con `weight_scale_inv`), compatible con esquema Qwen FP8 |
+| Formato de pesos | safetensors (FP8 + BF16/FP32 mixtos), compatible con transformers y vLLM (fork) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un decodificador multimodal con 32 capas fisicas que se ejecutan como 56 pasadas de capa (looping), lo que incrementa la profundidad efectiva sin aumentar el numero de parametros. Combina atencion completa con atencion lineal Gated-DeltaNet (con parametros `in_proj_a/b/qkv/z`, `out_proj`, `conv1d`, `A_log` y `dt_bias`) y emplea un esquema de enrutamiento de dos flujos denominado mHC (`mhc_attn` y `mhc_ffn`) junto con una compuerta de bucle (`loop_gate`). Incluye un encoder de vision con patch embedding, posicional y bloques de atencion y MLP, ademas de un merger para proyectar caracteristicas visuales al espacio del decodificador.
+El modelo base es un decodificador multimodal con una arquitectura poco convencional: 32 capas fisicas que se ejecutan como 56 pasadas de capa ("looped transformer"), lo que aumenta la profundidad efectiva sin incrementar el numero de parametros. Incorpora atencion hibrida que combina atencion completa con atencion lineal del tipo Gated-DeltaNet, y un esquema de enrutamiento denominado mHC con dos flujos (mhc_attn y mhc_ffn) mas una compuerta de bucle (loop_gate) en FP32. Incluye ademas un codificador de vision con 27 bloques (0-26), merger, patch_embed y pos_embed para el procesamiento de imagenes.
 
-Esta version FP8 no reentrena ni calibra: aplica cuantizacion de pesos post-entrenamiento con escala absmax por bloque de 128x128, manteniendo en BF16 las normas, embeddings, `lm_head`, los parametros de la atencion lineal (`conv1d`, `A_log`, `dt_bias`), los tres primeros bloques de vision y el merger. El enrutamiento mHC y `loop_gate` se conservan en FP32, igual que en el original. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO.
+La cuantizacion FP8 afecta a las proyecciones q/k/v/o de la atencion completa, a in_proj_qkv/z y out_proj de la atencion lineal, a las proyecciones gate/up/down del MLP y a los bloques de vision 3-26. Se mantienen en BF16 los embeddings, lm_head, todas las normas, conv1d, A_log, dt_bias, in_proj_a/in_proj_b (por requisitos de alineacion de 128 filas en la ruta Marlin), los bloques de vision 0-2, merger, patch_embed y pos_embed; el enrutamiento mHC y loop_gate permanecen en FP32. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles y chino.
-- Razonamiento multi-paso (el autor verifica prompts de razonamiento con respuesta correcta).
-- Generacion de codigo (verificado con generacion greedy identica al BF16 en 160/160 tokens).
-- Matematicas (verificado con respuesta identica en 3/3 tokens).
-- Comprension de imagen y texto (image-text-to-text): descripcion de formas y lectura de texto en imagenes sinteticas.
-- Modo thinking desactivable (las verificaciones se realizaron con thinking off).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes: no disponible en la informacion proporcionada.
+- Razonamiento y matematicas: el autor verifica respuestas correctas en prompts de matematicas y razonamiento.
+- Generacion de codigo: verificacion con 160 de 160 tokens identicos en generacion greedy frente a BF16.
+- Procesamiento de imagen y texto (pipeline image-text-to-text): incluye codificador de vision y prueba de descripcion de imagenes superada.
+- Contexto largo: recuperacion de informacion (needle-in-a-haystack) a 159.119 tokens desde posiciones al 50 % y 95 %.
+- Capacidad multimodal de entrada (imagen + texto); no se especifica soporte de audio ni de video.
+- No se documenta explicitamente soporte de tool calling, function calling ni modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue en una unica GPU de consumo: con 11,55 GB de pesos FP8, el modelo cabe en una RTX 4090 de 24 GB dejando margen para cache KV y overhead, lo que permite servir un modelo multimodal de 9B en hardware de estacion de trabajo.
-- Asistente multimodal de escritorio: procesamiento de capturas de pantalla o imagenes junto con preguntas en ingles o chino, aprovechando el encoder de vision y el decodificador bucleado.
-- Generacion de codigo en pipelines internos: el autor verifica fidelidad token a token frente a BF16 en generacion greedy, lo que respalda su uso en tareas de codigo donde la reproducibilidad importa.
-- Razonamiento y matematicas en entornos con presupuesto de VRAM limitado: el modo thinking desactivable permite alternar entre respuestas rapidas y cadenas de razonamiento segun la carga.
-- Evaluacion comparativa de cuantizacion: util como referencia para medir el impacto de FP8 block-wise frente a BF16 en arquitecturas bucleadas, con script de dequantizacion incluido.
-- Prototipado de aplicaciones bilingues en y zh: el modelo cubre ambos idiomas, adecuado para demos y pruebas de concepto antes de escalar a variantes mayores.
-- Servicio en vLLM o SGLang: el checkpoint sigue el esquema de los releases FP8 de Qwen, por lo que puede integrarse en motores con soporte FP8 una vez validados los kernels de esta arquitectura.
+- Analisis de documentos extensos con imagenes: el modelo puede procesar hasta 160.000 tokens de contexto, lo que permite ingerir informes, contratos o articulos con figuras y tablas en una sola pasada, manteniendo coherencia en la recuperacion de datos concretos gracias a la prueba needle-in-a-haystack superada.
+- Asistencia tecnica bilingue ingles-chino: adecuado para equipos que atienden a usuarios en ambos idiomas, con conversaciones multi-turno y contexto largo para mantener el historial completo de la sesion.
+- Generacion de codigo en entornos con GPU limitada: al caber en una RTX 3090 de 24 GB, permite desplegar un asistente de codigo autoalojado con cuantizacion FP8 y throughput de decodificacion de 43 t/s en un solo request.
+- Descripcion y extraccion de informacion de imagenes: el pipeline image-text-to-text permite generar descripciones, resumir capturas o extraer datos de graficos en flujos de documentacion automatizada.
+- Razonamiento matematico asistido: util para tutoria o verificacion de problemas paso a paso, con respuestas verificadas como correctas en las pruebas del autor.
+- Despliegue en produccion con vLLM: la integracion con el fork de vLLM y el soporte de concurrencia (hasta 158,4 t/s agregados con 8 requests) lo hacen viable para servicios con carga moderada en hardware de consumo o profesional de gama media.
+- Investigacion sobre arquitecturas looped: al ser una cuantizacion fiel del modelo base, sirve como banco de pruebas para estudiar el comportamiento de transformers con capas reutilizadas en tareas multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta verificaciones de fidelidad frente al modelo BF16:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor proporciona metricas de verificacion y de serving:
 
 | Metrica | Resultado |
 |---|---|
-| Error relativo L2 medio de pesos (FP8 dequant vs BF16) | 2,64% |
-| Error relativo L2 maximo de pesos | 2,66% |
-| Similitud coseno de logits (ultima posicion) | 0,9996 |
-| Similitud coseno de logits (media por posicion) | 0,9998 |
-| Generacion greedy math | 3/3 tokens identicos |
-| Generacion greedy code | 160/160 tokens identicos |
-| Generacion greedy chino | 20 tokens identicos, luego parafrasis equivalente |
-| Generacion greedy razonamiento | 59 tokens identicos, luego pasos equivalentes, misma respuesta final |
+| Error relativo L2 medio de pesos (BF16 vs FP8 dekuantizado) | 2,64 % (maximo 2,66 %) |
+| Generacion greedy identica en matematicas | 3/3 prompts |
+| Generacion greedy identica en codigo | 160/160 tokens |
+| Similitud coseno de logits con entrada fija | 0,9996 (top-1 coincidente) |
+| Needle-in-a-haystack a 159.119 tokens | recuperado en posiciones 50 % y 95 % |
+| Prefill (RTX 3090, profundidad 0) | 2.251,9 t/s |
+| Decode (RTX 3090, profundidad 0) | 43,11 t/s |
+| Decode (RTX 3090, profundidad 131.072) | 25,04 t/s |
+| Throughput agregado a 1/2/4/8 requests | 42,7 / 74,8 / 114,5 / 158,4 t/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 11,55 GB solo para pesos FP8; en BF16 tras dequantizar, unos 18,83 GB.
-- GPU recomendadas: RTX 4090 (24 GB) validada por el autor para la verificacion; A100 y H100 son adecuadas por capacidad, aunque no se han validado explicitamente.
-- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con FP8; en BF16 el margen es mucho menor.
-- Despliegue: vLLM mediante PR #64832 y SGLang mediante PR #47281 (soporte de la arquitectura SenseNova-Loop, cobertura de kernels FP8 no verificada upstream); transformers con dequantizacion a BF16 mediante el script incluido; llama.cpp, Ollama y TGI no estan documentados para esta arquitectura.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: pesos FP8 residentes de 10,46 GiB en vLLM; KV cache de 9,55 GiB para 160.000 tokens (10,08 GiB a 0,93 de utilizacion, 184.258 tokens).
+- Cabe en GPU de consumo: si, en una RTX 3090 de 24 GB con kernels Marlin W8A16; tambien en GPUs con soporte nativo FP8 (sm89+) como RTX 4090, que usan kernels FP8 nativos.
+- GPU recomendadas: RTX 3090 (24 GB) para serving FP8 con Marlin; RTX 4090 o superiores para kernels FP8 nativos; A100/H100 para mayor concurrencia y throughput.
+- Opciones de despliegue: vLLM mediante el fork LeTechLead/vllm rama `sensenova-loop-fp8` (requiere torch 2.14.0+cu130 y compilacion desde fuente con `TORCH_CUDA_ARCH_LIST=8.6`); transformers 5.18.0 con torch 2.11.0+cu130 para carga BF16 tras dekuantizar con `dequant_to_bf16.py`; para BF16 nativo o 4 bits, usar los releases oficiales del modelo base y su variante AWQ.
+- Latencia y throughput: TTFT de 1,82 s a profundidad 0 y 92,59 s a 131.072 tokens en RTX 3090; decodificacion de 43,11 t/s a profundidad 0 y 25,04 t/s a 131.072 tokens. No se recomienda `--enforce-eager`, ya que reduce el throughput de decodificacion aproximadamente 2,7 veces.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-FP8 (este) | 9,41B | no disponible | FP8 safetensors | Apache-2.0 | Cuantizacion comunitaria, verificada frente a BF16 |
-| sensenova/SenseNova-Loop-9B | 9,41B | no disponible | BF16 safetensors | Apache-2.0 | Modelo base oficial |
-| Variante AWQ oficial de SenseNova-Loop-9B | 9,41B | no disponible | AWQ | Apache-2.0 | Cuantizacion de 4 bits oficial, recomendada por el autor para despliegue 4-bit |
-| Qwen3-32B-FP8 | 32B | no disponible | FP8 safetensors | Apache-2.0 | Referencia de esquema de cuantizacion FP8 (no es multimodal ni bucleado) |
+| SenseNova-Loop-9B-FP8 | 9,41B | 160k (probado) | Apache-2.0 | Hugging Face, vLLM (fork) | Cuantizacion FP8 weight-only, multimodal |
+| SenseNova-Loop-9B (base) | 9,41B | no disponible | Apache-2.0 | Hugging Face | Version BF16 original, mayor huella de VRAM |
+| Qwen3-32B-FP8 | 32B | no disponible | no disponible en la informacion | Hugging Face | Referencia de esquema de cuantizacion FP8, mayor tamano |
+| Qwen3-VL-FP8 | no disponible | no disponible | no disponible en la informacion | Hugging Face | Referencia de politica de ignorados en vision |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros y formato de cuantizacion.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion FP8 no esta verificada en los kernels de vLLM y SGLang para esta arquitectura; el propio autor indica que BF16 es la ruta documentada en esas ramas.
-- En transformers el modelo se carga en BF16 mediante dequantizacion, lo que anula el ahorro de VRAM de FP8 y requiere unos 19 GB de disco adicionales.
-- El error de pesos del 2,64% puede producir divergencias en generaciones largas (se observaron parafrasis equivalentes a partir de los 20-59 tokens en algunos prompts).
-- Idiomas limitados a ingles y chino; no se declara soporte de castellano.
-- Longitud de contexto no disponible; no debe asumirse una ventana larga sin verificacion.
-- Riesgo de alucinacion inherente a modelos de 9B, no cuantificado en la informacion disponible.
-- Sesgos conocidos: no disponibles.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no hay validacion comunitaria independiente.
-- Requiere `trust_remote_code=True` por el codigo de modelado personalizado.
-- Licencia Apache-2.0 permite uso comercial, pero la responsabilidad sobre el rendimiento de la cuantizacion recae en el usuario.
+- La cuantizacion es weight-only sin calibracion, por lo que puede introducir divergencias en generacion no greedy; el autor reporta divergencia tardia con contenido equivalente en prompts de chino y razonamiento.
+- El soporte en vLLM requiere un fork no oficial (LeTechLead/vllm, rama `sensenova-loop-fp8`) que elimina una restriccion de carga cuantizada; no es una ruta upstream estable.
+- La compilacion desde fuente exige torch 2.14.0+cu130 y variables de compilacion especificas; en GPUs sin FP8 nativo se depende de la ruta Marlin W8A16.
+- Idiomas documentados limitados a ingles y chino; no se garantiza calidad en castellano ni en otros idiomas.
+- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de sesgo en la informacion disponible.
+- La licencia Apache-2.0 permite uso comercial, pero los pesos originales son (c) SenseNova y la cuantizacion es de LeTechLead; conviene revisar los terminos del modelo base.
+- No se documentan capacidades de tool calling ni de agentes, lo que limita su uso en pipelines que dependan de function calling.
+- El contexto maximo probado es de 160.000 tokens en vLLM; superarlo puede degradar la calidad o exceder la KV cache disponible.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/letechlead/SenseNova-Loop-9B-FP8
+- Hugging Face del modelo: https://huggingface.co/letechlead/SenseNova-Loop-9B-FP8
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- PR de vLLM: https://github.com/vllm-project/vllm/pull/64832
-- PR de SGLang: https://github.com/sgl-project/sglang/pull/47281
+- Fork de vLLM: https://github.com/LeTechLead/vllm/tree/sensenova-loop-fp8
+- PR upstream de vLLM: https://github.com/vllm-project/vllm/pull/64832

@@ -1,109 +1,99 @@
 # staccs/inkling-2-mini-iq4nl-qwork-v2
 
 ## Resumen
+Inkling-2-Mini (IQ4_NL) — Self-Contained In-Weights QWork v2 ONNX Bundle es una derivación cuantizada del modelo base thinkingmachines/Inkling-2-Mini, publicada por el usuario staccs en Hugging Face bajo licencia Apache-2.0. El modelo cuenta con 26.070.385.152 parámetros totales (aproximadamente 26,07 mil millones) y un tamaño de repositorio de 18,2 GB. Se distribuye en formato ONNX y GGUF, y está empaquetado específicamente para su uso con onnxruntime-genai y Foundry Local. La innovación principal de este artefacto no es el modelo lingüístico en sí, sino la incorporación de un circuito de verificación de proof-of-work (QWork) embebido directamente en los pesos del ONNX, que se activa de forma opcional mediante una concesión explícita en el mensaje de sistema.
 
-`staccs/inkling-2-mini-iq4nl-qwork-v2` es una derivación cuantizada del modelo `thinkingmachines/Inkling-2-Mini`, publicada por el usuario `staccs` bajo licencia Apache-2.0. Se distribuye como bundle autocontenido para ONNX Runtime GenAI y Foundry Local, con pesos en formato GGUF (variante IQ4_NL) y un grafo ONNX fusionado (`actual-merged.onnx`). El modelo base cuenta con 26.070.385.152 parámetros (aproximadamente 26 000 millones) y una ventana de contexto declarada de 4096 tokens.
+El modelo base, Inkling-2-Mini de Thinking Machines, es un transformer conversacional del que no se dispone de información detallada sobre arquitectura interna, datos de entrenamiento o benchmarks en la documentación proporcionada. La derivación IQ4_NL reduce el peso a 17,63 GB para el archivo GGUF principal, más 0,53 GB para el archivo qwork.bin, lo que permite su despliegue en sistemas con al menos 24 GB de memoria unificada o VRAM, aunque con limitaciones significativas de contexto (4096 tokens máximo) y latencia en hardware de gama consumer.
 
-La particularidad de esta derivación es la incorporación de un circuito determinista de verificación de proof-of-work denominado QWork, embebido directamente en los pesos del grafo ONNX. Este circuito está desactivado por defecto y solo se activa mediante una concesión explícita en el mensaje de sistema (`QWORK_GRANT`), con un límite duro de capacidad de 4. Toda la computación es local, sin actividad de red, cadena de bloques ni cartera, y respeta la cancelación del host.
-
-El interés técnico de este artefacto radica en su enfoque de empaquetado: optimiza el rendimiento del backend WebGPU de ONNX Runtime GenAI reescribiendo 1122 operaciones `Slice` de dequantización a `Gather` nativas, y demuestra que el circuito QWork produce digests idénticos tanto en cuantización IQ4_NL como Q8_0, lo que lo hace independiente de la cuantización. Está pensado para despliegues locales en Foundry Local con memoria unificada limitada.
+La relevancia de esta ficha radica en que documenta un caso poco habitual: un modelo cuantizado que incorpora un mecanismo de verificación determinista y local (sin red, sin cadena de bloques, sin monedero) diseñado para ser resistente a inyección de prompts y con controles explícitos de activación. Esto lo hace relevante para desarrolladores interesados en despliegues locales con garantías de integridad computacional, aunque también plantea caveats importantes sobre rendimiento y complejidad de integración.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Inkling-2-Mini), empaquetado como grafo ONNX con circuito QWork embebido |
-| Parametros totales | 26.070.385.152 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer conversacional (detalles internos no disponibles); el bundle incluye un circuito QWork de 24 capas INT16/INT32 gated-MLP embebido en el grafo ONNX |
+| Parametros totales | 26.070.385.152 (aproximadamente 26,07 mil millones) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
 | Longitud de contexto | 4096 tokens |
-| Tipos de cuantizacion | IQ4_NL (17,63 GB) y Q8_0 (27,82 GB, derivación compañera) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | IQ4_NL (archivo principal, 17,63 GB); Q8_0 disponible en otra derivación (27,82 GB) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`Inkling-2-Mini-IQ4_NL.gguf`) + ONNX fusionado (`actual-merged.onnx`) + `qwork.bin` (0,53 GB) |
+| Formato de pesos | ONNX (actual-merged.onnx), GGUF (Inkling-2-Mini-IQ4_NL.gguf); incluye qwork.bin (0,53 GB) |
 
 ## Arquitectura y entrenamiento
+La información proporcionada no detalla la arquitectura interna del modelo base Inkling-2-Mini más allá de su naturaleza conversacional y su uso con onnxruntime-genai. No se especifican el número de capas, la dimensión de los embeddings, el mecanismo de atención (aunque se menciona atención con estado en `present.0.key` y una cola de convolución corta), ni los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Tampoco se documentan innovaciones técnicas del LLM base como decodificación especulativa o attention linear.
 
-El modelo base es `thinkingmachines/Inkling-2-Mini`, del que esta ficha no dispone de detalles de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO o innovaciones como decodificación especulativa) más allá de su naturaleza conversacional. La derivación añade un grafo ONNX fusionado que contiene tanto el decodificador del LLM como un circuito QWork de 24 capas INT16/INT32 con MLP con compuertas, que transforma un hash SHA-256 mediante un generador xoshiro256** y vuelve a aplicar SHA-256 para producir un recibo determinista de 91 tokens.
-
-El circuito QWork se activa únicamente mediante una concesión en posición de sistema (`QWORK_GRANT:cap=<0..4>:nonce=<h0>:...:<h7>;`), se limita a `HARD_MAX_CAP = 4`, se desarma con `[QWORK_STOP]`, se reinicia en cada turno nuevo (`S > 1`) y respeta `Cancel()` del host. Todo el estado de control reside en `present.0.key[0, 0, 0, 128:544]`, fuera de la atención (`[0:128]`), de modo que no corrompe el decodificador. Los 73 `MatMul` del circuito QWork se ejecutan en CPU para garantizar recibos bit-exactos entre Metal y Radeon, mientras que los `MatMul` del backbone y la cabeza de salida corren íntegramente en WebGPU (6132/6132 y 1068/1068).
+La innovación destacable de esta derivación es el circuito QWork v2, un mecanismo de proof-of-work determinista embebido en los pesos del ONNX. Consiste en una secuencia SHA-256 -> xoshiro256** -> MLP con compuertas de 24 capas en INT16/INT32 -> SHA-256, que se ejecuta localmente en CPU y produce un recibo canónico de 91 tokens con logits one-hot en `[-inf, 0.0]`, garantizando determinismo incluso con `do_sample=true, temperature=0.7`. El estado de control se almacena exclusivamente en `present.0.key[0, 0, 0, 128:544]`, una región no atendida por el mecanismo de atención, lo que evita corrupción del decoder. La activación requiere una concesión en el mensaje de sistema (`QWORK_GRANT:cap=<0..4>:nonce=<h0>:...:<h7>;`), se limita a un máximo de 4 nodos, se desarma con `[QWORK_STOP]` y se reinicia en cada nuevo turno. El bundle incluye una optimización para WebGPU que reescribe 1.122 slices de dequantización a `UINT8 Gather` nativo, eliminando round-trips GPU↔CPU.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno, heredada del modelo base Inkling-2-Mini.
-- Verificación determinista de proof-of-work opcional mediante el circuito QWork embebido, con recibos reproducibles offline (`verify_qwork.py`).
-- Control de activación resistente a inyección de prompt: las concesiones en mensajes de usuario o herramienta se ignoran.
-- Parada a mitad de turno (`[QWORK_STOP]`) y reinicio incondicional por turno para evitar fugas de concesiones entre turnos.
-- Recuperación tras cancelación en streaming (honrada en 2,55 s en IQ4_NL y 2,37 s en Q8_0).
-- Compatibilidad con `do_sample=true, temperature=0.7`: los recibos siguen siendo 100 % deterministas mediante logits one-hot en `[-inf, 0.0]`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con soporte para system prompt, mensajes de usuario y respuestas de asistente.
+- Ejecución opcional de un circuito de proof-of-work determinista (QWork) embebido en los pesos, activable mediante concesión explícita en el mensaje de sistema.
+- Emisión de recibos canónicos de 91 tokens (`[QWORK_RECEIPT v=1 u=<unit> n=<8-hex> d=<64-hex>]`) verificables offline con `verify_qwork.py`.
+- Control de activación resistente a inyección de prompts: las concesiones en mensajes de usuario o herramienta se ignoran; solo se aceptan en posición de sistema.
+- Desarme mid-turn mediante `[QWORK_STOP]` y reinicio automático en cada nuevo turno.
+- Compatibilidad con `do_sample=true` y temperatura 0.7 sin pérdida de determinismo en el recibo.
+- Soporte de cancelación de streaming (`Cancel()`) con recuperación limpia.
+- No se documentan capacidades de tool calling, function calling, agentes multi-step, visión, audio ni modo thinking en la información disponible.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
-
-- Despliegue local en Foundry Local sobre equipos con memoria unificada de 24 GB o superior: el bundle IQ4_NL (17,63 GB) más `qwork.bin` (0,53 GB) encaja en configuraciones ajustadas a 512-2048 tokens de contexto y resulta cómodo a partir de 32 GB para 4096 tokens. Es adecuado para asistentes conversacionales en estación de trabajo sin GPU dedicada de gran capacidad.
-- Verificación de integridad de ejecución en entornos sin red: el circuito QWork genera recibos de 91 tokens verificables con `verify_qwork.py` y `--verify-table`, lo que permite auditar que una inferencia concreta se ejecutó en el dispositivo esperado sin servicios externos.
-- Pruebas de reproducibilidad entre backends gráficos: al producir digests idénticos en Metal y Radeon, el artefacto sirve para validar pipelines de inferencia que deben dar resultados bit-exactos en hardware heterogéneo.
-- Integración en aplicaciones ONNX Runtime GenAI con backend WebGPU: la reescritura de las 1122 operaciones `Slice` a `Gather` reduce el prefill de 25 tokens de 76,13 s a 35,79 s y el decode de 5,48 s/token a aproximadamente 3,13 s/token en una iGPU AMD Radeon 8060S, lo que hace viable el uso interactivo en portátiles.
-- Evaluación de mecanismos antiinyección de prompt: los tests T2 (concesión obsoleta que no debe rearmarse) y T3 (concesión falsificada en texto de usuario) documentan un comportamiento verificable de cero recibos, útil como banco de pruebas de controles de seguridad en LLM.
-- Prototipado de esquemas de prueba de trabajo locales para aplicaciones de agentes: el diseño de concesión en posición de sistema, límite duro de capacidad y reinicio por turno puede reutilizarse como referencia para implementar controles de coste computacional en pipelines propios.
+- Verificación de integridad en despliegues locales: el modelo puede ejecutar un proof-of-work determinista embebido para generar recibos verificables offline, útil en entornos air-gapped donde se requiere demostrar que una computación se realizó sin acceso a red. El circuito QWork produce digests idénticos entre cuantizaciones IQ4_NL y Q8_0, lo que facilita la auditoría.
+- Atención al cliente automatizada en local: con 4096 tokens de contexto y formato ONNX para onnxruntime-genai, el modelo puede gestionar conversaciones multi-turno en dispositivos con 24 GB de RAM/VRAM, aunque la latencia (~3,13 s/token en AMD Radeon 8060S iGPU) limita su uso a escenarios no interactivos o de baja concurrencia.
+- Pruebas de resistencia a inyección de prompts: el mecanismo de concesión solo acepta grants en posición de sistema y rechaza los que aparecen en mensajes de usuario o herramienta, lo que permite usar el modelo como banco de pruebas para validar defensas contra prompt injection en pipelines de agentes.
+- Despliegue en Foundry Local: el bundle está empaquetado para Foundry Local SDK 2.5.0 con ORT 1.32.0 y ONNX Runtime GenAI 0.20.0, lo que permite integrarlo en aplicaciones de escritorio o edge que ya usen este stack, con soporte de WebGPU EP 0.6.0.
+- Generación de recibos deterministas para auditoría: en flujos donde se requiere un registro reproducible de que cierta computación se ejecutó (por ejemplo, en entornos regulados o de investigación), el modelo puede emitir un recibo canónico de 91 tokens que se verifica con `verify_qwork.py` sin red.
+- Experimentación con cuantización IQ4_NL: el artefacto sirve como referencia para estudiar el impacto de la cuantización IQ4_NL en un modelo de ~26B parámetros, con métricas de prefill y decode medidas en hardware consumer (AMD Radeon 8060S iGPU) y comparación con Q8_0.
+- Investigación sobre state no atendido en transformers: el diseño que almacena todo el estado de control en `present.0.key[0, 0, 0, 128:544]` sin afectar la atención (`[0:128]`) es un caso de estudio para técnicas de empaquetado de estado auxiliar en modelos ONNX.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los datos de rendimiento publicados corresponden a latencias medidas del empaquetado ONNX/WebGPU:
+No se han publicado resultados de benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento proporcionados son métricas de inferencia medidas en AMD Radeon 8060S iGPU con WebGPU EP 0.6.0:
 
 | Metrica | Antes | Despues |
 |---|---|---|
 | Prefill de 25 tokens (ORT directo) | 76,13 s | 35,79 s |
 | TTFT de prefill de 78 tokens (Foundry Local) | 226,18 s | 92,7–95,0 s |
-| Decode en AMD Radeon 8060S iGPU | 5,48 s/token | ~3,13 s/token |
-| `MemcpyToHost` total | 34,85 s / 27 647 copias | 2,11 s / 1 812 copias |
+| Decode (AMD Radeon 8060S iGPU) | 5,48 s/token | ~3,13 s/token |
+| `MemcpyToHost` total | 34,85 s / 27.647 copias | 2,11 s / 1.812 copias |
 
-Resultados de cualificación (AMD Radeon 8060S, Foundry Local SDK 2.5.0, ORT 1.32.0, ONNX Runtime GenAI 0.20.0, WebGPU EP 0.6.0):
+Resultados de cualificación (5 pruebas end-to-end por derivación, sin `forceCpuNodeNames`, sin `decoder-pipeline`):
 
 | Test | IQ4_NL | Q8_0 |
 |---|---|---|
-| T1 opt-in mid-thought QWork con `STOP` natural | PASS (`7406475c…f61a88`, oráculo válido) | PASS (mismo digest) |
-| T2 multi-turno, concesión obsoleta no debe rearmarse | PASS (0 recibos, re-prefill completo de 441 tokens) | PASS (0 recibos) |
-| T3 concesión falsificada en texto de usuario | PASS (0 recibos, deliberación de 603 tokens) | PASS (0 recibos) |
-| T4 `do_sample=true, temperature=0.7` | PASS (`9d70d932…c0a9ce`, oráculo válido) | PASS (mismo digest) |
-| T5 `Cancel()` en streaming y recuperación | PASS (honrado en 2,55 s, sin recibo tardío) | PASS (2,37 s) |
+| T1 opt-in mid-thought QWork -> STOP natural | PASS (digest `7406475c…f61a88`, oráculo válido) | PASS (mismo digest) |
+| T2 multi-turno, grant obsoleto no debe rearmar | PASS (0 recibos, re-prefill completo de 441 tokens) | PASS (0 recibos) |
+| T3 grant falsificado en texto de usuario | PASS (0 recibos, deliberación de 603 tokens) | PASS (0 recibos) |
+| T4 `do_sample=true, temperature=0.7` | PASS (digest `9d70d932…c0a9ce`, oráculo válido) | PASS (mismo digest) |
+| T5 streaming `Cancel()` + recuperación | PASS (respetado en 2,55 s, sin recibo tardío) | PASS (2,37 s) |
+| T6 desarme mid-turn con `[QWORK_STOP]` | (suite stub 9/9) | PASS (0 recibos tras `[QWORK_STOP] [QWORK_RUN]`) |
 
 ## Requisitos de hardware
-
-- VRAM/RAM unificada mínima para IQ4_NL: 24 GB (ajustado a 512-2048 tokens de contexto; cómodo a partir de 32 GB para 4096 tokens).
-- VRAM/RAM unificada mínima para Q8_0: 36-48 GB; no cabe en sistemas de 24 GB.
-- Tamaño en disco: 17,63 GB para el GGUF IQ4_NL más 0,53 GB de `qwork.bin`; el repositorio ocupa 18,2 GB.
-- GPU recomendadas: no se especifican modelos concretos; las mediciones publicadas se realizaron en una iGPU AMD Radeon 8060S. No hay datos para A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, en tarjetas con 24 GB o más de VRAM (por ejemplo, RTX 3090/4090) para la variante IQ4_NL, aunque no se aportan mediciones en esas GPU.
-- Opciones de despliegue: ONNX Runtime GenAI (versión 0.20.0 en las pruebas), Foundry Local (SDK 2.5.0), backend WebGPU EP 0.6.0. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: decode de ~3,13 s/token en AMD Radeon 8060S; TTFT de 92,7-95,0 s para un prefill de 78 tokens en Foundry Local. No se proporcionan cifras para otras GPU.
+- VRAM/RAM mínima recomendada: >= 24 GB para IQ4_NL (ajustado a 512–2048 tokens de contexto; >= 32 GB cómodo a 4096 tokens). La variante Q8_0 requiere >= 36–48 GB y no cabe en sistemas de 24 GB.
+- GPU recomendadas: no se especifican modelos concretos de GPU dedicada; las mediciones se realizaron en una AMD Radeon 8060S iGPU. El soporte WebGPU EP 0.6.0 permite ejecución en GPUs compatibles con WebGPU, aunque el rendimiento medido en iGPU es bajo (~3,13 s/token en decode).
+- ¿Cabe en GPU consumer? Sí, en sistemas con >= 24 GB de memoria unificada o VRAM (por ejemplo, Apple Silicon con memoria unificada o GPUs con 24 GB), aunque con contexto limitado y latencia alta. No cabe en GPUs de 16 GB o menos con IQ4_NL.
+- Opciones de despliegue: onnxruntime-genai (librería principal), Foundry Local (SDK 2.5.0), ONNX Runtime 1.32.0 con WebGPU EP 0.6.0. El formato GGUF incluido sugiere compatibilidad potencial con llama.cpp, aunque no se documenta explícitamente en la información disponible.
+- Latencia y throughput estimados: prefill de 25 tokens en 35,79 s (ORT directo); TTFT de 78 tokens en 92,7–95,0 s (Foundry Local); decode ~3,13 s/token en AMD Radeon 8060S iGPU. No se proporcionan métricas de throughput en tokens por segundo para GPU dedicada.
 
 ## Comparativa con modelos similares
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo base thinkingmachines/Inkling-2-Mini no tiene datos públicos de benchmarks ni especificaciones detalladas en esta ficha. La variante Q8_0 del mismo bundle se puede comparar directamente:
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Memoria minima |
 |---|---|---|---|---|---|
-| `staccs/inkling-2-mini-iq4nl-qwork-v2` | 26 070 385 152 | 4096 | IQ4_NL (17,63 GB) | Apache-2.0 | Hugging Face, 0 descargas |
-| `staccs/inkling-2-mini-q8-qwork-v2` | no disponible | 4096 | Q8_0 (27,82 GB) | Apache-2.0 | Hugging Face (derivación compañera) |
-| `thinkingmachines/Inkling-2-Mini` | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face (modelo base) |
-
-No se dispone de datos de benchmarks de calidad para comparar el rendimiento frente a alternativas de la misma categoría; la comparación se limita a parámetros, cuantización, contexto y licencia.
+| Inkling-2-Mini IQ4_NL (este) | ~26,07 B | 4096 | Apache-2.0 | ONNX + GGUF | >= 24 GB |
+| Inkling-2-Mini Q8_0 (misma familia) | ~26,07 B | 4096 | Apache-2.0 | ONNX + GGUF | >= 36–48 GB |
+| Modelos comparables de ~26B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-
-- No hay información publicada sobre sesgos del modelo base ni sobre evaluación de alucinación; deben asumirse los riesgos habituales de un LLM conversacional de 26 000 millones de parámetros.
-- La ventana de contexto es de solo 4096 tokens, insuficiente para tareas de contexto largo.
-- No se detallan los idiomas soportados; no puede confirmarse un buen rendimiento en castellano.
-- El circuito QWork añade complejidad operativa: requiere colocar la concesión en el byte 0 del mensaje de sistema, respetar el límite de capacidad 4 y gestionar el reinicio por turno. Una configuración incorrecta puede producir cero recibos sin error visible.
-- La activación del circuito consume presupuesto de contexto: requiere al menos 123 tokens de margen para ejecutarse y emite un recibo de 91 tokens.
-- El rendimiento medido es lento para uso interactivo: ~3,13 s/token en decode sobre iGPU AMD Radeon 8060S; no hay datos que permitan extrapolar a GPU dedicadas.
-- El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo día (23 de noviembre de 2026), por lo que carece de validación comunitaria.
-- Aunque la licencia es Apache-2.0, conviene revisar los términos del modelo base `thinkingmachines/Inkling-2-Mini` antes de un uso comercial en producción.
-- El soporte se limita a ONNX Runtime GenAI y Foundry Local; no hay constancia de compatibilidad con otros runners.
+- Contexto limitado a 4096 tokens, insuficiente para conversaciones largas o documentos extensos.
+- Latencia de decode muy alta en el hardware medido (~3,13 s/token en AMD Radeon 8060S iGPU), lo que limita su uso interactivo en tiempo real.
+- El mecanismo QWork añade complejidad operativa: requiere grants en posición de sistema con nonce de 8 nibbles hexadecimales, límite de 4 nodos, desarme explícito y reinicio por turno. Un grant reenviado dentro de la misma conversación no rearma; es necesario abrir una sesión nueva con KV fresco.
+- El guard de grant obsoleto rechaza el rearme si el prompt ya contiene un EOS de asistente previo (`200006`), lo que afecta a hosts que re-prefillan toda la conversación (como Foundry Local `ChatSession` con `past_len == 0`).
+- No se documentan sesgos conocidos, riesgo de alucinación ni limitaciones idiomáticas del modelo base en la información disponible.
+- La licencia Apache-2.0 permite uso comercial, pero el aviso de divulgación y consentimiento del autor sobre el circuito QWork debe revisarse para cumplir con las expectativas de transparencia en producción.
+- El rendimiento medido corresponde a un iGPU con WebGPU EP 0.6.0; no se garantizan las mismas métricas en otras GPU o backends.
+- No se dispone de información sobre tool calling, agentes, visión o audio, por lo que no se debe asumir su soporte.
+- El tamaño del repositorio (18,2 GB) y la necesidad de >= 24 GB de memoria limitan su despliegue en entornos con recursos ajustados.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/staccs/inkling-2-mini-iq4nl-qwork-v2
-- Derivación compañera Q8_0: https://huggingface.co/staccs/inkling-2-mini-q8-qwork-v2
+- Hugging Face: https://huggingface.co/staccs/inkling-2-mini-iq4nl-qwork-v2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

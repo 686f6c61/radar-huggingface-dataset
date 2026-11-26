@@ -2,118 +2,110 @@
 
 ## Resumen
 
-Smaug-Nemotron-3.5-NVFP4 es un ajuste fino (fine-tune) de tipo agéntico publicado por Abacus.AI sobre el checkpoint cuantizado NVFP4 de NVIDIA Nemotron 3.5 Super VL 120B-A12B. El modelo base es un vision-language híbrido Mamba-2 / MoE / Attention con codificador visual C-RADIO y cabeza MTP, con 120.000 millones de parámetros totales y 12.000 millones activos por token. La particularidad de esta release es que no se cuantiza un fine-tune en BF16, sino que se ajusta directamente el checkpoint NVFP4 ya cuantizado, de forma que los pesos que se entrenan son exactamente los que se sirven en inferencia.
+Smaug-Nemotron-3.5-NVFP4 es un ajuste fino (fine-tune) de tipo agéntico desarrollado por Abacus.AI sobre el checkpoint cuantizado en NVFP4 de NVIDIA Nemotron 3.5 Super VL 120B-A12B. El modelo base es un vision-language model híbrido de arquitectura Mamba-2 + MoE + Attention, con 120.000 millones de parámetros totales y 12.000 millones activos por token, que NVIDIA distribuye ya cuantizado en NVFP4. Abacus.AI ha reentrenado directamente ese checkpoint cuantizado (en lugar de cuantizar a posteriori un fine-tune en BF16) para preservar las ganancias agénticas en 4 bits.
 
-El objetivo declarado es trasladar las ganancias agénticas del fine-tune en BF16 (`abacusai/Smaug-Nemotron-3.5`) al formato de 4 bits sin perderlas, algo que según el autor se perdería si se cuantizara a posteriori. Los datos de entrenamiento son trayectorias de código multi-turno con uso de herramientas, filtradas. La relevancia práctica es el coste: 4 bits dejan el modelo completo en unos 75 GB, aproximadamente un tercio de su tamaño en BF16, lo que permite servirlo en una sola H200, dos H100 o una GB200.
+El modelo resuelve el problema de obtener mejoras de razonamiento agéntico y codificación sobre el base manteniendo el coste de despliegue del formato NVFP4: los pesos en 4 bits ocupan aproximadamente 75 GB, un tercio de su tamaño en BF16, lo que permite servirlo en una sola H200, dos H100 o una GB200. Según la model card, mejora al base en LiveBench 2.0 (+10,9 en Coding, +8,1 en Agentic, +5,2 global) y en benchmarks de codificación agéntica (DeepSWE +3,0, SWE-bench Multilingual +2,0, NL2RepoBench +1,9, Terminal-Bench 2.1 +1,2), manteniendo paridad en razonamiento, instrucciones, contexto largo y visión.
 
-El modelo hereda la licencia OpenMDW 1.1 del base, solo declara inglés y conserva la ventana de contexto de hasta 1M tokens y el modo de razonamiento activado por defecto. Es un checkpoint de nicho (5 descargas y 5 likes en el momento de la ficha), pensado para sustituir directamente al NVFP4 de NVIDIA en stacks de serving ya existentes.
+Es relevante ahora porque ofrece un modelo multimodal de 120B con ventana de hasta 1M tokens, modo de razonamiento configurable y capacidad de uso de herramientas, en un formato que reduce drásticamente los requisitos de VRAM frente a BF16, y como reemplazo directo (drop-in) en cualquier stack que ya sirva el checkpoint NVFP4 de NVIDIA.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-2 + MoE + Attention, con codificador visual C-RADIO y cabeza MTP (multi-token prediction); código custom `nemotron_h_omni` |
-| Parametros totales | 120B según la model card del autor; los metadatos de safetensors del repo reportan 65.769.840.138 elementos (discrepancia no explicada en la información disponible) |
-| Parametros activos | 12B (MoE) |
-| Longitud de contexto | Hasta 1M tokens (heredada del base) |
-| Tipos de cuantizacion | NVFP4 en precisión mixta (`modelopt_mixed`, etiqueta `8-bit`): codificador visual, conector, convoluciones Mamba y embeddings en BF16; router MoE en FP32. No se publican pesos GGUF ni otras cuantizaciones |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | OpenMDW License Agreement 1.1 (heredada del base; el campo `license` de Hugging Face figura como `other`) |
-| Formato de pesos | Safetensors (modelopt NVFP4), tamaño del repo 75,0 GB; requiere `trust_remote_code` |
+| Arquitectura | Mamba-2 + MoE + Attention híbrida, con encoder de visión C-RADIO y cabeza MTP |
+| Parametros totales | 120B (65.769.840.138 según safetensors del repo) |
+| Parametros activos | 12B |
+| Longitud de contexto | Hasta 1M tokens |
+| Tipos de cuantizacion | NVFP4 (mixed precision: encoder de visión, conector, convoluciones Mamba y embeddings en BF16; router MoE en FP32) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | OpenMDW License Agreement, version 1.1 (heredada del base) |
+| Formato de pesos | safetensors (transformers, modelopt_mixed, 8-bit) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del base sin cambios: un transformer híbrido que intercala capas Mamba-2 (modelo de espacio de estados) con capas de atención y capas MoE, más un codificador visual C-RADIO y un conector para entrada de imagen y vídeo. Incluye una cabeza MTP (predicción multi-token) que acelera la decodificación. El MoE mantiene 12B parámetros activos sobre 120B totales. La cuantización NVFP4 es mixta: se preservan en BF16 las partes sensibles (visión, conector, convoluciones Mamba, embeddings) y el router MoE se mantiene en FP32, mientras que las matrices de las capas lineales van en FP4.
+El modelo hereda sin cambios la arquitectura del base: un híbrido de Mamba-2, capas MoE y atención, con encoder de visión C-RADIO y una cabeza MTP (multi-token prediction). La cuantización NVFP4 es mixta: el encoder de visión, el conector, las convoluciones de Mamba y los embeddings se mantienen en BF16, y el router MoE en FP32, mientras que el resto de pesos se almacenan en 4 bits.
 
-El entrenamiento es un ajuste supervisado (SFT) sobre trayectorias de código agénticas multi-turno con uso de herramientas, filtradas. La innovación técnica declarada es que cada paso de entrenamiento ejecuta los pesos NVFP4 exactos que se sirven: el progreso de los pesos se acumula en precisión completa y el valor almacenado solo cambia cuando cruza un umbral de redondeo, con una función de pérdida diseñada para que el modelo mejore en la calidad de sus acciones manteniendo el razonamiento próximo al base. No se menciona RLHF ni DPO. El entrenamiento se realizó en un nodo de 8 GPU NVIDIA B300. El autor no publica el número de tokens de entrenamiento ni la composición detallada del dataset.
+El entrenamiento consiste en supervised fine-tuning sobre trayectorias agénticas multiturno filtradas que usan herramientas para codificación. La innovación clave es que el fine-tuning se aplica directamente sobre el checkpoint NVFP4, con una función de pérdida diseñada para ese formato: cada paso de entrenamiento ejecuta exactamente los pesos NVFP4 que se sirven, de modo que la mejora (acciones mejores y pensamiento próximo al base) sobrevive a la cuantización. El entrenamiento se realizó en un nodo de 8 GPUs NVIDIA B300. No se especifica en la información disponible el número de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo "thinking" activado por defecto, configurable mediante la plantilla de chat (`enable_thinking=True/False`).
-- Entrada multimodal: texto, imágenes y vídeo; salida de texto (pipeline `image-text-to-text`).
-- Codificación agéntica: uso de herramientas y ejecución de trayectorias multi-paso orientadas a tareas de software (el eje donde se concentran las mejoras declaradas).
-- Razonamiento multi-paso y planificación en entornos de terminal y repositorios (evaluado en Terminal-Bench 2.1, DeepSWE, SWE-bench Multilingual, NL2RepoBench).
-- Contexto largo de hasta 1M tokens, evaluado por el autor en AA-LCR con paridad respecto al base.
-- Comprensión visual evaluada en V* con paridad respecto al base.
-- Capacidades matemáticas y de razonamiento científico evaluadas vía GPQA Diamond y SciCode (paridad con el base).
-- Multilingüe: limitado a inglés según los metadatos del modelo.
-- Sin soporte declarado de audio ni de generación de imágenes.
+- Generación de texto y razonamiento con modo de pensamiento activado por defecto, configurable mediante la plantilla de chat (`enable_thinking=True/False`).
+- Codificación y codificación agéntica: resolución de tareas de software, uso de terminal, generación a partir de descripciones en lenguaje natural.
+- Entrada multimodal: texto, imágenes y vídeo; salida de texto.
+- Uso de herramientas (tool calling / function calling) en trayectorias multiturno.
+- Comportamiento agéntico y razonamiento multi-paso.
+- Contexto largo de hasta 1M tokens.
+- Capacidades de visión evaluadas en V*.
+- Idioma: inglés.
 
 ## Casos de uso
 
-- Agente de codificación en terminal: el modelo está entrenado sobre trayectorias con herramientas y evaluado en Terminal-Bench 2.1 (+1,2 frente al base), por lo que encaja en bucles de tipo shell-agent que leen salida de comandos, editan ficheros y verifican resultados.
-- Resolución de issues en repositorios multilingües: la mejora de +2,0 en SWE-bench Multilingual y +3,0 en DeepSWE lo hace adecuado para pipelines que reciben un issue, localizan el código relevante y generan un parche verificable.
-- Generación de repositorios completos desde una especificación en lenguaje natural: con +1,9 en NL2RepoBench, sirve para scaffolding de proyectos y prototipado rápido dentro de un flujo con tests automáticos.
-- Automatización de atención al cliente con captura de pantalla: al aceptar imagen y texto, puede interpretar capturas de error o interfaces y responder en conversaciones multi-turno, apoyándose en la ventana de 1M tokens para arrastrar historial e imágenes de contexto.
-- Análisis de documentos y vídeo de larga duración: la ventana de hasta 1M tokens y la entrada de vídeo permiten resumir o extraer datos de material extenso sin trocear agresivamente, manteniendo coherencia entre fragmentos.
-- Integración en CI/CD como revisor o reparador automático: el soporte de tool calling permite invocarlo desde un orquestador que le dé acceso a logs de build, diffs y ejecución de tests, con el modo thinking para depuraciones complejas.
-- Despliegue on-premise con coste contenido: al ocupar unos 75 GB en NVFP4, cabe en una única H200 o GB200, lo que facilita servir un modelo de 120B en infraestructura propia con requisitos de privacidad.
-- Asistente de investigación técnica con razonamiento explícito: activando y desactivando `enable_thinking` se puede separar la fase de razonamiento (coste alto) de la de respuesta (coste bajo) en función de la consulta.
+- Agente de codificación autónomo: el modelo puede ejecutar trayectorias multiturno con uso de herramientas para resolver issues y tareas de repositorio, apoyándose en sus mejoras en DeepSWE y SWE-bench Multilingual y en su ventana de hasta 1M tokens para mantener el contexto del proyecto.
+- Automatización de terminal y operaciones: con la mejora en Terminal-Bench 2.1, es adecuado para agentes que ejecutan comandos, interpretan salidas y corrigen errores en pipelines de CI/CD.
+- Generación de código a partir de descripciones en lenguaje natural: útil para prototipado rápido y tareas NL2Repo, donde el modelo muestra +1,9 sobre el base.
+- Asistencia sobre documentación técnica extensa: la ventana de 1M tokens permite procesar repositorios, manuales o especificaciones completas en una sola pasada.
+- Análisis de imágenes y vídeo combinado con razonamiento: al aceptar entradas image-text-to-text, sirve para tareas de inspección visual, extracción de información de capturas o vídeos y respuesta en texto.
+- Despliegue en infraestructura limitada: al ocupar unos 75 GB en NVFP4, se puede servir en una H200, dos H100 o una GB200, lo que lo hace viable para equipos con presupuesto de GPU acotado frente a un 120B en BF16.
+- Sustitución directa en stacks existentes: cualquier servicio que ya sirva Nemotron 3.5 Super VL NVFP4 puede adoptarlo sin cambios de infraestructura.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados en la información disponible son únicamente deltas frente al checkpoint base NVFP4, no puntuaciones absolutas (la tabla con los valores absolutos aparece truncada en la model card). No se inventan cifras.
+La model card proporciona mejoras relativas frente al base NVFP4, pero no todos los valores absolutos están completos en la información disponible.
 
-| Benchmark | Delta frente al base NVFP4 |
+| Benchmark | Cambio frente al base NVFP4 |
 |---|---|
-| LiveBench 2.0 (global, release 2026-10-14) | +2,9 |
-| LiveBench 2.0 Coding | +10,9 |
-| LiveBench 2.0 Agentic | +8,1 |
+| LiveBench 2.0 (global) | +5,2 |
+| LiveBench 2.0 (Coding) | +10,9 |
+| LiveBench 2.0 (Agentic) | +8,1 |
 | DeepSWE | +3,0 |
 | SWE-bench Multilingual | +2,0 |
-| NL2RepoBench | +1,9 (ejecuciones propias del autor) |
+| NL2RepoBench | +1,9 |
 | Terminal-Bench 2.1 | +1,2 |
-| GPQA Diamond | paridad (delta no publicado) |
-| LiveCodeBench v6 | paridad (delta no publicado) |
-| SciCode | paridad (delta no publicado) |
-| IFBench | paridad (delta no publicado) |
-| AA-LCR (contexto largo) | paridad (delta no publicado) |
-| V* (visión) | paridad (delta no publicado) |
+| GPQA Diamond | paridad con el base |
+| LiveCodeBench v6 | paridad con el base |
+| SciCode | paridad con el base |
+| IFBench | paridad con el base |
+| AA-LCR | paridad con el base |
+| V* | paridad con el base |
 
-Nota metodológica: el autor indica que las puntuaciones del base NVFP4 y del BF16 provienen de la model card de NVIDIA, salvo NL2RepoBench (ejecuciones propias) y LiveBench (livebench.ai).
+Los valores absolutos de cada benchmark no están disponibles en la información proporcionada. Los resultados de LiveBench corresponden a la release 2026-10-14.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: unos 75 GB en NVFP4 (aproximadamente un tercio de los ~240 GB que ocuparía en BF16). A esto hay que sumar caché KV y activaciones, cuyo tamaño crece con la longitud de contexto; para 1M tokens no se publican cifras.
-- GPU recomendadas según el autor: una NVIDIA H200, una GB200, o dos H100.
-- GPU consumer: no cabe en ninguna GPU de consumo actual (ni RTX 4090 de 24 GB ni RTX 5090 de 32 GB) por el tamaño de pesos; no es desplegable en una sola consumer GPU.
-- Despliegue: el autor declara que cualquier stack capaz de servir el checkpoint NVFP4 de NVIDIA Nemotron 3.5 Super VL sirve este modelo como reemplazo directo. No se enumeran stacks concretos ni se publican pesos GGUF, por lo que llama.cpp u Ollama no están soportados de forma oficial en la información disponible.
-- Entrenamiento: nodo de 8 GPU NVIDIA B300.
-- Latencia y throughput: no disponibles. Como referencia cualitativa, la cabeza MTP del base está orientada a decodificación especulativa, pero no se aportan métricas.
+- VRAM estimada: aproximadamente 75 GB para los pesos en NVFP4; hay que añadir la memoria de activaciones y caché KV, que no se detalla en la información disponible.
+- GPU recomendadas: una NVIDIA H200, dos NVIDIA H100 o una NVIDIA GB200.
+- GPU de consumo: no cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, etc.) por el tamaño del checkpoint.
+- Entrenamiento: se realizó en un nodo de 8 GPUs NVIDIA B300.
+- Opciones de despliegue: cualquier stack compatible con el checkpoint NVFP4 de Nemotron 3.5 Super VL NVFP4, ya que es un reemplazo directo; la librería declarada es transformers con código personalizado (`nemotron_h_omni`, `custom_code`), y el repo es compatible con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Precisión | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| abacusai/Smaug-Nemotron-3.5-NVFP4 | 120B (65,77B según safetensors) | 12B | 1M | NVFP4 mixta | OpenMDW 1.1 | Este modelo; +2,9 en LiveBench 2.0 y +3,0 en DeepSWE frente a su base |
-| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 | 120B | 12B | 1M | NVFP4 mixta | OpenMDW 1.1 | Base directo; sirve de referencia de paridad en razonamiento, ciencia, IF y visión |
-| abacusai/Smaug-Nemotron-3.5 | 120B | 12B | 1M | BF16 | OpenMDW 1.1 | Hermano en BF16 del mismo fine-tune; ocupa aproximadamente el triple de VRAM |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Smaug-Nemotron-3.5-NVFP4 | 120B | 12B | 1M | OpenMDW 1.1 | Fine-tune agéntico sobre NVFP4, multimodal |
+| NVIDIA Nemotron 3.5 Super VL 120B-A12B NVFP4 (base) | 120B | 12B | 1M | OpenMDW 1.1 | Base sin fine-tune agéntico; referencia de comparación |
+| Smaug-Nemotron-3.5 (BF16) | 120B | 12B | 1M | OpenMDW 1.1 | Hermano en BF16 del mismo fine-tune |
 
-No se dispone en la información proporcionada de comparaciones con modelos de otros fabricantes (por ejemplo, alternativas densas o MoE de tamaño similar); se indica como no disponible en lugar de estimarlo.
+No se dispone en la información proporcionada de comparativas con modelos de otros fabricantes de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés declarado. No hay evidencia de calidad en castellano ni en otros idiomas.
-- Licencia: OpenMDW 1.1, heredada del base. Es una licencia con términos propios (no es Apache 2.0 ni MIT); hay que revisar el texto completo antes de un uso comercial o de redistribución.
-- Magnitud de las mejoras: los deltas son pequeños (entre +1,2 y +3,0 en benchmarks de código, salvo LiveBench Coding con +10,9). El propio autor advierte que es un cambio lo bastante pequeño como para desaparecer si se cuantizara a posteriori, lo que sugiere fragilidad ante cambios de stack o de calibración.
-- Dependencia del formato: al ser un fine-tune sobre NVFP4, las ganancias están ligadas a servir exactamente ese checkpoint. Convertirlo a BF16 u otra precisión no está soportado ni evaluado.
-- Riesgo de alucinación: no se publican tasas de alucinación ni evaluaciones de factualidad; en tareas agénticas con ejecución de herramientas el riesgo se traslada a acciones incorrectas sobre el entorno.
-- Sesgos: no se documenta ningún análisis de sesgos ni composición del dataset más allá de "trayectorias de código multi-turno con herramientas, filtradas".
-- Contexto largo: la ventana es de hasta 1M tokens, pero no se publican resultados absolutos de AA-LCR, solo paridad con el base; el coste de memoria de caché KV a longitudes extremas no está cuantificado.
-- Discrepancia de parámetros: la model card declara 120B totales mientras los metadatos de safetensors suman 65.769.840.138 elementos. No se explica en la información disponible; conviene verificarlo antes de dimensionar infraestructura.
-- Código custom: requiere `trust_remote_code=True` y la implementación `nemotron_h_omni`, lo que añade superficie de confianza y posibles incompatibilidades con versiones de `transformers`.
-- Madurez: 5 descargas y 5 likes en el momento de la ficha; ecosistema y reportes de terceros prácticamente inexistentes.
-- Rendimiento en Hopper: el autor indica que cabe en dos H100, pero no publica latencias ni comparativas frente a Blackwell; el rendimiento efectivo de FP4 fuera de Blackwell no está documentado.
+- Idioma: solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Riesgo de alucinación: no se documenta en la información disponible; como modelo generativo, es un riesgo inherente en producción.
+- Sesgos: no se documentan sesgos conocidos en la información proporcionada.
+- Licencia: OpenMDW 1.1 heredada; es necesario revisar sus términos para uso comercial y redistribución antes de desplegar en producción.
+- Cuantización: aunque el fine-tune se realizó sobre los pesos NVFP4 servidos, cualquier cambio de formato o cuantización adicional puede degradar las ganancias reportadas.
+- Datos de entrenamiento limitados a trayectorias agénticas de codificación filtradas; el comportamiento en dominios ajenos a codificación y agentes puede no reflejar las mejoras.
+- No se especifican número de tokens de entrenamiento ni composición detallada del dataset.
+- El modelo base es un checkpoint cuantizado de NVIDIA; los cambios respecto a él se limitan al fine-tune supervisado descrito.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/abacusai/Smaug-Nemotron-3.5-NVFP4
-- Modelo base (NVIDIA NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Hermano en BF16: https://huggingface.co/abacusai/Smaug-Nemotron-3.5
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - LiveBench: https://livebench.ai
-- Organización Abacus.AI en Hugging Face: https://huggingface.co/abacusai
-- Sitio de Abacus.AI: https://abacus.ai/
-- Producto ChatLLM: https://chatllm.abacus.ai/
-- Abacus AI Studio: https://studio.abacus.ai/
-- Soluciones enterprise: https://abacus.ai/solutions
+- Página de Abacus.AI: https://abacus.ai
+- Perfil de Abacus.AI en Hugging Face: https://huggingface.co/abacusai

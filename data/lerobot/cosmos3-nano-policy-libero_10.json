@@ -45,5 +45,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "LeRobot - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot - SO-101 · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/src/lerobot at main · huggingface/lerobot · GitHub",
+      "url": "https://github.com/huggingface/lerobot/tree/main/src/lerobot",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - lerobot/src/lerobot at main · huggingface/lerobot"
+    },
+    {
+      "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+      "url": "https://arxiv.org/abs/2602.22818",
+      "snippet": "Feb 26, 2026 · In this paper, we present \\texttt {lerobot}, an open-source library that integrates across the entire robot learning stack, …Read more"
+    },
+    {
+      "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+      "url": "https://arxiv.org/html/2602.22818v1",
+      "snippet": "Sep 22, 2025 · In this paper, we present lerobot, an open-source library that integrates across the entire robot learning stack, from …Read more"
+    }
+  ]
 }

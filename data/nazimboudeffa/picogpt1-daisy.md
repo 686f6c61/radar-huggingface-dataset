@@ -2,102 +2,104 @@
 
 ## Resumen
 
-PicoGPT1-Daisy es un modelo de lenguaje de escala experimental desarrollado por nazimboudeffa, publicado en Hugging Face como una revision del anterior PicoGPT1-Jasmine. Se trata de un GPT-2 minimo (2 capas, 128 dimensiones, 2 cabezas de atencion, contexto de 256 tokens y 6.862.464 parametros totales) afinado sobre un subconjunto filtrado de 500 pares instruccion/respuesta de Alpaca, al que se anaden 245 ejemplos de anclaje extraidos de una base cerrada de 30 hechos. El modelo no busca competir en capacidad generica, sino servir de banco de pruebas reproducible para tecnicas de mitigacion de alucinaciones en modelos diminutos.
+PicoGPT1-Daisy es un ajuste fino (fine-tuning) del modelo GPT-2 completo desarrollado por el usuario nazimboudeffa. Se trata de un modelo de 124 millones de parámetros (12 capas, 768 dimensiones, 12 cabezas de atención) entrenado sobre un conjunto de 2.442 ejemplos que combina 2.000 instrucciones/respuestas Alpaca filtradas, 245 ejemplos de anclaje y 197 pares pregunta/respuesta directos extraídos de una base cerrada de 30 hechos. El modelo sustituye a la versión anterior PicoGPT1-Jasmine, que partía de un GPT-2 truncado de 2 capas y 128 dimensiones.
 
-La innovacion principal no reside en la arquitectura, identica a la de su predecesor, sino en el pipeline de anclaje (RAG) implementado en Python: recuperacion TF-IDF sobre una base de hechos cerrada, decodificacion restringida a extractos literales del contexto recuperado y verificacion de soporte con abstruccion explicita ("Je ne sais pas.") cuando la confianza es baja. El modelo se distribuye en safetensors y GGUF, con soporte para llama.cpp y llama.app, y esta pensado para experimentacion, docencia y validacion de pipelines anti-alucinacion, no para produccion.
+La propuesta principal del autor no es tanto el modelo en sí como el pipeline de anclaje (RAG) que lo acompaña: scripts en Python que recuperan un hecho de un fichero `knowledge.jsonl` mediante TF-IDF, construyen un prompt con contexto y verifican que la respuesta generada esté soportada por el contexto recuperado. Si la verificación falla o la puntuación es inferior a 0,50, el sistema responde "Je ne sais pas." (No lo sé). Este mecanismo de abstención es la innovación diferencial frente a otros ajustes de GPT-2 de tipo Alpaca.
 
-Es relevante ahora como ejemplo didactico de como separar generacion de conocimiento factual en modelos de muy bajo coste computacional, y como referencia para quienes investigan abstruccion, RAG con restricciones de decodificacion y evaluacion de fidelidad en modelos pequenos. Su huella (0,1 GB de repositorio) permite ejecutarlo en cualquier equipo, incluido CPU.
+Es relevante ahora como ejemplo didáctico de cómo añadir control de alucinaciones a un modelo pequeño mediante recuperación y verificación externas, y como caso práctico de despliegue dual (Transformers y GGUF/llama.cpp). No obstante, conviene subrayar que se trata de un modelo experimental, entrenado en francés, sin licencia declarada y sin benchmarks publicados, por lo que su uso en producción es muy limitado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only) |
-| Parametros totales | 6.862.464 |
+| Arquitectura | Transformer decoder-only (GPT-2 completo) |
+| Parametros totales | 124.439.808 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 256 tokens |
-| Tipos de cuantizacion | GGUF (variante incluida en el repo); cuantizaciones adicionales no disponibles |
-| Idiomas soportados | no disponible (entrenado sobre Alpaca, predominantemente ingles; respuestas de anclaje en frances) |
+| Longitud de contexto | 1.024 posiciones en el modelo; ejemplos de entrenamiento truncados a 256 tokens |
+| Tipos de cuantizacion | GGUF (variante publicada); cuantizaciones especificas no disponibles |
+| Idiomas soportados | frances (entrenamiento y datos); otros idiomas no disponibles |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (Transformers) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de tipo GPT-2 con 2 capas, 128 dimensiones de modelo y 2 cabezas de atencion, con un tokenizer GPT-2 de 50.257 tokens y una ventana de contexto de 256 tokens. El formato aprendido es `prompt\nreponse<|endoftext|>`. El entrenamiento consistio en 10 epocas sobre 745 ejemplos (500 pares Alpaca filtrados mas 245 ejemplos de anclaje derivados de 30 hechos), con aproximadamente 1.860 pasos y una loss final de 4,54. Respecto a la version anterior (Jasmine), se eliminaron errores factuales conocidos (por ejemplo, "el agua hierve a 115 grados" o una definicion incorrecta de "mole"), se eliminaron duplicados y se uniformizo el formato.
+El modelo es un GPT-2 completo: 12 capas, 768 dimensiones de embedding, 12 cabezas de atención y 124 millones de parámetros, con tokenizer GPT-2 de 50.257 tokens. Se parte de los pesos preentrenados de GPT-2 y se aplica un fine-tuning de 5 épocas sobre 2.442 ejemplos con el formato `prompt\nreponse<|endoftext|>`. El conjunto de entrenamiento se compone de 2.000 instrucciones/respuestas Alpaca filtradas (se eliminaron errores factuales conocidos como "el agua hierve a 115 °C", una definición falsa de "mole" y la etiqueta `<nooutput>`, además de duplicados), 245 ejemplos de anclaje y 197 pares pregunta/respuesta directos derivados de una base cerrada de 30 hechos.
 
-La innovacion tecnica destacable es el pipeline de anclaje: `rag.py` recupera un hecho de `knowledge.jsonl` mediante TF-IDF con analisis `char_wb` de 3 a 5 caracteres sobre `text + question`, construye el prompt `Contexte: <texte> | Question: <question>\n`, restringe la decodificacion a extractos literales del contexto con busqueda por haces determinista (`num_beams=5`) y verifica el soporte con `is_supported()`. Si la puntuacion es inferior a 0,50 o la respuesta no esta soportada, el modelo responde "Je ne sais pas.". El decodificado por defecto usa muestreo (`top_k=40`, `no_repeat_ngram_size=3`, `repetition_penalty=1.15`) con parada en EOS o primer salto de linea. No se documentan fases de RLHF ni DPO.
+La innovación técnica no está en el entrenamiento sino en el pipeline de inferencia: decodificación por muestreo por defecto (`top_k=40`, `no_repeat_ngram_size=3`, `repetition_penalty=1.15`), parada en EOS o en el primer salto de línea, y separador `\n` garantizado. El anclaje se implementa en Python con TF-IDF (`char_wb` de 3-5 caracteres) sobre `text + question`, prompt `Contexte: <texte> | Question: <question>\n`, generación determinista con beam search (`num_beams=5`) y verificación `is_supported()`. Si la puntuación es inferior a 0,50 o la respuesta no se extrae del contexto, se devuelve "Je ne sais pas.". El GGUF no incluye ni la base de hechos ni el TF-IDF: el anclaje solo funciona con los scripts Python.
 
 ## Capacidades
 
-- Generacion de texto condicionada a instrucciones en formato Alpaca, con respuestas cortas y delimitadas por salto de linea.
-- Anclaje a contexto verificado (RAG) mediante scripts Python: recuperacion TF-IDF, decodificacion restringida y verificacion de soporte.
-- Abstruccion explicita ("Je ne sais pas.") cuando la pregunta queda fuera de la base de 30 hechos o la confianza es baja.
-- Generacion en modo libre con muestreo configurable (temperatura, top_k, penalizacion de repeticion).
-- Ejecucion en llama.cpp y llama.app mediante el GGUF incluido, con CLI y servidor web de chat.
-- Integracion con Transformers mediante `AutoModelForCausalLM` y `AutoTokenizer`.
-- No soporta tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento explicito.
-- Capacidad multilingue no documentada; el material de entrenamiento es mayoritariamente ingles y el pipeline de anclaje produce respuestas en frances.
+- Generación de texto conversacional en francés con formato instrucción/respuesta.
+- Respuesta a preguntas directas sobre una base cerrada de 30 hechos (con el pipeline de anclaje).
+- Abstención controlada: responde "Je ne sais pas." cuando la pregunta queda fuera de la base o la respuesta no está soportada por el contexto.
+- Recuperación TF-IDF de hechos desde `knowledge.jsonl` (solo en Python, no en GGUF).
+- Generación con muestreo configurable (top_k, penalización de repetición, no_repeat_ngram_size).
+- Generación determinista con beam search para el modo anclado.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles; el entrenamiento es en francés.
 
 ## Casos de uso
 
-- Docencia sobre alucinaciones en LLM: el modelo y su pipeline permiten mostrar en clase, con recursos minimos, como un modelo de 6,8 M de parametros puede pasar de inventar hechos a abstenerse cuando no hay soporte en el contexto.
-- Validacion de pipelines RAG restringidos: util como banco de pruebas para experimentar con recuperacion TF-IDF, decodificacion restringida a extractos literales y verificacion de soporte antes de escalar la tecnica a modelos mayores.
-- Investigacion en abstruccion: sus metricas publicadas (30/30 respuestas ancladas, 0/30 abstenciones erroneas dentro de base, 10/10 abstenciones correctas fuera de base) sirven como linea base reproducible para comparar metodos de calibracion de confianza.
-- Prototipado de asistentes de dominio cerrado: con una base de hechos propia y el script `rag.py`, se puede montar un asistente que solo responda con informacion verificada de un catalogo, manual o FAQ, sin riesgo de fabricar datos.
-- Pruebas de integracion con llama.cpp y llama.app: el GGUF permite validar flujos de despliegue local (CLI y servidor en `localhost:9931`) en entornos sin GPU y con requisitos de espacio minimos.
-- Evaluacion comparativa de estrategias de decodificacion: la diferencia documentada entre decodificacion glotona (Jasmine) y muestreo con penalizacion de repeticion (Daisy) permite medir el impacto de estos parametros en la coherencia de modelos diminutos.
-- Experimentos de destilacion o inicializacion: su tamano (0,1 GB de repositorio) lo hace adecuado como punto de partida para pruebas de entrenamiento rapido en CPU.
+- Demostración educativa de RAG con abstención: usar `rag.py` y `knowledge.jsonl` para mostrar cómo un modelo de 124 M puede responder solo cuando la respuesta está respaldada por el contexto recuperado, y abstenerse en caso contrario. Adecuado por su simplicidad y por el bajo coste computacional.
+- Prototipado de asistentes de dominio cerrado: sustituir `knowledge.jsonl` por una base de 30-50 hechos de un dominio concreto (por ejemplo, preguntas frecuentes internas) y evaluar el comportamiento de abstención con `evaluate.py`.
+- Evaluación de alucinaciones en modelos pequeños: el par `evaluate.py` + `test.py --rag` permite medir respuestas exactas, respuestas ancladas, abstenciones correctas y abstenciones erróneas sobre un conjunto controlado, como base para comparar variantes de prompt o recuperación.
+- Despliegue local ligero con llama.cpp: el GGUF se puede ejecutar con `llama cli` o `llama serve` en CPU o GPU de gama baja, útil para demos offline o entornos sin acceso a APIs.
+- Integración en pipelines de CI/CD como prueba de regresión: ejecutar `evaluate.py` tras cambios en el prompt o en la base de hechos para verificar que se mantienen las métricas de anclaje y abstención.
+- Generación de texto corto en francés con formato instrucción: fine-tuning de bajo coste para tareas de completado breve, con la advertencia de que la generación libre puede ser aproximada.
+- Estudio de comparación entre versiones: usar PicoGPT1-Jasmine como referencia histórica y PicoGPT1-Daisy como versión mejorada para analizar el impacto del tamaño del modelo, la limpieza de datos y el decodificado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor publica metricas del pipeline de anclaje obtenidas con `python evaluate.py`:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas del pipeline de anclaje obtenidas con `python evaluate.py`:
 
 | Medida | Resultado |
 |---|---|
 | Preguntas dentro de la base | 30 |
-| Respuestas exactas | 9/30 |
+| Respuestas exactas | 30/30 |
 | Respuestas ancladas | 30/30 |
-| Abstenciones erroneas (dentro de base) | 0/30 |
-| Retrieval correcto | 30/30 |
-| Preguntas fuera de base | 10 |
-| Abstenciones correctas (fuera de base) | 10/10 |
+| Abstenciones erróneas | 0/30 |
+| Recuperación correcta | 30/30 |
+| Preguntas fuera de la base | 10 |
+| Abstenciones correctas | 10/10 |
 
-Interpretacion del autor: el modelo no fabrica hechos ausentes del contexto; el extracto recuperado no siempre es el mejor (9 exactos de 30), pero siempre esta soportado por el texto recuperado. No se proporcionan datos de latencia ni throughput.
+Estas métricas solo cubren formulaciones próximas a la base cerrada de 30 hechos y no deben interpretarse como rendimiento general del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cualquiera de los formatos disponibles (6,86 M de parametros); en la practica cabe en CPU.
-- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, GTX 1060 o superior) es mas que suficiente. A100 o H100 no aportan ventaja practica.
-- Cabe en cualquier GPU consumer y en equipos sin GPU dedicada; el repositorio completo ocupa 0,1 GB.
-- Opciones de despliegue: Transformers (safetensors), llama.cpp y llama.app (GGUF, con `llama cli` y `llama serve`), text-generation-inference segun los tags del repositorio, y endpoints compatibles.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: el modelo tiene 124 M parámetros; en fp32 ocupa aproximadamente 0,5 GB, en fp16 unos 0,25 GB y en cuantizaciones GGUF de 4 bits alrededor de 0,1-0,2 GB. Cifras orientativas, no publicadas por el autor.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); también funciona en CPU.
+- Cabe holgadamente en GPU consumer y en entornos integrados; el cuello de botella no es la VRAM sino la calidad del modelo.
+- Opciones de despliegue: Transformers (`AutoModelForCausalLM`), llama.cpp y llama.app (GGUF), y text-generation-inference según los tags del repositorio. No se documenta vLLM ni Ollama de forma explícita.
+- Latencia y throughput: no disponibles. Por el tamaño del modelo, se espera inferencia en tiempo real en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PicoGPT1-Daisy | 6,86 M | 256 | GPT-2 minimo con anclaje RAG y abstruccion | no disponible | Hugging Face (safetensors + GGUF) |
-| PicoGPT1-Jasmine | 6,86 M | 256 | GPT-2 minimo, entrenamiento Alpaca sin filtrar, sin anclaje | no disponible | Hugging Face (referencia historica) |
-| GPT-2 small | 124 M | 1.024 | Transformer decoder-only de proposito general | MIT | Hugging Face |
-| DistilGPT-2 | 82 M | 1.024 | Destilacion de GPT-2 | Apache 2.0 | Hugging Face |
+| PicoGPT1-Daisy | 124 M | 1.024 | Fine-tuning GPT-2 + RAG con abstención | no disponible | Hugging Face (safetensors + GGUF) |
+| PicoGPT1-Jasmine | GPT-2 truncado (2 capas, 128 dims) | 256 | Fine-tuning Alpaca sin anclaje | no disponible | Hugging Face |
+| GPT-2 (original) | 124 M | 1.024 | Preentrenamiento base | MIT (modelo original de OpenAI) | Ampliamente disponible |
+| Ajustes Alpaca sobre GPT-2 | ~124 M | 1.024 | Fine-tuning instrucción | variable según autor | Hugging Face |
 
-La comparativa con GPT-2 small y DistilGPT-2 es orientativa por tamano de la familia; no se dispone de datos de rendimiento comparables entre ellos y PicoGPT1-Daisy en la informacion proporcionada.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental de muy pequena escala: el propio autor advierte que las respuestas pueden ser incoherentes fuera del pipeline de anclaje.
-- Ventana de contexto de solo 256 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- El anclaje solo funciona mediante los scripts Python; el GGUF no contiene la base de hechos ni el TF-IDF, por lo que en llama.cpp o llama.app se pierde la funcionalidad anti-alucinacion.
-- La base de conocimiento es cerrada y consta de solo 30 hechos; cualquier pregunta fuera de ella deriva en abstruccion, no en respuesta.
-- Solo 9 de 30 respuestas dentro de base son exactas: el retrieval acierta siempre, pero la seleccion del extracto no siempre es la mejor.
-- Idiomas soportados no documentados; el entrenamiento es mayoritariamente en ingles y las respuestas de anclaje en frances, lo que limita su uso en castellano.
-- Licencia no disponible: no se puede confirmar el uso comercial sin consultar al autor.
-- Riesgo de sesgos heredados de Alpaca y del corpus GPT-2 original, no evaluado por el autor.
-- Sin soporte de tool calling, agentes, vision ni audio; no apto para tareas que requieran razonamiento complejo o conocimiento factual abierto.
+- Modelo experimental: el propio autor advierte que las respuestas en generación libre pueden ser aproximadas.
+- Entrenado exclusivamente en francés; no hay evidencia de capacidades en castellano u otros idiomas.
+- El anclaje y la abstención solo funcionan a través de los scripts Python; el GGUF no incluye la base de hechos ni el TF-IDF, por lo que en llama.cpp no hay control anti-alucinación.
+- Las métricas de anclaje (30/30, 10/10) se obtuvieron sobre una base cerrada de 30 hechos y formulaciones próximas; no generalizan a otros dominios ni a paráfrasis alejadas.
+- Licencia no declarada: no se puede asumir uso comercial permitido; es necesario contactar con el autor.
+- Sin benchmarks estándar publicados; imposible comparar con precisión frente a otros modelos.
+- Riesgo de alucinación en generación libre fuera del pipeline de anclaje.
+- Riesgo de sesgos heredados de GPT-2 y del corpus Alpaca filtrado; no se documenta ninguna mitigación.
+- Contexto efectivo limitado: 1.024 posiciones en el modelo y ejemplos truncados a 256 tokens durante el entrenamiento.
+- Sin soporte documentado de tool calling, agentes, visión ni audio.
+- Repositorio con 230 descargas y 0 likes en el momento de la consulta; comunidad muy reducida.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nazimboudeffa/PicoGPT1-Daisy
-- Version anterior (referencia historica): https://huggingface.co/nazimboudeffa/PicoGPT1-Jasmine
-- Codigo fuente y documentacion: https://github.com/nazimboudeffa/picogpt1-daisy
-- llama.app: https://llama.app
+- Repositorio de código y documentación: https://github.com/nazimboudeffa/picogpt-kit
+- Versión anterior (referencia histórica): https://huggingface.co/nazimboudeffa/PicoGPT1-Jasmine
+- llama.app (CLI y servidor): https://llama.app

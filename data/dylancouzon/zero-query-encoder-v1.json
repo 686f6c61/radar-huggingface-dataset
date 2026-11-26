@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 262,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": 31285050,
   "parameters_human": "31.3M",
@@ -53,31 +53,5 @@
   "renamed_to": "Qdrant/constella-zero",
   "renamed_at": "2026-11-11T02:41:03.187Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "آموزش حروف الفبای فارسی به صورت سرگرم‌کننده برای کلاس اول: تمرکز بر حرف ا",
-      "url": "https://www.aparat.com/v/vmuh4s1",
-      "snippet": "این برنامه به‌طور خاص برای کودکان پیش‌دبستانی و کلاس اول طراحی شده است تا یادگیری حروف را به روشی جذاب و مؤثر انجام دهد. امروز بر روی حرف ا تمرکز می‌کنیم که با کلمه آب شروع …"
-    },
-    {
-      "title": "Dylancouzon (Dylan Couzon) · GitHub",
-      "url": "https://github.com/Dylancouzon",
-      "snippet": "AI Growth Engineer @Arize-ai . Dylancouzon has 45 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "أ ب ت ث الحروف العربية للأطفال _ نطق الحروف الهجائية للأطفال على قناة ...",
-      "url": "https://m.youtube.com/watch?v=-id4bM7cn7E",
-      "snippet": "Jun 6, 2024 · The Arabic Alphabet for Kidsتعلم الحروف العربية بسهولة وسرعة تعرف على كل حرف من الأبجدية العربية فيديو ..."
-    },
-    {
-      "title": "Models – Hugging Face",
-      "url": "https://huggingface.co/models",
-      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
-    },
-    {
-      "title": "فيديو تعليمي للاطفال #تعلم حرف الألف (أ) وحرف A للأطفال | درس ممتع ...",
-      "url": "https://m.youtube.com/watch?v=ddiJY5QPIrI",
-      "snippet": "Nov 3, 2025 · في هذا الفيديو التعليمي المخصص للأطفال، نتعرف على أول حرف في اللغة العربية (ألف - أ) وأول حرف في اللغة ..."
-    }
-  ]
+  "sources": []
 }

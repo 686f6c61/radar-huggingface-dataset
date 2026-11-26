@@ -2,49 +2,48 @@
 
 ## Resumen
 
-Converse-1.3 es un modelo de lenguaje publicado en Hugging Face por el usuario Dgamez202 bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2, tal y como indica la etiqueta `qwen2` del repositorio, con un total de 1.543.714.304 parámetros almacenados en formato safetensors (aproximadamente 1,54 mil millones). El repositorio ocupa 3,1 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros.
+Converse 1.3 es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct desarrollado por dgAI, una iniciativa independiente de desarrollo de IA. El modelo se presenta como el primer lanzamiento público de la serie Converse y está orientado a conversaciones de bajo coste computacional, según la etiqueta "Low-Cost-Conversations" del repositorio. Con 1.543.714.304 parámetros reales (1,54B), se posiciona en la gama de modelos pequenos aptos para inferencia local.
 
-La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia y no incluye descripción del modelo, datos de entrenamiento, idiomas soportados ni resultados de evaluación. El pipeline no está declarado y el modelo no registra descargas en el momento de la consulta, con un solo "like". Se trata, por tanto, de una publicación reciente y de autoría individual sin documentación técnica asociada.
+Arquitectónicamente es un transformer denso heredado de Qwen2.5-1.5B-Instruct, con una ventana de contexto declarada de 32.768 tokens. El ajuste se realizó mediante LoRA (rank 16, alpha 16, dropout 0) sobre el framework Unsloth con carga en 4 bits, aplicando los adaptadores a las proyecciones de atención y MLP. La longitud máxima de secuencia durante el entrenamiento fue de 2.048 tokens, muy por debajo del contexto nominal del modelo base.
 
-Por su tamaño y su base arquitectónica, Converse-1.3 encaja en la categoría de modelos pequeños (sub-2B) aptos para inferencia en hardware de consumo, pero cualquier evaluación de su calidad real requerirá pruebas directas por parte del usuario, dado que no existen benchmarks ni especificaciones publicadas por el autor.
+La relevancia de esta ficha es limitada pero ilustrativa: se trata de un fine-tune comunitario de bajo perfil (260 descargas, 1 like en el momento de la consulta) que ejemplifica el flujo típico de adaptación de un modelo base pequeno con herramientas de bajo coste. No se documentan datos de entrenamiento, benchmarks ni detalles del dataset utilizado, lo que restringe seriamente cualquier evaluación de su calidad frente al modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (según etiqueta del repositorio) |
-| Parametros totales | 1.543.714.304 (≈1,54 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (Qwen2) |
+| Parametros totales | 1.543.714.304 (1,54B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens (nominal); entrenamiento a 2.048 tokens |
+| Tipos de cuantizacion | GGUF (variantes no especificadas en la model card) |
+| Idiomas soportados | en (ingles, segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | GGUF (distribucion declarada); safetensors presentes en el repo |
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica disponible es la etiqueta `qwen2` del repositorio, que sitúa al modelo dentro de la familia Qwen2 de Alibaba. Los modelos Qwen2 de tamaño pequeño emplean un transformer decoder-only con atención causal estándar, normalización RMSNorm, activación SwiGLU y sesgos de atención QKV, además de embeddings de posición rotatorios (RoPE). No obstante, el autor no confirma en la model card que la arquitectura interna coincida exactamente con la de Qwen2 ni especifica qué checkpoint base se ha utilizado.
+El modelo parte de Qwen2.5-1.5B-Instruct, un transformer denso con atención estándar y sin mezcla de expertos. Sobre esta base se aplicó un ajuste fino con LoRA de rango 16 y alpha 16, sin dropout, dirigido a las proyecciones `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. El entrenamiento se realizó con Unsloth, cargando el modelo base en 4 bits y con gradient checkpointing, lo que apunta a un proceso de bajo coste ejecutable en hardware de consumo.
 
-No se dispone de información sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de fine-tuning supervisado, RLHF o DPO, ni técnicas de alineación. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. Cualquier afirmación al respecto sería especulativa y no debe asumirse.
+La model card no especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO posteriores al ajuste supervisado. Tampoco se documenta la tasa de aprendizaje, el número de épocas ni el tamaño del conjunto de datos. La longitud máxima de secuencia durante el entrenamiento (2.048 tokens) es notablemente inferior al contexto nominal de 32.768 tokens, lo que sugiere que el modelo puede degradarse en tareas que requieran contextos largos pese a la especificación declarada.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, propia de un modelo causal de la familia Qwen2.
-- Razonamiento y respuesta a instrucciones: no confirmado por el autor, ya que no se indica si el modelo ha recibido fine-tuning instructivo o si es un modelo base.
-- Generación de código y matemáticas: no confirmado; dependerá del checkpoint base y del ajuste recibido, dato no publicado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles; el autor no declara idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; el repositorio solo contiene pesos de lenguaje en safetensors.
+- Generación de texto conversacional en inglés, heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Razonamiento básico y respuesta a instrucciones, con la calidad esperable de un modelo de 1,5B parámetros.
+- Generación de código y matemáticas a nivel elemental, limitada por el tamaño del modelo.
+- Soporte de tool calling y function calling heredado del modelo base (no verificado en el fine-tune).
+- Capacidades multilingües del modelo base potencialmente presentes, aunque la model card solo declara inglés.
+- No se documentan capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Experimentación local en hardware de consumo: con ≈1,54 B de parámetros, el modelo puede cargarse en GPU de gama media o incluso en CPU con cuantización, lo que lo hace adecuado para prototipos y pruebas de concepto en un portátil.
-- Fine-tuning específico de dominio: su tamaño reducido permite ajustar el modelo completo o mediante LoRA sobre datasets propios (atención al cliente, clasificación de textos, extracción de entidades) con requisitos de VRAM moderados.
-- Generación de texto en aplicaciones de bajo coste: para tareas de resumen, reescritura o completado donde la latencia y el coste por token importan más que la calidad puntera.
-- Base para investigación académica: útil como punto de partida para estudiar técnicas de alineación o destilación en modelos pequeños, comparando con el checkpoint Qwen2 original.
-- Despliegue en entornos con restricciones de privacidad: al poder ejecutarse en local, permite procesar texto sensible sin enviar datos a servicios externos.
-- Evaluación comparativa de checkpoints comunitarios: sirve para medir empíricamente la calidad de un fine-tuning comunitario frente a su base, aunque el usuario deberá construir su propio conjunto de evaluación al no haber benchmarks publicados.
+- Asistentes conversacionales locales de bajo coste: el modelo puede desplegarse en equipos de consumo para gestionar diálogos multi-turno simples, aprovechando su tamaño de 1,54B parámetros y su formato GGUF.
+- Prototipado rápido de chatbots: útil para validar flujos de conversación antes de migrar a modelos mayores, dado su bajo requisito de hardware.
+- Generación de respuestas en aplicaciones embebidas: su reducido tamaño permite integrarlo en dispositivos con recursos limitados donde un modelo de 7B o superior no cabría.
+- Filtrado y clasificación de texto conversacional: puede emplearse para tareas de etiquetado simple o enrutamiento de consultas en pipelines de atención al cliente.
+- Educación y experimentación: sirve como banco de pruebas para estudiar el efecto del ajuste LoRA sobre un modelo base conocido.
+- Generación de código en entornos con restricciones de memoria: adecuado para autocompletado básico o sugerencias en editores ligeros, aunque con calidad limitada frente a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -52,35 +51,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 3,1 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 4 y 6 GB según longitud de contexto y batch.
-- VRAM estimada en cuantización de 8 bits: alrededor de 1,6-2 GB para pesos; en 4 bits, en torno a 0,8-1 GB, más overhead.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4070); para cuantizaciones de 4 bits puede caber en GPUs de 4-6 GB (GTX 1650 Super, RTX 3050).
-- Cabe en GPU de consumo: sí, con holgura en la mayoría de tarjetas modernas de gama media.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa; llama.cpp u Ollama requerirían convertir los pesos a GGUF, paso no documentado por el autor; vLLM y TGI son viables si la arquitectura es compatible con Qwen2, aunque no está verificado.
-- Latencia y throughput: no disponibles; al no haber benchmarks ni configuración publicada, no es posible estimar tokens por segundo con rigor.
+- VRAM estimada para inferencia en FP16: aproximadamente 3,1 GB solo para pesos, más overhead de activaciones y KV cache.
+- VRAM estimada en cuantización 4 bits (GGUF Q4): aproximadamente 1 GB para pesos, con margen adicional para contexto.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM para cuantizaciones agresivas; RTX 3060, RTX 4060 o superiores para FP16 sin problemas.
+- Cabe en GPU de consumo: sí, en tarjetas con 4-8 GB de VRAM según cuantización; también puede ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF; vLLM y TGI requerirían conversión a safetensors (presentes en el repo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Converse-1.3 | ≈1,54 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin model card técnica ni benchmarks |
-| Qwen2-1.5B (Alibaba) | 1,54 B | 32.768 tokens (según documentación oficial de Qwen2) | Apache 2.0 | Hugging Face, muy extendido | Checkpoint de referencia con evaluación publicada |
-| Qwen2.5-1.5B (Alibaba) | 1,54 B | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 | Hugging Face, muy extendido | Sucesor con mejoras en código y matemáticas |
-| SmolLM2-1.7B (Hugging Face) | 1,7 B | 8.192 tokens (según su model card) | Apache 2.0 | Hugging Face | Alternativa comunitaria con benchmarks publicados |
-
-La comparación se limita a parámetros, licencia y disponibilidad, ya que Converse-1.3 no publica contexto, benchmarks ni detalles de entrenamiento que permitan una comparación de rendimiento rigurosa.
+| Converse 1.3 | 1,54B | 32.768 | Apache 2.0 | GGUF / safetensors | Fine-tune LoRA de Qwen2.5-1.5B-Instruct |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | safetensors, GGUF | Modelo base original, con benchmarks publicados |
+| Llama 3.2 1B Instruct | 1,24B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | Contexto mayor, licencia más restrictiva |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache 2.0 | safetensors, GGUF | Alternativa pequena con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no hay model card descriptiva, lo que impide conocer el dataset, el proceso de alineación y los idiomas cubiertos.
-- Riesgo elevado de alucinación y comportamiento impredecible: al desconocerse si ha recibido fine-tuning instructivo, no se puede garantizar que siga instrucciones de forma fiable.
-- Sesgos desconocidos: sin información sobre la composición de los datos de entrenamiento, no es posible evaluar sesgos de género, raza, idioma o dominio.
-- Contexto no especificado: se desconoce la ventana máxima; asumir 32.768 tokens por la etiqueta Qwen2 sería una extrapolación no verificada.
-- Idiomas no declarados: no se puede confirmar un rendimiento aceptable en castellano ni en ningún otro idioma.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo; el autor no ofrece garantías.
-- Madurez del repositorio: 0 descargas y 1 like en el momento de la consulta, sin historial de mantenimiento ni issues, lo que desaconseja su uso en producción sin una validación exhaustiva previa.
-- Compatibilidad de despliegue no verificada: herramientas como vLLM, TGI o llama.cpp pueden no funcionar sin ajustes si la arquitectura interna difiere del Qwen2 estándar.
+- No se documentan datos de entrenamiento, dataset ni proceso de alineación, lo que impide evaluar sesgos introducidos por el fine-tune.
+- Riesgo de alucinación inherente a un modelo de 1,5B parámetros, potencialmente agravado por la falta de información sobre el ajuste.
+- El contexto nominal es de 32.768 tokens, pero el entrenamiento se realizó a 2.048 tokens; el rendimiento en contextos largos puede degradarse.
+- Idioma declarado: solo inglés; el soporte multilingüe del modelo base no está garantizado tras el fine-tune.
+- Licencia Apache 2.0, lo que permite uso comercial, pero debe respetarse la atribución del modelo base Qwen2.5-1.5B-Instruct.
+- La model card menciona distribución en GGUF, pero el repositorio también contiene safetensors; conviene verificar qué variantes están realmente disponibles.
+- Proyecto de bajo perfil (260 descargas, 1 like) sin benchmarks ni validación externa; no recomendable para producción sin evaluación propia.
+- El enlace a GitHub indicado en la model card apunta a un repositorio que debe verificarse antes de su uso.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Dgamez202/Converse-1.3
+- Repositorio GitHub (según model card): https://github.com/scriptsnsenses-sys/dgAI/tree/main/Models/Converse/Converse%201.3
+- Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Unsloth: https://github.com/unslothai/unsloth

@@ -2,106 +2,86 @@
 
 ## Resumen
 
-Unose-Huen-Small es un modelo de reconocimiento automático del habla (ASR) desarrollado por Igunosa Labs como parte de la suite Unose. Se trata de un ajuste fino de Whisper Small de OpenAI, un transformer encoder-decoder de 12 capas y 241.734.912 parámetros, orientado a inglés nigeriano, reuniones conversacionales multihablante y robustez ante acentos marcados. El modelo se publica bajo licencia Apache 2.0 y está disponible en formato safetensors para la librería transformers, además de CTranslate2.
+Unose-Huen-Small es un modelo de reconocimiento automático del habla (ASR) desarrollado por Igunosalabs, obtenido mediante fine-tuning de openai/whisper-small sobre audio en inglés nigeriano y pidgin nigeriano. Con 241.734.912 parámetros, mantiene la arquitectura encoder-decoder original de Whisper Small y está pensado para inferencia en CPU, GPU y dispositivos de borde, lo que lo hace atractivo para despliegues con recursos limitados en mercados africanos.
 
-El modelo resuelve el problema de la degradación de precisión de los sistemas ASR genéricos ante variedades del inglés poco representadas en los corpus de entrenamiento originales, en particular el inglés nigeriano y el habla espontánea en reuniones. Frente a su modelo hermano Unose-Huen-Base (74M), reduce el WER macro de 14,11% a 7,71%, lo que supone una mejora relativa del 45,3%, a costa de triplicar el número de parámetros y reducir el throughput de 70,03x a 26,37x RTFx sobre Tesla T4.
+El modelo aborda un problema concreto: la baja cobertura de variedades del inglés no estándar y de lenguas criollas en los sistemas ASR comerciales. Al especializarse en inglés nigeriano y pidgin nigeriano, cubre un nicho que los modelos multilingües genéricos tienden a transcribir con alta tasa de error. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-Es relevante ahora porque ofrece una alternativa de tamaño medio (244M) que cabe en hardware modesto, con un rendimiento en LibriSpeech clean (3,76% WER) competitivo con modelos significativamente mayores, y porque su evaluación sigue las particiones oficiales del Open ASR Leaderboard, lo que facilita la comparación directa con otros sistemas.
+Es relevante ahora porque la demanda de transcripción precisa en mercados de África Occidental crece en sectores como atención al cliente, medios y servicios públicos, y porque el tamaño compacto (244M) permite ejecutarlo en hardware modesto sin depender de la nube. El repositorio ocupa 31 GB, lo que sugiere la presencia de checkpoints de entrenamiento además de los pesos finales en safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Whisper Small (encoder-decoder transformer, 12 capas) |
+| Arquitectura | Whisper Small (encoder-decoder transformer) |
 | Parametros totales | 241.734.912 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventana de audio de 30 s por segmento, propia de Whisper) |
-| Tipos de cuantizacion | no disponible (el autor menciona PyTorch safetensors y CTranslate2) |
-| Idiomas soportados | no disponible en la informacion (orientado a ingles, con enfasis en acento nigeriano) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 30 segundos de audio por ventana (ventana estandar de Whisper; no se especifica otra en la model card) |
+| Tipos de cuantizacion | no disponible (no documentados por el autor) |
+| Idiomas soportados | en (ingles nigeriano), pcm (pidgin nigeriano) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch), CTranslate2 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Whisper Small: un transformer encoder-decoder de 12 capas y 244M de parámetros que procesa audio en ventanas de 30 segundos y genera transcripciones de forma autorregresiva. El modelo parte de los pesos de openai/whisper-small y se ajusta mediante fine-tuning supervisado sobre datos orientados a inglés nigeriano y habla conversacional multihablante. La model card no especifica el número de tokens de audio, la composición exacta del dataset de ajuste ni si se aplicaron técnicas de RLHF, DPO o decodificación especulativa.
+El modelo parte de openai/whisper-small, un transformer encoder-decoder con 244M de parámetros diseñado para ASR y traducción de voz. El encoder procesa espectrogramas mel de 80 canales en ventanas de 30 segundos y el decoder genera tokens de texto de forma autorregresiva. El fine-tuning se realizó sobre audio en inglés nigeriano y pidgin nigeriano, según indica la model card, aunque no se especifica el volumen de horas de audio, la composición exacta del dataset ni si se aplicaron técnicas de aumento de datos.
 
-El autor reporta que el ajuste produce una reducción relativa del WER macro del 45,3% respecto al modelo base, con mejoras especialmente marcadas en AMI Cleaned (reuniones) y VoxPopuli. La evaluación se realizó sobre las particiones oficiales del Open ASR Leaderboard con normalización de texto, y se documenta en el issue huggingface/open_asr_leaderboard#262. No se detallan innovaciones arquitectónicas adicionales; el modelo conserva la formulación estándar de Whisper.
+No se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o mecanismos híbridos. Tampoco se detalla si hubo etapas de RLHF o DPO, algo poco habitual en modelos ASR. El autor incluye logs de TensorBoard en el repositorio, lo que permite inspeccionar curvas de entrenamiento, pero la información pública sobre hiperparámetros, número de épocas o estrategia de congelación de capas es escasa.
 
 ## Capacidades
 
-- Transcripción de voz a texto en inglés, con especial robustez ante acento nigeriano y habla conversacional.
-- Reconocimiento en audio multihablante de reuniones (evaluado en AMI IHM).
-- Manejo de audio de hasta 30 segundos por segmento, con segmentación automática para audios más largos mediante los pipelines estándar de transformers.
-- Inferencia en CPU, GPU y dispositivos edge, con formatos PyTorch y CTranslate2.
-- No dispone de tool calling, function calling ni capacidades de agente.
-- No dispone de modo de razonamiento (thinking mode) ni capacidades de visión o audio generativo.
-- Capacidades multilingües: no documentadas; el ajuste se orienta a inglés.
+- Transcripción de voz a texto en inglés nigeriano y pidgin nigeriano.
+- Reconocimiento de habla en ventanas de hasta 30 segundos, con la posibilidad de encadenar segmentos para audio más largo mediante el pipeline de transformers.
+- Inferencia en CPU, GPU y dispositivos de borde gracias a su tamaño compacto.
+- Integración directa con el pipeline `automatic-speech-recognition` de transformers.
+- Soporte de los dos códigos de idioma declarados en la model card: `en` y `pcm`.
+- No se documentan capacidades de traducción de voz, diarización de hablantes, detección de emociones ni tool calling.
 
 ## Casos de uso
 
-- Transcripción de reuniones corporativas: el modelo está evaluado en AMI Cleaned (14,44% WER) y maneja habla multihablante espontánea, lo que lo hace adecuado para generar actas y resúmenes a partir de audio de reuniones con varios participantes.
-- Subtitulado y transcripción de contenido en inglés nigeriano: el ajuste específico sobre esta variedad reduce errores frente a Whisper Small genérico, útil para medios, podcasts y formación en Nigeria y diáspora.
-- Atención al cliente por voz: con 26,37x RTFx en T4, permite procesar llamadas en tiempo casi real en infraestructura modesta; la transcripción puede alimentar sistemas de análisis de sentimiento o CRM.
-- Accesibilidad y documentación clínica: transcripción de consultas o entrevistas en inglés con acentos diversos, desplegable en CPU o GPU de gama baja por su tamaño de 244M.
-- Pipelines de ASR en producción con CTranslate2: el formato CTranslate2 permite servir el modelo con mayor eficiencia en CPU, adecuado para despliegues on-premise con requisitos de privacidad.
-- Investigación en ASR con acentos: sirve como baseline reproducible con particiones oficiales del Open ASR Leaderboard para comparar técnicas de adaptación al acento.
-- Procesamiento por lotes de archivos de audio: con throughput de 26,37x RTFx, permite transcribir grandes volúmenes de audio en servidores con una sola T4.
+- Transcripción de atención al cliente: el modelo puede convertir llamadas y mensajes de voz de usuarios nigerianos en texto para su análisis posterior, con mejor precisión que Whisper Small genérico en acentos locales.
+- Subtitulado de contenido audiovisual: útil para medios nigerianos, creadores de contenido y plataformas que necesiten subtítulos en inglés nigeriano o pidgin sin depender de servicios en la nube.
+- Servicios públicos y ONG: digitalización de entrevistas, encuestas y testimonios recogidos en pidgin nigeriano para programas de desarrollo, salud o educación.
+- Asistentes de voz en dispositivos de borde: al caber en CPU y hardware modesto, permite desplegar dictado o comandos por voz en entornos con conectividad limitada.
+- Análisis de conversaciones de contact center: transcripción por lotes para minería de opiniones, control de calidad y detección de temas en mercados de África Occidental.
+- Investigación lingüística: generación de corpus transcritos de pidgin nigeriano para estudios sociolingüísticos y entrenamiento de modelos posteriores.
+- Accesibilidad: conversión de audio a texto para personas con discapacidad auditiva en comunidades que usan estas variedades lingüísticas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados, `verified: false`), sobre particiones oficiales del Open ASR Leaderboard y evaluados en NVIDIA Tesla T4:
-
-| Benchmark | WER (%) | RTFx | Duracion audio | Muestras |
-|---|---|---|---|---|
-| LibriSpeech test.clean | 3,76 | 27,54x | 5,40 h | 2.620 |
-| LibriSpeech test.other | 8,64 | 24,11x | 5,34 h | 2.939 |
-| VoxPopuli test (en) | 4,01 | 38,35x | 1,98 h | 628 |
-| AMI Cleaned test (ihm) | 14,44 | 15,49x | 7,98 h | 7.715 |
-| Macro-average | 7,71 | 26,37x | — | — |
-
-Comparativa con el modelo hermano, según el autor:
-
-| Modelo | Parametros | WER macro (%) | LibriSpeech clean | LibriSpeech other | VoxPopuli | AMI Cleaned | RTFx medio |
-|---|---|---|---|---|---|---|---|
-| Unose-Huen-Base | 74M | 14,11 | 7,86 | 16,11 | 9,12 | 23,35 | 70,03x |
-| Unose-Huen-Small | 244M | 7,71 | 3,76 | 8,64 | 4,01 | 14,44 | 26,37x |
-
-No se han publicado en la información disponible resultados comparativos con otros modelos de la categoría (por ejemplo, Whisper Small original u otros fine-tunes).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: en torno a 1 GB para los pesos (244M parámetros), más overhead de activaciones y decodificación; en la práctica cabe holgadamente en GPUs con 4-8 GB.
-- GPU recomendadas: NVIDIA Tesla T4 (plataforma de evaluación reportada), así como cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) con al menos 4 GB de VRAM.
-- Cabe en GPU consumer: sí, en modelos con 4 GB o más de VRAM; también es viable en CPU gracias al tamaño reducido y al formato CTranslate2.
-- Opciones de despliegue: transformers (pipeline de automatic-speech-recognition), CTranslate2, y cualquier servidor compatible con modelos Whisper (por ejemplo, faster-whisper al convertir a CTranslate2). No se documenta soporte explícito de vLLM, TGI o llama.cpp.
-- Latencia y throughput: 26,37x RTFx medio en Tesla T4 según el autor, con variación entre 15,49x (AMI) y 38,35x (VoxPopuli). No se reportan latencias absolutas por segmento.
+- VRAM estimada para inferencia en FP16: aproximadamente 0,5 GB para los pesos, más overhead del runtime (del orden de 1-2 GB en total con transformers).
+- VRAM estimada en FP32: alrededor de 1 GB para los pesos, más overhead.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como RTX 3050, RTX 4060, T4 o superiores. En A100 y H100 el modelo queda sobredimensionado en cuanto a memoria, aunque puede aprovecharse para procesamiento por lotes de alto throughput.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más de VRAM.
+- Opciones de despliegue: transformers (pipeline de ASR), vLLM no aplica de forma estándar para Whisper, llama.cpp no soporta Whisper de forma nativa, faster-whisper y whisper.cpp son alternativas viables si se convierten los pesos, y TGI no está orientado a ASR.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto audio | WER LibriSpeech clean | Licencia | Disponibilidad |
+| Modelo | Parametros | Idiomas | Licencia | Contexto de audio | Notas |
 |---|---|---|---|---|---|
-| Unose-Huen-Small | 244M | 30 s por segmento | 3,76% (declarado) | Apache 2.0 | Hugging Face, safetensors y CTranslate2 |
-| Unose-Huen-Base | 74M | 30 s por segmento | 7,86% (declarado) | Apache 2.0 | Hugging Face |
-| openai/whisper-small | 244M | 30 s por segmento | no disponible en la informacion | Apache 2.0 | Hugging Face, transformers |
-
-La comparación con openai/whisper-small no puede cuantificarse con los datos proporcionados; el autor solo reporta la mejora relativa del 45,3% en WER macro respecto al modelo base, sin detallar los valores absolutos del base en cada partición.
+| igunosalabs/Unose-Huen-Small | 241,7M | en (nigeriano), pcm | Apache 2.0 | 30 s por ventana | Fine-tuning especializado en variedades nigerianas |
+| openai/whisper-small | 244M | multilingüe (99 idiomas) | Apache 2.0 | 30 s por ventana | Modelo base; menor precisión en inglés nigeriano y pidgin |
+| openai/whisper-base | 74M | multilingüe (99 idiomas) | Apache 2.0 | 30 s por ventana | Más ligero, pero menor calidad general |
+| openai/whisper-medium | 769M | multilingüe (99 idiomas) | Apache 2.0 | 30 s por ventana | Mayor precisión, pero requiere más recursos |
 
 ## Limitaciones y advertencias
 
-- Los resultados de benchmarks están marcados como no verificados (`verified: false`) en el model-index; deben tratarse como declaraciones del autor pendientes de validación independiente.
-- El ajuste se orienta a inglés (con énfasis en acento nigeriano); el rendimiento en otros idiomas o acentos no está documentado y podría degradarse.
-- Riesgo de alucinación inherente a los modelos Whisper: pueden generar texto plausible en segmentos con silencio, ruido o audio ininteligible.
-- WER de 14,44% en AMI Cleaned indica margen de error apreciable en habla conversacional multihablante con solapamientos.
-- No se documentan sesgos específicos ni la composición del dataset de ajuste, lo que dificulta evaluar sesgos demográficos o dialectales.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad de validación en producción recae en el integrador.
-- El repositorio ocupa 31,0 GB, lo que sugiere la presencia de artefactos adicionales (checkpoints, logs de TensorBoard) más allá de los pesos del modelo.
-- Sin capacidades de tool calling, agentes ni razonamiento multi-paso; es exclusivamente un modelo ASR.
+- El modelo solo cubre inglés nigeriano y pidgin nigeriano; su rendimiento en otras variedades del inglés o en otros idiomas no está garantizado y probablemente sea deficiente.
+- No se han publicado métricas de error (WER, CER) ni comparaciones cuantitativas con el modelo base, por lo que la mejora real no está verificada de forma independiente.
+- Riesgo de alucinación en audio con ruido, solapamiento de hablantes o acentos muy marcados, comportamiento heredado de la arquitectura Whisper.
+- La ventana de 30 segundos obliga a segmentar audio largo; una segmentación deficiente puede degradar la transcripción.
+- Sesgos potenciales derivados de la distribución del dataset de fine-tuning, que no se documenta; puede haber peor rendimiento en hablantes femeninas, infantiles o de regiones subrepresentadas.
+- Aunque la licencia Apache 2.0 permite uso comercial, conviene revisar las condiciones del modelo base y de los datos de entrenamiento originales de Whisper.
+- El repositorio de 31 GB incluye probablemente checkpoints intermedios; para producción conviene descargar solo los pesos finales en safetensors.
+- No se documentan procesos de evaluación ética, red teaming ni mitigaciones de sesgo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Small
-- Repositorio GitHub oficial: https://github.com/Igunosa-Labs/unose-huen
-- Modelo hermano (Base 74M): https://huggingface.co/igunosalabs/Unose-Huen-Base
-- Modelo TTS de la suite: https://huggingface.co/igunosalabs/Unose-Voice-v1.0
 - Modelo base: https://huggingface.co/openai/whisper-small
-- Issue de evaluación en Open ASR Leaderboard: https://github.com/huggingface/open_asr_leaderboard/issues/262
+- Demo del autor: https://robotics.dexx.systems/unose-demo
+- Página del proyecto: https://robotics.dexx.systems/projects/unose

@@ -2,123 +2,99 @@
 
 ## Resumen
 
-kotag-0.8b es un modelo de etiquetado de secuencias (sequence labeling) para coreano, desarrollado por el usuario gogamza y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning completo de Qwen/Qwen3.5-0.8B (852.985.920 parametros) que transforma un LLM generativo en un etiquetador por token: en lugar de producir texto, devuelve una distribucion de probabilidad sobre un conjunto de opciones definidas en el prompt para cada caracter o palabra de la entrada. El modelo no reescribe la entrada, lo que lo hace adecuado para tareas de anotacion estructurada donde la fidelidad al texto original es critica.
+kotag-0.8b es un modelo de etiquetado de secuencias (token classification) para coreano, desarrollado por gogamza y publicado en Hugging Face bajo licencia Apache 2.0. Se obtiene mediante un ajuste fino de todos los parámetros de Qwen/Qwen3.5-0.8B, un modelo base de aproximadamente 853 millones de parámetros, y sustituye la generación de texto por una cabeza de lectura compartida de 255 opciones que etiqueta cada carácter o palabra (`tag`) y puntúa candidatos de texto completo (`choose`) en una sola pasada hacia delante.
 
-La innovacion principal reside en su mecanismo de lectura: el prompt repite la entrada una segunda vez, unidad a unidad, y se lee el estado oculto de cada unidad repetida en un unico forward pass. Sobre ese estado se aplica un readout entrenado sobre codigos de opcion de un solo token, con una temperatura ajustada para calibracion. Esta receta de decision proviene de Jeff (fork de AutoJev), pero kotag la aplica en cada unidad en lugar de una vez por pregunta. El modelo es utilizado por PyKoSpacing como KoSpacing v2.
+El modelo resuelve tareas clásicas de procesamiento del lenguaje natural coreano que tradicionalmente requerían pipelines separados: corrección de espaciado entre palabras (word spacing), reparación de espaciado ruidoso, corrección ortográfica, enmascaramiento de información personal identificable (PII) y más de 15 tareas guiadas por instrucciones. Es la base del backend KoSpacing v2 de la librería PyKoSpacing, lo que le da relevancia práctica inmediata para cualquiera que procese texto coreano en producción.
 
-El modelo fue construido integramente en una unica NVIDIA DGX Spark (GB10 Grace Blackwell, 128 GB de memoria unificada), sin cluster ni GPUs en la nube. El entrenamiento consistio en un fine-tuning completo de todos los parametros durante 1.490 pasos en 3 horas y 17 minutos, usando aproximadamente 20 GB de memoria. Los datos de profesor fueron generados y etiquetados localmente por google/gemma-4-26B-A4B-it servido con vLLM. Es relevante ahora porque demuestra que un modelo pequeno y una sola maquina permiten convertir un LLM general en un etiquetador controlable mediante instrucciones en lenguaje natural.
+La propuesta técnica es notable: en lugar de generar texto token a token, el modelo produce etiquetas por unidad en un único forward pass, lo que se traduce en latencias muy bajas (18 ms por frase en una NVIDIA GB10) y cero tokens generados. Frente al modelo base generativo, que tarda 586 ms y obtiene un F1 de 0.326 en la misma tarea, kotag-0.8b es aproximadamente 33 veces más rápido y mucho más preciso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen3.5), fine-tuning completo para token-classification |
+| Arquitectura | Transformer decoder-only (Qwen3.5) con cabeza de lectura lineal de 255 opciones para etiquetado por unidad |
 | Parametros totales | 852.985.920 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; el ejemplo de uso emplea bfloat16 en GPU y float32 en CPU) |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (incluye `readout.safetensors` y `decision_config.json`) |
 
 ## Arquitectura y entrenamiento
 
-kotag-0.8b parte de Qwen/Qwen3.5-0.8B, un transformer decoder de 852 millones de parametros, y se somete a un fine-tuning completo de todos sus parametros (no LoRA ni adaptadores). La innovacion arquitectonica no esta en el backbone sino en el regimen de inferencia: el prompt incluye la pregunta y las opciones (entre 2 y 255, cada una con clave y descripcion), y a continuacion reescribe la entrada una segunda vez, unidad a unidad. Un unico forward pass del backbone produce un estado oculto por cada caracter repetido, y un readout entrenado sobre codigos de opcion de un solo token puntua las opciones en cada posicion. El resultado es una probabilidad por unidad y opcion, utilizable para umbrales, incertidumbre o decodificacion restringida.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de unos 853 millones de parámetros, y se somete a un ajuste fino de todos los parámetros. La innovación principal es la sustitución del cabezal de generación por una cabeza lineal compartida (`readout`) que proyecta el estado oculto a 255 opciones discretas. Cada opción se corresponde con una etiqueta definida por la instrucción y los criterios aportados en el prompt, de modo que el mismo modelo sirve para espaciado, NER, PII o corrección ortográfica simplemente cambiando la definición de las opciones. El modelo etiqueta cada carácter (unidad `char`) o cada palabra (unidad `word`) en una única pasada, sin decodificación autoregresiva.
 
-El entrenamiento se realizo desde Qwen/Qwen3.5-0.8B sin entrenar, con la inicializacion del readout de Jeff, no desde los pesos de Jeff. Los datos de entrenamiento fueron generados y etiquetados por google/gemma-4-26B-A4B-it servido localmente con vLLM. Durante el entrenamiento se reformularon las descripciones de las opciones, se barajaron las opciones y se intercambiaron o sustituyeron las claves por simbolos, con el objetivo de que el modelo siguiera las descripciones y no los nombres de las claves. No se menciona uso de RLHF ni DPO. El modelo admite unidades de caracter (etiqueta cada caracter no espacio) y de palabra (una etiqueta por palabra separada por espacios), asi como campos de contexto que el modelo lee pero no etiqueta.
+El entrenamiento se apoya en instrucciones en formato de chat (system + user) y en un fichero `decision_config.json` que define los códigos de opción (`A`, `B`, ...), la temperatura de calibración de probabilidades y la unidad de etiquetado. La model card menciona el uso de `flash-linear-attention` para kernels rápidos en GPU NVIDIA y describe una integración con PyKoSpacing v2 (`Spacing`, `fix()`, `spell()`). No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO; la model card sí cita evaluaciones sobre Wikipedia, un conjunto sintético de 1.000 frases, un conjunto curado de 45 frases, 380 erratas reales no vistas y diálogos KDPII con 7 tipos de PII.
 
 ## Capacidades
 
-- Etiquetado de secuencias con conjunto de etiquetas arbitrario definido en el prompt, con entre 2 y 255 opciones, cada una con clave y descripcion.
-- Seguimiento de descripciones de opciones en lugar de nombres de claves: robustez del 97,1 % al 100,0 % ante renombrado de claves a simbolos, intercambio entre opciones o orden inverso (8 tareas entrenadas).
-- Unidades de caracter: etiqueta cada caracter no espacio (espaciado, fronteras, spans dentro de palabras).
-- Unidades de palabra: una etiqueta por palabra separada por espacios (categoria gramatical, roles, afirmaciones no soportadas).
-- Campos de contexto: texto de referencia que el modelo lee pero no etiqueta (titulo de articulo de un comentario, fuente de un resumen).
-- Probabilidades por unidad, utilizables para umbrales, estimacion de incertidumbre o decodificacion restringida.
-- No genera texto: la salida es siempre una etiqueta por unidad y la entrada nunca se reescribe.
-- Tareas entrenadas: espaciado de palabras, correccion de espaciado, fin de frase, restauracion de puntuacion, entidades nombradas, categoria gramatical por palabra, rol sintactico por palabra, texto entre comillas/parentesis, script de cada caracter, valores formateados, reglas procedimentales, spans ofensivos en comentarios, comentario ofensivo (si/no) y palabras no soportadas en una respuesta (ingles).
-- Tareas zero-shot evaluadas: spans de informacion personal, caracteres erroneos, span de respuesta en pasaje (KLUE-MRC) y 30 preguntas escritas a mano.
+- Etiquetado de secuencias por carácter o por palabra en una sola pasada, sin generación de texto.
+- Corrección de espaciado entre palabras (word spacing) sobre texto sin espacios.
+- Reparación de espaciado ruidoso (`fix()`), conservando los espacios ya válidos.
+- Corrección ortográfica general y en dominio formal, con modo seguro para preservar texto limpio.
+- Enmascaramiento de PII en coreano sobre 7 tipos de entidades (diálogos KDPII).
+- Reconocimiento de entidades nombradas (NER) configurable por instrucciones (persona, lugar, fecha, etc.).
+- Más de 15 tareas NLP guiadas por instrucciones mediante definición dinámica de opciones y criterios.
+- Puntuación de candidatos de texto completo (`choose`) además del etiquetado (`tag`).
+- Soporte de preguntas zero-shot personalizadas y mapas de calor de sentimiento en la demo web.
+- Integración directa con PyKoSpacing v2 (`Spacing`, `fix()`, `spell()`).
+- No soporta tool calling ni razonamiento multi-paso generativo: su diseño es de etiquetado, no de agente.
 
 ## Casos de uso
 
-- Espaciado automatico de texto coreano (word spacing): el modelo etiqueta cada caracter para decidir si le precede un espacio, con F1 de palabra de 0,841 en Wikipedia y 0,758 en noticias y resenas no vistas durante el entrenamiento. Es el uso principal, ya que PyKoSpacing lo emplea como KoSpacing v2.
-- Correccion de espaciado en textos ya espaciados: con F1 de palabra de 0,920, adecuado para normalizar corpus o corregir salidas de OCR y transcripciones.
-- Deteccion de fin de frase y restauracion de puntuacion: F1 de frontera de 0,977 en fin de frase y F1 de marca de 0,815 en puntuacion con la formulacion entrenada, util para segmentar y puntuar texto sin puntuacion.
-- Reconocimiento de entidades nombradas (NER): F1 de span de 0,729 con formulacion entrenada y 0,735 con formulacion nueva, aplicable a extraccion de entidades en textos coreanos.
-- Etiquetado gramatical y de roles sintacticos por palabra: precision de 0,894 en categoria gramatical y 0,968 en rol sintactico con la formulacion entrenada, util para anotacion linguistica y pipelines de PLN.
-- Deteccion de spans ofensivos en comentarios: F1 de span de 0,726 con formulacion entrenada y 0,687 con formulacion nueva, aplicable a moderacion de contenido en coreano.
-- Deteccion de informacion personal (telefono, correo electronico, etc.): F1 de span de 0,805 en frases sinteticas en regimen zero-shot, util para anonimizacion preliminar.
-- Extraccion de texto entre comillas o parentesis: F1 de span de 0,997 con formulacion entrenada, para analisis de citas y anidamientos.
+- Normalización de espaciado en pipelines de TTS y STT: el modelo inserta espacios correctos en transcripciones coreanas sin espaciado (F1 de palabra 0.849 en Wikipedia) antes de sintetizar voz o indexar texto.
+- Limpieza de corpus coreano para entrenamiento: `fix()` repara espaciados ruidosos con F1 de palabra 0.917 y precisión de edición 0.949, adecuado para preprocesar grandes volúmenes antes de entrenar otros modelos.
+- Corrección ortográfica en editores y correctores: `spell()` corrige erratas con F1 de edición 0.955 en conjunto curado y 0.907 en erratas reales no vistas, manteniendo el 98,5% del texto limpio intacto (99,2% en modo seguro).
+- Enmascaramiento de PII en atención al cliente: sobre diálogos KDPII logra un 94,8% de filas completas y 99,0% de recall por carácter, lo que permite anonimizar conversaciones antes de almacenarlas o analizarlas.
+- Extracción de entidades para sistemas de agenda o CRM: mediante instrucciones se obtienen nombres, lugares y fechas (Span F1 0.857 en nombres KLUE-NER), integrándose en pipelines de extracción de datos estructurados.
+- Procesamiento por lotes de bajo coste: al no generar tokens y ejecutarse en 18 ms por frase en una NVIDIA GB10, es viable etiquetar millones de frases en servidores modestos o incluso en CPU con bfloat16/float32.
+- Investigación lingüística coreana: permite etiquetar corpus con criterios personalizados definidos en el prompt, sin reentrenar, para estudios de segmentación y morfología.
 
 ## Benchmarks y rendimiento
 
-Tareas entrenadas, conjuntos de test del proyecto kospacing (ejecucion `r3d`):
-
-| Tarea | Metrica | Formulacion entrenada | Formulacion nueva |
+| Capacidad | Benchmark | Puntuacion v1.6 | Comparacion / notas |
 |---|---|---|---|
-| Espaciado de palabras (Wikipedia) | F1 de palabra | 0,841 | 0,838 |
-| Espaciado de palabras (noticias, resenas; no entrenado en ellos) | F1 de palabra | 0,758 | 0,749 |
-| Correccion de espaciado | F1 de palabra | 0,920 | 0,916 |
-| Fin de frase | F1 de frontera | 0,977 | 0,971 |
-| Restauracion de puntuacion | F1 de marca | 0,815 | 0,058 |
-| Entidades nombradas | F1 de span | 0,729 | 0,735 |
-| Categoria gramatical por palabra | precision | 0,894 | 0,890 |
-| Rol sintactico por palabra | precision | 0,968 | 0,638 |
-| Texto entre comillas/parentesis | F1 de span | 0,997 | 0,974 |
-| Script de cada caracter | precision | 0,999 | 0,999 |
-| Valores formateados | F1 de span | 1,000 | 1,000 |
-| Reglas procedimentales (formulacion nueva: reglas nunca vistas) | F1 de unidad | 0,915 | 0,077 |
-| Spans ofensivos en comentarios | F1 de span | 0,726 | 0,687 |
-| Comentario ofensivo (si/no, texto completo; no via kotag.py) | F1 | 0,755 | 0,768 |
-| Palabras no soportadas en una respuesta (ingles) | F1 de palabra | 0,368 | 0,348 |
-
-Tareas no entrenadas (zero-shot):
-
-| Tarea | Metrica | Puntuacion |
-|---|---|---|
-| Spans de informacion personal (telefono, correo, ...; frases sinteticas) | F1 de span | 0,805 |
-| Caracteres erroneos | F1 de unidad | 0,003 |
-| Span de respuesta de una pregunta en un pasaje (KLUE-MRC) | F1 de unidad | 0,079 |
-| 30 preguntas escritas a mano (nombres, sentimiento, comida, honorificos, ...) | F1 de marca | 0,780 |
-
-Robustez: con claves de opcion renombradas a simbolos, intercambiadas entre opciones o listadas en orden inverso, el modelo da la misma respuesta por unidad entre el 97,1 % y el 100,0 % de las veces (8 tareas entrenadas).
+| Espaciado de palabras | Wikipedia (espacios eliminados) | Word F1 0.849 | KoSpacing v1: 0.824 |
+| Reparacion de espaciado (`fix()`) | Wikipedia (espaciado ruidoso) | Word F1 0.917 | Precision de edicion 0.949; KoSpacing v1: 0.820 |
+| Ortografia (general) | Test sintetico (1.000 frases) | Edit F1 0.722 | Precision 0.843; texto limpio conservado 98.5% (modo seguro 99.2%) |
+| Ortografia (real y curada) | Curado (45) / erratas reales no vistas (380) | Edit F1 0.955 / 0.907 | Ediciones en dominio formal -37.0% frente a v1.5, sin reglas heuristicas |
+| Enmascaramiento de PII | Dialogos KDPII (7 tipos) | Full-row 94.8% | Recall por caracter 99.0%; nombres KLUE-NER Span F1 0.857 |
+| Velocidad en GPU | Frase unica (NVIDIA GB10) | 18 ms (0 tokens) | 33x mas rapido que el generativo Qwen/Qwen3.5-0.8B (586 ms, F1 0.326) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,7 GB en precision completa (tamano del repositorio en safetensors); no se dispone de datos de cuantizacion publicados.
-- GPU recomendadas: no se especifican en la informacion disponible. El modelo fue entrenado en una NVIDIA DGX Spark (GB10 Grace Blackwell, 128 GB de memoria unificada), usando unos 20 GB de memoria durante el entrenamiento.
-- Cabe en GPU de consumo: por tamano (menos de 1.000 millones de parametros) es probable que quepa en GPUs de consumo, pero no se confirma en la informacion proporcionada.
-- Opciones de despliegue: no se detallan en la model card; el autor menciona vLLM para servir el modelo profesor (gemma-4-26B-A4B-it), no para kotag. No se confirman integraciones con llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explícita; con 853 millones de parámetros, en bfloat16 los pesos ocupan aproximadamente 1,7 GB, y en float32 unos 3,4 GB, a lo que hay que sumar la cabeza de lectura y el estado de activaciones.
+- GPU recomendadas: NVIDIA GB10 (usada en los benchmarks), y por tamaño cualquier GPU NVIDIA moderna con al menos 4-8 GB de VRAM; se menciona soporte de kernels `flash-linear-attention` para GPU NVIDIA.
+- Cabe en GPU de consumo: sí, por el tamaño del modelo (0,85B) es viable en tarjetas consumer con suficiente VRAM; la model card no enumera modelos concretos.
+- Opciones de despliegue: script propio `kotag.py` y `spell.py` sobre `transformers>=5.17`, `safetensors` y `huggingface_hub`; integración con PyKoSpacing v2; demos web con la librería estándar (`examples/demo.py`, `demo_spell.py`, `demo_writer.py`) con opción `--device cpu`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 18 ms por frase en NVIDIA GB10 (0 tokens generados); en CPU se indica bfloat16 en el ejemplo de `KoTagger.from_pretrained`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kotag-0.8b | 852.985.920 | no disponible | Etiquetado de secuencias coreano | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.5-0.8B (base) | 852.985.920 (aprox.) | no disponible | Generacion de texto | no disponible | Hugging Face |
-| KoSpacing v1 (referencia en la model card) | no disponible | no disponible | Espaciado de palabras coreano | no disponible | no disponible |
+| kotag-0.8b | 852.985.920 | no disponible | Etiquetado por unidad, 1 forward pass | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base generativo) | ~0,8B | no disponible | Generacion autoregresiva | no disponible en la informacion | Hugging Face |
+| KoSpacing v1 | no disponible | no disponible | Espaciado coreano | no disponible en la informacion | Referenciado en la model card |
 
-No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
+La comparación directa con el modelo base generativo en la tarea de espaciado muestra una diferencia sustancial: kotag-0.8b obtiene F1 0.849 con 18 ms, frente a F1 0.326 y 586 ms del Qwen3.5-0.8B generativo. Frente a KoSpacing v1, mejora el espaciado (0.849 frente a 0.824) y la reparación de espaciado (0.917 frente a 0.820). No se dispone de datos de otros modelos de etiquetado coreano comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sensibilidad a la formulacion: la restauracion de puntuacion cae de 0,815 a 0,058 y el rol sintactico de 0,968 a 0,638 al usar formulaciones nuevas. Se recomienda usar las formulaciones entrenadas (PROMPT.md).
-- Las reglas procedimentales no se aprenden de la descripcion: 0,915 con las reglas entrenadas frente a 0,077 con reglas nunca vistas.
-- Rendimiento debil en palabras no soportadas en respuestas en ingles (F1 de palabra de 0,368) incluso con formulacion entrenada.
-- Las tareas no entrenadas puntuan entre 0,00 y 0,81; la deteccion de caracteres erroneos obtiene 0,003 y el span de respuesta en KLUE-MRC 0,079.
-- Solo soporta coreano; no se documentan capacidades multilingues.
-- No genera texto: no es adecuado para tareas generativas, resumen o traduccion.
-- No se documentan sesgos conocidos ni evaluaciones de sesgo en la informacion disponible.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero el modelo puede asignar etiquetas incorrectas con alta confianza; las probabilidades por unidad permiten aplicar umbrales.
-- Licencia Apache 2.0 permite uso comercial, pero no se documentan restricciones adicionales ni condiciones de atribucion especificas.
-- El modelo es "homebrew", construido en una sola maquina; no se documentan pruebas de produccion a gran escala ni latencia.
+- El modelo está especializado exclusivamente en coreano; no se ha validado para otros idiomas.
+- No es un modelo generativo: no produce texto libre, razonamiento multi-paso ni tool calling; su salida son etiquetas por unidad.
+- La corrección ortográfica puede introducir ediciones no deseadas en dominios formales, aunque la model card reporta una reducción del 37,0% de ediciones en dominio formal frente a v1.5 y un 98,5% de texto limpio conservado (99,2% en modo seguro).
+- Riesgo de alucinación inherente al etiquetado: las etiquetas se asignan por criterios definidos en el prompt, por lo que instrucciones ambiguas o mal especificadas degradan la calidad.
+- El enmascaramiento de PII alcanza un 94,8% de filas completas, por lo que queda un margen de error que exige revisión en entornos con requisitos estrictos de privacidad.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-0.8B debe verificarse por separado; la información disponible no detalla su licencia.
+- Requiere `transformers>=5.17` y, para kernels rápidos en GPU, `flash-linear-attention`, lo que puede limitar despliegues en entornos con versiones antiguas.
+- No se han publicado datos sobre longitud de contexto, sesgos específicos ni composición del dataset de entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gogamza/kotag-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- PyKoSpacing (usa el modelo como KoSpacing v2): https://github.com/haven-jeon/PyKoSpacing
-- Jeff (receta de decision): https://github.com/firelex/jeff
-- AutoJev (origen de la receta): https://github.com/denis-pplx/autojev
-- Modelo profesor: google/gemma-4-26B-A4B-it (referenciado en la model card; no se proporciona URL directa)
+- PyKoSpacing (repositorio): https://github.com/haven-jeon/PyKoSpacing
+- README en coreano: https://huggingface.co/gogamza/kotag-0.8b/blob/main/README_ko.md
+- Demo web (GIF): https://huggingface.co/gogamza/kotag-0.8b/blob/main/assets/demo.gif

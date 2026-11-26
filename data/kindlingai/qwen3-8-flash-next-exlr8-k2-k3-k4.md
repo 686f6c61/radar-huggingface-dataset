@@ -2,108 +2,107 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next exlr8 (K2/K3/K4) es una cuantización del modelo Qwen3.8-Flash-Next de Qwen, publicada por kindlingai en formato exlr8 v2. Se trata de una build orientada a dispositivos de memoria unificada de clase NVIDIA GB10 (DGX Spark, ASUS GX10), servible en una a cuatro cajas mediante tensor-parallel. El modelo base es un MoE híbrido de 48 capas de texto que combina 36 capas de atención lineal Gated DeltaNet con 12 capas de atención GQA-12 completa, e incorpora un indexador disperso QSA de bloque 4, hiper-conexiones de bajo rango de 4 streams y 512 expertos enrutados con top-10 más un experto compartido por capa.
+Qwen3.8-Flash-Next exlr8 (K2/K3/K4) es una cuantizacion del modelo multimodal Qwen3.8-Flash-Next publicada por kindlingai bajo el formato propietario exlr8 v2. El modelo base es un MoE hibrido multimodal de Qwen (`Qwen4ExpForConditionalGeneration`) que combina atencion lineal Gated DeltaNet con atencion completa GQA-12 en una proporcion de 36 a 12 capas, e incorpora una torre de vision de 27 capas. Esta version cuantiza unicamente las proyecciones de expertos (routed y shared) de las 48 capas MoE a tres anchos de trellis (K2, K3 y K4), manteniendo en BF16 las proyecciones densas, el vocabulario, el drafter MTP, la torre de vision y la tabla PLE de Layer-1.
 
-La relevancia de esta release reside en el formato: los expertos enrutados y compartidos de las 48 capas se almacenan en tres anchuras de trellis (K2, K3 y K4) sobre el codebook `pmcgx`, y la anchura de servicio se elige en tiempo de carga. Los pesos densos, el vocabulario, el drafter MTP y el rowstore PLE de Layer-1 se mantienen en BF16. El repositorio ocupa 16,4 GB, aunque el footprint residente real por anchura va de 45,7 GB (K2) a 75,9 GB (K4), más un rowstore PLE de 102,4 GB que reside en NVMe local.
+La relevancia de esta publicacion es fundamentalmente de infraestructura: esta disenada para dispositivos de memoria unificada de clase NVIDIA GB10 (DGX Spark, ASUS GX10) servidos en una a cuatro maquinas, y solo funciona con el motor exlr8-nativo de KindlingAI (`gr8`). No es un checkpoint de proposito general: requiere un loader que aplique redondeo E4M3 a cada valor producido por el codebook trellis antes de aplicar los vectores laterales, de modo que un decodificador EXL3 estandar lee pesos medibles peores de los mismos bytes.
 
-Es importante señalar que esta versión es solo texto en v0.1: la torre de visión no está incluida, pese a que el pipeline declarado sea image-text-to-text. Además, los pesos no son utilizables sin redondeo E4M3: cualquier loader debe redondear cada valor producido por el codebook trellis a FP8 E4M3 (round to nearest even, saturante) antes de aplicar los vectores laterales, ya que el encoder buscó únicamente sobre valores redondeados a E4M3.
+El interes practico esta en sus perfiles de ancho: `bit200` ocupa 46,4 GB en residente con un KL medio de 0,0537 frente a BF16, `bit300` 61,5 GB con KL 0,0124 y `bit400` 76,6 GB con KL 0,0046, ademas de un drafter especulativo DFlash Q4_0 que aporta mejoras de velocidad del 38 % en codigo y del 61-66 % en tareas estructuradas y de conteo en flujo unico, con paridad greedy byte a byte.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrido: 48 capas de texto (36 Gated DeltaNet linear-attention + 12 GQA-12 full attention con indexador QSA disperso de bloque 4 en capas 3, 7, ..., 47); hiper-conexiones de bajo rango 4 × 2560 (rank 320); PLE Layer-1 2/3-gram (320.001.536 × 160 BF16); drafter especulativo MTP de 1 capa full-attention |
+| Arquitectura | Transformer MoE hibrido multimodal (36 capas Gated DeltaNet linear-attention + 12 capas full GQA-12 con indice disperso QSA block-4), 4-stream low-rank hyper-connections (4 x 2560, rank 320), torre de vision de 27 capas |
 | Parametros totales | no disponible |
-| Parametros activos | 512 expertos enrutados con top-10 + 1 experto compartido con compuerta por capa (recuento de parámetros activos no disponible) |
+| Parametros activos | 512 expertos routed con top-10 routing + 1 experto shared con gate por capa (parametros activos totales no disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | exlr8 v2 trellis `pmcgx` con anchuras K2 (2,0 bpw), K3 (3,0 bpw) y K4 (4,0 bpw) sobre expertos; BF16 en trunk denso, vocabulario, MTP y PLE rowstore; requiere redondeo E4M3 en carga |
+| Tipos de cuantizacion | Trellis K2, K3 y K4 en codebook `pmcgx`, con redondeo obligatorio a FP8 E4M3; drafter DFlash en Q4_0; densos, vision, MTP y PLE en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (license: other) |
-| Formato de pesos | safetensors (exlr8: `experts/exlr8-layer-LLL.kK.safetensors`, `experts/exlr8-layer-LLL.index.safetensors`, `dense/exlr8-dense.safetensors`, `ple/exlr8-ple-L001.bin`) |
+| Licencia | qwen-community-1.0 (license_name), etiquetada como `other` |
+| Formato de pesos | exlr8 v2 (safetensors para densos y vision; packs propietarios para expertos y drafter) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next (`Qwen4ExpForConditionalGeneration`) es un MoE híbrido con 48 capas de texto: 36 capas de atención lineal Gated DeltaNet y 12 capas de atención completa GQA-12, con un indexador disperso QSA de bloque 4 insertado en las capas 3, 7, ..., 47. Emplea hiper-conexiones de bajo rango de 4 streams (4 × 2560, rank 320), una tabla PLE Layer-1 de 2/3-gram de 320.001.536 × 160 en BF16, 512 expertos enrutados con top-10 más un experto compartido con compuerta por capa, embeddings y LM head independientes de 248.320 tokens, y un drafter especulativo MTP de 1 capa full-attention (`mtp.layers.0`).
+El modelo base es un MoE multimodal hibrido. De las 48 capas de texto, 36 son Gated DeltaNet de atencion lineal y 12 son de atencion completa GQA-12 con un indice disperso QSA de bloque 4 en las capas 3, 7, ..., 47. Incorpora hyper-conexiones de bajo rango de 4 flujos (4 x 2560, rank 320), una tabla de embeddings por capa (PLE) de 2/3-gramas de 320.001.536 x 160 en BF16, 512 expertos routed con top-10 routing mas un experto shared con gate por capa, embeddings y LM head no atados de 248.320 tokens, un drafter especulativo MTP de una capa de atencion completa y una torre de vision de 27 capas. El contexto de entrenamiento, el volumen de tokens y la composicion del dataset no se detallan en la informacion disponible.
 
-Esta release cuantiza exclusivamente los expertos enrutados y compartidos de las capas 0-47 a `pmcgx` K2/K3/K4, manteniendo en BF16 las proyecciones densas, el vocabulario, el drafter MTP y el rowstore PLE de Layer-1. Cada anchura es una codificación trellis independiente y Hessian-aware: los códigos no anidan entre anchuras y las tres usan el codebook E4M3 `pmcgx`. Los tamaños de archivo por capa son exactos: 630.538.240 bytes en K2, 945.709.056 bytes en K3 y 1.260.879.872 bytes en K4 (513 expertos × 3 proyecciones × 2560 × 640 más 64 KiB de alineación de sección). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+La innovacion de esta publicacion no esta en el entrenamiento sino en la codificacion: cada experto routed y shared de las capas 0-47 se almacena simultaneamente a tres anchos de trellis (K2, K3, K4) en el codebook `pmcgx`, y el ancho de servicio se elige en tiempo de carga. El encoder busco exclusivamente sobre valores redondeados a E4M3, por lo que el redondeo round-to-nearest-even con saturacion forma parte del formato y debe aplicarse antes de los vectores laterales. Los pesos densos, el vocabulario, el drafter MTP, la torre de vision y la tabla PLE de Layer-1 permanecen en BF16 sin cambios respecto al modelo base.
 
 ## Capacidades
 
-- Generación de texto en modalidad solo texto (la torre de visión no está incluida en v0.1).
-- Razonamiento y decodificación especulativa multi-paso mediante el drafter MTP de 1 capa, con `--mtp 0..3` y paridad greedy byte-idéntica entre configuraciones MTP.
-- Servicio en tensor-parallel de TP=1 a TP=4, con escalado de anchura en vivo entre TP=1..4 mediante `GR8_PTAB=2` y `bin/g6layout`.
-- Streaming asíncrono de filas PLE de Layer-1 desde NVMe local por token, con caché LRU de host (1 GiB por defecto).
-- Capacidades multilingües: no disponible.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
-- Capacidades de audio: no disponibles.
+- Generacion de texto conversacional y razonamiento en el modelo base Qwen3.8-Flash-Next.
+- Procesamiento multimodal imagen-texto: pipeline `image-text-to-text` con torre ViT de 27 capas en BF16 y MRoPE 3D intercalado (activable con `GR8_QW38_VISION=1`).
+- Routing MoE disperso con top-10 sobre 512 expertos routed mas un experto shared por capa.
+- Decodificacion especulativa: drafter DFlash de bloques paralelos en Q4_0 para flujo unico y drafter MTP de Layer-48 grafo para concurrencia multi-stream (`--mtp 0..3`).
+- Escalado de ancho en vivo entre perfiles K2/K3/K4 y entre TP=1 y TP=4 con `GR8_PTAB=2` y `bin/g6layout`.
+- Cache de prefijo y sesion KV en SSD con `O_DIRECT` (`KV_STORE=ssd:...`).
+- Streaming asincrono de filas PLE de Layer-1 desde NVMe local por detras de la capa 0.
+- Soporte de tool calling, function calling y agentes: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue en DGX Spark con una sola caja: la anchura K3 (por defecto en `gr8`) ocupa 60,8 GB residentes y cabe en un box de 128 GB, sirviendo a TP=1 con 32,69 tok/s en `c1` sin MTP y 56,05 tok/s con `MTP=3`, lo que permite montar un nodo de inferencia de texto de altas prestaciones sin infraestructura de datacenter.
-- Escalado horizontal a dos cajas: con TP=2 y anchura K3 se alcanzan 81,90 tok/s en `c1` con `MTP=3` y 228,18 tok/s agregados en `c5`, útil para servir cargas conversacionales concurrentes manteniendo una huella por nodo dentro de los 128 GB.
-- Máxima calidad por caja única: la anchura K4 (75,9 GB residentes) también cabe en un box de 128 GB y ofrece 54,28 tok/s en `c1` con `MTP=3` a TP=1, adecuada cuando la fidelidad de los expertos prima sobre el throughput.
-- Procesado de contexto largo: con `P=2048` y anchura K3 se obtienen 1.018,4 tok/s de prefill y 32,12 tok/s de decode en solitario a TP=1, y 1.176,6 tok/s de prefill a TP=2, lo que habilita tareas de resumen y análisis de documentos extensos en hardware de un solo nodo.
-- Restricción de huella mínima: la anchura K2 (45,7 GB residentes) es la opción de menor consumo de memoria y sigue sirviendo a TP=1..4, apropiada para entornos donde el resto de la VRAM/RAM debe quedar libre para otras cargas.
-- Inferencia con latencia controlada por decodificación especulativa: `MTP=3` alcanza 71%-85% de aceptación de borradores (3,13-3,50 tok/round) en prosa técnica, lo que permite ajustar latencia por petición según la carga sin alterar la salida greedy.
+- Despliegue en DGX Spark o ASUS GX10: el perfil `bit200` deja los expertos en 30,3 GB por caja a TP=1, lo que permite servir el modelo completo en un unico dispositivo de memoria unificada de clase GB10 con 46,4 GB residentes.
+- Servicio multi-maquina con tensor parallelism: a TP=2, el perfil `bit300` reduce los expertos a 22,7 GB por caja (61,5 GB residentes totales), adecuado para clusters de dos a cuatro nodos con KL medio de 0,0124 frente a BF16.
+- Inferencia de maxima fidelidad: el perfil `bit400` (76,6 GB residentes, KL medio 0,0046, top-1 del 97,70 %) es la opcion cuando la divergencia respecto al modelo BF16 debe ser minima, con una perplejidad WikiText de 3,723, incluso ligeramente por debajo de la referencia de 3,729.
+- Generacion de codigo en flujo unico: el drafter DFlash Q4_0 aporta una mejora de velocidad del 38 % en cargas de codigo con paridad greedy byte a byte, util en asistentes de autocompletado o pipelines de CI/CD que requieran baja latencia por token.
+- Tareas estructuradas y de conteo: el mismo drafter ofrece mejoras del 61-66 % en flujo unico para salidas estructuradas, aprovechable en extraccion de datos, validacion de esquemas JSON y generacion de informes tabulares.
+- Procesamiento de imagenes y texto combinados: con `GR8_QW38_VISION=1` se activa la torre ViT de 27 capas en BF16 para pipelines de image-text-to-text, como descripcion de documentos escaneados o analisis de capturas.
+- Servicio concurrente multi-sesion: el drafter MTP grafo (`--mtp 0..3`) esta pensado para concurrencia multi-stream, adecuado en endpoints de chat con varias peticiones simultaneas.
+- Recuperacion de contexto largo con cache en disco: `KV_STORE=ssd:...` con `O_DIRECT` permite reutilizar prefijos y sesiones persistidas en SSD, util en asistentes con system prompts extensos o conversaciones de larga duracion.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con kindlingai/gr8 el 2026-11-22 en boxes GB10 (DGX Spark) con almacenamiento local NVMe, `GR8_QW38_DENSE_FP8=1`, `GR8_QW38_PLE_ASYNC=1`, `GR8_QW38_GRAPH=1` y RoCE dual-rail (`GR8_QW38_FAST_AR=1`) en TP=2. Prosa en inglés (`P=30`, `gen=96` para `c1`, `gen=64` para `c5`):
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente reporta metricas de fidelidad de cuantizacion y de velocidad relativa:
 
-| Configuracion | Manifest | MTP=0 c1 | MTP=1 c1 | MTP=2 c1 | MTP=3 c1 | MTP=0 c5 agg | MTP=3 c5 agg |
-|---|---|---:|---:|---:|---:|---:|---:|
-| 1 box (TP=1) | bit300 | 32,69 tok/s | 45,23 tok/s | 52,68 tok/s | 56,05 tok/s | 135,62 tok/s | 165,87 tok/s |
-| 1 box (TP=1) | bit400 | — | — | — | 54,28 tok/s | — | — |
-| 2 boxes (TP=2) | bit300 | 48,55 tok/s | 68,79 tok/s | 80,17 tok/s | 81,90 tok/s | 200,00 tok/s | 228,18 tok/s |
-| 2 boxes (TP=2) | bit400 | — | — | — | 78,20 tok/s | — | 179,14 tok/s |
+| Perfil | bpw routed | Tamano residente | Expertos por caja (TP=1 / TP=2) | KL modelo (media / mediana) | Top-1 modelo | KL WikiText (media / mediana) | PPL WikiText (ref. 3,729) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| `bit200` | 2,00 | 46,4 GB | 30,3 / 15,2 GB | 0,0537 / 0,00743 | 92,60 % | 0,2177 / 0,0557 | 3,845 (+3,11 %) |
+| `bit300` | 3,00 | 61,5 GB | 45,4 / 22,7 GB | 0,0124 / 0,00157 | 96,34 % | 0,0796 / 0,0178 | 3,737 (+0,23 %) |
+| `bit400` | 4,00 | 76,6 GB | 60,5 / 30,3 GB | 0,0046 / 0,00054 | 97,70 % | 0,0373 / 0,0081 | 3,723 (-0,17 %) |
 
-Prefill de contexto largo y decode en solitario (`MTP=0`, `bit300`):
+Las metricas KL se miden en `float64` sobre el vocabulario completo (248.320 tokens) en 65.536 posiciones de test de WikiText-2 (32 x 2048) y 16.057 posiciones de asistente generadas por el modelo (8 x 2048). El tamano residente incluye 16,0 GB de pesos densos, vocabulario, MTP y vision en BF16 (15,1 GB sin vision); el drafter DFlash anade 0,52 GB al cargarse y la tabla PLE (102,4 GB) se transmite desde NVMe local.
 
-| Configuracion | P=128 solo decode | P=2048 prefill | P=2048 solo decode |
-|---|---:|---:|---:|
-| 1 box (TP=1) | 34,41 tok/s (bit400: 32,88) | 1.018,4 tok/s | 32,12 tok/s |
-| 2 boxes (TP=2) | 51,52 tok/s | 1.176,6 tok/s | 46,82 tok/s |
-
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
+Mejoras de velocidad del drafter DFlash Q4_0: +38 % en codigo y +61-66 % en tareas estructuradas y de conteo, en flujo unico, con paridad greedy byte a byte del 100 %.
 
 ## Requisitos de hardware
 
-- VRAM/RAM residente por anchura: 45,7 GB en K2, 60,8 GB en K3 y 75,9 GB en K4, incluyendo 0,32 GB de índice/side data de expertos y 15,11 GB de BF16 denso, vocabulario y MTP (9,90 GB sin MTP).
-- Almacenamiento NVMe local obligatorio para el rowstore PLE (`ple/exlr8-ple-L001.bin`, 102,40 GB / 95,37 GiB), leído por token vía `O_DIRECT` `pread` a una caché LRU de host de 1 GiB por defecto.
-- GPU recomendadas: dispositivos de memoria unificada de clase NVIDIA GB10 (DGX Spark, ASUS GX10); no se documentan A100, H100 ni RTX 4090 para este formato.
-- Cabe en consumer GPU: no disponible; la release está diseñada para boxes GB10 de 128 GB, no para GPUs de consumo.
-- Opciones de despliegue: motor exlr8-nativo kindlingai/gr8 (`./gr8 qw38`), con TP=1 a TP=4 y escalado de anchura en vivo mediante `GR8_PTAB=2` y `bin/g6layout`. vLLM, llama.cpp, Ollama y TGI no están documentados como compatibles.
-- Latencia y throughput: ver tabla de benchmarks; `MTP=3` logra 71%-85% de aceptación de borradores y paridad greedy byte-idéntica entre `MTP=0, 1, 2, 3` y `GR8_PTAB=0` vs `GR8_PTAB=2`.
+- VRAM/RAM unificada estimada para inferencia: 46,4 GB (`bit200`), 61,5 GB (`bit300`) o 76,6 GB (`bit400`) en residente, mas 0,52 GB si se carga el drafter DFlash y 102,4 GB de tabla PLE que se transmiten desde NVMe local.
+- GPU recomendadas: dispositivos de memoria unificada de clase NVIDIA GB10, es decir, DGX Spark y ASUS GX10, en configuraciones de una a cuatro maquinas.
+- Cabe en GPU de consumo: no disponible; el formato esta disenado para GB10 y el motor `gr8`, no se documenta soporte para RTX 4090 u otras GPU de consumo.
+- Opciones de despliegue: exclusivamente `kindlingai/gr8` (motor exlr8-nativo), invocado con `./gr8 qw38` a TP=1 hasta TP=4. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Almacenamiento: se recomienda NVMe local para el streaming asincrono de filas PLE y para la cache KV en SSD con `O_DIRECT`.
+- Latencia y throughput absolutos: no disponibles; solo se publican mejoras relativas del drafter (+38 % en codigo, +61-66 % en estructuradas y conteo).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kindlingai/Qwen3.8-Flash-Next-exlr8-k2-k3-k4 | no disponible (MoE 512 expertos top-10, 48 capas) | no disponible | 56,05 tok/s c1 TP=1 MTP=3 (K3) | qwen-community-1.0 | Hugging Face, formato exlr8 |
-| kindlingai/glm-5.3-exlr8-k2-k3-k4 | no disponible | no disponible | no disponible | no disponible | Hugging Face, formato exlr8 compartido |
-| kindlingai/glm-5.3-flash-exlr8-k2-k3-k4 | no disponible | no disponible | no disponible | no disponible | Hugging Face, formato exlr8 compartido |
+| Qwen3.8-Flash-Next exlr8 K2/K3/K4 (este) | 512 expertos routed top-10 + 1 shared por capa; totales no disponibles | no disponible | Trellis K2/K3/K4 + E4M3, drafter Q4_0, densos BF16 | qwen-community-1.0 | Hugging Face, motor `gr8` |
+| kindlingai/glm-5.3-exlr8-k2-k3-k4 | no disponible | no disponible | exlr8 v2 K2/K3/K4 | no disponible | Hugging Face, motor `gr8` |
+| kindlingai/glm-5.3-flash-exlr8-k2-k3-k4 | no disponible | no disponible | exlr8 v2 K2/K3/K4 | no disponible | Hugging Face, motor `gr8` |
+| Qwen/Qwen3.8-Flash-Next (base BF16) | 512 expertos routed top-10 + 1 shared por capa; totales no disponibles | no disponible | BF16 | qwen-community-1.0 | Hugging Face |
 
-Los dos modelos GLM comparten el formato y la descripción byte-level del loader con esta release; no se dispone de datos de parámetros, contexto, rendimiento ni licencia para establecer una comparación cuantitativa.
+Los dos modelos GLM comparten el mismo formato byte a byte y el mismo motor, por lo que son las alternativas naturales dentro del ecosistema exlr8; el modelo base BF16 es la referencia de fidelidad frente a la que se miden los KL de la tabla anterior. No se dispone de datos de rendimiento en tareas para establecer comparaciones de calidad entre ellos.
 
 ## Limitaciones y advertencias
 
-- Los pesos no son utilizables sin redondeo E4M3: un decoder EXL3 estándar, o cualquier decoder que omita el redondeo, lee pesos mediblemente peores de los mismos bytes. El redondeo (round to nearest even, saturante) forma parte del formato.
-- La release es solo texto en v0.1: la torre de visión no está incluida, pese al pipeline image-text-to-text declarado.
-- El rowstore PLE de 102,4 GB debe residir en NVMe local; no cabe en memoria de GPU y depende de lectura `O_DIRECT` por token con caché LRU de 1 GiB, lo que condiciona el despliegue a hardware con almacenamiento rápido.
-- Las anchuras K2/K3/K4 son codificaciones independientes: los códigos no anidan entre anchuras, por lo que no se puede cambiar de anchura sin recargar desde el archivo correspondiente.
-- Compatibilidad de motores limitada: solo kindlingai/gr8 está documentado; no hay soporte conocido en vLLM, llama.cpp, Ollama o TGI.
-- Idiomas soportados no disponibles; no se puede confirmar cobertura multilingüe.
-- Licencia qwen-community-1.0 (license: other): deben revisarse las restricciones de uso comercial en el archivo LICENSE antes de producción.
-- Sesgos conocidos y riesgo de alucinación: no documentados en la información proporcionada.
-- No se han publicado benchmarks de calidad (MMLU, HumanEval, GSM8K), por lo que no es posible evaluar la degradación introducida por la cuantización frente al modelo base.
+- Los pesos no son utilizables sin redondeo E4M3: un decodificador EXL3 estandar, o cualquiera que omita el redondeo round-to-nearest-even con saturacion, lee pesos medibles peores de los mismos bytes.
+- Dependencia total del motor `gr8` de KindlingAI; no hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni otras pilas de inferencia.
+- El formato esta disenado para dispositivos de memoria unificada de clase GB10; no se documenta funcionamiento en GPU discretas convencionales.
+- La tabla PLE de Layer-1 (102,4 GB) no cabe en memoria y debe transmitirse desde NVMe local, lo que introduce requisitos de almacenamiento y de ancho de banda de disco.
+- El perfil `bit200` presenta una degradacion apreciable: KL medio de 0,0537, top-1 del 92,60 % y un aumento de perplejidad WikiText del 3,11 %; no es adecuado si se requiere fidelidad alta.
+- Licencia `qwen-community-1.0` etiquetada como `other`: deben revisarse los terminos del archivo LICENSE antes de cualquier uso comercial.
+- Idiomas soportados no disponibles en la informacion proporcionada.
+- Longitud de contexto no disponible en la informacion proporcionada.
+- Sesgos conocidos y riesgo de alucinacion del modelo base: no disponibles en la informacion proporcionada.
+- El repositorio tiene 256,8 GB y solo 1 like frente a 12.081 descargas, lo que sugiere una validacion comunitaria muy limitada.
 
 ## Enlaces
 
-- [Hugging Face: kindlingai/Qwen3.8-Flash-Next-exlr8-k2-k3-k4](https://huggingface.co/kindlingai/Qwen3.8-Flash-Next-exlr8-k2-k3-k4)
-- [Modelo base: Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
-- [Formato exlr8 (FORMAT.md)](https://github.com/kindlingai/exlr8/blob/main/FORMAT.md)
-- [Motor kindlingai/gr8](https://github.com/kindlingai/gr8)
-- [Documentación QWEN38 en gr8](https://github.com/kindlingai/gr8/blob/main/docs/QWEN38.md)
-- [kindlingai/glm-5.3-exlr8-k2-k3-k4](https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4)
-- [kindlingai/glm-5.3-flash-exlr8-k2-k3-k4](https://huggingface.co/kindlingai/glm-5.3-flash-exlr8-k2-k3-k4)
+- Modelo en Hugging Face: https://huggingface.co/kindlingai/Qwen3.8-Flash-Next-exlr8-k2-k3-k4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Motor gr8: https://github.com/kindlingai/gr8
+- Documentacion de Qwen3.8 en gr8: https://github.com/kindlingai/gr8/blob/main/docs/QWEN38.md
+- Especificacion del formato exlr8: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
+- Receta 1x DGX Spark: https://github.com/kindlingai/recipes/tree/main/qwen3.8-flash-next/dgx-spark/1x/exlr8-gr8
+- Modelo hermano GLM-5.3 exlr8: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
+- Modelo hermano GLM-5.3-Flash exlr8: https://huggingface.co/kindlingai/glm-5.3-flash-exlr8-k2-k3-k4

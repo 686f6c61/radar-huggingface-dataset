@@ -5,13 +5,14 @@
   "author": "Mo7amedAdel113003",
   "url": "https://huggingface.co/Mo7amedAdel113003/t5-summarization-int8",
   "created_at": "2026-11-25T10:45:20.000Z",
-  "updated_at": "2026-11-25T10:45:20.000Z",
+  "updated_at": "2026-11-25T10:51:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,11 +21,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 78937690,
+  "storage_human": "79 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

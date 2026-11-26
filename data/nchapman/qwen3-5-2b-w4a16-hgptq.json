@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64 · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64",
-      "snippet": "Instructions to use nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64 with Transformers:"
-    },
-    {
-      "title": "nchapman/Qwen3.5-2B-W4A16-GPTQ · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.5-2B-W4A16-GPTQ",
-      "snippet": "nchapman / Qwen3.5-2B-W4A16-GPTQ Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 gptq w4a16 compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

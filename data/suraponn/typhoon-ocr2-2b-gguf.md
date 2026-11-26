@@ -2,99 +2,107 @@
 
 ## Resumen
 
-Typhoon OCR V2 2B GGUF es la versión cuantizada en formato GGUF del modelo Typhoon OCR V2 2B, desarrollado por Typhoon AI (SCB 10X) y empaquetado por el usuario Suraponn para su uso con llama.cpp y herramientas derivadas. Se trata de un modelo multimodal de tipo image-text-to-text especializado en parsing de documentos: dada la imagen de una página, devuelve los elementos de maquetación en orden de lectura, cada uno con su categoría, su bounding box y su texto, formateando tablas en HTML, fórmulas en LaTeX y el resto de texto en Markdown.
+Typhoon OCR V2 2B GGUF es la distribucion cuantizada en formato GGUF del modelo Typhoon OCR V2 2B, un parser de documentos disenado especificamente para tailandes e ingles. Desarrollado originalmente por el equipo de Typhoon (SCB 10X) y empaquetado en GGUF por el usuario Suraponn, el modelo resuelve el problema de la extraccion estructurada de contenido a partir de imagenes de paginas: devuelve los elementos de maquetacion en orden de lectura, cada uno con su categoria, su bounding box y su texto, con tablas en HTML, formulas en LaTeX y texto plano en Markdown.
 
-El modelo base resuelve un problema concreto: la digitalización estructurada de documentos en tailandés e inglés, incluyendo páginas fotografiadas, con preservación de layout, y añade capacidades de respuesta a preguntas sobre documentos y extracción de información clave en JSON. Con 1.881.825.088 parámetros (aproximadamente 1,88 mil millones) y una ventana de contexto configurada en 40.960 tokens en los ejemplos de despliegue, está pensado para ejecutarse en hardware modesto.
+La relevancia de esta version radica en que permite ejecutar un OCR de documentos de calidad sobre llama.cpp y herramientas derivadas (Ollama, LM Studio, servidores locales compatibles con la API de OpenAI), sin necesidad de GPUs de datacenter ni de infraestructura de vLLM. Con 1.881.825.088 parametros totales y una licencia Apache 2.0 (sujeta a los terminos OpenTyphoon), ofrece un equilibrio poco habitual entre tamano reducido, soporte bilingue tailandes-ingles y salida estructurada lista para consumir por programas.
 
-La relevancia de esta versión GGUF reside en que permite desplegar el modelo en local mediante llama.cpp y su servidor compatible con la API de OpenAI, con cuantizaciones que van desde 16 bits (3,78 GB) hasta Q4_K_M (1,27 GB), manteniendo una precisión muy cercana a los pesos originales en el benchmark MDPBench (79,5 frente a 79,8 en la versión bf16 con vLLM).
+El modelo base es typhoon-ai/typhoon-ocr2-2b, con arquitectura multimodal image-text-to-text, y esta version GGUF mantiene la precision practicamente intacta: el fichero Q8_0 obtiene 79.5 en MDPBench frente a 79.8 de los pesos originales en bf16. El repositorio ocupa 7.7 GB e incluye tanto los pesos cuantizados como el codificador de imagen (mmproj) necesario para la inferencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo multimodal image-text-to-text; incluye codificador de imagen separado en el archivo mmproj) |
-| Parámetros totales | 1.881.825.088 (aprox. 1,88 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 40.960 tokens en la configuración recomendada (`-c 40960`), reservando 16.384 para imagen y 16.384 para respuesta |
-| Tipos de cuantización | f16 (sin cuantizar), Q8_0 (8 bits), Q4_K_M (4 bits, k-quant medium); codificador de imagen en f16 |
-| Idiomas soportados | tailandés (th), inglés (en) |
-| Licencia | Apache 2.0 (sujeto a los OpenTyphoon Terms and Conditions) |
+| Arquitectura | Transformer multimodal image-text-to-text (modelo base typhoon-ai/typhoon-ocr2-2b) |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 tokens configurados en el ejemplo de llama-server (16.384 de imagen + 16.384 de respuesta) |
+| Tipos de cuantizacion | f16 (sin cuantizar), Q8_0 (8 bits), Q4_K_M (4 bits, k-quant medium); codificador de imagen en f16 |
+| Idiomas soportados | tailandes (th), ingles (en) |
+| Licencia | Apache 2.0, sujeta a los OpenTyphoon Terms and Conditions |
 | Formato de pesos | GGUF (llama.cpp) |
+| Tamano de ficheros | f16: 3.78 GB; Q8_0: 2.01 GB; Q4_K_M: 1.27 GB; mmproj f16: 668 MB |
+| Pipeline | image-text-to-text |
+| Libreria | gguf |
 
 ## Arquitectura y entrenamiento
 
-No se dispone en la información proporcionada de detalles sobre la arquitectura interna del transformer del modelo base (número de capas, dimensión oculta, mecanismo de atención ni diseño del codificador de imagen). Lo que sí se documenta es que el modelo es multimodal de tipo image-text-to-text, con un codificador de imagen empaquetado por separado en el archivo `mmproj-typhoon-ocr2-2b-f16.gguf` (668 MB), que debe acompañar a cualquiera de los archivos de pesos. El modelo procesa imágenes con un presupuesto de hasta 16.384 tokens de imagen, donde cada token de imagen cubre 32×32 píxeles, lo que permite páginas de hasta 16,7 MP.
+El modelo base Typhoon OCR V2 2B es un modelo multimodal de tipo image-text-to-text: recibe una imagen de pagina y un prompt de texto, y genera una respuesta textual estructurada. La salida es un objeto JSON con una lista de elementos de maquetacion, cada uno con su bounding box en una rejilla normalizada de 0 a 1000 relativa al ancho y alto de la pagina, su categoria (header, title, text, figure, table, formula, figure_caption, table_caption, formula_caption, figure_footnote, table_footnote, page_footnote, footer) y su contenido textual formateado segun el tipo (HTML para tablas, LaTeX para formulas, Markdown para el resto).
 
-El modelo fue entrenado con un conjunto fijo de prompts y sin bloque de razonamiento (thinking), de ahí que se recomiende `--reasoning off` en llama.cpp. La model card remite a la model card principal del modelo base para los detalles de entrenamiento, los resultados completos de benchmarks, ejemplos y limitaciones. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El modelo fue entrenado con un conjunto fijo de prompts y sin modo de razonamiento (thinking), por lo que la model card recomienda desactivar explicitamente el bloque de razonamiento en llama.cpp (`--reasoning off`). El informe tecnico (arXiv 2611.27494) describe el metodo y la evaluacion, pero en la informacion disponible no se detallan el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La version GGUF es una cuantizacion del modelo original: los pesos se convierten a f16, Q8_0 y Q4_K_M, y el codificador de imagen se distribuye por separado como mmproj en f16.
+
+Una innovacion practica destacable es la gestion del presupuesto de tokens de imagen: con `--image-max-tokens 16384`, una pagina puede ocupar hasta 16.7 megapixeles (un token de imagen cubre 32x32 pixeles). Sin este ajuste, llama.cpp reduce la resolucion de las paginas grandes y el texto pequeno, especialmente el tailandes, se vuelve dificil de leer. La model card exige ampliar la imagen antes de enviarla para que su lado largo tenga al menos 1.600 pixeles.
 
 ## Capacidades
 
-- Parsing de documentos página completa: extrae elementos de maquetación en orden de lectura, cada uno con bounding box (rejilla 0–1000 relativa al ancho y alto de la página), categoría y texto.
-- Categorías de layout soportadas: header, title, text, figure, table, formula, figure_caption, table_caption, formula_caption, figure_footnote, table_footnote, page_footnote, footer.
-- Formateo estructurado de salida: tablas en HTML, fórmulas en LaTeX y texto general en Markdown.
-- Respuesta a preguntas sobre el contenido de un documento.
-- Extracción de información clave en formato JSON.
-- Procesamiento de documentos digitales y de páginas fotografiadas.
-- Soporte bilingüe tailandés-inglés, con especial atención al tailandés (el modelo rinde peor con imágenes pequeñas, especialmente en tailandés).
-- Salida en un único objeto JSON (lista de elementos dentro de un bloque de código `json`).
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
+- Extraccion de maquetacion de paginas completas: devuelve elementos en orden de lectura humano con categoria, bounding box y texto.
+- Conversion de tablas a HTML y de formulas a LaTeX, con el resto de texto en Markdown.
+- OCR bilingue tailandes-ingles sobre documentos digitales y fotografias de paginas.
+- Respuesta a preguntas sobre el contenido de un documento (document QA).
+- Extraccion de informacion clave en formato JSON.
+- Salida estructurada consumible por programas mediante parseo del bloque `json`.
+- Integracion con la API compatible de OpenAI que expone llama-server.
+- No dispone de modo de razonamiento (thinking) y no fue entrenado con uno.
+- No se documentan capacidades de audio, video ni tool calling generico.
 
 ## Casos de uso
 
-- Digitalización masiva de archivos administrativos en tailandés: el modelo convierte páginas escaneadas o fotografiadas en Markdown estructurado con bounding boxes, lo que permite reconstruir el layout original y alimentar sistemas de gestión documental.
-- Extracción de tablas financieras: al formatear las tablas en HTML, se pueden integrar directamente en pipelines de extracción de datos y convertir después a CSV o bases de datos relacionales.
-- Procesamiento de documentos técnicos y científicos: las fórmulas se devuelven en LaTeX, lo que facilita su reutilización en publicaciones, wikis o sistemas de gestión de conocimiento científico.
-- Respuesta a preguntas sobre contratos o formularios: el modelo puede responder consultas sobre el contenido de una página concreta, útil en atención al cliente interna o en revisiones documentales.
-- Extracción de campos clave en JSON: para automatizar la captura de datos de facturas, formularios o registros, generando salidas estructuradas que se validan y cargan en sistemas posteriores.
-- Despliegue en local con llama.cpp: gracias a las cuantizaciones Q8_0 (2,01 GB) y Q4_K_M (1,27 GB), el modelo puede ejecutarse en estaciones de trabajo sin GPU de datacenter, con el servidor `llama-server` exponiendo una API compatible con OpenAI.
-- Preprocesado de corpus bilingües tailandés-inglés: para proyectos de investigación que necesiten convertir documentos en texto estructurado antes de entrenar otros modelos o construir índices de búsqueda.
+- Digitalizacion de archivos administrativos tailandeses: el modelo procesa imagenes de paginas escaneadas o fotografiadas y devuelve el texto en orden de lectura con bounding boxes, lo que permite reconstruir el documento y alimentar un indice de busqueda.
+- Extraccion de tablas financieras: al formatear las tablas como HTML, se pueden parsear directamente con librerias como BeautifulSoup o pandas para incorporar los datos a un pipeline de analisis sin postprocesado manual complejo.
+- Conversion de articulos cientificos con formulas: las formulas se emiten en LaTeX, lo que permite reutilizarlas en editores cientificos o en procesos de publicacion sin transcripcion manual.
+- Procesamiento por lotes en servidor local: con llama-server, `-np N` y un contexto multiplicado por N, se pueden atender varias peticiones concurrentes en una sola GPU, adecuado para digitalizar lotes de facturas o formularios.
+- Extraccion de campos clave a JSON: la capacidad de responder preguntas y devolver JSON permite implementar un extractor de datos (fechas, importes, nombres) sobre documentos concretos para integrarlo en un ERP o CRM.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: la cuantizacion Q4_K_M (1.27 GB) mas el mmproj (668 MB) cabe en GPUs de consumo, lo que facilita prototipos y despliegues en oficina.
+- Preprocesado para RAG documental: la salida Markdown con estructura de maquetacion sirve como entrada limpia a un sistema de recuperacion aumentada, preservando titulos, pies de figura y orden de lectura.
 
 ## Benchmarks y rendimiento
 
-Resultados en MDPBench (320 páginas en tailandés e inglés, digitales y fotografiadas), con decodificación greedy, thinking desactivado y presupuesto de imagen de 16.384 tokens:
+Resultados publicados en la model card sobre MDPBench (320 paginas tailandesas e inglesas, digitales y fotografiadas), con decodificacion greedy, thinking off y presupuesto de imagen de 16.384 tokens:
 
-| Archivo | Precisión | Tamaño | MDPBench ↑ | MDPBench Thai ↑ |
+| Fichero | Precision | Tamano | MDPBench | MDPBench Thai |
 |---|---|---|---|---|
-| Pesos originales (bf16, vLLM) | – | – | 79,8 | 81,3 |
-| `typhoon-ocr2-2b-f16.gguf` | 16 bits, sin cuantizar | 3,78 GB | 79,5 | 80,8 |
-| `typhoon-ocr2-2b-Q8_0.gguf` | 8 bits | 2,01 GB | 79,5 | 80,4 |
-| `typhoon-ocr2-2b-Q4_K_M.gguf` | 4 bits (k-quant, medium) | 1,27 GB | 78,4 | 79,7 |
-| `mmproj-typhoon-ocr2-2b-f16.gguf` | codificador de imagen (f16) | 668 MB | – | – |
+| Pesos originales (bf16, vLLM) | – | – | 79.8 | 81.3 |
+| typhoon-ocr2-2b-f16.gguf | 16 bits, sin cuantizar | 3.78 GB | 79.5 | 80.8 |
+| typhoon-ocr2-2b-Q8_0.gguf | 8 bits | 2.01 GB | 79.5 | 80.4 |
+| typhoon-ocr2-2b-Q4_K_M.gguf | 4 bits (k-quant medium) | 1.27 GB | 78.4 | 79.7 |
+| mmproj-typhoon-ocr2-2b-f16.gguf | codificador de imagen f16 | 668 MB | – | – |
 
-Las diferencias de unas décimas entre archivos están dentro de la variación entre ejecuciones. La recomendación del autor es Q8_0, que iguala a f16 en precisión con aproximadamente la mitad de tamaño; Q4_K_M queda alrededor de un punto por debajo y se reserva para entornos con memoria ajustada.
+Las diferencias de unas pocas decimas entre ficheros estan dentro de la variacion entre ejecuciones. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks de proposito general.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,78 GB para f16, 2,01 GB para Q8_0 y 1,27 GB para Q4_K_M, más 668 MB del codificador de imagen en f16 en todos los casos.
-- GPU recomendadas: los benchmarks se ejecutaron en NVIDIA H100 con CUDA; por tamaño, el modelo cabe holgadamente en GPUs de consumo como RTX 4090, RTX 4080 o RTX 3090, e incluso en GPUs con 8 GB de VRAM en cuantización Q4_K_M.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs consumer recientes con al menos 6–8 GB de VRAM, según cuantización.
-- Opciones de despliegue: llama.cpp mediante `llama-server` (build `a691b23` usada en los benchmarks), con endpoint compatible con la API de OpenAI; también herramientas construidas sobre llama.cpp. La versión original bf16 se sirve con vLLM.
-- Latencia y throughput: no disponibles en la información proporcionada; los benchmarks solo reportan precisión, no velocidad.
+- VRAM estimada para inferencia: Q4_K_M (1.27 GB) mas mmproj (668 MB) requiere en torno a 2 GB de VRAM; Q8_0 (2.01 GB) mas mmproj ronda los 2.7 GB; f16 (3.78 GB) mas mmproj se acerca a 4.5 GB.
+- GPU recomendadas: los benchmarks se ejecutaron en NVIDIA H100 con CUDA y llama.cpp build a691b23; para produccion con concurrencia alta se recomienda A100 o H100.
+- GPU de consumo: cabe en RTX 4090, RTX 4080, RTX 3090 y en tarjetas con 4 GB o mas de VRAM para las cuantizaciones Q4_K_M y Q8_0.
+- Opciones de despliegue: llama.cpp (llama-server con API compatible con OpenAI), y herramientas construidas sobre llama.cpp como Ollama o LM Studio; los pesos originales bf16 se sirven con vLLM.
+- Parametros de servicio recomendados: `--jinja --reasoning off -c 40960 --image-max-tokens 16384 -ngl 999`; para concurrencia, anadir `-np N` y multiplicar `-c` por N.
+- Latencia y throughput: no se han publicado cifras concretas de latencia o tokens por segundo en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Typhoon OCR V2 2B GGUF (este) | 1,88 B | 40.960 tokens (config. recomendada) | th, en | Apache 2.0 (con OpenTyphoon T&C) | GGUF |
-| Typhoon OCR V2 2B (original, bf16) | 1,88 B | no disponible | th, en | Apache 2.0 (con OpenTyphoon T&C) | safetensors (vLLM) |
+| Typhoon OCR V2 2B GGUF (este) | 1.881.825.088 | 40.960 tokens configurados | OCR y parsing de documentos th/en | Apache 2.0 (terminos OpenTyphoon) | GGUF en Hugging Face |
+| Typhoon OCR V2 2B (original) | 1.881.825.088 | no disponible en la informacion | OCR y parsing de documentos th/en | Apache 2.0 (terminos OpenTyphoon) | Pesos bf16 para vLLM |
+| Modelos OCR genericos de proposito general | no disponible | no disponible | OCR multilingue | variable | variable |
 
-No se dispone en la información proporcionada de datos sobre otros modelos comparables de OCR o parsing de documentos (por ejemplo, alternativas de otros proveedores) que permitan una comparación de parámetros, contexto, rendimiento y licencia. Por tanto, la comparativa con terceros queda como no disponible.
+No se dispone en la informacion proporcionada de datos de benchmarks de modelos alternativos comparables, por lo que la comparativa cuantitativa queda limitada a las variantes del propio modelo.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado con un conjunto fijo de prompts; para el parsing de página completa debe usarse exactamente el prompt documentado. Desviarse de él puede degradar la calidad de la salida.
-- Rinde mal con imágenes pequeñas: es necesario ampliar la imagen para que su lado largo sea de al menos 1.600 píxeles antes de enviarla, especialmente con texto en tailandés.
-- El modelo fue entrenado sin bloque de razonamiento; debe desactivarse el modo thinking (`--reasoning off`) para evitar que la plantilla de chat abra uno.
-- La salida es un objeto JSON con bounding boxes en una rejilla 0–1000 relativa a la página; requiere parseo y validación en producción.
-- Solo soporta tailandés e inglés; no hay evidencia de capacidades en otros idiomas.
-- Riesgo de alucinación en la transcripción de texto: aunque el prompt exige que el texto de salida sea exactamente el original, sin traducción ni reescritura, no se documentan garantías formales al respecto.
-- La licencia Apache 2.0 del repositorio está sujeta a los OpenTyphoon Terms and Conditions, que deben revisarse antes de un uso comercial.
-- No se documentan sesgos conocidos del modelo en la información disponible.
-- El uso de `-c 40960` deja espacio para una imagen de 16.384 tokens y una respuesta de 16.384 tokens; para servir varias peticiones simultáneas hay que añadir `-np N` y multiplicar `-c` por N, lo que incrementa los requisitos de memoria.
+- Solo soporta tailandes e ingles; otros idiomas no estan cubiertos y pueden producir resultados incorrectos.
+- Requiere ampliar la imagen para que el lado largo tenga al menos 1.600 pixeles; las imagenes pequenas se leen mal, especialmente el texto tailandes.
+- El modelo fue entrenado con un conjunto fijo de prompts; para el parsing de pagina completa debe usarse el prompt exacto documentado, lo que limita la flexibilidad de instrucciones.
+- No dispone de modo de razonamiento; activar un bloque de thinking puede degradar la salida.
+- Riesgo de alucinacion en textos poco legibles, formulas complejas o tablas con celdas combinadas; la model card remite a las limitaciones del modelo base.
+- La licencia Apache 2.0 esta sujeta a los OpenTyphoon Terms and Conditions, que deben revisarse antes de un uso comercial.
+- El repositorio GGUF lo mantiene un tercero (Suraponn) a partir del modelo oficial; la trazabilidad de las cuantizaciones depende del empaquetador.
+- El codificador de imagen debe descargarse por separado (mmproj) y es obligatorio con cualquiera de los ficheros de pesos.
+- No se han publicado datos de sesgos especificos en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/Suraponn/typhoon-ocr2-2b-GGUF
-- Modelo base Typhoon OCR V2 2B: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
+- Repositorio GGUF: https://huggingface.co/Suraponn/typhoon-ocr2-2b-GGUF
+- Modelo base: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
+- Informe tecnico: https://arxiv.org/abs/2611.27494
+- Terminos OpenTyphoon: https://opentyphoon.ai/tac
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- OpenTyphoon Terms and Conditions: https://opentyphoon.ai/tac

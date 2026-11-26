@@ -2,86 +2,97 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.8-27B-super-adapter-bf16-GGUF` es una conversion a formato GGUF de los pesos del modelo `prithivMLmods/Qwen3.8-27B-super-adapter-bf16`, publicada por el usuario mradermacher. Se trata de una distribucion de cuantizaciones estaticas (f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K e IQ4_XS) pensada para su uso con llama.cpp y con herramientas compatibles con GGUF, como Ollama o los endpoints `endpoints_compatible` que aparecen en las etiquetas del repositorio.
+Qwen3.8-27B-super-adapter-bf16-GGUF es la versión cuantizada en formato GGUF del modelo prithivMLmods/Qwen3.8-27B-super-adapter-bf16, un modelo de 27.320 millones de parámetros desarrollado a partir de la familia Qwen3.8 y afinado mediante técnicas de adaptación (LoRA y merge de adaptadores) sobre datasets orientados a agentes y entornos de ejecución (harness-hub/scale800-harbor, harness-hub/harness-adapters, harness-hub/termgrade-train-harbor y ai-and/termgrade-environments). La cuantización la firma mradermacher, un autor habitual en la publicación de versiones GGUF de modelos abiertos, que pone a disposición tanto quants estáticos como quants ponderados/imatrix en un repositorio separado.
 
-El nombre del modelo sugiere una base Qwen de 27.000 millones de parametros con algun tipo de adaptador ("super-adapter"), pero la model card publicada no aporta informacion sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni los benchmarks. El conteo real de parametros reportado en safetensors es de 27.320.697.856, lo que situa el modelo en la categoria de 27B. El repositorio tiene un tamano de 28,6 GB y, en el momento de la consulta, no registra descargas ni likes, lo que indica una publicacion muy reciente y sin validacion por parte de la comunidad.
+La relevancia de esta ficha reside en su orientación explícita a agentes: las etiquetas del modelo incluyen mtp, speculative-decoding, text-generation-inference, grpo, async-grpo, lora, agents, harbor, openenv, pi, hermes y opencode, lo que sugiere un entrenamiento con refuerzo (GRPO y async-GRPO) sobre entornos de herramientas y un soporte nativo de decodificación especulativa mediante MTP (multi-token prediction). El resultado es un modelo de 27B con licencia Apache 2.0, pensado para integrarse en pipelines de agentes y en entornos de evaluación tipo harness.
 
-La relevancia de esta ficha radica en documentar de forma rigurosa lo que se sabe y, sobre todo, lo que no se sabe de un artefacto de este tipo. Al no existir model card tecnica del autor original ni resultados publicados, cualquier evaluacion en produccion deberia tratarse con cautela y verificarse empiricamente antes de adoptar el modelo.
+El repositorio incluye además suplementos multimodales (mmproj-Q8_0 y mmproj-f16), lo que indica que el modelo base admite entrada visual. El tamaño total del repo es de 192,3 GB, correspondiente al conjunto de cuantizaciones publicadas (desde Q2_K hasta Q8_0), y el modelo acumula 768 descargas y 1 like en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Qwen, sin confirmacion tecnica) |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer (familia Qwen3.8) con soporte de MTP y decodificación especulativa; arquitectura exacta no disponible |
+| Parametros totales | 27.320.697.856 (27,32 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repo derivado); el original referenciado es bf16 en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (inglés) según la model card; resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en bf16/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura del modelo base ni sobre el proceso de entrenamiento. La model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estaticas del modelo `prithivMLmods/Qwen3.8-27B-super-adapter-bf16` y a listar los tipos de cuantizacion generados. Los metadatos de conversion (`convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) confirman que la conversion se realizo desde pesos en formato Hugging Face con la herramienta habitual de mradermacher, pero no aportan detalles sobre atencion, capas, tokenizador ni composicion del dataset.
+El modelo base es un transformer de 27,32 mil millones de parámetros derivado de la familia Qwen3.8. Según las etiquetas y la model card, el entrenamiento combina adaptadores LoRA fusionados (merge) con un ajuste por refuerzo basado en GRPO y async-GRPO sobre datasets de entornos de agentes: harness-hub/scale800-harbor, harness-hub/harness-adapters, harness-hub/termgrade-train-harbor y ai-and/termgrade-environments. Estos datasets apuntan a tareas de ejecución de herramientas, evaluación de terminal y entornos tipo harbor/openenv, lo que explica la orientación del modelo a flujos agénticos.
 
-El conteo de parametros (27.320.697.856) es el unico dato estructural verificable. El sufijo "super-adapter" en el nombre sugiere la aplicacion de un adaptador sobre un modelo base, pero no se especifica si se ha fusionado en los pesos, que tipo de adaptador es ni sobre que modelo Qwen concreto se ha construido. Tampoco hay informacion sobre RLHF, DPO, decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica.
+La model card menciona explícitamente MTP (multi-token prediction) y decodificación especulativa, lo que sugiere que el modelo incorpora cabezas de predicción multi-token para acelerar la inferencia en servidores compatibles (por ejemplo, vLLM o TGI con soporte de speculative decoding). No se especifica el número de tokens de entrenamiento, la composición detallada del dataset ni si hubo una fase adicional de DPO o RLHF más allá del GRPO indicado. Tampoco se detalla la arquitectura interna (número de capas, dimensión oculta, cabezas de atención) ni la longitud de contexto nativa.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica uso previsto para dialogos multi-turno, aunque no se detalla el rendimiento.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante infraestructura de inferencia compatible con GGUF.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Capacidades de codigo y matematicas: no disponible.
+- Generación de texto conversacional en inglés, con formato de chat (etiqueta conversational).
+- Razonamiento orientado a agentes: ejecución de tareas multi-paso en entornos de herramientas (harbor, openenv, terminal).
+- Soporte de tool calling y function calling, inferido de las etiquetas agents, hermes y opencode.
+- Entrenamiento con GRPO y async-GRPO, lo que indica capacidad de seguir recompensas y políticas en entornos interactivos.
+- Decodificación especulativa mediante MTP para acelerar la generación en servidores compatibles.
+- Capacidades multimodales: el repo incluye suplementos mmproj (Q8_0 y f16), lo que indica soporte de entrada de imágenes en el modelo base.
+- Integración con text-generation-inference (TGI) y con el ecosistema GGUF (llama.cpp, Ollama).
+- Capacidades multilingües: solo se declara inglés; no hay evidencia de soporte de otros idiomas.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de 27B en GPUs consumer con VRAM suficiente, usando llama.cpp u Ollama, para prototipos de chatbot sin depender de la nube.
-- Evaluacion comparativa de cuantizaciones: al incluir desde Q2_K hasta f16, el repositorio sirve para medir la degradacion de calidad y el ahorro de memoria entre niveles de cuantizacion sobre el mismo modelo base.
-- Experimentacion conversacional en entornos con recursos limitados: la variante Q3_K_S o Q2_K puede caber en equipos con poca VRAM, aunque con perdida de calidad esperable.
-- Integracion en pipelines de inferencia autoalojados: el formato GGUF y la etiqueta `endpoints_compatible` facilitan su exposicion mediante servidores compatibles con la API de OpenAI.
-- Base para fine-tuning posterior: los pesos f16 del repositorio original pueden servir como punto de partida para adaptaciones, aunque la falta de licencia clara es un riesgo.
-- Pruebas de robustez y alucinacion: util para investigadores que quieran auditar el comportamiento de un modelo derivado de Qwen con adaptador, siempre que se validen primero sus capacidades reales.
+- Agentes autónomos de terminal: el modelo puede integrarse en entornos tipo harbor/openenv para ejecutar comandos, interpretar salidas y corregir errores en bucles multi-paso, gracias a su entrenamiento específico con datasets de terminal (termgrade).
+- Automatización de pipelines de CI/CD con tool calling: el modelo puede invocar funciones de build, test y despliegue a través de function calling, integrándose en orquestadores que expongan herramientas como APIs.
+- Asistente de código en IDE: con las etiquetas opencode y hermes, el modelo está orientado a la generación y edición de código dentro de flujos de desarrollo, incluyendo la lectura de archivos y la propuesta de parches.
+- Evaluación de agentes en harness: al haber sido entrenado sobre harness-hub, es adecuado como modelo de referencia en benchmarks de agentes que midan la tasa de éxito en tareas de terminal y ejecución de herramientas.
+- Despliegue en local con cuantización Q4_K_M (17,1 GB): permite ejecutar un modelo de 27B en una GPU de consumo de 24 GB (RTX 4090) o en configuraciones multi-GPU pequeñas, útil para prototipos de agentes sin depender de la nube.
+- Servicio de inferencia con decodificación especulativa: en servidores con vLLM o TGI que soporten MTP, el modelo puede servir conversaciones multi-turno con latencia reducida, adecuado para asistentes interactivos.
+- Procesamiento de documentos con entrada visual: gracias a los suplementos mmproj, puede emplearse en tareas que combinen texto e imágenes, como la interpretación de capturas de pantalla o diagramas en flujos de soporte técnico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa por tamano y cuantizacion, un modelo de 27B en f16 requiere aproximadamente 54 GB de memoria, en Q8_0 unos 29 GB, en Q4_K_M unos 16-17 GB y en Q2_K unos 9-10 GB.
-- GPU recomendadas: no disponible; por tamano, A100 80 GB o H100 para f16, y RTX 4090 (24 GB) o superiores para cuantizaciones Q4/Q5.
-- Cabe en GPU consumer: previsiblemente si en cuantizaciones Q4_K_M o inferiores en GPUs con 16-24 GB de VRAM, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con endpoints GGUF; vLLM y TGI no soportan GGUF de forma nativa.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia según cuantización: Q2_K ~11,3 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,8 GB; Q3_K_L ~15,0 GB; IQ4_XS ~15,8 GB; Q4_K_S ~15,9 GB; Q4_K_M ~17,1 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,7 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB.
+- Suplementos multimodales: mmproj-Q8_0 ~0,7 GB y mmproj-f16 ~1,0 GB adicionales si se usa entrada visual.
+- GPU recomendadas: para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) es suficiente; para Q6_K y Q8_0 se recomienda una A100 40 GB, H100 o RTX 6000 Ada. Para bf16 completo (no incluido en este repo) se necesitarían ~55 GB, lo que exige A100 80 GB o H100.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M, Q5_K_M o Q6_K; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (con soporte GGUF y speculative decoding), TGI (etiqueta text-generation-inference), y servidores compatibles con endpoints.
+- Latencia y throughput: no disponibles; el uso de MTP y decodificación especulativa debería reducir la latencia en servidores compatibles, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.8-27B-super-adapter-bf16-GGUF | 27,3B | no disponible | no disponible | GGUF | Hugging Face, 0 descargas |
-| Qwen2.5-32B-Instruct (referencia de categoria) | 32,5B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Amplia |
-| Gemma 2 27B | 27B | 8.192 tokens | Gemma License | safetensors, GGUF | Amplia |
+| Qwen3.8-27B-super-adapter-bf16-GGUF (este) | 27,32 B | no disponible | Apache 2.0 | GGUF | Afinado para agentes con GRPO; MTP; multimodal |
+| Qwen3-32B (referencia de la familia) | 32 B | 128K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo generalista de la misma familia; sin afinado específico de agentes |
+| Gemma 3 27B | 27 B | 128K | Gemma license | safetensors, GGUF | Multimodal, contexto largo; licencia más restrictiva |
+| Mistral Small 3.1 24B | 24 B | 128K | Apache 2.0 | safetensors, GGUF | Multimodal, orientado a instrucciones; sin entrenamiento GRPO específico |
 
-La comparativa se ofrece solo como referencia de categoria; no se dispone de datos de rendimiento del modelo descrito para establecer una comparacion cuantitativa.
+La comparativa con Qwen3-32B, Gemma 3 27B y Mistral Small 3.1 24B se ofrece como referencia de categoría; no se dispone de datos de benchmarks de este modelo para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card tecnica: no se documentan arquitectura, entrenamiento, datos ni evaluaciones, lo que impide validar el modelo antes de usarlo.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; debe verificarse en el repositorio original antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: desconocido por falta de evaluacion, pero inherente a los modelos generativos de este tamano.
-- Sesgos: no documentados; al desconocerse la composicion del dataset de entrenamiento no se pueden anticipar sesgos.
-- Idiomas: no se declaran idiomas soportados, por lo que el rendimiento multilingue es incierto.
-- Procedencia del adaptador: el sufijo "super-adapter" no se explica; no se sabe si los pesos estan fusionados ni sobre que base Qwen exacta se construyo.
-- Cuantizaciones agresivas: Q2_K e IQ4_XS pueden degradar notablemente la calidad; se recomienda validar con Q4_K_M o superior.
-- Cero adopcion comunitaria: sin descargas ni likes, no hay evidencia de uso real ni informes de problemas.
-- Fecha de creacion futura en los metadatos (2026-11-22): conviene tratar los metadatos con cautela y verificar la integridad de los pesos.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Contexto: no se especifica la longitud de contexto nativa, lo que impide planificar despliegues con ventanas largas sin verificación previa.
+- Sesgos: no se documentan sesgos conocidos; al ser un modelo afinado sobre datasets de agentes, puede presentar sesgos hacia formatos de herramientas y entornos específicos (harbor, openenv, terminal).
+- Alucinación: como todo modelo generativo, puede inventar comandos, rutas o APIs; en entornos de ejecución real es imprescindible sandboxing y validación de salidas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los datasets de entrenamiento (harness-hub, ai-and) por si imponen restricciones adicionales.
+- Producción: el modelo base es un merge de adaptadores; la calidad puede degradarse en dominios alejados de los datasets de entrenamiento. No hay benchmarks publicados que respalden su rendimiento general.
+- Cuantizaciones bajas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso en producción.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-GGUF
-- Modelo original referenciado: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-bf16
-- Perfil del autor de la conversion: https://huggingface.co/mradermacher
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-GGUF
+- Modelo base: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-bf16
+- Quants ponderados/imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-super-adapter-bf16-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Dataset harness-hub/scale800-harbor: https://huggingface.co/datasets/harness-hub/scale800-harbor
+- Dataset harness-hub/harness-adapters: https://huggingface.co/datasets/harness-hub/harness-adapters
+- Dataset harness-hub/termgrade-train-harbor: https://huggingface.co/datasets/harness-hub/termgrade-train-harbor
+- Dataset ai-and/termgrade-environments: https://huggingface.co/datasets/ai-and/termgrade-environments

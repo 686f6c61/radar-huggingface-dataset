@@ -2,90 +2,101 @@
 
 ## Resumen
 
-Selora AI LLM 1.7B Ollama es una compilación fusionada (*fused*) del modelo Qwen3-1.7B de Alibaba, afinada por selorahomes para actuar como motor de decisión de Home Assistant. El modelo resuelve un problema muy concreto: dado un prompt con el listado de entidades disponibles, las automatizaciones existentes y, cuando procede, documentación relevante, debe devolver un único objeto JSON que pertenezca a una de cinco categorías de respuesta (`command`, `automation`, `answer`, `clarification`, `utilities`). Frente al despliegue de referencia —una base cuantizada más cinco adaptadores LoRA intercambiados por petición—, esta variante integra un único adaptador entrenado con los ejemplos de todos los especialistas en los pesos base, de modo que el propio modelo elige el tipo de respuesta a partir del prompt de enrutado.
+Selora AI LLM 1.7B es un ajuste fino de Qwen3-1.7B orientado exclusivamente a la automatización del hogar con Home Assistant. Lo desarrolla Selora Homes y resuelve un problema muy concreto: unificar en un único modelo las cinco clases de respuesta que necesita su integración (`command`, `automation`, `answer`, `clarification` y `utilities`), decidiendo él mismo el tipo a partir de un prompt enrutador que se inyecta en el turno de sistema. Sustituye a la arquitectura anterior (modelo base más cinco LoRA especialistas intercambiadas por petición), que quedó retirada en la versión v0.8.1.
 
-La relevancia de esta build es operativa: Ollama y la mayoría de runtimes ligeros no permiten el intercambio en caliente de adaptadores LoRA, por lo que la fusión habilita desplegar el sistema completo como un solo GGUF. El precio es un intercambio explícito de precisión por simplicidad: el autor reconoce que el modelo fusionado pierde algo de exactitud frente al bundle de adaptadores, donde el llamante indica al especialista qué debe hacer. La arquitectura subyacente es la de Qwen3-1.7B, un transformer denso de 1.720.574.976 parámetros, con una ventana de contexto efectiva de 4096 tokens en esta configuración, licencia Apache 2.0 y soporte exclusivo de inglés.
+Técnicamente es un transformer denso de 1.720.574.976 parámetros (1,7B) con una ventana de contexto de 4096 tokens, entrenado como una única LoRA sobre ejemplos de los cinco tipos de respuesta y fusionada posteriormente en los pesos base. La salida es siempre un objeto JSON estricto, sin bloque de razonamiento, para lo que se prefija `/no_think` al turno de usuario y se fuerza una plantilla ChatML que emite un bloque `` vacío.
 
-El modelo no es un asistente generalista: es un componente especializado de un pipeline de domótica, con formato de prompt ChatML estricto, modo *no-think* forzado y parámetros de muestreo deterministas (temperatura 0.0). Cualquier uso fuera del esquema de enrutado de Selora requiere validar el formato de salida y el contrato JSON.
+Su relevancia ahora es la de los modelos pequeños y especializados: corre en cualquier sitio donde corra un GGUF único (llama.cpp, Ollama), con una licencia Apache 2.0 heredada de Qwen3, y publica métricas sobre el benchmark Allen de Home Assistant medidas a través de la integración real. No es un modelo de propósito general: es un componente de un producto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-1.7B), fine-tuning con LoRA fusionado |
-| Parametros totales | 1.720.574.976 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 4096 tokens (`num_ctx` en el Modelfile) |
-| Tipos de cuantizacion | GGUF Q6_K (única variante publicada en este repo); el repo base ofrece cuantizaciones adicionales |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 (hereda de Qwen3-1.7B) |
-| Formato de pesos | GGUF (`selora-ollama.Q6_K.gguf`); safetensors en el repo base |
+| Arquitectura | Transformer denso (derivado de Qwen3-1.7B) |
+| Parametros totales | 1.720.574.976 (1,7B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4096 tokens (`num_ctx 4096`) |
+| Tipos de cuantizacion | Q6_K (GGUF publicado); el resto de cuantizaciones GGUF estándar no se distribuye en el repo |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (`selora-ollama.Q6_K.gguf`), más `Modelfile`, `system`, `template`, `params` y `manifest.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer denso de 1.7B parámetros con atención estándar y soporte nativo de bloques de razonamiento (``). Sobre esa base se entrena un único adaptador LoRA que agrega los ejemplos de los cinco especialistas del sistema Selora bajo el prompt de enrutado que sirve esta build. Posteriormente el adaptador se fusiona en los pesos base y el resultado se convierte a GGUF Q6_K. El bundle de referencia (`selorahomes/Selora-AI-LLM-1.7B`) mantiene la base cuantizada más cinco adaptadores separados, uno por tipo de respuesta, que se activan por petición; esta build es, por tanto, una derivación de conveniencia para runtimes sin soporte de LoRA dinámico.
+El modelo parte de Qwen3-1.7B, un transformer denso con atención estándar y modo de razonamiento opcional. El ajuste consiste en una única LoRA entrenada sobre los ejemplos de los cinco tipos de respuesta bajo el prompt enrutador común, que después se fusiona en los pesos base. Los datos de entrenamiento no se detallan en la información disponible (ni número de tokens, ni composición del dataset, ni si hubo RLHF o DPO). Cada turno de usuario incluye en el prompt la lista `AVAILABLE ENTITIES`, los `EXISTING AUTOMATIONS` y, para consultas de tipo `utilities`, un bloque `RELEVANT DOCS`.
 
-El entrenamiento no está documentado en la información disponible en cuanto a número de tokens, composición del dataset o uso de RLHF/DPO. Lo que sí se especifica es el contrato de inferencia: prompt ChatML con el bloque `` vacío incluido de forma explícita (enmascarado durante el entrenamiento), prefijo `/no_think` en el turno de usuario para suprimir el razonamiento de Qwen3, y salida limitada a un único objeto JSON. Los parámetros de generación fijados son temperatura 0.0, `repeat_penalty` 1.0 (deliberadamente, para no penalizar los tokens estructurales repetidos del JSON), `repeat_last_n` 256 y paradas en `<|im_end|>` y `<|endoftext|>`. El autor advierte que la plantilla de chat embebida en el GGUF debe emitir el bloque `` vacío; sin él, el modelo genera como si la apertura `{"` ya estuviera escrita y devuelve `q=[...]` en lugar de `{"q":[...]}`, lo que rompe cualquier parser.
+La innovación destacable no es arquitectónica sino de formato: el modelo está entrenado para emitir JSON puro y la plantilla de chat debe reproducirse byte a byte en inferencia. El bloque `` vacío forma parte del prompt (enmascarado durante el entrenamiento), no de la salida; si se omite, el modelo genera como si la apertura `{"` ya estuviese escrita y devuelve `q=[...]` en lugar de `{"q":[...]}`, lo que ningún parser acepta. Los parámetros de generación fijados son `temperature 0.0`, `repeat_penalty 1.0`, `repeat_last_n 256` y `stop` en `<|im_end|>` y `<|endoftext|>`; el `repeat_penalty` se mantiene en 1.0 deliberadamente porque penalizar los tokens estructurales repetidos del JSON degrada la fidelidad del esquema.
 
 ## Capacidades
 
-- Generación de comandos de control para entidades de Home Assistant, emitidos como JSON estructurado.
-- Generación de automatizaciones a partir de lenguaje natural, considerando las automatizaciones existentes incluidas en el prompt.
-- Respuesta a preguntas sobre el entorno domótico y sobre documentación relevante inyectada en el contexto.
-- Emisión de peticiones de aclaración cuando la instrucción del usuario es ambigua o falta información.
-- Respuesta a consultas de utilidades apoyadas en un bloque `RELEVANT DOCS`.
-- Clasificación y enrutado implícito entre los cinco tipos de respuesta sin intervención del llamante.
-- Salida JSON determinista apta para parseo automático, gracias a temperatura 0.0 y ausencia de penalización por repetición.
-- Sin soporte de tool calling genérico, agentes multi-paso, visión, audio ni capacidades multilingües más allá del inglés.
+- Generación de comandos de control de dispositivos en formato JSON, a partir de la lista de entidades disponibles.
+- Creación de automatizaciones de Home Assistant válidas como blueprint, con todas las entradas solicitadas conectadas.
+- Respuesta a preguntas en lenguaje natural sobre el estado y el funcionamiento del hogar.
+- Generación de peticiones de aclaración cuando la instrucción del usuario es ambigua.
+- Respuesta a consultas de tipo `utilities` apoyadas en un bloque de documentación relevante inyectado en el prompt.
+- Clasificación y enrutado autónomo entre los cinco tipos de respuesta mediante el prompt de sistema.
+- Salida JSON estricta sin bloque de razonamiento visible (modo `/no_think`).
+- No soporta tool calling genérico, ni agentes multi-paso, ni visión, ni audio; su ámbito es la integración de Home Assistant.
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Control por voz o texto de dispositivos del hogar: el modelo recibe el listado de entidades disponibles y devuelve un objeto `command` con la entidad y la acción, listo para ejecutarse contra la API de Home Assistant.
-- Creación asistida de automatizaciones: el usuario describe una rutina en lenguaje natural y el modelo emite un objeto `automation` que tiene en cuenta las automatizaciones ya existentes para evitar duplicados o conflictos.
-- Asistente conversacional de consulta: preguntas del tipo "¿qué luces están encendidas en el salón?" se resuelven con un objeto `answer` construido a partir del contexto de entidades inyectado.
-- Desambiguación de intenciones: ante instrucciones vagas ("ponlo más caliente"), el modelo devuelve `clarification` en lugar de ejecutar una acción potencialmente errónea, lo que reduce el riesgo en producción.
-- Resolución de dudas sobre el propio sistema: consultas sobre configuración o uso se responden como `utilities` apoyándose en el bloque `RELEVANT DOCS`, útil para onboarding de usuarios.
-- Despliegue en hardware doméstico: al ser un GGUF Q6_K de 1.7B, se ejecuta en CPU o en GPU de gama baja dentro del propio servidor de Home Assistant, sin depender de servicios en la nube ni exponer datos del hogar a terceros.
-- Integración en la integración oficial de Home Assistant: el repositorio de la integración (`gitlab.com/selorahomes/products/selora-ai/ha-integration`) consume este contrato JSON, por lo que la build fusionada sirve como backend simplificado cuando no se dispone de llama.cpp con `--lora` o vLLM con `--enable-lora`.
+- Control por voz o texto del hogar: la integración envía la transcripción junto con la lista de entidades y el modelo devuelve un `command` JSON que se ejecuta contra la API de Home Assistant; el formato estructurado elimina la necesidad de parsear lenguaje natural.
+- Creación asistida de automatizaciones: el usuario describe una rutina ("cuando salga el sol, sube las persianas del salón") y el modelo devuelve un blueprint que Home Assistant valida; en el benchmark Allen obtuvo un 100 % en el conjunto `automations` (20 casos).
+- Resolución de ambigüedades en conversación: cuando la petición no identifica un dispositivo de forma inequívoca, el modelo emite un `clarification` en lugar de adivinar, lo que reduce acciones erróneas sobre el hogar.
+- Asistente de preguntas sobre el estado de la casa: responde a consultas como el estado de un sensor o el consumo de un electrodoméstico usando el bloque de entidades y automatizaciones existentes como contexto.
+- Atención de dudas sobre el propio sistema: para consultas `utilities` se inyecta documentación relevante y el modelo responde con ella, útil como ayuda integrada en la interfaz de Home Assistant.
+- Despliegue en hardware doméstico: al ser un GGUF Q6_K de 1,7B, puede ejecutarse en local en el Selora Hub o en un servidor doméstico modesto, sin depender de la nube y sin enviar datos del hogar a terceros.
+- Evaluación y regresión de pipelines de automatización: el benchmark Allen y sus variantes (`assist`, `assist-mini`, `questions`, `automations`) permiten medir de forma reproducible la calidad del enrutado y del JSON generado en cada versión.
 
 ## Benchmarks y rendimiento
 
-El autor referencia métricas en `eval/baselines.json`, con entradas `fused-*` para esta build y puntuaciones medidas para el bundle de adaptadores, pero los valores concretos no están incluidos en la información disponible. No se han publicado resultados de benchmarks en la información disponible.
+Resultados publicados en la model card, medidos sobre el benchmark Allen a través de la integración de Home Assistant, con temperatura 0 y sobre los conjuntos completos:
+
+| Dataset | Casos | Solo modelo | Con overrides |
+|---|---|---|---|
+| assist | 460 | 90,2 % | 92,4 % |
+| assist-mini | 196 | 95,9 % | 100,0 % |
+| questions | 370 | 94,6 % | 94,6 % |
+| automations | 20 | 100,0 % | 100,0 % |
+
+"Solo modelo" desactiva los overrides deterministas de la integración, de modo que cada turno lo decide el modelo; "con overrides" los mantiene activos. Ninguna de las dos configuraciones coincide exactamente con la desplegada: la aprobación y la lista blanca de comandos seguros están desactivadas durante la ejecución. Una respuesta de tipo `automations` se considera correcta si Home Assistant la acepta como blueprint con todas las entradas solicitadas conectadas; la automatización no se ejecuta. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de propósito general en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: un Q6_K de 1.7B ocupa aproximadamente 1,4 GB de pesos; con `num_ctx` 4096 y overhead de runtime, el consumo total se sitúa en el entorno de 2-3 GB. Cifra estimada a partir del tamaño y la cuantización, no publicada por el autor.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este modelo y solo tendrían sentido por agregación de peticiones.
-- Cabe en GPU de consumo: sí, en cualquier tarjeta con 4 GB o más; también en CPU, dado el reducido tamaño del modelo.
-- Opciones de despliegue: Ollama (`ollama run hf.co/selorahomes/Selora-AI-LLM-1.7B-ollama:selora-ollama.Q6_K.gguf` o `ollama create selora -f Modelfile`), llama.cpp y cualquier runtime que cargue un único GGUF. El bundle de adaptadores, en cambio, requiere llama.cpp con `--lora` o vLLM con `--enable-lora`.
+- VRAM estimada para inferencia: el repo publica un GGUF Q6_K de 1,7B, que ocupa aproximadamente 1,4-1,5 GB en disco y requiere un margen similar de memoria al cargarse; con contexto de 4096 tokens el consumo total se mantiene por debajo de 2-3 GB en la mayoría de configuraciones.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece holgura. En entornos de servidor, una A100 o H100 es sobredimensionada para este modelo y solo tendría sentido por agregación de muchas instancias.
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: Ollama (`ollama run hf.co/selorahomes/Selora-AI-LLM-1.7B-ollama:selora-ollama.Q6_K.gguf`), construcción local con el `Modelfile` del repo, y llama.cpp (`llama-server -m selora-ollama.Q6_K.gguf --jinja --ctx-size 4096`). No se documentan vLLM ni TGI para este artefacto.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Selora-AI-LLM-1.7B-ollama | 1,72B | 4096 | Domótica / Home Assistant, 5 tipos de respuesta JSON | Apache 2.0 | GGUF Q6_K |
-| Selora-AI-LLM-1.7B (bundle) | 1,72B + 5 LoRA | 4096 | Misma tarea, especialista seleccionado por el llamante | Apache 2.0 | GGUF base + adaptadores |
-| Qwen/Qwen3-1.7B | 1,72B | Mayor que 4096 en configuración nativa (no confirmado en la información disponible) | Propósito general, razonamiento, multilingüe | Apache 2.0 | safetensors, GGUF |
+| Selora AI LLM 1.7B | 1,7B | 4096 | Home Assistant, salida JSON en cinco tipos | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3-1.7B (base) | 1,7B | mayor que 4096 (no especificado aquí) | Propósito general, razonamiento | Apache 2.0 | Hugging Face |
+| Selora AI LLM 1.7B (bundle v0.8.1) | 1,7B + 5 LoRA | 4096 | Mismo dominio, cinco especialistas intercambiadas | Apache 2.0 | Repo retirado, congelado en v0.8.1 |
 
-La comparación con alternativas de propósito general del mismo tamaño (por ejemplo, otras familias de 1-2B) no está disponible en la información proporcionada. La diferencia clave frente a Qwen3-1.7B es la especialización: Selora restringe la salida a un contrato JSON de cinco tipos y limita el contexto a 4096 tokens, sacrificando generalidad y multilingüismo a cambio de fiabilidad en el parseo y determinismo en la generación.
+La comparación relevante es con su propio modelo base: Qwen3-1.7B es más general y conserva el modo de razonamiento, pero no produce de forma fiable el JSON de cinco tipos ni el enrutado autónomo que exige la integración. El bundle anterior de cinco LoRA queda como referencia histórica. No se dispone de datos de benchmarks de modelos de terceros especializados en Home Assistant en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: el modelo está entrenado para emitir exclusivamente uno de cinco tipos de objeto JSON bajo el prompt de enrutado de Selora; su uso como chat generalista producirá resultados degradados.
-- Precisión inferior al bundle de adaptadores: el propio autor advierte que la fusión en un solo modelo pierde exactitud frente a la selección explícita de especialista; si el runtime soporta LoRA dinámico, el bundle es la opción recomendada.
-- Dependencia estricta de la plantilla: el bloque `` vacío debe estar presente en el prompt; sin él la salida omite la apertura `{"` y rompe el parseo. La plantilla embebida en el GGUF y el fichero `template` deben coincidir byte a byte con el entrenamiento.
-- Solo inglés: el campo `language` declara únicamente `en`; no hay evidencia de soporte multilingüe y el prompt de enrutado está en inglés.
-- Contexto limitado a 4096 tokens: el listado de entidades y automatizaciones debe caber en esa ventana, lo que puede ser restrictivo en instalaciones domóticas grandes.
-- Riesgo de alucinación: al generar entidades o acciones, el modelo podría referenciar entidades inexistentes si no aparecen en el bloque `AVAILABLE ENTITIES`; se recomienda validar el JSON contra el estado real de Home Assistant antes de ejecutar comandos.
+- Ámbito muy restringido: está entrenado para Home Assistant y los cinco tipos de respuesta de Selora; fuera de ese dominio su comportamiento no está caracterizado.
+- Solo inglés: la model card declara únicamente `en`, por lo que el uso en castellano no está soportado ni evaluado.
+- Contexto de 4096 tokens: la lista de entidades, las automatizaciones existentes y la documentación comparten esa ventana, lo que limita instalaciones con muchos dispositivos.
+- Fragilidad de plantilla: la inferencia debe reproducir la plantilla byte a byte, incluido el bloque `` vacío; Ollama renderiza la plantilla embebida en el GGUF en lugar del archivo `template`, y un desajuste produce JSON inválido (`q=[...]` en vez de `{"q":[...]}`).
+- Riesgo de alucinación: puede generar entidades o servicios inexistentes en los comandos; la integración depende de la lista blanca de comandos seguros y de la aprobación, que en la medición de benchmarks estaban desactivadas.
+- Las cifras de benchmarks no reflejan la configuración desplegada: se obtuvieron sin aprobación ni lista blanca, y las automatizaciones se validan como blueprint sin ejecutarse.
 - Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero se debe conservar el `NOTICE` con la atribución a Qwen3; el autor indica que los ficheros `Modelfile`, `system`, `template` y `params` se regeneran en cada release y no deben editarse localmente.
-- Dependencia de un proyecto pequeño: 550 descargas y 2 likes en el momento de la consulta; el mantenimiento recae en un único equipo y la documentación de entrenamiento es escasa.
+- Licencia Apache 2.0, que permite uso comercial, pero con la atribución a Qwen3 recogida en el archivo `NOTICE` del repositorio.
+- Los archivos `Modelfile`, `system`, `template` y `params` se regeneran en cada release desde el repositorio de modelos; editarlos localmente no es una vía sostenible de personalización.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
-- Bundle de referencia con adaptadores LoRA: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Bundle anterior con cinco LoRA (v0.8.1): https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
 - Integración de Home Assistant: https://gitlab.com/selorahomes/products/selora-ai/ha-integration
 - Repositorio de modelos y pipeline de datos: https://gitlab.com/selorahomes/products/selora-ai/models
+- Benchmark Allen (Home Assistant datasets): https://github.com/allenporter/home-assistant-datasets

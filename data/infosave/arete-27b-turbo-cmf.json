@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NousResearch/Arete-27B - Hugging Face",
-      "url": "https://huggingface.co/NousResearch/Arete-27B",
-      "snippet": "Text Generation model with 27B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "infosave/cmf · Hugging Face",
-      "url": "https://huggingface.co/infosave/cmf",
-      "snippet": "A .cmf carries the quantized weights, the tokenizer and the chat template together, checks its own integrity, and memory-maps straight off disk. The runtime is a small Rust core with no ML framework under it, running on CPU everywhere and on GPU through wgpu — Vulkan, DX12, Metal — out of the box."
-    }
-  ]
+  "sources": []
 }

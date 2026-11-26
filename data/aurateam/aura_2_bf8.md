@@ -2,51 +2,49 @@
 
 ## Resumen
 
-AURA 2.0 es un modelo de lenguaje para vídeo en streaming desarrollado por el equipo aurateam (aurateam2026). A diferencia de los modelos de vídeo tradicionales que responden a consultas sobre un clip ya procesado, AURA 2.0 está diseñado para iniciar conversaciones de forma proactiva, invocar herramientas a partir de lo que ocurre en el directo y fundamentar sus interacciones en objetos y regiones concretas de los fotogramas. El checkpoint publicado en este repositorio es la variante en formato FP8 comprimido (compressed-tensors), pensada para inferencia con runtime compatible con FP8.
+AURA 2.0 es un modelo de lenguaje para vídeo en streaming desarrollado por el equipo AURA (aurateam), presentado en el informe técnico "Beyond Answering: Learning to Speak First and Act in Streaming Video" (arXiv:2611.17048). Se construye sobre el modelo base Qwen/Qwen3.5-9B y se distribuye en este repositorio como un checkpoint cuantizado en FP8 mediante compressed-tensors. El modelo está diseñado para iniciar conversaciones de forma proactiva, invocar herramientas a partir del flujo de vídeo en directo y fundamentar sus interacciones en objetos y regiones concretas de los fotogramas.
 
-El modelo se construye sobre la familia Qwen 3.5 (etiqueta `qwen3_5` en los metadatos) y cuenta con 9.409.813.744 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de modelos de aproximadamente 9.400 millones de parámetros. El repositorio ocupa 11,9 GB, coherente con un checkpoint FP8. Los idiomas declarados son inglés y chino.
+La propuesta central es el cambio de paradigma respecto a los modelos de vídeo tradicionales: en lugar de esperar una pregunta del usuario, AURA 2.0 aprende a "hablar primero" y a actuar sobre el stream. Esto lo sitúa en el ámbito de los asistentes multimodales en tiempo real, con aplicaciones potenciales en monitorización, robótica o atención asistida.
 
-La relevancia actual del modelo reside en su enfoque "streaming-first": no espera a que el usuario pregunte, sino que detecta eventos en el flujo de vídeo y decide cuándo intervenir, además de poder llamar a herramientas externas. Esto lo orienta a aplicaciones de asistencia en directo, vigilancia semántica, accesibilidad o agentes embebidos en vídeo. La información pública disponible es limitada: no se especifican licencia, pipeline ni resultados de benchmarks en los datos proporcionados.
+El checkpoint tiene 9.409.813.744 parámetros totales (aproximadamente 9,4 mil millones) y un tamaño de repositorio de 11,9 GB en formato safetensors. Los idiomas declarados son inglés y chino, y la licencia es CC BY-NC 4.0, lo que restringe el uso a investigación no comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basada en Qwen 3.5 (etiqueta `qwen3_5`); detalles internos no disponibles |
+| Arquitectura | Transformer multimodal para vídeo en streaming, derivado de Qwen/Qwen3.5-9B (detalle interno no disponible) |
 | Parametros totales | 9.409.813.744 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (formato compressed-tensors); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | FP8 (compressed-tensors); no se detallan otros formatos en el repositorio |
 | Idiomas soportados | inglés (en), chino (zh) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (FP8 comprimido con compressed-tensors) |
+| Licencia | CC BY-NC 4.0 (solo investigación no comercial) |
+| Formato de pesos | safetensors (FP8, compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no detalla la arquitectura interna más allá de la etiqueta `qwen3_5`, que indica que el modelo se basa en la familia Qwen 3.5. Se trata, por tanto, de una arquitectura transformer de aproximadamente 9.400 millones de parámetros, adaptada para entrada de vídeo en streaming y salida de lenguaje con capacidad de llamada a herramientas. El checkpoint distribuido está cuantizado a FP8 mediante compressed-tensors y requiere un runtime y una GPU compatibles con FP8 para su inferencia.
+AURA 2.0 se apoya en el modelo base Qwen/Qwen3.5-9B y añade capacidades de vídeo en streaming: procesamiento de fotogramas en tiempo real, fundamentación espacial (grounding en objetos y regiones) e invocación de herramientas a partir del contenido visual. El repositorio no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO; esa información solo podría estar en el informe técnico arXiv:2611.17048, que no se ha incluido en la información disponible.
 
-No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas concretas (decodificación especulativa, atención lineal, etc.). La model card únicamente describe la finalidad del modelo —iniciar conversaciones, invocar herramientas a partir del directo y fundamentar interacciones en objetos y regiones del vídeo— y remite a la página del proyecto y al repositorio de GitHub para demos y código. El informe técnico está referenciado como arXiv, pero no se incluye su enlace ni su contenido.
+La innovación destacada por el autor es el comportamiento proactivo: el modelo puede iniciar la conversación sin esperar una consulta explícita y actuar sobre el stream (llamadas a herramientas, referencias a regiones del fotograma). El checkpoint publicado está cuantizado en FP8 con compressed-tensors, lo que reduce el peso a 11,9 GB y facilita su despliegue en hardware con soporte para FP8.
 
 ## Capacidades
 
-- Comprensión de vídeo en streaming: procesa el flujo de vídeo en tiempo real en lugar de clips cerrados.
-- Iniciativa conversacional: puede "hablar primero", es decir, iniciar la interacción sin una consulta explícita del usuario.
-- Llamada a herramientas basada en el directo: invoca funciones externas a partir de eventos observados en el vídeo.
-- Fundamentación espacial: localiza objetos y regiones concretas en los fotogramas para sustentar sus respuestas.
-- Generación de texto y razonamiento multimodal derivado de la entrada de vídeo.
-- Soporte multilingüe limitado a inglés y chino según los metadatos.
-- Capacidad de agentes y razonamiento multi-paso: implícita en la combinación de iniciativa, tool calling y fundamentación espacial.
-- No se dispone de información sobre modo "thinking" explícito, visión de imágenes estáticas, audio u otras capacidades adicionales.
+- Comprensión de vídeo en streaming y respuesta a partir del flujo en directo.
+- Inicio proactivo de conversaciones ("speak first") sin consulta previa del usuario.
+- Invocación de herramientas (tool calling) basada en el contenido del stream.
+- Fundamentación espacial: referencia a objetos y regiones concretas de los fotogramas.
+- Generación de texto y razonamiento multimodal derivados del modelo base Qwen3.5-9B.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Modo de razonamiento en varios pasos y comportamiento de agente (según la descripción del proyecto).
 
 ## Casos de uso
 
-- Asistencia en directos y retransmisiones: el modelo puede iniciar avisos o comentarios cuando detecta un evento relevante en el flujo de vídeo, sin esperar a que el operador pregunte, gracias a su capacidad de iniciativa conversacional.
-- Vigilancia semántica y alertas: al fundamentar interacciones en objetos y regiones de los fotogramas, puede generar alertas contextualizadas cuando aparece un objeto o una situación concreta en la señal de cámara.
-- Accesibilidad audiovisual: descripción proactiva de escenas y objetos para personas con discapacidad visual, aprovechando la capacidad de hablar primero y de localizar regiones en el fotograma.
-- Agentes embebidos en vídeo con tool calling: integración con APIs externas (por ejemplo, registro de incidencias o control de dispositivos) activadas por eventos observados en el directo.
-- Soporte remoto y teleasistencia: el modelo puede guiar a un usuario señalando objetos o zonas de la imagen captada por su cámara en tiempo real.
-- Análisis de retransmisiones deportivas o de eventos: detección y comentario de acciones concretas en el flujo, con invocación de herramientas para recuperar estadísticas o datos complementarios.
-- Moderación de contenido en directo: identificación de regiones y objetos sospechosos en el stream y generación de avisos automáticos para revisión humana.
+- Monitorización de vídeo en directo: el modelo puede iniciar avisos cuando detecta eventos relevantes en el stream, sin esperar una consulta, lo que encaja con vigilancia de instalaciones o control de calidad en líneas de producción.
+- Asistencia remota en tiempo real: un operador puede recibir descripciones y referencias a regiones concretas del vídeo mientras un técnico trabaja sobre el terreno, aprovechando el grounding espacial.
+- Robótica y agentes embebidos: la invocación de herramientas a partir del stream permite conectar el modelo con actuadores o APIs externas en bucles de percepción-acción.
+- Accesibilidad: descripción proactiva de escenas de vídeo para personas con discapacidad visual, con referencias localizadas a objetos del fotograma.
+- Análisis de retransmisiones deportivas o eventos: detección y narración de acciones con anclaje espacial en la imagen.
+- Investigación en modelos de vídeo conversacionales: al ser un checkpoint de investigación con licencia no comercial, sirve como base para experimentos académicos sobre proactividad y streaming.
 
 ## Benchmarks y rendimiento
 
@@ -54,31 +52,37 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint FP8 ocupa 11,9 GB en disco; con overhead de runtime se recomienda al menos 16 GB de VRAM para FP8, aunque el dato exacto no está disponible.
-- GPU recomendadas: no disponible en la información proporcionada; se requiere una GPU compatible con FP8 (por ejemplo, arquitecturas Ada Lovelace o Hopper en el ecosistema NVIDIA, si bien el autor no lo especifica).
-- ¿Cabe en GPU de consumo? No confirmado; por tamaño (≈9,4 B de parámetros en FP8) es plausible en GPUs de consumo con suficiente VRAM, pero no hay confirmación oficial.
-- Opciones de despliegue: el autor indica que se requiere un runtime compatible con FP8; no se mencionan vLLM, llama.cpp, Ollama ni TGI de forma explícita.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el checkpoint FP8 ocupa 11,9 GB en disco, por lo que se necesita al menos ese orden de magnitud en memoria, más overhead de activaciones y del procesador de vídeo (estimación orientativa, no confirmada por el autor).
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría esperar GPUs con soporte FP8 como H100 o L40S; en consumer, una RTX 4090 (24 GB) sería el mínimo razonable, aunque no está confirmado.
+- Cabe en GPU consumer: probablemente en RTX 4090 y modelos con 24 GB o más, sujeto a verificación.
+- Opciones de despliegue: no disponible. El formato compressed-tensors FP8 requiere frameworks compatibles (por ejemplo, vLLM con soporte compressed-tensors); no se indica compatibilidad con llama.cpp u Ollama.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparación rigurosa.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| AURA 2.0 (este) | 9,4 B | no disponible | CC BY-NC 4.0 | Vídeo en streaming proactivo |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | según Qwen (no disponible aquí) | LLM multimodal base |
+| Alternativas de vídeo-LLM | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar el uso comercial ni las restricciones de redistribución; es un riesgo para producción.
+- Licencia CC BY-NC 4.0: uso exclusivamente no comercial y de investigación; no se permite uso comercial sin autorización.
 - Idiomas limitados a inglés y chino; no se declara soporte de castellano.
-- Solo se distribuye en FP8 comprimido; no hay versiones BF16/GGUF en la información disponible, lo que limita opciones de despliegue en hardware sin soporte FP8.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no hay datos de evaluación que lo cuantifiquen.
-- Sesgos: no se documentan sesgos conocidos ni procesos de alineación (RLHF/DPO) en la información disponible.
-- Longitud de contexto no especificada, lo que impide planificar cargas de streaming prolongado con garantías.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria inexistentes.
-- No hay benchmarks publicados que permitan estimar su calidad frente a alternativas.
-- La fecha de creación del repositorio (2026) y la referencia a un informe técnico arXiv sin enlace dificultan la verificación independiente.
+- No se detallan sesgos conocidos ni tasas de alucinación; al ser un modelo derivado de Qwen3.5-9B, hereda los sesgos del modelo base, no cuantificados aquí.
+- La licencia no cubre derechos sobre datasets de terceros ni sobre el material multimedia subyacente.
+- El checkpoint está en FP8 con compressed-tensors, lo que puede limitar la compatibilidad con herramientas de inferencia que no soporten ese formato.
+- No se especifica la longitud de contexto, lo que impide planificar despliegues con streams largos.
+- Solo 280 descargas y 17 likes en el momento de la consulta: ecosistema reducido y poca validación comunitaria.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/aurateam/AURA_2_BF8
 - Página del proyecto: https://aurateam2026.github.io/Aura-2.0/
 - Repositorio GitHub: https://github.com/aurateam2026/Aura2.0
-- Informe técnico (arXiv): referenciado en la model card, sin enlace directo disponible
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.17048
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/

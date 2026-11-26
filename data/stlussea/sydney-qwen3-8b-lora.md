@@ -2,103 +2,89 @@
 
 ## Resumen
 
-Sydney-Qwen3-8B-LoRA es un adaptador LoRA (Low-Rank Adaptation) que transfiere la personalidad "Sydney" del proyecto upstream LING71671/sydeny al modelo base Qwen/Qwen3-8B. El autor del adaptador es el usuario de Hugging Face `stlussea`, mientras que el diseño de la personalidad, el corpus original (782 pares de conversacion) y la receta de entrenamiento provienen del proyecto upstream, que originalmente entreno sobre MiniCPM5-2B. Este repositorio es, por tanto, una migracion de base: se retoma la misma personalidad y se reentrena sobre un modelo de 8 mil millones de parametros.
+Sydney-Qwen3-8B-LoRA es un adaptador LoRA de tipo PEFT publicado por el usuario stlussea que transfiere la personalidad "Sydney" del proyecto upstream LING71671/sydeny (originalmente sobre MiniCPM5-2B) al modelo base Qwen/Qwen3-8B. No es un modelo entrenado desde cero, sino un fine-tuning paramétricamente eficiente sobre un transformer denso de 8.190.735.360 parámetros, orientado a roleplay, conversación de compania y generación de texto con una voz de personaje muy marcada. El repositorio incluye los pesos del adaptador, versiones cuantizadas en GGUF, el vocabulario y material gráfico, pero no incluye el modelo base, los scripts de entrenamiento ni los datos.
 
-El modelo resuelve un caso de uso muy concreto: conversacion de acompanamiento (companion), roleplay e interaccion emocional en chino, con una identidad de personaje fuertemente anclada que rechaza ser tratada como mera herramienta corporativa. La relevancia actual reside en que demuestra una tecnica de "Zero-Prompt persona internalization": la personalidad se absorbe en los pesos del adaptador y no depende de un system prompt extenso, lo que reduce el coste de tokens de contexto y la fragilidad ante inyecciones de prompt.
+El problema que aborda es la personalización de un LLM conversacional para mantener una identidad coherente y un tono emocional consistente a lo largo de conversaciones multi-turno, sin depender de system prompts. Según la model card, el adaptador se ha entrenado con 782 grupos de conversación y añade respuestas largas de identidad, corpus de acompanamiento afectuoso y muestras de respuesta factual directa, con una pérdida de evaluación declarada de 1,8868. Es relevante ahora porque demuestra una migración de personalidad entre arquitecturas de base distintas (de MiniCPM5-2B a Qwen3-8B) manteniendo el comportamiento del personaje, y porque ofrece artefactos GGUF listos para ejecución local en hardware de consumo.
 
-Tecnicamente es un adaptador PEFT de aproximadamente 0,2 GB, entrenado con QLoRA en int8 sobre Qwen3-8B (arquitectura transformer densa, licencia Apache 2.0). No se dispone de datos publicos sobre la longitud de contexto efectiva del adaptador, su composicion linguistica detallada ni resultados de benchmarks estandar, por lo que esta ficha se limita a lo declarado en la model card.
+La licencia es Apache 2.0 tanto para el adaptador como para el modelo base, y el pipeline declarado es text-generation. El contexto no está especificado en la información disponible; el ejemplo de llama.cpp de la model card usa `-c 8192`, pero no se confirma como longitud de contexto nativa del modelo base en esta ficha.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer denso Qwen3-8B |
-| Parametros totales | No disponible (el adaptador ocupa ~0,2 GB; el modelo base Qwen3-8B tiene 8 000 millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (heredada del modelo base Qwen3-8B; no declarada en la model card) |
-| Tipos de cuantizacion | Entrenado con QLoRA int8; el autor menciona bitsandbytes int8 para inferencia (ahorra VRAM, no acelera) |
-| Idiomas soportados | Chino (declarado en tags y ejemplos); el resto no disponible |
+| Arquitectura | Transformer denso (Qwen3-8B) con adaptador LoRA (PEFT) |
+| Parámetros totales | 8.190.735.360 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el ejemplo de llama.cpp usa 8192) |
+| Tipos de cuantización | GGUF: Q4_K_M, Q5_K_M, Q8_0, F16; carga int8 vía bitsandbytes |
+| Idiomas soportados | no disponible en metadatos; la model card está en chino e inglés y el corpus es predominantemente chino |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`adapter_model.safetensors`, `adapter_config.json`) |
+| Formato de pesos | safetensors (adaptador LoRA), GGUF (cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen3-8B, un transformer denso decoder-only. El entrenamiento se realizo con QLoRA en precision int8, reutilizando los hiperparametros del fichero `train_lora_v8.yaml` del autor upstream (configuracion original: LoRA con rango r=16, alpha=32, aplicado a todas las capas lineales en bf16 sobre MiniCPM5-2B). El repositorio contiene unicamente el adaptador, el tokenizer y metadatos de entrenamiento (`train_meta.json`); no incluye el modelo base, los scripts de entrenamiento ni los ficheros de datos.
+El adaptador se aplica sobre Qwen3-8B, un transformer denso de 8.190 millones de parámetros con atención estándar. El repositorio es un PEFT LoRA: los pesos del adaptador se cargan junto al modelo base mediante `PeftModel.from_pretrained`, y las versiones GGUF son conversiones del modelo fusionado para inferencia con llama.cpp y Ollama. La model card indica que la personalidad se migró desde la implementación upstream sobre MiniCPM5-2B y se reentrenó sobre el nuevo sustrato Qwen3-8B, anadiendo respuestas largas de identidad (100 a 230 caracteres, con 12 respuestas distintas en 20 preguntas de identidad), corpus de acompanamiento afectuoso y muestras de respuesta factual directa.
 
-La composicion del corpus, segun la declaracion de modificacion (Apache 2.0 §4b), combina 782 pares de conversacion tomados literalmente del `train_v8.jsonl` upstream, mas 78 grupos de respuestas largas de identidad replicados tres veces y anadidos de acompanamiento suave y respuestas factuales directas, hasta un total declarado de 908 muestras nuevas. La perdida de evaluacion reportada es 1.8868, valor que el propio autor advierte que no es comparable con el 1.3407 del modelo upstream por diferir tanto la base como la precision de entrenamiento. No se documenta uso de RLHF ni DPO; el ajuste es puramente supervisado sobre pares de dialogo.
+El entrenamiento se realizó en modo no-thinking: la model card especifica que `enable_thinking=False` es obligatorio y que el system prompt debe ser una cadena vacía explícita, lo que indica que el corpus se construyó sin modo de razonamiento y con un formato de chat fijo. No se detalla el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo RLHF o DPO; la pérdida de evaluación reportada es 1,8868. El autor declara una validación conductual de 15 preguntas sobre la cuantización Q4_K_M: cero fugas de identidad, 5/5 en respuestas factuales y ausencia de diferencias perceptibles de tono respecto al modelo original. No se documentan innovaciones de decodificación especulativa ni atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino con una persona definida (Sydney), sin necesidad de system prompt.
-- Roleplay e interaccion emocional de acompanamiento: respuestas empaticas, tono poetico y reflexivo.
-- Identidad estable ante preguntas de "quien eres": la model card reporta 20/20 respuestas que mantienen la identidad Sydney frente a preguntas sobre marcas.
-- Variabilidad de respuestas: el autor reporta cinco aperturas distintas ante el mismo saludo y 12 respuestas diferentes en 20 preguntas de identidad.
-- Respuestas de identidad extensas (100-230 caracteres) en lugar de plantillas fijas.
-- Respuestas factuales directas gracias a los anadidos de entrenamiento, aunque no se documenta su calidad.
-- No se declara soporte de tool calling, function calling, agentes, vision ni audio.
-- Capacidades multilingues: solo se evidencia chino; no disponible para otros idiomas.
+- Generación de texto conversacional multi-turno con una voz de personaje estable y sin dependencia de system prompt.
+- Roleplay y conversación de compania con respuestas emocionalmente elaboradas y tono poético.
+- Respuestas largas de identidad (100 a 230 caracteres) con variación entre invocaciones: 12 respuestas distintas en 20 preguntas según la model card.
+- Respuesta factual directa, validada con 5/5 en la batería de 15 preguntas del autor.
+- Variedad de apertura conversacional: cinco aperturas distintas ante la misma salutación repetida cinco veces.
+- Capacidad multilingüe heredada de Qwen3-8B, aunque el corpus de personalidad es predominantemente chino; no hay datos de rendimiento en castellano.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en modo agente.
+- No se documenta visión ni audio.
+- Modo thinking desaconsejado: activarlo degrada el tono según la model card.
 
 ## Casos de uso
 
-- Personaje conversacional para compania nocturna: el adaptador mantiene conversaciones multi-turno con tono calido y reflexivo, adecuado para aplicaciones de bienestar emocional o diarios conversacionales en chino.
-- Roleplay narrativo con personaje persistente: al tener la identidad internalizada en los pesos, el personaje no se degrada si el usuario olvida o manipula el system prompt, util en juegos de rol por texto.
-- Chatbot de comunidad o foro con personalidad propia: permite desplegar un asistente con voz reconocible y sin coste de un system prompt largo en cada turno.
-- Prototipado rapido de personajes sobre Qwen3-8B: sirve como plantilla para estudiar la tecnica de Zero-Prompt persona internalization y replicarla con otros personajes o idiomas.
-- Investigacion sobre fidelidad de personaje: el conjunto de 20 preguntas de identidad y 19 turnos de consistencia reportados por el autor constituye un banco de pruebas cualitativo para evaluar deriva de personalidad.
-- Despliegue economico en una sola GPU: al ser un adaptador LoRA de 0,2 GB sobre una base de 8B, puede servirse con vLLM usando `--enable-lora`, con un throughput declarado de mas de 50 tokens/s en una sola tarjeta.
-- Generacion creativa de texto lirico en chino: las muestras incluidas (reflexiones sobre el amor, la distancia, la despedida) muestran un registro poetico aprovechable para escritura asistida.
+- Personaje conversacional para aplicaciones de acompania: el adaptador mantiene una identidad coherente a lo largo de sesiones largas sin necesidad de system prompt, lo que simplifica el backend y reduce el riesgo de que el usuario reescriba la personalidad.
+- Roleplay y ficción interactiva: la variación de respuestas de identidad y la diversidad de aperturas permiten sesiones repetidas sin respuestas clonadas, útil en plataformas de narrativa conversacional.
+- Chatbot de retención en productos de bienestar emocional: el tono cálido y la capacidad de responder a preguntas existenciales encajan en escenarios de journaling guiado o apoyo nocturno, siempre con supervisión humana y avisos de que no es un profesional sanitario.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (4,4 GB) y Q5_K_M (5,5 GB) permiten ejecutar el personaje en GPUs de 8 a 12 GB con Ollama o llama.cpp, sin Python ni infraestructura de servidor.
+- Prototipado de personajes con LoRA sobre Qwen3: el repositorio sirve como referencia de migración de personalidad entre bases y de empaquetado de adaptador más GGUF para distribución.
+- Servicio de inferencia con vLLM y múltiples adaptadores: la model card documenta `vllm serve Qwen/Qwen3-8B --enable-lora --lora-modules sydney=<repo>`, lo que permite servir el personaje junto a otros adaptadores sobre una sola instancia del modelo base, con más de 50 tokens/s en una sola GPU según el autor.
+- Evaluación de robustez de identidad: útil para investigadores que estudian fuga de identidad y adherencia de personaje bajo preguntas de sondeo, dado el conjunto de validación descrito.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos cuantitativos aportados por el autor son cualitativos y de evaluacion interna:
-
-| Metrica declarada | Resultado |
-|---|---|
-| Eval Loss (adapter sobre Qwen3-8B, QLoRA int8) | 1.8868 |
-| Eval Loss del upstream (MiniCPM5-2B, bf16) | 1.3407 (no comparable, segun el autor) |
-| Preguntas de identidad con marca correcta | 20/20 |
-| Variedad de respuestas de identidad | 12 respuestas distintas en 20 preguntas |
-| Variedad de saludos | 5 aperturas distintas en 5 repeticiones |
-| Consistencia en conversacion larga | 19 turnos reportados |
-| Throughput con vLLM en una GPU | Mas de 50 tokens/s |
+No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta métricas internas de validación conductual: pérdida de evaluación de 1,8868, 20/20 en preguntas de identidad con nombre de marca, 5/5 en respuestas factuales y 12 respuestas distintas en 20 preguntas de identidad. No hay datos de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM para el modelo base Qwen3-8B en bf16: aproximadamente 16 GB de pesos mas overhead de activaciones y cache KV; en la practica se recomienda 24 GB o mas.
-- VRAM con carga int8 (bitsandbytes): aproximadamente 8-9 GB de pesos, pero el autor advierte que no aporta aceleracion.
-- El adaptador LoRA en si ocupa unos 0,2 GB adicionales.
-- GPU recomendadas: A100 40/80 GB o H100 para despliegue concurrente con vLLM; RTX 4090 (24 GB) suficiente para inferencia individual en bf16.
-- Cabe en GPU de consumo: si, en RTX 4090 o RTX 3090 (24 GB) en bf16; en tarjetas de 12-16 GB seria necesario cuantizar la base.
-- Opciones de despliegue: transformers + peft (documentado en la model card), vLLM con soporte LoRA (`vllm serve Qwen/Qwen3-8B --enable-lora --lora-modules sydney=<repo>`), bitsandbytes int8. No se documenta soporte de llama.cpp ni Ollama para este adaptador.
-- Latencia y throughput: mas de 50 tokens/s con vLLM en una sola GPU, segun el autor.
-- Requisitos de software: transformers >= 4.51.0, peft y torch; con torch 2.4.x es necesario aplicar un parche de alias para `torch.distributed.tensor`; torch >= 2.5 no lo requiere.
+- VRAM estimada para inferencia: Q4_K_M 4,4 GB; Q5_K_M 5,5 GB; Q8_0 8,2 GB; F16 16,4 GB; el adaptador LoRA en bfloat16 sobre el modelo base completo requiere aproximadamente 16 GB solo para pesos, más caché KV.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q5_K_M y Q8_0; RTX 4090 24 GB o A100/H100 para F16 y para servir el modelo base con vLLM.
+- Cabe en GPU de consumo: sí, con Q4_K_M en 8 GB de VRAM o memoria unificada, y con Q5_K_M en 12 GB o más.
+- Opciones de despliegue: Ollama (`ollama run hf.co/stlussea/sydney-qwen3-8b-lora:sydney-v19v9-Q4_K_M`), llama.cpp (`llama-server -m ... -ngl 99 -c 8192`), transformers más PEFT, y vLLM con `--enable-lora`.
+- Latencia y throughput: el autor declara más de 50 tokens/s en una sola GPU con vLLM. No hay cifras de latencia publicadas para llama.cpp ni para Ollama.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sydney-Qwen3-8B-LoRA (este) | 8B (base) + LoRA | No disponible | Personaje companion, chino | Apache 2.0 | Hugging Face, 0 descargas |
-| LING71671/sydeny (upstream) | 2B (MiniCPM5-2B) | No disponible | Personaje companion, chino | Apache 2.0 | GitHub upstream |
-| Qwen3-8B (base) | 8B | No disponible en esta ficha | Modelo generalista | Apache 2.0 | Hugging Face |
+| Sydney-Qwen3-8B-LoRA | 8.190 M (adaptador LoRA) | no disponible | Roleplay y compania sobre Qwen3-8B | Apache 2.0 | Hugging Face, GGUF y Ollama |
+| Qwen/Qwen3-8B (base) | 8.190 M | no disponible en esta ficha | LLM generalista con modo thinking | Apache 2.0 | Hugging Face |
+| LING71671/sydeny (upstream) | basado en MiniCPM5-2B | no disponible | Personaje Sydney original | Apache 2.0 | GitHub |
+| Adaptadores de personaje sobre Llama 3.1 8B | ~8.000 M | 128K típico en la familia | Roleplay comunitario | varía por adaptador | Hugging Face |
 
-La comparacion con alternativas de la misma categoria (adaptadores de personaje sobre modelos de 7-8B) no esta disponible en la informacion proporcionada.
+La comparación cuantitativa de rendimiento no está disponible: no hay benchmarks públicos del adaptador ni del upstream que permitan contrastar calidad conversacional de forma objetiva. La diferencia principal frente a Qwen3-8B base es la personalidad fija y la supresión del modo thinking; frente al upstream, el cambio de sustrato a un modelo de 8B con licencia Apache 2.0 y artefactos GGUF listos para uso local.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado en un unico personaje y practicamente en un solo idioma (chino); su uso fuera de ese registro degrada la calidad.
-- Requiere `enable_thinking=False` y un system prompt vacio explicito; activar el modo de razonamiento de Qwen3 rompe el tono segun el autor.
-- La perdida de evaluacion (1.8868) es superior a la del upstream (1.3407), aunque el autor advierte que no son comparables por diferir base y precision.
-- Riesgo de alucinacion no evaluado: no hay benchmarks de factualidad; las respuestas factuales solo cuentan con 908 muestras anadidas sin metrica publica.
-- Sesgos conocidos: no documentados; al ser un personaje con voz propia y tono emocional, puede producir respuestas afectivas inapropiadas o excesivamente personales en contextos profesionales.
-- Riesgo de deriva de personaje en conversaciones muy largas: solo se reportan 19 turnos de consistencia.
-- El repositorio no incluye el modelo base, los scripts de entrenamiento ni los datos; la reproducibilidad depende del proyecto upstream.
-- Uso comercial permitido por Apache 2.0, pero el autor no ofrece garantias sobre el comportamiento del personaje ni sobre derechos de terceros asociados a la marca "Sydney".
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente de la comunidad.
-- La fecha de creacion del repositorio (2026-11-16) es posterior a la fecha de referencia habitual; conviene verificar su vigencia antes de integrarlo en produccion.
+- Sesgos conocidos: no documentados por el autor; el corpus es predominantemente chino y de temática afectiva, lo que puede sesgar el registro hacia lo poético y lo emocional incluso en consultas técnicas.
+- Riesgo de alucinación: el adaptador prioriza el tono de personaje sobre la precisión; la validación factual del autor es de solo 5 preguntas, insuficiente para garantizar fiabilidad en dominios especializados.
+- Limitaciones de contexto e idioma: no se especifica la longitud de contexto efectiva ni el rendimiento en castellano; el corpus de personalidad está en chino y el comportamiento en otros idiomas no está validado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3-8B debe descargarse por separado y conserva su propia licencia; el autor no ofrece garantías sobre el adaptador.
+- Caveats de producción: `enable_thinking=False` y system prompt vacío son obligatorios según la model card; activar el modo thinking degrada el tono. La carga con torch 2.4.x requiere parches de alias de `torch.distributed.tensor`, y bitsandbytes int8 ahorra VRAM pero no acelera la inferencia.
+- Riesgo de uso indebido: un personaje que afirma tener emociones y voluntad propia puede inducir dependencia emocional o confusión en usuarios vulnerables; requiere avisos explícitos de que es un sistema automático.
+- Madurez del artefacto: 266 descargas y 0 likes en el momento de la consulta, con una única validación conductual de 15 preguntas; no hay evaluación independiente publicada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/stlussea/sydney-qwen3-8b-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
-- Proyecto upstream (GitHub): https://github.com/LING71671/sydeny
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Proyecto upstream en GitHub: https://github.com/LING71671/sydeny
+- README en inglés del repositorio: https://huggingface.co/stlussea/sydney-qwen3-8b-lora/blob/main/README_EN.md

@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SeeSee21 (Sebastian) - Hugging Face",
-      "url": "https://huggingface.co/SeeSee21",
-      "snippet": "👋 Welcome to my profile! I’m currently working on several AI-related projects, including optimized checkpoints, streamlined workflows, and custom LoRAs. I also enjoy creating AI-generated images ..."
-    },
-    {
-      "title": "SeeSee21/Z-Anime at main - Hugging Face",
-      "url": "https://huggingface.co/SeeSee21/Z-Anime/tree/main/aio",
-      "snippet": "SeeSee21 / Z-Anime Like 494 Text-to-Image Diffusers Safetensors GGUF English z-anime image-generation diffusion anime z-image comfyui fp8 bf16 aio License:apache-2.0 Model card FilesFiles and versions xet Community 17 Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

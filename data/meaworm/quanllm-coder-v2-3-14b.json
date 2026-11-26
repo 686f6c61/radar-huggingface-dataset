@@ -50,6 +50,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Coding (overall)",
+      "dataset": "LiveBench 1.0 (release 2024-11-25)",
+      "metric": "Coding (overall)",
+      "value": 52.9
+    },
+    {
+      "task": "LCB_generation",
+      "dataset": "LiveBench 1.0 (release 2024-11-25)",
+      "metric": "LCB_generation",
+      "value": 78.205
+    },
+    {
+      "task": "coding_completion",
+      "dataset": "LiveBench 1.0 (release 2024-11-25)",
+      "metric": "coding_completion",
+      "value": 27.632
+    }
+  ],
   "sources": []
 }

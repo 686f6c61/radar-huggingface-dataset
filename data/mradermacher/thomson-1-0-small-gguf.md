@@ -2,75 +2,89 @@
 
 ## Resumen
 
-Thomson-1.0-Small es un modelo fundacional de frontera desarrollado por Thomson Reuters, con un enfoque deliberado en trabajo profesional de alto impacto en los ámbitos legal, fiscal y periodístico. Pertenece a la familia Thomson-1.0 y se distribuye como modelo de pesos abiertos, aunque bajo una licencia restrictiva. El repositorio que nos ocupa, mradermacher/Thomson-1.0-Small-GGUF, contiene las cuantizaciones GGUF de dicho modelo, preparadas por el equipo de mradermacher para su uso en entornos locales con llama.cpp u otros motores compatibles.
+Thomson-1.0-Small es un modelo de lenguaje desarrollado por Thomson Reuters, distribuido originalmente bajo el identificador `thomsonreuters/Thomson-1.0-Small`. Esta ficha describe la versión cuantizada en formato GGUF publicada por mradermacher, que facilita su ejecución en entornos con llama.cpp y herramientas compatibles. El modelo cuenta con 34.660.610.688 parámetros totales (aproximadamente 34,7 mil millones) según los pesos en safetensors del repositorio, y está orientado a tareas conversacionales en inglés.
 
-El modelo tiene aproximadamente 34.660 millones de parámetros (34.660.610.688) y, según la información disponible, se ha desarrollado bajo un paradigma de aprendizaje continuo (Continual Learning). La presencia de archivos multimodales (mmproj) en el repositorio sugiere capacidades de visión, aunque no se detalla su alcance. Esta cuantización resulta relevante para desarrolladores e investigadores que necesitan evaluar un modelo de frontera en infraestructuras con recursos limitados, ya que ofrece varios niveles de compresión.
+La relevancia de esta publicación radica en que permite desplegar un modelo de gran tamano en hardware de consumo mediante cuantizaciones que van desde Q2_K (13 GB) hasta Q8_0 (37 GB), además de incluir un suplemento multimodal (`mmproj`) que sugiere capacidades de visión. El repositorio incluye también cuantizaciones con imatrix en un repositorio separado, orientadas a preservar mejor la calidad en niveles de compresión agresivos.
+
+La información pública disponible sobre el modelo base es limitada: la model card del repositorio cuantizado no detalla arquitectura, datos de entrenamiento ni resultados de benchmarks. Los datos que se presentan a continuación provienen exclusivamente de los metadatos del repositorio y de la model card del cuantizador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 34.660.610.688 |
-| Parametros activos | no disponible (no se ha confirmado si es MoE) |
+| Parametros totales | 34.660.610.688 (34,7 B) |
+| Parametros activos | no disponible (no se confirma que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K (13.0 GB), Q3_K_M (16.9 GB), Q4_K_S (20.0 GB), Q6_K (28.6 GB), Q8_0 (37.0 GB), mmproj Q8_0 (0.7 GB), mmproj f16 (1.0 GB) |
-| Idiomas soportados | en |
-| Licencia | polyform-strict-1-0-0 |
-| Formato de pesos | GGUF (el modelo base original se distribuye en safetensors) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; cuantizaciones imatrix en repositorio separado |
+| Idiomas soportados | en (inglés) |
+| Licencia | polyform-strict-1-0-0 (Polyform Strict 1.0.0) |
+| Formato de pesos | GGUF (repositorio cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no incluye detalles técnicos sobre la arquitectura interna del modelo, el número de tokens de entrenamiento, la composición del dataset ni la aplicación de técnicas como RLHF o DPO. Lo que se conoce es que Thomson-1.0-Small es un modelo fundacional de frontera, miembro de pesos abiertos de la familia Thomson-1.0, desarrollado bajo un paradigma de aprendizaje continuo. Este enfoque se centra en dominios económicamente relevantes y de alto riesgo profesional, como el legal, el fiscal y el periodismo. La cuantización en GGUF no modifica la arquitectura subyacente, pero permite ejecutar el modelo en motores como llama.cpp con distintos niveles de compresión.
+No se ha publicado información sobre la arquitectura interna del modelo base en la documentación disponible. El repositorio cuantizado no incluye detalles sobre el tipo de transformer, el número de capas, la dimensionalidad de los embeddings ni si emplea mecanismos como atención lineal o mezcla de expertos. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+
+La presencia de archivos `mmproj` (multi-modal supplement) en el repositorio GGUF indica que el modelo base incorpora algún componente multimodal, presumiblemente para procesamiento de imágenes, aunque no se detalla su naturaleza ni el codificador visual empleado. El proceso de cuantización aplicado por mradermacher es estático (quantize_version 2, output_tensor_quantised), con variantes estándar y variantes con imatrix para mejorar la fidelidad en compresiones bajas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en inglés, con un enfoque en dominios especializados y tareas generales.
-- Competencia declarada en ambitos profesionales de alto impacto: legal, fiscal y periodismo.
-- Capacidades multimodales sugeridas por la presencia de archivos mmproj (posible soporte de vision, aunque no se especifica su alcance).
-- No se dispone de informacion sobre soporte de tool calling, function calling, agentes o razonamiento multi-paso.
-- No se han publicado datos sobre capacidades multilingues mas alla del ingles.
+- Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
+- Procesamiento multimodal: la inclusión de archivos `mmproj` sugiere soporte de entrada de imágenes, aunque no se documenta el alcance exacto.
+- No se documenta soporte de tool calling ni function calling en la información disponible.
+- No se documenta soporte explícito de agentes o razonamiento multi-paso.
+- Capacidades multilingües limitadas al inglés según el campo `language: en`.
+- No se documentan modos especiales como thinking mode, audio o decodificación especulativa.
 
 ## Casos de uso
 
-- Asistencia legal: el modelo puede utilizarse para redactar borradores de contratos, resumir sentencias o analizar clausulas, aprovechando su entrenamiento orientado al ambito legal.
-- Asesoramiento fiscal: aplicable a la interpretacion de normativa tributaria y a la generacion de informes preliminares para profesionales del sector.
-- Periodismo de datos: util para resumir documentos extensos, identificar temas relevantes y apoyar la redaccion de articulos en ingles.
-- Analisis de documentos corporativos: gracias a su tamano, puede procesar informes anuales, expedientes regulatorios o memorias de sostenibilidad.
-- Chatbot interno para empresas del sector legal o financiero: permite ofrecer respuestas contextualizadas en ingles a consultas de empleados o clientes, con un despliegue local gracias a las cuantizaciones GGUF.
-- Evaluacion de modelos de frontera en infraestructura limitada: las distintas cuantizaciones permiten probar el rendimiento del modelo en GPUs de consumo o en CPU, sin necesidad de un cluster de servidores.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M (21,3 GB) el modelo puede ejecutarse en GPUs con 24 GB de VRAM, lo que permite experimentar con un modelo de 34,7 B en hardware de gama alta de consumo.
+- Prototipado de asistentes conversacionales en inglés: la etiqueta `conversational` y el formato GGUF permiten integrarlo rápidamente en aplicaciones de chat mediante llama.cpp u Ollama.
+- Investigación sobre cuantización: la disponibilidad de 11 niveles de cuantización más variantes imatrix permite estudiar la degradación de calidad frente al tamano del archivo.
+- Evaluación de modelos multimodales en local: los archivos `mmproj` permiten probar entradas de imagen en entornos sin acceso a la nube.
+- Servicio de inferencia con vLLM o TGI: el modelo base en safetensors puede desplegarse en servidores con GPUs A100 o H100 para cargas concurrentes.
+- Análisis de documentos en inglés: aunque no se documenta la ventana de contexto, el tamano del modelo sugiere capacidad para tareas de resumen y extracción en textos de extensión media, sujeto a validación empírica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion (pesos mas overhead de contexto y KV cache):
-  - Q2_K: ~13 GB de pesos, se recomienda al menos 16 GB de VRAM.
-  - Q3_K_M: ~17 GB de pesos, se recomienda al menos 20 GB de VRAM.
-  - Q4_K_S: ~20 GB de pesos, se recomienda al menos 24 GB de VRAM (cabe en una RTX 4090 con margen ajustado).
-  - Q6_K: ~29 GB de pesos, se recomienda al menos 32 GB de VRAM (A100 40 GB).
-  - Q8_0: ~37 GB de pesos, se recomienda al menos 40 GB de VRAM (A100 80 GB o H100).
-- GPUs recomendadas: RTX 4090 para Q4_K_S, A100 40 GB para Q6_K, A100 80 GB o H100 para Q8_0.
-- Es posible ejecutar el modelo en CPU con llama.cpp, especialmente con las cuantizaciones mas bajas (Q2_K, Q3_K_M).
-- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF. El modelo original en safetensors puede desplegarse con vLLM o TGI, aunque no se dispone de informacion sobre su rendimiento en estos entornos.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia según cuantización: Q2_K ~13 GB; Q3_K_S ~15,3 GB; Q3_K_M ~16,9 GB; Q3_K_L ~18,2 GB; IQ4_XS ~19 GB; Q4_K_S ~20 GB; Q4_K_M ~21,3 GB; Q5_K_S ~24,1 GB; Q5_K_M ~24,8 GB; Q6_K ~28,6 GB; Q8_0 ~37 GB.
+- El suplemento multimodal anade 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16) adicionales.
+- GPU recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q8_0 se requiere una A100 40 GB, H100 o dos GPUs de 24 GB.
+- Cabe en GPU de consumo: sí, en modelos con 24 GB de VRAM usando cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo caben Q2_K y Q3_K_S con riesgo de desbordamiento por contexto y caché KV.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI (no confirmado explícitamente).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente sobre modelos comparables en la documentacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Thomson-1.0-Small (esta ficha) | 34,7 B | no disponible | Polyform Strict 1.0.0 | GGUF, safetensors | Multimodal según mmproj |
+| Alternativas de ~30-35 B | no disponible | no disponible | no disponible | no disponible | No se dispone de información verificada de modelos comparables en la documentación proporcionada |
+
+No se dispone de datos suficientes para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: polyform-strict-1-0-0 no es una licencia de codigo abierto en sentido OSI. Impone condiciones estrictas sobre el uso, la modificacion y la redistribucion. Es imprescindible revisar el texto completo antes de cualquier uso comercial.
-- Solo soporta ingles: el modelo no ha sido entrenado para otros idiomas, lo que limita su aplicacion en entornos multilingues.
-- Rendimiento no verificado: al no existir benchmarks publicados, no es posible comparar su rendimiento con otros modelos de tamano similar.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir contenido factualmente incorrecto, especialmente en dominios especializados donde la precision es critica.
-- No se dispone de informacion sobre sesgos conocidos, limitaciones de contexto ni restricciones de uso en produccion.
+- La licencia Polyform Strict 1.0.0 es restrictiva: no permite uso comercial sin acuerdo con el titular, por lo que debe revisarse antes de cualquier despliegue en producción.
+- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- No se documenta la longitud de contexto, lo que impide planificar cargas con ventanas largas sin validación empírica.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad.
+- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad.
+- La model card del repositorio cuantizado no sustituye a la del modelo base; se recomienda consultar `thomsonreuters/Thomson-1.0-Small` para información autoritativa.
+- El repositorio tiene 238,6 GB, por lo que la descarga completa requiere planificación de almacenamiento.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Thomson-1.0-Small-GGUF
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
-- Perfil de mradermacher: https://huggingface.co/mradermacher
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Thomson-1.0-Small-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Thomson-1.0-Small-GGUF
+- Licencia Polyform Strict 1.0.0: https://polyformproject.org/licenses/strict/1.0.0
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

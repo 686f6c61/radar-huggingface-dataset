@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Iris-3B-Turbo-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de aproximadamente 3.000 millones de parametros, publicada por el usuario python-processing-unit en Hugging Face. El identificador del repositorio y el sufijo "Turbo" sugieren una variante optimizada para inferencia rapida, presumiblemente mediante tecnicas de decodificacion especulativa o destilacion, aunque la model card no aporta ninguna confirmacion documental al respecto.
+Iris-3B-Turbo-GGUF es una exportación en formato GGUF del modelo Iris-3B-Turbo, un modelo de generación de imágenes texto-a-imagen desarrollado originalmente por el equipo speridlabs. La conversión la ha realizado el usuario python-processing-unit con el objetivo de hacerlo compatible con stable-diffusion.cpp, una implementación en C++ que permite ejecutar modelos de difusión sin depender del stack de PyTorch ni de CUDA de forma obligatoria.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0 y no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (13 de noviembre de 2026), lo que indica una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad.
+El modelo cuenta con aproximadamente 2.987 millones de parámetros (cerca de 3.000 millones) según los pesos en safetensors del repositorio, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos derivados. El repositorio GGUF ocupa 3,4 GB, un tamaño coherente con una cuantización de los pesos originales.
 
-Por tanto, esta ficha se limita a inventariar los datos verificables (identificador, licencia, formato y tamano nominal) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de calidad, capacidad o idoneidad para produccion resulta imposible con la informacion publicada.
+Su relevancia actual radica en que permite ejecutar un modelo de difusión de tamaño medio en entornos ligeros mediante stable-diffusion.cpp, lo que amplía las opciones de despliegue más allá de los frameworks habituales (diffusers, ComfyUI con PyTorch). La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer, sin confirmacion del autor) |
-| Parametros totales | aproximadamente 3B (inferido del identificador "3B"; no confirmado en la model card) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo de difusion texto-a-imagen, detalles no publicados) |
+| Parametros totales | 2.987.511.888 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio es GGUF, pero no se detallan los niveles Q4_K_M, Q5_K_M, Q8_0, etc.) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | GGUF (niveles concretos no especificados en la model card) |
+| Idiomas soportados | no disponible (las indicaciones de texto dependen del codificador de texto subyacente) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF; pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no especifica la arquitectura (transformer denso, MoE, SSM o hibrida), el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o destilacion. El sufijo "Turbo" podria referirse a una variante destilada o a una configuracion optimizada para decodificacion especulativa, pero se trata de una inferencia a partir del nombre y no de un dato documentado.
+No se han publicado detalles sobre la arquitectura interna del modelo en la información disponible. Por el pipeline declarado (text-to-image) y el tamaño (unos 3.000 millones de parámetros), se trata de un modelo de difusión para generación de imágenes a partir de texto, pero se desconoce si emplea una variante de U-Net, un transformer de difusión (DiT) u otra arquitectura, así como la identidad y el tamaño del codificador de texto y del decodificador latente (VAE).
 
-Tampoco se indica que modelo base se ha convertido a GGUF ni que herramienta de cuantizacion se ha empleado (llama.cpp, por ejemplo), lo que impide trazar la procedencia de los pesos y verificar su correspondencia con un checkpoint original en safetensors.
+Tampoco hay información sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de ajuste fino por preferencias humanas (RLHF/DPO) ni innovaciones técnicas específicas como destilación por pasos (turbo), decodificación especulativa o atención lineal. La única información técnica relevante es que esta exportación está pensada para stable-diffusion.cpp, lo que implica que los pesos han sido convertidos desde el formato safetensors original del modelo base.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada documentalmente; se asume por el formato y el tamano, pero el autor no la describe.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ningun idioma).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de imágenes a partir de descripciones textuales (text-to-image).
+- Ejecución mediante stable-diffusion.cpp, lo que permite inferencia en C++ sin depender de PyTorch.
+- Compatibilidad con el ecosistema GGUF para modelos de difusión, lo que facilita su uso en entornos con recursos limitados.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no aplica (no es un modelo de lenguaje).
+- Capacidades multilingües: no disponibles; dependen del codificador de texto, no documentado.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-Dado que no existe documentacion tecnica verificable, los siguientes escenarios son genericos para un modelo denso de aproximadamente 3B en GGUF y deben tratarse como hipotesis a validar, no como usos recomendados por el autor:
-
-- Prototipado local en estaciones de trabajo sin GPU dedicada: un modelo de 3B cuantizado a 4 bits ocupa del orden de 2 GB, lo que permite ejecutarlo en CPU con llama.cpp u Ollama para pruebas de integracion de pipelines.
-- Clasificacion y etiquetado de texto por lotes: tareas de baja complejidad donde el coste por token prima sobre la precision absoluta.
-- Generacion de borradores y resumenes en entornos con requisitos de privacidad, al poder ejecutarse en local sin enviar datos a la nube.
-- Asistente de autocompletado en editores de codigo, siempre que se valide previamente su competencia en programacion, hoy no documentada.
-- Filtrado y enrutado previo en arquitecturas de varios modelos, usando el 3B como clasificador barato antes de invocar un modelo mayor.
-- Experimentacion academica sobre cuantizacion y despliegue GGUF, donde el interes esta en el formato y no en el rendimiento del modelo.
+- Prototipado rápido de generación de imágenes en local: al estar en GGUF y orientado a stable-diffusion.cpp, se puede integrar en aplicaciones de escritorio o scripts en C++ sin necesidad de instalar PyTorch ni CUDA completa, lo que reduce la fricción de despliegue.
+- Generación de ilustraciones para documentación técnica o material interno: un modelo de unos 3.000 millones de parámetros puede producir imágenes de calidad media-alta para uso no crítico, con la ventaja de la licencia Apache 2.0 para uso corporativo.
+- Integración en pipelines de CI/CD para pruebas visuales: al ejecutarse con stable-diffusion.cpp, se puede invocar desde scripts de build para generar imágenes de referencia o fixtures de test de forma reproducible.
+- Aplicaciones de escritorio con recursos limitados: el formato GGUF y el tamaño del repositorio (3,4 GB) permiten distribuirlo junto con una aplicación de escritorio sin un instalador excesivamente pesado, siempre que el hardware del usuario lo soporte.
+- Generación de imágenes en entornos sin GPU dedicada: stable-diffusion.cpp permite ejecución en CPU, lo que habilita el uso del modelo en servidores o portátiles sin acelerador gráfico, a costa de mayor latencia.
+- Experimentación e investigación en eficiencia de inferencia: sirve como banco de pruebas para comparar el rendimiento de stable-diffusion.cpp frente a diffusers sobre el mismo modelo base, útil para estudiar trade-offs de velocidad y calidad.
+- Creación de contenido para prototipos de producto: equipos de diseño pueden generar variantes visuales rápidas sin depender de servicios en la nube, manteniendo los datos en local gracias a la licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -53,35 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo denso de 3B, una cuantizacion de 4 bits requeriria del orden de 2 GB de pesos mas overhead de contexto; una de 8 bits, unos 3,5 GB. Son estimaciones de orden de magnitud, no datos del autor.
-- GPU recomendadas: no disponible. Por tamano, cabria esperar funcionamiento en GPUs consumer con 6-8 GB de VRAM o mas, sin confirmacion.
-- Cabe en GPU consumer: probablemente si, en modelos con 8 GB o mas, sujeto a validacion.
-- Opciones de despliegue: llama.cpp y Ollama son las rutas naturales para GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de difusión de ~3.000 millones de parámetros en precisión reducida suele requerir del orden de 4-8 GB de VRAM, pero este dato no está confirmado para esta exportación concreta.
+- GPU recomendadas: no disponibles en la documentación. Por tamaño, cabría esperar compatibilidad con GPUs de consumo de gama media-alta (por ejemplo, RTX 3060 12 GB o superiores), pero no hay confirmación del autor.
+- ¿Cabe en GPU de consumo? Probablemente sí en GPUs con 8 GB o más de VRAM, aunque no está verificado.
+- Opciones de despliegue: stable-diffusion.cpp (objetivo declarado de esta exportación); otros runners compatibles con GGUF para difusión no están documentados.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Iris-3B-Turbo-GGUF | aproximadamente 3B (inferido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Qwen2.5-3B-Instruct | 3B | 32K (segun documentacion del autor de Qwen) | Apache 2.0 | Ampliamente distribuido y evaluado |
-| Llama-3.2-3B-Instruct | 3B | 128K (segun documentacion de Meta) | Licencia comunitaria Llama 3.2 | Ampliamente distribuido y evaluado |
-| Phi-3.5-mini | 3,8B | 128K (segun documentacion de Microsoft) | MIT | Ampliamente distribuido y evaluado |
+| Modelo | Parametros | Contexto / resolucion | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Iris-3B-Turbo-GGUF | ~2.990 M | no disponible | Apache 2.0 | GGUF | Exportación para stable-diffusion.cpp |
+| Iris-3B (base, speridlabs) | ~2.990 M | no disponible | Apache 2.0 (segun model card) | safetensors | Modelo original en PyTorch |
+| Alternativas de difusion de ~3B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
 
-La comparacion se limita a tamano y licencia: al no existir benchmarks ni model card sustantiva para Iris-3B-Turbo, no es posible contrastar rendimiento, calidad multilingue ni soporte de tool calling frente a estas alternativas, que si cuentan con evaluaciones publicas.
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card, ficha tecnica, paper ni repositorio de codigo asociado.
-- Procedencia de los pesos no trazable: se desconoce el modelo base y el proceso de cuantizacion.
-- Sin validacion de la comunidad: cero descargas y cero "likes" en el momento de la consulta, lo que impide cualquier contraste independiente.
-- Riesgo elevado de alucinacion y de comportamiento impredecible por falta de datos sobre alineacion (RLHF/DPO).
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, la falta de trazabilidad del modelo base introduce un riesgo juridico si los pesos derivan de un modelo con licencia mas restrictiva.
-- No apto para produccion sin una evaluacion interna exhaustiva previa.
-- El sufijo "Turbo" no esta definido por el autor y no debe interpretarse como garantia de velocidad o calidad.
+- Información pública muy escasa: la model card del repositorio GGUF es mínima y no detalla arquitectura, datos de entrenamiento ni evaluación, lo que dificulta valorar su calidad objetiva.
+- Riesgo de sesgos: al no documentarse la composición del dataset de entrenamiento, no es posible evaluar sesgos demográficos, culturales o de estilo en las imágenes generadas.
+- Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir contenido incoherente, artefactos o representaciones inexactas de la indicación textual.
+- Idiomas: no se especifican los idiomas soportados por el codificador de texto; las indicaciones en castellano podrían funcionar peor que en inglés si el codificador no está entrenado multilingüemente.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (speridlabs/iris-3b) y de cualquier componente (VAE, codificador de texto) que se redistribuya.
+- Caveat de producción: al ser una exportación comunitaria (no oficial) con solo 237 descargas y 1 like, su fiabilidad y mantenimiento no están garantizados; para producción conviene validar la calidad frente al modelo base en safetensors.
+- Compatibilidad: el formato GGUF para difusión tiene soporte más limitado que el ecosistema PyTorch; no todos los runners ni todas las herramientas de edición de imágenes lo soportan.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/python-processing-unit/Iris-3B-Turbo-GGUF
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.
+- Repositorio Hugging Face (GGUF): https://huggingface.co/python-processing-unit/Iris-3B-Turbo-GGUF
+- Modelo base: https://huggingface.co/speridlabs/iris-3b
+- Pesos originales (turbo): https://huggingface.co/speridlabs/iris-3b/blob/main/turbo/model.safetensors
+- stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

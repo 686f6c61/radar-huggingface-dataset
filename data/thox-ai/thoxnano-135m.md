@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ThoxNano-135M es un ajuste fino (fine-tune) del modelo base SmolLM-135M de HuggingFaceTB, desarrollado por Thox-ai como el modelo de menor tamano de su linea de dispositivos THOX, destinado al nivel "ThoxKey". Se trata de un LoRA de rango 32 entrenado sobre un corpus propio de 982 ejemplos de chat, uso de herramientas y factualidad, fusionado posteriormente en los pesos base. Con 134.515.008 parametros reales, es un modelo de generacion de texto orientado a inferencia en dispositivo (on-device) y entornos edge.
+ThoxNano-135M es un ajuste fino (fine-tune) del modelo SmolLM-135M de Hugging Face, publicado por Thox-ai como el modelo de menor tamano de su linea de dispositivos THOX, orientado al nivel "ThoxKey". Se trata de un transformer decoder-only de 134.515.008 parametros entrenado mediante LoRA de rango 32 sobre un corpus propio de 982 ejemplos de chat, uso de herramientas y factualidad, cuyos pesos se han fusionado con los del modelo base. El resultado es un modelo de generacion de texto en ingles, con licencia Apache-2.0, distribuido tanto en safetensors como en GGUF Q4_K_M y con un Modelfile para Ollama.
 
-El modelo resuelve un problema muy concreto: proporcionar respuestas conversacionales muy cortas y enrutamiento de intenciones en hardware de bajos recursos, delegando el conocimiento factual a la capa de servicio (grounding) y a nodos de mayor tamano dentro de una arquitectura de malla (mesh) que el autor denomina MeshStack. No esta pensado como fuente autonoma de conocimiento, sino como componente ligero de una arquitectura mayor.
+Su relevancia no reside en el rendimiento bruto, sino en el planteamiento de despliegue: es un modelo pensado para ejecutarse en hardware de muy baja capacidad (edge, on-device) y para operar dentro de una arquitectura "mesh" en la que un nodo anfitrion aporta el conocimiento factual y el modelo pequeno se limita a mantener la identidad, el tono y el enrutamiento de intenciones. El autor lo publica explicitamente como "grounding required": los pesos por si solos no son una fuente fiable de hechos.
 
-Su relevancia actual reside en su tamano extremo y su licencia Apache-2.0, que lo hacen desplegable en practicamente cualquier hardware, incluido movil o embebido, con pesos disponibles en safetensors y GGUF Q4_K_M. No obstante, el propio autor reconoce un techo de capacidad muy bajo y un resultado debil en su evaluacion de factualidad (23/49), por lo que debe evaluarse como pieza de infraestructura y no como modelo de proposito general.
+Con 135M de parametros y un contexto heredado del modelo base, ThoxNano-135M compite en la categoria de modelos ultraligeros para asistentes locales, no en la de modelos de proposito general. Su interes para desarrolladores es como pieza de infraestructura: un componente barato de enrutamiento y conversacion breve dentro de un sistema mayor.
 
 ## Especificaciones tecnicas
 
@@ -14,84 +14,82 @@ Su relevancia actual reside en su tamano extremo y su licencia Apache-2.0, que l
 |---|---|
 | Arquitectura | Transformer decoder-only (heredada de SmolLM-135M) |
 | Parametros totales | 134.515.008 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M; safetensors en precision original |
-| Idiomas soportados | ingles (en) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada de SmolLM-135M) |
+| Tipos de cuantizacion | GGUF Q4_K_M (publicado); safetensors en precision original |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (269.060.552 B), GGUF Q4_K_M (105.453.888 B), Modelfile de Ollama |
+| Formato de pesos | safetensors (269.060.552 B), GGUF Q4_K_M (105.453.888 B), Modelfile para Ollama |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de SmolLM-135M, un transformer decoder-only de la familia SmolLM de HuggingFaceTB. Sobre esa base, Thox-ai aplico un ajuste fino mediante LoRA de rango 32 sobre un corpus propio de 982 ejemplos que combina conversacion, uso de herramientas (tool-use) y factualidad. Posteriormente, los adaptadores LoRA se fusionaron en los pesos base, dando lugar a los pesos publicados en el repositorio. No se detalla en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO.
+La arquitectura es la del modelo base HuggingFaceTB/SmolLM-135M: un transformer decoder-only denso de 135M de parametros. Thox-ai no modifica la topologia, sino que aplica un ajuste fino supervisado (SFT) mediante LoRA de rango 32 sobre un corpus propio de 982 ejemplos que combina conversacion, uso de herramientas y factualidad. Los adaptadores se fusionan posteriormente en los pesos base, de modo que el repositorio contiene pesos completos y no un adaptador separado.
 
-El repositorio incluye los pesos completos en safetensors, una cuantizacion GGUF Q4_K_M, el tokenizer, la plantilla de chat (`chat_template.jinja`), el `Modelfile` para Ollama y un `training_summary.json`. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal; el interes del modelo es su tamano y su integracion en el ecosistema THOX, no novedades arquitectonicas.
+No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset, ni si se aplicaron fases de RLHF o DPO. El repositorio incluye un `training_summary.json` y un `chat_template.jinja` que documentan el procedimiento y la plantilla de conversacion, respectivamente. La innovacion tecnica del proyecto no esta en el modelo sino en el esquema de despliegue: inferencia en el dispositivo con conocimiento factual inyectado por la capa de servicio (grounding), y derivacion a un nodo de malla de mayor capacidad cuando la consulta excede el ambito trivial.
 
 ## Capacidades
 
-- Generacion de texto conversacional de respuesta muy corta, orientada a intercambios triviales.
-- Enrutamiento de intenciones (routing intents) dentro de la arquitectura de malla THOX.
-- Uso de herramientas (tool-use), segun el corpus de entrenamiento declarado.
-- Capacidad de abstencion ante preguntas factuales, ponderada en la evaluacion GATE49.
-- Soporte de plantilla de chat propia (`chat_template.jinja`).
-- Integracion con Ollama mediante Modelfile incluido.
-- Capacidades multilingues: limitadas al ingles.
-- No se declaran capacidades de vision, audio, codigo avanzado ni razonamiento multi-paso.
+- Generacion de texto conversacional breve, con respuestas cortas y superficiales propias de su escala.
+- Enrutamiento de intenciones (intent routing) dentro de la jerarquia de dispositivos THOX.
+- Uso de herramientas (tool use) a nivel basico, segun el corpus de entrenamiento.
+- Plantilla de chat incluida (`chat_template.jinja`) para integracion en pipelines conversacionales.
+- Ejecucion local en Ollama mediante el Modelfile publicado.
+- Capacidad multilingue limitada al ingles.
+- No se documentan capacidades de vision, audio, modo thinking ni razonamiento multi-paso avanzado.
 
 ## Casos de uso
 
-- Enrutamiento de intenciones en dispositivos ThoxKey: el modelo clasifica y deriva peticiones breves hacia el nodo adecuado de la malla, aprovechando su tamano minimo para ejecutarse en hardware muy limitado.
-- Respuestas conversacionales triviales en asistentes embebidos: gestion de saludos, confirmaciones y respuestas de una o dos frases donde no se requiere conocimiento factual.
-- Componente de preprocesamiento en pipelines locales: normalizacion o reformulacion de entradas de usuario antes de enviarlas a un modelo mayor en la malla.
-- Demostraciones y prototipos de IA local-first: validacion de flujos de inferencia en dispositivo con Ollama sin depender de la nube.
-- Pruebas de integracion de tool calling en entornos edge: verificacion de la plantilla de chat y del formato de llamadas a herramientas en dispositivos con recursos restringidos.
-- Filtro o clasificador ligero previo: descarte rapido de consultas fuera de dominio antes de invocar modelos mayores, reduciendo coste computacional en la malla.
-- Educacion e investigacion sobre ajuste fino de modelos diminutos: ejemplo reproducible de LoRA de rango 32 fusionado sobre SmolLM-135M con licencia permisiva.
+- Enrutamiento de intenciones en asistentes locales: el modelo clasifica la consulta del usuario y decide si se resuelve localmente o se deriva a un nodo de malla de mayor capacidad, aprovechando su bajo coste de inferencia.
+- Respuestas conversacionales breves en dispositivos edge: adecuado para confirmaciones, saludos y respuestas de una o dos frases donde no se requiere conocimiento factual.
+- Capa de voz e identidad en hardware dedicado: mantiene el tono y la persona del asistente THOX en dispositivos con recursos minimos, con los hechos aportados por la capa de servicio.
+- Prototipado rapido de asistentes con Ollama: el Modelfile y el GGUF Q4_K_M permiten levantar un endpoint conversacional en minutos en un portatil convencional.
+- Filtrado y preprocesado de consultas: al ser un modelo de 135M, puede ejecutarse en paralelo a un modelo mayor para tareas de clasificacion, normalizacion o deteccion de intencion antes de la llamada principal.
+- Pruebas de integracion en pipelines de agentes: util como modelo "dummy" o de respaldo en sistemas multi-agente donde el coste por token debe ser minimo y la latencia prioritaria.
+- Educacion y experimentacion: su tamano permite estudiar el efecto del fine-tuning SFT y del grounding en un modelo pequeño sin infraestructura significativa.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | Resultado |
-|---|---:|
-| THOX GATE49 (factualidad, conjunto de desarrollo, ponderado por abstencion) | 23/49 — media 3.0/5 |
-| Fallos graves (hard failures) | 10 |
+|---|---|
+| THOX GATE49 (factualidad, conjunto de desarrollo, ponderado por abstención) | 23/49 aprobados, media 3.0/5 |
+| Fallos duros (hard failures) | 10 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El unico dato de evaluacion es el GATE49 propio del autor, que este mismo califica como debil y esperable en esta escala. No se proporcionan datos de latencia ni throughput.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible. El propio autor califica el resultado de GATE49 como debil y esperable a esta escala, y senala que el modelo se publica por su comportamiento de identidad, voz y enrutamiento bajo grounding, no por su recall factual desde los pesos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en Q4_K_M (105 MB de pesos) y en torno a 270 MB en safetensors en precision original; el consumo real dependera del runtime y del contexto.
-- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU. Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1050, RTX 3050 o superiores.
-- Cabe en GPU consumer: si, sin restricciones practicas por memoria.
-- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxnano-135m`), llama.cpp con el GGUF Q4_K_M, y descarga directa desde Hugging Face para runtimes compatibles con safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Nota del autor: esta build no ha sido cualificada en hardware de dispositivos ThoxKey.
+- VRAM estimada: inferior a 1 GB en Q4_K_M (fichero GGUF de 105 MB); en torno a 0,5-1 GB en safetensors en fp32/fp16 segun el runtime.
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. Cualquier GPU consumer moderna (GTX 1060 en adelante, RTX 3060/4060, RTX 4090) lo ejecuta con holgura.
+- Cabe en cualquier GPU consumer e incluso en dispositivos integrados y moviles con runtime adecuado.
+- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxnano-135m`), llama.cpp con el GGUF Q4_K_M, y runtimes compatibles con safetensors (transformers). No se documenta soporte especifico para vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada; a 135M de parametros se espera latencia de decenas de milisegundos por token en CPU moderna, aunque no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| ThoxNano-135M | 134,5 M | no disponible | Apache-2.0 | Fine-tune de SmolLM-135M con corpus propio; GGUF Q4_K_M y Ollama |
-| SmolLM-135M (base) | 135 M | no disponible | Apache-2.0 | Modelo base; sin ajuste conversacional especifico de THOX |
-| SmolLM2-135M | 135 M | no disponible | Apache-2.0 | Generacion posterior de la familia SmolLM de HuggingFaceTB |
-| Qwen2.5-0.5B | 0,5 B | no disponible | Apache-2.0 | Alternativa de mayor tamano, con mas capacidad general |
+| ThoxNano-135M | 135M | No disponible | Apache-2.0 | Fine-tune SFT de SmolLM-135M con grounding obligatorio; solo ingles |
+| HuggingFaceTB/SmolLM-135M | 135M | No disponible en esta ficha | Apache-2.0 | Modelo base; sin ajuste conversacional especifico de THOX |
+| SmolLM2-135M | 135M | No disponible en esta ficha | Apache-2.0 | Generacion posterior de la familia SmolLM; no evaluado aqui |
+| Qwen2.5-0.5B | 500M | No disponible en esta ficha | Apache-2.0 | Alternativa de mayor tamano con capacidades multilingues superiores |
 
-Los datos de contexto y rendimiento de los modelos comparables no estan disponibles en la informacion proporcionada; la comparativa se limita a parametros y licencia.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Techo de capacidad muy bajo por su tamano: respuestas cortas y superficiales, con ecos ocasionales de plantilla.
-- Respuestas factuales poco fiables desde los pesos desnudos; el autor exige grounding en la capa de servicio para cualquier dato de THOX.
-- Resultado debil en la evaluacion propia de factualidad (23/49, 10 fallos graves).
-- Solo soporta ingles; no hay capacidades multilingues declaradas.
-- No cualificado en hardware de dispositivos ThoxKey, segun el propio autor.
-- Uso fuera de alcance: decisiones sanitarias, legales o de seguridad sin supervision humana, y uso como fuente autonoma de hechos.
-- Riesgo de sesgos y alucinaciones inherente a un modelo de 135M entrenado con un corpus reducido de 982 ejemplos; no se documentan analisis de sesgo.
-- La model card incluye material promocional de una campana de Kickstarter; conviene separar esa informacion de las especificaciones tecnicas.
-- Licencia Apache-2.0 permisiva para uso comercial, sin restricciones adicionales declaradas.
+- Techo de capacidad muy bajo: a 135M de parametros se esperan respuestas cortas y superficiales, con ecos ocasionales de plantilla.
+- Respuestas factuales no fiables desde los pesos; el autor exige grounding en la capa de servicio para cualquier dato factual.
+- Riesgo de alucinacion alto en consultas que requieran conocimiento del mundo.
+- Solo soporta ingles; no hay capacidades multilingues documentadas.
+- No cualificado en hardware de dispositivo ThoxKey segun la propia model card.
+- Fuera de alcance: decisiones sanitarias, legales o de seguridad sin supervision humana.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye con la advertencia explicita de que no debe usarse como fuente autonoma de hechos de THOX.
+- El resultado de GATE49 (23/49) indica un rendimiento debil incluso en el conjunto de desarrollo del propio autor.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxNano-135M
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M
-- Demo de dispositivos virtuales THOX: https://thox.ai/#demo-callout-home_lineup
-- Campana de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
+- Campana de Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- Repositorio Ollama: `ollama run Thox-ai/thoxnano-135m`

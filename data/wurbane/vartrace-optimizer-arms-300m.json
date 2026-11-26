@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "WUrbane/vartrace-optimizer-arms-300m",
+  "slug": "wurbane-vartrace-optimizer-arms-300m",
+  "author": "WUrbane",
+  "url": "https://huggingface.co/WUrbane/vartrace-optimizer-arms-300m",
+  "created_at": "2026-11-26T04:03:02.000Z",
+  "updated_at": "2026-11-26T04:03:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fine-tuned",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2013406976,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

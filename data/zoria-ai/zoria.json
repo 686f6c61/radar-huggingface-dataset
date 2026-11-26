@@ -1,0 +1,166 @@
+{
+  "schema": 2,
+  "id": "zoria-ai/Zoria",
+  "slug": "zoria-ai-zoria",
+  "author": "zoria-ai",
+  "url": "https://huggingface.co/zoria-ai/Zoria",
+  "created_at": "2026-11-24T00:10:49.000Z",
+  "updated_at": "2026-11-25T22:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "uk",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "ukrainian",
+    "reasoning",
+    "fp8",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "uk",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33301245723,
+  "storage_human": "33.3 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "ZNO History",
+      "dataset": "ZNO (Ukrainian history)",
+      "metric": null,
+      "value": 88.45
+    },
+    {
+      "task": "ZNO Ukrainian language and literature",
+      "dataset": "ZNO (Ukrainian language and literature)",
+      "metric": null,
+      "value": 74.78
+    },
+    {
+      "task": "ZNO Geography",
+      "dataset": "ZNO (geography)",
+      "metric": null,
+      "value": 97.02
+    },
+    {
+      "task": "ZNO Mathematics",
+      "dataset": "ZNO (mathematics)",
+      "metric": null,
+      "value": 97.83
+    },
+    {
+      "task": "Global MMLU (uk)",
+      "dataset": "Global MMLU (uk)",
+      "metric": null,
+      "value": 89.08
+    },
+    {
+      "task": "TriviaQA (uk)",
+      "dataset": "TriviaQA (uk)",
+      "metric": null,
+      "value": 67.59
+    },
+    {
+      "task": "ARC-Challenge (uk)",
+      "dataset": "ARC-Challenge (uk)",
+      "metric": null,
+      "value": 96.93
+    },
+    {
+      "task": "ARC-Easy (uk)",
+      "dataset": "ARC-Easy (uk)",
+      "metric": null,
+      "value": 96.84
+    },
+    {
+      "task": "Winogrande (uk)",
+      "dataset": "Winogrande (uk)",
+      "metric": null,
+      "value": 88.08
+    },
+    {
+      "task": "Belebele (ukr_Cyrl)",
+      "dataset": "Belebele (ukr_Cyrl)",
+      "metric": null,
+      "value": 95.67
+    },
+    {
+      "task": "GSM8K (uk)",
+      "dataset": "GSM8K (uk)",
+      "metric": null,
+      "value": 94.39
+    },
+    {
+      "task": "IFEval (uk)",
+      "dataset": "IFEval (uk)",
+      "metric": null,
+      "value": 82.26
+    },
+    {
+      "task": "SQuAD (uk)",
+      "dataset": "SQuAD (uk)",
+      "metric": null,
+      "value": 71.71
+    },
+    {
+      "task": "XLSum (uk)",
+      "dataset": "XLSum (ukrainian)",
+      "metric": null,
+      "value": 6.82
+    },
+    {
+      "task": "WMT24++ en-uk",
+      "dataset": "WMT24++ (en-uk_UA)",
+      "metric": null,
+      "value": 30.63
+    },
+    {
+      "task": "FLORES-200 en-uk / uk-en",
+      "dataset": "FLORES-200 devtest",
+      "metric": null,
+      "value": 37.09
+    },
+    {
+      "task": "Long FLORES en-uk / uk-en",
+      "dataset": "Long FLORES devtest",
+      "metric": null,
+      "value": 37.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zoria AI - App Store",
+      "url": "https://apps.apple.com/lu/app/zoria-ai/id6801105832?l=de-DE",
+      "snippet": "vor 4 Tagen ... BEFORE YOU START Zoria runs the AI on your device, so it downloads a model on first launch — 2.59 GB for the smaller one. The app shows the ..."
+    }
+  ]
+}

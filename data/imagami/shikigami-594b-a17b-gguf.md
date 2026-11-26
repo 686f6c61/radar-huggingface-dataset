@@ -2,108 +2,109 @@
 
 ## Resumen
 
-Shikigami-594B-A17B-GGUF es una cuantización extrema (aproximadamente 1 bit por peso) del modelo multimodal Inkling 2 Small de Thinking Machines, publicada por el usuario independiente imagami. El modelo original es un transformer de tipo Mixture-of-Experts con 594.000 millones de parámetros totales y 17.000 millones activos por token, que selecciona 8 expertos de un total de 384. La cuantización reduce el peso del repositorio a unos 84,2 GB en formato TQ1, lo que permite ejecutar un modelo de casi 600B en hardware relativamente modesto (tres Intel Arc Pro B70 de 32 GB, o una NVIDIA DGX Spark GB10).
+Shikigami-594B-A17B-GGUF es una cuantización extrema (aproximadamente 1 bit por peso) del modelo multimodal Inkling 2 Small de Thinking Machines, publicada por el usuario independiente imagami. El modelo original es un Mixture of Experts (MoE) de 594.000 millones de parámetros totales con 17.000 millones activos por token, que selecciona 8 expertos de un total de 384. Esta versión comprimida reduce el peso a unos 80 GB mediante poda de expertos, reducción de la dimensión intermedia y codificación de los expertos con un esquema de retícula (trellis) inspirado en QTIP.
 
-La relevancia de esta ficha es doble: por un lado, demuestra hasta dónde llegan las técnicas de cuantización basadas en retículos (trellis) para comprimir modelos masivos; por otro, ilustra las fricciones prácticas del ecosistema, ya que el formato TQ1 no es compatible con llama.cpp, Ollama, LM Studio ni Unsloth oficiales, y requiere bifurcaciones específicas del motor (XeStrata o un fork de llama.cpp para GB10). El modelo acepta entrada de texto e imagen, con un codificador visual ViT de 23 capas que se mantiene en BF16.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de escala 594B en hardware de consumo profesional (tres Intel Arc Pro B70 de 32 GB) o en una NVIDIA DGX Spark (GB10), algo inviable con los pesos originales en BF16. El coste es una degradación de calidad controlada y un formato propietario que no carga en llama.cpp estándar, Ollama, LM Studio ni Unsloth, sino solo en forks específicos (XeStrata con SYCL y un fork de llama.cpp para GB10).
 
-Es importante señalar que esta publicación no es una distribución oficial de Thinking Machines. Los pesos son una derivación de Inkling 2 Small bajo licencia Apache 2.0, y el uso está sujeto además a la Acceptable Use Policy de Thinking Machines. La model card advierte de un problema conocido de bucles de razonamiento en el modelo base que la cuantización agrava.
+Se distribuye bajo licencia Apache 2.0 como derivado de Inkling 2 Small, con la salvedad de que el uso queda sujeto a la Acceptable Use Policy de Thinking Machines. El repositorio ocupa 493,6 GB e incluye pesos TQ1, el codificador visual en BF16 y un modelo borrador para decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), con codificador visual ViT de 23 capas |
-| Parametros totales | 594B (modelo original); 85.015.279.635 según safetensors del repo cuantizado |
-| Parametros activos | 17B (8 expertos de 384) |
-| Longitud de contexto | 16.384 tokens en la configuración de ejemplo de la model card |
-| Tipos de cuantizacion | TQ1 (~1,2 bits por peso; expertos a ~2,06 bits por peso en trellis QTIP); atención, embeddings y capa de salida en Q6_K; router en F32; visión en BF16 |
-| Idiomas soportados | No disponible (la model card incluye ejemplos en japonés e inglés, pero no declara lista oficial) |
-| Licencia | Apache 2.0 (pesos derivados); uso sujeto a la Acceptable Use Policy de Thinking Machines |
-| Formato de pesos | GGUF (TQ1 dividido en 10 archivos), mmproj-BF16.gguf para visión, DSpark Q8_0 para decodificación especulativa |
+| Arquitectura | Transformer MoE (Mixture of Experts), 8 expertos activos de 384 |
+| Parametros totales | 594B (modelo original); 80.802.861.091 en safetensors de la version cuantizada |
+| Parametros activos | 17B |
+| Longitud de contexto | 16.384 tokens (configuracion de referencia del autor; el modelo base puede soportar mas, no confirmado) |
+| Tipos de cuantizacion | TQ1 (~1,1 bits/peso), expertos en trellis tipo QTIP; atencion, embeddings y salida en Q6_K; router en F32; vision encoder en BF16 |
+| Idiomas soportados | No disponible (la model card esta en japones e ingles; el modelo base no declara lista de idiomas) |
+| Licencia | Apache 2.0 (derivado de Inkling 2 Small), sujeto a la Acceptable Use Policy de Thinking Machines |
+| Formato de pesos | GGUF (TQ1 con ficheros `.tq` y `.tq_gain`), mas `mmproj-BF16.gguf` y modelo borrador DSpark Q8_0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Inkling 2 Small, es un transformer MoE con 594B parámetros totales y 17B activos, que enruta cada token hacia 8 de sus 384 expertos. Esta cuantización no reentrena el modelo: parte de los pesos originales y aplica una compresión agresiva en dos frentes. Primero, poda los expertos menos utilizados de cada capa y reduce la dimensión intermedia de los restantes a 2304, 1728, 1152 o 576, agrupados en bloques `_g1`, `_g2`, etc.; el router se recorta para que solo apunte a los expertos conservados. La selección de qué podar y cuánto reducir se optimiza minimizando el error de salida respecto al modelo original para un presupuesto de tamaño dado.
+El modelo base, Inkling 2 Small, es un transformer con capas MoE de 384 expertos y 8 activos por token, con 594B parámetros totales y 17B activos. Esta cuantización no reentrena el modelo: aplica una compresión agresiva sobre los pesos originales. Para cada capa se podan los expertos menos utilizados y se reduce la dimensión intermedia de los restantes a 2304, 1728, 1152 o 576, agrupados en `_g1`, `_g2`, etc., recortando también el router a los expertos supervivientes. La selección de qué podar y cuánto reducir minimiza el error de salida ponderado, dando más peso a los expertos usados en generación de código y matemáticas.
 
-Segundo, los expertos se almacenan con un código de retículo (trellis) inspirado en QTIP: cada tile de 256 pesos (16×16) ocupa 66 bytes, con un estado inicial de 14 bits y 255 símbolos de 2 bits. La decodificación avanza el estado con `s = (s >> 2) | (b << 12)` y calcula cada peso mediante una función aritmética determinista (sin codebook), escalada por un factor FP16 por fila. Las secuencias de signos de cada tile se buscan con un algoritmo de Viterbi sobre los 2^14 estados posibles, usando datos de calibración para que la salida de cada experto se aproxime a la del modelo original. Las matrices de atención, embeddings y salida se mantienen en Q6_K, y el router en F32. La model card no detalla la composición del dataset de entrenamiento original ni si hubo RLHF o DPO.
+Los expertos se almacenan con un código de retícula de desplazamiento de bits inspirado en QTIP: cada tile de 256 pesos (16×16) ocupa 66 bytes (2,06 bits por peso), con un estado inicial de 14 bits y 255 símbolos de 2 bits. Los pesos se reconstruyen aritméticamente desde el estado (`v = s * 34038481 + 76625530` módulo 2^32, suma de 4 bytes, menos 510, dividido por 147,8) sin codebook, y se escalan por filas en FP16. Las secuencias de signos se buscan con algoritmo de Viterbi sobre los 2^14 estados posibles, y las entradas de cada matriz se rotan con una transformada de Hadamard de 64 puntos tras aplicar un signo fijo. Los escalares por fila se ajustan para aproximar la distribución de siguiente token del modelo original. El resultado global es de aproximadamente 1,1 bits por peso.
+
+El codificador visual (ViT de 23 capas y proyector) se mantiene en BF16 sin cuantizar. Se incluye además un modelo borrador DSpark (Q8_0, 1,87 GB) para decodificación especulativa, derivado de `mtp.safetensors` del modelo original, con un vocabulario reducido a 32.768 tokens para acelerar la verificación.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat y tokenizador heredados de Inkling 2 Small.
-- Razonamiento con modo de pensamiento (thinking), con niveles de esfuerzo configurables (`reasoning_effort`, incluido `"none"`).
-- Entrada de imagen: el codificador ViT de 23 capas procesa imágenes en parches de 40×40 píxeles (un token por parche, con reducción previa si se superan 1024 parches).
-- Capacidades de código y depuración, con rendimiento medido de 56 tokens/s en generación de código sobre Intel Arc Pro B70.
-- Flujos de agente y multi-step reasoning, con rendimiento medido de 53 tokens/s en tareas de agente.
-- Soporte multilingüe parcial: los ejemplos de la model card incluyen japonés (42 tokens/s) e inglés, aunque no se declara una lista oficial de idiomas.
-- Decodificación especulativa mediante el modelo draft DSpark (Q8_0, 1,87 GB), que acelera la generación.
-- Compatibilidad con endpoints de tipo OpenAI (etiqueta `endpoints_compatible`), incluido el formato `image_url` para imágenes.
+- Generación de texto conversacional multi-turno con contexto de hasta 16.384 tokens en la configuración de referencia.
+- Entrada de imagen y texto (pipeline `image-text-to-text`): el codificador ViT procesa imágenes en regiones de 40×40 píxeles por token, con reescalado previo si se superan 1024 regiones.
+- Razonamiento con modo de pensamiento (thinking mode) configurable mediante `reasoning_effort`, incluido `"none"` para desactivarlo.
+- Generación de código y resolución de problemas matemáticos, con sesgo explícito en la calibración de la cuantización hacia estos dominios.
+- Soporte de tool calling y function calling, mencionado en el contexto de flujos de agentes.
+- Decodificación especulativa mediante el modelo borrador DSpark incluido.
+- Capacidades multilingües: la model card demuestra generación en japonés e inglés; no se declara una lista formal de idiomas.
 
 ## Casos de uso
 
-- Despliegue de un modelo de casi 600B en hardware de gama alta para consumidores: con TQ1 (84,2 GB) cabe en tres Intel Arc Pro B70 de 32 GB o en una DGX Spark GB10, lo que permite experimentar con un MoE de gran escala sin clústeres de datacenter.
-- Investigación en cuantización extrema: el formato trellis QTIP con ~1,2 bits por peso y la poda selectiva de expertos sirven como caso de estudio reproducible para medir el impacto de la compresión en la divergencia KL respecto al modelo original.
-- Asistentes conversacionales con contexto largo: los 16.384 tokens de contexto configurados permiten gestionar diálogos multi-turno y documentos extensos en una sola ventana.
-- Análisis de imágenes en local: el codificador ViT en BF16 permite describir, clasificar o extraer información de imágenes sin depender de APIs externas, útil en entornos con requisitos de privacidad.
-- Agentes autónomos con tool calling: el modelo puede encadenar pasos de razonamiento y llamadas a herramientas, con la salvedad de aplicar los mecanismos anti-bucle descritos en la model card.
-- Generación y depuración de código en pipelines internos: con 56 tokens/s en código sobre B70, es viable para asistencia de programación en estaciones de trabajo con GPU Intel Arc.
-- Evaluación comparativa de motores de inferencia: sirve para contrastar XeStrata (SYCL, Intel Arc) frente al fork de llama.cpp para GB10 en términos de prefill (265 vs. 717-763 tokens/s) y decode (42-56 vs. 21-34 tokens/s).
+- Despliegue de un modelo de escala 594B en hardware de gama prosumer: con tres Intel Arc Pro B70 (32 GB cada una) y 89 GB de RAM principal, todos los expertos caben en VRAM, lo que permite experimentar con un MoE de gran escala sin clúster de datacenter.
+- Inferencia en estación de trabajo compacta: en una NVIDIA DGX Spark (GB10) se obtienen 717-763 tokens/s de prefill y 21-34 tokens/s de decode con decodificación especulativa, suficiente para asistentes interactivos locales.
+- Asistencia a la programación con contexto largo: los 16.384 tokens de contexto y el sesgo de calibración hacia código permiten mantener conversaciones de depuración con varios ficheros y trazas, aunque con el caveat de los bucles de razonamiento descritos más abajo.
+- Procesamiento de documentos con imagen: el pipeline image-text-to-text admite capturas, diagramas o formularios, útil para extracción de información en entornos con requisitos de privacidad donde no se quiere enviar datos a la nube.
+- Agentes con tool calling: la integración con servidores compatibles con la API de OpenAI (XeStrata expone `image_url` y endpoints conversacionales) permite construir agentes multi-paso que invocan funciones externas.
+- Evaluación e investigación de cuantización extrema: el esquema trellis con Viterbi y escalares ajustados por fila es un caso de estudio reproducible para medir la degradación de un MoE de 594B a ~1 bit por peso.
+- Generación multilingüe japonés-inglés: útil para prototipos de atención al cliente o documentación bilingüe, dado el soporte demostrado en la model card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo reporta métricas de calidad y velocidad:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los únicos datos cuantitativos son de rendimiento de inferencia y de fidelidad de la cuantización:
 
-| Metrica | Valor |
-|---|---|
-| Divergencia KL vs. modelo original (FP32, 24 textos + WikiText) | Reportada en la model card, pero el valor numérico está truncado en la información disponible |
-| Perplexity en fork llama.cpp GB10 | 2,794 / 2,793 |
-| Prefill (Intel Arc Pro B70 ×3, XeStrata) | ~265 tokens/s (prompt de 4.719 tokens) |
-| Decode código (B70 ×3, DSpark) | 56 tokens/s |
-| Decode agente (B70 ×3, DSpark) | 53 tokens/s |
-| Decode japonés (B70 ×3, DSpark) | 42 tokens/s |
-| Prefill (DGX Spark GB10, fork llama.cpp) | 717-763 tokens/s |
-| Decode (DGX Spark GB10, fork llama.cpp, con DSpark) | 21-34 tokens/s |
-| Decode (DGX Spark GB10, fork llama.cpp, sin DSpark) | 25 tokens/s |
-| Prefill (DGX Spark GB10, XeStrata gb10-port) | 461-491 tokens/s |
-| Decode (DGX Spark GB10, XeStrata gb10-port) | 20-27 tokens/s |
+| Metrica | Valor | Contexto |
+|---|---|---|
+| Perplexity (GB10, fork llama.cpp) | 2,794 vs 2,793 | Frente a la conversion propia del fork; texto de prueba |
+| Error relativo del vision encoder | 6×10⁻⁶ | Frente a la implementacion de referencia en transformers |
+| Generacion, codigo (B70 ×3) | 56 tok/s | Prompt corto, 384 tokens de respuesta, greedy, DSpark |
+| Generacion, agente (B70 ×3) | 53 tok/s | Mismo escenario |
+| Generacion, japones (B70 ×3) | 42 tok/s | Mismo escenario |
+| Prefill (B70 ×3) | ~265 tok/s | Prompt de 4.719 tokens |
+| Prefill (GB10, llama.cpp) | 717-763 tok/s | Con decodificacion especulativa |
+| Decode (GB10, llama.cpp) | 21-34 tok/s | 25 tok/s sin especulacion |
+| Prefill (GB10, XeStrata gb10-port) | 461-491 tok/s | Puerto de XeStrata |
+| Decode (GB10, XeStrata gb10-port) | 20-27 tok/s | Puerto de XeStrata |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~84,2 GB para los pesos TQ1, más 0,66 GB del codificador visual BF16 y 1,87 GB del draft DSpark si se usa decodificación especulativa.
-- Configuración medida: 3× Intel Arc Pro B70 (32 GB cada una) con 89 GB de RAM principal; todos los expertos caben en VRAM.
-- Configuración medida: NVIDIA DGX Spark (GB10) con el fork de llama.cpp `ink2v` o el port de XeStrata `gb10-port`.
-- No cabe en GPU de consumo convencionales (RTX 4090 de 24 GB, RTX 5090 de 32 GB) según los tamaños declarados; se requiere agregar VRAM de varias GPU o memoria unificada de gran capacidad.
-- Motores compatibles: XeStrata (rama `b70-local`, commit 4b1a8fbdb o posterior; backend SYCL para Intel Arc) y fork de llama.cpp `imagaminomikoto/llama.cpp` rama `ink2v` (tag `ink2v-20261122-0310`) para GB10.
-- Motores NO compatibles: llama.cpp oficial, Ollama, LM Studio y Unsloth no pueden cargar los archivos TQ1.
-- Throughput: 42-56 tokens/s de decode en B70 ×3 con DSpark; 20-34 tokens/s en GB10; prefill de ~265 tokens/s en B70 y hasta 763 tokens/s en GB10.
+- VRAM estimada: los pesos TQ1 ocupan 80,0 GB repartidos en 10 ficheros; sumando el codificador visual BF16 (0,66 GB) y el borrador DSpark (1,87 GB) se superan los 82 GB. El autor reporta 89 GB de RAM principal en la configuración de tres B70, con todos los expertos en VRAM.
+- GPU recomendadas: Intel Arc Pro B70 (32 GB) en configuraciones de tres unidades con SYCL mediante XeStrata; NVIDIA DGX Spark (GB10) mediante el fork `ink2v` de llama.cpp o el puerto `gb10-port` de XeStrata.
+- GPU de consumo: no cabe en ninguna GPU de consumo convencional (RTX 4090 con 24 GB, RTX 5090 con 32 GB) por sí sola; requiere agregación de varias GPU o el sistema integrado GB10.
+- Opciones de despliegue: exclusivamente XeStrata (rama `b70-local`, commit 4b1a8fbdb o posterior, con SYCL) o el fork `imagami3/llama.cpp` rama `ink2v` (etiqueta `ink2v-20261123-0050`) para GB10. No funciona en llama.cpp upstream, Ollama, LM Studio ni Unsloth.
+- Latencia y throughput: ver tabla de benchmarks; en B70 triple se obtienen 42-56 tok/s de generación y ~265 tok/s de prefill; en GB10, 20-34 tok/s de decode y hasta 763 tok/s de prefill.
+- Variables de entorno relevantes en XeStrata: `STRATA_GPU_ONLY_EXPERTS=1`, `STRATA_INK_EP`, `STRATA_INK_TP`, `STRATA_INK_SPEC=dspark`, `STRATA_INK_DSPARK`, `STRATA_DSPARK_VOCAB`, con `--split-device` y `--layer-split` para repartir capas entre GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Formato | Licencia | Hardware |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato / despliegue | Notas |
 |---|---|---|---|---|---|---|
-| Shikigami-594B-A17B-GGUF (TQ1) | 594B | 17B | 16.384 | GGUF TQ1 | Apache 2.0 | 3× Arc Pro B70 / DGX Spark |
-| Inkling 2 Small (original) | 594B | 17B | No disponible | safetensors | Apache 2.0 | Clúster multi-GPU |
-| RVQ1 (mencionado como referencia de calidad) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Shikigami-594B-A17B-GGUF | 594B (80,8B en safetensors del repo) | 17B | 16.384 (config. de referencia) | Apache 2.0 + AUP | GGUF TQ1, solo XeStrata y fork llama.cpp | Cuantizacion ~1,1 bits/peso, multimodal |
+| Inkling 2 Small (original) | 594B | 17B | No disponible | Apache 2.0 + AUP | Safetensors BF16 | Modelo base sin comprimir; requiere hardware de datacenter |
+| Inkling 2 Mini | No disponible | No disponible | No disponible | No disponible | No disponible | Mencionado en la model card por el mismo problema de bucles de razonamiento |
+| MoE de ~600B en 4 bits (referencia generica) | ~600B | Variable | Variable | Variable | GGUF Q4 | El autor indica que el modelo de 4 bits previo a la cuantizacion tambien presenta bucles de pensamiento |
 
-La model card menciona RVQ1 únicamente como referencia de comparación de divergencia KL, sin aportar especificaciones. No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks que permitan comparar calidad frente a alternativas de la misma categoría; la comparativa se limita a parámetros, formato y requisitos de despliegue.
 
 ## Limitaciones y advertencias
 
-- Bucles de razonamiento: Inkling 2 tiende a repetir la misma comprobación en su bloque de pensamiento, especialmente al depurar código; la cuantización agrava el problema y dificulta salir del bucle. Se mitiga con detección de repeticiones en el motor (20 caracteres repetidos 7 veces en 400, o 48 caracteres repetidos 4 veces en 2.400) o desactivando el pensamiento con `reasoning_effort: "none"`.
-- Compatibilidad limitada: los archivos TQ1 solo funcionan con XeStrata o el fork de llama.cpp para GB10; no hay soporte en las herramientas estándar del ecosistema.
-- Licencia: aunque los pesos son Apache 2.0, el uso está sujeto a la Acceptable Use Policy de Thinking Machines; conviene revisarla antes de un despliegue comercial.
-- No es una distribución oficial: el autor es independiente y no hay garantías de soporte ni de mantenimiento a largo plazo.
-- Idiomas: no se declara una lista oficial de idiomas soportados; el rendimiento multilingüe más allá del inglés y el japonés no está documentado.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad factual para esta cuantización.
-- Sesgos: no se han documentado análisis de sesgos para esta derivación ni para el modelo base en la información disponible.
-- Calidad: la divergencia KL respecto al original se reporta, pero el valor numérico no está completo en la información disponible; la poda de expertos puede degradar capacidades específicas no medidas.
-- Visión: el codificador se ejecuta en CPU con NumPy en XeStrata, lo que puede limitar el rendimiento en flujos con muchas imágenes.
+- Bucles de razonamiento: Inkling 2 puede repetir la misma verificación dentro del bloque de pensamiento sin salir, especialmente al depurar código. Ocurre también en el modelo de 4 bits previo y empeora con la cuantización. El motor XeStrata lo mitiga cerrando el bloque de pensamiento si detecta repeticiones (misma cadena de 20 caracteres 7 veces en 400, o de 48 caracteres 4 veces en 2.400), y `reasoning_effort: "none"` redujo los bucles de 8/20 a 2/20 en pruebas de agentes. Bajar la temperatura, avisar en el system prompt o aplicar repetition penalty no funcionó según el autor.
+- Compatibilidad restringida: el formato TQ1 no es un GGUF estándar; no carga en llama.cpp upstream, Ollama, LM Studio ni Unsloth. Depende de forks mantenidos por el propio autor, lo que supone riesgo de mantenimiento y de seguridad de la cadena de suministro.
+- Degradación de calidad por cuantización: ~1,1 bits por peso implica pérdida de fidelidad frente al original; la perplexity reportada (2,794 vs 2,793) es solo sobre un texto de prueba y no sustituye una evaluación amplia.
+- Riesgo de alucinación: inherente al modelo base; no se han publicado evaluaciones de factualidad en la información disponible.
+- Sesgos: no documentados en la model card; el sesgo de calibración hacia código y matemáticas puede reducir la calidad relativa en otros dominios.
+- Idiomas: solo se demuestran japonés e inglés; el rendimiento en castellano no está verificado.
+- Licencia: Apache 2.0 permite uso comercial del derivado, pero la Acceptable Use Policy de Thinking Machines se aplica al uso; conviene revisarla antes de desplegar en producción.
+- Visión: imágenes con más de 1024 regiones de 40×40 píxeles se reescalan, lo que puede degradar la lectura de texto fino; el codificador se ejecuta en CPU con NumPy, lo que añade latencia.
+- Contexto: la configuración de referencia usa 16.384 tokens; no se confirma si el modelo base soporta ventanas mayores en este formato.
+- Distribución no oficial: no es una publicación de Thinking Machines; los cambios respecto al original son solo cuantización y renombrado, según el autor.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/imagami/Shikigami-594B-A17B-GGUF
-- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Small
+- Modelo base Inkling 2 Small: https://huggingface.co/thinkingmachines/Inkling-2-Small
 - Acceptable Use Policy de Thinking Machines: https://thinkingmachines.ai/model-acceptable-use-policy
-- XeStrata (rama b70-local): https://github.com/imagaminomikoto/XeStrata/tree/b70-local
-- XeStrata port para GB10: https://github.com/imagaminomikoto/XeStrata/tree/gb10-port
-- Fork de llama.cpp para GB10 (rama ink2v): https://github.com/imagaminomikoto/llama.cpp/tree/ink2v
+- XeStrata, rama b70-local: https://github.com/imagami3/XeStrata/tree/b70-local
+- XeStrata, rama gb10-port: https://github.com/imagami3/XeStrata/tree/gb10-port
+- Fork de llama.cpp, rama ink2v: https://github.com/imagami3/llama.cpp/tree/ink2v
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

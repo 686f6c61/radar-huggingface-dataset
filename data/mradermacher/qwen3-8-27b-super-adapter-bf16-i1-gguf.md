@@ -2,49 +2,50 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27B-super-adapter-bf16-i1-GGUF` es una redistribucion en formato GGUF de un modelo de 27.320.697.856 parametros (~27,3 B) publicado originalmente por el usuario prithivMLmods como `Qwen3.8-27B-super-adapter-bf16`. El trabajo de mradermacher consiste en la conversion a GGUF y la generacion de cuantizaciones ponderadas con matriz de importancia (imatrix), un procedimiento habitual para reducir el tamano de pesos manteniendo la calidad en inferencia local.
+`mradermacher/Qwen3.8-27B-super-adapter-bf16-i1-GGUF` es una redistribución en formato GGUF del modelo `prithivMLmods/Qwen3.8-27B-super-adapter-bf16`, publicada por el usuario mradermacher, conocido por producir cuantizaciones con imatrix para la comunidad de inferencia local. No se trata de un modelo entrenado desde cero, sino de una conversión a GGUF (con cuantizaciones ponderadas mediante imatrix) de un modelo base de 27.320.697.856 parámetros (unos 27,3 mil millones) que, según los tags del repositorio, está orientado a tareas de agentes, tool calling y razonamiento multi-paso.
 
-El nombre sugiere una base de la familia Qwen 3 con 27 B de parametros, aunque no hay confirmacion oficial en la informacion disponible sobre la arquitectura exacta, el contexto nativo ni el proceso de entrenamiento del adaptador. El repositorio ocupa 24,2 GB e incluye un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K), lo que lo hace util para despliegues con presupuestos de VRAM muy distintos.
+El modelo base apunta a un perfil de uso muy específico: agentes autónomos y entornos de evaluación tipo *harness* (los datasets citados incluyen `harness-hub/scale800-harbor`, `harness-hub/harness-adapters`, `harness-hub/termgrade-train-harbor` y `ai-and/termgrade-environments`). Los tags mencionan GRPO y async-GRPO, lo que sugiere que el adaptador se entrenó con aprendizaje por refuerzo sobre entornos ejecutables, además de LoRA y merge. La licencia es Apache 2.0, lo que facilita su uso comercial.
 
-Es relevante ahora porque permite ejecutar un modelo conversacional de ~27 B en hardware de consumo mediante cuantizaciones agresivas, y porque el pipeline de imatrix de mradermacher es un estandar de facto para obtener GGUF de calidad a partir de pesos en bf16. No obstante, la ausencia de model card detallada, licencia declarada y benchmarks limita su uso en produccion sin una evaluacion previa.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de 27B orientado a agentes en hardware de consumo o en servidores modestos, gracias a las cuantizaciones GGUF que van desde ~11,3 GB (i1-Q2_K) hasta ~22,5 GB (i1-Q6_K). No obstante, la información pública disponible es escasa: no hay benchmarks, no se detalla la longitud de contexto y el idioma declarado es únicamente inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, sin confirmar) |
+| Arquitectura | Transformer (derivada de Qwen3, según el nombre del modelo base); no se detalla en la informacion disponible |
 | Parametros totales | 27.320.697.856 (~27,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (origen en bf16 safetensors) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix/weighted); existen quants estaticos en el repo hermano |
+| Idiomas soportados | en (inglés), según la model card |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo con imatrix y quants ponderados); el modelo base está en bf16/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificada sobre la arquitectura interna del modelo base. El nombre "Qwen3.8-27B" apunta a un transformer decoder-only de la familia Qwen, y el sufijo "super-adapter" indica que el modelo publicado por prithivMLmods incorpora uno o varios adaptadores (probablemente LoRA fusionados) sobre una base de ~27 B. Sin embargo, ni el numero de capas, ni las dimensiones ocultas, ni el regimen de atencion (MHA, GQA, MLA) estan documentados en la informacion proporcionada.
+El modelo base es un transformer de ~27,3 B de parámetros, presumiblemente derivado de la familia Qwen3 por el nombre (`Qwen3.8-27B`), aunque la model card no describe la arquitectura interna ni el número de capas, cabezas de atención o dimensión oculta. Los tags del repositorio incluyen `mtp` (multi-token prediction) y `speculative-decoding`, lo que sugiere que el modelo incorpora cabezas o mecanismos que permiten decodificación especulativa para acelerar la inferencia.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del dataset, uso de RLHF/DPO ni tecnicas de alineacion. El unico detalle tecnico verificable es el proceso de cuantizacion: mradermacher aplica cuantizacion ponderada con imatrix (matriz de importancia calculada sobre un corpus de calibracion) y `output_tensor_quantised: 1`, lo que preserva mejor la calidad en cuantizaciones de 2-4 bits que la cuantizacion uniforme. El campo `convert_type: hf` confirma que la conversion se hizo desde pesos Hugging Face en bf16.
+En cuanto al entrenamiento, el modelo base `prithivMLmods/Qwen3.8-27B-super-adapter-bf16` parece ser el resultado de un *merge* de adaptadores LoRA entrenados con GRPO (y async-GRPO) sobre entornos de agentes. Los datasets citados (`scale800-harbor`, `harness-adapters`, `termgrade-train-harbor`, `termgrade-environments`) apuntan a un entrenamiento orientado a tareas de terminal, ejecución de comandos y evaluación en entornos tipo Harbor/OpenEnv. No se dispone del número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF/DPO adicionales. La cuantización imatrix de mradermacher no modifica los pesos originales, solo su representación numérica.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (el tag `conversational` esta presente en el repo).
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que sugiere integracion con servidores tipo OpenAI-compatible.
-- Razonamiento y codigo: presumibles por herencia de la familia Qwen, pero no verificados en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
+- Generación de texto conversacional en inglés.
+- Razonamiento multi-paso y soporte para agentes (tags `agents`, `hermes`, `opencode`, `pi`).
+- Tool calling / function calling, orientado a entornos de ejecución y terminal (tags `harbor`, `openenv`).
+- Entrenamiento con GRPO/async-GRPO, lo que sugiere capacidad de seguir instrucciones en tareas verificables.
+- Decodificación especulativa vía MTP (multi-token prediction) para acelerar la generación.
+- Capacidad de visión: la model card indica explícitamente "This is a vision model", aunque los ficheros mmproj (si existen) están en el repositorio estático, no en este.
+- Capacidades multilingües: no disponibles; solo se declara inglés.
 
 ## Casos de uso
 
-- **Asistente conversacional local en estacion de trabajo**: con cuantizaciones Q4_K_M o IQ4_XS el modelo cabe en GPUs de 24 GB (RTX 3090/4090) y permite mantener conversaciones multi-turno sin enviar datos a la nube, util para entornos con requisitos de privacidad.
-- **Prototipado rapido de agentes**: el tag `endpoints_compatible` permite levantarlo con llama.cpp server o vLLM (si soporta GGUF) y conectarlo a frameworks como LangChain o LlamaIndex para validar flujos de agente antes de invertir en infraestructura mayor.
-- **Generacion de codigo en pipelines de desarrollo**: con cuantizacion Q5_K_M o Q6_K se obtiene la mayor fidelidad respecto al bf16 original, adecuada para tareas de autocompletado y refactorizacion en editores (Continue, Cursor via endpoint local).
-- **Despliegue en hardware de consumo**: las variantes IQ2_M, IQ2_XS e IQ1_M permiten ejecutar el modelo en GPUs de 8-12 GB o incluso en CPU con RAM suficiente, a costa de perdida de calidad, util para demos y pruebas offline.
-- **Investigacion sobre cuantizacion**: el repositorio incluye 24 variantes de cuantizacion, lo que lo convierte en un banco de pruebas para estudiar el impacto de imatrix y de distintos esquemas (K-quants vs I-quants) sobre la calidad de un modelo de ~27 B.
-- **Fine-tuning posterior sobre GGUF**: aunque GGUF no es ideal para entrenamiento, sirve para evaluar si merece la pena adaptar el modelo base antes de invertir en un fine-tuning completo en bf16.
+- Agentes de terminal automatizados: el modelo puede ejecutar comandos, interpretar salidas y encadenar pasos, gracias a su entrenamiento sobre entornos tipo Harbor/OpenEnv y su soporte de tool calling.
+- Orquestación de pipelines CI/CD: integrado como agente que lee logs, propone parches y valida resultados en un bucle multi-paso, aprovechando el entrenamiento con GRPO sobre tareas verificables.
+- Asistente de código en local: con cuantizaciones i1-Q4_K_M (~17,1 GB) puede ejecutarse en una RTX 4090 o en una estación con 24 GB de VRAM, ofreciendo generación de código y razonamiento sin depender de la nube.
+- Evaluación de agentes (harness): útil como modelo de referencia para comparar políticas de agentes en entornos de benchmark, dado que los datasets de entrenamiento provienen de harnesses de evaluación.
+- Automatización de tareas de administración de sistemas: el modelo puede interpretar instrucciones en lenguaje natural y traducirlas a comandos de shell, con validación posterior.
+- Prototipado de asistentes conversacionales en inglés: para equipos que necesitan un modelo de 27B con licencia Apache 2.0 y despliegue en GGUF con llama.cpp u Ollama.
+- Investigación en decodificación especulativa: al incluir MTP, sirve como banco de pruebas para técnicas de *speculative decoding* en inferencia local.
 
 ## Benchmarks y rendimiento
 
@@ -52,40 +53,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia** (depende de cuantizacion y longitud de contexto):
-  - IQ1_M / IQ2_XXS: ~7-9 GB (apto para RTX 3060 12 GB, RTX 4070).
-  - IQ3_M / Q3_K_M: ~11-13 GB (RTX 4080, RTX 3090 con contexto corto).
-  - Q4_K_M / IQ4_XS: ~15-17 GB (RTX 4090, A6000, L40S).
-  - Q5_K_M: ~18-20 GB (A100 40 GB, RTX 4090 con offload parcial).
-  - Q6_K: ~22-24 GB (A100 40 GB, H100 80 GB).
-- **GPU recomendadas**: A100 40/80 GB y H100 80 GB para bf16 o Q6_K con contexto largo; RTX 4090/3090 para Q4_K_M; RTX 4070/3060 para cuantizaciones IQ2/IQ3.
-- **Consumer GPU**: si, el modelo cabe en GPUs de consumo desde 12 GB (con IQ2/IQ3) hasta 24 GB (Q4_K_M completo).
-- **Opciones de despliegue**: llama.cpp (nativo para GGUF), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de OpenAI que acepten GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion a safetensors.
-- **Latencia y throughput**: no disponibles. Como referencia orientativa para un modelo denso de ~27 B en Q4_K_M sobre RTX 4090, se esperan decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
+- VRAM estimada para inferencia (según tamaño de quant):
+  - i1-Q2_K (~11,3 GB): cabe en GPU de 12 GB (RTX 3060 12 GB, RTX 4070) con contexto corto.
+  - i1-IQ3_S / i1-Q3_K_M (~13 GB): requiere 16 GB de VRAM o descarga parcial a RAM.
+  - i1-Q4_K_M (~17,1 GB): recomendado para RTX 4090 (24 GB) o A5000/A6000.
+  - i1-Q5_K_M (~19,7 GB): requiere 24 GB de VRAM con contexto moderado.
+  - i1-Q6_K (~22,5 GB): al límite de 24 GB; mejor en A100 40 GB o H100.
+- GPU recomendadas: RTX 4090 (24 GB) para quants Q4/Q5; A100 40/80 GB o H100 para Q6 o contexto largo; RTX 3090/4090 para Q3/Q4.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con quants Q4_K_M o inferiores; en RTX 3060 12 GB solo con Q2_K o IQ2/IQ3 parciales.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-inference (TGI, aunque GGUF no es su formato nativo), vLLM (con soporte GGUF experimental). El repo incluye fichero imatrix para generar quants propios.
+- Latencia y throughput: no disponibles; dependerán del hardware y del quant. La presencia de MTP y decodificación especulativa puede reducir la latencia por token en comparación con un transformer equivalente sin MTP.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-super-adapter (este) | ~27,3 B | no disponible | no disponible | GGUF | Hugging Face (repo de mradermacher) |
-| Gemma 2 27B | 27 B | 8K | Gemma Terms | safetensors, GGUF | Google / Hugging Face |
-| Mistral Small 24B | 24 B | 32K | Apache 2.0 | safetensors, GGUF | Mistral AI |
-| Qwen2.5 32B | 32,5 B | 32K | Apache 2.0 (mayoria variantes) | safetensors, GGUF | Alibaba / Hugging Face |
+| Qwen3.8-27B-super-adapter-bf16-i1-GGUF (este) | ~27,3 B | no disponible | Apache 2.0 | GGUF | Orientado a agentes, MTP, vision (según card) |
+| Qwen2.5-32B-Instruct | ~32,5 B | 128K (según card oficial) | Apache 2.0 | safetensors, GGUF | Referencia generalista de la familia Qwen |
+| Gemma 3 27B | ~27 B | 128K (según card oficial) | Gemma license | safetensors, GGUF | Multimodal, licencia más restrictiva |
+| Mistral Small 3 (24B) | ~24 B | 32K (según card oficial) | Apache 2.0 | safetensors, GGUF | Generalista, sin entrenamiento específico de agentes |
 
-La comparativa es aproximada: no hay datos publicados de rendimiento para este modelo que permitan una comparacion cuantitativa con Gemma 2 27B, Mistral Small 24B o Qwen2.5 32B. La principal ventaja de este repositorio es la disponibilidad de 24 cuantizaciones GGUF con imatrix; su principal desventaja es la falta de licencia y model card detalladas frente a las alternativas oficiales.
+No se dispone de datos de benchmarks del modelo evaluado, por lo que la comparación se limita a parámetros, contexto, licencia y formato. Los datos de los modelos alternativos provienen de sus respectivas model cards públicas.
 
 ## Limitaciones y advertencias
 
-- **Licencia no declarada**: no se especifica licencia en el repositorio, lo que impide determinar si el uso comercial esta permitido. No debe usarse en produccion sin aclarar este punto con el autor original.
-- **Model card inexistente o minima**: no hay documentacion sobre arquitectura, contexto, idiomas, datos de entrenamiento ni alineacion, lo que dificulta evaluar sesgos y robustez.
-- **Riesgo de alucinacion**: no evaluado; al ser un modelo conversacional sin benchmarks publicados, no se puede descartar un comportamiento alucinatorio significativo.
-- **Cuantizaciones agresivas (IQ1, IQ2)**: degradan notablemente la calidad respecto a bf16; no recomendadas para tareas de razonamiento o codigo en produccion.
-- **Idiomas no confirmados**: no se puede garantizar un rendimiento adecuado en castellano sin pruebas empiricas.
-- **Procedencia del adaptador**: el modelo base `prithivMLmods/Qwen3.8-27B-super-adapter-bf16` no tiene trazabilidad publica clara sobre que adaptadores se fusionaron ni con que datos.
-- **Fecha de creacion futura**: el repositorio figura creado el 2026-11-22, lo que sugiere metadatos inconsistentes; conviene verificar la integridad de los pesos antes de usarlos.
+- Sesgos: no documentados; al ser un modelo entrenado mayoritariamente en inglés y sobre entornos de terminal, puede presentar sesgos hacia ese dominio y hacia patrones de comandos Unix.
+- Riesgo de alucinación: no cuantificado; en tareas de agentes, una alucinación en un comando puede tener consecuencias destructivas, por lo que se recomienda sandboxing.
+- Limitaciones de contexto: la longitud de contexto no está documentada en la información disponible; no se debe asumir una ventana larga sin verificación empírica.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base y los datasets de entrenamiento pueden tener sus propias condiciones; conviene revisar las licencias de `harness-hub/*` y `ai-and/termgrade-environments`.
+- Producción: al ser una cuantización comunitaria (no oficial), la calidad de los quants i1 puede degradarse en Q2/Q3; para producción se recomienda Q4_K_M o superior y validación contra el modelo bf16 original.
+- Visión: la model card indica que es un modelo de visión, pero los ficheros mmproj están en el repositorio estático; este repo i1 no los incluye, por lo que la funcionalidad multimodal puede no estar disponible aquí.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-i1-GGUF
-- Modelo base en bf16: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-bf16
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-i1-GGUF
+- Modelo base: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-bf16
+- Quants estáticos (incluye mmproj): https://huggingface.co/mradermacher/Qwen3.8-27B-super-adapter-bf16-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-super-adapter-bf16-i1-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre quants: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset scale800-harbor: https://huggingface.co/datasets/harness-hub/scale800-harbor
+- Dataset harness-adapters: https://huggingface.co/datasets/harness-hub/harness-adapters
+- Dataset termgrade-train-harbor: https://huggingface.co/datasets/harness-hub/termgrade-train-harbor
+- Dataset termgrade-environments: https://huggingface.co/datasets/ai-and/termgrade-environments

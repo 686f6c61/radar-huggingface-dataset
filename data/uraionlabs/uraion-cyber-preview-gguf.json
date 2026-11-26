@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "UraionLabs (Uraion Labs) - Hugging Face",
-      "url": "https://huggingface.co/UraionLabs",
-      "snippet": "UraionLabs/Uraion-Agent-Steer-GGUF Text Generation • 8B • Updated 10 days ago • 175 • 1"
-    },
-    {
-      "title": "UraionLabs (Uraion Labs) - Hugging Face",
-      "url": "https://huggingface.co/UraionLabs/models",
-      "snippet": "User profile of Uraion Labs on Hugging Face"
-    }
-  ]
+  "sources": []
 }

@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Serenity-26B-A4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Serenity-26B-A4B-Q8_0.gguf · ReadyArt/Serenity-26B-A4B-GGUF at main",
-      "url": "https://huggingface.co/ReadyArt/Serenity-26B-A4B-GGUF/blob/main/Serenity-26B-A4B-Q8_0.gguf",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ReadyArt/Serenity-26B-A4B-GGUF - toolify.ai",
-      "url": "https://www.toolify.ai/ai-model/readyart-serenity-26b-a4b-gguf",
-      "snippet": "Serenity-26B-A4B-GGUF install Serenity-26B-A4B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Serenity-26B-A4B-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of Serenity-26B-A4B-GGUF install, users can directly use Serenity-26B-A4B-GGUF installed effect in huggingface.co for debugging and trial. It also ..."
-    },
-    {
-      "title": "gemma-4-26B-A4B-it-heretic-GGUF: Text-to-Text model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-it-heretic-gguf-mradermacher",
-      "snippet": "Overview gemma-4-26B-A4B-it-heretic-GGUF is a static quantized version of the Gemma 4 26B model from mradermacher, distributed in GGUF format for CPU and low-VRAM inference. The original base model is a 26-billion parameter instruction-tuned variant designed for conversational and general text generation tasks. This quantized release prioritizes accessibility by offering 11 different ..."
-    },
-    {
-      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
-      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
-      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
-    }
-  ]
+  "sources": []
 }

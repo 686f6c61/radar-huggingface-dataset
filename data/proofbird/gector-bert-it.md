@@ -2,111 +2,101 @@
 
 ## Resumen
 
-gector-bert-it es un modelo de corrección gramatical del italiano basado en GECToR (Grammatical Error Correction: Tag, Not Rewrite), la técnica de etiquetado secuencial de Omelianchuk et al. (2020). Lo publica Patrick Hartnett (usuario proofbird) como parte del motor local de corrección de su asistente de escritura Proofbird para Windows, y lo libera para que cualquiera pueda inspeccionar qué se ejecuta en su máquina. En lugar de reescribir frases, el modelo predice para cada token una etiqueta de edición (mantener, borrar, reemplazar, añadir, cambiar mayúsculas o cambiar forma verbal) y aplica las ediciones de forma iterativa hasta cinco pasadas.
+`gector-bert-it` es un modelo de corrección gramatical del italiano desarrollado por Proofbird, el equipo detrás de la aplicación de asistencia a la escritura del mismo nombre. Se trata de un etiquetador de secuencias de estilo GECToR construido sobre el encoder `dbmdz/bert-base-italian-xxl-cased` y exportado a ONNX en fp32 para ejecutarse en CPU, sin necesidad de GPU ni de conexión a un servicio externo. El modelo se publica con el objetivo declarado de que cualquiera pueda auditar qué se ejecuta en su máquina, ya que forma parte del motor local de la aplicación Proofbird.
 
-El modelo parte del encoder `dbmdz/bert-base-italian-xxl-cased` y añade dos cabezas: una de etiquetado con 5 000 etiquetas de edición y otra de detección de errores. Se distribuye en formato ONNX (fp32, opset 17) para ejecutarse en CPU, con un tamaño de repositorio de 0,5 GB, lo que lo hace apto para inferencia en dispositivo sin GPU. Es relevante porque cubre un nicho poco poblado: corrección gramatical italiana con despliegue local, licencia Apache 2.0 y datos de entrenamiento exclusivamente sintéticos y libres.
+A diferencia de los modelos generativos de corrección, GECToR no reescribe el texto: para cada token predice una etiqueta de edición (mantener, borrar, reemplazar por una palabra, añadir una palabra, cambiar mayúsculas o cambiar la forma verbal), aplica las ediciones y vuelve a etiquetar la frase hasta cinco iteraciones. Esto lo hace especialmente adecuado para interfaces de sugerencia donde el usuario decide si acepta cada cambio, ya que el modelo nunca parafrasea ni reformula.
 
-La propuesta es deliberadamente conservadora: está entrenado para priorizar la precisión sobre la cobertura, de modo que un error no detectado pesa menos que una corrección incorrecta. Esto lo aleja de los correctores generativos y lo acerca a un corrector de reglas aprendidas, con garantías medibles de falsos positivos muy bajas sobre texto correcto.
+El modelo se entrenó exclusivamente con datos sintéticos generados mediante reglas de error escritas a mano sobre corpus italianos limpios (Wikipedia, Europarl y Tatoeba), sin corpus de aprendices ni datos de usuario. La versión publicada es la 1.1.2 (archivos de modelo de la 1.1.0), con pesos finales de una única época de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder BERT (base `dbmdz/bert-base-italian-xxl-cased`) con cabeza de etiquetado secuencial GECToR (5 000 etiquetas de edición) y cabeza de detección de errores |
-| Parametros totales | no disponible (el repositorio pesa 0,5 GB en fp32; el tamaño exacto del encoder base no se detalla en la información proporcionada) |
+| Arquitectura | Transformer encoder BERT (base) con cabeza de etiquetado de ediciones (2 932 etiquetas) y cabeza de detección de errores; paradigma GECToR |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (el modelo opera a nivel de oración con tokenización WordPiece; no se especifica el límite numérico) |
-| Tipos de cuantizacion | el artefacto publicado es ONNX en fp32; no se documentan otras cuantizaciones |
-| Idiomas soportados | italiano (it) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (los pesos publicados son ONNX fp32) |
+| Idiomas soportados | italiano (`it`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (`model.onnx`, opset 17) con tokenizador WordPiece (`vocab.txt`, `tokenizer.json`, `tokenizer_config.json`) |
+| Formato de pesos | ONNX (fp32); tokenizer compatible con la librería `tokenizers` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer tipo BERT sobre el que se montan dos cabezas: una de etiquetado con 5 000 etiquetas de edición (`logits_labels`, salida [1, T, 5000]) y otra de detección de errores (`logits_d`, salida [1, T, 2]). El esquema de etiquetas sigue GECToR: cada token recibe una etiqueta que indica mantener, borrar, reemplazar por una palabra, añadir una palabra, cambiar mayúsculas o transformar la forma verbal. El decodificador aplica las ediciones y vuelve a etiquetar la frase hasta cinco iteraciones. Incluye un vocabulario específico de formas verbales italianas (`verb-form-vocab.txt`) construido para este modelo.
+El modelo sigue el esquema GECToR: un encoder BERT base italiano (`dbmdz/bert-base-italian-xxl-cased`, licencia MIT) sobre el que se montan dos cabezas, una de etiquetado de ediciones con 2 932 etiquetas posibles y otra de detección de errores. La inferencia es iterativa: se etiqueta la frase, se aplican las ediciones propuestas y se vuelve a etiquetar el resultado hasta un máximo de cinco pasadas. El modelo no genera texto libre, solo propone ediciones locales sobre tokens existentes.
 
-El entrenamiento es exclusivamente sintético: 3 000 000 de frases de Wikipedia italiana (`wikimedia/wikipedia`, `20231101.it`) y 250 000 frases de Tatoeba fueron corrompidas con reglas de error escritas a mano para el italiano; alrededor del 10 % se dejan limpias para que el modelo aprenda a no tocar texto correcto. Se añadieron 210 000 frases de plantilla para patrones que Wikipedia rara vez contiene (primera y segunda persona, imperativos, concordancia a larga distancia). No se usaron corpus de aprendices ni datos no comerciales, ni texto de usuarios. El entrenamiento consistió en una época (114 348 pasos, batch 64, learning rate 3e-5) en una NVIDIA L4, con identificador de ejecución `2026-10-24-0450`. No se documenta RLHF ni DPO.
+El entrenamiento utilizó únicamente datos sintéticos, 3 250 000 frases en total: 1 500 000 de Wikipedia italiana (`wikimedia/wikipedia`, `20231101.it`), 1 500 000 de los procedimientos del Parlamento Europeo (Europarl v8, sesiones anteriores a mayo de 2011) y 250 000 de Tatoeba. Las frases se corrompieron con reglas de error italianas escritas a mano, en su mayoría un error por frase independientemente de su longitud, dejando aproximadamente un 10 % sin corromper para que el modelo aprenda a no tocar texto correcto. Cada regla se validó previamente contra texto limpio para no marcar como error variantes que el italiano admite (por ejemplo, `di applicazione` y `d'applicazione`). Se añadieron además frases reales con el error colocado exactamente en el patrón necesario (repartidas entre 502 verbos) y 210 000 frases de plantilla para cubrir preguntas, imperativos, primera y segunda persona y errores en una cláusula posterior. El entrenamiento consistió en una época, 142 588 pasos, batch 64 y tasa de aprendizaje 3e-5, con run id `2026-11-23-1032`; los pesos publicados corresponden al paso final. No se usaron corpus de aprendices ni datos no comerciales, ni texto de usuarios.
 
 ## Capacidades
 
-- Corrección de concordancia de género y número en artículos, adjetivos y participios, incluso a través de una cláusula.
-- Concordancia sujeto-verbo.
+- Corrección de concordancia de género y número en artículos, adjetivos y participios, incluso entre cláusulas.
+- Concordancia sujeto-verbo (`Gli infermieri controlla` → `controllano`, `La legge vietano` → `vieta`).
+- Corrección de la persona de los auxiliares `essere` y `avere` (`Noi è stanchi` → `siamo`).
 - Preposiciones articuladas (`di il` → `del`).
-- Elisión (`lo amico` → `l'amico`).
-- Acentuación (`perche` → `perché`, `e` → `è` cuando la frase lo requiere).
+- Elisión (`lo amico` → `l'amico`, `una analisi` → `un'analisi`).
+- Acentuación (`perche`/`perchè` → `perché`, `e` → `è` cuando la frase lo requiere).
+- Selección de artículo determinado (`il`/`lo`, `i`/`gli`: `il studente` → `lo studente`).
 - Plurales de palabras terminadas en `-co/-go/-ca/-ga`.
-- Detección de palabras duplicadas.
-- Capitalización al inicio de frase.
-- Corrección de errores de registro cotidiano en preguntas, imperativos y primera y segunda persona.
-- Etiquetado secuencial con aplicación iterativa de ediciones (hasta cinco pasadas).
-- No parafrasea: solo propone ediciones locales.
-- Inferencia en CPU mediante ONNX Runtime, sin GPU.
-- No soporta tool calling, function calling, agentes, visión ni audio según la información disponible.
+- Detección de palabras duplicadas y capitalización al inicio de frase.
+- Errores de registro coloquial en preguntas, imperativos y primera y segunda persona.
+- Salida estructurada de sugerencias con posición de carácter (`start`, `length`), texto original y reemplazo, apta para subrayar y ofrecer la corrección en una interfaz.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio: es un etiquetador de tokens especializado en una única tarea.
 
 ## Casos de uso
 
-- Asistente de escritura de escritorio: es exactamente el uso para el que se publicó (Proofbird en Windows); el modelo ONNX en fp32 corre en CPU y corrige el texto mientras el usuario escribe, sin enviar datos a la nube.
-- Corrección de textos administrativos y periodísticos en italiano: al priorizar la precisión, resulta adecuado para revisar borradores donde una corrección errónea es más costosa que un error no detectado.
-- Preprocesado de corpus italianos: limpieza de concordancias, acentos y preposiciones articuladas antes de alimentar otros pipelines de NLP.
-- Integración en editores y extensiones: el formato ONNX y el decodificador estándar permiten integrarlo en herramientas con un decodificador GECToR propio, como el que Proofbird implementa en C#.
-- Filtrado de calidad en plataformas de contenido generado por usuarios: con una tasa de falsos positivos del 0,10 % sobre frases correctas de Tatoeba, puede marcar texto sospechoso sin degradar la experiencia del usuario.
-- Enseñanza de italiano como lengua extranjera: puede señalarse como corrector conservador para ejercicios de concordancia y acentuación, aunque su cobertura sobre ensayos reales de aprendices es limitada (véase limitaciones).
-- Verificación de mayúsculas y puntuación final de frase en procesos batch: las reglas de idioma (`language-rules.json`) cubren el manejo de puntuación final y artículos elididos.
+- Asistente de escritura integrado en el navegador o en el editor: el modelo se ejecuta en CPU vía ONNX Runtime y devuelve sugerencias con posiciones de carácter, de modo que la interfaz puede subrayar cada error y ofrecer el reemplazo sin enviar el texto a ningún servidor. Es el caso de uso original de Proofbird.
+- Corrección de textos académicos o periodísticos en italiano: al no parafrasear y limitarse a ediciones locales, preserva el estilo y la voz del autor, algo crítico en contenido editorial donde una reescritura generativa introduciría cambios no deseados.
+- Pretratamiento de corpus italianos antes de tareas de PLN: normalizar acentos, elisiones y concordancias en textos de redes sociales o foros mejora la calidad de embeddings y clasificadores posteriores sin alterar el contenido semántico.
+- Herramienta de aprendizaje de italiano para estudiantes: las sugerencias explícitas (original y reemplazo) permiten mostrar al alumno exactamente qué error cometió y cuál es la forma correcta, con la posición exacta en su texto.
+- Corrección en aplicaciones de mensajería o correo con requisitos de privacidad: al ser un modelo ONNX de 0,9 GB que corre en CPU, puede desplegarse en el propio dispositivo del usuario sin dependencia de la nube, cumpliendo requisitos de soberanía del dato.
+- Validación automática en pipelines de publicación: integrado como paso previo a la publicación de contenido en italiano, detecta concordancias y errores ortográficos recurrentes antes de la revisión humana, reduciendo el coste de corrección manual.
+- Corrección de subtítulos y transcripciones: los errores de concordancia y de auxiliares son frecuentes en transcripciones automáticas; el modelo los corrige con ediciones locales sin reescribir el texto transcrito.
 
 ## Benchmarks y rendimiento
 
-| Comprobación | Resultado |
+| Prueba | Resultado |
 |---|---|
-| Conjunto gold (672 frases escritas a mano: 512 con un error cada una, 160 correctas) | 512 corregidas, 160 intactas, 0 no detectadas, 0 empeoradas |
-| Falsas alarmas sobre 4 000 frases cotidianas de Tatoeba (reservadas del entrenamiento) | 4 modificadas (0,10 %) |
-| Falsas alarmas sobre 2 000 frases de Wikipedia no tocadas por editores humanos | 11 modificadas (0,55 %) |
-| Estabilidad: repetición del gold con un token extra al inicio de cada frase | 3 frases cambian de resultado |
-| MERLIN (ensayos italianos de aprendices) | corrige aproximadamente el 5 % de los errores anotados; revisión ciega de 120 cambios: 52 % correctos, 13 % inocuos, 34 % erróneos |
+| Conjunto de oro (700 frases escritas a mano: 528 con un error cada una, 172 correctas) | 528 corregidas, 172 intactas, 0 no detectadas, 0 empeoradas |
+| Correcciones erróneas sobre 4 000 frases cotidianas de Tatoeba | dato truncado en la información disponible |
 
-La puntuación gold se obtiene con las protecciones de aplicación de `gector-guards.json`, que forman parte del resultado medido. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo se publica en ONNX fp32 precisamente para ejecutarse sin GPU; el repositorio ocupa 0,5 GB.
-- VRAM estimada: no aplica para el artefacto publicado (inferencia en CPU); no se documenta una variante GPU.
-- GPU recomendadas: no disponibles para este artefacto; el entrenamiento se realizó en una NVIDIA L4.
-- Cabe en GPU de consumo: no se documenta una ruta GPU; el diseño es on-device en CPU.
-- Opciones de despliegue: ONNX Runtime (uso previsto por el autor); cualquier decodificador de estilo GECToR puede consumir los archivos. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no aplica; el modelo está exportado a ONNX fp32 y diseñado para ejecutarse en CPU.
+- GPU recomendadas: no necesarias; el modelo está pensado para CPU. Cualquier GPU compatible con ONNX Runtime podría acelerar la inferencia, pero no es un requisito.
+- Cabe en GPU de consumo: sí, aunque su diseño es para CPU; el tamaño del repositorio es de 0,9 GB.
+- Opciones de despliegue: ONNX Runtime (vía `onnxruntime`), con el script `quickstart.py` proporcionado por el autor; también puede ejecutarse desde la línea de comandos con `python quickstart.py "frase"`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| gector-bert-it | GECToR sobre BERT italiano | it | no disponible | Apache 2.0 | ONNX fp32 | Entrenamiento sintético, orientado a precisión, on-device |
-| GECToR original (grammarly/gector) | GECToR sobre BERT/RoBERTa/etc. | en (principalmente) | no disponible | no disponible en la información | PyTorch | Implementación oficial de referencia; soporta varios encoders |
-| Otros modelos GECToR en Hugging Face | GECToR | variable | no disponible | variable | variable | La búsqueda en Hugging Face devuelve múltiples modelos GECToR sin detalle de especificaciones |
+| `proofbird/gector-bert-it` | GECToR sobre BERT base | italiano | no disponible | Apache 2.0 | ONNX fp32 | Corrección local por ediciones, sin generación |
+| `dbmdz/bert-base-italian-xxl-cased` | BERT base | italiano | no disponible | MIT | safetensors | Modelo base del anterior; no es un corrector por sí mismo |
+| Correctores generativos multilingües (p. ej. basados en LLM) | LLM decoder | varios | variable | variable | safetensors/GGUF | Pueden reescribir y parafrasear; mayor coste computacional y riesgo de cambios no deseados |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los ensayos reales de aprendices son su punto más débil: sobre MERLIN corrige solo alrededor del 5 % de los errores anotados, y de los cambios revisados a ciegas un 34 % resultaron erróneos.
-- Ruido ortográfico intenso y acentos que dependen del significado (`si`/`sì`, `e`/`è` en frases confusas) quedan fuera del alcance de un etiquetador local.
-- Solo cubre italiano; no hay soporte multilingüe.
-- No parafrasea ni reescribe: las ediciones son locales y de alcance limitado.
-- El resultado medido depende de las protecciones de `gector-guards.json`; sin ellas, el rendimiento puede diferir.
-- Riesgo de alucinación bajo en el sentido generativo (no genera texto libre), pero puede proponer ediciones incorrectas en contextos ambiguos, como indica la tasa de error del 34 % en MERLIN.
-- Sesgos: no se documentan sesgos específicos; el entrenamiento usa Wikipedia y Tatoeba, lo que puede infrarrepresentar registros informales o dialectales.
-- Licencia Apache 2.0 para pesos y archivos del repositorio, pero los datos de entrenamiento tienen sus propios términos: Wikipedia bajo CC BY-SA 4.0 y Tatoeba bajo CC BY 2.0 FR; el encoder base es MIT. Conviene revisar la atribución si se redistribuye.
-- El modelo se publicó como trabajo personal de Patrick Hartnett; no hay garantías de mantenimiento ni soporte.
-- No se documentan límites numéricos de contexto ni de longitud de frase; conviene validar el comportamiento con frases largas antes de usarlo en producción.
+- Solo corrige italiano; no soporta otros idiomas.
+- El modelo solo propone ediciones locales y no reescribe ni parafrasea; errores que requieran reestructurar la frase quedan fuera de su alcance.
+- Entrenado exclusivamente con datos sintéticos generados por reglas: puede no cubrir fenómenos de error no contemplados en dichas reglas.
+- No se han publicado métricas de sesgo; al derivar del encoder BERT italiano y de corpus enciclopédicos y parlamentarios, puede heredar sesgos de esas fuentes.
+- Riesgo de alucinación bajo en el sentido generativo (no produce texto libre), pero puede proponer ediciones incorrectas en contextos ambiguos o de registro muy informal.
+- La longitud de contexto no está documentada; para frases muy largas el comportamiento no está especificado.
+- Licencia Apache 2.0: permite uso comercial, pero conviene conservar el aviso de licencia y verificar la licencia del modelo base (MIT) y de los corpus de entrenamiento.
+- Para producción, fijar la revisión `v1.1.2` (`revision="v1.1.2"`) y validar el comportamiento sobre el dominio concreto, ya que el conjunto de oro es reducido (700 frases).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/proofbird/gector-bert-it
-- Encoder base: https://huggingface.co/dbmdz/bert-base-italian-xxl-cased
+- Aplicación Proofbird: https://proofbird.app
+- Demo en el navegador (Hugging Face Space): https://huggingface.co/spaces/proofbird/try-grammar
+- Modelo base: https://huggingface.co/dbmdz/bert-base-italian-xxl-cased
 - Dataset de Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
 - Tatoeba: https://tatoeba.org
-- Implementación oficial de GECToR: https://github.com/grammarly/gector
-- Búsqueda de modelos GECToR en Hugging Face: https://huggingface.co/models?search=GECToR
-- Proofbird: https://proofbird.app
-- MERLIN: https://merlin-platform.eu
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
-- Licencia CC BY 2.0 FR: https://creativecommons.org/licenses/by/2.0/fr/
+- Quickstart en Colab: https://colab.research.google.com/#fileId=https%3A//huggingface.co/proofbird/gector-bert-it/blob/main/quickstart.ipynb
+- Repositorio (revisión fijada): https://huggingface.co/proofbird/gector-bert-it/tree/v1.1.2

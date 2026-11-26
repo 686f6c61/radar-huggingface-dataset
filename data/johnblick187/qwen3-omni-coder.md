@@ -2,108 +2,93 @@
 
 ## Resumen
 
-Qwen3-Omni-Coder es un modelo publicado por el usuario Johnblick187 en Hugging Face, resultado de una fusión (merge) de dos modelos derivados de la familia Qwen3: Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated y Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated. Ambos proceden del trabajo de huihui-ai, que publica versiones "abliterated" (con los mecanismos de rechazo eliminados) de modelos de Qwen. El pipeline declarado es any-to-any, lo que apunta a un modelo multimodal de entrada y salida múltiple, y los tags indican arquitectura MoE de tipo Qwen3MoE / qwen3_omni_moe.
+Qwen3-Omni-Coder es un modelo resultante de la fusión (merge) de dos modelos derivados de la familia Qwen3: `huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated` y `huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated`. Lo publica el usuario Johnblick187 en Hugging Face y combina las capacidades multimodales (pipeline any-to-any) del modelo Omni con la especialización en código del modelo Coder, ambos previamente sometidos a un proceso de "abliteration" que elimina los mecanismos de rechazo y moderación del modelo original.
 
-El repositorio declara 35.259.818.545 parámetros totales (~35,26 B) según los pesos en safetensors, un tamaño de 182,7 GB y licencia Apache 2.0. La nomenclatura de los modelos base (A3B) sugiere una arquitectura de mezcla de expertos con aproximadamente 3 B de parámetros activos por token, aunque el autor no documenta este dato de forma explícita. Los tags incluyen safetensors y GGUF, además de marcadores de "Coder", "Abliterated" y "Uncensored".
+Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con aproximadamente 35.260 millones de parámetros totales, del cual solo una fracción se activa por token (el sufijo A3B de los modelos base indica unos 3.000 millones de parámetros activos). Hereda el contexto extendido y el soporte multilingüe de la familia Qwen3, aunque la model card solo declara inglés como idioma soportado.
 
-La relevancia de esta ficha es limitada y conviene ser transparente al respecto: la propia model card incluye un aviso del autor indicando que el merge no ha sido probado y que no puede verificar que funcione "más allá de llegar al final del proceso de fusión". Con 16 descargas, 0 likes y sin benchmarks publicados, se trata de un artefacto experimental de interés principalmente para quien investigue técnicas de model merging, combinación de capacidades código/multimodal o evaluación de modelos sin alineamiento de seguridad.
+Su relevancia es doble: por un lado, explora la combinación de razonamiento de código con entrada/salida multimodal en un único checkpoint; por otro, al estar "abliterado" y sin censura, resulta de interés para investigadores que estudian el comportamiento de modelos sin alineación, aunque plantea riesgos evidentes para uso en producción. La información técnica publicada por el autor es mínima (una sola frase descriptiva), por lo que muchos detalles deben inferirse de los modelos base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE de tipo Qwen3MoE / qwen3_omni_moe (transformer con mezcla de expertos), según los tags del repositorio |
-| Parametros totales | 35.259.818.545 (~35,26 B), dato de los pesos en safetensors |
-| Parametros activos | no disponible de forma explícita; la nomenclatura de los modelos base (A3B) sugiere ~3 B activos por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible el detalle; el repositorio incluye safetensors y, según los tags, también GGUF |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), familia Qwen3MoE (qwen3_omni_moe) |
+| Parametros totales | 35.259.818.545 (~35,26 mil millones) |
+| Parametros activos | ~3 mil millones (inferido del sufijo A3B de los modelos base) |
+| Longitud de contexto | no disponible en la model card (los modelos base Qwen3 soportan contexto largo; valor exacto no confirmado para este merge) |
+| Tipos de cuantizacion | safetensors (precisión original) y GGUF (según tags del repo) |
 | Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors y GGUF (según tags); tamaño total del repositorio 182,7 GB |
-| Pipeline | any-to-any |
-| Modelos base | huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated y huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF |
+| Pipeline | any-to-any (multimodal entrada/salida) |
+| Tamano del repositorio | 182,7 GB |
+| Modelos base | Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated y Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated |
+| Descargas / likes | 235 descargas, 1 like |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un merge de pesos, no de un modelo entrenado desde cero. No hay información en la model card sobre el método de fusión empleado (por ejemplo, SLERP, TIES, DARE, linear o frankenmerge por capas), ni sobre la proporción de pesos asignada a cada modelo base. Tampoco se documenta ninguna fase adicional de entrenamiento, ajuste fino, RLHF o DPO posterior a la fusión: el modelo hereda, en principio, el alineamiento y las características de sus dos predecesores, con la particularidad de que ambos son versiones "abliterated" en las que se ha intervenido para suprimir las respuestas de rechazo.
+El modelo es un merge de pesos, no un entrenamiento desde cero. Combina dos checkpoints MoE de la familia Qwen3 de aproximadamente 30.000 millones de parámetros totales y ~3.000 millones activos por token: una variante Omni (multimodal, any-to-any) y una variante Coder (especializada en generación de código), ambas ya modificadas por huihui-ai mediante abliteration, una técnica que identifica y suprime las direcciones de activación asociadas al rechazo de peticiones para producir modelos "uncensored".
 
-Los modelos base pertenecen a la familia Qwen3 en su variante MoE de 30B-A3B y cubren dos perfiles distintos: uno orientado a capacidades ómnibus (texto, imagen y audio, pipeline any-to-any) y otro orientado a generación de código. La fusión pretende, por tanto, combinar competencia en código con capacidades multimodales. El dato de 35,26 B de parámetros totales es coherente con el tamaño del modelo ómnibus de la familia, no con el de la variante exclusivamente de código, lo que sugiere que la topología resultante proviene mayoritariamente del primero. No hay información sobre número de tokens de entrenamiento, composición del dataset ni innovaciones técnicas (decodificación especulativa, atención lineal, etc.) atribuibles a este artefacto concreto.
+No se dispone de información sobre la metodología exacta del merge (por ejemplo, si se usó un merge lineal, SLERP, TIES o DARE), ni sobre la proporción de pesos de cada modelo base, ni sobre si hubo un paso posterior de fine-tuning. Tampoco se documentan datos de entrenamiento adicionales, número de tokens, composición del dataset ni fases de RLHF o DPO específicas para este merge; esas características se heredan de los modelos Qwen3 originales, cuyos detalles no se reproducen en la model card. La innovación principal es, por tanto, la combinación de dos especializaciones (código y multimodalidad) en un único checkpoint MoE con licencia permisiva.
 
 ## Capacidades
 
-Advertencia previa: el autor declara explícitamente que el merge no ha sido probado. Las capacidades que se enumeran a continuación son las que cabría esperar por herencia de los modelos base y por los tags declarados, no capacidades verificadas en este repositorio.
-
-- Generación de texto y razonamiento general, heredadas de la familia Qwen3.
-- Generación y completado de código, por herencia del modelo base orientado a código (tag "Coder").
-- Procesamiento multimodal de entrada y salida (pipeline any-to-any), presumiblemente texto, imagen y audio, aunque no está verificado ni documentado en la model card.
-- Respuestas sin mecanismos de rechazo (tags "Abliterated" y "Uncensored"), lo que implica ausencia de las salvaguardas habituales del modelo original.
-- Soporte de tool calling / function calling: no disponible de forma explícita en la información proporcionada; es plausible por herencia de Qwen3, pero no está confirmado.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita.
-- Capacidades multilingües: limitadas a inglés según el campo language del repositorio.
-- Modo "thinking": no disponible de forma explícita en la información proporcionada.
+- Generación de texto y razonamiento general, heredados de la base Qwen3.
+- Generación y razonamiento sobre código, por la fusión con la variante Coder.
+- Procesamiento any-to-any: al derivar de un modelo Omni, se espera soporte de entrada multimodal (texto, imagen y posiblemente audio) y salida multimodal; la model card no detalla qué modalidades exactas conserva el merge.
+- Comportamiento "abliterado" y sin censura: el modelo no aplica los rechazos típicos de los modelos alineados.
+- Soporte multilingüe limitado según la model card al inglés, aunque los modelos Qwen3 base son multilingües; el grado de conservación de otros idiomas tras el merge no está documentado.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue mediante la infraestructura de Hugging Face.
+- Soporte de tool calling y razonamiento multi-paso: no confirmado explícitamente para este merge, aunque es esperable por herencia de Qwen3; no disponible como dato verificado.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipotéticos y presuponen que el merge funciona correctamente, algo que el propio autor no garantiza.
-
-- Asistente de código autohospedado: el tag "Coder" y la procedencia del modelo base de código lo hacen candidato para autocompletado, generación de tests y revisión de pull requests en un entorno interno, con la ventaja de que los pesos son descargables y ejecutables en infraestructura propia bajo licencia Apache 2.0.
-- Automatización de atención al cliente con entrada visual: al declarar pipeline any-to-any, podría recibir capturas de pantalla o diagramas junto al texto del usuario y responder en un único modelo, simplificando la arquitectura de un sistema de soporte técnico.
-- Agentes de automatización con acceso a herramientas: si se confirma la herencia de tool calling de la familia Qwen3, encajaría en orquestadores de agentes que encadenan llamadas a APIs, consultas a bases de datos y ejecución de comandos.
-- Procesamiento de documentación técnica: extracción de información de manuales con diagramas e ilustraciones, combinando comprensión de imagen y generación de texto en un solo paso de inferencia.
-- Investigación sobre model merging: es un caso de uso realista dado el estado del artefacto; sirve como material para estudiar cómo se comportan las fusiones entre un modelo ómnibus y uno especializado en código, y para medir la degradación resultante.
-- Red teaming y evaluación de seguridad: al derivar de modelos abliterated, resulta útil como sujeto de pruebas en estudios sobre eficacia de las intervenciones de alineamiento y sobre la facilidad de recuperar comportamientos no filtrados.
-- Fine-tuning posterior y destilación: con 35,26 B de parámetros totales y ~3 B activos (según nomenclatura de los base), el coste de ajuste fino con LoRA o QLoRA es asumible en hardware de gama alta, lo que permite especializarlo en dominios concretos.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo se comporta un MoE multimodal sin mecanismos de rechazo, comparando sus respuestas con las de los modelos Qwen3 alineados en tareas sensibles.
+- Generación de código en entornos controlados: la fusión con la variante Coder permite usarlo como asistente de programación en pipelines internos donde la ausencia de filtros de contenido sea aceptable y se auditen las salidas.
+- Prototipado de aplicaciones any-to-any: sirve para experimentar con flujos que combinan texto e imagen en un solo modelo MoE de ~35.000 millones de parámetros totales, con un coste de cómputo por token reducido gracias a la activación de ~3.000 millones de parámetros.
+- Evaluación comparativa de merges: útil para investigadores que analizan cómo afecta la fusión de pesos a las capacidades de código y multimodalidad frente a cada modelo base por separado.
+- Despliegue local con cuantización GGUF: el repositorio incluye pesos GGUF, lo que permite ejecutar el modelo en estaciones de trabajo con llama.cpp u Ollama para pruebas offline sin depender de servicios externos.
+- Análisis de sesgos y contenido dañino: al no aplicar rechazos, puede emplearse (con las debidas salvaguardas) para generar corpus de prueba que ayuden a entrenar clasificadores de contenido o filtros de seguridad.
+- Experimentación con agentes autónomos: en entornos de laboratorio, su combinación de código y multimodalidad puede servir para prototipos de agentes que interpretan capturas de pantalla y generan acciones, siempre con supervisión humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente contiene un aviso del autor indicando que el merge no ha sido probado y que no puede verificar su funcionamiento más allá de la finalización del proceso de fusión. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluación, ni comparaciones con los modelos base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor se limita a una frase descriptiva y no incluye métricas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales.
 
 ## Requisitos de hardware
 
-Estimaciones calculadas a partir de los 35,26 B de parámetros totales; no proceden de mediciones publicadas por el autor.
-
-| Precisión | Peso aproximado de los pesos |
-|---|---|
-| bf16 / fp16 | ~70,5 GB |
-| int8 / fp8 | ~35,3 GB |
-| GGUF Q6_K | ~29 GB |
-| GGUF Q5_K_M | ~24,5 GB |
-| GGUF Q4_K_M | ~21 GB |
-
-- VRAM para inferencia en bf16: se necesitan al menos 80 GB, lo que encaja en una A100 80 GB o una H100 80 GB, o en configuraciones multi-GPU con tensor parallelism.
-- VRAM en int8/fp8: alrededor de 35-40 GB, viable en una RTX 6000 Ada (48 GB), L40S (48 GB) o A6000 (48 GB).
-- Cabe en GPU de consumo: en bf16 no cabe en ninguna GPU de consumo actual. Con cuantización Q4_K_M (~21 GB) podría ajustarse en una RTX 4090 o RTX 5090 de 24 GB, aunque con margen muy estrecho para el contexto y con riesgo de offload parcial a RAM del sistema, dado que se trata de un MoE y de un modelo multimodal con codificadores adicionales. Dos RTX 4090 con tensor parallelism ofrecen una alternativa más holgada.
-- Memoria unificada: un Mac Studio con M2 Ultra o M3 Ultra de 64 GB o más podría ejecutar cuantizaciones Q4/Q5 mediante llama.cpp, con throughput limitado por ancho de banda.
-- Opciones de despliegue: vLLM o SGLang para servidores con GPUs de datacenter y soporte MoE; llama.cpp u Ollama para cuantizaciones GGUF en local; TGI como alternativa de servidor. La cobertura real de las capacidades multimodales (imagen, audio) varía mucho entre estos motores y no está confirmada para este merge.
-- Latencia y throughput: no disponible. Al ser un MoE con ~3 B de parámetros activos (según nomenclatura de los modelos base), el throughput por token debería ser sustancialmente mayor que el de un modelo denso de 35 B, pero no hay cifras publicadas para este repositorio.
+- VRAM estimada para inferencia en precisión BF16/FP16: aproximadamente 70 GB solo para los pesos (35,26 mil millones de parámetros × 2 bytes), más overhead de KV cache y activaciones; se recomienda un mínimo de 80 GB.
+- Cuantización GGUF de 8 bits: en torno a 35-40 GB de VRAM, viable en una A100 40 GB o en dos RTX 4090 de 24 GB.
+- Cuantización GGUF de 4 bits: aproximadamente 18-22 GB, lo que permite ejecución en una única RTX 4090 (24 GB) o RTX 3090 con margen ajustado.
+- GPU recomendadas: H100 80 GB o A100 80 GB para precisión completa; A100 40 GB o dos RTX 4090 para 8 bits; RTX 4090, RTX 3090 o RTX 5090 para 4 bits.
+- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; vLLM o TGI para safetensors si la arquitectura MoE multimodal está soportada por dichos frameworks (no confirmado para este merge concreto); endpoints de Hugging Face por el tag `endpoints_compatible`.
+- Latencia y throughput: no disponibles. Al ser un MoE con ~3.000 millones de parámetros activos, el coste por token debería ser inferior al de un modelo denso de 35.000 millones, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Longitud de contexto | Modalidades | Licencia | Notas |
+| Modelo | Parametros totales / activos | Contexto | Multimodal | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3-Omni-Coder (este) | 35,26 B totales; activos no disponibles (~3 B según nomenclatura de los base) | no disponible | any-to-any | apache-2.0 | Merge sin probar, 16 descargas, 0 likes |
-| Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated | no disponible (~35 B según nomenclatura) | no disponible | any-to-any | apache-2.0 (según metadata del repositorio base) | Uno de los dos modelos fusionados; abliterated |
-| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | no disponible (~30 B según nomenclatura, ~3 B activos) | no disponible | texto | apache-2.0 (según metadata del repositorio base) | Segundo modelo fusionado; orientado a código y abliterated |
-| Familia Qwen3-30B-A3B original (Instruct / Coder / Omni) | ~30-35 B totales, ~3 B activos | no disponible en la información proporcionada | texto o any-to-any según variante | apache-2.0 (según metadata de los repositorios) | Modelos con alineamiento de seguridad intacto; referencia para medir el efecto de la abliteration |
+| Qwen3-Omni-Coder (este modelo) | ~35,26 B / ~3 B | no disponible | Sí (any-to-any) | Apache 2.0 | Merge abliterado, sin benchmarks publicados |
+| Qwen3-Coder-30B-A3B-Instruct | ~30 B / ~3 B | contexto largo (familia Qwen3) | No | Apache 2.0 | Modelo oficial de código, alineado |
+| Qwen3-Omni-30B-A3B-Instruct | ~30 B / ~3 B | contexto largo (familia Qwen3) | Sí | Apache 2.0 | Modelo oficial multimodal, alineado |
+| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | ~30 B / ~3 B | contexto largo (familia Qwen3) | No | Apache 2.0 | Base directa, sin fusión multimodal |
 
-No se dispone de datos de rendimiento comparado para ninguno de estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, modalidades y licencia.
+La comparación con los modelos oficiales de Qwen3 es la más relevante: este merge añade multimodalidad al Coder y elimina la alineación, pero carece de evaluaciones que demuestren que conserva el rendimiento de ninguno de los dos modelos base.
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que el merge no ha sido probado y que no puede verificar que funcione más allá de completarse el proceso de fusión. Es un riesgo de primer orden para cualquier uso en producción.
-- No hay benchmarks, evaluaciones cualitativas ni ejemplos de uso publicados. El rendimiento real es desconocido.
-- Los merges de pesos pueden producir degradaciones difíciles de predecir: salidas incoherentes, mezcla de idiomas, pérdida de capacidad de seguir instrucciones o colapso de las capacidades multimodales.
-- El modelo deriva de versiones "abliterated" y está etiquetado como "Uncensored": carece de los mecanismos de rechazo de los modelos originales, lo que implica un riesgo elevado de generar contenido dañino, ilegal o sesgado sin filtro. No es adecuado para aplicaciones orientadas al usuario final sin capas de moderación externas.
-- Los sesgos de los datos de entrenamiento originales de Qwen3 se heredan sin mitigación adicional; la abliteration no reduce estos sesgos, y puede amplificarlos al eliminar respuestas de cautela.
-- Idioma: solo se declara inglés. No hay soporte documentado de castellano ni de otras lenguas, aunque los modelos Qwen3 subyacentes suelen tener cobertura multilingüe amplia; no está confirmado para este repositorio.
-- Longitud de contexto no documentada. Es previsible que herede la ventana de la familia Qwen3 subyacente, pero el autor no la especifica y un merge puede alterar el comportamiento en contextos largos.
-- Riesgo de alucinación: alto y no medido, especialmente en un artefacto sin evaluar y con el alineamiento intervenido.
-- Licencia: Apache 2.0, lo que en principio permite uso comercial. Conviene verificar no obstante las condiciones de los repositorios base de huihui-ai y de los modelos originales de Qwen, así como el cumplimiento de las políticas de la plataforma de destino.
-- Números de adopción muy bajos (16 descargas, 0 likes), sin issues ni discusiones que permitan inferir calidad o estabilidad.
+- Ausencia de benchmarks: no hay evidencia publicada de que el merge preserve las capacidades de código o multimodalidad de los modelos base; los merges de pesos pueden degradar el rendimiento de forma impredecible.
+- Modelo abliterado y sin censura: no aplica rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sexualmente explícito; no es adecuado para aplicaciones de cara al público sin capas adicionales de moderación.
+- Riesgo elevado de alucinación: sin datos de evaluación, no puede descartarse que la fusión haya degradado la fiabilidad factual.
+- Idiomas: la model card solo declara inglés; el soporte de otros idiomas tras el merge no está verificado.
+- Contexto: la longitud exacta de contexto no está documentada para este merge; no debe asumirse la de los modelos base sin comprobación empírica.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume toda la responsabilidad legal y ética sobre las salidas del modelo, incluida la generación de contenido no filtrado.
+- Trazabilidad limitada: el autor no documenta la receta del merge, lo que dificulta reproducir el modelo o auditar su comportamiento.
+- Compatibilidad de despliegue: el soporte de la arquitectura qwen3_omni_moe en frameworks de inferencia de alto rendimiento (vLLM, TGI) no está confirmado para este checkpoint concreto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Johnblick187/Qwen3-Omni-Coder
-- Modelo base 1: https://huggingface.co/huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated
-- Modelo base 2: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
-- La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre sus modelos base: los enlaces obtenidos correspondían a contenido musical sin relación con el tema. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.
+- Modelo base Omni abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated
+- Modelo base Coder abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

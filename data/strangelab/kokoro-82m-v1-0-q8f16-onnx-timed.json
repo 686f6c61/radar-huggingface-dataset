@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "strangelab/kokoro-82m-v1.0-q8f16-onnx-timed",
+  "slug": "strangelab-kokoro-82m-v1-0-q8f16-onnx-timed",
+  "author": "strangelab",
+  "url": "https://huggingface.co/strangelab/kokoro-82m-v1.0-q8f16-onnx-timed",
+  "created_at": "2026-11-26T01:49:48.000Z",
+  "updated_at": "2026-11-26T01:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "style_text_to_speech_2",
+    "kokoro",
+    "offline",
+    "phoneme-timestamps",
+    "text-to-speech",
+    "en",
+    "base_model:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "base_model:quantized:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

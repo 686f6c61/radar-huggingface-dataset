@@ -53,6 +53,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Language modeling",
+      "dataset": "FineWeb-Edu (filtered, held-out validation split, 269,696 tokens)",
+      "metric": "Validation perplexity",
+      "value": 26.94
+    },
+    {
+      "task": "Language modeling",
+      "dataset": "FineWeb-Edu (filtered, held-out validation split, 269,696 tokens)",
+      "metric": "Validation cross-entropy (nats per token)",
+      "value": 3.2936
+    }
+  ],
   "sources": []
 }

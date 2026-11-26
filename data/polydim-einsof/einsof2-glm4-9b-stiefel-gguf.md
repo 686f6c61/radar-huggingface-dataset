@@ -2,87 +2,94 @@
 
 ## Resumen
 
-EINSOF-II GLM-4 9B Stiefel (GGUF) es una cuantización del modelo base `THUDM/glm-4-9b-chat` (GLM-4-9B-Chat, desarrollado por Zhipu AI / THUDM) sobre la que se ha aplicado un adaptador publicado por Polydim-Einsof bajo el nombre `einsof2-glm4-9b-stiefel-adapter`. El repositorio distribuye únicamente pesos en formato GGUF en dos cuantizaciones, Q4_K_M y Q8_0, pensadas para su uso con llama.cpp y Ollama.
+einsof2-glm4-9b-stiefel-gguf es una publicacion de cuantizaciones GGUF del modelo GLM-4-9B-Chat de Zhipu AI (THUDM), distribuida por el usuario Polydim-Einsof bajo el paraguas de un proyecto denominado "Polydim-Einsof". El modelo base es un transformer denso de 9.400 millones de parametros con capacidad conversacional y soporte multilingue, pensado originalmente para generacion de texto, razonamiento y uso como asistente. Esta publicacion concreta no aporta pesos nuevos: empaqueta el modelo base en formato GGUF con cuantizaciones Q4_K_M y Q8_0 para su uso en llama.cpp, Ollama, LM Studio y Text Generation WebUI.
 
-El elemento diferencial que declara el autor es el uso de una retracción polar de orden 4 sobre una variedad de Stiefel S^(D-1) para la composición del adaptador, junto con un componente denominado POLYDIM PMTP integrado en el flujo de llama.cpp. La model card no aporta detalles sobre el dataset de ajuste, el número de tokens de entrenamiento ni la metodología de evaluación, por lo que la mayor parte de las capacidades heredadas deben atribuirse al modelo base GLM-4-9B-Chat.
+La relevancia de esta ficha es doble. Por un lado, permite ejecutar un modelo de ~9.4B en hardware de consumo gracias a la cuantizacion Q4_K_M. Por otro, la model card incluye referencias a un "integrated core" (`qlora_2027_core/`) y a un "telepathy routing via PMTP" que no estan documentados ni verificados, y que deben tratarse con cautela: no hay evidencia publica de que dichos componentes existan en los binarios distribuidos. El repositorio tiene 267 descargas y 0 likes en el momento de la consulta.
 
-El modelo base es un transformer denso de 9.4 mil millones de parámetros con ventana de contexto de 128 000 tokens y soporte multilingüe (chino e inglés principalmente), lo que convierte a esta cuantización en una opción interesante para despliegue local en hardware de consumo. No obstante, el repositorio no incluye benchmarks propios ni documentación de evaluación del adaptador, y la licencia figura como "other" sin texto adicional, lo que exige verificación directa antes de cualquier uso comercial.
+La licencia declarada es Apache 2.0, heredada del modelo base GLM-4-9B-Chat, lo que facilita su uso comercial. No se dispone de informacion sobre idiomas soportados en los metadatos de esta publicacion, aunque el modelo base es conocido por su soporte bilingue chino-ingles con capacidades multilingues adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base GLM-4-9B-Chat); adaptador con retracción polar de orden 4 sobre variedad de Stiefel S^(D-1) |
-| Parametros totales | 9 399 951 360 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la model card (el modelo base GLM-4-9B-Chat soporta 128 000 tokens) |
-| Tipos de cuantizacion | Q4_K_M (5,83 GB) y Q8_0 (9,31 GB) |
-| Idiomas soportados | no disponible en la model card (el modelo base soporta chino e inglés, con multilingüismo parcial) |
-| Licencia | other (sin texto de licencia publicado en el repo) |
-| Formato de pesos | GGUF (compatible con llama.cpp y Ollama) |
+| Arquitectura | Transformer denso (familia GLM-4, decoder-only) |
+| Parametros totales | 9.399.951.360 (~9.4B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en esta publicacion (el modelo base GLM-4-9B-Chat soporta 128K tokens, dato no confirmado en el repo) |
+| Tipos de cuantizacion | Q4_K_M y Q8_0 |
+| Idiomas soportados | no disponible en los metadatos de esta publicacion |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
+| Tamano del repo | 16.3 GB |
+| Modelo base | THUDM/glm-4-9b-chat (tambien referenciado como zai-org/glm-4-9b-chat) |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo resultante es un transformer denso de 9.4 mil millones de parámetros derivado de GLM-4-9B-Chat mediante la aplicación de un adaptador. El autor describe la técnica de adaptación como una retracción polar de orden 4 sobre una variedad de Stiefel S^(D-1), un enfoque de optimización restringida a matrices con columnas ortonormales que se ha explorado en la literatura como alternativa a LoRA para preservar la geometría de los pesos durante el ajuste fino. El adaptador se publica por separado en `Polydim-Einsof/einsof2-glm4-9b-stiefel-adapter`.
+El modelo subyacente es GLM-4-9B-Chat, un transformer decoder-only denso de 9.4B parametros desarrollado por Zhipu AI / THUDM. La familia GLM-4 emplea atencion estandar con RoPE y una cabeza de salida compartida, y el checkpoint chat ha pasado por un proceso de alineacion conversacional (SFT y preferencia) segun la documentacion publica del modelo base. Esta publicacion no aporta informacion adicional sobre el dataset de entrenamiento, el numero de tokens vistos ni las tecnicas de RLHF/DPO aplicadas; esos datos solo estarian disponibles en la model card original de THUDM.
 
-La model card menciona un framework propio denominado "POLYDIM PMTP" integrado con llama.cpp, pero no detalla su función, el dataset de ajuste, el número de tokens vistos, ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifica si el adaptador se aplicó sobre los pesos completos o solo sobre determinadas capas. El tokenizador se declara alineado con `zai-org/glm-4-9b-chat-hf` con un vocabulario de 151 552 entradas, lo que garantiza compatibilidad con el ecosistema del modelo base.
+La aportacion de esta publicacion es exclusivamente de formato: conversion a GGUF y cuantizacion en dos variantes. La model card menciona un directorio `qlora_2027_core/` para integracion downstream y un "telepathy routing via PMTP", pero no se documenta su contenido, no se verifica en los binarios y no hay publicacion tecnica que lo respalde. A efectos practicos, debe considerarse una cuantizacion estandar de GLM-4-9B-Chat sin modificaciones arquitectonicas demostradas.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada de GLM-4-9B-Chat.
-- Razonamiento y matemáticas de nivel medio, sujeto a las capacidades del modelo base.
-- Generación de código y soporte de tool calling / function calling (capacidad del modelo base GLM-4-9B-Chat).
-- Soporte de agentes y razonamiento multi-paso, según las capacidades del modelo base.
-- Capacidades multilingües limitadas a las del modelo base (chino e inglés principalmente).
-- Ejecución local vía llama.cpp y Ollama gracias al formato GGUF.
-- No se documentan capacidades adicionales específicas del adaptador (thinking mode, visión, audio) en la model card.
+- Generacion de texto conversacional multi-turno, heredada de GLM-4-9B-Chat.
+- Razonamiento y respuesta a instrucciones en formato chat.
+- Generacion de codigo y matematicas basicas (capacidad del modelo base, no validada en esta cuantizacion).
+- Soporte de tool calling / function calling segun el modelo base (no verificado en esta publicacion).
+- Capacidades multilingues del modelo base, principalmente chino e ingles; el resto de idiomas no esta documentado en este repo.
+- Ejecucion local via llama.cpp, Ollama, LM Studio y Text Generation WebUI.
+- No se documentan capacidades de vision, audio ni modo "thinking" explicito en esta publicacion.
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo: con la cuantización Q4_K_M (5,83 GB) el modelo cabe en GPUs de consumo con 8 GB de VRAM, lo que permite ejecutar un modelo de 9B en hardware asequible sin depender de la nube.
-- Asistente conversacional en el borde: la naturaleza GGUF y la compatibilidad con Ollama facilitan integrar el modelo en aplicaciones de escritorio o entornos sin conectividad.
-- Prototipado de agentes con tool calling: al heredar las capacidades de function calling de GLM-4-9B-Chat, puede emplearse para validar flujos de agente antes de escalar a modelos mayores.
-- Generación de código en local: útil para autocompletado o revisión de código en entornos con requisitos de privacidad, siempre que se valide la calidad frente al modelo base.
-- Investigación sobre adaptación geométrica: el repositorio sirve como artefacto reproducible para estudiar el efecto de la retracción polar sobre Stiefel en el ajuste fino de transformers.
-- Evaluación comparativa de cuantizaciones: disponer de Q4_K_M y Q8_0 permite medir la degradación de calidad y el ahorro de memoria en un mismo modelo.
+- Asistente conversacional local en estacion de trabajo: con la variante Q4_K_M (~5-6 GB) se puede desplegar un chatbot multi-turno en una GPU de consumo de 8 GB o en CPU con llama.cpp, sin dependencia de la nube.
+- Prototipado rapido de aplicaciones de texto: la compatibilidad con Ollama y LM Studio permite integrar el modelo en un backend local en minutos para validar flujos de producto antes de migrar a una API.
+- Generacion de codigo en entornos con requisitos de privacidad: al ejecutarse en local, el codigo del usuario no sale de la maquina, lo que encaja en equipos con politicas estrictas de confidencialidad.
+- Procesamiento por lotes de documentos: la ventana de contexto del modelo base (hasta 128K segun THUDM, no confirmada aqui) permite resumir o extraer informacion de documentos largos en pipelines offline.
+- Educacion y experimentacion: sirve como modelo de referencia para comparar cuantizaciones Q4_K_M vs Q8_0 en terminos de calidad y velocidad en el mismo hardware.
+- Integracion en herramientas de escritorio: al ser GGUF, se puede empaquetar dentro de aplicaciones de escritorio con llama.cpp como motor embebido, sin GPU dedicada.
+- Evaluacion de la publicacion "Polydim-Einsof": util para investigadores que quieran verificar de forma independiente si los binarios contienen los componentes adicionales mencionados en la model card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones con el modelo base, por lo que no es posible cuantificar el efecto del adaptador ni la degradación introducida por las cuantizaciones Q4_K_M y Q8_0.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta publicacion no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con otras cuantizaciones. Cualquier cifra de rendimiento del modelo base deberia consultarse en la model card original de THUDM/glm-4-9b-chat, no en este repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6-7 GB para Q4_K_M (pesos de 5,83 GB más overhead de contexto) y 10-11 GB para Q8_0 (pesos de 9,31 GB más overhead).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para despliegues de mayor concurrencia.
-- Compatibilidad con GPU de consumo: sí; Q4_K_M cabe en GPUs de 8 GB y Q8_0 requiere al menos 12 GB para contextos moderados.
-- Opciones de despliegue: llama.cpp y Ollama (soportados de forma nativa por el formato GGUF); vLLM y TGI no soportan GGUF de forma directa sin conversión.
-- Latencia y throughput: no disponibles; no se han publicado mediciones en la información proporcionada.
+- VRAM estimada para Q4_K_M: aproximadamente 5.5-6.5 GB de pesos mas overhead de contexto; cabe en GPUs de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070) y en Apple Silicon con 16 GB unificados.
+- VRAM estimada para Q8_0: aproximadamente 10-11 GB de pesos; requiere GPUs de 12 GB o mas (RTX 3060 12GB, RTX 4070 Ti, RTX 4080) o 16 GB unificados en Mac.
+- GPU recomendadas para produccion: A100 40GB, H100, L40S para servir con vLLM/TGI (nota: vLLM y TGI no consumen GGUF de forma nativa; para GGUF usar llama.cpp server u Ollama).
+- Cabe en GPU de consumo: si, tanto Q4_K_M como Q8_0 en funcion de la VRAM disponible.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, Text Generation WebUI (oobabooga), llama-cpp-python.
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion. Como referencia cualitativa, Q4_K_M sera notablemente mas rapido que Q8_0 en el mismo equipo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| EINSOF-II GLM-4 9B Stiefel (este) | 9,4B | no disponible (base: 128k) | GGUF | other | Adaptador Stiefel; sin benchmarks publicados |
-| GLM-4-9B-Chat (base) | 9,4B | 128k | safetensors | licencia GLM-4 propia | Modelo original de Zhipu AI; benchmarks publicados por el autor |
-| Qwen2.5-7B-Instruct | 7,6B | 128k | safetensors, GGUF | Apache 2.0 | Alternativa abierta con amplio ecosistema de cuantizaciones |
-| Llama-3.1-8B-Instruct | 8,0B | 128k | safetensors, GGUF | Llama 3.1 Community License | Referencia habitual en el segmento 7-9B |
+| einsof2-glm4-9b-stiefel-gguf (esta publicacion) | 9.4B | no disponible (base: 128K) | Apache 2.0 | GGUF Q4_K_M / Q8_0 | Cuantizacion de terceros, sin benchmarks propios |
+| THUDM/glm-4-9b-chat (original) | 9.4B | 128K | Apache 2.0 (con terminos adicionales del modelo base) | safetensors | Modelo oficial, con benchmarks publicados por THUDM |
+| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamano similar, ampliamente cuantizada |
+| Llama-3.1-8B-Instruct | 8.0B | 128K | Llama 3.1 Community License | safetensors, GGUF | Referencia del segmento 8B, licencia con restricciones de uso |
+
+La comparativa se limita a parametros, contexto y licencia; no se dispone de datos de rendimiento de esta publicacion para comparar calidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de que el adaptador mejore al modelo base; podría degradarlo.
-- Licencia "other" sin texto: impide determinar a priori si se permite uso comercial; es imprescindible contactar con el autor o revisar la licencia del modelo base GLM-4-9B-Chat.
-- Model card mínima: no se documentan datos de entrenamiento, hiperparámetros del adaptador ni metodología de evaluación.
-- Riesgo de alucinación: inherente al modelo base, no cuantificado para esta variante.
-- Idiomas: la model card no declara idiomas; el modelo base está optimizado para chino e inglés, con rendimiento inferior en castellano.
-- Contexto: aunque el base soporta 128k tokens, no se confirma que la cuantización y el adaptador preserven esa ventana; debe validarse empíricamente.
-- Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo día, sin comunidad ni soporte; no recomendable para producción sin evaluación previa.
-- Compatibilidad: el componente "POLYDIM PMTP" sugiere posibles dependencias de un fork de llama.cpp no documentado; verificar antes de desplegar.
+- La model card menciona componentes (`qlora_2027_core/`, "telepathy routing via PMTP") sin documentacion tecnica ni evidencia de que esten presentes en los binarios; tratalos como no verificados.
+- No hay benchmarks publicados para esta cuantizacion; la calidad real de Q4_K_M frente a Q8_0 no esta medida en el repo.
+- Riesgo de alucinacion inherente al modelo base, no mitigado por la cuantizacion.
+- Sesgos del modelo base GLM-4-9B-Chat (principalmente entrenado en chino e ingles) pueden persistir y amplificarse en dominios poco representados.
+- Idiomas soportados no declarados en esta publicacion; no asumir cobertura multilingue amplia sin validacion.
+- Aunque la licencia es Apache 2.0, conviene revisar los terminos del modelo base THUDM/glm-4-9b-chat por si imponen condiciones adicionales.
+- Publicacion de terceros con 0 likes y 267 descargas: no hay senales de comunidad que validen la integridad de los binarios; verifica checksums antes de desplegar en produccion.
+- vLLM y TGI no cargan GGUF de forma nativa; para servir en produccion con esos motores habria que usar el modelo base en safetensors.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Polydim-Einsof/einsof2-glm4-9b-stiefel-gguf
-- Adaptador: https://huggingface.co/Polydim-Einsof/einsof2-glm4-9b-stiefel-adapter
-- Modelo base (THUDM): https://huggingface.co/THUDM/glm-4-9b-chat
-- Modelo base (tokenizador alineado): https://huggingface.co/zai-org/glm-4-9b-chat-hf
-- Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
+- Modelo base en Hugging Face: https://huggingface.co/THUDM/glm-4-9b-chat
+- Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai
+- Text Generation WebUI: https://github.com/oobabooga/text-generation-webui

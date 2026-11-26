@@ -2,100 +2,107 @@
 
 ## Resumen
 
-Inkling-2-Mini-Weight-Space-Programming es un paquete de adaptadores LoRA publicado por el usuario jstarks sobre el modelo base `thinkingmachines/Inkling-2-Mini`. No es un modelo entrenado desde cero, sino una intervención de "programación en espacio de pesos" (weight-space programming) que modifica el comportamiento del modelo base mediante dos adaptadores LoRA de rango 8, sin descenso de gradiente, sintetizados en 30,8 segundos y empaquetados en formato GGUF para su uso con llama.cpp.
+Inkling-2-Mini-Weight-Space-Programming es una adaptación del modelo base thinkingmachines/Inkling-2-Mini, desarrollada por el usuario jstarks, que aplica una técnica denominada Weight-Space Programming (WSP) para modificar el comportamiento del modelo sin recurrir a entrenamiento por descenso de gradiente. La propuesta consiste en dos adaptadores LoRA de rango 8 (6,32 MB en total, formato GGUF) que se aplican sobre una cuantización UD-IQ3_XXS del modelo base, generados en 30,8 segundos de forma cerrada y determinista.
 
-El modelo base Inkling-2-Mini es una arquitectura MoE con transformer "looped": 24 capas físicas con un núcleo intermedio repetido 3 veces (capas [6, 18) → 48 pasadas lógicas), 128 expertos enrutados, convoluciones causales cortas de 4 taps (`attn_post_conv` / `ffn_post_conv`), `attn_res` y softcapping de logits finales a 30,0. Los adaptadores de este repo actúan únicamente sobre dos familias de tensores (`blk.17.loop_mlp_gain.weight` y `blk.23.attn_output.weight`, junto con `output.weight`) para inducir un comportamiento de "cierre de razonamiento" (thinking-close) y de "acción terminal" (term-action) en tareas concretas.
+El modelo base es una arquitectura MoE con transformer "loopeado": 24 capas físicas con un núcleo central repetido 3 veces (48 pasadas lógicas), 128 expertos enrutados, convoluciones causales cortas de 4 taps y softcapping de logits final a 30,0. El modelo completo tiene 26.070.390.272 parámetros y se distribuye principalmente como cuantización GGUF de ~10,86 GiB que el runtime descarga automáticamente en el primer arranque.
 
-La relevancia de esta ficha es doble: por un lado documenta una técnica de interpretabilidad mecanicista aplicada (steering selectivo en fronteras de token con `TOK_END_MSG = 200010` y hot-swap en ~0,7 ms); por otro, demuestra que adaptadores de 6,32 MB pueden recuperar el throughput completo del servidor (49,4 tok/s de mediana) frente a stacks de 8 adaptadores de 20,80 MB que degradan la decodificación a 35,2 tok/s. El resultado reportado es 136/155 tareas (87,7 %) frente a 133/155 (85,8 %) del base.
+La relevancia de esta ficha reside en su enfoque: demuestra que es posible desplazar la frontera de razonamiento (thinking cutoff) y mejorar el comportamiento agéntico (tool calling, terminal, nl2bash) mediante edición selectiva de pesos en lugar de fine-tuning, con un coste de cómputo prácticamente nulo y manteniendo la licencia Apache 2.0 del modelo original.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (rank=8) sobre transformer MoE "looped" (Inkling-2-Mini: 24 capas físicas, núcleo [6,18) repetido 3×, 128 expertos enrutados, n_shared_experts=0) |
-| Parametros totales | 1.669.632 (según safetensors del repo de adaptadores); el modelo base completo no se aloja en este repo |
-| Parametros activos | no disponible (el modelo base es MoE con 128 expertos enrutados; el número de expertos activos por token no se especifica) |
-| Longitud de contexto | 8192 tokens (configuración de referencia `-c 8192`); la longitud máxima nativa del modelo base no se indica |
-| Tipos de cuantizacion | Adaptadores en GGUF (rank=8); modelo base en `UD-IQ3_XXS` (10,86 GiB) según unsloth; KV cache `q8_0` (`-ctk q8_0 -ctv q8_0`) |
+| Arquitectura | Transformer MoE con núcleo loopeado 3× (24 capas físicas, 48 pasadas lógicas), 128 expertos enrutados, n_shared_experts=0, convoluciones causales cortas de 4 taps (attn_post_conv / ffn_post_conv), attn_res, softcapping de logits final a 30,0 |
+| Parámetros totales | 26.070.390.272 (modelo base); adaptadores WSP: 6,32 MB en total |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 8192 tokens (configuración de referencia del runtime; contexto nativo del base no disponible) |
+| Tipos de cuantización | UD-IQ3_XXS (base GGUF, 10,86 GiB); adaptadores en GGUF rango 8; tensores modificados en F32, F16 y Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (adaptadores: `wsp_lite_think_close.gguf` 3214,5 KB y `wsp_lite_term_action.gguf` 3261,5 KB); safetensors para los 1.669.632 parámetros del repo |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (adaptadores LoRA GGUF + modelo base GGUF); repo con safetensors del base referenciado |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Inkling-2-Mini emplea una arquitectura MoE con transformer "looped": 24 capas físicas donde el núcleo intermedio (capas 6 a 18) se ejecuta tres veces, dando 48 pasadas lógicas. Incorpora 128 expertos enrutados sin expertos compartidos (`n_shared_experts=0`), convoluciones causales cortas de 4 taps tras atención y tras FFN (`attn_post_conv` / `ffn_post_conv`), conexiones residuales de atención (`attn_res`) y softcapping de logits finales a 30,0.
+El modelo base Inkling-2-Mini emplea una arquitectura MoE con un núcleo central de capas repetido tres veces (capas físicas [6, 18) ejecutadas como 48 pasadas lógicas), 128 expertos enrutados sin expertos compartidos, y convoluciones causales cortas de 4 taps en las rutas de atención y FFN. Incluye además mecanismos de attn_res y softcapping de logits final a 30,0.
 
-El entrenamiento de este repo no usa descenso de gradiente: los dos adaptadores LoRA de rango 8 se sintetizan de forma cerrada ("closed-form") en 30,8 segundos mediante programación en espacio de pesos en dos fases. La fase 1 induce el cierre de razonamiento (`wsp_lite_think_close.gguf`, con `null_leak=3,085 %`) y la fase 2 induce la acción terminal (`wsp_lite_term_action.gguf`, con `null_leak=2,831 %`). El autor realizó un sondeo de las 10 familias de tensores compatibles con LoRA en llama.cpp y seleccionó las dos de mayor apalancamiento sin penalizar la inferencia: `blk.17.loop_mlp_gain.weight` (|Δ logprob| = 0,059719, 46,26 tok/s) y `blk.23.attn_output.weight` (0,024330, 47,30 tok/s), descartando `ffn_down_exps` (18,00 tok/s) por su sobrecarga. El steering se aplica selectivamente solo a `nl2bash_single`, `terminal_episode` y `stem_cutoff_guard`; el resto pasa por `/v1/chat/completions` con escalas LoRA a 0,0.
+La innovación de esta ficha no está en el entrenamiento del base, sino en el procedimiento WSP: los dos adaptadores se sintetizan en 30,8 segundos mediante una formulación cerrada de dos fases (Phase-1 / Phase-2) que actúa sobre fronteras de token (TOK_END_MSG = 200010) para desplazar el límite de razonamiento y reforzar acciones de terminal. No hay descenso de gradiente ni dataset de entrenamiento en el sentido habitual. Se identificaron las familias de tensores con mayor apalancamiento downstream mediante sondeo: blk.17.loop_mlp_gain.weight (|Δ logprob| = 0,059719, 46,26 tok/s) y blk.23.attn_output.weight (0,024330, 47,30 tok/s), descartando los tensores MoE 3D ffn_down_exps por su coste (18,00 tok/s). El resultado son 4 pares de tensores en 2 adaptadores de rango 8, con null_leak de 3,085 % y 2,831 % respectivamente. Adicionalmente se publica un modelo "horneado" (Inkling-2-Mini-WSP-UD-IQ3_XXS.gguf, 11,0318 GiB) en el que solo 3 tensores difieren del upstream (731/734 idénticos byte a byte), usando el preset estático static_0.65_0.80 (s_think=0,65, s_term=0,8).
 
 ## Capacidades
 
-- Generación de texto conversacional y respuesta a preguntas generales en modo passthrough.
-- Razonamiento con control de frontera de pensamiento: cierre de bloques de razonamiento mediante steering en `TOK_END_MSG = 200010`.
-- Tool calling y enrutamiento multi-herramienta (evaluado con BFCL, incluida irrelevancia `EST_BFCL_IRR 15/15`).
-- Agentes de terminal: generación de comandos bash (`nl2bash`), episodios de terminal (`terminal_episode`) y ejecución multi-paso en WSL2 (`tbench10`).
-- Razonamiento matemático (GSM8K, Math-500) y STEM (MMLU-Pro, `STEM_MMLU_4C 15/15`).
-- Modo de dos fases con hot-swap de adaptadores en ~0,7 ms sin recargar el modelo.
-- Conmutación A/B a base sin descargar adaptadores (`--mode base`, escalas LoRA a 0,0).
-- Servidor compatible con OpenAI (`/v1/chat/completions`) y chat interactivo por terminal.
-- Capacidades multilingües: no disponibles.
+- Generación de texto conversacional y razonamiento multi-step.
+- Razonamiento matemático y STEM (evaluado en GSM8K, MATH-500, MMLU-Pro y un subconjunto STEM de 45 tareas).
+- Tool calling y function calling, con soporte de enrutamiento multi-herramienta y turn-2 JSON.
+- Comportamiento agéntico en terminal: generación de comandos bash (nl2bash) y episodios de terminal (terminal_episode), con guardia de corte STEM (stem_cutoff_guard).
+- Control selectivo de fase de razonamiento: workloads no guiados pasan por /v1/chat/completions nativo con escalas LoRA a 0,0; solo nl2bash_single, terminal_episode y stem_cutoff_guard entran en steering de frontera de token.
+- Hot-swap de adaptadores en ~0,7 ms.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo base con contexto de 8192 tokens y el modo passthrough (escalas LoRA a 0,0) permite gestionar conversaciones multi-turno sin que el steering interfiera en QA general ni en el enrutamiento de herramientas.
-- Generación de comandos bash en producción: el adaptador `wsp_lite_term_action.gguf` induce la acción terminal en `nl2bash_single`, útil para asistentes de CLI que traducen lenguaje natural a comandos, con 15/20 en `EST_NL2BASH`.
-- Agentes de terminal autónomos: el modo `terminal_episode` aplica la fase 2 para forzar la emisión de comandos, con 6/10 en `tbench10` en WSL2 y `zero_cmd_tasks = 0` (ninguna tarea sin comando emitido).
-- Razonamiento matemático y STEM con control de truncamiento: el adaptador `think_close` elimina los cortes a mitad de pensamiento (`0` cutoffs frente a 3 del base) en tareas STEM, adecuado para pipelines de resolución de problemas que no toleran respuestas incompletas.
-- Despliegue en GPU de consumo: con `-ngl 99 --n-cpu-moe 4 -c 8192 -ctk q8_0 -ctv q8_0` cabe en 11.364 MiB de VRAM (pico 11.803 MiB), lo que permite servir el modelo en una RTX 4070 Ti de 12 GB con 49,4 tok/s de mediana.
-- Investigación en interpretabilidad mecanicista: el repo incluye scripts reproducibles y un runtime que permite aislar el efecto de cada adaptador sobre familias de tensores concretas, útil para estudiar cómo el steering en espacio de pesos altera el comportamiento sin reentrenar.
-- Enrutamiento multi-herramienta en agentes: el modo passthrough preserva `EST_BFCL_IRR 15/15` y el enrutamiento multi-tool, adecuado para orquestadores que deciden qué función invocar sin activar el steering.
+- Automatización de operaciones en terminal: el modelo puede generar y ejecutar comandos bash en episodios multi-turno, con la guardia stem_cutoff_guard reduciendo cortes prematuros de razonamiento; adecuado para agentes de shell en entornos WSL2 o Linux.
+- Asistencia a desarrolladores en pipelines CI/CD: el soporte de tool calling y turn-2 JSON permite integrar el modelo como paso de generación de comandos o scripts dentro de un runner, manteniendo el modo passthrough sin sobrecarga de adaptadores.
+- Enrutamiento multi-herramienta en asistentes: con BFCL irrelevance a 15/15 en modo passthrough, el modelo puede decidir cuándo no invocar ninguna herramienta, lo que reduce llamadas espurias en orquestadores de agentes.
+- Razonamiento STEM con control de corte: para tareas de matemáticas y ciencia donde el modelo base tendía a cortar el "thinking" (3 cutoffs en el base), la variante WSP elimina esos cortes en el conjunto stem45, útil en tutoría automática o resolución de problemas.
+- Evaluación de mecanística de interpretabilidad: los adaptadores y scripts reproducibles permiten estudiar cómo pequeños desplazamientos en tensores concretos (loop_mlp_gain, attn_output) alteran el comportamiento agéntico, como banco de pruebas para investigación en interpretabilidad.
+- Despliegue en hardware de consumo: con 11.364 MiB de VRAM y ~49,4 tok/s de decodificación mediana en una RTX 4070 Ti de 12 GB, es viable para prototipos locales de agentes sin GPU de datacenter.
+- Fine-tuning ligero sin gradientes: el procedimiento WSP en 30,8 s sirve como alternativa rápida a LoRA clásico cuando se busca ajustar fronteras de razonamiento o estilo de acción sin reentrenar.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor con `eff=0.2, temp=0.0` sobre 155 tareas:
+Resultados publicados por el autor (RTX 4070 Ti 12 GB, eff=0,2, temp=0,0):
 
-| Configuracion | Adaptadores y tamano | 155 tareas | agent100 (30 hold + 70 est) | stem45 | tbench10 WSL2 | cut_mid_think | Decodificacion (tok/s) |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Base (scales=0) | 0 (0 MB) | 133/155 (85,8 %) | 89/100 (27/30 · 62/70) | 39/45 (cut=3) | 5/10 (zcmd=1) | 7/155 | 47,8 (media agent100) |
-| 8-Adapter Multi-Site V2 | 8 (20,80 MB) | 133/155 (85,8 %) | 89/100 (26/30 · 63/70) | 39/45 (cut=0) | 5/10 (zcmd=1) | 0/155 | 35,2 med / 37,7 media |
-| Lightweight 2-Adapter | 2 (6,32 MB) | 136/155 (87,7 %, +3) | 91/100 (+2) | 39/45 (cut=0) | 6/10 (60,0 %, +1) | 0/155 | 49,4 med / 47,5 media |
+| Conjunto | Base | 8-Adapter V2 | 2-Adapter WSP lite | Modelo horneado |
+|---|---|---|---|---|
+| Total 155 tareas | 133/155 (85,8 %) | 133/155 (85,8 %) | 136/155 (87,7 %, +3) | 135/155 (87,1 %, +2) |
+| agent100 | no disponible | no disponible | 91/100 (+2) | 90/100 |
+| stem45 | no disponible | no disponible | 39/45 | 39/45 |
+| tbench10 (WSL2) | 6/10 con zcmd=1 | 6/10 con zcmd=1 | 6/10 (60,0 %, +1), zero_cmd_tasks=0 | 6/10 con zcmd=1 |
+| EST_GSM8K | no disponible | no disponible | 20/20 | no disponible |
+| EST_BFCL_IRR | 15/15 | 15/15 | 15/15 | no disponible |
+| EST_NL2BASH | no disponible | no disponible | 15/20 | no disponible |
+| STEM_MMLU_4C | no disponible | no disponible | 15/15 (100,0 %) | no disponible |
+| VAL_24 (disjunto) | no disponible | no disponible | no disponible | 18/24 (75,0 %) |
 
-Desglose del 2-Adapter: `EST_GSM8K 20/20`, `EST_BFCL_IRR 15/15`, `EST_NL2BASH 15/20`, `STEM_MMLU_4C 15/15 (100,0 %)`, `zero_cmd_tasks = 0`. Throughput en `agent100`: 50,1 tok/s; passthrough sin steering: 50,3 tok/s.
+Rendimiento de decodificación: 49,4 tok/s mediana (50,1 tok/s en agent100, 47,5 tok/s media) con los 2 adaptadores; 34,0 tok/s mediana en el modelo horneado; 35,2 tok/s mediana con 8 adaptadores. Paridad de logits top-1 verificada en 3/3 con |Δ top1 logprob| máximo de 0,00067.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 11.364 MiB en uso, 11.803 MiB de pico con el GGUF base `UD-IQ3_XXS` (10,86 GiB) más KV cache `q8_0` a 8192 tokens.
-- GPU de referencia del autor: RTX 4070 Ti de 12 GB, con `-ngl 99 --n-cpu-moe 4` (4 capas MoE descargadas a CPU).
-- Cabe en GPU de consumo de 12 GB; para GPUs de 8 GB no se reportan configuraciones válidas.
-- Despliegue: llama.cpp (`llama-server` de Unsloth o mainline con soporte `general.architecture = inkling2`), servidor compatible con OpenAI en `http://127.0.0.1:8080/v1`; no se mencionan vLLM, TGI ni Ollama.
-- Throughput: 49,4 tok/s de mediana (50,1 tok/s en `agent100`, 47,5 tok/s de media) con los dos adaptadores; 47,8 tok/s en base.
-- Hot-swap de adaptadores en ~0,7 ms; el GGUF base se descarga automáticamente en el primer arranque.
+- VRAM estimada: 11.364 MiB cargado y 11.803 MiB pico con los 2 adaptadores lite (base UD-IQ3_XXS); 11.594 MiB cargado y 11.924 MiB pico con el modelo horneado.
+- GPU recomendadas: RTX 4070 Ti 12 GB verificada; cualquier GPU con ≥12 GB de VRAM para la cuantización IQ3_XXS. Para cuantizaciones mayores se requiere más VRAM (no disponible el detalle).
+- Cabe en GPU de consumo: sí, en RTX 4070 Ti 12 GB y modelos con VRAM equivalente o superior.
+- Opciones de despliegue: llama.cpp / llama-server (verificado con --jinja -np 1 -c 8192 -ctk q8_0 -ctv q8_0 -ngl 99 --n-cpu-moe 4 --fit off), endpoint /v1/chat/completions compatible, runtime propio run_inkling2_lite.py. vLLM, TGI y Ollama: no disponible.
+- Latencia y throughput: ~49,4 tok/s mediana de decodificación con 2 adaptadores; 34,0 tok/s con modelo horneado; hot-swap de adaptadores en ~0,7 ms; descarga automática del GGUF base (~10,86 GiB) en el primer arranque.
 
 ## Comparativa con modelos similares
 
-| Configuracion | Parametros del adaptador | Contexto | 155 tareas | Licencia | Formato |
-|---|---:|---:|---:|---|---|
-| Lightweight 2-Adapter (este repo) | 1.669.632 (6,32 MB) | 8192 | 136/155 (87,7 %) | apache-2.0 | GGUF |
-| 8-Adapter Multi-Site V2 (mismo autor) | no disponible (20,80 MB) | 8192 | 133/155 (85,8 %) | apache-2.0 | GGUF |
-| Base Inkling-2-Mini (scales=0) | 0 | 8192 | 133/155 (85,8 %) | apache-2.0 | GGUF / safetensors |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Rendimiento publicado |
+|---|---|---|---|---|---|
+| Inkling-2-Mini (base) | 26.070.390.272 | no disponible | Apache 2.0 | MoE loopeado 3× | 133/155 (85,8 %) |
+| Inkling-2-Mini WSP 2-Adapter (esta ficha) | 26.070.390.272 + 6,32 MB adaptadores | 8192 (config. referencia) | Apache 2.0 | WSP sobre MoE loopeado | 136/155 (87,7 %) |
+| Inkling-2-Mini WSP 8-Adapter V2 | 26.070.390.272 + 20,80 MB adaptadores | 8192 (config. referencia) | Apache 2.0 | WSP multi-site | 133/155 (85,8 %) |
+| Inkling-2-Mini WSP horneado | 26.070.390.272 (3 tensores modificados) | 8192 (config. referencia) | Apache 2.0 | WSP estático | 135/155 (87,1 %) |
 
-No se dispone de comparación con modelos de la misma categoría fuera del ecosistema Inkling-2-Mini en la información proporcionada.
+No se dispone de comparación con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repo contiene solo los adaptadores (1.669.632 parámetros, ~32 MiB con scripts y tokenizer); el modelo base debe descargarse por separado desde `unsloth/Inkling-2-Mini-GGUF`.
-- Requiere un `llama-server` con soporte de la arquitectura `inkling2`; versiones sin ese soporte no cargarán el modelo.
-- El steering solo se aplica a tres flujos (`nl2bash_single`, `terminal_episode`, `stem_cutoff_guard`); fuera de ellos el comportamiento es el del base.
-- `null_leak` de 3,085 % y 2,831 % en los adaptadores indica una fuga no nula respecto al comportamiento base.
-- Los benchmarks son autoinformados por el autor, con `eff=0.2, temp=0.0`, y mezclan tareas "hold" y "est"; no se han validado de forma independiente.
-- El rendimiento en `tbench10` es 6/10 (60 %), lo que deja 4 tareas fallidas en entornos de terminal reales.
-- Idiomas soportados no documentados; no se garantiza cobertura multilingüe.
-- Riesgo de alucinación y sesgos del modelo base no evaluados en esta ficha.
-- Licencia apache-2.0 permite uso comercial, pero el modelo base y el GGUF de unsloth deben verificarse por separado.
+- Los adaptadores dependen de la cuantización UD-IQ3_XXS concreta de unsloth/Inkling-2-Mini-GGUF; no se garantiza su comportamiento con otras cuantizaciones.
+- El steering selectivo solo se activa en nl2bash_single, terminal_episode y stem_cutoff_guard; el resto de workloads opera en passthrough, por lo que las mejoras no son generales.
+- El modelo horneado modifica solo 3 tensores (blk.17.loop_mlp_gain.weight, blk.23.attn_output.weight, output.weight); el resto es idéntico al upstream, lo que limita el alcance del cambio.
+- Se reportan null_leak de 3,085 % y 2,831 % en los adaptadores, lo que indica cierta fuga de comportamiento nulo que puede afectar a tareas fuera de distribución.
+- Riesgo de alucinación y sesgos: no se documentan en la información disponible; deben asumirse los del modelo base.
+- Idiomas soportados: no disponible; no se garantiza cobertura multilingüe.
+- Licencia Apache 2.0 permite uso comercial, pero se debe mantener el aviso de modificación de jstarks y la atribución a thinkingmachines/Inkling-2-Mini y unsloth.
+- El conjunto de evaluación (155 tareas) es propio del autor y no un benchmark estándar; los resultados no son directamente comparables con MMLU, HumanEval o GSM8K públicos.
+- El contexto de referencia es 8192 tokens con caché KV q8_0; contextos mayores no están validados.
+- El runtime descarga ~10,86 GiB en el primer arranque, lo que requiere conectividad y espacio en disco.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jstarks/Inkling-2-Mini-Weight-Space-Programming
+- Modelo en Hugging Face: https://huggingface.co/jstarks/Inkling-2-Mini-Weight-Space-Programming
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- GGUF base (Unsloth): https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
-- GGUF `UD-IQ3_XXS`: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF/blob/main/Inkling-2-Mini-UD-IQ3_XXS.gguf
-- Script de arranque: `run_inkling2_lite.py` (incluido en el repo)
+- Cuantización GGUF base (Unsloth): https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
+- GGUF UD-IQ3_XXS: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF/blob/main/Inkling-2-Mini-UD-IQ3_XXS.gguf
+- Script de runtime: run_inkling2_lite.py (incluido en el repo del modelo)
+- Modelo horneado: Inkling-2-Mini-WSP-UD-IQ3_XXS.gguf (incluido en el repo del modelo)
+- Papers, blogs y demos adicionales: no disponible

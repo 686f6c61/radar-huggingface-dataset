@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "cudabenchmarktest/Inkling-2-Mini-Omni-GGUF",
+  "slug": "cudabenchmarktest-inkling-2-mini-omni-gguf",
+  "author": "cudabenchmarktest",
+  "url": "https://huggingface.co/cudabenchmarktest/Inkling-2-Mini-Omni-GGUF",
+  "created_at": "2026-11-26T01:54:38.000Z",
+  "updated_at": "2026-11-26T02:25:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "multimodal",
+    "audio",
+    "jetson",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2691041665,
+  "parameters_human": "2.69B",
+  "storage_bytes": 2197877152,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

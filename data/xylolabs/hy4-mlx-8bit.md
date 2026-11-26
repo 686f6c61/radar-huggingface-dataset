@@ -2,94 +2,96 @@
 
 ## Resumen
 
-Hy4 MLX 8-bit es una conversión cuantizada del modelo de texto tencent/Hy4, publicada por Xylolabs para su ejecución en Apple Silicon mediante la librería MLX. El modelo original es un transformer de tipo Mixture-of-Experts (MoE) desarrollado por Tencent, con 770.000 millones de parámetros totales y 49.000 millones activos por token, diseñado para generación de texto y conversación. Esta versión concreta conserva únicamente la torre de texto y aplica cuantización afín de 8 bits a la mayoría de las matrices de pesos.
+Hy4 MLX 8-bit es una conversión cuantizada a 8 bits del modelo de lenguaje tencent/Hy4, realizada por Xylolabs para su ejecución en el framework MLX de Apple (Apple Silicon). El modelo base es un transformer de tipo Mixture of Experts (MoE) con 770B parámetros totales y 49B parámetros activos por token, desarrollado por Tencent. Esta versión concreta empaqueta únicamente la torre de texto en formato MLX de 8 bits, dejando la torre de visión y el drafter de decodificación especulativa (DFly2) como ficheros separados dentro del mismo repositorio.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de escala frontera en hardware de Apple, algo impensable con los pesos en BF16 (que ocuparían más de 1,5 TB). El repositorio ocupa 819,6 GB repartidos en 243 shards, e incluye el código del modelo (`hy_v4.py`) adaptado a `mlx-lm`, además del script de conversión. No incorpora la torre de visión ni el drafter DFly2 del modelo base, por lo que la entrada y salida es exclusivamente texto.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de escala 770B en hardware Apple Silicon de gama alta (Mac Studio M5 Ultra con 512 GB de memoria unificada), algo impensable con los pesos en BF16. La cuantización a 8 bits mantiene una fidelidad alta respecto al modelo original: la model card reporta una KL de 0,038634 en WikiText-2 y un 94,118% de acuerdo top-1 frente a BF16, con un tamaño de 828,681 GB.
 
-Es importante señalar que el modelo se publica bajo la Tencent Hy License, versión 1.0, que impone condiciones adicionales a los operadores de Model-as-a-Service a gran escala. La información disponible sobre benchmarks, datos de entrenamiento y detalles de arquitectura interna es limitada en la model card proporcionada, por lo que varios apartados de esta ficha indican "no disponible".
+El modelo está pensado para generación de texto y conversación, con soporte declarado de inglés y chino. La licencia es la Tencent Hy License 1.0, que no es de código abierto estándar y debe revisarse antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Mixture-of-Experts) con atención MLA e indexer; código `hy_v4` en `mlx-lm` |
+| Arquitectura | Transformer Mixture of Experts (MoE), según tags del repo (`moe`) |
 | Parametros totales | 769.907.408.797 (≈770B) |
 | Parametros activos | 49B |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit afín (group size 64) para expertos enrutados, atención, indexer, expertos compartidos y MLP denso de capa 0; bf16 para embeddings y LM head; bf16/f32 para router, hiperconexiones, normas y sinks de atención |
+| Longitud de contexto | 16K (según tabla de hardware de la model card para la variante 4-bit; no se especifica de forma independiente para 8-bit) |
+| Tipos de cuantizacion | MLX 8-bit (esta versión); existe también MLX 4-bit (456,63 GB) del mismo autor |
 | Idiomas soportados | en, zh |
-| Licencia | Tencent Hy License, Version 1.0 (con términos adicionales para operadores de Model-as-a-Service a gran escala) |
-| Formato de pesos | safetensors (MLX), 243 shards, 819,63 GB (763,34 GiB) |
+| Licencia | Tencent Hy License, Version 1.0 (`tencent-hy-license`) |
+| Formato de pesos | safetensors en formato MLX (`mlx`, `safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base tencent/Hy4 es un transformer MoE con 770B parámetros totales y 49B activos. La model card de la conversión menciona componentes concretos: proyecciones MLA (Multi-head Latent Attention), un módulo "indexer" con proyecciones de query y key, expertos enrutados, expertos compartidos, un MLP denso en la capa 0, hiperconexiones y sinks de atención. La presencia de MLA y de un indexer sugiere un diseño orientado a eficiencia en atención y posiblemente a selección dispersa de tokens, aunque no se detalla el mecanismo completo en la información disponible.
+El modelo base tencent/Hy4 es un transformer con arquitectura Mixture of Experts: 770B parámetros totales con 49B activos por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamaño. La model card de esta conversión no detalla la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo fases de RLHF o DPO; esa información correspondería a la model card del modelo original de Tencent, no incluida aquí.
 
-En cuanto al entrenamiento, no se especifican en la información proporcionada el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. La conversión de Xylolabs se realizó haciendo streaming del modelo BF16 (revisión `c10c0de5`) shard a shard, cuantizando con `mx.quantize` (afín, group size 64, redondeo al más cercano) y escribiendo los resultados. Cada `kv_b_proj` de atención se dividió en `embed_q` y `unembed_out` por cabeza, siguiendo el modelo DeepSeek-V3.2 de `mlx-lm`. RoPE rota pares adyacentes, como en la clase `hy_v4_vl` de Transformers (PR 50589).
+La innovación técnica destacable de este repositorio es el proceso de conversión y cuantización a MLX 8-bit, con métricas de fidelidad publicadas frente a BF16 (KL y acuerdo top-1 en WikiText-2, chat y held-out). Además, el repositorio incluye un drafter DFly2 para decodificación especulativa, accesible mediante los módulos Python `dfly_v4` y `speculative_v4`, y una torre de visión separada para entrada de imagen. La ejecución requiere `mlx-lm==0.32.2` y `--trust-remote-code`, ya que el código de `hy_v4.py` proviene de Transformers y mlx-lm.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés y chino.
-- Razonamiento y respuesta a instrucciones (pipeline `text-generation`, tag `conversational`).
-- Ejecución local en Apple Silicon mediante `mlx-lm` (comandos `generate`, `chat` y `server`).
-- Soporte de plantilla de chat (`chat_template.jinja` incluida desde el modelo base).
-- No incluye visión: la torre visual del modelo original ha sido omitida en esta conversión.
-- No incluye decodificación especulativa: el drafter DFly2 no está presente.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo "thinking" u otras capacidades especiales: no disponible en la información proporcionada.
+- Generación de texto y conversación multi-turno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y generación de contenido general en inglés y chino.
+- Entrada de imagen mediante la torre de visión incluida como fichero separado (no cargada por defecto en `mlx-lm`).
+- Decodificación especulativa con el drafter DFly2 para acelerar la generación.
+- Ejecución local en Apple Silicon mediante `mlx_lm.generate`, `mlx_lm.chat` y `mlx_lm.server`.
+- No se documenta en la información disponible soporte explícito de tool calling, function calling ni modos de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: desplegando `mlx_lm.server` en un equipo Apple Silicon con suficiente memoria unificada, se puede ofrecer un endpoint compatible con la API de chat para uso personal o de equipo pequeño, sin depender de la nube.
-- Prototipado e investigación en chino e inglés: el modelo cubre ambos idiomas, lo que permite evaluar comportamientos bilingües y comparar con checkpoints BF16 en tareas de generación.
-- Generación de texto de alta calidad en local: para redacción asistida, resumen o reescritura donde se prioriza privacidad y no se quiere enviar datos a un proveedor externo.
-- Evaluación de cuantización: este checkpoint sirve para medir la degradación de un modelo de 770B al pasar a 8-bit afín con group size 64, comparándolo con el original BF16.
-- Desarrollo de aplicaciones MLX: el repositorio incluye `hy_v4.py` y `convert_hy4.py`, útiles como referencia para portar otros modelos MoE a MLX.
-- Servicio interno de bajo volumen: con `mlx_lm.server` se puede montar un servicio de generación para herramientas internas, siempre que el hardware cumpla los requisitos de memoria y se respete la licencia.
-- Experimentación con arquitecturas MoE dispersas: la implementación permite estudiar el comportamiento de expertos enrutados y MLA en un entorno controlado.
+- Inferencia local en estaciones de trabajo Apple Silicon: un equipo con Mac Studio M5 Ultra y 512 GB de memoria unificada puede cargar la variante 4-bit (456,6 GB) con contexto de 16K, útil para prototipado y evaluación sin depender de la nube.
+- Evaluación de fidelidad de cuantización: los datos de KL y top-1 publicados permiten comparar el impacto de 8 bits frente a 4 bits antes de decidir qué variante desplegar en producción.
+- Generación de texto bilingüe inglés-chino: adecuado para tareas de redacción y traducción entre ambos idiomas en entornos donde no se requiere un modelo multilingüe amplio.
+- Aceleración con decodificación especulativa: el drafter DFly2 integrado permite reducir la latencia en flujos de generación larga mediante `stream_generate`.
+- Servicio HTTP local: `mlx_lm.server` permite exponer el modelo como endpoint compatible para integrarlo en herramientas internas de desarrollo.
+- Investigación sobre MoE a gran escala: con 49B parámetros activos, sirve para estudiar el comportamiento de modelos dispersos en hardware de consumo profesional Apple.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Métricas de fidelidad de la cuantización frente a BF16 publicadas en la model card:
+
+| Cuantización | Tamaño | WikiText-2 KL | WikiText-2 top-1 | Chat KL | Chat top-1 | Held-out KL | Held-out top-1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| MLX 4-bit | 456,63 GB | 0,142528 | 88,549% | 0,193011 | 90,126% | 0,066185 | 92,363% |
+| MLX 8-bit | 828,681 GB | 0,038634 | 94,118% | 0,119845 | 93,565% | 0,016506 | 96,088% |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repositorio pesa 819,63 GB (763,34 GiB) en safetensors; se necesita memoria unificada disponible cercana a esa cifra más overhead de ejecución, por lo que se requieren configuraciones de gama muy alta (varios cientos de GB).
-- GPU recomendadas: no aplica GPU discreta tradicional; el formato es MLX y está pensado para Apple Silicon. No se especifican modelos concretos de Apple en la información disponible.
-- ¿Cabe en consumer GPU? No en el sentido habitual: 819 GB excede la VRAM de cualquier GPU de consumo (RTX 4090 con 24 GB, por ejemplo). Solo es viable en equipos Apple con memoria unificada muy elevada.
-- Opciones de despliegue: `mlx-lm` 0.32.2 con `--trust-remote-code` (comandos `mlx_lm.generate`, `mlx_lm.chat`, `mlx_lm.server`). No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI para estos pesos MLX.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM/memoria estimada: 828,681 GB para los pesos en 8 bits; la variante 4-bit ocupa 456,63 GB.
+- La tabla de hardware de la model card solo recomienda fichero para Mac Studio M5 Ultra de 80 núcleos GPU con 512 GB de memoria unificada, y en ese caso apunta a la variante 4-bit con contexto de 16K y el límite de memoria GPU de macOS elevado.
+- Para el resto de configuraciones listadas (M5 Max con 36, 48, 64 y 128 GB; M5 Ultra con 96 y 256 GB) la tabla indica "none", es decir, ningún fichero de este repositorio cabe en esas máquinas.
+- No cabe en GPU de consumo tipo RTX 4090 ni en A100/H100 de 80 GB en esta cuantización; requeriría agregación de memoria multi-GPU no documentada.
+- Despliegue: `mlx-lm==0.32.2` con `--trust-remote-code`; comandos `mlx_lm.generate`, `mlx_lm.chat` y `mlx_lm.server`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Formato / ecosistema | Notas |
-|---|---|---|---|---|---|
-| Xylolabs/Hy4-MLX-8bit | 770B / 49B | no disponible | Tencent Hy License 1.0 | MLX safetensors 8-bit | Solo texto; sin visión ni drafter |
-| tencent/Hy4 (original) | 770B / 49B | no disponible | Tencent Hy License 1.0 | BF16 (Transformers) | Incluye torre de visión y drafter DFly2; instrucciones para vLLM y SGLang |
-| Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+| Modelo | Parámetros | Activos | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Xylolabs/Hy4-MLX-8bit | 770B | 49B | 16K (referencia 4-bit) | MLX 8-bit | Tencent Hy License 1.0 | Hugging Face, 270 descargas |
+| Xylolabs/Hy4-MLX-4bit | 770B | 49B | 16K | MLX 4-bit | Tencent Hy License 1.0 | Hugging Face (mismo autor) |
+| tencent/Hy4 | 770B | 49B | no disponible | safetensors (BF16) | Tencent Hy License 1.0 | Hugging Face (modelo base) |
+
+No se dispone de datos de benchmarks de tareas para comparar el rendimiento frente a alternativas de otros autores; la comparación se limita a parámetros, formato, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Solo texto: la torre de visión y el drafter DFly2 del modelo base no están incluidos, por lo que no hay capacidades multimodales ni decodificación especulativa.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
-- La cuantización a 8-bit puede introducir degradación respecto al BF16 original; no se han publicado evaluaciones comparativas.
-- Riesgo de alucinación inherente a los modelos generativos de gran escala; no se documentan mitigaciones específicas.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Licencia restrictiva: Tencent Hy License 1.0 incluye términos adicionales para operadores de Model-as-a-Service a gran escala; es imprescindible revisar `LICENSE` antes de un uso comercial.
-- Requisitos de memoria extremos (≈819 GB de pesos), lo que limita el despliegue a hardware muy específico.
-- El código del modelo se carga con `--trust-remote-code`, lo que implica ejecutar código del repositorio; conviene auditar `hy_v4.py` antes de usarlo en producción.
-- Xylolabs declara no estar afiliada ni respaldada por Tencent.
-- No se especifican la longitud de contexto ni el throughput, datos clave para dimensionar un despliegue en producción.
+- Solo se declaran inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- La licencia Tencent Hy License 1.0 no es una licencia de código abierto permisiva; es imprescindible revisar sus términos antes de cualquier uso comercial o redistribución.
+- La cuantización introduce degradación medible: el 8-bit baja al 94,118% de acuerdo top-1 en WikiText-2 y al 93,565% en chat respecto a BF16.
+- El repositorio ocupa 828,7 GB, lo que exige almacenamiento y ancho de banda considerables; la descarga y carga son costosas.
+- Requiere `--trust-remote-code`, lo que implica ejecutar código del repositorio; conviene auditar `hy_v4.py` antes de usarlo en entornos sensibles.
+- La torre de visión y el drafter DFly2 no se cargan por defecto con `mlx-lm`; necesitan módulos Python específicos.
+- Riesgo de alucinación y sesgos: no se documentan evaluaciones de sesgo ni tasas de alucinación en la información disponible.
+- La longitud de contexto de 16K solo aparece asociada a la variante 4-bit en la tabla de hardware; no se confirma de forma independiente para 8-bit.
+- No hay soporte documentado para vLLM, TGI, llama.cpp u Ollama, lo que limita las opciones de despliegue en servidor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Xylolabs/Hy4-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/Xylolabs/Hy4-MLX-8bit
 - Modelo base: https://huggingface.co/tencent/Hy4
-- README en chino del modelo base: https://huggingface.co/tencent/Hy4/blob/main/README_CN.md
-- ModelScope del modelo base: https://modelscope.cn/models/Tencent-Hunyuan/Hy4
 - Licencia: https://huggingface.co/Xylolabs/Hy4-MLX-8bit/blob/main/LICENSE
-- Librería MLX-LM: https://github.com/ml-explore/mlx-lm
-- Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Paper referenciado (arXiv 2512.02556): https://arxiv.org/abs/2512.02556
-- Paper referenciado (arXiv 2603.12201): https://arxiv.org/abs/2603.12201
+- Repositorio de código de cuantización: https://github.com/XylolabsInc/tensix-bfp-gptq
+- mlx-lm: https://github.com/ml-explore/mlx-lm
+- Variante 4-bit: https://huggingface.co/Xylolabs/Hy4-MLX-4bit

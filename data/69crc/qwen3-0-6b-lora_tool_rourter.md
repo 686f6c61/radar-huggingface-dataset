@@ -2,107 +2,96 @@
 
 ## Resumen
 
-Qwen3-0.6B-LoRA_Tool_Rourter es un clasificador de enrutamiento (router) de 596 049 920 parametros, derivado por destilacion de un profesor de 27B utilizado exclusivamente como router. No es un modelo de chat de proposito general: no genera texto dirigido al usuario, sino exactamente un objeto JSON que selecciona una de tres acciones — `answer`, `call` o `clarify` — a partir del turno del usuario y, opcionalmente, del historial de conversacion o de un campo `available_context`.
+Qwen3-0.6B-LoRA_Tool_Rourter (publicado por el usuario 69crc bajo el nombre interno "Qwen3-0.6B Router Student") es un modelo pequeno de 596 millones de parametros derivado de Qwen/Qwen3-0.6B mediante LoRA y fusion de pesos, especializado exclusivamente en enrutamiento de herramientas dentro de agentes. No es un modelo conversacional: su unica funcion es emitir un objeto JSON que selecciona entre tres acciones (`answer`, `call`, `clarify`) y, en su caso, el nombre de la herramienta y sus argumentos.
 
-El problema que resuelve es concreto: sustituir un clasificador basado en palabras clave dentro de un agente que usa herramientas. El clasificador por palabras clave es rapido pero no tiene concepto de ambiguedad (nunca emite `clarify`) y su reconocimiento de herramientas depende de un vocabulario mantenido a mano. El profesor de 27B es preciso pero caro: cada turno del agente paga varios segundos de latencia de enrutamiento en la misma GPU que sirve la respuesta principal. Este estudiante se situa entre ambos, con unos 0,3 s por turno en Q8_0 sobre `llama-server` y un 83 % o mas de coincidencia con el profesor en una bateria de 943 prompts, frente al 53 % del clasificador por palabras clave.
+El modelo se destila a partir de un profesor de 27B (denominado Qwen3.8-27B en la model card) usado unicamente como router. Su proposito es sustituir clasificadores basados en palabras clave, que son rapidos pero incapaces de detectar ambiguedad y dependientes de vocabulario mantenido a mano. El estudiante alcanza, segun el autor, mas del 83 % de acuerdo con el profesor en una bateria de 943 prompts, frente al 53 % del clasificador por palabras clave al que reemplaza.
 
-El modelo se distribuye en dos artefactos: el checkpoint fusionado en safetensors para `transformers` y un GGUF Q8_0 (`student_q8.gguf`) para `llama.cpp`. Esta publicado bajo licencia Apache-2.0, con 1,9 GB de repositorio y sin descargas ni valoraciones registradas en el momento de redactar esta ficha.
+Es relevante ahora porque demuestra que un modelo sub-1B puede asumir una tarea de decision acotada con latencia de aproximadamente 0,3 s por turno en Q8_0 sobre `llama-server`, liberando al modelo principal del agente de pagar el coste de un router de 27B en cada turno. La arquitectura subyacente es la de Qwen3-0.6B (transformer denso), con contexto heredado del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada del modelo base Qwen3-0.6B), ajustada con LoRA y fusionada en el checkpoint final |
-| Parametros totales | 596 049 920 |
+| Arquitectura | Transformer denso (Qwen3-0.6B) con adaptador LoRA fusionado |
+| Parametros totales | 596.049.920 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen/Qwen3-0.6B declara 32 768 tokens nativos; no confirmado para este derivado) |
-| Tipos de cuantizacion | GGUF Q8_0 (artefacto publicado); el checkpoint safetensors se distribuye sin cuantizar |
-| Idiomas soportados | en (ingles), segun la model card; los metadatos de Hugging Face no declaran idiomas |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (checkpoint fusionado) y GGUF (Q8_0) |
-| Modelo base | Qwen/Qwen3-0.6B |
-| Tarea declarada | zero-shot-classification en los metadatos; text-generation en el frontmatter de la model card |
-| Fecha de creacion | 2026-09-27 |
-| Tamano del repositorio | 1,9 GB |
+| Longitud de contexto | no disponible (heredada de Qwen3-0.6B; no especificada en la informacion) |
+| Tipos de cuantizacion | Q8_0 (GGUF incluido en el repo); otras cuantizaciones no documentadas |
+| Idiomas soportados | ingles (`en` en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (checkpoint fusionado para transformers) y GGUF (`student_q8.gguf` para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only denso, y se ajusta mediante LoRA sobre un dataset propio etiquetado como `custom`. La model card no detalla el rango de LoRA, la tasa de aprendizaje, el numero de pasos, el numero de tokens de entrenamiento ni la composicion del conjunto de datos; solo indica que el objetivo es la destilacion desde un profesor de 27B (referido como "Qwen3.8-27B") usado unicamente como router. Los adaptadores se han fusionado en el checkpoint publicado, de modo que el repositorio contiene pesos completos listos para cargar con `transformers`, ademas de la conversion a GGUF Q8_0.
+El modelo parte de Qwen3-0.6B, un transformer denso de 0,6B parametros, sobre el que se aplica un adaptador LoRA entrenado para la tarea de enrutamiento y posteriormente fusionado en un checkpoint unico de safetensors. El entrenamiento es una destilacion desde un profesor de 27B que actua como router de referencia; el dataset es propio (`dataset:custom`) y no se detalla su composicion, numero de tokens ni si hubo etapas de RLHF o DPO.
 
-La innovacion funcional no esta en la arquitectura sino en la formulacion de la tarea: la salida esta restringida a tres esquemas JSON con claves disjuntas y excluyentes (`answer` sin `tool`, `args` ni `question`; `call` con `tool` y `args` obligatorios y validables contra el esquema de la herramienta; `clarify` con `question` obligatorio). La model card describe una politica de decision aprendida durante la destilacion, con este orden de prioridad: comprobacion de ambiguedad referencial primero (pronombres sin ligar, fragmentos como "More." o "Try that." producen `clarify`), deteccion de datos en vivo despues (precios, clima, clasificaciones, titulares, "current", "latest", "today"), anulacion de la deteccion de datos en vivo cuando aparece vocabulario biomedico (enfermedades, farmacos, mecanismos de accion, terminos de neuro/psico/onco/cardio/inmuno, que van a `pubmed_search` incluso con modificadores temporales), enrutamiento de operaciones de codigo y ficheros a las herramientas correspondientes, y `answer` para todo lo demas. El conjunto de herramientas contemplado en el entrenamiento es de 18, y el agente padre filtra en inferencia el subconjunto ofrecido segun la categoria de la consulta (biomedicina, codigo, finanzas, escritura de libros, etc.).
+La innovacion principal no es arquitectonica sino de politica de decision: el estudiante aprende cinco reglas explicitas (comprobacion de ambiguedad primero, deteccion de datos en vivo despues, prioridad del vocabulario biomedico sobre la comprobacion temporal, enrutamiento de operaciones de codigo y ficheros, y respuesta directa para conocimiento estable). El modelo se entrena contra un registro de 18 herramientas y debe seleccionar solo dentro del subconjunto que el agente padre le ofrece en inferencia, no sobre el registro completo.
 
 ## Capacidades
 
-- Clasificacion de intencion en tres acciones con salida JSON estricta: `answer`, `call` (con nombre de herramienta y argumentos) y `clarify` (con pregunta de vuelta).
-- Deteccion de ambiguedad referencial: emite `clarify` ante pronombres sin ligar, fragmentos sueltos o referentes no resolubles desde el contexto previo.
-- Deteccion de necesidad de datos en vivo: precios, clima, clasificaciones deportivas, cargos publicos, noticias y expresiones como "latest", "current", "today", "when did", "how many".
-- Enrutamiento biomedico especializado: cualquier enfermedad, sindrome, farmaco, mecanismo de accion o termino de neuro/psico/onco/cardio/inmuno se dirige a `pubmed_search`, incluso con modificadores temporales ("latest", "recent").
-- Enrutamiento de operaciones de codigo y ficheros: `read_file`, `edit_file`, `write_file`, `list_dir`, `search_codebase`, `grep_with_context`, `run_terminal_command`, `list_relevant_files`, `execute_python_code`, `list_relevant_files`.
-- Enrutamiento de recuperacion: `brave_search`, `pubmed_search`, `fetch_url_text`, `rag_answer`, `search_knowledge_base`, `search_codebase`.
-- Enrutamiento de escritura de libros: `manage_outline`, `manage_characters`, `track_progress`.
-- Seleccion restringida al subconjunto de herramientas que el agente padre ofrece en cada consulta, no sobre el registro completo de 18.
-- No soporta generacion de texto para el usuario, tool calling en el sentido de emitir la llamada ejecutable completa, razonamiento multi-paso explicito, vision, audio ni capacidades multilingues mas alla del ingles.
+- Clasificacion de intencion en tres acciones con salida JSON estricta: `{"action": "answer"}`, `{"action": "call", "tool": ..., "args": {...}}` o `{"action": "clarify", "question": ...}`.
+- Deteccion de ambiguedad: emite `clarify` ante pronombres sin referente, fragmentos sueltos ("More.", "Try that.") o peticiones cuyo referente no es resoluble desde el contexto previo.
+- Enrutamiento a busqueda web (`brave_search`) ante senales de datos en vivo: precios, meteorologia, clasificaciones, cargos publicos, terminos como "current", "latest", "today".
+- Enrutamiento biomedico prioritario a `pubmed_search` ante enfermedades, farmacos, mecanismos de accion o terminos de neuro, psiquiatria, oncologia, cardiologia e inmunologia, incluso con modificadores temporales.
+- Enrutamiento de operaciones de codigo y ficheros: `read_file`, `edit_file`, `write_file`, `list_dir`, `search_codebase`, `grep_with_context`, `run_terminal_command`.
+- Soporte de herramientas de escritura de libros (`manage_outline`, `manage_characters`, `track_progress`) y de finanzas (`predict_stocks`).
+- Generacion de argumentos que deben validar contra el esquema de parametros de la herramienta seleccionada.
+- No genera texto dirigido al usuario, no mantiene conversacion y no hace razonamiento multi-paso general.
+- Capacidades multilingues limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Router de un agente que usa herramientas: el modelo sustituye el clasificador por palabras clave y decide en cada turno si responder, invocar una herramienta o pedir aclaracion, con unos 0,3 s por turno en Q8_0 sobre `llama-server`, liberando la GPU principal para el modelo de respuesta.
-- Reduccion de coste frente a enrutamiento con un modelo grande: donde antes un profesor de 27B consumia varios segundos de GPU por turno, este estudiante de 596 M parametros ocupa una fraccion minima de memoria y mantiene un 83 % o mas de coincidencia con el profesor en la bateria de 943 prompts.
-- Asistentes de investigacion biomedica: cualquier consulta con vocabulario medico se enruta a `pubmed_search` en lugar de a busqueda web generica, lo que evita que expresiones como "latest treatment for X" acaben en una busqueda no cientifica.
-- Agentes conversacionales con contexto multi-turno: el modelo emite `clarify` cuando el usuario responde con fragmentos sin referente ("Same one as last time.", "More.", "Try that."), salvo que un turno previo haya nombrado el objeto exacto o este presente en `available_context`.
-- Asistentes de programacion integrados en el IDE o en CI/CD: las peticiones de lectura, edicion, escritura de ficheros, listado de directorios, busqueda en el codigo o ejecucion de comandos de shell se enrutan a la herramienta correcta, incluyendo `execute_python_code` para calculo y analisis de datos en contenedor aislado.
-- Orquestacion de pipelines RAG: distingue entre responder desde conocimiento propio, consultar la base de conocimiento indexada (`search_knowledge_base`), responder desde un documento local concreto (`rag_answer`) o recuperar el texto de una URL (`fetch_url_text`).
-- Agente de escritura de novelas: enruta a `manage_outline`, `manage_characters` y `track_progress` las operaciones de gestion de esquema, fichas de personajes y seguimiento de objetivos de palabras o plazos.
-- Filtro de datos en vivo en asistentes financieros o de actualidad: detecta senales de informacion cambiante (precios, resultados, cargos publicos) y evita que el modelo principal responda de memoria con datos obsoletos.
+- Enrutamiento en agentes con herramientas: el modelo se coloca como primera etapa del pipeline y decide en aproximadamente 0,3 s si la consulta requiere una herramienta, cual y con que argumentos, evitando que el modelo principal (potencialmente de decenas de miles de millones de parametros) pague ese coste en cada turno.
+- Deteccion de consultas ambiguas en atencion al cliente: cuando el usuario escribe "lo mismo de antes" o "prueba eso", el modelo emite `clarify` con una pregunta corta en lugar de adivinar, reduciendo llamadas erroneas a herramientas.
+- Enrutamiento biomedico en asistentes clinicos o de investigacion: consultas sobre farmacos, ensayos clinicos o mecanismos fisiopatologicos se dirigen a `pubmed_search` de forma consistente, incluso cuando el usuario emplea terminos temporales como "latest".
+- Asistentes de programacion con acceso a workspace: peticiones de lectura, edicion, escritura o busqueda en el codigo se enrutan a la herramienta de ficheros adecuada, con argumentos validables contra el esquema correspondiente.
+- Agentes de datos en vivo: consultas sobre cotizaciones, resultados deportivos o meteorologia se derivan a `brave_search` o `predict_stocks` segun el dominio, sin depender de listas de palabras clave mantenidas manualmente.
+- Escritura asistida de novelas: el modelo selecciona entre `manage_outline`, `manage_characters` y `track_progress` para operaciones de estructura, fichas de personajes y seguimiento de objetivos de palabra.
+- Sustitucion de clasificadores heuristicos en produccion: al alcanzar mas del 83 % de acuerdo con un profesor de 27B frente al 53 % de un clasificador por palabras clave, sirve como reemplazo directo con coste de inferencia minimo en CPU o GPU de gama baja.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El unico dato de evaluacion aportado por el autor es una comparacion interna de coincidencia con el profesor.
+| Metrica | Resultado | Referencia |
+|---|---|---|
+| Acuerdo con el profesor (27B) en bateria de 943 prompts | mas del 83 % | Profesor de 27B como router |
+| Acuerdo del clasificador por palabras clave sustituido | 53 % | Clasificador heuristico previo |
+| Latencia por turno en Q8_0 sobre `llama-server` | aproximadamente 0,3 s | Inferencia local |
 
-| Evaluacion | Resultado |
-|---|---|
-| Coincidencia con el profesor (bateria de 943 prompts) | 83 % o mas |
-| Clasificador por palabras clave al que sustituye (misma bateria) | 53 % |
-| Latencia por turno en Q8_0 sobre `llama-server` | aproximadamente 0,3 s |
-| MMLU, HumanEval, GSM8K y similares | no disponible |
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16 el modelo ocupa aproximadamente 1,2 GB de pesos (596 M parametros), por lo que con cache KV y overhead conviene reservar del orden de 1,5 a 2 GB; en GGUF Q8_0 baja a unos 0,6-0,7 GB y en Q4 a unos 0,4 GB.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de memoria es suficiente; no requiere A100, H100 ni RTX 4090. Una RTX 3060, RTX 4060, T4 o incluso una GPU integrada con memoria compartida pueden servirlo.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos, y tambien en CPU mediante `llama.cpp` gracias al artefacto GGUF Q8_0.
-- Opciones de despliegue: `llama.cpp` / `llama-server` con el GGUF Q8_0 (configuracion reportada por el autor), y `transformers` con el checkpoint safetensors fusionado. vLLM, TGI y Ollama no estan confirmados en la informacion disponible, aunque el formato GGUF es compatible con el ecosistema de `llama.cpp`.
-- Latencia y throughput: aproximadamente 0,3 s por turno en Q8_0 sobre `llama-server`, segun el autor. No se publican cifras de throughput en tokens por segundo.
+- VRAM estimada para inferencia: en torno a 1,2 GB en Q8_0 (596 M parametros a 8 bits mas overhead de contexto y runtime); en fp16 aproximadamente 1,2 GB solo de pesos, con overhead adicional.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente; tambien cabe en CPU mediante llama.cpp.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU moderna (RTX 3060, RTX 4060, RTX 4090, e incluso iGPU con suficiente memoria compartida).
+- Opciones de despliegue: `llama.cpp` / `llama-server` con el GGUF Q8_0 incluido; `transformers` con el checkpoint safetensors fusionado; vLLM y TGI no estan documentados explicitamente para este modelo.
+- Latencia y throughput: aproximadamente 0,3 s por turno en Q8_0 sobre `llama-server` segun el autor; throughput agregado no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 69crc/Qwen3-0.6B-LoRA_Tool_Rourter | 596 049 920 | Router de 3 acciones con salida JSON | no disponible | apache-2.0 | safetensors + GGUF Q8_0 |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6 B | Generacion de texto, codigo y matematicas | 32 768 tokens declarados por el modelo base | apache-2.0 | safetensors, multiples formatos en el ecosistema |
-| Pelmeshek/qwen3-0.6B-function-calling-lora | 0,6 B (con adaptador LoRA) | Function calling mediante SFT | no disponible | no disponible en la informacion recogida | adaptador LoRA con TRL |
-| Clasificador por palabras clave (referencia interna del autor) | no aplica | Enrutamiento por vocabulario | no aplica | no aplica | interno |
+| Qwen3-0.6B-LoRA_Tool_Rourter | 596 M | no disponible | Router JSON de 3 acciones | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen3-0.6B (base) | 596 M | segun Qwen3-0.6B | Chat/generacion general | Apache 2.0 | Hugging Face |
+| Profesor de 27B citado (Qwen3.8-27B) | 27 B | no disponible | Router de referencia | no disponible | no disponible |
+| Clasificador por palabras clave | no aplica | no aplica | Enrutamiento heuristico | no aplica | interno |
 
-La comparacion con modelos de enrutamiento de la misma categoria no esta disponible: el autor no publica comparaciones con otros routers aprendidos, solo con su propio clasificador por palabras clave y con el profesor de 27B.
+La comparativa con alternativas publicas de enrutamiento especializado no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: no genera texto dirigido al usuario y su salida esta restringida a uno de tres objetos JSON. Usarlo como modelo conversacional produce resultados fuera de proposito.
-- El registro de herramientas esta cerrado a las 18 definidas durante el entrenamiento. Cualquier herramienta fuera de esa lista no es enrutable y el modelo puede producir nombres de herramienta inexistentes.
-- Idiomas: la model card declara unicamente ingles. El comportamiento con entradas en castellano u otros idiomas no esta documentado ni evaluado.
-- El 83 % de coincidencia con el profesor implica que aproximadamente uno de cada seis prompts se enruta de forma distinta al profesor, con el consiguiente riesgo de respuestas erroneas o llamadas a herramientas inadecuadas en produccion.
-- Riesgo de alucinacion en el campo `tool` o en `args`: al ser un modelo de 0,6 B, la validacion de los argumentos contra el esquema de la herramienta deberia hacerse siempre en el orquestador, nunca confiando en la salida del modelo.
-- La model card menciona un profesor "Qwen3.8-27B", denominacion que no corresponde a ningun modelo publicado conocido, por lo que la procedencia exacta de las etiquetas de destilacion no es verificable con la informacion disponible.
-- Metadatos contradictorios: los tags de Hugging Face declaran `zero-shot-classification` mientras que el frontmatter de la model card declara `text-generation`; el mismo frontmatter incluye `inference: false` pese a llevar el tag `endpoints_compatible`.
-- El nombre del repositorio contiene una errata ("Rourter" en lugar de "Router"), lo que puede complicar su localizacion.
-- El repositorio tiene 0 descargas y 0 valoraciones, sin senales de uso en produccion ni de validacion por terceros. Se recomienda evaluarlo contra el conjunto de herramientas y el dominio reales antes de desplegarlo.
-- Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, con obligacion de conservar el aviso de licencia y de indicar los cambios realizados.
+- No es un modelo de chat: no genera texto para el usuario y su uso fuera de la tarea de enrutamiento produce salidas invalidas o sin sentido.
+- Solo enruta dentro del registro de 18 herramientas con el que fue entrenado; herramientas fuera de esa lista no son seleccionables.
+- Entrenado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente es deficiente.
+- Riesgo de alucinacion en los argumentos: aunque el autor exige que `args` valide contra el esquema, no se documenta una tasa de error de validacion, por lo que en produccion conviene validar el JSON y el esquema antes de ejecutar la herramienta.
+- La cifra de acuerdo del 83 % con el profesor implica que aproximadamente una de cada seis decisiones difiere de la referencia; no se detalla la distribucion de errores por accion.
+- La politica de decision depende de reglas aprendidas (ambiguedad, datos en vivo, prioridad biomedica) que pueden fallar en dominios no cubiertos por el dataset de destilacion, no documentado.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de Qwen3-0.6B conviene verificar las condiciones del modelo base.
+- El autor marca `inference: false` en los metadatos de la model card, lo que puede afectar a la carga automatica en algunos pipelines de Hugging Face.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/69crc/Qwen3-0.6B-LoRA_Tool_Rourter
-- Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Informe tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
-- Ejemplo de ajuste de tool calling con Qwen3-0.6B y LoRA (tutorial, no es el autor de esta ficha): https://lumienai.com/news/fine-tune-tool-calling-llm-qwen3-lora-xyz-aquila-sft
-- Repositorio de ejemplo de ajuste fino con LoRA sobre Qwen3-0.6B: https://github.com/david-franz/llm-fine-tuning-LoRa
-- Modelo comparable de function calling sobre el mismo base: https://huggingface.co/Pelmeshek/qwen3-0.6B-function-calling-lora
-- Ficha de Qwen3-0.6B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_0_6b
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Paper de referencia citado en los tags (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

@@ -5,7 +5,7 @@
   "author": "CoreEpoch",
   "url": "https://huggingface.co/CoreEpoch/edgenext-small-int8-imagenet",
   "created_at": "2026-07-19T22:32:03.000Z",
-  "updated_at": "2026-11-18T23:52:33.000Z",
+  "updated_at": "2026-11-25T11:44:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

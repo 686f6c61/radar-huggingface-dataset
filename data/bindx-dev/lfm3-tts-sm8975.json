@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "bindx-dev/lfm3-tts-sm8975",
+  "slug": "bindx-dev-lfm3-tts-sm8975",
+  "author": "bindx-dev",
+  "url": "https://huggingface.co/bindx-dev/lfm3-tts-sm8975",
+  "created_at": "2026-11-26T03:12:08.000Z",
+  "updated_at": "2026-11-26T03:12:11.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218898769,
+  "storage_human": "219 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

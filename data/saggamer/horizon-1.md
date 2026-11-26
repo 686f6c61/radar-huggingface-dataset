@@ -2,105 +2,104 @@
 
 ## Resumen
 
-Horizon 1 es un adaptador experimental de edición de imagen guiada por instrucciones, desarrollado por el usuario saggamer y publicado bajo licencia Apache 2.0. No es un modelo fundacional independiente: se trata de un bundle de aproximadamente 45 MB que contiene un adaptador LoRA entrenado, un puente semántico, un módulo de grounding de instrucciones y controles espaciales, todo portado a MLX para su ejecución en Apple Silicon. Se apoya en el checkpoint base FLUX.2 Klein 4B en cuantización 4-bit, que se descarga por separado (unos 4,6 GB en el primer arranque).
+Horizon 1 es un adaptador experimental de generación y edición de imágenes desarrollado por el usuario saggamer (Kira Superapp) para ejecutarse en Apple Silicon mediante MLX y la librería MFLUX. No es un modelo fundacional independiente, sino un bundle de aproximadamente 84 MB que se apoya en el checkpoint base FLUX.2 Klein 4B en cuantización 4-bit (unos 4,6 GB que se descargan en el primer arranque). Su objetivo es combinar generación texto-a-imagen sin imagen de origen, edición guiada por instrucciones, grounding semántico y controles espaciales dentro de un flujo creativo local.
 
-El modelo resuelve una tarea concreta: recibir una imagen fuente y una instrucción en lenguaje natural, predecir la región espacial donde debe aplicarse la edición y generar una imagen modificada respetando esa localización. Para ello combina el transformer de difusión conjunto texto/imagen de FLUX.2 con una cabeza de grounding que produce una rejilla de probabilidad de edición de 32 × 32, y opcionalmente aplica una restricción de latentes que preserva la trayectoria fuente/ruido fuera de la región predicha.
+La versión 0.2 añade un experto de creatividad entrenado mediante LoRA junto con un adaptador de edición, un puente semántico, un grounder de instrucciones y controles espaciales. El entrenamiento del experto creativo se realizó con 1.024 actualizaciones del optimizador sobre 1.024 filas (1.023 grupos) provenientes de COCO-Caption2017 y DiffusionDB, usando flow-matching supervisado con replay, no aprendizaje online autónomo.
 
-Es relevante ahora porque explora el paradigma de edición localizada sobre Apple Silicon con un stack MLX/MFLUX, una combinación poco frecuente en el ecosistema de difusión. El propio autor lo describe como una release de investigación, no como un editor listo para producción, y advierte que la adherencia a instrucciones sobre fotografías reales sigue siendo limitada. No incluye modelo de chat, especialista en creatividad ni generación de PPT/PDF.
+Es relevante ahora porque demuestra un patrón de despliegue de modelos de difusión en hardware de consumo Apple (probado en un M4 de 24 GB), con licencia Apache 2.0 y un runtime propio. El propio autor lo describe como un lanzamiento de investigación, no como un editor listo para producción ni una reivindicación de estado del arte.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion conjunto texto/imagen (FLUX.2 Klein base 4B) con adaptador LoRA, puente semantico y cabeza de grounding |
-| Parametros totales | 4B en el checkpoint base FLUX.2 Klein; el adaptador es un bundle de ~45 MB (no disponible el desglose exacto de parametros del adaptador) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 256 tokens de instruccion (plantilla nativa completa; instrucciones mayores se rechazan) |
-| Tipos de cuantizacion | 4-bit en backbone y encoder de texto; LoRA sin hornear como residuo; cabeza de grounding y puente semantico en FP32; computo de atencion/feed-forward en float16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | MLX (checkpoint 4-bit de MFLUX); bundle de adaptador instalable como paquete Python |
+| Arquitectura | Adaptador LoRA sobre FLUX.2 Klein base 4B (modelo de difusión), ejecutado con MLX/MFLUX |
+| Parámetros totales | No disponible para el adaptador; el checkpoint base es de 4B |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica; presupuesto de prompt nativo de 256 tokens con rechazo explícito de desbordamiento |
+| Tipos de cuantización | 4-bit (checkpoint base en 4-bit) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Bundle MLX/MFLUX (adaptador de ~84 MB); no compatible con safetensors estándar de Diffusers ni con `mlx_lm.load` |
+| Tamaño del repositorio | 0,1 GB |
+| Resolución de generación | 512 × 512 por defecto; múltiplos de 16 entre 256 y 1024 |
+| Pasos por defecto | 20 |
+| Guidance por defecto | 4 |
+| Librería | mflux |
 
 ## Arquitectura y entrenamiento
 
-Horizon 1 se construye como un puente sobre el transformer de difusion nativo de FLUX.2, no como una reimplementacion de la arquitectura completa de mezcla de transformers de BAGEL ni como un modelo de lenguaje unificado preentrenado desde cero. El adaptador incorpora 120 tensores LoRA de rango 16 mapeados a las 60 capas nativas del transformer, cargados sin hornearse en la base cuantizada. Ademas incluye un puente semantico con compuerta de modo que opera sobre el contexto nativo de Qwen de 7.680 dimensiones, con atencion de rango 32 y un residual de modo edicion entrenado. Se conservan el encoder Qwen nativo completo y las capas ocultas 9/18/27.
+Horizon 1 se construye como un adaptador sobre el checkpoint de difusión FLUX.2 Klein base 4B, en su variante 4-bit para MLX. El sistema se compone de varias piezas separadas: un experto de creatividad entrenado con LoRA para generación texto-a-imagen sin imagen de origen, un adaptador de edición, un puente semántico de modo creatividad, un grounder de instrucciones y controles espaciales. La generación parte de ruido aleatorio y texto únicamente, sin imagen en blanco, tokens de referencia, cabeza de grounding ni máscara de edición.
 
-El modulo de grounding de instrucciones procesa caracteristicas del transformer de 3.072 dimensiones derivadas solo de la fuente, junto con parches RGB, y aplica atencion cruzada contra la instruccion codificada por separado. Una red transformer espacial produce una rejilla de probabilidad de edicion de 32 × 32, con umbral de mascara seleccionado por validacion en 0,4. Las caracteristicas de la fuente para grounding usan el prompt generico fijo "Describe the visible scene."; la instruccion original entra por la cabeza de atencion cruzada separada. El contexto de inferencia es de 256 tokens, la condicion negativa vacia se codifica de forma nativa y el calendario de flujo usa el shift empirico nativo. El tiempo de posicion de la imagen de referencia es 10 y las caracteristicas solo-fuente usan 0.
-
-El adaptador se entreno sobre el dataset osunlp/MagicBrush. La validacion reportada compara las redes auxiliares MLX contra los pesos PyTorch originales en un Apple M4: error absoluto maximo de 0,00003911 en los logits del grounder de instrucciones y de 0,000000238 en el puente semantico, con pruebas FP32 sobre 1.024 tokens de fuente, lotes de uno y dos, y 29/64 tokens de texto con mascaras de padding. Los 120 tensores LoRA se mapearon a las 60 capas esperadas y los IDs de plantilla de instruccion y mascaras de padding coincidieron exactamente. No se documenta en la informacion disponible el numero total de tokens de entrenamiento ni si hubo RLHF o DPO.
+El entrenamiento del experto creativo consistió en 1.024 actualizaciones del optimizador (completadas el 20 de octubre de 2026) sobre 1.024 filas de entrenamiento agrupadas en 1.023 grupos, combinando captions de COCO-Caption2017 y pares imagen/prompt de DiffusionDB. Los ejemplos de COCO se restringieron a las licencias 4, 7 y 8 (CC BY 2.0, Flickr sin restricciones conocidas de copyright y obras del gobierno de EE. UU.); DiffusionDB se distribuye bajo CC0 1.0. Se sustituyeron cinco filas sintéticas por cinco ejemplos positivos de replay supervisado sin aumentar el total, y esos ejemplos guiados se excluyeron de las pruebas de novedad. Se trata de replay de flow-matching supervisado, no de aprendizaje online autónomo ni de un benchmark de preferencia creativa humana.
 
 ## Capacidades
 
-- Edicion de imagen guiada por instrucciones en lenguaje natural a partir de una imagen fuente y un prompt textual.
-- Grounding espacial: prediccion de una region de edicion sobre una rejilla de 32 × 32 con probabilidades por celda.
-- Generacion de mascara predicha y mapa de probabilidad de grounding como artefactos de salida.
-- Restriccion opcional de latentes durante el denoising para preservar la trayectoria fuente/ruido fuera de la region predicha (`--constrain-predicted-region`).
-- Composicion por copia de pixeles fuera de la mascara predicha (`--protect-predicted-region`), que genera una imagen protegida separada de la salida cruda del modelo.
-- Salida de metadatos en JSON con prompt, semilla, procedencia de pesos, hashes y ajustes de ejecucion.
-- Control de semilla, pasos de muestreo y escala de guidance.
-- Soporte de instrucciones en ingles unicamente.
-- No incluye modelo de chat, capacidades de texto generativo, audio, video ni generacion de documentos.
+- Generación de imágenes texto-a-imagen sin imagen de origen, partiendo de ruido aleatorio y prompt.
+- Edición de imágenes guiada por instrucciones en lenguaje natural.
+- Grounding semántico de instrucciones y controles espaciales (colocación de objetos y regiones).
+- Soporte de image-to-image mediante el adaptador de edición.
+- Escritura de PNG junto con metadatos JSON de procedencia (provenance).
+- Control de resolución entre 256 y 1024 en múltiplos de 16, con 512 × 512 como valor por defecto.
+- Control de semilla, pasos y guidance para reproducibilidad.
+- Interfaz de línea de comandos con modos de generación y edición (`horizon-image`, con `horizon-edit` como alias compatible).
 
 ## Casos de uso
 
-- Edicion localizada de objetos en imagenes: dado un prompt como "Put a butterfly on the dog.", el modelo predice la region del perro y aplica la edicion solo ahi, lo que resulta util para retoque semiautomatico en flujos de diseno grafico donde se quiere evitar que el resto de la imagen cambie.
-- Prototipado de herramientas de edicion asistida en Mac: al ejecutarse sobre MLX en Apple Silicon con un M4 de 24 GB como maquina de prueba, sirve para validar interfaces de edicion por instruccion en entornos de desarrollo locales sin GPU dedicada.
-- Investigacion en grounding de instrucciones visuales: la salida de rejilla 32 × 32 y el mapa de probabilidad permiten analizar como el modelo asocia fragmentos de la instruccion con regiones de la imagen, util para estudiar alineamiento instruccion-region.
-- Generacion de mascaras de edicion para pipelines posteriores: la mascara predicha y el JSON de metadatos pueden alimentar herramientas de inpainting o composicion externas que necesiten una region de interes delimitada.
-- Evaluacion comparativa de adaptadores LoRA sobre difusion: al mantener el LoRA como residuo sin hornear sobre la base 4-bit, permite experimentar con sustitucion o apilado de adaptadores en investigacion sobre edicion de imagen.
-- Pruebas de reproducibilidad y paridad numerica: los artefactos de validacion (errores maximos documentados, mapeo de tensores, manejo de instrucciones) sirven como referencia para portar redes auxiliares de PyTorch a MLX en otros proyectos.
-- Demostraciones educativas de edicion por instruccion en entornos academicos, dado su caracter experimental y su licencia permisiva.
+- Prototipado creativo local en Mac: generar conceptos visuales a 512 × 512 desde un prompt y una semilla fija, útil para iterar ideas sin depender de servicios en la nube y con procedencia JSON registrada.
+- Edición por instrucciones en flujos de diseño: aplicar el adaptador de edición sobre una imagen existente para modificar elementos concretos descritos en lenguaje natural, aprovechando el grounder de instrucciones.
+- Composición con controles espaciales: usar las señales de colocación para ubicar objetos en regiones concretas, adecuado para maquetas y pruebas de layout.
+- Pruebas de investigación en hardware Apple: validar pipelines de difusión 4-bit con MLX/MFLUX en un M4 de 24 GB, midiendo paridad numérica y conversión mediante los JSON de evaluación incluidos.
+- Integración en asistentes creativos conectados a herramientas: servir como componente de generación y edición dentro de un asistente con bucle de ejecución y permisos, como el propuesto por Kira Superapp.
+- Generación de imágenes de referencia para documentación o demostraciones internas, con control de resolución y semilla para resultados reproducibles.
+- Evaluación comparativa de adaptadores LoRA sobre FLUX.2 Klein 4B: el bundle permite reproducir las pruebas de generación incluidas (`evaluation/generation_test.json`) y comprobar la preservación de valores entrenados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad de edicion (como FID, CLIP-score o metricas de adherencia a instruccion) en la informacion disponible. Los unicos datos numericos reportados son de paridad numerica entre la implementacion MLX y los pesos PyTorch originales:
-
-| Componente | Error absoluto maximo |
-|---|---:|
-| Logits del instruction-grounder | 0,00003911 |
-| Puente semantico | 0,000000238 |
-
-Condiciones de la prueba: FP32, 1.024 tokens de fuente, lotes de uno y dos, 29/64 tokens de texto con mascaras de padding, sobre Apple M4. Los resultados completos se encuentran en `evaluation/component_parity.json`, `evaluation/lora_mapping.json` y `evaluation/instruction_handling.json`.
+No se han publicado resultados de benchmarks en la información disponible. El autor incluye únicamente pruebas cualitativas de generación sin imagen de origen sobre un Apple M4 (20 pasos, guidance 4, 512 × 512): un caso de tetera- ballena con taza naranja y otro de barcos de papel con limón. En el primero, la composición es reconocible pero el asa y la boquilla funcionales especificadas no quedan claramente establecidas; en el segundo, la composición está presente pero no es inequívoco que haya exactamente tres barcos distintos. Ninguna de las dos instrucciones completas se marca como éxito semántico verificado, y el propio autor advierte que dos ejemplos no constituyen un benchmark amplio.
 
 ## Requisitos de hardware
 
-- VRAM/espacio: el checkpoint base 4-bit ocupa aproximadamente 4,6 GB en disco y se descarga en el primer arranque; el bundle del adaptador es de unos 45 MB. No se especifica el consumo de memoria unificado en ejecucion.
-- GPU: requiere un Mac con Apple Silicon y acceso a Metal. La maquina de prueba local del autor es un M4 con 24 GB de memoria unificada.
-- Modelos con menos memoria: no validados segun la model card.
-- Software: Python 3.12 o superior, `huggingface_hub>=1,<2`, el paquete `mflux` y la CLI `horizon-edit` incluida en el bundle.
-- Despliegue: no compatible con `mlx_lm.load`, `AutoModel` de Transformers ni pipelines estandar de Diffusers; debe usarse el runtime propio del bundle.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Mac con Apple Silicon y acceso a Metal; probado en un M4 de 24 GB. Macs con menos memoria no han sido validados.
+- Python 3.12 o superior.
+- Espacio en disco suficiente para el checkpoint base (unos 4,6 GB en la primera ejecución) y las dependencias.
+- El adaptador en sí ocupa aproximadamente 84 MB; el repositorio completo, 0,1 GB.
+- Despliegue mediante el runtime MFLUX/MLX incluido; no es compatible con `mlx_lm.load`, `AutoModel` de Transformers ni pipelines estándar de Diffusers.
+- Resoluciones mayores de 512 × 512 requieren más memoria.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto instruccion | Enfoque | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horizon 1 | 4B base + adaptador ~45 MB | 256 tokens | Edicion localizada con grounding sobre FLUX.2 Klein, MLX | apache-2.0 | Hugging Face (saggamer/horizon-1) |
-| FLUX.2 Klein base 4B | 4B | no disponible | Difusion texto/imagen base sin adaptador de edicion | no disponible en la informacion | Hugging Face (black-forest-labs/FLUX.2-klein-base-4B) |
-| FLUX2-klein-base-4B-mlx-4bit | 4B | no disponible | Conversion comunitaria 4-bit MLX del anterior | no disponible en la informacion | Hugging Face (AITRADER/FLUX2-klein-base-4B-mlx-4bit) |
+| Horizon 1 | Adaptador LoRA sobre FLUX.2 Klein 4B (difusión) | Base 4B; adaptador ~84 MB | 256 tokens de prompt | Apache 2.0 | Hugging Face (bundle MLX) |
+| FLUX.2 Klein base 4B | Modelo de difusión base | 4B | No disponible | No disponible en la información | Hugging Face (black-forest-labs) |
+| FLUX2-klein-base-4B-mlx-4bit | Checkpoint base cuantizado 4-bit para MLX | 4B | No disponible | No disponible en la información | Hugging Face (AITRADER) |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. Horizon 1 se distingue por anadir grounding espacial y edicion por instruccion sobre la base, mientras que los otros dos son checkpoints base sin esa capa de edicion.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Release de investigacion: el autor declara explicitamente que no es un editor listo para produccion ni una afirmacion de estado del arte.
-- Adherencia a instrucciones sobre fotografias reales limitada, segun la propia model card.
-- Solo soporta ingles; no hay capacidades multilingues.
-- Contexto de instruccion de 256 tokens: las instrucciones que exceden ese presupuesto se rechazan en lugar de truncarse silenciosamente.
-- La imagen fuente se convierte a RGB y se redimensiona a 512 × 512, lo que limita la resolucion de trabajo.
-- La composicion `--protect-predicted-region` es una copia de pixeles fuera de la mascara y no puede corregir una region predicha incorrecta; no es evidencia de que la edicion solicitada haya tenido exito.
-- El checkpoint base comunitario no ha sido reproducido de forma independiente por el autor; `--base-path` registra una anulacion pero no establece la identidad del checkpoint.
-- No debe sustituirse el modelo Klein 4B destilado por el modelo base.
-- Riesgo de alucinacion visual y de ediciones fuera de la region solicitada cuando el grounding falla.
-- No validado en Macs con menos de 24 GB de memoria unificada.
-- Incompatible con cargadores estandar (`mlx_lm.load`, `AutoModel`, Diffusers), lo que restringe su integracion en pipelines convencionales.
-- Sesgos: no se documentan sesgos especificos en la informacion disponible; al derivar de FLUX.2 y entrenarse sobre MagicBrush, puede heredar sesgos de esos recursos.
-- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del checkpoint base FLUX.2 Klein antes de uso comercial.
+- Es un lanzamiento de investigación, no un editor listo para producción ni una reivindicación de estado del arte.
+- La adherencia a instrucciones sobre fotografías reales sigue siendo limitada.
+- El conteo de objetos, la colocación espacial y el diseño funcional de objetos son experimentales; los propios ejemplos del autor no se marcan como éxitos semánticos verificados.
+- Solo se han validado pruebas completas de imagen a 512 × 512; tamaños mayores consumen más memoria y no están validados.
+- El presupuesto de prompt es de 256 tokens, con rechazo explícito de desbordamiento.
+- Solo soporta inglés.
+- No incluye modelo de chat de texto ni generación de PPT/PDF.
+- No debe cargarse con `mlx_lm.load`, `AutoModel` ni pipelines estándar de Diffusers; requiere el runtime MFLUX específico.
+- El entrenamiento se limita a 1.024 actualizaciones y 1.024 filas, con cinco ejemplos de replay supervisado; no es aprendizaje online ni un benchmark de preferencia creativa.
+- Riesgo de sesgos derivado de los datos de entrenamiento (COCO y DiffusionDB) no cuantificado en la información disponible.
+- Riesgo de alucinación visual: los objetos solicitados pueden no representarse fielmente (asa y boquilla no establecidas en el ejemplo de la tetera).
+- La licencia Apache 2.0 permite uso comercial, pero el checkpoint base y sus dependencias deben verificarse por separado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/saggamer/horizon-1
-- Checkpoint base FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
-- Conversion MLX 4-bit del base: https://huggingface.co/AITRADER/FLUX2-klein-base-4B-mlx-4bit
-- Dataset de entrenamiento: https://huggingface.co/datasets/osunlp/MagicBrush
-- Artefactos de evaluacion en el repo: `evaluation/component_parity.json`, `evaluation/lora_mapping.json`, `evaluation/instruction_handling.json`
+- [Hugging Face: saggamer/horizon-1](https://huggingface.co/saggamer/horizon-1)
+- [Kira Superapp](https://kira-superapp.vercel.app/)
+- [GitHub KIRA-Superapp](https://github.com/saggamer/KIRA-Superapp)
+- [Diagonal Browser (código fuente)](https://github.com/saggamer/KIRA-Superapp/tree/main/diagonal_browser)
+- [Modelo base: black-forest-labs/FLUX.2-klein-base-4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B)
+- [Checkpoint base MLX 4-bit: AITRADER/FLUX2-klein-base-4B-mlx-4bit](https://huggingface.co/AITRADER/FLUX2-klein-base-4B-mlx-4bit)
+- [Dataset COCO-Caption2017](https://huggingface.co/datasets/lmms-lab-encoder/COCO-Caption2017)
+- [Dataset DiffusionDB](https://huggingface.co/datasets/poloclub/diffusiondb)
+- [Dataset MagicBrush](https://huggingface.co/datasets/osunlp/MagicBrush)

@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 239,
+  "downloads_30d": 206,
   "trending_score": 0,
   "parameters": 64225280,
   "parameters_human": "64.2M",
@@ -69,33 +69,289 @@
       "dataset": "PDNC Emma, held out (318 rows, 40 windows), reasoning low budget 1024",
       "metric": "accuracy, adapter (base 68.9)",
       "value": 75.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.4)",
+      "value": 88.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 99.1)",
+      "value": 99.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 89.8)",
+      "value": 89.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 99.7)",
+      "value": 99.4
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q3_K_XL, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 88.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 83.1)",
+      "value": 85.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 82.9)",
+      "value": 85.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 97.8)",
+      "value": 96.2
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 85
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 96.2)",
+      "value": 98.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 88.3)",
+      "value": 87.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ2_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 95.6)",
+      "value": 95.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ3_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 86.6
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ3_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 95.6)",
+      "value": 82.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_XL, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 90.8)",
+      "value": 88.5
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.4)",
+      "value": 88.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 99.1)",
+      "value": 99.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 89.8)",
+      "value": 89.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 99.7)",
+      "value": 99.4
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q3_K_XL, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 88.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 83.1)",
+      "value": 85.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 82.9)",
+      "value": 85.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 97.8)",
+      "value": 96.2
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 85
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 96.2)",
+      "value": 98.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 88.3)",
+      "value": 87.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ2_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 95.6)",
+      "value": 95.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ3_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 86.6
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ3_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 95.6)",
+      "value": 82.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_XL, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 90.8)",
+      "value": 88.5
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_XL, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 96.9)",
+      "value": 95.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "nine held-out PDNC novels, 2,655 rows, IQ3_XXS, reasoning low, michel2_full (raw; 90.9 with the roster-line echo read as the app reads it)",
+      "metric": "accuracy, adapter (base 91.6)",
+      "value": 71.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.4)",
+      "value": 88.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 99.1)",
+      "value": 99.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q4_K_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 89.8)",
+      "value": 89.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q4_K_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 99.7)",
+      "value": 99.4
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, Q3_K_XL, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 88.8
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), Q3_K_XL, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 99.4)",
+      "value": 99.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 83.1)",
+      "value": 85.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ2_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 91.2)",
+      "value": 92.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning off, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 82.9)",
+      "value": 85.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning off, michel2_full",
+      "metric": "accuracy, adapter (base 97.8)",
+      "value": 96.2
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ1_M, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 85
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ1_M, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 96.2)",
+      "value": 98.1
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ2_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 88.3)",
+      "value": 87.9
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), IQ2_XXS, reasoning on, michel2_full",
+      "metric": "accuracy, adapter (base 95.6)",
+      "value": 95.3
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "four-book product fixture, IQ3_XXS, reasoning on, michel2_full, JSON schema, 768 paired rows",
+      "metric": "accuracy, adapter (base 87.5)",
+      "value": 86.6
     }
   ],
-  "sources": [
-    {
-      "title": "Cup Cake الكب كيك بتطبيق شوكلاتة وبالخطوات المصورة",
-      "url": "https://forum.uaewomen.net/showthread.php/498165-Cup-Cake-%D8%A7%D9%84%D9%83%D8%A8-%D9%83%D9%8A%D9%83-%D8%A8%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B4%D9%88%D9%83%D9%84%D8%A7%D8%AA%D8%A9-%D9%88%D8%A8%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B5%D9%88%D8%B1%D8%A9",
-      "snippet": "Feb 21, 2010 · سيدات الامارات عالم حواء عالم الطبخ الحلويات Cup Cake الكب كيك بتطبيق شوكلاتة وبالخطوات المصورة النتائج 1 إلى 15 من 613"
-    },
-    {
-      "title": "اسعار مستر بيكر",
-      "url": "https://forum.uaewomen.net/showthread.php/1006341-%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D8%B3%D8%AA%D8%B1-%D8%A8%D9%8A%D9%83%D8%B1-%D8%8C-!",
-      "snippet": "Dec 9, 2011 · اسعار مستر بيكر ، ! مرحبا خواتيَ ، شحالكمَ بغيت اسالكم عن اسعار الكيك بـ مستر بيكر و ابا اعرف بكم يحطون الكيكة اللي عليها صور كيك الـ A4 ، !"
-    },
-    {
-      "title": "تعالوا نرتب قائمة مشتريات البيت من الجمعيه",
-      "url": "https://forum.uaewomen.net/showthread.php/564798-%D8%AA%D8%B9%D8%A7%D9%84%D9%88%D8%A7-%D9%86%D8%B1%D8%AA%D8%A8-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D9%87",
-      "snippet": "Oct 14, 2009 · أنا بصراحة مسوية جدول للأكلات اللي بسويها خلال شهر, وعلى أساسها أخذ الاغراض الخاصة بالمطبخ اما باجي اغراض البيت من منظفات أخذ الحجم العائلي تكفيني 3 شهور مع ان …"
-    },
-    {
-      "title": "حلم دعوة شخص للإسلام",
-      "url": "https://forum.uaewomen.net/showthread.php/1353163-%D8%AD%D9%84%D9%85-%D8%AF%D8%B9%D9%88%D8%A9-%D8%B4%D8%AE%D8%B5-%D9%84%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85",
-      "snippet": "Oct 13, 2017 · رد: حلم دعوة شخص للإسلام تفيدي الناس للدعوة الى الله وعمل الطاعات من خلال مجال قسمك والله اعلم الإنتقال السريعتفسير الاحلام الأعلى أقسام الموقع لوحة التحكم الرسائل …"
-    },
-    {
-      "title": "كـــعكة الشوكولاتــــهـ غيييييير بالإنجليزي وبالعربي :: مترجم ^^ بالخطوات",
-      "url": "https://forum.uaewomen.net/showthread.php/667555-%D9%83%D9%80%D9%80%D9%80%D8%B9%D9%83%D8%A9-%D8%A7%D9%84%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%80%D9%80%D9%80%D9%80%D9%87%D9%80-%D8%BA%D9%8A%D9%8A%D9%8A%D9%8A%D9%8A%D9%8A%D8%B1-%D8%A8%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A-%D9%88%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D8%A8%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA",
-      "snippet": "Mar 9, 2010 · سيدات الامارات عالم حواء عالم الطبخ الحلويات كـــعكة الشوكولاتــــهـ غيييييير بالإنجليزي وبالعربي :: مترجم ^^ بالخطوات : إذهب إلى الصفحة: النتائج 1 إلى 15 من 211"
-    }
-  ]
+  "sources": []
 }

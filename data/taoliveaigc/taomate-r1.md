@@ -2,52 +2,50 @@
 
 ## Resumen
 
-TaoMate-R1 es un conjunto de adaptadores LoRA para generación conjunta de audio y vídeo en streaming, desarrollado por el equipo TaoLive AIGC de Alibaba sobre el modelo base MiniMax H3. No se trata de un modelo completo, sino de dos bancos de adaptadores (denominados "cold" y "warm") que se cargan sobre la partición Ref2VA del modelo MiniMax H3 para habilitar una modalidad de referencia a vídeo con audio (reference-to-video con audio generado). El modelo está diseñado para producir clips de audio-vídeo condicionados por imágenes o vídeos de referencia, manteniendo coherencia visual con las referencias proporcionadas.
+TaoMate-R1 es un conjunto de adaptadores LoRA para generación conjunta de audio y vídeo en streaming, condicionada por referencias visuales, construido sobre el modelo base MiniMax H3. Lo desarrolla el equipo TaoLive AIGC de Alibaba y se publica bajo la licencia comunitaria MiniMax H3. No se trata de un modelo completo, sino de dos bancos de adaptadores (uno de apertura, "cold", y otro de continuación, "warm") que se cargan sobre la partición Ref2VA del modelo base para habilitar la generación reference-to-video con audio sincronizado.
 
-La innovación principal reside en su enfoque de generación en streaming: el primer fragmento (chunk) se genera con el adaptador "cold" y los fragmentos posteriores con el adaptador "warm", que aprovecha el historial limpio de audio-vídeo ya generado. Cada fragmento requiere únicamente tres pasos de denoising, lo que reduce el coste computacional frente a pipelines de difusión tradicionales de decenas de pasos. Los adaptadores tienen rango 128 y alpha 128, almacenados en float32, y suman 416 tensores LoRA nativos de H3 por banco.
+El modelo resuelve el problema de generar vídeo con audio de forma continua y por fragmentos (chunks), manteniendo coherencia temporal entre ellos gracias a una especialización de rol temporal: el adaptador de apertura procesa el primer fragmento y el de continuación trabaja con historial limpio de audio y vídeo. Cada fragmento se genera en tres pasos de denoising. Es relevante porque aborda la generación audiovisual de referencia en modo streaming, un escenario poco cubierto por los modelos de difusión de vídeo convencionales, que suelen generar clips cerrados sin continuidad.
 
-El modelo es relevante para quienes trabajan en generación de vídeo con audio sincronizado, avatares parlantes o presentaciones de producto automatizadas, ya que permite condicionar la generación por múltiples referencias visuales (imágenes o vídeos) y producir audio de forma nativa sin depender de una pista de audio externa. Su licencia es la MiniMax H3 Community License, lo que condiciona el uso comercial.
+La arquitectura subyacente es la del modelo MiniMax H3 (no se detalla en la información disponible), y los adaptadores son LoRA de rango 128 y alpha 128 almacenados en float32, con 416 tensores nativos H3 por banco. El repositorio ocupa 5,0 GB y la información disponible no especifica parámetros totales, longitud de contexto ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (rank 128, alpha 128) sobre MiniMax H3, partición Ref2VA; generación audio-vídeo por denoising en streaming |
-| Parametros totales | no disponible (adaptadores LoRA; el modelo base MiniMax H3 no reporta cifra en la información disponible) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (generación por fragmentos; duración de ejemplo 10 s) |
-| Tipos de cuantizacion | no disponible (adaptadores almacenados en float32) |
+| Arquitectura | Adaptadores LoRA sobre MiniMax H3 (partición Ref2VA); arquitectura del base no disponible |
+| Parametros totales | no disponible (adaptadores LoRA; base MiniMax H3 no cuantificado en la informacion) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (generación por fragmentos en streaming; duración de ejemplo 10 s) |
+| Tipos de cuantizacion | no disponible (adaptadores en float32; el base no se detalla) |
 | Idiomas soportados | no disponible |
 | Licencia | minimax-h3-community (MiniMax H3 Community License Agreement) |
 | Formato de pesos | safetensors (adapter_model.safetensors por banco) |
 
 ## Arquitectura y entrenamiento
 
-TaoMate-R1 no es un transformer autónomo, sino un par de adaptadores LoRA que se inyectan en la partición Ref2VA del modelo MiniMax H3. Cada banco contiene 416 tensores LoRA nativos de H3 con rango 128 y alpha 128, almacenados en float32. El pipeline funciona en modo streaming: el adaptador "cold" gestiona el primer fragmento de la secuencia, mientras que el "warm" gestiona los fragmentos de continuación apoyándose en el historial limpio de audio-vídeo previamente generado. Cada fragmento se produce en tres pasos de denoising, lo que constituye la innovación técnica central frente a pipelines de difusión convencionales.
+TaoMate-R1 no es un transformer entrenado desde cero, sino un par de adaptadores LoRA que se aplican sobre el modelo base MiniMax H3, concretamente sobre su partición Ref2VA (reference-to-video con audio). Cada banco de adaptadores contiene 416 tensores nativos H3 con rango 128 y alpha 128, almacenados en float32. La innovación principal es la especialización de rol temporal: un LoRA "cold" gestiona la generación del primer fragmento y un LoRA "warm" gestiona los fragmentos posteriores disponiendo de historial audiovisual limpio, lo que permite una generación en streaming coherente.
 
-La información disponible no detalla el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La model card menciona agradecimientos a MiniMax, Qwen, PyTorch y a los autores de Self Forcing, lo que sugiere que el entrenamiento se apoya en métodos de destilación o forcing para lograr la generación en pocos pasos, aunque no se especifica el procedimiento exacto. Tampoco se documenta la longitud de secuencia ni la resolución nativa de entrenamiento más allá del ejemplo a 768x1344.
+La generación se realiza en tres pasos de denoising por fragmento, con audio y vídeo generados de forma conjunta. El modelo acepta múltiples referencias visuales (imágenes o vídeos) cuyo orden de entrada se preserva; el audio de los vídeos de referencia se ignora y el audio de salida lo genera el modelo. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación conjunta de audio y vídeo: produce vídeo con pista de audio generada de forma nativa, sin necesidad de audio de entrada.
-- Reference-to-video: condiciona la generación por una o varias imágenes o vídeos de referencia, cuyo orden de argumentos se preserva.
-- Generación en streaming: divide la salida en fragmentos encadenados mediante los adaptadores cold y warm.
-- Generación en pocos pasos: tres pasos de denoising por fragmento.
-- Soporte de múltiples referencias visuales simultáneas (repitiendo `--reference-image` o `--reference-video`).
-- Ignora el audio de los vídeos de referencia; el audio de salida siempre lo genera el modelo.
-- Control de duración, resolución y semilla mediante parámetros de línea de comandos.
-- Ejecución multi-GPU (el ejemplo usa `--gpus 8`).
-- No se documentan capacidades de tool calling, agentes, razonamiento textual ni multilingüismo.
+- Generación conjunta de audio y vídeo en un mismo proceso de difusión.
+- Generación reference-to-video: condicionamiento por una o varias imágenes o vídeos de referencia.
+- Generación en streaming por fragmentos con coherencia temporal entre ellos.
+- Especialización de rol temporal mediante adaptadores de apertura y continuación.
+- Resolución de salida configurable (ejemplo: 768x1344) y duración configurable (ejemplo: 10 s).
+- Control de semilla para reproducibilidad.
+- Ejecución distribuida en múltiples GPU (ejemplo con 8 GPU).
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Presentaciones de producto automatizadas: el ejemplo incluido en la model card usa una imagen de presentador y una imagen de producto como referencias para generar un vídeo con audio en el que ambos aparecen de forma coherente. Es adecuado porque el modelo preserva la identidad visual de cada referencia.
-- Avatares parlantes y vídeo corporativo: a partir de una foto de una persona se puede generar un clip con voz y movimiento sincronizados, útil para comunicación interna o marketing sin rodaje.
-- Publicidad personalizada a escala: generación de variantes de un mismo anuncio cambiando las imágenes de referencia (producto, modelo, escenario) manteniendo el estilo y el audio generado.
-- Prototipado rápido de storyboards con audio: creadores que necesitan previsualizar escenas con sonido antes de producir el material final, aprovechando la generación en tres pasos por fragmento.
-- Demos interactivas y streaming: la arquitectura por fragmentos con adaptador warm permite encadenar secuencias largas manteniendo coherencia temporal, adecuada para aplicaciones de emisión en continuo.
-- E-commerce con vídeo generado: catálogos donde cada producto se anima con un presentador sintético a partir de dos imágenes de referencia, reduciendo costes de producción audiovisual.
-- Investigación en generación audio-vídeo condicionada: el par de adaptadores cold/warm y el esquema de pocos pasos sirven como base para estudiar destilación y streaming en modelos de difusión.
+- Publicidad de producto con presentador: se pasa una imagen del presentador y otra del producto como referencias y el modelo genera un vídeo con audio donde ambos aparecen, útil para creatividades de comercio electrónico sin rodaje.
+- Generación de vídeo promocional en streaming: el modo por fragmentos permite producir clips más largos que un único paso de difusión manteniendo continuidad audiovisual entre fragmentos.
+- Prototipado rápido de contenido para redes sociales: a partir de una o varias imágenes de referencia se obtienen clips con audio sincronizado en una sola ejecución, reduciendo el coste frente a pipelines separados de vídeo y audio.
+- Previsualización de guiones y storyboards: el equipo creativo puede convertir referencias visuales en vídeos con audio para validar escenas antes de producción.
+- Contenido con múltiples referencias ordenadas: al preservarse el orden de las referencias, se pueden construir escenas con varios elementos (por ejemplo, dos personajes o presentador y producto) controlando su disposición.
+- Investigación en generación audiovisual en streaming: los adaptadores publicados permiten reproducir y extender el método de especialización de rol temporal sobre MiniMax H3 para experimentación académica.
 
 ## Benchmarks y rendimiento
 
@@ -55,39 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repositorio de adaptadores ocupa 5,0 GB, pero la inferencia requiere además el modelo base MiniMax H3 partición Ref2VA, cuyo tamaño no se especifica en la información disponible.
-- El ejemplo oficial emplea 8 GPUs (`--gpus 8`), lo que indica que el despliegue de referencia es multi-GPU; no se detalla el modelo concreto de GPU.
-- No se dispone de estimación de VRAM por cuantización ni de datos de latencia o throughput.
-- Opciones de despliegue: el runtime propietario TaoMate-H3 (`python -m taomate_h3.ref2av`), instalado desde el repositorio GitHub del proyecto. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, lo cual es esperable al tratarse de un pipeline de difusión audio-vídeo y no de un LLM.
-- No cabe en GPU de consumo de forma documentada; la información disponible no confirma viabilidad en RTX 4090 u otras GPU consumer.
+- VRAM estimada para inferencia: no disponible; depende del modelo base MiniMax H3, cuyos requisitos no se detallan en la información proporcionada.
+- GPU recomendadas: no disponible; el ejemplo de uso del autor emplea 8 GPU en paralelo (`--gpus 8`).
+- Compatibilidad con GPU de consumo: no disponible; el ejemplo oficial requiere despliegue multi-GPU, por lo que no se documenta un caso de una sola GPU de consumo.
+- Opciones de despliegue: el runtime propio TaoMate-H3 (`python -m taomate_h3.ref2av`), con descarga del base y los adaptadores mediante `hf download`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (orientados a LLM, no a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| TaoMate-R1 | LoRA sobre MiniMax H3 (Ref2VA), audio-vídeo streaming | no disponible | fragmentos; ejemplo 10 s | minimax-h3-community | Hugging Face (TaoLiveAIGC/TaoMate-R1) |
-| MiniMax H3 (base) | Modelo base de generación | no disponible | no disponible | minimax-h3-community | Hugging Face (MiniMaxAI/MiniMax-H3) |
-| Alternativas de reference-to-video con audio | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información sobre modelos comparables de generación reference-to-video con audio en streaming en la documentación proporcionada.
 
-No se dispone de información sobre modelos comparables de la misma categoría (reference-to-video con audio generado) en los datos proporcionados, por lo que la comparativa se limita al modelo base y a la ausencia de alternativas documentadas.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TaoMate-R1 | Adaptadores LoRA sobre MiniMax H3 | no disponible | no disponible | minimax-h3-community | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Dependencia total del modelo base MiniMax H3: los adaptadores no funcionan de forma aislada y requieren descargar la partición Ref2VA.
-- Licencia MiniMax H3 Community License: impone condiciones específicas para uso comercial que deben revisarse antes de producción; no es una licencia open source estándar.
-- El audio de los vídeos de referencia se ignora, lo que impide reutilizar pistas de audio existentes.
-- Generación por fragmentos: la coherencia entre fragmentos depende del adaptador warm y del historial; no se documentan métricas de consistencia temporal.
-- No se documentan sesgos, tasas de alucinación visual ni limitaciones idiomáticas o de contexto.
-- El despliegue de referencia exige 8 GPUs, lo que limita su uso a entornos con infraestructura significativa.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria muy limitados.
-- No se especifican requisitos de VRAM ni compatibilidad con herramientas estándar de serving, lo que complica la integración en pipelines existentes.
+- No es un modelo autónomo: requiere descargar el modelo base MiniMax H3 (partición Ref2VA) y el runtime TaoMate-H3 para funcionar.
+- El audio de los vídeos de referencia se ignora; no se puede reutilizar audio de entrada como condición.
+- El ejemplo oficial exige 8 GPU, lo que limita su uso en entornos con pocos recursos.
+- No se documentan idiomas soportados ni evaluación multilingüe.
+- No hay benchmarks publicados que permitan evaluar calidad, fidelidad a las referencias ni sincronización audiovisual de forma objetiva.
+- Riesgo de sesgos y alucinaciones visuales no evaluado en la información disponible.
+- La licencia minimax-h3-community es distinta de las licencias open source estándar; deben revisarse sus términos antes de un uso comercial.
+- El repositorio tiene un número reducido de descargas (265) y likes (7), por lo que la validación comunitaria es escasa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/TaoLiveAIGC/TaoMate-R1
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Repositorio TaoMate-H3: https://github.com/TaoLiveAIGC/TaoMate-H3
-- Instrucciones Ref2VA: https://github.com/TaoLiveAIGC/TaoMate-H3#-ref2av-taomate-r1
-- Equipo TaoLive AIGC: https://github.com/TaoLiveAIGC
+- Modelo en Hugging Face: https://huggingface.co/TaoLiveAIGC/TaoMate-R1
+- Paper: https://huggingface.co/papers/2611.14307
+- Código (TaoMate-H3): https://github.com/TaoLiveAIGC/TaoMate-H3
+- Instrucciones de uso Ref2VA: https://github.com/TaoLiveAIGC/TaoMate-H3#-ref2av-taomate-r1
 - Vídeo de ejemplo: https://github.com/user-attachments/assets/8a95695b-3e6a-410f-a82d-e74169b06173
-- Licencia: LICENSE (incluido en el repositorio de Hugging Face)
+- Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Equipo TaoLive AIGC: https://github.com/TaoLiveAIGC

@@ -2,50 +2,50 @@
 
 ## Resumen
 
-oenogarum es un ajuste fino (fine-tune) del modelo multimodal google/gemma-4-31B-it, desarrollado por el usuario plantwaterer y publicado en Hugging Face. Su propósito es muy específico: responder preguntas de decisión con formato de elección múltiple devolviendo una probabilidad calibrada para cada opción, en lugar de una única respuesta categórica. Esto lo convierte en una pieza poco habitual dentro del ecosistema: no es un modelo conversacional generalista, sino un motor de decisión probabilística construido sobre un transformer de 31 273 088 876 parámetros.
+oenogarum es un ajuste fino (fine-tune) del modelo google/gemma-4-31B-it, desarrollado por el usuario plantwaterer, orientado especificamente a la toma de decisiones mediante preguntas de opcion multiple. A diferencia de un modelo generativo convencional, oenogarum no produce texto libre como respuesta principal: devuelve una distribucion de probabilidad sobre cada una de las opciones planteadas, lo que lo convierte en una herramienta de clasificacion y decision calibrada.
 
-El modelo conserva la arquitectura del Gemma 4 de 31B en su variante instruction-tuned, con atención completa en algunas capas y atención de ventana deslizante de 1 024 tokens en otras, pero sustituye la cabeza de salida estándar por una cabeza calibrada de última capa (`vbll_head.safetensors`) que transforma los logits de las letras de las opciones en probabilidades. Incluye además varios motores de inferencia empaquetados en el repositorio que implementan promediado sobre el orden de las opciones y correcciones bayesianas para preguntas de sí/no.
+El modelo parte de la arquitectura de Gemma 4 con 31.273.088.876 parametros totales (aproximadamente 31B) y anade una cabeza de ultima capa calibrada (`vbll_head.safetensors`) que transforma los logits de las letras de las opciones en probabilidades. Para preguntas de tipo si/no, aplica una correccion bayesiana de ultima capa (posterior de Laplace) sobre el estado oculto del modelo. La licencia es Apache-2.0 tanto para pesos como para codigo, lo que facilita su uso comercial.
 
-Su relevancia actual radica en que aborda un problema práctico poco cubierto: obtener distribuciones de probabilidad calibradas sobre alternativas discretas a partir de un LLM, algo útil en sistemas de apoyo a la decisión, evaluación de riesgos y pipelines de agentes donde se necesita incertidumbre cuantificada y no solo texto. La licencia Apache-2.0 y el tamaño del repositorio (62,6 GB) condicionan su despliegue a infraestructura con GPU de gama alta.
+Su relevancia actual radica en que ofrece un enfoque poco habitual: en lugar de pedir a un LLM que "razone" y emita una respuesta, el modelo esta disenado para producir decisiones probabilisticas calibradas con temperatura ajustada (T = 1.080) y promediado adaptativo por longitud de la peticion. Esto lo hace interesante para sistemas de decision automatizada donde se requiere una medida de incertidumbre, no solo una etiqueta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only multimodal (base Gemma 4), con capas de atención completa y capas de atención de ventana deslizante (ventana 1 024) |
-| Parametros totales | 31 273 088 876 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible de forma explícita; las capas de ventana deslizante usan ventana de 1 024 tokens |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; el ejemplo de uso emplea bf16) |
+| Arquitectura | Transformer (Gemma 4) con atencion hibrida: capas de atencion completa no causal (via `jev_mem`) y capas de ventana deslizante causal (ventana 1.024) |
+| Parametros totales | 31.273.088.876 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (ventana deslizante de 1.024 tokens en capas SWA; contexto total no especificado) |
+| Tipos de cuantizacion | no disponible (pesos en bf16 para inferencia segun el ejemplo; no se listan GGUF ni otras) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (`model-*.safetensors`, `vbll_head.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-31B-it, un transformer decoder-only multimodal (image-text-to-text) con atención híbrida: capas de atención completa y capas con ventana deslizante causal de 1 024 tokens. Sobre esa base, el fine-tune introduce una cabeza de última capa calibrada (`vbll_head.safetensors` y `vbll_head.json`) que se ejecuta en CPU en float64 y produce las probabilidades finales. Para preguntas de elección múltiple ordinarias, la salida es el softmax de los logits de las letras de las opciones en la posición de respuesta, dividido por una temperatura ajustada de T = 1,080; para preguntas de sí/no, se aplica un residuo bayesiano de última capa (posterior de Laplace, integrado) sobre el estado oculto que ajusta los dos logits.
+oenogarum se construye sobre google/gemma-4-31B-it mediante fine-tuning supervisado. La innovacion principal no esta en la arquitectura base, sino en dos componentes anadidos. El primero es una cabeza de ultima capa calibrada (`vbll_head.safetensors` con metadatos en `vbll_head.json`) que recibe el estado oculto final y los logits de las letras de las opciones (en fp32, con el soft-cap de logits del modelo) y produce las probabilidades en float64 sobre CPU. Para preguntas de opcion multiple ordinarias, la salida es el softmax de los logits de las letras dividido por una temperatura ajustada (T = 1.080); para preguntas si/no, se aplica un residual bayesiano de ultima capa (posterior de Laplace integrado) que ajusta los dos logits.
 
-Un detalle técnico crítico es la atención: en las capas de atención completa, los tokens de cada prompt atienden a todos los tokens del mismo prompt, y las capas de ventana deslizante permanecen causales. La atención estándar de transformers ejecutaría las capas de atención completa de forma causal y daría respuestas distintas, por lo que el modelo debe servirse con la función de atención `jev_mem` incluida en `fullft_mem.py`, que se registra en la interfaz de atención de transformers y se apoya en PyTorch SDPA (kernels memory-efficient y flash). El motor de inferencia rechaza cualquier otra configuración de atención. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El segundo componente diferencial es el mecanismo de atencion. En las capas de atencion completa, los tokens de cada prompt atienden a todos los tokens del mismo prompt (atencion bidireccional dentro del prompt), mientras que las capas de ventana deslizante permanecen causales con ventana 1.024. Esto implica que la atencion estandar de transformers daria respuestas distintas, por lo que el modelo debe servirse obligatoriamente con la funcion `jev_mem` de `fullft_mem.py`, que se registra en la interfaz de atencion de transformers y opera sobre PyTorch SDPA (kernels memory-efficient y flash). Los motores de inferencia rechazan cualquier otra atencion. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO.
 
 ## Capacidades
 
-- Respuesta a preguntas de decisión con elección múltiple, devolviendo una probabilidad calibrada por opción (hasta 52 opciones por pregunta, letradas A-Z y a-z).
-- Preguntas de sí/no con definiciones opcionales de los criterios (`Yes: <definición>` / `No: <definición>`) y corrección bayesiana sobre los dos logits.
-- Promediado sobre el orden de las opciones (order averaging) en peticiones con longitud L ≤ 939, mediante cuatro órdenes de opciones y promedio de resultados.
-- Procesamiento de estado (state) e instrucciones por pregunta, con soporte de estado en forma de cadena o diccionario.
-- Capacidades multimodales heredadas del modelo base Gemma 4 (image-text-to-text), aunque la model card no detalla su uso en el fine-tune.
-- Integración con el kit Decision Index mediante motores de inferencia intercambiables (`lenavg_bayes_engine`, `lenavg_engine`, `dikit_engine`).
-- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso en la información disponible.
+- Toma de decisiones mediante preguntas de opcion multiple: devuelve una probabilidad calibrada por cada opcion (hasta 52 opciones, letras A-Z y a-z).
+- Preguntas de tipo si/no con correccion bayesiana de ultima capa sobre el estado oculto.
+- Promediado adaptativo por orden de opciones (length-adaptive option-order averaging) para peticiones con L <= 939, que reordena las opciones y promedia los resultados para reducir sesgos posicionales.
+- Procesamiento de multiples preguntas dentro de una misma peticion, cada una con su propio prompt y criterios.
+- Soporte de definiciones de criterios para preguntas si/no (mostradas como `Yes: <definicion>` / `No: <definicion>`).
+- Inferencia por lotes mediante el kit Decision Index con motores seleccionables (`LenAvgBayesEngine`, `LenAvgEngine`, `DikitEngine`).
+- No se documentan capacidades de generacion de texto libre, codigo, matematicas, vision, tool calling ni agentes multi-paso como funcionalidad principal.
 
 ## Casos de uso
 
-- Apoyo a la decisión operativa: dado un estado del mundo y un conjunto de criterios, el modelo devuelve la probabilidad de cada alternativa (por ejemplo, jugar, mover a interior o posponer un partido según la previsión de lluvia), lo que permite umbrales de decisión explícitos y auditables.
-- Evaluación de riesgo con incertidumbre cuantificada: en pipelines donde no basta una respuesta categórica, las probabilidades calibradas permiten priorizar casos y fijar políticas de escalado.
-- Sistemas de triaje: clasificación probabilística de incidencias en múltiples categorías mutuamente excluyentes, aprovechando la calibración por temperatura para comparar umbrales entre clases.
-- Agentes con selección de acciones: el modelo puede actuar como módulo de selección entre un conjunto discreto de acciones candidatas, con la distribución de probabilidad como señal para la política del agente.
-- Investigación en calibración y evaluación de LLM: el repositorio y sus motores permiten reproducir experimentos de promediado por orden de opciones y correcciones bayesianas de última capa.
-- Encuestas y cuestionarios automatizados: generación de distribuciones de respuesta sobre opciones predefinidas con control del orden para mitigar sesgos posicionales.
-- Análisis de escenarios con preguntas de sí/no: estimación de probabilidad de eventos binarios (por ejemplo, probabilidad de lluvia intensa) combinada con preguntas de elección en la misma petición.
+- Sistemas de decision automatizada con incertidumbre: el modelo devuelve probabilidades calibradas por opcion, lo que permite umbralizar decisiones y derivar casos ambiguos a revision humana, algo que un LLM generativo no ofrece de forma nativa.
+- Clasificacion de intenciones en atencion al cliente: dada una consulta y un conjunto de categorias de accion (por ejemplo, reembolso, escalado, informacion), el modelo asigna probabilidades a cada una y el sistema enruta segun la mas probable y la confianza.
+- Evaluacion de politicas y reglas de negocio: con preguntas si/no corregidas bayesianamente, se puede verificar el cumplimiento de condiciones (por ejemplo, "¿es elegible para el descuento?") con una medida de incertidumbre asociada.
+- Triaje en entornos sanitarios o de emergencias: ante un estado descrito y varias acciones posibles, el modelo puntua cada opcion, sirviendo como apoyo a la decision con probabilidades explicitas.
+- Analisis de riesgo en finanzas u operaciones: preguntas de opcion multiple sobre escenarios (por ejemplo, aprobar, rechazar, revisar) con calibracion de temperatura que facilita comparar umbrales entre lotes.
+- Investigacion en calibracion y decision bajo incertidumbre: el modelo y su cabeza bayesiana sirven como banco de pruebas para estudiar promediado por orden, temperatura ajustada y posteriores de Laplace en LLMs.
+- Moderacion o etiquetado semiautomatico: clasificacion de contenido en categorias predefinidas con probabilidades, util para priorizar revisiones.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 62,5 GB solo para los pesos (31,27 mil millones de parámetros × 2 bytes), más overhead de activaciones y caché KV; no cabe en GPUs de consumo de 24 GB.
-- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU. En GPUs de 40 GB (A100 40 GB) no cabría en bf16 sin cuantización o paralelismo.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 en bf16; requeriría cuantización agresiva no documentada en la información disponible.
-- Despliegue: el modelo se sirve mediante los motores del kit Decision Index (`lenavg_bayes_engine:LenAvgBayesEngine` o `dikit_engine:DikitEngine`) sobre transformers y PyTorch SDPA; la cabeza se ejecuta en CPU en float64. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El promediado por orden de opciones multiplica por cuatro el número de pasadas por pregunta en peticiones con L ≤ 939, lo que incrementa proporcionalmente el coste de inferencia.
+- VRAM estimada para inferencia en bf16: aproximadamente 62,6 GB de pesos (tamano del repo), por lo que se requiere al menos una GPU con 80 GB (A100 80GB, H100 80GB) para cargar el modelo completo en bf16.
+- El ejemplo de uso indica `bf16 on "cuda"` y que la cabeza se ejecuta en CPU en float64, lo que anade un pequeno coste de CPU por peticion.
+- No cabe en GPUs de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) sin cuantizacion, y no se documentan pesos cuantizados (GGUF, AWQ, GPTQ) en la informacion disponible.
+- Opciones de despliegue: el kit Decision Index (`decision_index run --engine ...`) con PyTorch SDPA; no se documenta soporte para vLLM, TGI, llama.cpp ni Ollama, y de hecho el motor rechaza cualquier atencion distinta de `jev_mem`.
+- Latencia y throughput estimados: no disponibles. El promediado por orden multiplica por 4 el numero de pasadas para peticiones con L <= 939, lo que incrementa el coste computacional respecto a una unica pasada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oenogarum | 31,27 B | no disponible (ventana deslizante 1 024) | Fine-tune de decisión probabilística sobre Gemma 4 31B | Apache-2.0 | Hugging Face |
-| google/gemma-4-31B-it | 31 B (aprox., según modelo base) | no disponible | Modelo base instruction-tuned multimodal | Términos de Gemma (no verificados en la información disponible) | Hugging Face |
-| Alternativas de decisión probabilística de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| oenogarum | 31,27B | no disponible (SWA 1.024) | Decision multiple-choice con cabeza calibrada y correccion bayesiana | Apache-2.0 | Hugging Face + GitHub |
+| google/gemma-4-31B-it | ~31B | no disponible | LLM generativo instructivo multimodal (image-text-to-text) | Gemma (terminos propios) | Hugging Face |
+| Modelos generativos de ~30B (familia Llama, Mistral, Qwen) | ~30B | variable segun modelo | Generacion de texto libre y chat | variable | Hugging Face |
 
-No se dispone de información sobre benchmarks comparativos ni sobre otros fine-tunes de propósito equivalente que permitan una comparación cuantitativa fiable.
+La comparativa directa con alternativas especificas de decision multiple-choice calibrada no esta disponible en la informacion proporcionada. Frente a su modelo base, oenogarum restringe la salida a probabilidades sobre opciones y exige un motor de atencion propio, por lo que no es un sustituto generico de Gemma 4.
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado en preguntas de elección múltiple y sí/no; no es un modelo conversacional generalista y su uso fuera de ese formato no está documentado.
-- La atención debe servirse con la función `jev_mem`; usar la atención estándar de transformers produce respuestas distintas. Cualquier despliegue que ignore este requisito invalida los resultados.
-- La cabeza calibrada es obligatoria: los logits de las letras por sí solos no constituyen la respuesta del modelo.
-- El promediado por orden de opciones solo se aplica a peticiones con L ≤ 939; por encima de ese umbral se usa una única pasada, con posible pérdida de robustez frente al orden.
-- No se documentan sesgos conocidos, tasas de alucinación ni evaluación multilingüe; los idiomas soportados figuran como no disponibles.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base Gemma 4 puede estar sujeto a términos adicionales de Google que conviene verificar antes de producción.
-- El tamaño de 31B en bf16 exige infraestructura de gama alta (≥ 80 GB de VRAM); no hay información sobre cuantizaciones soportadas ni sobre su impacto en la calibración.
-- El repositorio de GitHub (`treewaterer/oenogarum`) contiene solo el código y la model card; los pesos se alojan en Hugging Face, lo que condiciona la reproducibilidad a la disponibilidad del Hub.
+- El modelo no es un generador de texto libre: su salida es una distribucion de probabilidad sobre opciones; usarlo como chatbot daria resultados no representativos.
+- La atencion no estandar (bidireccional en capas completas) obliga a usar `jev_mem`; con la atencion por defecto de transformers las respuestas difieren, lo que supone un riesgo alto de despliegue incorrecto.
+- El promediado por orden solo se aplica a peticiones con L <= 939; por encima de ese umbral se usa una unica pasada, con posible perdida de robustez frente al orden de opciones.
+- La cabeza debe ejecutarse en CPU en float64; omitirla o usar solo los logits de las letras produce una salida incorrecta.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinacion; al ser un fine-tune sobre Gemma 4, hereda los sesgos del modelo base, no cuantificados aqui.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Gemma 4 puede estar sujeto a terminos adicionales de Google que conviene verificar antes de produccion.
+- Con 363 descargas y 0 likes, el modelo tiene una validacion externa muy limitada; no hay benchmarks publicados que respalden su calidad.
+- El repo ocupa 62,6 GB y requiere hardware de gama alta (80 GB de VRAM en bf16), lo que limita su adopcion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/plantwaterer/oenogarum
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Repositorio espejo en GitHub: https://github.com/treewaterer/oenogarum
+- Repositorio GitHub (codigo y model card): https://github.com/treewaterer/oenogarum
 - Kit Decision Index: https://github.com/apolinario/decision-index
+- Commit del kit usado en el ejemplo: https://github.com/apolinario/decision-index@9eb2dbe2a358004c8782c66e40a83ac07b953fec

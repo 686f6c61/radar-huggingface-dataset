@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 226,
+  "downloads_30d": 227,
   "trending_score": 0,
   "parameters": 2802968867,
   "parameters_human": "2.80B",
@@ -103,11 +103,5 @@
       "value": 42.6
     }
   ],
-  "sources": [
-    {
-      "title": "Housto4 (Ivan H) - Hugging Face",
-      "url": "https://huggingface.co/Housto4/datasets",
-      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a dataset about 2 months ago"
-    }
-  ]
+  "sources": []
 }

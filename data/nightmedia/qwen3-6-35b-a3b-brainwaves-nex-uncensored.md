@@ -2,113 +2,113 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored es un modelo de lenguaje publicado en Hugging Face por el usuario nightmedia, construido como un merge experimental a partir de varios modelos base y adaptadores. Segun la nomenclatura del identificador (35B-A3B) y las etiquetas del repositorio (qwen3_6, qwen3_5), se trata de un transformer de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, derivado de la familia Qwen 3.6. El repositorio se declara ademas como multimodal, con pipeline image-text-to-text.
+Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored es un modelo de lenguaje de tipo mezcla de expertos (MoE) publicado por el usuario nightmedia en Hugging Face. Se trata de una fusión (merge) de dos modelos: nightmedia/Qwen3.6-35B-A3B-Brainwaves y orcarouter/Nex-N2.5-mini-Uncensored, construida sobre la familia Qwen3.6-35B-A3B y sobre una constelación de modelos participantes que incluyen Iris-mini, Thomson-1.0-Small, Qwen-AgentWorld-35B-A3B, Fable-Holo3.1, FSM y SuperQwen-AgentWorld-35B-A3B-abliterated. El resultado es un modelo de aproximadamente 35.950 millones de parámetros totales con arquitectura MoE (etiquetada como qwen3_5_moe en los tags) y una orientación explícita a razonamiento, código, matemáticas y conversación sin censura.
 
-El modelo se presenta con etiquetas que describen destilacion, razonamiento con cadenas de pensamiento largas (long-cot), ajuste por instrucciones mediante SFT con LoRA y conversacion multi-turno. Cubre los idiomas ingles, chino, japones y espanol, y se publica bajo licencia Apache 2.0, aunque con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
+El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, con un tamaño de repositorio de 71,9 GB, lo que refleja la presencia de pesos en bf16 junto con variantes cuantizadas en el propio repositorio. La model card documenta de forma inusual un conjunto de evaluaciones propias bajo la etiqueta "brainwaves" (ARC, ARC/e, BoolQ, HellaSwag, OpenBookQA, PIQA y Winogrande) para distintas cuantizaciones (bf16, mxfp8, qx86-hi, qx64-hi, mxfp4) y para distintos números de expertos activos (de 6 a 12), además de métricas de perplejidad, memoria pico y tokens por segundo.
 
-Es relevante ahora como ejemplo del ecosistema de merges comunitarios sobre arquitecturas MoE eficientes en inferencia, donde un modelo de 35B totales mantiene un coste de computo por token cercano al de un modelo de 3B. No obstante, la ficha debe leerse con cautela: el repositorio no incluye resultados de benchmarks, tiene un historico de 0 descargas y 1 like, y no documenta la longitud de contexto ni la composicion del dataset de entrenamiento. La fecha de publicacion indicada es el 19 de septiembre de 2026.
+Su relevancia actual reside en dos factores: por un lado, es un ejemplo de la práctica de fusionar modelos abliterated y uncensored sobre bases Qwen MoE para obtener un modelo con capacidades de agente y razonamiento sin las restricciones de alineamiento del modelo original; por otro, la documentación de cuantizaciones mxfp8/mxfp4 y del efecto del número de expertos activos sobre calidad y rendimiento aporta datos útiles para quienes despliegan modelos MoE de este tamaño en hardware limitado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) sobre transformer, segun la nomenclatura del identificador y las etiquetas qwen3_6 / qwen3_5; no confirmado en documentacion del repositorio |
-| Parametros totales | 35.000 millones (segun nomenclatura "35B" del identificador) |
-| Parametros activos | Aproximadamente 3.000 millones (segun nomenclatura "A3B" del identificador) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Las etiquetas mencionan mxfp8, mxfp4 y mlx; no se detallan variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | Ingles (en), chino (zh), japones (ja), espanol (es) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible en detalle; libreria declarada transformers, con etiquetas de unsloth y mergekit |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Pipeline | image-text-to-text (multimodal entrada imagen + texto) |
-| Fecha de publicacion | 19 de septiembre de 2026 |
+| Arquitectura | Mezcla de expertos (MoE) basada en la familia Qwen3.5/Qwen3.6 (tag qwen3_5_moe); pipeline image-text-to-text |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | no disponible (la model card solo documenta el numero de expertos activos, de 6 a 12, sin indicar el total de expertos ni los parametros activos) |
+| Longitud de contexto | no disponible (la model card menciona una configuracion "1M" en las tablas de evaluacion, sin especificar si corresponde a longitud de contexto) |
+| Tipos de cuantizacion | bf16, mxfp8, mxfp4, qx86-hi, qx64-hi (variantes propias documentadas en la model card); tags adicionales mxfp8, mxfp4 y mlx |
+| Idiomas soportados | en, zh, ja, es |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (libreria transformers); tamano del repositorio 71,9 GB |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no documenta la arquitectura interna mas alla de lo que sugieren el identificador y las etiquetas. La nomenclatura 35B-A3B apunta a un diseno de mezcla de expertos con enrutado disperso, en el que cada token activa una fraccion reducida del total de parametros. Las etiquetas qwen3_6, qwen3_5, qwen y qwen3.6 indican que la base arquitectonica procede de la familia Qwen 3.6, mientras que merge, mergekit, fable y Deckard(qx) senalan que el modelo se ha construido combinando pesos de otros modelos mediante herramientas de merge.
+La arquitectura es una mezcla de expertos (MoE) derivada de la familia Qwen3.5/Qwen3.6, con etiqueta de pipeline image-text-to-text, lo que sugiere capacidades multimodales de entrada imagen-texto, aunque la model card no detalla la torre visual ni la configuración exacta de atención. El modelo no se ha entrenado desde cero: es el resultado de una fusión de pesos (merge) entre nightmedia/Qwen3.6-35B-A3B-Brainwaves y orcarouter/Nex-N2.5-mini-Uncensored, y en su linaje figuran además AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B y Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated. Los tags indican el uso de mergekit y de técnicas de destilación, SFT y LoRA en los modelos de origen, así como un ajuste orientado a chain-of-thought largo (long-cot).
 
-En cuanto al entrenamiento, las etiquetas mencionan distillation, reasoning, chain-of-thought, long-cot, sft, lora e instruction-tuned, lo que indica un pipeline de ajuste supervisado con adaptadores LoRA sobre un modelo destilado para razonamiento de cadena larga. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. El repositorio lista como modelos base o relacionados AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, orcarouter/Nex-N2.5-mini-Uncensored y Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated. No se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o atencion lineal.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en esta fusión concreta. La innovación técnica documentada por el autor no está en el entrenamiento, sino en la evaluación sistemática de cuantizaciones (mxfp8, mxfp4, qx86-hi, qx64-hi) y en el barrido del número de expertos activos (6 a 12), con métricas de perplejidad, memoria pico y tokens por segundo para cada configuración. La model card incluye además referencias a despliegue en MLX, lo que apunta a soporte para hardware Apple Silicon.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato instruccional (instruction-tuned), orientada a dialogos multi-turno.
-- Razonamiento explicito con cadenas de pensamiento largas (long-cot), segun las etiquetas reasoning, chain-of-thought y long-cot.
-- Capacidades declaradas en matematicas, STEM, investigacion y generacion de codigo (etiquetas math, stem, coding, research).
-- Procesamiento multimodal de entrada imagen + texto, ya que el pipeline declarado es image-text-to-text.
-- Soporte multilingue en ingles, chino, japones y espanol.
-- Perfil "uncensored" segun el nombre del modelo, orientado a reducir rechazos en la generacion; no se detalla la metodologia aplicada.
-- Etiqueta endpoints_compatible, que indica compatibilidad con endpoints gestionados de Hugging Face.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada. El modelo base Qwen/Qwen-AgentWorld-35B-A3B sugiere orientacion a agentes, pero no se confirma ninguna capacidad de agente ni de razonamiento multi-paso en la documentacion del repositorio.
-- Capacidades de audio o de vision mas alla de la entrada de imagen: no disponibles.
+- Generación de texto conversacional multi-turno, con orientación explícita a instrucciones y a razonamiento paso a paso (chain-of-thought, long-cot).
+- Razonamiento matemático y de tipo STEM, según los tags math y stem de la model card.
+- Generación y asistencia en código (tag coding), incluyendo tareas de programación dentro de flujos de agente.
+- Capacidades de agente y razonamiento multi-paso, heredadas de los modelos Qwen-AgentWorld-35B-A3B y SuperQwen-AgentWorld-35B-A3B-abliterated presentes en el linaje.
+- Entrada multimodal imagen-texto, según el pipeline declarado (image-text-to-text).
+- Multilingüe en inglés, chino, japonés y español.
+- Comportamiento "uncensored": la fusión incorpora un modelo sin alineamiento restrictivo (Nex-N2.5-mini-Uncensored), lo que reduce los rechazos a peticiones que el modelo base rechazaría.
+- Soporte de tool calling y function calling: no documentado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales multilingues: el modelo cubre en, zh, ja y es, por lo que puede utilizarse en un chatbot interno que atienda consultas en esos cuatro idiomas sin desplegar un modelo distinto por lengua; conviene validar antes la calidad real en japones y espanol, ya que no hay benchmarks publicados.
-- Experimentacion en investigacion sobre merges y destilacion: dado su caracter experimental y la lista de modelos base, es util como punto de partida para estudiar como afecta la combinacion de pesos al comportamiento de un MoE de 35B con 3B activos.
-- Procesamiento de documentos con componente visual: al declarar pipeline image-text-to-text, puede emplearse para tareas de descripcion de imagenes o de pregunta-respuesta sobre capturas y diagramas, siempre que se valide la calidad multimodal, que no viene documentada.
-- Generacion asistida de codigo en entornos de investigacion: las etiquetas coding y stem sugieren uso en autocompletado y explicacion de fragmentos de codigo, aunque sin datos de HumanEval ni MBPP no es recomendable integrarlo en un pipeline de CI/CD en produccion sin evaluacion previa.
-- Razonamiento matematico paso a paso con fines didacticos: su orientacion a long-cot permite generar explicaciones extensas de problemas, utiles para materiales de formacion o para generar trazas de razonamiento que luego se revisen manualmente.
-- Despliegue con presupuesto de computo ajustado en comparacion con modelos densos de 35B: gracias a los aproximadamente 3.000 millones de parametros activos, el coste de inferencia por token es cercano al de un modelo mucho menor, lo que permite servir el modelo en una unica GPU de 80 GB en precision reducida o en una GPU de 24 GB con cuantizacion de 4 bits.
-- Base para ajuste fino adicional: al ser un modelo instruction-tuned con licencia Apache 2.0, puede servir como punto de partida para LoRA especificos de dominio, siempre que se respeten las condiciones de los modelos base utilizados en el merge.
-- Investigacion sobre alineacion y comportamiento "uncensored": interesante para comparar tasas de rechazo y de fuga de contenido frente a versiones alineadas de la misma familia, en un entorno controlado y con supervision humana.
+- Asistente de razonamiento técnico en local: el modelo puede resolver problemas de matemáticas, física o ingeniería con cadenas de razonamiento largas, aprovechando su orientación long-cot y su despliegue en cuantizaciones mxfp4 de 25,33 GB de memoria pico, viable en una GPU de 32 GB.
+- Generación de código en pipelines de desarrollo: con el tag coding y su naturaleza instruction-tuned, puede integrarse como generador de parches o de tests en flujos automatizados, aunque la ausencia de documentación sobre tool calling obliga a validar esa integración antes de producción.
+- Agente autónomo de investigación: su linaje incluye modelos AgentWorld, lo que lo hace adecuado para tareas de varios pasos con consulta de herramientas y planificación, siempre que se implemente el bucle de agente en el orquestador externo.
+- Atención al cliente y conversación multi-turno en español: es uno de los cuatro idiomas declarados, y el formato conversacional instruction-tuned permite desplegarlo como backend de chat en aplicaciones de soporte.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text permite extraer y razonar sobre contenido de capturas, formularios o diagramas combinados con instrucciones textuales.
+- Experimentación en investigación sobre alineamiento y censura: al ser un modelo uncensored fusionado, sirve como objeto de estudio para comparar comportamientos de rechazo frente a Qwen3.6-35B-A3B-Instruct, cuyo rendimiento en ARC y perplejidad se documenta en la propia model card.
+- Despliegue en hardware Apple Silicon: la presencia de tags mlx y de cuantizaciones mxfp4/mxfp8 sugiere viabilidad en equipos con memoria unificada, útil para prototipado local sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni de ninguna otra evaluacion, y la busqueda web realizada no devolvio documentacion tecnica asociada al modelo.
+La model card publica evaluaciones propias (formato "brainwaves") sobre ARC, ARC/e, BoolQ, HellaSwag, OpenBookQA, PIQA y Winogrande, además de perplejidad, memoria pico y tokens por segundo. No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
+
+| Configuracion | ARC | ARC/e | BoolQ | HellaSwag | OpenBookQA | PIQA | Winogrande |
+|---|---|---|---|---|---|---|---|
+| bf16 | 0,668 | 0,866 | 0,906 | 0,777 | 0,446 | 0,817 | 0,727 |
+| mxfp8 | 0,653 | 0,856 | 0,905 | 0,780 | 0,454 | 0,828 | 0,737 |
+| qx86-hi | 0,664 | 0,864 | 0,907 | 0,777 | 0,438 | 0,825 | 0,738 |
+| qx64-hi | 0,677 | 0,870 | 0,909 | 0,774 | 0,446 | 0,819 | 0,719 |
+| mxfp4 | 0,647 | 0,852 | 0,907 | 0,776 | 0,446 | 0,826 | 0,697 |
+
+| Cuantizacion | Perplejidad | Memoria pico | Tokens/s |
+|---|---|---|---|
+| bf16 | 3,738 ± 0,023 | 76,15 GB | 1615 |
+| mxfp8 | 3,852 ± 0,024 | 42,65 GB | 1485 |
+| qx86-hi | 3,740 ± 0,023 | 45,50 GB | 1448 |
+| qx64-hi | 3,770 ± 0,023 | 36,91 GB | 1492 |
+| mxfp4 | 4,020 ± 0,026 | 25,33 GB | 1557 |
+
+Como referencia, el modelo base Qwen3.6-35B-A3B-Instruct obtiene en mxfp8 ARC 0,581, ARC/e 0,757, BoolQ 0,892, HellaSwag 0,751, OpenBookQA 0,428, PIQA 0,803 y Winogrande 0,688, con perplejidad 5,138 ± 0,037 y 1201 tokens/s en mxfp8 (25,33 GB en mxfp4 con perplejidad 5,158). El barrido de expertos activos muestra que 8 expertos (configuración marcada con asterisco) es el punto documentado por defecto, con degradación progresiva al reducir a 6 expertos y mejoras marginales en ARC al subir a 12 (0,676 en mxfp8) a costa de bajar de 1725 a 1309 tokens/s.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones derivadas del recuento de parametros indicado en el identificador (35B totales, 3B activos) y no proceden de mediciones publicadas por el autor:
-
-- VRAM estimada para inferencia con pesos en BF16/FP16: en torno a 70 GB, mas la memoria del contexto y de las estructuras de atencion.
-- VRAM estimada con pesos en FP8/MXFP8: en torno a 35 GB.
-- VRAM estimada con cuantizacion de 4 bits (MXFP4 o similar): en torno a 18-22 GB, dependiendo de la longitud de contexto.
-- GPU recomendadas para precision completa o FP8: NVIDIA H100 80 GB, A100 80 GB o dos A100 de 40 GB con tensor parallelism.
-- GPU profesionales de 48 GB (A6000, L40S) suficientes para FP8 con contextos moderados.
-- Cabe en GPU de consumo con cuantizacion de 4 bits: RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 5090 (32 GB). Con 35B parametros en 4 bits el margen para contextos largos es estrecho, por lo que se recomienda limitar la ventana o usar offloading.
-- En Apple Silicon, la etiqueta mlx indica soporte previsto para MLX; el requisito de memoria unificada seria de al menos 36-48 GB para una cuantizacion de 4 bits.
-- Opciones de despliegue: vLLM, SGLang y TGI para servir el modelo en formato transformers; llama.cpp u Ollama solo si se publican pesos GGUF, algo que no se confirma en la informacion disponible; MLX para equipos Apple.
-- Latencia y throughput: no disponibles. Cabe esperar un throughput por token mas alto que el de un modelo denso de 35B gracias a los 3B parametros activos, pero se trata de una expectativa no verificada.
+- VRAM estimada: 76,15 GB en bf16; 42,65 GB en mxfp8; 45,50 GB en qx86-hi; 36,91 GB en qx64-hi; 25,33 GB en mxfp4 (memoria pico medida por el autor).
+- GPU recomendadas: para bf16 se requiere una GPU de 80 GB (A100 80GB, H100); para mxfp8 y qx86-hi, una GPU de 48 GB (A6000, L40S) o superior; para mxfp4, una GPU de 32 GB (RTX 5090, V100 32GB) es suficiente según la memoria pico documentada.
+- Cabe en GPU de consumo: sí, en mxfp4 con 25,33 GB de memoria pico, lo que encaja en tarjetas de 32 GB; en 24 GB no hay margen documentado.
+- Opciones de despliegue: transformers (librería declarada), con soporte adicional para MLX según los tags y para cuantizaciones mxfp8/mxfp4. No se documenta compatibilidad explícita con vLLM, llama.cpp, Ollama o TGI.
+- Rendimiento: 1615 tokens/s en bf16, 1485 en mxfp8, 1492 en qx64-hi y 1557 en mxfp4, según las mediciones del autor; el throughput baja al aumentar el número de expertos activos (de 1725 tokens/s con 6 expertos a 1309 con 12 en mxfp8).
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks que permitan comparar el rendimiento. La tabla siguiente recoge unicamente la relacion entre este modelo y los modelos listados en su propia ficha de Hugging Face, con los datos disponibles.
-
-| Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | Modelo analizado | 35B totales / 3B activos (segun nomenclatura) | no disponible | Apache 2.0 | Gated, 0 descargas |
-| Qwen/Qwen-AgentWorld-35B-A3B | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
-| Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
-| nightmedia/Qwen3.6-35B-A3B-FSM | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
-| nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1 | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
-| AllSpark-Research/Iris-mini | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
-| orcarouter/Nex-N2.5-mini-Uncensored | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
-| thomsonreuters/Thomson-1.0-Small | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | 35,95 B (MoE) | no disponible | ARC 0,668 en bf16; perplejidad 3,738 en bf16 | Apache 2.0 | Hugging Face, 262 descargas |
+| Qwen3.6-35B-A3B-Instruct | no disponible | no disponible | ARC 0,581 en mxfp8; perplejidad 5,138 en mxfp8 | no disponible en esta ficha | modelo base de referencia |
+| nightmedia/Qwen3.6-35B-A3B-Brainwaves | no disponible | no disponible | ARC 0,648 en bf16; perplejidad no publicada | no disponible en esta ficha | Hugging Face |
+| orcarouter/Nex-N2.5-mini-Uncensored | no disponible | no disponible | ARC 0,439 en mxfp8; BoolQ 0,745 | no disponible en esta ficha | Hugging Face |
 
-No se dispone de datos verificados para comparar con alternativas externas de la misma categoria (por ejemplo, otros MoE de aproximadamente 30-35B con 3B activos), por lo que no se incluyen cifras que no puedan contrastarse.
+La comparación se limita a los modelos del linaje documentados en la model card, ya que no se dispone de datos de benchmarks de modelos externos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia verificable de rendimiento en tareas de razonamiento, codigo o matematicas. Cualquier uso en produccion exige una evaluacion propia previa.
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede complicar la automatizacion y el despliegue en pipelines de CI/CD.
-- Repositorio practicamente sin validacion externa: 0 descargas y 1 like en el momento de la consulta, sin issues ni discusiones publicas.
-- Modelo declarado como "uncensored": cabe esperar una tasa reducida de rechazos ante peticiones sensibles, con mayor riesgo de generar contenido inapropiado, sesgado o danino. Requiere filtros adicionales si se expone a usuarios finales.
-- Riesgo de alucinacion: no disponible ningun dato especifico, pero al tratarse de un merge sin evaluacion publicada el riesgo no puede acotarse con cifras.
-- Herencia de licencias de los modelos base: aunque la licencia declarada es Apache 2.0, el merge combina pesos de terceros (AllSpark-Research, Thomson Reuters, Qwen, entre otros) cuyas condiciones no se detallan. Antes de un uso comercial conviene verificar la licencia de cada modelo base, ya que podria imponer restricciones adicionales.
-- Limitaciones de contexto e idioma: la longitud de contexto no se documenta y los idiomas declarados se reducen a en, zh, ja y es. No hay garantias de comportamiento en otras lenguas.
-- Naturaleza experimental: las etiquetas experimental y research indican que no es un modelo pensado para produccion sin validacion exhaustiva.
-- Trazabilidad limitada del entrenamiento: se desconoce el volumen de datos, su composicion y si se aplicaron etapas de alineacion (RLHF/DPO), lo que dificulta evaluar sesgos sistematicos.
-- Fecha de publicacion futura respecto a la informacion de referencia (19 de septiembre de 2026), lo que refuerza la necesidad de tratar los datos de la ficha como no verificados de forma independiente.
+- Modelo experimental: los propios tags lo etiquetan como experimental y fruto de una fusión, sin una evaluación estandarizada publicada (MMLU, HumanEval, GSM8K no disponibles).
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual; al ser una fusión de modelos uncensored, la reducción de rechazos puede aumentar la generación de contenido no verificado.
+- Sesgos: no se publica ninguna evaluación de sesgos ni de seguridad; la incorporación de un modelo abliterated implica la eliminación deliberada de capas de rechazo, con el consiguiente riesgo de contenido dañino o inapropiado.
+- Limitaciones de idioma: solo se declaran en, zh, ja y es; no hay datos de rendimiento por idioma, por lo que la calidad en español y japonés no está cuantificada.
+- Longitud de contexto: no confirmada; la referencia "1M" de la model card no se especifica como ventana de contexto, por lo que no debe asumirse en producción.
+- Licencia: Apache 2.0 permite uso comercial, pero las licencias de los modelos fusionados (Iris-mini, Thomson-1.0-Small, Nex-N2.5-mini, entre otros) no se detallan y podrían imponer condiciones adicionales que conviene verificar antes de un despliegue comercial.
+- Soporte de tool calling y de agentes: no documentado explícitamente; el linaje AgentWorld sugiere capacidad, pero no hay especificación de formato.
+- Despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; las métricas de tokens/s proceden de la configuración del autor y pueden no reproducirse en otros entornos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
-- Modelo base declarado: https://huggingface.co/Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated
-- Modelo base declarado: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-FSM
-- Modelo base declarado: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1
-- Modelo base declarado: https://huggingface.co/AllSpark-Research/Iris-mini
-- Modelo base declarado: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored
-- Modelo base declarado: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
-- Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio documentacion tecnica asociada a este modelo.
+- Modelo componente: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves
+- Modelo componente: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored
+- Modelo de referencia: https://huggingface.co/nex-agi/Nex-N2.5-mini
+- Modelo del linaje: https://huggingface.co/AllSpark-Research/Iris-mini
+- Modelo del linaje: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
+- Modelo del linaje: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1
+- Modelo del linaje: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-FSM
+- Modelo del linaje: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
+- Modelo del linaje: https://huggingface.co/Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated

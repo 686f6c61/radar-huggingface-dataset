@@ -2,98 +2,86 @@
 
 ## Resumen
 
-`tiny-random/muse-spark-open` es un checkpoint de depuración publicado por el usuario `tiny-random`, inicializado con pesos aleatorios (semilla 42) a partir de la arquitectura de `meta-models/Muse-Spark-Open-816B-A42B`. No es un modelo entrenado: es una reproducción a escala minúscula (3.582.568 parámetros) del grafo y de las decisiones de diseño del modelo fuente, pensada para validar código de carga, preprocesado y despliegue sin necesidad de mover cientos de gigabytes de pesos.
+`tiny-random/muse-spark-open` es un modelo de prueba de inicialización aleatoria publicado por el usuario `tiny-random` en Hugging Face. No es un modelo entrenado ni utilizable para tareas reales: es una versión reducida y con pesos aleatorios del modelo base `meta-models/Muse-Spark-Open-816B-A42B`, creada explícitamente para test y depuración de infraestructura de inferencia. Su interés es exclusivamente técnico: permite validar pipelines de carga, tokenización, procesamiento multimodal y despliegue con las mismas interfaces (Transformers, SGLang) que el modelo grande, pero con un coste computacional mínimo.
 
-Su interés no está en las capacidades (los pesos son aleatorios y la salida es ruido), sino en que conserva intactas las particularidades estructurales del original: MoE con enrutamiento sigmoide top-8, *expert pooling*, normas centradas, puertas residuales y de atención, atención híbrida con RoPE deslizante y NoPE completo, codificación visual NaViT y un codificador de audio de cuatro etapas. Además mantiene sin cambios la tabla de vocabulario (202.048 entradas, *untied*) y la precisión de origen: BF16 general con routers y sesgos de corrección en FP32.
+La arquitectura del modelo fuente (y de esta réplica a escala) es un transformer con mezcla de expertos (MoE) y atención híbrida que alterna capas de atención deslizante y atención completa. El modelo original declara 816B parámetros totales con 42B activos y una ventana de contexto de 200k tokens según los nombres de fichero del tokenizador, además de capacidades multimodales de entrada (texto, imagen, vídeo y audio) con salida de texto. Esta réplica reduce drásticamente todas las dimensiones: 8 capas de texto, 32 expertos, hidden size de 8 y 3.582.568 parámetros totales, según los pesos safetensors.
 
-Es relevante ahora como herramienta de ingeniería: permite ejecutar de extremo a extremo la ruta multimodal texto+imagen+vídeo+audio → texto con Transformers y SGLang en una sola GPU (o incluso en CPU) antes de escalar al modelo de 816B, y sirve para escribir tests de integración reproducibles en CI.
+Su relevancia es acotada pero clara para desarrolladores: sirve como banco de pruebas reproducible para integrar el formato de pesos, el chat template, el procesador multimodal y las opciones de despliegue del modelo Muse-Spark-Open antes de escalar a hardware real. No debe confundirse con el modelo original ni usarse en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (texto + imagen + vídeo + audio → texto) con MoE de enrutamiento sigmoide top-8, *expert pooling*, normas centradas, puertas residuales y de atención, atención híbrida (sliding RoPE / full NoPE), codificador visual NaViT y codificador de audio de cuatro etapas |
-| Parámetros totales | 3.582.568 (3.580.264 en BF16 + 2.304 en FP32 según safetensors) |
-| Parámetros activos | 8 de 32 expertos por token en el checkpoint tiny; cifra de parámetros activos del modelo fuente no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (checkpoint distribuido en BF16 con routers en FP32; no se publican versiones GGUF, AWQ ni GPTQ) |
+| Arquitectura | Transformer MoE con atención híbrida (sliding/full) y torres de visión y audio; multimodal entrada texto+imagen+vídeo+audio, salida texto |
+| Parametros totales | 3.582.568 (según safetensors); el modelo base declara 816B |
+| Parametros activos | 8 expertos activados de 32 en la réplica; 8 de 256 y 42B activos en el modelo base |
+| Longitud de contexto | 4096 en el ejemplo de SGLang; el modelo base apunta a 200k por el nombre del fichero de tokenizador (no confirmado en config) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; routers en FP32) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (BF16; pesos y sesgos del router en FP32), archivo único `model.safetensors` de 7,2 MB |
-| Capas de texto | 8 en el tiny (62 en el modelo fuente), con patrón de atención sliding / full / sliding / sliding |
-| Cabezas Q / KV / dimensión de cabeza | 8 / 1 / 32 en el tiny (128 / 16 / 64 en el fuente) |
-| Expertos / expertos activados | 32 / 8 en el tiny (256 / 8 en el fuente) |
-| Anchura residual / pool de expertos / intermedio de experto | 8 / 4 / 16 en el tiny (8192 / 4096 / 4096 en el fuente) |
-| Visión | 8 capas, anchura 32, parche temporal 2, merge 2 en el tiny (50 / 1536 / 2 / 2 en el fuente) |
-| Audio | 4 etapas, profundidades de bloque [2, 2, 2, 2], frecuencia de muestreo 24 kHz (idéntico al fuente) |
-| Vocabulario | 202.048 entradas, sin atar (untied), idéntico al fuente |
-| Modalidades | Texto + imagen + vídeo + audio → texto |
+| Formato de pesos | safetensors (model.safetensors, 7,2 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo fuente es un transformer multimodal con mezcla de expertos: 62 capas de texto con un ciclo de atención fijo (sliding, full, sliding, sliding), 256 expertos con enrutamiento sigmoide top-8, *expert pooling* y anchuras residuales de 8192, pool de expertos de 4096 e intermedio de experto de 4096. La atención combina RoPE deslizante en las capas locales y atención NoPE completa en la capa global; se añaden normas centradas y puertas independientes para la rama residual y para la atención. Las torres de entrada son un codificador visual NaViT de 50 capas y anchura 1536, con parche temporal 2 y merge 2, y un codificador de audio de cuatro etapas con profundidades [2, 2, 2, 2] sobre forma de onda a 24 kHz. Los pesos de router y los sesgos de corrección se mantienen en FP32 mientras el resto del checkpoint está en BF16.
+El modelo replica la topología del Muse-Spark-Open-816B-A42B a escala mínima. La torre de texto usa 8 capas con un ciclo de atención que alterna mecanismos sliding y full, siguiendo los dos ciclos del modelo fuente. Emplea atención multi-cabeza con 8 cabezas de consulta, 1 cabeza KV y dimensión de cabeza 32 (128/16/64 en el original), con GQA. La capa MoE tiene 32 expertos locales con 8 activados por token, hidden size de MoE de 4 y anchura intermedia de experto de 16. El vocabulario es de 202.048 tokens y no está atado (untied), igual que el modelo fuente.
 
-El checkpoint tiny replica esa topología con dimensiones reducidas: 8 capas de texto (dos ciclos del patrón de atención del fuente), 8 cabezas Q con una sola KV de dimensión 32, 32 expertos de los que se activan 8, y una torre visual de 8 capas con anchura 32. El vocabulario se conserva íntegro (202.048 filas, sin atar), lo que con `hidden_size=8` implica unas 1,6 M de entradas por matriz de embedding y explica la mayor parte de los 3,58 M de parámetros totales. No hay entrenamiento: los pesos se generan con `set_seed(42)` y `_from_config`, y el autor documenta el script exacto de creación en la model card. No se dispone de información sobre dataset, número de tokens, RLHF/DPO ni proceso de alineamiento, ni del modelo fuente ni de este checkpoint.
+La parte multimodal incluye una torre de visión de 8 capas con anchura 32, parche temporal 2 y merge 2, y una torre de audio con 4 etapas de profundidad [2,2,2,2] y frecuencia de muestreo de 24 kHz. El checkpoint se guarda en BF16, salvo los pesos y sesgos del router de expertos, que se mantienen en FP32 para coincidir con el comportamiento del modelo original. No hay entrenamiento: los pesos se inicializan aleatoriamente con semilla 42 mediante `MuseSparkForConditionalGeneration._from_config`. No se dispone de información sobre datos de entrenamiento, RLHF/DPO ni innovaciones de decodificación del modelo base.
 
 ## Capacidades
 
-- El modelo no tiene capacidades funcionales: los pesos son aleatorios, por lo que la generación de texto, el razonamiento y las respuestas multimodales son ruido sin valor semántico.
-- Reproduce la interfaz multimodal completa (texto, imagen, vídeo y audio de 24 kHz en una misma plantilla de chat), lo que permite validar el `AutoProcessor` y el formateo de mensajes.
-- Soporta `apply_chat_template` con el parámetro `reasoning_effort`, lo que permite probar rutas de prompt con y sin modo de razonamiento a nivel de plantilla.
-- Mantiene la firma de `MuseSparkForConditionalGeneration` y las opciones `attn_implementation="sdpa"` y `experts_implementation="batched_mm"`, útiles para verificar el cableado de kernels.
-- Conserva el vocabulario de 202.048 entradas del modelo fuente, por lo que el tokenizador y los identificadores especiales son coherentes con el original.
-- Sirve como objetivo de pruebas para decodificación de vídeo (requiere FFmpeg) y para el pipeline de `VideoMetadata` con índices de fotogramas y fps.
-- Soporta ejecución multi-GPU mediante SGLang con `--tp-size` y `--ep-size`, lo que permite ensayar topologías de paralelismo de expertos.
+- Generación de texto autoregresiva con la interfaz `MuseSparkForConditionalGeneration` de Transformers.
+- Procesamiento de entrada multimodal: imagen, vídeo (frames predecodificados) y audio a 24 kHz, combinables en un mismo prompt.
+- Soporte de chat template con parámetro `reasoning_effort` en el procesador, lo que sugiere modos de razonamiento configurables en el modelo base.
+- Compatibilidad verificada con Transformers (SDPA, `experts_implementation="batched_mm"`) y con SGLang (TP y EP configurables).
+- Soporte de decodificación por lotes con `generate` y `max_new_tokens`.
+- No hay capacidades reales de razonamiento, código, matemáticas ni tool calling: los pesos son aleatorios y la salida es incoherente por diseño.
 
 ## Casos de uso
 
-- Tests de integración en CI: cargar el checkpoint con Transformers y ejecutar un `generate` de pocos tokens en cada *pull request* para detectar roturas en `MuseSparkForConditionalGeneration`, en el procesador o en la plantilla de chat sin coste de GPU.
-- Validación de pipelines multimodales: comprobar que imágenes PIL, fotogramas de vídeo apilados en NumPy y formas de onda float32 a 24 kHz llegan con las formas y el `dtype` correctos antes de pasar al modelo real.
-- Verificación de despliegues SGLang: ensayar la topología `--tp-size 4 --ep-size 4` exigida por los expertos BF16 (EP=TP) en un nodo con cuatro GPUs pequeñas, validando flags como `--attention-backend triton` o `--mem-fraction-static` sin reservar los cientos de GB del modelo de 816B.
-- Pruebas de compatibilidad de kernels: al conservar atención híbrida, MoE y `batched_mm`, sirve para comparar salidas entre `sdpa` y otros backends y detectar discrepancias de implementación con formas reales.
-- Desarrollo de *harnesses* de evaluación: construir el código de benchmarking (medición de latencia, throughput, memoria) y depurarlo contra un modelo de 7,2 MB antes de aplicarlo a un modelo de 1,6 TB de pesos.
-- Docencia y demostración de arquitecturas MoE: inspeccionar el enrutamiento top-8, el *expert pooling* y las puertas residuales con `print(model)` y herramientas de visualización, ya que las dimensiones reducidas hacen legible el grafo completo.
-- Pruebas de decodificación de vídeo y audio: escenarios con FFmpeg, `do_sample_frames=False` y metadatos de vídeo que requieren un modelo que acepte las cuatro modalidades a la vez.
+- Validación de pipelines de carga en Transformers: comprobar que `AutoProcessor` y `MuseSparkForConditionalGeneration` cargan el checkpoint, el tokenizador, el chat template y el procesador multimodal sin errores antes de usar el modelo de 816B.
+- Pruebas de integración de SGLang: verificar el arranque con `--tp-size 4 --ep-size 4`, backend Triton y límites de contexto y tokens antes de desplegar en nodos reales.
+- Depuración de procesamiento multimodal: construir prompts con imagen, vídeo y audio simultáneos y comprobar formas, dtypes y metadatos (`VideoMetadata`, `sampling_rate`) sin coste de GPU.
+- Test de CI/CD: incluir el modelo en tests automáticos que detecten roturas en versiones nuevas de Transformers o SGLang, dado su tamaño de 7,2 MB y su ejecución en CPU o GPU consumer.
+- Desarrollo de herramientas de inspección de checkpoints: analizar el reparto BF16/FP32 de routers y sesgos de corrección, y validar scripts de conversión o cuantización.
+- Formación y documentación: ejemplo mínimo reproducible para explicar arquitecturas MoE multimodales con atención híbrida sin necesidad de infraestructura de gran escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería además irrelevante en este checkpoint, ya que los pesos son aleatorios y no han pasado por entrenamiento. Tampoco se publican medidas de latencia o throughput para el modelo tiny ni para el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un modelo de inicialización aleatoria, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería equivalente al azar y no tendría valor comparativo.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia del checkpoint tiny: inferior a 1 GB. Los pesos ocupan 7,2 MB (BF16) y el vocabulario de 202.048 entradas domina el consumo, pero el conjunto cabe holgadamente en cualquier GPU.
-- Cabe en GPU de consumo y en hardware integrado: funciona en CPU, en iGPU y en cualquier GPU dedicada; una RTX 4090 o una A100 están completamente sobredimensionadas para este checkpoint.
-- GPU recomendadas para el modelo tiny: ninguna en particular; para el modelo base `Muse-Spark-Open-816B-A42B` no se dispone de requisitos publicados en la información proporcionada.
-- Despliegue: Transformers (verificado por el autor, con `dtype=torch.bfloat16`, `attn_implementation="sdpa"`, `experts_implementation="batched_mm"` y `device_map="cuda"`) y SGLang (verificado, con `--tp-size 4 --ep-size 4 --attention-backend triton --context-length 4096 --max-running-requests 4 --max-total-tokens 4096 --mem-fraction-static 0.2 --disable-custom-all-reduce`). No se documentan opciones para vLLM, llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados.
-- Requisito adicional: SGLang necesita las bibliotecas compartidas de FFmpeg instaladas para la decodificación de vídeo.
-- Latencia y throughput: no disponibles. El único dato operativo es la configuración de SGLang del ejemplo, con `max_running_requests 4` y `max_total_tokens 4096`, pensada para un nodo de cuatro GPUs.
+- VRAM estimada para inferencia: inferior a 1 GB en BF16 (7,2 MB de pesos más activaciones y caché KV); ejecutable en CPU.
+- GPU recomendadas: cualquier GPU con soporte BF16, incluidas RTX 3090, RTX 4090, A100 o H100; también válido en CPU para pruebas.
+- Cabe en cualquier GPU consumer, incluso en iGPU con memoria compartida.
+- Opciones de despliegue: Transformers con `device_map="cuda"` o CPU, y SGLang con TP=4 y EP=4 (el ejemplo oficial usa 4 GPUs por la restricción EP=TP del modelo fuente, aunque el tamaño real no lo exige).
+- Latencia y throughput: no disponibles de forma oficial; por el tamaño, la latencia estará dominada por el overhead de framework y no por el cómputo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros checkpoints de depuración comparables. La comparación natural es con el modelo del que deriva, usando los datos de la model card:
+| Modelo | Parámetros | Contexto | Licencia | Uso previsto |
+|---|---|---|---|---|
+| tiny-random/muse-spark-open | 3,58M | 4096 (ejemplo SGLang) | no disponible | Test y depuración |
+| meta-models/Muse-Spark-Open-816B-A42B | 816B totales, 42B activos | 200k (según nombre de fichero) | no disponible | Producción multimodal |
+| Modelos tiny de prueba tipo `hf-internal-testing/*` | Variable, típicamente <10M | Reducido | Variable | Test de frameworks |
 
-| Modelo | Parámetros | Capas de texto | Expertos / activados | Cabezas Q/KV/dim | Contexto | Licencia | Formatos |
-|---|---|---|---|---|---|---|---|
-| `tiny-random/muse-spark-open` | 3.582.568 | 8 | 32 / 8 | 8 / 1 / 32 | no disponible | no disponible | safetensors (1 archivo, 7,2 MB) |
-| `meta-models/Muse-Spark-Open-816B-A42B` | 821.906.490.368 elementos en BF16 + 130.039.296 en F32 | 62 | 256 / 8 | 128 / 16 / 64 | no disponible | no disponible | safetensors (65 archivos, 1.644.333.393.864 bytes) |
-
-El identificador del modelo base sugiere 816B de parámetros totales y 42B activos, pero esa cifra no aparece confirmada en la información proporcionada. Tampoco hay datos de rendimiento que permitan comparar con alternativas de la misma categoría (modelos multimodales con audio y vídeo); la comparativa de benchmarks queda por tanto como no disponible.
+La comparativa con alternativas de la misma categoría (modelos tiny de prueba) es limitada porque no se dispone de datos de rendimiento ni de licencia. La única comparación significativa es con su modelo base, del que hereda arquitectura e interfaces pero no capacidades.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no produce texto, respuestas ni razonamiento coherente. Cualquier uso generativo produce ruido y no debe llegarse a producción con él.
-- Solo tiene sentido como herramienta de ingeniería (tests, validación de pipelines, docencia); no es un sustituto del modelo base ni sirve para evaluar calidad.
-- Licencia no disponible: no puede asumirse permiso de uso comercial, ni para este checkpoint ni para el modelo base, cuya licencia tampoco figura en la información.
-- Idiomas no disponibles: no hay declaración de cobertura lingüística, y en cualquier caso las capacidades multilingües no son evaluables con pesos aleatorios.
-- Longitud de contexto no disponible: el valor `4096` del ejemplo de SGLang es un parámetro de lanzamiento, no una especificación del modelo.
-- Riesgo de alucinación no aplicable en sentido estricto (no hay conocimiento que alucinar), pero sí riesgo de conclusiones erróneas si alguien interpreta sus salidas como señal de comportamiento del modelo real.
-- El tamaño reducido altera propiedades emergentes: con `hidden_size=8`, una sola cabeza KV y 32 expertos, el checkpoint no reproduce comportamientos dependientes de escala del modelo de 816B, como la estabilidad del enrutamiento o la calidad de la fusión multimodal.
-- Los pesos de router y sesgos en FP32 son parte deliberada del diseño; una conversión indiscriminada a BF16 de todo el checkpoint rompería la equivalencia con el modelo fuente.
-- Requiere FFmpeg para las rutas de vídeo en SGLang, un detalle que puede bloquear despliegues si no se documenta en la imagen de contenedor.
-- Fechas de creación y actualización del repositorio: 25 de octubre de 2026, según los metadatos de Hugging Face.
+- Pesos inicializados aleatoriamente: las salidas son incoherentes y no deben interpretarse como respuestas del modelo.
+- No apto para producción, investigación de capacidades ni evaluación de calidad.
+- Licencia no especificada: no hay autorización explícita para uso comercial; conviene contactar con el autor o consultar la licencia del modelo base antes de cualquier uso.
+- Idiomas soportados no documentados; el tokenizador tiene 202.048 entradas, pero no se garantiza cobertura multilingüe real.
+- La longitud de contexto de 200k solo aparece en el nombre del fichero `l4_200k_base` del tokenizador; no está confirmada en la configuración y el ejemplo de SGLang usa 4096.
+- Riesgo de confundir esta réplica con el modelo de 816B: verificar siempre el `model_id` en scripts y pipelines.
+- La restricción EP=TP del ejemplo de SGLang puede inducir a pensar que se necesitan 4 GPUs, cuando el modelo real cabe en una sola o en CPU.
+- No se han publicado datos de sesgos, alucinación ni robustez porque no ha habido entrenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tiny-random/muse-spark-open
+- Hugging Face: https://huggingface.co/tiny-random/muse-spark-open
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
-- No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos correspondían a servicios y sitios sin relación con el modelo (tinytask.net, tinypng.com, latinyhouse.com, tinyurl.com, tinyhousefrance.org).
+- Repositorio de Transformers (clase `MuseSparkForConditionalGeneration`): no disponible como enlace directo en la información proporcionada
+- Documentación de SGLang: no disponible como enlace directo en la información proporcionada
+- Paper, blog o demo oficial: no disponible

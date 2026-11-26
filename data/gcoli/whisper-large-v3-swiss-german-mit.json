@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "gcoli/whisper-large-v3-swiss-german-mlx-q8 · Hugging Face",
-      "url": "https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mlx-q8",
-      "snippet": "Instructions to use gcoli/whisper-large-v3-swiss-german-mlx-q8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use gcoli/whisper-large-v3-swiss-german-mlx-q8 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir whisper-large-v3-swiss-german-mlx-q8 gcoli ..."
-    },
-    {
-      "title": "gcoli/whisper-large-v3-swiss-german-coreml at main",
-      "url": "https://huggingface.co/gcoli/whisper-large-v3-swiss-german-coreml/tree/main",
-      "snippet": "Instructions to use gcoli/whisper-large-v3-swiss-german-coreml with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries WhisperKit How to use gcoli/whisper-large-v3-swiss-german-coreml with WhisperKit: # Install CLI with Homebrew on macOS device brew install whisperkit-cli # View all available inference options whisperkit-cli transcribe ..."
-    },
-    {
-      "title": "Whisper Large V3 Swiss German Mlx Q8 - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/gcoli/whisper-large-v3-swiss-german-mlx-q8",
-      "snippet": "Registry entry for model Whisper Large V3 Swiss German Mlx Q8; source metadata pending."
-    },
-    {
-      "title": "GitHub - cxh-tech/whisper-large-v3",
-      "url": "https://github.com/cxh-tech/whisper-large-v3",
-      "snippet": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation, proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3 has the same ..."
-    },
-    {
-      "title": "Whisper Large v3 - AI Model Profile - D-Central",
-      "url": "https://d-central.tech/ai/model/whisper-large-v3/",
-      "snippet": "The model is a 1.55-billion-parameter encoder-decoder transformer trained on approximately 5 million hours of multilingual supervised audio, and it&#x27;s the reference open model for transcription, translation, and language identification across dozens of languages. Whisper is the quiet workhorse of the open-weight AI ecosystem."
-    }
-  ]
+  "sources": []
 }

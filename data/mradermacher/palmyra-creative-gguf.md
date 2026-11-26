@@ -2,83 +2,96 @@
 
 ## Resumen
 
-Palmyra-Creative es un modelo de lenguaje de gran tamaño desarrollado por Writer, una empresa especializada en soluciones de IA generativa para entornos empresariales. El modelo está diseñado específicamente para tareas de escritura creativa y generación de contenido, abarcando desde narrativa y poesía hasta guiones, copy de marketing, creación de personajes y diálogos. Con aproximadamente 122 000 millones de parámetros, se posiciona en la gama alta de los modelos de propósito general, aunque su enfoque principal es la creatividad textual.
+Palmyra-Creative-GGUF es la distribucion en formato GGUF del modelo Palmyra-Creative, desarrollado originalmente por Writer y cuantizado por mradermacher. Se trata de un modelo de lenguaje de gran escala, con 121.892.970.560 parametros (aproximadamente 122 mil millones), orientado especificamente a tareas de creatividad, ideacion y pensamiento divergente y convergente. El modelo base esta disponible en el repositorio Writer/Palmyra-Creative y esta pensado para entornos empresariales ("Enterprise ready" segun sus etiquetas).
 
-La versión aquí descrita es una cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware más modesto mediante técnicas de compresión. Esta distribución facilita el despliegue local con herramientas como llama.cpp u Ollama, sin necesidad de infraestructura de servidor dedicada. El modelo base está disponible bajo la licencia open de Writer, que restringe el uso comercial sin una licencia separada, lo que condiciona su adopción en entornos de producción empresarial.
+La relevancia de esta ficha radica en que el repositorio de mradermacher ofrece el modelo en multiples niveles de cuantizacion GGUF (desde Q2_K hasta Q8_0), lo que permite desplegarlo en infraestructuras con distintos presupuestos de memoria. El modelo base esta especializado en generacion de ideas, brainstorming, resolucion creativa de problemas y tecnicas como los "Five Whys", lo que lo diferencia de los modelos generalistas.
 
-La relevancia actual de Palmyra-Creative radica en su especialización en un nicho poco cubierto por los modelos generalistas: la generación de texto creativo de alta calidad. Mientras que la mayoría de los LLM destacan en razonamiento o código, este modelo apuesta por la imaginación, la ideación y el pensamiento divergente, con aplicaciones directas en marketing, redacción publicitaria, literatura y desarrollo de conceptos.
+El modelo esta disponible unicamente en ingles, cuenta con licencia propietaria (writer-open-model-license) y su uso comercial requiere una licencia separada de Writer. La cuantizacion corre a cargo de mradermacher, quien no modifica los pesos mas alla del proceso de conversion a GGUF.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 121 892 970 560 (aprox. 122B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | no disponible (modelo base de tipo transformer, dato no confirmado en la informacion proporcionada) |
+| Parametros totales | 121.892.970.560 (aprox. 122 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_S, Q6_K, Q8_0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (y variantes i1/imatrix en repositorio separado) |
 | Idiomas soportados | en (ingles) |
-| Licencia | writer-open-model-license (uso no comercial sin licencia separada) |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Licencia | writer-open-model-license (uso no comercial salvo licencia separada de Writer) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. Se sabe que el modelo base es Writer/Palmyra-Creative, con 122B parametros, pero no se especifica si se trata de un transformer denso, una arquitectura con mezcla de expertos (MoE) o alguna variante hibrida. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de RLHF o DPO.
+No se dispone en la informacion proporcionada de detalles sobre la arquitectura interna del modelo base (tipo de transformer, atencion, numero de capas, dimensiones ocultas) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, tecnicas de alineacion como RLHF o DPO). El modelo base es Writer/Palmyra-Creative, y esta cuantizacion es una conversion estatica a GGUF realizada por mradermacher con la herramienta de conversion de Hugging Face (convert_type: hf), sin informacion adicional sobre innovaciones tecnicas.
 
-La unica informacion adicional proviene del blog de Writer, que indica que el modelo se distribuye como un microservicio NVIDIA NIM, lo que sugiere una optimizacion para inferencia en infraestructura acelerada por GPU. Sin embargo, los detalles tecnicos del entrenamiento y la arquitectura no estan disponibles en las fuentes consultadas.
+Lo unico verificable es el proceso de cuantizacion: se ofrecen cuantizaciones estaticas (no imatrix) en este repositorio, mientras que las cuantizaciones ponderadas/imatrix estan en el repositorio mradermacher/Palmyra-Creative-i1-GGUF. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar, y que Q4_K_S y Q4_K_M son rapidas y recomendadas.
 
 ## Capacidades
 
-- Generacion de texto creativo: narrativa, poesia, guiones, dialogos y desarrollo de personajes.
-- Ideacion y brainstorming: el modelo esta entrenado para apoyar procesos de generacion de ideas, pensamiento lateral y divergente.
-- Copywriting y marketing: redaccion de textos publicitarios, eslóganes y contenido promocional.
-- Resolucion creativa de problemas: aplicacion de tecnicas como los "Cinco por que" o el pensamiento convergente para abordar problemas complejos.
-- Soporte multilingue: no disponible, el modelo solo declara soporte para ingles.
-- Tool calling y funciones de agente: no se menciona soporte explicito en la informacion proporcionada.
-- Modo de razonamiento o thinking: no se especifica ninguna capacidad especial mas alla de la creatividad textual.
+- Generacion de texto conversacional en ingles.
+- Ideacion y generacion de ideas (Idea Generation, Ideation).
+- Brainstorming estructurado y pensamiento lateral (Lateral Thinking).
+- Pensamiento divergente y convergente (Divergent/Convergent Thinking).
+- Resolucion creativa de problemas (Creative Problem Solving), incluidos problemas complejos o "wicked problems".
+- Aplicacion de tecnicas como los "Five Whys" para analisis de causas raiz.
+- Fomento de mentalidad innovadora y confianza creativa.
+- Soporte de conversaciones multi-turno (etiqueta "conversational").
+- Orientado a uso empresarial (Enterprise LLM, Enterprise ready).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
 
 ## Casos de uso
 
-- Redaccion publicitaria y marketing de contenidos: el modelo puede generar eslóganes, descripciones de producto y campañas creativas. Su entrenamiento especifico en copywriting permite producir textos con tono persuasivo y original, adecuados para equipos de marketing que necesitan variaciones rapidas de mensajes.
-
-- Desarrollo de narrativa y ficcion: escritores y guionistas pueden utilizar el modelo para superar bloqueos creativos, generar tramas alternativas o desarrollar personajes consistentes. La capacidad de mantener coherencia en dialogos y descripciones lo hace util como asistente de escritura.
-
-- Generacion de ideas para productos y servicios: en fases de ideacion, el modelo puede proponer conceptos innovadores, nombres de productos o enfoques de negocio. Su orientacion al pensamiento divergente facilita la exploracion de opciones no convencionales.
-
-- Creacion de contenido para redes sociales: el modelo puede redactar publicaciones, hilos o respuestas con un tono creativo y atractivo. Su capacidad para adaptar el estilo a diferentes audiencias lo convierte en una herramienta valiosa para community managers.
-
-- Soporte en educacion y talleres de escritura: profesores y formadores pueden usar el modelo para generar ejercicios de escritura creativa, ejemplos de estilos literarios o prompts para practicas de redaccion.
-
-- Prototipado de conceptos para campanas de branding: agencias de publicidad pueden emplear el modelo para explorar multiples direcciones creativas antes de invertir en produccion. La generacion rapida de variantes permite comparar enfoques y seleccionar los mas prometedores.
+- Sesiones de brainstorming asistido: el modelo puede generar listas amplias de ideas divergentes sobre un problema de negocio, y luego converger en las mas viables, gracias a su entrenamiento especifico en tecnicas de ideacion.
+- Resolucion de problemas complejos ("wicked problems") en consultoria: se puede usar para descomponer problemas mal definidos en subproblemas y aplicar marcos como los Five Whys, adecuado por su especializacion en pensamiento critico y lateral.
+- Generacion de contenido creativo para marketing: redaccion de eslóganes, nombres de producto y conceptos de campana, aprovechando su enfoque en imaginacion e innovacion.
+- Apoyo a equipos de innovacion y diseno de producto: el modelo puede actuar como facilitador de talleres, proponiendo preguntas y alternativas que rompan el pensamiento convencional.
+- Asistente de escritura creativa: generacion de tramas, personajes y giros narrativos en ingles, con un enfoque en la originalidad mas que en la factualidad.
+- Analisis de causas raiz en operaciones: aplicar la tecnica de los Five Whys a incidentes o fallos de proceso, generando cadenas de preguntas que profundicen en la causa.
+- Prototipado de chatbots especializados en creatividad: desplegado con llama.cpp u Ollama en formato GGUF, puede integrarse en herramientas internas de ideacion para equipos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el tamaño de los archivos GGUF, se necesitan al menos 70 GB de VRAM para la cuantizacion Q4_K_S (69,5 GB) y alrededor de 130 GB para Q8_0 (129,6 GB). Las cuantizaciones mas bajas (Q2_K, 45,2 GB) podrian caber en GPUs de 48 GB, aunque con perdida de calidad.
-- GPU recomendadas: para Q4_K_S se requieren GPUs profesionales como A100 (80 GB) o H100 (80 GB). Para Q2_K, una RTX 6000 Ada (48 GB) o similar podria ser suficiente. No es viable en GPUs de consumo (RTX 4090 tiene 24 GB) con estas cuantizaciones.
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. Tambien se puede usar con vLLM si se convierte a safetensors, aunque el modelo base ya esta disponible en ese formato.
-- Latencia y throughput: no se dispone de datos medidos. En una A100 de 80 GB con Q4_K_S, se podria esperar una generacion de decenas de tokens por segundo, pero no hay cifras oficiales.
+- VRAM estimada para inferencia: aproximadamente 45,2 GB con Q2_K; 69,5-73,3 GB con Q4_K_S/Q4_K_M; 100,1 GB con Q6_K; 129,6 GB con Q8_0. Estas cifras corresponden al tamano de los ficheros GGUF y son una cota inferior de memoria necesaria.
+- GPU recomendadas: para Q4_K_M se necesitan al menos 80 GB de VRAM (por ejemplo, A100 80 GB o H100 80 GB); para Q8_0 se requieren varias GPU o una H200/B200 con 141 GB o mas.
+- Cabe en GPU de consumo: no en una sola GPU consumer. Q2_K (45,2 GB) podria ejecutarse parcialmente en una RTX 4090 (24 GB) con offloading a CPU, pero con rendimiento muy degradado. En una RTX 3090/4090 no cabe completamente ninguna cuantizacion.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base (safetensors) puede servirse con vLLM o TGI, pero no se confirma en la informacion proporcionada.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa con otros modelos de tamaño similar (por ejemplo, Llama 3.1 70B o Mixtral 8x22B). No se conocen datos de rendimiento ni de arquitectura que permitan una comparacion objetiva. Se puede afirmar que, por su tamaño, Palmyra-Creative se situa en la categoria de modelos grandes, pero su especializacion en creatividad lo diferencia de los modelos generalistas.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Palmyra-Creative (este) | ~122 B | no disponible | writer-open-model-license (no comercial sin licencia) | GGUF en HF, gate en modelo base |
+| Modelos comparables de ~120 B | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de informacion suficiente en la fuente proporcionada para establecer una comparativa rigurosa con alternativas de la misma categoria. Se indica "no disponible" en lugar de inventar datos.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la licencia writer-open-model-license permite uso no comercial sin coste, pero cualquier uso comercial requiere una licencia separada de Writer. Esto limita su adopcion en entornos empresariales sin negociacion previa.
-- Idioma limitado: el modelo solo soporta ingles de forma declarada. No se garantiza un rendimiento adecuado en otros idiomas, incluido el español.
-- Sesgos y alucinaciones: al ser un modelo generativo, puede producir contenido inexacto o inventado, especialmente en tareas factuales. Su enfoque creativo puede aumentar la tendencia a generar texto no verificado.
-- Requisitos de hardware elevados: incluso con cuantizacion, el modelo necesita GPUs de alta gama con gran cantidad de VRAM, lo que limita su uso en entornos con recursos modestos.
-- Falta de informacion tecnica: no se han publicado detalles sobre arquitectura, entrenamiento o benchmarks, lo que dificulta evaluar su calidad relativa y su comportamiento en tareas especificas.
-- Riesgo de uso indebido: al ser un modelo de generacion de texto, podria utilizarse para crear contenido enganoso o manipulado, aunque no se han documentado riesgos especificos.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al ser un modelo entrenado principalmente en ingles, es probable que presente sesgos culturales anglosajones.
+- Riesgo de alucinacion: no cuantificado; como modelo generativo orientado a creatividad, puede priorizar la originalidad sobre la veracidad factual.
+- Limitaciones de contexto o idioma: el modelo solo declara soporte de ingles ("en"); no se especifica la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
+- Restricciones de licencia: la licencia writer-open-model-license restringe el uso a fines no comerciales salvo que se adquiera una licencia separada de Writer; el acceso al modelo base esta condicionado a un formulario (gated).
+- Caveat para produccion: el repositorio es una cuantizacion de terceros (mradermacher), no el modelo oficial; para produccion se recomienda validar la calidad de la cuantizacion frente al modelo base en safetensors.
+- El tamano del repositorio (828,9 GB) incluye todas las cuantizaciones; descargar solo el fichero necesario.
+- No se confirma soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Modelo base en Hugging Face: https://huggingface.co/Writer/Palmyra-Creative
-- Repositorio GGUF cuantizado: https://huggingface.co/mradermacher/Palmyra-Creative-GGUF
-- Blog de Writer sobre Palmyra Creative: https://writer.com/blog/palmyra-creative/
-- Pagina de NVIDIA NIM para Palmyra Creative: https://build.nvidia.com/writer/palmyra-creative-122b.md
-- Blog general de Palmyra LLMs: https://writer.com/blog/palmyra/
+- Repositorio GGUF: https://huggingface.co/mradermacher/Palmyra-Creative-GGUF
+- Modelo base: https://huggingface.co/Writer/Palmyra-Creative
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Palmyra-Creative-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Palmyra-Creative-GGUF
+- Licencia: https://writer.com/legal/open-model-license/
+- Politica de uso aceptable de Writer: https://writer.com/legal/acceptable-use/
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -50,29 +50,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Log into Loom | Loom",
-      "url": "https://www.loom.com/login",
-      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
-    },
-    {
-      "title": "bartowski/Ornith-1.5-9B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF",
-      "snippet": "This model supports image input. Alongside the quants, this repo includes the multimodal projector files mmproj-Ornith-1.5-9B-f16.gguf and mmproj-Ornith-1.5-9B-bf16.gguf, which pair with any quant above."
-    },
-    {
       "title": "Free screen recorder for Mac and PC | Loom",
       "url": "https://www.loom.com/",
       "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
     },
     {
-      "title": "bartowski/Ornith-1.5-9B-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
     },
     {
       "title": "Moins mais mieux · Loom",
       "url": "https://www.loom.fr/",
       "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Loom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Loom",
+      "snippet": "The warp-weighted loom is a vertical loom that may have originated in the Neolithic period. Its defining characteristic is hanging …"
     }
   ]
 }

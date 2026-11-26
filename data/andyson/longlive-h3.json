@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Andyson/LongLive-H3",
+  "slug": "andyson-longlive-h3",
+  "author": "Andyson",
+  "url": "https://huggingface.co/Andyson/LongLive-H3",
+  "created_at": "2026-11-26T03:21:40.000Z",
+  "updated_at": "2026-11-26T03:25:14.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax-h3",
+    "text-to-audio-video",
+    "text-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 66290845252,
+  "storage_human": "66.3 GB",
+  "context_length": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

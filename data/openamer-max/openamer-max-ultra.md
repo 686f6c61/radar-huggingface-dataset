@@ -2,105 +2,107 @@
 
 ## Resumen
 
-OpenAmer-Ultra es un ajuste fino mediante QLoRA del modelo Qwen/Qwen2.5-32B-Instruct, desarrollado por el colectivo openamer-max dentro de su familia de modelos locales. Se distribuye principalmente como un archivo GGUF cuantizado en Q4_K_M (18,49 GB) pensado para su uso con Ollama y llama.cpp en hardware de consumo, y se complementa con un adaptador LoRA publicado por separado. La arquitectura subyacente es la de Qwen2.5-32B-Instruct: un transformer denso de 32.763.876.352 parámetros con una longitud de contexto de entrenamiento de 32.768 tokens.
+OpenAmer-Ultra es un ajuste fino del modelo base Qwen2.5-32B-Instruct, desarrollado por el colectivo openamer-max y publicado bajo licencia Apache-2.0. Se trata de un modelo de generación de texto de 32.763.876.352 parámetros (32B) orientado a un uso local-first, distribuido principalmente en formato GGUF cuantizado Q4_K_M para su ejecución con Ollama y llama.cpp. Forma parte de una familia de seis tamaños (Watch 0,6B, Phone 3,1B, Tab 7,6B, Desktop 14,7B, Pro 24B y Ultra 32B) y constituye la etapa de mayor tamaño de la serie.
 
-El modelo está entrenado para responder en alemán, inglés y bosnio, y se orienta a un enfoque "local-first": inferencia en el propio dispositivo sin dependencia de la nube. El ajuste se realizó con QLoRA (r=32, alpha=64, una época, 2.716 frases, cuantización 4-bit NF4), con un pico de VRAM de 25,79 GB durante el entrenamiento sobre una GPU L40S de 48 GB.
+El modelo se ha entrenado mediante QLoRA (r=32, alpha=64, una época, 2.716 frases, cuantización 4-bit NF4) sobre el citado Qwen2.5-32B-Instruct, con el objetivo de mejorar el seguimiento de instrucciones, la adherencia a formatos, el manejo de negaciones y la honestidad ante preguntas sin respuesta conocida, en alemán, inglés y bosnio. Su contexto máximo de entrenamiento es de 32.768 tokens, aunque la medición del autor sitúa el mayor acierto práctico en 30.067 tokens (92 % del máximo).
 
-Es relevante ahora porque representa un caso poco habitual en el que el propio autor publica resultados que contradicen la intuición de "más parámetros es mejor": en su banco de pruebas de 45 casos, Ultra obtiene 41/45 (91,1 %), por debajo de las variantes más pequeñas Desktop (44/45) y Pro (43/45) de la misma familia. El autor atribuye este resultado a que 2.716 frases de entrenamiento son insuficientes para justificar 32B de parámetros. La licencia es Apache-2.0 y el modelo base también es Apache-2.0.
+La relevancia de este modelo reside en su transparencia poco habitual: el propio autor documenta que Ultra, pese a ser la etapa más grande, obtiene un resultado inferior (41/45, 91,1 %) que las etapas Desktop (44/45) y Pro (43/45) en su banco de pruebas de 45 casos, atribuyéndolo a que 2.890 frases de entrenamiento son insuficientes para justificar 32B de parámetros. Es, por tanto, un modelo útil para evaluación y experimentación local más que un candidato a producción de alto rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen2.5-32B-Instruct) |
-| Parametros totales | 32.763.876.352 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (contexto de entrenamiento); mayor coincidencia medida: 30.067 tokens (92 %) |
-| Tipos de cuantizacion | Q4_K_M (archivo publicado, 18,49 GB); adaptador LoRA separado; entrenamiento en 4-bit NF4 |
-| Idiomas soportados | de, en, bs (otros idiomas no verificados) |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-32B-Instruct), ajuste QLoRA |
+| Parametros totales | 32.763.876.352 (32B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens (máximo de entrenamiento); mayor acierto medido: 30.067 tokens |
+| Tipos de cuantizacion | Q4_K_M (GGUF); adaptador QLoRA separado en 4-bit NF4 |
+| Idiomas soportados | Alemán (de), inglés (en), bosnio (bs) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q4_K_M); adaptador LoRA publicado por separado |
+| Formato de pesos | GGUF (openamer-max-ultra-q4.gguf, 18,49 GB); adaptador LoRA separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-32B-Instruct, un transformer denso de decodificación autorregresiva con 32.763.876.352 parámetros y un contexto de entrenamiento de 32.768 tokens. Sobre esta base se aplicó un ajuste fino supervisado mediante QLoRA con rango r=32, alpha=64, una sola época y 2.716 frases de entrenamiento, usando cuantización 4-bit NF4 para los pesos congelados. El pico de VRAM durante el entrenamiento fue de 25,79 GB sobre una GPU L40S de 48 GB, lo que confirma que el proceso se ejecutó en una sola GPU profesional.
+El modelo parte de Qwen2.5-32B-Instruct, un transformer denso de 32B parámetros con atención estándar (no se documentan innovaciones de atención lineal ni decodificación especulativa en la información disponible). Sobre esa base se aplicó un ajuste fino supervisado mediante QLoRA con rango r=32, alpha=64, una única época y cuantización 4-bit NF4, empleando 2.716 frases (2.890 según la tabla comparativa del autor). El pico de VRAM durante el entrenamiento fue de 25,79 GB sobre una GPU L40S de 48 GB.
 
-No se documenta en la información disponible el uso de RLHF, DPO ni otras etapas de alineación posteriores al ajuste supervisado. La innovación técnica destacable no está en la arquitectura (que es la estándar de Qwen2.5) sino en el enfoque de distribución: un único archivo GGUF Q4_K_M de 18,49 GB listo para Ollama, junto con un adaptador LoRA independiente que permite reproducir o recombinar el ajuste. El autor documenta además una medición de contexto con un método concreto (hecho colocado al 50 % de profundidad, ventana con reserva, temperatura 0) que alcanzó 30.067 tokens, y una mejora de rendimiento con offload parcial (num_gpu 10) de aproximadamente 200 tokens/s, unas 12 veces más rápido que la versión con CPU exclusiva.
+No se especifica el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO posteriores al ajuste supervisado. El autor reconoce explícitamente que el volumen de datos es insuficiente para un modelo de 32B y que las etapas menores de la familia resultan más eficientes en su banco de pruebas. El entrenamiento se realizó con herramientas locales y HuggingFace Jobs.
 
 ## Capacidades
 
-- Generación de texto conversacional en alemán, inglés y bosnio, con formato de chat instructivo heredado de Qwen2.5-32B-Instruct.
-- Razonamiento de conocimiento factual y seguimiento de formato: el banco de pruebas del autor mide hechos concisos, cumplimiento de formato, negaciones y honestidad ante preguntas sin respuesta conocida.
-- Capacidad de contexto largo: maneja hasta 32.768 tokens, con una coincidencia medida de 30.067 tokens (92 % del máximo).
-- Soporte de conversación multi-turno mediante plantilla de chat instructiva.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en Hugging Face), lo que facilita su despliegue tras APIs compatibles.
-- Ejecución local mediante Ollama (`ollama run amersacirovic/openamer-max-ultra`) y llama.cpp.
-- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible. El propio autor indica que el modelo no cumple el requisito mínimo de 64.000 tokens de contexto de su agente OpenAmer, por lo que no está pensado para ese uso agéntico.
+- Generación de texto conversacional multi-turno en alemán, inglés y bosnio.
+- Seguimiento de instrucciones y adherencia a formatos (medido en el banco de pruebas del autor).
+- Manejo de negaciones y respuestas honestas ante preguntas sin respuesta conocida (capacidad evaluada explícitamente en el banco de 45 casos).
+- Razonamiento de hechos concisos ("knappe Fakten" según el autor).
+- Capacidad de contexto largo hasta 32.768 tokens, con acierto medido hasta 30.067 tokens.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking en la información disponible.
+- El modelo no cumple el requisito mínimo de 64.000 tokens de contexto del agente OpenAmer, por lo que no es apto para ese agente, aunque sí para chat y llamadas a API.
 
 ## Casos de uso
 
-- Asistente conversacional local en alemán, inglés o bosnio: el modelo puede mantener diálogos multi-turno en el escritorio del usuario sin conexión a la nube, aprovechando su ventana de 32.768 tokens para conservar historial extenso de conversación.
-- Procesamiento de documentos largos en local: con hasta 30.067 tokens verificados de contexto efectivo, es adecuado para resumir o extraer información de contratos, informes o artículos de decenas de páginas en los tres idiomas soportados.
-- Generación y revisión de texto en alemán para equipos que necesitan soberanía de datos: al ejecutarse en hardware propio con licencia Apache-2.0, permite procesar contenido sensible sin enviarlo a terceros.
-- Prototipado de aplicaciones con API compatible con endpoints: la etiqueta `endpoints_compatible` y el formato GGUF facilitan montar un servidor de inferencia local que imite la interfaz de APIs comerciales para pruebas de integración.
-- Traducción y adaptación de contenido entre alemán, inglés y bosnio: aunque el autor no garantiza calidad fuera de esos idiomas, el ajuste cubre las tres lenguas y puede emplearse en tareas de reescritura y localización acotadas.
-- Base para experimentación con QLoRA: al publicarse el adaptador por separado, investigadores pueden reproducir el ajuste, combinarlo con otras bases Qwen2.5 o estudiar el efecto de 2.716 frases sobre un modelo de 32B.
-- Evaluación comparativa de escalado: útil como caso de estudio documentado sobre cuándo más parámetros no mejoran el rendimiento en un banco de pruebas concreto, gracias a la transparencia del autor al publicar los resultados de toda la familia.
+- Chat local en escritorio: ejecutable con `ollama run amersacirovic/openamer-max-ultra` sobre una máquina con ~22 GB de RAM, útil para asistentes conversacionales privados sin conexión a la nube.
+- Evaluación comparativa de etapas: permite contrastar el rendimiento de un ajuste QLoRA de 32B frente a las etapas menores (Desktop 14,7B, Pro 24B) sobre el mismo banco de pruebas, para decidir qué tamaño desplegar.
+- Procesamiento de documentos largos en alemán: con 32.768 tokens de contexto puede resumir o extraer información de contratos, informes o artículos extensos en alemán o inglés.
+- Generación de texto en bosnio: uno de los pocos modelos abiertos que declara soporte explícito de bosnio, útil para contenido y atención al cliente en esa lengua.
+- Investigación sobre ajuste fino eficiente: el adaptador QLoRA publicado por separado permite estudiar el efecto de un ajuste de bajo rango sobre un modelo base de 32B.
+- Pruebas de despliegue con llama.cpp/Ollama: sirve como banco de pruebas para medir latencia y throughput de un GGUF Q4_K_M de 18,49 GB en hardware consumer o de gama profesional.
+- Filtrado y clasificación de texto con formato estricto: su entrenamiento en seguimiento de formatos y negaciones lo hace adecuado para tareas de extracción estructurada simple.
 
 ## Benchmarks y rendimiento
 
-El autor publica un banco de pruebas propio de 45 casos que mide hechos concisos, cumplimiento de formato, negaciones y honestidad ante preguntas sin respuesta conocida. No mide razonamiento libre ni contexto largo. Los resultados de la familia son los siguientes:
+El autor publica un banco de pruebas propio de 45 casos que mide hechos concisos, seguimiento de formato, negaciones y honestidad. No mide razonamiento libre ni contexto largo. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
-| Modelo | Parametros | Pruefstand (45 casos) |
+| Modelo | Parámetros | Prüfstand (45 casos) |
 |---|---|---|
 | Desktop | 14,70B | 44/45 (97,8 %) |
 | Pro | 24,00B | 43/45 (95,6 %) |
 | Phone | 3,09B | 43/45 (95,6 %) |
 | Tab | 7,62B | 42/45 (93,3 %) |
-| Ultra | 32,00B | 41/45 (91,1 %) |
+| **Ultra** | **32,00B** | **41/45 (91,1 %)** |
 | Watch | 0,60B | 37/45 (82,2 %) |
-| Qwen2.5-14B base (sin entrenamiento) | 14,7B | 22/45 (48,9 %) |
+| Qwen2.5-14B sin entrenar | 14,7B | 22/45 (48,9 %) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor advierte explícitamente que 45 casos son "una señal, no una prueba".
+En contexto, el autor reporta una medición de 30.067 tokens como mayor acierto (92 % del máximo de 32.768) y, con offload parcial (num_gpu 10), un throughput de aproximadamente 200 tokens/s, 12 veces superior a la primera versión con uso exclusivo de CPU.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el autor indica ~22 GB de RAM para el modelo Ultra (archivo de 19 GB, Q4_K_M de 18,49 GB). Para inferencia en GPU se requiere al menos esa cantidad de VRAM; con offload parcial (num_gpu 10) el autor reporta ~200 tokens/s, 12 veces más rápido que con CPU exclusiva.
-- GPU recomendadas: el entrenamiento se realizó en una L40S de 48 GB con un pico de 25,79 GB. Para inferencia, una GPU con 24 GB (RTX 3090, RTX 4090) puede alojar el modelo Q4_K_M completo con margen ajustado; GPU profesionales como A100 o H100 ofrecen holgura.
-- ¿Cabe en GPU de consumo? Sí, en tarjetas de 24 GB o más (RTX 3090/4090) en cuantización Q4_K_M; en GPUs de 16 GB o menos requerirá offload a RAM del sistema, con la consiguiente pérdida de velocidad.
-- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-ultra`), llama.cpp y servidores compatibles con endpoints. El adaptador LoRA permite además cargar el ajuste sobre el modelo base en frameworks que soporten PEFT.
-- Latencia y throughput: el autor reporta ~200 tokens/s con offload parcial (num_gpu 10). No se dispone de cifras de latencia para configuraciones GPU completas.
+- VRAM/RAM estimada: ~22 GB de RAM para el GGUF Q4_K_M de 18,49 GB según la tabla del autor.
+- GPU recomendadas: no se especifican modelos concretos; el entrenamiento se realizó en una L40S de 48 GB. Para inferencia, una GPU con 24 GB de VRAM (RTX 3090/4090, A5000) permitiría cargar el modelo cuantizado con offload parcial.
+- Cabe en GPU consumer de gama alta con 24 GB (RTX 3090, RTX 4090) usando Q4_K_M; en GPUs de 16 GB requeriría offload a RAM del sistema.
+- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-ultra`), llama.cpp, y cualquier runtime compatible con GGUF.
+- Latencia y throughput: ~200 tokens/s con offload parcial (num_gpu 10) según medición del autor; no se dispone de cifras para carga completa en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OpenAmer-Ultra | 32,76B | 32.768 tokens | 41/45 en banco propio (91,1 %) | Apache-2.0 | GGUF Q4_K_M + adaptador LoRA |
-| OpenAmer-Desktop (misma familia) | 14,70B | no disponible | 44/45 en banco propio (97,8 %) | Apache-2.0 | GGUF |
-| OpenAmer-Pro (misma familia) | 24,00B | no disponible | 43/45 en banco propio (95,6 %) | Apache-2.0 | GGUF |
-| Qwen2.5-32B-Instruct (base) | 32,76B | 32.768 tokens | no disponible en este banco | Apache-2.0 | safetensors, GGUF, múltiples formatos |
+| OpenAmer-Ultra | 32B | 32.768 | Apache-2.0 | GGUF, adaptador LoRA | Ajuste QLoRA sobre Qwen2.5-32B-Instruct; 41/45 en banco propio |
+| Qwen2.5-32B-Instruct | 32B | 32.768 (según base) | Apache-2.0 | safetensors, GGUF | Modelo base sin ajuste; referencia directa |
+| OpenAmer-Desktop | 14,7B | no disponible | Apache-2.0 | GGUF | 44/45 en banco propio; mejor resultado de la familia |
+| OpenAmer-Pro | 24B | no disponible | Apache-2.0 | GGUF | 43/45 en banco propio |
 
-La comparación más directa es con las propias variantes de la familia OpenAmer, donde Ultra queda por debajo de Desktop y Pro en el banco del autor. Frente a Qwen2.5-32B-Instruct base, el ajuste añade cobertura de alemán y bosnio y una cuantización GGUF lista para usar, a costa de un conjunto de entrenamiento reducido. No se dispone de datos comparativos con otros modelos de 32B fuera de esta familia en la información proporcionada.
+No se dispone de datos de benchmarks estándar para comparar con alternativas de otros autores; la comparación se limita a la familia OpenAmer y al modelo base.
 
 ## Limitaciones y advertencias
 
-- Rendimiento inferior al de variantes más pequeñas de la misma familia: 41/45 frente a 44/45 de Desktop y 43/45 de Pro. El autor lo atribuye a que 2.716 frases son insuficientes para justificar 32B de parámetros.
-- El banco de pruebas son solo 45 casos, una muestra pequeña que el propio autor califica de señal, no de prueba; no mide razonamiento libre ni contexto largo.
-- Cobertura lingüística limitada a alemán, inglés y bosnio; otros idiomas no han sido verificados y pueden degradarse.
-- No apto para el agente OpenAmer: el agente exige un mínimo de 64.000 tokens de contexto y este modelo solo alcanza 32.768, por lo que no puede sostener ese uso agéntico (aunque sí chat y llamadas API).
-- Riesgo de alucinación inherente a los modelos de lenguaje; el banco del autor incluye pruebas de honestidad ante preguntas sin respuesta, pero no hay garantías en producción.
-- No se documentan evaluaciones de sesgos ni de seguridad en la información disponible.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen2.5-32B-Instruct, que también es Apache-2.0.
-- El archivo GGUF Q4_K_M introduce pérdida de precisión respecto a los pesos originales; para tareas sensibles a la cuantización conviene evaluar formatos de mayor precisión (no publicados en la información disponible).
+- Rendimiento inferior al de etapas menores de la misma familia (41/45 frente a 44/45 de Desktop y 43/45 de Pro), pese a tener más parámetros.
+- El volumen de datos de entrenamiento (2.716-2.890 frases) es insuficiente para justificar 32B de parámetros, según reconoce el propio autor.
+- El banco de pruebas de 45 casos es una muestra pequeña; los resultados son una señal, no una prueba concluyente.
+- Solo se han verificado los idiomas alemán, inglés y bosnio; otros idiomas no están evaluados.
+- Contexto insuficiente para el agente OpenAmer, que exige al menos 64.000 tokens.
+- Riesgo de alucinación no cuantificado; no se publican tasas de error en tareas abiertas.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción.
+- El modelo se distribuye principalmente como GGUF Q4_K_M, lo que introduce pérdida de precisión respecto al adaptador en 4-bit NF4.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/openamer-max/openamer-max-ultra
-- Adaptador LoRA: https://huggingface.co/openamer-max/openamer-max-ultra-adapter
-- Sitio web del proyecto: https://openamer-max.github.io
-- Página del "Gerätepass" (requisitos por dispositivo): https://openamer-max.github.io/geraetepass/
-- API de traducción (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
-- Código fuente del agente: https://github.com/openamer-max/openamer
-- Informe de medición de contexto: https://github.com/openamer-max/models/blob/main/docs/KONTEXT-MESSUNG.md
-- Versión Android: https://openamer-max.github.io/android.html
+- Hugging Face: https://huggingface.co/openamer-max/openamer-max-ultra
+- Adaptador QLoRA: https://huggingface.co/openamer-max/openamer-max-ultra-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
+- Web del proyecto: https://openamer-max.github.io
+- Código fuente: https://github.com/openamer-max/openamer
+- Informe de medición de contexto: https://github.com/openamer-max/models/blob/main/docs/KONTEXT-MESSUNG.md
+- Página de dispositivos compatibles: https://openamer-max.github.io/geraetepass/
+- Versión Android: https://openamer-max.github.io/android.html
+- API de traducción (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
+- Grupo de Facebook: https://www.facebook.com/groups/1862788325147358/

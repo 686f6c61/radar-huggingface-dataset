@@ -5,7 +5,7 @@
   "author": "1aurent",
   "url": "https://huggingface.co/1aurent/vit_small_patch16_224.medmae_in1k_mae",
   "created_at": "2023-11-28T18:03:29.000Z",
-  "updated_at": "2026-11-23T07:52:56.000Z",
+  "updated_at": "2026-11-23T08:51:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 21665664,
   "parameters_human": "21.7M",

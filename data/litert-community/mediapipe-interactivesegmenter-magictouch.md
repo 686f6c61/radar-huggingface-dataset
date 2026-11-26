@@ -2,91 +2,86 @@
 
 ## Resumen
 
-MediaPipe MagicTouch (Interactive Segmenter) es un modelo de segmentación interactiva de imágenes desarrollado por Google y distribuido por la comunidad litert-community en Hugging Face. Resuelve un problema concreto: segmentar objetos indicados por el usuario mediante trazos o puntos positivos y negativos, sin necesidad de reentrenamiento ni de un modelo distinto por objeto. Se empaqueta como un bundle de MediaPipe Tasks (`interactive_segmentation.task`) de 30,5 MB y está pensado para inferencia on-device en Android, iOS, web, Python y Flutter.
+MediaPipe MagicTouch (Interactive Segmenter) es un paquete de segmentación interactiva de imágenes publicado por la organización `litert-community` en Hugging Face. Se distribuye como un bundle `.task` de 30,5 MB para la tarea `InteractiveSegmenter` de MediaPipe, orientado a la segmentación guiada por indicaciones del usuario (puntos o trazos positivos y negativos) sobre una imagen ya cargada. El modelo no es un modelo generativo de lenguaje, sino un componente de visión por computador para ejecución en dispositivo (on-device) en Android, iOS, web, Python y Flutter.
 
-La arquitectura es de dos etapas: un encoder que procesa la imagen una sola vez y un decoder ligero que se ejecuta en cada interacción del usuario. Esto permite refinamiento de baja latencia sin recalcular las características de la imagen completa. El bundle empaquetado corresponde a la versión v2, con resolución de 768 x 768 y cuantización INT8 en ambos submodelos.
+La arquitectura es un esquema de dos etapas con estado: un codificador INT8 que procesa la imagen una sola vez en `set_image()` y produce cinco mapas de características multiescala, y un decodificador INT8 ligero que se ejecuta en cada trazo del usuario en `segment(strokes)` para refinar la máscara. El bundle empaqueta la versión v2 a resolución 768×768 con cuantización INT8, que sustituye al modelo v1 de un solo grafo a 512×512 en FP documentado en la model card original de marzo de 2023.
 
-Su relevancia actual radica en que ofrece segmentación promptable en el dispositivo con un tamaño reducido (30,5 MB) y licencia Apache 2.0, lo que facilita integrarla en aplicaciones móviles y web sin depender de servicios en la nube. No es un modelo de lenguaje: es un modelo de visión especializado en generación de máscaras.
+Su relevancia actual reside en la separación entre extracción de características e inferencia interactiva: permite refinar la segmentación con latencia baja tras un único coste inicial de codificación, lo que encaja con aplicaciones de edición de imagen, retoque fotográfico y anotación asistida en dispositivos móviles sin depender de servidores.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder-decoder de segmentación interactiva (dos grafos TFLite separados) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión); entrada de imagen 768 x 768 x 3 |
-| Tipos de cuantizacion | INT8 (encoder y decoder) |
-| Idiomas soportados | no aplica (modelo de visión, sin procesamiento de lenguaje) |
+| Arquitectura | Codificador-decodificador de segmentación interactiva (dos submodelos TFLite: encoder + decoder) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen 768×768) |
+| Tipos de cuantización | INT8 (encoder y decoder) |
+| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`.tflite`) empaquetados en bundle `.task` de MediaPipe |
+| Formato de pesos | `.task` (bundle MediaPipe con submodelos `.tflite` INT8) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un diseño de dos etapas. El encoder (`interactive_segmentation_encoder.int8.tflite`, 28,26 MB) recibe una imagen RGB de forma `[-1, 768, 768, 3]` y produce cinco mapas de características multiescala: `384x384x16`, `192x192x24`, `96x96x40`, `48x48x80` y `24x24x192`. Se ejecuta una sola vez en la llamada `set_image()`. El decoder (`interactive_segmentation_decoder.int8.tflite`, 2,27 MB) recibe esos cinco mapas junto con un lienzo de prompt de `[1, 768, 768, 3]` y devuelve una máscara `[1, 768, 768, 1]`. Se ejecuta en cada llamada `segment(strokes)`, lo que permite refinamiento iterativo de baja latencia.
+El bundle contiene dos submodelos TFLite cuantizados a INT8. El codificador (`interactive_segmentation_encoder.int8.tflite`, 28,26 MB) recibe un tensor de entrada `[-1, 768, 768, 3]` en float32 y devuelve cinco mapas de características multiescala con formas `384×384×16`, `192×192×24`, `96×96×40`, `48×48×80` y `24×24×192`. Se ejecuta una única vez por imagen en `set_image()`. El decodificador (`interactive_segmentation_decoder.int8.tflite`, 2,27 MB) recibe el lienzo de indicaciones `[1, 768, 768, 3]` junto con los cinco mapas cacheados del codificador y produce una máscara `[1, 768, 768, 1]` en float32. Se ejecuta en cada llamada a `segment(strokes)`.
 
-Ambos submodelos están cuantizados a INT8, aunque sus tensores de entrada y salida son `float32`. El bundle incluye además `manifest.pb` (50 B) y `metadata.pb` (12 B). La model card del repositorio señala que el PDF adjunto (`Model Card MagicTouch.pdf`, de 13 de marzo de 2023) documenta una versión anterior v1 de un solo grafo, `512 x 512 x 4` (aproximadamente 6 MB) en FP y unos 30 FPS en GPU de Pixel 7; el bundle actual empaqueta la versión v2 de dos etapas a 768 x 768 en INT8. No se dispone de información sobre el dataset de entrenamiento, el número de tokens ni el uso de RLHF/DPO en la información proporcionada.
+El diseño es explícitamente stateful: la imagen se codifica una vez y las sucesivas indicaciones del usuario (trazos positivos y negativos) reutilizan las características cacheadas, lo que reduce el coste por refinamiento. La model card diferencia claramente esta versión v2 (768×768, INT8, dos etapas) del modelo v1 documentado en el PDF adjunto (un solo grafo `512×512×4`, aproximadamente 6 MB en FP, con unos 30 FPS en la GPU de un Pixel 7). No se proporcionan en la información disponible datos sobre el conjunto de entrenamiento, número de tokens, composición del dataset ni si hubo RLHF o DPO; tampoco se detalla la innovación algorítmica interna más allá de la separación encoder/decoder y el uso de indicaciones tipo brush.
 
 ## Capacidades
 
-- Segmentación interactiva promptable mediante trazos y puntos positivos y negativos (`BrushMode.POSITIVE` y negativos).
-- Codificación de imagen única con decodificación por interacción, lo que permite refinamiento iterativo sin recomputar el encoder.
-- Generación de máscaras de resolución completa a 768 x 768.
-- Funcionamiento on-device en Android, iOS, web (JavaScript) y Flutter, además de Python.
-- Integración nativa con MediaPipe Tasks mediante `InteractiveSegmenter`.
-- No incluye tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües: es un modelo puramente visual.
-- No dispone de modo thinking, visión general, audio ni generación de texto.
+- Segmentación interactiva de imágenes guiada por indicaciones de punto o trazo (positivas y negativas).
+- Generación de máscaras de segmentación de objetos indicados por el usuario mediante `InteractiveSegmenter`.
+- Modo brush (`InteractiveSegmenterBrushMode`) para trazos continuos, además de indicaciones puntuales.
+- Inferencia en dispositivo en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
+- Procesamiento de imágenes a resolución 768×768 con mapas de características multiescala.
+- Refinamiento iterativo de la máscara sin recodificar la imagen, gracias al estado interno del bundle.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step, generación de texto ni capacidades multilingües: es un modelo exclusivamente de visión.
 
 ## Casos de uso
 
-- Edición fotográfica en móvil: el usuario traza sobre un objeto y obtiene una máscara precisa para recortarlo o sustituir el fondo. El encoder se ejecuta una vez por imagen y cada trazo adicional solo invoca el decoder de 2,27 MB, lo que mantiene la interacción fluida en dispositivo.
-- Herramientas de anotación de datasets: un anotador indica con puntos positivos y negativos el objeto de interés y el modelo genera la máscara, acelerando el etiquetado semántico de imágenes para entrenar otros modelos.
-- Retoque y eliminación de objetos en apps de consumo: la máscara generada a 768 x 768 sirve como entrada para pipelines de inpainting o borrado de objetos, sin enviar la imagen a un servidor.
-- Segmentación en tiempo real en web: mediante la demo y los bindings de MediaPipe para JavaScript, se puede integrar en un editor web que procese la imagen en el navegador.
-- Aplicaciones de realidad aumentada: separar el sujeto del fondo en el dispositivo para superponer efectos o fondos virtuales en Android e iOS.
-- Preprocesado en pipelines de visión: generar máscaras de objetos concretos como paso previo a clasificación, conteo o medición, aprovechando que el bundle es pequeño (30,5 MB) y no requiere GPU dedicada.
-- Flujos de selección asistida en apps de productividad: selección de regiones de una imagen por trazo en herramientas de captura o documentación, con licencia Apache 2.0 que permite uso comercial.
+- Edición fotográfica en móvil: el usuario toca o traza sobre un objeto y el modelo devuelve la máscara para recortes o sustitución de fondo; el codificador se ejecuta una vez y cada trazo adicional solo invoca el decodificador de 2,27 MB, lo que mantiene la interacción ágil en Android e iOS.
+- Anotación asistida de datasets: un anotador indica con trazos positivos y negativos la región de interés y el modelo genera la máscara, reduciendo el tiempo frente a la anotación poligonal manual; la licencia Apache 2.0 permite integrarlo en pipelines internos y comerciales.
+- Herramientas de retoque en web: mediante el ejemplo de MediaPipe Samples Web y el bundle `.task`, se puede ofrecer segmentación interactiva en el navegador sin backend, con el coste de codificación asumido en el cliente.
+- Aplicaciones de realidad aumentada: segmentar un objeto indicado por el usuario para aplicar efectos, oclusiones o superposiciones en tiempo real en dispositivos móviles, aprovechando el diseño on-device y la reutilización de características.
+- Asistencia a la accesibilidad: selección de regiones de una imagen mediante indicaciones simples (un toque o un trazo) para usuarios con dificultades de precisión, con refinamiento iterativo sin recarga del modelo.
+- Prototipado rápido en Python/Colab: el notebook de ejemplo permite validar flujos de segmentación interactiva antes de portar la lógica a Android, iOS, Flutter o web con el mismo bundle.
+- Preprocesado en aplicaciones de visión: generar máscaras de objetos para tareas posteriores (medición, clasificación por región, composición) en entornos sin conectividad, dado que el modelo se ejecuta localmente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona, para la versión v1 anterior, una cifra de aproximadamente 30 FPS en la GPU de un Pixel 7; no se aportan métricas de IoU, latencia ni throughput para el bundle v2 INT8 de 768 x 768.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona, para el modelo v1 anterior documentado en el PDF adjunto, una cifra de aproximadamente 30 FPS en la GPU de un Pixel 7; no se aportan métricas de IoU, latencia ni throughput para la versión v2 INT8 de 768×768 incluida en este bundle.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; el bundle completo ocupa 30,5 MB, por lo que la huella de memoria es muy reducida y apta para dispositivos móviles.
-- GPU recomendadas: no se especifican; el modelo está diseñado para ejecución on-device (CPU/GPU/NPU móvil) mediante MediaPipe.
-- Cabe en GPU de consumo: sí, por tamaño, aunque no se documentan requisitos mínimos concretos.
-- Opciones de despliegue: MediaPipe Tasks (`InteractiveSegmenter`) en Python, web, Android, iOS y Flutter; los submodelos son TFLite y pueden ejecutarse con el runtime de TensorFlow Lite / LiteRT.
-- Latencia y throughput: solo se documenta la cifra de aproximadamente 30 FPS en Pixel 7 GPU para la versión v1 de 512 x 512; no hay datos para la v2.
+- VRAM estimada: no disponible; el bundle es de 30,53 MB (encoder 28,26 MB + decoder 2,27 MB), por lo que el peso en memoria es reducido, pero no se publican cifras de memoria en ejecución.
+- GPU recomendadas: no disponible; el modelo está diseñado para ejecución on-device en Android, iOS y web, no para despliegue en GPU de servidor.
+- Cabe en GPU de consumo: sí, por tamaño (30,53 MB), aunque la información disponible no detalla requisitos de memoria ni compatibilidad con GPUs de escritorio.
+- Opciones de despliegue: MediaPipe Tasks (`InteractiveSegmenter`) en Python, Android, iOS, web y Flutter; los submodelos son TFLite INT8, por lo que también pueden ejecutarse con el runtime LiteRT/TFLite.
+- Latencia y throughput: no disponibles para la versión v2; solo se cita ≈30 FPS en Pixel 7 GPU para el modelo v1 de 512×512 en FP.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Como referencia cualitativa, la propia model card menciona la versión v1 del mismo modelo (un solo grafo, 512 x 512 x 4, aproximadamente 6 MB, FP, unos 30 FPS en Pixel 7 GPU), que es la única alternativa documentada; no se aportan datos de otros segmentadores interactivos.
-
-| Modelo | Resolucion | Precision | Tamano | Etapas | Licencia |
-|---|---|---|---|---|---|
-| MagicTouch v2 (este bundle) | 768 x 768 | INT8 | 30,5 MB | Encoder + decoder | Apache 2.0 |
-| MagicTouch v1 (referencia en PDF) | 512 x 512 x 4 | FP | aprox. 6 MB | Grafo unico | no disponible |
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de segmentación interactiva (por ejemplo, variantes de SAM) que permitan una comparación rigurosa de parámetros, contexto, resultados o latencia.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente visual: no procesa texto, no soporta tool calling ni razonamiento multi-step.
-- La calidad de la máscara depende de la precisión de los trazos del usuario; se requieren prompts positivos y negativos para refinar resultados ambiguos.
-- No se documentan sesgos conocidos ni evaluación de robustez por tipo de imagen, iluminación o dominio.
-- Riesgo de segmentación incorrecta en objetos con bordes poco definidos, oclusiones o imágenes de baja calidad; no hay métricas publicadas que cuantifiquen este riesgo.
-- Resolución de entrada fija a 768 x 768; imágenes de otra resolución deben redimensionarse, lo que puede degradar la precisión en detalles finos.
-- No hay información sobre el dataset de entrenamiento ni sobre limitaciones idiomáticas o culturales del dominio visual.
-- Licencia Apache 2.0: permite uso comercial con atribución y sin garantías; conviene revisar los términos de MediaPipe y LiteRT para el despliegue.
-- El PDF de model card incluido documenta una versión anterior (v1); no debe tomarse como especificación del bundle v2 empaquetado.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia comunitaria de uso en producción.
+- Modelo de visión: no procesa texto ni lenguaje, por lo que no admite prompts en lenguaje natural ni tareas de generación.
+- Depende de indicaciones del usuario (puntos o trazos); la calidad de la máscara está condicionada a la precisión de dichas indicaciones.
+- Resolución de entrada fija a 768×768; no se documenta comportamiento con imágenes de otras resoluciones o relaciones de aspecto.
+- No se publican datos sobre sesgos, dominios de entrenamiento ni robustez ante imágenes fuera de distribución.
+- Riesgo de segmentación incorrecta en objetos ambiguos, oclusiones o bordes poco definidos; no se aportan métricas de error.
+- La model card advierte de una discrepancia entre el PDF adjunto (modelo v1, 512×512, FP) y el bundle real (v2, 768×768, INT8); conviene no tomar las cifras del PDF como válidas para este paquete.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de los componentes de MediaPipe y de los ejemplos de código enlazados.
+- No se especifican requisitos de memoria en ejecución ni latencias para la versión v2, lo que dificulta planificar producción sin mediciones propias.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-InteractiveSegmenter-MagicTouch
-- Documentación de Interactive Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/interactive_segmenter
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/interactive_segmenter
-- Guía de instalación en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guía de instalación en web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
-- Guía de instalación en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
-- Guía de instalación en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
-- Guía de instalación en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
+- Hugging Face: https://huggingface.co/litert-community/MediaPipe-InteractiveSegmenter-MagicTouch
+- Documentación de MediaPipe Interactive Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/interactive_segmenter
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/interactive_segmentation/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/interactive_segmentation/ios
+- Notebook Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/interactive_segmentation/python/interactive_segmenter.ipynb
+- Ejemplo Web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/interactive-segmenter.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/interactive_segmenter
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/interactive_segmenter
+- Model card original (PDF en el repo): https://huggingface.co/litert-community/MediaPipe-InteractiveSegmenter-MagicTouch/blob/main/Model%20Card%20MagicTouch.pdf

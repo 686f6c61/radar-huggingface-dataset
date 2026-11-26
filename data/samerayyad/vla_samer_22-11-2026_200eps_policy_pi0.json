@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SamerAyyad/VLA_Samer_22.11.2026_200eps_policy_Pi0",
+  "slug": "samerayyad-vla_samer_22-11-2026_200eps_policy_pi0",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_22.11.2026_200eps_policy_Pi0",
+  "created_at": "2026-11-25T23:28:42.000Z",
+  "updated_at": "2026-11-25T23:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:SamerAyyad/VLA_Samer_22.11.2026_200eps",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926903654,
+  "storage_human": "8.9 GB",
+  "context_length": null,
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Метро в Одессе: есть ли оно и почему его не построили",
+      "url": "https://poskot.od.ua/odesskoe-metro/",
+      "snippet": "Sep 12, 2026 · Есть ли метро в Одессе? Нет — действующего метрополитена в городе нет. Почему его не построили, где …Read more"
+    }
+  ]
+}

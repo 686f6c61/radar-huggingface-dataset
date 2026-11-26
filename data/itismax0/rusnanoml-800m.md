@@ -2,91 +2,102 @@
 
 ## Resumen
 
-RusNanoML-800M es un modelo publicado en Hugging Face por el usuario itismax0 bajo licencia Apache 2.0. Por el identificador y el tamano declarado (800M), se trata de un modelo de lenguaje de aproximadamente 800 millones de parametros, presumiblemente orientado a idioma ruso (el prefijo "Rus" en el nombre) y con posible enfasis en tareas de razonamiento o matematicas ("NanoML"). Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion.
+RusNanoMath-800M es un modelo de razonamiento matemático bilingüe (ruso e inglés) de 800 millones de parámetros, publicado por el usuario itismax0 bajo licencia Apache 2.0. Está construido sobre la arquitectura Qwen3.5 con atención lineal híbrida (capas con Gated Delta Rule), lo que le permite mantener una complejidad de memoria de estado O(1) durante la generación y trabajar con un contexto de hasta 32 768 tokens. Su pipeline declarado es text-generation, aunque el repositorio incluye también la etiqueta image-text-to-text y el código de ejemplo carga la clase `AutoModelForImageTextToText`.
 
-La relevancia de esta ficha es por tanto limitada y debe leerse con cautela: el modelo no presenta descargas ni likes en el momento de la consulta, no tiene pipeline declarado y no ofrece informacion sobre idiomas soportados. Se trata de un artefacto de pesos publicado sin documentacion tecnica asociada, lo que impide verificar sus capacidades reales. Toda la informacion de esta ficha que no aparece explicitamente en los metadatos de Hugging Face se marca como "no disponible".
+El modelo está especializado en matemáticas de competición y razonamiento simbólico, y se ha alineado mediante SFT sobre cadenas de razonamiento (CoT) seguido de SimPO (Simple Preference Optimization). Su relevancia radica en que, con menos de mil millones de parámetros, declara resultados en el rango de modelos varias veces mayores: 52,42 % en el subconjunto de álgebra de MATH-500 (frente a 53,8 % de Llama-3.1-8B) y 36,2 % en MATH-500 completo. Todo ello con un peso en BF16 de aproximadamente 1,6 GB, lo que lo hace desplegable en GPU de consumo muy modestas.
 
-Dado que el autor no ha publicado especificaciones, esta ficha se limita a reflejar los datos objetivos disponibles (ID, licencia, fecha de creacion, ausencia de metricas) y a senalar las lagunas de informacion que un evaluador deberia cubrir por su cuenta antes de considerar el modelo para cualquier uso en produccion.
+El repositorio, de 4,8 GB, incluye pesos en safetensors y un GGUF F16 de precisión completa para su uso con llama.cpp u Ollama. El modelo acumula 237 descargas y 1 like en el momento de la consulta, y su ficha presenta cierta inconsistencia de nomenclatura: el ID del repositorio es `RusNanoML-800M` mientras que la model card y el model-index lo denominan `RusNanoMath-800M`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 800M (inferido del identificador; no confirmado en la model card) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el prefijo "Rus" sugiere ruso, sin confirmacion) |
+| Arquitectura | Transformer híbrido con atención lineal (Qwen3.5, capas Gated Delta Rule) |
+| Parametros totales | 852.985.920 (≈0,85B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32 768 tokens |
+| Tipos de cuantizacion | GGUF F16 incluido en el repo; cuantizaciones adicionales no disponibles |
+| Idiomas soportados | Ruso (ru) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors y GGUF (F16) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer decoder-only, un modelo MoE, una arquitectura hibrida o un modelo basado en state space models. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+El modelo parte de la arquitectura Qwen3.5 con atención lineal híbrida basada en Gated Delta Rule. Esta combinación alterna capas de atención lineal, cuya memoria de estado es de complejidad O(1) durante la decodificación, con el resto de la pila transformer, lo que reduce el coste de memoria en contextos largos frente a la atención completa tradicional. El modelo declara soporte de contexto de hasta 32 768 tokens y un peso en BF16 de aproximadamente 1,6 GB.
 
-La unica informacion objetiva disponible es el tamano aproximado (800M parametros, inferido del nombre) y la licencia Apache 2.0. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa y no debe tomarse como verificada.
+El entrenamiento se articula en dos fases: un SFT dirigido sobre cadenas de razonamiento (CoT) orientado a problemas de matemáticas de competición y olimpiadas, seguido de una alineación por preferencias con SimPO. La model card no especifica el número de tokens de entrenamiento, la composición exacta del dataset ni los detalles del proceso de anotación de preferencias, por lo que esos datos deben considerarse no disponibles. Tampoco se documentan innovaciones adicionales como decodificación especulativa.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada; no hay model card que describa capacidades.
-- Razonamiento y matematicas: el sufijo "ML" del nombre podria sugerir orientacion a machine learning o matematicas, pero no hay evidencia documentada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el prefijo "Rus" apunta a un posible enfoque en ruso, sin confirmacion.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Generación de texto conversacional con plantilla de chat (`apply_chat_template`) en ruso e inglés.
+- Razonamiento matemático de competición con cadenas de razonamiento explícitas (CoT) y salida en formato `\boxed{}`.
+- Álgebra simbólica: resolución de ecuaciones polinómicas y manipulación algebraica, área en la que el autor reporta sus mejores resultados relativos.
+- Aritmética multi-paso y problemas de enunciado verbal (estilo GSM8K).
+- Razonamiento lógico-matemático orientado a problemas de olimpiada.
+- Generación determinista mediante decodificación greedy (`do_sample=False`, `temperature 0`), que es el modo recomendado en los ejemplos de la model card.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso autónomo: no disponible en la información proporcionada.
+- Capacidades de visión: la etiqueta `image-text-to-text` y la clase `AutoModelForImageTextToText` aparecen en el repositorio, pero la model card no documenta ninguna capacidad multimodal; no disponible.
+- Modo thinking explícito, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos con garantias, dado que no se ha publicado ninguna especificacion ni evaluacion del modelo. Los siguientes escenarios son hipoteticos y requeririan validacion previa por parte del equipo que quiera adoptar el modelo:
-
-- Experimentacion academica con modelos pequenos: un modelo de 800M parametros puede servir como base para estudiar tecnicas de ajuste fino o destilacion en entornos con recursos limitados, siempre que se valide primero su calidad mediante evaluaciones propias.
-- Prototipado de bajo coste en GPU de consumo: por su tamano reducido, cabria esperar que quepa en GPUs consumer, pero la ausencia de informacion sobre cuantizacion y formato de pesos impide confirmarlo.
-- Fine-tuning especifico para ruso: si el modelo fue preentrenado en ruso, podria servir como punto de partida para ajustes supervisados en tareas concretas, previa verificacion empirica.
-- Investigacion sobre eficiencia de inferencia: util como sujeto de pruebas para comparativas de latencia y throughput en hardware modesto.
-- Generacion de texto en entornos con restricciones de memoria: solo si las pruebas propias confirman una calidad aceptable.
-- Base para distillation: podria actuar como estudiante en un pipeline de destilacion desde un modelo mayor, aunque sin datos de entrenamiento publicados el ajuste seria a ciegas.
-
-En todos los casos, la ausencia de documentacion obliga a realizar una evaluacion propia antes de cualquier uso real.
+- Resolución de problemas de álgebra en producción educativa: el modelo puede recibir ecuaciones y devolver la solución paso a paso con el resultado final en `\boxed{}`, lo que facilita el parseo automático de respuestas en plataformas de corrección. Su 52,42 % en álgebra de MATH-500 lo sitúa por encima de modelos de 1,5B a 3B parámetros en esa tarea.
+- Tutor matemático bilingüe ruso-inglés: con soporte nativo de ambos idiomas, puede atender a estudiantes que alternan idiomas en la misma conversación, generando explicaciones CoT en el idioma de la consulta.
+- Generación de datasets sintéticos de razonamiento matemático: al producir cadenas de razonamiento completas y deterministas (temperatura 0), es útil para crear pares pregunta-respuesta con traza de razonamiento para entrenar o evaluar otros modelos.
+- Despliegue en entornos con hardware muy limitado: con ~1,6 GB en BF16 y funcionamiento declarado en GPU de 4 GB de VRAM, cabe en portátiles y en placas de inference de bajo coste, lo que permite ofrecer un servicio de resolución de problemas sin infraestructura dedicada.
+- Evaluación comparativa de modelos pequeños: sirve como referencia sub-1B en pipelines de benchmarking de matemáticas (MATH-500, GSM8K) para contrastar el efecto de técnicas de alineación como SimPO en modelos de este tamaño.
+- Integración en CLI y asistentes locales: el GGUF F16 incluido permite ejecutarlo con llama.cpp u Ollama sin pérdida de cuantización, útil para herramientas de línea de comandos de resolución de problemas matemáticos en local y sin conexión.
+- Preprocesado matemático en pipelines de datos: puede normalizar y resolver expresiones simbólicas sencillas antes de pasarlas a un solver formal, reduciendo el número de llamadas a sistemas más costosos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados declarados por el autor del modelo (métricas no verificadas, `verified: false`):
+
+| Benchmark | Métrica | RusNanoMath-800M | Referencia declarada por el autor |
+|---|---|---|---|
+| MATH-500 | Accuracy | 36,2 % | Gemma-2-2B: 35,0 %; Mistral-7B-Instruct: 28,4 %; SmolLM2-1.7B: 21,5 %; Llama-3.2-1B: 14,0 % |
+| MATH-500 (Algebra, 124 problemas) | Accuracy | 52,42 % | Llama-3.1-8B: 53,8 %; Qwen2.5-1.5B: 49,5 %; Llama-3.2-3B: 48,0 %; Gemma-2-2B: 41,2 % |
+| GSM8K | Accuracy | 52,0 % | no disponible |
+
+El autor indica que los 36,2 % de MATH-500 corresponden a 181 problemas resueltos de 500, y los 52,42 % de álgebra a 65 de 124. No se han publicado en la información disponible resultados de otros benchmarks como MMLU o HumanEval.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Como referencia orientativa, un modelo de 800M parametros en FP16 requeriria del orden de 1,6 GB solo para los pesos, mas memoria para el KV cache y overhead del runtime; en cuantizacion de 4 bits podria situarse por debajo de 1 GB, pero estos calculos son estimaciones genericas y no verificadas para este modelo concreto.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU consumer: probablemente si, dado el tamano, pero no confirmado por el autor.
-- Opciones de despliegue: no disponible; al no conocerse el formato de pesos, no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: aproximadamente 1,6 GB en BF16 para los pesos; el autor indica que funciona en GPU de consumo con 4 GB de VRAM.
+- GPU recomendadas: cualquier GPU de consumo con al menos 4 GB (el autor no especifica modelos concretos); para mayor throughput, GPU de datacenter tipo A100 o H100, aunque el modelo está claramente sobredimensionado para ellas.
+- Cabe en GPU de consumo: sí, según el autor, en tarjetas de 4 GB o más.
+- Opciones de despliegue: transformers (`AutoModelForImageTextToText`), llama.cpp (compilaciones `master` >= b12413, necesarias para la arquitectura Qwen3.5 híbrida) y Ollama mediante importación local del GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable sin especificaciones del modelo. A modo de referencia de categoria (modelos de aproximadamente 800M-1B parametros), podrian citarse alternativas como Qwen2.5-0.5B, Llama 3.2-1B o Gemma 2-2B, pero la comparacion carece de sentido sin datos de rendimiento de RusNanoML-800M.
+| Modelo | Parámetros | Contexto | MATH-500 | MATH-500 Algebra | GSM8K | Licencia |
+|---|---|---|---|---|---|---|
+| RusNanoMath-800M | 0,85B | 32 768 | 36,2 % | 52,42 % | 52,0 % | Apache 2.0 |
+| Qwen2.5-1.5B | 1,5B | no disponible | no disponible | 49,5 % | no disponible | Apache 2.0 |
+| Llama-3.2-3B | 3B | no disponible | no disponible | 48,0 % | no disponible | Llama 3.2 Community |
+| Gemma-2-2B | 2B | no disponible | 35,0 % | 41,2 % | no disponible | Gemma Terms |
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion |
-|---|---|---|---|---|
-| RusNanoML-800M | ~800M (inferido) | no disponible | Apache 2.0 | Practicamente inexistente |
-| Qwen2.5-0.5B | 0,5B | 32k (segun model card publica) | Apache 2.0 | Completa |
-| Llama 3.2-1B | 1,2B | 128k (segun model card publica) | Llama 3.2 Community License | Completa |
-| Gemma 2-2B | 2,6B | 8k (segun model card publica) | Gemma Terms of Use | Completa |
-
-Los datos de los modelos comparativos provienen de sus model cards publicas y se incluyen solo como referencia de categoria; no se ha realizado ninguna evaluacion comparativa con RusNanoML-800M.
+Los datos de los modelos comparables proceden únicamente de las cifras citadas por el autor en su model card; no se dispone de verificación independiente ni de sus especificaciones completas de contexto o licencia en la información proporcionada. Destaca que RusNanoMath-800M supera en álgebra a modelos de 1,5B y 3B parámetros y queda a 1,4 puntos de Llama-3.1-8B, con un orden de magnitud menos de parámetros.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card solo declara la licencia, sin descripcion de arquitectura, datos de entrenamiento ni evaluaciones.
-- Sin evidencia de calidad: no hay benchmarks, demos ni ejemplos de uso que permitan estimar el rendimiento.
-- Sesgos desconocidos: al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos de genero, raza, idioma o contenido.
-- Riesgo de alucinacion no cuantificado: cualquier modelo de este tamano presenta riesgo de alucinacion, pero no hay evaluaciones que lo midan.
-- Idiomas no confirmados: el nombre sugiere ruso, pero no hay declaracion oficial; el uso en castellano u otros idiomas no esta respaldado.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni clausulas de responsabilidad adicionales; conviene revisar el texto completo de la licencia.
-- Sin senales de mantenimiento: cero descargas y cero likes en el momento de la consulta, creado y actualizado en la misma fecha, sin historial de versiones.
-- Riesgo de seguridad: pesos sin procedencia verificable ni model card detallada; en produccion deberia aplicarse un escaneo de seguridad y una evaluacion de robustez antes de cualquier despliegue.
+- Resultados no verificados: todas las métricas del model-index tienen `verified: false` y proceden del propio autor; no hay evaluación independiente publicada.
+- Riesgo de alucinación: es un modelo de 0,85B especializado en matemáticas; fuera del dominio matemático y en problemas de competición complejos puede producir razonamientos plausibles pero incorrectos. Los propios resultados (36,2 % en MATH-500) implican que falla en casi dos tercios de los problemas de ese conjunto.
+- Cobertura de idiomas limitada a ruso e inglés; el rendimiento en castellano no está documentado y previsiblemente será deficiente.
+- Inconsistencia de nomenclatura: el ID del repositorio es `RusNanoML-800M` pero la model card y los benchmarks usan `RusNanoMath-800M`, lo que puede causar confusión en referencias y citas.
+- Ambigüedad multimodal: las etiquetas `image-text-to-text` y la clase `AutoModelForImageTextToText` sugieren capacidades de visión que la model card no documenta; no debe asumirse soporte de imagen sin verificación.
+- Dependencia de versiones recientes de llama.cpp (>= b12413) para cargar el GGUF; compilaciones antiguas rechazarán el archivo.
+- Sin datos publicados sobre sesgos, composición del dataset de entrenamiento ni proceso de anotación de preferencias, lo que dificulta evaluar riesgos de contaminación de benchmarks.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero al ser un modelo derivado de la arquitectura Qwen3.5 conviene revisar las condiciones de la familia base.
+- No se documentan capacidades de tool calling ni de agentes; no debe integrarse en pipelines que dependan de function calling sin validación previa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/itismax0/RusNanoML-800M
-- Referencia de categoria (modelo similar en tamano, no relacionado): https://huggingface.co/SupraLabs/reasoning-summarizer-800m-pre-gguf
-- No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.
+- Modelo en Hugging Face: https://huggingface.co/itismax0/RusNanoML-800M
+- Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- Papers, blogs y demos adicionales: no disponibles en la información proporcionada.

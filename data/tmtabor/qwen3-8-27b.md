@@ -2,48 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje y vision (vision-language model) publicado por el usuario tmtabor en Hugging Face, derivado de la familia Qwen3 y afinado con Unsloth para su posterior conversion a formato GGUF. El repositorio contiene pesos en safetensors y cuantizaciones GGUF listas para su uso con llama.cpp, lo que facilita el despliegue en entornos locales. El modelo cuenta con 27.781.427.952 parametros totales (aproximadamente 27,8 mil millones) y un tamano de repositorio de 73,3 GB.
+Qwen3.8-27B es un modelo multimodal de tipo image-text-to-text publicado por el usuario tmtabor en Hugging Face, obtenido mediante fine-tuning del modelo base unsloth/Qwen3.8-27B. Se distribuye con licencia Apache 2.0 y pesos en safetensors y GGUF, lo que facilita tanto la inferencia con la librería transformers como su despliegue en entornos de cuantización ligera. El repositorio tiene un tamano de 123 GB y acumula 253 descargas desde su creacion el 2 de noviembre de 2026.
 
-La relevancia de esta ficha radica en que se trata de una publicacion reciente (noviembre de 2026) con cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto poco validado por la comunidad. La model card es extremadamente escasa: solo documenta el proceso de conversion a GGUF con Unsloth y proporciona comandos de ejemplo para su uso con `llama-cli` y `llama-mtmd-cli`. No se especifican datos de entrenamiento, licencia, idiomas ni benchmarks.
+El modelo pertenece a la familia arquitectonica qwen3_5 (etiqueta declarada por el autor) y cuenta con 27.781.427.952 parametros totales, segun los metadatos reales de los ficheros safetensors. Su pipeline declarado es image-text-to-text, lo que indica capacidad para procesar imagenes y texto de forma conjunta, ademas de generacion de texto convencional. Esta pensado para conversacion y generacion de texto, y el autor indica que el fine-tuning se realizo con Unsloth y la libreria TRL de Hugging Face.
 
-Dado que la informacion disponible es minima, esta ficha prioriza la verificabilidad: los datos tecnicos confirmados (parametros, formato, herramientas de inferencia) se presentan con rigor, mientras que cualquier dato no documentado se marca explicitamente como "no disponible". El lector debe tratar este modelo con cautela hasta que el autor publique una model card completa.
+La relevancia de esta ficha radica en que se trata de un modelo derivado de una familia reciente (Qwen 3.5), con licencia permisiva y disponible en multiples formatos, pero con documentacion muy escasa: la model card no detalla el dataset de entrenamiento, los idiomas soportados ni resultados de evaluacion. Cualquier evaluacion en produccion debe partir de pruebas propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `qwen3_5` en Hugging Face; presumiblemente transformer denso de la familia Qwen3) |
-| Parametros totales | 27.781.427.952 (aproximadamente 27,8 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | qwen3_5 (etiqueta del autor); transformer multimodal image-text-to-text |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M; BF16 para el proyector multimodal (`BF16-mmproj.gguf`); safetensors en BF16 presumiblemente |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors y GGUF |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos en safetensors y GGUF) |
+| Idiomas soportados | en (declarado en la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite confirmar la arquitectura interna. La etiqueta `qwen3_5` en Hugging Face sugiere que el modelo deriva de la familia Qwen3, y la presencia de un archivo `BF16-mmproj.gguf` confirma que se trata de un modelo multimodal con un proyector de vision separado, tipico de los vision-language models. El tamano de 27,8 B parametros es consistente con un transformer denso de escala media-grande, aunque no se puede descartar una arquitectura MoE sin confirmacion del autor.
+El autor etiqueta el modelo como qwen3_5 y lo publica con pipeline image-text-to-text, lo que sugiere una arquitectura transformer con codificador visual y decodificador de lenguaje, propia de los modelos multimodales de la familia Qwen. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni sobre si emplea tecnicas como atencion lineal o decodificacion especulativa. Tampoco se detalla si es un modelo denso o de mezcla de expertos; los 27.781 millones de parametros totales corresponden a un modelo denso de gran tamano.
 
-Respecto al entrenamiento, la model card solo indica que el modelo fue afinado y convertido a GGUF usando Unsloth, una herramienta que acelera el fine-tuning y la cuantizacion. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otras tecnicas de alineacion, ni el modelo base exacto sobre el que se hizo el fine-tuning. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion debe considerarse no disponible.
+En cuanto al entrenamiento, la model card solo indica que el fine-tuning se realizo con Unsloth y TRL, lo que implica un ajuste supervisado o preferencial sobre el modelo base unsloth/Qwen3.8-27B. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales. Esta ausencia de informacion impide reproducir el proceso de entrenamiento o auditar sus datos.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
-- Procesamiento multimodal de imagen y texto: la presencia del archivo `BF16-mmproj.gguf` y la instruccion de uso con `llama-mtmd-cli` confirman soporte de vision.
-- Compatibilidad con llama.cpp mediante los comandos `llama-cli` (texto) y `llama-mtmd-cli` (multimodal).
-- Soporte de plantillas de chat mediante el flag `--jinja`, lo que permite usar el formato de conversacion definido en el tokenizer.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en las etiquetas de Hugging Face).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, modo thinking ni soporte multilingue especifico.
+- Generacion de texto conversacional y continuacion de texto.
+- Procesamiento conjunto de imagen y texto (pipeline image-text-to-text), con capacidad de responder preguntas sobre imagenes.
+- Generacion de codigo y matematicas: no confirmado explicitamente en la documentacion; debe validarse con pruebas propias.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la model card solo declara ingles (en); no se confirman otros idiomas.
+- Modo thinking, vision o audio: vision confirmada por el pipeline; thinking y audio no disponibles.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales multimodales: el modelo puede cargarse con `llama-mtmd-cli` en una maquina con suficiente VRAM para mantener conversaciones que combinen texto e imagenes, gracias a la cuantizacion Q4_K_M que reduce el peso a aproximadamente 16-17 GB.
-- Experimentacion con vision-language models en entornos sin GPU de datacenter: la version Q4_K_M permite ejecutar el modelo en GPUs consumer de gama alta (24 GB de VRAM) o en configuraciones con offloading a CPU, algo inviable con el modelo en BF16.
-- Evaluacion comparativa de fine-tunes de Qwen3: investigadores que quieran medir el impacto de un fine-tuning comunitario sobre la base Qwen3 pueden usar este checkpoint como punto de partida, aunque deberian validar primero su calidad con sus propios benchmarks.
-- Integracion en pipelines de llama.cpp: al estar en GGUF, el modelo puede integrarse en aplicaciones basadas en `llama-cpp-python` o servidores compatibles con la API de llama.cpp para tareas de generacion de texto e imagen a texto.
-- Docencia y formacion: sirve como ejemplo practico de conversion de un modelo multimodal a GGUF con Unsloth, util en talleres sobre despliegue de modelos open source.
-- Investigacion sobre cuantizacion: comparar la salida de la version Q4_K_M con la de BF16 (si se dispone de ella en safetensors) permite estudiar la degradacion por cuantizacion en tareas multimodales.
+- Descripcion y analisis de imagenes en aplicaciones de accesibilidad: el modelo puede recibir una imagen y generar una descripcion textual detallada, util para lectores de pantalla o catalogacion automatica de contenido visual.
+- Extraccion de informacion de documentos escaneados: al combinar vision y texto, puede transcribir y resumir facturas, formularios o capturas, integrándose en pipelines de digitalizacion.
+- Asistente conversacional en ingles: su pipeline de generacion de texto y su naturaleza conversacional permiten desplegarlo como chatbot multi-turno para atencion al usuario en entornos angloparlantes.
+- Generacion de codigo asistida: aunque no esta confirmado en la documentacion, el modelo puede emplearse en tareas de autocompletado y explicacion de codigo, previa validacion de calidad con benchmarks propios.
+- Prototipado rapido de aplicaciones multimodales: gracias a los pesos en GGUF y safetensors, se puede desplegar en entornos de desarrollo con llama.cpp u Ollama para experimentar con casos de uso de vision-lenguaje.
+- Fine-tuning adicional sobre dominios especificos: al ser un modelo Apache 2.0 con pesos abiertos, sirve como base para ajustes con Unsloth o TRL en tareas verticales (legal, medico, industrial) sin restricciones de licencia comercial.
+- Investigacion en evaluacion de modelos multimodales: su disponibilidad en varios formatos permite comparar el comportamiento de un modelo de 27B en tareas de imagen-texto frente a alternativas de la misma escala.
 
 ## Benchmarks y rendimiento
 
@@ -51,36 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en Q4_K_M: aproximadamente 16-17 GB solo para los pesos, mas overhead de contexto y del proyector multimodal; en la practica se recomiendan 20-24 GB de VRAM.
-- VRAM estimada en BF16: aproximadamente 55-56 GB solo para los pesos, por lo que requiere GPUs de datacenter (A100 80 GB, H100 80 GB) o configuraciones multi-GPU.
-- GPU consumer: la version Q4_K_M cabe en una RTX 4090 (24 GB) o RTX 3090 (24 GB); en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) requeriria offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`); no se documenta soporte verificado para vLLM, TGI u Ollama, aunque al ser GGUF podria importarse en Ollama manualmente.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en precision completa (FP16/BF16): aproximadamente 55-56 GB solo para los pesos, mas memoria para el codificador visual y el contexto; se recomienda al menos 64-80 GB.
+- VRAM estimada con cuantizacion de 8 bits: en torno a 28-30 GB; con cuantizacion de 4 bits: en torno a 14-16 GB, segun el esquema de cuantizacion empleado (no documentado por el autor).
+- GPU recomendadas para precision completa: A100 80 GB, H100 80 GB, o varias GPU de 40-48 GB en paralelo.
+- GPU de consumo: cabe en una RTX 4090 (24 GB) solo con cuantizacion de 4 bits y contexto moderado; en RTX 3090 (24 GB) ocurre lo mismo. No cabe en GPU de 8-12 GB sin cuantizaciones agresivas y posible descarga parcial a CPU.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), llama.cpp y Ollama (gracias a los pesos GGUF), y potencialmente vLLM si el modelo es compatible con la arquitectura qwen3_5.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| tmtabor/Qwen3.8-27B | 27,8 B | no disponible | no disponible | safetensors, GGUF | Hugging Face, 0 descargas |
-| Qwen3 (modelos oficiales de Alibaba) | variable (segun variante) | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Hugging Face oficial |
-| Gemma 3 27B (Google) | 27 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Hugging Face oficial |
+| tmtabor/Qwen3.8-27B | 27.781 M | no disponible | Apache 2.0 | safetensors, GGUF | Fine-tuning de unsloth/Qwen3.8-27B; documentacion escasa |
+| unsloth/Qwen3.8-27B (base) | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva; sin datos publicos en esta ficha |
+| Alternativas de 27B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-La comparativa se limita a la categoria por tamano, ya que no se dispone de datos de rendimiento del modelo analizado. Cualquier comparacion cuantitativa seria especulativa y no se incluye.
+No se dispone de informacion suficiente para comparar con alternativas concretas de la misma categoria; los datos del modelo base y de otros modelos de 27B no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no se documentan datos de entrenamiento, licencia, idiomas ni evaluaciones, lo que impide validar su calidad y legalidad de uso.
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; debe contactarse con el autor o asumirse riesgo legal.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
-- Riesgo de alucinacion no cuantificado: al no haber benchmarks ni evaluaciones, no se puede estimar la fiabilidad del modelo.
-- Sesgos desconocidos: sin informacion sobre la composicion del dataset de fine-tuning, no es posible evaluar sesgos de genero, etnia, idioma o dominio.
-- Idiomas soportados no documentados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del ingles.
-- Contexto no documentado: se desconoce la ventana maxima, lo que impide planificar casos de uso con documentos largos.
-- El nombre "Qwen3.8-27B" no corresponde a ninguna nomenclatura oficial de Alibaba; es una denominacion del autor y podria inducir a confusion con modelos oficiales de la familia Qwen3.
-- El fine-tuning con Unsloth y la conversion a GGUF no garantizan paridad de comportamiento con el modelo base; conviene validar antes de usar en produccion.
+- La model card es extremadamente escasa: no documenta dataset, proceso de entrenamiento, evaluaciones ni limitaciones conocidas, lo que dificulta su uso responsable en produccion.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta verificado y podria ser deficiente.
+- Riesgo de alucinacion inherente a los modelos generativos de gran tamano; no hay evaluaciones publicadas que cuantifiquen este riesgo.
+- Sesgos desconocidos: al no documentarse la composicion del dataset de fine-tuning, no se pueden identificar sesgos demograficos, culturales o linguisticos.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el origen de los datos de entrenamiento ni sobre posibles reclamaciones de terceros.
+- El modelo base es unsloth/Qwen3.8-27B, del que no se detallan condiciones adicionales; conviene revisar su licencia y terminos antes de desplegar.
+- El repositorio ocupa 123 GB, lo que implica requisitos de almacenamiento y ancho de banda considerables para su descarga.
+- No se especifica la longitud de contexto soportada, por lo que no se debe asumir una ventana concreta sin probarla.
+- El numero de descargas (253) y la ausencia de likes sugieren una adopcion limitada; no hay evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/tmtabor/Qwen3.8-27B
-- Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
-- llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/tmtabor/Qwen3.8-27B
+- Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B
+- Unsloth (repositorio): https://github.com/unslothai/unsloth
+- TRL de Hugging Face: https://github.com/huggingface/trl

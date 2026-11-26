@@ -2,76 +2,93 @@
 
 ## Resumen
 
-Vertex 0.1 (10M) es un modelo de lenguaje causal de pequeño tamaño (~10,9 millones de parámetros) desarrollado por VertexResearch. Está basado en la arquitectura Llama (LlamaForCausalLM) y está diseñado específicamente para experimentación, educación y pruebas en entornos de bajos recursos, no para uso en producción. Su reducido tamaño permite ejecutarlo en hardware modesto, incluso en una CPU o en una GPU de gama baja, lo que lo convierte en una herramienta útil para aprender sobre el entrenamiento y la inferencia de modelos transformer.
+Vertex 0.1 (10M) es un modelo de lenguaje causal de arquitectura LLaMA desarrollado por VertexResearch, con aproximadamente 10,9 millones de parámetros. Se trata de un modelo deliberadamente minúsculo, concebido como experimento de entrenamiento y prueba de concepto más que como herramienta de producción. Su relevancia radica en que demuestra el ciclo completo de entrenamiento de un transformer desde cero en hardware de consumo: según la model card, se entrenó en un MacBook con chip M5 Pro y 24 GB de memoria en aproximadamente una hora.
 
-El modelo se entrenó durante aproximadamente una hora en un MacBook Pro con chip M5 Pro, sobre un conjunto de datos en inglés con un total estimado de 26 millones de tokens (3 épocas). Con una ventana de contexto de 1024 tokens y una arquitectura de 4 capas, 4 cabezas de atención con GQA (2 cabezas KV), este modelo ofrece una capacidad muy limitada en términos de coherencia, conocimiento y generalización, tal y como advierte su propia ficha. A pesar de sus limitaciones, resulta interesante como punto de partida para estudiar el comportamiento de modelos pequeños y para validar pipelines de generación de texto.
+El modelo emplea una arquitectura LlamaForCausalLM con 4 capas, dimensión oculta de 256, 4 cabezas de atención (2 cabezas KV, con GQA), dimensión de cabeza de 64 y tamaño intermedio de 640. El vocabulario es de 32.000 tokens y la longitud máxima de posiciones es de 1.024. Los pesos están en float32 y el repositorio ocupa prácticamente 0 GB.
+
+Su utilidad práctica es formativa y experimental: sirve para validar pipelines de entrenamiento, probar técnicas de tokenización o cuantización sobre modelos pequeños, y como base para experimentos educativos. No es un modelo adecuado para tareas reales de generación, razonamiento o código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder causal) |
-| Parametros totales | 10.946.816 |
+| Arquitectura | LlamaForCausalLM (transformer decoder-only, GQA) |
+| Parametros totales | 10.946.816 (~10,9M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors en float32) |
-| Idiomas soportados | ingles (en) |
+| Longitud de contexto | 1.024 tokens (max_position_embeddings) |
+| Tipos de cuantizacion | no disponible (pesos publicados en float32) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors (PyTorch) |
+| Dimension oculta | 256 |
+| Capas | 4 |
+| Cabezas de atencion | 4 (2 cabezas KV, GQA) |
+| Dimension de cabeza | 64 |
+| Tamano intermedio (FFN) | 640 |
+| Tamano de vocabulario | 32.000 |
+| Dtype | float32 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Llama estandar: un transformer decoder causal con 4 capas, 4 cabezas de atencion y 2 cabezas KV (GQA). El tamaño oculto es de 256 dimensiones, la dimension de cabeza es 64 y el tamaño intermedio (feed-forward) es de 640. El vocabulario tiene 32.000 tokens. Se trata de un modelo denso, sin mezcla de expertos ni otras innovaciones arquitectonicas.
+El modelo sigue la arquitectura LLaMA estándar de tipo decoder-only con atención causal. Incorpora Grouped Query Attention (GQA) con 4 cabezas de consulta y 2 cabezas de clave/valor, lo que reduce el coste de memoria de la caché KV. Con solo 4 capas y una dimensión oculta de 256, la capacidad representacional es muy reducida; el FFN tiene un tamaño intermedio de 640, lo que da un ratio de expansión de 2,5x, inferior al 4x habitual en modelos LLaMA de mayor tamaño.
 
-El entrenamiento se realizo con un batch size de 8, durante 3207 pasos globales y 3 epocas. El numero total de tokens vistos se estima en ~26 millones (8,8 millones por epoca), calculado a partir del batch size, la longitud de secuencia y el numero de pasos. El entrenamiento duro aproximadamente 1 hora en un MacBook Pro con chip M5 Pro y 24 GB de RAM. No se menciona el uso de tecnicas de alineacion como RLHF o DPO; se trata de un modelo base entrenado con el objetivo clasico de modelado de lenguaje causal.
+El entrenamiento se realizó durante 3 épocas sobre el dataset `HuggingFaceFW/fineweb_edu_100BT-shuffled`, con 3.207 pasos globales, batch size de 8 y un total estimado de unos 26 millones de tokens vistos (aproximadamente 8,8 millones por época). El entrenamiento completo duró cerca de una hora en un MacBook con M5 Pro y 24 GB de RAM. No se menciona en la información disponible el uso de RLHF, DPO ni ninguna técnica de alineación posterior; se trata de un modelo base. Tampoco se detalla la composición exacta del subconjunto de datos utilizado ni la estrategia de mezcla.
 
 ## Capacidades
 
-- Generacion de texto basica: puede continuar secuencias cortas con una coherencia limitada, adecuada para textos de pocas frases.
-- Razonamiento y conocimiento general: muy limitados debido al tamano reducido y al escaso volumen de datos de entrenamiento.
-- Codigo: no se ha entrenado especificamente para generacion de codigo; su capacidad es residual.
-- Matematicas: no se ha evaluado formalmente; se espera un rendimiento muy bajo.
-- Tool calling / function calling: no soportado.
-- Soporte para agentes y razonamiento multi-paso: no soportado.
-- Capacidades multilingues: solo ingles; no se ha entrenado en otros idiomas.
-- Capacidades especiales: ninguna (sin vision, audio ni modo thinking).
+- Generación de texto autoregresiva básica en inglés, con continuaciones de hasta 1.024 tokens de contexto.
+- Modelo base sin instrucciones: no está ajustado para seguir instrucciones ni para diálogo.
+- No se ha documentado soporte de tool calling ni function calling.
+- No se ha documentado soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe limitada al inglés según la model card; el vocabulario de 32.000 tokens es el habitual en LLaMA, pero no hay evidencia de calidad en otros idiomas.
+- No dispone de modo de razonamiento (thinking), visión, audio ni otras modalidades.
+- Útil como banco de pruebas para pipelines de tokenización, entrenamiento y despliegue a pequeña escala.
 
 ## Casos de uso
 
-- Educacion y aprendizaje: el modelo es ideal para que estudiantes de machine learning comprendan el ciclo completo de entrenamiento, inferencia y evaluacion de un transformer sin necesidad de grandes recursos. Puede ejecutarse en un portatil convencional.
-- Pruebas de pipelines de NLP: sirve para validar integraciones con Hugging Face Transformers, pipelines de generacion, o sistemas de preprocesado de texto, antes de escalar a modelos mayores.
-- Prototipado rapido de aplicaciones de texto: para generar respuestas cortas en demos o pruebas de concepto donde la calidad no es critica, como un chatbot de ejemplo o un generador de ideas.
-- Benchmarking de hardware: al ser extremadamente ligero, permite medir la latencia de inferencia en diferentes dispositivos (CPU, GPU, edge devices) y comparar frameworks como PyTorch, ONNX o llama.cpp.
-- Investigacion en modelos pequenos: util para estudiar el comportamiento de modelos con pocos parametros, como la relacion entre tamano y rendimiento, o el efecto de la cuantizacion en modelos miniatura.
-- Generacion de datos sinteticos de baja calidad: puede usarse para crear textos de relleno en entornos de desarrollo, aunque no se recomienda para datos de entrenamiento.
+- Docencia y formación en entrenamiento de LLM: permite reproducir un ciclo completo de entrenamiento (tokenización, forward/backward, guardado de pesos) en un portátil en menos de una hora, lo que lo hace idóneo para cursos y talleres.
+- Pruebas de pipelines de inferencia: sirve para validar integraciones con transformers, vLLM o llama.cpp sin incurrir en costes de GPU, verificando carga de safetensors, tokenizador y generación.
+- Experimentos de cuantización y compresión: al ser un modelo de 10,9M parámetros y float32, se puede cuantizar a int8 o int4 en CPU y medir el impacto en perplejidad con un coste computacional mínimo.
+- Validación de infraestructura MLOps: útil para probar sistemas de versionado de modelos, registro en Hugging Face, CI/CD de artefactos y monitorización de inferencia con un modelo de huella mínima.
+- Investigación sobre tokenizadores: permite estudiar el comportamiento de un vocabulario de 32.000 tokens sobre corpus educativos (fineweb_edu) en un modelo pequeño y controlado.
+- Generación de texto de relleno en pruebas de UI: para maquetar interfaces de chat o demos que necesitan texto generado sin requisitos de calidad, siempre que se advierta de su naturaleza experimental.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no reporta metricas como MMLU, HumanEval o GSM8K. Dado el tamano del modelo y el volumen de entrenamiento, se espera un rendimiento muy inferior al de modelos de cientos de millones o miles de millones de parametros.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de perplejidad, MMLU, HumanEval, GSM8K ni ninguna otra evaluación cuantitativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada: menos de 100 MB en float32 (el modelo ocupa ~43 MB en disco). Cualquier GPU moderna con al menos 1 GB de VRAM es suficiente.
-- GPU recomendadas: no se requiere GPU; puede ejecutarse en CPU. Si se usa GPU, cualquier modelo de NVIDIA o AMD con soporte CUDA o ROCm es valido (ej. GTX 1050, RTX 3060, etc.).
-- Compatibilidad con consumer GPU: si, absolutamente. Incluso una Raspberry Pi podria ejecutarlo, aunque con mayor latencia.
-- Opciones de despliegue: se puede usar con Hugging Face Transformers (PyTorch), ONNX Runtime, llama.cpp (si se convierte a GGUF), o cualquier framework que soporte modelos Llama.
-- Latencia y throughput: en una CPU moderna (por ejemplo, un Apple M1 o Intel i7), la generacion de 50 tokens tardaria menos de un segundo. En GPU, la latencia es practicamente instantanea. No hay datos oficiales de throughput.
+- VRAM estimada para inferencia: inferior a 100 MB en float32 (10,9M parámetros × 4 bytes ≈ 44 MB de pesos, más caché KV y activaciones). Cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no requiere GPU; funciona en CPU sin problema. Cualquier GPU con al menos 1 GB de VRAM es más que suficiente (GTX 1050, RTX 3050, RTX 4090, A100, H100).
+- Cabe en cualquier GPU consumer, incluida la iGPU de portátiles y placas como Raspberry Pi con suficiente RAM.
+- Opciones de despliegue: transformers (PyTorch), llama.cpp y Ollama mediante conversión a GGUF, y vLLM o TGI para servir a escala (aunque el modelo es demasiado pequeño para aprovechar su throughput).
+- Latencia y throughput: no se han publicado mediciones. Por el tamaño, se espera generación en CPU a decenas de tokens por segundo, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en el mismo rango de parametros (alrededor de 10 millones) en la informacion proporcionada. Modelos como SmolLM-135M o TinyLlama-1.1B tienen una o dos ordenes de magnitud mas de parametros y no son directamente comparables en capacidades ni en proposito. Este modelo se posiciona como un juguete educativo, por lo que la comparativa con modelos de produccion no es relevante.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Vertex 0.1 (10M) | 10,9M | 1.024 | Apache 2.0 | Hugging Face | Base, solo inglés, entrenado en ~26M tokens |
+| TinyLlama 1.1B | 1,1B | 2.048 | Apache 2.0 | Hugging Face | ~100x más parámetros, entrenado en ~3T tokens |
+| SmolLM-135M | 135M | 2.048 | Apache 2.0 | Hugging Face | ~12x más parámetros, dataset mucho mayor |
+| GPT-2 small | 124M | 1.024 | MIT | Hugging Face | Referencia histórica, ~11x más parámetros |
+
+La comparación debe interpretarse con cautela: Vertex 0.1 es dos órdenes de magnitud menor que los modelos de referencia de la misma familia y su volumen de entrenamiento (26M tokens) es varios órdenes de magnitud inferior al de TinyLlama o SmolLM. No se dispone de benchmarks comparativos publicados para Vertex 0.1.
 
 ## Limitaciones y advertencias
 
-- Tamano extremadamente reducido: la coherencia, el conocimiento y la capacidad de generalizacion son muy limitados. Es probable que genere textos incoherentes o sin sentido en muchas ocasiones.
-- Riesgo de alucinacion: al ser un modelo base sin alineacion, puede producir afirmaciones falsas o inventadas sin ninguna base.
-- Contexto limitado: solo 1024 tokens, insuficiente para tareas que requieran contexto largo.
-- Idiomas: solo ingles. No se ha entrenado en otros idiomas, por lo que su rendimiento en castellano u otros idiomas es nulo o muy pobre.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo no es apto para produccion real. No hay restricciones de uso, pero se recomienda no utilizarlo en aplicaciones criticas.
-- Sesgos: al entrenarse con un dataset no especificado, puede contener sesgos presentes en los datos, aunque su impacto es menor debido al tamano.
-- Sin garantias: el autor no ofrece soporte ni actualizaciones. Es un experimento de investigacion.
+- Coherencia y conocimiento muy limitados: con 10,9M parámetros y ~26M tokens de entrenamiento, la calidad de generación es baja y no es apta para producción, tal como advierte el propio autor.
+- Riesgo elevado de alucinación y de texto incoherente o repetitivo, especialmente en secuencias largas.
+- Contexto máximo de 1.024 tokens, insuficiente para documentos o conversaciones extensas.
+- Entrenado únicamente en inglés; no hay garantías de comportamiento en castellano ni en otros idiomas.
+- Modelo base sin alineación: no sigue instrucciones, no rechaza peticiones dañinas y puede reproducir sesgos presentes en fineweb_edu.
+- No se han documentado evaluaciones de sesgo, toxicidad ni seguridad.
+- Licencia Apache 2.0 permite uso comercial, pero la calidad del modelo hace inviable su uso en productos reales; cualquier despliegue comercial debería tratar el modelo como experimental.
+- Dataset de entrenamiento no auditado en detalle en la información disponible; posibles problemas de licencia o calidad del corpus subyacente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.1-10M-base
-- No se han encontrado otros enlaces relevantes (paper, blog o repositorio) en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.1-10M-base
+- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb_edu_100BT-shuffled
+- Perfil del autor: https://huggingface.co/VertexResearch

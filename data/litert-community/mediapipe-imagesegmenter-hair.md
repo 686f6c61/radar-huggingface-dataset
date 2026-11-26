@@ -2,111 +2,112 @@
 
 ## Resumen
 
-MediaPipe ImageSegmenter Hair es un modelo de segmentacion de imagen especializado en cabello, distribuido por la comunidad litert-community a partir del modelo original de Google MediaPipe. Se trata de un modelo TFLite de apenas 782 KB en precision FP32 que devuelve, para cada pixel de una imagen de entrada, una probabilidad de pertenencia a dos clases: fondo (0) y cabello (1). Su proposito es alimentar efectos de recoloreado virtual de pelo y filtros de realidad aumentada en aplicaciones moviles y web.
+MediaPipe-ImageSegmenter-Hair es un modelo de segmentación de imagen especializado en cabello, publicado por la comunidad litert-community en Hugging Face. Se distribuye como un fichero TFLite de 782 KB en precisión FP32, pensado para ejecutarse en dispositivo (on-device) mediante la tarea Image Segmenter de MediaPipe en Android, iOS, web, Python y Flutter. Su función concreta es generar una máscara por píxel con dos clases (fondo y cabello) sobre selfies, lo que lo hace idóneo para filtros AR de recoloreado de pelo y aplicaciones de realidad aumentada en tiempo real.
 
-El modelo sigue una arquitectura encoder-decoder con conexiones skip, recibe un tensor de entrada de forma `[1, 512, 512, 4]` (RGB mas un canal temporal o de prior que rellena automaticamente la tarea MediaPipe `ImageSegmenter`) y produce una mascara de segmentacion de forma `[1, 512, 512, 2]`. Esta pensado para ejecucion on-device en Android, iOS, web, Python y Flutter mediante la libreria MediaPipe Tasks, y su reducido tamano lo hace adecuado para inferencia en tiempo real incluso en dispositivos de gama media.
+Técnicamente es una red encoder-decoder con conexiones skip que recibe un tensor de entrada de forma `[1, 512, 512, 4]` (RGB más un canal temporal/prior que rellena automáticamente el runtime de MediaPipe) y produce una salida de forma `[1, 512, 512, 2]` con probabilidades por clase. No es un modelo de lenguaje ni un modelo multimodal generativo: es un segmentador denso de propósito específico, con un tamaño mínimo que permite incluirlo en aplicaciones móviles sin penalizar el tamaño del binario.
 
-Su relevancia actual radica en que ejemplifica el paradigma de modelos de vision ultraligeros para inferencia local: sin dependencia de servidores, con licencia Apache 2.0 y con latencias del orden de 50-60 ms en un Pixel 6. Es una pieza de infraestructura para desarrolladores que construyen experiencias de camara en tiempo real, no un modelo de proposito general.
+Su relevancia actual radica en que ejemplifica el patrón de despliegue de modelos de visión ligeros en el ecosistema LiteRT/TFLite, con licencia Apache 2.0 y flujos de integración listos para producción en las principales plataformas móviles. No se dispone de información sobre parámetros totales, longitud de contexto (no aplica) ni idiomas soportados en la documentación proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Encoder-decoder con conexiones skip (CNN) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, entrada fija 512x512) |
-| Tipos de cuantizacion | FP32 (unica variante publicada) |
-| Idiomas soportados | no aplica (modelo de vision, sin procesamiento de lenguaje) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión) |
+| Tipos de cuantización | FP32 (float32) según fichero publicado |
+| Idiomas soportados | no disponible (no aplica) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | TFLite (`hair_segmenter.tflite`, 781.618 bytes) |
 
+Especificaciones adicionales del tensor:
+
+| Dirección | Tensor | Forma | Tipo | Notas |
+|---|---|---|---|---|
+| Entrada | `input_1` | `[1, 512, 512, 4]` | float32 | Normalización `mean=[0.0]`, `std=[255.0]` |
+| Salida | `conv2d_transpose_4` | `[1, 512, 512, 2]` | float32 | Máscaras por clase: `background`, `hair` |
+
+Metadatos embebidos: `TFLITE_METADATA` con nombre `ImageSegmenter`, versión `1`, autor `MediaPipe`, y fichero asociado `labels.txt`.
+
 ## Arquitectura y entrenamiento
 
-El modelo es una red convolucional encoder-decoder con conexiones skip, disenada para segmentacion semantica densa a resolucion 512x512. La entrada tiene cuatro canales: los tres canales RGB mas un cuarto canal temporal o de prior que la tarea MediaPipe `ImageSegmenter` rellena automaticamente, lo que permite aprovechar informacion entre fotogramas en modo video. La salida es un tensor de dos canales con probabilidades por pixel para las clases `background` y `hair`, y el modelo incluye metadatos TFLITE embebidos (nombre `ImageSegmenter`, version 1, autor `MediaPipe`) con el fichero `labels.txt` empaquetado.
+La arquitectura es una red neuronal convolucional de tipo encoder-decoder con conexiones skip, típica de los modelos de segmentación semántica densa. La entrada es un tensor de 4 canales y 512×512 píxeles: tres canales RGB más un cuarto canal de tipo temporal/prior que el runtime de MediaPipe `ImageSegmenter` rellena automáticamente. La salida es un mapa de 2 canales con probabilidades por píxel para las clases `background` y `hair`, lo que equivale a una segmentación binaria densa a resolución completa de entrada.
 
-No se dispone de informacion detallada sobre el numero de parametros, el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste fino como RLHF o DPO (no aplicables en un modelo de segmentacion). La model card original de Google esta fechada el 14 de enero de 2019, lo que situa el desarrollo del modelo en una generacion anterior de arquitecturas de vision. La evaluacion de equidad reportada se realizo sobre 1.445 selfies reales, 85 por cada una de las 17 subregiones geograficas de la ONU.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF/DPO (no aplicables a este tipo de modelo). Tampoco se documentan innovaciones técnicas específicas más allá de la propia arquitectura encoder-decoder con skip connections y la integración con el runtime de MediaPipe para el canal prior. El modelo se distribuye únicamente en FP32, sin variantes cuantizadas publicadas en la información disponible.
 
 ## Capacidades
 
-- Segmentacion binaria de cabello por pixel en imagenes y video de selfie frontal.
-- Salida de mascaras de probabilidad (`output_confidence_masks`) y mascara de categoria (`output_category_mask`) configurables en la API de MediaPipe.
-- Procesamiento on-device en Android (Kotlin/Java), iOS (Swift), web (JavaScript), Python y Flutter (Dart).
-- Modos de ejecucion IMAGE, VIDEO y LIVE_STREAM a traves de `VisionRunningMode`.
-- Entrada RGB mas canal temporal/prior de 4 canales, con normalizacion `mean=[0.0]`, `std=[255.0]`.
-- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingues: es exclusivamente un modelo de vision.
-- No dispone de modo thinking, vision general, audio ni generacion de texto.
+- Segmentación densa de cabello en imágenes de selfie, con salida de probabilidad por píxel para las clases `background` y `hair`.
+- Generación de máscaras de categoría y máscaras de confianza (opciones `output_category_mask` y `output_confidence_masks` del runtime).
+- Ejecución on-device en Android, iOS, web, Python y Flutter mediante la tarea `ImageSegmenter` de MediaPipe.
+- Integración con el ecosistema LiteRT/TFLite, con metadatos embebidos y fichero `labels.txt` asociado.
+- Adecuado para pipelines de tiempo real en dispositivos móviles gracias a su tamaño reducido (782 KB) y a las latencias documentadas.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo de visión de propósito único.
+- No dispone de modo thinking, visión general, audio ni otras capacidades generativas.
 
 ## Casos de uso
 
-- Recoloreado virtual de pelo en apps de belleza: el modelo genera la mascara de cabello por pixel que permite aplicar un cambio de color solo a la region capilar, manteniendo el fondo intacto. Su tamano de 782 KB y latencia de ~52-58 ms en Pixel 6 lo hacen viable en tiempo real.
-- Filtros AR en redes sociales: integrado en el pipeline de camara del dispositivo mediante MediaPipe Tasks, permite superponer efectos capilares (purpurina, degradados, cambios de tono) en directo sobre el flujo de video de la camara frontal.
-- Prueba virtual de tintes en e-commerce: una tienda de productos capilares puede ofrecer una previsualizacion del color sobre la foto del usuario, ejecutando el modelo localmente en el navegador o en la app sin enviar imagenes a un servidor.
-- Edicion fotografica por capas: la mascara de cabello permite aislar el cabello para aplicar ajustes de color, luminosidad o desenfoque selectivo en herramientas de retoque.
-- Segmentacion previa en pipelines de avatares: como paso de preprocesado para generar avatares o modelos 3D capilares a partir de selfies, separando el cabello del resto de la imagen.
-- Aplicaciones de entretenimiento y demos educativas: por su licencia Apache 2.0 y su reducido tamano, es adecuado para prototipos, tutoriales de vision por computador y proyectos academicos que necesiten segmentacion capilar sin infraestructura de servidor.
+- Filtros AR de recoloreado de pelo: el modelo genera una máscara binaria de cabello por píxel que permite recolorear solo la región capilar en aplicaciones de cámara en tiempo real, con latencias de decenas de milisegundos en móviles de gama media como el Pixel 6.
+- Prueba virtual de tintes y productos capilares: en apps de e-commerce o de peluquería, la máscara permite previsualizar distintos colores o estilos sobre la foto del usuario sin subir la imagen a un servidor.
+- Edición fotográfica on-device: integración en editores de imagen móviles para aplicar ajustes selectivos (color, brillo, saturación) únicamente sobre el cabello, preservando el resto de la escena.
+- Segmentación previa en pipelines de embellecimiento: como paso anterior a modelos de generación o retoque facial, la máscara de cabello permite aislar la región y evitar artefactos en el resto de la imagen.
+- Aplicaciones de videollamada y streaming: sustitución o recoloreado de cabello en tiempo real en el cliente, sin depender de servicios en la nube, gracias al despliegue nativo en Android, iOS y web.
+- Prototipado rápido en Python y Flutter: el modelo se descarga con `huggingface_hub` y se ejecuta con `mediapipe` en pocas líneas, lo que facilita la validación de ideas y la creación de demos multiplataforma.
+- Investigación en segmentación ligera: sirve como referencia de arquitectura encoder-decoder compacta para comparar técnicas de segmentación densa en dispositivos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Latencia media del pipeline completo de la tarea MediaPipe `ImageSegmenter` reportada en la documentacion oficial:
+Latencia media del pipeline completo de la tarea MediaPipe Image Segmenter, según la documentación del Image Segmenter:
 
 | Variante | Dispositivo | Latencia CPU | Latencia GPU |
 |---|---|---:|---:|
-| HairSegmenter | Pixel 6 | 57,90 ms | 52,14 ms |
+| HairSegmenter | Pixel 6 | 57,90 ms | no disponible en la información proporcionada |
 
-Evaluacion de equidad sobre 1.445 selfies reales (85 por cada una de 17 subregiones geograficas de la ONU):
-
-| Metrica | Valor |
-|---|---|
-| IoU medio global | 81,5% ± 0,8% |
-| Desviacion estandar | 16,3% |
-| Rango regional | 75,2% (Africa Occidental) a 86,9% (Asia Meridional) |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, ya que no son aplicables a un modelo de segmentacion de imagen.
+No se han publicado resultados de benchmarks de calidad de segmentación (IoU, mIoU, F1) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en FP32, dado el tamano del binario (782 KB) y la resolucion de entrada fija de 512x512; no se dispone de medicion oficial de memoria pico.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU de movil (Pixel 6 reportado) y en GPUs integradas de portatiles.
-- Cabe en cualquier GPU consumer, incluida la gama baja, y en dispositivos moviles de gama media; no se dispone de listado oficial de GPUs validadas.
-- Opciones de despliegue: MediaPipe Tasks (Python, Android, iOS, web, Flutter) y runtime TFLite/LiteRT; no se documenta soporte nativo para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
-- Latencia y throughput: ~57,90 ms en CPU y ~52,14 ms en GPU sobre Pixel 6 (pipeline completo); no se han publicado cifras de throughput (FPS) en la informacion disponible.
+- VRAM estimada para inferencia: no aplica en el sentido tradicional; el modelo está pensado para ejecución on-device en CPU/GPU móvil. El fichero pesa 782 KB en FP32 y la activación principal es de 512×512×4 en entrada y 512×512×2 en salida.
+- GPU recomendadas: no se especifican GPU de escritorio; el objetivo son aceleradores móviles (GPU integradas en SoC Android/iOS) y CPU de dispositivos móviles.
+- Cabe en cualquier GPU consumer y en cualquier dispositivo móvil moderno, dado el tamaño mínimo del modelo.
+- Opciones de despliegue: MediaPipe Tasks (`ImageSegmenter`) en Python, Android (Kotlin/Java), iOS (Swift), web (JavaScript/TypeScript) y Flutter (Dart); el fichero es un `.tflite` compatible con el runtime LiteRT/TFLite.
+- Latencia y throughput: 57,90 ms de latencia media en CPU sobre Pixel 6 según la documentación oficial; no se dispone de datos de throughput ni de latencia en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamano | Entrada | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MediaPipe ImageSegmenter Hair | Segmentacion capilar binaria | 782 KB (FP32) | 512x512x4 | Apache 2.0 | TFLite via MediaPipe Tasks |
-| MediaPipe ImageSegmenter (variantes generales) | Segmentacion semantica multi-clase | no disponible | no disponible | Apache 2.0 | TFLite via MediaPipe Tasks |
-| Modelos de segmentacion capilar de terceros | Segmentacion capilar | no disponible | no disponible | variable | no disponible |
+No se dispone en la información proporcionada de datos sobre modelos comparables de segmentación de cabello (parámetros, contexto, rendimiento, licencia y disponibilidad). Por tanto, la comparativa se indica como no disponible.
 
-No se dispone de datos de benchmarks comparativos con modelos alternativos de segmentacion capilar en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MediaPipe-ImageSegmenter-Hair | no disponible | no aplica | 57,90 ms CPU en Pixel 6 | Apache 2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No apto para decisiones criticas para la vida humana: la aplicacion prevista es el entretenimiento y los efectos AR.
-- Optimizado para selfies frontales cercanos; no es adecuado para sujetos a mas de 1,5 m de distancia ni para escenas con varias personas en el encuadre.
-- Puede fallar en cabellos finos, trenzas largas, crestas (mohawks) o cabello ocluido por sombreros o accesorios.
-- Sesgos geograficos documentados: el IoU varia de 75,2% en Africa Occidental a 86,9% en Asia Meridional, con una desviacion estandar de 16,3%, lo que indica un rendimiento desigual segun el tipo de cabello y la region.
-- Riesgo de artefactos en los bordes de la mascara y de perdida de mechones finos, lo que puede producir resultados imperfectos en recoloreado.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda conservar los avisos de licencia y atribucion; no se documentan restricciones adicionales de uso comercial.
-- Modelo fechado en 2019: puede estar desactualizado frente a arquitecturas de segmentacion mas recientes; no se han publicado actualizaciones en la informacion disponible.
-- Sin soporte de lenguaje, audio ni razonamiento: cualquier caso de uso fuera de la segmentacion capilar queda fuera de su alcance.
+- Modelo de propósito único: solo segmenta cabello en imágenes de selfie; no es un modelo generativo ni multimodal y no debe evaluarse como tal.
+- Riesgo de sesgo en la segmentación: al no documentarse la composición del dataset de entrenamiento, no es posible evaluar sesgos por tipo de cabello, tono de piel, peinados o condiciones de iluminación; se recomienda validar en la población objetivo antes de producción.
+- Riesgo de errores en casos límite: cabello muy fino, fondos con colores similares, oclusiones parciales, sombreros o accesorios pueden degradar la máscara; no se han publicado métricas de calidad (IoU/mIoU) que permitan cuantificar este riesgo.
+- Dependencia del runtime: el canal de entrada de 4 dimensiones debe ser rellenado por el runtime de MediaPipe `ImageSegmenter`; un uso fuera de este runtime requiere replicar ese preprocesado.
+- Solo se distribuye en FP32: no hay variantes cuantizadas publicadas en la información disponible, lo que puede limitar optimizaciones adicionales de tamaño o latencia.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero se recomienda revisar las condiciones de atribución y las de los componentes de MediaPipe subyacentes.
+- No se documentan idiomas ni capacidades de texto: cualquier expectativa en ese sentido es incorrecta.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Hair
+- Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Hair
 - Fichero del modelo: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Hair/blob/main/hair_segmenter.tflite
 - Model card original (PDF): https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Hair/blob/main/Model%20Card%20-%20Hair%20Segmentation.pdf
-- Documentacion de Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter
-- Benchmarks de la tarea: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter#task_benchmarks
+- Documentación de MediaPipe Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter
+- Benchmarks de Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter#benchmarks
+- Guía de configuración en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
+- Guía de configuración en Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
+- Guía de configuración en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
+- Guía de configuración en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
+- Guía de configuración en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
 - Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_segmenter
-- Guia de instalacion Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guia de instalacion Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
-- Guia de instalacion Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
-- Guia de instalacion iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
-- Guia de instalacion Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
+- Código fuente de la demo web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/image-segmenter.ts
 - Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/android
 - Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/ios
-- Notebook Python: https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb
+- Notebook de Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb
 - Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/image_segmenter

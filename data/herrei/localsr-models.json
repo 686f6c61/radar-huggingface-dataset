@@ -5,7 +5,7 @@
   "author": "HerRei",
   "url": "https://huggingface.co/HerRei/localsr-models",
   "created_at": "2026-11-24T13:05:27.000Z",
-  "updated_at": "2026-11-24T17:49:45.000Z",
+  "updated_at": "2026-11-25T13:58:06.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "onnx",
     "super-resolution",
     "image-upscaling",
     "upscaler",
@@ -25,16 +26,17 @@
     "license:cc-by-4.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15783615,
-  "storage_human": "16 MB",
+  "storage_bytes": 39245200,
+  "storage_human": "39 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

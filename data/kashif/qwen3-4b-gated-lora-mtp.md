@@ -2,96 +2,96 @@
 
 ## Resumen
 
-Qwen3-4B-Gated-LoRA-MTP es un adaptador LoRA publicado por el usuario kashif sobre el modelo base Qwen/Qwen3-4B, que incorpora decodificacion especulativa autoinducida mediante prediccion multi-token (MTP, multi-token prediction). El adaptador sigue el metodo gated-LoRA descrito en el articulo arXiv:2507.11851 y permite que un modelo que no fue preentrenado con cabezas MTP genere varios tokens borrador por pasada de avance, sin modificar el comportamiento del modelo base en generacion normal.
+Qwen3-4B-Gated-LoRA-MTP es un adaptador LoRA (mas un pequeno MLP muestreador) que se acopla sobre el modelo base Qwen/Qwen3-4B para dotarlo de capacidad de multi-token prediction (MTP) orientada a decodificacion especulativa autoinducida. Lo desarrolla kashif y sigue la receta gated-LoRA MTP de NeMo AutoModel, inspirada en el articulo arXiv:2507.11851 ("Your LLM Knows the Future"). La idea central es que el propio modelo genere borradores de varios tokens futuros y luego los verifique en una sola pasada, acelerando la generacion sin modificar los pesos del modelo base.
 
-La innovacion principal es que no anade cabezas nuevas: reutiliza la propia LM head del modelo congelado y reaprovecha tres identificadores de vocabulario reservados y sin uso (`151700`, `151701`, `151702`) como tokens mascara, uno por profundidad de prediccion. Los pesos LoRA solo se activan cuando el modelo procesa uno de esos tokens mascara; en cualquier token real el adaptador queda completamente inerte, de modo que la generacion estandar es identica a la del modelo base.
+El modelo base Qwen3-4B es un transformer denso de 4.000 millones de parametros con una ventana de contexto amplia (definida por Qwen3), y este adaptador no altera sus pesos: los tokens reales siempre pasan por los pesos congelados, de modo que la calidad del texto generado no se degrada. El adaptador solo anade la habilidad de redactar borradores sobre ocho identificadores reservados del vocabulario (151700-151707) que actuan como mascaras, una por profundidad de borrador.
 
-El adaptador es de rango 16, con alpha 32, aplicado a las proyecciones de atencion y MLP, y suma aproximadamente 16,5 millones de parametros entrenables sobre un Qwen3-4B congelado. Se entreno sobre el dataset databricks/databricks-dolly-15k con un objetivo de autodestilacion suave, y esta publicado con licencia Apache 2.0, lo que lo hace atractivo para experimentar con tecnicas de aceleracion de inferencia sin coste de licencia.
+Es relevante ahora porque demuestra, con mediciones reales de extremo a extremo, que es posible obtener aceleraciones modestas pero verificables (1,20x-1,31x) en decodificacion codiciosa con cache KV, empleando unicamente un adaptador ligero de rango 16 y un MLP pequeno, sin reentrenar el modelo base ni desplegar un modelo drafter separado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (rank 16, alpha 32) sobre transformer Qwen3-4B congelado; prediccion multi-token mediante tokens mascara reservados |
-| Parametros totales | Aproximadamente 16,5 M entrenables (solo LoRA); el modelo base Qwen3-4B permanece congelado |
+| Arquitectura | LoRA (rango 16, alpha 32) sobre proyecciones `*_proj` de Qwen3-4B + MLP muestreador (`GatedMTPSampler`) |
+| Parametros totales | Modelo base: 4.000 millones (Qwen3-4B); el adaptador anade un LoRA de rango 16 y un MLP pequeno (tamano exacto no disponible) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (heredada del modelo base Qwen3-4B; no especificada en la informacion) |
-| Tipos de cuantizacion | No disponible (el adaptador se distribuye en safetensors; la cuantizacion depende del modelo base y del stack de despliegue) |
-| Idiomas soportados | Ingles (`en`) segun la model card |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Longitud de contexto | La del modelo base Qwen3-4B (no especificada en la informacion disponible) |
+| Tipos de cuantizacion | No disponible (el adaptador se entrena y publica en bf16; safetensors) |
+| Idiomas soportados | Ingles (segun la model card; el modelo base Qwen3 soporta mas idiomas, pero el adaptador se entreno solo con datos en ingles) |
+| Licencia | Apache 2.0 para el adaptador; el dataset de entrenamiento es CC BY-SA 3.0 |
+| Formato de pesos | safetensors (`adapter_model.safetensors`), libreria PEFT |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se engancha al transformer de Qwen3-4B mediante LoRA de rango 16 y alpha 32, aplicado a todas las capas lineales de atencion (`q_proj`, `k_proj`, `v_proj`, `o_proj`) y a las del bloque MLP (`gate_proj`, `up_proj`, `down_proj`). En lugar de anadir cabezas de prediccion adicionales, reutiliza la LM head congelada del modelo base y reserva tres identificadores de vocabulario sin uso como tokens mascara, uno por cada profundidad de prediccion (3 profundidades). En inferencia se anaden esos tokens mascara tras el contexto actual, se ejecuta una pasada adicional con el gate LoRA activo solo en esas posiciones y se leen hasta tres tokens borrador mas alla de la prediccion ordinaria del siguiente token, donde la profundidad `d` predice el token a `d + 1` posiciones.
+El adaptador emplea LoRA de rango 16 con alpha 32 aplicado exclusivamente a los modulos `*_proj` del transformer Qwen3-4B. La innovacion clave es la "gated LoRA": el LoRA solo se activa en las posiciones de los ocho tokens mascara reservados (151700-151707), que ocupan filas no utilizadas de la tabla de embeddings del modelo base (151.936 filas frente a 151.669 tokens del tokenizador). Cada mascara corresponde a una profundidad de borrador, de modo que el modelo puede predecir hasta 9 tokens por ronda. Un MLP muestreador refina cada borrador usando el token predicho en la profundidad anterior, produciendo continuaciones coherentes en lugar de conjeturas independientes.
 
-El entrenamiento usa autodestilacion suave: cada profundidad se entrena para igualar la distribucion del siguiente token del propio modelo base congelado, no etiquetas duras. Los datos son los primeros 14.500 ejemplos de los 15.011 de databricks/databricks-dolly-15k (pares instruccion/respuesta generales), dejando el resto para validacion. El checkpoint final `main` corresponde al paso 906 (final de la primera epoca), con revisiones intermedias en los pasos 299, 599 y 899. La validacion se midio como longitud esperada de tokens aceptados por pasada de avance bajo autoespeculacion con teacher forcing, comparando cada prediccion de profundidad contra la continuacion greedy del modelo base y condicionando la aceptacion a que todas las profundidades mas superficiales tambien coincidan.
+El entrenamiento se realizo sobre `databricks/databricks-dolly-15k` durante una epoca, con AdamW, learning rate 1e-4 y precision bf16. Se publican checkpoints en los pasos 299, 599, 899 (ramas `step-299`, `step-599`, `step-899`) y 906 (revision final). La verificacion de borradores se hace en una sola pasada forward: cada ronda alimenta el ultimo token libre, los tokens especulativos previos y ocho mascaras nuevas con cache KV, de forma que reintroducir la especulacion anterior como tokens reales la verifica de forma gratuita. En caso de discrepancia, el borrador de esa ronda se descarta.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instruccional, heredada del modelo base Qwen3-4B.
-- Prediccion multi-token autoespeculativa: genera hasta tres tokens borrador por pasada adicional, que luego se verifican contra el modelo base en una unica pasada batcheada.
-- Decodificacion especulativa autoinducida sin cabezas MTP preentrenadas, gracias a la reutilizacion de tokens mascara reservados.
-- Generacion estandar sin degradacion: el adaptador es inerte en tokens reales, por lo que la salida coincide con el modelo base.
-- Soporte de carga estandar via PEFT (`PeftModel.from_pretrained`) para generacion ordinaria.
-- Capacidades multilingues: la model card declara solo ingles; no se documentan otras lenguas.
-- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio ni modo thinking especificas del adaptador.
+- Generacion de texto conversacional en ingles sobre el modelo base Qwen3-4B.
+- Borrador multi-token (hasta 9 tokens por ronda) para decodificacion especulativa autoinducida.
+- Verificacion de borradores en una sola pasada forward con cache KV.
+- Mantiene intactas las capacidades del modelo base para tokens reales (razonamiento, codigo, matematicas, tool calling y agentes, segun lo que soporte Qwen3-4B).
+- Capacidad multilingue limitada al modelo base; el adaptador solo se entreno con datos en ingles.
+- No introduce modo "thinking" ni capacidades de vision o audio propias; depende del modelo base.
 
 ## Casos de uso
 
-- Aceleracion de inferencia en produccion: el adaptador permite aplicar decodificacion especulativa sobre un Qwen3-4B ya desplegado sin necesidad de reentrenar el modelo base ni de disponer de un modelo borrador separado, reduciendo el coste de generar tokens en pipelines de texto.
-- Investigacion en decodificacion especulativa: sirve como implementacion de referencia del metodo gated-LoRA de arXiv:2507.11851 para experimentar con profundidades de prediccion, tasas de aceptacion y estrategias de verificacion.
-- Despliegue con memoria limitada: al no requerir un modelo borrador adicional, el adaptador anade solo unos 16,5 M de parametros entrenables sobre el base, lo que simplifica el stack frente a esquemas de speculative decoding con dos modelos.
-- Servicio de chat e instrucciones en ingles: el adaptador es inerte en generacion normal, por lo que puede usarse como capa opcional de aceleracion sobre un asistente conversacional basado en Qwen3-4B sin alterar sus respuestas.
-- Experimentacion con autodestilacion: el objetivo de autodestilacion suave sobre las distribuciones del modelo base permite estudiar tecnicas de destilacion aplicadas a prediccion multi-token.
-- Evaluacion comparativa de checkpoints: las revisiones `step-299`, `step-599`, `step-899` y `main` permiten medir el impacto del numero de pasos de entrenamiento en la longitud aceptada por pasada.
-- Prototipado de tecnicas de gating: el mecanismo de gate por token (activar LoRA solo en posiciones mascara) es reutilizable para otros experimentos de adaptadores condicionales.
+- Aceleracion de inferencia en produccion: integrar el adaptador en un servidor de generacion para reducir la latencia de decodificacion codiciosa en un 20-30 % sobre Qwen3-4B, manteniendo la misma salida que el modelo base gracias a la verificacion por tokens reales.
+- Servicios de chat de bajo coste: desplegar Qwen3-4B con este adaptador en GPUs de gama media para atender conversaciones multi-turno con menor tiempo por token generado.
+- Generacion de texto por lotes: procesar grandes volumenes de resumenes o respuestas sobre dolly-15k-like con throughput mejorado, ya que el borrador reduce el numero de pasos forward efectivos.
+- Prototipado de tecnicas de decodificacion especulativa: usar el adaptador y el codigo de NeMo AutoModel como referencia reproducible para investigar MTP y verificacion en una sola pasada.
+- Educacion e investigacion: estudiar el efecto del gated-LoRA y del MLP muestreador sobre la longitud de aceptacion (accept-length) sin necesidad de reentrenar el modelo base.
+- Despliegue en entornos con VRAM limitada: al ser un adaptador de 1,8 GB sobre un modelo de 4B en bf16, permite obtener aceleracion sin anadir un segundo modelo drafter completo.
 
 ## Benchmarks y rendimiento
 
-Resultados de validacion publicados en la model card, medidos como longitud esperada de tokens aceptados por pasada de avance bajo autoespeculacion con teacher forcing sobre datos de instruccion retenidos:
+| Metrica | Paso 299 | Paso 599 | Paso 899 | Paso 906 (final) |
+|---|---:|---:|---:|---:|
+| val_mtp_tau_sim (accept-length, teacher-forced) | 2,017 | 2,116 | 2,237 | 2,234 |
 
-| Checkpoint | Pasos de entrenamiento | Longitud aceptada (teacher-forced) |
-|---|---|---|
-| `step-299` | 299 | 1,95 |
-| `step-599` | 599 | 2,00 |
-| `step-899` | 899 | 2,03 |
-| `main` (final) | 906 | 2,03 |
+| Prompt | tok/s (adaptador) | tok/s (baseline) | Aceleracion |
+|---|---:|---:|---:|
+| "Explain the water cycle..." | 26,48 | 20,26 | 1,31x |
+| "Write a short story..." | 24,37 | 20,36 | 1,20x |
 
-Tasas de aceptacion por profundidad del checkpoint final, remedidas de forma independiente cargando el checkpoint de forma aislada (modelo base mas adaptador, sin framework de entrenamiento): aproximadamente 51 % / 23 % / 11 % para las profundidades 1 / 2 / 3 respectivamente. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+El autor senala que la aceleracion es real pero modesta, inferior al 2-5x que reporta el articulo de referencia con su receta completa (que incluye una perdida de consistencia y una estrategia de decodificacion mas avanzada no implementadas aqui). No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica; depende del modelo base Qwen3-4B y de su cuantizacion. El adaptador anade aproximadamente 16,5 M de parametros, un incremento marginal sobre el modelo base.
-- GPU recomendadas: no especificadas en la informacion disponible. Al tratarse de un modelo de 4B, es desplegable en GPUs de consumo, pero no se documentan modelos concretos.
-- Compatibilidad con GPU de consumo: previsiblemente si, al tratarse de un adaptador sobre un modelo de 4B, aunque no se confirma en la informacion disponible.
-- Opciones de despliegue: carga estandar via PEFT y Transformers (`PeftModel.from_pretrained`). La implementacion de drafting requiere ademas hooks de forward sobre capas `LoraLayer` y gestion manual de `position_ids` y mascaras de atencion. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles. La model card solo reporta longitud aceptada por pasada (2,03 tokens en el checkpoint final), no mediciones de latencia ni throughput.
+- VRAM estimada: el adaptador ocupa 1,8 GB en disco; en inferencia se suma al modelo base Qwen3-4B en bf16 (aproximadamente 8 GB de pesos) mas cache KV y el MLP muestreador.
+- GPU recomendadas: A100, H100 o RTX 4090 para bf16 sin cuantizar; GPUs con 16-24 GB de VRAM son suficientes para el modelo base en bf16.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) y potencialmente en GPUs de 16 GB con cuantizacion del modelo base (aunque el adaptador se entrena en bf16).
+- Opciones de despliegue: requiere NeMo AutoModel con la rama `kashif/feat/gated-lora-mtp` (PR #4686); no es compatible directamente con vLLM, llama.cpp, Ollama o TGI en su forma actual, ya que necesita `GatedMTPConfig`, `GatedMTPSampler` y `randomize_embedding_rows`.
+- Latencia y throughput: medidos a 26,48 tok/s frente a 20,26 tok/s de baseline en el prompt del ciclo del agua (1,31x) y 24,37 frente a 20,36 tok/s en el de la historia corta (1,20x).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kashif/Qwen3-4B-Gated-LoRA-MTP | ~16,5 M (LoRA) sobre Qwen3-4B congelado | No disponible | Decodificacion especulativa autoinducida con gated-LoRA y tokens mascara | Apache 2.0 | Hugging Face (PEFT) |
-| Qwen/Qwen3-4B (base) | 4B | No disponible en la informacion | Transformer denso de generacion de texto | Apache 2.0 | Hugging Face |
-| Modelos borrador dedicados para speculative decoding | Variable (tipicamente cientos de millones a varios miles de millones) | No disponible | Modelo borrador independiente verificado por el modelo objetivo | Variable | Variable |
+| Qwen3-4B-Gated-LoRA-MTP | 4B + LoRA rango 16 | El de Qwen3-4B | MTP con gated-LoRA y verificacion en una pasada | Apache 2.0 | Hugging Face, requiere rama de NeMo AutoModel |
+| Qwen3-4B (base) | 4B | El de Qwen3-4B | Transformer denso sin MTP | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Drafters especulativos clasicos (p. ej. EAGLE, Medusa) | Variable (modelo drafter separado) | El del modelo base | Modelo drafter independiente | Variable | Implementaciones en vLLM y otros |
 
-La comparativa con alternativas de decodificacion especulativa de otros autores no esta disponible en la informacion proporcionada. La ventaja estructural frente a esquemas de dos modelos es que no requiere un borrador separado ni reentrenar el modelo base, a costa de una longitud aceptada modesta (2,03 tokens por pasada).
+La ventaja frente a drafters clasicos es que no requiere un segundo modelo completo y no modifica la salida del modelo base; la desventaja es la dependencia de una rama no fusionada de NeMo AutoModel y una aceleracion inferior a la de recetas completas.
 
 ## Limitaciones y advertencias
 
-- La longitud aceptada por pasada es de 2,03 tokens en el checkpoint final, con tasas de aceptacion que caen rapidamente con la profundidad (51 % / 23 % / 11 %), lo que limita la ganancia practica de velocidad.
-- El adaptador se entreno unicamente sobre databricks/databricks-dolly-15k (14.500 ejemplos), un dataset general de instrucciones; su comportamiento fuera de esa distribucion no esta documentado.
-- La model card declara solo ingles; no hay evidencia de funcionamiento multilingue del mecanismo de drafting.
-- El uso del adaptador para drafting requiere implementacion manual de hooks de gate, `position_ids` y mascaras de atencion; no es un simple `generate()` y aumenta la complejidad de integracion.
-- La model card no documenta sesgos, riesgos de alucinacion ni evaluaciones de seguridad; estos riesgos se heredan del modelo base Qwen3-4B.
-- Licencia Apache 2.0 permite uso comercial, pero el adaptador depende del modelo base Qwen3-4B, cuyos terminos deben respetarse por separado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa de la comunidad.
-- No se documentan mediciones de latencia ni throughput reales, solo la metrica de tokens aceptados bajo teacher forcing.
+- La aceleracion es modesta (1,20x-1,31x) y muy inferior al 2-5x de la receta completa del articulo de referencia.
+- Requiere una rama no fusionada de NeMo AutoModel (PR #4686); no esta en `main` ni en el paquete PyPI `nemo-automodel`, lo que complica el despliegue en produccion.
+- El adaptador solo se entreno con datos en ingles (dolly-15k); su comportamiento en otros idiomas no esta validado.
+- Riesgo de alucinacion inherente al modelo base Qwen3-4B; el adaptador no lo mitiga.
+- La carga exige randomizar las 8 filas de embeddings con la misma semilla que en entrenamiento (seed=42); un error aqui invalida el adaptador.
+- La licencia Apache 2.0 cubre el adaptador, pero el dataset de entrenamiento es CC BY-SA 3.0, lo que puede imponer obligaciones de atribucion y compartir-igual en derivados.
+- No se han publicado benchmarks de calidad (MMLU, HumanEval, GSM8K) que confirmen que la salida del modelo base se preserva mas alla de la verificacion por tokens reales.
+- El uso de `flex_attention` y la integracion con NeMo AutoModel limitan la portabilidad a otros stacks de inferencia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kashif/Qwen3-4B-Gated-LoRA-MTP
+- Hugging Face: https://huggingface.co/kashif/Qwen3-4B-Gated-LoRA-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
-- Articulo de referencia (gated-LoRA): https://arxiv.org/abs/2507.11851
 - Dataset de entrenamiento: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+- Paper de referencia (arXiv:2507.11851): https://arxiv.org/abs/2507.11851
+- Repositorio NeMo AutoModel: https://github.com/NVIDIA-NeMo/Automodel
+- Pull request con la implementacion: https://github.com/NVIDIA-NeMo/Automodel/pull/4686

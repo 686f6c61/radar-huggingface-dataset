@@ -2,124 +2,105 @@
 
 ## Resumen
 
-Alexandria Qwen3 attribution es un conjunto de adaptadores LoRA (formato PEFT) que especializan modelos de la familia Qwen3 en una tarea muy concreta: la atribución de hablante en prosa de ficción en inglés. Dado un texto ya segmentado en intervenciones o líneas y un roster de personajes proporcionado por el usuario, el modelo devuelve un objeto JSON `{"n","speaker"}` por entrada, asignando a cada línea el nombre del personaje que la pronuncia. Lo publica el usuario Om22s dentro del proyecto Alexandria Audiobook, orientado a la producción automatizada de audiolibros con voces diferenciadas.
+Alexandria-qwen3-attribution es una familia de adaptadores LoRA (PEFT) publicada por el usuario Om22s sobre distintos modelos Qwen3, orientada a una tarea muy concreta: la atribución de hablantes en texto narrativo, principalmente audiolibros. El modelo no genera prosa libre, sino que recibe un fragmento de texto junto con un elenco de personajes ("roster") y devuelve JSON estructurado indicando qué personaje pronuncia cada intervención. El repositorio agrupa adaptadores entrenados sobre Qwen3-14B, Qwen3-8B, Qwen3.6-35B-A3B y Qwen3.8-27B, con el objetivo de mejorar la precisión del modelo base en esa tarea.
 
-No es un modelo de chat ni un modelo autónomo: son adaptadores que se cargan sobre un modelo base que no se distribuye en este repositorio. El repo agrupa variantes para tres bases distintas (`Qwen/Qwen3-14B`, `Qwen/Qwen3.8-27B` y el MoE `Qwen/Qwen3.6-35B-A3B`), con distintos conjuntos de datos de entrenamiento y distintas recetas (LoRA y QLoRA). El adaptador principal, `qwen3-14b-rightsclean`, contiene 64.225.280 parámetros en safetensors y eleva la precisión de atribución del 61,7 % al 73,4 % sobre el fixture de producto de cuatro libros, según los datos declarados por el autor.
+El adaptador principal documentado es `qwen3-14b-rightsclean-attrv1`, con 64.225.280 parámetros entrenables en formato safetensors y un tamaño de repositorio de 2,4 GB. La etiqueta "rights-reviewed" y el sufijo "rightsclean" sugieren un filtrado del corpus de entrenamiento por derechos de autor, un aspecto relevante para un producto de audiolibros. El modelo se distribuye también en formato GGUF para su uso con llama.cpp.
 
-Su relevancia es acotada pero real: cubre un cuello de botella típico de los pipelines de audiolibro (decidir quién habla en cada línea antes de sintetizar) con un adaptador pequeño, desplegable en local sobre una base cuantizada a Q4_K_M mediante llama.cpp, y con un enfoque explícito de "rights-reviewed": el entrenamiento se limita a novelas de dominio público (PDNC), RiQuA y guiones de teatro CC0, lo que facilita el uso comercial. La contrapartida es que las ganancias son específicas del fixture y una parte de los resultados todavía no está medida.
+La relevancia actual es acotada pero clara: los pipelines de producción de audiolibros necesitan resolver la atribución de diálogos de forma fiable y determinista, y este adaptador ofrece mejoras medibles sobre el Qwen3 base en ese dominio específico (por ejemplo, de 61,7 a 73,4 en el fixture de producto con razonamiento desactivado). No es un modelo de propósito general, sino un componente especializado dentro de una cadena de procesamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (PEFT) sobre transformers decoder-only de la familia Qwen3; recetas LoRA y QLoRA (uno de ellos, atencion unicamente) |
-| Parametros totales | 64.225.280 en safetensors (pesos del adaptador; el modelo base no se incluye) |
-| Parametros activos | No aplica al adaptador. El base `Qwen/Qwen3.6-35B-A3B` es MoE segun su denominacion (~3B activos), dato no verificado en la informacion disponible |
-| Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base) |
-| Tipos de cuantizacion | Export GGUF; el adaptador principal se evaluo con el base en Q4_K_M. Para `qwen3.8-27b-rightsclean-michel2` el autor indica "lower quants queued" (niveles inferiores pendientes) |
-| Idiomas soportados | Ingles (`en`). Otros idiomas sin probar segun el autor |
+| Arquitectura | LoRA (PEFT) sobre transformer decoder-only Qwen3; adaptador entrenado sobre Qwen3-14B, Qwen3-8B, Qwen3.6-35B-A3B (MoE) y Qwen3.8-27B |
+| Parametros totales | 64.225.280 (adaptador principal, safetensors); el modelo base Qwen3-14B tiene 14B |
+| Parametros activos | no disponible para el adaptador; en Qwen3.6-35B-A3B el base es MoE (A3B), sin cifra de activos en la informacion disponible |
+| Longitud de contexto | no disponible (heredada del modelo base Qwen3, sin dato explicito en la informacion) |
+| Tipos de cuantizacion | GGUF: Q4_K_M, Q3_K_XL, IQ2_XXS, IQ1_M (segun los benchmarks declarados) |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adaptadores PEFT) y GGUF |
-
-Datos adicionales del repositorio: tamano 2,0 GB, 20 descargas, 0 likes, creado el 2026-09-17 y actualizado el 2026-09-19, libreria `peft`, pipeline `text-generation`, revision etiquetada `v1.0.0`.
+| Formato de pesos | safetensors (adaptador LoRA PEFT) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena un modelo desde cero: publica adaptadores de bajo rango sobre modelos Qwen3 ya existentes. El adaptador de referencia, `adapters/qwen3-14b-rightsclean/`, se entrena sobre fuentes PDNC, RiQuA y prosa teatral, y es el que mejores cifras declara (61,7 % a 73,4 % en el fixture de producto de cuatro libros). Existen otras variantes de ablacion sobre la misma base: `qwen3-14b-riqua3ep` (RiQuA, tres epocas, 61,7 % a 69,7 %), `qwen3-14b-riquax2` (RiQuA repetido dos veces, 61,7 % a 70,6 %) y `qwen3-14b-rightsclean-seed2` (la receta rights-clean con una segunda semilla, 66,1 % a 74,9 % con razonamiento en presupuesto bajo).
+El modelo es un adaptador LoRA de bajo rango sobre la familia Qwen3, no un modelo entrenado desde cero. La arquitectura subyacente es la de Qwen3 (transformer decoder-only; la variante 35B-A3B es un modelo de mezcla de expertos). El adaptador se aplica mediante PEFT y se distribuye empaquetado para su uso con llama.cpp en formato GGUF, lo que permite fusionarlo o cargarlo junto al base cuantizado.
 
-Para las bases mayores se emplean recetas distintas: `qwen3.6-35b-a3b-rightsclean-michel2` es un QLoRA "attention-only" sobre la base MoE, con un GGUF de solo 6,9 MB y todavia sin puntuar; `qwen3.8-27b-rightsclean-michel2` es un QLoRA sobre Qwen3.8-27B que pasa de 87,4 % a 88,3 % en Q4_K_M con razonamiento desactivado. Los dos adaptadores `michel2` se entrenaron con una variante de prompt distinta de la que se distribuye por defecto: fueron entrenados con la forma `michel2` y se evaluan con `michel2_full`, de modo que el prompt `default` incluido no es su forma de entrenamiento.
-
-El conjunto de datos de entrenamiento es en todos los casos prosa inglesa: 20 novelas PDNC de dominio publico, novelas RiQuA y guiones de teatro CC0, mas cuatro novelas ligeras japonesas traducidas que se emplean como fixture de producto. No hay informacion disponible sobre numero total de tokens, composicion exacta del dataset, ni sobre etapas de RLHF o DPO; el ajuste es supervisado mediante LoRA. La innovacion tecnica destacable no esta en la arquitectura sino en el contrato de salida (JSON estructurado validable) y en la trazabilidad de derechos de las fuentes.
+Los datos de entrenamiento no se detallan en la información disponible: no se indica el número de tokens, la composición exacta del dataset ni si hubo RLHF o DPO. La model card sí menciona un "four-book product fixture" de 768 filas emparejadas y un conjunto de evaluación externo ("PDNC Emma", 318 filas, 40 ventanas), lo que apunta a un entrenamiento y evaluación centrados en corpus narrativos con licencia revisada. La innovación destacable no está en la arquitectura sino en el enfoque: evaluación emparejada base/LoRA en un mismo servidor llama.cpp, con control de cuantización, presupuesto de razonamiento y esquema JSON, lo que permite aislar la contribución real del adaptador.
 
 ## Capacidades
 
-- Atribucion de hablante en prosa de ficcion en ingles: asigna un nombre del roster a cada linea ya segmentada.
-- Salida estructurada: un objeto JSON `{"n","speaker"}` por entrada, con indices que deben validarse (rechazar respuestas que omitan, dupliquen o inventen indice, o nombren un hablante fuera del roster).
-- Seleccion desde roster: admite los valores especiales `NARRATOR` y `UNKNOWN` ademas de los personajes listados.
-- Modo de razonamiento configurable: los resultados declarados incluyen configuraciones con razonamiento desactivado y con presupuesto bajo de razonamiento (1024 tokens) mas esquema JSON.
-- Compatibilidad entre tamanos de base: hay adaptadores para una base densa de 14B, otra densa de 27B y una MoE de 35B-A3B, lo que permite ajustar coste y precision.
-- Despliegue local: se sirve mediante llama.cpp con el export GGUF, o cargando el adaptador con PEFT sobre transformers.
-- No soporta: chat general, resumen, traduccion, deteccion autonoma de personajes (requiere roster), otros idiomas (sin probar) ni vision o audio.
+- Atribución de hablantes en texto narrativo: identifica qué personaje del elenco pronuncia cada fragmento, devolviendo JSON estructurado.
+- Generación de JSON conforme a esquema, con el elenco proporcionado en el prompt.
+- Funcionamiento con razonamiento desactivado y con presupuesto de razonamiento bajo (1024), lo que permite elegir entre latencia y precisión.
+- Procesamiento de ventanas de texto largas (las evaluaciones usan 40 ventanas sobre 318 filas).
+- Robustez ante cuantizaciones agresivas: se reportan resultados en Q4_K_M, Q3_K_XL, IQ2_XXS e IQ1_M.
+- Capacidades generales de generación de texto heredadas de Qwen3 (no evaluadas específicamente en esta ficha).
+- Soporte de tool calling y agentes: no documentado en la información disponible.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
 
 ## Casos de uso
 
-- Produccion de audiolibros multi-voz: el adaptador etiqueta cada linea de una novela con su hablante antes de pasar el texto a un motor TTS; despues se sintetiza cada intervencion con la voz asignada al personaje. Es el escenario para el que fue disenado y el que cubren los fixtures de evaluacion.
-- Etiquetado de dialogos en proyectos de dominio publico: para corpus tipo PDNC o LibriVox, donde no existe una anotacion de hablante fiable, el adaptador genera etiquetas iniciales sobre las que aplicar revision humana antes de publicar.
-- Pre-anotacion de corpus literarios para investigacion: narratologia, estilometria o analisis de dialogo pueden partir de las etiquetas del modelo para acelerar el etiquetado manual de novelas completas, validando el contrato JSON en cada lote.
-- Control de calidad editorial: detectar lineas mal atribuidas en manuscritos o en ediciones digitalizadas antes de la maquetacion final, usando el roster de personajes de la obra como lista cerrada.
-- Generacion de datos de entrenamiento (silver labels): producir pares linea-hablante a gran escala sobre novelas de dominio publico para entrenar o evaluar otros modelos de atribucion, siempre con un filtro de validacion del JSON.
-- Pipelines de accesibilidad: mejorar la lectura asistida o la conversion texto-a-voz de obras de ficcion diferenciando narrador y personajes, con una etapa de revision humana obligatoria en el audio publicado.
-- Ajuste coste/precision segun infraestructura: usar el adaptador de 14B en Q4_K_M en una maquina local para tiradas grandes de bajo coste, y reservar los adaptadores de 27B o 35B-A3B para pasadas finales donde la precision importa mas.
-- Auditoria de derechos en productos comerciales: al entrenarse sobre PDNC, RiQuA y guiones CC0, el flujo permite documentar que el adaptador no se ajusto sobre obras con copyright, lo que simplifica la revision legal del producto final.
+- Producción de audiolibros: el adaptador recibe cada fragmento del manuscrito y el elenco de personajes, y devuelve qué personaje habla, alimentando el pipeline de asignación de voces. Su ventaja es la precisión medida sobre el base en el fixture de producto (73,4 frente a 61,7 sin razonamiento).
+- Preprocesado de diálogos en editoriales: integrado en un pipeline de conversión de EPUB a audio, permite separar narrador y personajes antes de la síntesis de voz, reduciendo revisiones manuales.
+- Control de calidad de atribuciones existentes: se puede ejecutar el adaptador sobre manuscritos ya etiquetados para detectar discrepancias y marcar fragmentos para revisión humana.
+- Despliegue en hardware modesto: la variante sobre Qwen3-8B o el adaptador de 14B en Q4_K_M caben en GPUs de consumo, lo que permite procesar catálogos completos en local sin depender de APIs.
+- Evaluación comparativa de cuantizaciones: los resultados publicados en Q4_K_M, Q3_K_XL, IQ2_XXS e IQ1_M permiten elegir el compromiso entre memoria y precisión para un servidor concreto.
+- Investigación sobre atribución de hablantes: el enfoque de evaluación emparejada base/LoRA con temperatura 0 y esquema JSON sirve como referencia metodológica para experimentos similares.
+- Extracción estructurada de diálogos para bases de datos narrativas: el JSON de salida se puede ingerir directamente en sistemas de anotación o en herramientas de análisis literario.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes proceden del `model-index` de la model card y estan declarados por el autor; el propio repositorio los marca como `verified: false`, es decir, no verificados de forma independiente. Las comparaciones base/LoRA se hicieron sobre un unico servidor llama.cpp con la base Qwen3-14B en Q4_K_M.
+Datos declarados por el autor (no verificados de forma independiente). Todos los resultados son de precisión (accuracy) en atribución de hablantes con JSON estructurado y elenco proporcionado.
 
-| Tarea | Conjunto de evaluacion | Base | Adaptador | Diferencia |
-|---|---|---|---|---|
-| Atribucion de hablante (JSON estructurado, roster dado) | Fixture de producto de cuatro libros (768 filas emparejadas, temperatura 0, batch 25, prompt por defecto, razonamiento desactivado) | 61,7 | 73,4 | +11,7 |
-| Atribucion de hablante (JSON estructurado, roster dado) | Fixture de producto de cuatro libros, razonamiento con presupuesto bajo 1024 y esquema JSON | 66,1 | 74,7 | +8,6 |
-| Atribucion de hablante (JSON estructurado, roster dado) | PDNC Emma, en reserva (318 filas, 40 ventanas), razonamiento con presupuesto bajo 1024 | 68,9 | 75,8 | +6,9 |
+| Adaptador / configuración | Conjunto | Base | Adaptador |
+|---|---|---|---|
+| qwen3-14b-rightsclean-attrv1, razonamiento off, Q4_K_M | Fixture de producto (768 filas) | 61,7 | 73,4 |
+| qwen3-14b-rightsclean-attrv1, razonamiento low 1024, JSON schema | Fixture de producto | 66,1 | 74,7 |
+| qwen3-14b-rightsclean-attrv1, razonamiento low 1024 | PDNC Emma, held out (318 filas) | 68,9 | 75,8 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento off, Q4_K_M | Fixture de producto | 87,4 | 88,3 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento off, Q4_K_M | PDNC Emma, held out | 99,1 | 99,1 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento on, Q4_K_M | Fixture de producto | 89,8 | 89,8 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento on, Q4_K_M | PDNC Emma, held out | 99,7 | 99,4 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento on, Q3_K_XL | Fixture de producto | 87,5 | 88,8 |
+| qwen3.8-27b-rightsclean-michel2v1, razonamiento on, IQ2_XXS | Fixture de producto | 83,1 | 85,7 |
+| qwen3.6-35b-a3b-rightsclean-michel2v1, razonamiento off, IQ1_M | Fixture de producto | 82,9 | 85,9 |
 
-Otras cifras declaradas en la model card, sin fila propia en el `model-index`:
-
-| Adaptador | Base | Resultado declarado |
-|---|---|---|
-| `qwen3-14b-riqua3ep` | Qwen3-14B | 61,7 a 69,7 |
-| `qwen3-14b-riquax2` | Qwen3-14B | 61,7 a 70,6 |
-| `qwen3-14b-rightsclean-seed2` | Qwen3-14B | 66,1 a 74,9 con razonamiento bajo (semilla 1: 74,7); en Emma en reserva +0,6 (semilla 1: +6,9) |
-| `qwen3.8-27b-rightsclean-michel2` | Qwen3.8-27B | 87,4 a 88,3 en Q4_K_M con razonamiento desactivado |
-| `qwen3.6-35b-a3b-rightsclean-michel2` | Qwen3.6-35B-A3B | Sin puntuar (not yet scored) |
-
-No se han publicado en la informacion disponible resultados de benchmarks estandar como MMLU, HumanEval o GSM8K, ni comparaciones con modelos de atribucion de terceros.
+Observaciones: la ganancia del adaptador es mayor en el modelo de 14B (hasta +11,7 puntos) y se diluye en los modelos más grandes, donde el base ya rinde muy alto. En PDNC Emma con Qwen3.8-27B, el adaptador no mejora al base con razonamiento desactivado y lo empeora ligeramente con razonamiento activado (99,4 frente a 99,7), lo que sugiere un techo de la tarea.
 
 ## Requisitos de hardware
 
-- El adaptador en si ocupa unos 128 MB en BF16 (64,2 M de parametros), pero no es utilizable sin el modelo base. El repositorio completo pesa 2,0 GB, incluyendo exportaciones GGUF.
-- VRAM estimada para la base Qwen3-14B (estimacion derivada del numero de parametros, no publicada por el autor): en BF16 en torno a 28 GB; en Q8 alrededor de 15 GB; en Q4_K_M alrededor de 9 GB. Esta ultima es la configuracion con la que se obtuvieron las puntuaciones declaradas.
-- VRAM estimada para la base Qwen3.8-27B: en BF16 en torno a 54 GB; en Q4_K_M alrededor de 17 GB. El autor indica que hay cuantizaciones mas bajas pendientes de publicar.
-- VRAM estimada para la base MoE Qwen3.6-35B-A3B (adaptador `attention-only`, GGUF de 6,9 MB): en BF16 en torno a 70 GB; en Q4 alrededor de 20-22 GB, con la ventaja de que al ser MoE solo se activa una fraccion de los parametros por token, lo que reduce el coste de computo respecto a una base densa del mismo tamano.
-- Cabe en GPU de consumo: la variante de 14B en Q4_K_M entra en tarjetas de 12 GB, y con holgura en 16-24 GB (RTX 4080, RTX 4090, RTX 3090). Las bases de 27B y 35B-A3B en Q4 requieren 24 GB o mas y quedan al limite en una RTX 4090; en BF16 necesitan GPU de datacenter (A100 80 GB, H100).
-- Opciones de despliegue confirmadas en la documentacion: llama.cpp sirviendo el export GGUF (el script `examples/serve_llamacpp.sh` reproduce la configuracion con la que se obtuvieron las puntuaciones) y carga del adaptador con PEFT sobre transformers (`PeftModel.from_pretrained` con `subfolder` y `revision`). Otros servidores como vLLM, TGI u Ollama no se mencionan en la informacion disponible y no estan confirmados por el autor.
-- Latencia y throughput: no disponibles. El autor solo documenta el ajuste de evaluacion (temperatura 0, batch 25, 768 filas emparejadas en el fixture principal).
+- El adaptador LoRA en safetensors ocupa aproximadamente 2,4 GB de repositorio; el modelo base Qwen3-14B en Q4_K_M requiere del orden de 9-10 GB de VRAM, estimación no confirmada en la información disponible.
+- GPU recomendadas: para Qwen3-14B en Q4_K_M, una RTX 4090 (24 GB) o A100/H100 con holgura; para las variantes de 27B y 35B-A3B se necesitan GPUs de 24-80 GB según cuantización.
+- Cabe en GPU de consumo: sí, la variante de 14B en Q4_K_M en tarjetas de 12-16 GB; las variantes de 8B en tarjetas de 8-12 GB.
+- Opciones de despliegue: llama.cpp (formato GGUF, servidor con soporte de LoRA), PEFT con transformers, y potencialmente vLLM o TGI cargando el adaptador sobre el base (no confirmado en la información disponible).
+- Latencia y throughput: no disponibles; los benchmarks se ejecutaron con temperatura 0 y batch 25, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No hay en la informacion disponible datos de modelos de terceros comparables en la tarea de atribucion de hablante, por lo que la comparacion se limita a las variantes publicadas dentro del propio repositorio y a su modelo base.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| alexandria-qwen3-attribution (14B) | 64,2 M en adaptador sobre 14B | no disponible | LoRA especializado en atribución de hablantes | apache-2.0 | Hugging Face, GGUF |
+| Qwen3-14B base | 14B | no disponible en esta ficha | Modelo generalista | apache-2.0 | Hugging Face |
+| alexandria-qwen3-attribution (27B) | adaptador sobre 27B | no disponible | LoRA especializado, mayor precisión | apache-2.0 | Hugging Face, GGUF |
+| alexandria-qwen3-attribution (35B-A3B) | adaptador sobre MoE 35B | no disponible | LoRA especializado, eficiente en cómputo | apache-2.0 | Hugging Face, GGUF |
 
-| Modelo / adaptador | Base | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3-14B sin adaptar | - | 14B (aprox.) | No disponible | 61,7 / 66,1 / 68,9 segun configuracion | Apache 2.0 (base) | Publico en Hugging Face |
-| `qwen3-14b-rightsclean` | Qwen3-14B | 64,2 M de adaptador | No disponible | 73,4 / 74,7 / 75,8 | apache-2.0 | Incluido en este repo |
-| `qwen3-14b-rightsclean-seed2` | Qwen3-14B | No disponible | No disponible | 74,9 con razonamiento bajo; +0,6 en Emma | apache-2.0 | Incluido en este repo |
-| `qwen3-14b-riqua3ep` | Qwen3-14B | No disponible | No disponible | 69,7 | apache-2.0 | Incluido en este repo |
-| `qwen3-14b-riquax2` | Qwen3-14B | No disponible | No disponible | 70,6 | apache-2.0 | Incluido en este repo |
-| `qwen3.8-27b-rightsclean-michel2` | Qwen3.8-27B | No disponible | No disponible | 88,3 en Q4_K_M sin razonamiento | apache-2.0 | Incluido en este repo |
-| `qwen3.6-35b-a3b-rightsclean-michel2` | Qwen3.6-35B-A3B | No disponible (GGUF de 6,9 MB) | No disponible | Sin puntuar | apache-2.0 | Incluido en este repo |
+No se dispone de comparativas con otros adaptadores de atribución de hablantes de terceros en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado y evaluado unicamente sobre prosa inglesa: 20 novelas PDNC de dominio publico, novelas RiQuA, guiones de teatro CC0 y cuatro novelas ligeras japonesas traducidas usadas como fixture. Otros idiomas, generos y convenciones de dialogo no estan medidos; el autor declara explicitamente que otros idiomas no se han probado.
-- Los adaptadores seleccionan un nombre de un roster proporcionado. No descubren personajes: si el roster es incompleto o desconocido, la tarea falla por diseno.
-- Sesgo hacia los nombres frecuentes en el texto circundante y hacia los priors del modelo base sobre quien habla. Una atribucion erronea asigna las palabras de un personaje a otro, algo audible en un audiolibro y potencialmente lesivo para la representacion del personaje.
-- Riesgo de alucinacion en el contrato de salida: hay que validar el JSON y rechazar respuestas que omitan, dupliquen o inventen indices, o que nombren hablantes fuera del roster (salvo `NARRATOR` y `UNKNOWN`). Se recomienda mantener una revision humana antes de publicar audio.
-- Las ganancias son especificas del fixture. El adaptador de la segunda semilla replica la mejora en el fixture de cuatro libros (+8,6 / +8,8) pero no la de la novela en reserva (+6,9 / +0,6 sobre Emma), lo que sugiere que la mejora fuera del fixture no esta todavia demostrada.
-- Dos adaptadores (`michel2` sobre 27B y sobre 35B-A3B) se entrenaron con la variante de prompt `michel2` y se evaluan con `michel2_full`; el prompt `default` distribuido en el repositorio no es su forma de entrenamiento. Usarlos con el prompt por defecto degrada el resultado.
-- El adaptador sobre la base MoE de 35B-A3B no tiene puntuacion publicada, por lo que no hay evidencia de su rendimiento.
-- Todos los resultados del `model-index` estan marcados como no verificados y proceden del propio autor; las comparaciones base/LoRA se hicieron en un unico servidor llama.cpp con la base en Q4_K_M, por lo que no son extrapolables a otras configuraciones de cuantizacion o de servicio.
-- No debe usarse para emitir juicios sobre personas reales. Los adaptadores no modifican el comportamiento de seguridad del modelo base y heredan sus limitaciones.
-- Licencia apache-2.0 sobre los adaptadores, pero el uso esta condicionado por la licencia del modelo base que se cargue y por la trazabilidad de derechos de las fuentes de entrenamiento.
+- Especialización estrecha: el adaptador está entrenado para atribución de hablantes con elenco dado; su rendimiento fuera de esa tarea no está evaluado y probablemente sea inferior al del base.
+- Solo inglés: la etiqueta de idioma es `en`; no hay evidencia de funcionamiento en castellano u otros idiomas.
+- Resultados no verificados: los benchmarks son declarados por el autor (`verified: false`) y proceden de un fixture propio y un conjunto externo pequeño (318 filas), por lo que la generalización es incierta.
+- Techo en modelos grandes: en Qwen3.8-27B el adaptador apenas mejora o incluso empeora ligeramente al base, lo que cuestiona su utilidad en esa configuración.
+- Riesgo de alucinación en la asignación de hablantes: el modelo puede atribuir diálogos a personajes del elenco que no corresponden, especialmente en pasajes ambiguos o con hablantes no listados.
+- Dependencia del formato: requiere prompt con elenco y esquema JSON; cambios en el formato pueden degradar la precisión.
+- Sesgos: no documentados; al entrenarse sobre corpus narrativos concretos puede heredar sesgos de esos textos.
+- Licencia apache-2.0 permisiva para uso comercial, pero conviene revisar las condiciones de los modelos base Qwen3 y del corpus "rights-reviewed".
+- Sin soporte documentado de tool calling, agentes o multimodalidad; no debe asumirse.
+- Fecha de creación futura (2026) en los metadatos, lo que puede indicar datos de repositorio poco fiables o generados; conviene verificar el estado real del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Om22s/alexandria-qwen3-attribution
-- Repositorio de recetas y resultados (RECIPES.md): https://github.com/on22s/alexandria-audiobook2/blob/main/RECIPES.md
-- Repositorio del proyecto Alexandria Audiobook: https://github.com/on22s/alexandria-audiobook2
-- Script de inferencia de ejemplo: `examples/infer.py` (dentro del repositorio del modelo)
-- Script de servicio con llama.cpp: `examples/serve_llamacpp.sh` (dentro del repositorio del modelo)
-- Prompts del contrato de atribucion: `default_prompts_attribute.txt` (dentro del repositorio del modelo)
-- Variantes de prompt de entrenamiento: `app/attribution_prompt_variants.py` (dentro del repositorio del modelo)
-- Repositorio predecesor del adaptador de 14B: https://huggingface.co/Om22s/alexandria-qwen3-14b-rightsclean-speaker-attribution
+- Hugging Face: https://huggingface.co/Om22s/alexandria-qwen3-attribution
+- Repositorio con recetas y metodología: https://github.com/on22s/alexandria-audiobook2/blob/main/RECIPES.md
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos enlaces recuperados pertenecen a un foro de cocina en arabe sin relacion con el proyecto.

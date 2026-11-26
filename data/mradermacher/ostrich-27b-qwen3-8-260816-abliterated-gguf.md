@@ -2,81 +2,108 @@
 
 ## Resumen
 
-Ostrich-27B-Qwen3.8-260816-Abliterated es un modelo de lenguaje de 27 320 millones de parámetros, cuantizado en formato GGUF por mradermacher a partir del modelo base etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated. Este modelo base es un fine-tune del modelo Qwen3.8-27B, al que se le ha aplicado la técnica de *abliteration*, que elimina las capas de rechazo y alineación para permitir respuestas sin censura en dominios específicos. Según las etiquetas de la model card, el modelo está orientado a temas de salud, nutrición, hierbas medicinales, ayuno, fe, sanación, bitcoin y nostr, con un enfoque conversacional y "uncensored".
+Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated, publicada por el usuario mradermacher. El modelo base es un transformer denso de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen3, segun indica el nombre, y sometido a un proceso de "abliteration" que elimina o atenua los mecanismos de rechazo y alineacion del modelo original, dando lugar a una variante sin censura (uncensored). La model card lo etiqueta con tematicas de salud, nutricion, hierbas medicinales, ayuno, fe, sanacion, bitcoin y nostr, ademas de las etiquetas "based", "aligned" y "beneficial", lo que sugiere un ajuste orientado a esos dominios.
 
-La relevancia de este modelo radica en que ofrece una alternativa local y sin restricciones para desarrolladores e investigadores que necesitan explorar estos temas sin los filtros habituales de los modelos comerciales. Al estar cuantizado en GGUF, puede ejecutarse en hardware de consumo mediante herramientas como llama.cpp u Ollama, lo que facilita su integración en aplicaciones de escritorio o servidores pequeños. La licencia Apache 2.0 permite uso comercial y modificación, aunque el contenido generado puede requerir supervisión adicional.
+La relevancia de esta publicacion es practica: mradermacher proporciona cuantizaciones estaticas listas para usar con llama.cpp y derivados, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), lo que permite ejecutar un modelo de 27B en hardware de consumo con suficiente memoria. Tambien existe una variante con cuantizacion ponderada/imatrix en un repositorio separado, orientada a mayor calidad por bit.
 
-No se dispone de información detallada sobre la arquitectura interna, el proceso de entrenamiento o los benchmarks del modelo, más allá de los datos proporcionados en la model card y las búsquedas web sobre el modelo base Qwen3.8-27B.
+Conviene subrayar que esta ficha describe la distribucion GGUF, no el modelo original: no se dispone de informacion sobre la composicion exacta del dataset de entrenamiento, la longitud de contexto nativa, los idiomas soportados mas alla del ingles declarado ni resultados de benchmarks. El repositorio ocupa 189,2 GB e incluye todos los archivos de cuantizacion, no un unico peso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (nombre sugiere derivado de Qwen3.8-27B, sin confirmación oficial) |
-| Parametros totales | 27 320 697 856 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el modelo base Qwen3.8-27B declara 262 144 tokens, pero no se confirma para este fine-tune) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors disponibles en el modelo base) |
+| Arquitectura | Transformer denso (familia Qwen3, segun el nombre del modelo); detalles no disponibles |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes imatrix en repositorio aparte |
+| Idiomas soportados | Ingles (declarado en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamano del repositorio | 189,2 GB (conjunto de todas las cuantizaciones) |
+| Libreria declarada | transformers |
+| Modelo base | etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated |
+| Fecha de creacion | 2026-08-18 |
+| Ultima actualizacion | 2026-10-12 |
+| Descargas | 255 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información específica sobre la arquitectura de Ostrich-27B-Qwen3.8-260816-Abliterated. Por el nombre y las referencias cruzadas, se infiere que se basa en el modelo Qwen3.8-27B, que según las búsquedas web es un transformer denso con un encoder de visión adicional y una ventana de contexto de 262 144 tokens. Sin embargo, no se confirma si el fine-tune conserva todas las capacidades del modelo base, como el soporte de visión o la longitud de contexto completa.
+La informacion disponible no detalla la arquitectura interna del modelo base. Por el nombre y por el recuento de parametros (27,3 B) se infiere un transformer denso de la familia Qwen3, pero no se especifican numero de capas, dimension oculta, numero de cabezas de atencion, tipo de atencion (completa o con variantes eficientes), funcion de activacion ni vocabulario. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste supervisado.
 
-El proceso de entrenamiento de Ostrich no está documentado en la información proporcionada. Las etiquetas indican que se aplicó *abliteration*, una técnica que consiste en eliminar o neutralizar las direcciones de los pesos responsables del rechazo de peticiones, dando lugar a un modelo "sin censura". Los temas de entrenamiento se deducen de las etiquetas: salud, nutrición, hierbas medicinales, ayuno, fe, sanación, bitcoin y nostr. No se mencionan datos sobre el volumen de tokens, el método de ajuste (fine-tuning supervisado, RLHF, etc.) ni otras innovaciones técnicas.
+Lo que si es caracteristico del modelo base es el proceso de abliteration: una tecnica que identifica la direccion en el espacio de activaciones asociada al comportamiento de rechazo y la proyecta fuera de los pesos, de modo que el modelo deja de negarse a responder ante determinadas peticiones. Esto no es un entrenamiento adicional con datos, sino una modificacion de los pesos que altera el comportamiento de alineacion. El sufijo "260816" en el nombre sugiere una version o fecha de compilacion del ajuste. La model card del repositorio GGUF no aporta mas detalles tecnicos sobre el pipeline de cuantizacion mas alla de indicar quantize_version 2, salida en formato HF y un conjunto de tipos de cuantizacion estaticos.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con especial énfasis en temas de salud, nutrición, hierbas medicinales, ayuno, fe, sanación, bitcoin y nostr.
-- Respuestas sin rechazo en esos dominios gracias a la abliteration, lo que permite abordar preguntas que otros modelos alineados podrían bloquear.
-- Capacidad de mantener diálogos multi-turno, aunque no se especifica la longitud máxima de contexto efectiva.
-- No se ha confirmado soporte para tool calling, agentes, razonamiento multi-paso ni capacidades multimodales (visión, audio) en este fine-tune concreto.
-- El modelo base Qwen3.8-27B, según las búsquedas web, incluye un encoder de visión y soporte para tool calling, pero no se sabe si estas características se heredan en Ostrich.
+- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
+- Respuestas sin rechazo ante peticiones que un modelo alineado convencionalmente declinaria, por el proceso de abliteration.
+- Cobertura tematica orientada a salud, nutricion, hierbas medicinales, ayuno, fe y sanacion, segun las etiquetas del autor del modelo base.
+- Contenido relacionado con bitcoin y nostr, segun las mismas etiquetas.
+- Uso en ingles como idioma declarado; no hay evidencia de capacidades multilingues.
+- Soporte de tool calling, function calling, agentes, vision o audio: no disponible en la informacion proporcionada.
+- Modo de razonamiento explicito (thinking): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Consultas sobre nutrición y hierbas medicinales: el modelo puede proporcionar información detallada sobre remedios naturales, dosis tradicionales y usos etnobotánicos, sin las restricciones habituales de los modelos comerciales. Es adecuado para aplicaciones de referencia rápida en salud alternativa.
-- Ayuno y fe: puede discutir prácticas de ayuno desde perspectivas religiosas (cristianismo, islam, judaísmo) y de salud, ofreciendo orientación sobre protocolos, beneficios y riesgos, siempre que el usuario asuma la responsabilidad de verificar la información.
-- Bitcoin y Nostr: puede conversar sobre criptomonedas, inversión, minería y la red social descentralizada Nostr, respondiendo preguntas técnicas y filosóficas, y ayudando a entender conceptos como claves privadas, relays o proof-of-work.
-- Asistente de bienestar personal: puede generar recomendaciones de estilo de vida saludable, rutinas de sanación natural y consejos de autocuidado, integrando conocimientos de las áreas mencionadas.
-- Investigación en terapias alternativas: investigadores o curiosos pueden explorar temas que otros modelos rechazan, como tratamientos no convencionales o discusiones sobre fe y sanación, sin temor a respuestas evasivas.
-- Generación de contenido para blogs o redes sociales: puede redactar artículos, publicaciones o respuestas sobre salud, espiritualidad o criptomonedas, aprovechando su estilo conversacional y su conocimiento especializado.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q4_K_S (15,9 GB) caben en tarjetas de 24 GB como la RTX 4090, permitiendo inferencia de un modelo de 27B sin conexion a servicios externos.
+- Experimentacion en investigacion sobre alineacion y abliteration: el modelo permite estudiar empiricamente como la proyeccion de la direccion de rechazo afecta a la distribucion de respuestas, comparandolo con el modelo Qwen3 original.
+- Generacion de contenido divulgativo sobre nutricion, ayuno y plantas medicinales: las etiquetas del modelo base indican un ajuste hacia estos dominios, util para borradores que luego revise un profesional.
+- Asistentes conversacionales tematicos sin filtros: para prototipos donde se requiere explorar respuestas sin las restricciones habituales de los modelos alineados, con la advertencia de que la supervision humana es imprescindible.
+- Evaluacion de cuantizaciones: el repositorio ofrece once variantes de cuantizacion, lo que permite medir la degradacion de perplejidad y calidad entre Q2_K y Q8_0 sobre el mismo modelo base en tareas concretas.
+- Integracion en pipelines con llama.cpp u Ollama: el formato GGUF es directamente consumible por estas herramientas, facilitando pruebas A/B de prompts y temperaturas en entornos de desarrollo.
+- Analisis de sesgos y riesgos: util para auditar que tipo de contenido genera un modelo sin censura en dominios sensibles como salud, y documentar los fallos antes de cualquier uso real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo. Las búsquedas web mencionan que el modelo base Qwen3.8-27B tiene benchmarks publicados, pero no se han proporcionado los valores concretos ni se puede asumir que el fine-tune mantenga el mismo rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y tampoco se aportan datos del modelo base. No se deben inferir cifras a partir del nombre o del tamano.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (tamaño de archivo + overhead típico de 2-4 GB):
-  - Q2_K (11.0 GB): requiere al menos 14 GB de VRAM (p. ej., RTX 4080, RTX 4090).
-  - Q4_K_M (16.9 GB): requiere al menos 20 GB de VRAM (p. ej., RTX 3090, RTX 4090, A6000).
-  - Q6_K (22.5 GB): requiere al menos 26 GB de VRAM (p. ej., A100 40 GB, RTX A6000).
-  - Q8_0 (29.1 GB): requiere al menos 34 GB de VRAM (p. ej., A100 40 GB, H100).
-- GPU recomendadas: para cuantizaciones Q4 o inferiores, una RTX 3090 o RTX 4090 (24 GB) es suficiente. Para Q6/Q8, se necesitan GPUs profesionales de 32 GB o más.
-- También puede ejecutarse en CPU con suficiente RAM (por ejemplo, 32 GB para Q4_K_M) usando llama.cpp o herramientas similares, aunque con mayor latencia.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp, text-generation-webui (con backend llama.cpp). No se recomienda vLLM ni TGI para GGUF, ya que estos frameworks no soportan este formato de forma nativa.
-- Latencia y throughput: no se han publicado datos específicos. En una RTX 4090 con Q4_K_M, se espera una velocidad de generación de 30-50 tokens/s, pero depende de la implementación y la longitud de contexto.
+- VRAM estimada para inferencia, segun cuantizacion (pesos mas overhead de contexto y cache KV):
+  - Q2_K: 11,0 GB de pesos; ~12-14 GB de VRAM en total.
+  - Q3_K_M: 13,6 GB; ~15-17 GB.
+  - IQ4_XS: 15,5 GB; ~17-19 GB.
+  - Q4_K_M: 16,9 GB; ~18-21 GB.
+  - Q5_K_M: 19,6 GB; ~21-24 GB.
+  - Q6_K: 22,5 GB; ~24-27 GB.
+  - Q8_0: 29,1 GB; ~31-34 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) en las mismas cuantizaciones; A100 40 GB, A100 80 GB o H100 para Q6_K y Q8_0 con contexto largo; RTX 4060 Ti 16 GB o RTX 4080 para Q3_K_M e inferiores.
+- Cabe en GPU de consumo: si, en Q4_K_M y menores con 24 GB; en Q3_K_M y menores con 16 GB; Q2_K puede ejecutarse parcialmente en offload CPU/GPU con 8-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de endpoints (el repositorio incluye la etiqueta endpoints_compatible). vLLM y TGI no consumen GGUF de forma nativa en todas sus versiones; para esos motores habria que usar los safetensors del modelo base.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos en la documentación proporcionada. El modelo base Qwen3.8-27B es la referencia más cercana, pero no se han facilitado sus especificaciones completas ni sus resultados de benchmarks. Por tanto, no se puede establecer una comparación cuantitativa fiable.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ostrich-27B-Qwen3.8-260816-Abliterated (esta ficha) | 27,3 B | No disponible | GGUF (11 cuantizaciones) | Apache 2.0 | Abliterated, solo ingles declarado, 255 descargas |
+| Qwen3 original (familia) | Variable; existe variante de tamano comparable | No disponible en esta informacion | Safetensors, GGUF comunitario | Apache 2.0 en la mayoria de variantes | Modelo alineado de referencia; capacidades multilingues y tool calling documentadas por el autor original |
+| Gemma 2 27B | 27 B | No disponible en esta informacion | Safetensors, GGUF | Gemma Terms of Use | Alternativa densa de tamano casi identico; licencia con restricciones de uso |
+| Mistral Small 24B | 24 B | No disponible en esta informacion | Safetensors, GGUF | Apache 2.0 | Modelo denso con soporte multilingue y de function calling |
+
+La comparacion se limita a parametros, formato y licencia porque no hay datos de rendimiento publicados para el modelo de esta ficha. La diferencia principal frente a las alternativas es el proceso de abliteration y el enfoque tematico, no una mejora de capacidad bruta.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "abliterated", puede generar contenido inapropiado, ofensivo o potencialmente dañino, especialmente en temas de salud y bienestar. No debe utilizarse como fuente médica o profesional sin supervisión humana.
-- No hay información sobre sesgos específicos, pero al derivar de Qwen3.8-27B, podría heredar sesgos presentes en los datos de entrenamiento del modelo base.
-- El modelo solo soporta inglés; no se ha confirmado capacidad multilingüe.
-- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede estar sujeto a responsabilidades legales si se utiliza en contextos sensibles (salud, finanzas).
-- No se han publicado evaluaciones de seguridad, robustez o alucinaciones. Se recomienda verificar las respuestas en aplicaciones críticas.
-- La longitud de contexto efectiva no está confirmada; si se usa más allá del límite real, el rendimiento puede degradarse.
+- El proceso de abliteration elimina los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido danino, ilegal o inseguro sin aviso; no debe desplegarse de cara al publico sin filtros externos.
+- Riesgo elevado de alucinacion en los dominios de salud, nutricion y hierbas medicinales que el modelo declara cubrir; cualquier salida en esas areas requiere verificacion por profesionales cualificados.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No se dispone de informacion sobre la longitud de contexto nativa, lo que impide planificar casos de uso con documentos largos.
+- No hay benchmarks publicados, por lo que no se puede comparar su calidad objetiva con modelos de tamano similar.
+- La licencia Apache 2.0 permite uso comercial, pero el autor del modelo base y el cuantizador no ofrecen garantias; la responsabilidad legal del uso recae en el desplegador.
+- El repositorio tiene 255 descargas y 0 likes, lo que indica una validacion comunitaria practicamente nula; no hay evidencia de que el modelo funcione correctamente en produccion.
+- Las etiquetas "based", "aligned" y "beneficial" son afirmaciones del autor, no propiedades verificadas tecnicamente.
+- El repositorio completo ocupa 189,2 GB; conviene descargar solo el archivo de cuantizacion necesario.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF
-- Modelo base (etemiz): https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated
-- Referencia al modelo base Qwen3.8-27B (especificaciones y hardware): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- Artículo sobre el comportamiento de Qwen3.8-27B (overthinking): https://dev.to/kaixintelligence/qwen-38-27b-why-this-powerful-model-cant-stop-overthinking-and-how-to-fix-it-5dh6
-- Blog de AMD sobre ejecución de Qwen3.8-27B en hardware AMD: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
+- Repositorio GGUF: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF
+- Modelo base: https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF
+- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

@@ -2,85 +2,95 @@
 
 ## Resumen
 
-El modelo **orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8** es una variante de la familia Gemma 4 de Google, concretamente una adaptación del checkpoint `google/gemma-4-26B-A4B-it` (versión instructiva) a la que se ha aplicado un proceso de *abliteration* para eliminar los mecanismos de rechazo de contenido, dando lugar a una versión "uncensored". El modelo está cuantizado en FP8 mediante la librería `compressed-tensors`, lo que reduce el tamaño del repositorio a 27.2 GB y permite una inferencia más eficiente en memoria.
+Gemma-4-26B-A4B-it-Uncensored-FP8 es una variante "abliterated" y sin censura del modelo multimodal Gemma 4 26B A4B IT de Google, publicada por el usuario orcarouter en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) con aproximadamente 25.800 millones de parametros totales y unos 4.000 millones de parametros activos por token, lo que le permite mantener un coste de inferencia propio de un modelo de 4B pese a su capacidad de 26B. El modelo procesa entradas de imagen y texto (pipeline image-text-to-text) y genera texto conversacional, con soporte declarado para function calling y razonamiento.
 
-Se trata de un modelo de arquitectura MoE (Mixture of Experts) con aproximadamente 25.800 millones de parámetros totales y, según la nomenclatura del nombre, 4 mil millones de parámetros activos por token. Está diseñado para tareas de generación de texto, razonamiento, *function calling* y conversación, y soporta los idiomas inglés y chino. La licencia es la oficial de Gemma, lo que implica restricciones de uso para determinadas aplicaciones comerciales.
+La variante "uncensored" o "abliterated" implica que se ha aplicado una tecnica de edicion de pesos (abliteration) para eliminar la direccion de rechazo en el espacio de activaciones, reduciendo los comportamientos de negativa ante peticiones que el modelo base rechazaria. Ademas, los pesos estan cuantizados en FP8 mediante compressed-tensors, lo que reduce el tamano del repositorio a 27,2 GB y facilita el despliegue en vLLM. Es relevante para desarrolladores que necesitan un modelo multimodal MoE con contexto conversacional y sin restricciones de filtrado, aunque con las advertencias legales y eticas que conlleva.
 
-La relevancia de este modelo radica en que ofrece una versión sin filtros de un modelo de última generación de Google, lo que puede interesar a desarrolladores que necesiten explorar comportamientos no restringidos, aunque debe usarse con precaución por su posible generación de contenido inapropiado. Su cuantización FP8 permite su despliegue en GPUs con VRAM media, y es compatible con frameworks como vLLM y TGI.
+El modelo se distribuye bajo licencia Gemma y con acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargarlo. Solo declara soporte para ingles y chino, lo que limita su uso en castellano sin evaluacion adicional. Con 313 descargas y 31 "me gusta" en el momento de la consulta, es una publicacion de nicho pero con traccion inicial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) |
-| Parametros totales | 25.805.936.206 (~25.8B) |
-| Parametros activos | no disponible (el nombre sugiere ~4B, no confirmado) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (compressed-tensors) |
-| Idiomas soportados | en, zh |
-| Licencia | Gemma (licencia de Google) |
-| Formato de pesos | safetensors |
+| Arquitectura | Mezcla de expertos (MoE) basada en transformer, con cuantizacion FP8 (compressed-tensors) |
+| Parametros totales | 25.805.936.206 (aprox. 25,8B) |
+| Parametros activos | Aproximadamente 4B por token (segun el sufijo A4B) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | FP8 (pesos en compressed-tensors); no se documentan otras variantes |
+| Idiomas soportados | Ingles (en) y chino (zh) |
+| Licencia | Gemma (terminos de licencia Gemma de Google) |
+| Formato de pesos | safetensors (FP8, compressed-tensors) |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Tamano del repositorio | 27,2 GB |
+| Modelo base | google/gemma-4-26B-A4B-it |
+| Libreria | transformers |
+| Pipeline | text-generation / image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura MoE de Google Gemma 4 26B A4B, que combina un transformer con capas de mezcla de expertos. En un MoE, cada token se enruta a un subconjunto de los parámetros activos, lo que permite un razonamiento eficiente con un coste computacional menor que un modelo denso del mismo tamaño. La versión original de Google se entrenó con datos multilingües y técnicas de ajuste fino supervisado (SFT) y optimización por preferencias humanas (RLHF/DPO), aunque los detalles concretos del dataset no se han publicado en la información disponible.
+El modelo es una mezcla de expertos (MoE) derivada de Gemma 4 26B A4B IT de Google. La arquitectura MoE permite activar solo una fraccion de los parametros (aproximadamente 4B de los 25,8B totales) por token, lo que reduce el coste computacional de la inferencia frente a un modelo denso del mismo tamano. El modelo base es multimodal (entrada de imagen y texto) e incluye capacidades de razonamiento y function calling segun los tags de la model card.
 
-Esta variante concreta ha sido sometida a un proceso de *abliteration* (técnica que modifica los pesos del modelo para eliminar las capas de rechazo de contenido), lo que da lugar a una versión "uncensored". Posteriormente se ha cuantizado en FP8 usando `compressed-tensors`, manteniendo la calidad general pero reduciendo el tamaño de los pesos. No hay información pública sobre el conjunto de datos de entrenamiento específico de esta adaptación.
+Sobre el entrenamiento original de Gemma 4 no se dispone de detalles en la informacion proporcionada (numero de tokens, composicion del dataset, uso de RLHF/DPO). La variante publicada por orcarouter aplica dos transformaciones: abliteration (edicion de pesos para eliminar la direccion de rechazo) y cuantizacion FP8 mediante compressed-tensors, orientada al despliegue eficiente en vLLM. No se documentan en la informacion disponible los datos ni el procedimiento exacto de la abliteration, ni si hubo entrenamiento adicional tras la edicion.
 
 ## Capacidades
 
-- Generación de texto conversacional y de instrucciones.
-- Razonamiento multi-paso y resolución de problemas.
-- Soporte de *function calling* (llamada a herramientas).
-- Capacidades de razonamiento (reasoning) para tareas complejas.
-- Multilingüe: inglés y chino.
-- Al ser una versión *uncensored*, puede generar contenido que el modelo original rechazaría (contenido sensible, lenguaje explícito, etc.).
-- Compatible con frameworks de inferencia como `vLLM` y `TGI` (según tags).
+- Generacion de texto conversacional multi-turno.
+- Entrada multimodal de imagen y texto (image-text-to-text).
+- Razonamiento (tag "reasoning" en la model card).
+- Function calling / tool calling.
+- Generacion de codigo y matematicas (capacidad esperada del modelo base, no verificada en la informacion disponible).
+- Capacidades multilingues limitadas a ingles y chino segun los tags declarados.
+- Comportamiento "uncensored": reduccion de rechazos ante peticiones que el modelo base denegaria, mediante abliteration.
+- Compatible con endpoints (tag "endpoints_compatible") y despliegue en vLLM.
 
 ## Casos de uso
 
-- **Investigación en seguridad y alineación**: permite estudiar el comportamiento de un modelo sin filtros de seguridad, útil para evaluar riesgos y desarrollar técnicas de mitigación.
-- **Generación de código en entornos de desarrollo**: gracias a su capacidad de *function calling*, puede integrarse en asistentes de programación que necesiten invocar APIs o ejecutar acciones.
-- **Chatbots y asistentes conversacionales**: su capacidad de razonamiento y su tamaño permiten mantener diálogos coherentes y contextualizados en inglés y chino.
-- **Procesamiento de documentos técnicos**: puede resumir, traducir o extraer información de textos largos (aunque el contexto no está especificado).
-- **Prototipado de agentes autónomos**: con soporte de *function calling*, es adecuado para construir agentes que interactúen con APIs y ejecuten tareas multi-paso.
-- **Análisis de contenido multilingüe**: su soporte de inglés y chino lo hace útil para tareas de clasificación o generación en esos idiomas.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como la abliteration afecta a la distribucion de respuestas y a la tasa de rechazo, comparandolo con el modelo base Gemma 4 26B A4B IT en experimentos controlados.
+- Despliegue de bajo coste en produccion: gracias a sus ~4B parametros activos y cuantizacion FP8, puede servirse con vLLM en una GPU de 24-48 GB, ofreciendo latencia de un modelo pequeño con capacidad de uno grande.
+- Asistentes conversacionales sin filtrado para dominios creativos: escritura de ficcion, guiones o narrativa con tematicas sensibles donde los filtros del modelo base resultan limitantes, siempre con revision humana.
+- Procesamiento de documentos con imagenes: al aceptar entrada image-text-to-text, puede extraer y resumir informacion de capturas, diagramas o formularios en ingles y chino.
+- Integracion en pipelines con function calling: el soporte de tool calling permite conectarlo a APIs y bases de datos en flujos de automatizacion, con la ventaja del coste reducido del MoE.
+- Evaluacion comparativa de cuantizacion FP8: sirve como referencia para medir la perdida de calidad de FP8 frente a BF16 en un MoE multimodal de 26B, usando compressed-tensors y vLLM.
+- Prototipado rapido de agentes multi-paso: el razonamiento y el tool calling permiten construir agentes que planifican y ejecutan acciones, con la advertencia de validar el comportamiento sin censura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se puede comparar cuantitativamente con otros modelos sin datos reales.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: al estar cuantizado en FP8, los pesos ocupan aproximadamente 25.8 GB (25.8B × 1 byte). Con overhead de activaciones y KV cache, se recomiendan al menos 32 GB de VRAM para inferencia completa.
-- **GPUs recomendadas**: una NVIDIA A100 (40 GB), H100 (80 GB) o RTX A6000 (48 GB) son adecuadas. En GPUs de consumo como la RTX 4090 (24 GB) no caben los pesos completos; se necesitaría cuantización adicional (por ejemplo, 4-bit) para reducir la memoria.
-- **Opciones de despliegue**: `vLLM`, `TGI`, `llama.cpp` (si se convierte a GGUF) o `Ollama` (con conversión previa). La librería `transformers` también es compatible.
-- **Latencia y throughput**: no disponibles, pero al ser MoE con solo 4B activos, la velocidad de inferencia será significativamente mayor que un modelo denso de 26B.
+- VRAM estimada para inferencia: los pesos FP8 ocupan aproximadamente 27,2 GB, por lo que se necesitan al menos 32 GB de VRAM para cargar el modelo completo sin offloading; con overhead de KV cache y activaciones, se recomienda 40-48 GB.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB, RTX A6000 48 GB.
+- GPU de consumo: cabe en RTX 4090 24 GB solo con offloading parcial a CPU o con cuantizaciones adicionales no documentadas; no es viable en GPUs de 16 GB o menos sin tecnicas agresivas.
+- Opciones de despliegue: vLLM (soporte explicito via compressed-tensors), transformers; llama.cpp/Ollama no estan documentados para este formato FP8.
+- Latencia y throughput: no disponibles en la informacion proporcionada; se espera un throughput superior al de un denso de 26B gracias a los ~4B parametros activos, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información de benchmarks para comparar directamente. Sin embargo, se puede contextualizar con el modelo base `google/gemma-4-26B-A4B-it` (no cuantizado, sin abliteration) y con otros modelos MoE como `Qwen2.5-MoE-14B-A3B` o `DeepSeek-V3` (671B total, 37B activos). Las diferencias principales son:
+| Modelo | Parametros | Activos | Contexto | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|---|
+| orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8 | 25,8B | ~4B | No disponible | Gemma | Gated | Abliterated, FP8, multimodal |
+| google/gemma-4-26B-A4B-it | 25,8B | ~4B | No disponible | Gemma | Gated | Modelo base con alineacion estandar |
+| Alternativas MoE de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-| Modelo | Parámetros totales | Activos | Cuantización | Licencia |
-|---|---|---|---|---|
-| Gemma-4-26B-A4B-it (base) | 26B | ~4B | FP8 (esta variante) | Gemma |
-| Qwen2.5-MoE-14B-A3B | 14B | 3B | BF16 | Apache 2.0 |
-| DeepSeek-V3 | 671B | 37B | BF16 | MIT |
-
-Esta variante FP8 es más ligera en memoria que el modelo base en BF16, pero mantiene la misma arquitectura. No hay datos de rendimiento comparativo publicados.
+La comparacion directa con otras alternativas no puede completarse con rigor porque la informacion proporcionada no incluye especificaciones de modelos competidores contemporaneos. La diferencia principal frente al modelo base es la eliminacion de la censura mediante abliteration y la cuantizacion FP8, que reduce el tamano de 27,2 GB y facilita el despliegue en vLLM.
 
 ## Limitaciones y advertencias
 
-- **Contenido sin filtros**: al ser "uncensored", el modelo puede generar contenido ofensivo, peligroso o ilegal sin restricciones. No es apto para uso en producción sin medidas de moderación adicionales.
-- **Licencia restrictiva**: la licencia Gemma de Google tiene términos de uso que limitan aplicaciones comerciales, especialmente en sectores regulados (salud, finanzas, etc.). Debe revisarse la política de uso.
-- **Idiomas limitados**: solo inglés y chino; no hay soporte multilingüe amplio.
-- **Contexto desconocido**: la longitud de contexto no se ha especificado, lo que puede afectar tareas que requieran documentos largos.
-- **Riesgo de alucinaciones**: como todos los modelos generativos, puede producir información falsa o inventada, especialmente en temas de actualidad.
-- **Sesgos potenciales**: al ser una variante sin ajuste de seguridad, es probable que reproduzca sesgos presentes en los datos de entrenamiento originales.
-- **Acceso restringido**: el modelo está en Hugging Face con acceso *gated*, lo que requiere aceptar condiciones antes de descargarlo.
+- La abliteration elimina los mecanismos de rechazo, lo que puede producir contenido ofensivo, ilegal o peligroso; no es adecuado para aplicaciones orientadas al publico sin moderacion externa.
+- Riesgo elevado de alucinacion, agravado por la cuantizacion FP8 y por la edicion de pesos, que puede degradar la coherencia en tareas de razonamiento largo.
+- Solo declara soporte de ingles y chino; el rendimiento en castellano no esta evaluado y probablemente sea inferior.
+- La licencia Gemma impone restricciones de uso comercial y obligaciones de atribucion; debe revisarse antes de cualquier despliegue en produccion. El acceso es gated y requiere aceptar los terminos.
+- La cuantizacion FP8 puede introducir perdida de calidad frente a BF16, especialmente en tareas de matematicas y codigo; no se han publicado evaluaciones comparativas.
+- No se documentan la longitud de contexto ni el procedimiento exacto de abliteration, lo que dificulta la reproducibilidad.
+- El modelo base es de Google; el publicador de esta variante es un tercero (orcarouter) sin afiliacion declarada, por lo que no hay garantias de soporte ni mantenimiento.
+- Uso responsable: cualquier despliegue debe incorporar filtros propios, registro de auditoria y revision humana.
 
 ## Enlaces
 
-- [Página del modelo en Hugging Face](https://huggingface.co/orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8)
-- [Modelo base: google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
-- [Documentación de Gemma en Google](https://ai.google.dev/gemma) (para la licencia y detalles del modelo base)
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8
+- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Licencia Gemma: https://ai.google.dev/gemma/terms
+- Documentacion de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
+- vLLM: https://github.com/vllm-project/vllm
+- No se han encontrado en la informacion proporcionada papers, blogs o demos adicionales especificos de esta variante.

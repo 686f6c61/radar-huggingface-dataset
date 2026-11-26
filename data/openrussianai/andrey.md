@@ -2,103 +2,99 @@
 
 ## Resumen
 
-Andrey es un modelo de generacion de texto en ruso desarrollado por OpenRussianAI, publicado en Hugging Face con licencia MIT. Se presenta como un chatbot ligero construido sobre una arquitectura propia denominada EasyFormer, que por fuera es un transformer decoder-only clasico pero con simplificaciones orientadas a velocidad: atencion de una sola cabeza, RMSNorm, FFN de expansion x2 con ReLU y weight tying entre la cabeza de salida y el embedding de tokens. El modelo tiene aproximadamente 1,5 millones de parametros, 5 capas y una dimension de modelo de 192, con un tokenizador a nivel de caracter de 64 simbolos.
+Andrey es un modelo de lenguaje conversacional en ruso desarrollado por OpenRussianAI sobre una arquitectura propia denominada EasyFormer. Se trata de un transformer decoder-only simplificado de aproximadamente 5,58 millones de parámetros totales según los pesos en safetensors (la model card declara ~3,65 millones, discrepancia que conviene tener en cuenta). Su diseño prioriza la velocidad y el bajo coste computacional: emplea RMSNorm, una FFN con factor de expansión ×2 y weight tying entre la matriz de embeddings y la cabeza de salida.
 
-Su relevancia no proviene de capacidades de razonamiento ni de competicion con modelos frontier, sino de su caracter didactico y de su huella minima: ocupa unos 6 MB, se entrena en minutos sobre una sola Tesla T4 (en concreto, 8,5 minutos) y puede ejecutarse en CPU sobre practicamente cualquier dispositivo. Esto lo convierte en un banco de pruebas util para validar pipelines de transformers con codigo personalizado (requiere trust_remote_code=True), probar despliegues en entornos embebidos o ilustrar conceptos de tokenizacion char-level y memorizacion en datasets diminutos.
+El modelo está entrenado exclusivamente para mantener conversaciones breves en ruso y, de forma deliberada, para admitir desconocimiento cuando la pregunta queda fuera de su dominio. No es un modelo de propósito general: su vocabulario BPE de solo 1412 tokens y su contexto de 512 tokens lo sitúan en la categoría de chatbots experimentales de juguete, no en la de asistentes de producción.
 
-El contexto de la model card deja claro que se trata de un artefacto experimental y no de un asistente de produccion: se entreno sobre 162 dialogos (unos 7.000 tokens) durante 100 epocas, alcanzando un loss final de 0,056. El propio autor advierte que la ventana de contexto es de 128 tokens, que no mantiene historial entre peticiones y que el modelo basicamente reproduce plantillas aprendidas, sin capacidad de calcular, traducir, programar o razonar.
+Su relevancia actual es principalmente didáctica y de investigación: sirve como referencia mínima para estudiar el pipeline completo de un chatbot (tokenizador propio, arquitectura custom con `trust_remote_code`, dataset conversacional y evaluación de pérdida y perplejidad) con un coste de entrenamiento e inferencia trivial. La licencia MIT facilita su reutilización y modificación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (EasyFormer): single-head attention, RMSNorm, FFN x2 con ReLU, weight tying |
-| Parametros totales | ~1,5 millones |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 128 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Ruso (ru) |
+| Arquitectura | Transformer decoder-only (EasyFormer), 6 capas, d_model 256, 4 cabezas, FFN ×2 con ReLU, RMSNorm, weight tying lm_head ↔ tok_emb |
+| Parametros totales | 5.580.544 (safetensors); la model card declara ~3,65M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 512 tokens |
+| Tipos de cuantizacion | no disponible (repo con safetensors; no se documentan GGUF ni otras variantes) |
+| Idiomas soportados | ruso (ru) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch bin (pytorch_model.bin) |
-
-Otros datos tecnicos relevantes:
-
-| Parametro | Valor |
-|---|---|
-| Capas | 5 |
-| d_model | 192 |
-| Cabezas de atencion | 1 (single-head) |
-| Normalizacion | RMSNorm |
-| Tokenizador | Char-level, vocabulario de 64 simbolos |
-| Tamano en disco | ~6 MB |
-| Libreria | transformers (custom_code) |
+| Formato de pesos | safetensors, ademas de ONNX segun los tags; tokenizer.json (BPE propio) |
 
 ## Arquitectura y entrenamiento
 
-EasyFormer es un transformer decoder-only simplificado. Las decisiones de diseno documentadas son: atencion de una sola cabeza (en lugar de multi-head), normalizacion RMSNorm, red feed-forward con factor de expansion x2 y activacion ReLU, y weight tying entre la cabeza de lenguaje (lm_head) y el embedding de tokens (tok_emb). La combinacion reduce el numero de parametros y hace viable tanto el entrenamiento como la inferencia en CPU. El tokenizador es a nivel de caracter sobre un vocabulario de 64 simbolos, lo que evita dependencias de tokenizadores externos tipo BPE o SentencePiece, pero limita la calidad en palabras fuera de vocabulario (aparecen erratas con facilidad).
+EasyFormer es un transformer decoder-only simplificado de 6 capas con dimensión de modelo 256, 4 cabezas de atención, feed-forward de expansión ×2 con activación ReLU y normalización RMSNorm. Usa weight tying entre la matriz de embeddings de tokens y la cabeza de lenguaje, lo que reduce el número de parámetros. El tokenizador es un BPE propio con vocabulario de 1412 tokens y tokens especiales de control de turno (`[USER]`, `[BOT]`, `[EOS]`). La implementación requiere `trust_remote_code`, ya que la configuración y el modelo se cargan desde `configuration_easyformer.py` y `modeling_easyformer.py` alojados en el repositorio.
 
-El entrenamiento es extremadamente reducido: 162 dialogos, aproximadamente 7.000 tokens, 100 epocas, batch de 32, optimizador AdamW con learning rate 3e-3, sobre una Tesla T4 (CUDA), con un tiempo total de unos 8,5 minutos y un loss final de 0,056. No se menciona en la informacion disponible ninguna fase de RLHF, DPO, SFT posterior ni decodificacion especulativa. Tampoco se detalla la composicion del dataset mas alla de la etiqueta "custom" y del numero de dialogos.
+El entrenamiento se realizó sobre un dataset conversacional propio (Andrey-Dataset-v2) de 3895 diálogos, de los cuales aproximadamente 600 son ejemplos de rechazo o admisión de desconocimiento. Se ejecutaron 8000 pasos con batch de 16 y acumulación de gradiente de 2, optimizador AdamW con learning rate 3e-4, scheduler coseno con 300 pasos de warmup, en una única GPU CUDA. Los ejemplos de rechazo ponderan ×2 en la función de pérdida, una técnica de ajuste fino supervisado (no se reporta RLHF ni DPO) orientada a mitigar respuestas inventadas en preguntas fuera de dominio.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ruso sobre un dominio muy acotado: saludos, respuestas cortas de cortesia y algunas preguntas sobre el propio modelo.
-- Respuestas plantilla: la model card muestra ejemplos como "привет" respondido con "привет, рад тебя видеть" o "как дела" con "хорошо, готов помочь".
-- Generacion con muestreo configurable: la API de ejemplo admite temperature, top_k y max_new_tokens.
-- Soporte de tool calling / function calling: no disponible (no documentado, y fuera del alcance del modelo).
-- Soporte de agentes o razonamiento multi-paso: no disponible; el autor indica explicitamente que el modelo no razona.
-- Capacidades multilingues: solo ruso (etiqueta de idioma "ru").
-- Capacidad especial de thinking mode, vision o audio: no disponible.
-- Ejecucion en CPU: confirmada en los ejemplos de la model card.
-- Integracion con transformers mediante codigo personalizado (trust_remote_code=True).
+- Generación de texto conversacional breve en ruso, con formato de turnos `[USER]` / `[BOT]`.
+- Diálogos de cortesía y small talk (saludos, despedidas, preguntas sobre su identidad).
+- Admisión explícita de desconocimiento ante preguntas fuera de su dataset (contraseñas, recuerdos personales, hora actual).
+- Generación con muestreo configurable (temperatura, top-k) mediante `model.generate` de Transformers.
+- No soporta tool calling ni function calling.
+- No soporta razonamiento multi-paso ni comportamiento agente.
+- No dispone de memoria de conversación: cada petición es independiente.
+- Capacidad matemática muy limitada según la propia model card.
+- Sin capacidades de visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Banco de pruebas de codigo personalizado en transformers: sirve para validar flujos de carga con trust_remote_code=True y ficheros modeling_easyformer.py / configuration_easyformer.py antes de aplicarlos a modelos mayores.
-- Docencia de arquitecturas transformer: con 5 capas, d_model 192 y single-head, es un ejemplo manejable para explicar en aula como funciona un decoder-only sin la complejidad de un modelo grande.
-- Pruebas de tokenizacion char-level: permite experimentar con vocabularios minimos de 64 simbolos y observar sus limitaciones en generacion (erratas, palabras fuera de vocabulario).
-- Validacion de pipelines de despliegue en edge: con 6 MB, se puede empaquetar en contenedores minimos, Raspberry Pi o entornos con restricciones severas de memoria para comprobar el ciclo completo de carga e inferencia.
-- Benchmarks de latencia en CPU: util como carga de trabajo trivial para comparar frameworks de inferencia o medir overhead de arranque en distintos entornos, aunque no se publican cifras de throughput.
-- Fine-tuning de juguete en nuevos idiomas o dominios: su tamano permite reentrenarlo en minutos y usarlo como ejercicio para reproducir el pipeline completo (dataset, entrenamiento, evaluacion cualitativa).
-- Demo offline de chatbot en ruso: para prototipos donde solo se necesitan respuestas de cortesia predecibles sin coste de infraestructura.
-- Estudio de memorizacion frente a generalizacion: con 162 dialogos y 100 epocas, es un caso claro para analizar como un modelo pequeno memoriza el dataset en lugar de generalizar.
+- Docencia y aprendizaje de pipelines de NLP: el repositorio incluye configuración y modelado custom, tokenizador BPE y script de inferencia, lo que permite estudiar de principio a fin cómo se construye y sirve un chatbot mínimo con Transformers.
+- Prototipado de interfaces conversacionales en ruso: útil para validar la integración de un backend de chat (formato de turnos, streaming, UI) antes de invertir en un modelo mayor.
+- Pruebas de sistemas de moderación y enrutado: su comportamiento de rechazo ante preguntas sensibles permite generar ejemplos sintéticos de respuestas de "no lo sé" para entrenar clasificadores de abstención.
+- Experimentos de destilación y arquitecturas eficientes: con 5,58M de parámetros y contexto de 512, es un banco de pruebas barato para comparar RMSNorm, weight tying o variantes de FFN.
+- Evaluación de robustez ante alucinación: la métrica "IDK Accuracy" del autor (95,6%) y los ejemplos de rechazo sirven como caso de estudio de hasta qué punto el ajuste con pérdida ponderada generaliza a preguntas no vistas.
+- Despliegue en entornos con recursos mínimos: su tamaño (repo de 0,1 GB) permite ejecutarlo en CPU en cualquier portátil o en contenedores pequeños para demos offline.
+- Generación de datos sintéticos de diálogo corto en ruso para aumentar datasets de entrenamiento de modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta el loss final de entrenamiento (0,056), que no es comparable con metricas estandar como MMLU, HumanEval o GSM8K.
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
+
+| Metrica | Dataset | Valor | Verificado |
+|---|---|---|---|
+| Train Loss | Andrey-Dataset-v2 | 0,60 | No |
+| Val Loss | Andrey-Dataset-v2 | 0,98 | No |
+| Perplexity | Andrey-Dataset-v2 | 2,66 | No |
+| IDK Accuracy | Andrey-Dataset-v2 | 95,6 | No |
+
+No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La brecha entre train loss (0,60) y val loss (0,98) sugiere cierto sobreajuste al dataset conversacional.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 100 MB en fp32; el modelo ocupa aproximadamente 6 MB en disco.
-- GPU recomendadas: cualquiera; el autor entreno con una Tesla T4. No se requieren GPU de gama alta (A100, H100) ni justifican su uso.
-- Compatibilidad con GPU de consumo: si, cabe en cualquier GPU consumer, incluidas las mas modestas, y tambien en CPU.
-- Despliegue: carga directa mediante transformers con AutoModelForCausalLM y trust_remote_code=True. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y no hay pesos en formato GGUF.
-- Latencia y throughput: no disponibles. El unico dato temporal publicado es el entrenamiento (~8,5 minutos en Tesla T4) y el uso de generacion con max_new_tokens=40, temperature=0,6 y top_k=20 en los ejemplos.
-- Formatos de pesos: pytorch_model.bin (PyTorch); no hay safetensors ni GGUF en la informacion disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (5,58M de parámetros ≈ 22 MB en fp32, ≈ 11 MB en fp16); el cuello de botella real es el runtime de PyTorch, no el modelo.
+- GPU recomendadas: cualquiera con CUDA, incluidas GTX 1050 o superiores; el modelo no requiere GPU para funcionar.
+- Cabe en cualquier GPU de consumo e incluso en CPU; la inferencia en CPU es viable con latencias de milisegundos por token.
+- Opciones de despliegue: Transformers con `trust_remote_code` (método documentado); existe variante ONNX según los tags del repositorio, lo que permite servir con ONNX Runtime. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, ya que no se publican pesos en GGUF y la arquitectura es custom.
+- Latencia y throughput: no disponibles de forma oficial; por el tamaño del modelo se espera un throughput muy alto y latencia de un dígito de milisegundos por token en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de modelos comparables en la informacion proporcionada. La busqueda web realizada no devolvio resultados relacionados con el modelo ni con alternativas de su categoria (los resultados obtenidos correspondian a contenidos no relacionados, lecciones de historia en polaco). Por tanto, la comparativa con alternativas de parametros similares, mismo idioma o misma tarea se marca como no disponible.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| OpenRussianAI/andrey | ~1,5 M | 128 tokens | No disponible (solo loss de entrenamiento) | MIT | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| OpenRussianAI/andrey | 5,58M | 512 | ru | MIT | Chatbot ruso experimental, arquitectura custom, requiere `trust_remote_code` |
+| TinyLlama-1.1B | 1,1B | 2048 | en (multilingue limitado) | Apache 2.0 | Modelo de propósito general, ~200× más parámetros, no especializado en ruso conversacional |
+| ruGPT-3 Small | 125M | 2048 | ru | MIT (segun variante) | Modelo ruso de SberDevices, mucho mayor y con capacidades generales más amplias |
+| DialoGPT-small | 117M | 1024 | en | MIT | Referencia clásica de chatbot conversacional; en inglés y sin soporte nativo de ruso |
+
+No se dispone de comparativas publicadas frente a modelos rusos de tamaño similar, dado que el ecosistema de modelos de ~5M de parámetros es prácticamente inexistente fuera de experimentos académicos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No se documenta ningun analisis de sesgo.
-- Riesgo de alucinacion: alto en apariencia de fluidez, pero en la practica el modelo solo reproduce plantillas de las 162 frases del dataset; el autor lo reconoce explicitamente.
-- Contexto muy limitado: 128 tokens, suficiente para una unica replica; no conserva historial entre peticiones.
-- Cobertura idiomatica: solo ruso; no soporta castellano ni otros idiomas.
-- Tokenizacion char-level: produce erratas en palabras no vistas durante el entrenamiento.
-- Capacidades ausentes: el autor indica que no sabe calcular, traducir, escribir codigo ni razonar.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion; no obstante, la utilidad practica en produccion es muy limitada.
-- Caveat de produccion: requiere trust_remote_code=True, lo que implica ejecutar codigo Python del repositorio (modeling_easyformer.py, configuration_easyformer.py); conviene auditar dicho codigo antes de desplegarlo en entornos controlados.
-- Estado del repositorio: 0 descargas y 0 "likes" en el momento de la consulta, y tamano de repo de 0,0 GB segun los metadatos (el modelo en si ocupa ~6 MB), lo que apunta a un artefacto experimental sin validacion por parte de la comunidad.
-- Fechas de publicacion: los metadatos indican creacion el 2026-09-20 y actualizacion el 2026-09-20; no se dispone de mas contexto sobre esa cronologia.
+- Conocimiento circunscrito al dataset: la model card advierte que cualquier tema fuera de los 3895 diálogos de entrenamiento produce respuestas sin sentido.
+- Sin memoria conversacional: cada consulta se procesa de forma aislada; no hay gestión de historial más allá de lo que el usuario incluya manualmente en el prompt.
+- Contexto de 512 tokens: los prompts largos se truncan, lo que limita conversaciones de más de unos pocos turnos.
+- Vocabulario de 1412 tokens: cobertura léxica muy reducida, con riesgo de tokenización deficiente en palabras poco frecuentes o préstamos.
+- Razonamiento matemático débil y propensión a responder con confianza en preguntas no vistas pese al entrenamiento de rechazo.
+- Posible sobreajuste: la diferencia entre train loss (0,60) y val loss (0,98) indica que las métricas declaradas no reflejan necesariamente el comportamiento en producción.
+- Discrepancia en el recuento de parámetros: la model card indica ~3,65M mientras que los pesos en safetensors suman 5.580.544; conviene verificar antes de dimensionar recursos.
+- Licencia MIT: permite uso comercial y modificación, pero el modelo no está diseñado para aplicaciones de producción con requisitos de fiabilidad.
+- Idiomas: solo ruso; no se ha evaluado su comportamiento en castellano ni en otras lenguas.
+- Riesgo de alucinación en preguntas que imiten el formato de las de su dataset sin ser idénticas, ya que el rechazo se aprendió sobre "trampas típicas".
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OpenRussianAI/andrey
-- Repositorio base referenciado en los metadatos: https://huggingface.co/OpenRussianAI/andrey
-- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.
+- Sitio oficial de EasyFormer: https://sites.google.com/view/easyformer/home

@@ -2,95 +2,113 @@
 
 ## Resumen
 
-SmolLM3-3B-LGPD-ONNX-genai-int4-S1S2 es una compilación cuantizada a int4 del modelo SmolLM3-3B de Hugging Face, adaptada mediante LoRA y una cabeza de clasificación ("pointer head") para responder preguntas de tipo Sí/No sobre el cumplimiento de la LGPD (Lei Geral de Proteção de Dados, la ley brasileña de protección de datos) en pasajes de políticas de privacidad en portugués. El autor, eduardoworrel, la publica como un artefacto ONNX listo para ejecutarse en el navegador mediante la librería s1s2 y el runtime onnxruntime-genai con backend WebGPU.
+SmolLM3-3B-LGPD-ONNX-genai-int4-S1S2 es una especializacion del modelo base SmolLM3-3B de Hugging Face, publicada por el usuario eduardoworrel, orientada a la clasificacion de politicas de privacidad conforme a la LGPD (Lei Geral de Protecao de Dados, la ley brasilena de proteccion de datos). El modelo no genera texto libre por defecto: incorpora una "cabeza de decision" (decision head) que, dado un fragmento en portugues y un requisito de transparencia, responde Si/No en un unico forward pass, acompanado de una probabilidad y un margen de confianza.
 
-El modelo resuelve un problema muy concreto: dada una cláusula de política de privacidad y un requisito de transparencia, devuelve una decisión tipada (Sim/Não) con probabilidad y margen en un único forward pass (lo que el autor denomina "System 1"). Solo cuando el margen es bajo se escala a generación de texto ("System 2") para justificar la respuesta, reutilizando el mismo prefill. Es relevante porque demuestra un patrón de despliegue de clasificación legal en el cliente, sin servidor, con el modelo base de 3B parámetros cuantizado a int4 y un peso de descarga de 1,75 GB.
+La propuesta tecnica se apoya en el paradigma de doble sistema (System 1 / System 2): la respuesta tipada y rapida se obtiene con una sola pasada (System 1) y, solo cuando el margen es bajo, se escala a generacion autoregresiva (System 2) reutilizando el mismo prefill. El modelo se distribuye en formato ONNX int4 para onnxruntime-genai 0.19, con soporte de WebGPU, lo que permite ejecutarlo integramente en el navegador mediante la libreria s1s2.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face; no se dispone de información adicional sobre el proceso de entrenamiento más allá de lo que el autor declara.
+Su relevancia actual radica en dos factores: por un lado, demuestra un patron de despliegue de modelos pequenos (3B) cuantizados a int4 para tareas de clasificacion juridica con latencia baja y ejecucion local; por otro, valida la transferencia zero-shot desde LGPD hacia GDPR y CCPA, lo que sugiere cierta generalizacion entre marcos regulatorios de privacidad, aunque con limites claros que el propio autor documenta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (SmolLM3-3B) con cabeza de clasificación tipo pointer sobre logits de opciones; grafo ONNX para onnxruntime-genai 0.19 |
-| Parametros totales | 3B (modelo base SmolLM3-3B); parámetros de la cabeza no disponibles |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | int4 (build publicado); el adaptador LoRA de referencia existe en bf16/fp32 |
-| Idiomas soportados | Portugués (pt) y inglés (en) |
+| Arquitectura | Transformer decoder-only (SmolLM3-3B) con cabeza de decision tipo pointer head y particion System 1 / System 2 |
+| Parametros totales | 3B (modelo base SmolLM3-3B); parametros de la cabeza de decision: no disponible |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | int4 (grafo ONNX para onnxruntime-genai 0.19); el adaptador y las cabezas en PyTorch estan en bf16 y fp32 |
+| Idiomas soportados | pt (portugues), en (ingles, solo transferencia zero-shot) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | ONNX (onnxruntime-genai); repo de 1,8 GB, descarga declarada de 1,75 GB |
+| Formato de pesos | ONNX (onnxruntime-genai); existe variante en layout Transformers.js y adaptador LoRA en PyTorch |
+| Tamano del repositorio | 1.8 GB (descarga del grafo int4: 1.75 GB) |
+| Pipeline declarado | text-generation |
+| Libreria | s1s2 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de SmolLM3-3B, un transformer decoder-only de 3.000 millones de parámetros de Hugging Face, y le añade una cabeza de clasificación entrenada sobre los logits de dos palabras opción concretas: " Sim" y " Não" (con espacio inicial). La decisión se toma en un solo forward pass comparando la probabilidad asignada a cada opción y calculando un margen; el autor denomina a este modo "System 1". Cuando el margen cae por debajo de un umbral calibrado sobre datos etiquetados propios, se activa un segundo modo ("System 2") que reutiliza el mismo prefill para generar una justificación en texto.
+El modelo parte de SmolLM3-3B, un transformer decoder-only de 3.000 millones de parametros desarrollado por Hugging Face bajo licencia Apache-2.0. Sobre esa base se anade una cabeza de decision (pointer head) entrenada para leer directamente los logits de dos tokens concretos, " Sim" y " Nao" (con espacio inicial), y producir una respuesta tipada con probabilidad y margen. El entrenamiento se realizo con datos de politicas brasilenas: el corpus Claudinha (Tocchini et al., Zenodo 13371639, CC BY 4.0) y datos sinteticos Kev (legacy_policy y composicionales) generados con codigo Kev (Apache-2.0). La receta de entrenamiento de la cabeza y del adaptador sigue tambien el proyecto Kev.
 
-El entrenamiento se realizó con datos de políticas brasileñas (corpus Claudinha, CC BY 4.0) más datos sintéticos "Kev" (legacy_policy, compositional) generados por código Apache-2.0. La receta de la cabeza y del entrenamiento proviene del proyecto Kev (jaredpalmer/kev). El adaptador LoRA y las cabezas en PyTorch se publican por separado en eduardoworrel/SmolLM3-3B-LGPD-LoRA. La variante evaluada en la model card es `lgpd_only`; existe una variante `lgpd_only_k` (2 épocas, merge en fp32) que no fue evaluada en el conjunto de test reservado. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO.
+La innovacion principal es la separacion System 1 / System 2 heredada de la idea de CT0 de Alias Robotics: la decision tipada se resuelve en una sola pasada (System 1) y, cuando el margen cae por debajo de un umbral calibrado sobre datos etiquetados propios, se escala a generacion (System 2) reutilizando el mismo prefill, de modo que la respuesta tipada se conserva y se anade una justificacion textual. La variante evaluada en la model card es `lgpd_only` (bf16); existe otra variante `lgpd_only_k` (2 epocas, merge en fp32) que no fue evaluada sobre el conjunto de test retenido. El build int4 no dispone todavia de mediciones en navegador.
 
 ## Capacidades
 
-- Clasificación binaria Sí/No sobre pasajes de políticas de privacidad en portugués, con probabilidad y margen por respuesta.
-- Respuesta tipada con la palabra opción exacta con la que se entrenó la cabeza (" Sim" / " Não"); otras palabras o traducciones alteran el prompt y no funcionan.
-- Decisión en un único forward pass (System 1) con escalado opcional a generación de texto (System 2) cuando el margen es bajo.
-- Generación de texto de justificación a partir del mismo prefill, con límite de tokens nuevos configurable (por ejemplo, 64).
-- Clasificación de requisitos de transparencia definidos por el usuario mediante preguntas estructuradas (nombre, tipo "choice", opciones e instrucciones).
-- Transferencia zero-shot a GDPR (inglés) y CCPA (inglés), según los resultados declarados por el autor.
-- Ejecución en navegador con WebGPU a través de s1s2 y onnxruntime-genai; no requiere servidor.
-- Soporte de política de escalado por margen calibrada sobre datos propios (thresholdFromQuantile).
+- Clasificacion binaria tipada (Si/No) de fragmentos de politica de privacidad frente a un requisito de transparencia, con probabilidad y margen en una sola pasada.
+- Generacion de texto autoregresiva (System 2) para justificar o citar la evidencia cuando el margen es bajo.
+- Escalado condicional mediante puerta de margen calibrable sobre datos propios (`thresholdFromQuantile`).
+- Ejecucion en navegador con WebGPU mediante s1s2 y onnxruntime-genai; fallback a CPU via onnxruntime-web WASM.
+- Transferencia zero-shot a GDPR (ingles) y CCPA (ingles) sin entrenamiento especifico en esos marcos.
+- Soporte de multiples preguntas por pasada (`questions: [...]`) con respuestas tipadas independientes.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision ni audio.
 
 ## Casos de uso
 
-- Auditoría de políticas de privacidad en el navegador: el modelo clasifica cláusulas de políticas brasileñas frente a requisitos de transparencia sin enviar el texto a un servidor, lo que encaja con flujos de revisión donde el documento no debe salir del cliente.
-- Revisión de cumplimiento LGPD en bufetes y departamentos legales: dada una cláusula y una pregunta concreta (por ejemplo, si se comparten datos con terceros), devuelve Sim/Não con probabilidad y margen para priorizar la revisión humana.
-- Triaje previo a revisión legal: las respuestas con margen bajo se escalan automáticamente a generación de justificación, de modo que el revisor recibe solo los casos dudosos con texto de apoyo.
-- Formación y concienciación: la demo en navegador permite mostrar a equipos no técnicos cómo se evalúa una cláusula frente a un requisito, con la justificación generada por el propio modelo.
-- Investigación en clasificación legal de bajo coste: el artefacto int4 y el adaptador LoRA permiten reproducir y comparar el patrón System 1 / System 2 en entornos sin GPU dedicada.
-- Transferencia a otros marcos regulatorios: el autor reporta resultados zero-shot en GDPR y CCPA, lo que permite prototipar clasificadores para esos marcos sin reentrenamiento, con la cautela de que el modelo nunca fue entrenado con ellos.
-- Integración en pipelines de revisión documental: el manifiesto JSON y la API de s1s2 permiten encadenar varias preguntas sobre el mismo pasaje y agregar las decisiones tipadas en un informe estructurado.
+- Auditoria automatizada de politicas de privacidad: dado un documento en portugues y una bateria de requisitos LGPD (comparticion con terceros, base legal, retencion, derechos del titular), el modelo devuelve respuestas tipadas con margen, lo que permite priorizar revision humana sobre los casos de baja confianza.
+- Triaje en bufetes y departamentos de compliance: clasificacion rapida de clausulas para detectar ausencias o ambiguedades antes de la revision legal, con la generacion System 2 aportando la frase concreta que sustenta la decision.
+- Ejecucion local en el navegador para datos sensibles: al correr sobre WebGPU con un grafo int4 de 1,75 GB, el texto de la politica no abandona el dispositivo del usuario, lo que encaja con requisitos de minimizacion de datos.
+- Deteccion de brechas de transparencia en portales web: integracion en un pipeline que descarga politicas de privacidad, segmenta por requisitos y marca incumplimientos potenciales para revision.
+- Investigacion comparada de marcos regulatorios: uso del modelo como sonda zero-shot sobre textos GDPR y CCPA para estudiar transferencia entre jurisdicciones, con las precisiones documentadas (75,3 % y 74,5 % de balanced accuracy respectivamente).
+- Filtrado previo en sistemas de respuesta a preguntas legales: la salida tipada con margen puede actuar como gate que decide si se invoca un modelo mayor o se responde con la evidencia extraida localmente.
+- Calibracion de umbrales en produccion: la API de escalado permite ajustar la puerta de margen sobre datos etiquetados propios, lo que facilita adaptar el punto de operacion a la tolerancia de error del cliente.
 
 ## Benchmarks y rendimiento
 
-Precisión balanceada de la cabeza pointer sobre conjunto de test reservado, con pesos bf16 de la variante `lgpd_only`, según la model card:
+Resultados publicados en la model card sobre conjunto de test retenido, balanced accuracy de la cabeza pointer, pesos bf16 de la variante `lgpd_only`:
 
-| Conjunto de test | Precisión balanceada (%) |
-|---|---|
-| LGPD (portugués), n = 802 | 78,2 |
-| GDPR (inglés, transferencia zero-shot), n = 558 | 75,3 |
-| CCPA (inglés, transferencia zero-shot), n = 420 | 74,5 |
+| Conjunto de test | Balanced accuracy (%) | n |
+|---|---|---|
+| LGPD (portugues) | 78,2 | 802 |
+| GDPR (ingles, zero-shot) | 75,3 | 558 |
+| CCPA (ingles, zero-shot) | 74,5 | 420 |
 
-El autor indica que esta build int4 no tiene todavía medición en navegador. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni comparativas con modelos similares.
+Registros de fidelidad del build int4 frente al modelo PyTorch bf16 del mismo especialista, sobre 100 preguntas de desarrollo (muestra ciega a etiquetas, 50 por ley), en CPU con onnxruntime (pod x86, no WebGPU):
+
+| Modo de lectura | Coincidencia de decision (%) | Intervalo de confianza 95 % |
+|---|---|---|
+| Lectura por cabeza | 96,0 | 90,2 - 98,4 |
+| Lectura por logits | 95,0 | no disponible |
+
+Notas: el build int4 no tiene mediciones en navegador. El fallback CPU del grafo (mismo fichero que el modelo SmolLM3-3B-ContractNLI-CLINC-SIB, otros pesos) se midio alli en 16,5 veces mas lento que WebGPU, en torno a 50 ms por token de prompt (elementos de desarrollo, Chrome sobre Apple M2 Pro); las decisiones en CPU no se midieron para esta tarea.
 
 ## Requisitos de hardware
 
-- Descarga del artefacto: 1,75 GB (repo de 1,8 GB) en formato ONNX int4 para onnxruntime-genai 0.19.
-- Ejecución en navegador con WebGPU; el autor no especifica VRAM ni memoria unificada mínima.
-- No se indican GPU recomendadas ni latencia o throughput medidos; la model card señala explícitamente que esta build int4 no tiene medición en navegador.
-- El adaptador LoRA de referencia en PyTorch (eduardoworrel/SmolLM3-3B-LGPD-LoRA) puede ejecutarse con el stack habitual de transformers, pero no se detallan requisitos de VRAM para esa variante.
-- Opciones de despliegue declaradas: onnxruntime-genai con backend WebGPU a través de s1s2; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: el grafo int4 ocupa 1,75 GB de descarga; el repositorio completo son 1,8 GB. La VRAM efectiva depende del backend, pero un presupuesto de 2 a 3 GB es suficiente para el grafo cuantizado.
+- GPU recomendadas: cualquier GPU con soporte WebGPU para ejecucion en navegador; en servidor, GPUs con al menos 4 GB de memoria para el grafo int4. No se detallan modelos concretos (A100, H100, RTX 4090) en la informacion disponible.
+- Cabe en GPU de consumo: si, el grafo int4 de 1,75 GB es compatible con GPUs de consumo con WebGPU; no se especifican modelos.
+- Opciones de despliegue: onnxruntime-genai 0.19 (WebGPU) y onnxruntime-web WASM (CPU) a traves de la libreria s1s2 (version >= 0.1.1); adaptador LoRA en PyTorch disponible en el repositorio hermano. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: en CPU, aproximadamente 50 ms por token de prompt en el grafo equivalente (Chrome sobre Apple M2 Pro), con un factor de 16,5 veces mas lento que WebGPU. La latencia de las decisiones en CPU no fue medida para esta tarea; la latencia en WebGPU no esta publicada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparaciones con otros modelos de clasificación legal o de privacidad, ni con variantes del propio SmolLM3-3B.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| SmolLM3-3B-LGPD-ONNX-genai-int4-S1S2 | 3B | no disponible | Clasificacion LGPD con cabeza de decision y doble sistema, ONNX int4 para navegador | CC BY 4.0 | Hugging Face |
+| SmolLM3-3B (base) | 3B | no disponible | Modelo generativo generalista | Apache-2.0 | Hugging Face |
+| SmolLM3-3B-LGPD-LoRA | 3B | no disponible | Adaptador LoRA en PyTorch y cabezas del mismo especialista | no disponible | Hugging Face |
+| SmolLM3-3B-LGPD-ONNX-transformersjs-S1S2 | 3B | no disponible | Mismos pesos en layout Transformers.js | no disponible | Hugging Face |
+
+No se dispone de datos de benchmarks de modelos alternativos de clasificacion juridica en la informacion proporcionada, por lo que la comparacion se limita a variantes del mismo especialista y al modelo base.
 
 ## Limitaciones y advertencias
 
-- El modelo fue entrenado únicamente con políticas brasileñas (LGPD); GDPR y CCPA nunca se usaron en entrenamiento, por lo que los resultados en esos marcos son transferencia zero-shot y deben tratarse con cautela.
-- Responde si un pasaje aborda un requisito, no si una política cumple la ley; no constituye asesoramiento legal.
-- La cabeza está entrenada con exactamente las palabras " Sim" y " Não" (con espacio inicial); traducciones u otras palabras cambian el prompt y rompen la clasificación.
-- La variante `lgpd_only_k` no fue evaluada en el conjunto de test reservado; la model card usa `lgpd_only` como referencia.
-- Esta build int4 no tiene medición de rendimiento en navegador publicada; el comportamiento real en WebGPU puede diferir del de los pesos bf16 evaluados.
-- Riesgo de alucinación en el modo System 2 (generación de justificación), ya que el texto generado no está verificado contra la cláusula original.
-- Sesgos no documentados en la model card; el corpus de entrenamiento es específico del contexto regulatorio brasileño.
-- Licencia CC BY 4.0: permite uso comercial con atribución; deben mantenerse las atribuciones del corpus Claudinha (CC BY 4.0), los datos Kev y el modelo base SmolLM3-3B (Apache-2.0).
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere poca validación externa.
+- Entrenado exclusivamente con politicas brasilenas (LGPD); GDPR y CCPA nunca se usaron en entrenamiento, por lo que su rendimiento en esos marcos es solo de transferencia zero-shot y no debe asumirse estable.
+- El modelo indica si un fragmento aborda un requisito, no si una politica cumple la ley; no constituye asesoramiento legal.
+- La cabeza de decision solo funciona con las palabras de opcion exactas " Sim" y " Nao" (con espacio inicial); traducciones u otras variantes alteran el prompt leido por la cabeza y rompen la prediccion.
+- El build int4 no dispone de mediciones en navegador; la fidelidad medida (96,0 % y 95,0 %) se obtuvo sobre 100 elementos de desarrollo en CPU, con intervalo amplio (90,2 - 98,4), sin conjunto de test.
+- La variante `lgpd_only_k` no fue evaluada sobre el conjunto de test retenido.
+- El fallback a CPU es sustancialmente mas lento (16,5 veces respecto a WebGPU en el grafo equivalente), lo que puede hacer inviable el uso interactivo sin aceleracion.
+- Riesgo de alucinacion en la fase System 2 (generacion de justificaciones): la cita textual debe verificarse contra el documento original.
+- Sesgos potenciales derivados del corpus Claudinha y de los datos sinteticos Kev, no cuantificados en la informacion disponible.
+- Licencia CC BY 4.0: permite uso comercial con atribucion; deben mantenerse las atribuciones del corpus Claudinha, de los datos Kev y del modelo base Apache-2.0.
+- No se documentan capacidades de tool calling, agentes ni vision; el uso como generador generalista no es el objetivo del artefacto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/eduardoworrel/SmolLM3-3B-LGPD-ONNX-genai-int4-S1S2
 - Adaptador LoRA y cabezas en PyTorch: https://huggingface.co/eduardoworrel/SmolLM3-3B-LGPD-LoRA
-- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
-- Librería s1s2: https://github.com/eduardoworrel/s1s2
-- Proyecto Kev (receta de la cabeza): https://github.com/jaredpalmer/kev
+- Variante Transformers.js: https://huggingface.co/eduardoworrel/SmolLM3-3B-LGPD-ONNX-transformersjs-S1S2
+- Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+- Libreria s1s2: https://github.com/eduardoworrel/s1s2
+- Proyecto Kev (receta de entrenamiento): https://github.com/jaredpalmer/kev
 - Corpus Claudinha: https://zenodo.org/records/13371639
-- Paper Browser Immune System: https://arxiv.org/abs/2611.15302
 - Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
+- Paper Browser Immune System: https://arxiv.org/abs/2611.15302

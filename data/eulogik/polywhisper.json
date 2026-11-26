@@ -84,76 +84,34 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Speech Recognition",
-      "dataset": "PolyWhisper Hinglish Test (3,129 utterances)",
-      "metric": "WER",
-      "value": 58.8
+      "task": "Hindi Speech Recognition",
+      "dataset": "FLEURS Hindi (hi_in)",
+      "metric": "WER (beam=1, normalized)",
+      "value": 46.3
     },
     {
-      "task": "Speech Recognition",
-      "dataset": "PolyWhisper Hinglish Test (3,129 utterances)",
-      "metric": "CER",
-      "value": 57.9
+      "task": "Tamil Speech Recognition",
+      "dataset": "FLEURS Tamil (ta_in)",
+      "metric": "WER (beam=1, normalized)",
+      "value": 70.1
     },
     {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "WER (hi)",
-      "value": 38.5
+      "task": "Telugu Speech Recognition",
+      "dataset": "FLEURS Telugu (te_in)",
+      "metric": "WER (beam=1, normalized)",
+      "value": 100.1
     },
     {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "CER (hi)",
-      "value": 14.4
+      "task": "Bengali Speech Recognition",
+      "dataset": "FLEURS Bengali (bn_in)",
+      "metric": "WER (beam=1, normalized)",
+      "value": 130.2
     },
     {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "WER (ta)",
-      "value": 73.9
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "CER (ta)",
-      "value": 25.6
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "WER (te)",
-      "value": 82.7
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "CER (te)",
-      "value": 32.7
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "WER (bn)",
-      "value": 84.9
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "CER (bn)",
-      "value": 54.3
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "WER (mr)",
-      "value": 65
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (hi/ta/te/bn/mr)",
-      "metric": "CER (mr)",
-      "value": 22.9
+      "task": "Marathi Speech Recognition",
+      "dataset": "FLEURS Marathi (mr_in)",
+      "metric": "WER (beam=1, normalized)",
+      "value": 116.9
     }
   ],
   "sources": []

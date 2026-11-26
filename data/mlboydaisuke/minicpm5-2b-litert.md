@@ -2,108 +2,103 @@
 
 ## Resumen
 
-MiniCPM5-2B-LiteRT es una conversión del modelo MiniCPM5-2B de OpenBMB al formato LiteRT-LM (`.litertlm`), realizada por mlboydaisuke para ejecutar inferencia on-device con el runtime LiteRT-LM de Google. El modelo original es un Transformer denso de 2.500 millones de parámetros (2.5B) con 42 capas, tamaño oculto de 2048, GQA 16:2, embeddings no compartidos de 130.000 tokens y una ventana de contexto nativa de 131.000 tokens. Fue lanzado en septiembre de 2026 como parte de la serie MiniCPM5, orientado a escenarios de despliegue local y recursos limitados.
+MiniCPM5-2B-LiteRT es la conversión al formato LiteRT-LM (`.litertlm`) del modelo MiniCPM5-2B de OpenBMB, realizada por el usuario mlboydaisuke. El modelo original es un transformer denso de 2.500 millones de parámetros con capacidad de razonamiento híbrido: un mismo checkpoint puede responder directamente o elaborar una cadena de razonamiento interna delimitada por ``, controlable mediante el interruptor `enable_thinking` de su plantilla de chat. Esta conversión empaqueta los pesos en cuantización int4 e int8 para inferencia en dispositivo (on-device) con el runtime LiteRT-LM de Google.
 
-La peculiaridad del modelo es su naturaleza híbrida de razonamiento: un único checkpoint puede responder directamente o trabajar el problema dentro de etiquetas `thinking...` antes de emitir la respuesta final, controlado por un interruptor `enable_thinking` en su plantilla de chat. Esta conversión conserva esa maquinaria intacta, incluyendo el canal de pensamiento declarado y la configuración de `ThinkingConfig`. Se ofrecen dos archivos cuantizados: uno int4 de 1,55 GB pensado para teléfonos y otro int8 de 2,60 GB para razonamiento largo en desktop o Android. El modelo es relevante porque acerca el razonamiento híbrido a dispositivos móviles con licencia Apache 2.0 y sin necesidad de infraestructura en la nube.
+La relevancia de esta ficha radica en que traslada un modelo de razonamiento de 2,5B al ecosistema LiteRT-LM, pensado para ejecución local en móviles, portátiles y GPUs de consumo. El repositorio incluye dos variantes: un fichero int4 de 1,55 GB orientado a teléfonos y un fichero int8 de 2,60 GB pensado para razonamiento que debe completarse. La model card documenta con detalle el impacto de la cuantización en la calidad del razonamiento, algo poco habitual y de gran valor práctico.
+
+El modelo base fue publicado en septiembre de 2026 y esta conversión se actualizó por última vez en noviembre de 2026. Requiere litert-lm ≥ 0.18.0 desde el reempaquetado del 13 de octubre de 2026. La licencia es Apache 2.0 tanto en el modelo base como en la conversión.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso híbrido de razonamiento (42 capas, hidden 2048, GQA 16:2, embeddings untied de 130k vocabulario) |
-| Parametros totales | 2.500 millones (2.5B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 131.000 tokens |
-| Tipos de cuantizacion | int4 blockwise-32 + OCTAV en lineales, int8 embedding; int8 dinámico en lineales + embedding, activaciones fp32 declaradas |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer denso con razonamiento híbrido (42 capas, hidden 2048, GQA 16:2, embeddings no atados de 130k vocabulario) |
+| Parametros totales | 2,5B (2.500 millones) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 131.072 tokens nativos |
+| Tipos de cuantizacion | int4 blockwise-32 + OCTAV en lineales con embedding int8; int8 dinámico en lineales y embedding con activaciones fp32 declaradas |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM), con archivos int4 e int8 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors/PyTorch |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM5-2B es un Transformer denso, no un modelo de mezcla de expertos (MoE), con 42 capas, dimensión oculta de 2048, atención de consultas agrupadas (GQA) con 16 cabezas de consulta y 2 de clave/valor, y embeddings de vocabulario no compartidos de 130.000 tokens. Su ventana de contexto nativa es de 131.000 tokens. No se han proporcionado datos sobre el corpus de entrenamiento, el número de tokens ni si se aplicaron técnicas como RLHF o DPO en la información disponible.
+El modelo base MiniCPM5-2B es un transformer denso de 42 capas con dimensión oculta 2048, atención con grouped-query attention en proporción 16:2 y embeddings de vocabulario de 130.000 tokens no atados a la capa de salida. Su rasgo distintivo es el razonamiento híbrido: la plantilla de chat incluye un interruptor `enable_thinking` que decide si el modelo responde directamente o genera primero una cadena de razonamiento en un canal `thought` separado. La conversión a LiteRT-LM preserva la plantilla `chat_template.jinja` original de forma literal, declara el canal `thought` y expone el interruptor `enable_thinking` desde el runtime.
 
-La innovación principal de esta conversión es el empaquetado para LiteRT-LM: incluye la plantilla de chat original del modelo, un canal de pensamiento declarado (`[thought]` / `[/thought]`) y la posibilidad de controlar el modo de razonamiento mediante `ThinkingConfig`. La cuantización int4 aplica bloque de 32 y OCTAV en las capas lineales con embeddings int8, mientras que la int8 usa cuantización dinámica en lineales y embeddings, declarando activaciones fp32. El runtime requiere LiteRT-LM 0.16 o superior, y se ha medido en la versión 0.17.0.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La conversión emplea dos recetas de cuantización: int4 con cuantización blockwise de tamaño 32 y OCTAV en capas lineales más embedding int8 (1,55 GB), e int8 dinámico en lineales y embedding con activaciones fp32 declaradas (2,60 GB). El reempaquetado del 13 de octubre de 2026 adoptó los metadatos y la plantilla oficiales de `models/minicpm5` de LiteRT-LM, habilitando el paso de `tools` y el parseo de llamadas a herramientas en litert-lm 0.18.0.
 
 ## Capacidades
 
-- Generación de texto y razonamiento híbrido: puede responder directamente o generar cadenas de razonamiento dentro de `thinking...` antes de la respuesta final.
-- Control del modo de razonamiento mediante `enable_thinking` (a través de `ThinkingConfig` o del contexto extra de la conversación), con respuestas directas de 2 a 7 tokens y aproximadamente 10 veces más rápidas cuando está desactivado.
-- Canal de pensamiento separado: el runtime puede leer el razonamiento por separado y el texto transmitido contiene solo la respuesta final.
-- Razonamiento matemático: alcanza 92 % en GSM8K (primeras 100 preguntas, greedy, 0-shot CoT) en bf16, 91 % en int8 CPU y 86-87 % en int4.
-- Memoria multi-turno: en conversaciones de tres turnos (introducción de nombre y ciudad, pregunta aritmética y pregunta sobre la ciudad) ambos archivos recuerdan correctamente los datos bajo los tres modos de razonamiento.
-- Despliegue on-device: funciona en CPU y GPU en Apple M4 Max, Galaxy S26 (Snapdragon SM8850, Adreno) e iPhone 17 Pro, con delegación OpenCL completa en Android (1873/1873 nodos).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingües: no disponible (no se especifican idiomas en la información).
+- Generación de texto con razonamiento híbrido: respuesta directa o cadena de razonamiento interna en `` controlada por `enable_thinking`.
+- Razonamiento matemático de varios pasos (evaluado en GSM8K).
+- Soporte de tool calling / function calling: el paso de `tools` funciona desde el reempaquetado de octubre de 2026 en litert-lm 0.18.0.
+- Conversaciones multiturno: se verifican conversaciones de tres turnos con retención de nombre y ciudad en los tres modos de razonamiento.
+- Separación del razonamiento y la respuesta final: el runtime emite el pensamiento por el canal `thought` (`[thought] … [/thought]`) y solo la respuesta final en el texto transmitido.
+- Inferencia en dispositivo con delegación completa en GPU móvil (OpenCL) y en GPU de escritorio (Metal).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documenta soporte de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Asistente conversacional en smartphone: el archivo int4 de 1,55 GB está diseñado para teléfonos y genera respuestas directas con baja latencia en GPU, ideal para aplicaciones de mensajería o asistentes de voz que necesitan respuestas rápidas sin conexión.
-- Tutor de matemáticas en el dispositivo: con el archivo int8 y el modo de razonamiento activado, el modelo completa cadenas de pensamiento largas (mediana de ~3.200 caracteres en CPU) y resuelve problemas de GSM8K con un 91 % de acierto, adecuado para apps educativas offline.
-- Aplicaciones de privacidad en el borde: la inferencia es completamente local, sin dependencia de servidores en la nube, lo que permite procesar datos sensibles en el propio dispositivo.
-- Prototipado en Google AI Edge Gallery: los archivos se importan directamente desde Hugging Face a la app Gallery en Android, permitiendo pruebas rápidas de razonamiento on-device sin infraestructura cloud.
-- Chat multi-turno con memoria: el modelo mantiene el contexto en conversaciones de varios turnos, recordando información personal como nombres y ciudades, útil para asistentes personales y agentes de soporte locales.
-- Despliegue en entornos sin GPU: el archivo int8 en CPU mantiene un 91 % en GSM8K, por lo que es viable en servidores de borde o PCs sin aceleradora gráfica, siempre que la memoria disponible sea suficiente.
-- Razonamiento en aplicaciones de escritorio o Android: el int8 es la opción recomendada para tareas que requieren que el razonamiento termine, ya que el int4 en CPU tiende a agotar el presupuesto de tokens.
-- Respuestas de baja latencia para autocompletado o asistentes de voz: con `enable_thinking=false`, el modelo produce respuestas de 2 a 7 tokens, aproximadamente 10 veces más rápido, adecuado para interacciones que no necesitan razonamiento extenso.
+- Asistentes locales en teléfono: el fichero int4 de 1,55 GB se ejecuta en GPU y CPU de dispositivos Android (verificado en Galaxy S26 con delegación OpenCL completa) e iOS (iPhone 17 Pro con Metal y CPU), permitiendo asistentes sin conexión con contexto de 131k tokens.
+- Razonamiento matemático en el dispositivo: con el fichero int8 y pensamiento activado, el modelo completa cadenas de razonamiento en 9 de cada 10 preguntas GSM8K con cadenas de ~3.200 caracteres, adecuado para tutores o calculadoras razonadas offline.
+- Respuestas rápidas de baja latencia: con int4 y pensamiento desactivado se obtiene un 86-87 % en GSM8K y decodificación GPU más rápida, útil para autocompletado o clasificación en el borde.
+- Agentes con herramientas en local: el soporte de `tools` en litert-lm 0.18.0 permite integrar el modelo en flujos de function calling sin salir del dispositivo, por ejemplo para consultar APIs locales o bases de datos embebidas.
+- Conversaciones multiturno con memoria de contexto: la retención verificada de datos en conversaciones de tres turnos lo hace apto para chatbots de atención al cliente en dispositivos con historial corto.
+- Aplicaciones de escritorio y Android con razonamiento completo: el fichero int8 (2,33 GB en su sección principal de pesos) supera el límite de mmap de sección única de apps iOS con entitlements por defecto, por lo que se orienta a builds de escritorio y Android donde el razonamiento debe terminar.
+- Procesamiento de documentos largos en el borde: la ventana nativa de 131k tokens permite resumir o extraer información de documentos extensos en hardware local.
 
 ## Benchmarks y rendimiento
 
-La model card incluye resultados de GSM8K (primeras 100 preguntas, greedy, 0-shot chain-of-thought, con thinking desactivado, máximo 2048 tokens nuevos) y una prueba de sanidad de 8 preguntas en CPU y GPU. No se han publicado resultados de benchmarks en la informacion disponible más allá de estos.
+Resultados de GSM8K (primeras 100 preguntas del test, greedy, prompt de cadena de pensamiento 0-shot, pensamiento desactivado, máximo 2048 tokens nuevos, mismo prompt y extracción en todas las filas):
 
-| Configuración | GSM8K (thinking off) | Sanity gate |
-|---|---|---|
-| bf16 PyTorch (MPS) | 92 % | 8/8 con thinking on; 6/8 con thinking off |
-| int8, CPU | 91 % | 8/8 |
-| int4, CPU | 86 % | 8/8 |
-| int4, GPU (Metal) | 87 % | 8/8 |
+| Configuracion | GSM8K |
+|---|---|
+| bf16 PyTorch (MPS), plantilla original | 92 % |
+| int8, CPU | 91 % |
+| int4, CPU | 86 % |
+| int4, GPU (Metal) | 87 % |
 
-En modo de razonamiento activado, con 10 preguntas de GSM8K y un presupuesto de 3.584 tokens, los resultados son los siguientes:
+Prueba de sanidad de 8 preguntas (Apple M4 Max): ambos ficheros obtienen 8/8 en CPU y GPU; el modelo bf16 PyTorch obtiene 8/8 con pensamiento activado o libre y 6/8 con pensamiento forzado a desactivado.
 
-| Configuración con thinking on | Cierres de razonamiento | Mediana de caracteres |
-|---|---|---|
-| bf16 | 9/10 | ~3.000 |
-| int8, CPU | 9/10 | ~3.200 |
-| int4, CPU | 0/10 | ~13.700 |
-| int4, GPU (Metal) | 10/10 | ~8.000 (artefacto de redondeo fp16) |
+Modo de razonamiento (10 preguntas GSM8K, pensamiento activado, presupuesto de 3584 tokens): el modelo bf16 cierra el razonamiento en 9/10 con cadenas de ~3.000 caracteres; int8 reproduce 9/10 con mediana de ~3.200 caracteres en CPU; int4 cierra 0/10 en CPU con mediana de ~13.700 caracteres. En GPU Metal con activaciones fp16 por defecto, el mismo fichero int4 cerró 10/10 con cadenas de ~8.000 caracteres, atribuido al redondeo fp16 y no a una propiedad fiable.
 
-En el iPhone 17 Pro, el archivo int4 pasa 7/8 en Metal GPU (inicialización de 5,7 s) y 7/8 en CPU (inicialización de 2,2 s); el único fallo es la línea de rima del prompt compuesto, que responde "green", el mismo error que comete el modelo bf16 con thinking desactivado, por lo que se atribuye a un artefacto del formato del prompt y no a daños por la conversión.
+Rendimiento en dispositivo: Galaxy S26 (Snapdragon SM8850, Adreno) con delegación OpenCL completa, 1873/1873 nodos en cada firma de prefill y decode, cero operaciones rechazadas. iPhone 17 Pro: int4 obtiene 7/8 en GPU Metal (inicialización 5,7 s) y 7/8 en CPU (inicialización 2,2 s); el fallo es la línea de rima del prompt compuesto, respondida "green", la misma respuesta que da el modelo bf16 con pensamiento desactivado.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no se proporciona en la información disponible. Los tamaños de archivo son 1,55 GB (int4) y 2,60 GB (int8), por lo que la memoria necesaria será al menos ese tamaño más el overhead del runtime.
-- GPU recomendadas: Apple M4 Max, Galaxy S26 (Adreno) e iPhone 17 Pro (Metal/CPU). No se han probado GPUs NVIDIA en la información disponible.
-- Compatibilidad con consumer GPU: el int4 está pensado para teléfonos y cabe en dispositivos móviles; el int8 es para desktop o Android, pero no para iOS, ya que su sección principal de pesos (2,33 GB) supera el límite de mmap por sección de las apps iOS con entitlements por defecto.
-- Opciones de despliegue: LiteRT-LM runtime (`litert-lm run`, requiere versión 0.16 o superior) y Google AI Edge Gallery en Android. vLLM, llama.cpp, Ollama y TGI: no disponible.
-- Latencia: solo se conocen tiempos de inicialización en iPhone 17 Pro para int4: 5,7 s en Metal GPU y 2,2 s en CPU. No se proporcionan datos de latencia de generación.
+- VRAM/RAM estimada: int4 ocupa 1,55 GB en disco; int8 ocupa 2,60 GB, con una sección principal de pesos de 2,33 GB.
+- GPU de escritorio: verificada en Apple M4 Max con backend Metal (CPU y GPU).
+- GPU móvil: verificada en Galaxy S26 (Adreno, OpenCL) e iPhone 17 Pro (Metal).
+- Cabe en GPU de consumo: el fichero int4 es apto para teléfonos y equipos de gama media; el int8 requiere escritorio o Android por superar el límite de mmap de sección única de apps iOS con entitlements por defecto.
+- Opciones de despliegue: runtime LiteRT-LM (litert-lm ≥ 0.18.0), instalable con `pip install litert-lm` o `uv tool install litert-lm`; ejecución con `litert-lm run --from-huggingface-repo=mlboydaisuke/MiniCPM5-2B-LiteRT <fichero> --backend gpu|cpu`.
+- Latencia: inicialización de 5,7 s en GPU Metal y 2,2 s en CPU en iPhone 17 Pro; no se publican cifras de throughput (tokens/s) en la información disponible.
+- El reempaquetado del 13 de octubre de 2026 cambió el tipo de modelo y con él los valores por defecto del ejecutor GPU del runtime (allow_src_quantized_fc_conv_ops activado, hint_waiting_for_completion de OpenCL desactivado, kernel batch size sin definir); las filas de GPU móvil se midieron con los ficheros anteriores y no se han vuelto a ejecutar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | GSM8K (no-think) | Licencia | Formato/Disponibilidad |
 |---|---|---|---|---|---|
-| openbmb/MiniCPM5-2B | 2.5B | 131.000 tokens | bf16 (PyTorch) | Apache 2.0 | Hugging Face |
-| openbmb/MiniCPM5-2B-MLX | No disponible | No disponible | MLX | Apache 2.0 | Hugging Face |
-| mlboydaisuke/MiniCPM5-2B-LiteRT | 2.5B | 131.000 tokens | `.litertlm` (int4/int8) | Apache 2.0 | Hugging Face |
+| MiniCPM5-2B-LiteRT (int8) | 2,5B | 131k | 91 % | Apache 2.0 | LiteRT-LM, Hugging Face |
+| MiniCPM5-2B-LiteRT (int4) | 2,5B | 131k | 86-87 % | Apache 2.0 | LiteRT-LM, Hugging Face |
+| MiniCPM5-2B (bf16 PyTorch) | 2,5B | 131k | 92 % | Apache 2.0 | safetensors/PyTorch, Hugging Face |
 
-Según una noticia sobre el lanzamiento de MiniCPM5-2B, el modelo promedia 53,9 en 34 benchmarks y supera a modelos de 4B comparados, aunque no se especifican los nombres de esos modelos en la información disponible. La versión LiteRT-LM es una cuantización del mismo modelo base, por lo que su rendimiento es ligeramente inferior en GSM8K (86-91 % frente al 92 % en bf16) y presenta limitaciones adicionales en el modo de razonamiento con int4.
+No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de otros modelos de la misma categoría (2-3B con razonamiento y despliegue en dispositivo) para una comparación adicional.
 
 ## Limitaciones y advertencias
 
-- El archivo int4 en CPU con thinking activado no completa razonamientos: en 10 preguntas de GSM8K cerró 0/10, con cadenas de ~13.700 caracteres que agotan el presupuesto de tokens y nunca emiten la respuesta final. Para razonamiento que deba terminar, usar int8 o desactivar thinking.
-- El archivo int8 no es apto para iOS: su sección principal de pesos (2,33 GB) supera el límite de mmap por sección de las apps iOS con entitlements por defecto, por lo que solo es viable en desktop o Android.
-- El rendimiento con thinking desactivado debe compararse contra el modelo bf16 con thinking desactivado (6/8 en la prueba de sanidad), no contra 8/8, ya que el propio modelo original falla en dos preguntas en ese modo.
-- El resultado de 10/10 del int4 en GPU Metal con thinking activado es un artefacto del redondeo fp16 y no debe considerarse una propiedad fiable del modelo.
-- Si el presupuesto de tokens es insuficiente y el pensamiento se trunca, el modelo no genera ninguna respuesta final.
-- Riesgo de alucinación: se observaron respuestas incorrectas en la prueba de sanidad, como "green" en la línea de rima.
-- Idiomas soportados: no especificados en la información disponible, lo que limita la evaluación de su uso multilingüe.
-- No se mencionan sesgos específicos en la información proporcionada.
+- El fichero int4 degrada el razonamiento: con pensamiento activado cierra 0/10 preguntas GSM8K en CPU frente a 9/10 del bf16, con cadenas que se alargan hasta ~13.700 caracteres y agotan el presupuesto sin emitir la respuesta final. Para razonamiento que debe completarse, usar int8 o desactivar el pensamiento en int4.
+- El cierre 10/10 observado en GPU Metal con int4 se atribuye al redondeo fp16 de las activaciones y no es una propiedad fiable.
+- El modelo bf16 de referencia obtiene 6/8 con pensamiento forzado a desactivado; los resultados sin pensamiento deben leerse contra ese 6/8 y no contra 8/8.
+- El fichero int8 no es apto para apps iOS con entitlements por defecto por el límite de mmap de sección única (2,33 GB de pesos).
+- La ventana de contexto nativa es de 131k tokens, pero no se documenta el rendimiento en contextos largos más allá de conversaciones de tres turnos.
+- No se dispone de información sobre sesgos conocidos, idiomas soportados ni tasas de alucinación.
+- El paso de `tools` requiere litert-lm ≥ 0.18.0; en 0.17.x el turno de usuario se renderiza vacío y la plantilla anterior fallaba con "too many arguments".
+- Las mediciones en GPU móvil se realizaron con los ficheros previos al reempaquetado de octubre de 2026 y no se han repetido con los actuales.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y de las dependencias del runtime LiteRT-LM.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/MiniCPM5-2B-LiteRT
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
-- Versión MLX del modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Noticia sobre MiniCPM5-2B: https://www.aimodeling.com/en/news/slug/openbmb-minicpm5-2b-on-device

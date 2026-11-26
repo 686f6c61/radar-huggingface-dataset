@@ -5,7 +5,7 @@
   "author": "FastFlowLM",
   "url": "https://huggingface.co/FastFlowLM/Confucius4-R2T2-NPU2",
   "created_at": "2026-11-15T04:07:54.000Z",
-  "updated_at": "2026-11-15T04:13:11.000Z",
+  "updated_at": "2026-11-25T20:41:59.000Z",
   "license": "netease-youdao-model-use-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

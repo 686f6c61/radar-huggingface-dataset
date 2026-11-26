@@ -1,87 +1,85 @@
 # jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder309-cybersecurity-veriloop
 
 ## Resumen
+Este modelo es un merge de tipo TIES construido por el usuario jashepp a partir de cuatro modelos Qwen3.8 de 27B, orientados a razonamiento, generacion de codigo, ciberseguridad y verificacion logica. No es un modelo entrenado desde cero, sino una fusion de pesos que busca combinar las fortalezas de cada componente: la estructura de razonamiento e instrucciones del modelo base de DavidAU, la agudeza en codigo de la variante de nerkyor, las capacidades de ingenieria de software tecnica y descompilacion de la variante de xtools-at, y un acento ligero en logica y matematicas de VeriLoop-E2.
 
-Este repositorio aloja un modelo derivado identificado como `Qwen3.8-27B-4x-ties-merge-brilliance-coder309-cybersecurity-veriloop`, publicado por el usuario `jashepp` en Hugging Face. Por la nomenclatura se trata de un merge de modelos (probablemente una combinación de tipo "ties merge" de cuatro variantes) construido sobre una base de la familia Qwen de aproximadamente 27 000 millones de parámetros, con especialización declarada en código y ciberseguridad. No es un modelo entrenado desde cero, sino una fusión de pesos derivada de checkpoints existentes.
+El resultado es un modelo denso de aproximadamente 27.300 millones de parametros, con licencia Apache 2.0 y pesos disponibles en formato bfloat16 y GGUF cuantizado (q4, q6, q8, mxfp4). Esta pensado para ejecucion local en tareas de programacion, depuracion, analisis de seguridad, ingenieria inversa y resolucion de problemas cuantitativos, y se distribuye con compatibilidad para llama.cpp y LM Studio.
 
-La ficha se ha redactado a partir exclusivamente de los metadatos disponibles en Hugging Face. El repositorio no publica model card, pipeline declarado, idiomas soportados ni resultados de benchmarks, y el acceso está restringido (gated), por lo que cualquier dato técnico adicional debe verificarse tras aceptar las condiciones de uso en la plataforma. La licencia declarada es Apache 2.0, lo que permite uso comercial con atribución, aunque la procedencia exacta de los pesos fusionados conviene auditarla antes de desplegar en producción.
-
-Su relevancia es limitada pero concreta: para equipos que experimentan con merges de modelos orientados a tareas de seguridad y generación de código, este checkpoint ofrece un punto de partida ya fusionado, sin necesidad de replicar el proceso de merge. Dado el escaso número de descargas y la ausencia de validación publicada, debe tratarse como un artefacto experimental, no como un modelo listo para producción.
+Su relevancia radica en que ofrece un perfil tecnico especializado sin necesidad de infraestructura de gran escala, aunque al tratarse de un merge comunitario no dispone de evaluacion estandarizada publicada ni de garantias de calidad equivalentes a las de un modelo oficial.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (por nomenclatura, transformer denso de la familia Qwen; no confirmado en la model card) |
-| Parametros totales | aproximadamente 27 000 millones (inferido del nombre del repositorio; no confirmado) |
-| Parametros activos | no disponible (no se declara como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos GGUF ni AWQ en la informacion disponible) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (derivado de Qwen3.8; detalles de atencion no disponibles) |
+| Parametros totales | 27.318.209.536 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | bfloat16 (bf16), mxfp4, q4, q6, q8, GGUF con imatrix |
+| Idiomas soportados | Ingles (segun model card); otros no disponibles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (no se especifica safetensors, GGUF ni bin en los metadatos) |
+| Formato de pesos | safetensors (bf16) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer denso de 27B parametros obtenido mediante la tecnica TIES (arxiv:2306.01708) implementada con mergekit. La receta asigna densidades y pesos por bloques: el modelo base de DavidAU actua como ancla con densidad 1.00 y peso mlp 1.0, preservando embeddings, normas, lm_head y capas de atencion; la variante Coder390 de nerkyor aporta densidad 0.54 y peso mlp 0.40 con influencia ligera en atencion (0.00-0.08); Qwensploit-V2 de xtools-at aporta densidad 0.48 y peso mlp 0.24 con influencia ligera en atencion (0.00-0.04); y VeriLoop-E2 aporta densidad 0.35 con peso mlp 0.08 y una influencia minima en atencion (0.00-0.01).
 
-No se dispone de informacion sobre la arquitectura interna, la composicion del dataset de entrenamiento, el numero de tokens utilizados ni sobre posibles fases de RLHF o DPO. El nombre del repositorio sugiere un proceso de fusión de pesos del tipo "ties merge" aplicado a cuatro variantes ("4x-ties-merge"), partiendo de una base Qwen de aproximadamente 27 000 millones de parámetros y combinando checkpoints con especialización en código ("coder309") y ciberseguridad ("cybersecurity"). Los sufijos "brilliance" y "veriloop" no corresponden a terminologia estandar de arquitectura y probablemente identifican los checkpoints donantes del merge.
-
-Al tratarse de un merge, no hay entrenamiento adicional documentado: los pesos resultan de la interpolación o combinación de los tensores de los modelos origen. Esto implica que las capacidades del modelo son una mezcla de las de sus componentes, sin garantía de que las habilidades específicas se conserven de forma consistente. No se documentan innovaciones técnicas como decodificación especulativa, atención lineal o variantes híbridas SSM.
+Los deltas de parametros se inyectan principalmente en los bloques mlp intermedios para reforzar codigo, ingenieria inversa, seguridad, matematicas, fisica y logica formal. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si los modelos de origen emplearon RLHF o DPO; la model card solo indica que los componentes fueron sometidos a post-entrenamiento por sus autores respectivos. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
-
-- Generacion de texto autoregresiva, asumiendo el comportamiento estandar de la familia Qwen; no verificado en este checkpoint.
-- Generacion y completado de codigo, segun la especializacion declarada en el nombre del repositorio.
-- Contenido orientado a ciberseguridad (analisis, explicaciones tecnicas, posible generacion de scripts), segun la etiqueta del repositorio; sin evaluacion publicada.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Modo thinking, vision o audio: no disponible; no se declaran capacidades multimodales.
+- Generacion de texto y razonamiento con modo thinking y cadena de pensamiento (chain-of-thought).
+- Generacion de codigo y tareas de ingenieria de software, incluyendo casos limite.
+- Razonamiento sobre seguridad informatica, descompilacion, analisis de binarios y parches.
+- Matematicas, fisica, ciencia y logica formal, reforzadas por el componente VeriLoop-E2.
+- Seguimiento de instrucciones y recuperacion de contexto (context-recall) heredados del modelo base.
+- Soporte de tool calling y uso en flujos agenticos, con la salvedad de que el autor recomienda un super-adapter LoRA para clientes que esperan sintaxis de tool-call distinta (Pi, OpenCode, Hermes).
+- Capacidades multilingues limitadas al ingles segun la model card.
 
 ## Casos de uso
-
-- Asistencia a la revision de codigo en entornos controlados: el modelo, por su especializacion declarada en código, puede emplearse para generar parches y explicar cambios en revisiones internas, siempre con validacion humana dado que no hay benchmarks publicados.
-- Formacion y concienciacion en ciberseguridad: generacion de escenarios, explicaciones de vulnerabilidades y material didactico para equipos internos, aprovechando la orientacion declarada del checkpoint.
-- Analisis estatico asistido: uso como generador de hipotesis sobre posibles fallos en fragmentos de codigo, integrado en un pipeline de revision previa antes de herramientas deterministas como Semgrep o CodeQL.
-- Prototipado rapido de herramientas internas: generacion de scripts y utilidades de linea de comandos en fases de exploracion, con posterior revision manual.
-- Experimentacion con merges de modelos: servir como punto de comparacion para investigadores que evaluan tecnicas de fusion de pesos frente a checkpoints individuales.
-- Generacion de documentacion tecnica de seguridad: redaccion de notas, runbooks y descripciones de politicas a partir de material existente, sujeto a revision por parte del equipo de seguridad.
-- Base para fine-tuning posterior: al estar publicado bajo Apache 2.0, puede utilizarse como inicializacion para ajustes supervisados en dominios concretos, aunque la procedencia de los pesos fusionados debe auditarse antes.
+- Asistencia a programacion en local: el modelo puede generar y revisar codigo en un entorno de desarrollo integrado o mediante llama.cpp, aprovechando el refuerzo en mlp para tareas de depuracion y casos limite.
+- Analisis de seguridad y pentesting: permite razonar sobre vulnerabilidades, interpretar trazas y proponer parches, gracias al componente Qwensploit-V2 integrado con peso moderado.
+- Ingenieria inversa y descompilacion: resulta adecuado para interpretar fragmentos de binarios y explicar logica de bajo nivel, una capacidad reforzada especificamente en la receta de merge.
+- Razonamiento matematico y fisico: puede resolver problemas cuantitativos y verificar bounds o invariantes, apoyandose en el acento de VeriLoop-E2.
+- Agentes de codigo multi-paso: con el super-adapter LoRA recomendado, puede integrarse en clientes agenticos que requieren tool calling y planificacion secuencial.
+- Despliegue en estaciones de trabajo con GPU de consumo: al ofrecerse en GGUF q4 y q6, permite ejecucion local sin servidores dedicados para tareas de desarrollo y analisis.
+- Educacion y prototipado en ciberseguridad: util para generar escenarios de practica y explicaciones tecnicas en entornos controlados.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de aproximadamente 27 000 millones de parametros, en FP16 se requieren del orden de 54 GB de pesos mas overhead de KV cache; en cuantizacion de 8 bits, alrededor de 27-30 GB; en 4 bits, aproximadamente 14-16 GB. Estas cifras son estimaciones genericas y no han sido verificadas para este checkpoint.
-- GPU recomendadas: para FP16, A100 80 GB o H100 80 GB; para cuantizaciones de 8 y 4 bits, RTX 4090 (24 GB) o A6000 (48 GB) podrian ser suficientes, sujeto a verificacion empirica.
-- Compatibilidad con GPU de consumo: probable en cuantizacion de 4 bits en tarjetas con 16-24 GB, no confirmada.
-- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama, siempre que se genere o disponga de una conversion adecuada de los pesos; no se publican artefactos GGUF en el repositorio.
+- VRAM estimada en bf16: aproximadamente 54-56 GB solo para pesos, mas overhead de contexto y activaciones; requiere GPU de 80 GB o multi-GPU.
+- VRAM estimada en q8: en torno a 29-30 GB; viable en A100 40 GB o H100.
+- VRAM estimada en q6: aproximadamente 22-24 GB; cabe en RTX 4090 (24 GB) con contexto moderado.
+- VRAM estimada en q4: en torno a 15-17 GB; cabe en RTX 4080, RTX 4090 y GPUs consumer de 16 GB o mas.
+- GPU recomendadas: H100 o A100 para bf16; RTX 4090 para q6/q8; RTX 4080 o similares para q4.
+- Opciones de despliegue: llama.cpp, LM Studio, y transformers para los pesos safetensors; vLLM y TGI no estan documentados en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder309-cybersecurity-veriloop | aprox. 27 000 millones (inferido) | no disponible | Apache 2.0 | Gated, 0 descargas | Merge experimental sin benchmarks publicados |
-| Qwen2.5-Coder-32B | 32 000 millones | 128 000 tokens (segun model card publica de Qwen) | Apache 2.0 | Abierto | Modelo oficial con evaluaciones publicadas en codigo |
-| Qwen2.5-32B | 32 000 millones | 128 000 tokens (segun model card publica de Qwen) | Apache 2.0 | Abierto | Base generalista oficial de la familia |
-| Modelos de ciberseguridad especializados de 7-13B | variable | variable | variable | variable | Menor tamano, especializacion declarada, sin comparacion directa disponible |
-
-La comparacion con modelos oficiales de Qwen se incluye como referencia de categoria y tamano; los datos de contexto citados provienen de las model cards publicas de esos modelos, no de este repositorio.
+| jashepp/Qwen3.8-27B-4x-ties-merge (este) | 27,3B | No disponible | Apache 2.0 | HF, GGUF | Merge TIES de 4 modelos; sin benchmarks publicados |
+| jashepp/Qwen3.8-27B-2x-ties-merge-brilliance-coder390 | 27B (aproximado) | No disponible | Apache 2.0 | HF, GGUF | Merge de 2 modelos; el autor indica menor rendimiento en SWE tecnico y logica general |
+| jashepp/Qwen3.8-27B-5x-ties-merge-brilliance-omnisre-coder390-cybersecurity-veriloop | 27B (aproximado) | No disponible | Apache 2.0 | HF, GGUF | Variante de 5 componentes del mismo autor; sin datos comparativos de rendimiento |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B (aproximado) | No disponible | No disponible | HF | Modelo base del merge; orientado a razonamiento e instrucciones |
 
 ## Limitaciones y advertencias
-
-- Ausencia total de model card: no se documentan datos de entrenamiento, composicion del dataset ni procesos de alineacion, lo que impide evaluar sesgos de forma rigurosa.
-- Riesgo elevado de alucinacion no cuantificado: al no haber benchmarks publicados, no existe evidencia empirica sobre la fiabilidad de sus respuestas.
-- Procedencia de los pesos incierta: al ser un merge, las licencias y condiciones de los checkpoints donantes deben verificarse individualmente; la licencia Apache 2.0 declarada en este repositorio no garantiza por si sola la compatibilidad de todos los componentes fusionados.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para despliegues automatizados y para la integracion en pipelines de CI/CD.
-- Idiomas y contexto desconocidos: no se puede planificar su uso multilingue ni para tareas que dependan de ventanas de contexto largas sin verificacion previa.
-- Madurez muy baja: cero descargas y un unico "like" en el momento de redaccion; no hay evidencia de uso comunitario ni de validacion por terceros.
-- Uso en ciberseguridad ofensiva: la especializacion declarada implica riesgo de generacion de contenido dual-use; deben aplicarse politicas de uso aceptable y filtros en produccion.
-- No apto como dependencia critica de produccion sin evaluacion interna previa con datos propios.
+- Al ser un merge comunitario, no cuenta con evaluacion estandarizada ni benchmarks publicados que respalden su rendimiento.
+- El modelo base es una variante "uncensored", lo que puede implicar menor alineacion de seguridad y mayor probabilidad de respuestas inapropiadas o no filtradas.
+- Riesgo de alucinacion inherente a los modelos de 27B sin verificacion factual; especialmente critico en analisis de seguridad y descompilacion.
+- Idiomas soportados limitados al ingles segun la model card; el rendimiento en castellano no esta documentado.
+- Longitud de contexto no especificada, lo que impide garantizar tareas de contexto largo.
+- La sintaxis de tool calling puede no ser compatible con clientes agenticos sin el super-adapter LoRA recomendado por el autor.
+- Aunque la licencia es Apache 2.0, los modelos de origen pueden tener condiciones adicionales no reflejadas; conviene revisar cada model card base antes de uso comercial.
+- El tamano del repositorio (138 GB) y la ausencia de datos de entrenamiento dificultan la reproducibilidad y auditoria.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder309-cybersecurity-veriloop
-- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este checkpoint.
+- Modelo en Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder309-cybersecurity-veriloop
+- Modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- Modelo base 2: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Modelo base 3: https://huggingface.co/xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8
+- Modelo base 4: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
+- Merge de 2 componentes: https://huggingface.co/jashepp/Qwen3.8-27B-2x-ties-merge-brilliance-coder390-GGUF
+- Merge de 5 componentes: https://huggingface.co/jashepp/Qwen3.8-27B-5x-ties-merge-brilliance-omnisre-coder390-cybersecurity-veriloop-GGUF
+- Super-adapter LoRA: https://huggingface.co/jashepp/Qwen3.8-27B-super-adapter-Quants-LoRA-GGUF
+- Paper TIES: https://arxiv.org/abs/2306.01708
+- Repositorio mergekit: https://github.com/arcee-ai/mergekit

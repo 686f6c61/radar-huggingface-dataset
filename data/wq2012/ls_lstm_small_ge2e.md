@@ -1,102 +1,91 @@
 # wq2012/ls_lstm_small_ge2e
 
 ## Resumen
+`ls_lstm_small_ge2e` es un modelo de extracción de embeddings de locutor (speaker verification y speaker recognition) desarrollado por wq2012 como parte de la biblioteca FlaxSpeaker, una reimplementación desde cero en JAX/Flax de algoritmos publicados de reconocimiento de locutor. El modelo convierte fragmentos de audio en vectores de 192 dimensiones que representan la identidad vocal, y la verificación se realiza mediante similitud coseno entre embeddings. Es relevante para desarrolladores que necesitan un modelo de speaker verification ligero, con licencia Apache 2.0, exportable a TFLite y ejecutable en CPU, útil como referencia reproducible en entornos con recursos limitados.
 
-FlaxSpeaker `ls_lstm_small_ge2e` es un modelo de verificación e identificación de hablante (speaker verification/recognition) que genera embeddings de voz de 192 dimensiones. Lo desarrolla el autor independiente `wq2012` como parte de la biblioteca FlaxSpeaker, una reimplementación desde cero en JAX/Flax de algoritmos publicados de reconocimiento de hablante (GE2E, Dr-Vectors, ATP y PFAS). No es un producto oficial de Google, aunque se basa exclusivamente en artículos académicos públicos.
+La arquitectura es una LSTM pequeña con pooling temporal atentivo (ASP) y objetivo de entrenamiento GE2E softmax con centroides leave-one-out exactos. Con solo 1.710.914 parámetros de inferencia (encoder más cabeza de scoring), es un modelo deliberadamente compacto. Se entrenó únicamente sobre LibriSpeech (232 locutores, 5.788 enunciados) durante 2.400 pasos (~13,27 épocas), por lo que es un checkpoint de benchmark de corpus pequeño, no una reproducción a gran escala de los resultados de los papers originales.
 
-El modelo resuelve el problema de extraer una representación vectorial compacta de la identidad vocal de un hablante, que luego se compara mediante similitud coseno para tareas de verificación (¿son la misma persona?) e identificación (¿quién habla?). Su relevancia radica en ser un checkpoint pequeño (1,7 M de parámetros) y ligero, entrenado en CPU, útil como referencia reproducible dentro de un benchmark controlado de código abierto.
-
-Arquitectura LSTM con pooling atencional (`asp`), objetivo de entrenamiento GE2E softmax y salida de 192 dimensiones. El entrenamiento se limita a LibriSpeech (232 hablantes, 5.788 enunciados) y 2.400 pasos, por lo que es un checkpoint de benchmark de corpus pequeño, no un modelo de estado del arte.
+El modelo se distribuye en safetensors, msgpack de Flax y exportaciones TFLite fp32 e int8 del encoder con ventana fija de 180 frames (1,8 s). Su interés actual reside en ser una pieza de referencia abierta y reproducible para comparaciones relativas dentro del benchmark FlaxSpeaker, no un modelo de estado del arte.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LSTM (`small`) con pooling temporal atencional (`asp`) |
+| Arquitectura | LSTM pequeña con pooling temporal atentivo (ASP) |
 | Parametros totales | 1.710.914 (encoder + cabeza de scoring; excluye pesos del clasificador solo de entrenamiento) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (entrada de audio; ventana fija de 180 frames = 1,8 s en export TFLite) |
-| Tipos de cuantizacion | FP32 e INT8 (exportaciones `model_fp32.tflite` / `model_int8.tflite`, solo encoder) |
-| Idiomas soportados | no disponible (entrenado solo con LibriSpeech, inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, flax msgpack, TFLite (FP32/INT8) |
-| Dimension de embedding | 192 |
-| Objetivo de entrenamiento | GE2E softmax (centroides leave-one-out exactos) |
-| Scorer de verificacion | Similitud coseno |
-| Frontend de audio | Mel log-natural de 80 dims @ 16 kHz + VAD por energia + CMVN (`flaxspeaker.AudioFrontend`) |
-| Datos de entrenamiento | LibriSpeech (232 hablantes, 5.788 enunciados) |
-| Pasos / batch | 2.400 pasos x 32 enunciados (8 hablantes x 4), ~13,27 epocas, semilla 42 |
+| Longitud de contexto | no aplica; ventana de audio de 180 frames (1,8 s) en las exportaciones TFLite; entrenamiento con recortes variables U(90, 180) frames |
+| Tipos de cuantizacion | fp32 e int8 (exportaciones TFLite del encoder) |
+| Idiomas soportados | no disponible (modelo acústico independiente del idioma; entrenado solo con LibriSpeech, inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, flax_model.msgpack, model_fp32.tflite, model_int8.tflite |
 
 ## Arquitectura y entrenamiento
+El backbone es una LSTM de tamaño pequeño seguida de pooling temporal atentivo (ASP, repurposed de un paper de identificación de idioma) que produce un embedding de 192 dimensiones. La función de pérdida es GE2E softmax (Wan et al. 2018, Eq. 6) con centroides leave-one-out exactos, y la verificación se puntúa con similitud coseno. El frontend de audio es propio de FlaxSpeaker: Mel logarítmico natural de 80 dimensiones a 16 kHz, VAD a nivel de frame basado en energía y CMVN; no es un `AutoFeatureExtractor` de Hugging Face.
 
-El modelo usa un backbone LSTM de tamano `small` con pooling temporal atencional (`asp`, repurposed del paper ATP de identificación de idioma). La cabeza de entrenamiento es GE2E softmax con centroides leave-one-out exactos, y la verificación en inferencia se realiza por similitud coseno sobre embeddings de 192 dimensiones. El frontend convierte audio a Mel log-natural de 80 dimensiones a 16 kHz, con detección de actividad vocal por energía y normalización CMVN.
-
-El entrenamiento se realizó desde cero en JAX/Flax, en una estación de trabajo CPU con semilla 42, durante 2.400 pasos de gradiente (warmup de 240 pasos) con mini-batches de 32 enunciados (8 hablantes x 4 enunciados), lo que supone ~13,27 épocas sobre el pool de entrenamiento de LibriSpeech (232 hablantes, 5.788 enunciados). Se usaron recortes de longitud variable `U(90, 180)` frames con máscara de validez exacta. No se reporta RLHF ni DPO. El autor indica que es un checkpoint convergido de benchmark de corpus pequeño, no una reproducción a gran escala de los resultados de los papers.
+El entrenamiento se realizó en una estación de trabajo CPU con semilla 42, 2.400 pasos de gradiente (warmup de 240 pasos), mini-batches de 32 enunciados (8 locutores x 4 enunciados), lo que supone ~13,27 épocas sobre 5.788 enunciados de 232 locutores de LibriSpeech. Se usaron recortes de longitud variable U(90, 180) frames con máscara de validez exacta. No se menciona RLHF ni DPO; el objetivo es puramente de verificación de locutor. El autor documenta desviaciones respecto a los papers originales y una huella de pérdida en el paso 0 de 2,1498, que coincide con la de los pesos publicados.
 
 ## Capacidades
-
-- Extracción de embeddings de hablante de 192 dimensiones (`feature-extraction`).
-- Verificación de hablante (1:1) mediante similitud coseno.
-- Identificación de hablante (1:N) comparando embeddings contra una galería.
-- Scoring multi-utterance (se reportan métricas 1-utt y 3-utt).
-- Exportación a TFLite FP32 e INT8 para despliegue ligero (solo encoder, ventana fija de 180 frames).
-- No soporta tool calling, agentes, visión ni audio generativo; es un modelo discriminativo de representación.
-- Capacidades multilingües: no disponibles; entrenado solo con inglés (LibriSpeech).
+- Extracción de embeddings de locutor de 192 dimensiones a partir de audio.
+- Verificación de locutor (1:1) mediante similitud coseno.
+- Identificación de locutor (1:N) por comparación contra un conjunto de embeddings de referencia.
+- Reconocimiento de locutor independiente del contenido lingüístico.
+- Exportación a TFLite fp32 e int8 del encoder para despliegue en dispositivos.
+- Cálculo de métricas de evaluación: EER, minDCF y ROC-AUC.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
+- No tiene capacidades de visión, audio generativo ni texto.
+- Capacidades multilingües: no disponibles; entrenado solo con LibriSpeech (inglés).
 
 ## Casos de uso
-
-- Verificación biométrica de voz en aplicaciones de autenticación: extraer el embedding de una muestra y compararlo por coseno contra la plantilla del usuario, con umbral calibrado sobre EER.
-- Identificación de hablante en grabaciones cortas: segmentar audio, generar embeddings por segmento y asignar hablante por vecino más cercano en una galería de referencia.
-- Diarización ligera de reuniones: agrupar segmentos de audio por similitud de embeddings para separar interlocutores en entornos controlados.
-- Prototipado e investigación reproducible: servir como referencia de bajo coste dentro del benchmark FlaxSpeaker para comparar arquitecturas y objetivos de pérdida.
-- Despliegue en dispositivos embebidos o móviles: las exportaciones TFLite INT8 permiten inferencia del encoder con ventanas fijas de 1,8 s en hardware limitado.
-- Filtrado y control de calidad de datasets de voz: detectar inconsistencias de hablante en corpus de audio mediante comparación de embeddings.
-- Pruebas de regresión en pipelines de audio: validar que cambios en el frontend o en el preprocesado no degradan la separabilidad de hablantes.
+- Verificación biométrica de acceso: el modelo genera un embedding del audio entrante y lo compara por similitud coseno con el embedding de referencia del usuario, permitiendo autenticación por voz en aplicaciones con recursos limitados.
+- Identificación de hablante en reuniones: procesar segmentos de audio y comparar embeddings contra un registro de participantes para etiquetar quién habla en cada tramo.
+- Despliegue en dispositivos embebidos: las exportaciones TFLite int8 del encoder permiten ejecutar la extracción de embeddings en móviles o hardware de bajo consumo con ventanas fijas de 1,8 s.
+- Filtrado y diarización básica: usar los embeddings como característica para agrupar segmentos de audio por locutor en pipelines de transcripción.
+- Benchmark de referencia para investigación: comparar variantes de arquitectura, pooling o pérdida dentro del benchmark FlaxSpeaker con métricas EER, minDCF y ROC-AUC reproducibles.
+- Detección de locutor en grabaciones de call center: extraer embeddings de cada llamada y verificar la identidad del cliente frente a una base de referencia.
+- Prototipado educativo: servir como ejemplo completo y ligero de un sistema de speaker verification en JAX/Flax, entrenable en CPU.
 
 ## Benchmarks y rendimiento
+Resultados de evaluación publicados en la model card (LibriSpeech in-domain, EER):
 
-Resultados reportados por el autor en `eval_results.json` (EER en dominio LibriSpeech):
+| Metrica | Paso 400 | Paso 2000 | Paso 2400 (final) |
+|---|---|---|---|
+| EER 1-utt | 20,00 % | 14,67 % | 14,00 % |
+| EER 3-utt | 16,40 % | 10,80 % | 10,20 % |
+| EER pooled universal 1-utt | no disponible | no disponible | 21,73 % |
+| EER pooled universal 3-utt | no disponible | no disponible | 18,27 % |
 
-| Metrica | 1-utt | 3-utt |
-|---|---|---|
-| EER LibriSpeech (paso 400) | 20,00% | 16,40% |
-| EER LibriSpeech (paso 2000, knee) | 14,67% | 10,80% |
-| EER LibriSpeech (paso 2400, final) | 14,00% | 10,20% |
-| EER Universal Pooled (final) | 21,73% | 18,27% |
-
-Otras métricas reportadas: minDCF, ROC-AUC y subconjunto VoxCeleb1-O de 10 hablantes (valores concretos no incluidos en la información disponible). El intervalo de confianza bootstrap al 95% con 8.000 ensayos tiene una semianchura de ~0,8% absoluto; la desviación estándar entre semillas 0-2 del EER pooled 1-utt es de 0,08-0,41% absoluto. Como referencia externa, el autor cita ECAPA-TDNN entrenado en VoxCeleb2-dev con ~0,9% EER en VoxCeleb1-O completo y sistemas sub-1M de parámetros con ~2% (EfficientTDNN, 2022); estos no son comparables directamente por la diferencia de corpus.
+La desviación estándar entre semillas 0-2 del EER pooled 1-utt es de 0,08-0,41 % absoluto, y el intervalo de confianza bootstrap del 95 % con 8.000 ensayos tiene una semianchura de ~0,8 %. El autor cita como orientación sistemas ECAPA-TDNN entrenados en VoxCeleb2-dev con ~0,9 % EER en VoxCeleb1-O y sistemas de menos de 1M de parámetros con ~2 % (EfficientTDNN, Wang et al. 2022), pero advierte que este checkpoint no es comparable directamente por la diferencia de corpus de entrenamiento.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: inferior a 1 GB; el modelo tiene 1,7 M de parámetros y el repo ocupa 0,1 GB.
-- GPU recomendadas: cualquier GPU moderna; no requiere A100 ni H100. Funciona en CPU.
-- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, GTX 1650, etc.) e incluso en CPU.
-- Opciones de despliegue: JAX/Flax nativo, TFLite (FP32/INT8) para móvil/embebido, exportación vía `jax2tf`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: inferior a 1 GB; el modelo tiene 1,7M de parámetros y el repositorio ocupa 0,1 GB.
+- GPU recomendadas: no requiere GPU; se entrenó y evaluó en CPU. Cualquier GPU consumer (RTX 3060 o superior) es más que suficiente.
+- Cabe en cualquier GPU consumer y en CPU; las exportaciones TFLite están pensadas para dispositivos embebidos.
+- Opciones de despliegue: JAX/Flax con la biblioteca `flaxspeaker`, TFLite runtime (fp32 o int8) para el encoder, y serialización nativa msgpack de Flax.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/entrada | EER reportado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto/ventana | EER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlaxSpeaker `ls_lstm_small_ge2e` | 1,71 M | ventana fija 180 frames (1,8 s) en TFLite | 14,00% (1-utt) / 10,20% (3-utt) en LibriSpeech | Apache 2.0 | Hugging Face, PyPI |
-| ECAPA-TDNN (Desplanques et al., 2020) | no disponible | no disponible | ~0,9% en VoxCeleb1-O | no disponible | referencia académica |
-| EfficientTDNN (Wang et al., 2022) | sub-1M | no disponible | ~2% en VoxCeleb1-O | no disponible | referencia académica |
+| ls_lstm_small_ge2e | 1.710.914 | 180 frames (1,8 s) en TFLite; recortes U(90,180) en entrenamiento | 14,00 % (1-utt) / 10,20 % (3-utt) en LibriSpeech | apache-2.0 | Hugging Face, PyPI, GitHub |
+| ECAPA-TDNN (Desplanques et al. 2020) | no disponible | no disponible | ~0,9 % en VoxCeleb1-O | no disponible | referencia bibliográfica |
+| EfficientTDNN (Wang et al. 2022) | < 1M | no disponible | ~2 % en VoxCeleb1-O | no disponible | referencia bibliográfica |
 
-La comparación directa no es equitativa: los modelos de referencia se entrenan en VoxCeleb2-dev (5.994 hablantes, ~1,1 M enunciados), mientras que este checkpoint usa 232 hablantes y 5.788 enunciados.
+La comparación directa no es válida por diferencias de corpus de entrenamiento (232 locutores frente a 5.994 de VoxCeleb2-dev); los valores se incluyen solo como orientación.
 
 ## Limitaciones y advertencias
-
-- Entrenado solo con LibriSpeech (232 hablantes, inglés); el EER absoluto está acotado por la diversidad de hablantes y no es comparable a sistemas industriales.
-- Es un checkpoint de benchmark de corpus pequeño, no una reproducción a gran escala de los papers citados.
-- Riesgo de sesgo por el corpus: acento, género, edad y condiciones de grabación de LibriSpeech condicionan el rendimiento fuera de dominio.
-- El EER pooled universal (21,73% 1-utt) indica degradación notable fuera del dominio de entrenamiento.
-- El frontend no es un `AutoFeatureExtractor` de Hugging Face; requiere `flaxspeaker.AudioFrontend`, lo que complica la integración con pipelines estándar.
-- Las exportaciones TFLite cubren solo el encoder y usan ventana fija sin máscara de 180 frames, por lo que no admiten audio de longitud variable sin recorte.
-- Licencia Apache 2.0 permite uso comercial, pero el autor declara explícitamente que no es un producto oficial de Google.
-- No hay datos de benchmarks en tareas multilingües ni de robustez ante ruido.
+- Entrenado solo con 232 locutores de LibriSpeech; la diversidad de locutores limita el EER absoluto frente a sistemas industriales.
+- EER in-domain de 14,00 % (1-utt) y 21,73 % en pooled universal, muy lejos de sistemas de estado del arte.
+- No es una reproducción a gran escala de los papers originales; es un checkpoint de convergencia sobre corpus pequeño.
+- Riesgo de sesgo por el corpus de entrenamiento (LibriSpeech, inglés, dominio de lectura de libros).
+- No se documentan evaluaciones fuera de dominio más allá del subconjunto de 10 locutores de VoxCeleb1-O incluido en `eval_results.json`.
+- El frontend de audio es propio de FlaxSpeaker y no es compatible con `AutoFeatureExtractor` de Hugging Face; requiere usar la biblioteca del autor.
+- Las exportaciones TFLite solo cubren el encoder y usan una ventana fija sin máscara de 180 frames, lo que limita la variabilidad de duración.
+- Licencia Apache 2.0 permite uso comercial, pero el autor declara que no es un producto oficialmente soportado por Google.
+- Riesgo de falsos positivos y negativos en verificación biométrica; no debe usarse como único factor de autenticación en producción sin umbrales calibrados y validación propia.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/wq2012/ls_lstm_small_ge2e
 - Colección FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker
 - GitHub: https://github.com/wq2012/FlaxSpeaker

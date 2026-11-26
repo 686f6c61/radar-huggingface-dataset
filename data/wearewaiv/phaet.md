@@ -1,79 +1,79 @@
 # wearewaiv/phaet
 
 ## Resumen
-Phaet es un modelo de extracción de características visuales especializado en patología digital, desarrollado por el equipo de WeAreWaiv. Se trata de un ajuste fino (fine-tuning) del modelo base Owkin Phikon-v2, un encoder de visión preentrenado sobre imágenes histopatológicas. Phaet hereda la arquitectura y los pesos del encoder original y los adapta mediante entrenamiento supervisado para tareas de representación de imágenes médicas, manteniendo la interfaz de extracción de features de Hugging Face Transformers.
+Phaet es un codificador visual (encoder) especializado en patologia computacional, desarrollado por wearewaiv y publicado en Hugging Face. Se trata de un fine-tuning del modelo base owkin/phikon-v2, un encoder de vision entrenado sobre imagenes histopatologicas, y esta orientado a la extraccion de caracteristicas (embeddings) de imagenes medicas para tareas downstream como clasificacion de tejidos, deteccion de tumores o recuperacion de imagenes similares.
 
-Con aproximadamente 303 millones de parámetros, Phaet se posiciona como un encoder de tamaño medio (equivalente a un ViT-L) orientado a la generación de embeddings densos para imágenes de tejidos. Su relevancia actual radica en el creciente interés por pipelines de patología computacional que requieren representaciones robustas para clasificación de tejidos, detección de tumores o recuperación de imágenes similares, sin necesidad de entrenar desde cero sobre datasets histológicos de gran escala.
+El modelo cuenta con aproximadamente 303 millones de parametros y se distribuye en formato safetensors con codigo personalizado (custom_code), lo que implica que su carga requiere confiar en la implementacion remota del autor. La licencia es "other" y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que limita su uso directo en pipelines automatizados sin gestion de credenciales.
 
-El modelo se distribuye con acceso restringido (gated) en Hugging Face y bajo licencia "other", lo que obliga a revisar las condiciones de uso antes de cualquier despliegue comercial. No se dispone de información pública sobre idiomas, benchmarks ni detalles del dataset de ajuste fino en la información proporcionada.
+Su relevancia actual radica en la creciente demanda de encoders especializados en dominios medicos que permitan construir sistemas de analisis de laminas histologicas sin entrenar desde cero. Al partir de Phikon-v2, hereda representaciones entrenadas sobre grandes volumenes de imagenes de patologia, y el fine-tuning busca adaptarlas a un objetivo concreto que no se detalla en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder de visión (transformers), fine-tuning de owkin/phikon-v2 |
+| Arquitectura | Encoder de vision (transformer) basado en owkin/phikon-v2; detalles internos no disponibles |
 | Parametros totales | 303.351.808 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de visión, sin contexto textual declarado) |
+| Longitud de contexto | no disponible (modelo de vision, sin contexto textual) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo de imagen, sin procesamiento de lenguaje) |
-| Licencia | other (acceso restringido, requiere aceptar condiciones) |
-| Formato de pesos | safetensors |
+| Idiomas soportados | no disponible (modelo de imagen) |
+| Licencia | other (acceso restringido, gated) |
+| Formato de pesos | safetensors con custom_code |
 
 ## Arquitectura y entrenamiento
-Phaet es un encoder de visión basado en transformer, derivado directamente de Owkin Phikon-v2 mediante fine-tuning. El modelo base Phikon-v2 es un encoder preentrenado sobre imágenes histopatológicas con objetivos de representación autosupervisada, y Phaet lo adapta para tareas específicas de extracción de características. El pipeline declarado en Hugging Face es `image-feature-extraction`, lo que confirma que su salida principal son embeddings de imagen y no predicciones textuales.
+La informacion disponible indica que Phaet es un encoder de vision con fine-tuning sobre owkin/phikon-v2, un modelo de la familia Phikon orientado a patologia. La libreria declarada es transformers y el pipeline es image-feature-extraction, lo que confirma que su salida principal son embeddings de imagen en lugar de texto generado. El tag "finetuned_encoder" sugiere que se ha ajustado la torre de vision completa o parte de ella para una tarea especifica.
 
-No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset de ajuste fino, el uso de RLHF/DPO (no aplicable a un encoder de visión) ni innovaciones técnicas específicas como decodificación especulativa o atención lineal. El repositorio incluye código personalizado (`custom_code`) y está etiquetado con `finetuned_encoder`, lo que sugiere que la carga del modelo puede requerir `trust_remote_code=True` en Transformers.
+No se dispone de datos sobre el volumen de tokens o imagenes de entrenamiento, la composicion del dataset de fine-tuning, el uso de tecnicas como RLHF/DPO (poco habituales en encoders) ni innovaciones tecnicas concretas como atencion lineal o decodificacion especulativa. El modelo incluye codigo personalizado, por lo que la arquitectura exacta solo es verificable inspeccionando los archivos del repositorio.
 
 ## Capacidades
-- Extracción de características (embeddings) de imágenes histopatológicas para tareas downstream.
-- Generación de representaciones densas adecuadas para clasificación, clustering y recuperación de imágenes.
-- Integración con el ecosistema Hugging Face Transformers mediante el pipeline `image-feature-extraction`.
-- Soporte de inferencia en GPU y CPU a través de PyTorch (formato safetensors).
-- No soporta generación de texto, tool calling, agentes ni razonamiento multi-step.
-- No soporta visión generalista (no es un VLM); está especializado en imágenes médicas de patología.
-- Capacidades multilingües no aplicables (modelo sin componente textual).
+- Extraccion de caracteristicas (embeddings) de imagenes histopatologicas para tareas downstream.
+- Clasificacion de parches o regiones de tejido mediante cabezales entrenados sobre los embeddings.
+- Recuperacion de imagenes por similitud (image retrieval) en colecciones de laminas.
+- Segmentacion o deteccion aguas abajo si se anaden cabezales adecuados sobre las caracteristicas.
+- No es un modelo generativo: no produce texto, codigo ni respuestas conversacionales.
+- No dispone de tool calling, function calling ni capacidades de agente.
+- Capacidades multilingues no aplicables (modelo puramente visual).
+- Modo thinking, vision general, audio: no disponibles.
 
 ## Casos de uso
-- Clasificación de tejidos en patología digital: se extraen embeddings de parches histológicos y se entrena un clasificador ligero (regresión logística o MLP) sobre ellos para distinguir tipos de tejido o subtipos tumorales.
-- Recuperación de imágenes similares (image retrieval): los embeddings permiten construir índices vectoriales para buscar parches morfológicamente parecidos en grandes archivos de biopsias.
-- Detección de regiones de interés: los features se usan como entrada a modelos de segmentación o detección para localizar áreas tumorales en portaobjetos de patología computacional.
-- Preentrenamiento de pipelines de múltiples instancias (MIL): los embeddings de parches alimentan agregadores tipo attention-MIL para diagnóstico a nivel de portaobjetos.
-- Control de calidad de datasets histológicos: agrupamiento de parches por similitud para detectar duplicados, artefactos o outliers en colecciones de imágenes médicas.
-- Investigación traslacional: generación de representaciones para estudios de asociación entre morfología y variables clínicas, reduciendo la necesidad de entrenar encoders desde cero.
+- Analisis de laminas histologicas en investigacion: usar el modelo para extraer embeddings de parches de tejido y entrenar un clasificador ligero de tumores benignos frente a malignos, aprovechando las representaciones preentrenadas en patologia.
+- Recuperacion de casos similares: indexar embeddings de un archivo de laminas con FAISS o similar para que patologos localicen imagenes morfologicamente parecidas a un caso nuevo.
+- Control de calidad de datasets medicos: detectar duplicados o imagenes atipicas comparando embeddings y distancias coseno antes de entrenar otros modelos.
+- Preprocesado para pipelines de IA diagnostica: servir como extractor congelado en una arquitectura en la que un cabezal especifico se entrena con pocos datos etiquetados.
+- Investigacion de representaciones: estudiar que caracteristicas morfologicas captura el fine-tuning respecto a Phikon-v2 mediante analisis de vecinos cercanos y visualizacion de embeddings.
+- Prototipado de herramientas de triaje: generar embeddings en lote para priorizar laminas con patrones poco frecuentes en revisiones de laboratorio.
+- Fine-tuning adicional en dominios concretos: partir de este encoder para adaptarlo a tinciones o tejidos especificos con datasets pequenos, dado que ya esta ajustado sobre Phikon-v2.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia en FP32: aproximadamente 1,2 GB solo para pesos (303 M de parámetros), más overhead de activaciones; en la práctica, 2-4 GB para lotes pequeños de parches.
-- VRAM estimada en FP16/BF16: alrededor de 0,6 GB para pesos, con overhead adicional; cabe holgadamente en GPUs consumer.
-- GPU recomendadas: RTX 3060/4060 o superiores para inferencia; A100/H100 solo necesarias para procesar grandes volúmenes de parches en paralelo.
-- Cabe en GPU consumer: sí, en cualquier GPU con 4 GB o más de VRAM para lotes moderados.
-- Opciones de despliegue: Transformers con PyTorch (requiere `trust_remote_code=True` por el `custom_code`), exportación a ONNX no confirmada, integración en pipelines propios con `AutoModel`.
-- Latencia y throughput estimados: no disponibles; dependerán del tamaño de parche y del lote, pero al ser un ViT-L se esperan decenas a cientos de parches por segundo en una RTX 4090.
+- VRAM estimada para inferencia en fp32: en torno a 1,2 GB solo para pesos (303 M parametros), mas activaciones; en la practica 2-4 GB para lotes pequenos de imagenes.
+- VRAM estimada en fp16/bf16: aproximadamente 0,6-0,7 GB para pesos, con margen adicional para activaciones.
+- GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4070, RTX 4090); A100/H100 solo necesarias para procesar grandes volumenes en paralelo.
+- Cabe en GPU de consumo: si, en modelos con 8 GB de VRAM en adelante.
+- Opciones de despliegue: transformers (con custom_code y trust_remote_code), posible exportacion a ONNX o TorchScript no confirmada; vLLM, llama.cpp, Ollama y TGI no aplican a un encoder visual de este tipo.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Acceso | Especialidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wearewaiv/phaet | 303 M | no disponible | other (gated) | Restringido | Patología (fine-tune de Phikon-v2) |
-| owkin/phikon-v2 | no disponible en la información | no disponible | no disponible | no disponible | Patología (encoder base) |
-| Otros encoders de patología (p. ej. UNI, Virchow) | no disponible en la información | no disponible | no disponible | no disponible | Patología |
-
-No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+| wearewaiv/phaet | 303 M | no aplica (vision) | no disponible | other (gated) | Hugging Face, acceso restringido |
+| owkin/phikon-v2 | no disponible | no aplica (vision) | no disponible en esta ficha | no disponible | Hugging Face (modelo base) |
+| Otros encoders de patologia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Licencia "other": es imprescindible revisar los términos exactos para uso comercial, ya que pueden imponer restricciones adicionales heredadas del modelo base.
-- Especialización limitada: no es un modelo de propósito general; su uso fuera de imágenes histopatológicas probablemente degrade la calidad de los embeddings.
-- Riesgo de sesgo: al derivar de un dataset histológico concreto, puede heredar sesgos de representación demográfica, de tinción o de equipamiento de los datos originales.
-- Sin información sobre el dataset de ajuste fino: no se puede evaluar la cobertura de tejidos, tipos de tinción ni distribución geográfica.
-- No apto para diagnóstico clínico directo sin validación regulatoria; su salida son embeddings, no predicciones clínicas.
-- Requiere `trust_remote_code=True` por el código personalizado, lo que implica revisar el código antes de ejecutarlo en producción.
-- No hay benchmarks publicados que permitan comparar su rendimiento frente a otros encoders de patología.
+- Modelo de vision especializado: no genera texto ni soporta conversacion, tool calling o agentes.
+- Acceso restringido (gated): requiere aceptar condiciones y autenticacion en Hugging Face, lo que complica integraciones automatizadas y CI/CD.
+- Licencia "other": las condiciones exactas de uso comercial no se detallan en la informacion disponible; es imprescindible revisarlas antes de cualquier despliegue en produccion.
+- Codigo personalizado: la carga exige trust_remote_code, lo que introduce riesgo de seguridad si no se audita el repositorio.
+- Dominio medico: sesgos derivados de la distribucion de tinciones, laboratorios y poblaciones del dataset de entrenamiento; no se dispone de informacion sobre su composicion.
+- Riesgo de generalizacion limitada: al ser un fine-tuning, puede rendir peor fuera de la tarea y dominio para los que fue ajustado.
+- No apto como dispositivo medico: no se dispone de validacion clinica ni de resultados de benchmarks que respalden uso diagnostico.
+- Riesgo de alucinacion no aplica directamente por no ser generativo, pero los embeddings pueden inducir clasificaciones erroneas si se usan cabezales mal calibrados.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/wearewaiv/phaet
+- Modelo en Hugging Face: https://huggingface.co/wearewaiv/phaet
 - Modelo base: https://huggingface.co/owkin/phikon-v2
-- Paper referenciado en tags (arXiv:2607.22861): https://arxiv.org/abs/2607.22861
+- Referencia arXiv citada en tags: arxiv:2607.22861 (identificador presente en los tags; no verificado)

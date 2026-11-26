@@ -2,47 +2,49 @@
 
 ## Resumen
 
-DNA-175M es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow bajo el paraguas de Convergent Intelligence LLC: Research Division. Segun las etiquetas del repositorio, se trata de un modelo de arquitectura liquid-former (una variante de red neuronal con dinamica continua inspirada en los liquid neural networks) orientado a generacion de texto conversacional. El nombre sugiere un tamano de aproximadamente 175 millones de parametros, aunque el autor no confirma esta cifra de forma explicita en la model card.
+DNA-175M es un modelo de generación de texto publicado en Hugging Face por el usuario reaperdoesntknow bajo el sello Convergent Intelligence LLC: Research Division. Según las etiquetas del repositorio, emplea una arquitectura denominada "liquid-former", se distribuye en formato transformers/PyTorch y está orientado a generación de texto conversacional. El nombre sugiere un tamaño de aproximadamente 175 millones de parámetros, aunque no se confirma en la información disponible.
 
-El modelo se presenta como parte de un marco teorico propio denominado Discrepancy Calculus (DISC), una aproximacion de teoria de la medida que el autor describe para analizar la brecha entre la salida esperada y la observada durante el entrenamiento. La model card, no obstante, es en su mayor parte una plantilla autogenerada por Hugging Face sin rellenar: la mayoria de los campos tecnicos (datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "More Information Needed".
+La model card es una plantilla automática de Hugging Face sin cumplimentar: no documenta datos de entrenamiento, hiperparámetros, evaluación, idiomas ni licencia. La única información sustantiva es la sección "Discrepancy Calculus Foundation", que sitúa al modelo dentro de un marco teórico propio del autor (DISC) centrado en el análisis de discrepancias entre comportamiento esperado y observado durante el entrenamiento.
 
-Su relevancia practica es limitada y debe evaluarse con cautela. El repositorio acumula 1411 descargas y un unico "like", y la documentacion disponible no permite verificar capacidades, calidad ni condiciones de uso. Esta ficha recoge exclusivamente lo que puede inferirse de los metadatos y del texto de la model card, marcando como "no disponible" todo aquello que el autor no documenta.
+Su relevancia actual es limitada y fundamentalmente exploratoria: se trata de un modelo pequeño, con escasa tracción comunitaria (1 like, 1219 descargas) y sin benchmarks publicados. Resulta útil únicamente como objeto de estudio de la arquitectura liquid-former o del marco DISC, no como componente listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | liquid-former (segun etiqueta del repositorio); detalles no disponibles |
-| Parametros totales | no disponible (el nombre sugiere ~175M, sin confirmar) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | liquid-former (transformer, según tags; detalles no disponibles) |
+| Parametros totales | aproximadamente 175M (inferido del nombre; no confirmado) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en el repo: 0,7 GB, compatible con transformers) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio de 0,7 GB, compatible con transformers/pytorch) |
+| Formato de pesos | safetensors/PyTorch (librería transformers); GGUF no confirmado |
 
 ## Arquitectura y entrenamiento
 
-La unica referencia arquitectonica es la etiqueta "liquid-former" del repositorio, que apunta a una familia de modelos con dinamica de estado continua en lugar de un transformer estandar. No se documenta el numero de capas, dimensiones ocultas, mecanismo de atencion ni objetivo de entrenamiento concreto. El tamano del repositorio (0,7 GB) es coherente con un modelo de pocos cientos de millones de parametros en precision de 16 bits, pero no permite confirmar la cifra exacta.
+La etiqueta principal es "liquid-former", un término que no corresponde a una arquitectura estándar ampliamente documentada y que la model card no desarrolla. Por los tags (transformers, pytorch, text-generation) y el pipeline declarado, se trata de un modelo autoregresivo de generación de texto implementado sobre la librería transformers. No se especifica si incorpora mecanismos de atención lineal, capas recurrentes de estado continuo (en la línea de liquid neural networks) o componentes híbridos.
 
-No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card menciona el marco Discrepancy Calculus y conceptos como "operador de discrepancia", "conjuntos de salto" y "ghost imprinting", pero se trata de descripciones teoricas sin datos empiricos asociados. Tampoco se detallan hiperparametros, regimen de precision ni infraestructura de computo.
+No hay información sobre volumen de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni procedimiento de ajuste. La sección "Discrepancy Calculus Foundation" describe un marco teórico (operador de discrepancia, jump sets, ghost imprinting) con referencias a documentos del propio autor (DOI 10.57967/hf/8194 y 10.57967/hf/8165), pero no aporta detalles verificables sobre el entrenamiento concreto de este checkpoint. El tag arxiv:1910.09700 corresponde a Lacoste et al. (2019) sobre impacto ambiental y no a un paper del modelo.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta "conversational" del repositorio.
-- Generacion de texto autoregresiva mediante la libreria transformers (pipeline text-generation).
-- Compatibilidad declarada con endpoints (etiqueta "endpoints_compatible"), lo que sugiere despliegue mediante la infraestructura de inferencia de Hugging Face.
-- No se documentan capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling ni agentes.
-- No se documentan capacidades multilingues ni modo de razonamiento extendido (thinking mode).
+- Generación de texto autoregresiva (pipeline text-generation).
+- Orientación conversacional según el tag "conversational".
+- Compatibilidad con endpoints de Hugging Face (tag endpoints_compatible).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Prototipado de chatbots conversacionales: el modelo puede emplearse como base para experimentar con generacion de respuestas en dialogos de corta duracion, siempre que se valide su calidad en el dominio concreto.
-- Investigacion sobre arquitecturas liquid-former: resulta de interes para quienes estudian redes con dinamica continua y quieran inspeccionar pesos y comportamiento de un modelo pequeno de esta familia.
-- Experimentos academicos con el marco Discrepancy Calculus: permite reproducir o contrastar las afirmaciones teoricas del autor sobre operadores de discrepancia y conjuntos de salto.
-- Generacion de texto en entornos con recursos limitados: su tamano reducido (repositorio de 0,7 GB) facilita ejecucion en hardware modesto para pruebas de concepto.
-- Fine-tuning ligero sobre dominios especificos: al ser un modelo pequeno y compatible con transformers, puede servir como punto de partida para ajuste supervisado en tareas acotadas.
-- Evaluacion comparativa de modelos pequenos: util como referencia en estudios que comparen arquitecturas alternativas al transformer convencional en tareas de generacion.
+- Experimentación con la arquitectura liquid-former: el modelo puede cargarse con transformers para inspeccionar su implementación y comparar su comportamiento con transformers convencionales de tamaño similar.
+- Prototipado de chatbots de bajo coste: con ~175M parámetros, cabe en GPU de consumo y permite iterar rápidamente en entornos de desarrollo sin infraestructura dedicada.
+- Investigación sobre el marco DISC: sirve como caso de estudio para analizar discrepancias entre salidas esperadas y observadas durante la inferencia.
+- Generación de texto en entornos con recursos limitados: su tamaño reducido permite ejecución en CPU o GPU modesta para tareas de completado de texto no críticas.
+- Docencia y divulgación: útil para explicar el ciclo completo de carga, inferencia y evaluación de un modelo pequeño en transformers.
+- Pruebas de integración en pipelines de Hugging Face Endpoints: el tag endpoints_compatible facilita desplegarlo como endpoint de prueba en flujos de CI.
 
 ## Benchmarks y rendimiento
 
@@ -50,33 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Para un modelo de ~175M parametros, una estimacion orientativa seria de aproximadamente 0,4 GB en fp16 y en torno a 0,2 GB en cuantizacion de 8 bits, aunque estas cifras no estan confirmadas por el autor.
-- GPU recomendadas: no disponible. Por tamano, cabria en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay validacion publicada.
-- Cabe en GPU de consumo: probablemente si, dado el tamano del repositorio, sin confirmacion oficial.
-- Opciones de despliegue: transformers (libreria declarada) y, previsiblemente, llama.cpp u Ollama si se generan pesos GGUF, aunque no se documenta su existencia.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: en fp16, aproximadamente 350 MB de pesos para 175M parámetros; en fp32, unos 700 MB. La suma de overhead de activaciones y KV cache dependerá del contexto, que no está documentado.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para inferencia en fp16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobredimensionadas para este tamaño.
+- GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo moderna e incluso en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: transformers (nativo); vLLM, llama.cpp, Ollama o TGI solo si existen conversiones a GGUF u otros formatos, que no se confirman en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| DNA-175M | ~175M (inferido) | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face |
+| GPT-2 medium | 355M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 | Apache 2.0 | Hugging Face |
+
+La comparación se limita a tamaño y disponibilidad, ya que DNA-175M no publica benchmarks, contexto ni licencia que permitan una comparación funcional rigurosa con alternativas establecidas.
 
 ## Limitaciones y advertencias
 
-- La model card es una plantilla autogenerada sin rellenar: no hay informacion sobre sesgos, datos de entrenamiento ni evaluacion.
-- Riesgo elevado de alucinacion y de comportamiento impredecible al no documentarse el proceso de alineacion.
-- Licencia no especificada: no puede asumirse uso comercial permitido; es imprescindible contactar con el autor antes de cualquier despliegue productivo.
-- Idiomas soportados no documentados: se desconoce si el modelo maneja correctamente el castellano u otras lenguas.
-- Longitud de contexto desconocida, lo que impide planificar casos de uso con ventanas largas.
-- El marco teorico Discrepancy Calculus no cuenta con validacion independiente en la informacion disponible; las afirmaciones del autor deben tratarse como no verificadas.
-- Un unico "like" y documentacion minima sugieren ausencia de validacion por parte de la comunidad.
-- No apto para produccion sin una evaluacion previa exhaustiva por parte del equipo adoptante.
+- Model card incompleta: sin información sobre datos de entrenamiento, evaluación, sesgos o uso previsto.
+- Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución.
+- Idiomas no documentados: se desconoce la cobertura lingüística real.
+- Riesgo de alucinación: no evaluado; un modelo de este tamaño y sin benchmarks publicados presenta riesgo alto en tareas factuales.
+- Contexto desconocido: impide planificar aplicaciones que requieran ventanas largas.
+- Tracción comunitaria mínima (1 like): sin validación independiente de calidad.
+- Marco teórico propietario (DISC) sin revisión por pares externa en la información disponible.
+- No apto para producción sin evaluación previa propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DNA-175M
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Documento teorico Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Documento Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
-- Paper de referencia sobre impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Calculadora ML Impact: https://mlco2.github.io/impact#compute
+- Documento DISC: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Paper citado en tags (impacto ambiental): https://arxiv.org/abs/1910.09700

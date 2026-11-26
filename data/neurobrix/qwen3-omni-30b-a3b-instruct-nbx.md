@@ -2,101 +2,86 @@
 
 ## Resumen
 
-Qwen3-Omni-30B-A3B-Instruct-nbx es un contenedor `.nbx` del modelo multimodal Qwen3-Omni-30B-A3B-Instruct desarrollado por Qwen (Alibaba), empaquetado por Neurobrix para su ejecución en el motor de inferencia NeuroBrix. El modelo subyacente es un transformer multimodal any-to-any de tipo Mixture of Experts con 30 mil millones de parámetros totales y aproximadamente 3 mil millones activos por token, diseñado para procesar y generar texto, imagen, audio y vídeo. Este contenedor no modifica los pesos ni la licencia del modelo original: NeuroBrix únicamente añade el grafo de computación, los pesos empaquetados y los valores por defecto de ejecución necesarios para que el motor los cargue.
+Qwen3-Omni-30B-A3B-Instruct-nbx es una distribucion del modelo Qwen3-Omni-30B-A3B-Instruct de Alibaba Qwen, publicada por Neurobrix bajo el identificador `Neurobrix/Qwen3-Omni-30B-A3B-Instruct-nbx`. Se trata de un modelo multimodal any-to-any: acepta y genera texto, imagen, audio y video dentro de una misma arquitectura. El sufijo `-nbx` indica que los pesos han sido empaquetados para la libreria propietaria `neurobrix`, orientada a inferencia local con kernels Triton, en lugar de distribuirse en el formato original de Transformers.
 
-La relevancia de este artefacto reside en el empaquetado: el contenedor ocupa 70,6 GB e incluye todo lo necesario para ejecutar el modelo en GPUs NVIDIA, GPUs de Mac (Metal) y CPU, con dos backends alternativos (PyTorch y Triton mediante kernels nbxtensor). El motor planifica automáticamente la distribución de los componentes del modelo entre las GPUs y la memoria disponibles, incluyendo ejecución multi-GPU, streaming o descarga parcial a host. Esto facilita el despliegue local de un modelo multimodal de gran tamaño sin tener que gestionar manualmente la orquestación de pesos y grafos.
+El modelo subyacente es un transformer de tipo Mixture-of-Experts con 30.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token (de ahi el sufijo A3B), lo que permite un coste de computo por token cercano al de un modelo denso de 3B pese a contar con la capacidad de uno de 30B. Esta pensado para despliegues locales y entornos con recursos limitados donde se necesita procesamiento multimodal completo sin depender de APIs externas.
 
-El modelo base conserva la licencia Apache 2.0 del original y su pipeline es any-to-any. La información disponible sobre el contenedor no incluye detalles sobre el entrenamiento, los idiomas soportados ni resultados de benchmarks, por lo que esta ficha se limita a los datos publicados en la model card y en los metadatos de Hugging Face.
+La relevancia de esta ficha radica en que el repositorio no es una version oficial de Qwen sino un reempaquetado de terceros: la licencia declarada es Apache 2.0, el acceso esta restringido (gated) y la libreria de inferencia es especifica de Neurobrix. Cualquier evaluacion tecnica debe partir del modelo base Qwen3-Omni-30B-A3B-Instruct, ya que la informacion publicada en este repositorio es minima y no documenta cambios en pesos, datos de entrenamiento ni evaluaciones propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal any-to-any con Mixture of Experts (modelo base Qwen3-Omni-30B-A3B-Instruct) |
-| Parametros totales | 30 mil millones (30B) |
-| Parametros activos | aproximadamente 3 mil millones (3B) por token, segun la nomenclatura A3B |
+| Arquitectura | Mixture-of-Experts multimodal (any-to-any), basada en Qwen3-Omni |
+| Parametros totales | 30B (segun denominacion del modelo base) |
+| Parametros activos | ~3B por token (MoE, segun denominacion A3B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | contenedor `.nbx` (grafo de computacion + pesos + configuracion de runtime); tamano del contenedor 70,6 GB |
-| SHA-256 del contenedor | `d19b72ae15297495013d985d0bdd66a55b36051fb4c5b53a42e639b777e40448` |
-| Backends de ejecucion | PyTorch y Triton (kernels nbxtensor, sin dependencia de PyTorch) |
-| Hardware soportado | GPUs NVIDIA, GPUs de Mac (Metal) y CPU |
-| Pipeline | any-to-any |
+| Formato de pesos | no disponible (repositorio de 70,6 GB, libreria `neurobrix`) |
 
 ## Arquitectura y entrenamiento
 
-El contenedor envuelve el modelo Qwen3-Omni-30B-A3B-Instruct, un transformer multimodal con arquitectura Mixture of Experts: 30B parametros totales con aproximadamente 3B activos por token. La naturaleza any-to-any implica que el modelo acepta y produce multiples modalidades (texto, imagen, audio y video, segun la model card del contenedor). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras etapas de alineacion, ya que la model card del contenedor remite a la del modelo original sin reproducir esos datos.
+El modelo base Qwen3-Omni-30B-A3B-Instruct emplea una arquitectura Mixture-of-Experts con enrutamiento disperso, disenada para procesar y generar multiples modalidades (texto, imagen, audio y video) en un unico modelo. La denominacion A3B indica que, de los 30B parametros totales, solo alrededor de 3B se activan por token durante la inferencia, lo que reduce el coste computacional y de memoria respecto a un denso equivalente.
 
-La innovacion tecnica de este artefacto no esta en el modelo sino en el empaquetado: el contenedor `.nbx` incluye el grafo de computacion completo, los pesos, la topologia de conexion entre componentes y los valores por defecto de runtime. El motor NeuroBrix planifica la colocacion de cada parte del modelo en funcion de las GPUs y memoria detectadas, y ofrece dos rutas de ejecucion: el motor PyTorch convencional o el motor Triton con kernels nbxtensor certificados por clase de GPU. No se dispone de informacion sobre innovaciones del modelo base como decodificacion especulativa o atencion lineal en la documentacion proporcionada.
+No se dispone de informacion en el repositorio de Neurobrix sobre el numero de tokens de entrenamiento, la composicion del dataset, las tecnicas de alineacion (RLHF, DPO) ni posibles innovaciones tecnicas adicionales. Tampoco se documenta si el reempaquetado `-nbx` introduce cambios en los pesos, en la tokenizacion o en el grafo de computo respecto al modelo original de Qwen. Se recomienda consultar la model card oficial de `Qwen/Qwen3-Omni-30B-A3B-Instruct` para los detalles de arquitectura y entrenamiento.
 
 ## Capacidades
 
-- Generacion y comprension multimodal any-to-any: procesa entradas de texto, imagen, audio y video, y genera salidas en multiples modalidades segun el pipeline declarado.
-- Ejecucion local en hardware de consumo y profesional: soporta GPUs NVIDIA, GPUs de Mac con Metal y CPU.
-- Planificacion automatica de recursos: el motor distribuye el modelo entre una o varias GPUs, con streaming o descarga a host.
-- Doble backend de inferencia: PyTorch o Triton con kernels nbxtensor sin PyTorch.
-- Importacion via CLI con aceptacion de licencia (`neurobrix import ... --accept-license`).
-- Ejecucion por modos (`--mode text`) con soporte de entrada de imagen (`--input-image`).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking, vision, audio: la model card menciona familia multimodal y pipeline any-to-any, pero no detalla modos especificos.
+- Generacion y comprension de texto, con capacidad de razonamiento y respuesta conversacional multi-turno.
+- Procesamiento de imagen y video como entrada (modalidad any-to-any declarada en el pipeline).
+- Procesamiento de audio como entrada y salida, segun la naturaleza multimodal del modelo base.
+- Generacion de codigo y matematicas, heredada de la familia Qwen3.
+- Soporte multilingue: no documentado en este repositorio; debe verificarse en el modelo base.
+- Tool calling y function calling: no documentado en este repositorio.
+- Modo de razonamiento extendido (thinking): no documentado en este repositorio.
+- Inferencia local acelerada mediante kernels Triton a traves de la libreria `neurobrix`.
 
 ## Casos de uso
 
-- Descripcion de imagenes en local: el comando documentado `neurobrix run --model Qwen/Qwen3-Omni-30B-A3B-Instruct --mode text --input-image photo.jpg --prompt "Describe this image."` permite generar descripciones de imagenes sin depender de servicios en la nube, adecuado para entornos con requisitos de privacidad.
-- Procesamiento multimodal por lotes en estaciones de trabajo: al soportar GPUs NVIDIA y Mac con Metal, el contenedor puede ejecutarse en equipos de desarrollo existentes para tareas de analisis de imagen y texto en pipelines internos.
-- Prototipado de aplicaciones any-to-any: el pipeline any-to-any del modelo base permite experimentar con entradas y salidas multimodales antes de invertir en infraestructura dedicada.
-- Inferencia en hardware heterogeneo: la planificacion automatica del motor permite desplegar el mismo contenedor en un servidor multi-GPU o en un portatil con GPU de consumo, reduciendo el trabajo de portabilidad.
-- Evaluacion de modelos multimodales en investigación: investigadores que necesitan comparar el comportamiento del modelo Qwen3-Omni en distintas configuraciones de hardware pueden usar el contenedor para estandarizar el runtime.
-- Despliegue con backend Triton sin PyTorch: entornos donde instalar PyTorch es problematico pueden usar los kernels nbxtensor certificados por clase de GPU para ejecutar el modelo.
-- Automatizacion de flujos con CLI: la interfaz `neurobrix import` y `neurobrix run` facilita integrar la inferencia en scripts y tareas programadas.
+- Asistentes multimodales locales: el modelo puede recibir imagen, audio o video junto con texto y generar respuestas en cualquiera de esas modalidades, lo que permite construir asistentes que operan sin enviar datos a APIs externas.
+- Transcripcion y analisis de reuniones: combinando entrada de audio con salida de texto estructurado, se puede integrar en pipelines de actas y resumenes donde la confidencialidad exige inferencia on-premise.
+- Analisis de video para monitorizacion: al aceptar video como entrada, resulta adecuado para tareas de descripcion de escenas o extraccion de eventos en flujos de camaras.
+- Generacion de codigo asistida: el modelo hereda las capacidades de codigo de Qwen3 y puede integrarse en entornos de desarrollo con inferencia local, reduciendo la dependencia de servicios en la nube.
+- Procesamiento de documentos con imagenes: extraccion y razonamiento sobre capturas, diagramas o formularios escaneados combinando vision y texto.
+- Despliegue en hardware de gama alta para investigacion: con 30B parametros totales y ~3B activos, es viable en estaciones con GPU de gran memoria para experimentacion con modelos MoE multimodales.
+- Prototipado de agentes any-to-any: la combinacion de modalidades permite construir agentes que razonan sobre audio, imagen y texto en un mismo bucle, aunque la ausencia de documentacion sobre tool calling en este repositorio exige validacion previa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Neurobrix no incluye tablas de evaluacion propias ni comparaciones con el modelo base. Para datos de rendimiento debe consultarse la model card oficial de `Qwen/Qwen3-Omni-30B-A3B-Instruct`.
 
 ## Requisitos de hardware
 
-- Tamano del contenedor: 70,6 GB, lo que da una referencia del espacio en disco necesario para los pesos empaquetados.
-- VRAM estimada para inferencia: no disponible de forma explicita; el motor NeuroBrix puede distribuir el modelo entre varias GPUs, hacer streaming o descargar componentes a host, por lo que la VRAM minima depende de la configuracion de planificacion.
-- GPUs recomendadas: no disponible en la informacion proporcionada; el contenedor declara soporte para GPUs NVIDIA, GPUs de Mac (Metal) y CPU.
-- Cabe en GPU de consumo: no disponible de forma concluyente; el soporte de streaming y descarga a host sugiere que puede ejecutarse en configuraciones con VRAM limitada, pero no se especifican modelos concretos.
-- Opciones de despliegue: motor NeuroBrix con backend PyTorch o backend Triton (kernels nbxtensor); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este contenedor.
+- VRAM estimada: no disponible en la informacion proporcionada. Como referencia teorica, un modelo de 30B parametros en precision de 16 bits requiere del orden de 60 GB solo para pesos, a lo que se suman activaciones y cache KV; las cifras exactas dependen del formato de pesos del repositorio (70,6 GB) y de la implementacion de `neurobrix`.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, el modelo encaja en GPU de centro de datos con 80 GB (A100, H100) y probablemente en configuraciones multi-GPU para consumer.
+- Compatibilidad con GPU de consumo: no confirmada; un modelo de este tamano no cabe en una unica GPU consumer de 24 GB sin cuantizacion, y el repositorio no documenta variantes cuantizadas.
+- Opciones de despliegue: la libreria `neurobrix` con kernels Triton es el mecanismo documentado por el autor. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neurobrix/Qwen3-Omni-30B-A3B-Instruct-nbx | 30B totales, ~3B activos | no disponible | Apache 2.0 | Hugging Face (contenedor `.nbx`) | Empaquetado NeuroBrix con backend PyTorch/Triton y soporte NVIDIA/Metal/CPU |
-| Qwen/Qwen3-Omni-30B-A3B-Instruct | 30B totales, ~3B activos | no disponible | Apache 2.0 | Hugging Face (modelo original) | Modelo base sin empaquetar; requiere runtime propio |
-| Otros modelos multimodales any-to-any de tamano comparable | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+| Neurobrix/Qwen3-Omni-30B-A3B-Instruct-nbx | 30B totales, ~3B activos | no disponible | Texto, imagen, audio, video | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3-Omni-30B-A3B-Instruct | 30B totales, ~3B activos | no disponible | Texto, imagen, audio, video | Apache 2.0 (segun repositorio derivado) | Repositorio oficial de Qwen |
+| Modelos multimodales densos de ~30B | ~30B activos | no disponible | Variable | Variable | Variable |
 
-La comparativa con alternativas de la misma categoria no puede completarse con datos verificables a partir de la informacion suministrada.
+La comparativa directa mas relevante es contra el modelo base oficial de Qwen, del que este repositorio es un reempaquetado. Cualquier diferencia en rendimiento, cuantizacion o compatibilidad con frameworks debe atribuirse al empaquetado de Neurobrix y no al modelo original, y no esta documentada en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- La model card del contenedor remite explicitamente a la del modelo original para el entrenamiento, el uso previsto y las limitaciones, que se aplican sin cambios; esta ficha no reproduce esos datos por no estar disponibles.
-- No se dispone de informacion sobre sesgos conocidos del modelo base.
-- No se dispone de informacion sobre tasas de alucinacion ni sobre evaluaciones de fiabilidad.
-- No se especifican los idiomas soportados, lo que impide garantizar un rendimiento adecuado en castellano.
-- No se especifica la longitud de contexto, un dato critico para planificar aplicaciones con conversaciones largas o documentos extensos.
-- La licencia Apache 2.0 permite uso comercial, pero el contenedor no añade garantias propias; cualquier restriccion del modelo original se mantiene.
-- El contenedor ocupa 70,6 GB, lo que exige espacio en disco significativo y tiempos de descarga considerables.
-- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
-- El ecosistema NeuroBrix es especifico: la ejecucion requiere instalar el paquete `neurobrix` y aceptar la licencia mediante la CLI, lo que añade una dependencia adicional frente al modelo original.
-- No se dispone de datos de latencia ni throughput, lo que dificulta dimensionar infraestructura para produccion.
+- Repositorio de terceros: no es una publicacion oficial de Qwen; los pesos y el formato pueden diferir del original y no hay garantia de equivalencia funcional.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga, lo que anade friccion a pipelines automatizados.
+- Libreria propietaria: la inferencia depende de `neurobrix` y kernels Triton; la portabilidad a otros frameworks (vLLM, llama.cpp, TGI) no esta documentada.
+- Documentacion minima: no se publican idiomas soportados, contexto, cuantizaciones, benchmarks ni detalles de entrenamiento en este repositorio.
+- Riesgo de alucinacion: inherente a los modelos generativos multimodales; debe validarse en dominios sensibles.
+- Sesgos: no documentados en este repositorio; deben evaluarse a partir del modelo base.
+- Licencia Apache 2.0 declarada, pero al tratarse de un derivado conviene verificar las condiciones del modelo base y las del acceso gated antes de uso comercial.
+- Fecha de publicacion futura en los metadatos (noviembre de 2026), lo que sugiere que la informacion puede estar incompleta o sujeta a cambios.
 
 ## Enlaces
 
-- Contenedor en Hugging Face: https://huggingface.co/Neurobrix/Qwen3-Omni-30B-A3B-Instruct-nbx
-- Modelo original: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
-- Descarga del contenedor: https://neurobrix.org/models/Qwen/Qwen3-Omni-30B-A3B-Instruct
-- Repositorio GitHub de NeuroBrix: https://github.com/NeuroBrix
-- Repositorio de kernels nbxtensor: https://github.com/NeuroBrix/nbxtensor
-- Hub de NeuroBrix: https://neurobrix.org
-- Documentacion: https://docs.neurobrix.org
-- Canal de YouTube: https://www.youtube.com/@NeuroBrix
+- Repositorio en Hugging Face: https://huggingface.co/Neurobrix/Qwen3-Omni-30B-A3B-Instruct-nbx
+- Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct

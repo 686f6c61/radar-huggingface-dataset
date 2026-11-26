@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nanoGentzen - a Sagicc Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/Sagicc/nanogentzen",
-      "snippet": "Test for Genzen calculus in LLM logic verification."
-    },
-    {
-      "title": "Sagicc/nanoGentzen · Datasets at Hugging Face",
-      "url": "https://huggingface.co/datasets/Sagicc/nanoGentzen",
-      "snippet": "The nanoGentzen Dataset is a formal synthetic dataset designed to train Policy-Value Transformers for automated theorem proving in Intuitionistic Logic (LI) and Classical Logic (LK via Glivenko&#x27;s Theorem) using Gentzen Sequent Calculus."
-    },
-    {
-      "title": "Jev (AI model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
-      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
-    },
-    {
-      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
-      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-      "snippet": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
-    },
-    {
-      "title": "GitHub - TianyuCodings/NanoJev: A nano replica of Jev: parallel ...",
-      "url": "https://github.com/TianyuCodings/NanoJev",
-      "snippet": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline. - TianyuCodings/NanoJev"
-    }
-  ]
+  "sources": []
 }

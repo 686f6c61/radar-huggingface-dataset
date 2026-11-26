@@ -2,107 +2,92 @@
 
 ## Resumen
 
-nikimori/Qwen3.5-2B-4bit-slim es una derivacion del modelo multimodal mlx-community/Qwen3.5-2B-4bit a la que se le ha eliminado la torre de vision. En concreto, el autor ha borrado los 297 tensores con prefijo `vision_tower.*` (0,66 GB en bf16) y ha conservado los 694 tensores restantes byte a byte, sin tocar la configuracion, el tokenizador ni la plantilla de chat del modelo original. El resultado es un checkpoint de solo texto de 1,06 GB frente a los 1,72 GB de partida, con 1.881.825.088 parametros (aproximadamente 1,88 mil millones) en cuantizacion de 4 bits para MLX.
+Qwen3.5-2B-4bit-slim es una derivación del modelo Qwen3.5-2B en cuantización de 4 bits para MLX, publicada por el usuario nikimori. Se trata de una versión "slim" del checkpoint `mlx-community/Qwen3.5-2B-4bit` en la que se han eliminado los 297 tensores correspondientes a la torre de visión (0,66 GB en bf16), conservando intactos los 694 tensores restantes. El resultado es un modelo exclusivamente de texto que reduce el tamaño de descarga de 1,72 GB a 1,06 GB sin alterar la salida de texto.
 
-El modelo esta pensado para Pretype, una aplicacion de autocompletado para macOS del mismo autor, que ejecuta sus funciones de correccion y respuesta sobre Macs de 8 GB de RAM. Pretype solo envia texto al modelo, por lo que la torre de vision representaba una descarga que nunca se cargaba en memoria; de ahi la poda. La relevancia de esta ficha es acotada: no es un modelo nuevo ni un reentrenamiento, sino un artefacto de optimizacion de tamano con verificacion empirica de equivalencia funcional en la tarea objetivo.
+El modelo hereda la arquitectura Qwen3.5 de 2B parámetros (1.881.825.088 parámetros totales según los safetensors) y la licencia Apache-2.0 del checkpoint original. No introduce ningún cambio en la configuración, el tokenizer ni la plantilla de chat: la única modificación es la poda de los pesos de visión, que los cargadores de texto no leen de todos modos.
 
-La licencia es Apache-2.0, heredada del modelo fuente. No se han publicado datos sobre longitud de contexto, idiomas soportados ni composicion del dataset de entrenamiento original, por lo que esos apartados se marcan como no disponibles.
+Su relevancia es práctica y acotada: está pensado para ejecutarse en Macs de 8 GB de memoria unificada, concretamente como motor de autocompletado y corrección de texto en la aplicación Pretype para macOS. Para desarrolladores que despliegan Qwen3.5-2B en entornos MLX sin necesidad de entrada de imagen, representa un ahorro de descarga y de espacio en disco con equivalencia funcional demostrada en la tarea de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de la familia qwen3_5 con torre de vision eliminada; transformer multimodal en origen) |
-| Parametros totales | 1.881.825.088 (aprox. 1,88 mil millones) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Qwen3.5 (transformer); pesos en MLX, sin torre de visión |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (formato MLX, heredado del modelo base) |
+| Tipos de cuantizacion | 4-bit (cuantizacion MLX) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX); repositorio de 1,1 GB en disco, 1,06 GB de pesos segun la model card |
-| Libreria de inferencia | mlx (validado con mlx-lm 0.31.3) |
-| Modalidad | solo texto (vision eliminada) |
-| Modelo base | mlx-community/Qwen3.5-2B-4bit |
-| Tensores conservados | 694 (de los 991 originales; se eliminan 297 de `vision_tower.*`) |
+| Formato de pesos | safetensors (MLX), 1,06 GB en repo de 1,1 GB |
 
 ## Arquitectura y entrenamiento
 
-No se proporciona informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base. Lo unico documentado es que mlx-community/Qwen3.5-2B-4bit incluye una torre de vision de 297 tensores en bf16 (0,66 GB) y que este build la elimina, dejando 694 tensores intactos byte a byte. La configuracion, el tokenizador y la plantilla de chat no se han modificado respecto al modelo fuente. La cuantizacion de 4 bits ya venia aplicada en el checkpoint de origen; este repositorio no recuantiza, solo poda.
+El modelo es una poda del checkpoint `mlx-community/Qwen3.5-2B-4bit`, que a su vez es una conversión a MLX y cuantización a 4 bits del Qwen3.5-2B original. La arquitectura subyacente es la de la familia Qwen3.5, un transformer de 2B parámetros; la información proporcionada no detalla la composición del dataset de entrenamiento, el número de tokens, ni si hubo fases de RLHF o DPO.
 
-El autor reporta que la salida de texto es identica entre el modelo original y esta version. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. La plantilla de chat expone un parametro `enable_thinking` en `apply_chat_template`, lo que indica que el modelo base soporta un modo de razonamiento explicito desactivable en generacion.
+La única intervención técnica de este build es la eliminación de 297 tensores `vision_tower.*` (0,66 GB en bf16). Los 694 tensores restantes se conservan byte a byte, y config, tokenizer y chat template quedan sin cambios. El autor reporta que mlx-lm 0.31.3 produce la misma salida que el build de origen, y que con decodificación greedy la salida es idéntica en 680 filas de la tarea "Fix" y 570 filas de la tarea "Reply" del arnés de evaluación de Pretype. La consecuencia funcional es que la entrada de imagen deja de funcionar en este build.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el tag `conversational` y el pipeline `text-generation` del repositorio.
-- Correccion de texto y erratas: la evaluacion del autor incluye una funcion "Fix" sobre 680 filas de prueba.
-- Generacion de respuestas en contexto de conversacion: funcion "Reply" evaluada sobre 570 filas.
-- Modo de razonamiento conmutable mediante `enable_thinking` en la plantilla de chat (el ejemplo de uso lo desactiva explicitamente).
-- Capacidad multilingue: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Vision: no soportada en este build. La model card lo indica de forma explicita: "Image input does not work with this build".
-- Capacidades de audio: no disponible.
+- Generación de texto conversacional en formato chat (pipeline `text-generation`, tag `conversational`).
+- Corrección de erratas y reescritura de texto: el arnés del autor mide la tarea "Fix" (restauración exacta de línea con errata en el 33% de los casos) y la tarea "Reply".
+- Modo thinking desactivable mediante `enable_thinking=False` en la plantilla de chat.
+- Ejecución en MLX sobre Apple Silicon, integrable con `mlx-lm`.
+- Sin capacidades de visión en este build: la torre de imagen ha sido eliminada.
+- Soporte de tool calling, agentes, matemáticas o código: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Autocompletado y correccion en editores de texto en macOS: es el caso de uso original. Pretype ejecuta los atajos de correccion y respuesta con este modelo sobre equipos de 8 GB de RAM, aprovechando que los pesos ocupan 1,06 GB.
-- Correccion ortografica y gramatical en linea: el modelo corrige frases como "I recieved teh package yesterday" en menos de 40 tokens de salida, segun el ejemplo de la model card, lo que permite integrarlo en campos de formulario o clientes de correo.
-- Generacion de respuestas cortas en asistentes locales: la funcion "Reply" se evaluo sobre 570 filas con salida identica al modelo original, lo que habilita respuestas sugeridas sin coste de red.
-- Procesamiento de texto en local por privacidad: al ejecutarse con MLX sobre Apple Silicon, los datos no salen del dispositivo, adecuado para documentos confidenciales o entornos sin conectividad.
-- Prototipado rapido de aplicaciones de escritorio con MLX: el repositorio es un checkpoint de 1,06 GB que se carga con `mlx_lm.load`, util para iterar en demos de UI sin descargar pesos innecesarios.
-- Tareas de texto por lotes en portatiles: al reducir el peso en disco un 38 % (de 1,72 GB a 1,06 GB), es viable empaquetarlo en distribuciones de aplicaciones o en imagenes de contenedor ligeras.
-- Fine-tuning o evaluacion de referencia sobre la familia qwen3_5 en solo texto: al eliminar la torre de vision, se simplifica el grafo de carga en pipelines que nunca procesan imagenes.
+- Autocompletado y corrección en macOS: es el caso de uso de diseño. La aplicación Pretype usa este modelo para los atajos de corrección y respuesta en Macs de 8 GB, enviando solo texto, de modo que la torre de visión eliminada no se echaba en falta.
+- Corrección de erratas en editores de texto: el modelo puede recibir una frase con errores y devolver una versión corregida; el autor mide esta tarea de forma explícita ("Fix"), con restauración exacta de la línea en el 33% de los casos.
+- Generación de respuestas cortas en asistentes de escritorio: la tarea "Reply" del arnés del autor valida la generación de respuestas breves a partir de texto, adecuada para sugerencias inline.
+- Prototipado local en Apple Silicon: al ocupar 1,06 GB, permite cargar el modelo en portátiles con memoria unificada limitada para pruebas de pipelines de generación de texto con `mlx-lm`.
+- Sustitución del checkpoint base en despliegues solo-texto: cualquier pipeline MLX que ya use `mlx-community/Qwen3.5-2B-4bit` para texto puede cambiar a este build y ahorrar 0,66 GB de descarga sin cambiar la salida, según las mediciones del autor.
+- Distribución de aplicaciones de escritorio: al reducir el artefacto a 1,06 GB, es viable empaquetarlo como dependencia descargable de una app macOS sin incluir pesos de visión innecesarios.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son las mediciones del arnes de evaluacion de Pretype, del 16 de octubre de 2026, con decodificacion voraz (greedy):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo reporta mediciones de su propio arnés de evaluación (Pretype, 2026-10-16, decodificación greedy):
 
-| Metrica | mlx-community/Qwen3.5-2B-4bit | nikimori/Qwen3.5-2B-4bit-slim |
+| Metrica | mlx-community/Qwen3.5-2B-4bit | Este build |
 |---|---|---|
-| Fix: salida identica, 680 filas | referencia | 680 / 680 |
-| Reply: salida identica, 570 filas | referencia | 570 / 570 |
-| Fix: linea con errata restaurada exactamente | 33 % | 33 % |
-| Tamano de descarga | 1,72 GB | 1,06 GB |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks estandar en la informacion disponible.
+| Fix: salida idéntica (680 filas) | — | 680 / 680 |
+| Reply: salida idéntica (570 filas) | — | 570 / 570 |
+| Fix: línea con errata restaurada exactamente | 33% | 33% |
+| Descarga | 1,72 GB | 1,06 GB |
 
 ## Requisitos de hardware
 
-- Peso de los pesos en disco: 1,06 GB segun la model card (repositorio de 1,1 GB en Hugging Face).
-- Plataforma: MLX, lo que implica Apple Silicon (M1 o posterior). No hay soporte CUDA, ROCm ni CPU generica en este formato.
-- Memoria: el autor indica que el modelo funciona en Macs de 8 GB de RAM ejecutando las funciones de correccion y respuesta de Pretype. No se publican cifras de VRAM ni de memoria unificada pico.
-- GPU recomendadas: no disponible. Al ser un artefacto MLX, no aplican A100, H100 o RTX 4090 de forma nativa.
-- Inferencia en GPU consumer: no aplica en el sentido habitual; el destino son GPUs integradas de Apple Silicon. Cabe en equipos con 8 GB de memoria unificada segun el autor.
-- Opciones de despliegue: mlx-lm (validado con la version 0.31.3). No se documenta compatibilidad con vLLM, TGI, llama.cpp u Ollama, que no consumen pesos MLX.
-- Latencia y throughput: no disponibles. Solo se indica que la salida es identica a la del modelo base con el mismo binario y las mismas filas de prueba.
+- VRAM/memoria: el repo pesa 1,06 GB en 4 bits; el autor indica que funciona en Macs de 8 GB de memoria unificada.
+- GPU: requiere Apple Silicon (MLX); no está pensado para CUDA. GPU recomendadas: no disponible.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con 8 GB o más de memoria unificada según el autor; no se documenta compatibilidad con GPUs NVIDIA de consumo.
+- Despliegue: `mlx-lm` (versión 0.31.3 validada por el autor) mediante `from mlx_lm import load, generate`. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no están soportadas por el formato MLX.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Tamano de pesos | Disponibilidad |
-|---|---|---|---|---|---|---|
-| nikimori/Qwen3.5-2B-4bit-slim | 1,88 B | no disponible | solo texto | Apache-2.0 | 1,06 GB | MLX / mlx-lm |
-| mlx-community/Qwen3.5-2B-4bit | no disponible | no disponible | texto + vision | no disponible en esta ficha | 1,72 GB | MLX / mlx-lm |
-| Otras alternativas de ~2 B para MLX | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Vision | Licencia | Tamano de descarga |
+|---|---|---|---|---|---|
+| nikimori/Qwen3.5-2B-4bit-slim | 1.881.825.088 | no disponible | No | Apache-2.0 | 1,06 GB |
+| mlx-community/Qwen3.5-2B-4bit | no disponible | no disponible | Sí | Apache-2.0 (heredada) | 1,72 GB |
+| Qwen3.5-2B (original) | 2B (aprox.) | no disponible | Sí | Apache-2.0 | no disponible |
 
-La unica comparacion documentada es contra el modelo base: misma salida en las 680 filas de "Fix" y las 570 de "Reply", con 0,66 GB menos de descarga. No se dispone de datos de rendimiento frente a otros modelos de tamano similar.
+La comparativa se limita al ecosistema inmediato del modelo; no se dispone de datos de benchmarks ni de contexto para comparar con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- Eliminacion irreversible de la vision: este build no acepta entrada de imagenes. Cualquier caso de uso que requiera multimodalidad debe usar el modelo original.
-- No es un modelo nuevo: no hay reentrenamiento ni ajuste fino. La calidad depende integramente de mlx-community/Qwen3.5-2B-4bit.
-- Equivalencia verificada en un dominio estrecho: los resultados de identidad (680/680 y 570/570) provienen del arnes de Pretype, con decodificacion voraz y un conjunto concreto de filas. No garantizan comportamiento identico en otros prompts, temperaturas de muestreo ni tareas.
-- Tasa de acierto limitada en la tarea de correccion: la restauracion exacta de la linea con errata es del 33 % en ambos modelos, es decir, dos de cada tres intentos no reproducen la linea exacta esperada. Es un dato a tener en cuenta antes de usar el modelo como corrector automatico sin supervision.
-- Riesgo de alucinacion: no evaluado ni documentado en la informacion disponible.
-- Sesgos: no documentados.
-- Idiomas: no disponibles. No se puede asumir cobertura multilingue a partir de la informacion proporcionada. El ejemplo de uso esta en ingles.
-- Contexto: longitud maxima desconocida; no se debe asumir una ventana amplia sin verificar la configuracion del modelo base.
-- Licencia: Apache-2.0, permisiva para uso comercial, heredada del modelo fuente. Conviene verificar los terminos del checkpoint original de Qwen3.5-2B en caso de redistribucion.
-- Dependencia de plataforma: al ser MLX, queda restringido a hardware Apple Silicon; no es desplegable en servidores Linux con GPU NVIDIA sin conversion previa del formato.
-- Adopcion practicamente nula: 0 descargas y 1 like en el momento de redactar esta ficha, sin mantenimiento ni comunidad documentados.
+- Sin visión: la torre de imagen ha sido eliminada; cualquier entrada de imagen falla en este build.
+- Solo MLX: los pesos están en formato MLX y requieren Apple Silicon; no son directamente utilizables en vLLM, llama.cpp u otros runtimes.
+- Corrección de erratas limitada: el propio autor mide solo un 33% de restauración exacta de la línea con errata en su arnés, lo que indica un rendimiento modesto en esa tarea.
+- Idiomas soportados no documentados: la model card no especifica cobertura lingüística.
+- Longitud de contexto no documentada en la información disponible.
+- Riesgo de alucinación y sesgos: no evaluados ni documentados por el autor.
+- Licencia Apache-2.0: permite uso comercial, pero se hereda del checkpoint de origen y conviene verificar las condiciones del modelo Qwen3.5-2B original.
+- Repo de autor individual con 239 descargas y 2 likes: soporte y mantenimiento limitados.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/nikimori/Qwen3.5-2B-4bit-slim
+- Modelo en Hugging Face: https://huggingface.co/nikimori/Qwen3.5-2B-4bit-slim
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.5-2B-4bit
-- Aplicacion Pretype: https://github.com/nikiomori/Pretype
-- Libreria mlx-lm: no se proporciona enlace en la informacion disponible
+- Aplicación Pretype: https://github.com/nikiomori/Pretype

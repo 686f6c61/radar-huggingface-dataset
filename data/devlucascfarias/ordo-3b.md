@@ -2,104 +2,95 @@
 
 ## Resumen
 
-Ordo 3B es un ajuste fino mediante LoRA (PEFT) sobre `Qwen/Qwen2.5-Coder-3B-Instruct`, desarrollado por el usuario `devlucascfarias`. No es un modelo de propósito general, sino un componente especializado que actúa como "recolector de basura de contexto neuronal" (neural context garbage collector) para agentes de programación. Su función es comprimir salidas ruidosas de terminal, logs de compilación, trazas de tests y archivos fuente monolíticos en YAML causal estructurado, preservando rutas de archivo, números de línea y cadenas de error exactas.
+Ordo 3B es un ajuste fino mediante LoRA de `Qwen/Qwen2.5-Coder-3B-Instruct` desarrollado por BaruchLabs (autor `devlucascfarias`). No es un modelo de propósito general: está especializado como filtro de contexto condicionado por intención para agentes de programación. Se sitúa entre el agente (Claude Code, Codex, Cursor, OpenCode y similares) y la salida ruidosa que este leería completa, condensando logs de tests, builds y linters, ficheros fuente grandes y sesiones largas de depuración en un YAML causal corto.
 
-El modelo se sitúa entre agentes de codificación de frontera (Claude Code, Cursor, Windsurf, Codex, entre otros) y los flujos de salida del entorno, reduciendo el consumo de tokens de contexto entre un 75 % y un 99 % según el autor, sin perder información crítica para la depuración. La arquitectura subyacente es la del transformer decoder-only de Qwen2.5-Coder-3B, con 3.085.938.688 parámetros totales y una ventana de contexto de entrenamiento de 3072 tokens para la tarea de compresión.
+El modelo recibe una pregunta del agente en la etiqueta `<intent>` y devuelve un resumen estructurado con estado, fichero y línea del fallo, símbolo, mensaje de error y el fragmento de código relevante. La versión 2 se ha reentrenado sobre logs de herramientas y ficheros fuente reales de proyectos open source, con comprobaciones deterministas de anclaje (grounding) sobre cada cita.
 
-Su relevancia actual reside en la economía de contexto de los agentes autónomos: al filtrar y estructurar la salida del entorno antes de que llegue al modelo principal, reduce coste, latencia y riesgo de desbordamiento de ventana. La licencia MIT y la disponibilidad en formato GGUF para Ollama facilitan su integración en pipelines existentes.
+Con 3.085.938.688 parámetros (~3B), licencia MIT e idiomas inglés y portugués, su interés principal es práctico: reduce el consumo de tokens de agentes de código y permite ejecución local (1,9 GB en Q4_K_M), lo que evita que logs y código privado salgan de la máquina. Se distribuye como adaptador PEFT y también en formato GGUF para Ollama y llama.cpp.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2.5-Coder-3B-Instruct) con adaptador LoRA |
+| Arquitectura | Transformer decoder-only (base Qwen2.5-Coder-3B-Instruct) con adaptador LoRA/PEFT |
 | Parametros totales | 3.085.938.688 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 3072 tokens en la tarea de compresion (contexto nativo del modelo base no indicado en la informacion) |
-| Tipos de cuantizacion | GGUF (incluido en el repo); cuantizaciones especificas no disponibles |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (1,9 GB, recomendada), Q8_0; GGUF para Ollama y llama.cpp |
 | Idiomas soportados | en, pt |
 | Licencia | MIT |
-| Formato de pesos | safetensors (adaptador LoRA), GGUF |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA), GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Qwen/Qwen2.5-Coder-3B-Instruct`, un transformer decoder-only de 3.085.938.688 parámetros, y se ajusta mediante LoRA (PEFT) sobre un conjunto de datos contrastivo curado por un modelo profesor, con verificación determinista de fundamentación (grounding) al 100 %. El entrenamiento se orienta a una única tarea: transformar entradas ruidosas en YAML causal conforme a un esquema estricto, condicionado por un campo `<intent>` y un `<gc_mode>` (por ejemplo, `TOOL_OUTPUT`).
+El modelo parte de `Qwen/Qwen2.5-Coder-3B-Instruct`, un transformer decoder-only de aproximadamente 3B parámetros, sobre el que se aplica un ajuste fino mediante LoRA (librería PEFT). El resultado se publica como adaptador, no como pesos fusionados, y se ofrece también en GGUF para inferencia local. No se detalla en la información disponible la composición exacta del dataset, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF o DPO.
 
-La información disponible menciona tres iteraciones de contexto (1280, 2048 y 3072 tokens) y una suite de evaluación estratificada multilingüe (Python, TypeScript, Rust, Go, C++, Kotlin, C#, Terraform, Kubernetes) más un conjunto OOD no visto (PHP/Laravel, Ruby/Rails, Elixir/Phoenix, Swift/Xcode). No se detallan en la información proporcionada el número total de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO.
+La innovación principal no está en la arquitectura sino en la tarea: el modelo está condicionado por una etiqueta `<intent>` y produce una salida YAML estricta con un esquema dependiente de `<gc_mode>` (por ejemplo, `TOOL_OUTPUT`). Las reglas del sistema exigen preservar el 100 % de rutas de fichero, números de línea, nombres de símbolos y mensajes de error ligados a la intención, y omitir `causal_trace` y `exact_snippets` cuando el estado es `PASS` sin errores. La versión 2 incorpora comprobaciones deterministas de anclaje sobre cada objetivo y se entrenó con logs reales de herramientas y ficheros de proyectos open source.
 
 ## Capacidades
 
-- Compresión de contexto: convierte logs de tests, trazas de compilación y salidas de terminal en YAML causal estructurado.
-- Filtrado por intención: condiciona la salida al campo `<intent>` del prompt, preservando solo lo relevante.
-- Preservación de trazas exactas: mantiene rutas de archivo, números de línea, nombres de símbolos y mensajes de error ligados a la intención.
-- Clasificación de estado: distingue PASS/FAIL y omite `causal_trace` y `exact_snippets` cuando no hay errores.
-- Inspección de archivos fuente: modo `slice` para localizar definiciones en archivos de más de 5k líneas con precisión de línea 1-based.
-- Búsqueda en repositorio filtrada por intención.
-- Memoria episódica: registro de callejones sin salida (`dead-end`) y compactación de memoria de sesión.
-- Salida YAML pura sin fences de Markdown ni explicaciones (100 % en la evaluación final reportada).
-- Multilingüe en la práctica de código: evaluación en Python, TypeScript, Rust, Go, C++, Kotlin, C#, Terraform, Kubernetes y OOD en PHP, Ruby, Elixir y Swift.
-- Idiomas declarados: inglés y portugués.
-- No se documenta soporte de tool calling, function calling, visión, audio ni modo de razonamiento extendido.
+- Condensación de salidas de tests (pytest, jest, go test, cargo test) en un YAML causal con fichero, línea y aserción fallida.
+- Filtrado de salidas de builds y linters (tsc, eslint, mypy, maven, dotnet) para aislar el error real entre warnings.
+- Compresión de logs de CI fallidos para obtener la causa en lugar del volcado completo.
+- Extracción de símbolos con rangos de línea exactos a partir de ficheros fuente grandes (`ordo slice`).
+- Búsqueda filtrada por intención sobre el código (`ordo search`).
+- Memoria episódica por proyecto: notas y callejones sin salida persisten para que un agente que retoma trabajo no repita lo que ya falló.
+- Salida estructurada en YAML sin fences de Markdown, saludos ni explicaciones, pensada para consumo directo por agentes.
+- Soporte de tool calling y agentes a través del servidor MCP (`ordo mcp`) y de la CLI `ordo`.
+- Capacidades multilingües limitadas a inglés y portugués.
 
 ## Casos de uso
 
-- Reducción de contexto en agentes de codificación: interponer Ordo 3B entre el agente (Cursor, Windsurf, Claude Code) y la salida del terminal para que el agente reciba un YAML compacto en lugar de miles de líneas de log, reduciendo el coste por turno y evitando el desbordamiento de ventana.
-- Depuración de suites de tests: ejecutar `ordo run -i "..." pytest -v` para obtener la cadena causal del fallo (archivo, línea, excepción) en lugar de la salida completa de pytest, lo que acelera la localización del error en pipelines de CI.
-- Inspección de archivos monolíticos: usar `ordo slice` para localizar la definición de una función en un archivo de más de 5k líneas con precisión de línea, evitando cargar el archivo entero en el contexto del agente.
-- Búsqueda en repositorio con filtro semántico: `ordo search` para encontrar llamadores de una función concreta y devolver solo los resultados relevantes a la intención, útil en refactorizaciones.
-- Memoria episódica de sesiones de depuración: registrar callejones sin salida con `ordo dead-end` para que el agente no repita intentos fallidos en sesiones largas, y compactar la memoria activa con `ordo compact`.
-- Preprocesado en pipelines de agentes propios: integrar el adaptador vía Transformers/PEFT en un orquestador interno para normalizar salidas de herramientas heterogéneas (build, linters, tests) antes de pasarlas al modelo principal.
-- Despliegue local en estaciones de desarrollo: ejecutar la versión GGUF con Ollama (`ollama run hf.co/devlucascfarias/ordo-3b`) para filtrar contexto sin enviar logs a la nube.
+- Depuración con salidas de test largas: en suites grandes donde un fallo queda enterrado entre cientos de tests correctos y warnings, el modelo devuelve el fichero, la línea y la aserción en unos cientos de tokens, reduciendo el contexto que el agente debe procesar.
+- Builds y linters con muchos mensajes: se pasa la salida de tsc, eslint, mypy, maven o dotnet y el modelo aísla el error real frente al ruido de advertencias.
+- Diagnóstico de CI: `ordo filter` sobre un log de CI fallido devuelve la causa en lugar de obligar a recorrer el log completo manualmente.
+- Navegación de ficheros fuente grandes: `ordo slice` devuelve el símbolo solicitado con rangos de línea exactos en lugar del fichero entero, útil para agentes con ventanas de contexto ajustadas.
+- Agentes locales o con presupuesto de tokens limitado: al reducir cada salida a unos cientos de tokens, permite que agentes sobre modelos locales mantengan sesiones más largas sin agotar el contexto.
+- Código privado: al ejecutarse íntegramente en local vía Ollama o llama.cpp, logs y código no abandonan la máquina, lo que encaja en entornos con requisitos de confidencialidad.
+- Continuidad de sesiones largas: la memoria episódica por proyecto evita que un agente que retoma trabajo reintente enfoques que ya fallaron.
 
 ## Benchmarks y rendimiento
 
-Datos reportados por el autor en la model card (no verificados de forma independiente):
+| Metrica | Resultado (Q4_K_M, 1,9 GB) |
+|---|---|
+| Acierto de estado (status) | 96 % |
+| Acierto de fichero fallido | 83 % |
+| Citas encontradas en la entrada | 96 % |
 
-| Metrica | Base Qwen2.5-Coder-3B (zero-shot) | Ordo v0.1 (1280 ctx) | Ordo v1.0 (2048 ctx) | Ordo Final (3072 ctx) | OOD no visto (PHP, Ruby, Elixir, Swift) |
-|---|---|---|---|---|---|
-| Tasa de YAML puro (sin Markdown) | 0,0 % | 86,7 % | 80,0 % | 100,0 % (30/30) | 100,0 % (con auto-reparacion) |
-| Adherencia estricta al esquema | 0,0 % | 63,3 % | 80,0 % | 100,0 % (30/30) | 100,0 % (con auto-reparacion) |
-| Precision de clasificacion de estado | 26,7 % | 90,0 % | 80,0 % | 100,0 % (30/30) | 100,0 % |
-| Recall exacto de rutas de archivo | 35,0 % | 83,3 % | 100,0 % | 98,3 % | 80,0 % |
-| Recall exacto de numeros de linea | 31,7 % | 70,0 % | 100,0 % | 98,3 % | 80,0 % |
-| Tasa de fundamentacion sin alucinacion | 50,0 % | no disponible (dato truncado en la informacion) | no disponible | no disponible | no disponible |
-
-No se han publicado en la informacion disponible resultados de benchmarks estandar de propósito general (MMLU, HumanEval, GSM8K) para este modelo.
+Datos sobre un benchmark de 114 casos construido a partir de ejecuciones reales de herramientas. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo base en bfloat16 ocupa aproximadamente 6,2 GB de pesos; con overhead de activaciones y KV cache, se recomienda al menos 8 GB de VRAM en fp16/bf16.
-- Cuantizacion GGUF: la versión cuantizada incluida en el repo (tamaño total del repo 6,3 GB, que incluye adaptador y GGUF) permite ejecución en GPU de consumo con 4-6 GB de VRAM según el nivel de cuantización.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para mayor throughput; A100/H100 para despliegues por lotes.
-- Cabe en GPU de consumo: sí, en RTX 3060/4060/4090 con cuantización GGUF o en bf16 con 8 GB o más.
-- Opciones de despliegue: Ollama (soporte nativo vía `hf.co/devlucascfarias/ordo-3b` y `Modelfile`), Transformers + PEFT, llama.cpp mediante GGUF. No se documenta soporte explícito para vLLM ni TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: aproximadamente 1,9 GB en Q4_K_M; mayor en Q8_0 (cercana a los ~3 GB de pesos sin cuantizar más overhead).
+- Cabe en GPU de consumo: cualquier GPU con 4 GB o más de VRAM puede ejecutar la cuantización Q4_K_M.
+- GPU recomendadas: no se especifican modelos concretos; el autor advierte que en una GPU modesta cada llamada condensada tarda varios segundos, y solo en CPU aún más.
+- Despliegue: Ollama (`ollama pull hf.co/devlucascfarias/ordo-3b`), llama.cpp, LM Studio, y la CLI/MCP `ordo` (`pip install "ordo-harness[mcp]"`).
+- Latencia y throughput: no disponibles como cifras; el autor solo indica latencia de varios segundos por llamada en GPU modesta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ordo 3B | 3.085.938.688 | 3072 (tarea de compresion) | Filtrado y compresion de contexto para agentes | MIT | Hugging Face (safetensors + GGUF), Ollama |
-| Qwen2.5-Coder-3B-Instruct (base) | 3.085.938.688 | Contexto nativo de Qwen2.5 (no indicado en la informacion) | Generacion de codigo e instrucciones generales | Apache 2.0 (segun modelo base; no confirmado en la informacion) | Hugging Face |
-| Modelos especializados en compresion de contexto para agentes | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ordo 3B | ~3B (LoRA sobre Qwen2.5-Coder-3B-Instruct) | no disponible | Filtro de contexto para agentes de código | MIT | HF, GGUF, Ollama |
+| Qwen2.5-Coder-3B-Instruct | ~3B | no disponible en esta ficha | Generación de código general | no disponible en esta ficha | HF |
+| no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la informacion proporcionada de comparativas con alternativas equivalentes de compresion de contexto; la comparacion mas directa es con su modelo base, sobre el que Ordo 3B mejora en adherencia a esquema y recall de rutas y lineas a costa de especializarse en una unica tarea.
+No se dispone en la información proporcionada de datos de rendimiento de los modelos comparables para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Modelo de tarea única: no es adecuado para generación de código general, razonamiento abierto ni conversación; su uso previsto es la compresión de contexto condicionada por intención.
-- Riesgo de alucinación: aunque el autor reporta fundamentación determinista en entrenamiento, cualquier traza no presente en la entrada puede inducir errores; el propio prompt del sistema exige no inventar soluciones.
-- Dependencia del formato: requiere respetar el esquema de prompt (`<gc_mode>`, `<intent>`, `<raw_input>`) y el esquema YAML de salida; desviaciones degradan el rendimiento.
-- Cobertura idiomática limitada: solo inglés y portugués declarados; el resto de idiomas no está garantizado.
-- Contexto de entrenamiento corto (3072 tokens): entradas más largas deben trocearse.
-- Datos de benchmark no verificados de forma independiente y con la fila de fundamentación truncada en la información disponible.
-- Licencia MIT: permite uso comercial, pero el modelo base Qwen2.5-Coder-3B-Instruct tiene su propia licencia que debe revisarse por separado.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: madurez y soporte comunitario limitados.
+- Salidas cortas (menos de ~40 líneas) se devuelven sin cambios: no hay nada que comprimir.
+- No sirve para escribir código desde cero; las tareas que ejecutan pocos comandos no generan material que filtrar.
+- Los agentes que ya recortan la salida de comandos obtienen ganancias menores; en ese caso Ordo aporta sobre todo precisión (la causa, no solo la cola del log).
+- En hardware modesto cada llamada condensada tarda varios segundos; solo en CPU, más.
+- Riesgo de alucinación mitigado pero no eliminado: las reglas prohíben inventar soluciones y la CLI verifica cada cita contra la entrada, con retroceso a la salida original cuando es necesario.
+- Idiomas limitados a inglés y portugués; el resto de idiomas no están cubiertos explícitamente.
+- Licencia MIT, que permite uso comercial sin restricciones adicionales conocidas.
+- No se detallan sesgos conocidos ni la composición del dataset de entrenamiento en la información disponible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/devlucascfarias/ordo-3b
+- Repositorio CLI y servidor MCP: https://github.com/devlucascfarias/ordo
+- BaruchLabs: https://baruchlabs.com/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
-- Repositorio CLI: https://github.com/devlucascfarias/ordo
-- Ollama: `ollama run hf.co/devlucascfarias/ordo-3b`
-- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,85 +2,94 @@
 
 ## Resumen
 
-`parallaxlabs/parallax-2` es un repositorio de Hugging Face publicado por la organizacion `parallaxlabs` que, en el momento de la consulta, no contiene un modelo descargable ni documentacion tecnica. La model card se limita a un aviso de "COMING SOON!" y a una peticion delikes y follows, sin especificar arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas. El repositorio esta etiquetado con licencia Apache 2.0 y region US, no declara pipeline de inferencia y acumula 0 descargas y 0 likes.
+Parallax 2 es un modelo de lenguaje de 9.000 millones de parametros desarrollado por Parallax Labs mediante ajuste fino supervisado sobre Qwen/Qwen3.5-9B. Esta disenado especificamente para razonamiento local y codificacion agentica, con el objetivo declarado de funcionar en hardware de consumo sin depender de APIs en la nube. El modelo se entreno sobre mas de 160.000 trazas de razonamiento, codigo y uso de herramientas destiladas de modelos frontera (Claude Opus, GPT-5.6 Sol, Fable, Kimi, entre otros).
 
-Por tanto, no es posible evaluar el modelo: se desconoce si se trata de un transformer denso, un modelo MoE, un hibrido o cualquier otra arquitectura, y tampoco hay pesos publicados en ningun formato (safetensors, GGUF u otros). La ficha que sigue refleja exclusivamente los metadatos disponibles y marca de forma explicita cada apartado sin datos.
+A diferencia de un asistente conversacional convencional, Parallax 2 se entrena para actuar como agente autonomo de IDE: lee ficheros, ejecuta comandos de terminal, navega por la web mediante MCP (Model Context Protocol) y gestiona proyectos multi-fichero. Emplea bloques `<thought>` para estructurar el razonamiento antes de generar codigo y formato nativo `<tool_call>` para invocar herramientas.
 
-La relevancia actual de esta entrada es, por ahora, meramente informativa: sirve como registro de un anuncio de publicacion futura. Cualquier decision tecnica o de adopcion en produccion deberia posponerse hasta que el autor publique la model card completa, los pesos y, idealmente, resultados de evaluacion reproducibles.
+La arquitectura subyacente es la de Qwen 3.5, que segun el autor incorpora Gated DeltaNet y soporta de forma nativa 262.144 tokens de contexto. La licencia es Apache 2.0 y los pesos se distribuyen en safetensors y GGUF, lo que facilita su despliegue en entornos locales con Ollama, LM Studio o llama.cpp. El modelo lleva 3.110 descargas desde su publicacion el 18 de octubre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (no hay archivos de pesos publicados) |
+| Arquitectura | Transformer basado en Qwen 3.5 con Gated DeltaNet (segun model card) |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (segun model card) |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, Q2_K_L (GGUF) |
+| Idiomas soportados | Ingles (unico idioma declarado en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (transformer denso, MoE, SSM, hibrido u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RL con verificadores. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+Parallax 2 parte del modelo base Qwen/Qwen3.5-9B, un transformer de 8,95 mil millones de parametros. La model card menciona que hereda la arquitectura Gated DeltaNet de Qwen 3.5, que habilita la ventana de contexto de 262.144 tokens. No se detalla en la informacion disponible la configuracion exacta de capas, dimensiones ocultas ni cabezas de atencion.
 
-El unico contenido textual de la model card es un anuncio de proxima publicacion. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y, por tanto, se omite.
+El ajuste fino se realizo sobre mas de 160.000 trazas de alta calidad de razonamiento, codigo y comportamiento agentico, destiladas de modelos frontera (Claude Opus, GPT-5.6 Sol, Fable, Kimi y otros). El entrenamiento se enfoca en tres ejes: razonamiento estructurado mediante bloques `<thought>`, invocacion de herramientas con formato `<tool_call>` compatible con MCP, y gestion de proyectos multi-fichero. La model card menciona el uso de Unsloth en el flujo de entrenamiento (aparece como tag), aunque no se detallan hiperparametros, numero de tokens de entrenamiento ni si hubo fases de RLHF o DPO posteriores al ajuste supervisado.
 
 ## Capacidades
 
-- No disponible: no se puede confirmar generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No disponible: no hay evidencia de soporte de tool calling o function calling.
-- No disponible: no hay evidencia de capacidades agenticas o de razonamiento multi-paso.
-- No disponible: no se declaran capacidades multilingues ni idiomas cubiertos.
-- No disponible: no se documenta ningun modo especial (thinking mode, audio, vision, etc.).
+- Generacion de texto y razonamiento estructurado mediante bloques `<thought>` con fases de reformulacion, planteamiento, derivacion y verificacion.
+- Codificacion agentica: lectura de ficheros, edicion multi-fichero y gestion de proyectos de software.
+- Ejecucion de comandos de terminal y uso de sistema de ficheros como herramientas nativas.
+- Navegacion web mediante MCP (Model Context Protocol) con formato nativo `<tool_call>`.
+- Tool calling / function calling con formato estructurado compatible con servidores MCP.
+- Razonamiento multi-paso y planificacion para tareas agenticas de varios turnos.
+- Modo conversacional como asistente de chat, ademas del modo agente.
+- Ventana de contexto de 262.144 tokens para manejar repositorios y conversaciones largas.
+- Capacidades multilingues: solo ingles declarado; no se documentan otros idiomas.
+- No se documentan capacidades de vision, audio ni thinking mode explicito mas alla de los bloques `<thought>`.
 
 ## Casos de uso
 
-- Evaluacion comparativa interna: no es posible plantearla hasta que existan pesos y una model card con especificaciones verificables que permitan medir latencia y calidad frente a alternativas.
-- Integracion en pipelines de generacion de codigo: descartada por ahora, al no constar soporte de tool calling, formato de pesos ni contexto maximo.
-- Atencion al cliente multi-turno: descartada, porque se desconoce la ventana de contexto y el comportamiento conversacional.
-- Procesamiento de documentos largos: descartado, al no publicarse la longitud de contexto ni los idiomas soportados.
-- Despliegue on-premise: bloqueado por la ausencia de pesos y de requisitos de hardware declarados.
-- Fine-tuning sobre dominio propio: bloqueado, ya que no hay checkpoint base ni se especifica la composicion del dataset original.
-- Uso como respaldo de otro modelo en produccion: no recomendable, porque no existe ninguna evaluacion publicada de calidad o seguridad.
+- Agente autonomo de IDE: el modelo puede leer el arbol de ficheros de un repositorio, proponer y aplicar cambios multi-fichero, y verificar el resultado ejecutando tests en terminal, gracias a su soporte nativo de tool calling y a la ventana de 262K tokens para mantener el contexto del proyecto.
+- Automatizacion de tareas de refactorizacion: con contexto largo puede cargar varios modulos simultaneamente y razonar sobre dependencias cruzadas antes de generar parches, usando los bloques `<thought>` para planificar la secuencia de cambios.
+- Asistente de terminal y DevOps: integrado con MCP puede ejecutar comandos de shell, interpretar la salida y encadenar acciones (por ejemplo, diagnosticar un fallo de build y aplicar la correccion), lo que lo hace adecuado para pipelines de CI/CD locales.
+- Investigacion web asistida: mediante MCP de busqueda web puede recopilar informacion de varias fuentes, sintetizarla y generar un informe o un parche de codigo basado en la documentacion encontrada.
+- Desarrollo en portatiles sin GPU dedicada: las cuantizaciones Q4_K_M (5,24 GB) y Q2_K_L (3,5 GB) permiten ejecutarlo en equipos de consumo con VRAM limitada, manteniendo el flujo agentico completo de forma privada y sin claves de API.
+- Prototipado de agentes MCP: al usar el formato estandar `<tool_call>`, sirve como modelo de referencia para probar servidores MCP y flujos de herramientas antes de desplegar en produccion con modelos mayores.
+- Asistencia de codigo en local para entornos con requisitos de privacidad: al ejecutarse enteramente en hardware propio y con licencia Apache 2.0, es apto para equipos que no pueden enviar codigo a APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente "PENDING! COMING SOON." en la seccion de benchmarks.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; sin numero de parametros no puede calcularse ni siquiera un orden de magnitud.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible.
-- Opciones de despliegue: no disponible. En caso de publicarse pesos en safetensors, las vias habituales serian transformers, vLLM o TGI; si se publicasen pesos GGUF, serian llama.cpp u Ollama. Ninguna de estas opciones puede confirmarse hoy.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada segun cuantizacion (datos de la model card):
+  - BF16: aproximadamente 17,9 GB.
+  - Q8_0: aproximadamente 9,5 GB.
+  - Q6_K: aproximadamente 7,5 GB.
+  - Q4_K_M: aproximadamente 5,24 GB.
+  - Q2_K_L: aproximadamente 3,5 GB.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible. Las cuantizaciones bajas (Q4_K_M y Q2_K_L) caben en GPUs de consumo con 6-8 GB de VRAM; BF16 requiere GPUs de 24 GB o mas (RTX 4090, A100, H100).
+- Cabe en GPU de consumo: si, con cuantizaciones Q8_0 o inferiores; Q4_K_M y Q2_K_L son las opciones para portatiles y GPUs de gama media.
+- Opciones de despliegue: Ollama (`ollama run parallax-2`), LM Studio, llama.cpp (via GGUF), transformers, text-generation-inference (tag declarado). La model card advierte que en LM Studio debe desactivarse la decodificacion especulativa o el modelo puede no cargar.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. Al desconocerse el tamano, la arquitectura y las capacidades, no es posible identificar modelos comparables de la misma categoria ni establecer una comparacion significativa de parametros, contexto, rendimiento o disponibilidad.
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Parallax 2 | 8,95 B | 262.144 | Apache 2.0 | Razonamiento y codificacion agentica local | Hugging Face (safetensors + GGUF) |
+| Qwen/Qwen3.5-9B (base) | 8,95 B | 262.144 (heredado) | No disponible en la informacion | Modelo generalista base | Hugging Face |
+| Alternativas de 7-9 B para codigo local | No disponible | No disponible | No disponible | Codigo y agentes | No disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| parallax-2 | no disponible | no disponible | apache-2.0 | solo repositorio, sin pesos ni model card |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de informacion tecnica: la model card no contiene especificaciones, y el repositorio no incluye archivos de pesos, tokenizador ni configuracion.
-- Riesgo de anuncio sin entrega: el texto "COMING SOON!" y el hecho de que el repositorio se crease el 2026-10-18 y se actualizase 25 segundos despues, sin cambios posteriores, indican que no ha sido poblado. No hay garantia de que llegue a publicarse.
-- Nula validacion comunitaria: 0 descargas y 0 likes implican que no existen informes independientes de calidad, sesgos o robustez.
-- Sesgos conocidos: no disponible; no se puede evaluar sin modelo ni datos de entrenamiento documentados.
-- Riesgo de alucinacion: no evaluable; sin benchmarks ni pruebas no hay base para estimarlo.
-- Restricciones de idioma y contexto: no disponible.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con obligacion de incluir el aviso de licencia y el texto de exencion de responsabilidad; no obstante, al no existir obra licenciada en el repositorio, la licencia carece por ahora de objeto practico sobre pesos.
-- Advertencia para produccion: no utilizar este identificador en dependencias, pipelines ni documentacion de arquitectura hasta que exista un artefacto verificable y versionado.
+- La model card advierte que es una "experimental preview" y que puede cometer errores; no debe considerarse un modelo de calidad de produccion sin validacion previa.
+- No se han publicado benchmarks, por lo que las afirmaciones de rendimiento ("trades blows with frontier cloud models") no estan respaldadas por datos verificables.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea inferior.
+- Riesgo de alucinacion inherente a los modelos de 9 B, especialmente en tareas de razonamiento largo o cuando se le pide verificar su propia salida.
+- Al ser un ajuste fino destilado de modelos frontera, puede heredar sesgos presentes en los datos de destilacion; no se documentan evaluaciones de sesgo.
+- En LM Studio es obligatorio desactivar la decodificacion especulativa; de lo contrario el modelo puede fallar al cargar.
+- El uso agentico con ejecucion de comandos de terminal y acceso a ficheros implica riesgos de seguridad: requiere sandboxing y supervision humana en entornos de produccion.
+- No se documentan limitaciones especificas de la licencia Apache 2.0 para uso comercial, pero al derivar de Qwen 3.5 conviene verificar la licencia del modelo base antes de un despliegue comercial.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/parallaxlabs/parallax-2
-- Paper tecnico: no disponible
-- Blog o anuncio oficial: no disponible
-- Repositorio de codigo: no disponible
-- Demo o espacio interactivo: no disponible
+- Hugging Face: https://huggingface.co/parallaxlabs/parallax-2
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.

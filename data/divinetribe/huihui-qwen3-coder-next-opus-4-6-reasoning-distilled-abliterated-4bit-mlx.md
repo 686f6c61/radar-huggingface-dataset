@@ -2,100 +2,100 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión a 4 bits en formato MLX del modelo `huihui-ai/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated`, un Qwen3-Coder-Next de 80B en arquitectura MoE con unos 3B de parámetros activos, al que se le destilaron trazas de razonamiento de Claude Opus 4.6 y posteriormente se le aplicó una técnica de *abliteration* para eliminar los rechazos del alineamiento. El autor de la conversión, divinetribe, lo publica bajo licencia Apache 2.0 con 79.674.388.992 parámetros totales y un repositorio de 44,9 GB.
+Este repositorio contiene una conversión a MLX de 4 bits del modelo `huihui-ai/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated`, un Qwen3-Coder-Next de 80B con arquitectura MoE (A3B) al que se le ha destilado el razonamiento de Claude Opus 4.6 y posteriormente se le ha aplicado una técnica de "abliteration" para eliminar los mecanismos de rechazo. El autor original del modelo base es el colectivo huihui-ai, mientras que la conversión a MLX la publica divinetribe.
 
-El modelo está marcado explícitamente como **deprecado y no apto para uso real** por su propio autor, que lo mantiene publicado únicamente como ejemplo documentado de fracaso. En sus pruebas comparativas contra Qwen3-Coder-30B en Apple Silicon con MLX, el modelo falló tareas de generación de código one-shot (juego de Asteroides, calculadora, reloj analógico, parser de expresiones) y tareas agénticas (no invocó ninguna herramienta ni escribió ficheros), mientras que el modelo de 30B sin razonamiento destilado las completó.
+El modelo está etiquetado explícitamente como **deprecated**, **do-not-use** y **cautionary-tale** por parte de su propio publicador. Según la model card, fue evaluado en junio de 2026 y falló prácticamente todas las pruebas de codificación, tanto en tareas one-shot como agénticas, quedando por debajo del modelo mucho más pequeño Qwen3-Coder-30B-A3B-Instruct.
 
-La relevancia de esta ficha es por tanto doble: documenta un caso concreto de por qué la destilación de razonamiento sobre un modelo de código puede degradar la convergencia, y sirve de advertencia sobre la práctica de adoptar modelos por su nombre sin evaluarlos. No se recomienda su descarga ni su despliegue en producción.
+Es relevante ahora únicamente como caso documentado de mala praxis: la combinación de destilación de razonamiento sobre un modelo de código, junto con abliteration, produce un modelo que no converge, sobre-genera tokens y es incapaz de usar herramientas en modo agéntico. No se recomienda su uso en producción bajo ningún escenario.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-Next (MoE, transformer con atención híbrida, según tag `qwen3_next`) |
+| Arquitectura | Qwen3-Next (transformer MoE, variante A3B) |
 | Parametros totales | 79.674.388.992 (~80B) |
-| Parametros activos | ~3B (A3B, según model card) |
+| Parametros activos | A3B (aproximadamente 3B activos, según nomenclatura del modelo base) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4-bit (MLX) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (MLX, 4-bit) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Qwen3-Coder-Next de 80B en arquitectura Mixture of Experts con aproximadamente 3B de parámetros activos por token. Sobre esa base, el autor original (huihui-ai) aplicó dos transformaciones: destilación de trazas de razonamiento de Claude Opus 4.6 y *abliteration*, una técnica que modifica los pesos para eliminar la dirección de rechazo aprendida durante el alineamiento. Posteriormente, divinetribe realizó la conversión a 4 bits para MLX, orientada a inferencia en Apple Silicon.
+El modelo base es un Qwen3-Coder-Next de 80B con arquitectura MoE de tipo A3B, es decir, con aproximadamente 3B parámetros activos por token. Sobre ese modelo se aplicó una destilación del razonamiento de Claude Opus 4.6 y, posteriormente, una técnica de abliteration que elimina direcciones del espacio de activaciones asociadas a rechazos. La conversión final a MLX en 4 bits es la que publica divinetribe.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset de destilación ni el proceso de RLHF/DPO aplicado al modelo base. La model card no documenta hiperparámetros, metodología de *abliteration* ni detalles del pipeline de cuantización más allá del formato de salida.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset de destilación, ni si hubo fases de RLHF o DPO adicionales. La model card no documenta innovaciones técnicas más allá de la propia destilación y abliteration, y el autor señala explícitamente que el resultado es contraproducente: el modelo sobre-razona y no converge en tareas de código.
 
 ## Capacidades
 
-- Generación de texto y código en teoría, aunque en la práctica falla en tareas de código reales según las pruebas del autor.
-- Modo de razonamiento extendido (bloques `<think>`) heredado de la destilación de Opus 4.6, que en la práctica consume el presupuesto de tokens antes de emitir la respuesta.
-- Soporte de tool calling declarado en el modelo base, pero no funcional en las pruebas: el modelo invocó cero herramientas en tareas agénticas.
-- Capacidades multilingües: no disponibles (no documentadas).
-- Capacidades de agente multi-paso: no funcionales según la evaluación del autor.
+- Generación de texto y razonamiento en modo "thinking" (bloques `<think>`), aunque según el autor esto degrada la utilidad práctica.
+- Codificación en teoría, pero con fallos documentados en tareas one-shot y agénticas.
+- Soporte de tool calling declarado en el modelo base, aunque en la práctica el modelo evaluado no invocó ninguna herramienta.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidad de razonamiento multi-paso: declarada, pero contraproducente según los benchmarks del autor.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- **Estudio de fallos en destilación de razonamiento**: el modelo sirve como caso documentado de cómo la destilación de trazas de razonamiento sobre un coder puede impedir la convergencia. Útil en investigación sobre alineamiento y destilación, no en producción.
-- **Análisis de *abliteration* sobre modelos de código**: permite estudiar empíricamente el efecto de la eliminación de la dirección de rechazo en un MoE de 80B, comparando con el modelo base sin abliterar.
-- **Reproducción de benchmarks de agentes locales**: el autor lo incluye en el leaderboard Agent-12, por lo que puede usarse como referencia negativa en evaluaciones de agentes en Apple Silicon.
-- **Pruebas de infraestructura MLX**: sirve para validar pipelines de conversión a 4 bits y servidores MLX-nativos con modelos de 80B en hardware Apple, independientemente de la calidad de salida.
-- **Docencia sobre evaluación de modelos**: ejemplo práctico de por qué no debe adoptarse un modelo por su nombre o procedencia sin benchmark previo.
-- **Investigación sobre sobre-generación**: análisis de por qué un modelo con razonamiento extendido agota el presupuesto de tokens en tareas de código one-shot.
+No se recomienda ningún caso de uso en producción. El propio autor desaconseja explícitamente su uso. A título documental o de investigación:
+
+- Estudio de fallos en destilación de razonamiento sobre modelos de código: sirve como caso de análisis de por qué un modelo de razonamiento destilado puede degradar la convergencia en tareas de generación de código.
+- Análisis de los efectos de la abliteration sobre modelos MoE: permite estudiar cómo la eliminación de direcciones de rechazo afecta a la coherencia en tareas de razonamiento largo.
+- Reproducción de benchmarks de agentes locales: útil para validar que un pipeline de evaluación detecta modelos que no invocan herramientas.
+- Docencia sobre evaluación de modelos: ejemplo real de por qué hay que hacer benchmark antes de adoptar un modelo por su reputación.
+- Investigación sobre sobre-generación de tokens en modelos con thinking mode: caso de estudio de agotamiento de presupuesto de tokens antes de cerrar la respuesta.
+- Comparación de eficiencia MLX vs otros runtimes: útil para medir el coste de un modelo de 80B en 4 bits en Apple Silicon frente a alternativas más pequeñas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card, comparando contra Qwen3-Coder-30B en Apple Silicon con MLX y los mismos prompts:
+Resultados publicados por el autor en la model card, comparando contra Qwen3-Coder-30B en Apple Silicon con MLX:
 
-| Tarea | Qwen3-Coder-30B | Este modelo (80B razonamiento) |
+| Tarea | Qwen3-Coder-30B | Este modelo (80B reasoning) |
 |---|---|---|
-| Juego de Asteroides (HTML one-shot) | Juego funcional | Monólogo de planificación, sin juego |
-| Juego de Snake | 14 s | Funcional pero 8× más lento y ~7× más tokens |
-| Calculadora | Limpio y completo | 56 KB y alcanzó el límite de tokens sin terminar |
-| Reloj analógico | Funcional | 56 KB y alcanzó el límite de tokens sin terminar |
-| Parser de expresiones (18 tests ocultos, sin `eval()`) | 16/18 | 0/18 (sin código, bloque `<think>` sin cerrar) |
-| Tarea agéntica (escribir, ejecutar, corregir con herramientas) | Completada | Cero herramientas, cero ficheros, respondió "DONE" |
+| Juego Asteroids (one-shot HTML) | juego funcional | monólogo de planificación, sin juego |
+| Juego Snake | 14 s | funcional pero 8× más lento y ~7× más tokens |
+| Calculadora | limpia y completa | 56 KB, alcanzó el límite de tokens sin terminar |
+| Reloj analógico | funcional | 56 KB, alcanzó el límite de tokens sin terminar |
+| Parser de expresiones (18 tests ocultos, sin `eval()`) | 16/18 | 0/18, sin código, solo bloque `<think>` sin cerrar |
+| Tarea agéntica (escribir, ejecutar, corregir con herramientas) | completada | 0 herramientas, 0 ficheros, solo "DONE" |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio ocupa 44,9 GB en 4-bit MLX; en Apple Silicon unificada se necesita al menos ese espacio más overhead del runtime, por lo que se recomienda un Mac con 64 GB de memoria unificada o superior.
-- **GPU recomendadas**: Apple Silicon con memoria unificada amplia (M2 Ultra, M3 Ultra, M4 Max con 64-128 GB). En GPU NVIDIA no es directamente desplegable en este formato MLX.
-- **¿Cabe en consumer GPU?**: no en GPU de consumo NVIDIA de 24 GB; sí en Macs de gama alta con memoria unificada.
-- **Opciones de despliegue**: MLX (formato nativo del repo), servidor MLX-nativo de Anthropic-API del proyecto Claude Code Local. No compatible directamente con vLLM, llama.cpp, Ollama o TGI sin reconversión.
-- **Latencia y throughput**: el autor reporta que en Snake fue 8× más lento que Qwen3-Coder-30B y consumió ~7× más tokens para el mismo resultado. No hay cifras absolutas de tokens/s publicadas.
+- VRAM estimada: el repo ocupa 44,9 GB en 4 bits; en inferencia MLX se necesita al menos esa cantidad de memoria unificada disponible.
+- GPU recomendadas: Apple Silicon con memoria unificada de 64 GB o superior (M2 Max, M2 Ultra, M3 Max, M3 Ultra, M4 Max). No se documenta soporte CUDA.
+- ¿Cabe en GPU consumer? En GPUs NVIDIA consumer (RTX 4090 con 24 GB) no cabe en 4 bits; requeriría cuantizaciones más agresivas no publicadas. En Apple Silicon de gama alta sí cabe.
+- Opciones de despliegue: MLX (formato nativo del repo), potencialmente convertible a otros runtimes, aunque no se documenta. El autor lo integra en su proyecto Claude Code Local mediante un servidor MLX compatible con la API de Anthropic.
+- Latencia y throughput: no disponibles de forma numérica; el autor indica que es ~8× más lento que Qwen3-Coder-30B en la tarea Snake y que consume ~7× más tokens para el mismo resultado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Estado |
+| Modelo | Parámetros | Contexto | Rendimiento en código | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (4-bit MLX) | ~80B | ~3B | no disponible | Apache 2.0 | Deprecado, no usar |
-| Qwen3-Coder-30B-A3B-Instruct | ~30B | ~3B | no disponible | Apache 2.0 | Recomendado por el autor |
-| Qwen3-Coder-Next (base) | ~80B | ~3B | no disponible | Apache 2.0 | Disponible |
-| Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated | ~80B | ~3B | no disponible | Apache 2.0 | Origen de esta conversión |
-
-El autor recomienda explícitamente Qwen3-Coder-30B-A3B-Instruct como alternativa: menor tamaño, mayor velocidad, mayor tasa de finalización y mejor resultado en la tarea de razonamiento dura (16/18 frente a 0/18).
+| Este modelo (Huihui Qwen3-Coder-Next Opus 4.6 distilled abliterated 4-bit MLX) | ~80B (A3B MoE) | no disponible | Fallo generalizado según el autor | Apache 2.0 | Hugging Face (deprecated) |
+| Qwen3-Coder-30B-A3B-Instruct | 30B (A3B MoE) | no disponible | Superior en todas las pruebas del autor | Apache 2.0 | Hugging Face |
+| Qwen3-Coder-Next (base, sin destilación ni abliteration) | ~80B (A3B MoE) | no disponible | No evaluado en la información disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- **Modelo deprecado por su autor**: la model card incluye los tags `deprecated`, `do-not-use` y `cautionary-tale`, y el texto recomienda no descargarlo.
-- **Fallo en tareas de código reales**: 0/18 en el parser de expresiones, sin código generado en varias tareas one-shot.
-- **Fallo en modo agéntico**: no invoca herramientas, no escribe ficheros y declara tareas completadas sin ejecutarlas.
-- **Sobre-generación de razonamiento**: agota el presupuesto de tokens en bloques `<think>` sin cerrar la respuesta.
-- **Rendimiento degradado**: 8× más lento y ~7× más tokens que un modelo de 30B para el mismo resultado en las pruebas del autor.
-- **Abliteration**: elimina los rechazos del alineamiento, lo que incrementa el riesgo de contenido no filtrado en usos no controlados.
-- **Idiomas no documentados**: no hay información sobre cobertura multilingüe.
-- **Contexto no documentado**: no se especifica la longitud de ventana.
-- **Formato MLX**: no desplegable directamente en stacks NVIDIA estándar sin reconversión.
-- **Licencia Apache 2.0**: permite uso comercial según la licencia, pero el estado funcional del modelo lo desaconseja en cualquier entorno de producción.
+- Modelo marcado como **deprecated** y **do-not-use** por su propio publicador.
+- Fallo documentado en tareas one-shot: sobre-genera y agota el presupuesto de tokens antes de completar la respuesta.
+- Fallo documentado en tareas agénticas: no invoca herramientas, no escribe ficheros y declara "DONE" sin haber ejecutado nada.
+- La abliteration puede haber degradado la coherencia del modelo, aunque no se aportan métricas específicas.
+- La destilación de razonamiento sobre un modelo de código produce un comportamiento contraproducente: el modelo razona sin converger.
+- Riesgo elevado de alucinación y de respuestas incompletas.
+- Idiomas soportados no documentados.
+- Licencia Apache 2.0 permite uso comercial, pero el autor desaconseja explícitamente su uso en producción.
+- El repo incluye enlaces de afiliación y promoción del proyecto del autor; la model card contiene estadísticas de descargas que no coinciden con las del repositorio de Hugging Face (63,8k frente a 354 descargas), lo que sugiere que parte del contenido promocional no está verificado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/divinetribe/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated-4bit-mlx
-- Modelo de origen: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated
-- Repositorio Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
-- Perfil del autor en GitHub: https://github.com/nicedreamzapp
+- Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated
+- Proyecto Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
 - Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
-- Perfil del autor en Hugging Face: https://huggingface.co/divinetribe
+- Perfil del autor en GitHub: https://github.com/nicedreamzapp
+- GitHub Sponsors: https://github.com/sponsors/nicedreamzapp
+- Software del autor: https://nicedreamzwholesale.com/software/

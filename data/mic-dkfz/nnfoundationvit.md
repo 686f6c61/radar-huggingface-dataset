@@ -2,96 +2,91 @@
 
 ## Resumen
 
-nnFoundationViT es un modelo fundacional 3D para radiologia desarrollado por el MIC-DKFZ (German Cancer Research Center, DKFZ). Forma parte de la familia nnFoundation, compuesta por dos modelos complementarios: una red convolucional (nnFoundationCNN, 102 M de parametros) y este transformer de vision (674 M de parametros). Ambos se preentrenaron con el framework de aprendizaje autosupervisado nnssl, disenado especificamente para vision medica 3D.
+nnFoundationViT es un modelo fundacional de visión 3D para radiología médica, desarrollado por el German Cancer Research Center (DKFZ) y publicado bajo el identificador MIC-DKFZ/nnFoundationViT en Hugging Face. Forma parte de la familia nnFoundation, compuesta por dos modelos complementarios: este ViT de 674M parámetros y un CNN de 102M parámetros (nnFoundationCNN). Ambos se han preentrenado con el framework de aprendizaje autosupervisado nnssl del mismo grupo, diseñado específicamente para volúmenes médicos 3D.
 
-El modelo emplea la arquitectura Primus, un transformer de vision adaptado a volumenes 3D, con 40 capas, dimension de embedding 1056, 16 cabezas de atencion y tokenizacion mediante parches de 8 x 8 x 8. Su proposito es servir como punto de partida para tareas de segmentacion medica (y, en el futuro, deteccion, clasificacion y generacion de informes), reduciendo la necesidad de grandes volumenes de datos etiquetados en cada tarea downstream.
+El modelo emplea la arquitectura Primus (un transformer de visión 3D con 40 capas, dimensión de embedding 1056 y 16 cabezas de atención), que tokeniza volúmenes mediante parches de 8³ vóxeles. Resuelve el problema de la escasez de datos etiquetados en imagen médica: en lugar de entrenar desde cero, los investigadores pueden partir de un backbone preentrenado con grandes volúmenes de datos sin anotaciones y hacer fine-tuning en tareas concretas como segmentación, detección, clasificación o generación de informes radiológicos.
 
-Es relevante ahora porque ofrece un componente de vision 3D preentrenado de forma autosupervisada que se integra directamente en el flujo de trabajo de nnU-Net, permitiendo el ajuste fino desde checkpoints nnssl con un unico comando. El modelo tiene 674 M de parametros activos totales (no es MoE) y se distribuye bajo licencia cc-by-sa-4.0.
+Su relevancia actual radica en la integración nativa con el ecosistema nnU-Net, el framework de referencia para segmentación médica. nnU-Net puede descargar automáticamente estos pesos, adaptar el plan de preprocesamiento y usarlos como inicialización, lo que reduce drásticamente el coste computacional y los datos necesarios para obtener resultados competitivos en tareas clínicas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Primus (transformer de vision 3D, tipo ViT) |
-| Parametros totales | 674 M |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (no es un modelo de lenguaje; entrada como volumen 3D, parche recomendado de 192 x 192 x 192) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (no es un modelo de lenguaje) |
-| Licencia | cc-by-sa-4.0 |
-| Formato de pesos | PyTorch (torch.save), archivo checkpoint_final.pth |
-
-Detalles adicionales de la arquitectura Primus: 40 capas, dimension de embedding 1056, 16 cabezas de atencion y tokens de parche de 8 x 8 x 8.
+| Arquitectura | Primus (transformer de visión 3D), 40 capas, dim. de embedding 1056, 16 cabezas, parches 8³ |
+| Parámetros totales | 674M |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (volumen de entrada; parche recomendado 192×192×192) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible (modelo de imagen, no de texto) |
+| Licencia | CC BY-SA 4.0 |
+| Formato de pesos | PyTorch (`checkpoint_final.pth`, dict serializado con `torch.save`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Primus (referencia arXiv:2503.01835), una arquitectura transformer de vision adaptada a imagenes medicas volumetricas. Procesa volumenes 3D de un solo canal mediante tokenizacion en parches de 8 x 8 x 8, con 40 capas de atencion, dimension de embedding de 1056 y 16 cabezas. El preentrenamiento se realizo con el framework nnssl (MIC-DKFZ/nnssl), que aplica aprendizaje autosupervisado a vision medica 3D. Segun la model card, el preentrenamiento se apoya en el dataset OpenMind (Wald et al., ICCV 2025).
+nnFoundationViT se basa en Primus, una arquitectura transformer de visión adaptada a volúmenes 3D. El modelo procesa volúmenes de un solo canal mediante tokenización en parches cúbicos de 8³ vóxeles, con 40 capas transformer, dimensión de embedding de 1056 y 16 cabezas de atención. El checkpoint incluye un plan de adaptación (`adaptation_plan.json`) que describe la arquitectura y el preprocesamiento esperado, lo que permite a nnU-Net verificar compatibilidad y reconstruir la red.
 
-El modelo forma pareja con nnFoundationCNN, una red convolucional basada en ResEnc (arXiv:2404.09556) con 6 etapas y features 32-64-128-256-320-320 (102 M de parametros). El checkpoint distribuido (checkpoint_final.pth) es un diccionario de torch.save cargable con weights_only=True y contiene tres claves: network_weights (el state_dict preentrenado), nnssl_adaptation_plan (el plan de arquitectura y preprocesamiento) y citations (referencias a citar). El repositorio incluye tambien adaptation_plan.json (plan de arquitectura y preprocesamiento que nnU-Net lee para confirmar compatibilidad) y config.json (marcador para que el Hub registre descargas). No se especifican en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables a un modelo de vision).
+El preentrenamiento se realizó con el framework nnssl, que implementa aprendizaje autosupervisado sobre datos médicos 3D sin etiquetas. La model card cita el dataset OpenMind y los checkpoints OpenMind como base de datos y pesos asociados al framework. No se especifican en la información disponible el número exacto de tokens/volúmenes de entrenamiento, la composición detallada del dataset ni si se aplicaron etapas de RLHF o DPO (no aplicables en un modelo de visión). La entrada esperada son volúmenes 3D de un solo canal, normalizados con Z-score y sin remuestreo, con un tamaño de parche recomendado de 192×192×192.
 
 ## Capacidades
 
-- Extraccion de caracteristicas de volumenes 3D de imagen medica (radiologia) de un solo canal.
-- Preentrenamiento autosupervisado orientado a servir de base para segmentacion medica 3D.
-- Ajuste fino para tareas downstream de segmentacion mediante la integracion con nnU-Net.
-- Preprocesamiento integrado: entrada esperada como volumenes 3D normalizados con Z-score y sin remuestreo.
-- Compatibilidad con el flujo de planificacion de nnU-Net: puede usarse como checkpoint preentrenado con el parametro `-am like_pretrained` y `nnUNetv2_preprocess_like_nnssl`.
-- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no aplica.
-- Capacidades especiales adicionales: el ajuste fino para deteccion, clasificacion y generacion de informes aparece marcado como "TBA" (pendiente) en la model card.
+- Extracción de características 3D a partir de volúmenes radiológicos (TC, RM, etc.) de un solo canal.
+- Inicialización para fine-tuning en segmentación semántica 3D mediante nnU-Net.
+- Inicialización para fine-tuning en detección de lesiones mediante nnDetection.
+- Inicialización para clasificación de imágenes médicas 3D.
+- Soporte para generación de informes radiológicos 3D (repositorio 3d_report_generation).
+- Aprendizaje autosupervisado que permite adaptación con pocos datos etiquetados.
+- No soporta tool calling, function calling ni razonamiento multi-paso: es un backbone de visión, no un modelo de lenguaje.
+- Capacidades multilingües no aplicables (modelo de imagen).
 
 ## Casos de uso
 
-- Segmentacion de organos y lesiones en TC o RM: el modelo se usa como inicializacion preentrenada y se ajusta fino con nnU-Net sobre el dataset etiquetado del usuario, aprovechando las caracteristicas aprendidas de forma autosupervisada.
-- Segmentacion con datos etiquetados escasos: al partir de un checkpoint preentrenado en grandes volumenes de imagen sin etiquetas, reduce el volumen de anotaciones necesario para obtener resultados utiles en una tarea concreta.
-- Investigacion en radiologia: proporciona un backbone 3D estandarizado y reproducible sobre el que comparar tecnicas de segmentacion y, a futuro, deteccion y clasificacion.
-- Preprocesamiento y planificacion automatizada: mediante `nnUNetv2_preprocess_like_nnssl` con `-am like_pretrained`, el modelo se integra en el pipeline de nnU-Net para alinear el preprocesamiento con el preentrenamiento.
-- Desarrollo de pipelines de imagen medica 3D: sirve como componente de extraccion de caracteristicas para volumenes de entrada de 192 x 192 x 192, normalizados con Z-score y sin remuestreo.
-- Punto de partida para modelos multimodales o multitarea en radiologia: al estar disenado para ajuste fino con nnU-Net, se puede reutilizar como base para tareas de clasificacion o deteccion cuando esas integraciones esten disponibles.
-- Comparacion de arquitecturas CNN frente a transformer en vision medica 3D: al compartir familia con nnFoundationCNN (misma receta de preentrenamiento, distinta arquitectura), permite evaluar el rendimiento relativo de un transformer (Primus) frente a una CNN (ResEnc) en la misma tarea.
+- Segmentación de órganos y lesiones en TC/RM: se carga el checkpoint como inicialización en nnU-Net, se ejecuta `nnUNetv2_preprocess_like_nnssl` con `-am like_pretrained` y se hace fine-tuning sobre el dataset clínico; el backbone preentrenado reduce la necesidad de datos anotados.
+- Detección de nódulos pulmonares o metástasis: fine-tuning con nnDetection partiendo de los pesos de nnFoundationViT para localizar lesiones en volúmenes 3D con mayor sensibilidad que un entrenamiento desde cero.
+- Clasificación de estudios radiológicos (por ejemplo, triaje de gravedad o fenotipado): fine-tuning del backbone con el repositorio image_classification para etiquetar volúmenes completos.
+- Generación de informes radiológicos asistida: uso del backbone en el pipeline 3d_report_generation para producir descripciones estructuradas a partir del volumen.
+- Investigación en aprendizaje autosupervisado médico: reutilización del checkpoint como referencia para comparar estrategias de preentrenamiento 3D.
+- Prototipado rápido en entornos con recursos limitados: al partir de un backbone preentrenado de 674M parámetros, se necesitan menos épocas y menos datos para alcanzar resultados razonables en tareas downstream.
+- Desarrollo de herramientas de investigación multi-tarea: un único backbone sirve para segmentación, detección y clasificación, simplificando el mantenimiento de pipelines.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso del checkpoint: 2,7 GB en el repositorio, coherente con 674 M de parametros en fp32 (aproximadamente 2,7 GB de pesos). En fp16/bf16 los pesos ocuparian aproximadamente 1,35 GB.
-- VRAM total para inferencia: depende del tamano de parche y del batch, no especificados en la model card. Con el parche recomendado de 192 x 192 x 192, la memoria de activaciones es el factor dominante frente al peso de los parametros; no se dispone de cifras oficiales.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Cabe en GPU de consumo: no confirmado en la informacion disponible; el footprint de pesos (2,7 GB en fp32) es reducido, pero la viabilidad depende de la memoria de activaciones, no documentada.
-- Opciones de despliegue: integracion con nnU-Net (ajuste fino desde checkpoints nnssl) y descarga directa del checkpoint con `huggingface_hub`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este modelo).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; el checkpoint ocupa 2,7 GB, lo que sugiere que en precisión completa (FP32) los pesos requieren aproximadamente esa cantidad y en FP16 alrededor de 1,4 GB, aunque el consumo real depende del tamaño de parche (192×192×192) y de las activaciones intermedias.
+- GPU recomendadas: no disponible; por el tamaño del modelo y el volumen de entrada, se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090/4090, A100, H100) para fine-tuning, y menos para inferencia con parches reducidos.
+- Compatibilidad con GPU de consumo: probable en GPUs de gama alta (RTX 3090/4090) para inferencia con parches moderados; el fine-tuning con parches 192³ puede requerir más memoria.
+- Opciones de despliegue: nnU-Net (carga nativa desde Hugging Face o ruta local), nnDetection, image_classification y 3d_report_generation; descarga mediante `huggingface_hub.hf_hub_download`.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parametros | Preentrenamiento | Licencia | Disponibilidad |
+| Modelo | Arquitectura | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nnFoundationViT | Primus (ViT 3D), 40 capas, embedding 1056, 16 cabezas, parches 8³ | 674 M | nnssl (autosupervisado) | cc-by-sa-4.0 | Hugging Face (MIC-DKFZ/nnFoundationViT) |
-| nnFoundationCNN | ResEnc, 6 etapas, features 32-64-128-256-320-320 | 102 M | nnssl (autosupervisado) | cc-by-sa-4.0 | Hugging Face (MIC-DKFZ/nnFoundationCNN) |
-| Otros modelos fundacionales de imagen medica 3D | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
+| nnFoundationViT | Primus (ViT 3D) | 674M | parche 192×192×192 | CC BY-SA 4.0 | Hugging Face (MIC-DKFZ) |
+| nnFoundationCNN | ResEnc (CNN 3D) | 102M | parche 192×192×192 | CC BY-SA 4.0 | Hugging Face (MIC-DKFZ) |
+| Otros modelos fundacionales 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo de vision medica: no es un modelo de lenguaje, por lo que no genera texto ni soporta tool calling, agentes o razonamiento multi-paso.
-- Dominio restringido a radiologia 3D: la entrada esperada son volumenes 3D de un solo canal, normalizados con Z-score y sin remuestreo; no se contemplan otros formatos.
-- Rendimiento downstream no documentado: no hay resultados de benchmarks publicados en la informacion disponible, por lo que el rendimiento real en tareas concretas no puede verificarse a priori.
-- Estado incompleto de la familia: deteccion, clasificacion y generacion de informes figuran como "TBA" (pendiente), de modo que solo la segmentacion tiene flujo de ajuste fino documentado.
-- Licencia cc-by-sa-4.0: se trata de una licencia con clausula de compartir igual (ShareAlike), que puede imponer condiciones sobre las obras derivadas; conviene revisar su compatibilidad antes de un uso comercial.
-- Atribucion obligatoria: el uso de los pesos o del framework nnssl requiere citar los trabajos correspondientes (nnFoundation y OpenMind).
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero existe riesgo de errores de segmentacion no documentados.
-- Limitaciones de contexto o idioma: no aplican en el sentido de modelos de lenguaje; la "ventana" viene determinada por el parche volumetrico de entrada (recomendado 192 x 192 x 192).
-- Caveat de produccion: el modelo es un backbone de investigacion preentrenado; se requiere ajuste fino por tarea y no se recomienda su uso clinico directo sin validacion adicional, algo que la propia model card no garantiza.
+- Modelo de investigación: no está validado para uso clínico ni diagnóstico; requiere validación regulatoria antes de cualquier aplicación en producción sanitaria.
+- Licencia CC BY-SA 4.0: permite uso comercial con atribución y obligación de compartir bajo la misma licencia las obras derivadas, lo que puede ser restrictivo para productos propietarios.
+- Entrada restringida: solo volúmenes 3D de un solo canal, normalizados con Z-score y sin remuestreo; no procesa imágenes 2D ni texto.
+- Riesgo de sesgo: el rendimiento depende de la distribución de los datos de preentrenamiento (OpenMind y otros); puede degradarse en modalidades, anatomías o poblaciones poco representadas.
+- Riesgo de alucinación: en tareas de generación de informes, el modelo puede producir descripciones no sustentadas en la imagen.
+- Sin datos publicados de benchmarks en la información disponible, lo que dificulta la comparación objetiva con alternativas.
+- Idiomas no aplicables; no es un modelo lingüístico.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/MIC-DKFZ/nnFoundationViT
-- Hugging Face del modelo hermano (CNN): https://huggingface.co/MIC-DKFZ/nnFoundationCNN
+- Hugging Face: https://huggingface.co/MIC-DKFZ/nnFoundationViT
+- Modelo CNN complementario: https://huggingface.co/MIC-DKFZ/nnFoundationCNN
+- Paper nnFoundation (arXiv 2609.26924): https://arxiv.org/abs/2609.26924
+- Paper ResEnc (arXiv 2404.09556): https://arxiv.org/abs/2404.09556
+- Paper Primus (arXiv 2503.01835): https://arxiv.org/abs/2503.01835
 - Framework nnssl: https://github.com/MIC-DKFZ/nnssl
-- Documentacion de nnU-Net para ajuste fino desde checkpoints nnssl: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/finetuning_from_nnssl_checkpoints.md
-- Paper nnFoundation (arXiv:2609.26924): https://arxiv.org/abs/2609.26924
-- Paper ResEnc (arXiv:2404.09556): https://arxiv.org/abs/2404.09556
-- Paper Primus (arXiv:2503.01835): https://arxiv.org/abs/2503.01835
-- Paper OpenMind (Wald et al., ICCV 2025): referencia en la model card, sin URL directa en la informacion disponible
+- Fine-tuning en nnU-Net: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/finetuning_from_nnssl_checkpoints.md
+- Fine-tuning en nnDetection: https://github.com/MIC-DKFZ/nnDetection/blob/finetuning/docs/finetuning.md
+- Fine-tuning para clasificación: https://github.com/MIC-DKFZ/image_classification/blob/master/docs/nnfoundation.md
+- Generación de informes 3D: https://github.com/MIC-DKFZ/3d_report_generation

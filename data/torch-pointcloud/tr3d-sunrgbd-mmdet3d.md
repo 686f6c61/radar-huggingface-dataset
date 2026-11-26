@@ -2,96 +2,101 @@
 
 ## Resumen
 
-TR3D (Towards Real-Time Indoor 3D Object Detection) es un detector de objetos 3D para interiores basado en una arquitectura fully convolutional sobre vóxeles dispersos. Este checkpoint concreto, `tr3d.sunrgbd.mmdet3d`, ha sido entrenado sobre el dataset SUN RGB-D y convertido desde MMDetection3D al ecosistema de la librería torch-pointcloud por su autor, Arthur Dujardin. El modelo resuelve la tarea de localizar y clasificar objetos en escenas interiores a partir de nubes de puntos con información de color y normales.
+tr3d.sunrgbd.mmdet3d es un modelo de deteccion de objetos 3D en interiores entrenado sobre el conjunto de datos SUN RGB-D. Lo desarrolla el proyecto torch-pointcloud (Arthur Dujardin) como una conversion del checkpoint original de TR3D publicado en OpenMMLab mmdetection3d, y se distribuye con licencia Apache 2.0. El modelo resuelve la localizacion y clasificacion de objetos en escenas RGB-D mediante deteccion 3D sobre nubes de puntos, devolviendo cajas 3D con orientacion.
 
-El modelo es compacto: 14,7 millones de parámetros, 128 canales de características, 3 canales de entrada y 10 clases de objetos. Su diseño prioriza la eficiencia computacional para permitir inferencia en tiempo real, algo poco habitual en detección 3D de interiores, donde los métodos basados en transformers o en propuestas densas suelen ser costosos. Frente a enfoques como VoteNet o FCAF3D, TR3D reduce la latencia manteniendo una precisión competitiva.
+Arquitecturalmente es un detector convolucional totalmente disperso (fully convolutional sparse voxel detector) de tipo TR3D, disenado para inferencia en tiempo real en entornos de interior. El checkpoint contiene 14,7 millones de parametros, acepta nubes de puntos con 3 canales de entrada (coordenadas, color y normal) y predice 10 clases de objetos. Su relevancia actual radica en que ofrece un detector 3D ligero y de bajo coste computacional, empaquetado en la libreria torch-pointcloud con pesos en formato safetensors, lo que simplifica su integracion en pipelines de robotica, realidad aumentada y analisis de escenas.
 
-Es relevante ahora porque el despliegue de percepción 3D en robótica doméstica, realidad aumentada y sistemas embebidos exige modelos ligeros que puedan ejecutarse en GPUs de consumo. Este checkpoint, con licencia Apache-2.0 y pesos en safetensors, facilita la integración en pipelines de PyTorch sin dependencias de frameworks de detección 3D completos.
+Frente a los grandes modelos multimodales de lenguaje, este es un modelo especializado y compacto: no procesa texto ni imagenes 2D de forma generativa, sino que realiza una tarea discriminativa de deteccion 3D. Su interes para desarrolladores e investigadores esta en la relacion entre su reducido tamano (0,1 GB de repositorio) y su rendimiento declarado en SUN RGB-D, con mAP@0.25 de 66,77 y mAP@0.5 de 50,15.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | TR3D (detector 3D fully convolutional sobre vóxeles dispersos) |
-| Parámetros totales | 14.670.674 (14,7 M) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | TR3D, detector convolucional totalmente disperso sobre vóxeles (sparse voxel) |
+| Parametros totales | 14.670.674 (14,7 M) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (no aplica; entrada de nube de puntos) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (no aplica; tarea de visión 3D) |
-| Licencia | Apache-2.0 |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo no linguistico) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+
+Otros datos tecnicos declarados por el autor: canales de entrada 3, 10 clases de objetos, 128 canales de caracteristicas, tamano del repositorio 0,1 GB.
 
 ## Arquitectura y entrenamiento
 
-TR3D es un detector 3D totalmente convolucional que opera sobre una representación de vóxeles dispersos de la nube de puntos. La entrada combina coordenadas (`pos`), color (`color`) y normales (`normal`), que se transforman en una rejilla de vóxeles procesada por convoluciones dispersas (implementadas mediante `spconv`). El modelo extrae características de 128 canales y predice directamente cajas 3D y clases sin etapas de propuesta basadas en votación, lo que reduce la latencia frente a arquitecturas como VoteNet. La cabeza de detección es densa y fully convolutional, lo que permite procesar la escena de forma eficiente.
+TR3D es un detector de objetos 3D disenado para escenas de interior en tiempo real. La arquitectura es una red convolucional totalmente dispersa que opera sobre una representacion de vóxeles dispersos de la nube de puntos, evitando el coste de las convoluciones densas en el espacio 3D vacio. El modelo recibe tres canales por punto (coordenadas, color y normal), los transforma en vóxeles y produce caracteristicas de 128 canales que alimentan las cabezas de deteccion para 10 clases de objetos, con prediccion de cajas 3D y orientacion.
 
-El entrenamiento se realizó sobre SUN RGB-D, un benchmark de comprensión de escenas interiores con anotaciones de cajas 3D en 10 clases. El checkpoint original proviene de MMDetection3D y ha sido convertido a torch-pointcloud. No se detallan en la información disponible el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (no aplicables en este dominio). La innovación principal del trabajo es la arquitectura fully convolutional sobre vóxeles dispersos orientada a tiempo real, descrita en el paper de ICIP 2023.
+El entrenamiento se realizo sobre el conjunto SUN RGB-D, un benchmark de comprension de escenas RGB-D de interiores presentado en CVPR 2015. El checkpoint distribuido aqui es una conversion directa del modelo original de OpenMMLab mmdetection3d (Apache 2.0) al formato de la libreria torch-pointcloud. No se dispone de informacion detallada sobre el numero de tokens o muestras, la composicion exacta del dataset ni si se aplicaron tecnicas de ajuste fino adicionales mas alla del entrenamiento original descrito en el paper TR3D (ICIP 2023).
+
+Como innovacion destacable, el paper TR3D propone un diseno orientado a inferencia en tiempo real para deteccion 3D en interiores, con un detector compacto de 14,7 M de parametros. La conversion a torch-pointcloud mantiene las cabezas de deteccion y el pipeline de preprocesado, exponiendo ademas una funcion `forward_features` que devuelve las caracteristicas de 128 canales para tareas de extraccion de representaciones.
 
 ## Capacidades
 
-- Detección de objetos 3D en escenas interiores: predice cajas 3D (centro, dimensiones, orientación) y etiquetas de clase para 10 categorías de SUN RGB-D.
-- Procesamiento de nubes de puntos con color y normales como entrada multimodal geométrica.
-- Extracción de características densas de 128 canales mediante `forward_features`, reutilizable para tareas downstream (clasificación de escena, segmentación, etc.).
-- Inferencia eficiente en GPU gracias a kernels de convolución dispersa (`spconv`), orientada a tiempo real.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-step (no es un modelo de lenguaje).
-- No tiene capacidades multilingües ni de generación de texto.
-- No dispone de modo thinking, visión 2D genérica ni procesamiento de audio.
+- Deteccion de objetos 3D en escenas de interior a partir de nubes de puntos RGB-D.
+- Clasificacion en 10 clases de objetos propias de SUN RGB-D (categorias de mobiliario y objetos de interior).
+- Regresion de cajas 3D con orientacion y dimensiones en el espacio tridimensional.
+- Procesamiento de nubes de puntos con coordenadas, color y normales como entrada.
+- Extraccion de caracteristicas de 128 canales mediante `forward_features`, util para tareas posteriores de representacion.
+- Inferencia en GPU con kernels dispersos (spconv), orientada a tiempo real segun el diseno del paper.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, generacion de texto ni capacidades multilingues: es un modelo puramente perceptivo y discriminativo.
 
 ## Casos de uso
 
-- Robótica doméstica: un robot móvil equipado con cámara RGB-D puede usar el modelo para localizar sillas, mesas, camas y otros objetos en tiempo real, planificando la navegación y la manipulación con las cajas 3D predichas.
-- Realidad aumentada: anclar contenido virtual sobre objetos físicos en interiores requiere detección 3D precisa; el modelo ofrece cajas 3D con orientación a partir de la nube de puntos del dispositivo.
-- Inventario automático de espacios: escanear una habitación con un sensor RGB-D y contar o localizar objetos de las 10 clases de SUN RGB-D para aplicaciones de logística o facilities management.
-- Preprocesado para segmentación 3D: usar `forward_features` para obtener descriptores de 128 canales por vóxel y alimentar un cabezal de segmentación semántica o de instancias posterior.
-- Sistemas de asistencia a personas con discapacidad visual: detección de obstáculos y objetos relevantes en interiores con latencia baja, aprovechando la eficiencia del modelo.
-- Benchmarking y prototipado en investigación: punto de partida reproducible (Apache-2.0, safetensors, torch-pointcloud) para comparar detectores 3D ligeros sobre SUN RGB-D sin montar MMDetection3D completo.
-- Integración en pipelines de percepción embebida: al ser un modelo de 14,7 M de parámetros, es candidato para GPUs de consumo o plataformas con CUDA, reduciendo coste frente a detectores 3D más pesados.
+- Robotica movil de interior: el modelo puede detectar obstaculos y mobiliario en la nube de puntos de un sensor RGB-D embarcado, permitiendo a un robot planificar trayectorias y evitar colisiones en tiempo real gracias a su bajo coste computacional.
+- Realidad aumentada y mixta: integrado en un pipeline de captura RGB-D, permite anclar objetos virtuales sobre superficies y muebles detectados, aprovechando la prediccion de cajas 3D con orientacion.
+- Analisis de escenas para domotica: inventariado automatico de mobiliario y objetos en una habitacion a partir de un escaneo, util para asistentes de hogar o sistemas de recomendacion de distribucion de espacios.
+- Reconstruccion y modelado 3D asistido: las cajas detectadas sirven como semilla para segmentacion y reconstruccion de mallas de objetos, reduciendo el trabajo manual en herramientas de modelado.
+- Vehiculos autonomos y AGV en interiores: deteccion de personas y objetos en almacenes o entornos industriales cerrados, donde la ventana de percepcion es de corto alcance y la latencia critica.
+- Investigacion en vision 3D: el modelo sirve como baseline reproducible para comparar nuevos detectores 3D sobre SUN RGB-D, con pesos en safetensors y una API de carga sencilla en torch-pointcloud.
+- Extraccion de caracteristicas para clasificacion o segmentacion: `forward_features` permite reutilizar el backbone de 128 canales como extractor de representaciones en tareas derivadas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados, `verified: false`):
+Resultados declarados por el autor en la model card (no verificados):
 
-| Dataset | Métrica | Valor |
+| Dataset | Metrica | Valor |
 |---|---|---|
-| SUN RGB-D | mAP@0.25 | 66,67 |
-| SUN RGB-D | mAP@0.5 | 50,37 |
+| SUN RGB-D | mAP@0.25 | 66,77 |
+| SUN RGB-D | mAP@0.5 | 50,15 |
 
-No se han publicado en la información disponible resultados adicionales (latencia, throughput, comparación con otros detectores) más allá de estos dos valores de mAP.
+No se han publicado en la informacion disponible resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K u otros), ya que el modelo no realiza tareas de lenguaje ni codigo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 14,7 M de parámetros y pesos en safetensors (repo de 0,1 GB), la huella de pesos es muy reducida (decenas de MB), aunque el consumo real depende del número de vóxeles y del tamaño de la escena.
-- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA compatible con la build de `spconv`; el modelo requiere kernels GPU-only, por lo que no funciona en CPU.
-- Cabe en GPUs de consumo: sí, previsiblemente en tarjetas como RTX 3060/4060/4090, dado el reducido número de parámetros; la VRAM efectiva vendrá determinada por el tamaño del voxel grid y el batch.
-- Opciones de despliegue: librería `torch-pointcloud` con PyTorch y `spconv` (build específica para la versión de torch y CUDA). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplican a este tipo de modelo).
-- Latencia y throughput estimados: no disponibles en la información proporcionada; el paper original está orientado a tiempo real, pero no se aportan cifras concretas en la model card.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 14,7 M de parametros en precision completa el peso de los parametros ronda los 60 MB, por lo que el consumo dominante proviene de las activaciones y de los kernels dispersos de spconv, no de los pesos.
+- GPU recomendadas: cualquier GPU NVIDIA compatible con CUDA y con spconv; el modelo es GPU-only segun la model card. Tarjetas como RTX 3090, RTX 4090, A100 o H100 son adecuadas, aunque el modelo es lo bastante pequeno para GPUs de gama media.
+- Cabe en GPU de consumo: si, dado el reducido numero de parametros; se recomienda al menos una GPU con soporte CUDA moderno y suficiente memoria para el lote de nubes de puntos.
+- Opciones de despliegue: la libreria oficial torch-pointcloud (`pip install torch-pointcloud`), que requiere `spconv` compilado para la version de torch y CUDA. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; el paper TR3D esta orientado a tiempo real, pero no se aportan cifras concretas para este checkpoint.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / entrada | mAP@0.5 SUN RGB-D | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| tr3d.sunrgbd.mmdet3d | 14,7 M | Nube de puntos (pos, color, normal) | 50,37 | Apache-2.0 | Hugging Face (torch-pointcloud) |
-| VoteNet (referencia) | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | MMDetection3D |
-| FCAF3D (referencia) | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | MMDetection3D |
+| Modelo | Parametros | Entrada | Clases | Dataset | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| tr3d.sunrgbd.mmdet3d | 14,7 M | Nube de puntos RGB-D | 10 | SUN RGB-D | Apache 2.0 | Hugging Face, torch-pointcloud |
+| TR3D original (mmdetection3d) | no disponible | Nube de puntos RGB-D | 10 | SUN RGB-D | Apache 2.0 | GitHub OpenMMLab |
+| Otros detectores 3D de interior (p. ej. VoteNet, FCAF3D) | no disponible en esta ficha | Nube de puntos | variable | SUN RGB-D | variable | Repositorios de investigacion |
 
-No se dispone en la información proporcionada de cifras comparativas verificadas de otros detectores 3D sobre SUN RGB-D, por lo que la comparativa cuantitativa se limita a los valores del propio modelo. Las alternativas citadas (VoteNet, FCAF3D) se mencionan como referentes del mismo dominio, pero sin datos numéricos confirmados en esta ficha.
+La comparativa detallada con alternativas como VoteNet o FCAF3D no esta disponible en la informacion proporcionada; no se aportan sus parametros ni resultados sobre SUN RGB-D en este contexto.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: el modelo se entrena exclusivamente con SUN RGB-D, por lo que su rendimiento puede degradarse en escenas, sensores o distribuciones distintas a las del dataset (otras cámaras RGB-D, iluminación, tipos de habitación).
-- Riesgo de alucinación: como todo detector, puede producir falsos positivos y cajas mal localizadas, especialmente en objetos ocluidos o con pocos puntos.
-- Limitaciones de contexto o idioma: no aplica el concepto de contexto textual; el modelo solo procesa nubes de puntos y no tiene capacidades lingüísticas.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene revisar las licencias de `spconv` y de las dependencias de torch-pointcloud, así como la del dataset SUN RGB-D para usos derivados.
-- Requiere GPU con CUDA y una build de `spconv` compatible con la versión de torch; no hay soporte CPU documentado, lo que limita el despliegue en entornos sin GPU.
-- Solo 10 clases de SUN RGB-D; no cubre categorías fuera de ese vocabulario.
-- Los resultados de mAP están marcados como no verificados en la model card; deben tomarse como declaraciones del autor.
-- El número de descargas (19) y likes (0) indica baja adopción, con menor soporte comunitario y menos validación independiente.
+- Modelo especializado en deteccion 3D de interior: no genera texto, no razona y no procesa lenguaje natural; no debe evaluarse con metricas de LLM.
+- Dominio restringido: entrenado exclusivamente sobre SUN RGB-D, con 10 clases de objetos de interior; su rendimiento fuera de ese dominio (exteriores, industria, otras categorias) no esta garantizado.
+- Riesgo de alucinacion en el sentido de falsos positivos y cajas mal localizadas: como todo detector, puede predecir objetos inexistentes o con geometria incorrecta, especialmente en escenas con oclusiones o ruido en la nube de puntos.
+- Dependencia de spconv: requiere compilar spconv para la version exacta de PyTorch y CUDA, lo que complica el despliegue y la reproducibilidad en entornos heterogeneos.
+- GPU-only: la model card indica kernels solo para GPU; no se documenta soporte de inferencia en CPU.
+- Idiomas: no aplica; el modelo no tiene capacidades linguisticas ni multilingues.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda revisar las condiciones de los datos de SUN RGB-D y del checkpoint original de mmdetection3d para usos derivados.
+- Resultados de benchmarks no verificados (`verified: false`): las cifras de mAP provienen del autor y no han sido validadas de forma independiente en la informacion disponible.
+- Sin datos de cuantizacion publicados: no se documentan variantes GGUF, ONNX u otras, lo que limita el despliegue en hardware no NVIDIA.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/tr3d.sunrgbd.mmdet3d
 - Paper TR3D: https://arxiv.org/abs/2302.02858
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
-- MMDetection3D (origen del checkpoint): https://github.com/open-mmlab/mmdetection3d
-- Dataset SUN RGB-D (paper CVPR 2015): https://arxiv.org/abs/1501.05619
+- Documentacion de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- OpenMMLab mmdetection3d (origen del checkpoint): https://github.com/open-mmlab/mmdetection3d
+- Dataset SUN RGB-D (paper CVPR 2015): https://arxiv.org/abs/1409.1556 (referencia de la cita; enlace directo al paper de SUN RGB-D no disponible en la informacion proporcionada)

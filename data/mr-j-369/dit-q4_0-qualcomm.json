@@ -5,7 +5,7 @@
   "author": "Mr-J-369",
   "url": "https://huggingface.co/Mr-J-369/dit-Q4_0-Qualcomm",
   "created_at": "2026-10-20T13:44:59.000Z",
-  "updated_at": "2026-11-18T02:10:20.000Z",
+  "updated_at": "2026-11-25T20:06:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 28015,
+  "downloads_30d": 27679,
   "trending_score": 0,
   "parameters": 12820083036,
   "parameters_human": "12.82B",

@@ -2,128 +2,128 @@
 
 ## Resumen
 
-Inkling-2-Mini-W4A16-g128-gptq es una recuantización en INT4 GPTQ del modelo multimodal thinkingmachines/Inkling-2-Mini, publicada por el usuario Pentium95. El objetivo es empaquetar los expertos enrutados del modelo original (distribuidos en NVFP4 y MXFP8) en un formato INT4 con grupo de 128 y calibración GPTQ, de modo que el checkpoint completo quepa en una única GPU Ampere de 24 GB, en concreto una RTX 3090 o 3090 Ti. El repositorio ocupa 17,2 GB e incluye 26.770.847.232 parámetros totales en formato safetensors.
+Inkling-2-Mini-W4A16-g128-gptq es una recuantización del modelo multimodal thinkingmachines/Inkling-2-Mini (Thinking Machines Lab, licencia Apache-2.0) publicada por el usuario Pentium95. El objetivo es empaquetar los 26.770.847.232 parámetros del modelo original en un formato INT4 GPTQ con grupo de 128 y calibración asimétrica, de modo que el checkpoint completo quepa en una única GPU Ampere de 24 GB (RTX 3090 o 3090 Ti). El repositorio ocupa 17,2 GB en disco, frente a los aproximadamente 20 GB de la versión original.
 
-El modelo base es un transformer multimodal de tipo MoE con visión (pipeline image-text-to-text), desarrollado por Thinking Machines Lab, con licencia Apache-2.0. Esta versión mantiene en bf16 la torre de visión, el proyector, la atención, el LM head, los embeddings, los routers, las normas y los controladores de bucle, y solo cuantiza los expertos enrutados y, opcionalmente en tiempo de carga, el drafter DSpark.
+La recuantización actúa sobre los expertos enrutados (capas 0-19 en NVFP4 y 20-23 en MXFP8 en el release), que pasan a INT4 GPTQ con empaquetado AWQ para los kernels Marlin. El resto de componentes (atención, LM head, embeddings, torre de visión, projector, routers, normas y controladores de bucle) se mantienen en bf16 tal cual, aunque el servidor de referencia HyperInkling los convierte a INT8 g128 en tiempo de carga. Incluye además el drafter DSpark (mtp.safetensors) sin modificar, que permite decodificación especulativa.
 
-La relevancia de esta ficha es práctica: demuestra que un modelo MoE multimodal de ~26,8 mil millones de parámetros puede servirse en hardware de consumo de gama alta con pérdida de calidad medida y documentada (KL mediana de 0,0028 frente al original), siempre que se use el stack de inferencia específico HyperInkling, que incluye un parche sobre vLLM necesario para cargar el formato de expertos.
+La relevancia del checkpoint es práctica: permite servir un modelo multimodal con tool calling y razonamiento en hardware de consumo, con una pérdida de calidad medida muy contenida (KL mediana de 0,0030 frente al original y 92,5 % de acuerdo top-1). No obstante, requiere un fork parcheado de vLLM (HyperInkling); el vLLM estándar no reconoce el formato de expertos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal MoE con torre de visión, expertos enrutados y drafter DSpark (decodificación especulativa); formato de bucle propietario `inkling2_loop` |
-| Parametros totales | 26.770.847.232 |
+| Arquitectura | Transformer con mezcla de expertos (MoE) y torre de visión; incluye drafter DSpark para decodificación especulativa |
+| Parametros totales | 26.770.847.232 (26,77 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | hasta 268k tokens por defecto con HyperInkling en RTX 3090 Ti (KV FP8 E4M3, DSpark asíncrono activo, torre de visión en GPU); máximo 386k en configuración sin DSpark y sin torre de visión |
-| Tipos de cuantizacion | Expertos enrutados INT4 grupo 128 asimétrico GPTQ (empaquetado AWQ para Marlin); atención, LM head y embeddings en bf16 (HyperInkling los convierte a INT8 g128 en carga); torre de visión y proyector en bf16; drafter DSpark en bf16 (INT4 en carga con HyperInkling); routers, normas y controladores sin cambios |
-| Idiomas soportados | no disponible (la calibración incluyó datos en italiano e inglés, pero no se declara una lista oficial de idiomas) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (GPTQ INT4, requiere el parche de vLLM incluido en HyperInkling) |
+| Longitud de contexto | Hasta 268k tokens en una RTX 3090 Ti con KV cache FP8, DSpark activo y torre de visión en GPU (8 peticiones simultáneas); hasta 432k en configuración text-only sin DSpark, async off y chunk de prefill 1024 |
+| Tipos de cuantizacion | Expertos enrutados INT4 GPTQ, grupo 128, asimétrico, empaquetado AWQ/Marlin; atención, LM head y embeddings en bf16 (INT8 g128 en carga con HyperInkling); torre de visión y projector en bf16; KV cache FP8 E4M3 |
+| Idiomas soportados | no disponible (el conjunto de calibración incluye italiano, entre otros) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (GPTQ INT4 + bf16), más mtp.safetensors para el drafter |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal con mezcla de expertos (MoE) que combina una torre de visión con un decodificador de lenguaje, e incorpora un drafter DSpark para decodificación especulativa. Los expertos enrutados de las capas 0 a 19 se publicaron originalmente en NVFP4 y los de las capas 20 a 23 en MXFP8; esta recuantización los unifica a INT4 con grupo de 128, asimétrico y calibrado con GPTQ. El resto de componentes (atención, LM head, embeddings, torre de visión, proyector, routers, normas y controladores de bucle) se mantiene en bf16 tal como se publicó.
+El modelo base es un transformer con capas de mezcla de expertos enrutados y una torre de visión con projector, orientado a tareas image-text-to-text, conversación, tool calling y razonamiento. El checkpoint original distribuye los expertos enrutados en dos formatos de precisión reducida (NVFP4 en las capas 0-19 y MXFP8 en las 20-23), mientras que atención, LM head, embeddings, visión y projector permanecen en bf16. El drafter DSpark se entrega como artefacto separado (mtp.safetensors) y se usa para decodificación especulativa.
 
-La calibración se realizó con 166.000 tokens procedentes de NousResearch/hermes-function-calling-v1, pixparse/docvqa-single-page-questions, ise-uiuc/Magicoder-Evol-Instruct-110K, wikimedia/wikipedia 20231101.it y HuggingFaceH4/ultrachat_200k. Las respuestas se generaron con el checkpoint original y se capturaron las entradas y el enrutamiento del MoE antes de aplicar GPTQ por experto. Una segunda ronda de otros 166.000 tokens no produjo cambios medibles. No existe un maestro bf16 de los expertos: el GPTQ se aplicó sobre los pesos NVFP4/MXFP8 dequantizados, por lo que la referencia es la propia release original. El pipeline de preparación está en el directorio `prepare/` de HyperInkling.
+La recuantización se realizó con GPTQ sobre los pesos NVFP4/MXFP8 ya dequantizados, sin maestro bf16 de los expertos: la referencia de calibración es el propio release. Se emplearon 166.000 tokens de datasets públicos (NousResearch/hermes-function-calling-v1, pixparse/docvqa-single-page-questions, ise-uiuc/Magicoder-Evol-Instruct-110K, wikimedia/wikipedia 20231101.it y HuggingFaceH4/ultrachat_200k), con respuestas generadas por el checkpoint original y captura de entradas de MoE y routing, aplicando GPTQ experto a experto. Una segunda ronda de otros 166.000 tokens no produjo cambios medibles. El pipeline está disponible en el directorio `prepare/` de HyperInkling.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto muy largo (hasta 268k tokens por defecto en la configuración de referencia).
-- Razonamiento y modo de pensamiento: el servidor expone `--reasoning-parser inkling` para separar el razonamiento de la respuesta final.
-- Tool calling y function calling: parser dedicado `--tool-call-parser inkling` y API compatible con OpenAI en `/v1`.
-- Comprensión de imágenes: pipeline image-text-to-text con torre de visión y proyector en bf16; evaluado con DocVQA en formato JSON estricto.
-- Generación de código: la calibración incluyó Magicoder-Evol-Instruct y el modelo se evaluó en tareas de código dentro del conjunto de transcripciones retenidas.
-- Razonamiento matemático: evaluado en GSM8K con precisión de 0,970 en esta versión.
-- Capacidades multilingües: la calibración incluyó Wikipedia en italiano, pero no se declara una lista oficial de idiomas soportados.
-- Decodificación especulativa con drafter DSpark, que acelera especialmente la decodificación en documentos largos y salidas estructuradas.
-- Servido mediante API OpenAI-compatible con vLLM parcheado.
+- Generación de texto conversacional multi-turno con contexto largo.
+- Razonamiento y resolución de problemas matemáticos (GSM8K evaluado en 0,970).
+- Tool calling / function calling con parser dedicado (`--tool-call-parser inkling`).
+- Razonamiento explícito con parser dedicado (`--reasoning-parser inkling`).
+- Comprensión de imágenes (image-text-to-text) mediante torre de visión y projector.
+- Respuesta en formato estructurado, incluida salida JSON estricta (DocVQA evaluado como JSON estricto).
+- Generación de código (el conjunto de calibración incluye Magicoder-Evol-Instruct).
+- Capacidades multilingües parciales (calibración con Wikipedia en italiano).
+- Decodificación especulativa mediante el drafter DSpark, que multiplica el throughput de decode.
+- Servido mediante API compatible con OpenAI (`/v1`, modelo `inkling-2-mini`).
 
 ## Casos de uso
 
-- Extracción de datos de documentos con salida JSON estricta: el modelo alcanza 0,930 de ANLS y un 99,0 % de JSON válido en DocVQA, por lo que es adecuado para pipelines de digitalización de facturas, formularios y páginas escaneadas con validación automática del esquema.
-- Asistente conversacional con contexto largo: con hasta 268k tokens de ventana por defecto puede mantener conversaciones multi-turno sobre corpus extensos o historiales completos sin truncar, útil en atención al cliente técnica o legal.
-- Agente con tool calling en producción: el parser `inkling` y la API OpenAI-compatible permiten integrarlo en orquestadores de agentes que encadenan llamadas a funciones, con una precisión de 0,610 en llamadas exactas (0,700 en nombres) en la batería de evaluación.
-- Generación y revisión de código en CI/CD: dado su rendimiento en tareas de código y su capacidad de razonamiento, puede integrarse en pipelines de revisión automática de parches o generación de tests, siempre que el contexto quepa en la ventana disponible.
-- Razonamiento matemático y resolución de problemas: con 0,970 en GSM8K es viable para tutoría automática, verificación de cálculos y generación de problemas resueltos paso a paso.
-- Despliegue en estación de trabajo con una sola RTX 3090: el caso de uso central del checkpoint es servir un modelo multimodal MoE de 26,8B en 24 GB de VRAM, con 141 tok/s en decodificación de prosa y hasta ~310 tok/s en salida estructurada usando DSpark.
-- Procesamiento por lotes de imágenes y texto: con 6 peticiones concurrentes alcanza 436 tok/s agregados en decodificación y 5.570 tok/s de prefill agregado, adecuado para enriquecimiento de catálogos o moderación de contenido por lotes.
+- Asistente conversacional de contexto largo: con hasta 268k tokens de ventana en una RTX 3090 Ti, permite mantener sesiones extensas con historial completo, documentos adjuntos y varias conversaciones simultáneas (8 peticiones servidas a la vez en las pruebas del autor).
+- Automatización de atención al cliente con tool calling: el parser `inkling` y la tasa de tool calls exactos de 0,615 (0,710 en nombres) permiten encadenar consultas a APIs internas, consulta de pedidos y escalado a humano dentro de un mismo turno.
+- Extracción de datos de documentos e imágenes: la puntuación ANLS de 0,935 en DocVQA con salida JSON válida en el 99,5 % de los casos lo hace apto para digitalización de facturas, formularios y tickets con salida estructurada.
+- Agente de código en pipelines de CI/CD: la calibración con Magicoder y el soporte de tool calling permiten integrarlo en flujos de revisión, generación de parches y ejecución de comandos vía herramientas, con razonamiento multi-paso.
+- Asistente de razonamiento matemático: GSM8K en 0,970 sin degradación respecto al original lo habilita para tutoría, verificación de cálculos y resolución de problemas paso a paso.
+- Despliegue on-premise con una sola GPU de consumo: al caber en 24 GB, permite servir el modelo en estaciones de trabajo o servidores pequeños sin infraestructura de datacenter, con API compatible con OpenAI para integrarse en aplicaciones existentes.
+- Prototipado de agentes multimodales: la combinación de visión, tool calling y contexto largo permite construir agentes que inspeccionan capturas de pantalla, documentos escaneados o gráficos y actúan sobre ellos.
 
 ## Benchmarks y rendimiento
 
-Calidad frente al checkpoint original (KL forzado por profesor sobre 22 transcripciones retenidas, una petición a la vez):
+Calidad frente al checkpoint original (KL forzado por profesor sobre 22 transcripciones reservadas; mediana y media):
 
 | Configuracion | KL mediana | KL media | Acuerdo top-1 |
 |---|---|---|---|
-| Original contra sí mismo (ruido entre ejecuciones) | 0,0003 | 0,060 | 95,8 % |
-| Expertos INT4 round-to-nearest | 0,0039 | 0,133 | 91,2 % |
-| Expertos INT4 GPTQ (este checkpoint) | 0,0028 | 0,112 | 92,7 % |
-| + atención INT8, head, embeddings, KV FP8 (por defecto en HyperInkling) | 0,0030 | 0,117 | 92,4 % |
+| Original contra sí mismo | 0 | 0 | 100 % |
+| Expertos INT4 round-to-nearest (build anterior) | 0,0039 | 0,133 | 91,2 % |
+| Expertos INT4 GPTQ (este checkpoint) | 0,0030 | 0,117 | 92,5 % |
+| + atención INT8, head, embeddings, KV FP8 (defaults de HyperInkling) | 0,0031 | 0,123 | 92,1 % |
 
-Precisión por tarea (greedy, 200 elementos por tarea, ±1,3 puntos de ruido):
+Precisión por tarea (greedy, 200 ítems, ruido aproximado de ±1 a ±3 puntos):
 
-| Tarea | Checkpoint original | Este checkpoint con HyperInkling |
+| Tarea | Checkpoint original | Este checkpoint (HyperInkling) |
 |---|---|---|
-| GSM8K | 0,965 | 0,970 |
-| Llamadas a herramientas, exactas (solo nombres) | 0,595 (0,685) | 0,610 (0,700) |
-| DocVQA como JSON estricto, ANLS (JSON válido) | 0,926 (99,5 %) | 0,930 (99,0 %) |
+| GSM8K | 0,970 | 0,970 |
+| Tool calls, exacto (solo nombres) | 0,645 (0,735) | 0,615 (0,710) |
+| DocVQA como JSON estricto, ANLS (JSON válido) | 0,938 (99,5 %) | 0,935 (99,5 %) |
 
-Rendimiento en RTX 3090 Ti con undervolt a 350 W, KV FP8 E4M3:
+Rendimiento en RTX 3090 Ti con undervolt a 350 W, KV cache FP8 E4M3, chunk de prefill 2048 y scheduling asíncrono; 512 tokens de salida:
 
-| Metrica | Sin DSpark | Con DSpark (por defecto) |
-|---|---|---|
-| Prefill, prompt único de 14,5k tokens | 5.550 tok/s | 5.470 tok/s |
-| Prefill, 6 prompts simultáneos, agregado | 5.600 tok/s | 5.570 tok/s |
-| Decodificación, una petición, prosa | 134 tok/s | 141 tok/s |
-| Decodificación, una petición, documentos largos (13k tokens) | 128 tok/s | 214 tok/s |
-| Decodificación, una petición, salida estructurada | 135 tok/s | ~310 tok/s |
-| Decodificación, 6 peticiones, prosa, agregado | 428 tok/s | 436 tok/s |
-
-Contexto máximo con HyperInkling en RTX 3090 Ti (6 peticiones simultáneas, KV FP8 E4M3):
-
-| Torre de visión | DSpark asíncrono on | DSpark asíncrono off | Sin DSpark, asíncrono on | Sin DSpark, asíncrono off |
+| Metrica | 1 peticion, sin DSpark | 1 peticion, con DSpark | 6 peticiones, sin DSpark | 6 peticiones, con DSpark |
 |---|---|---|---|---|
-| En GPU | 213k | 268k (por defecto) | 291k | 345k |
-| En RAM del host | 249k | 302k | 331k | 386k |
-| Ninguna (solo texto) | 249k | 302k | 336k | 386k |
+| Prefill por petición, 8k | 6.283 tok/s | 6.191 tok/s | 2.292 tok/s | 2.417 tok/s |
+| Prefill agregado, 8k | 6.283 tok/s | 6.191 tok/s | 6.243 tok/s | 6.191 tok/s |
+| Decode por petición, 8k | 131 tok/s | 267 tok/s | 68 tok/s | 114 tok/s |
+| Decode agregado, 8k | 131 tok/s | 267 tok/s | 407 tok/s | 686 tok/s |
+| Prefill por petición, 32k | 5.255 tok/s | 5.209 tok/s | 2.123 tok/s | 2.114 tok/s |
+| Prefill agregado, 32k | 5.255 tok/s | 5.209 tok/s | 5.267 tok/s | 5.223 tok/s |
+| Decode por petición, 32k | 124 tok/s | 188 tok/s | 58 tok/s | 108 tok/s |
+| Decode agregado, 32k | 124 tok/s | 188 tok/s | 350 tok/s | 646 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM: el checkpoint ocupa 17,2 GB en disco; está diseñado para caber en 24 GB de VRAM con KV cache FP8 E4M3 y margen para el contexto. Con 268k tokens de contexto por defecto y visión en GPU, una RTX 3090 de 24 GB es el mínimo práctico.
-- GPU soportadas: exclusivamente RTX 3090 o RTX 3090 Ti (Ampere, 24 GB). El autor declara explícitamente que no hay soporte para otras generaciones ni para multi-GPU.
-- GPU no soportadas: no se garantiza funcionamiento en Ada, Hopper, Blackwell ni en configuraciones multi-GPU.
-- Despliegue: HyperInkling, que incluye un vLLM parcheado (PR #69028), un lanzador y un asistente de configuración. El servidor es compatible con OpenAI en `/v1` con modelo `inkling-2-mini`. No se menciona soporte para llama.cpp, Ollama ni TGI.
-- Instalación: `scripts/setup-vllm.sh` y `scripts/build-image.sh` (aproximadamente una hora la primera vez), seguido de `scripts/wizard.py` y `docker compose up -d`.
-- Latencia y throughput: prefill de 5.470 tok/s con DSpark en un prompt de 14,5k tokens; decodificación de 141 tok/s en prosa y ~310 tok/s en salida estructurada con DSpark. El chunk de prefill `NBT` a 2048 sube el prefill a 6.050 tok/s a cambio de reducir el contexto a unos 200k tokens.
+- VRAM: aproximadamente 17 GB de pesos en disco más overhead de activaciones y KV cache; encaja en 24 GB con KV cache FP8 y torre de visión en GPU.
+- GPU soportadas: exclusivamente RTX 3090 y RTX 3090 Ti (Ampere, sm86). El autor indica explícitamente que no hay soporte para otras generaciones ni para multi-GPU.
+- Cabe en GPU de consumo: sí, en RTX 3090 y 3090 Ti. No está previsto para otras consumer (por ejemplo, Ada o Blackwell) según las advertencias del autor.
+- Contexto máximo según configuración en RTX 3090 Ti (8 peticiones simultáneas, KV FP8): 268k con DSpark y visión en GPU; 345k sin DSpark; 303k con visión en RAM del host y DSpark; 385k sin DSpark y visión en RAM; 305k text-only con DSpark; 394k text-only sin DSpark; 432k text-only, sin DSpark, async off y chunk 1024.
+- Despliegue: vLLM parcheado mediante el proyecto HyperInkling (fork con un parche, launcher y asistente de configuración, con docker compose). El vLLM estándar no carga el formato de expertos de este checkpoint.
+- Throughput: ver tabla de benchmarks; con DSpark, decode agregado de 686 tok/s a 8k de contexto con 6 peticiones y 646 tok/s a 32k.
+- Latencia: no se publican cifras de latencia por petición; el autor mide decode sobre aciertos de prefix cache sin prefill incluido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Despliegue en 24 GB |
+| Modelo | Parametros | Contexto | Calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-W4A16-g128-gptq (este) | 26,77B | hasta 268k por defecto (386k máximo) | INT4 GPTQ g128 en expertos | Apache-2.0 | Sí, RTX 3090/3090 Ti con HyperInkling |
-| thinkingmachines/Inkling-2-Mini (original) | 26,77B | no disponible | NVFP4/MXFP8 en expertos | Apache-2.0 | No confirmado en 24 GB; requiere ~20 GB solo de pesos |
-| Modelos MoE multimodales de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Inkling-2-Mini (original, Thinking Machines Lab) | 26,77 mil millones | no disponible en la información | GSM8K 0,970; tool calls exactos 0,645; DocVQA ANLS 0,938 | Apache-2.0 | Hugging Face (thinkingmachines/Inkling-2-Mini) |
+| Inkling-2-Mini-W4A16-g128-gptq (este checkpoint) | 26,77 mil millones | hasta 268k en RTX 3090 Ti con DSpark y visión en GPU | GSM8K 0,970; tool calls exactos 0,615; DocVQA ANLS 0,935 | Apache-2.0 | Hugging Face (Pentium95) |
+| Expertos INT4 round-to-nearest (build anterior del mismo autor) | 26,77 mil millones | no disponible | KL mediana 0,0039; acuerdo top-1 91,2 % | Apache-2.0 | no disponible |
 
-No se dispone de datos de benchmarks de terceros en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone en la información proporcionada de datos de otros modelos comparables de la misma categoría (multimodales MoE de ~27 mil millones con tool calling).
 
 ## Limitaciones y advertencias
 
-- Requiere un vLLM parcheado: el vLLM estándar no reconoce el formato de expertos de este checkpoint y no puede cargarlo. Sin HyperInkling el modelo es inutilizable.
-- Soporte limitado a una única GPU: solo RTX 3090 y 3090 Ti, sin multi-GPU ni otras generaciones. El autor no ofrece garantía de soporte.
-- Pérdida de calidad medible: KL mediana de 0,0028 y acuerdo top-1 del 92,7 % frente al original; con los ajustes por defecto de HyperInkling (INT8 en atención y embeddings, KV FP8) el acuerdo baja al 92,4 %. No es una réplica exacta del modelo original.
-- Sin maestro bf16 de los expertos: la referencia de calibración es la propia release en NVFP4/MXFP8, de modo que los errores de esa release se heredan.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de veracidad ni de sesgos en la información disponible.
-- Idiomas: no se declara una lista oficial de idiomas soportados; la calibración incluyó italiano e inglés, pero no hay garantías para otras lenguas.
-- Proyecto personal: publicado sin promesa de mantenimiento, con 0 descargas en el momento de la ficha y una única iteración de calibración validada.
-- Dependencia de funciones opcionales: el rendimiento en documentos largos y salidas estructuradas depende del drafter DSpark; sin él, la decodificación cae de 214 a 128 tok/s en documentos largos y de ~310 a 135 tok/s en salida estructurada.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero debe conservarse la atribución a Thinking Machines Lab por el modelo y el drafter, y respetarse la licencia del stack HyperInkling y del parche de vLLM.
+- Requiere un fork parcheado de vLLM (HyperInkling); el vLLM estándar no reconoce el formato de expertos y no carga el checkpoint.
+- Soporte limitado a una única RTX 3090 o 3090 Ti. Sin soporte para otras generaciones de GPU, sin multi-GPU y sin promesa de soporte por parte del autor (proyecto personal).
+- Ligera degradación en tool calling: 0,615 frente a 0,645 del original en exactitud de llamadas (0,710 frente a 0,735 en nombres), dentro del ruido declarado de ±1 a ±3 puntos pero consistente en la dirección negativa.
+- El modelo base presenta bucles de razonamiento largos según su model card; se recomienda limitar `max_tokens` y el número de turnos del agente.
+- Temperatura por defecto de 1.0, igual que el modelo base; valores bajos pueden degradar la calidad.
+- No hay maestro bf16 de los expertos: la referencia de calidad es el propio release en NVFP4/MXFP8, no un modelo en bf16.
+- Idiomas soportados no documentados; la calibración incluye italiano pero no se especifica cobertura multilingüe completa.
+- No se publican datos de sesgos ni de tasas de alucinación.
+- Licencia Apache-2.0 permite uso comercial, pero la obligación de usar un fork de vLLM añade coste de mantenimiento en producción.
+- El contexto máximo depende de la configuración de servidor (DSpark, ubicación de la torre de visión, scheduling asíncrono, tamaño del chunk de prefill); las cifras de 268k-432k son específicas de RTX 3090 Ti con KV FP8.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Pentium95/Inkling-2-Mini-W4A16-g128-gptq
+- Checkpoint en Hugging Face: https://huggingface.co/Pentium95/Inkling-2-Mini-W4A16-g128-gptq
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Stack de inferencia HyperInkling: https://github.com/Pento95/HyperInkling
-- Repositorio HyperQwen (enfoque de portado): https://github.com/syv-ai/HyperQwen
-- gpu-unlock (herramienta de desbloqueo de GPU): https://github.com/zagitta/gpu-unlock
+- Repositorio HyperInkling: https://github.com/Pento95/HyperInkling
+- Pull request de soporte en vLLM: https://github.com/vllm-project/vllm/pull/69028
+- Pull request de soporte en Ampere: https://github.com/vllm-project/vllm/pull/69165
+- Pull request con ideas para siguientes pasos: https://github.com/vllm-project/vllm/pull/69141
+- Kernels sm86 para Inkling 2: https://github.com/agent2x0r/inkling2-sm86-kernels
+- Enfoque de porting HyperQwen: https://github.com/syv-ai/HyperQwen
+- Utilidad gpu-unlock: https://github.com/zagitta/gpu-unlock
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- PR de vLLM #69028: no disponible como enlace verificado en la información proporcionada

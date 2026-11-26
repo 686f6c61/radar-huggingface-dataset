@@ -2,91 +2,105 @@
 
 ## Resumen
 
-`ritiksuman/rudra` es un repositorio de modelo publicado en Hugging Face por el usuario `ritiksuman`. La informacion disponible se limita a los metadatos del repositorio: identificador, licencia MIT, la etiqueta de region `us` y contadores de descargas y likes a cero. La model card no contiene mas contenido que la declaracion de licencia (`license: mit`), por lo que no se documentan arquitectura, tamano, contexto, datos de entrenamiento ni capacidades.
+Rudra es un ajuste fino (fine-tune) por LoRA del modelo Qwen3.5-4B de Unsloth, desarrollado por Ritik Suman bajo el sello Vyomma Intelligence. Está diseñado específicamente para funcionar como agente autónomo de operaciones de ficheros y asistencia a la programación, emitiendo respuestas en sobres JSON estrictos y machine-parsables que estructuran un plan, una lista de pasos y un indicador de finalización. El modelo cuenta con 4.205.751.296 parámetros totales y se distribuye principalmente en formato GGUF cuantizado Q8_0 (4,5 GB), lo que permite ejecutarlo íntegramente en VRAM de una GPU de consumo como una RTX 3050 de 6 GB.
 
-No se ha publicado informacion sobre el pipeline asociado, los idiomas soportados, los formatos de pesos ni los parametros del modelo. El repositorio se creo y se actualizo en el mismo instante (9 de octubre de 2026, 19:58:56 UTC), lo que sugiere una publicacion unica sin iteraciones posteriores y sin mantenimiento visible.
+La propuesta diferencial de Rudra no es tanto su capacidad bruta de razonamiento como su disciplina procedimental: ha sido entrenado para invocar herramientas (lectura, escritura y listado de ficheros, entre otras) y para verificar cada acción con el resultado devuelto por la herramienta antes de declarar éxito, combatiendo así el modo de fallo típico de los agentes basados en LLM genéricos, que afirman haber realizado cambios inexistentes. Según la model card, alcanza una tasa de JSON válido de 1.0 y una precisión de invocación de herramientas de 1.0 en su conjunto de evaluación interno de diez escenarios.
 
-Por todo ello, esta ficha no puede validar ninguna caracteristica tecnica del modelo. Cualquier evaluacion de su idoneidad para produccion, investigacion o uso comercial requiere consultar directamente el repositorio y, en su caso, contactar con el autor, ya que la documentacion publica es insuficiente para emitir un juicio tecnico fundamentado. La unica certeza operativa es la licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion.
+El modelo se publica bajo licencia Apache 2.0, lo que facilita su integración en productos comerciales, y está pensado para desplegarse con Ollama o llama.cpp en entornos locales. Su relevancia actual radica en la creciente demanda de agentes pequeños, ejecutables en hardware modesto y con salidas estructuradas fiables para automatización de flujos de trabajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | no disponible |
-
-Datos adicionales del repositorio: identificador `ritiksuman/rudra`, autor `ritiksuman`, pipeline no declarado, descargas 0, likes 0, creado el 9 de octubre de 2026 a las 19:58:56 UTC y actualizado en el mismo instante. Etiquetas declaradas: `license:mit`, `region:us`.
+| Arquitectura | Transformer decoder-only (base Qwen3.5-4B), ajuste fino LoRA fusionado en pesos completos |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | 8192 tokens (valor de `num_ctx` recomendado en la model card) |
+| Tipos de cuantizacion | GGUF Q8_0 (canónico); el modelo base se sirve desde Q4_K_M |
+| Idiomas soportados | Inglés (`en` declarado en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (`rudra_v6_q8.gguf`); repositorio también con tokenizer y chat template en formato transformers |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), ni el numero de parametros, ni la longitud de contexto, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.).
+Rudra parte de Qwen3.5-4B, un transformer decoder-only de 4.200 millones de parámetros, sobre el que se aplica un ajuste fino LoRA con rango r=16 y alpha=32 mediante PEFT. Los adaptadores se fusionan en los pesos completos y el resultado se recuantiza directamente a Q8_0, lo que según el autor elimina la pérdida de la ruta de cuantización que arrastraba la versión anterior. El objetivo de entrenamiento combina tres componentes: la generación de sobres JSON estrictos con los campos `plan`, `steps` y `done`; la sintaxis correcta de invocación de herramientas; y una disciplina de verificación antes de declarar éxito.
 
-El unico indicio estructural es la etiqueta `region:us` incluida por el autor, que en Hugging Face se emplea habitualmente para marcar modelos con restricciones o consideraciones de region, aunque su significado exacto en este repositorio no se explica en la documentacion.
+La model card describe dos conjuntos de evaluación reproducibles: `eval_rudra`, con diez escenarios en modo JSON a temperatura 0 (escritura simple, renombrado múltiple, recuperación ante fichero ausente, generación de informes, investigación web, uso de memoria, trampa anti-alucinación, trampa de rutas absolutas, resumen multi-lectura y misión larga), y una batería de bucles agénticos con misiones reales sobre sistema de ficheros, dos repeticiones a temperatura 0.4 y un presupuesto duro de seis pasos por turno. No se especifican en la información disponible el volumen de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-No se ha publicado ninguna descripcion de capacidades. No es posible confirmar ni descartar:
-
-- Generacion de texto, razonamiento, codigo o matematicas.
-- Soporte de tool calling o function calling.
-- Comportamiento agentico o razonamiento multi-paso.
-- Cobertura multilingue.
-- Capacidades multimodales (vision, audio) o modos especiales (thinking mode, razonamiento extendido).
-- Relleno de plantillas de chat o formato de prompt soportado.
-
-Se recomienda tratar el modelo como no verificado hasta que el autor publique una model card completa o se realicen evaluaciones independientes.
+- Generación de texto conversacional con plantilla de chat propia (`chat_template.jinja`) alineada con el formato de entrenamiento.
+- Emisión nativa de sobres JSON estrictos con planificación explícita por pasos, sin necesidad de few-shot prompting para forzar el formato.
+- Invocación de funciones y uso de herramientas (tool calling) con sintaxis especializada: lectura, escritura y listado de ficheros, entre otras.
+- Ejecución de bucles agénticos multi-paso con reafirmación de pasos pendientes en misiones largas.
+- Verificación de acciones contra resultados de herramientas, con comportamiento anti-alucinación entrenado (no afirmar éxito sin evidencia).
+- Recuperación ante errores de herramienta: lectura del error, ajuste de argumentos y reintento único.
+- Generación de informes a partir de datos y resúmenes de múltiples lecturas.
+- Capacidad declarada de investigación web dentro del bucle agéntico (según los escenarios de evaluación).
+- Modo JSON y salidas estructuradas orientadas a integración programática.
+- Capacidades multilingües: no disponible más allá del inglés declarado.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y justificados sin informacion sobre arquitectura, tamano, contexto ni tarea objetivo. A continuacion se enumeran escenarios unicamente con caracter hipotetico y condicionado, que solo serian aplicables si una evaluacion directa confirmase que el modelo es un modelo de lenguaje funcional:
-
-- Generacion de texto asistida: solo si se confirma que el pipeline es de generacion de texto y se documenta la longitud de contexto disponible.
-- Clasificacion o etiquetado de documentos: requeriria verificar el comportamiento en tareas discriminativas, no documentado.
-- Extraccion de informacion estructurada: exigiria validar la fiabilidad de la salida en formato JSON o similar, no documentada.
-- Prototipado en investigacion: el modelo podria servir como punto de partida experimental, siempre que se verifique primero su naturaleza y licencia efectiva.
-- Ajuste fino sobre dominio propio: la licencia MIT lo permitiria, pero se desconoce si el modelo base es adecuado y si existe una plantilla de chat definida.
-- Despliegue en produccion: no recomendable sin benchmarks, sin especificaciones de contexto y sin historial de mantenimiento.
-
-Cualquier decision de adopcion deberia posponerse hasta disponer de la informacion tecnica minima.
+- Agente autónomo de operaciones sobre ficheros: el modelo puede listar, leer, renombrar y escribir ficheros dentro de un espacio de trabajo, verificando cada cambio con el resultado de la herramienta antes de continuar, lo que lo hace adecuado para tareas de mantenimiento de repositorios y organización de directorios.
+- Asistente de programación en local: con 4,2 mil millones de parámetros y un GGUF Q8_0 de 4,5 GB, se ejecuta en una RTX 3050 de 6 GB, permitiendo autocompletado, refactorización guiada y generación de parches sin depender de servicios en la nube.
+- Automatización de flujos de trabajo con salida estructurada: su envelope JSON nativo (`plan`, `steps`, `done`) permite conectarlo directamente a orquestadores que parsean la respuesta y despachan llamadas a herramientas sin capas intermedias de corrección de formato.
+- Integración en pipelines de CI/CD: el modelo puede recibir una misión (por ejemplo, renombrar ficheros o generar un informe de cambios), ejecutar los pasos con herramientas acotadas y devolver un resumen final verificable, encajando en tareas de mantenimiento automatizado.
+- Investigación web asistida: según los escenarios evaluados, puede encadenar búsquedas y lecturas para recopilar información y producir un informe estructurado, útil en tareas de recopilación y resumen de fuentes.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local mediante Ollama o llama.cpp, es apto para organizaciones que no pueden enviar código o datos a APIs externas.
+- Prototipado de agentes con presupuesto de pasos limitado: su eficiencia medida (4,5 pasos de media frente a un presupuesto de 6) lo hace adecuado para bucles agénticos con límites estrictos de coste o latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, ni comparaciones con modelos de referencia.
+Los datos proceden de la comparación interna del autor entre Rudra v5 y v6, no de benchmarks públicos estandarizados como MMLU o HumanEval.
+
+| Metrica | Rudra v5 | Rudra v6 |
+|---|---|---|
+| Tasa de JSON valido | 1,00 | 1,00 |
+| Precision de invocacion de herramientas | 0,95 | 1,00 |
+| Finalizacion de tarea | 1,00 | 1,00 |
+| Deriva del envelope (JSON roto a mitad de ejecucion) | 0 | 0 |
+| Misiones superadas en bateria agentica | 4/10 | 5/10 |
+| Rupturas de envelope en bateria | 0 | 0 |
+| Tests reescritos (pasos sospechosos) | 0 | 0 |
+| Pasos medios por ejecucion | no disponible | 4,5 (presupuesto: 6) |
+| `phantom_probe` (trampa anti-alucinacion) | 0,83 verificado | 1,00 verificado |
+
+No se han publicado resultados de benchmarks públicos (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros).
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): no disponible; no se declara formato de pesos ni compatibilidad con ninguna libreria.
-- Latencia y throughput estimados: no disponible.
-
-Sin conocer el tamano y el formato del modelo, cualquier estimacion de memoria o rendimiento seria especulativa.
+- VRAM estimada: aproximadamente 4,5 GB para el GGUF Q8_0 canónico; el modelo base en Q4_K_M requiere menos, aunque no se especifica la cifra exacta.
+- GPU recomendadas: RTX 3050 de 6 GB (referencia explícita de la model card); cualquier GPU con al menos 6 GB de VRAM debería poder alojar la cuantización Q8_0.
+- Cabe en GPU de consumo: sí, según el autor, con ejecución íntegra en VRAM en una RTX 3050 de portátil.
+- Opciones de despliegue: Ollama y llama.cpp son las rutas canónicas (con `ollama create` a partir de un Modelfile que apunte al GGUF); el repositorio incluye tokenizer y chat template compatibles con transformers.
+- Parámetros de inferencia recomendados: `top_k 40`, `top_p 0.95`, `temperature 0.4`, `repeat_penalty 1.1`, `num_ctx 8192`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa fiable porque se desconocen los parametros, la longitud de contexto, la licencia efectiva de los pesos (mas alla de la declaracion MIT en la model card), el rendimiento medido y la disponibilidad real del modelo. Sin esos datos, cualquier tabla comparativa con alternativas de la misma categoria seria inventada.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Rudra (Qwen3.5-4B fine-tune) | 4,2 B | 8192 | Agente de ficheros y código con JSON estricto | Apache 2.0 | Hugging Face, GGUF para Ollama/llama.cpp |
+| Qwen3.5-4B (base) | 4,2 B | no disponible | Modelo generalista conversacional | no disponible | Hugging Face (unsloth/Qwen3.5-4B) |
+| Alternativas de 4B con function calling | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks públicos que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se puede verificar arquitectura, tamano, contexto, idiomas ni formato de pesos.
-- Riesgo de alucinacion: indeterminado, ya que no hay evaluaciones publicadas.
-- Sesgos conocidos: no documentados; al desconocerse el dataset de entrenamiento, no se puede estimar el sesgo.
-- Idiomas soportados: no declarados, por lo que no se garantiza un rendimiento correcto en castellano ni en ningun otro idioma.
-- Licencia: la model card declara MIT, lo que en principio permite uso comercial, modificacion y redistribucion con atribucion. Conviene verificar que el autor posee los derechos sobre los pesos y que no existen restricciones adicionales no declaradas (por ejemplo, derivadas de un modelo base con licencia distinta).
-- Estado del repositorio: 0 descargas y 0 likes, sin actualizaciones desde su creacion; no hay evidencia de mantenimiento ni de soporte.
-- Fecha de publicacion anomalamente futura (9 de octubre de 2026) respecto a la fecha actual, lo que puede indicar un error de metadatos o una publicacion programada; conviene tratarlo con cautela.
-- Recomendacion para produccion: no desplegar sin una evaluacion propia previa (pruebas de calidad, latencia, consumo de memoria y seguridad de salida).
+- El modelo está ajustado para el inglés; no se declaran otros idiomas soportados, por lo que su rendimiento en castellano es incierto.
+- El contexto recomendado es de 8192 tokens, limitado para tareas que requieran analizar repositorios o documentos extensos de una sola vez.
+- Los benchmarks publicados son internos y autoinformados por el autor, con conjuntos de evaluación propios; no hay validación independiente con MMLU, HumanEval u otros estándares.
+- La batería agéntica supera solo 5 de 10 misiones reales bajo un presupuesto de 6 pasos, lo que indica que la fiabilidad en misiones complejas sigue siendo parcial.
+- Riesgo de alucinación mitigado pero no eliminado: el entrenamiento anti-alucinación se centra en no afirmar éxito sin evidencia de herramienta, pero no garantiza la veracidad del contenido generado en tareas abiertas.
+- El modelo está especializado en un formato de envelope concreto; usarlo fuera de ese contrato (conversación libre, otros esquemas JSON) puede degradar su comportamiento.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.5-4B de Unsloth para uso comercial en producción.
+- El repositorio tiene 23,3 GB, lo que incluye múltiples artefactos; el despliegue debe usar el GGUF canónico `rudra_v6_q8.gguf` para evitar rutas de cuantización no validadas.
+- Las versiones intermedias v7 y v8 quedaron por debajo de v5 en las evaluaciones del autor y no se publicaron; no deben confundirse con esta versión.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ritiksuman/rudra
+- Modelo en Hugging Face: https://huggingface.co/ritiksuman/rudra
+- Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/ritiksuman
-
-No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

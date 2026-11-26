@@ -1,124 +1,132 @@
 # sulabhkatiyar/indic-tiny-tts-punjabi
 
 ## Resumen
-Indic Tiny TTS: Punjabi es un modelo de síntesis de voz (text-to-speech) desarrollado por sulabhkatiyar, diseñado específicamente para el panyabí escrito en grafía Gurmukhi. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos ligeros que cubren 11 idiomas indios y el inglés indio. El modelo resuelve el problema de la síntesis de voz de calidad en panyabí con un coste computacional mínimo: 8,93 millones de parámetros reales en pesos safetensors (la model card declara 22,5 M, probablemente contando parámetros de configuración adicionales) y un repositorio de solo 0,2 GB.
 
-La relevancia de este modelo radica en su eficiencia extrema: funciona en CPU sin necesidad de GPU, con un factor de tiempo real de 0,026 en un hilo de Apple M1 (38 veces más rápido que el tiempo real) y 0,136 en un hilo x86 (7 veces más rápido). Ofrece dos voces, femenina y masculina, y en las pruebas publicadas por el autor obtiene una tasa de error de caracteres (CER) de 2,13 % en frases de noticias FLORES-200, superando a cinco modelos abiertos de panyabí de mayor tamaño, incluido `ai4bharat/indic-parler-tts` (937,8 M de parámetros).
+Indic Tiny TTS: Punjabi es un modelo de síntesis de voz (text-to-speech) desarrollado por sulabhkatiyar, diseñado específicamente para el panyabí escrito en grafía Gurmukhi. Con solo 8,93 millones de parámetros en pesos safetensors (la model card declara 22,5 millones de parámetros totales del modelo completo), resuelve el problema de la síntesis de voz de calidad en una lengua india de bajos recursos, donde las alternativas abiertas suelen ser modelos grandes y lentos o modelos pequeños con tasas de error elevadas.
 
-El modelo está pensado para despliegue en dispositivo (on-device) y entornos con recursos limitados, con formatos PyTorch y ONNX Runtime. Su licencia CC-BY-4.0 permite uso comercial con atribución, lo que lo hace adecuado para integrarse en aplicaciones de accesibilidad, asistentes de voz o sistemas de lectura de texto en panyabí.
+El modelo forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequeños, uno por idioma, que cubren 11 lenguas indias y el inglés indio. Está pensado para inferencia en dispositivo (on-device) y en CPU, sin necesidad de GPU, lo que lo hace relevante para aplicaciones de accesibilidad, lectores de pantalla y asistentes de voz en entornos con recursos limitados.
+
+Incluye dos voces, femenina y masculina, y se distribuye en formatos PyTorch y ONNX Runtime. Su relevancia actual radica en que iguala la tasa de error de modelos hasta 125 veces más grandes en frases de evaluación, con un factor de tiempo real de 0,026 en un núcleo de Apple M1 (38 veces más rápido que el tiempo real).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo TTS; probablemente VITS o similar, no especificado en la model card) |
-| Parametros totales | 8.933.001 (safetensors); la model card declara 22,5 M |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo TTS, no procesa contexto de texto largo) |
-| Tipos de cuantizacion | No disponible (se distribuye en safetensors y ONNX; no se listan cuantizaciones) |
-| Idiomas soportados | Panyabí (pa), escritura Gurmukhi |
+| Arquitectura | no disponible (modelo TTS; la model card no detalla la arquitectura interna) |
+| Parametros totales | 22,5 M (según model card); 8.933.001 en pesos safetensors |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | panyabí (pa), grafía Gurmukhi |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | Safetensors, ONNX |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
-La model card no detalla la arquitectura interna del modelo. Se trata de un modelo de síntesis de voz de tipo extremo a extremo, entrenado sobre el dataset `sulabhkatiyar/indic-tts-mini-24k`, que contiene las voces femenina y masculina de panyabí de AI4Bharat Rasa a 24 kHz. Este dataset deriva a su vez de `sulabhkatiyar/indic-tts-multilingual-prepared`. También se menciona el dataset `ai4bharat/Rasa` como fuente. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (poco habituales en TTS).
 
-La innovación principal es la eficiencia: el modelo logra una calidad de síntesis competitiva con un tamaño muy reducido (8,9 M de parámetros reales) y velocidad de inferencia en CPU. La model card reporta que es aproximadamente 125 veces más rápido que `ai4bharat/indic-parler-tts` en una GPU T4 y que iguala la tasa de error de `ai4bharat/IndicF5` con 1/16 del tamaño y unas 142 veces más rápido en T4. No se detallan técnicas como decodificación especulativa o atención lineal.
+La model card no especifica la arquitectura interna del modelo (no se indica si es VITS, FastSpeech, un modelo basado en difusión o un transformer acústico). Se trata de un modelo TTS de tamaño reducido, con 22,5 millones de parámetros declarados y 8.933.001 parámetros almacenados en los pesos safetensors, lo que sugiere una arquitectura compacta orientada a inferencia en CPU.
+
+El entrenamiento se realizó sobre el dataset sulabhkatiyar/indic-tts-mini-24k, que contiene las voces femenina y masculina en panyabí de AI4Bharat Rasa a 24 kHz, derivadas del dataset completo sulabhkatiyar/indic-tts-multilingual-prepared. También se menciona el dataset ai4bharat/Rasa. No se detallan el número de tokens de audio, la composición exacta del corpus ni si hubo etapas de ajuste fino con RLHF o DPO, por lo que estos datos deben considerarse no disponibles.
+
+La innovación destacable es la relación entre tamaño y rendimiento: el modelo logra una tasa de error de caracteres (CER) de 2,13 % en FLORES-200, comparable a la de IndicF5 (350,6 M de parámetros), y de 6,94 % en el conjunto de test retenido de 299 frases, con una velocidad muy superior. El soporte de ONNX Runtime y PyTorch permite desplegarlo sin GPU.
 
 ## Capacidades
-- Síntesis de voz a partir de texto en panyabí escrito en Gurmukhi.
-- Dos voces seleccionables: femenina (`voice="female"`) y masculina.
-- Inferencia en CPU sin GPU, con PyTorch o ONNX Runtime.
-- Alto rendimiento en tiempo real: factor de tiempo real de 0,026 en Apple M1 (un hilo) y 0,136 en x86 (un hilo).
-- Formato de audio de salida a 24 kHz (derivado del dataset de entrenamiento).
-- No se mencionan capacidades de tool calling, agentes, razonamiento multietapa, visión ni audio de entrada.
-- Capacidad multilingüe limitada al panyabí; no se reportan otros idiomas.
+
+- Síntesis de voz a partir de texto en panyabí escrito en Gurmukhi, con salida de audio a 24 kHz.
+- Dos voces seleccionables: femenina (`voice="female"`) y masculina (`voice="male"`).
+- Inferencia en CPU: funciona en un solo hilo de CPU x86 y en Apple M1 sin aceleración por GPU.
+- Exportación a ONNX Runtime además de PyTorch, para despliegue ligero.
+- Modelo orientado a dispositivo (on-device), adecuado para aplicaciones móviles y de escritorio.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada; es exclusivamente un modelo TTS.
 
 ## Casos de uso
-- **Lectura de textos en panyabí para accesibilidad**: el modelo puede convertir artículos, documentos o mensajes en audio para personas con discapacidad visual o dificultades de lectura, gracias a su bajo coste y funcionamiento en CPU.
-- **Asistentes de voz en dispositivos embebidos**: integración en altavoces inteligentes, wearables o sistemas de infoentretenimiento con recursos limitados, ya que requiere menos de 1 GB de RAM y funciona sin GPU.
-- **Aplicaciones de aprendizaje de idiomas**: generación de pronunciaciones de ejemplo en panyabí para estudiantes, con dos voces para practicar la comprensión auditiva.
-- **Sistemas de anuncios públicos o señalización**: síntesis de mensajes dinámicos en panyabí para aeropuertos, estaciones o comercios, con despliegue en hardware de bajo coste.
-- **Atención al cliente automatizada por voz**: respuesta hablada en panyabí en sistemas IVR o chatbots telefónicos, donde la latencia baja (factor de tiempo real 0,136 en x86) permite interacciones fluidas.
-- **Generación de audiolibros o pódcasts**: conversión de textos largos en panyabí a audio con voces femenina y masculina, procesable en CPU en paralelo para lotes grandes.
-- **Pruebas de calidad y evaluación de TTS**: como modelo de referencia ligero para comparar con otros sistemas de síntesis en panyabí, dado que el autor publica métricas CER detalladas.
+
+- Lectores de pantalla y accesibilidad: el modelo puede convertir texto en panyabí a voz en tiempo real en un portátil o móvil sin GPU, con un factor de tiempo real de 0,026 en M1, lo que permite narrar documentos largos sin latencia perceptible.
+- Asistentes de voz para dispositivos de bajo consumo: al ejecutarse en un solo hilo de CPU x86 a 7 veces el tiempo real, puede integrarse en routers, Raspberry Pi o televisiones inteligentes para respuestas habladas en panyabí.
+- Audiolibros y contenido educativo: la disponibilidad de dos voces permite generar narraciones con alternancia de voces para materiales didácticos o cuentos, con una calidad medida de 2,13 % CER en frases de noticias.
+- Sistemas de anuncios públicos y transporte: síntesis de mensajes dinámicos en panyabí para megafonía o paneles con voz, donde el despliegue en CPU reduce costes de infraestructura.
+- Atención al cliente telefónica automatizada: integración en centralitas IVR para respuestas pregrabadas dinámicas en panyabí, con la ventaja de que el modelo cabe en 0,2 GB de repositorio y se ejecuta en el propio servidor de telefonía.
+- Aplicaciones de aprendizaje de idiomas: generación de pronunciaciones de referencia en Gurmukhi para estudiantes, con la posibilidad de alternar voz masculina y femenina para exponer al alumno a distintas entonaciones.
+- Preprocesado de datos para otros modelos: generación de audio sintético en panyabí para aumentar datasets de reconocimiento de voz o para pruebas de pipelines de ASR, dado el bajo coste computacional por frase.
 
 ## Benchmarks y rendimiento
-Los datos de benchmarks provienen de la model card del autor. Se comparan modelos abiertos de panyabí en dos conjuntos de prueba: 100 frases de noticias FLORES-200 y 299 frases de test reservadas.
 
-**FLORES-200 (100 frases)**
+Resultados de tasa de error de caracteres (CER, menor es mejor) en FLORES-200, 100 frases de noticias:
 
-| Modelo | Tamaño (M) | CER (%) | Diferencia vs este modelo (puntos, IC 95%) | Resultado |
-|---|---:|---:|---:|---|
-| **Este modelo** | 22,5 | **2,13** | — | — |
-| `ai4bharat/IndicF5` | 350,6 | 1,90 | -0,23 [-0,50, +0,04] | igual |
-| `ai4bharat/vits_rasa_13` | 31,3 | 2,66 | +0,53 [+0,16, +0,93] | este modelo mejor |
-| `AI4Bharat/Indic-TTS` (pa.zip) | 65,6 | 3,01 | +0,89 [+0,45, +1,39] | este modelo mejor |
-| `facebook/mms-tts-pan` | 29,1 | 3,16 | +1,04 [+0,65, +1,41] | este modelo mejor |
-| `ai4bharat/indic-parler-tts` | 937,8 | 3,33 | +1,20 [+0,61, +1,91] | este modelo mejor |
-| `multilingual-tts/VITS-OpenBible-Punjabi` | 29,1 | 5,39 | +3,26 [+1,99, +4,90] | este modelo mejor |
+| Modelo | Tamano | CER (%) | Resultado frente a este modelo |
+|---|---:|---:|---|
+| **Este modelo** | 22,5 M | **2,13** | — |
+| ai4bharat/IndicF5 | 350,6 M | 1,90 | igual (-0,23 puntos, IC 95 % [-0,50, +0,04]) |
+| ai4bharat/vits_rasa_13 | 31,3 M | 2,66 | este modelo mejor (+0,53) |
+| AI4Bharat/Indic-TTS (pa.zip) | 65,6 M | 3,01 | este modelo mejor (+0,89) |
+| facebook/mms-tts-pan | 29,1 M | 3,16 | este modelo mejor (+1,04) |
+| ai4bharat/indic-parler-tts | 937,8 M | 3,33 | este modelo mejor (+1,20) |
+| multilingual-tts/VITS-OpenBible-Punjabi | 29,1 M | 5,39 | este modelo mejor (+3,26) |
 
-**Test reservado (299 frases)**
+Resultados en el conjunto de test retenido (299 frases):
 
-| Modelo | Tamaño (M) | CER (%) | Diferencia vs este modelo (puntos, IC 95%) | Resultado |
-|---|---:|---:|---:|---|
-| **Este modelo** | 22,5 | **6,94** | — | — |
-| `AI4Bharat/Indic-TTS` (pa.zip) | 65,6 | 12,34 | +5,40 [+3,62, +7,43] | este modelo mejor |
-| `facebook/mms-tts-pan` | 29,1 | 13,57 | +6,63 [+4,94, +8,25] | este modelo mejor |
-| `multilingual-tts/VITS-OpenBible-Punjabi` | 29,1 | 25,93 | +18,98 [+14,49, +23,86] | este modelo mejor |
-| `ai4bharat/vits_rasa_13` | 31,3 | 6,64 | -0,30 [-1,55, +0,84] | igual |
+| Modelo | Tamano | CER (%) | Resultado frente a este modelo |
+|---|---:|---:|---|
+| **Este modelo** | 22,5 M | **6,94** | — |
+| AI4Bharat/Indic-TTS (pa.zip) | 65,6 M | 12,34 | este modelo mejor (+5,40) |
+| facebook/mms-tts-pan | 29,1 M | 13,57 | este modelo mejor (+6,63) |
+| multilingual-tts/VITS-OpenBible-Punjabi | 29,1 M | 25,93 | este modelo mejor (+18,98) |
+| ai4bharat/vits_rasa_13 | 31,3 M | 6,64 | igual (-0,30) |
 
-**Comparación con modelos grandes (40 frases)**
+Comparación con modelos mayores en las mismas frases retenidas:
 
-| Modelo | Tamaño (M) | CER (%) | Este modelo, mismas frases (%) | Diferencia (puntos, IC 95%) | Resultado |
+| Modelo | Tamano | Frases | CER (%) | Este modelo, mismas frases (%) | Resultado |
 |---|---:|---:|---:|---:|---|
-| `ai4bharat/IndicF5` | 350,6 | 5,67 | 6,48 | -0,81 [-2,55, +0,98] | igual |
-| `ai4bharat/indic-parler-tts` | 937,8 | 22,79 | 6,48 | +16,31 [+1,48, +34,81] | este modelo mejor |
+| ai4bharat/IndicF5 | 350,6 M | 40 | 5,67 | 6,48 | igual (-0,81) |
+| ai4bharat/indic-parler-tts | 937,8 M | 40 | 22,79 | 6,48 | este modelo mejor (+16,31) |
 
-**Velocidad**
+Velocidad medida:
 
-| Hardware | Configuración | Veces más rápido que tiempo real | Factor de tiempo real |
+| Hardware | Configuracion | Veces mas rapido que tiempo real | Factor de tiempo real |
 |---|---|---:|---:|
-| CPU x86 (Intel Xeon @ 2,20 GHz, 4 vCPU) | PyTorch, 1 hilo | 7× | 0,136 |
-| Apple M1 (portátil), CPU | PyTorch, 1 hilo | 38× | 0,026 |
-| NVIDIA T4 GPU | PyTorch | 62× | 0,016 |
+| CPU x86 (Intel Xeon @ 2,20 GHz, 4 vCPU) | PyTorch, 1 hilo | 7x | 0,136 |
+| Apple M1, CPU | PyTorch, 1 hilo | 38x | 0,026 |
+| NVIDIA T4 | PyTorch | 62x | 0,016 |
 
 ## Requisitos de hardware
-- **VRAM estimada**: no requiere GPU; en CPU el modelo ocupa menos de 1 GB de RAM (repositorio de 0,2 GB, pesos de 8,9 M de parámetros).
-- **GPU recomendadas**: opcionales. Funciona en cualquier GPU NVIDIA (T4, RTX 4090, A100, H100) con PyTorch, pero no es necesario.
-- **Consumer GPU**: sí, cabe en cualquier GPU de consumo e incluso en CPU de un solo núcleo.
-- **Opciones de despliegue**: PyTorch (nativo), ONNX Runtime. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS de este tipo).
-- **Latencia y throughput**: factor de tiempo real de 0,016 en T4 (62× tiempo real), 0,026 en Apple M1 (38×) y 0,136 en x86 (7×). Para 30 frases de prueba, el tiempo total de síntesis es aproximadamente 1,6 % del audio generado en T4.
+
+- VRAM estimada para inferencia: no requiere GPU; en CPU el modelo ocupa del orden de decenas de MB en pesos safetensors (8,93 M de parámetros), y el repositorio completo pesa 0,2 GB.
+- GPU recomendadas: no son necesarias. En NVIDIA T4 alcanza un factor de tiempo real de 0,016 (62 veces más rápido que el tiempo real), pero el modelo está optimizado para CPU.
+- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, etc.) y también en CPU de portátil; no se requiere VRAM dedicada.
+- Opciones de despliegue: PyTorch y ONNX Runtime según la model card; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo TTS de este tipo.
+- Latencia y throughput: factor de tiempo real de 0,136 en un hilo de CPU x86 (7x tiempo real) y 0,026 en Apple M1 (38x tiempo real); en T4, 0,016 (62x tiempo real).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros (M) | Contexto | CER FLORES-200 (%) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | CER FLORES-200 (%) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Este modelo** | 8,9 (safetensors) / 22,5 declarados | No aplica | 2,13 | CC-BY-4.0 | Hugging Face |
-| `ai4bharat/IndicF5` | 350,6 | No aplica | 1,90 | No disponible | Hugging Face |
-| `ai4bharat/vits_rasa_13` | 31,3 | No aplica | 2,66 | No disponible | Hugging Face |
-| `facebook/mms-tts-pan` | 29,1 | No aplica | 3,16 | No disponible | Hugging Face |
-| `ai4bharat/indic-parler-tts` | 937,8 | No aplica | 3,33 | No disponible | Hugging Face |
+| **Indic Tiny TTS: Punjabi** | 22,5 M | no disponible | 2,13 | CC-BY-4.0 | Hugging Face |
+| ai4bharat/IndicF5 | 350,6 M | no disponible | 1,90 | no disponible | Hugging Face |
+| facebook/mms-tts-pan | 29,1 M | no disponible | 3,16 | no disponible | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | no disponible | 3,33 | no disponible | Hugging Face |
+| ai4bharat/vits_rasa_13 | 31,3 M | no disponible | 2,66 | no disponible | Hugging Face |
 
-La comparativa se centra en modelos de TTS para panyabí. El modelo destaca por su reducido tamaño y alta velocidad, con una calidad (CER) comparable a modelos hasta 100 veces más grandes. No se dispone de datos de licencia para los modelos comparados en la información proporcionada.
+El modelo destaca por combinar un tamaño muy reducido con una CER competitiva frente a alternativas hasta 40 veces mayores, y por su licencia permisiva CC-BY-4.0, que facilita el uso comercial con atribución. Frente a IndicF5, la diferencia de error no es estadísticamente significativa, pero este modelo es aproximadamente 16 veces más pequeño y 142 veces más rápido en T4 según la model card.
 
 ## Limitaciones y advertencias
-- **Idioma único**: solo soporta panyabí en escritura Gurmukhi; no se ha evaluado en otros idiomas ni en otras escrituras (p. ej., Shahmukhi).
-- **Sesgos**: no se documentan sesgos específicos, pero al entrenarse con voces de AI4Bharat Rasa, puede reflejar características demográficas o de estilo de esos hablantes.
-- **Riesgo de alucinación**: en TTS, puede producir pronunciaciones incorrectas o artefactos en palabras fuera del vocabulario o en nombres propios; la CER reportada (2,13 % en FLORES-200) indica que existe un margen de error.
-- **Limitaciones de contexto**: no aplica contexto largo; el modelo procesa frases o textos cortos. No se especifica la longitud máxima de entrada.
-- **Licencia**: CC-BY-4.0 permite uso comercial con atribución; es necesario citar al autor y la licencia. No hay restricciones adicionales conocidas.
-- **Caveats para producción**: el modelo se distribuye con `inference: false` en la model card, lo que indica que no está listo para inferencia directa en el Hub sin configuración adicional. La discrepancia entre parámetros declarados (22,5 M) y reales (8,9 M) debe tenerse en cuenta. No se proporcionan instrucciones detalladas de uso más allá de los ejemplos de audio.
+
+- Solo soporta panyabí en grafía Gurmukhi; no se documentan otros idiomas ni transliteraciones.
+- La model card no detalla sesgos conocidos del corpus de entrenamiento (voces de AI4Bharat Rasa), por lo que no se puede evaluar la representatividad de acentos o registros.
+- Riesgo de alucinación en TTS: el modelo puede producir pronunciaciones incorrectas en palabras poco frecuentes, nombres propios o préstamos del inglés, no cuantificado en la información disponible.
+- La CER de 6,94 % en el conjunto de test retenido es notablemente superior a la de 2,13 % en FLORES-200, lo que indica degradación en dominios distintos al de las frases de noticias.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero exige mantener el crédito al autor y no impone restricciones adicionales conocidas.
+- No se documentan limitaciones de longitud de texto de entrada ni el comportamiento con textos muy largos.
+- El modelo está marcado con `inference: false` en la model card, lo que puede indicar que la inferencia no está habilitada en el Hub; conviene verificar el despliegue local.
+- No se especifican requisitos de audio de salida más allá de 24 kHz, ni se documenta el formato exacto de las muestras generadas.
 
 ## Enlaces
-- [Hugging Face: sulabhkatiyar/indic-tiny-tts-punjabi](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-punjabi)
-- [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
-- [Dataset sulabhkatiyar/indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
-- [Dataset sulabhkatiyar/indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)
-- [Dataset ai4bharat/Rasa](https://huggingface.co/datasets/ai4bharat/Rasa)
-- [Repositorio AI4Bharat Indic-TTS](https://github.com/AI4Bharat/Indic-TTS)
-- [Modelo ai4bharat/IndicF5](https://huggingface.co/ai4bharat/IndicF5)
-- [Modelo ai4bharat/indic-parler-tts](https://huggingface.co/ai4bharat/indic-parler-tts)
-- [Modelo facebook/mms-tts-pan](https://huggingface.co/facebook/mms-tts-pan)
-- [Modelo ai4bharat/vits_rasa_13](https://huggingface.co/ai4bharat/vits_rasa_13)
-- [Modelo multilingual-tts/VITS-OpenBible-Punjabi](https://huggingface.co/multilingual-tts/VITS-OpenBible-Punjabi)
+
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-punjabi
+- Colección INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
+- Dataset de entrenamiento indic-tts-mini-24k: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
+- Dataset indic-tts-multilingual-prepared: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared
+- Dataset AI4Bharat Rasa: https://huggingface.co/datasets/ai4bharat/Rasa
+- Modelo comparado ai4bharat/IndicF5: https://huggingface.co/ai4bharat/IndicF5
+- Modelo comparado ai4bharat/vits_rasa_13: https://huggingface.co/ai4bharat/vits_rasa_13
+- Modelo comparado facebook/mms-tts-pan: https://huggingface.co/facebook/mms-tts-pan
+- Modelo comparado ai4bharat/indic-parler-tts: https://huggingface.co/ai4bharat/indic-parler-tts
+- Repositorio AI4Bharat Indic-TTS: https://github.com/AI4Bharat/Indic-TTS

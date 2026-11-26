@@ -2,72 +2,114 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF del modelo `google/gemma-4-E2B-it`, un modelo de la familia Gemma 4 desarrollado por Google DeepMind. El archivo, creado por Joakimpalm-Zen, está pensado para ser servido con el motor de inferencia `xyntetik-runner`, un binario único en C11 que soporta CPU, CUDA y Metal, y que ofrece una característica diferenciadora: recuperación forzada de truncamiento en llamadas a herramientas, de modo que las llamadas a funciones siguen siendo parseables incluso cuando se agota el presupuesto de tokens. El modelo base es ligero, orientado a dispositivos edge y sistemas con recursos limitados, y esta cuantización reduce su peso a unos 2,6 GB, lo que permite ejecutarlo en hardware modesto. La relevancia actual radica en la combinación de un modelo compacto con un motor que garantiza robustez en flujos de agentes con tool calling, un aspecto crítico en entornos de producción.
+`gemma-4-E2B-it-Q4_0-GGUF` es una cuantización GGUF del modelo instructivo `google/gemma-4-E2B-it`, publicada por el usuario Joakimpalm-Zen dentro del ecosistema de su motor de inferencia Xyntetik Runner. No se trata de un modelo original: es un artefacto derivado, empaquetado con una mezcla de cuantización Q4_K_M y Q4_0, pensado para ejecutarse en máquinas con 8 GB de memoria mediante un binario C11 sin dependencias. El modelo base pertenece a la familia Gemma 4 de Google en su variante "E-series" (con embeddings por capa), con 4.647.450.147 parámetros totales según los pesos en safetensors del modelo original.
 
-## Especificaciones técnicas
+La relevancia de esta publicación no está en la fidelidad respecto al modelo padre —el propio autor declara explícitamente que el archivo "falla el umbral de fidelidad" y lo publica como fichero de arranque rápido para equipos de 8 GB, no como una afirmación de calidad—, sino en el runtime que lo acompaña. Xyntetik Runner implementa una técnica de recuperación de truncamiento forzado en llamadas a herramientas: cuando una tool call excede su presupuesto de tokens, el motor cierra el documento JSON a la estructura mínima legal según el esquema, de modo que los argumentos siguen siendo parseables. El autor presenta mediciones comparativas frente a vLLM 0.27.1, llama.cpp b10488, Ollama 0.32.14, TensorRT-LLM 1.2.1 y SGLang 0.5.17 en las que solo Runner devuelve una llamada ejecutable con presupuestos de 1 a 16 tokens.
+
+El archivo ocupa 2,63 GB en disco y se distribuye bajo licencia Apache 2.0. La información disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni los idiomas soportados, por lo que buena parte de las especificaciones del modelo subyacente quedan como no disponibles en esta ficha.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4, detalles no especificados) |
-| Parametros totales | 4.647.450.147 (según safetensors del modelo base) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (fuentes externas indican 8K, no confirmado) |
-| Tipos de cuantizacion | Q4_0, Q4_K, Q4_K_M (archivo mixto: 194 tensores Q4_K, 124 Q4_0, 283 F32) |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (archivo `.gguf`); safetensors disponibles en el modelo base |
+| Arquitectura | Transformer (familia Gemma 4, variante E-series con embeddings por capa); detalles completos no disponibles |
+| Parametros totales | 4.647.450.147 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Mezcla Q4_K_M / Q4_0 (fichero `gemma-4-E2B-it-Q4_K_M-Q4_0-mix.gguf`); el repo se etiqueta como Q4_0 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (fichero único de 2,63 GB); el modelo base en safetensors |
+| Modelo base | google/gemma-4-E2B-it |
+| Tamano del repositorio | 2,6 GB |
+| Motor recomendado | Xyntetik Runner (binario C11, CPU/CUDA/Metal, servidor compatible con OpenAI) |
+| Descargas / likes | 254 / 2 |
+| Fecha de creacion | 2026-08-08 |
+| Ultima actualizacion | 2026-10-27 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles oficiales sobre la arquitectura interna del modelo base `gemma-4-E2B-it`. Pertenece a la familia Gemma 4 de Google DeepMind, que utiliza arquitecturas transformer, pero no se especifican variantes concretas (atención, capas, etc.) en la información disponible. El entrenamiento fue realizado por Google DeepMind; no se publican datos sobre el número de tokens, composición del dataset ni técnicas de alineación (RLHF/DPO) en esta ficha. La cuantización fue generada con el motor `xyntetik-runner` mediante el comando `--quantize --quant q4_0`, pero el resultado es un archivo mixto: el cuantizador aplicó una regla de retención que mantuvo los tensores Q4_K existentes en su formato original y solo convirtió los tensores de mayor precisión a Q4_0. El autor corrigió la etiqueta original del archivo (inicialmente denominado Q4_0 puro) y lo renombró a `gemma-4-E2B-it-Q4_K_M-Q4_0-mix.gguf`, indicando que el contenido real es una mezcla Q4_K_M/Q4_0 con `general.file_type = 15 (Q4_K_M)`.
+El modelo subyacente es `google/gemma-4-E2B-it`, un transformer de la familia Gemma 4 en su variante E-series, que la model card etiqueta con `per-layer-embeddings`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO en el ajuste instructivo. Tampoco se documentan innovaciones de atención (attention linear, decodificación especulativa u otras) en el material proporcionado.
+
+Lo que sí está documentado es el proceso de cuantización: el autor genera un GGUF con una mezcla de Q4_K_M y Q4_0, e incluye la etiqueta `imatrix`, lo que sugiere el uso de matrices de importancia para guiar la cuantización. El autor reconoce que el resultado no alcanza su umbral interno de fidelidad respecto al padre y lo posiciona como fichero de conveniencia para hardware limitado. Las herramientas de recuantización, poda de expertos y eliminación de subcapas están publicadas en el repositorio de Xyntetik Runner.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (pipeline `text-generation`).
-- Soporte de tool calling / function calling, especialmente robusto cuando se sirve con `xyntetik-runner`: el motor cierra las llamadas a herramientas al documento legal más pequeño cuando se agota el presupuesto de tokens, garantizando que los argumentos sean parseables.
-- Compatible con el protocolo OpenAI (servidor `--serve`), lo que permite integrarlo con clientes estándar.
-- Según fuentes externas (Qualcomm AI Hub), el modelo base `gemma-4-E2B-it` es multimodal (texto e imagen), aunque esta cuantización GGUF se enfoca en generación de texto.
-- Capacidades multilingües no especificadas en la información proporcionada.
+- Generación de texto conversacional en modo instructivo (`-it`), según el pipeline declarado `text-generation`.
+- Soporte de tool calling / function calling a través del servidor compatible con OpenAI de Xyntetik Runner.
+- Recuperación de truncamiento forzado: cuando una llamada a herramienta agota el presupuesto de tokens, el runtime emite un cierre JSON legal según el esquema, preservando la parseabilidad de los argumentos.
+- Decodificación restringida por esquema: el autor reporta conformidad de esquema y selección de herramienta al 100 % hasta Q4_0 en su escalera de cuantización, con acuerdo de argumentos degradándose al 50 %.
+- Ejecución en CPU, CUDA y Metal mediante un único binario sin dependencias.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión, audio, modo thinking u otras capacidades especiales: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- **Agentes autónomos con tool calling**: gracias a la recuperación de truncamiento del runner, el modelo puede ejecutar llamadas a herramientas en bucles de agente sin fallar cuando el contexto es limitado, ideal para automatización de tareas con presupuesto de tokens ajustado.
-- **Asistentes conversacionales en dispositivos edge**: con un peso de 2,6 GB, puede ejecutarse en un Mac de 8 GB o en hardware embebido, ofreciendo respuestas en tiempo real sin dependencia de la nube.
-- **Automatización de procesos con integración de APIs**: el soporte de function calling permite conectarlo a APIs externas (bases de datos, servicios web) para ejecutar acciones concretas, como consultas o actualizaciones, en entornos locales.
-- **Prototipado rápido de chatbots**: al ser un archivo GGUF, se puede cargar en motores como llama.cpp u Ollama para pruebas rápidas de conceptos sin necesidad de infraestructura pesada.
-- **Procesamiento de texto en sistemas con recursos limitados**: su tamaño reducido y la posibilidad de ejecución en CPU lo hacen adecuado para tareas de clasificación, resumen o extracción de información en dispositivos de baja potencia.
-- **Desarrollo de pipelines de generación de código asistida**: aunque no se especifican capacidades de código, su naturaleza conversacional y tool calling permiten integrarlo en flujos de asistencia a programación, siempre que se valide su rendimiento en tareas específicas.
+- **Agentes locales con presupuesto de tokens ajustado**: en un bucle de agente que ejecuta herramientas en local, el truncamiento de una tool call suele romper el bucle y forzar un reintento completo. Con Runner, la llamada se cierra de forma legal y el agente puede continuar o registrar el fallo de argumentos sin reiniciar el ciclo.
+- **Prototipado en portátiles de 8 GB**: el fichero de 2,63 GB cabe con holgura en un Mac de 8 GB o en una GPU consumer con 8 GB de VRAM, lo que permite levantar un endpoint compatible con OpenAI en local sin instalar Python ni dependencias.
+- **Pruebas de integración de pipelines de tool calling**: al exponer una API compatible con OpenAI en `http://localhost:8080/v1`, se puede apuntar cualquier cliente existente y validar el comportamiento de herramientas y esquemas antes de desplegar en producción con un modelo mayor.
+- **Evaluación comparativa de motores de inferencia**: sirve como caso de prueba reproducible para medir cómo responde cada motor (vLLM, llama.cpp, Ollama, SGLang) ante truncamiento de llamadas, dado que el autor publica la metodología y los resultados brutos.
+- **Generación de texto conversacional offline**: para asistentes o utilidades de escritorio que requieren privacidad total y no pueden enviar datos a la nube, al ejecutarse íntegramente en local sobre CPU o Metal.
+- **Banco de pruebas de cuantización**: útil para estudiar la degradación de conformidad de esquema y de acuerdo de argumentos a lo largo de una escalera de cuantizaciones, ya que el autor documenta el comportamiento hasta Q4_0.
+- **Base para recuantización o poda**: el repositorio de Runner incluye herramientas de recuantización y poda de subcapas, por lo que este GGUF puede servir como punto de partida para experimentos de compresión adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como MMLU, HumanEval o GSM8K. El único dato de rendimiento mencionado es la comparativa de motores en el contexto de truncamiento de tool calls, pero no corresponde a benchmarks del modelo en tareas estándar.
+No se han publicado resultados de benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor declara explícitamente que el fichero falla su umbral de fidelidad respecto al modelo padre.
+
+Los únicos datos medidos que se aportan son de comportamiento del runtime ante truncamiento de tool calls, con el mismo equipo, mismo esquema, mismo prompt, `tool_choice:"required"`, temperatura 0 y presupuestos de 1 a 64 tokens:
+
+| Motor | Presupuesto insuficiente (1-16 tokens) | Presupuesto suficiente (64 tokens) |
+|---|---|---|
+| Xyntetik Runner | Tool calls ejecutables, argumentos parseables | Completa |
+| vLLM 0.27.1 | Sin llamada; el framing del protocolo se filtra en `content` | Completa |
+| llama.cpp b10488 | Sin llamada; filtración y luego `tool_calls` con argumentos no parseables | Completa |
+| Ollama 0.32.14 | Sin llamada; contenido vacío y después HTTP 500 | Completa |
+| TensorRT-LLM 1.2.1 (medido con Qwen3-1.7B) | Sin llamada; filtración de `<tool_call>` y contenido vacío | Completa |
+| SGLang 0.5.17 (medido con Qwen3-1.7B) | Sin llamada; filtración de `<tool_call>` y contenido vacío | Completa |
+
+El autor advierte que TensorRT-LLM y SGLang se midieron sobre un sustituto Qwen3-1.7B, y que la recuperación de truncamiento es una propiedad del runtime, no del modelo. Adicionalmente, reporta que la conformidad de esquema y la selección de herramienta se mantienen al 100 % hasta Q4_0 en su escalera de cuantización, con el acuerdo de argumentos cayendo al 50 %.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el archivo GGUF pesa 2,63 GB, por lo que cabe en GPUs con al menos 4 GB de VRAM si se carga completamente; con cuantización mixta Q4_K_M/Q4_0, el uso de memoria es inferior a 3 GB.
-- **GPU recomendadas**: cualquier GPU con 4 GB o más, incluyendo RTX 3060, RTX 4060, o GPUs integradas con soporte CUDA. El runner también soporta Metal en Apple Silicon.
-- **CPU**: el runner puede ejecutarse únicamente en CPU, con requisitos moderados; un Mac de 8 GB es suficiente según la documentación.
-- **Opciones de despliegue**: el motor recomendado es `xyntetik-runner` (binario único, sin dependencias), pero el archivo GGUF es compatible con otros motores como llama.cpp, Ollama o vLLM (aunque la recuperación de truncamiento solo está disponible en el runner).
-- **Latencia y throughput**: no se proporcionan datos cuantitativos en la información disponible.
+- **VRAM estimada**: el fichero GGUF ocupa 2,63 GB en disco; con overhead de contexto y caché KV, cabe en GPUs de 8 GB y en sistemas con 8 GB de memoria unificada.
+- **GPU recomendadas**: el autor menciona explícitamente Apple Silicon (Metal) y builds para Linux y Windows con soporte CUDA. No se detallan modelos concretos de GPU (A100, H100, RTX 4090) en la información disponible.
+- **GPU consumer**: sí, cabe en tarjetas de 8 GB de VRAM o superiores, y en Macs de 8 GB de memoria unificada.
+- **Opciones de despliegue**: Xyntetik Runner (recomendado por el autor, binario único de 600 KB, CPU/CUDA/Metal, servidor compatible con OpenAI). El formato GGUF es además compatible con llama.cpp y, por extensión, con Ollama, aunque el autor no valida esas rutas.
+- **Latencia y throughput**: no disponibles. No se publican mediciones de tokens por segundo para este fichero.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks para comparar directamente con otros modelos de tamaño similar. A modo orientativo, se puede comparar con alternativas como Gemma 2 2B, Qwen2.5 1.5B o Llama 3.2 1B, pero no hay información suficiente en esta ficha para establecer comparaciones numéricas. El modelo base `gemma-4-E2B-it` se posiciona como un modelo ligero de la familia Gemma 4, con licencia Apache-2.0 y orientado a edge computing.
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| gemma-4-E2B-it-Q4_0-GGUF (este) | 4.647.450.147 | no disponible | GGUF Q4_K_M/Q4_0, 2,63 GB | Apache 2.0 | Fichero de conveniencia; el autor declara que no alcanza su umbral de fidelidad |
+| google/gemma-4-E2B-it (padre) | 4.647.450.147 | no disponible | safetensors | Apache 2.0 | Referencia de fidelidad; requiere más memoria |
+| Alternativas de ~4-5B en GGUF | no disponible | no disponible | GGUF | variable | No se dispone de datos comparativos verificables en la información proporcionada |
+
+No se dispone de información suficiente para comparar rendimiento (benchmarks) con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El archivo GGUF es una cuantización mixta (Q4_K_M/Q4_0), no un Q4_0 puro como indicaba el nombre original. El autor advierte explícitamente que "a menudo no es recomendable usar este archivo" y que Google publica GGUFs oficiales de Gemma 4 que son ungated y de mayor calidad.
-- La cuantización puede degradar la calidad de las respuestas en comparación con el modelo en precisión completa, especialmente en tareas que requieren razonamiento complejo o generación de código.
-- No se especifican idiomas soportados; es probable que el modelo base tenga limitaciones en idiomas distintos del inglés.
-- Riesgo de alucinaciones y sesgos inherentes a los modelos de lenguaje; no se han documentado medidas específicas de mitigación en esta cuantización.
-- Para uso en producción, se recomienda validar el rendimiento en el caso de uso concreto y considerar los GGUFs oficiales de Google antes que esta versión de terceros.
+- **Fidelidad degradada declarada por el autor**: el propio publicador indica que el fichero falla su umbral de fidelidad respecto a `google/gemma-4-E2B-it`. No debe usarse como referencia de calidad del modelo original.
+- **Degradación de argumentos en tool calls**: aunque la forma del esquema se mantiene hasta Q4_0, el acuerdo de argumentos cae al 50 % en la escalera de cuantización medida. En producción, esto implica validar y potencialmente reintentar argumentos.
+- **Sesgos**: no se documentan sesgos específicos del modelo base ni de esta cuantización en la información disponible.
+- **Alucinación**: no se aportan evaluaciones de tasa de alucinación. Al ser una cuantización agresiva (Q4), es razonable esperar degradación adicional, pero no hay medición publicada.
+- **Contexto e idiomas**: la longitud de contexto y los idiomas soportados no están documentados en el material disponible, lo que impide garantizar comportamiento multilingüe o conversaciones de contexto largo.
+- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar los términos del modelo base `google/gemma-4-E2B-it`, ya que la ficha no detalla condiciones adicionales de Google.
+- **Dependencia del runtime**: el autor posiciona el fichero como el quickstart de Xyntetik Runner. El comportamiento diferencial de recuperación de truncamiento solo está garantizado en ese motor; en otros motores el archivo se comporta como un GGUF Q4 convencional.
+- **Madurez del ecosistema**: el proyecto tiene 254 descargas y 2 likes, y el motor está en desarrollo activo con validaciones por release. No hay evidencia de despliegues a gran escala.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del archivo GGUF](https://huggingface.co/Joakimpalm-Zen/gemma-4-E2B-it-Q4_0-GGUF)
-- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-E2B-it)
-- [Motor xyntetik-runner (GitHub)](https://github.com/Joakimpalm-Zen/xyntetik-runner)
-- [Benchmark de truncamiento del runner](https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md)
-- [Página de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
-- [Ficha de Gemma 4 E2B en gemma4.dev](https://gemma4.dev/models/gemma-4-e2b)
-- [Ficha en Qualcomm AI Hub](https://aihub.qualcomm.com/models/gemma_4_e2b_it)
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/gemma-4-E2B-it-Q4_0-GGUF
+- Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- Repositorio de Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Colección Runner Releases: https://huggingface.co/collections/Joakimpalm-Zen/runner-releases-6aa98baaed03bba0e8a561ae
+- Documentación de soporte de modelos (roster): https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#gemma-4-e2b-it-q4_k_m-q4_0-mix
+- Benchmark de truncamiento: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md
+- Conversión y herramientas de modelos: https://github.com/Joakimpalm-Zen/xyntetik-runner#models-and-conversion
+- Solicitud de modelos: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=model_request.yml
+- Reporte de resultados: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=result_report.yml
+- Releases del binario: https://github.com/Joakimpalm-Zen/xyntetik-runner/releases/latest
+- Otros ficheros del autor: https://huggingface.co/Joakimpalm-Zen

@@ -2,100 +2,108 @@
 
 ## Resumen
 
-QDA-Qwen3.6-35B-A3B-W3A16 es un checkpoint cuantizado del modelo Qwen/Qwen3.6-35B-A3B, publicado por qda-lab. La cuantizacion se ha obtenido mediante una busqueda automatizada denominada QDA ("Closed-Loop Quantization Design with LLM Agents"), descrita en un envio a MLSys 2027. El resultado es una representacion W3A16 (pesos a 3 bits, activaciones a 16 bits) en formato compressed-tensors, lista para cargarse directamente en vLLM sin pasos de conversion adicionales.
+QDA-Qwen3.6-35B-A3B-W3A16 es una cuantizacion de 3 bits de los pesos del modelo Qwen/Qwen3.6-35B-A3B, desarrollada por qda-lab mediante su herramienta QDA (Closed-Loop LLM Quantization Design with Agents). El objetivo es reducir el coste de despliegue del modelo original: pasa de 71,9 GB en BF16 a 17,3 GB, un factor de compresion de 4,2x, manteniendo segun el autor el 94,5 % de la precision del modelo de referencia. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con 35.951.822.704 parametros totales, arquitectura `qwen3_5_moe` y capacidad multimodal image-text-to-text.
 
-El modelo base es un transformer de tipo Mixture of Experts (MoE) con aproximadamente 36.000 millones de parametros totales y unos 3.000 millones activos por token, orientado a agentes de codigo, razonamiento a escala de repositorio y flujos que combinan razonamiento con herramientas. La variante cuantizada reduce el peso del repositorio a 17,3 GB, lo que la hace desplegable en hardware mas modesto que el checkpoint BF16 original.
+La relevancia de esta ficha radica en que permite ejecutar un modelo MoE de ~36.000 millones de parametros en GPUs de 80 GB (H100, A100) e incluso en tarjetas profesionales como la L40S o la RTX Pro 6000, algo inviable con los pesos en BF16. La cuantizacion no es uniforme: los pesos se almacenan como enteros de 3 bits en grupos de 128, con la cabeza de salida y los embeddings de tokens a 4 bits, mientras que los routers MoE y los expertos compartidos permanecen en BF16. El formato es propietario (compressed-tensors W3A16) y, en el momento de la publicacion, solo es compatible con vLLM.
 
-La relevancia de este checkpoint es doble: por un lado, demuestra que la cuantizacion de pesos a 3 bits puede mantener una precision agregada del 75,9 % en un conjunto de benchmarks exigentes (matematicas, GPQA, LiveCodeBench, IFBench); por otro, el autor publica los archivos exactos evaluados en el articulo, lo que facilita la reproducibilidad. El repositorio no incluye aun informacion sobre licencia, idiomas ni pipeline.
+La licencia es Apache-2.0, igual que el modelo base, lo que facilita el uso comercial. El repositorio tiene 17,3 GB y 271 descargas en el momento de la consulta. No se dispone de informacion sobre los idiomas soportados en los metadatos del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (qwen3_5_moe) |
-| Parametros totales | 35.951.822.704 (~36B) |
-| Parametros activos | ~3B (dato del modelo base, no confirmado en la model card) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), familia Qwen3.6 (`qwen3_5_moe`); multimodal image-text-to-text |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W3A16 (pesos 3 bits, activaciones 16 bits), formato compressed-tensors |
+| Tipos de cuantizacion | W3A16: pesos a 3 bits en grupos de 128; cabeza de salida y embeddings de tokens a 4 bits; routers MoE y expertos compartidos en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
-| Tamano del repositorio | 17,3 GB |
-| Modelo base | Qwen/Qwen3.6-35B-A3B |
-| Version de vLLM evaluada | 0.27.1 |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors con compressed-tensors (W3A16); libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura Mixture of Experts: alrededor de 35.000 millones de parametros totales de los que aproximadamente 3.000 millones se activan por token, segun la documentacion publica del modelo base. Alibaba describe Qwen3.6 como una evolucion de Qwen3.5 centrada en estabilidad y utilidad practica para codigo, con soporte para razonamiento y uso de herramientas. La model card del checkpoint cuantizado no detalla la composicion del dataset de entrenamiento, el numero de tokens ni si hubo fases de RLHF o DPO.
+El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura Mixture-of-Experts, segun el tag `qwen3_5_moe`, con 35.951.822.704 parametros totales. La cuantizacion parte de un checkpoint de 3 bits generado con el codigo oficial de GSQ (IST-DASLab/GSQ, paper arXiv:2604.18556) a partir de la revision `995ad96eacd98c81ed38be0c5b274b04031597b0` de Qwen3.6-35B-A3B. Sobre ese punto de partida, el pipeline QDA aplica una receta de cuatro etapas (`ace`, `h`, `i`, `soup`) que afina por destilacion las escalas de grupo de la cuantizacion; la receta fue seleccionada mediante busqueda automatizada de QDA.
 
-La innovacion de este checkpoint es el proceso de cuantizacion: QDA busca de forma cerrada (closed-loop) una asignacion de precision por capa mediante agentes LLM, y produce un checkpoint W3A16 en compressed-tensors. La model card indica que, tras la evaluacion, `config.json` incorporo una entrada adicional de `ignore` en la cuantizacion para los expertos enrutados del cabezal MTP, de modo que vLLM carga ese cabezal en BF16; los pesos y la cuantizacion del modelo principal no cambiaron. No se documentan otras tecnicas como decodificacion especulativa o atencion lineal.
+El resultado mantiene los routers MoE y los expertos compartidos en BF16 para preservar el enrutamiento, mientras que el resto de pesos se comprime a 3 bits con escalas por grupo de 128 elementos. La cabeza de salida y los embeddings de tokens se mantienen a 4 bits. El proceso de construccion se ejecuto en 2x H100 de 80 GB, con la etapa `soup` en CPU; la variante `-i` usa atencion SDPA en lugar de eager para ajustarse a tarjetas de 80 GB, por lo que los pesos reconstruidos no son identicos bit a bit al checkpoint publicado. No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base ni sobre el dataset de calibracion o destilacion mas alla de que se incluye un texto de calibracion por defecto y cuatro conjuntos de trazas de destilacion en el dataset de recetas.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de multiples pasos, con modo de razonamiento segun el modelo base.
-- Codigo: el modelo base esta disenado para agentes de programacion y razonamiento a escala de repositorio (LiveCodeBench v6 en la evaluacion del checkpoint).
-- Matematicas: resuelve problemas de competicion (AIME 2025 y HMMT Feb 2026 en la evaluacion).
-- Uso de herramientas y function calling: heredado del modelo base, orientado a flujos con herramientas.
-- Capacidades de agente: el modelo base se presenta para workflows de agentes y razonamiento combinado con herramientas.
-- Multilingue: no disponible en la informacion del checkpoint; el modelo base es de Qwen, pero no se confirman idiomas concretos.
-- Vision: la ficha de NVIDIA NGC del modelo base menciona modalidad de texto e imagen en los datasets, pero no se confirma soporte de vision en este checkpoint.
+- Generacion de texto y razonamiento en modo thinking (el razonamiento termina en ``), con modo thinking activado en todas las evaluaciones publicadas.
+- Razonamiento matematico de competicion: evaluado en AIME 2025 y HMMT Feb 2026.
+- Razonamiento cientifico de nivel experto: evaluado en GPQA-Diamond.
+- Generacion de codigo: evaluado en LiveCodeBench.
+- Seguimiento de instrucciones: evaluado en IFBench.
+- Conocimiento general y razonamiento multietapa: evaluado en MMLU-Pro.
+- Capacidad multimodal image-text-to-text (segun el pipeline tag del modelo).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Decodificacion especulativa / MTP: el modelo base la contempla, pero las evaluaciones publicadas se hicieron con MTP y decodificacion especulativa desactivados.
 
 ## Casos de uso
 
-- Agentes de codigo en repositorios: el modelo base esta optimizado para razonamiento a escala de repositorio y el checkpoint mantiene un 77,8 % en LiveCodeBench v6, por lo que puede integrarse en pipelines de revision, generacion y refactorizacion de codigo con contexto de proyecto.
-- Asistente de matematicas y STEM: con un 81,8 % en AIME 2025 + HMMT Feb 2026 y un 82,0 % en GPQA-Diamond, es adecuado para tutoria o resolucion asistida de problemas tecnicos de nivel avanzado.
-- Razonamiento con herramientas en produccion: al cargarse en vLLM con `vllm serve`, puede exponerse como API compatible con OpenAI para orquestar llamadas a funciones en flujos de automatizacion.
-- Despliegue con restricciones de memoria: los 17,3 GB del repositorio permiten servir el modelo en una unica GPU de 24 GB o en dos de 16 GB, algo inviable con el checkpoint BF16 de ~72 GB.
-- Evaluacion de tecnicas de cuantizacion: al ser los archivos exactos del articulo QDA (busqueda `r-3c650a0d`, entrega `h6`), sirve como referencia reproducible para comparar metodos de cuantizacion.
-- Prototipado de agentes multi-paso: el modo de razonamiento y el soporte de herramientas del modelo base permiten construir asistentes que planifican, ejecutan y verifican tareas encadenadas.
-- Generacion de codigo en CI/CD: con tool calling y una ventana de contexto no confirmada, puede conectarse a pipelines para generar tests o parches, aunque requiere validacion previa de latencia y contexto.
+- Razonamiento matematico asistido: el modelo conserva 87,6 puntos en AIME 2025 frente a 90,0 del BF16, por lo que es adecuado para tutoria o verificacion de soluciones matematicas en entornos con presupuesto de VRAM limitado, siempre que se acepte una perdida de ~2,4 puntos.
+- Analisis cientifico y QA experto: con 82,0 en GPQA-Diamond (frente a 85,3 en BF16), puede emplearse en asistentes de investigacion que respondan preguntas de fisica, quimica o biologia de nivel doctoral en una unica GPU de 80 GB.
+- Generacion de codigo en pipelines de CI/CD: 73,6 en LiveCodeBench permite integrarlo como revisor o generador de parches, aunque la caida de 7,8 puntos respecto al BF16 desaconseja usarlo como unico generador en produccion sin validacion posterior.
+- Despliegue en GPUs profesionales de gama media: al ocupar 17,3 GB, cabe en L40S (48 GB) o RTX Pro 6000, lo que permite servir un MoE de ~36.000 millones de parametros en estaciones de trabajo sin recurrir a A100/H100.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye recetas reproducibles (`qda build`), lo que lo convierte en un banco de pruebas para investigar el impacto de W3A16 en tareas de razonamiento.
+- Seguimiento de instrucciones en asistentes: 61,7 en IFBench (frente a 66,4 en BF16) lo hace util para tareas de formato y restricciones estrictas donde el ahorro de memoria prima sobre la precision absoluta.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text permite extraer y razonar sobre contenido visual, aunque no se han publicado benchmarks especificos de vision para esta cuantizacion.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del checkpoint (vLLM 0.27.1 sobre GH200, batching estatico, muestreo `temperature=1.0`, `top_p=0.95`, `top_k=20`, `presence_penalty=1.5`, semillas 17+j):
+Datos publicados por el autor en la model card. Modo thinking activado, pass@1 promediado sobre 1-32 semillas, mismas condiciones para ambos modelos.
 
-| Benchmark | Puntuacion (%) |
-|---|---|
-| Math (AIME 2025 + HMMT Feb 2026) | 81,8 |
-| GPQA-Diamond | 82,0 |
-| LiveCodeBench v6 | 77,8 |
-| IFBench | 62,1 |
-| Media | 75,9 |
+| Benchmark | BF16 (71,9 GB) | QDA W3A16 (17,3 GB) |
+|---|---|---|
+| AIME 2025 | 90,0 | 87,6 |
+| HMMT Feb 2026 | 82,7 | 75,9 |
+| GPQA-Diamond | 85,3 | 82,0 |
+| IFBench | 66,4 | 61,7 |
+| MMLU-Pro | 84,9 | 82,7 |
+| LiveCodeBench | 81,4 | 73,6 |
+| Media | 81,8 | 77,2 |
 
-No se han publicado en la informacion disponible resultados comparativos frente al modelo base BF16 ni frente a otras cuantizaciones, por lo que no es posible cuantificar la perdida de precision introducida por W3A16.
+Ajustes de evaluacion: max new tokens 81.920 (32.768 en MMLU-Pro); repeticiones 32 semillas en AIME y HMMT, 16 en GPQA e IFBench, 1 en MMLU-Pro, 4 en LiveCodeBench; sampling con temperature 1.0, top-p 0.95, top-k 20, min-p 0, presence penalty 1.5, repetition penalty 1.0; MTP y decodificacion especulativa desactivados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 17,3 GB en W3A16; con overhead de KV cache y activaciones, se recomienda un minimo de 24 GB de VRAM para contextos cortos.
-- GPU recomendadas: la evaluacion se realizo en NVIDIA GH200; para produccion son adecuadas A100 40/80 GB, H100 y L40S.
-- GPU de consumo: cabe en RTX 4090 (24 GB) y, con cuantizacion adicional o contextos reducidos, en GPUs de 16 GB; no se garantiza en tarjetas de 12 GB.
-- Opciones de despliegue: vLLM es el soporte oficial (`vllm serve qda-lab/QDA-Qwen3.6-35B-A3B-W3A16`); no se confirma compatibilidad con llama.cpp, Ollama o TGI para este formato compressed-tensors.
+- VRAM estimada para inferencia: 17,3 GB de pesos en W3A16; el autor indica que funciona en GPUs de 80 GB (H100, A100) y en L40S y RTX Pro 6000. No se especifica la VRAM total necesaria incluyendo cache KV.
+- GPUs validadas por el autor: NVIDIA H100, A100, L40S, RTX Pro 6000 y B200. En una GB300 el arranque tardo 340 s con el toolkit CUDA 13 disponible.
+- Cabe en GPU de consumo: no confirmado. El autor no menciona RTX 4090 ni otras tarjetas de 24 GB; el formato W3A16 requiere kernels especificos que solo se documentan para vLLM.
+- Opciones de despliegue: exclusivamente vLLM en el momento de la publicacion (SGLang no soporta aun el formato de 3 bits). El comando indicado es `VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3.6-35B-A3B-W3A16`.
+- Requisito adicional: sin toolkit CUDA 13 en la maquina, la compilacion del kernel W3A16 falla (`failed to open libnvrtc-builtins.so.13.0`); hay que anadir las librerias NVIDIA del entorno virtual a `LD_LIBRARY_PATH`.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Precision publicada |
-|---|---|---|---|---|---|---|
-| QDA-Qwen3.6-35B-A3B-W3A16 | ~36B | ~3B | no disponible | no disponible | safetensors (compressed-tensors) | Media 75,9 % en 4 benchmarks |
-| Qwen/Qwen3.6-35B-A3B (base) | ~35B | ~3B | no disponible | no disponible | safetensors BF16 | no disponible en esta ficha |
-| Qwen3.5 (generacion anterior) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Precision publicada |
+|---|---|---|---|---|---|
+| QDA-Qwen3.6-35B-A3B-W3A16 | 35.951.822.704 | no disponible | Apache-2.0 | safetensors W3A16 | 77,2 de media en 6 benchmarks |
+| Qwen/Qwen3.6-35B-A3B (BF16) | 35.951.822.704 | no disponible | Apache-2.0 | safetensors BF16 | 81,8 de media en los mismos 6 benchmarks |
+| Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La unica comparacion directa posible es con el modelo base, del que no se dispone de resultados en la informacion proporcionada. No se han identificado en la busqueda otras cuantizaciones W3A16 del mismo modelo para contrastar.
+La unica comparacion documentada es contra el modelo base en BF16, con una perdida media de 4,6 puntos y una reduccion de tamano de 71,9 GB a 17,3 GB. No se han publicado comparaciones con otras tecnicas de cuantizacion (por ejemplo, AWQ, GPTQ o GGUF de 4 bits) en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 3 bits puede degradar tareas sensibles a precision numerica; no se publica la diferencia frente al BF16.
-- La licencia no esta declarada en el repositorio: no se puede confirmar el uso comercial sin consultar la licencia del modelo base Qwen3.6-35B-A3B.
-- No se especifican idiomas soportados ni longitud de contexto; ambos deben validarse antes de usarlo en produccion.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en un checkpoint cuantizado sin evaluacion especifica de factualidad.
-- El checkpoint depende de vLLM y del formato compressed-tensors; otras herramientas de inferencia pueden no cargarlo.
-- El ajuste del `config.json` para el cabezal MTP en BF16 es una modificacion posterior a la evaluacion; conviene verificar que el comportamiento medido se mantiene.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa de la comunidad.
+- Perdida de precision no uniforme: la mayor caida se da en LiveCodeBench (-7,8 puntos) y HMMT Feb 2026 (-6,8), mientras que en GPQA-Diamond solo pierde 3,3 puntos. El uso en tareas de codigo o matematicas de competicion debe validarse con datos propios.
+- Compatibilidad restringida: solo funciona en vLLM; SGLang no soporta el formato W3A16. Requiere toolkit CUDA 13 o la configuracion manual de `LD_LIBRARY_PATH`.
+- Los pesos reconstruidos con la receta publicada no son identicos bit a bit al checkpoint; la variante `-i` usa SDPA en lugar de eager, con las mismas matematicas pero bytes distintos.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado en la informacion proporcionada; aplica el riesgo inherente del modelo base.
+- Limitaciones de contexto e idioma: no disponibles en la informacion proporcionada.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen/Qwen3.6-35B-A3B.
+- El modelo es multimodal (image-text-to-text), pero no se publican benchmarks de vision para la version cuantizada; el impacto de W3A16 en tareas visuales es desconocido.
+- Las evaluaciones usan modo thinking y semillas concretas; los resultados pueden variar con otros ajustes de muestreo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W3A16
+- Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W3A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Especificaciones de Qwen3.6 35B A3B: https://gate.ai/blog/qwen3-6-35b-a3b-specs-pricing-api-access
-- Qwen3.6-35B-A3B en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b
-- Paper QDA (MLSys 2027 submission): no disponible como enlace en la informacion proporcionada.
+- Dataset de recetas e inputs: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-Qwen3.6-35B-A3B-W3A16
+- Repositorio QDA: https://github.com/humanfia/qda
+- Paper QDA (arXiv:2611.23388): https://arxiv.org/abs/2611.23388
+- Paper GSQ (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
+- Codigo GSQ: https://github.com/IST-DASLab/GSQ

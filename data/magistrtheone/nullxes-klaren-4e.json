@@ -5,7 +5,7 @@
   "author": "MagistrTheOne",
   "url": "https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E",
   "created_at": "2026-10-29T21:17:04.000Z",
-  "updated_at": "2026-11-22T02:04:31.000Z",
+  "updated_at": "2026-11-26T02:50:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 893,
+  "downloads_30d": 898,
   "trending_score": 0,
   "parameters": 20914757184,
   "parameters_human": "20.91B",

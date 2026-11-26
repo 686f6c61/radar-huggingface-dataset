@@ -21,8 +21,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 36,
+  "likes": 1,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "MANYA12345/toxic-comment-moderation-roberta",
+  "renamed_at": "2026-11-26T04:21:10.726Z",
   "benchmarks": [],
   "sources": []
 }

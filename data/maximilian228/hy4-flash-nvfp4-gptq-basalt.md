@@ -2,104 +2,121 @@
 
 ## Resumen
 
-Hy4-flash NVFP4 GPTQ para Basalt es una versión cuantizada del modelo Hy4-flash de Tencent, publicada por el usuario Maximilian228. No se trata de un modelo nuevo, sino de un fichero de pesos derivado del checkpoint original en BF16, re-cuantizado a NVFP4 mediante GPTQ para su uso con el motor de inferencia Basalt. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 41 capas MoE y 512 expertos enrutados por capa, tal como se deduce de la descripción de la modificación. El fichero resultante ocupa 158.746.168.309 bytes (aproximadamente 158,7 GB).
+Hy4-flash-NVFP4-GPTQ-Basalt es un fichero de pesos cuantizados del modelo Hy4-flash de Tencent, preparado por el usuario Maximilian228 para el motor de inferencia Basalt. Se trata de una obra derivada que re-cuantiza los expertos enrutados del modelo original (un transformer de mezcla de expertos) a formato NVFP4 mediante GPTQ, partiendo del checkpoint BF16 en lugar de aplicar un simple redondeo al vecino más cercano (round-to-nearest). El objetivo es reducir el error de cuantización manteniendo el mismo tamano de fichero y la misma velocidad de ejecución que el pack de referencia.
 
-La relevancia de esta publicación es fundamentalmente práctica: demuestra que una cuantización GPTQ de los expertos enrutados a NVFP4 (formato de 4 bits con escalas por bloque) mejora de forma medible la fidelidad respecto al modelo original en comparación con una cuantización round-to-nearest, manteniendo el mismo tamaño de fichero y la misma velocidad de ejecución en el motor Basalt. El autor reporta métricas de divergencia (KLD) y de perplejidad sobre wikitext-2, así como errores relativos de salida de los expertos sobre activaciones retenidas.
+El modelo base, Hy4-flash, es un MoE con 41 capas MoE y 512 expertos enrutados por capa, ademas de una tabla Engram, atencion, experto compartido, MLP denso en la capa 0, encoder de vision y un drafter especulativo DFly2. La cuantizacion afecta exclusivamente a las proyecciones gate/up/down de los expertos enrutados; el resto de componentes permanece byte a byte identico al pack round-to-nearest de jesdga.
 
-El modelo está pensado para ejecutarse en una única GPU NVIDIA Blackwell (sm_120), con un requisito de memoria RAM de 128 GB y probado concretamente en una RTX 5090 de 32 GB. La licencia es la Tencent Hy License 1.0, heredada del modelo original, e incluye cláusulas específicas para el uso como servicio (Model-as-a-Service) por encima de ciertos umbrales de ingresos o usuarios.
+La relevancia de este fichero es practica: demuestra que una calibracion GPTQ especifica por experto, con un corpus orientado a sesiones agenticas de codigo, function calling y cinco idiomas, mejora metricas de fidelidad (KLD, acuerdo top-1, error de salida de experto) frente al redondeo directo, con un coste de perplexity que el autor documenta de forma transparente. Requiere una GPU NVIDIA Blackwell (sm_120) y 128 GB de RAM, lo que lo situa en el terreno de estaciones de trabajo de gama alta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (41 capas MoE, 512 expertos enrutados por capa; incluye experto compartido, MLP denso en la capa 0, encoder de visión y drafter DFly2) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible |
+| Arquitectura | Transformer MoE (41 capas MoE, 512 expertos enrutados por capa) con tabla Engram, experto compartido, encoder de vision y drafter especulativo DFly2 |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4 (E2M1) con escalas UE4M3 por cada 16 elementos y escala FP32 por proyección, aplicada con GPTQ a los expertos enrutados; el resto de componentes permanece en el formato original del pack Basalt |
-| Idiomas soportados | no disponible en la información del modelo; el corpus de calibración incluye inglés, chino, ruso y ucraniano |
-| Licencia | Tencent Hy License 1.0 (tencent-hy-license-1.0) |
-| Formato de pesos | `.basalt` (formato propietario del motor Basalt) |
+| Tipos de cuantizacion | NVFP4 (E2M1) en expertos enrutados con GPTQ; escalas UE4M3 por cada 16 elementos y escala FP32 por proyeccion; resto de componentes sin cuantizar respecto al pack de referencia |
+| Idiomas soportados | no disponible en la model card; el corpus de calibracion incluye ucraniano, ingles, chino y ruso |
+| Licencia | tencent-hy-license-1.0 (Tencent Hy License 1.0) |
+| Formato de pesos | Basalt (`Hy4-flash-NVFP4-GPTQ.basalt`), 158.746.168.309 bytes |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Hy4-flash es un transformer de mezcla de expertos con 41 capas MoE y 512 expertos enrutados en cada una de ellas. Además de los expertos enrutados, la arquitectura incluye un experto compartido, un MLP denso en la capa 0, una tabla Engram, un encoder de visión y un drafter DFly2 (probablemente para decodificación especulativa). Esta ficha no dispone de información sobre el número total de parámetros, los parámetros activos por token, la longitud de contexto nativa ni los datos de entrenamiento originales del modelo de Tencent.
+El modelo base es un transformer de mezcla de expertos con 41 capas MoE y 512 expertos enrutados por capa. Ademas de los expertos, incorpora una tabla Engram, un experto compartido, un MLP denso en la capa 0, un encoder de vision y un drafter especulativo DFly2. Esta ficha no modifica la arquitectura: solo re-cuantiza las proyecciones gate/up/down de los expertos enrutados de cada capa MoE.
 
-La modificación introducida por esta publicación afecta exclusivamente a las proyecciones gate, up y down de los 512 expertos enrutados de las 41 capas MoE. Estas se re-cuantizaron desde los pesos BF16 originales mediante GPTQ, usando Hessianas por experto calculadas a partir de las activaciones enrutadas, códigos NVFP4 E2M1 con escalas UE4M3 por cada 16 elementos y una escala FP32 por proyección. El resto de componentes (tabla Engram, atención, experto compartido, MLP denso de la capa 0, embeddings, cabeza de salida, router, normas, encoder de visión y drafter DFly2) son idénticos byte a byte al pack round-to-nearest de referencia `jesdga/Hy4-flash-Basalt`.
+La cuantizacion se realizo con GPTQ partiendo de los pesos BF16 de Tencent, calculando hessianas por experto a partir de las activaciones enrutadas. El corpus de calibracion comprende aproximadamente 1,67 millones de tokens de prompt tras deduplicar prefijos, distribuidos en sesiones de codigo agentico en Claude Code (420K), trayectorias de agentes software de OpenHands y SWE-agent (191K), function calling de hermes-function-calling-v1, ToolACE, glaive-function-calling-v2 y xlam-function-calling-60k (197K), codigo de sistemas en Rust, C++, CUDA, Python y shell (211K), codigo web JS/TS, HTML y CSS (125K), razonamiento matematico y cientifico con OpenR1-Math (126K), ucraniano (165K), ingles (110K), chino (65K) y ruso (56K). El corpus no se redistribuye; solo las estadisticas de activacion se incorporaron a los pesos.
 
-El corpus de calibración empleado contiene aproximadamente 1,67 millones de tokens de prompt tras eliminar prefijos repetidos, con activaciones tomadas en la entrada de cada experto enrutado sobre la propia ruta de prompt del motor. La composición es la siguiente: 420K tokens de sesiones de codificación agéntica en Claude Code (llamadas a herramientas y multi-turno), 191K de trayectorias de agentes software (OpenHands y SWE-agent), 197K de function calling (hermes-function-calling-v1, ToolACE, glaive-function-calling-v2, xlam-function-calling-60k), 211K de código de sistemas (Rust, C++, CUDA, Python, shell), 125K de código web (JS/TS, HTML, CSS), 126K de razonamiento (matemáticas y ciencia, con prompts de OpenR1-Math y el propio modo de pensamiento de Hy4), 165K de ucraniano, 110K de inglés, 65K de chino y 56K de ruso. El corpus no se redistribuye; solo se incorporaron estadísticas de activación a los pesos.
+La innovacion tecnica principal es el uso de GPTQ por experto en lugar de round-to-nearest, con el objetivo de reducir el error de salida de los expertos enrutados. Segun el autor, el error relativo MSE de salida de experto en activaciones retenidas baja de 0,0146 a 0,0074 (entre 1,5 y 3,9 veces menor por capa). El fichero mantiene el mismo tamano y los mismos kernels que el pack round-to-nearest, por lo que la velocidad de ejecucion es equivalente.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base Hy4-flash soporta razonamiento, y la calibración incluye prompts de matemáticas y ciencia con el modo de pensamiento propio del modelo.
-- Codificación: la calibración cubre código de sistemas (Rust, C++, CUDA, Python, shell) y código web (JS/TS, HTML, CSS), lo que indica capacidad para generación y edición de código en estos lenguajes.
-- Function calling: se calibró con cuatro datasets específicos de llamadas a funciones, por lo que el modelo conserva esta capacidad.
-- Uso agéntico: se calibró con trayectorias de agentes software (OpenHands, SWE-agent) y sesiones de Claude Code con llamadas a herramientas y multi-turno, lo que apunta a soporte de flujos multi-paso.
-- Visión: el pack incluye un encoder de visión sin modificar, por lo que el modelo base es multimodal; esta ficha no dispone de detalles adicionales sobre las capacidades de visión.
-- Multilingüismo: el corpus de calibración incluye inglés, chino, ruso y ucraniano, pero no se dispone de la lista oficial de idiomas soportados por el modelo base.
-- Decodificación especulativa: el pack incluye un drafter DFly2, lo que sugiere soporte de decodificación especulativa en el motor Basalt.
+- Generacion de texto y razonamiento: el modelo base soporta generacion autoregresiva y modo de pensamiento (thinking), segun el uso de OpenR1-Math con el propio thinking de Hy4 en el corpus de calibracion.
+- Codigo: entrenado y calibrado con codigo de sistemas (Rust, C++, CUDA, Python, shell) y codigo web (JS/TS, HTML, CSS), lo que respalda tareas de generacion y edicion de codigo.
+- Tool calling / function calling: el corpus incluye cuatro datasets especificos de function calling, y las pruebas agenticas reportadas miden llamadas a herramientas validas en sesiones de Claude Code.
+- Agentes y razonamiento multi-paso: las pruebas incluyen replay de 67 turnos de Claude Code, tareas en vivo y trayectorias de OpenHands y SWE-agent.
+- Capacidades multilingues: el corpus cubre ucraniano, ingles, chino y ruso; la model card no declara una lista oficial de idiomas soportados.
+- Vision: el modelo base incluye un encoder de vision, que permanece sin cambios en este pack.
+- Decodificacion especulativa: incorpora el drafter DFly2 del modelo base, sin modificar.
 
 ## Casos de uso
 
-- Codificación agéntica en producción: el modelo puede integrarse en flujos tipo Claude Code o SWE-agent para resolver tareas de codificación en sandbox con llamadas a herramientas y múltiples turnos, ya que la calibración se realizó precisamente sobre este tipo de sesiones y sobre trayectorias de agentes software.
-- Automatización de function calling: adecuado para pipelines que requieren que el modelo emita llamadas a funciones estructuradas de forma fiable, dado que se calibró con hermes-function-calling-v1, ToolACE, glaive-function-calling-v2 y xlam-function-calling-60k.
-- Asistencia a la programación en sistemas: útil para generación y revisión de código en Rust, C++, CUDA, Python y shell, lenguajes presentes en el corpus de calibración junto con repositorios propios del mantenedor.
-- Desarrollo web frontend: puede emplearse para tareas de generación de código JS/TS, HTML y CSS, calibrado con the-stack-smol y repositorios propios.
-- Razonamiento matemático y científico: el modelo conserva el modo de pensamiento del base y se calibró con prompts de OpenR1-Math, por lo que puede usarse en tareas de resolución de problemas con cadena de razonamiento.
-- Procesamiento multilingüe en Europa del Este: el corpus incluye ucraniano, ruso y chino, lo que lo hace adecuado para tareas de generación y comprensión en estos idiomas, aunque no se dispone de evaluación formal por idioma.
-- Despliegue en una única GPU de consumo de gama alta: al ejecutarse en una RTX 5090 de 32 GB con 128 GB de RAM, es viable para prototipado local y evaluación de agentes sin necesidad de clústeres multi-GPU.
+- Asistencia de codigo en produccion con agentes: el pack esta calibrado con sesiones reales de Claude Code y trayectorias de OpenHands y SWE-agent, por lo que es adecuado para servir a agentes que editan repositorios y ejecutan herramientas en entornos sandbox. Las pruebas del autor reportan 59 llamadas a herramienta validas de 67 turnos replay y 8 de 9 tareas en vivo finalizadas.
+- Function calling en pipelines de automatizacion: la calibracion con hermes-function-calling-v1, ToolACE, glaive y xlam respalda la generacion de llamadas estructuradas a APIs, util para orquestadores y backends que necesitan invocar servicios externos.
+- Generacion y refactorizacion de codigo de sistemas: el corpus incluye 211K tokens de Rust, C++, CUDA, Python y shell, lo que lo hace apropiado para tareas de codigo de bajo nivel y scripting en entornos de desarrollo.
+- Desarrollo web frontend: los 125K tokens de JS/TS, HTML y CSS del corpus lo orientan a tareas de generacion de componentes y correccion de codigo web, aunque el autor reporta que ambas variantes fallan las mismas 5 tareas JavaScript de su banco de pruebas.
+- Razonamiento matematico y cientifico: los 126K tokens de OpenR1-Math con thinking de Hy4 permiten usar el modelo en resolucion de problemas paso a paso y explicaciones tecnicas.
+- Atencion multilingue en Europa del Este: la calibracion con 165K tokens de ucraniano y 56K de ruso, con comprobaciones de deriva CJK en respuestas ucranianas, lo orienta a aplicaciones para esos idiomas, aunque el autor no logra separar las variantes en la sonda de deriva.
+- Despliegue en estacion de trabajo con GPU Blackwell: al requerir una sola GPU sm_120 (probado en RTX 5090 de 32 GB) y 128 GB de RAM, encaja en entornos de desarrollo local de gama alta con el motor Basalt.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados de `basalt-bench --quality` sobre 100 fragmentos de wikitext-2 de 512 tokens cada uno (25.500 filas evaluadas), comparando contra la referencia BF16 del modelo original ejecutada en llama.cpp (perplejidad de referencia 18,572). La caché de expertos se congeló y todas las variantes se midieron en la misma máquina y la misma noche. Los intervalos son bootstrap pareado al 95% sobre fragmentos.
+Calidad medida con `basalt-bench --quality` sobre 100 fragmentos de wikitext-2 de 512 tokens (25.500 filas evaluadas), frente a la referencia BF16 en llama.cpp del modelo original (PPL de referencia 18,572):
 
 | Pack | KLD media | KLD mediana | KLD p99 | Mismo top-1 | PPL |
 |---|---:|---:|---:|---:|---:|
 | Round-to-nearest (`Hy4-flash-NVFP4.basalt`) | 0,2048 | 0,0319 | 3,19 | 85,73% | 17,43 |
 | GPTQ (este fichero) | 0,1770 | 0,0282 | 2,71 | 86,83% | 18,99 |
 
-- GPTQ frente a round-to-nearest: KLD −0,0278 [−0,0370, −0,0192]; mismo top-1 +1,09 pp [+0,66, +1,52].
-- Brazo de ruido (round-to-nearest contra sí mismo con distinta colocación de expertos): KLD +0,0012 [−0,0070, +0,0094]; mismo top-1 +0,33 pp [−0,00, +0,66]. La ganancia de GPTQ supera el ruido entre ejecuciones.
-- Perplejidad: la distancia a la referencia se reduce de |ln(PPL/ref)| 0,064 a 0,022.
-- Error de salida de los expertos sobre activaciones retenidas (MSE relativo ponderado por enrutamiento frente a BF16, 21 capas): de 0,0146 a 0,0074, entre 1,5 y 3,9 veces menor por capa.
+Diferencias reportadas: GPTQ frente a round-to-nearest reduce la KLD en 0,0278 (IC 95%: -0,0370 a -0,0192) y mejora el acuerdo top-1 en 1,09 puntos porcentuales (IC 95%: +0,66 a +1,52). El brazo de ruido (round-to-nearest contra si mismo con distinta colocacion de expertos) muestra KLD +0,0012 y top-1 +0,33 pp, por lo que el autor considera la mejora de GPTQ superior al ruido. La distancia de PPL a la referencia baja de |ln(PPL/ref)| 0,064 a 0,022.
 
-Las comprobaciones agénticas en vivo (tareas en Claude Code, código web, bucles, deriva de idioma) y la NLL sobre datos retenidos están pendientes de medición según la model card.
+Resultado en direccion contraria, sobre texto retenido propio (34 fragmentos de 2.048 tokens, 34.782 filas):
+
+| Metrica | Round-to-nearest | GPTQ | Diferencia |
+|---|---:|---:|---:|
+| NLL de siguiente token | 3,252 (PPL 25,85) | 3,305 (PPL 27,26) | +0,053 (IC 95%: +0,029 a +0,079) |
+
+El autor senala que no hay referencia BF16 para esos fragmentos y que, en wikitext, round-to-nearest queda un 6% por debajo de la PPL del modelo original, por lo que una NLL menor no implica mayor fidelidad al original.
+
+Pruebas agenticas (misma build, servidas con `basalt serve` a Claude Code, una ejecucion por brazo):
+
+| Comprobacion | Round-to-nearest | GPTQ |
+|---|---:|---:|
+| Replay de Claude Code, 67 turnos: llamadas validas / misma primera herramienta | 56 / 55 | 59 / 58 |
+| Tareas en vivo de Claude Code (9): finalizadas | 8 / 9 | 8 / 9 |
+| Tareas en vivo: llamadas `Edit` fallidas | 5 de 25 | 3 de 33 |
+| Caracteres han en respuestas ucranianas (tareas en vivo) | 0 / 69 | 0 / 72 |
+| Bucles infinitos (8 sondas) | 0 / 8 | 0 / 8 |
+| Tareas de codigo web | 9 / 14 | 9 / 14 |
+
+El autor advierte que las sesiones replay se grabaron sobre el pack round-to-nearest, lo que lo favorece, y que ambas variantes fallan las mismas 5 tareas JavaScript, con el banco de pruebas bajo sospecha. La sonda de deriva CJK (16 prompts en ucraniano y ruso) no separa los packs: 4/16 para round-to-nearest, 3/16 para GPTQ y 8/16 para round-to-nearest con otra semilla. No se han ejecutado BFCL ni Global-MMLU (ucraniano).
 
 ## Requisitos de hardware
 
-- GPU: una única GPU NVIDIA Blackwell (sm_120); probado en una RTX 5090 de 32 GB.
-- RAM: 128 GB; el motor utiliza aproximadamente 85 GB.
-- Fichero de paginación: al menos 62 GB en Windows.
-- Tamaño del fichero de pesos: 158.746.168.309 bytes (unos 158,7 GB), por lo que no cabe en la VRAM de una GPU de consumo y requiere el esquema de memoria del motor Basalt (uso intensivo de RAM del sistema).
-- Despliegue: exclusivamente mediante el motor Basalt (repositorio `sergqwer/basalt-hy4`), clonando el repositorio, compilando según su README, descargando el fichero `.basalt` y apuntando `basalt_config.json` a él. No se mencionan opciones como vLLM, llama.cpp, Ollama o TGI para este formato.
-- Latencia y throughput: no disponibles; el autor solo indica que el fichero tiene el mismo tamaño y se ejecuta a la misma velocidad que el pack round-to-nearest.
+- VRAM estimada: no disponible de forma explicita; el autor indica que se probo en una RTX 5090 de 32 GB y que el motor usa unos 85 GB de RAM del sistema.
+- GPU recomendadas: una GPU NVIDIA Blackwell (sm_120); probado en RTX 5090. No se documenta compatibilidad con A100, H100 ni otras arquitecturas.
+- RAM: 128 GB necesarios; el motor consume aproximadamente 85 GB.
+- Fichero de paginacion: la model card menciona un requisito de page file, aunque el texto proporcionado queda truncado.
+- Cabe en GPU consumer: si, en RTX 5090 de 32 GB, siempre que se cumpla el requisito de 128 GB de RAM del sistema.
+- Opciones de despliegue: motor Basalt (`basalt serve`), disponible en https://github.com/sergqwer/basalt-hy4. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el autor afirma que la velocidad es la misma que la del pack round-to-nearest, con blobs y kernels de identico tamano y forma (pp64K, decode dentro del ruido entre ejecuciones); no se publican cifras absolutas de latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy4-flash NVFP4 GPTQ (este fichero) | no disponible (41 capas MoE, 512 expertos) | no disponible | NVFP4 GPTQ, 158,7 GB | Tencent Hy License 1.0 | Hugging Face, motor Basalt |
-| Hy4-flash NVFP4 round-to-nearest (`jesdga/Hy4-flash-Basalt`) | mismo modelo base | no disponible | NVFP4 round-to-nearest, mismo tamaño | Tencent Hy License 1.0 | Hugging Face, motor Basalt |
-| Hy4-flash BF16 (`tencent/Hy4-flash`) | no disponible | no disponible | BF16 (referencia) | Tencent Hy License 1.0 | Hugging Face, llama.cpp |
+| Hy4-flash-NVFP4-GPTQ-Basalt (este fichero) | no disponible | no disponible | NVFP4 con GPTQ en expertos enrutados | tencent-hy-license-1.0 | Hugging Face, 548 descargas, 1 like |
+| Hy4-flash-NVFP4.basalt (jesdga/Hy4-flash-Basalt) | no disponible | no disponible | NVFP4 con round-to-nearest | tencent-hy-license-1.0 | Hugging Face |
+| tencent/Hy4-flash (modelo base) | no disponible | no disponible | BF16 | tencent-hy-license-1.0 | Hugging Face |
 
-No se dispone de datos sobre otros modelos comparables de la misma categoría en la información proporcionada.
+La comparativa se limita a las variantes del mismo modelo base documentadas en la informacion disponible; no se dispone de datos de modelos alternativos de la misma categoria para comparar parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Es un derivado cuantizado, no un modelo entrenado desde cero: hereda todos los sesgos y limitaciones del Hy4-flash original, sobre los que esta ficha no dispone de información.
-- La cuantización NVFP4 de los expertos enrutados introduce divergencia respecto al BF16: KLD media de 0,1770 y coincidencia de top-1 del 86,83%, lo que implica que aproximadamente un 13% de las predicciones top-1 difieren del modelo de referencia.
-- La perplejidad en wikitext-2 del pack GPTQ (18,99) es superior a la del pack round-to-nearest (17,43) y a la referencia BF16 (18,572); el autor argumenta que la distancia logarítmica a la referencia es menor, pero la PPL absoluta es peor.
-- Las comprobaciones agénticas en vivo y la NLL sobre datos retenidos aún no se han publicado, por lo que el rendimiento en tareas reales de agente no está verificado de forma independiente.
-- El corpus de calibración está fuertemente orientado a código, agentes y function calling, con presencia limitada de idiomas (inglés, chino, ruso, ucraniano); el rendimiento en otros dominios o idiomas puede degradarse.
-- Requisitos de hardware muy restrictivos: GPU Blackwell (sm_120), 128 GB de RAM y 62 GB de fichero de paginación en Windows; no es desplegable en GPUs sin soporte sm_120 ni en entornos con menos memoria.
-- El formato `.basalt` es propietario del motor Basalt, lo que limita la portabilidad a otras herramientas de inferencia.
-- La licencia Tencent Hy License 1.0 incluye en su Sección 10 una cláusula que exige una licencia separada de Tencent para negocios de Model-as-a-Service por encima de los umbrales de ingresos o usuarios indicados; es imprescindible revisarla antes de un uso comercial.
-- El autor no redistribuye el corpus de calibración; solo se incorporaron estadísticas de activación a los pesos.
-- No se dispone de información sobre la longitud de contexto efectiva, los idiomas oficialmente soportados ni los parámetros totales y activos del modelo base.
+- Sesgos conocidos: no disponible; la model card no documenta evaluaciones de sesgo.
+- Riesgo de alucinacion: no disponible; no se han publicado evaluaciones especificas de factualidad.
+- Perplexity en texto retenido: GPTQ obtiene peor NLL que round-to-nearest en el conjunto retenido propio del autor (3,305 frente a 3,252), con diferencia estadisticamente significativa en todos los buckets.
+- Deriva de idioma: la sonda CJK con prompts en ucraniano y ruso no separa las variantes y muestra resultados inconsistentes entre semillas (4/16, 3/16 y 8/16), lo que indica fragilidad en la generacion multilingue.
+- Cobertura de evaluacion incompleta: no se han ejecutado BFCL ni Global-MMLU (ucraniano); las pruebas agenticas son de una sola ejecucion por brazo, por lo que diferencias pequenas quedan dentro del ruido.
+- Banco de pruebas web bajo sospecha: ambas variantes fallan las mismas 5 tareas JavaScript, lo que el autor atribuye al harness.
+- Restricciones de licencia: Tencent Hy License 1.0, marcada como "other"; es una obra derivada y su uso comercial queda sujeto a los terminos de dicha licencia, que deben revisarse antes de produccion.
+- Requisitos de hardware restrictivos: solo GPU NVIDIA Blackwell (sm_120) y 128 GB de RAM, lo que excluye la mayoria de entornos de despliegue convencionales.
+- Formato propietario: requiere el motor Basalt; no hay soporte documentado para ecosistemas estandar como llama.cpp, vLLM u Ollama.
+- Idiomas oficiales: no disponible; la lista de idiomas soportados no se declara en la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Maximilian228/Hy4-flash-NVFP4-GPTQ-Basalt
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
 - Pack round-to-nearest de referencia: https://huggingface.co/jesdga/Hy4-flash-Basalt
-- Motor Basalt para Hy4: https://github.com/sergqwer/basalt-hy4
+- Repositorio del motor Basalt: https://github.com/sergqwer/basalt-hy4

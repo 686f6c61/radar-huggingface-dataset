@@ -2,114 +2,112 @@
 
 ## Resumen
 
-`HelloSun/Experiment_1` es una conversión no oficial a GGUF del modelo `openpangu/openPangu-R-7B-2512` de Huawei, publicada por el usuario HelloSun (Max Sun) el 20 de octubre de 2026. Se trata de un empaquetado en cuantización Q4_K_M de un modelo denso de 8.285.328.768 parámetros (aproximadamente 8,29 mil millones, aunque el nombre comercial lo etiqueta como 7B), distribuido en un repositorio de 5,1 GB que incluye además un parche para llama.cpp y el texto de la licencia. El autor declara explícitamente que no está afiliado ni respaldado por Huawei.
+HelloSun/Experiment_1 es una conversión no oficial a GGUF del modelo openPangu-R-7B-2512, desarrollado originalmente por Huawei (openPangu). El repositorio, publicado por el usuario independiente HelloSun, empaqueta el modelo base en cuantización Q4_K_M (4,72 GiB) junto con un parche para llama.cpp v0.7.0 que añade la arquitectura `openpangu-r`, scripts de compilación y un estudio comparativo de backends de inferencia en CPU (llama.cpp, oneDNN y OpenVINO). No está respaldado ni publicado por Huawei.
 
-La relevancia de esta ficha es doble. Por un lado, documenta el primer (y hasta la fecha único) empaquetado GGUF conocido de la familia openPangu, lo que abre la puerta a ejecución en CPU sin depender de GPUs. Por otro lado, y de forma crítica para lectores en España, la licencia OPENPANGU MODEL LICENSE AGREEMENT VERSION 1.0 prohíbe en su sección 3 acceder, descargar, instalar, ejecutar, desplegar, integrar, modificar o usar el modelo dentro de la Unión Europea, lo que lo convierte en un modelo no utilizable en producción para el público objetivo de este blog.
+El modelo base es un transformer de aproximadamente 8.285 millones de parámetros (8,29 B) con un módulo MTP (multi-token prediction) descartado durante la conversión, plantilla de chat en chino y un modo de razonamiento dual: "pensamiento rápido" (respuestas directas, activable con el sufijo `/no_think`) y "pensamiento lento" (razonamiento explícito). Su relevancia actual radica en que demuestra un flujo completo de portado de un modelo propietario chino a llama.cpp, con verificación numérica frente a una referencia fp32 y datos de rendimiento en CPU x86-64 con AVX-512 y AMX.
 
-Técnicamente, el modelo base incorpora rasgos poco habituales en la familia Llama: atención con ventana deslizante en parte de las capas, capas de fusión con historial convolucional mantenido en el propio modelo, *attention sinks*, doble normalización final y una cabeza de predicción multi-token (MTP) en la capa 27 que esta conversión descarta. El resultado es un GGUF que requiere un parche específico sobre llama.cpp v0.7.0 y que solo ha sido validado en CPU x86-64 con AVX-512.
+La ficha se basa exclusivamente en la información del repositorio de Hugging Face y su model card; los datos no publicados se marcan como "no disponible".
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención de ventana deslizante en parte de las capas, *attention sinks*, capas de fusión con historial convolucional y doble normalización final; no se declara que sea MoE |
-| Parámetros totales | 8.285.328.768 (8,29 B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (la model card menciona capas con ventana deslizante y una prueba con un hecho situado a ~400 tokens del final, sin declarar la ventana total) |
-| Tipos de cuantización | Q4_K_M (GGUF) en este repositorio; el modelo base se distribuye en safetensors BF16. Los *sinks* y el peso de convolución se mantienen en F32 |
-| Idiomas soportados | No disponible. La plantilla de chat y todos los ejemplos de la model card están en chino |
-| Licencia | OPENPANGU MODEL LICENSE AGREEMENT VERSION 1.0 (`license_name: openpangu-model-license-agreement-1.0`) |
+| Arquitectura | Transformer (nombre de arquitectura GGUF: `openpangu-r`), con capas de ventana deslizante (sliding window) y módulo MTP descartado en la conversión |
+| Parametros totales | 8.285.328.768 (~8,29 B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible de forma explícita; la model card menciona KV cache de 640 slots en OpenVINO y verificación con prompts de 484 tokens y ventana deslizante activa |
+| Tipos de cuantizacion | Q4_K_M (GGUF, 4,72 GiB); sinks y pesos de convolución en F32; también F16 intermedio |
+| Idiomas soportados | no disponible oficialmente; plantilla de chat y ejemplos en chino |
+| Licencia | openpangu-model-license-agreement-1.0 (etiquetada como `other`) |
 | Formato de pesos | GGUF (Q4_K_M); safetensors BF16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 8,29 B de parámetros con varias particularidades que condicionan el proceso de conversión. La model card indica la existencia de capas con ventana deslizante (*sliding window*): al desactivar la ventana en la implementación de referencia, los logits cambian en torno a 6 unidades, lo que confirma que dicha ventana está activa y es funcionalmente relevante. También hay *attention sinks*, un peso de convolución en las capas de fusión cuyo historial se mantiene dentro del modelo y sigue una única secuencia decodificada de forma contigua, y dos normalizaciones finales. La capa 27 aloja una cabeza MTP (predicción multi-token) que la conversión descarta y que no se usa en inferencia. El modelo soporta dos modos de generación: uno rápido o *no-thinking* (activado añadiendo `/no_think` al mensaje de usuario) y uno lento o *thinking*, orientado a razonamiento.
+El modelo base es un transformer de ~8,29 B parámetros con capas de atención de ventana deslizante, tal como se deduce de la verificación de la conversión: desactivar la ventana en la referencia fp32 altera los logits en ~6, lo que confirma su presencia. Incluye un módulo MTP en la capa 27 y una segunda normalización final, ambos eliminados durante la conversión a GGUF. La conversión se realizó con `convert_hf_to_gguf.py` parcheado con `--outtype f16` desde los safetensors BF16, seguida de `llama-quantize` a Q4_K_M.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. La model card del GGUF no documenta el proceso de entrenamiento del modelo base; únicamente describe la conversión: `convert_hf_to_gguf.py` parcheado con `--outtype f16` a partir de los safetensors BF16, descarte del módulo MTP (capa 27) y de la segunda normalización final, y posterior cuantización con `llama-quantize` a Q4_K_M. La verificación realizada incluye comparación de los top-10 logits contra una referencia fp32 escrita a partir del código de modelado de HF (diferencia máxima de ~0,01 en un prompt de 33 tokens y ~0,03 en uno de 484 tokens), coincidencia token a token en decodificación greedy (11 tokens) y estabilidad de resultados al trocear el prompt en lotes de 4 o token a token.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras etapas de alineación. La model card sí documenta el comportamiento de razonamiento dual: el modelo soporta un modo de pensamiento rápido (sin cadena de razonamiento explícita) y un modo de pensamiento lento, controlado mediante el sufijo `/no_think` en el mensaje de usuario. La verificación incluyó comparación de logits top-10 frente a una referencia fp32 (diferencia máxima ~0,01 para 33 tokens y ~0,03 para 484 tokens), decodificación greedy token a token, consistencia entre decodificación por lotes y token a token, y prueba de contexto largo con un dato situado ~400 tokens antes de la pregunta.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno: la model card verifica que un segundo turno de usuario añadido al mismo contexto se responde teniendo en cuenta el contexto previo.
-- Modo de razonamiento dual: respuestas rápidas con `/no_think` y respuestas con cadena de pensamiento (modo *thinking*) para problemas aritméticos y de razonamiento.
-- Razonamiento aritmético básico en modo lento: los ejemplos publicados resuelven correctamente 2/5 de 30 = 12 y 123 + 456 = 579.
-- Generación creativa breve en chino: composición de poemas de cuatro versos y respuestas de una sola frase sobre conceptos técnicos.
-- Manejo de contexto medio: se verifica la recuperación de un dato ("7312") colocado aproximadamente 400 tokens antes de la pregunta (prueba de *needle in a haystack* a corta distancia).
-- Seguimiento de una plantilla de chat propietaria basada en tokens especiales (`[unused9]`, `[unused10]`, `[unused16]`, `[unused17]`), con formato `sistema/usuario/asistente` y terminación de generación en `[unused10]`.
-- Compatibilidad declarada con *endpoints* (etiqueta `endpoints_compatible` en Hugging Face), aunque `llama-server` no fue validado según el autor.
-- No se documentan capacidades de *tool calling*, function calling, visión, audio ni agentes multi-paso.
+- Generación de texto conversacional en chino, con plantilla de chat específica (`[unused9]系统：…[unused10]…`).
+- Razonamiento en dos modos: pensamiento rápido (respuestas directas) y pensamiento lento (razonamiento explícito antes de responder).
+- Aritmética básica y resolución de problemas verbales sencillos en modo lento (por ejemplo, `123 + 456 = 579`; problema de fracciones con respuesta `12`).
+- Generación creativa breve (poesía de cuatro versos en los ejemplos de la model card).
+- Conversación multi-turno: la model card verifica que un segundo turno de usuario añadido al mismo contexto se responde de forma coherente.
+- Manejo de contexto largo dentro de los límites del modelo (verificado con un hecho a ~400 tokens de distancia).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el modo de pensamiento lento es el mecanismo más cercano.
+- Capacidades de visión o audio: no disponibles.
+- Capacidades multilingües: no documentadas; los ejemplos y la plantilla son en chino.
 
 ## Casos de uso
 
-- **Investigación de arquitecturas híbridas en CPU**: el GGUF permite estudiar en una máquina sin GPU el comportamiento de la ventana deslizante, los *attention sinks* y las capas de fusión con historial convolucional de openPangu, comparando los logits contra la referencia fp32. Es el escenario natural de este repositorio, dado que solo se ha probado en CPU x86-64 con AVX-512.
-- **Generación de texto en chino en entornos aislados (*air-gapped*)**: un equipo sin conexión a internet y con ~6 GB de RAM puede ejecutar el modelo con llama.cpp parcheado para producir respuestas y textos breves en chino, sin depender de APIs externas.
-- **Laboratorio de cuantización**: sirve como caso de estudio reproducible de un pipeline de conversión HF → GGUF con arquitectura no soportada upstream (parche propio, descarte de la cabeza MTP, mantenimiento de *sinks* y convolución en F32) y de la metodología de verificación numérica asociada.
-- **Prototipado de asistentes conversacionales de un solo hilo**: gracias al soporte multi-turno verificado y a la ventana de contexto suficiente para conversaciones cortas, permite validar prompts de sistema y plantillas de chat antes de invertir en infraestructura GPU.
-- **Evaluación comparativa de modos rápido vs. lento**: el par `/no_think` frente al modo *thinking* permite medir empíricamente la ganancia en precisión aritmética a costa de latencia, útil para decidir políticas de enrutamiento en un producto.
-- **Docencia sobre limitaciones de decodificación**: el caso documentado de `123 + 456 = 679` en modo rápido (reproducido también en la referencia fp32, por lo que es comportamiento del modelo y no un error de conversión) es un ejemplo directo de por qué conviene validar la salida aritmética en modo no-thinking.
-- **Procesamiento por lotes de una sola secuencia**: para tareas *offline* (resumir, reescribir o clasificar documentos de uno en uno) donde no se requiere concurrencia, el modelo funciona pese a la limitación de un único *slot*.
-
-Advertencia transversal: todos estos casos deben ejecutarse fuera de la Unión Europea para cumplir la sección 3 de la licencia.
+- Razonamiento aritmético y problemas verbales en modo lento: el modelo resuelve operaciones y problemas de fracciones con cadena de razonamiento explícita, útil en asistentes educativos o de cálculo donde se requiere mostrar el proceso.
+- Asistentes conversacionales en chino: la plantilla de chat nativa y la verificación multi-turno permiten desplegar diálogos multi-turno en aplicaciones de atención al cliente o soporte interno en ese idioma.
+- Generación de contenido creativo breve: los ejemplos de poesía de cuatro versos muestran utilidad para tareas de copywriting o generación literaria corta en chino.
+- Inferencia en CPU sin GPU: con 4,72 GiB en Q4_K_M y 13,39 tok/s de decodificación en un contenedor de 16 CPUs con AVX-512, es viable en servidores sin acelerador gráfico o en entornos con restricciones de hardware.
+- Estudio y reproducción de portados a llama.cpp: el repositorio incluye parche, script de compilación y verificación numérica frente a fp32, lo que lo convierte en material de referencia para ingenieros que necesiten portar arquitecturas no soportadas.
+- Evaluación comparativa de backends de CPU: los datos de llama.cpp, oneDNN y OpenVINO (throughput, perplejidad, coincidencia de argmax) sirven para decidir la pila de inferencia en despliegues x86 con AMX o AVX-512.
+- Prototipado de modos de razonamiento dual: el control `/no_think` permite alternar entre respuestas rápidas y razonamiento extendido según la latencia tolerada, útil en pipelines con presupuesto de tiempo variable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K ni métricas equivalentes, ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí incluye mediciones de rendimiento de inferencia en CPU (Intel Xeon Platinum 8559C, contenedor de 16 CPUs, AVX-512 y AMX, sin GPU) con el modelo Q4_K_M:
 
-Lo que sí se publica son verificaciones de correctitud de la conversión, que no deben interpretarse como benchmarks de calidad:
+| Backend | Pesos | pp512 tok/s | tg128 tok/s | ppl512 | Coincidencia argmax vs f32 |
+|---|---|---:|---:|---:|---:|
+| llama.cpp (AVX512 simple) | Q4_K_M | 180,50 | 13,39 | - | - |
+| llama.cpp (AMX+repack por defecto) | Q4_K_M | 112,77 | 12,19 | - | - |
+| oneDNN | int8 | 90,09 | 7,67 | - | - |
+| oneDNN | bf16 | 75,52 | 4,79 | - | - |
+| OpenVINO | f32 | 125,60 | 2,22 | 28,82 | 1,000 |
+| OpenVINO | bf16-hint | 209,43 | 3,93 | 28,85 | 0,975 |
+| OpenVINO | int8-asym | 219,17 | 4,70 | 29,11 | 0,951 |
+| OpenVINO | int8-sym | 226,68 | - | 29,34 | 0,941 |
+| OpenVINO | int4-asym | 223,65 | 5,20 | 32,68 | 0,703 |
+| OpenVINO | int4-sym | 222,48 | - | 42,95 | 0,701 |
 
-| Verificación | Resultado declarado |
-|---|---|
-| Logits top-10 frente a referencia fp32, prompt de 33 tokens | Coinciden; diferencia máxima ≈ 0,01 |
-| Logits top-10 frente a referencia fp32, prompt de 484 tokens (ventana deslizante activa) | Coinciden; diferencia máxima ≈ 0,03 |
-| Efecto de desactivar la ventana deslizante en la referencia | Cambio de logits de ~6 unidades |
-| Decodificación greedy frente a referencia fp32 | Idéntica token a token (11 tokens comprobados) |
-| *Batching* del prompt (1 lote, trozos de 4, token a token) en F16 | Resultados idénticos |
-| Contexto largo | Hecho a ~400 tokens respondido correctamente (`7312`) |
-| Multi-turno | Segundo turno respondido en contexto |
+Conclusiones documentadas: llama.cpp Q4_K_M es el más rápido en decodificación en este contenedor; el backend oneDNN está limitado por ancho de banda de memoria (bf16: 16,6 GB/token frente a ~5 GB/token de Q4_K); OpenVINO logra el mejor prefill pero la peor decodificación por recorrer la KV cache completa de 640 slots en cada paso. La cuantización int8 de OpenVINO mantiene la perplejidad cerca de f32 (+0,3), mientras que int4 la degrada (+3,9).
 
 ## Requisitos de hardware
 
-- **VRAM/RAM estimada**: el archivo Q4_K_M ocupa aproximadamente 4,7-5 GB (el repositorio completo son 5,1 GB incluyendo parche y licencia). Con la caché KV en f16 por defecto y el contexto de trabajo, un entorno de ~6-8 GB de memoria es un punto de partida razonable; la cifra exacta no está publicada.
-- **GPU**: no hay datos. El autor solo probó CPU x86-64 con AVX-512 y afirma explícitamente que los *backends* de GPU no fueron testados. No se dispone de cifras para A100, H100 ni RTX 4090.
-- **Consumer GPU**: por tamaño, un Q4_K_M de ~5 GB cabría en GPUs de 8 GB o más (RTX 3060 Ti, 4060, 4070), pero al no existir validación del *backend* CUDA en este parche, no puede recomendarse sin pruebas propias.
-- **CPU**: es el único entorno soportado de facto. Se recomienda AVX-512; con AVX2 el rendimiento no está documentado.
-- **Opciones de despliegue**: exclusivamente llama.cpp **v0.7.0 con el parche incluido** (`build_openpangu_r.sh` clona, aplica el parche, compila y descarga el GGUF). El modelo **no es compatible con llama.cpp upstream**, porque usa el nombre de arquitectura `openpangu-r`, que solo existe en ese parche. Tampoco se documenta soporte en vLLM, TGI, Ollama, LM Studio ni llama-cpp-python. `llama-server` no fue validado; el binario usado en los ejemplos es `llama-completion` con `-no-cnv`.
-- **Concurrencia**: un lote con más de una secuencia aborta. No hay reutilización de caché de prompt, ni `seq_rm`, ni servicio multi-*slot*.
-- **Latencia y throughput**: no disponibles. No se publican tokens por segundo ni tiempos de respuesta para ninguna configuración.
+- VRAM estimada para inferencia: no aplica en las pruebas realizadas (solo CPU); el GGUF Q4_K_M ocupa 4,72 GiB, por lo que en GPU se necesitarían al menos ~5-6 GiB de VRAM para pesos más overhead de contexto.
+- GPU recomendadas: no probadas en este repositorio; los backends GPU de llama.cpp no fueron testeados. Por tamaño, cabría teóricamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 y H100, pero sin validación documentada.
+- Cabe en GPU de consumo: probable por tamaño (4,72 GiB en Q4_K_M), aunque no verificado.
+- Opciones de despliegue: llama.cpp v0.7.0 con el parche `openpangu-r` incluido (obligatorio, ya que el upstream no soporta la arquitectura); oneDNN con el parche del repositorio; OpenVINO mediante traza directa de `ov.convert_model` del modelo HF. vLLM, TGI y Ollama no están documentados para este modelo.
+- Latencia y throughput: en un contenedor de 16 CPUs con AVX-512, llama.cpp Q4_K_M alcanza 180,50 tok/s de prefill (pp512) y 13,39 tok/s de decodificación (tg128). OpenVINO llega a 226,68 tok/s de prefill con int8-sym, pero solo 5,20 tok/s de decodificación con int4-asym.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Uso en la UE | Comentario |
-|---|---|---|---|---|---|---|
-| `HelloSun/Experiment_1` (esta ficha) | 8,29 B | No disponible | GGUF Q4_K_M | OpenPangu MLA 1.0 | Prohibido (sección 3) | Requiere llama.cpp v0.7.0 parcheado; sin soporte GPU validado |
-| `openpangu/openPangu-R-7B-2512` (base) | 8,29 B | No disponible | Safetensors BF16 | OpenPangu MLA 1.0 | Prohibido (sección 3) | Modelo oficial; requiere el código de modelado de HF; incluye cabeza MTP y segunda normalización |
-| Qwen2.5-7B-Instruct | No verificado en esta ficha | No disponible | Safetensors, GGUF | No verificado en esta ficha | No verificado | Alternativa de tamaño similar con ecosistema de cuantizaciones amplio; los datos deben confirmarse en su propia ficha |
-| Llama 3.1 8B Instruct | No verificado en esta ficha | No disponible | Safetensors, GGUF | No verificado en esta ficha | No verificado | Alternativa de tamaño similar con soporte nativo en llama.cpp upstream; los datos deben confirmarse en su propia ficha |
+No se dispone de datos de benchmarks del modelo base que permitan una comparación de rendimiento con alternativas. La comparación se limita a características estructurales:
 
-Las cifras de rendimiento comparado no están disponibles: no existen benchmarks publicados de openPangu-R-7B-2512 en la información consultada, por lo que cualquier comparación de calidad sería especulativa. La diferencia práctica más relevante frente a las alternativas es de tooling y licencia: openPangu exige un parche propio y prohíbe el uso en la UE, mientras que las alternativas de la tabla se integran en llama.cpp sin modificaciones (a confirmar en cada caso).
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|
+| HelloSun/Experiment_1 (este) | ~8,29 B | no disponible | OpenPangu Model License 1.0 | GGUF Q4_K_M, requiere parche de llama.cpp |
+| openpangu/openPangu-R-7B-2512 (base) | ~8,29 B | no disponible | OpenPangu Model License 1.0 | Safetensors BF16, repo oficial |
+| Alternativas de ~7-8 B | no disponible | no disponible | no disponible | no disponible |
+
+No se han identificado en la información proporcionada modelos comparables con datos verificables de rendimiento, contexto o licencia que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- **Restricción geográfica crítica**: la sección 3 de la OPENPANGU MODEL LICENSE AGREEMENT VERSION 1.0 establece que no se puede acceder, descargar, instalar, ejecutar, desplegar, integrar, modificar ni usar el modelo dentro de la Unión Europea. Para un lector en España esto invalida cualquier uso, incluido el meramente evaluativo dentro de la UE.
-- **Atribución obligatoria**: la sección 4.2 exige que las menciones "Powered by openPangu" y "openPangu is a trademark of Huawei Technologies Co., Ltd." aparezcan en páginas, manuales o materiales que describan las funcionalidades del modelo.
-- **Conversión no oficial**: el autor declara que no está publicada ni respaldada por Huawei; no hay garantía de equivalencia funcional más allá de las verificaciones numéricas reportadas.
-- **Soporte de herramienta muy frágil**: no funciona con llama.cpp upstream; depende de un parche ligado a la versión v0.7.0. Cualquier actualización de llama.cpp puede romper la compilación.
-- **Una sola secuencia por lote**: un lote con más de una secuencia aborta; sin caché de prompt, sin `seq_rm` y sin servicio multi-*slot*. Inviable para servidores concurrentes.
-- **Funcionalidad ausente**: la cabeza MTP no se incluye ni se usa; la caché KV con rotación de Hadamard (cuantizada) no está soportada y debe usarse f16 por defecto.
-- **`llama-server` no validado**: no hay evidencia de que el servidor HTTP funcione; los ejemplos usan `llama-completion`.
-- **Riesgo de error aritmético en modo rápido**: el propio autor documenta `123 + 456 = 679` en modo *no-thinking*, reproducido también en la referencia fp32, por lo que es un comportamiento del modelo. El modo *thinking* da 579.
-- **Riesgo de alucinación**: la licencia indica que las salidas se generan automáticamente y pueden ser inexactas; no hay evaluación de factualidad publicada.
-- **Idioma**: no se declaran idiomas soportados y todos los ejemplos son en chino; el rendimiento en castellano es desconocido y no ha sido validado.
-- **Sesgos**: no hay información publicada sobre evaluación de sesgos, toxicidad o alineación.
-- **Madurez**: 2 descargas y 0 *likes* en el momento de la consulta; nombre de repositorio genérico (`Experiment_1`) que no refleja el contenido, lo que complica su descubrimiento y trazabilidad.
-- **Licencia "AS IS"**: sin garantías de ningún tipo.
+- Conversión no oficial: no está publicada ni respaldada por Huawei; el autor lo declara explícitamente. Para producción crítica conviene evaluar el modelo base oficial.
+- Requiere un parche específico: el llama.cpp upstream no soporta la arquitectura `openpangu-r`; sin el parche para v0.7.0 el GGUF no carga.
+- Solo probado en CPU x86-64 con AVX-512; los backends GPU no fueron testeados, por lo que el rendimiento en GPU es desconocido.
+- Fiabilidad aritmética limitada en modo rápido: la model card documenta que en modo rápido respondió `123 + 456 = 679` (la referencia fp32 comete el mismo error, por lo que es comportamiento del modelo, no de la conversión); el modo lento sí da la respuesta correcta.
+- Idiomas: la plantilla de chat y los ejemplos son en chino; no hay documentación sobre calidad en castellano u otros idiomas.
+- Contexto: la longitud máxima no está documentada; la verificación se limita a prompts de hasta 484 tokens y un hecho a ~400 tokens de distancia.
+- Licencia restrictiva: OpenPangu Model License Agreement 1.0, etiquetada como `other`; es necesario revisar sus términos antes de cualquier uso comercial, y la marca openPangu es propiedad de Huawei.
+- Riesgo de alucinación: no evaluado en la información disponible; los modelos de ~8 B en tareas factuales abiertas presentan riesgo habitual.
+- Sesgos: no documentados.
+- Cuantización Q4_K_M: introduce pérdida de fidelidad distribucional; las mediciones de OpenVINO int4 muestran una caída de perplejidad de +3,9 y ~70% de coincidencia de argmax frente a f32, lo que sugiere degradación en tareas sensibles a la distribución.
 
 ## Enlaces
 
-- Repositorio del GGUF: https://huggingface.co/HelloSun/Experiment_1
+- Repositorio Hugging Face: https://huggingface.co/HelloSun/Experiment_1
 - Modelo base: https://huggingface.co/openpangu/openPangu-R-7B-2512
-- Perfil del autor: https://huggingface.co/HelloSun
-- Listado de modelos del autor: https://huggingface.co/HelloSun/models
-- Licencia del modelo: archivo `LICENSE` dentro del repositorio (sha256 `747083c8c24995c75ed641d5c031a95a859b1ec37cd3deeb033425a75249a3cb`)
-- Parche de llama.cpp v0.7.0: archivo `openpangu-r-llama.cpp-v0.7.0.patch` dentro del repositorio (sha256 `b5f302da0cece9c6bc717982d820f8b3e6ca0970f8f32b549efb41ef0d6b8773`)
-- Pesos Q4_K_M: archivo `openPangu-R-7B-2512-Q4_K_M.gguf` (sha256 `efeb81edbf64ad9d7a80254332f3128d86deec589ee39315a3c1f7ec1aa5f10a`)
-- Paper, blog técnico o demo oficial: no disponibles en la información consultada. La búsqueda web realizada no devolvió documentación relacionada con openPangu ni con esta conversión.
+- Estudio de backends de CPU (oneDNN/OpenVINO): `onednn/README.md` dentro del repositorio
+- Resultados crudos: `onednn/results.csv` dentro del repositorio
+- Parche de llama.cpp: `openpangu-r-llama.cpp-v0.7.0.patch` dentro del repositorio
+- Script de compilación: `build_openpangu_r.sh` dentro del repositorio
+- Licencia: `LICENSE` dentro del repositorio (OpenPangu Model License Agreement 1.0)

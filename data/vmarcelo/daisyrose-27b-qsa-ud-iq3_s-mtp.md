@@ -2,110 +2,110 @@
 
 ## Resumen
 
-DaisyRose-27B-QSA-UD-IQ3_S-mtp es una cuantización GGUF del modelo RadixArk/DaisyRose-27B, un fine-tuning de Qwen/Qwen3.8-27B con 27.373.132.800 parámetros (aproximadamente 27,4 mil millones). La publica el usuario vmarcelo y combina tres piezas: la receta de cuantización UD-IQ3_S de Unsloth, el indexador QSA (Qwen Sparse Attention) procedente de higa2515/Qwen3.8-27B-QSA-BF16 y la cabeza MTP (Multi-Token Prediction) conservada para decodificación especulativa. El resultado es un fichero de 12,25 GB pensado para servir contexto muy largo en hardware de consumo.
+DaisyRose-27B-QSA-UD-IQ3_S-mtp es una cuantización GGUF del modelo RadixArk/DaisyRose-27B (27.373.132.800 parámetros) publicada por el usuario vmarcelo. Se trata de una variante IQ3_S generada con la receta UD-IQ3_S de Unsloth, a la que se le ha injertado el indexador QSA (Qwen Sparse Attention) procedente de higa2515/Qwen3.8-27B-QSA-BF16, junto con la cabeza MTP (Multi-Token Prediction) conservada para decodificación especulativa. El resultado es un fichero de 12,25 GB que permite ejecutar un modelo de 27B con atención dispersa y contexto de hasta 262.144 tokens en una GPU de 16 GB.
 
-La relevancia de esta ficha no está en el modelo base sino en el artefacto de despliegue: añade atención dispersa sobre un transformer denso ya entrenado, sin reentrenar el modelo, y lo empaqueta en un GGUF de 3 bits que cabe en una GPU de 16 GB. Con streaming de caché K/V hacia RAM del sistema, el autor reporta 262.144 tokens de contexto en una RX 9070 XT.
+El interés técnico del artefacto reside en la combinación de tres piezas: cuantización de baja precisión con imatrix, atención dispersa tipo QSA para reducir el coste del contexto largo y decodificación especulativa mediante MTP. El autor reporta en la model card cifras medidas en una RX 9070 XT (16 GB, Vulkan): 859 tok/s de prefill a 200K tokens, unos 55 tok/s de decode en prompt corto y 29/30 aciertos en una prueba de recuperación de agujas en un documento de 199.901 tokens.
 
-Es un artefacto experimental y de nicho. No funciona con llama.cpp estándar ni con las aplicaciones construidas sobre él (LM Studio, Ollama), requiere forks específicos, y el propio autor advierte que no ha medido calidad frente a atención densa ni tareas generales. Los datos de rendimiento proceden de una única tarjeta y, en parte, de otro modelo QSA del mismo tamaño.
+La relevancia práctica es doble. Por un lado, demuestra que es viable servir contexto de 250K en hardware de consumo con streaming de caché K/V desde RAM del sistema. Por otro, impone una dependencia dura: el fichero no carga en llama.cpp upstream ni en aplicaciones derivadas como LM Studio u Ollama, sino solo en forks específicos con soporte QSA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.8-27B) con indexador QSA v2 de atención dispersa añadido a posteriori y cabeza MTP |
-| Parametros totales | 27.373.132.800 (27,4 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 262.144 tokens en la configuración de referencia del autor; 131.072 con menor necesidad de streaming |
-| Tipos de cuantizacion | UD-IQ3_S (receta Unsloth, 866 de 866 tensores con el mismo tipo que Qwen3.8-27B-UD-IQ3_S); caché K/V en q8_0/q4_0 en la config probada |
-| Idiomas soportados | No disponible (la model card no los declara; hereda los del modelo base Qwen3.8-27B) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (fichero único de 12,25 GB) |
+| Arquitectura | Transformer denso (base DaisyRose-27B, familia Qwen3.8) con indexador QSA (sparse attention) y cabeza MTP |
+| Parametros totales | 27.373.132.800 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens (configuracion documentada); particionable en 2 slots de 131.072 |
+| Tipos de cuantizacion | IQ3_S (receta UD-IQ3_S de Unsloth); caché K/V en q8_0 y q4_0 en la configuracion de referencia |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (fichero `DaisyRose-27B-QSA-UD-IQ3_S-mtp.gguf`, 12,25 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 27,4 B parámetros. Sobre él se injertan dos componentes sin reentrenamiento del modelo principal. Primero, el indexador QSA v2: 80 tensores en FP32 extraídos de higa2515/Qwen3.8-27B-QSA-BF16, destilados originalmente sobre Qwen3.8-27B y añadidos aquí sin cambios mediante `deploy/qsa27b-24gb/gguf_qsa_graft.py`. QSA implementa atención dispersa por bloques, de modo que en inferencia solo se puntúan y materializan los bloques seleccionados por el indexador, lo que reduce el coste de atención en contextos largos. Segundo, la cabeza MTP se conserva intacta para decodificación especulativa con hasta 2 borradores por paso.
+El modelo base es un transformer denso de 27B parámetros. Sobre él se aplican dos modificaciones que no implican reentrenamiento del modelo principal. La primera es el injerto del indexador QSA v2: 80 tensores en FP32 procedentes de higa2515/Qwen3.8-27B-QSA-BF16, añadidos sin cambios y destilados originalmente sobre el modelo base Qwen3.8-27B, no sobre DaisyRose. La segunda es la conservación de la cabeza MTP para decodificación especulativa con borradores múltiples.
 
-La cuantización usa la receta UD-IQ3_S de Unsloth con su imatrix `imatrix_unsloth.gguf`. Conviene subrayar un detalle que el autor explicita: esa imatrix se calculó sobre Qwen3.8-27B base, no sobre DaisyRose, por lo que la asignación de bits por tensor no está optimizada para los pesos del fine-tuning. Salvo los 80 tensores del indexador, todos los demás son idénticos byte a byte al GGUF UD-IQ3_S plano. No hay información sobre el dataset de fine-tuning de DaisyRose ni sobre si RadixArk aplicó RLHF o DPO.
+La cuantización sigue la receta UD-IQ3_S de Unsloth y reutiliza tensor a tensor los tipos del fichero `Qwen3.8-27B-UD-IQ3_S.gguf` de unsloth (866 de 866 coincidencias verificadas por el autor). La imatrix empleada, `imatrix_unsloth.gguf`, fue calculada sobre Qwen3.8-27B base, no sobre DaisyRose, lo que constituye una aproximación y no una calibración específica del modelo final. El resto de tensores son idénticos byte a byte a la cuantización UD-IQ3_S simple; el injerto se realizó con el script `deploy/qsa27b-24gb/gguf_qsa_graft.py` del fork de Vmarcelo49.
+
+La innovación operativa es el streaming de caché K/V: las celdas antiguas residen en RAM del sistema fijada (unos 6,4 GiB a 262K tokens) y la GPU recupera bajo demanda los bloques seleccionados por el indexador QSA. Esto es lo que permite mantener 262K de contexto en 16 GB de VRAM.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato chat; la etiqueta `conversational` figura en los metadatos del repo.
-- Razonamiento de contexto largo: recuperación de información en documentos de hasta 262K tokens gracias al indexador QSA y al streaming de caché K/V.
-- Decodificación especulativa con cabeza MTP, con 2 borradores por paso en la configuración probada.
-- Tool calling y function calling: presumiblemente heredados del modelo base Qwen3.8-27B, aunque la model card no lo confirma explícitamente.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Solo texto: no se incluye `mmproj`, por lo que no hay soporte de visión ni audio.
-- Modo thinking: el autor menciona haber ejecutado la prueba de recall con "thinking off", lo que sugiere que el modelo base expone un modo de razonamiento, pero no se documenta su comportamiento en esta cuantización.
+- Generación de texto conversacional en un único turno o multi-turno, con plantilla Jinja (`--jinja`).
+- Recuperación de información en contexto muy largo: atención dispersa QSA más contexto de 262K tokens.
+- Razonamiento de múltiples pasos y modo thinking (la prueba de agujas se ejecutó con thinking desactivado, lo que implica que el modo existe y es conmutable).
+- Decodificación especulativa mediante cabeza MTP con hasta 2 borradores (`--spec-draft-n-max 2`).
+- Servicio concurrente: 2 slots paralelos de 128K cada uno o 4 slots de 16K.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repo), lo que sugiere interfaz tipo API compatible con llama-server.
+- Capacidades multimodales: no disponibles; el autor indica explícitamente que el modelo es solo texto.
+- Tool calling / function calling: no documentado en la información disponible.
 
 ## Casos de uso
 
-- Análisis de repositorios y bases de código completas: con 262K tokens de contexto se puede cargar un árbol de ficheros extenso y hacer preguntas cruzadas sobre él, usando el indexador QSA para mantener latencia aceptable en lugar de atención densa cuadrática.
-- Recuperación sobre corpus documentales largos: contratos, expedientes o manuales de cientos de páginas en un solo prompt, con streaming de caché K/V a RAM para no agotar la VRAM.
-- Servicio de chat local en GPU de consumo: un único usuario concurrente (`-np 1`) en una GPU de 16 GB, adecuado para asistente personal o prototipado, no para serving multiusuario.
-- Evaluación de investigación sobre atención dispersa: el artefacto permite comparar QSA frente a atención densa en el mismo modelo base y con los mismos pesos cuantizados, útil para estudiar degradación de calidad en contexto largo.
-- Procesado por lotes de documentos largos en estaciones de trabajo con una sola GPU: prefill de aproximadamente 800-860 tok/s a 200K tokens hace viables tareas de resumen o extracción sobre volúmenes moderados.
-- Pruebas de decodificación especulativa: la cabeza MTP incluida permite medir la ganancia de throughput del drafting en hardware Vulkan sin necesidad de un modelo draft separado.
+- Análisis de repositorios y documentación extensa: con 262K tokens de contexto se puede cargar un árbol de código o un conjunto de especificaciones completo y hacer preguntas sobre él, apoyándose en la atención dispersa para no degradar el prefill.
+- Agentes duales en paralelo: la configuración `-np 2` con 131K por slot permite ejecutar dos agentes concurrentes (por ejemplo, un planificador y un ejecutor) en una sola GPU de 16 GB, con un rendimiento medido de 30–37 tok/s por slot decodificando a la vez.
+- Asistente de atención al cliente con historial largo: conversaciones multi-turno que acumulan decenas de miles de tokens se benefician del streaming K/V, que libera VRAM al mover celdas antiguas a RAM del sistema.
+- Procesamiento de expedientes o contratos: la prueba de recuperación de agujas a 199.901 tokens con 29/30 aciertos sugiere utilidad para localizar cláusulas o datos concretos en documentos jurídicos o técnicos de gran extensión.
+- Generación asistida en local para desarrolladores con GPU de consumo: un modelo de 27B en IQ3_S que cabe en 16 GB (RX 9070 XT, RTX 4080/4090 con margen) permite iterar sin depender de APIs externas.
+- Investigación sobre atención dispersa y decodificación especulativa: el artefacto sirve como banco de pruebas reproducible para medir QSA y MTP en hardware Vulkan, con scripts y variables de entorno documentadas.
+- Servicio de inferencia con endpoints compatibles: al estar etiquetado como `endpoints_compatible`, puede exponerse tras una API HTTP para integrarse en pipelines internos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor lo indica explícitamente: "This is not a benchmark". Los únicos datos medidos son los siguientes, obtenidos en una RX 9070 XT de 16 GB con Vulkan, K=2048, caché K/V en Q8_0/Q4_0 y MTP con 2 borradores:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor advierte explícitamente que sus mediciones "no son un benchmark" y que la calidad relativa frente a atención densa, el uso multimodal y las tareas generales no se han medido.
 
-| Prueba | Resultado | Condiciones |
+| Prueba | Configuracion | Resultado |
 |---|---|---|
-| Recall en contexto largo | 29/30 aciertos | 30 pares clave→valor con señuelo a un carácter de distancia, documento de 199.901 tokens, thinking off, decodificación greedy, una sola ejecución |
-| Prefill | 859 tok/s | A 200K tokens de contexto |
-| Decode | ~55 tok/s | Prompt corto |
-| Prefill (otro modelo QSA IQ3_S, misma config) | ~800 tok/s | 250K tokens rellenados, 15,2 GiB de VRAM |
-| Decode (otro modelo QSA IQ3_S, misma config) | 54-68 tok/s | 250K tokens rellenados, 15,2 GiB de VRAM |
-
-El error del 1/30 consistió en seleccionar el señuelo. La prueba se ejecutó una sola vez, sin repetición ni intervalos de confianza.
+| Recuperación de agujas (30 pares clave→valor con señuelo a un carácter de distancia, documento de 199.901 tokens) | RX 9070 XT 16 GB, Vulkan, K=2048, KV Q8_0/Q4_0, MTP 2 borradores, thinking off, greedy | 29/30 aciertos (el error eligió el señuelo) |
+| Prefill a 200K tokens | Misma configuración | 859 tok/s |
+| Decode en prompt corto | Misma configuración | ~55 tok/s |
+| Prefill con 250K tokens llenos (modelo QSA IQ3_S comparable) | Misma tarjeta, misma configuración | ~800 tok/s, 15,2 GiB VRAM |
+| Decode con 250K tokens llenos | Misma tarjeta | 54–68 tok/s |
+| Dos prompts needle-in-a-haystack concurrentes de 101K | `-np 2`, VRAM ~15,5 GiB | Ambos correctos; prefill ~880 tok/s; 61 tok/s un slot solo, 30–37 tok/s cada uno con dos slots |
+| Cuatro slots de 16K | `-np 4 -c 65536` | ~92 tok/s agregados |
 
 ## Requisitos de hardware
 
-- VRAM: el fichero pesa 12,25 GB; con caché K/V cuantizada y streaming, la configuración de referencia ocupa unos 15,2 GiB en una GPU de 16 GB a 250K tokens de contexto.
-- RAM del sistema: aproximadamente 6,4 GiB en memoria fijada (pinned) para las celdas K/V antiguas a 262K de contexto, con `LLAMA_KV_STREAM_CELLS=16384`, `LLAMA_KV_STREAM_RING=8192` y `LLAMA_KV_STREAM_SLOTS=14336`.
-- GPU validadas: RX 9070 XT de 16 GB con backend Vulkan. No hay datos publicados para CUDA, A100, H100 ni RTX 4090; el fork recomendado incluye kernels Vulkan y el kernel CUDA original de `ggml-cuda/qsa-attn.cu` sirve de base al port.
-- Cabe en GPU de consumo de 16 GB, pero solo con el fork modificado y con streaming de caché K/V activado. Reducir a `-c 131072` disminuye la presión de streaming.
-- Despliegue: exclusivamente `llama-server` de Vmarcelo49/Qwen-QSA-llama.cpp (recomendado, commit `108ecc8`) o pentaCoxian/Qwen-QSA-llama.cpp. llama.cpp upstream, LM Studio y Ollama no pueden cargar el fichero.
-- Compilación: `cmake -B build -DGGML_VULKAN=ON && cmake --build build --target llama-server -j`.
-- Throughput estimado: 859 tok/s de prefill a 200K y ~55 tok/s de decode en la RX 9070 XT; `-ub 256` ahorra unos 250 MiB de VRAM a costa de prefill más lento.
-- La ruta QSA se confirma en el log con la línea `QSA27B route: sparse text`.
+- VRAM estimada: el fichero pesa 12,25 GB; la configuración de referencia ocupa 15,2–15,5 GiB de VRAM con 250K–262K de contexto y streaming K/V activo. Con `-ub 256` se ahorran unos 250 MiB.
+- RAM del sistema: unos 6,4 GiB fijados (pinned) para las celdas K/V en streaming a 262K tokens.
+- GPU probada: AMD RX 9070 XT de 16 GB con backend Vulkan. No hay mediciones publicadas para CUDA en la información disponible, aunque el fork parte de kernels portados desde `ggml-cuda/qsa-attn.cu`.
+- Cabe en GPU de consumo de 16 GB (RX 9070 XT); en el resto de modelos de 16 GB o más el autor no aporta cifras.
+- Despliegue: exclusivamente mediante forks con soporte QSA. Recomendado Vmarcelo49/Qwen-QSA-llama.cpp (commit de referencia `108ecc8`, con corrección de bug de streaming K/V en `8a21b8a` y soporte multi-slot desde `4252e0d`); alternativa pentaCoxian/Qwen-QSA-llama.cpp. Compilación con `-DGGML_VULKAN=ON` y target `llama-server`.
+- Incompatible con llama.cpp upstream, LM Studio, Ollama y cualquier aplicación construida sobre ellos.
+- Throughput medido: 859 tok/s de prefill a 200K, ~55 tok/s de decode en prompt corto, 54–68 tok/s con 250K llenos, 30–37 tok/s por slot con dos slots concurrentes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / licencia | Notas |
-|---|---|---|---|---|
-| DaisyRose-27B-QSA-UD-IQ3_S-mtp | 27,4 B | 262K (config. autor) | GGUF, Apache-2.0 | QSA + MTP, requiere fork de llama.cpp |
-| RadixArk/DaisyRose-27B | 27,4 B | No disponible | Pesos completos, Apache-2.0 | Modelo base sin QSA ni cuantizar; atención densa |
-| higa2515/Qwen3.8-27B-QSA-BF16 | ~27 B | No disponible | BF16 | Origen del indexador QSA; sin fine-tuning DaisyRose |
-| unsloth/Qwen3.8-27B-GGUF (UD-IQ3_S) | ~27 B | No disponible | GGUF, Apache-2.0 | Misma receta de cuantización e imatrix; sin QSA ni MTP |
-| Qwen/Qwen3.8-27B | ~27 B | No disponible | Pesos completos | Modelo original de Qwen sobre el que se construye toda la cadena |
-
-No hay datos de benchmarks comparativos publicados que permitan contrastar calidad entre estas variantes.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| DaisyRose-27B-QSA-UD-IQ3_S-mtp (este) | 27,37B | 262.144 | IQ3_S, 12,25 GB | Apache 2.0 | Requiere fork QSA; MTP para decodificación especulativa |
+| unsloth/Qwen3.8-27B-GGUF (UD-IQ3_S) | 27B (aprox.) | no disponible | IQ3_S | no disponible | Carga en llama.cpp upstream; sin QSA ni MTP |
+| higa2515/Qwen3.8-27B-QSA-BF16 | 27B (aprox.) | no disponible | BF16 | no disponible | Fuente del indexador QSA; pesos completos en BF16 |
+| RadixArk/DaisyRose-27B | 27,37B | no disponible | safetensors (base) | Apache 2.0 (heredada) | Modelo base sin cuantizar ni injerto QSA |
 
 ## Limitaciones y advertencias
 
-- Incompatible con llama.cpp upstream, LM Studio y Ollama. Solo funciona con los forks indicados; cualquier actualización de esos forks puede romper la compatibilidad.
-- El indexador QSA se destiló sobre Qwen3.8-27B base y se injertó sin reentrenar sobre DaisyRose. No hay evidencia publicada de que la selección de bloques sea correcta para los pesos del fine-tuning.
-- La imatrix de Unsloth se calculó sobre Qwen3.8-27B, no sobre DaisyRose, por lo que la asignación de bits por tensor puede no ser óptima para este modelo.
-- Calidad frente a atención densa no medida. El autor declara explícitamente que no se han evaluado tareas generales ni la degradación introducida por la atención dispersa.
-- El resultado de recall (29/30) proviene de una única ejecución con decodificación greedy y thinking desactivado; no es estadísticamente robusto.
-- Sin soporte multimodal: no se incluye `mmproj`.
-- Idiomas soportados no declarados en la model card; deben inferirse del modelo base.
-- Riesgo de alucinación y sesgos: no documentados para este artefacto; hereda los del fine-tuning DaisyRose y, en última instancia, de Qwen3.8-27B.
-- Licencia Apache-2.0 permite uso comercial, pero las dependencias de ejecución (forks de llama.cpp) deben verificarse por separado.
-- Cero descargas y cero likes en el momento de la ficha: sin validación por parte de la comunidad.
-- Un solo usuario concurrente en la configuración probada (`-np 1`); no apto para serving multiusuario sin redimensionar.
+- No carga en llama.cpp upstream, LM Studio ni Ollama. Requiere compilar un fork concreto; cualquier actualización del fork puede romper la compatibilidad del fichero.
+- La imatrix se calculó sobre Qwen3.8-27B base, no sobre DaisyRose, por lo que la calibración de la cuantización es aproximada.
+- El indexador QSA se destiló sobre el modelo base y se injertó sin reentrenamiento sobre DaisyRose; el autor no ha medido la calidad relativa frente a atención densa.
+- Solo texto: sin capacidades multimodales.
+- Idiomas soportados no documentados; no hay evaluación multilingüe publicada.
+- Riesgo de alucinación no cuantificado: no hay benchmarks de veracidad ni de tareas generales.
+- La prueba de agujas se ejecutó una sola vez, con thinking off y decodificación greedy; no es un benchmark y no debe extrapolarse a otras tareas.
+- El bug de streaming K/V corregido en `8a21b8a` podía perder texto más allá de ~24K tokens, también con `-np 1`; es obligatorio usar la última `main` del fork.
+- Con dos slots, estos se turnan en la GPU: un slot decodifica despacio mientras el otro procesa un prompt largo.
+- La licencia Apache 2.0 se hereda del modelo base, pero conviene verificar las condiciones del modelo RadixArk/DaisyRose-27B original antes de uso comercial.
+- El repositorio tiene 309 descargas y 2 likes en el momento de la consulta: validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/vmarcelo/DaisyRose-27B-QSA-UD-IQ3_S-mtp
 - Modelo base: https://huggingface.co/RadixArk/DaisyRose-27B
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Cuantizaciones Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Indexador QSA en BF16: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16
-- Fork recomendado de llama.cpp: https://github.com/Vmarcelo49/Qwen-QSA-llama.cpp
+- Referencia de cuantización Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Fuente del indexador QSA: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16
+- Fork recomendado: https://github.com/Vmarcelo49/Qwen-QSA-llama.cpp
 - Fork upstream QSA: https://github.com/pentaCoxian/Qwen-QSA-llama.cpp
-- Pull requests del fork recomendado: [#1](https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/1), [#2](https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/2), [#3](https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/3)
-- Entrenamiento del indexador: https://github.com/kuraneko1/qsa-indexer-forge
-- Paper de QSA: https://arxiv.org/abs/2608.30320
+- PR #1 (kernel Vulkan block-sparse QSA): https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/1
+- PR #2 (streaming K/V desde host en Vulkan): https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/2
+- PR #3 (scoring QSA fusionado, mat-vec IQ3 entero, cabeza MTP recortada): https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/pull/3
+- Paper referenciado en los tags: arxiv:2608.30320

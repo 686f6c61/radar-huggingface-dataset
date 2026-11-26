@@ -2,106 +2,91 @@
 
 ## Resumen
 
-Actuator-7B es un ajuste fino del modelo Qwen2.5-7B-Instruct orientado especificamente a la generacion de llamadas a herramientas (tool calling) y a la extraccion de JSON estructurado validado contra esquemas. Lo desarrolla el usuario nihalmotukuri y se distribuye unicamente en formato GGUF, pensado para su uso local con Ollama, llama.cpp o LM Studio. El modelo aborda un problema concreto y bien documentado: los modelos de 7B-8B tienden a envolver el JSON en prosa o en bloques de codigo Markdown, inventar claves de parametros, omitir campos obligatorios o responder conversacionalmente cuando una herramienta devuelve un error, lo que rompe los parsers de los pipelines de agentes.
+Actuator-7B (GGUF) es una cuantización del modelo Qwen2.5-Coder-7B-Instruct afinada por Nihal Motukuri para tareas de revisión de código y triaje de seguridad. El modelo actúa como motor de razonamiento de CodeWarden, una herramienta de línea de comandos offline que analiza cambios en repositorios Git, aísla funciones modificadas mediante Tree-sitter y produce hallazgos estructurados en JSON con vistas previas de parches interactivas. La relevancia del modelo radica en su enfoque: en lugar de un asistente de código genérico, se trata de un componente especializado en tool calling paralelo y adherencia estricta a esquemas JSON, empaquetado en GGUF para inferencia local.
 
-La propuesta es convertir al modelo en un despachador fiable entre lenguaje natural y APIs estrictas, eliminando el relleno conversacional. Para ello se entrena con QLoRA de 4 bits sobre 4.800 ejemplos verificados procedentes de xLAM y del dataset de function calling de NousResearch, con enmascaramiento de perdida solo en las respuestas. El resultado es un modelo de 7.615.616.512 parametros (7,6B) con una ventana de contexto de entrenamiento de 3.072 tokens, licencia Apache 2.0 y pesos unicamente en GGUF.
+El modelo se distribuye exclusivamente en formato GGUF con cuantización Q4_K_M (aproximadamente 4,7 GB en disco, VRAM o RAM), lo que permite ejecutarlo en portátiles con 8-16 GB de RAM sin intercambio de memoria. Está construido sobre la arquitectura de Qwen2.5-Coder-7B-Instruct, un transformer causal de 7.615.616.512 parámetros, y conserva su licencia Apache 2.0.
 
-Es relevante ahora porque la mayoria de frameworks de agentes (n8n, Cline, Roo Code, servidores MCP, OpenWebUI) exigen JSON estrictamente valido y, hasta la fecha, conseguir eso con modelos pequenos en local requeria prompting defensivo o validacion y reintentos en el codigo del cliente. Actuator-7B traslada esa responsabilidad al modelo mediante ajuste fino supervisado.
+La ventana de contexto recomendada por el autor es de 4096 tokens (`num_ctx = 4096`), un valor deliberadamente modesto para evitar el thrashing de swap en hardware de consumo. El modelo soporta únicamente inglés y está orientado a Python, JavaScript/JSX, TypeScript/TSX y C++.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-7B-Instruct) |
-| Parametros totales | 7.615.616.512 (7,6B) |
+| Arquitectura | Transformer causal (derivado de Qwen2.5-Coder-7B-Instruct) |
+| Parametros totales | 7.615.616.512 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 3.072 tokens en entrenamiento; contexto nativo del modelo base no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | GGUF Q4_K_M y Q8_0 (los exportados por el autor) |
-| Idiomas soportados | en (ingles) |
+| Longitud de contexto | 4096 tokens recomendados (`num_ctx = 4096`) |
+| Tipos de cuantizacion | Q4_K_M (~4,7 GB); el repo incluye otros archivos GGUF (12,8 GB en total) |
+| Idiomas soportados | inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (no se publican safetensors del modelo ajustado) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por rotacion posicional (RoPE) y sesgo QKV, del que no se detallan mas particularidades en la informacion disponible. Sobre esa base se aplica un ajuste fino supervisado con QLoRA de 4 bits, rango r=16, lora_alpha=32 y adaptadores en todas las proyecciones lineales, usando la libreria Unsloth. El entrenamiento emplea enmascaramiento de perdida solo en las respuestas (train_on_responses_only), de modo que el modelo no aprende a reproducir los prompts del usuario.
+El modelo es una cuantización GGUF de Qwen/Qwen2.5-Coder-7B-Instruct, un transformer causal de 7B parámetros. El autor indica que está "tuned for multi-step parallel tool calling and strict JSON schema adherence", es decir, ajustado para invocación de herramientas en paralelo y adherencia estricta a esquemas JSON. No se proporcionan detalles sobre el dataset de ajuste, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF o DPO.
 
-El conjunto de datos consta de 4.800 ejemplos verificados en tres bloques: 2.250 muestras filtradas y normalizadas de Salesforce/xlam-function-calling-60k para tool calling simple, paralelo y con argumentos anidados; 1.400 muestras de la particion func_calling de NousResearch/hermes-function-calling-v1 para bucles de ejecucion multi-turno, recuperacion de errores y abstencion; y 1.150 muestras de las particiones json_mode y jsonschema de ese mismo dataset, verificadas contra esquema, para adherencia a JSON Schema sin Markdown. Los hiperparametros incluyen contexto de 3.072 tokens, batch efectivo de 16, optimizador adamw_8bit, schedule coseno con learning rate 2e-4, 15 pasos de calentamiento y precision bf16, todo sobre una unica GPU RTX 5070 Ti de 12 GB. No se menciona RLHF ni DPO en la informacion proporcionada.
-
-La innovacion principal no es arquitectonica sino de formato: el modelo se apoya en la plantilla de chat nativa de Qwen con etiquetas `<tool_call>` y se entrena para emitir JSON crudo, sin cercas de codigo ni texto adicional, ademas de abstenerse de invocar herramientas cuando la peticion no lo requiere.
+La innovación destacable no reside en la arquitectura subyacente, sino en el ecosistema que la rodea: CodeWarden combina el modelo con Tree-sitter para el troceado a nivel de AST, un `RepoToolbox` sandboxed con caché de deduplicación para consultas entre archivos (definiciones de símbolos, referencias, importaciones, fragmentos de código y `git_blame`), prechecks deterministas de sintaxis (`ast.parse` para Python, `node --check` para JS/TS) y filtrado por proximidad de diff de ±3 líneas para eliminar ruido de código heredado.
 
 ## Capacidades
 
-- Generacion de llamadas a funciones en formato nativo de Qwen (`<tool_call>`), compatible con la API de herramientas de Ollama y con el esquema OpenAI de function calling.
-- Tool calling simple, paralelo y con argumentos anidados.
-- Extraccion de JSON estructurado validado contra un JSON Schema proporcionado en el prompt, con salida en JSON crudo sin bloques Markdown.
-- Abstencion: el modelo no invoca herramientas irrelevantes cuando corresponde una respuesta de texto.
-- Recuperacion de errores en bucles multi-turno: corrige argumentos y reintenta en lugar de disculparse conversacionalmente.
-- Integracion declarada con Ollama, LM Studio, vLLM, n8n, Cline, Roo Code, OpenWebUI y servidores MCP.
-- Capacidades generales de generacion de texto y razonamiento heredadas de Qwen2.5-7B-Instruct, aunque no son el objetivo del ajuste.
-- Capacidades multilingues limitadas al ingles segun la model card; el modelo base soporta mas idiomas, pero el ajuste se realizo solo en ingles.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
+- Generación de texto y razonamiento sobre código en Python, JavaScript/JSX, TypeScript/TSX y C++.
+- Tool calling multi-paso en paralelo con adherencia estricta a esquemas JSON.
+- Revisión de código a nivel de AST: aísla funciones y componentes React, con seguimiento de anclas de eliminación (detecta guardas de autenticación o validación eliminadas) y ventaneo de funciones grandes (±40 líneas).
+- Verificación entre archivos e historial: consulta definiciones de símbolos (`search_symbol`), puntos de llamada (`find_references`), importaciones (`get_file_imports`), fragmentos de código (`read_file`) y `git_blame`.
+- Triaje de seguridad y detección de bugs con salida estructurada en JSON.
+- Generación de parches unificados mínimos con verificación de indentación por coincidencia única y confirmación interactiva `[y/N]`.
+- Capacidades multilingües limitadas al inglés.
+- No se documentan capacidades de visión, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Backend de agentes en local para automatizacion de flujos: el modelo actua como despachador entre peticiones en lenguaje natural y funciones registradas, emitiendo JSON valido que el orquestador puede pasar directamente a `json.loads()` o a un modelo Pydantic sin capa de saneamiento.
-- Extraccion de datos de documentos hacia sistemas de gestion: con un JSON Schema en el prompt de sistema, convierte texto libre (facturas, pedidos, correos) en objetos estructurados con tipos correctos, lo que encaja en pipelines ETL y en la ingestion de datos para ERPs.
-- Automatizacion de workflows en n8n: el modelo puede ocupar el nodo de agente y decidir que nodo o API invocar, con la ventaja de que la salida respeta el esquema esperado por el nodo siguiente y evita ramas de error por JSON malformado.
-- Integracion con servidores MCP: al respetar la plantilla nativa de Qwen y el formato de tool calling, puede conectarse a herramientas expuestas por MCP para consultas a bases de datos, sistemas de ficheros o APIs internas en entornos con requisitos de privacidad.
-- Asistentes de codigo en IDE (Cline, Roo Code): el modelo propone llamadas a herramientas de edicion de ficheros, ejecucion de comandos y busqueda en el repositorio, con argumentos tipados correctamente y abstencion cuando la peticion es puramente conversacional.
-- Atencion al cliente con derivacion a acciones: en un chat multi-turno, decide cuando responder texto y cuando invocar funciones como consultar pedido, cambiar direccion o abrir incidencia, manteniendo el contexto dentro de los 3.072 tokens de entrenamiento.
-- Despliegue en hardware de consumo para prototipado de agentes: al publicarse en GGUF Q4_K_M, puede ejecutarse en una unica GPU de 12 GB o en CPU, lo que permite iterar sobre disenos de herramientas sin coste de API en la nube.
+- Revisión de cambios no confirmados en un repositorio: `codewarden review --repo /path/to/repo` analiza el diff, aísla las funciones afectadas con Tree-sitter y emite hallazgos JSON; el modelo es adecuado porque su ventana de 4096 tokens se ajusta al troceado por funciones en lugar de procesar el repositorio completo.
+- Auditoría de commits recientes con parches interactivos: `codewarden review --repo /path/to/repo --base HEAD~1 --fix` genera diffs unificados mínimos con vistas previas de sintaxis Rich y confirmación `[y/N]`, lo que permite aplicar correcciones de seguridad sin salir de la terminal.
+- Integración en CI/CD como hook de pre-commit bloqueante: `codewarden init --repo /path/to/repo` genera un hook de Git y un workflow de GitHub Actions; la inferencia local con Q4_K_M (~4,7 GB) evita enviar código propietario a APIs externas.
+- Triaje de seguridad offline en entornos air-gapped: al ejecutarse íntegramente vía Ollama en hardware de consumo, el modelo permite auditar código en máquinas sin conexión, algo crítico en sectores regulados.
+- Detección de regresiones de autenticación: el seguimiento de anclas de eliminación permite identificar guardas de auth o validación suprimidas en un diff, un caso donde el contexto entre archivos vía `find_references` y `git_blame` aporta la información que un análisis local de función no capturaría.
+- Revisión de componentes React y código C++ en pipelines de frontend y sistemas: el soporte de JSX/TSX y C++ amplía el uso más allá de Python, con ventaneo de ±40 líneas para funciones grandes.
+- Asistencia directa vía CLI o SDK de Python: `ollama run actuator-7b:latest` con definiciones de herramientas habilitadas permite construir agentes de análisis de código personalizados sobre el mismo motor.
 
 ## Benchmarks y rendimiento
 
-Evaluacion del autor sobre 150 tareas reservadas, repartidas a partes iguales entre llamadas simples y paralelas (50), multi-turno y abstencion (50) y extraccion estructurada validada con `jsonschema` (50). La comparacion es contra Qwen2.5-7B-Instruct sin ajustar, con Actuator-7B en cuantizacion Q4_K_M.
-
-| Metrica | Qwen2.5-7B-Instruct | Actuator-7B (Q4_K_M) | Delta |
-|---|---|---|---|
-| Sintaxis JSON de tool call valida | 100,0% | 100,0% | — |
-| Coincidencia exacta de funcion y argumentos | 53,73% | 76,12% | +22,39 pp |
-| Precision de abstencion / irrelevancia | 84,85% | 100,0% | +15,15 pp |
-| JSON crudo sin cercas Markdown | 96,00% | 100,0% | +4,00 pp |
-| Cumplimiento estricto de `jsonschema` | 96,00% | 100,0% | +4,00 pp |
-
-No se han publicado resultados en benchmarks academicos estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras anteriores proceden exclusivamente de la evaluacion interna del autor y no han sido replicadas de forma independiente.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4,5-5 GB en Q4_K_M (pesos de ~4,4 GB mas cache KV) y en torno a 8-9 GB en Q8_0 (pesos de ~8,1 GB mas cache KV); el repositorio completo ocupa 12,8 GB.
-- GPU recomendadas: cualquier GPU con 8 GB o mas para Q4_K_M; 12 GB o mas para Q8_0. El autor entreno el ajuste en una RTX 5070 Ti de 12 GB, lo que confirma que el modelo completo en cuantizacion baja cabe en ese perfil.
-- Cabe en GPU de consumo: si, en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 3070) con Q4_K_M, y en tarjetas de 12 GB (RTX 3060 12 GB, RTX 4070, RTX 5070 Ti) con Q8_0.
-- Opciones de despliegue: Ollama (`ollama run hf.co/nihalmotukuri/actuator-7b-gguf:Q4_K_M`), llama.cpp, LM Studio y vLLM (este ultimo requiere convertir el GGUF o servir el modelo base ajustado, no incluido en el repositorio).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM/RAM estimada: ~4,7 GB para la cuantización Q4_K_M (huella en disco, VRAM o RAM según el autor).
+- Hardware objetivo: portátiles con 8-16 GB de RAM sin thrashing de swap, según la model card.
+- GPU recomendadas: no se especifican modelos concretos (A100, H100, RTX 4090, etc.) en la información disponible.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 6-8 GB de VRAM o más al usar Q4_K_M; no se detallan modelos concretos.
+- Opciones de despliegue: Ollama (vía `ollama pull hf.co/nihalmotukuri/actuator-7b-gguf:Q4_K_M` y alias `actuator-7b:latest`); el repo es compatible con endpoints (`endpoints_compatible`) y puede servirse con llama.cpp u otros runners GGUF, aunque solo Ollama se documenta explícitamente.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Actuator-7B | 7,6B | 3.072 tokens (entrenamiento) | Tool calling y JSON Schema estricto | Apache 2.0 | GGUF (Q4_K_M, Q8_0) |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos (ampliable) | Instruct generalista con tool calling | Apache 2.0 | safetensors, GGUF |
-| Hermes-2-Pro-Mistral-7B | 7,2B | 32.768 tokens | Function calling y JSON mode | Apache 2.0 | safetensors, GGUF |
-| xLAM-7B-r | 7B | no disponible | Function calling (origen de parte del dataset) | no disponible | safetensors, GGUF |
+| Actuator-7B (GGUF) | 7,6B | 4096 recomendados | GGUF (Q4_K_M) | Apache 2.0 | Revisión de código y triaje de seguridad con tool calling |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | no disponible en la información | safetensors (modelo base) | Apache 2.0 | Asistente de código generalista |
+| Alternativas de revisión de código especializadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Actuator-7B sacrifica ventana de contexto frente a Qwen2.5-7B-Instruct y Hermes-2-Pro (3.072 frente a 32.768 tokens) a cambio de una tasa de coincidencia exacta de argumentos del 76,12% frente al 53,73% de la base sin ajustar. Frente a Hermes-2-Pro-Mistral-7B, el dato diferencial es la adherencia estricta a `jsonschema` y la abstencion, aunque no se dispone de una comparacion directa entre ambos en la informacion proporcionada.
+La comparación directa con otros modelos de revisión de seguridad no está disponible en la información proporcionada. El único punto de referencia documentado es su modelo base, Qwen2.5-Coder-7B-Instruct, del que hereda arquitectura y licencia.
 
 ## Limitaciones y advertencias
 
-- El contexto de entrenamiento es de solo 3.072 tokens; conversaciones de agente largas o esquemas de herramientas muy extensos pueden exceder esa ventana y degradar la calidad de las llamadas.
-- El modelo esta ajustado unicamente en ingles; su uso en castellano u otros idiomas no esta validado y puede producir argumentos incorrectos o texto mezclado.
-- Los benchmarks son internos del autor, sobre 150 tareas y sin replicacion independiente; deben tomarse como indicativos y no como garantia de rendimiento en produccion.
-- Riesgo de alucinacion de nombres de funciones o de claves de parametros si el esquema de herramientas no se proporciona de forma completa y explicita en el prompt.
-- El repositorio solo contiene pesos GGUF; no se publican safetensors del ajuste ni los adaptadores LoRA, lo que limita el reentrenamiento o la fusion con otras tecnicas.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha, sin comunidad ni issues que permitan validar su comportamiento en escenarios reales.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, el modelo base Qwen2.5-7B-Instruct tambien es Apache 2.0, por lo que no hay restricciones adicionales conocidas; aun asi, conviene revisar los terminos del modelo base.
-- Al ser un ajuste agresivo hacia un formato concreto, puede haber perdido parte de la capacidad conversacional general del modelo base; no se recomienda como sustituto de un instruct generalista.
-- No se documentan medidas de seguridad, alineamiento ni filtros de contenido; el modelo puede reproducir sesgos presentes en los datasets xLAM y Hermes.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen2.5-Coder, puede heredar los sesgos del corpus de entrenamiento original.
+- Riesgo de alucinación: no cuantificado; como modelo generativo que emite hallazgos JSON, puede producir falsos positivos o referencias a símbolos inexistentes, mitigado parcialmente por los prechecks deterministas y el filtrado de proximidad de CodeWarden.
+- Contexto limitado: la ventana recomendada de 4096 tokens es reducida para repositorios grandes; el diseño depende del troceado por funciones y del ventaneo de ±40 líneas para compensar.
+- Idioma: solo inglés, lo que limita su uso en comentarios, documentación o mensajes de error en otros idiomas.
+- Cobertura de lenguajes: solo Python, JavaScript/JSX, TypeScript/TSX y C++; no cubre Java, Go, Rust ni otros lenguajes.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre la idoneidad para producción ni sobre la precisión de los hallazgos de seguridad.
+- Madurez: el modelo se publicó el 20 de noviembre de 2026 y se actualizó el 23 de noviembre de 2026, con 246 descargas y 3 likes; el ecosistema CodeWarden se encuentra en la versión v0.2.0, por lo que se trata de un proyecto joven.
+- Dependencia de herramienta: el flujo principal asume Ollama y CodeWarden; el uso directo vía CLI o SDK requiere definir las herramientas manualmente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nihalmotukuri/actuator-7b-gguf
-- Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Unsloth (framework de ajuste): https://github.com/unslothai/unsloth
-- Dataset Salesforce/xlam-function-calling-60k: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
-- Dataset NousResearch/hermes-function-calling-v1: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
-- Ollama: https://ollama.com
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Repositorio CodeWarden (CLI y motor de agente): https://github.com/nihalmotukuri/CodeWarden
+- Notas de la versión v0.2.0: https://github.com/nihalmotukuri/CodeWarden/releases/tag/v0.2.0
+- Perfil del autor: https://github.com/nihalmotukuri
+- Ollama: https://ollama.com/
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

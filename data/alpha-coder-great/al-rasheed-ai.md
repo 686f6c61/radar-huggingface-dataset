@@ -1,71 +1,80 @@
 # alpha-coder-great/al-rasheed-ai
 
 ## Resumen
-Al-Rasheed AI es un modelo de lenguaje afinado, distribuido en formato GGUF, orientado especificamente a la consulta de conocimiento islamico, referencias coranicas y orientacion basica sobre practicas religiosas. Lo desarrolla el usuario alpha-coder-great dentro del proyecto Al-Rasheed, una aplicacion islamica con enfoque offline-first que integra tanto chat como un modelo de recitacion. El modelo se presenta como una version afinada de una base existente (la model card menciona Llama 3 como arquitectura de referencia) y se distribuye con una unica cuantizacion Q4_K_M.
 
-La relevancia del modelo es acotada y de nicho: no compite en capacidades generales con modelos frontera, sino que busca ofrecer asistencia religiosa local, sin dependencia de servicios en la nube, para usuarios que priorizan privacidad y funcionamiento sin conexion. El repositorio ocupa 2,0 GB y acumula 1848 descargas, lo que sugiere un uso comunitario mas que un despliegue industrial.
+Al-Rasheed AI es un modelo de lenguaje en formato GGUF presentado por el desarrollador alpha-coder-great (bajo el identificador de Hugging Face `alpha-coder-great/al-rasheed-ai`) como una herramienta de referencia para conocimiento islámico, consultas sobre el Corán y asistencia educativa religiosa. Según la model card, se trata de un ajuste fino (fine-tune) de un modelo previo denominado QuranGuide, del que se distribuye la variante cuantizada Q4_K_M, y que el autor declara construido sobre la arquitectura Llama 3, aunque no se aportan detalles verificables sobre el modelo base exacto ni sobre el proceso de entrenamiento.
 
-La informacion publica es escasa: no se detallan parametros totales, contexto de entrenamiento, composicion del dataset ni resultados de evaluacion. La model card insiste en que el modelo es una herramienta experimental de referencia y no sustituye a un mufti o a un erudito cualificado.
+El modelo se distribuye exclusivamente en formato GGUF con cuantización Q4_K_M y está pensado para inferencia local y offline, integrado en la aplicación móvil Al-Rasheed Islamic App. La model card incluye un system prompt de ejemplo que fija la identidad del asistente, una temperatura de 0.7 y una ventana de contexto de 8192 tokens configurada mediante parámetros de plantilla (estilo Ollama/llama.cpp). El repositorio ocupa aproximadamente 2,0 GB y acumula 1363 descargas y 2 likes en el momento de la consulta.
+
+La relevancia del proyecto es principalmente de nicho: propone un asistente religioso que funciona sin conexión y sin depender de servicios en la nube, un enfoque con valor para usuarios preocupados por la privacidad. No obstante, la información técnica publicada es muy limitada: no se especifican parámetros totales, licencia, idiomas soportados ni resultados de benchmarks, y el propio autor advierte de que el modelo es experimental y no sustituye la consulta a scholars cualificados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (la model card indica Llama 3 como base; no se detalla la variante) |
+| Arquitectura | Transformer, declarada como basada en Llama 3 (no verificable) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8192 tokens (configurado en el Modelfile con `num_ctx 8192`) |
-| Tipos de cuantizacion | Q4_K_M (unica cuantizacion publicada) |
-| Idiomas soportados | no disponible (la model card esta redactada en ingles; no se declaran idiomas) |
+| Parametros activos | no aplica (no se declara arquitectura MoE) |
+| Longitud de contexto | 8192 tokens (valor configurado en el system prompt de ejemplo) |
+| Tipos de cuantizacion | Q4_K_M (GGUF); no se publican otras variantes |
+| Idiomas soportados | no disponible (la model card está en inglés y el enfoque es temático, no lingüístico) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (`al-rasheed-ai-Q4_K_M.gguf`, derivado de `./quran-guide Q4_K_M.gguf`) |
+| Formato de pesos | GGUF (fichero `al-rasheed-ai-Q4_K_M.gguf`) |
 
 ## Arquitectura y entrenamiento
-La model card describe el modelo como un "fine-tuned GGUF language model" construido sobre la arquitectura Llama 3, sin especificar el numero de parametros de la base ni la variante concreta. El artefacto distribuido es una cuantizacion Q4_K_M de un modelo previo denominado internamente quran-guide, del que no se publican detalles de entrenamiento.
 
-No se documenta el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se describen innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos). El unico elemento de configuracion visible es el system prompt incluido en el Modelfile, que fija la identidad del asistente como Al-Rasheed-AI, una temperatura de 0,7 y una ventana de contexto de 8192 tokens.
+La model card indica que el modelo se construye sobre la arquitectura Llama 3 y que es un ajuste fino del modelo previo QuranGuide. No se especifica el número de parámetros del modelo base, el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de alineación como RLHF, DPO o SFT supervisado. Tampoco se documenta el proceso de cuantización más allá de la etiqueta Q4_K_M, que corresponde al esquema de cuantización de 4 bits con mezcla de tipos de llama.cpp.
+
+El artefacto distribuido es únicamente el fichero GGUF cuantizado, no los pesos originales en safetensors ni el checkpoint del fine-tune. El prompt de sistema incluido en la model card define una identidad concreta ("Al-Rasheed-AI") y establece que el modelo no debe presentarse como QuranGuide salvo que se pregunte por su historial de desarrollo, lo que sugiere una personalización ligera orientada a la aplicación móvil más que un entrenamiento documentado con rigor técnico. No se describe ninguna innovación arquitectónica (atención lineal, decodificación especulativa, MoE o modelos híbridos SSM).
 
 ## Capacidades
-- Generacion de texto conversacional en torno a conceptos islamicos, terminologia religiosa y practicas cotidianas.
-- Asistencia sobre significados y ensenanzas de pasajes coranicos, con advertencia explicita de verificacion.
-- Orientacion introductoria sobre dictamenes islamicos basicos y algunos temas avanzados, presentados como punto de partida para investigacion posterior.
-- Identificacion de cuestiones que requieren consulta con eruditos cualificados.
-- Funcionamiento offline mediante inferencia local en software compatible con GGUF.
-- Integracion en la aplicacion Al-Rasheed Islamic App, que incluye ademas un modelo separado de recitacion con retroalimentacion de pronunciacion.
-- No se documentan capacidades de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
+
+- Generación de texto conversacional en inglés, orientada a preguntas y respuestas sobre conceptos islámicos, terminología religiosa y prácticas cotidianas.
+- Asistencia sobre referencias coránicas y enseñanzas islámicas, con advertencia explícita del autor sobre la necesidad de verificar citas.
+- Exploración introductoria de dictámenes islámicos (rulings) básicos y de cuestiones más avanzadas como punto de partida para investigación posterior.
+- Identificación de temas que requieren consulta con scholars o fuentes religiosas autorizadas.
+- Funcionamiento offline mediante inferencia local en formato GGUF, integrable en aplicaciones de escritorio o móviles.
+- Soporte de conversación multi-turno dentro de la ventana de 8192 tokens configurada.
+- No se documenta soporte de tool calling, function calling, razonamiento multi-paso con agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
+- No se documentan capacidades multilingües; la model card no declara idiomas soportados.
 
 ## Casos de uso
-- Consulta religiosa offline en dispositivos personales: el modelo se ejecuta localmente en formato GGUF con contexto de 8192 tokens, lo que permite mantener conversaciones multi-turno sobre conceptos islamicos sin enviar datos a la nube.
-- Aplicacion movil de referencia islamica: integrado en Al-Rasheed Islamic App, sirve como asistente de consulta rapida sobre terminologia, practicas y significados de pasajes coranicos.
-- Educacion introductoria: apoyo a estudiantes que necesitan una primera explicacion de conceptos islamicos, con la advertencia de verificar citas y referencias en fuentes autenticas.
-- Filtro de derivacion a especialistas: el modelo puede identificar preguntas que exceden su alcance y orientar al usuario hacia muftises o eruditos cualificados.
-- Despliegue en entornos con conectividad limitada: al ser un GGUF de 2,0 GB, puede ejecutarse en equipos modestos mediante llama.cpp u Ollama, util en comunidades con infraestructura reducida.
-- Prototipado de asistentes religiosos especializados: sirve como base para experimentar con prompts y flujos de consulta antes de invertir en modelos mayores o en datos propios.
-- Complemento de la funcion de recitacion: dentro de la app, el chat puede acompanar a la retroalimentacion de pronunciacion del modelo de recitacion, ofreciendo contexto explicativo.
+
+- Asistente religioso offline en la aplicación Al-Rasheed Islamic App: el modelo se ejecuta localmente en el dispositivo del usuario y responde a preguntas sobre conceptos islámicos sin enviar datos a la nube, lo que encaja con el enfoque de privacidad declarado por el proyecto.
+- Consulta educativa sobre terminología islámica: un usuario puede preguntar por el significado de términos como "hadiz", "sunna" o "fiqh" y obtener explicaciones introductorias dentro de la ventana de 8192 tokens.
+- Exploración de pasajes coránicos: el modelo puede ofrecer contextos y enseñanzas asociadas a versículos, siempre que el usuario verifique las citas contra fuentes auténticas, tal como advierte el autor.
+- Punto de partida para investigación sobre dictámenes: ante una pregunta práctica, el modelo puede enumerar opiniones generales y señalar la necesidad de consultar a un muftí o scholar cualificado.
+- Despliegue en entornos con conectividad limitada: al ser un GGUF Q4_K_M de aproximadamente 2 GB, puede ejecutarse en equipos modestos o dispositivos móviles mediante llama.cpp u Ollama, útil en comunidades con acceso irregular a internet.
+- Integración en herramientas de estudio islámico para principiantes: un desarrollador puede embeber el modelo en una aplicación de escritorio educativa que funcione sin conexión y con parámetros de generación fijos (temperatura 0.7, contexto 8192).
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas de conocimiento islámico, y tampoco se aportan comparaciones con otros modelos.
 
 ## Requisitos de hardware
-- VRAM estimada: al tratarse de una cuantizacion Q4_K_M y un repositorio de 2,0 GB, la inferencia requiere aproximadamente 2-3 GB de memoria, mas la memoria adicional para el contexto de 8192 tokens (que puede anadir entre 0,5 y 1,5 GB segun la implementacion).
-- GPU recomendadas: no se especifican; por tamano, el modelo cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o superiores, asi como en Apple Silicon con memoria unificada suficiente.
-- Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con 4 GB o mas de VRAM, aunque este dato no esta confirmado por el autor.
-- Opciones de despliegue: llama.cpp, Ollama (el Modelfile incluido sugiere este flujo), y otros runners compatibles con GGUF. No se documenta soporte para vLLM ni TGI.
+
+- VRAM estimada para inferencia: al tratarse de un GGUF Q4_K_M de aproximadamente 2 GB, la huella de pesos ronda los 2 GB; con overhead de contexto (8192 tokens) y buffers de llama.cpp, se recomienda prever entre 3 y 5 GB de memoria disponible, aunque el dato exacto no está publicado.
+- GPU recomendadas: no disponible. No se documentan requisitos oficiales; por tamaño, cualquier GPU consumer con 6-8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) debería poder cargarlo, pero es una estimación, no un dato del autor.
+- Cabe en GPU consumer: previsiblemente sí, dado el tamaño del fichero, aunque no se confirma oficialmente.
+- Opciones de despliegue: llama.cpp y Ollama son los entornos compatibles con el formato GGUF y con los parámetros de plantilla incluidos en la model card (`PARAMETER temperature 0.7`, `PARAMETER num_ctx 8192`). No se documenta compatibilidad con vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria ni datos de rendimiento que permitan una comparacion rigurosa.
+
+No disponible. La información proporcionada no identifica el modelo base exacto ni ofrece métricas que permitan una comparación rigurosa con alternativas de la misma categoría (asistentes religiosos o modelos Llama 3 de tamaño equivalente). Cualquier comparación numérica sería especulativa.
 
 ## Limitaciones y advertencias
-- El propio autor advierte que el modelo puede generar informacion inexacta, citar mal las fuentes, malinterpretar preguntas o emitir dictamenes religiosos incorrectos.
-- No sustituye a un mufti, erudito o autoridad religiosa cualificada; toda cita coranica, hadiz o dictamen debe verificarse en fuentes autenticas.
-- No se declara licencia, lo que impide determinar si el uso comercial esta permitido; conviene contactar con el autor antes de cualquier despliegue productivo.
-- No se especifican los idiomas soportados; la model card esta en ingles y no hay evidencia de calidad en castellano u otras lenguas.
-- La unica cuantizacion disponible es Q4_K_M, lo que limita el ajuste fino entre calidad y recursos.
-- No hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
-- El proyecto se declara en desarrollo continuo y el autor menciona un modelo futuro separado, por lo que la version actual puede quedar obsoleta.
-- La calidad y exactitud de las respuestas "puede variar", segun la propia model card.
+
+- El propio autor advierte de que el modelo puede generar información inexacta, citar mal las fuentes, malinterpretar preguntas o emitir dictámenes religiosos incorrectos; no sustituye a un muftí ni a un scholar cualificado.
+- Riesgo elevado de alucinación en citas coránicas y de hadices, con implicaciones religiosas serias si el usuario no verifica las referencias.
+- No se especifica la licencia, por lo que el uso comercial queda sin marco legal claro y no puede recomendarse sin consultar al autor.
+- No se declaran idiomas soportados; la model card está en inglés y no hay evidencia de calidad en árabe u otras lenguas.
+- No se documentan parámetros totales, dataset de entrenamiento ni proceso de alineación, lo que impide evaluar sesgos conocidos o la calidad del ajuste fino.
+- El contexto está limitado a 8192 tokens según la configuración de ejemplo; conversaciones muy largas requerirán truncamiento o resumen.
+- El modelo se distribuye solo en Q4_K_M, sin versiones de mayor precisión (FP16, Q8_0) que permitan evaluar la pérdida por cuantización.
+- La model card contiene avisos internos (por ejemplo, "Readme.md is down") que indican un estado de documentación incompleto y un proyecto en desarrollo activo.
 
 ## Enlaces
+
 - Hugging Face: https://huggingface.co/alpha-coder-great/al-rasheed-ai
-- Sitio web oficial del proyecto: https://mkaramrashid2012-code.github.io/Al-Rasheed-AI/
+- Sitio oficial del proyecto y descarga de la app: https://mkaramrashid2012-code.github.io/Al-Rasheed-AI/

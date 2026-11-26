@@ -5,7 +5,7 @@
   "author": "LoganResearch",
   "url": "https://huggingface.co/LoganResearch/Qwen-0.5-Proprioceptive-ToolMaster",
   "created_at": "2026-11-02T02:28:46.000Z",
-  "updated_at": "2026-11-02T07:44:18.000Z",
+  "updated_at": "2026-11-25T09:21:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 973,
+  "downloads_30d": 979,
   "trending_score": 0,
   "parameters": 494668039,
   "parameters_human": "494.7M",

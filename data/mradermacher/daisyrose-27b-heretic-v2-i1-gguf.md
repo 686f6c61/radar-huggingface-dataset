@@ -2,50 +2,50 @@
 
 ## Resumen
 
-DaisyRose-27B-Heretic-v2-i1-GGUF es una cuantizacion en formato GGUF del modelo kelsey1337/DaisyRose-27B-Heretic-v2, publicada por mradermacher. Se trata de una variante "abliterated" (tambien etiquetada como "uncensored" y "heretic") de un modelo de aproximadamente 26.900 millones de parametros, derivada de la familia Qwen (la etiqueta del repositorio indica "qwen3.8"). El trabajo de mradermacher consiste en generar cuantizaciones ponderadas con fichero imatrix para facilitar la inferencia en hardware de consumo mediante llama.cpp y herramientas compatibles.
+DaisyRose-27B-Heretic-v2-i1-GGUF es una cuantizacion en formato GGUF del modelo kelsey1337/DaisyRose-27B-Heretic-v2, publicada por el usuario mradermacher. Se trata de un modelo de lenguaje de aproximadamente 26.900 millones de parametros (26.895.998.464 segun los pesos en safetensors del modelo base), derivado de la familia Qwen (la etiqueta "qwen3.8" aparece en los metadatos) y sometido a un proceso de "abliteration" o "heretic" que elimina o reduce los mecanismos de rechazo y censura del modelo original. El resultado es un modelo "uncensored" orientado a conversacion, sin las restricciones tipicas de alineamiento de los modelos comerciales.
 
-El modelo base resuelve el problema de ofrecer una version sin los mecanismos de rechazo habituales (refusals) del modelo original, orientada a usos conversacionales donde el filtrado previo resulta limitante. La model card del repositorio de cuantizacion es escueta y remite al modelo original para detalles de entrenamiento, por lo que buena parte de las especificaciones de arquitectura y datos de entrenamiento no estan documentadas en la informacion disponible.
+La relevancia de esta publicacion es practica: mradermacher ofrece un conjunto amplio de cuantizaciones con imatrix (importancia ponderada) que van desde IQ1_S (7,8 GB) hasta Q6_K (22,2 GB), lo que permite ejecutar un modelo de 27B en hardware de consumo con perdidas de calidad controladas. La model card indica que el modelo base es de tipo vision, por lo que los ficheros mmproj (proyeccion multimodal), si existen, se alojan en el repositorio estatico complementario.
 
-La relevancia de esta publicacion es practica: pone a disposicion un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K, ademas de tipos Q4_0 y Q4_1) de un modelo de ~27B, lo que permite desplegarlo en GPU de consumo con VRAM limitada. La licencia declarada es Apache 2.0 y el unico idioma soportado segun la model card es el ingles.
+El modelo esta pensado para desarrolladores que necesitan un LLM conversacional de gran tamano, sin filtros de contenido, ejecutable localmente mediante llama.cpp u Ollama. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque conviene verificar las condiciones del modelo base original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen, segun etiqueta "qwen3.8"); detalles no disponibles |
+| Arquitectura | Transformer (derivada de Qwen, segun etiqueta "qwen3.8"); no se detalla la variante exacta |
 | Parametros totales | 26.895.998.464 (~26,9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small), Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones ponderadas con imatrix) |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones); fichero imatrix incluido; modelo base en safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su adscripcion a la familia Qwen (etiqueta "qwen3.8") y su naturaleza transformer. El repositorio de cuantizacion no incluye datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. La unica innovacion tecnica documentada en esta publicacion es el uso de cuantizacion ponderada con fichero imatrix, que mejora la calidad de las cuantizaciones de baja precision frente a las estaticas.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Los metadatos lo etiquetan como "qwen3.8" y como modelo de la familia DaisyRose, con un proceso de "heretic"/"abliterated" aplicado sobre el modelo original. La abliteration es una tecnica que identifica y neutraliza las direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo deja de negarse a responder a ciertos contenidos. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-El rasgo distintivo del modelo base es su caracter "abliterated" o "heretic": se ha modificado el modelo para eliminar los comportamientos de rechazo, lo que afecta a su comportamiento conversacional pero no cambia su arquitectura subyacente. El repositorio de mradermacher incluye ademas la nota de que el modelo es de vision y que los ficheros mmproj, si existen, se encuentran en el repositorio de cuantizaciones estaticas (DaisyRose-27B-Heretic-v2-GGUF), no en este.
+La contribucion tecnica de esta publicacion concreta es la cuantizacion con imatrix (importance matrix), que calcula la importancia de cada tensor a partir de un corpus de calibracion y permite obtener cuantizaciones de baja precision (IQ1, IQ2, IQ3) con mejor relacion calidad/tamano que las cuantizaciones estaticas equivalentes. La model card incluye graficos comparativos de perplejidad de ikawrakow y referencias a las notas de Artefact2 sobre tipos de cuantizacion.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno (pipeline "conversational").
-- Comportamiento sin rechazos (uncensored/abliterated): responde a peticiones que el modelo original rechazaria.
-- Posible soporte de vision segun la nota de la model card, con ficheros mmproj alojados en el repositorio estatico; no confirmado en este repositorio.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
-- Soporte de tool calling / function calling: no disponible en la informacion.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Modo thinking: no disponible en la informacion.
+- Generacion de texto conversacional multi-turno, orientada a dialogos sin restricciones de contenido.
+- Modelo "uncensored"/abliterated: no aplica los rechazos tipicos de los modelos alineados.
+- Capacidad de vision segun la model card (el modelo base es de tipo vision); los ficheros mmproj se distribuyen en el repositorio estatico complementario.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: limitadas al ingles segun los metadatos (language: en).
+- Capacidades especiales (thinking mode, audio): no disponibles.
 
 ## Casos de uso
 
-- Despliegue local en GPU de consumo: las cuantizaciones Q4_K_M o IQ4_XS de un modelo de ~27B permiten ejecucion en tarjetas con 16-24 GB de VRAM mediante llama.cpp u Ollama, sin depender de APIs externas.
-- Investigacion sobre alineamiento y seguridad: el caracter abliterated permite estudiar el comportamiento del modelo ante prompts que el original rechaza, util para analisis de robustez y evaluacion de filtros.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o contenido narrativo donde los rechazos del modelo base interrumpen el flujo, con contexto conversacional multi-turno.
-- Prototipado de asistentes conversacionales: integracion en aplicaciones de chat mediante el formato GGUF y servidores compatibles (llama.cpp server, Ollama), aprovechando la etiqueta "endpoints_compatible".
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece un rango amplio de tipos (de IQ1_S a Q6_K) que permite medir el impacto de la precision en la calidad de salida sobre el mismo modelo base.
-- Analisis de sesgos y comportamiento en ingles: al ser un modelo solo en ingles, sirve para experimentos controlados de evaluacion de sesgos en ese idioma sin variabilidad multilingue.
+- Ejecucion local de un LLM de 27B en hardware de consumo: con la cuantizacion i1-Q4_K_M (16,8 GB) el modelo cabe en GPUs con 24 GB de VRAM, como la RTX 4090, o en configuraciones con RAM del sistema mediante llama.cpp.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar el comportamiento de un LLM abliterated frente a uno alineado, comparando tasas de rechazo y respuestas en dominios sensibles.
+- Generacion creativa sin filtros: escritura de ficcion, guiones o contenido narrativo donde los modelos censurados suelen rechazar o suavizar temas adultos.
+- Prototipado de asistentes conversacionales en ingles: su naturaleza conversacional y su contexto (no especificado) permiten construir chatbots de dominio cerrado sin depender de APIs externas.
+- Fine-tuning sobre la base cuantizada: los ficheros GGUF de mayor precision (Q6_K, 22,2 GB) sirven como referencia para evaluar la degradacion introducida por cuantizaciones mas agresivas antes de desplegar en produccion.
+- Analisis de imagenes (si se usa el mmproj del repositorio estatico): tareas de descripcion o interpretacion visual en local, aunque la informacion sobre esta capacidad es limitada.
+- Despliegue en entornos air-gapped: al ser un modelo local con licencia Apache 2.0, puede ejecutarse en infraestructura sin conexion a internet, util en entornos con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
@@ -53,33 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Las variantes de ~4 bits (Q4_K_M, IQ4_XS) de un modelo de ~27B ocupan del orden de 15-17 GB, lo que exige GPU de 16 GB o mas; las variantes Q5 y Q6 superan los 18-20 GB.
-- Las cuantizaciones de 2-3 bits (IQ2_*, Q3_K_*) permiten ajustar en GPUs de 8-12 GB con perdida de calidad.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4/Q5 comodamente; RTX 3090 (24 GB) equivalente; A100/H100 para despliegues de mayor throughput; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) para cuantizaciones de 4 bits.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones de 4-5 bits; en GPUs de 12 GB solo con cuantizaciones de 2-3 bits.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el repositorio indica compatibilidad con endpoints.
-- Latencia y throughput: no disponibles en la informacion.
+- VRAM estimada segun cuantizacion: IQ1_S ~7,8 GB; IQ2_M ~10,5 GB; IQ3_M ~12,9 GB; IQ4_XS ~15,4 GB; Q4_K_M ~16,8 GB; Q5_K_M ~19,4 GB; Q6_K ~22,2 GB. Hay que anadir overhead de contexto KV cache.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_M; A100/H100 (40-80 GB) para Q6_K con contexto largo; GPUs de 12-16 GB solo con cuantizaciones IQ2/IQ3.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M y en GPUs de 16 GB con IQ3_M o IQ4_XS.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| DaisyRose-27B-Heretic-v2-i1-GGUF | ~26,9B | no disponible | Apache 2.0 | GGUF (i1) | Cuantizacion imatrix, uncensored, ingles |
+| DaisyRose-27B-Heretic-v2 (base) | ~26,9B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar, vision |
+| DaisyRose-27B-Heretic-v2-GGUF (estatico) | ~26,9B | no disponible | Apache 2.0 | GGUF (estatico) | Cuantizaciones sin imatrix, incluye mmproj |
+
+No se dispone de datos de rendimiento para comparar con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated"/"uncensored": eliminacion deliberada de rechazos, con riesgo de generar contenido inapropiado, danino o ilegal; requiere filtrado y supervision en produccion.
-- Solo soporta ingles segun la model card; el rendimiento en castellano no esta garantizado.
-- Riesgo de alucinacion: no documentado, pero inherente a los modelos de lenguaje de esta escala.
-- Sesgos conocidos: no documentados en la informacion disponible; la ausencia de datos de entrenamiento impide evaluarlos.
-- Licencia Apache 2.0 declarada, que permite uso comercial; sin embargo, la procedencia y las condiciones del modelo base (kelsey1337/DaisyRose-27B-Heretic-v2) deberian verificarse de forma independiente antes de un uso comercial.
-- La model card del repositorio de cuantizacion es minima y remite al modelo original para detalles; no hay garantias documentadas sobre contexto, arquitectura exacta ni calidad de las cuantizaciones de muy baja precision.
-- El soporte de vision no esta confirmado en este repositorio; los ficheros mmproj, si existen, estan en el repositorio estatico.
+- Modelo abliterated/uncensored: no aplica los rechazos de seguridad habituales, por lo que puede generar contenido danino, ilegal o sensible sin advertir. No es apto para despliegues publicos sin moderacion externa.
+- Riesgo de alucinacion: como cualquier LLM de su tamano, puede inventar hechos, citas o referencias; la ausencia de benchmarks impide cuantificar su fiabilidad.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto no documentada: no se puede planificar el uso en tareas de contexto largo sin verificacion empirica.
+- Calidad de las cuantizaciones bajas: IQ1 e IQ2 degradan notablemente la calidad; la propia model card advierte "for the desperate" en IQ1_S.
+- Licencia: Apache 2.0 declarada, pero conviene revisar las condiciones del modelo base original (kelsey1337/DaisyRose-27B-Heretic-v2) y de la familia Qwen subyacente antes de uso comercial.
+- Capacidad de vision no confirmada en este repositorio: los ficheros mmproj estan en el repositorio estatico, no en este.
+- Sin datos de benchmarks ni evaluaciones independientes: no se puede recomendar para produccion sin una evaluacion propia.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-i1-GGUF
 - Modelo base: https://huggingface.co/kelsey1337/DaisyRose-27B-Heretic-v2
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#DaisyRose-27B-Heretic-v2-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-GGUF
+- Pagina de descarga del autor: https://hf.tst.eu/model#DaisyRose-27B-Heretic-v2-i1-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico de perplejidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -2,107 +2,109 @@
 
 ## Resumen
 
-imajev-2b es la variante mas pequena de la familia imajev, desarrollada por el usuario mohit67890. Se trata de un adaptador LoRA (libreria PEFT) montado sobre el modelo vision-lenguaje Qwen/Qwen3.5-2B, orientado a un caso de uso muy concreto: tomar decisiones tipadas ("typed decisions") a partir de imagenes y datos estructurados, devolviendo para cada opcion una probabilidad calibrada y una clase explicita de "no lo se" (`unknown`). El modelo no genera texto libre, sino que clasifica entre las opciones que define la aplicacion.
+imajev-2b es un adaptador LoRA publicado por Mohit Garg (usuario `mohit67890`) sobre el modelo base Qwen/Qwen3.5-2B, orientado a la toma de decisiones tipificadas ("typed decisions") en entornos empresariales. A diferencia de un modelo conversacional al uso, el sistema devuelve una etiqueta escogida entre un conjunto de opciones predefinido por la aplicacion, acompanada de una probabilidad calibrada y de una opcion explicita de "no puedo determinarlo" (*can't tell*). El objetivo es que un sistema automatico actue solo cuando la confianza es alta y derive el resto a una persona.
 
-Su propuesta diferencial es el contrato Jev: la aplicacion envia una peticion con imagenes y campos, y el modelo responde con la opcion elegida, una probabilidad y la posibilidad de abstenerse. Esto permite construir flujos en los que el sistema actua solo cuando esta seguro y deriva el resto a una persona. La familia incluye tambien los tamanos imajev-4b e imajev-9b.
+El modelo es multimodal en entrada (pipeline `image-text-to-text`): lee fotografias, registros y texto que la empresa ya posee y los contrasta con los campos declarados. El caso canonico que documenta el autor es la verificacion de un anuncio de venta: la ficha declara un color y la foto muestra otro, y el modelo identifica el campo discrepante con una probabilidad asociada.
 
-El modelo se distribuye bajo licencia Apache-2.0, solo soporta ingles y esta pensado para ejecutarse en local, bien con MLX en un Mac o con PyTorch en una unica GPU, de modo que las fotos y los datos de cliente no salgan de la red de la organizacion. Con 26 descargas y 2 likes en Hugging Face, es un proyecto de nicho y reciente (creado en septiembre de 2026).
+Se distribuye como adaptador PEFT (0,4 GB en el repositorio) bajo licencia Apache-2.0, con pesos en safetensors y soporte declarado para MLX. Forma parte de una familia de tres tamanos (2B, 4B y 9B); esta variante es la mas pequena y la mas conservadora segun el autor, y su adaptador no se actualizo cuando el tier de 4B paso a una nueva generacion el 26 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre un modelo vision-lenguaje basado en Qwen/Qwen3.5-2B |
-| Parametros totales | Aproximadamente 2.000 millones (modelo base Qwen3.5-2B); el adaptador LoRA es de pequeno tamano (repositorio de 0,4 GB) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (se distribuye como adaptador safetensors; la model card menciona ejecucion con MLX) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Adaptador LoRA (PEFT) sobre transformer multimodal Qwen/Qwen3.5-2B |
+| Parametros totales | 2B en el modelo base; el adaptador LoRA no declara recuento propio |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (adaptador LoRA PEFT) |
+| Formato de pesos | safetensors (adaptador PEFT); tag `mlx` |
+| Tamano del repositorio | 0,4 GB |
+| Pipeline | image-text-to-text |
+| Libreria | peft |
+| Descargas / likes | 253 / 4 |
 
 ## Arquitectura y entrenamiento
 
-imajev-2b no es un modelo completo, sino un adaptador LoRA entrenado sobre Qwen/Qwen3.5-2B. El pipeline declarado es "image-text-to-text", lo que confirma que el modelo base incorpora un componente de vision que procesa imagenes junto al texto. El adaptador anade la capa de decision tipada y calibracion de probabilidades, e incluye una clase `unknown` entrenada de forma explicita para que el sistema pueda abstenerse en lugar de adivinar. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
+El modelo no es un entrenamiento desde cero, sino un adaptador LoRA acoplado a Qwen/Qwen3.5-2B, un transformer de 2.000 millones de parametros con capacidad de procesamiento de imagen y texto. El adaptador anade la capa de comportamiento especifica del producto: la formulacion de la decision como seleccion entre opciones tipificadas, la emision de probabilidades calibradas y la clase de abstención entrenada. Los tags del repositorio indican soporte de ejecucion en MLX, lo que sugiere intencion de despliegue local en hardware Apple.
 
-Segun la model card, el adaptador se entreno sobre 72.000 decisiones del tipo "foto contra registro" y "dos fotos, una decision" (comparacion de una imagen de referencia con una imagen objetivo). La innovacion principal es el contrato de peticion y respuesta heredado de Jev (`POST /v1/systemone`), ampliado con los campos `images`, `unknown_probability` y `abstained`, que permite integrar el modelo como un servicio de decision dentro de una aplicacion mayor. La model card indica que el adaptador de 2B corresponde a la generacion anterior: el 26 de septiembre de 2026 la familia actualizo el tamano de 4B a un adaptador nuevo, mientras que este 2B permanece sin cambios.
+La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. El autor menciona un benchmark propio, ImajevBench, y referencia una evaluacion sobre el tier de 4B con una fase 3 de entrenamiento, pero no se aportan datos equivalentes para este adaptador de 2B, que queda descrito como generacion anterior y sin entrada oficial en el tablon de texto.
 
 ## Capacidades
 
-- Decision tipada con probabilidades calibradas: devuelve, para cada opcion definida por la aplicacion, una probabilidad asociada.
-- Absteccion entrenada: incluye una clase `unknown` con probabilidad propia, de modo que el sistema puede detenerse en lugar de forzar una respuesta.
-- Vision aplicada a verificacion: compara una foto contra los campos de un registro propio y senala el campo incorrecto.
-- Comparacion entre dos imagenes: recibe una imagen de referencia y una imagen objetivo en la misma peticion (por ejemplo, producto enviado frente a producto devuelto, o pieza patron frente a pieza en linea).
-- Integracion mediante contrato Jev: la peticion y la respuesta siguen el esquema `POST /v1/systemone`, con campos adicionales para imagenes y absteccion.
-- Ejecucion local: soporta MLX en Mac y PyTorch en una unica GPU.
-- Multilingue: no, unicamente ingles.
-- Tool calling / function calling generico: no disponible (el modelo sigue el contrato de decision Jev, no un esquema general de herramientas).
-- Modo de razonamiento explicito (thinking): no disponible.
+- Clasificacion y decision tipificada: devuelve una de las opciones definidas por la aplicacion, no texto libre.
+- Probabilidad calibrada por opcion, pensada para fijar umbrales de automatizacion.
+- Abstención entrenada (*can't tell*) cuando la evidencia no permite decidir.
+- Verificacion cruzada entre imagen y registro declarado (por ejemplo, color de un producto frente a la foto del anuncio).
+- Comparacion de dos imagenes para emitir una unica decision.
+- Entrada multimodal: imagen y texto combinados en la misma peticion.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
+- Capacidad multilingue limitada al ingles segun el campo `language` de la model card.
 
 ## Casos de uso
 
-- Verificacion de listados en comercio electronico: el modelo contrasta la foto real de un producto con los campos del listado (por ejemplo, color o modelo) y senala el campo que no coincide, devolviendo alta probabilidad cuando esta seguro. La propia model card ilustra este caso con unas zapatillas beige frente a un campo "color" que indica rojo.
-- Control de calidad en linea de produccion: se compara una pieza de referencia (conocida como buena) con la pieza que sale de la linea, y el modelo decide si son equivalentes o no, derivando a un operario cuando la probabilidad es baja.
-- Gestion de devoluciones: comparacion entre el articulo enviado y el articulo devuelto para detectar discrepancias antes de aceptar el reembolso, con absteccion cuando la evidencia visual no es concluyente.
-- Verificacion documental en seguros: comprobacion de que las fotos aportadas en un siniestro coinciden con los datos declarados (vehiculo, matricula, estado), delegando a un gestor los casos con `unknown_probability` alta.
-- Triaje en logistica: validacion rapida de que el contenido de un paquete coincide con la foto de referencia del pedido, marcando los envios dudosos para inspeccion manual.
-- Asistencia a agentes en CRM: preclasificacion de casos a partir de imagenes de cliente y campos del historial, de forma que el agente reciba una sugerencia con su grado de confianza en lugar de una decision cerrada.
-- Auditoria interna y cumplimiento: revision repetible y local de registros frente a evidencias fotograficas, manteniendo los datos dentro de la red de la organizacion gracias al despliegue on-premise.
+- Verificacion de anuncios de marketplace: contrastar los campos declarados (color, modelo, estado) con las fotos subidas y bloquear automaticamente los anuncios con discrepancias de alta confianza, derivando el resto a revision humana.
+- Tramitacion de devoluciones y reembolsos: clasificar la solicitud en las categorias del sistema (procedente, improcedente, falta informacion) a partir del texto del cliente y de la foto del articulo recibido.
+- Enrutado de tickets de soporte: asignar cada incidencia a un equipo concreto usando un conjunto cerrado de destinos, con probabilidad asociada para decidir si se escala a un agente.
+- Revision documental en back-office: comprobar que los datos de un formulario coinciden con la imagen del documento adjunto y marcar el campo concreto que no cuadra.
+- Control de calidad en catalogo de producto: detectar fichas con atributos incoherentes respecto a la fotografia antes de publicarlas.
+- Triaje con derivacion humana: como el modelo declara explicitamente cuando no puede decidir, encaja en flujos donde el coste de un falso positivo es alto y se prefiere abstenerse.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para esta variante de 2B en la informacion disponible. La model card indica explicitamente que imajev-2b no tiene entrada oficial en las tablas de texto de la familia.
+No se han publicado resultados de benchmarks para imajev-2b en la informacion disponible. Las cifras que aparecen en la model card corresponden al tier de 4B de la familia y no son extrapolables a este adaptador:
 
-A modo de contexto, las clasificaciones y puntuaciones que aparecen en la model card corresponden al hermano mayor imajev-4b, no a este modelo. Se recogen aqui exclusivamente como referencia de la familia y no deben atribuirse a imajev-2b:
-
-| Benchmark | Resultado citado | Modelo al que corresponde |
+| Benchmark | Resultado del 4B (referencia, no del 2B) | Posicion |
 |---|---|---|
-| ImajevBench | 83,9 % | imajev-4b (fase 3, adaptador de septiembre de 2026) |
-| DecisionBench (eng, v1) | 79,65 (posicion 3 de 56) | imajev-4b |
-| JevBench hard | 72,1 % | imajev-4b |
-| JevBench v1.4.2.2 | 67,4 (maximo del ranking) | imajev-4b |
+| JevBench v1.4.2.2 | 67,4 | 1 de 91 |
+| Image JevBench v0.1.3 | 76,39 | 1 de 49 |
+| DecisionBench (eng, v1) | 79,65 | 3 de 56 |
+
+La model card indica expresamente que el 2B "no tiene entrada oficial en el tablon de texto".
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un adaptador sobre un modelo base de aproximadamente 2.000 millones de parametros, la huella en precision de 16 bits se situa en torno a 4-5 GB (pesos del modelo base mas el componente de vision y el adaptador), y en torno a 1,5-2,5 GB si se aplica cuantizacion de 4 bits. Estas cifras son estimaciones segun el tamano del modelo base, ya que la model card no publica requisitos concretos.
-- GPU recomendadas: no especificadas por el autor. Por tamano, el modelo es apto para GPU de consumo como RTX 3060 (12 GB), RTX 4070 o RTX 4090; tambien cabe en GPU de datacenter (A100, H100) aunque estaria infrautilizada.
-- Compatibilidad con GPU de consumo: si, previsiblemente en cualquier GPU con al menos 6-8 GB de VRAM en funcion de la cuantizacion y de la resolucion de las imagenes procesadas.
-- Opciones de despliegue: la model card menciona MLX (Mac) y PyTorch en una unica GPU. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI; al distribuirse como adaptador PEFT, su integracion depende de cargar primero el modelo base Qwen3.5-2B y aplicar despues el adaptador.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, un transformer de 2B en FP16 requiere aproximadamente 4-5 GB solo para pesos, mas overhead de activaciones y del procesador de vision; en cuantizacion de 8 bits o 4 bits baja a rangos de 2-3 GB y 1,5-2 GB respectivamente. Son estimaciones genericas, no cifras publicadas por el autor.
+- GPU recomendadas: no especificadas. Por tamano, cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090, asi como en A100/H100 para despliegues con concurrencia.
+- Cabe en GPU de consumo: si, previsiblemente, dado el tamano del modelo base.
+- Opciones de despliegue: la libreria declarada es PEFT, por lo que el adaptador se carga junto al modelo base con `transformers` + `peft`. El tag `mlx` apunta a ejecucion en Apple Silicon mediante MLX. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar con los otros tamanos de la propia familia y con algunos modelos citados en los rankings de la model card. No hay datos publicados para imajev-2b, por lo que la comparacion es orientativa.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imajev-2b | ~2B (base) | No disponible | Apache-2.0 | Hugging Face (26 descargas, 2 likes) | Adaptador LoRA, ingles, sin entrada en rankings |
-| imajev-4b | ~4B (base) | No disponible | Apache-2.0 | Hugging Face | Mejor tamano de la familia en ImajevBench; adaptador de fase 3 |
-| imajev-9b | ~9B (base) | No disponible | Apache-2.0 | Hugging Face | Tamano mayor de la familia |
-| bosun-v3.1-1.7b | ~1,7B | No disponible | No disponible | Hugging Face | Citado como lider en DecisionBench (eng, v1) |
-| decider-4b v2 | ~4B | No disponible | No disponible | No disponible | Tercero en JevBench v1.4.2.2 |
+| imajev-2b | 2B (base) + LoRA | no disponible | Decision tipificada multimodal con abstención | Apache-2.0 | Hugging Face |
+| imajev-4b | 4B (base) + LoRA | no disponible | Misma familia, tier superior y generacion mas reciente | Apache-2.0 | Hugging Face |
+| imajev-9b | 9B (base) + LoRA | no disponible | Misma familia, tier mayor | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B | 2B | no disponible | Modelo base multimodal de proposito general | no disponible en la informacion | Hugging Face |
+
+La comparacion con alternativas fuera de la familia (por ejemplo, clasificadores dedicados o modelos de decision de otros autores citados en los tablones como Plumb-4B o decider-4b) no puede establecerse con datos verificables para el 2B, ya que no figura en esos rankings.
 
 ## Limitaciones y advertencias
 
-- Idioma: unicamente ingles; no se declara soporte de castellano ni de otros idiomas.
-- Tamano reducido y comportamiento conservador: la model card describe imajev-2b como el tamano "mas cauto", que automatiza el menor numero de decisiones. Esto implica una mayor tasa de absteccion y menos cobertura automatica que sus hermanos mayores.
-- Generacion anterior: el adaptador de este 2B no se actualizo cuando la familia migro el tamano de 4B a un adaptador nuevo (26 de septiembre de 2026), por lo que se corresponde con una version previa.
-- Ausencia de benchmarks propios: no hay resultados publicados para esta variante; las clasificaciones de la model card pertenecen a imajev-4b.
-- Riesgo de alucinacion: aunque el modelo devuelve probabilidades calibradas y una clase `unknown`, no existe garantia de que las confianzas altas sean siempre correctas; conviene fijar umbrales y mantener supervision humana en decisiones criticas.
-- Dependencia del modelo base: es un adaptador PEFT, por lo que requiere cargar Qwen/Qwen3.5-2B y aplicar el adaptador despues; no funciona de forma autonoma.
-- Licencia: el adaptador es Apache-2.0, pero conviene verificar de forma independiente la licencia del modelo base Qwen3.5-2B antes de un uso comercial.
-- Sesgos: no se documenta ninguna evaluacion de sesgos ni de equidad en la informacion disponible.
-- Advertencia para produccion: los campos de probabilidad y absteccion deben calibrarse contra datos propios antes de definir umbrales de automatizacion, ya que el rendimiento depende en gran medida del dominio de las imagenes y de los registros concretos.
+- Solo ingles: el campo de idioma declara unicamente `en`, lo que limita su uso en castellano sin evaluacion previa.
+- Adaptador desactualizado: el autor indica que el tier de 4B recibio un nuevo adaptador el 26 de septiembre de 2026 y que este 2B "permanece como generacion anterior".
+- Sin benchmarks publicados para esta variante: las cifras de la model card pertenecen al 4B y no deben atribuirse al 2B.
+- Riesgo de calibracion deficiente: la utilidad del modelo depende de que las probabilidades esten bien calibradas en el dominio concreto; conviene validar los umbrales con datos propios antes de automatizar decisiones.
+- Riesgo de alucinacion en la seleccion de campo: aunque el formato de salida esta restringido a opciones, el modelo puede senalar el atributo equivocado como discrepante.
+- Ambito restringido: no es un modelo conversacional ni de proposito general; usarlo fuera del esquema de decision tipificada no esta soportado por el entrenamiento declarado.
+- Licencia Apache-2.0 permisiva para uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-2B, no detalladas en la informacion disponible.
+- Sin datos de contexto maximo ni de cuantizaciones soportadas, lo que dificulta planificar despliegues de produccion con documentos largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mohit67890/imajev-2b
-- Modelo hermano imajev-4b: https://huggingface.co/mohit67890/imajev-4b
-- Modelo hermano imajev-9b: https://huggingface.co/mohit67890/imajev-9b
-- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/mohit67890/imajev
-- Repositorio de codigo y resultados (GitHub): https://github.com/mohit67890/imajev
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/mohit67890/imajev
+- Repositorio en GitHub: https://github.com/mohit67890/imajev
 - Sitio web del proyecto: https://mohit67890.github.io/imajev/
 - Informe tecnico: https://mohit67890.github.io/imajev/report/
-- Dataset de evaluacion ImajevBench: https://huggingface.co/datasets/mohit67890/imajev-bench
-- Ranking JevBench: https://benchmarkheaven.com/jev-models
-- Ranking DecisionBench: https://huggingface.co/spaces/Hanno-Labs/decision-bench-leaderboard
+- Dataset de benchmark ImajevBench: https://huggingface.co/datasets/mohit67890/imajev-bench
+- Tablon JevBench: https://benchmarkheaven.com/jev-models
+- Tablon Image JevBench: https://benchmarkheaven.com/image-jev-bench
+- Tablon DecisionBench: https://huggingface.co/spaces/Hanno-Labs/decision-bench-leaderboard
+- Tier 4B de la familia: https://huggingface.co/mohit67890/imajev-4b
+- Tier 9B de la familia: https://huggingface.co/mohit67890/imajev-9b
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Contacto del autor: https://mohitgarg.ai

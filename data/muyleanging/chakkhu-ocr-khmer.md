@@ -1,111 +1,120 @@
 # muyleanging/Chakkhu-OCR-Khmer
 
 ## Resumen
+Chakkhu-OCR-Khmer (ចក្ខុ, "ojo" en jemer) es un modelo de reconocimiento óptico de caracteres especializado en líneas de texto en jemer e inglés, desarrollado por Ing Muyleang (usuario muyleanging). Resuelve el problema del OCR en jemer, un idioma con escritura compleja basada en clústeres de letras (con subíndices y vocales dibujadas a la izquierda) que los motores genéricos como Tesseract manejan con tasas de error superiores al 20%. El modelo es deliberadamente compacto, con 18,56 millones de parámetros, lo que permite inferencia en CPU a unos 140 ms por línea.
 
-Chakkhu-OCR-Khmer es un modelo de reconocimiento óptico de caracteres (OCR) especializado en líneas de texto en jemer (khmer) e inglés, desarrollado por Ing Muyleang bajo el identificador `muyleanging`. El modelo resuelve el problema de la transcripción de texto jemer en imágenes de documentos, escaneos, fotografías de móvil, capturas de pantalla y carteles, un dominio donde los motores OCR genéricos como Tesseract rinden de forma muy deficiente debido a la complejidad del sistema de escritura jemer (clústeres de consonantes, vocales dibujadas a la izquierda, subíndices).
+La arquitectura es un transformer con decodificación CTC que emite clústeres completos de letras jemer como una sola unidad, garantizando que los subíndices y vocales aparezcan en el orden mecanografiado correcto. Se acompaña de un verificador ortográfico de palabras en jemer (basado en un modelo de lenguaje de clústeres, sin red neuronal adicional) que corrige las hipótesis del lector y revalida cada corrección contra la imagen. El modelo reporta una tasa de error de caracteres (CER) del 3,60% en el benchmark KHOB completo (4.018 líneas reales nunca vistas en entrenamiento), con una confianza calibrada por línea.
 
-Con solo 18,56 millones de parámetros y un peso de repositorio de 0,2 GB, está diseñado para ejecutarse en CPU de portátil (unos 140 ms por línea) y en GPU (unos 20 ms por línea). Incorpora una salida de confianza por línea (0-1) que permite enrutar selectivamente las líneas dudosas a revisión humana o a un modelo mayor. Se distribuye con licencia Apache 2.0 y soporta jemer e inglés.
-
-El modelo es relevante porque combina una arquitectura híbrida CNN-Transformer con doble cabecera (CTC y decodificador autorregresivo) y un esquema de puntuación conjunto que mejora la robustez frente a errores típicos del jemer, como vocales omitidas o palabras repetidas. Declara un CER del 4,50 % en el benchmark KHOB completo (4.018 líneas reales), frente al 5,87 % de Netra-OCR y el 20,55 % de Tesseract 5.
+La relevancia actual radica en su licencia Apache 2.0 y en que se ha entrenado exclusivamente con datos cuya licencia permite cualquier uso, a diferencia de alternativas más precisas como Anaksor-OCR, que incluyen datos sin licencia o de solo investigación. Esto lo hace apto para despliegue comercial en digitalización de documentos, lectura de carteles y procesamiento de formularios en jemer.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida CNN (bloques ResNet) + Transformer (6 capas, d=320) con cabecera CTC y decodificador autorregresivo de 3 capas |
+| Arquitectura | Transformer con decodificación CTC |
 | Parámetros totales | 18.562.218 |
 | Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa una línea de imagen de 64 px de alto y ancho variable) |
-| Tipos de cuantización | no disponible |
+| Longitud de contexto | no disponible (modelo de línea de texto, no de secuencia larga) |
+| Tipos de cuantización | ONNX int8 disponible (39 MB); pesos PyTorch en safetensors |
 | Idiomas soportados | jemer (km), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería pytorch) |
+| Formato de pesos | safetensors (PyTorch), ONNX int8 |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer con cabeza de decodificación CTC (Connectionist Temporal Classification) orientado a reconocimiento de líneas de texto. La innovación principal es que emite clústeres completos de letras jemer como un único paso de decodificación (por ejemplo, ស្ត្រី se genera en un solo paso), lo que preserva el orden tipográfico correcto de subíndices y vocales dibujadas a la izquierda, un problema recurrente en OCR jemer. El modelo incorpora una puntuación de confianza (0–1) por línea para facilitar la revisión humana selectiva.
 
-La arquitectura procesa una imagen de línea en escala de grises de 64 px de alto. Un extractor CNN con bloques ResNet reduce la representación a 2 filas por W/8 columnas. Sobre esa secuencia actúa un Transformer de 6 capas con dimensión 320 que ve la línea completa. A partir de ahí el modelo tiene dos cabeceras: una CTC que emite por columna un clúster o un token en blanco (borrador rápido y recuento de letras), y un decodificador de 3 capas que escribe un clúster jemer por paso y que fue preentrenado como modelo de lenguaje sobre texto jemer.
-
-La decodificación combina ambas cabeceras: el decodificador genera sus 4 mejores hipótesis mediante beam search, se añade el borrador CTC y cada hipótesis se puntúa con `0.5 · CTC + 0.5 · decodificador`. La confianza por línea se calcula como el acuerdo entre ambas cabeceras multiplicado por la certeza de las columnas CTC. El vocabulario tiene 3.402 tokens (clústeres jemer, latinos, dígitos y puntuación), con retroceso a caracteres individuales para clústeres raros. El entrenamiento total fue de unas 5 horas en una GPU, en dos ejecuciones: una desde cero y una continuación de 1 hora con datos de documentos antiguos. Aproximadamente la mitad de las líneas de entrenamiento fueron sintéticas, generadas a partir de frases jemer del proyecto Akkhara y de Wikipedia en jemer (CC BY-SA 4.0), con 35 fuentes abiertas y 9 estilos de imagen (documento, escaneo, compresión de Messenger, captura de pantalla, foto, nocturna, etc.). Se incluyeron 2.311 líneas reales de escritura manuscrita. No se detalla en la información disponible el uso de RLHF o DPO.
+El entrenamiento se realizó exclusivamente con datos cuya licencia permite cualquier uso, según declara el autor. La versión full6 añadió tres horas adicionales de entrenamiento con carteles en inglés, líneas de correo electrónico, web y teléfono, códigos de referencia jemer (លេខ : ១១៤ / ២១ សជណ.អ) y letras visualmente similares entre jemer y latín. No se especifica el número total de tokens ni la composición exacta del dataset. El verificador ortográfico se construye a partir del texto limpio de entrenamiento como un modelo de lenguaje de clústeres de letras que opera en CPU sin modelo adicional, y cada corrección propuesta se revalida contra la imagen.
 
 ## Capacidades
-
-- Reconocimiento de texto en líneas de imagen en jemer e inglés, incluyendo documentos limpios, escaneos, fotos de móvil, capturas de pantalla y carteles.
-- Salida de confianza por línea (0-1) para priorizar revisión humana.
-- Escritura de clústeres completos de letras jemer (por ejemplo, ស្ត្រី como un solo paso), respetando el orden tipográfico de subíndices y vocales dibujadas a la izquierda.
-- Modo rápido con solo la cabecera CTC (`beam=0`).
-- Procesamiento por línea individual; el demo asociado incluye un localizador de líneas para páginas completas.
-- API gratuita vía Gradio Client para lectura de páginas completas con cajas delimitadoras por línea.
-- Ejecución en CPU y GPU.
-- No se documenta soporte de tool calling, agentes, visión general (más allá de OCR), audio ni modo de razonamiento.
+- Reconocimiento de líneas de texto en jemer e inglés desde documentos, páginas impresas antiguas, mecanografiados, escaneos, fotos de móvil, capturas de pantalla, imágenes de chat y carteles.
+- Escritura de clústeres completos de letras jemer en orden tipográfico correcto (subíndices y vocales izquierdas).
+- Verificación ortográfica integrada en jemer mediante un modelo de lenguaje de clústeres que propone correcciones y las revalida contra la imagen.
+- Puntuación de confianza (0–1) por línea para decidir qué líneas requieren revisión humana.
+- Procesamiento de documentos completos: PDF o foto a Word, y tablas a Excel/CSV con números tratados como números.
+- Reconocimiento de líneas mixtas jemer-inglés (por ejemplo, វគ្គ English for Kids ម៉ោង 3PM).
+- Reconocimiento de correos electrónicos, URLs, teléfonos y códigos de referencia jemer.
+- Modo "Photo" para fotos de calle completas: localización del texto y lectura posterior.
+- No se menciona soporte de tool calling, function calling ni razonamiento multi-paso; es un modelo OCR puro de imagen a texto.
 
 ## Casos de uso
-
-- Digitalización de documentos administrativos históricos: el modelo logra un CER del 2,09 % en decretos reales camboyanos de 1993-2003 (impresión antigua, máquina de escribir, transparencias), por lo que es adecuado para pipelines de archivo y preservación documental.
-- Procesamiento de capturas de pantalla y mensajes comprimidos: con un CER del 2,85 % en imágenes enviadas por Messenger, sirve para extraer texto de conversaciones y capturas de aplicaciones de mensajería.
-- Escaneo de documentos en producción: con CER del 2,43 % en escaneos y 3,27 % en fotos escaneadas con móvil, puede integrarse en flujos de digitalización de facturas, formularios y contratos en jemer.
-- Revisión asistida por confianza: la puntuación por línea permite derivar solo las líneas de baja confianza (el 10 % menos seguro concentra el 9 % de errores) a revisores humanos, reduciendo el coste de validación.
-- OCR en dispositivos sin GPU: al ejecutarse en CPU a ~140 ms por línea, es viable en portátiles, entornos de oficina o servidores sin acelerador para digitalización por lotes.
-- Extracción de texto de carteles y señalética diurna: con CER del 6,41 % en carteles callejeros de día, puede emplearse en aplicaciones de accesibilidad o traducción de señalética.
-- Procesamiento de líneas cortas: con CER del 8,73 % en líneas de 10 caracteres o menos, es útil para etiquetas, titulares y campos breves donde Tesseract falla gravemente (51,8 %).
+- Digitalización de documentos administrativos jemer: el modelo convierte PDF o fotos de páginas en Word, con confianza por línea para que un operador revise solo las líneas dudosas; su CER del 1,70% en documentos limpios lo hace adecuado para archivística.
+- Extracción de tablas a Excel/CSV: procesa tablas con números como números, útil para digitalizar inventarios, facturas y registros contables en jemer sin transcripción manual.
+- Lectura de carteles y señalización urbana: el modo Photo localiza y lee texto en fotos de calle completas (22,1% CER en 120 fotos de calle de KHOB), adecuado para aplicaciones de accesibilidad o mapas.
+- Procesamiento de capturas de chat y Messenger: con un CER del 2,11% en líneas enviadas por Messenger, sirve para extraer pedidos, direcciones y datos de conversaciones comerciales.
+- Reconocimiento de contactos y códigos en formularios: con un 94% de líneas completamente correctas en correos, webs y teléfonos dibujados con fuentes no vistas, es apto para digitalizar tarjetas de visita y formularios de registro.
+- Despliegue en dispositivos sin GPU: con 18,6M de parámetros, ~140 ms por línea en CPU de portátil y una versión ONNX int8 de 39 MB, puede ejecutarse en entornos de borde, portátiles de campo o servidores sin acelerador.
+- Revisión asistida de documentos históricos mecanografiados: la confianza por línea y el verificador ortográfico permiten priorizar la corrección humana en archivos gubernamentales antiguos.
 
 ## Benchmarks y rendimiento
+Resultados declarados por el autor en el benchmark KHOB (4.018 líneas reales, nunca vistas en entrenamiento):
 
-Resultados declarados por el autor (no verificados) en el benchmark KHOB (4.018 líneas):
-
-| Modelo | CER (%) ↓ | Líneas totalmente correctas (%) ↑ |
-|---|---|---|
-| Tesseract 5 (khm+eng, mejor) | 20,55 | 16,5 |
-| Netra-OCR | 5,87 | 56,9 |
-| Chakkhu-OCR-Khmer | 4,50 | 58,8 |
+| Modelo | Datos de entrenamiento | CER (%) ↓ | Líneas totalmente correctas (%) ↑ |
+|---|---|---|---|
+| Tesseract 5 (khm+eng, mejor) | — | 20,55 | 16,5 |
+| Netra-OCR | incluye datos solo investigación | 5,87 | 56,9 |
+| Chakkhu full5 + verificador (versión anterior) | solo licencias limpias | 3,58 | 64,7 |
+| Chakkhu full6 (solo lector) | solo licencias limpias | 3,89 | 61,0 |
+| Chakkhu full6 + verificador | solo licencias limpias | 3,60 | 65,1 |
+| Anaksor-OCR (rec-v4) | incluye datos sin licencia | 2,39 | 72,1 |
 
 Desglose por tipo de imagen (CER %):
 
-| Tarea KHOB | Tesseract 5 | Netra-OCR | Chakkhu |
-|---|---|---|---|
-| Documento limpio | 12,8 | 5,02 | 2,26 |
-| Enviado por Messenger | 14,0 | 6,16 | 2,85 |
-| Escaneado | 13,8 | 4,55 | 2,43 |
-| Escaneado con móvil | 19,1 | 4,13 | 3,27 |
-| Calle, día | 31,8 | 5,78 | 6,41 |
-| Calle, noche | 35,3 | 10,64 | 11,17 |
-| Líneas cortas (≤ 10 caracteres) | 51,8 | 22,41 | 8,73 |
-| Solo inglés/números | 40,8 | 21,95 | 24,58 |
+| Tarea KHOB | Netra-OCR | full5 + verificador | full6 | full6 + verificador | Anaksor-OCR |
+|---|---|---|---|---|---|
+| Documento limpio | 5,02 | 1,75 | 2,01 | 1,70 | 1,13 |
+| Enviado por Messenger | 6,16 | 2,14 | 2,47 | 2,11 | 1,38 |
+| Escaneado | 4,55 | 2,02 | 2,28 | 2,02 | 1,32 |
+| Escaneado con móvil | 4,13 | 2,42 | 3,08 | 2,54 | 1,45 |
+| Calle, día | 5,78 | 4,25 | 4,62 | 4,39 | 2,15 |
+| Calle, noche | 10,64 | 10,23 | 10,11 | 10,17 | 7,95 |
+| Líneas cortas (≤10 caracteres, 455 líneas) | — | 8,42 | 8,25 | 7,88 | — |
+| Solo inglés/números (474 líneas) | — | 18,72 | 18,72 | 18,35 | — |
 
-Documentos gubernamentales antiguos (12 páginas reservadas, 238 líneas): CER del 2,09 % y 66,8 % de líneas totalmente correctas (frente al 3,62 % y 51,7 % de la versión anterior).
+Prueba adicional con 200 líneas dibujadas con fuentes del sistema Mac no vistas en entrenamiento (líneas totalmente correctas):
+
+| Tipo de línea | full5 (%) | full6 (%) |
+|---|---|---|
+| Carteles en inglés | 88 | 88 |
+| Correo/web/teléfono | 86 | 94 |
+| Códigos de referencia jemer | 100 | 98 |
+| Jemer + inglés en una línea | 92 | 92 |
+| Total 200 líneas | 91,5 | 93,0 |
+
+En fotos de calle completas (modo Photo, 120 fotos de KHOB): 22,1% de errores de carácter y 91,8% de líneas localizadas. Latencia declarada: ~140 ms por línea en CPU de portátil y ~20 ms en GPU.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible de forma explícita; con 18,56 M de parámetros en precisión completa el peso ronda los 75 MB, por lo que cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con suficiente memoria para el modelo y el lote de líneas; el autor cita ejecución en GPU a ~20 ms por línea sin especificar modelo.
-- Cabe en GPU consumer: sí, por tamaño (18,56 M de parámetros) y por el peso del repositorio (0,2 GB).
-- Ejecución en CPU: soportada, ~140 ms por línea en CPU de portátil.
-- Opciones de despliegue: carga directa con PyTorch mediante la función `load` del paquete incluido en el repositorio; API vía Gradio Client contra el Space `INGMUYLEANG/Chakkhu-OCR-Demo`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ~140 ms por línea en CPU de portátil y ~20 ms por línea en GPU (datos del autor).
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 dado el tamaño de 18,6M de parámetros; la versión ONNX int8 ocupa 39 MB en disco.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; el autor reporta ~20 ms por línea en GPU, sin especificar modelo.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Despliegue: PyTorch (librería declarada), ONNX Runtime para la versión int8 sin dependencia de PyTorch, y API gratuita en el Space del autor. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo OCR de este tamaño).
+- Latencia y throughput: ~140 ms por línea en CPU de portátil y ~20 ms por línea en GPU, según el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | CER KHOB (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chakkhu-OCR-Khmer | 18,56 M | no disponible | 4,50 | Apache 2.0 | Hugging Face |
+| Chakkhu-OCR-Khmer (full6 + verificador) | 18,56M | no disponible | 3,60 | Apache 2.0 | Hugging Face, ONNX, demo y API |
 | Netra-OCR | no disponible | no disponible | 5,87 | no disponible | no disponible |
-| Tesseract 5 (khm+eng) | no disponible | no disponible | 20,55 | Apache 2.0 | Motor OCR clásico |
+| Anaksor-OCR (rec-v4) | no disponible | no disponible | 2,39 | no disponible (entrenado con datos sin licencia) | Hugging Face (Sokheng/anaksor-ocr) |
+| Tesseract 5 (khm+eng) | no disponible | no disponible | 20,55 | Apache 2.0 | Código abierto |
+
+Chakkhu destaca por su licencia permisiva y por entrenarse solo con datos de licencia limpia, a costa de una precisión inferior a Anaksor-OCR, que lidera el benchmark pero emplea datos sin licencia o de solo investigación.
 
 ## Limitaciones y advertencias
-
-- Rendimiento más débil en carteles callejeros con fuentes decorativas y fotos nocturnas: CER del 6,41 % y 11,17 % respectivamente, por debajo de Netra-OCR en esos casos.
-- Peor rendimiento en líneas solo en inglés o con números: CER del 24,58 %, superior al 21,95 % de Netra-OCR.
-- La escritura manuscrita está presente en el entrenamiento (2.311 líneas reales) pero no se ha medido su precisión.
-- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false` en el model-index).
-- Las etiquetas del conjunto de decretos antiguos se basan en la lectura de Gemini conservada donde coincidía con Chakkhu, lo que puede introducir sesgo de confirmación en esa métrica.
-- Riesgo de alucinación no cuantificado; el modelo incluye confianza por línea para mitigar la propagación de errores en producción.
-- Soporte limitado a jemer e inglés; no se documentan otros idiomas.
-- Licencia Apache 2.0 permite uso comercial, pero no se especifican restricciones adicionales sobre los datos de entrenamiento (Wikipedia CC BY-SA 4.0 y corpus Akkhara).
-- El modelo procesa una línea por imagen; para páginas completas requiere un localizador de líneas externo (disponible en el demo).
+- El CER en líneas de solo inglés y números es alto (18,35%), muy superior al de líneas en jemer; no es un OCR inglés generalista.
+- El rendimiento en calles nocturnas es débil (10,17% CER con verificador), con poca mejora frente a versiones anteriores.
+- En fotos de calle completas el error sube al 22,1% y el verificador no se aplica en modo Photo.
+- La versión full6 empeora ligeramente frente a full5 en páginas escaneadas con móvil (3,08% vs 2,42% sin verificador) y en líneas de calle diurnas.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (verified: false en el model-index).
+- Riesgo de alucinación en líneas cortas o de baja calidad: el verificador puede proponer correcciones incorrectas, aunque el autor indica que cada corrección se revalida contra la imagen.
+- Sesgos conocidos: no se documentan sesgos específicos más allá de la distribución de los datos de entrenamiento (documentos y carteles jemer).
+- Limitación de idioma: solo jemer e inglés; no soporta otras escrituras.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios distintos a los evaluados.
+- No se especifican requisitos de contexto ni limitaciones de longitud de línea más allá de las líneas cortas evaluadas.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/muyleanging/Chakkhu-OCR-Khmer
-- Demo y API gratuita: https://huggingface.co/spaces/INGMUYLEANG/Chakkhu-OCR-Demo
+- Versión ONNX int8: https://huggingface.co/muyleanging/Chakkhu-OCR-Khmer-ONNX
+- Demo y API gratuita: https://huggingface.co/spaces/muyleanging/Chakkhu-OCR-Demo
 - Benchmark KHOB: https://github.com/EKYCSolutions/khmer-ocr-benchmark-dataset
-- Dataset Akkhara Sing Khmer: https://huggingface.co/datasets/INGMUYLEANG/Akkhara-Sing-Khmer
-- Wikipedia en jemer: https://km.wikipedia.org
+- Modelo comparable Anaksor-OCR: https://huggingface.co/Sokheng/anaksor-ocr

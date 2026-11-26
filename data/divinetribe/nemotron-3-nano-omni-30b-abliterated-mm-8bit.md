@@ -2,94 +2,92 @@
 
 ## Resumen
 
-Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit es una version modificada del modelo multimodal Nemotron-3-Nano-Omni-30B-A3B-Reasoning de NVIDIA, publicada por el usuario divinetribe. Se trata de una build "abliterated" (eliminacion de la direccion de rechazo) convertida a formato MLX en precision de 8 bits, disenada especificamente para ejecutarse en Apple Silicon. El modelo conserva las tres modalidades del original: texto, vision y audio.
+Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit es una compilación no oficial, en formato MLX y cuantizada a 8 bits, del modelo multimodal Nemotron-3-Nano-Omni-30B de NVIDIA, publicada por el usuario divinetribe. El modelo base es la versión bf16 de mlx-community (Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16), sobre la que se ha aplicado una ablación direccional para eliminar el comportamiento de rechazo (refusal) del stack de lenguaje, manteniendo intactas las torres de visión y audio. El resultado es un modelo tri-modal (texto, imagen y audio) que se ejecuta de forma nativa en Apple Silicon mediante la librería mlx-vlm.
 
-La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo MoE multimodal de NVIDIA, una tecnica de ablacion direccional (Arditi et al.) aplicada sobre el stack de lenguaje, y un runtime nativo de MLX para Mac. Segun el autor, es la primera build abliterated del Omni en MLX; las otras versiones sin censura existentes son NVFP4 o GGUF y no se ejecutan en macOS.
+La arquitectura subyacente es NemotronH (híbrida Mamba-Transformer con capas de mezcla de expertos), con 33.015.598.918 parámetros totales según los safetensors del repositorio y un diseño A3B (aproximadamente 3.000 millones de parámetros activos por token, según la nomenclatura del modelo base). El repositorio ocupa 35,8 GB y contiene 1.481 tensores: 401 del stack de lenguaje (ablacionado), 390 de la torre de visión, 684 de la torre de audio y 6 de proyección.
 
-El modelo base tiene 33.015.598.918 parametros totales segun los safetensors del repo, con arquitectura NemotronH (hibrida Mamba/attention/MoE) y una variante "A3B" que sugiere aproximadamente 3.000 millones de parametros activos, aunque este dato no se confirma en la informacion disponible. El repo ocupa 35,8 GB y contiene 1.481 tensores.
+Su relevancia es doble: por un lado, ofrece una ruta práctica para ejecutar un modelo omni-modal de ~30B en un Mac con memoria unificada; por otro, ilustra el fenómeno de las compilaciones "abliterated" que eliminan la alineación de seguridad, con las implicaciones legales y éticas que ello conlleva. La licencia se declara como "other", heredada del modelo base, y no se especifican idiomas soportados en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NemotronH (hibrida: Mamba + attention + MoE), segun tags y nombres de tensores |
+| Arquitectura | NemotronH (híbrida Mamba-Transformer con MoE), tri-modal (texto, visión, audio) |
 | Parametros totales | 33.015.598.918 |
-| Parametros activos | no disponible (la nomenclatura "A3B" sugiere ~3B activos, sin confirmar) |
+| Parametros activos | ~3B por token (designación A3B del modelo base) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit (MLX); el autor menciona builds alternativas NVFP4 y GGUF del ecosistema, no de este repo |
+| Tipos de cuantizacion | 8 bits (MLX); el modelo base existe en bf16 y hay builds NVFP4 y GGUF de otras fuentes |
 | Idiomas soportados | no disponible |
-| Licencia | other (heredada del modelo base de NVIDIA; consultar terminos de NVIDIA Nemotron) |
-| Formato de pesos | safetensors (MLX), libreria `mlx` |
+| Licencia | other (heredada del modelo base de NVIDIA) |
+| Formato de pesos | safetensors (MLX), 1.481 tensores, 35,8 GB de repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Nemotron-3-Nano-Omni-30B-A3B-Reasoning de NVIDIA, un transformer hibrido de la familia NemotronH que combina capas Mamba, capas de attention y capas MoE con expertos enrutados y un experto compartido. La build de divinetribe conserva la estructura exacta del base: 1.481 tensores distribuidos en 401 del stack de lenguaje, 390 de la torre de vision, 684 de la torre de audio y 6 de proyeccion, con nombres identicos a los del modelo original.
+El modelo base Nemotron-3-Nano-Omni-30B emplea la arquitectura NemotronH, una combinación de capas Mamba (modelos de espacio de estados) y capas de atención Transformer, con mezcla de expertos en las capas feed-forward. La designación A3B indica que, pese a los ~33B parámetros totales, solo se activan del orden de 3B por token, lo que reduce el coste computacional de la inferencia. El modelo es tri-modal: incorpora una torre de visión (390 tensores) y una torre de audio (684 tensores) conectadas al stack de lenguaje mediante proyecciones (6 tensores).
 
-El entrenamiento original de NVIDIA (datos, numero de tokens, uso de RLHF/DPO) no se detalla en la informacion proporcionada. La modificacion de divinetribe consiste en una ablacion direccional segun el metodo de Arditi et al.: identifica la direccion de rechazo, que en este modelo esta repartida en dos bloques (16 y 31) en lugar de uno solo, aplica ortogonalizacion de Gram-Schmidt y elimina esa direccion de todas las proyecciones que escriben en el residual: `out_proj` de Mamba, `o_proj` de attention, `fc2` de los expertos enrutados del MoE, `down_proj` del experto compartido y los embeddings de tokens. Las torres de vision y audio se copian sin modificacion. El autor reporta una verificacion de 6/6 en un conjunto danino reservado.
+Sobre esta base, el autor aplica una ablación direccional siguiendo el método de Arditi et al. La particularidad documentada es que la dirección de rechazo del modelo está distribuida en dos bloques (16 y 31), de modo que una ablación de una sola capa deja el modelo rechazando. Ambas direcciones se ortogonalizan mediante Gram-Schmidt y se eliminan de todas las proyecciones que escriben en el flujo residual: `out_proj` de Mamba, `o_proj` de atención, `fc2` de los expertos enrutados del MoE, `down_proj` del experto compartido y los embeddings de tokens. Los tensores de visión y audio se copian sin modificar. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo original en la documentación proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo "Reasoning" (heredado del modelo base Nemotron-3-Nano-Omni-30B-A3B-Reasoning).
-- Comprension de imagenes: descripcion de contenido visual, segun verificacion del autor.
-- Transcripcion de audio: el autor indica que transcribe habla correctamente.
-- Procesamiento multimodal conjunto texto-imagen-audio en una sola pasada (pipeline `image-text-to-text`).
-- Conversacion multi-turno (tag `conversational`).
-- Generacion de codigo y matematicas: no confirmado explicitamente en la informacion disponible, aunque el modelo base es de tipo "Reasoning".
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente multi-paso: no disponible en la informacion proporcionada.
-- Multilingue: no disponible; el modelo card no lista idiomas.
-- Modo thinking: el nombre del base incluye "Reasoning", pero no se detalla el mecanismo.
+- Generación de texto y razonamiento: el sufijo "Reasoning" del modelo base sugiere capacidades de razonamiento explícito, aunque no se detallan modos de pensamiento en la información disponible.
+- Comprensión de imágenes: la torre de visión funciona y el autor verifica que describe imágenes correctamente.
+- Transcripción de audio: la torre de sonido transcribe voz según la model card.
+- Procesamiento conjunto imagen-texto con pipeline `image-text-to-text`.
+- Ejecución local en Apple Silicon mediante mlx-vlm (versión 0.6.12 o superior con soporte Omni).
+- Comportamiento de rechazo eliminado en el stack de lenguaje (verificado 6/6 en un conjunto dañino reservado, según el autor).
+- Soporte de tool calling, function calling y agentes multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Descripcion y analisis de imagenes en local: el modelo acepta una imagen y un prompt de texto mediante `mlx_vlm generate`; util para catalogar fotos, generar alt-text o extraer informacion de capturas sin enviar datos a la nube.
-- Transcripcion de audio en dispositivos Apple: la torre de audio funciona en la build, lo que permite transcribir reuniones o notas de voz directamente en un Mac.
-- Asistentes conversacionales multimodales en escritorio: la combinacion de texto, vision y audio en un solo modelo permite construir un asistente que recibe capturas de pantalla y audio del usuario en la misma sesion.
-- Investigacion sobre alineacion y seguridad: al ser una build abliterated con metodo documentado (dos direcciones de rechazo, bloques 16 y 31), sirve como caso de estudio para estudiar como se distribuye la direccion de rechazo en arquitecturas hibridas Mamba/MoE.
-- Evaluacion de modelos como agentes locales: el autor integra este modelo en el proyecto Claude Code Local y en el leaderboard Agent-12, por lo que puede usarse para comparar rendimiento agéntico en Apple Silicon.
-- Desarrollo y prototipado offline en macOS: con `mlx-vlm` 0.6.12 o superior, se puede iterar sobre prompts multimodales sin conexion ni coste de API.
-- Procesamiento de documentos con imagenes y audio combinados: por ejemplo, extraer texto de una foto de un documento y complementarlo con una nota de voz asociada en un mismo flujo.
+- Descripción y análisis de imágenes en local: el modelo acepta una imagen y un prompt de texto mediante `mlx_vlm generate`, lo que permite construir herramientas de etiquetado, accesibilidad o análisis documental sin enviar datos a la nube.
+- Transcripción de audio en dispositivos Apple: la torre de sonido permite convertir voz a texto en un Mac, útil para actas de reuniones o subtitulado cuando la privacidad es requisito.
+- Asistentes personales multimodales sin conexión: al ejecutarse sobre MLX en Apple Silicon, se puede integrar en aplicaciones de escritorio que combinen capturas de pantalla, audio y texto en una sola conversación.
+- Investigación sobre alineación y seguridad: al ser una build abliterated con metodología documentada (dos direcciones, Gram-Schmidt), sirve como caso de estudio para medir la robustez de la alineación y diseñar evaluaciones de refusal.
+- Prototipado de pipelines omni-modales: desarrolladores que necesiten probar arquitecturas Mamba-Transformer con MoE y entradas mixtas pueden usar esta build de 8 bits para iterar rápido en un portátil o Mac Studio.
+- Evaluación comparativa de cuantizaciones: al existir versiones bf16, NVFP4, GGUF y esta MLX de 8 bits, permite medir la degradación de calidad y el ahorro de memoria entre formatos en el mismo hardware.
+- Integración en agentes locales de código: el autor la incluye como uno de los modelos de su proyecto Claude Code Local, que expone una API compatible con Anthropic sobre MLX; puede usarse como backend de un agente de desarrollo en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta verificaciones cualitativas: 6/6 en un conjunto dañino reservado para confirmar la eliminación del rechazo, descripción correcta de imágenes y transcripción de voz. No hay datos de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM/unified memory estimada: aproximadamente 33 GB en 8-bit, mas overhead de runtime; el repo pesa 35,8 GB.
-- Hardware objetivo: Apple Silicon con memoria unificada suficiente (orientativamente Mac Studio o MacBook Pro con 48 GB o mas; no confirmado por el autor).
-- GPU NVIDIA: no aplicable, el formato es MLX y no se ejecuta en CUDA.
-- Cabe en GPU consumer: si, en GPU Apple Silicon de gama alta con memoria unificada amplia; no en GPUs consumer NVIDIA por incompatibilidad de formato.
-- Despliegue: `mlx-vlm` (version 0.6.12 o superior con soporte Omni); el autor referencia el repo `nicedreamzapp/nemotron-omni-mlx` como runtime de referencia. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM/memoria unificada estimada: ~33 GB para los pesos en 8 bits, más overhead de contexto y de las torres de visión y audio; en la práctica se recomienda un Mac con 48 GB o 64 GB de memoria unificada.
+- GPU compatibles: exclusivamente Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra) mediante MLX; no está pensado para CUDA.
+- GPU de consumo: cabe en Mac Studio y MacBook Pro de gama alta con 48 GB o más; en configuraciones de 32 GB es probable que no quepa con contexto útil.
+- Opciones de despliegue: `mlx-vlm` (0.6.12+) para inferencia multimodal; el repositorio de referencia nemotron-omni-mlx ofrece un runtime y una API compatible con Anthropic para uso como agente. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para esta build MLX.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Modalidades | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit | 33,0 B (MoE) | no disponible | texto, vision, audio | MLX safetensors 8-bit | other | Abliterated, solo Apple Silicon |
-| mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16 | no disponible | no disponible | texto, vision, audio | MLX bf16 | other | Modelo base sin modificar, mayor precision y tamano |
-| Otras builds abliterated del Omni (NVFP4 / GGUF) | no disponible | no disponible | texto, vision, audio | NVFP4 / GGUF | no disponible | Mencionadas por el autor; no ejecutan en Mac |
+| Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit (este) | 33,0B totales, ~3B activos | no disponible | texto, visión, audio | MLX 8-bit | other | Hugging Face, 678 descargas |
+| Nemotron-3-Nano-Omni-30B-A3B-Reasoning (bf16, mlx-community) | 33,0B totales, ~3B activos | no disponible | texto, visión, audio | MLX bf16 | other | Hugging Face |
+| Otras builds abliterated de Omni (NVFP4, GGUF) | 33,0B totales, ~3B activos | no disponible | texto, visión, audio | NVFP4, GGUF | other | Hugging Face (según el autor) |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La alineacion de seguridad ha sido eliminada deliberadamente: el modelo no rechaza peticiones daninas. El autor lo declara explicitamente y responsabiliza al usuario.
-- Riesgo elevado de generar contenido nocivo, sesgado o inexacto; no apto para despliegues publicos sin capas adicionales de moderacion.
-- Licencia "other" heredada de NVIDIA: es imprescindible revisar los terminos del modelo base Nemotron antes de cualquier uso comercial; la modificacion abliterated puede no estar cubierta.
-- Solo funciona en Apple Silicon con MLX; no hay soporte CUDA, ROCm ni CPU generica.
-- Requiere `mlx-vlm` 0.6.12 o superior; versiones anteriores no soportan Omni.
-- Idiomas soportados no documentados; no se puede garantizar calidad multilingue.
-- Longitud de contexto no documentada, lo que dificulta planificar cargas de contexto largo.
-- Repo con muy poca traccion (558 descargas, 0 likes en el momento de la consulta) y autor individual; sin garantias de mantenimiento.
-- La verificacion de eliminacion de rechazo es de 6/6 sobre un conjunto no publicado; no es una evaluacion exhaustiva.
-- No hay benchmarks publicados que permitan comparar su calidad frente al base o frente a alternativas.
+- La alineación de seguridad ha sido eliminada deliberadamente: el modelo no rechazará solicitudes dañinas, lo que constituye un riesgo directo en producción y puede vulnerar términos de uso de servicios que exijan filtros.
+- Licencia "other" heredada del modelo base: es imprescindible revisar los términos de NVIDIA antes de cualquier uso comercial; la ablación puede incumplir cláusulas de uso aceptable del modelo original.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al ser una modificación no oficial, no hay garantías de que la ablación no degrade el razonamiento.
+- Idiomas soportados no documentados: no se puede asumir un rendimiento correcto en castellano sin evaluación previa.
+- Longitud de contexto no disponible: limita la planificación de cargas con documentos largos.
+- Dependencia de hardware Apple Silicon y de mlx-vlm 0.6.12+: no hay soporte CUDA ni compatibilidad con stacks habituales de servidor.
+- Build de un solo autor, con 678 descargas y 1 like: menor escrutinio de la comunidad que el modelo base; conviene validar los tensores y el comportamiento antes de desplegarlo.
+- Las torres de visión y audio no fueron ablacionadas, por lo que pueden conservar comportamientos de rechazo o filtros propios.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit
 - Modelo base: https://huggingface.co/mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16
-- Runtime de referencia: https://github.com/nicedreamzapp/nemotron-omni-mlx
+- Repositorio de runtime: https://github.com/nicedreamzapp/nemotron-omni-mlx
 - Proyecto Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
-- Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
-- Perfil del autor en GitHub: https://github.com/nicedreamzapp
-- GitHub Sponsors: https://github.com/sponsors/nicedreamzapp
+- Leaderboard de agentes locales: https://nicedreamzapp.github.io/agent12/
+- Perfil del autor: https://huggingface.co/divinetribe
+- GitHub del autor: https://github.com/nicedreamzapp
+- Patrocinio: https://github.com/sponsors/nicedreamzapp

@@ -2,119 +2,119 @@
 
 ## Resumen
 
-Leokani-tts 4.5M es un modelo de síntesis de voz (text-to-speech) ultraligero desarrollado por Milliwatt Labs, un laboratorio centrado en modelos de IA de bajo consumo que funcionan sin GPU ni centros de datos. Con 4.286.698 parámetros, es la variante reducida de Leokani-tts 7M y está diseñado para ejecutarse en CPUs lentas, ordenadores de placa única e incluso microcontroladores como el ESP32-P4 o el ESP32-S3. Genera voz femenina en inglés americano (voz "Dala") y fue entrenado sobre habla sintética producida con Kokoro-82M.
+Leokani-tts 4.5M es un modelo de síntesis de voz (text-to-speech) ultraligero desarrollado por Milliwatt Labs, un laboratorio centrado en modelos de IA de muy bajo consumo que puedan ejecutarse en hardware doméstico sin GPU ni centro de datos. Se trata de la variante reducida del Leokani-tts 7M: comparte la misma voz femenina de inglés americano llamada Dala, pero comprime el modelo hasta 4,3 millones de parámetros para poder correr en CPUs lentas e incluso en microcontroladores como el ESP32-S3 y el ESP32-P4.
 
-El modelo resuelve un problema muy concreto: la síntesis de voz local en dispositivos con recursos mínimos, sin dependencia de servicios en la nube. Su relevancia actual reside en que demuestra que un TTS inteligible cabe en menos de 5 MB de pesos (int8) y se ejecuta en tiempo real en hardware de menos de un vatio, algo que hasta hace poco requería modelos decenas de veces mayores.
+El modelo fue entrenado sobre habla sintética generada con Kokoro-82M, de ahí la etiqueta `kokoro` en el repositorio, y se distribuye en formato PyTorch (safetensors) y ONNX con variantes fp32, fp16 e int8. Genera audio mono a 24 kHz y admite control de velocidad de habla (`--speed`). Su propuesta de valor es clara: calidad de voz razonable con un coste computacional y de memoria que lo sitúa uno o dos órdenes de magnitud por debajo de alternativas como Kokoro-82M o Piper.
 
-La arquitectura sigue el linaje de Kokoro (basada en StyleTTS2 con decodificador ISTFTNet), con salida mono a 24 kHz. Se distribuye en PyTorch y ONNX, con pesos fp32, fp16 e int8, y admite dos fonemizadores: espeak-ng (dependencia externa GPL-3.0) o Leokani G2P, un fonemizador propio compatible incluido en el repositorio.
+Es relevante ahora porque demuestra que la síntesis de voz neuronal puede ejecutarse en hardware embebido de menos de un vatio, abriendo casos de uso en domótica (integración oficial con Home Assistant), dispositivos portátiles y sistemas sin conectividad. El repositorio ocupa solo 0,1 GB y acumula 309 descargas y 6 likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Estilo Kokoro / StyleTTS2 con decodificador ISTFTNet (no confirmado explicitamente en la model card) |
-| Parametros totales | 4.286.698 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo TTS, no aplica ventana de contexto de texto) |
-| Tipos de cuantizacion | fp32, fp16, int8 |
-| Idiomas soportados | en (ingles americano, voz femenina "Dala") |
-| Licencia | milliwatt-labs-model-license (license: other) |
-| Formato de pesos | safetensors (17 MB fp32, 8.6 MB fp16), ONNX (fp32, fp16, int8 de 5.1 MB) |
+| Arquitectura | Red neuronal de síntesis de voz (detalles de arquitectura no disponibles; compatible con el ecosistema Kokoro) |
+| Parametros totales | 4.286.698 (4,3 M) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (modelo TTS; procesa texto por líneas) |
+| Tipos de cuantizacion | fp32 (17 MB), fp16 (8,6 MB), int8 (5,1 MB) en ONNX; safetensors fp32 y fp16 |
+| Idiomas soportados | inglés (en), voz femenina americana "Dala" |
+| Licencia | milliwatt-labs-model-license (licencia propia, marcada como `other`) |
+| Formato de pesos | safetensors (PyTorch), ONNX (fp32, fp16, int8) |
+| Frecuencia de muestreo | 24 kHz mono |
+| Fonemizador | espeak-ng (por defecto) o Leokani G2P (propio, incluido) |
+| Tamaño del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna ni el proceso de entrenamiento más allá de indicar que deriva de Leokani-tts 7M y que fue entrenado sobre habla sintética generada con Kokoro-82M. Por la nomenclatura (tags "kokoro", fonemas compatibles con Kokoro, salida a 24 kHz) y por la familia de modelos a la que pertenece, se infiere una arquitectura del linaje StyleTTS2 con decodificador ISTFTNet, aunque esta afirmación no se confirma de forma explícita en la información disponible.
+No se detalla en la información disponible la arquitectura interna exacta (capas, tipo de decoder, vocoder). Lo que sí se documenta es que el modelo sigue el paradigma de Kokoro: recibe fonemas como entrada (generados con espeak-ng o con el fonemizador propio Leokani G2P) y produce audio a 24 kHz. La etiqueta `kokoro` y la compatibilidad con fonemas estilo Kokoro (`--phonemes "..."`) sugieren una arquitectura derivada o inspirada en Kokoro-82M, pero el autor no publica el detalle de capas ni el diseño del vocoder.
 
-No se proporcionan datos sobre número de tokens de entrenamiento, composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste fino con preferencias. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La innovación principal del modelo es de escala: comprimir una voz inteligible en 4,3 millones de parámetros manteniendo compatibilidad de fonemas con Kokoro y ofreciendo un fonemizador propio (Leokani G2P) para eliminar la dependencia de espeak-ng.
+El entrenamiento se realizó sobre habla sintética generada con Kokoro-82M, es decir, destilación de datos (data distillation) más que entrenamiento sobre corpus humano. No se especifica el número de tokens, horas de audio ni si hubo ajuste fino con RLHF o DPO (poco habitual en TTS). La innovación principal es la compresión extrema: mantener una voz inteligible y natural con 4,3 M de parámetros, lo que permite inferencia en tiempo real (o cercano) en un solo núcleo ARM y decodificación en microcontroladores ESP32. Se ofrecen además scripts de inferencia en PyTorch (`leokani.py`) y ONNX Runtime (`leokani_onnx.py`), con soporte de fp16 e int8.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en inglés americano con una única voz femenina ("Dala").
-- Salida de audio mono a 24 kHz.
-- Control de velocidad de habla mediante el parámetro `--speed` (por ejemplo, 0.85 para ralentizar).
-- Fonemización mediante espeak-ng (por defecto) o Leokani G2P (`--g2p leokani`), un fonemizador propio compatible con espeak-ng incluido en el repositorio.
-- Aceptación de fonemas en estilo Kokoro directamente mediante `--phonemes`.
-- Inferencia en PyTorch y en ONNX Runtime, con variantes fp32, fp16 e int8.
-- Ejecución en CPU, GPU y microcontroladores (ESP32-P4, ESP32-S3) mediante Arduino.
-- No soporta tool calling, function calling, agentes, razonamiento multietapa, visión ni audio de entrada. Es exclusivamente un modelo TTS.
+- Síntesis de voz a partir de texto en inglés americano con una única voz femenina (Dala).
+- Control de velocidad de habla mediante el parámetro `--speed` (por ejemplo, 0,85 para habla más lenta).
+- Fonemización integrada mediante Leokani G2P (compatible con espeak-ng) o mediante espeak-ng externo; también acepta fonemas Kokoro directamente.
+- Inferencia en CPU sin GPU, con variantes ONNX fp32, fp16 e int8 para reducir memoria y latencia.
+- Ejecución en microcontroladores (ESP32-P4 y ESP32-S3 con Arduino) y en placas ARM de un solo núcleo.
+- Manejo razonable de números, fechas, unidades y nombres propios según los ejemplos de la model card (precios, horas, millas, nombres multilingües).
+- No soporta tool calling, function calling, agentes, visión, audio de entrada ni modo de razonamiento; es exclusivamente un modelo TTS.
+- Capacidad multilingüe: no disponible; solo inglés.
 
 ## Casos de uso
 
-- Asistentes de voz domésticos en Home Assistant: el modelo se instala como add-on (amd64 y arm64) y permite respuestas habladas locales en una Raspberry Pi o servidor doméstico sin enviar texto a la nube, con una latencia de primera locución de 128 ms en un núcleo Arm Cortex-A725.
-- Dispositivos embebidos y wearables: con 5,1 MB en int8 y ejecución a 1,06× tiempo real en un ESP32-P4 a 360 MHz, es viable para avisos hablados en electrodomésticos, sensores o dispositivos de bajo consumo.
-- Lectura de notificaciones y alertas en sistemas IoT: la baja huella de memoria permite integrarlo en firmware Arduino para anunciar estados, medidas o eventos sin conexión.
-- Síntesis por lotes en servidores sin GPU: en un DGX Spark alcanza 4.257× tiempo real con muchas líneas simultáneas, útil para generar grandes volúmenes de audio (audiolibros cortos, avisos, locuciones) en CPU.
-- Prototipado rápido de interfaces de voz: al ser compatible con fonemas de Kokoro y ofrecer un script de línea de comandos sencillo (`leokani.py`), sirve para validar flujos de TTS antes de invertir en modelos mayores.
-- Accesibilidad en equipos modestos: permite dotar de voz a aplicaciones de lectura en ordenadores antiguos o de placa única donde modelos de 80-800 M de parámetros no caben o no alcanzan tiempo real.
-- Pruebas de integración en pipelines CI/CD: el tamaño reducido del repositorio (0,1 GB) facilita incluirlo en contenedores de test para verificar la generación de audio sin dependencias pesadas.
+- Asistente de voz para domótica con Home Assistant: el modelo se instala como add-on oficial (amd64 y arm64) y permite respuestas habladas en local sin depender de la nube, con latencia de primera locución de 128 ms en ARM.
+- Dispositivos embebidos y wearables: con 5,1 MB en int8 y ejecución a 0,56×–1,06× tiempo real en ESP32-S3/P4, puede dar voz a mandos, termostatos o relojes sin conexión.
+- Lectura de notificaciones y alertas en sistemas de bajo consumo: con 38× tiempo real en un solo núcleo Cortex-A725, puede narrar avisos en una Raspberry Pi u otra SBC sin GPU.
+- Sistemas de accesibilidad offline: conversión de texto a voz en lectores de pantalla o interfaces para personas con discapacidad visual en equipos sin acelerador gráfico.
+- Kioscos y terminales de información: anuncios de turnos, precios o instrucciones en pantallas interactivas donde no se justifica un modelo de 80 M de parámetros.
+- Generación masiva de audio en servidores modestos: en una GPU NVIDIA GB10 alcanza 4.257× tiempo real con muchas líneas simultáneas, útil para pregenerar locuciones de aplicaciones o audiolibros cortos.
+- Prototipado de interfaces conversacionales: por su tamaño reducido se puede iterar rápidamente en portátiles y contenedores ligeros sin reservar VRAM.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.), que no aplican a un modelo TTS. Sí incluye mediciones de velocidad y eficiencia energética:
+El autor publica métricas de velocidad y eficiencia energética, no benchmarks de calidad subjetiva (MOS) ni de inteligibilidad (WER).
 
-| Modelo | Parametros | × tiempo real por linea | × tiempo real muchas lineas | J por minuto de habla en GPU |
+| Plataforma / modelo | Parámetros | Velocidad (× tiempo real) | Primera locución | J por minuto de habla |
 |---|---:|---:|---:|---:|
-| Leokani-tts 4.5M | 4,3 M | 485× | 4.257× | 0,47 |
-| Leokani-tts 7M | 7 M | 486× | 3.500× | 0,52 |
-| Piper (en_US lessac medium) | 15,7 M | 72× | — | 3,52 |
-| KittenTTS nano 0.8 | 14 M | 75× | — | 6,15 |
-| KittenTTS mini 0.8 | 73 M | 29× | — | 9,29 |
-| Kokoro-82M | 82 M | 86× | — | 14,6 |
-| Kyutai Pocket TTS | 110 M | 14,1× | — | 32,1 |
-| Chatterbox | 798 M | 2,1× | — | 430 |
+| Leokani-tts 4.5M en Cortex-A725 (1 núcleo, 2,8 GHz) | 4,3 M | 38× | 128 ms | no disponible |
+| Leokani-tts 4.5M en ESP32-P4 (360 MHz, Arduino) | 4,3 M | 1,06× | 126 ms | no disponible |
+| Leokani-tts 4.5M en ESP32-S3 (240 MHz, Arduino) | 4,3 M | 0,56× | 247 ms | no disponible |
+| Leokani-tts 4.5M en DGX Spark (GB10), una línea | 4,3 M | 485× | no disponible | 0,47 |
+| Leokani-tts 4.5M en DGX Spark, muchas líneas | 4,3 M | 4.257× | 9 ms | 0,47 |
+| Leokani-tts 7M en DGX Spark, muchas líneas | 7 M | 3.500× | no disponible | 0,52 |
+| Piper (en_US lessac medium) | 15,7 M | 72× | no disponible | 3,52 |
+| KittenTTS nano 0.8 | 14 M | 75× | no disponible | 6,15 |
+| KittenTTS mini 0.8 | 73 M | 29× | no disponible | 9,29 |
+| Kokoro-82M | 82 M | 86× | no disponible | 14,6 |
+| Kyutai Pocket TTS | 110 M | 14,1× | no disponible | 32,1 |
+| Chatterbox | 798 M | 2,1× | no disponible | no disponible |
 
-Mediciones en una NVIDIA GB10 (DGX Spark). J por minuto = energía de GPU por encima del reposo. El GB10 no tiene sensor de potencia de CPU, por lo que los modelos que ejecutan parte del trabajo en CPU aparecen ligeramente favorecidos. "—" indica ausencia de modo por lotes.
-
-Rendimiento por plataforma:
-
-| Plataforma | Dispositivo | Velocidad | Primera locucion |
-|---|---|---:|---:|
-| Linux | 1 núcleo Arm (Cortex-A725, 2,8 GHz) | 38× | 128 ms |
-| ESP32-P4 | ESP32-P4, 360 MHz, Arduino | 1,06× | 126 ms |
-| ESP32-S3 | ESP32-S3, 240 MHz, Arduino | 0,56× | 247 ms |
-| GPU | DGX Spark (GB10), muchas líneas | 4.257× | 9 ms |
-
-Velocidad = segundos de habla por segundo de cómputo. Primera locución = tiempo hasta el primer audio de una línea con la voz ya cargada. En ESP32 se usan ambos núcleos. Leokani-tts 7M en el mismo ESP32-P4 y librería rinde 0,84×.
+No se han publicado resultados de benchmarks de calidad (MOS, WER, similitud de voz) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU. En CPU basta con unos pocos MB de RAM para los pesos (17 MB fp32, 8,6 MB fp16, 5,1 MB int8 en ONNX).
-- GPU recomendadas: ninguna es necesaria; el modelo funciona en cualquier CPU moderna. En GPU, se ha medido en NVIDIA GB10 (DGX Spark) con 4.257× tiempo real en modo por lotes.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer e incluso en iGPU; también en Raspberry Pi, Mac, iPhone, Android y Linux.
-- Microcontroladores: ESP32-P4 (1,06× tiempo real) y ESP32-S3 (0,56× tiempo real) con Arduino.
-- Opciones de despliegue: PyTorch (`leokani.py`), ONNX Runtime (`leokani_onnx.py`), add-on de Home Assistant (amd64 y arm64), y aplicaciones oficiales para Mac, iPhone, Android, Linux, Raspberry Pi y navegador (estas últimas documentadas para el modelo de 7M).
-- Latencia y throughput: primera locución de 9 ms en GPU, 126-128 ms en ESP32-P4 y Cortex-A725; 38× tiempo real en un solo núcleo Arm a 2,8 GHz.
+- VRAM estimada: no requiere GPU; en CPU ocupa entre 5,1 MB (ONNX int8) y 17 MB (safetensors fp32) de pesos, más overhead del runtime.
+- GPU recomendadas: cualquiera es suficiente; el autor reporta pruebas en NVIDIA GB10 (DGX Spark) con 4.257× tiempo real en modo multi-línea. Funciona igualmente en A100, H100 o RTX 4090, aunque está sobredimensionado para ellas.
+- Cabe en cualquier GPU de consumo (RTX 3060, 4060, etc.) e incluso en placas integradas; también en Raspberry Pi y en microcontroladores ESP32.
+- Opciones de despliegue: PyTorch (`leokani.py`), ONNX Runtime (`leokani_onnx.py`), add-on de Home Assistant (amd64 y arm64) y Arduino para ESP32. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo TTS de este tamaño).
+- Latencia: primera locución de 126–247 ms en microcontroladores y 128 ms en un núcleo ARM; 9 ms en GPU con la voz ya cargada.
+- Throughput: 38× tiempo real en un solo núcleo ARM, 1,06× en ESP32-P4, 0,56× en ESP32-S3 y 4.257× en GPU con múltiples líneas simultáneas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento (× tiempo real, 1 linea) | Licencia | Disponibilidad |
-|---|---|---:|---:|---|---|
-| Leokani-tts 4.5M | 4,3 M | no aplica | 485× | milliwatt-labs-model-license | Hugging Face, ONNX, Home Assistant, ESP32 |
-| Leokani-tts 7M | 7 M | no aplica | 486× | milliwatt-labs-model-license | Hugging Face, apps multiplataforma |
-| Kokoro-82M | 82 M | no aplica | 86× | Apache 2.0 (según el modelo original de Kokoro) | Hugging Face |
-| Piper (en_US lessac medium) | 15,7 M | no aplica | 72× | MIT (según el proyecto Piper) | Hugging Face, repositorio Piper |
-| KittenTTS nano 0.8 | 14 M | no aplica | 75× | no disponible | Hugging Face |
+| Modelo | Parámetros | Velocidad (× RT, 1 línea) | Energía (J/min) | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| Leokani-tts 4.5M | 4,3 M | 485× (GPU) / 38× (ARM) | 0,47 | milliwatt-labs-model-license | Hugging Face, Home Assistant, ONNX |
+| Leokani-tts 7M | 7 M | 486× (GPU) | 0,52 | milliwatt-labs-model-license | Hugging Face, apps multiplataforma |
+| Piper (en_US lessac medium) | 15,7 M | 72× (GPU) | 3,52 | MIT (upstream Piper) | Hugging Face, ecosistema amplio |
+| KittenTTS nano 0.8 | 14 M | 75× (GPU) | 6,15 | no disponible | Hugging Face |
+| Kokoro-82M | 82 M | 86× (GPU) | 14,6 | Apache 2.0 | Hugging Face, amplia adopción |
+| Kyutai Pocket TTS | 110 M | 14,1× (GPU) | 32,1 | no disponible | Hugging Face |
 
-Leokani-tts 4.5M destaca por ser el más pequeño de la comparativa y el más rápido por línea en las mediciones del autor, con un consumo energético por minuto de habla muy inferior (0,47 J frente a 3,52 J de Piper o 14,6 J de Kokoro-82M). Su desventaja principal es la licencia propia no estándar y el soporte de un único idioma y una única voz, frente a alternativas como Kokoro o Piper con más voces e idiomas.
+Leokani-tts 4.5M es el más pequeño de la comparativa y el que menos energía consume por minuto de audio, a costa de una única voz y de un idioma. Kokoro-82M ofrece más voces y ecosistema, pero consume unas 31 veces más energía por minuto de habla según los datos del autor.
 
 ## Limitaciones y advertencias
 
-- Una sola voz (femenina, inglés americano, "Dala"): no hay selección de hablante ni soporte multilingüe.
-- Entrenado sobre habla sintética de Kokoro-82M, lo que puede arrastrar artefactos o sesgos acústicos del modelo generador.
-- No se documentan evaluaciones de naturalidad (MOS) ni comparaciones perceptuales con otros modelos, por lo que la calidad subjetiva no está cuantificada.
-- Licencia "milliwatt-labs-model-license" (license: other): es necesario revisar los términos en el archivo LICENSE-MILLIWATT-LABS.md antes de un uso comercial; no es una licencia de código abierto estándar.
-- espeak-ng es una dependencia separada bajo GPL-3.0 y no se incluye en el repositorio; su uso puede imponer obligaciones de licencia adicionales. Leokani G2P evita esta dependencia.
-- En ESP32-S3 el rendimiento es inferior al tiempo real (0,56×), por lo que no sirve para síntesis continua en ese chip sin recortes.
-- No apto para clonación de voz, emoción controlable, SSML avanzado ni otras funciones de TTS expresivo, según la información disponible.
-- Riesgo de pronunciación incorrecta en nombres propios, siglas o unidades poco frecuentes; la model card incluye muestras específicas para fechas, unidades y nombres, lo que sugiere que son casos sensibles.
-- No se han publicado resultados de benchmarks perceptivos ni comparativas objetivas de inteligibilidad (WER, MOS) en la información disponible.
+- Una sola voz (Dala, femenina, inglés americano); no hay clonación de voz ni selección de hablante.
+- Solo inglés: no soporta castellano ni otros idiomas, lo que limita su uso en productos multilingües.
+- Entrenado sobre habla sintética de Kokoro-82M, por lo que puede heredar artefactos o sesgos acústicos del modelo profesor y no está garantizada la naturalidad frente a corpus humanos.
+- Riesgo de errores de pronunciación en nombres propios, siglas o términos técnicos poco frecuentes; conviene revisar los fonemas o usar `--phonemes`.
+- La licencia `milliwatt-labs-model-license` es propia y marcada como `other`: es imprescindible revisar el texto antes de uso comercial, redistribución o integración en productos.
+- espeak-ng es una dependencia externa bajo GPL-3.0 y no se incluye en el repositorio; su uso puede imponer obligaciones de licencia en determinados despliegues. La alternativa Leokani G2P está incluida y evita esa dependencia.
+- El rendimiento en ESP32-S3 es inferior al tiempo real (0,56×), por lo que no es apto para conversación fluida en ese chip; en ESP32-P4 apenas alcanza 1,06×.
+- No se han publicado métricas de calidad (MOS, WER) ni evaluaciones de sesgo; la validación cualitativa queda a cargo del integrador.
+- Modelo de fecha futura (creado en noviembre de 2026 según los metadatos): verificar la vigencia de la información y de los enlaces antes de desplegarlo en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/milliwattlabs/leokani-tts-4.5M
+- Modelo en Hugging Face: https://huggingface.co/milliwattlabs/leokani-tts-4.5M
 - Modelo completo Leokani-tts 7M: https://huggingface.co/milliwattlabs/leokani-tts-7M
+- Variante Leokani-tts 1M: https://huggingface.co/milliwattlabs/leokani-tts-1M
+- Variante Leokani-tts 500K: https://huggingface.co/milliwattlabs/leokani-tts-500K
 - Fonemizador Leokani G2P: https://huggingface.co/milliwattlabs/leokani-g2p
 - Licencia: https://huggingface.co/milliwattlabs/leokani-tts-4.5M/blob/main/LICENSE-MILLIWATT-LABS.md
-- Web de Milliwatt Labs (modelo y apps): https://milliwattlabs.com/models/leokani-tts-4-5m/
-- Add-on de Home Assistant: https://github.com/Milliwatt-Labs/home-assistant-addons
-- Kokoro-82M (modelo base del habla sintética de entrenamiento): https://huggingface.co/hexgrad/Kokoro-82M
+- Web de Milliwatt Labs (apps y documentación): https://milliwattlabs.com
+- Página del modelo en Milliwatt Labs: https://milliwattlabs.com/models/leokani-tts-4-5m/
+- Add-ons de Home Assistant: https://github.com/Milliwatt-Labs/home-assistant-addons
+- Modelo profesor Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

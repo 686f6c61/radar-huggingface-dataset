@@ -2,95 +2,91 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-oQ4e-mtp es una version cuantizada a 4 bits del modelo ThinkingCap-Qwen3.8-27B, publicada por el usuario chriswessels en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: el autor ha aplicado la herramienta oQ (oMLX v0.6.4) con cuantizacion de precision mixta, group size 64, sobre el modelo base, y ha exportado el resultado en formato MLX safetensors, el formato nativo del framework MLX de Apple.
+ThinkingCap-Qwen3.8-27B-oQ4e-mtp es una cuantizacion en 4 bits del modelo ThinkingCap-Qwen3.8-27B, un ajuste fino de Qwen3.8-27B (Qwen Team, 2026) desarrollado por Bottlecap AI. El objetivo del modelo base es mantener el rendimiento del original en tareas complejas y agenticas reduciendo de forma sustancial la verbosidad del razonamiento: segun la model card, recorta los tokens de pensamiento un 37 % de media (entre un 11 % y un 66 % segun el benchmark) conservando una precision media del 85,8 % frente al 86,6 % del modelo base.
 
-El interes practico del artefacto es que comprime un modelo de 27.781.427.952 parametros (27,78 B) en un repositorio de 17,0 GB, lo que permite ejecutarlo en equipos Apple Silicon con memoria unificada de 24-32 GB o superior, sin GPU dedicada. Es decir, resuelve el problema de servir un modelo de ~28 B en hardware de consumo dentro del ecosistema Mac, un nicho donde la oferta de cuantizaciones (GGUF, AWQ, GPTQ) es mucho menor.
+Esta variante concreta la publica el usuario chriswessels y aplica cuantizacion de precision mixta con la herramienta oQ (oMLX v0.6.4) sobre el checkpoint de Bottlecap AI. El resultado es un conjunto de pesos en formato MLX safetensors de 4 bits con group size 64, pensado para ejecucion en Apple Silicon mediante la libreria MLX. El repositorio ocupa 17,0 GB y declara 27.781.427.952 parametros totales.
 
-La relevancia es limitada por la falta de documentacion: la model card solo describe los parametros de cuantizacion, no hay licencia declarada, no se documentan idiomas, contexto, datos de entrenamiento ni benchmarks, y el repositorio acumula 0 descargas y 0 likes, por lo que no ha sido validado por la comunidad. Debe tratarse como un artefacto a verificar antes de cualquier uso en produccion.
+La relevancia actual es doble: por un lado, propone una via para abaratar el coste de inferencia de modelos con modo de razonamiento extenso sin degradar la calidad; por otro, esta version cuantizada permite desplegar un modelo de casi 28 000 millones de parametros en hardware de consumo de Apple, algo inviable con los pesos en bf16. El sufijo "mtp" del nombre no esta documentado en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. El campo model_type del config es qwen3_5; no se documenta si es un transformer denso, MoE o una arquitectura hibrida |
-| Parametros totales | 27.781.427.952 (~27,78 B), dato real de los safetensors |
-| Parametros activos | No aplica / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | 4 bits, group size 64, cuantizacion de precision mixta (oQ); pesos en formato MLX |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (el repositorio no declara licencia) |
-| Formato de pesos | MLX safetensors (formato nativo de MLX) |
-| Metodo de cuantizacion | oQ sobre oMLX v0.6.4, precision mixta |
-| Tamaño del repositorio | 17,0 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 25/09/2026 / 25/09/2026 |
+| Arquitectura | transformer (tipo de modelo declarado: qwen3_5); detalles internos no disponibles |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits, precision mixta (oQ / oMLX v0.6.4), group size 64 |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | MLX safetensors (4 bits) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base ThinkingCap-Qwen3.8-27B. El unico dato tecnico verificable es el campo model_type del config, que apunta a la familia qwen3_5, y el sufijo del nombre (-mtp), que sugiere —sin confirmacion documental— algun tipo de decodificacion multi-token; no debe darse por hecho. Tampoco se publican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF, DPO u otra forma de alineacion.
+El modelo base pertenece a la familia Qwen3.8-27B, por lo que hereda la arquitectura transformer del modelo original de Qwen Team; la model card de esta cuantizacion solo declara el tipo de modelo como `qwen3_5` y no detalla numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora componentes hibridos. Tampoco se especifican los datos de entrenamiento del ajuste fino de Bottlecap AI (numero de tokens, composicion del dataset, uso de RLHF o DPO).
 
-Lo que si esta documentado es el post-procesado: una cuantizacion weight-only de 4 bits con group size 64 y precision mixta mediante oQ (oMLX v0.6.4), exportada a MLX safetensors. La cuantizacion de precision mixta implica que no todas las capas o tensores usan el mismo numero de bits, de modo que el tamaño final (17,0 GB) es superior al que resultaria de aplicar 4 bits uniformes a 27,78 B de parametros (unos 13,9 GB teoricos); la diferencia corresponde a escalas, sesgos de cuantizacion y a los tensores que se han mantenido en mayor precision. Este proceso no reentrena el modelo: solo aproxima los pesos, por lo que la calidad resultante depende enteramente del modelo base y del criterio de asignacion de bits de la herramienta.
+La innovacion documentada del modelo base es la reduccion de tokens de razonamiento: ThinkingCap Qwen3.8-27B se entrena para producir cadenas de pensamiento mas cortas manteniendo la precision. Segun la model card, la mayor ganancia se da en recuperacion de contexto largo, donde el recorte de razonamiento es del 39 % con una mejora de 2,3 puntos porcentuales en precision. La capa de cuantizacion de esta ficha aplica precision mixta con oQ, que asigna distinto numero de bits por capa o tensor en lugar de un 4 bits uniforme, con group size 64.
 
 ## Capacidades
 
-- Generacion de texto: se asume la capacidad estandar de un modelo causal de ~28 B, pero la model card no documenta tareas soportadas. No verificable con la informacion disponible.
-- Razonamiento y modo "thinking": el nombre del modelo incluye "ThinkingCap", lo que sugiere un modelo orientado a razonamiento, pero no hay ninguna confirmacion documental de que exista un modo de pensamiento explicito ni de como activarlo.
-- Generacion de codigo: no documentada. No hay datos de HumanEval ni de ningun otro benchmark de codigo.
-- Matematicas: no documentado. Sin resultados de GSM8K, MATH u otros.
-- Tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponible. El repositorio no declara idiomas soportados.
-- Capacidades especiales (vision, audio, multimodalidad): no documentadas.
-- Inferencia local en Apple Silicon: capacidad real y verificable del artefacto, al estar en formato MLX y ocupar 17,0 GB.
+- Generacion de texto y razonamiento con modo de pensamiento explicito, pero con cadenas de razonamiento mas cortas que el modelo base.
+- Razonamiento cientifico y de conocimiento general de nivel alto (GPQA-Diamond y MMLU-Pro en el entorno del 84-88 % de precision segun la model card).
+- Recuperacion en contexto largo, con mejoras declaradas de precision al reducir el razonamiento.
+- Tareas agenticas: la model card menciona explicitamente el mantenimiento del rendimiento en tareas de agente, aunque no detalla el soporte concreto de tool calling o function calling.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Inferencia local en portatiles Apple Silicon: cargar el modelo con mlx-lm sobre un Mac con 32 GB o mas de memoria unificada permite disponer de un modelo de ~28 B sin GPU dedicada ni conexion a servicios externos.
-- Asistentes de codigo con requisito de privacidad: al ejecutarse integramente en el dispositivo, es adecuado para entornos donde el codigo no puede enviarse a APIs de terceros; requiere validar antes la calidad real del modelo base, que no esta documentada.
-- Evaluacion comparativa de cuantizacion: el artefacto sirve como punto de medida para estudiar la degradacion de perplejidad y de calidad de generacion de oQ 4 bits con group size 64 frente a otros esquemas (8 bits, 6 bits o cuantizaciones uniformes) sobre el mismo modelo base.
-- Prototipado de aplicaciones RAG en local: desplegando mlx_lm.server se puede exponer una API compatible con OpenAI en localhost y engancharla a un pipeline de recuperacion aumentada para pruebas de concepto, siempre que la longitud de contexto del modelo base (no documentada) cubra los fragmentos recuperados.
-- Servicio interno de generacion de texto sobre un unico Mac Studio: para cargas moderadas de un equipo pequeno, un Mac con 64 GB de memoria unificada puede servir el modelo de forma continua sin infraestructura de GPU.
-- Docencia y demos sin infraestructura: permite mostrar el comportamiento de un modelo de ~28 B en un aula o charla usando un portatil Apple, sin depender de la nube ni de un clúster.
-- Investigacion en cuantizacion de precision mixta: el artefacto es util para analizar que capas han recibido mas bits y correlacionarlo con la degradacion observada por tarea, aunque para ello hay que inspeccionar los tensores del repositorio.
+- Razonamiento cientifico asistido: el modelo puede resolver preguntas de nivel experto en fisica, quimica y biologia (GPQA-Diamond) con un coste de tokens de pensamiento aproximadamente un 43 % menor que el base, lo que abarata su uso en pipelines de evaluacion masiva.
+- Analisis de documentos largos: gracias al comportamiento declarado en recuperacion de contexto largo, es adecuado para resumir o extraer informacion de expedientes extensos donde cada llamada consume muchos tokens de entrada.
+- Agentes autonomos de varios pasos: al reducir la verbosidad del razonamiento, disminuye la latencia y el coste por tarea en bucles de planificacion y ejecucion con multiples llamadas al modelo.
+- Asistencia tecnica y de conocimiento general: con MMLU-Pro en torno al 84,7 %, sirve para responder consultas transversales de dominio amplio en herramientas internas.
+- Inferencia local en Mac: al estar en formato MLX de 4 bits y ocupar 17 GB, permite ejecutar un modelo de 27 800 millones de parametros en equipos Apple Silicon con memoria unificada suficiente, sin depender de GPU de centro de datos.
+- Prototipado e investigacion: util para comparar el efecto de la cuantizacion de precision mixta frente al modelo en bf16 en tareas de razonamiento, midiendo la degradacion real por benchmark.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye datos de MMLU, HumanEval, GSM8K, perplejidad ni de ninguna otra metrica, ni resultados comparativos frente al modelo base en precision completa. Tampoco se publican mediciones de latencia o throughput.
+Datos de la model card del modelo base (ThinkingCap-Qwen3.8-27B frente a Qwen3.8-27B). No se han publicado resultados especificos de esta cuantizacion de 4 bits.
+
+| Benchmark | Precision base | Precision ThinkingCap | Tokens base (media) | Tokens ThinkingCap (media) | Reduccion |
+|---|---|---|---|---|---|
+| GPQA-Diamond | 89,93 ± 0,70 | 88,04 ± 1,09 | 12 772 | 7 267 | 43,1 % |
+| MMLU-Pro | 85,54 ± 0,63 | 84,67 ± 0,64 | 3 725 | 1 591 | no disponible en el extracto |
+
+Precision media agregada declarada: 85,8 % (ThinkingCap) frente a 86,6 % (base). Recorte medio de tokens de razonamiento: 37 %, con un rango del 11 % al 66 % segun el benchmark.
 
 ## Requisitos de hardware
 
-- Memoria necesaria: los pesos ocupan 17,0 GB (tamaño del repositorio). Sumando cache KV y activaciones, se estima un minimo practico de 20-24 GB de memoria unificada, aunque la cifra exacta depende de la longitud de contexto y del numero de capas, ambos no documentados.
-- Cabe en GPU de consumo: no en el sentido habitual, porque MLX no se ejecuta sobre CUDA. Es un artefacto para Apple Silicon.
-- Equipos Apple compatibles: M1/M2/M3/M4 Max y Ultra con 32 GB o mas; M4 Pro con 24 GB puede ser suficiente solo con contexto corto y de forma ajustada; los equipos de 8 GB y 16 GB no pueden cargar los pesos.
-- GPU NVIDIA: requiere convertir los pesos a otro formato (GGUF, AWQ, GPTQ) antes de poder usar vLLM, TGI, llama.cpp u Ollama; no hay conversiones publicadas en el repositorio.
-- Opciones de despliegue: MLX mediante mlx-lm (generacion por linea de comandos y servidor HTTP), LM Studio y la propia herramienta oMLX. Para llama.cpp u Ollama haria falta una conversion previa.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo en ningun equipo.
+- VRAM o memoria unificada: el repositorio ocupa 17,0 GB en pesos de 4 bits; se recomienda al menos 20-24 GB de memoria disponible para margen de contexto y cache KV.
+- Hardware objetivo: Apple Silicon con MLX (la libreria declarada es `mlx`); no es un formato pensado para CUDA.
+- GPU de consumo: cabe en equipos Mac con memoria unificada de 24 GB o superior (por ejemplo, configuraciones de M3/M4 Pro con 24 GB o Max con 36 GB o mas). No es desplegable directamente en GPU NVIDIA consumer sin conversion de formato.
+- Opciones de despliegue: MLX y oMLX; vLLM, llama.cpp, Ollama y TGI no soportan este formato de forma nativa segun la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables del modelo base ni de cuantizaciones alternativas del mismo, por lo que no es posible establecer una comparativa tecnica rigurosa. La tabla recoge unicamente los campos que se pueden afirmar o que quedan explicitamente sin datos.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-oQ4e-mtp (este) | 27,78 B | No disponible | No disponible | Hugging Face, 0 descargas |
-| ThinkingCap-Qwen3.8-27B (modelo base) | No disponible | No disponible | No disponible | No referenciado en la model card |
-| Cuantizacion GGUF del mismo modelo base | No disponible | No disponible | No disponible | No se han encontrado publicaciones |
-| Cuantizacion AWQ/GPTQ del mismo modelo base | No disponible | No disponible | No disponible | No se han encontrado publicaciones |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| ThinkingCap-Qwen3.8-27B-oQ4e-mtp (esta ficha) | 27,78 B | no disponible | MLX safetensors 4 bits | no disponible | Cuantizacion de precision mixta para Apple Silicon |
+| bottlecapai/ThinkingCap-Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Modelo base sin cuantizar, con reduccion de razonamiento del 37 % |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Modelo original de Qwen Team, referencia de precision (86,6 % media) |
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: el repositorio no declara licencia, por lo que no puede asumirse permiso de uso comercial. Es imprescindible contactar con el autor y verificar tambien los terminos de la familia base, dado que el nombre sugiere linaje Qwen.
-- Documentacion minima: la model card solo describe la cuantizacion. Se desconocen contexto, idiomas, datos de entrenamiento, alineacion y capacidades reales.
-- Sin validacion de la comunidad: 0 descargas y 0 likes. No hay terceros que hayan reproducido resultados, por lo que la integridad del artefacto no esta contrastada.
-- Degradacion por cuantizacion: una cuantizacion de 4 bits, incluso mixta, degrada la calidad respecto a la precision completa, especialmente en razonamiento, matematicas y generacion de codigo. Debe medirse con perplejidad y evaluaciones propias antes de usarla en produccion.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; no hay evaluacion de fidelidad ni de tasas de error publicada.
-- Sesgos: no evaluados. No hay analisis de sesgo de genero, etnia, idioma o dominio.
-- Portabilidad: al estar en formato MLX, no es directamente utilizable en infraestructura NVIDIA o AMD; exige conversion y validacion adicional.
-- Procedencia a verificar: la fecha de creacion registrada (25/09/2026) es posterior a la de la mayoria de artefactos publicos, y el modelo base no esta referenciado con un enlace en la model card. Conviene confirmar el origen exacto de los pesos antes de desplegarlos.
-- Sin garantias de mantenimiento: el repositorio no se ha actualizado desde su creacion y no hay indicios de soporte por parte del autor.
+- La cuantizacion en 4 bits puede degradar la precision respecto al modelo base; no se han publicado evaluaciones de esta variante concreta, por lo que la perdida real es desconocida.
+- La licencia no esta indicada en la informacion disponible; no se puede confirmar el uso comercial sin consultar el repositorio del modelo base.
+- El formato MLX limita el despliegue a hardware Apple; no es portable a CUDA sin conversion.
+- El modelo base ya pierde algo de precision frente a Qwen3.8-27B (85,8 % frente a 86,6 % de media), y la cuantizacion anade una segunda fuente de degradacion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; la reduccion de tokens de razonamiento podria aumentar el riesgo en tareas que requieren cadenas de deduccion largas.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingue homogeneo.
+- El sufijo "mtp" del nombre no esta explicado en la model card; conviene verificarlo antes de asumir capacidades adicionales.
+- Repositorio con pocas descargas (258) y likes (4): no hay validacion comunitaria extensa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chriswessels/ThinkingCap-Qwen3.8-27B-oQ4e-mtp
-- Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
-- Referencia de despliegue para formato MLX (no citada en la model card): https://github.com/ml-explore/mlx-lm
+- Hugging Face (esta cuantizacion): https://huggingface.co/chriswessels/ThinkingCap-Qwen3.8-27B-oQ4e-mtp
+- Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Blog de Bottlecap AI: https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/
+- Herramienta oQ (oMLX): https://github.com/jundot/omlx

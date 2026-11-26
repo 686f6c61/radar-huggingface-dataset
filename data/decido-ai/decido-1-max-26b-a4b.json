@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "decido-ai/decido-1-26b-a4b at main - Hugging Face",
-      "url": "https://huggingface.co/decido-ai/decido-1-26b-a4b/tree/main",
-      "snippet": "Instructions to use decido-ai/decido-1-26b-a4b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use decido-ai/decido-1-26b-a4b with Transformers:"
-    },
-    {
-      "title": "GitHub - decido-ai/decido: Calibrated decision model that beats Jev 1. ...",
-      "url": "https://github.com/decido-ai/decido",
-      "snippet": "Decido takes a state (text, JSON or a list) and typed questions, and returns a probability for every answer in the same wire format as TypeSafe's Jev \"System One\" API. The model is a LoRA fine-tune of Gemma 4 26B-A4B (~4B active parameters), shipped as an 8-bit GGUF for llama.cpp."
-    }
-  ]
+  "sources": []
 }

@@ -2,90 +2,113 @@
 
 ## Resumen
 
-GoLLeM-45M-PL es un modelo de lenguaje GPT-2 de 42,5 millones de parámetros entrenado desde cero sobre 2,96 GB de texto polaco, con un tokenizer BPE byte-level dedicado al polaco de 32 768 posiciones. Desarrollado por KateMajzel como artefacto de un experimento de investigación, responde a la pregunta de si un tokenizer específico para una lengua con diacríticos produce un mejor modelo que el tokenizer genérico de GPT-2 con el mismo presupuesto de entrenamiento. La conclusión del estudio es que no ofrece una ventaja en calidad, pero sí un coste computacional 2,5 veces menor.
+GoLLeM-45M-PL es un modelo de lenguaje de 42,5 millones de parámetros entrenado desde cero sobre texto en polaco por KateMajzel. Se trata de un artefacto de investigación, no de una herramienta de producción: el objetivo del experimento era determinar si un tokenizador BPE dedicado al polaco (32.768 entradas) produce un modelo mejor que el tokenizador original de GPT-2 bajo un presupuesto de entrenamiento idéntico. La respuesta que documenta el autor es que no es mejor, sino comparable a un coste 2,5 veces menor.
 
-El modelo se posiciona como una herramienta de investigación sobre eficiencia de tokenización y no como un producto utilizable en producción. Su relevancia radica en que demuestra, con datos empíricos, que la elección del tokenizer tiene un impacto limitado en el rendimiento final cuando se controla el presupuesto de texto, y que la métrica adecuada para comparar modelos con tokenizers distintos es bits-per-byte (BPB), no perplexity. El experimento ha sido replicado de forma independiente a escala 11B por el equipo de Bielik v3 PL.
+El modelo emplea una arquitectura transformer tipo GPT-2 (decodificador puro) con 8 capas, 8 cabezas de atención y 512 dimensiones ocultas, con una longitud de contexto de 1.024 tokens. Fue entrenado con 731 millones de tokens (2,96 GB de texto, 803.177 documentos) procedentes del corpus SpeakLeash, en una sola época y sobre una única GPU RTX 5080 en 49,7 minutos.
 
-## Especificaciones tecnicas
+Su relevancia es metodológica más que práctica: proporciona una comparación controlada entre tokenizadores, introduce el uso de bits-per-byte (BPB) frente a la perplejidad para comparaciones entre tokenizadores distintos y documenta que la diferencia de BPB entre dos semillas del mismo modelo (0,0186) supera la diferencia entre modelos con tokenizadores distintos (0,0124). El autor cita que el equipo de Bielik v3 llegó a la misma conclusión de forma independiente a escala de 11B.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (8 capas, 8 cabezas, 512 dimensiones) |
-| Parametros totales | 42 521 600 (25,7 M no-embedding) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1 024 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | polaco |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (8 capas × 8 cabezas × 512 dimensiones) |
+| Parámetros totales | 42.521.600 (25,7M no pertenecientes a embeddings) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 1.024 tokens |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | polaco (pl) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura GPT-2 estándar: un transformer decoder-only con 8 capas, 8 cabezas de atención y dimensión de modelo 512. El contexto es de 1 024 tokens y el total de parámetros asciende a 42,5 millones, de los cuales 25,7 millones corresponden a pesos no-embedding. Se entrenó durante una sola época sobre 731 millones de tokens (17,2 tokens por parámetro) procedentes del dataset SpeakLeash, con 803 177 documentos. La composición del corpus es: 37% enciclopedia y literatura, 22% foros, 27% web, 11% publicística y ciencia, y 3% textos oficiales. Se excluyeron deliberadamente traducciones, subtítulos, texto sintético, letras de canciones y Common Crawl crudo.
+El modelo es un transformer decoder-only de estilo GPT-2 con 8 capas, 8 cabezas de atención y dimensión oculta de 512, lo que da 42,5 millones de parámetros totales (25,7M excluyendo embeddings). El tokenizador es un BPE a nivel de byte con 32.568 entradas más 200 tokens especiales; el 27,9% de las entradas contienen diacríticos polacos, el round-trip es sin pérdida y no hay tokens inalcanzables mediante merges. La densidad del tokenizador es de 4,050 bytes/token en el corpus y 4,103 en el conjunto de validación, frente a 2,066 y 2,134 del tokenizador de GPT-2, es decir, 1,96 veces más denso.
 
-El entrenamiento usó AdamW con tasa de aprendizaje de 1e-3 a 1e-4, precisión bfloat16 y una única GPU RTX 5080, completándose en 49,7 minutos. La innovación principal no está en la arquitectura, sino en el tokenizer: un byte-level BPE con 32 568 posiciones más 200 especiales, del que un 27,9% de las posiciones contienen diacríticos polacos. Este tokenizer consigue una densidad de 1,96 veces más bytes por token que el tokenizer de GPT-2 (4,050 frente a 2,066 bytes/token en el corpus de entrenamiento), lo que reduce el coste computacional. Se bloquearon 199 tokens de relleno no utilizados mediante `bad_words_ids` durante la generación.
+El entrenamiento utilizó 2,96 GB de texto (803.177 documentos) de SpeakLeash: 37% enciclopedias y literatura, 22% foros, 27% web, 11% periodismo y ciencia, y 3% textos oficiales y administrativos. Se excluyeron deliberadamente traducciones y subtítulos (translationese), texto sintético, letras de canciones por derechos de autor y Common Crawl en bruto. Se realizó una única época sobre 731 millones de tokens (17,2 tokens por parámetro), con AdamW, learning rate de 1e-3 a 1e-4, precisión bfloat16 y una sola GPU RTX 5080 durante 49,7 minutos. No se documenta RLHF, DPO ni ajuste por instrucciones. Como innovación metodológica destaca el uso de BPB en lugar de perplejidad para comparar modelos con tokenizadores distintos, y el bloqueo de los 199 tokens de relleno no utilizados (32.569–32.767) mediante `bad_words_ids`.
 
 ## Capacidades
 
-- Generación de texto en polaco a nivel de frase gramaticalmente correcta, aunque con pérdida de coherencia tras varias frases.
-- Continuación de texto sin instrucciones (modelo base, sin fine-tuning instructivo).
-- Clasificación de texto zero-shot mediante log-likelihood con normalización PMI, evaluada en sentimiento (PolEmo2.0-IN) y topicos (8Tags).
-- Modelado de lenguaje con una métrica de BPB de 1,2114 en un held-out privado de SpeakLeash.
-- No soporta tool calling, agentes, visión ni audio.
-- No es multilingüe: entrenado exclusivamente en polaco.
+- Generación de texto en polaco: continuación de texto a nivel de frase con coherencia limitada más allá de unas pocas frases.
+- Modelado de lenguaje: predice el siguiente token; es un modelo base sin ajuste por instrucciones.
+- Clasificación zero-shot mediante verosimilitud con normalización PMI de dominio (sentimiento y tema), según los resultados declarados por el autor.
+- Tokenización específica para polaco con manejo correcto de diacríticos y round-trip sin pérdida.
+- No dispone de soporte de tool calling ni function calling.
+- No dispone de capacidades de agente ni de razonamiento multi-paso.
+- No dispone de modo thinking, visión ni audio.
+- Multilingüismo: únicamente polaco; no se documenta competencia en otros idiomas.
 
 ## Casos de uso
 
-- Investigación académica sobre eficiencia de tokenización: el modelo sirve como punto de referencia para estudiar el impacto del tokenizer en lenguas con diacríticos, permitiendo reproducir el experimento de ablación y comparar métricas como BPB o densidad de tokens.
-- Benchmarking de métricas de evaluación: su uso permite validar que la perplexity no es comparable entre modelos con tokenizers distintos, y que BPB es la métrica correcta, un resultado relevante para cualquier equipo que trabaje con modelos multilingües.
-- Prototipado de generación de texto en polaco: puede integrarse en pipelines de prueba para validar ideas de producto que requieran generación de texto en polaco a pequeña escala, siempre que no se necesite calidad de producción.
-- Estudio de alucinaciones en modelos pequeños: su tendencia a combinar entidades reales en afirmaciones falsas (por ejemplo, "la aldea se encontraba en el distrito de Częstochowa, municipio de Łęczna") lo convierte en un caso de estudio para analizar los límites de los modelos base de baja escala.
-- Evaluación de sesgos en datos de foros: al entrenarse con un 22% de contenido de foros, permite investigar cómo se reproducen prejuicios y registros lingüísticos informales en la generación.
-- Educación y divulgación: por su pequeño tamaño y licencia MIT, es adecuado para cursos de procesamiento de lenguaje natural donde se quiera mostrar el entrenamiento de un modelo desde cero con recursos limitados.
+- Reproducción de experimentos de ablación de tokenizadores: el modelo sirve como referencia R1 en una comparación controlada con el tokenizador de GPT-2 bajo presupuesto de bytes idéntico, usando BPB como métrica. Es su uso principal y el documentado por el autor.
+- Docencia e investigación sobre entrenamiento desde cero: el repositorio incluye código, datos y metodología completa, y el coste de 49,7 minutos en una RTX 5080 lo hace viable en laboratorios con hardware de consumo.
+- Estudio de tokenizadores BPE para lenguas eslavas: permite medir densidad (bytes/token), cobertura de diacríticos y efecto en el coste de entrenamiento a pequeña escala antes de escalar.
+- Evaluación de métricas de comparación entre tokenizadores: útil para demostrar empíricamente por qué la perplejidad por token no es comparable entre tokenizadores distintos y por qué BPB sí lo es.
+- Clasificación zero-shot de texto polaco en prototipos de investigación: con 47,2% en PolEmo2-IN y 31,5% en 8Tags, supera las líneas base de clase mayoritaria, pero con margen insuficiente para producción.
+- Generación de texto de relleno o sintético para pruebas de infraestructura: su bajo peso (0,2 GB de repositorio) permite desplegarlo en entornos de CI para validar pipelines de `transformers` o Text Generation Inference sin coste de GPU significativo.
+- Estudio de sesgos en datos de foros: dado que el 22% del corpus proviene de foros, el modelo puede emplearse para analizar qué sesgos y registros lingüísticos se reproducen con ese tipo de fuente.
 
 ## Benchmarks y rendimiento
 
-La tabla siguiente resume los resultados declarados por el autor en la model card. Se incluyen las comparaciones con los otros experimentos del estudio (R2a con tokenizer GPT-2 y mismo presupuesto de bytes, R2b con tokenizer GPT-2 y mismo número de tokens, R3 GPT-2 zero-shot).
+Resultados declarados por el autor (no verificados de forma independiente).
 
-| Tarea | GoLLeM-45M-PL (R1) | R2a (tokenizer GPT-2) | R2b (tokenizer GPT-2, mismo nº tokens) | GPT-2 zero-shot | Clase mayoritaria |
+BPB sobre conjunto privado de validación (1.999 documentos, 2.767.440 bytes idénticos por modelo; medias sobre 3 semillas para R1 y R2a):
+
+| Ejecución | Tokenizador | Presupuesto | BPB ↓ | Desv. típ. | Parámetros | Tiempo |
+|---|---|---|---|---|---|---|
+| R1 (este modelo) | Polaco, 32.768 | 2,96 GB | 1,2114 | 0,0100 | 42,5M | 49,7 min |
+| R2a | GPT-2, 50.257 | 2,96 GB (mismos bytes) | 1,1946 | 0,0035 | 51,5M | 122,4 min |
+| R2b | GPT-2, 50.257 | 2.970 pasos (mismos tokens) | 1,2756 | (n=1) | 51,5M | 62,4 min |
+| R3 | GPT-2 zero-shot | — | 2,9555 | (n=1) | 124M | — |
+
+Benchmarks zero-shot (verosimilitud con normalización PMI de dominio):
+
+| Tarea | R1 | R2a | GPT-2 | Clase mayoritaria | Aleatorio |
 |---|---|---|---|---|---|
-| BPB en SpeakLeash held-out (privado) | 1,2114 (sd 0,0100) | 1,1946 (sd 0,0035) | 1,2756 | 2,9555 | — |
-| PolEmo2-IN (accuracy, zero-shot) | 47,2% | 43,8% | — | 20,8% | 40,0% |
-| 8Tags (accuracy, zero-shot) | 31,5% | 29,8% | — | 17,8% | 16,5% |
+| PolEmo2-IN | 47,2% | 43,8% | 20,8% | 40,0% | 25,0% |
+| 8Tags | 31,5% | 29,8% | 17,8% | 16,5% | 12,5% |
 
-Interpretación del autor: la diferencia de BPB entre dos semillas del mismo modelo (0,0186) supera la diferencia entre modelos con tokenizers distintos (0,0124), lo que indica que no hay una ventaja significativa de un tokenizer sobre otro. Sin embargo, con presupuesto computacional igualado (R1 vs R2b), el tokenizer polaco gana por 5,30% en BPB, equivalente a 6,4 desviaciones estándar. La perplexity por token (30,7 para R1 y 5,8 para R2a) no es comparable entre modelos con tokenizers distintos.
+Perplejidad por token: 30,7 para R1 y 5,8 para R2a. El autor advierte que esta diferencia es un artefacto de la tokenización y que la única métrica correcta para comparar es BPB. Bajo presupuesto de cómputo igualado (R1 frente a R2b), el tokenizador polaco obtiene una ventaja de 5,30% en BPB, equivalente a 6,4 desviaciones típicas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo en fp32 ocupa aproximadamente 170 MB, en fp16 unos 85 MB. Cabe en cualquier GPU consumer moderna, incluso en integradas.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, desde una GTX 1050 hasta una RTX 5080 (usada en el entrenamiento). También es viable su ejecución en CPU.
-- Es desplegable en hardware de consumo sin restricciones.
-- Opciones de despliegue: transformers (pipeline de text-generation), vLLM, llama.cpp, Ollama o TGI. Dado el tamaño, la latencia es de milisegundos incluso en CPU.
-- Throughput estimado: no disponible, pero por su escala se espera una generación muy rápida, del orden de cientos de tokens por segundo en GPU.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (42,5M parámetros ≈ 170 MB de pesos) y en torno a 85 MB en bfloat16; el repositorio completo ocupa 0,2 GB.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM. El entrenamiento se realizó en una RTX 5080; la inferencia cabe holgadamente en GTX 1650, RTX 3050 o superiores.
+- Cabe en cualquier GPU de consumo, incluida la gama de entrada, y también en CPU.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repositorio). No se documentan pesos GGUF, por lo que llama.cpp y Ollama requerirían conversión previa.
+- Latencia y throughput: no disponibles en la información proporcionada. El tiempo de entrenamiento documentado (49,7 minutos para 731M tokens en una RTX 5080) da una referencia aproximada de la capacidad de cómputo, no de la latencia de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tokenizer | BPB (SpeakLeash held-out) | Licencia |
-|---|---|---|---|---|---|
-| GoLLeM-45M-PL | 42,5 M | 1 024 | Polaco BPE (32 768) | 1,2114 | MIT |
-| R2a (mismo estudio, tokenizer GPT-2) | 51,5 M | 1 024 | GPT-2 (50 257) | 1,1946 | MIT |
-| GPT-2 (zero-shot) | 124 M | 1 024 | GPT-2 (50 257) | 2,9555 | MIT |
+| Modelo | Parámetros | Contexto | Tokenizador | BPB (held-out privado) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| GoLLeM-45M-PL (R1) | 42,5M | 1.024 | Polaco, 32.768 | 1,2114 | MIT | Hugging Face + espejo SlayerLab |
+| R2a (ablación del autor) | 51,5M | no disponible | GPT-2, 50.257 | 1,1946 | no disponible | no disponible |
+| GPT-2 (R3, zero-shot) | 124M | 1.024 | GPT-2, 50.257 | 2,9555 | MIT | Hugging Face |
+| Bielik v3 (referencia a escala 11B) | ~11B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de comparaciones públicas con otros modelos polacos de tamaño similar, como Bielik, en la información proporcionada. La comparativa se limita a los experimentos internos del estudio de ablación.
+La comparación relevante es interna al propio experimento: R1 frente a R2a y R2b aísla el efecto del tokenizador con presupuesto de bytes y de pasos igualados. Frente a GPT-2 de 124M, el modelo reduce el BPB de 2,9555 a 1,2114 con un tercio de los parámetros, aunque la comparación no está controlada por presupuesto de entrenamiento. No se dispone de datos de benchmarks comparables con otros modelos polacos de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Escala muy reducida: el modelo produce polaco correcto a nivel de frase, pero alucina hechos y pierde coherencia tras varias frases. Un ejemplo documentado: "la aldea se encontraba en el distrito de Częstochowa, municipio de Łęczna", donde ambas entidades existen pero la combinación es falsa.
-- Es un modelo base: solo realiza continuación de texto, sin fine-tuning instructivo ni filtrado de seguridad.
-- Los datos de foros pueden reproducir prejuicios y lenguaje ofensivo presentes en el corpus. No es apto para aplicaciones con usuarios finales, especialmente menores, sin supervisión humana.
-- Los resultados son válidos únicamente para una escala de 42 M de parámetros y 3 GB de datos; no son extrapolables a modelos mayores.
-- El registro generado depende del mix de datos: con un prompt de cuento infantil, el modelo responde con lenguaje de foros o de entradas enciclopédicas.
-- El corpus contiene finales de línea de Windows (`\r\n`), que el modelo reproduce en sus salidas.
-- La perplexity no es comparable entre modelos con tokenizers distintos; debe usarse BPB.
+- Escala: el modelo genera polaco correcto a nivel de frase, pero alucina hechos y pierde coherencia tras unas pocas frases. El autor documenta el ejemplo «wieś znalazła się w powiecie częstochowskim, gminie Łęczna», donde ambos topónimos existen pero la combinación es falsa.
+- Modelo base: solo continuación de texto, sin ajuste por instrucciones ni filtrado de seguridad. No es apto para aplicaciones de usuario final, y en particular para menores, sin supervisión humana.
+- Sesgos: el 22% del corpus proviene de foros de internet, por lo que puede reproducir los sesgos y el registro lingüístico presentes en ellos.
+- Decodificación: la decodificación greedy entra en bucles de repetición, comportamiento típico en modelos de este tamaño. El autor recomienda `do_sample=True`, `temperature=0.8`, `top_p=0.9` y `repetition_penalty=1.15`, y bloquear los tokens 32.569–32.767 mediante `bad_words_ids`.
+- Contexto limitado a 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Monolingüe: solo polaco; no se documenta ninguna capacidad en otros idiomas.
+- Generalización: los resultados corresponden a una única escala (42M) y una única configuración; no se pueden extrapolar sin validación a otros tamaños.
+- Licencia MIT: permite uso comercial, pero el propio autor desaconseja el uso en producción por las limitaciones anteriores.
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`).
+- La licencia del corpus SpeakLeash se gestiona en el lado de SpeakLeash; el usuario debe verificar las condiciones de los datos subyacentes si redistribuye derivados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KateMajzel/GoLLeM-45M-PL
-- Repositorio del experimento (código, datos y metodología): https://github.com/KateMajzel/gollem-pl
-- Espejo del modelo: https://huggingface.co/SlayerLab/GoLLeM-45M-PL
-- Dataset SpeakLeash: https://speakleash.org/
+- Espejo: https://huggingface.co/SlayerLab/GoLLeM-45M-PL
+- Código, datos y metodología: https://github.com/KateMajzel/gollem-pl
+- Trabajo posterior sobre fiabilidad de evaluaciones de seguridad en polaco frente a inglés: https://github.com/KateMajzel/pilot-xstest-pl
+- Corpus SpeakLeash: https://speakleash.org/
+- Referencia citada por el autor (Bielik v3, escala 11B): arXiv 2604.10799
+- Dataset PolEmo2.0-IN: https://huggingface.co/datasets/allegro/klej-polemo2-in
+- Dataset 8Tags: https://huggingface.co/datasets/sdadas/8tags

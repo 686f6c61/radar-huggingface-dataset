@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "Filippo/qwen38-pi-pi-pilot-20261125-210346",
+  "slug": "filippo-qwen38-pi-pi-pilot-20261125-210346",
+  "author": "Filippo",
+  "url": "https://huggingface.co/Filippo/qwen38-pi-pi-pilot-20261125-210346",
+  "created_at": "2026-11-25T21:10:33.000Z",
+  "updated_at": "2026-11-25T21:40:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5739376585,
+  "storage_human": "5.7 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LE FILIPPO | Site officiel, avis, réservation et commande en ligne",
+      "url": "https://lefilippo.fr/",
+      "snippet": "Chez Le Filippo la passion et l'amour de la cuisine Italienne est au Rendez vous! On vous propose un voyage culinaire à la fois …"
+    },
+    {
+      "title": "Restaurant Le Filippo à Issy-les-Moulineaux - TheFork",
+      "url": "https://www.thefork.fr/restaurant/le-filippo-r802680",
+      "snippet": "Formule bambino - Restaurant Le Filippo à Issy-les-Moulineaux : Réservez gratuitement au restaurant Le Filippo, confirmation …"
+    },
+    {
+      "title": "Online Shoe Shop - Collection 2026/2027 | Filippo",
+      "url": "https://www.filippo.pl/en/",
+      "snippet": "We have a wide selection of Polish and foreign brands such as Marco Tozzi, Caprice, S.Oliver, Tamaris, Jana, Eska, Rieker. What …"
+    },
+    {
+      "title": "Filippo Ganna — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Filippo_Ganna",
+      "snippet": "Filippo Ganna, né le 25 juillet 1996 à Verbania (Piémont, Italie), est un coureur cycliste italien, membre de l'équipe Ineos. Il pratique …"
+    },
+    {
+      "title": "Restaurant Le Filippo à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/le-filippo-r555131",
+      "snippet": "-20% sur la carte - Restaurant Le Filippo à Paris : Réservez gratuitement au restaurant Le Filippo, confirmation immédiate de votre …"
+    }
+  ]
+}

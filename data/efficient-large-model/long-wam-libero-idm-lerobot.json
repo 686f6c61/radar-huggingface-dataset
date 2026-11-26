@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 225,
+  "downloads_30d": 228,
   "trending_score": 0,
   "parameters": 12406309603,
   "parameters_human": "12.41B",
@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Définitions : efficient - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/efficient/27932",
-      "snippet": "recommandation : Dans l'usage courant, non technique, préférer efficacité, notamment pour parler d'une personne. De même, …Read more"
-    },
-    {
-      "title": "Définition de efficient | Dictionnaire français - La langue française",
-      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/efficient",
-      "snippet": "Feb 21, 2024 · Définitions de « efficient » Efficient - Adjectif (Philosophie) Qui est cause directe d'un effet. (Anglicisme, courant) Qui …"
-    },
-    {
-      "title": "Quelle est la différence entre efficace et efficient - toutCOMMENT",
-      "url": "https://business.toutcomment.com/article/quelle-est-la-difference-entre-efficace-et-efficient-12105.html",
-      "snippet": "Feb 20, 2026 · \"Efficient\" est relatif à l’efficacité, mais se rapporte à la relation entre les objectifs atteints et les ressources utilisées …"
-    },
-    {
-      "title": "efficient - Définitions, synonymes, prononciation, exemples | Dico en ...",
-      "url": "https://dictionnaire.lerobert.com/definition/efficient",
-      "snippet": "Définition, exemples et prononciation de efficient : Efficace, dynamique, capable de rendement.…"
-    },
-    {
-      "title": "EfficientCoach | Formations Coach en ligne certifiantes",
-      "url": "https://efficientcoach.com/fr/",
-      "snippet": "Devenez coach certifié avec les formations 100 % en ligne d'EfficientCoach : flexibles, accréditées (IPHM, CMA, CPD) et …"
-    }
-  ]
+  "sources": []
 }

@@ -2,105 +2,87 @@
 
 ## Resumen
 
-SmolLM2-1.7B-telegram-chats-GGUF es la versión cuantizada en formato GGUF del ajuste fino `Offlin33er/SmolLM2-1.7B-telegram-chats`, publicada por el usuario mradermacher, conocido por generar y distribuir cuantizaciones estáticas de modelos abiertos. El modelo subyacente es un ajuste supervisado (SFT) del modelo SmolLM2 de 1,7 mil millones de parámetros, orientado a reproducir el estilo de conversaciones exportadas de Telegram. El resultado es un modelo pequeño, denso y monolingüe en inglés, pensado para inferencia local en hardware de consumo.
+SmolLM2-1.7B-telegram-chats-GGUF es una coleccion de cuantizaciones GGUF del modelo Offlin33er/SmolLM2-1.7B-telegram-chats, un ajuste fino supervisado (SFT) de SmolLM2-1.7B orientado a reproducir el estilo de conversacion de chats de Telegram. El modelo original fue entrenado con TRL sobre el dataset sintetico Offlin33er/telegram-chat-export-synthetic, y esta version la publica mradermacher, especialista en generar cuantizaciones estaticas de modelos abiertos para su uso con llama.cpp y derivados.
 
-El problema que resuelve es muy acotado: disponer de un modelo ligero capaz de mantener conversaciones con un registro y una distribución léxica similares a los chats de Telegram sobre los que se entrenó, algo útil para prototipos de bots o experimentos de estilización conversacional. No se trata de un modelo de propósito general ni de un asistente de razonamiento: la información disponible no documenta evaluación alguna, ni benchmarks, ni detalles del conjunto de datos más allá del nombre del dataset sintético empleado.
+El modelo parte de SmolLM2-1.7B, un transformer decoder-only de 1.711.376.384 parametros (aproximadamente 1,7 mil millones) desarrollado originalmente por Hugging Face. La relevancia de esta ficha es practica: el repositorio GGUF permite ejecutar el ajuste fino en hardware de consumo con un rango de cuantizaciones que va desde Q2_K (0,8 GB) hasta f16 (3,5 GB), lo que lo hace accesible para prototipos de asistentes conversacionales ligeros.
 
-Es relevante ahora por dos motivos prácticos. Primero, porque el ecosistema SmolLM2 ofrece un punto de partida de 1,7B parámetros que cabe en GPU de consumo y en CPU, y las cuantizaciones GGUF de mradermacher cubren desde Q2_K (0,8 GB) hasta f16 (3,5 GB). Segundo, porque este artefacto concreto tiene cero descargas y cero "likes" en el momento de redactar la ficha: es un experimento reciente, no validado por la comunidad, cuya licencia ni siquiera está declarada.
+No se dispone de informacion publica sobre la longitud de contexto efectiva del ajuste fino, los detalles del dataset sintetico ni resultados de evaluacion. La model card del repositorio GGUF es una plantilla estandar de mradermacher centrada en la lista de cuantizaciones y no aporta datos de entrenamiento adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia SmolLM2); no es MoE ni SSM |
-| Parametros totales | 1.711.376.384 (1,71B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base SmolLM2, no declarada en la model card) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repo del cuantizador); safetensors en el modelo base |
-| Tamano del repositorio | 15,3 GB (suma de todas las cuantizaciones) |
-| Modelo base | Offlin33er/SmolLM2-1.7B-telegram-chats |
-| Dataset de ajuste | Offlin33er/telegram-chat-export-synthetic |
-| Metodo de ajuste | SFT (supervised fine-tuning) con TRL |
-| Fecha de publicacion | 2026-09-16 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (heredada de SmolLM2-1.7B) |
+| Parametros totales | 1.711.376.384 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el modelo como un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre `Offlin33er/SmolLM2-1.7B-telegram-chats`, que a su vez es un derivado de la familia SmolLM2 de 1,7B parametros. No se documentan ni el numero de tokens de entrenamiento del ajuste, ni la composicion exacta del dataset `telegram-chat-export-synthetic` (solo se sabe que es sintetico y que reproduce conversaciones exportadas de Telegram), ni si hubo etapas de RLHF, DPO o preferencias. Tampoco se publica la configuracion de entrenamiento (learning rate, epocas, contexto de entrenamiento, mascaras de perdida sobre turnos del asistente).
+La arquitectura subyacente es la de SmolLM2-1.7B, un transformer decoder-only con atencion causal. El modelo ha sido sometido a un ajuste fino supervisado (SFT) mediante TRL, segun las etiquetas del repositorio, sobre el dataset Offlin33er/telegram-chat-export-synthetic, de naturaleza sintetica y orientado a conversaciones con el formato y el registro de Telegram. El entrenamiento se ejecuto en infraestructura HF Jobs, segun los metadatos del autor.
 
-La innovacion tecnica de este repositorio no esta en el modelo, sino en el proceso de cuantizacion: mradermacher genera cuantizaciones estaticas (no ponderadas ni imatrix, tal como se indica explicitamente en la model card) siguiendo el esquema de llama.cpp, con 12 variantes que van de 0,8 GB a 3,5 GB. La model card advierte de que las cuantizaciones con importancia matrix (imatrix) no estan disponibles y que probablemente no se generen. Se incluye ademas la etiqueta `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de Hugging Face.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, la presencia de RLHF o DPO, ni innovaciones tecnicas adicionales. Las cuantizaciones publicadas por mradermacher son estaticas (no ponderadas por imatrix); el propio autor indica que las variantes con imatrix no estaban disponibles en el momento de la publicacion.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con el registro y el estilo propios de los chats de Telegram presentes en el dataset de ajuste.
-- Mantenimiento de dialogos multi-turno dentro del formato de chat heredado de SmolLM2.
-- Capacidad multilingue: limitada al ingles segun la etiqueta de idioma del repositorio; no se declara soporte de castellano ni de otras lenguas.
-- Tool calling / function calling: no disponible; no se documenta en la model card.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta ni se ha validado.
-- Modo thinking, vision o audio: no disponible; no se declara ninguna capacidad multimodal ni de razonamiento extendido.
-- Compatibilidad de despliegue: los pesos GGUF son utilizables con llama.cpp, Ollama y otros runners compatibles con GGUF, y el repo esta marcado como compatible con endpoints.
+- Generacion de texto conversacional en ingles, con estilo ajustado a chats de Telegram.
+- Respuesta multi-turno en formato de conversacion.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso explicito.
+- Cobertura multilingue limitada al ingles segun la etiqueta de idioma del repositorio.
+- No se documentan capacidades de vision, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Prototipado de bots conversacionales con estetica Telegram: al haberse ajustado sobre un dataset de chats exportados de esa plataforma, el modelo reproduce turnos cortos, coloquiales y encadenados, lo que permite construir demos de bot con un tono coherente sin ingenieria de prompts compleja.
-- Generacion de datos sinteticos de conversacion: el modelo puede usarse para aumentar un corpus de dialogos con estilo similar al de Telegram, util para entrenar clasificadores de intencion o sistemas de moderacion en ese dominio concreto.
-- Inferencia local en portatiles sin GPU dedicada: con la cuantizacion Q4_K_M (1,2 GB) puede ejecutarse en CPU con llama.cpp, lo que permite probar asistentes conversacionales en maquinas modestas o en entornos sin acceso a aceleradores.
-- Evaluacion de tecnicas de cuantizacion: al ofrecer 12 variantes del mismo modelo (de Q2_K a f16), es un banco de pruebas practico para medir la degradacion de calidad conversacional segun el nivel de compresion, aplicable a estudios de perplexity y de fidelidad de estilo.
-- Simulacion de conversaciones para pruebas de producto: integrable en pipelines de QA para generar trafico conversacional realista hacia un backend de mensajeria, verificando flujos de respuesta, rate limits y formatos de mensaje.
-- Fine-tuning posterior sobre dominios especificos: al ser un modelo de 1,7B con pesos abiertos en safetensors en el repositorio base, sirve como punto de partida barato para ajustes de nicho (soporte, comunidad, foros) que requieran vocabulario coloquial en ingles.
-- Despliegue en el borde (edge) o en contenedores ligeros: con ficheros de 0,8-1,9 GB segun cuantizacion, encaja en imagenes Docker pequenas y en dispositivos con almacenamiento limitado, siempre que la tarea sea estilistica y no de razonamiento.
+- Prototipado de bots de Telegram: el ajuste fino imita el registro de conversaciones de Telegram, por lo que sirve para generar respuestas con un tono coherente con la plataforma antes de conectar el bot a la API real.
+- Generacion de datos sinteticos de conversacion: util para crear corpus de entrenamiento o de evaluacion con formato de chat estilo Telegram en ingles.
+- Pruebas de integracion con llama.cpp: las cuantizaciones Q4_K_M (1,2 GB) y Q8_0 (1,9 GB) permiten validar pipelines de inferencia local en portatiles sin GPU dedicada.
+- Asistente conversacional offline: con Q4_K_S o Q4_K_M cabe en GPUs de consumo y en CPU con RAM suficiente, adecuado para demos y entornos sin conectividad.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes del mismo modelo, lo que facilita medir el impacto de la cuantizacion en perplejidad y calidad conversacional.
+- Filtrado y clasificacion de mensajes de chat: el modelo puede usarse como base para tareas de etiquetado de conversaciones en ingles, siempre con validacion humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y tampoco se aportan curvas de perplexity para las distintas cuantizaciones. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo, por lo que no existe evidencia externa de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,8-1,0 GB con Q2_K; 1,1-1,3 GB con Q4_K_S/Q4_K_M; 1,5 GB con Q6_K; 1,9 GB con Q8_0; 3,5 GB con f16. Hay que sumar el espacio de la cache KV, que depende del contexto efectivo configurado y del numero de secuencias simultaneas.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM para cuantizaciones bajas; RTX 3060/4060, RTX 4090, A100 y H100 pueden alojar el modelo sin problema, aunque para un modelo de este tamano la GPU estara infrautilizada salvo que se sirvan muchas peticiones concurrentes.
-- GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual (GTX 1650 4 GB en adelante) con cuantizaciones Q4 o superiores, y tambien en Apple Silicon mediante Metal con llama.cpp.
-- CPU y memoria RAM: viable en modo CPU con 2-4 GB de RAM libre usando Q4_K_M o Q5_K_M; Q8_0 y f16 requieren algo mas de margen (2-4 GB) y penalizan la latencia.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runner compatible con GGUF; el repositorio base en safetensors puede servirse con vLLM, TGI o Transformers.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por peticion en ninguna configuracion de hardware.
+- VRAM estimada: entre 0,8 GB (Q2_K) y 3,5 GB (f16); las variantes recomendadas Q4_K_M y Q8_0 requieren aproximadamente 1,2 GB y 1,9 GB respectivamente.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para las cuantizaciones pequenas; RTX 3060, RTX 4060, RTX 4090 y A100 son sobredimensionadas para este tamano y solo aportan velocidad.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas e incluso en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF; el repositorio esta etiquetado como compatible con endpoints.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparativa se limita a atributos verificables; no hay datos de rendimiento publicados para este ajuste concreto, por lo que la columna de benchmarks queda como "no disponible" en todos los casos.
-
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| mradermacher/SmolLM2-1.7B-telegram-chats-GGUF (este) | 1,71B densos | no disponible | no disponible | Ajuste SFT sobre chats de Telegram, solo ingles |
-| Offlin33er/SmolLM2-1.7B-telegram-chats | 1,71B densos | no disponible | no disponible | Modelo original en safetensors del que deriva este GGUF |
-| SmolLM2-1.7B-Instruct | 1,71B densos | no disponible en esta ficha | licencia abierta del proyecto SmolLM2 | Asistente de proposito general, multilingue |
-| Modelos densos de ~1,5B de otros fabricantes (Qwen2.5-1.5B, Llama-3.2-1B) | ~1-1,5B | mayor que el de SmolLM2 en sus variantes Instruct | licencias abiertas con condiciones variables | Asistentes de proposito general con soporte de tool calling |
-
-Conclusion practica: este artefacto no compite en capacidad general con los asistentes pequenos de proposito general; su interes es estilistico y experimental. No se dispone de datos objetivos para afirmar que supere o iguale a ninguna de las alternativas en ninguna tarea.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| SmolLM2-1.7B-telegram-chats (este) | 1,71 B | no disponible | Apache 2.0 | GGUF | Ajuste fino conversacional estilo Telegram, solo ingles |
+| SmolLM2-1.7B (base) | 1,71 B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo generalista de Hugging Face sin ajuste conversacional |
+| Qwen2.5-1.5B | 1,54 B | no disponible | Apache 2.0 | safetensors, GGUF | Alternativa multilingue de tamano comparable |
+| Llama-3.2-1B | 1,24 B | no disponible | Llama 3.2 Community License | safetensors, GGUF | Alternativa de Meta con licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. No se ha publicado ninguna evaluacion de sesgo, toxicidad o representacion para este ajuste ni para su dataset sintetico de origen.
-- Riesgo de alucinacion: alto y no medido. Al ser un ajuste de estilo sobre dialogos, no hay garantia de fidelidad factual; el modelo puede generar afirmaciones plausibles sin base.
-- Limitaciones de idioma: el repositorio declara unicamente ingles. No hay evidencia de que responda correctamente en castellano ni en otras lenguas.
-- Longitud de contexto: no declarada. Al heredar el modelo base SmolLM2, es previsible que el contexto util sea corto en comparacion con asistentes actuales, pero no hay confirmacion en la informacion disponible.
-- Licencia: no disponible. Esto impide determinar si el uso comercial esta permitido; no debe desplegarse en produccion con fines comerciales sin aclarar antes la licencia del modelo base y del ajuste intermedio.
-- Procedencia de los datos: el dataset es sintetico y se describe como exportacion de chats de Telegram. No se documenta si hubo anonimizacion, consentimiento o filtrado de contenido sensible, lo que es un riesgo de cumplimiento relevante.
-- Madurez: cero descargas y cero likes, sin benchmarks ni validacion independiente. Debe tratarse como un experimento, no como un componente de produccion.
-- Cuantizaciones: las variantes Q2_K, Q3_K_S y Q3_K_M degradan la calidad de forma apreciable; la propia model card etiqueta Q3_K_M como "lower quality". Solo Q4_K_S, Q4_K_M, Q6_K y Q8_0 son razonables para uso real.
-- Ausencia de cuantizaciones imatrix: la model card indica que no estan disponibles y probablemente no se generen, por lo que no se puede recurrir a ese formato para mejorar la relacion calidad/tamano.
-- Soporte de herramientas y agentes: no documentado, por lo que no debe asumirse compatibilidad con function calling en pipelines de agentes.
+- Entrenado exclusivamente en ingles segun la etiqueta de idioma; el rendimiento en castellano no esta garantizado.
+- El dataset de entrenamiento es sintetico, lo que puede introducir artefactos y patrones repetitivos en las respuestas.
+- Riesgo de alucinacion inherente a un modelo de 1,7 mil millones de parametros; no es adecuado para tareas que requieran precision factual sin verificacion.
+- No se han publicado evaluaciones de sesgo, toxicidad ni seguridad.
+- La licencia Apache 2.0 permite uso comercial, pero el ajuste fino hereda las limitaciones del modelo base SmolLM2.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad; para produccion se recomienda Q4_K_M o superior.
+- No hay informacion sobre la longitud de contexto efectiva tras el ajuste fino; conviene validarla antes de desplegar conversaciones largas.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/SmolLM2-1.7B-telegram-chats-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/SmolLM2-1.7B-telegram-chats-GGUF
 - Modelo base del ajuste: https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats
-- Dataset de ajuste: https://huggingface.co/datasets/Offlin33er/telegram-chat-export-synthetic
-- Pagina de resumen de cuantizaciones de mradermacher: https://hf.tst.eu/model#SmolLM2-1.7B-telegram-chats-GGUF
-- Registro de entrenamiento (Trackio): https://Offlin33er-smollm2-telegram-chat-sft-trackio.hf.space?project=smollm2-telegram-chat-sft&runs=Offlin33er-1789556763&sidebar=collapsed
-- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de ficheros GGUF citada por el autor (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que provee la infraestructura al cuantizador: https://www.nethype.de/
-- Nota: las busquedas web realizadas no devolvieron resultados relacionados con este modelo; los unicos resultados obtenidos eran paginas no pertinentes (foros en chino sobre vivienda, videojuegos, Padlet, perifericos y auriculares), por lo que no se han incluido.
+- Dataset de entrenamiento: https://huggingface.co/datasets/Offlin33er/telegram-chat-export-synthetic
+- Panel de entrenamiento (Trackio): https://Offlin33er-smollm2-telegram-chat-sft-trackio.hf.space?project=smollm2-telegram-chat-sft&runs=Offlin33er-1789556763&sidebar=collapsed
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#SmolLM2-1.7B-telegram-chats-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

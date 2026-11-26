@@ -2,48 +2,48 @@
 
 ## Resumen
 
-MoA-155M es un modelo de generacion de texto de pequeno tamano (155 millones de parametros) publicado por el usuario reaperdoesntknow bajo el paraguas de Convergent Intelligence LLC: Research Division. Se distribuye a traves de Hugging Face con la libreria transformers y el pipeline de text-generation, y esta etiquetado con los tags `moa`, `moa_metric` y `convergentintel`, que lo vinculan al marco teorico denominado Discrepancy Calculus (DISC) descrito en su model card. El modelo esta entrenado o ajustado sobre los datasets TIGER-Lab/MathInstruct y yahma/alpaca-cleaned, lo que sugiere un enfoque hacia instrucciones y matematicas.
+MoA-155M es un modelo de generación de texto de pequeño tamano (155 millones de parámetros, según se deduce de su identificador) publicado por el usuario reaperdoesntknow bajo el paraguas de Convergent Intelligence LLC: Research Division. El modelo se distribuye a través de Hugging Face con la librería transformers y el pipeline de text-generation, y esta etiquetado con los tags `moa`, `moa_metric` y `convergentintel`, que lo vinculan al marco teórico "Discrepancy Calculus" (DISC) descrito en su model card.
 
-La relevancia de este modelo no reside en su escala, sino en su caracter experimental: la model card lo presenta como parte de un portafolio de investigacion sobre medida de la discrepancia entre el comportamiento esperado y el observado durante el entrenamiento, con conceptos como el operador de discrepancia, los conjuntos de salto y el "ghost imprinting". No obstante, la model card esta mayoritariamente sin rellenar (multitud de secciones con "[More Information Needed]"), por lo que los detalles de arquitectura, entrenamiento y evaluacion no estan documentados por el autor.
+El modelo aparece afinado sobre los datasets TIGER-Lab/MathInstruct y yahma/alpaca-cleaned, lo que sugiere un enfoque hacia instrucciones y razonamiento matemático basico. La model card, sin embargo, es en gran medida una plantilla autogenerada por Hugging Face con la mayoria de campos marcados como "[More Information Needed]", por lo que no hay datos oficiales sobre arquitectura exacta, contexto, tokenizador ni procedimiento de entrenamiento.
 
-El modelo esta disponible con licencia Apache 2.0, soporta unicamente ingles y su repositorio ocupa aproximadamente 0,4 GB, lo que es coherente con un checkpoint de 155M de parametros en precision de 16 bits. Es un modelo adecuado para experimentacion local en hardware modesto, no para despliegues de produccion con requisitos de calidad contrastada.
+Su relevancia practica es limitada pero concreta: se trata de un modelo muy pequeno (repo de 0,4 GB) que puede ejecutarse en hardware de consumo modesto, lo que lo hace util como banco de pruebas para experimentacion con fine-tuning, destilacion o pipelines de generacion de texto de baja latencia. No obstante, la ausencia de benchmarks, de documentacion tecnica y de un autor verificable obliga a tratarlo con cautela en entornos de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como `moa`; no se detalla la arquitectura interna) |
-| Parametros totales | 155M (segun el nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (la model card no la especifica; el nombre sugiere "Mixture of Adapters" o "Mixture of Agents", sin confirmar) |
+| Parametros totales | 155M (inferido del identificador del modelo; no confirmado en la model card) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato nativo de transformers; no se listan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | ingles (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors/bin de transformers (no se especifica en la model card; repositorio de 0,4 GB) |
+| Tipos de cuantizacion | no disponible (compatible con cuantizacion estandar de transformers, pero no se documentan variantes publicadas) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (formato estandar de transformers; no se detalla en la model card) |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura interna del modelo. El tag `moa` podria sugerir un enfoque de "mixture of adapters" o similar, pero el autor no lo confirma ni aporta detalles sobre capas, atencion, dimensiones ocultas ni tokenizador. Tampoco se especifica si se trata de un modelo entrenado desde cero o de un ajuste fino de una base existente; el campo "Finetuned from model" aparece como "[More Information Needed]".
+La model card no proporciona informacion sobre la arquitectura interna del modelo. El identificador "MoA" y los tags `moa` y `moa_metric` sugieren alguna variante de "Mixture of Adapters" o "Mixture of Agents", pero no hay documentacion tecnica que lo confirme. Tampoco se especifican el numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador.
 
-En cuanto a datos, se citan dos datasets: TIGER-Lab/MathInstruct (instrucciones matematicas) y yahma/alpaca-cleaned (instrucciones generales limpias en ingles). No se indica el numero de tokens, la composicion exacta del dataset, si hubo RLHF/DPO, ni los hiperparametros de entrenamiento (regimen de precision, learning rate, batch size). La unica innovacion tecnica mencionada es el marco DISC, descrito de forma teorica en la model card y en documentos enlazados, pero sin traduccion concreta a decisiones de arquitectura o entrenamiento verificables en este checkpoint.
+En cuanto al entrenamiento, la model card lista dos datasets: TIGER-Lab/MathInstruct (instrucciones matematicas) y yahma/alpaca-cleaned (instrucciones generales limpias). No se indica el numero de tokens, la composicion exacta del dataset, si hubo RLHF/DPO, ni los hiperparametros de entrenamiento (todos los campos aparecen como "[More Information Needed]"). La seccion "Discrepancy Calculus Foundation" describe un marco teorico propio del autor (operador de discrepancia, jump sets, ghost imprinting) que no aporta detalles verificables sobre el entrenamiento real del modelo.
 
 ## Capacidades
 
-- Generacion de texto en ingles en formato de instrucciones, segun el pipeline `text-generation`.
-- Ajuste orientado a matematicas e instrucciones generales por los datasets empleados (MathInstruct y alpaca-cleaned).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidad multilingue limitada al ingles declarado.
-- No se documentan capacidades especiales como modo de razonamiento explicito, vision o audio.
+- Generacion de texto en ingles a partir de instrucciones (pipeline text-generation).
+- Afinado sobre instrucciones generales (alpaca-cleaned) y matematicas (MathInstruct), lo que sugiere cierta capacidad para resolver problemas aritmeticos y de razonamiento basico.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingues: solo ingles declarado.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Experimentacion educativa con modelos pequenos: util para estudiar el comportamiento de un transformer de 155M en tareas de instrucciones, con un coste de computo minimo y en entornos de un solo equipo.
-- Prototipado rapido de pipelines de generacion de texto: sirve para validar integraciones con la libreria transformers y el ecosistema Hugging Face antes de escalar a modelos mayores.
-- Generacion de respuestas cortas en ingles para tareas de matematicas basicas: el ajuste sobre MathInstruct sugiere utilidad en ejercicios aritmeticos sencillos, siempre con verificacion humana.
-- Pruebas de investigacion sobre el marco DISC: el modelo se presenta como parte de un portafolio teorico, por lo que puede emplearse para reproducir o contrastar los conceptos descritos en sus documentos asociados.
-- Evaluacion comparativa de modelos pequenos: como referencia de linea base en estudios de escalado o de ajuste por instrucciones en ingles.
-- Despliegue en entornos con recursos muy limitados: al ocupar 0,4 GB, puede ejecutarse en CPU o en GPU de gama baja para demos y pruebas internas, no para produccion con garantias de calidad.
+- Prototipado rapido de pipelines de generacion de texto: al ocupar 0,4 GB, el modelo puede cargarse en una GPU de consumo o incluso en CPU para validar flujos de inferencia antes de escalar a modelos mayores.
+- Experimentacion con fine-tuning ligero: su tamano de 155M permite iterar con LoRA o adaptadores completos en una sola GPU, usando alpaca-cleaned como base de instrucciones.
+- Generacion de respuestas cortas en ingles para tareas de clasificacion o extraccion: util como baseline en entornos de investigacion donde se necesita un modelo rapido y de bajo coste.
+- Educacion y demos: adecuado para talleres o notebooks que ensenan el ciclo completo de carga, inferencia y evaluacion de un modelo de transformers.
+- Pruebas de cuantizacion y despliegue: sirve para validar configuraciones de llama.cpp, Ollama o vLLM con un modelo pequeno antes de migrar a uno mayor.
+- Investigacion sobre el marco DISC: el modelo se presenta como parte del portfolio de Convergent Intelligence, por lo que puede usarse para reproducir o estudiar las tecnicas descritas en su documentacion teorica.
 
 ## Benchmarks y rendimiento
 
@@ -51,39 +51,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,3-0,4 GB en FP16 (155M de parametros), y menos de 0,2 GB en cuantizacion de 8 bits si se convierte el checkpoint.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; tarjetas como RTX 3060, RTX 4060 o superiores son mas que suficientes. Tambien puede ejecutarse en CPU.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: transformers (nativo), y previsiblemente llama.cpp/Ollama si se genera una conversion a GGUF, aunque el autor no publica variantes cuantizadas.
-- Latencia y throughput estimados: no disponibles; por el tamano, se espera una latencia muy baja en GPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 0,6-0,7 GB en fp16 (155M parametros × 2 bytes + overhead), y en torno a 0,3-0,4 GB en cuantizacion de 8 bits. Cifras estimadas a partir del tamano del repo (0,4 GB), no confirmadas por el autor.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tarjetas como RTX 3060, RTX 4060, T4 o incluso iGPU con memoria unificada son suficientes.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna e incluso en CPU para inferencia por lotes pequenos.
+- Opciones de despliegue: transformers (nativo), llama.cpp y Ollama si se genera una version GGUF (no publicada oficialmente), vLLM y TGI para servir en produccion (compatibilidad estandar de transformers).
+- Latencia y throughput estimados: no disponibles; por el tamano, se espera una latencia de pocos milisegundos por token en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| MoA-155M | 155M | no disponible | Apache 2.0 | Hugging Face | Model card incompleta; enfoque experimental DISC |
-| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 tokens | Apache 2.0 | Hugging Face | Modelo pequeno documentado y con benchmarks publicados |
-| Qwen2.5-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | Hugging Face | Mayor tamano y contexto, con evaluaciones publicadas |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face | Mayor capacidad, ampliamente evaluado |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| MoA-155M (este modelo) | 155M (inferido) | no disponible | apache-2.0 | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face, ampliamente adoptado |
+| SmolLM-135M | 135M | 2048 tokens | apache-2.0 | Hugging Face, con benchmarks publicados |
+| Qwen2.5-0.5B | 494M | 32 768 tokens | apache-2.0 | Hugging Face, con benchmarks publicados |
 
-La comparacion es orientativa: MoA-155M carece de datos publicos de contexto y rendimiento, por lo que no puede contrastarse numericamente con las alternativas.
+La comparacion es aproximada: MoA-155M carece de benchmarks y de documentacion tecnica, mientras que las alternativas citadas publican resultados y especificaciones completas. En terminos de rendimiento real, no es posible establecer una comparacion rigurosa con los datos disponibles.
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no hay informacion sobre sesgos, datos de entrenamiento detallados ni evaluaciones, lo que impide valorar su calidad de forma rigurosa.
-- Riesgo de alucinacion alto y no medido, especialmente por el ajuste sobre instrucciones y matematicas sin evaluacion publicada.
-- Limitacion idiomatica: solo se declara ingles; no hay soporte documentado de castellano.
-- Longitud de contexto desconocida, lo que impide planificar usos con conversaciones o documentos largos.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de evaluaciones y de documentacion desaconseja su uso en produccion sin validacion propia.
-- El marco DISC y los documentos asociados son material teorico del autor; no constituyen evidencia empirica del rendimiento del modelo.
-- Sin variantes cuantizadas oficiales ni garantias de mantenimiento del repositorio.
+- Ausencia total de benchmarks: no hay evidencia publicada sobre calidad de generacion, razonamiento o matemáticas, a pesar de estar afinado sobre MathInstruct.
+- Model card incompleta: la mayoria de secciones son plantillas autogeneradas con "[More Information Needed]", lo que impide verificar arquitectura, contexto o procedimiento de entrenamiento.
+- Riesgo de alucinacion: alto, dado el reducido tamano del modelo y la falta de evaluacion; no se recomienda para tareas que requieran precision factual.
+- Solo ingles: no se declaran capacidades multilingues, por lo que su uso en castellano no esta soportado.
+- Sesgos conocidos: no documentados; los datasets de origen (alpaca-cleaned y MathInstruct) pueden introducir sesgos propios, pero no se ha realizado analisis.
+- Licencia apache-2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; la responsabilidad recae en el integrador.
+- Autor y organizacion no verificables: "Convergent Intelligence LLC: Research Division" no dispone de trayectoria publica contrastable, y el marco DISC no cuenta con revision por pares conocida.
+- No apto para produccion critica: sin evaluacion de robustez, seguridad ni sesgos, su uso en sistemas en produccion debe limitarse a prototipos o entornos controlados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-155M
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Documento Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Sc (enlace truncado en la model card)
+- Documento teorico DISC: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Dataset MathInstruct: https://huggingface.co/datasets/TIGER-Lab/MathInstruct
 - Dataset alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
-- Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
+- Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

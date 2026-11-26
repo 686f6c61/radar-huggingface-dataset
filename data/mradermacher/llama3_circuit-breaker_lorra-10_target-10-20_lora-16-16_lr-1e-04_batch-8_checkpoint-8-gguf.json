@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/llama3_circuit-breaker_lorra-10_target-10-20_lora-16-16_lr-1e-04_batch-8_checkpoint-8-GGUF",
+  "slug": "mradermacher-llama3_circuit-breaker_lorra-10_target-10-20_lora-16-16_lr-1e-04_batch-8_checkpoint-8-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama3_circuit-breaker_lorra-10_target-10-20_lora-16-16_lr-1e-04_batch-8_checkpoint-8-GGUF",
+  "created_at": "2025-03-09T13:58:18.000Z",
+  "updated_at": "2026-11-26T00:24:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:LLM-GAT/llama-3-8b-instruct-rr-checkpoint-8",
+    "base_model:quantized:LLM-GAT/llama-3-8b-instruct-rr-checkpoint-8",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820229248,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "LLM-GAT/llama-3-8b-instruct-rr-checkpoint-8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

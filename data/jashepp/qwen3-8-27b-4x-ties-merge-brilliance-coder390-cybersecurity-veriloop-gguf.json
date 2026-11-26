@@ -87,5 +87,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "John Adams - National Endowment for the Arts",
+      "url": "https://www.arts.gov/honors/opera/john-adams",
+      "snippet": "He confronts the conundrums and moral complexities of our time, and dares audiences to do the same. John Adams was born in …"
+    }
+  ]
 }

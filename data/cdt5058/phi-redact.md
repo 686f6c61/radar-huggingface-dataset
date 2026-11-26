@@ -2,135 +2,110 @@
 
 ## Resumen
 
-phi-redact es un clasificador de tokens basado en BERT-mini (arquitectura `google/bert_uncased_L-4_H-256_A-4`, 4 capas, 256 dimensiones ocultas, 4 cabezas de atencion) con 11.135.865 parametros, publicado por el usuario CDT5058 en Hugging Face. Su tarea es la deteccion de informacion personal identificable (PII) e informacion sanitaria protegida (PHI) en texto en ingles, con un esquema de 30 tipos de entidad y etiquetado BIOES (121 etiquetas: 30 tipos x 4 posiciones + `O`). Se distribuye bajo licencia Apache-2.0 y esta disenado explicitamente para inferencia en dispositivo (ONNX, Core ML, LiteRT), de modo que los datos sensibles no abandonen el equipo.
+phi-redact es un modelo de clasificación de tokens (token classification) especializado en la detección y redacción de información personal identificable (PII) y de información sanitaria protegida (PHI) en textos en inglés. Lo desarrolla el usuario CDT5058 y está publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo compacto de 11,13 millones de parámetros, destilado por conocimiento (knowledge distillation) a partir de un profesor DistilBERT de 66 millones de parámetros, y construido sobre la arquitectura BERT-mini (google/bert_uncased_L-4_H-256_A-4), con 4 capas, 256 dimensiones ocultas y 4 cabezas de atención.
 
-El modelo se obtuvo por destilacion de conocimiento (alpha=0,7) desde un profesor `distilbert-base-uncased` de 66 M de parametros, y se entreno sobre aproximadamente 157.000 documentos que cubren notas clinicas sinteticas, textos de beneficios gubernamentales, ensayos de estudiantes y prosa estilo Wikipedia. Su longitud maxima de secuencia es de 256 tokens y su vocabulario es el WordPiece de `bert-base-uncased` (30.522 piezas). El peso en fp32 ocupa 44,5 MB y en fp16 22,3 MB, con estimaciones de 11,2 MB en int8 (LiteRT) y 5,6 MB en 4 bits (Core ML).
+El modelo resuelve un problema muy concreto: identificar y etiquetar 32 tipos de entidades sensibles (nombres, direcciones, números de la seguridad social, historiales médicos, tarjetas de crédito, IBAN, matrículas, identificadores gubernamentales, etc.) en textos clínicos, administrativos y de propósito general, con el objetivo de facilitar su redacción automática. Su rasgo diferencial es el enfoque en despliegue local (on-device): se distribuye en formatos ONNX, Core ML y LiteRT/TFLite, con variantes cuantizadas de entre 5,6 MB y 44,6 MB, pensadas para escenarios en los que los datos no pueden salir del dispositivo.
 
-Es relevante porque ofrece una alternativa de muy bajo coste computacional para pipelines de redaccion y anonimizacion que hasta ahora se apoyaban en modelos generativos o en reglas basadas en expresiones regulares. En la comparativa publicada por el propio autor, queda practicamente empatado con Desert Ant Redact v0.4.0 en su compuesto de cinco benchmarks en ingles (86,1 % frente a 86,5 %) con la mitad de parametros y la mitad de huella en dispositivo, y con licencia Apache-2.0 en lugar de source-available. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe todavia validacion independiente por parte de la comunidad.
+La versión actual es la v9 (fechada el 21 de octubre de 2026), una revisión exclusivamente de datos respecto a la v8: no cambia la arquitectura, el profesor ni el procedimiento de entrenamiento, sino la mezcla de entrenamiento (minería de negativos duros, generador sintético revisado y reducción del corpus Gravitee). El modelo está pensado para asistir flujos de redacción, no como solución certificada de desidentificación, y solo cubre el idioma inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT-mini (`google/bert_uncased_L-4_H-256_A-4`): transformer encoder de 4 capas, 256 de dimension oculta, 4 cabezas de atencion |
-| Parametros totales | 11.135.865 (11,13 M) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 256 tokens (longitud maxima de secuencia) |
-| Tipos de cuantizacion | fp32 (44,5 MB), fp16 (22,3 MB), int8 para LiteRT (~11,2 MB), 4 bits para Core ML (~5,6 MB) |
-| Idiomas soportados | ingles unicamente (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX |
-| Tarea (pipeline) | token-classification (reconocimiento de entidades nombradas) |
-| Etiquetas | 121 etiquetas BIOES (30 tipos de entidad x 4 posiciones + `O`) |
-| Vocabulario | 30.522 piezas WordPiece (`bert-base-uncased`) |
-| Tamano del repositorio | 0,3 GB |
-| Fecha de creacion | 25 de septiembre de 2026 |
+| Arquitectura | BERT-mini (google/bert_uncased_L-4_H-256_A-4), 4 capas, 256 dimensiones ocultas, 4 cabezas de atención |
+| Parametros totales | 11.137.921 (11,13 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 256 tokens (longitud máxima de secuencia) |
+| Tipos de cuantizacion | INT8 (ONNX), FP16 (Core ML), 4-bit palettized (Core ML), FP32 (ONNX, LiteRT, Core ML) |
+| Idiomas soportados | Inglés únicamente |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX (INT8 y FP32), Core ML (.mlpackage), LiteRT/TFLite (FP32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder tipo BERT en su variante mini: 4 capas, 256 unidades ocultas y 4 cabezas de atencion, sin mecanismos de atencion lineal ni decodificacion especulativa. Sobre la representacion del token especial `[CLS]` (o sobre la salida por token, segun la implementacion habitual de token-classification) se aplica una cabeza de clasificacion con 121 etiquetas BIOES. Los tipos de entidad cubiertos por el esquema son: `NAME_PATIENT`, `NAME_FAMILY`, `NAME_PROVIDER`, `DATE`, `ADDRESS`, `PHONE`, `EMAIL`, `SSN`, `MRN`, `HEALTHPLAN`, `ACCOUNT`, `IDNUM`, `LICENSE`, `EMPLOYER`, `PROFESSION`, `AGE`, `CITY`, `STATE`, `COUNTRY`, `ZIP`, `URL`, `IP`, `DEVICE`, `ROUTING_NUMBER`, `IBAN`, `CREDITCARD`, `HOSPITAL`, `FAX`, `PASSPORT` y `VIN`. La model card menciona "29 tipos de entidad" en la introduccion y "30 tipos" en la seccion del esquema; dado que 121 = 30 x 4 + 1, el recuento coherente con el etiquetado es 30. El tipo `TAX_ID` figura en el diseno del esquema pero no en ninguna fuente de entrenamiento con licencia comercialmente segura para la version v7, por lo que el modelo no emitira predicciones de ese tipo; el autor indica que la correccion esta planificada para v8.
+El modelo es un transformer encoder de tipo BERT-mini con 4 capas, 256 dimensiones ocultas y 4 cabezas de atención, sobre un vocabulario WordPiece de 30.522 tokens (bert-base-uncased). La cabeza de clasificación emite 129 etiquetas en esquema BIOES (32 tipos de entidad × 4 posiciones más la etiqueta O). Se entrenó mediante destilación de conocimiento con α=0,7 desde un profesor distilbert-base-uncased de 66 millones de parámetros. El conjunto de entrenamiento de la versión v9 (mezcla «v9») comprende aproximadamente 212.000 documentos procedentes de notas clínicas, textos de prestaciones gubernamentales, ensayos de estudiantes, texto general con PII y prosa estilo Wikipedia.
 
-El entrenamiento se realizo por destilacion de conocimiento con alpha=0,7 desde un profesor `distilbert-base-uncased` de 66 M de parametros, configurado con 10 epocas, tamano de lote 32, tasa de aprendizaje 3e-5, programacion coseno, suavizado de etiquetas de 0,05 y entrenamiento en GPU A100. La model card se interrumpe en ese punto, por lo que los hiperparametros del estudiante (epocas, lote, tasa de aprendizaje, funcion de perdida combinada) no estan disponibles. Los datos de entrenamiento suman aproximadamente 157.000 documentos, todos ellos con licencia CC-BY 4.0 o CC-BY-SA 4.0 y sin datos reales de pacientes: 20.000 notas clinicas sinteticas generadas con `gen_synth.py`, unas 5.400 muestras de Learning Agency Lab PII (Kaggle), 20.000 documentos sinteticos de beneficios gubernamentales (`govsynth`), 10.000 textos sinteticos de `essay_names.jsonl`, 50.000 del split de entrenamiento de FewNERD, unas 20.000 del split en ingles de WikiANN, unas 3.400 de WNUT-17 y 50.000 del split de entrenamiento de Nemotron-PII. Se excluyeron explicitamente `ai4privacy/pii-masking-400k` (licencia no comercial, fuera de entrenamiento y evaluacion) y MultiNERD (CC-BY-NC-SA 4.0, solo evaluacion).
+La revisión v9 es únicamente de datos. Se añadieron negativos duros minados: el modelo v8 puntuó un conjunto de 54.380 documentos con etiqueta vacía de los corpus de entrenamiento, y los 1.616 documentos en los que disparó falsos positivos, junto con 15.000 documentos limpios, se incorporaron como negativos. También se revisó el generador sintético (gen_synth_v9.py, 22.000 notas): se reforzaron las formas segmentadas de identificadores gubernamentales, se incluyó un 18 % de notas con contexto público/prosa y direcciones geográficas sin etiquetar, un 15 % de notas dispersas de baja densidad y señuelos de identificadores inválidos (SSN imposibles, tarjetas que no pasan Luhn, números 555) en aproximadamente el 50 % de las notas. Se redujo el corpus Gravitee de 25.000 a 15.000 documentos y se subió el umbral por defecto del SDK de 0,5 a 0,6 (phi-redact-sdk 0.3.0).
 
 ## Capacidades
 
-- Deteccion de entidades PII y PHI en texto en ingles sobre 30 tipos predefinidos, con etiquetado a nivel de span (BIOES).
-- Clasificacion por token orientada a redaccion: cada entidad detectada puede sustituirse, enmascararse o tokenizarse en un paso posterior del pipeline.
-- Cobertura especifica del dominio clinico: nombres de paciente, familia y profesional, numero de historia clinica (`MRN`), plan de salud (`HEALTHPLAN`), hospital, fax y edad.
-- Cobertura de identificadores administrativos y financieros: `SSN`, `ACCOUNT`, `IDNUM`, `LICENSE`, `ROUTING_NUMBER`, `IBAN`, `CREDITCARD`, `PASSPORT` y `VIN`.
-- Cobertura de identificadores de contacto y red: `PHONE`, `EMAIL`, `ADDRESS`, `CITY`, `STATE`, `COUNTRY`, `ZIP`, `URL` e `IP`.
-- Inferencia local en dispositivo: exportable a ONNX, Core ML y LiteRT, sin llamadas a servicios externos.
-- No dispone de generacion de texto, razonamiento, codigo, matematicas, vision ni audio: es exclusivamente un modelo discriminativo de etiquetado de secuencias.
-- No soporta tool calling, function calling ni razonamiento multi-paso. Tampoco dispone de modo "thinking".
-- No es multilingue: la model card declara soporte exclusivo de ingles.
+- Detección y etiquetado de 32 tipos de entidades PII/PHI con esquema BIOES: NAME_PATIENT, NAME_FAMILY, NAME_PROVIDER, DATE, ADDRESS, PHONE, EMAIL, SSN, MRN, HEALTHPLAN, ACCOUNT, IDNUM, LICENSE, EMPLOYER, PROFESSION, AGE, CITY, STATE, COUNTRY, ZIP, URL, IP, DEVICE, ROUTING_NUMBER, IBAN, CREDITCARD, HOSPITAL, FAX, PASSPORT, VIN, TAX_ID y GOVERNMENT_ID.
+- Reconocimiento de entidades nombradas (NER) en inglés sobre texto clínico, administrativo y de propósito general.
+- Redacción y desidentificación de documentos como parte de un flujo (el modelo detecta; la sustitución o enmascaramiento la realiza el sistema que lo integra).
+- Inferencia local en dispositivo gracias a los formatos ONNX, Core ML y LiteRT, sin necesidad de enviar datos a un servidor.
+- Ejecución con cuantización INT8 sin pérdida de recall según el autor (mismo recall que el checkpoint PyTorch en el conjunto dorado).
+- No dispone de tool calling, function calling, razonamiento multi-paso, modo thinking, visión ni audio: es un clasificador de tokens puro.
+- Capacidad multilingüe: no disponible (solo inglés).
 
 ## Casos de uso
 
-- Redaccion de PHI en notas clinicas antes de almacenarlas: el modelo marca nombres de paciente, MRN, fechas y direcciones en cada fragmento de hasta 256 tokens, de modo que la nota se puede guardar o enviar a un sistema de historia clinica electronica ya desidentificada. Es adecuado porque su dominio de entrenamiento principal son notas clinicas sinteticas y porque no requiere sacar el texto de la infraestructura propia.
-- Proxy de enmascaramiento previo a un LLM de terceros: se inserta como paso intermedio entre la aplicacion y un proveedor tipo OpenAI o Anthropic, sustituyendo entidades por tokens sinteticos antes de que la peticion salga de la red y rehidratando la respuesta a la vuelta. Encaja por su huella de 5,6-11,2 MB y su capacidad de ejecucion en CPU.
-- Anonimizacion de corpus para investigacion clinica: se procesa un lote de documentos, se aplica chunking con solapamiento para respetar el limite de 256 tokens y se eliminan spans sensibles antes de publicar el dataset. El recall de 0,860 de F1 micro en Nemotron-PII y de 84,3 % en WikiANN da una referencia cuantitativa para dimensionar la revision manual posterior.
-- Cumplimiento de GDPR o CCPA en formularios de admision y atencion al cliente: el modelo cubre `EMAIL`, `PHONE`, `ADDRESS`, `IBAN`, `CREDITCARD` y `ROUTING_NUMBER`, lo que permite limpiar registros de contacto antes de exportarlos a analitica.
-- Tramitacion de beneficios publicos: el corpus `govsynth` (SNAP, Medicaid, WIC) es una de las fuentes de entrenamiento, con recall declarado del 100 % sobre ese benchmark sintetico, lo que lo hace apto para desidentificar expedientes de gestion de casos.
-- Desidentificacion de textos educativos: los ensayos de estudiantes aparecen en el entrenamiento mediante el corpus de Learning Agency Lab y `essay_names.jsonl`; el modelo puede usarse para eliminar nombres y datos personales de trabajos antes de compartirlos con terceros.
-- Limpieza de logs y telemetria: integrado en un recolector de logs en Go, Java o Python, permite eliminar `IP`, `EMAIL`, `URL` y credenciales de identificacion antes de enviar los eventos a una plataforma de observabilidad externa.
-- Aplicaciones moviles de salud con inferencia en el dispositivo: la exportacion a Core ML (4 bits, ~5,6 MB) y LiteRT (int8, ~11,2 MB) permite ejecutar la deteccion en el propio telefono, sin conexion y sin enviar texto a un servidor.
-- Preprocesamiento de documentos financieros y contratos: la cobertura de `IBAN`, `ROUTING_NUMBER`, `ACCOUNT` y `CREDITCARD` permite anonimizar extractos y expedientes antes de pasarlos a un sistema de extraccion de datos.
+- Redacción de notas clínicas antes de su almacenamiento o compartición: el modelo etiqueta nombres de pacientes, proveedores, fechas, MRN, números de seguro y direcciones en notas de hasta 256 tokens, de modo que un paso posterior pueda enmascararlos; su tamaño reducido permite ejecutarlo dentro del propio sistema de historia clínica.
+- Desidentificación en el borde (on-device) para aplicaciones móviles sanitarias: la variante Core ML de 5,6 MB en 4 bits o la de 22,2 MB en FP16 permiten procesar texto en el propio dispositivo iOS sin transmitir datos sensibles, lo que encaja con requisitos de minimización de datos.
+- Saneamiento de registros de atención al cliente: detección de teléfonos, correos, IBAN, tarjetas de crédito y direcciones en transcripciones o tickets antes de enviarlos a sistemas analíticos o de terceros.
+- Preprocesado de corpus para investigación: etiquetado de PII en ensayos, textos administrativos y prosa antes de publicar conjuntos de datos o de entrenar otros modelos, usando la variante ONNX INT8 de 11,3 MB en pipelines por lotes.
+- Cumplimiento y auditoría interna: integración como primera pasada en flujos de revisión de documentos de prestaciones gubernamentales, marcando candidatos a identificadores (SSN, TAX_ID, GOVERNMENT_ID, pasaporte) para revisión humana.
+- Filtrado de datos en herramientas de desarrollo: ejecución local en un portátil o en CI para detectar credenciales y datos personales en logs o ficheros de texto antes de commitearlos, gracias a la licencia Apache 2.0 y a los formatos portables.
+- Enmascaramiento previo a la inferencia con modelos grandes: usar phi-redact como paso de redacción antes de enviar texto a un LLM alojado, reduciendo la exposición de datos personales en la cadena.
 
 ## Benchmarks y rendimiento
 
-Puntuacion estricta a nivel de span: una prediccion solo cuenta si coinciden exactamente los limites de caracteres y la etiqueta.
+Evaluación dorada sintética de 164 casos (reglas + fusión neuronal, configuración de producción, conjunto evals/synthetic-164):
 
-| Benchmark | Recall | F1 | Notas |
+| Metrica | v7 | v8 INT8 | v9 INT8 (artefacto publicado) |
 |---|---|---|---|
-| WikiANN (EN, nombres) | 84,3 % | 0,775 | CC-BY-SA 3.0; comparable directamente con Desert Ant |
-| FewNERD (EN, nombres) | 85,9 % | 0,782 | CC-BY-SA 4.0; nombres en prosa de Wikipedia |
-| LA essays | 65,9 % | 0,757 (micro F1) | CC-BY 4.0; prosa informal de estudiantes |
-| govsynth (beneficios gubernamentales) | 100 % | 1,000 | Sintetico; dominio principal de despliegue |
-| MultiNERD (solo evaluacion) | 94,3 % | no disponible | CC-BY-NC-SA 4.0; no usado en entrenamiento |
-| Compuesto (media de recall de 5 benchmarks) | 86,1 % | no aplica | Media de WikiANN, FewNERD, LA essays, govsynth y MultiNERD |
+| Recall de valor completo | 0,885 | 0,958 | 0,974 |
+| Recall de término | 0,651 | 0,760 | 0,828 |
+| Precisión | 0,749 | 0,695 | 0,746 |
+| F1 estricto de span | 0,435 | 0,617 | 0,677 |
+| Tasa de FP en casos limpios | 0,120 | 0,440 | 0,200 |
 
-Nemotron-PII (CC-BY 4.0), primera ejecucion valida: 13.134 entidades sobre 25 tipos en 2.000 documentos de test, con F1 micro de 0,860 y recall de 0,843.
+El checkpoint PyTorch alcanza 0,975 de recall de valor completo con el arnés de evaluación de Colab (evaluate_golden.py) sobre el mismo conjunto de prueba.
 
-| Entidad | F1 | Entidad | F1 |
-|---|---|---|---|
-| MRN | 0,951 | IDNUM | 0,908 |
-| ADDRESS | 0,949 | EMAIL | 0,905 |
-| NAME_PATIENT | 0,944 | CREDITCARD | 0,905 |
-| NAME_FAMILY | 0,937 | ROUTING_NUMBER | 0,876 |
-| LICENSE | 0,920 | DATE | 0,859 |
-| COUNTRY | 0,919 | URL | 0,828 |
-| SSN | 0,908 | DEVICE | 0,791 |
-| CITY | 0,904 | PROFESSION | 0,494 |
+Benchmarks estándar del estudiante v9 (solo modelo, puntuación estricta de span):
 
-Puntos debiles declarados por el autor: `PROFESSION` presenta F1 de 0,494 con precision de 0,413 porque el modelo dispara en exceso sobre sustantivos de oficio en contextos que no son PII ("She saw a doctor" frente a "Occupation: Doctor"). En `URL`, el F1 es de 0,828 en texto formal (Nemotron) pero el recall cae al 31,8 % en los ensayos informales de LA essays. No se han publicado datos de latencia ni de throughput.
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| Learning Agency | micro-F1 | 0,729 (NAME F1 0,778) |
+| FewNERD | name F1 | 0,781 (recall 0,838) |
+| MultiNERD | name F1 | 0,893 (recall 0,940) |
+| WikiANN | name F1 | 0,763 (recall 0,831) |
+| govsynth | F1 | 1,000 |
+
+Evaluación Nemotron-PII v9 (2.000 documentos estructurados, 13.134 spans dorados, coincidencia exacta de span, solo modelo): micro precisión 0,870, recall 0,830, F1 0,849 (idéntico a v8; v7 obtenía 0,860 en esta distribución sintética). Por entidad, v9 mejora SSN (0,957 frente a 0,933 en v8), PROFESSION (0,517 frente a 0,491) y LICENSE (0,908 frente a 0,885), y retrocede ligeramente en ADDRESS, DEVICE y HEALTHPLAN.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 44,5 MB en fp32, 22,3 MB en fp16, ~11,2 MB en int8 y ~5,6 MB en 4 bits. Con una secuencia maxima de 256 tokens y lotes moderados, el consumo total del runtime se mantiene por debajo de 1 GB en cualquier precision; estas cifras de VRAM total son una estimacion a partir de los tamanos de pesos publicados, no un dato medido.
-- GPU recomendadas: no hay requisitos especificos publicados. Por tamano, el modelo cabe holgadamente en cualquier GPU, incluidas A100 y H100 si se despliega a gran escala, aunque no las necesita.
-- Cabe en GPU de consumo: si, en cualquier GPU de consumo actual e incluso en GPUs integradas, dada la huella de menos de 50 MB de pesos.
-- Ejecucion en CPU: viable en solitario; el modelo no requiere acelerador para inferencia en tiempo real con lotes pequenos.
-- Aceleradores moviles: el autor contempla Core ML (Apple) y LiteRT (Android) como destinos de despliegue.
-- Opciones de despliegue: ONNX Runtime para el artefacto ONNX, Core ML y LiteRT para movil, y la via habitual de Transformers con los pesos safetensors. Las herramientas para modelos generativos (llama.cpp, Ollama, vLLM, TGI) no son el cauce natural de un clasificador de tokens BERT de 11 M de parametros; no hay informacion publicada sobre su uso con este modelo.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 (44,6 MB de pesos más activaciones para secuencias de 256 tokens); en INT8, unos pocos cientos de MB incluyendo el runtime.
+- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es más que suficiente para lotes grandes. En CPU, un solo núcleo moderno puede procesar secuencias de 256 tokens con latencia de milisegundos.
+- Cabe en cualquier GPU consumer e incluso en dispositivos móviles: la variante Core ML de 5,6 MB en 4 bits y la de 22,2 MB en FP16 están pensadas para iPhone/iPad; la de LiteRT FP32 (44,5 MB) para Android y edge.
+- Opciones de despliegue: ONNX Runtime (INT8 y FP32), Core ML, LiteRT/TFLite, PyTorch con safetensors, y el SDK propio phi-redact-sdk 0.3.0 (scorer score_phi.py con umbral por defecto 0,6). No se documenta soporte específico para vLLM, TGI, llama.cpp ni Ollama, que no son adecuados para un clasificador de tokens.
+- Latencia y throughput: no se publican cifras concretas en la información disponible; por el tamaño del modelo (11,13 M de parámetros, 4 capas) se espera un throughput alto en CPU y muy alto en GPU para lotes, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
 
-| Metrica | phi-redact v7 | Desert Ant Redact v0.4.0 (EN) | Profesor DistilBERT (`distilbert-base-uncased`) |
-|---|---|---|---|
-| Parametros | 11,13 M | 23 M | 66 M |
-| Recall de nombres en WikiANN | 84,3 % | 69,5 % | no disponible |
-| Recall de nombres en MultiNERD | 94,3 % | 94,9 % | no disponible |
-| Compuesto de 5 benchmarks | 86,1 % | 86,5 % | no disponible |
-| Tamano estimado en 4 bits | ~5,6 MB | 11,6 MB | no aplica |
-| Idiomas | solo ingles | 27 idiomas | solo ingles |
-| Licencia | Apache-2.0 | source-available | Apache-2.0 |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| phi-redact v9 | 11,13 M | 256 tokens | NER PII/PHI, 32 entidades, on-device | Apache 2.0 | Hugging Face, ONNX/Core ML/LiteRT |
+| DistilBERT teacher | 66 M | 512 tokens (típico) | Modelo base; profesor de la destilación | Apache 2.0 (distilbert-base-uncased) | Hugging Face |
+| BERT-mini (google/bert_uncased_L-4_H-256_A-4) | ~11 M | 512 tokens (típico) | Modelo base sin ajuste para PII | Apache 2.0 | Hugging Face |
 
-Los resultados de Desert Ant y del profesor provienen exclusivamente de las tablas publicadas en la model card de phi-redact; no se han verificado de forma independiente. Fuera del ambito de modelos, en la busqueda web aparecen herramientas de redaccion comparables en proposito pero no en arquitectura: `philterd/phileas` (biblioteca Java de redaccion de PII y PHI) y `DilawarShafiq/phi-redactor` (proxy de enmascaramiento de PHI para proveedores de LLM), que no son modelos entrenados y por tanto no admiten una comparacion directa de parametros o benchmarks.
+No se dispone en la información proporcionada de resultados comparativos con otros modelos especializados en PII (por ejemplo, detectores comerciales o modelos NER genéricos) más allá del profesor DistilBERT y del modelo base BERT-mini, por lo que la comparación de rendimiento con alternativas de la misma tarea se considera no disponible.
 
 ## Limitaciones y advertencias
 
-- El propio autor declara que no es una solucion de desidentificacion certificada: no cumple los metodos HIPAA Expert Determination ni Safe Harbor. Debe evaluarse sobre datos propios antes de usarlo en contextos sensibles desde el punto de vista regulatorio.
-- Riesgo de fuga de PHI: con recalls en el rango del 84-86 % en benchmarks estandar, una parte de las entidades sensibles no se detectara. No debe emplearse como unico control de privacidad ni como sustituto de una revision humana en flujos de cumplimiento.
-- Idioma: solo ingles. No debe usarse con texto en castellano ni en otros idiomas sin un reentrenamiento o evaluacion especifica.
-- Longitud de contexto limitada a 256 tokens: los documentos largos requieren fragmentacion, con riesgo de perder entidades que crucen las fronteras entre fragmentos o de degradar la coherencia del contexto local.
-- `PROFESSION`: F1 de 0,494 y precision de 0,413; el modelo dispara en exceso sobre oficios mencionados de forma no identificativa. Problematico si el corpus es intensivo en ocupaciones.
-- `URL` en prosa informal: recall de solo el 31,8 % en ensayos de estudiantes, frente a 0,828 de F1 en texto formal.
-- `TAX_ID`: incluido en el diseno del esquema pero ausente del entrenamiento en la v7 por falta de fuente con licencia comercialmente segura; el modelo no producira predicciones de ese tipo. Correccion prevista para la v8.
-- `DEVICE` (0,791) y `DATE` (0,859) presentan F1 claramente inferior al resto de entidades principales en Nemotron-PII.
-- Discrepancia en la documentacion: la introduccion de la model card cita 29 tipos de entidad mientras que la seccion del esquema y el recuento de etiquetas BIOES (121 = 30 x 4 + 1) implican 30.
-- Procedimiento de entrenamiento incompleto: la model card se interrumpe en la configuracion del profesor, por lo que no se detallan los hiperparametros del estudiante ni la composicion exacta de la perdida de destilacion.
-- Sesgos: no se documentan sesgos especificos en la informacion disponible. Como riesgo derivado del corpus, parte de los datos de nombres procede de Wikipedia (WikiANN, FewNERD), lo que puede infrarrepresentar nombres no occidentales o poco frecuentes en ese dominio.
-- Datos de entrenamiento totalmente sinteticos o de licencia abierta, sin datos reales de pacientes; esto limita el realismo de las notas clinicas frente a texto clinico real.
-- Adopcion nula: 0 descargas y 0 "likes" en Hugging Face, sin evaluaciones independientes ni reportes de terceros.
-- Licencia Apache-2.0: permite uso comercial y modificacion con obligacion de conservar el aviso de licencia. La restriccion relevante no es la licencia del modelo sino la de los corpus de evaluacion (MultiNERD es CC-BY-NC-SA 4.0) y el cumplimiento normativo en el dominio de uso.
+- No es una solución certificada de desidentificación: el autor advierte explícitamente que no está certificado bajo HIPAA Expert Determination ni Safe Harbor; debe evaluarse sobre datos propios antes de usarlo en contextos sensibles para el cumplimiento normativo.
+- Solo inglés: no cubre otros idiomas, lo que limita su uso en entornos multilingües.
+- Ventana de contexto de 256 tokens: los documentos más largos deben dividirse en fragmentos, con el riesgo de perder entidades que crucen los límites de fragmento.
+- Retención de contexto público deficiente: el modelo sigue redactando geografía que el conjunto dorado marca como pública o que debería conservarse (retención 0,133, sin cambios respecto a v8); ciudades de instalaciones y nombres de programas estatales son aproximadamente la mitad de los falsos positivos restantes. Para flujos sensibles a la precisión, el autor sugiere la v7.
+- Riesgo de falsos positivos en texto limpio: la tasa de FP en casos limpios es 0,200 en v9 (0,440 en v8), lo que implica que aproximadamente uno de cada cinco textos limpios recibe alguna marca.
+- Riesgo de alucinación: al ser un clasificador de tokens, no genera texto libre, pero puede etiquetar spans incorrectos o inventar límites de entidad (falsos positivos y spans mal delimitados), especialmente en entidades con F1 bajo como PROFESSION (0,517).
+- Sesgos conocidos: no se documentan análisis de sesgo por demografía, dominio o tipo de texto en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el aviso de no certificación traslada al integrador la responsabilidad de validar el modelo en su dominio.
+- Dependencia de umbral: el SDK usa por defecto 0,6; cambiar el umbral altera el equilibrio precisión/recall y debe recalibrarse sobre datos propios.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/CDT5058/phi-redact
-- Repositorio GitHub de `phi-redactor` (proxy de redaccion de PHI): https://github.com/DilawarShafiq/phi-redactor
-- Repositorio GitHub de `phileas` (biblioteca Java de redaccion de PII y PHI): https://github.com/philterd/phileas
-- Revision tecnica de herramientas open source de desidentificacion de PHI: https://intuitionlabs.ai/articles/open-source-phi-de-identification-tools
-- Guia comparativa sobre LLM frente a reglas basadas en patrones para redaccion de PII y PHI: https://philterd.ai/guides/using-an-llm-or-pattern-based-rules-for-pii-phi-redaction/
-- Sitio de Philterd (software de redaccion autoalojado): https://philterd.ai/
-- Artefactos y corpus referenciados en la model card, sin URL publicada en la informacion disponible: `google/bert_uncased_L-4_H-256_A-4`, `distilbert-base-uncased`, `DFKI-SLT/few-nerd`, Nemotron-PII (nvidia), WNUT-17, WikiANN (EN), Learning Agency Lab PII (Kaggle), `ai4privacy/pii-masking-400k` (excluido) y MultiNERD (solo evaluacion).
+- Hugging Face: https://huggingface.co/CDT5058/phi-redact
+- Modelo base BERT-mini: https://huggingface.co/google/bert_uncased_L-4_H-256_A-4
+- Profesor DistilBERT: https://huggingface.co/distilbert-base-uncased
+- No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.

@@ -2,110 +2,104 @@
 
 ## Resumen
 
-`Mike0307/ai-text-detector-zh-en` es un clasificador de texto para detectar si un fragmento en chino o en inglés ha sido escrito por una persona o generado por un modelo de lenguaje, y en caso de ser IA, estimar a qué familia de modelos se parece más (ChatGPT, Claude, Gemini u otra). Se construye a partir de `FacebookAI/xlm-roberta-base` afinado como clasificador de cinco clases (human, openai, anthropic, google, other_ai); los logits se recalibran después mediante una regresión logística ajustada sobre un conjunto de validación para producir una única probabilidad de IA.
+El detector de texto AI de Mike0307 es un clasificador binario y multiclase que determina si un texto en chino o ingles ha sido escrito por una persona o generado por un modelo de lenguaje, y ademas estima a que familia de modelos se parece mas: ChatGPT, Claude, Gemini u otra IA. Se construye mediante fine-tuning de `FacebookAI/xlm-roberta-base` como un clasificador de cinco clases (humano, openai, anthropic, google, other_ai), cuyas salidas se calibran despues con una regresion logistica sobre un conjunto de validacion para producir una unica probabilidad de IA.
 
-El interés práctico del modelo es su formato de distribución: el repositorio publica únicamente pesos ONNX en fp32, fp16 e int8, pensados para inferencia en el navegador con `transformers.js` y ONNX Runtime Web. El texto no sale del dispositivo del usuario, lo que permite integrar detección de contenido generado en extensiones, editores o aplicaciones web sin enviar documentos a un servidor.
+Su rasgo diferencial es el formato de distribucion: el repositorio incluye exclusivamente pesos ONNX (fp32, fp16 e int8) pensados para inferencia en el navegador con `transformers.js` y `onnxruntime-web`, de modo que el texto analizado nunca abandona el dispositivo del usuario. El modelo recorta la capa de embeddings de 250.002 a 141.877 filas para eliminar escrituras que no aparecen en su tarea (coreano, tailandes, arabe, cirilico, indico), reduciendo el peso de descarga sin alterar el tokenizador original.
 
-El autor reporta métricas internas altas (AUROC 0,998 y 98,4 % de exactitud en el conjunto de test en distribución) y una degradación controlada fuera de distribución (AUROC 0,975 en inglés y 0,971 en chino). No hay publicaciones independientes ni resultados de terceros en la información disponible, y el modelo cuenta con 0 descargas y 1 like en el momento de redactar esta ficha. Licencia MIT, pero el conjunto de entrenamiento no es público.
+Con 264 descargas y una licencia MIT, resulta relevante para integrar verificacion de contenido generado por IA en aplicaciones web cliente, extensiones de navegador o herramientas editoriales donde la privacidad y el coste de servidor son restrictivos. La evaluacion publicada reporta AUROC de 0,998 en distribucion y de 0,971-0,975 fuera de distribucion, con una tasa de falsos positivos sobre texto humano del 2,6-10 %.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (XLM-RoBERTa base) con cabezal de clasificación de 5 clases + calibración logística posterior |
-| Parámetros totales | ≈278 M (heredados de `xlm-roberta-base`; el autor no publica el recuento exacto del cabezal) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (el máximo de tokens se define en `aidetect.json` y no se publica; los documentos largos se trocean por párrafos y se puntúan por segmentos) |
-| Tipos de cuantización | fp32 (`model.onnx`, ~780 MB), fp16 (`model_fp16.onnx` y `model_fp16_ext.onnx`, ~390 MB), int8 dinámica por canal (`model_int8_ext.onnx`, ~200 MB) |
-| Idiomas soportados | Chino (zh) e inglés (en) |
-| Licencia | MIT (los datos de entrenamiento no son públicos) |
-| Formato de pesos | ONNX (con fichero externo de datos en las variantes `_ext`), tokenizador en `tokenizer.json`, tablas auxiliares `id_map.bin`, `fusion.json`, `fusion_int8.json`, `aidetect.json` |
-| Tarea | `text-classification` (detección humano/IA + atribución de familia de modelo) |
-| Modelo base | `FacebookAI/xlm-roberta-base` |
-| Tamaño del repositorio | 1,8 GB |
-| Descargas / likes | 0 / 1 |
+| Arquitectura | Transformer encoder (XLM-RoBERTa base) con cabeza de clasificacion de 5 clases y calibracion logistica posterior |
+| Parametros totales | no disponible (derivado de xlm-roberta-base, ~278 M, con embeddings recortados a 141.877 filas) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible de forma explicita; la longitud maxima de tokens se define en `aidetect.json` |
+| Tipos de cuantizacion | fp32 (`model.onnx`, ~780 MB), fp16 (`model_fp16.onnx` y `model_fp16_ext.onnx`, ~390 MB), int8 dinamica por canal (`model_int8_ext.onnx`, ~200 MB) |
+| Idiomas soportados | chino (zh) e ingles (en) |
+| Licencia | MIT (los datos de entrenamiento no son publicos) |
+| Formato de pesos | ONNX (con datos externos en las variantes `_ext`), tokenizador en `tokenizer.json`, tablas auxiliares en JSON y binario |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder XLM-RoBERTa base (~278 M de parámetros) con un cabezal de clasificación de cinco clases: `human`, `openai`, `anthropic`, `google` y `other_ai`. Sobre la salida softmax no se aplica directamente el umbral final: el autor define una etapa de fusión que toma tres características — `logit(1 − P(human))`, un indicador de si el texto es chino y `log(1 + longitud)` —, las estandariza y las pasa por una regresión logística cuyos coeficientes se publican en `fusion.json`. Para la variante int8 existe una calibración propia (`fusion_int8.json`) reajustada sobre el conjunto de validación, porque las salidas del modelo cuantizado se desvían ligeramente a la baja.
+El modelo parte de `FacebookAI/xlm-roberta-base`, un encoder transformer multilingue, y se ajusta como clasificador de cinco clases: humano, openai, anthropic, google y other_ai. Sobre las probabilidades del clasificador se aplica una segunda etapa de calibracion: se construyen tres caracteristicas —el logit de `1 - P(human)`, un indicador de si el texto es chino y `log(1 + longitud)`—, se estandarizan y se pasan por una regresion logistica cuyos coeficientes se almacenan en `fusion.json` (y en `fusion_int8.json` para la variante int8, reajustada sobre el conjunto de validacion). Los documentos largos se segmentan en parrafos y se puntuan uno a uno.
 
-El entrenamiento parte de un corpus no público del que solo se indica que los textos humanos se limitan a material verificable como escrito antes del 30 de noviembre de 2022 (fecha de lanzamiento de ChatGPT). No se documentan el número de tokens, la composición del dataset ni si hubo RLHF/DPO, algo esperable al no tratarse de un modelo generativo. Sí se describe una optimización de despliegue: la capa de embeddings se recorta de 250.002 a 141.877 filas eliminando piezas de escrituras que el modelo nunca ve en su tarea (coreano, tailandés, árabe, cirílico, índico y otras), manteniendo el tokenizador original intacto. Por eso es obligatorio remapear los `input_ids` con `id_map.bin` antes de alimentar el grafo ONNX; el autor incluye `export_check.json` con la comparación entre la exportación fp16 y el modelo PyTorch original.
+El entrenamiento se realizo sobre datos no publicos. La model card indica que los textos humanos del conjunto de entrenamiento solo incluyen material verificable como escrito antes del 30 de noviembre de 2022, fecha de lanzamiento de ChatGPT, lo que evita contaminacion con texto humano post-LLM. No se especifican el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO (no aplicables de forma habitual a un clasificador de este tipo). La innovacion tecnica destacable es el recorte del vocabulario de embeddings y la exportacion ONNX con datos externos para que `onnxruntime-web` cargue los pesos directamente en la GPU, reduciendo a la mitad el pico de memoria durante la carga.
 
 ## Capacidades
 
-- Clasificación binaria humano/IA con probabilidad calibrada, no solo una etiqueta dura.
-- Atribución de fuente en cinco clases: humano, OpenAI, Anthropic, Google u otra IA.
-- Procesamiento de documentos largos: segmentación por párrafos con parámetros en `aidetect.json` y agregación de puntuaciones por segmento.
-- Bilingüe chino-inglés, incluyendo chino fuera de distribución generado por GPT-4o, Gemini 2.5, DeepSeek y Qwen según la evaluación del autor.
-- Inferencia 100 % local en el navegador (WebGPU/WASM vía ONNX Runtime Web), sin envío de texto a servidores.
-- Variante int8 para móviles y dispositivos con 4 GB de memoria o menos.
-- No es un modelo generativo: no produce texto, no soporta tool calling ni function calling, no tiene modo de razonamiento multi-paso ni capacidades de agente, visión o audio.
+- Clasificacion binaria humano/IA de textos en chino e ingles con probabilidad calibrada.
+- Atribucion de fuente entre cinco clases: humano, OpenAI, Anthropic, Google y otra IA.
+- Inferencia completamente en el cliente mediante ONNX Runtime Web y `transformers.js`, sin envio de texto a servidores.
+- Procesamiento de documentos largos mediante segmentacion en parrafos y agregacion de puntuaciones.
+- Variante int8 para dispositivos con poca memoria (moviles, tablets, navegadores con limite de 4 GB por pestaña).
+- No soporta generacion de texto, tool calling, agentes, vision, audio ni modo de razonamiento: es exclusivamente un clasificador.
+- Cobertura linguistica limitada a chino e ingles; el resto de escrituras se eliminan del vocabulario de embeddings.
 
 ## Casos de uso
 
-- Moderación de contenido generado por usuarios: puntuar en el cliente cada publicación de un foro antes de enviarla, de modo que solo los casos con probabilidad alta de IA pasen a revisión humana, sin almacenar el texto original.
-- Herramientas editoriales y de verificación periodística: extensión de navegador que marca párrafos sospechosos en un artículo y ofrece la probabilidad calibrada junto con la familia de modelo estimada, útil como señal de triaje en una redacción.
-- Curación de datasets: filtrar corpus scrapeados para separar texto humano verificado de texto sintético antes de usarlo en entrenamiento o evaluación, aprovechando el modo de segmentación por párrafos.
-- Investigación sobre procedencia de contenido: estudiar la mezcla de fuentes en un corpus chino o inglés observando la distribución de las cinco clases y la evolución temporal de la atribución.
-- Integración en CMS y plataformas educativas: plugin que calcula la probabilidad en el servidor con `onnxruntime` (fp32 o fp16) y la expone como señal adicional, nunca como decisión automática.
-- Aplicaciones móviles offline: usar la variante int8 (~200 MB de pesos, ~1 GB de pico de memoria al cargar) en una app que funcione sin conectividad, por ejemplo en contextos de campo o con requisitos de privacidad estrictos.
-- Análisis forense y OSINT de primer nivel: descartar rápidamente documentos generados sintéticamente en un lote heterogéneo antes de aplicar técnicas más costosas.
+- Verificacion editorial en el navegador: una extension o web app puede puntuar articulos o submissions antes de publicarlos, manteniendo el contenido en el dispositivo del editor y sin coste de inferencia en servidor.
+- Deteccion de ensayos generados por IA en plataformas educativas: el modelo devuelve una probabilidad calibrada y una atribucion de familia, util como señal de triaje (nunca como decision automatica, segun advierte el autor).
+- Moderacion de contenido en foros y comunidades: integrado en el cliente, permite marcar publicaciones sospechosas en chino o ingles sin enviar texto de usuarios a terceros.
+- Analisis forense de corpus: clasificacion por parrafos de documentos largos para localizar secciones generadas por IA dentro de un texto mayoritariamente humano.
+- Investigacion sobre procedencia de texto: la salida de cinco clases permite estudiar la distribucion de familias de modelos en un corpus, con la cautela de que la atribucion degrada en versiones no vistas en entrenamiento.
+- Herramienta de escritura asistida: aviso en tiempo real al usuario cuando su borrador se parece demasiado a una salida de LLM, ayudando a mantener un estilo propio.
+- Filtrado de datasets: descarte de muestras sinteticas antes de entrenar otros modelos, usando la variante fp32 en servidor para maxima fidelidad.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (versión v3), con la variante fp16:
-
-| Conjunto de test | AUROC | Exactitud | Humanos marcados como IA | IA detectada |
+| Conjunto de prueba | AUROC | Precision | Humano marcado como IA | IA detectada |
 |---|---|---|---|---|
-| Test en distribución (zh + en) | 0,998 | 98,4 % | 2,6 % | 99,5 % |
-| Inglés fuera de distribución (textsight 2026) | 0,975 | 91,1 % | 9,3 % | 96,4 % |
-| Chino fuera de distribución (DetectRL-X: GPT-4o, Gemini 2.5, DeepSeek, Qwen) | 0,971 | 91,5 % | 10,0 % | 92,2 % |
+| En distribucion (zh + en) | 0,998 | 98,4 % | 2,6 % | 99,5 % |
+| Ingles fuera de distribucion (textsight 2026) | 0,975 | 91,1 % | 9,3 % | 96,4 % |
+| Chino fuera de distribucion (DetectRL-X: GPT-4o, Gemini 2.5, DeepSeek, Qwen) | 0,971 | 91,5 % | 10,0 % | 92,2 % |
 
-Comparativa fp16 frente a int8 publicada por el autor:
+Comparativa fp16 frente a int8 en los mismos conjuntos:
 
-| Conjunto de test (fp16 / int8) | AUROC | Exactitud | Humanos marcados como IA | IA detectada | Veredicto distinto de fp16 |
+| Conjunto de prueba (fp16 / int8) | AUROC | Precision | Humano marcado como IA | IA detectada | Veredicto distinto de fp16 |
 |---|---|---|---|---|---|
-| En distribución | 0,999 / 0,999 | 98,6 % / 98,0 % | 2,2 % / 3,2 % | 99,5 % / 99,2 % | 1,4 % |
-| Inglés fuera de distribución | 0,977 / 0,966 | 91,4 % / 90,2 % | 9,0 % / 9,7 % | 96,4 % / 89,3 % | 4,8 % |
-| Chino fuera de distribución | 0,971 / 0,970 | 91,6 % / 91,1 % | 10,0 % / 11,1 % | 92,4 % / 92,2 % | 7,7 % |
-
-No se han publicado en la información disponible resultados comparables de otros detectores sobre estos mismos conjuntos, ni evaluaciones independientes de este modelo.
+| En distribucion | 0,999 / 0,999 | 98,6 % / 98,0 % | 2,2 % / 3,2 % | 99,5 % / 99,2 % | 1,4 % |
+| Ingles fuera de distribucion | 0,977 / 0,966 | 91,4 % / 90,2 % | 9,0 % / 9,7 % | 96,4 % / 89,3 % | 4,8 % |
+| Chino fuera de distribucion | 0,971 / 0,970 | 91,6 % / 91,1 % | 10,0 % / 11,1 % | 92,4 % / 92,2 % | 7,7 % |
 
 ## Requisitos de hardware
 
-- VRAM/peso en disco: 780 MB en fp32, 390 MB en fp16 y 200 MB en int8 para los pesos; el repositorio completo ocupa 1,8 GB.
-- Pico de memoria al cargar en navegador: más de 1,5 GB con fp16 (motivo por el que existe la variante int8); en torno a 1 GB con int8.
-- Cabe en cualquier GPU de consumo: una RTX 4090, una RTX 3060 o incluso una GPU integrada con más de 2 GB de memoria disponible ejecutan la variante fp16 sin problemas; el modelo también corre en CPU.
-- Segmentación recomendada: int8 para móviles, tablets y equipos con 4 GB de RAM o menos; fp16 con datos externos (`model_fp16_ext.onnx` + `.onnx_data`) para escritorio y servidor.
-- Despliegue: ONNX Runtime Web / `transformers.js` en navegador (WebGPU o WASM) y `onnxruntime` en Python, C++ o C# para servidor. No es compatible con vLLM, TGI, llama.cpp ni Ollama: no es un modelo generativo y no se distribuye en GGUF.
-- Latencia y throughput: no disponibles. El autor no publica medidas de tiempo por segmento ni de tokens por segundo.
+- VRAM/peso en disco: 780 MB para fp32, 390 MB para fp16 (con o sin datos externos) y 200 MB para int8.
+- Memoria pico durante la carga en navegador: aproximadamente 1,5 GB con fp16 y alrededor de 1 GB con int8, segun la model card.
+- GPU recomendadas: cualquier GPU integrada o dedicada con soporte WebGPU/WebGL para la variante ONNX; en servidor, una GPU consumer (RTX 3060 o superior) es mas que suficiente dado el tamaño del modelo.
+- Cabe en GPU consumer: si, ampliamente; tambien en moviles y tablets mediante la variante int8.
+- Opciones de despliegue: `onnxruntime-web` con `transformers.js` en navegador, ONNX Runtime nativo en servidor, y compatible con Text Embeddings Inference y endpoints de Hugging Face segun los tags del repositorio.
+- Latencia y throughput: no disponibles de forma explicita en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Base / parámetros | Idiomas | Salida | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| `Mike0307/ai-text-detector-zh-en` | XLM-RoBERTa base, ≈278 M | zh, en | 5 clases + probabilidad calibrada | MIT | ONNX fp32/fp16/int8, inferencia en navegador |
-| `openai-community/roberta-base-openai-detector` | RoBERTa base, ≈125 M | en | binaria (GPT-2 vs humano) | no disponible | pesos PyTorch; calibrado para salidas de GPT-2 |
-| `Hello-SimpleAI/chatgpt-detector-roberta` | RoBERTa base, ≈125 M | en (existe variante zh) | binaria | no disponible | pesos PyTorch |
-| Servicios comerciales (GPTZero, Originality.ai, Copyleaks) | no disponible (propietario) | múltiples | probabilidad + veredicto | licencia de servicio | solo API/SaaS, sin pesos |
+| Mike0307/ai-text-detector-zh-en | ~278 M (xlm-roberta-base recortado) | no disponible | zh, en | MIT | Clasificador ONNX en navegador con atribucion de 5 clases |
+| Detectores basados en RoBERTa ingleses (p. ej. OpenAI detector, retirado) | ~125-355 M | 512 tokens | en | variable | Clasificacion binaria, solo ingles |
+| Clasificadores multilingues genericos sobre XLM-R | ~278 M | 512 tokens | multilingue | variable | Clasificacion binaria sin atribucion de fuente |
+| DetectGPT y metodos de perturbacion | depende del modelo puntuador | variable | multilingue | variable | Deteccion sin entrenamiento especifico, mas costosa en inferencia |
 
-No se dispone de datos públicos que permitan comparar AUROC o exactitud entre estas alternativas sobre los mismos conjuntos de evaluación. Las diferencias verificables son de despliegue: este modelo es el único de la tabla que se distribuye en ONNX con variantes cuantizadas y admite ejecución local en navegador, mientras que los detectores comerciales no permiten inferencia offline y los detectores RoBERTa citados están pensados para texto en inglés y salidas de GPT-2.
+La ventaja diferencial frente a alternativas es la combinacion de atribucion de familia de modelo, calibracion explicita y despliegue ONNX en cliente. La desventaja es la cobertura limitada a chino e ingles y la ausencia de comparaciones publicas con detectores comerciales en los mismos conjuntos.
 
 ## Limitaciones y advertencias
 
-- Las salidas son estimaciones de probabilidad; el propio autor advierte de que no deben usarse como única base para decisiones disciplinarias o legales.
-- Sesgo documentado hacia falsos positivos en textos cortos, escritura formal o jurídica, prosa literaria clásica y textos en inglés escritos por no nativos.
-- La atribución de fuente solo es fiable para versiones de modelo presentes en el entrenamiento; degrada con modelos más nuevos y con texto de IA prompteado para imitar estilo humano.
-- Los datos humanos de entrenamiento solo incluyen texto verificable como anterior al 30 de noviembre de 2022, lo que puede desplazar la frontera de decisión frente a escritura humana reciente.
-- El conjunto de entrenamiento no es público, por lo que no se puede auditar la composición del corpus, los sesgos de dominio ni posibles filtraciones hacia los conjuntos de evaluación.
-- El recorte de la capa de embeddings inutiliza el modelo para escrituras distintas del chino y el inglés (coreano, tailandés, árabe, cirílico, índico), aunque el tokenizador las acepte.
-- Es obligatorio aplicar `id_map.bin` sobre los `input_ids`; omitir este paso produce predicciones silenciosamente incorrectas.
-- La variante int8 se desvía de fp16 en el 1,4 % de los veredictos en distribución y hasta el 7,7 % en chino fuera de distribución; no debe mezclarse la calibración de fp16 con pesos int8.
-- Licencia MIT permite uso comercial, pero sin garantías y sin datos de entrenamiento auditables; el modelo se publicó con 0 descargas y 1 like, sin validación independiente conocida.
-- No debe presentarse como prueba definitiva de autoría: la detección de texto generado es intrínsecamente probabilística y adversarial.
+- Las salidas son estimaciones de probabilidad; el autor advierte explicitamente de que no deben usarse como base unica de decisiones disciplinarias o legales.
+- Mayor tasa de falsos positivos en textos cortos, escritura formal y legal, prosa literaria clasica y texto en ingles escrito por no nativos.
+- La atribucion de fuente solo es fiable para versiones de modelos presentes en el entrenamiento; degrada con modelos nuevos y con texto de IA prompteado para imitar estilo humano.
+- Los datos humanos de entrenamiento se limitan a texto verificable anterior al 30 de noviembre de 2022, lo que puede introducir sesgo frente a estilos de escritura posteriores.
+- Cobertura linguistica restringida a chino e ingles; el vocabulario de embeddings elimina otras escrituras, por lo que no debe usarse con otros idiomas.
+- Los datos de entrenamiento no son publicos, lo que dificulta la auditoria de sesgos y la reproducibilidad.
+- Licencia MIT permite uso comercial, pero sin garantias del autor sobre idoneidad para produccion.
+- La variante int8 presenta una tasa de veredictos distintos de fp16 de hasta el 7,7 % en chino fuera de distribucion, relevante si se exige consistencia entre dispositivos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Mike0307/ai-text-detector-zh-en
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
-- Perfil de LinkedIn de "Mike Ye" (GenAI Technical Lead en CloudMile): https://tw.linkedin.com/in/mike-ye-09a8791b1/zh-tw — resultado de la búsqueda web; no se ha podido confirmar que corresponda al autor del modelo.
+- Conjunto de evaluacion en ingles fuera de distribucion (textsight 2026): no disponible
+- Conjunto de evaluacion en chino fuera de distribucion (DetectRL-X): no disponible
+- Paper o blog del autor: no disponible
+- Repositorio de codigo: no disponible
+- Demo: no disponible

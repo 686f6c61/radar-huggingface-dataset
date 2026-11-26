@@ -21,7 +21,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 240,
+  "downloads_30d": 242,
   "trending_score": 0,
   "parameters": 8285328768,
   "parameters_human": "8.29B",
@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "HelloSun (Max Sun) - Hugging Face",
-      "url": "https://huggingface.co/HelloSun/models",
-      "snippet": "HelloSun/Qwen2.5-3B-Instruct-openvino Text Generation •Updated Oct 21, 2024• 13 • 1"
-    },
-    {
-      "title": "HelloSun (Max Sun) - Hugging Face",
-      "url": "https://huggingface.co/HelloSun",
-      "snippet": "User profile of Max Sun on Hugging Face"
-    },
-    {
-      "title": "Experiential Labs · The open source AI gateway",
-      "url": "https://www.experientiallabs.ai/",
-      "snippet": "Experiential Labs The open source AI gateway, written in Rust. Every model, your keys, your limits, at provider price."
-    },
-    {
-      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
-      "url": "https://www.techtimes.com/ai-timeline",
-      "snippet": "AI Model Release Timeline The latest AI models, newest first — who shipped what, and when. Updated Oct 19, 2026 17:14 UTC · updates hourly"
-    },
-    {
-      "title": "Voyeur House",
-      "url": "http://voyeurhouse.com/",
-      "snippet": "Voyeur House"
-    }
-  ]
+  "sources": []
 }

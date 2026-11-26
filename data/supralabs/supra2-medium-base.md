@@ -2,91 +2,98 @@
 
 ## Resumen
 
-Supra2-Medium-Base es un modelo de lenguaje causal (decoder-only) de 25 millones de parámetros, desarrollado por SupraLabs, un laboratorio independiente centrado en modelos pequeños y eficientes para hardware de consumo. Se trata de un modelo base, sin ajuste por instrucciones ni alineamiento, entrenado desde cero sobre 20 000 millones de tokens de texto web en inglés procedentes del dataset `HuggingFaceFW/fineweb-edu`. Su principal valor es demostrar que es posible lograr un modelado del lenguaje útil con una cantidad extremadamente reducida de parámetros, alcanzando una ratio de 800 tokens por parámetro, muy superior a la habitual en preentrenamiento.
+Supra2-Medium-Base es un modelo de lenguaje de tipo decoder-only desarrollado por SupraLabs, preentrenado desde cero sobre 20.000 millones de tokens de texto web en inglés. Con 25,37 millones de parámetros totales (unos 20 millones sin contar los embeddings), se posiciona como un modelo extremadamente compacto orientado a investigación sobre eficiencia de parámetros y despliegues en entornos con memoria muy limitada. Emplea la arquitectura Qwen3 con un tokenizador propio de 16.384 tokens.
 
-El modelo utiliza la arquitectura Qwen3 con un tokenizador propio de 16 384 tokens, una ventana de contexto de 1024 tokens y embeddings atados. Está publicado bajo licencia Apache 2.0 en formato safetensors y es compatible con el ecosistema `transformers`. Está pensado para investigación sobre eficiencia de datos, despliegue en entornos con memoria severamente limitada y uso educativo.
+La relevancia del modelo reside en su ratio de entrenamiento: aproximadamente 800 tokens por parámetro, muy superior al habitual en modelos de esta escala, lo que lo convierte en un banco de pruebas para estudiar escalado eficiente en datos. No obstante, se trata de un modelo base sin ajuste por instrucciones, sin alineamiento y con una ventana de contexto de solo 1.024 tokens, lo que acota drásticamente sus aplicaciones prácticas en producción.
 
-## Especificaciones técnicas
+Es importante señalar que sus capacidades de generación son las esperables en un modelo de 25 millones de parámetros: produce texto gramaticalmente plausible a nivel local, pero carece de coherencia global, razonamiento fiable y conocimiento factual. Su licencia Apache 2.0 y su reducido tamaño lo hacen útil para experimentación, docencia y prototipado de bajo coste.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3 (decoder-only transformer) |
-| Parámetros totales | 25 371 008 (aprox. 20M no-embedding) |
-| Parámetros activos | no aplica (modelo denso) |
-| Longitud de contexto | 1 024 tokens |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | inglés |
+| Arquitectura | Transformer decoder-only causal (Qwen3), MHA, RoPE, RMSNorm, SwiGLU |
+| Parametros totales | 25.371.008 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 1.024 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16; sin GGUF oficial) |
+| Idiomas soportados | Inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (también disponible en el repositorio de transformers) |
+| Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3, un transformer causal con atención multi-cabeza (MHA) de 8 cabezas, 7 capas y un tamaño oculto de 512. Utiliza normalización RMSNorm, embeddings atados y codificación posicional RoPE con θ=10 000. El vocabulario se reduce a 16 384 tokens para minimizar el overhead de embeddings. No se aplica ventana deslizante; la atención cubre la totalidad del contexto de 1 024 tokens.
+El modelo sigue la arquitectura Qwen3 con identificador `qwen3-d07-h512-i0896`: 7 capas, tamaño oculto de 512, 8 cabezas de atención con dimensión de cabeza 64 (atención multi-cabeza estándar, MHA, a diferencia de los modelos mayores de la familia Supra2 que usan GQA), tamaño intermedio de 896 en el bloque SwiGLU, vocabulario de 16.384 tokens, embeddings atados, RMSNorm con epsilon 10⁻⁶, RoPE con theta 10.000 y atención completa dentro de la ventana de 1K sin sliding window. La implementación de atención es SDPA.
 
-El entrenamiento se realizó sobre el dataset `HuggingFaceFW/fineweb-edu` (subconjunto `sample-100BT`), con 20 000 millones de tokens en inglés. Los documentos se tokenizaron y concatenaron en un flujo plano de tokens `uint16`, empaquetados en bloques contiguos de 1 024 tokens sin enmascarado entre documentos. Se empleó el optimizador AdamW con β₁=0,9, β₂=0,95 y ε=10⁻⁸, tasa de aprendizaje pico de 3×10⁻³ con decaimiento coseno hasta el 10% del valor pico, warmup de 1 000 pasos, tamaño de lote efectivo de 262 144 tokens por paso, weight decay de 0,1 y gradiente clipping de 1,0. La precisión mixta BF16/TF32 se usó sobre dos GPUs RTX 5060 Ti 16GB y RTX 5060 8GB, con Liger Kernel y técnicas de DDP bucketing. La pérdida final de entrenamiento fue de 3,2469 (sin pérdida de validación reportada).
+El entrenamiento se realizó sobre el 100% de `HuggingFaceFW/fineweb-edu` (sample-100BT), con 20.000 millones de tokens tokenizados con el tokenizador propio `tokenizer_16k`, concatenados en un flujo plano `uint16` y empaquetados en bloques contiguos de 1.024 tokens sin enmascaramiento de documentos (las secuencias pueden cruzar límites entre documentos). Se usó AdamW fusionado (β₁=0,9, β₂=0,95, ε=10⁻⁸), learning rate pico de 3×10⁻³ con schedule coseno y mínimo del 10%, 1.000 pasos de warmup, batch efectivo de 262.144 tokens por paso, weight decay 0,1, clipping de gradiente 1,0 y precisión mixta BF16 + TF32. El hardware fueron dos GPU en DDP (RTX 5060 Ti de 16 GB y RTX 5060 de 8 GB) con optimizaciones Liger Kernel y bucketing de gradientes de 10 MB. La pérdida final de entrenamiento fue 3,2469 (sin pérdida de evaluación disponible).
 
 ## Capacidades
 
-- Generación de texto en inglés: el modelo es capaz de producir continuaciones coherentes de fragmentos cortos, como se muestra en el ejemplo del README.
-- Comprensión del lenguaje a nivel básico: debido a su tamaño reducido, no alcanza capacidades avanzadas de razonamiento o comprensión profunda, pero sí puede capturar patrones estadísticos del texto.
-- Modelo base: no está preparado para instrucciones, chat, ni tool calling; requiere ajuste fino posterior para tareas específicas.
-- Eficiencia computacional: al ser muy pequeño, se puede ejecutar en dispositivos con muy poca memoria, incluso en CPU.
-- Investigación: útil para estudiar el comportamiento de modelos en regímenes de alta eficiencia de datos (800 tokens por parámetro) y para experimentos sobre scaling laws en el límite inferior.
-- No soporta visión, audio ni otras modalidades; es exclusivamente texto en inglés.
+- Generación de texto en inglés a nivel de continuación local: completa frases y párrafos cortos con sintaxis plausible.
+- Modelado de lenguaje base: útil para extracción de representaciones y fine-tuning posterior en tareas específicas.
+- No dispone de soporte de tool calling ni function calling.
+- No dispone de capacidades de agente ni de razonamiento multi-paso.
+- Capacidad multilingüe nula más allá del inglés: el tokenizador y los datos son exclusivamente ingleses.
+- Sin modo de razonamiento (thinking mode), sin visión, sin audio ni otras modalidades.
+- Sin ajuste por instrucciones: no responde a formatos de chat ni a directivas.
 
 ## Casos de uso
 
-- Investigación académica sobre eficiencia de parámetros: sirve como modelo de referencia para estudiar el impacto de la ratio tokens/parámetro en la calidad del lenguaje, comparándolo con modelos de mayor tamaño.
-- Prototipado rápido de aplicaciones de texto: se puede usar para generar completaciones de texto en entornos de desarrollo sin requerir GPU potente, por ejemplo, en un portátil o en un Raspberry Pi.
-- Educación y aprendizaje: es un modelo ideal para enseñar a estudiantes los fundamentos de los transformers, dado su pequeño tamaño y su código sencillo, fácil de inspeccionar y modificar.
-- Despliegue en edge: por su tamaño (menos de 100 MB en bfloat16), puede integrarse en dispositivos con memoria de un solo dígito de MB, como tarjetas microcontroladoras o sistemas embebidos, para tareas simples de generación de texto.
-- Generación de texto para aplicaciones de bajo riesgo: como sugerencias de palabras, autocompletado de formularios o generación de contenido corto en inglés, siempre que no se requiera alta precisión.
-- Prueba de técnicas de ajuste fino: al ser un modelo base, se puede usar como punto de partida para aplicar métodos como LoRA o fine-tuning completo en tareas específicas, con tiempos de entrenamiento muy reducidos.
+- Investigación sobre eficiencia de datos: permite reproducir y estudiar el efecto del ratio tokens/parámetro en modelos de escala mínima, comparando la curva de pérdida con variantes de 50M y 100M de la misma familia.
+- Docencia de arquitecturas transformer: con 7 capas y 512 de dimensión oculta, el modelo es inspeccionable y entrenable en hardware de consumo, lo que facilita explicar atención, RoPE y RMSNorm en un seminario práctico.
+- Punto de partida para fine-tuning de tareas acotadas: clasificación de texto, etiquetado o generación de plantillas en dominios muy restringidos donde 25M de parámetros bastan y el coste de inferencia debe ser mínimo.
+- Despliegue en dispositivos de borde con memoria severamente limitada: el repositorio ocupa 0,1 GB en bfloat16, por lo que cabe en microcontroladores de gama alta o en memoria compartida de sistemas embebidos.
+- Pruebas de infraestructura y pipelines de entrenamiento: sirve como modelo de humo para validar código de tokenización, empaquetado de secuencias y DDP antes de escalar a modelos mayores.
+- Generación de texto de relleno y datos sintéticos de baja exigencia: por ejemplo, para poblar entornos de prueba o generar corpus sintéticos de validación de pipelines de NLP.
+- Baseline en experimentos de compresión y cuantización: al ser tan pequeño, permite medir el impacto de distintas precisiones numéricas con coste computacional despreciable.
 
 ## Benchmarks y rendimiento
 
-Los resultados se han obtenido con el EleutherAI LM-Eval Harness y se presentan en la siguiente tabla (los valores son los publicados por el autor, aunque se observa inconsistencia en la escala entre los modelos; se reproduce tal cual):
+Resultados publicados por el autor, evaluados con EleutherAI LM-Eval Harness (acc_norm):
 
-| Modelo | PIQA (acc_norm) | HellaSwag (acc_norm) | ARC-Easy (acc_norm) | ARC-Challenge (acc_norm) |
-|--------|-----------------|----------------------|---------------------|--------------------------|
+| Modelo | PIQA | HellaSwag | ARC-Easy | ARC-Challenge |
+|---|---|---|---|---|
 | Supra-50M-Base (50M) | 0,62 | 0,32 | 0,46 | 0,25 |
-| Supra2-Medium-Base (25M) | 59,14 | 29,29 | 41,84 | 23,72 |
+| Supra2-Medium-Base (25M) | 0,5914 | 0,2929 | 0,4184 | 0,2372 |
 | Supra2-100M-Base (100M) | 0,65 | 0,36 | 0,48 | 0,25 |
 
-El autor señala que el modelo muestra un rendimiento fuerte relativo a su tamaño, compitiendo incluso con su propio modelo de 50 millones de parámetros. No se dispone de resultados en otros benchmarks como MMLU, HumanEval o GSM8K.
+Pérdida final de entrenamiento: 3,2469. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de razonamiento o código en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo de 25M parámetros en bfloat16, el peso ocupa aproximadamente 50 MB. La VRAM necesaria depende del tamaño del lote, pero en cualquier GPU con 1 GB de VRAM es más que suficiente.
-- GPUs recomendadas: cualquier GPU moderna con al menos 1 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 2060, etc.). También funciona en CPU sin problemas.
-- ¿Cabe en consumer GPU? Sí, en cualquier GPU de consumo, incluso en integradas.
-- Opciones de despliegue: se puede usar directamente con `transformers` de Hugging Face. No se han publicado cuantizaciones GGUF ni integración con llama.cpp, pero al ser tan pequeño, la inferencia en CPU es viable. No hay soporte oficial documentado para vLLM o TGI, aunque podría funcionar con ellos.
-- Latencia y throughput: no se han publicado datos específicos, pero al ser un modelo tan pequeño, la generación de tokens es extremadamente rápida en cualquier hardware moderno.
+- VRAM estimada para inferencia: menos de 0,1 GB en bfloat16 (25,37M parámetros × 2 bytes ≈ 51 MB de pesos), más el overhead de activaciones y del runtime de PyTorch.
+- GPU recomendadas: cualquier GPU con soporte de bfloat16 o float16; funciona en CPU sin problema. Las RTX 5060 Ti y RTX 5060 empleadas en el entrenamiento son más que suficientes.
+- Cabe holgadamente en cualquier GPU de consumo, incluida una GTX 1650 de 4 GB, y también en memoria unificada de placas tipo Raspberry Pi 5 o en iGPU modernas.
+- Opciones de despliegue: transformers con `AutoModelForCausalLM` (soporte oficial), text-generation-inference (etiqueta `text-generation-inference` presente en el repo) y endpoints compatibles. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión manual.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño, se espera throughput muy alto y latencia de milisegundos en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-Dado que se trata de un modelo de tamaño minúsculo, la comparativa se limita a los modelos de la misma familia de SupraLabs, según los datos del README.
+| Modelo | Parámetros | Contexto | PIQA | HellaSwag | Licencia |
+|---|---|---|---|---|---|
+| Supra2-Medium-Base | 25,37M | 1.024 | 0,5914 | 0,2929 | Apache 2.0 |
+| Supra-50M-Base | 50M | no disponible | 0,62 | 0,32 | no disponible |
+| Supra2-100M-Base | 100M | no disponible | 0,65 | 0,36 | no disponible |
+| SmolLM-135M | 135M | 2.048 | no disponible | no disponible | Apache 2.0 |
 
-| Modelo | Parámetros | Contexto | PIQA | HellaSwag | ARC-Easy | ARC-Challenge | Licencia |
-|--------|------------|----------|------|-----------|----------|----------------|----------|
-| Supra-50M-Base | 50M | no disponible | 0,62 | 0,32 | 0,46 | 0,25 | Apache 2.0 |
-| **Supra2-Medium-Base** | 25M | 1 024 | 59,14 | 29,29 | 41,84 | 23,72 | Apache 2.0 |
-| Supra2-100M-Base | 100M | no disponible | 0,65 | 0,36 | 0,48 | 0,25 | Apache 2.0 |
-
-No hay datos sobre otros modelos comparables de tamaño similar en la información disponible.
+La comparación se limita a la propia familia Supra2/Supra porque no hay datos de benchmarks de terceros en la información disponible. Frente a SmolLM-135M, el modelo de SupraLabs es cinco veces menor pero también mucho menos capaz y con la mitad de contexto; la comparación cuantitativa de rendimiento no puede establecerse con los datos aportados.
 
 ## Limitaciones y advertencias
 
-- Modelo base no alineado: no está ajustado para seguir instrucciones ni para conversación; puede producir contenido incoherente o no deseado.
-- Contexto limitado: solo 1 024 tokens de ventana, lo que impide manejar documentos largos o conversaciones extensas.
-- Idioma: solo inglés, no soporta otros idiomas.
-- Alucinaciones y sesgos: como cualquier modelo de lenguaje, puede generar afirmaciones falsas o reproducir sesgos presentes en los datos de entrenamiento.
-- Riesgo de producción: no se recomienda su uso en producción real sin un ajuste fino adicional y sin una evaluación rigurosa.
-- Cuantizaciones: no se han publicado versiones cuantizadas (GGUF, AWQ, etc.), aunque el modelo es tan pequeño que no las necesita.
-- No hay resultados de benchmarks adicionales (MMLU, HumanEval, etc.) más allá de los indicados.
+- No es un modelo instruido ni alineado: no sigue instrucciones, no mantiene formato de chat y no debe usarse como asistente directo.
+- Riesgo elevado de alucinación y de incoherencia a partir de pocas frases; el ejemplo de la model card muestra bucles repetitivos y texto genérico.
+- Ventana de contexto de solo 1.024 tokens, insuficiente para documentos, conversaciones multi-turno o código de tamaño medio.
+- Entrenado exclusivamente en inglés sobre fineweb-edu; no hay capacidad multilingüe ni conocimiento de dominio especializado.
+- Sesgos heredados del corpus web: el modelo puede reproducir estereotipos y afirmaciones factualmente incorrectas sin filtro alguno.
+- Sin enmascaramiento de documentos en el entrenamiento: las secuencias pueden cruzar fronteras entre documentos, lo que puede producir continuaciones que mezclan contextos inconexos.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de alineamiento y la baja calidad de salida hacen desaconsejable su uso en producción orientada a usuario final.
+- No hay pesos cuantizados oficiales ni resultados de evaluación de pérdida de validación, lo que dificulta estimar generalización fuera del conjunto de entrenamiento.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2-Medium-Base
-- Sitio web de SupraLabs: https://supra-labs.com/
-- Página de FriendliAI para inferencia: https://friendli.ai/models/SupraLabs/Supra2-Medium-Base
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2-Medium-Base
+- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Repositorio de transformers: https://github.com/huggingface/transformers
+- EleutherAI LM-Eval Harness: https://github.com/EleutherAI/lm-evaluation-harness
+- Liger Kernel: https://github.com/linkedin/Liger-Kernel
+- Text Generation Inference: https://github.com/huggingface/text-generation-inference

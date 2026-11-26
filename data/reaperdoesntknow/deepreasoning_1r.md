@@ -1,87 +1,98 @@
 # reaperdoesntknow/DeepReasoning_1R
 
 ## Resumen
-DeepReasoning_1R es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, desarrollado por el usuario reaperdoesntknow bajo la marca Convergent Intelligence LLC: Research Division. Se presenta como un modelo orientado al razonamiento y la conversacion, entrenado sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, lo que sugiere un ajuste con preferencias para alinear el estilo de respuesta con el de un interlocutor humano. Con 494 millones de parametros, es un modelo pequeno pensado para despliegues ligeros.
 
-El modelo se enmarca en una coleccion mas amplia de la misma organizacion, que incluye variantes destiladas de Qwen3 y otros modelos pequenos. La model card dedica la mayor parte del contenido a describir el marco teorico propio del autor (Discrepancy Calculus) y a promocionar otros modelos del portafolio, sin detallar el proceso de entrenamiento concreto de este modelo ni sus datos de evaluacion.
+DeepReasoning_1R es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct, desarrollado por el usuario reaperdoesntknow bajo la marca Convergent Intelligence LLC: Research Division. Se trata de un modelo de generación de texto de pequeno tamano, con 494 millones de parámetros, orientado a tareas de razonamiento y conversación. El modelo parte de la arquitectura Qwen2 de Alibaba y ha sido entrenado sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, lo que sugiere un ajuste orientado a preferencias humanas.
 
-Por su tamano y su base (Qwen2.5-0.5B-Instruct), DeepReasoning_1R es relevante como opcion de bajo coste para tareas de generacion de texto y conversacion en entornos con recursos limitados, aunque la ausencia de benchmarks publicados y de informacion sobre licencia limita su adopcion en produccion sin una evaluacion propia previa.
+El modelo se presenta dentro de un portafolio más amplio de modelos del mismo autor, que incluye variantes destiladas de Qwen3 y otros modelos orientados a razonamiento y código. DeepReasoning_1R se posiciona como una propuesta ligera para experimentación con razonamiento en entornos de recursos limitados, aunque la documentación técnica disponible es escasa y no se detallan aspectos clave como la composición exacta del dataset de entrenamiento, el número de tokens utilizados o los resultados de evaluación.
+
+Con 1.874 descargas y 2 likes en Hugging Face, el modelo tiene una adopción moderada dentro del ecosistema. Su relevancia radica en ser un ejemplo de fine-tuning de bajo coste sobre una base compacta y bien conocida (Qwen2.5-0.5B-Instruct), lo que facilita su despliegue en hardware de consumo, aunque carece de benchmarks publicados que permitan validar sus capacidades de razonamiento de forma objetiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen2) |
+| Arquitectura | Transformer decoder-only (Qwen2) |
 | Parametros totales | 494.032.768 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B-Instruct, no confirmada en la model card) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B-Instruct, no confirmada) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF no publicadas en el repo) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de la familia Qwen2.5, con atencion causal estandar y normalizacion RMSNorm, segun la arquitectura publica de la familia base. El ajuste fino se realiza sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, un conjunto orientado a preferencias con respuestas de estilo humano; el nombre del modelo y las etiquetas sugieren un entrenamiento con DPO (Direct Preference Optimization) o una variante de ajuste por preferencias, aunque la model card no explicita el algoritmo, el numero de tokens ni la composicion exacta del dataset.
 
-La model card no documenta hiperparametros, numero de pasos, hardware de entrenamiento ni innovaciones tecnicas especificas (no se mencionan decodificacion especulativa, atencion lineal ni tecnicas de mezcla de expertos). El contenido principal de la model card es la descripcion del marco "Discrepancy Calculus" del autor, que no aporta detalles verificables sobre el proceso de entrenamiento de este modelo concreto.
+DeepReasoning_1R emplea la arquitectura Qwen2, un transformer decoder-only con atención causal estándar, heredada directamente de Qwen2.5-0.5B-Instruct. El modelo base cuenta con 494 millones de parámetros y está diseñado para generación de texto autorregresiva. No se dispone de información sobre modificaciones arquitectónicas respecto al modelo base.
+
+El entrenamiento se realizó mediante fine-tuning sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, lo que indica un ajuste orientado a preferencias humanas (DPO o similar) para alinear las respuestas del modelo con estilos conversacionales más naturales. No se especifican el número de tokens de entrenamiento, la composición detallada del dataset, la existencia de RLHF adicional ni hiperparámetros de entrenamiento. El autor enmarca el modelo dentro de un framework propio denominado Discrepancy Calculus (DISC), una aproximación teórica de medida que trata las singularidades del entrenamiento como señales estructurales, aunque no se aportan detalles concretos sobre cómo se aplica este framework al entrenamiento de este modelo específico.
 
 ## Capacidades
-- Generacion de texto conversacional en espanol e ingles (idiomas no confirmados oficialmente).
-- Razonamiento basico y respuesta a preguntas, heredado de la base Qwen2.5-0.5B-Instruct.
-- Ajuste orientado a preferencias humanas, lo que puede mejorar la naturalidad y el tono de las respuestas.
-- Soporte de tool calling / function calling: no confirmado en la model card; la base Qwen2.5-Instruct lo soporta, pero no se verifica en este ajuste.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; la base Qwen2.5 soporta varios idiomas, pero no se confirma para este ajuste.
-- Modo thinking, vision o audio: no disponible.
+
+- Generación de texto conversacional en formato multi-turno, heredada de la base instruct.
+- Razonamiento de propósito general, según la orientación declarada del modelo (tag "reasoning").
+- Generación de código y matemáticas básicas, presumiblemente heredadas de Qwen2.5-0.5B-Instruct, aunque no confirmadas mediante benchmarks.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: no disponible (no se especifican idiomas).
+- Modo thinking explícito: no disponible (no documentado).
+- Visión o audio: no soportado (modelo puramente textual).
 
 ## Casos de uso
-- Prototipado rapido de chatbots: por su tamano (494 M de parametros), puede ejecutarse en CPU o GPU de gama baja para validar flujos conversacionales antes de escalar a modelos mayores.
-- Generacion de texto en dispositivos con recursos limitados: adecuado para entornos edge o contenedores sin GPU dedicada, donde un modelo de 0.5B en fp16 ocupa aproximadamente 1 GB de memoria.
-- Filtrado y clasificacion de texto: puede usarse para tareas de etiquetado o resumen breve en pipelines de datos, con la ventaja de un coste de inferencia bajo.
-- Asistente de respuesta en aplicaciones de mensajeria: su entrenamiento orientado a preferencias humanas puede producir respuestas mas naturales en conversaciones cortas.
-- Educacion y demostraciones: util como modelo de ejemplo para ensenar fine-tuning, DPO y despliegue de transformers en cursos o talleres.
-- Generacion de borradores en entornos de bajo presupuesto: para tareas de redaccion asistida donde la latencia y el coste importan mas que la calidad maxima.
-- Experimentacion con tecnicas de alineacion: sirve como banco de pruebas para comparar ajustes DPO frente a la base Instruct original.
+
+- Prototipado rápido de asistentes conversacionales: el modelo puede gestionar diálogos multi-turno básicos en entornos de desarrollo con recursos limitados, gracias a su reducido tamaño de 494M de parámetros y su formato safetensors compatible con transformers.
+- Experimentación académica con técnicas de alineación: al estar entrenado sobre un dataset DPO, sirve como caso de estudio para investigar el efecto del ajuste por preferencias en modelos pequeños.
+- Despliegue en dispositivos de borde: su tamaño permite ejecución en CPU o GPUs de gama baja, adecuado para demos locales o aplicaciones embebidas donde no se requiere alta calidad.
+- Generación de texto auxiliar en pipelines de datos: puede utilizarse para tareas de aumento de datos, resumen o reformulación en contextos donde el coste computacional es crítico.
+- Base para fine-tuning adicional: al ser un modelo pequeño y abierto en formato safetensors, puede servir como punto de partida para ajustes específicos de dominio con presupuesto reducido.
+- Educación y divulgación: útil para demostrar el ciclo completo de fine-tuning de un modelo Qwen2 en cursos o talleres, dado su bajo coste de entrenamiento e inferencia.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia en fp16: aproximadamente 1 GB para los pesos (494 M de parametros), mas overhead de activaciones y cache KV; en la practica, 2-3 GB son suficientes para contextos moderados.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 0.5-0.7 GB; en 4 bits, aproximadamente 0.3-0.4 GB (no se distribuyen pesos cuantizados oficialmente, pero puede cuantizarse con herramientas externas).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso iGPU o CPU para inferencia en fp32/bf16.
-- Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 2 GB de VRAM; tambien en CPU.
-- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (etiqueta presente en el repo), llama.cpp/Ollama tras conversion a GGUF, y vLLM para despliegues con concurrencia.
-- Latencia y throughput: no disponibles; por el tamano, se espera una latencia baja en GPU consumer, pero no hay mediciones publicadas.
+
+- VRAM estimada para inferencia: aproximadamente 1 GB en FP16 (494M parámetros × 2 bytes), alrededor de 0,5 GB en cuantización de 8 bits y unos 0,3 GB en 4 bits (estimaciones teóricas, no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4060, GTX 1660 o superiores son suficientes. También cabe en GPUs de datacenter como A100 o H100, aunque no las aprovecha.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag presente), endpoints_compatible. No se han publicado pesos GGUF en el repo, por lo que llama.cpp y Ollama requerirían conversión manual.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| DeepReasoning_1R | 494 M | no disponible | no disponible | Hugging Face |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 | Hugging Face, ampliamente desplegado |
-| SmolLM2-360M-Instruct | 360 M | 8.192 tokens (segun documentacion de Hugging Face) | Apache 2.0 | Hugging Face |
-| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens (segun documentacion de Meta) | Llama 3.2 Community License | Hugging Face |
-
-La comparativa se basa en datos publicos de los modelos alternativos; para DeepReasoning_1R no hay benchmarks que permitan comparar rendimiento real frente a estas alternativas. La principal diferencia practica es la licencia: la base Qwen2.5 y SmolLM2 son Apache 2.0, mientras que la licencia de DeepReasoning_1R no esta declarada.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| DeepReasoning_1R | 494M | no disponible | no disponible | Hugging Face (safetensors) | Fine-tune DPO sobre Qwen2.5-0.5B-Instruct |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face, GGUF, Ollama | Modelo base; benchmarks publicados por Alibaba |
+| SmolLM2-360M-Instruct | 360M | 8.192 tokens (según HuggingFace) | Apache 2.0 | Hugging Face, GGUF | Alternativa compacta de Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.540M | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, Ollama | Misma familia, mayor capacidad |
 
 ## Limitaciones y advertencias
-- Licencia no declarada: no se puede confirmar el uso comercial permitido; es un riesgo legal para produccion.
-- Ausencia de benchmarks: no hay evidencia publicada de mejora sobre la base Qwen2.5-0.5B-Instruct.
-- Tamano reducido: 494 M de parametros limita el razonamiento complejo, las matematicas avanzadas y el codigo en comparacion con modelos de mayor escala.
-- Riesgo de alucinacion: inherente a los modelos pequenos y no mitigado explicitamente en la model card.
-- Idiomas no documentados: no se confirma el soporte multilingue ni la calidad en espanol.
-- Contexto no documentado: no se especifica si se mantiene la ventana de 32.768 tokens de la base o si el ajuste la modifica.
-- Model card centrada en promocion: gran parte del contenido describe el marco teorico del autor y otros modelos del portafolio, sin detalles tecnicos verificables sobre este ajuste.
-- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad.
+
+- Sesgos conocidos: no documentados por el autor; al derivar de Qwen2.5-0.5B-Instruct, es probable que herede sesgos presentes en los datos de entrenamiento del modelo base, pero no se han realizado evaluaciones específicas.
+- Riesgo de alucinación: elevado, dado el reducido tamaño del modelo (494M parámetros); los modelos pequeños tienden a generar información incorrecta con mayor frecuencia, especialmente en tareas de razonamiento complejo.
+- Limitaciones de contexto e idioma: no se especifican la longitud de contexto efectiva ni los idiomas soportados; se desconoce si el fine-tuning ha degradado capacidades multilingües del modelo base.
+- Restricciones de licencia: la licencia no está disponible, lo que impide determinar si se permite uso comercial. Se recomienda contactar con el autor antes de cualquier despliegue en producción.
+- Caveats para producción: ausencia de benchmarks publicados, documentación técnica incompleta y falta de pesos cuantizados en el repo dificultan la evaluación objetiva de su calidad y su integración en pipelines estándar.
+- El modelo se enmarca en un framework teórico (Discrepancy Calculus) sin validación independiente publicada, por lo que las afirmaciones del autor sobre su metodología deben tomarse con cautela.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DeepReasoning_1R
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Modelo relacionado SMOLM2Prover: https://huggingface.co/reaperdoesntknow/SMOLM2Prover
-- Modelo relacionado SMOLM2Prover-GGUF: https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF
-- Modelo relacionado Qwen3-1.7B-Thinking-Distil: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil
-- Documento Structure Over Scale (DOI: 10.57967/hf/8165): https://doi.org/10.57967/hf/8165
-- Documento Discrepancy Calculus (DOI: 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Documento Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
+- Documento Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Modelo SMOLM2Prover: https://huggingface.co/reaperdoesntknow/SMOLM2Prover
+- Modelo SMOLM2Prover-GGUF: https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF
+- Modelo SAGI: https://huggingface.co/reaperdoesntknow/SAGI
+- Modelo S-AGI: https://huggingface.co/reaperdoesntknow/S-AGI
+- Modelo Qwen3-1.7B-Thinking-Distil: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil
+- Modelo LFM2.5-1.2B-Distilled-SFT: https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT
+- Modelo Qwen3-1.7B-Coder-Distilled-SFT: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT
+- Modelo Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF
+- Modelo Qwen3-1.7B-Coder-Distilled-SFT-GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT-GGUF
+- Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c

@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Simplifying Algebraic Expressions - Practice Problems",
-      "url": "https://www.algebra-class.com/algebraic-expressions.html",
-      "snippet": "In this lesson, we will practice simplifying algebraic expressions."
-    },
-    {
-      "title": "Algebraic Expressions Practice Questions - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/maths/algebraic-expressions-practice-questions/",
-      "snippet": "Jul 23, 2025 · In this article, we will learn what algebraic expressions are and solve problems related to them. What is Algebraic …"
-    },
-    {
-      "title": "Simplifying Algebraic Expressions: Practice Problems and Solutions",
-      "url": "https://completeera.com/simplifying-algebraic-expressions-practice-problems-and-solutions/",
-      "snippet": "Algebraic expressions can look like a tangled mess of letters and numbers, but simplifying them is like untangling a knot—it makes …"
-    },
-    {
-      "title": "Simplifying Algebraic Expressions Practice Problems",
-      "url": "https://www.onlinemath4all.com/simplifying-algebraic-expressions-practice-problems.html",
-      "snippet": "To simplify algebraic expression, first we have to be clear with like and unlike terms. Like terms are terms that have the same …"
-    },
-    {
-      "title": "Math Practice Problems - Simplifying Algebraic Expressions",
-      "url": "http://www.mathscore.com/math/practice/Simplifying%20Algebraic%20Expressions/",
-      "snippet": "In the main program, all problems are automatically graded and the difficulty adapts dynamically based on performance. Answers to …"
-    }
-  ]
+  "sources": []
 }

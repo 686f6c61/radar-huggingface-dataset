@@ -1,98 +1,97 @@
 # ETME-TECH/EliasAI-Micro-v2.2-preview
 
 ## Resumen
+EliasAI-Micro-v2.2-preview es un modelo de lenguaje compacto de aproximadamente 0,8B parámetros (1.006.672.704 parámetros reales según safetensors) desarrollado por ETME-TECH, con autoría atribuida a Elias Rickert. Se trata de un ajuste fino mediante LoRA sobre `Qwen/Qwen3.5-0.8B-Base`, orientado específicamente al idioma alemán y a tareas de razonamiento conversacional. El modelo emplea un modo de "pensamiento" explícito en etiquetas `<think>...</think>` antes de emitir la respuesta final, un patrón habitual en modelos de razonamiento recientes.
 
-EliasAI-Micro-v2.2-preview es un modelo de lenguaje compacto de tipo chat y razonamiento, especializado en alemán, desarrollado por ETME TECH (con autoría de Elias Rickert) sobre el modelo base Qwen/Qwen3.5-0.8B-Base. Con aproximadamente 1.006 millones de parámetros (1,0 B) y una arquitectura transformer derivada de la familia Qwen3.5, el modelo se ha ajustado mediante LoRA para producir respuestas conversacionales en alemán con un modo de razonamiento previo explícito delimitado por etiquetas `<think>...</think>`.
+El modelo resuelve el problema de disponer de un asistente conversacional en alemán de muy bajo coste computacional, capaz de ejecutarse en hardware de consumo y con un enfoque declarado de "Try-First": ofrece respuestas directas y estimaciones calibradas en lugar de rechazos innecesarios. Su tamaño reducido lo hace adecuado para despliegue local, prototipado rápido y aplicaciones con requisitos de latencia estrictos.
 
-El modelo resuelve el problema de disponer de un asistente conversacional en alemán que quepa en hardware muy modesto (desde una Raspberry Pi 5 hasta una GPU de escritorio), manteniendo un comportamiento honesto y calibrado ante la incertidumbre (principio "Try-First"). Su relevancia radica en que combina un tamaño muy reducido con cuantizaciones GGUF listas para usar, lo que permite despliegue local sin infraestructura de servidor.
+Es relevante ahora por su combinación de licencia Apache 2.0, disponibilidad en formatos GGUF cuantizados (Q8_0 y Q4_K_M) y safetensors BF16, y su integración con `llama.cpp`. No obstante, la información pública disponible es limitada: no se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni detalles exhaustivos sobre el dataset de entrenamiento más allá de lo indicado en la model card.
 
-La versión publicada se distribuye bajo licencia Apache 2.0, con pesos en safetensors (BF16) y tres variantes GGUF (Q8_0, Q4_K_M y Q4_0 para ARM). El repositorio ocupa 3,8 GB e incluye el modelo fusionado completo.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5, tag `qwen3_5_text`) |
-| Parametros totales | 1.006.672.704 (~1,0 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (el ejemplo de llama.cpp usa `-c 4096`) |
-| Tipos de cuantizacion | BF16 (safetensors), GGUF Q8_0, GGUF Q4_K_M, GGUF Q4_0 (ARM) |
+| Arquitectura | Transformer (derivada de Qwen3.5, tag `qwen3_5_text`); detalles internos no disponibles |
+| Parámetros totales | 1.006.672.704 (~0,8B) |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible en la model card; el ejemplo de `llama.cpp` usa `-c 4096` |
+| Tipos de cuantización | GGUF Q8_0, GGUF Q4_K_M, BF16 (safetensors) |
 | Idiomas soportados | Alemán (`de`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) y GGUF |
+| Formato de pesos | safetensors (BF16), GGUF (Q8_0, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de `Qwen/Qwen3.5-0.8B-Base`, una arquitectura transformer de la familia Qwen3.5. Sobre esa base se aplicó un ajuste fino mediante LoRA nativo en BF16 con rango `r=32` y `alpha=64`, empleando Differential Loss Weighting y NEFTune. Además, se incorporó un "EOS-Head" calibrado de forma convexa para la gestión del token `<|im_end|>`. El resultado se fusionó (merged) en un modelo completo en safetensors BF16.
 
-El modelo parte de Qwen/Qwen3.5-0.8B-Base, un transformer de la familia Qwen3.5, y se ajusta mediante LoRA nativo en BF16 con rango `r=32` y `alpha=64`. El entrenamiento emplea Differential Loss Weighting y NEFTune, junto con una cabeza EOS (`<|im_end|>`) calibrada de forma convexa. El ajuste se realiza sobre un dataset propio denominado V6, compuesto por 8.099 diálogos en alemán curados manualmente, con turnos simples y multiturno de hasta 5 rondas, distribuidos en 12 categorías equilibradas (explicaciones de conceptos, textos y brainstorming, memoria a corto plazo, empatía y sarcasmo, opiniones y small talk, traducción/resumen/corrección, conjeturas calibradas y límites duros, anti-gaslighting y anti-prompt-injection, correcciones honestas, dilemas morales, identidad ETME-TECH y minijuegos).
-
-La innovación destacable es el modo de razonamiento previo en alemán: el modelo genera entre 3 y 6 frases dentro de `<think>...</think>` antes de emitir la respuesta final, lo que estructura el razonamiento sin aumentar el tamaño del modelo. El autor reporta un benchmark final en vivo de 17/18, con TTR de 0,93 y validation loss de 1,7527. No se especifican el número total de tokens de entrenamiento ni la composición completa del corpus más allá de las categorías descritas.
+El dataset de entrenamiento (denominado V6) consta de 8.099 diálogos alemanes curados, de uno a cinco turnos, distribuidos en 12 categorías equilibradas: explicaciones de conceptos, textos y brainstorming, memoria a corto plazo, empatía y sarcasmo, opiniones y small talk, traducción/resumen/corrección, estimaciones calibradas y límites duros, anti-gaslighting y anti-prompt-injection, correcciones honestas, dilemas morales, identidad clara de ETME-TECH y minijuegos. No se especifica el número total de tokens de entrenamiento ni si hubo fases de RLHF o DPO más allá del ajuste LoRA descrito. La innovación técnica destacable es el modo de razonamiento estructurado en `<think>...</think>` en alemán, con una extensión declarada de 3 a 6 frases.
 
 ## Capacidades
-
-- Generación de texto conversacional en alemán con tono cercano y directo.
-- Razonamiento estructurado previo mediante bloque `<think>...</think>` en alemán.
-- Memoria conversacional multiturno (hasta 5 rondas en el dataset de entrenamiento).
-- Explicación de conceptos, redacción de textos y brainstorming.
-- Traducción, resumen y corrección de textos.
-- Empatía, manejo de sarcasmo y small talk.
-- Conjeturas calibradas ante incertidumbre (principio "Try-First") con reconocimiento explícito de límites.
-- Resistencia a prompt injection y anti-gaslighting (entrenado explícitamente para ello).
-- Manejo de dilemas morales y correcciones honestas.
-- Identidad de marca ETME-TECH / Elias AI.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni multimodalidad.
+- Generación de texto conversacional en alemán con modo de razonamiento previo en `<think>...</think>`.
+- Razonamiento breve y estructurado antes de responder.
+- Manejo de conversaciones multi-turno (hasta 5 rondas en el dataset de entrenamiento).
+- Memoria a corto plazo dentro de la conversación.
+- Capacidades de traducción, resumen y corrección de texto.
+- Estimaciones calibradas y reconocimiento explícito de límites duros (por ejemplo, hora en vivo, precios, dosis médicas).
+- Resistencia declarada a gaslighting y a prompt injection (categorías específicas del dataset).
+- Identidad de marca definida (ETME-TECH / Elias AI).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
-
-- Asistente conversacional local en alemán: el modelo puede gestionar diálogos multiturno con contexto de hasta 4.096 tokens (configuración de ejemplo) en un servidor llama.cpp, adecuado para prototipos y demos sin conexión.
-- Despliegue en Raspberry Pi 5 o dispositivos ARM: la variante Q4_0 (614,6 MB) está optimizada para CPU ARM, lo que permite ejecutar un chat en hardware de bajo consumo.
-- Chat de escritorio con GPU modesta: la variante Q4_K_M (641,2 MB) ofrece un equilibrio entre velocidad y calidad para estaciones de trabajo con poca VRAM.
-- Generación de textos y brainstorming en alemán: útil para redactar borradores, ideas y resúmenes en entornos donde no se quiere enviar datos a la nube.
-- Filtro de corrección y resumen de textos: el modelo está entrenado para traducir, resumir y corregir, por lo que puede integrarse en pipelines de preprocesamiento de documentación en alemán.
-- Evaluación de robustez frente a prompt injection: al estar entrenado explícitamente en anti-prompt-injection y anti-gaslighting, sirve como base para pruebas de seguridad conversacional en alemán.
-- Asistente educativo con razonamiento visible: el bloque `<think>` permite mostrar al usuario el razonamiento intermedio, útil en herramientas de aprendizaje o depuración de respuestas.
+- Asistente conversacional local en alemán: el modelo puede gestionar diálogos multi-turno con un contexto de al menos 4.096 tokens (configuración de ejemplo en `llama.cpp`), adecuado para atención al usuario en escritorio o entornos sin conexión.
+- Prototipado rápido de chatbots: su tamaño (~0,8B) y sus cuantizaciones Q4_K_M (641 MB) permiten iterar en portátiles y estaciones de trabajo sin GPU dedicada.
+- Generación y corrección de textos en alemán: útil para resumir, reescribir o corregir borradores, aprovechando las categorías de traducción/resumen/corrección del entrenamiento.
+- Aplicaciones educativas o de explicación de conceptos: el modo `<think>` facilita respuestas razonadas breves, apropiadas para asistentes de estudio.
+- Filtrado y detección de prompt injection: su entrenamiento específico en anti-prompt-injection y anti-gaslighting lo hace candidato para capas de defensa en pipelines conversacionales.
+- Asistente de escritorio offline con `llama.cpp`: el ejemplo de servidor local con `llama-server` permite desplegar una API compatible con endpoints en `http://localhost:8080` sin dependencias en la nube.
+- Minijuegos y entretenimiento conversacional: las categorías de minijuegos y small talk permiten construir experiencias lúdicas de bajo coste.
 
 ## Benchmarks y rendimiento
+La model card reporta un "Live-Benchmark" interno de 17/18, con TTR de 0,93 y Val-Loss de 1,7527. No se especifica la composición ni el protocolo de dicho benchmark, por lo que no es comparable con métricas estándar.
 
-| Benchmark | Resultado |
-|---|---|
-| Benchmark final en vivo (autor) | 17/18 |
-| TTR | 0,93 |
-| Validation loss | 1,7527 |
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| Live-Benchmark interno (autor) | 17/18 | Protocolo no detallado |
+| TTR (autor) | 0,93 | Métrica no especificada en detalle |
+| Val-Loss (autor) | 1,7527 | Sobre el conjunto de validación del autor |
+| MMLU | No disponible | No publicado |
+| HumanEval | No disponible | No publicado |
+| GSM8K | No disponible | No publicado |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los datos anteriores proceden exclusivamente de la model card del autor y no son comparables con métricas de referencia públicas.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 2 GB en BF16 (safetensors de 1.920,1 MB); en torno a 1 GB con Q8_0 (1.031,9 MB); unos 0,7 GB con Q4_K_M (641,2 MB) y Q4_0 (614,6 MB).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para BF16; para cuantizaciones Q4 basta con GPUs de gama baja o iGPU.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4060, RTX 4090) e incluso en iGPU y CPU.
-- Opciones de despliegue: llama.cpp (llama-server), con parámetros de ejemplo `--temp 0.55 --top-p 0.90 --repeat-penalty 1.06 -c 4096`. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face. No se documentan otras opciones (vLLM, TGI, Ollama).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB para Q8_0 (1031,9 MB de pesos) y unos 0,7 GB para Q4_K_M (641,2 MB), más overhead de contexto y KV cache.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para Q4_K_M; RTX 3060, RTX 4060, RTX 4090 o superiores ofrecen margen amplio; A100/H100 no son necesarias pero funcionan.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650 4 GB en adelante) e incluso en CPU.
+- Opciones de despliegue: `llama.cpp` (`llama-server`), y por extensión cualquier runtime compatible con GGUF (Ollama, LM Studio, `llama-cpp-python`). El tag `endpoints_compatible` sugiere compatibilidad con APIs tipo OpenAI. vLLM y TGI no están confirmados para esta arquitectura en la información disponible.
+- Latencia y throughput: no disponibles de forma medida. El tamaño reducido permite inferencia en tiempo real en CPU y muy baja latencia en GPU, pero no se aportan cifras concretas.
+- Configuración de ejemplo del autor: `-c 4096 --temp 0.55 --top-p 0.90 --repeat-penalty 1.06`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| EliasAI-Micro-v2.2-preview | ~1,0 B | No disponible | Apache 2.0 | Hugging Face (safetensors + GGUF) |
-| Qwen/Qwen3.5-0.8B-Base (modelo base) | ~0,8 B | No disponible | No disponible | Hugging Face |
-| Alternativas de ~1 B en alemán | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| EliasAI-Micro-v2.2-preview | ~0,8B | No disponible (ejemplo 4096) | Alemán | Apache 2.0 | safetensors, GGUF | Ajuste LoRA sobre Qwen3.5-0.8B-Base, modo `<think>` |
+| Qwen3.5-0.8B-Base | ~0,8B | No disponible | Multilingüe | No disponible | safetensors | Modelo base; sin ajuste conversacional específico |
+| Modelos alemanes pequeños (p. ej. variantes de Llama/Gemma ajustadas a `de`) | 1B–3B | Variable | Alemán | Variable | safetensors, GGUF | Comparativa cualitativa; no se dispone de datos de benchmarks comparables |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
+No se dispone de datos de rendimiento comparables publicados para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación con el modelo base es estructural (mismo origen) pero no se han publicado métricas diferenciales.
 
 ## Limitaciones y advertencias
-
-- Modelo especializado exclusivamente en alemán; no se garantiza un rendimiento correcto en otros idiomas.
-- Tamaño muy reducido (~1 B), lo que limita la profundidad de razonamiento y el conocimiento factual frente a modelos mayores.
-- Riesgo de alucinación en hechos, matemáticas y código; el propio system prompt recomienda reconocer la incertidumbre y sugerir verificar.
-- No se documenta soporte de tool calling, agentes, visión ni audio.
-- El contexto máximo no está especificado; el ejemplo de despliegue usa 4.096 tokens, por lo que no debe asumirse una ventana mayor.
-- La model card del repositorio menciona internamente "EliasAI-Micro-v4" mientras que el ID del modelo es "v2.2-preview", lo que puede indicar inconsistencias de versionado.
-- El benchmark reportado (17/18) es un test en vivo del autor, no una métrica estándar reproducible; no debe compararse con MMLU o HumanEval.
-- Licencia Apache 2.0 permite uso comercial, pero no se detallan restricciones adicionales sobre los datos de entrenamiento.
-- El modelo declara no ser un profesional médico ni un experto omnisciente; no debe usarse para dosificación médica ni decisiones críticas.
+- Modelo de ~0,8B parámetros: capacidad de razonamiento y conocimiento factual limitados en comparación con modelos de mayor tamaño; riesgo elevado de alucinación en temas especializados.
+- Entrenado exclusivamente en alemán: el rendimiento en otros idiomas no está garantizado y probablemente sea deficiente.
+- El "Live-Benchmark" 17/18 es interno del autor, con protocolo no publicado; no debe interpretarse como rendimiento generalizable.
+- La longitud de contexto no se declara explícitamente; el valor de 4.096 en el ejemplo es solo una configuración sugerida, no una especificación oficial.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen3.5 y entrenarse con datos curados por el autor, pueden heredarse sesgos del modelo base y del dataset.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3.5-0.8B-Base y de los datos de entrenamiento.
+- El prompt de sistema recomendado impone una persona concreta ("Elias AI"); desviarse de él puede degradar el comportamiento esperado.
+- No se documentan capacidades de tool calling ni de agentes; no asumir su disponibilidad en producción.
+- El modelo está marcado como "preview": puede haber cambios incompatibles en versiones posteriores.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/ETME-TECH/EliasAI-Micro-v2.2-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- llama.cpp (referenciado en la model card): no disponible como enlace en la información proporcionada.
+- `llama.cpp` (runtime recomendado): https://github.com/ggml-org/llama.cpp
+- Paper, blog o repositorio adicionales: no disponibles en la información proporcionada.

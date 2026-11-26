@@ -2,101 +2,93 @@
 
 ## Resumen
 
-Dhīr 5B-A1.7B es un modelo de lenguaje compacto desarrollado por ZenteiQ (India) dentro de la familia BrahmAI, con el respaldo de la IndiaAI Mission del Ministerio de Electrónica y Tecnologías de la Información (MeitY). Su rasgo definitorio es una arquitectura de mezcla de expertos (MoE) con 5.094 millones de parámetros totales de los que solo 1.700 millones se activan por token, lo que le permite generar texto más rápido que un modelo denso de 2B en CPU manteniendo la calidad de un modelo de 5B. Está diseñado específicamente para inglés y once lenguas indias, un nicho poco cubierto por los modelos occidentales.
+Dhir 5B-A1.7B es un modelo de lenguaje conversacional multilingüe desarrollado por ZenteiQ (familia BrahmAI), diseñado específicamente para inglés y las principales lenguas de la India. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 5.094 millones de parámetros totales, de los cuales solo 1.700 millones se activan por token, lo que le permite mantener un coste computacional de inferencia bajo pese a su tamaño total. Su ventana de contexto es de 16.384 tokens.
 
-La ficha que nos ocupa corresponde a la versión GGUF cuantizada, publicada para su uso con llama.cpp. El repositorio incluye dos builds: Q4_K_M (3,4 GB) pensado para portátiles, sobremesas, móviles y chips embebidos, y Q8_0 (5,4 GB) para portátiles, sobremesas y GPUs pequeñas, con una salida prácticamente idéntica al modelo original. La ventana de contexto es de 16.384 tokens y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Este repositorio concreto contiene la versión cuantizada en formato GGUF para su uso con llama.cpp, con dos builds: Q4_K_M (3,4 GB) y Q8_0 (5,4 GB). El modelo base es `zenteiq-ai/Dhir-5B-A1.7B`, y la cuantización está pensada para despliegue en el borde (edge): portátiles, sobremesas, móviles, chips embebidos y hardware Intel (Core Ultra, Arc, Xeon) con backends Vulkan y OpenVINO.
 
-El interés actual del modelo radica en su combinación de eficiencia en inferencia (MoE con pocos parámetros activos), cobertura lingüística del subcontinente indio y despliegue en hardware de consumo. La cuantización Q4_K_M queda a menos de un 1,8 % de la perplejidad del original en WikiText-2 y coincide con el siguiente token del original el 91 % de las veces, mientras que Q8_0 se queda a menos del 0,2 % y coincide el 98 % de las veces.
+Su relevancia radica en cubrir el hueco de modelos ligeros con cobertura real de lenguas indias (hindi, bengalí, tamil, telugu, canarés, malabar, maratí, guyaratí, panyabí y oriya) bajo licencia Apache 2.0, algo poco habitual en modelos de este tamaño. El formato GGUF y la arquitectura MoE lo hacen atractivo para despliegues con recursos limitados o sin GPU dedicada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) sobre transformer; 5B totales con 1,7B activos por token |
-| Parametros totales | 5.094.471.168 |
-| Parametros activos | 1,7B por token |
+| Arquitectura | Mixture of Experts (MoE), transformer |
+| Parámetros totales | 5.094.471.168 (5,1B) |
+| Parámetros activos | 1,7B por token |
 | Longitud de contexto | 16.384 tokens |
-| Tipos de cuantizacion | Q4_K_M (3,4 GB) y Q8_0 (5,4 GB); cuantización de caché KV opcional a q8_0 |
-| Idiomas soportados | en, hi, bn, ta, te, kn, ml, mr, gu, pa, or (inglés y diez lenguas indias) |
+| Tipos de cuantización | Q4_K_M y Q8_0 (GGUF, generadas con imatrix) |
+| Idiomas soportados | en, hi, bn, ta, te, kn, ml, mr, gu, pa, or |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que Dhīr 5B-A1.7B emplea una arquitectura de mezcla de expertos con 5.094 millones de parámetros totales y 1.700 millones activos por token. El modelo card no detalla el número de expertos, la estrategia de enrutamiento ni la proporción de capas MoE frente a capas densas. Tampoco se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF, DPO o ajuste supervisado. Estos datos se remiten al informe técnico anunciado por ZenteiQ, que a fecha de la model card figura como "forthcoming" (pendiente de publicación).
+Dhir 5B-A1.7B emplea una arquitectura Mixture of Experts con 5,1B parámetros totales y 1,7B activos por token. El enrutamiento dinámico de expertos es la razón por la que el modelo genera texto más rápido que el Dhir 2B en CPU, según indica el autor, pese a tener un número total de parámetros mayor. El modelo está orientado a conversación multilingüe y despliegue en el borde.
 
-La innovación destacable documentada es la propia cuantización: el autor ha evaluado cada build GGUF frente al modelo original mediante perplejidad en WikiText-2, divergencia KL de las predicciones de siguiente token sobre 1,5 millones de tokens en 11 idiomas, código y matemáticas, y benchmarks estándar. El resultado es que Q4_K_M se mantiene dentro del 1,8 % de la perplejidad original y reproduce el siguiente token el 91 % de las veces, mientras que Q8_0 se queda dentro del 0,2 % y reproduce el 98 %. El repositorio incluye además un tag `imatrix`, lo que sugiere el uso de matrices de importancia para calibrar la cuantización. No se documentan otras técnicas como decodificación especulativa o atención lineal.
+La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Las cuantizaciones GGUF se han generado con imatrix (importance matrix), lo que suele mejorar la calidad de los builds de 4 bits respecto a cuantizaciones estándar. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal. La model card menciona la familia BrahmAI y el catálogo AIKosh del gobierno indio como contexto del proyecto.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés y diez lenguas indias (hindi, bengalí, tamil, telugu, kannada, malayo, maratí, guyaratí, panyabí y oriya).
-- Razonamiento y respuesta a preguntas en esos idiomas, con calidad evaluada mediante benchmarks estándar según el autor.
-- Generación de código y matemáticas, incluido en el conjunto de evaluación de la cuantización (1,5 millones de tokens en 11 idiomas, código y matemáticas).
-- Aritmética multi-paso, aunque el autor advierte que en bengalí y telugu conviene usar el build de 8 bits.
-- Compatibilidad con API OpenAI a través de `llama-server` (`--jinja`), lo que habilita su uso desde LangChain y otros clientes compatibles.
+- Generación de texto conversacional multilingüe en inglés y diez lenguas indias.
+- Razonamiento y diálogo multi-turno (pipeline text-generation, etiqueta conversational).
 - Soporte de plantillas de chat vía `--jinja` en llama.cpp.
-- No se documenta soporte explícito de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (thinking mode) en la información disponible.
+- Compatible con endpoints OpenAI a través de `llama-server`.
+- Capacidad de ejecución en CPU, GPU (CUDA, Vulkan) y NPU (OpenVINO) según el hardware.
+- Optimización de throughput en CPU para arquitecturas MoE gracias al enrutamiento disperso de expertos.
+- No se documentan capacidades de visión, audio, tool calling explícito ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales en lenguas indias: el modelo cubre diez idiomas del subcontinente además del inglés, con 16.384 tokens de contexto, lo que permite mantener conversaciones multi-turno con historial largo en aplicaciones de atención al ciudadano o servicios públicos digitales.
-- Despliegue en dispositivos de borde y móviles: el build Q4_K_M ocupa 3,4 GB y, según el autor, funciona en portátiles, sobremesas, móviles y chips embebidos; al activar solo 1,7B parámetros por token, genera más rápido que Dhīr 2B en CPU, lo que lo hace apto para asistentes offline sin conexión.
-- Procesamiento de documentos y resúmenes en inglés e hindi: con 16.384 tokens de contexto puede ingerir artículos, contratos o informes extensos y resumirlos o extraer información, ejecutándose en un portátil con el build Q8_0 y una GPU pequeña.
-- Generación de código asistida en entornos con recursos limitados: el modelo ha sido evaluado en código y puede servir como autocompletado o generación de fragmentos en IDE, servido localmente mediante `llama-server` con API compatible con OpenAI e integrado en herramientas que hablan ese protocolo.
-- Traducción y localización entre inglés y lenguas indias: su cobertura de once idiomas permite usarlo como motor de traducción en pipelines de localización de contenido, con la ventaja de que el build Q8_0 mantiene una fidelidad del 98 % respecto al original.
-- Educación y tutoría en idiomas regionales: la ventana de contexto y el soporte multilingüe permiten construir tutores que expliquen conceptos en tamil, telugu o bengalí; el autor recomienda el build de 8 bits para aritmética multi-paso en bengalí y telugu.
-- Prototipado e investigación en NLP para lenguas indias: al ser Apache 2.0 y estar disponible en GGUF, sirve como base para experimentos académicos y fine-tuning sobre idiomas con pocos recursos, sin coste de licencia.
+- Asistentes conversacionales en lenguas indias: el modelo cubre hindi, bengalí, tamil, telugu, canarés, malabar, maratí, guyaratí, panyabí y oriya, lo que permite desplegar un único asistente para usuarios de distintas regiones lingüísticas de la India sin depender de traducción intermedia.
+- Despliegue en dispositivos de borde: el build Q4_K_M de 3,4 GB cabe en portátiles, móviles y chips embebidos, lo que habilita asistentes locales sin conexión en entornos con conectividad limitada.
+- Inferencia en CPU de altas prestaciones: al activar solo 1,7B parámetros por token, el modelo supera en velocidad de generación al Dhir 2B en CPU, según el autor, lo que lo hace adecuado para servidores sin GPU dedicada.
+- Aceleración en hardware Intel: con los backends Vulkan y OpenVINO puede ejecutarse en Intel Core Ultra, Arc y Xeon, incluyendo la NPU (Intel AI Boost), útil para portátiles corporativos y estaciones de trabajo sin GPU discreta.
+- Servicio compatible con OpenAI: `llama-server` expone una API compatible con OpenAI en el puerto 8080, lo que permite integrarlo en aplicaciones existentes basadas en LangChain u otros SDK sin cambios de código.
+- Procesamiento de documentos largos: con 16.384 tokens de contexto puede resumir o responder preguntas sobre documentos de extensión media en cualquiera de los idiomas soportados.
+- Chat local en terminal o escritorio: `llama-cli` con `--jinja -cnv` permite un asistente interactivo offline para desarrolladores y usuarios finales.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) con valores numéricos. Solo se documentan métricas de fidelidad de la cuantización frente al modelo original:
-
-| Build | Perplejidad (WikiText-2) | Coincidencia de siguiente token con el original |
-|---|---|---|
-| Q4_K_M (4 bits) | dentro del 1,8 % del original | 91 % de las veces |
-| Q8_0 (8 bits) | dentro del 0,2 % del original | 98 % de las veces |
-
-Estas métricas se calcularon sobre 1,5 millones de tokens en 11 idiomas, código y matemáticas, según el autor. No se han publicado resultados de benchmarks estándar en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para inferencia: aproximadamente 3,4 GB para Q4_K_M y 5,4 GB para Q8_0, más 0,07 MB por cada token de conversación en la caché KV.
-- Caché KV reducida: con `-fa on -ctk q8_0 -ctv q8_0` se puede usar caché de contexto de 8 bits para conversaciones largas en dispositivos con poca memoria.
-- GPU recomendadas: no se especifican modelos concretos; el autor indica que Q8_0 corre en "small GPUs" y Q4_K_M en portátiles, sobremesas, móviles y chips embebidos. No se documentan requisitos para A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, el build Q4_K_M (3,4 GB) y el Q8_0 (5,4 GB) caben en GPUs de consumo con 6-8 GB de VRAM o más, aunque el autor no detalla modelos concretos.
-- Opciones de despliegue: llama.cpp (requiere compilar la rama `dhir-support` hasta que el soporte se fusione en el repositorio principal), con `llama-server` (API compatible con OpenAI en el puerto 8080) y `llama-cli`; integración con LangChain vía `langchain-openai`. No se documenta soporte de vLLM, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no se publican cifras concretas. El autor afirma que el build Q4_K_M genera texto más rápido que Dhīr 2B en CPU gracias a sus 1,7B parámetros activos. Para CPU recomienda ajustar `-t` al número de núcleos de rendimiento y `-tb` al total de núcleos.
+- VRAM/RAM estimada: Q4_K_M requiere 3,4 GB; Q8_0 requiere 5,4 GB de memoria (compartida entre RAM y VRAM según el offload).
+- GPU recomendadas: el autor menciona small GPUs para el build Q8_0; se documenta soporte para CUDA (NVIDIA), Vulkan (Intel Arc e integradas) y OpenVINO (Intel Core Ultra, Arc y NPU Intel AI Boost). No se especifican modelos concretos como A100, H100 o RTX 4090.
+- Cabe en GPU de consumo: sí, el build Q4_K_M (3,4 GB) y el Q8_0 (5,4 GB) caben en GPUs de consumo con al menos 6 GB de VRAM; en CPU funcionan sin GPU.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`, `llama-bench`), endpoints compatibles con OpenAI, integración con LangChain vía `langchain-openai`. Requiere compilar desde la rama `dhir-support` de `zenteiq-research/llama.cpp` hasta que el soporte se fusione en upstream; también hay binarios precompilados en llama.cpp Releases.
+- Notas de rendimiento: en MoE sobre OpenVINO, el autor recomienda fijar `-b` y `-ub` al menos al tamaño del prompt (p. ej. `-b 2048 -ub 2048`) para evitar errores de forma en la conversión de grafo. Además, indica que los modelos MoE dispersos logran mayor throughput de generación en CPUs multichannel modernas (LPDDR5/DDR5) que en GPU debido al ancho de banda de memoria durante el enrutamiento dinámico de expertos. No se proporcionan cifras de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Dhīr 5B-A1.7B (este) | 5,1B totales / 1,7B activos (MoE) | 16.384 | en + 10 lenguas indias | Apache 2.0 | GGUF (Q4_K_M, Q8_0) |
-| Dhīr 2B (misma familia) | 2B (denso, según nomenclatura) | no disponible | en + lenguas indias (según familia) | Apache 2.0 | GGUF (Q4_K_M 1,3 GB, Q8_0 2,2 GB) |
-| Modelos densos de ~5B de propósito general | ~5B | variable | principalmente inglés | variable | safetensors, GGUF |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Dhir 5B-A1.7B (Q4_K_M) | 5,1B | 1,7B | 16.384 | Apache 2.0 | GGUF | MoE, 11 idiomas (en + 10 indias), 3,4 GB |
+| Dhir 2B (Q4_K_M) | 2B (no disponible el desglose) | no disponible | no disponible | Apache 2.0 | GGUF | 1,3 GB; el autor indica que el 5B-A1.7B es más rápido en CPU |
+| Dhir 2B (Q8_0) | 2B | no disponible | no disponible | Apache 2.0 | GGUF | 2,2 GB; pensado para portátiles y móviles |
 
-La comparativa con alternativas externas a la familia Dhīr no está disponible en la información proporcionada: no se ofrecen datos de rendimiento de otros modelos ni se identifican competidores directos. El propio autor compara el modelo con Dhīr 2B, señalando que el 5B-A1.7B es "más fuerte y rápido que el 2B en CPU" y que el 2B (1,3 GB en Q4_K_M) es preferible para dispositivos de borde con muy poca memoria.
+No se dispone de información sobre otros modelos comparables de la misma categoría (MoE ligero multilingüe con cobertura de lenguas indias) en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
-- La cuantización de 4 bits sacrifica algo de precisión: el autor recomienda el build de 8 bits cuando la memoria lo permita.
-- Para aritmética multi-paso en bengalí y telugu, el autor aconseja explícitamente usar el build Q8_0.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede afirmar hechos incorrectos con fluidez; el autor recomienda verificar la información crítica y añadir salvaguardas en producción.
-- Cobertura lingüística limitada a inglés y diez lenguas indias; no se documenta soporte de otras lenguas.
-- Contexto máximo de 16.384 tokens, inferior al de modelos actuales con ventanas de 128K o más.
-- El soporte en llama.cpp requiere compilar una rama específica (`dhir-support`) hasta que se fusione en el repositorio principal, lo que añade fricción al despliegue.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero se deben conservar los archivos `LICENSE` y `NOTICE` incluidos en el repositorio.
-- No se documentan capacidades de tool calling, agentes ni visión, por lo que no debe asumirse su disponibilidad en producción.
+- No se documentan sesgos conocidos ni evaluaciones de sesgo en la información disponible.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad factual.
+- La cobertura lingüística se limita a inglés y diez lenguas indias; no se garantiza calidad en otras lenguas.
+- El contexto máximo es de 16.384 tokens; los documentos más largos requerirán truncado o fragmentación.
+- El soporte en llama.cpp upstream aún no está fusionado: es necesario compilar la rama `dhir-support` o usar binarios precompilados, lo que añade fricción operativa.
+- En MoE con OpenVINO, el tamaño de batch debe ajustarse al prompt para evitar errores; es una limitación práctica de despliegue.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero conviene revisar los términos del modelo base y las obligaciones de atribución.
+- No se han publicado benchmarks, por lo que no es posible validar empíricamente el rendimiento frente a alternativas.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/zenteiq-ai/Dhir-5B-A1.7B-GGUF
-- Modelo original: https://huggingface.co/zenteiq-ai/Dhir-5B-A1.7B
-- Dhīr 2B GGUF: https://huggingface.co/zenteiq-ai/Dhir-2B-GGUF
-- Sitio web de ZenteiQ: https://www.zenteiq.ai
-- Blog de investigación de ZenteiQ: https://zenteiq.ai/research/blog/
+- Modelo en Hugging Face: https://huggingface.co/zenteiq-ai/Dhir-5B-A1.7B-GGUF
+- Modelo base: https://huggingface.co/zenteiq-ai/Dhir-5B-A1.7B
+- Dhir 2B GGUF: https://huggingface.co/zenteiq-ai/Dhir-2B-GGUF
+- ZenteiQ: https://www.zenteiq.ai
 - Ficha en AIKosh: https://aikosh.indiaai.gov.in/home/models/details/dhir_5b_1.html
-- Rama de llama.cpp con soporte Dhīr: https://github.com/zenteiq-research/llama.cpp
-- Repositorio principal de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Contacto: research@zenteiq.ai
+- Rama llama.cpp con soporte Dhir: https://github.com/zenteiq-research/llama.cpp
+- llama.cpp upstream: https://github.com/ggml-org/llama.cpp
+- Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
+- Guía de build Vulkan: https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#vulkan
+- Guía de backend OpenVINO: https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/OPENVINO.md#build-instructions

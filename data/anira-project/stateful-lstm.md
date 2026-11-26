@@ -2,98 +2,96 @@
 
 ## Resumen
 
-Stateful LSTM es un modelo de red neuronal recurrente (LSTM con estado explícito) disenado para emular un amplificador de guitarra en tiempo real. Lo desarrolla el proyecto anira y sigue la arquitectura descrita por Wright et al. en "Real-Time Guitar Amplifier Emulation with Deep Learning" (2020). El modelo procesa audio por bloques de 2048 muestras manteniendo un estado interno de 20 unidades ocultas y 20 de celda (40 valores en total) que se realimenta entre llamadas consecutivas, lo que permite una respuesta continua sin artefactos en los bordes de bloque.
+Stateful LSTM es un modelo de red neuronal recurrente (LSTM) de muy pequeno tamano disenado especificamente para emular un amplificador o efecto de guitarra electrica en tiempo real. Lo desarrolla el proyecto anira, una infraestructura de inferencia de audio de baja latencia, y sigue la arquitectura propuesta por Wright et al. en "Real-Time Guitar Amplifier Emulation with Deep Learning" (2020). No es un modelo de lenguaje: es un procesador de senal de audio que transforma muestras de entrada en muestras de salida aplicando la respuesta no lineal de un amplificador real.
 
-Su relevancia radica en la portabilidad: se distribuye en ocho formatos de inferencia distintos (ONNX Runtime, LiteRT/TFLite, LibTorch, ExecuTorch con backends CPU XNNPACK, Core ML y Vulkan, y Core ML nativo), todos verificados numéricamente contra ONNX Runtime con desviaciones del orden de 5e-7 a 7e-7. Esto lo convierte en un ejemplo de referencia para despliegue de efectos de audio en plataformas muy dispares, desde moviles Apple hasta GPUs con Vulkan, con latencias medidas de 0,85 ms (Core ML) a 2,9 ms (ExecuTorch CPU) por bloque.
+El modelo se distribuye en multiples formatos de exportacion (ONNX, LiteRT/TFLite, LibTorch, ExecuTorch para CPU, Core ML y Vulkan, y Core ML nativo) con el objetivo de servir como ejemplo de referencia de redes con estado en anira. Su innovacion principal es que el estado interno del LSTM (h y c, 20 unidades cada uno) se expone como tensores explicitos de entrada y salida (`state_in [1,40]`, `state_out [1,40]`), lo que permite inferencia por bloques consecutivos sin perder la continuidad temporal entre llamadas, algo critico en procesamiento de audio en streaming.
 
-El modelo es extremadamente pequeno (los pesos ONNX ocupan 10,5 KB; el TFLite 5,5 MB por desplegar el LSTM sin plegar) y no es un modelo de lenguaje: no procesa texto ni tiene capacidades generativas. Es una pieza de infraestructura de audio dentro del ecosistema anira.
+Es relevante porque demuestra un patron de despliegue de modelos de audio en tiempo real sobre dispositivos muy diversos, desde moviles Apple con Core ML (0,85 ms por bloque de 2048 muestras) hasta GPUs via Vulkan o CPUs con XNNPACK (2,9 ms por bloque). El modelo es extremadamente ligero (el fichero ONNX ocupa 10.501 bytes) y esta pensado para integrarse en cadenas de efectos de guitarra de baja latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LSTM stateful (arquitectura de Wright et al., 2020), 20 unidades ocultas |
-| Parametros totales | no disponible (pesos ONNX de 10.501 bytes) |
+| Arquitectura | LSTM (recurrente, 20 unidades ocultas, estado explicito h y c) |
+| Parametros totales | no disponible (fichero ONNX de 10.501 bytes; modelo de muy pequeno tamano) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; procesa bloques de 2048 muestras de audio |
-| Tipos de cuantizacion | no disponible (exportaciones en float32; Core ML float32) |
-| Idiomas soportados | no aplica (modelo de audio) |
+| Longitud de contexto | no aplica; procesa bloques de 2048 muestras de audio (`audio_in [2048,1,1]`) |
+| Tipos de cuantizacion | no disponible (los ficheros exportados son float32; Core ML ejecuta en float32) |
+| Idiomas soportados | no aplica (modelo de audio, no de texto) |
 | Licencia | GPL-3.0 |
-| Formato de pesos | ONNX, TFLite (LiteRT), TorchScript/LibTorch (.pt), ExecuTorch (.pte), Core ML (.mlpackage) |
+| Formato de pesos | ONNX, TFLite (LiteRT), LibTorch (.pt), ExecuTorch (.pte), Core ML (.mlpackage) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una LSTM de una sola capa con 20 unidades ocultas que opera sobre muestras de audio individuales dentro de un bloque de 2048. La entrada es `audio_in [2048,1,1]` (tiempo, batch, canal) junto con `state_in [1,40]`; la salida es `audio_out [2048,1,1]` y `state_out [1,40]`. El estado (h y c, 20 cada uno) se inicializa a cero al comenzar un flujo y se realimenta como `state_in` en cada llamada posterior, garantizando continuidad entre bloques.
+El modelo es un LSTM de una sola capa con 20 unidades ocultas que procesa audio muestra a muestra dentro de bloques de 2048 muestras con forma `[time, batch, channel]`. La entrada y la salida son senal de audio mono; el estado recurrente se transporta entre bloques mediante un tensor plano de 40 valores (20 para h y 20 para c). El modelo original de TorchScript mantenia el estado internamente (`self.hidden`), lo que solo funcionaba en LibTorch; las exportaciones a ONNX, LiteRT y ExecuTorch reiniciaban el estado a cero en cada bloque. La version actual reexporta el mismo LSTM con el estado como tensores explicitos, lo que permite alimentar la salida de estado de una llamada como entrada de la siguiente y mantener la continuidad exacta entre bloques consecutivos.
 
-El entrenamiento se realizo sobre la grabacion TS9 de GuitarML (licencia GPL-3.0), segun se indica en el NOTICE del repositorio. No se detallan en la informacion disponible el numero de tokens (muestras), la composicion exacta del dataset ni si hubo etapas de RLHF/DPO (no aplicables a este dominio). La innovacion tecnica principal no esta en el entrenamiento sino en la exportacion: `torch.export` desenrolla la LSTM sobre los 2048 pasos del bloque, generando miles de operadores pequenos; para evitarlo, los programas de ExecuTorch usan `ScanLstm`, que expresa la recurrencia con `torch.scan` y se ejecuta como un bucle sobre un paso, delegando la proyeccion de entrada y la capa de salida al delegado. Core ML conserva la LSTM como un unico operador nativo `lstm`.
+El modelo se entreno sobre una grabacion de un pedal TS9 de GuitarML (licencia GPL-3.0), siguiendo el enfoque de emulacion de amplificadores con redes recurrentes de Wright et al. (2020). No se dispone de informacion sobre el numero de tokens o muestras de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables a este dominio). La innovacion tecnica destacable es la estrategia de exportacion: `torch.export` desenrolla el LSTM sobre los 2048 pasos del bloque en miles de operadores pequenos, lo que resulta inviable en ExecuTorch (Core ML tardaba 190 ms por llamada con ese enfoque). Para evitarlo, los programas de ExecuTorch usan `ScanLstm`, que expresa la recurrencia como `torch.scan` y se ejecuta como un bucle sobre un unico paso: el delegado toma la proyeccion de entrada y la capa de salida, y el bucle corre sobre los kernels de CPU de ExecuTorch. El programa de Core ML mantiene el LSTM como un unico operador que se convierte al `lstm` nativo de Core ML.
 
 ## Capacidades
 
-- Emulacion de amplificador de guitarra en tiempo real sobre bloques de 2048 muestras.
-- Procesamiento stateful: mantiene coherencia entre llamadas mediante realimentacion de estado (h, c).
-- Inferencia multiplataforma: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch (CPU XNNPACK, Core ML, Vulkan) y Core ML nativo.
-- Verificacion numerica entre formatos: desviacion maxima de 5,7e-7 (ONNX frente al TorchScript original) y de 5,2e-7 a 7,3e-7 para el resto.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues.
-- No dispone de modo thinking, vision ni audio generativo.
+- Emulacion de amplificador o efecto de guitarra en tiempo real: transforma audio de entrada en audio procesado con la respuesta no lineal del amplificador emulado.
+- Procesamiento de audio en streaming por bloques: mantiene el estado recurrente entre llamadas consecutivas mediante `state_in`/`state_out`, sin discontinuidades.
+- Inferencia multi-plataforma: un mismo modelo exportado a ONNX Runtime, LiteRT/TFLite, LibTorch, ExecuTorch (CPU con XNNPACK, Core ML y Vulkan) y Core ML nativo.
+- Ejecucion en CPU, GPU y aceleradores Apple: el programa de ExecuTorch con Core ML corre en float32 a 0,85 ms por bloque; el de CPU con XNNPACK y bucle de scan a 2,9 ms por bloque; LiteRT a 1,9 ms por bloque.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo de audio, no de lenguaje.
+- No dispone de modo thinking, vision ni audio de entrada en sentido generativo; su unica tarea es el procesado de senal.
 
 ## Casos de uso
 
-- Efectos de guitarra en tiempo real en escritorio: integracion via ONNX Runtime o LibTorch en un host de audio (por ejemplo, un plugin VST/CLAP) que llame al modelo por bloques de 2048 muestras, realimentando el estado entre bloques para evitar discontinuidades.
-- Aplicaciones moviles en iOS: uso del paquete Core ML nativo o del programa ExecuTorch Core ML, con 0,85 ms por llamada, adecuado para procesar audio en tiempo real en un iPhone sin agotar la bateria.
-- Despliegue en Android y dispositivos embebidos: el formato TFLite (LiteRT) con 1,9 ms por llamada permite ejecutar el efecto en moviles de gama media y placas tipo Raspberry Pi.
-- Procesamiento en GPUs mediante Vulkan: el programa ExecuTorch Vulkan esta exportado para GPUs, util en entornos de escritorio Linux con drivers Vulkan donde se quiera descargar la CPU.
-- Referencia para desarrolladores de audio: el repositorio incluye scripts de exportacion (`export/export.py`, `export_litert.py`, `export_executorch.py`, `export_coreml.py`) y comprobaciones (`export/check.py`, `tools/check_streaming.py`) que sirven como plantilla para portar otros modelos stateful a multiples runtimes.
-- Investigacion en emulacion de amplificadores: permite reproducir y comparar la arquitectura de Wright et al. con variantes propias, ya que los notebooks de entrenamiento estan en el repositorio fuente `vackva/stateful-lstm`.
-- Pruebas de integracion en pipelines de CI: los SHA256 publicados por fichero y las verificaciones de streaming permiten validar que una build concreta produce exactamente las mismas salidas que la referencia.
+- Pedal de distorsion o overdrive en software: el modelo emula la respuesta de un TS9 sobre la senal de guitarra, procesando bloques de 2048 muestras con estado continuo; es adecuado por su tamano minimo y su latencia de milisegundos en Core ML y LiteRT.
+- Plugin de DAW en tiempo real: integrado mediante ONNX Runtime o LibTorch, permite aplicar el efecto sobre la pista de guitarra con latencia inferior a 3 ms por bloque en CPU, compatible con cadenas de efectos en directo.
+- Aplicacion movil de efectos de guitarra: la exportacion a Core ML (0,85 ms por bloque) y a ExecuTorch CPU permite ejecutar el modelo en iPhone o iPad sin GPU dedicada, manteniendo el estado entre bloques para evitar clics.
+- Prototipado de cadenas de efectos en anira: sirve como ejemplo de referencia de red con estado en la infraestructura anira, util para validar el patron `state_in`/`state_out` antes de portar modelos de mayor tamano.
+- Emulacion de amplificadores en dispositivos embebidos: la exportacion a LiteRT/TFLite (5,5 MB) y a ExecuTorch Vulkan permite desplegar el efecto en hardware con Android o GPUs integradas, con verificacion de continuidad sobre doce bloques consecutivos.
+- Investigacion en emulacion de audio con deep learning: el modelo y sus scripts de exportacion y verificacion (`check.py`, `check_streaming.py`) permiten reproducir y comparar tecnicas de exportacion de LSTMs con estado en distintos runtimes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible en el sentido habitual (MMLU, HumanEval, GSM8K). Los datos de rendimiento disponibles son medidas de latencia y desviacion numerica por formato:
+No se han publicado resultados de benchmarks en la informacion disponible en el sentido de metricas de calidad (MMLU, HumanEval, etc.), que no aplican a este modelo. La model card si proporciona mediciones de latencia y desviacion numerica respecto a ONNX Runtime:
 
-| Formato | Motor | Latencia por llamada (2048 muestras) | Desviacion maxima frente a ONNX Runtime |
+| Formato | Ficheros | Desviacion maxima respecto a ONNX Runtime | Latencia por bloque de 2048 muestras |
 |---|---|---|---|
-| ONNX | ONNX Runtime | no disponible | 5,7e-7 (frente al TorchScript original, 20 bloques) |
-| LibTorch | LibTorch (traced, estado explicito) | no disponible | 0 (frente al original) |
-| LiteRT | TensorFlow Lite | 1,9 ms | 7,3e-7 |
-| ExecuTorch CPU | XNNPACK + bucle scan | 2,9 ms | 6,7e-7 |
-| ExecuTorch Core ML | Core ML (Apple, float32) | 0,85 ms | 5,2e-7 |
-| ExecuTorch Vulkan | Vulkan (GPUs) | no ejecutado (sin runtime Vulkan en la verificacion) | no disponible |
-| Core ML nativo | Core ML ML program | no disponible | 5,2e-7 |
-
-Nota: el export directo con `torch.export` sin la optimizacion `ScanLstm` tardo 190 ms por llamada en Core ML, motivo por el que se introdujo el bucle scan.
+| ONNX Runtime (frente al TorchScript original, 20 bloques) | `onnx/stateful_lstm.onnx` | 5,7e-7 | no disponible |
+| LibTorch (trazado, estado explicito) | `libtorch/stateful_lstm.pt` | 0 (frente al original) | no disponible |
+| LiteRT, TensorFlow Lite | `litert/stateful_lstm.tflite` | 7,3e-7 | 1,9 ms |
+| ExecuTorch, CPU (XNNPACK y bucle de scan) | `executorch/stateful_lstm.pte` | 6,7e-7 | 2,9 ms |
+| ExecuTorch, Core ML (Apple, float32) | `executorch/stateful_lstm_coreml.pte` | 5,2e-7 | 0,85 ms |
+| ExecuTorch, Vulkan (GPUs) | `executorch/stateful_lstm_vulkan.pte` | exportado; no ejecutado (sin runtime Vulkan) | no disponible |
+| Core ML ML program (motor nativo de anira, previsto para v3) | `coreml/stateful_lstm.mlpackage` | 5,2e-7 | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el modelo es minimo; los pesos ONNX ocupan 10,5 KB y el `.pte` de ExecuTorch CPU 17,7 KB. Cabe holgadamente en cualquier dispositivo.
-- GPU recomendadas: no requiere GPU. En GPU solo tiene sentido el backend Vulkan de ExecuTorch; el paso de 20 unidades es demasiado pequeno para aprovechar una GPU, segun indica el propio autor.
-- GPU consumer: cabe en cualquier GPU consumer e integrada, pero no se recomienda su uso por el bajo paralelismo del paso recurrente.
-- Opciones de despliegue: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch 1.3.1 (CPU XNNPACK, Core ML, Vulkan), Core ML nativo y el runtime de anira (backends v2.4.0).
-- Latencia: 0,85 ms por bloque en Core ML, 1,9 ms en LiteRT, 2,9 ms en ExecuTorch CPU. Para audio a 48 kHz, un bloque de 2048 muestras equivale a 42,7 ms, por lo que estas latencias dejan margen amplio en tiempo real.
+- VRAM estimada para inferencia: practicamente despreciable; el fichero ONNX ocupa 10.501 bytes y el TFLite 5,5 MB. Cabe en cualquier GPU consumer y en memoria de un movil.
+- GPU recomendadas: cualquiera; el programa Vulkan de ExecuTorch esta pensado para GPUs integradas o dedicadas, aunque el paso de 20 unidades es demasiado pequeno para aprovechar una GPU de forma eficiente (la model card indica que un paso de 20 unidades es demasiado pequeno para una GPU).
+- Cabe en GPU consumer: si, en cualquier GPU consumer (RTX 4090, RTX 3060, integradas) y tambien en CPU y aceleradores Apple.
+- Opciones de despliegue: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch 1.3.1 (CPU con XNNPACK, Core ML y Vulkan), Core ML nativo y el runtime de anira (`anira-project/backends` v2.4.0).
+- Latencia y throughput: 0,85 ms por bloque de 2048 muestras en Core ML, 1,9 ms en LiteRT y 2,9 ms en ExecuTorch CPU; el throughput no se especifica, pero a 48 kHz un bloque de 2048 muestras dura unos 42,7 ms, por lo que la latencia de computo queda muy por debajo del tiempo real.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de otros modelos comparables (parametros, contexto, rendimiento, licencia) para establecer una tabla rigurosa. Como referencia cualitativa, la arquitectura sigue a Wright et al. (2020) para emulacion de amplificadores con LSTM, y el repositorio fuente es `vackva/stateful-lstm`; no se aportan cifras de modelos alternativos.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / bloque | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| anira-project/stateful-lstm | no disponible | bloques de 2048 muestras | 0,85-2,9 ms por bloque segun backend | GPL-3.0 | Hugging Face + GitHub |
-| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
+| anira-project/stateful-lstm | no disponible (ONNX 10.501 bytes) | 2048 muestras | GPL-3.0 | Hugging Face, multiples formatos | LSTM con estado explicito, emulacion de amplificador |
+| Wright et al. (2020), arquitectura de referencia | no disponible | no disponible | no disponible | paper | Arquitectura original en la que se basa este modelo |
+| GuitarML TS9 (grabacion de entrenamiento) | no aplica | no aplica | GPL-3.0 | dataset de audio | Fuente de entrenamiento citada en la model card |
+
+No se dispone de informacion sobre otros modelos comparables de emulacion de amplificadores con estado explicito en la informacion proporcionada; los datos de la tabla se limitan a lo documentado en la model card.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona, no soporta tool calling ni agentes. Cualquier uso fuera del procesamiento de audio carece de sentido.
-- Licencia GPL-3.0: el software que distribuya estos pesos puede quedar sujeto a los terminos de la GPL; es necesario revisarlo antes de un uso comercial o de integrarlo en productos propietarios.
-- Los pesos se entrenaron sobre la grabacion TS9 de GuitarML, tambien GPL-3.0; ver NOTICE.md para las obligaciones de atribucion.
-- El estado debe realimentarse correctamente entre llamadas; los ficheros originales en `upstream/` pierden el estado entre bloques y no deben usarse para streaming.
-- El backend Vulkan esta exportado pero no se ha ejecutado en la verificacion del autor (sin runtime Vulkan disponible); su correccion numerica no esta confirmada en ese entorno.
-- El modelo emula un amplificador concreto (TS9); no es un emulador generico de amplificadores ni admite condicionamiento por parametros.
-- No se documentan sesgos, riesgos de alucinacion ni limitaciones de idioma porque no aplican a este dominio; no hay informacion sobre robustez frente a entradas fuera de distribucion (audio no guitarristico).
+- Sesgos conocidos: no disponibles; al ser un modelo de audio, no aplican sesgos linguisticos, pero su comportamiento esta limitado al amplificador emulado (TS9) y a la distribucion de la grabacion de entrenamiento.
+- Riesgo de alucinacion: no aplica en el sentido de generacion de texto; el riesgo es de artefactos o respuestas no realistas ante senales fuera de la distribucion de entrenamiento (por ejemplo, instrumentos distintos de la guitarra o niveles de entrada muy distintos).
+- Limitaciones de contexto o idioma: no procesa texto ni idiomas; su "contexto" es el estado recurrente de 40 valores, que se reinicia a cero al inicio de cada stream.
+- Restricciones de licencia: GPL-3.0; el modelo se entreno sobre la grabacion TS9 de GuitarML, tambien GPL-3.0. El software que distribuya estos pesos puede tener que cumplir los terminos de la GPL; conviene verificarlo antes de usarlo en produccion.
+- Caveat de produccion: las exportaciones antiguas en `upstream/` (ONNX, LiteRT y ExecuTorch originales) pierden el estado entre llamadas; deben usarse las exportaciones actuales con `state_in`/`state_out`. El programa Vulkan se exporto pero no se ejecuto por falta de runtime Vulkan en el entorno de verificacion. El Core ML nativo de anira llegara con la version v3. Se recomienda fijar una revision y comprobar el SHA256 de cada fichero al descargar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/anira-project/stateful-lstm
-- Repositorio fuente: https://github.com/vackva/stateful-lstm (commit `3ce7bec`, carpeta `models/model_0/`)
-- Referencia arquitectonica: Wright et al., "Real-Time Guitar Amplifier Emulation with Deep Learning" (2020)
-- Dataset de entrenamiento: grabacion TS9 de GuitarML (GPL-3.0)
-- Runtime de anira: anira-project/backends v2.4.0
-- Descarga con revision fijada: https://huggingface.co/anira-project/stateful-lstm/resolve/<revision>/onnx/stateful_lstm.onnx
+- Repositorio fuente (vackva/stateful-lstm): https://github.com/vackva/stateful-lstm
+- Script de exportacion: https://github.com/anira-project/models/blob/main/models/stateful-lstm/export/lstm.py
+- Script de verificacion: https://github.com/anira-project/models/blob/main/models/stateful-lstm/export/check.py
+- Modelos de anira: https://github.com/anira-project/models
+- Paper de referencia: Wright et al., "Real-Time Guitar Amplifier Emulation with Deep Learning", 2020 (no se proporciona URL en la informacion disponible)
+- GuitarML (grabacion TS9, GPL-3.0): no se proporciona URL en la informacion disponible
+- Runtime de backends de anira: anira-project/backends v2.4.0 (no se proporciona URL en la informacion disponible)

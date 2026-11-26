@@ -2,101 +2,103 @@
 
 ## Resumen
 
-Saturn-Duplex-5B-DE es un modelo de diálogo hablado full-duplex desarrollado por keyvan-ai, orientado principalmente al alemán. Se trata de una evolución del modelo base higurashi-ai/Haru-4B (4B parámetros) que amplía el cómputo hasta los 5.270.000.897 parámetros reales en safetensors. Su rasgo diferencial es que procesa y genera audio de forma simultánea a 7,5 Hz: cada 133 ms consume un frame de voz del usuario y emite un frame de su propia habla, sin cadena intermedia de ASR, texto y TTS.
+Saturn-Duplex-5B-DE es un modelo de voz a voz (audio-to-audio) en tiempo completo o full-duplex, desarrollado por keyvan-ai, especializado en diálogo hablado en alemán e inglés. Está construido sobre el modelo base higurashi-ai/Haru-4B y cuenta con 5.270 millones de parámetros, lo que lo sitúa en la gama media de modelos conversacionales de audio. Su propuesta principal es la conversación simultánea: el modelo puede escuchar y hablar al mismo tiempo, una capacidad poco habitual en modelos de voz convencionales que operan en modo por turnos estricto.
 
-El modelo resuelve el problema del cambio de turno y la naturalidad conversacional en voz: gestiona interrupciones (barge-in), solapamientos, pausas y retroalimentación ("mhm", "ja") de forma nativa, manteniendo la coherencia del hilo conversacional. Según la model card, mejora al modelo base en métricas clave de diálogo: toma de palabra del 40 % al 100 % de los casos de prueba, tiempo de respuesta de 1,03 s a 0,50 s, y pérdida de lenguaje sobre texto alemán de 4,73 a 2,09.
+El modelo está orientado a agentes de voz, NPC de videojuegos y asistentes conversacionales que requieren interacción natural con interrupciones, solapamiento de habla y baja latencia percibida. Los tags del repositorio incluyen referencias explícitas a "voice-agent", "npc" y "spoken-dialogue", lo que confirma este enfoque. Soporta alemán (de) e inglés (en) y se distribuye en formatos safetensors y GGUF.
 
-Es relevante ahora porque propone un enfoque speech-to-speech de extremo a extremo (pipeline `audio-to-audio`) con latencia muy baja —unos 11 ms por tick de 133 ms en GGUF bf16 sobre una RTX PRO 6000, más de 12 veces tiempo real— y con licencia Apache 2.0, lo que facilita su uso comercial en agentes de voz, NPCs y robótica social.
+La relevancia de este modelo radica en su enfoque full-duplex aplicado a un modelo de 5B parámetros, un tamaño manejable para despliegue en producción con recursos moderados. Sin embargo, su licencia CC-BY-NC-ND-4.0 restringe severamente el uso comercial y prohíbe obras derivadas, lo que limita su adopción en entornos productivos empresariales. El acceso es restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de diálogo hablado full-duplex derivado de higurashi-ai/Haru-4B; pipeline audio-to-audio) |
-| Parametros totales | 5.270.000.897 |
+| Arquitectura | no disponible (modelo de audio-to-audio basado en higurashi-ai/Haru-4B) |
+| Parametros totales | 5.270.000.897 (5,27B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (GGUF bf16 documentado); safetensors; otras cuantizaciones no disponibles |
-| Idiomas soportados | de (principal), en |
-| Licencia | apache-2.0 |
+| Tipos de cuantizacion | GGUF (disponible en el repo); otras no disponibles |
+| Idiomas soportados | aleman (de), ingles (en) |
+| Licencia | CC-BY-NC-ND-4.0 |
 | Formato de pesos | safetensors, GGUF |
+| Pipeline | audio-to-audio |
+| Modelo base | higurashi-ai/Haru-4B |
+| Tamano del repo | 22,4 GB |
+| Acceso | Restringido (gated) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que es una continuación de higurashi-ai/Haru-4B y de que opera como modelo de audio a audio full-duplex a 7,5 Hz (un frame de entrada y uno de salida cada 133 ms). El modelo mantiene "anclas de voz y de tick" para preservar la cabeza tonal, el clonado de voz y el comportamiento de tick del modelo base. No hay datos publicados sobre número de capas, tipo de atención ni composición exacta del transformer.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. El modelo se presenta como un sistema audio-to-audio full-duplex construido sobre higurashi-ai/Haru-4B, lo que sugiere que hereda la arquitectura del modelo base y anade capacidades de procesamiento de audio bidireccional. La naturaleza full-duplex implica que el modelo procesa flujos de audio de entrada y salida de forma simultanea, en lugar de alternar entre escucha y habla.
 
-El entrenamiento combina varias fuentes: diálogo hablado full-duplex centrado en alemán con canales de hablante separados, flujo de texto alineado a nivel de palabra y enriquecimiento progresivo con ruido de fondo real (televisión, conversaciones laterales, retroalimentación); condicionamiento mediante tarjetas de personaje (persona, situación, relación, frecuencia de retroalimentación); destilación de conocimiento desde un modelo de texto fuerte sobre texto alemán; repetición de texto con datos alemanes de pregunta-respuesta y lógica para conservar la capacidad lingüística; y anclas de voz y de tick. Entre los conjuntos públicos citados figuran Seamless Interaction, Expresso, CALLHOME (alemán, inglés, español), MagicData, OpenAssistant OASST2, GermanQuAD, XQuAD, MLQA, Belebele, MKQA, el dataset Aya y la Wikipedia alemana. No se especifica el número total de tokens de entrenamiento ni si hubo RLHF o DPO.
+En cuanto a los datos de entrenamiento, los tags del repositorio referencian los siguientes datasets: deepset/germanquad, OpenAssistant/oasst2, wikimedia/wikipedia y BrunoHays/callhome-telephony. Esta combinacion sugiere un entrenamiento que combina comprension lectora en aleman (germanquad), dialogos instructivos multilingues (oasst2), conocimiento enciclopedico (wikipedia) y audio telefonico real (callhome-telephony), este ultimo especialmente relevante para un modelo de dialogo hablado. No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+
+La innovacion tecnica destacable es la operacion full-duplex, que permite al modelo gestionar solapamiento de habla e interrupciones, algo critico para conversaciones naturales. No se dispone de informacion sobre mecanismos especificos de atencion, decodificacion especulativa u otras optimizaciones.
 
 ## Capacidades
 
-- Diálogo hablado full-duplex de extremo a extremo: escucha y habla en el mismo paso de cómputo, sin ASR ni TTS separados.
-- Gestión natural de turnos: barge-in (interrupción), solapamientos, pausas y retroalimentación conversacional.
-- Robustez ante ruido de fondo (televisión, conversaciones laterales) y reanudación del diálogo tras perturbaciones.
-- Clonado de voz a partir de una referencia de 3 a 30 segundos.
-- Condicionamiento por tarjeta de personaje: persona, situación, relación y frecuencia de retroalimentación.
-- Conversación en alemán coloquial con prosodia, muletillas y timing naturales; soporte secundario de inglés.
-- Generación de habla a 7,5 Hz (tick de 133 ms) con latencia de respuesta en torno a 0,5 s.
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso basado en texto en la información disponible.
+- Generacion de audio de voz a voz (speech-to-speech) en modo full-duplex, con capacidad de escuchar y hablar simultaneamente.
+- Dialogo hablado conversacional con gestion de interrupciones y solapamiento de habla.
+- Comprension y generacion en aleman e ingles.
+- Orientado a agentes de voz y NPC de videojuegos (segun tags del repositorio).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision, audio adicional o thinking mode: no disponibles en la informacion proporcionada.
+- Capacidades multilingues limitadas a aleman e ingles.
 
 ## Casos de uso
 
-- NPCs e interactivos en videojuegos: personajes con los que el jugador puede hablar, interrumpir y bromear en tiempo real; el full-duplex a 7,5 Hz permite reacciones inmediatas y solapamientos propios de una conversación humana.
-- Compañeros conversacionales y small talk: conversación relajada y cercana en alemán, con retroalimentación ("mhm", "ja") que mantiene el hilo sin perder el turno.
-- Práctica de alemán: interlocutor paciente que habla alemán cotidiano natural, adecuado para estudiantes que necesitan entrenar comprensión y producción oral con timing realista.
-- Historias interactivas y radioteatros: personajes con voz propia (clonada de una referencia de 3-30 s) y personalidad definida por tarjeta de personaje, que reaccionan en directo a quien escucha.
-- Avatares, terminales y robots sociales: interacción por voz natural para agentes encarnados, aprovechando la baja latencia (unos 11 ms por tick en GGUF bf16) y la tolerancia al ruido ambiental.
-- Investigación en diálogo full-duplex: base en alemán para estudiar cambio de turno, retroalimentación y comportamiento conversacional, con licencia Apache 2.0 que facilita la experimentación y la publicación de resultados.
+- Agentes de voz para atencion al cliente: el modelo puede gestionar conversaciones telefonicas o por voz en tiempo real, permitiendo interrupciones naturales del usuario gracias a su operacion full-duplex. Adecuado para sectores como telecomunicaciones o banca en mercados germanoparlantes.
+
+- NPC de videojuegos con dialogo natural: los tags "npc" y "voice-agent" indican que el modelo esta pensado para personajes no jugables que mantienen conversaciones habladas con el jugador, con respuesta inmediata y capacidad de reaccionar a interrupciones.
+
+- Asistentes de voz embebidos en dispositivos: con 5,27B parametros y version GGUF disponible, puede desplegarse en hardware con recursos moderados para asistentes domesticos o interfaces de voz en automocion, siempre que el uso no sea comercial por la licencia.
+
+- Simulacion de entrevistas o formacion: el modo full-duplex permite practicar conversaciones donde el modelo responde de forma natural y simultanea, util para entrenamiento de habilidades comunicativas en aleman o ingles.
+
+- Prototipado de interfaces conversacionales: investigadores pueden usar el modelo para estudiar dinamicas de dialogo full-duplex, solapamiento de turnos y latencia percibida en conversaciones humano-maquina.
+
+- Transcripcion y respuesta en call centers: el dataset callhome-telephony sugiere entrenamiento con audio telefonico, lo que lo hace adecuado para entornos de telefonia donde se requiere respuesta hablada inmediata.
+
+- Educacion de idiomas: conversacion hablada en aleman e ingles con feedback en tiempo real, aprovechando la capacidad de mantener dialogo natural con interrupciones.
 
 ## Benchmarks y rendimiento
 
-Resultados de la evaluación full-duplex en alemán del autor (cambio de turno, retroalimentación, ruido, múltiples turnos), comparando modelo base y Saturn con los mismos clips y ajustes:
-
-| Métrica | Base | Saturn |
-|---|---|---|
-| Toma la palabra cuando el usuario calla (↑) | 0,40 | 1,00 |
-| Tiempo de respuesta tras el fin de habla del usuario (↓) | 1,03 s | 0,50 s |
-| Sigue hablando tras un "mhm" (↑) | 0,20 | 1,00 |
-| Retoma la conversación tras perturbación (↑) | 0,00 | 1,00 |
-| Se queda en silencio con ruido de fondo (↓) | 1,00 | 0,20 |
-| Turnos sin responder en conversaciones (↓) | 7 / 26 | 0 / 26 |
-| Pérdida del modelo de lenguaje sobre texto alemán (↓) | 4,73 | 2,09 |
-
-Rendimiento de ejecución (GGUF bf16, una RTX PRO 6000 con GPU compartida): núcleo de lenguaje en torno a 6,5 ms y tick completo en torno a 11 ms por tick de 133 ms, más de 12 veces tiempo real. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 5.270.000.897 parámetros, en bf16 los pesos ocupan aproximadamente 10,5 GB, cifra orientativa calculada a partir del recuento de parámetros, no publicada por el autor.
-- GPU recomendadas: la model card cita una RTX PRO 6000 para las mediciones de latencia; no se especifican otras GPU recomendadas.
-- ¿Cabe en GPU de consumo? No confirmado en la información disponible; por tamaño de pesos en bf16 sería plausible en GPU de consumo con suficiente VRAM, pero el autor no lo documenta.
-- Opciones de despliegue: se documenta un build GGUF; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: núcleo de lenguaje en torno a 6,5 ms y tick completo en torno a 11 ms por tick de 133 ms en GGUF bf16 sobre una RTX PRO 6000, más de 12 veces tiempo real.
+- VRAM estimada para inferencia: con 5,27B parametros, en precision completa (fp16) requeriria aproximadamente 10,5 GB de VRAM solo para pesos. En cuantizacion GGUF de 8 bits, alrededor de 5,5-6 GB; en 4 bits, aproximadamente 3-3,5 GB. Estas cifras son estimaciones basadas en el tamano del modelo, no datos oficiales.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, una RTX 4090 (24 GB) o A100 (40/80 GB) permitirian inferencia en fp16 con margen. Una RTX 3090 o 4080 (16 GB) tambien seria suficiente en fp16.
+- Cabe en GPU consumer: si, en tarjetas con al menos 12-16 GB de VRAM en fp16, o en tarjetas de 8 GB con cuantizacion GGUF de 4-8 bits.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face. Otras opciones como vLLM o TGI no estan confirmadas en la informacion disponible.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada. La naturaleza full-duplex sugiere requisitos de baja latencia, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Saturn-Duplex-5B-DE | 5.270.000.897 | no disponible | Diálogo hablado full-duplex alemán (audio-to-audio) | apache-2.0 | Hugging Face (safetensors, GGUF) |
-| higurashi-ai/Haru-4B (base) | 4B (aprox.) | no disponible | Diálogo hablado (base de la que deriva) | no disponible en la información proporcionada | Hugging Face |
-| Otros modelos full-duplex comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de informacion sobre modelos comparables en la informacion proporcionada. Se indica "no disponible" para benchmarks y alternativas directas. Como referencia estructural, el modelo se basa en higurashi-ai/Haru-4B (4B parametros), pero no se dispone de datos de rendimiento comparativo ni de otros modelos full-duplex de caracteristicas similares en la informacion facilitada.
 
-La información proporcionada no incluye comparaciones con otros modelos full-duplex de la competencia; la única referencia directa es el modelo base Haru-4B, frente al cual la model card reporta las mejoras recogidas en la tabla de benchmarks.
+| Modelo | Parametros | Contexto | Full-duplex | Licencia | Idiomas |
+|---|---|---|---|---|---|
+| Saturn-Duplex-5B-DE | 5,27B | no disponible | Si | CC-BY-NC-ND-4.0 | de, en |
+| higurashi-ai/Haru-4B (base) | ~4B | no disponible | no disponible | no disponible | no disponible |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al entrenarse con datos conversacionales públicos (CALLHOME, Expresso, OASST2, Wikipedia alemana, etc.) puede heredar sesgos de esas fuentes.
-- Riesgo de alucinación: no evaluado en la información disponible; al ser un modelo de diálogo hablado, puede producir contenido plausible pero incorrecto en conversación.
-- Limitaciones de idioma: está diseñado "German-first"; el inglés figura como idioma soportado, pero no se detalla su calidad relativa.
-- Limitaciones de contexto: la longitud de contexto no está publicada, lo que dificulta planificar conversaciones muy largas o tareas que dependan de memoria extensa.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los datasets de entrenamiento citados (p. ej. CALLHOME, Expresso) antes de un despliegue en producción.
-- Caveats de producción: el rendimiento publicado se midió en una única configuración (GGUF bf16, RTX PRO 6000 con GPU compartida); el comportamiento en otros hardwares y cuantizaciones no está documentado.
-- El modelo es de audio a audio y no se documenta soporte de tool calling ni de razonamiento multi-paso basado en texto, lo que limita su uso como backend de agentes que requieran esas capacidades.
+- Licencia CC-BY-NC-ND-4.0: prohibe el uso comercial y la creacion de obras derivadas. Esto impide su uso en productos o servicios de pago, y restringe la modificacion y redistribucion. Es una limitacion critica para produccion empresarial.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar el modelo, lo que anade friccion al despliegue.
+- Idiomas limitados a aleman e ingles: no soporta castellano ni otros idiomas, lo que limita su aplicacion en mercados hispanohablantes.
+- Riesgo de alucinacion: no se dispone de informacion sobre tasas de alucinacion ni sobre mecanismos de mitigacion. Como modelo generativo de dialogo, es susceptible a respuestas inexactas o inventadas.
+- Sesgos conocidos: no se dispone de informacion sobre evaluaciones de sesgo. Los datasets de entrenamiento (wikipedia, oasst2, germanquad, callhome-telephony) pueden introducir sesgos propios de sus fuentes.
+- Limitaciones de contexto: no se ha especificado la longitud de contexto, lo que impide evaluar su idoneidad para conversaciones de larga duracion.
+- Documentacion tecnica escasa: no se detallan arquitectura interna, proceso de entrenamiento, numero de tokens ni tecnicas de alineacion, lo que dificulta la evaluacion rigurosa y la reproducibilidad.
+- Madurez: el modelo fue creado el 20 de noviembre de 2026 y cuenta con 286 descargas y 1 like, lo que sugiere una adopcion muy limitada y poca validacion por parte de la comunidad.
+- Uso en produccion: la combinacion de licencia no comercial, acceso restringido y documentacion limitada desaconseja su uso en entornos productivos sin una evaluacion exhaustiva previa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/keyvan-ai/Saturn-Duplex-5B-DE
-- Demo en vivo: https://hardani.de/saturn/
+- Hugging Face: https://huggingface.co/keyvan-ai/Saturn-Duplex-5B-DE
 - Modelo base: https://huggingface.co/higurashi-ai/Haru-4B
-- Dataset GermanQuAD: https://huggingface.co/datasets/deepset/germanquad
-- Dataset OpenAssistant OASST2: https://huggingface.co/datasets/OpenAssistant/oasst2
-- Dataset Wikipedia (Wikimedia): https://huggingface.co/datasets/wikimedia/wikipedia
-- Dataset CALLHOME telefónico: https://huggingface.co/datasets/BrunoHays/callhome-telephony
+- Dataset deepset/germanquad: https://huggingface.co/datasets/deepset/germanquad
+- Dataset OpenAssistant/oasst2: https://huggingface.co/datasets/OpenAssistant/oasst2
+- Dataset wikimedia/wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
+- Dataset BrunoHays/callhome-telephony: https://huggingface.co/datasets/BrunoHays/callhome-telephony

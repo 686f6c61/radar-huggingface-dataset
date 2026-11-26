@@ -51,31 +51,5 @@
   "renamed_to": "spade-rl/SPADE-Qwen3-8B-Games",
   "renamed_at": "2026-11-11T07:35:11.326Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "KKKrainbow1/SPA-RL-Qwen3 - GitHub",
-      "url": "https://github.com/KKKrainbow1/SPA-RL-Qwen3",
-      "snippet": "Stepwise Progress Attribution RL on Qwen3-8B for multi-turn LLM agents, with vLLM async rollout, dual-layer KL protection, and native tool-call evaluation."
-    },
-    {
-      "title": "Qwen3 Technical Report - arXiv.org",
-      "url": "https://arxiv.org/html/2505.09388v1",
-      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
-    },
-    {
-      "title": "NVIDIA ACE Adds Open Source Qwen3 SLM for On-Device Deployment in PC Games",
-      "url": "https://developer.nvidia.com/blog/nvidia-ace-adds-open-source-qwen3-slm-for-on-device-deployment-in-pc-games/",
-      "snippet": "AI-Generated Summary NVIDIA ACE now supports the open source Qwen3-8B small language model for on-device deployment to create real-time, dynamic NPC game characters. The Qwen3-8B model enables developers to build enhanced game characters capable of real-time reasoning through non-scripted events and dynamic responses based on player inputs."
-    },
-    {
-      "title": "Qwen3 8B API & Playground | Fireworks AI",
-      "url": "https://fireworks.ai/models/fireworks/qwen3-8b",
-      "snippet": "Latest Qwen3 state of the art model, 8B Model"
-    },
-    {
-      "title": "yeok/Qwen3-8B-random_insertion-rl · Hugging Face",
-      "url": "https://huggingface.co/yeok/Qwen3-8B-random_insertion-rl",
-      "snippet": "Uploaded model Developed by: yeok License: apache-2.0 Finetuned from model : unsloth/Qwen3-8B This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
-    }
-  ]
+  "sources": []
 }

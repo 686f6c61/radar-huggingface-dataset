@@ -2,71 +2,84 @@
 
 ## Resumen
 
-El modelo `pyaging/yingdamage` es un reloj epigenético (aging clock) desarrollado por el equipo de Ying et al. en 2024, publicado en *Nature Aging* bajo el título "Causality-enriched epigenetic age uncouples damage and adaptation". A diferencia de los relojes epigenéticos convencionales que estiman la edad biológica a partir de la metilación del ADN, este modelo se centra específicamente en los sitios CpG asociados a daño celular, ponderando su contribución mediante puntuaciones de causalidad obtenidas con *EWMR* (Epigenome-Wide Mendelian Randomization). El objetivo es separar el componente de daño del componente de adaptación en el envejecimiento, ofreciendo una métrica más precisa para estudiar procesos patológicos asociados a la edad.
+yingdamage es un reloj epigenético (aging clock) desarrollado por el equipo de Ying, Liu, Tarkhov et al. y publicado en Nature Aging en 2024, empaquetado y distribuido en Hugging Face por el proyecto pyaging. No es un modelo de lenguaje: es un predictor de edad epigenética basado en regresión elastic net con ponderación por causalidad, restringido a sitios CpG de metilación de ADN asociados a daño relacionado con la edad. El modelo estima la "edad epigenética de daño" en muestras de sangre completa de Homo sapiens a partir de datos de metilación de ADN.
 
-El modelo está implementado como una regresión *elastic net* con penalizaciones ajustadas por los pesos de causalidad, y se distribuye a través de la librería `pyaging`, un ecosistema Python para relojes de envejecimiento. Está entrenado para tejido de sangre completa en *Homo sapiens*, utilizando datos de metilación de ADN. Su relevancia radica en que proporciona una herramienta para investigar el envejecimiento desde una perspectiva causal, con potenciales aplicaciones en epidemiología molecular y medicina preventiva.
+La relevancia del modelo reside en su enfoque metodológico: en lugar de predecir la edad cronológica, incorpora puntuaciones de causalidad derivadas de estudios de aleatorización mendeliana epigenética (EWMR) para ponderar las penalizaciones de las características. Esto permite desacoplar los componentes de daño y de adaptación del envejecimiento epigenético, una distinción que los relojes epigenéticos convencionales no capturan.
 
-## Especificaciones técnicas
+El repositorio tiene un tamaño de 0.0 GB y 233 descargas, lo que sugiere un conjunto de pesos muy compacto, coherente con un modelo de regresión lineal regularizada. La licencia del repositorio es MIT, aunque la model card advierte explícitamente que los pesos retienen los términos de los autores originales y que la licencia del software pyaging no los relicencia.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Regresión elastic net con penalización ponderada por scores de causalidad EWMR |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo de lenguaje) |
-| Longitud de contexto | no aplica |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (datos biológicos) |
-| Licencia | BSD-3-Clause |
-| Formato de pesos | no disponible (integrado en librería `pyaging`) |
+| Arquitectura | Regresion elastic net ponderada por causalidad (modelo lineal regularizado) |
+| Parametros totales | no disponible (coeficientes de regresion sobre CpGs; numero exacto no especificado) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (entrada tabular de valores de metilacion por CpG) |
+| Tipos de cuantizacion | no disponible (no aplica cuantizacion de pesos neuronales) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje; especie: Homo sapiens) |
+| Licencia | MIT (repositorio); los pesos retienen los terminos de los autores originales |
+| Formato de pesos | no disponible (repo de 0.0 GB; consumible via libreria pyaging) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una regresión *elastic net* sobre un conjunto restringido de sitios CpG asociados a daño. La selección de características se realiza mediante un análisis de causalidad *EWMR*, que identifica CpGs cuya metilación influye causalmente en fenotipos de envejecimiento. Estos sitios se ponderan en la función de pérdida según su score de causalidad, de modo que los CpGs con mayor evidencia causal tienen mayor influencia en la predicción. El entrenamiento se realizó sobre datos de metilación de sangre completa de *Homo sapiens*, aunque no se especifican en la información disponible el número exacto de muestras, el número de CpGs finales ni el procedimiento de validación. La innovación principal es la integración de información causal en la regularización, lo que permite distinguir entre daño acumulado y respuestas adaptativas del epigenoma.
+El modelo es una regresion elastic net (combinacion de penalizaciones L1 y L2) aplicada sobre valores de metilacion de ADN en sitios CpG. La innovacion principal es que las penalizaciones de las caracteristicas estan ponderadas por puntuaciones de causalidad EWMR (epigenetic Mendelian randomization), de modo que el modelo se restringe a CpGs relacionados con dano y pondera cada predictor segun la evidencia causal de su asociacion con el envejecimiento. El modelo predice la "edad epigenetica de dano" en sangre completa.
+
+Los detalles sobre el numero de tokens de entrenamiento, la composicion exacta del dataset y los procedimientos de ajuste no estan disponibles en la informacion proporcionada. La publicacion de referencia (Ying et al., Nature Aging 4, 231-246, 2024) es la fuente primaria para la metodologia completa.
 
 ## Capacidades
 
-- Predicción de edad epigenética "dañina" (damaging epigenetic age) a partir de datos de metilación de ADN de sangre completa.
-- Separación conceptual entre daño y adaptación en el proceso de envejecimiento.
-- Uso integrado con la librería `pyaging` mediante una única llamada a `pya.pred.predict_age()`.
-- Compatible con datos de metilación de tipo array (p. ej., Illumina 450K o EPIC) siempre que estén formateados según las convenciones de `pyaging`.
-- No es un modelo generativo ni de lenguaje; no procesa texto ni imágenes.
+- Prediccion de edad epigenetica de dano a partir de datos de metilacion de ADN en sangre completa de Homo sapiens.
+- Ponderacion por causalidad de las caracteristicas mediante puntuaciones EWMR.
+- Desacoplamiento de los componentes de dano y adaptacion del envejecimiento epigenetico.
+- Integracion con el ecosistema pyaging mediante una unica llamada a `pya.pred.predict_age(adata, ["yingdamage"])`.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues (no es un modelo de lenguaje).
+- No dispone de modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Investigación en biología del envejecimiento: permite cuantificar el componente de daño epigenético en cohortes de estudio, facilitando la identificación de factores que aceleran o retrasan el daño celular.
-- Estudios epidemiológicos longitudinales: al aplicar el reloj a muestras de sangre de individuos seguidos en el tiempo, se puede monitorizar la progresión del daño epigenético y su asociación con enfermedades crónicas.
-- Evaluación de intervenciones anti-envejecimiento: en ensayos clínicos o preclínicos, el modelo puede servir como biomarcador de eficacia para terapias dirigidas a reducir el daño molecular.
-- Análisis de datos de metilación existentes: investigadores con datos de arrays de metilación pueden aplicar `yingdamage` sin necesidad de re-entrenar, gracias a la interfaz de `pyaging`.
-- Medicina personalizada: la estimación de la edad epigenética dañina podría complementar otros biomarcadores para estratificar el riesgo de enfermedades relacionadas con la edad.
-- Docencia y formación: como ejemplo de aplicación de métodos de regularización con ponderación causal en el campo de la epigenética.
+- Investigacion en envejecimiento biologico: estimar la edad epigenetica de dano en cohortes de sangre completa para estudiar la heterogeneidad del envejecimiento y separar senales de dano de senales adaptativas.
+- Estudios de intervencion: evaluar si una intervencion (farmacologica, dietetica o de estilo de vida) reduce la edad epigenetica de dano en muestras pareadas antes y despues del tratamiento.
+- Analisis de asociacion gen-etorno: combinar las predicciones del reloj con variantes geneticas para explorar relaciones causales mediante aleatorizacion mendeliana.
+- Reproducibilidad y comparacion de relojes: al estar integrado en pyaging, permite ejecutar y comparar yingdamage junto con otros relojes del catalogo sobre el mismo objeto AnnData.
+- Filtrado de calidad de datos epigeneticos: usar la discrepancia entre edad cronologica y edad de dano predicha como indicador de senal biologica relevante en un pipeline de control de calidad.
+- Docencia y formacion en bioinformatica: ejemplo compacto y de bajo coste computacional de regresion regularizada con ponderacion por conocimiento biologico previo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Ying et al., 2024) reporta métricas de rendimiento, pero no se incluyen en la model card ni en los datos proporcionados. Se recomienda consultar la publicación para obtener detalles sobre exactitud, correlación con edad cronológica y comparaciones con otros relojes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de regresión lineal sobre un número limitado de CpGs (probablemente del orden de cientos), la inferencia es extremadamente ligera.
-- No requiere GPU; puede ejecutarse en CPU en cuestión de milisegundos.
-- Los requisitos de memoria son mínimos (menos de 100 MB de RAM), dependiendo del formato de los datos de entrada.
-- La librería `pyaging` está diseñada para entornos Python estándar; no se requieren servicios de inferencia especializados como vLLM u Ollama.
-- Para el preprocesado de datos de metilación (normalización, imputación) se necesitarán las herramientas habituales de bioinformática, pero no son parte del modelo.
+- VRAM: no requiere GPU; es una regresion lineal regularizada sobre un conjunto de CpGs, ejecutable en CPU.
+- GPU recomendadas: no aplica.
+- Cabe en cualquier GPU consumer y tambien en entornos sin GPU.
+- Opciones de despliegue: libreria pyaging (Python) sobre objetos AnnData; no aplica vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada; el tamano del repositorio (0.0 GB) indica un coste de inferencia muy bajo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa en la model card. Existen otros relojes epigenéticos como Horvath (2013), Hannum (2013) o PhenoAge (2018), pero no se han proporcionado datos de comparación con `yingdamage`. Se recomienda consultar el artículo original para ver las comparaciones realizadas por los autores.
+| Modelo | Tipo | Predictor | Especie/tejido | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| yingdamage | Elastic net ponderada por causalidad | Edad epigenetica de dano | Homo sapiens / sangre completa | MIT (repo); pesos con terminos de los autores | Hugging Face (pyaging) |
+| Otros relojes del catalogo pyaging | Regresion regularizada / otros | Edad epigenetica | Variable | Variable | Hugging Face (pyaging) |
+| Relojes epigeneticos convencionales | Regresion regularizada | Edad cronologica | Variable | Variable | no disponible |
+
+No se dispone en la informacion proporcionada de datos cuantitativos de rendimiento para establecer una comparativa numerica con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente para sangre completa de *Homo sapiens*; su aplicación a otros tejidos o especies requiere validación adicional.
-- La interpretación de la "edad epigenética dañina" debe hacerse con cautela, ya que el concepto de daño vs. adaptación es una construcción estadística basada en causalidad inferida, no en mecanismos biológicos directamente observados.
-- La dependencia de los scores de causalidad EWMR puede introducir sesgos si los estudios de MR subyacentes tienen limitaciones (p. ej., pleiotropía, tamaño muestral).
-- No se especifican los intervalos de confianza ni la incertidumbre de las predicciones; para uso clínico se requeriría una validación independiente.
-- La licencia BSD-3-Clause permite uso comercial y modificación, pero el modelo debe citarse adecuadamente según la política de los autores.
-- No se proporcionan pesos pre-entrenados descargables de forma independiente; el acceso se realiza a través de la librería `pyaging`, lo que implica una dependencia de su mantenimiento.
+- Restringido a Homo sapiens y a sangre completa: no debe aplicarse a otros tejidos ni especies sin validacion previa.
+- Requiere datos de metilacion de ADN en sitios CpG especificos; muestras con cobertura incompleta pueden degradar la prediccion.
+- Predice edad de dano, no edad cronologica; interpretar las salidas como edad cronologica es un error conceptual.
+- Riesgo de sobreajuste a las cohortes de entrenamiento y de sesgo de seleccion poblacional, habitual en relojes epigeneticos; no se detalla la composicion demografica del dataset en la informacion disponible.
+- La licencia MIT cubre el repositorio, pero los pesos retienen los terminos de los autores originales: verificar las condiciones antes de uso comercial.
+- La model card advierte explicitamente de que la licencia del software pyaging no relicencia los pesos.
+- No es un modelo de lenguaje: no admite prompts, tool calling ni generacion de texto.
+- Uso previsto de investigacion; no sustituye diagnostico clinico ni decision medica.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/pyaging/yingdamage
-- Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
-- Artículo original: Ying, K., Liu, H., Tarkhov, A.E. et al. Causality-enriched epigenetic age uncouples damage and adaptation. *Nature Aging* 4, 231–246 (2024). DOI: https://doi.org/10.1038/s43587-023-00557-0
+- Modelo en Hugging Face: https://huggingface.co/pyaging/yingdamage
+- Catalogo de relojes pyaging: https://pyaging.readthedocs.io
+- Publicacion de referencia: https://doi.org/10.1038/s43587-023-00557-0 (Ying, K., Liu, H., Tarkhov, A.E. et al., Nature Aging 4, 231-246, 2024)

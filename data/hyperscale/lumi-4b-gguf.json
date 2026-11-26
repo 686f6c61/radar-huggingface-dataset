@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 259,
+  "downloads_30d": 300,
   "trending_score": 0,
   "parameters": 3973556832,
   "parameters_human": "3.97B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "HyperScale - An Online Magazine for Aircraft and Armour Modellers",
-      "url": "https://hyperscale.com/",
-      "snippet": "Club Hyper Visit HyperScale's Forums at Club Hyper for Discussion Groups and to buy, swap and sell models online. Submit an …"
-    },
-    {
-      "title": "What's New? - HyperScale",
-      "url": "https://hyperscale.com/what%27s.htm",
-      "snippet": "14 hours ago · * Based on actual server statistics, HyperScale's main page receives an average of more than 15,000 visits from …"
-    },
-    {
-      "title": "Hyperscale computing - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Hyperscale_computing",
-      "snippet": "Hyperscale computing is necessary in order to build a robust and scalable cloud, big data, map reduce, or distributed storage …"
-    },
-    {
-      "title": "What is hyperscale? - IBM",
-      "url": "https://www.ibm.com/think/topics/hyperscale",
-      "snippet": "Hyperscale is a distributed computing environment and architecture that is designed to provide extreme scalability to …"
-    },
-    {
-      "title": "Hyperscale — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Hyperscale",
-      "snippet": "Dans le domaine informatique, l' hyperscale (en anglais hyperscale computing ou hyperscaling) est la capacité d'une architecture …"
-    }
-  ]
+  "sources": []
 }

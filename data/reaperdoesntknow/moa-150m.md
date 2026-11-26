@@ -2,85 +2,86 @@
 
 ## Resumen
 
-MoA-150M (también referido en su model card como MoA-Metric-LM-150M) es un modelo de lenguaje causal compacto de aproximadamente 150 millones de parámetros desarrollado por el usuario reaperdoesntknow. Su propuesta diferencial no es el tamaño, sino la sustitución de la atención por producto escalar estándar por una atención "métrica" que puntúa las relaciones entre tokens mediante distancias (L2, coseno o Mahalanobis diagonal), junto con un bloque Mixture-of-Architectures (MoA) que enruta cada token entre cuatro cabezas especializadas.
+MoA-150M (publicado también como MoA-Metric-LM-150M Convergent) es un modelo de lenguaje causal de aproximadamente 150 millones de parámetros desarrollado por el usuario de Hugging Face `reaperdoesntknow`. Su propuesta diferencial es sustituir la atención por producto escalar estándar por una atención "métrica" que puntúa las consultas y claves mediante distancias (L2, coseno o Mahalanobis diagonal), combinada con una variante de RoPE denominada BlackHoleRoPE y con un bloque Mixture-of-Architectures (MoA) que enruta cada token entre cuatro cabezas especializadas.
 
-El modelo incorpora BlackHoleRoPE, una variante aprendible de RoPE que rota Q/K con módulo unitario y aplica una compuerta de energía acotada a V, además de un regularizador basado en la desigualdad triangular para mantener coherente la geometría de las cabezas métricas. Está diseñado para entrenar y ejecutar en hardware modesto, con FP32 en CPU (AVX2/AVX-512) como escenario de referencia, y es compatible con la librería transformers.
+El modelo está diseñado explícitamente para entrenar y ejecutar en hardware modesto, con filosofía CPU-first y precisión FP32 sobre máquinas con AVX2/AVX-512. La longitud de contexto de entrenamiento se sitúa en 512-1024 tokens, aunque la configuración admite hasta 2048. Se distribuye bajo licencia Apache-2.0 y está orientado a investigación sobre sesgos inductivos geométricos y a asistentes compactos.
 
-Su relevancia actual es fundamentalmente investigadora: sirve como banco de pruebas reproducible para estudiar atención basada en distancias, enrutado por token y codificaciones posicionales alternativas en un presupuesto de cómputo muy reducido. No compite en capacidad general con modelos de su mismo tamaño entrenados a escala; su presupuesto de entrenamiento es de cientos de miles de tokens.
+Su relevancia es fundamentalmente experimental: explora alternativas a la atención estándar en un rango de tamaño donde los experimentos son asequibles, y publica pesos entrenados con presupuestos de tokens reducidos (cientos de miles), lo que lo convierte en una referencia para estudiar atención basada en distancias más que en un modelo de producción generalista.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con atención métrica (L2/coseno/Mahalanobis diagonal) y bloque MoA (LocalConv, MetricMHAttention, ChannelMix, MetricMQA) |
+| Arquitectura | Transformer causal con atención métrica (L2/coseno/Mahalanobis diagonal), bloque MoA con router por token (LocalConv, MetricMHAttention, ChannelMix, MetricMQA), BlackHoleRoPE y HyperFFN (SwiGLU + SepConv1d + camino de bajo rango) |
 | Parametros totales | ~150 M (el conteo exacto depende del vocabulario; ver config.json) |
-| Parametros activos | No aplica (no es MoE denso disperso; el MoA enruta cabezas, no expertos FFN) |
+| Parametros activos | No aplica (no es MoE denso disperso; el bloque MoA enruta entre cabezas, no entre expertos FFN) |
 | Longitud de contexto | Entrenado principalmente a 512-1024 tokens; la configuración permite hasta 2048 |
-| Tipos de cuantizacion | No se documentan cuantizaciones oficiales; la model card indica soporte de inferencia en FP32/BF16/FP16 |
-| Idiomas soportados | Inglés (en) |
+| Tipos de cuantizacion | No se documentan cuantizaciones oficiales; inferencia soportada en FP32, BF16 y FP16 |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors/PyTorch vía transformers (repo de 2,5 GB); no se documenta GGUF |
+| Formato de pesos | Safetensors (repo de transformers; tamaño del repo 2,5 GB) |
 
 ## Arquitectura y entrenamiento
 
-El núcleo es un transformer causal de 12 a 24 capas (según variante) con tamaño oculto no especificado para la variante de 150 M. Cada bloque MoA contiene cuatro cabezas que un router por token mezcla de forma suave: una convolución depthwise local (LocalConv), atención multi-cabeza métrica (MetricMHAttention), un MLP de mezcla de canales (ChannelMix) y atención multi-query métrica con K/V compartidas (MetricMQA). La FFN se denomina HyperFFN y combina un MLP SwiGLU, una SepConv1d y una ruta de bajo rango, también mezcladas por el router. Las puntuaciones de atención métrica se calculan como -||q-k||²/sqrt(d) para L2, coseno normalizado y escalado, o Mahalanobis diagonal por cabeza, con un escalado aprendible α y una máscara opcional de poda por radio.
+La arquitectura es un transformer causal con 12-24 capas según variante (bloques MoA) y un mecanismo de atención que reemplaza el producto escalar por puntuaciones de distancia: L2 (`-||q-k||² / sqrt(d)`), coseno normalizado y Mahalanobis diagonal por cabeza. Los logits se escalan con un parámetro α aprendible y existe una máscara opcional de poda por radio. El camino de valores incorpora proyectores Up/Down con gating. La variante MetricMQA comparte proyecciones de clave y valor entre cabezas para reducir memoria y aumentar throughput.
 
-BlackHoleRoPE aplica rotaciones de módulo unitario solo a Q/K (preservando normas) y una amplificación de energía acotada entre energy_min y energy_max a V, con parámetros sintetizados desde una base de Fourier pequeña para reducir el coste de caché y favorecer la generalización en longitud. El entrenamiento se realizó en FP32 sobre CPU con AdamW/Adam, batch de 2-4 y secuencias de 512-1024, sobre los datasets WeMake/Intelligent-Content-Understanding (~256k tokens), QingyiSi/Alpaca-CoT (~128k tokens), HuggingFaceH4/MATH-500 (~256k tokens), zai-org/LongWriter-6k (~128k tokens) y m-a-p/DeepWriting-20K, más una fase de SFT con prithivMLmods/Deepthink-Reasoning (loss final reportada de 0,3200 sobre 128.512 tokens). No se documenta RLHF ni DPO.
+BlackHoleRoPE aplica rotación unitaria solo a Q y K (preservando normas) y una amplificación de energía acotada en V (rango `energy_min..energy_max`), con parámetros sintetizados a partir de una base de Fourier pequeña, lo que reduce el tamaño de caché y busca generalización en longitud. El bloque MoA incluye un TokenRouter que mezcla suavemente cuatro cabezas por token (convolución local depthwise, atención métrica multi-cabeza, MLP de mezcla de canales y MQA métrica), gates multiplicativos por cabeza en (0, 2) y un sesgo de router opcional. Se añade un regularizador de desigualdad triangular sobre tripletas aleatorias para evitar geometrías métricas degeneradas.
+
+El entrenamiento se realizó en CPU en FP32 con AdamW/Adam, batch 2-4 y secuencias de 512-1024, sobre presupuestos de tokens reducidos: aproximadamente 256k tokens de `WeMake/Intelligent-Content-Understanding`, 128k de `QingyiSi/Alpaca-CoT`, 256k de `HuggingFaceH4/MATH-500`, 128k de `zai-org/LongWriter-6k` y una fase de SFT sobre `prithivMLmods/Deepthink-Reasoning` con pérdida final reportada de 0,3200 sobre 128.512 tokens. No se documenta RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto causal en inglés con transformers.
-- Razonamiento de estilo matemático paso a paso (el ejemplo de la model card usa una ecuación lineal).
-- Lectura y QA sobre contexto, con ventana entrenada de 512-1024 tokens y configuración hasta 2048.
-- Escritura y generación de contenido largo, dado el uso de LongWriter-6k y DeepWriting-20K en el entrenamiento.
-- Instrucción conversacional vía SFT (Alpaca-CoT y Deepthink-Reasoning).
-- Inferencia en CPU en FP32, así como FP32/BF16/FP16 en GPU.
+- Generación de texto causal en inglés con compatibilidad completa con la API de transformers (`AutoModelForCausalLM`, `pipeline`).
+- Razonamiento matemático de estilo paso a paso, favorecido por el entrenamiento sobre MATH-500 y el conjunto de SFT de razonamiento.
+- Escritura y generación de contenido largo, dado el uso de LongWriter-6k y DeepWriting-20K en el corpus.
+- Comprensión de contenido y respuesta a preguntas sobre documentos, a partir de Intelligent-Content-Understanding.
+- Seguimiento de instrucciones conversacionales básicas (Alpaca-CoT).
+- Inferencia en CPU en FP32, BF16 y FP16, sin requisito de GPU.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Investigación en atención métrica: reproducir y ablacionar las cabezas L2, coseno y Mahalanobis diagonal en un modelo de 150 M que entrena en CPU, comparando estabilidad y eficiencia de muestra frente a atención por producto escalar.
-- Estudio de enrutado por token: analizar cómo el TokenRouter distribuye pesos entre LocalConv, MetricMH, ChannelMix y MetricMQA en distintas fases del entrenamiento y con distintos datos.
-- Experimentos de codificación posicional: evaluar la extrapolación de BlackHoleRoPE más allá de 1024 tokens frente a RoPE estándar, con presupuesto de cómputo reducido.
-- Prototipado de asistentes compactos en inglés: desplegar un modelo pequeño en CPU para tareas de respuesta breve y generación de texto donde la latencia y el coste importan más que la precisión factual.
-- Educación y demos: ejecutar ejemplos de razonamiento matemático elemental y QA en portátiles sin GPU, usando el snippet de transformers de la model card.
-- Generación de texto creativo y redacción asistida en inglés, aprovechando el entrenamiento sobre LongWriter-6k y DeepWriting-20K, con revisión humana obligatoria.
-- Base para fine-tuning ligero: punto de partida Apache-2.0 para SFT sobre dominios concretos con presupuesto de GPU consumer o incluso CPU.
+- Investigación sobre atención basada en distancias: el modelo permite experimentar con puntuaciones L2, coseno y Mahalanobis y con el regularizador de desigualdad triangular en un tamaño (150 M) entrenable en una sola CPU, comparando estabilidad y eficiencia de muestra frente a atención por producto escalar.
+- Prototipado de asistentes compactos en entornos sin GPU: al ejecutarse en FP32 sobre AVX2/AVX-512, sirve para validar pipelines de generación y de conversación multi-turno en portátiles o servidores sin acelerador.
+- Razonamiento matemático elemental: con prompts de tipo "Reasoning:", el modelo produce cadenas de pasos para problemas aritméticos y algebraicos sencillos, útil en demos educativas y en la evaluación de técnicas de prompting.
+- Generación de texto largo controlado: el entrenamiento con LongWriter-6k y DeepWriting-20K lo hace adecuado para experimentos de escritura estructurada y continuaciones de varios párrafos dentro de su ventana de 512-1024 tokens.
+- Respuesta a preguntas sobre documentos cortos: su corpus de comprensión de contenido permite usarlo como extractor/resumidor en tareas de lectura de pasajes que quepan en contexto.
+- Docencia y divulgación de arquitecturas alternativas: sirve como ejemplo ejecutable de MoA, MQA métrica y RoPE modificado en cursos y talleres, al caber en el repo de 2,5 GB y no requerir hardware especializado.
+- Base para fine-tuning ligero: al ser Apache-2.0 y de tamaño reducido, es un punto de partida económico para SFT con TRL en dominios concretos en inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta una loss final de SFT de 0,3200 sobre 128.512 tokens en prithivMLmods/Deepthink-Reasoning, sin métricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta una pérdida final de SFT de 0,3200 sobre 128.512 tokens con el conjunto `prithivMLmods/Deepthink-Reasoning`, sin métricas de MMLU, HumanEval, GSM8K ni comparaciones estandarizadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~0,6 GB en FP16/BF16 y ~1,2 GB en FP32 para los pesos de 150 M; el repo ocupa 2,5 GB, por lo que conviene revisar qué artefactos incluye antes de descargarlo.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve; A100, H100, RTX 4090, RTX 3090 o RTX 3060 son sobradas para inferencia. El escenario de referencia del autor es CPU con AVX2/AVX-512 en FP32.
-- Cabe holgadamente en GPU consumer, incluidas GTX 1650 o iGPU con memoria compartida suficiente.
-- Opciones de despliegue: transformers con accelerate (documentado), pipeline de transformers; no se documenta soporte oficial de vLLM, llama.cpp, Ollama ni TGI, y al no publicarse GGUF la ruta llama.cpp requeriría conversión propia.
-- Latencia y throughput: no disponibles. El autor solo indica que el modelo está implementado para comportarse bien en FP32 sobre AVX2/AVX-512.
+- VRAM estimada: en FP32, aproximadamente 0,6 GB solo para pesos (150 M × 4 bytes), más caché KV y activaciones; en BF16/FP16, alrededor de 0,3 GB para pesos. Cabe holgadamente en cualquier GPU consumer con 4 GB o más.
+- GPU recomendadas: no requiere GPU; funciona en CPU. Para inferencia acelerada, cualquier GPU con soporte de BF16/FP16 (RTX 3060 en adelante, A100, H100) es más que suficiente; el cuello de botella no será la memoria.
+- Cabe en consumer GPU: sí, en todas las GPU modernas, incluidas las integradas con suficiente memoria compartida.
+- Opciones de despliegue: transformers (con `accelerate` y `sentencepiece`), `pipeline` de transformers; el autor no documenta integración con vLLM, llama.cpp, Ollama ni TGI, y la atención métrica personalizada probablemente requiera código propio fuera de transformers.
+- Latencia y throughput: no disponibles. El autor indica entrenamiento e inferencia en CPU en FP32 sobre AVX2/AVX-512, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| MoA-150M | ~150 M | 512-1024 entrenado, 2048 en config | Apache-2.0 | Atención métrica y MoA; entrenamiento de cientos de miles de tokens; sin benchmarks publicados |
-| SmolLM2-135M | 135 M | 8192 | Apache-2.0 | Transformer estándar entrenado a escala de billones de tokens; benchmarks publicados |
-| Qwen2.5-0.5B | 494 M | 32768 | Apache-2.0 | Mayor tamaño y contexto; entrenamiento a gran escala y benchmarks publicados |
-| GPT-2 small | 124 M | 1024 | MIT | Referencia histórica de tamaño similar; sin instrucción nativa |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MoA-150M | ~150 M | 512-1024 (hasta 2048 en config) | Transformer con atención métrica + MoA + BlackHoleRoPE | Apache-2.0 | Hugging Face (transformers) |
+| SmolLM2-135M | 135 M | 8192 | Transformer denso estándar | Apache-2.0 | Hugging Face, integrado en ecosistemas de inferencia |
+| Qwen2.5-0.5B | 494 M | 32.768 | Transformer denso con GQA | Apache-2.0 | Hugging Face, vLLM, llama.cpp, Ollama |
+| GPT-2 (124M) | 124 M | 1024 | Transformer denso | MIT | Hugging Face, ampliamente soportado |
 
-La comparación es estructural: MoA-150M no publica métricas que permitan situarlo frente a SmolLM2-135M o Qwen2.5-0.5B en calidad, y su presupuesto de entrenamiento es órdenes de magnitud menor. Su interés es arquitectónico, no de rendimiento competitivo.
+La comparación cuantitativa de rendimiento no está disponible: MoA-150M no publica resultados de benchmarks, por lo que no puede contrastarse su calidad frente a SmolLM2-135M o Qwen2.5-0.5B. La diferencia principal es arquitectónica (atención métrica y enrutado MoA) y de ecosistema: los alternativos cuentan con soporte maduro en motores de inferencia y cuantización, mientras que MoA-150M depende de código transformers personalizado.
 
 ## Limitaciones y advertencias
 
-- Presupuesto de entrenamiento muy reducido (cientos de miles de tokens), lo que implica una calidad general muy por debajo de modelos del mismo tamaño entrenados a escala; no es apto para QA factual a escala web.
-- El autor declara explícitamente que no está pensado para usos críticos de seguridad ni dominios que requieran precisión garantizada.
-- Riesgo elevado de alucinación y de respuestas incoherentes fuera de los dominios de entrenamiento.
+- El autor declara explícitamente que el modelo no está pensado para usos críticos de seguridad, QA factual a escala web ni dominios que exijan precisión garantizada.
+- Riesgo elevado de alucinación: el entrenamiento usa presupuestos de tokens muy reducidos (cientos de miles) y una pérdida de SFT baja no implica robustez factual.
 - Solo inglés; no hay soporte multilingüe documentado.
-- Contexto efectivo limitado a 512-1024 tokens en entrenamiento; la extrapolación a 2048 depende de los datos y del hardware y no está validada con métricas.
-- La model card menciona posibles NaN/Inf durante el muestreo si las máscaras no son aditivas (0/-inf) o si no se hace clamp de logits en filas totalmente enmascaradas; conviene revisar la implementación de atención antes de desplegar.
-- No se documentan sesgos evaluados ni filtros de seguridad; el modelo no tiene alineamiento más allá del SFT sobre Deepthink-Reasoning.
-- La licencia Apache-2.0 permite uso comercial, pero la ausencia de garantías y de evaluaciones hace desaconsejable su uso en producción sin validación propia.
-- La model card mezcla referencias a una variante de 400 M (por ejemplo, en el ejemplo de pipeline con MoA-400M), lo que puede generar confusión sobre los artefactos reales del repo.
+- Contexto efectivo limitado a 512-1024 tokens en entrenamiento; aunque BlackHoleRoPE es extrapolable, la calidad más allá de esas longitudes depende de los datos y el hardware, según el propio autor.
+- El tamaño de 150 M limita capacidades de razonamiento complejo, matemáticas avanzadas y código; los casos de uso deben acotarse a tareas sencillas.
+- La atención métrica y el bloque MoA son implementaciones personalizadas: la compatibilidad con motores de inferencia optimizados (vLLM, llama.cpp, TGI) y con cuantizaciones GGUF/AWQ no está documentada, lo que complica el despliegue en producción.
+- El autor advierte de posibles NaN/Inf durante el muestreo si las máscaras no son aditivas (0/-inf); es necesario revisar el enmascaramiento y el recorte de logits.
+- Licencia Apache-2.0: permite uso comercial, pero al no haber evaluación de sesgos ni de seguridad, cualquier despliegue comercial exige auditoría propia.
 
 ## Enlaces
 
@@ -90,4 +91,6 @@ La comparación es estructural: MoA-150M no publica métricas que permitan situa
 - Dataset HuggingFaceH4/MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Dataset zai-org/LongWriter-6k: https://huggingface.co/datasets/zai-org/LongWriter-6k
 - Dataset m-a-p/DeepWriting-20K: https://huggingface.co/datasets/m-a-p/DeepWriting-20K
-- Dataset prithivMLmods/Deepthink-Reasoning: https://huggingface.co/datasets/prithivMLmods/Deepthink-Reasoning
+- Dataset prithivMLmods/Deepthink-Reasoning (SFT): https://huggingface.co/datasets/prithivMLmods/Deepthink-Reasoning
+- Repositorio TRL: https://github.com/huggingface/trl
+- No se han encontrado papers, blogs ni demos adicionales en la información disponible.

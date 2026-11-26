@@ -2,120 +2,110 @@
 
 ## Resumen
 
-Chinese Decision Unified 0.8B es un modelo de 0,8B parámetros en chino desarrollado por quincyqiang (repositorio `yanqiangmiffy/chinese-decision`) que no genera texto: emite probabilidades. A partir del modelo base Qwen3.5-0.8B, se entrena un único fichero de pesos con dos cabezas de lectura: una **lectura de decisión**, que devuelve una probabilidad por cada candidato de un conjunto cerrado (preguntas sí/no, elección única y escala ordinal), y una **lectura de extracción**, que devuelve spans de caracteres tipados con posición y probabilidad para NER, relaciones y eventos.
+chinese-decision-unified-0.8b es un modelo de 755.819.712 parámetros (0,76 B) desarrollado por quincyqiang, un fine-tune del modelo base Qwen/Qwen3.5-0.8B. Su particularidad es que combina en un único fichero de pesos dos modos de lectura ("readouts") distintos sobre el mismo backbone: un modo de decisión probabilística, que dada una lista de candidatos devuelve una probabilidad por candidato, y un modo de extracción de información, que dado un texto y un conjunto de tipos de entidad devuelve spans tipados con posiciones y probabilidades. Ninguno de los dos modos genera tokens de texto libre.
 
-La relevancia técnica está en el enfoque discriminativo: en lugar de decodificar tokens de forma autorregresiva, lee los logits de las letras de los candidatos en la última posición y los normaliza en un solo paso forward. Esto reduce la latencia y hace que las salidas sean directamente calibrables (temperatura T = 1,1326 en la cabeza de decisión). El modelo unificado mantiene la precisión de decisión de su hermano `chinese-decision-0.8b` (83,46 % frente a 83,11 % en CJ-Bench) añadiendo la extracción en el mismo checkpoint.
+El modelo está entrenado desde el backbone original de Qwen3.5-0.8B (no es un fine-tune encadenado sobre el modelo de decisión previo) mediante LoRA con r=32, posteriormente fusionado, más una cabeza de spans de aproximadamente 3 M de parámetros inicializada aleatoriamente. El entrenamiento se realizó sobre CJ-Dataset (13.048.000 ítems de decisión más 611.354 ítems de decisión derivados de CJ-IE) y sobre 573.294 filas de spans de CJ-IE, que cubren NER, relaciones y argumentos de eventos.
 
-El contexto máximo del modo decisión es de 16.384 tokens, admite entre 2 y 26 candidatos por pregunta y está entrenado exclusivamente en chino. Se distribuye con licencia Apache-2.0 en un único `model.safetensors` de aproximadamente 1,5 GB, con licencia y arquitectura heredadas de Qwen3.5-0.8B.
+Es relevante porque propone un enfoque alternativo a los LLM generativos para tareas de clasificación y extracción en chino: en lugar de generar una respuesta, el modelo lee logits en posiciones concretas, lo que reduce latencia y coste computacional. Con 0,76 B de parámetros y licencia Apache-2.0, está pensado para despliegues con restricciones de VRAM o de latencia, manteniendo una precisión de decisión del 83,46 % en el benchmark completo CJ-Bench (307.900 ítems).
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3.5 (con capas de atención lineal; se recomienda `flash-linear-attention` para kernels eficientes) + cabeza de spans para extracción |
-| Parámetros totales | 755.819.712 (~0,76B), de los cuales ~3M corresponden a la cabeza de spans (`span_head.*`) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 16.384 tokens en modo decisión; en extracción, el texto se trocea en ventanas de ≤ 300 caracteres durante el entrenamiento |
-| Tipos de cuantización | No disponible: solo se publican pesos BF16 (no hay GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | Chino (zh) |
-| Licencia | Apache-2.0 (se incluye el texto de licencia del modelo base Qwen3.5-0.8B) |
-| Formato de pesos | `safetensors` (un único `model.safetensors`, ~1,5 GB), más `config.json`, `tokenizer.json`, `chat_template.jinja`, `decision_config.json`, `training_summary.json` y los informes de evaluación |
-
-Otros parámetros relevantes:
-
-| Parámetro | Valor |
-|---|---|
-| Candidatos por pregunta (decisión) | 2–26 (el entrenamiento cubre 2–16) |
-| Modos de decisión | `noul` (sí/no), `choice` (elección única), `score` (ordinal) |
-| Calibración | T = 1,1326 en la lectura de decisión (`decision_config.json`) |
-| Extracción | Diseño de eco (reexposición del texto), span máximo de 20 caracteres, corrección de priori `none_shift = log(1/0,2)` |
-| Versión de prompt | `hmm-zh-v1` |
-| Punto de control publicado | step 14.504 (último paso de 1 epoch) |
+| Arquitectura | Transformer basado en Qwen3.5 con capas de atención lineal (se recomienda `flash-linear-attention`); doble cabeza de lectura: decisión (logits de letras candidatas) y extracción (span head de tipo) |
+| Parámetros totales | 755.819.712 (0,76 B); ~3 M corresponden a la span head |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | 16.384 tokens para decisión; extracción entrenada con textos de ≤ 300 caracteres por ventana |
+| Tipos de cuantización | no disponible (pesos publicados en BF16; no se documentan cuantizaciones oficiales) |
+| Idiomas soportados | chino (zh) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (un único `model.safetensors`, ~1,5 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone de texto Qwen3.5-0.8B, que incluye capas de atención lineal. Sobre él se añaden dos cabezas de lectura que comparten el mismo tronco y el mismo conjunto de parámetros LoRA (r = 32, fusionados posteriormente en los pesos): una cabeza de decisión que extrae los logits de las letras candidatas en la última posición, y una cabeza de spans inicializada aleatoriamente (~3M parámetros) que clasifica posiciones de carácter para producir entidades tipadas. La petición determina la lectura: si incluye `questions` se ejecuta la decisión; si incluye `types`, la extracción; enviar ambas o ninguna provoca un error.
+El modelo parte del backbone de texto de Qwen3.5-0.8B, que incluye capas de atención lineal para las que el autor recomienda instalar `flash-linear-attention`. Sobre ese backbone se añaden dos cabezas de lectura que comparten los mismos pesos del tronco y los mismos parámetros LoRA: una cabeza de decisión, que lee los logits de las letras candidatas en la última posición para asignar una probabilidad a cada opción, y una span head de aproximadamente 3 M de parámetros que, en modo extracción, recibe el texto reescrito carácter a carácter y clasifica en cada posición si comienza o no un span de un tipo dado. La span head se inicializó aleatoriamente y se entrenó junto con el resto.
 
-El entrenamiento se hizo desde el Qwen3.5-0.8B original, no por fine-tuning sobre el modelo de decisión ya publicado. Los datos combinan 13.048.000 elementos de decisión de CJ-Dataset más 611.354 elementos de decisión de CJ-IE, y 573.294 filas de spans de CJ-IE (32 fuentes de NER, relaciones de DuIE y CMeIE, y argumentos de evento de DuEE y FewFC). No se documenta en la información disponible el uso de RLHF o DPO; el ajuste es supervisado con LoRA fusionado. La innovación principal es la lectura probabilística en un solo paso forward, sin generación de tokens, junto con la posibilidad de componer lecturas en cascada (por ejemplo, evento = pregunta sí/no sobre el tipo + extracción de disparador y argumentos).
+El entrenamiento se realizó con LoRA (r=32) fusionado posteriormente, desde el modelo base original, en un único proceso conjunto. Los datos de decisión provienen de CJ-Dataset (13.048.000 ítems) más 611.354 ítems de decisión de CJ-IE; los de extracción, de 573.294 filas de spans de CJ-IE con 32 fuentes de NER, relaciones de DuIE y CMeIE, y argumentos de eventos de DuEE y FewFC. El checkpoint publicado es el step 14.504 (último paso de una época), seleccionado por una puntuación conjunta de decisión y extracción. El modelo aplica una temperatura de calibración T = 1,1326 solo a la lectura de decisión, una corrección de prior `none_shift = log(1/0,2)` para los spans y un umbral `decision_shift = 0,75` elegido por F1 en el conjunto de desarrollo de CJ-IE. La versión de prompt es `hmm-zh-v1`.
 
 ## Capacidades
 
-- Decisión probabilística cerrada: devuelve una distribución de probabilidad sobre 2–26 candidatos para preguntas de tipo sí/no (`noul`), elección única (`choice`) y escala ordinal (`score`), sin generar tokens.
-- Clasificación zero-shot con descripciones: los candidatos se especifican con nombre y criterio en la propia petición, sin necesidad de reentrenar.
-- Extracción de entidades nombradas (NER) tipadas con descripciones de tipo en lenguaje natural (por ejemplo, provincia, ciudad, distrito, vía, número de portal).
-- Extracción de relaciones: dado un sujeto, extraer el objeto (datos de DuIE y CMeIE).
-- Extracción de eventos: identificación de tipo de evento, disparador y argumentos (datos de DuEE y FewFC).
-- Salidas con posiciones: `start`/`end` en índices de carácter (intervalo semiabierto) y `score` por entidad, con umbral configurable.
-- Composición en pipelines: decisión seguida de extracción para resolver tareas de IE complejas en varios pasos.
-- Multilingüe: no disponible; el modelo está entrenado y evaluado únicamente en chino.
-- Tool calling / function calling: no documentado; el modelo no genera texto ni llamadas a herramientas.
-- Modo "thinking", visión o audio: no disponible.
+- Decisión probabilística sobre candidatos: dada una pregunta y entre 2 y 26 opciones (el entrenamiento cubre de 2 a 16), devuelve una probabilidad por candidato (`noul`, `choice`, `score`).
+- Extracción de entidades nombradas (NER) con tipos definidos por nombre y descripción, devolviendo spans de caracteres con posición y probabilidad.
+- Extracción de relaciones: dado un sujeto, extrae el objeto correspondiente.
+- Extracción de eventos: composición en pipeline, primero una decisión sí/no sobre el tipo de evento y después la extracción del disparador y los argumentos.
+- Clasificación zero-shot mediante la lectura de decisión con candidatos definidos en la petición.
+- No genera texto libre: ambas lecturas son deterministas sobre logits y cabezas de clasificación.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma nativa; el pipeline de eventos es la única composición documentada.
+- Capacidades multilingües: solo chino.
+- Capacidades especiales: dos modos de lectura seleccionables por el contenido de la petición (`questions` activa decisión, `types` activa extracción); servicio HTTP y pipeline local (`DecisionPipeline`) con el mismo formato de petición.
 
 ## Casos de uso
 
-- **Enrutado de tickets de soporte**: clasificar cada mensaje entrante en departamentos (facturación, técnico, ventas) con una pregunta `choice` y criterios descritos en la petición; la probabilidad por clase permite fijar umbrales de derivación a revisión humana cuando la confianza es baja.
-- **Detección de urgencia y triaje**: usar preguntas `noul` encadenadas ("¿el cliente expresa urgencia?", "¿menciona una fecha límite?") sobre el texto del ticket; al ser un solo paso forward, el coste por mensaje es mínimo incluso en CPU.
-- **Moderación y cumplimiento con reglas cerradas**: evaluar políticas internas como preguntas de sí/no o escalas ordinales, aprovechando que las salidas son probabilidades calibradas y auditables en lugar de texto libre.
-- **Anonimización y parsing de direcciones chinas**: extraer provincia, ciudad, distrito, vía y número de portal con posiciones exactas para enmascarar datos personales antes de almacenarlos o enviarlos a otro sistema.
-- **Construcción de grafos de conocimiento**: extracción de relaciones (sujeto → objeto) y de eventos con sus argumentos para poblar bases de datos estructuradas a partir de corpus chinos, con la posibilidad de filtrar por `score`.
-- **Enriquecimiento de catálogo o CRM**: extracción de entidades y atributos de descripciones de producto o de notas de cliente, y clasificación simultánea de categorías mediante la lectura de decisión sobre el mismo checkpoint.
-- **Evaluación de pipelines de IE**: usar los informes incluidos (`cj_ie_test_report.json`, con métricas por fuente y por tipo, incluida ECE de entidades) como referencia para comparar extracciones propias sobre el mismo conjunto de test.
-- **Serving de bajo coste en edge o CPU**: al no generar tokens y pesar ~1,5 GB en BF16, puede desplegarse en un contenedor pequeño o en CPU para tareas de clasificación masiva por lotes.
+- Clasificación de documentos en pipelines de ingesta: usar la lectura de decisión con las categorías del dominio como candidatos permite etiquetar cada documento sin generar texto, con latencia baja gracias al tamaño de 0,76 B.
+- Extracción de entidades en textos administrativos o legales en chino: definir los tipos de entidad con nombre y descripción y obtener spans con posición y probabilidad, apto para alimentar bases de datos o índices de búsqueda.
+- Construcción de grafos de conocimiento: la extracción de relaciones (sujeto → objeto) permite poblar tripletas a partir de corpus chinos sin un LLM generativo intermedio.
+- Detección de eventos en noticias o informes: pipeline de dos pasos (decisión sí/no sobre el tipo de evento y extracción de disparador y argumentos) para monitorización temática.
+- Enrutado y triaje en atención al cliente: decidir entre un conjunto acotado de intenciones o departamentos con probabilidades calibradas, lo que permite aplicar umbrales de confianza y derivar a revisión humana.
+- Moderación y filtrado por reglas: clasificación binaria o multiclase de contenido con probabilidad por candidato, integrable en servicios HTTP gracias al endpoint compatible.
+- Anotación asistida para equipos de etiquetado: preetiquetar NER y relaciones en chino con probabilidades por span para revisión posterior, reduciendo el coste de anotación manual.
 
 ## Benchmarks y rendimiento
 
-Los únicos resultados numéricos publicados en la información disponible corresponden a CJ-Bench (307.900 elementos) y comparan el modelo unificado con su variante solo-decisión:
+| Evaluación | chinese-decision-unified-0.8b | unified-2b | unified-4b |
+|---|---|---|---|
+| CJ-Bench completo, accuracy (T = 1) | 83,46 % | 85,00 % | 86,86 % |
+| CJ-IE test, accuracy de decisión | 90,65 % | 91,30 % | 91,89 % |
+| CJ-IE test, micro F1 de extracción | 63,1 | 66,0 | 68,9 |
 
-| Evaluación | Chinese Decision Unified 0.8B | Chinese Decision 0.8B (solo decisión) |
-|---|---|---|
-| Precisión de decisión en CJ-Bench (307.900 elementos) | 83,46 % | 83,11 % |
-
-Métricas por dominio, por tipo de pregunta y por fuente: disponibles en `cj_bench_report.json` (con T = 1). Métricas de extracción por fuente y por tipo, incluidas ECE de entidades: en `cj_ie_test_report.json`. Los valores concretos no se incluyen en la información proporcionada.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, C-Eval u otros) en la información disponible.
+El modelo conserva la precisión de decisión del modelo solo-decisión (83,46 % frente a 83,11 % en CJ-Bench completo, según la model card). No se han publicado en la información disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no publicada. A partir del tamaño del checkpoint (BF16, ~1,5 GB de pesos más ~6 MB de cabeza de spans), una estimación razonable es de ~2 GB para los pesos y de 3–5 GB en total con activaciones y caché para contextos cortos; para aprovechar los 16.384 tokens de contexto hay que sumar la caché correspondiente, que no se ha cuantificado públicamente.
-- GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060/4060/4070, RTX 4090) para uso interactivo; A100/H100 para servir por lotes o con contextos largos.
-- Cabe en GPU de consumo: sí, en toda la gama media actual (8 GB o más); la model card documenta ejecución en CPU (`device="cpu"`), con ligeras diferencias en el último decimal de las probabilidades.
-- Opciones de despliegue: `transformers` para la lectura de decisión (`AutoModelForCausalLM.from_pretrained`); para la extracción es necesario el paquete `decision` del repositorio (`pip install "chinese-decision[torch] @ git+https://github.com/yanqiangmiffy/chinese-decision.git@feat/classification-extraction"`). Se recomienda `flash-linear-attention>=0.4` para las capas de atención lineal. Descarga vía Hugging Face (`hf download`) o ModelScope (`modelscope download`).
-- vLLM, llama.cpp, Ollama o TGI: no documentado; no se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son viables sin conversión propia.
-- Latencia y throughput: no se han publicado cifras. Cualitativamente, cada petición requiere un único paso forward sin decodificación autorregresiva.
+- VRAM estimada para inferencia en BF16: en torno a 1,5-2 GB para los pesos más el overhead de activaciones y del runtime; el repositorio ocupa 1,5 GB.
+- Cabe en GPU de consumo: cualquier GPU con 4 GB o más de VRAM debería ser suficiente en BF16; con cuantización (no documentada oficialmente) el requisito bajaría aún más.
+- GPU recomendadas: no se especifican; por tamaño, RTX 3060/4060 o superiores son suficientes; A100/H100 no son necesarias salvo para alto throughput por lotes.
+- Despliegue: `transformers` para la lectura de decisión; la lectura de extracción requiere el paquete `chinese-decision` (instalable desde el repositorio de GitHub). Se recomienda `flash-linear-attention>=0.4` para las capas de atención lineal. El modelo expone endpoints compatibles y un servicio HTTP propio; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | CJ-Bench (accuracy) | CJ-IE F1 extracción | Licencia |
 |---|---|---|---|---|---|
-| Chinese Decision Unified 0.8B | 755.819.712 (~3M en la cabeza de spans) | 16.384 tokens (decisión); ventanas ≤ 300 caracteres (extracción) | Decisión probabilística + extracción de spans en un solo checkpoint | Apache-2.0 | Hugging Face y ModelScope |
-| Chinese Decision 0.8B | ~0,8B (mismo backbone) | No disponible | Solo decisión probabilística (sin extracción) | Apache-2.0 | Hugging Face y ModelScope |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Generación de texto autorregresiva | Apache-2.0 | Hugging Face |
+| chinese-decision-unified-0.8b | 0,76 B | 16.384 (decisión) | 83,46 % | 63,1 | Apache-2.0 |
+| chinese-decision-unified-2b | ~2 B (base Qwen3.5-2B) | no disponible | 85,00 % | 66,0 | Apache-2.0 |
+| chinese-decision-unified-4b | ~4 B (base Qwen3.5-4B) | no disponible | 86,86 % | 68,9 | Apache-2.0 |
+| chinese-decision-0.8b (solo decisión) | 0,76 B | no disponible | 83,11 % | no aplica | Apache-2.0 |
 
-Frente al modelo base, la diferencia es funcional: Qwen3.5-0.8B genera texto y requiere prompting o parsing posterior para obtener una decisión; el modelo unificado devuelve directamente probabilidades y posiciones. Frente a `chinese-decision-0.8b`, añade la lectura de extracción a cambio de un checkpoint algo mayor y de la dependencia del paquete `decision` para esa lectura. No se dispone de comparaciones publicadas con modelos de NER/RE/EE discriminativos clásicos (por ejemplo, basados en BERT) en la información disponible.
+La comparación con modelos de propósito general (por ejemplo, LLM generativos del mismo tamaño para NER o clasificación en chino) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo generativo**: no produce texto libre ni soporta conversación multi-turno; no debe usarse como chatbot.
-- **Solo chino**: no hay soporte documentado de otros idiomas; el rendimiento fuera del chino no está evaluado.
-- **Comparabilidad de salidas**: las probabilidades de la lectura de decisión y de la lectura de extracción no son comparables entre sí; cada una tiene su propia calibración.
-- **Candidatos acotados**: el entrenamiento cubre de 2 a 16 candidatos por pregunta, aunque el modelo admite hasta 26; por encima de 16 se produce extrapolación y el serving recomienda dividir conjuntos mayores en rondas agrupadas.
-- **Límites de extracción**: span máximo de 20 caracteres y texto troceado en ventanas de ≤ 300 caracteres, lo que puede partir entidades o argumentos que crucen la frontera de la ventana.
-- **Falsos positivos en extracción**: la corrección de priori `none_shift = log(1/0,2)` favorece la clase "ninguna"; aun así, conviene fijar un umbral (`threshold`) y validar con datos propios.
-- **Riesgo de sesgo**: no se documenta ninguna evaluación de sesgos; al estar entrenado solo con datos chinos, puede reflejar sesgos de dominio y de las fuentes de anotación (32 fuentes de NER, DuIE/CMeIE, DuEE/FewFC).
-- **Licencia**: Apache-2.0 permite uso comercial, pero el checkpoint incorpora pesos derivados de Qwen3.5-0.8B y se incluye únicamente la licencia del modelo base; conviene revisar los términos de Qwen3.5 antes de un despliegue comercial.
-- **Madurez**: 0 descargas y 0 likes en el momento de la consulta, y dependencia de una rama específica del repositorio (`feat/classification-extraction`) para la lectura de extracción; el soporte de la comunidad y de herramientas de terceros es aún limitado.
-- **Producción**: no hay cifras publicadas de latencia, throughput ni robustez ante entradas adversarias; se recomienda una fase de evaluación con datos propios antes de sustituir clasificadores existentes.
+- Solo soporta chino; no hay capacidades multilingües documentadas.
+- No genera texto: no puede usarse para tareas de generación, resumen, traducción o diálogo libre.
+- La lectura de extracción está entrenada con textos de hasta 300 caracteres por ventana y spans de hasta 20 caracteres; textos más largos requieren troceado manual.
+- La ventana de decisión es de 16.384 tokens, pero el entrenamiento cubre entre 2 y 16 candidatos por pregunta, aunque la inferencia admite hasta 26.
+- Las probabilidades de las dos lecturas no son comparables entre sí; mezclarlas para decidir la tarea es un error de uso.
+- Riesgo de alucinación: al no generar texto, el riesgo se traslada a falsos positivos en spans y a decisiones con confianza mal calibrada fuera de la distribución de entrenamiento; se recomienda aplicar umbrales y validación en el dominio objetivo.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre corpus chinos (DuIE, CMeIE, DuEE, FewFC y 32 fuentes de NER), puede heredar los sesgos de esas fuentes.
+- La licencia Apache-2.0 permite uso comercial, pero se hereda la del modelo base Qwen3.5-0.8B; conviene revisar las condiciones del modelo base.
+- El paquete necesario para la lectura de extracción se instala desde el repositorio de GitHub (`main`), no desde PyPI, lo que añade un riesgo de reproducibilidad en producción.
+- No se documentan cuantizaciones oficiales ni soporte en motores de inferencia habituales (vLLM, llama.cpp, Ollama, TGI), lo que limita las opciones de despliegue optimizado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b
+- Modelo en ModelScope: https://www.modelscope.cn/models/quincyqiang/chinese-decision-unified-0.8b
 - Repositorio de código: https://github.com/yanqiangmiffy/chinese-decision
 - Plataforma de pruebas Decision Studio: https://github.com/yanqiangmiffy/chinese-decision-studio
-- Variante solo decisión: https://huggingface.co/quincyqiang/chinese-decision-0.8b
+- Modelo solo-decisión 0.8b: https://huggingface.co/quincyqiang/chinese-decision-0.8b
+- Versión unified 2b: https://huggingface.co/quincyqiang/chinese-decision-unified-2b
+- Versión unified 4b: https://huggingface.co/quincyqiang/chinese-decision-unified-4b
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Dataset de decisión CJ-Dataset: https://huggingface.co/datasets/bbldCVer-hf/CJ-Dataset
+- Dataset CJ-Dataset: https://huggingface.co/datasets/bbldCVer-hf/CJ-Dataset
 - Benchmark CJ-Bench: https://huggingface.co/datasets/bbldCVer-hf/CJ-Bench
-- Documentación del dataset de extracción CJ-IE: https://github.com/yanqiangmiffy/chinese-decision/blob/feat/classification-extraction/docs/IE_DATASET.md
-- Model card del modelo solo decisión: https://github.com/yanqiangmiffy/chinese-decision/blob/feat/classification-extraction/docs/MODEL_CARD_0_8B.md
-- Artículo "Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making": https://arxiv.org/abs/2610.23170 (la ficha de Hugging Face referencia además el identificador arXiv:2609.36965)
-- Réplica en ModelScope: https://www.modelscope.cn/models/quincyqiang/chinese-decision-0.8b
+- Documentación del dataset CJ-IE: https://github.com/yanqiangmiffy/chinese-decision/blob/main/docs/IE_DATASET.md
+- Model card unified 2b: https://github.com/yanqiangmiffy/chinese-decision/blob/main/docs/MODEL_CARD_UNIFIED_2B.md
+- Model card unified 4b: https://github.com/yanqiangmiffy/chinese-decision/blob/main/docs/MODEL_CARD_UNIFIED_4B.md
+- Model card solo-decisión 0.8b: https://github.com/yanqiangmiffy/chinese-decision/blob/main/docs/MODEL_CARD_0_8B.md
+- Paper referenciado (arXiv:2609.36965): https://arxiv.org/abs/2609.36965

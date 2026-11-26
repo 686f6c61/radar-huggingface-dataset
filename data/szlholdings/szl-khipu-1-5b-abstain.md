@@ -2,77 +2,103 @@
 
 ## Resumen
 
-SZL-Khipu-1.5B-abstain es un adaptador QLoRA (Low-Rank Adaptation) desarrollado por SZLHOLDINGS, que se monta sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Forma parte de la línea Khipu, un conjunto de adaptadores orientados a la generación de planes de recuperación de información en formato JSON, con acciones `NAVIGATE` o `ABSTAIN`. Este adaptador concreto es un reentrenamiento que aumenta el sobremuestreo de abstenciones (de 2 a 4), pasando de 15 ejemplos de navegación frente a 8 de abstención a 15 frente a 32, con el objetivo de reforzar la capacidad del modelo para abstenerse cuando no tiene suficiente certeza.
+SZL-Khipu-1.5B-abstain es un ajuste fino (adapter PEFT) del modelo Qwen2.5-1.5B-Instruct, publicado por la organizacion SZLHOLDINGS. Su proposito declarado es el entrenamiento en "abstencion": es decir, que el modelo aprenda a reconocer cuando no dispone de informacion suficiente y a declinar responder en lugar de inventar. Se distribuye como variante de la linea SZL-Khipu-1.5B y esta pensado para flujos donde la fiabilidad de la respuesta pesa mas que la cobertura.
 
-El modelo está diseñado para un uso muy específico: generar propuestas de planes de recuperación sobre nodos sintéticos de un grafo denominado "Brain", siempre bajo la supervisión de un controlador externo que valida y resuelve el contenido. No es un modelo autónomo ni un reemplazo de los pesos originales firmados de la línea Khipu. La evaluación formal no se ha ejecutado todavía, por lo que no existen resultados de benchmarks publicados. Su licencia es Apache-2.0 y solo soporta inglés.
+El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-1.5B, con 1.543.714.304 parametros totales, y se ha entrenado sobre la version cuantizada en 4 bits de Qwen2.5-1.5B-Instruct (unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit). La model card documenta un entrenamiento completo con perdida final de 0,0250 y un conjunto de evaluaciones propio centrado en planificacion, fundamentacion (grounding) y abstencion.
+
+Su relevancia es acotada pero concreta: es un ejemplo de modelo pequeno orientado a reducir alucinaciones mediante un curriculum de abstencion, con licencia Apache 2.0 y pesos en safetensors y GGUF. El soporte de idiomas declarado es unicamente ingles y el ecosistema de herramientas publicadas (receipts, benchmarks, datasets) es propio del autor, por lo que la verificacion externa es limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre Qwen2.5-1.5B-Instruct (transformer decoder) |
-| Parametros totales | No disponible (adaptador LoRA con r=32, α=64; el modelo base tiene 1.5B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (heredada del modelo base, no especificada en la ficha) |
-| Tipos de cuantizacion | Entrenado con QLoRA sobre base cuantizado a 4-bit (bnb-4bit); el adaptador en sí no especifica cuantización |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | PEFT (adaptador LoRA), formato de archivo no especificado |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-1.5B-Instruct) |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-1.5B-Instruct soporta hasta 32.768 tokens, segun la documentacion de Qwen) |
+| Tipos de cuantizacion | GGUF F16 (fichero `khipu-f16.gguf` citado en la model card); el modelo base se entreno sobre una version bnb-4bit |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena mediante QLoRA (Quantized Low-Rank Adaptation) sobre el modelo base Qwen2.5-1.5B-Instruct, utilizando la librería Unsloth con cuantización de 4 bits. La configuración de entrenamiento incluye: semilla 11, tasa de aprendizaje 2e-4, optimizador AdamW de 8 bits, `train_on_responses_only`, 45 épocas, acumulación de gradientes de 2, batch de 1 y programador de tasa de aprendizaje constante con calentamiento. El rango LoRA es 32 y el factor alfa 64.
+La arquitectura es la de Qwen2.5-1.5B-Instruct: un transformer decoder-only con atencion por causalidad, normalizacion RMSNorm, activacion SwiGLU y embeddings RoPE. El modelo se publica como adaptador PEFT (la libreria declarada en el repo es `peft`) entrenado sobre la variante cuantizada en 4 bits del modelo base de Unsloth, lo que sugiere un ajuste eficiente en memoria (QLoRA o similar), aunque la model card no detalla la configuracion exacta de LoRA ni el numero de tokens de entrenamiento.
 
-El conjunto de entrenamiento combina 15 ejemplos de navegación (`train.jsonl`) con 8 ejemplos de abstención repetidos 4 veces (`train.abstain.jsonl`), resultando en 32 ejemplos de abstención frente a 15 de navegación. El objetivo es aumentar la propensión del modelo a emitir la acción `ABSTAIN` en situaciones de incertidumbre. No se emplean técnicas de RLHF ni DPO; es un fine-tuning supervisado clásico. El adaptador no sobrescribe los pesos firmados originales de `SZLHOLDINGS/SZL-Khipu-1.5B`.
+El entrenamiento se describe como "completamente entrenado" y verificado mediante un receipt firmado, con una perdida final de 0,0250. El curriculum utilizado se denomina `SZLHOLDINGS/abstention-curriculum-v2` y el modelo resultante se evalua con la bateria `mass-battery-khipu_abstain_v2_trained`. No se documentan datos sobre composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). La model card insiste en una doctrina de "receipts-first": cada metrica publicada enlaza a un fichero de evidencia firmado en el repositorio.
 
 ## Capacidades
 
-- Generación de planes de recuperación en formato JSON con dos acciones posibles: `NAVIGATE` (navegar a un nodo) y `ABSTAIN` (abstenerse de navegar).
-- Especialización en el refuerzo de la abstención: el sobremuestreo 4× sobre los ejemplos de abstención busca que el modelo prefiera abstenerse ante datos ambiguos o insuficientes.
-- Funciona como adaptador sobre Qwen2.5-1.5B-Instruct, por lo que hereda las capacidades lingüísticas generales del modelo base (generación de texto, razonamiento básico, etc.), aunque su uso previsto es exclusivamente la generación de planes JSON.
-- No soporta tool calling general ni funciones de agente autónomo; requiere un controlador externo que valide y resuelva las propuestas.
-- Multilingüe: solo inglés, según la etiqueta `language: en`.
-- No incluye capacidades de visión, audio ni modo de pensamiento explícito.
+- Generacion de texto conversacional en ingles, heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Abstencion: comportamiento entrenado explicitamente para declinar responder cuando la informacion es insuficiente, en lugar de generar una respuesta no fundamentada.
+- Planificacion: la evaluacion propia reporta 11/11 en tareas de plan.
+- Grounding: la evaluacion propia reporta 4/5 en tareas de fundamentacion sobre contexto.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada (el modelo base Qwen2.5-Instruct lo soporta, pero no se documenta para este ajuste).
+- Soporte de agentes y razonamiento multi-paso: no documentado especificamente; la metrica de planificacion sugiere cierta capacidad, sin detalle.
+- Capacidades multilingues: limitadas al ingles segun la metadata del repositorio.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Recuperación de información en dominios cerrados: el modelo genera planes de navegación sobre un grafo de nodos sintéticos, indicando si debe navegar a un nodo concreto o abstenerse. Es adecuado para entornos donde un controlador externo ejecuta las acciones y valida los resultados.
-- Control de calidad en sistemas de respuesta: al reforzar la abstención, puede integrarse en pipelines que prefieren no responder ante incertidumbre, reduciendo el riesgo de alucinaciones en contextos controlados.
-- Agentes de navegación en grafos de conocimiento: el adaptador produce propuestas de rutas (`NAVIGATE`) o la decisión de no continuar (`ABSTAIN`), que luego un sistema externo interpreta y ejecuta.
-- Investigación sobre mecanismos de abstención en LLMs: dado su diseño experimental y la ausencia de evaluación formal, sirve como banco de pruebas para estudiar cómo el sobremuestreo de abstenciones afecta al comportamiento del modelo.
-- Prototipos de sistemas gobernados: su naturaleza "proposal-only" y la dependencia de un controlador externo lo hacen útil para demostrar arquitecturas donde el modelo no tiene autonomía de decisión final.
-- Integración en pipelines de RAG con verificación externa: el adaptador puede generar planes de recuperación que un validador externo revisa antes de ejecutar, alineándose con políticas de seguridad y gobernanza.
+- Asistentes de atencion al cliente con politica de derivacion: el modelo puede integrarse en un flujo donde, ante una consulta fuera de su base de conocimiento, responda con una abtencion explicita y derive a un agente humano, reduciendo respuestas inventadas.
+- Extraccion de informacion con validacion: en pipelines de procesamiento documental, usar la abtencion como senal para marcar campos no encontrados en el texto fuente y enviarlos a revision manual.
+- Filtrado previo en sistemas RAG: colocado delante de un modelo mayor, puede decidir si la pregunta es respondible con el contexto recuperado, evitando costes de inferencia en consultas no cubiertas.
+- Moderacion y clasificacion con umbral de confianza: en tareas de etiquetado donde un falso positivo es costoso, la abtencion permite enrutar los casos ambiguos a revision.
+- Prototipado rapido en local: con 1,5B parametros y pesos GGUF, se puede ejecutar en portatiles y estaciones de trabajo sin GPU dedicada mediante llama.cpp, lo que facilita experimentar con politicas de abtencion.
+- Evaluacion de tecnicas anti-alucinacion: util como linea base pequena para comparar curriculums de abtencion frente a modelos del mismo tamano en entornos de investigacion.
+- Educacion y tutoria automatizada: en dominios acotados, el modelo puede admitir desconocimiento en lugar de ofrecer explicaciones incorrectas, un requisito habitual en entornos formativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que la evaluación no se ha ejecutado ("Status: NOT YET RUN") y que no se fabrican métricas. La única referencia es una medición previa del modelo original `SZLHOLDINGS/SZL-Khipu-1.5B` con una tasa de abstención de 2/6, considerada un bloqueador, pero no hay datos de este adaptador.
+Los unicos datos publicados son las evaluaciones propias del autor, recogidas en la model card. No hay resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+
+| Metrica (evaluacion propia) | Resultado | Porcentaje |
+|---|---|---|
+| Plan | 11 / 11 | 100,0% |
+| Grounding | 4 / 5 | 80,0% |
+| Abstain | 3 / 6 | 50,0% |
+| Bateria `mass-battery-khipu_abstain_v2_trained` | 4 / 6 | 66,7% |
+
+No se han publicado resultados de benchmarks estandar en la informacion disponible. Las cifras anteriores proceden exclusivamente de los receipts del autor y no han sido verificadas de forma independiente.
 
 ## Requisitos de hardware
 
-- Al ser un adaptador LoRA, los requisitos de hardware son los del modelo base Qwen2.5-1.5B-Instruct. No se proporcionan cifras oficiales en la documentación.
-- Estimación orientativa: el modelo base en 4-bit requiere aproximadamente 1-2 GB de VRAM para inferencia, por lo que cabe en GPUs consumer como RTX 3060, RTX 4060 o superiores. Sin embargo, esta estimación no está confirmada por el autor.
-- El adaptador se puede cargar junto con el modelo base usando librerías compatibles con PEFT (por ejemplo, Hugging Face Transformers con `peft`).
-- Opciones de despliegue: al ser un adaptador PEFT, puede integrarse en vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se mencionan configuraciones específicas en la documentación.
-- No se dispone de datos de latencia ni throughput.
+- VRAM estimada para inferencia: aproximadamente 3,1 GB en F16 (1.543.714.304 parametros x 2 bytes), en torno a 1,6 GB en cuantizacion de 8 bits y cerca de 1 GB en 4 bits, mas el overhead de contexto y del runtime.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para F16 (GTX 1650, RTX 3050, T4); para mayor throughput, RTX 4090, A100 o H100, aunque el modelo esta claramente sobredimensionado para estas ultimas.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas de VRAM; tambien en CPU mediante llama.cpp.
+- Opciones de despliegue: llama.cpp (documentado en la model card con `llama_cpp.Llama.from_pretrained`), y por compatibilidad con el formato safetensors y el ecosistema Qwen, cabria esperar soporte en vLLM, TGI y Ollama, aunque no se documenta explicitamente.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada. El adaptador es altamente especializado y no existen alternativas públicas con el mismo propósito (generación de planes JSON con abstención sobre Qwen2.5-1.5B). El modelo base Qwen2.5-1.5B-Instruct podría considerarse un punto de referencia, pero no es comparable en funcionalidad.
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| SZL-Khipu-1.5B-abstain | 1,54B | no disponible | Apache 2.0 | en | Ajuste de abtencion sobre Qwen2.5-1.5B-Instruct; evaluacion propia limitada |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 | multilingue | Modelo base; sin entrenamiento especifico de abtencion; benchmarks publicos amplios |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (segun documentacion de Hugging Face) | Apache 2.0 | en (principalmente) | Alternativa de tamano similar con soporte de tool calling documentado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (segun documentacion de Meta) | Llama 3.2 Community License | multilingue | Menor, con contexto mucho mayor y licencia con restricciones de uso |
+
+La comparacion en rendimiento no es posible con los datos disponibles: el autor no publica resultados en benchmarks estandar y las metricas propias no son directamente comparables con las de los modelos alternativos.
 
 ## Limitaciones y advertencias
 
-- Evaluación pendiente: no se ha ejecutado la evaluación formal, por lo que no hay garantías de rendimiento ni de fiabilidad.
-- Uso restringido: la model card indica que es "research-only" y "proposal-only", y que no es elegible para publicación ni para autonomía. No debe usarse en producción sin un controlador externo que valide las salidas.
-- Dependencia de un controlador externo: el modelo no es autónomo; sus salidas JSON deben ser interpretadas y validadas por un sistema externo.
-- No es un reemplazo de los pesos originales firmados de `SZLHOLDINGS/SZL-Khipu-1.5B`; es un adaptador adicional.
-- Riesgo de alucinación: aunque el sobremuestreo de abstención busca mitigarlo, no hay evidencia empírica de que lo consiga.
-- Idioma limitado: solo inglés, lo que restringe su uso en entornos multilingües.
-- Licencia Apache-2.0 permite uso comercial, pero las etiquetas de uso ("research-only") sugieren que el autor no lo recomienda para entornos productivos.
+- Idiomas: solo se declara ingles; el uso en castellano no esta soportado ni evaluado.
+- Contexto: la longitud de contexto no se documenta para este ajuste; el modelo base soporta hasta 32.768 tokens, pero el ajuste PEFT no garantiza el mismo comportamiento.
+- Alucinacion: aunque el objetivo del ajuste es reducirla, la propia evaluacion de abtencion reporta solo 3/6 (50%), lo que indica que la politica de abtencion no es fiable en la mitad de los casos evaluados.
+- Verificacion externa: los unicos resultados proceden de receipts del propio autor; no hay benchmarks independientes ni comparaciones con modelos de referencia.
+- Sesgos: no documentados. Al heredar el modelo base, es probable que arrastre sesgos de Qwen2.5-1.5B-Instruct, pero no se detallan.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base y de los datasets de entrenamiento por si imponen condiciones adicionales.
+- Produccion: el modelo es pequeno y esta orientado a experimentacion; no se documentan pruebas de robustez, seguridad ni comportamiento adversarial.
+- Tool calling y agentes: no confirmados para este ajuste, a pesar de que el modelo base los soporta.
+- Model card atipica: gran parte del contenido es material promocional y de telemetria del autor, con poca informacion tecnica reutilizable sobre el entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-abstain
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Modelo original de la línea Khipu: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
-- Repositorio de entrenamiento (szl-forge): https://github.com/szl-holdings/szl-forge/blob/main/khipu/publish-khipu.ps1
-- Página de inferencia en FriendliAI: https://friendli.ai/models/SZLHOLDINGS/SZL-Khipu-1.5B
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Repositorio GitHub de la organizacion: https://github.com/szl-holdings
+- Dataset de evaluacion: https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/benchmark/mass-battery-khipu_abstain_v2_trained.json
+- Receipt de evaluacion: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-abstain/blob/main/eval_receipt.signed.json
+- Receipt de entrenamiento: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-abstain/blob/main/training_receipt.signed.json
+- Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
+- Modelo original Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
-      "url": "https://fortnitetracker.com/",
-      "snippet": "3 days ago · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
-    },
-    {
-      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
-      "url": "https://fortnitetracker.com/events?region=EU",
-      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 8,178 FNCS Solos …"
-    },
-    {
-      "title": "Fortnite Power Rankings Asia Leaderboards - Fortnite Tracker",
-      "url": "https://fortnitetracker.com/events/powerrankings?platform=Console&region=ASIA",
-      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
-    },
-    {
-      "title": "Fortnite Events - Asia - Competitive Tournaments - Fortnite Tracker",
-      "url": "https://fortnitetracker.com/events?region=ASIA",
-      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 11 Hrs Asia Arenas Test …"
-    },
-    {
-      "title": "Fortnite Events - Brazil - Competitive Tournaments - Fortnite Tracker",
-      "url": "https://fortnitetracker.com/events?region=BR",
-      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 18,535 Console Zero …"
-    }
-  ]
+  "sources": []
 }

@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Claude Code Router - GitHub",
-      "url": "https://github.com/musistudio/claude-code-router",
-      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
-    },
-    {
-      "title": "claude-ai · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/claude-ai",
-      "snippet": "1 day ago · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to over …"
-    },
-    {
-      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
-      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
-      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
-    },
-    {
-      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
-      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
-      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
-    },
-    {
-      "title": "Changing the AI model for GitHub Copilot Chat",
-      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model",
-      "snippet": "Different models consume AI credits at different rates based on their token pricing. For details, see Models and pricing for GitHub …"
-    }
-  ]
+  "sources": []
 }

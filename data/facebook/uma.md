@@ -2,71 +2,79 @@
 
 ## Resumen
 
-UMA (Universal Model for Atoms) es un modelo de red neuronal de grafos desarrollado por el equipo FAIR Chemistry de Meta. Está diseñado para predecir propiedades atómicas y moleculares a partir de estructuras, abordando problemas de química cuántica y ciencia de materiales. Se trata de un modelo de gran escala, entrenado con miles de millones de átomos procedentes de cinco datasets de simulación open science publicados por el equipo en los últimos cinco años. Su arquitectura combina redes de grafos con una mezcla de expertos lineales, lo que permite escalar el modelado de interacciones atómicas. El repositorio en Hugging Face tiene un tamaño de 41.7 GB y su acceso es restringido, requiriendo aceptar condiciones previas. El modelo se presentó junto con OMol25, otro lanzamiento de Meta AI en el ámbito de la química. No se dispone de información sobre el número total de parámetros ni sobre benchmarks públicos.
+UMA es un modelo publicado por Meta (organización `facebook` en Hugging Face) bajo el identificador `facebook/UMA`. El repositorio tiene un tamaño de 46,4 GB, lo que sugiere pesos de un modelo de escala media-grande, aunque la información disponible no detalla el número exacto de parámetros ni la arquitectura interna. El modelo se distribuye bajo una licencia de tipo `other` y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
-## Especificaciones tecnicas
+La ficha se apoya en los metadatos públicos del repositorio y en las referencias a los artículos arXiv asociados (2603.02089 y 2506.23971), pero no se ha podido confirmar a partir de la información disponible ni la arquitectura, ni el contexto, ni los idiomas soportados, ni los resultados de benchmarks. Cualquier dato de ese tipo que no aparezca aquí debe considerarse no disponible y requerirá consultar directamente la model card oficial y los papers citados.
 
-| Parametro | Valor |
+A pesar de la escasez de datos verificables, el modelo resulta relevante por su origen (Meta), por el volumen del repositorio y por el interés que ha despertado (683 likes y 251 descargas en el momento de la consulta). Es un candidato a evaluar para quienes sigan la línea de investigación reflejada en los papers asociados, pero conviene tratarlo con cautela hasta confirmar sus especificaciones en la documentación oficial.
+
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-linear-experts graph network (GNN) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (no aplica, modelo de grafos) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no aplica, modelo para datos atomicos) |
-| Licencia | other (licencia personalizada de Meta) |
-| Formato de pesos | no disponible |
+| Arquitectura | no disponible |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | other (acceso restringido, gated) |
+| Formato de pesos | no disponible (repositorio de 46,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-UMA es un modelo de red neuronal de grafos que emplea una mezcla de expertos lineales. Esta arquitectura esta pensada para capturar las interacciones entre atomos en estructuras moleculares y cristalinas. El entrenamiento se realizo con miles de millones de atomos procedentes de cinco datasets de simulacion open science publicados por el equipo FAIR Chemistry. Segun el repositorio fairchem, los modelos UMA y los modelos legacy inorganicos entrenados con OMat24 utilizan etiquetas de energia total DFT y DFT+U. El paper asociado es arxiv:2506.23971. No se dispone de informacion detallada sobre el numero de parametros ni sobre el proceso de entrenamiento mas alla de estos datos.
+No se ha publicado en la información disponible ningún detalle sobre la arquitectura del modelo (transformer denso, MoE, híbrido u otra), ni sobre el volumen o composición de los datos de entrenamiento, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio incluye referencias a dos artículos arXiv (2603.02089 y 2506.23971), que son la fuente indicada para consultar los detalles técnicos, pero su contenido no se ha podido verificar en esta ficha.
+
+Tampoco se dispone de información sobre innovaciones técnicas concretas (decodificación especulativa, atención lineal, modos de razonamiento, etc.). El tamaño del repositorio (46,4 GB) es el único indicio cuantitativo disponible y sugiere pesos en precisión alta para un modelo de varios miles de millones de parámetros, pero se trata de una inferencia indirecta y no de un dato confirmado.
 
 ## Capacidades
 
-- Prediccion de propiedades atomicas y moleculares, como energias totales y fuerzas, a partir de estructuras.
-- Modelado de sistemas quimicos y materiales, incluyendo estructuras cristalinas y moleculares.
-- Entrenado en cinco datasets de simulacion open science, lo que le confiere una base amplia de datos de quimica cuantica.
-- No es un modelo de lenguaje: no ofrece generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No soporta tool calling, function calling, agentes ni multi-step reasoning en el sentido de los LLM.
-- Capacidades multilingues: no disponibles (no aplica).
+- Generación de texto: no confirmada explícitamente en la información disponible.
+- Razonamiento, código y matemáticas: no disponible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (los idiomas no están listados en los metadatos).
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Descubrimiento de nuevos materiales: el modelo puede predecir energias de formacion y estabilidad de estructuras cristalinas, lo que permite filtrar candidatos antes de sintetizarlos en laboratorio.
-- Catalisis: permite estimar energias de adsorcion de moleculas en superficies metalicas, acelerando el diseno de catalizadores.
-- Dinamica molecular: puede usarse como potencial interatomico para simulaciones de dinamica molecular a gran escala, sustituyendo calculos DFT costosos.
-- Diseno de baterias: aplicable a la prediccion de propiedades de electrolitos, electrodos y materiales de anodo/catodo.
-- Quimica cuantica: aproxima calculos de estructura electronica (DFT y DFT+U) de forma mucho mas rapida, permitiendo explorar espacios quimicos amplios.
-- Screening de aleaciones y perovskitas: util para identificar composiciones con propiedades optimas para aplicaciones energeticas o electronicas.
+No es posible detallar casos de uso concretos y realistas sin conocer las capacidades efectivas del modelo, que no están documentadas en la información disponible. A modo de orientación general, un modelo de esta escala y origen podría evaluarse en los siguientes escenarios, siempre tras verificar sus especificaciones en la model card oficial:
+
+- Investigación y reproducción de resultados: usar el modelo para replicar los experimentos de los papers arXiv asociados (2603.02089 y 2506.23971) y contrastar sus conclusiones.
+- Evaluación comparativa interna: incluirlo como referencia en bancos de pruebas propios frente a otros modelos de Meta o de la competencia, una vez confirmados tamaño y contexto.
+- Experimentación en generación de texto: probar su calidad en tareas de redacción y resumen, condicionado a que la model card confirme esa capacidad.
+- Fine-tuning supervisado: adaptar los pesos a un dominio concreto si la licencia `other` lo permite tras revisar sus términos.
+- Despliegue en entornos controlados: al ser un modelo gated, encaja en organizaciones que ya gestionan aceptación de condiciones y trazabilidad de licencias.
+- Estudio de licencias y gobernanza: analizar las condiciones de la licencia `other` como caso práctico de modelos de acceso restringido en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
+- VRAM estimada para inferencia: no disponible; depende del número de parámetros y de la cuantización, datos no confirmados.
 - GPU recomendadas: no disponible.
-- No se dispone de informacion sobre si cabe en GPU de consumo.
-- Opciones de despliegue: el modelo se integra en el ecosistema fairchem (GitHub: facebookresearch/fairchem). No se mencionan vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
-- Latencia y throughput: no disponibles.
+- Viabilidad en GPU de consumo: no disponible; el repositorio de 46,4 GB sugiere que los pesos en precisión alta no caben en GPUs de consumo típicas (24 GB), pero no se puede confirmar sin conocer el tamaño real del modelo.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en los datos proporcionados. Dentro del ecosistema fairchem existen modelos legacy entrenados con OMat24, pero no se han encontrado especificaciones concretas para comparar.
+No disponible. La información proporcionada no permite identificar modelos comparables de la misma categoría ni sus especificaciones, por lo que no se puede establecer una comparativa fiable de parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio en Hugging Face es gated, por lo que es necesario aceptar las condiciones de la licencia antes de descargar el modelo.
-- Licencia personalizada: la licencia aparece como "other", lo que implica terminos especificos de Meta. Se debe revisar detenidamente antes de cualquier uso comercial.
-- Ambito limitado: es un modelo para quimica y ciencia de materiales, no un modelo de lenguaje. No puede realizar tareas de texto, razonamiento general ni generacion de contenido.
-- Compatibilidad: segun el repositorio fairchem, los modelos UMA y los modelos legacy inorganicos entrenados con OMat24 usan etiquetas DFT y DFT+U, y no son compatibles entre si en ciertos aspectos. Es necesario verificar la documentacion.
-- Sesgos en datos: al estar entrenado en datasets de simulacion, las predicciones pueden verse sesgadas por las condiciones y aproximaciones de los calculos DFT utilizados.
-- Riesgo de alucinacion: no aplica en el sentido de los modelos generativos de texto, pero las predicciones pueden ser inexactas para sistemas fuera de la distribucion de entrenamiento.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga; esto puede retrasar pipelines automatizados.
+- Licencia `other`: los términos no están detallados en la información disponible; es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial.
+- Idiomas no declarados: no se puede garantizar el soporte multilingüe ni la calidad en castellano.
+- Arquitectura y contexto desconocidos: impide planificar el despliegue, estimar costes de inferencia o dimensionar la ventana de contexto.
+- Riesgo de alucinación y sesgos: no evaluable sin benchmarks ni model card; debe asumirse el riesgo habitual de los modelos generativos hasta que se publiquen evaluaciones.
+- Ausencia de datos de benchmarks: no hay evidencia pública en la información consultada que respalde afirmaciones de rendimiento.
+- Fecha de actualización del repositorio (noviembre de 2026): conviene verificar que la versión consultada coincide con la documentación vigente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/facebook/UMA
-- GitHub fairchem: https://github.com/facebookresearch/fairchem
-- Paper arxiv: https://arxiv.org/abs/2506.23971
-- Post de Meta AI sobre OMol25 y UMA: https://www.facebook.com/LifeAtMeta/posts/metas-fair-team-just-released-omol25-and-universal-model-for-atomsopen-source-to/1002067392089512/
+- Paper arXiv 2603.02089: https://arxiv.org/abs/2603.02089
+- Paper arXiv 2506.23971: https://arxiv.org/abs/2506.23971

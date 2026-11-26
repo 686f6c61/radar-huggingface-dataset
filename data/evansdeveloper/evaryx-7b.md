@@ -2,90 +2,92 @@
 
 ## Resumen
 
-Evaryx-7b es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado en Hugging Face por el usuario EvansDeveloper bajo el identificador `EvansDeveloper/evaryx-7b`. La etiqueta `qwen2` en los metadatos de la ficha indica que el modelo se construye sobre la arquitectura de la familia Qwen2, aunque la model card no confirma explícitamente el modelo base ni el proceso de ajuste. El repositorio tiene un tamaño de 15,2 GB y los pesos se distribuyen en formato safetensors, lo que sugiere pesos en bf16/fp16 (coherente con un modelo de ~7,6B parámetros).
+Evaryx-Core (publicado en Hugging Face como `EvansDeveloper/evaryx-7b`) es un modelo de lenguaje causal de tipo conversacional y de razonamiento, afinado por EVARYX TECHNOLOGIES sobre la arquitectura Qwen2. El repositorio declara 7.615.616.512 parámetros reales en safetensors (unos 7,6 mil millones), aunque la model card lo comercializa como "8B". Está pensado para mantener conversaciones con un tono natural y para abordar problemas de varios pasos con un enfoque de "pensamiento profundo" estructurado.
 
-La relevancia de este lanzamiento es limitada por la ausencia casi total de documentación: la model card es la plantilla automática de transformers sin rellenar, no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Para un desarrollador o investigador que necesite evaluar el modelo, esto implica que cualquier uso en producción requiere una validación empírica propia antes de adoptarlo.
+El modelo se distribuye en precisión F16 mediante safetensors y es compatible con la librería `transformers`, con soporte declarado para text-generation-inference y endpoints compatibles. El repositorio ocupa 15,2 GB y acumula 248 descargas y 1 like en el momento de la consulta, lo que indica una adopción muy limitada y una ausencia prácticamente total de validación por parte de la comunidad.
 
-A nivel técnico, el modelo se presenta como un modelo de generación de texto conversacional (`text-generation`, `conversational`) compatible con text-generation-inference y endpoints, lo que facilita su despliegue con las herramientas estándar del ecosistema Hugging Face. La falta de benchmarks publicados y de información sobre el entrenamiento impide compararlo de forma rigurosa con alternativas de su categoría.
+La relevancia de esta ficha es fundamentalmente cautelar: se trata de un fine-tune de Qwen2 sin licencia declarada, sin idiomas especificados, sin benchmarks publicados y sin documentación sobre el dataset de entrenamiento. Cualquier evaluación de idoneidad para producción debe partir de la premisa de que la información disponible es mínima y de que el modelo no ha sido auditado de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2, segun tag `qwen2`) |
-| Parametros totales | 7.615.616.512 (~7,6B) |
-| Parametros activos | no disponible (no es MoE segun los metadatos) |
+| Arquitectura | Transformer decoder-only, familia Qwen2 |
+| Parametros totales | 7.615.616.512 (7,6 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el repo ocupa 15,2 GB) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | F16 nativo en safetensors; la model card documenta carga en 4 bits vía bitsandbytes (`load_in_4bit`) |
+| Idiomas soportados | inglés declarado en la model card (`language: en`); el resto no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (F16) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible solo permite afirmar que se trata de un transformer decoder-only asociado a la arquitectura Qwen2 (tag `qwen2` en los metadatos del Hub) y que la librería declarada es `transformers`. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención, el tipo de atención (MHA/GQA), la función de activación ni la estrategia de normalización. Tampoco se documenta si emplea atención con RoPE, sliding window attention u otras variantes propias de Qwen2.
+El modelo emplea una arquitectura transformer decoder-only de la familia Qwen2, con 7,6 mil millones de parámetros. Se trata de un fine-tune, no de un modelo entrenado desde cero: la model card indica explícitamente "Causal Language Model (Fine-tuned)" y etiqueta el modelo con `qwen2`, por lo que la base es presumiblemente un checkpoint de la familia Qwen2 (probablemente Qwen2-7B, aunque el autor no lo confirma). La precisión de los pesos publicados es F16.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO o SFT, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La model card no incluye hiperparámetros de entrenamiento, infraestructura de cómputo ni detalles del proceso de ajuste. En consecuencia, no es posible verificar si el modelo es un fine-tuning del base Qwen2-7B, un modelo entrenado desde cero o una variante con modificaciones arquitectónicas.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas (decodificación especulativa, atención lineal, modos de pensamiento explícitos, etc.). La model card menciona capacidades de "deep thinking" y descomposición de problemas, pero no documenta ningún mecanismo técnico concreto que las implemente (por ejemplo, tokens de razonamiento especiales o un formato de cadena de pensamiento entrenado). Toda afirmación sobre el proceso de entrenamiento debe considerarse no verificada.
 
 ## Capacidades
 
-- Generación de texto autoregresiva y conversacional, segun el pipeline declarado (`text-generation`, `conversational`).
-- Compatibilidad con text-generation-inference y endpoints de Hugging Face, lo que permite servir el modelo mediante la API estándar.
-- Capacidad multilingüe: no disponible (no se declaran idiomas).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo thinking, visión o audio: no disponible.
-- Razonamiento matemático y generación de código: no disponible (sin benchmarks ni documentación).
+- Generación de texto conversacional en inglés, con un tono que la model card describe como natural y fluido.
+- Razonamiento multi-paso y descomposición de problemas lógicos, según declara el autor (sin evidencia técnica publicada).
+- Asistencia en programación, explicaciones y lluvia de ideas, según la model card.
+- Soporte de plantilla de chat mediante `apply_chat_template` con roles `user`/`assistant`.
+- Carga en 4 bits con bitsandbytes documentada por el autor para entornos con 8 GB de VRAM.
+- Tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes: no disponible (no documentado).
+- Capacidades multimodales (visión, audio): no disponibles.
+- Capacidades multilingües: no disponibles más allá del inglés declarado.
 
 ## Casos de uso
 
-- Evaluación comparativa interna: dado que no hay benchmarks publicados, un equipo puede desplegar el modelo con vLLM o TGI y ejecutar sus propias baterías de evaluación (MMLU, HumanEval, GSM8K) para decidir si sustituye a su modelo actual de 7B.
-- Prototipado de chatbots conversacionales: el pipeline `conversational` y la compatibilidad con endpoints permiten montar un prototipo de atención al cliente en pocas horas, siempre que se valide la calidad de las respuestas con datos propios.
-- Fine-tuning específico de dominio: al ser un modelo de 7,6B en safetensors y compatible con transformers, puede servir como base para SFT con LoRA en dominios verticales (legal, sanitario, financiero), aunque la licencia no declarada obliga a aclarar los términos antes de un uso comercial.
-- Generación de texto asistida en herramientas internas: integración en editores o asistentes de documentación mediante la API de text-generation-inference, con la cautela de validar el idioma y el estilo de salida.
-- Investigación sobre ajuste y alineación: el modelo puede usarse como sujeto de experimentos de RLHF/DPO o de análisis de sesgos, comparando su comportamiento con el Qwen2 base si se confirma la relación.
-- Despliegue en infraestructura propia: al ocupar 15,2 GB en safetensors, cabe en una GPU de 24 GB en bf16 y en GPUs de 16 GB con cuantización a 8 bits, lo que facilita pruebas en estaciones de trabajo con RTX 4090 o A10G.
+- Prototipado de asistentes conversacionales en inglés: el modelo puede integrarse con `transformers` y una plantilla de chat estándar para construir un chatbot de investigación con pocas líneas de código, adecuado para validar flujos de conversación multi-turno antes de invertir en modelos mayores.
+- Experimentación académica con fine-tunes de Qwen2: al ser un fine-tune sobre una base conocida, sirve como punto de comparación en estudios sobre el efecto del ajuste fino en el estilo de respuesta, siempre que se documente su procedencia.
+- Despliegue en hardware de consumo: con carga en 4 bits (aproximadamente 8 GB de VRAM según el autor), puede ejecutarse en GPUs de gama media para demos locales y pruebas de concepto sin infraestructura dedicada.
+- Generación de explicaciones y material divulgativo: para tareas de resumen y explicación de conceptos en inglés donde no se requiera precisión factual crítica y se disponga de revisión humana.
+- Asistencia a la programación en entornos controlados: puede emplearse para sugerencias de código y explicaciones en un IDE o pipeline interno, con revisión obligatoria del output y sin exposición directa a usuarios finales.
+- Evaluación comparativa de robustez: útil como caso de estudio de modelos publicados sin benchmarks ni licencia, para ilustrar la importancia de la trazabilidad en la selección de modelos open source.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, y no se han localizado evaluaciones independientes del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16/fp16: aproximadamente 15,2 GB solo para pesos, más overhead de KV cache y activaciones; en la práctica se recomienda al menos 24 GB para contexto moderado.
-- VRAM estimada en cuantización de 8 bits: en torno a 8-9 GB para pesos, con margen adicional para el contexto.
-- VRAM estimada en cuantización de 4 bits: en torno a 4-5 GB para pesos, aunque no se han publicado pesos GGUF/AWQ/GPTQ oficiales.
-- GPU recomendadas: A100 40/80 GB, H100 para serving de alta concurrencia; RTX 4090 (24 GB) para bf16 en single-GPU; A10G/L4 (24 GB) para despliegues moderados.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en bf16 y en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) con cuantización a 8 bits.
-- Opciones de despliegue: transformers, text-generation-inference (declarado en los tags), vLLM y llama.cpp/Ollama previa conversión a GGUF (no se proporcionan pesos GGUF oficiales).
-- Latencia y throughput: no disponible (sin datos publicados).
+- VRAM estimada en F16: aproximadamente 15,2 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda 16 GB o más, tal como indica el autor.
+- VRAM estimada en 4 bits (bitsandbytes): alrededor de 8 GB según la model card, con margen adicional recomendable para contexto y activaciones.
+- GPU recomendadas para F16: A100 40 GB, H100, L40S o RTX 4090 (24 GB). Para 4 bits: RTX 4070/4080, RTX 3090 o superiores.
+- GPU de consumo: cabe en RTX 4090 en F16 y en GPUs de 8-12 GB en 4 bits; no cabe en GPUs de 6 GB o menos ni en la mayoría de iGPU.
+- Opciones de despliegue: `transformers` (documentado por el autor), text-generation-inference y endpoints compatibles (según tags). No hay confirmación de soporte GGUF/llama.cpp ni de Ollama; al no publicarse pesos GGUF en el repo, su uso en llama.cpp requeriría conversión manual.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
+| Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Evaryx-7b | ~7,6B | no disponible | no disponible | Hugging Face | no |
-| Qwen2-7B | ~7,6B | 131.072 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial) | Hugging Face | si |
-| Mistral-7B-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | Hugging Face | si |
-| Llama-3.1-8B | ~8B | 131.072 tokens | Llama 3.1 Community License | Hugging Face | si |
+| Evaryx-Core (`EvansDeveloper/evaryx-7b`) | 7,6 B | no disponible | no | no disponible | Hugging Face, safetensors F16 |
+| Qwen2-7B (base presumible) | 7,6 B | 131.072 tokens (según documentación oficial de Qwen2) | sí, publicados por el autor original | Apache 2.0 (Qwen2-7B) | Hugging Face, múltiples formatos |
+| Mistral-7B-v0.3 | 7,2 B | 32.768 tokens | sí, publicados por el autor original | Apache 2.0 | Hugging Face, GGUF, etc. |
+| Llama 3.1 8B | 8,0 B | 131.072 tokens | sí, publicados por el autor original | Llama 3.1 Community License | Hugging Face, GGUF, etc. |
 
-La comparativa se limita a datos públicos de los modelos alternativos; para Evaryx-7b no hay información verificable de contexto, licencia ni rendimiento, por lo que la comparación cuantitativa no es posible.
+La comparación se ofrece como referencia de categoría; los datos de los modelos alternativos provienen de su documentación oficial y no de una evaluación conjunta con Evaryx-Core. No existen mediciones que permitan afirmar que Evaryx-Core iguale o supere a su base Qwen2.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de transformers sin completar: no hay información sobre sesgos, datos de entrenamiento ni evaluación de riesgos.
-- Riesgo de alucinación no cuantificado: al no existir benchmarks ni evaluaciones publicadas, no se puede estimar la fiabilidad factual del modelo.
-- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar con el autor o verificar los términos antes de cualquier despliegue en producción.
-- Idiomas no declarados: no hay garantía de calidad en castellano ni en otros idiomas distintos del inglés (si es que el modelo fue entrenado principalmente en inglés).
-- Contexto no documentado: se desconoce la ventana máxima de contexto, lo que impide planificar casos de uso con documentos largos.
-- Sin pesos cuantizados oficiales: la conversión a GGUF/AWQ/GPTQ para despliegue en hardware limitado debe realizarla el usuario bajo su propio riesgo.
-- Procedencia incierta: el tag `qwen2` sugiere una base Qwen2, pero no se confirma el modelo base ni el proceso de ajuste, lo que dificulta la trazabilidad y la reproducibilidad.
-- Fecha de creación futura en los metadatos (2026-11-12): conviene verificar la integridad del repositorio y la autenticidad del autor antes de confiar en los pesos.
+- Ausencia total de benchmarks: no hay evidencia publicada de que el fine-tune mejore a su base; es posible que degrade capacidades respecto a Qwen2-7B original.
+- Licencia no disponible: no se puede determinar si el uso comercial está permitido. Esto bloquea de facto cualquier despliegue en producción empresarial hasta que el autor lo aclare.
+- Idiomas no verificados: solo se declara inglés; el comportamiento en castellano u otros idiomas es desconocido y probablemente deficiente.
+- Contexto no documentado: se desconoce la ventana máxima efectiva; asumir la de Qwen2-7B (131.072 tokens) sin confirmación es arriesgado.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa con aparente seguridad; la model card recomienda verificar outputs en contextos médicos, legales o financieros.
+- Sesgos: no documentados ni evaluados; al desconocerse el dataset de fine-tuning, no se puede descartar la introducción de sesgos específicos.
+- Procedencia del fine-tune no confirmada: el autor no indica qué checkpoint exacto de Qwen2 sirve de base ni el proceso de ajuste, lo que dificulta la reproducibilidad.
+- Adopción mínima (248 descargas, 1 like): sin comunidad que reporte fallos ni validación cruzada.
+- Repositorio de 15,2 GB: requiere espacio en disco considerable y descarga lenta en conexiones modestas.
+- Formato limitado: no se ofrecen GGUF ni otras cuantizaciones listas para usar, lo que complica el despliegue en entornos sin GPU.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/EvansDeveloper/evaryx-7b
-- Documentación de Qwen2 (referencia de arquitectura, no confirmada como base): https://huggingface.co/docs/transformers/model_doc/qwen2
-- Text Generation Inference: https://github.com/huggingface/text-generation-inference
-- Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
-- Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700
+- Hugging Face: https://huggingface.co/EvansDeveloper/evaryx-7b
+- Model card del autor (referenciada en el repositorio): incluida en el README del propio repositorio de Hugging Face.
+- Documentación de Qwen2 (base arquitectónica presumible): no disponible en la información proporcionada.
+- Paper, blog, repositorio de código o demo oficial: no disponibles en la información proporcionada.

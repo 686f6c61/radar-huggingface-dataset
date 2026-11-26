@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64 · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64",
-      "snippet": "nchapman / Qwen3.8-27B-W4A16-HGPTQ-g64 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 gptq hadamard quip w4a16 compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2 · Hugging Face",
-      "url": "https://huggingface.co/ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2",
-      "snippet": "Qwen3.8-27B W4A16 + DFlash2 — consolidated bundle Three pinned upstream components in one download: the target model and fast extras at the repository root, with the DFlash2 drafter in draft/."
-    }
-  ]
+  "sources": []
 }

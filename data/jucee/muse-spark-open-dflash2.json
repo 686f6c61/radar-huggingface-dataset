@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "jucee/Muse-Spark-Open-DFlash2",
+  "slug": "jucee-muse-spark-open-dflash2",
+  "author": "jucee",
+  "url": "https://huggingface.co/jucee/Muse-Spark-Open-DFlash2",
+  "created_at": "2026-11-25T23:18:59.000Z",
+  "updated_at": "2026-11-25T23:25:38.000Z",
+  "license": "nvidia-open-model-agreement-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "jucee",
+    "apple-silicon",
+    "metal",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4384162432,
+  "parameters_human": "4.38B",
+  "storage_bytes": 8768333792,
+  "storage_human": "8.8 GB",
+  "context_length": null,
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Does anyone have chaturbate chat logs : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/mm6qj6/does_anyone_have_chaturbate_chat_logs/",
+      "snippet": "Apr 7, 2021 · Archived post. New comments cannot be posted and votes cannot be cast. Share Sort by: Best Open comment sort …"
+    }
+  ]
+}

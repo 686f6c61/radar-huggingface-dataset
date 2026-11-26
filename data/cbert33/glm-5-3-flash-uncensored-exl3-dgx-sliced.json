@@ -61,31 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
-      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
-      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
-    },
-    {
-      "title": "chatgpt-api · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/chatgpt-api",
-      "snippet": "Sep 10, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
-    },
-    {
-      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
-      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
-      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
-    },
-    {
-      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
-      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
-      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
-    },
-    {
-      "title": "Supported AI models in GitHub Copilot - GitHub Docs",
-      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
-      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models may …"
-    }
-  ]
+  "sources": []
 }

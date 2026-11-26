@@ -47,31 +47,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Speech Recognition",
-      "dataset": "LibriSpeech (clean)",
-      "metric": "Test Clean WER",
-      "value": 3.76
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "LibriSpeech (other)",
-      "metric": "Test Other WER",
-      "value": 8.64
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "VoxPopuli (en)",
-      "metric": "Test WER",
-      "value": 4.01
-    },
-    {
-      "task": "Speech Recognition",
-      "dataset": "AMI (cleaned)",
-      "metric": "Test WER",
-      "value": 14.44
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

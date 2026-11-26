@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Woleworks/lexicorder-mt-ja-en",
+  "slug": "woleworks-lexicorder-mt-ja-en",
+  "author": "Woleworks",
+  "url": "https://huggingface.co/Woleworks/lexicorder-mt-ja-en",
+  "created_at": "2026-11-26T03:33:47.000Z",
+  "updated_at": "2026-11-26T03:34:03.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnx",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "int8",
+    "ja",
+    "en",
+    "base_model:Mitsua/elan-mt-bt-ja-en",
+    "base_model:quantized:Mitsua/elan-mt-bt-ja-en",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94783920,
+  "storage_human": "95 MB",
+  "context_length": null,
+  "base_model": "Mitsua/elan-mt-bt-ja-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

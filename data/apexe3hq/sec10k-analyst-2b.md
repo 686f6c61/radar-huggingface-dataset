@@ -1,99 +1,99 @@
 # APEXE3HQ/sec10k-analyst-2b
 
 ## Resumen
+SEC 10-K Analyst 2B es un modelo especializado en la lectura y el razonamiento sobre informes anuales 10-K presentados ante la SEC (Securities and Exchange Commission) de Estados Unidos. Lo desarrolla APEXE3HQ y parte de Qwen3.5-2B como modelo base, sobre el que se aplica un ajuste fino supervisado (SFT) seguido de optimización por preferencias (DPO), con el resultado fusionado en los pesos y cuantizado a 4 bits (Q4_K_M). El modelo resuelve un problema concreto: extraer cifras exactas (ingresos, beneficio neto, flujo de caja, deuda, arrendamientos, ingresos diferidos, impuestos, recompras de acciones) de documentos financieros extensos, con citas a la fuente y capacidad de rechazar preguntas que un 10-K no puede responder.
 
-SEC 10-K Analyst 2B es un modelo especializado en responder preguntas sobre informes anuales 10-K presentados ante la SEC (Securities and Exchange Commission) de Estados Unidos. Lo desarrolla APEXE3HQ y parte del modelo base Qwen/Qwen3.5-2B, sobre el que se aplicaron fine-tuning supervisado (SFT) y optimización por preferencias (DPO), con el resultado fusionado en los pesos y cuantizado a 4 bits (Q4_K_M).
+La propuesta técnica más destacable es su arquitectura de "una base, nueve especialistas": sobre un único base cuantizado a 4 bits se montan varios adaptadores LoRA en F16 que cubren roles distintos (planificador, redactor, selector de etiquetas, lectura de secciones y respuestas en prosa). Según el autor, esta configuración de 2B parámetros supera a Qwen3.5-27B en precisión sobre un conjunto de 87 preguntas retenidas (84 frente a 72 respuestas correctas), con solo 2,2 GB de pesos en disco y capacidad de ejecutarse en una GPU de 8 GB.
 
-El modelo resuelve un problema concreto: extraer cifras exactas (ingresos, beneficio neto, flujo de caja, deuda, impuestos, recompras) de documentos financieros extensos, distinguir partidas que se confunden con facilidad (gasto fiscal frente a impuestos pagados), calcular magnitudes derivadas (margenes, variaciones interanuales) y citar cada dato a su línea de origen. Su relevancia radica en que, según la model card, con solo 2B parámetros y cuantización de 4 bits supera a Qwen3.5-27B en precisión sobre un conjunto de 87 preguntas retenidas (84 frente a 72 aciertos), ocupando 2,2 GB en disco frente a 54 GB.
+Es relevante ahora porque demuestra que un ajuste fino bien dirigido con datos verificados automáticamente y cuantización agresiva puede batir a modelos generales mucho mayores en dominios estrechos, abaratando el despliegue en producción. El modelo tiene 1.942.653.248 parámetros totales, licencia Apache 2.0 y solo soporta inglés.
 
-La arquitectura de despliegue es singular: un único base afinado compartido por nueve adaptadores LoRA especializados (planificador, redactor, selector de etiquetas con cuatro adaptadores y tres roles de texto), orquestados por una aplicación que conecta las etapas. El modelo está pensado para ejecutarse en una sola GPU de 8 GB o más, lo que lo hace viable en hardware de consumo.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-2B), con adaptadores LoRA especializados sobre un base comun |
-| Parametros totales | 1.942.653.248 (aproximadamente 2B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (base) + adaptadores LoRA en F16 |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer (base Qwen3.5-2B con SFT + DPO fusionados; adaptadores LoRA por rol) |
+| Parámetros totales | 1.942.653.248 (1,94 B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q4_K_M (base, 4 bits) y adaptadores LoRA en F16 |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (base y adaptadores LoRA en GGUF F16) |
+| Formato de pesos | GGUF (base Q4_K_M y adaptadores LoRA GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3.5-2B, un transformer decoder-only de aproximadamente 1.942 millones de parámetros. El pipeline de entrenamiento consta de dos fases sobre el base: primero SFT para enseñar al modelo a leer informes SEC, después DPO para ajustar preferencias. El resultado se fusiona en los pesos y se cuantiza a Q4_K_M (1,31 GB). Sobre ese base compartido se entrenan nueve adaptadores LoRA independientes, cada uno responsable de una etapa del razonamiento: planificador (entrenado con entropía cruzada sobre 3.072 planes verificados), redactor (entropía cruzada más destilación KL desde Qwen3.5-27B sobre 1.042 respuestas auditadas), selector de etiquetas (cuatro adaptadores: primera pasada, torneo y dos jueces) y tres roles de texto entrenados con SFT.
+El modelo se construye sobre Qwen3.5-2B, un transformer denso de 1,94 B de parámetros. El proceso de ajuste parte de SFT y continúa con DPO para especializar el modelo en la lectura de informes 10-K. El resultado se fusiona en los pesos y se cuantiza a Q4_K_M (1,31 GB de base). Sobre esa base compartida se entrenan nueve adaptadores LoRA en F16 que actúan como especialistas independientes: un planificador (router) entrenado con entropía cruzada sobre 3.072 planes verificados; un redactor (writer) entrenado con entropía cruzada más destilación KL desde Qwen3.5-27B sobre 1.042 respuestas auditadas; un selector de etiquetas compuesto por cuatro adaptadores (primera pasada, torneo y dos jueces); y tres roles de texto entrenados con SFT (prosa, lectura de secciones y búsqueda de cifras).
 
-La innovación principal es la disciplina de verificación de datos: cada ejemplo de entrenamiento del planificador y del redactor pasó un comprobador automático estricto que localiza la fila y el año correctos en la fuente citada. Dos auditorías independientes intentaron romperlo; el comprobador final rechaza las 140 respuestas deliberadamente incorrectas diseñadas para engañarlo y acepta las 1.530 respuestas de referencia correctas. El planificador, además, rechazó los aproximadamente 22.700 planes deliberadamente corruptos contra los que se probó. El conjunto de datos incluye un snapshot de informes 10-K del S&P 500 (3,8 GB) con cifras verificadas, hechos XBRL y pasajes.
+La innovación principal es el control de calidad del dataset: cada ejemplo de entrenamiento del planificador y del redactor pasó un verificador automático estricto que localiza la fila y el año correctos en la fuente citada. Según el autor, dos auditorías independientes intentaron romper el verificador: rechazó las 140 respuestas deliberadamente erróneas y aceptó las 1.530 respuestas de referencia correctas. El planificador también se validó contra aproximadamente 22.700 planes deliberadamente corruptos, todos rechazados. El autor afirma que el estudiante (2B) supera a su profesor (Qwen3.5-27B) en el conjunto retenido, 84 frente a 72.
 
 ## Capacidades
 
-- Extracción de cifras exactas reportadas: ingresos, beneficio neto, flujo de caja, deuda, arrendamientos, ingresos diferidos, impuestos y recompras de acciones.
-- Distinción de desgloses y partidas similares: corrientes / no corrientes / totales, y pares confundibles como gasto fiscal frente a impuestos pagados.
-- Cálculo de cifras derivadas: diferencias, márgenes y crecimiento, computados y verificados.
-- Veredictos sobre salud financiera respaldados por las cifras extraídas.
-- Manejo de preguntas naturales: seguimientos conversacionales, nombres de empresa mal escritos, años con formato "FY25" y años omitidos.
-- Rechazo explícito de preguntas que un 10-K no puede responder (precios en vivo, periodos futuros), explicando el motivo.
-- Citación de cada cifra a su línea de origen en el documento.
-- Selector de etiquetas que localiza la línea exacta del informe sobre la que versa la pregunta.
-- Capacidades conversacionales multi-turno dentro del dominio financiero.
-- No dispone de vision, audio ni tool calling genérico según la información disponible.
+- Extracción de cifras exactas reportadas en informes 10-K: ingresos, beneficio neto, flujo de caja, deuda, arrendamientos, ingresos diferidos, impuestos y recompras de acciones.
+- Manejo de desgloses y pares confundibles: corriente / no corriente / total, y distinciones como gasto por impuestos frente a impuestos pagados.
+- Cálculo de cifras derivadas: diferencias, márgenes y crecimiento, calculados y verificados.
+- Emisión de veredictos sobre salud financiera respaldados por las cifras.
+- Comprensión de preguntas naturales: seguimientos conversacionales, nombres de empresa mal escritos, años con formato "FY25" y años omitidos.
+- Rechazo razonado de preguntas que un 10-K no puede responder (precios en vivo, periodos futuros), explicando el motivo.
+- Citación de cada cifra a su fuente dentro del documento.
+- Selector de etiquetas que localiza la línea exacta del informe solicitada por la pregunta.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente, aunque el pipeline interno encadena planificador, selector y redactor.
+- Capacidades multilingües: solo inglés.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Análisis fundamentalista automatizado: el modelo extrae ingresos, beneficio neto y flujo de caja de un 10-K concreto y cita cada cifra a su línea, permitiendo a un analista verificar el dato en segundos en lugar de buscar en un documento de decenas de páginas.
-- Due diligence financiera: comparación de partidas entre años (margenes, crecimiento, variaciones) calculadas y verificadas por el modelo, útil en procesos de fusiones y adquisiciones donde la exactitud de las cifras es crítica.
-- Auditoría interna y compliance: distinción entre pares confundibles (gasto fiscal frente a impuestos pagados) y desgloses corrientes/no corrientes, reduciendo el riesgo de transcribir la partida equivocada en informes regulatorios.
-- Asistente conversacional para equipos de finanzas: gestión de preguntas de seguimiento multi-turno sobre un mismo informe, incluyendo aclaraciones sobre años omitidos o nombres de empresa mal escritos.
-- Generación de resúmenes de salud financiera: el modelo emite veredictos respaldados por las cifras extraídas, adecuado para informes preliminares que un humano revisa después.
-- Despliegue en estación de trabajo con GPU de consumo: al caber en 8 GB de VRAM (probado en RTX 4060 Ti 8 GB, RTX 4090, RTX A4000 y DGX Spark), permite a un analista individual ejecutar el pipeline en local sin depender de infraestructura de datacenter.
-- Filtrado y rechazo de preguntas fuera de alcance: en un chatbot financiero, el modelo declina preguntas sobre precios en vivo o periodos futuros y explica por qué, evitando respuestas inventadas.
+- Análisis fundamentalista automatizado: el modelo extrae ingresos, beneficio neto y flujo de caja de un 10-K concreto y cita la línea exacta, lo que permite generar fichas financieras auditables sin revisión manual línea a línea.
+- Due diligence en fusiones y adquisiciones: un analista puede consultar deuda, arrendamientos e ingresos diferidos de varias empresas del S&P 500 y obtener cifras con desglose corriente / no corriente, reduciendo el tiempo de revisión documental.
+- Verificación de cálculos financieros: el modelo calcula márgenes, variaciones interanuales y crecimiento a partir de las cifras reportadas y comprueba el resultado, útil para validar modelos de valoración propios.
+- Asistente conversacional para equipos de finanzas: al soportar seguimientos y nombres de empresa mal escritos, puede integrarse en un chat interno donde los analistas preguntan en lenguaje natural sobre informes ya cargados.
+- Detección de riesgos y salud financiera: el modelo emite veredictos respaldados por cifras sobre la situación de una compañía, adecuado para alertas tempranas en carteras o para informes de riesgo.
+- Filtrado y rechazo de consultas fuera de alcance: en un asistente financiero desplegado, el modelo declina preguntas sobre precios en vivo o periodos futuros y explica por qué, lo que evita respuestas inventadas en producción.
+- Procesamiento por lotes de informes 10-K: con 2,2 GB de pesos y ejecución en una GPU de 8 GB, se puede desplegar en una máquina modesta para procesar el snapshot del S&P 500 incluido en el repositorio (3,8 GB de datos verificados, hechos XBRL y pasajes).
 
 ## Benchmarks y rendimiento
 
 | Benchmark | SEC 10-K Analyst 2B | Qwen3.5-27B |
 |---|---|---|
-| Preguntas retenidas (87, correctas) | 84 | 72 |
-| Test sellado (150 preguntas, v1.2) | 135 | No disponible |
-| Comprobador automático original (sobre 87) | 81 | No disponible |
-| Qwen3.5-2B sin entrenar (sobre 87) | No aplica | 6 |
-| Selector de etiquetas frente a Jev 1.14 (3.075 preguntas verificadas) | 96,2 % | 94,8 % (Jev 1.14) |
+| Preguntas retenidas correctas (87, revisión ciega con rúbrica fija) | 84 | 72 |
+| Mismo conjunto, verificador automático original | 81 | no disponible |
+| Qwen3.5-2B sin entrenar, mismo conjunto (verificador automático) | 6 de 87 (modelo base) | — |
+| Test sellado (150 preguntas, puntuado una vez por versión) | 135 correctas (v1.2) | no disponible |
+| Selector de etiquetas frente a Jev 1.14 (3.075 preguntas verificadas, test sellado) | 96,2 % | 94,8 % (Jev 1.14) |
 
-Los datos provienen de la model card del autor. Las 87 preguntas retenidas y sus informes no se usaron en entrenamiento; cuatro revisores independientes puntuaron a ciegas con rúbrica fija y respuestas sin etiquetar. El test sellado de 150 preguntas se puntuó una sola vez por versión.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores proceden de evaluaciones propias del autor sobre conjuntos específicos de preguntas sobre informes 10-K.
 
 ## Requisitos de hardware
 
-- VRAM estimada: cabe en una GPU de 8 GB o más. El base Q4_K_M ocupa 1,31 GB y los adaptadores LoRA suman aproximadamente 67 MB cada uno (los cuatro del selector de etiquetas, 135 MB cada uno), más el snapshot de datos de 3,8 GB en disco.
-- GPU recomendadas: RTX 4060 Ti 8 GB y RTX 4090 (probadas según la model card); v1.2 también probado en RTX A4000 y DGX Spark. Para Qwen3.5-27B se requiere una GPU de clase 80 GB.
-- Cabe en GPU de consumo: sí, en RTX 4060 Ti 8 GB y superiores.
-- Opciones de despliegue: llama.cpp (formato GGUF y adaptadores LoRA), pipeline propio incluido en el repositorio (`run.sh` instala todo, arranca el modelo y abre la aplicación web en http://127.0.0.1:7860). También puede ejecutarse solo con el procesador, con rendimiento lento según la model card.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,2 GB de pesos en disco (base Q4_K_M de 1,31 GB más adaptadores LoRA F16 de 67 MB cada uno, y 4 × 135 MB para el selector de etiquetas); el autor indica que funciona en una GPU con 8 GB o más.
+- GPU recomendadas: RTX 4060 Ti 8 GB y RTX 4090 (probadas por el autor); la versión v1.2 también se probó en RTX A4000 y DGX Spark.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM.
+- También puede ejecutarse solo con CPU (el autor lo describe como lento).
+- Opciones de despliegue: llama.cpp (formato GGUF y adaptadores LoRA GGUF); el repositorio incluye un script `run.sh` que instala dependencias, arranca el modelo, lo comprueba y abre una aplicación web en http://127.0.0.1:7860. Compatibilidad con vLLM, Ollama o TGI: no disponible en la información proporcionada.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento (87 preguntas) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento en 10-K (87 preguntas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEC 10-K Analyst 2B | 2B (1.942.653.248) | No disponible | 84/87 | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3.5-27B | 27B | No disponible | 72/87 | No disponible | No disponible |
-| Qwen3.5-2B (sin entrenar) | 2B | No disponible | 6/87 | No disponible | No disponible |
-| Jev 1.14 (modelo comercial de decisión) | No disponible | No disponible | 94,8 % en selector de etiquetas (3.075 preguntas) | Comercial | No disponible |
+| SEC 10-K Analyst 2B | 1,94 B | no disponible | 84 correctas (revisión ciega) | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.5-27B | 27 B | no disponible | 72 correctas (revisión ciega) | no disponible | no disponible |
+| Qwen3.5-2B (base sin entrenar) | 1,94 B | no disponible | 6 de 87 (verificador automático) | no disponible | no disponible |
+| Jev 1.14 (modelo comercial de decisión) | no disponible | no disponible | 94,8 % en selector de etiquetas (frente a 96,2 %) | comercial | comercial |
 
-La comparativa se limita a los modelos citados en la model card. No se dispone de datos de otros modelos especializados en informes SEC en la información proporcionada.
+La comparación se limita a los datos publicados por el autor. No se dispone de información sobre otros modelos especializados en informes 10-K para una comparativa más amplia.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés; no soporta consultas en castellano ni otros idiomas.
-- Dominio restringido: entrenado exclusivamente para informes 10-K de la SEC; su uso fuera de ese dominio no está validado.
-- Contexto: la longitud de contexto no está documentada, lo que impide planificar con precisión el manejo de documentos muy extensos.
-- Alucinación: aunque el pipeline incluye verificación y citación, el modelo puede producir cifras incorrectas en preguntas ambiguas o informes atípicos; la model card no reporta tasas de error fuera del conjunto de evaluación.
-- Sesgos: no se documentan sesgos específicos en la información disponible; al entrenarse sobre informes del S&P 500, la distribución de empresas cubiertas es limitada a grandes cotizadas estadounidenses.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-2B.
-- Producción: el pipeline depende de varios adaptadores y de una aplicación de orquestación; su robustez fuera de los entornos probados (RTX 4060 Ti, RTX 4090, RTX A4000, DGX Spark) no está verificada.
-- Datos: el snapshot de informes 10-K del S&P 500 (3,8 GB) puede quedar desactualizado respecto a presentaciones posteriores.
+- Sesgos conocidos: no disponible en la información proporcionada; al entrenarse sobre informes 10-K de empresas del S&P 500, puede heredar sesgos de ese universo corporativo.
+- Riesgo de alucinación: el autor afirma que el verificador automático rechaza respuestas incorrectas y que el modelo cita cada cifra, pero no se han publicado tasas de error independientes fuera de los conjuntos del propio autor.
+- Limitaciones de contexto o idioma: solo soporta inglés; la longitud de contexto no está especificada, lo que impide valorar el manejo de informes 10-K completos en una sola pasada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen3.5-2B, no detallada en la información disponible.
+- Caveats para producción: las evaluaciones proceden del autor y de conjuntos de preguntas propios; el pipeline requiere coordinar varios adaptadores LoRA y una aplicación web incluida, lo que añade complejidad operativa. La compatibilidad con servidores de inferencia estándar (vLLM, TGI) no está confirmada.
+- El modelo declina preguntas fuera del alcance de un 10-K, lo que puede resultar restrictivo si se espera un asistente financiero generalista.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/APEXE3HQ/sec10k-analyst-2b
-- Conjunto de evaluación retenido: https://huggingface.co/datasets/usmane3/sec10k-heldout-87
+- Hugging Face: https://huggingface.co/APEXE3HQ/sec10k-analyst-2b
+- Dataset de evaluación retenido: https://huggingface.co/datasets/usmane3/sec10k-heldout-87
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

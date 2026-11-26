@@ -5,7 +5,7 @@
   "author": "Lysandra999",
   "url": "https://huggingface.co/Lysandra999/Senik-Omni-Morph-1.7B-Hybrid",
   "created_at": "2026-11-24T00:13:05.000Z",
-  "updated_at": "2026-11-24T04:16:33.000Z",
+  "updated_at": "2026-11-26T00:10:56.000Z",
   "license": "senik-proprietary-v1",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

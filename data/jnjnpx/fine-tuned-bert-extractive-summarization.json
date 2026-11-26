@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Jnjnpx/fine-tuned-bert-extractive-summarization",
+  "slug": "jnjnpx-fine-tuned-bert-extractive-summarization",
+  "author": "Jnjnpx",
+  "url": "https://huggingface.co/Jnjnpx/fine-tuned-bert-extractive-summarization",
+  "created_at": "2024-06-19T17:46:20.000Z",
+  "updated_at": "2026-11-26T02:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "lo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "lao-extractive-summarization",
+    "lo",
+    "base_model:Twitter/twhin-bert-base",
+    "base_model:finetune:Twitter/twhin-bert-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 278830082,
+  "parameters_human": "278.8M",
+  "storage_bytes": 24554691845,
+  "storage_human": "24.6 GB",
+  "context_length": null,
+  "base_model": "Twitter/twhin-bert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

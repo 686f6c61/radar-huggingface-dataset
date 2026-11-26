@@ -2,122 +2,98 @@
 
 ## Resumen
 
-Endexis (`endexis-qwen3-0.6b-dpo-merged`, versión 2.3.0) es un modelo de lenguaje especializado en la interpretación de datos clínicos y la compilación de artefactos de informática sanitaria. Lo desarrolla NorviTech y parte de `Qwen/Qwen3-0.6B`, sobre el que se aplica un ajuste fino supervisado (SFT) en dos etapas seguido de un DPO anclado en NLL. Su función es traducir peticiones en lenguaje natural o estructurado a cuatro superficies de salida: SQL V500 ejecutable en SQLite, XML `<cclquery>`, código CCL (`.prg`) y plantillas de informe Eclipse BIRT 4.4.2 (`.rptdesign`), además de ficheros `.daquery` / `.dareport` de Discern Analytics 2.0.
+Endexis (`endexis-qwen3-0.6b-dpo-merged`, versión 2.5.0) es un modelo de lenguaje especializado en informática clínica, desarrollado por NorviTech sobre la base de `Qwen/Qwen3-0.6B`. Su función concreta es interpretar datos clínicos y compilar artefactos propios de entornos sanitarios: consultas e informes de Discern Analytics 2.0 (DA2) en formato `.daquery` y `.dareport`, programas en Cerner Command Language (CCL) con extensión `.prg`, y diseños de informe de Eclipse BIRT 4.4.2 (`.rptdesign`). No es un modelo de propósito general, sino un intérprete de dominio muy acotado.
 
-El modelo es deliberadamente pequeño: 596.049.920 parámetros en `BF16`, lo que permite despliegues de baja latencia (p50 de 191,81 ms en la variante `Q4_K_M` sobre CUDA) y ejecución en hardware modesto. Está orientado a un nicho muy concreto: plantillas clínicas, de enfermería/MAR, dietética, censo/bed-board y ciclo de ingresos financiero, con aislamiento explícito entre conceptos clínicos y de facturación.
+La versión 2.5.0 incorpora una tarea nueva de reescritura de peticiones de cambio sobre ficheros DA2 ya subidos (`rewrite_upload_edit`), además de mejorar la generación de texto a DA2. El modelo se ha afinado con una única etapa de SFT (LoRA de rango 16, fusionada a BF16); la etapa de preferencias RPO-DPO se descartó porque empeoraba la pérdida de validación. El nombre del repositorio conserva `dpo` por compatibilidad histórica, aunque esa etapa no está incluida en los pesos publicados.
 
-Su relevancia actual radica en que demuestra un patrón de "compilador neuronal" con verificación simbólica determinista: la IR generada por el modelo se valida y repara contra verificadores de las cuatro superficies, lo que eleva la tasa de compilación end-to-end al 99,69 % en el holdout sellado, frente al 14,22 % de Pass@1 estricto sin rescate simbólico. Es un caso de estudio de cómo un modelo de 0,6B puede ser útil en producción cuando se combina con un sistema neuro-simbólico.
+Con 596 millones de parámetros, el modelo es deliberadamente pequeño: está pensado para ejecutarse en CPU o en GPU de gama baja con latencias de centenas de milisegundos, dentro de un pipeline determinista controlado por reglas. La licencia Apache 2.0 y la disponibilidad de pesos en safetensors y GGUF facilitan su integración en herramientas clínicas internas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3), ajuste fino con LoRA rank-16 fusionado en 7 proyecciones (`q, k, v, o, gate, up, down`), 196 tensores fusionados |
-| Parametros totales | 596.049.920 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-0.6B) |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | `BF16` (pesos fusionados), `Q8_0` GGUF (741,07 MB), `Q4_K_M` GGUF (378,32 MB) |
+| Tipos de cuantización | BF16 (safetensors), Q8_0 (GGUF), Q4_K_M (GGUF) |
 | Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors (BF16), GGUF (Q8_0 y Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only derivado de Qwen3-0.6B. El ajuste se realizó en dos etapas: primero un SFT sobre un corpus de 5.277 filas que cubre 36 plantillas clínicas, de enfermería/MAR, dietética/bathing, censo/bed-board y ciclo de ingresos, más 768 filas de una IR de compilación compacta (`NeuralCompilationIR`); después, un DPO anclado en NLL con 648 pares de preferencia contrastivos, `beta = 0.1` y `lambda_nll = 0.15`. La pérdida de entropía cruzada del SFT se mantuvo plana tras el DPO (`val_sft_loss_post_sft = 0.1137`, `val_sft_loss_post_dpo = 0.1137`), con una precisión de preferencia del 100 % y un margen de log-probabilidad medio de +3,4014.
+El modelo parte de `Qwen/Qwen3-0.6B`, un transformer decoder-only de 0,6 mil millones de parámetros, y se afina mediante LoRA de rango 16 fusionada a BF16. El entrenamiento consiste en una sola etapa de SFT sobre un corpus de 7.877 filas, de las cuales 2.600 corresponden a la nueva tarea de edición de subidas; se ejecutaron 922 pasos de optimizador. La pérdida de validación SFT final es de 0,1162 (perplejidad 1,123). Se intentó una etapa adicional de preferencias RPO-DPO sobre 1.298 pares, pero elevó la pérdida a 0,118, incumpliendo la condición de no empeorar, por lo que se descartó y se publica el modelo de la etapa 1.
 
-La innovación técnica no está en la arquitectura, sino en el pipeline: el modelo emite una IR neuronal que se compila a cuatro superficies verificables de forma determinista. La validación usa GroupKFold por familia de plantillas (5 folds, N = 132) para evitar fuga de datos entre plantillas. Las variantes cuantizadas preservan capas sensibles en `BF16` (SwiGLU `ffn_down` y `attn_output` en `Q8_0`) para mantener la fidelidad estructural: 99,24 % de acuerdo estructural CUDA y 99,96 % de Jaccard medio por elemento frente a `BF16` fusionado en evaluación disjunta (N = 132).
+La configuración, el tokenizador y la plantilla de chat son idénticos a los de la versión 2.3.0, lo que preserva la compatibilidad con el `Modelfile` y los enlaces de descarga existentes. La innovación principal no está en la arquitectura, sino en el diseño del sistema: el modelo solo reescribe mensajes que las reglas deterministas no han podido interpretar, y toda reescritura se valida contra esas reglas antes de mostrarse. La librería de compilación y verificación es `spencernorton/endexis` (v2.5.2), que actúa como capa de seguridad y control del output.
 
 ## Capacidades
 
-- Generación de IR de compilación neuronal a partir de peticiones en lenguaje natural o estructurado.
-- Compilación a SQL V500 ejecutable en SQLite y a XML `<cclquery>`.
-- Generación de código CCL (`.prg`) para Cerner Command Language.
-- Generación de plantillas de informe Eclipse BIRT 4.4.2 (`.rptdesign`).
-- Interpretación de ficheros `.daquery` / `.dareport` de Discern Analytics 2.0.
-- Refinamientos multi-turno estructurados y en lenguaje natural: `exclude_columns`, `exclude_filters`, `override_filters`.
-- Aislamiento de conceptos clínicos frente a conceptos de facturación (`Adj Post Prsnl`, `Prsnl Position`, `Adj Trans *`), con 0,00 % de tasa de fuga clínica-a-facturación en las trampas de colisión de conceptos del conjunto `Q8_0`.
-- Enrutamiento de dominio entre las familias de plantillas soportadas (precisión de dominio del 80,47 % en `Q4_K_M` y 81,56 % en `Q8_0` en el holdout sellado).
-- No se documentan capacidades de tool calling, agentes autónomos, visión, audio ni modo de razonamiento explícito.
+- Generación de texto a DA2: produce consultas `.daquery` e informes `.dareport` a partir de descripciones en lenguaje natural.
+- Compilación de CCL: genera programas `.prg` en Cerner Command Language.
+- Generación de informes BIRT: produce ficheros `.rptdesign` compatibles con Eclipse BIRT 4.4.2.
+- Reescritura de peticiones de cambio (`rewrite_upload_edit`): dado un resumen de un fichero DA2 subido, hasta tres mensajes previos y el último mensaje, devuelve el cambio en texto plano que ese mensaje implica, o `null` si no se solicita cambio.
+- Refinamiento multi-turno: soporta iteraciones de corrección sobre la salida generada (35 de 36 casos correctos en el conjunto de desarrollo).
+- Interpretación de datos clínicos con independencia del tenant (tenant-agnostic).
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- **Generación de informes clínicos operativos**: a partir de una petición como "informe de altas por servicio del último trimestre", el modelo emite la IR y el sistema la compila a SQL V500 y a plantilla BIRT, reduciendo el trabajo manual de construcción de `.rptdesign`.
-- **Migración y mantenimiento de consultas CCL**: el modelo traduce especificaciones en lenguaje natural a `.prg` de CCL, útil para equipos que mantienen código legado de Cerner y necesitan regenerar o documentar consultas.
-- **Automatización de extracción de datos de ciclo de ingresos**: con el aislamiento explícito entre conceptos clínicos y de facturación, se puede usar para construir consultas de ajustes de facturación (`Adj Post Prsnl`, `Adj Trans *`) sin confundirlos con personal asistencial.
-- **Asistente de refinamiento iterativo de informes**: gracias al soporte de `exclude_columns`, `exclude_filters` y `override_filters` multi-turno, encaja en una interfaz donde el analista ajusta un informe conversacionalmente sin reescribir la consulta desde cero.
-- **Validación previa en CI/CD de artefactos de analítica clínica**: el pipeline neuro-simbólico (modelo + verificadores) puede integrarse como paso de compilación que rechaza IR inválida antes de desplegar una consulta a producción, con una tasa de compilación end-to-end del 99,69 % en el holdout.
-- **Despliegue en entornos con hardware limitado**: con 378,32 MB en `Q4_K_M` y p50 de 191,81 ms en CUDA, es viable en estaciones de trabajo con GPU consumer o incluso en servidores modestos, algo relevante en hospitales con infraestructura restringida.
-- **Generación de esqueletos de consulta para formación**: sirve como herramienta docente para que analistas noveles vean la traducción de una especificación a SQL/CCL/BIRT verificable.
+- Generación de consultas DA2 en entornos Cerner: un analista describe en lenguaje natural qué datos clínicos necesita y el modelo produce el `.daquery` correspondiente, que luego se valida con la librería determinista antes de ejecutarse.
+- Migración de informes clínicos: a partir de la descripción de un informe existente, el modelo genera el `.rptdesign` de BIRT 4.4.2, reduciendo el trabajo manual de reconstrucción en una migración de plataforma.
+- Autoría de programas CCL: el modelo redacta `.prg` para tareas de extracción y transformación de datos en Cerner, con verificación posterior por reglas.
+- Asistente de edición sobre informes ya subidos: el usuario sube un `.dareport` y pide cambios en lenguaje coloquial ("quita la columna de habitación"); el modelo reescribe la petición en un cambio accionable que el sistema aplica si las reglas lo aceptan.
+- Despliegue en CPU dentro de herramientas internas: con GGUF Q4_K_M (396,7 MB) y latencias p50 de 522 ms en CPU de 8 hilos, puede integrarse en un servicio ligero sin GPU.
+- Prototipado y pruebas de regresión en pipelines de CI: al ser determinista con temperatura 0 y tener un holdout sellado, sirve para validar cambios en el compilador de DA2 y en las reglas de seguridad.
+- Formación interna: permite a nuevos analistas clínicos practicar la sintaxis de DA2, CCL y BIRT con ejemplos generados y validados automáticamente.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el holdout sellado post-freeze (`N = 640`, sin solapamiento Exact/Token-Bag/5-Gram Skeleton) y sobre el OOF de 5 folds (`N = 132`).
-
-| Metrica | v2.0.0 Q4_K_M (322 filas) | v2.3.0 Q4_K_M | v2.3.0 Q8_0 | v2.3.0 BF16 fusionado |
-|---|---|---|---|---|
-| IR válida parseada | 0,00 % | 95,16 % | 97,50 % | no disponible |
-| SQLite V500 + XML pass rate | 0,00 % | 95,00 % | 97,19 % | no disponible |
-| Compilación estricta 4 superficies (sin rescate) | 0,00 % | 75,47 % | 78,28 % | no disponible |
-| Tasa libre de contaminación | no disponible | 89,69 % | 90,78 % | no disponible |
-| Precisión de dominio | no disponible | 80,47 % | 81,56 % | no disponible |
-| Strict Pass@1 | 0,00 % | 14,22 % | 14,06 % | no disponible |
-| Latencia p50 | 464,25 ms | 191,81 ms | 209,24 ms | no disponible |
-
-| Metrica (OOF 5-fold, N = 132) | v2.0.0 | v2.3.0 |
+| Evaluación | Conjunto | Resultado |
 |---|---|---|
-| Strict Pass@1 | 0,00 % | 50,76 % |
-| Tasa de compilación del verificador de 4 superficies | no disponible | 94,70 % |
-| Precisión de enrutamiento de dominio | no disponible | 93,18 % |
-| Tasa libre de contaminación | no disponible | 94,70 % |
+| Reescritura de ediciones, acierto | holdout sellado, 460 mensajes con cambio, Q8_0 | 77,8 % correctas, 3,3 % incorrectas, bag F1 0,88, precisión 0,99 |
+| Reescritura de ediciones, acierto | mismo conjunto, Q4_K_M | 76,1 % correctas, 3,5 % incorrectas, bag F1 0,86 |
+| Reescritura de ediciones, sin cambio | 186 mensajes sin cambio | 0 % de reescrituras (sin la comprobación de reglas: 10,2 %) |
+| Texto a DA2, Strict Pass@1 | `oof_eval_v2_3`, N = 132, BF16 | 0,9924 (v2.3.0: 0,9697) |
+| Refinamiento multi-turno | mismo conjunto | 35/36 (v2.3.0: 32/36) |
+| Latencia p50 CPU | Q8_0, CPU compartida de 8 hilos | 730 ms |
+| Latencia p50 CPU | Q4_K_M, CPU compartida de 8 hilos | 522 ms |
 
-| Metrica (corpus completo fusionado, N = 132) | BF16 | Q8_0 | Q4_K_M |
-|---|---|---|---|
-| Strict Pass@1 | 96,97 % | 97,73 % | 89,39 % |
-| Element F1 | 96,82 % | 96,84 % | 95,81 % |
-
-| Metrica (Track B, sistema neuro-simbólico completo, N = 640) | Valor |
-|---|---|
-| SQLite V500 + XML + cumplimiento clínico/refinamiento | 100,00 % (640/640) |
-| Pass@1 verificado end-to-end en 4 superficies | 99,69 % (638/640) |
-| IR neuronal aceptada sin edición | 75,47 % |
-| IR neuronal reparada simbólicamente y aceptada | 19,38 % |
-| Fallback simbólico completo | 5,16 % |
-| Latencia wall-clock p50 / media | 210,12 ms / 232,82 ms |
-
-Gates adicionales: 100,00 % de `Acc@1` condicionada por dominio y 89,58 % incondicionada; 100,00 % de coincidencia exacta de `CODE_VALUE` en 144 valores de filtro del holdout; 100,00 % en 20 trampas adversariales V2 más 5 casos límite de SQLite, 14 escenarios congelados y 4 consultas de holdout.
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible. El holdout sellado post-freeze de v2.3.0 (`eval_postfreeze_v3`, N = 640) no se ha reevaluado con esta versión.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1,2 GB en `BF16` (596M parámetros), unos 0,8 GB en `Q8_0` y unos 0,4 GB en `Q4_K_M`, sin contar el contexto ni el runtime.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para `BF16`; el autor reporta latencias medidas en CUDA, sin especificar el modelo de GPU empleado.
-- Cabe en GPU consumer: sí, en cualquier tarjeta con 2 GB o más (GTX 1650, RTX 3050, RTX 4060, etc.), así como en CPU para las variantes GGUF.
-- Opciones de despliegue: `transformers` (pesos safetensors), llama.cpp / Ollama para los GGUF `Q8_0` y `Q4_K_M`. El modelo declara compatibilidad con endpoints. No se documenta soporte explícito de vLLM ni TGI.
-- Latencia y throughput: p50 de 191,81 ms y media de 214,22 ms por pasada única en `Q4_K_M` sobre CUDA (N = 132 OOF); p50 de 209,24 ms y media de 234,08 ms en `Q8_0` (N = 640); wall-clock completo del sistema Track B con p50 de 210,12 ms y media de 232,82 ms. El autor reporta una mejora de 10,98x en media frente a los 2.352,61 ms de la implementación PyTorch HTTP legada. No se publica throughput en tokens por segundo.
+- VRAM estimada: inferior a 2 GB en BF16 (pesos de 1,19 GB); unos 0,8 GB en Q8_0 y 0,4 GB en Q4_K_M.
+- GPU: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin aprovechar su capacidad.
+- CPU: viable en exclusiva; las latencias medidas (522-730 ms p50) corresponden a una CPU compartida de 8 hilos.
+- Despliegue: llama.cpp y Ollama mediante los GGUF publicados (el `Modelfile` existente sigue funcionando); transformers para los pesos safetensors; vLLM y TGI no están documentados para este modelo.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Endexis (este modelo) | 596M | no disponible | Compilador clínico DA2/CCL/BIRT con DPO | Apache 2.0 | Hugging Face, safetensors + GGUF |
-| Qwen/Qwen3-0.6B (base) | 596M | no disponible en la informacion proporcionada | LLM generalista | Apache 2.0 | Hugging Face |
-| Alternativas especializadas en código clínico | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Endexis v2.5.0 | 596 M | no disponible | DA2, CCL, BIRT, edición de DA2 | Apache 2.0 | HF (safetensors, GGUF) |
+| Qwen/Qwen3-0.6B | 596 M | no disponible | propósito general | Apache 2.0 | HF |
+| v2.3.0 de Endexis | 596 M | no disponible | DA2, CCL, BIRT (sin edición) | Apache 2.0 | HF (tag `v2.3.0`) |
 
-No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría en la información proporcionada; las métricas del autor son específicas de su pipeline de cuatro superficies y no son directamente trasladables a evaluaciones estándar como MMLU o HumanEval.
+No se dispone de datos sobre otros modelos especializados en DA2, CCL o BIRT en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de inglés; no se documentan capacidades multilingües.
-- La longitud de contexto no está especificada en la información disponible, lo que impide planificar despliegues con prompts largos.
-- El rendimiento está medido sobre un dominio muy acotado (36 plantillas y conceptos de DA2/CCL/BIRT); fuera de ese dominio no hay garantías y el enrutamiento de dominio cae al 80,47 % en el holdout, por lo que un 19,53 % de peticiones puede enrutarse mal.
-- El Strict Pass@1 sin rescate simbólico es bajo (14,22 % en `Q4_K_M`), de modo que el modelo no es fiable como generador autónomo de artefactos finales: requiere los verificadores deterministas del sistema Track B para alcanzar el 99,69 %.
-- La cuantización `Q4_K_M` degrada el Strict Pass@1 en el corpus completo (89,39 % frente a 96,97 % en `BF16`), por lo que en producción conviene validar la variante elegida contra el conjunto de plantillas propio.
-- Riesgo de alucinación en nombres de columnas, conceptos o rutas de plantilla no presentes en el corpus de entrenamiento; el autor mitiga parte de esto con reparación simbólica, pero el 5,16 % de fallback completo indica que hay casos que el modelo no resuelve.
-- No se documentan sesgos conocidos ni evaluaciones de sesgo; al ser un modelo de dominio técnico, el riesgo principal es de corrección, no de toxicidad.
-- Licencia Apache 2.0: permite uso comercial, pero el aviso legal del autor indica que Endexis es un proyecto de interoperabilidad independiente, sin afiliación a los fabricantes de los sistemas referenciados (DA2, CCL, BIRT); conviene revisar las marcas y los términos de las plataformas de destino.
-- El repo ocupa 6,8 GB, aunque los pesos útiles son mucho menores; hay que filtrar qué ficheros descargar.
+- El holdout de edición comparte con el entrenamiento las palabras llanas de cada columna: evalúa frases, ficheros e historiales nuevos, pero no vocabulario nuevo para una columna.
+- Los pares de preferencia eran negativos débiles: el modelo SFT ya prefería todas las respuestas elegidas en los pares de validación, lo que motivó descartar la etapa DPO.
+- El mensaje llega al modelo tal cual se escribe, incluidos nombres de pacientes; las reglas rechazan cualquier filtro que seleccione a un paciente, pero el modelo en sí no aplica esa salvaguarda.
+- El resultado del 0 % de reescrituras en mensajes sin cambio es optimista: la comprobación de reglas que lo garantiza se escribió después de observar los fallos.
+- Solo se documenta inglés como idioma; no hay datos sobre otros idiomas.
+- Riesgo de alucinación en la generación de DA2, CCL y BIRT fuera de los patrones vistos en entrenamiento; el diseño del sistema exige validación por reglas, no se debe usar la salida sin comprobar.
+- La licencia Apache 2.0 permite uso comercial, pero el aviso legal indica que el proyecto no está afiliado, respaldado ni patrocinado por Oracle, Cerner ni la Eclipse Foundation; conviene revisar `LEGAL.md` antes de integrarlo en productos.
+- El nombre del repositorio incluye `dpo` aunque la etapa de preferencias no está en los pesos publicados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/NorviTech/endexis-qwen3-0.6b-dpo-merged
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/endexis-qwen3-0.6b-dpo-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.
+- Librería de compilación y verificación: https://github.com/spencernorton/endexis
+- Etiquetas de versiones anteriores: `v2.3.0`, `v2.0.0`, `v1.0.0` en el mismo repositorio de Hugging Face
+- Fichero de sumas de verificación: `SHA256SUMS.txt` en el repositorio de Hugging Face

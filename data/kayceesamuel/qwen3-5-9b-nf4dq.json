@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "qwen3.5:9b - ollama.com",
-      "url": "https://ollama.com/library/qwen3.5:9b",
-      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
-    },
-    {
-      "title": "AI Model Catalog | Microsoft Foundry Models",
-      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-9b",
-      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    },
-    {
-      "title": "Qwen3.5 9B model | NanoGPT",
-      "url": "https://nano-gpt.com/models/text/qwen/qwen3.5-9b",
-      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
-    },
-    {
-      "title": "Qwen3.5-9B | Awesome Agents",
-      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
-      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
-    },
-    {
-      "title": "Qwen3.5 9B - Jetson AI Lab",
-      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
-      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
-    }
-  ]
+  "sources": []
 }

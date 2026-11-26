@@ -2,107 +2,112 @@
 
 ## Resumen
 
-Lilavati-GGUF es la versión cuantizada en formato GGUF de Lilavati, un modelo de lenguaje de 95 millones de parámetros entrenado desde cero por Udgam Labs, especializado en resolver problemas matemáticos de enunciado (word problems). Su enfoque es distintivo: en lugar de razonar en texto plano, Lilavati genera un pequeño programa en Python que resuelve el problema, y un modelo acompañante de igual tamaño, Lilavati-Checker, puntúa la probabilidad de que cada programa generado sea correcto, permitiendo sistemas de votación entre múltiples intentos.
+Lilavati-GGUF es la distribucion en formato GGUF de Lilavati, un modelo de lenguaje de 94.732.876 parametros (aproximadamente 95M) entrenado desde cero por Udgam Labs, un laboratorio de investigacion independiente. El modelo no responde a preguntas matematicas directamente: su funcion es escribir un pequeno programa en Python que, al ejecutarse, resuelve el problema de enunciado planteado. Esta especializacion lo aleja de los chatbots generalistas y lo situa como una pieza de un pipeline program-aided.
 
-Este repositorio contiene ambos modelos (el solver y el checker) convertidos a GGUF con cuantización Q8_0, listos para ejecutarse con llama.cpp o incluso directamente en el navegador mediante WebAssembly (wllama). Con archivos de unos 102 MB cada uno, es un modelo "de bolsillo" que puede correr en hardware muy modesto, lo que lo hace relevante para despliegues en dispositivos con recursos limitados, educación y demostraciones embebidas.
+El repositorio contiene dos artefactos complementarios: `Lilavati-Q8_0.gguf` (102 MB), que genera los programas, y `Lilavati-Checker-Q8_0.gguf` (102 MB), un segundo modelo de 95M parametros que puntua cada programa con una probabilidad de ser correcto. Esa puntuacion permite hacer votacion entre varios intentos, lo que mejora la fiabilidad del resultado final. Ambos se distribuyen cuantizados en 8 bits (q8_0) y estan pensados para llama.cpp y para ejecucion en navegador mediante WebAssembly.
 
-La verificación de la conversión es rigurosa: los autores compararon los GGUF Q8_0 contra los pesos float32 originales en las primeras 100 preguntas de test de GSM8K, documentando que 95 de 100 programas dan la misma respuesta y que el checker cuantizado mantiene probabilidades casi idénticas (diferencia mediana de 0,0005). Es un ejemplo notable de transparencia en la publicación de modelos pequeños especializados.
+Su relevancia actual reside en el enfoque: un modelo diminuto, entrenado desde cero y con licencia Apache-2.0, que demuestra que la resolucion de problemas de enunciado de nivel escolar puede abordarse con program-aided reasoning en lugar de escalar parametros. La contraccion es notable: el modelo solo soporta ingles, no es conversacional y su ventana de contexto no esta documentada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (entrenado desde cero); detalles completos en la model card del modelo base |
-| Parametros totales | 94.732.876 (~95M) por cada uno de los dos modelos (solver y checker) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (detalles de capas y atencion no disponibles) |
+| Parametros totales | 94.732.876 (aproximadamente 95M) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (GGUF) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | Q8_0 (unica publicada en este repositorio) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q8_0); los modelos originales se publican en safetensors (float32) |
+| Formato de pesos | GGUF (derivado de safetensors originales) |
 
 ## Arquitectura y entrenamiento
 
-Lilavati es un modelo de 95M de parámetros entrenado desde cero (no es un fine-tuning de otro modelo) cuya tarea es, dado un problema matemático de enunciado, completar un prompt con una función Python que calcula la respuesta, cerrando el bloque con tres acentos graves. Este enfoque se denomina program-aided (PAL): la aritmética la ejecuta el intérprete de Python, no el modelo, lo que reduce drásticamente los errores de cálculo frente a la generación directa de números.
+Lilavati es un transformer de aproximadamente 95M de parametros entrenado from scratch por Udgam Labs. La informacion disponible no detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni la composicion exacta del dataset de entrenamiento. Tampoco se especifica si hubo fases de RLHF, DPO o ajuste por preferencias. Lo que si se documenta es el paradigma de entrenamiento funcional: el modelo aprende a transformar un enunciado en un programa Python ejecutable, y un segundo modelo (Lilavati-Checker) aprende a evaluar la correccion de ese programa dado el enunciado, el codigo y el resultado de la ejecucion.
 
-El segundo modelo, Lilavati-Checker, recibe como entrada la pregunta, el programa generado y su resultado (o el error producido), y emite una probabilidad de "yes" o "no" sobre si el programa es correcto. Combinando varios intentos del solver (por ejemplo, 8 o 48 muestreos) con los pesos del checker, se obtiene un sistema de votación ponderada que mejora la precisión. Los datos concretos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la model card de este repositorio; los autores remiten a la model card de Lilavati para resultados, datos y límites.
-
-Los archivos GGUF se generaron con `convert_hf_to_gguf.py` de llama.cpp (commit `d7a695e`) con `--outtype q8_0`, es decir, una simple redondeo de los pesos float32 a 8 bits sin cambios adicionales.
+La innovacion tecnica principal no esta en la arquitectura sino en el diseno del sistema: program-aided reasoning con verificacion por votacion. El checker produce una probabilidad de " yes" frente a " no", normalizada sobre ambas etiquetas, y esa probabilidad se usa como peso en una votacion entre multiples intentos (8 o 48 en las cifras reportadas por el autor). Los ficheros GGUF se generaron con `convert_hf_to_gguf.py` de llama.cpp (commit `d7a695e`) con `--outtype q8_0`, redondeando los pesos a 8 bits sin otros cambios.
 
 ## Capacidades
 
-- Resolucion de problemas matematicos de enunciado de nivel de primaria (grade-school word problems), generando un programa Python que se ejecuta para obtener el resultado numerico.
-- Sistema de verificacion mediante Lilavati-Checker, que puntua cada programa con una probabilidad de correccion y permite votacion ponderada entre multiples intentos (configuraciones de 8 y 48 intentos documentadas).
-- Ejecucion en local con llama.cpp (modo completion, no conversacional) y en el navegador via wllama (llama.cpp compilado a WebAssembly), con ejecucion de los programas Python en Pyodide dentro de un Web Worker.
-- Salida estructurada y determinista: con temperatura 0 y stop en ``` , el modelo cierra el programa de forma predecible.
-- No es un chatbot: no mantiene conversaciones, no genera texto libre y esta especializado exclusivamente en su tarea.
-- Idioma de trabajo: ingles (los enunciados y el codigo generado).
+- Generacion de programas Python a partir de enunciados de problemas matematicos de nivel escolar.
+- Razonamiento program-aided: delega el calculo en la ejecucion del codigo generado.
+- Evaluacion de correccion mediante el modelo auxiliar Lilavati-Checker, que emite una probabilidad de acierto.
+- Votacion ponderada entre multiples intentos para seleccionar la respuesta final.
+- Ejecucion en navegador mediante wllama (llama.cpp compilado a WebAssembly) y Pyodide para correr el codigo en un Web Worker.
+- Integracion con llama.cpp mediante `llama-completion` y prompts de continuacion.
+- No soporta tool calling general, function calling, agentes multi-paso ni modo thinking.
+- No es un chatbot: no mantiene conversacion multi-turno.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Educacion matematica en primaria y secundaria: un profesor puede desplegar el modelo en el navegador (todo corre en el dispositivo del alumno) para generar soluciones paso a paso en forma de programa Python a problemas de enunciado, sin enviar datos a la nube.
-- Aplicaciones web sin backend: gracias a wllama y Pyodide, se puede integrar la resolucion de problemas matematicos en una pagina web estatica, con los archivos GGUF de solo 102 MB cada uno.
-- Dispositivos con recursos muy limitados: con ~95M de parametros y cuantizacion Q8_0, el modelo cabe en CPU sin GPU, adecuado para Raspberry Pi, portatiles antiguos o entornos edge.
-- Verificacion de respuestas matematicas automaticas: Lilavati-Checker puede usarse de forma independiente para puntuar programas generados por otros sistemas, actuando como juez ligero en pipelines de auto-correccion.
-- Generacion aumentada por programas (PAL) como patron de arquitectura: util como referencia para equipos que quieran estudiar como un modelo diminuto especializado puede superar en una tarea estrecha a modelos generales mucho mayores.
-- Prototipado rapido con Ollama o LM Studio: aunque los autores no los han probado, el formato GGUF es compatible en principio con estas herramientas para experimentacion local.
-- Procesamiento por lotes de enunciados matematicos: con temperatura 0 y parada en ```, se pueden resolver grandes volumenes de problemas de forma determinista en scripts.
+- Resolucion de problemas de enunciado en ingles de nivel primaria y secundaria: el modelo recibe la pregunta y devuelve un programa Python que calcula la respuesta, adecuado para entornos educativos donde se quiere mostrar el razonamiento computacional.
+- Verificacion automatica de soluciones: combinando Lilavati con Lilavati-Checker se puede puntuar la probabilidad de correccion de cada programa generado y filtrar respuestas de baja confianza antes de mostrarlas.
+- Votacion por consenso en pipelines de evaluacion: generar 8 o 48 programas por pregunta y ponderar los votos con las probabilidades del checker, util en benchmarks internos de aritmetica.
+- Demos interactivas en navegador sin backend: al ser GGUF de 102 MB y ejecutarse con wllama, el par de modelos cabe en una pagina web y corre en el dispositivo del usuario, sin enviar datos a un servidor.
+- Prototipado de sistemas program-aided: sirve como banco de pruebas para arquitecturas de generate-execute-verify con modelos pequenos antes de escalar a modelos mayores.
+- Generacion de ejercicios con solucion verificable: el programa Python generado actua como justificacion ejecutable de la respuesta, lo que facilita la auditoria del resultado.
+- Investigacion sobre entrenamiento from scratch en dominios acotados: un caso de estudio de 95M parametros para medir cuanto puede especializarse un modelo diminuto con datos y objetivos bien definidos.
 
 ## Benchmarks y rendimiento
 
-La model card no publica tablas de benchmarks estandar completos, pero si documenta una verificacion sobre las primeras 100 preguntas de test de GSM8K [medida por los propios autores el 28 de octubre de 2026]:
+Los datos publicados por el autor se refieren a la comparacion entre los GGUF Q8_0 y el modelo original en float32, no a benchmarks estandar frente a otros modelos.
 
-| Configuracion | Resultado |
+| Metrica | Resultado |
 |---|---|
-| Solver Q8_0, 1 programa greedy por pregunta (nativo llama.cpp) | 60 de 100 correctas (estimado a partir de "59 vs 60 correct" al comparar con float32) |
-| Solver Q8_0 vs float32: programas identicos | 86 de 100 |
-| Solver Q8_0 vs float32: misma respuesta final | 95 de 100 |
-| Checker Q8_0 vs float32: diferencia de probabilidad | mediana 0,0005; maxima 0,036 |
-| Votacion ponderada por checker (12 preguntas x 8 intentos) | misma respuesta que float32 en 12 de 12 |
+| Programas identicos a float32 (100 preguntas GSM8K test, greedy) | 86 de 100 |
+| Misma respuesta final que float32 | 95 de 100 |
+| Aciertos con un programa greedy (Q8_0) | 59 de 100 |
+| Aciertos con un programa greedy (float32) | 60 de 100 |
+| Diferencia media del checker frente a float32 (96 programas) | 0.0005 (mediana), maximo 0.036 |
+| Coincidencia de la votacion ponderada por el checker (12 de 12) | 12 de 12 |
+| Programas generados en navegador identicos a llama.cpp nativo | 100 de 100 |
 
-No se han publicado resultados de benchmarks comparativos con otros modelos (MMLU, HumanEval, etc.) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K completos) en la informacion disponible mas alla de las cifras parciales sobre las primeras 100 preguntas del test de GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: cada archivo GGUF ocupa 102 MB; en modo Q8_0 se necesita aproximadamente 150-200 MB de RAM por modelo cargado (mas el contexto). Ejecutando solver y checker a la vez, menos de 500 MB de RAM.
-- GPU: no necesaria; el modelo esta pensado para ejecutarse en CPU. Cabe sobradamente en cualquier GPU consumer actual si se desea acelerar.
-- Consumer: funciona en portatiles sin GPU dedicada; en el navegador (wllama + Pyodide) corre integramente en el dispositivo del usuario.
-- Despliegue: llama.cpp (comando `llama-completion` con stop en ``` y temperatura 0), wllama para navegador, y en principio Ollama o LM Studio (no probados por los autores). El paquete Python `lilavati` (GitHub) incluye `safe_exec.py` para comprobar y ejecutar los programas de forma segura.
-- Importante: ejecutar los programas Python generados solo dentro de un sandbox (el propio README lo exige; `safe_exec.py` o Pyodide con limite de tiempo son las opciones recomendadas).
-- Latencia y throughput: no disponible.
+- VRAM estimada: aproximadamente 102 MB por modelo en Q8_0; unos 204 MB si se cargan Lilavati y Lilavati-Checker simultaneamente.
+- GPU recomendadas: cualquier GPU consumer con al menos 1 GB de VRAM libre es suficiente; tambien funciona en CPU.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) y en hardware integrado.
+- Despliegue: llama.cpp (`llama-completion`), wllama en navegador, y potencialmente Ollama y LM Studio (el autor indica que estos dos ultimos no fueron probados).
+- Ejecucion del codigo generado: requiere un sandbox, por ejemplo el paquete `lilavati` (`lilavati/safe_exec.py`) o Pyodide en un Web Worker con limite de tiempo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay muchos modelos especializados en PAL de tamano comparable publicados con verificacion similar. Comparativa orientativa con alternativas generales pequenas:
-
-| Modelo | Parametros | Especializacion | Contexto | Licencia | Disponibilidad GGUF |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lilavati / Lilavati-Checker | 95M (x2) | Problemas matematicos de enunciado via Python (PAL) | no disponible | Apache-2.0 | Si (Q8_0, este repo) |
-| Qwen2.5-0.5B-Instruct | 494M | General (chat, codigo, matematicas) | 32K (aprox.) | Qwen (Apache-2.0 condicionado por tamano) | Si |
-| SmolLM2-135M-Instruct | 135M | General ligero | 8K (aprox.) | Apache-2.0 | Si |
+| Lilavati-GGUF | 95M (+95M checker) | no disponible | Program-aided para problemas de enunciado | Apache-2.0 | GGUF en Hugging Face |
+| Modelos de matematicas de gran escala (p. ej. familias de 7B+) | miles de millones | decenas de miles de tokens | Razonamiento directo y chain-of-thought | variable | safetensors, GGUF |
+| Modelos pequenos generalistas (tipo 100M-1B) | 100M-1B | variable | Texto general, no especializado en matematicas | variable | multiples formatos |
 
-Nota: los valores de contexto y licencias de los modelos alternativos son aproximados y deben verificarse en sus model cards. La ventaja de Lilavati es su enfoque especializado con checker y su tamano minimo; su limitacion evidente es que no es un modelo de proposito general ni conversacional.
+La comparacion directa con alternativas de la misma categoria (modelos de ~95M especializados en matematicas con verificador) no esta disponible en la informacion proporcionada. Lilavati se distingue por el par modelo+checker y por el enfoque program-aided, pero carece de datos publicos de benchmarks estandar que permitan una comparacion cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Dominio estrecho: solo es bueno en problemas de enunciado de nivel de primaria. Falla de forma documentada en: numeros que deberian ignorarse en el enunciado, problemas que exigen trabajar hacia atras, conversiones de unidades y preguntas sin respuesta (siempre devuelve un numero, aunque no lo haya).
-- No es un chatbot: no sirve para conversacion, redaccion ni uso general; forzarlo fuera de su dominio producira salidas sin sentido.
-- Riesgo de alucinacion: en su tarea lo mitiga el enfoque PAL (el calculo lo hace Python), pero el programa generado puede ser logicamente incorrecto aunque se ejecute sin errores; por eso se recomienda usar el checker con multiples intentos.
-- Seguridad: los programas Python generados deben ejecutarse siempre en un sandbox; ejecutarlos directamente es peligroso.
-- Idioma: entrenado para enunciados en ingles; no hay soporte para castellano ni otros idiomas.
-- Deriva por cuantizacion: la version Q8_0 no es bit a bit identica a float32 (14 de 100 respuestas difieren en la verificacion); para maxima fidelidad usar los safetensors originales.
-- Ollama y LM Studio no han sido probados por los autores.
-- Licencia Apache-2.0: sin restricciones relevantes para uso comercial, pero conviene citar a los autores segun la bibtex proporcionada.
-- Datos de contexto maximo, tokens de entrenamiento y composicion del dataset: no disponibles en este repositorio; consultar la model card de Lilavati.
+- Debil en problemas con numeros que deberian ignorarse.
+- Debil en problemas que requieren trabajar hacia atras.
+- Debil en conversiones de unidades.
+- Devuelve siempre un numero, incluso ante preguntas sin respuesta; no detecta la ausencia de solucion.
+- No es un chatbot ni soporta conversacion multi-turno.
+- Solo soporta ingles.
+- Longitud de contexto no documentada, lo que limita la planificacion en produccion.
+- Riesgo de alucinacion en la generacion del programa: el codigo puede ejecutarse sin error y producir un resultado incorrecto; por eso el checker y la votacion son parte del diseno.
+- La ejecucion del codigo generado exige sandbox obligatorio; ejecutarlo fuera de un entorno aislado es un riesgo de seguridad.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre correccion en dominios fuera de los problemas de enunciado escolares.
+- Ollama y LM Studio no fueron probados por el autor con estos ficheros.
+- Sesgos conocidos: no documentados en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/udgamlabs/Lilavati-GGUF
-- Modelo base (solver): https://huggingface.co/udgamlabs/Lilavati
-- Modelo checker: https://huggingface.co/udgamlabs/Lilavati-Checker
-- Paquete Python con ejecucion segura: https://github.com/udgamlabs/lilavati
-- Demo en el navegador: https://udgamlabs.com/models/lilavati
-- Codigo de la demo (publico): `/models/lilavati/lilavati-solve.js` en udgamlabs.com
+- Hugging Face (GGUF): https://huggingface.co/udgamlabs/Lilavati-GGUF
+- Modelo base: https://huggingface.co/udgamlabs/Lilavati
+- Checker: https://huggingface.co/udgamlabs/Lilavati-Checker
+- Pagina del modelo en Udgam Labs: https://udgamlabs.com/models/lilavati
+- Demo en navegador: https://udgamlabs.com/models/lilavati#try
+- Notas de investigacion: https://udgamlabs.com/research/lilavati
+- Repositorio del paquete `lilavati`: https://github.com/udgamlabs/lilavati
 - wllama (llama.cpp en WebAssembly): https://github.com/ngxson/wllama
 - Pyodide: https://pyodide.org
-- Web de Udgam Labs: https://udgamlabs.com
+- Sitio de Udgam Labs: https://udgamlabs.com

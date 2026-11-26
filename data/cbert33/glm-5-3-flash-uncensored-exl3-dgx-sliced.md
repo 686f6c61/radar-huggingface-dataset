@@ -2,115 +2,102 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced es una transformacion de almacenamiento del checkpoint neko-legends/GLM-5.3-Flash-Uncensored-EXL3, publicada por el usuario cbert33. No es un reentrenamiento ni una nueva cuantizacion: es una conversion sin perdida (lossless) que reescribe cada tensor EXL3 de los expertos enrutados como dos tensores Trellis explicitos, uno por rango, de modo que el modelo pueda ejecutarse en paralelismo tensorial de grado 2 (TP2) sobre dos nodos NVIDIA DGX Spark. La utilidad principal es permitir el despliegue multi-nodo de un MoE de gran tamano con el stack nativo sm120/sm121.
+GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced es una transformación de almacenamiento de un modelo multimodal de tipo Mixture-of-Experts (MoE) derivado de la familia GLM-5.3 Flash de Z.ai. El autor de esta variante es cbert33, que parte de la cuantización EXL3 publicada por neko-legends (Depths), a su vez construida sobre una línea de pesos "uncensored" (abliterated) atribuida a orcarouter. El modelo original declara 320.000 millones de parámetros totales con 18.000 millones activos por token, aunque el recuento real de safetensors del repositorio es de 87.963.368.862 parámetros, discrepancia que el propio autor atribuye a un fallo de Hugging Face al calcular parámetros en cuantizaciones EXL3.
 
-El modelo subyacente es un mixture-of-experts multimodal de la familia GLM-5.3 Flash, con 320.000 millones de parametros totales y 18.000 millones activos segun el autor (los metadatos de safetensors del repositorio informan de 87.963.368.862 parametros, discrepancia que el propio autor atribuye a un error de Hugging Face al calcular parametros en cuantizaciones EXL3). Acepta entradas de imagen y texto (pipeline image-text-to-text), esta cuantizado a 4 bits en formato EXL3/Trellis y ha sido sometido a abliteration, por lo que reduce deliberadamente el comportamiento de rechazo.
+La aportación concreta de este checkpoint no es un nuevo entrenamiento ni una recalibración, sino un cambio de disposición de los tensores: cada tensor EXL3 de experto enrutado se almacena como tensores Trellis explícitos de rango 0 y rango 1 (rank-slicing), lo que permite repartir el modelo entre dos nodos NVIDIA DGX Spark con paralelismo tensorial de grado 2. La conversión es declarada como sin pérdida: no desquantiza, no recalibra y no recuantiza los pesos de neko-legends.
 
-Es relevante ahora porque demuestra un flujo completo de inferencia multi-nodo para modelos MoE cuantizados de forma agresiva: incluye un runner de vLLM modificado, decodificacion especulativa con un drafter DFlash2 y una cualificacion de runtime documentada sobre dos DGX Spark. Se distribuye bajo una licencia mixta con requisitos de atribucion y esta declarado explicitamente como artefacto de investigacion, no apto para produccion.
+Su relevancia es fundamentalmente de infraestructura: permite ejecutar un MoE multimodal de gran tamaño en hardware de consumo profesional (DGX Spark, arquitectura SM120) mediante un runner vLLM personalizado, con decodificación especulativa DFlash2 y atención FlashInfer nativa. No es un modelo para uso general con transformers estándar, sino un artefacto de despliegue especializado y experimental.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (familia GLM-5.3 Flash, tag glm5_next); expertos enrutados almacenados con EXL3/Trellis rank-sliced |
-| Parametros totales | 320.000 millones segun el autor; 87.963.368.862 segun safetensors (el autor lo atribuye a un bug de Hugging Face con cuantizaciones EXL3) |
-| Parametros activos | 18.000 millones (MoE) |
-| Longitud de contexto | 800.000 tokens (maximum model length del perfil de vLLM cualificado); 1.152.606 tokens logicos de cache KV reportados |
-| Tipos de cuantizacion | EXL3 de 4 bits (formato Trellis); cache KV en fp8_ds_mla |
-| Idiomas soportados | ingles (en) |
-| Licencia | shapleymcg-license-1.0 (artefacto de licencia mixta: base MIT de Z.ai, linaje uncensored de orcarouter, cuantizacion EXL3 de neko-legends y escalas ShapleyMcg v1.0) |
-| Formato de pesos | safetensors, con tensores Trellis rank0/rank1 por experto enrutado |
-| Tamano del repositorio | 176,0 GB |
-| Carga del checkpoint | 164 GiB repartidos entre dos nodos |
-| Descargas / likes | 266 / 2 |
-| Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-20 |
+| Arquitectura | Mixture-of-Experts (MoE) transformer multimodal; familia GLM-5.3 Flash (tag `glm5_next`) |
+| Parametros totales | 320B declarados por el autor; 87.963.368.862 segun safetensors (discrepancia atribuida a un fallo de Hugging Face con EXL3) |
+| Parametros activos | 18B (declarado por el autor) |
+| Longitud de contexto | Hasta 800.000 tokens en el perfil de runner probado (`maximum model length: 800000`) |
+| Tipos de cuantizacion | EXL3 de 4 bits con Trellis; almacenamiento rank-sliced (rank0/rank1); KV cache objetivo en `fp8_ds_mla` |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | Mixta: base GLM-5.3 Flash MIT, calibracion ShapleyMcg License v1.0 (`shapleymcg-license-1.0`), artefacto etiquetado como `license:other` |
+| Formato de pesos | safetensors (esquema de tensores rank-sliced propio, no compatible con vLLM/Transformers estandar) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de mezcla de expertos (MoE) multimodal, heredado de GLM-5.3 Flash. La intervencion de este repositorio es exclusivamente de almacenamiento: cada tensor EXL3 de experto enrutado se guarda como dos tensores Trellis explicitos (rank0 y rank1), lo que habilita tensor parallelism de grado 2. El autor indica que la conversion no desquantiza, recalibra ni recuantiza el checkpoint de neko-legends, y que solo cambia el layout de almacenamiento.
+El modelo subyacente es un transformer MoE multimodal de la familia GLM-5.3 Flash, con pipeline `image-text-to-text`, es decir, acepta entradas de imagen y texto y genera texto. La variante aquí descrita incorpora atención MLA (Multi-head Latent Attention), a juzgar por el backend `FLASHINFER_MLA_SPARSE_SM120` empleado en el perfil de ejecución, y una cabeza de decodificación especulativa externa (DFlash2) que actúa como drafter.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion (RLHF/DPO) del modelo original. Si se documenta el pipeline de cuantizacion: la calibracion corresponde a ShapleyMcg (ShapleyMCG: An Auditable Calibration-to-Encoding Pipeline for Low-Bit Mixture-of-Experts Models, Brandon M. Music), que genera los tensores de escala por experto suh, svh y mcg. El checkpoint de lenguaje ha pasado por abliteration para reducir el comportamiento de rechazo. La innovacion tecnica destacable es la combinacion de rank-slicing EXL3, atencion FlashInfer nativa SM120 con backend FLASHINFER_MLA_SPARSE_SM120 y decodificacion especulativa mediante un drafter DFlash2 externo.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo base. Lo que sí está documentado es el proceso de post-procesado: la línea "uncensored" proviene de una abliteration aplicada al checkpoint de lenguaje, y la cuantización EXL3 fue calibrada con la pipeline ShapleyMCG, que genera tensores de escala por experto (`suh`, `svh`, `mcg`). La innovación técnica de este repositorio es puramente de almacenamiento: el rank-slicing de tensores Trellis permite particionar los expertos enrutados entre dos nodos sin desquantizar, habilitando TP2 sobre DGX Spark.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (tag conversational) con ventanas de contexto muy largas.
-- Procesamiento multimodal de entrada imagen-texto (pipeline image-text-to-text).
-- Razonamiento multi-paso y uso de herramientas: la cualificacion interna ejecuto 15 turnos de modelo y 17 llamadas a herramientas con una puntuacion de 8/8.
-- Inferencia sobre prompts masivos: 335.046 tokens de prompt procesados en una unica carga de trabajo aceptada.
-- Decodificacion especulativa configurable con 1 a 7 tokens de draft (recomendado 5) mediante el drafter DFlash2.
-- Comportamiento desinhibido por abliteration: reduce los rechazos ante peticiones que un modelo alineado declinaria.
-- Idiomas: unicamente ingles.
-- No se documentan capacidades de audio, vision por video, ni modo thinking explicito mas alla de lo indicado.
+- Generación de texto conversacional multi-turno en inglés.
+- Procesamiento multimodal imagen-texto (pipeline `image-text-to-text`).
+- Razonamiento y respuesta a instrucciones heredados del modelo base GLM-5.3 Flash.
+- Tool calling y uso en flujos agénticos: el smoke test documentado cubre 15 turnos y 17 llamadas a herramientas con puntuación 8/8.
+- Decodificación especulativa mediante drafter DFlash2 externo, con aceptación configurable de 1 a 7 tokens (recomendado 5).
+- Comportamiento "uncensored": la abliteration reduce los rechazos, lo que constituye tanto una capacidad declarada como un riesgo operativo.
+- No se documentan capacidades de audio ni modos de "thinking" explícitos.
 
 ## Casos de uso
 
-- Investigacion sobre abliteration: comparar sistematicamente la tasa de rechazo y la coherencia de este checkpoint frente a la linea base GLM-5.3 Flash alineada, midiendo deriva en calidad de respuesta.
-- Red-teaming y evaluacion de seguridad: servir el modelo en un entorno aislado para generar intentos de evasion y alimentar clasificadores de contenido, dado que el autor advierte que no se debe asumir que el modelo rechace peticiones daninas.
-- Procesamiento de corpus documentales muy largos: analisis, resumen y extraccion de informacion sobre volcados de cientos de miles de tokens aprovechando la ventana configurada de 800.000 tokens y la cache KV de mas de 1,1 millones de tokens logicos.
-- Agentes con tool calling en laboratorio: construir flujos multi-paso con llamadas a funciones y validar la estabilidad del bucle agente, apoyandose en las 17 llamadas a herramientas de la prueba de humo documentada.
-- Investigacion en cuantizacion de bajo bit: estudiar el comportamiento de EXL3/Trellis y de las escalas ShapleyMcg por experto, comparando la fidelidad frente al checkpoint sin cuantizar.
-- Ingenieria de inferencia distribuida: usar el repositorio y su script de slicing como referencia para particionar otros modelos EXL3 en despliegues multi-nodo con TP2.
-- Evaluacion de decodificacion especulativa: medir la tasa de aceptacion y el impacto en latencia del drafter DFlash2 con distintos numeros de tokens de draft (1-7).
-- Recuperacion aumentada sobre bases de conocimiento internas en ingles: indexar documentacion extensa y responder con contexto largo en una unica pasada, siempre en un entorno de investigacion controlado.
+- Investigación sobre alineación y abliteration: el checkpoint permite estudiar empíricamente cómo la eliminación de dirección de rechazo afecta a la coherencia, el bucle y la calidad conversacional en un MoE de gran escala.
+- Despliegue multi-nodo en laboratorio: sirve como banco de pruebas para validar rank-slicing EXL3, paralelismo tensorial TP2 y atención FlashInfer SM120 sobre dos DGX Spark, con un perfil de referencia reproducible.
+- Evaluación de decodificación especulativa: al integrarse con el drafter DFlash2 y tokens de borrador ajustables (1-7), permite medir ganancias de throughput y tasa de aceptación en cargas agénticas reales.
+- Procesamiento de documentos largos con imagen y texto: la ventana de hasta 800.000 tokens y el pipeline multimodal lo hacen apto para resumir o extraer información de expedientes extensos que combinan páginas escaneadas y texto.
+- Pipelines agénticos con herramientas: el soporte de tool calling y los resultados del canary (17 llamadas, 8/8) lo sitúan como candidato para orquestación de agentes en entornos controlados de investigación.
+- Estudio de cuantización de bajo bit en MoE: la combinación EXL3 4-bit más escalas ShapleyMcg permite analizar la degradación de calidad frente al modelo sin cuantizar en tareas de razonamiento y generación.
+- Generación de contenido sin restricciones de rechazo en entornos de investigación creativa, siempre con salvaguardas a nivel de aplicación dado el carácter abliterated del checkpoint.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos de rendimiento documentados son los de cualificacion de runtime:
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento documentados son de runtime:
 
 | Metrica | Valor |
 |---|---|
-| Prueba de humo interna | 15 turnos de modelo, 17 llamadas a herramientas, puntuacion 8/8 |
-| Tokens de prompt procesados | 335.046 |
-| Tokens de finalizacion generados | 18.672 |
-| Tiempo total de la carga aceptada | 521,94 s |
-| Tasa media de finalizacion (sobre el total del run, incluye prefill) | aprox. 35,8 tok/s |
-| Tokens logicos de cache KV | 1.152.606 |
-| Bytes de cache KV por rango | 11.000.000.000 |
-| Reinicios de rango / OOM | 0 / 0 |
-| Mejora declarada por el autor en uso agente | 15-25% en tok/s frente al EXL3 anterior |
+| Carga de checkpoint | 164 GiB en dos nodos DGX Spark |
+| Carga de trabajo aceptada | 335.046 tokens de prompt y 18.672 tokens de completion en 521,94 s |
+| KV cache lógico reportado | 1.152.606 tokens |
+| Memoria de cache por rank | 11.000.000.000 bytes |
+| Mejora de throughput vs. EXL3 previo | 15-25 % en uso agéntico (medido por el autor) |
+| Smoke test agéntico | 15 turnos, 17 llamadas a herramientas, 8/8 |
+| Reinicios / OOM / errores | 0 en ambos ranks |
 
 ## Requisitos de hardware
 
-- El checkpoint esta disenado para ejecutarse en dos nodos NVIDIA DGX Spark con tensor parallelism 2; la carga completa ocupa 164 GiB repartidos entre ambos nodos.
-- No cabe en una GPU de consumo: el repositorio pesa 176 GB y el modelo base declara 320.000 millones de parametros totales.
-- Aceleradores objetivo: GPUs sm120/sm121 (DGX Spark). No hay datos sobre ejecucion en A100, H100 o RTX 4090, y el esquema rank-sliced no es compatible con kernels genericos.
-- Despliegue: requiere el fork de vLLM cbertucci33/vllm-v29-glm53flash-exl3-dgx. Ni vLLM 0.29 estandar ni Transformers entienden el esquema de tensores rank-sliced.
-- Perfil de runner cualificado: vLLM 0.29.0 base, tensor parallelism 2, quantizacion exl3, load format instanttensor, backend de atencion FLASHINFER_MLA_SPARSE_SM120, cache KV fp8_ds_mla, maximum model length 800.000, maximum sequences 2.
-- Decodificacion especulativa: requiere el drafter local-inference-lab/GLM-5.3-Flash-DFlash2-MXFP8, almacenado por separado. El drafter original acepta 7 tokens; el runner modificado admite entre 1 y 7, con 5 recomendado como equilibrio.
-- Imagen de cualificacion construida desde el commit de runtime 974329d88; commits posteriores solo son compatibles si preservan el mismo esquema exl3-trellis.
-- Throughput medido: aproximadamente 35,8 tokens de finalizacion por segundo de media en la carga de trabajo cualificada (18.672 tokens en 521,94 s), con el prefill incluido en ese tiempo.
+- VRAM/almacenamiento: el checkpoint ocupa 176 GB en repositorio y se carga en 164 GiB repartidos entre dos nodos.
+- GPU objetivo: dos NVIDIA DGX Spark (arquitectura SM120/SM121), con paralelismo tensorial de grado 2.
+- No cabe en una GPU de consumo convencional (RTX 4090, 24 GB) ni en una única A100/H100 de 80 GB por el esquema de particionado y el tamaño total.
+- Runner obligatorio: `cb-vllm-dual-dgx`, basado en vLLM 0.30.0 con librerías nativas SM120; vLLM estándar y Transformers no interpretan el esquema rank-sliced.
+- Configuración de referencia: `quantization: exl3`, `load format: instanttensor`, `attention backend: FLASHINFER_MLA_SPARSE_SM120`, `target KV cache: fp8_ds_mla`, `maximum sequences: 2`.
+- Decodificación especulativa: drafter separado `local-inference-lab/GLM-5.3-Flash-DFlash2-MXFP8`, con 5 tokens de borrador recomendados.
+- Latencia y throughput: no se publican tok/s absolutos; solo la mejora relativa del 15-25 % frente al runner EXL3 anterior.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa. La comparativa se limita a los artefactos de la misma familia citados en la documentacion:
-
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cbert33/GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced | 320.000 M totales / 18.000 M activos (autor) | 800.000 tokens (configurado) | EXL3 4 bits, rank-sliced para TP2 | shapleymcg-license-1.0 (mixta) | Requiere runner vLLM propio y dos DGX Spark |
-| neko-legends/GLM-5.3-Flash-Uncensored-EXL3 | no disponible | no disponible | EXL3 4 bits, sin rank-slicing | no disponible | Modelo base de este repositorio; ejecutable con el runner Entrpi vLLM segun el autor |
-| GLM-5.3 Flash (Z.ai, base) | no disponible | no disponible | pesos originales | MIT | Modelo base original; licencia permisiva |
-| Linea uncensored de orcarouter | no disponible | no disponible | no disponible | no disponible | Origen del linaje de pesos abliterados |
-
-No se han identificado en la informacion proporcionada alternativas comparables de otros fabricantes con datos verificables.
+| cbert33/GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced | 320B totales / 18B activos (declarado) | 800.000 tokens (perfil de runner) | safetensors EXL3 4-bit rank-sliced | Mixta (MIT + ShapleyMcg v1.0) | Hugging Face, runner propio |
+| neko-legends/GLM-5.3-Flash-Uncensored-EXL3 | 320B totales / 18B activos (declarado) | no disponible | safetensors EXL3 4-bit | Mixta | Hugging Face |
+| GLM-5.3 Flash base (Z.ai) | 320B totales / 18B activos (declarado) | no disponible | safetensors | MIT | Hugging Face |
+| local-inference-lab/GLM-5.3-Flash-DFlash2-MXFP8 | no disponible (drafter) | no disponible | MXFP8 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: el autor advierte explicitamente de que no se debe asumir que el modelo rechace peticiones daninas. Es obligatorio aplicar salvaguardas a nivel de aplicacion y tratar todas las salidas como no confiables.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; el propio autor senala que otras versiones abliteradas de GLM mostraban bucles, incoherencia y baja velocidad de generacion.
-- Idioma: soporte limitado a ingles, sin capacidades multilingues documentadas.
-- Licencia: artefacto de licencia mixta. La licencia ShapleyMcg v1.0 exige atribucion y no concede derechos a la persona conocida como 0xSero; el uso sin la atribucion requerida queda sin licencia. La base GLM-5.3 Flash es MIT, pero el conjunto no lo es.
-- Restriccion de uso: el autor declara el modelo exclusivamente para investigacion y no destinado a produccion. Se ofrece sin garantia y sin responsabilidad para los creadores, subidores y mantenedores.
-- Dependencia de software fragil: solo funciona con un fork concreto de vLLM; cualquier actualizacion que rompa el esquema exl3-trellis invalida el checkpoint.
-- Complejidad de despliegue: requiere dos nodos DGX Spark, 164 GiB de carga y TP2. No es viable en una estacion de trabajo mononodo convencional.
-- Discrepancia de parametros: los metadatos de safetensors (87.963.368.862) no coinciden con la cifra declarada por el autor (320.000 millones). Cualquier planificacion de recursos deberia partir de la cifra del autor y verificarla experimentalmente.
-- Sin garantias de calidad: no hay benchmarks publicados que respalden el rendimiento en tareas de razonamiento, codigo o matematicas.
+- Modelo abliterated: no se puede asumir que rechace peticiones dañinas; requiere salvaguardas a nivel de aplicación y no debe exponerse sin filtros.
+- El autor declara explícitamente que es para investigación y no para producción.
+- Riesgo de bucle e incoherencia señalado por el propio autor en otras variantes abliterated de GLM; la calidad de esta versión depende del runner y del drafter.
+- Solo soporta inglés según la metadata del repositorio.
+- Esquema de tensores no estándar: no funciona con vLLM ni Transformers de serie; requiere el runner personalizado y la configuración exacta documentada.
+- Licencia mixta y restrictiva: la ShapleyMcg License v1.0 exige atribución y no concede derechos a determinadas personas (0xSero); el uso comercial queda sujeto a revisión legal de las tres capas (MIT, ShapleyMcg y lineage uncensored).
+- Discrepancia entre los 320B declarados y los 87,96B contados en safetensors: conviene verificar el recuento real antes de planificar recursos.
+- Dependencia de hardware muy específica (dos DGX Spark, SM120); no hay validación documentada en otras plataformas.
+- El drafter DFlash2 es un artefacto separado con su propia licencia no especificada.
+- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que permitan estimarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/cbert33/GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced
-- Modelo base (cuantizacion EXL3 original): https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3
-- Drafter DFlash2 para decodificacion especulativa: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-DFlash2-MXFP8
-- Runner de vLLM especifico: https://github.com/cbertucci33/vllm-v29-glm53flash-exl3-dgx
+- Modelo base cuantizado: https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3
+- Runner vLLM personalizado: https://github.com/cbertucci33/cb-vllm-dual-dgx
+- Drafter DFlash2: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-DFlash2-MXFP8
 - Licencia ShapleyMcg v1.0: https://github.com/brandonmmusic-max/shapleymcg/blob/main/LICENSE
-- Repositorio de ShapleyMcg (URL truncada en la model card): https://github.com/brandonmmusic-m
-- No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos (repositorios de prompts DAN, topicos de chatgpt-api, documentacion de modelos de GitHub Copilot y articulos sobre recuperacion de chats de ChatGPT) no guardan relacion con este modelo y no se han utilizado como fuente de datos.
+- Repositorio ShapleyMCG: https://github.com/brandonmmusic-max/shapleymcg

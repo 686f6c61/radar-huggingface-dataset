@@ -2,50 +2,49 @@
 
 ## Resumen
 
-ScriptedVN Models es un repositorio de redistribución de modelos de traducción automática empaquetados para la aplicación de escritorio ScriptedVN, una herramienta de traducción de novelas visuales desarrolladas en Ren'Py. No se trata de un modelo entrenado por el autor del repositorio (scriptedvn), sino de un contenedor que agrupa tres modelos abiertos de terceros, en algunos casos convertidos de formato: MADLAD-400 3B convertido a CTranslate2 int8, Hy-MT2 1.8B en GGUF Q4_K_M y Qwen3.5-4B en GGUF Q4_K_M con proyector multimodal (mmproj).
+ScriptedVN Models es un repositorio de redistribución de modelos de traducción automática, mantenido por el usuario `scriptedvn`, pensado para alimentar la aplicación de escritorio ScriptedVN, una herramienta de traducción de novelas visuales desarrolladas en Ren'Py. No se trata de un modelo entrenado por el autor, sino de un contenedor que agrupa tres modelos abiertos de terceros, ya sea en su formato original o convertidos a formatos de inferencia optimizados (CTranslate2 y GGUF), manteniendo en cada carpeta la licencia original de cada modelo.
 
-El propósito es práctico: la aplicación descarga estos ficheros desde una revisión fija y verifica su integridad mediante SHA-256, de modo que el usuario final obtiene modelos listos para inferencia local sin tener que gestionar conversiones de formato. El repositorio incluye el tag `endpoints_compatible`, lo que sugiere compatibilidad con la API de Hugging Face Inference Endpoints, y el tag `imatrix`, que indica que algunas cuantizaciones GGUF se generaron con matrices de importancia.
+El repositorio incluye MADLAD-400 3B (de Google) convertido a CTranslate2 en int8, Hy-MT2 1.8B (de Tencent) en GGUF Q4_K_M y Qwen3.5-4B en GGUF Q4_K_M con su fichero mmproj para componentes multimodales. El total de parámetros declarado en safetensors asciende a 4.205.751.296, correspondiente al modelo de mayor tamaño del conjunto, y el repositorio ocupa 20,1 GB.
 
-El tamaño total del repositorio es de 7,5 GB y el recuento de parámetros reportado en safetensors es de 4.205.751.296, cifra que corresponde a Qwen3.5-4B y no al conjunto agregado de los tres modelos. La licencia declarada es Apache-2.0, aunque la model card aclara que cada carpeta conserva la licencia de su modelo original.
+Su relevancia es práctica: ofrece a los desarrolladores de la aplicación un conjunto de pesos verificables (la app descarga una revisión fija y comprueba el SHA-256 de cada fichero) para traducción multilingüe de guiones de novela visual, un dominio con jerga propia, diálogos multi-turno y requisitos de coherencia de personajes. La licencia del repositorio es Apache-2.0, aunque cada subcarpeta conserva su licencia original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (repositorio agregado; los modelos subyacentes son transformers, sin detalle de arquitectura en la informacion proporcionada) |
-| Parametros totales | 4.205.751.296 (reportado en safetensors; corresponde a Qwen3.5-4B, no al agregado) |
-| Parametros activos | No aplica (no se indica que ningun componente sea MoE) |
+| Arquitectura | No disponible (repositorio de redistribución; agrupa MADLAD-400 3B, Hy-MT2 1.8B y Qwen3.5-4B) |
+| Parametros totales | 4.205.751.296 (según safetensors del conjunto) |
+| Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | CTranslate2 int8 (MADLAD-400 3B); GGUF Q4_K_M (Hy-MT2 1.8B y Qwen3.5-4B); se menciona uso de imatrix |
-| Idiomas soportados | Multilingue (sin listado de idiomas en la informacion proporcionada) |
-| Licencia | Apache-2.0 (cada carpeta conserva la licencia de su modelo original) |
-| Formato de pesos | CTranslate2 (int8) y GGUF (Q4_K_M), mas mmproj para el componente multimodal de Qwen3.5-4B |
+| Tipos de cuantizacion | CTranslate2 int8 (MADLAD-400 3B); GGUF Q4_K_M (Hy-MT2 1.8B y Qwen3.5-4B) |
+| Idiomas soportados | Multilingüe (sin desglose de idiomas en la información disponible) |
+| Licencia | Apache-2.0 (repositorio); cada modelo conserva su licencia original (Apache-2.0 en los tres casos) |
+| Formato de pesos | safetensors, GGUF, CTranslate2 |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta arquitectura ni proceso de entrenamiento propios: es una colección de artefactos de inferencia derivados de modelos de terceros. Los tres componentes son modelos transformer de traducción y generación de texto. MADLAD-400 3B es un modelo multilingüe de traducción automática de Google, aquí convertido a CTranslate2 con cuantización int8 para reducir el uso de memoria y acelerar la inferencia en CPU. Hy-MT2 1.8B es un modelo de traducción de Tencent distribuido en GGUF Q4_K_M, formato orientado a llama.cpp y compatible con Ollama. Qwen3.5-4B se distribuye en GGUF Q4_K_M junto con un fichero mmproj, lo que indica soporte de entrada multimodal (vision) en el modelo original.
+El repositorio no documenta arquitectura ni proceso de entrenamiento propio: es un agregador de pesos de terceros. Las carpetas incluyen MADLAD-400 3B (modelo de traducción de Google) convertido a CTranslate2 en int8, Hy-MT2 1.8B (Tencent) en GGUF Q4_K_M y Qwen3.5-4B en GGUF Q4_K_M junto con un fichero `mmproj` para proyección multimodal. No se especifican en la información disponible los detalles de arquitectura interna (transformer, MoE, etc.), el volumen de tokens de entrenamiento ni si hubo etapas de RLHF o DPO.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO. La presencia del tag `imatrix` sugiere que las cuantizaciones GGUF se calibraron con matrices de importancia para preservar mejor la calidad en 4 bits, una técnica habitual en cuantización de modelos grandes. El autor indica que los ficheros están "sin modificar o convertidos de formato", por lo que las innovaciones técnicas corresponden a los modelos originales y no a este repositorio.
+La innovación técnica del repositorio es de empaquetado y distribución: conversión a formatos de inferencia eficientes (CTranslate2 para CPU/GPU con cuantización int8; GGUF para llama.cpp y derivados), fijación de revisión y verificación de integridad mediante SHA-256 de cada fichero. También se etiqueta `imatrix`, lo que sugiere el uso de matrices de importancia para la cuantización GGUF, aunque no se detalla el procedimiento.
 
 ## Capacidades
 
-- Traducción automática multilingüe, con MADLAD-400 3B e Hy-MT2 1.8B como motores principales para pares de idiomas.
-- Generación de texto conversacional y razonamiento mediante Qwen3.5-4B.
-- Procesamiento multimodal en Qwen3.5-4B: el fichero mmproj habilita entrada de imágenes junto con texto.
-- Integración en la aplicación ScriptedVN para traducir guiones de novelas visuales Ren'Py.
-- Inferencia local en CPU y GPU según el formato: CTranslate2 para CPU eficiente, GGUF para llama.cpp.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite desplegar los modelos tras una API compatible con Hugging Face.
-- Verificación de integridad por SHA-256 y descarga desde revisión fija, orientada a reproducibilidad en producción.
+- Traducción automática multilingüe de texto, orientada a guiones de novela visual (Ren'Py).
+- Conversación multi-turno (etiqueta `conversational`), útil para diálogos con contexto acumulado.
+- Inferencia en CPU y GPU mediante CTranslate2 (int8) y GGUF (Q4_K_M).
+- Soporte de componentes multimodales en Qwen3.5-4B mediante el fichero `mmproj` (visión, según el formato del modelo original).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita el despliegue como servicio.
+- No se documentan capacidades de tool calling, agentes ni modo de razonamiento explícito en la información disponible.
 
 ## Casos de uso
 
-- Traducción de guiones de novelas visuales Ren'Py: la aplicación ScriptedVN usa estos modelos para traducir diálogos y etiquetas del motor Ren'Py, manteniendo la estructura del script y sustituyendo el texto por la versión traducida.
-- Traducción por lotes en local sin conexión: al distribuirse en CTranslate2 int8 y GGUF Q4_K_M, los modelos caben en equipos de consumo y permiten traducir volúmenes grandes de texto sin enviar datos a servicios externos.
-- Despliegue de un servicio de traducción ligero: MADLAD-400 3B en CTranslate2 puede servirse detrás de una API compatible con endpoints para atender peticiones de traducción con baja latencia en CPU.
-- Traducción asistida con contexto visual: Qwen3.5-4B con mmproj permite procesar capturas o ilustraciones junto al texto, útil para traducir menús, rótulos o texto incrustado en imágenes de una novela visual.
-- Prototipado de pipelines de traducción multilingüe: los tres modelos cubren enfoques distintos (traducción dedicada, traducción compacta y generación general), lo que permite comparar calidad y coste antes de fijar un motor en producción.
-- Empaquetado de modelos para aplicaciones de escritorio: el patrón de revisión fija más verificación SHA-256 sirve como referencia para distribuir modelos de forma reproducible en instaladores o actualizadores automáticos.
-- Evaluación de cuantizaciones: la disponibilidad de Q4_K_M con imatrix y de int8 en CTranslate2 permite medir la pérdida de calidad frente a los pesos originales en flujos de traducción reales.
+- Traducción de guiones de Ren'Py: el conjunto está pensado para traducir ficheros de diálogo y etiquetas de la aplicación ScriptedVN, con modelos ligeros que caben en equipos de escritorio y permiten traducción local sin enviar el texto a servicios externos.
+- Traducción por lotes en CPU: MADLAD-400 3B en CTranslate2 int8 está optimizado para inferencia en CPU, adecuado para procesar grandes volúmenes de líneas de diálogo en estaciones de trabajo sin GPU dedicada.
+- Traducción en GPU de consumo: Hy-MT2 1.8B en GGUF Q4_K_M permite ejecutar traducción en GPUs de gama media mediante llama.cpp u Ollama, con un consumo de memoria reducido.
+- Preprocesado y revisión de traducciones con un modelo mayor: Qwen3.5-4B en GGUF Q4_K_M puede usarse para reescritura, control de tono o corrección de traducciones generadas por los modelos específicos de traducción.
+- Integración en pipelines de localización: la verificación SHA-256 y la revisión fija permiten incorporar el conjunto a un pipeline reproducible de localización de novelas visuales, con artefactos verificables.
+- Despliegue como servicio compatible con endpoints: la etiqueta `endpoints_compatible` facilita exponer los modelos mediante un servidor de inferencia y consumirlos desde la aplicación de escritorio o desde herramientas de traducción externas.
+- Traducción con contexto multimodal (Qwen3.5-4B + mmproj): útil para escenas donde el texto aparece en imágenes o donde se requiere interpretar capturas de pantalla del juego.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +52,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: MADLAD-400 3B en CTranslate2 int8 ronda los 3-4 GB; Hy-MT2 1.8B en Q4_K_M alrededor de 1,2-1,5 GB; Qwen3.5-4B en Q4_K_M en torno a 2,5-3 GB, más el proyector multimodal. Son estimaciones por tamaño y cuantización, no datos publicados en la información disponible.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, los tres componentes caben en GPUs de consumo con 8 GB o más, como RTX 3060, RTX 4060 o RTX 4090; para servir varios modelos simultáneamente se recomienda 16 GB o más (RTX 4080, A100 40 GB, H100).
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 6-8 GB de VRAM para un modelo individual; el conjunto completo requiere más memoria si se carga a la vez.
-- Opciones de despliegue: llama.cpp y Ollama para los GGUF; CTranslate2 con su servidor o con wrappers de Python para el modelo int8; vLLM y TGI no están confirmados para estos formatos en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible de forma oficial; como referencia de orden de magnitud, un modelo de 4B en Q4_K_M requiere típicamente en torno a 3-4 GB de memoria, y MADLAD-400 3B en int8 en torno a 3-4 GB, aunque estas cifras no están confirmadas en la información proporcionada.
+- GPU recomendadas: no disponible. Por tamaño, los modelos de 1,8B a 4B son aptos para GPUs de consumo con suficiente memoria.
+- ¿Cabe en GPU de consumo? Probablemente sí para los tres modelos en sus cuantizaciones indicadas, pero no se confirma en la información disponible.
+- Opciones de despliegue: CTranslate2 (MADLAD-400 3B), llama.cpp y derivados compatibles con GGUF (Hy-MT2 1.8B y Qwen3.5-4B). No se confirma soporte de vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ScriptedVN Models (agregado) | 4.205.751.296 reportados (Qwen3.5-4B) | No disponible | CTranslate2 int8, GGUF Q4_K_M | Apache-2.0 | Hugging Face, 0 descargas |
-| google/madlad400-3b-mt | 3B | No disponible | Safetensors, CTranslate2 | Apache-2.0 | Hugging Face (modelo original) |
-| tencent/Hy-MT2-1.8B | 1,8B | No disponible | Safetensors, GGUF | Apache-2.0 | Hugging Face (modelo original) |
-| Qwen3.5-4B | 4B | No disponible | Safetensors, GGUF, mmproj | Apache-2.0 | Hugging Face (modelo original) |
+| ScriptedVN Models (conjunto) | 4.205.751.296 (total safetensors) | No disponible | safetensors, GGUF, CTranslate2 | Apache-2.0 | Hugging Face |
+| google/madlad400-3b-mt | 3B (aproximado, según nombre) | No disponible | safetensors | Apache-2.0 | Hugging Face |
+| tencent/Hy-MT2-1.8B | 1,8B (según nombre) | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B | 4B (según nombre) | No disponible | No disponible | Apache-2.0 | Hugging Face |
+
+No se dispone de datos de rendimiento comparado (benchmarks) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo entrenado por el autor: cualquier limitación de calidad, sesgo o alucinación proviene de los modelos originales (MADLAD-400, Hy-MT2, Qwen3.5) y debe consultarse en sus respectivas model cards.
-- El recuento de parámetros del repositorio (4.205.751.296) no representa el total agregado de los tres modelos; puede inducir a error si se usa para estimar requisitos de memoria del conjunto.
-- La cuantización int8 y Q4_K_M introduce pérdida de calidad respecto a los pesos originales; no se documentan evaluaciones comparativas en este repositorio.
-- No se especifican los idiomas cubiertos ni la longitud de contexto, lo que impide garantizar el comportamiento en pares de idiomas concretos o en textos largos.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no hay evidencia de uso en producción ni de validación por la comunidad.
-- Aunque la licencia declarada es Apache-2.0, cada carpeta conserva la licencia de su modelo original; conviene verificar los términos de cada modelo subyacente antes de un uso comercial.
-- La dependencia de una revisión fija y de la verificación SHA-256 implica que las actualizaciones de los modelos originales no llegan automáticamente a la aplicación.
-- Riesgo de alucinación y de traducciones inconsistentes en terminología específica de novelas visuales (nombres propios, variables de Ren'Py) si no se aplica glosario o postprocesado.
+- El repositorio no entrena modelos propios: la calidad depende íntegramente de los modelos originales de Google, Tencent y Qwen.
+- No se documentan sesgos conocidos, tasas de alucinación ni evaluación de calidad de traducción en la información disponible.
+- No se especifican los idiomas cubiertos ni la longitud de contexto; la etiqueta `multilingual` no detalla el conjunto de lenguas.
+- Las cuantizaciones Q4_K_M e int8 introducen pérdida de precisión respecto a los pesos originales; no se documenta la degradación medida.
+- Aunque el repositorio declara Apache-2.0, cada carpeta conserva su licencia original; conviene verificar la licencia de cada modelo antes de uso comercial.
+- El uso está orientado a la aplicación ScriptedVN; no se documenta soporte oficial para otros usos ni para tool calling o agentes.
+- La fecha de creación del repositorio (2026) y la escasa actividad (0 likes, 249 descargas) sugieren un proyecto de nicho; no hay garantías de mantenimiento.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/scriptedvn/scriptedvn-models
 - Modelo original MADLAD-400 3B: https://huggingface.co/google/madlad400-3b-mt
 - Modelo original Hy-MT2 1.8B: https://huggingface.co/tencent/Hy-MT2-1.8B
-- Modelo original Qwen3.5-4B: no disponible en la información proporcionada (el autor cita "Qwen" sin enlace)
-- Documentación de CTranslate2: no disponible en la información proporcionada
-- Documentación de llama.cpp / GGUF: no disponible en la información proporcionada
-- Aplicación ScriptedVN: no disponible en la información proporcionada
+- Modelo original Qwen3.5-4B: no disponible (referenciado como "Qwen" en la model card, sin URL concreta)

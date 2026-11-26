@@ -2,95 +2,92 @@
 
 ## Resumen
 
-DIVER-1-0.1s-tiny es el codificador (encoder) del modelo fundacional de electroencefalografía intracraneal (iEEG) DIVER-1, desarrollado por el proyecto DIVER (Han et al., 2025) y convertido al formato de la librería braindecode. Procesa señales de iEEG segmentadas en parches de 0,1 s a 500 Hz y cubre las modalidades SEEG, ECoG, DBS (intracraneales) y EEG de cuero cabelludo. Es la variante "tiny" y de ventana corta de la familia, con 12.660.546 parámetros (~12,7 M) y un pipeline de extracción de características.
+DIVER-1-0.1s-tiny es el encoder de un modelo fundacional para electroencefalografía intracraneal (iEEG), desarrollado por el DIVER Project y publicado por primera vez en Han et al. (2025) bajo el título "DIVER-1: Scaling intracranial EEG foundation models for transferable representations". La versión alojada en Hugging Face es un port a la librería Braindecode, que expone el encoder como `braindecode.models.DIVER1` con pesos en safetensors y float32, listo para extracción de características y ajuste fino supervisado.
 
-El problema que aborda es la falta de representaciones transferibles para señales cerebrales invasivas, donde tradicionalmente cada tarea y cada paciente exigen entrenar un modelo desde cero. DIVER-1 se preentrena de forma auto-supervisada sobre 5.310 horas de ECoG y SEEG (352.000 horas-canal, aproximadamente 54 veces el volumen de preentrenamiento basado en BrainTreeBank) y después se afina para tareas concretas, como decodificación cognitiva naturalista (Neuroprobe) y detección de crisis epilépticas (MAYO). El repositorio publicado contiene únicamente el codificador preentrenado, sin cabeza de clasificación.
+Se trata de un modelo pequeño (12,66 millones de parámetros) que procesa parches de 0,1 segundos muestreados a 500 Hz, pensado para señales intracraneales (sEEG, ECoG, DBS) y también escalares (EEG). Su relevancia radica en que traslada el paradigma de los modelos fundacionales al dominio de las neuroseñales clínicas: en lugar de entrenar un decodificador desde cero para cada paciente y cada tarea, se parte de un encoder preentrenado sobre miles de horas de registros y se ajusta con pocos datos.
 
-Su relevancia actual radica en que forma parte del primer estudio de escalado controlado (compute-aware) en preentrenamiento auto-supervisado de iEEG, con barrido de escala de datos, número de sujetos, duración de entrenamiento y tamaño de modelo hasta 1.800 millones de parámetros. La variante tiny permite experimentar con el codificador en hardware modesto, incluso en CPU.
+Este checkpoint concreto es el más ligero de la familia DIVER-1 (variante "tiny") y está pensado para experimentación rápida, validación de pipelines y despliegue en entornos con recursos limitados. No incluye cabeza de clasificación: el usuario debe añadirla y ajustarla según la tarea downstream.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Codificador tipo transformer con escalado de atención muP (`mup_attention=True`); preentrenamiento auto-supervisado con enmascaramiento (token de máscara y cabezas de reconstrucción eliminados en esta conversión) |
-| Parametros totales | 12.660.546 (~12,7 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no es un contexto de tokens de texto; entrada en parches de 0,1 s a 500 Hz, con `n_times` múltiplo de 50 muestras (geometría guardada: 6 canales y 500 muestras, aunque el codificador no depende de ella) |
-| Tipos de cuantizacion | no disponible (pesos en float32; la conversión parte de bfloat16 y pasa a float32) |
-| Idiomas soportados | no disponible (modelo de señal, no lingüístico) |
-| Licencia | MIT para los pesos (DIVER Project); el código de braindecode es BSD-3-Clause |
-| Formato de pesos | safetensors (compatible con `pytorch_model_hub_mixin`) |
+| Arquitectura | Encoder transformer para iEEG (DIVER-1), parches de 0,1 s a 500 Hz, atención con escalado muP (`mup_attention=True`) |
+| Parámetros totales | 12.660.546 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en número de tokens; la ventana de entrada se define por `n_times` (múltiplo de 50 muestras a 500 Hz; geometría guardada: 6 canales × 500 muestras) |
+| Tipos de cuantización | no disponible (pesos publicados en float32; el original estaba en bfloat16) |
+| Idiomas soportados | no aplica (señales fisiológicas, no texto) |
+| Licencia | MIT (pesos, DIVER Project); el código de Braindecode es BSD-3-Clause |
+| Formato de pesos | safetensors (más `pytorch_model_hub_mixin` para carga vía `from_pretrained`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un codificador basado en transformer que procesa señales de iEEG segmentadas en parches de 0,1 s a 500 Hz. Emplea escalado de atención muP (Maximal Update Parametrization), una técnica que estabiliza el entrenamiento y facilita la transferencia de hiperparámetros entre distintas escalas de modelo. El preentrenamiento es auto-supervisado: incluye un token de enmascaramiento y cabezas de reconstrucción que forman parte del pipeline original, pero que se eliminan en la conversión a braindecode, de modo que el repositorio solo contiene el codificador.
+El modelo es un encoder transformer que tokeniza la señal iEEG en parches de 0,1 segundos a una frecuencia de muestreo de 500 Hz (50 muestras por parche), condicionado por la geometría de electrodos (posiciones en metros, como en MNE) y por el tipo de canal, que determina la modalidad: SEEG, ECoG y DBS se tratan como intracraneales, mientras que EEG se trata como escalar. La atención utiliza escalado muP, una elección que busca estabilizar el entrenamiento y la transferencia entre configuraciones de tamaño y montaje. El encoder no depende de una geometría fija: la guardada es de 6 canales y 500 muestras, pero al cargar se puede pasar un montaje propio, `n_times` y `n_outputs` distintos.
 
-En cuanto a los datos, el preentrenamiento de las dos variantes publicadas (DIVER-1-0.1s y DIVER-1-1s) abarca 5.310 horas de ECoG y SEEG, equivalentes a 352.000 horas-canal, unas 54 veces el volumen de preentrenamiento basado en BrainTreeBank. El estudio realiza un barrido de escalado controlado sobre escala de datos, número de sujetos, duración del entrenamiento y tamaño de modelo, hasta 1.800 millones de parámetros, y evalúa los resultados en Neuroprobe (decodificación cognitiva naturalista) y MAYO (detección de crisis). La información disponible no detalla si se aplicaron RLHF o DPO, algo que, por otra parte, no es habitual en un codificador de señal.
+El preentrenamiento se realizó sobre un corpus exclusivamente iEEG (denominado DIVER I) de 37 sujetos, 5.310 horas y 352.000 horas-canal. De ellas, 4.028 horas (aproximadamente el 76 %) provienen de un conjunto privado recogido por los autores: ECoG/sEEG de larga duración de 25 pacientes con epilepsia farmacorresistente, unos 7 días por paciente a 2 kHz, con aprobación de comité de ética y en varios centros. El resto procede de AJILE12 (Peterson et al., 2022; 12 sujetos; DANDI 000055), disponible en NEMAR como `nm000358`. El checkpoint publicado es solo el encoder: se han eliminado el token de máscara y las cabezas de reconstrucción usadas durante el preentrenamiento, y los tensores bfloat16 se han convertido a float32. El script `convert_diver1_weights.py` del repositorio reproduce la conversión, y las características del encoder coinciden con el modelo oficial con un error de 0,0e+00 en float32 sobre CPU, tanto para canales intracraneales como escalares.
 
 ## Capacidades
 
-- Extracción de características (feature extraction) de señales de iEEG en modalidades SEEG, ECoG y DBS (intracraneales) y EEG de cuero cabelludo.
-- Acepta las posiciones de electrodos en `chs_info` (en metros, como en MNE); el tipo de canal determina la modalidad procesada.
-- El codificador es independiente de la geometría guardada (6 canales, 500 muestras): permite cargar un montaje propio, `n_times` y `n_outputs`.
-- Reproduce las características del codificador oficial con diferencia 0,0e+00 en float32 sobre CPU, tanto para canales intracraneales como de cuero cabelludo.
-- No incluye cabeza de clasificación: braindecode la inicializa al cargar, por lo que el uso directo requiere fine-tuning según el protocolo del paper (`scripts/finetune_neuroprobe.sh`).
-- No soporta generación de texto, tool calling, razonamiento multi-paso ni uso como agente; no es un modelo lingüístico.
-- Capacidades multilingües: no aplica.
+- Extracción de características (feature extraction) de señales iEEG y EEG: produce representaciones latentes por ventana de señal, reutilizables como entrada para clasificadores, regresores o modelos posteriores.
+- Procesamiento de señales intracraneales en tres modalidades (SEEG, ECoG, DBS) y de EEG de cuero cabelludo, con la modalidad determinada por el tipo de canal en `chs_info`.
+- Acepta montajes arbitrarios: el número de canales y la longitud de ventana se configuran en la carga (`chs_info`, `n_times`), no están fijados por los pesos.
+- Ajuste fino supervisado para tareas downstream (el protocolo del artículo usa `scripts/finetune_neuroprobe.sh`), con la cabeza de clasificación inicializada por Braindecode.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: no es un modelo de lenguaje.
+- No dispone de modo "thinking", visión, audio ni capacidades multilingües.
+- No incluye cabeza de clasificación en el release: la clasificación requiere entrenamiento adicional.
 
 ## Casos de uso
 
-- Detección de crisis epilépticas: partiendo del codificador preentrenado y afinándolo sobre datos tipo MAYO, se puede clasificar cada segmento de iEEG como crisis o no crisis; el paper sitúa la variante DIVER-1-1s en el mejor AUROC de MAYO, lo que respalda el enfoque de transferencia.
-- Decodificación cognitiva naturalista: integrar el codificador en el pipeline de Neuroprobe y afinar una cabeza de regresión o clasificación para predecir variables cognitivas a partir de ECoG/SEEG durante tareas naturalistas.
-- Representaciones para interfaces cerebro-computador (BCI): usar el codificador congelado para generar embeddings de ventanas de iEEG y alimentar con ellos clasificadores ligeros, reduciendo el coste frente a entrenar un modelo completo por paciente.
-- Investigación en neurociencia de poblaciones: extraer embeddings de grabaciones intracraneales para análisis de dinámica poblacional y comparación entre regiones o sujetos.
-- EEG de cuero cabelludo: al aceptar canales EEG (scalp), el modelo puede emplearse en tareas no invasivas; conviene tener en cuenta que el preentrenamiento es mayoritariamente intracraneal y la transferencia puede ser menor.
-- Baseline en benchmarks de señales: sirve como arquitectura de referencia dentro de braindecode para comparar contra otros de los más de 65 modelos publicados en la librería.
-- Despliegue con recursos limitados: con 12,7 M de parámetros y un repositorio de 0,1 GB, la inferencia es viable en CPU, lo que facilita prototipado y validación sin GPU.
+- Decodificación de intención motora en interfaces cerebro-máquina: el encoder preentrenado sobre iEEG de larga duración puede ajustarse con pocos ensayos por paciente para predecir movimiento o intención a partir de ECoG, reduciendo el tiempo de calibración frente a entrenar desde cero.
+- Detección y predicción de crisis epilépticas: las representaciones del encoder, entrenadas en parte sobre registros de pacientes con epilepsia farmacorresistente, sirven como base para clasificadores de estado ictal/interictal o de pre-ictal, con ajuste fino sobre los registros del centro.
+- Investigación en neurociencia cognitiva: extracción de embeddings de ventanas de 0,1 s para análisis de correlación con estímulos, comportamiento o variables clínicas, aprovechando que el modelo no depende de un montaje concreto.
+- Transferencia entre modalidades: usar el mismo encoder para sEEG, ECoG y EEG escalar, lo que facilita protocolos que combinan registros intracraneales y de cuero cabelludo en un mismo estudio.
+- Prototipado rápido y validación de pipelines: con 12,7 M de parámetros y 0,1 GB de repositorio, permite iterar sobre preprocesado, montajes y estrategias de ajuste fino en CPU o en una GPU de gama media antes de escalar a variantes mayores.
+- Sistemas de monitorización neurológica en investigación clínica: integración del encoder en pipelines de registro continuo (por ejemplo, datos tipo AJILE12) para generar características en tiempo casi real y alimentar detectores de eventos.
+- Benchmarking de modelos fundacionales de neuroseñales: al ser un port verificado numéricamente contra el modelo oficial, sirve como referencia reproducible para comparar arquitecturas y estrategias de preentrenamiento en iEEG.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos para esta variante concreta en la información disponible. El paper asociado evalúa DIVER-1 en dos benchmarks retenidos (Neuroprobe para decodificación cognitiva naturalista y MAYO para detección de crisis) y señala que DIVER-1-1s alcanza el mejor AUROC en MAYO, pero no se proporcionan las cifras concretas en el material disponible. La única métrica de fidelidad documentada es la equivalencia de características del codificador en float32 sobre CPU con el modelo oficial (diferencia 0,0e+00).
+No se han publicado resultados de benchmarks en la información disponible. La model card solo documenta la equivalencia numérica del encoder con el modelo oficial (diferencia de 0,0e+00 en float32 sobre CPU) y remite al protocolo de ajuste fino del artículo (`scripts/finetune_neuroprobe.sh`) para la evaluación downstream, sin cifras en la información proporcionada.
 
 ## Requisitos de hardware
 
-- Tamaño del modelo: 12.660.546 parámetros en float32, aproximadamente 50,6 MB de pesos (el repositorio ocupa 0,1 GB).
-- Cabe en cualquier GPU de consumo e incluso en CPU; no requiere aceleradores de gama alta.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU moderna (por ejemplo, RTX 3060 o superior) es suficiente, aunque no hay datos de rendimiento publicados.
-- Opciones de despliegue: braindecode (PyTorch) con `DIVER1.from_pretrained` y `pytorch_model_hub_mixin`; pesos en safetensors.
-- La validación de equivalencia se realizó en float32 sobre CPU; no se garantiza la precisión en kernels de GPU ni en precisión mixta.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: muy baja; con 12,66 M de parámetros en float32, los pesos ocupan aproximadamente 50 MB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer y en CPU.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU con al menos 2-4 GB de memoria libre es suficiente (RTX 3060, RTX 4090, A100, H100). El ajuste fino con lotes grandes y ventanas largas requiere más memoria, no cuantificada en la documentación.
+- Cabe en GPU consumer: sí, con amplio margen; también en CPU para inferencia en float32 (la equivalencia numérica documentada se verificó en CPU).
+- Opciones de despliegue: la vía documentada es la librería Braindecode (`DIVER1.from_pretrained`), con PyTorch como backend. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Parcheo / ventana | Preentrenamiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Modalidad | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DIVER-1-0.1s-tiny (este) | 12,7 M | 0,1 s a 500 Hz | 5.310 h de ECoG y SEEG (352k horas-canal) | MIT (pesos) | Hugging Face (braindecode) |
-| DIVER-1-1s | no disponible | 1 s | 5.310 h de ECoG y SEEG (misma base) | MIT (pesos) | Repositorio del proyecto DIVER |
-| Variantes DIVER-1 de mayor tamaño | hasta 1,8 B (en el barrido de escalado) | no disponible | misma base, mayor escala | no disponible | no disponible |
+| DIVER-1-0.1s-tiny (este) | 12,66 M | iEEG (sEEG, ECoG, DBS) y EEG | parches de 0,1 s a 500 Hz; `n_times` configurable múltiplo de 50 | MIT (pesos) | Hugging Face vía Braindecode |
+| Otras variantes de DIVER-1 | no disponible en la información | iEEG | no disponible | MIT (pesos) | Repositorio DIVER-Project/DIVER-1 |
+| Alternativas de modelos fundacionales de EEG/iEEG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparables entre variantes ni con otros modelos fundacionales de EEG (por ejemplo, los más de 65 modelos incluidos en braindecode) en la información consultada.
+No se dispone en la información proporcionada de datos de parámetros, contexto, rendimiento ni licencia de modelos comparables de la misma categoría, por lo que la comparativa cuantitativa queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- El repositorio contiene solo el codificador: no hay cabeza de clasificación y se necesita fine-tuning para cualquier tarea supervisada.
-- La verificación de equivalencia cubre únicamente las características del codificador en float32 sobre CPU; no garantiza precisión downstream, ni el comportamiento en kernels de GPU o precisión mixta.
-- Requiere remuestrear la señal a 500 Hz y que `n_times` sea múltiplo de 50 muestras.
-- Es necesario proporcionar las posiciones de electrodos en `chs_info` con el montaje correcto.
-- El preentrenamiento se apoya mayoritariamente en señales intracraneales (SEEG, ECoG, DBS); el rendimiento en EEG de cuero cabelludo no está cuantificado y podría ser inferior.
-- Posible generalización limitada a poblaciones, equipos de adquisición y protocolos poco representados en los datos de preentrenamiento.
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinación: no aplica, ya que el modelo no es generativo.
-- Licencia MIT para los pesos, lo que permite uso comercial, pero el código de braindecode se distribuye bajo BSD-3-Clause y conviene respetar ambas condiciones.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación externa por parte de la comunidad.
+- El release contiene únicamente el encoder: no hay cabeza de clasificación, y Braindecode la inicializa al cargar, por lo que es imprescindible ajuste fino para cualquier tarea supervisada.
+- La verificación de equivalencia con el modelo oficial cubre solo características del encoder en float32 sobre CPU, para canales intracraneales y escalares; no cubre precisión downstream, kernels de GPU ni precisión mixta.
+- El corpus de preentrenamiento es mayoritariamente privado (4.028 de 5.310 horas, unos 25 pacientes con epilepsia farmacorresistente), lo que limita la reproducibilidad completa del preentrenamiento y puede introducir sesgo hacia esa población clínica y esos centros.
+- El modelo está entrenado sobre señales de pacientes con epilepsia y registros de investigación; su generalización a otras poblaciones, edades o patologías no está documentada.
+- `n_times` debe ser múltiplo de 50; la señal debe remuestrearse a 500 Hz y las posiciones de electrodo pasarse en `chs_info` en metros (formato MNE). Un preprocesado incorrecto invalida las representaciones.
+- Riesgo de alucinación: no aplica en el sentido de modelos de lenguaje, pero sí existe riesgo de predicciones espurias fuera de distribución en tareas downstream.
+- Licencia MIT para los pesos, lo que permite uso comercial; el código de Braindecode es BSD-3-Clause. Debe citarse el artículo original, los datasets (AJILE12, DANDI 000055) y el software Braindecode (DOI 10.5281/zenodo.17699192).
+- Uso clínico: no se documenta validación regulatoria ni certificación; cualquier aplicación clínica requeriría validación independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/braindecode/DIVER-1-0.1s-tiny
-- Paper (arXiv): https://arxiv.org/abs/2512.19097
-- PDF del paper: https://arxiv.org/pdf/2512.19097
-- Repositorio del proyecto DIVER-1: https://github.com/DIVER-Project/DIVER-1/tree/25638eb38ef297b582ab79ae1c96260f57c155b3
-- Carpeta de Google Drive con los pesos originales: https://drive.google.com/drive/folders/1Wmv36jifjE0Jj6noGOFFsqRzK-4xnj1b
+- Modelo en Hugging Face: https://huggingface.co/braindecode/DIVER-1-0.1s-tiny
+- Artículo (arXiv): https://arxiv.org/abs/2512.19097
+- Repositorio original DIVER-1: https://github.com/DIVER-Project/DIVER-1/tree/25638eb38ef297b582ab79ae1c96260f57c155b3
 - Documentación de `braindecode.models.DIVER1`: https://braindecode.org/stable/generated/braindecode.models.DIVER1.html
-- Documentación de braindecode: https://braindecode.org/stable/index.html
-- Repositorio de braindecode: https://github.com/braindecode/braindecode
-- Demo Model Explorer: https://huggingface.co/spaces/braindecode/model-explorer
+- Repositorio de Braindecode: https://github.com/braindecode/braindecode
+- Cita de Braindecode en Zenodo: https://doi.org/10.5281/zenodo.17699192
+- Dataset AJILE12 en NEMAR: https://nemar.org/dataset/nm000358
+- Dataset AJILE12 en DANDI: https://dandiarchive.org/dandiset/000055
+- Carpeta de Google Drive con los pesos originales: https://drive.google.com/drive/folders/1Wmv36jifjE0Jj6noGOFFsqRzK-4xnj1b

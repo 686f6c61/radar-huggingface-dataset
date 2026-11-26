@@ -2,104 +2,101 @@
 
 ## Resumen
 
-RusMind Зёрнышко 1.9 es un modelo de lenguaje de 83 millones de parámetros entrenado desde cero por DICPlay, un proyecto que se presenta como "IA nacional rusa". Se trata de un transformer denso de 10 capas y dimensión 768, con tokenizador propio y una ventana de contexto de tan solo 1024 tokens. Su distribución principal es en formato GGUF (167 MB en F16), lo que permite ejecutarlo completamente en local en un portátil o incluso en un teléfono.
+RusMind Zernyshko 1.9 es un modelo de lenguaje de 83 millones de parámetros entrenado desde cero por DICPlay, un desarrollador independiente que promueve la iniciativa "RusMind" como un proyecto de IA nacional rusa. Se trata de un modelo diminuto (10 capas de 768 dimensiones) diseñado específicamente para el idioma ruso, con su propio tokenizador y un enfoque explícito en conocimiento sobre Rusia, memoria conversacional y corrección ortográfica y de puntuación.
 
-El modelo está especializado exclusivamente en ruso y su propuesta de valor no es la potencia bruta, sino la corrección lingüística y el conocimiento factual sobre Rusia. La versión 1.9 introduce mejoras medibles en puntuación (SAGE puntuación: 0,34 frente a 0,27 de la 1.6) y corrección ortográfica (0,10-0,15 frente a 0,06), además de un entrenamiento en tres fases que incluye un etapa específica de "anclaje" de conocimiento sobre historia y cultura rusas.
+El modelo se distribuye principalmente en formato GGUF (F16, ~167 MB), lo que permite ejecutarlo completamente offline en portátiles e incluso teléfonos mediante llama.cpp, LM Studio u Ollama. Su ventana de contexto es de solo 1024 tokens y utiliza el formato de diálogo ChatML. La relevancia de este modelo radica en su propuesta de eficiencia extrema: un modelo de 83M de parámetros que, según el autor, alcanza en MERA 2.0 un rendimiento comparable a SmolLM-3B, un modelo 36 veces mayor.
 
-Es relevante ahora como ejemplo de modelo "from scratch" de escala ultrapequeña, con licencia propia restrictiva para uso comercial, y como alternativa ligera para tareas de post-proceso textual en ruso donde no se justifica desplegar un modelo de miles de millones de parámetros. Su puntuación global MERA 2.0 de 0,048 se sitúa, según el autor, al nivel de SmolLM-3B pese a ser 36 veces más pequeño.
+La ficha se basa exclusivamente en la información publicada en la model card y en los metadatos de Hugging Face; no se dispone de documentación técnica adicional, paper ni resultados de benchmarks independientes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (10 capas, dimensión 768), entrenado desde cero |
-| Parametros totales | 83.083.008 |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer (10 capas × 768 dimensiones), entrenado desde cero |
+| Parametros totales | 83.083.008 (~83 M) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | F16 (único archivo publicado, 167 MB); al ser GGUF es compatible con cuantizaciones derivadas en llama.cpp, aunque no se distribuyen |
+| Tipos de cuantizacion | F16 (único archivo GGUF publicado) |
 | Idiomas soportados | Ruso (ru) |
-| Licencia | RusMind License (DICPlay): gratuita para uso personal, no comercial, investigación y evaluación; uso comercial solo mediante contrato escrito |
+| Licencia | RusMind License (DICPlay) — uso personal, no comercial y de investigación gratuito; uso comercial solo con contrato escrito |
 | Formato de pesos | GGUF (F16); safetensors en el repositorio DICPlay/RusMind-Zernyshko-1.9 |
-| Tokenizador | Propio, entrenado desde cero |
-| Formato de dialogo | ChatML |
-| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 10 capas con dimensión oculta de 768 y 83 millones de parámetros, entrenado íntegramente desde cero con un tokenizador propio (no derivado de Llama ni de otro modelo existente). El entrenamiento se organizó en tres etapas: primero un corpus de web rusa limpia de 310 millones de tokens, filtrado con un pipeline propio contra publicidad y spam; después una fase de diálogo; y finalmente una etapa separada de refuerzo de conocimiento sobre Rusia (historia, cultura, geografía).
+El modelo es un transformer de 10 capas y 768 dimensiones ocultas, entrenado completamente desde cero con un tokenizador propio específico para ruso. El entrenamiento se realizó en tres etapas según la model card: primero un corpus de web en ruso de 310 millones de tokens filtrado mediante un sistema propio de detección de publicidad y spam; después una fase de diálogos; y finalmente una etapa de refuerzo de conocimiento sobre Rusia (historia y cultura).
 
-No se documentan en la información disponible detalles sobre el uso de RLHF, DPO u otras técnicas de alineación, ni sobre la composición exacta del dataset de diálogo. Tampoco se especifican innovaciones arquitectónicas más allá de la elección de un tokenizador propio y el enfoque en corrección ortográfica y de puntuación como objetivo explícito de entrenamiento. El formato de conversación es ChatML.
+No se especifican detalles sobre la función de activación, el mecanismo de atención, la composición exacta del dataset de diálogos ni si se emplearon técnicas de alineación como RLHF o DPO. La model card menciona mejoras en puntuación y corrección ortográfica respecto a la versión 1.6, pero no documenta la innovación técnica concreta que las produce.
 
 ## Capacidades
 
 - Generación de texto conversacional en ruso con formato ChatML.
-- Memoria de conversación a corto plazo: retiene nombre (incluidos nombres poco comunes como Evlampia o Tagir), ciudad, edad y nombre de mascota dentro de la ventana de contexto; el autor reporta 8/8 en su test de memoria.
-- Conocimiento factual sobre Rusia: historia, cultura y símbolos; el autor reporta 12/12 en su batería de 12 preguntas.
-- Corrección de puntuación en ruso (tarea SAGE de puntuación): puntuación de 0,34.
-- Corrección ortográfica y de erratas en ruso (tarea SAGE): puntuación de 0,10-0,15.
-- Razonamiento básico y comprensión de situaciones cotidianas y chistes (subtareas NewReasoning y LIMUR de MERA 2.0).
+- Memoria conversacional: retiene datos proporcionados en el chat como nombre, ciudad, edad o nombre de mascota (8 de 8 en el test propio del autor).
+- Conocimiento factual sobre Rusia: historia, cultura y símbolos nacionales (12 de 12 en el test propio del autor).
+- Corrección ortográfica y de puntuación en textos rusos (tareas SAGE de MERA 2.0).
+- Razonamiento básico y comprensión de situaciones cotidianas y chistes (subconjuntos NewReasoning y LIMUR de MERA 2.0).
+- Ejecución offline en dispositivos de consumo.
 - No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
-- Capacidad multilingüe: limitada al ruso según la model card y los metadatos.
 
 ## Casos de uso
 
-- Corrección ortográfica y de puntuación en pipelines editoriales en ruso: el modelo puede ejecutarse como paso de post-proceso sobre textos generados o redactados por humanos, corrigiendo comas y erratas con un coste computacional mínimo (167 MB en F16).
-- Preprocesado de texto ruso en aplicaciones móviles o de escritorio: al caber en cualquier portátil y teléfono y funcionar offline, es adecuado para normalizar o revisar texto sin conexión ni dependencia de API.
-- Asistente conversacional ligero con memoria de sesión: para chatbots de dominio acotado que necesiten recordar datos del usuario (nombre, ciudad, edad) dentro de una conversación corta, gracias a su ventana de 1024 tokens y su formato ChatML.
-- Filtrado y clasificación de contenido en ruso: puede emplearse como modelo de primera pasada para detectar spam o publicidad en textos, dado que fue entrenado con un filtro propio de este tipo de contenido.
-- Educación y divulgación sobre cultura rusa: responde a preguntas factuales sobre historia, símbolos y tradiciones (por ejemplo, el águila bicéfala del escudo o la Maslenitsa), útil en aplicaciones didácticas offline.
-- Desarrollo y experimentación con modelos from scratch: sirve como banco de pruebas de bajo coste para estudiar tokenizadores propios, currículos de entrenamiento por etapas y evaluación con MERA 2.0 en un entorno reproducible en local.
-- Integración en LM Studio, llama.cpp u Ollama: para prototipado rápido de aplicaciones de texto en ruso sin infraestructura GPU, usando `llama-cli -hf` u `ollama run hf.co/...`.
+- Asistente conversacional offline en ruso: el modelo cabe en 167 MB y puede ejecutarse en un portátil o teléfono sin conexión mediante llama.cpp u Ollama, adecuado para entornos sin red o con requisitos de privacidad estrictos.
+- Corrección de textos rusos: uso como corrector de ortografía y puntuación en borradores o publicaciones, aprovechando las mejoras reportadas en las tareas SAGE de MERA 2.0.
+- Tutor básico de cultura e historia rusa: responde preguntas factuales sobre símbolos, festividades y personajes históricos, según los resultados del test propio del autor.
+- Prototipado y experimentación educativa: su tamaño reducido permite entrenar, modificar y desplegar en hardware modesto, útil para docencia o investigación sobre modelos desde cero.
+- Chatbot de memoria ligera: conserva datos del usuario dentro de una sesión corta (hasta 1024 tokens) para interacciones personalizadas simples.
+- Filtrado o preprocesado de texto en pipelines rusos: puede emplearse como modelo auxiliar para tareas de normalización lingüística antes de pasar a modelos mayores.
+- No es adecuado para generación de código, matemáticas complejas, tareas multilingües ni contextos largos.
 
 ## Benchmarks y rendimiento
 
-| Benchmark / tarea | RusMind Zernyshko 1.9 | RusMind Zernyshko 1.6 | Referencia citada |
-|---|---|---|---|
-| MERA 2.0 (global) | 0,048 | no disponible | ~nivel de SmolLM-3B (según el autor) |
-| MERA 2.0 NewReasoning (lógica) | 0,12-0,13 | no disponible | no disponible |
-| MERA 2.0 LIMUR (humor y situaciones cotidianas) | 0,21-0,22 | no disponible | no disponible |
-| SAGE puntuación (comas) | 0,34 | 0,27 | no disponible |
-| SAGE ortografía | 0,10-0,15 | 0,06 | no disponible |
-| Test de memoria del autor (8 preguntas) | 8/8 | no disponible | no disponible |
-| Test de conocimiento de Rusia del autor (12 preguntas) | 12/12 | no disponible | no disponible |
+Resultados publicados por el autor según la metodología MERA 2.0:
 
-Los datos de MERA 2.0 y SAGE proceden de la model card del autor; no se aportan resultados de MMLU, HumanEval, GSM8K ni de benchmarks estándar internacionales. Las comparaciones con SmolLM-3B son afirmaciones del autor no verificadas de forma independiente en la información disponible.
+| Tarea / metrica | Zernyshko 1.9 | Zernyshko 1.6 | Referencia |
+|---|---|---|---|
+| Puntuacion global MERA 2.0 | 0,048 | no disponible | SmolLM-3B: nivel comparable según el autor |
+| Puntuacion (SAGE, puntuacion) | 0,34 | 0,27 | no disponible |
+| Correccion ortografica (SAGE) | 0,10–0,15 | 0,06 | no disponible |
+| Logica (NewReasoning) | 0,12–0,13 | no disponible | no disponible |
+| Comprension de situaciones (LIMUR) | 0,21–0,22 | no disponible | no disponible |
+| Test de memoria propio | 8/8 | no disponible | no disponible |
+| Test de conocimiento de Rusia propio | 12/12 | no disponible | no disponible |
+
+No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los tests de memoria y conocimiento de Rusia son de elaboración propia del autor y no han sido verificados externamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 0,5 GB en F16 (167 MB de pesos más overhead de contexto y runtime); cabe holgadamente en cualquier GPU consumer e incluso en CPU.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. Cualquier GPU con 1 GB o más de VRAM (GTX 1050, RTX 3050, RTX 4090, A100, H100) es más que suficiente.
-- Cabe en GPU consumer: sí, en todas las GPU consumer actuales y en la mayoría de iGPU.
-- Despliegue: llama.cpp (`llama-cli -hf DICPlay/RusMind-Zernyshko-1.9-GGUF -cnv`), Ollama (`ollama run hf.co/DICPlay/RusMind-Zernyshko-1.9-GGUF`), LM Studio (buscando "RusMind Zernyshko"); pesos safetensors para Transformers en el repositorio base.
-- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño (83 M de parámetros) se espera inferencia en tiempo real en CPU moderna, pero no se aportan cifras medidas.
+- VRAM estimada para inferencia: inferior a 1 GB en F16 (~167 MB de pesos más overhead de contexto y runtime); cabe holgadamente en cualquier GPU de consumo e incluso en CPU.
+- GPU recomendadas: no requiere GPU; funciona en CPU. Cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) es más que suficiente.
+- Cabe en GPU de consumo: sí, en todas; también en dispositivos móviles.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf DICPlay/RusMind-Zernyshko-1.9-GGUF -cnv`), Ollama (`ollama run hf.co/DICPlay/RusMind-Zernyshko-1.9-GGUF`), LM Studio (búsqueda "RusMind Zernyshko"), y Transformers con los pesos safetensors del repositorio DICPlay/RusMind-Zernyshko-1.9.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera inferencia en tiempo real incluso en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| RusMind Zernyshko 1.9 | 83 M | 1024 | Ruso | RusMind License (no comercial sin contrato) | GGUF F16, safetensors | Entrenado desde cero, tokenizador propio, foco en corrección en ruso |
-| SmolLM-3B | 3 B | no disponible en esta ficha | Multilingüe (inglés principal) | no disponible en esta ficha | no disponible en esta ficha | Citado por el autor como referencia de rendimiento en MERA 2.0 |
-| RusMind Zernyshko 1.6 | 83 M (misma familia) | 1024 | Ruso | RusMind License | GGUF | Versión anterior; peor puntuación y ortografía según el autor |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| RusMind Zernyshko 1.9 | 83 M | 1024 | Ruso | RusMind License (no comercial sin contrato) | GGUF, safetensors |
+| SmolLM-3B (referencia citada por el autor) | ~3 B | no disponible en esta ficha | Multilingüe | no disponible en esta ficha | no disponible en esta ficha |
+| Modelos rusos de tamano pequeño (por ejemplo, variantes de 100–500 M) | no disponible | no disponible | Ruso | no disponible | no disponible |
 
-No se dispone de datos verificables de otros modelos rusos de escala comparable en la información proporcionada; la comparación con SmolLM-3B es una afirmación del autor y no una evaluación independiente.
+La única comparación aportada por el autor es con SmolLM-3B en la métrica global MERA 2.0 (0,048, "a su nivel" pese a ser 36 veces menor). No se dispone de datos de otros modelos rusos comparables en la información proporcionada, por lo que la comparativa completa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto muy corta (1024 tokens): insuficiente para documentos largos, conversaciones extensas o tareas de resumen sobre textos de cierta longitud.
-- Modelo monolingüe en ruso: no se debe esperar un rendimiento fiable en castellano, inglés u otros idiomas.
-- Escala muy reducida (83 M de parámetros): capacidad de razonamiento y conocimiento del mundo limitada; los resultados MERA 2.0 (0,048 global) son bajos en términos absolutos.
-- Riesgo elevado de alucinación en preguntas factuales fuera del dominio reforzado (Rusia); los tests 12/12 y 8/8 son internos del autor y no validados de forma independiente.
-- Sesgos potenciales derivados del corpus de web rusa y de la etapa de "anclaje" de conocimiento sobre Rusia; no se documenta ningún proceso de mitigación de sesgos.
-- Licencia restrictiva: el uso comercial, la reventa, la distribución de versiones modificadas y la integración en productos requieren contrato escrito con DICPlay; la licencia es "other" y no una licencia open source estándar (Apache, MIT, etc.).
-- Modelo distribuido "tal cual" ("as is"), sin garantías.
-- Solo se publica un archivo F16; no hay cuantizaciones oficiales Q4/Q8, aunque el formato GGUF permita generarlas.
-- Fecha de creación del repositorio (2026-11-03) y escasa tracción (0 descargas, 0 likes) en el momento de la consulta: ecosistema y validación externa prácticamente inexistentes.
+- Ventana de contexto muy corta (1024 tokens): insuficiente para documentos largos, conversaciones extensas o tareas de recuperación.
+- Modelo monolingüe en ruso: no se garantiza un rendimiento aceptable en castellano ni en otros idiomas.
+- Riesgo elevado de alucinación y de errores factuales por su tamaño; los tests de conocimiento y memoria son internos del autor y no verificados.
+- Sesgos potenciales derivados del corpus web ruso y de la etapa de "refuerzo de conocimiento sobre Rusia", que puede introducir una orientación editorial concreta en las respuestas.
+- Licencia restrictiva: el uso comercial, la reventa, la distribución de versiones modificadas y la integración en productos requieren contrato escrito con DICPlay; la licencia no es de código abierto.
+- Solo se publica un archivo GGUF en F16; no hay cuantizaciones Q4/Q8 ni otras variantes en el repositorio.
+- Sin paper, sin documentación de arquitectura detallada y con muy poca tracción (227 descargas, 0 likes en el momento de la consulta): madurez y soporte comunitario limitados.
+- No apto para código, matemáticas avanzadas, tool calling ni flujos de agentes.
 
 ## Enlaces
 
 - Repositorio GGUF en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF
-- Repositorio safetensors (Transformers): https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
-- Archivo F16: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/RusMind-Zernyshko-1.9-F16.gguf
-- Licencia: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/LICENSE
-- Benchmark MERA 2.0: no se proporciona enlace en la información disponible
-- Paper o blog técnico: no disponible en la información proporcionada
+- Repositorio de pesos safetensors: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
+- Archivo F16 GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/RusMind-Zernyshko-1.9-F16.gguf
+- Licencia (archivo LICENSE del repositorio): https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/LICENSE
+- Contacto del autor (Telegram): https://t.me/DanKirillin
+- Contacto del autor (MAX): https://max.ru/u/f9LHodD0cOIENg5eShucR-RyhC02ijx-XXjPGcPbjBRy6_KKvmdKIu9tdQU

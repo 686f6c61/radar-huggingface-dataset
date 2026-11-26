@@ -2,116 +2,105 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-LokalBot-GGUF es una cuantizacion Q8_0 en formato GGUF de un ajuste fino mediante LoRA sobre el modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-1.7B. El modelo lo publica el desarrollador stevyhacker como parte del proyecto LokalBot, una herramienta de transcripcion de reuniones y dictado por voz que se ejecuta en local a traves de llama.cpp (llama-server). El objetivo del ajuste es mejorar el rendimiento en lenguas eslavas del sur (serbio, croata y bosnio), en situaciones de cambio de codigo (code-switching) y en la gestion de silencios y ruido ambiental durante el dictado, manteniendo intacto el resto de idiomas soportados por el modelo base.
+Qwen3-ASR-1.7B-LokalBot-GGUF es una cuantización y ajuste fino del modelo de reconocimiento automático del habla Qwen/Qwen3-ASR-1.7B, publicada por el desarrollador stevyhacker. El objetivo es ofrecer una variante lista para usar en LokalBot, una herramienta de transcripción de reuniones y dictado por voz que se ejecuta en el dispositivo mediante `llama.cpp` y `llama-server`. El modelo incorpora dos checkpoints: una versión `v3` que ajusta tanto el decodificador como las cuatro capas superiores del codificador de audio y el proyector multimodal, y una versión `v2` que solo ajusta el decodificador.
 
-El modelo resuelve un problema concreto: el modelo original de Qwen presenta tasas de error elevadas en serbio, croata y bosnio, ademas de alucinar texto en clips de silencio o ruido y de degradarse cuando el hablante alterna idiomas dentro de una misma frase. El ajuste fino corrige estas debilidades sin sacrificar los idiomas de guardia (ingles, aleman, frances, espanol y ruso) ni el rendimiento en reuniones del corpus AMI.
+La relevancia del modelo reside en su enfoque en lenguas eslavas del sur (serbio, croata y bosnio), en el cambio de código bilingüe y en la robustez frente a silencios y ruido ambiental en escenarios de dictado. Según la model card, el ajuste reduce el WER de forma notable en estas lenguas y en code-switching, manteniendo un rendimiento estable en lenguas de guarda como inglés, alemán, francés, español y ruso. Todo el entrenamiento se realizó con corpus públicos con licencias CC0 y CC-BY-4.0, sin datos privados ni corpus no comerciales.
 
-La arquitectura es la del modelo base de Qwen, un transformer decoder-only con una torre de audio congelada durante el entrenamiento. El repositorio contiene dos ficheros: el decodificador ajustado en Q8_0 (2,165 GB) y el proyector de audio (mmproj) sin modificar en Q8_0 (355,7 MB). La licencia es Apache 2.0 y el modelo esta pensado para inferencia en local, con un rendimiento medido de 29,1 veces en tiempo real sobre un Apple M4 Max con Metal.
+El modelo se distribuye en formato GGUF con cuantización Q8_0, con un tamaño combinado de aproximadamente 2,52 GB (2,165 GB de decodificador y 355,7 MB de `mmproj`). Está pensado para inferencia en hardware de consumo, con un rendimiento declarado de 31,24 veces tiempo real en un Apple M4 Max con Metal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con torre de audio (base Qwen3-ASR), ajuste fino LoRA |
-| Parametros totales | 2.031.739.904 |
+| Arquitectura | Transformer multimodal de ASR (codificador de audio + proyector + decodificador de lenguaje), basado en Qwen3-ASR-1.7B |
+| Parametros totales | 2.031.739.904 (dato real de safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 |
+| Tipos de cuantizacion | Q8_0 (unica cuantizacion publicada) |
 | Idiomas soportados | en, sr, hr, bs, de, fr, es, ru, ja, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (decodificador Q8_0 + mmproj Q8_0) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (decodificador + `mmproj` para el codificador de audio y proyector) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino mediante LoRA del decodificador de Qwen3-ASR-1.7B, manteniendo la torre de audio (audio_tower.*) completamente congelada durante el entrenamiento. El resultado es un par de ficheros GGUF: el decodificador ajustado (v2, scale=1.0) en Q8_0 y el proyector de audio (mmproj) sin modificar, que es bit a bit identico al del repositorio oficial ggml-org/Qwen3-ASR-1.7B-GGUF. El modelo base tiene 2.031.739.904 parametros y el repositorio ocupa 2,5 GB.
+El modelo base Qwen3-ASR-1.7B es un sistema de reconocimiento automático del habla que combina un codificador de audio (audio tower), un proyector multimodal que alinea las representaciones acústicas con el espacio del decodificador, y un decodificador de lenguaje de tipo transformer. La variante LokalBot introduce ajustes finos mediante LoRA: en la versión `v3` se aplica un LoRA de rango 32 al decodificador y un LoRA de rango 16 a las cuatro capas superiores del codificador de audio y al proyector, con una tasa de aprendizaje acústica diferencial de 0,4× y un factor de escala de 1,15. La versión `v2` solo ajusta el decodificador con escala 1,0 y utiliza el `mmproj` original sin modificar.
 
-El entrenamiento se realizo exclusivamente con corpus de voz publicos con licencias CC0 y CC-BY-4.0: google/fleurs (train), classla/ParlaSpeech-RS (train, CC-BY-4.0), facebook/voxpopuli (hr y en, train, CC0) y edinburghcstr/ami (ihm y sdm, train, CC-BY-4.0, usado solo como ancla KL). Ademas se generaron datos sinteticos sin licencia para ruido, reverberacion, silencio y cambio de codigo. No se uso ningun corpus CC-BY-SA, no comercial ni grabaciones privadas, y los conjuntos de validacion y test son estrictamente disjuntos. Para preservar los idiomas de guardia se aplico un anclaje mediante divergencia KL con cobertura de masa (mass-covering Forward KL) contra el modelo original.
+El entrenamiento se realizó exclusivamente con corpus públicos con licencias permisivas: `google/fleurs` (train), `classla/ParlaSpeech-RS` (train, CC-BY-4.0), `facebook/voxpopuli` para croata e inglés (train, CC0), `edinburghcstr/ami` en las condiciones `ihm` y `sdm` (train, CC-BY-4.0), además de datos sintéticos libres de licencia para ruido, reverberación, silencio y cambio de código. No se utilizaron corpus CC-BY-SA, no comerciales ni grabaciones privadas de usuarios, y los conjuntos de entrenamiento están estrictamente disjuntos de los de desarrollo, holdout y AMI-400. No se especifica en la información disponible el número total de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla multilingue en en, sr, hr, bs, de, fr, es, ru, ja y zh.
-- Transcripcion de dictado por voz con gestion robusta de silencios y ruido ambiental: abstencion limpia del 100,0% en el conjunto de holdout ciego (0 ecos de prompt y 0 palabras alucinadas, frente a 8,3% de tasa limpia y 123 palabras alucinadas del modelo original).
-- Cambio de codigo bilingue (sr+en y en+de) con WER del 14,39% en holdout ciego y 0,0% de deriva a alfabetos no latinos.
-- Sesgo de vocabulario personalizado para dictado: 100,0% de recuperacion de terminos objetivo con 5,00% de WER, y 12,41% de WER en presencia de distractores con 0 inyecciones falsas de vocabulario.
-- Transcripcion de reuniones (corpus AMI, condiciones ihm y sdm): 8,54% de WER en holdout y 11,83% en dev.
-- Idiomas de guardia (en, de, fr, es, ru) preservados sin olvido: 4,46% de WER en holdout ciego, con en 4,30%, de 3,50% y ru 5,84%.
-- Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
-- No se documentan capacidades de tool calling, agentes, vision ni audio generativo; el modelo es exclusivamente ASR.
+- Reconocimiento automático del habla (ASR) para transcripción de audio a texto.
+- Transcripción de reuniones en entornos de micrófono cercano (`ihm`) y de campo lejano (`sdm`), con mejora específica en el conjunto AMI.
+- Dictado por voz con sesgo de vocabulario personalizado: permite primar términos concretos mediante un prompt de vocabulario, con una tasa de recuerdo declarada del 100,0 % y un WER del 4,00 % en la prueba de sesgo.
+- Abstención limpia ante silencios y ruido ambiental: 100,0 % de tasa limpia, sin ecos del prompt ni palabras alucinadas en las pruebas de dictado.
+- Cambio de código bilingüe (`sr+en`, `en+de`) con un WER del 12,81 % en el holdout ciego.
+- Soporte de lenguas eslavas del sur: serbio, croata y bosnio, con un WER del 17,79 % en modo automático y del 17,59 % con `hr` fijado.
+- Capacidades multilingües de guarda en inglés, alemán, francés, español y ruso, con un WER del 4,53 % en el holdout ciego.
+- Compatibilidad con endpoints (`endpoints_compatible`) para su integración en servicios de inferencia.
+- No se dispone de información sobre soporte de tool calling, agentes o razonamiento multi-paso, ya que el modelo está especializado en ASR.
 
 ## Casos de uso
 
-- Dictado por voz en local: el modelo reconoce el habla y abstiene correctamente ante silencios y ruido ambiental (100,0% de abstencion limpia), lo que evita inserciones de texto fantasma en editores y asistentes de escritura.
-- Transcripcion de reuniones con LokalBot: integrado en llama-server, procesa audio de reuniones (AMI ihm y sdm) con WER de 8,54% en holdout, adecuado para actas y resumenes automaticos en local sin enviar audio a la nube.
-- Subtitulado y transcripcion de contenido en serbio, croata y bosnio: mejora el WER del modelo original entre 6,20 y 7,41 puntos porcentuales segun el idioma, util para medios y archivos audiovisuales de la region.
-- Reconocimiento de habla con cambio de codigo en entornos bilingues: maneja frases que alternan serbio e ingles o ingles y aleman con 14,39% de WER, util en reuniones internacionales y soporte tecnico multilingue.
-- Dictado con vocabulario especializado: el sesgo de vocabulario personalizado recupera el 100,0% de los terminos objetivo con 5,00% de WER, apropiado para profesionales de la salud, legal o ingenieria que dictan terminos tecnicos poco frecuentes.
-- Transcripcion en dispositivos Apple Silicon: el modelo corre a 29,1 veces en tiempo real sobre un M4 Max con Metal, lo que permite transcripcion en directo en portatiles sin GPU dedicada.
-- Procesamiento por lotes de audio en espanol, frances, aleman y ruso: los idiomas de guardia mantienen un WER de 4,46% en holdout, por lo que el modelo sirve como motor ASR unico para pipelines multilingues.
+- Transcripción de reuniones en local: el modelo puede procesar audio de reuniones grabadas con micrófono cercano o de campo lejano, con un WER del 9,79 % en `ihm` y del 24,41 % en `sdm` sobre el conjunto AMI-400, lo que lo hace adecuado para actas automáticas en herramientas de escritorio.
+- Dictado por voz en aplicaciones de productividad: gracias a la abstención limpia ante silencios y ruido (100,0 % de tasa limpia) y al sesgo de vocabulario personalizado, puede integrarse en editores de texto o asistentes de escritura sin generar texto espurio cuando el usuario no habla.
+- Transcripción para lenguas eslavas del sur: con un WER del 17,79 % en serbio, croata y bosnio, es una opción práctica para herramientas de subtitulado o documentación en estos idiomas, donde muchos modelos multilingües genéricos tienen un rendimiento inferior.
+- Soporte de cambio de código en entornos bilingües: adecuado para transcripciones de conversaciones que alternan serbio e inglés o inglés y alemán, con un WER del 12,81 %, útil en equipos internacionales o en atención al cliente multilingüe.
+- Subtitulado y postproducción de audio: el modelo puede transcribir material audiovisual con ruido y reverberación, y su capacidad de sesgo de vocabulario permite fijar nombres propios, marcas o terminología técnica para reducir errores.
+- Integración en pipelines de CI/CD para procesamiento de audio: al ser compatible con endpoints y con `llama-server`, puede desplegarse como servicio interno para transcribir llamadas, notas de voz o grabaciones de soporte de forma automatizada.
+- Herramientas de accesibilidad: transcripción en tiempo real de voz a texto para personas con dificultades auditivas, con un rendimiento de 31,24 veces tiempo real en Apple M4 Max, lo que permite procesar audio más rápido que en tiempo real en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-Resultados del holdout ciego (466 clips) frente al modelo original ggml-org/Qwen3-ASR-1.7B-GGUF en Q8_0, con decodificacion greedy identica (temperature=0, top_k=1, repeat_penalty=1.0):
+Los resultados publicados en la model card comparan la versión `v3` con el modelo original (`stock`) y con la versión `v2`, usando decodificación greedy idéntica (`temperature=0`, `top_k=1`, `repeat_penalty=1.0`) y las plantillas de prompt de producción de LokalBot, sobre un holdout ciego de 466 clips y el conjunto AMI-400.
 
-| Prueba | Original Q8_0 | v1 (s=1.25) | v2 (s=1.0) | Delta v2 vs original |
+| Prueba | Stock Q8_0 | v2 (s=1.0, enc. congelado) | v3 (s=1.15, top-4 enc.) | Delta v3 vs stock |
 |---|---:|---:|---:|---:|
-| Eslavo del sur (sr/hr/bs) auto WER | 24,64% | 19,37% | 17,96% | -6,68 pp |
-| Eslavo del sur (sr/hr/bs) hr fijado WER | 24,60% | 20,24% | 18,00% | -6,60 pp |
-| sr auto / hr / bs auto WER | 22,35% / 27,58% / 23,82% | 16,99% / 21,26% / 19,68% | 15,95% / 20,17% / 17,62% | -6,40 / -7,41 / -6,20 pp |
-| Croata fuera de dominio (VoxPopuli hr) auto WER | 24,95% (0,29% no latino) | 20,04% (0,04% no latino) | 18,86% (0,00% no latino) | -6,09 pp |
-| Cambio de codigo (sr+en, en+de) WER | 37,12% (0,18% no latino) | 15,54% (0,14% no latino) | 14,39% (0,00% no latino) | -22,73 pp |
-| Tasa limpia en silencio/ruido de dictado | 8,3% (16 ecos, 123 palabras) | 100,0% (0 ecos, 0 palabras) | 100,0% (0 ecos, 0 palabras) | +91,7 pp |
-| Recuperacion de vocabulario / WER de dictado | 86,7% / 9,00% | 100,0% / 4,00% | 100,0% / 5,00% | +13,3 pp / -4,00 pp |
-| WER con distractores (0 inyecciones) | 13,83% | 15,25% | 12,41% | -1,42 pp |
-| Reuniones AMI (ihm / sdm) WER | 7,91% / 24,86% | 12,03% / 28,86% | 8,54% / 26,00% | regresion de v1 corregida |
-| Idiomas de guardia (en/de/fr/es/ru) WER | 4,35% | 4,44% | 4,46% | sin olvido |
-| Throughput (M4 Max Metal) | 28,53x RTF | 22,90x RTF | 29,07x RTF | paridad o mejor |
-
-Resultados del conjunto de desarrollo (387 clips):
-
-| Prueba | Original Q8_0 | v1 (s=1.25) | v2 (s=1.0) | Delta v2 vs original |
-|---|---:|---:|---:|---:|
-| Eslavo del sur (sr/hr/bs) auto / hr WER | 25,06% / 23,52% | 21,12% / 20,83% | 19,12% / 19,41% (0,0% no latino) | -5,94 / -4,11 pp |
-| Croata fuera de dominio (VoxPopuli hr) auto WER | no disponible en el fragmento proporcionado | no disponible | no disponible | no disponible |
-| Idiomas de guardia WER | 3,97% | no disponible | 3,77% | -0,20 pp |
-| Reuniones AMI ihm WER | no disponible | no disponible | 11,83% | no disponible |
-
-No se han publicado resultados de benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible, ya que el modelo es exclusivamente de reconocimiento del habla.
+| Eslavo del sur (`sr`/`hr`/`bs`) `auto` WER | 24,64 % | 17,96 % | 17,79 % | -6,85 pp |
+| Eslavo del sur (`sr`/`hr`/`bs`) `hr` fijado WER | 24,60 % | 18,00 % | 17,59 % | -7,01 pp |
+| Croata OOD (`VoxPopuli hr`) `auto` / `hr` | 24,95 % / 22,59 % | 18,86 % / 19,65 % | 19,06 % / 18,66 % | -5,89 / -3,93 pp |
+| Cambio de código (`sr+en`, `en+de`) WER | 37,12 % | 14,39 % | 12,81 % | -24,31 pp |
+| Tasa limpia en silencio/ruido de dictado | 8,3 % (16 ecos, 123 palabras) | 100,0 % (0 ecos, 0 palabras) | 100,0 % (0 ecos, 0 palabras) | +91,7 pp |
+| Recuerdo de vocabulario / WER en dictado | 86,7 % / 9,00 % | 100,0 % / 5,00 % | 100,0 % / 4,00 % | +13,3 pp / -5,00 pp |
+| WER con distractores en dictado (0 inyecciones) | 13,83 % | 12,41 % | 11,35 % | -2,48 pp |
+| AMI holdout (`n=25` cada uno) `ihm` / `sdm` | 7,91 % / 24,86 % | 8,54 % / 26,0 % (dato truncado en la informacion) | no disponible | no disponible |
+| AMI-400 ampliado `ihm` / `sdm` | 10,24 % / 26,08 % | 26,04 % (`sdm`) | 9,79 % / 24,41 % | -0,45 / -1,67 pp |
+| Lenguas de guarda (`en`/`de`/`fr`/`es`/`ru`) WER | 4,35 % | no disponible | 4,53 % | +0,18 pp |
+| Rendimiento en tiempo real (Apple M4 Max Metal) | 28,53× (31,34× en AMI-400) | no disponible | 31,24× (31,69× en AMI-400) | superior |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en Q8_0: aproximadamente 2,5 GB (2,02 GiB de decodificador mas 339 MiB de proyector de audio), mas el espacio de contexto y el buffer de audio.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de memoria libre; el modelo se ejecuta en CPU y en Apple Silicon mediante Metal. No se especifican requisitos para A100, H100 o RTX 4090 en la informacion disponible.
-- Cabe en GPU de consumo: si, en tarjetas con 4 GB o mas de VRAM, y en equipos Apple Silicon. El rendimiento medido es de 29,1 veces en tiempo real sobre un Apple M4 Max con Metal.
-- Opciones de despliegue: llama.cpp (llama-server), con soporte de endpoints compatibles; el modelo esta empaquetado como GGUF y pensado para LokalBot.
-- Latencia y throughput: 29,07x RTF sobre M4 Max Metal; no se proporcionan datos de latencia para otras plataformas.
+- VRAM estimada para inferencia: al ser una cuantización Q8_0 con un decodificador de 2,165 GB y un `mmproj` de 355,7 MB, el peso combinado es de aproximadamente 2,52 GB. La VRAM necesaria será algo superior por el contexto y los buffers de audio, aunque no se especifica una cifra exacta en la información disponible.
+- GPU recomendadas: no se detallan modelos concretos de GPU en la información proporcionada. El benchmark de referencia se realizó en una Apple M4 Max con backend Metal.
+- Cabe en GPU de consumo: por el tamaño de los pesos (2,52 GB combinados), es plausible en GPUs de consumo con al menos 4-6 GB de VRAM, aunque no se confirma en la información disponible.
+- Opciones de despliegue: `llama.cpp` mediante `llama-server`, con soporte de `mmproj` para el codificador de audio. El modelo está marcado como `endpoints_compatible`, lo que facilita su integración en servicios de inferencia. No se mencionan vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: 31,24 veces tiempo real en el holdout ciego y 31,69 veces tiempo real en AMI-400 sobre Apple M4 Max con Metal, frente a 28,53× y 31,34× del modelo original.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | WER eslavo del sur (holdout) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-LokalBot v2 (este modelo) | 2.031.739.904 | no disponible | 17,96% auto / 18,00% hr fijado | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3-ASR-1.7B original (ggml-org, Q8_0) | 2.031.739.904 | no disponible | 24,64% auto / 24,60% hr fijado | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3-ASR-1.7B-LokalBot v1 (s=1.25) | 2.031.739.904 | no disponible | 19,37% auto / 20,24% hr fijado | Apache 2.0 | GGUF en Hugging Face |
+| Modelo | Parametros | Contexto | WER eslavo del sur (auto) | WER code-switching | Licencia | Formato |
+|---|---:|---|---:|---:|---|---|
+| Qwen3-ASR-1.7B-LokalBot v3 | 2.031.739.904 | no disponible | 17,79 % | 12,81 % | Apache 2.0 | GGUF Q8_0 |
+| Qwen3-ASR-1.7B-LokalBot v2 | 2.031.739.904 | no disponible | 17,96 % | 14,39 % | Apache 2.0 | GGUF Q8_0 |
+| Qwen3-ASR-1.7B (stock, ggml-org) | 2.031.739.904 | no disponible | 24,64 % | 37,12 % | Apache 2.0 | GGUF Q8_0 |
 
-La comparativa se limita a las variantes del mismo modelo base documentadas en la model card; no se dispone de datos de otros modelos ASR comparables en la informacion proporcionada.
+No se dispone en la información proporcionada de comparaciones con otros modelos ASR de la misma categoría (por ejemplo, Whisper o alternativas multilingües), por lo que la comparativa se limita a las variantes del propio modelo base.
 
 ## Limitaciones y advertencias
 
-- El ajuste se ha centrado en eslavo del sur, cambio de codigo y dictado; el rendimiento en otros idiomas depende del anclaje KL y podria degradarse en dominios no cubiertos por el entrenamiento.
-- Las tasas de error siguen siendo relativamente altas en eslavo del sur (17,96% de WER en holdout ciego), por lo que la transcripcion automatica de estos idiomas requiere revision humana en contextos criticos.
-- El modelo puede alucinar texto en audio ambiguo, aunque la tasa de abstencion limpia en silencio y ruido es del 100,0% en el conjunto evaluado.
-- El sesgo de vocabulario personalizado puede inyectar terminos no presentes en el audio en escenarios no evaluados; la model card reporta 0 inyecciones falsas en el conjunto de prueba, pero no garantiza este comportamiento fuera de el.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los corpus de entrenamiento tienen sus propias condiciones (CC0 y CC-BY-4.0), que deben respetarse en la redistribucion.
-- No se documentan sesgos especificos por genero, edad o acento; los conjuntos de evaluacion son limitados (466 clips de holdout y 387 de desarrollo).
-- El modelo esta empaquetado para llama.cpp y LokalBot; el uso con otros runtimes requiere verificar la compatibilidad del formato GGUF y del proyector de audio.
-- La longitud de contexto no esta documentada, lo que limita la planificacion de transcripciones de audio muy largas sin segmentacion.
+- El ajuste está orientado específicamente a lenguas eslavas del sur y a code-switching con inglés y alemán; el rendimiento en otras lenguas puede no ser óptimo.
+- El WER en campo lejano (`sdm`) sigue siendo elevado (24,41 % en AMI-400), lo que limita su uso en entornos con mucho ruido o micrófonos distantes.
+- En lenguas de guarda (`en`/`de`/`fr`/`es`/`ru`) el WER es ligeramente superior al modelo original (4,53 % frente a 4,35 %), un pequeño retroceso que debe tenerse en cuenta si el uso principal es en esas lenguas.
+- No se dispone de información sobre sesgos conocidos, riesgo de alucinación en condiciones no evaluadas, ni límites de longitud de contexto.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la procedencia de los corpus de entrenamiento y las obligaciones de atribución de los datos CC-BY-4.0.
+- El modelo está especializado en ASR y no se documentan capacidades de razonamiento, tool calling o agentes; no debe emplearse como modelo de lenguaje general.
+- La información disponible no detalla requisitos mínimos de hardware ni cifras de latencia en GPU distintas de Apple M4 Max, por lo que el rendimiento en otras plataformas es incierto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/stevyhacker/Qwen3-ASR-1.7B-LokalBot-GGUF
+- Modelo en Hugging Face: https://huggingface.co/stevyhacker/Qwen3-ASR-1.7B-LokalBot-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- GGUF oficial del modelo base: https://huggingface.co/ggml-org/Qwen3-ASR-1.7B-GGUF
 - Repositorio LokalBot: https://github.com/stevyhacker/LokalBot
+- GGUF original de ggml-org: https://huggingface.co/ggml-org/Qwen3-ASR-1.7B-GGUF
 - Corpus FLEURS: https://huggingface.co/datasets/google/fleurs
 - Corpus ParlaSpeech-RS: https://huggingface.co/datasets/classla/ParlaSpeech-RS
 - Corpus VoxPopuli: https://huggingface.co/datasets/facebook/voxpopuli

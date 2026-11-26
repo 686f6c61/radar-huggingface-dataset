@@ -2,98 +2,96 @@
 
 ## Resumen
 
-GLM-5.3-Flash-NInfer es un artefacto de pesos en precisión mixta para el motor de inferencia NInfer v3, derivado de GLM-5.3-Flash de zai-org (Zhipu AI) y convertido a partir del checkpoint NVFP4 publicado por NVIDIA. No se trata de un modelo entrenado desde cero, sino de una redistribución cuantizada del modelo original, empaquetada en un formato propietario (`.ninfer`) que solo el motor NInfer puede cargar. El autor del artefacto es el usuario neroued, también responsable del repositorio NInfer.
+GLM-5.3-Flash-NInfer es un artefacto de pesos en precisión mixta para el motor de inferencia NInfer v3, derivado de GLM-5.3-Flash (zai-org) y convertido a partir del checkpoint NVFP4 de NVIDIA. No es un modelo entrenado desde cero, sino una redistribución optimizada de los pesos originales para su ejecución con el runtime NInfer sobre hardware Blackwell, en concreto dos nodos DGX Spark. El paquete incluye pesos de texto, visión, MTP nativo (multi-token prediction) y una cabeza draft Q4 adicional de vocabulario completo para decodificación especulativa.
 
-El modelo subyacente es multimodal (texto e imagen), con arquitectura GLM5Next, que combina atención lineal KDA, MLA dispersa con indexador Kpool, mHC y mezcla de expertos (MoE). Incluye además MTP (multi-token prediction) nativo con hasta cinco borradores y una cabeza draft adicional de vocabulario completo en Q4, pensada para decodificación especulativa. El artefacto ocupa 178,33 GiB repartidos en seis ficheros y está diseñado para ejecutarse de forma distribuida en dos nodos DGX Spark con tensor parallelism 2 y data parallelism de atención 2.
+La arquitectura subyacente, denominada GLM5Next en NInfer, combina atención lineal KDA, MLA dispersa Kpool, mHC y mezcla de expertos (MoE). El artefacto ocupa 178,33 GiB repartidos en seis ficheros y declara una longitud de contexto lógica de 1.048.576 tokens en la configuración de ejemplo (TP2 con DP2 de atención). Está pensado para servir cargas multimodales (imagen-texto a texto) con tool calling, salida restringida, streaming y reutilización de prefijo a través de endpoints compatibles con OpenAI y Anthropic.
 
-Su relevancia es acotada pero clara: permite servir un modelo de gran tamaño y contexto muy largo (1.048.576 tokens lógicos) sobre hardware compacto de NVIDIA Blackwell, con endpoint compatible con OpenAI y Anthropic. La licencia MIT de los pesos originales facilita el uso comercial, aunque el formato cerrado y la dependencia estricta del motor NInfer limitan su portabilidad frente a pesos en safetensors o GGUF.
+Su relevancia es fundamentalmente práctica: demuestra cómo ejecutar un modelo de gran tamaño y contexto millonario en hardware de consumo profesional de gama alta (dos DGX Spark) mediante cuantización agresiva (NVFP4 en expertos enrutados, Q8 en proyecciones de atención, FP8 en bloques MTP) y decodificación especulativa con MTP. La licencia MIT de los pesos y Apache-2.0 del motor facilitan su uso comercial, aunque el despliegue está atado al ecosistema NInfer.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GLM5Next: atencion lineal KDA, MLA dispersa con indexador Kpool, mHC y MoE |
+| Arquitectura | GLM5Next: KDA (atención lineal), Kpool (MLA dispersa), mHC y MoE |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (arquitectura MoE confirmada, sin cifra publicada) |
-| Longitud de contexto | 1.048.576 tokens (limite logico configurado en el ejemplo de despliegue) |
-| Tipos de cuantizacion | NVFP4 (expertos enrutados y tres capas MLP densas), Q8 A16 (proyecciones KDA Q/K/V/O, salida MLA, expertos compartidos), Block-FP8 (expertos enrutados MTP), BF16 (cabeza principal, embeddings, mHC, vision), FP32 (campos KDA/control), Q4 A16 (cabeza draft MTP optimizada) |
+| Parametros activos | no disponible (arquitectura MoE, sin cifra publicada) |
+| Longitud de contexto | 1.048.576 tokens (límite lógico en la configuración de ejemplo) |
+| Tipos de cuantizacion | NVFP4 (expertos enrutados y tres capas MLP densas), Q8 A16 (KDA Q/K/V/O, salida MLA, expertos compartidos), Block-FP8 (expertos MTP), Q4 A16 (cabeza draft MTP), BF16 (cabeza principal, embeddings, mHC, visión), FP32 (campos KDA/control) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (pesos); NInfer es Apache-2.0 |
-| Formato de pesos | `.ninfer` propietario, seis ficheros, 178,33 GiB en total |
+| Licencia | MIT (pesos); NInfer Apache-2.0 |
+| Formato de pesos | `.ninfer` propietario, dividido en seis ficheros (`glm5_3_flash.ninfer` + `part-0001` a `part-0005`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es GLM5Next, una combinación de atención lineal KDA con MLA dispersa mediante indexador Kpool, más mHC y capas MoE. El artefacto no aporta información sobre el entrenamiento original (número de tokens, composición del dataset, fases de RLHF o DPO); esos datos corresponden a GLM-5.3-Flash de zai-org y no se detallan en la model card. Lo que sí describe el autor es el proceso de conversión: se importan los códigos y escalas NVFP4 calibrados de NVIDIA para los expertos enrutados y las tres primeras capas MLP densas, se cuantizan a Q8 A16 las proyecciones KDA y MLA, se convierte a Block-FP8 desde BF16 los expertos enrutados de MTP y se mantienen en BF16 la cabeza principal, embeddings, mHC y el codificador de visión. Los campos FP32 de KDA y control permanecen en FP32.
+El modelo base GLM-5.3-Flash emplea una arquitectura híbrida que NInfer denomina GLM5Next. Combina KDA (atención lineal) para reducir el coste de atención en secuencias largas, Kpool como mecanismo de MLA dispersa con un indexador que por defecto se almacena en FP8 (configurable a BF16 mediante `NINFER_KPOOL_INDEXER_BF16=1`), mHC y una capa MoE con expertos enrutados y expertos compartidos. El artefacto incluye MTP nativo con soporte de 1 a 5 borradores, más una cabeza draft Q4 de vocabulario completo que no recorta el vocabulario y que se usa junto a la cabeza objetivo en BF16.
 
-La innovación principal es la decodificación especulativa con MTP nativo de 1 a 5 borradores y una cabeza draft Q4 A16 de vocabulario completo (sin recorte), que convive con la cabeza objetivo en BF16. El despliegue de referencia usa TP2 con atención DP2, KV en FP8, CUDA Graph para decodificación y hasta ocho peticiones activas. Los expertos usan tensor parallelism por defecto (`ep = 1`), con opción de expert parallelism completo (`ep = 2`) manteniendo TP2 y DP2 en el resto. DFlash y DFlash2 no se emplean en esta arquitectura.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada. Lo que sí está documentado es el proceso de conversión: los códigos y escalas NVFP4 de NVIDIA se importan tal cual para los expertos enrutados y las tres primeras capas MLP densas, mientras que las proyecciones de atención y expertos compartidos se cuantizan a Q8 A16 y los expertos MTP se convierten desde BF16 a Block-FP8. La innovación destacable es la combinación de decodificación especulativa MTP con una cabeza draft cuantizada a Q4, que reduce el coste de las propuestas sin degradar la cabeza objetivo.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla de chat propia de GLM y encuadre de herramientas específico.
-- Razonamiento con modo thinking siempre activo; esfuerzos disponibles `low`, `high` y `max`. No se admite `--no-thinking` ni esfuerzo `none`.
-- Entrada multimodal de imagen y vídeo (pipeline `image-text-to-text`), con Vision habilitable en el arranque.
+- Generación de texto conversacional multi-turno con plantilla de chat propia de GLM.
+- Razonamiento con modo thinking siempre activo; niveles de esfuerzo `low`, `high` y `max` (no se admite `--no-thinking` ni esfuerzo `none`).
+- Comprensión de imagen y vídeo (pipeline `image-text-to-text`); la visión debe habilitarse en el arranque.
 - Tool calling / function calling: NInfer devuelve las llamadas generadas al cliente, pero no las ejecuta.
-- Salida restringida (constrained output) y streaming.
-- Reutilización de prefijo (prefix reuse) para conversaciones largas.
-- Decodificación especulativa con MTP de 1 a 5 borradores y cabeza draft Q4 opcional.
-- Servido con endpoints compatibles con OpenAI y Anthropic.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Salida restringida (constrained output), streaming y reutilización de prefijo.
+- Decodificación especulativa mediante MTP nativo con 1 a 5 borradores y cabeza draft Q4 opcional (`--proposal-head optimized`).
+- Contexto largo de hasta 1.048.576 tokens lógicos en la configuración de referencia.
+- Servido mediante endpoints compatibles con OpenAI y Anthropic.
 
 ## Casos de uso
 
-- Asistencia conversacional de contexto muy largo: con 1.048.576 tokens lógicos se pueden mantener sesiones extensas o ingerir documentación completa sin truncar, aprovechando la reutilización de prefijo para no reprocesar el histórico en cada turno.
-- Análisis de documentos e imágenes: al habilitar Vision en el arranque, el modelo puede recibir capturas, diagramas o fotogramas de vídeo junto con texto, útil para extracción de información estructurada a partir de material visual.
-- Automatización de flujos con herramientas: el soporte de tool calling y salida restringida permite generar llamadas JSON válidas que el orquestador del cliente ejecuta, integrándose en pipelines de agentes sin que el motor ejecute código por sí mismo.
-- Razonamiento complejo por lotes: los niveles de esfuerzo `low`, `high` y `max` permiten ajustar el coste computacional según la tarea, reservando `max` para problemas de análisis y usando `low` en tareas de clasificación o extracción.
-- Servicio interno compatible con OpenAI: al exponer un único endpoint HTTP compatible con OpenAI y Anthropic, se puede sustituir un backend en la nube por este despliegue local sin reescribir los clientes existentes.
-- Despliegue en hardware compacto Blackwell: dos DGX Spark con TP2 y atención DP2 ofrecen una alternativa de inferencia local para equipos que no disponen de un nodo con múltiples H100, a costa de aceptar el formato propietario y el reparto en seis ficheros.
-- Generación de código asistida: aunque no hay benchmarks publicados, el modelo base es de propósito general; el modo thinking y la salida restringida permiten integrarlo en asistentes de edición con formato de respuesta controlado.
+- Análisis de documentación extensa: con un contexto lógico de más de un millón de tokens, permite ingerir manuales, expedientes o bases de código completas en una sola sesión sin trocear, útil para auditoría técnica y legal.
+- Asistentes con entrada visual: al soportar imagen y vídeo, encaja en flujos de revisión de capturas, inspección de interfaces o extracción de datos de documentos escaneados.
+- Automatización de agentes con tool calling: el modelo emite llamadas a herramientas que el orquestador ejecuta, lo que permite construir pipelines de agentes multi-paso sobre los endpoints compatibles con OpenAI.
+- Generación de código asistida en producción: la salida restringida y el streaming facilitan integrarlo en IDE o CI/CD con formatos de respuesta garantizados.
+- Atención al cliente multi-turno: el contexto largo y la reutilización de prefijo reducen el coste de conversaciones largas con historial extenso.
+- Procesamiento por lotes en local: el despliegue sobre dos DGX Spark permite ejecutar inferencia sin depender de la nube, relevante para datos sensibles.
+- Investigación en decodificación especulativa: la combinación MTP + cabeza draft Q4 sirve como banco de pruebas para medir aceleraciones en hardware Blackwell.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del artefacto: 178,33 GiB en seis ficheros; debe copiarse completo en cada nodo. No cabe en una sola DGX Spark.
-- Despliegue de referencia: dos nodos DGX Spark (Blackwell) con TP2, atención DP2, KV en FP8, MTP3, cabeza draft optimizada, CUDA Graph y hasta ocho peticiones activas.
-- Compilación de NInfer con dependencias de desarrollo NCCL y preset `dgx-spark-release` con `NINFER_ENABLE_DISTRIBUTED=ON`.
-- El coordinador lanza los workers, usando SSH para el nodo remoto; los clientes se conectan a un único endpoint HTTP.
-- VRAM estimada para inferencia: no disponible de forma explícita; el autor remite a la estimación de capacidad que imprime el motor al arrancar, que incluye workspace y el pool compartido de KV/State.
-- GPU consumer: no disponible; el artefacto está orientado a DGX Spark y no se documenta compatibilidad con RTX 4090 u otras consumer.
-- Opciones de despliegue: NInfer (`ninfer-serve` para servido, `apps/ninfer` para CLI). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- El artefacto completo ocupa 178,33 GiB y no cabe en un único DGX Spark; requiere dos nodos con todos los ficheros replicados en cada uno.
+- Hardware objetivo: DGX Spark (Blackwell) con NCCL y libibverbs para el despliegue distribuido.
+- Configuración de ejemplo: TP2 con DP2 de atención, KV en FP8, visión habilitada, MTP3, cabeza optimizada, CUDA Graph en decodificación y `max_concurrency = 8`.
+- Los expertos usan TP por defecto (`ep = 1`); puede seleccionarse EP de experto completo con `ep = 2` manteniendo TP2 y DP2 de atención.
+- Motor de inferencia: NInfer (compilación con `cmake --preset dgx-spark-release -DNINFER_ENABLE_DISTRIBUTED=ON`).
+- No hay datos publicados de latencia ni throughput; las asignaciones de memoria en tiempo de ejecución incluyen workspace y pool compartido de KV/State, por lo que debe consultarse la estimación de capacidad al arrancar.
+- No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; el formato `.ninfer` es específico de este runtime.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato / motor | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-NInfer | no disponible | 1.048.576 | `.ninfer` (propietario) | MIT | Requiere NInfer y dos DGX Spark; cuantización mixta NVFP4/Q8/FP8/BF16/Q4 |
-| zai-org/GLM-5.3-Flash | no disponible | no disponible | no disponible | MIT | Modelo base original; sin datos de benchmarks en esta ficha |
-| nvidia/GLM-5.3-Flash-NVFP4 | no disponible | no disponible | NVFP4 | MIT (pesos upstream) | Checkpoint NVFP4 de NVIDIA del que deriva este artefacto |
+| GLM-5.3-Flash-NInfer (este) | no disponible (MoE) | 1.048.576 tokens lógicos | MIT (pesos) | `.ninfer`, motor NInfer | Hugging Face, 257 descargas |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | MIT | safetensors (formato original) | Hugging Face |
+| nvidia/GLM-5.3-Flash-NVFP4 | no disponible | no disponible | no disponible | NVFP4 (checkpoint de NVIDIA) | Hugging Face |
 
-No se dispone de datos de rendimiento comparado ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
+Las alternativas comparables en la información disponible son las dos fuentes directas del propio modelo. No se dispone de datos de rendimiento ni de parámetros para comparar con modelos de otras familias.
 
 ## Limitaciones y advertencias
 
-- El formato `.ninfer` es propietario y solo lo carga el motor NInfer; no es portable a vLLM, llama.cpp, Ollama, TGI ni transformers.
-- El despliegue exige dos nodos DGX Spark con NCCL y configuración de red manual (direcciones, rutas de artefactos, ejecutables remotos vía SSH); no es un despliegue de un solo comando.
-- El modo thinking no se puede desactivar (`--no-thinking` y esfuerzo `none` no están soportados), lo que incrementa el coste de tokens en todas las peticiones.
-- Las llamadas a herramientas se devuelven al cliente pero no se ejecutan en el motor; cualquier ejecución debe implementarse en la capa cliente con las validaciones oportunas.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; deben evaluarse sobre el modelo base GLM-5.3-Flash antes de usarlo en producción.
-- Idiomas soportados no especificados; conviene validar el comportamiento en castellano antes de desplegar.
-- La licencia MIT de los pesos permite uso comercial, pero NInfer se distribuye bajo Apache-2.0 y el artefacto depende de ese motor; revise ambas licencias en conjunto.
-- El artefacto tiene 9 descargas y 0 likes en el momento de la consulta, con fecha de creación en octubre de 2026; es un artefacto reciente y poco validado por la comunidad.
-- No se publican benchmarks propios del artefacto cuantizado; el impacto de la cuantización mixta en calidad frente al modelo original no está medido en la información disponible.
+- El despliegue está atado a NInfer y a hardware Blackwell; no hay soporte documentado para otros motores ni para GPU convencionales.
+- No cabe en un solo DGX Spark: exige dos nodos con interconexión y replicación completa de los seis ficheros.
+- El modo thinking es obligatorio; no se admite desactivarlo ni el esfuerzo `none`, lo que incrementa el coste de tokens en cada petición.
+- NInfer no ejecuta las llamadas a herramientas: el cliente debe implementar el orquestador y validar las respuestas del modelo.
+- DFlash y DFlash2 no están soportados por esta arquitectura.
+- No se publican datos sobre sesgos, tasas de alucinación, idiomas soportados ni evaluación de calidad; la información disponible es exclusivamente técnica sobre el empaquetado y el despliegue.
+- La licencia MIT se aplica a los pesos según la documentación del autor, pero el uso comercial debe verificarse contra la licencia del modelo base en zai-org/GLM-5.3-Flash.
+- El tamaño del repositorio (191,5 GB) y la descarga por partes implican requisitos de almacenamiento y ancho de banda considerables.
 
 ## Enlaces
 
-- Artefacto en Hugging Face: https://huggingface.co/neroued/GLM-5.3-Flash-NInfer
+- Modelo en Hugging Face: https://huggingface.co/neroued/GLM-5.3-Flash-NInfer
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint NVFP4 de NVIDIA: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Repositorio NInfer: https://github.com/Neroued/ninfer
-- Guía de compilación de NInfer: https://github.com/Neroued/ninfer#build
+- Guía de conversión de pesos: https://github.com/Neroued/ninfer/blob/master/docs/weight-conversion.md#glm-53-flash
 - Receta de conversión `glm5next`: https://github.com/Neroued/ninfer/blob/master/tools/convert/official_recipes.py
+- Guía de compilación: https://github.com/Neroued/ninfer#build
 - Configuración de ejemplo para dos Sparks: https://github.com/Neroued/ninfer/blob/master/examples/configs/spark2-glm5_3-flash.toml
 - Guía de despliegue: https://github.com/Neroued/ninfer/tree/master/examples/configs
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE

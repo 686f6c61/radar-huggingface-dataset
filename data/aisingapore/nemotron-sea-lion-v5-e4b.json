@@ -65,11 +65,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Amazon.fr: books, DVDs, video games, music, high-tech, computers, …",
-      "url": "https://www.cdn.amazon.fr/-/en/",
-      "snippet": "Buy and sell online from millions of products in stock. Free delivery for orders over €25. Your items at low prices: culture, high-tech, …"
-    }
-  ]
+  "sources": []
 }

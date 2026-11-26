@@ -2,90 +2,97 @@
 
 ## Resumen
 
-FukaKikuchi-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce el aspecto del personaje Fuka Kikuchi (菊池风香) de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui como derivado no oficial, con fines de generación de imágenes anime, y se distribuye en formato de pesos diffusers junto a un dataset de entrenamiento abierto en el mismo espacio de Hugging Face.
+FukaKikuchi-Lora es un LoRA de personaje para modelos de difusión de imágenes SDXL, entrenado por el usuario abbuibuibui sobre el modelo base waiIllustriousSDXL v17. Representa a Fuka Kikuchi (菊池风香), personaje de la serie *Bottom-tier Character Tomozaki*, y su propósito es permitir la generación consistente de este personaje en ilustraciones de estilo anime con control sobre su identidad, peinado y distintos conjuntos de ropa del uniforme escolar y variantes casuales.
 
-El repositorio incluye siete conjuntos de pesos correspondientes a las épocas E1 a E7 del entrenamiento, de los cuales el autor recomienda E6 como opción por defecto a fuerza 0.8. Cada archivo pesa 456.495.956 bytes (unos 456 MB), y el repositorio completo ocupa 3,2 GB. El modelo está pensado para integrarse en flujos de trabajo de ComfyUI o Auto1111 con checkpoints de la familia Illustrious o NoobAI.
+El repositorio es fundamentalmente un LoRA de tipo character para la familia Illustrious/SDXL, pero contiene en realidad tres linajes de pesos distintos: los archivos de la raíz (WAI/Illustrious), una variante para AutismMix Pony en el subdirectorio `autism_pony/` y una variante para MOSS-Image en `moss/`. Cada linaje requiere su propio modelo base y sus propios prompts, y no deben mezclarse. El autor publica siete checkpoints por época (E1–E7) y recomienda E6 con fuerza 0.8 como configuración por defecto.
 
-La relevancia de esta ficha es acotada: no se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un adaptador de personaje de bajo rango para generación de imágenes. No hay información publicada sobre arquitectura interna del LoRA (rango, capas objetivo, alpha) ni sobre el volumen exacto del dataset más allá de su identificador.
+Es relevante para desarrolladores e investigadores que trabajen en generación de personajes consistentes, pipelines de ilustración anime y evaluación de LoRAs de personaje, porque el autor documenta de forma explícita el proceso de selección de época mediante una matriz de evaluación (10 escenas × 4 fuerzas) y advierte de fallos concretos como la duplicación del sujeto en planos de cuerpo completo con blazer.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL / Illustrious |
-| Parámetros totales | no disponible (cada archivo pesa 456.495.956 bytes) |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | LoRA (Low-Rank Adaptation) sobre SDXL; modelo base waiIllustriousSDXL-v17 |
+| Parametros totales | no disponible (cada archivo pesa 456.495.956 bytes) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no aplica (modelo de difusión de imágenes) |
-| Tipos de cuantización | no disponible (pesos safetensors en precisión de entrenamiento) |
-| Idiomas soportados | en, zh (etiquetas de la model card; los prompts admiten otros idiomas según el codificador de texto del checkpoint base) |
+| Tipos de cuantizacion | no disponible; pesos en precisión completa del entrenamiento |
+| Idiomas soportados | en, zh (metadatos y documentación; los prompts se escriben en inglés) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (compatible con diffusers) |
+| Formato de pesos | safetensors (compatible con diffusers y ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de personaje entrenado sobre waiIllustriousSDXL v17, un checkpoint SDXL de la familia Illustrious orientado a ilustración anime. No se especifican en la información disponible el rango del LoRA, las capas objetivo, el valor de alpha ni la tasa de aprendizaje. El autor indica que las leyendas de entrenamiento usaron `keep_tokens = 2` y que a menudo omiten el color de pelo y de ojos, lo que explica que el modelo dependa de tokens de identidad explícitos para fijar el aspecto.
+Se trata de un LoRA de personaje, es decir, un conjunto de matrices de bajo rango inyectadas en las capas de atención y proyección del UNet de SDXL, que se carga junto al modelo base waiIllustriousSDXL v17. No se especifican en la información disponible el rango del LoRA, la tasa de aprendizaje, el número de pasos ni la composición exacta del dataset, más allá de que las imágenes y captions de entrenamiento están publicadas en el dataset `abbuibuibui/FukaKikuchi-Dataset`. Las captions se generaron con `keep_tokens = 2` y a menudo omiten el color de pelo y de ojos, de modo que la identidad se aprende principalmente a través del token de activación.
 
-El entrenamiento se organiza en siete épocas, con un archivo por época salvo la última, que se guarda sin numerar (`fuka_kikuchi.safetensors`, equivalente a E7). El autor documenta una evaluación comparativa entre épocas y fuerzas de LoRA (matriz de 10 escenas × 4 fuerzas para E5, E6 y E7) y concluye que E6 a 0.8 ofrece el mejor equilibrio entre consistencia facial y estabilidad de composición. Se documenta un fallo recurrente en E5–E7: las tomas de cuerpo completo con el uniforme de blazer a fuerza 0.8 pueden generar dos copias del personaje en la misma imagen. El dataset de entrenamiento está publicado como `abbuibuibui/FukaKikuchi-Dataset`.
+El autor entrenó siete épocas y las evaluó sistemáticamente: las épocas E5, E6 y E7 se sometieron a una matriz de 10 escenas por 4 fuerzas (0.6–1.0). E6 se seleccionó como predeterminada por mantener un retrato consistente, un cuerpo completo con uniforme de chaleco limpio y un único sujeto en escena nocturna a fuerza 0.8. Se documentan fallos concretos: en E5 y E7, el plano de cuerpo completo con blazer puede generar una segunda copia del personaje, y E7 puede añadir un jersey amarillo bajo el blazer. El archivo final de entrenamiento es el no numerado `fuka_kikuchi.safetensors`, que corresponde a E7 (no existe un `-000007`). El SHA-256 de E6 es `C7C69CB978B2B3B2231470DD66FB67B9A52EC5E4D6E635DA1928156363615BEE`.
 
 ## Capacidades
 
-- Generación de imágenes de personaje: reproduce el rostro, el pelo castaño ceniza largo y despeinado, los ojos marrones o avellana y la expresión tranquila de Fuka Kikuchi.
+- Generación de ilustraciones de personaje consistente de Fuka Kikuchi en estilo anime mediante SDXL/Illustrious.
+- Control de identidad mediante el token `fuka_kikuchi` (pelo largo castaño ceniza despeinado, flequillo, ojos marrones/avellana, rostro tranquilo).
 - Control de vestuario mediante tokens específicos: `fuka_kikuchi_blazer_uniform`, `fuka_kikuchi_vest_uniform`, `fuka_kikuchi_casual_cardigan`, `fuka_kikuchi_maid_dress` y `fuka_kikuchi_sailor_casual`.
-- Composición de escena: el autor documenta resultados correctos en retrato frontal, cuerpo completo con uniforme de chaleco y escena nocturna en calle con carteles de tienda.
-- Integración con pipelines SDXL: funciona en ComfyUI y en flujos compatibles con diffusers; parámetros de referencia Euler a, 28 pasos, CFG 4.5, CLIP skip 2, resolución 832×1216.
-- Ajuste de fuerza del adaptador: el rango evaluado va de 0.6 a 1.0, con 0.8 como valor recomendado.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de texto, audio o vídeo; es exclusivamente un adaptador de imagen.
+- Composición de escenas con múltiples personajes controlada mediante prompts negativos (`extra person`, `two girls`, `multiple girls`).
+- Sin capacidad de tool calling, agentes, razonamiento multi-step, visión ni audio: es un modelo generativo de imágenes, no un LLM.
+- Soporte multilingüe limitado a la documentación (inglés y chino); los prompts de inferencia se formulan en inglés.
+- Compatible con pipelines de ComfyUI y diffusers; ajuste de fuerza del LoRA entre 0.6 y 1.0.
 
 ## Casos de uso
 
-- Ilustración de fan art del personaje: generar retratos y escenas de Fuka Kikuchi con un estilo consistente usando el token `fuka_kikuchi` junto con el checkpoint base Illustrious; adecuado porque el LoRA fija los rasgos faciales y el peinado que las leyendas de entrenamiento no describían.
-- Producción de viñetas o doujinshi: mantener la identidad del personaje a lo largo de varias páginas usando la misma semilla base y fuerza 0.8, con el token de vestuario adecuado en cada escena.
-- Creación de contenido para comunidades de la serie: generar imágenes de promoción o portada para foros y wikis con el uniforme escolar de chaleco, que el autor identifica como la variante de cuerpo completo más estable.
-- Pruebas de comparación de épocas: el repositorio conserva E1 a E7 para que investigadores o artistas evalúen el efecto de la época de entrenamiento sobre la fidelidad del personaje en una matriz controlada de escenas y fuerzas.
-- Integración en flujos ComfyUI con otros LoRAs: al ser un adaptador safetensors estándar, puede combinarse con LoRAs de estilo o de composición, ajustando la fuerza para evitar la duplicación del sujeto documentada en cuerpo completo con blazer.
-- Docencia o demostración de fine-tuning de personajes: el par dataset + siete épocas + registro de evaluación pública sirve como ejemplo reproducible de un pipeline de LoRA de personaje sobre SDXL.
+- Generación de ilustraciones de personaje para fan art: cargar E6 a fuerza 0.8 con el token de identidad y el token de uniforme de chaleco permite obtener retratos y cuerpos completos coherentes del personaje sin reentrenamiento.
+- Creación de hojas de personaje y referencias visuales: combinando los tokens de vestuario (blazer, chaleco, cardigan, vestido de maid, sailor) se pueden generar variantes de indumentaria del mismo personaje para documentación o diseño.
+- Integración en pipelines de generación por lotes con ComfyUI: el LoRA se puede encadenar con nodos de upscaling o ADetailer (el autor los desactiva en sus muestras, pero son compatibles) para producir ilustraciones en resolución 832×1216 de forma reproducible.
+- Prototipado de escenas narrativas: la matriz de evaluación del autor incluye escenas nocturnas y retratos, lo que permite usar el LoRA para generar viñetas ilustrativas de fan fiction con el personaje en contextos variados.
+- Evaluación comparativa de LoRAs de personaje: los siete checkpoints publicados y la documentación de fallos por época sirven como caso de estudio para investigar el sobreentrenamiento y la duplicación de sujeto en LoRAs de personaje.
+- Experimentación con distintos modelos base: las variantes `autism_pony/` y `moss/` permiten comparar el mismo personaje bajo AutismMix Pony y MOSS-Image, siempre cargando cada linaje con su modelo base correspondiente y sin mezclar prompts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la información disponible. El autor aporta una evaluación cualitativa por épocas:
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial, etc.) en la información disponible. El autor proporciona únicamente una evaluación cualitativa por época:
 
 | Candidato | Resultado observado | Decisión |
 |---|---|---|
-| E5 | Rostro correcto; cuerpo completo con chaleco limpio y sujeto único; cuerpo completo con blazer a 0.8 puede duplicar el personaje | Alternativa de la matriz |
-| E6 | Retrato consistente; chaleco a 0.6–1.0 mantiene una sola chica; escena nocturna a 0.8 con un solo sujeto; blazer de cuerpo completo aún arriesga duplicación | Recomendado a 0.8 |
-| E7 | Rostro cercano a E6; el blazer de cuerpo completo puede añadir un jersey amarillo bajo la chaqueta y sigue arriesgando duplicación | Alternativa de última época |
+| E5 | Rostro correcto; chaleco a cuerpo completo limpio; blazer a 0.8 puede duplicar al personaje | Alternativa de la matriz |
+| E6 | Retrato consistente; chaleco a 0.6–1.0 con un solo sujeto; escena nocturna a 0.8 con un solo sujeto; blazer a cuerpo completo con riesgo de duplicado | Recomendada a 0.8 |
+| E7 | Rostro cercano a E6; blazer puede añadir jersey amarillo y sigue con riesgo de duplicado | Alternativa de época final |
+
+Configuración de muestreo empleada por el autor: ComfyUI, sampler Euler a, 28 pasos, CFG 4.5, CLIP skip 2, resolución 832×1216, sin hires ni ADetailer.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma específica para el LoRA; el requisito viene determinado por el checkpoint base SDXL/Illustrious sobre el que se aplica (típicamente 8–12 GB en fp16 para inferencia a 832×1216, según el checkpoint y el sampler).
-- GPU recomendadas: el autor generó las imágenes de evaluación en una DGX con ComfyUI; no detalla el modelo de GPU. Para SDXL en general se emplean A100, H100, RTX 4090, RTX 3090 o superiores.
-- GPU de consumo: el adaptador en sí ocupa unos 456 MB, por lo que el límite práctico lo marca el checkpoint base; tarjetas de 8 GB o más pueden ejecutar SDXL con optimizaciones.
-- Opciones de despliegue: ComfyUI (usado por el autor), Auto1111/Forge, diffusers con `load_lora_weights`, y cualquier runner compatible con safetensors SDXL.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma específica para el LoRA; depende del modelo base SDXL y del pipeline. Un SDXL en fp16 requiere típicamente del orden de 8–12 GB de VRAM, pero este dato no está confirmado en la información proporcionada.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el autor solo documenta el uso en ComfyUI sin especificar hardware.
+- Opciones de despliegue: ComfyUI (documentado por el autor) y diffusers (librería declarada en los metadatos). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros LoRAs de personaje comparables en la documentación aportada. Se indica "no disponible" para los campos de comparación.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El propio repositorio contiene tres linajes del mismo personaje (WAI/Illustrious, AutismMix Pony y MOSS-Image), pero no se ofrecen métricas comparativas entre ellos más allá de la recomendación de no mezclar modelos base ni prompts.
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FukaKikuchi-Lora (E6) | no disponible | no aplica | evaluación cualitativa del autor | creativeml-openrail-m | Hugging Face |
-| Alternativas de personaje Illustrious | no disponible | no aplica | no disponible | no disponible | no disponible |
+| FukaKikuchi-Lora (raíz) | waiIllustriousSDXL-v17 | no disponible | no aplica | creativeml-openrail-m | Hugging Face |
+| FukaKikuchi-Lora (`autism_pony/`) | AutismMix Pony | no disponible | no aplica | creativeml-openrail-m | Hugging Face |
+| FukaKikuchi-Lora (`moss/`) | MOSS-Image | no disponible | no aplica | creativeml-openrail-m | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Duplicación del sujeto: en E5, E6 y E7, las tomas de cuerpo completo con `fuka_kikuchi_blazer_uniform` a fuerza 0.8 generan con frecuencia dos copias del personaje; el autor recomienda reforzar `solo` / `1girl` o regenerar.
-- Deriva de color de ojos: los primeros planos pueden desplazar los ojos hacia verde oliva o avellana aunque se solicite marrón; conviene añadir `green eyes` al prompt negativo.
-- Aparición de ahoge: es frecuente en las épocas tardías, lo que puede no ajustarse al diseño de referencia.
-- Fuga de identidad sin token: sin el trigger `fuka_kikuchi`, a fuerzas medias el modelo filtra el aspecto de pelo castaño ceniza del personaje en otras generaciones.
-- Comportamiento sin token de vestuario: a 0.8 el modelo tiende a generar un vestido blanco sin mangas y zapatos de tira blanca, lo que puede no ser deseado.
-- Licencia: CreativeML Open RAIL-M impone restricciones de uso y obligaciones de atribución; es un derivado no oficial y los derechos del personaje y de la obra original pertenecen a sus titulares, lo que limita el uso comercial.
-- Idiomas: la model card solo declara en y zh; el comportamiento con prompts en castellano depende del codificador de texto del checkpoint base y no está evaluado.
-- Sesgos: no documentados por el autor; al ser un LoRA de personaje anime, hereda los sesgos de representación del checkpoint base y del dataset de entrenamiento.
+- Es un derivado hecho por un fan: los derechos del personaje y de la obra original pertenecen a sus titulares; no es un producto oficial.
+- Riesgo de duplicación del sujeto: en planos de cuerpo completo con blazer, las épocas E5, E6 y E7 pueden generar dos copias del personaje; el autor recomienda reforzar `solo` / `1girl` y regenerar.
+- Deriva de color de ojos: en primeros planos los ojos pueden virar hacia oliva/avellana aunque se solicite marrón; se recomienda mantener `brown eyes` y añadir `green eyes` al prompt negativo.
+- Aparición de ahoge no solicitado en las épocas tardías.
+- E7 puede insertar un jersey amarillo bajo el blazer en planos de cuerpo completo.
+- Sin token de vestuario, a fuerza 0.8 el modelo tiende a generar un vestido blanco sin mangas y zapatos blancos, lo que puede desviarse del personaje.
+- Sin el token de nombre, las fuerzas intermedias filtran el pelo castaño ceniza del personaje en otras generaciones.
+- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibición de usos dañinos, difusión de información falsa, etc.); conviene revisar los términos completos antes de desplegar en producción.
+- Idiomas de prompt limitados en la práctica al inglés; la documentación está en inglés y chino.
+- No se documentan sesgos demográficos ni evaluación de alucinación (no aplica a un generador de imágenes), pero la calidad depende fuertemente del modelo base y de la configuración de muestreo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/FukaKikuchi-Dataset
-- Notas de evaluación en chino: `evaluation/横向测评记录.md` (incluido en el repositorio)
-- Checkpoint base: waiIllustriousSDXL v17 (referenciado en la model card; enlace no disponible en la información proporcionada)
+- README en chino: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora/blob/main/README_zh.md
+- Variante AutismMix Pony: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora/tree/main/autism_pony
+- Variante MOSS-Image: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora/tree/main/moss

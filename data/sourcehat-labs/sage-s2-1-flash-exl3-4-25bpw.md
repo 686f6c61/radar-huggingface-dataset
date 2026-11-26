@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Sage-S2.1-Flash-EXL3-4.25bpw es una cuantización EXL3 de precisión mixta del modelo `internlm/Sage-S2.1-Flash`, publicada por SourceHat-Labs. No se ha aplicado abliteración ni ajuste fino: el artefacto modifica únicamente la precisión de los pesos, preservando el comportamiento del modelo original. El resultado es un checkpoint de aproximadamente 89.000 millones de parámetros con un tamaño de repositorio de 178,5 GB, pensado para inferencia eficiente con la librería exllamav3.
+Sage-S2.1-Flash-EXL3-4.25bpw es una cuantizacion EXL3 de precision mixta del modelo internlm/Sage-S2.1-Flash, publicada por SourceHat-Labs. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es una conversion de pesos que reduce la precision del decodificador principal a 4,25 bits por peso (bpw) de media, manteniendo componentes criticos en 6, 7 y 16 bits. El resultado es un artefacto de 89.077.670.750 parametros totales con un payload de 178,5 GB, pensado para servirse con ExLlamaV3.
 
-El modelo base emplea una arquitectura híbrida con bloques de atención KDA (Kimi Delta Attention) y DSA (DeepSeek Sparse Attention), además de capas FFN con mezcla de expertos enrutados (288 expertos por bloque) y expertos compartidos. La cuantización mantiene una ventana de contexto nativa de 1.048.576 tokens y conserva los pesos MTP (multi-token prediction) integrados, calibrados desde BF16 original y almacenados a 8 bits.
+El modelo base emplea una arquitectura hibrida con bloques de atencion KDA (Kimi Delta Attention) y DSA (DeepSeek Sparse Attention), una capa MoE con 288 expertos enrutados por bloque, expertos compartidos y pesos MTP (multi-token prediction) integrados. La metadata nativa de contexto se preserva en 1.048.576 tokens. La cuantizacion no aplica abliteration ni modificaciones de comportamiento: solo cambia la precision de los pesos.
 
-La relevancia de esta ficha radica en que documenta un artefacto de cuantización de precisión mixta no uniforme: el objetivo declarado del decodificador principal es 4,25 bits por peso, pero la asignación real varía por bloque y por matriz (4, 5, 6 y 7 bits según la proyección), con embeddings, cabeza de salida y visión retenidos a 16 bits. Es un caso útil para quienes necesitan desplegar modelos de gran contexto en hardware limitado sin recurrir a cuantizaciones uniformes de menor fidelidad.
+Su relevancia practica es que permite desplegar un modelo de casi 90.000 millones de parametros con contexto de un millon de tokens en tres GPU mediante reparto P2P, reduciendo el coste de VRAM frente al BF16 original. La licencia declarada es MIT, lo que facilita el uso comercial, aunque el autor remite a la documentacion upstream para los terminos exactos de pesos y codigo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención KDA y DSA, FFN MoE con 288 expertos enrutados y expertos compartidos, MTP integrado |
+| Arquitectura | Transformer hibrido con atencion KDA y DSA, capas MoE y MTP integrado |
 | Parametros totales | 89.077.670.750 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.048.576 tokens (metadatos nativos preservados) |
-| Tipos de cuantizacion | EXL3 de precisión mixta; objetivo 4,25 bpw en el decodificador principal; asignación real 4,2543856698 bpw |
+| Longitud de contexto | 1.048.576 tokens |
+| Tipos de cuantizacion | EXL3 de precision mixta; objetivo principal 4,25 bpw (4,2543856698 bpw asignados) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según README upstream fijado; código y pesos) |
-| Formato de pesos | safetensors (librería exllamav3) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (EXL3), libreria exllamav3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido que alterna bloques con atención KDA y bloques con atención DSA. Los bloques DSA incorporan proyecciones específicas (`indexer.wq_b`, `kv_a_mqa`, `q_a`, `q_b`) además de la proyección de salida. Las capas FFN combinan una parte densa con una parte MoE de 288 expertos enrutados y un conjunto de expertos compartidos, lo que explica el elevado número de parámetros totales frente a los activos por token (no documentados en la información disponible). El modelo integra además pesos MTP (multi-token prediction) en el bloque físico 45, lo que sugiere soporte para decodificación especulativa o predicción multi-token.
+El modelo base es un transformer hibrido que alterna bloques con atencion KDA y bloques con atencion DSA. Los bloques DSA incorporan un indexador (`indexer.wq_b`) y proyecciones `kv_a_proj_with_mqa`, `q_a` y `q_b`. Las capas feed-forward son de tipo MoE con 288 expertos enrutados por bloque, ademas de expertos compartidos. El decodificador principal ocupa los bloques fisicos 0-44 y el bloque 45 corresponde a los pesos MTP. La cuantizacion conserva los embeddings, la cabeza de salida y los componentes de vision en 16 bits, y copia sin modificar los proyectores cientificos.
 
-La cuantización se realizó una sola vez desde BF16 original con 128 secuencias de calibración de 4.096 tokens cada una: 32 de matemáticas, 32 de ciencia, 32 de código y 32 de herramientas multi-turno. La asignación de precisión es no uniforme: los bloques enrutados 3, 4, 5 y 39-44 usan 5 bits, el resto de bloques enrutados usan 4 bits; atención y expertos compartidos usan 6 bits, salvo `kv_a_proj_with_mqa` en los bloques 3 y 43, que usa 7 bits; las FFN densas usan 5 bits; embeddings, cabeza de salida y visión se retienen a 16 bits. Los proyectores científicos se copian sin cambios. La calibración MTP usa estados ocultos principales precedentes emparejados con el siguiente token de entrada. El artefacto incluye el código fuente de runtime EXL3 específico de Sage (`sage-exl3-runtime-source.tar.gz`), que debe compilarse contra dependencias compatibles de PyTorch/CUDA; la build original usó `TORCH_CUDA_ARCH_LIST=8.0` sobre GA100.
+El proceso de calibracion usa 128 secuencias de 4.096 tokens: 32 de matematicas, 32 de ciencia, 32 de codigo y 32 de herramientas multi-turno. La cuantizacion principal se ejecuta una sola vez desde el BF16 original. Los pesos MTP se calibran a partir de los estados ocultos principales previos emparejados con el siguiente token de entrada y se almacenan a 8 bits. La asignacion de precision es heterogenea: nueve bloques de expertos enrutados usan 5 bits (bloques fisicos 3, 4, 5 y 39-44), el resto usa 4 bits; atencion y expertos compartidos usan 6 bits, salvo `kv_a_proj_with_mqa` en los bloques 3 y 43, que usa 7 bits; las FFN densas usan 5 bits. No se documenta en la informacion disponible el volumen de tokens de entrenamiento del modelo base ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, heredada del modelo base.
-- Razonamiento matemático y científico, con calibración específica en esos dominios.
-- Generación y comprensión de código, calibrado con secuencias de código.
-- Uso de herramientas y function calling en escenarios multi-turno (calibración dedicada a "multi-turn tools").
-- Capacidades de visión, dado que el artefacto retiene pesos de visión a 16 bits.
-- Ventana de contexto muy larga: 1.048.576 tokens nativos, adecuada para documentos extensos y conversaciones prolongadas.
-- Soporte de predicción multi-token (MTP) integrado, potencialmente útil para decodificación especulativa.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generacion de texto conversacional y continuacion de contexto largo, con ventana nativa de 1.048.576 tokens.
+- Razonamiento y resolucion de problemas, segun la mezcla de calibracion declarada (matematicas, ciencia y codigo).
+- Generacion de codigo, con calibracion especifica sobre secuencias de codigo.
+- Uso de herramientas y function calling, con calibracion sobre trazas multi-turno de herramientas.
+- Razonamiento multi-paso y agentes, apoyado por los pesos MTP integrados para decodificacion especulativa.
+- Capacidades de vision, dado que el autor menciona componentes de vision retenidos en 16 bits en el inventario de tensores.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de repositorios completos: con 1.048.576 tokens de contexto, el modelo puede ingerir árboles de código extensos y responder preguntas sobre arquitectura, dependencias o cambios entre versiones sin trocear el repositorio.
-- Asistentes de investigación científica: la calibración incluye secuencias de ciencia y matemáticas, lo que lo hace adecuado para resumir papers, extraer resultados experimentales y verificar derivaciones.
-- Atención al cliente multi-turno: la calibración con herramientas multi-turno y el contexto largo permiten mantener historiales de conversación extensos y consultar bases de conocimiento internas mediante tool calling.
-- Generación de código en pipelines de CI/CD: puede integrarse como revisor automático de pull requests, generando explicaciones o detectando regresiones en diffs largos gracias a la ventana de contexto.
-- Procesamiento de documentación legal o contractual: la ventana de un millón de tokens permite comparar contratos completos, detectar cláusulas contradictorias y resumir anexos sin truncar.
-- Despliegue en hardware limitado con exllamav3: al estar cuantizado a ~4,25 bpw con precisión mixta, permite servir un modelo de 89.000 millones de parámetros en GPUs de gama alta para consumidores o en nodos con menos VRAM que la versión BF16.
-- Análisis multimodal de documentos: los pesos de visión retenidos a 16 bits permiten procesar capturas, diagramas o páginas escaneadas junto con texto largo en un mismo contexto.
+- Atencion al cliente automatizada: la ventana de 1.048.576 tokens permite mantener historiales de conversacion muy largos y multiples sesiones en un mismo contexto sin truncar, con un coste de VRAM inferior al del BF16 gracias a la cuantizacion a 4,25 bpw.
+- Analisis de repositorios completos: el modelo puede recibir grandes volumentes de codigo en una sola pasada y responder preguntas de arquitectura o generar parches, aprovechando la calibracion sobre secuencias de codigo.
+- Agentes con tool calling: la calibracion sobre trazas multi-turno de herramientas y los pesos MTP lo hacen adecuado para pipelines de agentes que encadenan llamadas a APIs y razonamiento multi-paso.
+- Procesamiento de documentos extensos: contratos, informes tecnicos o expedientes de cientos de miles de tokens pueden analizarse en una unica inferencia, reduciendo la necesidad de chunking y recuperacion.
+- Asistencia en investigacion cientifica: la calibracion incluye secuencias de ciencia y matematicas, por lo que puede emplearse para resumir literatura, extraer relaciones y resolver problemas cuantitativos.
+- Despliegue en infraestructura limitada: el perfil de referencia con reparto P2P en tres GPU permite servir el modelo en entornos con menos memoria agregada que la requerida por el BF16 completo.
+- Generacion de codigo en produccion: puede integrarse en pipelines de CI/CD para revision de cambios y generacion de tests, siempre que se validen las salidas antes de aplicarlas.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 178,5 GB (166,248 GiB) en pesos cuantizados; se necesita al menos esa cantidad de VRAM para cargar el modelo completo en memoria, más overhead de runtime y caché KV para el contexto.
-- GPU recomendadas: el artefacto se compiló originalmente para GA100 (A100). Para cargar los 178,5 GB en una sola GPU se requiere una GPU con 192 GB o más (H200, B200); en A100 de 80 GB o H100 de 80 GB sería necesario repartir el modelo entre varias GPUs.
-- Cabe en consumer GPU: no en una sola unidad; la RTX 4090 (24 GB) no puede alojar el modelo completo. Sería necesario un despliegue multi-GPU o una cuantización adicional más agresiva no incluida en este artefacto.
-- Opciones de despliegue: exllamav3 con el código de runtime específico de Sage incluido en el repositorio (`sage-exl3-runtime-source.tar.gz`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: el payload del modelo es de 178,508 GB (166,248 GiB), excluyendo documentacion y fuentes de runtime. Esa cifra es la referencia minima de memoria agregada para cargar los pesos.
+- GPU recomendadas: el perfil de referencia del autor usa un reparto directo P2P en tres GPU; no se especifican modelos concretos en la informacion disponible.
+- GPU de consumo: no cabe en una unica GPU de consumo convencional por el tamano del payload; se requiere reparto entre varias GPU o memoria agregada equivalente.
+- Opciones de despliegue: ExLlamaV3 (libreria declarada), usando el codigo de serving incluido en `runtime/sage-exl3-serving-source.tar.gz`, el perfil `runtime/REFERENCE-PROFILE.json` y la guia `runtime/SERVING.md`.
+- Latencia y throughput: no disponibles. El perfil de referencia menciona un indexador por lotes y ajustes medidos para reducir el uso de CPU, pero no se publican cifras de rendimiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sage-S2.1-Flash-EXL3-4.25bpw | 89.077.670.750 | 1.048.576 | EXL3 mixta ~4,25 bpw | MIT | Hugging Face (SourceHat-Labs) |
-| internlm/Sage-S2.1-Flash (base) | no disponible | no disponible | BF16 (original) | MIT | Hugging Face (internlm) |
-| Alternativas de mismo tamaño | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Sage-S2.1-Flash-EXL3-4.25bpw | 89.077.670.750 | 1.048.576 | EXL3 4,25 bpw mixta | MIT | Hugging Face, 273 descargas |
+| internlm/Sage-S2.1-Flash (base) | no disponible | 1.048.576 (segun metadata preservada) | BF16 original | MIT (segun README upstream) | Hugging Face |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparado con otros modelos de la misma categoría en la información proporcionada.
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización modifica la precisión de los pesos; aunque se calibra por bloques y matrices, puede introducir degradación en tareas sensibles a precisión numérica, especialmente en matemáticas y código.
-- No se ha aplicado abliteration ni ajuste fino, por lo que los sesgos y alineamiento del modelo base se heredan sin cambios; no se documentan sesgos específicos.
-- Riesgo de alucinación inherente a modelos generativos de este tamaño; no se documentan evaluaciones de factualidad.
-- Idiomas soportados no disponibles: no se puede confirmar cobertura multilingüe ni calidad por idioma.
-- La licencia MIT se declara según el README upstream fijado, pero el artefacto incluye código fuente EXL3 con sus propias licencias y avisos de copyright; es necesario revisar `UPSTREAM-LICENSE-NOTICE.md` y las licencias del runtime antes de uso comercial.
-- El runtime requiere compilar el código fuente incluido contra PyTorch/CUDA compatibles; no se distribuyen extensiones compiladas específicas de máquina, lo que añade complejidad de despliegue.
-- El repositorio no incluye las trazas de calibración, preguntas de benchmark ni generaciones, por lo que no es posible reproducir la evaluación de calidad de la cuantización.
-- El contexto de 1.048.576 tokens requiere caché KV considerable; el coste de memoria y latencia en contextos largos no está documentado.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha, sin validación comunitaria disponible.
+- La cuantizacion altera la precision de los pesos: aunque el autor la describe como "untouched" en cuanto a comportamiento, pueden aparecer degradaciones en tareas sensibles a la precision numerica.
+- El bpw de 4,25 es una media: la asignacion real varia por bloque y proyeccion, por lo que el rendimiento no es equivalente a un modelo uniformemente cuantizado a 4 bits.
+- No se documentan sesgos conocidos ni evaluaciones de alucinacion en la informacion disponible.
+- Los idiomas soportados no estan declarados; no se puede garantizar un rendimiento multilingue sin evaluacion previa.
+- La licencia MIT se declara para codigo y pesos, pero el autor remite a `UPSTREAM-LICENSE-NOTICE.md` y al README upstream; conviene revisar esos documentos antes de un uso comercial.
+- El despliegue requiere ExLlamaV3 y un reparto multi-GPU; no es compatible directamente con otros runtimes como llama.cpp u Ollama segun la informacion disponible.
+- Las trazas de calibracion, las preguntas de benchmark y las generaciones no se distribuyen, lo que limita la reproducibilidad de las evaluaciones.
+- El contexto de 1.048.576 tokens es metadata preservada; el rendimiento efectivo a esa longitud no se ha verificado en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SourceHat-Labs/Sage-S2.1-Flash-EXL3-4.25bpw
+- Modelo en Hugging Face: https://huggingface.co/SourceHat-Labs/Sage-S2.1-Flash-EXL3-4.25bpw
 - Modelo base: https://huggingface.co/internlm/Sage-S2.1-Flash
-- Repositorio de código fuente EXL3 de Sage incluido en el artefacto: `sage-exl3-runtime-source.tar.gz`
-- Documentación de precisión incluida: `PRECISION-ALLOCATION.csv`, `LAYER-PRECISION.csv`, `TENSOR-INVENTORY.csv`, `quantization_config.json`, `precision-map.json`
-- Procedencia y hashes: `sage-provenance.json`, `artifact-files.json`, `runtime-source-identity.json`, `SHA256SUMS`
-- Aviso de licencia upstream: `UPSTREAM-LICENSE-NOTICE.md`, `UPSTREAM-README.md`
+- Repositorio de referencia del runtime: incluido en el propio repositorio (`runtime/sage-exl3-serving-source.tar.gz`, `runtime/REFERENCE-PROFILE.json`, `runtime/SERVING.md`)
+- Documentacion de licencia upstream: `UPSTREAM-README.md` y `UPSTREAM-LICENSE-NOTICE.md` dentro del repositorio
+- Documentacion de precision: `PRECISION-ALLOCATION.csv`, `LAYER-PRECISION.csv`, `TENSOR-INVENTORY.csv`, `quantization_config.json`, `precision-map.json`
+- Procedencia y artefactos: `sage-provenance.json`, `artifact-files.json`

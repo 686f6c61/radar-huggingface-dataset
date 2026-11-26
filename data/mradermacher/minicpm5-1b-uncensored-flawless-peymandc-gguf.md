@@ -2,90 +2,102 @@
 
 ## Resumen
 
-MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF es la version cuantizada en formato GGUF del modelo Peymandc/MiniCPM5-1B-Uncensored-Flawless-Peymandc, una variante "uncensored" (abliterated/decensored) del MiniCPM5 de 1B parametros. La cuantizacion la realiza mradermacher, un conocido contribuidor de la comunidad que publica versiones GGUF estaticas de modelos populares para facilitar su despliegue en llama.cpp y entornos de inferencia local. El modelo base pertenece a la familia MiniCPM5, orientada a inferencia en dispositivo (edge-ai) con soporte de contexto largo y tool calling.
+MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF es la distribucion en formato GGUF del modelo Peymandc/MiniCPM5-1B-Uncensored-Flawless-Peymandc, una variante "uncensored" (abliterated/decensored) del MiniCPM5 de 1B parametros. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants estaticos e imatrix en Hugging Face, mientras que el modelo base deriva de la familia MiniCPM de OpenBMB. El resultado es un modelo de 1.080.632.832 parametros (1B) pensado para generacion de texto en ingles y chino, con enfasis en despliegue en dispositivo (on-device) y edge.
 
-El modelo cuenta con aproximadamente 1.080 millones de parametros (1,08B) en precision completa, lo que lo situa en la categoria de modelos pequenos optimizados para ejecucion en hardware de consumo. Los tags del repositorio indican capacidades de long-context, tool-calling, on-device y edge-ai, ademas de las etiquetas heretic, uncensored, decensored y abliterated, que senalan que se ha aplicado un proceso de eliminacion de rechazos (abliteration) sobre el modelo original. Soporta ingles y chino como idiomas principales y se distribuye bajo licencia Apache 2.0.
+La propuesta de valor es doble. Por un lado, ofrece un modelo de contexto largo y soporte de tool calling en un tamano que cabe en hardware modesto (desde ~0,6 GB en Q2_K hasta ~2,3 GB en f16). Por otro, elimina los mecanismos de rechazo del modelo original mediante tecnicas de abliteration, lo que lo hace atractivo para investigacion sobre alineamiento, generacion creativa sin filtros y escenarios donde las respuestas evasivas son indeseables.
 
-La relevancia de esta ficha radica en que combina dos tendencias: por un lado, la demanda de modelos pequenos desplegables en local con contexto largo y soporte de herramientas; por otro, la existencia de variantes sin censura para casos de uso donde los rechazos del modelo base resultan limitantes. El repositorio incluye 12 cuantizaciones estaticas que van desde Q2_K (0,6 GB) hasta f16 (2,3 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria.
+Es relevante ahora porque combina tres tendencias: la demanda de LLMs pequenos desplegables en local, el interes por variantes sin censura para investigacion, y la disponibilidad inmediata de cuantizaciones GGUF listas para llama.cpp y Ollama. La licencia Apache 2.0 facilita su uso comercial, aunque el caracter "uncensored" introduce riesgos que conviene evaluar antes de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia MiniCPM5, segun tags del repositorio) |
-| Parametros totales | 1.080.632.832 (1,08B) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (el tag "long-context" sugiere contexto extendido, sin cifra concreta) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer decoder-only (familia MiniCPM5, tag "llama"), no disponible el detalle exacto de capas y dimensiones |
+| Parametros totales | 1.080.632.832 (~1,08 B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible el valor numerico exacto; el autor etiqueta el modelo como "long-context" |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K (quants estaticos); quants imatrix/weighted en repo i1-GGUF |
+| Idiomas soportados | en (ingles), zh (chino) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (repo actual); el modelo base se distribuye en transformers/safetensors |
+| Tamano del repo | 10,0 GB (incluye todas las variantes de cuantizacion) |
+| Pipeline | text-generation |
+| Libreria | transformers (metadatos); inferencia via llama.cpp/Ollama con GGUF |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su pertenencia a la familia MiniCPM5 y su naturaleza transformer. Los tags del repositorio indican que se trata de un modelo de generacion de texto con capacidades de contexto largo y tool calling, orientado a inferencia en dispositivo. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo base es un transformer decoder-only de la familia MiniCPM5 (etiquetado como "llama" en los tags), con 1.080.632.832 parametros reales confirmados en safetensors. No se dispone de informacion detallada sobre numero de capas, dimension oculta, numero de cabezas de atencion ni el mecanismo exacto de atencion empleado. El autor etiqueta el modelo como "long-context" y "tool-calling", lo que indica que el entrenamiento original incluyo datos para manejo de contexto extendido y para invocacion de herramientas.
 
-El aspecto tecnico mas destacable es el proceso de abliteration o decensoring aplicado sobre el modelo original, que segun los tags (heretic, uncensored, decensored, abliterated) elimina o modifica las direcciones de activacion asociadas a los rechazos del modelo. Esta ficha documenta la version cuantizada en GGUF producida por mradermacher, que incluye cuantizaciones estaticas (no ponderadas ni con imatrix, segun indica el propio autor) generadas con convert_type hf y quantize_version 2. El autor senala que las cuantizaciones ponderadas o con imatrix no estan disponibles por el momento.
+La variante "Uncensored-Flawless-Peymandc" ha sido sometida a un proceso de abliteration/decensoring (tags "heretic", "abliterated", "decensored"), una tecnica que identifica y neutraliza las direcciones de activacion asociadas al rechazo de peticiones. No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO especificas para esta variante. El autor incluye el tag "reproducible", lo que sugiere que el proceso de creacion esta documentado, aunque el detalle no figura en la model card consultada.
+
+La cuantizacion la realiza mradermacher con su pipeline estandar (quantize_version 2, output_tensor_quantised 1, convert_type hf), que genera quants estaticos con llama.cpp. Se ofrece ademas un repositorio paralelo con quants imatrix/weighted (i1-GGUF), recomendados cuando se busca mejor relacion calidad/tamano en cuantizaciones bajas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Soporte de contexto largo (tag long-context), sin cifra concreta de ventana publicada.
-- Tool calling / function calling (tag tool-calling).
-- Orientado a inferencia en dispositivo y entornos edge (tags on-device, edge-ai).
-- Variante sin censura (abliterated/decensored): menor probabilidad de rechazos ante peticiones que el modelo base rechazaria.
-- Compatible con endpoints (tag endpoints_compatible).
-- No se documentan capacidades de vision, audio ni modo thinking en la informacion disponible.
+- Generacion de texto conversacional multi-turno en ingles y chino.
+- Razonamiento de proposito general y respuesta a instrucciones (pipeline text-generation, tag "conversational").
+- Soporte de tool calling / function calling segun los tags del autor.
+- Capacidad de contexto largo (tag "long-context"), adecuada para documentos extensos, aunque el valor exacto de ventana no esta publicado.
+- Orientado a despliegue on-device y edge-ai por su reducido tamano (1B parametros).
+- Modo "uncensored": responde sin los rechazos tipicos del modelo alineado original, util para investigacion y generacion sin filtros.
+- No se ha confirmado soporte de vision, audio ni modo "thinking" explicito en la informacion disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales: el modelo, con 1,08B parametros y cuantizaciones de 0,6 a 1,3 GB, puede ejecutarse en portatiles y dispositivos de gama media para mantener conversaciones multi-turno sin conexion.
-- Automatizacion de agentes con tool calling: el soporte de function calling permite integrarlo en pipelines donde el modelo decide que herramienta invocar, adecuado para tareas de orquestacion ligera en entornos con recursos limitados.
-- Procesamiento de documentos en ingles y chino: su soporte bilingue y su etiqueta de contexto largo lo hacen util para resumen y extraccion de informacion en flujos documentales de ambos idiomas.
-- Prototipado rapido en edge: al caber en cuantizaciones Q4_K_S (0,8 GB), es viable desplegarlo en Raspberry Pi, mini-PC o moviles para validar ideas antes de escalar a modelos mayores.
-- Investigacion sobre alineacion y censura: al ser una variante abliterated, sirve para estudiar diferencias de comportamiento entre modelos con y sin rechazos en tareas controladas.
-- Generacion de texto en entornos con privacidad estricta: la inferencia local con llama.cpp evita enviar datos a servicios externos, util en sectores regulados.
-- Experimentacion con cuantizaciones: el repositorio ofrece 12 variantes que permiten medir el impacto de la cuantizacion en calidad y latencia sobre un mismo modelo base.
+- Asistente conversacional local en dispositivos de gama baja: con cuantizaciones Q4_K_M (~0,8 GB) el modelo cabe en moviles, Raspberry Pi 5 o mini-PC sin GPU dedicada, permitiendo un chatbot privado sin conexion.
+- Procesamiento de documentos largos en el borde: el tag long-context permite resumir o extraer informacion de contratos, articulos o transcripciones en un portatil, sin enviar datos a la nube.
+- Automatizacion de agentes con tool calling: integrable en flujos donde el modelo decide que funcion invocar (APIs, busquedas, calculos) en entornos con recursos limitados.
+- Investigacion sobre alineamiento y seguridad: la variante abliterated sirve para estudiar como se distribuyen las direcciones de rechazo y comparar comportamientos frente al modelo base.
+- Generacion creativa sin filtros: escritura de ficcion, guiones o contenido donde el modelo alineado original introducia evasivas o rechazos.
+- Prototipado rapido y pruebas de concepto: al ser Apache 2.0 y pesar menos de 1 GB en Q4, se puede iterar en CI/CD o en notebooks sin coste de GPU.
+- Traduccion y asistencia bilingue en/zh: util para aplicaciones de soporte en mercados chinos y angloparlantes con despliegue local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repo GGUF no incluye tablas de MMLU, HumanEval, GSM8K ni comparativas numericas con otros modelos. Tampoco se aportan datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,6 GB (Q2_K/Q3_K_S), 0,8 GB (Q4_K_S/Q4_K_M), 1,0 GB (Q6_K), 1,3 GB (Q8_0) y 2,3 GB (f16), segun los tamanos de fichero publicados.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones bajas; tarjetas como RTX 3060, RTX 4060 o superiores permiten ejecutar Q8_0 o f16 con holgura. Para despliegues en servidor, A100 o H100 no son necesarias dado el tamano del modelo, pero pueden usarse para alto throughput.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna, e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers. No se confirma soporte de vLLM o TGI para esta variante GGUF.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~0,6 GB
+  - Q4_K_M / Q4_K_S: ~0,8 GB
+  - Q6_K: ~1,0 GB
+  - Q8_0: ~1,3 GB
+  - f16: ~2,3 GB
+- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) puede ejecutar el modelo completo en f16; en Q4 cabe incluso en iGPU modernas (Intel Iris Xe, AMD Radeon 780M) y en Apple Silicon.
+- Cabe en consumer GPU: si, en todas las GPU dedicadas actuales y en muchas integradas, incluso en f16.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF (koboldcpp, text-generation-webui). El modelo base en safetensors puede servirse con transformers, vLLM o TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano (1B) se espera generacion en tiempo real en CPU moderna y muy rapida en GPU, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF (este) | 1,08B | no disponible (tag long-context) | Apache 2.0 | GGUF | Variante abliterated, 12 cuantizaciones |
-| Modelo base Peymandc/MiniCPM5-1B-Uncensored-Flawless-Peymandc | 1,08B | no disponible | Apache 2.0 | safetensors | Version sin cuantizar del mismo modelo |
-| Familia MiniCPM5 original | no disponible | no disponible | no disponible | no disponible | Modelo de referencia sin decensoring |
+| MiniCPM5-1B-Uncensored-Flawless-Peymandc (este) | 1,08 B | long-context (valor no publicado) | Apache 2.0 | GGUF, safetensors | Variante uncensored, en/zh, tool calling |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32K (segun model card publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo alineado, multilingue amplio |
+| Llama 3.2 1B Instruct | 1,24 B | 128K (segun model card de Meta) | Llama 3.2 Community License | safetensors, GGUF | Alineado, contexto muy largo, licencia con restricciones |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8K (segun model card de HuggingFace) | Apache 2.0 | safetensors, GGUF | Enfocado en edge, alineado |
 
-No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer diferencias cuantitativas con alternativas de la misma categoria.
+Nota: los datos de los modelos comparables provienen de sus model cards publicas; no se dispone de benchmarks del modelo de esta ficha para una comparacion numerica directa.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated/uncensored: la eliminacion de rechazos puede aumentar la probabilidad de generar contenido danino, sesgado o inapropiado; no se recomienda su uso sin filtros adicionales en aplicaciones orientadas al publico.
-- Riesgo de alucinacion: con 1,08B parametros, la capacidad de razonamiento y la fidelidad factual son limitadas en comparacion con modelos mayores; conviene verificar salidas en tareas criticas.
-- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
-- Longitud de contexto no especificada numericamente en la informacion disponible; el tag long-context no garantiza un tamano concreto de ventana.
-- Cuantizaciones estaticas sin imatrix: el autor indica que las versiones ponderadas no estan disponibles, lo que puede afectar a la calidad en cuantizaciones bajas (Q2_K, Q3_K_S).
-- Licencia Apache 2.0 permite uso comercial, pero el comportamiento del modelo sin censura puede incumplir politicas de plataformas o normativas sectoriales; revisar el contexto de despliegue.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de validacion practicamente nulo, sin evidencia de uso en produccion.
-- No se documentan procesos de evaluacion de sesgos ni de seguridad en la informacion proporcionada.
+- Al ser una variante "uncensored"/abliterated, el modelo puede generar contenido ofensivo, ilegal o danino sin rechazo. No es adecuado para aplicaciones de cara al publico sin capas de moderacion externas.
+- La abliteration puede degradar capacidades generales (razonamiento, coherencia, instrucciones) respecto al modelo base alineado; conviene validar tareas concretas.
+- Riesgo de alucinacion elevado por el reducido tamano (1B parametros): no es fiable para datos factuales sin verificacion.
+- Soporte limitado a ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- El contexto "long-context" no tiene valor numerico publicado, lo que impide planificar el troceado de documentos con precision.
+- Licencia Apache 2.0 permite uso comercial, pero el caracter uncensored traslada al desplegador la responsabilidad legal y etica del contenido generado.
+- No se aportan benchmarks ni evaluaciones de sesgo; se desconoce el comportamiento en dominios sensibles.
+- El repo pesa 10 GB por acumular todas las cuantizaciones; descargar solo el fichero GGUF necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF
 - Modelo base: https://huggingface.co/Peymandc/MiniCPM5-1B-Uncensored-Flawless-Peymandc
+- Quants imatrix/weighted: https://huggingface.co/mradermacher/MiniCPM5-1B-Uncensored-Flawless-Peymandc-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#MiniCPM5-1B-Uncensored-Flawless-Peymandc-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

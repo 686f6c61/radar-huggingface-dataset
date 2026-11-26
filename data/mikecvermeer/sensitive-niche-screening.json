@@ -5,7 +5,7 @@
   "author": "MikeCVermeer",
   "url": "https://huggingface.co/MikeCVermeer/sensitive-niche-screening",
   "created_at": "2026-11-25T19:53:56.000Z",
-  "updated_at": "2026-11-25T19:56:23.000Z",
+  "updated_at": "2026-11-25T21:52:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -38,7 +38,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

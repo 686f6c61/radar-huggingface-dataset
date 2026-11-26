@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Kanata-S1-3B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Kanata-S1-3B, publicado por el usuario mradermacher en Hugging Face. Se trata de un repositorio derivado: el modelo original pertenece a K-Ai-Official y este repositorio se limita a ofrecer versiones comprimidas del mismo para su uso con herramientas de inferencia local basadas en GGUF (llama.cpp, Ollama, LM Studio, entre otras). El nombre del modelo sugiere un tamano de aproximadamente 3.000 millones de parametros, aunque no se dispone de confirmacion tecnica en la informacion proporcionada.
+Kanata-S1-3B-GGUF es la version cuantizada en formato GGUF del modelo Kanata-S1-3B, desarrollado originalmente por K-Ai-Official y empaquetado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 3.400 millones de parametros (3.402.836.480 segun los pesos en safetensors) orientado a tareas de generacion de codigo, uso como agente y tool calling, segun las etiquetas declaradas en el repositorio. La licencia es Apache 2.0, lo que facilita su uso comercial y su integracion en productos.
 
-La relevancia de este repositorio es practica: permite ejecutar el modelo original en hardware de consumo mediante cuantizaciones de 2 a 8 bits, ademas de una version en FP16. Al no incluir la model card del modelo base ni especificaciones detalladas, la ficha se limita a documentar lo que el repositorio declara explicitamente y marca como "no disponible" todo aquello que no consta.
+El modelo base fue afinado mediante QLoRA (etiqueta `qlora`) sobre un conjunto de datos que combina varios corpus: K-Ai-Official/Kai_v3, NousResearch/hermes-function-calling-v1, teknium/OpenHermes-2.5, NekoFi/alpaca-gpt4-indonesia-cleaned y llm-jp/magpie-sft-v1.0. Esta mezcla sugiere un enfasis en instrucciones generales, function calling y datos en indonesio y japones, ademas de ingles. La arquitectura declarada en las etiquetas incluye `granite`, lo que apunta a una base derivada de la familia IBM Granite.
 
-No se dispone de informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni rendimiento del modelo base en la informacion proporcionada.
+La relevancia de esta ficha radica en que ofrece un modelo compacto de 3B parametros en multiples cuantizaciones GGUF (desde Q2_K de 1,5 GB hasta f16 de 6,9 GB), lo que permite desplegarlo en hardware de consumo y en entornos con recursos limitados. No obstante, la informacion publicada sobre arquitectura detallada, contexto y benchmarks es escasa, por lo que muchos datos tecnicos deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 3B (inferido del nombre; no confirmado) |
-| Parametros activos | no aplica (no consta que sea MoE) |
+| Arquitectura | Transformer (etiqueta `granite`; detalles no disponibles) |
+| Parametros totales | 3.402.836.480 |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors u otro formato no se especifica |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (y variantes i1 con imatrix en repositorio separado) |
+| Idiomas soportados | indonesio (id), japones (ja), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Kanata-S1-3B (transformer, MoE, SSM o hibrida), ni sobre el volumen de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio GGUF no incluye estos datos.
+La informacion disponible indica que el modelo base Kanata-S1-3B emplea una arquitectura de tipo transformer con la etiqueta `granite`, lo que sugiere una derivacion de la familia IBM Granite, aunque no se detallan capas, dimensiones ocultas, mecanismo de atencion ni estrategia de posicionamiento. El proceso de ajuste se realizo mediante QLoRA, una tecnica de fine-tuning eficiente en parametros que cuantiza el modelo base y entrena adaptadores de bajo rango, lo que reduce los requisitos de memoria durante el entrenamiento.
 
-Lo unico documentado en el repositorio son los metadatos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que las cuantizaciones se generaron a partir de pesos en formato Hugging Face y que la salida mantiene los tensores cuantizados. No se registra ninguna innovacion tecnica adicional.
+El conjunto de datos de entrenamiento combina cinco fuentes: K-Ai-Official/Kai_v3 (probablemente corpus propio del autor), NousResearch/hermes-function-calling-v1 (orientado a function calling), teknium/OpenHermes-2.5 (instrucciones generales), NekoFi/alpaca-gpt4-indonesia-cleaned (instrucciones en indonesio) y llm-jp/magpie-sft-v1.0 (instrucciones en japones). No se especifica el numero total de tokens de entrenamiento, la composicion exacta por idioma, ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- No se dispone de informacion verificada sobre las capacidades del modelo base en la documentacion proporcionada.
-- Por el nombre y el tamano (aproximadamente 3B), es plausible que sea un modelo de generacion de texto, pero no hay confirmacion.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto e instrucciones generales, segun el uso de OpenHermes-2.5 y magpie-sft en el entrenamiento.
+- Generacion de codigo, reflejada en la etiqueta `code`.
+- Tool calling y function calling, respaldado por el dataset hermes-function-calling-v1 y las etiquetas `tool-calling` y `agent`.
+- Uso como agente en flujos multi-paso, segun la etiqueta `agent`.
+- Capacidades multilingues en indonesio, japones e ingles.
+- No se dispone de informacion sobre vision, audio, modo thinking ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Inferencia local en equipos de sobremesa: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse con llama.cpp u Ollama en GPUs de consumo con 8-12 GB de VRAM, si bien el rendimiento real no se ha verificado.
-- Prototipado rapido en portatiles: la version Q2_K o Q3_K_S permite probar el modelo en hardware modesto, a costa de una perdida de calidad no cuantificada.
-- Despliegue en entornos sin GPU dedicada: las cuantizaciones de 4 bits permiten ejecucion en CPU con llama.cpp, adecuado para pruebas de concepto.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes, lo que facilita medir el impacto de la compresion en la calidad de salida sobre una misma tarea.
-- Integracion en aplicaciones de escritorio: herramientas como LM Studio o Jan pueden cargar directamente los ficheros GGUF para asistentes locales.
-- Uso educativo: permite estudiar el efecto del formato GGUF y de la cuantizacion en un modelo de aproximadamente 3B sin necesidad de infraestructura de servidor.
-
-En todos los casos, la idoneidad depende de capacidades del modelo base que no constan en la informacion disponible.
+- Asistente de codigo en local: el modelo puede integrarse en editores o CLI para autocompletar y explicar fragmentos de codigo, aprovechando su tamano de 3B y las cuantizaciones Q4_K_M (2,2 GB) que caben en GPU de consumo.
+- Automatizacion de tool calling: al haber sido afinado con hermes-function-calling-v1, puede emplearse para seleccionar funciones y generar argumentos en pipelines de agentes, por ejemplo para consultar APIs o bases de datos.
+- Agentes multi-paso ligeros: su etiqueta `agent` permite usarlo en orquestadores que requieran un modelo pequeno para decidir el siguiente paso, con bajo coste de inferencia.
+- Atencion al cliente en indonesio o japones: la inclusion de corpus especificos en estos idiomas lo hace adecuado para respuestas automatizadas en mercados de Indonesia y Japon, aunque sin datos de contexto no se puede garantizar conversaciones de contexto largo.
+- Prototipado rapido en entornos con recursos limitados: las cuantizaciones Q2_K (1,5 GB) y Q3_K_S (1,7 GB) permiten ejecutarlo en portatiles o CPUs con llama.cpp u Ollama.
+- Generacion de codigo en CI/CD: puede utilizarse para generar tests, documentacion o parches en pipelines automatizados, con la ventaja de su licencia Apache 2.0 para uso comercial.
+- Educacion y experimentacion: su tamano y licencia permiten usarlo en cursos y laboratorios para estudiar fine-tuning, cuantizacion y evaluacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -53,26 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma verificada; para un modelo de aproximadamente 3B, las cuantizaciones de 4 bits suelen ocupar en torno a 2 GB y las de 8 bits en torno a 3,5 GB, pero estos valores son estimaciones genericas no confirmadas para este modelo.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable en modelos de 3B con cuantizaciones de 4 bits, sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el repositorio no documenta configuraciones especificas.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 1,5-2,0 GB en Q2_K/Q3_K_S, 2,1-2,2 GB en Q4_K_S/Q4_K_M, 2,5 GB en Q5, 2,9 GB en Q6_K, 3,7 GB en Q8_0 y 6,9 GB en f16 (tamanos de archivo, que sirven como cota inferior de memoria).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para mayor throughput.
+- Cabe en GPU de consumo: si, en modelos como RTX 3060, RTX 4060, RTX 4070 o superiores con cuantizaciones Q4-Q6.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede servirse con transformers, vLLM o TGI en formato safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Kanata-S1-3B-GGUF | 3,4B | no disponible | Apache 2.0 | GGUF | Multilingue id/ja/en, tool calling |
+| Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Multilingue amplio, buena base para agentes |
+| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Restricciones de licencia para uso comercial |
+| Granite-3.1-2B-Instruct | 2,5B | 128.000 tokens (segun documentacion publica de IBM) | Apache 2.0 | safetensors, GGUF | Base Granite, orientado a empresa |
+
+Nota: los datos de contexto y parametros de los modelos comparativos provienen de documentacion publica general; no se dispone de comparaciones de rendimiento con Kanata-S1-3B.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en el repositorio, lo que impide determinar si el uso comercial esta permitido; debe consultarse el repositorio original K-Ai-Official/Kanata-S1-3B antes de cualquier uso en produccion.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion ni limitaciones de contexto o idioma del modelo base.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar la calidad de forma significativa; no se ha publicado ninguna evaluacion al respecto.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, por lo que no hay evidencia de uso ni validacion por parte de la comunidad.
-- Al ser un repositorio derivado, la responsabilidad sobre el comportamiento del modelo recae en el modelo original; este repositorio solo cambia el formato.
-- No se confirma que el modelo base sea de 3B parametros; el dato procede unicamente del nombre.
+- No se han publicado datos sobre sesgos conocidos; al entrenarse con corpus en indonesio, japones e ingles, puede presentar sesgos culturales o linguisticos de esas fuentes.
+- Riesgo de alucinacion inherente a modelos de 3B parametros, especialmente en tareas de razonamiento complejo o datos factuales.
+- Longitud de contexto no documentada, lo que impide garantizar conversaciones de contexto largo.
+- Idiomas soportados limitados a indonesio, japones e ingles; el rendimiento en castellano no esta documentado.
+- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los datasets de entrenamiento (por ejemplo, OpenHermes-2.5 y hermes-function-calling-v1) antes de un uso comercial a gran escala.
+- Las cuantizaciones Q2_K y Q3_K_M pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para produccion.
+- No hay informacion sobre el proceso de alineacion (RLHF/DPO), por lo que el comportamiento en temas sensibles es incierto.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Kanata-S1-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kanata-S1-3B-GGUF
 - Modelo base: https://huggingface.co/K-Ai-Official/Kanata-S1-3B
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Kanata-S1-3B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Kanata-S1-3B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

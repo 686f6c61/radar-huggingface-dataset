@@ -96,7 +96,7 @@
       "task": "Coreference resolution",
       "dataset": "LitBank",
       "metric": "CoNLL F1",
-      "value": 0.692
+      "value": 0.697
     },
     {
       "task": "Document-level relation extraction",

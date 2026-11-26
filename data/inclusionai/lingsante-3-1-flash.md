@@ -2,93 +2,97 @@
 
 ## Resumen
 
-LingSante-3.1-flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con pesos abiertos desarrollado por inclusionAI, orientado a razonamiento médico complejo, comunicación sanitaria profesional, investigación basada en evidencia y ejecución de tareas médicas de largo horizonte. Se construye sobre Ling-3.1-flash y conserva su arquitectura híbrida linear-MoE, con 560 mil millones de parámetros totales, 25 mil millones activados por token y una ventana de contexto de 1 millón de tokens. El repositorio de Hugging Face, con pesos en safetensors y fp8, ocupa 573,8 GB.
+LingSante-3.1-flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por inclusionAI, orientado especificamente a razonamiento medico complejo, comunicacion sanitaria profesional, investigacion basada en evidencia y tareas medicas de horizonte largo. Se construye sobre Ling-3.1-flash y cuenta con 560 mil millones de parametros totales, de los que activa 25 mil millones por token, con una ventana de contexto de 1 millon de tokens. La arquitectura es un MoE hibrido con atencion linear (KDA) y Gated MLA, lo que permite sostener contextos muy extensos con un coste computacional de activacion contenido.
 
-El modelo aborda un problema específico: las tareas médicas reales no se resuelven solo con inteligencia general, sino que exigen manejar información incompleta, heterogeneidad de pacientes y requisitos estrictos de cumplimiento y seguridad. Para ello, LingSante-3.1-flash se entrena con una mezcla nativa de datos médicos y generales a lo largo de preentrenamiento, mid-training y ajuste supervisado, complementada con aprendizaje por refuerzo específico de tarea y destilación on-policy multi-profesor.
+El modelo aborda un problema concreto: las tareas medicas reales no se resuelven solo con inteligencia general, ya que implican informacion de salud incompleta, heterogeneidad de pacientes y requisitos estrictos de cumplimiento operativo. Para ello, LingSante-3.1-flash se entrena con datos medicos y generales de forma nativa, con ajuste supervisado y aprendizaje por refuerzo especifico para razonamiento medico, uso de herramientas, busqueda y comportamiento profesional, ademas de destilacion on-policy multi-profesor para consolidar capacidades complementarias en un unico modelo.
 
-Es relevante ahora porque combina un contexto extremadamente largo con capacidades de uso de herramientas y razonamiento multi-paso en un dominio regulado. El autor lo posiciona explícitamente como material de investigación y evaluación, no como dispositivo médico, y prohíbe su uso como base independiente para diagnóstico, prescripción o tratamiento.
+Es relevante ahora porque combina un contexto de 1M tokens con capacidades de ejecucion de flujos de trabajo multietapa y verificacion de evidencia, algo poco habitual en modelos abiertos de dominio medico. Se publica con licencia MIT y pesos en safetensors, lo que facilita su evaluacion y despliegue por parte de equipos de investigacion y desarrollo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hybrid-linear MoE (KDA + Gated MLA) |
-| Parametros totales | 560B (572.120.680.768 según safetensors) |
+| Arquitectura | Hybrid-linear MoE (63 capas KDA + 9 Gated MLA, proporcion 7:1; 4 capas densas) |
+| Parametros totales | 560B (572.120.680.768 segun safetensors) |
 | Parametros activos | 25B por token |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | fp8 (pesos publicados); no se detallan otras variantes |
+| Tipos de cuantizacion | fp8 (indicado en los tags del repositorio); no se detallan otras variantes en la informacion disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (custom_code, bailing_hybrid) |
+| Formato de pesos | safetensors (con custom_code) |
 
-Otros datos de arquitectura recogidos en la model card: 63 capas KDA + 9 capas Gated MLA en proporción 7:1, 4 capas densas, 512 expertos enrutados y 1 experto compartido, 8 expertos enrutados activados por token, 64 cabezas de atención, hidden size de 4096, tamaño intermedio de experto de 1280, tamaño intermedio denso de 10240 y vocabulario de 157.184 tokens.
+Otros datos de arquitectura: 512 expertos enrutados mas 1 experto compartido, 8 expertos enrutados activados por token, 64 cabezas de atencion, hidden size 4096, tamano intermedio de experto 1280, tamano intermedio denso 10240 y vocabulario de 157184 tokens.
 
 ## Arquitectura y entrenamiento
 
-LingSante-3.1-flash hereda la arquitectura de Ling-3.1-flash: un transformer MoE híbrido que combina capas de atención linear KDA con capas de Gated MLA en una proporción 7:1 (63 capas KDA frente a 9 Gated MLA), más 4 capas densas. El enrutamiento activa 8 de los 512 expertos enrutados por token, junto con un experto compartido, lo que permite un ratio de activación muy bajo (25B sobre 560B) y, en teoría, un coste de inferencia contenido para el tamaño total del modelo. La ventana de 1M tokens se apoya en ese diseño híbrido de atención.
+LingSante-3.1-flash conserva la arquitectura de Ling-3.1-flash: un transformer MoE hibrido que alterna capas de atencion linear KDA con capas Gated MLA en una proporcion 7:1 (63 capas KDA y 9 Gated MLA), mas 4 capas densas. El modelo emplea 512 expertos enrutados y 1 experto compartido, activando 8 expertos enrutados por token, lo que resulta en 25B parametros activos sobre un total de 560B. Esta configuracion busca equilibrar la capacidad de un modelo de gran escala con un coste de inferencia acotado, y la atencion linear es clave para sostener la ventana de 1M tokens.
 
-El entrenamiento combina datos médicos y generales en todas las fases: preentrenamiento con mezcla médica nativa, mid-training, ajuste supervisado, aprendizaje por refuerzo específico para razonamiento médico, uso de herramientas, búsqueda y comportamiento profesional, y finalmente destilación on-policy multi-profesor para consolidar capacidades complementarias en un único modelo. El autor menciona marcos propios de alineación evidencia-razonamiento, de tareas médicas de largo horizonte (entornos interactivos, uso de herramientas y verificación estructurada) y de alineación de comportamiento profesional. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset.
+El entrenamiento combina datos generales y medicos a lo largo de todas las fases: preentrenamiento, mid-training y ajuste supervisado (SFT). Los datos medicos aportan conocimiento de dominio y ejemplos clinicamente fundamentados, mientras que los generales preservan capacidades amplias como razonamiento, codigo, busqueda y uso de herramientas. En la fase de post-entrenamiento se aplica aprendizaje por refuerzo especifico para razonamiento medico, uso de herramientas, busqueda y comportamiento profesional, y finalmente se utiliza destilacion on-policy multi-profesor para transferir fortalezas complementarias a un unico modelo sin degradar el rendimiento en tareas generales. La model card menciona marcos propios de alineacion evidencia-razonamiento, de tareas medicas de horizonte largo y de alineacion de comportamiento profesional.
 
 ## Capacidades
 
-- Razonamiento médico complejo: identificación de factores clave en decisiones clínicas, validación de evidencia de soporte y resolución de conflictos entre fuentes.
-- Comportamiento profesional sanitario: respuestas contextualizadas, profesionales y accionables ante información incompleta o cambiante.
-- Tareas médicas de largo horizonte: ejecución de flujos multi-etapa con coordinación de herramientas e información dentro de un mismo workflow.
-- Uso de herramientas y búsqueda: entrenado con RL específico para tool use y search, con verificación de evidencia.
-- Razonamiento multi-paso y planificación adaptativa ante información nueva.
-- Capacidades generales preservadas por la mezcla de datos: razonamiento, código, búsqueda y uso de herramientas.
-- Contexto largo de 1M tokens para historiales, documentación y literatura científica extensa.
-- Generación de texto conversacional (pipeline text-generation).
-- Idiomas soportados: no disponible.
+- Razonamiento medico complejo: identificacion de factores clave en decisiones clinicas, validacion de evidencia de soporte y resolucion de conflictos entre fuentes.
+- Comunicacion sanitaria profesional: respuestas contextualizadas y accionables alineadas con estandares clinicos.
+- Investigacion basada en evidencia (deep research) con verificacion a traves de escenarios.
+- Tareas medicas de horizonte largo: ejecucion de flujos de trabajo multietapa con coordinacion de herramientas e informacion.
+- Uso de herramientas (tool calling / function calling) y busqueda integrada en el razonamiento.
+- Capacidades generales preservadas: razonamiento, generacion de codigo y busqueda.
+- Ventana de contexto de 1M tokens para manejar historiales clinicos extensos y documentacion multiple.
+- Capacidades multilingues: no especificadas en la informacion disponible.
 
 ## Casos de uso
 
-- Revisión de literatura médica a gran escala: ingerir decenas de artículos y guías clínicas en una sola ventana de 1M tokens para extraer evidencia, detectar contradicciones entre fuentes y sintetizar conclusiones con trazabilidad.
-- Apoyo a la documentación clínica: resumir historiales electrónicos extensos y generar borradores de informes estructurados, manteniendo el contexto completo del paciente en una única pasada.
-- Investigación traslacional y farmacológica: cruzar resultados preclínicos, datos de ensayos y literatura regulatoria para generar hipótesis verificables, aprovechando el razonamiento basado en evidencia.
-- Asistentes de formación médica: simular casos clínicos multi-turno con información progresivamente revelada, evaluando la capacidad de razonamiento diferencial del estudiante.
-- Automatización de flujos administrativos sanitarios: orquestar tool calling sobre sistemas de gestión (citas, codificación, reclamaciones) en pipelines multi-paso con verificación intermedia.
-- Evaluación de seguridad y alineación clínica: usar el modelo como sujeto de pruebas en entornos simulados para medir comportamiento profesional ante información incompleta o conflictiva.
-- Búsqueda aumentada en bases de conocimiento biomédico: integrar el modelo como motor de razonamiento sobre índices documentales, con verificación de evidencia antes de emitir una respuesta.
+- Revision de historiales clinicos extensos: el modelo puede procesar documentos de hasta 1M tokens en una sola pasada, lo que permite analizar historiales completos de pacientes con multiples episodios y pruebas sin fragmentacion.
+- Apoyo a la investigacion medica basada en evidencia: dado su entrenamiento en verificacion de evidencia y busqueda, puede sintetizar literatura y contrastar hallazgos entre fuentes, senalando conflictos.
+- Ejecucion de flujos de trabajo clinicos multietapa: con capacidades de horizonte largo y tool calling, puede coordinar sub-tareas encadenadas (recogida de datos, comprobaciones, generacion de resumen) en un unico proceso.
+- Generacion de documentacion sanitaria profesional: redaccion de informes y resumenes con tono y estructura alineados con estandares profesionales, gracias al entrenamiento en comportamiento profesional.
+- Asistencia en triaje y clasificacion de informacion incompleta: su entrenamiento con informacion de salud incompleta le permite operar en escenarios donde faltan datos y proponer pasos siguientes.
+- Evaluacion y benchmarking de sistemas medicos: al ser un modelo abierto con licencia MIT, sirve como referencia para comparar pipelines de razonamiento medico en entornos de investigacion.
+- Integracion en herramientas de soporte a la decision para investigacion: mediante API (Computrix) o despliegue propio, para prototipos de asistencia clinica siempre bajo supervision humana.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el modelo obtiene "leading performance among open-source models" en razonamiento médico complejo y que queda "second overall behind only GPT-6 Astra" en benchmarks de comportamiento profesional médico, además de buenos resultados en evaluaciones internas de comprensión diagnóstica, seguridad y razonamiento basado en evidencia. Sin embargo, no se proporcionan cifras concretas, nombres de benchmarks ni tablas numéricas en la información disponible.
+La model card indica un rendimiento lider entre modelos abiertos en tareas de razonamiento medico complejo y un segundo puesto global en benchmarks de comportamiento profesional medico, solo por detras de GPT-6 Astra. Sin embargo, los valores numericos concretos de los benchmarks aparecen unicamente en una imagen incrustada en la model card y no como texto en la informacion disponible.
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | Resultado |
+|---|---|
+| Razonamiento medico complejo | lider entre modelos abiertos (sin cifras en texto) |
+| Comportamiento profesional medico | segundo global, tras GPT-6 Astra (sin cifras en texto) |
+| MMLU / HumanEval / GSM8K | no disponible |
+
+No se han publicado resultados numericos de benchmarks en texto en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos publicados en fp8 ocupan aproximadamente 573,8 GB, por lo que la inferencia requiere al menos ese volumen de memoria, más overhead de activaciones y KV cache.
-- GPU recomendadas: nodos multi-GPU de clase H100 (80 GB) o H200; con 8×H100 80 GB (640 GB) se cubren los pesos en fp8 con margen limitado para caché; configuraciones de 16 GPUs ofrecen holgura para contexto largo.
-- No cabe en GPU de consumo: ni RTX 4090 (24 GB) ni RTX 5090 pueden alojar los pesos; se requeriría cuantización agresiva adicional no publicada y, aun así, el tamaño total lo hace inviable en una sola tarjeta consumer.
-- Opciones de despliegue: el repositorio usa `custom_code` con arquitectura `bailing_hybrid`, por lo que requiere transformers con `trust_remote_code=True` o un runtime compatible con dicha arquitectura; vLLM, TGI o llama.cpp solo serían utilizables si soportan la arquitectura híbrida KDA/MLA, extremo no confirmado en la información disponible.
+- VRAM estimada para inferencia: con 572.120.680.768 parametros (unos 572 GB en fp8), la inferencia requiere multiples GPU de alta capacidad; no cabe en una sola GPU convencional.
+- GPU recomendadas: para fp8 se necesitan varios nodos con GPU de centro de datos (por ejemplo, H100 o A100 de 80 GB en configuracion multi-GPU). El dato concreto de numero minimo de GPU no esta disponible.
+- Consumer GPU: no es viable en GPU de consumo; el tamano del repositorio (573,8 GB) y los parametros totales lo impiden.
+- Opciones de despliegue: pesos en safetensors con custom_code; se requiere cargar la implementacion personalizada de la arquitectura. El soporte explicito en vLLM, llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible. Existe acceso via API en Computrix.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| LingSante-3.1-flash | 560B / 25B | 1M | MIT | Especializado en dominio médico; sin cifras de benchmarks publicadas |
-| Ling-3.1-flash | no disponible en la informacion | no disponible | no disponible | Modelo base sobre el que se construye LingSante; arquitectura idéntica |
-| GPT-6 Astra | no disponible | no disponible | propietaria | Referencia citada por el autor como líder en comportamiento profesional médico |
+| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| LingSante-3.1-flash | 560B | 25B | 1M | MIT | Especializado en dominio medico |
+| Ling-3.1-flash | no disponible | no disponible | no disponible | no disponible | Modelo base sobre el que se construye |
+| GPT-6 Astra | no disponible | no disponible | no disponible | propietaria | Referencia en comportamiento profesional medico (supera a LingSante en ese benchmark) |
 
-No se dispone de datos suficientes para comparar parámetros, contexto o rendimiento con alternativas open-weight de la misma categoría médica.
+No se dispone de datos suficientes sobre otros modelos abiertos comparables de dominio medico en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un dispositivo médico: el autor prohíbe explícitamente su uso como base independiente para diagnóstico, prescripción o tratamiento; está destinado a investigación y evaluación.
-- Riesgo de alucinación en un dominio de alto impacto: las respuestas pueden contener afirmaciones clínicamente incorrectas pese al entrenamiento en verificación de evidencia; requiere supervisión experta.
-- Sesgos potenciales derivados de los datos de entrenamiento médicos y generales, cuya composición no se detalla.
-- Idiomas soportados no especificados: el rendimiento fuera del inglés (presumiblemente el idioma principal de entrenamiento) es desconocido.
-- Licencia MIT: permite uso comercial, pero dicha permisividad no exime del cumplimiento de la normativa sanitaria aplicable (MDR, FDA, RGPD) ni de las advertencias del autor.
-- Requisitos de hardware muy elevados (≈574 GB en fp8), lo que limita su despliegue a infraestructura de centro de datos.
-- Soporte de runtimes de inferencia no confirmado para la arquitectura híbrida KDA/MLA; la integración en producción puede requerir código personalizado.
-- Ausencia de cifras de benchmarks verificables en la información disponible, lo que impide una evaluación cuantitativa independiente.
+- El modelo esta destinado a investigacion y evaluacion; no es un dispositivo medico y no debe usarse como base independiente para diagnostico, prescripcion o tratamiento.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente critico en contexto clinico.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Idiomas soportados: no especificados, lo que limita la evaluacion de cobertura multilingue.
+- Aunque la licencia es MIT, el uso en produccion sanitaria exige supervision profesional y cumplimiento normativo adicional.
+- Requiere infraestructura de multiples GPU de centro de datos; no apto para hardware de consumo.
+- El soporte en frameworks de inferencia habituales no esta confirmado y puede requerir implementacion personalizada por el custom_code.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/inclusionAI/LingSante-3.1-flash
 - ModelScope: https://www.modelscope.cn/models/inclusionAI/LingSante-3.1-flash
-- Vercel AI Gateway: https://vercel.com/ai-gateway/models/LingSante-3.1-flash
+- API (Computrix): https://computrix.ai/sg/models/modelservice-1795159585527001414
 - Modelo base Ling-3.1-flash: https://huggingface.co/inclusionAI/Ling-3.1-flash

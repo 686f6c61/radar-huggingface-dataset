@@ -2,112 +2,94 @@
 
 ## Resumen
 
-VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF es una conversión del modelo de embeddings Qwen3-Embedding-8B (desarrollado por Qwen/Alibaba) al formato de pesos Q8A64 de 8 bits definido por VelociQ8, pensado para ejecutar inferencia de embeddings en CPU sobre Arm (aarch64) y x86-64. No se trata de un modelo nuevo ni de un reentrenamiento: es el mismo conjunto de pesos de 8.000 millones de parámetros, empaquetado en un GGUF propietario que solo carga con el runtime VelociQ8 1.1 o superior, no con llama.cpp estándar.
+Qwen3-Embedding-8B-Q8A64-GGUF es una conversión al formato Q8A64 del modelo de embeddings Qwen3-Embedding-8B, desarrollado originalmente por el equipo Qwen de Alibaba. El modelo base es un transformer de 8.000 millones de parámetros especializado en la generación de vectores de embedding de hasta 4096 dimensiones, diseñado para tareas de recuperación de información, similitud semántica, clasificación y clustering. Esta versión concreta ha sido publicada por el usuario VelociQ8 y emplea el formato propietario Q8A64 (pesos de 8 bits) del runtime VelociQ8, derivado de llama.cpp.
 
-El modelo base convierte texto en vectores de hasta 4096 dimensiones con una ventana de contexto de 32K tokens y admite una instrucción de tarea en el lado de la consulta, lo que permite especializar el espacio de embeddings para recuperación, clasificación o clustering sin reentrenar. La aportación de este repositorio es permitir ese uso en servidores sin GPU, con huella de 8,4 GB en disco y licencia Apache 2.0 en los pesos.
+La relevancia de esta ficha radica en que el modelo no funciona con las herramientas GGUF estándar: requiere el runtime VelociQ8 1.1 o superior, que ofrece inferencia optimizada en CPU para arquitecturas Arm (aarch64) y x86-64, con soporte opcional de GPU mediante Vulkan o CUDA a través de archivos Ollama portables. El modelo base conserva una ventana de contexto de 32.000 tokens y capacidades multilingües, lo que lo hace adecuado para pipelines RAG y búsqueda semántica en entornos sin GPU dedicada.
 
-Es relevante ahora porque la mayoría de los embeddings de 8B exigen GPU para tener latencia aceptable; esta conversión abre la puerta a indexación masiva y búsqueda semántica en infraestructura Arm (Graviton, Ampere Altra) o en equipos de sobremesa x86 con AVX2/FMA. El precio es una dependencia fuerte de un runtime de terceros: los snippets automáticos de Hugging Face para llama.cpp u Ollama no funcionan con este fichero.
+El repositorio ocupa 8,6 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Se trata, por tanto, de una opción orientada a despliegues en CPU donde el rendimiento del formato GGUF convencional no es suficiente y se busca un formato de pesos de 8 bits con kernels específicos para Arm y x86.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3, adaptado a embedding (la model card no detalla la arquitectura interna) |
+| Arquitectura | Transformer (modelo de embeddings del base Qwen3-Embedding-8B) |
 | Parametros totales | 8B |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32K tokens en el modelo original |
-| Tipos de cuantizacion | Q8A64 (8 bits) unicamente; el repositorio no ofrece otras cuantizaciones |
-| Idiomas soportados | Multilingue (sin lista concreta de idiomas en la informacion disponible) |
-| Licencia | Apache 2.0 (pesos); el runtime VelociQ8 es software propietario de uso gratuito |
-| Formato de pesos | GGUF con formato Q8A64, cargable solo con VelociQ8 1.1 o superior |
-| Dimensiones del embedding | Hasta 4096 |
-| Tipo de pipeline | feature-extraction (sentence-similarity) |
-| Instruccion de tarea | Si, en el lado de la query |
-| Tamano del repositorio | 8,4 GB |
-| Modelo base | Qwen/Qwen3-Embedding-8B |
-| Repositorio creado / actualizado | 23 de octubre de 2026 / 25 de octubre de 2026 |
-| Descargas / likes | 138 / 1 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32K tokens (modelo original) |
+| Tipos de cuantizacion | Q8A64 (8 bits, formato propietario VelociQ8) |
+| Idiomas soportados | Multilingüe |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF con cuantización Q8A64 (requiere runtime VelociQ8) |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no incluye entrenamiento propio: hereda íntegramente el del modelo base Qwen3-Embedding-8B, un transformer de 8B parámetros derivado de la familia Qwen3 y convertido a modelo de representaciones densas con vectores de hasta 4096 dimensiones. La model card no documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esos datos corresponden a la documentación de Qwen y no aparecen en la información disponible.
+El modelo base Qwen3-Embedding-8B es un transformer de 8.000 millones de parámetros entrenado por Qwen para generar embeddings de texto de hasta 4096 dimensiones. Está diseñado para aceptar una instrucción de tarea en el lado de la consulta (query side), lo que permite adaptar el vector resultante a distintas tareas de recuperación y similitud. La información disponible no detalla la composición del dataset de entrenamiento ni si se emplearon técnicas de RLHF o DPO; tampoco se especifican innovaciones arquitectónicas adicionales más allá de las propias del modelo base.
 
-La innovación técnica de esta publicación es exclusivamente de formato: la conversión a Q8A64, un esquema de pesos de 8 bits con metadatos y kernels propios, empaquetado con el runtime VelociQ8 (derivado de llama.cpp) que expone las mismas herramientas (`llama-server`, `llama-cli`, `llama-embedding`, `llama-bench`, `llama-quantize`) y la misma API HTTP compatible con OpenAI. El autor declara que el fichero está verificado para cargar y ejecutar, pero no publica mediciones propias de calidad de recuperación ni comparativas contra el modelo en BF16, por lo que la pérdida de precisión introducida por la cuantización de 8 bits no está cuantificada.
+Esta versión concreta no introduce cambios en la arquitectura ni en el entrenamiento: es una conversión de pesos al formato Q8A64 de VelociQ8, un formato de 8 bits con kernels optimizados para CPU en Arm (dotprod, Neoverse N1 y posteriores, AWS Graviton2 y posteriores) y x86-64 (AVX2 y FMA, Intel Haswell y AMD Zen en adelante). El runtime VelociQ8, construido sobre llama.cpp, incluye las herramientas habituales (`llama-server`, `llama-cli`, `llama-embedding`, `llama-bench`, `llama-quantize`) con API HTTP compatible con OpenAI. El autor no publica mediciones propias de rendimiento; solo verifica que el archivo carga y se ejecuta correctamente.
 
 ## Capacidades
 
-- Generación de embeddings de texto para similitud semántica, con vectores de hasta 4096 dimensiones.
-- Recuperación de información y búsqueda semántica, incluida la construcción de índices vectoriales para RAG.
-- Soporte de instrucción de tarea en el lado de la query: la misma frase puede proyectarse de forma distinta según la tarea indicada.
-- Clasificación de texto mediante comparación contra prototipos o centroides en el espacio de embeddings.
-- Clustering y deduplicación de documentos, sin necesidad de etiquetas.
-- Capacidades multilingües heredadas del modelo base (lista de idiomas no disponible).
-- Inferencia en CPU sobre Arm (dotprod, AWS Graviton2 y posteriores, Neoverse N1 y posteriores, Ampere Altra) y x86-64 con AVX2 y FMA.
-- Ejecución opcional en GPU mediante Vulkan (archivos Ollama para x86-64) o CUDA (archivos Ollama con CUDA, GPU NVIDIA Turing o posterior).
-- No es un modelo generativo: no produce texto, no hace tool calling ni razonamiento multi-paso. Su salida es un vector.
+- Generación de embeddings de texto de hasta 4096 dimensiones para recuperación, clasificación y clustering.
+- Soporte de instrucción de tarea en el lado de la consulta, lo que permite especializar el embedding según el caso de uso.
+- Capacidades multilingües heredadas del modelo base Qwen3-Embedding-8B.
+- Similitud semántica y búsqueda semántica sobre corpus extensos.
+- Integración en pipelines RAG mediante la herramienta `llama-embedding` del runtime VelociQ8.
+- Inferencia en CPU con kernels optimizados para Arm y x86-64; soporte opcional de GPU mediante Vulkan (x86-64) o CUDA (NVIDIA Turing o posterior) a través de los archivos Ollama portables.
+- No es un modelo generativo: no soporta tool calling, agentes ni razonamiento multi-paso, ya que su pipeline es `feature-extraction`.
 
 ## Casos de uso
 
-- RAG sobre documentación interna en servidores Arm: indexación de un corpus con la ventana de 32K tokens y consulta con instrucción de tarea específica, sin GPU en el nodo de embeddings; encaja en despliegues sobre AWS Graviton donde el coste por hora de CPU es menor que el de una instancia con GPU.
-- Búsqueda semántica multilingüe en catálogos de producto: el modelo proyecta consultas y descripciones en el mismo espacio, de modo que una búsqueda en castellano recupera fichas redactadas en inglés o alemán.
-- Deduplicación de grandes volúmenes de tickets o correos: clustering sobre los embeddings de 4096 dimensiones para agrupar incidencias equivalentes antes de asignarlas a un equipo de soporte.
-- Clasificación zero-shot de documentos entrantes: comparar el embedding del documento con el de descripciones de cada categoría y asignar la más próxima, útil cuando no hay datos etiquetados.
-- Reranking ligero en pipelines híbridos: recuperar candidatos con BM25 y reordenarlos por similitud coseno usando este modelo, con la instrucción de query adecuada para reducir falsos positivos.
-- Detección de similitud en procesos de moderación o compliance: marcar textos casi idénticos a comunicaciones previamente señaladas por similitud semántica en lugar de coincidencia exacta.
-- Indexación en estaciones de trabajo sin GPU: un equipo x86-64 con AVX2 y 16 GB de RAM puede generar el índice completo de una base documental mediana en local, con el archivo Ollama portable incluido en el repositorio.
+- Búsqueda semántica en documentación interna: el modelo genera vectores de hasta 4096 dimensiones que permiten indexar y recuperar fragmentos por similitud semántica en lugar de coincidencia léxica, con contexto de 32K tokens para documentos largos.
+- Pipelines RAG en entornos sin GPU: al ejecutarse en CPU mediante el runtime VelociQ8, permite desplegar la fase de embedding de un sistema RAG en servidores Arm (Graviton, Ampere Altra) o x86 sin necesidad de aceleradores dedicados.
+- Clasificación de textos por similitud: comparando el embedding de un texto con embeddings de referencia de cada categoría se puede construir un clasificador sin entrenamiento adicional, útil para triaje de tickets o moderación.
+- Deduplicación y clustering de corpus: agrupando documentos por distancia entre embeddings se detectan duplicados y se organizan grandes colecciones de texto en clústeres temáticos.
+- Motor de recomendación basado en contenido: los embeddings de artículos o productos permiten calcular similitud entre ítems y generar recomendaciones sin depender de señales de interacción.
+- Búsqueda multilingüe: al soportar múltiples idiomas, permite consultar un corpus en un idioma y recuperar documentos relevantes en otro, útil en bases de conocimiento internacionales.
+- Despliegue en dispositivos edge con Arm: la compilación multi-arquitectura (`arm64-multi`) selecciona los mejores kernels al arrancar, lo que facilita su uso en servidores Arm de bajo consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que el autor no aporta mediciones propias ("Measurements: None of its own") y solo confirma que el fichero carga y se ejecuta. Tampoco se ofrecen cifras de latencia, throughput ni de degradación respecto al modelo base en BF16.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que el modelo no tiene mediciones propias y que solo se ha verificado que carga y se ejecuta. Tampoco se proporcionan datos de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: al ser un formato de 8 bits sobre 8B parámetros, los pesos ocupan del orden de 8 GB; el repositorio completo son 8,4 GB. Conviene reservar 10-12 GB de memoria para pesos, buffers y activaciones.
-- Cabe en CPU de consumo: sí, en x86-64 con AVX2 y FMA (Intel Haswell, AMD Zen o posterior) y en Arm de 64 bits; se recomienda un mínimo de 16 GB de RAM en el equipo.
-- Arm: archivos específicos para CPU con dotprod (Ampere Altra, AWS Graviton2 y posteriores, Neoverse N1 y posteriores) y un binario multi-kernel que selecciona los kernels óptimos en cualquier Arm de 64 bits.
-- GPU: opcional. Los archivos Ollama para x86-64 usan GPU NVIDIA, AMD o Intel mediante Vulkan; existen archivos específicos con CUDA que requieren GPU NVIDIA Turing o posterior (RTX 20 en adelante) con driver actualizado.
-- Sistemas operativos: Linux (glibc 2.28 o superior), Windows 11 en x86-64, y contenedor Docker `ghcr.io/dhaern/velociq8` para Linux Arm y x86-64.
-- Opciones de despliegue: exclusivamente el runtime VelociQ8 (`llama-server` con API compatible con OpenAI, `llama-cli`, `llama-embedding`, `llama-bench`) o los archivos portables de Ollama 0.40.11 incluidos. No es compatible con llama.cpp estándar, vLLM, TGI ni Ollama instalado por el usuario.
-- Limitación operativa: las herramientas de VelociQ8 no descargan modelos; hay que bajar el fichero del repositorio y pasarlo con `-m`.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada: el repositorio ocupa 8,6 GB; al ser un formato de 8 bits para CPU, se requiere al menos esa cantidad de memoria del sistema disponible para cargar los pesos, más overhead del runtime.
+- GPU recomendadas: no es un modelo pensado para GPU; el runtime base es de CPU. Los archivos Ollama portables para x86-64 permiten usar GPU mediante Vulkan (NVIDIA, AMD o Intel con driver instalado) y existe una variante CUDA para NVIDIA Turing (RTX 20 series) o posterior.
+- CPU compatibles: Arm con dotprod (Ampere Altra, AWS Graviton2 y posteriores, Neoverse N1 y posteriores), cualquier Arm de 64 bits con la compilación `arm64-multi`, y x86-64 con AVX2 y FMA (Intel Haswell, AMD Zen y posteriores).
+- Cabe en consumer hardware: sí, siempre que se disponga de al menos 8,6 GB de RAM libre; no requiere GPU dedicada.
+- Opciones de despliegue: runtime VelociQ8 1.5 (archivos Linux arm64, arm64-multi, x64, Windows x64), Ollama portable 0.40.13 (Linux arm64, Linux x64, Windows x64, variantes CUDA) y la imagen Docker `ghcr.io/dhaern/velociq8`. No funciona con llama.cpp estándar, Ollama convencional ni otras herramientas GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Dimensiones | Formato / hardware | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF (este) | 8B | 32K | Hasta 4096 | GGUF Q8A64, solo runtime VelociQ8, CPU Arm/x86 | Apache 2.0 (runtime propietario) | Hugging Face, 138 descargas |
-| Qwen/Qwen3-Embedding-8B (original) | 8B | 32K | Hasta 4096 | safetensors, requiere GPU para uso practico | Apache 2.0 | Hugging Face, oficial |
-| Qwen3-Embedding en tamanos menores (0.6B, 4B) | 0,6B / 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors y GGUF de la comunidad | Apache 2.0 | Hugging Face |
-| BGE-M3 | 568M | 8192 | 1024 | safetensors, CPU y GPU | MIT | Hugging Face |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3-Embedding-8B-Q8A64-GGUF (este) | 8B | 32K | Q8A64 (VelociQ8) | Apache 2.0 | Requiere runtime VelociQ8; optimizado para CPU Arm/x86 |
+| Qwen/Qwen3-Embedding-8B (base) | 8B | 32K | safetensors | Apache 2.0 | Modelo original; requiere framework de deep learning (transformers, etc.) |
+| Alternativas GGUF estándar de Qwen3-Embedding-8B | 8B | 32K | GGUF (Q4, Q8, etc.) | Apache 2.0 | Compatibles con llama.cpp y Ollama convencionales; no disponibles en la informacion proporcionada como repositorios concretos |
 
-La comparación con las variantes menores de Qwen3-Embedding y con BGE-M3 se basa en conocimiento general de la familia, no en datos incluidos en la información proporcionada; verifíquese antes de tomar decisiones de arquitectura. Frente al modelo original en safetensors, este fichero pierde portabilidad de ecosistema y gana capacidad de ejecución en CPU con un runtime concreto; frente a BGE-M3, ofrece muchas más dimensiones y parámetros a cambio de un consumo de memoria muy superior y de una licencia de runtime restrictiva en la práctica.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de esta conversión frente a otras cuantizaciones del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Dependencia de un runtime propietario: los pesos son Apache 2.0, pero en la práctica solo se pueden usar con VelociQ8, software propietario de uso gratuito y no auditado públicamente. Es un riesgo de lock-in para producción.
-- Incompatibilidad con el ecosistema estándar: llama.cpp, Ollama convencional, vLLM y TGI no cargan ficheros Q8A64. Los ejemplos de "Use this model" de Hugging Face no funcionan.
-- Ausencia de métricas de calidad: no hay evaluación publicada del impacto de la cuantización de 8 bits sobre MTEB, recall o precisión de recuperación frente al modelo en BF16.
-- Consumo de memoria elevado para ser un modelo de embeddings: del orden de 8-12 GB, lo que descarta su uso en entornos con poca RAM o en despliegues de borde.
-- Naturaleza del modelo: no genera texto; no sirve para tareas generativas, agentes ni tool calling. Un abuso en ese sentido produce resultados sin sentido.
-- Similitud engañosa: como todo modelo de embeddings, puede asignar puntuaciones altas a textos superficialmente parecidos pero semánticamente opuestos; conviene calibrar umbrales con datos propios.
-- Sesgos del modelo base no documentados: la model card no incluye análisis de sesgo, y la cuantización no corrige los del modelo original.
-- Idiomas: se declara multilingüe sin lista explícita; el rendimiento en idiomas minoritarios o en castellano coloquial no está verificado en la información disponible.
-- Tracción muy baja del repositorio (138 descargas, 1 like): no hay comunidad que valide resultados ni soporte más allá de las incidencias en GitHub.
-- Fechas y procedencia: el repositorio está publicado por un tercero no afiliado a Qwen; la conversión no está avalada por el equipo del modelo base.
+- El archivo solo carga con el runtime VelociQ8 1.1 o superior; las herramientas GGUF estándar (llama.cpp, Ollama convencional) y los snippets automáticos de Hugging Face no funcionan con él.
+- El runtime VelociQ8 es software propietario de uso gratuito, no open source, lo que puede suponer una dependencia de proveedor para despliegues en producción.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento; su única salida son vectores de embedding.
+- No se han publicado mediciones de rendimiento, latencia ni calidad de los embeddings de esta conversión concreta; la fidelidad respecto al modelo base en formato safetensors no está verificada numéricamente.
+- Riesgo de sesgos y alucinaciones heredado del modelo base Qwen3-Embedding-8B, no evaluado en esta conversión.
+- La ventana de contexto de 32K tokens corresponde al modelo original; no se especifica si la conversión Q8A64 la preserva íntegramente.
+- Aunque la licencia es Apache 2.0, conviene revisar los términos del runtime VelociQ8 para uso comercial, ya que es software propietario independiente de los pesos.
+- El repositorio tiene un volumen de descargas bajo (221) y pocos likes (2), lo que limita la validación comunitaria de su funcionamiento en distintas plataformas.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF
+- Repositorio Hugging Face: https://huggingface.co/VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Runtime VelociQ8 (GitHub): https://github.com/dhaern/VelociQ8
 - Releases del runtime: https://github.com/dhaern/VelociQ8/releases
 - Documentación de uso: https://github.com/dhaern/VelociQ8/blob/main/docs/usage.md
-- Sección de Ollama en la documentación: https://github.com/dhaern/VelociQ8/blob/main/docs/usage.md#ollama
-- Sección de Docker en la documentación: https://github.com/dhaern/VelociQ8/blob/main/docs/usage.md#docker
-- Incidencias del runtime: https://github.com/dhaern/VelociQ8/issues
-- Imagen Docker: https://github.com/dhaern/VelociQ8/pkgs/container/velociq8
-- Perfil del autor en Hugging Face: https://huggingface.co/VelociQ8
-- Carpeta de runtimes del repositorio: https://huggingface.co/VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF/tree/main/runtime
-- Foro del modelo: https://huggingface.co/VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF/discussions
-- Paper de referencia (arXiv 2506.05176): https://arxiv.org/abs/2506.05176
-- Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron únicamente páginas de contenido para adultos sin relación con el repositorio.
+- Docker: https://github.com/dhaern/VelociQ8/pkgs/container/velociq8
+- Issues del runtime: https://github.com/dhaern/VelociQ8/issues
+- Discusiones del modelo: https://huggingface.co/VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF/discussions
+- Paper referenciado (arXiv:2506.05176): https://arxiv.org/abs/2506.05176
+- Otros modelos VelociQ8: https://huggingface.co/VelociQ8

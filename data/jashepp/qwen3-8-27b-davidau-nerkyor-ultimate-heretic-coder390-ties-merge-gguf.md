@@ -2,94 +2,97 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF de un modelo de lenguaje de 27.318.209.536 parámetros (aproximadamente 27,3 mil millones) fruto de una fusión (merge) de dos derivados del supuesto Qwen3.8 27B: por un lado, la variante de DavidAU centrada en seguimiento de instrucciones y razonamiento ("Turbo Brilliance"), y por otro, la variante de nerkyor orientada a generación de código y recuperación de contexto ("Coder390 EfficientThink"). La fusión se realizó con la herramienta mergekit empleando el método TIES, documentado en el artículo arXiv:2306.01708.
+Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF es un merge de dos modelos Qwen3.8 de 27B de parametros, publicado por el usuario jashepp en Hugging Face. Combina el modelo base DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored (orientado a razonamiento, modos instruct y seguimiento de instrucciones) con nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2 (especializado en generacion de codigo y recuperacion de contexto). El objetivo declarado es preservar la estructura de razonamiento y el seguimiento de instrucciones del primero e inyectar la "agudeza" en codigo del segundo.
 
-El autor del repositorio, jashepp, publica esta ficha como su primera fusión pública tras varios intentos fallidos, con el objetivo declarado de conservar tanto el razonamiento y el seguimiento de instrucciones del modelo de DavidAU como la precisión en código del modelo de nerkyor. El resultado se distribuye exclusivamente en formato GGUF, con cuantizaciones que van desde BF16 (54,7 GB) hasta MXFP4, pasando por Q8_0, Q6_K y Q4_K_M, todas ellas con soporte de MTP (multi-token prediction).
+El merge se realizo con mergekit mediante el metodo TIES (arxiv:2306.01708), anclando embeddings, normas, lm_head y capas de atencion al modelo base, e inyectando los deltas de parametros principalmente en los bloques mlp intermedios. El resultado es un modelo de 27.318.209.536 parametros (unos 27,3B) con licencia Apache-2.0, publicado en formato GGUF con cuantizaciones BF16, Q8_0, Q6_K y Q4, todas ellas con soporte MTP (multi-token prediction).
 
-La relevancia del modelo es acotada y conviene ser honesto al respecto: no se han publicado benchmarks, la model card reconoce que el autor no ha probado tareas de código complejas y el único resultado de búsqueda web disponible no guarda ninguna relación con el modelo. Los datos verificables se limitan al recuento de parámetros, la licencia Apache 2.0, el tamaño del repositorio (138,0 GB), el número de descargas (3615) y las especificaciones de las cuantizaciones publicadas.
+La relevancia de esta ficha es doble: por un lado, es un ejemplo practico de merge de modelos con TIES para combinar capacidades complementarias (razonamiento e instrucciones frente a codigo); por otro, esta empaquetado como GGUF listo para llama.cpp y LM Studio, lo que lo hace desplegable en hardware de consumo. El repositorio tiene 138 GB y acumula 4.368 descargas y 4 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.8 27B); detalles de atención y capas no disponibles |
-| Parametros totales | 27.318.209.536 (27,3 B) |
-| Parametros activos | No aplica (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M (Q4_K + Q6_K), MXFP4; todas con MTP e IMatrix |
-| Idiomas soportados | Inglés (`en` según la model card); resto no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (transformers como librería declarada); no se publican safetensors en este repo |
+| Arquitectura | Transformer decoder-only (familia Qwen3.8), merge TIES de dos modelos Qwen3.8-27B |
+| Parametros totales | 27.318.209.536 (27,3B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4 (con MTP e imatrix) |
+| Idiomas soportados | Ingles (segun metadatos de la model card); otros idiomas no disponibles |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (BF16, Q8_0, Q6_K, Q4); repo de 138 GB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base Qwen3.8 27B (número de capas, tipo de atención, dimensión oculta, vocabulario). Lo que sí se documenta es el proceso de construcción: una fusión de pesos con mergekit mediante el método TIES (Trim, Elect Sign, Merge), que poda los parámetros redundantes, resuelve los conflictos de signo entre los modelos de origen y combina únicamente los deltas relevantes. Los dos progenitores son, según sus autores, versiones sometidas a post-entrenamiento intensivo: el de DavidAU incorpora lo que denomina "Turbo Brilliance 50x V2 AGI" y el de nerkyor incluye destilaciones de modelos recientes junto con etapas de SFT y RLOO (según la nomenclatura de su nombre: SFT-RLOO-MTP-DFlash2).
+El modelo es un merge de pesos, no un entrenamiento desde cero. Se construyo con mergekit aplicando el metodo TIES, que poda los deltas de parametros (truncando los valores pequenos), resuelve los conflictos de signo entre modelos y combina las magnitudes ponderadas. El modelo base y la fuente del tokenizer es DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, con densidad 1.00, peso mlp base 1.0 y atencion base. El segundo modelo, nerkyor/Qwen3.8-27B-Coder390-EfficientThink, aporta con densidad 0.55, peso mlp 0.22 y atencion ligera (0.00-0.05). La receta concentra las inyecciones en los bloques mlp intermedios para reforzar codigo, seguimiento de instrucciones y recuperacion de contexto, mientras mantiene embeddings, normas, lm_head y atencion anclados al modelo base.
 
-Las cuantizaciones publicadas emplean matrices de importancia (imatrix) y conservan el componente MTP (multi-token prediction), lo que sugiere que el modelo base incorpora decodificación especulativa o predicción multi-token como mecanismo de aceleración. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO en las etapas descritas; la model card tampoco aporta la configuración completa de mergekit más allá de mencionar que está disponible en el cuerpo del documento (truncado en la información proporcionada).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de post-entrenamiento (RLHF, DPO u otros) de los modelos originales en la informacion proporcionada. Si se indica que el modelo incorpora modos de razonamiento de Turbo Brilliance heredados del base, y que las cuantizaciones incluyen MTP (multi-token prediction) e imatrix, lo que sugiere decodificacion especulativa y calibracion de cuantizacion por importancia de pesos. El modelo base nerkyor incluye en su nombre indicios de SFT, RLOO, MTP y DFlash2, pero no se detalla su funcionamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional y seguimiento de instrucciones, heredado del modelo de DavidAU.
-- Razonamiento explícito con modos de pensamiento ("thinking", chain-of-thought) y modos de razonamiento Turbo Brilliance, que el autor afirma haber conservado.
-- Generación de código y tareas de programación, según la especialización del modelo de nerkyor.
-- Recuperación de contexto (context recall) reforzada según las pruebas A/B del autor.
-- Uso agéntico y tool calling, citados en las etiquetas del repositorio y en la experiencia de uso del autor.
-- Predicción multi-token (MTP) en todas las cuantizaciones publicadas.
-- Capacidades multilingües: solo se declara inglés; no hay evidencia de soporte de castellano.
+- Generacion de texto conversacional y de instrucciones en ingles.
+- Razonamiento con modos de "thinking" y cadena de pensamiento (chain-of-thought), heredados de Turbo Brilliance.
+- Generacion de codigo y asistencia en tareas de programacion (el segundo modelo aporta "coding sharpness" y razonamiento de casos limite).
+- Seguimiento de instrucciones (instruction-following) reforzado segun las pruebas A/B del autor.
+- Recuperacion de contexto (context recall) mejorada segun el autor.
+- Soporte de tool calling / uso de herramientas y flujos agenticos (etiquetas agentic y tool-use).
+- Compatibilidad con clientes agenticos como Pi, OpenCode y Hermes mediante un super-adapter LoRA opcional.
+- Capacidades multilingues: solo se declara ingles; no hay datos de otros idiomas.
 
 ## Casos de uso
 
-- Asistencia de programación en local: con la cuantización Q4_K_M (17,2 GB) el modelo cabe en una GPU de 24 GB y puede emplearse en editores o CLI para autocompletado y generación de funciones, aprovechando la especialización en código del modelo de nerkyor.
-- Agentes autónomos con tool calling: las etiquetas de agentic y tool-use, junto con el refuerzo de seguimiento de instrucciones que reporta el autor, permiten encadenar llamadas a herramientas en flujos de varios pasos, aunque sin benchmarks que lo respalden.
-- Razonamiento con cadena de pensamiento en tareas de análisis: los modos de pensamiento conservados del modelo base permiten separar el razonamiento interno de la respuesta final en problemas de lógica o planificación.
-- Procesamiento de documentación técnica con contexto largo: el autor reporta mejoras en recuperación de contexto, útil para resumir o consultar repositorios y manuales, siempre que se verifique la longitud de contexto real del modelo base.
-- Experimentación en investigación sobre fusiones de modelos: el repositorio sirve como caso práctico de merge TIES con cuantización imatrix y MTP, replicable con la configuración publicada.
-- Despliegue en estación de trabajo con llama.cpp o LM Studio: al distribuirse solo en GGUF, encaja en entornos sin infraestructura de servidores GPU y con requisitos de privacidad (datos que no salen de la máquina).
-- Generación de código sin censura en entornos controlados: la ascendencia "Heretic Uncensored" reduce los rechazos en dominios sensibles (por ejemplo, seguridad ofensiva), lo que exige controles de uso adicionales.
+- Asistencia de codigo en local: el modelo puede generar, revisar y depurar codigo en un entorno de desarrollo integrado conectado a llama.cpp o LM Studio, aprovechando la inyeccion de capacidades de codigo del modelo nerkyor y su soporte de tool calling.
+- Agente de programacion multi-paso: al soportar tool-use y razonamiento encadenado, puede orquestar tareas como leer un repositorio, ejecutar pruebas y proponer parches en un bucle agentico.
+- Razonamiento y resolucion de problemas tecnicos: los modos de pensamiento de Turbo Brilliance permiten abordar problemas de logica, matematicas o diseno de algoritmos con trazas de razonamiento explicitas.
+- Chat de soporte tecnico para desarrolladores: con seguimiento de instrucciones y recuperacion de contexto, puede mantener conversaciones multi-turno sobre APIs, errores y configuracion.
+- Entornos con requisitos de privacidad: al ser desplegable en GGUF sobre hardware local, permite ejecutar el modelo sin enviar codigo ni datos a servicios en la nube.
+- Prototipado rapido de pipelines de IA: sirve como modelo de referencia para probar integraciones con clientes agenticos (Pi, OpenCode, Hermes) y comparar el efecto del super-adapter LoRA en la sintaxis de tool calls.
+- Educacion y experimentacion con merges: su receta mergekit publica permite reproducir, inspeccionar o iterar el merge para estudiar el efecto de TIES en la combinacion de capacidades.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no ha realizado benchmarks y que aún no ha probado tareas de código complejas; las únicas valoraciones son pruebas A/B con la misma semilla en uso agéntico, sin cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor menciona pruebas A/B con la misma semilla que indican mejoras en seguimiento de instrucciones y recuperacion de contexto, pero no aporta cifras numericas (MMLU, HumanEval, GSM8K u otras).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: BF16 requiere unos 54,7 GB de pesos (más overhead de contexto y caché KV); Q8_0 unos 29 GB; Q6_K unos 22,4 GB; Q4_K_M unos 17,2 GB; MXFP4, tamaño no disponible en la información.
-- GPU recomendadas: para BF16, A100 80 GB o H100 80 GB; para Q8_0, A100 40 GB o dos GPU de 24 GB; para Q4_K_M y Q6_K, una RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- Cabe en GPU de consumo: sí, en configuraciones Q4_K_M y Q6_K dentro de 24 GB; Q8_0 y BF16 quedan fuera de una sola tarjeta de consumo.
-- Opciones de despliegue: llama.cpp y LM Studio son las vías naturales al ser GGUF; vLLM y TGI no se citan en la información disponible y su compatibilidad con este formato no está confirmada.
-- Latencia y throughput: no disponibles; el MTP incluido en todas las cuantizaciones debería reducir la latencia de decodificación, pero no se aportan cifras.
+- VRAM estimada para inferencia: BF16 requiere aproximadamente 55 GB (tamano del fichero 54,7 GB); Q8_0 unos 29 GB; Q6_K y Q4 no se detallan en la informacion disponible, pero por el patron habitual serian del orden de 22-23 GB y 15-17 GB respectivamente (estimacion, no dato confirmado).
+- GPU recomendadas: para BF16, A100 80 GB o H100; para Q8_0, una RTX 4090 (24 GB) no basta y se necesitaria una GPU de 32 GB o mas (A100 40 GB, L40S) o repartir entre varias GPU; para Q6_K y Q4 es plausible que quepa en una RTX 4090 de 24 GB, aunque no se confirma en la informacion.
+- Cabe en GPU de consumo: probablemente en Q4 y Q6_K sobre RTX 4090 o RTX 3090 (24 GB), sujeto a verificacion; BF16 y Q8_0 no caben en GPUs de consumo de 24 GB.
+- Opciones de despliegue: llama.cpp, LM Studio (etiquetados explicitamente), y por compatibilidad de formato GGUF tambien otros runners basados en llama.cpp; el repo declara endpoints_compatible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este merge (jashepp) | 27,3 B | No disponible | Apache 2.0 | GGUF (BF16 a MXFP4) | Fusión TIES de dos derivados de Qwen3.8 27B; sin benchmarks |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27 B (aproximado) | No disponible | No disponible en la información | Pesos completos y GGUF | Progenitor centrado en instrucciones y razonamiento Turbo Brilliance |
-| nerkyor/Qwen3.8-27B-Coder390-EfficientThink-... | 27 B (aproximado) | No disponible | No disponible en la información | No disponible | Progenitor centrado en código y recuperación de contexto |
-| jashepp/Qwen3.8-27B-4x-ties-merge-... | 27 B (aproximado) | No disponible | No disponible en la información | GGUF | Fusión de cuatro modelos del mismo autor, con enfoque en ciberseguridad |
+| Este merge (jashepp) | 27,3B | No disponible | GGUF (BF16, Q8_0, Q6_K, Q4) | Apache-2.0 | Merge TIES de razonamiento + codigo |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B (aprox.) | No disponible | No disponible en la informacion | No disponible | Base del merge; razonamiento Turbo Brilliance |
+| nerkyor/Qwen3.8-27B-Coder390-EfficientThink | 27B (aprox.) | No disponible | No disponible en la informacion | No disponible | Segundo componente; foco en codigo |
+| Qwen3.8-27B stock (familia Qwen) | 27B (aprox.) | No disponible | No disponible en la informacion | No disponible | Referencia de la familia base |
 
-No se dispone de datos de rendimiento comparativos; la comparación se limita a parámetros, licencia y disponibilidad de formatos.
+No se dispone de datos de rendimiento comparativo (benchmarks) para establecer una comparativa cuantitativa; la comparacion se limita a parametros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia cuantitativa de calidad, y el propio autor admite no haber probado tareas de código complejas.
-- Riesgo de alucinación no evaluado; las fusiones TIES pueden degradar capacidades de forma impredecible respecto a los modelos de origen.
-- El modelo desciende de una variante "Heretic Uncensored": cabe esperar menor rechazo de contenido sensible, lo que traslada la responsabilidad de filtrado al despliegue.
-- Soporte de idiomas limitado al inglés declarado; el rendimiento en castellano no está verificado.
-- Longitud de contexto no documentada en esta ficha; no debe asumirse una ventana larga sin comprobarla en el modelo base.
-- La licencia Apache 2.0 se declara en el repositorio, pero las licencias de los modelos de origen no se detallan en la información disponible; conviene verificarlas antes de un uso comercial.
-- El repositorio ocupa 138,0 GB y solo distribuye GGUF; no hay safetensors para fine-tuning en este repo.
-- La model card está truncada en la información proporcionada y la configuración de mergekit no es visible, lo que dificulta la reproducibilidad.
-- El único resultado de búsqueda web disponible no está relacionado con el modelo y no aporta información verificable.
+- Al ser un merge de pesos, no se ha validado con un conjunto de evaluacion independiente; el rendimiento puede degradarse en tareas fuera del dominio de codigo e instrucciones.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no hay evaluacion publicada de tasas de alucinacion.
+- Idiomas: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- Longitud de contexto: no se especifica en la informacion proporcionada; conviene consultar la model card del base antes de usarlo en tareas de contexto largo.
+- Contenido: el modelo base se describe como "Heretic Uncensored", lo que sugiere un alineamiento de seguridad reducido; no es adecuado para aplicaciones orientadas a publico sin filtros adicionales.
+- Licencia Apache-2.0 permite uso comercial, pero las condiciones de los modelos originales y de los datos de entrenamiento no se detallan; conviene revisar las fichas de los modelos base.
+- El soporte de tool calling puede requerir el super-adapter LoRA opcional para clientes con sintaxis especifica (Pi, OpenCode, Hermes); sin el, la compatibilidad puede ser parcial.
+- Las cuantizaciones Q4 y Q6_K no tienen tamanos confirmados en la informacion; las estimaciones de VRAM son orientativas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF
-- Modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
-- GGUF del modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
-- Modelo base 2: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
-- Fusión alternativa del mismo autor: https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF
-- Colección de modelos Qwen de DavidAU: https://huggingface.co/collections/DavidAU/qwen-36-reg-uncensored-9b-12b-21b-27b-40b
-- Colección Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
-- mergekit: https://github.com/cg123/mergekit
-- Artículo TIES: https://arxiv.org/abs/2306.01708
+- Modelo en Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF
+- Modelo base DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- GGUF del base DavidAU (Turbo Brilliance): https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Modelo base nerkyor: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Super-adapter LoRA para tool calling: https://huggingface.co/jashepp/Qwen3.8-27B-super-adapter-Quants-LoRA-GGUF
+- Merge de 4 modelos del mismo autor: https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF
+- Merge de 5 modelos del mismo autor: https://huggingface.co/jashepp/Qwen3.8-27B-5x-ties-merge-brilliance-omnisre-coder390-cybersecurity-veriloop-GGUF
+- Coleccion de modelos Qwen de DavidAU: https://huggingface.co/collections/DavidAU/qwen-36-reg-uncensored-9b-12b-21b-27b-40b
+- Coleccion Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
+- Paper TIES: https://arxiv.org/abs/2306.01708
+- Repositorio mergekit: https://github.com/arcee-ai/mergekit
+- Licencia Apache-2.0: https://choosealicense.com/licenses/apache-2.0/

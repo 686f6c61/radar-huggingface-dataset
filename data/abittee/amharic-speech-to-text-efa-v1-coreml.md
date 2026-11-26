@@ -2,92 +2,103 @@
 
 ## Resumen
 
-El modelo `amharic-speech-to-text-efa-v1-coreml` es una conversión a Core ML del modelo de reconocimiento automático de voz (ASR) en amárico `Abittee/amharic-speech-to-text-efa-v1`, desarrollado por Endrias F. Abitte. Se trata de un fine-tuning de `facebook/w2v-bert-2.0` con una cabeza CTC, empaquetado en formato Core ML con pesos cuantizados a 8 bits para su ejecución en dispositivo (on-device) en iPhone. Forma parte de la infraestructura de la aplicación Amharic Notes, que realiza transcripción de voz local sin depender de la nube.
+El modelo `Abittee/amharic-speech-to-text-efa-v1-coreml` es una conversión a Core ML con cuantización de 8 bits del modelo `Abittee/amharic-speech-to-text-efa-v1`, un sistema de reconocimiento automático del habla (ASR) especializado en amárico. Lo desarrolla Endrias F. Abitte y está pensado para inferencia en dispositivo (on-device) en iPhone, concretamente para la aplicación Amharic Notes. La conversión reduce el tamaño de los pesos de aproximadamente 2,4 GB a unos 609 MB, manteniendo prácticamente idéntica la precisión según la simulación en PyTorch reportada por el autor.
 
-La relevancia del modelo radica en que lleva un sistema ASR de una lengua de bajos recursos como el amárico a un dispositivo móvil con un tamaño contenido: aproximadamente 609 MB frente a los 2,4 GB del modelo original en PyTorch. La cuantización simétrica a 8 bits por canal de salida en todas las capas lineales y convolucionales apenas degrada la precisión respecto al modelo original, según los datos publicados por el autor.
+El modelo base parte de `facebook/w2v-bert-2.0`, un encoder transformer preentrenado con objetivos de predicción auto-supervisada sobre audio multilingüe, afinado con una cabeza CTC sobre datos de amárico de los conjuntos WAXAL y FLEURS. La arquitectura resultante es un encoder w2v-BERT 2.0 con decodificación CTC greedy, sin componente autoregresivo, lo que simplifica el despliegue y reduce la latencia en dispositivos móviles.
 
-El modelo está pensado exclusivamente para inferencia en iOS 17 o superior, con entrada de características log-mel de Kaldi (80 bins, ventana de 25 ms, salto de 10 ms) y salida de logits para decodificación CTC voraz. No está diseñado como modelo de servidor ni como base para fine-tuning adicional en el formato Core ML.
+Su relevancia radica en dos factores: por un lado, cubre un idioma con escasa representación en herramientas ASR comerciales (el amárico, escrito en alfabeto etíope); por otro, demuestra un flujo de despliegue completo desde un modelo de investigación en PyTorch hasta un artefacto Core ML cuantizado listo para iOS 17 o superior, con métricas de degradación por cuantización explícitas (WER y CER sobre dos test sets completos).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | w2v-BERT 2.0 con cabeza CTC (transformer convolucional auto-supervisado + clasificador CTC) |
-| Parametros totales | no disponible (el modelo base es facebook/w2v-bert-2.0; el autor no publica el recuento exacto) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible como contexto textual; en audio, clips de 0,5 a 20 s (T de 12 a 1500 frames de 20 ms) |
-| Tipos de cuantizacion | 8 bits simetrica, por canal de salida, en todas las capas lineales y convolucionales |
-| Idiomas soportados | am (amárico) |
+| Arquitectura | w2v-BERT 2.0 (encoder transformer) + cabeza CTC |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (entrada `input_features` de T = 12 a 500 frames, ~20 ms por fila) |
+| Tipos de cuantización | 8 bits simétrica, por canal de salida, en todas las capas lineales y convolucionales |
+| Idiomas soportados | amárico (`am`) |
 | Licencia | CC BY-SA 4.0 |
-| Formato de pesos | Core ML (`.mlpackage` / `.mlmodel`); tamano del repo 0,6 GB |
+| Formato de pesos | Core ML (`.mlpackage`/`.mlmodel`); el original en PyTorch |
+| Tamaño del artefacto | ~609 MB (original ~2,4 GB) |
+| Entrada | `input_features` float32 (1, T, 160), 80 bins log-mel Kaldi (ventana 25 ms, hop 10 ms), normalización por bin sobre el enunciado, dos frames apilados (20 ms por fila) |
+| Salida | `logits` float32 (1, T', vocab), un frame cada 0,04 s |
+| Decodificación | CTC greedy: argmax, colapso de repeticiones, descarte de blank (id 284), `|` como espacio |
+| Requisito mínimo | iOS 17 |
+| Librería | coreml |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `facebook/w2v-bert-2.0`, un transformer preentrenado de forma auto-supervisada sobre audio multilingüe, al que se le añade una cabeza de clasificación CTC para ASR. El fine-tuning se realizó sobre datos en amárico de los corpus WAXAL y FLEURS, según indica la model card. La conversión a Core ML aplica cuantización simétrica a 8 bits por canal de salida en todas las capas lineales y convolucionales, reduciendo el tamaño de 2,4 GB a unos 609 MB.
+El modelo base es un w2v-BERT 2.0, un encoder transformer que combina aprendizaje auto-supervisado contrastivo y enmascarado sobre audio, preentrenado originalmente por Meta en `facebook/w2v-bert-2.0`. Sobre esa base, el autor aplicó un ajuste fino supervisado con una cabeza de clasificación CTC para transcripción de amárico, usando los corpus WAXAL (amh_asr) y FLEURS (am_et). No se especifica en la información disponible el número de tokens de audio de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (no aplicables habitualmente en ASR CTC).
 
-La entrada del modelo Core ML es un tensor `input_features` de tipo float32 con forma (1, T, 160): 80 bins log-mel de Kaldi, normalizados por bin sobre toda la locución, con dos frames apilados (20 ms por fila). La salida es `logits` de forma (1, T', vocab), con un frame cada 0,04 s. La decodificación es CTC voraz con `vocab.json`: argmax, colapso de repeticiones, eliminación del token blank (id 284) y `|` como espacio. El paquete incluye `feature_extractor.json` con todos los parámetros de extracción (ventana, filtros mel) y `model_info.json` con tamaños y SHA-256 de cada fichero. Requiere iOS 17 como mínimo.
+La innovación principal de esta ficha concreta no está en el entrenamiento sino en la conversión y compresión: cuantización de 8 bits simétrica por canal de salida en todas las capas lineales y convolucionales, manteniendo la entrada y la salida en float32. El autor reporta que la simulación en PyTorch de esos pesos exactos produce una degradación prácticamente nula frente al modelo original (diferencias de 0,05 puntos de WER en WAXAL y 0,04 en FLEURS). El artefacto Core ML incluye `feature_extractor.json` con las ventanas y filtros mel, `vocab.json` con el vocabulario CTC y `model_info.json` con tamaños y SHA-256 de cada fichero.
 
 ## Capacidades
 
-- Reconocimiento automático de voz en amárico, con salida de texto a partir de audio muestreado en clips de 0,5 a 20 s.
-- Decodificación CTC voraz integrada en la salida del modelo (logits por frame).
-- Ejecución on-device en iPhone mediante Core ML, sin necesidad de conexión a red.
-- Extracción de características log-mel compatible con Kaldi incluida en el paquete (`feature_extractor.json`).
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente ASR.
-- No soporta otros idiomas distintos del amárico.
-- No incluye modo thinking, visión ni audio generativo.
+- Reconocimiento automático del habla en amárico, con salida de texto en alfabeto etíope.
+- Transcripción de clips de audio de entre 0,5 y 20 segundos según los test sets reportados (T de 12 a 500 frames de entrada).
+- Decodificación CTC greedy no autoregresiva, lo que permite procesar el audio en una sola pasada del encoder.
+- Inferencia en dispositivo (on-device) en iPhone con iOS 17 o superior, sin conexión a red.
+- Manejo de vocabulario CTC con token blank (id 284) y separador de palabras representado por `|`.
+- Evalúa errores ignorando homófonos del alfabeto etíope (ሀ/ሐ/ኀ, ሰ/ሠ, አ/ዐ, ጸ/ፀ) y puntuación en las métricas reportadas.
+- No soporta tool calling, function calling, agentes, visión, audio de entrada más allá del ASR ni modo de razonamiento; es un modelo puramente ASR.
 
 ## Casos de uso
 
-- Transcripción de notas de voz en la app Amharic Notes: el modelo convierte grabaciones de hasta 20 s en texto amárico directamente en el iPhone, sin enviar audio a servidores externos.
-- Dictado en aplicaciones iOS para hablantes de amárico: integración del `.mlpackage` en un pipeline de reconocimiento de voz nativo que procesa audio del micrófono en tiempo real con latencia de dispositivo.
-- Accesibilidad para personas con discapacidad auditiva: generación de subtítulos en amárico sobre grabaciones cortas, aprovechando que el modelo funciona sin conexión y preserva la privacidad del audio.
-- Digitalización de entrevistas y notas de campo en amárico: procesamiento por lotes de clips de 0,5 a 20 s en un dispositivo iOS para entornos con conectividad limitada.
-- Investigación lingüística de campo: transcripción asistida de corpus orales en amárico en dispositivos móviles, con la ventaja de que el modelo cabe en un teléfono y no requiere GPU de servidor.
-- Aplicaciones educativas de aprendizaje de amárico: evaluación de pronunciación o transcripción de ejercicios orales en el propio dispositivo, sin coste de inferencia en la nube.
+- **Transcripción de notas de voz en iOS**: la app Amharic Notes lo usa para convertir dictados de voz en texto dentro del propio dispositivo, sin enviar audio a servidores y con latencia baja gracias a la decodificación CTC en una pasada.
+- **Accesibilidad para hablantes de amárico**: subtitulado en tiempo casi real de conversaciones o contenido pregrabado en iPhone, útil para personas con dificultades auditivas o para documentar reuniones.
+- **Aplicaciones de campo sin conectividad**: al ejecutarse on-device, permite transcribir entrevistas, encuestas o informes en zonas con cobertura limitada, siempre que el clip no supere los ~20 s por inferencia.
+- **Digitalización de archivos orales**: transcripción por lotes de grabaciones cortas en amárico (entrevistas, testimonios, material educativo) para su indexación y búsqueda textual.
+- **Integración en apps de mensajería o productividad**: dictado de mensajes y documentos en amárico dentro de aplicaciones iOS nativas, usando el `.mlpackage` como dependencia del proyecto Xcode.
+- **Prototipado de pipelines ASR multilingües**: como componente de amárico dentro de un sistema que enrute audio por idioma hacia distintos modelos, aprovechando su reducido tamaño (~609 MB) frente al original (~2,4 GB).
+- **Investigación en cuantización para ASR móvil**: sirve como referencia reproducible de cuantización 8-bit por canal en w2v-BERT + CTC, con métricas de degradación publicadas.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (decodificación CTC voraz, conjuntos de test completos, clips de 0,5 a 20 s; no se cuentan errores en letras homófonas ni puntuación). La columna de 8 bits es una simulación en PyTorch de los pesos exactos cuantizados.
+Datos reportados por el autor con decodificación CTC greedy, test sets completos, clips de 0,5 a 20 s, sin contar errores en homófonos ni puntuación. La columna de 8 bits corresponde a una simulación en PyTorch de los pesos exactos del artefacto Core ML.
 
-| Test set | Original (WER / CER) | 8 bits (WER / CER) |
+| Test set | Original WER / CER | 8 bits WER / CER |
 |---|---|---|
 | WAXAL amh_asr test (3031 clips) | 23,49 % / 9,55 % | 23,54 % / 9,56 % |
 | FLEURS am_et test (505 clips) | 15,84 % / 4,56 % | 15,88 % / 4,59 % |
 
-No se han publicado resultados de latencia ni throughput en la información disponible.
+No se han publicado en la información disponible datos de latencia, throughput ni comparativas con otros modelos ASR de amárico.
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente en dispositivo Apple con Core ML; requiere iOS 17 o superior.
-- Tamano del paquete Core ML: aproximadamente 609 MB, lo que condiciona el espacio de almacenamiento en el dispositivo.
-- No está pensado para GPU de servidor (A100, H100, RTX 4090) ni para frameworks de servidor como vLLM, TGI o llama.cpp; el formato es Core ML.
-- Compatible con iPhone que ejecuten iOS 17; el autor no detalla modelos concretos ni requisitos de Neural Engine.
-- Latencia y throughput no disponibles en la información proporcionada.
+- **VRAM estimada**: no aplica en el sentido de GPU de escritorio; el artefacto está diseñado para el Neural Engine y la GPU integrada del iPhone. El tamaño de pesos es de ~609 MB, por lo que la memoria de trabajo debe acomodar el modelo más las activaciones del encoder para T de hasta 500 frames.
+- **GPU recomendadas**: no disponible para despliegue en servidor; el formato Core ML está orientado a Apple Silicon y a los chips A-series/M-series con Neural Engine.
+- **Compatibilidad consumer**: sí, en iPhone con iOS 17 o superior. No se indica compatibilidad con macOS, iPadOS ni con GPUs NVIDIA/AMD en la información disponible.
+- **Opciones de despliegue**: Core ML (librería `coreml`, integración en Xcode). No se documentan exportaciones a vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Abittee/amharic-speech-to-text-efa-v1-coreml | no disponible | clips de 0,5 a 20 s | am | CC BY-SA 4.0 | Core ML 8 bits |
-| Abittee/amharic-speech-to-text-efa-v1 (original) | no disponible | clips de 0,5 a 20 s | am | CC BY-SA 4.0 | PyTorch (safetensors) |
-| facebook/w2v-bert-2.0 | no disponible | no disponible | multilingue | no disponible en esta ficha | PyTorch |
+| Modelo | Arquitectura | Idioma | Tamaño | Licencia | Formato | WER FLEURS am_et |
+|---|---|---|---|---|---|---|
+| Abittee/amharic-speech-to-text-efa-v1-coreml | w2v-BERT 2.0 + CTC, 8 bits | am | ~609 MB | CC BY-SA 4.0 | Core ML | 15,88 % |
+| Abittee/amharic-speech-to-text-efa-v1 (original) | w2v-BERT 2.0 + CTC | am | ~2,4 GB | CC BY-SA 4.0 | PyTorch | 15,84 % |
+| facebook/w2v-bert-2.0 | w2v-BERT 2.0 (preentrenado) | multilingüe | no disponible | no disponible | PyTorch/safetensors | no disponible (no es ASR supervisado) |
 
-No se dispone de datos de benchmarks de modelos alternativos de ASR en amárico en la información proporcionada para establecer una comparación cuantitativa.
+No se dispone en la información proporcionada de otros modelos ASR específicos de amárico con los que establecer una comparación cuantitativa adicional.
 
 ## Limitaciones y advertencias
 
-- Solo reconoce amárico; no es multilingüe y no debe usarse con otros idiomas.
-- Los clips de audio deben estar entre 0,5 y 20 s; fuera de ese rango no está garantizado el funcionamiento.
-- La evaluación excluye errores en letras homófonas (ሀ/ሐ/ኀ, ሰ/ሠ, አ/ዐ, ጸ/ፀ) y puntuación, por lo que el WER real percibido por el usuario puede ser mayor.
-- El WER en WAXAL (23,54 %) es notablemente superior al de FLEURS (15,88 %), lo que sugiere sensibilidad a la variabilidad del corpus y posibles sesgos hacia el dominio de FLEURS.
-- Licencia CC BY-SA 4.0: el uso comercial está permitido, pero cualquier obra derivada debe compartirse bajo la misma licencia y atribuir al autor original.
-- Requiere iOS 17; no es desplegable en servidores, contenedores ni GPUs convencionales.
-- Riesgo de alucinación inherente a los modelos CTC: pueden producirse inserciones o sustituciones en audio ruidoso o con acentos no representados en el entrenamiento.
-- El modelo no incluye puntuación ni normalización de texto más allá de la salida CTC.
+- **Idioma único**: solo amárico; no transcribe otros idiomas ni cambia de idioma automáticamente.
+- **Duración de audio**: los test sets cubren clips de 0,5 a 20 s y la entrada admite T de 12 a 500 frames; audios más largos requieren segmentación previa.
+- **Errores en homófonos**: el WER reportado no penaliza confusiones entre ሀ/ሐ/ኀ, ሰ/ሠ, አ/ዐ y ጸ/ፀ, por lo que la tasa de error percibida por un usuario que exija ortografía estricta puede ser mayor.
+- **Puntuación**: los errores de puntuación tampoco se contabilizan en las métricas; la salida CTC no genera puntuación de forma fiable.
+- **Riesgo de alucinación**: en ASR CTC el riesgo se manifiesta como sustituciones o inserciones de tokens, especialmente en audio ruidoso o con acentos no representados en WAXAL/FLEURS.
+- **Licencia CC BY-SA 4.0**: permite uso comercial, pero obliga a atribuir al autor original y a compartir las adaptaciones bajo la misma licencia (copyleft). Esto puede ser incompatible con productos propietarios que no quieran liberar sus modificaciones del modelo.
+- **Plataforma**: requiere iOS 17 o superior y el runtime Core ML; no es portable directamente a Android ni a servidores Linux sin reconversión.
+- **Cuantización**: la validación de los 8 bits es una simulación en PyTorch, no una medición sobre el artefacto Core ML ejecutándose en dispositivo; la degradación real en hardware Apple podría diferir.
+- **Sesgos**: no se documentan análisis de sesgo por género, edad o variante dialectal del amárico; la cobertura depende de la composición de WAXAL y FLEURS.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1-coreml
-- Modelo base: https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1
+- Modelo en Hugging Face: https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1-coreml
+- Modelo base en Hugging Face: https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1
 - Modelo preentrenado de origen: https://huggingface.co/facebook/w2v-bert-2.0
+- WAXAL (corpus de entrenamiento): no disponible en la información proporcionada
+- FLEURS (corpus de evaluación): no disponible en la información proporcionada
+- Documentación de Core ML: no disponible en la información proporcionada

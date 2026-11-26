@@ -2,117 +2,110 @@
 
 ## Resumen
 
-Qwen3.6-27B-Instruct-MetaSecAlign es un ajuste fino del modelo multimodal Qwen/Qwen3.6-27B publicado por el desarrollador independiente Sizhe-Chen. Se trata del checkpoint de referencia (baseline) del estudio SecPO, entrenado con Direct Preference Optimization (DPO) estándar sobre pares de preferencia construidos con inyecciones simuladas estáticas. Su objetivo es defender el modelo frente a ataques de prompt injection indirecta, preservando al mismo tiempo la utilidad general del modelo base.
+Qwen3.6-27B-Instruct-MetaSecAlign es un ajuste fino del modelo multimodal Qwen3.6-27B de Alibaba, desarrollado por Sizhe Chen, Arman Zharmagambetov, David Wagner y Chuan Guo como checkpoint de referencia (baseline) del estudio SecPO. Su proposito es defender el modelo frente a ataques de inyeccion de prompts (prompt injection), el riesgo de seguridad mas citado para agentes basados en LLM, mediante optimizacion de preferencias (DPO) sobre inyecciones simuladas estaticas. No incorpora entrenamiento adversarial, por lo que representa el punto de partida frente al cual se mide la propuesta SecPO.
 
-El modelo mantiene la arquitectura del Qwen3.6-27B original: un modelo de lenguaje causal de aproximadamente 27.356 millones de parámetros con un codificador de visión, empaquetado como `Qwen3_5ForConditionalGeneration`. Los pesos se distribuyen en 12 shards de safetensors en BF16 con las LoRA ya fusionadas, de modo que no se requiere ningún adaptador separado para su uso.
+El modelo conserva la arquitectura y capacidades del Qwen3.6-27B original (procesamiento de imagen y texto, generacion de texto, razonamiento, codigo y tool calling), con 27.356.728.560 parametros y pesos en safetensors. Se entrena y evalua con el modo de razonamiento desactivado (`enable_thinking=False`); para inferencia con modo thinking existe un checkpoint hermano, Qwen3.6-27B-Thinking-SecOPD.
 
-La relevancia de esta ficha radica en que cuantifica con detalle el compromiso entre seguridad y utilidad: reduce la tasa de éxito de ataques estáticos del 98,9 % al 2,9 %, pero los ataques adaptativos siguen siendo eficaces (hasta el 94,0 % de ASR en PISmith). Es, por tanto, un punto de partida útil para investigar defensas frente a prompt injection, no una solución de producción cerrada.
+Su relevancia actual radica en que cuantifica el compromiso entre utilidad y robustez: frente al modelo sin defender, mantiene casi toda la utilidad en ciencia, matematicas e instrucciones, pero su tasa de exito de ataque (ASR) bajo inyecciones adaptativas sigue siendo muy alta, lo que lo convierte en una referencia util para investigacion en seguridad de agentes y para comparar tecnicas de defensa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `Qwen3_5ForConditionalGeneration` (LLM causal de ~27B con codificador de visión) |
+| Arquitectura | Transformer multimodal (image-text-to-text); tag `qwen3_5`, familia Qwen3.6 |
 | Parametros totales | 27.356.728.560 |
-| Parametros activos | no disponible (no es MoE según la información proporcionada) |
-| Longitud de contexto | 262.144 tokens (configuración nativa) |
-| Tipos de cuantizacion | no disponible (solo se publican pesos BF16) |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (BF16, 12 shards, ~54,7 GB) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (segun model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del transformer multimodal Qwen3.6-27B, que combina un decodificador causal de lenguaje con un codificador de visión preservado intacto durante el ajuste. El entrenamiento consistió en un DPO sigmoide estándar con `beta=0.1`, donde tanto la política como la referencia congelada condicionan sobre la misma entrada inyectada. Se construyeron 19.157 pares de preferencia a partir de ejemplos de Cleaned-Alpaca con campo de datos, generando inyecciones simuladas estáticas mediante una plantilla que convierte otro ejemplo muestreado en una tarea inyectada, antepuesta o pospuesta con igual probabilidad. La respuesta preferida sigue la tarea de confianza sobre entrada limpia; la rechazada sigue la tarea inyectada.
+El modelo parte de Qwen3.6-27B, un transformer multimodal de la familia Qwen3.6 que procesa entradas de imagen y texto (`pipeline_tag: image-text-to-text`). Sobre esa base se aplica un ajuste fino con perdida DPO estandar sobre 19.157 pares de preferencia construidos a partir de ejemplos de Cleaned-Alpaca con un campo de datos de entrada e inyecciones simuladas estaticas. No se emplea entrenamiento adversarial ni sintesis de ataques fuertes, a diferencia de la variante SecPO.
 
-El ajuste se realizó durante 1 época con AdamW, tasa de aprendizaje `1.6e-4`, esquema lineal, 3 % de warmup y clipping de norma de gradiente a 1.0. Se usaron 8 procesos, 1 par por dispositivo, 8 pasos de acumulación (64 pares por actualización) y un presupuesto de secuencia de 4.608 tokens. Las LoRA (rango 64, alpha 8, dropout 0.1) se aplicaron a `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, y se fusionaron en los pesos liberados. No hubo entrenamiento adversarial en este baseline y el modo thinking permaneció desactivado durante entrenamiento y evaluación (`enable_thinking=False`).
+La innovacion metodologica asociada (Meta-SecAlign, paper arXiv:2507.02735) consiste en dos elementos: posicion de inyeccion aleatoria durante el entrenamiento para evitar aprendizaje de atajos y uso de respuestas autogeneradas como etiquetas de alta calidad en distribucion. El checkpoint aqui descrito es la linea base de ese metodo, entrenado con DPO y sin el pipeline de entrenamiento adversarial que introduce SecPO (arXiv:2610.41998). El entrenamiento y la evaluacion se realizan con el modo thinking desactivado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con resultados sólidos en MMLU-Pro (83,9 %) y GPQA Diamond (79,3 %).
-- Razonamiento matemático: GSM8K (97,0 %) y Minerva Math (94,8 %).
-- Comprensión de documentos e imágenes: pipeline `image-text-to-text` con utilidad DocVQA del 95,8 %.
-- Seguimiento de instrucciones conversacionales: 81,6 % de win rate bruto en AlpacaEval2.
-- Flujos agénticos: utilidad benigna del 87,6 % en AgentDojo y 76,7 % en AgentDyn.
-- Separación explícita de frontera de confianza mediante roles `user` (instrucción de confianza) e `input` (texto, documentos, retornos de herramientas o imágenes no confiables); el chat template incluido soporta esta separación.
-- Soporte de tool calling y flujos multi-paso implícito en las evaluaciones agénticas (AgentDojo, AgentDyn, DTaP-Bench-Indirect).
-- Capacidades multilingües limitadas al inglés según la model card.
-- Modo thinking disponible en el modelo base pero desactivado en el entrenamiento y la evaluación reportados.
+- Generacion de texto conversacional multi-turno.
+- Procesamiento de imagen y texto (entrada multimodal image-text-to-text).
+- Razonamiento cientifico y matematico (evaluado en MMLU-Pro, GPQA Diamond, GSM8K y Minerva Math).
+- Seguimiento de instrucciones (evaluado en AlpacaEval2).
+- Tool calling y flujos agenticos (evaluado en AgentDojo, InjecAgent, WASP y SEP).
+- Defensa frente a inyeccion de prompts en datos no confiables (correo, documentos, webs), objeto principal del ajuste.
+- Capacidades multilingues: la model card solo declara ingles (`en`); no se documentan otros idiomas.
+- Modo thinking: no soportado en este checkpoint; requiere `enable_thinking=False`.
 
 ## Casos de uso
 
-- Investigación en seguridad de LLM: sirve como baseline de referencia para comparar defensas frente a prompt injection indirecta, ya que el autor publica el modelo SecPO comparativo y el código en GitHub.
-- Procesamiento de documentos con contenido no confiable: usando el rol `input` para el documento y `user` para la instrucción, el modelo mantiene una utilidad DocVQA del 95,8 % mientras reduce el secuestro de tareas por inyecciones estáticas.
-- Agentes con retorno de herramientas externas: integrable en pipelines donde las respuestas de APIs o navegadores se marcan como no confiables, con utilidad agéntica del 87,6 % en AgentDojo.
-- Evaluación de robustez en CI: el modelo puede actuar como sujeto de pruebas en suites de red-teaming (SEP Genetic, TAP, PISmith) para medir la eficacia real de una defensa antes de desplegarla.
-- Atención al cliente con contexto largo: la ventana nativa de 262.144 tokens permite conversaciones multi-turno y adjuntar documentación extensa, aunque la defensa solo cubre inyecciones estáticas.
-- Generación de código y matemáticas asistida: con GSM8K al 97,0 % y Minerva Math al 94,8 %, es adecuado para tareas de razonamiento cuantitativo donde el input del usuario se trata como de confianza.
-- Análisis de imágenes en entornos controlados: al preservar el codificador de visión, puede emplearse en tareas image-text-to-text donde las imágenes se marcan explícitamente como no confiables.
+- Agentes con navegacion web o lectura de documentos no confiables: el modelo esta ajustado para resistir instrucciones inyectadas en el contenido que procesa, lo que lo hace adecuado para pipelines donde el agente lee correos, PDFs o paginas y actua sobre ellos.
+- Evaluacion comparativa de defensas: sirve como baseline reproducible para medir la mejora de tecnicas como SecPO o entrenamiento adversarial sobre los mismos benchmarks (AgentDojo, InjecAgent, WASP, SEP).
+- Investigacion en seguridad de LLM: permite estudiar la relacion entre perdida DPO, posicion de inyeccion y robustez frente a ataques estaticos y adaptativos (GCG).
+- Asistentes con tool calling en entornos controlados: al conservar la utilidad del modelo base en tareas agenticas, puede desplegarse en flujos de automatizacion donde se requiere invocar funciones externas con entradas potencialmente contaminadas.
+- Razonamiento cientifico y matematico asistido: con MMLU-Pro del 83,9% y GSM8K del 97,0%, es util para tutoria, resolucion de problemas y generacion de explicaciones tecnicas.
+- Generacion y revision de codigo en pipelines: hereda las capacidades del Qwen3.6-27B base para tareas de programacion, aunque no se publican resultados especificos de HumanEval en la informacion disponible.
+- Procesamiento de documentos con imagen: al ser image-text-to-text, puede extraer y razonar sobre contenido de capturas, formularios o scans, con la cautela de que el ajuste de seguridad se entreno sobre texto.
 
 ## Benchmarks y rendimiento
 
-Todas las cifras están en porcentaje y se midieron con thinking desactivado. La columna "Undefended" corresponde al Qwen3.6-27B sin defensa; "SecPO + offline AT" es el modelo comparativo del mismo autor.
+Resultados publicados en la model card (modo thinking desactivado; mayor es mejor):
 
-| Categoría | Benchmark | Métrica | Undefended | Meta-SecAlign (este modelo) | SecPO + offline AT |
-|---|---|---|---:|---:|---:|
-| Conocimiento y razonamiento | MMLU-Pro | Puntuación | 84,8 | 83,9 | 84,6 |
-| Conocimiento y razonamiento | GPQA Diamond | Puntuación | 81,3 | 79,3 | 80,8 |
-| Matemáticas | GSM8K | Puntuación | 97,3 | 97,0 | 96,4 |
-| Matemáticas | Minerva Math | Puntuación | 96,1 | 94,8 | 95,8 |
-| Seguimiento de instrucciones | AlpacaEval2 | Win rate bruto | 80,6 | 81,6 | 82,9 |
-| Seguimiento de instrucciones | SEP Utility | Win rate bruto | 93,0 | 93,9 | 94,3 |
-| Flujo agéntico | AgentDojo Utility | Utilidad benigna | 89,7 | 87,6 | 90,7 |
-| Flujo agéntico | AgentDyn Utility | Utilidad benigna | 71,7 | 76,7 | 71,7 |
-| Flujo agéntico | DTaP-Bench-Indirect Utility | Utilidad bajo ataque | 65,8 | 70,0 | 74,5 |
-| Comprensión de documentos | DocVQA Utility | Utilidad benigna | 96,0 | 95,8 | 95,2 |
+| Capacidad | Benchmark | Sin defender | Meta-SecAlign (este modelo) | SecPO |
+|---|---|---:|---:|---:|
+| Ciencia | MMLU-Pro | 84,8% | 83,9% | 84,6% |
+| Ciencia | GPQA Diamond | 81,3% | 79,3% | 80,8% |
+| Matematicas | GSM8K | 97,3% | 97,0% | 96,4% |
+| Matematicas | Minerva Math | 96,1% | 94,8% | 95,8% |
+| Instrucciones | AlpacaEval2 | 80,6% | 81,6% | 82,9% |
 
-Resultados de seguridad (ASR, menor es mejor):
-
-| Ataque | Métrica | Meta-SecAlign (este modelo) |
-|---|---|---:|
-| SEP estático | ASR | 2,9 % (frente a 98,9 % sin defensa) |
-| SEP Genetic | ASR@800 | 93,7 % |
-| TAP | ASR@800 | 90,1 % |
-| PISmith | ASR@10 | 94,0 % |
-| AgentDojo Genetic | ASR@800 | 78,8 % |
+En seguridad, el paper SecPO reporta que Meta-SecAlign sufre tasas de exito de ataque proximas al 100% bajo inyecciones adaptativas, y que en AgentDojo con el ataque AttackerMovesSecond alcanza un ASR@800 del 78,8%, frente al 8,8% de SecPO con entrenamiento adversarial. No se publican en la informacion disponible resultados de HumanEval ni de otros benchmarks de codigo para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 55 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se requieren 2 GPU de 48 GB o 4 de 24 GB con paralelismo de tensor.
-- En cuantización de 8 bits: alrededor de 28-30 GB, viable en una A100 40 GB o H100 80 GB.
-- En cuantización de 4 bits: alrededor de 15-17 GB, potencialmente ejecutable en una RTX 4090 de 24 GB, aunque no se publican pesos GGUF ni cuantizados oficialmente.
-- GPU recomendadas: H100 80 GB, A100 80 GB o A100 40 GB con cuantización; multi-GPU para BF16 sin cuantizar.
-- Despliegue: compatible con `transformers` (librería declarada) y con endpoints compatibles según los tags; no se confirma soporte específico de vLLM, TGI, llama.cpp u Ollama en la información disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 27.356 millones de parametros, en FP16 requiere aproximadamente 55 GB solo para pesos, mas overhead de KV cache y activaciones.
+- En cuantizacion de 8 bits cabria en torno a 28-30 GB; en 4 bits, en torno a 14-16 GB, aunque no se documentan cuantizaciones oficiales para este checkpoint.
+- GPU recomendadas: A100 80 GB, H100 80 GB o multi-GPU para FP16; una RTX 4090 (24 GB) solo seria viable con cuantizacion agresiva (4 bits) y contexto reducido.
+- Despliegue: transformers (libreria declarada); compatible con endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Defensa prompt injection | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Instruct-MetaSecAlign (este) | 27,36B | 262.144 | DPO estático; ASR estático 2,9 %, adaptativo hasta 94,0 % | apache-2.0 | Hugging Face, 57 descargas |
-| Qwen3.6-27B-Instruct-SecPO | 27,36B (base común) | 262.144 | Referencia limpia + entrenamiento adversarial offline; mejor utilidad y robustez | apache-2.0 | Hugging Face |
-| Qwen/Qwen3.6-27B (base sin defensa) | 27,36B | 262.144 | Ninguna; ASR estático 98,9 % | apache-2.0 | Hugging Face |
+| Qwen3.6-27B-Instruct-MetaSecAlign (este) | 27,36 B | no disponible | Defensa anti prompt injection con DPO estatico | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B-Instruct-SecPO | 27,36 B | no disponible | Defensa con perdida SecPO + entrenamiento adversarial | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B (sin defender) | 27,36 B | no disponible | Modelo base multimodal | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct-MetaSecAlign | 8 B | no disponible | Misma defensa en modelo menor | no disponible | Hugging Face |
+
+El checkpoint SecPO reduce el ASR de AgentDojo del 78,8% al 8,8% manteniendo utilidad similar en nueve benchmarks, por lo que es la alternativa directa cuando la robustez es prioritaria. El modelo sin defender ofrece mayor utilidad marginal (MMLU-Pro 84,8% frente a 83,9%) pero sin proteccion. La variante Llama-3.1-8B permite el mismo estudio con menores requisitos de hardware.
 
 ## Limitaciones y advertencias
 
-- La defensa solo es eficaz frente a inyecciones estáticas simuladas; los ataques adaptativos (SEP Genetic, TAP, PISmith, AgentDojo Genetic) alcanzan tasas de éxito del 78,8 % al 94,0 %, por lo que no debe considerarse una protección robusta en producción.
-- No se realizó entrenamiento adversarial en este baseline, a diferencia del modelo SecPO comparativo.
-- El modelo asume que la aplicación identifica la frontera de confianza antes de la inferencia; concatenar contenido controlado por el atacante en mensajes `system` o `user` anula la defensa.
-- El único idioma declarado es el inglés; el rendimiento en castellano u otros idiomas no está evaluado.
-- Riesgo de alucinación inherente al modelo base, no mitigado por el ajuste DPO.
-- Sesgos del dataset Cleaned-Alpaca y del corpus de entrenamiento original de Qwen3.6-27B, no documentados en la información disponible.
-- El modo thinking está desactivado en el entrenamiento y la evaluación reportados; su comportamiento con thinking activado no está caracterizado.
-- La licencia apache-2.0 permite uso comercial, pero el autor no ofrece garantías sobre robustez en producción.
-- El modelo tiene solo 57 descargas y 0 likes, lo que indica escasa validación comunitaria.
-- No se publican pesos cuantizados ni GGUF oficiales.
+- Robustez limitada: al no usar entrenamiento adversarial, el ASR bajo inyecciones adaptativas puede acercarse al 100%, segun el paper SecPO.
+- Entrenado sobre inyecciones simuladas estaticas; puede no generalizar a ataques novedosos o adaptativos.
+- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
+- El ajuste de seguridad se realizo sobre texto (Cleaned-Alpaca); no se especifica cobertura de ataques inyectados en imagenes pese a ser un modelo multimodal.
+- Modo thinking desactivado por diseno; para razonamiento extendido debe usarse el checkpoint Thinking-SecOPD.
+- Riesgo de alucinacion inherente al modelo base; no se publican evaluaciones de factualidad especificas.
+- Sesgos: no se documentan analisis de sesgo en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, sujeto a las condiciones del modelo base Qwen3.6-27B.
+- No debe considerarse una defensa completa para produccion sin capas adicionales de validacion de entradas y permisos de herramientas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-MetaSecAlign
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
-- Modelo comparativo SecPO: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
-- Paper SecPO: https://arxiv.org/abs/2610.41998
+- Checkpoint SecPO: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
+- Checkpoint Thinking SecOPD: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Thinking-SecOPD
+- Variante Llama-3.1-8B Meta-SecAlign: https://huggingface.co/Sizhe-Chen/Llama-3.1-8B-Instruct-MetaSecAlign
 - Paper Meta-SecAlign: https://arxiv.org/abs/2507.02735
-- Código: https://github.com/Sizhe-Chen/SecPO
-- Dataset Cleaned-Alpaca: https://github.com/gururise/AlpacaDataCleaned
-- Manifiesto de fusión: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-MetaSecAlign/blob/main/merge_manifest.json
+- Paper SecPO: https://arxiv.org/abs/2610.41998
+- Codigo: https://github.com/Sizhe-Chen/SecPO
+- Cleaned-Alpaca: https://github.com/gururise/AlpacaDataCleaned
+- Web del autor: https://sizhe-chen.github.io/
+- Perfil de Arman Zharmagambetov: https://arman-z.github.io/
+- Perfil de David Wagner: https://people.eecs.berkeley.edu/~daw
+- Perfil de Chuan Guo: https://sites.google.com/view/chuanguo
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

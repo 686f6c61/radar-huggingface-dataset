@@ -2,91 +2,91 @@
 
 ## Resumen
 
-MediaPipe Face Landmarker es un paquete de modelos de visión por computador para detección de geometría facial en dispositivo, publicado por la comunidad litert-community (organización de Google AI Edge en Hugging Face) y basado en los modelos originales de MediaPipe. No es un modelo de lenguaje: es un pipeline de tres redes neuronales TFLite empaquetadas en un único archivo `face_landmarker.task` de 3,76 MB con pesos en FP16, que resuelve detección de rostro, malla facial 3D de 478 puntos (incluidos 10 puntos de iris) y 52 coeficientes de blendshapes de expresión facial.
+MediaPipe Face Landmarker es un paquete de modelos de visión por computador para detección de geometría facial en dispositivo, publicado por la comunidad litert-community a partir de los modelos originales de Google MediaPipe. No es un modelo de lenguaje: es un *bundle* de tres redes neuronales empaquetadas en un único fichero `face_landmarker.task` de 3,76 MB con pesos en FP16, que resuelve el pipeline completo de detección de rostro, malla facial 3D y coeficientes de expresión.
 
-El paquete combina BlazeFace de corto alcance para la detección inicial, FaceMesh V2 para los landmarks y una red MLP-Mixer para los blendshapes, más metadatos de geometría canónica. Está pensado para ejecución local en Android, iOS, web (WASM), Python y Flutter mediante la API MediaPipe Tasks, sin dependencia de servicios en la nube.
+El paquete combina un detector BlazeFace de corto alcance, un modelo FaceMesh V2 que produce 478 puntos clave 3D (incluidos 10 landmarks de iris) y una red MLP-Mixer que calcula 52 coeficientes de blendshapes faciales. Está pensado para ejecutarse íntegramente en el dispositivo, sin conexión a servidor, en Android, iOS, web, Python y Flutter mediante la librería MediaPipe Tasks.
 
-Su relevancia actual reside en que permite animación facial, seguimiento de expresiones y efectos en tiempo real en dispositivos de consumo, con un tamaño inferior a 4 MB y licencia Apache 2.0, lo que facilita su integración en aplicaciones comerciales de realidad aumentada, videollamadas y avatares.
+Su relevancia actual radica en que ofrece un pipeline facial completo y ligero (menos de 4 MB) con licencia Apache 2.0, lo que facilita su integración en aplicaciones de realidad aumentada, avatares, análisis de expresiones y seguimiento facial en tiempo real sin depender de infraestructura en la nube ni de GPUs dedicadas.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Pipeline multi-etapa: BlazeFace (detector) + FaceMesh V2 (landmarks) + MLP-Mixer (blendshapes) |
-| Parametros totales | no disponible (pesos empaquetados de 3,76 MB en FP16) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, no de lenguaje) |
-| Tipos de cuantizacion | FP16 (pesos del bundle); los sub-modelos declaran entradas/salidas float32 |
-| Idiomas soportados | no disponible (independiente del idioma; procesa imágenes) |
+| Arquitectura | Pipeline multi-etapa: BlazeFace (detección) + FaceMesh V2 (landmarks 3D) + MLP-Mixer (blendshapes) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión) |
+| Tipos de cuantización | pesos en FP16 en el bundle; los submodelos aceptan entrada `float32` |
+| Idiomas soportados | no aplica (modelo de visión, independiente del idioma) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite empaquetado en `.task` (con `geometry_pipeline_metadata_landmarks.binarypb`) |
+| Formato de pesos | TFLite (`.tflite`) empaquetados en `.task`; metadatos en `.binarypb` |
 
 ## Arquitectura y entrenamiento
 
-El bundle `face_landmarker.task` contiene tres redes TFLite más metadatos de geometría canónica. El detector `face_detector.tflite` (229,7 KB) es un BlazeFace de corto alcance con entrada RGB de `[1, 128, 128, 3]` normalizada con media 127,5 y desviación 127,5, que produce 896 regresores de cajas/keypoints y 896 puntuaciones de clasificación. El modelo `face_landmarks_detector.tflite` (2,55 MB) es FaceMesh V2, con entrada RGB de `[-1, 256, 256, 3]` normalizada con media 0 y desviación 255, y salidas de 478 landmarks 3D (`[-1, 1, 1, 1434]`), una probabilidad de presencia facial y una puntuación `tongue_out`. El tercer componente, `face_blendshapes.tflite` (955,3 KB), es una red MLP-Mixer que consume 146 landmarks 2D (`[1, 146, 2]`) y emite 52 coeficientes de expresión en el rango `[0, 1]`.
+El bundle `face_landmarker.task` contiene tres redes independientes más metadatos de geometría canónica. El detector `face_detector.tflite` es un BlazeFace de corto alcance con entrada RGB de `[1, 128, 128, 3]` normalizada con media y desviación 127,5, que produce 896 regresores de cajas y puntos clave junto con sus puntuaciones de clasificación. El modelo principal `face_landmarks_detector.tflite` (FaceMesh V2) recibe imágenes de `[-1, 256, 256, 3]` normalizadas con media 0 y desviación 255, y devuelve 478 landmarks 3D (`[-1, 1, 1, 1434]`), una puntuación de presencia facial y una puntuación `tongue_out`.
 
-No se dispone de información sobre el número de tokens, composición del dataset ni proceso de entrenamiento (RLHF/DPO no aplica). La model card referencia el paper arXiv:1907.05047 (BlazeFace) y enlaza las model cards originales de Google para BlazeFace, FaceMesh V2 y Blendshape V2 en PDF dentro del repositorio. Una innovación destacable es la inclusión de 10 landmarks de iris y la separación entre detección, malla y blendshapes, que permite ejecutar solo las etapas necesarias.
+La tercera red, `face_blendshapes.tflite`, es una MLP-Mixer que consume 146 landmarks 2D (`[1, 146, 2]`) y genera 52 coeficientes de blendshape en el rango `[0, 1]`. Los metadatos `geometry_pipeline_metadata_landmarks.binarypb` aportan la geometría canónica necesaria para el pipeline. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de ajuste fino o RLHF; la model card remite a las fichas técnicas originales de Google para BlazeFace, FaceMesh V2 y Blendshape V2.
 
 ## Capacidades
 
-- Detección de rostros en imágenes y vídeo con BlazeFace de corto alcance.
-- Predicción de malla facial 3D de 478 puntos, incluidos 10 landmarks de iris.
-- Estimación de 52 coeficientes de blendshapes de expresión facial (Blendshape V2) en `[0, 1]`.
-- Puntuación de presencia facial y detección de lengua fuera de la boca (`tongue_out`).
+- Detección de rostros en imágenes y vídeo mediante BlazeFace de corto alcance.
+- Predicción de 478 landmarks faciales 3D, incluidos 10 puntos de iris.
+- Estimación de 52 coeficientes de blendshapes faciales (expresiones) en el rango `[0, 1]`.
+- Detección de presencia facial con puntuación de confianza.
+- Detección de lengua fuera de la boca mediante la puntuación `tongue_out`.
 - Ejecución en dispositivo en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
-- Procesamiento en modo imagen, vídeo y streaming en directo (`VisionRunningMode`).
-- Soporte de múltiples rostros mediante el parámetro `num_faces`.
-- No incluye generación de texto, razonamiento, código, matemáticas, tool calling ni capacidades de agente.
+- Procesamiento en tiempo real sobre CPU, sin necesidad de GPU.
+- No soporta tool calling, agentes ni razonamiento multi-step: es un modelo puramente perceptivo.
 
 ## Casos de uso
 
-- Animación de avatares en tiempo real: los 52 blendshapes permiten mapear expresiones faciales a rigs de avatar en aplicaciones de videollamada o mundos virtuales, con latencia baja al ejecutarse en dispositivo.
-- Efectos de realidad aumentada: la malla de 478 puntos sirve para superponer filtros, maquillaje virtual o gafas ajustadas a la geometría facial en apps móviles Android e iOS.
-- Análisis de atención y presencia: la puntuación de presencia facial y la detección de rostro permiten verificar que el usuario está frente a la cámara en sistemas de proctoring o señalización digital.
-- Seguimiento ocular aproximado: los 10 landmarks de iris habilitan estimaciones básicas de dirección de mirada para interfaces de accesibilidad o estudios de atención.
-- Captura de movimiento facial para creación de contenido: actores o streamers pueden generar datos de blendshapes para animar personajes en motores como Unity o Unreal mediante la integración de MediaPipe.
-- Aplicaciones de salud y rehabilitación facial: el registro de expresiones y la detección de `tongue_out` pueden apoyar ejercicios de fisioterapia facial con retroalimentación visual.
-- Procesamiento por lotes de imágenes en Python: el modo `VisionRunningMode.IMAGE` permite extraer landmarks y blendshapes de datasets de rostros para investigación en visión por computador.
+- Realidad aumentada facial: el modelo proporciona 478 landmarks 3D y 52 blendshapes que permiten anclar filtros, gafas o maquillaje virtual a la geometría del rostro con seguimiento estable en vídeo en tiempo real.
+- Avatares animados y *puppeteering*: los coeficientes de blendshape se mapean directamente a los huesos o morph targets de un avatar 3D, permitiendo animar personajes con la expresión del usuario en aplicaciones de videollamada o streaming.
+- Análisis de atención y emoción en aplicaciones educativas: los blendshapes permiten estimar gestos faciales (sonrisa, ceño fruncido, parpadeo) para métricas de engagement sin enviar vídeo a la nube, lo que reduce latencia y cumple con requisitos de privacidad.
+- Detección de somnolencia o fatiga al volante: la puntuación de presencia y los landmarks de párpados y ojos permiten calcular la apertura ocular y la frecuencia de parpadeo en un sistema embebido de bajo coste.
+- Autenticación y verificación de presencia: la puntuación de presencia facial y los landmarks pueden usarse como etapa previa en pipelines de *liveness detection*, combinados con otras señales, para descartar fotos o vídeos pregrabados.
+- Aplicaciones de accesibilidad: control de cursor o interfaces por gestos faciales mediante los blendshapes (por ejemplo, cejas o boca) en dispositivos móviles sin hardware adicional.
+- Fotografía y edición automática: detección de rostro y landmarks para recorte inteligente, retoque de piel o alineación de caras en aplicaciones de cámara.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en el sentido tradicional; el bundle completo ocupa 3,76 MB y los sub-modelos suman aproximadamente 3,7 MB, por lo que cabe en memoria de cualquier dispositivo móvil.
-- GPU recomendadas: no requiere GPU dedicada; está diseñado para CPU, GPU móvil (OpenGL ES/Metal) y aceleradores NPU mediante LiteRT.
-- Cabe en cualquier GPU de consumo, incluida una GTX 1050 o una GPU integrada, y en smartphones de gama baja.
-- Opciones de despliegue: MediaPipe Tasks (Python, Android, iOS, web, Flutter), LiteRT/TFLite, y el demo web oficial de MediaPipe Samples.
-- Latencia y throughput: no disponibles en la información proporcionada; al ser un modelo on-device de menos de 4 MB, se espera ejecución en tiempo real, pero no se aportan cifras concretas.
+- VRAM estimada: no aplica; el bundle completo ocupa 3,76 MB y está diseñado para ejecutarse en CPU.
+- GPU recomendadas: no requiere GPU; funciona en CPU de dispositivos móviles y de escritorio.
+- Cabe en cualquier GPU de consumo y en dispositivos móviles de gama baja; el despliegue típico es en CPU.
+- Opciones de despliegue: MediaPipe Tasks (Python, Android, iOS, web y Flutter) y LiteRT/TFLite para los submodelos individuales.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros / tamano | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Tipo | Tamaño | Landmarks | Blendshapes | Licencia |
 |---|---|---|---|---|---|
-| MediaPipe Face Landmarker (este) | 3,76 MB FP16 | no aplica | Detección + 478 landmarks + 52 blendshapes | Apache 2.0 | Hugging Face, MediaPipe Tasks |
-| MediaPipe Face Mesh (original) | no disponible | no aplica | 468 landmarks | Apache 2.0 | MediaPipe |
-| MediaPipe BlazeFace (original) | no disponible | no aplica | Detección de rostro | Apache 2.0 | MediaPipe |
-| MediaPipe Blendshape V2 (original) | no disponible | no aplica | 52 blendshapes | Apache 2.0 | MediaPipe |
-
-La comparativa se limita a los componentes upstream de Google, ya que no se dispone de datos de benchmarks ni de modelos de terceros comparables en la información proporcionada.
+| MediaPipe Face Landmarker (este) | Pipeline TFLite multi-etapa | 3,76 MB | 478 (incl. 10 iris) | 52 | Apache 2.0 |
+| MediaPipe Face Mesh (original) | TFLite | no disponible | 468 | no | Apache 2.0 |
+| MediaPipe BlazeFace (original) | TFLite | no disponible | no | no | Apache 2.0 |
+| Alternativas de terceros (p. ej. modelos ONNX faciales) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles en la información proporcionada; al ser un modelo facial, puede presentar variaciones de precisión según tono de piel, edad, iluminación y oclusión.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero puede producir landmarks o blendshapes incorrectos en rostros parcialmente ocluidos o con iluminación extrema.
-- Limitaciones de contexto o idioma: no aplica idioma; el detector es de corto alcance y puede fallar en rostros pequeños o lejanos.
-- Nota de espejado: los blendshapes `*Left` y `*Right` se refieren al rostro del sujeto, no al espectador; en selfies espejados se invierten.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las model cards originales de Google incluidas en el repositorio para condiciones adicionales.
-- Caveat para producción: el repositorio muestra 0 descargas y 0 likes en el momento de la consulta, por lo que conviene validar el bundle y su SHA-256 antes de desplegarlo.
+- El modelo está entrenado para rostros de corto alcance; el rendimiento puede degradarse en caras pequeñas, lejanas o muy ocluidas.
+- Los blendshapes `*Left` y `*Right` se refieren al rostro del sujeto, no al del observador; en selfies con espejo horizontal los coeficientes izquierda/derecha aparecen invertidos.
+- Riesgo de falsos positivos y negativos en condiciones de iluminación extrema, ángulos pronunciados o rostros parcialmente cubiertos.
+- No se dispone de información sobre sesgos demográficos en la model card; conviene validar el rendimiento en la población objetivo antes de producción.
+- El modelo no genera texto ni razona: no debe emplearse para tareas de comprensión semántica.
+- La licencia Apache 2.0 permite uso comercial, pero las fichas originales de Google (BlazeFace, FaceMesh V2, Blendshape V2) incluyen consideraciones de uso responsable que deben revisarse.
+- El tratamiento de datos biométricos faciales está sujeto a regulaciones como el RGPD; el procesamiento en dispositivo ayuda a la minimización de datos, pero no exime de las obligaciones legales aplicables.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/MediaPipe-FaceLandmarker
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/face_landmarker
-- Documentación de MediaPipe Face Landmarker: https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker
-- Paper BlazeFace: https://arxiv.org/abs/1907.05047
-- Archivo del bundle: https://huggingface.co/litert-community/MediaPipe-FaceLandmarker/blob/main/face_landmarker.task
-- Model card BlazeFace (PDF): https://huggingface.co/litert-community/MediaPipe-FaceLandmarker/blob/main/MediaPipe%20BlazeFace%20Model%20Card%20%28Short%20Range%29.pdf
-- Model card Blendshape V2 (PDF): https://huggingface.co/litert-community/MediaPipe-FaceLandmarker/blob/main/Model%20Card%20Blendshape%20V2.pdf
-- Model card Face Mesh V2 (PDF): https://huggingface.co/litert-community/MediaPipe-FaceLandmarker/blob/main/Model%20Card%20MediaPipe%20Face%20Mesh%20V2.pdf
+- [Hugging Face: litert-community/MediaPipe-FaceLandmarker](https://huggingface.co/litert-community/MediaPipe-FaceLandmarker)
+- [Documentación de MediaPipe Face Landmarker](https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker)
+- [Ejemplo Android](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_landmarker/android)
+- [Ejemplo iOS](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_landmarker/ios)
+- [Colab Python](https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/face_landmarker/python/%5BMediaPipe_Python_Tasks%5D_Face_Landmarker.ipynb)
+- [Ejemplo Web](https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/face-landmarker.ts)
+- [Ejemplo Flutter](https://github.com/google/flutter-mediapipe/tree/main/samples/vision/face_landmarker)
+- [Demo web en vivo](https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/face_landmarker)
+- [Paper BlazeFace (arXiv:1907.05047)](https://arxiv.org/abs/1907.05047)

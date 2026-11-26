@@ -43,5 +43,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "The NEW Microsoft Planner: NEVER Miss a Deadline Again",
+      "url": "https://www.youtube.com/watch?v=sW68qxuHJCw",
+      "snippet": "Sep 17, 2024 · Here's what you'll learn in this Microsoft Planner tutorial: ☑️ First, you'll see how to access the new Planner …"
+    },
+    {
+      "title": "Microsoft Planner Fundamentals: Basic Training for Beginners - Udemy",
+      "url": "https://www.udemy.com/course/microsoft-planner-training-efficient-task-team-management/",
+      "snippet": "Learn to organize, track, and collaborate on tasks and projects using Microsoft Planner’s powerful features and tools."
+    },
+    {
+      "title": "How to Use Microsoft Planner 2025 (EASY GUIDE) - YouTube",
+      "url": "https://www.youtube.com/watch?v=gPRCIEIHw2U",
+      "snippet": "Jul 14, 2025 · In this beginner-friendly tutorial, you’ll learn how to use Microsoft Planner to manage tasks, collaborate with your team, …"
+    },
+    {
+      "title": "How to Use Microsoft Planner Tutorial - Simon Sez IT",
+      "url": "https://www.simonsezit.com/article/how-to-use-microsoft-planner-tutorial/",
+      "snippet": "In this Microsoft Planner tutorial, we show you how to get set up using Planner and how to make the most of Microsoft Planner."
+    },
+    {
+      "title": "PowerPoint Presentation",
+      "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/Planner/61/1/Planner%20Quick%20Start%20Guide.pptx",
+      "snippet": "Creating a plan also creates a new Office 365 Group, making it easy for you and the people you're working with to collaborate not …"
+    }
+  ]
 }

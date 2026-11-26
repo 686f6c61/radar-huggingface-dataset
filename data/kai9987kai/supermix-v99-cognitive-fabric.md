@@ -2,103 +2,104 @@
 
 ## Resumen
 
-Supermix v99 Cognitive Fabric es un paquete de modelos y herramientas publicado por el usuario Kai9987kai en Hugging Face, construido sobre el modelo base Kai9987kai/supermix-v93. Se distribuye como un bundle que incluye tres checkpoints de una arquitectura MoE de tipo transformer con conexiones inspiradas en el conectoma del sistema nervioso central de la mosca de la fruta (Drosophila melanogaster), junto con una capa de orquestación denominada "Cognitive Fabric" que combina verificación simbólica determinista con la salida neuronal del modelo.
+Supermix v99 Cognitive Fabric es un checkpoint experimental de la familia Supermix, publicada por el usuario Kai9987kai bajo licencia MIT. Se distribuye como un repositorio unificado que empaqueta el checkpoint `v99_scf_evolution.selected.pt` junto con los demas pesos de la linea v96–v103, todos ellos variantes de una arquitectura propia denominada "cognitive fabric" que combina conceptos de mezcla de expertos (MoE), memoria tipo engram, conexiones hiperbolicas (hyper-connections), DeltaNet y optimizacion con Muon. El modelo base declarado es `Kai9987kai/supermix-v93` y la tarea declarada es generacion de texto.
 
-El modelo promovido por defecto (v96_physio_neurogenesis) tiene 36,6 millones de parámetros totales, de los cuales 9,13 millones son activos por token, y emplea un vocabulario de 9.415 tokens. Los checkpoints v98 y v99 son continuaciones experimentales que añaden modulación de error predictivo (Rao-Ballard), trazas hebbianas de corto plazo y parada por entropía de ciclo. El paquete se orienta a razonamiento neuro-simbólico, verificación formal, física y razonamiento sobre código.
+El modelo no sigue la estela de los transformers densos convencionales: la model card describe modulos como "dual_soma", "commissural", "glial", "hebbian trace", "predictive error", "entropy halt" y "neurogenesis", que sugieren una inspiracion en arquitecturas neuro-simbolicas y en mecanismos de plasticidad hebbiana. No se especifican parametros totales, longitud de contexto ni composicion del corpus de entrenamiento, y las unicas metricas publicadas son perdidas de validacion y aciertos en tareas sinteticas de evaluacion propia (no benchmarks estandar).
 
-La relevancia de este lanzamiento es acotada: se trata de un proyecto de investigación personal de escala muy reducida (36,6 M de parámetros), sin benchmarks estándar publicados (MMLU, HumanEval, GSM8K) y con métricas internas sobre tareas propietarias. Su interés reside en la propuesta arquitectónica híbrida (conectoma bilateral, neurogénesis transaccional, verificación determinista) más que en su rendimiento como modelo de propósito general.
+La relevancia practica de este checkpoint es limitada: se trata de una publicacion de investigacion con 236 descargas, sin likes, sin idiomas declarados y sin resultados en benchmarks reconocidos (MMLU, HumanEval, GSM8K). Resulta util como referencia para quienes siguen la linea experimental del autor, pero no como sustituto de modelos de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con conectoma bilateral de CNS de Drosophila, compartimentos dual-soma fisiológicos, gating comisural, homeostasis glial y proyección de radio espectral |
-| Parametros totales | 36.599.047 (36,6 M) |
-| Parametros activos | 9.132.151 (9,13 M) por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en formato PyTorch .pt) |
-| Idiomas soportados | no disponible (vocabulario de 9.415 tokens, idioma no especificado) |
+| Arquitectura | Propietaria "cognitive fabric": mezcla de expertos con modulos neuro-simbolicos, conexiones hebbianas, memoria engram, DeltaNet-2 y Muon (segun tags y model card) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (se declara MoE pero no se detalla el reparto) |
+| Longitud de contexto | no disponible (las evaluaciones usan `max_new_tokens=96`) |
+| Tipos de cuantizacion | no disponible (pesos en formato PyTorch `.pt`) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (.pt): v96_physio_neurogenesis.selected.pt, v98_scf_predictive.selected.pt, v99_scf_evolution.selected.pt |
+| Formato de pesos | PyTorch `.pt` (checkpoints `.selected.pt`); repo de 1,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un transformer con mezcla de expertos (MoE) y un diseño inspirado en el conectoma del CNS masculino de Drosophila, con compartimentos dual-soma fisiológicos, gating comisural entre hemisferios, homeostasis glial y una proyección de radio espectral (r=0,90) para control de estabilidad. El checkpoint promovido incorpora neurogénesis transaccional validada por testigos (witness-validated), con resultados de 72/82 (0,878) en seed=83 y 35/41 (0,854) en seed=82 sobre tareas de evaluación internas. Los checkpoints v98 y v99 añaden, de forma experimental y desactivada por defecto, modulación de error predictivo Rao-Ballard, trazas hebbianas de corto plazo y parada por entropía de ciclo ("thinking_entropy_halt").
+La model card describe una arquitectura de "cognitive fabric" con mezcla de expertos y modulos inspirados en biologia: `dual_soma`, `commissural`, `glial`, `r=0.90` en la variante v96; `hebbian`, `pred_err`, `div_norm` y `halt` en v100; `mHC`, `apical`, `CTM-Sync` y `Muon` en v102; y `Engram`, `Gated DeltaNet-2` y `Muon` en v103. La variante v99 que da nombre a este repo se etiqueta como "7.5k 41-task + chat continuation", lo que sugiere un ajuste sobre 7.500 ejemplos de 41 tareas mas continuacion de chat, partiendo de `supermix-v93`.
 
-El entrenamiento se realizó sobre una mezcla de 7.540 filas correspondiente a 41 tareas más datos de chat (según la model card), con pérdidas de desarrollo de 0,086137 (v96), 0,057175 (v98) y 0,026452 (v99). No se especifican el número total de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La capa "Cognitive Fabric" (SCF) es una orquestación con feature flag (SCF_ENABLED=False por defecto) sobre seis familias históricas del proyecto (ChampionNet, CognitiveLeap, QwenLoRA, OmniCollective, MiMoMix, NexusMind), con un micro-intérprete de AST de Python acotado a 500 operaciones sin eval/exec, solvers de forma cerrada con racionales exactos y verificación offline del atlas del CNS masculino.
+No se publican detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones como decodificacion especulativa. Las perdidas de validacion reportadas son 0,0265 para v99, 0,0175 para v101 y 0,0180 para v103, todas sobre el mismo pipeline interno del autor. El unico dato de evaluacion reproducible es la tasa de acierto en tareas sinteticas con `seed=82/83/84` y `max_new_tokens=96` en CPU Windows.
 
 ## Capacidades
 
-- Generación de texto autoregresiva con decodificación especulativa MTP (multi-token prediction) en el servidor de chat incluido.
-- Razonamiento sobre código mediante un micro-intérprete de AST de Python acotado (500 operaciones, sin eval/exec) y verificación determinista de expresiones.
-- Razonamiento matemático con solvers de forma cerrada y aritmética racional exacta.
-- Verificación formal y "witness-validated" de resultados, con autoridad de respuesta condicionada (answer_authority=False para salidas neuronales no verificadas).
-- Tareas de física (physics) y razonamiento neuro-simbólico, según los tags del repositorio.
-- Modo experimental de razonamiento iterativo con parada por entropía de ciclo (thinking_entropy_halt), activado solo en v98/v99 y desactivado por defecto.
-- Telemetría en vivo de norma de error predictivo, ganancia hebbiana y radio espectral a través del servidor de chat.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Capacidades multilingües: no disponibles; el vocabulario es de 9.415 tokens y no se especifican idiomas.
+- Generacion de texto autoregresiva (pipeline declarado: `text-generation`).
+- Razonamiento sobre tareas sinteticas de 41 items (la model card reporta 33/41 con `seed=82` y 67/82 con `seed=83`).
+- Continuacion de chat ("chat continuation" en la etiqueta de la variante v99).
+- Soporte declarado de mecanismos de memoria tipo engram y plasticidad hebbiana (sin API publica documentada).
+- Verificacion formal y enfoque neuro-simbolico (tag `formal-verification`, sin detalles de implementacion).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Capacidades de vision o audio: no disponible.
 
 ## Casos de uso
 
-- Verificación de expresiones y programas cortos en Python: la capa SCF incluye un micro-intérprete de AST acotado a 500 operaciones que permite validar resultados de expresiones sin ejecución arbitraria, útil en entornos donde no se quiere usar eval/exec.
-- Razonamiento matemático determinista: los solvers de forma cerrada con aritmética racional exacta permiten resolver problemas aritméticos y algebraicos acotados con resultado verificable, adecuado para pipelines de evaluación de razonamiento.
-- Investigación en arquitecturas neuro-simbólicas: el paquete permite reproducir los experimentos de conectoma bilateral, neurogénesis transaccional y modulación predictiva sobre un host CPU, sirviendo como banco de pruebas académico.
-- Prototipado de asistentes conversacionales locales: el servidor de chat SSE incluido (supermix_chat_server.py) permite desplegar una interfaz web con streaming y telemetría en una máquina sin GPU, útil para demos internas.
-- Evaluación de decodificación especulativa: la implementación MTP del servidor de chat permite medir empíricamente la aceleración de decodificación en CPU sobre un vocabulario pequeño.
-- Experimentación educativa con MoE de escala reducida: con 36,6 M de parámetros totales y 9,13 M activos, el modelo cabe en memoria de CPU y permite estudiar enrutamiento de expertos y dinámicas de gating sin infraestructura GPU.
-- Verificación de atlas biológicos offline: el paquete incluye el atlas del CNS masculino de Drosophila (malecns_sided_types.npz) y rutinas de verificación, útil para proyectos de neuroinformática que necesiten comprobar correspondencias de tipos celulares.
+- Investigacion sobre arquitecturas neuro-simbolicas: el checkpoint sirve como banco de pruebas para estudiar modulos como `engram`, `hebbian trace` o `DeltaNet-2` en un entorno PyTorch reproducible, ya que el autor publica el codigo fuente en GitHub.
+- Experimentacion con mezcla de expertos de bajo presupuesto: al ocupar 1,3 GB en disco, se puede cargar en una estacion de trabajo sin GPU dedicada y comparar variantes v96–v103 con el mismo pipeline de evaluacion.
+- Reproduccion de las metricas internas del autor: los scripts `source/scf frontier --json` y `source/nexus_api.py` permiten replicar las tablas de aciertos por semilla y comprobar la perdida de validacion.
+- Prototipado de asistentes conversacionales de nicho: la variante v99 incluye "chat continuation" y puede usarse para generar respuestas cortas (hasta 96 tokens) en demos locales con `supermix_chat_server.py`.
+- Docencia y formacion: util para ilustrar en clase como se empaquetan checkpoints, se comparan variantes y se documentan limitaciones de un modelo de investigacion.
+- Servicio HTTP ligero: el autor incluye `nexus_api.py` (FastAPI/uvicorn) para exponer el modelo en `127.0.0.1:8000`, adecuado para pruebas internas de integracion.
+- No recomendado para produccion: sin benchmarks estandar, sin idiomas declarados y sin garantias de calidad, no debe usarse en atencion al cliente, generacion de codigo en CI/CD ni pipelines regulados.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son métricas internas sobre tareas propietarias del proyecto, medidas en un host solo CPU (Windows 11, PyTorch 2.11.0+cpu, cuda_available=False, vocabulario de 9.415 tokens, max_new_tokens=96). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Resultados publicados en la model card (Windows CPU, `max_new_tokens=96`). Las columnas `seed=82`, `seed=83` y `seed=84` miden aciertos en tareas sinteticas internas, no benchmarks estandar.
 
-| Checkpoint | Estado | Dev loss | seed=82 (41 tareas) | seed=83 (82 tareas) | SCF híbrido neural (seed=82) |
-|---|---|---:|---:|---:|---:|
-| v96_physio_neurogenesis.selected.pt | Promovido por defecto | 0,086137 | 35/41 (0,854) | 72/82 (0,878) | 41/41 (1,0000) |
-| v98_scf_predictive.selected.pt | Experimental | 0,057175 | 35/41 (0,854) | 70/82 (0,854) | 41/41 (1,0000) |
-| v99_scf_evolution.selected.pt | Experimental (último) | 0,026452 | 33/41 (0,805) | 67/82 (0,817) | 41/41 (1,0000) |
+| Checkpoint | Dev loss | seed=82 | seed=83 | seed=84 | SCF Hybrid (seed=82) |
+|---|---:|---:|---:|---:|---:|
+| v96 (promovido) | 0,0861 | 35/41 (0,854) | 72/82 (0,878) | 73/82 (0,890) | 41/41 (1,0000) |
+| v98 | 0,0572 | 35/41 (0,854) | 70/82 (0,854) | — | 41/41 (1,0000) |
+| v99 (este repo) | 0,0265 | 33/41 (0,805) | 67/82 (0,817) | — | 41/41 (1,0000) |
+| v100 | 0,0238 | 35/41 (0,854) | 72/82 (0,878) | 72/82 (0,878) | 41/41 (1,0000) |
+| v101 | 0,0175 | 35/41 (0,854) | 72/82 (0,878) | 71/82 (0,866) | 41/41 (1,0000) |
+| v102 | 0,0181 | 35/41 (0,854) | 72/82 (0,878) | 71/82 (0,866) | 41/41 (1,0000) |
+| v103 | 0,0180 | 34/41 (0,829) | 71/82 (0,866) | 72/82 (0,878) | 41/41 (1,0000) |
 
-Precisión verificada determinista del SCFVerificationGate (python -m scf bench): 41/41 (1,0000) en seed=82, seed=83 y seed=91. La model card indica que el resultado 41/41 en seed=82 se obtuvo tras corregir code.neg_index y permutations y añadir el trazador AST acotado y las puertas racionales de forma cerrada, partiendo de 40/41 en el híbrido previo.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint promovido ocupa aproximadamente 0,5 GB en disco en formato PyTorch .pt; con 36,6 M de parámetros, la inferencia en fp32 requiere del orden de 150 MB de memoria para los pesos, más activaciones y estado del servidor.
-- GPU recomendadas: no se especifican; el release fue probado exclusivamente en CPU (cuda_available=False). Cualquier GPU con más de 1 GB de memoria sería suficiente para los pesos, pero las rutas CUDA no fueron ejercitadas en el host de publicación.
-- Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en CPU sin GPU dedicada.
-- Opciones de despliegue: el paquete incluye un servidor de chat propio (source/supermix_chat_server.py) con streaming SSE y decodificación especulativa MTP; la CLI SCF se ejecuta con PYTHONPATH=source python -m scf. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y el formato .pt no es directamente compatible con esos motores sin conversión.
-- Latencia y throughput: no disponibles. Las mediciones publicadas se realizaron en CPU con max_new_tokens=96, sin cifras de tokens por segundo.
+- VRAM estimada para inferencia: no disponible; el repo pesa 1,3 GB y los pesos son `.pt` de PyTorch (no cuantizados), por lo que cabe en GPU consumer de 8 GB o incluso en CPU.
+- GPU recomendadas: no especificadas por el autor; las pruebas publicadas se ejecutaron en CPU de Windows, sin GPU.
+- Cabe en GPU consumer: si, previsiblemente en cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4090), aunque no hay confirmacion oficial.
+- Opciones de despliegue: scripts propios del autor (`source/nexus_api.py` con FastAPI/uvicorn y `source/supermix_chat_server.py`); no se documenta integracion con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; las evaluaciones se hicieron con `max_new_tokens=96` en CPU, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directos en la información proporcionada: se trata de un proyecto de investigación personal de 36,6 M de parámetros con arquitectura propietaria y benchmarks internos, sin equivalencia publicada con modelos estándar de la misma escala (por ejemplo, variantes pequeñas de la familia Qwen, Llama o SmolLM). Los propios checkpoints del repositorio (v96, v98, v99) son la única comparación disponible, resumida a continuación.
-
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| supermix v96 (promovido) | 36,6 M / 9,13 M | no disponible | MIT | Promovido por defecto |
-| supermix v98 | 36,6 M / 9,13 M | no disponible | MIT | Experimental |
-| supermix v99 | 36,6 M / 9,13 M | no disponible | MIT | Experimental (último) |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+No disponible. La model card no incluye comparaciones con modelos de terceros y la arquitectura propietaria ("cognitive fabric") no es directamente equiparable a familias estandar como Llama, Mistral o Qwen en parametros, contexto o licencia. Las unicas comparaciones publicadas son internas entre las variantes v96–v103 de la misma familia Supermix.
 
 ## Limitaciones y advertencias
 
-- Escala muy reducida: 36,6 M de parámetros totales y 9,13 M activos, con un vocabulario de 9.415 tokens; no es adecuado como modelo de propósito general ni para tareas abiertas de conocimiento.
-- Sin benchmarks estándar publicados: no hay resultados de MMLU, HumanEval, GSM8K ni evaluaciones independientes; las métricas son internas y sobre tareas del propio proyecto.
-- Los checkpoints v98 y v99 están etiquetados explícitamente como experimentales y no superan al v96 en la evaluación neural standalone (33/41 y 67/82 frente a 35/41 y 72/82), por lo que no se recomienda su uso en producción.
-- Las salidas neuronales no verificadas tienen answer_authority=False; solo las comprobaciones deterministas de matemáticas, física, código y atlas tienen autoridad, lo que limita el uso del modelo como generador autónomo.
-- Sesgos conocidos: no disponibles; no se documenta ninguna evaluación de sesgo, toxicidad o alineación.
-- Riesgo de alucinación: alto en cualquier uso generativo abierto, dado el tamaño y la ausencia de RLHF/DPO documentado.
-- Limitaciones de idioma: no se especifican idiomas soportados; el vocabulario pequeño sugiere cobertura limitada y no verificada.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el software subyacente y los datos del atlas del CNS pueden tener sus propias condiciones no detalladas en la información disponible.
-- Rutas CUDA no ejercitadas en el host de publicación: el soporte GPU depende de las protecciones de dispositivo upstream y no fue probado directamente.
-- El servidor de chat y la CLI SCF requieren ejecutar código Python del repositorio (incluido un micro-intérprete de AST); conviene auditar el código antes de desplegarlo en entornos sensibles, aunque el intérprete está acotado y evita eval/exec.
-- Fecha de creación del repositorio: 2026-11-16, con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de adopción ni mantenimiento por parte de la comunidad.
+- Modelo experimental: la propia model card etiqueta v99 como "Experimental" y promueve v96 como baseline por defecto.
+- Sin benchmarks estandar: no hay resultados en MMLU, HumanEval, GSM8K ni similares, por lo que la calidad real en tareas del mundo real es desconocida.
+- Idiomas no declarados: no se especifica que lenguas soporta ni su calidad en castellano.
+- Longitud de contexto no documentada: las pruebas usan `max_new_tokens=96`, lo que sugiere un uso muy limitado a secuencias cortas.
+- Riesgo de alucinacion: sin datos de alineacion (RLHF/DPO no mencionados) ni evaluaciones de veracidad.
+- Sesgos: no se documentan sesgos conocidos ni procesos de mitigacion.
+- Licencia MIT: permite uso comercial, pero al no haber garantias de calidad ni soporte, su uso en produccion es desaconsejable.
+- Formato `.pt` no estandar: requiere cargar los pesos con el codigo del propio autor (`source/`), no es compatible directamente con pipelines de Hugging Face `transformers`.
+- Trazabilidad limitada: el repo tiene 0 likes y 236 descargas, sin revision por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kai9987kai/supermix-v99-cognitive-fabric
 - Modelo base: https://huggingface.co/Kai9987kai/supermix-v93
-- Repositorio GitHub del proyecto (rama scf-v91-cognitive-fabric): https://github.com/kai9987kai/Supermix/tree/scf-v91-cognitive-fabric
-- Commit referenciado: f7af7d0b8062e541f890d4760c7e78ca88af80a3
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Checkpoint promovido v96: https://huggingface.co/Kai9987kai/supermix-v96
+- v97: https://huggingface.co/Kai9987kai/supermix-v97
+- v98: https://huggingface.co/Kai9987kai/supermix-v98
+- v100: https://huggingface.co/Kai9987kai/supermix-v100
+- v101: https://huggingface.co/Kai9987kai/supermix-v101
+- v102: https://huggingface.co/Kai9987kai/supermix-v102
+- v103: https://huggingface.co/Kai9987kai/supermix-v103
+- Archivo historico: https://huggingface.co/Kai9987kai/supermix-historical-milestones
+- Repositorio GitHub: https://github.com/kai9987kai/Supermix
+- Commit de integracion de release: https://github.com/kai9987kai/Supermix/commit/7feb8e0e90bcdb8d7d009fd7da12928df6a661de

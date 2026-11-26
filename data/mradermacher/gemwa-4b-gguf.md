@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Gemwa-4B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Gemwa-4B, publicada por el usuario mradermacher. El repositorio no contiene pesos originales ni documentación propia del modelo base: se limita a ofrecer una serie de ficheros GGUF derivados del checkpoint `l1nk-0/Gemwa-4B`, lo que permite su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
+Gemwa-4B-GGUF es la distribucion en formato GGUF del modelo Gemwa-4B, un ajuste fino (fine-tuning) del modelo base Gemma 3 de Google orientado especificamente al bhojpuri, una lengua indoaria hablada principalmente en el norte de la India, Nepal y zonas de la diaspora. El modelo original fue desarrollado por el usuario l1nk-0 y esta construido sobre una arquitectura transformer de tipo Gemma 3 con aproximadamente 3.880 millones de parametros totales. La version aqui descrita ha sido cuantizada y publicada por mradermacher, un conocido distribuidor de cuantizaciones GGUF para la comunidad.
 
-El dato más relevante es la discrepancia entre el nombre comercial ("4B") y el recuento real de parámetros en safetensors: 419.816.304 parámetros, es decir, aproximadamente 0,42 mil millones. Esta cifra sugiere que el modelo base es mucho más pequeño de lo que sugiere su denominación, o que el recuento disponible corresponde a un componente parcial (por ejemplo, un módulo de visión o un adaptador). No hay información oficial que aclare esta diferencia.
+El problema que resuelve es la escasez de modelos de lenguaje con cobertura decente de lenguas de bajos recursos como el bhojpuri. Gemma 3, pese a su multilingusmo, no esta optimizado para esta lengua, por lo que este ajuste fino busca mejorar la calidad de las respuestas en tareas de instruccion y conversacion en bhojpuri, con soporte secundario de hindi. El modelo se entreno mediante LoRA sobre el modelo base, utilizando los datasets pksx01/alpaca_bhojpuri_instruction y l1nk-0/bhojpuri-chhath-qa.
 
-La ficha se ha elaborado exclusivamente a partir de los metadatos del repositorio y de la model card del autor de la cuantización, que es muy escueta. No se dispone de información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni rendimiento, por lo que muchos apartados se marcan como "no disponible". El modelo parece tener fecha de creación en noviembre de 2026, lo que resulta atípico y podría indicar un error en los metadatos.
+La relevancia actual radica en que ofrece una via practica para desplegar un modelo conversacional en bhojpuri en hardware de consumo, gracias a las cuantizaciones GGUF que van desde 1,8 GB (Q2_K) hasta 7,9 GB (f16). Es, por tanto, una pieza util para investigadores y desarrolladores que trabajan en preservacion linguistica, atencion al publico regional o investigacion sobre lenguas indicas de bajos recursos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 419.816.304 (según safetensors; el nombre del modelo indica "4B", discrepancia no aclarada) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (Gemma 3), ajuste fino mediante LoRA |
+| Parametros totales | 3.880.263.168 (aprox. 3,88 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye presumiblemente en safetensors |
-| Tamano del repo | 1,4 GB |
-| Fecha de creacion | 2026-11-23 (según metadatos de Hugging Face) |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | bhojpuri (bho), hindi (hi) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Gemwa-4B. La model card del repositorio de cuantización no incluye descripción arquitectónica, número de tokens de entrenamiento, composición del dataset ni detalles sobre fases de alineación (RLHF, DPO o similares). El único dato técnico inferible es que el checkpoint original fue convertido a formato HF (`convert_type: hf`) y posteriormente cuantizado con una herramienta que genera cuantizaciones estáticas (probablemente llama.cpp), con `quantize_version: 2` y `output_tensor_quantised: 1`.
+El modelo se basa en la arquitectura Gemma 3, un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, disenado por Google DeepMind. Sobre esta base, el autor l1nk-0 aplico un ajuste fino supervisado mediante LoRA, una tecnica de adaptacion de bajo rango que permite especializar el modelo sin reentrenar todos los parametros. El resultado es un modelo de aproximadamente 3,88 mil millones de parametros que conserva las capacidades generales de Gemma 3 pero con una alineacion especifica hacia el bhojpuri.
 
-La discrepancia entre el nombre "4B" y los 419,8 millones de parámetros registrados en safetensors es la única pista sobre el tamaño real. Sin acceso a la configuración del modelo (`config.json`) ni a la model card original, no es posible determinar si se trata de un modelo de 0,4B mal etiquetado, de un componente parcial (por ejemplo, un proyector multimodal) o de un error en el recuento. Tampoco hay información sobre innovaciones técnicas como atención lineal, decodificación especulativa o arquitecturas híbridas.
+Los datos de entrenamiento provienen de dos conjuntos: pksx01/alpaca_bhojpuri_instruction, un dataset de instrucciones en formato Alpaca traducido o adaptado al bhojpuri, y l1nk-0/bhojpuri-chhath-qa, un conjunto de preguntas y respuestas centrado en la festividad del Chhath, lo que sugiere un sesgo tematico hacia contenido cultural y religioso de la region. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO posteriores. Tampoco se documentan innovaciones tecnicas adicionales mas alla del propio ajuste LoRA. La cuantizacion a GGUF la realiza mradermacher con su pipeline habitual, generando tanto cuantizaciones estaticas como el modulo multimodal mmproj (Q8_0 y f16), lo que indica que el modelo base conserva la torre de vision de Gemma 3.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- No hay confirmación de soporte de tool calling, function calling ni razonamiento multi-paso.
-- No hay confirmación de capacidades multilingües ni de modos especiales (thinking, visión, audio).
-- El único dato operativo es que el modelo puede ejecutarse en formato GGUF mediante llama.cpp y herramientas compatibles, lo que permite inferencia en CPU y GPU con distintos niveles de cuantización.
+- Generacion de texto conversacional en bhojpuri, con soporte secundario de hindi.
+- Instrucciones y respuesta a preguntas en formato Alpaca, heredado del dataset de entrenamiento.
+- Capacidad multimodal potencial: el repositorio incluye ficheros mmproj, lo que sugiere que el modelo base conserva la torre de vision de Gemma 3, aunque no se documenta su calidad tras el ajuste fino.
+- Razonamiento basico y generacion de texto general heredados de Gemma 3.
+- Soporte de conversacion multi-turno (tag conversational en Hugging Face).
+- No se documenta soporte explicito de tool calling, function calling ni razonamiento agente multi-paso.
+- Capacidades multilingues limitadas a bhojpuri e hindi segun la model card; el resto de idiomas de Gemma 3 no se garantizan tras el ajuste.
 
 ## Casos de uso
 
-- Despliegue en dispositivos de borde: las cuantizaciones Q2_K a Q4_K_M permiten ejecutar el modelo en hardware con poca memoria (Raspberry Pi, mini-PC, móviles de gama alta) mediante llama.cpp, siempre que se valide previamente la calidad del modelo base.
-- Prototipado rápido en local: un repositorio de 1,4 GB con múltiples cuantizaciones facilita pruebas de integración en pipelines de generación de texto sin necesidad de GPU dedicada.
-- Evaluación comparativa de cuantizaciones: al incluir desde Q2_K hasta Q8_0 e IQ4_XS, el repo sirve para medir la degradación de calidad frente al tamaño en un mismo modelo.
-- Integración en aplicaciones de escritorio: herramientas como Ollama o LM Studio pueden cargar estos GGUF para asistentes locales offline, aunque la utilidad real depende de las capacidades no documentadas del modelo base.
-- Filtrado o clasificación de texto a pequeña escala: si el modelo base rinde aceptablemente en tareas simples, la cuantización Q4_K_M ofrece un equilibrio razonable entre tamaño y fidelidad para clasificación básica.
-- Investigación sobre cuantización: útil para estudiar el impacto de distintos esquemas (K-quants, I-quants) en un checkpoint concreto, comparando perplejidad y salidas entre ficheros.
+- Atencion al publico en bhojpuri: el modelo puede gestionar consultas conversacionales de usuarios que hablan esta lengua, util en administraciones publicas, ONG o empresas que operan en Bihar, Uttar Pradesh o zonas de emigracion. Su tamano permite desplegarlo en servidores modestos.
+- Preservacion y divulgacion linguistica: investigadores pueden usarlo para generar materiales didacticos, traducciones asistidas o corpus sinteticos en bhojpuri, aprovechando que es uno de los pocos modelos ajustados especificamente a esta lengua.
+- Chatbot cultural sobre Chhath: dado que uno de los datasets de entrenamiento es especifico sobre esta festividad, el modelo puede responder preguntas sobre tradiciones, rituales y significado cultural con cierto grado de especializacion.
+- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M de 2,6 GB, cabe en GPUs consumer como RTX 3060, RTX 4060 o incluso en CPU con llama.cpp, lo que facilita prototipado y demos locales.
+- Educacion y tutoria basica en hindi y bhojpuri: puede servir como asistente de aprendizaje para hablantes de estas lenguas, con la cautela de verificar la exactitud de los contenidos.
+- Investigacion sobre sesgos y calidad en lenguas de bajos recursos: sirve como caso de estudio para medir como el ajuste fino con datasets pequenos afecta al rendimiento y a la fidelidad linguistica frente al modelo base.
+- Integracion en pipelines de generacion aumentada (RAG): al ser un modelo pequeno y rapido en GGUF, puede combinarse con recuperacion documental para responder preguntas sobre documentos en bhojpuri.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +53,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de ~0,42B parámetros, las cuantizaciones Q4_K_M ocuparían del orden de 250-300 MB; Q8_0 en torno a 450-500 MB; F16 aproximadamente 840 MB. Estas cifras son estimaciones basadas en el recuento de parámetros y no en mediciones publicadas.
-- GPU recomendadas: cualquier GPU consumer con 2 GB o más de VRAM es suficiente para las cuantizaciones pequeñas; una RTX 3060, RTX 4060 o superior permite cargar el modelo completo en VRAM sin offloading.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU moderna e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que su uso requeriría los pesos originales en safetensors.
-- Latencia y throughput: no disponibles. Para un modelo de este tamaño en una GPU consumer se espera un throughput alto (cientos de tokens por segundo), pero no hay mediciones publicadas que lo confirmen.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con Q4_K_M, 3,5-4 GB con Q5_K_M o Q6_K, y 5-6 GB con Q8_0. La version f16 requiere unos 8-9 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues de mayor throughput. Cualquier GPU con al menos 6 GB de VRAM puede ejecutar las cuantizaciones de 4 bits.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas con 6 GB o mas. Tambien puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. Para el modelo base en safetensors, vLLM o TGI si se dispone de los pesos originales.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. A modo orientativo, un modelo de 4B en Q4_K_M sobre una RTX 4090 suele generar decenas de tokens por segundo, pero no se confirma con datos del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Gemwa-4B-GGUF | 419,8 M (según safetensors) | no disponible | no disponible | GGUF | Cuantizaciones estáticas de un modelo no documentado |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo pequeño ampliamente documentado y con benchmarks públicos |
-| SmolLM2-360M-Instruct | 362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Alternativa ligera con model card completa y evaluación publicada |
-| Llama-3.2-1B-Instruct | 1,24 B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Mayor tamaño, contexto muy superior y licencia con restricciones |
+| Gemwa-4B-GGUF | 3,88 B | no disponible | bhojpuri, hindi | gemma | GGUF |
+| Gemma 3 4B (base) | 4 B aprox. | no disponible | multilingue amplio | gemma | safetensors, GGUF |
+| Llama 3.2 3B | 3,2 B | 128k | multilingue | Llama 3.2 Community | safetensors, GGUF |
+| Qwen2.5 3B | 3,1 B | 32k | multilingue | Apache 2.0 | safetensors, GGUF |
 
-La comparación es limitada porque no se dispone de datos de rendimiento, licencia ni contexto de Gemwa-4B. Los tres modelos alternativos citados cuentan con documentación oficial, benchmarks y comunidades activas, lo que los hace opciones más seguras para producción hasta que se aclare la naturaleza del modelo base.
+La comparativa es orientativa: Gemwa-4B se diferencia por su especializacion en bhojpuri, mientras que los modelos base genericos ofrecen mejor cobertura multilingue y contextos documentados, pero carecen de ajuste especifico a esta lengua. No se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: no hay información sobre arquitectura, datos de entrenamiento, sesgos, alineación ni evaluación.
-- Discrepancia crítica entre el nombre ("4B") y el recuento de parámetros (419,8 M): puede inducir a error sobre la capacidad real del modelo.
-- Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución; es imprescindible contactar con el autor del modelo base (`l1nk-0`) antes de cualquier uso en producción.
-- Idiomas no documentados: no hay garantía de calidad en castellano ni en ningún otro idioma.
-- Riesgo de alucinación y comportamiento impredecible: sin evaluación pública, no se puede estimar la fiabilidad de las salidas.
-- Repositorio con 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de validación por terceros.
-- Fecha de creación atípica (2026): podría tratarse de un error en los metadatos de Hugging Face; conviene verificar la integridad del repositorio.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en modelos pequeños, donde cada parámetro cuenta más que en modelos grandes.
+- Sesgo tematico: uno de los datasets de entrenamiento esta centrado en la festividad del Chhath, lo que puede sesgar las respuestas hacia contenido cultural y religioso y reducir la diversidad tematica.
+- Riesgo de alucinacion: al ser un ajuste fino sobre un dataset pequeno, el modelo puede generar respuestas plausibles pero incorrectas, especialmente en temas fuera del dominio de entrenamiento.
+- Cobertura linguistica limitada: solo se documentan bhojpuri e hindi; el rendimiento en otros idiomas de Gemma 3 puede degradarse tras el ajuste.
+- Longitud de contexto no documentada: no se especifica la ventana de contexto efectiva, lo que complica su uso en tareas de contexto largo.
+- Licencia Gemma: el uso comercial esta sujeto a los Gemma Terms of Use de Google, que imponen restricciones y obligaciones de atribucion; conviene revisarlos antes de un despliegue en produccion.
+- Datos de evaluacion ausentes: no hay benchmarks publicados, por lo que la calidad real frente al modelo base no esta cuantificada.
+- Cuantizaciones de baja calidad: las versiones Q2_K y Q3_K pueden degradar notablemente la coherencia; se recomienda Q4_K_M o superior para uso practico.
+- Modelo de nicho: con 343 descargas y 0 likes en el momento de la ficha, la comunidad de validacion es practicamente inexistente.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Gemwa-4B-GGUF
-- Modelo base referenciado: https://huggingface.co/l1nk-0/Gemwa-4B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Repositorio GGUF: https://huggingface.co/mradermacher/Gemwa-4B-GGUF
+- Modelo base original: https://huggingface.co/l1nk-0/Gemwa-4B
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#Gemwa-4B-GGUF
+- Dataset de instrucciones: https://huggingface.co/datasets/pksx01/alpaca_bhojpuri_instruction
+- Dataset Chhath QA: https://huggingface.co/datasets/l1nk-0/bhojpuri-chhath-qa
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del autor de las cuantizaciones: https://www.nethype.de/

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "wesjos/Llama-3.1-8B-Thinking-SFT",
+  "slug": "wesjos-llama-3-1-8b-thinking-sft",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Llama-3.1-8B-Thinking-SFT",
+  "created_at": "2026-11-26T01:59:19.000Z",
+  "updated_at": "2026-11-26T02:14:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16073453602,
+  "storage_human": "16.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

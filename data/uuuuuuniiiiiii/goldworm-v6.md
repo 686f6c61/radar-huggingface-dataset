@@ -2,111 +2,106 @@
 
 ## Resumen
 
-GoldWorm v6 es un modelo de lenguaje causal de tipo transformer a nivel de byte (byte-level), desarrollado por el usuario Uuuuuuniiiiiii y publicado en Hugging Face bajo licencia MIT. Se trata de un modelo extremadamente compacto, con 2.757.504 parametros segun la configuracion declarada por el autor (2.806.656 en el fichero `model.safetensors`, diferencia atribuible a la duplicacion de las embeddings atadas al exportar), disenado para generar texto narrativo sencillo. Su proposito es servir como banco de pruebas eficiente y reproducible para modelado de lenguaje a nivel de byte, entrenado sobre el corpus TinyStories.
+GoldWorm v6 es un modelo de lenguaje causal de nivel de byte (byte-level) desarrollado por Gold Lab y publicado bajo el identificador `Uuuuuuniiiiiii/goldworm-v6` en Hugging Face. Se trata de un transformer decoder-only de 2,76 millones de parámetros únicos (2.806.656 tensores almacenados en `model.safetensors` por duplicación de los embeddings atados), con un vocabulario de 256 tokens correspondientes a los 256 valores posibles de un byte. No emplea tokenizador: procesa directamente la secuencia de bytes UTF-8, lo que elimina el sesgo de vocabulario y el coste de un tokenizer BPE.
 
-El modelo emplea una arquitectura `ByteTransformer` con vocabulario de 256 simbolos (un byte por token, sin tokenizador), `d_model=192`, 6 capas, 4 cabezas de atencion, `ffn_mult=4`, longitud de contexto de 256 tokens y embeddings atados. Al operar a nivel de byte, evita por completo el sesgo de tokenizacion y puede procesar cualquier secuencia de bytes, aunque su capacidad de generar lenguaje coherente esta limitada por su tamano y por el dominio concreto de TinyStories (narrativa infantil en ingles muy simplificada).
+El modelo está entrenado sobre el dataset `roneneldan/TinyStories`, un corpus de historias infantiles sintéticas de vocabulario y sintaxis simples, y está diseñado como experimento de eficiencia y de modelado a nivel de byte en un régimen de escala muy reducida. Su relevancia actual es acotada: no compite con modelos de propósito general, sino que sirve como referencia reproducible de arquitectura byte-level, como banco de pruebas para técnicas de evaluación (BPC, ventanas con stride) y como ejemplo de modelo que cabe holgadamente en cualquier GPU consumer e incluso en CPU.
 
-Su relevancia actual es acotada pero clara: es un ejemplo reproducible de entrenamiento y evaluacion rigurosos con verificacion determinista (dos pasadas bit-identicas) y un protocolo de evaluacion documentado, lo que lo hace util como referencia educativa, como baseline ligero y como caso de estudio de eficiencia extrema, mas que como modelo de proposito general. El autor declara un resultado de 1,007349 BPC (bits por byte) en TinyStories-valid, por debajo del BPC a nivel de byte de GPT-2 124M (1,142985) sobre la misma metrica.
+La model card declara un resultado de 1,0073 bits por byte (BPC) sobre la región outer-val de TinyStories-valid, con protocolo de ventana deslizante de stride 16 y contexto 256, verificado de forma determinista (dos pasadas bit-idénticas). Todos los números son autoinformados por el autor y no han sido replicados de forma independiente.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | ByteTransformer (transformer causal decoder-only a nivel de byte) |
-| Parametros totales | 2.757.504 (segun config del autor); 2.806.656 en `model.safetensors` |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 256 tokens (bytes) |
-| Tipos de cuantizacion | No disponible (el autor solo publica pesos en `safetensors`, sin variantes cuantizadas) |
-| Idiomas soportados | No disponible (el corpus de entrenamiento, TinyStories, esta en ingles) |
+| Arquitectura | ByteTransformer (transformer decoder-only causal, atención multi-cabeza estándar) |
+| Parámetros totales | 2.757.504 únicos (2,76 M); `model.safetensors` suma 2.806.656 por duplicación de embeddings atados |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256 bytes |
+| Tipos de cuantización | no disponible (pesos en safetensors; al ser un modelo de 2,76 M de parámetros, la cuantización es innecesaria en la práctica) |
+| Idiomas soportados | no disponible (entrenado sobre TinyStories, predominantemente inglés; el nivel de byte permite en teoría cualquier UTF-8, pero sin entrenamiento específico) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (mas `config.json` y `eval_results.json`) |
-| Vocabulario | 256 (byte-level, sin tokenizador) |
-| Dimension del modelo | `d_model=192`, `n_layer=6`, `n_head=4`, `ffn_mult=4`, `tie_embeddings=True`, `dropout=0.0` |
-| Tipo de tarea | text-generation |
+| Formato de pesos | safetensors (`model.safetensors`), más `config.json` y `eval_results.json` |
+
+Configuración declarada: `vocab_size=256`, `d_model=192`, `n_layer=6`, `n_head=4`, `ffn_mult=4`, `ctx=256`, `tie_embeddings=True`, `dropout=0.0`.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal decoder-only que opera directamente sobre bytes: cada token de entrada es un byte (vocabulario de 256), lo que elimina la necesidad de un tokenizador BPE o SentencePiece. La configuracion concreta es `vocab_size=256, d_model=192, n_layer=6, n_head=4, ffn_mult=4, ctx=256, tie_embeddings=True, dropout=0.0`. Las embeddings de entrada y la proyeccion de salida estan atadas, y en el fichero exportado las embeddings atadas aparecen clonadas, lo que explica la diferencia entre los 2.757.504 parametros de la configuracion y los 2.806.656 del `safetensors` (49.152 parametros extra, equivalentes a 256 x 192).
+El modelo es un transformer causal decoder-only con atención multi-cabeza convencional, 6 capas, dimensión de modelo 192, 4 cabezas de atención y un factor de expansión de la FFN de 4 (dimensión interna 768). Los embeddings de entrada y la proyección de salida están atados (`tie_embeddings=True`), lo que explica la diferencia entre parámetros únicos (2.757.504) y la suma de tensores almacenados (2.806.656). La innovación principal es la eliminación completa del tokenizador: el vocabulario son los 256 valores de byte, de modo que la perplejidad se mide directamente en bits por byte (BPC) sin normalización por tokens.
 
-El entrenamiento se realizo sobre el dataset `roneneldan/TinyStories`, en concreto sobre `TinyStories-valid.txt` (19,4 MB) para la evaluacion. El checkpoint publicado corresponde al paso 8000, seleccionado mediante validacion interna (`inner_val_windowed_bpc = 1.051187`). No se documenta en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset de entrenamiento ni si se aplicaron tecnicas de RLHF, DPO o ajuste por instrucciones; el modelo parece ser un modelo base entrenado con el objetivo estandar de prediccion del siguiente byte. El autor menciona comprobaciones de paridad, replicacion y forma de chunk segun un documento interno `LLM_PARITY_ROADMAP.md`, y verificacion de determinismo con dos pasadas bit-identicas (`max_abs_diff_per_position_bits = 0.0`).
-
-Como innovacion destacable, mas que arquitectonica, figura el protocolo de evaluacion reproducible: ventana deslizante con stride 16 y contexto 256 sobre un conjunto fijo de 129.429 posiciones de validacion externa, con la seleccion del checkpoint congelada antes de leer el conjunto `outer_val`, lo que refuerza la validez del resultado declarado.
+El entrenamiento se realizó sobre `roneneldan/TinyStories`, concretamente sobre la primera parte de `TinyStories-valid.txt` (19,4 MB, sha256 `94e431816c4cce81...` según la model card), y la evaluación se hizo sobre la región outer-val del mismo fichero, es decir, en dominio y con una partición derivada del mismo fichero. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF, DPO o ajuste por instrucciones; por el tipo de corpus y el tamaño del modelo, es razonable asumir preentrenamiento puro de modelado de lenguaje, pero este dato no está confirmado en la información disponible. El checkpoint publicado corresponde al paso 8000, seleccionado por BPC en validación interna (`inner_val_windowed_bpc = 1.051187`) antes de leer la partición outer-val, lo que el autor presenta como garantía contra la fuga de información en la selección.
 
 ## Capacidades
 
-- Generacion de texto narrativo sencillo en ingles, en el dominio de TinyStories (cuentos infantiles con vocabulario y gramatica simples).
-- Modelado de lenguaje a nivel de byte: puede procesar y predecir cualquier secuencia de bytes, sin depender de un tokenizador.
-- Muestreo configurable: el demo permite generacion con temperatura y muestreo top-k.
-- Ejecucion en CPU: su tamano minimo permite inferencia sin GPU.
-- No hay evidencia de soporte de tool calling ni function calling en la informacion disponible.
-- No hay evidencia de soporte de agentes ni de razonamiento multi-paso en la informacion disponible.
-- No hay evidencia de capacidades multilingues, de vision, de audio ni de modo de razonamiento (thinking mode) en la informacion disponible.
-- No hay evidencia de capacidades de generacion de codigo ni de matematicas mas alla de lo que pueda emerger de forma marginal del corpus de cuentos.
+- Generación de texto autoregresiva a nivel de byte, con decodificación por temperatura y top-k según el demo incluido.
+- Modelado de lenguaje y cálculo de bits por byte sobre secuencias UTF-8 arbitrarias, sin dependencia de un tokenizador.
+- Generación de historias infantiles simples al estilo TinyStories (frases cortas, vocabulario reducido, coherencia local).
+- Manejo de cualquier byte de entrada, incluidos caracteres no ASCII, sin tokens fuera de vocabulario (OOV) por construcción.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe específica ni modo de razonamiento (thinking mode).
+- No dispone de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Docencia y divulgacion de arquitecturas transformer: al ser un modelo de 2,76 M de parametros con configuracion explicita y dependencias minimas (torch, safetensors, numpy, streamlit), permite montar un laboratorio completo de carga, inferencia y evaluacion en una sola sesion practica.
-- Baseline de investigacion a nivel de byte: sirve como punto de comparacion reproducible (BPC declarado 1,007349 en TinyStories-valid) para experimentos de tokenizacion, tamano de contexto o estrategias de muestreo.
-- Pruebas unitarias y de integracion de pipelines de inferencia: su tamano permite ejecutar ciclos completos de carga y generacion en segundos dentro de CI, verificando el correcto funcionamiento de serializacion `safetensors` y del codigo de modelo.
-- Prototipado de aplicaciones de generacion de texto en entornos con recursos minimos (Raspberry Pi, contenedores ligeros, dispositivos embebidos), donde el coste de memoria es inferior a 15 MB en fp32.
-- Generacion de cuentos y texto infantil muy simplificado en ingles: es el dominio para el que fue entrenado, con calidad razonable dentro de sus limitaciones de coherencia a 256 bytes de contexto.
-- Investigacion sobre eficiencia y determinismo: el protocolo de verificacion bit-exacta documentado lo hace util para estudiar reproducibilidad de entrenamiento y evaluacion a pequena escala.
-- Experimentos de compresion y modelado de bytes: el uso de BPC como metrica lo conecta directamente con lineas de investigacion en compresion sin perdidas y modelado de secuencias crudas.
+- Docencia y divulgación de arquitecturas transformer: el modelo es lo bastante pequeño (2,76 M de parámetros, 6 capas) para leer su configuración completa, cargarlo en un portátil y ejecutar el forward pass paso a paso en un cuaderno, lo que lo hace idóneo para explicar atención, embeddings atados y decodificación causal.
+- Referencia reproducible de modelado a nivel de byte: sirve como baseline para comparar técnicas de tokenización frente a byte-level en corpus pequeños, con una métrica directa (BPC) y un protocolo de evaluación documentado (ventana stride 16, contexto 256).
+- Pruebas de infraestructura de inferencia: por su tamaño, se puede usar para validar pipelines de carga con `safetensors`, integración con Streamlit, comprobaciones de determinismo y paridad numérica entre implementaciones antes de escalar a modelos mayores.
+- Generación de texto sintético de juguete: producción de micro-relatos infantiles para pruebas de UI, datos de relleno en demos o ejemplos en documentación, donde la calidad TinyStories es suficiente y el coste computacional es despreciable.
+- Evaluación de técnicas de cuantización y compresión extrema: con 2,76 M de parámetros, es un banco de pruebas barato para medir el impacto de cuantizaciones agresivas (int8, int4) en BPC sin necesidad de GPUs de gama alta.
+- Experimentos de interpretabilidad en modelos pequeños: al tener solo 6 capas y un vocabulario de 256 elementos, facilita el análisis de activaciones, mapas de atención y circuitos internos con trazabilidad completa.
+- Demo interactivo en Spaces: el Space `Gold_Lab` permite probar la generación sin instalación local, útil para talleres y presentaciones.
 
 ## Benchmarks y rendimiento
 
-Los resultados declarados por el autor se refieren a BPC (bits por byte) sobre TinyStories-valid, no a benchmarks estandar como MMLU, HumanEval o GSM8K. La matriz `model-index` de la model card esta vacia (`results: []`), por lo que no hay resultados en benchmarks convencionales.
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Modelo / referencia | Parametros | Metrica | Resultado |
+| Benchmark | Métrica | Valor | Contexto |
 |---|---|---|---|
-| GoldWorm v6 | 2,76 M | BPC completo (outer-val, TinyStories-valid, 129.429 posiciones) | 1,007349 |
-| GoldWorm v6 | 2,76 M | BPC windowed inner-val (paso 8000) | 1,051187 |
-| GPT-2 124M | 124 M | BYTE_BPC (misma metrica) | 1,142985 |
-| GPT-2 124M | 124 M | TOKEN_BPC | 9,152823 |
-| Baseline unigram | no disponible | BPC (add-k 0,01) | 4,437 |
-| Baseline bigram | no disponible | BPC (add-k 0,01) | 3,317 |
-| Referencia v1 (gate) | no disponible | BPC de referencia congelado | 2,566 |
+| TinyStories (held-out outer-val de valid) | bits/byte | 1,0073 | Paso 8000, ventana stride 16, contexto 256, 129.429 posiciones fijas |
+| TinyStories (validación interna) | bits/byte (windowed) | 1,051187 | Selección de checkpoint |
+| Baseline unigram (train-matched) | bits/byte | 4,437 | Add-k 0.01 |
+| Baseline bigram (train-matched) | bits/byte | 3,317 | Add-k 0.01 |
+| Referencia congelada v1 | bits/byte | 2,566 | Gate de calidad |
+| GPT-2 124M (mismo protocolo, autoinformado) | bits/byte | 1,142985 | No reproducido; comparación indicativa, GPT-2 evaluado zero-shot fuera de dominio |
 
-Protocolo declarado: ventana deslizante con stride 16 y contexto 256 sobre un conjunto de evaluacion fijo; determinismo verificado con dos pasadas bit-identicas. El autor indica que la seleccion se congelo antes de leer `outer_val`. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+El autor advierte explícitamente de que la comparación con GPT-2 124M depende del protocolo (contexto, ventanas, normalización byte vs token) y no ha sido reproducida de forma independiente; en una porción de 256 KB de TinyStories-validation, el benchmark de `goldworm-coder` midió GPT-2 124M en 1,1203. No hay resultados publicados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 11,2 MB para los pesos en fp32 (2.806.656 parametros), unos 5,6 MB en fp16/bf16 y unos 2,8 MB en int8. El cache KV para contexto 256 es insignificante (6 capas, 4 cabezas, `d_model=192`, 256 posiciones).
-- Cabe en cualquier GPU consumer, incluidas GTX 1050, RTX 3050, RTX 4090 o integradas modernas; tambien en CPU, en Raspberry Pi y en dispositivos embebidos con unas pocas decenas de MB de RAM.
-- GPU recomendadas: no se requiere GPU. Cualquier GPU con soporte CUDA es sobradamente suficiente; no hay datos que justifiquen A100 o H100 para este modelo.
-- Opciones de despliegue: el autor proporciona un demo en Streamlit (`demo/app.py`) con dependencias `torch`, `safetensors`, `streamlit` y `numpy`, y un ejemplo de carga en Python con `ByteTransformer(config)` y `safetensors.torch.load_file`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al no publicarse variantes GGUF ni un tokenizador estandar, su integracion en esos ecosistemas requeriria trabajo adicional.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: inferior a 100 MB en fp32 (2,76 M de parámetros × 4 bytes ≈ 11 MB de pesos, más activaciones y buffers de contexto de 256 bytes); cabe en cualquier GPU, iGPU o incluso en CPU.
+- GPU recomendadas: cualquiera; no requiere A100, H100 ni RTX 4090. Una GTX 1050, una iGPU Intel o una Raspberry Pi son suficientes.
+- Cabe en GPU consumer: sí, en todas, incluidas las de gama de entrada y las integradas.
+- Opciones de despliegue: el autor documenta carga directa con PyTorch + `safetensors` y un demo con Streamlit (`demo/app.py`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; dada la arquitectura byte-level personalizada y la librería `goldworm-v6`, la integración con esos motores requeriría trabajo adicional no cubierto en la información disponible.
+- Latencia y throughput: no disponibles de forma medida. Por el tamaño, la latencia por token debería ser del orden de microsegundos a milisegundos en GPU y de pocos milisegundos en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Metrica declarada | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tokenización | Licencia | Resultado declarado |
 |---|---|---|---|---|---|
-| GoldWorm v6 | 2,76 M | 256 bytes | BPC 1,007349 (TinyStories-valid) | MIT | Hugging Face, pesos safetensors |
-| GPT-2 124M | 124 M | 1.024 tokens (token-level) | BYTE_BPC 1,142985 | MIT (pesos OpenAI) | Ampliamente disponible, multiples formatos |
-| Modelos TinyStories (familia roneneldan) | aproximadamente 1 M a 33 M (segun variante) | no disponible | no disponible | no disponible | Hugging Face |
-| Baseline unigram / bigram | no aplica | no aplica | BPC 4,437 / 3,317 | no aplica | referencias estadisticas del autor |
+| GoldWorm v6 | 2,76 M | 256 bytes | Byte-level (256) | MIT | 1,0073 BPC en TinyStories outer-val (autoinformado) |
+| GPT-2 124M | 124 M | 1024 tokens | BPE (50.257) | MIT | 1,142985 BPC en el mismo protocolo según el autor (no reproducido; zero-shot, fuera de dominio) |
+| TinyStories-1M (variante de referencia) | ~1 M | 512 tokens | BPE | no disponible en la información | no disponible |
+| TinyStories-33M (variante de referencia) | ~33 M | 512 tokens | BPE | no disponible en la información | no disponible |
 
-La comparacion directa mas solida es con GPT-2 124M, sobre el que el autor declara una mejora en BPC a nivel de byte pese a tener unas 44 veces menos parametros, si bien se trata de un modelo entrenado sobre un corpus mucho mas grande y diverso y evaluado aqui en el dominio restringido de TinyStories. No se dispone de datos comparativos de la familia TinyStories en la informacion proporcionada, por lo que sus cifras se marcan como no disponibles.
+La comparación con GPT-2 124M es la única que el autor aporta con números, y él mismo la califica de indicativa: GPT-2 es un modelo general evaluado zero-shot, mientras que GoldWorm v6 está entrenado en dominio. No hay comparación publicada con un baseline BPE del mismo tamaño, limitación que el propio autor reconoce. Las variantes TinyStories de referencia se incluyen como contexto de categoría, pero no se dispone de sus cifras en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dominio muy restringido: el entrenamiento se centra en TinyStories, un corpus de narrativa infantil simplificada en ingles; el rendimiento fuera de ese dominio sera previsiblemente pobre.
-- Contexto muy corto: 256 bytes, equivalente a unas pocas frases, lo que limita la coherencia en generaciones largas y descarta casos de uso que requieran contexto extenso.
-- Riesgo alto de alucinacion y de incoherencia: con 2,76 M de parametros y ausencia de ajuste por instrucciones, no cabe esperar fidelidad factual ni seguimiento de instrucciones complejas.
-- Idiomas: aunque la arquitectura a nivel de byte es teoricamente agnostica al idioma, no hay evidencia de entrenamiento multilingue; la model card no declara idiomas soportados.
-- Ausencia de benchmarks estandar: no hay resultados en MMLU, HumanEval, GSM8K ni metricas humanas; la unica evidencia de calidad es el BPC declarado por el propio autor.
-- Reproducibilidad externa limitada: parte del proceso de verificacion se apoya en documentos internos (`LLM_PARITY_ROADMAP.md`) y en una ruta de repositorio local de Windows, no en artefactos publicos.
-- Licencia MIT: permite uso comercial, modificacion y redistribucion, pero el autor no ofrece garantias ni soporte; conviene citar la procedencia.
-- Adopcion practicamente nula: 0 descargas y 0 likes en el momento de la consulta, sin comunidad ni mantenimiento evidenciados.
-- Ausencia de tokenizador y de formatos alternativos (GGUF, ONNX) que faciliten su integracion en herramientas de despliegue estandar.
-- El modelo no dispone de salvaguardas documentadas frente a generacion de contenido inapropiado; su uso en produccion orientada a usuarios exigiria filtros externos.
+- Entrenado y evaluado sobre el mismo fichero (`TinyStories-valid.txt`): la evaluación es en dominio y sobre una partición derivada del mismo fichero, por lo que el BPC reportado no es representativo de generalización fuera de TinyStories.
+- No existe un baseline BPE del mismo tamaño con el que comparar; la ventaja del enfoque byte-level frente a tokenización no está demostrada.
+- Calidad de generación limitada a historias infantiles simples; no es un modelo de propósito general y no debe usarse para tareas de razonamiento, código, matemáticas o atención al cliente.
+- Todos los números son autoinformados y no han sido re-medidos de forma independiente; el propio autor lo señala.
+- Contexto de solo 256 bytes, insuficiente para conversaciones multi-turno, documentos o cualquier tarea que requiera memoria extendida.
+- Idiomas soportados no documentados; el entrenamiento en TinyStories es predominantemente en inglés y no hay evidencia de calidad en castellano u otras lenguas.
+- Riesgo de alucinación y de incoherencia a partir de pocos cientos de bytes generados, inherente a un modelo de 2,76 M de parámetros.
+- Sesgos: no documentados por el autor; el corpus TinyStories es sintético y de temática infantil, lo que reduce pero no elimina sesgos de género o rol en los personajes.
+- Licencia MIT: permite uso comercial, modificación y redistribución con atribución; no obstante, la calidad del modelo hace inviable su uso comercial real más allá de demos o experimentos.
+- La arquitectura y la librería `goldworm-v6` son personalizadas, lo que limita la portabilidad a ecosistemas estándar (Transformers, vLLM, llama.cpp) sin adaptación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
-- Dataset de entrenamiento/evaluacion: `roneneldan/TinyStories` (TinyStories-valid.txt, 19,4 MB, sha256 `94e431816c4cce81...`)
-- Demo incluido en el repositorio del modelo: `demo/app.py` (Streamlit), con `demo/requirements.txt`
-- Ficheros auxiliares publicados: `config.json`, `eval_results.json`, `model.safetensors`
-- Referencia interna citada por el autor (no publica): `LLM_PARITY_ROADMAP.md`
-- Repositorio fuente citado por el autor (ruta local de Windows, no accesible publicamente): `C:/Users/Student/GoldWorm/GoldWorm/goldworm-lm-v0/`
-- La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a sitios sin relacion (Instagram), por lo que no se incluyen.
+- Space de demostración (Gold Lab): https://huggingface.co/spaces/Uuuuuuniiiiiii/Gold_Lab
+- Vídeo explicativo: https://youtu.be/Wuh3_bJSxyY
+- Podcast: https://youtu.be/ijVZXPYTsXU
+- Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
+- DOI del modelo: https://doi.org/10.57967/hf/10547

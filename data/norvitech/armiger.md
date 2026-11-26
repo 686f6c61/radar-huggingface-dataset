@@ -1,125 +1,89 @@
 # NorviTech/armiger
 
 ## Resumen
-Armiger es un clasificador ultraligero publicado por NorviTech en Hugging Face. Está pensado para etiquetar títulos de BitTorrent, DHT, Usenet y bibliotecas multimedia autoalojadas, así como árboles de ficheros internos, sin depender de expresiones regulares ni de un tokenizador. El artefacto principal es un modelo ONNX INT8 de 8,3 MB que ejecuta ocho cabezas de clasificación calibradas en una única pasada forward.
 
-La arquitectura declarada es un transformer a nivel de byte con RoPE y un codificador de árbol de ficheros, entrenado con aprendizaje multitarea. El autor lo presenta como alternativa a parsers de reglas como GuessIt, PTT, RTN, PTN o Anitomy y a modelos de subtokens de 360M+ parámetros como MIMMO BERT, que requieren aproximadamente 1,4 GB de pesos. La propuesta es relevante por su coste computacional: 0,42 ms por lote y 2,44 ms por elemento en CPU, según la model card.
+Armiger es un clasificador de metadatos de BitTorrent y DHT desarrollado por NorviTech, distribuido como modelo ONNX cuantizado a INT8 y pensado para inferencia en CPU. No es un modelo generativo de propósito general, sino un clasificador de texto especializado que recibe metadatos de torrents (nombre, lista de ficheros, tamanos) y devuelve predicciones estructuradas por cabezas de clasificacion (categoria, flags de politica, estimaciones de swarm, entre otras). Su relevancia radica en que resuelve una tarea muy concreta —clasificar y filtrar metadata de la red BitTorrent— con un modelo de apenas 7 MiB que no requiere GPU.
 
-No se declara longitud de contexto, número de parámetros ni composición del dataset. Las métricas de precisión son declaradas por el autor y no constan validaciones independientes; el repositorio figura con 0 descargas y 0 likes en el momento de la consulta.
+La arquitectura es una construccion propia del autor ("clean-sheet tri-encoder", version v3.17.0) que combina un vocabulario SentencePiece Unigram de 32K subpalabras, un codificador convolucional sobre bytes (Byte ConvNeXt), un agregador de conjuntos de ficheros (File-Set PMA) y un codificador de audio aislado para la cabeza `P(x)`. El modelo se ha entrenado con cuantizacion consciente del entrenamiento (QAT) para INT8.
 
-## Especificaciones técnicas
-| Parámetro | Valor |
+El modelo esta publicado bajo licencia Apache-2.0, soporta nueve idiomas declarados (en, ja, fr, de, es, it, ru, ko, zh) y se integra mediante el paquete Python `armiger` y ONNX Runtime. La variante "Ultra" anade componentes adicionales de matching contra autoridades externas, meta-stackers GBDT en ONNX puro y cribado de basura segun "Policy-2".
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer a nivel de byte con RoPE + codificador de árbol de ficheros; aprendizaje multitarea con 8 cabezas |
-| Parámetros totales | no disponible; el artefacto INT8 declarado ocupa 8,3 MB |
+| Arquitectura | Tri-encoder propio (v3.17.0): SentencePiece Unigram 32K + Byte ConvNeXt + File-Set PMA + codificador de audio aislado `P(x)` |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | INT8 en ONNX para CPU; la variante Armiger Ultra incluye FP32 para GPU |
-| Idiomas soportados | no disponibles; las etiquetas de las cabezas están en inglés |
+| Tipos de cuantizacion | INT8 (QAT); pesos FP32 en el repo `armiger-ultra` |
+| Idiomas soportados | en, ja, fr, de, es, it, ru, ko, zh |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`armiger.onnx`) + `calibration.json`; Armiger Ultra añade `swarm_adapter.pt` y scripts Python |
-| Tarea | `text-classification` multitarea con 8 cabezas |
-| Tamaño del artefacto principal | 8,3 MB (INT8) |
-| Librería | ONNX |
+| Formato de pesos | ONNX (`armiger.int8.onnx`, 7.371.593 bytes / 7,0 MiB) |
 
 ## Arquitectura y entrenamiento
-Armiger es un transformer a nivel de byte con embeddings posicionales rotatorios (RoPE) y un codificador de árbol de ficheros. No usa tokenizador: consume los bytes UTF-8 del título y la estructura interna de ficheros, y produce ocho cabezas de clasificación en una única pasada forward. Las cabezas cubren categoría (11 clases), adulto, anime, idioma de audio, idioma del título, subtítulos en inglés, junk y ámbito de propietario. El modelo se distribuye como ONNX INT8 y está pensado para inferencia en CPU.
 
-No se documentan el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni el proceso exacto de anotación. Es un clasificador supervisado multitarea, no un modelo generativo. Como innovaciones, la model card destaca la ausencia de tokenizador, la lectura directa de árboles de ficheros, la calibración por cabeza y un ecosistema de plugins para calibración conforme, actualización DHT, reglas de catálogo sin pistas y guardias de audio/CSAM. La información sobre el plugin de sincronización DHT y CSAM está truncada, por lo que no se puede evaluar su alcance completo.
+Armiger no es un transformer decoder ni un modelo de lenguaje: es un clasificador multi-cabeza con una arquitectura "clean-sheet" disenada especificamente para metadata de torrents. La entrada se procesa por tres vias paralelas: un tokenizador SentencePiece Unigram de 32K subpalabras sobre el texto del nombre y rutas, un codificador convolucional que opera directamente sobre bytes (Byte ConvNeXt) para capturar patrones que el tokenizador pierde, y un agregador de tipo PMA (Pooling by Multihead Attention) que resume el conjunto de ficheros de cada torrent. Una cuarta rama aislada, `P(x)`, se encarga de la prediccion relacionada con audio. La salida se organiza en cabezas independientes (`heads`), entre ellas `category`, flags de politica (junk, adulto, honeypot) y estimaciones de swarm.
+
+El modelo se distribuye con cuantizacion INT8 obtenida mediante QAT, lo que permite ejecutarlo en CPU con ONNX Runtime. La model card no detalla el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se empleo RLHF o DPO; esos datos no estan disponibles. La variante "Ultra" (repo `armiger-ultra`) incorpora FP32, matching contra autoridades externas, meta-stackers GBDT implementados en ONNX puro, cribado "Policy-2" y estimaciones de swarm.
 
 ## Capacidades
-- Clasificación multitarea en una sola pasada: 8 cabezas calibradas sobre títulos y árboles de ficheros.
-- Categoría de contenido en 11 clases: `movie`, `tv_show`, `xxx`, `music`, `comic`, `game`, `audiobook`, `software`, `ebook`, `course`, `unknown`.
-- Puerta de seguridad para contenido adulto: `non_adult` frente a `adult`.
-- Detección de anime y enrutamiento de doblajes: `non_anime` frente a `anime`.
-- Idioma de audio o release: `english`, `non_english`, `multi_or_unknown`.
-- Idioma del título: `english_title` frente a `non_english_title`.
-- Disponibilidad de subtítulos en inglés: `no_eng_subs`, `has_eng_subs`, `unknown`.
-- Filtro de junk, malware, fake-codec y trampas de archivo: `clean` frente a `junk`.
-- Política de catálogo: `allowed_type` frente a `excluded`.
-- Entrada byte-level sin tokenizador, orientada a títulos y estructuras de ficheros.
-- Ejecución en CPU con ONNX INT8; el autor declara 0,42 ms por lote y 2,44 ms por elemento.
-- Plugins opcionales para vitalidad de enjambre, priors de release, catálogo sin pistas, guardia de audio, calibración DHT y sincronización DHT/CSAM.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-step, visión ni audio. No es un modelo generativo.
+
+- Clasificacion de metadatos de torrents por categoria a partir del nombre y la lista de ficheros.
+- Deteccion de flags de politica: contenido basura (junk), contenido adulto y honeypots.
+- Prediccion de atributos relacionados con audio/subtitulos mediante la cabeza aislada `P(x)`.
+- Estimacion de swarm (variante Ultra).
+- Matching contra autoridades externas (variante Ultra).
+- Soporte multilingue en nueve idiomas declarados.
+- Inferencia en CPU sin GPU mediante ONNX Runtime.
+- Salida estructurada por cabezas (`result["heads"][...]`), apta para consumo programatico.
+- No soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso: es un clasificador, no un LLM.
 
 ## Casos de uso
-- Indexación en Bitmagnet: clasificar cada torrent entrante en las 11 categorías antes de persistirlo; con 0,42 ms por lote permite procesar colas grandes en CPU sin GPU.
-- Automatización de bibliotecas multimedia autoalojadas: decidir si un lanzamiento es película o serie y enrutarlo a la biblioteca correcta; la cabeza película vs. serie declara 99,15 % de exactitud.
-- Puerta de seguridad adulta: bloquear o etiquetar contenido adulto antes de exponerlo en catálogos familiares; la exactitud declarada es 98,71 %, con revisión humana para casos dudosos.
-- Filtro de junk y malware: descartar fake codecs, trampas de archivo y releases maliciosos antes de descargar; la exactitud declarada es 99,90 %, y debe complementarse con antivirus.
-- Enrutamiento de anime y doblajes: separar anime de no anime y usar el plugin audio-guard para resolver casos como `.en.`, `<Foreign>.ENG.Sub` o `MULTi (FR EN)`; la cabeza de anime declara 97,82 %.
-- Gestión de idioma y subtítulos: decidir si un release tiene audio inglés o subtítulos ingleses; útil para políticas de idioma, con 98,17 % y 97,80 % declarados respectivamente.
-- Política de catálogo: aplicar `owner_scope` para excluir tipos no permitidos; la exactitud declarada es 98,69 %.
-- Procesamiento DHT/Usenet en tiempo real: clasificar metadatos y árboles de ficheros en un servicio ligero con ONNX Runtime, sin GPU.
-- Detección de enjambres falsos con plugin: estimar vitalidad del enjambre y detectar fake seeders o honeypots; el plugin swarm-survival declara 96,83 % de AUROC y 100 % de recall en su trampa de malware.
+
+- Indexacion de torrents: el modelo clasifica cada entrada de metadata por categoria antes de almacenarla, permitiendo organizar y filtrar catalogos de forma automatica con un coste de CPU minimo.
+- Cribado de contenido basura: el flag de junk permite descartar entradas de baja calidad o spam en pipelines de ingesta masiva de DHT.
+- Moderacion de contenido adulto: la cabeza de adulto permite marcar o excluir entradas en buscadores de torrents y front-ends de indexadores.
+- Deteccion de honeypots: el flag correspondiente ayuda a identificar entradas sospechosas en redes DHT antes de exponerlas a usuarios.
+- Enriquecimiento de metadatos en sistemas de recomendacion: la categoria predicha puede alimentar motores de recomendacion o filtros de busqueda sin necesidad de inspeccionar el contenido real.
+- Procesamiento en entornos sin GPU: al ser un modelo ONNX INT8 de 7 MiB, puede desplegarse en servidores modestos, contenedores ligeros o nodos edge que solo dispongan de CPU.
+- Clasificacion multilingue de nombres de fichero: los nueve idiomas soportados permiten clasificar metadata en catalogo internacional sin preprocesado especifico por idioma.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible; el modelo no es generativo. Las métricas siguientes son de clasificación y están declaradas por el autor, sin validación independiente ni detalle de particiones de test.
 
-| Ámbito | Métrica | Resultado declarado |
-|---|---|---|
-| Categoría, 11 clases | Exactitud Gold Standard | 97,92 % |
-| Película vs. serie | Exactitud | 99,15 % |
-| Puerta de adulto | Exactitud Gold Standard | 98,71 % |
-| Anime y doblaje | Exactitud verificada con MediaInfo | 97,82 % |
-| Idioma de audio | Exactitud Gold Standard | 98,17 % |
-| Idioma del título | Exactitud | 98,68 % |
-| Subtítulos en inglés | Exactitud | 97,80 % |
-| Junk | Exactitud | 99,90 % |
-| Junk | Sensibilidad/especificidad equilibradas | 98,8 % |
-| Ámbito de propietario | Exactitud | 98,69 % |
-| Plugin zero-cue | Película vs. serie | 99,46 % |
-| Plugin zero-cue | 11 clases | 98,48 % |
-| Plugin zero-cue | Casos límite duros | 98,93 % |
-| Plugin audio-guard | Gold Standard | 98,72 % |
-| Plugin audio-guard | Casos límite duros de audio | 99,88 % |
-| Plugin swarm-survival | AUROC de vitalidad del enjambre | 96,83 % frente a 53,04 % de la señal bruta de seeders |
-| Plugin swarm-survival | Recall de trampa de malware/fake seeder | 100,0 % |
-| Plugin swarm-survival | Cambio de categoría de contenido | 0 % |
-| Plugin calibration-dht | Exactitud equilibrada de junk con Mondrian | 99,95 % |
-
-El autor afirma que Armiger iguala o supera a LLMs en la nube con aproximadamente 900 veces más velocidad y coste 0 USD, pero no se aportan modelos concretos, versiones ni metodología; no se recoge como resultado verificable.
+La model card incluye graficos de comparacion de benchmarks y suites (imagenes `chart1_v317_benchmark_and_suites_comparison.png` y `chart4_v317_production_memory_and_live_cutover.png`), pero no se proporcionan cifras numericas en el texto disponible. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada: no aplica para el artefacto principal; está diseñado para CPU con ONNX INT8. El fichero declarado pesa 8,3 MB.
-- GPU recomendadas: no se requieren. Para GPU, el autor remite a Armiger Ultra, de 32,2 MB en FP32, pero no especifica A100, H100, RTX 4090 ni otros modelos.
-- GPU de consumo: no necesita GPU; cabe en CPU. No se documenta una ruta GPU para este repositorio concreto.
-- RAM: no se declara consumo de memoria del runtime ONNX; solo se indica el tamaño del artefacto.
-- Despliegue: ONNX Runtime, integración en servicios de clasificación, Bitmagnet y automatización de bibliotecas. No aplican vLLM, llama.cpp, Ollama o TGI para este modelo.
-- Latencia: 0,42 ms por lote y 2,44 ms por elemento en CPU según el autor. No se declara throughput sostenido, latencia p99 ni consumo energético.
+
+- VRAM: no aplica; el modelo esta disenado para inferencia en CPU con ONNX Runtime y no requiere GPU.
+- Tamano en disco: 7,0 MiB para `armiger.int8.onnx`; el repo completo ocupa 0,2 GB.
+- GPU recomendadas: no aplica (no se requiere GPU).
+- Cabe en cualquier consumer GPU o CPU: si, dado su tamano reducido; puede ejecutarse en portatiles y dispositivos de bajos recursos.
+- Opciones de despliegue: ONNX Runtime con el paquete Python `armiger` (`ArmigerStandaloneONNX`), descarga via `python -m armiger download --variant cpu`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
-La comparación se limita a los datos citados en la model card; no hay benchmarks independientes homogéneos.
 
-| Modelo | Tipo | Parámetros o tamaño | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Armiger | Clasificador byte-level multitarea | no disponible; 8,3 MB INT8 | no disponible | 97,92 % en 11 clases; 99,15 % película vs. serie | Apache-2.0 | Hugging Face `NorviTech/armiger` |
-| Armiger Ultra | Núcleo Armiger + adaptador de enjambre y GPU | no disponible; 32,2 MB FP32 | no disponible | Incluye swarm-survival con 96,83 % de AUROC | no disponible | Hugging Face `NorviTech/armiger-ultra` |
-| MIMMO BERT | Modelo de subtokens | 360M+ parámetros; aproximadamente 1,4 GB | no disponible | no disponible | no disponible | no disponible |
-| Parsers de reglas: GuessIt, PTT, RTN, PTN, Anitomy | Reglas y expresiones | no aplica | no aplica | no disponible | no disponible | no disponible en la información proporcionada |
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (clasificadores de metadata de BitTorrent/DHT en ONNX INT8).
 
 ## Limitaciones y advertencias
-- Las métricas son autodeclaradas. No se aporta tamaño de muestra, partición de test, intervalos de confianza ni validación independiente.
-- El repositorio figura con 0 descargas y 0 likes, y el tamaño del repo en Hugging Face aparece como 0.0 GB aunque la model card declara 8,3 MB. Conviene verificar los artefactos antes de usarlo en producción.
-- No se documentan sesgos conocidos. Al trabajar con nombres de torrents y catálogos, puede heredar convenciones y sesgos de esos datos, por ejemplo hacia releases en inglés o hacia ciertos grupos de publicación.
-- No es un modelo generativo: el riesgo principal es de clasificación errónea, no de alucinación textual.
-- No se declara longitud máxima de contexto ni comportamiento con títulos muy largos, bytes no UTF-8 o árboles de ficheros anómalos.
-- Los idiomas soportados no están declarados. Las cabezas de idioma solo distinguen inglés, no inglés y multi/desconocido; no hacen detección fina de idioma.
-- Las cabezas de adulto y junk pueden producir falsos positivos y falsos negativos. No sustituyen moderación humana, antivirus, análisis de malware ni cumplimiento legal.
-- La etiqueta junk no equivale a un escáner de seguridad; las trampas de archivo y los fake codecs pueden requerir análisis adicional.
-- La licencia Apache-2.0 es permisiva, pero deben verificarse los avisos de licencia y las licencias de los plugins y dependencias.
-- Los nombres de torrents cambian y pueden ser adversariales; la calibración y la actualización DHT ayudan, pero no garantizan robustez continua.
-- La descripción del plugin `armiger-dht-db-sync` y de su guardia CSAM está truncada en la información disponible; no se puede evaluar su alcance completo.
-- No hay datos de latencia p99, throughput sostenido ni coste energético en producción; las cifras de 0,42 ms y 2,44 ms son mediciones puntuales declaradas por el autor.
+
+- El modelo clasifica unicamente metadata suministrada; no inspecciona el contenido real de los ficheros ni certifica la legalidad del contenido, segun advierte el propio autor.
+- Las salidas de audio/subtitulo, junk, adulto y honeypot son predicciones o flags de politica, no hechos verificados.
+- Riesgo de alucinacion y falsos positivos/negativos inherente a cualquier clasificador; no se documentan tasas de error en la informacion disponible.
+- No se detalla la longitud de contexto ni el comportamiento con nombres de fichero extremadamente largos.
+- Los sesgos conocidos no estan documentados en la model card.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del paquete `armiger` y de los componentes Ultra por separado.
+- El repositorio principal es la variante CPU INT8; las funcionalidades avanzadas (matching de autoridades, meta-stackers GBDT, swarm) residen en la variante Ultra.
+- La fecha de creacion indicada (2026-10-18) es posterior a la fecha actual de referencia; verificar la vigencia de los enlaces antes de usarlo en produccion.
 
 ## Enlaces
-- Modelo principal: https://huggingface.co/NorviTech/armiger
-- Sitio del autor: https://norvitech.com
-- Armiger Ultra: https://huggingface.co/NorviTech/armiger-ultra
-- Plugin swarm-survival: https://huggingface.co/NorviTech/armiger-swarm-survival
-- Plugin swarm-priors: https://huggingface.co/NorviTech/armiger-swarm-priors
-- Plugin zero-cue-catalog: https://huggingface.co/NorviTech/armiger-zero-cue-catalog
-- Plugin audio-guard: https://huggingface.co/NorviTech/armiger-audio-guard
-- Plugin calibration-dht: https://huggingface.co/NorviTech/armiger-calibration-dht
-- Plugin dht-db-sync: https://huggingface.co/NorviTech/armiger-dht-db-sync
 
-No consta paper, demo ni repositorio de código independiente en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/armiger
+- Variante Ultra (FP32 y componentes adicionales): https://huggingface.co/NorviTech/armiger-ultra
+- Repositorio GitHub del paquete y guias de instalacion: https://github.com/spencernorton/armiger
+- Release v3.17.0: https://github.com/spencernorton/armiger/releases/tag/v3.17.0
+- Documentacion de evaluacion: https://github.com/spencernorton/armiger/blob/main/docs/evaluation.md
+- Conectores de indexadores: https://github.com/spencernorton/Armiger-Connectors
+- DH-Waypoint: https://github.com/spencernorton/DH-Waypoint
+- Vision general de modelos NorviTech: https://norvitech.com/ai-models/#armiger

@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SupraLabs/Supra2-Medium-Base · Hugging Face",
-      "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Base",
-      "snippet": "Supra2-Medium Base is a 25M-parameter decoder-only language model pretrained from scratch by SupraLabs on 20B tokens of English web text. It uses the Qwen3 architecture with a custom 16,384-token tokenizer."
-    },
-    {
-      "title": "SupraLabs/Supra2-Medium-Base at main - Hugging Face",
-      "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Base/tree/main",
-      "snippet": "Use Docker images ... Docker Model Runner How to use SupraLabs/Supra2-Medium-Base with Docker Model Runner: ... main Supra2-Medium-Base 103 MB Ctrl+K Ctrl+K 1 contributor History:8 commits LH-Tech-AI Update README.md a7534a1 verifiedabout 10 hours ago .gitattributes Safe 1.52 kBinitial commitabout 13 hours ago README.md 8.12 kBUpdate README ..."
-    },
-    {
-      "title": "Supra2-Medium-Base API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/SupraLabs/Supra2-Medium-Base",
-      "snippet": "Run Supra2-Medium-Base with FriendliAI inference. Ultra-efficient base model • 25M Parameters • 1K Context."
-    },
-    {
-      "title": "SupraLabs · Independent AI Lab",
-      "url": "https://supra-labs.com/",
-      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
-    },
-    {
-      "title": "GitHub - Supra-Labs/Supra-agents-hub: Supra Agents hub is the central ...",
-      "url": "https://github.com/Supra-Labs/Supra-agents-hub",
-      "snippet": "Supra Agents Hub What is Supra? Supra is a high-performance Layer 1, starting with MoveVM, designed to enable Smart contracts with instant execution and MultiVM operability. It achieved 500K TPS on 300 nodes with sub-second consensus latency, making it the best environment for AI Agents in DeFi and beyond."
-    }
-  ]
+  "sources": []
 }

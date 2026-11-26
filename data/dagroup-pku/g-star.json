@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 231,
+  "downloads_30d": 248,
   "trending_score": 0,
   "parameters": 9638851856,
   "parameters_human": "9.64B",
@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Store Finder - Lidl US",
-      "url": "https://www.lidl.com/c/store-finder/s10089075",
-      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
-    }
-  ]
+  "sources": []
 }

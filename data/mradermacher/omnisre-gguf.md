@@ -2,81 +2,97 @@
 
 ## Resumen
 
-OmniSRE-GGUF es la versión cuantizada en formato GGUF del modelo OmniSRE, desarrollado originalmente por el usuario w3joe y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 26.900 millones de parámetros (26,9B) orientado específicamente al dominio de Site Reliability Engineering (SRE), AIOps, Kubernetes y DevOps, con capacidades de agente y uso de herramientas (tool-use). El modelo base emplea técnicas de aprendizaje por refuerzo verificable (RLVR) junto con variantes como CISPO, DAPO y GTPO, lo que sugiere un entrenamiento orientado a tareas de razonamiento verificable en el ámbito de operaciones.
+OmniSRE es un modelo de lenguaje especializado en Site Reliability Engineering (SRE), AIOps y operaciones DevOps, desarrollado originalmente por w3joe y distribuido en formato GGUF por mradermacher. Con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), el modelo está diseñado especificamente para tareas de diagnostico, monitorizacion y automatizacion de infraestructuras, con un enfasis particular en Kubernetes y entornos cloud nativos.
 
-La relevancia de este modelo radica en su especialización vertical: en lugar de ser un modelo generalista, está afinado para tareas de diagnóstico, automatización y razonamiento operativo en infraestructuras cloud-native. La versión GGUF facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles, algo crítico para equipos de SRE que necesitan ejecutar inferencia local o en infraestructura propia sin depender de APIs externas.
+La version aqui documentada es una cuantizacion estatica del modelo base w3joe/OmniSRE, publicada bajo licencia Apache 2.0. El modelo incorpora tecnicas de entrenamiento mediante RLVR (Reinforcement Learning with Verifiable Rewards) y variantes como CISPO, DAPO y GTPO, orientadas a mejorar las capacidades de agente y uso de herramientas (tool-use) en escenarios operativos reales.
 
-La información pública disponible es limitada: la model card del repositorio GGUF es fundamentalmente una plantilla de cuantización de mradermacher y no incluye detalles sobre arquitectura interna, datos de entrenamiento, benchmarks ni longitud de contexto. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
+Su relevancia actual radica en la creciente demanda de agentes autonomos capaces de operar infraestructuras complejas: el modelo esta optimizado para razonamiento multi-paso, invocacion de herramientas y diagnostico de incidentes, lo que lo posiciona como una alternativa especializada frente a modelos generalistas en tareas de SRE. La disponibilidad de cuantizaciones GGUF desde Q2_K hasta Q8_0 facilita su despliegue en hardware diverso, desde estaciones de trabajo hasta servidores con GPU.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer, inferido por el formato de pesos; no confirmado en la información) |
-| Parámetros totales | 26.895.998.464 (≈26,9B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (no se especifica variante concreta en la informacion disponible) |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; además mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base w3joe/OmniSRE) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. El recuento de parámetros (26,9B) y el formato de pesos safetensors del modelo original apuntan a un transformer denso, pero no se confirma explícitamente ni se detalla el número de capas, dimensión oculta o mecanismo de atención. La presencia de ficheros `mmproj` (multi-modal projection) en la conversión GGUF indica que el modelo base incorpora algún componente multimodal, presumiblemente visión, aunque no se especifica su naturaleza.
+La informacion disponible no detalla la arquitectura interna mas alla de confirmar que se trata de un transformer con 26,9 mil millones de parametros. El modelo base w3joe/OmniSRE se entreno con tecnicas de aprendizaje por refuerzo con recompensas verificables (RLVR), incluyendo variantes como CISPO, DAPO y GTPO, segun los tags de la model card. Estas tecnicas estan orientadas a mejorar el razonamiento multi-paso y la capacidad de invocar herramientas de forma fiable, aspectos criticos en tareas de operaciones.
 
-En cuanto al entrenamiento, las etiquetas del repositorio (rlvr, cispo, dapo, gtpo, agent, tool-use) indican que el modelo fue entrenado con técnicas de aprendizaje por refuerzo con recompensas verificables (RLVR) y variantes de optimización de política como CISPO, DAPO y GTPO. Estas técnicas se asocian típicamente a la mejora de capacidades de razonamiento multi-paso y uso de herramientas en agentes. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO clásicas.
+El modelo esta especializado en dominios de SRE, AIOps, Kubernetes y DevOps, lo que sugiere un entrenamiento con datos especificos de estas areas (documentacion tecnica, logs, manifiestos de configuracion, trazas de incidentes). No se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset. La presencia de archivos mmproj (multi-modal projection) indica soporte para entrada multimodal, aunque no se detalla que modalidades concretas cubre.
 
 ## Capacidades
 
-- Generación de texto y razonamiento orientado a tareas de SRE, AIOps y DevOps.
-- Uso de herramientas (tool calling / function calling), según las etiquetas `tool-use` y `agent` del repositorio.
-- Razonamiento multi-paso y comportamiento agéntico, inferido de las etiquetas `agent` y de las técnicas RLVR/CISPO/DAPO/GTPO.
-- Capacidad multimodal (visión) potencial, dada la presencia de ficheros `mmproj` en la conversión GGUF; el alcance exacto no está documentado.
-- Soporte multilingüe limitado al inglés (`language: en`).
-- Especialización en dominio Kubernetes y operaciones de infraestructura, según las etiquetas `kubernetes`, `devops`, `sre` y `aiops`.
+- Generacion de texto y razonamiento especializado en dominios de SRE, AIOps y DevOps.
+- Uso de herramientas (tool calling / function calling), reforzado mediante entrenamiento con RLVR.
+- Razonamiento multi-paso y comportamiento de agente, orientado a la resolucion de incidentes y tareas operativas.
+- Soporte multimodal parcial: los archivos mmproj-f16 y mmproj-Q8_0 sugieren capacidad de procesar entradas adicionales al texto (no se detalla cuales).
+- Capacidades multilingues limitadas al ingles segun los metadatos del modelo.
+- Especializacion en Kubernetes: diagnostico de clusters, interpretacion de manifiestos y configuracion.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su integracion en infraestructuras de inferencia estandar.
 
 ## Casos de uso
 
-- Diagnóstico automatizado de incidencias en clústeres Kubernetes: el modelo puede actuar como agente que interpreta eventos, logs y estados de recursos para proponer causas raíz y acciones correctivas, aprovechando su afinado en dominio SRE y su capacidad de tool-use para consultar APIs del clúster.
-- Asistente de guardia (on-call) para SRE: integrado en un chatbot interno, puede responder consultas operativas en inglés sobre procedimientos, runbooks y troubleshooting, reduciendo el tiempo de resolución de incidentes.
-- Automatización de runbooks y remediación: el modelo puede encadenar pasos de razonamiento y llamadas a herramientas para ejecutar acciones de remediación (reinicio de pods, escalado, rollback) bajo supervisión humana, gracias a su entrenamiento con RLVR orientado a tareas verificables.
-- Análisis de post-mortems y correlación de logs: con capacidad de razonamiento multi-paso, puede resumir y correlacionar grandes volúmenes de logs y trazas para generar hipótesis de fallo, desplegado localmente con llama.cpp para mantener la confidencialidad de los datos operativos.
-- Generación de manifiestos y configuraciones de infraestructura: puede producir YAML de Kubernetes, Helm charts o políticas de despliegue a partir de descripciones en lenguaje natural, útil en pipelines de GitOps.
-- Despliegue en entornos air-gapped o de borde: al disponer de cuantizaciones GGUF desde Q2_K hasta f16, puede ejecutarse en infraestructura propia sin conectividad externa, requisito habitual en entornos de producción regulados.
-- Formación y simulación de incidentes: puede generar escenarios de fallo y preguntas de troubleshooting para entrenar a equipos de SRE, aprovechando su conocimiento del dominio.
+- Diagnostico automatizado de incidentes en Kubernetes: el modelo puede analizar logs, eventos y estados de pods para identificar causas raiz y proponer remediaciones, aprovechando su entrenamiento especifico en entornos cloud nativos.
+- Agente de operaciones con tool calling: integrado en un pipeline de AIOps, el modelo puede invocar APIs de monitorizacion (Prometheus, Grafana) y ejecutar acciones correctivas de forma autonoma gracias a su entrenamiento con RLVR para uso de herramientas.
+- Asistente de guardia (on-call): puede resumir alertas, correlacionar eventos de multiples fuentes y generar runbooks contextualizados para el ingeniero de guardia, reduciendo el tiempo medio de resolucion (MTTR).
+- Generacion y revision de manifiestos de infraestructura: el modelo puede producir y validar ficheros YAML de Kubernetes, Helm charts y configuraciones de Terraform, adecuado por su especializacion en DevOps.
+- Automatizacion de post-mortems: a partir de trazas y logs de un incidente, el modelo puede redactar analisis estructurados de causa raiz y acciones de mejora, aprovechando su capacidad de razonamiento multi-paso.
+- Chatbot de soporte tecnico para plataformas internas: desplegado como asistente conversacional para equipos de plataforma, respondiendo consultas sobre configuracion, mejores practicas y troubleshooting en ingles.
+- Analisis de cambios en CI/CD: revision automatizada de pull requests que afectan a infraestructura, detectando riesgos operativos antes del despliegue.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (26,9B parámetros): aproximadamente 54 GB en f16, ~28 GB en Q8_0, ~20-22 GB en Q6_K, ~18-19 GB en Q5_K_M, ~16-17 GB en Q4_K_M, ~11-12 GB en Q3_K_M y ~10 GB en Q2_K. Estas cifras son estimaciones basadas en el tamaño de los ficheros y el recuento de parámetros, no datos oficiales.
-- GPU recomendadas: para cuantizaciones altas (f16, Q8_0) se requieren GPU de 40-80 GB como A100 40/80 GB o H100; para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o A6000 (48 GB) pueden ser suficientes; las cuantizaciones Q2_K y Q3_K pueden caber en GPU consumer de 12-16 GB con offloading parcial.
-- Cabe en GPU consumer: sí, en cuantizaciones bajas (Q2_K, Q3_K_S/M) con 12-16 GB de VRAM, o en configuraciones con offloading de capas a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o text-generation-webui). No se confirma compatibilidad con vLLM o TGI para este formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia segun cuantizacion:
+  - Q2_K: ~11,2 GB
+  - Q3_K_S: ~12,2 GB
+  - Q4_K_S / Q4_K_M: ~15,7-16,8 GB (recomendadas por el autor)
+  - Q5_K_M: ~19,4 GB
+  - Q6_K: ~22,2 GB
+  - Q8_0: ~28,7 GB
+  - Complementos multimodales mmproj: 0,7-1,0 GB adicionales.
+- GPU recomendadas: para Q4_K_M en adelante, una RTX 4090 (24 GB) o A100 40 GB permite cargar el modelo completo en VRAM. Para Q8_0 se recomienda A100 80 GB o H100.
+- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas (RTX 4080, 4090, RTX 3090) usando cuantizaciones Q4 o inferiores; las cuantizaciones Q5-Q6 requieren 20-24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el modelo base (safetensors) puede servirse con vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos del dominio SRE con los que contrastar parámetros, contexto, rendimiento y licencia en la documentación proporcionada. La comparativa detallada no está disponible.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| OmniSRE (este) | ~26,9 B | no disponible | SRE, AIOps, Kubernetes | Apache 2.0 | GGUF, safetensors |
+| Modelos generalistas de ~27B (p. ej. familia Qwen o Gemma) | ~27 B | variable | Proposito general | variable | multiples |
+| Modelos especializados en codigo de ~30B | ~30 B | variable | Codigo y DevOps | variable | multiples |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales; los modelos alternativos concretos no se especifican porque no se han proporcionado datos verificables.
 
 ## Limitaciones y advertencias
 
-- La información pública es muy escasa: no hay documentación sobre arquitectura interna, datos de entrenamiento, longitud de contexto ni benchmarks, lo que dificulta evaluar su calidad real.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente crítico en un dominio operativo donde una acción incorrecta puede afectar a producción; se recomienda supervisión humana en cualquier remediación automatizada.
-- Soporte exclusivo del inglés: no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Longitud de contexto desconocida: puede limitar el análisis de logs o trazas extensas.
-- El modelo base no está documentado en detalle; la versión GGUF es una conversión de terceros (mradermacher) y su fidelidad respecto al original no está verificada de forma independiente.
-- Aunque la licencia Apache 2.0 permite uso comercial, conviene revisar la licencia y condiciones del modelo base w3joe/OmniSRE, así como las de los datos de entrenamiento, antes de un despliegue en producción.
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción muy baja y ausencia de validación comunitaria.
+- Idioma: el modelo solo declara soporte para ingles, lo que limita su uso en entornos hispanohablantes sin traduccion previa.
+- Riesgo de alucinacion: como todo LLM, puede generar comandos o configuraciones plausibles pero incorrectas; en un contexto operativo esto es especialmente peligroso y requiere validacion humana antes de ejecutar acciones.
+- Contexto: no se ha publicado la longitud de contexto, lo que impide evaluar su idoneidad para analisis de logs extensos o conversaciones multi-turno largas.
+- Sesgos: no se documentan sesgos especificos, pero al estar entrenado predominantemente con datos en ingles y de dominios tecnicos, puede tener un rendimiento inferior en otros idiomas o contextos no tecnicos.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el autor original del modelo base no documenta garantias de calidad para produccion.
+- Despliegue: la version GGUF es una cuantizacion estatica; para maxima fidelidad se recomienda el modelo base en safetensors. Las cuantizaciones Q2 y Q3 pueden degradar notablemente la calidad en tareas de razonamiento complejo.
+- Fecha de publicacion: el modelo aparece con fecha de creacion de noviembre de 2026 en los metadatos, lo que debe verificarse en la fuente original.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/OmniSRE-GGUF
 - Modelo base: https://huggingface.co/w3joe/OmniSRE
-- Página de descargas del cuantizador: https://hf.tst.eu/model#OmniSRE-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/OmniSRE-i1-GGUF
+- Pagina de resumen del autor: https://hf.tst.eu/model#OmniSRE-GGUF
+- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

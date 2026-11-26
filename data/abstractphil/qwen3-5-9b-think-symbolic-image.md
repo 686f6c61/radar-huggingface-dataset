@@ -2,102 +2,100 @@
 
 ## Resumen
 
-Lucia v1 es un adaptador LoRA sobre el modelo multimodal Qwen/Qwen3.5-9B, desarrollado por AbstractPhil, que transforma la salida del modelo base en una secuencia estructurada de razonamiento visual simbólico. En lugar de generar una simple descripcion de imagen, el adaptador produce una cadena de pensamientos en lenguaje natural organizada por pasos nombrados (see, name, place, count, relate, form, light, colour, mood, mean, intend, story, compare, change, check, say), seguida de formulaciones concretas (caption, prompt, tags, critica) y de preguntas que un observador cuidadoso aun se plantearia, cada una etiquetada como `[record]`, `[chain]` o `[unknown]`.
+Lucia v1.2 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-9B, desarrollado por AbstractPhil, que convierte un modelo de lenguaje multimodal de 9.000 millones de parametros en un sistema especializado en lectura y descripcion razonada de imagenes. El adaptador no reemplaza el modelo base: lo modula para que, ante una imagen, produzca una cadena de pensamiento en lenguaje llano con pasos nombrados (`see`, `relate`, `mood`, `caption`, `prompt`, `tags`, etc.) seguida de preguntas y respuestas verificables. Es la version mas grande de la familia Lucia y hereda la receta y los datos de Lucia 4B v1.2, aplicados ahora a la escala de 9B.
 
-El modelo resuelve el problema de la captioning generica: en lugar de una unica frase plana, entrega una traza interpretable y verificable del proceso de observacion, lo que facilita la auditoria, el filtrado por confianza y la reutilizacion de los distintos campos generados en pipelines de datos. La version Lucia v1 anade 17.385 filas de entrenamiento especificas de imagenes de museo con medio catalogado, de modo que el modelo distingue correctamente entre pintura, grabado, dibujo, fotografia y objeto.
+El problema que resuelve es la generacion de descripciones visuales estructuradas y auditables, en lugar de captioning libre. El modelo separa lo que observa, lo que relaciona, lo que interpreta y lo que desconoce, lo que facilita su uso en pipelines donde la trazabilidad del razonamiento visual importa. Se entreno sobre 91.138 filas (frente a las 9.261 de la version 1.1), provenientes de fotografias DOCCI y COCO 2017, obras de la National Gallery of Art y especificaciones dibujadas, con anotaciones generadas por modelos de OpenAI, Google y DeepSeek y admitidas por revision ciega.
 
-Es relevante ahora porque combina tres tendencias actuales: adaptadores PEFT de bajo coste sobre modelos base potentes, razonamiento explicito tipo chain-of-thought aplicado a vision, y generacion de metadatos estructurados para catalogacion cultural. El repositorio ocupa 0,7 GB y se distribuye bajo licencia Apache 2.0.
+Es relevante ahora porque demuestra una via practica para especializar un VLM de 9B mediante PEFT manteniendo el comportamiento general del modelo base: un segundo objetivo de entrenamiento ancla las elecciones de siguiente token a las del Qwen3.5-9B original en peticiones ordinarias, de modo que el adaptador cambia poco fuera de las tareas de lectura visual. La licencia es Apache 2.0 y el repositorio ocupa 1,3 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Qwen3.5-9B) con adaptador LoRA (PEFT); incluye atencion lineal con kernels flash-linear-attention, causal-conv1d y triton |
-| Parametros totales | 9B en el modelo base; el adaptador LoRA se distribuye como pesos PEFT separados (tamano de repo 0,7 GB) |
+| Arquitectura | LoRA (PEFT) sobre transformer multimodal Qwen3.5-9B |
+| Parametros totales | 9B (modelo base); el adaptador LoRA anade un subconjunto no especificado |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los pesos se publican en safetensors; el adaptador puede combinarse con el base cuantizado, pero no se documentan recetas) |
+| Longitud de contexto | no disponible (heredada del base Qwen3.5-9B) |
+| Tipos de cuantizacion | no disponible (el autor indica bfloat16 para inferencia) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (PEFT/LoRA); el procesador se incluye en el repositorio |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen3.5-9B, un transformer multimodal que acepta imagen y texto y que en este caso se carga mediante `AutoModelForMultimodalLM`. El adaptador LoRA se carga con `PeftModel` y puede fusionarse con `merge_and_unload()` para obtener un modelo plano. La inferencia recomendada usa `transformers` 5 y `peft` 0.18 o superior, con decodificacion greedy, thinking desactivado y sin system prompt (el autor indica que un turno de sistema no visto en entrenamiento provoca sobreescritura del formato aprendido).
+El adaptador se aplica sobre Qwen3.5-9B, un transformer multimodal con capacidad de procesamiento de imagen y texto. Lucia v1.2 no modifica la arquitectura del base: es un LoRA entrenado con la libreria PEFT que ajusta los pesos para producir el formato de lectura visual aprendido. El entrenamiento uso 91.138 filas en una sola pasada (10.137 pasos), frente a las dos pasadas de la version 1.1. Los datos combinan lecturas de fotografias DOCCI y COCO 2017, imagenes de la National Gallery of Art y especificaciones dibujadas; 30.250 filas corresponden a "long looks" (6 a 10 pasos de cadena). Se excluyeron 3.718 filas de COCO 2017 bajo otras licencias, 609 filas de imagenes reservadas para evaluacion y 16 filas sin almacen disponible.
 
-El entrenamiento se realizo sobre dos datasets del propio autor: `AbstractPhil/thought-symbolic-image-captions` y `AbstractPhil/qwen-symbolic-thinking-image-training`. La version Lucia v1 incorpora 17.385 filas adicionales de imagenes de museo con medio catalogado, lo que permite al modelo nombrar correctamente el soporte (pintura, grabado, dibujo, fotografia, objeto). No se documentan en la informacion disponible el numero total de tokens de entrenamiento, la composicion completa del dataset ni si hubo RLHF o DPO. La innovacion tecnica principal es el formato de salida: una cadena de pasos nombrados con preguntas etiquetadas por procedencia de la respuesta, lo que convierte la generacion en una traza auditable.
+La innovacion tecnica principal es un segundo objetivo de entrenamiento que mantiene las elecciones de siguiente token cerca de las del Qwen3.5-9B original en peticiones ordinarias que el base respondio por si mismo. Esto preserva el comportamiento general del modelo: en peticiones ordinarias retenidas, el adaptador responde de forma cercana al base y no adopta el formato de lectura (la version 1, sin este objetivo, respondia 157 de 328 en formato de lectura). Ademas, el modelo se entreno con thinking desactivado, decodificacion greedy y sin system prompt, condiciones que el autor indica como necesarias para un funcionamiento correcto. El adaptador requiere transformers 5 y peft 0.18 o superior.
 
 ## Capacidades
 
-- Generacion de cadenas de razonamiento visual estructuradas por pasos nombrados (see, name, place, count, relate, form, light, colour, mood, mean, intend, story, compare, change, check, say).
-- Produccion de multiples formulaciones a partir de una imagen: caption, prompt, tags y critica por profundidad.
-- Generacion de preguntas de seguimiento con respuesta y justificacion, etiquetadas como `[record]`, `[chain]` o `[unknown]`.
-- Clasificacion del medio de la imagen: pintura, grabado, dibujo, fotografia y objeto.
-- Adaptacion de la profundidad del razonamiento: vista rapida (1-2 pensamientos), vista cercana (3-5), vista larga (6-10).
-- Generacion de filas completas a partir de una especificacion textual, no solo de una imagen.
-- Procesamiento por lotes con `padding_side = "left"`.
-- Capacidades multilingues limitadas al ingles.
-- No se documenta soporte de tool calling, function calling ni comportamiento agentico multi-paso.
+- Lectura visual estructurada: genera cadenas de pensamiento con pasos nombrados (`see`, `name`, `place`, `count`, `relate`, `form`, `light`, `colour`, `mood`, `mean`, `intend`, `story`, `compare`, `change`, `check`, `say`).
+- Generacion de caption, prompt, tags y critica por profundidad a partir de una imagen.
+- Formulacion de preguntas y respuestas sobre la imagen, etiquetadas como `[record]` (hecho de la imagen), `[chain]` (deducido por la cadena) o `[unknown]` (no determinable).
+- Tres profundidades de analisis: quick look (1-2 pensamientos), closer look (3-5) y long look (6-10).
+- Descripcion de fotografias, obras de arte y especificaciones dibujadas.
+- Capacidad de reconocer y reportar texto visible en la imagen cuando se le pregunta directamente (con rendimiento comparable al base en esa tarea especifica).
+- Conversacion multi-turno en ingles.
+- No se documenta soporte explicito de tool calling, function calling ni agentes multi-paso.
+- No se documenta soporte de audio ni vision mas alla del captioning descrito.
 
 ## Casos de uso
 
-- Catalogacion de colecciones museisticas: el modelo genera filas estructuradas con medio, tema, composicion y preguntas abiertas a partir de fotografias de obras, lo que permite pre-rellenar fichas de catalogo y marcar explicitamente los campos desconocidos con `[unknown]`.
-- Enriquecimiento de metadatos para bancos de imagenes: la salida incluye caption, prompt y tags en una sola pasada, reutilizables directamente como metadatos de busqueda y como prompts para generacion de imagenes.
-- Generacion de datos sinteticos de razonamiento visual: las trazas de pasos nombrados sirven como datos de entrenamiento para otros modelos de vision-lenguaje que necesiten aprender a razonar de forma explicita y verificable.
-- Auditoria de descripciones automaticas: al separar hechos del cuadro (`[record]`), inferencias (`[chain]`) y desconocidos (`[unknown]`), el modelo permite filtrar y revisar solo las afirmaciones no respaldadas por la imagen.
-- Investigacion en interpretabilidad: la cadena de pensamientos nombrados facilita analizar en que punto el modelo comete errores de percepcion o de inferencia, algo imposible con una caption plana.
-- Descripcion accesible de imagenes: la salida por capas (composicion, color, estado de animo) puede adaptarse a lectores de pantalla o a fichas de accesibilidad con distintos niveles de detalle segun la profundidad solicitada.
-- Analisis de documentos graficos y material de archivo: la distincion fina entre dibujo, grabado y pintura es util en archivos y bibliotecas que necesitan clasificar material visual heterogeneo.
+- Catalogacion y documentacion de archivos fotograficos: el modelo genera caption, tags y prompt de forma consistente para cada imagen, con una estructura fija que facilita la indexacion y busqueda en bases de datos de imagenes.
+- Generacion de prompts para modelos de difusion: la linea `prompt` produce descripciones compactas y reutilizables como entrada de generadores texto-a-imagen, con atributos separados por comas (objeto, color, relacion espacial).
+- Analisis de obras de arte en entornos museisticos o editoriales: el modelo fue entrenado con imagenes de la National Gallery of Art y produce lecturas que separan observacion, relacion, tono y significado, utiles para fichas divulgativas.
+- Auditoria de accesibilidad: la cadena de pensamiento explicita que el modelo ve, que relaciona y que desconoce, lo que permite revisar la calidad de una descripcion y detectar omisiones antes de publicarla como texto alternativo.
+- Investigacion en evaluacion de VLM: el formato etiquetado (`[record]`, `[chain]`, `[unknown]`) permite medir por separado la precision factica, la inferencia y la calibracion de la incertidumbre en modelos de captioning.
+- Analisis de especificaciones tecnicas dibujadas: el modelo se entreno tambien con especificaciones dibujadas, por lo que puede describir diagramas y planos con el mismo formato estructurado.
+- Moderacion y revision de contenido visual en pipelines: la salida estructurada y determinista (greedy) facilita el parseo automatico y la integracion en flujos de revision por lotes.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados por el autor comparan Lucia v1 con la version original (legacy) sobre conjuntos no vistos durante el entrenamiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor reporta metricas internas de evaluacion cualitativa:
 
-| Metrica | Lucia v1 | Original (legacy) |
+| Metrica reportada | Lucia v1.2 9B | Base Qwen3.5-9B |
 |---|---|---|
-| Forma de fila, imagenes / especificaciones | 1,00 / 1,00 | 1,00 / 1,00 |
-| Said / backed, filas completas | 0,19 / 0,30 | 0,21 / 0,31 |
-| Definiciones, imagenes / especificaciones | 0,02 / 0,08 | 0,02 / 0,10 |
-| 500 imagenes no vistas, medio nombrado correctamente de 100: pintura / grabado / dibujo / fotografia / objeto | 83 / 76 / 86 / 80 / 90 | 80 / 4 / 20 / 76 / 67 |
-| 200 imagenes de museo: pintura / grabado / dibujo / fotografia / objeto | 13 de 27 / 38 de 39 / 12 de 13 / 11 de 13 / 66 de 66 | 11 de 27 / 7 de 38 / 1 de 13 / 12 de 13 / 58 de 63 |
-
-El autor matiza que la fila de pintura de museo subestima el rendimiento: de las 14 pinturas de catalogo no nombradas como tales, 7 son acuarelas o gouaches sobre papel que el modelo etiqueta como dibujos (coincidiendo con el catalogo de la National Gallery), 2 son pinturas sobre seda etiquetadas como fotografias y 5 son objetos o grabados mal etiquetados por el criterio de comparacion. Todo oleo sobre lienzo o tabla se nombra como pintura. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Peticiones ordinarias retenidas respondidas en formato de lectura | 0 de 328 | no aplica |
+| Nombra una palabra visible en closer look (245 imagenes sin datos personales) | 50 | 226 |
+| Nombra una palabra visible en long look (mismas 245) | 97 | no disponible |
+| Nombra el texto al preguntar directamente (245 imagenes) | 0,91 | 0,91 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo base de 9B en bfloat16 se requieren aproximadamente 18-20 GB solo para pesos, mas el coste de activaciones y del procesador de vision.
-- GPU recomendadas: A100, H100 o GPUs con 24 GB o mas para bfloat16 sin cuantizar; el adaptador LoRA anade una huella minima (0,7 GB en disco).
-- Cabe en GPU de consumo: previsiblemente en RTX 3090, RTX 4090 y RTX 5090 con 24 GB o mas en bfloat16, o en GPUs de 16 GB con cuantizacion del modelo base (no se documenta receta oficial).
-- Opciones de despliegue: `transformers` 5 + `peft` 0.18 o superior segun el ejemplo oficial; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Aceleracion: los kernels flash-linear-attention, causal-conv1d y triton hacen el 9B "varias veces mas rapido"; sin ellos, transformers usa la implementacion de referencia.
-- Latencia y throughput: no disponibles; el ejemplo oficial fija `max_new_tokens=400` con decodificacion greedy.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 18-20 GB para el modelo base de 9B, mas overhead del adaptador y del procesador de vision.
+- GPU recomendadas: A100 40GB, H100, L40S, RTX A6000. Para consumer, RTX 4090 (24 GB) es suficiente en bfloat16.
+- Cabe en GPU consumer de gama alta: RTX 4090, RTX 3090 (24 GB). En GPUs de 16 GB requeriria cuantizacion, no documentada por el autor.
+- Opciones de despliegue: el autor documenta carga via `transformers` 5 + `peft` 0.18 con `AutoModelForMultimodalLM` y `PeftModel`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El autor especifica decodificacion greedy y thinking desactivado, lo que reduce la longitud de salida respecto a un modo de razonamiento extendido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Lucia v1 (este modelo) | 9B (base) + LoRA | no disponible | Razonamiento visual simbolico estructurado | apache-2.0 | Hugging Face, 39 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Vision-lenguaje general | no disponible en la informacion | Hugging Face |
-| Modelos de captioning generico de escala similar | no disponible | no disponible | Caption plano sin traza de razonamiento | variable | no disponible |
-
-La comparacion cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada; el unico contraste publicado es contra la version original del propio adaptador.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Lucia v1.2 9B (este) | 9B (LoRA) | no disponible | apache-2.0 | Lectura visual estructurada con cadena de pasos |
+| Qwen3.5-9B (base) | 9B | no disponible | no disponible | VLM generalista multimodal |
+| Lucia 4B v1.2 | 4B (LoRA) | no disponible | no disponible | Misma receta y datos a escala 4B |
+| Lucia 9B v1.1 | 9B (LoRA) | no disponible | no disponible | Version anterior, 9.261 filas, dos pasadas |
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se ha validado su comportamiento en castellano ni en otros idiomas.
-- El formato de salida es rigido: requiere el prompt exacto del autor, sin system prompt y con thinking desactivado; desviarse del formato provoca sobreescritura o salidas mal formadas.
-- Las metricas "said / backed" (0,19 / 0,30) y "definitions" (0,02 / 0,08) son bajas, lo que indica que muchas afirmaciones no quedan respaldadas por la imagen o por definiciones explicitas; riesgo de alucinacion en los campos de interpretacion (mood, mean, intend, story).
-- La clasificacion de medio mejora mucho respecto a la version original, pero sigue confundiendo categorias en casos limite (acuarelas, pinturas sobre seda, objetos mal etiquetados en el conjunto de evaluacion).
-- Depende de kernels opcionales para rendimiento; sin ellos la inferencia es notablemente mas lenta.
-- Es un adaptador, no un modelo autonomo: requiere descargar y ejecutar el modelo base Qwen/Qwen3.5-9B, con los requisitos de hardware y las condiciones de licencia de este.
-- No se documentan sesgos especificos, pero al entrenarse sobre catalogos de museos occidentales (National Gallery of Art, AIC, NGA, Cleveland, Met) puede heredar sesgos de representacion de esas colecciones.
-- No se documenta soporte de tool calling, agentes ni multi-step reasoning mas alla de la cadena de pensamiento textual.
-- Uso comercial permitido por Apache 2.0, sujeto a las condiciones del modelo base.
+- Solo soporta ingles; no se documenta entrenamiento ni evaluacion en otros idiomas.
+- El autor advierte que un system prompt no visto en entrenamiento provoca sobreescritura del formato: debe ejecutarse sin system prompt.
+- El thinking debe desactivarse manualmente (el 9B piensa por defecto) y la decodificacion debe ser greedy para reproducir el comportamiento entrenado.
+- El modelo omite sistematicamente el lettering de las imagenes en la lectura por defecto: nombra palabras visibles en 50 de 245 casos frente a 226 del base. Solo recupera ese rendimiento cuando se le pregunta directamente por el texto.
+- Riesgo de alucinacion en los pasos de interpretacion (`mood`, `mean`, `intend`, `story`), que son inferencias y no hechos de la imagen; el propio formato los distingue de los `[record]`.
+- Sesgos no documentados: no se han publicado evaluaciones de sesgo demografico, cultural o de genero.
+- La licencia Apache 2.0 del adaptador no cubre necesariamente los derechos de las imagenes de entrenamiento; el autor excluyo filas de COCO 2017 bajo otras licencias y mantiene una version no comercial separada para las filas con imagenes CC BY-NC-SA 4.0.
+- Requiere versiones concretas de librerias (transformers 5, peft 0.18+), lo que puede limitar la compatibilidad con stacks existentes.
+- El repositorio tiene 241 descargas y 0 likes: validacion externa practicamente inexistente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen3.5-9b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Version 4B: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image
+- Version no comercial: https://huggingface.co/AbstractPhil/qwen3.5-9b-think-symbolic-image-nc
+- Dataset de recaptioned: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-recaptioned
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
-- Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/qwen-symbolic-thinking-image-training
-- Repositorio del paquete de prompts y parseo: https://github.com/AbstractEyes/qwen-symbolic-thinking
+- Release 5 del dataset: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-recaptioned/tree/cac40b93d7b063aafd0cb70d3c1b1a7a100562ef
+- Imagen de ejemplo COCO 2017 (376084): https://cocodataset.org/#explore?id=376084

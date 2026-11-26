@@ -1,80 +1,95 @@
 # NikitaLazarev/Qwen3.5-0.8B-Python-SoftMoE
 
 ## Resumen
-Qwen3.5-0.8B-Python-SoftMoE es un derivado de Qwen/Qwen3.5-0.8B publicado por NikitaLazarev que se presenta como un "experto Soft MoE" de dominio especializado en lenguaje Python y PEPs. A diferencia de un fine-tuning convencional, el autor afirma que no se ha realizado entrenamiento alguno: el modelo se obtiene mediante "weight-space steering", una técnica de edición de pesos sin gradientes inspirada en Weight-Space Programming (Takeyama et al., MIT CSAIL, 2026) y en la herramienta Ivanna Lab.
 
-El procedimiento descrito consiste en extraer una dirección de dominio (un vector d̂) mediante un escaneo de activaciones que compara los estados ocultos medios de prompts del dominio Python frente a prompts de contraste. Esa dirección se incrusta en las matrices de salida (`down_proj`, `o_proj`, `out_proj`) de un conjunto seleccionado de capas (15, 16, 17, 18, 20, 21, 22 y 23) mediante un parche de rango uno con modo `steer` y α = 0.2. El resultado es un modelo denso de 873 millones de parámetros que conserva la arquitectura y el tokenizador del base, pero con un sesgo inducido hacia el dominio Python.
+Qwen3.5-0.8B-Python-SoftMoE es un "experto de dominio" derivado del modelo denso Qwen/Qwen3.5-0.8B mediante una tecnica de manipulacion de pesos en espacio de pesos (weight-space steering), sin ningun tipo de entrenamiento ni ajuste fino por gradientes. Lo desarrolla NikitaLazarev dentro del laboratorio autoalojado Ivanna Lab, y su objetivo es especializar al modelo base en el dominio "lenguaje Python y PEPs" inyectando una direccion de dominio directamente en las matrices de salida de un subconjunto de capas.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una técnica de especialización sin entrenamiento que puede resultar atractiva para entornos con recursos limitados o para prototipado rápido de expertos de dominio. Por otro, conviene subrayar que el modelo es un piloto end-to-end con cero descargas y cero likes en el momento de la consulta, sin licencia declarada ni idiomas especificados, y con un único indicador de calidad reportado por el autor (AUC del gate de escaneo = 1.0), que no equivale a una evaluación de capacidades en benchmarks estándar.
+El modelo mantiene la arquitectura y el tamano del modelo base (873.438.784 parametros, formato safetensors, libreria transformers) y se publica con el pipeline image-text-to-text, heredando las capacidades multimodales del Qwen3.5 subyacente. La innovacion no esta en el entrenamiento sino en el metodo: se calcula un vector de direccion de dominio mediante un escaneo de activaciones y se aplica un parche de rango uno (steer patch) sobre las proyecciones de salida de las capas 15, 16, 17, 18, 20, 21, 22 y 23, con un factor alpha de 0.2.
+
+Su relevancia actual es metodologica: demuestra que se puede construir un "soft MoE" de expertos de dominio a partir de un unico modelo denso, sin reentrenar, y con un router en espacio de embeddings que decide cuando usar la variante especializada. Es un experimento piloto (e2e pilot) con evaluacion publicada en el benchmark code2text_python (CodeXGLUE) y con una version v2 sucesora.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3.5-0.8B) con parche de steering de rango uno en capas seleccionadas; pipeline image-text-to-text |
+| Arquitectura | Transformer denso heredado de Qwen3.5-0.8B, con parche de steering de rango uno en capas seleccionadas (soft MoE por weight steering) |
 | Parametros totales | 873.438.784 |
-| Parametros activos | No aplica (modelo denso, no MoE real; "Soft MoE" es una denominación del autor para el experto derivado) |
+| Parametros activos | No aplica (modelo denso; el "soft MoE" es un router externo entre variantes, no un MoE interno) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repo en safetensors sin variantes GGUF publicadas) |
-| Idiomas soportados | no disponible (el dominio declarado es Python y PEPs en inglés) |
+| Tipos de cuantizacion | Q8_0 disponible en repositorio GGUF hermano; otros tipos no disponibles |
+| Idiomas soportados | no disponible (el dominio del experto es Python y PEPs en ingles) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors (transformers); GGUF Q8_0 en repositorio separado |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer denso de aproximadamente 873 millones de parámetros. Sobre esa base no se aplica ningún proceso de entrenamiento supervisado, RLHF ni DPO: el autor describe explícitamente el método como "no-training". La intervención consiste en un escaneo de activaciones que calcula la diferencia entre los estados ocultos medios generados por prompts del dominio Python/PEPs y los generados por prompts de contraste, obteniendo así una dirección de dominio d̂. Esa dirección se inyecta como un parche de rango uno en las matrices de proyección de salida (`down_proj`, `o_proj`, `out_proj`) de las capas 15, 16, 17, 18, 20, 21, 22 y 23, con modo `steer` y coeficiente α = 0.2.
 
-La innovación declarada es la modificación de pesos en espacio de pesos en lugar de mediante hooks de inferencia, lo que permite que el sesgo de dominio persista en despliegues donde no se pueden instalar hooks personalizados. El autor menciona además un "router" en espacio de embeddings con margen coseno que seleccionaría esta variante frente al modelo base para consultas del dominio, si bien no se detalla en la información disponible cómo se implementa ni si se distribuye junto con los pesos. El único dato de validación reportado es el AUC del gate de escaneo (1.0, marcado como PASS), que mide la separabilidad de la dirección de dominio, no la calidad generativa del modelo resultante.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer denso de aproximadamente 873 millones de parametros con capacidades multimodales (pipeline image-text-to-text). Sobre esa base no se realiza ningun entrenamiento: el autor extrae una direccion de dominio d̂ mediante un escaneo de activaciones que calcula la diferencia de medias de hidden states entre prompts del dominio (Python y PEPs) y prompts de contraste. Esa direccion se "hornea" en los pesos aplicando un parche de steering de rango uno sobre las matrices de salida (down_proj, o_proj, out_proj) de las capas 15, 16, 17, 18, 20, 21, 22 y 23, con modo `steer` y alpha = 0.2.
+
+El metodo se inspira en Weight-Space Programming (Takeyama et al., MIT CSAIL, 2026), que propone ediciones de pesos sin gradientes, y lo extiende invirtiendo la operacion: en lugar de abliterar o suprimir un comportamiento, se amplifica una direccion de dominio. El autor reporta un AUC del gate de escaneo de 1.0 (PASS), lo que indica separacion perfecta entre prompts de dominio y de contraste en la muestra evaluada. El enrutamiento hacia esta variante se hace con un router en espacio de embeddings basado en margen de coseno, que selecciona este experto en lugar del modelo base para consultas del tema. Al estar el efecto integrado en los pesos, funciona en entornos donde no se pueden instalar hooks de inferencia.
 
 ## Capacidades
-- Generación de texto conversacional heredada del modelo base Qwen3.5-0.8B.
-- Procesamiento image-text-to-text según el pipeline declarado en Hugging Face, aunque no se detallan las capacidades de visión efectivas tras el parche.
-- Sesgo inducido hacia el dominio de lenguaje Python y PEPs (convenciones de codificación, referencias normativas) mediante steering de pesos.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el dominio declarado está en inglés.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+
+- Generacion de texto conversacional, heredada del modelo base Qwen3.5-0.8B.
+- Procesamiento image-text-to-text (multimodal) segun el pipeline declarado, heredado del modelo base.
+- Especializacion en lenguaje Python, PEPs y convenciones de codigo en ingles, reforzada mediante steering de pesos.
+- Enrutamiento por dominio: un router de embeddings con margen de coseno decide cuando activar esta variante frente al modelo base.
+- Capacidad de operar sin hooks de inferencia, al estar el sesgo de dominio integrado en los pesos.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
-- Asistente de estilo y convenciones Python: el parche de dominio puede orientar las respuestas hacia PEP 8, PEP 257 y otras convenciones, útil como corrector de estilo en revisiones de código internas, aunque requiere validación humana por la ausencia de benchmarks.
-- Explicación de PEPs en documentación técnica: el modelo puede emplearse para redactar resúmenes o aclaraciones de propuestas de mejora siempre que se verifiquen las referencias, dado el riesgo de alucinación normativa.
-- Prototipado rápido de expertos de dominio: sirve como caso de estudio reproducible del método de weight-space steering para equipos que quieran evaluar la técnica antes de invertir en fine-tuning.
-- Generación de snippets y ejemplos didácticos: adecuado para entornos de formación donde el coste de inferencia es crítico, al ser un modelo de menos de mil millones de parámetros que cabe en GPU de consumo.
-- Filtrado o clasificación de consultas relacionadas con Python: el router descrito por el autor podría reutilizarse para enrutar peticiones hacia este experto en lugar del base en un sistema multi-modelo.
-- Investigación sobre edición de pesos: útil como referencia para experimentos de ablación y steering en modelos pequeños, comparando el efecto del parche frente al modelo original.
+
+- Asistencia a desarrolladores sobre PEPs y convenciones: el experto refuerza respuestas alineadas con el estilo Pythonico y las PEPs, util para un chatbot interno de consulta de guias de estilo y propuestas de mejora.
+- Generacion de documentacion a partir de codigo Python: el benchmark code2text_python (CodeXGLUE) evalua exactamente esta tarea, por lo que el modelo es adecuado para pipelines de docstrings y comentarios tecnicos.
+- Enrutamiento por dominio en una plataforma multi-experto: el router de embeddings permite despachar consultas de Python a esta variante y el resto al modelo base, sin coste de entrenamiento adicional.
+- Despliegue en entornos restringidos sin hooks: al estar el sesgo integrado en los pesos, encaja en servidores donde no se pueden instalar callbacks de inferencia personalizados.
+- Prototipado de investigacion sobre weight steering: sirve como caso reproducible para estudiar edicion de pesos sin gradientes y evaluar el efecto de alpha y de la seleccion de capas.
+- Inferencia ligera en hardware modesto: con 873 millones de parametros y una version GGUF Q8_0, es viable en equipos consumer para tareas de asistencia de codigo en local.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. El único dato reportado por el autor es el AUC del gate de escaneo (1.0), que no constituye una evaluación de rendimiento en tareas como MMLU, HumanEval o GSM8K.
+
+| Benchmark | Metrica | Resultado | Muestras |
+|---|---|---|---|
+| code2text_python (CodeXGLUE) | BLEU-4 suavizado | 1.0289 | 150 |
+| code2text_python (CodeXGLUE), v2 (alpha=0.1, position=last, RAG-sampled) | BLEU-4 suavizado | 1.0534 | 150 |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparativas numericas con modelos similares en la informacion disponible. El valor de BLEU-4 suavizado superior a 1.0 debe interpretarse con cautela, ya que no es un rango habitual para BLEU estandar y probablemente refleja una variante de calculo propia del modulo de benchmarks de Ivanna Lab.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1,8 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, entre 2 y 4 GB según longitud de contexto.
-- VRAM estimada en cuantización de 8 bits: alrededor de 1 GB para pesos; en 4 bits, en torno a 0,5 GB, aunque no se publican variantes GGUF oficiales.
-- GPU recomendadas: cualquier GPU de consumo moderna con al menos 4-6 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) para fp16; A100 o H100 no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, previsiblemente en la mayoría de tarjetas con 6 GB o más en precisión completa.
-- Opciones de despliegue: transformers (soporte declarado), y previsiblemente vLLM o TGI si la arquitectura Qwen3.5 está soportada; llama.cpp u Ollama requerirían conversión a GGUF no publicada.
-- Latencia y throughput estimados: no disponibles.
+
+- VRAM estimada: en FP16, aproximadamente 1,7 GB solo para pesos (873 M de parametros); con overhead de activaciones y cache KV, el consumo real es mayor y depende de la longitud de contexto (no disponible).
+- Cuantizacion Q8_0: reduce el peso de los pesos a menos de 1 GB, permitiendo inferencia en GPUs con 4-8 GB de VRAM.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente por tamano; para produccion con concurrencia, A100 o H100 aportan margen pero estan sobredimensionadas para este modelo.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas en Q8_0, y en 8 GB o mas en FP16.
+- Opciones de despliegue: transformers (libreria declarada), llama.cpp u Ollama mediante la version GGUF Q8_0, y servidores compatibles con endpoints segun el tag endpoints_compatible. vLLM y TGI no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Python-SoftMoE | 873 M | no disponible | Steering de pesos sin entrenamiento | no disponible | Hugging Face (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | ~873 M | no disponible | Modelo denso generalista | no disponible en la información | Hugging Face |
-| Fine-tuning LoRA de Python sobre modelos ~1B | variable | depende del base | Entrenamiento supervisado | depende del base | habitual en el ecosistema |
-| Modelos de código pequeños tipo Qwen2.5-Coder-1.5B | ~1,5 B | 32 K (referencia pública) | Preentrenamiento en código | Apache 2.0 (referencia pública) | Hugging Face |
+| Qwen3.5-0.8B-Python-SoftMoE | 873 M | no disponible | Python y PEPs (steering) | no disponible | safetensors, GGUF Q8_0 |
+| Qwen/Qwen3.5-0.8B (base) | 873 M | no disponible | Generalista, multimodal | no disponible | safetensors |
+| Qwen3.5-0.8B-Python-SoftMoE-v2 | no disponible | no disponible | Python y PEPs (steering v2) | no disponible | safetensors |
 
-La comparación cuantitativa con alternativas no está disponible porque el autor no publica evaluaciones comparativas. Frente a un fine-tuning LoRA, la propuesta de este modelo elimina el coste de entrenamiento, pero también carece de métricas que permitan estimar su ganancia real en tareas Python.
+La comparativa con alternativas de la misma categoria (expertos de dominio derivados por edicion de pesos) no esta disponible en la informacion proporcionada. El sucesor directo es la version v2 del mismo autor, con BLEU-4 suavizado de 1.0534 frente a 1.0289 de esta version.
 
 ## Limitaciones y advertencias
-- Ausencia total de benchmarks: no hay evidencia publicada de mejora en tareas Python frente al modelo base.
-- El AUC de 1.0 del gate de escaneo mide separabilidad de la dirección de dominio, no calidad generativa; puede reflejar sobreajuste del escaneo a los prompts utilizados.
-- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar con el autor o verificar la licencia del modelo base Qwen3.5-0.8B.
-- Idiomas no especificados y dominio declarado en inglés, lo que limita su uso en castellano sin evaluación previa.
-- Riesgo de alucinación en referencias a PEPs y normativa Python, especialmente al no haber sido entrenado con datos supervisados del dominio.
-- El parche de steering modifica pesos de forma permanente; no es trivial revertirlo ni combinarlo con otras adaptaciones.
-- Modelo piloto con cero descargas y sin validación de la comunidad; no recomendado para producción sin una evaluación propia exhaustiva.
-- El "router" mencionado no se documenta en detalle ni se confirma su distribución junto con los pesos.
+
+- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar con el autor o consultar la licencia del modelo base antes de produccion.
+- Idiomas no declarados: el dominio del experto esta definido en ingles (Python y PEPs en EN), por lo que el comportamiento en castellano u otros idiomas no esta evaluado.
+- Longitud de contexto no disponible: no se puede planificar el uso en conversaciones largas o repositorios extensos sin verificarla contra el modelo base.
+- Riesgo de alucinacion: al ser un modelo de 873 M sin entrenamiento adicional, mantiene los riesgos del modelo base, y el steering puede reforzar respuestas plausibles pero incorrectas sobre PEPs.
+- Metodologia experimental: es un piloto e2e con un unico benchmark y 150 muestras; la evidencia de mejora es limitada y el AUC de 1.0 corresponde a la muestra de escaneo, no a una validacion externa amplia.
+- El termino "MoE" es enganoso: no hay mezcla de expertos interna ni parametros activos; el enrutamiento es externo y depende de un router de embeddings que debe desplegarse aparte.
+- El efecto del steering esta acoplado a capas y alpha concretos; cambios en la configuracion de inferencia o en el modelo base pueden alterar el comportamiento.
+- Sin datos de sesgos conocidos ni de evaluaciones de seguridad en la informacion disponible.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/NikitaLazarev/Qwen3.5-0.8B-Python-SoftMoE
+
+- Modelo en Hugging Face: https://huggingface.co/NikitaLazarev/Qwen3.5-0.8B-Python-SoftMoE
+- Version sucesora v2: https://huggingface.co/NikitaLazarev/Qwen3.5-0.8B-Python-SoftMoE-v2
+- Cuantizacion GGUF Q8_0: https://huggingface.co/NikitaLazarev/Qwen3.5-0.8B-Python-SoftMoE-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Ivanna Lab (herramienta citada por el autor): https://github.com/wiskeone/ivanna-lab
+- Ivanna Lab (repositorio del laboratorio): https://github.com/wiskeone/ivanna-lab

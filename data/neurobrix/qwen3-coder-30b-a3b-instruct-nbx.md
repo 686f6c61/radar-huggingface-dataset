@@ -2,94 +2,88 @@
 
 ## Resumen
 
-Neurobrix/Qwen3-Coder-30B-A3B-Instruct-nbx es un contenedor `.nbx` que empaqueta el modelo Qwen3-Coder-30B-A3B-Instruct, desarrollado originalmente por Qwen (Alibaba), para su ejecucion en el motor de inferencia NeuroBrix. No se trata de un modelo nuevo ni de un fine-tuning: es el mismo modelo, con los mismos pesos y la misma licencia Apache 2.0, pero reempaquetado junto con su grafo de computacion, pesos, topologia de componentes y valores por defecto de runtime para que el engine de NeuroBrix pueda planificar su despliegue sobre el hardware disponible.
+Neurobrix/Qwen3-Coder-30B-A3B-Instruct-nbx es una distribucion del modelo Qwen3-Coder-30B-A3B-Instruct de Alibaba Qwen, reempaquetada por Neurobrix para su propio runtime de inferencia local basado en Triton. El modelo subyacente es un transformer de tipo Mixture-of-Experts (MoE) con 30.500 millones de parametros totales y aproximadamente 3.300 millones activos por token, especializado en generacion y razonamiento de codigo. Esta version mantiene los pesos del modelo original pero se publica en un formato propietario (nbx) que requiere la libreria neurobrix para cargarse, en lugar de safetensors o GGUF estandar.
 
-El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con 30.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token, especializado en generacion de codigo. La relevancia de este contenedor es operativa: permite ejecutar el modelo en NVIDIA, Mac (Metal) y CPU, con dos backends (PyTorch y Triton via nbxtensor), y con planificacion automatica de reparto entre varias GPUs, streaming o host.
+La relevancia de esta ficha es doble: por un lado, documenta una de las variantes de Qwen3-Coder mas eficientes en coste computacional (por su naturaleza MoE con solo ~3B activos), y por otro advierte de que la distribucion de Neurobrix no es directamente interoperable con el ecosistema habitual (vLLM, llama.cpp, TGI), ya que depende de un runtime especifico. El repositorio ocupa 61,1 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-El contenedor ocupa 61,1 GB y se distribuye con hash SHA-256 verificado. Dado que el modelo original es de codigo abierto y ampliamente conocido, esta ficha describe principalmente el modelo base y anade las particularidades del empaquetado NeuroBrix.
+El modelo base esta disenado para tareas agenticas de codigo, con soporte de contexto largo y tool calling, y se publica bajo licencia Apache 2.0. La variante nbx hereda esa licencia, aunque las condiciones de acceso del repositorio pueden anadir requisitos adicionales que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) |
-| Parametros totales | 30.000 millones (30B) |
-| Parametros activos | aproximadamente 3.000 millones (3B) por token |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada |
-| Idiomas soportados | no disponible en la informacion proporcionada |
+| Arquitectura | Transformer decoder-only con Mixture-of-Experts (MoE) |
+| Parametros totales | 30.500 millones (30B) |
+| Parametros activos | Aproximadamente 3.300 millones (3B) por token |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen3-Coder soporta contexto nativo extendido, pero no se confirma cifra exacta aqui) |
+| Tipos de cuantizacion | No disponible; el repo se distribuye en formato nbx (61,1 GB), sin variantes GGUF/AWQ/GPTQ publicadas en la informacion disponible |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | contenedor `.nbx` (grafo + pesos + runtime); el modelo base se distribuye habitualmente en safetensors |
-| Tamano del contenedor | 61,1 GB |
-| SHA-256 | `1b66110dee203108fc6831c257e31d0e5e958e4a5683af578c18ac9c49cc1df5` |
-| Libreria | neurobrix |
-| Pipeline | text-generation |
-| Modelo base | Qwen/Qwen3-Coder-30B-A3B-Instruct |
+| Formato de pesos | nbx (formato propietario de Neurobrix); no safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer con arquitectura Mixture-of-Experts: de los 30B parametros totales, solo unos 3B se activan por token, lo que reduce el coste computacional de inferencia manteniendo una capacidad de representacion propia de un modelo mucho mayor. Esta es la misma familia arquitectonica que Qwen3-Coder-30B-A3B-Instruct publica Qwen; los detalles concretos de composicion del dataset, numero de tokens de entrenamiento, fases de RLHF/DPO y posibles innovaciones (por ejemplo, decodificacion especulativa o atencion lineal) no estan recogidos en la informacion proporcionada y deben consultarse en la model card original de Qwen.
+El modelo base Qwen3-Coder-30B-A3B-Instruct emplea una arquitectura transformer decoder-only con capas Mixture-of-Experts: de los 30.500 millones de parametros totales, solo unos 3.300 millones se activan por token, lo que reduce el coste de inferencia frente a un modelo denso del mismo tamano. Esta especializado en codigo y flujos agenticos, e incorpora soporte de tool calling y razonamiento multi-paso. Los detalles exactos de composicion del dataset de entrenamiento, numero de tokens, fases de RLHF/DPO y posibles innovaciones (decodificacion especulativa, atencion lineal, etc.) no se detallan en la informacion proporcionada para esta variante.
 
-El aporte especifico de Neurobrix no es de entrenamiento, sino de empaquetado y ejecucion: el contenedor `.nbx` incluye el grafo de computacion del modelo, los pesos, la descripcion de como se conectan sus componentes y los valores por defecto de runtime. El engine planifica la distribucion de cada parte del modelo entre las GPUs y la memoria disponibles (una GPU, varias, streaming o host) y ofrece dos backends: PyTorch y Triton mediante kernels nbxtensor certificados por clase de GPU. No se ha realizado ningun ajuste fino adicional sobre los pesos originales.
+La contribucion especifica de Neurobrix es el reempaquetado de los pesos en su formato nbx y la integracion con un runtime propio basado en Triton para inferencia local. No se documenta en la informacion disponible si se han realizado ajustes finos adicionales sobre el modelo base ni si los pesos son identicos a los originales; el tag `base_model:finetune` sugiere una relacion de ajuste, pero no se especifica su alcance.
 
 ## Capacidades
 
-- Generacion de texto y codigo: el modelo base esta especializado en tareas de programacion (generacion, completado, explicacion y refactorizacion de codigo).
-- Razonamiento multi-paso y resolucion de problemas, heredado de la familia Qwen3-Coder.
-- Soporte de tool calling / function calling: el modelo base Qwen3-Coder-Instruct esta disenado para integracion con herramientas, aunque la informacion proporcionada no detalla la interfaz exacta en el contenedor.
-- Capacidades agenticas: el modelo base esta orientado a flujos de agente y razonamiento multi-paso.
-- Capacidades multilingues: no disponibles en la informacion proporcionada; deben consultarse en la model card original.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles en la informacion proporcionada para este contenedor.
+- Generacion de texto y codigo en multiples lenguajes de programacion (heredadas del modelo base Qwen3-Coder).
+- Razonamiento de codigo: explicacion, refactorizacion, depuracion y generacion de tests.
+- Soporte de tool calling / function calling, orientado a integracion con herramientas externas.
+- Capacidades agenticas y razonamiento multi-paso, pensadas para tareas de codigo de extremo a extremo.
+- Ejecucion local mediante el runtime neurobrix con backend Triton.
+- Capacidades multilingues: no confirmadas en la informacion disponible para esta variante.
+- Modo thinking explicito: no confirmado en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente de programacion en IDE: el modelo puede completar y explicar codigo en linea; el contenedor permite ejecutarlo localmente en la maquina del desarrollador sin depender de APIs externas.
-- Generacion de codigo en pipelines de CI/CD: integrado como paso de generacion o revision de parches, con la ventaja de que el contenedor planifica automaticamente el uso de GPU disponible en el runner.
-- Refactorizacion y migracion de codigo: el modelo base esta entrenado para tareas de transformacion de codigo; el contenedor permite desplegarlo en infraestructura propia.
-- Agentes autonomos de resolucion de tareas: gracias a las capacidades agenticas y de tool calling del modelo base, se puede usar en bucles de razonamiento multi-paso con llamadas a herramientas.
-- Despliegue en hardware heterogeneo: el motor NeuroBrix reparte el modelo entre varias GPUs, hace streaming o lo ejecuta en CPU, lo que permite usar el modelo en estaciones de trabajo con una sola GPU o en Mac con Metal.
-- Prototipado e investigacion local: al ejecutarse con backend Triton sin PyTorch, facilita entornos ligeros para experimentacion con modelos de codigo de gran tamano.
-- Evaluacion comparativa de motores de inferencia: util para medir el rendimiento de NeuroBrix frente a vLLM, llama.cpp u otros sobre el mismo modelo base.
+- Asistente de codigo en IDE: el modelo puede autocompletar y explicar fragmentos de codigo con bajo coste de inferencia gracias a sus ~3B parametros activos, lo que permite ejecucion en estaciones de trabajo con GPU unica.
+- Generacion de codigo en pipelines de CI/CD: su soporte de tool calling permite integrarlo en flujos que consultan APIs o repositorios y generan parches automaticos.
+- Refactorizacion y migracion de bases de codigo: con contexto largo (segun el modelo base) puede procesar varios ficheros y proponer cambios coherentes entre modulos.
+- Agentes de resolucion de incidencias: razonamiento multi-paso para diagnosticar errores a partir de trazas y proponer correcciones.
+- Generacion de tests unitarios: a partir de firmas y docstrings, el modelo produce casos de prueba y datos de ejemplo.
+- Despliegue local con requisitos de privacidad: al ejecutarse mediante el runtime neurobrix en infraestructura propia, el codigo no sale del entorno del cliente, adecuado para empresas con politicas estrictas de datos.
+- Documentacion tecnica automatizada: generacion de docstrings y guias a partir del codigo fuente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El contenedor no aporta mediciones propias de MMLU, HumanEval, GSM8K ni otras; para datos del modelo base debe consultarse la model card original de Qwen/Qwen3-Coder-30B-A3B-Instruct.
+No se han publicado resultados de benchmarks en la informacion disponible para esta variante nbx. Tampoco se proporcionan cifras de latencia o throughput del runtime neurobrix.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada; el contenedor ocupa 61,1 GB en disco y el modelo base tiene 30B parametros, por lo que en precision completa requiere varias GPUs de gran capacidad o tecnicas de reparto/streaming.
-- GPUs recomendadas: no especificadas en la informacion; el motor declara soporte para NVIDIA, Mac (Metal) y CPU.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion proporcionada; el reparto entre varias GPUs y el streaming del motor NeuroBrix podrian permitirlo, pero no hay datos concretos.
-- Opciones de despliegue: NeuroBrix (`pip install neurobrix`, `neurobrix import` y `neurobrix run`), con backend PyTorch o Triton (nbxtensor). Otros motores (vLLM, llama.cpp, Ollama, TGI) no estan mencionados para este contenedor.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: el repositorio ocupa 61,1 GB, lo que sugiere pesos en precision alta (probablemente BF16/FP16). En FP16 se necesitarian del orden de 60 GB o mas de VRAM para cargar el modelo completo; no se confirman cifras exactas en la informacion disponible.
+- GPU recomendadas: para cargar los pesos completos en precision nativa se requeriria al menos una GPU de 80 GB (A100 80GB, H100 80GB) o configuracion multi-GPU. No se confirma soporte de offloading en el runtime neurobrix.
+- GPU de consumo: no se dispone de informacion sobre cuantizaciones que permitan ejecucion en RTX 4090 (24 GB) u otras GPU de consumo; sin variantes GGUF/AWQ publicadas, no es viable en consumer GPU con los datos disponibles.
+- Opciones de despliegue: el runtime neurobrix (libreria `neurobrix`, backend Triton). No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Neurobrix/Qwen3-Coder-30B-A3B-Instruct-nbx | 30B | ~3B | no disponible | Apache 2.0 | `.nbx` |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30B | ~3B | no disponible | Apache 2.0 | safetensors |
-| Otros modelos de codigo de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato / despliegue |
+|---|---|---|---|---|
+| Neurobrix/Qwen3-Coder-30B-A3B-Instruct-nbx | 30B / ~3B | No disponible | Apache 2.0 | nbx, runtime neurobrix |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30B / ~3B | No disponible en esta ficha | Apache 2.0 | safetensors, ecosistema estandar (vLLM, etc.) |
+| Qwen2.5-Coder-32B-Instruct | 32B densos | No disponible en esta ficha | Apache 2.0 | safetensors, GGUF, amplio soporte |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B / ~2,4B | No disponible en esta ficha | Licencia propia de DeepSeek | safetensors, soporte comunitario |
 
-La comparativa mas directa es con el modelo original de Qwen, del que este contenedor es un reempaquetado: mismos pesos, misma licencia y mismas capacidades, con la diferencia del formato de distribucion y del motor de ejecucion. No se dispone de informacion sobre alternativas comparables en la documentacion proporcionada.
+La diferencia clave frente al modelo base oficial es el formato y el runtime: la variante nbx no es interoperable con el ecosistema estandar y anade una dependencia de la libreria de Neurobrix. Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El contenedor hereda integramente los sesgos y limitaciones del modelo base Qwen3-Coder-30B-A3B-Instruct; no se ha realizado ningun ajuste que los mitigue.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en generacion de codigo con APIs o librerias poco comunes.
-- No hay informacion sobre idiomas soportados ni sobre el comportamiento en castellano; debe verificarse contra la model card original.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base original por si existieran condiciones adicionales.
-- El contenedor depende del motor NeuroBrix y de su ecosistema (kernels nbxtensor certificados por clase de GPU); no es directamente compatible con vLLM, llama.cpp u otros motores sin conversion.
-- El modelo base tiene 30B parametros totales: el despliegue en hardware modesto depende de las capacidades de reparto y streaming del motor, cuyo rendimiento real no esta documentado en la informacion disponible.
-- El SHA-256 del contenedor debe verificarse tras la descarga para garantizar la integridad de los pesos.
+- Dependencia de runtime propietario: los pesos en formato nbx solo se cargan con la libreria `neurobrix`; no hay garantia de compatibilidad con vLLM, llama.cpp, TGI u Ollama.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar; revisar los terminos adicionales antes de uso comercial.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en APIs inexistentes o codigo con dependencias no verificadas; requiere validacion y tests automaticos en produccion.
+- Sesgos: no documentados en la informacion disponible; el modelo base puede reflejar sesgos de sus datos de entrenamiento.
+- Idiomas soportados: no confirmados para esta variante.
+- Longitud de contexto: no confirmada en la informacion disponible; no asumir cifras del modelo base sin verificacion.
+- Ausencia de benchmarks publicados para esta variante: no hay evidencia de que el reempaquetado preserve exactamente el comportamiento del modelo original.
+- Tamano del repositorio (61,1 GB) y posible necesidad de GPU de 80 GB: barrera de entrada alta para equipos con hardware limitado.
+- Sin cuantizaciones publicadas: no se puede reducir el footprint para consumer GPU con los datos disponibles.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Neurobrix/Qwen3-Coder-30B-A3B-Instruct-nbx
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
-- Descarga del contenedor: https://neurobrix.org/models/Qwen/Qwen3-Coder-30B-A3B-Instruct
-- GitHub de NeuroBrix: https://github.com/NeuroBrix
-- Repositorio nbxtensor: https://github.com/NeuroBrix/nbxtensor
-- Documentacion: https://docs.neurobrix.org
-- Hub: https://neurobrix.org
-- YouTube: https://www.youtube.com/@NeuroBrix
+- Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+- Organizacion Neurobrix en Hugging Face: https://huggingface.co/Neurobrix

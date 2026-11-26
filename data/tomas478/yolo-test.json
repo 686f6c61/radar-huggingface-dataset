@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "tomas478/yolo-test",
+  "slug": "tomas478-yolo-test",
+  "author": "tomas478",
+  "url": "https://huggingface.co/tomas478/yolo-test",
+  "created_at": "2026-11-19T09:28:01.000Z",
+  "updated_at": "2026-11-25T21:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10266375685,
+  "storage_human": "10.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

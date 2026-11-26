@@ -2,97 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop es un modelo de lenguaje de 27.318.209.536 parámetros (unos 27,3 mil millones) obtenido mediante la fusión de cuatro modelos derivados de la familia Qwen3.8 de 27B. Lo desarrolla el usuario de Hugging Face jashepp, que actúa como autor del merge y de las cuantizaciones GGUF publicadas. El modelo resuelve la necesidad de disponer de una única variante local que combine razonamiento con cadena de pensamiento, generación de código, ingeniería de software técnica, análisis de seguridad y lógica formal, capacidades que en los modelos originales están repartidas entre checkpoints distintos.
+Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF es un modelo de lenguaje de 27.318.209.536 parámetros (aproximadamente 27,3 mil millones) publicado por el usuario jashepp en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un *merge* (fusión) de cuatro modelos derivados de la familia Qwen3.8 de 27B, combinados mediante la técnica TIES con la herramienta mergekit. Su propósito es concentrar en un único checkpoint las fortalezas complementarias de sus cuatro componentes: razonamiento e instrucciones del modelo base, agudeza en código, capacidad de análisis en ciberseguridad e ingeniería inversa, y verificación lógica y matemática.
 
-La fusión se ha realizado con mergekit aplicando el método TIES (arXiv:2306.01708) sobre cuatro bases: DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored como modelo base y origen del tokenizador, nerkyor/Qwen3.8-27B-Coder390-EfficientThink como refuerzo de código, xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8 para tareas de seguridad y decompilación, y tsinghua-sigs-robot-lab/VeriLoop-E2 para matemáticas, física y lógica estructurada. La receta inyecta los deltas de parámetros principalmente en los bloques `mlp` intermedios, manteniendo embeddings, normas, `lm_head` y capas de atención anclados al modelo base.
+El modelo está orientado a tareas de programación, depuración, análisis de binarios y *decompilación*, investigación en seguridad, matemáticas y razonamiento formal, además de soportar modos de *thinking* (cadena de pensamiento) y uso de herramientas. Se distribuye en formato GGUF cuantizado para su ejecución local con llama.cpp y LM Studio, y el repositorio ocupa 138,0 GB, lo que refleja la inclusión de múltiples niveles de cuantización.
 
-Es relevante ahora porque ofrece, en un solo checkpoint de 27B ejecutable en hardware de consumo mediante cuantización, un perfil híbrido de razonamiento y código técnico que normalmente exigiría alternar entre varios modelos. El repositorio incluye pesos en formato GGUF (bfloat16, mxfp4, Q4, Q6 y Q8) preparados para llama.cpp y LM Studio, además de los ficheros originales en transformers.
+Es relevante ahora porque ejemplifica la práctica creciente de la comunidad de construir modelos especializados mediante fusión de pesos en lugar de entrenamiento completo, permitiendo obtener un modelo de 27B con capacidades híbridas de código y seguridad sin el coste de un entrenamiento desde cero. La licencia es Apache 2.0 y el único idioma declarado es el inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivada de Qwen3.8 (fusión TIES de cuatro checkpoints de 27B) |
-| Parametros totales | 27.318.209.536 (27,3B) |
-| Parametros activos | no disponible (no es un modelo MoE según la informacion proporcionada) |
-| Longitud de contexto | no disponible (la model card menciona pruebas a 150k tokens, sin declarar la ventana oficial) |
-| Tipos de cuantizacion | bfloat16, mxfp4, Q4, Q6, Q8 (GGUF); pesos originales en bf16 |
+| Arquitectura | Transformer decoder-only (familia Qwen3.8); detalles de atención y capas no disponibles |
+| Parametros totales | 27.318.209.536 (aproximadamente 27,3 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | mxfp4, q4, q6, q8 (según tags); también bfloat16/bf16 en el modelo de origen |
 | Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp, LM Studio) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repositorio GGUF); el modelo base en safetensors/bf16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una fusión de pesos, no un entrenamiento desde cero. Se parte de cuatro checkpoints Qwen3.8 de 27B y se combinan con mergekit mediante TIES, que poda los deltas de menor magnitud, resuelve los conflictos de signo entre modelos y aplica una media ponderada de los parámetros restantes. La receta asigna densidades y pesos `mlp` distintos a cada fuente: el modelo base de DavidAU conserva densidad 1.00 y peso 1.0, el modelo de código de nerkyor aporta densidad 0.54 con peso `mlp` de 0.40 y ajustes menores de atención (0.00–0.08), el modelo de ciberseguridad de xtools-at aporta densidad 0.48 con peso `mlp` de 0.24 y ajustes de atención de 0.00–0.04, y VeriLoop-E2 aporta densidad 0.35 con peso `mlp` mínimo de 0.08 y ajustes de atención de 0.00–0.01.
+El modelo no ha sido entrenado de forma convencional: es el resultado de una fusión TIES (*Trim, Elect Sign & Merge*) ejecutada con mergekit sobre cuatro checkpoints Qwen3.8 de 27B. Según la receta publicada, el modelo base y fuente del tokenizador es DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, con densidad 1.00, que ancla embeddings, normas, `lm_head` y capas de atención. Sobre él se inyectan deltas de los otros tres modelos, principalmente en los bloques `mlp` intermedios: nerkyor/Qwen3.8-27B-Coder390-EfficientThink (densidad 0.54, peso mlp 0.40, atención ligera 0.00–0.08), xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8 (densidad 0.48, peso mlp 0.24, atención 0.00–0.04) y tsinghua-sigs-robot-lab/VeriLoop-E2 (densidad 0.35, peso mlp 0.08, atención 0.00–0.01).
 
-El objetivo declarado es preservar la estructura de razonamiento e instrucciones del modelo base (embeddings, normas, `lm_head` y atención anclados) e inyectar capacidad técnica y analítica en los bloques `mlp` intermedios. La model card menciona que los modelos de origen incorporan post-entrenamiento con SFT y RLOO, así como mecanismos MTP (multi-token prediction) y DFlash2 en el caso de nerkyor, aunque no se detalla la composición del dataset de entrenamiento ni el número de tokens utilizados. No se especifican datos sobre RLHF o DPO aplicados específicamente a esta fusión.
+La innovación técnica reside en la estrategia de fusión: mantener la estructura de razonamiento e instrucciones del base mientras se concentran las modificaciones en las capas MLP para reforzar código, ingeniería inversa, seguridad, matemáticas y lógica formal. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en los modelos de origen. Los tags mencionan MTP (multi-token prediction), imatrix e *EfficientThink*, pero no se detalla su implementación en este merge.
 
 ## Capacidades
 
-- Generación de texto conversacional con modo de razonamiento explícito (thinking / chain-of-thought) y presupuesto de razonamiento configurable; el autor emplea un `reasoning-budget` de 32000.
-- Generación de código y finalización de código en tareas de programación general.
-- Ingeniería de software técnica: análisis de código, depuración y tareas de tipo SWE.
-- Decompilación y análisis de binarios, según el refuerzo aportado por el modelo de ciberseguridad.
-- Seguridad informática: análisis de vulnerabilidades y pentesting técnico.
-- Matemáticas, física y lógica formal estructurada, heredadas de VeriLoop-E2.
-- Soporte declarado de tool calling / function calling y uso agéntico (etiquetas `agentic`, `tool-use`).
-- Seguimiento de instrucciones y recall de contexto largo (etiquetas `instruction-following`, `context-recall`; pruebas del autor a 150k tokens).
-- Capacidades multilingües limitadas al inglés según el campo `language` de la model card.
+- Generación de texto y conversación multi-turno en inglés.
+- Razonamiento con modo *thinking* y cadena de pensamiento explícita.
+- Generación y finalización de código, con énfasis en tareas de ingeniería de software (SWE).
+- Análisis de seguridad: *decompilación*, razonamiento sobre binarios y parches, *pentesting* y fundamentos de ciberseguridad.
+- Matemáticas, física y lógica formal, reforzadas por el componente VeriLoop-E2.
+- Uso de herramientas y *function calling* (tag `tool-use`), con la advertencia de que clientes agénticos como Pi, OpenCode o Hermes pueden requerir un LoRA adaptador para sintaxis de llamadas distinta.
+- Capacidades agénticas y razonamiento multi-paso (tag `agentic`).
+- Seguimiento de instrucciones y recuperación de contexto (*context-recall*).
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Asistencia a la programación en local: el modelo puede generar y revisar código en un IDE o CLI integrado mediante llama.cpp u Ollama, aprovechando su especialización en código y su licencia Apache 2.0 para uso comercial sin restricciones de atribución adicionales.
-- Análisis de decompilación y reversing: el delta de Qwensploit-V2 aporta conocimiento de binarios y vulnerabilidades, lo que permite usarlo para interpretar pseudocódigo de descompiladores y señalar posibles fallos de memoria o rutas de explotación en un entorno de investigación controlado.
-- Revisión de seguridad de código en pipelines CI/CD: con soporte de tool calling, puede integrarse como paso de análisis que recibe fragmentos de código o resultados de analizadores estáticos y produce informes de riesgo estructurados.
-- Resolución de problemas matemáticos y físicos con razonamiento paso a paso: el modo thinking con presupuesto de 32000 tokens permite abordar demostraciones y cálculos de varios pasos, útil en entornos académicos o de ingeniería.
-- Agentes autónomos de varias etapas: las etiquetas `agentic` y `tool-use` indican que puede encadenar llamadas a herramientas y razonamiento multi-paso, por ejemplo para tareas de automatización de escritorio o scripting.
-- Procesamiento de documentación técnica extensa: el recall de contexto largo observado a 150k tokens permite resumir repositorios, manuales o informes largos en una sola pasada, aunque conviene verificar la ventana oficial antes de fijar límites en producción.
-- Despliegue en estación de trabajo con GPU de consumo: las cuantizaciones Q4 y Q6 en GGUF permiten ejecutarlo en equipos con 24 GB de VRAM o incluso menos, lo que facilita prototipado y uso personal sin infraestructura de servidor.
+- Asistencia a la programación en local: el modelo puede generar, revisar y depurar código en un IDE o terminal mediante llama.cpp o LM Studio, aprovechando su especialización en tareas SWE y su ejecución offline.
+- Análisis de seguridad y auditoría: permite razonar sobre binarios, parches y vulnerabilidades, útil en laboratorios de investigación que necesitan un modelo local sin enviar código sensible a la nube.
+- Ingeniería inversa y *decompilación* asistida: ayuda a interpretar desensamblados y a reconstruir lógica de programas, apoyándose en el componente Qwensploit.
+- Resolución de problemas matemáticos y lógicos: adecuado para validación de demostraciones, comprobación de cotas y razonamiento formal gracias al acento de VeriLoop-E2.
+- Agentes de codificación autónomos: con soporte de *tool calling*, puede integrarse en pipelines que invocan compiladores, linters o ejecutores de tests, aunque puede requerir el LoRA adaptador para clientes con sintaxis específica.
+- Prototipado de asistentes técnicos especializados: sirve como base para construir chatbots de soporte a desarrolladores que necesitan explicaciones de código y seguridad con contexto local.
+- Investigación en fusión de modelos: útil como caso de estudio reproducible de merge TIES con receta publicada para experimentar con densidades y pesos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas comparativas; solo describe pruebas A/B con la misma semilla realizadas por el autor, sin cifras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bf16, aproximadamente 54,6 GB solo para pesos (27,3B × 2 bytes), más overhead de contexto; en Q8, en torno a 29 GB; en Q6, unos 22 GB; en Q4, unos 15–16 GB; en mxfp4, un valor similar al de Q4.
-- GPU recomendadas: para bf16, A100 80 GB, H100 80 GB o varias GPU de 48 GB; para Q8, A100 40 GB o RTX 6000 Ada; para Q6 y Q4, RTX 4090 (24 GB) y RTX 3090 (24 GB) con margen para contexto moderado.
-- Cabe en GPU de consumo: sí, en cuantizaciones Q4 y Q6 sobre RTX 4090, RTX 3090 o GPUs de 16–24 GB; en Q4 también podría ejecutarse parcialmente en GPU con offload a RAM del sistema.
-- Opciones de despliegue: llama.cpp y LM Studio para GGUF; vLLM y TGI para los pesos en safetensors/bf16; Ollama es viable si se importa el GGUF; transformers para inferencia de referencia.
-- Latencia y throughput estimados: no disponibles; la model card no publica mediciones. Como referencia cualitativa, el autor reporta uso agéntico con presupuesto de razonamiento de 32000 tokens, lo que implica latencias altas en generación con thinking activado.
+- VRAM estimada para inferencia: con cuantización q4, un modelo de 27,3B requiere aproximadamente 16–18 GB; con q6, en torno a 22–24 GB; con q8, alrededor de 29–30 GB; en bf16, unos 55 GB. Estas cifras son estimaciones basadas en el número de parámetros y no en mediciones publicadas.
+- GPU recomendadas: para bf16, A100 80 GB o H100; para q8, A100 40 GB o RTX 6000 Ada; para q6, RTX 4090 (24 GB) al límite; para q4, RTX 4090, RTX 3090 o GPUs con 16 GB o más.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con q4 y posiblemente q6; en GPUs de 16 GB con q4 y contexto reducido.
+- Opciones de despliegue: llama.cpp, LM Studio (ambos citados en los tags); vLLM y TGI no están confirmados para este repo GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| jashepp/Qwen3.8-27B-4x-ties-merge (este) | 27,3B | no disponible | Apache 2.0 | safetensors, GGUF | Fusión de 4 modelos; razonamiento, código, seguridad y lógica |
-| jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge | no disponible | no disponible | Apache 2.0 | GGUF | Fusión 2x del mismo autor; mejor seguimiento de instrucciones según la model card, pero menos capacidad SWE técnica |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B (aproximado, no confirmado) | no disponible | no disponible | no disponible | Modelo base de la fusión; razonamiento e instrucciones |
-| nerkyor/Qwen3.8-27B-Coder390-EfficientThink | 27B (aproximado, no confirmado) | no disponible | no disponible | no disponible | Especializado en código y recall de contexto; aporta el delta de programación |
+| Este merge (4x TIES) | 27,3B | no disponible | Apache 2.0 | GGUF | Código + ciberseguridad + lógica |
+| jashepp/Qwen3.8-27B-2x-ties-merge-brilliance-coder390-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF | Solo base + coder; menor cobertura SWE y lógica |
+| jashepp/Qwen3.8-27B-5x-ties-merge-brilliance-omnisre-coder390-cybersecurity-veriloop-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF | Añade un quinto componente; comparación de rendimiento no disponible |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27,3B | no disponible | no disponible | safetensors/bf16 | Modelo base del merge, sin especialización en seguridad |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- El seguimiento de instrucciones es más débil que el del modelo base y que el de la fusión 2x previa del mismo autor, según reconoce la propia model card.
-- Se han observado bucles de razonamiento del tipo "But wait / Actually wait" al escribir ficheros o informes con contextos de 150k tokens, lo que puede degradar la salida en tareas de generación larga.
-- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
-- Al ser una fusión de pesos sin evaluación publicada, no hay benchmarks que respalden las capacidades declaradas; las afirmaciones de la model card son cualitativas y basadas en pruebas del autor.
-- Riesgo de alucinación inherente a los modelos de 27B, especialmente en dominios técnicos como seguridad o matemáticas, donde una salida plausible puede ser incorrecta; requiere verificación humana en producción.
-- El modelo base incluye la etiqueta "Uncensored" y "Heretic", lo que puede implicar una menor alineación de seguridad y mayor probabilidad de generar contenido no filtrado; conviene evaluar políticas de contenido antes de desplegarlo en aplicaciones públicas.
-- Las capacidades de ciberseguridad y decompilación deben usarse únicamente en entornos autorizados; el uso ofensivo puede infringir legislación local.
-- La licencia Apache 2.0 permite uso comercial, pero al derivar de múltiples modelos base conviene verificar que cada uno de ellos mantenga esa misma licencia; la información disponible solo confirma Apache 2.0 para este repositorio.
-- No se especifica la longitud de contexto oficial, por lo que fijar límites de producción basados en las pruebas a 150k tokens es arriesgado sin validación propia.
+- Solo soporta inglés de forma declarada; el rendimiento en castellano no está garantizado.
+- Al ser un merge de modelos, puede heredar sesgos de sus cuatro componentes; no se documentan evaluaciones de sesgo.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en tareas de seguridad y matemáticas donde la verificación externa es imprescindible.
+- La longitud de contexto no está especificada, lo que impide planificar su uso en tareas de contexto largo.
+- El modelo base incluye el término "Heretic-Uncensored", lo que sugiere un filtrado de seguridad reducido; debe evaluarse antes de usarlo en producción orientada al público.
+- Aunque la licencia es Apache 2.0, las licencias de los modelos de origen no se detallan y podrían imponer condiciones adicionales.
+- Para clientes agénticos con sintaxis de tool-calling distinta (Pi, OpenCode, Hermes) puede necesitarse un LoRA adaptador adicional.
+- No hay benchmarks publicados que permitan validar las afirmaciones de mejora en código, seguridad o lógica.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF
-- Modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
-- Modelo base 2: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
-- Modelo base 3: https://huggingface.co/xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8
-- Modelo base 4: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
-- Fusión 2x previa del mismo autor: https://huggingface.co/jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF
-- Paper del método TIES: https://arxiv.org/abs/2306.01708
-- Repositorio mergekit: https://github.com/cg123/mergekit
-- Colección de modelos Qwen de DavidAU: https://huggingface.co/collections/DavidAU/qwen-36-reg-uncensored-9b-12b-21b-27b-40b
-- Colección Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
+- [Hugging Face: jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF](https://huggingface.co/jashepp/Qwen3.8-27B-4x-ties-merge-brilliance-coder390-cybersecurity-veriloop-GGUF)
+- [Modelo base 1: DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored](https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored)
+- [Modelo base 2: nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2](https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2)
+- [Modelo base 3: xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8](https://huggingface.co/xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8)
+- [Modelo base 4: tsinghua-sigs-robot-lab/VeriLoop-E2](https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2)
+- [Merge 2x del mismo autor](https://huggingface.co/jashepp/Qwen3.8-27B-2x-ties-merge-brilliance-coder390-GGUF)
+- [Merge 5x del mismo autor](https://huggingface.co/jashepp/Qwen3.8-27B-5x-ties-merge-brilliance-omnisre-coder390-cybersecurity-veriloop-GGUF)
+- [LoRA super-adapter para Qwen3.8-27B](https://huggingface.co/jashepp/Qwen3.8-27B-super-adapter-Quants-LoRA-GGUF)
+- [mergekit (repositorio)](https://github.com/arcee-ai/mergekit)
+- [Paper TIES (arXiv:2306.01708)](https://arxiv.org/abs/2306.01708)
+- [Licencia Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)

@@ -2,49 +2,52 @@
 
 ## Resumen
 
-SHSemi/dama-aibrain es un ajuste fino (finetune) del modelo multimodal Gemma 4 E2B en su variante instruida y cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`). Lo desarrolla el usuario SHSemi y se publica en Hugging Face bajo licencia Apache 2.0. El modelo conserva la naturaleza multimodal del original (pipeline `image-text-to-text`) y esta orientado a generacion de texto conversacional en ingles.
+dama-aibrain es un modelo vision-language (image-text-to-text) publicado por SHSemi, derivado mediante fine-tuning de `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, es decir, una variante de la familia Gemma 4 en su version E2B (efimera de 2B parametros activos segun la nomenclatura de Google) ajustada por Unsloth. El modelo se distribuye principalmente en formato GGUF para su uso con llama.cpp y llama-mtmd-cli, con un total real de 5.123.178.051 parametros segun los pesos safetensors, lo que sugiere que el checkpoint incluye tanto el modelo de lenguaje como el proyector multimodal (mmproj).
 
-El repositorio tiene 5.123.178.051 parametros segun los pesos en safetensors y ocupa 10.3 GB, lo que sugiere que los pesos se han consolidado en un formato de mayor precision respecto al checkpoint base cuantizado en 4 bits. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara el autor en la model card.
+La relevancia practica del modelo reside en su empaquetado: al ofrecerse en GGUF Q8_0 junto con un fichero mmproj F16 separado, permite desplegar un VLM conversacional en hardware de consumo mediante llama.cpp, sin necesidad de infraestructura GPU de datacenter. Esta pensado para tareas de descripcion de imagenes, respuesta a preguntas visuales y conversacion multimodal, con licencia Apache 2.0.
 
-La relevancia de esta ficha es limitada: se trata de un modelo derivado sin documentacion tecnica detallada, sin resultados de benchmarks publicados y con cero descargas en el momento de la consulta. Es util como ejemplo de flujo de ajuste fino rapido sobre Gemma 4 con Unsloth, pero no como modelo de referencia para produccion.
+No obstante, la informacion publicada es muy limitada: la model card apenas describe el proceso de fine-tuning, no detalla el dataset empleado, no incluye benchmarks y solo declara soporte para ingles. Cualquier evaluacion en produccion debe hacerse con cautela y validacion propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal derivada de Gemma 4 (detalle exacto no disponible) |
-| Parametros totales | 5.123.178.051 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (VLM) basado en Gemma 4 E2B; vision encoder + proyector + LLM |
+| Parametros totales | 5.123.178.051 (pesos safetensors, incluye probablemente el mmproj) |
+| Parametros activos | no disponible (la nomenclatura E2B sugiere ~2B activos, pero no se confirma en la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | El checkpoint base esta en 4 bits (bnb-4bit); el repo publica safetensors (precision exacta no disponible) |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | GGUF Q8_0 y mmproj F16; el modelo base se entreno desde una variante bnb-4bit |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una variante de Gemma 4 E2B instruida y cuantizada en 4 bits preparada por Unsloth. La model card no especifica la arquitectura interna (atencion, capas, dimensiones) ni si se trata de un modelo denso o con mezcla de expertos; la denominacion "E2B" sugiere una variante eficiente de la familia Gemma 4, pero el dato no se confirma en la informacion disponible.
+El modelo sigue la arquitectura de la familia Gemma 4 en su variante E2B, un diseno multimodal que combina un codificador de vision con un modelo de lenguaje y un proyector que alinea ambos espacios. El pipeline declarado es `image-text-to-text`, y el repositorio incluye un fichero `gemma-4-E2B-it.F16-mmproj.gguf` separado, lo que confirma la presencia de un proyector multimodal independiente del cuerpo del LLM.
 
-El ajuste fino se realizo con Unsloth y TRL, segun indica el autor, lo que implica un entrenamiento supervisado sobre el checkpoint base. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detallan innovaciones tecnicas adicionales mas alla del propio pipeline de Unsloth.
+El fine-tuning se realizo con Unsloth, segun indica la model card, partiendo de `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o preference tuning. Tampoco se detalla si el ajuste afecto al codificador de vision, al proyector o solo al LLM. La model card menciona que el entrenamiento fue "2x faster with Unsloth", lo que hace referencia a la eficiencia del framework, no a una innovacion arquitectonica del modelo.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles.
-- Procesamiento de imagenes y texto de entrada (pipeline `image-text-to-text`), heredado del modelo base multimodal.
-- Generacion de texto condicionada por imagen, segun el pipeline declarado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo `language`.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
+- Comprension de imagenes y respuesta a preguntas visuales (image-text-to-text).
+- Conversacion multi-turno con entrada mixta de texto e imagen.
+- Uso mediante llama.cpp: `llama-cli` para texto y `llama-mtmd-cli` para multimodal.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de plantillas de chat via `--jinja`.
+- No se documenta soporte de tool calling, function calling ni modo thinking.
+- No se documenta soporte de audio ni de video.
+- Capacidades multilingues limitadas al ingles segun la metadata.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en ingles: el modelo puede emplearse para validar flujos de dialogo multi-turno antes de invertir en un modelo mayor, dado su tamano moderado y licencia permisiva.
-- Descripcion de imagenes en ingles: al conservar el pipeline `image-text-to-text`, puede usarse para generar descripciones o respuestas a partir de una imagen y una pregunta, por ejemplo en herramientas de accesibilidad o catalogacion.
-- Base para nuevos ajustes finos: al estar publicado en safetensors y con licencia Apache 2.0, sirve como punto de partida para experimentos de fine-tuning con Unsloth o TRL en dominios especificos.
-- Experimentacion academica con modelos multimodales pequenos: util en entornos con recursos limitados para estudiar comportamiento de modelos derivados de Gemma 4.
-- Generacion de respuestas en pipelines de TGI: el tag `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en infraestructura compatible con Hugging Face Endpoints.
-- Evaluacion comparativa de tecnicas de cuantizacion: permite contrastar el comportamiento del modelo frente al checkpoint base en 4 bits y frente a versiones en mayor precision.
+- Descripcion automatica de imagenes en ingles: el modelo puede recibir una imagen y generar una descripcion textual, util para catalogacion de fotos, alt-text o indexacion de archivos visuales. Su formato GGUF permite ejecutarlo en local sin enviar imagenes a la nube.
+- Respuesta a preguntas visuales (VQA) en prototipos: integrable en aplicaciones de asistencia que necesiten responder sobre el contenido de una captura, un diagrama o una foto, usando `llama-mtmd-cli` como backend ligero.
+- Asistente conversacional multimodal en local: para demos y entornos de desarrollo donde se requiera privacidad y no se quiera depender de APIs externas, dado que el modelo corre en llama.cpp con cuantizacion Q8_0.
+- Procesamiento de documentos escaneados en ingles: extraccion de informacion de facturas, tickets o formularios mediante preguntas dirigidas sobre la imagen, siempre con validacion humana por el riesgo de alucinacion.
+- Base para fine-tuning posterior: al estar bajo Apache 2.0 y en formato safetensors, sirve como punto de partida para ajustes especificos de dominio en tareas vision-lenguaje.
+- Evaluacion comparativa de VLMs ligeros: util en investigacion para medir el rendimiento de un VLM de ~5B parametros totales en tareas de percepcion visual, con la ventaja de poder desplegarse en una sola GPU de consumo.
+- Chat de soporte tecnico con capturas de pantalla: el modelo puede interpretar una captura de error y mantener una conversacion de diagnostico, aunque limitado al ingles.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +55,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 5.123 millones de parametros, en FP16 se requieren aproximadamente 10-11 GB solo para pesos; en 8 bits unos 5-6 GB; en 4 bits unos 3-4 GB, mas el overhead de cache KV y del codificador visual.
-- GPU recomendadas: A100 40 GB, H100 80 GB o L40S para despliegue en FP16 con contexto amplio; RTX 4090 (24 GB) o RTX A6000 (48 GB) para FP16 con margen.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) en FP16 con contexto moderado, y en GPUs de 8-12 GB si se cuantiza a 4-8 bits.
-- Opciones de despliegue: transformers, Text Generation Inference (TGI), vLLM (verificar compatibilidad con la arquitectura Gemma 4), llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repo).
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada: el fichero Q8_0 de un modelo de ~5B parametros totales ronda los 5-6 GB, mas el mmproj F16 (que puede anadir 1-2 GB adicionales). En la practica, se recomienda reservar entre 8 y 12 GB de VRAM para inferencia comoda con contexto moderado; el dato exacto no esta disponible en la informacion proporcionada.
+- GPU recomendadas: RTX 3090, RTX 4090, RTX 4080, A10, A100 o superiores. Cabe en GPUs de consumo con 12 GB o mas.
+- Cabe en consumer GPU: si, previsiblemente en RTX 3060 12 GB, RTX 4070 12 GB, RTX 4080 y RTX 4090. En GPUs de 8 GB puede requerir cuantizaciones menores no publicadas en el repo.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`), Ollama (con limitaciones para mmproj separado, segun la model card), y potencialmente transformers con safetensors. No se documenta soporte de vLLM ni TGI para esta variante.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| SHSemi/dama-aibrain | 5.123 M | no disponible | Apache 2.0 | Finetune de Gemma 4 E2B, solo ingles, sin benchmarks |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | Apache 2.0 (heredada) | Modelo base cuantizado en 4 bits del que deriva |
-| Gemma 4 E2B-it (original) | no disponible | no disponible | Apache 2.0 | Version instruida sin cuantizar del modelo base |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| dama-aibrain (SHSemi) | ~5,1B totales | no disponible | Si | Apache 2.0 | safetensors, GGUF |
+| Gemma 4 E2B-it (base) | ~2B activos (segun nomenclatura) | no disponible | Si | Gemma terms (segun modelo base) | safetensors, GGUF |
+| Qwen2-VL-2B | ~2B | 32k (segun version) | Si | Apache 2.0 | safetensors, GGUF |
+| SmolVLM-2B | ~2B | no disponible | Si | Apache 2.0 | safetensors, GGUF |
 
-No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
+La comparativa es orientativa: no se dispone de datos de rendimiento de dama-aibrain frente a estas alternativas. La principal diferencia practica es su empaquetado GGUF con mmproj separado y su origen como fine-tuning de Gemma 4 E2B.
 
 ## Limitaciones y advertencias
 
-- Modelo derivado sin documentacion tecnica: no se detallan datos de entrenamiento, hiperparametros ni evaluacion, lo que impide validar su calidad frente al modelo base.
-- Riesgo de alucinacion: inherente a los modelos generativos; al no haber benchmarks publicados, no puede acotarse su magnitud.
-- Sesgos conocidos: no documentados; al entrenarse sobre un modelo base de gran escala, puede heredar sesgos de este.
-- Limitacion idiomatica: el campo `language` solo declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de la licencia de Gemma 4 original, de la que el modelo hereda obligaciones.
-- Caveat de produccion: cero descargas y ausencia de validacion externa; no recomendable como dependencia critica sin evaluacion propia.
-- Formato de pesos: el repo publica safetensors de 10.3 GB, sin GGUF ni cuantizaciones adicionales listas para usar.
+- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- No se publican benchmarks, por lo que no hay evidencia cuantitativa de calidad frente al modelo base.
+- Riesgo de alucinacion inherente a los VLMs: puede describir objetos o texto inexistentes en la imagen, especialmente en imagenes de baja calidad o documentos densos.
+- La model card no detalla el dataset de fine-tuning, lo que impide evaluar sesgos introducidos por el ajuste.
+- Ollama no soporta ficheros mmproj separados; para usar la parte visual en Ollama hay que crear un modelo unificado bf16, lo que aumenta los requisitos de disco y memoria.
+- El repositorio ocupa 38,2 GB, lo que puede ser excesivo para entornos con almacenamiento limitado.
+- Aunque la licencia es Apache 2.0, el modelo base Gemma 4 puede estar sujeto a terminos adicionales de Google; conviene revisar la licencia del modelo base antes de uso comercial.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- Sin garantias de mantenimiento: el modelo tiene 0 likes y 285 descargas, lo que sugiere un proyecto de baja traccion y posible falta de soporte.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SHSemi/dama-aibrain
+- Hugging Face: https://huggingface.co/SHSemi/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
-- Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de Hugging Face: https://github.com/huggingface/trl
-- Documentacion de Gemma: https://ai.google.dev/gemma
+- Unsloth: https://github.com/unslothai/unsloth
+- llama.cpp: https://github.com/ggml-org/llama.cpp

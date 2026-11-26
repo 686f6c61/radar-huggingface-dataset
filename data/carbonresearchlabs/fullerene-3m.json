@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 257,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": 2774014,
   "parameters_human": "2.8M",
@@ -52,6 +52,67 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Document OCR",
+      "dataset": "OmniParseBench",
+      "metric": "Headline (mean of text, tables and layout)",
+      "value": 53
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniParseBench",
+      "metric": "Text tests passed (%)",
+      "value": 27.2
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniParseBench",
+      "metric": "Table tests passed (%)",
+      "value": 49.7
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniParseBench",
+      "metric": "Layout tests passed (%)",
+      "value": 81.9
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "olmOCR-Bench",
+      "metric": "Headline (mean of its test files, %)",
+      "value": 47
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "olmOCR-Bench",
+      "metric": "Table tests passed (%)",
+      "value": 54.3
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "olmOCR-Bench",
+      "metric": "Headers and footers tests passed (%)",
+      "value": 73.9
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniDocBench v1.6 (English pages)",
+      "metric": "Text edit distance (lower is better)",
+      "value": 0.164
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniDocBench v1.6 (English pages)",
+      "metric": "Table TEDS",
+      "value": 51.1
+    },
+    {
+      "task": "Document OCR",
+      "dataset": "OmniDocBench v1.6 (English pages)",
+      "metric": "Reading order edit distance (lower is better)",
+      "value": 0.287
+    }
+  ],
   "sources": []
 }

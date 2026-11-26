@@ -5,9 +5,9 @@
   "author": "KvcHub",
   "url": "https://huggingface.co/KvcHub/KaiLu-3-Pro",
   "created_at": "2026-11-16T08:23:42.000Z",
-  "updated_at": "2026-11-16T08:46:08.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-25T16:20:52.000Z",
+  "license": "kailu-3-pro-license",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -43,7 +43,7 @@
     "dataset:Intel/orca_dpo_pairs",
     "dataset:nvidia/HelpSteer2",
     "dataset:Anthropic/hh-rlhf",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us"
   ],
@@ -61,7 +61,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

@@ -2,99 +2,93 @@
 
 ## Resumen
 
-EmbeddingGemma 2 Core ML es una conversión del codificador de texto del modelo de embeddings `google/embeddinggemma-2` de Google, empaquetada en formato Core ML para su ejecución nativa en Apple Silicon (CPU, GPU y Neural Engine). La publica el usuario `anylab` y está pensada para aplicaciones que necesitan generar embeddings de frases en dispositivos Apple sin depender de un runtime de Python ni de servicios en la nube. El paquete contiene únicamente el codificador de texto, con los pesos y el tokenizador originales sin cambios.
+EmbeddingGemma 2 para Core ML es una conversión del codificador de texto EmbeddingGemma 2 de Google, realizada por AnyLab y publicada en Hugging Face. El modelo original es un encoder de frases (sentence-similarity) que transforma texto en vectores densos de 768 dimensiones y norma L2 unitaria, aptos para búsqueda semántica, agrupamiento y sistemas de recuperación. Esta versión no es un modelo generativo: es un extractor de características (feature-extraction) empaquetado en formato Core ML para ejecutarse en Apple Silicon, con soporte explícito para la Neural Engine de Apple.
 
-El artefacto principal es un `.mlpackage` de 574.431.459 bytes (547,82 MiB) que expone cinco funciones de forma fija (`s128`, `s256`, `s512`, `s1024` y `s2048`), todas compartiendo pesos y devolviendo un vector normalizado de 768 dimensiones. El cómputo del transformer se realiza en FP16 y la normalización L2 final en FP32. La ventana máxima es de 2048 tokens, y el modelo está etiquetado como multilingüe.
+La relevancia de esta conversión radica en el despliegue local: permite ejecutar embeddings multilingües en macOS 15 o superior sin depender de servicios en la nube, aprovechando la aceleración por hardware de los chips de Apple. El paquete ocupa 574,4 MB con pesos compartidos entre funciones, y ofrece cinco variantes de longitud de secuencia (`s128`, `s256`, `s512`, `s1024`, `s2048`) para ajustar el coste computacional al tamaño real de la entrada.
 
-Su relevancia práctica es que traslada un modelo de embeddings de Google a la inferencia on-device en macOS, con validación numérica documentada frente al modelo original en FP32 y con planes de cómputo que priorizan el Neural Engine. No se ha aplicado entrenamiento, poda, eliminación de cabeceras ni cuantización entera de pesos: es una conversión con preservación de pesos.
+La validación reportada por el autor se limita a un MacBook Air M2 con 16 GB de RAM, con una similitud coseno mínima de 0,999927 frente a 16 entradas de referencia del modelo original. Se trata de una conversión independiente, no de una publicación oficial de Google, y la seguridad de uso en aplicaciones completas sobre equipos de 8 GB queda sin medir según la propia model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (codificador de texto de EmbeddingGemma 2), exportado a Core ML |
-| Parametros totales | no disponible (el `.mlpackage` ocupa 574.431.459 bytes) |
+| Arquitectura | Encoder de texto Transformer (modelo base google/embeddinggemma-2), convertido a Core ML |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2048 tokens (funciones fijas de 128, 256, 512, 1024 y 2048) |
-| Tipos de cuantizacion | sin cuantización entera de pesos; pesos y cómputo en FP16, normalización L2 final en FP32 |
-| Idiomas soportados | multilingüe |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Core ML `.mlpackage` (con tokenizador en `tokenizer.json` y `tokenizer_config.json`) |
+| Longitud de contexto | hasta 2048 tokens (funciones `s128`, `s256`, `s512`, `s1024`, `s2048`) |
+| Tipos de cuantizacion | FP16 en el encoder; FP32 en la normalizacion final |
+| Idiomas soportados | multilingue |
+| Licencia | Apache-2.0 |
+| Formato de pesos | Core ML (`.mlpackage`), con pesos compartidos entre funciones |
 
 ## Arquitectura y entrenamiento
 
-El paquete es una conversión del codificador de texto de `google/embeddinggemma-2`, fijado al commit `914f7f89142e33e77833254d9c9b90c3cef7303b`. No se ha realizado entrenamiento adicional, poda, eliminación de cabeceras de aplicación ni cuantización entera: los pesos se exportan en FP16 y la normalización L2 se ejecuta en FP32. El tokenizador original se incluye sin modificar. El autor indica que solo está incluido el codificador de texto.
+Esta ficha describe una conversión, no un entrenamiento nuevo. El modelo subyacente es google/embeddinggemma-2, un encoder de texto de la familia Gemma orientado a la generación de embeddings de frases. La conversión de AnyLab preserva la arquitectura del encoder original y la traduce al formato Core ML, con precisión FP16 en el codificador y FP32 en la etapa de normalización final, de modo que la salida mantiene 768 dimensiones con normalización L2.
 
-La innovación técnica principal es el empaquetado de cinco funciones de longitud fija en un único paquete Core ML con pesos compartidos, lo que permite seleccionar el bucket más pequeño que encaje con la entrada (128, 256, 512, 1024 o 2048 tokens) y aprovechar el Neural Engine. Las funciones largas preservan el comportamiento de ventana deslizante del modelo original. El paquete se exportó con un objetivo mínimo de macOS 15 y debe compilarse en el dispositivo de despliegue, conservando el artefacto compilado en un directorio propiedad de la aplicación.
+El paquete incluye cinco funciones (`s128`, `s256`, `s512`, `s1024`, `s2048`) que corresponden a distintas longitudes máximas de secuencia. El autor recomienda elegir la función más pequeña que cubra la entrada después de aplicar prompts y tokens especiales, y cargar las funciones mayores bajo demanda, liberándolas cuando estén inactivas: compartir pesos en disco no comparte las asignaciones en tiempo de ejecución. La primera carga puede tardar minutos. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de embeddings de texto normalizados de 768 dimensiones para similitud semántica y búsqueda.
-- Extracción de características (`feature-extraction`) y cálculo de similitud entre frases (`sentence-similarity`).
-- Soporte multilingüe, según la etiqueta `multilingual` del modelo base.
-- Procesamiento de entradas de hasta 2048 tokens, con buckets fijos de 128, 256, 512, 1024 y 2048.
-- Prefijos de prompt documentados: `title: none | text: ` para documentos y `task: search result | query: ` para consultas.
-- Inferencia nativa en Apple Silicon mediante Core ML, sin necesidad de runtime de Python.
-- No incluye tool calling, agentes, visión, audio ni modo de razonamiento: es exclusivamente un codificador de texto para embeddings.
+- Generación de embeddings de texto de 768 dimensiones con normalización L2, orientados a similitud semántica y recuperación.
+- Extracción de características (feature-extraction) para frases, párrafos y documentos de hasta 2048 tokens según la función elegida.
+- Soporte multilingüe heredado del modelo base.
+- Ejecución en Apple Silicon mediante Core ML, con destino `cpuAndNeuralEngine` (que, según el autor, todavía permite trabajo en CPU).
+- Cinco perfiles de longitud de secuencia para equilibrar latencia y cobertura de contexto.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un encoder, no un modelo generativo.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Búsqueda semántica on-device en aplicaciones macOS: el modelo genera embeddings de consultas y documentos con el prefijo adecuado y permite calcular similitud coseno localmente, sin enviar texto a un servidor.
-- Indexación de notas y documentos personales: con ventana de hasta 2048 tokens, se pueden embeber fragmentos largos de notas, correos o artículos y almacenar los vectores de 768 dimensiones en un índice local.
-- Clasificación y agrupamiento de texto: los embeddings normalizados sirven para clustering, deduplicación y etiquetado semántico de colecciones multilingües en el dispositivo.
-- Filtrado y enrutamiento de contenido: comparar la similitud entre una consulta y un conjunto de plantillas o categorías precalculadas para decidir la ruta de una petición dentro de una app.
-- Asistentes de escritorio con recuperación local: integrar el paquete en una app Swift/Core ML para recuperar pasajes relevantes de una base documental propia antes de pasarlos a un modelo generativo.
-- Detección de duplicados y near-duplicates en corpus multilingües: el soporte multilingüe y la normalización L2 permiten comparar documentos en distintos idiomas con un umbral de similitud común.
-- Prototipado e investigación en macOS: validar pipelines de embeddings con Core ML Tools 9.0 y Python 3.12 en un Mac con Apple Silicon antes de portar la inferencia a Swift.
+- Búsqueda semántica local en macOS: indexar documentos y consultas con la función `s512` o `s1024` y calcular similitud coseno en el dispositivo, sin enviar texto a servidores externos.
+- Clasificación y agrupamiento de textos: generar embeddings de tickets, correos o reseñas y aplicar k-means o clasificadores ligeros sobre los vectores de 768 dimensiones.
+- Deduplicación de contenido: detectar documentos o entradas de catálogo casi idénticas comparando embeddings normalizados con un umbral de coseno.
+- Sistemas de recomendación basados en contenido: representar ítems y perfiles de usuario como vectores y recuperar los más próximos mediante búsqueda por vecinos.
+- Filtrado y moderación previa: usar la función `s128` para entradas cortas y de baja latencia, reservando `s2048` para documentos largos que requieran contexto completo.
+- Prototipado de RAG en aplicaciones nativas de Apple: integrar el `.mlpackage` en una app Swift y combinar los embeddings con un almacén vectorial local para recuperación aumentada.
+- Análisis multilingüe en el dispositivo: comparar textos en distintos idiomas en un mismo espacio vectorial sin depender de APIs en la nube.
 
 ## Benchmarks y rendimiento
 
-| Medición | Resultado |
-|---|---|
-| Forward reescrito frente a HF FP32 original, 16 fixtures | Coseno mínimo 0,999999999997; error absoluto máximo 2,82e-7 |
-| Core ML nativo frente a HF FP32 original, 16 fixtures | Coseno mínimo 0,99992672; error absoluto máximo 0,00221308 |
-| Fixtures largos | Documento de 1151 tokens, texto multilingüe de 1630 tokens, exactamente 2048 tokens y texto corto rellenado a 2048 |
-| Corpus FiQA | 1499/1500 documentos; un documento de 2212 tokens excluido sin truncar |
-| Normas del corpus | 0,999999893–1,000000097; vectores de 768 dimensiones finitos y no nulos |
-| Solapamiento con salida propia anterior | Las 1491 salidas solapadas permanecen exactamente iguales |
-
-Validado el 16 de noviembre de 2026 en un MacBook Air M2 con 16 GiB de RAM y macOS 27.2.1. Los cinco planes de cómputo de Core ML prefieren el ANE para el núcleo del transformer. No se han publicado resultados de benchmarks estándar (MMLU, MTEB, etc.) en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una validación de fidelidad de la conversión: similitud coseno mínima de 0,999927 frente a 16 entradas de referencia del modelo original, medida en un MacBook Air M2 con 16 GB de RAM. No se proporcionan cifras de MMLU, MTEB ni latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM/espacio: el `.mlpackage` ocupa 547,82 MiB; el repo completo pesa 0,6 GB.
-- Hardware validado: MacBook Air M2 con 16 GiB de RAM y macOS 27.2.1.
-- Objetivo mínimo de despliegue: macOS 15.
-- Cabe en equipos Apple Silicon de gama consumer (serie M1, M2, M3, M4) con memoria unificada; no se especifican requisitos para GPUs NVIDIA ni AMD.
-- Despliegue nativo mediante Core ML en Swift, sin runtime de Python; para comprobaciones interactivas se usa Python 3.12 con Core ML Tools 9.0, NumPy y `tokenizers`.
-- Los planes de cómputo prefieren el Neural Engine para el transformer; se puede forzar `CPU_AND_NE` con Core ML Tools.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Plataforma: Apple Silicon con macOS 15 o superior; la conversión está orientada a la Neural Engine de Apple.
+- Almacenamiento: 574,4 MB para el paquete Core ML con pesos compartidos, más el tokenizador y ficheros auxiliares (repositorio de 0,6 GB).
+- Memoria: validado en un M2 Air con 16 GB de RAM; el comportamiento en equipos de 8 GB no está medido según el autor.
+- Memoria en tiempo de ejecución: cargar varias funciones simultáneamente multiplica las asignaciones, aunque los pesos se compartan en disco; se recomienda cargar bajo demanda y liberar cuando estén inactivas.
+- Tiempo de carga: la primera carga puede tardar minutos.
+- GPU dedicadas (A100, H100, RTX 4090): no aplica, el formato Core ML está pensado para hardware Apple.
+- Opciones de despliegue: Core ML en apps macOS (por ejemplo, vía Swift), con el destino `cpuAndNeuralEngine`; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son compatibles con este formato.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| anylab/embeddinggemma-2-coreml | no disponible (paquete de 547,82 MiB) | 2048 tokens | Core ML | Apache 2.0 | Hugging Face |
-| google/embeddinggemma-2 (modelo base) | no disponible | no disponible | safetensors (original) | no disponible en la información | Hugging Face |
-| Otros modelos de embeddings on-device para Apple | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Tipo | Dimension de embedding | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| anylab/embeddinggemma-2-coreml | Encoder de texto (conversion Core ML) | 768 | hasta 2048 tokens | Core ML | Apache-2.0 | Hugging Face, 291 descargas |
+| google/embeddinggemma-2 | Encoder de texto (modelo base) | 768 | no disponible en la informacion | safetensors (presumible, no confirmado) | no disponible en la informacion | Hugging Face |
+| Otros encoders multilingues de la familia Gemma | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo incluye el codificador de texto: no hay cabeceras de aplicación, proyección específica ni truncado Matryoshka; esas operaciones son responsabilidad de la aplicación.
-- Límite estricto de 2048 tokens: las entradas que lo superen deben rechazarse o enrutarse a otro modelo; el paquete no aplica política de truncado.
-- Los buckets son fijos (128, 256, 512, 1024, 2048): hay que elegir el más pequeño que encaje tras añadir prompts y tokens especiales.
-- El paquete debe compilarse en el dispositivo de despliegue y el artefacto compilado conservarse en un directorio propiedad de la aplicación.
-- La validación nativa en Swift/Core ML es independiente de la integración en aplicaciones de producción, según el autor.
-- No hay datos publicados sobre sesgos, tasas de alucinación ni rendimiento en benchmarks estándar.
-- La licencia Apache 2.0 permite uso comercial, pero se debe conservar `LICENSE`, `NOTICE` y los archivos de `licenses/` con la atribución correspondiente.
-- El modelo base está etiquetado como multilingüe, pero no se detalla la lista concreta de idiomas ni su cobertura.
+- Es una conversión independiente de AnyLab, no una publicación oficial de Google; para producción conviene fijar una revisión inmutable de Hugging Face y verificar los hashes de los ficheros.
+- El modelo solo genera embeddings: no produce texto, no razona y no soporta herramientas ni agentes.
+- La validación es limitada: 16 entradas de referencia en un único equipo (M2 Air, 16 GB); no hay mediciones de calidad en tareas reales ni de seguridad en 8 GB.
+- Cargar varias funciones a la vez incrementa el uso de memoria en tiempo de ejecución pese a compartir pesos en disco.
+- La primera carga puede tardar minutos, lo que afecta a la experiencia en aplicaciones interactivas.
+- El destino `cpuAndNeuralEngine` no garantiza ejecución exclusiva en la Neural Engine; parte del trabajo puede recaer en la CPU.
+- No se detallan sesgos, tasas de alucinación ni limitaciones idiomáticas específicas del modelo base en la información disponible.
+- Licencia Apache-2.0, que permite uso comercial, pero deben respetarse las atribuciones indicadas en NOTICE y en los ficheros de licencias incluidos (por ejemplo, QVAC-MIT).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/anylab/embeddinggemma-2-coreml
-- Modelo base: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
-- Validador nativo Swift y reproducción: https://github.com/anyproto/any/tree/6424fab8cb6bd2874ce08e85d9081e24ff96902f/scripts/embedbench/research/eg2_coreml
-- Informe de validación: `validation/2026-11-16-five-bucket/REPORT.txt` (dentro del repositorio)
-- Resumen de validación de release: `validation/2026-11-16-five-bucket/release-validation.json` (dentro del repositorio)
+- Modelo base: https://huggingface.co/google/embeddinggemma-2
+- Documentación de uso, prompts y formas de entrada: docs/usage.md (dentro del repositorio)
+- Instrucciones de conversión y reproducción: conversion/README.md (dentro del repositorio)
+- Mediciones y limitaciones: docs/technical-notes.md (dentro del repositorio)
+- Manifiesto de versión con hashes: release-manifest.json (dentro del repositorio)
+- Licencia y atribución: NOTICE (dentro del repositorio)

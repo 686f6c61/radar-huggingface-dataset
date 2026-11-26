@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 251,
+  "downloads_30d": 247,
   "trending_score": 0,
   "parameters": 3128563200,
   "parameters_human": "3.13B",
@@ -104,31 +104,5 @@
       "value": 0.2658
     }
   ],
-  "sources": [
-    {
-      "title": "Facebook",
-      "url": "https://www.facebook.com/",
-      "snippet": "Connect and share with friends, family, and the world on Facebook."
-    },
-    {
-      "title": "Facebook",
-      "url": "https://www.facebook.com/facebook/",
-      "snippet": "Facebook. 154,706,811 likes · 231,258 talking about this. Community Values We believe people can do more together than alone and …"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://apps.facebook.com/reg/",
-      "snippet": "Create an account to connect with friends, family and communities of people who share your interests."
-    },
-    {
-      "title": "Facebook",
-      "url": "https://upload.facebook.com/login/",
-      "snippet": "Explore the things you love. Log into Facebook"
-    },
-    {
-      "title": "Log Into Facebook",
-      "url": "https://secure.facebook.com/login/",
-      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
-    }
-  ]
+  "sources": []
 }

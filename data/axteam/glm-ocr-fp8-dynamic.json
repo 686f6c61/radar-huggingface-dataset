@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "axteam/GLM-OCR-FP8-dynamic · Hugging Face",
-      "url": "https://huggingface.co/axteam/GLM-OCR-FP8-dynamic",
-      "snippet": "Image-Text-to-Text model with 1B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "GitHub - zai-org/GLM-OCR: GLM-OCR: Accurate × Fast × Comprehensive",
-      "url": "https://github.com/zai-org/GLM-OCR",
-      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
-    },
-    {
-      "title": "GLM-OCR — Cyberax",
-      "url": "https://cyberax.com/ai-playbook/models/glm-ocr",
-      "snippet": "Z.ai&#x27;s small open OCR model for complex documents — under 1B parameters, built on the GLM-V architecture, and strong on tables, formulas, seals and code-heavy pages. Its SDK adds layout analysis for full document parsing."
-    },
-    {
-      "title": "GitHub - xiaozhejjj/glm-ocr: GLM-OCR: Accurate × Fast × Comprehensive",
-      "url": "https://github.com/xiaozhejjj/glm-ocr",
-      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
-    },
-    {
-      "title": "GLM-OCR - Overview - Z.AI DEVELOPER DOCUMENT",
-      "url": "https://docs.z.ai/guides/vlm/glm-ocr",
-      "snippet": "Overview GLM-OCR is a lightweight professional OCR model with parameters as small as 0.9B, yet it achieves state-of-the-art performance across multiple capabilities. It sets a new benchmark for document parsing with its \"small size and high accuracy.\" Key features include: Performance SOTA: Scored 94.62 points to top OmniDocBench V1.5 and achieved current best performance across multiple ..."
-    }
-  ]
+  "sources": []
 }

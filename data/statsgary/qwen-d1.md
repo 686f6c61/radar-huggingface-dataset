@@ -2,90 +2,94 @@
 
 ## Resumen
 
-Qwen-D1 es un ajuste fino de tipo LoRA sobre el modelo base unsloth/Qwen3.5-4B, desarrollado por StatsGary y publicado en Hugging Face. No se trata de un modelo de chat generalista, sino de un llamado "FastDecisionModel": un backbone LLM de 4.000 millones de parametros al que se le acopla una cabeza de decision personalizada para resolver, en una sola pasada, multiples tareas estructuradas de clasificacion, decision binaria y puntuacion de severidad o urgencia sobre un texto de entrada.
+Qwen-D1 es un modelo de decisión (decision model) desarrollado por StatsGary a partir del modelo base unsloth/Qwen3.5-4B. A diferencia de un modelo generativo convencional, Qwen-D1 no produce texto: recibe un estado de entrada (`state`) junto con preguntas tipadas (`choice`, `noul` para sí/no y `score`) y devuelve probabilidades calibradas para cada opción. Está afinado con el `FastDecisionModel` de Unsloth sobre el dataset LocalLLaMA/typed-decisions, e incorpora una cabeza de decisión específica junto con un proceso de calibración.
 
-El modelo esta pensado para escenarios donde se necesita evaluar varias preguntas estructuradas sobre un mismo documento sin encadenar varias llamadas al LLM. En lugar de hacer prompting secuencial para cada criterio, Qwen-D1 produce en una unica inferencia las respuestas a todas las preguntas definidas por la cabeza de decision, lo que reduce latencia y coste en pipelines de triaje.
+El modelo se presenta como un "system-one decision model" orientado a tareas de enrutamiento, clasificación y puntuación dentro de flujos conversacionales o de agentes. Su relevancia actual radica en que ofrece una alternativa determinista y probabilística a la generación de texto libre para decisiones estructuradas, lo que facilita la integración en pipelines donde se necesita una salida acotada y calibrada en lugar de una respuesta en lenguaje natural.
 
-La relevancia actual del modelo es limitada pero concreta: es un experimento de investigacion publicado en noviembre de 2026, sin descargas ni likes en el momento de redactar esta ficha, y con una model card muy escueta. Su interes reside en la arquitectura hibrida (backbone Qwen3.5-4B mas decision head) y en el uso de Unsloth para el entrenamiento eficiente con LoRA, mas que en un rendimiento demostrado.
+Qwen-D1 tiene 4.237.797.892 parámetros totales y se distribuye en tres formatos: adaptadores LoRA de Unsloth (0,2 GB), safetensors fusionados en 16 bits con cabeza de decisión (8,8 GB) y GGUF en Q8_0 y Q4_K_M (7,1 GB), este último compatible con Ollama y llama.cpp. La licencia es LGPL-3.0 y el modelo está etiquetado únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5-4B) con cabeza de decision personalizada (FastDecisionModel) |
-| Parametros totales | 4.000 millones (heredados del base Qwen3.5-4B; no se especifica el recuento exacto) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar via llama.cpp/GGUF, no confirmado por el autor) |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B) con cabeza de decisión añadida y calibración |
+| Parametros totales | 4.237.797.892 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens (según ejemplo de carga con `max_seq_length = 2048`); no se especifica el máximo del modelo base |
+| Tipos de cuantizacion | 16 bits (safetensors fusionado), Q8_0 y Q4_K_M (GGUF) |
+| Idiomas soportados | en (inglés) |
 | Licencia | LGPL-3.0 |
-| Formato de pesos | safetensors (adaptador LoRA sobre el base) |
+| Formato de pesos | safetensors, GGUF, adaptadores LoRA (PEFT) |
+| Modelo base | unsloth/Qwen3.5-4B |
+| Dataset de ajuste | LocalLLaMA/typed-decisions |
+| Tamaño del repo | 33,9 GB |
+| Descargas | 230 |
+| Librería | peft |
 
 ## Arquitectura y entrenamiento
 
-Qwen-D1 parte del backbone unsloth/Qwen3.5-4B, un transformer decoder-only de 4.000 millones de parametros. Sobre ese backbone se anade una cabeza de decision personalizada que transforma la salida del modelo en un conjunto de decisiones estructuradas: clasificacion, respuestas binarias si/no y puntuaciones de severidad o urgencia. El modelo se presenta como un "Decision Head over LLM Backbone", es decir, un unico forward pass que responde simultaneamente a varias preguntas sobre el mismo texto de entrada.
+Qwen-D1 parte de la arquitectura transformer de Qwen3.5-4B, un modelo de 4B parámetros, y le añade una cabeza de decisión (`joint_head.safetensors` junto con `joint_head_config.json`) que transforma las representaciones internas en distribuciones de probabilidad sobre opciones tipadas. El ajuste se realiza mediante LoRA con el framework Unsloth (`FastDecisionModel`), lo que permite entrenar de forma eficiente y conservar los adaptadores por separado (0,2 GB) además de la versión fusionada en 16 bits.
 
-El entrenamiento se realizo con la libreria Unsloth, usando LoRA con rango 16 y alpha 16, sobre el dataset LocalLLaMA/typed-decisions. No se documenta el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si hubo fases de RLHF o DPO. Tampoco se detalla la innovacion de decodificacion ni tecnicas de atencion especificas; la model card es practicamente un esqueleto y no aporta informacion sobre la funcion de perdida de la cabeza de decision ni sobre como se combinan las multiples salidas.
+El entrenamiento se lleva a cabo sobre el dataset LocalLLaMA/typed-decisions, diseñado específicamente para decisiones tipadas con tres modalidades: elección entre criterios (`choice`), respuesta binaria sí/no (`noul`) y puntuación sobre una escala (`score`). El modelo incorpora un componente de calibración que ajusta las probabilidades de salida. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. Una innovación destacable es que el modelo no genera texto: expone sus respuestas a través de un endpoint específico `/v1/systemone` en Ollama y llama.cpp, lo que lo diferencia de los modelos conversacionales convencionales.
 
 ## Capacidades
 
-- Evaluacion multi-opcion en una sola pasada: responde varias preguntas estructuradas sobre un mismo texto sin necesidad de multiples llamadas.
-- Clasificacion de texto: asignacion de categorias predefinidas a la entrada.
-- Decisiones binarias si/no: util para filtros y triaje rapido.
-- Puntuacion de severidad y urgencia: escalas numericas sobre el contenido analizado.
-- Procesamiento de texto en ingles: el modelo declara soporte unicamente para ingles.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad de vision, audio ni modo de pensamiento (thinking mode).
-- No se documenta capacidad multilingue mas alla del ingles.
+- Clasificación y enrutamiento por elección (`choice`): asigna un estado de entrada a una de varias categorías definidas con criterios descriptivos.
+- Respuestas booleanas (`noul`): determina sí o no ante una pregunta concreta sobre el estado.
+- Puntuación calibrada (`score`): devuelve una distribución de probabilidad sobre una escala ordinal de criterios.
+- Salida de probabilidades calibradas para cada opción, lo que permite umbrales de confianza y abstención.
+- Procesamiento de estados de entrada en lenguaje natural (por ejemplo, mensajes de clientes o tickets).
+- Integración con tooling de agentes mediante el endpoint `/v1/systemone` compatible con Ollama y llama.cpp.
+- Soporte de ajuste adicional (fine-tuning) a partir de los adaptadores LoRA incluidos.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idiomas del modelo.
+- No soporta generación de texto libre, tool calling generativo ni razonamiento multi-paso en el sentido de un LLM conversacional.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: el modelo puede clasificar cada ticket en categoria, decidir si requiere escalado (si/no) y puntuar su urgencia en una sola inferencia, lo que encaja con la cabeza de decision multi-pregunta y reduce el numero de llamadas frente a un LLM generalista.
-- Moderacion de contenido: evaluacion simultanea de varios criterios (toxicidad, spam, relevancia) sobre un mismo mensaje, aprovechando que el modelo responde a multiples preguntas estructuradas en un unico pase.
-- Enrutamiento de correos o formularios: clasificacion del tipo de solicitud y decision binaria sobre si cumple los requisitos para procesamiento automatico, con una puntuacion de prioridad asociada.
-- Filtrado previo en pipelines de datos: descarte rapido de documentos que no cumplen varios criterios a la vez, usando el modelo como primera etapa antes de un LLM mayor.
-- Analisis de incidencias: asignacion de severidad y urgencia a informes de error o alertas, con decision binaria sobre si requieren intervencion inmediata.
-- Investigacion sobre cabezas de decision: el modelo sirve como referencia para estudiar arquitecturas que sustituyen el prompting secuencial por una cabeza de decision entrenada, comparando latencia y consistencia frente a un LLM con prompts encadenados.
-- Prototipado de clasificadores multi-etiqueta: al estar basado en un backbone de 4B y entrenado con LoRA, puede ajustarse de nuevo con Unsloth sobre dominios especificos sin requerir hardware de gran escala.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto de un ticket y devuelve la probabilidad de que corresponda a facturación, soporte técnico u otras colas, permitiendo asignación automática con umbrales de confianza.
+- Detección de intención de reembolso: mediante preguntas tipo `noul`, se determina si un cliente solicita un reembolso y se activa el flujo correspondiente en el CRM.
+- Priorización de urgencia: con preguntas tipo `score`, se asigna una probabilidad a niveles como "no urgente", "pronto" o "hoy", útil para colas de atención con SLA.
+- Moderación y clasificación de contenido: clasificación binaria o multietiqueta de mensajes según criterios predefinidos, con probabilidades que permiten revisión humana en casos dudosos.
+- Triaje en pipelines de agentes: el modelo actúa como componente de decisión determinista dentro de un agente mayor, seleccionando la siguiente acción o herramienta en función del estado de la conversación.
+- Automatización de encuestas y formularios: conversión de respuestas abiertas en categorías o puntuaciones calibradas para análisis posterior.
+- Despliegue en local con Ollama o llama.cpp: al disponer de GGUF Q4_K_M y Q8_0, puede ejecutarse en entornos sin GPU dedicada para decisiones de baja latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente: "No GPU benchmarks yet. Run the Benchmark section of the notebook to add one."
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa del backbone de 4B, en FP16 requeriria aproximadamente 8 GB de VRAM; en cuantizacion de 4 bits, alrededor de 3-4 GB. Estas cifras son estimaciones genericas para un modelo de 4B y no estan confirmadas por el autor.
-- GPU recomendadas: no disponible. Por tamano del backbone, cabria esperar funcionamiento en GPUs consumer tipo RTX 3060 12 GB, RTX 4070, RTX 4090, asi como en A100/H100 para despliegues de mayor throughput, pero el autor no lo especifica.
-- Compatibilidad con GPU consumer: probable por el tamano del backbone (4B), aunque la cabeza de decision personalizada puede requerir codigo especifico no incluido en los runners estandar.
-- Opciones de despliegue: no disponible. Al ser un adaptador LoRA con cabeza personalizada, no se garantiza compatibilidad directa con vLLM, llama.cpp, Ollama o TGI sin trabajo de integracion adicional.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 9-10 GB para la versión safetensors en 16 bits; alrededor de 5-6 GB para GGUF Q8_0; en torno a 3-4 GB para Q4_K_M (estimaciones orientativas según el tamaño de los archivos, no confirmadas por el autor).
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 4090 (24 GB) o A100/H100 permiten ejecutar la versión 16 bits con holgura; GPUs consumer de 8 GB pueden alojar Q4_K_M.
+- Cabe en GPU consumer: sí, especialmente en cuantización Q4_K_M y Q8_0; la versión fusionada de 16 bits requiere al menos 10 GB de VRAM.
+- Opciones de despliegue: Unsloth Decision API (`unsloth studio`), Ollama 0.35+, llama.cpp b11443+, y `FastDecisionModel` de Unsloth para Python.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qwen-D1 (StatsGary) | 4B | no disponible | LGPL-3.0 | LoRA con cabeza de decision multi-pregunta |
-| Qwen3.5-4B (unsloth) | 4B | no disponible | no disponible en la informacion | LLM base generalista |
-| Alternativas de clasificacion multi-etiqueta | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-D1 | 4,24B | 2048 (config. de ejemplo) | Modelo de decisión (no generativo) | LGPL-3.0 | Hugging Face, GGUF, Ollama, llama.cpp |
+| Qwen3.5-4B (base) | ~4B | no disponible | LLM generativo | no disponible en la información | Hugging Face |
+| Modelos de clasificación tipo BERT | variable (típicamente <1B) | 512 típico | Clasificador discriminativo | variable | Hugging Face |
 
-No se dispone de datos de rendimiento ni de modelos comparables documentados en la informacion proporcionada. La comparacion con el base Qwen3.5-4B es estructural (mismo backbone), no de rendimiento.
+La comparación con alternativas de la misma categoría (modelos de decisión tipada con salida calibrada) no está disponible en la información proporcionada. Frente a un LLM generativo como su base Qwen3.5-4B, Qwen-D1 sacrifica la generación de texto a cambio de salidas estructuradas y calibradas, lo que lo hace más adecuado para enrutamiento y clasificación, pero inútil para tareas conversacionales.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con cero descargas y cero likes en el momento de la publicacion; no hay evidencia de validacion por parte de la comunidad.
-- La model card no documenta sesgos conocidos, pero al entrenarse sobre un dataset no descrito (LocalLLaMA/typed-decisions) y solo en ingles, es probable que herede sesgos del corpus y del backbone.
-- Riesgo de alucinacion inherente a un LLM de 4B; la cabeza de decision puede producir clasificaciones o puntuaciones inconsistentes fuera de la distribucion de entrenamiento.
-- Soporte unicamente en ingles: no apto para produccion en castellano u otros idiomas sin validacion previa.
-- Longitud de contexto no documentada: no se puede garantizar el comportamiento con entradas largas.
-- Licencia LGPL-3.0: permite uso comercial con obligaciones de copyleft sobre la libreria modificada; conviene revisar los terminos antes de integrarlo en productos propietarios.
-- La cabeza de decision personalizada implica que el modelo no es un drop-in replacement de un LLM estandar; requiere el codigo de inferencia adecuado, no documentado en la model card.
-- No se documentan soporte de tool calling, agentes ni modo de razonamiento, por lo que no deberia asumirse en produccion.
-- El repositorio ocupa 0,2 GB, coherente con un adaptador LoRA, no con pesos completos; es necesario descargar tambien el modelo base.
+- No genera texto: no puede usarse como chatbot ni para tareas de generación libre; solo responde en el endpoint `/v1/systemone`.
+- Solo soporta inglés según la etiqueta de idiomas; el rendimiento en otros idiomas no está garantizado.
+- Las cuantizaciones k-quant como Q4_K_M pueden desplazar las probabilidades y cambiar respuestas en casos ajustados; el autor recomienda Q8_0 para mayor fidelidad.
+- Una carga con `AutoModelForCausalLM` ignora la cabeza de decisión; es necesario usar `FastDecisionModel` o el endpoint correspondiente.
+- No hay benchmarks publicados, por lo que el rendimiento real frente a alternativas no está validado.
+- Riesgo de sesgos y alucinación: al derivar de un LLM y calibrarse sobre un dataset específico, puede heredar sesgos del modelo base y del dataset typed-decisions; las probabilidades no deben interpretarse como certeza absoluta.
+- Licencia LGPL-3.0: permite uso comercial, pero impone obligaciones de copyleft sobre la biblioteca modificada; conviene revisar con asesoría legal antes de integrarlo en productos propietarios.
+- El modelo tiene pocas descargas (230) y un solo like, lo que sugiere poca validación comunitaria.
+- La longitud de contexto efectiva no está confirmada más allá del ejemplo de 2048 tokens.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/StatsGary/Qwen-D1
+- Hugging Face: https://huggingface.co/StatsGary/Qwen-D1
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
-- Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
-- Libreria Unsloth: https://github.com/unslothai/unsloth
+- Dataset: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

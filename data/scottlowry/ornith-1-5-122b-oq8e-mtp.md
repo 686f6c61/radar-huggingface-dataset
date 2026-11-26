@@ -1,90 +1,84 @@
 # scottlowry/Ornith-1.5-122B-oQ8e-mtp
 
 ## Resumen
+Ornith-1.5-122B-oQ8e-mtp es una cuantizacion mixta de 8 bits del modelo ornith-ai/Ornith-1.5-122B, publicada por el usuario scottlowry. El checkpoint conserva la arquitectura original (etiquetada como qwen3_5_moe en los metadatos de Hugging Face), incluye la torre de vision y una cabeza MTP (multi-token prediction) que se conserva en el proceso de cuantizacion. El resultado es un artefacto de 133,3 GB con 125.086 millones de parametros logicos y una media efectiva de 8,523 bits por peso.
 
-Ornith-1.5-122B-oQ8e-mtp es una cuantización de precisión mixta del modelo `ornith-ai/Ornith-1.5-122B`, publicada por el usuario `scottlowry` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a ejecución en Apple Silicon mediante MLX, generada con la herramienta oQ (oMLX v0.7.1). El checkpoint ocupa 133,3 GB en disco y contiene 125.086.497.008 parámetros reales según los metadatos de safetensors, con una media efectiva de 8,523 bits por peso.
+La relevancia de esta ficha es doble. Por un lado, documenta una tecnica de cuantizacion mixta (oQ, del proyecto oMLX) que asigna precision distinta por tensor: el 96,7 % de los pesos se guarda en affine 8-bit con grupo 64, un 2,9 % en affine 8-bit con grupo 128 y un 0,4 % (0,511B) se mantiene en BF16, presumiblemente capas sensibles a la cuantizacion. Por otro, el formato es MLX, es decir, esta pensado para ejecutarse en Apple Silicon mediante el framework MLX, no en GPUs NVIDIA.
 
-El repositorio conserva tres componentes diferenciados: el modelo de lenguaje (122,112 B de parámetros), una torre de visión (0,451 B) y una cabeza de multi-token prediction o MTP (2,524 B). La presencia de la cabeza MTP y de la torre de visión indica que el modelo base es multimodal y que incorpora decodificación especulativa nativa, aunque la información disponible no detalla el funcionamiento exacto ni el contexto máximo soportado.
-
-Su relevancia es práctica: permite ejecutar un modelo de escala ~122B en hardware de Apple con memoria unificada, algo imposible con los pesos originales en BF16 (que rondarían los 240 GB solo para el modelo de lenguaje). La ficha se limita a lo verificable en los metadatos del repositorio; no hay model card del autor del modelo base, ni benchmarks, ni licencia declarada en esta publicación.
+Se trata de una publicacion de comunidad con 265 descargas y 1 like en el momento de la consulta, sin model card detallada mas alla de las tablas de cuantizacion. No se dispone de informacion sobre licencia, idiomas, pipeline ni datos de entrenamiento del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (etiqueta `qwen3_5_moe` en el repositorio); incluye torre de vision y cabeza MTP |
-| Parametros totales | 125.086.497.008 (125,09 B): 122,112 B en el modelo de lenguaje, 2,524 B en la cabeza MTP y 0,451 B en vision |
+| Arquitectura | Transformer MoE (tag qwen3_5_moe); incluye torre de vision y cabeza MTP |
+| Parametros totales | 125.086.497.008 (125,086B logicos) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Cuantizacion mixta oQ (oMLX v0.7.1): affine 8-bit con grupo 64 (120,977 B), affine 8-bit con grupo 128 (3,599 B) y BF16 (0,511 B); media efectiva de 8,523 bits por peso |
+| Tipos de cuantizacion | Mixta oQ: affine 8-bit grupo 64 (120,977B), affine 8-bit grupo 128 (3,599B), BF16 (0,511B); media efectiva 8,523 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors en formato MLX (`library_name: mlx`) |
+| Formato de pesos | safetensors (MLX), libreria mlx |
+| Tamano del repo | 133,3 GB (124,118 GiB) |
+| Desglose de almacenamiento | LM: 122,112B / 120,763 GiB; vision: 0,451B / 0,841 GiB; cabeza MTP: 2,524B / 2,514 GiB |
+| Modelo base | ornith-ai/Ornith-1.5-122B |
+| Herramienta de cuantizacion | oQ (oMLX v0.7.4.dev1) |
 
 ## Arquitectura y entrenamiento
+El checkpoint es una cuantizacion, no un entrenamiento nuevo. La arquitectura subyacente se identifica en los tags como qwen3_5_moe, lo que sugiere un transformer con mezcla de expertos (MoE) de la familia Qwen 3.5, aunque no se dispone de confirmacion oficial del autor del modelo base ni del numero de expertos, el ratio de activacion ni el total de tokens de entrenamiento. El checkpoint incluye tres componentes diferenciados: el modelo de lenguaje (122,112B parametros logicos), una torre de vision (0,451B) y una cabeza MTP de prediccion multi-token (2,524B), lo que indica capacidades multimodales y decodificacion especulativa nativa.
 
-La etiqueta de arquitectura del repositorio es `qwen3_5_moe`, lo que sitúa el modelo base en la familia de transformers con mezcla de expertos de Qwen 3.5. El checkpoint incluye explícitamente una cabeza MTP de 2,524 B de parámetros, un componente de multi-token prediction que en esta familia se emplea para decodificación especulativa: el modelo predice varios tokens por paso y un mecanismo de verificación acepta el prefijo correcto, reduciendo el número de pasos de decodificación. También incluye una torre de visión de 0,451 B, lo que confirma que el modelo base procesa imágenes además de texto.
-
-No se dispone de información sobre el entrenamiento del modelo original: ni número de tokens, ni composición del dataset, ni si hubo fases de RLHF, DPO o aprendizaje por refuerzo con verificación. Tampoco se detalla el número de expertos, el enrutador ni cuántos parámetros se activan por token. Lo único documentado en esta publicación es el proceso de cuantización: oQ asigna 8 bits con grupo 64 al 96,7 % de los pesos y 8 bits con grupo 128 a un 2,9 %, dejando en BF16 un 0,4 % (0,511 B) que presumiblemente corresponde a capas sensibles a la precisión, aunque el repositorio no identifica qué tensores son.
+La innovacion tecnica principal es el esquema de cuantizacion mixta de oQ. En lugar de aplicar una precision uniforme, el algoritmo asigna affine 8-bit con grupo 64 a la mayoria de los tensores (120,977B), reserva affine 8-bit con grupo 128 para una fraccion pequena (3,599B) y mantiene 0,511B en BF16. El resultado es un checkpoint de 124,118 GiB que ocupa un 33 % menos que su equivalente en BF16 (unos 250 GB para 125B parametros) manteniendo una precision nominal de 8 bits. La cabeza MTP se conserva intacta en la cuantizacion, lo que permite usar decodificacion especulativa en MLX.
 
 ## Capacidades
-
-- Generación de texto y razonamiento general, heredados del modelo base de 122B.
-- Procesamiento de imágenes: el checkpoint incluye una torre de visión de 0,451 B de parámetros, por lo que el modelo es multimodal entrada de imagen y texto.
-- Decodificación especulativa mediante cabeza MTP, orientada a mejorar el throughput en MLX.
-- Capacidad de mezcla de expertos, con activación dispersa por token (número de expertos activos no disponible).
-- Soporte de tool calling y function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
-- Capacidades multilingües: no disponible el listado de idiomas.
-- Modo de razonamiento explícito (thinking): no confirmado en la información disponible.
+- Generacion de texto y razonamiento: heredadas del modelo base Ornith-1.5-122B, sin datos publicados de evaluacion en esta ficha.
+- Vision: el checkpoint incluye una torre de vision de 0,451B parametros, por lo que se espera soporte de entrada de imagenes, aunque no se detalla la resolucion ni el formato.
+- Prediccion multi-token (MTP): la cabeza de 2,524B permite decodificacion especulativa para acelerar la inferencia.
+- Cuantizacion selectiva: 0,511B parametros en BF16 preservan las capas mas sensibles a la perdida de precision.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
-
-- Inferencia local de gran escala en Mac: un estudio o un desarrollador individual puede ejecutar un modelo de ~122B en un Mac Studio con memoria unificada suficiente, sin depender de APIs externas ni de clústeres de GPU, usando MLX como runtime.
-- Prototipado de asistentes multimodales: al incluir torre de visión, permite construir demos de descripción de imágenes, extracción de datos de capturas o documentos escaneados y respuesta en lenguaje natural, todo en local.
-- Evaluación comparativa de cuantizaciones: el checkpoint documenta con precisión la distribución de bits por tensor, lo que lo convierte en un punto de referencia útil para medir la pérdida de calidad de 8,523 bits frente a BF16 en tareas concretas.
-- Generación de código y asistencia técnica en entornos con requisitos de privacidad: al ejecutarse en hardware propio sin tráfico de red, es apto para repositorios y datos que no pueden salir de la organización.
-- Investigación sobre decodificación especulativa: la cabeza MTP incluida permite experimentar con técnicas de predicción multi-token y medir aceleraciones reales sobre MLX.
-- Procesamiento por lotes de documentos largos en local: análisis, resumen y extracción estructurada de corpus que no se pueden enviar a servicios en la nube, sujeto a la ventana de contexto real del modelo base (no documentada aquí).
-- Ajuste fino ligero o evaluación de adaptadores: al estar en MLX y safetensors, sirve como base para pruebas de LoRA o de ajuste de bajo rango en Apple Silicon.
+- Inferencia local en Apple Silicon de alta gama: el formato MLX y el tamano de 124 GiB permiten ejecutar el modelo en un Mac Studio con memoria unificada de 192 GB o superior, algo inviable con el checkpoint BF16 original (unos 250 GB).
+- Prototipado de asistentes multimodales en escritorio: la torre de vision incluida permite experimentar con tareas de imagen a texto sin depender de servicios en la nube, siempre que el hardware tenga memoria suficiente.
+- Evaluacion de tecnicas de cuantizacion: el desglose por tipo de tensor (grupo 64, grupo 128, BF16) sirve como referencia para estudiar el impacto de la precision mixta en modelos MoE de gran tamano.
+- Investigacion sobre decodificacion especulativa: la cabeza MTP conservada permite medir la aceleracion por prediccion multi-token en MLX frente a decodificacion autoregresiva clasica.
+- Fine-tuning ligero o LoRA sobre MLX: el checkpoint cuantizado puede servir de base para adaptaciones de bajo rango en entornos Apple, aunque la cuantizacion limita la precision del ajuste.
+- Despliegue en estaciones de trabajo con memoria unificada para tareas de generacion de texto de contexto largo: adecuado cuando se prioriza la privacidad y la ejecucion local frente al throughput de un cluster GPU.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni de evaluación multimodal, y tampoco hay comparación con los pesos en BF16 del modelo base que permita cuantificar la degradación introducida por la cuantización a 8,523 bits por peso.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM o memoria unificada estimada: los pesos ocupan 124,118 GiB (133,271 GB en disco). A ello hay que sumar la caché KV, que depende del contexto y del número de capas (no disponibles); en la práctica se necesita un equipo con 192 GB de memoria unificada o más para trabajar con contextos razonables.
-- GPU recomendadas: al ser un checkpoint en formato MLX, el destino natural es Apple Silicon (familias M2 Ultra, M3 Ultra y M4 Max en configuraciones de 128 GB o superiores). No es directamente utilizable en A100, H100 ni RTX 4090 sin reconvertir los pesos a otro runtime.
-- ¿Cabe en GPU de consumo? No en una sola tarjeta: 124 GiB de pesos superan con holgura los 24 GB de una RTX 4090 o los 32 GB de una RTX 5090. En consumer GPU requeriría reparto entre varias tarjetas y una conversión previa desde MLX a un formato compatible con vLLM, llama.cpp o TGI.
-- Opciones de despliegue: `mlx-lm` y el ecosistema MLX (incluida la herramienta oMLX) son las vías soportadas. vLLM, TGI, llama.cpp y Ollama no cargan pesos MLX de forma nativa; haría falta una conversión a GGUF o a safetensors estándar.
-- Latencia y throughput: no disponibles. La cabeza MTP está pensada para aumentar el throughput mediante decodificación especulativa, pero no se publican medidas de tokens por segundo ni de tasa de aceptación.
+- VRAM/memoria unificada estimada: 124,118 GiB solo para los pesos; con overhead de KV cache y activaciones se recomienda un minimo de 160-192 GB de memoria unificada.
+- GPU recomendadas: no aplica de forma nativa; el formato MLX esta disenado para Apple Silicon (M2 Ultra, M3 Ultra, M4 Max con 128 GB o mas, y Mac Studio con 192 GB o 512 GB).
+- Cabe en consumer GPU: no en GPUs de consumo con 24 GB (RTX 4090) ni 48 GB (RTX 6000 Ada); requeriria multi-GPU con NVLink y conversion de formato.
+- Opciones de despliegue: mlx-lm y mlx-examples en macOS; no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI sin conversion a GGUF u otro formato.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| scottlowry/Ornith-1.5-122B-oQ8e-mtp | 125,09 B totales (activos no disponibles) | no disponible | safetensors MLX, 8,523 bits/peso | no disponible | Hugging Face, 0 descargas |
-| ornith-ai/Ornith-1.5-122B (base) | 125,09 B (mismo recuento, presumiblemente en BF16) | no disponible | no disponible | no disponible | Hugging Face, referenciado como `base_model` |
-| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ornith-1.5-122B-oQ8e-mtp | 125,086B | no disponible | 8,523 bits/peso (mixta) | no disponible | MLX safetensors |
+| ornith-ai/Ornith-1.5-122B (base) | 125,086B | no disponible | BF16 | no disponible | safetensors |
+| Qwen3.5 MoE de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables de la familia Qwen 3.5 MoE ni sobre las especificaciones publicadas del modelo base, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de terceros.
+No se dispone de informacion suficiente para comparar rendimiento, contexto o licencia con alternativas concretas de la misma categoria.
 
 ## Limitaciones y advertencias
-
-- Licencia no declarada: el repositorio no indica licencia, ni propia ni heredada del modelo base. No se debe asumir uso comercial permitido sin verificar la licencia de `ornith-ai/Ornith-1.5-122B`.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo día. No hay evidencia de validación por terceros.
-- Cuantización no verificada empíricamente: no se publican evaluaciones que comparen la calidad frente al modelo en BF16. La asignación mixta de bits puede degradar tareas sensibles (matemáticas, código, vision) de forma no documentada.
-- Idiomas no especificados: se desconoce si el modelo conserva el soporte multilingüe del base y con qué calidad en castellano.
-- Ventana de contexto desconocida: impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no hay datos de calibración ni de tasas de error publicadas para esta conversión.
-- Sesgos: no documentados. Al no haber model card del autor ni evaluación de sesgos, no se puede caracterizar el comportamiento en dominios sensibles.
-- Dependencia de hardware Apple: el formato MLX limita la portabilidad; migrar a CUDA exige conversión y posible pérdida de la cabeza MTP si el runtime no la soporta.
-- Metadatos incompletos: el pipeline no está declarado, lo que puede dificultar la carga automática en algunas herramientas.
+- Licencia no declarada: no se puede confirmar el uso comercial ni la redistribucion; hay que consultar la licencia del modelo base ornith-ai/Ornith-1.5-122B antes de cualquier despliegue productivo.
+- Model card minima: no hay informacion sobre sesgos, datos de entrenamiento, idiomas ni evaluaciones, lo que impide auditar el modelo.
+- Perdida de precision por cuantizacion: aunque la media es de 8,523 bits/peso, el 96,7 % de los pesos usa grupo 64, lo que puede degradar tareas sensibles (matematicas, codigo) frente al checkpoint BF16.
+- Riesgo de alucinacion: no cuantificado por el autor; se desconoce el comportamiento real en dominios especializados.
+- Dependencia de hardware Apple: el formato MLX no se ejecuta en GPUs NVIDIA sin conversion, lo que limita su portabilidad a infraestructura cloud convencional.
+- Repo de comunidad: 265 descargas y 1 like; sin garantias de mantenimiento ni soporte del autor original.
+- Fecha de actualizacion: el checkpoint fue recuantizado el 2026-11-11 con oMLX v0.7.4.dev1; versiones anteriores pueden diferir en precision.
 
 ## Enlaces
-
-- Repositorio del modelo: https://huggingface.co/scottlowry/Ornith-1.5-122B-oQ8e-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-122B-oQ8e-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
-- Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
-- Los resultados de la búsqueda web proporcionados no contenían enlaces técnicos relevantes (contenido no relacionado con el modelo), por lo que se omiten. No se han encontrado papers, blogs ni demos adicionales en la información disponible.
+- Herramienta oQ / oMLX: https://github.com/jundot/omlx
+- Framework MLX: https://github.com/ml-explore/mlx
+- mlx-lm: https://github.com/ml-explore/mlx-lm

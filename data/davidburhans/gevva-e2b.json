@@ -85,25 +85,25 @@
     {
       "task": null,
       "dataset": null,
-      "metric": "JevBench Composite Score",
-      "value": 77.54
+      "metric": "Gate Hard Accuracy",
+      "value": 56.95
     },
     {
       "task": null,
       "dataset": null,
-      "metric": "JevBench Intelligence Score",
-      "value": 73.91
+      "metric": "RAGTruth Served F1@0.5",
+      "value": 0.715
     },
     {
       "task": null,
       "dataset": null,
-      "metric": "JevBench Calibration Score",
-      "value": 86.9
+      "metric": "JevBench Public Accuracy",
+      "value": 71.43
     },
     {
       "task": null,
       "dataset": null,
-      "metric": "Forward Latency (P50)",
+      "metric": "Forward Latency (RTX 5090 P50)",
       "value": 16.5
     }
   ],

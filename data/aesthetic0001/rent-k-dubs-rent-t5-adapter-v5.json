@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "aesthetic0001/rent-k-dubs-rent-t5-adapter-v5",
+  "slug": "aesthetic0001-rent-k-dubs-rent-t5-adapter-v5",
+  "author": "aesthetic0001",
+  "url": "https://huggingface.co/aesthetic0001/rent-k-dubs-rent-t5-adapter-v5",
+  "created_at": "2026-11-26T01:18:02.000Z",
+  "updated_at": "2026-11-26T01:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "t5",
+    "inverse-text-normalization",
+    "rental-search",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1189536,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Zipformer_p-arabic-v3 es un modelo de reconocimiento automático de fonemas (phoneme recognition) especializado en recitación coránica en árabe, desarrollado por Quran-Lab. A diferencia de los sistemas ASR convencionales que transcriben texto ortográfico, este modelo emite secuencias de fonemas, lo que permite evaluar la pronunciación a nivel articulatorio y detectar desviaciones en las reglas de tajweed (las normas de recitación coránica). El modelo se distribuye con pesos en formato CoreML y ONNX, lo que indica un enfoque claro hacia el despliegue en dispositivos y aplicaciones de bajo consumo.
+Zipformer p-arabic v3 es un modelo de reconocimiento automático de fonemas del árabe coránico desarrollado por Quran-Lab. Se trata de un sistema CTC basado en la arquitectura Zipformer, entrenado específicamente para transcribir audio recitado a una secuencia de fonemas con marcas de tajwid, lo que permite evaluar la corrección de la recitación a nivel fonémico en lugar de a nivel de palabra. El modelo está pensado como componente de un pipeline de verificación de recitación, no como un transcriptor de texto convencional.
 
-La arquitectura es Zipformer con cabecera CTC (zipformer_ctc), una variante del transformer eficiente en cómputo que emplea codificadores multiescala con tasas de bajada de resolución variables, diseñada originalmente para ASR en streaming. El soporte explícito de streaming y su empaquetado en CoreML/ONNX sugieren que el modelo está pensado para inferencia en tiempo real en dispositivos Apple y en entornos de producción con ONNX Runtime.
+La relevancia del modelo radica en su especialización: frente a los ASR genéricos para árabe, que colapsan las distinciones fonéticas relevantes para el tajwid, este modelo opera sobre un inventario fonémico extendido que preserva esas distinciones. Los resultados declarados por el autor muestran un PER (Phoneme Error Rate) de 1,43 sobre recitadores de estudio no vistos en entrenamiento, 3,65 sobre audio real de teléfono y 9,1 sobre un recitador completamente no visto, lo que indica una degradación controlada fuera de dominio.
 
-El modelo es relevante para desarrolladores que construyen herramientas de aprendizaje o verificación de recitación coránica, ya que ofrece una señal fonética granular con errores declarados muy bajos (1,43 % PER en recitadores de estudio no vistos durante el entrenamiento). El acceso está restringido (gated) y la licencia es específica (quran-lab-npl-1.2), lo que condiciona su uso comercial.
+El repositorio ocupa 5,2 GB y se distribuye en formatos CoreML y ONNX, con soporte de streaming mediante CTC. El acceso está restringido (gated) y la licencia es la propia Quran-Lab NPL 1.3, que debe revisarse antes de cualquier uso comercial. El modelo solo declara soporte para árabe y su pipeline es automatic-speech-recognition.
 
 ## Especificaciones técnicas
 
@@ -15,86 +15,76 @@ El modelo es relevante para desarrolladores que construyen herramientas de apren
 | Arquitectura | Zipformer con cabecera CTC (zipformer_ctc) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de streaming, ventana no especificada) |
-| Tipos de cuantización | no disponible (pesos distribuidos en CoreML y ONNX; cuantizaciones concretas no declaradas) |
+| Longitud de contexto | no disponible (modelo de audio con streaming por chunks) |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | árabe (ar) |
-| Licencia | quran-lab-npl-1.2 (acceso restringido, requiere aceptar condiciones) |
-| Formato de pesos | CoreML y ONNX |
-| Tamaño del repositorio | 5,2 GB |
-| Tarea (pipeline) | automatic-speech-recognition |
-| Dominio | Recitación coránica, fonemas y tajweed |
-| Streaming | Sí (soportado por la arquitectura y los formatos de despliegue) |
+| Licencia | quran-lab-npl-1.3 (acceso restringido, gated) |
+| Formato de pesos | CoreML, ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea Zipformer, un codificador transformer con atención y convoluciones organizadas en bloques multiescala. Cada bloque opera a una resolución temporal distinta (tasas de bajada de resolución decrecientes), lo que reduce el coste computacional frente a un transformer estándar de attention cuadrática y facilita la inferencia en streaming con latencia baja. La salida se decodifica mediante una cabecera CTC, que no requiere alineamientos forzados y permite integrar el modelo en pipelines de decodificación con léxico o con corrección posterior.
+El modelo emplea la arquitectura Zipformer, un encoder de tipo transformer con conformer jerárquico y downsampling progresivo, combinado con una cabecera CTC para la decodificación de secuencias de fonemas. La elección de CTC permite decodificación streaming sin necesidad de un mecanismo de atención autorregresivo, lo que reduce la latencia y facilita el despliegue en dispositivos. La salida no es texto ortográfico sino una secuencia de fonemas árabes con información de tajwid, lo que exige un inventario de etiquetas específico del dominio.
 
-El objetivo del entrenamiento es la predicción de fonemas árabes en el contexto de la recitación coránica, incluyendo fenómenos de tajweed que no aparecen en el árabe conversacional estándar. La model card declara evaluación sobre el conjunto Quran-Lab/quranic-asr-benchmark (v1.1) con tres escenarios: recitadores de estudio retenidos, audio real de teléfono y un recitador no visto. No se especifican en la información disponible el número de tokens de audio, la composición exacta del dataset de entrenamiento ni si se aplicaron técnicas de aumento de datos o ajuste fino con RLHF/DPO (poco habituales en ASR).
+No se dispone de información detallada sobre el volumen de datos de entrenamiento, la composición del corpus ni si se aplicaron técnicas de aumento de datos como speed perturbation o mezcla de ruido. Los resultados declarados sugieren que el entrenamiento incluyó recitadores de estudio y audio telefónico, dado el buen rendimiento en ambos dominios y la caída en un recitador no visto. No se indica en la información disponible si hubo ajuste fino con RLHF o DPO, algo por otra parte poco habitual en un modelo CTC de ASR.
 
 ## Capacidades
 
-- Reconocimiento de fonemas árabes a partir de audio, con salida orientada a la evaluación articulatoria y no a la transcripción ortográfica.
-- Detección de pronunciación vinculada a reglas de tajweed en recitación coránica.
-- Inferencia en streaming, adecuada para aplicaciones interactivas en tiempo real.
-- Robustez declarada frente a audio de teléfono (PER de 3,65 % en el conjunto de evaluación).
-- Generalización a recitadores no vistos (PER de 9,1 %), según los datos del autor.
-- Despliegue en dispositivos Apple mediante CoreML y en entornos multiplataforma mediante ONNX.
-- No se declaran capacidades de tool calling, agentes, visión, audio generativo ni razonamiento multietapa; es un modelo exclusivamente discriminativo de ASR.
+- Reconocimiento de fonemas del árabe coránico con etiquetas alineadas con las reglas de tajwid.
+- Decodificación CTC en modo streaming, adecuada para procesamiento incremental de audio.
+- Salida a nivel fonémico, lo que permite comparar la recitación del usuario contra una referencia canónica.
+- Funcionamiento sobre audio de estudio limpio y sobre audio telefónico con ruido y compresión.
+- Exportación a CoreML y ONNX para inferencia en dispositivos Apple y en entornos con ONNX Runtime.
+- No se declaran capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes.
+- Soporte multilingüe limitado al árabe; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Aplicaciones de aprendizaje de recitación: el modelo evalúa la secuencia de fonemas producida por el alumno y la compara con la referencia esperada, señalando desviaciones articulatorias concretas en lugar de limitarse a una transcripción textual.
-- Verificación de tajweed en tiempo real: gracias al soporte de streaming y a los formatos CoreML/ONNX, puede integrarse en una app móvil que resalte en pantalla las reglas incumplidas mientras el usuario recita.
-- Corrección automática en academias y plataformas de enseñanza: procesamiento por lotes de grabaciones de estudiantes para generar informes de error fonético por versículo y por regla.
-- Investigación en fonética árabe y coránica: generación de alineamientos fonéticos a escala sobre corpus de recitación para estudios de variación entre escuelas y recitadores.
-- Control de calidad de grabaciones: detección automática de errores de pronunciación en material editorial de audio antes de su publicación.
-- Herramientas de accesibilidad: conversión de audio de recitación en una representación fonética que alimente sistemas de síntesis o de búsqueda por pronunciación.
-- Integración en dispositivos de bajo consumo: al distribuirse en CoreML y ONNX, puede ejecutarse localmente en hardware Apple sin depender de la nube, lo que reduce latencia y preserva la privacidad del audio.
+- Verificación de recitación coránica: el modelo transcribe el audio del usuario a fonemas y un comparador posterior lo alinea con la secuencia de referencia para señalar errores de pronunciación o de tajwid. Su PER de 1,43 en recitadores de estudio lo hace adecuado para esta tarea en entornos controlados.
+- Aplicaciones móviles de aprendizaje: la exportación a CoreML permite ejecutar la inferencia en iPhone y iPad sin conexión, con la decodificación CTC en streaming reduciendo la latencia percibida por el usuario.
+- Corrección en tiempo real durante la recitación: el modo streaming permite emitir fonemas conforme llega el audio, de modo que la aplicación puede resaltar el error justo después de producido en lugar de al final de la recitación.
+- Evaluación de calidad en plataformas de audio: procesar en lote grabaciones subidas por usuarios para detectar recitaciones con errores fonéticos y priorizar la revisión humana.
+- Investigación en fonética árabe: el modelo proporciona alineamientos fonémicos a nivel de frame que pueden usarse para estudiar duraciones, asimilaciones y fenómenos de tajwid en corpus grandes.
+- Transcripción asistida en entornos con ruido: con un PER de 3,65 sobre audio real de teléfono, puede emplearse como paso previo en sistemas de búsqueda o indexación de recitaciones grabadas con dispositivos móviles.
+- Despliegue en servidores con ONNX Runtime: integración en servicios backend que ya dispongan de infraestructura ONNX, sin necesidad de GPU dedicada si el throughput requerido es moderado.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el conjunto Quran-Lab/quranic-asr-benchmark (v1.1). La métrica es Phoneme Error Rate (PER), menor es mejor. Los valores no están verificados de forma independiente según el model-index.
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Escenario de evaluación | PER (%) | Verificado |
+| Métrica | Dataset | Valor |
 |---|---|---|
-| Recitadores de estudio retenidos (held-out studio reciters) | 1,43 | No |
-| Audio real de teléfono | 3,65 | No |
-| Recitador no visto (unseen reciter) | 9,10 | No |
+| Phoneme Error Rate, held-out studio reciters | Quran-Lab/quranic-asr-benchmark (v1.1) | 1,43 |
+| Phoneme Error Rate, real phone audio | Quran-Lab/quranic-asr-benchmark (v1.1) | 3,65 |
+| Phoneme Error Rate, unseen reciter | Quran-Lab/quranic-asr-benchmark (v1.1) | 9,1 |
 
-No se han publicado en la información disponible resultados de benchmarks estándar de ASR en árabe (como MMLU, HumanEval o GSM8K, que no aplican a este tipo de modelo, ni WER sobre corpus generales como Common Voice).
+No se han publicado en la información disponible resultados comparativos con otros modelos en MMLU, HumanEval, GSM8K ni métricas equivalentes, por tratarse de un modelo de ASR y no de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 5,2 GB, pero ese tamaño incluye los artefactos CoreML y ONNX y no equivale a la memoria necesaria en ejecución.
-- GPU recomendadas: no disponibles. El modelo está empaquetado para CoreML (Apple Silicon y Neural Engine) y ONNX (CPU, GPU o aceleradores compatibles con ONNX Runtime), pero el autor no publica requisitos mínimos.
-- Compatibilidad con GPU de consumo: probable en el caso de ONNX Runtime sobre GPUs convencionales, pero no confirmada por datos del autor.
-- Opciones de despliegue: CoreML en plataformas Apple; ONNX Runtime en servidores y dispositivos; no se declaran integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos generativos, no aplicables directamente aquí).
-- Latencia y throughput: no disponibles. La arquitectura Zipformer y el modo streaming apuntan a latencias bajas, pero no se aportan cifras.
+- VRAM estimada para inferencia: no disponible. El repositorio de 5,2 GB incluye pesos en CoreML y ONNX, pero no se detalla el tamaño del modelo en parámetros ni el consumo por formato.
+- GPU recomendadas: no disponible. Al ser un modelo orientado a streaming y exportado a CoreML/ONNX, el despliegue típico es en CPU o en NPU/GPU integradas.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; la presencia de CoreML sugiere despliegue en Apple Silicon y la de ONNX sugiere CPU x86 con ONNX Runtime.
+- Opciones de despliegue: ONNX Runtime y CoreML. No se declara soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos sobre modelos comparables de reconocimiento fonético de árabe coránico (parámetros, contexto, rendimiento o licencia). Los sistemas ASR multilingües de propósito general no son directamente comparables porque transcriben texto ortográfico y no fonemas con granularidad de tajweed.
-
-| Modelo | Tarea | Idiomas | Licencia | Datos comparativos |
-|---|---|---|---|---|
-| Quran-Lab/zipformer_p-arabic-v3 | Reconocimiento de fonemas coránicos | Árabe | quran-lab-npl-1.2 (gated) | PER 1,43 / 3,65 / 9,10 % |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye otros modelos de reconocimiento fonémico del árabe coránico con los que establecer una comparación de parámetros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado exclusivamente en árabe coránico; su rendimiento en árabe conversacional general o en otros idiomas no está documentado y probablemente sea deficiente.
-- La salida es fonética, no ortográfica: no sustituye a un ASR de texto si el objetivo es transcribir contenido.
-- Los benchmarks son declarados por el autor y no están verificados de forma independiente (campo `verified: false` en el model-index).
-- El PER de 9,1 % en recitadores no vistos indica una degradación notable de la precisión fuera de la distribución de entrenamiento; en producción conviene validar con la población real de usuarios.
+- Los valores de PER son declarados por el autor y no han sido verificados de forma independiente.
+- El rendimiento cae de forma notable en recitadores no vistos (PER 9,1 frente a 1,43 en recitadores de estudio), lo que anticipa problemas de generalización en voces fuera de la distribución de entrenamiento.
+- El modelo está especializado en árabe coránico; no debe esperarse un comportamiento correcto sobre árabe dialectal, árabe moderno estándar hablado ni otras lenguas.
+- La salida es una secuencia de fonemas, no texto; cualquier uso que requiera transcripción ortográfica necesita un módulo adicional de conversión.
 - El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
-- La licencia quran-lab-npl-1.2 es específica y no equivale a una licencia open source estándar; deben revisarse sus términos antes de cualquier uso comercial o redistribución.
-- No se documentan sesgos demográficos, pero la variabilidad entre escuelas de recitación y entre hablantes nativos y no nativos puede afectar a la precisión.
-- No se especifican los requisitos de hardware ni las cuantizaciones disponibles, lo que complica la planificación de recursos en despliegues a gran escala.
-- Riesgo de alucinación en el sentido de fonemas incorrectamente inferidos en audio con ruido, reverberación o solapamiento de voces; no hay datos publicados sobre robustez en estas condiciones.
+- La licencia quran-lab-npl-1.3 es una licencia propia; deben revisarse sus términos antes de cualquier uso comercial o de redistribución.
+- Riesgo de sesgo hacia los estilos de recitación presentes en el corpus de entrenamiento, con posible degradación en escuelas de recitación poco representadas.
+- No se documentan sesgos demográficos ni de género en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3
-- Conjunto de evaluación: Quran-Lab/quranic-asr-benchmark (v1.1), referenciado en la model card del modelo
-- Organización en Hugging Face: https://huggingface.co/Quran-Lab
-- No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.
+- Dataset de evaluación: Quran-Lab/quranic-asr-benchmark (v1.1), referenciado en la model card
+- Organización: https://huggingface.co/Quran-Lab
+- No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

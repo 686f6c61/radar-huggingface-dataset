@@ -2,110 +2,109 @@
 
 ## Resumen
 
-`loom-fun/bartowski-Ornith-1.5-9B-loom` es un paquete de despliegue en formato Loom (programas `.loom` y una tarjeta `model.json`) para el checkpoint GGUF sin modificar `bartowski/Ornith-1.5-9B-GGUF`, en su cuantizacion `Q4_K_M`. No se trata de un modelo nuevo ni de un fine-tune: es un artefacto de empaquetado generado con el flujo `loom-skills` sobre un AMD Ryzen AI Max+ 395 "Strix Halo" (gfx1151), pensado para servirse con `loom-serve` sobre GPU AMD integrada y exponer una API compatible con OpenAI.
+Ornith-1.5-9B-loom es un paquete de despliegue distribuido por el usuario `loom-fun` que empaqueta el checkpoint GGUF sin modificar `bartowski/Ornith-1.5-9B-GGUF` (concretamente la cuantizacion `Ornith-1.5-9B-Q4_K_M.gguf`) en el formato propietario `.loom` junto con una tarjeta `model.json`, para su servicio mediante el runtime AMD Loom (`hrx-loom`). No se trata de un modelo entrenado por el autor del repositorio, sino de una adaptacion de empaquetado y configuracion de inferencia del modelo base Ornith-1.5-9B, con 8.953.803.264 parametros reales segun los safetensors del checkpoint original.
 
-El modelo subyacente, Ornith-1.5-9B, es un modelo multimodal de tipo image-text-to-text con aproximadamente 9.000 millones de parametros, capacidad de razonamiento (thinking mode activado por defecto), soporte de tool calling y una ventana de contexto declarada de 262.144 tokens por peticion. El paquete anade decodificacion especulativa DFlash con profundidad 7 y un proyector multimodal `mmproj-Ornith-1.5-9B-f16.gguf`.
+El modelo base es multimodal (pipeline `image-text-to-text`), con una ventana de contexto nativa declarada de 262.144 tokens y capacidad de modo "thinking" opcional, segun los ejemplos de peticion de la model card. El paquete incorpora decodificacion especulativa (dflash) y esta optimizado para GPUs AMD concretas: Ryzen AI Max+ 395 "Strix Halo" (gfx1151), Radeon AI PRO R9700 (gfx1201, 32 GB) y GPUs gfx1201 de 16 GB como RX 9070 XT y RX 9070.
 
-Su relevancia es fundamentalmente practica: demuestra una via de inferencia alternativa a llama.cpp en hardware AMD consumer con memoria unificada, con mejoras medidas de hasta el 92 % en prefill a 32k y una penalizacion del 27 % en decode a 32k. La licencia es MIT y el repositorio no registra descargas ni likes en el momento de la consulta.
+Su relevancia es practica: ofrece un artefacto listo para servir con el runtime Loom sobre hardware AMD, con mediciones de rendimiento comparadas frente a llama.cpp (ROCm y Vulkan) sobre el mismo GGUF. La licencia es MIT. El repositorio tiene 246 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer multimodal image-text-to-text; el paquete es un artefacto de despliegue Loom sobre GGUF) |
-| Parametros totales | 9B (aproximado, segun el nombre del checkpoint) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens por peticion |
-| Tipos de cuantizacion | Q4_K_M (checkpoint empaquetado); el repo base de bartowski ofrece otros quants no detallados aqui |
+| Arquitectura | no disponible (modelo base transformer multimodal; no se detalla en la informacion proporcionada) |
+| Parametros totales | 8.953.803.264 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens nativos; hasta 93.184 tokens por peticion en GPU gfx1201 de 16 GB con `--memory_bytes=15000000000` |
+| Tipos de cuantizacion | Q4_K_M (GGUF) en este paquete; otras cuantizaciones del modelo base no detalladas |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (Q4_K_M) + proyector multimodal `mmproj-Ornith-1.5-9B-f16.gguf`; paquete Loom (`model.json` + programas `.loom`) |
+| Formato de pesos | GGUF (Q4_K_M) empaquetado como programa `.loom` + `model.json`; safetensors disponibles en el checkpoint original |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base Ornith-1.5-9B (tipo de atencion, composicion del dataset, numero de tokens de entrenamiento ni si hubo RLHF o DPO). Lo que si se documenta es el componente multimodal: el modelo acepta entrada de imagen mediante un proyector `mmproj-Ornith-1.5-9B-f16.gguf` (y una variante bf16 en el repo base de bartowski), que se empareja con cualquier cuantizacion del checkpoint.
+La informacion proporcionada no describe la arquitectura interna del modelo base Ornith-1.5-9B (tipo de transformer, atencion, composicion del dataset, numero de tokens de entrenamiento ni si hubo RLHF/DPO). Lo que si se documenta es la capa de despliegue: el paquete Loom sirve el GGUF Q4_K_M sin modificarlo, con un pool de memoria fijo (`--pool_backing=fixed`), precarga de parametros (`--parameter_mode=preload`) y espera activa de finalizaciones de GPU (`completion_spin_ns=4294967295`), ajuste con el que se midieron las cifras de rendimiento.
 
-El artefacto Loom en si anade una capa de ejecucion: kernels generados y validados contra implementaciones de referencia (57/57 tests unitarios superados), decodificacion especulativa DFlash con profundidad 7 y un borrador externo (`abenzerps/Ornith-1.5-9B-DFlash-GGUF`, Q4_K_M), activada por defecto, y un servidor con API estilo OpenAI. La validacion de correctitud incluye comparacion token a token contra llama.cpp sobre el mismo GGUF (greedy y top-5 log-probs, prompts cortos y documentos de 1k a 32k), paridad en entrada de imagen, consistencia bajo concurrencia y equivalencia exacta entre decodificacion especulativa activada y desactivada.
+La innovacion tecnica destacable del paquete es la decodificacion especulativa integrada (tag `speculative-decoding`, tecnologia `dflash`), con una tasa de aceptacion de tokens redactados del 72 % en Strix Halo. Tambien se documenta soporte de modo thinking opcional, desactivable mediante `chat_template_kwargs: {"enable_thinking": false}` en las peticiones a la API compatible con OpenAI.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo "thinking" activado por defecto; se desactiva con `chat_template_kwargs: {"enable_thinking": false}`.
-- Entrada de imagen via partes `image_url` estilo OpenAI, con proyector multimodal dedicado (pipeline image-text-to-text).
-- Tool calling estilo OpenAI: campos `tools` y `tool_calls`, con bucle multi-turno validado (renderizado exacto del prompt, reutilizacion de historial y llamadas validas).
-- Capacidades de agente y razonamiento multi-paso mediante el bucle de tool calling verificado.
-- Decodificacion especulativa DFlash (profundidad 7) activada por defecto, con un 45 % de tokens del borrador aceptados.
-- Muestreo configurable: `temperature`, `top_p`, `top_k`, `seed`; la distribucion del primer token coincide con llama.cpp.
-- Concurrencia de 4 peticiones simultaneas con salida identica a la ejecucion aislada.
-- Limite de salida de 4.096 tokens por peticion (preset `max_tokens`).
-- No soporta audio (ni entrada ni salida) ni ajuste de "reasoning effort".
+- Generacion de texto y razonamiento conversacional multi-turno mediante API compatible con OpenAI (`/v1/chat/completions`).
+- Procesamiento de imagen y texto (`image-text-to-text`): el pipeline declarado admite entradas multimodales.
+- Modo thinking opcional, activable o desactivable por peticion.
+- Contexto largo: hasta 262.144 tokens nativos, con hasta 93.184 tokens por peticion en GPUs de 16 GB.
+- Decodificacion especulativa para acelerar la generacion.
+- Servicio concurrente: las mediciones incluyen 4 streams agregados.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional multi-turno con documentos largos: la ventana de 262.144 tokens permite mantener contratos, informes o bases de codigo completas en contexto, con un prefill medido de 1.376 tok/s a 32k en Strix Halo.
-- Procesamiento de documentos escaneados con vision: el modelo acepta imagenes junto a texto, adecuado para extraccion de datos de facturas, formularios o capturas, usando el proyector f16 emparejado con el quant Q4_K_M.
-- Agentes con herramientas en local: el soporte verificado de `tool_calls` y el bucle multi-turno permiten construir agentes que consulten APIs internas o bases de datos sin salir a la nube, sobre hardware AMD integrado.
-- Despliegue en estaciones de trabajo con GPU integrada AMD: el paquete Loom esta pensado para `loom-serve --device=amdgpu`, lo que facilita servir el modelo en equipos Ryzen AI Max+ sin GPU discreta.
-- Razonamiento con traza explicita: el thinking mode por defecto resulta util en tareas de analisis o depuracion donde se quiere inspeccionar el razonamiento intermedio; se puede desactivar para reducir latencia en respuestas simples.
-- Prototipado con API compatible OpenAI: al exponer `/v1/chat/completions` en `127.0.0.1:8080`, se puede apuntar cualquier cliente o SDK existente sin cambiar codigo, util para evaluar el modelo antes de migrar a produccion.
-- Procesamiento por lotes con concurrencia moderada: 4 peticiones concurrentes con salida determinista lo hacen apto para pipelines de clasificacion o resumen de volumen medio.
+- Asistente conversacional local sobre GPU AMD: el paquete se sirve con `loom-serve` en Strix Halo o Radeon R9700 y expone una API compatible con OpenAI, lo que permite conectar clientes existentes sin adaptadores. Es adecuado por su rendimiento de decodificacion de 61,8 tok/s en prompts cortos en Strix Halo.
+- Analisis de documentos largos: con 262.144 tokens de contexto nativo y 93.184 tokens por peticion en GPUs de 16 GB, permite resumir o extraer informacion de contratos, informes o transcripciones extensas en una sola pasada.
+- Procesamiento de imagenes con texto asociado (captions, extraccion de datos de capturas o formularios) gracias al pipeline `image-text-to-text`, en flujos donde la imagen y la consulta se envian conjuntamente.
+- Razonamiento con modo thinking controlado: en tareas que requieren pasos intermedios (analisis, planificacion) se puede activar el modo thinking; en tareas de baja latencia se desactiva por peticion.
+- Servicio multiusuario en estacion de trabajo: con 4 streams agregados a 142 tok/s en Strix Halo, es viable para un equipo pequeno que comparte una unica GPU.
+- Despliegue en hardware de consumo AMD: en RX 9070 XT / RX 9070 (16 GB) el preset `chat-16gb` con `--memory_bytes=15000000000` permite servir el modelo con contexto reducido a 93.184 tokens, adecuado para prototipos y uso personal.
+- Evaluacion comparativa de motores de inferencia: al incluir mediciones frente a llama.cpp ROCm y Vulkan sobre el mismo GGUF, sirve como referencia para decidir el stack de serving en hardware AMD.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido en AMD Ryzen AI Max+ 395 con Radeon 8060S, Ubuntu 26.04, hrx-loom 0.1.0, sobre el mismo GGUF Q4_K_M, comparando Loom frente a llama.cpp (build `llamacpp-rocm/b1369`):
+Rendimiento de inferencia en Strix Halo (gfx1151), mismo GGUF, medianas de 3 sesiones (4 streams: mediana de 6):
 
-| Metrica | llama.cpp | Loom | Margen | Roofline | Loom % del roofline |
-|---|---|---|---|---|---|
-| Decode tok/s, prompt corto | 49,6 | 52,0 | +5 % | 168,3 | 31 % |
-| Decode tok/s, contexto 2k | 45,8 | 43,6 | -5 % | 166,2 | 26 % |
-| Decode tok/s, contexto 32k | 39,7 | 28,9 | -27 % | 140,6 | 21 % |
-| Prefill tok/s, documento 1k | 918,7 | 1490,4 | +62 % | 4243,3 | 35 % |
-| Prefill tok/s, documento 2k | 915,8 | 1516,4 | +66 % | 4223,4 | 36 % |
-| Prefill tok/s, documento 8k | 924,9 | 1569,0 | +70 % | 4107,8 | 38 % |
-| Prefill tok/s, documento 16k | 829,6 | 1502,5 | +81 % | 3963,1 | 38 % |
-| Prefill tok/s, documento 32k | 718,4 | 1376,3 | +92 % | 3702,4 | 37 % |
-| 4 streams, decode agregado tok/s | 109,0 | 96,1 | -12 % | 663,2 | 14 % |
-| Tokens del borrador aceptados (especulativa) | no medido | 45 % | no aplica | no aplica | no aplica |
+| Metrica | llama.cpp ROCm | Loom | Margen vs mejor llama.cpp | Roofline | Loom % roofline | llama.cpp Vulkan |
+|---|---|---|---|---|---|---|
+| Decode tok/s, prompt corto | 38,9 | 61,8 | +59 % | 90,4 | 68 % | 21,3 |
+| Decode tok/s, contexto 2k | 38,4 | 55,9 | +46 % | 90,9 | 61 % | 22,1 |
+| Decode tok/s, contexto 32k | 27,4 | 41,0 | +50 % | 66,7 | 61 % | 16,0 |
+| Prefill tok/s, documento 1k | 967,0 | 1607,9 | +66 % | 4243,3 | 38 % | 767,9 |
+| Prefill tok/s, documento 2k | 987,4 | 1636,3 | +66 % | 4223,4 | 39 % | 791,3 |
+| Prefill tok/s, documento 8k | 996,8 | 1665,0 | +67 % | 4107,8 | 41 % | 802,3 |
+| Prefill tok/s, documento 16k | 947,8 | 1596,9 | +68 % | 3963,1 | 40 % | 769,7 |
+| Prefill tok/s, documento 32k | 850,2 | 1466,8 | +73 % | 3702,4 | 40 % | 699,0 |
+| 4 streams, decode agregado tok/s | 110,0 | 142,0 | +29 % | 159,8 | 89 % | 106,7 |
+| Decodificacion especulativa, tokens aceptados | — | 72 % | — | n/a | n/a | — |
 
-El roofline se calcula para este GGUF en Strix Halo (gfx1151) a 216 GB/s y 59 TFLOP/s, con un factor de 4,15 tokens por pasada de verificacion (1 + 45 % aceptados x profundidad 7), sin contar el coste del borrador. No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Las cifras anteriores son exclusivamente de rendimiento de serving.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: el ejemplo oficial arranca con `--memory_bytes=30000000000` (30 GB) sobre memoria unificada del Ryzen AI Max+ 395; el checkpoint Q4_K_M de 9B ocupa bastante menos, pero el presupuesto incluye contexto y buffers.
-- GPU objetivo: AMD Ryzen AI Max+ 395 con Radeon 8060S (gfx1151, Strix Halo), con 216 GB/s de ancho de banda y 59 TFLOP/s declarados para el calculo del roofline.
-- No hay datos de funcionamiento en A100, H100 ni RTX 4090; el paquete esta generado y validado especificamente para `--device=amdgpu` en Strix Halo.
-- Despliegue: `pip install "hrx-loom[hf]"`, `loom-fetch` para materializar el modelo y `loom-serve` como servidor en `127.0.0.1:8080`. No se documenta soporte de vLLM, TGI, Ollama ni llama.cpp para este paquete (llama.cpp se usa solo como referencia de comparacion).
-- Latencia y throughput: decode de 52,0 tok/s con prompt corto y 28,9 tok/s a 32k; prefill de 1.490 a 1.569 tok/s entre 1k y 8k, bajando a 1.376 tok/s a 32k; 96,1 tok/s agregados con 4 streams.
-- El borrador especulativo DFlash Q4_K_M (`abenzerps/Ornith-1.5-9B-DFlash-GGUF`) se ejecuta en el mismo dispositivo; su coste no esta incluido en las cifras de roofline.
+- VRAM estimada: el repo pesa 7,6 GB (Q4_K_M). En gfx1201 de 16 GB el preset reserva un presupuesto de 15.000.000.000 bytes (`--memory_bytes=15000000000`), con slabs de estado de 4 MiB y de pesos de 64 MiB.
+- GPUs soportadas explicitamente: AMD Ryzen AI Max+ 395 "Strix Halo" (gfx1151), AMD Radeon AI PRO R9700 (gfx1201, 32 GB), AMD Radeon RX 9070 XT y RX 9070 (gfx1201, 16 GB).
+- Cabe en GPU de consumo AMD: si, en RX 9070 XT y RX 9070 de 16 GB, con contexto por peticion limitado a 93.184 tokens.
+- Despliegue: runtime AMD Loom (`pipx install "hrx-loom[hf]==0.2.0"`, `loom-fetch` y `loom-serve`). El GGUF subyacente tambien es compatible con llama.cpp (ROCm y Vulkan), segun las mediciones comparativas.
+- Throughput medido en Strix Halo: 61,8 tok/s de decode con prompt corto, 41,0 tok/s a 32k de contexto, 1466,8 a 1665,0 tok/s de prefill segun tamano de documento y 142 tok/s agregados con 4 streams.
+- Latencia: no se publican cifras de latencia por peticion (TTFT) en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
 |---|---|---|---|---|---|
-| loom-fun/bartowski-Ornith-1.5-9B-loom | 9B | 262.144 | MIT | GGUF + paquete Loom | Paquete de despliegue para AMD Strix Halo con especulativa DFlash; sin benchmarks academicos publicados |
-| bartowski/Ornith-1.5-9B-GGUF | 9B | no disponible en la informacion | no disponible en la informacion | GGUF + mmproj f16/bf16 | Checkpoint base sin modificar; incluye proyector multimodal; es el origen del paquete Loom |
-| abenzerps/Ornith-1.5-9B-DFlash-GGUF | no disponible | no disponible | no disponible | GGUF Q4_K_M | Modelo borrador para decodificacion especulativa, no un modelo de chat autonomo |
+| Ornith-1.5-9B-loom (este paquete) | 8.953.803.264 | 262.144 nativos; 93.184 en 16 GB | GGUF Q4_K_M empaquetado `.loom`, runtime Loom | MIT | Multimodal image-text-to-text, decodificacion especulativa, mediciones frente a llama.cpp |
+| bartowski/Ornith-1.5-9B-GGUF (modelo base) | 8.953.803.264 | 262.144 | GGUF, multiples cuantizaciones | no disponible en la informacion | Checkpoint sin modificar del que deriva este paquete |
+| llama.cpp ROCm (motor, no modelo) | n/a | n/a | GGUF | n/a | 38,9 tok/s decode en prompt corto en Strix Halo; referencia de comparacion |
+| llama.cpp Vulkan (motor, no modelo) | n/a | n/a | GGUF | n/a | 21,3 tok/s decode en prompt corto en Strix Halo; referencia de comparacion |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de alternativas de otros fabricantes en la informacion proporcionada, por lo que no se incluye comparacion con modelos de terceros.
+No se dispone en la informacion proporcionada de modelos alternativos de la misma categoria (9B multimodales) con los que comparar parametros, contexto y rendimiento. Dato no disponible.
 
 ## Limitaciones y advertencias
 
-- El paquete no es un modelo nuevo: cualquier limitacion del checkpoint Ornith-1.5-9B subyacente se hereda sin cambios.
-- No hay evidencia registrada para varias puertas de validacion: `agent_think_off` (tool calling con thinking desactivado), `needle` (needle-in-a-haystack hasta la mitad del contexto) y `needle_full` (contexto completo). La ventana de 262.144 tokens esta declarada, pero su recuperacion fiable a contextos largos no esta verificada.
-- El rendimiento cae con contexto largo: -27 % en decode a 32k frente a llama.cpp y solo un 21 % del roofline, lo que desaconseja cargas de generacion larga con contexto extenso.
-- La concurrencia esta limitada a 4 peticiones y el throughput agregado con 4 streams es un 14 % del roofline (-12 % frente a llama.cpp).
-- La salida maxima esta limitada a 4.096 tokens por peticion, insuficiente para generaciones largas sin trocear.
-- No soporta audio ni ajuste de esfuerzo de razonamiento; el thinking mode esta activado por defecto y debe desactivarse explicitamente para reducir latencia.
-- Las mediciones son ejecuciones locales unicas o con 1-2 repeticiones (media) y 1 repeticion (mediana) para 4 streams; la comparacion mezcla temporizacion en cliente (Loom) y en servidor (llama.cpp), lo que introduce sesgo metodologico.
-- No hay datos publicados sobre sesgos, tasas de alucinacion ni cobertura idiomatica; los idiomas soportados figuran como no disponibles.
-- El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia: no hay evidencia de uso en produccion por terceros.
-- La licencia MIT del paquete no exime de verificar la licencia del checkpoint base y del proyector multimodal, no detallada en la informacion disponible.
-- Dependencia de un stack joven y especifico (hrx-loom 0.1.0, hrx-system `d01d1c1`, `loom-skills`): la API y el formato pueden cambiar.
+- El paquete esta atado al runtime AMD Loom (`hrx-loom==0.2.0`) y a GPUs AMD concretas; no es un artefacto generico para CUDA ni para otros motores sin conversion.
+- Las cifras de rendimiento se midieron en trabajos distintos para llama.cpp (2026-11-13) y Loom (2026-11-17); llama.cpp no se volvio a medir para este paquete, por lo que la comparacion no es estrictamente simultanea.
+- En GPUs de 16 GB el contexto por peticion queda limitado a 93.184 tokens frente a los 262.144 nativos.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinacion del modelo base en la informacion disponible.
+- No hay datos de benchmarks de calidad (razonamiento, codigo, matematicas) que permitan validar el modelo para tareas de alta exigencia.
+- El soporte de tool calling y de agentes no esta documentado; no debe asumirse en produccion.
+- La licencia del paquete es MIT, pero la del checkpoint base no se detalla en la informacion proporcionada; conviene verificar la licencia del modelo original antes de un uso comercial.
+- El repositorio tiene un volumen de descargas bajo (246) y ningun like, lo que limita la validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio del paquete: https://huggingface.co/loom-fun/bartowski-Ornith-1.5-9B-loom
-- Checkpoint base GGUF: https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF
-- Arbol de ficheros del checkpoint base: https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF/tree/main
-- Modelo borrador para decodificacion especulativa: https://huggingface.co/abenzerps/Ornith-1.5-9B-DFlash-GGUF
-- Repositorio hrx-system (ROCm): https://github.com/ROCm/hrx-system
-- Flujo loom-skills: https://github.com/loom-fun/loom-skills
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/bartowski-Ornith-1.5-9B-loom
+- Modelo base en Hugging Face: https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF
+- Runtime AMD Loom (repositorio): https://github.com/ROCm/hrx-system
+- Flujo de trabajo loom-skills: https://github.com/loom-fun/loom-skills
+- Web del ecosistema Loom: https://loom-fun.github.io/loom-dev/
+- Medicion llama.cpp (DevLab Dispatch run 43376548212): https://github.com/loom-fun/loom-skills/actions/runs/43376548212/job/131724300345
+- Medicion Loom (DevLab Dispatch run 44088665443): https://github.com/loom-fun/loom-skills/actions/runs/44088665443/job/134057825595

@@ -2,108 +2,97 @@
 
 ## Resumen
 
-`lapalaba/Qwen3.8-27B-DFlash2-ru` es un modelo borrador (draft model) para decodificación especulativa con el algoritmo DFlash2, diseñado para emparejarse con el verificador `Qwen3.8-27B-FP8`. No es un modelo de chat autónomo: el verificador genera la salida final y este checkpoint se limita a proponer bloques de tokens que el verificador valida. Lo publica el usuario `lapalaba` partiendo de `incoai/Qwen3.8-27B-DFlash2`, sobre el que se ha realizado un entrenamiento de continuación orientado al dominio ruso.
+Qwen3.8-27B-DFlash2-ru es un cabezal de borrador (draft head) para decodificación especulativa, no un modelo de lenguaje autónomo. Lo desarrolla lapalaba partiendo de `incoai/Qwen3.8-27B-DFlash2` y afinándolo sobre un corpus de 271.148 ejemplos orientados al dominio ruso (interacciones de agentes, trazas de producción y RAG). Su función es proponer bloques de tokens que el verificador `Qwen/Qwen3.8-27B` valida, acelerando la inferencia en despliegues de SGLang y vLLM.
 
-El checkpoint contiene 1.924.404.480 parámetros (unos 1,92 B) en safetensors, con un repositorio de 3,8 GB, y se sirve exclusivamente a través de SGLang con soporte de DFlash2 y un tamaño de bloque de 8 (un token ancla del verificador más siete tokens propuestos). Su interés práctico está en reducir la latencia por token en despliegues de `Qwen3.8-27B` cuando el tráfico es mayoritariamente en ruso, aunque los datos publicados muestran una tasa de aceptación inferior a la del borrador original.
+El checkpoint emplea la arquitectura `DFlash2DraftModel` en bfloat16 con cinco capas de borrador, tamaño oculto de 5.120, tamaño intermedio de 17.408 y vocabulario de 248.320 entradas. El bloque especulativo es de 8 tokens (7 tokens especulativos en la configuración de vLLM) y el contexto de entrenamiento se fijó en 24.576 tokens con el modo thinking desactivado.
 
-La relevancia es acotada pero específica: no existen muchos borradores DFlash2 afinados para dominio y menos para ruso. El autor documenta 271.148 ejemplos de entrenamiento con trazas de agente, diálogos de producción y ejemplos de RAG, y publica mediciones de serving en una H200 con concurrencias de 8, 16, 32 y 64.
+Su relevancia es práctica: permite mejorar el throughput de servicio en cargas de trabajo rusas y de retail sin cambiar el modelo verificador, a costa de un rendimiento inferior en tareas fuera de dominio como MBPP. No debe cargarse como modelo de chat.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3, modelo borrador para decodificación especulativa DFlash2 (no es un modelo de chat independiente) |
-| Parámetros totales | 1.924.404.480 (~1,92 B) |
-| Parámetros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | 24.576 tokens (captura de entrenamiento y `--context-length` del despliegue medido); contexto nativo del verificador no disponible |
-| Tipos de cuantización | No disponible en la model card; pesos publicados en safetensors (repo de 3,8 GB). El verificador asociado se sirve en FP8 |
-| Idiomas soportados | Ruso (ru) e inglés (en) |
-| Licencia | `other` (sin texto de licencia detallado en la información disponible) |
-| Formato de pesos | safetensors |
+| Arquitectura | DFlash2DraftModel (cabezal de borrador para decodificación especulativa sobre Qwen3.8-27B) |
+| Parametros totales | 1.924.404.480 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 24.576 tokens (contexto de entrenamiento y de servicio recomendado) |
+| Tipos de cuantizacion | no disponible (export en bfloat16) |
+| Idiomas soportados | ru, en |
+| Licencia | other |
+| Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un borrador de decodificación especulativa construido sobre la familia Qwen3 e inicializado desde `incoai/Qwen3.8-27B-DFlash2`. El mecanismo DFlash2 propone bloques de tokens que el verificador `Qwen3.8-27B-FP8` comprueba en paralelo; el autor configura `--speculative-dflash-block-size 8`, es decir, un ancla del verificador más siete tokens del borrador. El checkpoint seleccionado es el paso global 542.298, descrito como el mejor punto de evaluación de entrenamiento, con accuracy 0,66958 y loss 2,03607.
+El modelo es un cabezal de borrador DFlash2 con cinco capas, tamaño oculto de 5.120, tamaño intermedio de 17.408 y vocabulario de 248.320 tokens. Incorpora tamaño de bloque DFlash2 de 8, token de máscara con ID 248.070, kernel de convolución 2, tamaño de grupo de convolución 16, rango del selector 256, top-k del selector 16 y capas verificadoras en los índices [5, 19, 33, 47, 61]. El export se realizó en bfloat16.
 
-El entrenamiento de continuación utilizó un pool final de 271.148 ejemplos procedentes de interacciones de agente en dominio ruso, trazas de producción y ejemplos de RAG (mezcla de ruso nativo y material traducido desde ruso/inglés). La captura se hizo con contexto de 24.576 tokens y con el modo *thinking* desactivado. La distribución por longitud renderizada bajo la plantilla del modelo es: 150.764 ejemplos (55,60 %) de hasta 2.047 tokens, 91.065 (33,58 %) entre 2.048 y 4.095, 15.547 (5,73 %) entre 4.096 y 5.188, 11.722 (4,32 %) entre 5.189 y 8.191 y 2.050 (0,76 %) por encima de 8.192. Los grupos de test y de sonda de continuación se excluyeron antes de la captura. No se documentan detalles de RLHF/DPO para este checkpoint.
+El entrenamiento partió de `incoai/Qwen3.8-27B-DFlash2` y continuó sobre 271.148 ejemplos filtrados: interacciones de agentes en ruso, trazas de producción y datos de RAG (mezcla de ejemplos nativos en ruso y traducciones desde fuentes rusas e inglesas). Se excluyeron grupos de test y de sonda de continuación antes de la captura, y las secuencias se agruparon por longitud renderizada bajo la plantilla fijada del modelo. La distribución es muy sesgada hacia contextos cortos: el 55,60 % de los ejemplos tiene ≤2.047 tokens, el 33,58 % entre 2.048 y 4.095, el 5,73 % entre 4.096 y 5.188, el 4,32 % entre 5.189 y 8.191 y solo el 0,76 % supera los 8.192 tokens. Se seleccionó el checkpoint del paso 542.298, con la mejor precisión de evaluación observada (0,66958) y pérdida de 2,03607.
 
 ## Capacidades
 
-- Aceleración de inferencia mediante decodificación especulativa: propone bloques de tokens para que el verificador `Qwen3.8-27B-FP8` los valide, reduciendo el coste por token aceptado.
-- Afinado a dominio ruso: entrenado sobre trazas de agente, diálogos de producción y ejemplos de RAG en ruso, lo que orienta la distribución de propuestas hacia ese tipo de prompts.
-- Soporte de conversaciones multi-turno: el pool de entrenamiento incluye diálogos de producción, con longitudes renderizadas de hasta más de 8.000 tokens en una fracción pequeña de los ejemplos.
-- Soporte de flujos con tool calling y agentes: parte del corpus son trazas de agente, aunque las capacidades funcionales reales (llamadas a herramientas, razonamiento multi-paso) las aporta el verificador, no el borrador.
-- Integración con SGLang: el checkpoint está pensado para el backend `--speculative-algorithm DFLASH` con FlashAttention 3 y FlashInfer para prefill y decode de atención lineal.
-- No soporta generación autónoma: no produce respuestas finales, ni visión, ni audio, ni modo *thinking* propio.
+- Generación de propuestas de tokens para decodificación especulativa verificada por `Qwen/Qwen3.8-27B`.
+- Aceleración de inferencia en SGLang mediante `--speculative-algorithm DFLASH` y tamaño de bloque 8.
+- Aceleración de inferencia en vLLM 0.28.0 o superior con `method: dflash` y 7 tokens especulativos.
+- Especialización en cargas de trabajo del dominio ruso: interacciones de agentes, trazas de producción y RAG.
+- Soporte de contextos de hasta 24.576 tokens en el pipeline de servicio.
+- No soporta tool calling, agentes ni razonamiento de forma autónoma: esas capacidades residen en el verificador, no en este checkpoint.
+- No es un modelo de chat ni de generación de texto independiente.
 
 ## Casos de uso
 
-- Servicio de chat en ruso de baja latencia: desplegar el borrador junto al verificador FP8 en SGLang para reducir el TPOT en conversaciones multi-turno en ruso; en las mediciones del autor el TPOT p50 a concurrencia 8 es de 14,74 ms.
-- RAG sobre documentación en ruso: el corpus de entrenamiento incluye ejemplos de retrieval-augmented generation, por lo que las propuestas del borrador se alinean con prompts largos con contexto recuperado.
-- Agentes con llamadas a herramientas en dominio ruso: al haberse entrenado con trazas de agente, el borrador cubre los patrones de formato habituales en ese tipo de interacción, siempre con el verificador emitiendo la respuesta final.
-- Reducción de coste en serving multiusuario: con concurrencia 32 el autor mide 3,21 RPS y 1.114,16 tokens/s de salida, lo que permite estimar el ahorro frente a servir el verificador sin especulación.
-- Evaluación comparativa de decodificación especulativa: sirve como punto de referencia para medir la tasa de aceptación (tau) de borradores afinados frente al borrador original en tareas de matemáticas tipo GSM8K.
-- Generación de código y matemáticas asistida en ruso: el autor reporta pruebas sobre GSM8K y MATH-500 con prompts deterministas, escenario representativo de asistentes técnicos que combinan razonamiento numérico con instrucciones en ruso.
-- Experimentación en investigación: al ser un checkpoint abierto de un borrador DFlash2 para dominio, permite estudiar cómo el ajuste de dominio afecta a la tasa de aceptación y al throughput.
+- Servicio de un verificador Qwen3.8-27B con aceleración especulativa en ruso: se despliega el verificador y se adjunta este checkpoint como draft head en SGLang o vLLM, de modo que cada paso del verificador acepta varios tokens propuestos y se reduce el coste por token generado.
+- Asistentes de atención al cliente en retail en ruso: el checkpoint está afinado sobre trazas de retail, y en la evaluación a concurrencia 32 mantiene un throughput de 405 tok/s frente a 402 del baseline, con tau de 5,05 frente a 4,97.
+- Pipelines de RAG en producción: el corpus de entrenamiento incluye ejemplos de RAG en ruso, por lo que las propuestas se alinean mejor con la distribución de respuestas aumentadas por recuperación en ese idioma.
+- Generación de código en ruso con HumanEval: a concurrencia 32 alcanza 1.117 tok/s frente a 1.049 del baseline (+6,4 %), aunque con tau inferior (6,46 frente a 6,90).
+- Despliegue de agentes multi-turno en ruso: las interacciones de agente forman parte del conjunto de entrenamiento, lo que favorece la especulación en conversaciones encadenadas con llamadas a herramientas gestionadas por el verificador.
+- Evaluación comparativa de cabezales de borrador: sirve como referencia para medir el impacto de la especialización por idioma y dominio frente a `z-lab/Qwen3.8-27B-DFlash2` en un mismo entorno SGLang con verificador FP8.
 
 ## Benchmarks y rendimiento
 
-Evaluación del autor con el verificador `Qwen3.8-27B-FP8` en una NVIDIA H200, SGLang, FlashAttention 3, bloque DFlash2 de 8, contexto 24.576, tope de salida 4.096 tokens, `temperature=0`, tres repeticiones por celda. La concurrencia 64 corresponde a una ejecución práctica sin límite con cliente de 64 workers. `tau` es el número de tokens aceptados por paso del verificador (mayor es mejor).
+Evaluación en SGLang sobre una NVIDIA H200 con verificador `Qwen3.8-27B-FP8`, FlashAttention 3, bloque DFlash2 de 8, contexto de 24.576 y límite de salida de 4.096 tokens, temperatura 0 y prompts con `z-lab/dflash`. Throughput de salida a concurrencia 32:
 
-GSM8K:
+| Benchmark | Baseline (tok/s) | Este checkpoint (tok/s) | Δ vs baseline | Tau baseline | Tau checkpoint |
+|---|---:|---:|---:|---:|---:|
+| HumanEval | 1.049 | 1.117 | +6,4 % | 6,90 | 6,46 |
+| Retail | 402 | 405 | +0,6 % | 4,97 | 5,05 |
+| MBPP | 1.137 | 975 | -14,2 % | 5,87 | 5,01 |
 
-| Método | Concurrencia | RPS | Tokens/s salida | TTFT p50 (ms) | TPOT p50 (ms) | E2E p50 (ms) | E2E p95 (ms) | Tau | Fallos |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| z-lab DFlash2 | 8 | 1,70 ± 0,01 | 601,90 ± 3,05 | 230,82 | 12,13 | 3.971,48 | 7.894,25 | 6,10 | 0/3072 |
-| Checkpoint de dominio | 8 | 1,42 ± 0,02 | 496,92 ± 6,97 | 229,08 | 14,74 | 4.682,51 | 9.376,75 | 4,93 | 0/3072 |
-| z-lab DFlash2 | 16 | 3,02 ± 0,05 | 1.054,38 ± 14,45 | 228,71 | 13,73 | 4.403,90 | 8.864,02 | 6,11 | 0/3072 |
-| Checkpoint de dominio | 16 | 2,57 ± 0,06 | 895,20 ± 20,09 | 228,44 | 16,35 | 5.181,62 | 10.208,81 | 4,95 | 0/3072 |
-| z-lab DFlash2 | 32 | 3,96 ± 0,03 | 1.380,33 ± 18,36 | 3.722,92 | 11,30 | 7.274,13 | 10.928,80 | 6,12 | 0/3072 |
-| Checkpoint de dominio | 32 | 3,21 ± 0,19 | 1.114,16 ± 61,96 | 4.421,53 | 13,94 | 8.762,23 | 13.122,55 | 4,95 | 0/3072 |
-| z-lab DFlash2 | 64 (sin límite) | 3,96 ± 0,14 | 1.373,33 ± 36,57 | 11.508,78 | 11,41 | 15.087,30 | 19.004,23 | 6,13 | 0/3072 |
-| Checkpoint de dominio | 64 (sin límite) | 3,23 ± 0,16 | 1.130,09 ± 52,32 | 13.977,72 | 14,06 | 18.377,03 | 23.072,35 | 4,94 | 0/3072 |
-
-MATH-500: la tabla correspondiente aparece truncada en la información disponible, por lo que no se reproducen sus valores.
-
-Datos adicionales: el autor reporta accuracy de evaluación de entrenamiento 0,66958 y loss 2,03607 en el paso 542.298. Las ejecuciones de referencia y de dominio se midieron en fechas distintas, por lo que las diferencias pequeñas deben interpretarse junto a la variación entre repeticiones. Estas métricas miden comportamiento de serving y de especulación, no la exactitud de las respuestas.
+Configuraciones con throughput superior al baseline: retail a concurrencia 16, 32 y 64; HumanEval a concurrencia 32 y 64. Tau se define como tokens de salida aceptados por paso del verificador (mayor es mejor) y mide comportamiento de servicio, no precisión de respuesta. Los resultados completos con TTFT, TPOT, E2E, RPS y fallos están en `EVALUATION.md` del repositorio.
 
 ## Requisitos de hardware
 
-- VRAM del borrador: unos 3,85 GB en bfloat16 (1,92 B de parámetros); el repositorio completo ocupa 3,8 GB.
-- VRAM del sistema completo: el borrador debe convivir con el verificador `Qwen3.8-27B-FP8`, que añade del orden de 27 GB de pesos en FP8, más caché KV para el contexto configurado.
-- Configuración validada por el autor: una NVIDIA H200, `--tp-size 1`, `--mem-fraction-static 0.80`, `--max-running-requests 32`, `--context-length 24576`, `--dtype bfloat16`, `--attention-backend fa3`, `--linear-attn-prefill-backend flashinfer`, `--linear-attn-decode-backend flashinfer`, `--mamba-radix-cache-strategy extra_buffer`.
-- GPU recomendadas: H200 (medida por el autor). Para el conjunto borrador + verificador FP8 de 27 B se requiere una GPU de 80 GB o varias; no hay datos publicados de despliegue en A100, H100 ni RTX 4090.
-- GPU de consumo: el borrador por sí solo cabría en tarjetas de 8-12 GB en bfloat16, pero es inútil sin el verificador, que no cabe en GPU de consumo en FP8 sin cuantización adicional y reparto entre varias tarjetas. No disponible confirmación de funcionamiento en consumer.
-- Opciones de despliegue: SGLang con soporte de Qwen3.8 y DFlash2, usando `--speculative-algorithm DFLASH` y `--speculative-draft-model-path`. No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput medidos (GSM8K, concurrencia 8): TTFT p50 229,08 ms, TPOT p50 14,74 ms, E2E p50 4.682,51 ms, 1,42 RPS y 496,92 tokens/s de salida. A concurrencia 32: 3,21 RPS y 1.114,16 tokens/s, con TTFT p50 de 4.421,53 ms.
+- VRAM del draft head: aproximadamente 3,9 GB en bfloat16 (tamaño del repo), adicional a la memoria del verificador Qwen3.8-27B.
+- VRAM del verificador: no disponible en la información proporcionada; la evaluación usó la variante FP8 en una H200.
+- GPU validadas: NVIDIA H200 (evaluación oficial). No se han publicado pruebas en A100, H100 ni RTX 4090.
+- GPU de consumo: no disponible; no hay datos de despliegue en GPUs consumer.
+- Opciones de despliegue: SGLang (backend de atención fa3, backends linear-attn flashinfer, `--speculative-algorithm DFLASH`) y vLLM 0.28.0 o superior (`method: dflash`, 7 tokens especulativos).
+- Configuración de referencia: `--tp-size 1`, `--max-running-requests 32`, `--context-length 24576`, `--mem-fraction-static 0.80`.
+- Latencia y throughput: 1.117 tok/s en HumanEval, 405 tok/s en retail y 975 tok/s en MBPP a concurrencia 32 sobre H200 con verificador FP8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Rol | Parámetros | Contexto | Tau (GSM8K, c=8) | Throughput (c=8) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| `lapalaba/Qwen3.8-27B-DFlash2-ru` | Borrador DFlash2 afinado a dominio ruso | 1,92 B | 24.576 (entrenamiento/serving) | 4,93 | 496,92 tok/s | `other` | Público, 0 descargas |
-| `z-lab/Qwen3.8-27B-DFlash2` | Borrador DFlash2 de referencia | No disponible en la información | No disponible en la información | 6,10 | 601,90 tok/s | No disponible en la información | Público |
-| `incoai/Qwen3.8-27B-DFlash2` | Borrador DFlash2 usado como inicialización | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | Público |
-
-No se comparan modelos de chat de tamaño similar porque este checkpoint no es un modelo generativo autónomo: su función es únicamente proponer tokens para un verificador concreto.
+| Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| lapalaba/Qwen3.8-27B-DFlash2-ru | Draft head DFlash2 especializado en ruso | 1.924.404.480 | 24.576 | +6,4 % en HumanEval y +0,6 % en retail; -14,2 % en MBPP frente al baseline (concurrencia 32) | other | Hugging Face, 270 descargas |
+| z-lab/Qwen3.8-27B-DFlash2 | Draft head DFlash2 generalista (baseline de la evaluación) | no disponible | 24.576 en la evaluación | Referencia: 1.049 tok/s HumanEval, 402 tok/s retail, 1.137 tok/s MBPP | no disponible | Hugging Face |
+| incoai/Qwen3.8-27B-DFlash2 | Draft head DFlash2, punto de partida del afinamiento | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- No es un modelo independiente: no genera respuestas finales ni puede usarse como chat model; requiere el verificador `Qwen3.8-27B-FP8` y una build de SGLang con soporte de DFlash2.
-- Rendimiento inferior al borrador de referencia: la tasa de aceptación cae de 6,10-6,13 (z-lab) a 4,93-4,95 en GSM8K, con un throughput entre un 16 % y un 20 % menor en las celdas medidas; el afinado de dominio no compensa en estos datos.
-- Cobertura lingüística restringida a ruso e inglés; el rendimiento fuera de esos idiomas o de dominios de agente/RAG en ruso no está documentado.
-- Modo *thinking* desactivado durante el entrenamiento: no hay garantías de alineación con flujos que activen razonamiento extendido en el verificador.
-- Licencia `other` sin texto detallado: no se puede confirmar la permisividad para uso comercial; además, el modelo base `Qwen/Qwen3.8-27B` tiene su propia licencia, que debe verificarse por separado.
-- Trazabilidad limitada: 0 descargas y 0 likes; no hay validación independiente de los resultados publicados.
-- Inconsistencia en la documentación: el comando de inicio rápido apunta a `VirVen/Qwen3.8-27B-DFlash2-domain` como ruta del borrador, no a este repositorio, lo que puede provocar despliegues con el checkpoint equivocado.
-- Comparaciones temporales: las ejecuciones base y de dominio se midieron en fechas distintas, de modo que las diferencias pequeñas de latencia y throughput no son concluyentes.
-- Riesgo de alucinación y sesgos: no evaluables directamente en un borrador; heredados del verificador y del corpus de entrenamiento, que mezcla material traducido y trazas de producción sin auditoría publicada.
-- Requiere validación propia de la configuración de memoria y concurrencia: el autor recomienda ajustar GPU, memoria y concurrencia solo después de validar el nuevo despliegue.
+- No es un modelo de lenguaje autónomo: cargarlo como modelo de chat produce resultados inválidos. Requiere siempre el verificador `Qwen/Qwen3.8-27B`.
+- El rendimiento cae un 14,2 % en MBPP frente al baseline, lo que refleja un desplazamiento respecto a la distribución inglesa y generalista.
+- El entrenamiento se concentra en contextos cortos: solo el 0,76 % de los ejemplos supera los 8.192 tokens, por lo que la calidad de la especulación en contextos largos no está respaldada por datos abundantes.
+- El dataset mezcla ejemplos traducidos, no es exclusivamente ruso ni exclusivamente de producción.
+- Licencia "other": es necesario revisar los términos del repositorio antes de un uso comercial.
+- Riesgo de alucinación y sesgos: no evaluados en la información disponible; al ser un draft head, la calidad final depende del verificador.
+- El modo thinking se desactivó durante el entrenamiento, por lo que no se ha validado su comportamiento con razonamiento extendido.
+- Los resultados de referencia se obtuvieron en una sola H200 con verificador FP8 en SGLang; el ejemplo de vLLM usa el verificador no FP8, por lo que el rendimiento puede diferir.
+- Baseline y checkpoint se midieron en fechas distintas, lo que introduce variabilidad no controlada en la comparación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lapalaba/Qwen3.8-27B-DFlash2-ru
-- Checkpoint de inicialización: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
-- Borrador de referencia citado en la model card: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Modelo base / verificador: https://huggingface.co/Qwen/Qwen3.8-27B
-- Plantilla de prompts citada (`z-lab/dflash`): https://huggingface.co/z-lab/dflash
+- Modelo base verificador: https://huggingface.co/Qwen/Qwen3.8-27B
+- Checkpoint de partida: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Baseline de comparación: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Evaluación detallada: ./EVALUATION.md (en el repositorio)
+- Receta de servicio vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

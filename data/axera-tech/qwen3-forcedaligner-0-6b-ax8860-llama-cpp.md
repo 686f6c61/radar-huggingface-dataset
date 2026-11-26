@@ -1,129 +1,119 @@
 # AXERA-TECH/Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp
 
 ## Resumen
+Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp es un paquete de despliegue, publicado por AXERA-TECH, que permite ejecutar el modelo Qwen3-ForcedAligner-0.6B de Qwen sobre la NPU de cuatro nucleos del SoC Axera AX8860 mediante llama.cpp y el backend ggml-axera. No se trata de un modelo nuevo, sino de una adaptacion de inferencia: los pesos se distribuyen en formato GGUF (torre de texto en BF16 y codificador de audio en Q8_0) y los kernels axmodel se generan sin pesos, que se convierten en tiempo de carga (MXFP8 para la torre de texto y BF16 para el codificador de audio).
 
-Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp es una adaptación del modelo Qwen3-ForcedAligner-0.6B de Qwen (Alibaba) empaquetada por AXERA-TECH para ejecutarse sobre la NPU de cuatro núcleos del SoC Axera AX8860 mediante llama.cpp con el backend ggml-axera. El modelo original resuelve una tarea concreta de procesamiento de voz: dado un audio y su transcripción, devuelve los tiempos de inicio y fin de cada palabra (forced alignment o alineamiento forzado a nivel de palabra). Esta variante añade kernels precompilados (axmodel) para el codificador de audio y la torre de texto, junto con binarios de CLI y servidor, de modo que el alineamiento se ejecuta íntegramente en la NPU del dispositivo.
+La tarea del modelo subyacente es el alineamiento forzado a nivel de palabra: dado un audio y su transcripcion, devuelve los tiempos de inicio y fin de cada palabra sobre una rejilla de 80 ms. El paquete incluye una CLI (`llama-forced-aligner`), un servidor persistente (`llama-server`) con endpoints `/v1/audio/alignments` y `/v1/audio/transcriptions` de estilo OpenAI, scripts de ejecucion y de benchmark, y ejemplos de audio de 5 s, 30 s y cerca del limite de contexto.
 
-El modelo tiene 601.300.992 parámetros (unos 0,6 mil millones) y se distribuye en formato GGUF: los pesos de la torre de texto en BF16 (1,13 GiB) y los del codificador de audio en Q8_0 (338 MiB). Los kernels no contienen pesos; se convierten en tiempo de carga (torre de texto a MXFP8 y codificador de audio a BF16 por desquantización del mmproj). El paquete incluye scripts de ejecución y de benchmark, ejemplos de audio de 5 s, 30 s y cerca del límite de contexto, y sumas de verificación SHA256.
+Su relevancia es practica: demuestra que un alineador de 601 millones de parametros puede ejecutarse en hardware de borde (edge) con latencias de decimas de segundo y una fidelidad muy alta frente a la referencia FP32 en CPU, lo que habilita subtitulado, sincronizacion de transcripciones y pipelines de voz sin depender de GPU en la nube.
 
-Su relevancia es práctica: demuestra que un alineador fonético de precisión (error absoluto medio de 2,67 ms frente a la implementación oficial en FP32 sobre CPU) puede ejecutarse en hardware de borde con NPU, con un RTF de pared de 0,017–0,024 en caliente para audios de 30 a 162 segundos. Está pensado para desarrolladores que integren subtitulado, sincronización de transcripciones o verificación de pronunciación en dispositivos Axera, no para inferencia genérica en GPU.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador de audio + torre de texto con cabeza de clasificación de 5000 clases); pesos GGUF ejecutados sobre NPU vía ggml-axera |
-| Parámetros totales | 601.300.992 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el paquete incluye audio de prueba "cerca del límite"; el ejemplo más largo medido es de 162,84 s de audio) |
-| Tipos de cuantización | GGUF BF16 (torre de texto), GGUF Q8_0 (codificador de audio, mmproj); conversión en carga a MXFP8 (texto) y BF16 (audio) |
-| Idiomas soportados | chino e inglés (con las reglas oficiales de segmentación de palabras); japonés y coreano: la model card se interrumpe en ese punto, no disponible |
+| Arquitectura | no disponible (modelo base Qwen3-ForcedAligner-0.6B; torre de texto con 28 capas y cabeza de clasificacion de 5000 clases sobre rejilla de 80 ms, mas codificador de audio) |
+| Parametros totales | 601.300.992 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (los ejemplos incluyen audio cercano al limite; el caso mas largo medido es de 162,84 s) |
+| Tipos de cuantizacion | GGUF BF16 (torre de texto), GGUF Q8_0 (codificador de audio); en placa: MXFP8 para torre de texto y BF16 para codificador de audio |
+| Idiomas soportados | chino e ingles (con las reglas oficiales de segmentacion de palabras); japones y coreano: informacion truncada en la model card |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors del modelo base: 601.300.992 parámetros) |
+| Formato de pesos | GGUF (`qwen3-forcedaligner-0.6b-bf16.gguf`, `mmproj-qwen3-forcedaligner-0.6b-q8_0.gguf`) mas kernels axmodel y binarios |
 
 ## Arquitectura y entrenamiento
+El paquete no documenta el entrenamiento del modelo base; la informacion disponible se centra en el despliegue. La arquitectura efectiva es un pipeline de dos etapas: un codificador de audio que procesa la senal y una torre de texto de 28 capas que, junto con una cabeza de clasificacion de 5000 clases, predice los limites de palabra sobre una rejilla temporal de 80 ms. La salida se postprocesa con la regla oficial `fix_timestamp` para imponer monotonia en los tiempos.
 
-El modelo base Qwen3-ForcedAligner-0.6B es un alineador forzado que combina un codificador de audio con una torre de texto de 28 capas y una cabeza de clasificación de 5000 clases que predice, sobre una rejilla temporal de 80 ms, la clase de inicio y fin de cada palabra. La salida se postprocesa con la regla oficial `fix_timestamp` para imponer monotonía en los límites. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
-
-La innovación de esta variante es el despliegue: AXERA-TECH compila el codificador de audio y la torre de texto más la cabeza de 5000 clases en dos axmodel fusionados de cuatro núcleos, sin pesos embebidos, que se convierten al cargar desde los GGUF. La fidelidad numérica medida en placa es alta: coseno de 0,9999971 en el codificador de audio, 0,9984–0,9998 en las 28 capas de la torre de texto y 0,9999995 en la cabeza de clasificación; la deriva procede principalmente de los pesos MXFP8 del texto. El servidor expone endpoints HTTP (`/v1/audio/alignments` y `/v1/audio/transcriptions` en estilo OpenAI) y acepta audio multipart o JSON con base64.
+La innovacion tecnica esta en la integracion: los kernels axmodel no contienen pesos y se convierten en carga (torre de texto en MXFP8, codificador de audio en BF16 desnormalizado desde el Q8_0 del mmproj). Se reportan cosine similarities en placa de 0,9999971 para el codificador de audio, 0,9984-0,9998 para las 28 capas de la torre de texto y 0,9999995 para la cabeza de 5000 clases, lo que indica que la deriva numerica procede principalmente de los pesos MXFP8 de la torre de texto y no del clasificador. El servidor funciona con `-np 1` (una peticion simultanea) y el modelo permanece residente.
 
 ## Capacidades
-
-- Alineamiento forzado a nivel de palabra: dado un WAV y su transcripción, devuelve `start`/`end` por palabra en milisegundos.
-- Salida estructurada en JSON con palabras, marcas de tiempo crudas (`timestamp_ids` en rejilla de 80 ms), marcas corregidas, segmentos, idioma, duración y recuento de tokens de entrada y de audio.
-- Diagnóstico de confianza por límite mediante `top2_margin_u6` (margen entre las dos clases más probables de la cabeza).
-- Procesamiento de audio en chino e inglés con las reglas oficiales de segmentación.
-- Modo CLI de un solo disparo y modo servidor residente con un único request concurrente (`-np 1`).
-- Endpoint compatible con el formato de transcripciones de OpenAI cuando se proporciona transcripción.
-- Cabeceras de respuesta con el tiempo de forward de la torre de texto y el número de tokens (`X-Align-Forward-Seconds`, `X-Align-Input-Tokens`, `X-Align-Audio-Tokens`).
-- No se documentan tool calling, agentes, visión, audio generativo ni modo de razonamiento extendido.
+- Alineamiento forzado a nivel de palabra: genera tiempos de inicio y fin para cada palabra dada una transcripcion y un audio.
+- Salida estructurada en JSON con `words`, `timestamp_ids`, `raw_timestamp_ms`, `fixed_timestamp_ms`, `segments`, `language`, `duration`, `input_tokens` y `audio_tokens`.
+- Diagnostico de confianza mediante `top2_margin_u6` (margen entre las dos clases mas probables de la cabeza).
+- Servidor HTTP persistente con endpoints `/v1/audio/alignments` y `/v1/audio/transcriptions` (estilo OpenAI, con `response_format=verbose_json`).
+- Acepta peticiones multipart (`file`, `transcript`, `language`) o cuerpo JSON con audio en base64.
+- Cabeceras de respuesta con metricas por peticion: `X-Align-Forward-Seconds`, `X-Align-Input-Tokens`, `X-Align-Audio-Tokens`.
+- Soporte de chino e ingles con las reglas oficiales de segmentacion.
+- No se documentan capacidades de generacion libre, razonamiento, codigo, tool calling, agentes, vision ni audio generativo.
 
 ## Casos de uso
-
-- Subtitulado y sincronización de transcripciones en dispositivos de borde: con una transcripción previa de un ASR, el modelo genera marcas por palabra para incrustar subtítulos karaoke o resaltados en tiempo real; el RTF de pared de 0,017–0,024 permite procesar un clip de 162 s en unos 3 s.
-- Verificación de pronunciación en aprendizaje de idiomas: comparar los límites esperados de cada palabra con los obtenidos permite detectar pausas anómalas o palabras omitidas en lecturas de alumnos, usando el margen `top2_margin_u6` como señal de incertidumbre.
-- Auditoría de calidad de datasets de voz: alinear lotes de audio con sus transcripciones para detectar desajustes entre texto y audio antes de entrenar modelos ASR o TTS, con un coste energético bajo al ejecutarse en NPU.
-- Indexación y búsqueda por palabra en archivos de audio: generar índices temporales por palabra que permitan saltar a una palabra concreta en grabaciones largas (reuniones, entrevistas, clases) dentro de un dispositivo empotrado.
-- Sincronización de locuciones en doblaje y postproducción: obtener los tiempos exactos de cada palabra del audio original para ajustar la duración de la locución doblada o generar guías de mezcla.
-- Servicio local de alineamiento en un appliance AX8860: desplegar `llama-server` en el puerto 18240 y ofrecer `/v1/audio/alignments` a aplicaciones de la red local sin depender de la nube, con carga en frío de 8,34 s y consumo de NPU de aproximadamente 2,95 GB de CMM tras la carga.
-- Control de calidad en pipelines de transcripción: usar el endpoint `/v1/audio/transcriptions` con `response_format=verbose_json` para obtener marcas temporales verbosas en un formato compatible con herramientas existentes.
+- Subtitulado y sincronizacion de transcripciones: dado un audio y su texto, el modelo devuelve los tiempos por palabra, lo que permite generar subtitulos con marcas temporales precisas (error absoluto medio de 2,67 ms frente a la referencia FP32 en la comparativa publicada).
+- Verificacion de transcripciones ASR: al alinear el texto reconocido con el audio se pueden detectar omisiones, inserciones o desajustes temporales en pipelines de reconocimiento de voz.
+- Edicion de video y audio asistida: la salida por palabra y por segmento facilita el corte, la busqueda y la navegacion dentro de material hablado.
+- Procesamiento en el borde (edge): al ejecutarse en la NPU de un AX8860 con un consumo de memoria NPU de aproximadamente 2,95 GB tras la carga y un pico adicional de 0,66-0,80 GB por peticion, es apto para dispositivos sin GPU dedicada.
+- Servicio local de alineamiento: el servidor residente con endpoints compatibles con el estilo OpenAI permite integrar el alineador en aplicaciones existentes que ya consumen APIs de audio.
+- Evaluacion de calidad de doblaje y locucion: comparar los tiempos alineados con los esperados ayuda a medir desviaciones de ritmo en versiones dobladas.
+- Procesamiento por lotes de audios de hasta unos 160 s: con un RTF de pared de 0,017-0,018 en el caso cercano al limite, el coste por minuto de audio es bajo.
 
 ## Benchmarks y rendimiento
+Rendimiento en placa (AX8860, SDK V0.6.0, NPU de 4 nucleos, modo servidor, extremo a extremo; `bench.sh` con arranque en frio y tres ejecuciones en caliente por nivel):
 
-Rendimiento en placa (AX8860, SDK V0.6.0, NPU de 4 núcleos, modo servidor extremo a extremo, `./bench.sh`):
-
-| Nivel | Audio | Tiempo de pared (s) | Forward de texto (s) | RTF de pared | RTF de forward |
+| Nivel | Audio | Tiempo de pared (s) | Forward torre de texto (s) | RTF de pared | RTF de forward |
 |---|---|---:|---:|---:|---:|
-| Primera petición en frío | 5,00 s | 0,855 | 0,049 | 0,171 | 0,010 |
-| 5 s en caliente | 5,00 s | 0,319–0,350 | 0,017–0,028 | 0,064–0,070 | 0,003–0,006 |
-| 30 s en caliente | 30,00 s | 0,670–0,734 | 0,103–0,173 | 0,022–0,024 | 0,003–0,006 |
-| Cerca del límite, en caliente | 162,84 s | 2,732–3,011 | 0,729–0,992 | 0,017–0,018 | 0,004–0,006 |
+| Primera peticion (frio) | 5,00 s | 0,855 | 0,049 | 0,171 | 0,010 |
+| 5 s en caliente | 5,00 s | 0,319-0,350 | 0,017-0,028 | 0,064-0,070 | 0,003-0,006 |
+| 30 s en caliente | 30,00 s | 0,670-0,734 | 0,103-0,173 | 0,022-0,024 | 0,003-0,006 |
+| Cerca del limite, en caliente | 162,84 s | 2,732-3,011 | 0,729-0,992 | 0,017-0,018 | 0,004-0,006 |
 
-Memoria y arranque:
+Arranque y memoria NPU (misma ejecucion de benchmark):
 
-| Métrica | Valor |
+| Elemento | Valor |
 |---|---|
-| Carga del servidor en frío | 8,34 s |
+| Carga del servidor en frio | 8,34 s |
 | CMM antes de la carga | 288.002.048 B |
-| CMM después de la carga | 2.953.936.896 B |
-| Pico incremental con audio de 5 s | 657.543.168 B |
-| Pico incremental con audio de 30 s | 732.315.648 B |
-| Pico incremental cerca del límite (162,84 s) | 804.016.128 B |
+| CMM despues de la carga | 2.953.936.896 B |
+| Incremento de pico, peticion de 5 s | 657.543.168 B |
+| Incremento de pico, peticion de 30 s | 732.315.648 B |
+| Incremento de pico, peticion de 162,84 s | 804.016.128 B |
 | Salida del servidor tras TERM | 1,2 s |
 
-Precisión frente a la implementación oficial en FP32 sobre CPU (`qwen_asr` ForcedAligner, torch CPU), sobre 22 audios en chino e inglés (11 cada uno, incluidos clips de 74,32 s y 68,56 s), con 643 palabras y 1286 límites:
+Precision frente a la implementacion oficial FP32 en CPU (`qwen_asr` ForcedAligner, torch CPU) sobre 22 audios en chino e ingles (643 palabras, 1286 limites):
 
-| Métrica | Resultado |
+| Metrica | Resultado |
 |---|---|
 | Coincidencia de argmax | 1247/1286 = 96,97 % |
-| Error absoluto medio por límite | 2,67 ms |
+| Error absoluto medio por limite | 2,67 ms |
 | Mediana | 0 ms |
 | p99 | 80 ms |
-| Máximo | 240 ms |
-| Límites con error ≤80 ms | 99,69 % |
-| Límites con error ≤160 ms | 99,84 % |
-| Fidelidad de coseno (codificador de audio) | 0,9999971 (mín. 0,9999153) |
-| Fidelidad de coseno (torre de texto, 28 capas) | 0,9984–0,9998 |
-| Fidelidad de coseno (cabeza de 5000 clases) | 0,9999995 |
+| Maximo | 240 ms |
+| Limites con error <= 80 ms | 99,69 % |
+| Limites con error <= 160 ms | 99,84 % |
 
-De los 39 límites discrepantes, 36 difieren una sola celda (80 ms), 2 dos celdas y 1 tres celdas; una ejecución BF16 en CPU del mismo GGUF presenta 40 discrepancias, 37 idénticas a las de la NPU, lo que indica sensibilidad numérica en clases casi empatadas y no un sesgo del acelerador.
+De los 39 limites discrepantes, 36 difieren en una sola celda de 80 ms, 2 en dos celdas y 1 en tres. Una ejecucion en CPU BF16 con el mismo GGUF presenta 40 discrepancias, 37 identicas a las de la NPU; la NPU tiene 2 exclusivas y la CPU 3, todas de mas o menos una celda, lo que apunta a sensibilidad numerica en clases casi empatadas y no a un sesgo especifico de la NPU.
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ya que el modelo no es un LLM generativo de propósito general.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- Hardware objetivo: SoC Axera AX8860 con NPU de cuatro núcleos y SDK V0.6.0 (probado en placa). No se documenta soporte para GPU convencionales.
-- Memoria de NPU: aproximadamente 2,95 GB de CMM tras la carga del modelo, con picos incrementales por petición de 0,66 a 0,80 GB según la duración del audio.
-- Almacenamiento: repo de 1,6 GB (GGUF de texto de 1,13 GiB, mmproj de 338 MiB, binarios, kernels y ejemplos).
-- Despliegue: binarios `llama-forced-aligner` (CLI) y `llama-server` (servicio residente en el puerto 18240, con desplazamiento automático a 18240–18249 si está ocupado y variable `FA_BENCH_PORT`).
-- Concurrencia: un único request simultáneo (`-np 1`); el modelo permanece residente entre peticiones.
-- Latencia: carga en frío de 8,34 s; primera petición de 5 s en 0,855 s; peticiones en caliente de 5 s en 0,32–0,35 s y de 162,84 s en 2,73–3,01 s.
-- No se documenta despliegue en vLLM, TGI, Ollama ni llama.cpp estándar sobre GPU; el backend es ggml-axera específico de este SoC.
+- Hardware objetivo: SoC Axera AX8860 con NPU de 4 nucleos; SDK V0.6.0 probado en placa.
+- Memoria NPU: aproximadamente 2,95 GB tras la carga del modelo, con picos adicionales de 0,66-0,80 GB por peticion segun la duracion del audio.
+- Almacenamiento: repositorio de 1,6 GB (pesos GGUF de 1,13 GiB para la torre de texto y 338 MiB para el codificador de audio, mas binarios y kernels).
+- GPU: no aplica; el despliegue documentado es sobre NPU, no sobre GPU NVIDIA o AMD. No se proporcionan requisitos de VRAM.
+- Cabe en GPU de consumo: no disponible (no se documenta una ruta GPU).
+- Opciones de despliegue: `run.sh` (CLI), `llama-server` con endpoints HTTP, y `bench.sh` para medicion sin argumentos; puerto por defecto 18240, con desplazamiento automatico dentro de 18240-18249 o configurable con `FA_BENCH_PORT`.
+- Latencia y throughput: RTF de pared de 0,017-0,018 en audios largos y de 0,064-0,070 en audios de 5 s en caliente; el servidor procesa una peticion a la vez (`-np 1`).
 
 ## Comparativa con modelos similares
+No se dispone de datos de otros modelos en la informacion proporcionada; la comparativa se limita a la referencia de correccion citada por el autor.
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp (esta ficha) | 601.300.992 | no disponible | Alineamiento forzado palabra a palabra | no disponible | GGUF + kernels axmodel para AX8860 |
-| Qwen/Qwen3-ForcedAligner-0.6B (base) | 601.300.992 | no disponible | Alineamiento forzado palabra a palabra | no disponible | Pesos originales en Hugging Face |
-| Implementación oficial `qwen_asr` ForcedAligner (FP32, CPU) | 601.300.992 | no disponible | Alineamiento forzado palabra a palabra | no disponible | Referencia de precisión en CPU (torch) |
+| Referencia | Entorno | Coincidencia de argmax | Error absoluto medio | Notas |
+|---|---|---:|---:|---|
+| Este paquete (NPU AX8860) | GGUF + kernels axmodel, MXFP8/BF16 | 96,97 % | 2,67 ms | 39 discrepancias, 36 de una celda |
+| Mismo GGUF en CPU BF16 | llama.cpp CPU | no disponible en porcentaje | no disponible | 40 discrepancias, 37 identicas a la NPU |
+| Implementacion oficial FP32 | `qwen_asr` ForcedAligner, torch CPU | referencia | referencia | Base de comparacion |
 
-La comparación con alternativas de otros fabricantes (por ejemplo, alineadores tipo CTC o Montreal Forced Aligner) no está disponible en la información proporcionada. La diferencia principal frente al modelo base y a la referencia CPU es el soporte de NPU con una pérdida de precisión de 2,67 ms de error absoluto medio y una coincidencia de argmax del 96,97 %.
+Comparativa con otros alineadores o modelos de la misma categoria: no disponible.
 
 ## Limitaciones y advertencias
-
-- Idiomas: solo chino e inglés están documentados; la model card se interrumpe al tratar japonés y coreano, por lo que su soporte es no disponible.
-- Requiere transcripción de entrada: no transcribe audio por sí mismo; el endpoint de transcripciones reutiliza el alineador cuando se proporciona el texto.
-- Dependencia de hardware: los kernels axmodel están compilados para la NPU del AX8860 con SDK V0.6.0; no son portables a otras plataformas.
-- Concurrencia limitada a un request simultáneo (`-np 1`), lo que restringe su uso como servicio multiusuario.
-- Licencia no disponible: no puede confirmarse el uso comercial sin consultar la licencia del modelo base Qwen3-ForcedAligner-0.6B.
-- Riesgo de desalineación en clases casi empatadas: el 3,03 % de los límites discrepa del FP32, con un máximo de 240 ms (tres celdas de 80 ms); conviene usar `top2_margin_u6` para filtrar casos dudosos.
-- Sin datos publicados sobre sesgos, alucinación o robustez ante ruido, acentos o solapamientos de habla; la evaluación se limita a 22 audios en chino e inglés.
-- Longitud máxima de audio no especificada: el ejemplo más largo medido es de 162,84 s y la model card menciona "cerca del límite de contexto" sin cifra exacta.
-- El paquete incluye scripts y binarios precompilados; su verificación debe hacerse con `SHA256SUMS` antes de desplegar en producción.
+- Idiomas: solo chino e ingles estan confirmados con las reglas oficiales de segmentacion; la seccion sobre japones y coreano aparece truncada en la model card, por lo que su soporte no puede confirmarse.
+- Requiere una transcripcion de entrada: no es un modelo ASR autonomo; el endpoint de transcripciones usa el mismo alineador cuando se proporciona `transcript`.
+- Concurrencia limitada: el servidor se ejecuta con `-np 1`, una peticion a la vez.
+- Deriva numerica: la cuantizacion MXFP8 de la torre de texto introduce diferencias de hasta tres celdas (240 ms) en casos de clases casi empatadas; la cabeza de clasificacion es practicamente exacta.
+- Dependencia de hardware y SDK: el despliegue esta atado al AX8860 y al SDK V0.6.0; no se documenta compatibilidad con otras plataformas.
+- Licencia no disponible: no puede confirmarse el uso comercial ni las condiciones de redistribucion.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible.
+- Longitud de contexto: no se especifica el maximo exacto; el ejemplo mas largo medido es de 162,84 s de audio.
+- Los kernels no contienen pesos y dependen de la conversion en carga desde los GGUF; cualquier modificacion de los pesos requiere regenerar el paquete.
 
 ## Enlaces
-
-- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp
+- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ForcedAligner-0.6B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
-- No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.
+- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

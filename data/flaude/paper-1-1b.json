@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Flaude/Paper-1-1B",
+  "slug": "flaude-paper-1-1b",
+  "author": "Flaude",
+  "url": "https://huggingface.co/Flaude/Paper-1-1B",
+  "created_at": "2026-11-25T20:58:38.000Z",
+  "updated_at": "2026-11-25T21:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flaude: Give Your AI Design Superpowers",
+      "url": "https://www.flaude.app/",
+      "snippet": "Flaude is an AI design tool inside Figma. Copy real app screens into Figma as editable components and redesign them instantly with …"
+    },
+    {
+      "title": "FLAude | Space for Climate Observatory",
+      "url": "https://www.spaceclimateobservatory.org/fr/flaude",
+      "snippet": "FLAude vise à mieux comprendre les phénomènes hydrométéorologiques extrêmes et à élaborer des indicateurs de prévention et …"
+    },
+    {
+      "title": "Société FLAUDE (812466829) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/flaude-812466829",
+      "snippet": "Aug 9, 2026 · FLAUDE à BAYEUX (14400) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces …"
+    }
+  ]
+}

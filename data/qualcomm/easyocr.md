@@ -2,119 +2,112 @@
 
 ## Resumen
 
-EasyOCR es un sistema de reconocimiento óptico de caracteres (OCR) compuesto por dos etapas: un detector de texto y un reconocedor de texto. Qualcomm publica en este repositorio una versión pre-exportada y optimizada de la implementación original de EasyOCR (JaidedAI) para su despliegue en dispositivos con aceleración NPU de Qualcomm, incluyendo Snapdragon 8 Elite, Snapdragon X Elite y plataformas Dragonwing. El modelo reconoce texto en imágenes y cubre más de 80 idiomas y los principales sistemas de escritura.
+EasyOCR para dispositivos Qualcomm es una adaptación optimizada del conocido motor de reconocimiento óptico de caracteres EasyOCR, publicada por Qualcomm en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo de lenguaje, sino de un pipeline de visión por computador compuesto por dos redes neuronales convolucionales: un detector de texto (20,8 millones de parámetros, checkpoint `easyocr-small-stage1`) y un reconocedor de texto (3,84 millones de parámetros). El conjunto se distribuye en formato ONNX, QNN_DLC y TFLite, compilado específicamente para ejecutarse en la NPU de los chipsets Snapdragon y Dragonwing de Qualcomm.
 
-La relevancia de esta ficha radica en que no se trata de un modelo de lenguaje, sino de una pipeline de visión por computador optimizada para inferencia en el borde (edge). El detector tiene 20,8 millones de parámetros y el reconocedor 3,84 millones, con una resolución de entrada de 608x800 píxeles. Los artefactos exportados incluyen formatos ONNX, QNN_DLC y TFLITE, en precisión float y cuantización w8a8, lo que permite desplegar OCR local en móviles, portátiles y dispositivos embebidos sin depender de la nube.
+El modelo resuelve el problema de extraer texto de imágenes (image-to-text) en escenarios de borde, donde no hay acceso a GPU de servidor ni a servicios en la nube. Su relevancia actual radica en que permite ejecutar OCR multilingüe (más de 80 idiomas según la model card) íntegramente en el dispositivo, con latencias de inferencia del detector que oscilan entre 4,8 ms y 77 ms según el chipset y la precisión (float frente a w8a8), lo que lo hace apto para aplicaciones móviles, escáneres de documentos, traducción en tiempo real y accesibilidad.
 
-El repositorio ocupa 4,9 GB e incluye los binarios compilados para distintos runtimes. La licencia es Apache 2.0, lo que facilita su uso comercial. La información disponible no detalla la composición del dataset de entrenamiento ni métricas de precisión (accuracy) por idioma, por lo que esos apartados se marcan como no disponibles.
+La entrada del modelo está fijada a una resolución de 608x800 píxeles. El repositorio ocupa 4,9 GB e incluye los artefactos pre-exportados para distintos runtimes. La ficha se centra en los datos publicados por el autor; cualquier dato no presente en la model card se marca explícitamente como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline de dos etapas: detector de texto (CRAFT) y reconocedor de texto (CRNN), exportados para NPU de Qualcomm |
+| Arquitectura | Pipeline OCR de dos etapas: detector de texto convolucional + reconocedor de texto convolucional (basado en EasyOCR de JaidedAI) |
 | Parametros totales | 24,64 M (20,8 M detector + 3,84 M reconocedor) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de visión; entrada de imagen 608x800) |
-| Tipos de cuantizacion | float y w8a8 (pesos y activaciones a 8 bits) |
-| Idiomas soportados | Más de 80 idiomas y principales sistemas de escritura |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen fija de 608x800) |
+| Tipos de cuantizacion | float y w8a8 (pesos y activaciones de 8 bits) |
+| Idiomas soportados | más de 80 idiomas y todos los sistemas de escritura populares (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE (float y w8a8); checkpoint base easyocr-small-stage1 |
-| Tamano del modelo | Detector 79,2 MB (float), reconocedor 14,7 MB (float) |
-| Resolucion de entrada | 608x800 |
-| Runtime | QAIRT 2.50, ONNX Runtime 1.30.0 |
+| Formato de pesos | ONNX, QNN_DLC, TFLite (no se distribuyen safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura clásica de EasyOCR en dos etapas. La primera etapa es un detector de texto basado en CRAFT (Character Region Awareness for Text Detection), que localiza regiones de texto en la imagen de entrada de 608x800 píxeles y genera cajas delimitadoras. La segunda etapa es un reconocedor basado en CRNN (Convolutional Recurrent Neural Network) que transcribe el contenido de cada región detectada. Ambos componentes se exportan por separado y se ejecutan secuencialmente en la NPU del dispositivo Qualcomm.
+El modelo sigue la arquitectura de EasyOCR original: una etapa de detección de regiones de texto en la imagen y una etapa de reconocimiento que transcribe cada región detectada. El detector emplea un backbone convolucional con 20,8 M de parámetros y el reconocedor una red convolucional más ligera de 3,84 M de parámetros. Qualcomm no ha publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens o imágenes procesadas, ni si se aplicaron técnicas de ajuste fino adicionales; la model card solo indica que se basa en la implementación de JaidedAI y que el checkpoint utilizado es `easyocr-small-stage1`.
 
-Qualcomm no aporta en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de ajuste fino o RLHF. El checkpoint indicado es `easyocr-small-stage1`, derivado de la implementación de JaidedAI. La innovación principal de esta publicación no es arquitectónica, sino de despliegue: la compilación mediante Qualcomm AI Hub Workbench para runtimes QNN, ONNX Runtime y TFLite, con cuantización w8a8 que reduce la latencia del detector entre 2,5 y 3 veces respecto a float en las plataformas medidas.
+La innovación técnica de esta publicación no está en la arquitectura, sino en el proceso de exportación y compilación: Qualcomm AI Hub Workbench compila los modelos para la NPU (Unidad de Procesamiento Neural) de sus chipsets, generando artefactos QNN_DLC, TFLite y ONNX con cuantización w8a8 opcional. Esto permite que un modelo originalmente pensado para GPU de escritorio se ejecute con aceleración hardware en dispositivos móviles y de borde. No se documentan técnicas como decodificación especulativa o atención lineal, ya que no aplican a este tipo de red convolucional.
 
 ## Capacidades
 
-- Detección de regiones de texto en imágenes con el detector CRAFT.
-- Reconocimiento y transcripción de texto en más de 80 idiomas y principales sistemas de escritura.
-- Procesamiento de imagen a texto (pipeline image-to-text).
-- Ejecución en NPU de dispositivos Qualcomm con los runtimes ONNX, QNN_DLC y TFLITE.
-- Cuantización w8a8 para reducir latencia y huella de memoria.
-- Exportación con formas de entrada personalizadas y pesos ajustados mediante la librería ai-hub-models.
-- No soporta tool calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
-- No dispone de modo thinking, visión general, audio ni generación de texto libre.
+- Detección de regiones de texto en imágenes con resolución de entrada de 608x800 píxeles.
+- Reconocimiento óptico de caracteres (OCR) en más de 80 idiomas y todos los sistemas de escritura populares, según la model card.
+- Extracción de texto de documentos escaneados, fotografías, señales, pantallas y escenas naturales.
+- Ejecución acelerada por NPU en chipsets Snapdragon y Dragonwing de Qualcomm.
+- Soporte de dos precisiones (float y w8a8) para equilibrar latencia y memoria.
+- No dispone de tool calling, function calling, razonamiento multi-paso ni modo de pensamiento: es un modelo puramente perceptivo de imagen a texto.
+- No se documentan capacidades de audio, vídeo ni generación de texto libre.
 
 ## Casos de uso
 
-- Digitalización de documentos en movil: el pipeline detecta y transcribe texto de facturas, recibos y formularios capturados con la cámara, ejecutándose en la NPU del Snapdragon con latencias de decenas de milisegundos por imagen.
-- Traducción de carteles y menús en tiempo real: la detección en 5-20 ms (w8a8) permite procesar fotogramas de cámara y alimentar un traductor local sin enviar imágenes a la nube.
-- Accesibilidad para personas con discapacidad visual: lectura en voz alta de texto impreso en el dispositivo, con independencia de conectividad y sin coste de API.
-- Automatización de procesos en dispositivos industriales: lectura de etiquetas, códigos y paneles en plataformas Dragonwing o QCS con NPU integrada.
-- Extracción de datos de documentos escaneados en portátiles Snapdragon X Elite: procesamiento por lotes con bajo consumo energético gracias a la ejecución en NPU.
-- Kioscos y terminales de autoservicio: reconocimiento de documentos de identidad o tickets en dispositivos embebidos con TFLite.
-- Preprocesado en pipelines de visión: uso del detector CRAFT como etapa de localización de texto antes de un modelo de lenguaje o de un clasificador downstream.
+- Digitalización de documentos en movil: el pipeline detecta y transcribe texto de fotografías de facturas, contratos o apuntes directamente en la NPU del telefono, con latencias del detector de 4,8 a 26 ms en chipsets Snapdragon 8 Elite y 8 Gen 3 en precisión w8a8, sin enviar datos a la nube.
+- Traducción en tiempo real con la camara: integrado en una app de realidad aumentada, el modelo extrae el texto de carteles o menus y lo pasa a un motor de traducción local; su soporte de más de 80 idiomas y su bajo consumo de memoria (rangos de 0 a 264 MB según chipset) lo hacen viable en dispositivos de gama alta.
+- Accesibilidad para personas con discapacidad visual: un lector de pantalla puede capturar la imagen de la camara, ejecutar EasyOCR en local y sintetizar el texto detectado mediante TTS, todo sin conexión y con latencia inferior a 100 ms en el conjunto detector-reconocedor.
+- Escaneo de codigos y matrículas en logistica: el detector localiza regiones de texto en imágenes de almacén y el reconocedor transcribe etiquetas y matrículas en dispositivos rugged con chipsets Dragonwing IQ-8275 o QCS8550, con tiempos de 14 a 35 ms en w8a8.
+- Procesamiento de formularios en el borde: en terminales de punto de venta o quioscos con Snapdragon X Elite, el modelo extrae campos de formularios en papel para su validación posterior, manteniendo los datos personales en el dispositivo.
+- Automatizacion de la introduccion de datos en aplicaciones de escritorio: en portatiles con Snapdragon X Elite o X2 Elite, el modelo puede ejecutarse sobre capturas de pantalla para extraer texto de aplicaciones legacy, con latencias de detector de 6,7 a 12,6 ms en w8a8.
+- Moderacion de contenido basada en texto en imagenes: plataformas moviles pueden detectar texto ofensivo en imágenes subidas por usuarios antes de enviarlas al servidor, reduciendo costes de ancho de banda y cumpliendo requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados corresponden a latencia de inferencia y memoria pico del detector en distintos chipsets, no a métricas de precisión OCR (accuracy, CER, WER), que no están disponibles.
+La model card no publica métricas de calidad de OCR (como precisión, F1 o CER) sobre conjuntos estándar. Sin embargo, sí incluye una tabla de rendimiento de inferencia del detector por chipset y precisión. Se reproduce un subconjunto representativo:
 
-| Chipset | Runtime | Precision | Tiempo inferencia detector (ms) | Memoria pico (MB) |
-|---|---|---|---|---|
-| Snapdragon 8 Elite Gen 5 for Galaxy | ONNX | float | 15,775 | 3 - 163 |
-| Snapdragon 8 Elite Gen 5 for Galaxy | ONNX | w8a8 | 5,444 | 0 - 161 |
-| Snapdragon 8 Elite for Galaxy | ONNX | float | 21,073 | 3 - 160 |
-| Snapdragon 8 Elite for Galaxy | ONNX | w8a8 | 7,346 | 1 - 157 |
-| Snapdragon X2 Elite | ONNX | float | 19,488 | 9 - 9 |
-| Snapdragon X2 Elite | ONNX | w8a8 | 6,723 | 1 - 1 |
-| Snapdragon X Elite | ONNX | float | 35,688 | 36 - 36 |
-| Snapdragon X Elite | ONNX | w8a8 | 12,607 | 19 - 19 |
-| Snapdragon 8 Gen 3 Mobile | ONNX | float | 26,464 | 8 - 232 |
-| Snapdragon 8 Gen 3 Mobile | ONNX | w8a8 | 9,627 | 2 - 212 |
-| Snapdragon 8 Gen 1 Mobile | ONNX | float | 64,862 | 8 - 238 |
-| Snapdragon 8 Gen 1 Mobile | ONNX | w8a8 | 16,432 | 2 - 211 |
-| Dragonwing IQ-8275 | ONNX | float | 76,701 | 6 - 15 |
-| Dragonwing IQ-8275 | ONNX | w8a8 | 14,277 | 1 - 5 |
-| Dragonwing QCS8550 (Proxy) | ONNX | float | 34,596 | 0 - 44 |
-| Dragonwing QCS8550 (Proxy) | ONNX | w8a8 | 12,15 | 0 - 197 |
-| QCS8450 | ONNX | float | 64,862 | 8 - 238 |
-| QCS8450 | ONNX | w8a8 | 16,432 | 2 - 211 |
-| Dragonwing IQ-9075 | ONNX | float | 66,913 | 6 - 14 |
-| Dragonwing IQ-9075 | ONNX | w8a8 | 12,638 | 1 - 5 |
-| Dragonwing IQ-X7181 | ONNX | float | 35,688 | 36 - 36 |
-| Dragonwing IQ-X7181 | ONNX | w8a8 | 12,607 | 19 - 19 |
-| Dragonwing Q-8750 | ONNX | float | 21,073 | 3 - 160 |
-| Dragonwing Q-8750 | ONNX | w8a8 | 7,346 | 1 - 157 |
+| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) | Unidad de computo |
+|---|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | ONNX | w8a8 | 4,789 | 2 - 157 | NPU |
+| Snapdragon 8 Elite Gen 6 Mobile | ONNX | w8a8 | 4,995 | 2 - 159 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | w8a8 | 5,451 | 0 - 161 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | w8a8 | 7,314 | 2 - 159 | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | w8a8 | 9,627 | 2 - 212 | NPU |
+| Snapdragon 8 Gen 1 Mobile | ONNX | w8a8 | 16,534 | 2 - 213 | NPU |
+| Snapdragon X2 Elite | ONNX | w8a8 | 6,709 | 1 - 1 | NPU |
+| Snapdragon X Elite | ONNX | w8a8 | 12,632 | 19 - 19 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | float | 15,868 | 3 - 162 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | float | 22,168 | 2 - 159 | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | float | 26,464 | 8 - 232 | NPU |
+| Snapdragon 8 Gen 1 Mobile | ONNX | float | 65,995 | 8 - 239 | NPU |
+| Snapdragon X Elite | ONNX | float | 35,961 | 36 - 36 | NPU |
+| Qualcomm Dragonwing IQ-8275 | ONNX | float | 77,341 | 6 - 15 | NPU |
+| Qualcomm Dragonwing QCS8550 (Proxy) | ONNX | float | 35,011 | 0 - 264 | NPU |
 
-Con QNN_DLC en float, el detector tarda 16,82 ms en Snapdragon 8 Elite Gen 5 for Galaxy, 22,247 ms en Snapdragon 8 Elite for Galaxy, 20,661 ms en Snapdragon X2 Elite y 39,484 ms en Snapdragon X Elite. Los datos de rendimiento del reconocedor no están incluidos en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que no son aplicables a un modelo de OCR.
+
+## Requisitos de hardware
+
+- VRAM estimada para inferencia: no aplica en el sentido tradicional; el modelo está pensado para NPU de dispositivos Qualcomm. El tamaño de los pesos en float es de 79,2 MB (detector) + 14,7 MB (reconocedor), aproximadamente 94 MB, y en w8a8 se reduce aproximadamente a la mitad.
+- GPU recomendadas: no se documentan GPU de escritorio; el objetivo son las NPU integradas en Snapdragon 8 Elite, 8 Gen 3, 8 Gen 1, X Elite, X2 Elite, Dragonwing IQ-8275, IQ-9075, IQ-X7181, QCS8550 y QCS8450.
+- Cabe en GPU consumer: no es el caso de uso; los artefactos publicados son para ONNX Runtime, QNN y TFLite, no para CUDA.
+- Opciones de despliegue: ONNX Runtime 1.30.0 con QAIRT 2.51, QNN_DLC con QAIRT 2.51, TFLite con QAIRT 2.51. La librería `qualcomm/ai-hub-models` (v0.67.0) permite exportar con configuraciones personalizadas.
+- Latencia y throughput: el detector tarda entre 4,8 ms y 77,3 ms según chipset y precisión (ver tabla de benchmarks). No se publican datos de latencia del reconocedor ni de throughput conjunto en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Formatos | Licencia | Notas |
+| Modelo | Parametros | Contexto/Entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualcomm/EasyOCR | 24,64 M | 80+ | ONNX, QNN_DLC, TFLITE | Apache 2.0 | Optimizado para NPU Qualcomm, latencia 5-20 ms en gama alta |
-| EasyOCR (JaidedAI) | No disponible | 80+ | PyTorch | Apache 2.0 | Implementación original, sin optimización NPU |
-| Tesseract OCR | No disponible | 100+ | Nativo, no neuronal | Apache 2.0 | Motor LSTM clásico, sin aceleración NPU en móvil |
-| PaddleOCR | No disponible | 80+ | Paddle, ONNX | Apache 2.0 | Alternativa con detección/recognición neuronales |
+| qualcomm/EasyOCR | 24,64 M (total) | Imagen 608x800 | más de 80 | Apache 2.0 | Hugging Face, artefactos ONNX/QNN/TFLite |
+| EasyOCR (JaidedAI, original) | no disponible en la informacion | no disponible | más de 80 | Apache 2.0 | GitHub, PyPI |
+| PaddleOCR | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | GitHub, PyPI |
+| Tesseract OCR | no disponible en la informacion | no disponible | más de 100 | Apache 2.0 | GitHub, paquetes del sistema |
 
-No se dispone de métricas de precisión comparables entre estos modelos en la información proporcionada.
+La comparativa se limita a alternativas de la misma categoría (OCR). No se dispone de datos de parámetros, contexto ni rendimiento de PaddleOCR o Tesseract en la información proporcionada, por lo que se marcan como no disponibles. La ventaja diferencial de la versión de Qualcomm es la compilación para NPU de sus chipsets y los artefactos pre-exportados; el EasyOCR original está orientado a CPU/GPU de propósito general.
 
 ## Limitaciones y advertencias
 
-- No se publican métricas de precisión OCR (CER, WER) por idioma; el rendimiento real de transcripción no está verificado en la información disponible.
-- La optimización está ligada al ecosistema Qualcomm (QAIRT, QNN, AI Hub); el uso en otras plataformas requiere los artefactos ONNX o TFLite y puede no aprovechar la NPU.
-- La resolución de entrada está fijada en 608x800; textos muy pequeños o imágenes de alta resolución pueden requerir preprocesado o exportación con formas personalizadas.
-- La cuantización w8a8 puede degradar la precisión de reconocimiento frente a float; no se documenta la magnitud de esa pérdida.
-- Riesgo de errores en escrituras complejas, texto manuscrito, fuentes decorativas o imágenes con bajo contraste y ruido.
-- La licencia Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y atribución correspondiente.
-- El modelo no genera texto libre ni razona; su alcance se limita a detección y transcripción de texto en imágenes.
-- La información sobre sesgos lingüísticos y cobertura real por idioma no está disponible.
+- Sesgos conocidos: no se documentan en la model card; al ser un modelo de OCR, puede tener un rendimiento desigual según el sistema de escritura, la calidad de la imagen y las condiciones de iluminación.
+- Riesgo de alucinación: en OCR, el equivalente es la transcripción errónea de caracteres; no se publican métricas de tasa de error (CER/WER) que permitan cuantificarlo.
+- Limitaciones de contexto o idioma: aunque se indican más de 80 idiomas, no se detalla la lista ni el rendimiento por idioma; la entrada está fijada a 608x800 píxeles, lo que puede limitar la detección de texto muy pequeño o en imágenes de alta resolución sin preprocesado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y atribuir a Qualcomm y a JaidedAI; conviene revisar las condiciones de los artefactos pre-exportados y de QAIRT.
+- Caveats para producción: los artefactos están compilados para chipsets Qualcomm concretos; en otros hardware habría que reexportar el modelo. No se publican datos de latencia del reconocedor ni de precisión global, por lo que la evaluación en el dominio objetivo es imprescindible antes de desplegar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/qualcomm/EasyOCR
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/EasyOCR
 - EasyOCR en Qualcomm AI Hub: https://aihub.qualcomm.com/models/easyocr
-- Librería ai-hub-models (EasyOCR): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/easyocr
-- Implementación original EasyOCR (JaidedAI): https://github.com/JaidedAI/EasyOCR
+- Repositorio ai-hub-models (v0.67.0): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/easyocr
+- Implementación original de EasyOCR (JaidedAI): https://github.com/JaidedAI/EasyOCR
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
-- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.66.0/easyocr-onnx-float.zip
-- Descarga ONNX w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.66.0/easyocr-onnx-w8a8.zip
-- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.66.0/easyocr-qnn_dlc-float.zip
-- Descarga TFLITE float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.66.0/easyocr-tflite-float.zip
-- Descarga TFLITE w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.66.0/easyocr-tflite-w8a8.zip
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.67.0/easyocr-onnx-float.zip
+- Descarga ONNX w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.67.0/easyocr-onnx-w8a8.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.67.0/easyocr-qnn_dlc-float.zip
+- Descarga TFLite float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.67.0/easyocr-tflite-float.zip
+- Descarga TFLite w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/easyocr/releases/v0.67.0/easyocr-tflite-w8a8.zip
+- Sitio corporativo de Qualcomm: https://www.qualcomm.com/

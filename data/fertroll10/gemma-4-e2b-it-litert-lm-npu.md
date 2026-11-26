@@ -2,113 +2,102 @@
 
 ## Resumen
 
-Gemma 4 E2B IT es un modelo de lenguaje de Google derivado de la familia Gemma 4, en su variante "E2B" orientada a dispositivos móviles y con ajuste de instrucciones (IT). Este repositorio concreto, publicado por el usuario Fertroll10, no contiene los pesos originales sin procesar, sino una compilación del checkpoint oficial de Google (`google/gemma-4-E2B-it-qat-mobile-transformers`) para ejecutarse íntegramente en la NPU Hexagon del SoC Qualcomm Snapdragon 8 Gen 3 (SM8650), empaquetada en formato `.litertlm` para el runtime LiteRT-LM.
+Gemma 4 E2B IT para NPUs de telefonos es una compilacion comunitaria del modelo instructivo `google/gemma-4-E2B-it` de Google, empaquetada en formato `.litertlm` para ejecutarse integramente en la NPU de moviles Android mediante LiteRT-LM. El autor, Fertroll10, publica builds especificos por chip: Qualcomm Snapdragon 8 Gen 2 (SM8550), 8 Gen 3 (SM8650), 8 Elite (SM8750), 8 Elite Gen 5 (SM8850) y MediaTek Dimensity 9300 (MT6989). No es un modelo nuevo ni un fine-tuning de comportamiento, sino un artefacto de despliegue: pesos cuantizados y grafos compilados para el acelerador neural del telefono.
 
-El problema que resuelve es la inferencia local de un modelo de lenguaje en un teléfono Android aprovechando la NPU en lugar de la CPU o la GPU, con un salto de rendimiento notable: según las mediciones del autor en un Galaxy Z Fold6, el prefill pasa de 540-1.050 tok/s en GPU a 2.370-2.720 tok/s en NPU, y la decodificación de 14-16 tok/s a 29-31 tok/s. Es, por tanto, una pieza relevante para quien quiera integrar un LLM conversacional en una app Android con latencia aceptable y sin depender de la nube.
+La relevancia de esta ficha reside en el empaquetado on-device: el modelo completo corre en la NPU, sin GPU ni CPU como fallback, con tamanos de archivo de 2,31 a 3,16 GB y ventanas de contexto de 4.096 o 16.384 tokens segun variante. La version v3 (22 de noviembre de 2026) cambia la calibracion de la cuantizacion, pasando de texto en ingles y codigo Python a prompts reales de la app CyanBridge en 9 idiomas y documentos largos de hasta 15.000 tokens, lo que reduce los tensores de activacion recortados mas de un 25 % de 392 a 66.
 
-Se trata de una compilación comunitaria, no publicada ni soportada por Google ni por Qualcomm. El modelo base es de tipo "E2B" (variante móvil de Gemma 4), con cuantización QAT mixta de 4, 8 y 2 bits, y dos variantes de contexto: 4.096 y 16.384 tokens. El tamaño del repositorio es de 28,8 GB, aunque los artefactos individuales pesan 2,31 GB y 2,36 GB respectivamente.
+Es un build de comunidad, no soportado por Google, Qualcomm ni MediaTek, y esta atado a un chip concreto por archivo. La licencia declarada es Apache 2.0, aunque los pesos derivan de Gemma 4 E2B IT, cuyo regimen de uso conviene verificar en el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (checkpoint móvil Gemma 4 E2B IT con cuantización QAT); grafos separados de prefill y decode compilados para NPU Hexagon |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 4.096 tokens (fichero 4k) / 16.384 tokens (fichero 4k-16k, con conmutación interna a partir de 4.096) |
-| Tipos de cuantizacion | Pesos de 4, 8 y 2 bits según el checkpoint QAT; entradas/salidas de capas cuantizadas en 8 bits a las escalas de Google; activaciones en 16 bits; atención en entero de 16 bits (versiones 4k) o en coma flotante (versión 16k) |
-| Idiomas soportados | no disponible (la model card no los detalla; los tests de recuperación usan prompts en inglés y portugués) |
+| Arquitectura | Transformer (heredada de Gemma 4 E2B IT; detalles internos no disponibles en la informacion proporcionada) |
+| Parametros totales | no disponible (el nombre "E2B" sugiere variante eficiente de 2B, sin confirmacion en la model card) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 4.096 tokens (variantes estandar); 16.384 tokens (variantes 4k-16k con doble grafo compilado) |
+| Tipos de cuantizacion | Pesos de 8 bits con redondeo QAT de Google; pesos de 2 bits almacenados como 4 bits en la variante MediaTek; activaciones de 16 bits |
+| Idiomas soportados | 9 idiomas usados en la calibracion v3 (lista concreta no disponible) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM), compilado AOT para SM8650 con QAIRT 2.50 |
+| Formato de pesos | `.litertlm` (LiteRT-LM), compilado para NPU por chip |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es el checkpoint QAT móvil de Gemma 4 E2B IT de Google, entrenado con redondeo de 8 bits en las entradas y salidas de sus capas cuantizadas. Este repositorio no reentrena el modelo: exporta los pesos con `litert-torch` como grafos separados de prefill y decode, aplica cuantización de 4, 8 y 2 bits conforme al checkpoint, mantiene las escalas de 8 bits de Google y usa activaciones de 16 bits en el resto. La atención se implementa en entero de 16 bits en las versiones de 4k y en coma flotante en la versión de 16k, decisión motivada por la necesidad de precisión en prompts largos. Los embedders y embedders por capa provienen del checkpoint QAT y la plantilla de chat es la de LiteRT-LM de Google.
+El artefacto no entrena un modelo nuevo: parte del checkpoint QAT (quantization-aware training) de Google `gemma-4-E2B-it` y aplica su receta de cuantizacion, con redondeo de 8 bits a las escalas de Google y activaciones de 16 bits en el resto de la red. Sobre esa base se compilan grafos especificos para cada NPU. En MediaTek fueron necesarias dos reescrituras exactas de grafo: los pesos de 2 bits se almacenan como 4 bits y la capa de salida de 262.144 filas se divide en 8 partes porque la NPU de MediaTek limita una dimension a 65.535. La variante 4k-16k de MediaTek ocupa mas porque esa plataforma no comparte pesos entre grafos compilados.
 
-La compilación es ahead-of-time para el SM8650 con QAIRT 2.50, con pesos compartidos entre prefill y decode. La calibración se hizo sobre prompts generales y documentos largos de hasta 15.000 tokens. El autor documenta un cambio relevante: la primera revisión omitía el redondeo de 8 bits del checkpoint, lo que degradaba la recuperación en prompts largos (el modelo decía que la información no estaba o generaba texto roto más allá de ~3.000 tokens); la revisión actual restaura ese redondeo a las escalas de Google y calibra hasta 15.000 tokens. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base.
+La innovacion principal de la v3 es la calibracion: se usaron prompts propios de la app CyanBridge en 9 idiomas, ademas de documentos y conversaciones de hasta 15.000 tokens, en lugar de texto ingles y codigo Python. El resultado medido es una caida de tensores de activacion recortados mas de un 25 % de 392 a 66 sobre prompts no vistos durante la calibracion. El resto de detalles de entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) no esta disponible en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat de LiteRT-LM.
-- Recuperación de información en prompts largos: el autor valida la localización de un dato oculto (contraseña, ciudad, temperatura o código) en prompts de 1.000 a 15.000 tokens, en posición inicial, media o final.
-- Memoria conversacional a través de turnos: se conserva un código dado en el primer turno tras un documento largo en el segundo (unos 2.900 tokens con el fichero 4k y 7.600 con el 4k-16k).
-- Procesamiento de documentos largos en dispositivo hasta 16.384 tokens con el fichero 4k-16k.
-- Entrada exclusivamente de texto (ambos ficheros "take text input").
-- Ejecución íntegra en NPU Hexagon del Snapdragon 8 Gen 3, sin repartir capas a CPU/GPU.
-- Tool calling, function calling, agentes, razonamiento multi-paso, visión o audio: no disponible en la información proporcionada.
+- Generacion de texto y respuesta a preguntas cortas en modo instructivo, con entrada exclusivamente de texto (la model card indica "takes text input").
+- Enrutado de preguntas habladas (spoken-question routing) en 4 idiomas, segun las pruebas del autor.
+- Recuperacion de hechos dentro de prompts largos: probado con hechos ocultos en prompts de 2.000, 3.800 y 6.000 tokens.
+- Conversaciones multi-turno dentro de la ventana de contexto de 4.096 o 16.384 tokens.
+- Capacidades multilingues limitadas a los 9 idiomas empleados en la calibracion v3.
+- Ejecucion integra en NPU, sin reparto con CPU o GPU, lo que reduce consumo energetico en movil.
+- Soporte de tool calling, agentes, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional dentro de una app Android: el modelo corre en la NPU del teléfono con 29-31 tok/s de decodificación y 9-12 s de carga para el fichero 4k, lo que permite un chat fluido sin conexión y sin coste de inferencia en servidor.
-- Resumen y preguntas sobre documentos largos en el dispositivo: con el fichero 4k-16k y un contexto de 16.384 tokens, se pueden procesar informes o contratos de hasta ~15.000 tokens manteniendo los datos en el terminal; el primer token llega en unos 13 s para 6.000 tokens y 61 s para 15.000.
-- Extracción de datos de fuentes de código: el autor valida la recuperación de hechos ocultos en prompts construidos a partir de ficheros fuente Python, útil para asistentes de desarrollo que respondan preguntas sobre un repositorio local.
-- Procesamiento de texto con privacidad estricta: al ejecutarse íntegramente en el SoC, es adecuado para aplicaciones de salud, finanzas o legal en las que el texto no puede salir del dispositivo.
-- Funcionalidad offline en campo: apps de inspección, logística o atención en entornos sin conectividad que necesiten un LLM local con latencia predecible.
-- Prototipado de funciones de IA en Android con LiteRT-LM: sirve como referencia para integrar modelos compilados para NPU en apps que usen `Backend.NPU` y las librerías QNN indicadas.
-- Traducción o reescritura de textos en local: aunque la model card no detalla los idiomas soportados, los tests incluyen prompts en inglés y portugués, por lo que es razonable para flujos bilingües, siempre validando la calidad por idioma.
+- Asistentes de voz on-device: el modelo procesa preguntas habladas y las enruta a la accion correcta en 4 idiomas, con tiempos de carga de NPU de 3,4 a 6,0 s en telefonos de gama alta, sin enviar audio a la nube.
+- Busqueda de datos en documentos largos en el telefono: la variante 4k-16k permite localizar un hecho dentro de un prompt de hasta 6.000 tokens, util para resumir contratos o correos sin salir del dispositivo.
+- Clasificacion y extraccion de informacion en apps moviles: con prefill de 128 tokens en 26-49 ms segun telefono, es viable procesar lotes de fragmentos de texto en segundo plano.
+- Atencion al cliente embebida en apps Android: conversaciones multi-turno de hasta 4.096 tokens con respuestas generadas localmente, lo que elimina costes de API y problemas de privacidad.
+- Traduccion y asistencia de escritura en 9 idiomas: la calibracion con prompts multilingues reduce el recorte de activaciones y mejora la fidelidad en esos idiomas frente a la calibracion anterior en ingles.
+- Prototipado de funciones de IA en dispositivos de gama alta: sirve para validar latencia y consumo reales en Snapdragon 8 Gen 2/3, 8 Elite, 8 Elite Gen 5 y Dimensity 9300 antes de comprometerse con un backend en la nube.
+- Demos offline y entornos sin conectividad: al residir el modelo completo en el telefono (2,31-3,16 GB), funciona en modo avion o en redes restringidas.
 
 ## Benchmarks y rendimiento
 
-El autor publica una prueba propia de recuperación de información en prompts largos (21 prompts de 1.000 a 15.000 tokens, con un dato oculto):
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor reporta pruebas funcionales en telefonos reales con 13 prompts reservados:
 
-| Modelo | Prompts hasta 3.800 tokens | Los 21 prompts |
-|---|---|---|
-| Checkpoint QAT de Google (escritorio, precisión completa) | 11 / 12 | 20 / 21 |
-| Mismo checkpoint sin redondeo de 8 bits (escritorio) | 6 / 12 | 7 / 21 |
-| Primera revisión de este repositorio (Galaxy Z Fold6) | 4 / 12 | n/a |
-| `gemma-4-E2B-it_Qualcomm_SM8650.litertlm` (Galaxy Z Fold6) | 12 / 12 | n/a |
-| `gemma-4-E2B-it_Qualcomm_SM8650_4k-16k.litertlm` (Galaxy Z Fold6) | 12 / 12 | 20 / 21 |
+| Telefono | Archivo | Aciertos | Carga de NPU |
+|---|---|---|---|
+| Galaxy S23 Ultra | SM8550 | 12 / 13 | 6,0 s |
+| Galaxy Z Fold6 | SM8650 | 12 / 13 (archivo previo: 11 / 13) | 3,9 s |
+| Galaxy Z Fold6 | SM8650 4k-16k | 13 / 14 (incluye prompt de 6.000 tokens) | 19 s |
+| Galaxy S25 | SM8750 | 12 / 13 | 3,4 s |
+| Galaxy S26 | SM8850 | 12 / 13 | 4,2 s |
+| Galaxy Tab S10+ | MT6989 | 11 / 13 | 27 s |
 
-Rendimiento medido en Galaxy Z Fold6 (SM8650), prefill de 512 a 3.072 tokens y 128 tokens decodificados:
-
-| Backend | Prefill (tok/s) | Decode (tok/s) | Tiempo de carga |
-|---|---:|---:|---:|
-| NPU, fichero 4k | 2.370 a 2.720 | 29 a 31 | 9 a 12 s |
-| NPU, fichero 4k-16k (prompts < 4.096 tokens) | 2.260 a 2.650 | 29 a 33 | 39 a 53 s |
-| GPU (`.litertlm` de Google) | 540 a 1.050 | 14 a 16 | 13 a 16 s |
-| CPU (`.litertlm` de Google) | 110 a 205 | 11 a 19 | n/a |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Tiempos on-device para un chunk de prefill de 128 tokens y un paso de decodificacion (Qualcomm AI Hub, entradas aleatorias, archivos 4k): Galaxy S23 Ultra 49 ms (solo prefill; la decodificacion agoto la memoria del dispositivo), S24 Ultra 40 / 29 ms, S25 Ultra 31 / 26 ms, S26 Ultra 26 / 24 ms. Con LiteRT-LM 0.19.1, LiteRT 2.4.0 y QAIRT 2.52, todos los telefonos dieron respuestas identicas palabra por palabra y los tiempos de carga de NPU se redujeron entre 2 y 4 veces (1,8 s en el Fold6, 7,2 s en el Tab S10+).
 
 ## Requisitos de hardware
 
-- SoC: exclusivamente Qualcomm Snapdragon 8 Gen 3 (SM8650); ambos ficheros "run only on SM8650".
-- Almacenamiento: 2,31 GB para el fichero 4k y 2,36 GB para el 4k-16k (el repositorio completo ocupa 28,8 GB por las revisiones anteriores).
-- Runtime: LiteRT-LM 0.18 en Android con `Backend.NPU`.
-- Librerías: dispatch de Qualcomm de LiteRT 2.3.0 con QNN de QAIRT 2.50 (`libQnnHtp.so`, `libQnnSystem.so`, `libQnnHtpV75Stub.so`, `libQnnHtpV75Skel.so`); el dispatch rechaza versiones QNN anteriores.
-- Manifest de la app: requiere `<uses-native-library android:name="libcdsprpc.so" android:required="false"/>`.
-- No cabe en GPU de consumo de escritorio: está compilado para la NPU Hexagon v75, no para CUDA ni ROCm; no es desplegable en vLLM, llama.cpp, Ollama ni TGI.
-- Memoria: no se detalla el consumo de RAM del dispositivo.
-- Latencia: primer token en ~13 s para 6.000 tokens, ~34 s para 10.000 y ~61 s para 15.000 con el fichero 4k-16k; la primera ejecución tras cargar el 4k-16k es más lenta (1.630 tok/s de prefill a 512 tokens).
+- Almacenamiento: 2,31 GB (SM8650/SM8750/SM8850 4k), 2,35-2,36 GB (variantes 4k-16k), 2,97 GB (MediaTek MT6989), 3,16 GB (SM8550).
+- SoC soportados: Snapdragon 8 Gen 2 (SM8550), 8 Gen 3 (SM8650), 8 Elite (SM8750), 8 Elite Gen 5 (SM8850) y MediaTek Dimensity 9300 (MT6989). Cada archivo funciona solo en el chip que indica su nombre.
+- No cabe en GPU de consumo: esta disenado exclusivamente para NPU movil; no hay variantes GGUF ni para llama.cpp, Ollama, vLLM o TGI.
+- Runtime: LiteRT-LM 0.18 o 0.19.1 en Android con `Backend.NPU`.
+- Snapdragon: dispatch de Qualcomm con QAIRT 2.50 o superior (probado 2.52) y la libreria HTP del chip: V73 (SM8550), V75 (SM8650), V79 (SM8750) o V81 (SM8850). El manifiesto requiere `<uses-native-library android:name="libcdsprpc.so" android:required="false"/>`.
+- MediaTek: libreria de dispatch de MediaTek de LiteRT y el runtime Neuron del telefono.
+- Advertencia de despliegue: LiteRT carga la primera `libLiteRtDispatch_*.so` que encuentra; si la app incluye librerias de varios fabricantes, hay que apuntar `Backend.NPU` a un directorio que contenga solo la del fabricante del telefono.
+- Latencia: prefill de 128 tokens entre 26 y 49 ms y decodificacion de un token entre 24 y 29 ms en Snapdragon 8 Elite y posteriores; carga inicial de NPU de 3,4 a 27 s segun chip.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Despliegue | Licencia | Estado |
+| Modelo | Parametros | Contexto | Despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (Gemma 4 E2B IT, LiteRT-LM NPU) | no disponible | 4.096 / 16.384 | NPU Hexagon SM8650 | Apache 2.0 | Compilación comunitaria |
-| `google/gemma-4-E2B-it` (LiteRT-LM de Google) | no disponible | no disponible | CPU/GPU Android | Apache 2.0 | Oficial |
-| `google/gemma-4-E2B-it-qat-mobile-transformers` | no disponible | no disponible | Escritorio (transformers) | Apache 2.0 | Oficial, checkpoint QAT |
-| `google/gemma-4-E2B-it` (modelo base) | no disponible | no disponible | Servidor/escritorio | Apache 2.0 | Oficial |
+| Gemma 4 E2B IT LiteRT-LM NPU (esta ficha) | no disponible (variante E2B) | 4.096 / 16.384 | NPU movil Snapdragon y MediaTek | Apache 2.0 | Build comunitario por chip, solo texto |
+| google/gemma-4-E2B-it (modelo base) | no disponible | no disponible | GPU/CPU generico | regimen Gemma (verificar) | Modelo original de Google, sin compilacion NPU |
+| Alternativas on-device de otros fabricantes | no disponible | no disponible | no disponible | no disponible | No hay datos comparables en la informacion proporcionada |
 
-La comparación cuantitativa con alternativas de terceros (por ejemplo, otros LLM móviles de 2B-3B parámetros) no está disponible en la información proporcionada. Frente a las variantes oficiales de Google, la diferencia medible es el rendimiento en NPU: 2.370-2.720 tok/s de prefill y 29-31 tok/s de decode frente a 540-1.050 y 14-16 en GPU.
+No se dispone de datos de benchmarks del modelo base ni de alternativas en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Compilación comunitaria: no está publicada ni soportada por Google ni por Qualcomm; el autor no ofrece garantías de mantenimiento.
-- Compatibilidad restringida: solo funciona en Snapdragon 8 Gen 3 (SM8650); no hay versiones para otros SoC, GPU de escritorio ni servidores.
-- Solo entrada de texto: no admite visión, audio ni otras modalidades.
-- Idiomas no documentados: la model card no enumera los idiomas soportados; conviene validar la calidad en castellano antes de usarlo en producción.
-- Riesgo de alucinación: es un LLM generativo y no se han publicado evaluaciones de factualidad más allá de la prueba de recuperación del autor.
-- Dependencia frágil de versiones: exige LiteRT-LM 0.18, LiteRT 2.3.0 y QAIRT 2.50; versiones distintas de QNN son rechazadas por la librería de dispatch.
-- Contexto efectivo: el fichero 4k está limitado a 4.096 tokens; el 4k-16k conmuta a la versión de 16k por encima de 4.096 tokens, con mayor tiempo de carga (39-53 s) y mayor latencia en prompts largos.
-- Historial de calidad: la primera revisión del repositorio tenía degradación grave en prompts largos; conviene usar la revisión actual y no las anteriores.
-- Sesgos: no se documentan sesgos específicos en la información disponible.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base es de Google y se recomienda revisar la model card de Gemma 4 para condiciones adicionales.
+- Build de comunidad: no esta publicado ni soportado por Google, Qualcomm ni MediaTek; la calidad del artefacto depende del autor.
+- Acoplamiento total al hardware: cada archivo funciona solo en el chip indicado; no hay fallback a CPU o GPU.
+- Solo texto: la model card indica entrada de texto; no se documentan capacidades de vision o audio.
+- El archivo MediaTek 4k-16k fue retirado el 23 de noviembre de 2026 porque no carga en un Dimensity 9300 (error Neuron "Fail to deserialize compiled network"); debe usarse el archivo 4k de MediaTek.
+- Las pruebas del autor son 13 prompts reservados con comprobaciones estrictas de palabras clave; algunos fallos son de coincidencia literal (por ejemplo, "parking is prohibited" frente a "no parking"), no respuestas incorrectas.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplicable el comportamiento tipico de modelos generativos pequenos.
+- Idiomas: solo los 9 usados en la calibracion v3; el rendimiento fuera de ellos no esta documentado.
+- Licencia: el artefacto declara Apache 2.0, pero los pesos derivan de `google/gemma-4-E2B-it`; conviene revisar los terminos de Gemma para uso comercial antes de produccion.
+- En produccion, fijar la descarga al commit `2687ca17` para garantizar los hashes sha256 publicados.
+- El rendimiento depende de la version del runtime: LiteRT-LM 0.18 o 0.19.1, QAIRT 2.50+ y las librerias HTP o Neuron correctas.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Fertroll10/gemma-4-E2B-it-litert-lm-npu
+- Modelo en Hugging Face: https://huggingface.co/Fertroll10/gemma-4-E2B-it-litert-lm-npu
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Checkpoint QAT usado para la exportación: `google/gemma-4-E2B-it-qat-mobile-transformers`
-- LiteRT-LM (runtime): https://github.com/google-ai-edge/LiteRT-LM
-- Model card de Gemma 4 citada por el autor: https://huggingface.co/google/gemma-4-E2B-it
+- LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM

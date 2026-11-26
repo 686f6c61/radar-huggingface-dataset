@@ -2,112 +2,103 @@
 
 ## Resumen
 
-sanoTTS es una familia de voces neuronales de síntesis de habla (text-to-speech) de tamano extremadamente reducido, desarrollada por el autor independiente ampixa. Su rango de parametros va de 294.279 a 2.272.145, lo que le permite ejecutarse en tiempo real sobre microcontroladores de bajo coste como el ESP32-S3 (unos 3 USD) o directamente en el navegador mediante WebAssembly, sin dependencia de la nube ni de aceleradores NPU. El modelo resuelve el problema de desplegar TTS neuronal en entornos con recursos muy limitados, donde soluciones convencionales de cientos de millones de parametros resultan inviables.
+sanoTTS es una familia de voces neuronales de síntesis de voz (text-to-speech) de tamano extremadamente reducido, desarrollada por ampixa. Cada voz individual contiene entre 263.103 y 2.272.145 parámetros, lo que permite su ejecución en tiempo real sobre hardware sin acelerador dedicado: desde un microcontrolador ESP32-S3 de aproximadamente 3 dólares hasta un navegador web mediante WebAssembly, sin servidor ni subida de datos. El modelo se distribuye en este repositorio con pesos en formato GGUF y empaquetados específicos para microcontrolador y para web.
 
-La familia cubre 31 voces en 17 idiomas (ingles, nepalí, hindi, vietnamita, indonesio, chino, aleman, frances, espanol, italiano, portugues, ruso, checo, rumano, turco, arabe y polaco), con huellas por voz de entre 337 KB y 8,7 MB. Incluye el fonemizador espeak-ng empaquetado, de modo que el paquete no tiene dependencias externas. La libreria asociada es `sanotts` (Python) y `sanotts-web` (JavaScript).
+El problema que resuelve es la dependencia de infraestructura cloud o de NPU para TTS neuronal. sanoTTS incluye su propio fonemizador (basado en espeak-ng) y no tiene dependencias externas, con una huella por voz que va de 337 KB a 8,7 MB. El repositorio aloja 31 voces en 17 idiomas (inglés, nepalí, hindi, vietnamita, indonesio, chino, alemán, francés, español, italiano, portugués, ruso, checo, rumano, turco, árabe y polaco), aunque el polaco es solo de demostración y sus pesos no están alojados aquí.
 
-El modelo resulta relevante por su combinacion de tamano minimo, soporte multilingue amplio y ejecucion en hardware embebido y navegador, lo que lo situa en una categoria distinta a la de los TTS neuronales convencionales. La licencia es GPL-3.0, lo que condiciona su uso en productos propietarios.
+La relevancia actual reside en el despliegue edge: TTS de calidad aceptable en dispositivos con recursos de cómputo y memoria mínimos, con licencia GPL-3.0 y una API sencilla tanto en Python (`sanotts`) como en JavaScript (`sanotts-web`). El modelo se presenta como listo para publicación y acumula más de 577.000 descargas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo neuronal TTS; se menciona destilacion como tecnica de entrenamiento) |
-| Parametros totales | 294.279 – 2.272.145 (segun la voz; dato real en safetensors: 294.279 para la variante mas pequena) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 para formato MCU (variante robot, 567 k); resto de voces en formato nativo del paquete |
+| Arquitectura | Red neuronal de síntesis de voz (detalles de arquitectura no disponibles en la información proporcionada) |
+| Parametros totales | 294.279 (dato del repositorio safetensors); el rango por voz va de 263.103 a 2.272.145 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | int8 (formato MCU para microcontrolador); otros formatos no disponibles |
 | Idiomas soportados | en, ne, hi, vi, id, zh, de, fr, es, it, pt, ru, cs, ro, tr, ar, pl (17 idiomas; polaco solo en demo) |
 | Licencia | GPL-3.0 |
-| Formato de pesos | safetensors y GGUF; bundles web para navegador; formato int8 para microcontrolador |
+| Formato de pesos | GGUF, safetensors y empaquetados para MCU y web (WASM) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo (no se especifica si es un transformer, una arquitectura hibrida o un modelo acustico con vocoder integrado). La model card menciona explicitamente la **destilacion** como parte del proceso, lo que sugiere que las voces de menor tamano (hasta 294 k parametros) se obtienen comprimiendo variantes mayores. El rango de parametros por voz (294 k a 2,27 M) indica variantes de distinto tamano para un mismo idioma, como se observa en las voces inglesas (heart 2,27 M, hfc 1,83 M, amy 1,46 M, kristin 1,40 M, amy-small 1,08 M, heart-nano 294 k).
+La información proporcionada no detalla la arquitectura interna de la red (tipo de encoder/decoder, mecanismo de atención o generador vocacional). Se sabe que se trata de una familia de voces neuronales destiladas, según la etiqueta `distillation` del repositorio, con variantes de distinto tamano para un mismo idioma (por ejemplo, en inglés: heart de 2,27 M, hfc de 1,83 M, amy de 1,46 M, kristin de 1,40 M, amy-small de 1,08 M, robot de 567 K y heart-nano de 263 K en modo streaming). La variante heart-nano está orientada a streaming y la variante robot a ejecución on-device en int8 sobre microcontrolador.
 
-No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. La model card indica que el fonemizador espeak-ng va incluido en el paquete, lo que implica que el pipeline convierte texto a fonemas antes de la sintesis. Se menciona una metrica de calidad perceptual denominada SCOREQ, con valores entre 2,29 y 4,13 segun la voz.
+El modelo integra un fonemizador basado en espeak-ng empaquetado con los pesos, de modo que no requiere dependencias externas en tiempo de inferencia. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card menciona métricas SCOREQ por voz (por ejemplo, 4,13 para amy y 3,48 para heart), lo que sugiere una evaluación de calidad perceptual, pero no se detalla la metodología.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) en 17 idiomas, con 31 voces en la demo en vivo.
-- Ejecucion en tiempo real sobre microcontrolador ESP32-S3 (salida por GPIO hacia un LM386 y altavoz).
-- Ejecucion en navegador mediante WebAssembly, sin servidor ni subida de datos.
-- Paquete Python (`sanotts` >= 0.3.0) y paquete JavaScript (`sanotts-web` >= 0.3.0).
-- Fonemizacion integrada mediante espeak-ng, sin dependencias externas.
-- Voz int8 especifica para microcontrolador (variante robot, 567 k parametros).
-- No se documentan capacidades de tool calling, agentes, vision, audio de entrada ni modo de razonamiento.
+- Síntesis de voz (text-to-speech) en 17 idiomas, con 31 voces en la demostración en vivo.
+- Ejecución en tiempo real sobre microcontrolador ESP32-S3, con salida por GPIO hacia un amplificador LM386 y altavoz.
+- Ejecución en navegador mediante WebAssembly, sin servidor ni subida de texto.
+- Modo streaming en la variante heart-nano (263 K parámetros).
+- Fonemización integrada mediante espeak-ng, sin dependencias externas.
+- API en Python (`sanotts`) y JavaScript (`sanotts-web`), con selección de voz por identificador.
+- Fallback automático de descarga de pesos entre Hugging Face, GitHub Releases y Pages.
+- Soporte de despliegue autoalojado con `voiceBase` para desactivar el fallback.
+- No se documentan capacidades de tool calling, agentes, visión ni audio de entrada.
 
 ## Casos de uso
 
-- **Dispositivos IoT con voz**: integracion en un ESP32-S3 para dar voz a electrodomesticos, sensores o wearables de bajo coste, con salida directa por GPIO a un amplificador LM386 y un altavoz. El tamano de 337 KB a 8,7 MB por voz permite almacenar el modelo en la memoria flash del microcontrolador.
-- **Aplicaciones web sin servidor**: sintesis de voz en el navegador mediante WebAssembly, util para lectores de pantalla, tutoriales interactivos o accesibilidad en paginas estaticas, sin enviar texto a un servidor y sin coste de infraestructura.
-- **Asistentes de voz offline**: despliegue en entornos sin conectividad (zonas rurales, instalaciones industriales, dispositivos aislados) donde no es posible recurrir a APIs en la nube.
-- **Prototipado rapido multilingue**: uso del paquete Python para generar audio en 17 idiomas en fases de prototipo, con una sola dependencia y sin GPU.
-- **Sistemas embebidos de bajo consumo**: dispositivos alimentados por bateria que requieren sintesis de voz con consumo energetico minimo, gracias al reducido numero de parametros y a la ausencia de NPU.
-- **Educacion y acceso a la lectura**: aplicaciones de lectura en voz alta para personas con discapacidad visual en hardware economico o en el navegador, con soporte para nepalí, hindi y otros idiomas poco cubiertos por soluciones comerciales.
-- **Juguetes y dispositivos interactivos**: productos de consumo con voz sintetizada a un coste de hardware de pocos dolares, donde el modelo cabe en el presupuesto de memoria y computo del dispositivo.
+- Síntesis de voz en dispositivos IoT y domótica: una voz de menos de 1 MB puede ejecutarse en un ESP32-S3 para anuncios locales (temperatura, alarmas, estados) sin conexión a internet ni servicio cloud.
+- Lectura por voz en navegador para accesibilidad: integración vía `sanotts-web` con WebAssembly permite leer contenido de una página sin enviar texto a servidores externos, útil en aplicaciones con requisitos de privacidad.
+- Asistentes de voz embebidos en hardware de bajo coste: el modelo cabe en microcontroladores con memoria limitada, lo que habilita productos de consumo con TTS local y latencia predecible.
+- Kioscos y terminales interactivos sin red: el despliegue con pesos empaquetados y fallback configurable permite operar en entornos aislados o con conectividad intermitente.
+- Prototipado rápido multilingüe: la API de Python con selección de voz por idioma permite generar muestras en 17 idiomas para pruebas de localización de productos.
+- Aplicaciones educativas y de aprendizaje de idiomas: voces en nepalí, hindi, vietnamita, indonesio, chino y lenguas europeas permiten practicar pronunciación con síntesis local.
+- Generación de avisos pregrabados en sistemas embebidos: la variante int8 para MCU permite almacenar varias voces en memoria flash y sintetizar mensajes bajo demanda.
 
 ## Benchmarks y rendimiento
 
-La model card incluye la metrica SCOREQ (calidad perceptual de la voz) para las voces inglesas, pero no se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que no aplican a un modelo TTS.
+La información proporcionada incluye únicamente puntuaciones SCOREQ por voz, sin contexto metodológico ni comparación con otros modelos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 | Voz | Idioma | Parametros | SCOREQ |
 |---|---|---:|---:|
-| heart | Ingles | 2,27 M | 3,48 |
-| hfc | Ingles | 1,83 M | 3,94 |
-| amy | Ingles | 1,46 M | 4,13 |
-| kristin | Ingles | 1,40 M | 4,09 |
-| amy-small | Ingles | 1,08 M | 3,70 |
-| heart-nano | Ingles | 294 k | 2,29 |
-| robot (int8) | Ingles | 567 k | no disponible |
-
-No se dispone de datos de latencia ni de throughput medidos en la informacion proporcionada, salvo la afirmacion de ejecucion en tiempo real en ESP32-S3.
+| amy | Inglés | 1,46 M | 4,13 |
+| kristin | Inglés | 1,40 M | 4,09 |
+| hfc | Inglés | 1,83 M | 3,94 |
+| amy-small | Inglés | 1,08 M | 3,70 |
+| heart | Inglés | 2,27 M | 3,48 |
 
 ## Requisitos de hardware
 
-- **Microcontrolador**: ESP32-S3 (aproximadamente 3 USD), con salida por GPIO a un LM386 y altavoz. La variante int8 de 567 k parametros esta pensada para este formato.
-- **Navegador**: cualquier navegador moderno con soporte de WebAssembly; no requiere GPU dedicada.
-- **CPU**: el paquete Python funciona en CPU sin GPU; el tamano del modelo (hasta 2,27 M parametros) no requiere aceleracion.
-- **VRAM estimada**: no aplica; el modelo no esta disenado para inferencia en GPU y su huella es de kilobytes a megabytes.
-- **Opciones de despliegue**: paquete Python `sanotts`, paquete JavaScript `sanotts-web`, bundles WebAssembly, formato int8 para MCU, pesos en safetensors y GGUF.
-- **Almacenamiento**: de 337 KB a 8,7 MB por voz; el repositorio completo ocupa 0,4 GB.
-- **Latencia y throughput**: se afirma ejecucion en tiempo real en ESP32-S3; no se proporcionan cifras concretas.
+- VRAM estimada para inferencia: inferior a 100 MB en la mayoría de variantes; las voces de 1,4-2,3 M parámetros ocupan entre 337 KB y 8,7 MB de huella por voz, por lo que caben en memoria de sistema o flash.
+- GPU recomendadas: no se requiere GPU; el modelo está diseñado para CPU, microcontrolador y navegador.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer, aunque su uso típico es CPU o MCU.
+- Despliegue: paquete Python `sanotts` (>= 0.3.0), paquete JavaScript `sanotts-web` (>= 0.3.0), binarios para ESP32-S3 y bundles WASM para navegador. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: se declara ejecución en tiempo real sobre ESP32-S3, pero no se proporcionan cifras concretas de latencia ni de factor de tiempo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Ejecucion en MCU/navegador |
-|---|---|---|---|---|---|
-| sanoTTS | 294 k – 2,27 M | no disponible | 17 | GPL-3.0 | Si (ESP32-S3 y WASM) |
-| Piper | no disponible en la informacion | no disponible | varios | no disponible | no disponible |
-| Modelos TTS neuronales convencionales | cientos de millones | no disponible | variable | variable | No |
+No se dispone de datos de benchmarks comparativos en la información proporcionada. A continuación se comparan características estructurales con alternativas de TTS ligero ampliamente conocidas, indicando cuando un dato no está confirmado en la información disponible.
 
-La model card menciona Piper entre las etiquetas del modelo, lo que sugiere una relacion o comparacion con esa familia de TTS ligero, pero no se aportan datos comparativos concretos. No se dispone de informacion suficiente para una comparativa detallada con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Despliegue edge |
+|---|---|---|---|---|
+| sanoTTS | 263 K – 2,27 M por voz | No disponible | GPL-3.0 | ESP32-S3, WASM, Python |
+| Piper | No disponible en la información | No disponible | No disponible | CPU, Raspberry Pi |
+| eSpeak NG | Basado en reglas (no neuronal) | No aplica | GPL-3.0 | CPU, MCU |
+| Coqui TTS (variantes ligeras) | No disponible en la información | No disponible | No disponible | CPU |
+
+La comparación cuantitativa de calidad, latencia y consumo no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Licencia GPL-3.0**: el uso comercial en productos propietarios exige cumplir con las obligaciones de copyleft de la GPL, lo que puede ser incompatible con software cerrado.
-- **Calidad de voz limitada**: el rango de SCOREQ (2,29 a 4,13) indica calidad variable; la variante mas pequena (heart-nano, 294 k) obtiene 2,29, notablemente inferior a las voces mayores.
-- **Cobertura desigual por idioma**: el polaco solo esta disponible en la demo y sus pesos no se alojan en el repositorio de Hugging Face; el chino del repositorio es una version antigua mantenida por compatibilidad, mientras que la demo usa el reemplazo Chinese Xiaoya.
-- **Riesgo de alucinacion y errores de pronunciacion**: al ser un modelo TTS, los fallos se manifiestan como pronunciaciones incorrectas o artefactos acusticos, especialmente en textos fuera del dominio de entrenamiento o con fonemas poco frecuentes.
-- **Sesgos**: no se documentan sesgos especificos, pero las voces estan entrenadas sobre datasets concretos (por ejemplo, NewTTS para indonesio o VAIS-1000 para vietnamita) cuyas caracteristicas pueden limitar la variedad de acentos y estilos.
-- **Dependencia de espeak-ng**: la fonemizacion se delega en espeak-ng, lo que puede limitar la naturalidad en idiomas con reglas foneticas complejas.
-- **Informacion tecnica incompleta**: no se detallan arquitectura, datos de entrenamiento ni contexto, lo que dificulta evaluar el modelo en profundidad.
-- **Fallback de red**: los paquetes descargan pesos desde Hugging Face por defecto, con respaldo en GitHub o Pages; en despliegues autoalojados conviene fijar `SANOTTS_VOICE_SOURCE` o `voiceBase` para evitar dependencias externas.
+- La licencia GPL-3.0 impone obligaciones de copyleft: el uso comercial en productos propietarios requiere revisión legal y, en general, liberar el código derivado bajo la misma licencia.
+- El polaco es solo de demostración y sus pesos no están alojados en este repositorio.
+- El repositorio conserva una voz china antigua por compatibilidad; la demostración en vivo usa el reemplazo Chinese Xiaoya.
+- La información sobre sesgos, riesgo de alucinación y calidad por idioma no está disponible; las métricas SCOREQ solo cubren algunas voces en inglés.
+- No se documentan límites de longitud de texto de entrada ni de contexto.
+- El fallback de descarga de pesos contacta Hugging Face, GitHub Releases o Pages por defecto; en despliegues autoalojados debe configurarse `voiceBase` para evitar conexiones no deseadas.
+- No se dispone de datos sobre robustez ante texto con ruido, abreviaturas o dominios especializados.
+- La arquitectura y el proceso de entrenamiento no están documentados, lo que dificulta evaluar riesgos de generalización.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ampixa/sanoTTS
-- Demo en vivo: https://tts.ampixa.com/sanoTTS
+- Demostración en vivo: https://tts.ampixa.com/sanoTTS
 - Repositorio GitHub: https://github.com/Ampixa/sanoTTS
-- Bundles web de voces: https://huggingface.co/ampixa/sanoTTS/tree/main/web/voices
+- Bundles de voces para navegador: https://huggingface.co/ampixa/sanoTTS/tree/main/web/voices
 - Voz Chinese Xiaoya: https://huggingface.co/ampixa/sanoTTS/tree/main/web/voices/chinese-xiaoya
-- Directorio de la voz heart: https://huggingface.co/ampixa/sanoTTS/tree/main/heart
-- Directorio de la voz hfc: https://huggingface.co/ampixa/sanoTTS/tree/main/hfc-en-1p8m
-- Directorio de la voz amy: https://huggingface.co/ampixa/sanoTTS/tree/main/amy-en-1p46m
-- Directorio de la voz kristin: https://huggingface.co/ampixa/sanoTTS/tree/main/kristin-en-1p4m
-- Directorio de la voz amy-small: https://huggingface.co/ampixa/sanoTTS/tree/main/amy-en-1p1m
-- Directorio de la voz heart-nano: https://huggingface.co/ampixa/sanoTTS/tree/main/heartnano
-- Directorio de la voz indonesia: https://huggingface.co/ampixa/sanoTTS/tree/main/id-newstts-1p46m
-- Directorio de la voz vietnamita: https://huggingface.co/ampixa/sanoTTS/tree/main/vi-vais1000-1p46m
-- Bundle web de nepalí: https://huggingface.co/ampixa/sanoTTS/tree/main/web/voices/nepali
-- Bundle web de hindi: https://huggingface.co/ampixa/sanoTTS/tree/main/web/voices/hindi
+- Paquete Python `sanotts`: no disponible enlace directo en la información proporcionada
+- Paquete JavaScript `sanotts-web`: no disponible enlace directo en la información proporcionada

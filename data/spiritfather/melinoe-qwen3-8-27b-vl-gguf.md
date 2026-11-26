@@ -2,84 +2,89 @@
 
 ## Resumen
 
-Melinoe-Qwen3-8-27B-VL-GGUF es una cuantizacion GGUF estatica del modelo Melinoe-Qwen3-8-27B-VL, publicada por spiritfather el 24 de agosto de 2026. El modelo base, desarrollado por bgg1996, es una variante de Qwen3.8-27B, el miembro denso de 27.000 millones de parametros de la familia Qwen3.8, que incorpora una arquitectura de atencion hibrida: de sus 64 capas, solo 16 ejecutan atencion completa (con intervalo de 4), mientras que las 48 restantes usan atencion lineal. Se trata de un modelo multimodal (vision-lenguaje) orientado a escritura creativa, roleplay y prosa narrativa, y esta siendo evaluado en CaliperBench, un benchmark especifico para estas tareas.
+Melinoe-Qwen3-8-27B-VL es un modelo de lenguaje y visión de 27.320.697.856 parámetros (unos 27,3 mil millones) construido a partir de la familia Qwen3 y afinado por el usuario bgg1996 para escritura creativa y roleplay. La versión aquí documentada es una conversión a formato GGUF realizada por spiritfather, que publica cuantizaciones estáticas desde Q2_K hasta Q8_0 para su uso con llama.cpp y entornos compatibles con endpoints de tipo OpenAI. El modelo se presenta explícitamente como un modelo VL (visión-lenguaje), con una torre visual que llama.cpp mantiene separada del GGUF principal.
 
-La cuantizacion GGUF permite ejecutar el modelo en hardware de consumo con distintos niveles de precision, desde Q2_K (10,7 GB) hasta Q8_0 (28,6 GB). El repositorio incluye tambien el proyector de vision en BF16 (mmproj) para uso multimodal con llama.cpp, aunque el uso solo texto funciona sin el. Con licencia Apache-2.0 y soporte exclusivo de ingles, el modelo esta pensado para integracion en aplicaciones comerciales de generacion de texto creativo. El repositorio cuenta actualmente con 0 descargas y 0 likes, lo que indica que es una publicacion muy reciente.
+El interés de esta ficha radica en que se trata de un modelo de nicho orientado a calidad de prosa y disposición conversacional, no a inteligencia general. El autor del modelo base lo evalúa en CaliperBench, un benchmark de escritura creativa que puntúa oficio narrativo, roleplay y willingness (predisposición del modelo a seguir la premisa del usuario) en lugar de rendimiento en tareas de razonamiento estándar. Esto condiciona por completo su perfil de uso: es adecuado para generación narrativa y personajes, y no debe evaluarse con las métricas habituales de MMLU o GSM8K.
+
+La licencia es Apache 2.0, el idioma declarado es únicamente inglés y el repositorio ocupa 174,7 GB, dominado por los pesos sin cuantizar y las diez variantes GGUF publicadas. No hay información publicada sobre arquitectura interna, composición del dataset de ajuste ni número de tokens de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion completa y lineal (Qwen3.8-27B-VL) |
-| Parametros totales | 26.895.998.464 (26,9 B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | ingles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer (derivada de Qwen3; detalles internos no disponibles) |
+| Parametros totales | 27.320.697.856 (27,3 mil millones) |
+| Parametros activos | No aplica (no hay indicios de que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; pesos originales en safetensors |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura de atencion hibrida: de sus 64 capas, solo 16 ejecutan atencion completa (con un intervalo de 4, es decir, una capa de atencion completa cada cuatro), mientras que las 48 restantes utilizan atencion lineal. Este diseno reduce el coste computacional en comparacion con un transformer denso convencional, manteniendo la capacidad de modelar dependencias de largo alcance. Al ser una variante VL, incorpora un codificador de vision que se distribuye por separado en formato mmproj (BF16), de modo que el uso multimodal requiere cargar ese archivo junto a la cuantizacion principal.
+No se dispone de información publicada sobre la arquitectura interna del modelo base bgg1996/Melinoe-Qwen3-8-27B-VL: la model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estáticas del modelo original y no detalla capas, tipo de atención, estrategias de positional encoding ni si incorpora mecanismos híbridos. Por el nombre y el tamaño se infiere una base Qwen3 de aproximadamente 27 mil millones de parámetros, pero la model card no confirma la correspondencia exacta con una variante concreta de Qwen3.
 
-No se dispone de informacion detallada sobre el dataset de entrenamiento ni sobre el proceso de ajuste (RLHF, DPO, etc.) del modelo Melinoe. La cuantizacion GGUF fue realizada por spiritfather de forma estatica, sin recalibracion, y esta orientada a la evaluacion en CaliperBench, un benchmark de escritura creativa que puntua la calidad de la prosa, el roleplay y la disposicion del modelo. El repositorio incluye 11 cuantizaciones distintas, ordenadas por tamano, con recomendaciones del autor sobre cuales son preferibles (IQ-quants sobre non-IQ de tamano similar, y Q4_K_M como opcion equilibrada).
+Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset de ajuste, ni si se aplicaron RLHF, DPO u otras técnicas de alineación. Lo único verificable es la orientación del ajuste: el autor del modelo base lo evalúa en CaliperBench, un benchmark específico de escritura creativa que mide calidad de prosa, roleplay y willingness. La componente de visión viene de la familia Qwen3-VL y, en el ecosistema llama.cpp, se distribuye como un proyector multimodal independiente (mmproj) en BF16 que debe cargarse junto con la cuantización de texto.
 
 ## Capacidades
 
-- Generacion de texto creativo: prosa narrativa, dialogos y roleplay, segun los tags del modelo y su orientacion a CaliperBench.
-- Comprension de imagenes: al ser un modelo VL, puede procesar entradas visuales si se carga el proyector mmproj junto con la cuantizacion.
-- Uso multimodal con llama.cpp: requiere el archivo `mmproj-Melinoe-Qwen3-8-27B-VL-BF16.gguf` junto a la cuantizacion principal, invocando `llama-server -m <quant>.gguf --mmproj mmproj-Melinoe-Qwen3-8-27B-VL-BF16.gguf`.
-- Uso solo texto: funciona sin el proyector de vision, cargando unicamente la cuantizacion GGUF.
-- Generacion de texto conversacional: pipeline text-generation, apto para chat y asistentes.
-- Escritura en ingles: el modelo esta entrenado principalmente en ingles (tag `language: en`).
+- Generación de texto en inglés con orientación a escritura creativa: narrativa, diálogo, descripción de escenas y estilo literario.
+- Roleplay y conversación multi-turno con personajes, incluyendo mantenimiento de persona y premisa a lo largo de la conversación.
+- Comprensión de imágenes mediante la torre visual, siempre que se cargue el fichero mmproj junto con la cuantización de texto.
+- Descripción y análisis de imágenes en lengua inglesa, integrable en flujos conversacionales multimodales.
+- Conversación general en inglés, con formato compatible con endpoints de tipo OpenAI.
+- No hay información publicada sobre tool calling, function calling, modo thinking explícito, capacidades de audio ni soporte multilingüe más allá del inglés.
 
 ## Casos de uso
 
-- Escritura creativa asistida: el modelo puede generar narraciones, descripciones y dialogos de calidad literaria, aprovechando su ajuste especifico para prosa y roleplay. Se integraria en herramientas de escritura como un generador de borradores o un coautor interactivo.
-- Roleplay conversacional: su orientacion a CaliperBench (que puntua roleplay y disposicion) lo hace adecuado para personajes interactivos en juegos de rol, simulaciones o chatbots de ficcion. La cuantizacion Q4_K_M permite ejecutarlo en una GPU de 24 GB con latencia aceptable.
-- Descripcion de imagenes para narracion: combinando el proyector de vision, puede generar descripciones narrativas a partir de fotografias o ilustraciones, util para guiones, storyboards o material didactico.
-- Creacion de contenido multimodal: generar texto basado en entradas visuales, aplicable a blogs, redes sociales o documentacion tecnica que requiera descripciones ricas de imagenes.
-- Prototipado de asistentes conversacionales: su licencia Apache-2.0 permite integrarlo en aplicaciones comerciales sin restricciones de uso, lo que facilita el desarrollo de prototipos de asistentes con personalidad definida.
-- Evaluacion de calidad de escritura: al estar cuantizado especificamente para CaliperBench, puede usarse como referencia en pipelines de evaluacion de generacion de texto creativo, comparando puntuaciones de prosa y roleplay entre modelos.
+- Escritura narrativa asistida: generación de borradores de relatos, capítulos y descripciones con un modelo afinado específicamente para calidad de prosa, evaluado en CaliperBench frente a otros modelos creativos.
+- Roleplay y personajes conversacionales: despliegue de un personaje con personalidad estable en una aplicación de chat, usando la variante Q4_K_M (16,8 GB) para mantener latencia baja en una GPU de consumo.
+- Prototipado de videojuegos narrativos: generación de diálogos ramificados y respuestas de NPC en inglés, con cuantización Q5_K_M (19,5 GB) cuando se dispone de 24 GB de VRAM.
+- Análisis de imágenes con salida narrativa: carga del mmproj BF16 junto con el GGUF de texto para describir ilustraciones, bocetos o capturas y convertirlas en texto descriptivo o narrativo.
+- Generación de contenido editorial en inglés: redacción de textos de marketing, ficción corta o guiones, aprovechando el ajuste orientado a estilo y no a razonamiento analítico.
+- Experimentación e investigación en alineación creativa: comparación de cuantizaciones Q4_K_S, Q5_K_M y Q8_0 sobre las mismas prompts para medir la degradación de calidad de prosa inducida por la cuantización.
+- Despliegue local en estaciones de trabajo: uso de Q3_K_M (13,5 GB) o Q4_K_S (15,8 GB) en GPUs de 16 GB para inferencia totalmente local sin dependencia de servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo esta siendo evaluado en CaliperBench, un benchmark de escritura creativa que puntua prosa, roleplay y disposicion, pero las puntuaciones aun no se han publicado. No se dispone de datos de MMLU, HumanEval, GSM8K ni otros benchmarks estandar.
+La model card únicamente remite a la ficha del modelo en CaliperBench (caliperbench.com/m/melinoe-qwen3.8-27b-vl), sin reproducir cifras en el repositorio. No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K, CaliperBench u otros) en la información disponible, por lo que no se presenta tabla comparativa de rendimiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion: Q2_K (10,7 GB) requiere aproximadamente 12 GB; Q4_K_M (16,5 GB) requiere aproximadamente 18 GB; Q8_0 (28,6 GB) requiere aproximadamente 30 GB.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) pueden ejecutar cuantizaciones hasta Q5_K_M (19,2 GB); para Q6_K (22,1 GB) y Q8_0 (28,6 GB) se necesitan GPUs de 32 GB o mas, como A6000, A100 o H100.
-- En GPU de consumo: si, con cuantizaciones Q4_K_M o inferiores en GPUs de 16-24 GB (RTX 4080, RTX 3090, RTX 4090).
-- Opciones de despliegue: llama.cpp (llama-server), Ollama u otros runners compatibles con GGUF. vLLM no es compatible directamente con GGUF, aunque el modelo base en safetensors si lo es.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia según cuantización: Q2_K 10,9 GB; Q3_K_S 12,3 GB; Q3_K_M 13,5 GB; Q3_K_L 14,6 GB; Q4_K_S 15,8 GB; Q4_K_M 16,8 GB; Q5_K_S 19,0 GB; Q5_K_M 19,5 GB; Q6_K 22,4 GB; Q8_0 29,0 GB. Estas cifras corresponden al tamaño del fichero y deben incrementarse con el espacio de contexto KV cache.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y contextos largos; RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q5_K_M y Q6_K; RTX 4080/4070 Ti Super (16 GB) para Q3_K_M y Q4_K_S.
+- Cabe en GPU de consumo: sí, desde Q2_K en tarjetas de 12 GB hasta Q5_K_M en tarjetas de 24 GB. Q6_K (22,4 GB) y Q8_0 (29,0 GB) requieren 24 GB con margen ajustado o 32 GB respectivamente.
+- Uso multimodal: añadir el fichero mmproj-Melinoe-Qwen3-8-27B-VL-BF16.gguf al despliegue; el coste adicional de VRAM del proyector no está cuantificado en la información disponible.
+- Opciones de despliegue: llama.cpp (llama-server con `-m <quant>.gguf --mmproj mmproj-...gguf` para multimodal), y cualquier runtime compatible con GGUF y endpoints de tipo OpenAI. No se documenta compatibilidad con vLLM ni TGI para estas cuantizaciones.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría. La model card solo referencia CaliperBench como marco de evaluación, sin cifras publicadas en el repositorio.
+
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Melinoe-Qwen3-8-27B-VL-GGUF (este) | 26,9 B | no disponible | Apache-2.0 | GGUF | Cuantizacion estatica para escritura creativa |
-| Qwen3.8-27B (base) | 27 B | no disponible | Apache-2.0 | safetensors | Modelo denso original de la familia Qwen3.8, con atencion hibrida |
-| Qwen3.8-30B-A3B (MoE) | no disponible | no disponible | no disponible | no disponible | Miembro MoE de la familia Qwen3.8, no comparable directamente por arquitectura |
-
-No se dispone de datos suficientes para una comparativa exhaustiva con otros modelos de la misma categoria. La informacion disponible no incluye resultados de benchmarks estandar que permitan comparar rendimiento con alternativas como Llama 3.1 27B o Mistral Large.
+| Melinoe-Qwen3-8-27B-VL (este) | 27,3 mil millones | No disponible | Apache 2.0 | GGUF, safetensors | Ajuste para escritura creativa y roleplay; multimodal con mmproj |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se identifican en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se dispone de informacion sobre sesgos especificos del modelo, pero al estar entrenado principalmente en ingles, puede presentar sesgos culturales anglocentricos.
-- Riesgo de alucinacion: no se han publicado evaluaciones especificas; como todo LLM, puede generar contenido falso o inventado, especialmente en tareas de hechos o citas.
-- Limitaciones de contexto: la longitud de contexto no se ha especificado en la informacion disponible, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
-- Idioma: el modelo solo soporta ingles; no es adecuado para generacion en otros idiomas, incluido el castellano.
-- Cuantizacion estatica: al ser una cuantizacion sin recalibracion, puede haber perdida de calidad en tareas de alta precision, especialmente en las cuantizaciones mas agresivas (Q2_K, Q3_K).
-- Vision: el uso multimodal requiere cargar el proyector mmproj por separado; sin el, el modelo no procesa imagenes. El archivo mmproj esta en BF16, lo que anade aproximadamente 1-2 GB adicionales de VRAM.
-- Adopcion limitada: el repositorio tiene 0 descargas y 0 likes, lo que indica que el modelo no ha sido validado por la comunidad aun.
+- Idioma: el modelo declara únicamente inglés; el rendimiento en castellano no está documentado y no debe asumirse.
+- Sesgos: no se publica información sobre sesgos evaluados, composición del dataset ni filtros aplicados durante el ajuste.
+- Alucinación: al estar orientado a escritura creativa y roleplay, la propensión a generar contenido inventado es estructuralmente alta; no es adecuado como fuente factual sin verificación externa.
+- Evaluación: el benchmark de referencia (CaliperBench) mide calidad de prosa, roleplay y willingness, no razonamiento ni exactitud factual; las puntuaciones en ese benchmark no deben extrapolarse a tareas analíticas.
+- Cuantización: las variantes Q2_K y Q3_K_M se marcan respectivamente como de menor calidad en la propia model card; para producción creativa se recomienda Q4_K_M o superior.
+- Multimodal: sin cargar el fichero mmproj BF16, el modelo funciona solo como modelo de texto; olvidar este paso es la causa habitual de fallos en el uso de visión.
+- Licencia: Apache 2.0 permite uso comercial, pero deben conservarse los avisos de licencia y atribución; conviene verificar también las condiciones del modelo base bgg1996/Melinoe-Qwen3-8-27B-VL y de la familia Qwen3 subyacente.
+- Contexto: al no publicarse la longitud de contexto soportada, la planificación de memoria KV cache y de conversaciones largas debe hacerse de forma empírica.
+- Madurez: el repositorio tiene 251 descargas y 0 likes, con fecha de creación en agosto de 2026 y última actualización en octubre de 2026; se trata de una conversión de nicho con validación comunitaria limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF
+- Repositorio GGUF: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF
 - Modelo base: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL
-- Cuantizacion Q4_K_M del modelo base: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-Q4_K_M-GGUF
-- Documentacion vLLM Ascend para Qwen3.8-27B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html
-- Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- CaliperBench: https://caliperbench.com
+- Proyector multimodal (mmproj BF16): https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF/resolve/main/mmproj-Melinoe-Qwen3-8-27B-VL-BF16.gguf
+- Ficha del modelo en CaliperBench: https://caliperbench.com/m/melinoe-qwen3.8-27b-vl/
+- Benchmark CaliperBench: https://caliperbench.com
+- Guía de uso de GGUF (referencia citada en la model card): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

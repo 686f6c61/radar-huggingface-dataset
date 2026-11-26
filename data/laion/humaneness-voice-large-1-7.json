@@ -60,5 +60,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "LAION · Open AI research for everyone",
+      "url": "https://laion.ai/",
+      "snippet": "Aug 4, 2025 · LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research …Read more"
+    },
+    {
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit organization which makes open …Read more"
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …Read more"
+    },
+    {
+      "title": "Projects · LAION",
+      "url": "https://laion.ai/projects/",
+      "snippet": "Aug 30, 2024 · Datasets, models, tools, papers, and historical releases from LAION and its research community."
+    },
+    {
+      "title": "laion (LAION eV) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/laion/datasets",
+      "snippet": "laion/german-english-voice-acting-challenges ... laion/laion-cell-000 ... laion/academic-textbook-links ... laion/singing-voice-data-lab …Read more"
+    }
+  ]
 }

@@ -21,7 +21,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 232,
+  "downloads_30d": 238,
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",
@@ -41,16 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ORIGINAL-MODEL-README.md · willspeak/Qwen3-ASR-1.7B-gguf at main",
-      "url": "https://huggingface.co/willspeak/Qwen3-ASR-1.7B-gguf/blob/main/ORIGINAL-MODEL-README.md",
-      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
-    },
-    {
-      "title": "Qwen/Qwen3-ASR-1.7B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
-      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
-    }
-  ]
+  "sources": []
 }

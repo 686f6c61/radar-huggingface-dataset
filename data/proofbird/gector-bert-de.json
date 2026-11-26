@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "proofbird/gector-bert-en · Hugging Face",
-      "url": "https://huggingface.co/proofbird/gector-bert-en",
-      "snippet": "proofbird / gector-bert-en Like 1 Follow Proofbird 1 Token Classification ONNX wikimedia/wikipedia English grammatical-error-correction gector on-device License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Proofbird Grammar — English What it corrects How it was trained How it was measured Files Licence and ..."
-    },
-    {
-      "title": "BERT (language model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
-      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state of the art for large language models. As of 2026, BERT is a common ..."
-    }
-  ]
+  "sources": []
 }

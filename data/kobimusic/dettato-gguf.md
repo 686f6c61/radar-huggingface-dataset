@@ -2,92 +2,97 @@
 
 ## Resumen
 
-dettato-gguf es la distribucion en formato GGUF del sistema dettato, un conjunto de cuatro modelos especializados en transcripcion musical automatica (audio a MIDI) multi-instrumento. Lo desarrolla kobimusic y lo empaqueta el autor del repositorio `kobimusic/dettato-gguf` a partir de los pesos originales en safetensors. El paquete agrupa en un unico fichero los cuatro componentes del sistema: un transcriptor principal, un reparador de evidencias, un agrupador de notas por instrumento y un modelo especifico de bateria.
+dettato-gguf es la distribucion en formato GGUF del conjunto de modelos dettato, una familia de cuatro redes neuronales especializadas en transcripcion musical automatica (audio a MIDI) multi-instrumento. Lo desarrolla kobimusic y lo publica como un unico fichero GGUF que agrupa los cuatro componentes del sistema: un transcriptor principal (15,3 M de parametros), un reparador de evidencia (4,9 M), un agrupador de notas por instrumento (2,9 M) y un modulo especifico de bateria (5,0 M). En total, el fichero empaqueta 32.484.250 parametros.
 
-El modelo resuelve el problema de convertir una grabacion de audio polifonica en una representacion MIDI con asignacion de instrumentos. No es un modelo de lenguaje: es un sistema acustico de vision estrecha sobre audio, con 32,48 millones de parametros totales repartidos entre los cuatro modulos (15,3M el transcriptor, 4,9M el reparador, 2,9M el agrupador y 5,0M el de bateria). Su relevancia actual radica en que permite ejecutar todo el pipeline sin Python, mediante ggml sobre CPU, Metal o Vulkan, con un rendimiento declarado ligeramente superior al paquete Python original.
+La relevancia de esta publicacion es que traslada un pipeline de transcripcion musical que originalmente dependia de Python y safetensors a un runtime C++ puro basado en ggml (dettato.cpp), ejecutable en CPU, Metal o Vulkan sin dependencias de Python. Esto habilita el despliegue en entornos embebidos, aplicaciones de escritorio y flujos de produccion donde instalar un stack de ML en Python no es viable.
 
-La distribucion incluye dos ficheros: `dettato-f16.gguf` (73,7 MB) y `dettato-f32.gguf` (130,0 MB). El primero es el recomendado para uso general; el segundo existe para pruebas de paridad numerica. La conversion pliega BatchNorm, LayerNorm y los pesos de layer scale en las capas adyacentes, rellena las cabezas de atencion del transcriptor de 46 a 48 y almacena los filterbanks para que el codigo C++ no tenga que construirlos.
+El modelo no es un LLM: no genera texto ni mantiene conversaciones. Es un sistema de inferencia acustica orientado a una tarea concreta, con licencia Apache-2.0 y un tamano de repositorio de 0,2 GB, lo que lo hace muy ligero frente a los modelos generativos habituales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (sistema de cuatro modulos acusticos; no se detalla la topologia interna en la informacion proporcionada) |
-| Parametros totales | 32.484.250 (15,3M transcriptor + 4,9M reparador de evidencias + 2,9M agrupador + 5,0M bateria) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16 y f32 (no se ofrecen cuantizaciones de menor precision tipo Q4/Q8) |
-| Idiomas soportados | no disponible (modelo de audio, no linguistico) |
+| Arquitectura | Red neuronal acustica multi-componente (transcriptor, reparador de evidencia, agrupador por instrumento y modulo de bateria); detalles de capas no disponibles |
+| Parametros totales | 32.484.250 (15,3 M transcriptor + 4,9 M reparador + 2,9 M agrupador + 5,0 M bateria) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de audio, no de texto) |
+| Tipos de cuantizacion | f16 (73,7 MB) y f32 (130,0 MB) |
+| Idiomas soportados | no disponible (modelo de audio, independiente del idioma) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (para dettato.cpp); los originales estan en safetensors |
+| Formato de pesos | GGUF (ggml), con checksums en SHA256SUMS |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna de los modulos (tipo de capas, mecanismo de atencion, representacion de entrada). Lo que si se detalla es la composicion del sistema y el proceso de conversion a GGUF: se pliegan las normalizaciones (BatchNorm, LayerNorm) y los pesos de layer scale en las capas contiguas, se rellenan las cabezas de atencion del transcriptor de 46 a 48 y se embeben los filterbanks. Segun el autor, estos cambios solo alteran los resultados por redondeo numerico.
+El sistema dettato se compone de cuatro modelos que se ejecutan en cadena sobre una misma senal de audio. El transcriptor principal (15,3 M de parametros) extrae las notas; el reparador de evidencia (4,9 M) corrige y consolida las detecciones; el agrupador (2,9 M) asigna las notas a pistas de instrumento; y el modulo de bateria (5,0 M) se encarga especificamente de la percusion. La model card no detalla la topologia interna de cada red (tipo de capas, atencion, convoluciones ni funcion de perdida), por lo que esa informacion debe consultarse en las fichas de los repositorios base.
 
-El sistema se compone de cuatro modelos entrenados por separado: un transcriptor principal, un reparador de evidencias, un agrupador de notas por instrumento y un modelo de bateria. Los pesos convertidos corresponden a revisiones concretas de cada repositorio base (`a0d1e354`, `5633f28e`, `5a94cea2`, `97801f23`). No se proporcionan datos sobre el volumen de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; al tratarse de un modelo de transcripcion musical, esas tecnicas no resultan directamente aplicables.
+El proceso de conversion a GGUF, realizado con `py/convert.py` de dettato.cpp, pliega los pesos de BatchNorm, LayerNorm y layer scale en las capas adyacentes, rellena las cabezas de atencion del transcriptor de 46 a 48 y almacena los filterbanks para que el codigo C++ no tenga que construirlos. Segun el autor, estos cambios solo alteran los resultados por redondeo. No se especifican en la informacion disponible el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o ajuste fino preferencial.
 
 ## Capacidades
 
-- Transcripcion automatica de audio a MIDI (automatic music transcription).
-- Transcripcion multi-instrumento: separa las notas y las asigna a pistas de instrumento mediante el modulo agrupador.
-- Reparacion de evidencias: un modulo especifico corrige o completa las detecciones del transcriptor principal.
-- Transcripcion de bateria mediante un modelo dedicado, limitado a audio grabado a 40 kHz o mas.
-- Ejecucion sin Python a traves de dettato.cpp sobre ggml, con aceleracion por CPU, Metal o Vulkan.
-- Salida en MIDI de interpretacion, no cuantizado a negra (el timing refleja la ejecucion real).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades linguisticas: es un modelo puramente acustico.
+- Transcripcion automatica de audio musical a MIDI (audio-to-MIDI) multi-instrumento.
+- Separacion y asignacion de notas a pistas de instrumento mediante el modulo agrupador.
+- Transcripcion especifica de bateria y percusion con el modulo dedicado.
+- Reparacion y consolidacion de detecciones de notas mediante el modulo de evidencia.
+- Ejecucion en CPU, Metal y Vulkan a traves de ggml, sin Python.
+- Distribucion en un unico fichero GGUF que integra los cuatro modelos del pipeline.
+- No soporta generacion de texto, tool calling, agentes, vision ni audio en sentido generativo; su alcance es exclusivamente la transcripcion musical.
 
 ## Casos de uso
 
-- Digitalizacion de grabaciones para produccion musical: convertir una maqueta o una grabacion de ensayo en pistas MIDI editables en el DAW, aprovechando la asignacion automatica de instrumentos del agrupador.
-- Creacion de partituras y reducciones: a partir del MIDI de interpretacion generado, un paso posterior de cuantizacion permite obtener notacion legible para arreglos o transcripciones academicas.
-- Analisis musicologico y educacion: extraer las notas y su timing real de una interpretacion para estudiar fraseo, dinamica o desviaciones ritmicas respecto a la partitura.
-- Remezcla y re-instrumentacion: sustituir los timbres de una grabacion por sintetizadores o samples manteniendo la interpretacion original, gracias a las pistas separadas por instrumento.
-- Procesamiento por lotes en servidores sin GPU dedicada: el binario C++ con ggml sobre CPU permite transcribir catalogos completos sin dependencias de Python ni CUDA, con un coste de integracion bajo.
-- Herramientas de escritorio y plugins: al ser un unico fichero GGUF de 73,7 MB y no requerir runtime de Python, se puede embeber en aplicaciones nativas o plugins de DAW con despliegue sencillo.
-- Investigacion en transcripcion musical: servir de linea base reproducible sobre los conjuntos de evaluacion Bach10, Dagstuhl ChoirSet, PHENICX-Anechoic y RWC Royalty-Free.
+- Transcripcion de grabaciones musicales a partituras MIDI: el pipeline completo convierte un fichero WAV en notas MIDI editables, util para compositores que quieran digitalizar maquetas o directos.
+- Generacion de partituras para bateria: el modulo de bateria permite aislar la transcripcion de percusion en grabaciones con bateria real, siempre que el audio se haya registrado a 40 kHz o mas.
+- Integracion en aplicaciones de escritorio sin Python: al ejecutarse con ggml en CPU, Metal o Vulkan, dettato.cpp permite incorporar transcripcion musical a herramientas nativas sin empaquetar un entorno Python.
+- Analisis musical y musicologia computacional: la salida MIDI multi-instrumento facilita el estudio de interpretaciones, la comparacion de versiones y el analisis de estructura en grabaciones.
+- Preprocesado para produccion musical y remezcla: la separacion por pistas de instrumento sirve como paso previo a tareas de edicion, cuantizacion o reorquestacion en un DAW.
+- Despliegue en hardware modesto o embebido: con 73,7 MB en f16 y ejecucion en CPU, el modelo cabe en dispositivos con recursos limitados donde no es viable un stack de ML pesado.
+- Investigacion y evaluacion de sistemas de transcripcion: el codigo C++ y los benchmarks publicados permiten reproducir y comparar resultados frente a la implementacion Python.
 
 ## Benchmarks y rendimiento
 
-| Metrica | dettato.cpp (GGUF) | Paquete Python (safetensors) |
+| Benchmark | dettato.cpp (GGUF) | Paquete Python (safetensors) |
 |---|---|---|
-| F1 compuesto (Bach10, Dagstuhl ChoirSet, PHENICX-Anechoic, RWC Royalty-Free) | 67,75 | 67,51 |
-| Tiempo por cancion de 4 minutos (RTX 5060, modo Fast) | 11,7 s | 20,1 s |
+| F1 compuesto (Bach10, Dagstuhl ChoirSet, PHENICX-Anechoic, RWC Royalty-Free) | 67,74 | 67,51 |
+| Tiempo de transcripcion de una cancion de 4 minutos (RTX 5060) | 12,2 s | 20,7 s |
 
-Los datos proceden de la model card del autor. No se han publicado en la informacion disponible resultados desglosados por conjunto de evaluacion ni comparaciones con otros sistemas de transcripcion.
+Los datos proceden de la model card del autor. No se han publicado en la informacion disponible resultados desglosados por cada conjunto de benchmark ni comparaciones con otros sistemas de transcripcion musical.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en el modo CPU; en modo GPU el modelo es muy pequeno (73,7 MB en f16), por lo que la memoria necesaria es marginal frente a la del propio runtime.
-- GPU recomendadas: cualquier GPU compatible con Metal (Apple Silicon) o Vulkan; el autor reporta mediciones en una RTX 5060.
-- Cabe holgadamente en cualquier GPU de consumo e incluso en iGPU, y funciona sin GPU alguna en CPU.
-- Opciones de despliegue: exclusivamente dettato.cpp (binario C++ con ggml). No se menciona soporte para llama.cpp, Ollama, vLLM ni TGI, que ademas no estan orientados a este tipo de modelo acustico.
-- Latencia y throughput: 11,7 segundos por cancion de 4 minutos en modo Fast sobre RTX 5060; el paquete Python tarda 20,1 segundos en la misma tarjeta. No se proporcionan cifras para CPU.
+- VRAM estimada: minima; el fichero f16 ocupa 73,7 MB y el f32 130,0 MB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no se especifican modelos concretos; el autor reporta pruebas en una RTX 5060. Al ejecutarse sobre ggml, funciona en CPU, Metal (Apple) y Vulkan.
+- GPU consumer: si, en practicamente cualquier GPU consumer actual e incluso en CPU.
+- Opciones de despliegue: dettato.cpp (CLI y API C++), con soporte de ggml en CPU, Metal y Vulkan. La via Python se cubre con el paquete dettato y los repositorios safetensors, no con este GGUF.
+- Latencia y throughput: 12,2 segundos para una cancion de 4 minutos en una RTX 5060 segun el autor; no se dispone de cifras para CPU ni para otros aceleradores.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos sobre modelos alternativos de transcripcion musical multi-instrumento (parametros, contexto, rendimiento o licencia), por lo que la comparativa no esta disponible.
+| Modelo | Parametros | Formato | Licencia | Notas |
+|---|---|---|---|---|
+| dettato-gguf | 32,5 M | GGUF (ggml) | Apache-2.0 | Pipeline de 4 modelos, ejecucion C++ sin Python |
+| dettato (safetensors) | 32,5 M (mismos pesos) | safetensors | Apache-2.0 | Requiere paquete Python; mismo rendimiento (F1 67,51) |
+| Otros sistemas de transcripcion musical | no disponible | no disponible | no disponible | No se aportan comparaciones en la informacion disponible |
+
+La unica comparacion documentada es interna, frente a la version safetensors del mismo sistema. No se dispone de datos frente a alternativas de la categoria.
 
 ## Limitaciones y advertencias
 
-- El paso mas debil del sistema es la asignacion de notas a las pistas de instrumento correctas, segun reconoce el propio autor.
-- La salida es MIDI de interpretacion, no cuantizado al pulso; para obtener notacion o MIDI de grade es necesario un postprocesado.
-- El modulo de bateria solo funciona con audio grabado a 40 kHz o superior; con frecuencias de muestreo menores no producira resultados validos.
-- No es un modelo de lenguaje: no admite instrucciones en lenguaje natural, tool calling ni razonamiento, y no debe evaluarse con benchmarks tipo MMLU o HumanEval.
-- Riesgo de alucinacion en el sentido de notas espurias o instrumentos mal asignados en pasajes densos o con mezclas complejas; no se documentan tasas de error por tipo de material.
-- No se detallan sesgos por genero musical, instrumentacion o calidad de grabacion; la cobertura del entrenamiento es desconocida.
-- Licencia Apache-2.0, permisiva para uso comercial, pero conviene verificar las licencias de los repositorios base y de los conjuntos de evaluacion utilizados.
-- El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado en noviembre de 2026; se trata de una publicacion muy reciente y sin validacion independiente.
+- El paso mas debil del pipeline es la asignacion de notas a las pistas de instrumento correctas, segun reconoce el autor.
+- La salida es MIDI de interpretacion, no cuantizado a pulso, lo que puede requerir postprocesado para obtener partituras limpias.
+- El modulo de bateria solo funciona con audio grabado a 40 kHz o superior.
+- No es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso.
+- No se detallan sesgos conocidos, tasas de alucinacion ni limitaciones por idioma en la informacion disponible; al operar sobre audio, el idioma no aplica directamente.
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones de los repositorios base y del codigo dettato.cpp.
+- El rendimiento reportado procede de pruebas del propio autor; no hay evaluacion independiente en la informacion disponible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/kobimusic/dettato-gguf
-- Modelo base (transcriptor): https://huggingface.co/kobimusic/dettato
-- Reparador de evidencias: https://huggingface.co/kobimusic/dettato-evidence
-- Agrupador: https://huggingface.co/kobimusic/dettato-grouper
-- Modelo de bateria: https://huggingface.co/kobimusic/dettato-drums
-- Codigo C++ (dettato.cpp): https://github.com/hidude562/dettato.cpp
-- Paquete Python: https://github.com/kobimusic/dettato
+- Repositorio base principal: https://huggingface.co/kobimusic/dettato
+- Repositorio del reparador de evidencia: https://huggingface.co/kobimusic/dettato-evidence
+- Repositorio del agrupador: https://huggingface.co/kobimusic/dettato-grouper
+- Repositorio del modulo de bateria: https://huggingface.co/kobimusic/dettato-drums
+- Codigo dettato.cpp: https://github.com/hidude562/dettato.cpp
 - Documentacion del modelo: https://github.com/hidude562/dettato.cpp/blob/main/docs/MODEL.md
 - Documentacion de benchmarks: https://github.com/hidude562/dettato.cpp/blob/main/docs/BENCHMARK.md
-- Web del autor: https://kobi.music
+- Paquete Python: https://github.com/kobimusic/dettato
+- Sitio web del autor: https://kobi.music

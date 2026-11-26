@@ -43,31 +43,5 @@
   "renamed_to": "LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory",
   "renamed_at": "2026-11-11T03:14:51.310Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Update auf den neuen Microsoft Edge",
-      "url": "https://support.microsoft.com/de-de/edge/update-to-the-new-microsoft-edge",
-      "snippet": "Microsoft Edge hilft Ihnen, die Onlineverfolgung Ihrer Daten zu verwalten: Bei der Nachverfolgungsprävention können Sie zwischen …"
-    },
-    {
-      "title": "Atualizar para o novo Microsoft Edge",
-      "url": "https://support.microsoft.com/pt-br/edge/update-to-the-new-microsoft-edge",
-      "snippet": "O Microsoft Edge proporciona uma experiência de navegação rápida, segura e moderna baseada no Chromium. O suporte para …"
-    },
-    {
-      "title": "Microsoft Edge-Updateeinstellungen | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/edge/microsoft-edge-update-settings",
-      "snippet": "Microsoft Edge-Updateeinstellungen steuern, wie der Browser Updates empfängt und installiert, um Sicherheit, Leistung und …"
-    },
-    {
-      "title": "Getting the latest Microsoft Edge update just got easier",
-      "url": "https://support.microsoft.com/en-us/edge/getting-the-latest-microsoft-edge-update-just-got-easier",
-      "snippet": "Getting the latest Microsoft Edge update just got easier Summary Keeping Microsoft Edge up to date helps protect your device and …"
-    },
-    {
-      "title": "Mise à jour vers le nouveau Microsoft Edge",
-      "url": "https://support.microsoft.com/fr-fr/edge/update-to-the-new-microsoft-edge",
-      "snippet": "Microsoft Edge vous aide à gérer la façon dont vos données sont suivies en ligne : La prévention du suivi vous permet de choisir …"
-    }
-  ]
+  "sources": []
 }

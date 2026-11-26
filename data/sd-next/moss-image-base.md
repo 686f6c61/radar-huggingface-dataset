@@ -2,108 +2,100 @@
 
 ## Resumen
 
-MOSS-Image-Base es un modelo de difusion latente texto-a-imagen desarrollado por OpenMOSS y distribuido en este repositorio por SD-Next como espejo (mirror) de la revision `5f40f07a` del repositorio original `OpenMOSS-Team/MOSS-Image-Base`. Se trata del modelo base de la familia MOSS-Image, pensado para generar imagenes a partir de prompts en lenguaje natural, pero con un rasgo diferencial: acepta tambien secuencias de etiquetas y layouts en formato JSON para controlar la colocacion del texto y la disposicion de los objetos dentro de la imagen. Esto lo orienta a escenarios donde el texto renderizado debe aparecer en una posicion concreta (carteles, pizarras, notas manuscritas, infografias).
+MOSS-Image-Base es un modelo de generación de imágenes texto-a-imagen desarrollado por OpenMOSS (equipo vinculado a MOSI/Shanghai). Este repositorio concreto, `SD-Next/MOSS-Image-Base`, es un espejo del original `OpenMOSS-Team/MOSS-Image-Base` en la revisión `5f40f07a`, mantenido para su uso con SD.Next. El modelo base forma parte de la familia MOSS-Image, que también incluye una variante SFT afinada.
 
-El repositorio ocupa 27,2 GB e incluye transformer, VAE, codificador de texto, tokenizer, scheduler y una pipeline personalizada (`pipeline_moss_image.py`) que no se ha modificado respecto al original. El recuento real de parametros en safetensors es de 5.082.308.624 (aproximadamente 5,08 mil millones). La licencia es Apache 2.0 y los idiomas declarados son ingles y chino, lo que encaja con la capacidad destacada de renderizar texto en ambos idiomas.
+El modelo resuelve el problema del control fino sobre la composición de la imagen: además de prompts en lenguaje natural, acepta secuencias de etiquetas y layouts en JSON para controlar la colocación del texto y la disposición de los objetos. Es especialmente relevante por su capacidad de renderizar texto legible en varios idiomas (inglés y chino) dentro de la imagen generada, un punto históricamente débil en los modelos de difusión.
 
-Su relevancia practica es doble: por un lado, es un modelo de generacion de imagenes con control estructural del texto (un problema notoriamente dificil en difusion); por otro, su integracion nativa en SD.Next y ComfyUI, ademas de diffusers con pipeline custom, lo hace desplegable en flujos de trabajo graficos ya existentes. Existe ademas una variante ajustada con SFT (`OpenMOSS-Team/MOSS-Image-SFT`) que, segun el model card, produce agrupaciones de texto mas claras y layouts mas organizados que la version base.
+Técnicamente es un modelo de difusión con un transformer como backbone, un VAE (usa el decodificador small de FLUX.2) y un text encoder, con un total de 5.082.308.624 parámetros (aproximadamente 5,08 mil millones) y un repositorio de 27,2 GB. Se distribuye bajo licencia Apache 2.0 y se integra en el ecosistema diffusers mediante un pipeline personalizado (`pipeline_moss_image`).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusion latente texto-a-imagen con backbone transformer, VAE, codificador de texto, tokenizer y scheduler (detalle interno de capas no disponible en la informacion proporcionada) |
-| Parametros totales | 5.082.308.624 (aproximadamente 5,08 mil millones) |
-| Parametros activos | no aplica (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (no aplica el concepto de ventana de contexto de un LLM; no se especifica el limite de tokens del codificador de texto) |
-| Tipos de cuantizacion | no disponible; el model card solo especifica bfloat16 para transformer y codificador de texto, y float32 para VAE y ruido inicial |
-| Idiomas soportados | en, zh |
+| Arquitectura | Modelo de difusion texto-a-imagen con transformer como backbone, VAE y text encoder; pipeline personalizado `MOSSImagePipeline` |
+| Parametros totales | 5.082.308.624 (~5,08 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (no es un modelo de lenguaje; la longitud de prompt no se especifica) |
+| Tipos de cuantizacion | No disponible (la model card usa bfloat16 para transformer y text encoder, y float32 para VAE y ruido inicial) |
+| Idiomas soportados | Ingles (en) y chino (zh) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria diffusers) |
-| Pipeline | text-to-image (`diffusers:MOSSImagePipeline` / `pipeline_moss_image`) |
-| Revision del espejo | 5f40f07a |
-| Tamano del repositorio | 27,2 GB |
-| VAE | decodificador pequeno de FLUX.2 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema de difusion latente: un transformer procesa las representaciones latentes y un VAE las decodifica a imagen final. El model card indica explicitamente que el repositorio contiene transformer, VAE, codificador de texto, tokenizer, scheduler y la pipeline personalizada, pero no detalla el numero de capas, la dimensionalidad de los embeddings, el tipo de atencion ni la composicion del dataset de entrenamiento. Tampoco se especifica el numero de tokens de entrenamiento, si hubo etapas de RLHF/DPO ni el procedimiento de ajuste de la version base frente a la SFT. El VAE incluido emplea el decodificador pequeno de FLUX.2.
+MOSS-Image-Base es un modelo de difusion para generacion de imagenes que combina un transformer (backbone principal), un VAE y un text encoder. El VAE incluido utiliza el decodificador small de FLUX.2. El pipeline personalizado `pipeline_moss_image.py`, el tokenizer y el scheduler se distribuyen junto con los pesos y no han sido modificados respecto al repositorio original. El modelo se ejecuta con el transformer y el text encoder en bfloat16, mientras que el VAE y el ruido inicial operan en float32.
 
-La innovacion mas destacable que si aparece documentada es la interfaz de control: el modelo acepta prompts en lenguaje natural, secuencias de etiquetas y layouts JSON que permiten fijar la posicion del texto y la organizacion de los objetos. El ejemplo oficial del model card genera una cocina de 1024x1024 con una nota manuscrita en chino sobre la puerta de la nevera, con varias lineas de texto, lo que ilustra el objetivo de renderizado de texto fiable y localizado. La inferencia usa por defecto 50 pasos, `guidance_scale` de 3.0, semilla manual y el parametro `uncond_skip_layers=[22]` para omitir capas en la rama no condicionada.
+La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Si se menciona que el modelo soporta prompts en lenguaje natural, secuencias de etiquetas y layouts en JSON para controlar la colocacion del texto y la disposicion de objetos, lo que sugiere un entrenamiento orientado al control composicional y al renderizado de texto. Existe una variante SFT (MOSS-Image-SFT) que, segun la comparativa de la model card, produce una agrupacion de texto mas clara y un layout de pizarra mas organizado que la version base.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de prompts en lenguaje natural en ingles y chino.
-- Renderizado de texto dentro de la imagen, incluyendo texto manuscrito, con control de posicion mediante layouts JSON.
-- Control de la disposicion de objetos y de la agrupacion de texto mediante secuencias de etiquetas y estructuras JSON.
-- Soporte de resoluciones configurables; el ejemplo oficial usa 1024x1024.
-- Integracion con diffusers mediante pipeline personalizada (`custom_pipeline="pipeline_moss_image"`, `trust_remote_code=True`).
-- Integracion con SD.Next (carga desde la lista de referencia de modelos) y con ComfyUI mediante plugin nativo instalable desde ComfyUI Manager.
-- Variante SFT disponible (`MOSS-Image-SFT`) con mejor organizacion del texto y del layout.
-- No se documentan capacidades de tool calling, agentes, vision de entrada, audio ni modo de razonamiento, por tratarse de un modelo de generacion de imagenes.
+- Generacion de imagenes texto-a-imagen a partir de prompts en lenguaje natural.
+- Soporte de secuencias de etiquetas (tag sequences) como forma alternativa de prompting.
+- Soporte de layouts en JSON para controlar la colocacion del texto y la disposicion de objetos en la imagen.
+- Renderizado de texto legible dentro de la imagen, con soporte para ingles y chino (por ejemplo, notas manuscritas en chino en una nevera).
+- Control de la composicion espacial mediante el layout JSON.
+- Integracion en diffusers mediante pipeline personalizado con `trust_remote_code=True`.
+- Integracion en SD.Next desde la lista de referencia de modelos.
+- Integracion en ComfyUI mediante plugin nativo (disponible en ComfyUI Manager; la integracion en el repositorio oficial esta en curso).
+- Parametros de inferencia configurables: `num_inference_steps`, `guidance_scale`, `uncond_skip_layers`, semilla y resolucion (por ejemplo, 1024x1024).
+- No se documentan capacidades de tool calling, agentes, vision de entrada, audio ni modo thinking (no es un modelo de lenguaje).
 
 ## Casos de uso
 
-- Carteleria y publicidad con texto integrado: el modelo puede colocar el eslogan en la posicion exacta indicada en un layout JSON, evitando el problema habitual de texto deformado o mal situado en modelos de difusion genericos.
-- Material de marketing multilingue (ingles y chino): un mismo flujo puede generar variantes con texto en ambos idiomas, util para campanas dirigidas a mercados asiaticos y anglosajones.
-- Infografias y materiales educativos: la combinacion de layout JSON y agrupacion de texto permite generar diagramas con etiquetas legibles en zonas concretas de la imagen.
-- Prototipado de interfaces y mockups: la disposicion controlada de elementos facilita generar bocetos de pantallas con textos de relleno colocados de forma coherente.
-- Ilustracion de documentacion tecnica: generacion de diagramas anotados o capturas simuladas con rotulos especificos, integrable en pipelines de documentacion automatizada.
-- Generacion de imagenes para comercio electronico: productos con etiquetas, precios o textos promocionales renderizados en zonas definidas del encuadre.
-- Creacion de datasets sinteticos para OCR y deteccion de texto: al controlar la posicion y el contenido del texto, resulta util para aumentar corpus de entrenamiento con anotaciones conocidas a priori.
-- Integracion en flujos ComfyUI y SD.Next: estudio de diseno o equipos de contenido que ya trabajan con nodos pueden incorporar el modelo sin reescribir su toolchain.
+- Generacion de carteles y material promocional con texto integrado: el modelo puede renderizar texto legible en ingles y chino dentro de la imagen, lo que lo hace adecuado para carteles, banners y anuncios donde el texto forma parte del diseno.
+- Maquetacion de infografias y pizarras: gracias al layout JSON, se puede especificar la disposicion de objetos y bloques de texto, util para generar infografias o esquemas con una estructura controlada.
+- Prototipado de interfaces y mockups: la capacidad de colocar texto y objetos en posiciones concretas permite generar mockups de pantallas, etiquetas de producto o envases con texto realista.
+- Ilustracion editorial con notas y rotulos: escenas como una nota manuscrita en una nevera o rotulos en un entorno se pueden generar directamente con el prompt, reduciendo el postprocesado.
+- Generacion de material bilingue ingles-chino: para mercados que requieren contenido en ambos idiomas, el modelo cubre los dos idiomas soportados sin cambiar de modelo.
+- Experimentacion e investigacion en difusion: al ser un modelo base con licencia Apache 2.0 y pipeline abierto en diffusers, sirve como punto de partida para fine-tuning o para estudiar control composicional y renderizado de texto.
+- Integracion en flujos de trabajo con ComfyUI o SD.Next: artistas y desarrolladores pueden incorporarlo a sus grafos de ComfyUI o a SD.Next para generar imagenes por lotes con layouts controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model card y los resultados de busqueda proporcionados no incluyen metricas como FID, CLIP score, GenEval, DPG-Bench ni ninguna comparativa numerica con otros modelos texto-a-imagen.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bfloat16: los pesos suman aproximadamente 5,08 mil millones de parametros, lo que supone en torno a 10 GB solo en pesos entre transformer y codificador de texto, mas el VAE en float32 y las activaciones de la difusion a 1024x1024. Como estimacion, entre 12 y 16 GB de VRAM para inferencia completa con `torch_dtype` mixto.
-- El model card indica que existe soporte de CPU offload, lo que permite ejecutar el modelo con menos VRAM a costa de mayor latencia; el repositorio ocupa 27,2 GB en disco.
-- GPU recomendadas: A100, H100 o similares para produccion y lotes grandes; RTX 4090 para uso individual a 1024x1024 en bfloat16.
-- GPU de consumo: cabe en tarjetas de gama alta con 16 GB o mas (RTX 4080/4090, RTX 5080/5090) y, con offload activado, es previsible que funcione en tarjetas de 8-12 GB, aunque este extremo no esta cuantificado en la informacion disponible.
-- Entorno de software: Python 3.10 o superior, GPU NVIDIA con CUDA, PyTorch 2.9 o superior, `diffusers>=0.38`, `transformers>=5.3`, `accelerate>=1.10`, `safetensors>=0.6` y `Pillow>=10`.
-- Opciones de despliegue: diffusers con la pipeline personalizada incluida, SD.Next y ComfyUI mediante plugin nativo. No se documentan pesos GGUF ni soporte para vLLM, llama.cpp, Ollama o TGI, que en cualquier caso no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles. La configuracion de referencia usa 50 pasos de inferencia, por lo que el tiempo por imagen dependera de la GPU y de si se aplica compilacion u offload.
+- VRAM estimada para inferencia: no disponible de forma explicita; con ~5,08 mil millones de parametros y pesos en bfloat16, el modelo requiere del orden de 10 GB solo para los pesos del transformer, a lo que hay que sumar text encoder y VAE, por lo que se recomienda una GPU con al menos 16-24 GB de VRAM para resoluciones de 1024x1024.
+- GPU recomendadas: no se especifican en la model card; por tamano, son adecuadas GPU de clase profesional como A100 o H100, y GPU de consumo de gama alta con suficiente VRAM (por ejemplo, RTX 4090 con 24 GB).
+- Cabe en GPU de consumo: probablemente en RTX 4090 (24 GB) y modelos con VRAM equivalente; no confirmado para GPU con menos de 16 GB.
+- Opciones de despliegue: diffusers (con `custom_pipeline="pipeline_moss_image"` y `trust_remote_code=True`), SD.Next, ComfyUI (plugin nativo via ComfyUI Manager) y la demo de Hugging Face Spaces. La model card menciona opciones de CPU offload y compilacion en la guia rapida del proyecto.
+- Latencia y throughput: no disponibles. La model card usa 50 pasos de inferencia con `guidance_scale=3.0` en el ejemplo, lo que da una idea del coste computacional, pero no se publican cifras de latencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos en la informacion proporcionada. La siguiente tabla recoge unicamente caracteristicas basicas y conocidas de alternativas de la misma categoria; los datos de MOSS-Image-Base provienen del model card y del repositorio, mientras que el resto son caracteristicas generales de cada proyecto y no una medicion de calidad.
+No se dispone de datos de benchmarks ni de especificaciones comparables de otros modelos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
 
-| Modelo | Parametros | Idiomas | Licencia | Formato / ecosistema | Rendimiento comparado |
-|---|---|---|---|---|---|
-| MOSS-Image-Base | 5,08 mil millones | en, zh | Apache 2.0 | safetensors, diffusers, SD.Next, ComfyUI | no disponible |
-| MOSS-Image-SFT | no disponible en la informacion proporcionada | en, zh | Apache 2.0 (misma familia) | safetensors, diffusers | el model card indica mejor agrupacion de texto y layout mas organizado que la version base, sin metricas |
-| Otros modelos texto-a-imagen con renderizado de texto | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se han hallado en la busqueda web resultados relevantes sobre modelos comparables: los resultados devueltos corresponden a tarjetas de memoria SD y no guardan relacion con el modelo.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| MOSS-Image-Base (este) | ~5,08 mil millones | No aplica | Apache 2.0 | Hugging Face, ModelScope, SD.Next, ComfyUI |
+| MOSS-Image-SFT | No disponible | No aplica | No disponible | Hugging Face, ModelScope |
+| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la informacion disponible; como todo modelo de difusion entrenado con datos a gran escala, es previsible que reproduzca sesgos presentes en sus datos de entrenamiento, pero no hay analisis publicado al respecto.
-- Riesgo de alucinacion visual: el modelo puede generar texto con errores ortograficos, caracteres deformados o contenido incoherente, especialmente en cadenas largas; el propio model card compara base y SFT precisamente porque la version base organiza peor el texto.
-- Cobertura de idiomas limitada a ingles y chino; no hay garantia de renderizado correcto de texto en otros idiomas, incluido el castellano.
-- La version base es un modelo sin ajuste SFT, por lo que su seguimiento de instrucciones y la calidad del layout son inferiores a los de `MOSS-Image-SFT` segun el propio autor.
-- Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion del aviso de licencia. No se declaran restricciones adicionales de uso aceptable en la informacion disponible.
-- Este repositorio es un espejo mantenido por SD-Next; para cuestiones de soporte, actualizaciones o responsabilidad sobre el modelo conviene referirse al repositorio original de OpenMOSS.
-- Requiere `trust_remote_code=True` al cargar la pipeline personalizada en diffusers, lo que implica ejecutar codigo incluido en el repositorio; conviene revisarlo antes de desplegarlo en entornos de produccion.
-- No se especifican limites de resolucion, longitud de prompt ni comportamiento con lotes grandes; el ejemplo de referencia esta fijado en 1024x1024 y 50 pasos.
-- El repositorio se creo y actualizo el 16 de octubre de 2026 y no registra descargas ni interacciones, por lo que la trazabilidad de uso en la comunidad es practicamente nula.
+- Es un modelo base, no afinado: la propia model card muestra que la variante SFT produce una agrupacion de texto mas clara y layouts mas organizados, por lo que la version base puede dar resultados menos pulidos en tareas de texto y composicion.
+- Idiomas limitados a ingles y chino; no se documenta soporte para castellano ni otros idiomas, lo que puede degradar el renderizado de texto en otros idiomas.
+- Riesgo de alucinacion visual y de errores en el texto renderizado: como todo modelo generativo de imagenes, puede producir texto ilegible o incorrecto, especialmente con prompts largos o layouts complejos.
+- Sesgos conocidos: no se documentan sesgos especificos en la informacion disponible; como modelo entrenado con datos no descritos, puede heredar sesgos de su dataset.
+- Requiere `trust_remote_code=True` y un pipeline personalizado, lo que implica ejecutar codigo del repositorio; conviene revisar el codigo antes de usarlo en produccion.
+- Dependencias estrictas: Python 3.10 o superior, PyTorch 2.9 o superior, diffusers 0.38 o superior, transformers 5.3 o superior, accelerate 1.10 o superior, safetensors 0.6 o superior y Pillow 10 o superior.
+- Licencia Apache 2.0: permite uso comercial, pero conviene conservar el aviso de licencia y verificar las condiciones del repositorio original.
+- Este repositorio es un espejo mantenido por SD-Next; para la version canonica y actualizaciones debe consultarse el repositorio original de OpenMOSS.
 
 ## Enlaces
 
-- Repositorio Hugging Face (espejo SD-Next): https://huggingface.co/SD-Next/MOSS-Image-Base
+- Repositorio espejo en Hugging Face: https://huggingface.co/SD-Next/MOSS-Image-Base
 - Repositorio original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Variante SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Codigo en GitHub: https://github.com/OpenMOSS/MOSS-Image
-- Demostracion en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
-- Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
-- Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
-- Guia de usuario (ingles): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md
-- Guia de usuario (chino): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
-- Integracion con ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
-- Proyecto SD.Next: https://github.com/vladmandic/sdnext
 - ModelScope (base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
-- Cuenta de OpenMOSS en X: https://x.com/Open_MOSS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Codigo en GitHub: https://github.com/OpenMOSS/MOSS-Image
+- Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
+- Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
+- Guia de usuario: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md
+- Guia de usuario en chino: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
+- Guia de ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
+- SD.Next: https://github.com/vladmandic/sdnext
+- Perfil de OpenMOSS en X: https://x.com/Open_MOSS

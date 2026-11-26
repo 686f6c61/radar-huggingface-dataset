@@ -2,98 +2,106 @@
 
 ## Resumen
 
-Qwen3.5-2B-Focused es una variante editada por pesos del modelo Qwen3.5-2B, publicada por el usuario AmaLS367 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es el resultado de una intervención quirúrgica sobre los pesos de un modelo existente (saidutta69/Qwen3.5-2B-heretic, una ablación de Qwen/Qwen3.5-2B realizada con la herramienta Heretic) para reducir el comportamiento de re-verificación excesiva durante el razonamiento. El problema que aborda es concreto: los modelos pequeños con modo de razonamiento tienden a encontrar la respuesta y luego seguir generando frases como "Wait, let me double check…" hasta agotar el presupuesto de tokens.
+Qwen3.5-2B-Focused es una variante del modelo Qwen3.5-2B obtenida mediante edicion de pesos (weight editing) sin reentrenamiento. El autor, AmaLS367, parte de la abliteration Heretic de Qwen3.5-2B realizada por saidutta69 y aplica una intervencion quirurgica sobre las activaciones internas del modelo para reducir la tendencia a la reverificacion excesiva. El objetivo no es mejorar el conocimiento del modelo, sino hacer que deje de "dudar de si mismo" y entregue antes la respuesta que ya habia encontrado.
 
-La intervención consiste en identificar una dirección en el espacio de activaciones que codifica la intención de re-verificar y eliminarla en un 75% de los pesos que escriben en el residual stream en las capas 13 a 18. El resultado, según el autor, es un modelo que termina más tareas dentro del mismo presupuesto de tokens y con más respuestas correctas, sin cambios en arquitectura, tamaño ni formato de fichero (GGUF Q8_0). El modelo tiene 1.881.825.088 parámetros y un tamaño de repositorio de 2,0 GB.
+El problema que aborda es concreto y medible: los modelos de razonamiento pequenos tienden a entrar en bucles de auto-verificacion ("Wait, let me double check...") que consumen el presupuesto de tokens incluso despues de haber alcanzado la respuesta correcta. En tareas con un limite de 4000 tokens, el modelo original agotaba el presupuesto en 34 de 100 tareas; la variante Focused reduce la mediana de tokens por tarea de 3909 a 2243 y aumenta las tareas finalizadas de 52 a 66.
 
-Es relevante para quienes trabajan con modelos pequeños de razonamiento en entornos con restricciones de cómputo o latencia, porque demuestra que la edición de pesos basada en interpretabilidad puede mejorar la eficiencia de inferencia sin reentrenamiento. Ahora bien, sus beneficios están acotados a un escenario muy específico y el propio autor advierte de que no mejora la capacidad de resolución del modelo.
+El modelo conserva la arquitectura, el tamano (1.881.825.088 parametros) y el formato GGUF Q8_0 del original. Se distribuye bajo licencia Apache 2.0 y esta pensado para inferencia local con llama.cpp. La relevancia actual reside en que demuestra que es posible modificar el comportamiento de razonamiento de un modelo mediante edicion de direcciones en el espacio de activaciones, sin fine-tuning ni datos adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con capas DeltaNet y atención (derivada de Qwen3.5-2B); detalles completos no disponibles |
-| Parametros totales | 1.881.825.088 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 (único publicado en este repositorio) |
-| Idiomas soportados | No disponibles (la model card menciona tareas en inglés y ruso en la evaluación) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer basado en Qwen3.5 (incluye capas DeltaNet con salida SSM; no se detalla la configuracion completa) |
+| Parametros totales | 1.881.825.088 (aprox. 1.88B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q8_0 (unica cuantizacion publicada en el repo) |
+| Idiomas soportados | no disponible (la model card menciona tareas en ingles y ruso en la evaluacion) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (Q8_0); tamano del repo 2.0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Qwen3.5-2B, que según la model card incluye capas DeltaNet (con tensores `ssm_out`) y capas de atención estándar (con `attn_output`), lo que sugiere una arquitectura híbrida entre mecanismos de estado y atención. No hay entrenamiento adicional: el autor lo describe explícitamente como "no fine-tuning, no extra data, no new layers". La edición se aplica sobre el fichero GGUF Q8_0 de saidutta69/Qwen3.5-2B-heretic.
+El modelo hereda la arquitectura de Qwen3.5-2B, un transformer que segun la model card incluye capas DeltaNet con salida `ssm_out`, ademas de capas de atencion convencionales (`attn_output` en la capa 15). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo original; la model card no detalla estos aspectos.
 
-El procedimiento técnico es el siguiente: se registraron las activaciones internas del modelo justo antes de frases de re-verificación (`Wait`, `Hmm`, `Actually`, `Let's check`, `verify`, `re-read`…) y antes de frases ordinarias, sobre 33 trazas de razonamiento. La diferencia entre ambas distribuciones define una dirección en la capa 18 que codifica la "intención de re-verificar". Un probe entrenado con `Let's check` también detecta `Wait` (AUC 0,74 en un sentido y 0,79 en el otro), lo que indica que la dirección captura un concepto compartido y no una palabra concreta. En las capas 13 a 18 se aplicó la proyección `W ← W − 0,75 · d (dᵀ W)` sobre los tensores que escriben en el residual stream: `ffn_down`, `ssm_out` en capas DeltaNet y `attn_output` en la capa 15. Solo cambian 12 tensores, cada uno en torno a un 1,6%. La dirección se construyó con trazas que no comparten tareas con el conjunto de evaluación, y no se usó entrenamiento por gradiente en ningún momento.
+La innovacion tecnica central es un procedimiento de edicion de pesos sin gradientes. El autor registro el estado interno del modelo justo antes de frases de reverificacion (`Wait`, `Hmm`, `Actually`, `Let's check`, `verify`, `re-read`) y antes de frases ordinarias, sobre 33 trazas de razonamiento. La diferencia entre ambas condiciones define una direccion en la capa 18 que representa la "intencion de reverificar". Un probe entrenado con `Let's check` tambien detecta `Wait` (AUC 0.74 en un sentido, 0.79 en el otro), lo que confirma que la direccion captura un concepto compartido y no una palabra concreta. En las capas 13 a 18 se modifican los pesos que escriben en el residual stream (`ffn_down`, la salida de atencion, `ssm_out` en capas DeltaNet y `attn_output` en la capa 15) mediante la formula `W ← W − 0.75 · d (dᵀ W)`. Solo cambian 12 tensores, cada uno aproximadamente un 1.6%, y el resultado se recuantiza a Q8_0. No hay entrenamiento por gradiente en ningun punto del proceso.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento en modo "thinking" (hereda el comportamiento de Qwen3.5-2B).
-- Razonamiento aritmético, aritmética modular, ordenación, problemas de calendario, detección de contradicciones y problemas con información insuficiente (categorías presentes en la evaluación del autor).
-- Reducción del bucle de auto-verificación: el modelo tiende a cerrar el razonamiento y emitir respuesta final antes, dentro del mismo presupuesto de tokens.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el modo de razonamiento con presupuesto de tokens es compatible con flujos multi-paso, pero no hay evaluación al respecto.
-- Capacidades multilingües: la evaluación incluye tareas en inglés y ruso, pero no se documenta el conjunto de idiomas soportados.
-- Capacidades especiales: no se documentan visión, audio ni otras modalidades.
+- Generacion de texto conversacional y razonamiento paso a paso con modo de pensamiento (thinking mode), heredado de Qwen3.5.
+- Razonamiento aritmetico y modular, ordenacion, tareas de calendario, deteccion de contradicciones e informacion insuficiente, y problemas algoritmicos (categorias evaluadas en el conjunto de 100 tareas).
+- Reduccion de la reverificacion redundante: la edicion elimina aproximadamente el 75% de la direccion de "reverificar lo que ya se tiene", lo que acorta las trazas de razonamiento.
+- Generacion en formato estructurado (`ANSWER: ...`), aunque con fallos ocasionales de formato en tareas de contradiccion.
+- Capacidad multilingue limitada: la evaluacion incluye tareas de calendario en ingles y ruso; no se especifica la cobertura completa de idiomas.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Razonamiento con presupuesto de tokens ajustado: en pipelines donde cada consulta tiene un límite estricto de tokens de salida, el modelo reduce la mediana de tokens por tarea de 3909 a 2243, lo que permite procesar más consultas con el mismo cómputo.
-- Evaluación de modelos pequeños en entornos de investigación: sirve como caso de estudio reproducible de edición de pesos basada en interpretabilidad; el repositorio incluye `apply_edit.py` e `intent_direction_L18.npy` para replicar el procedimiento.
-- Prototipado local en hardware modesto: con 1,88 mil millones de parámetros en Q8_0 y 2 GB de fichero, se puede ejecutar en CPU o en GPU de consumo para pruebas de razonamiento sin infraestructura dedicada.
-- Generación de respuestas con formato estricto: el modelo mantiene el formato `ANSWER:` en la mayoría de los casos (56 de 66 tareas finalizadas en formato estricto), útil en pipelines que parsean la salida automáticamente.
-- Filtrado y clasificación con razonamiento ligero: tareas de detección de contradicciones o información insuficiente donde el modelo debe decidir y responder sin extenderse, aprovechando la reducción de re-verificación.
-- Docencia y demostraciones de interpretabilidad: el par dirección de activación / edición de pesos es un ejemplo concreto y reproducible para explicar cómo se manipula el comportamiento de un transformer sin reentrenar.
+- Razonamiento local con presupuesto de tokens ajustado: en entornos con limite estricto de tokens (por ejemplo, 2000-4000), el modelo finaliza mas tareas dentro del presupuesto gracias a la reduccion de la mediana de 3909 a 2243 tokens por tarea. Adecuado para pipelines donde el coste por token importa.
+- Despliegue en hardware de consumo: con 1.88B parametros en Q8_0 (aproximadamente 2 GB), cabe en GPUs consumer y en CPU, lo que permite ejecutar razonamiento local sin infraestructura dedicada.
+- Clasificacion y resolucion de problemas aritmeticos y logicos: tareas de aritmetica, aritmetica modular y ordenacion que el modelo resuelve dentro del presupuesto, utiles en validacion automatizada de pipelines.
+- Deteccion de contradicciones en texto: el modelo aborda tareas de contradiccion e informacion insuficiente, aunque con fallos de formato documentados (`ANSWER: CONTRADICTION: ...` en lugar de `ANSWER: CONTRADICTION`), lo que requiere un parser tolerante.
+- Investigacion en interpretabilidad y edicion de pesos: el modelo sirve como caso reproducible de edicion de direcciones en activaciones (script de reproduccion incluido), util para estudiar control de comportamiento sin reentrenamiento.
+- Generacion conversacional ligera: al conservar la pipeline de text-generation y el formato GGUF, puede integrarse en interfaces conversacionales locales con llama.cpp u Ollama.
+- Evaluacion comparativa de metodos de abliteration y edicion: al partir de una abliteration Heretic, permite estudiar el efecto combinado de ambas tecnicas sobre el comportamiento del modelo.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen de la evaluación del propio autor: 100 tareas generadas (aritmética, aritmética modular, ordenación, calendario, contradicción, información insuficiente y algorítmica), una muestra por tarea, presupuesto de 4000 tokens y muestreo recomendado de Qwen.
+Evaluacion sobre 100 tareas generadas (aritmetica, aritmetica modular, ordenacion, calendario, contradiccion, informacion insuficiente, algoritmicos), una muestra por tarea, presupuesto de 4000 tokens, muestreo recomendado de Qwen:
 
-| Métrica | Antes de la edición | Focused |
+| Metrica | Antes de la edicion | Focused |
 |---|---|---|
-| Tareas que terminan el razonamiento y responden | 52 | 66 (+14 / −0) |
-| Respuestas correctas (parseo permisivo) | 49 | 61 (p = 0,004) |
-| Respuestas correctas (formato estricto `ANSWER:`) | 47 | 56 (+15 / −6, p = 0,078) |
+| Tareas finalizadas con respuesta | 52 | 66 (+14 / −0) |
+| Correctas (parse tolerante) | 49 | 61 (p = 0.004) |
+| Correctas (formato estricto `ANSWER:`) | 47 | 56 (+15 / −6, p = 0.078) |
 | Mediana de tokens por tarea | 3909 | 2243 |
-| Total de tokens | 296k | 250k |
-| Terminadas pero con respuesta mal parseada | 3 | 5 |
+| Tokens totales | 296k | 250k |
+| Finalizadas con respuesta mal parseada | 3 | 5 |
 
-No se han publicado resultados en benchmarks estándar (MMLU, GSM8K, HumanEval, etc.) en la información disponible.
+ARC-Challenge (split de test completo, 1172 preguntas, zero-shot, log-likelihood, modelo cargado en 4-bit nf4, mismo script para ambos modelos):
+
+| Metrica | Base (Heretic) | Focused | Cambio |
+|---|---|---|---|
+| Accuracy (`acc`) | 35.67% (418/1172) | 35.75% (419/1172) | +1 pregunta |
+| Accuracy normalizada (`acc_norm`) | 39.08% (458/1172) | 39.51% (463/1172) | +5 preguntas |
+
+Prueba pareada: los modelos discrepan en solo 17 preguntas para `acc` (8 solo Base, 9 solo Focused, p = 1.00) y 13 para `acc_norm` (4 vs 9, p = 0.27). No se observa cambio medible en conocimiento general. MMLU, GSM8K y otros benchmarks no han sido evaluados segun la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en Q8_0, aproximadamente 2 GB para los pesos más overhead de contexto y KV cache; el tamaño del repositorio es de 2,0 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q8_0 con contexto moderado; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son válidas, aunque el modelo no aprovecha el paralelismo de las GPU de datacenter.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más de VRAM; también en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp (el autor documenta `llama-cli`), y por extensión cualquier runtime compatible con GGUF como Ollama o llama-cpp-python. vLLM y TGI no están documentados para este repositorio.
-- Latencia y throughput: no disponibles. El autor solo reporta la reducción de tokens generados (mediana de 3909 a 2243), que se traduce directamente en menor tiempo de generación, pero no publica cifras de latencia.
+- VRAM estimada: aproximadamente 2 GB para el archivo Q8_0 (tamano del repo 2.0 GB); el modelo se evaluo en 4-bit nf4 para ARC-Challenge, lo que reduce aun mas el requisito.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090); tambien cabe en A100 y H100, aunque es sobredimensionado para este tamano.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas, y tambien en CPU.
+- Opciones de despliegue: llama.cpp (ejemplo oficial con `llama-cli`), y por compatibilidad GGUF, Ollama y otros runners de llama.cpp. No se documenta soporte de vLLM ni TGI para este artefacto.
+- Latencia y throughput: no disponibles. La model card solo reporta la mediana de tokens generados por tarea (2243 frente a 3909), no tiempos de ejecucion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Focused | 1,88 B | No disponible | Apache-2.0 | GGUF en Hugging Face | Edición de pesos para reducir re-verificación |
-| Qwen/Qwen3.5-2B | 1,88 B (aprox.) | No disponible | Apache-2.0 | Pesos originales en Hugging Face | Modelo base sin editar |
-| saidutta69/Qwen3.5-2B-heretic | 1,88 B (aprox.) | No disponible | Apache-2.0 | GGUF Q8_0 en Hugging Face | Ablación con Heretic; base directa de este modelo |
+| Qwen3.5-2B-Focused | 1.88B | no disponible | 66/100 tareas finalizadas; ARC-Challenge acc 35.75% | Apache 2.0 | GGUF Q8_0 en HF |
+| saidutta69/Qwen3.5-2B-heretic (base) | 1.88B | no disponible | 52/100 tareas finalizadas; ARC-Challenge acc 35.67% | Apache 2.0 (heredada) | HF |
+| Qwen/Qwen3.5-2B (original) | 1.88B | no disponible | no disponible en esta informacion | Apache 2.0 | HF |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de 2B en la información proporcionada, por lo que la comparación se limita a linaje, licencia y formato.
+La comparativa se limita a la cadena de derivacion del propio modelo, ya que la informacion proporcionada no incluye datos de otros modelos de 2B comparables. No se dispone de resultados de MMLU, GSM8K ni HumanEval para ninguno de los tres.
 
 ## Limitaciones y advertencias
 
-- La edición no mejora la capacidad de resolución: si el modelo no puede resolver un problema, sigue sin poder. Las tareas de calendario se mantienen en 0 de 15 en ambos casos.
-- Evaluación limitada: una muestra por tarea, un solo modelo base y un solo generador de tareas. El ruido de una sola ejecución es de aproximadamente ±2 tareas por cada 30.
-- La fuerza de la edición importa: al 100% se elimina también la auto-verificación útil y el modelo produce respuestas incorrectas con confianza; el 75% es el compromiso probado.
-- Solo verificado sobre este modelo base concreto; no hay garantía de que el procedimiento transfiera a otros modelos.
-- No evaluado en benchmarks estándar (MMLU, GSM8K, etc.), por lo que no hay comparación con el estado del arte.
-- El modelo base es una ablación realizada con Heretic, lo que puede alterar el comportamiento de rechazo y seguridad del modelo original; conviene auditar las respuestas antes de usarlo en producción.
-- Los metadatos GGUF internos indican `Qwen/Qwen3.5-2B-Base` como modelo base, lo que no coincide con el linaje real declarado por el autor; hay que tenerlo en cuenta al automatizar la trazabilidad.
-- La reconstrucción del fichero no es bit a bit idéntica: 4 bytes de 2 GB difieren por el almacenamiento de la dirección en float32 (diferencia máxima de pesos de 2e-4); el sha256 no coincidirá con el publicado.
-- Licencia Apache-2.0 heredada de Qwen3.5-2B, lo que permite uso comercial, pero sin garantías del autor sobre el comportamiento del modelo editado.
+- Una sola muestra por tarea, un unico modelo base y un unico generador de tareas; el ruido de una sola ejecucion es de aproximadamente ±2 tareas por cada 30.
+- Las tareas de calendario permanecen en 0/15: el modelo no puede calcular el dia de la semana de una fecha arbitraria y la edicion no anade conocimiento.
+- La intensidad de la edicion importa: al 100% se elimina la autoverificacion util y el modelo produce respuestas erroneas con confianza; el 75% es el compromiso probado.
+- Solo se ha verificado sobre este modelo base concreto; no hay garantia de que la direccion de edicion transfiera a otros modelos.
+- En benchmarks estandar solo se ha evaluado ARC-Challenge; MMLU, GSM8K y otros no se han probado.
+- Fallos de formato documentados: el modelo escribe `ANSWER: CONTRADICTION: ...` en lugar de `ANSWER: CONTRADICTION`, lo que rompe parsers estrictos; se recomienda parseo tolerante.
+- Riesgo de alucinacion: inherente al modelo base de 2B; la edicion no lo mitiga y podria agravar respuestas erroneas confiadas si se aplica con mayor intensidad.
+- Sesgos: la abliteration Heretic del modelo base elimina mecanismos de rechazo, lo que puede aumentar la generacion de contenido no filtrado; no se documentan evaluaciones de sesgo.
+- Idiomas: no se especifica la cobertura completa; la evaluacion solo menciona ingles y ruso en tareas de calendario.
+- Licencia Apache 2.0 permite uso comercial, pero la abliteration subyacente puede implicar riesgos de contenido que conviene evaluar antes de produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AmaLS367/Qwen3.5-2B-Focused-GGUF
-- Modelo base directo: https://huggingface.co/saidutta69/Qwen3.5-2B-heretic
-- Modelo original: https://huggingface.co/Qwen/Qwen3.5-2B
-- Heretic (herramienta de ablación): https://github.com/p-e-w/heretic
+- Modelo en Hugging Face: https://huggingface.co/AmaLS367/Qwen3.5-2B-Focused-GGUF
+- Modelo base (Heretic): https://huggingface.co/saidutta69/Qwen3.5-2B-heretic
+- Modelo original Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

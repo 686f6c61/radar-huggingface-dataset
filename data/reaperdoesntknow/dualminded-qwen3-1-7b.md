@@ -2,95 +2,96 @@
 
 ## Resumen
 
-DualMinded-Qwen3-1.7B es un modelo de generación de texto de 1.700 millones de parámetros (2.031.739.904 según los pesos en safetensors) desarrollado por reaperdoesntknow bajo la división de investigación de Convergent Intelligence LLC. Se construye sobre Qwen3-1.7B mediante un pipeline de destilación de conocimiento en cuatro etapas que combina múltiples profesores (Qwen3-30B-A3B en variantes Instruct, Thinking y Coder) y un ajuste supervisado final sobre trazas de razonamiento de Opus 4.6. El resultado es un modelo compacto orientado a despliegue en el borde (edge) que implementa un bucle cognitivo de tres fases.
+DualMinded-Qwen3-1.7B es un modelo de lenguaje de 1.700 millones de parámetros (2.031.739.904 reales según los pesos en safetensors) desarrollado por reaperdoesntknow bajo el sello Convergent Intelligence LLC: Research Division. Se construye sobre Qwen3-1.7B mediante un pipeline de destilación en cuatro etapas a partir de variantes de Qwen3-30B-A3B (Instruct, Thinking y Coder) y un ajuste supervisado final sobre trazas de razonamiento de Opus 4.6. El problema que aborda es el razonamiento estructurado en el extremo ("edge"): obtener capacidades de auto-crítica y derivación extendida en un modelo lo bastante pequeño para ejecutarse en hardware de consumo.
 
-La innovación principal es la estructura "DualMind": el modelo genera primero un bloque `<explore>` de razonamiento libre, después un bloque `<examine>` de autocrítica adversarial y finalmente un bloque `<response>` con la síntesis limpia de la respuesta. Esta separación de roles se consigue con los mismos pesos, sin enrutamiento ni parámetros adicionales, mediante generación condicionada por rol. El modelo está pensado para tareas de razonamiento extendido, derivación creativa y verificación interna, en un tamaño que cabe en hardware de consumo.
+Su rasgo distintivo es el llamado "bucle cognitivo" en tres fases —`<explore>`, `<examine>`, `<response>`— que reproduce mediante generación condicionada por rol sobre pesos compartidos lo que normalmente requeriría una colisión de múltiples modelos. No hay parámetros adicionales ni enrutamiento: la misma red opera en modos cognitivos distintos según las etiquetas de estructura presentes en el prompt.
 
-El modelo se distribuye con licencia Apache 2.0, soporta únicamente inglés y tiene un contexto de entrenamiento de 2.048 tokens. Su relevancia actual radica en explorar si la estructura dialéctica (explorar, examinar, responder) puede recuperar parte de la capacidad de razonamiento de modelos mucho mayores en un presupuesto de parámetros muy reducido.
+La relevancia actual reside en dos frentes: por un lado, demuestra que la destilación multi-profesor con amplificación de pérdida en tokens de razonamiento puede transferir comportamiento de "thinking" a un modelo de 1.7B; por otro, introduce una metodología (Topological Knowledge Distillation, Discrepancy Calculus) documentada en publicaciones con DOI, lo que permite evaluar y reproducir el enfoque más allá del modelo concreto.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3), con bucle cognitivo de tres fases por condicionamiento de rol |
-| Parametros totales | 2.031.739.904 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2.048 tokens (longitud máxima de secuencia en entrenamiento) |
-| Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M (GGUF); BF16 en safetensors |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only (base Qwen3-1.7B) con generación condicionada por rol |
+| Parámetros totales | 2.031.739.904 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (entrenado con max_seq_length de 2048) |
+| Tipos de cuantización | F16, Q8_0, Q5_K_M, Q4_K_M (GGUF) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16), GGUF |
+| Formato de pesos | safetensors; GGUF en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer decoder-only Qwen3 de 1.7B parámetros. Sobre esa base, el autor aplica un pipeline de cuatro etapas. La primera es una destilación multi-profesor: Qwen3-30B-A3B en sus variantes Instruct, Thinking y Coder se destila en Qwen3-1.7B mediante knowledge distillation con ponderación por pruebas (proof-weighted KD) y una amplificación de pérdida de 2,25× sobre los tokens de razonamiento. La segunda etapa, denominada DISC (Discrepancy Calculus), refina el estudiante detectando y preservando fronteras estructurales en la distribución del profesor.
+El modelo parte de Qwen3-1.7B, un transformer decoder-only denso, y hereda su tokenizador y estructura de atención. Sobre esa base se aplica un pipeline de cuatro etapas. La primera es destilación multi-profesor: tres variantes de Qwen3-30B-A3B (Instruct, Thinking y Coder) se destilan en el estudiante de 1.7B mediante knowledge distillation ponderada por pruebas ("proof-weighted KD") con una amplificación de pérdida de 2,25× sobre los tokens de razonamiento. La segunda etapa, denominada DISC Refinement, refina el estudiante mediante Discrepancy Calculus, detectando y preservando fronteras estructurales en la distribución del profesor.
 
-La tercera etapa es la destilación topológica de conocimiento (TKD): destilación en flujo continuo con ventanas guiadas por topología desde Qwen3-30B-A3B-Thinking, usando descomposición de variación acotada de la salida del profesor (componente suave, saltos y deriva), amplificación de posiciones de salto a 3σ, corte de ventanas en fronteras de baja discrepancia y un currículo de cuatro fases de fácil a difícil. La cuarta etapa es un SFT sobre el dataset Opus-4.6-Reasoning-3000x-filtered, donde la columna `thinking` se mapea directamente a `<explore>` y la columna `solution` se divide en `<examine>` y `<response>`. La configuración de entrenamiento reportada usa longitud máxima de 2.048, batch efectivo de 16, learning rate 5e-6 con coseno, 32 pasos de warmup, 1.024 pasos máximos, precisión BF16 y hardware NVIDIA H100.
+La tercera etapa es Topological Knowledge Distillation (TKD), una destilación de flujo continuo desde Qwen3-30B-A3B-Thinking con ventaneo guiado por topología: descomposición en variación acotada de la salida del profesor (componente suave, saltos y deriva), amplificación de las posiciones de salto a 3σ, corte de ventanas en fronteras de baja discrepancia y un currículo de cuatro fases de fácil a difícil. La cuarta etapa es un SFT sobre el dataset nohurry/Opus-4.6-Reasoning-3000x-filtered, donde la columna `thinking` se mapea directamente a `<explore>` y la columna `solution` se divide en `<examine>` y `<response>`. La configuración de entrenamiento reportada incluye longitud máxima de secuencia 2048, batch efectivo de 16 (2 × 8 de acumulación), learning rate 5e-6 con decaimiento coseno, 32 pasos de warmup, 1024 pasos máximos, precisión BF16 y hardware NVIDIA H100.
 
-El autor describe además el fenómeno de "ghost imprinting": la destilación secuencial desde múltiples profesores deja campos residuales en el espacio de pesos que producen capacidades ausentes en cualquiera de los profesores individuales. La fundamentación matemática del pipeline se apoya en el "Discrepancy Calculus" (DISC), un marco de teoría de la medida descrito en un paper del mismo autor.
+Como innovación destacable, el autor describe el fenómeno de "ghost imprinting": la destilación secuencial desde múltiples profesores deja campos residuales en el espacio de pesos que producen capacidades ausentes en cualquiera de los profesores individuales. Se trata de una afirmación del autor sin validación independiente en la información disponible.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en tres fases explícitas: `<explore>` (razonamiento libre, derivación, especulación), `<examine>` (autocrítica adversarial, detección de errores, refinamiento) y `<response>` (síntesis limpia).
-- Razonamiento matemático y demostraciones formales, incluyendo derivaciones paso a paso con verificación interna.
-- Generación de código, heredada de la destilación desde Qwen3-30B-A3B-Coder.
-- Autocrítica y detección de errores dentro del propio proceso de generación.
-- Razonamiento de múltiples pasos mediante el bucle cognitivo interno.
-- Capacidades multilingües limitadas al inglés.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de visión ni audio.
-- No se documenta modo "thinking" separado más allá de la estructura de etiquetas del propio modelo.
+- Generación de texto conversacional y de razonamiento estructurado en tres fases (`<explore>`, `<examine>`, `<response>`).
+- Razonamiento extendido y derivación creativa, heredado del entrenamiento sobre trazas de Opus 4.6.
+- Auto-crítica adversarial: la fase `<examine>` está diseñada para detectar errores y refinar la derivación previa.
+- Razonamiento formal y pruebas estructuradas (la variante DualMind, con datos LogicInference_OA, está orientada a este fin; DualMinded prioriza razonamiento extendido).
+- Generación de código, procedente del profesor Qwen3-30B-A3B-Coder en la etapa de destilación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente; el bucle de tres fases es un mecanismo interno de auto-refinamiento, no un framework de agentes.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales: no se documentan visión ni audio.
 
 ## Casos de uso
 
-- Demostraciones matemáticas y derivaciones formales: el modelo puede recibir un enunciado y generar un bloque `<explore>` con la derivación, un `<examine>` que revisa los pasos y un `<response>` con la prueba final, lo que reduce errores en cadenas largas de razonamiento.
-- Generación de código con revisión interna: al destilar desde Qwen3-30B-A3B-Coder, puede producir una solución en `<explore>`, criticarla en `<examine>` y entregar la versión corregida en `<response>`, útil en pipelines de generación de código con verificación.
-- Asistente de estudio y tutoría: el desglose en tres fases permite mostrar al usuario el razonamiento, la autocrítica y la respuesta final por separado, lo que facilita el aprendizaje y la auditoría del proceso.
-- Despliegue en el borde: con 1.7B parámetros y cuantizaciones GGUF Q4_K_M, cabe en dispositivos con recursos limitados y puede ejecutarse con Ollama o llama.cpp en portátiles y equipos de consumo.
-- Prototipado rápido de agentes de razonamiento: la estructura de etiquetas permite integrar el modelo en flujos donde se necesita separar la fase de exploración de la de respuesta, por ejemplo en sistemas de verificación en dos pasos.
-- Investigación sobre destilación y estructura cognitiva: el modelo sirve como caso de estudio reproducible del pipeline multi-etapa (KD, DISC, TKD, SFT) descrito por el autor, con papers y colecciones asociadas.
-- Generación de contenido creativo y literario: el autor reporta comportamientos emergentes de contenido literario atribuidos al "ghost imprinting" de la destilación secuencial, aprovechables en tareas de escritura creativa.
+- Razonamiento matemático con verificación interna: el modelo puede invocarse forzando la secuencia `<explore>` → `<examine>` → `<response>` para obtener una derivación, una revisión crítica de la misma y una respuesta final limpia; útil en entornos educativos o de asistencia a la demostración donde se quiere trazabilidad del razonamiento.
+- Despliegue en edge y dispositivos con recursos limitados: con cuantización Q4_K_M o Q5_K_M (GGUF) el modelo cabe en GPUs de consumo y en CPUs modernas vía llama.cpp u Ollama (`ollama run reaperdoesntrun/DualMinded-1.7B`), lo que permite asistentes locales sin conexión.
+- Generación de código asistida en local: al haber sido destilado desde Qwen3-30B-A3B-Coder, puede emplearse para autocompletado y explicación de fragmentos en IDE con presupuesto de VRAM reducido (8-12 GB), aunque sin garantías de tool calling.
+- Prototipado de pipelines de razonamiento estructurado: investigadores pueden usar el modelo como banco de pruebas barato para estudiar el efecto del bucle explore/examine/response antes de escalar a modelos mayores.
+- Filtrado y anotación de datos de razonamiento: el modelo puede generar trazas de razonamiento sintéticas (fase `<explore>`) para aumentar datasets de entrenamiento de modelos mayores, con la ventaja de su bajo coste de inferencia.
+- Experimentación en destilación e interpretabilidad: dado que el autor publica la metodología (DISC, TKD) con DOI, el modelo sirve como artefacto reproducible para estudiar ghost imprinting y efectos de destilación secuencial multi-profesor.
+- Chat conversacional de dominio general en inglés: a pesar de su tamaño, el ajuste conversacional y la destilación desde Instruct permiten usarlo como asistente textual ligero en inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, alrededor de 5-6 GB.
-- VRAM estimada en Q8_0: aproximadamente 2,2 GB de pesos.
-- VRAM estimada en Q4_K_M: aproximadamente 1,2-1,4 GB de pesos.
-- GPU recomendadas: NVIDIA H100 (usada en entrenamiento); para inferencia es suficiente con GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090.
-- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 4 GB de VRAM en cuantización Q4_K_M, y en CPU mediante llama.cpp.
-- Opciones de despliegue: Transformers (BF16), llama.cpp y Ollama (variantes GGUF publicadas en `reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF`); el autor documenta `ollama run reaperdoesntrun/DualMinded-1.7B`.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 3,4 GB en BF16/F16 (2.031 M de parámetros × 2 bytes más overhead), ~2,2 GB en Q8_0, ~1,4 GB en Q5_K_M y ~1,2 GB en Q4_K_M.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para F16; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son suficientes con holgura. El entrenamiento reportado se realizó en NVIDIA H100.
+- Cabe en GPU de consumo: sí, en todas las GPU modernas con 6 GB o más, incluidas GTX 1660, RTX 3050, RTX 4060 y superiores; también en Apple Silicon unificada.
+- Opciones de despliegue: transformers (BF16), llama.cpp, Ollama (etiqueta `reaperdoesntrun/DualMinded-1.7B`), y cualquier runtime compatible con GGUF. vLLM y TGI no están documentados explícitamente para este modelo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| DualMinded-Qwen3-1.7B | 2,03B | 2.048 | Apache 2.0 | Hugging Face, GGUF, Ollama | Bucle cognitivo de tres fases, solo inglés |
-| Qwen3-1.7B (base) | 1,7B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base sin el pipeline de destilación ni el SFT de DualMind |
-| DualMind | No disponible | No disponible | Apache 2.0 | Hugging Face | Variante entrenada con LogicInference_OA, orientada a lógica formal y pruebas estructuradas |
+| DualMinded-Qwen3-1.7B | 2.031 M | no disponible (entrenado a 2048) | Apache 2.0 | Destilación multi-profesor + bucle de auto-crítica | HF, GGUF, Ollama |
+| Qwen3-1.7B | 1.700 M aprox. | 32.768 tokens (según familia Qwen3) | Apache 2.0 | Modelo base generalista | HF, GGUF, Ollama |
+| DualMind (mismo autor) | 2.031 M aprox. | no disponible | Apache 2.0 | Variante orientada a lógica formal (LogicInference_OA) | HF |
+| Qwen3-30B-A3B | 30.000 M (3B activos) | 32.768 tokens aprox. | Apache 2.0 | MoE generalista, profesor del pipeline | HF, GGUF |
+
+El modelo se posiciona como una alternativa especializada en razonamiento estructurado frente a Qwen3-1.7B genérico, a costa de un contexto efectivo menor (2048 durante el entrenamiento) y de un soporte limitado al inglés. Frente a DualMind, la diferencia es el dataset de SFT: Opus 4.6 para razonamiento extendido frente a LogicInference para lógica formal.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés; no se documenta soporte multilingüe.
-- La longitud de contexto de entrenamiento es de 2.048 tokens, muy inferior a la de modelos contemporáneos; las conversaciones o documentos largos pueden truncarse.
-- Riesgo de alucinación inherente a un modelo de 1.7B destilado; la fase `<examine>` mitiga pero no elimina los errores.
-- El formato de tres fases requiere que el prompt incluya la etiqueta `<explore>` para activar el bucle; un uso fuera de ese formato puede degradar la calidad.
-- No se documentan resultados de benchmarks, por lo que el rendimiento real frente a modelos comparables no está verificado de forma independiente.
-- Las afirmaciones sobre "ghost imprinting" y "Discrepancy Calculus" provienen del propio autor y no cuentan con validación externa en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantías y el autor no ofrece soporte documentado.
-- El dataset de SFT (Opus-4.6-Reasoning-3000x-filtered) puede introducir sesgos y estilos del profesor; no se documenta un proceso de alineación adicional (RLHF/DPO) más allá del SFT.
+- Sesgos conocidos: no documentados por el autor; al entrenarse sobre trazas de Opus 4.6 y destilar desde Qwen3, puede heredar sesgos de ambos, sin evaluación independiente disponible.
+- Riesgo de alucinación: elevado en un modelo de 1.7B, especialmente en la fase `<examine>`, donde la auto-crítica puede generar objeciones plausibles pero incorrectas. La estructura de tres fases no garantiza corrección.
+- Limitaciones de contexto: el entrenamiento se realizó con longitud máxima de 2048 tokens; no se documenta la ventana efectiva del modelo base ni si se preserva íntegra tras el ajuste. Para conversaciones o documentos largos, el rendimiento puede degradarse.
+- Limitaciones de idioma: solo inglés declarado; el rendimiento en castellano no está evaluado y probablemente sea deficiente.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las obligaciones heredadas del modelo base Qwen3-1.7B y de los datasets de destilación (Opus 4.6 y LongWriter-6k), cuyos términos pueden imponer condiciones adicionales.
+- Caveat de producción: las afirmaciones sobre ghost imprinting y capacidades emergentes son del autor y no cuentan con validación independiente; deben tratarse como hipótesis. El modelo no documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que dependan de function calling.
+- El nombre del autor y la organización (Convergent Intelligence LLC) no cuentan con trayectoria pública verificable en la información disponible; conviene evaluar el modelo empíricamente antes de adoptarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B
 - Versión GGUF: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF
 - Variante DualMind: https://huggingface.co/reaperdoesntknow/DualMind
-- Paper de metodología: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: https://doi.org/10.57967/hf/8184)
-- Paper "Structure Over Scale": https://doi.org/10.57967/hf/8165
+- Metodología DualMind: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Paper de metodología (DOI): https://doi.org/10.57967/hf/8184
+- Paper "Structure Over Scale" (DOI): https://doi.org/10.57967/hf/8165
 - Colección DualMind: https://huggingface.co/collections/reaperdoesntknow/dualmind
 - Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen
 - Dataset de SFT: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered

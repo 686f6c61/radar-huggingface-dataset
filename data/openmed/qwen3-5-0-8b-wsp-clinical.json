@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 232,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",
@@ -62,14 +62,29 @@
   ],
   "sources": [
     {
-      "title": "Qwen3.5 0.8B by Qwen | Model Library | Modal",
-      "url": "https://modal.com/library/qwen/qwen3-5-0-8b",
-      "snippet": "Qwen3.5 0.8B is a 24-layer causal language model with a vision encoder, trained with early text-vision fusion so it handles text and images natively. Its hybrid layout repeats six blocks of three Gated DeltaNet linear-attention layers followed by one gated full-attention layer, for high-throughput, low-latency inference across its native 262,144-token context. The model uses a 1024-dimensional ..."
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed reads clinical text and removes 50 PII entity types on hardware you control. Explore 2,200+ open models, on-device …Read more"
     },
     {
-      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
-      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+      "title": "OpenMed (OpenMed) - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/datasets",
+      "snippet": "Sep 7, 2025 · Training mRNA Language Models Across 25 Species for $165 ... SynthVision: Building a 110K Synthetic Medical VQA …Read more"
+    },
+    {
+      "title": "OpenMed · GitHub",
+      "url": "https://github.com/openmed-labs/",
+      "snippet": "State-of-the-Art, Open-Source Agentic AI for Healthcare & Life Sciences - OpenMed"
+    },
+    {
+      "title": "OpenMed — Open-Source Biomedical NLP Toolkit",
+      "url": "https://www.openmed.icu/",
+      "snippet": "OpenMed is an information extraction and understanding toolkit, not a diagnostic device. OpenMed helps clinicians retrieve evidence …Read more"
+    },
+    {
+      "title": "OpenMed — a governed commons for clinical AI models",
+      "url": "https://openmed-ai.org/",
+      "snippet": "OpenMed is an open-source platform for secure, verifiable sharing of clinical AI models: attested federated co-training, tamper …Read more"
     }
   ]
 }

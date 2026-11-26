@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "rpo41/Llama-2-7b-hf",
+  "slug": "rpo41-llama-2-7b-hf",
+  "author": "rpo41",
+  "url": "https://huggingface.co/rpo41/Llama-2-7b-hf",
+  "created_at": "2026-11-25T20:39:53.000Z",
+  "updated_at": "2026-11-25T20:59:34.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "facebook",
+    "meta",
+    "llama-2",
+    "text-generation",
+    "en",
+    "arxiv:2307.09288",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738417664,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13478629218,
+  "storage_human": "13.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

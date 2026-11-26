@@ -2,79 +2,90 @@
 
 ## Resumen
 
-El modelo `ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning` es un adaptador LoRA (PEFT) desarrollado por ducanhdinh sobre el modelo base `Qwen/Qwen1.5-MoE-A2.7B`, un modelo de Mixture of Experts (MoE) de la familia Qwen1.5. El adaptador se ha ajustado específicamente para tareas de traducción automática (machine translation) utilizando tres conjuntos de datos de alineación: flores, bible y ntrex. El modelo base, upcycled desde Qwen-1.8B, cuenta con 14.3 mil millones de parámetros totales y 2.7 mil millones activos durante la inferencia, lo que permite un rendimiento comparable a Qwen1.5-7B con solo el 25% de los recursos de entrenamiento.
+Qwen1.5-MoE-A2.7B-Finetuning es un adaptador LoRA publicado por el usuario ducanhdinh sobre el modelo base Qwen/Qwen1.5-MoE-A2.7B, un transformer de tipo Mixture-of-Experts desarrollado por Alibaba Cloud. El adaptador se entrena de forma conjunta en tres tareas heterogeneas —inferencia de lenguaje natural (SNLI), question answering extractivo (SQuAD) y eleccion multiple (MMLU)— mezclando los tres conjuntos de datos en un unico entrenamiento multi-tarea. El objetivo es dotar al modelo base de un comportamiento consistente de respuesta corta y formatada para estas tres tareas sin reentrenar los pesos completos.
 
-El adaptador LoRA se aplica a las capas 8 a 15 (de un total de 24), afectando a los módulos de atención, router y expertos dentro de ese rango. Con una configuración de r=16, alpha=32 y dropout=0.05, el adaptador es ligero (0.2 GB) y se distribuye bajo licencia Apache 2.0. La relevancia de este modelo radica en ofrecer una adaptación eficiente y de bajo coste para traducción automática sobre una arquitectura MoE ya optimizada, manteniendo la flexibilidad de un adaptador PEFT que puede integrarse fácilmente en pipelines de inferencia.
+El repositorio contiene unicamente los pesos del adaptador PEFT (safetensors), no el modelo base, aunque el tamano del repo (386,5 GB) sugiere que se han subido tambien otros artefactos o checkpoints. La licencia declarada es Apache 2.0, heredada del modelo base. El pipeline declarado en Hugging Face es question-answering, y las etiquetas incluyen nli, multiple-choice y multi-task.
+
+Es relevante para quienes necesiten un punto de partida rapido para tareas de clasificacion de pares de frases, QA extractivo y respuesta a preguntas de opcion multiple sobre un modelo MoE de activacion ligera (2,7B parametros activos), con la ventaja de que el adaptador es pequeno y se puede cargar sobre el modelo base sin duplicar los pesos completos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con Mixture of Experts (MoE), upcycled desde Qwen-1.8B; adaptador LoRA sobre attention, router y experts en capas 8-15 |
-| Parametros totales | Modelo base: 14.3B; adaptador LoRA: no especificado (tamano del repo 0.2 GB) |
-| Parametros activos | 2.7B (modelo base) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors) |
-| Idiomas soportados | no disponible (el modelo base es multilingue, pero no se detallan los idiomas del adaptador) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), 24 capas, 60 expertos, top-4 |
+| Parametros totales | no disponible (modelo base Qwen1.5-MoE-A2.7B; total no especificado en la informacion) |
+| Parametros activos | 2,7B (segun el nombre del modelo base) |
+| Longitud de contexto | no disponible en la informacion del adaptador; el entrenamiento uso max_length = 512 |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el modelo base admite cuantizacion, pero no se detalla) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (adaptador LoRA PEFT) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Qwen1.5-MoE-A2.7B` es un transformer decoder-only con arquitectura MoE, donde se emplea SwiGLU como activación, RoPE (Rotary Positional Embedding) y multi-head attention. Fue upcycled a partir del modelo denso Qwen-1.8B, alcanzando 14.3B parámetros totales con solo 2.7B activos por token gracias a la selección de expertos (top_k=4 de 60 expertos). Esta arquitectura permite un rendimiento comparable a un modelo denso de 7B con un coste de inferencia reducido.
+El adaptador se aplica sobre Qwen1.5-MoE-A2.7B, un transformer MoE con 24 capas, 60 expertos y enrutamiento top-4. El fine-tuning LoRA se restringe a las capas [8, 16) de las 24 totales (aproximadamente del tercio inicial al segundo tercio de la red). Se anaden adaptadores de bajo rango a los modulos de atencion (r = 16), al router (r = 4) y a los expertos (r = 16), con alpha = 32 y dropout = 0,05, usando `rank_pattern` de PEFT para rangos diferenciados.
 
-El adaptador LoRA se entrenó sobre las capas 8 a 15 (un tercio del modelo), inyectando matrices de bajo rango en los módulos de atención, router y expertos. La configuración es r=16, alpha=32, dropout=0.05. La función de pérdida combina la cross-entropy estándar sobre el siguiente token (L_LM) con una pérdida de balanceo de carga (L_LB) típica de MoE estilo Switch/Mixtral, aunque el coeficiente `lb_loss_coef` no se especifica (posiblemente None, lo que implicaría que no se aplica o se usa un valor por defecto). Los datos de entrenamiento consisten en oraciones individuales extraídas de tres datasets de alineación multilingüe (flores, bible, ntrex), donde cada campo de idioma en un registro se trata como una muestra independiente. Los datos se barajan y se ordenan por longitud de token antes de agruparlos en lotes.
+El entrenamiento combina tres conjuntos de datos mezclados y barajados: SNLI (549.367 muestras tras filtrado), SQuAD (87.599) y MMLU (87.691). Se realizan 3 epocas con learning rate 2e-4, warmup del 3 %, grad clip 1,0 y batch fijo de 8 muestras por GPU, con max_length = 512; los contextos largos de SQuAD se ventanean alrededor de la posicion de la respuesta. La funcion de perdida suma la cross-entropy estandar calculada solo sobre los tokens de la respuesta (`<answer><eos>`) mas un termino de load balancing de MoE (`lb_loss_coef` = 0,01) sobre los routers de las capas fine-tuneadas, normalizado por el total de tokens objetivo del batch global. El formato de prompt se mantiene identico entre entrenamiento y evaluacion zero-shot para cada tarea.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: hereda las capacidades del modelo base Qwen1.5-MoE-A2.7B, que incluyen generación de texto, razonamiento y comprensión del lenguaje.
-- Traducción automática: el adaptador está específicamente ajustado para traducción, utilizando datos de alineación multilingüe de los conjuntos flores, bible y ntrex.
-- Soporte de tool calling y agentes: no se menciona explícitamente, pero el modelo base Qwen1.5 tiene soporte para function calling en su versión chat; no obstante, este adaptador no indica dicha capacidad.
-- Multilingüismo: el modelo base es multilingüe, pero el adaptador no especifica qué idiomas cubre; se asume que los idiomas presentes en los datasets de entrenamiento (flores, bible, ntrex) son los soportados.
-- Eficiencia computacional: al ser un MoE con 2.7B parámetros activos, la inferencia es más rápida y consume menos memoria que un modelo denso de tamaño equivalente.
+- Generacion de texto condicionada a formato de respuesta corta para tres tareas: NLI (entailment, neutral, contradiction), QA extractivo y eleccion multiple A/B/C/D.
+- Clasificacion de pares premisa-hipotesis (SNLI).
+- Question answering extractivo sobre un contexto dado (SQuAD).
+- Resolucion de preguntas de opcion multiple por asignatura (MMLU).
+- Capacidad multilingue: no disponible en la informacion (el modelo base Qwen1.5 tiene soporte multilingue, pero el adaptador no documenta idiomas).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Traducción automática multilingüe: el adaptador puede utilizarse para traducir textos entre los idiomas presentes en los datasets de entrenamiento (flores, bible, ntrex). Su bajo coste de inferencia lo hace adecuado para servicios de traducción en tiempo real o procesamiento por lotes.
-- Fine-tuning adicional sobre dominios específicos: al ser un adaptador LoRA, puede servir como punto de partida para ajustes posteriores en dominios concretos (legal, médico, técnico) sin necesidad de reentrenar todo el modelo base.
-- Evaluación de arquitecturas MoE en tareas de traducción: investigadores pueden usar este adaptador para comparar el rendimiento de Qwen1.5-MoE-A2.7B frente a otros modelos de traducción, aprovechando la eficiencia del MoE.
-- Integración en pipelines de NLP multilingüe: el adaptador puede combinarse con otros componentes (detección de idioma, normalización de texto) para construir sistemas de procesamiento de lenguaje natural multilingües.
-- Prototipado rápido de sistemas de traducción: gracias a su pequeño tamaño (0.2 GB) y compatibilidad con PEFT, se puede cargar en entornos con recursos limitados para pruebas y demostraciones.
-- Aprendizaje de representaciones multilingües: el adaptador puede usarse para extraer representaciones de texto multilingüe, útiles para tareas como búsqueda semántica o clasificación de documentos.
+- Clasificacion de implicacion textual en pipelines de moderacion o deteccion de contradicciones: el adaptador responde con una etiqueta entre entailment, neutral y contradiction siguiendo el formato SNLI, lo que permite integrarlo en un servicio de verificacion de afirmaciones.
+- Extraccion de respuestas en sistemas de busqueda documental: dado un contexto y una pregunta en el formato SQuAD, el modelo devuelve la respuesta extractiva, adecuado para motores de QA sobre corpus fijos.
+- Evaluacion automatica de examenes tipo test: el formato MMLU con opciones A-D permite usar el adaptador como clasificador de respuesta en plataformas de evaluacion educativa.
+- Prototipado rapido de asistentes de soporte con respuestas cortas y formatadas: el adaptador impone una estructura de salida predecible tras `Answer:`, lo que simplifica el parseo en produccion.
+- Investigacion en fine-tuning multi-tarea sobre MoE: sirve como referencia reproducible de como combinar LoRA en atencion, router y expertos con load balancing, util para experimentos academicos.
+- Generacion de datos sinteticos etiquetados: el modelo puede usarse para pre-etiquetar pares NLI o preguntas de opcion multiple que luego se revisan manualmente, reduciendo coste de anotacion.
+- Base para adaptaciones posteriores: al ser un adaptador LoRA sobre un MoE de activacion ligera (2,7B activos), se puede cargar en GPUs de gama alta consumer y seguir ajustando con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del adaptador no incluye métricas de evaluación (BLEU, chrF, etc.) ni comparaciones con otros modelos. El modelo base Qwen1.5-MoE-A2.7B reporta un rendimiento comparable a Qwen1.5-7B, pero sin cifras concretas en esta ficha. Se recomienda consultar la documentación oficial de Qwen para datos de evaluación del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye diagnosticos de entrenamiento (curvas de loss y precision de token con teacher forcing sobre batches de entrenamiento), que no constituyen evaluaciones estandar sobre conjuntos de test.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo base tiene 14.3B parámetros, pero solo 2.7B activos. En FP16, la memoria necesaria para los pesos del modelo base es aproximadamente 28.6 GB (14.3B * 2 bytes). Sin embargo, al ser MoE, la memoria de activación es menor. Con cuantización (por ejemplo, 8 bits o 4 bits), podría reducirse a ~14 GB o ~7 GB respectivamente. El adaptador LoRA añade una cantidad insignificante de memoria.
-- GPU recomendadas: para FP16 se necesitaría una GPU con al menos 32 GB (A100, RTX A6000). Con cuantización 8 bits, una RTX 3090/4090 (24 GB) sería suficiente. Para 4 bits, GPUs con 12-16 GB (RTX 3080, RTX 4070) podrían ser viables.
-- Compatibilidad con consumer GPU: sí, siempre que se use cuantización (GGUF o bitsandbytes). Sin cuantización, es difícil en GPUs de consumo.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y cualquier framework compatible con PEFT (transformers + peft). El adaptador se carga sobre el modelo base.
-- Latencia y throughput: no disponibles. Se espera que sea inferior a un modelo denso de 7B gracias al MoE, pero depende del hardware y la configuración.
+- VRAM estimada para inferencia: no disponible de forma exacta; el modelo base tiene 2,7B parametros activos, pero el total de parametros MoE no se especifica en la informacion, por lo que la VRAM depende del checkpoint completo cargado.
+- GPU recomendadas: no disponible en la informacion. Por el tamano del repo (386,5 GB) y la naturaleza MoE, se requiere almacenamiento amplio y probablemente GPUs de centro de datos (A100/H100) para cargar el modelo base completo en precision nativa.
+- Compatibilidad con GPU consumer: no confirmada; depende de la cuantizacion del modelo base, que no se documenta en el adaptador.
+- Opciones de despliegue: el adaptador es PEFT, por lo que se carga con la libreria `peft` sobre el modelo base; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| Qwen1.5-MoE-A2.7B (base) | 14.3B | 2.7B | no disponible | Apache 2.0 | Modelo base sin fine-tuning, multilingüe |
-| Qwen1.5-7B (denso) | 7B | 7B | no disponible | Apache 2.0 | Modelo denso comparable en rendimiento, mayor coste de inferencia |
-| ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning | 14.3B + LoRA | 2.7B + LoRA | no disponible | Apache 2.0 | Adaptador LoRA para traducción, sobre el modelo base |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen1.5-MoE-A2.7B-Finetuning (este) | 2,7B activos (total no disponible) | no disponible (entrenado a 512) | Apache 2.0 | Hugging Face, adaptador LoRA |
+| Qwen/Qwen1.5-MoE-A2.7B (base) | 2,7B activos (total no disponible) | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de comparaciones con otros adaptadores de traducción (p. ej., NLLB-200, M2M100) porque no hay datos de rendimiento en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos del dataset: los datos de entrenamiento provienen de flores, bible y ntrex, que son corpora de traducción con dominios específicos (textos religiosos, frases extraídas de Wikipedia, etc.). Esto puede introducir sesgos hacia esos dominios y afectar la generalización a otros tipos de texto.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar traducciones incorrectas o inventar contenido cuando el contexto es ambiguo o fuera del dominio de entrenamiento.
-- Limitaciones de idioma: no se especifican los idiomas cubiertos por el adaptador. Se recomienda verificar la cobertura real antes de usarlo en producción.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero es necesario cumplir con las atribuciones correspondientes.
-- Dependencia del modelo base: el adaptador requiere cargar el modelo base completo (14.3B parámetros), lo que implica requisitos de hardware considerables si no se usa cuantización.
-- Falta de evaluación: no hay benchmarks publicados, por lo que el rendimiento real en tareas de traducción es incierto. Se recomienda realizar una evaluación propia antes de desplegarlo.
+- El adaptador esta entrenado exclusivamente para tres formatos de prompt concretos; fuera de ellos el comportamiento no esta garantizado.
+- La perdida se calcula solo sobre la respuesta, por lo que el modelo puede ignorar instrucciones fuera del esquema entrenado.
+- Sesgos conocidos: no documentados en la informacion; al heredar el modelo base, puede reproducir sesgos de sus datos de entrenamiento.
+- Riesgo de alucinacion: presente en tareas generativas, especialmente en QA extractivo cuando la respuesta no esta en el contexto.
+- Limitaciones de contexto: el entrenamiento usa max_length = 512, por lo que contextos mas largos pueden degradar el rendimiento aunque el modelo base soporte ventanas mayores.
+- Idiomas: no documentados; el adaptador se entrena con datasets predominantemente en ingles (SNLI, SQuAD, MMLU), por lo que el rendimiento en castellano no esta validado.
+- Licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base y de los datasets empleados.
+- El repositorio incluye 386,5 GB, lo que puede implicar artefactos adicionales no descritos; conviene revisar el contenido antes de descargarlo.
+- No hay evaluacion estandar publicada; las metricas de la model card son de entrenamiento y no sirven para estimar rendimiento en produccion.
 
 ## Enlaces
 
-- [Hugging Face - ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning](https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning)
-- [Hugging Face - Qwen/Qwen1.5-MoE-A2.7B](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B)
-- [GitHub - hiyouga/Qwen1.5](https://github.com/hiyouga/Qwen1.5)
+- Hugging Face: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning
+- Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
+- Dataset SNLI: https://huggingface.co/datasets/stanfordnlp/snli
+- Dataset SQuAD: https://huggingface.co/datasets/rajpurkar/squad
+- Dataset MMLU: https://huggingface.co/datasets/cais/mmlu

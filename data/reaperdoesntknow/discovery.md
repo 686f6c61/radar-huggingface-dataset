@@ -2,57 +2,57 @@
 
 ## Resumen
 
-DiscoverLM-70M-Base es un modelo de lenguaje causal de 70 millones de parámetros desarrollado por el usuario de Hugging Face `reaperdoesntknow`. Su particularidad no reside en el tamaño, sino en la arquitectura: implementa lo que el autor denomina Mixture-of-Attentions (MoA), un mecanismo de atención basado en distancias métricas (distancia de Mahalanobis diagonal aprendida) en lugar del producto escalar Q·Kᵀ habitual, con un regularizador que impone la desigualdad triangular sobre tripletas muestreadas durante el entrenamiento. El modelo se distribuye con pesos en safetensors y requiere código personalizado (`MoA`) para su carga, ya que no es compatible con la implementación estándar de transformers.
+DiscoverLM-70M-Base es un modelo de lenguaje causal de 70 millones de parámetros desarrollado por el usuario independiente reaperdoesntknow (bajo la etiqueta ConvergentIntel). Su rasgo diferencial es la arquitectura Mixture-of-Attentions (MoA), que sustituye el producto escalar Q·Kᵀ habitual en los transformers por una distancia de Mahalanobis negativa al cuadrado, con un regularizador que impone la desigualdad triangular sobre tripletas aleatorias durante el entrenamiento. El objetivo declarado es que los pesos de atención reflejen proximidad geométrica real en un espacio métrico, algo que el autor presenta como estructura aprovechable y no como una restricción impuesta.
 
-El modelo ha sido entrenado mediante SFT (supervised fine-tuning) con TRL sobre tres conjuntos de datos: `nohurry/Opus-4.6-Reasoning-3000x-filtered` (razonamiento multi-paso), `openbmb/UltraData-Math` (matemáticas) y `yahma/alpaca-cleaned` (instrucciones generales). Incorpora un tokenizador propio de 48.000 tokens con tokens especiales para chat y modo de razonamiento (`<|think|>`, `<|reasoning|>`). El repositorio ocupa 0,3 GB y acumula 1.571 descargas en el momento de la consulta.
+El modelo se distribuye en formato safetensors a través de la librería transformers, con un tokenizador propio de 48.000 entradas y una longitud de contexto que no se especifica en la información disponible. El repositorio ocupa 0,3 GB y acumula 1.369 descargas desde su publicación en marzo de 2026, con la última actualización en noviembre de 2026. La licencia es CC (sin variante concreta indicada) y el único idioma declarado es el inglés.
 
-Su relevancia es fundamentalmente experimental: propone una alternativa geométricamente motivada a la atención estándar (BlackHoleRoPE, enrutado top-2 de cuatro rutas de atención, HyperFFN de tres ramas y una cabeza LM con su propia mezcla de atenciones). No obstante, su escala de 70M parámetros y la ausencia de benchmarks publicados lo sitúan como una prueba de concepto más que como un modelo listo para producción.
+Por su escala, se trata de un modelo de investigación y experimentación más que de un candidato para producción general. Resulta relevante para quienes estudian variantes de atención geométrica, enrutamiento disperso por token y arquitecturas híbridas de bajo coste computacional, así como para experimentos de ajuste fino sobre hardware de consumo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con Mixture-of-Attentions (MoA): atención métrica por distancia de Mahalanobis diagonal, 4 rutas enrutadas top-2, BlackHoleRoPE, HyperFFN de 3 ramas, MoA LM head |
-| Parametros totales | 70.569.408 (según safetensors); el autor reporta 69,1M en su desglose |
-| Parametros activos | No aplica (no es MoE denso clásico; el enrutado top-2 es por token dentro de cada bloque, no un MoE de expertos FFN) |
+| Arquitectura | Transformer causal con Mixture-of-Attentions (MoA), atención métrica de Mahalanobis, BlackHoleRoPE, HyperFFN y MoA LM head |
+| Parámetros totales | 70.569.408 (69,1M según el desglose del autor) |
+| Parámetros activos | No es MoE; el enrutamiento top-2 es por token dentro de cada bloque, no de expertos |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | `cc` (Creative Commons, variante no especificada en la información disponible) |
-| Formato de pesos | safetensors |
+| Tipos de cuantización | No disponible (pesos publicados en safetensors; no se documentan variantes GGUF ni cuantizaciones oficiales) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | CC (variante concreta no especificada) |
+| Formato de pesos | Safetensors (librería transformers) |
 
-Desglose de parámetros reportado por el autor: embedding de tokens compartido 24,6M (35,5%), 4 bloques MoA 28,9M (41,8%), HyperFFN compartido 4,2M (6,1%), MoA LM head 10,8M (15,6%), RoPE y normalizaciones 0,6M (0,9%).
+Desglose de parámetros según el autor: embedding de tokens compartido 24,6M (35,5%), 4 bloques MoA 28,9M (41,8%), HyperFFN compartido 4,2M (6,1%), MoA LM head 10,8M (15,6%) y RoPE más normalizaciones 0,6M (0,9%).
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sustituye la puntuación de atención por producto escalar por una distancia métrica: cada una de las 64 cabezas opera en un espacio de 8 dimensiones con su propia escala diagonal (métrica de Mahalanobis), un origen de bola aprendible y un radio adaptativo que enmascara pares fuera de la bola antes del softmax. Durante el entrenamiento se aplica un regularizador sobre tripletas aleatorias para forzar la desigualdad triangular (d(a,c) ≤ d(a,b) + d(b,c)). Cada bloque MoA combina cuatro rutas paralelas —convolución local depthwise, atención métrica multi-cabeza completa, mezcla de canales con gating y atención métrica multi-query— seleccionando las dos mejores por token mediante un router aprendido, con feature gates y conexión residual con DropPath.
+La arquitectura se organiza en cuatro bloques MoA idénticos. Cada bloque contiene cuatro rutas paralelas: convolución local depthwise, atención métrica global con 64 cabezas (espacio de cabeza de 8 dimensiones, escalado diagonal aprendido, origen de bola aprendible y radio adaptativo para poda dispersa), mezcla de canales con compuertas y atención métrica multi-query con 64 consultas. Un router aprendido selecciona las dos rutas principales por posición de token y unas compuertas de características escalan la salida de cada ruta antes de la mezcla, seguida de residual y DropPath. La atención se calcula como distancia de Mahalanobis negativa al cuadrado, con enmascaramiento de pares fuera de la bola antes del softmax, y la desigualdad triangular se refuerza mediante un regularizador sobre tripletas aleatorias muestreadas en entrenamiento.
 
-El componente posicional, BlackHoleRoPE, aplica perturbaciones de fase aprendidas sobre una base de Fourier compacta manteniendo rotaciones Q/K unitarias y una compuerta de energía acotada en [0,5, 2,0] sobre las amplitudes de V. La FFN (HyperFFN) tiene tres ramas (SwiGLU, convolución causal depthwise separable y cuello de botella low-rank con gating) también enrutadas top-2. La cabeza LM ejecuta su propia mezcla de atenciones (32 cabezas, head_dim=16) antes de proyectar a los 48.000 logits con pesos compartidos con el embedding de entrada.
+BlackHoleRoPE aplica perturbaciones de fase aprendidas desde una base de Fourier compacta, manteniendo las rotaciones de Q y K unitarias y aplicando una compuerta de energía acotada en [0,5, 2,0] sobre las amplitudes de V, con modulación opcional por estado de discrepancia. La HyperFFN es de tres ramas (SwiGLU, convolución causal depthwise separable y cuello de botella de bajo rango con compuertas), también con selección dispersa top-2 por token. La cabeza de lenguaje ejecuta su propia mezcla de atenciones (32 cabezas, head_dim=16) antes de proyectar a logits mediante una transformación SwiGLU, con pesos atados al embedding de entrada. El vocabulario es de 48.000 tokens con tokenizador propio y tokens especiales para system, user, assistant, think, reasoning, bos, eos y pad.
 
-El entrenamiento se realizó mediante SFT con TRL sobre los tres datasets citados. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo etapas de RLHF o DPO adicionales.
+El entrenamiento se realizó con TRL mediante SFT sobre tres conjuntos de datos: nohurry/Opus-4.6-Reasoning-3000x-filtered (razonamiento multi-paso), openbmb/UltraData-Math (resolución de problemas matemáticos) y yahma/alpaca-cleaned (seguimiento de instrucciones general). No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto causal en inglés con tokenizador propio de 48.000 tokens.
-- Razonamiento multi-paso, entrenado explícitamente sobre el dataset `Opus-4.6-Reasoning-3000x-filtered`.
-- Resolución de problemas matemáticos, con entrenamiento sobre `UltraData-Math`.
-- Seguimiento de instrucciones generales, vía `alpaca-cleaned`.
-- Formato de chat estructurado con tokens especiales `<|system|>`, `<|user|>`, `<|assistant|>`.
-- Modo de razonamiento interno con tokens `<|think|>` y `<|reasoning|>`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning orquestado: no disponible; el modelo tiene marcadores de razonamiento pero no se documenta integración con herramientas.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Capacidades multilingües: limitadas al inglés según la model card.
+- Generación de texto causal en inglés con tokenizador propio y formato de chat mediante tokens especiales.
+- Razonamiento multi-paso, orientado por el dataset de razonamiento filtrado usado en el ajuste supervisado.
+- Resolución de problemas matemáticos, con entrenamiento específico sobre UltraData-Math.
+- Seguimiento de instrucciones generales gracias a alpaca-cleaned.
+- Generación estructurada con marcadores de sistema, usuario, asistente, pensamiento y cadena de razonamiento.
+- Enrutamiento disperso por token (top-2) en atención y FFN, con poda por bola en la atención métrica.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explícito de agentes o multi-step reasoning orquestado más allá de los tokens de razonamiento.
+- Capacidad multilingüe limitada al inglés según la model card.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Investigación en arquitecturas de atención alternativa: el modelo sirve como banco de pruebas reproducible para estudiar si la atención métrica con desigualdad triangular mejora la generalización frente a la atención por producto escalar en tareas controladas.
-- Experimentos académicos sobre sesgo geométrico: permite comparar el comportamiento de un transformer estándar de 70M con uno MoA del mismo presupuesto de parámetros, aislando el efecto de la métrica en la atención.
-- Generación de texto en inglés para prototipos de bajo coste: con 70M parámetros y pesos safetensors de 0,3 GB, puede ejecutarse en CPU o en GPUs de gama baja para demos de generación condicionada por prompt.
-- Fine-tuning educativo con TRL: el pipeline de SFT documentado (TRL + datasets públicos) facilita reproducir el entrenamiento en entornos docentes o de aprendizaje.
-- Estudio de tokenizadores personalizados: su vocabulario de 48.000 tokens con tokens de control de razonamiento permite analizar el impacto del diseño del tokenizador en modelos pequeños.
-- Evaluación de robustez de RoPE: BlackHoleRoPE (fase aprendida + gating de energía en V) es un objeto de estudio para quienes investigan codificaciones posicionales alternativas.
-- Generación de razonamiento corto en inglés para tareas de matemáticas elementales: el entrenamiento sobre UltraData-Math lo hace adecuado para experimentos de chain-of-thought en dominios acotados, siempre con expectativas limitadas por su escala.
+- Investigación en mecanismos de atención: el modelo permite estudiar empíricamente si la atención métrica con desigualdad triangular regularizada mejora la interpretabilidad geométrica frente al producto escalar, comparando mapas de atención y distancias aprendidas.
+- Experimentos de ajuste fino en hardware de consumo: con 70M de parámetros y pesos safetensors de 0,3 GB, cabe holgadamente en una GPU de 8-12 GB y permite ciclos rápidos de SFT con TRL sobre datasets pequeños.
+- Generación de texto y prototipado de chatbots en inglés: el tokenizador incluye tokens de sistema, usuario y asistente, de modo que puede montarse un chat multi-turno básico sin ingeniería adicional de plantillas.
+- Razonamiento matemático de juguete y demostraciones educativas: el entrenamiento sobre UltraData-Math lo hace adecuado para generar cadenas de solución simples en entornos docentes o de validación de pipelines, no para producción matemática crítica.
+- Evaluación de arquitecturas híbridas atención-convolución: las cuatro rutas por bloque (convolución local, atención global, mezcla de canales y MQA) permiten aislar la contribución de cada tipo de cómputo en tareas controladas.
+- Base para destilación o investigación de enrutamiento disperso: el router top-2 por token y la poda por bola ofrecen un banco de pruebas para estudiar sparsity y balance de rutas en modelos pequeños antes de escalar el diseño.
+- Generación de texto con formato estructurado: los tokens think y reasoning permiten separar cadena de pensamiento de respuesta final en experimentos de prompting.
 
 ## Benchmarks y rendimiento
 
@@ -60,39 +60,42 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 70,6M parámetros, los pesos en fp32 ocupan aproximadamente 282 MB; en fp16, unos 141 MB; en int8, unos 71 MB. El repositorio completo ocupa 0,3 GB.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden alojar el modelo con holgura. Para entrenamiento o fine-tuning, una RTX 4090 o A100 no son necesarias pero aceleran el proceso.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: requiere código personalizado (`MoA.py` con `MoAMetricLM` y `MoAMetricConfig`) cargado vía `transformers`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y al no ser una arquitectura estándar es improbable que estos motores lo soporten sin adaptación.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,28 GB solo para pesos (70,6M × 4 bytes), más activaciones y caché KV; en la práctica por debajo de 1-2 GB según longitud de secuencia.
+- En fp16/bf16: aproximadamente 0,14 GB de pesos, holgadamente dentro de cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) e incluso CPU para inferencia por lotes pequeños; A100 o H100 no son necesarias.
+- Cabe en GPU consumer sin problema, incluidas integradas con memoria compartida suficiente para secuencias cortas.
+- Opciones de despliegue: transformers con el código propio del paquete MoA (import MoA), que es requisito para cargar el modelo; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al no haber pesos GGUF publicados no es desplegable directamente en llama.cpp u Ollama sin conversión.
+- Latencia y throughput: no disponibles; por el tamaño, se espera un throughput alto en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiscoverLM-70M-Base | 70,6M | No disponible | MoA (atención métrica) | `cc` | Hugging Face, requiere código custom |
+| DiscoverLM-70M-Base | 70,6M | No disponible | MoA con atención métrica | CC | Hugging Face, requiere código MoA |
 | GPT-2 small | 124M | 1.024 tokens | Transformer estándar | MIT | Hugging Face, transformers nativo |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Transformer (Llama) | Apache 2.0 | Hugging Face, amplio ecosistema |
-| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Transformer (Qwen2) | Apache 2.0 | Hugging Face, vLLM/llama.cpp |
+| Pythia-70M | 70M | 2.048 tokens | Transformer estándar | Apache 2.0 | Hugging Face, transformers nativo |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Transformer estándar (Llama) | Apache 2.0 | Hugging Face, ecosistema amplio |
 
-La comparación es aproximada: DiscoverLM-70M es un experimento arquitectónico, mientras que los alternativos son modelos de producción con benchmarks publicados y soporte de motores de inferencia. No se dispone de datos de rendimiento comparables para DiscoverLM-70M.
+La comparación con Pythia-70M es la más directa por escala. Frente a ella, DiscoverLM introduce atención métrica y enrutamiento disperso, pero carece de benchmarks publicados, de contexto declarado y de integración con el ecosistema estándar de inferencia. GPT-2 small y TinyLlama ofrecen mayor madurez de herramientas y licencias permisivas más explícitas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, por lo que no debe asumirse un rendimiento equiparable a transformers estándar del mismo tamaño.
-- Escala muy reducida (70M parámetros): capacidad limitada para razonamiento complejo, conocimiento factual y coherencia en generaciones largas, independientemente de la arquitectura.
-- Solo inglés: no se documenta soporte multilingüe; el uso en castellano probablemente produzca resultados pobres.
-- Licencia `cc` sin variante especificada: la información disponible no aclara si permite uso comercial; debe verificarse antes de cualquier despliegue productivo.
-- Código de carga no estándar: requiere el módulo `MoA` del autor, lo que dificulta la integración con pipelines existentes y aumenta el riesgo de incompatibilidades futuras.
-- Riesgo de alucinación elevado por el tamaño y por el entrenamiento sobre datasets de razonamiento filtrados, sin etapa de alineación documentada (RLHF/DPO no mencionados).
-- Longitud de contexto no documentada: no puede planificarse su uso en tareas de contexto largo.
-- Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento sobre alpaca-cleaned y datasets sintéticos de razonamiento puede introducir sesgos de estilo y dominio.
-- Proyecto de autor individual con 0 likes y un único mantenedor: riesgo de falta de mantenimiento y de soporte a largo plazo.
+- No hay resultados de benchmarks publicados, por lo que el rendimiento real en tareas estándar es desconocido.
+- La longitud de contexto no está documentada, lo que impide planificar usos con ventanas largas.
+- El modelo requiere importar el paquete MoA y sus clases MoAMetricLM y MoAMetricConfig; no es cargable con AutoModel estándar, lo que complica su integración en pipelines existentes.
+- Solo soporta inglés según la model card; el rendimiento en otros idiomas no está evaluado.
+- La licencia CC no especifica la variante (BY, BY-SA, BY-NC, etc.), lo que genera incertidumbre sobre el uso comercial; conviene verificar los términos antes de cualquier despliegue productivo.
+- Riesgo de alucinación elevado por el tamaño (70M) y por el ajuste sobre datasets de razonamiento filtrado de origen no verificado.
+- Sesgos no documentados: no se publica información sobre composición demográfica, filtrado de toxicidad ni evaluaciones de sesgo.
+- El entrenamiento se limita a SFT; no consta RLHF ni DPO, por lo que la alineación con preferencias humanas es limitada.
+- El autor no publica detalles de tokens de entrenamiento ni de la fase de preentrenamiento, lo que dificulta reproducir o auditar el modelo.
+- La model card mezcla identificadores (DiscoverLM-70M-Base, DiscoverLM-70M, reaperdoesntknow/Discovery), lo que puede provocar errores al cargar el tokenizador o los pesos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Discovery
 - Dataset de razonamiento: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
-- Dataset de matemáticas: https://huggingface.co/datasets/openbmb/UltraData-Math
+- Dataset matemático: https://huggingface.co/datasets/openbmb/UltraData-Math
 - Dataset de instrucciones: https://huggingface.co/datasets/yahma/alpaca-cleaned
-- Paper, blog o repositorio adicional: no disponible en la información proporcionada.
+- Repositorio o paper del modelo: no disponible
+- Demo o espacio interactivo: no disponible

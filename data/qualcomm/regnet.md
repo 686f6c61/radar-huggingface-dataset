@@ -2,100 +2,115 @@
 
 ## Resumen
 
-RegNet es una familia de redes neuronales convolucionales (CNN) para clasificación de imágenes, propuesta originalmente en el artículo "Designing Network Design Spaces" (Radosavovic et al., 2020, arXiv:2003.13678). El modelo presentado aquí es una implementación de RegNet basada en la versión de TorchVision, adaptada y optimizada por Qualcomm para su ejecución eficiente en dispositivos con procesadores Snapdragon y otras plataformas de Qualcomm. Se puede utilizar tanto como clasificador de imágenes (entrenado en ImageNet) como backbone para construir modelos más complejos en tareas de visión por computador.
+RegNet es una red neuronal convolucional (CNN) para clasificación de imágenes, publicada originalmente por Facebook AI Research (el paper arXiv:2003.13678 corresponde a "Designing Network Design Spaces") y empaquetada aquí por Qualcomm para su despliegue optimizado en dispositivos con aceleración NPU. El repositorio `qualcomm/RegNet` no contiene un modelo nuevo, sino los pesos de RegNet exportados a formatos ONNX, QNN_DLC y TFLITE, compilados con Qualcomm AI Hub Workbench para ejecutarse sobre los SoC Snapdragon y Dragonwing de la compañía. La arquitectura es una CNN con bloques residuales cuyo diseño de espacio de búsqueda se parametriza de forma cuantizada y lineal, y el checkpoint incluido está entrenado sobre ImageNet.
 
-El repositorio de Hugging Face contiene los pesos pre-exportados en varios formatos (ONNX, QNN_DLC, TFLITE) y en dos precisiones (float y w8a8), listos para desplegar en dispositivos móviles o embebidos. El modelo tiene 15,3 millones de parámetros y un tamaño de 58,3 MB en float (15,4 MB en w8a8), lo que lo hace adecuado para entornos con recursos limitados. Su relevancia actual radica en la creciente demanda de modelos de visión eficientes para inferencia en el borde (edge AI), donde Qualcomm ofrece una cadena de herramientas completa para compilar, perfilar y ejecutar el modelo en sus NPU.
+El modelo tiene 15,3 millones de parámetros, acepta entradas de 224x224 píxeles y ocupa 58,3 MB en precisión float (15,4 MB en cuantización w8a8). Su relevancia actual no reside en el rendimiento bruto de clasificación, sino en la disponibilidad de artefactos precompilados y perfilados para decenas de chipsets Qualcomm, con latencias de inferencia del orden de 0,7 a 3,2 ms en NPU. Esto lo convierte en una pieza útil como backbone ligero o como clasificador de baja latencia en pipelines de visión embebida, donde el coste energético y la integración con el SDK QAIRT son determinantes.
+
+La licencia BSD-3-Clause permite uso comercial sin restricciones significativas, y el modelo se distribuye a través de Hugging Face con la librería PyTorch como referencia, aunque los artefactos listos para producción son los exportados a los runtimes de Qualcomm.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | CNN (RegNet, basada en diseño de espacios de red) |
-| Parametros totales | 15,3 M |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión) |
-| Tipos de cuantizacion | float (FP32) y w8a8 (pesos y activaciones en 8 bits) |
-| Idiomas soportados | no disponible (no es modelo de lenguaje) |
+| Arquitectura | CNN con bloques residuales (familia RegNet, diseño de espacio parametrizado) |
+| Parámetros totales | 15,3 M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, entrada 224x224 px) |
+| Tipos de cuantización | float (FP32) y w8a8 (pesos y activaciones de 8 bits) |
+| Idiomas soportados | no aplica (clasificación de imágenes, sin capacidades lingüísticas) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE (pre-exportados); también disponible en PyTorch (repo original) |
+| Formato de pesos | ONNX, QNN_DLC, TFLITE (float); PyTorch como referencia |
+| Tamaño del modelo | 58,3 MB (float), 15,4 MB (w8a8) |
+| Resolución de entrada | 224x224 |
+| Checkpoint | ImageNet |
+| Librería | PyTorch |
+| Tamaño del repositorio | 6,3 GB |
 
 ## Arquitectura y entrenamiento
 
-RegNet pertenece a la familia de redes convolucionales diseñadas mediante un espacio de diseño parametrizado. El artículo original propone un método sistemático para explorar configuraciones de red (ancho, profundidad, grupos, etc.) y obtener arquitecturas eficientes en términos de FLOPs y precisión. La implementación concreta de este repositorio sigue la versión de TorchVision, que incluye variantes como RegNetX y RegNetY (con atención por canales). El checkpoint incluido está entrenado en el dataset ImageNet para clasificación de 1000 clases.
+RegNet pertenece a la familia de redes convolucionales con conexiones residuales descrita en "Designing Network Design Spaces" (Radosavovic et al., 2020). En lugar de buscar arquitecturas individuales, el trabajo define un espacio de diseño parametrizado por la anchura, la profundidad y los factores de grupo de cada etapa, y deriva reglas cuantizadas lineales que generan familias completas de modelos. La implementación de referencia es la de `torchvision.models.regnet`, sobre la que Qualcomm ha construido los artefactos exportados.
 
-No se proporcionan detalles adicionales sobre el proceso de entrenamiento (número de épocas, aumentación de datos, etc.) en la información disponible. La adaptación de Qualcomm se centra en la exportación y optimización del modelo para ejecutarse en NPU, mediante herramientas como Qualcomm AI Hub Workbench, que compila el grafo a formatos como QNN_DLC o TFLITE con cuantización w8a8.
+El checkpoint incluido está entrenado sobre ImageNet para clasificación de 1000 clases. La model card no detalla el número de tokens de entrenamiento (no aplica), la composición exacta del dataset más allá de ImageNet, ni si se aplicaron técnicas de aumento de datos o regularización específicas. Tampoco se documentan innovaciones de inferencia como decodificación especulativa, al no tratarse de un modelo generativo. La contribución técnica del paquete es la exportación y compilación para NPU Qualcomm mediante QAIRT 2.51 y ONNX Runtime 1.30.0, con perfiles medidos por chipset.
 
 ## Capacidades
 
-- Clasificación de imágenes en 1000 categorías de ImageNet (entrada de 224x224 píxeles).
-- Uso como backbone para tareas de visión por computador: detección de objetos, segmentación semántica, estimación de pose, etc.
-- Extracción de características (embeddings) para búsqueda visual o sistemas de recomendación.
-- Inferencia en tiempo real en dispositivos móviles y embebidos gracias a la optimización para NPU de Qualcomm.
-- Soporte de exportación a múltiples formatos (ONNX, TFLITE, QNN_DLC) y precisiones (float, w8a8).
-- No es un modelo generativo ni de lenguaje; no admite tool calling ni razonamiento multi-paso.
+- Clasificación de imágenes sobre ImageNet (1000 clases) a resolución 224x224.
+- Uso como backbone convolucional para tareas derivadas: detección, segmentación o clasificación con cabezas personalizadas.
+- Extracción de características intermedias para pipelines de visión por computador.
+- Inferencia en NPU de chipsets Snapdragon y Dragonwing mediante QNN_DLC, ONNX y TFLITE.
+- Ejecución en FP32 y en cuantización w8a8, con reducción de tamaño de 58,3 MB a 15,4 MB.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo puramente visual y discriminativo.
 
 ## Casos de uso
 
-- Clasificación de imágenes en aplicaciones móviles: por ejemplo, una app de identificación de plantas o de moderación de contenido que ejecuta el modelo localmente en el dispositivo, sin necesidad de conexión a internet. Su tamaño reducido (15,4 MB en w8a8) y su baja latencia (menos de 1 ms en Snapdragon 8 Elite) lo hacen viable para uso interactivo.
-- Backbone para detección de objetos en tiempo real: integrar RegNet como extractor de características en una red como Faster R-CNN o YOLO, desplegada en un dron o cámara de seguridad con chip Snapdragon. La eficiencia computacional permite procesar vídeo a alta frecuencia.
-- Búsqueda visual por similitud: usar las activaciones de la penúltima capa como embeddings para indexar imágenes en una base de datos vectorial, permitiendo búsqueda por contenido en un catálogo de productos desde el móvil.
-- Segmentación semántica en agricultura de precisión: emplear RegNet como encoder en una arquitectura tipo U-Net para clasificar píxeles de cultivos o malezas, ejecutándose en un robot agrícola con hardware Qualcomm.
-- Clasificación de imágenes médicas en dispositivos de bajo coste: por ejemplo, detección de retinopatía diabética a partir de fotografías de fondo de ojo, con el modelo corriendo en un dispositivo portátil en zonas sin conectividad.
-- Aplicaciones de realidad aumentada: usar RegNet para reconocer objetos del entorno y superponer información virtual, aprovechando la baja latencia en NPU para mantener la fluidez de la experiencia.
+- Clasificación de imágenes en tiempo real en dispositivos móviles: con latencias de 0,7 a 1,2 ms en NPU de Snapdragon 8 Elite y 8 Gen 3, el modelo puede procesar flujos de vídeo a decenas de FPS sin salir del dispositivo.
+- Backbone en sistemas de visión embebida para automoción: los perfiles sobre SA8650P, SA8255P y SA8295P (3,2 ms) permiten integrar el extractor de características en pipelines de asistencia a la conducción con requisitos estrictos de latencia.
+- Preprocesado y filtrado en cámaras inteligentes: clasificación previa de fotogramas para descartar escenas irrelevantes antes de invocar modelos más costosos, reduciendo el consumo energético del sistema.
+- Aplicaciones de realidad aumentada en gafas y visores con Snapdragon X2 Elite o X Elite: la inferencia en 0,9 a 2,2 ms hace viable la clasificación por fotograma dentro del bucle de renderizado.
+- Etiquetado automático de datasets de imágenes: uso como clasificador rápido para preanotar grandes volúmenes de imágenes antes de la revisión humana, aprovechando su bajo coste computacional.
+- Prototipado de productos IoT con Qualcomm Dragonwing IQ-8275 o IQ-9075: los artefactos precompilados permiten desplegar un clasificador funcional en 2,7 a 2,9 ms sin necesidad de reentrenar ni reexportar.
+- Fine-tuning como backbone para dominios específicos (médico, industrial, retail): al estar disponible en PyTorch, se puede adaptar con cabezas personalizadas y reexportar con Qualcomm AI Hub Models.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de precisión (top-1, top-5) en la información disponible. Sin embargo, la tabla de rendimiento de inferencia en dispositivos Qualcomm proporciona datos concretos de latencia y uso de memoria. Se muestran los valores más representativos:
+La model card no publica métricas de precisión (top-1/top-5) sobre ImageNet. Sí incluye una tabla extensa de latencia de inferencia por runtime y chipset, de la que se resume una selección:
 
-| Chipset | Runtime | Precision | Inferencia (ms) | Memoria pico (MB) |
-|---|---|---|---|---|
-| Snapdragon 8 Elite Gen 5 | ONNX | w8a8 | 0,513 | 88 |
-| Snapdragon 8 Elite | ONNX | w8a8 | 0,547 | 88 |
-| Snapdragon 8 Gen 3 | ONNX | w8a8 | 0,637 | 136 |
-| Snapdragon X Elite | ONNX | w8a8 | 0,927 | 20 |
-| Snapdragon 8 Gen 1 | ONNX | w8a8 | 1,298 | 133 |
-| Snapdragon 8 Elite Gen 5 | ONNX | float | 0,834 | 77 |
-| Snapdragon 8 Elite | ONNX | float | 0,995 | 76 |
-| Snapdragon 8 Gen 3 | ONNX | float | 1,238 | 130 |
-| Snapdragon X Elite | ONNX | float | 1,767 | 39 |
+| Chipset | Runtime | Precisión | Latencia (ms) | Memoria pico (MB) | Unidad |
+|---|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 | ONNX | float | 0,728 | 1 - 79 | NPU |
+| Snapdragon 8 Elite Gen 6 | ONNX | float | 0,862 | 1 - 79 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy | ONNX | float | 0,836 | 0 - 83 | NPU |
+| Snapdragon 8 Elite For Galaxy | ONNX | float | 0,988 | 0 - 80 | NPU |
+| Snapdragon X2 Elite | ONNX | float | 0,885 | 2 - 2 | NPU |
+| Snapdragon X Elite | ONNX | float | 1,711 | 39 - 39 | NPU |
+| Snapdragon 8 Gen 3 | ONNX | float | 1,221 | 0 - 130 | NPU |
+| Snapdragon 8 Gen 1 | ONNX | float | 2,574 | 0 - 123 | NPU |
+| Dragonwing IQ-8275 | ONNX | float | 2,845 | 0 - 5 | NPU |
+| Dragonwing IQ-9075 | ONNX | float | 2,658 | 1 - 5 | NPU |
+| SA8650P | QNN_DLC | float | 3,202 | 1 - 78 | NPU |
+| SA8295P | QNN_DLC | float | 3,217 | 0 - 71 | NPU |
 
-Estos datos indican que la versión cuantizada w8a8 reduce la latencia aproximadamente a la mitad en la mayoría de los chips, con un consumo de memoria muy bajo (entre 1 y 136 MB según el dispositivo). No se dispone de comparativas con otros modelos en términos de precisión.
+No se han publicado resultados de benchmarks de precisión (MMLU, HumanEval, GSM8K u otros) en la información disponible, por tratarse de un modelo de clasificación de imágenes y no de un modelo de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo es muy ligero; en formato float ocupa 58,3 MB y en w8a8 15,4 MB. Cualquier GPU moderna con al menos 1 GB de VRAM puede ejecutarlo sin problemas.
-- GPU recomendadas: no requiere GPU de alta gama; puede ejecutarse en CPU, en GPUs integradas o en NPU de Qualcomm. Para desarrollo, una GPU de gama media (RTX 3060 o superior) es más que suficiente.
-- Compatibilidad con hardware de consumo: sí, cabe en cualquier dispositivo móvil con Snapdragon 6xx o superior, así como en placas como Raspberry Pi (con conversión a TFLite).
-- Opciones de despliegue: ONNX Runtime, TensorFlow Lite, Qualcomm AI Hub (QNN), o mediante el SDK de Qualcomm AI Hub Workbench. También se puede usar en PyTorch directamente.
-- Latencia y throughput: según la tabla anterior, la inferencia en NPU de Qualcomm oscila entre 0,5 y 3 ms por imagen, lo que permite procesar cientos de imágenes por segundo en dispositivos móviles.
+- VRAM estimada: no aplica en el sentido convencional; el modelo ocupa 58,3 MB en float y 15,4 MB en w8a8, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas para inferencia en PyTorch: cualquier GPU con al menos 1 GB de memoria, incluidas RTX 3060, RTX 4090, A100 y H100; el cuello de botella no es la memoria sino el throughput.
+- Cabe en GPU consumer: sí, en cualquier GPU moderna, e incluso en CPU para inferencia por lotes pequeños.
+- Despliegue: Qualcomm AI Hub Models (exportación y compilación), QAIRT 2.51, ONNX Runtime 1.30.0, TFLite, y PyTorch nativo para fine-tuning.
+- Latencia en NPU Qualcomm: 0,728 a 3,217 ms según chipset y runtime, con memoria pico entre 1 y 130 MB.
+- Throughput: no disponible de forma agregada; la model card solo reporta latencia por inferencia individual.
 
 ## Comparativa con modelos similares
 
-Se comparan tres modelos de clasificación de imágenes de tamaño similar, todos entrenados en ImageNet. No se dispone de datos de precisión para RegNet en esta información, por lo que la comparación se limita a parámetros y tamaño.
+| Modelo | Parámetros | Entrada | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| RegNet (qualcomm/RegNet) | 15,3 M | 224x224 | no aplica | BSD-3-Clause | Hugging Face, artefactos ONNX/QNN_DLC/TFLITE |
+| MobileNetV3 | no disponible en la información | 224x224 | no aplica | no disponible | torchvision, TF Lite |
+| EfficientNet-B0 | no disponible en la información | 224x224 | no aplica | no disponible | torchvision, TF Lite |
+| ResNet-50 | no disponible en la información | 224x224 | no aplica | no disponible | torchvision, ONNX |
 
-| Modelo | Parametros | Tamano (float) | Contexto | Licencia |
-|---|---|---|---|---|
-| RegNet (este) | 15,3 M | 58,3 MB | 224x224 | BSD-3-Clause |
-| ResNet-18 | 11,7 M | 44,6 MB | 224x224 | BSD-3-Clause |
-| MobileNetV2 | 3,4 M | 13,4 MB | 224x224 | Apache-2.0 |
-| EfficientNet-B0 | 5,3 M | 20,5 MB | 224x224 | Apache-2.0 |
-
-RegNet ofrece un equilibrio entre precisión y eficiencia, aunque sin datos de top-1 no se puede afirmar que supere a las alternativas. Su ventaja principal es la optimización específica para NPU de Qualcomm, que no está disponible en los otros modelos de forma nativa.
+La información proporcionada no incluye datos de precisión ni latencia de los modelos alternativos, por lo que la comparación cuantitativa no está disponible. La ventaja diferencial de este paquete frente a los backbones genéricos es la disponibilidad de artefactos precompilados y perfilados para NPU Qualcomm.
 
 ## Limitaciones y advertencias
 
-- Modelo de visión únicamente: no genera texto, no procesa lenguaje natural ni admite entradas multimodales.
-- Sesgos del dataset ImageNet: las clases están limitadas a las 1000 categorías de ImageNet, que pueden no cubrir dominios específicos y pueden contener sesgos culturales o geográficos.
-- Riesgo de alucinación: no aplica, al ser un modelo discriminativo y no generativo.
-- Limitaciones de contexto: no aplica, pero la resolución de entrada está fijada a 224x224; para otras resoluciones es necesario re-exportar el modelo con configuraciones personalizadas.
-- Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación, siempre que se mantenga el aviso de copyright. No hay restricciones de uso militar o de campo específico.
-- Dependencia del ecosistema Qualcomm: los formatos QNN_DLC y las optimizaciones para NPU requieren herramientas de Qualcomm (AI Hub Workbench) y hardware compatible. En otras plataformas, el modelo puede ejecutarse con ONNX o TFLite, pero sin las mismas garantías de rendimiento.
-- No se proporcionan métricas de precisión en la información disponible, por lo que no es posible evaluar su rendimiento real frente a otros modelos en tareas específicas.
+- Modelo puramente discriminativo: no genera texto, no razona, no soporta tool calling ni agentes; cualquier uso en esos contextos es un error de categoría.
+- Entrenado exclusivamente sobre ImageNet: las 1000 clases son las de dicho dataset y el rendimiento en dominios fuera de distribución puede degradarse sin fine-tuning.
+- No se publican métricas de precisión (top-1/top-5) en la model card, lo que impide evaluar su calidad frente a alternativas sin ejecutar pruebas propias.
+- Riesgo de sesgo heredado de ImageNet: desequilibrios demográficos y geográficos del dataset original pueden reflejarse en las predicciones.
+- La cuantización w8a8 reduce el tamaño a 15,4 MB, pero puede introducir pérdida de precisión no documentada; se recomienda validar en el dominio objetivo.
+- Los artefactos QNN_DLC y TFLITE están atados a versiones específicas del SDK (QAIRT 2.51); cambios de versión pueden requerir recompilación.
+- El repositorio ocupa 6,3 GB por incluir múltiples artefactos y variantes; no es un único fichero de pesos.
+- Licencia BSD-3-Clause: permite uso comercial, pero exige conservar el aviso de copyright y la cláusula de no endorsement.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/qualcomm/RegNet
-- Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/regnet
-- Repositorio de Qualcomm AI Hub Models (código fuente): https://github.com/qualcomm/ai-hub-models/blob/v0.61.0/src/qai_hub_models/models/regnet
-- Artículo original "Designing Network Design Spaces": https://arxiv.org/abs/2003.13678
-- Implementación de TorchVision (referencia): https://github.com/pytorch/vision/blob/main/torchvision/models/regnet.py
+- [Hugging Face: qualcomm/RegNet](https://huggingface.co/qualcomm/RegNet)
+- [Paper: Designing Network Design Spaces (arXiv:2003.13678)](https://arxiv.org/abs/2003.13678)
+- [Implementación de referencia en torchvision](https://github.com/pytorch/vision/blob/main/torchvision/models/regnet.py)
+- [Qualcomm AI Hub Models (GitHub)](https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/regnet)
+- [RegNet en Qualcomm AI Hub](https://aihub.qualcomm.com/models/regnet)
+- [Qualcomm AI Hub Workbench](https://workbench.aihub.qualcomm.com)
+- [Qualcomm (sitio corporativo)](https://www.qualcomm.com/)
+- [Qualcomm en Wikipedia](https://en.wikipedia.org/wiki/Qualcomm)
+- [Qualcomm Investor Relations](https://investor.qualcomm.com/overview/default.aspx)

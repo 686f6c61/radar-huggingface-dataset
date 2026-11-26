@@ -2,88 +2,90 @@
 
 ## Resumen
 
-Next-3-Pro-TurboQuant es una distribucion de pesos en formato GGUF del modelo Next-3-Pro, publicada por el usuario thelamapi en Hugging Face. El repositorio contiene los pesos cuantizados en Q8_0 empaquetados para su uso con llama-tq, una variante de llama.cpp que incorpora TurboQuant, una tecnica de compresion de la cache KV durante la inferencia. El modelo se distribuye con MTP (multi-token prediction) deshabilitado y se ha validado contra un commit concreto de llama-tq.
+Next-3-Pro-TurboQuant es una compilación de cuantización del modelo multimodal Next-3-Pro, desarrollado por Lamapi. Se trata de un modelo de aproximadamente 27 mil millones de parámetros (26.895.998.464 según los pesos en safetensors) construido sobre la arquitectura de Qwen3.8-27B, con capacidades de texto, imagen y vídeo. Esta variante concreta, alojada en el repositorio `thelamapi/Next-3-Pro-TurboQuant`, se distribuye como checkpoint compatible con la librería transformers y con el formato GGUF, orientada a su uso en stacks de inferencia que aprovechan el esquema de cuantización TurboQuant.
 
-El modelo cuenta con 26.895.998.464 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria de aproximadamente 27.000 millones de parametros. El repositorio ocupa 45,1 GB, coherente con pesos en Q8_0. La model card es extremadamente escueta: no documenta la arquitectura interna, el proceso de entrenamiento, los idiomas soportados ni la licencia, y no incluye resultados de benchmarks de calidad.
+El modelo está afinado específicamente para tareas de programación, razonamiento técnico y seguimiento de instrucciones, con soporte de conversación técnica en inglés y turco. Hereda de Qwen3.8-27B la ventana de contexto nativa de 262.144 tokens (ampliable hasta 1.000.000 según la configuración extendida documentada por Qwen), aunque Lamapi advierte que no ha evaluado este checkpoint afinado en esas longitudes extremas.
 
-La relevancia de esta publicacion es fundamentalmente de infraestructura: demuestra el uso de TurboQuant para comprimir la cache KV en inferencia sobre GPU A100 de 80 GB, con mediciones de velocidad de decodificacion y consumo de memoria de contexto. No obstante, al no haber informacion sobre el modelo base ni sobre su rendimiento en tareas, su evaluacion practica queda limitada a los datos tecnicos de despliegue aportados.
+Su relevancia actual radica en que combina un tamaño de 27B —manejable en hardware de gama alta de consumo con cuantización agresiva— con capacidades multimodales y de tool calling, lo que lo sitúa como alternativa a modelos propietarios para flujos de trabajo de agentes y asistencia al desarrollo de software. El repositorio acumula 256 descargas y 2 likes, y el tamaño total del repo es de 103,0 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 26.895.998.464 (aproximadamente 26,9 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8.192 tokens (capacidad usada en las pruebas de la model card) |
-| Tipos de cuantizacion | Q8_0 para pesos; cache KV en q8_0/q8_0 o ktq4_1/vtq4_1 (TurboQuant) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer multimodal (heredada de Qwen3.8-27B) |
+| Parametros totales | 26.895.998.464 (~27B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | 262.144 tokens nativos; hasta 1.000.000 en configuración extendida (documentado por Qwen, no evaluado por Lamapi en este checkpoint) |
+| Tipos de cuantizacion | TurboQuant (variante principal); builds GGUF disponibles en repositorio separado |
+| Idiomas soportados | Inglés y turco |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (Next-3-Pro-Q8_0-TurboQuant-Compat-NoMTP.gguf) |
+| Formato de pesos | safetensors (checkpoint transformers) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Next-3-Pro: la model card no especifica si se trata de un transformer denso, un MoE, un modelo hibrido o cualquier otra variante, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion. Tampoco se documentan los datos de entrenamiento, el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+Next-3-Pro-TurboQuant es una compilación cuantizada del checkpoint Next-3-Pro, que a su vez se construyó sobre la arquitectura de Qwen3.8-27B. Según la model card, Lamapi desarrolló el modelo mediante fine-tuning con LoRA y exportó un checkpoint fusionado (merged) en formato transformers. El modelo conserva la arquitectura y las interfaces de entrada multimodales del modelo base Qwen3.8-27B: procesamiento de texto, imágenes y vídeo mediante un procesador multimodal.
 
-La innovacion tecnica documentada se refiere exclusivamente al empaquetado y al runtime: los pesos estan en Q8_0 y se han preparado para llama-tq, una bifurcacion de llama.cpp que implementa TurboQuant para comprimir la cache KV durante la inferencia. El modelo se distribuye con MTP deshabilitado, lo que sugiere que el modelo base podria soportar multi-token prediction, pero esta build concreta no lo activa. La model card cita como referencia el commit `f572e7348edafba2df338a50e3fd8403b8855d4b` de llama-tq.
+Los datos de entrenamiento concretos (número de tokens, composición del dataset, uso de RLHF o DPO) no están detallados en la información disponible. La model card menciona únicamente los datasets `openai/gsm8k` y `google-research-datasets/mbpp` como referencias, sin especificar si se emplearon para entrenamiento o evaluación. La innovación técnica destacable de esta variante es el esquema de cuantización TurboQuant, que reduce el peso de los pesos BF16 originales para facilitar el despliegue en hardware con memoria limitada, manteniendo la compatibilidad con la librería transformers.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva mediante llama-completion, segun el ejemplo de uso incluido en la model card.
-- Compatibilidad con llama-tq y sus tipos de cache KV TurboQuant (ktq4_1 y vtq4_1), ademas de la cuantizacion estandar q8_0.
-- Soporte de Flash Attention (`-fa on`) en el comando de ejemplo.
-- Descarga de capas a GPU mediante `-ngl 999`, es decir, offload completo del modelo a GPU.
-- No se documentan capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling, function calling ni comportamiento agentico.
-- No se documentan capacidades multilingues; el unico indicio es el prompt de ejemplo "Merhaba" (saludo en turco), que no constituye una declaracion de soporte idiomatico.
-- No se documenta un modo de razonamiento explicito (thinking mode) ni ninguna capacidad especial adicional.
+- Generación de texto y razonamiento técnico: resolución de problemas matemáticos y de ingeniería con explicaciones paso a paso.
+- Programación y depuración: redacción de funcionalidades, inspección de errores, propuesta de parches, escritura de tests y revisión de código ante cambios de requisitos.
+- Comprensión de imágenes: análisis de capturas de pantalla, diagramas, páginas escaneadas y layouts visuales mediante el procesador multimodal.
+- Comprensión de vídeo: resumen de clips, seguimiento de cambios entre fotogramas y respuesta a preguntas sobre eventos visuales.
+- Tool calling y function calling: aceptación de esquemas de herramientas, ejecución de llamadas por parte de la aplicación y realimentación de resultados al modelo.
+- Flujos de agentes y razonamiento multi-paso: soporte para cadenas de herramientas y tareas iterativas.
+- Modo thinking: controles como `enable_thinking`, `reasoning_effort` y `preserve_thinking` cuando el stack de servicio los expone.
+- Capacidades multilingües: interacción técnica en inglés y turco, incluyendo proyectos donde la conversación y el código usan idiomas distintos.
+- Contexto largo: ventana nativa de 262.144 tokens para entradas extensas.
 
 ## Casos de uso
 
-- Despliegue de inferencia en GPU A100 de 80 GB: la model card aporta mediciones directas en este hardware con 8.192 tokens de contexto, por lo que es el escenario validado para usar el modelo con llama-tq y offload completo.
-- Pruebas de compresion de cache KV: el repositorio sirve para comparar el consumo de memoria de contexto entre q8_0/q8_0 (421 MiB) y ktq4_1/vtq4_1 (565 MiB) en un modelo de aproximadamente 27.000 millones de parametros, util para evaluar el impacto de TurboQuant en el runtime.
-- Evaluacion de runtimes alternativos a llama.cpp: al requerir un commit concreto de llama-tq, el modelo permite validar la compatibilidad de esta bifurcacion con pesos Q8_0 y con las opciones `-ctk` y `-ctv`.
-- Generacion de texto por linea de comandos: el binario llama-completion con el prompt de ejemplo permite integraciones simples en scripts y pipelines de prueba.
-- Benchmarking de velocidad de decodificacion: con 42,43 tok/s en q8_0 y 42,24 tok/s en TurboQuant sobre A100 80 GB, el modelo puede usarse como referencia para medir el rendimiento de configuraciones de cache KV en hardware comparable.
-- Pruebas de contexto largo controlado: la capacidad de 8.192 tokens permite experimentar con cargas de contexto moderadas y observar el crecimiento de la memoria de contexto en GPU.
+- Asistencia al desarrollo de software en producción: el modelo puede recibir un brief de funcionalidad o una captura de una interfaz rota y devolver un primer borrador funcional, integrándose en pipelines de revisión de código y CI/CD donde el tool calling permite ejecutar tests y aplicar parches.
+- Depuración iterativa multi-turno: con 262.144 tokens de contexto, puede mantener el hilo de un fallo a lo largo de varias iteraciones, incorporando errores del navegador y casos límite sin perder el historial de la conversación.
+- Generación de tests automatizados: a partir de una especificación o de código existente, redacta pruebas unitarias y de aceptación, útil en equipos que practican TDD.
+- Análisis de documentación técnica escaneada: gracias a la comprensión de imágenes, puede extraer información de diagramas de arquitectura, páginas de manual y capturas de paneles de control para responder preguntas concretas.
+- Agentes de soporte técnico: combinando tool calling y contexto largo, puede gestionar conversaciones de atención al cliente donde se consultan bases de conocimiento y se ejecutan acciones sobre sistemas internos.
+- Resumen y análisis de vídeo: para equipos que revisan grabaciones de sesiones, demos de producto o material de formación, el modelo puede resumir clips y responder preguntas sobre eventos visuales.
+- Desarrollo en equipos bilingües inglés-turco: permite discusiones técnicas y generación de código en contextos donde el idioma de trabajo y el de la conversación difieren.
 
 ## Benchmarks y rendimiento
 
-La model card unicamente publica mediciones de velocidad de decodificacion y memoria de contexto en una A100 de 80 GB, con mediana de tres ejecuciones por modo, capacidad de contexto de 8.192 tokens, prompt corto y presupuesto de salida de 128 tokens.
-
-| Cache KV | Decodificacion (tok/s) | Memoria de contexto en GPU |
-|---|---:|---:|
-| q8_0 / q8_0 | 42,43 | 421 MiB |
-| ktq4_1 / vtq4_1 | 42,24 | 565 MiB |
-
-Segun el autor, TurboQuant consumio 144 MiB mas de memoria de contexto en GPU y decodifico un 0,45 % mas lento en esta prueba. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 45,1 GB en Q8_0, por lo que se necesita al menos esa cantidad de memoria para cargar los pesos completos en GPU con offload total (`-ngl 999`).
-- GPU recomendadas: A100 de 80 GB, unico hardware con mediciones publicadas en la model card.
-- GPU de consumo: no se aportan datos de ejecucion en RTX 4090, RTX 3090 u otras GPU consumer; con 45,1 GB de pesos en Q8_0, una RTX 4090 de 24 GB no puede alojar el modelo completo en VRAM y requeriria offload parcial a CPU o cuantizaciones mas agresivas no publicadas en este repositorio.
-- Opciones de despliegue: llama-tq (bifurcacion de llama.cpp) en el commit `f572e7348edafba2df338a50e3fd8403b8855d4b`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints, pero no se detalla el mecanismo. No se documenta soporte para vLLM, TGI, Ollama ni otras herramientas.
-- Latencia y throughput: 42,43 tok/s en decodificacion con cache q8_0/q8_0 y 42,24 tok/s con ktq4_1/vtq4_1 en A100 80 GB, con 8.192 tokens de contexto, prompt corto y 128 tokens de salida.
-- Memoria de contexto en GPU: 421 MiB con q8_0/q8_0 y 565 MiB con ktq4_1/vtq4_1 en las condiciones de la prueba.
+- VRAM estimada para inferencia: con pesos BF16, los ~27B parámetros requieren aproximadamente 54 GB solo para los pesos, más memoria para el contexto KV; con cuantización TurboQuant o GGUF de 4 bits, la huella puede reducirse a unos 14-16 GB, aunque la cifra exacta no está publicada.
+- GPU recomendadas: A100 80 GB o H100 para BF16 sin cuantizar; RTX 4090 (24 GB) o RTX 3090 (24 GB) para cuantizaciones de 4-8 bits con contexto moderado.
+- Cabe en GPU de consumo: previsiblemente sí con cuantización GGUF/TurboQuant de 4 bits en GPUs de 24 GB, aunque no hay confirmación oficial de requisitos mínimos.
+- Opciones de despliegue: transformers (con soporte para Qwen3.8-27B), llama.cpp y Ollama para los builds GGUF, y potencialmente vLLM o TGI si soportan la arquitectura subyacente.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no identifica el modelo base Next-3-Pro ni ofrece datos de rendimiento en tareas que permitan una comparacion rigurosa con alternativas de tamano similar (por ejemplo, modelos densos de aproximadamente 27.000 millones de parametros). Tampoco se dispone de la licencia ni de los idiomas, lo que impide comparar condiciones de uso.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Next-3-Pro-TurboQuant | ~27B | 262.144 (hasta 1.000.000 extendido) | Texto, imagen, vídeo | no disponible | Hugging Face |
+| Qwen3.8-27B (modelo base) | ~27B | 262.144 (hasta 1.000.000 extendido) | Texto, imagen, vídeo | no disponible en la información proporcionada | Hugging Face |
+| Next-3-Pro (checkpoint principal) | ~27B | 262.144 (hasta 1.000.000 extendido) | Texto, imagen, vídeo | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes ni con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de informacion sobre el modelo base: no se documentan arquitectura, datos de entrenamiento, alineacion ni evaluaciones de calidad, lo que impide valorar sesgos, alucinacion o robustez.
-- Licencia no disponible: no se puede determinar si el uso comercial esta permitido; en produccion debe tratarse como no autorizado hasta confirmacion.
-- Idiomas no disponibles: no hay declaracion de cobertura idiomatica; el prompt de ejemplo en turco no es evidencia suficiente.
-- Dependencia de un runtime especifico: requiere llama-tq en un commit concreto, lo que limita la portabilidad frente a llama.cpp estandar, vLLM u Ollama.
-- MTP deshabilitado: esta build no activa multi-token prediction, por lo que no se beneficia de esa posible aceleracion.
-- TurboQuant no aporto ventajas en la prueba publicada: consumio 144 MiB mas de contexto y fue un 0,45 % mas lento que q8_0/q8_0 en A100 80 GB, por lo que su beneficio en este escenario es cuestionable.
-- Huella de memoria elevada: 45,1 GB en Q8_0 impide el despliegue completo en GPU consumer de 24 GB sin offload o recuantizacion.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Riesgo de alucinacion: no cuantificado por el autor; al no haber evaluaciones, debe asumirse el riesgo habitual de los modelos generativos.
+- Sesgos conocidos: no documentados en la información disponible; al heredar el modelo base Qwen3.8-27B, podría arrastrar sesgos de sus datos de entrenamiento, no especificados.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; la model card no reporta evaluaciones específicas de factualidad para este checkpoint.
+- Limitaciones de contexto: aunque el contexto nativo es de 262.144 tokens, Lamapi advierte explícitamente que no ha evaluado este checkpoint afinado en longitudes cercanas al máximo ni en la configuración extendida de 1.000.000 de tokens.
+- Limitaciones de idioma: el soporte declarado se limita a inglés y turco; el rendimiento en castellano u otros idiomas no está documentado.
+- Restricciones de licencia: la licencia no está disponible, lo que impide confirmar si el uso comercial está permitido; es un riesgo relevante para producción.
+- Compatibilidad: requiere una versión de transformers que soporte Qwen3.8-27B y memoria suficiente para los pesos BF16 y el contexto de inferencia; el esquema TurboQuant puede requerir tooling específico no detallado.
+- El procesamiento de vídeo depende del runtime y sus límites prácticos no están especificados.
+- El modelo tiene un volumen de adopción bajo (256 descargas, 2 likes), lo que reduce la validación comunitaria disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/thelamapi/Next-3-Pro-TurboQuant
-- Repositorio llama-tq (referenciado por el commit `f572e7348edafba2df338a50e3fd8403b8855d4b`): no se proporciona URL en la informacion disponible.
-- Paper, blog, demo o repositorio adicionales: no disponibles.
+- Repositorio Hugging Face: https://huggingface.co/thelamapi/Next-3-Pro-TurboQuant
+- Checkpoint principal: https://huggingface.co/thelamapi/Next-3-Pro
+- Builds GGUF: https://huggingface.co/thelamapi/Next-3-Pro-GGUF
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Perfil del autor: https://huggingface.co/thelamapi

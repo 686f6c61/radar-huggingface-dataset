@@ -2,83 +2,85 @@
 
 ## Resumen
 
-yingadaptage es un reloj epigenético basado en metilación de ADN, desarrollado por el equipo de pyaging y publicado en 2024 en *Nature Aging* (Ying et al.). A diferencia de los relojes convencionales que estiman la edad biológica global, este modelo predice la **edad epigenética adaptativa**, es decir, la asociada a CpGs con efectos protectores o adaptativos frente al daño acumulado. Para ello emplea una regresión elastic net con penalizaciones ponderadas por puntuaciones de causalidad obtenidas mediante EWMR (causalidade-weighted Mendelian randomization), lo que permite separar el componente de daño del de adaptación en el envejecimiento.
+`yingadaptage` es un reloj epigenetico (aging clock) publicado en el ecosistema pyaging que predice la edad epigenetica adaptativa a partir de datos de metilacion de ADN en sangre completa humana. No es un modelo de lenguaje ni una red neuronal generativa: es una regresion elastic net con pesos de penalizacion derivados de puntuaciones de causalidad EWMR (Epigenetic Wide Mendelian Randomization), restringida a CpGs asociados a adaptacion y proteccion frente al envejecimiento. Lo desarrolla el equipo de pyaging (empaquetado y distribucion) a partir del trabajo original de Ying, Liu, Tarkhov et al. publicado en Nature Aging en 2024.
 
-El modelo está entrenado exclusivamente en datos de metilación de ADN de sangre completa humana y se distribuye bajo licencia BSD-3-Clause. Su integración en el ecosistema pyaging lo hace directamente utilizable desde Python con una sola línea de código, lo que lo convierte en una herramienta accesible para investigadores biomédicos que estudian el envejecimiento desde una perspectiva causal. Aunque no es un modelo de lenguaje ni de visión, su relevancia radica en aportar una métrica biológica interpretable y con respaldo estadístico para estudios longitudinales y de intervención.
+Su relevancia radica en el enfoque causal: a diferencia de los relojes epigeneticos clasicos, que mezclan senales de dano y de adaptacion en una sola prediccion de edad, este modelo aisla la componente adaptativa/protectora. Eso permite separar el envejecimiento biologico "perjudicial" del "compensatorio", una distincion con implicaciones directas en investigación traslacional, ensayos de intervencion antienvejecimiento y biomarcadores de resiliencia.
+
+El repositorio es de tamano practicamente nulo (0.0 GB), coherente con un modelo de regresion de coeficientes dispersos sobre un conjunto reducido de CpGs. La licencia del codigo de pyaging es MIT, aunque la model card advierte explicitamente que los pesos retienen los terminos de los autores originales y la licencia de pyaging no los relicencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Regresion elastic net ponderada por causalidad (EWMR) |
-| Parametros totales | No disponible (modelo lineal, peso por CpG seleccionado) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo tabular sobre metilacion) |
-| Tipos de cuantizacion | No aplica |
-| Idiomas soportados | No aplica |
-| Licencia | BSD-3-Clause |
-| Formato de pesos | No disponible (integrado en libreria pyaging) |
+| Arquitectura | Regresion elastic net con pesos de penalizacion ponderados por causalidad (EWMR) |
+| Parametros totales | No disponible (coeficientes sobre un subconjunto de CpGs; el repositorio ocupa 0.0 GB) |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | No disponible (no aplica; entrada = vector de betas de metilacion) |
+| Tipos de cuantizacion | No disponible (no aplica a regresion lineal dispersa) |
+| Idiomas soportados | No disponible (no procesa texto) |
+| Licencia | MIT para el codigo de pyaging; pesos sujetos a los terminos de los autores originales |
+| Formato de pesos | No disponible en la informacion proporcionada; distribuido via libreria `pyaging` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en una regresión lineal regularizada con elastic net, donde cada CpG incluido recibe un peso que es el producto de su coeficiente de regresión y una puntuación de causalidad derivada de un análisis de aleatorización mendeliana ponderada (EWMR). Esta puntuación refleja la evidencia causal de que la metilación en ese sitio influye en la longevidad o en biomarcadores de envejecimiento, en lugar de ser simplemente correlacional.
+El modelo es una regresion elastic net, es decir, una regresion lineal regularizada con penalizacion combinada L1/L2, aplicada sobre valores beta de metilacion de ADN. La innovacion no esta en la arquitectura —deliberadamente simple e interpretable— sino en la construccion del vector de penalizacion: cada caracteristica (CpG) recibe un peso derivado de su puntuacion de causalidad EWMR, de modo que el modelo favorece CpGs con evidencia causal de efecto adaptativo o protector y penaliza los asociados a dano. Ademas, el conjunto de caracteristicas se restringe a CpGs relacionados con adaptacion y proteccion, lo que reduce dimensionalidad y mejora la interpretabilidad biologica.
 
-El entrenamiento se realizó sobre datos de metilación de sangre completa de individuos humanos, con un conjunto de CpGs restringido a aquellos clasificados como adaptativos o protectores en estudios previos de asociación con edad. No se han publicado detalles sobre el número exacto de muestras ni de CpGs finales, aunque el paper original (Ying et al., 2024) describe el proceso completo. No se emplearon técnicas de RLHF ni DPO; es un modelo supervisado de regresión.
+Los datos de entrenamiento son muestras de metilacion de ADN de sangre completa de Homo sapiens, con edad como variable objetivo. La informacion proporcionada no detalla el numero exacto de muestras, la composicion del dataset ni si hubo validacion en cohortes externas; esos datos deben consultarse en la publicacion de Nature Aging citada. No se emplean tecnicas de RLHF, DPO ni decodificacion especulativa, por tratarse de un modelo predictivo tabular.
 
 ## Capacidades
 
-- Predicción de edad epigenética adaptativa a partir de perfiles de metilación de ADN (array de 450K o EPIC).
-- Distinción entre componentes de daño y adaptación en el envejecimiento epigenético.
-- Integración nativa con la librería `pyaging` para análisis de relojes epigenéticos.
-- Interpretabilidad: cada CpG contribuye con un peso causal explícito, lo que permite identificar dianas biológicas relevantes.
-- Compatible con datos de entrada en formato AnnData (usado en scanpy).
+- Prediccion de edad epigenetica adaptativa a partir de matrices de metilacion de ADN (Illumina arrays, tipicamente 450K o EPIC).
+- Aislamiento de la componente adaptativa/protectora del envejecimiento, separandola de la componente de dano.
+- Inferencia sobre sangre completa humana exclusivamente.
+- Integracion directa con el ecosistema pyaging mediante `pya.pred.predict_age(adata, ["yingadaptage"])` sobre objetos AnnData.
+- Interpretabilidad alta: al ser un modelo lineal con caracteristicas seleccionadas, los coeficientes son directamente inspeccionables.
+- No soporta tool calling, agentes, razonamiento multi-step, vision, audio ni generacion de texto: no es un modelo de lenguaje.
+- Capacidades multilingues: no aplica.
 
 ## Casos de uso
 
-- **Investigación en biología del envejecimiento**: permite cuantificar la componente adaptativa del envejecimiento epigenético, separándola del daño acumulado, en estudios de cohortes longitudinales.
-- **Evaluación de intervenciones antienvejecimiento**: en ensayos con fármacos o cambios de estilo de vida, se puede medir si la edad adaptativa cambia de forma distinta a la edad cronológica o a otros relojes.
-- **Estudios de asociación genética**: los pesos causales de los CpGs pueden usarse como rasgos fenotípicos en GWAS para identificar variantes que modulan la respuesta adaptativa al envejecimiento.
-- **Análisis de tejido sanguíneo en biobancos**: al estar entrenado en sangre completa, es aplicable a grandes cohortes con datos de metilación disponibles (p. ej., UK Biobank).
-- **Validación de biomarcadores**: sirve como referencia para comparar nuevos relojes epigenéticos o para validar la relevancia causal de CpGs individuales.
-- **Educación y formación en epigenética**: como ejemplo de modelo causal aplicado a datos ómicos, útil en cursos de bioinformática y estadística aplicada.
+- Investigacion en biologia del envejecimiento: calcular la edad epigenetica adaptativa en cohortes de metilacion para estudiar por que algunos individuos envejecen con mejor salud a igual edad cronologica.
+- Ensayos de intervencion antienvejecimiento: usar la diferencia entre edad adaptativa y edad cronologica como endpoint secundario para detectar efectos protectores de una intervencion (dieta, ejercicio, farmacos), separandolos de efectos de dano.
+- Analisis de resiliencia y longevidad extrema: comparar la componente adaptativa en centenarios o individuos sanos de edad avanzada frente a controles, buscando firmas protectoras.
+- Estudios epidemiologicos a gran escala: procesar matrices de metilacion de biobancos (por ejemplo, datos tipo 450K/EPIC) dentro de pipelines de pyaging junto a otros relojes para analisis multivariante.
+- Investigacion de biomarcadores: identificar los CpGs con mayor peso causal en la prediccion adaptativa como candidatos para paneles de biomarcadores reducidos.
+- Reproducibilidad y comparacion metodologica: al estar empaquetado en pyaging, permite replicar el reloj original de Ying et al. 2024 con una unica llamada y compararlo con relojes de dano en el mismo pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original (Ying et al., 2024) reporta métricas de correlación con edad cronológica y capacidad para predecir mortalidad, pero estos datos no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de error (MAE, correlacion con edad cronologica) ni comparaciones cuantitativas con otros relojes; estos datos deben extraerse de la publicacion original en Nature Aging (Ying, Liu, Tarkhov et al., 2024).
 
 ## Requisitos de hardware
 
-- Al ser un modelo lineal con un número reducido de CpGs (típicamente cientos), la inferencia es inmediata en cualquier CPU moderna.
-- No requiere GPU.
-- El uso principal es a través de la librería `pyaging`, que procesa datos de metilación en formato AnnData; el coste computacional dominante es la carga y normalización de los datos de metilación, no el modelo en sí.
-- Despliegue típico: scripts Python en entornos de investigación, notebooks Jupyter, o pipelines de análisis en clústeres de cálculo.
-- No aplican opciones como vLLM, llama.cpp u Ollama, al no ser un modelo generativo.
+- VRAM: no aplica; es una regresion lineal que se ejecuta en CPU.
+- GPU: no necesaria. Cualquier CPU moderna es suficiente; el cuello de botella es la carga y el preprocesado de la matriz de metilacion, no el modelo.
+- Memoria RAM: dependiente del tamano de la matriz de metilacion de entrada (decenas de miles de CpGs por muestra); manejable en un portatil convencional para cohortes moderadas.
+- Despliegue: mediante la libreria `pyaging` en Python, sobre objetos AnnData. No aplican vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada; al ser una regresion dispersa, la inferencia por muestra es del orden de milisegundos una vez cargados los coeficientes.
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa directa en la información proporcionada. No obstante, se pueden mencionar alternativas en el mismo dominio:
+| Modelo | Tipo | Predictor | Restriccion de CpGs | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| yingadaptage | Elastic net con pesos causales EWMR | Edad epigenetica adaptativa | Solo CpGs adaptativos/protectores | MIT (codigo pyaging); pesos con terminos de autores originales | Hugging Face (pyaging) |
+| Relojes epigeneticos clasicos (Horvath, Hannum) | Elastic net / regresion penalizada | Edad epigenetica global | Sin restriccion causal | Variable segun modelo | Multiples repositorios y paquetes |
+| Relojes de dano (damage clocks, Ying et al. 2024) | Regresion con pesos causales | Componente de dano del envejecimiento | CpGs asociados a dano | Segun autores originales | pyaging y publicacion original |
 
-| Modelo | Tipo | Enfoque | Licencia |
-|---|---|---|---|
-| yingadaptage | Elastic net causal | Edad adaptativa | BSD-3-Clause |
-| Horvath clock | Elastic net | Edad epigenética global | No comercial (restricciones) |
-| Hannum clock | Elastic net | Edad epigenética en sangre | No comercial |
-| PhenoAge | Elastic net | Edad fenotípica | No comercial |
-
-La principal diferencia es que yingadaptage incorpora ponderaciones causales explícitas, mientras que los relojes clásicos se basan en correlación. No se dispone de datos de rendimiento comparativo en esta ficha.
+No se dispone de datos cuantitativos de rendimiento comparado en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Especificidad de tejido**: entrenado únicamente en sangre completa; no es válido para otros tejidos sin recalibración.
-- **Especificidad de especie**: solo Homo sapiens.
-- **Dependencia de la calidad de los datos de metilación**: requiere arrays de metilación estandarizados (450K o EPIC) y un preprocesado adecuado.
-- **Interpretación causal limitada**: aunque usa puntuaciones EWMR, la causalidad no está probada experimentalmente para cada CpG; es una inferencia estadística.
-- **Sin soporte para otros tipos de datos**: no acepta secuencias, expresión génica ni otros ómicos.
-- **Licencia BSD-3-Clause**: permite uso comercial con atribución, pero se recomienda revisar los términos de la librería `pyaging` y de los datos subyacentes.
-- **Sin actualizaciones conocidas**: el modelo se creó en 2024 y no hay indicios de versiones posteriores.
+- Uso restringido a Homo sapiens y a sangre completa; no validado en otros tejidos ni especies segun la model card.
+- Requiere datos de metilacion de ADN; no acepta otras modalidades.
+- Modelo lineal: no captura interacciones no lineales entre CpGs, lo que puede limitar la precision frente a enfoques mas complejos.
+- Riesgo de sobreajuste a las cohortes de entrenamiento si se aplica a poblaciones con composicion celular o etnia muy distintas; la informacion disponible no detalla la diversidad del dataset.
+- La licencia MIT cubre el software pyaging, no los pesos: la model card advierte que los pesos retienen los terminos de los autores originales. Verificar condiciones antes de uso comercial.
+- No es un dispositivo medico ni un biomarcador validado clinicamente; su uso debe limitarse a investigacion.
+- Sin datos publicados en la informacion disponible sobre calibracion, intervalos de confianza o error de prediccion.
+- Numero de descargas bajo (246) y ausencia de likes: comunidad de usuarios muy reducida, lo que implica menor validacion independiente.
 
 ## Enlaces
 
-- [Hugging Face: pyaging/yingadaptage](https://huggingface.co/pyaging/yingadaptage)
-- [Publicación original: Causality-enriched epigenetic age uncouples damage and adaptation (Nature Aging, 2024)](https://doi.org/10.1038/s43587-023-00557-0)
-- [Documentación de pyaging (Clock Catalogue)](https://pyaging.readthedocs.io)
+- Hugging Face: https://huggingface.co/pyaging/yingadaptage
+- Publicacion original: https://doi.org/10.1038/s43587-023-00557-0
+- Catalogo de relojes pyaging: https://pyaging.readthedocs.io

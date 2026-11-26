@@ -2,91 +2,89 @@
 
 ## Resumen
 
-Beam-1.0-501B-A23B-FP8 es la versión cuantizada en FP8 del modelo de lenguaje Beam 1.0, desarrollado por Reflection. Se trata de un modelo de mezcla de expertos (MoE) dispersa con 501.267.612.352 parámetros totales (501,3B) y 23,4B parámetros activos por token, diseñado para generación de texto con un enfoque explícito en eficiencia de tokens durante el razonamiento, ingeniería de software y uso agéntico de herramientas.
+Beam-1.0-501B-A23B-FP8 es un modelo de lenguaje de gran escala desarrollado por Reflection, publicado bajo licencia Apache 2.0. Se trata de un transformer con arquitectura de mezcla de expertos (MoE) dispersa que combina 501.267.612.352 parámetros totales con 23.400 millones de parámetros activos por token, lo que permite un equilibrio entre capacidad y coste de inferencia. Esta ficha concreta es el checkpoint cuantizado en FP8 del modelo instruido, y el release incluye también versiones en BF16 y NVFP4.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está entrenado predominantemente en inglés. Su característica más destacable es una ventana de contexto de 1M tokens combinada con un modo de razonamiento que, según el autor, alcanza calidad de solución comparable a modelos abiertos líderes con aproximadamente 3 veces menos tokens de razonamiento en tiempo de inferencia. El checkpoint aquí descrito contiene los pesos en FP8; el release de Beam también incluye variantes BF16 y NVFP4.
+El modelo está diseñado específicamente para tres áreas: razonamiento eficiente en tokens (alcanza calidad comparable a modelos abiertos líderes con aproximadamente 3 veces menos tokens de razonamiento en inferencia), ingeniería de software (resolución de issues reales de GitHub, entornos CLI y DevOps) y uso agéntico de herramientas (tareas de horizonte largo, integración vía MCP y navegación). Soporta una ventana de contexto de 1 millón de tokens, lo cual es relevante para cargas de trabajo con repositorios completos o sesiones agénticas prolongadas.
 
-La relevancia de esta ficha radica en que el modelo está orientado a cargas de trabajo agénticas de larga duración (resolución de issues reales de GitHub, entornos CLI y DevOps, integración con MCP), donde el coste por token y la longitud de contexto son factores determinantes. La cuantización FP8 reduce el peso del repositorio a 503,3 GB, lo que condiciona fuertemente los requisitos de hardware.
+Su relevancia actual radica en la combinación de contexto extremo, eficiencia de tokens en razonamiento y licencia permisiva para uso comercial, en un momento en el que los modelos abiertos de gran tamaño compiten por reducir el coste por tarea agéntica. El desarrollo está predominantemente orientado al inglés y el corte de conocimiento declarado es el 30 de junio de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE dispersa: 52 capas (3 densas + 49 MoE), atención Gated GQA + Sliding Window Attention |
+| Arquitectura | Transformer MoE dispersa (3 capas densas + 49 capas MoE), atención GQA con compuertas y sliding window attention |
 | Parametros totales | 501.267.612.352 (501,3B) |
 | Parametros activos | 23,4B |
 | Longitud de contexto | 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | FP8 (este checkpoint); el release incluye también BF16 y NVFP4 |
-| Idiomas soportados | Inglés (predominante) |
+| Tipos de cuantizacion | FP8 (este checkpoint); el release incluye BF16 y NVFP4 |
+| Idiomas soportados | Inglés (desarrollo predominantemente en inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors para la cuantización FP8) |
-| Numero de expertos | 256 |
-| Tamano de vocabulario | 152k tokens |
-| Modalidades | Texto |
-| Plantilla de chat | Formato Harmony modificado |
-| Knowledge cutoff | 30 de junio de 2026 |
-| Tamano del repositorio | 503,3 GB |
+| Formato de pesos | safetensors (compressed-tensors para FP8) |
+
+Datos adicionales declarados por el autor: 52 capas en total, vocabulario de 152k tokens, 256 expertos, modalidad soportada únicamente texto, plantilla de chat basada en formato Harmony modificado, corte de conocimiento el 30 de junio de 2026 y tamaño de repositorio de 503,3 GB.
 
 ## Arquitectura y entrenamiento
 
-Beam emplea una arquitectura de mezcla de expertos dispersa con 52 capas en total, de las cuales 3 son densas y 49 son capas MoE, con 256 expertos por capa. La atención combina Gated Grouped-Query Attention (GQA) con Sliding Window Attention, una elección coherente con la ventana de contexto de 1M tokens: la atención de ventana deslizante limita el coste computacional de la atención a medida que crece la secuencia, mientras que GQA reduce el coste de memoria de la caché KV. El vocabulario es de 152k tokens y el modelo es exclusivamente de texto.
+Beam emplea una arquitectura transformer con mezcla de expertos dispersa: de las 52 capas, 3 son densas y 49 son MoE, con 256 expertos en total y 23,4B de parámetros activos por token sobre un total de 501,3B. La atención combina GQA con compuertas (gated GQA) y sliding window attention, una elección coherente con la ventana de 1M tokens, ya que reduce el coste cuadrático de la atención en secuencias largas. El vocabulario es de 152k tokens y la plantilla de chat sigue un formato Harmony modificado, orientado a la separación de canales de razonamiento y de respuesta.
 
-La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esa información se remite a un Technical Report que el autor marca como "coming" (pendiente de publicación) y que no está disponible en la información proporcionada. Sí se declara explícitamente que el modelo está instruction-tuned, que el entrenamiento se orientó predominantemente al inglés y que el conocimiento tiene fecha de corte el 30 de junio de 2026. La innovación técnica destacada por el autor es la eficiencia de tokens en razonamiento (aproximadamente 3x menos tokens de inferencia para calidad comparable), junto con el soporte nativo de integración de herramientas vía MCP y la ejecución de flujos de trabajo multi-paso.
+La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Sí se declara un énfasis explícito en eficiencia de tokens durante el razonamiento (calidad comparable con aproximadamente 3 veces menos tokens de inferencia) y en el entrenamiento para tareas agénticas de horizonte largo, integración de herramientas vía MCP y entornos de CLI/DevOps. El checkpoint publicado es la versión instruida cuantizada en FP8 mediante compressed-tensors, con checkpoints adicionales en BF16 y NVFP4.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat basada en un formato Harmony modificado.
-- Razonamiento token-eficiente: el autor declara calidad de solución comparable a modelos abiertos líderes con aproximadamente 3 veces menos tokens de razonamiento.
-- Razonamiento matemático y científico: resolución de problemas de nivel de posgrado, demostración de teoremas y matemáticas aplicadas.
-- Ingeniería de software: resolución de issues reales de GitHub, operación en entornos CLI y DevOps, integración con harnesses de codificación agéntica y generación de código en varios lenguajes.
-- Uso agéntico de herramientas: finalización de tareas de horizonte largo, integración de herramientas basada en MCP y navegación web.
-- Ejecución de flujos multi-paso a partir de instrucciones en lenguaje natural.
-- Transferencia del razonamiento a depuración, planificación y autocorrección durante la ejecución agéntica.
-- Capacidades multilingües: limitadas al inglés como idioma principal declarado.
+- Generación de texto conversacional y de instrucciones, con modo de razonamiento explícito separado del canal de respuesta según la plantilla Harmony modificada.
+- Razonamiento de nivel graduado en matemáticas y ciencias, incluyendo demostración de teoremas y matemática aplicada.
+- Ingeniería de software: resolución de issues reales de GitHub, operación en entornos CLI y DevOps, e integración con arneses de codificación agéntica.
+- Generación de código en múltiples lenguajes (el autor indica soporte "across languages", sin lista cerrada).
+- Uso agéntico de herramientas: function calling, integración basada en MCP, navegación web y ejecución de flujos multi-paso a partir de instrucciones en lenguaje natural.
+- Tareas de horizonte largo con planificación, depuración y autocorrección durante la ejecución.
+- Eficiencia de tokens en razonamiento: aproximadamente 3 veces menos tokens de inferencia para calidad de solución comparable a modelos abiertos líderes.
+- Capacidades multilingües: limitadas, con desarrollo predominantemente en inglés.
+- Capacidades especiales: ventana de contexto de 1M tokens; no se declaran capacidades de visión ni audio (modalidad soportada: solo texto).
 
 ## Casos de uso
 
-- Resolución automática de issues en repositorios: el modelo puede recibir el contexto del repositorio y del issue y generar un parche, aprovechando su ventana de 1M tokens para incluir código y discusión sin truncar, y su entrenamiento específico en issues reales de GitHub.
-- Agente de codificación en CLI y DevOps: integrado en harnesses agénticos, puede ejecutar comandos, interpretar la salida y corregir errores de forma iterativa, con soporte de tool calling y MCP para conectar con sistemas externos.
-- Automatización de flujos de trabajo multi-paso: tareas como triaje de tickets, recopilación de información en varias fuentes y generación de informes, donde el razonamiento token-eficiente reduce el coste por tarea frente a modelos que consumen muchos tokens de pensamiento.
-- Asistencia en investigación matemática y científica: demostración de teoremas y resolución de problemas de nivel de posgrado, con la ventana larga permitiendo incorporar papers y derivaciones completas en el contexto.
-- Depuración y planificación asistida: dado un stack trace o una especificación, el modelo planifica pasos, identifica causas raíz y propone correcciones, apoyándose en la transferencia de razonamiento declarada por el autor.
-- Navegación y extracción de información web: como parte de un agente con browsing, puede recorrer páginas, sintetizar contenido y completar tareas de investigación con contexto acumulado de hasta 1M tokens.
-- Análisis de bases de código extensas: la ventana de 1M tokens permite cargar módulos completos o múltiples ficheros relacionados para tareas de refactorización y revisión.
+- Resolución automática de issues en repositorios: el modelo puede recibir el contexto del repositorio y del issue y operar en CLI para reproducir, depurar y proponer un parche, aprovechando tanto la ventana de 1M tokens como su entrenamiento específico en entornos DevOps.
+- Agentes de codificación integrados en CI/CD: con soporte de tool calling y formato Harmony modificado, puede encadenarse en pipelines para triaje de fallos, generación de parches y ejecución de pruebas bajo instrucciones en lenguaje natural.
+- Automatización de operaciones y tareas de horizonte largo: ejecución de flujos multi-paso con integración MCP (por ejemplo, consulta de sistemas internos, aplicación de cambios y verificación) sin intervención humana entre pasos.
+- Asistentes de investigación científica: resolución de problemas de nivel graduado en matemáticas y ciencias y demostración de teoremas, con un modo de razonamiento que reduce el número de tokens necesarios frente a modelos comparables.
+- Análisis de bases de código completas: la ventana de 1M tokens permite cargar repositorios o conjuntos de documentación extensos en una sola sesión para tareas de revisión, refactorización o explicación.
+- Atención al cliente técnica multi-turno: conversaciones largas con historial extenso y uso de herramientas para consultar estado de sistemas, adecuado por la ventana de contexto y la eficiencia de tokens en razonamiento.
+- Navegación y extracción de información: uso agéntico con navegación web para tareas de recopilación y verificación de datos a partir de instrucciones en lenguaje natural.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona la etiqueta `eval-results`, pero los datos concretos de evaluaciones (MMLU, HumanEval, GSM8K u otras) no aparecen en el material proporcionado, por lo que no se incluyen cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente afirma, sin cifras, que el modelo alcanza calidad de solución comparable a modelos abiertos líderes con aproximadamente 3 veces menos tokens de razonamiento en inferencia. No se deben inferir valores de MMLU, HumanEval, GSM8K ni de otras evaluaciones a partir de esa afirmación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en FP8 ocupan aproximadamente 501 GB (el repositorio completo son 503,3 GB); a ello hay que sumar la caché KV, que con contexto de 1M tokens y 49 capas MoE con GQA puede ser muy elevada. Para contexto corto, se necesitan del orden de 500-560 GB de VRAM; para contextos largos, bastante más.
-- GPU recomendadas: no cabe en ninguna GPU consumer. Requiere nodos multi-GPU de centro de datos, como 8x H100 80GB (640 GB) o 8x H200 141GB para dar margen a la caché KV en contextos largos. Configuraciones con A100 80GB (8x = 640 GB) son viables para contexto moderado.
-- GPU consumer: no es desplegable en RTX 4090, RTX 5090 ni similares, ni siquiera con cuantizaciones adicionales razonables, dado el tamaño base de 501B parámetros.
-- Opciones de despliegue: el modelo está etiquetado para SageMaker y Azure; para servido local se puede usar vLLM o TGI con soporte de FP8 y compressed-tensors. No se dispone de información sobre conversión a GGUF ni soporte en llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada. Con 23,4B parámetros activos, el coste computacional por token es comparable a un modelo denso de ese tamaño, pero el ancho de banda de memoria para cargar expertos en un despliegue multi-GPU condiciona el throughput real.
+- VRAM estimada para inferencia: el repositorio ocupa 503,3 GB en FP8, por lo que se requiere un nodo multi-GPU con al menos ~504 GB de memoria agregada solo para los pesos, más overhead de activaciones y caché KV para contexto largo.
+- GPU recomendadas: nodos con 8×H100 80 GB (640 GB) o 8×H200; el checkpoint FP8 está pensado para GPUs con soporte de FP8 nativo (Hopper o posterior).
+- GPU de consumo: no cabe en ninguna GPU de consumo actual, ni siquiera con cuantizaciones agresivas, dado el tamaño total de 501,3B parámetros.
+- Opciones de despliegue: el autor publica el checkpoint en formato compressed-tensors, compatible con motores de inferencia que soportan FP8 (por ejemplo, vLLM o TGI); la model card incluye etiquetas de despliegue para SageMaker y Azure. No se confirma soporte de llama.cpp u Ollama para este checkpoint.
+- Latencia y throughput: no disponibles en la información proporcionada. Los 23,4B de parámetros activos por token sitúan el coste computacional por token en el rango de un modelo denso de ~23B, aunque el requisito de memoria viene determinado por los 501,3B totales.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de información suficiente sobre modelos comparables en la documentación proporcionada para establecer una comparativa rigurosa. Se indica "no disponible". Como referencia estructural, un MoE de ~500B totales y ~23B activos con contexto de 1M tokens se sitúa en la categoría de modelos abiertos de gran escala para cargas agénticas, pero sin cifras de rendimiento publicadas no es posible contrastarlo con alternativas concretas.
+No disponible. La información proporcionada no incluye modelos comparables con datos verificables de parámetros, contexto, rendimiento o licencia que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo está desarrollado predominantemente para inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
-- Riesgo de alucinación: no se documentan medidas específicas de mitigación en la información disponible; como todo modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en código y matemáticas.
-- Sesgos: no se detallan evaluaciones de sesgo en la model card proporcionada.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar los términos del repositorio y de los componentes de terceros (por ejemplo, el formato Harmony modificado) antes de desplegar en producción.
-- Requisitos de infraestructura: el tamaño de 501B parámetros en FP8 exige hardware multi-GPU de centro de datos; no es viable en entornos de una sola GPU.
-- Contexto largo: aunque la ventana es de 1M tokens, no se documenta la degradación de calidad en contextos muy largos ni el coste real de memoria de la caché KV a esa longitud.
-- Datos de entrenamiento y evaluación: la ausencia del Technical Report y de resultados de benchmarks impide verificar las afirmaciones de eficiencia y calidad del autor.
-- Fecha de corte: el conocimiento se limita al 30 de junio de 2026; información posterior no está cubierta.
+- Idiomas: el modelo se desarrolló predominantemente en inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Modalidad: solo texto; no admite visión ni audio.
+- Alucinación: no se documentan tasas de alucinación ni evaluaciones de fiabilidad factual; en tareas agénticas de horizonte largo el riesgo de errores acumulados es relevante y requiere verificación externa.
+- Sesgos: no se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- Contexto: aunque la ventana es de 1M tokens, no se publican resultados de evaluación en contextos largos (needle-in-a-haystack u otras), por lo que la calidad efectiva en el extremo de la ventana no está verificada.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio y las condiciones de los checkpoints derivados (BF16, NVFP4) antes de desplegar en producción.
+- Hardware: el tamaño total de 501,3B hace inviable el despliegue en infraestructura de consumo; el coste de memoria (≈504 GB en FP8) exige nodos multi-GPU dedicados.
+- Formato de chat: la plantilla Harmony modificada requiere usar el template oficial; un formateo incorrecto puede degradar la separación entre razonamiento y respuesta.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8
+- Modelo en Hugging Face: https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8
 - Organización en Hugging Face: https://huggingface.co/reflection
-- GitHub: https://github.com/reflection-oss
+- Repositorio GitHub: https://github.com/reflection-oss
 - Blog de lanzamiento: https://reflection.ai/blog
-- Documentación: https://developers.reflection.ai/introduction
-- Licencia: https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/main/LICENSE
-- Technical Report: pendiente de publicación (no disponible)
+- Documentación para desarrolladores: https://developers.reflection.ai/introduction
+- Informe técnico (arXiv 2611.26358): https://huggingface.co/papers/2611.26358
+- Sitio web de Reflection: https://reflection.ai/
+- Licencia (Apache 2.0): https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/main/LICENSE

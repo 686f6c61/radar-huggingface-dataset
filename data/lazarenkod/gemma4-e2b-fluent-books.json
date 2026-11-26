@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "lazarenkod/gemma4-e2b-fluent-books · Hugging Face",
-      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-fluent-books",
-      "snippet": "lazarenkod / gemma4-e2b-fluent-books Like 1 Text Generation GGUF English Russian llama.cpp translation english-to-russian fluent-books imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "lazarenkod/gemma4-e2b-compact-fluent-books · Hugging Face",
-      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-compact-fluent-books",
-      "snippet": "Instructions to use lazarenkod/gemma4-e2b-compact-fluent-books with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    }
-  ]
+  "sources": []
 }

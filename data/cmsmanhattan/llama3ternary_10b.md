@@ -2,105 +2,92 @@
 
 ## Resumen
 
-Llama3Ternary_10b es un derivado ternario (1,58 bits) del modelo Meta Llama 3 8B, publicado por CMSManhattan (Center Business Solutions inc), una organización vinculada al inventor Konstantin Vladimirovich Grabko. El modelo parte de los pesos de Llama 3 8B, les aplica un ensanchamiento de la capa FFN hasta situar el recuento de parámetros en torno a 9.640 millones, y posteriormente cuantiza los pesos a valores ternarios {-1, 0, 1}, una técnica conocida como BitNet o 1.58-bit. El objetivo es ofrecer un modelo conversacional de bajo consumo de memoria que pueda ejecutarse en CPUs convencionales mediante los kernels AVX2/AVX-512 de Microsoft BitNet.cpp.
+Llama3Ternary_10b es un modelo de generación de texto derivado de meta-llama/Meta-Llama-3-8B, publicado por el usuario CMSManhattan en Hugging Face. Su rasgo diferencial es que los pesos se han cuantizado a formato ternario (valores en {-1, 0, +1}, también etiquetado como "1.58-bit" o estilo BitNet), lo que en teoría reduce drásticamente el coste de almacenamiento y permite operaciones de multiplicación sin producto. A pesar del nombre "10b", el recuento real de parámetros según los safetensors del repositorio es de 9.640.873.984 (~9,64 mil millones), superior a los 8B del modelo base, presumiblemente por la estructura adicional introducida en la cuantización ternaria.
 
-La relevancia del modelo radica en su propuesta de eficiencia extrema: según LLM Explorer, el artefacto ternario ocuparía unos 2,8 GB de VRAM equivalente, lo que lo sitúa en el rango de equipos de consumo y servidores sin GPU dedicada. No obstante, el autor advierte explícitamente de que el checkpoint GGUF ternario no carga en llama.cpp estándar y requiere BitNet.cpp, lo que limita su interoperabilidad con el ecosistema habitual de inferencia.
+El modelo se distribuye en formatos safetensors y GGUF, con licencia declarada como BSL-1.0 en las etiquetas y como llama3 en la ficha, y acceso restringido (gated) que exige aceptar condiciones en Hugging Face. Está orientado a conversación y generación de texto en inglés y se presenta como miembro del programa NVIDIA Inception.
 
-Se trata de un modelo solo para inglés, con licencia Llama 3 Community License, orientado a chat de un solo turno y a adaptación de dominio mediante LoRA. El repositorio pesa 54,2 GB e incluye pesos en safetensors y GGUF, aunque los pesos originales en FP16 no se publican.
+La relevancia actual del modelo radica en el interés por las arquitecturas de pesos de baja precisión (1.58-bit) como vía para reducir requisitos de memoria en inferencia, aunque la información pública disponible sobre su entrenamiento, evaluación y rendimiento es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivado de Llama 3 8B, con FFN ensanchada y pesos ternarios (BitNet / 1.58-bit) |
-| Parametros totales | 9.640.873.984 (aprox. 9,64B) |
+| Arquitectura | Transformer derivado de Meta-Llama-3-8B, con pesos cuantizados a ternario (1.58-bit) |
+| Parametros totales | 9.640.873.984 (~9,64 B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8K segun LLM Explorer; los ejemplos de despliegue usan 4096 y 8192 tokens |
-| Tipos de cuantizacion | Ternaria {-1, 0, 1} empaquetada (TQ2_0); GGUF Q8 como cuantizacion de compatibilidad |
-| Idiomas soportados | Ingles |
-| Licencia | Llama 3 Community License (etiquetada como bsl-1.0 en los metadatos de HF) |
+| Longitud de contexto | no disponible (el modelo base Llama 3 8B soporta 8.192 tokens, no confirmado para este derivado) |
+| Tipos de cuantizacion | Ternaria (1.58-bit); disponible en safetensors y GGUF |
+| Idiomas soportados | Inglés (en) |
+| Licencia | BSL-1.0 según etiquetas; llama3 según ficha (discrepancia no resuelta) |
 | Formato de pesos | safetensors, GGUF |
+| Acceso | Restringido (gated) en Hugging Face |
 | Modelo base | meta-llama/Meta-Llama-3-8B |
 | Tamano del repositorio | 54,2 GB |
-| Runtime de inferencia | BitNet.cpp (Microsoft), no compatible con llama.cpp estandar |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre la arquitectura transformer decoder-only de Llama 3 8B. La modificación principal consiste en ensanchar la capa feed-forward para elevar el recuento de parámetros de aproximadamente 8B a unos 9,64B, tras lo cual los pesos se cuantizan a valores ternarios en el conjunto {-1, 0, 1}. Esta representación de 1,58 bits por peso es la característica definitoria de la familia BitNet y permite reducir drásticamente el espacio de almacenamiento y el ancho de banda de memoria en inferencia. El autor no detalla en la model card el proceso exacto de entrenamiento tras la cuantizacion (si hubo QAT completa, distillation o simple post-training quantization), ni el volumen de tokens utilizado.
+El modelo parte de la arquitectura transformer decoder-only de Meta-Llama-3-8B (atención multi-cabeza con RoPE, normalización RMSNorm y activación SwiGLU), pero sustituye los pesos de precisión completa por representaciones ternarias con valores en {-1, 0, +1}. Este esquema, popularizado por los trabajos de BitNet (1.58-bit), busca que las multiplicaciones matriz-vector se reduzcan a sumas y restas condicionales, disminuyendo el coste computacional y de memoria en hardware adecuado.
 
-Sí se menciona la disponibilidad de servicios de reentrenamiento con QAT/SFT y empaquetado para los kernels de BitNet.cpp, así como la posibilidad de adaptar el modelo mediante LoRA. Los pesos FP16 originales no se publican, solo los artefactos cuantizados. El paquete GGUF ternario principal se denomina `Llama3Ternary-10b-TQ2_0.gguf` y está pensado para ejecutarse con los kernels AVX2/AVX-512 de BitNet.cpp, que según el autor es "mucho más rápido que llama.cpp" en este tipo de pesos.
+No se dispone de información pública sobre el proceso de entrenamiento: no se especifican el número de tokens utilizados, la composición del dataset, si hubo cuantización post-entrenamiento (PTQ) o entrenamiento desde cero con pesos ternarios, ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal. La diferencia entre el nombre "10b" y los 9,64 B reales sugiere que la conversión ternaria añadió parámetros auxiliares (posiblemente escalas o capas de adaptación), pero este extremo no está confirmado en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con formato de chat compatible con las plantillas de Llama 3 (`<|begin_of_text|>`, `<|start_header_id|>`, etc.).
-- Razonamiento basico y respuesta a preguntas generales, condicionado por la perdida de calidad inherente a la cuantizacion ternaria.
-- No se documenta soporte explicito de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidad multilingue limitada al ingles (el campo `language` declara solo `en`).
-- No dispone de vision, audio ni modo thinking.
-- El autor recomienda inferencia en modo greedy (temperatura 0) y sin penalizacion por repeticion como configuracion "verificada como mejor" para este modelo.
-- El despliegue por defecto es de un solo turno (`HISTORY_TURNS=0`), reflejando el regimen de entrenamiento.
+- Generación de texto conversacional en inglés, heredada del modelo base Llama 3 8B.
+- Razonamiento general y respuesta a instrucciones, sujeto a la degradación que pueda introducir la cuantización ternaria (no documentada).
+- Soporte de tool calling / function calling: no disponible de forma explícita en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingües: limitadas al inglés según la ficha.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere despliegue vía la infraestructura de Hugging Face.
 
 ## Casos de uso
 
-- Chat ligero en CPU sin GPU: el modelo puede desplegarse en servidores Xeon v2 con DDR3 mediante la imagen Docker oficial (`cmsmanhattan/llama3-ternary-10b-tq2`), lo que permite ofrecer un asistente conversacional en hardware antiguo o de bajo coste.
-- Prototipado y demos en Hugging Face Spaces: existe un Space oficial de chat en vivo, adecuado para evaluar la calidad del modelo antes de invertir en infraestructura.
-- Asistente embebido en entornos con restricciones de memoria: con un artefacto ternario de aproximadamente 2,8 GB equivalentes, encaja en dispositivos con poca RAM donde un modelo de 8B en FP16 no cabría.
-- Adaptacion de dominio mediante LoRA: el autor promociona el fine-tuning barato con LoRA para PYMES, lo que permitiría especializar el modelo en vocabulario y hechos de un sector concreto.
-- API compatible con OpenAI para integraciones internas: la imagen Docker expone `/v1/chat/completions` en el puerto 7869, lo que facilita conectar herramientas existentes que ya hablan el protocolo OpenAI.
-- Experimentacion academica con cuantizacion ternaria: sirve como banco de pruebas para estudiar el impacto de 1,58 bits en la calidad de un modelo Llama 3, comparando con el original en FP16.
-- Sustitucion de llama.cpp en pipelines CPU-only: para equipos que ya operan cargas de inferencia en CPU y quieren evaluar el ahorro de memoria de BitNet.cpp frente a GGUF convencional.
+- Experimentación en investigación sobre pesos de baja precisión: el modelo sirve como banco de pruebas para estudiar la degradación de calidad al pasar de FP16 a ternario en un transformer de 8B, comparando salidas con el Llama 3 8B original.
+- Despliegue en entornos con memoria muy limitada: la representación ternaria y los ficheros GGUF permiten probar inferencia en hardware donde un modelo de 8B en FP16 no cabría, siempre que el runtime soporte kernels ternarios.
+- Generación de texto conversacional en inglés para prototipos: útil para validar pipelines de chat antes de migrar a un modelo de producción con precisión completa.
+- Evaluación de runtimes de cuantización extrema: permite comparar el comportamiento de motores de inferencia que implementan operaciones ternarias frente a los que las emulan.
+- Docencia y divulgación: ejemplo práctico de cuantización 1.58-bit aplicada a un modelo ampliamente conocido como Llama 3.
+- Pruebas de compatibilidad con la API de endpoints de Hugging Face: la etiqueta `endpoints_compatible` facilita integrarlo en flujos de despliegue gestionado para pruebas internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni métricas de latencia o throughput. LLM Explorer únicamente menciona un requisito estimado de VRAM de 2,8 GB y contexto de 8K, sin datos de calidad.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 2,8 GB según LLM Explorer para el artefacto ternario; el repositorio completo pesa 54,2 GB por incluir múltiples formatos.
-- No requiere GPU: el runtime principal es BitNet.cpp sobre CPU con instrucciones AVX2 o AVX-512.
-- El autor indica compatibilidad con Xeon v2 y memoria DDR3, lo que sitúa el mínimo hardware muy por debajo de lo habitual para un modelo de ~10B.
-- GPU: no se documentan requisitos ni recomendaciones de GPU (A100, H100, RTX 4090) para este artefacto; el enfoque declarado es CPU.
-- Despliegue: BitNet.cpp (compilado desde el repositorio oficial de Microsoft), imagen Docker `cmsmanhattan/llama3-ternary-10b-tq2:latest` (linux/amd64) con UI web JiRack y proxy OpenAI en el puerto 7869, y llama-server en la variante indicada por el autor.
-- Configuración de referencia del autor: 24 hilos (`THREADS=24`), contexto 4096, temperatura 0, top_p 0.9, repeat_penalty 1.0, max_tokens 512, un solo turno de historial.
+- VRAM estimada: no disponible de forma oficial. Como referencia teórica, un modelo de ~9,64 B en ternario empaquetado a ~2 bits por peso ocuparía en torno a 2,4 GB de pesos, más overhead de activaciones, escalas y KV cache; las cifras reales dependen del runtime y del formato GGUF concreto.
+- GPU recomendadas: no disponibles. La información no especifica hardware validado; la pertenencia al programa NVIDIA Inception sugiere compatibilidad con GPUs NVIDIA, pero no se detalla.
+- Compatibilidad con GPU de consumo: no confirmada. Solo sería viable si el motor de inferencia soporta operaciones ternarias o emulación eficiente.
+- Opciones de despliegue: GGUF sugiere compatibilidad potencial con llama.cpp y derivados (Ollama, LM Studio), no verificado; la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
-- Advertencia: fijar el commit de BitNet.cpp probado, ya que una versión más reciente de upstream puede romper la compatibilidad con el GGUF personalizado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Runtime | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Llama3Ternary_10b | 9,64B | 8K | Ternaria 1,58 bits | BitNet.cpp | Llama 3 Community | Hugging Face, Docker |
-| Llama 3 8B (Meta) | 8B | 8K | FP16, INT8, GGUF | llama.cpp, vLLM, TGI | Llama 3 Community | Hugging Face |
-| Llama3Ternary_2b (mismo autor) | no disponible | no disponible | Ternaria | BitNet.cpp | Llama 3 Community | Hugging Face, HF Spaces |
-| JiRack_10b (mismo autor) | no disponible | no disponible | no disponible | no disponible | Llama 3 Community | Hugging Face |
+| Modelo | Parametros | Contexto | Precision | Licencia | Acceso |
+|---|---|---|---|---|---|
+| Llama3Ternary_10b | ~9,64 B | no disponible | Ternaria (1.58-bit) | BSL-1.0 / llama3 (discrepancia) | Gated |
+| meta-llama/Meta-Llama-3-8B | 8,03 B | 8.192 tokens | FP16/BF16 | Llama 3 Community License | Gated |
+| Microsoft BitNet b1.58 (referencia) | ~3,9 B (variante publicada) | no disponible | Ternaria nativa | MIT (según variante) | Abierto |
+| Llama 3 8B cuantizado a 4-bit (GGUF) | 8,03 B | 8.192 tokens | 4-bit (Q4_K_M, etc.) | Llama 3 Community License | Abierto/Gated según repo |
 
-La comparación directa con Llama 3 8B original es la más informativa: mismo origen y licencia, pero el ternario sacrifica calidad de forma no cuantificada en la documentación a cambio de reducir el peso del artefacto en un orden de magnitud y habilitar inferencia en CPU. Frente a otras alternativas de cuantización estándar (GGUF Q4/Q8 en llama.cpp), la ventaja es el ahorro de memoria, y la desventaja es la dependencia de un runtime no estándar.
+La comparación con BitNet b1.58 es la más directa en cuanto a esquema de cuantización, mientras que los GGUF de 4 bits de Llama 3 8B representan la alternativa práctica más habitual para reducir memoria manteniendo precisión aceptable. No hay datos de rendimiento de Llama3Ternary_10b que permitan comparar calidad.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion ternaria implica una pérdida de calidad frente al Llama 3 8B original; el autor no publica métricas que cuantifiquen esa degradación.
-- El GGUF ternario no carga en llama.cpp estándar; requiere BitNet.cpp, lo que reduce la portabilidad y complica el mantenimiento ante cambios upstream.
-- Solo soporta inglés; no hay capacidades multilingües declaradas.
-- El modelo está pensado para un solo turno (`HISTORY_TURNS=0`); el rendimiento en conversaciones multi-turno puede degradarse.
-- No se documenta soporte de tool calling, agentes ni modo de razonamiento extendido.
-- Riesgo de alucinación no evaluado; no hay benchmarks publicados que permitan estimarlo.
-- Sesgos: no se documenta ninguna evaluación de sesgos ni de seguridad.
-- Licencia: Llama 3 Community License, con las restricciones habituales de Meta (incluida la cláusula de 700 millones de usuarios mensuales y las políticas de uso aceptable). Los metadatos de Hugging Face etiquetan el modelo como `bsl-1.0`, lo que genera ambigüedad y conviene verificar antes de un uso comercial.
-- Los pesos FP16 no se publican, lo que limita la reproducibilidad y la posibilidad de recuantizar fuera del ecosistema BitNet.
-- La documentación del autor mezcla servicios comerciales (reentrenamiento, adaptación de dominio) con la ficha técnica, y contiene erratas; conviene tratar las afirmaciones de rendimiento sin verificar con cautela.
+- Ausencia total de documentación sobre entrenamiento, evaluación y procedencia de los pesos: no hay model card detallada ni benchmarks publicados.
+- La cuantización ternaria agresiva puede degradar sustancialmente la calidad respecto al Llama 3 8B original; no se ha cuantificado esa pérdida.
+- Discrepancia de licencia: las etiquetas indican BSL-1.0 y la ficha indica llama3; además, al derivar de Meta-Llama-3-8B, se heredan las obligaciones de la Llama 3 Community License, incluida la restricción de uso comercial para productos con más de 700 millones de usuarios mensuales.
+- Acceso restringido (gated): requiere aceptar condiciones y estar autenticado en Hugging Face.
+- Solo inglés: no hay soporte multilingüe documentado.
+- Riesgo de alucinación y sesgos heredados del modelo base, sin evaluación específica para este derivado.
+- Autoría individual (CMSManhattan) sin trayectoria verificable en la información disponible; conviene tratar el modelo como experimental y no apto para producción sin validación propia.
+- El nombre "10b" no coincide con el recuento real de parámetros (9,64 B), lo que puede inducir a error en la planificación de recursos.
+- Compatibilidad de runtimes no garantizada: la inferencia ternaria requiere soporte específico que muchos motores no ofrecen.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/Llama3Ternary_10b
-- GGUF ternario: https://huggingface.co/CMSManhattan/Llama3Ternary_10b/blob/main/Llama3Ternary-10b-TQ2_0.gguf
-- Space de chat en vivo (10b): https://huggingface.co/spaces/CMSManhattan/Llama3Ternary_10b
-- Space de chat en vivo (2b): https://huggingface.co/spaces/CMSManhattan/Llama3Ternary_2b
-- Modelo hermano Llama3Ternary_2b: https://huggingface.co/CMSManhattan/Llama3Ternary_2b
-- Modelo hermano JiRack_10b: https://huggingface.co/CMSManhattan/JiRack_10b
-- Modelo hermano JiRack Ultra 1b: https://huggingface.co/CMSManhattan/JiRackUltra_1b
-- Spaces JiRack (36B, 16B, 8B, 2B): https://huggingface.co/spaces/CMSManhattan/JiRack-36B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-16B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-8B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-2B-Chat
-- Repositorio BitNet.cpp de Microsoft: https://github.com/microsoft/BitNet
-- Sitio del autor: https://www.cmsmanhattan.com
-- Ficha en LLM Explorer: https://llm-explorer.com/model/CMSManhattan%2FLlama3Ternary_10b,4zlLcnoTkmQlxaMlA5nCqK
-- Licencia Llama 3: https://www.llama.com/llama3/license/
+- Hugging Face: https://huggingface.co/CMSManhattan/Llama3Ternary_10b
+- Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
+- Paper de referencia BitNet b1.58 (The Era of 1-bit LLMs): https://arxiv.org/abs/2402.17764
+- Repositorio oficial de BitNet: https://github.com/microsoft/BitNet

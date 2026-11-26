@@ -2,79 +2,95 @@
 
 ## Resumen
 
-Agents-A1 es un modelo de lenguaje de tipo Mixture of Experts (MoE) con aproximadamente 35 000 millones de parámetros (34 660 610 688 exactamente), desarrollado por el equipo InternScience. Está diseñado específicamente para tareas agénticas de largo horizonte: búsqueda de información compleja, ingeniería de software, investigación científica, seguimiento de instrucciones y uso de herramientas. El repositorio que nos ocupa es una cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware local con distintos niveles de precisión.
+Agents-A1 es un modelo de lenguaje de tipo Mixture of Experts (MoE) con capacidades de vision (VLM) y orientado a flujos agénticos, desarrollado originalmente por InternScience. El repositorio aquí descrito, `mradermacher/Agents-A1-GGUF`, no contiene el modelo original sino una colección de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir de los pesos en safetensors del modelo base. El modelo cuenta con 34.660.610.688 parámetros totales (aproximadamente 34,7 mil millones) según los datos de safetensors del repo base, y está publicado bajo licencia Apache 2.0.
 
-La relevancia de este modelo radica en que, según sus autores, alcanza un rendimiento comparable a modelos de nivel billón de parámetros escalando el horizonte del agente, es decir, la capacidad de mantener trayectorias largas y heterogéneas de razonamiento y acción. La versión GGUF facilita su despliegue en entornos de producción con GPUs de consumo, ampliando el acceso a capacidades agénticas avanzadas sin necesidad de infraestructura masiva.
+La relevancia de esta ficha radica en que las cuantizaciones GGUF permiten ejecutar un modelo MoE multimodal de ~35B parámetros en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos completos en precisión original. El autor ofrece un abanico de cuantizaciones que va desde Q2_K (13,0 GB) hasta Q8_0 (37,0 GB), además de dos variantes del proyector multimodal (mmproj) necesarias para el procesamiento de imágenes.
 
-## Especificaciones técnicas
+No se dispone de información detallada sobre la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks en la información proporcionada. Los tags del modelo (moe, vlm, vision, agentic) y su nombre sugieren un enfoque hacia tareas de agente con percepción visual, pero los detalles técnicos concretos del modelo base no están documentados en esta fuente.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) |
-| Parametros totales | 34 660 610 688 (≈35B) |
+| Arquitectura | Mixture of Experts (MoE) con capacidades de vision (VLM); detalles de la arquitectura interna no disponibles |
+| Parametros totales | 34.660.610.688 (~34,7B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS (segun comentarios del autor) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) según la model card; otros idiomas no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamano del repo | 238,6 GB |
+| Modelo base | InternScience/Agents-A1 |
+| Cuantizador | mradermacher |
+| Descargas | 254 |
+| Fecha de creacion | 2026-08-19 |
+| Ultima actualizacion | 2026-10-06 |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE), aunque no se han publicado detalles sobre el número de expertos, el mecanismo de selección o la proporción de parámetros activos. Según el repositorio oficial en GitHub, la innovación principal reside en el escalado del horizonte del agente (agent-horizon scaling), que aborda dos dimensiones: trayectorias de largo alcance y habilidades agénticas heterogéneas. Esto implica que el modelo está entrenado para mantener coherencia y eficacia en secuencias largas de razonamiento, planificación y ejecución de herramientas.
+El modelo base es un Mixture of Experts (MoE) con capacidad multimodal (vlm, vision) según los tags de la model card. La arquitectura concreta (número de expertos, ratio de activación, mecanismo de atención, tipo de encoder visual) no está documentada en la información disponible. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares.
 
-No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset, ni si se utilizaron técnicas de RLHF o DPO. Tampoco se especifican detalles sobre atención, decodificación especulativa u otras innovaciones técnicas más allá del concepto de horizonte agéntico.
+Las cuantizaciones de este repositorio son estáticas (static quants), generadas con el pipeline de mradermacher a partir de los pesos en formato Hugging Face (convert_type: hf). Se incluye un proyector multimodal (mmproj) en dos precisiones (Q8_0 y f16), imprescindible para el procesamiento de imágenes en llama.cpp. Para cuantizaciones ponderadas con imatrix, el autor remite a un repositorio separado (`mradermacher/Agents-A1-i1-GGUF`), que suele ofrecer mejor calidad por tamaño que las cuantizaciones estáticas equivalentes.
 
 ## Capacidades
 
-- Búsqueda de información de largo horizonte: puede realizar investigaciones complejas encadenando múltiples consultas y síntesis de resultados.
-- Ingeniería de software: asistencia en tareas de programación, depuración y refactorización con uso de herramientas.
-- Investigación científica: apoyo en revisión de literatura, formulación de hipótesis y análisis de datos.
-- Seguimiento de instrucciones: capacidad de ejecutar comandos y directrices complejas de forma precisa.
-- Uso de herramientas (tool use): integración con APIs, ejecución de código y llamadas a funciones externas.
-- Conversación y diálogo: etiquetado como "conversational" en Hugging Face, apto para interacción multi-turno.
-- Compatible con endpoints: el tag "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia estándar.
+- Generación de texto conversacional (tag `conversational`).
+- Procesamiento de visión: el modelo incluye un proyector multimodal (mmproj) que permite el análisis de imágenes.
+- Orientación agéntica: los tags `agentic` indican soporte previsto para flujos de agente y razonamiento multi-paso, aunque no se detallan las capacidades exactas.
+- Arquitectura MoE: activación selectiva de expertos, con el consiguiente ahorro de cómputo respecto a un modelo denso del mismo tamaño total.
+- Idiomas: inglés documentado; el resto no disponible.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible.
 
 ## Casos de uso
 
-- Automatización de investigación de mercado: el modelo puede realizar búsquedas web encadenadas, extraer datos de múltiples fuentes y generar informes sintetizados, reduciendo horas de trabajo manual.
-- Asistente de desarrollo de software: integrado en un IDE o pipeline de CI/CD, puede analizar código, sugerir correcciones, escribir tests y ejecutar comandos mediante tool calling.
-- Agente de atención al cliente avanzado: capaz de gestionar conversaciones largas con contexto acumulado, resolver incidencias técnicas y escalar a sistemas externos cuando sea necesario.
-- Análisis de datos científicos: puede procesar artículos, extraer conclusiones y proponer experimentos, ayudando a investigadores en revisiones sistemáticas.
-- Generación de documentación técnica: a partir de especificaciones o código fuente, el modelo puede redactar manuales, guías de usuario y documentación de API.
-- Automatización de tareas administrativas: con acceso a herramientas de calendario, correo o bases de datos, puede planificar reuniones, redactar respuestas y organizar información.
-- Prototipado rápido de agentes autónomos: gracias a su naturaleza MoE y su enfoque en horizonte largo, sirve como base para experimentos de investigación en sistemas multi-agente.
+- Asistentes con percepción visual: el modelo puede recibir imágenes junto con texto (gracias al proyector mmproj) para tareas de descripción, extracción de información o respuesta a preguntas sobre capturas, diagramas o documentos escaneados.
+- Automatización de flujos agénticos en local: con la cuantización Q4_K_M (21,3 GB) puede desplegarse en una estación de trabajo con GPU de 24 GB, permitiendo orquestar agentes que no envían datos a servicios externos.
+- Procesamiento por lotes en servidores con llama.cpp: la cuantización Q8_0 (37,0 GB) ofrece la mejor calidad dentro de la familia estática y puede servirse con llama.cpp server o herramientas compatibles para tareas de generación masiva.
+- Prototipado e investigación: las cuantizaciones pequeñas (Q2_K de 13,0 GB, Q3_K_S de 15,3 GB) permiten evaluar el comportamiento del modelo en hardware modesto antes de invertir en infraestructura mayor.
+- Integración en pipelines de código abierto: al estar en GGUF y bajo Apache 2.0, puede incorporarse en aplicaciones que usen llama-cpp-python, Ollama u otros runners compatibles con GGUF, incluyendo el soporte multimodal.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local, es apto para casos donde las imágenes o el texto no pueden salir de la organización.
+- Evaluación comparativa de cuantizaciones: el repositorio permite medir la degradación de calidad entre Q2_K y Q8_0 en tareas concretas antes de fijar una cuantización para producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estándar para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Para cuantización Q4_K_M (aproximadamente 17-18 GB de pesos), se estima un consumo de VRAM de 20-24 GB, lo que permite ejecución en GPUs como RTX 3090, RTX 4090 o A100 de 40 GB.
-- Para cuantizaciones menores (Q2_K o IQ4_XS), el modelo podría caber en GPUs de 8-12 GB, aunque con pérdida de calidad.
-- La versión f16 requiere alrededor de 70 GB de VRAM, por lo que solo es viable en hardware profesional (A100 80GB, H100).
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (dado el tag "endpoints_compatible"), y cualquier framework compatible con GGUF.
-- La latencia dependerá del número de parámetros activos, que no se ha especificado; al ser MoE, la inferencia podría ser más rápida que un modelo denso equivalente, pero no hay datos concretos.
+- VRAM estimada para inferencia: depende de la cuantización. Q2_K requiere ~13,0 GB de pesos; Q4_K_M ~21,3 GB; Q5_K_M ~24,8 GB; Q6_K ~28,6 GB; Q8_0 ~37,0 GB. Hay que añadir el proyector multimodal (0,7 GB en Q8_0 o 1,0 GB en f16) y el espacio para el contexto KV cache.
+- GPU recomendadas: para Q8_0, una A100 40 GB o H100; para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o A6000 (48 GB); para Q2_K y Q3_K_S, GPU de 16 GB como RTX 4080 o A4000.
+- ¿Cabe en GPU de consumo? Sí: Q4_K_S (20,0 GB) y Q4_K_M (21,3 GB) caben en una RTX 4090 de 24 GB, dejando margen limitado para contexto. Las cuantizaciones Q2_K y Q3_K_S caben en GPU de 16 GB.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, llama-cpp-python y cualquier runner compatible con GGUF y con soporte de mmproj para la parte multimodal. vLLM y TGI no consumen GGUF de forma nativa; para esos motores habría que usar los pesos originales en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa cuantitativa con otros modelos. Aunque existen otros MoE agénticos como Qwen3-30B-A3B o DeepSeek-R1-Distill, no se han encontrado datos de rendimiento comparables para Agents-A1 en las fuentes consultadas. La comparativa queda pendiente de la publicación de benchmarks oficiales.
+No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base que permitan una comparación rigurosa con alternativas. A continuación se indica lo que puede afirmarse con la información disponible:
+
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF | Notas |
+|---|---|---|---|---|---|
+| Agents-A1 (este repo) | ~34,7B (MoE) | no disponible | Apache 2.0 | Si (estaticas + imatrix) | VLM, agentic, solo ingles documentado |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No hay datos suficientes para establecer comparaciones fiables |
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se conoce si el modelo permite uso comercial, lo que supone un riesgo legal para su integración en productos.
-- Longitud de contexto desconocida: no se ha publicado la ventana de contexto máxima, lo que limita la planificación de aplicaciones que requieran procesar documentos extensos.
-- Idiomas no documentados: aunque probablemente sea multilingüe, no hay confirmación oficial, por lo que su rendimiento en español u otros idiomas es incierto.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de investigación donde se espera precisión.
-- Cuantización: las versiones GGUF de baja precisión (Q2_K, Q3) pueden degradar significativamente la calidad del razonamiento y la fidelidad de las respuestas.
-- Sin información sobre sesgos: no se han publicado evaluaciones de sesgos sociales o culturales, por lo que su uso en entornos sensibles requiere validación adicional.
-- Repositorio sin mantenimiento activo: el modelo original es de 2026 y la cuantización es de la misma fecha; no se garantizan actualizaciones ni soporte.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado principalmente en inglés, es previsible un sesgo hacia contenido anglófono, pero no se aportan datos concretos.
+- Riesgo de alucinación: no cuantificado; como en cualquier LLM, existe riesgo, y las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden incrementarlo.
+- Limitaciones de idioma: solo el inglés está documentado en la model card; el rendimiento en castellano u otros idiomas no está garantizado.
+- Limitaciones de contexto: la longitud de contexto no está disponible, lo que impide planificar despliegues con ventanas largas sin verificación previa.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base (`InternScience/Agents-A1`) por si impone condiciones adicionales.
+- Calidad de las cuantizaciones: las cuantizaciones estáticas de baja precisión pueden degradar tareas sensibles (razonamiento, código). El autor recomienda las cuantizaciones imatrix del repositorio `Agents-A1-i1-GGUF` para mejor relación calidad/tamaño.
+- Soporte multimodal en llama.cpp: requiere cargar el mmproj correspondiente; sin él, el modelo funciona solo como LLM de texto.
+- Fecha de creación futura: el repositorio figura creado el 2026-08-19, dato que conviene contrastar con la ficha del modelo base antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Agents-A1-GGUF
-- Modelo original (InternScience): https://huggingface.co/InternScience/Agents-A1
-- Repositorio GitHub oficial: https://github.com/InternScience/Agents-A1
-- Página del proyecto: https://internscience.github.io/Agents-A1/
-- Artículo en HackerNoon: https://hackernoon.com/agents-a1-gguf-brings-35b-agentic-reasoning-to-local-hardware
+- Repositorio GGUF: https://huggingface.co/mradermacher/Agents-A1-GGUF
+- Modelo base: https://huggingface.co/InternScience/Agents-A1
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Agents-A1-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Agents-A1-GGUF
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,112 +2,111 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-8B-MP-GGUF es una cuantizacion GGUF de precision mixta del modelo deepseek-ai/DeepSeek-R1-Distill-Llama-8B, publicada por el usuario steampunque. El modelo base es un destilado de razonamiento de DeepSeek-R1 sobre la arquitectura Llama 3.1 de 8B, disenado para generar cadenas de razonamiento largas antes de responder. Esta version concreta aplica distintos niveles de cuantizacion K por capa para reducir el tamano del archivo manteniendo la calidad.
+DeepSeek-R1-Distill-Llama-8B-MP-GGUF es una cuantizacion GGUF de precision mixta del modelo deepseek-ai/DeepSeek-R1-Distill-Llama-8B, publicada por el usuario steampunque. El modelo base es una destilacion de DeepSeek R1 sobre el preentrenamiento de Llama-3.1 8B, que anade entrenamiento por refuerzo y bloques de razonamiento (think blocks) al modelo original. Esta version concreta aplica una cuantizacion hibrida por capas denominada Q6_E_H, que combina niveles Q5_K y Q6_K segun la capa para reducir el tamano del fichero manteniendo una perplejidad practicamente identica a la de una cuantizacion Q6_K estandar.
 
-El problema que resuelve esta variante es el equilibrio entre tamano y rendimiento en inferencia local: el archivo resultante ocupa aproximadamente 6,5 GB, frente a los 6,6 GB de un Q6_K convencional, con una perplejidad equivalente (13,1 en ambos casos segun el autor). Al usar exclusivamente cuantizaciones K se evita la penalizacion de velocidad de los cuantizados IQ en CPU y GPUs antiguas.
+El interes de esta publicacion es fundamentalmente practico: ofrece un fichero GGUF de aproximadamente 6.300 millones de parametros efectivos (frente a los 6.600 millones de un Q6_K convencional) con una perplejidad de 13,2 frente a 13,1 del Q6_K por defecto, lo que supone un ahorro de espacio de unos 300 MB con una degradacion marginal. Ademas, el autor documenta el uso de decodificacion especulativa con modelos pequenos (Qwen3 0.6B, Qwen 2.5 Coder 0.5B) para acelerar la generacion en una RTX 4070, alcanzando hasta 147 tokens por segundo en tareas de generacion de codigo.
 
-La relevancia actual radica en que permite ejecutar un modelo de razonamiento de 8B en hardware de consumo con una calidad cercana a la del original en FP16, y ademas el autor documenta su uso combinado con el proyector multimodal de Ultravox para entrada de audio, asi como decodificacion especulativa con modelos pequenos para acelerar la generacion.
+Es relevante para desarrolladores que quieran desplegar un modelo de razonamiento de 8B en hardware de consumo mediante llama.cpp u Ollama, asi como para quienes necesiten procesar audio junto con texto usando el proyector multimodal Ultravox v0.5. El autor advierte, no obstante, que el modelo sigue siendo debil en razonamiento general y que no es fiable para generacion de codigo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.1), destilado de razonamiento de DeepSeek-R1 |
+| Arquitectura | Transformer decoder-only (Llama-3.1 8B con RL de DeepSeek R1) |
 | Parametros totales | 8.030.261.312 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | GGUF K-quant de precision mixta por capa (Q5_K_S, Q5_K_M, Q5_K_L, Q6_K_S, Q6_K_M, Q6_K_L), embeddings y tensor de salida en Q6_K |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base) |
+| Tipos de cuantizacion | Q6_E_H (hibrida por capas: Q5_K y Q6_K, con embedding y output en Q6_K); proyector multimodal F16 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (archivo unico de ~6,5e9 bytes) |
-| Tamano del repositorio | 18,8 GB |
-| Modelo base | deepseek-ai/DeepSeek-R1-Distill-Llama-8B |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un destilado de DeepSeek-R1 sobre Llama 3.1 8B Instruct: DeepSeek genero trazas de razonamiento con su modelo R1 y ajusto el Llama 3.1 8B sobre ellas, de modo que el modelo pequeno aprende a producir cadenas de pensamiento paso a paso antes de la respuesta final. La arquitectura subyacente es un transformer decoder-only clasico de Llama 3.1 con 8.030 millones de parametros. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo base.
+El modelo base es una destilacion de DeepSeek R1 sobre Llama-3.1 8B, lo que implica que se parte de los pesos preentrenados de Llama-3.1 8B y se aplica entrenamiento por refuerzo para incorporar el comportamiento de razonamiento de DeepSeek R1, incluyendo la generacion de bloques de pensamiento (think blocks) antes de la respuesta final. El resultado es un modelo de 8.030 millones de parametros con arquitectura transformer decoder-only estandar, sin mecanismos MoE ni atencion lineal.
 
-La innovacion de esta publicacion es la cuantizacion de precision mixta por capa: las 32 capas reciben niveles distintos segun su sensibilidad, con capas tempranas en Q5_K_M, alternancia de Q5_K_L y Q6_K_S en capas medias y Q6_K_M/Q6_K_L en las finales, mientras que los tensores de atencion V, atencion O y FFN down se elevan a q8_0 o q6_k segun la variante. Los embeddings y el tensor de salida se mantienen en Q6_K. El autor reporta que esta configuracion iguala la perplejidad del Q6_K estandar (13,1) con un archivo ligeramente menor.
+La contribucion tecnica de esta publicacion es la cuantizacion hibrida Q6_E_H, que asigna distintos niveles de cuantizacion a cada capa del modelo: las capas 0 y 31 usan Q6_K_866, las capas 1 a 3 usan Q6_K_666, las capas 4 a 14 usan Q5_K_665, las capas 15 a 23 alternan Q5_K_666 y Q6_K_666, y las capas 24 a 30 usan Q6_K_666 o Q6_K_668. Ademas, el embedding de tokens y el tensor de salida se fijan en Q6_K. Segun el autor, esta combinacion reduce el tamano a 6,3e9 bytes con una perplejidad de 13,2, frente a 6,6e9 bytes y 13,1 de un Q6_K estandar. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni los detalles del proceso de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en formato instruct.
-- Razonamiento paso a paso con cadenas de pensamiento extensas, herencia directa de DeepSeek-R1.
-- Generacion de codigo, incluyendo la resolucion de problemas tipo HumanEval a partir de cabeceras de funcion.
-- Razonamiento matematico y aritmetico de varios pasos (el autor valida con un problema de conteo tipo BBH object counting).
-- Capacidad multimodal de audio cuando se combina con el proyector `ultravox-v0_5-llama-3_1-8b.mmproj.gguf` (entrada de audio .mp3 y .wav, salida de texto).
-- Compatibilidad con decodificacion especulativa usando modelos pequenos como Qwen3 0.6B o Qwen 2.5 Coder 0.5B como draft.
-- Soporte de modo "think" activable y desactivable (el autor documenta desactivarlo para generacion pura de codigo).
-- Tool calling y function calling: no documentado en la informacion proporcionada.
-- Capacidades de agente multi-paso: no documentadas explicitamente en la informacion proporcionada.
+- Generacion de texto conversacional y razonamiento con bloques de pensamiento (think blocks) heredados de DeepSeek R1.
+- Generacion de codigo, aunque el autor indica que el modelo no es fiable para esta tarea y no logra crear programas funcionales a partir de descripciones.
+- Procesamiento de audio (.mp3 y .wav) junto con texto cuando se combina con el proyector multimodal Ultravox v0.5 para Llama-3.1 8B.
+- Soporte de decodificacion especulativa con modelos pequenos (Qwen3 0.6B, Qwen 2.5 Coder 0.5B) para acelerar la inferencia.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada, aunque el formato de bloques de pensamiento es compatible con flujos de razonamiento extendido.
 
 ## Casos de uso
 
-- Razonamiento local en estaciones de trabajo sin GPU dedicada: el archivo de 6,5 GB cabe en RAM de sistemas modestos y usa solo cuantizaciones K, evitando la lentitud de los IQ quants en CPU.
-- Generacion de codigo asistida en IDE: con decodificacion especulativa y el modo think desactivado, el autor reporta 132 tokens por segundo en una RTX 4070, adecuado para autocompletado interactivo.
-- Resolucion de problemas aritmeticos y logicos con traza explicita: util en herramientas educativas o de verificacion donde se necesita ver el razonamiento intermedio, no solo la respuesta.
-- Transcripcion y analisis de audio local: combinado con el proyector Ultravox, permite procesar notas de voz o reuniones en .wav/.mp3 y generar resumenes o respuestas sin salir del equipo.
-- Prototipado de pipelines de razonamiento en investigacion: al ser un destilado de R1 en 8B, sirve para estudiar comportamiento de cadenas de pensamiento con coste computacional bajo.
-- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT del artefacto GGUF facilita su integracion en productos comerciales, sujeto a las condiciones del modelo base.
-- Aceleracion de inferencia con draft models: el uso de Qwen3 0.6B o Qwen 2.5 Coder 0.5B como especuladores permite incrementar el throughput entre un 25 % y un 94 % segun el caso reportado por el autor.
+- Razonamiento asistido en local: el modelo puede ejecutarse en una GPU de consumo como la RTX 4070 con contexto y pesos en VRAM, generando bloques de pensamiento antes de responder. Es adecuado para prototipos de razonamiento en entornos sin acceso a la nube.
+- Procesamiento de audio y texto combinados: junto con el proyector multimodal Ultravox v0.5, el modelo puede transcribir o analizar ficheros .mp3 y .wav y generar respuestas textuales, util para asistentes de voz o analisis de reuniones.
+- Aceleracion de inferencia con decodificacion especulativa: el autor documenta el uso de Qwen3 0.6B como modelo especulador, alcanzando 102 tokens por segundo en prompts no relacionados con codigo y hasta 147 tokens por segundo en tareas de codigo con el modo think desactivado.
+- Despliegue en llama.cpp u Ollama: al ser un GGUF de 6,3 GB, puede cargarse en herramientas estandar de inferencia local, lo que facilita su integracion en aplicaciones de escritorio o servidores modestos.
+- Experimentacion con cuantizacion hibrida: el fichero sirve como referencia para estudiar el impacto de la cuantizacion por capas en la perplejidad, comparando Q6_E_H frente a Q6_K estandar.
+- Filtrado y clasificacion de texto con razonamiento ligero: para tareas donde el modelo base Llama-3.1 8B ya tiene cobertura suficiente, el bloque de razonamiento puede mejorar la precision en casos concretos, aunque el autor advierte que no es fiable de forma general.
+- Investigacion sobre destilacion de modelos de razonamiento: util para analizar como se comporta un modelo de 8B destilado de DeepSeek R1 en tareas fuera de su espacio latente original.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) para esta cuantizacion. Solo se reportan datos de perplejidad y de velocidad de generacion.
+El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La unica comparativa proporcionada es de perplejidad y tamano entre cuantizaciones:
 
-| Metrica | Q6_K estandar | Q6_K_H (esta version) |
-|---|---|---|
-| Tamano (bytes) | 6,6e9 | 6,5e9 |
-| Perplejidad | 13,1 | 13,1 |
-
-Rendimiento de generacion en RTX 4070 (contexto y pesos en VRAM, especulacion greedy):
-
-| Prompt | Longitud de bloque especulativo | Tokens por segundo | Comentario |
+| Cuantizacion | Tamano (bytes) | Perplejidad | Comentario |
 |---|---|---|---|
-| goldcoin | 0 | 68 | texto no-codigo, sin especulacion |
-| goldcoin | 3 | 85 | texto no-codigo, con especulacion |
-| humaneval | 0 | 68 | codigo, sin especulacion |
-| humaneval | 4 | 103 | codigo, con especulacion |
-| humaneval | 4 | 132 | especulacion con Qwen 2.5 Coder 0.5B, modo think desactivado |
+| Q6_K | 6,6e9 | 13,1 | Q6_K con embedding y output por defecto |
+| Q6_E_H | 6,3e9 | 13,2 | Hibrida con embedding y output en Q6_K |
 
-El autor indica que el conjunto completo de benchmarks se publicara en https://huggingface.co/spaces/steampunque/benchlm, pero no esta disponible en la informacion proporcionada.
+El autor tambien documenta rendimiento de generacion en una RTX 4070 con decodificacion especulativa:
+
+| Prompt | Longitud de bloque especulativo (ND) | Tokens por segundo | Comentario |
+|---|---|---|---|
+| goldcoin | 0 | 73 | Sin codigo |
+| goldcoin | 3 | 102 | Sin codigo |
+| humaneval | 0 | 71 | Codigo |
+| humaneval | 4 | 120 | Codigo |
+| humaneval | 4 | 140 | Especulacion con Qwen 2.5 Coder 0.5B, sin modo think |
+| humaneval | 6 | 147 | Especulacion con Qwen 2.5 Coder 0.5B, sin modo think |
+| humaneval | 8 | 146 | Especulacion con Qwen 2.5 Coder 0.5B, sin modo think |
+
+No se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6,5 GB solo para los pesos; con contexto adicional se recomienda reservar entre 8 y 10 GB para ventanas moderadas.
-- GPU recomendadas: RTX 4070 (validada por el autor), RTX 4080, RTX 4090, A100, H100. Cualquier GPU con 8 GB o mas de VRAM puede alojar los pesos.
-- Cabe en GPUs de consumo: si, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. En GPUs de 8 GB requiere contexto reducido o descarga parcial de capas a CPU.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama, y servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estandar.
-- Latencia y throughput: 68 tokens/s sin especulacion en RTX 4070; hasta 132 tokens/s con especulacion y modo think desactivado en tareas de codigo.
-- Para multimodal de audio se requiere ademas el proyector `ultravox-v0_5-llama-3_1-8b.mmproj.gguf` (1,38e9 bytes en F16) y el soporte `mtmd` de llama.cpp.
+- VRAM estimada para inferencia: el fichero GGUF ocupa aproximadamente 6,3 GB, por lo que se necesitan al menos 7-8 GB de VRAM para cargar pesos y contexto en GPU.
+- GPU recomendadas: el autor documenta pruebas en una RTX 4070. Por tamano, cabe en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM, aunque con contexto limitado en las de 8 GB.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. El autor menciona el uso de un especulador personalizado downstream con traduccion dinamica de vocabulario.
+- Latencia y throughput: en una RTX 4070 con contexto y pesos en VRAM, entre 71 y 73 tokens por segundo sin especulacion, y entre 102 y 147 tokens por segundo con decodificacion especulativa segun el caso.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B-MP-GGUF (esta version) | 8,03B | no disponible | GGUF mixto K, ~6,5 GB | MIT | Perplejidad 13,1, 68-132 tok/s en RTX 4070 |
-| DeepSeek-R1-Distill-Llama-8B (original) | 8,03B | no disponible | safetensors FP16/BF16 | MIT (modelo base) | Pesos completos, requiere ~16 GB en FP16 |
-| Q6_K estandar del mismo modelo | 8,03B | no disponible | GGUF Q6_K, ~6,6 GB | MIT | Perplejidad 13,1, referencia de comparacion del autor |
+| steampunque/DeepSeek-R1-Distill-Llama-8B-MP-GGUF | 8,03e9 | no disponible | GGUF Q6_E_H (6,3e9 B) | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03e9 | no disponible | safetensors (original) | MIT | Hugging Face |
+| Llama-3.1 8B Instruct | 8,03e9 | no disponible | safetensors, GGUF | Llama 3.1 Community License | Hugging Face, Meta |
 
-No se dispone en la informacion proporcionada de comparaciones con otros modelos de la misma categoria (por ejemplo, otros destilados de 7-8B) en terminos de benchmarks estandar.
+La comparativa se limita a estos tres modelos porque no se dispone de datos de benchmarks que permitan contrastar rendimiento con alternativas de la misma categoria. La diferencia principal frente al modelo original es el formato GGUF cuantizado y el menor tamano del fichero; frente a Llama-3.1 8B Instruct, la diferencia es la incorporacion de bloques de razonamiento mediante RL.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos, evaluaciones de seguridad ni filtros de contenido; el modelo base puede reproducir sesgos presentes en sus datos de entrenamiento.
-- Riesgo de alucinacion inherente a los modelos de razonamiento destilados: las cadenas de pensamiento largas pueden contener pasos plausibles pero incorrectos que conduzcan a respuestas erroneas con aparente confianza.
-- Idiomas soportados no documentados; el modelo base esta orientado principalmente al ingles, por lo que el rendimiento en castellano no esta garantizado.
-- Longitud de contexto no especificada en la informacion proporcionada; conviene verificar la configuracion del modelo base antes de desplegar con ventanas largas.
-- La licencia MIT se aplica al artefacto GGUF publicado por steampunque; el uso comercial debe verificar tambien las condiciones del modelo base deepseek-ai/DeepSeek-R1-Distill-Llama-8B.
-- El repositorio tiene un tamano de 18,8 GB, muy superior al archivo GGUF individual, lo que sugiere la presencia de otros artefactos o versiones; conviene descargar solo el archivo necesario.
-- El rendimiento de la especulacion depende de un "downstream greedy speculator" personalizado del autor, no incluido en el repositorio; los 132 tok/s no son reproducibles sin esa infraestructura.
-- El modelo esta pensado para modo conversacional; no se documenta soporte de tool calling ni de agentes, por lo que su uso en pipelines automatizados con llamadas a funciones requiere validacion adicional.
+- El autor indica explicitamente que el modelo sigue siendo debil en razonamiento general y que las mejoras de precision no son fiables.
+- En generacion de codigo, el autor concluye que el modelo no es util: no logra crear programas funcionales a partir de descripciones, tanto con razonamiento activado como forzado a desactivarse.
+- El bloque de razonamiento incrementa notablemente el numero de tokens generados en prompts de razonamiento, lo que puede aumentar la latencia y el coste en produccion.
+- No se dispone de informacion sobre sesgos conocidos, idiomas soportados ni riesgos especificos de alucinacion mas alla de los inherentes al modelo base.
+- La licencia MIT permite uso comercial, pero se heredan las condiciones del modelo base DeepSeek-R1-Distill-Llama-8B, que a su vez deriva de Llama-3.1 8B; conviene verificar las obligaciones de la licencia Llama 3.1 Community License en el modelo base.
+- La cuantizacion Q6_E_H es una propuesta del autor sin validacion independiente; la perplejidad es ligeramente superior a la de Q6_K estandar (13,2 frente a 13,1).
+- El uso de audio requiere un proyector multimodal separado (Ultravox v0.5) y no esta integrado en el fichero GGUF principal.
+- No hay informacion sobre la longitud de contexto efectiva tras la cuantizacion ni sobre el comportamiento en contextos largos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/steampunque/DeepSeek-R1-Distill-Llama-8B-MP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/steampunque/DeepSeek-R1-Distill-Llama-8B-MP-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
-- Proyector multimodal Ultravox: https://huggingface.co/steampunque/ultravox-v0_5-llama-3_1-8b-Hybrid-GGUF
-- Documentacion mtmd de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/mtmd/README.md
-- Hilo de discusion sobre cuantizacion hibrida por capas: https://github.com/ggml-org/llama.cpp/discussions/13040
-- Espacio de benchmarks del autor: https://huggingface.co/spaces/steampunque/benchlm
-- Archivo GGUF directo: https://huggingface.co/steampunque/Deepseek-R1-Distill-Llama-8B-Instruct-MP-GGUF/resolve/main/Deepseek-R1-Distill-Llama-8B-Instruct.Q6_K_H.gguf
+- Proyector multimodal Ultravox v0.5: https://huggingface.co/steampunque/ultravox-v0_5-llama-3_1-8b-Hybrid-GGUF
+- Fichero GGUF Q6_E_H: https://huggingface.co/steampunque/DeepSeek-R1-Distill-Llama-8B-Instruct-MP-GGUF/resolve/main/DeepSeek-R1-Distill-Llama-8B-Instruct.Q6_E_H.gguf
+- Fichero mmproj Ultravox: https://huggingface.co/steampunque/ultravox-v0_5-llama-3_1-8b-MP-GGUF/resolve/main/ultravox-v0_5-llama-3_1-8b.mmproj.gguf
+- Hilo de discusion sobre cuantizacion hibrida en llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/13040
+- Benchmarks del autor: https://huggingface.co/spaces/steampunque/benchlm
+- Dataset goldcoin: https://huggingface.co/datasets/steampunque/benchlm/blob/main/goldcoin.txt
+- Dataset humaneval: https://huggingface.co/datasets/steampunque/benchlm/blob/main/humaneval.txt

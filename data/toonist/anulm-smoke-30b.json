@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Die Fallers - Heimatserie aus dem Schwarzwald - ARD Mediathek",
-      "url": "https://www.ardmediathek.de/swr/die-fallers",
-      "snippet": "Die SWR Kultserie über das Leben einer fiktiven Familie auf einem Bauernhof im Schwarzwald ist zurück aus der Sommerpause. Ab …"
-    },
-    {
-      "title": "Die Fallers - alle verfügbaren Videos - jetzt streamen! - ARD Mediathek",
-      "url": "https://www.ardmediathek.de/sendung/Die%20Fallers/Y3JpZDovL3N3ci5kZS8yMzAyMDQ4",
-      "snippet": "Die SWR Kultserie über das Leben einer fiktiven Familie auf einem Bauernhof im Schwarzwald."
-    },
-    {
-      "title": "Die Fallers - Die Fallers - TV - SWR.de",
-      "url": "https://www.swr.de/video/sendungen-a-z/die-fallers/index.html",
-      "snippet": "Die SWR Kultserie läuft seit 1994 immer sonntags zwischen 19:15 und 19:45 Uhr im SWR Fernsehen."
-    },
-    {
-      "title": "Die Fallers verpasst? Ganze Folge kostenlos online sehen!",
-      "url": "https://www.sendungverpasst.de/sendungen/die-fallers",
-      "snippet": "5 days ago · Die Fallers bei SWR verpasst? Kein Problem, hier gibt's die aktuellen Folgen als Video."
-    },
-    {
-      "title": "Die Fallers in der ARD Mediathek streamen - fernsehserien.de",
-      "url": "https://www.fernsehserien.de/die-fallers/streams/ard-mediathek",
-      "snippet": "Schaue neue Folgen von Die Fallers jetzt in der ARD Mediathek · Alle verfügbaren Staffeln und Folgen im Stream"
-    }
-  ]
+  "sources": []
 }

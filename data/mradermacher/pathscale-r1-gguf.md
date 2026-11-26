@@ -2,105 +2,100 @@
 
 ## Resumen
 
-PathScale-R1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generado por mradermacher a partir del modelo base ChiPhan1110/PathScale-R1. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local: el autor aplica el pipeline de cuantización sobre los pesos originales en safetensors y publica 12 variantes de precisión, desde F16 hasta Q2_K, todas ellas etiquetadas como compatibles con Hugging Face Inference Endpoints.
+PathScale-R1-GGUF es la version cuantizada en formato GGUF del modelo PathScale-R1, publicado por el usuario mradermacher a partir del modelo original de ChiPhan1110. Se trata de un modelo de 7.615.616.512 parametros (aproximadamente 7.600 millones), lo que lo situa en la categoria de modelos de ~8B, un tamano muy habitual para despliegue en hardware de consumo. La arquitectura subyacente no esta documentada en la informacion disponible, aunque la libreria declarada (transformers) y el pipeline conversacional sugieren un transformer decoder-only.
 
-El interés práctico del repositorio es doble. Por un lado, reduce el requisito de hardware de un modelo de aproximadamente 7.615 millones de parámetros (7,6 B) hasta permitir su ejecución en GPUs de consumo con cuantizaciones de 4 bits. Por otro, sirve como punto de entrada para evaluar el modelo base PathScale-R1 sin necesidad de descargar los pesos completos en alta precisión.
+El valor principal de esta publicacion no es el modelo en si, sino el conjunto de cuantizaciones estaticas que ofrece: desde Q2_K (3,1 GB) hasta f16 (15,3 GB), pasando por variantes K-quant e IQ4_XS. Esto permite ejecutar el modelo en estaciones de trabajo con GPU consumer, portatiles o incluso en CPU mediante llama.cpp, algo imposible con los pesos originales en precision completa. Ademas, el repositorio incluye ficheros mmproj (multi-modal supplement), lo que indica que el modelo base tiene capacidad de vision, aunque no se detalla su alcance.
 
-La información publicada es muy escasa: la model card únicamente contiene metadatos de cuantización y la referencia al modelo origen. No se declaran licencia, idiomas, longitud de contexto, arquitectura ni datos de entrenamiento, y el repositorio no registra descargas ni valoraciones en el momento de la consulta. El sufijo "R1" del nombre sugiere, sin confirmación oficial, que el modelo base podría pertenecer a la familia de destilaciones de razonamiento derivada de DeepSeek-R1, pero este extremo no está verificado en la documentación disponible.
+La relevancia de esta ficha es practica: para un desarrollador que quiera evaluar PathScale-R1 sin descargar el modelo original, estas cuantizaciones ofrecen un punto de entrada rapido con un coste de almacenamiento y VRAM reducido. La licencia no esta declarada, lo que constituye una advertencia importante para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no declarada en la model card ni en los metadatos) |
-| Parametros totales | 7.615.616.512 (aproximadamente 7,6 mil millones, medido sobre los safetensors del modelo origen) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer (inferida por libreria transformers y pipeline conversacional); no confirmada por el autor |
+| Parametros totales | 7.615.616.512 (~7,6B) |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (segun la model card del autor) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); origen en safetensors (convert_type: hf) |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre la arquitectura del modelo en el material proporcionado. La model card del repositorio se limita a los metadatos del proceso de cuantización: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales procedían de un checkpoint en safetensors de Hugging Face y fueron convertidos y cuantizados con la herramienta de llama.cpp. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de ajuste con RLHF, DPO u otras técnicas de alineamiento.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo original PathScale-R1. Los metadatos indican que es un modelo de 7.615.616.512 parametros, compatible con transformers y orientado a uso conversacional. La presencia de ficheros mmproj en el repositorio GGUF confirma que el modelo base incorpora un codificador multimodal (vision), aunque no se especifica que arquitectura de vision utiliza ni como se integra con el decoder.
 
-Del nombre del modelo base ("PathScale-R1") puede inferirse únicamente una convención de nomenclatura habitual en modelos destilados de razonamiento, pero no existe en la información disponible ninguna confirmación de que se trate de una destilación, de un modelo con modo de pensamiento explícito ni de una arquitectura concreta (transformer denso, MoE, híbrida, etc.). Cualquier afirmación al respecto sería especulativa.
+Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o RL con verificacion. El sufijo "R1" en el nombre sugiere una posible inspiracion en el paradigma de razonamiento de DeepSeek-R1, pero esto es una inferencia nominal, no un dato confirmado. Las cuantizaciones publicadas son estaticas (no hay quants con imatrix ni ponderados disponibles en el momento de la publicacion), segun indica el propio autor en la model card.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio está etiquetado con `conversational`, lo que indica que el modelo base está orientado a diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` señala que el formato de los ficheros GGUF puede desplegarse a través de Hugging Face Inference Endpoints.
-- Razonamiento, matemáticas, código, tool calling, capacidades de agente, visión o audio: no disponible. No se declara ninguna de estas capacidades en la información proporcionada.
-- Capacidades multilingües: no disponible. No se enumeran idiomas soportados.
-- Modo de pensamiento explícito (*thinking mode*): no confirmado, pese a que el sufijo "R1" pueda sugerirlo.
+- Generacion de texto conversacional multi-turno, segun el tag `conversational` del repositorio.
+- Procesamiento multimodal: los ficheros mmproj indican soporte de entrada de imagenes, aunque no se detalla la tarea concreta (VQA, captioning, OCR, etc.).
+- Razonamiento: el nombre "R1" sugiere capacidades de razonamiento, pero no hay evidencia documentada en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la model card (`language: en`).
+- Modo "thinking" explicito: no disponible.
 
 ## Casos de uso
 
-- Inferencia local en equipos de consumo: las variantes Q4_K_M (~4,6 GB) e IQ4_XS permiten ejecutar un modelo de 7,6 B en GPUs con 6-8 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos originales en precisión completa.
-- Despliegue en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` habilita publicar el modelo como endpoint gestionado para prototipos de chatbot sin infraestructura propia.
-- Asistentes conversacionales autoalojados: con la etiqueta `conversational` y una cuantización Q5_K_M o Q6_K, el modelo puede servir como backend de un chat interno donde los datos no deban salir de la organización.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 niveles de precisión sobre el mismo modelo base, lo que permite medir la degradación de perplejidad y de calidad de respuesta entre F16, Q8_0, Q4_K_M y Q2_K sobre un conjunto de validación propio.
-- Integración en aplicaciones de escritorio: los ficheros GGUF son compatibles con LM Studio, Jan y llama-cpp-python, lo que facilita empaquetar el modelo en herramientas de escritorio sin dependencias de CUDA específicas.
-- Bases para pipelines RAG: un modelo de 7,6 B cuantizado a 4 bits puede actuar como generador en un sistema de recuperación aumentada sobre documentación técnica, siempre que se valide previamente su comportamiento en el dominio concreto.
-- Pruebas de concepto de agentes conversacionales: antes de invertir en un modelo mayor, puede usarse esta versión cuantizada para validar el flujo de conversación, la latencia percibida y el diseño de prompts.
-
-En todos los casos, la idoneidad real depende de capacidades del modelo base que no están documentadas en el repositorio, por lo que se recomienda una evaluación previa con datos propios.
+- Evaluacion local rapida del modelo base: descargar la cuantizacion Q4_K_M (4,8 GB) y ejecutarla en llama.cpp u Ollama permite evaluar el comportamiento conversacional de PathScale-R1 sin necesidad de GPU de datacenter ni de los 15,3 GB del f16.
+- Prototipado de asistentes conversacionales en ingles: el tag `conversational` y el pipeline declarado lo hacen adecuado para construir demos de chatbot multi-turno en estaciones de trabajo con una unica GPU consumer.
+- Procesamiento de imagenes en local: los ficheros mmproj permiten cargar el modelo con soporte visual en llama.cpp, util para experimentos de descripcion de imagenes o respuesta a preguntas visuales sin enviar datos a la nube.
+- Despliegue en portatiles y equipos sin GPU dedicada: la cuantizacion Q2_K (3,1 GB) o Q3_K_S (3,6 GB) permite ejecucion en CPU con RAM modesta, adecuada para pruebas de concepto y entornos de desarrollo.
+- Integracion en pipelines de generacion aumentada por recuperacion (RAG): al ser un modelo de ~7,6B con pesos GGUF, puede combinarse con indices vectoriales locales para responder preguntas sobre documentacion en ingles.
+- Fine-tuning ligero o experimentacion con LoRA: aunque las cuantizaciones GGUF no son directamente entrenables, el modelo base en safetensors (7,6B) es un tamano manejable para adaptaciones con LoRA en una GPU de 24 GB.
+- Distribucion de demos offline: el formato GGUF y el reducido tamano de las cuantizaciones facilitan empaquetar una demo funcional en un contenedor o USB sin dependencias de red.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye métricas de MMLU, HumanEval, GSM8K, perplejidad ni comparaciones con otros modelos. Tampoco se aportan datos de latencia o throughput.
-
 ## Requisitos de hardware
 
-Estimaciones de VRAM para los pesos, calculadas a partir de los 7.615.616.512 parámetros declarados. No incluyen la caché KV, cuyo tamaño depende de una longitud de contexto que no se ha publicado:
-
-| Cuantizacion | Peso aproximado | VRAM recomendada con overhead |
-|---|---|---|
-| F16 | ~15,2 GB | 18-20 GB |
-| Q8_0 | ~8,1 GB | 11-13 GB |
-| Q6_K | ~6,3 GB | 9-11 GB |
-| Q5_K_M | ~5,4 GB | 8-10 GB |
-| Q4_K_M | ~4,6 GB | 7-9 GB |
-| IQ4_XS | ~4,2 GB | 6-8 GB |
-| Q3_K_M | ~3,7 GB | 6-7 GB |
-| Q2_K | ~2,9 GB | 5-6 GB |
-
-- GPU de consumo: Q4_K_M, IQ4_XS y Q3_K_M caben en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070). Q5_K_M y Q6_K requieren 10-12 GB (RTX 3080 12 GB, RTX 4070 Ti). F16 y Q8_0 necesitan 16 GB o más y quedan fuera de la mayoría de GPUs de consumo salvo la RTX 4090 (24 GB).
-- GPU de centro de datos: A100 40/80 GB, H100 y L40S permiten servir varias instancias concurrentes o precisiones altas con lotes grandes.
-- CPU y Apple Silicon: las cuantizaciones Q4_K_M y Q3_K_M son viables en CPU con llama.cpp; en Mac con memoria unificada de 16 GB o más el modelo completo entra sin problema.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y Hugging Face Inference Endpoints (por la etiqueta `endpoints_compatible`). vLLM y TGI no son las vías naturales para GGUF: para esos motores conviene usar los pesos safetensors del modelo base.
-- Latencia y throughput: no disponible. No se han publicado mediciones, y cualquier cifra dependería del hardware, la cuantización y la longitud de contexto efectiva.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,1 GB
+  - Q3_K_S: ~3,6 GB
+  - Q4_K_M: ~4,8 GB
+  - Q5_K_M: ~5,5 GB
+  - Q6_K: ~6,4 GB
+  - Q8_0: ~8,2 GB
+  - f16: ~15,3 GB
+  - Anadir ~1,0-1,5 GB si se carga el mmproj para vision.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q8; A100/H100 solo necesarias para f16 o para servir muchas peticiones concurrentes.
+- Cabe en GPU consumer: si, practicamente cualquier GPU con 6 GB o mas puede ejecutar Q4_K_S o Q4_K_M; las cuantizaciones Q2/Q3 caben en GPUs de 4 GB o en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; vLLM y TGI no soportan GGUF de forma nativa (requieren el modelo en safetensors).
+- Latencia y throughput: no disponibles; dependen del hardware y del backend. Como referencia cualitativa, un modelo de ~7,6B en Q4_K_M suele generar decenas de tokens por segundo en una RTX 4090 y unos pocos tokens por segundo en CPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de información verificada sobre modelos comparables dentro del material proporcionado, y no se han publicado resultados que permitan situar a PathScale-R1 frente a alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| PathScale-R1-GGUF | ~7,6B | no disponible | no disponible | GGUF | Cuantizaciones estaticas; incluye mmproj para vision |
+| Mistral-7B-Instruct (GGUF) | ~7,2B | 32k (v0.2) | Apache 2.0 | GGUF, safetensors | Referencia consolidada en ~7B, ampliamente soportado |
+| Llama 3.1 8B Instruct (GGUF) | ~8,0B | 128k | Llama 3.1 Community License | GGUF, safetensors | Contexto largo y buen rendimiento general en ingles |
+| Qwen2.5 7B Instruct (GGUF) | ~7,6B | 128k | Apache 2.0 | GGUF, safetensors | Multilingue y con soporte de tool calling |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| PathScale-R1-GGUF (este repo) | ~7,6 B | no disponible | no disponible | GGUF en Hugging Face |
-| Alternativas de la misma categoria (7-8 B) | no disponible | no disponible | no disponible | no disponible |
-
-Como referencia de categoria, un modelo de 7,6 B compite habitualmente con pesos abiertos del rango 7-9 B, pero no se han encontrado en la busqueda web datos que permitan establecer una comparacion rigurosa con PathScale-R1. Los resultados de la busqueda realizada no guardan relacion con el modelo.
+La comparativa es orientativa: no hay datos de benchmarks de PathScale-R1 que permitan situarlo frente a estas alternativas. La principal desventaja frente a Mistral, Llama 3.1 y Qwen2.5 es la ausencia de licencia declarada y de documentacion sobre contexto y entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card no declara licencia, idiomas, arquitectura, contexto ni datos de entrenamiento. Esto impide evaluar la idoneidad del modelo para uso comercial o para dominios regulados.
-- Licencia no disponible: al no especificarse, no puede asumirse permiso de uso comercial. Debe consultarse la licencia del modelo base ChiPhan1110/PathScale-R1 antes de cualquier despliegue en producción.
-- Riesgo de alucinación: inherente a cualquier modelo generativo de este tamaño y no cuantificado en este repositorio. No se han publicado evaluaciones de fidelidad factual.
-- Degradación por cuantización: las variantes Q3_K_S, Q3_K_M, Q2_K e IQ4_XS reducen de forma apreciable la precisión numérica. Para tareas de razonamiento o código conviene validar Q5_K_M o superior antes de adoptar una cuantización agresiva.
-- Longitud de contexto desconocida: sin este dato no puede garantizarse el comportamiento en conversaciones largas ni en tareas de recuperación con documentos extensos.
-- Idiomas no declarados: se desconoce si el modelo tiene un rendimiento equilibrado en castellano o si está mayoritariamente entrenado en inglés.
-- Metadatos anómalos: la fecha de creación registrada (2026-09-22) y el nulo número de descargas hacen recomendable verificar la procedencia y la integridad de los ficheros antes de usarlos.
-- Ausencia de validación comunitaria: sin descargas ni valoraciones, no existen señales externas de calidad ni de reproducibilidad de las cuantizaciones.
-- Este repositorio es solo de inferencia: al estar en formato GGUF, no es adecuado para fine-tuning directo; para reentrenar habría que partir de los pesos safetensors originales.
+- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar con el autor del modelo base (ChiPhan1110) antes de cualquier despliegue en produccion.
+- Idioma: la model card solo declara ingles (`en`); el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin medir empiricamente el limite real.
+- Riesgo de alucinacion: inherente a los modelos de ~7,6B sin documentacion de alineamiento; no hay datos sobre RLHF o DPO que permitan estimar su fiabilidad.
+- Cuantizaciones estaticas: el autor no ofrece variantes con imatrix ni ponderadas, lo que puede implicar una perdida de calidad algo mayor en Q2/Q3 frente a alternativas con calibracion.
+- Documentacion escasa: no hay informacion sobre arquitectura, dataset, contexto ni benchmarks; la evaluacion debe hacerse por prueba directa.
+- Fecha de creacion futura en los metadatos (2026): conviene verificar la integridad y procedencia de los ficheros antes de usarlos en entornos sensibles.
+- Vision limitada: aunque se incluyen ficheros mmproj, no se documenta que tareas visuales estan soportadas ni con que calidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/PathScale-R1-GGUF
 - Modelo base: https://huggingface.co/ChiPhan1110/PathScale-R1
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-
-No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no estaban relacionados con el modelo.
+- Pagina de descargas del autor: https://hf.tst.eu/model#PathScale-R1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

@@ -56,12 +56,25 @@
   "removal_pattern": null,
   "renamed_to": "RusMiniLM/RusNanoMath-800M",
   "renamed_at": "2026-11-18T07:23:25.922Z",
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "SupraLabs/reasoning-summarizer-800m-pre-gguf · Hugging Face",
-      "url": "https://huggingface.co/SupraLabs/reasoning-summarizer-800m-pre-gguf",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "task": "Text Generation",
+      "dataset": "MATH-500",
+      "metric": "MATH-500 Accuracy",
+      "value": 36.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500",
+      "metric": "MATH-500 Algebra Accuracy",
+      "value": 52.42
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "GSM8K Accuracy",
+      "value": 52
     }
-  ]
+  ],
+  "sources": []
 }

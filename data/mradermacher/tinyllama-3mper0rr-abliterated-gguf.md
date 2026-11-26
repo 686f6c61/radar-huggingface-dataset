@@ -2,87 +2,93 @@
 
 ## Resumen
 
-TinyLlama-3MPER0RR-abliterated-GGUF es una cuantizacion en formato GGUF del modelo TinyLlama-3MPER0RR-abliterated, creada por el usuario mradermacher. El modelo base, desarrollado por 3MPER0RR, es una variante de TinyLlama (1.1B parametros) a la que se ha aplicado la tecnica de "abliteration", que elimina los mecanismos de rechazo y alineacion de seguridad del modelo original. Esto da como resultado un modelo conversacional con menos restricciones en sus respuestas.
+TinyLlama-3MPER0RR-abliterated-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo TinyLlama-3MPER0RR-abliterated, publicadas por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face. El modelo subyacente deriva de TinyLlama, un transformer decoder-only de aproximadamente 1.100 millones de parámetros, y ha sido sometido a un proceso de "abliteration", una técnica de modificación de pesos orientada a eliminar los mecanismos de rechazo aprendidos durante el ajuste por preferencias.
 
-El repositorio contiene exclusivamente los pesos cuantizados en formato GGUF, lo que permite su ejecucion en CPU y GPU con herramientas como llama.cpp, Ollama o LM Studio. La cuantizacion esta disponible en multiples precisiones (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS y F16), lo que ofrece flexibilidad para distintos requisitos de hardware.
+La relevancia de esta ficha reside en que empaqueta un modelo de muy bajo coste computacional en una batería de cuantizaciones que van desde Q2_K (0,5 GB) hasta f16 (2,3 GB), lo que permite ejecutarlo en hardware muy modesto, incluidos portátiles sin GPU dedicada o dispositivos de borde. El repositorio ocupa 9,8 GB en total al incluir todas las variantes.
 
-La relevancia de este modelo reside en su tamano reducido (1.1B parametros) combinado con la eliminacion de restricciones de seguridad, lo que lo hace util para experimentacion y casos de uso donde se requiere una generacion de texto sin filtros. Sin embargo, esta misma caracteristica implica riesgos importantes que se detallan en la seccion de limitaciones.
+Conviene subrayar que el autor de esta publicación es únicamente el cuantizador: no hay información publicada sobre el dataset de entrenamiento, el número de tokens, el proceso de alineación ni los resultados de evaluación del modelo base. La model card se limita a listar los ficheros GGUF disponibles y a remitir a la documentación genérica de mradermacher.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LLaMA (Transformer decoder) |
-| Parametros totales | 1.100.048.384 (1.1B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (TinyLlama base: 2048 tokens, no confirmado) |
-| Tipos de cuantizacion | F16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer decoder-only (derivada de TinyLlama; detalles no disponibles) |
+| Parámetros totales | 1.100.048.384 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base TinyLlama-3MPER0RR-abliterated se construye sobre la arquitectura TinyLlama, que es un transformer decoder de 1.1B parametros con 22 capas, 16 cabezas de atencion y dimension de embedding de 2048. TinyLlama se entreno con 3 billones de tokens, siguiendo la misma arquitectura y tokenizador que LLaMA 2.
+El modelo base es TinyLlama-3MPER0RR-abliterated, una variante de la familia TinyLlama de 1.100 millones de parámetros. Se trata de un transformer decoder-only con atención causal estándar, sin mezcla de expertos ni mecanismos híbridos SSM. La model card del repositorio de cuantización no documenta la composición del dataset de entrenamiento, el número de tokens procesados, la longitud de contexto nativa ni las técnicas de alineación empleadas (RLHF, DPO u otras).
 
-La variante "abliterated" aplica una tecnica de modificacion de pesos que elimina selectivamente las direcciones en el espacio de activaciones asociadas con comportamientos de rechazo o negativa. Este proceso, conocido como "abliteration", se realiza post-entrenamiento y no requiere reentrenamiento adicional. El resultado es un modelo que mantiene sus capacidades generales pero sin los mecanismos de seguridad que le impedian responder a ciertas solicitudes.
-
-No se dispone de informacion detallada sobre el proceso de entrenamiento especifico de esta variante, ni sobre la composicion del dataset utilizado para la abliteration. El repositorio GGUF no incluye informacion adicional sobre el entrenamiento.
+El único elemento diferencial documentado es el sufijo "abliterated", que indica que los pesos han sido modificados mediante abliteration, una técnica que identifica y proyecta fuera las direcciones del espacio de activaciones asociadas al comportamiento de rechazo, reduciendo la tendencia del modelo a negarse a responder. Esta modificación se aplica típicamente sobre un modelo ya alineado y no requiere reentrenamiento completo, aunque degrada parcialmente la calibración del modelo original. No se dispone de información sobre hiperparámetros, precisión de entrenamiento ni cronología del proceso.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo puede mantener dialogos multi-turno con un tono natural y menos restricciones que el modelo original.
-- Razonamiento basico: al estar basado en TinyLlama, conserva capacidades de razonamiento limitadas para su tamano.
-- Generacion de codigo: puede producir fragmentos de codigo sencillos, aunque con menor precision que modelos especializados.
-- Capacidades multilingues: no confirmadas, aunque TinyLlama base soporta multiples idiomas gracias a su tokenizador.
-- Conversacion sin filtros: la abliteration elimina los rechazos tipicos de modelos alineados, permitiendo respuestas a solicitudes que otros modelos rehusarian.
-- Compatibilidad con herramientas GGUF: puede ejecutarse en llama.cpp, Ollama, LM Studio y otros motores compatibles con este formato.
+- Generación de texto conversacional en inglés, heredada de la base TinyLlama.
+- Razonamiento básico y respuesta a instrucciones simples, limitado por el tamaño de 1.100 millones de parámetros.
+- Generación de código y matemáticas a nivel elemental; no hay evidencia publicada de rendimiento en estas tareas.
+- Comportamiento de rechazo reducido respecto al modelo alineado original, como consecuencia directa de la abliteration.
+- Soporte de tool calling y function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo de razonamiento explícito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Experimentacion con modelos sin alineacion: investigadores que estudian el comportamiento de modelos sin restricciones de seguridad pueden usar este modelo para analizar diferencias de comportamiento frente a versiones alineadas.
-- Generacion creativa de ficcion: escritores que necesitan explorar temas controvertidos o adultos sin las restricciones tipicas de los modelos comerciales pueden usar este modelo como asistente de escritura.
-- Pruebas de jailbreak y robustez: profesionales de seguridad pueden evaluar la eficacia de las tecnicas de abliteration y comparar la resistencia del modelo frente a intentos de manipulacion.
-- Desarrollo de chatbots de rol: creadores de personajes virtuales que requieren respuestas sin censura pueden desplegar este modelo en local mediante Ollama o llama.cpp.
-- Educacion sobre sesgos en IA: docentes pueden usar este modelo para demostrar como la alineacion afecta el comportamiento de los modelos y los riesgos de eliminarla.
-- Prototipado rapido en local: al ser un modelo de 1.1B en GGUF, puede ejecutarse en portatiles con 8GB de RAM, permitiendo prototipar aplicaciones conversacionales sin depender de APIs externas.
+- Prototipado rápido en local: gracias a las cuantizaciones de 0,5 a 0,8 GB, el modelo se puede cargar en un portátil sin GPU y servir respuestas en milisegundos para validar pipelines de prompts antes de migrar a un modelo mayor.
+- Experimentación con técnicas de abliteration: investigadores que estudian la supresión de comportamientos de rechazo pueden usar esta variante cuantizada para comparar respuestas frente al TinyLlama original sin necesidad de infraestructura de GPU.
+- Generación de texto de relleno y datos sintéticos: útil para crear corpus de prueba, plantillas de texto o datos de aumento en tareas de NLP donde la calidad lingüística exigida es moderada.
+- Despliegue en dispositivos de borde: con Q4_K_M (0,8 GB) cabe en Raspberry Pi 5 con 8 GB de RAM o en mini-PC con CPU moderna, permitiendo asistentes de texto sin conexión.
+- Educación y divulgación: sirve para demostrar el funcionamiento de un LLM completo y de las cuantizaciones GGUF en talleres, ya que el coste de ejecución es mínimo.
+- Pruebas de integración con llama.cpp y Ollama: el formato GGUF y los tags `endpoints_compatible` facilitan validar cadenas de inferencia, servidores compatibles con la API de OpenAI y herramientas de gestión de modelos.
+- Filtrado y clasificación de texto ligera: con un prompt adecuado puede emplearse para etiquetar fragmentos cortos en inglés, aunque la precisión será inferior a la de modelos de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye mediciones de MMLU, HumanEval, GSM8K ni otros tests estandar. Al ser una cuantizacion de un modelo abliterated, el rendimiento puede variar ligeramente respecto al modelo original TinyLlama, pero no hay datos cuantitativos para confirmarlo.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de cuantización no incluye métricas de MMLU, HumanEval, GSM8K ni de perplejidad comparativa entre cuantizaciones, más allá de la referencia genérica a un gráfico externo de calidad de cuantizaciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 1 GB (Q2_K) y 2,5 GB (F16) para el modelo completo.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, etc.) para cuantizaciones bajas; 4 GB o mas para Q8_0 o F16.
-- Compatible con CPU: las cuantizaciones Q4_K_M y menores pueden ejecutarse en CPU con 8 GB de RAM con velocidades aceptables (5-10 tokens/s en procesadores modernos).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui con backend llama.cpp.
-- Latencia estimada: en GPU consumer (RTX 3060), entre 20-40 tokens/s para Q4_K_M; en CPU moderna, entre 5-15 tokens/s.
+- VRAM/RAM estimada para inferencia: entre 0,5 GB (Q2_K) y 1,3 GB (Q8_0); f16 requiere unos 2,3 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar Q4_K_M; una RTX 3060, RTX 4060 o superior ofrece amplio margen y permite lotes mayores. En A100 o H100 el modelo está claramente infrautilizado, ya que el cuello de botella pasa a ser el ancho de banda de memoria.
+- Cabe en GPU de consumo: sí, en todas las GPU consumer modernas, incluidas GTX 1650, RTX 3050 y superiores; también en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (el tag `endpoints_compatible` lo indica) y cualquier runtime que acepte GGUF.
+- Latencia y throughput: no disponibles de forma oficial; por el tamaño del modelo, en CPU moderna se esperan decenas de tokens por segundo con Q4_K_M, y cientos en GPU consumer, aunque no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| TinyLlama-3MPER0RR-abliterated-GGUF | 1.1B | no disponible | no disponible | GGUF | Abliterated, sin restricciones |
-| TinyLlama-1.1B-Chat | 1.1B | 2048 | Apache 2.0 | safetensors | Version alineada con chat |
-| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 | safetensors | Modelo comercial de Meta |
+| TinyLlama-3MPER0RR-abliterated-GGUF (este) | 1,1 B | no disponible | Apache 2.0 | GGUF | Variante abliterated, solo inglés |
+| TinyLlama-1.1B-Chat (original) | 1,1 B | 2.048 tokens (según documentación pública de TinyLlama) | Apache 2.0 | safetensors, GGUF | Modelo alineado de referencia; contexto no confirmado en esta ficha |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (según documentación pública) | Apache 2.0 | safetensors, GGUF | Multilingüe, mayor contexto y rendimiento |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens (según documentación pública) | Apache 2.0 | safetensors, GGUF | Alternativa moderna con mejor razonamiento |
 
-La comparativa se limita a modelos de tamano similar. La diferencia principal es la ausencia de alineacion en el modelo abliterated, lo que afecta al comportamiento pero no necesariamente a las capacidades brutas. No hay datos de benchmarks para comparar rendimiento real.
+La comparación con los modelos alternativos se basa en datos públicos de sus respectivas familias; no se dispone de evaluaciones directas entre este modelo y los citados. En términos de contexto y capacidades multilingües, las alternativas modernas de 1,5 a 1,7 mil millones de parámetros superan previsiblemente a esta variante, cuyo principal atractivo es el comportamiento sin rechazos y su reducido tamaño.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser una variante de TinyLlama, hereda los sesgos del dataset de entrenamiento original, que no han sido mitigados por la abliteration.
-- Riesgo de alucinacion: el modelo puede generar informacion falsa o inventada con alta confianza, especialmente en temas especializados.
-- Sin garantias de seguridad: la abliteration elimina los mecanismos de rechazo, por lo que el modelo puede generar contenido ofensivo, ilegal o peligroso si se le solicita.
-- Informacion incompleta: no se dispone de datos sobre licencia, idiomas soportados, contexto exacto ni proceso de entrenamiento, lo que limita su uso en entornos de produccion.
-- Tamano de contexto limitado: si mantiene el contexto de TinyLlama (2048 tokens), no es adecuado para tareas que requieran contexto largo.
-- Sin soporte de tool calling: no hay evidencia de que el modelo soporte function calling ni integracion con herramientas externas.
-- Riesgo legal: el uso de modelos sin alineacion puede violar terminos de servicio de plataformas o leyes locales segun el contenido generado.
+- La abliteration elimina los mecanismos de rechazo, por lo que el modelo puede generar contenido dañino, sesgado o inexacto sin filtros; no es adecuado para aplicaciones orientadas al usuario final sin una capa de moderación externa.
+- Riesgo elevado de alucinación: con 1.100 millones de parámetros, la capacidad de mantener coherencia factual es muy limitada.
+- Idiomas: solo inglés documentado; el rendimiento en castellano no está evaluado y probablemente sea deficiente.
+- Longitud de contexto no documentada; no se debe asumir una ventana amplia para conversaciones multi-turno largas.
+- Licencia Apache 2.0 permite uso comercial, pero el autor del cuantizado no ofrece garantías sobre el modelo base ni sobre el proceso de abliteration.
+- No hay información sobre sesgos específicos introducidos o amplificados por la modificación de pesos.
+- La model card no documenta el proceso de entrenamiento ni la procedencia de los datos, lo que dificulta evaluar riesgos de contaminación o de propiedad intelectual.
+- El repositorio tiene un número muy bajo de descargas (251) y cero likes, lo que sugiere escasa validación por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-abliterated-GGUF
-- Modelo base (3MPER0RR): https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-abliterated
-- Variante obliterated (relacionada): https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF
-- Otro modelo abliterated del mismo autor: https://huggingface.co/mradermacher/tinyllama-abliterated-GGUF
-- Busqueda de modelos abliterated en Ollama: https://ollama.com/search?q=abliterated
+- Modelo base: https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-abliterated
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-abliterated-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#TinyLlama-3MPER0RR-abliterated-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- README de referencia sobre GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

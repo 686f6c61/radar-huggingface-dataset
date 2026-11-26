@@ -2,50 +2,49 @@
 
 ## Resumen
 
-G4-Hearthveil-12B-GGUF es la version cuantizada en formato GGUF del modelo OutisR/G4-Hearthveil-12B, un modelo de lenguaje de aproximadamente 11.900 millones de parametros orientado a roleplay, escritura creativa y narracion de historias. La cuantizacion la ha realizado mradermacher, un conocido publicador de versiones GGUF de modelos abiertos, y esta pensada para su uso con llama.cpp y derivados (Ollama, LM Studio, etc.).
+G4-Hearthveil-12B-GGUF es la version cuantizada en formato GGUF del modelo OutisR/G4-Hearthveil-12B, publicada por el usuario mradermacher, especializado en generar cuantizaciones estaticas de modelos abiertos. El modelo base es un transformer de aproximadamente 11.900 millones de parametros (11.907.350.576 segun los pesos en safetensors) orientado a roleplay, escritura creativa y narracion, construido sobre la familia Gemma 4 segun las etiquetas de la model card. La licencia declarada es Apache 2.0 y los idiomas soportados incluyen ingles, ruso y multilingue.
 
-El modelo base pertenece a la familia etiquetada como "gemma4" y "hearthveil", lo que sugiere que deriva de la arquitectura Gemma, aunque no se dispone de documentacion tecnica detallada sobre el proceso de entrenamiento ni sobre los datos utilizados. El repositorio incluye tanto pesos de texto cuantizados como suplementos multimodales (mmproj), lo que indica que el modelo base podria tener capacidades de vision, aunque no se detalla en la informacion disponible.
+La relevancia de esta publicacion radica en que ofrece el modelo en una bateria amplia de cuantizaciones (desde Q2_K de 4,9 GB hasta Q8_0 de 12,8 GB), lo que permite desplegarlo en hardware de consumo con llama.cpp y derivados. Ademas, el repositorio incluye ficheros mmproj (multi-modal supplement) en f16 y Q8_0, lo que sugiere que el modelo base incorpora algun tipo de capacidad multimodal, aunque la model card no detalla su naturaleza ni su alcance.
 
-La relevancia de esta ficha radica en que ofrece un punto de entrada practico para desplegar un modelo de 12B especializado en generacion creativa en hardware de consumo, con licencia Apache 2.0 y soporte para ingles, ruso y otros idiomas. No obstante, la ausencia de benchmarks publicados y de documentacion sobre el entrenamiento limita la evaluacion rigurosa de su calidad.
+Se trata de una ficha de cuantizacion, no de un modelo original: mradermacher no entrena ni modifica los pesos mas alla del proceso de cuantizacion. Por tanto, las capacidades reales dependen del modelo base OutisR/G4-Hearthveil-12B, cuya documentacion no se incluye en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de la familia Gemma, segun etiqueta "gemma4"; detalles no disponibles) |
+| Arquitectura | Transformer (familia Gemma 4, segun etiquetas de la model card) |
 | Parametros totales | 11.907.350.576 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en f16 y Q8_0 |
 | Idiomas soportados | en, ru, multilingual |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base OutisR/G4-Hearthveil-12B mas alla de las etiquetas "gemma4" y "hearthveil", que apuntan a una derivacion de la familia Gemma de Google. El numero de parametros (11.907.350.576) es consistente con un modelo denso de aproximadamente 12B. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO o fine-tuning supervisado.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de la etiqueta "gemma4", que lo situa en la familia Gemma 4 de Google. El recuento de parametros (11,9 mil millones) es coherente con un transformer denso de escala 12B, pero no se confirma si emplea atencion lineal, decodificacion especulativa u otras innovaciones. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-Respecto a la cuantizacion, mradermacher ha generado cuantizaciones estaticas (no imatrix) en el rango de Q2_K a Q8_0, ademas de dos suplementos multimodales (mmproj-f16 y mmproj-Q8_0) que sugieren la presencia de un codificador visual en el modelo base. El autor indica que las cuantizaciones ponderadas con imatrix estan disponibles en un repositorio separado (G4-Hearthveil-12B-i1-GGUF). No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+El proceso de cuantizacion realizado por mradermacher es estatico (quantize_version 2, output_tensor_quantised 1, convert_type hf) y genera los ficheros GGUF a partir de los pesos en formato Hugging Face del modelo base. La model card menciona que existen cuantizaciones con imatrix (weighted/imatrix quants) en un repositorio separado (G4-Hearthveil-12B-i1-GGUF), que suelen ofrecer mejor calidad por tamano que las estaticas equivalentes. La presencia de ficheros mmproj indica que el modelo base es multimodal, aunque no se especifica que modalidades cubre.
 
 ## Capacidades
 
-- Generacion de texto orientada a roleplay, escritura creativa y narracion de historias, segun las etiquetas del repositorio.
-- Soporte multilingue, con enfasis declarado en ingles y ruso.
-- Posible capacidad multimodal (vision) inferida de la presencia de archivos mmproj en el repositorio, aunque no confirmada en la documentacion.
+- Generacion de texto orientada a roleplay, escritura creativa y narracion, segun las etiquetas declaradas.
+- Soporte multilingue con enfasis en ingles y ruso.
+- Capacidad multimodal inferida de la presencia de ficheros mmproj (f16 y Q8_0), aunque no se detalla que modalidades cubre.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo "thinking" o razonamiento extendido: no disponible en la informacion proporcionada.
-- Capacidades de codigo y matematicas: no documentadas.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Roleplay conversacional: el modelo esta etiquetado especificamente para roleplay, por lo que puede emplearse en aplicaciones de personajes interactivos y chat narrativo, manteniendo personalidad y estilo a lo largo de la conversacion.
-- Escritura creativa asistida: adecuado para generar borradores de relatos, dialogos y descripciones, gracias a su orientacion declarada hacia creative-writing y storywriting.
-- Narrativa interactiva y ficcion ramificada: puede integrarse en motores de historias donde el usuario toma decisiones y el modelo genera continuaciones coherentes con el tono establecido.
-- Generacion de contenido en ruso e ingles: util para equipos que necesiten producir texto creativo en ambos idiomas, dado el soporte declarado de en y ru.
-- Prototipado local en hardware de consumo: las cuantizaciones Q4_K_M (7,5 GB) y Q5_K_M (8,6 GB) permiten ejecutar el modelo en GPU de gama alta para consumidores o incluso en CPU con suficiente RAM, facilitando pruebas sin infraestructura cloud.
-- Despliegue en pipelines de generacion de contenido: con licencia Apache 2.0, puede integrarse en herramientas internas de creacion de textos sin las restricciones de licencias no comerciales.
-- Experimentacion con modelos multimodales: los archivos mmproj permiten explorar entrada de imagenes en llama.cpp si el modelo base confirma esa capacidad.
+- Roleplay conversacional: el modelo esta etiquetado especificamente para roleplay, por lo que puede mantener personajes coherentes en conversaciones multi-turno; las cuantizaciones Q4_K_M (7,5 GB) permiten ejecutarlo en GPUs de consumo con 8-12 GB de VRAM.
+- Escritura creativa asistida: generacion de relatos, dialogos y ficcion con control de estilo, aprovechando la especializacion declarada en creative-writing y storywriting.
+- Narrativa interactiva y videojuegos de texto: integracion en motores de ficcion interactiva mediante llama.cpp u Ollama, con latencia baja gracias a los ficheros Q4_K_S (7,1 GB) marcados como "fast, recommended".
+- Prototipado de asistentes en ruso e ingles: el soporte bilingue declarado permite construir bots conversacionales para ambos idiomas sin necesidad de modelos separados.
+- Experimentacion multimodal en local: los ficheros mmproj permiten probar entradas multimodales en entornos de consumo, aunque el alcance exacto debe verificarse contra la documentacion del modelo base.
+- Despliegue en entornos con recursos limitados: la cuantizacion Q2_K (4,9 GB) permite ejecutar el modelo en GPUs de 6 GB o incluso en CPU con RAM suficiente, a costa de perdida de calidad.
+- Fine-tuning ligero sobre cuantizaciones de alta calidad: Q8_0 (12,8 GB) o Q6_K (9,9 GB) sirven como base para experimentos de LoRA o adaptaciones posteriores.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +52,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion: Q2_K ~4,9 GB; Q3_K_S ~5,6 GB; Q4_K_S ~7,1 GB; Q4_K_M ~7,5 GB; Q5_K_M ~8,6 GB; Q6_K ~9,9 GB; Q8_0 ~12,8 GB (tamanos de archivo del repositorio, que sirven como aproximacion de memoria necesaria).
-- GPU recomendadas: para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) ofrecen margen suficiente; para Q8_0, se recomienda una GPU con al menos 16-24 GB de VRAM. En entornos profesionales, A100 o H100 permiten mayor throughput y contextos mas largos.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas para cuantizaciones Q4/Q5; las cuantizaciones Q8_0 requieren al menos 16 GB para evitar offloading parcial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el repositorio incluye la etiqueta "endpoints_compatible".
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (aproximada, incluyendo overhead de contexto):
+  - Q2_K: ~5-6 GB
+  - Q3_K_M: ~7-8 GB
+  - Q4_K_M: ~8-9 GB
+  - Q5_K_M: ~9-10 GB
+  - Q6_K: ~11-12 GB
+  - Q8_0: ~14-15 GB
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q5; RTX 4090 24 GB o A100/H100 para Q8_0 y contextos largos.
+- Cabe en GPU de consumo: si, desde Q2_K en GPUs de 6-8 GB hasta Q8_0 en GPUs de 16 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si se dispone de VRAM suficiente.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| G4-Hearthveil-12B-GGUF | ~11,9B | no disponible | Apache 2.0 | GGUF | Especializado en roleplay y escritura creativa; sin benchmarks publicados |
-| Modelos Gemma 2 9B (GGUF) | ~9B | 8K (segun version) | Gemma license | GGUF | Alternativa de tamano similar de la familia Gemma; requiere aceptar terminos de licencia |
-| Mistral Nemo 12B (GGUF) | ~12B | 128K | Apache 2.0 | GGUF | Mismo rango de parametros, contexto amplio y licencia permisiva; benchmarks publicos disponibles |
-| Qwen2.5 14B (GGUF) | ~14B | 32K+ | Apache 2.0 | GGUF | Ligeramente mayor, con soporte multilingue amplio y benchmarks publicados |
+| G4-Hearthveil-12B-GGUF | 11,9B | no disponible | Apache 2.0 | GGUF | Especializado en roleplay y escritura creativa |
+| Modelo base OutisR/G4-Hearthveil-12B | 11,9B | no disponible | Apache 2.0 | safetensors | Version sin cuantizar del mismo modelo |
+| G4-Hearthveil-12B-i1-GGUF | 11,9B | no disponible | Apache 2.0 | GGUF (imatrix) | Cuantizaciones con imatrix del mismo autor, mayor calidad por tamano |
 
-La comparacion se limita a caracteristicas estructurales, ya que no se dispone de datos de rendimiento del modelo G4-Hearthveil-12B que permitan una comparacion cuantitativa.
+No se dispone de informacion sobre otros modelos comparables de la misma categoria (roleplay/creative-writing en escala 12B) en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a alternativas con datos verificables.
-- Documentacion del entrenamiento inexistente: se desconoce la composicion del dataset, el proceso de alineacion y los posibles sesgos incorporados.
-- Riesgo de alucinacion: como todo modelo generativo de este tamano, puede producir contenido factualmente incorrecto, especialmente fuera de tareas creativas.
-- Especializacion estrecha: las etiquetas indican un enfoque en roleplay y escritura creativa; su rendimiento en tareas de codigo, matematicas o razonamiento logico no esta documentado y podria ser limitado.
-- Cobertura idiomatica declarada limitada a en, ru y "multilingual" sin especificar; el rendimiento en castellano no esta verificado.
-- Contexto desconocido: la longitud de contexto no se indica, lo que impide planificar aplicaciones que requieran ventanas largas.
-- Licencia Apache 2.0 permite uso comercial, pero al derivar de un modelo base no documentado en detalle, conviene verificar las condiciones del modelo original OutisR/G4-Hearthveil-12B antes de un despliegue en produccion.
-- Repositorio sin descargas ni likes en el momento de la consulta: senal de baja validacion por parte de la comunidad.
+- La model card del repositorio cuantizado no documenta sesgos conocidos, tasas de alucinacion ni limitaciones especificas del modelo base; es responsabilidad del usuario evaluarlas.
+- La longitud de contexto no esta especificada, lo que impide planificar despliegues con ventanas largas sin consultar la documentacion del modelo base.
+- El soporte idiomatico declarado se limita a ingles, ruso y multilingue generico; el rendimiento en castellano no esta verificado.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma notable; la propia model card marca Q3_K_M como "lower quality" y recomienda Q4_K_S/Q4_K_M como equilibrio rapido y Q6_K como alta calidad.
+- Aunque la licencia es Apache 2.0, el uso comercial debe verificarse contra la licencia del modelo base y de los datos de entrenamiento originales, no solo contra la del repositorio cuantizado.
+- La capacidad multimodal inferida de los ficheros mmproj no esta documentada; no debe asumirse soporte de vision o audio sin validacion previa.
+- Al ser una cuantizacion estatica, puede presentar diferencias de comportamiento frente al modelo base en tareas sensibles a la precision numerica.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/G4-Hearthveil-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-Hearthveil-12B-GGUF
 - Modelo base: https://huggingface.co/OutisR/G4-Hearthveil-12B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/G4-Hearthveil-12B-i1-GGUF
-- Pagina de descripcion del modelo de mradermacher: https://hf.tst.eu/model#G4-Hearthveil-12B-GGUF
+- Pagina de overview del autor: https://hf.tst.eu/model#G4-Hearthveil-12B-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

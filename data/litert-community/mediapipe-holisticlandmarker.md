@@ -2,51 +2,51 @@
 
 ## Resumen
 
-MediaPipe Holistic Landmarker es un paquete de inferencia multimodal desarrollado originalmente por Google y redistribuido por la comunidad litert-community. Resuelve la detección unificada de 553 puntos clave del cuerpo humano en tiempo real: 33 landmarks de pose, 478 de cara e iris y 21 por cada mano, además de 52 blendshapes faciales opcionales y una máscara de segmentación de primer plano. No es un modelo generativo ni un LLM, sino un bundle de siete submodelos `.tflite` empaquetados en un único fichero `holistic_landmarker.task` de 13,68 MB con pesos en FP16.
+MediaPipe Holistic Landmarker es un paquete unificado de modelos de vision por computador desarrollado por Google y distribuido a traves de la organizacion litert-community en Hugging Face. Resuelve la deteccion de 553 puntos clave del cuerpo humano en tiempo real a partir de una sola imagen o fotograma de video: 33 landmarks de pose corporal, 478 landmarks faciales (incluyendo iris) y 2x21 puntos clave de manos, ademas de 52 blendshapes faciales opcionales y una mascara de segmentacion de la silueta en primer plano.
 
-Su relevancia radica en la eficiencia: integra detección y refinamiento en cascada sobre tres regiones (pose, cara y manos) con resoluciones de entrada moderadas (de 128×128 a 256×256), lo que permite ejecución en tiempo real en dispositivos móviles, navegador y sistemas embebidos sin aceleración dedicada. Está pensado para el ecosistema MediaPipe Tasks, con soporte para Android, iOS, web, Python y Flutter.
+El modelo se empaqueta como un unico fichero `holistic_landmarker.task` de 13,68 MB con pesos en FP16 que integra siete submodelos `.tflite` organizados en tres etapas (pose, cara y manos). Esta disenado para inferencia on-device en Android, iOS, web, Python y Flutter mediante la libreria MediaPipe, lo que lo hace relevante para aplicaciones de captura de movimiento, realidad aumentada, animacion facial y analisis ergonomico sin depender de la nube.
 
-La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor; los datos no disponibles se indican explícitamente.
+Su relevancia actual radica en que consolida en un solo artefacto lo que antes requeria orquestar tres soluciones independientes (Pose, Face Mesh y Hands), reduciendo el coste de integracion y el consumo de recursos en dispositivos moviles y navegadores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cascada de 7 submodelos TFLite (detectores + landmark detectors); no es un transformer |
-| Parametros totales | no disponible (solo se publican tamanos de fichero) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, no de texto) |
-| Tipos de cuantizacion | Pesos FP16 en el bundle; entradas/salidas en float32; no se documentan otras variantes |
-| Idiomas soportados | no disponible (no procesa lenguaje) |
+| Arquitectura | Pipeline de deteccion en cascada con 7 submodelos TFLite (detectores + landmark detectors), no disponible el detalle de la red troncal |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision, no generativo) |
+| Tipos de cuantizacion | FP16 (pesos del bundle); los submodelos se distribuyen en TFLite |
+| Idiomas soportados | no disponible (no aplica, modelo de vision) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.tflite` empaquetados en `holistic_landmarker.task` (13,68 MB, SHA-256 `e2dab61191e2dcd0a15f943d8e3ed1dce13c82dfa597b9dd39f562975a50c3f8`) |
+| Formato de pesos | `.task` (bundle MediaPipe) que contiene 7 ficheros `.tflite` |
 
 ## Arquitectura y entrenamiento
 
-El bundle no es una red única, sino una cascada de siete modelos TFLite organizados en tres etapas. La etapa de pose usa `pose_detector.tflite` (entrada `[1, 224, 224, 3]`) para localizar la región de interés y `pose_landmarks_detector.tflite` (entrada `[1, 256, 256, 3]`) para producir 33 landmarks 2D/3D y una máscara de segmentación `[1, 256, 256, 1]`. La etapa facial encadena `face_detector.tflite` (entrada `[1, 128, 128, 3]`, salidas `regressors` `[1, 896, 16]` y `classificators` `[1, 896, 1]`), `face_landmarks_detector.tflite` (entrada `[1, 192, 192, 3]`, 478 landmarks) y `face_blendshapes.tflite` (entrada `[1, 146, 2]`, 52 scores). La etapa de manos usa `hand_roi_refinement.tflite` (entrada `[1, 256, 256, 3]`, salida `[1, 1, 1, 4]` con centro y punto guía derivados de la muñeca de la pose) y `hand_landmarks_detector.tflite` (entrada `[1, 224, 224, 3]`, salidas de 21 landmarks, presencia, lateralidad y world landmarks).
+El modelo es un pipeline en cascada de detectores y regresores de landmarks. La etapa de pose combina `pose_detector.tflite` (entrada 224x224x3) con `pose_landmarks_detector.tflite` (entrada 256x256x3), produciendo 33 landmarks 2D/3D y una mascara de segmentacion de 256x256x1. La etapa facial encadena `face_detector.tflite` (128x128x3), `face_landmarks_detector.tflite` en variante lite (192x192x3, que difiere del face landmarker independiente de 256x256) y `face_blendshapes.tflite` (entrada 146x2), que devuelve 52 puntuaciones de blendshape. La etapa de manos usa `hand_roi_refinement.tflite` (256x256x3) para refinar la region de interes a partir de los puntos de muneca y mano de la pose, sustituyendo la deteccion de palma independiente, y `hand_landmarks_detector.tflite` (224x224x3) para obtener 21 landmarks 3D y la lateralidad por mano.
 
-No se documentan en la información disponible el número de tokens, la composición del dataset ni si hubo RLHF/DPO (no aplica a un modelo de visión). Las referencias técnicas citadas son los papers arXiv:2006.10204 (BlazePose) y arXiv:2006.10214 (MediaPipe Hands). La model card incluye además tres model cards upstream de Google en PDF: BlazePose GHUM 3D, Hand Tracking (Lite/Full) con análisis de fairness de octubre de 2021 y MediaPipe Face Mesh V2. La innovación destacable es el diseño en cascada con refinamiento de ROI, que reduce el coste computacional al aplicar los detectores de landmarks solo sobre recortes de baja resolución.
+No se dispone de informacion sobre el numero de tokens de entrenamiento ni sobre la composicion del dataset en la informacion proporcionada. Los tags hacen referencia a los papers arXiv:2006.10204 y arXiv:2006.10214, que corresponden a los trabajos de BlazePose y Face Mesh de Google. El repositorio incluye tres model cards upstream en PDF (BlazePose GHUM 3D, Hand Tracking Lite/Full con analisis de fairness de octubre de 2021 y MediaPipe Face Mesh V2) que documentan el entrenamiento y la evaluacion de los submodelos originales.
 
 ## Capacidades
 
-- Detección de 553 landmarks corporales: 33 de pose, 478 de cara e iris y 2×21 de manos.
-- Landmarks 3D de manos, incluidos world landmarks en coordenadas métricas.
-- Clasificación de lateralidad de mano (izquierda/derecha) con score de presencia.
-- 52 blendshapes faciales opcionales para expresividad y animación.
-- Máscara de segmentación de pose en primer plano (`[1, 256, 256, 1]`).
-- Ejecución on-device en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
-- Procesamiento en tiempo real gracias a entradas de baja resolución y pesos FP16.
-- No soporta tool calling, agentes, razonamiento multi-turno ni capacidades multilingües: es un modelo puramente perceptivo.
+- Deteccion de 33 landmarks de pose corporal en 2D y 3D.
+- Deteccion de 478 landmarks faciales, incluyendo puntos de iris.
+- Deteccion de 2x21 landmarks de mano con clasificacion de lateralidad (izquierda/derecha) y puntuacion de presencia.
+- Calculo opcional de 52 blendshapes faciales (puntuaciones de expresion).
+- Segmentacion de silueta en primer plano de la persona mediante mascara de 256x256.
+- Inferencia en tiempo real on-device en Android, iOS, web, Python y Flutter.
+- Procesamiento sobre imagen estatica o flujo de video (frame a frame).
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es un modelo puramente perceptivo.
 
 ## Casos de uso
 
-- **Captura de movimiento para animación**: el bundle produce 33 landmarks de pose y 21 por mano con coordenadas 2D y 3D, suficiente para retargeting en tiempo real sobre avatares o motores como Unity o Unreal sin hardware de captura dedicado.
-- **Seguimiento facial para avatares y VTubing**: los 478 landmarks de cara e iris más los 52 blendshapes permiten animar expresiones faciales con latencia baja en navegador o móvil, usando la demo web oficial como referencia de integración.
-- **Análisis ergonómico y de postura**: la combinación de pose y manos permite detectar posturas de trabajo, ángulos articulares y gestos repetitivos en vídeo de cámara convencional, útil en prevención de riesgos laborales o fisioterapia.
-- **Interacción gestual sin contacto**: la detección de manos con lateralidad y world landmarks posibilita interfaces por gestos en quioscos, automoción o domótica, ejecutándose on-device sin enviar vídeo a la nube.
-- **Fitness y rehabilitación**: el seguimiento de pose en tiempo real permite contar repeticiones, validar ángulos de articulaciones y corregir la forma del ejercicio en aplicaciones móviles, con la ventaja de que el modelo cabe holgadamente en un dispositivo de gama media.
-- **Telepresencia y videoconferencia con efectos**: la máscara de segmentación de pose y los blendshapes faciales permiten sustituir el fondo, aplicar filtros expresivos o generar avatares animados durante llamadas, todo procesado localmente.
-- **Investigación en visión por computador**: al ser un bundle reproducible con hashes SHA-256 por submodelo, sirve como línea base para comparar pipelines de detección de keypoints o para experimentar con el refinamiento de ROI.
+- Captura de movimiento sin marcadores: el pipeline unificado permite registrar simultaneamente postura corporal, gestos manuales y expresion facial en una sola pasada, adecuado para animacion de avatares y produccion de video.
+- Realidad aumentada facial: los 478 landmarks y los 52 blendshapes permiten superponer filtros, maquillaje virtual o mascaras que responden a la expresion del usuario en tiempo real en apps moviles.
+- Analisis ergonomico y de postura: los 33 landmarks de pose con coordenadas 3D permiten estimar angulos articulares para aplicaciones de prevencion de lesiones en entornos laborales o rehabilitacion.
+- Control por gestos: los 21 landmarks por mano con lateralidad y presencia permiten implementar interfaces sin contacto en quioscos, presentaciones o sistemas de accesibilidad.
+- Videoconferencia y avatares en navegador: al ejecutarse via MediaPipe en web, puede animar avatares o difuminar fondos usando la mascara de segmentacion sin enviar video al servidor.
+- Fitness y entrenamiento guiado: la combinacion de pose y manos permite evaluar la ejecucion de ejercicios y corregir la tecnica en tiempo real desde el movil.
+- Telemedicina y seguimiento motor: la deteccion facial y de manos facilita la evaluacion remota de movilidad facial (por ejemplo, tras un ictus) mediante blendshapes y landmarks.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +54,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el bundle completo ocupa 13,68 MB en FP16 y los submodelos individuales van de 88,4 KB (`hand_roi_refinement.tflite`) a 5,48 MB (`hand_landmarks_detector.tflite`), por lo que la huella de memoria es muy reducida.
-- GPU recomendadas: no se especifican; el modelo está diseñado para CPU, GPU móvil y aceleradores de borde (NNAPI, Core ML, WebGL/WASM según plataforma).
-- Cabe en cualquier GPU de consumo y en dispositivos móviles de gama media; no requiere A100, H100 ni RTX 4090.
-- Opciones de despliegue: MediaPipe Tasks (Android, iOS, web, Python, Flutter), LiteRT/TFLite Runtime y la demo web oficial de mediapipe-samples-web.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; la model card solo afirma detección "en tiempo real".
+- VRAM estimada para inferencia: el bundle completo ocupa 13,68 MB en FP16, por lo que la huella de memoria es inferior a 100 MB en la mayoria de configuraciones; no se especifica el consumo exacto.
+- GPU recomendadas: no disponible. El diseno esta orientado a aceleracion en GPU movil (OpenGL ES/Metal), CPU y delegados de LiteRT/NNAPI.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos moviles de gama media; no requiere GPU dedicada.
+- Opciones de despliegue: MediaPipe Tasks en Android, iOS, web (JavaScript/TypeScript), Python y Flutter; el bundle `.task` se carga directamente con la API `HolisticLandmarker`.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; el autor lo describe como "en tiempo real".
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Landmarks | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| MediaPipe Holistic Landmarker (este) | Bundle TFLite unificado | 553 (33 pose + 478 cara + 42 manos) + 52 blendshapes + máscara | Apache 2.0 | Hugging Face, MediaPipe Tasks |
-| MediaPipe Pose Landmarker | TFLite | 33 pose + máscara | Apache 2.0 | MediaPipe Tasks |
-| MediaPipe Face Landmarker | TFLite | 478 cara + blendshapes | Apache 2.0 | MediaPipe Tasks |
-| MediaPipe Hand Landmarker | TFLite | 21 por mano | Apache 2.0 | MediaPipe Tasks |
+| Modelo | Tipo | Landmarks | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MediaPipe Holistic Landmarker (este) | Pipeline unificado pose+cara+manos | 553 (33+478+42) | no aplica | Apache 2.0 | Hugging Face, MediaPipe |
+| MediaPipe Pose Landmarker | Solo pose | 33 | no aplica | Apache 2.0 | MediaPipe |
+| MediaPipe Face Landmarker | Solo cara + blendshapes | 478 + 52 blendshapes | no aplica | Apache 2.0 | MediaPipe |
+| MediaPipe Hand Landmarker | Solo manos | 2x21 | no aplica | Apache 2.0 | MediaPipe |
 
-La ventaja del bundle Holistic es la integración de las tres tareas en un único fichero con refinamiento de ROI compartido; el coste es que no permite prescindir de las etapas no deseadas si solo se necesita una región. No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+La ventaja del Holistic Landmarker frente a los tres modelos independientes es la integracion en un unico artefacto y la reutilizacion de los puntos de muneca de la pose para inicializar la deteccion de manos, lo que reduce la latencia agregada. Como contrapartida, el detector facial interno usa una variante lite de 192x192 en lugar de la version de 256x256 del Face Landmarker independiente, lo que puede suponer menor precision en rostros pequenos o lejanos.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni agentes; cualquier expectativa en ese sentido es un error de categoría.
-- Los resultados de benchmarks y las cifras de latencia no están publicados en la información disponible; no deben asumirse rendimientos concretos sin medirlos.
-- La model card remite a análisis de fairness upstream (Hand Tracking, octubre de 2021) para sesgos; no se detallan en esta ficha sesgos específicos por tono de piel, género u oclusión.
-- Riesgo de fallo en condiciones de oclusión, iluminación adversa, múltiples personas o resoluciones muy bajas, inherente a los detectores en cascada con entradas de 128×128 a 256×256.
-- El refinamiento de ROI de manos depende de los keypoints de muñeca de la etapa de pose; si la pose falla, la detección de manos puede degradarse.
-- Licencia Apache 2.0: permite uso comercial con atribución y sin garantías; conviene revisar las model cards upstream de Google para condiciones adicionales de los submodelos originales.
-- El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, lo que sugiere baja validación comunitaria de esta redistribución concreta.
+- Modelo puramente perceptivo: no genera texto, no razona y no soporta instrucciones en lenguaje natural.
+- Precision dependiente de la calidad de imagen, iluminacion y oclusiones; el uso de una variante lite en la etapa facial puede degradar la precision en rostros pequenos.
+- Riesgo de fallos en escenas con multiples personas, ya que el pipeline esta pensado para una persona principal por fotograma.
+- Los model cards upstream documentan analisis de fairness para la deteccion de manos (octubre de 2021); pueden existir sesgos de rendimiento segun tono de piel, genero o condicion fisica que conviene evaluar en el dominio de despliegue.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones de los model cards upstream de Google incluidos en el repositorio.
+- No se dispone de informacion sobre idiomas ni sobre el rendimiento en condiciones de baja luminosidad o camaras de baja resolucion.
+- El repositorio figura con 0,0 GB de tamano reportado y 0 likes, lo que sugiere que es una redistribucion comunitaria y no el canal oficial de Google; conviene verificar la integridad mediante los SHA-256 publicados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker
-- Fichero del bundle: https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker/blob/main/holistic_landmarker.task
-- Documentación de la tarea: https://developers.google.com/edge/mediapipe/solutions/vision/holistic_landmarker
+- Documentacion oficial: https://developers.google.com/edge/mediapipe/solutions/vision/holistic_landmarker
 - Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/holistic_landmarker
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/holistic_landmarker/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/holistic_landmarker/ios
+- Ejemplo Python: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/holistic_landmarker/python
+- Ejemplo web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/holistic-landmarker.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/holistic_landmarker
 - Paper BlazePose: https://arxiv.org/abs/2006.10204
-- Paper MediaPipe Hands: https://arxiv.org/abs/2006.10214
-- Model card BlazePose GHUM 3D (PDF en el repo): https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker/blob/main/Model%20Card%20BlazePose%20GHUM%203D.pdf
-- Model card Hand Tracking (Lite/Full) con fairness (PDF en el repo): https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker/blob/main/Model%20Card%20Hand%20Tracking%20%28Lite_Full%29%20with%20Fairness%20Oct%202021.pdf
-- Model card MediaPipe Face Mesh V2 (PDF en el repo): https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker/blob/main/Model%20Card%20MediaPipe%20Face%20Mesh%20V2.pdf
+- Paper Face Mesh: https://arxiv.org/abs/2006.10214

@@ -2,49 +2,49 @@
 
 ## Resumen
 
-WorkOffline/Qwen3-14B-GGUF es un espejo no modificado de los ficheros GGUF oficiales del modelo Qwen3-14B, publicado por el proyecto WorkOffline para que su aplicación pueda descargar los pesos desde un único punto, fijado a una revisión exacta y verificado mediante SHA-256. No se trata de un modelo nuevo ni de un fine-tuning: los bytes son idénticos a los del repositorio upstream Qwen/Qwen3-14B-GGUF, y todo el crédito del modelo corresponde a Qwen (Alibaba) y la conversión GGUF a los autores originales.
+Qwen3-14B-GGUF es un repositorio espejo que redistribuye los ficheros GGUF cuantizados del modelo Qwen3-14B, desarrollado originalmente por Alibaba Qwen. Este repositorio concreto lo mantiene el usuario WorkOffline con el objetivo de que su aplicación WorkOffline pueda descargar los pesos desde un único origen, fijado a una revisión exacta y verificado mediante SHA-256. No introduce ninguna modificación sobre los ficheros originales: los bytes son idénticos a los publicados en Qwen/Qwen3-14B-GGUF.
 
-El modelo subyacente, Qwen3-14B, es un transformer denso de aproximadamente 14.800 millones de parámetros (la ficha de ggml-org lo lista con 15B), desarrollado por el equipo Qwen dentro de la familia Qwen3. Está pensado para generación de texto, razonamiento, código y matemáticas, con soporte multilingüe y modos de razonamiento explícito (thinking) propios de la familia Qwen3. Su licencia Apache-2.0 lo hace apto para uso comercial sin restricciones adicionales.
+El modelo subyacente, Qwen3-14B, es un transformer denso de aproximadamente 14.768 millones de parámetros (14,7B) perteneciente a la familia Qwen3. Está pensado para generación de texto, razonamiento, código y conversación multilingüe, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de este repositorio concreto es operativa: ofrece un único fichero cuantizado Q4_K_M (9.001.752.960 bytes, unos 8,4 GiB) con hash SHA-256 publicado, lo que permite despliegues reproducibles y verificables en entornos con conectividad limitada o requisitos de integridad de artefactos. Para quien evalúe el modelo en sí, conviene consultar la documentación upstream de Qwen3-14B, ya que este espejo no añade información técnica propia.
+La relevancia de este repositorio es logística más que técnica: facilita el despliegue reproducible del modelo en formato GGUF (concretamente la cuantización Q4_K_M) para entornos de inferencia local como llama.cpp u Ollama, garantizando la integridad de los ficheros mediante hashes documentados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3); detalles completos no disponibles en este repositorio |
-| Parametros totales | ~14,8B (la ficha de ggml-org indica 15B) |
+| Arquitectura | Transformer denso (familia Qwen3); detalles internos no disponibles en la informacion proporcionada |
+| Parametros totales | 14.768.307.200 (14,7B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q4_K_M (único fichero publicado en este repositorio) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q4_K_M (unico fichero incluido en este repositorio) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura ni el proceso de entrenamiento; solo redistribuye un artefacto GGUF derivado de Qwen/Qwen3-14B. Por la información disponible, el modelo base es un transformer denso de la familia Qwen3 con aproximadamente 14,8B de parámetros. Los detalles sobre número de tokens de entrenamiento, composición del dataset, fases de RLHF/DPO o innovaciones técnicas (por ejemplo, modos de razonamiento) no están disponibles en la información proporcionada y deben consultarse en la model card oficial de Qwen/Qwen3-14B.
+El modelo base Qwen3-14B es un transformer denso de 14,7B parámetros. La información proporcionada en este repositorio es un espejo de ficheros GGUF y no incluye detalles sobre la arquitectura interna (número de capas, dimensiones de atención, tipo de atención, etc.), la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron fases de RLHF o DPO. Estos datos deben consultarse en la model card del modelo original Qwen/Qwen3-14B.
 
-La única aportación técnica de este repositorio es la trazabilidad del artefacto: el fichero Qwen3-14B-Q4_K_M.gguf se copia desde la revisión 530227a7d994db8eca5ab5ced2fb692b614357fd del repositorio oficial, con tamaño de 9.001.752.960 bytes y SHA-256 500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0. La conversión GGUF es la original de Qwen; este espejo no la modifica.
+La única innovación técnica documentada en este repositorio es el proceso de empaquetado: los ficheros GGUF han sido convertidos por Qwen (no por el autor del espejo), y este repositorio fija la revisión upstream `530227a7d994db8eca5ab5ced2fb692b614357fd` con verificación SHA-256 del fichero `Qwen3-14B-Q4_K_M.gguf` (9.001.752.960 bytes, hash `500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento: capacidades propias del modelo Qwen3-14B; el nivel concreto de rendimiento no está documentado en este repositorio.
-- Generación de código y matemáticas: esperable en la familia Qwen3, aunque sin datos verificables en la información proporcionada.
-- Modos de razonamiento: la familia Qwen3 incorpora modos de pensamiento explícito; no se detalla su comportamiento en este espejo.
-- Soporte multilingüe: no disponible en la informacion proporcionada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades especiales (visión, audio): no disponible en la informacion proporcionada.
+- Generación de texto conversacional y de formato largo (el repositorio está etiquetado como `conversational`).
+- Razonamiento y resolución de problemas de complejidad media, propia de un modelo denso de 14B.
+- Generación de código y tareas de programación, si bien no se documentan benchmarks específicos en la información disponible.
+- Capacidades multilingües: la familia Qwen3 es multilingüe por diseño, pero este repositorio no declara la lista concreta de idiomas soportados.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
+- Soporte de tool calling, agentes y modo thinking: no confirmado en la información proporcionada para este repositorio; debe verificarse en la model card de Qwen/Qwen3-14B.
 
 ## Casos de uso
 
-- Despliegue offline o air-gapped: el espejo permite descargar un GGUF verificado por SHA-256 y ejecutarlo en entornos sin acceso a Hugging Face, usando llama.cpp u Ollama con el fichero Q4_K_M.
-- Distribución dentro de una aplicación de escritorio: WorkOffline usa este repositorio como origen único y fijado a revisión, lo que simplifica la gestión de actualizaciones y la verificación de integridad de los pesos.
-- Reproducibilidad de experimentos: al estar fijada la revisión upstream y publicado el hash, se puede garantizar que dos ejecuciones usan exactamente los mismos bytes del modelo.
-- Inferencia en hardware de consumo: con ~8,4 GiB en Q4_K_M, el modelo puede cargarse en GPUs con 12-16 GB de VRAM o ejecutarse en CPU con llama.cpp, aunque el rendimiento dependerá del hardware.
-- Prototipado de asistentes de texto y código: uso del modelo base Qwen3-14B para tareas de generación y razonamiento en fases de desarrollo, con la cautela de que las capacidades específicas deben validarse contra la documentación oficial.
-- Auditoría de cadena de suministro de modelos: el repositorio sirve como referencia para comparar hashes y detectar alteraciones en artefactos GGUF distribuidos por terceros.
+- Despliegue local de un asistente conversacional: el fichero Q4_K_M (9 GB) permite ejecutar un modelo de 14,7B en estaciones de trabajo con GPU de 12-16 GB de VRAM o incluso en CPU con suficiente RAM, usando llama.cpp u Ollama.
+- Integración en la aplicación WorkOffline: el propósito declarado del repositorio es servir como origen único de descarga con revisión fijada y verificación SHA-256, lo que simplifica la distribución reproducible de pesos en aplicaciones de escritorio.
+- Generación de código en entornos con requisitos de privacidad: al ejecutarse en local, el modelo no envía prompts a servicios externos, lo que encaja en pipelines de desarrollo con datos sensibles.
+- Prototipado rápido de aplicaciones de IA: la cuantización Q4_K_M ofrece un equilibrio razonable entre calidad y tamaño, adecuado para validar productos antes de escalar a infraestructura mayor.
+- Investigación y evaluación de modelos: disponer de una copia íntegra y verificable facilita la reproducibilidad de experimentos académicos.
+- Procesamiento por lotes de texto en servidores sin GPU dedicada: mediante llama.cpp en CPU se pueden ejecutar tareas de resumen, clasificación o extracción de información con throughput moderado.
+- Base para fine-tuning o destilación: aunque el formato GGUF no es el ideal para entrenamiento, el modelo base original en safetensors puede usarse como punto de partida; este repositorio sirve como referencia de la versión cuantizada resultante.
 
 ## Benchmarks y rendimiento
 
@@ -52,33 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero Q4_K_M ocupa 9.001.752.960 bytes (~8,4 GiB); se recomienda al menos 10-12 GB de VRAM para cargarlo con comodidad en GPU, y más si se usa contexto largo (no disponible).
-- GPU recomendadas: no hay datos específicos en la información proporcionada; por tamaño, encaja en RTX 4090 (24 GB), RTX 4080 (16 GB) y A100/H100 sin problema de capacidad.
-- GPU de consumo: sí cabe en GPUs con 12 GB o más en Q4_K_M; en 8 GB no cabría el fichero completo en VRAM.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; vLLM y TGI no están confirmados para este artefacto en la información disponible.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 9-10 GB para el fichero Q4_K_M incluido (9,0 GB de pesos más overhead de contexto y caché KV).
+- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB), A100/H100 para despliegues de mayor concurrencia. Una RTX 3060 de 12 GB podría ajustar el modelo con contextos cortos.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM usando Q4_K_M; en GPUs de 8 GB requeriría cuantizaciones más agresivas (Q3 o Q2) no incluidas en este repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. vLLM y TGI no son la vía natural para GGUF, aunque existen soportes parciales.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato en este repo | Disponibilidad |
 |---|---|---|---|---|---|
-| WorkOffline/Qwen3-14B-GGUF | ~14,8B | no disponible | Apache-2.0 | GGUF (Q4_K_M) | Espejo verificado de Qwen3-14B |
-| Qwen/Qwen3-14B-GGUF | ~14,8B | no disponible | Apache-2.0 | GGUF (múltiples cuantizaciones) | Repositorio oficial de Qwen |
-| ggml-org/Qwen3-14B-GGUF | 15B | no disponible | no disponible | GGUF | Conversión alternativa mantenida por ggml-org |
+| Qwen3-14B (este repo, GGUF Q4_K_M) | 14,7B | no disponible | Apache 2.0 | GGUF | Hugging Face (espejo WorkOffline) |
+| Qwen/Qwen3-14B (original) | 14,7B | no disponible | Apache 2.0 | safetensors | Hugging Face (oficial) |
+| Qwen/Qwen3-14B-GGUF (upstream) | 14,7B | no disponible | Apache 2.0 | GGUF (múltiples cuantizaciones) | Hugging Face (oficial) |
+
+No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada para establecer una comparativa de rendimiento con alternativas de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- Este repositorio no es un modelo original: es un espejo de bytes idénticos a Qwen/Qwen3-14B-GGUF; cualquier cambio upstream no se refleja automáticamente.
-- Solo se publica una cuantización (Q4_K_M); no hay opciones Q8_0, Q5_K_M u otras en este repositorio.
-- La model card no documenta sesgos, tasas de alucinación ni limitaciones idiomáticas; deben consultarse en la documentación oficial de Qwen3-14B.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar el fichero LICENSE copiado y la licencia upstream para confirmar términos.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso comunitario ni validación independiente del espejo más allá del hash publicado.
-- La fecha de creación indicada (2026-11-06) es futura respecto a la información habitual disponible; conviene verificar la integridad del repositorio antes de usarlo en producción.
+- Este repositorio es un espejo no oficial: no añade valor técnico sobre Qwen/Qwen3-14B-GGUF y solo incluye una cuantización (Q4_K_M), por lo que no sirve si se necesita Q5, Q6, Q8 o FP16.
+- Sesgos conocidos: no documentados en la información proporcionada; deben consultarse en la model card original de Qwen.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no se documentan mitigaciones específicas en este repositorio.
+- Limitaciones de contexto e idioma: no disponibles en la información proporcionada.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se atribuya a los autores originales (Alibaba Qwen).
+- La cuantización Q4_K_M introduce una pérdida de calidad respecto a los pesos originales; para tareas sensibles a la precisión conviene evaluar Q5/Q6 o el modelo en safetensors.
+- El repositorio tiene muy pocas descargas (249) y ningún "like", lo que reduce la señal de confianza comunitaria; para producción se recomienda usar el repositorio oficial de Qwen.
+- La fecha de creación indicada (2026-11-06) es futura respecto a la fecha habitual de consulta; verificar la integridad del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- Repositorio del espejo: https://huggingface.co/WorkOffline/Qwen3-14B-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3-14B
-- GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen3-14B-GGUF
-- Conversión de ggml-org: https://huggingface.co/ggml-org/Qwen3-14B-GGUF
-- Licencia upstream (revisión fijada): https://huggingface.co/Qwen/Qwen3-14B-GGUF/blob/530227a7d994db8eca5ab5ced2fb692b614357fd/LICENSE
+- Repositorio espejo: https://huggingface.co/WorkOffline/Qwen3-14B-GGUF
+- Modelo base original: https://huggingface.co/Qwen/Qwen3-14B
+- GGUF oficial upstream: https://huggingface.co/Qwen/Qwen3-14B-GGUF
+- Licencia Apache 2.0: https://huggingface.co/Qwen/Qwen3-14B/blob/main/LICENSE
+- Revisión upstream fijada: https://huggingface.co/Qwen/Qwen3-14B-GGUF/blob/530227a7d994db8eca5ab5ced2fb692b614357fd/LICENSE

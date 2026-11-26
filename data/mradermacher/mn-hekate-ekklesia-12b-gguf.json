@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MN-Hekate-Ekklesia-12B-GGUF",
+  "slug": "mradermacher-mn-hekate-ekklesia-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Hekate-Ekklesia-12B-GGUF",
+  "created_at": "2025-03-26T10:39:59.000Z",
+  "updated_at": "2026-11-26T00:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mergekit-community/MN-Hekate-Ekklesia-12B",
+    "base_model:quantized:mergekit-community/MN-Hekate-Ekklesia-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 12247813120,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692535328,
+  "storage_human": "84.7 GB",
+  "context_length": 1024000,
+  "base_model": "mergekit-community/MN-Hekate-Ekklesia-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

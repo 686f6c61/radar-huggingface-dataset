@@ -2,104 +2,106 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 es un ajuste fino del modelo Meta Llama 3.1 8B Instruct desarrollado por el usuario JhCIFT, que implementa la metodología CIRF (functional tokens para razonamiento explícito). El modelo sustituye el razonamiento en lenguaje natural por una traza de tokens funcionales dedicados (`[sof]`, `[eof]`, `[f_0]` a `[f_511]`) que codifican operaciones intermedias, con un presupuesto máximo de 12 tokens de resultado explícitos por ejemplo de entrenamiento.
+Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 es un fine-tune del modelo meta-llama/Llama-3.1-8B-Instruct desarrollado por el usuario JhCIFT. El modelo aplica la técnica CIRF (functional tokens para razonamiento explícito), en la que el modelo genera una traza de tokens funcionales (`[f_0]` a `[f_511]`) delimitada por `[sof]` y `[eof]` antes de emitir la respuesta final. Esta variante concreta, "Backward-Greedy-12", se construye a partir del modelo de resultado completo tras una selección backward-greedy de resultados con un presupuesto máximo de 12 tokens de resultado explícitos por ejemplo de entrenamiento.
 
-El modelo parte del checkpoint completo de la familia CIRF y aplica una selección backward-greedy de resultados con presupuesto de 12 tokens. El autor lo describe como el mejor diseño evaluado con ese presupuesto, aunque no se sitúa en la frontera de precisión/latencia del conjunto de pruebas. La actualización LoRA está fusionada en los pesos densos BF16 y los 514 tokens nuevos incluyen sus filas de embedding y de salida entrenadas, por lo que el modelo carga con Transformers estándar sin necesidad de PEFT ni del código CIRF.
+El modelo mantiene la arquitectura transformer densa de Llama 3.1 8B (8.034.471.936 parámetros), pero incorpora 514 tokens nuevos en el vocabulario (`[sof]`, `[eof]` y `[f_0]`…`[f_511]`) con sus filas de embedding y de salida entrenadas. La actualización LoRA se ha fusionado en los pesos BF16 densos, de modo que el modelo se carga con Transformers estándar sin necesidad de PEFT, del checkpoint base ni de código CIRF adicional.
 
-Es relevante para investigadores interesados en razonamiento eficiente con tokens funcionales, en la comparación entre trazas de razonamiento explícitas y latentes, y en el estudio del compromiso entre precisión y latencia en modelos de 8B parámetros. El modelo solo soporta inglés y no incluye chat template.
+Es relevante porque propone un mecanismo de razonamiento estructurado alternativo al chain-of-thought en lenguaje natural: la traza se compone de tokens funcionales discretos, lo que permite un control explícito del presupuesto de razonamiento y un parseo determinista de la salida. El modelo está orientado exclusivamente a inglés y su licencia es la Llama 3.1 Community License.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (Llama 3.1), con vocabulario extendido de 514 tokens funcionales CIRF |
+| Arquitectura | Transformer denso (Llama 3.1 8B) con vocabulario extendido de tokens funcionales CIRF |
 | Parametros totales | 8.034.471.936 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (heredada de Llama 3.1 8B Instruct: 128k tokens, no confirmado en la model card) |
-| Tipos de cuantizacion | No disponible (pesos publicados en BF16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Llama 3.1 Community License |
-| Formato de pesos | safetensors (BF16, LoRA fusionada) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (heredada del base Llama 3.1 8B, no confirmada en la informacion proporcionada) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | en |
+| Licencia | llama3.1 (Llama 3.1 Community License) |
+| Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso de 8.034 millones de parametros basado en Llama 3.1 8B Instruct. La innovacion principal es la incorporacion de un vocabulario funcional de 514 tokens nuevos: `[sof]` (start of function trace), `[eof]` (end of function trace) y `[f_0]` a `[f_511]`, que actúan como operaciones atómicas de razonamiento. El modelo genera una traza de estos tokens funcionales, opcionalmente con valores de resultado asociados, seguida de `[eof]` y la respuesta final.
+El modelo parte de Llama 3.1 8B Instruct, un transformer decoder-only denso, y le añade 514 tokens especiales: `[sof]` (start of function trace), `[eof]` (end of function trace) y 512 tokens funcionales `[f_0]` a `[f_511]`. El entrenamiento se realiza mediante una adaptación supervisada con LoRA que posteriormente se fusiona en los pesos BF16 densos, incluyendo las filas de embedding y de salida correspondientes a los tokens nuevos. El resultado es un checkpoint autónomo que carga con `AutoModelForCausalLM` sin dependencias adicionales.
 
-El entrenamiento parte del modelo CIRF completo y aplica una selección backward-greedy de resultados con un presupuesto de como máximo 12 tokens de resultado explícitos por ejemplo. La actualización LoRA resultante se fusiona en los pesos densos BF16, y las filas de embedding y de salida de los 514 tokens nuevos se incluyen entrenadas en el checkpoint exportado. No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO más allá del ajuste supervisado. El repositorio incluye archivos de procedencia (`training_config.json`, `provenance.json`, `export_verification.json`) que registran la configuración de entrenamiento, los hashes del checkpoint origen y las comprobaciones de exportación.
+La variante "Backward-Greedy-12" se obtiene tras una selección backward-greedy de resultados sobre el modelo de resultado completo, con un presupuesto de como máximo 12 tokens de resultado explícitos por ejemplo de entrenamiento. Según la model card, la selección final se realizó después de evaluar 91 diseños candidatos; los pesos publicados inicialmente (diseño `c_llama_1d3c7342176a`, semilla 2, seleccionado cuando se habían probado 56 de 91 diseños) siguen disponibles en la revisión `118894b`. No se detalla en la información proporcionada el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento explicito mediante trazas de tokens funcionales CIRF.
-- Razonamiento aritmetico y matematico de varios pasos (GSM8K, MultiArith, SVAMP, MATH-500).
-- Razonamiento de sentido comun (CommonsenseQA, StrategyQA).
-- Razonamiento logico y de paridad (Coin Flip).
-- Generacion con decodificacion greedy determinista (el protocolo de evaluacion usa `do_sample=False`).
-- Formato de prompt especifico sin chat template: `<|begin_of_text|>QUESTION[sof]`.
-- Parada en el token EOS del tokenizer (no en `[eof]`), con decodificacion `skip_special_tokens=False` para preservar los limites de la traza.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni capacidades multilingues mas alla del ingles.
+- Generación de texto en inglés con traza de razonamiento estructurada mediante tokens funcionales (`[sof]` … `[eof]`).
+- Razonamiento aritmético y de sentido común: evaluación en GSM8K, MultiArith, SVAMP, CommonsenseQA y Coin Flip.
+- Emisión de valores de resultado intermedios opcionales dentro de la traza funcional (hasta 12 tokens de resultado por ejemplo en esta variante).
+- Control explícito del presupuesto de razonamiento: la evaluación limita cada traza a 32 tokens funcionales, forzando `[eof]` al alcanzar el límite.
+- Decodificación greedy determinista con parada en el token EOS del tokenizer.
+- Parseo determinista de la salida: la respuesta final se extrae como el texto posterior a `[eof]`.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito en la información proporcionada.
+- Capacidad multilingüe: limitada a inglés según el campo `language` de la model card.
 
 ## Casos de uso
 
-- Investigacion en razonamiento eficiente: el modelo permite estudiar como un presupuesto acotado de tokens funcionales (12 resultados explicitos) afecta a la precision frente a trazas en lenguaje natural, comparandolo con las variantes Full, Zero-Results y Backward-Greedy-3/6/18 de la misma familia.
-- Evaluacion de metodologias CIRF: sirve como punto de referencia para reproducir los resultados publicados en GSM8K, MultiArith, SVAMP, CommonsenseQA y Coin Flip con el protocolo de `inference.py`.
-- Razonamiento aritmetico de un solo paso o de pocos pasos: con 100% en MultiArith y 80% en SVAMP, es adecuado para tareas de aritmetica sencilla donde la latencia importa y la traza funcional acota la generacion.
-- Analisis de latencia y precision: el autor lo situa fuera de la frontera precision/latencia, por lo que es util como caso de estudio del compromiso entre ambas métricas en modelos de 8B.
-- Experimentos de vocabulario extendido: permite investigar el efecto de 514 tokens funcionales entrenados sobre el comportamiento del modelo base en tareas de razonamiento.
-- Docencia y divulgacion: ilustra de forma concreta como se sustituye una cadena de pensamiento en lenguaje natural por una secuencia de operaciones simbolicas discretas.
+- Evaluación de razonamiento aritmético controlado: el modelo permite fijar un presupuesto máximo de tokens funcionales (por ejemplo, 12 o 32), lo que facilita experimentos reproducibles sobre el efecto de la longitud del razonamiento en la precisión.
+- Investigación en mecanismos de razonamiento discreto: sirve como banco de pruebas para comparar trazas de tokens funcionales frente a chain-of-thought en lenguaje natural, con parseo determinista de la traza.
+- Extracción estructurada de trazas para análisis: al delimitar la traza con `[sof]` y `[eof]`, se puede separar programáticamente el razonamiento de la respuesta final en pipelines de evaluación automática.
+- Reproducción de benchmarks: el repositorio incluye `inference.py` y `test_results.json`, lo que permite replicar las métricas publicadas (GSM8K, MultiArith, SVAMP, CommonsenseQA, Coin Flip) con solo Torch y Transformers.
+- Estudio comparativo de variantes CIRF: la familia incluye versiones Full, Zero-Results y Backward-Greedy con presupuestos 3, 6, 12, 18 y 24, lo que permite analizar el compromiso entre presupuesto de resultado y precisión.
+- Despliegue en entornos con Transformers estándar: al estar la LoRA fusionada y los tokens incluidos en el checkpoint, se puede servir con `text-generation-inference` (tag `endpoints_compatible`) sin código CIRF adicional.
+- Base para fine-tuning posterior: al ser un checkpoint denso BF16 estándar, puede servir como punto de partida para adaptaciones adicionales con PEFT o entrenamiento completo.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (decodificacion greedy, maximo 384 tokens nuevos y 32 tokens funcionales, puntuacion por exact-match):
+Resultados publicados en la model card (decodificación greedy, máximo 384 tokens nuevos y 32 tokens funcionales, exact-match):
 
-| Test set | Preguntas | Precision |
+| Test set | Preguntas | Precisión |
 |---|---:|---:|
-| GSM8K | 1.319 | 57,70% |
-| MultiArith | 178 | 100,00% |
-| SVAMP | 300 | 80,00% |
-| CommonsenseQA | 1.221 | 79,77% |
-| Coin Flip (corregido por paridad) | 3.333 | 75,46% |
+| GSM8K | 1.319 | 57,24% |
+| MultiArith | 178 | 98,88% |
+| SVAMP | 300 | 81,00% |
+| CommonsenseQA | 1.221 | 79,85% |
+| Coin Flip (corregido por paridad) | 3.333 | 84,37% |
 
-Coin Flip se puntua contra la paridad de los lanzamientos indicados en la pregunta, ya que aproximadamente el 20% de las etiquetas del dataset no coinciden con ella. El autor indica que los resultados completos por dataset, incluyendo MATH-500, StrategyQA y latencia con batch 1, estan en `test_results.json`. No se proporcionan resultados comparativos con otros modelos en la informacion disponible.
+Notas: Coin Flip se puntúa contra la paridad de los lanzamientos indicados en la pregunta, porque aproximadamente el 20% de las etiquetas del dataset no coinciden con ella. La model card indica que los resultados completos por dataset, incluyendo MATH-500, StrategyQA y latencia con batch 1, están en `test_results.json`. No se proporcionan resultados comparativos con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 16 GB solo para pesos (8.034 millones de parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomiendan 20-24 GB.
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 8-9 GB para pesos; en 4 bits, aproximadamente 4-5 GB (no se documentan cuantizaciones oficiales, por lo que habria que generarlas).
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16; GPUs consumer de 16 GB o mas para cuantizacion.
-- Cabe en GPU consumer: si, en RTX 4090 (24 GB) en BF16 y en GPUs de 16 GB con cuantizacion; en 8 GB solo con cuantizacion agresiva.
-- Opciones de despliegue: Transformers (protocolo documentado con `AutoModelForCausalLM` y `inference.py`); compatible con text-generation-inference y endpoints compatibles segun los tags del repositorio. No se documenta soporte nativo de llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada; el autor remite a `test_results.json` para la latencia con batch 1.
+- VRAM estimada para inferencia en BF16: aproximadamente 16 GB solo para pesos (8.034 millones de parámetros × 2 bytes), más overhead de activaciones y KV cache; en la práctica se recomienda al menos 20-24 GB para contextos moderados.
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para BF16; GPUs con 16 GB requerirían cuantización, que no se documenta en la información proporcionada.
+- Cabe en GPU consumer de gama alta: RTX 4090 (24 GB) en BF16; en GPUs de 16 GB no está confirmado sin cuantización.
+- Opciones de despliegue: Transformers (`AutoModelForCausalLM`), `text-generation-inference` (tag `endpoints_compatible`); no se documentan variantes GGUF, llama.cpp, Ollama ni vLLM en la información proporcionada.
+- Latencia y throughput: la model card menciona latencia con batch 1 en `test_results.json`, pero no se incluyen los valores numéricos en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 | 8.034 M | No disponible | 57,70% | Llama 3.1 Community | Hugging Face (0 descargas) |
-| Llama-3.1-8B-Instruct-CIRF-Full | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
-| Llama-3.1-8B-Instruct-CIRF-Zero-Results | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3/6/18 | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 | 8.034 M | no disponible | llama3.1 | Hugging Face (233 descargas) | Fine-tune CIRF con 514 tokens funcionales; solo inglés |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8.030 M | no disponible en la información | llama3.1 | Hugging Face (oficial Meta) | Modelo base sin tokens funcionales; multilingüe |
+| Llama-3.1-8B-Instruct-CIRF-Full | no disponible | no disponible | llama3.1 | Hugging Face (JhCIFT) | Variante CIRF de resultado completo |
+| Llama-3.1-8B-Instruct-CIRF-Zero-Results | no disponible | no disponible | llama3.1 | Hugging Face (JhCIFT) | Variante CIRF sin tokens de resultado |
 
-Las variantes de la familia CIRF comparten el mismo modelo base y metodologia, diferenciandose en el presupuesto de tokens de resultado y en la estrategia de seleccion. No se dispone de datos de benchmarks de las variantes hermanas en la informacion proporcionada, por lo que no es posible comparar su rendimiento relativo.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se documentan capacidades multilingues.
-- No utiliza chat template: el prompt debe seguir el formato exacto `<|begin_of_text|>QUESTION[sof]` y la decodificacion debe usar `skip_special_tokens=False`.
-- La parada debe hacerse en el token EOS del tokenizer, no en `[eof]`; un manejo incorrecto trunca la respuesta final.
-- El autor reconoce que el modelo no esta en la frontera de precision/latencia del conjunto de pruebas, por lo que existen variantes de la familia con mejor compromiso.
-- Precision limitada en GSM8K (57,70%) en comparacion con modelos de razonamiento mas grandes o con cadenas de pensamiento en lenguaje natural.
-- Coin Flip presenta un 20% de etiquetas del dataset que no coinciden con la paridad de la pregunta, lo que exige una correccion en la evaluacion y complica la comparacion directa con otros trabajos.
-- Riesgo de alucinacion y sesgos heredados de Llama 3.1 8B Instruct, no evaluados ni mitigados de forma especifica en la informacion disponible.
-- Licencia Llama 3.1 Community: restricciones de uso comercial, requisitos de atribucion y politica de uso aceptable de Meta; revisar `LICENSE` y `USE_POLICY.md`.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validacion independiente por parte de la comunidad.
-- No se documentan cuantizaciones oficiales ni soporte en motores de inferencia alternativos (llama.cpp, Ollama).
+- El modelo solo declara soporte de inglés (`language: en`); no se garantiza un rendimiento adecuado en otros idiomas.
+- No usa chat template: el formato de prompt es `QUESTION[sof]` precedido del token BOS; un uso incorrecto del formato degrada la salida.
+- Es necesario decodificar con `skip_special_tokens=False` y parar en EOS (no en `[eof]`) para preservar los delimitadores de la traza.
+- La evaluación limita las trazas a 32 tokens funcionales; sin ese límite, el comportamiento puede diferir del reportado.
+- Riesgo de alucinación inherente a los modelos de 8B; no se documentan evaluaciones de factualidad ni de seguridad.
+- Sesgos: no se documenta ningún análisis de sesgos en la información proporcionada.
+- Licencia Llama 3.1 Community License: impone restricciones de uso (incluida la política de uso aceptable en `USE_POLICY.md`) y obligaciones de atribución; revisar antes de uso comercial.
+- El modelo es un fine-tune de un tercero (JhCIFT) con 233 descargas y 0 likes; no hay evidencia de validación independiente.
+- Existen múltiples revisiones de pesos (la inicial en `118894b` y la actualizada el 2026-11-08); conviene fijar la revisión en producción para reproducibilidad.
+- No se documentan cuantizaciones oficiales, por lo que el despliegue en hardware limitado requiere cuantizar por cuenta propia, con riesgo de degradar la precisión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12
+- Revisión inicial de pesos: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12/tree/118894bc445b988caa5bbb601b0d63bbb5087be0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Variante CIRF-Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
-- Variante CIRF-Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results
-- Variante CIRF-Backward-Greedy-3: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3
-- Variante CIRF-Backward-Greedy-6: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6
-- Variante CIRF-Backward-Greedy-18: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-18
+- Variante Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
+- Variante Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results
+- Variante Backward-Greedy-3: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3
+- Variante Backward-Greedy-6: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6
+- Variante Backward-Greedy-18: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-18
+- Variante Backward-Greedy-24: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-24

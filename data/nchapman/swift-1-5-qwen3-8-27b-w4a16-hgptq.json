@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
-      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
-      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
-    },
-    {
-      "title": "UkisAI / Swift 1.5 Qwen3.8-27B",
-      "url": "https://ukisai.com/swift-1-5-27b",
-      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
-    }
-  ]
+  "sources": []
 }

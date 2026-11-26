@@ -1,0 +1,94 @@
+{
+  "schema": 2,
+  "id": "KokkakNiphon/hxh-ocr",
+  "slug": "kokkakniphon-hxh-ocr",
+  "author": "KokkakNiphon",
+  "url": "https://huggingface.co/KokkakNiphon/hxh-ocr",
+  "created_at": "2026-11-25T22:28:01.000Z",
+  "updated_at": "2026-11-25T22:28:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "text-recognition",
+    "text-detection",
+    "ctc",
+    "dbnet",
+    "mobilenetv4",
+    "int8",
+    "quantization-aware-training",
+    "esp-dl",
+    "webassembly",
+    "synthetic-data",
+    "hunter-x-hunter",
+    "pytorch",
+    "image-to-text",
+    "ja",
+    "dataset:KokkakNiphon/hxh-ocr-lines",
+    "dataset:KokkakNiphon/hxh-ocr-pages",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78950061,
+  "storage_human": "79 MB",
+  "context_length": null,
+  "base_model": "timm/mobilenetv4_conv_small_050.e3000_r224_in1k, timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Page reading, Accurate set (base detector + base readers, int8, browser pipeline)",
+      "dataset": "pages_v5 validation [900:1000] (photo-style pages)",
+      "metric": "line F1 (%), quad IoU >= 0.5",
+      "value": 83.17
+    },
+    {
+      "task": "Page reading, Fast set (det_v2 + tiny readers, int8, browser pipeline)",
+      "dataset": "pages_v5 validation [900:1000] (photo-style pages)",
+      "metric": "line F1 (%), quad IoU >= 0.5",
+      "value": 76.3
+    },
+    {
+      "task": "Page reading, Accurate set (int8, browser pipeline)",
+      "dataset": "pages_v3o validation [900:1000]",
+      "metric": "line F1 (%), quad IoU >= 0.5",
+      "value": 91.34
+    },
+    {
+      "task": "Line recognition, horizontal (int8 qat_fam_base_h48)",
+      "dataset": "synth_v4 validation, 512 held-out lines",
+      "metric": "CER (%)",
+      "value": 1.11
+    },
+    {
+      "task": "Line recognition, horizontal (int8 qat_v4_mnv4s_h48, v4 set)",
+      "dataset": "synth_v4 validation, 512 held-out lines",
+      "metric": "CER (%)",
+      "value": 0.84
+    }
+  ],
+  "sources": []
+}

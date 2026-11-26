@@ -2,111 +2,114 @@
 
 ## Resumen
 
-Mammoth-v1-27B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo base `baselabs/mammoth-1`, publicada por el usuario sergolsub. El objetivo es ejecutar los pesos originales en Apple Silicon mediante la librería `mlx_lm`, sin reentrenamiento ni cambios de arquitectura: solo reducción de precisión de bf16 a 8 bits. El repositorio incluye, además de los pesos, el glue de inferencia (`onejev_mlx.py`, `decision_config.json`, `joint_config.json`) necesario para el modo de decisión del modelo.
+`sergolsub/mammoth-v1-27B-MLX-8bit` es una conversión cuantizada a 8 bits en formato MLX del modelo `baselabs/mammoth-1`, publicada por el usuario sergolsub. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribución optimizada para Apple Silicon mediante la librería `mlx_lm`, pensada para ejecutar inferencia local en equipos Mac con memoria unificada. El modelo base pertenece a la familia `qwen3_5` según los tags de Hugging Face y cuenta con 27.356.728.560 parámetros totales.
 
-El modelo cuenta con 27.356.728.560 parámetros (unos 27,36 mil millones) distribuidos en 8 shards de safetensors que suman 30,4 GB en disco. La model card identifica la arquitectura con el tag `qwen3_5` y menciona una capa `linear_attn.in_proj_b`, lo que apunta a un transformer híbrido con atención lineal en al menos parte de sus capas, aunque no se detalla la composición completa de la arquitectura.
+La relevancia de esta ficha radica en su doble naturaleza: por un lado, documenta un modelo de 27B con una arquitectura que combina atención lineal (`linear_attn`) y atención estándar, y por otro, expone un caso práctico de cuantización verificada con métricas de divergencia KL frente a los pesos originales en bf16. El autor publica auditorías de calidad por tensor, checksums SHA-256 y comparativas entre las versiones de 8 y 4 bits, lo que permite evaluar la pérdida de fidelidad de forma cuantitativa.
 
-La relevancia de esta ficha radica en que documenta una conversión práctica para hardware de consumo Apple: en un Mac mini M4 Pro de 48 GB, el modelo carga en 9,42 s con un pico de memoria residente de 20,15 GB. El autor reporta que la cuantización a 8 bits no degrada la calidad frente a bf16 en sus evaluaciones internas, e incluso la mejora ligeramente en algunas métricas.
+El modelo está orientado a tareas de decisión estructurada (clasificación tipo `noul`, `choice` y `score`) más que a generación de texto libre, según se desprende de la interfaz de uso documentada. La licencia MIT facilita su adopción comercial, y el tamaño del repositorio (30,4 GB) lo sitúa en el rango de equipos con 32 GB o más de memoria unificada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención lineal (tag `qwen3_5`; detalles completos no disponibles) |
-| Parametros totales | 27.356.728.560 (≈27,36 B) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer con capas de atención lineal (`linear_attn`) y atención estándar; familia `qwen3_5` |
+| Parametros totales | 27.356.728.560 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (MLX); el modelo base admite bf16 |
+| Tipos de cuantizacion | 8 bits (MLX); existe versión 4 bits del mismo autor |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (heredada del modelo base `baselabs/mammoth-1`) |
-| Formato de pesos | safetensors en layout MLX (8 shards) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (layout MLX), 8 shards |
+| Tamano en disco | 30,41 GB |
+| Libreria | mlx |
+| Modelo base | baselabs/mammoth-1 |
+| Fecha de creacion | 2026-10-23 |
+| Ultima actualizacion | 2026-11-23 |
+| Descargas | 412 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla el proceso de entrenamiento del modelo base `baselabs/mammoth-1`: no se especifican el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. El tag `qwen3_5` sugiere una arquitectura de la familia Qwen 3.5, y la presencia de una capa `linear_attn.in_proj_b` en la auditoría KL indica el uso de atención lineal en al menos la primera capa del modelo de lenguaje, lo que apunta a un diseño híbrido entre atención completa y atención lineal para reducir coste computacional en contextos largos.
+La arquitectura del modelo base corresponde a la familia `qwen3_5`, un transformer con capas de atención lineal identificadas explícitamente en la auditoría de cuantización (el peor tensor en términos de KL es `model.language_model.layers.0.linear_attn.in_proj_b.weight`). Esto sugiere una hibridación entre mecanismos de atención lineal y atención completa, típica de las arquitecturas recientes que buscan reducir el coste computacional en contextos largos. El repositorio incluye además ficheros `decision_config.json` y `joint_config.json`, lo que indica la presencia de cabeceras específicas para tareas de decisión y un modo "joint" de inferencia.
 
-La conversión realizada por sergolsub es puramente de cuantización: no hay reentrenamiento ni modificación arquitectónica. El autor publica una auditoría tensor a tensor (`kl_audit.json`) comparando los pesos 8 bits dequantizados contra los originales bf16 mediante divergencia KL con histogramas de 512 bins. Se compararon 1184 tensores, con una KL media de 3,34e-04 y una KL máxima de 5,71e-03, localizada en `model.language_model.layers.0.linear_attn.in_proj_b.weight`. Solo 581 tensores presentan divergencia no nula, lo que respalda la fidelidad de la cuantización.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La conversión a 8 bits no implica reentrenamiento ni cambios arquitectónicos, tal como declara el autor. La innovación técnica destacable de esta publicación es la verificación de calidad de la cuantización: se reporta una KL media a nivel de tensor de 3,34e-04 (máximo 5,71e-03 sobre 1184 tensores comparados) y una KL de salida media de 2,30e-04 sobre 100 filas de evaluación, lo que indica una degradación muy baja respecto a bf16.
 
 ## Capacidades
 
-- Modo de decisión estructurada: el modelo expone una API `decide()` que clasifica entradas de texto en tipos predefinidos (`noul`, `choice`, `score`) con instrucciones y criterios configurables.
-- Clasificación booleana (`noul`): determina si una condición se cumple sobre un texto de entrada, por ejemplo si el cliente solicita un reembolso.
-- Clasificación multiclase (`choice`): asigna la entrada a una de varias categorías definidas por criterios, como enrutar un ticket al equipo de facturación o de envíos.
-- Puntuación ordinal (`score`): evalúa la severidad o intensidad de un caso según una escala de criterios (por ejemplo, `cosmetic`, `annoying`, `blocks`).
-- Procesamiento de texto en lenguaje natural: interpreta descripciones de incidencias, pedidos y errores técnicos.
-- Inferencia local en Apple Silicon: integración nativa con `mlx_lm` y el loader propio `OneJev`.
-- Soporte de tool calling, agentes, visión, audio o thinking mode: no disponible en la información proporcionada.
+- Decisión estructurada: el modelo expone una interfaz `decide()` que resuelve tareas de tipo `noul` (pregunta booleana), `choice` (selección entre criterios) y `score` (puntuación sobre una escala de criterios).
+- Clasificación y enrutamiento: puede asignar tickets o incidencias a equipos según criterios definidos en la llamada.
+- Evaluación de severidad: puntúa el impacto de un evento sobre una escala cualitativa proporcionada por el usuario.
+- Inferencia local en Apple Silicon mediante `mlx_lm` y el cargador `onejev_mlx`.
+- Generación de texto: no disponible explícitamente en la documentación; la interfaz documentada se centra en decisiones.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Enrutamiento automático de tickets de soporte: el modelo recibe el texto de la incidencia y devuelve la etiqueta del equipo responsable (`billing`, `shipping`, etc.) mediante una decisión de tipo `choice`. Es adecuado porque la latencia mediana de 2215 ms permite procesar tickets en tiempo casi real en local.
-- Triaje de severidad de incidencias: con una decisión de tipo `score`, clasifica errores técnicos (por ejemplo, "disk quota exceeded") en niveles como `cosmetic`, `annoying` o `blocks`, lo que permite priorizar colas de trabajo sin depender de la nube.
-- Detección de solicitudes de reembolso: una decisión `noul` sobre el texto del cliente determina si pide un reembolso, integrándose en un flujo de atención al cliente que derive automáticamente a facturación.
-- Clasificación de correos o mensajes entrantes: el modelo puede etiquetar mensajes según criterios definidos por el operador, útil para bandejas de entrada compartidas o sistemas de CRM.
-- Procesamiento por lotes en local con privacidad: al ejecutarse íntegramente en un Mac mini M4 Pro con 20 GB de memoria pico, permite clasificar datos sensibles sin enviarlos a servicios externos, con un throughput sostenido de 0,78 decisiones cortas por segundo.
-- Prototipado y evaluación de pipelines de decisión: el repositorio incluye `decision_config.json`, `joint_config.json` y `serve.patch`, lo que facilita montar un servidor local (`/v1/systemone`) y probar flujos de decisión antes de desplegarlos.
-- Automatización de back-office con bajo coste de infraestructura: al caber en hardware Apple de consumo, permite desplegar clasificación de documentos o incidencias en pequeñas oficinas sin GPU dedicada.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto de la incidencia y un conjunto de criterios (`billing`, `shipping`, etc.) y devuelve el equipo responsable, como se muestra en el ejemplo de la model card con el pedido #7821.
+- Detección de intención de reembolso: mediante una decisión de tipo `noul`, el modelo responde si el cliente solicita un reembolso a partir del texto libre, útil en flujos de atención al cliente automatizada.
+- Triaje de severidad de incidencias: con decisiones de tipo `score`, se clasifica un error (por ejemplo, "disk quota exceeded") en una escala como `cosmetic`, `annoying` o `blocks`, lo que permite priorizar colas de trabajo.
+- Clasificación de correos o mensajes entrantes: la interfaz de decisión permite asignar categorías predefinidas a mensajes sin necesidad de un modelo generativo completo.
+- Procesamiento local en Mac: gracias a los 20,15 GB de memoria residente máxima medida en un Mac mini M4 Pro de 48 GB, es viable desplegar el modelo en estaciones de trabajo Apple sin GPU dedicada.
+- Evaluación de calidad de cuantización: el repositorio sirve como referencia para equipos que necesiten validar la pérdida de fidelidad de sus propias cuantizaciones, con scripts como `output_kl.py` y `kl_weight_audit.py`.
+- Moderación o filtrado por criterios: la decisión de tipo `choice` con criterios arbitrarios permite implementar clasificadores configurables sin reentrenamiento.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son evaluaciones internas del autor de la conversión, no benchmarks estándar de la comunidad. Se comparan los pesos 8 bits frente a bf16:
+Los datos publicados por el autor corresponden a una evaluación propia sobre un conjunto de decisión, no a benchmarks estándar como MMLU o HumanEval.
 
-| Metrica | 8-bit | bf16 |
-|---|---|---|
-| Accuracy (eval del autor) | 85,6% | 84,4% |
-| Noul | 90,0% | 87,5% |
-| Choice | 88,0% | 88,0% |
-| Score | 76,0% | 76,0% |
-| Calibration PPL | 1,913 | 1,912 |
-| Decision Index 0.4.1 | 65,98 | no disponible |
+| Version | Accuracy | noul | choice | score | PPL | KL salida vs original | Disco | Latencia mediana |
+|---|---|---|---|---|---|---|---|---|
+| original (bf16) | 84,4 % | 87,5 % | 88,0 % | 76,0 % | 1,912 | referencia | 54,73 GB | 310062 ms |
+| 8 bits (esta ficha) | 85,6 % | 90,0 % | 88,0 % | 76,0 % | 1,913 | 2,30e-04 | 30,41 GB | 2215 ms |
+| 4 bits | 85,6 % | 87,5 % | 92,0 % | 76,0 % | 1,928 | 8,26e-03 | 17,44 GB | 2222 ms |
 
-Rendimiento medido en Mac mini M4 Pro 48 GB con MLX 8-bit:
+Divergencia KL por fila (nats) frente a la referencia bf16:
 
-| Metrica | Valor |
-|---|---|
-| Tamano en disco | 30,41 GB |
-| Tiempo de carga | 9,42 s |
-| Memoria residente pico | 20,15 GB |
-| Latencia de decisión (mediana) | 2215 ms |
-| Throughput sostenido | 0,78 decisiones cortas/s |
+| Par | Filas | Media | p95 | Max |
+|---|---|---|---|---|
+| original → 8 bits | 100 | 2,30e-04 | 9,10e-04 | 3,35e-03 |
+| 8 bits → 4 bits | 100 | 8,47e-03 | 3,86e-02 | 1,31e-01 |
+| original → 4 bits | 100 | 8,26e-03 | 4,05e-02 | 1,29e-01 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor reporta además un Decision Index 0.4.1 de 65,98. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 20,15 GB de memoria residente pico medidos con 8 bits; se recomienda al menos 24 GB de memoria unificada para margen.
-- Hardware validado: Mac mini M4 Pro con 48 GB de memoria unificada.
-- Cabe en GPU de consumo Apple: sí, en equipos Apple Silicon con 32 GB o más de memoria unificada; con 24 GB el margen es ajustado.
-- GPU NVIDIA: no aplicable directamente, ya que el formato es MLX; para CUDA habría que usar los pesos bf16 originales o una conversión GGUF no incluida en este repositorio.
-- Opciones de despliegue: `mlx_lm` con el loader `OneJev` incluido; el repositorio aporta `serve.patch`, `setup.sh` y `engine.py` para montar un servidor local compatible con `/v1/systemone`.
-- Latencia y throughput: mediana de 2215 ms por decisión y 0,78 decisiones cortas por segundo en el hardware indicado.
+- Memoria residente máxima medida: 20,15 GB en un Mac mini M4 Pro con 48 GB de memoria unificada.
+- Tiempo de carga medido: 9,42 s.
+- Latencia mediana por decisión: 2215 ms; throughput sostenido de 0,78 decisiones cortas por segundo.
+- Cabe en equipos Apple Silicon con 32 GB de memoria unificada o superior; el autor lo valida en 48 GB.
+- GPU dedicadas (A100, H100, RTX 4090): no aplicable directamente, ya que el formato es MLX y está pensado para Apple Silicon; no se documenta soporte CUDA.
+- Despliegue: `mlx_lm` y el cargador propio `onejev_mlx` incluido en el repositorio; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Existe una variante de 4 bits (17,44 GB en disco) para equipos con menos memoria, con latencia mediana similar (2222 ms) y mayor divergencia KL.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks estándar ni de especificaciones completas (contexto, idiomas) del modelo base, por lo que la comparación con alternativas de la misma categoría no está disponible en la información proporcionada.
-
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| sergolsub/mammoth-v1-27B-MLX-8bit | 27,36 B | no disponible | MIT | safetensors MLX 8-bit | Conversión para Apple Silicon |
-| baselabs/mammoth-1 | no disponible | no disponible | MIT | no disponible | Modelo base original |
-| Alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | Sin datos para comparar |
+| sergolsub/mammoth-v1-27B-MLX-8bit | 27,36B | no disponible | MIT | safetensors MLX 8 bits | Esta ficha; 30,41 GB, latencia 2215 ms |
+| sergolsub/mammoth-v1-27B-MLX-4bit | 27,36B | no disponible | MIT | safetensors MLX 4 bits | 17,44 GB, KL mayor (8,26e-03) |
+| baselabs/mammoth-1 (bf16) | 27,36B | no disponible | MIT | safetensors bf16 | Referencia original, 54,73 GB, latencia 310062 ms |
+| Qwen3.5 (familia base) | no disponible | no disponible | no disponible | no disponible | Familia arquitectónica declarada en los tags; sin datos verificables en esta información |
+
+No se dispone de datos de benchmarks estándar ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos del modelo base; se desconoce su comportamiento en dominios sensibles.
-- Riesgo de alucinación no evaluado: las métricas publicadas se centran en tareas de decisión cerrada, no en generación abierta.
-- La longitud de contexto no está especificada, lo que impide garantizar el rendimiento en entradas largas.
-- Los idiomas soportados no están documentados; no hay evidencia de calidad en castellano.
-- El modelo está empaquetado exclusivamente para MLX; no es directamente utilizable en CUDA, vLLM o llama.cpp sin conversión adicional.
-- La licencia MIT se hereda del modelo base, pero la model card advierte de que, en caso de conflicto, prevalece la licencia del repositorio upstream.
-- Las métricas de calidad y latencia provienen de una única máquina (Mac mini M4 Pro 48 GB) y de la evaluación del propio autor de la conversión; no han sido replicadas de forma independiente.
-- El repositorio incluye scripts ejecutables (`setup.sh`, `serve.patch`, `engine.py`, `onejev_mlx.py`); conviene revisarlos antes de ejecutarlos en producción.
-- Solo 420 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy limitado.
+- El modelo está especializado en decisiones estructuradas; no se documenta su comportamiento en generación de texto libre, código o matemáticas.
+- No se especifican los idiomas soportados; la evaluación se realizó presumiblemente en inglés según los ejemplos, pero no se confirma.
+- La longitud de contexto no está documentada, lo que impide planificar su uso en conversaciones multi-turno largas.
+- Riesgo de alucinación no evaluado en la información disponible; la naturaleza de clasificación reduce pero no elimina este riesgo en las etiquetas de decisión.
+- La cuantización a 8 bits introduce una divergencia KL de 2,30e-04 frente a bf16, muy baja pero no nula; en dominios sensibles conviene validar contra el modelo original.
+- El formato MLX limita el despliegue a Apple Silicon; no hay soporte documentado para CUDA, ROCm ni CPU x86.
+- La licencia MIT se hereda del modelo base, pero el autor advierte de que prevalece la licencia del repositorio upstream en caso de conflicto.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad.
+- El número de descargas (412) y la ausencia de likes sugieren una adopción todavía limitada; conviene tratar el modelo como experimental.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/mammoth-v1-27B-MLX-8bit
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
-- Auditoría KL incluida en el repo: `kl_audit.json` (https://huggingface.co/sergolsub/mammoth-v1-27B-MLX-8bit/blob/main/kl_audit.json)
-- Librería MLX: https://github.com/ml-explore/mlx
-- Documentación de `mlx_lm`: https://github.com/ml-explore/mlx-lm
+- Versión 4 bits: https://huggingface.co/sergolsub/mammoth-v1-27B-MLX-4bit

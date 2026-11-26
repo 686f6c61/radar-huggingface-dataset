@@ -2,51 +2,48 @@
 
 ## Resumen
 
-AVNI models es un repositorio agregador publicado por el usuario alfredscholarofficial (Alfred Scholar) que empaqueta tres modelos independientes utilizados por la aplicación macOS AVNI. No se trata de un modelo unico entrenado por el autor, sino de una coleccion de pesos redistribuidos de terceros, cada uno en su propio subdirectorio: `avni-small` (Qwen3.5-4B en cuantizacion 4-bit MLX, solo texto), `kokoro-v3` (Kokoro 82M para sintesis de voz en formato Core ML) y `parakeet-tdt-v3` (Parakeet TDT 0.6B v3 de NVIDIA para reconocimiento de voz en Core ML, acompanado de Silero VAD).
+AVNI models no es un modelo único, sino un repositorio agregador de tres paquetes de modelos empaquetados para la aplicación de macOS AVNI (Alfred Scholar). El repositorio distribuye un modelo de lenguaje Qwen3.5-4B cuantizado a 4 bits en formato MLX, un modelo de síntesis de voz Kokoro-82M convertido a Core ML y un sistema de reconocimiento de voz Parakeet TDT 0.6B v3 en Core ML, acompañado de un detector de actividad de voz Silero VAD. Cada paquete vive en una carpeta de primer nivel del repositorio y conserva su licencia original.
 
-El repositorio resuelve un problema de distribucion: la app AVNI necesita descargar packs de modelos listos para ejecucion local en Apple Silicon, y este repositorio actua como origen de esas descargas. Por tanto, su relevancia no esta en innovaciones arquitectonicas propias, sino en la curacion de formatos (MLX y Core ML) optimizados para inferencia en macOS.
+El interés del repositorio es fundamentalmente de integración y despliegue: agrupa en un único artefacto de 3,5 GB los componentes necesarios para una aplicación de escritorio con capacidades de texto, voz y transcripción, todos optimizados para ejecución local en hardware Apple (MLX y Core ML). No aporta innovaciones de arquitectura ni pesos entrenados por el autor; es una distribución de modelos de terceros.
 
-El tamano total del repositorio es de aproximadamente 0,7 GB, lo que es coherente con pesos 4-bit de un modelo de 4B parametros, un TTS de 82M y un ASR de 0,6B. La licencia es mixta ("other", con licencia_name: mixed), ya que cada pack conserva la licencia de su modelo de origen.
+La relevancia es práctica para desarrolladores que quieran replicar el stack de la app o reutilizar los paquetes Core ML/MLX en sus propias aplicaciones macOS, con la advertencia de que las licencias son heterogéneas (Apache-2.0, CC-BY-4.0 y MIT según el componente) y de que el autor no publica especificaciones propias, benchmarks ni detalles de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixta por pack: transformer (Qwen3.5-4B), TTS (Kokoro 82M), ASR (Parakeet TDT 0.6B v3) |
-| Parametros totales | ~4B (avni-small) + 82M (kokoro-v3) + 0,6B (parakeet-tdt-v3) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (Qwen3.5-4B, paquete `avni-small`); TTS Kokoro-82M (`kokoro-v3`); ASR Parakeet TDT 0.6B v3 (`parakeet-tdt-v3`) |
+| Parametros totales | 4B (LLM), 82M (TTS), 0,6B (ASR) |
+| Parametros activos | no disponible (no se indica que los modelos sean MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit MLX (avni-small); Core ML para kokoro-v3 y parakeet-tdt-v3 |
-| Idiomas soportados | no disponibles |
-| Licencia | mixed (Apache-2.0 para avni-small y kokoro-v3; CC-BY-4.0 para Parakeet; MIT para Silero VAD) |
-| Formato de pesos | safetensors (tag del repo) y Core ML (mlpackage) |
+| Tipos de cuantizacion | 4 bits (MLX) en el LLM; Core ML para TTS y ASR |
+| Idiomas soportados | no disponible |
+| Licencia | mixta: Apache-2.0 (Qwen3.5-4B y Kokoro), CC-BY-4.0 (Parakeet), MIT (Silero VAD) |
+| Formato de pesos | MLX (safetensors) y Core ML; el repo incluye también safetensors genéricos |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta entrenamiento propio: cada pack es una redistribucion de pesos publicados por terceros. `avni-small` corresponde a Qwen3.5-4B en cuantizacion 4-bit MLX, obtenido de `mlx-community/Qwen3.5-4B-4bit`; se trata de un modelo de lenguaje transformer optimizado para ejecucion en Apple Silicon mediante el framework MLX. `kokoro-v3` es Kokoro 82M, un modelo de sintesis de voz compacto convertido a Core ML por FluidInference. `parakeet-tdt-v3` es Parakeet TDT 0.6B v3 de NVIDIA, un modelo ASR con decodificador TDT (Token-and-Duration Transducer) convertido a Core ML, acompanado de Silero VAD para deteccion de actividad de voz.
+El repositorio no entrena modelos propios: empaqueta artefactos ya publicados. El componente de lenguaje es Qwen3.5-4B, un transformer de 4.000 millones de parámetros distribuido por mlx-community en cuantización de 4 bits para MLX, lo que permite inferencia en Apple Silicon. El componente de voz es Kokoro-82M, un modelo TTS de 82 millones de parámetros convertido a Core ML por FluidInference. El componente de reconocimiento es Parakeet TDT 0.6B v3 de NVIDIA, un modelo ASR con decodificación *token-and-duration transducer* (TDT), también en Core ML, acompañado de Silero VAD para segmentación de voz.
 
-No se proporcionan datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni procesos de RLHF/DPO para ninguno de los packs. La innovacion practica del repositorio es la conversion a formatos nativos de Apple (MLX y Core ML) que permiten inferencia local en hardware macOS.
+No se proporcionan en la información disponible datos sobre tokens de entrenamiento, composición de datasets, RLHF/DPO ni innovaciones técnicas propias del autor. Cualquier detalle de entrenamiento debe consultarse en las model cards originales de Qwen, hexgrad/Kokoro y NVIDIA/Parakeet.
 
 ## Capacidades
 
-- Generacion de texto en local mediante `avni-small` (Qwen3.5-4B 4-bit MLX), solo texto.
-- Sintesis de voz (text-to-speech) con `kokoro-v3` (Kokoro 82M).
-- Reconocimiento automatico de voz (ASR) con `parakeet-tdt-v3` (Parakeet TDT 0.6B v3).
-- Deteccion de actividad de voz (VAD) con Silero VAD incluido en el pack de ASR.
-- Ejecucion en Apple Silicon via MLX y Core ML.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): audio (TTS y ASR) por los packs kokoro-v3 y parakeet-tdt-v3; no se documenta vision ni thinking mode.
+- Generación de texto y razonamiento mediante Qwen3.5-4B (paquete `avni-small`, solo texto).
+- Síntesis de voz (text-to-speech) con Kokoro-82M en Core ML.
+- Reconocimiento automático de voz (ASR) con Parakeet TDT 0.6B v3.
+- Detección de actividad de voz (VAD) con Silero VAD para trocear audio.
+- Ejecución local en macOS sobre Apple Silicon (MLX y Core ML).
+- Soporte de tool calling, agentes, visión o audio en el LLM: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Dictado y transcripcion local en macOS: `parakeet-tdt-v3` junto con Silero VAD permite transcribir audio en tiempo real sin enviar datos a la nube, adecuado para aplicaciones de notas o productividad en Apple Silicon.
-- Lectura en voz alta de documentos: `kokoro-v3` (82M) sintetiza voz con bajo coste computacional, util para funciones de accesibilidad o lectura de articulos dentro de la app AVNI.
-- Asistente de texto offline: `avni-small` (Qwen3.5-4B 4-bit) puede generar respuestas y resumenes localmente en equipos con memoria unificada suficiente, sin depender de APIs externas.
-- Pipeline de voz a texto y respuesta: combinando ASR (Parakeet) y LLM (avni-small) se puede construir un asistente conversacional completamente local para macOS.
-- Prototipado de aplicaciones Core ML: los packs Core ML sirven como referencia para desarrolladores que quieran integrar TTS y ASR en apps Swift/SwiftUI.
-- Evaluacion de modelos en Apple Silicon: util para comparar rendimiento de MLX frente a Core ML en tareas de texto y audio en hardware de consumo.
+- Asistentes de escritorio en macOS con LLM local: usar `avni-small` (Qwen3.5-4B en MLX 4 bits) para generar respuestas sin enviar datos a la nube, aprovechando la aceleración de Apple Silicon.
+- Dictado por voz en aplicaciones nativas: encadenar `parakeet-tdt-v3` (ASR) con `silero-vad` para transcribir audio del micrófono en tiempo real dentro de una app Core ML.
+- Lectura en voz alta de texto generado: pasar la salida del LLM a `kokoro-v3` para sintetizar voz, útil en lectores, accesibilidad o asistentes conversacionales.
+- Pipeline de notas de reuniones: VAD segmenta el audio, Parakeet transcribe y Qwen3.5-4B resume o extrae acciones, todo en local.
+- Prototipado de apps de voz sin backend: los tres paquetes permiten construir una demo de asistente por voz íntegramente en el dispositivo.
+- Reutilización de los paquetes Core ML/MLX en otros proyectos macOS: descargar solo la carpeta necesaria (`kokoro-v3` o `parakeet-tdt-v3`) e integrarla en Xcode o en un entorno Python con MLX.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +51,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: `avni-small` 4-bit requiere aproximadamente 2-3 GB de memoria; `kokoro-v3` (82M) y `parakeet-tdt-v3` (0,6B) son ligeros y caben holgadamente en memoria unificada de cualquier Apple Silicon.
-- GPU recomendadas: Apple Silicon (series M1, M2, M3, M4) por el uso de MLX y Core ML; no se documenta soporte para GPU NVIDIA.
-- Cabe en hardware de consumo: si, en Mac con memoria unificada suficiente (8 GB en adelante para el pack completo).
-- Opciones de despliegue: MLX (para avni-small), Core ML (para kokoro-v3 y parakeet-tdt-v3), integracion en la app AVNI para macOS.
+- Espacio en disco: 3,5 GB para el repositorio completo; cada paquete puede descargarse por separado.
+- LLM Qwen3.5-4B en 4 bits MLX: requiere Apple Silicon (M1 o superior); el peso aproximado en memoria ronda los 2-3 GB, aunque no se confirma en la información disponible.
+- TTS Kokoro-82M y ASR Parakeet 0.6B en Core ML: aptos para ejecución en Apple Silicon, incluidas configuraciones de gama de entrada.
+- GPU NVIDIA (A100, H100, RTX 4090): no aplicables a estos formatos (MLX/Core ML).
+- Despliegue: MLX (Python/Apple) y Core ML (Xcode); no se indica soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avni-small (Qwen3.5-4B 4-bit MLX) | ~4B | no disponible | MLX 4-bit | Apache-2.0 | Hugging Face (este repo) |
-| Qwen3.5-4B original | ~4B | no disponible | safetensors | Apache-2.0 | Hugging Face (Qwen) |
-| Kokoro 82M | 82M | no aplica (TTS) | safetensors / Core ML | Apache-2.0 | Hugging Face (hexgrad) |
-| Parakeet TDT 0.6B v3 | 0,6B | no aplica (ASR) | Core ML | CC-BY-4.0 | Hugging Face (NVIDIA / FluidInference) |
+| AVNI models (`avni-small`) | 4B | no disponible | MLX 4 bits | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B (original) | 4B | no disponible | safetensors | Apache-2.0 | Hugging Face |
+| mlx-community/Qwen3.5-4B-4bit | 4B | no disponible | MLX 4 bits | Apache-2.0 | Hugging Face |
+| Kokoro-82M (original) | 82M | no aplica | PyTorch/safetensors | Apache-2.0 | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
+La comparativa se limita a los componentes originales de los que deriva el repositorio, ya que no se dispone de datos de rendimiento propios. Para ASR, el comparable directo es NVIDIA Parakeet TDT 0.6B v3, del que este repositorio solo redistribuye la conversión Core ML.
 
 ## Limitaciones y advertencias
 
-- No es un modelo propio: es un repositorio agregador; la calidad y limitaciones dependen de los modelos originales.
-- Licencia mixta: cada pack tiene su propia licencia (Apache-2.0, CC-BY-4.0, MIT); es obligatorio respetar la atribucion de Parakeet (CC-BY-4.0) y de Silero VAD (MIT) en uso comercial.
-- Solo texto en `avni-small`: no se documentan capacidades multimodales en el LLM.
-- Idiomas soportados no documentados: no se puede garantizar cobertura linguistica sin consultar las fichas originales.
-- Riesgo de alucinacion inherente al LLM Qwen3.5-4B en cuantizacion 4-bit; no se documenta mitigacion.
-- Dependencia de hardware Apple: MLX y Core ML limitan el despliegue a macOS/Apple Silicon; no hay soporte documentado para CUDA.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por la comunidad.
-- Contexto no documentado: no se puede planificar uso con ventanas largas sin consultar la ficha de Qwen3.5-4B.
+- No es un modelo entrenado por el autor: es un agregador; la calidad y los sesgos dependen de los modelos originales.
+- Licencia mixta: cada carpeta tiene su propia licencia (Apache-2.0, CC-BY-4.0, MIT). El uso comercial debe verificar la licencia del paquete concreto, especialmente Parakeet (CC-BY-4.0, requiere atribución a NVIDIA).
+- Idiomas soportados no declarados en el repositorio; deben consultarse en las model cards de Qwen, Kokoro y Parakeet.
+- Riesgo de alucinación inherente al LLM Qwen3.5-4B; no hay evaluaciones publicadas en este repositorio.
+- Dependencia de hardware Apple: MLX y Core ML no son portables a GPU NVIDIA ni a CPU x86 sin conversión.
+- Repositorio con 0 likes y 236 descargas: poca validación comunitaria; conviene contrastar integridad de los pesos con las fuentes originales.
+- No se especifican requisitos de memoria, latencia ni límites de contexto; para producción hay que medirlos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/alfredscholarofficial/avni-models
-- Qwen3.5-4B 4-bit MLX (origen de avni-small): https://huggingface.co/mlx-community/Qwen3.5-4B-4bit
-- Kokoro 82M (origen de kokoro-v3): https://huggingface.co/hexgrad/Kokoro-82M
-- Kokoro 82M Core ML (conversion): https://huggingface.co/FluidInference/kokoro-82m-coreml
-- Parakeet TDT 0.6B v3 (origen, NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Silero VAD Core ML: https://huggingface.co/FluidInference/silero-vad-coreml
+- Repositorio Hugging Face: https://huggingface.co/alfredscholarofficial/avni-models
+- Qwen3.5-4B (mlx-community): https://huggingface.co/mlx-community/Qwen3.5-4B-4bit
+- Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
+- Kokoro 82M Core ML (FluidInference): https://huggingface.co/FluidInference/kokoro-82m-coreml
+- Silero VAD Core ML (FluidInference): https://huggingface.co/FluidInference/silero-vad-coreml
+- Parakeet TDT 0.6B v3 (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

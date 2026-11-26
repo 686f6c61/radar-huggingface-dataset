@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/arktts-eu_es-zortzi-unicode",
   "created_at": "2026-08-03T14:27:24.000Z",
-  "updated_at": "2026-11-25T03:42:51.000Z",
+  "updated_at": "2026-11-25T04:12:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 128,
+  "downloads_30d": 135,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

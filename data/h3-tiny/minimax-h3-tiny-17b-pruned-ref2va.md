@@ -2,51 +2,51 @@
 
 ## Resumen
 
-MiniMax-H3-Tiny-17B-Pruned-Ref2VA es un checkpoint derivado del transformer Ref2VA de MiniMax-H3 (33.120 millones de parametros), obtenido mediante poda estructurada sin reentrenamiento posterior. El proyecto H3-Tiny reduce el modelo original de 33B a 17B (y contempla una etapa posterior de 14B) eliminando 8 de sus 50 bloques transformer y aplicando un rango 8 en las capas AdaLN. El resultado es un modelo de generacion conjunta de video y audio a partir de texto e imagenes de referencia, con 17.067.115.600 parametros en formato diffusers.
+MiniMax-H3-Tiny-17B-Pruned-Ref2VA es un checkpoint derivado del transformer de MiniMax-H3 Ref2VA, un modelo de generacion conjunta de video y audio a partir de texto e imagenes de referencia. Lo publica el proyecto independiente H3-Tiny, que aplica poda estructurada sobre el modelo original de MiniMax sin reentrenamiento posterior: reduce el transformer de 33,12B a 17,07B parametros eliminando 8 de sus 50 bloques y aplicando un rango 8 en las capas AdaLN. El resultado es un modelo "training-free", es decir, funcional directamente tras la poda.
 
-El modelo resuelve el problema del coste computacional de la generacion video-audio de alta calidad: al recortar aproximadamente la mitad de los parametros del transformer original mantiene la funcionalidad del flujo Ref2VA (reference-to-video + audio) con un peso de repositorio de 34,2 GB. Esta orientado a desarrolladores que necesitan desplegar generacion multimodal en infraestructura mas modesta que la requerida por el modelo base de 33B.
+Su interes practico esta en la reduccion de requisitos de memoria y computo para un modelo de generacion de video con audio, manteniendo el flujo de trabajo Ref2VA (reference-to-video + audio). El repositorio contiene unicamente el transformer en formato diffusers (`config.json` y safetensors fragmentados); el text encoder, los VAE y los procesadores se toman del checkpoint oficial MiniMax-H3. El muestreo recomendado es de 50 pasos.
 
-Es relevante ahora porque demuestra que la poda estructurada agresiva, sin fine-tuning, puede producir checkpoints funcionales de modelos de difusion para video, y porque publica pesos en formato diffusers y ComfyUI, lo que facilita su integracion en pipelines existentes. El repositorio contiene unicamente el transformer; el text encoder, los VAE y los procesadores deben tomarse del checkpoint oficial MiniMax-H3 en formato diffusers.
+La relevancia actual radica en que permite experimentar con un pipeline de video-audio de gran escala en hardware mas modesto, a costa de la perdida de calidad inherente a una poda sin destilacion ni fine-tuning. La licencia es la MiniMax H3 Community License, con restricciones territoriales y de uso aceptable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) para generacion conjunta de video y audio, derivado por poda de MiniMax-H3 Ref2VA |
-| Parametros totales | 17.067.115.600 (transformer) |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | Transformer de difusion para generacion conjunta de video y audio (derivado de MiniMax-H3 Ref2VA), con capas AdaLN |
+| Parametros totales | 17.067.115.600 (17,07B, solo transformer) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio publica safetensors sin cuantizar) |
+| Tipos de cuantizacion | no disponible (el repo publica safetensors en el layout de diffusers) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License Agreement (license: other) |
-| Formato de pesos | safetensors (layout diffusers: `config.json` + safetensors fragmentados) |
+| Licencia | minimax-h3-community-license (MiniMax H3 Community License Agreement) |
+| Formato de pesos | safetensors (layout diffusers: `config.json` + shards); version single-file para ComfyUI en repo aparte |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusion (DiT) para el flujo Ref2VA de MiniMax-H3, que genera video y audio de forma conjunta condicionado por texto e imagenes de referencia. La version Tiny se obtiene por poda estructurada: se eliminan 8 de los 50 bloques transformer del modelo base de 33,12B y se aplica un rango 8 a las capas AdaLN (adaptive layer norm). Segun la model card, el checkpoint es training-free: funciona directamente tras la poda, sin entrenamiento ni fine-tuning adicional. El muestreo recomendado es de 50 pasos.
+El modelo es un transformer de difusion que genera video y audio de forma conjunta condicionado por texto e imagenes de referencia (workflow Ref2VA). Parte del transformer de MiniMax-H3 Ref2VA de 33,12B parametros y se obtiene mediante poda estructurada: se eliminan 8 de los 50 bloques del transformer y se reduce el rango de las capas AdaLN a 8. No hay entrenamiento, destilacion ni fine-tuning: el checkpoint es el resultado directo de la poda.
 
-El repositorio incluye solo el transformer en layout diffusers. El text encoder, los VAE de video y audio y los procesadores no forman parte de estos pesos y deben cargarse desde el checkpoint oficial MiniMaxAI/MiniMax-H3 en formato diffusers. El pipeline de inferencia se distribuye a traves del paquete `h3tiny` del repositorio GitHub del proyecto.
+El pipeline completo requiere componentes externos que no se incluyen en este repositorio: el text encoder, los VAE de video y audio y los procesadores, que se cargan desde el checkpoint oficial MiniMax-H3 en formato diffusers. El muestreo se realiza con 50 pasos. El proyecto contempla opciones de offloading y distintos backends de atencion, documentados en el README de GitHub.
 
 ## Capacidades
 
-- Generacion de video condicionada por texto e imagenes de referencia (flujo Ref2VA).
-- Generacion conjunta de audio sincronizado con el video en una sola pasada.
-- Aceptacion de multiples imagenes de referencia mediante marcadores en el prompt (por ejemplo, `<Picture 1>`).
-- Control del numero de frames generados (el ejemplo de la model card usa 124 frames).
-- Integracion con ComfyUI mediante pesos publicados en un repositorio separado.
-- Carga como pipeline de diffusers a traves de `h3tiny.pipeline.load_pipeline`.
-- Soporte de offloading y de distintos backends de atencion (documentado en el README de GitHub).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni modos de pensamiento.
+- Generacion de video a partir de texto con imagenes de referencia (reference-to-video).
+- Generacion conjunta de audio sincronizado con el video en el mismo pipeline (Ref2VA).
+- Aceptacion de multiples imagenes de referencia mediante marcadores tipo `<Picture 1>` en el prompt.
+- Control de longitud de la secuencia mediante el parametro `--num-frames` (ejemplo documentado: 124 frames).
+- Integracion con ComfyUI mediante un checkpoint single-file publicado en un repositorio aparte.
+- Carga programatica via `h3tiny.pipeline.load_pipeline` y script de inferencia `scripts/infer.py`.
+- Soporte de offloading y seleccion de backend de atencion para ajustar el uso de memoria.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
 
 ## Casos de uso
 
-- Prototipado de generacion video-audio en una sola GPU: al reducir el transformer de 33B a 17B, el modelo permite iterar sobre prompts y referencias en hardware mas asequible que el modelo base, manteniendo el flujo Ref2VA completo.
-- Generacion de clips publicitarios con producto de referencia: se aporta una imagen del producto como `<Picture 1>` y un prompt descriptivo para obtener un video con audio sincronizado, util para pruebas de concepto creativas.
-- Creacion de contenido para redes sociales: clips cortos con audio integrado generados a partir de una o varias imagenes de referencia, reduciendo el numero de herramientas en el pipeline.
-- Previsualizacion de storyboards animados: a partir de ilustraciones de referencia se generan animaticos con sonido para validar secuencias antes de la produccion final.
-- Investigacion sobre poda de modelos de difusion: el checkpoint training-free sirve como punto de comparacion frente al modelo base de 33B para medir la degradacion introducida por la eliminacion de bloques y la reduccion de rango en AdaLN.
-- Integracion en ComfyUI para flujos de trabajo de artistas tecnicos: los pesos especificos de ComfyUI permiten incorporar el modelo a grafos nodales existentes sin escribir codigo de inferencia.
-- Evaluacion de despliegue en produccion: con 17B de parametros y 34,2 GB de repositorio, permite estimar requisitos de VRAM y latencia antes de comprometerse con el modelo completo.
+- Prototipado de generacion de video con audio en equipos con VRAM limitada: al reducir el transformer de 33B a 17B, permite iterar sobre prompts y referencias en GPUs de gama alta de consumo o profesionales, aceptando menor fidelidad que el modelo completo.
+- Generacion de clips cortos a partir de una o varias imagenes de referencia: util para crear animaciones o variaciones de un personaje u objeto manteniendo consistencia visual entre frames.
+- Creacion de video con banda sonora generada de forma conjunta: el pipeline Ref2VA produce audio alineado con el video, lo que sirve para bocetos de anuncios, demos o contenido para redes.
+- Previsualizacion rapida en pipelines de postproduccion: generar versiones preliminares de planos antes de invertir en renderizado con el modelo completo de 33B.
+- Investigacion sobre poda de modelos de difusion: el checkpoint sirve como referencia reproducible para estudiar el impacto de eliminar bloques y reducir el rango AdaLN sin reentrenar.
+- Integracion en flujos ComfyUI: mediante el checkpoint single-file, se puede incorporar la generacion Ref2VA en grafos de nodos existentes para experimentacion artistica.
+- Evaluacion comparativa de calidad frente al modelo base: permite medir la degradacion introducida por la poda en tareas concretas antes de decidir que version desplegar.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, un transformer de 17.067 millones de parametros en bf16/fp16 requiere aproximadamente 34 GB solo para los pesos, a lo que hay que sumar el text encoder, los VAE y las activaciones; el offloading documentado en el repositorio reduce este pico a costa de latencia.
-- GPU recomendadas: no especificadas por el autor. Por volumen de pesos, el modelo completo en precision nativa encaja en A100 80 GB o H100 80 GB; en GPUs de 24 GB (RTX 4090) seria necesario offloading o cuantizacion, no documentada en el repositorio.
-- Cabe en GPU de consumo: no de forma directa en precision nativa; requiere offloading o cuantizacion externa no incluida en los pesos publicados.
-- Opciones de despliegue: paquete `h3tiny` (script `scripts/infer.py` y `load_pipeline`), diffusers, y pesos especificos para ComfyUI (`H3-Tiny/MiniMax-H3-Tiny-ComfyUI`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo de difusion de este tipo.
-- Latencia y throughput: no disponibles. El muestreo recomendado es de 50 pasos.
+- VRAM estimada para inferencia: no disponible de forma explicita. Como referencia, el transformer pesa 17,07B parametros y el repositorio ocupa 34,2 GB en safetensors (probablemente en fp16/bf16); a ello hay que sumar text encoder y VAE del checkpoint base MiniMax-H3.
+- GPU recomendadas: no disponible. Por tamano, se requiere al menos una GPU profesional con memoria suficiente para el transformer mas los componentes auxiliares; el proyecto documenta opciones de offloading para reducir el pico de memoria.
+- Cabe en GPU de consumo: no confirmado en la informacion disponible; el offloading documentado sugiere que puede ejecutarse en configuraciones con memoria ajustada, pero no se especifican modelos concretos.
+- Opciones de despliegue: diffusers (layout nativo del repo), script `scripts/infer.py` del proyecto H3-Tiny, API `h3tiny.pipeline.load_pipeline`, y ComfyUI mediante el repo MiniMax-H3-Tiny-ComfyUI.
+- Latencia y throughput: no disponible. El muestreo recomendado es de 50 pasos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros (transformer) | Flujo | Entrenamiento tras poda | Licencia | Disponibilidad |
+| Modelo | Parametros (transformer) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Tiny-17B-Pruned-Ref2VA | 17,07B | Ref2VA (referencia a video + audio) | No (training-free) | MiniMax H3 Community License | Hugging Face, ComfyUI |
-| MiniMaxAI/MiniMax-H3 (base) | 33,12B | Ref2VA | Modelo original | MiniMax H3 Community License | Hugging Face |
-| H3-Tiny 14B (etapa posterior) | no disponible | Ref2VA | no disponible | no disponible | Mencionado en la model card, sin datos publicados |
-
-No se dispone de informacion sobre otros modelos comparables de generacion conjunta video-audio en la documentacion proporcionada.
+| MiniMax-H3-Tiny-17B-Pruned-Ref2VA | 17,07B | no disponible | sin benchmarks publicados | MiniMax H3 Community License | Hugging Face (este repo) |
+| MiniMaxAI/MiniMax-H3 (base) | 33,12B (transformer Ref2VA) | no disponible | sin datos en la informacion disponible | MiniMax H3 Community License | Hugging Face (oficial) |
+| H3-Tiny 14B (variante del proyecto) | 14B (segun model card) | no disponible | sin benchmarks publicados | MiniMax H3 Community License | Hugging Face (coleccion H3-Tiny) |
 
 ## Limitaciones y advertencias
 
-- Al ser un checkpoint podado sin reentrenamiento, es esperable cierta degradacion de calidad frente al modelo base de 33B; el autor no publica metricas de la perdida.
-- El repositorio contiene unicamente el transformer: sin el text encoder, los VAE y los procesadores del checkpoint oficial MiniMax-H3 el modelo no es funcional.
-- La licencia MiniMax H3 Community License Agreement impone un ambito territorial y una politica de uso aceptable; es obligatorio revisar el archivo LICENSE-MiniMax-H3 y el NOTICE antes de cualquier uso comercial.
-- Riesgo de alucinacion visual y de incoherencias temporales inherente a los modelos de difusion para video; no cuantificado en la informacion disponible.
-- Idiomas soportados no documentados; el comportamiento multilingue de los prompts depende del text encoder del modelo base.
+- La poda se realiza sin entrenamiento ni destilacion, por lo que es esperable una perdida de calidad frente al modelo base de 33B; no se cuantifica en la informacion disponible.
+- El repositorio contiene solo el transformer; es imprescindible disponer del checkpoint oficial MiniMax-H3 en formato diffusers para el text encoder, los VAE y los procesadores.
+- La licencia MiniMax H3 Community License impone un ambito territorial y una politica de uso aceptable; es necesario revisar `LICENSE-MiniMax-H3` y `NOTICE` antes de cualquier uso comercial.
+- Riesgo de alucinacion visual y artefactos: no documentado, pero inherente a los modelos generativos de video; la poda puede acentuarlo.
+- Idiomas soportados no declarados; el condicionamiento textual depende del text encoder del modelo base.
+- No se especifican requisitos minimos de VRAM ni configuraciones de hardware validadas.
 - Proyecto independiente no afiliado ni respaldado por MiniMax.
-- No se documentan sesgos conocidos ni resultados de evaluacion de seguridad.
-- El modelo tiene 319 descargas y 4 likes en el momento de la consulta, lo que indica una validacion comunitaria limitada.
+- Fecha de creacion del repositorio: 19 de noviembre de 2026; actualizado el 22 de noviembre de 2026.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-17B-Pruned-Ref2VA
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo en Hugging Face: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-17B-Pruned-Ref2VA
 - Pagina del proyecto: https://fuyi25.github.io/MiniMax-H3-Tiny/
 - Repositorio GitHub: https://github.com/fuyi25/MiniMax-H3-Tiny
-- Coleccion H3-Tiny: https://huggingface.co/collections/H3-Tiny/h3-tiny-v01-6afeea67147c27cf3b80820a
-- Pesos para ComfyUI: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-ComfyUI
+- Coleccion H3-Tiny en Hugging Face: https://huggingface.co/collections/H3-Tiny/h3-tiny-v01-6afeea67147c27cf3b80820a
+- Checkpoint single-file para ComfyUI: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-ComfyUI
 - Licencia: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-17B-Pruned-Ref2VA/blob/main/LICENSE-MiniMax-H3
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

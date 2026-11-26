@@ -2,82 +2,98 @@
 
 ## Resumen
 
-El modelo Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-GGUF es una cuantización en formato GGUF del modelo base `nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32`, realizada por mradermacher. El modelo base es un merge experimental (técnica nuslerp con mergekit) de dos variantes de Qwen3.6-27B, con destilación de Claude 4.6, ajuste fino supervisado (SFT) y LoRA, orientado a tareas de razonamiento, programación, escritura creativa y roleplaying. Incluye además un proyector multimodal (mmproj) que permite entrada de imágenes.
+Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-GGUF es una cuantizacion estatica en formato GGUF del modelo nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32, un modelo de 27.320.697.856 parametros derivado de la familia Qwen3.6 y afinado mediante tecnicas de destilacion (etiquetado como claude-distillation en los metadatos), SFT y LoRA, con fusion de pesos via mergekit. El autor de esta version cuantizada es mradermacher, un publicador habitual de cuantizaciones GGUF para la comunidad de inferencia local.
 
-Con 27.320 millones de parámetros, arquitectura qwen3_5_text (64 capas, hidden size 5120, atención por grupos de consultas con 24 cabezas de consulta y 4 de clave/valor) y una ventana de contexto que los tags sugieren de hasta 1M tokens (aunque no confirmada oficialmente), este modelo se posiciona como una opción potente para desarrolladores que buscan un LLM versátil con capacidades multimodales y de razonamiento extendido. La cuantización GGUF facilita su despliegue en entornos con recursos limitados mediante llama.cpp, Ollama u otros motores compatibles.
+El modelo esta orientado a generacion de texto, razonamiento con cadena de pensamiento larga (long-CoT), codigo, matematicas y escritura creativa de ficcion, e incluye un modulo multimodal complementario (mmproj) que sugiere capacidades de vision. Los metadatos declaran soporte de contexto de hasta 1M de tokens, aunque tambien se etiqueta 256k, por lo que la ventana efectiva debe verificarse en el modelo base. Los idiomas declarados son ingles, chino, japones y espanol, y la licencia es Apache 2.0.
 
-La relevancia actual radica en su combinación de tamaño medio (27B) con características avanzadas como contexto largo, soporte multimodal y un enfoque en creatividad y razonamiento, lo que lo hace atractivo para prototipos y aplicaciones de producción en los que se necesite un equilibrio entre calidad y requisitos de hardware.
+La relevancia practica de esta ficha es que permite ejecutar un modelo de 27B con contexto muy largo en hardware de consumo o en servidores con GPUs de gama alta, eligiendo entre 13 cuantizaciones GGUF que van de 11,0 GB (Q2_K) a 29,1 GB (Q8_0). Es, por tanto, una opcion para despliegue local con llama.cpp u Ollama, no para servir en produccion de alta concurrencia sin planificacion de VRAM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_text (transformer decoder, GQA, 64 capas, hidden size 5120, FFN 17408) |
-| Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no confirmada oficialmente; tags indican 256k y 1M (probablemente 256k nativo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
+| Arquitectura | Transformer decoder-only (familia Qwen3.6; detalles internos de capas y atencion no disponibles) |
+| Parametros totales | 27.320.697.856 (27,32B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 1M tokens y 256k tokens segun etiquetas del autor; valor efectivo no verificado |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16; variantes i1 (imatrix) en repo separado |
 | Idiomas soportados | en, zh, ja, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base publica safetensors en bf16 |
+| Tamano del repo | 190,8 GB (incluye todas las cuantizaciones) |
+| Pipeline | text-generation |
+| Descargas / likes | 247 descargas, 1 like |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un merge de dos variantes de Qwen3.6-27B realizado con mergekit (técnica nuslerp), lo que combina los pesos de ambos modelos sin entrenamiento adicional. Según los tags, se empleó destilación de Claude 4.6, ajuste fino supervisado (SFT) y LoRA, lo que sugiere un refinamiento orientado a tareas específicas como razonamiento, programación y escritura creativa. La arquitectura es un transformer decoder estándar con atención por grupos de consultas (GQA) y 64 capas, con un tamaño de capa oculta de 5120 y una FFN de 17408. El modelo incluye un proyector multimodal (mmproj) que permite procesar imágenes junto con texto, aunque no se especifica el tipo de encoder visual utilizado.
+La informacion disponible no detalla la arquitectura interna mas alla de su pertenencia a la familia Qwen3.6 (transformer decoder-only) y de las etiquetas qwen3_5, qwen3_6 y qwen3.6, que sugieren una base Qwen3.5/3.6. El modelo base se presenta como resultado de un proceso de destilacion desde un modelo tipo Claude 4.6 (etiqueta claude4.6 y claude-distillation), seguido de ajuste supervisado (SFT) y adaptadores LoRA, con fusion de pesos mediante mergekit. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO.
 
-No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni el proceso exacto de destilación. La cuantización GGUF fue realizada por mradermacher mediante conversión estática, sin entrenamiento adicional.
+Las innovaciones tecnicas declaradas se limitan al razonamiento explicito con cadenas de pensamiento largas (reasoning, chain-of-thought, long-cot) y a una ventana de contexto extendida (1M/256k). El repositorio incluye un modulo mmproj, lo que indica que el modelo base incorpora o admite proyeccion multimodal para entrada de imagenes. No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones de inferencia.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés, chino, japonés y español.
-- Razonamiento y cadena de pensamiento (chain-of-thought) para problemas complejos de lógica, matemáticas y STEM.
-- Generación de código y soporte para tareas de programación (según tags de "coding").
-- Escritura creativa: ficción, ciencia ficción, generación de tramas, subtramas, escenas y narración vívida.
-- Roleplaying y diálogos interactivos con personajes.
-- Capacidades multimodales: entrada de imágenes mediante el proyector mmproj (el modelo puede procesar texto e imágenes, aunque no se detalla el alcance).
-- Multilingüismo: soporte para al menos cuatro idiomas principales.
-- Posible soporte de tool calling y agentes (no confirmado explícitamente, pero común en la familia Qwen3.6).
+- Generacion de texto conversacional e instruccional (instruction-tuned).
+- Razonamiento explicito con cadenas de pensamiento largas (long-CoT), adecuado para problemas de varios pasos.
+- Generacion de codigo y tareas de ingenieria de software.
+- Matematicas y disciplinas STEM.
+- Escritura creativa: ficcion, generacion de trama y subtramas, continuacion de escenas, narrativa de todos los generos, ciencia ficcion y roleplaying.
+- Capacidades multilingues en ingles, chino, japones y espanol.
+- Entrada multimodal mediante el modulo mmproj incluido (Q8_0 o f16).
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: plausible por el modo long-CoT, pero no documentado explicitamente.
 
 ## Casos de uso
 
-- Asistente de programación en producción: el modelo puede generar, revisar y explicar código en varios lenguajes, integrándose en pipelines de CI/CD o entornos de desarrollo mediante APIs compatibles con GGUF (llama.cpp, Ollama).
-- Análisis de documentos largos: gracias a su posible contexto de 256k o 1M tokens, puede resumir, extraer información y responder preguntas sobre contratos, informes o libros completos.
-- Generación de contenido creativo: escritura de novelas, guiones, cuentos y material de marketing con tramas coherentes y estilo vívido, útil para estudios de contenido o plataformas de ficción.
-- Chatbots de atención al cliente multilingüe: con soporte para en, zh, ja y es, puede gestionar conversaciones en varios idiomas con contexto amplio.
-- Asistente de investigación: razonamiento y síntesis de información técnica o científica, ayudando a revisar literatura y formular hipótesis.
-- Prototipado de agentes conversacionales: su capacidad de razonamiento y posible tool calling permite construir agentes que ejecutan tareas multi-paso, como consultas a bases de datos o APIs.
-- Análisis de imágenes con texto: al incluir mmproj, puede describir o razonar sobre imágenes combinadas con instrucciones textuales, útil para accesibilidad o documentación visual.
+- Escritura de ficcion asistida: el modelo esta afinado especificamente para generacion de trama, subtramas y continuacion de escenas, por lo que puede mantener arcos narrativos largos apoyandose en la ventana de contexto extendida y en el modo de razonamiento para planificar capitulos.
+- Analisis de repositorios y generacion de codigo: con 27B parametros y contexto de hasta 256k, puede ingerir modulos completos o varios ficheros y proponer refactorizaciones o tests; se desplegaria con llama.cpp en una estacion de trabajo con GPU de 24 GB o mas usando Q4_K_M.
+- Razonamiento matematico y STEM por lotes: util para resolver problemas paso a paso en pipelines offline donde no se quiere depender de una API externa; el formato GGUF permite ejecutarlo en servidores propios con licencia Apache 2.0.
+- Atencion al cliente y asistentes conversacionales multi-turno: el contexto largo permite arrastrar historiales extensos y documentacion de producto; requiere validacion de latencia, ya que un modelo denso de 27B en cuantizacion Q4 ronda los 16,9 GB y necesita GPU dedicada para respuestas interactivas.
+- Traduccion y localizacion entre ingles, chino, japones y espanol: el soporte declarado de estos cuatro idiomas permite usarlo en flujos de traduccion tecnica o de contenidos, con revision humana por el riesgo de alucinacion en terminologia especializada.
+- Procesamiento de documentos largos con componente visual: gracias al mmproj, se pueden pasar imagenes junto con texto para extraer informacion de capturas, diagramas o documentos escaneados en un flujo local.
+- Prototipado de agentes con razonamiento multi-paso: el modo long-CoT facilita encadenar planes y verificar resultados intermedios, aunque la ausencia de documentacion sobre tool calling obliga a implementar el parseo de acciones en el orquestador.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K u otras pruebas estandarizadas para este modelo específico.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M (~16,9 GB) cabe en GPUs de 24 GB (RTX 3090, RTX 4090, A5000). Con Q8_0 (~29,1 GB) se necesita al menos 32 GB (A100 40GB, RTX A6000) o más.
-- GPU recomendadas: RTX 3090/4090 para cuantizaciones Q4-Q5; A100 40GB o H100 para Q8_0 o mayor precisión.
-- En consumer GPU: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y para el modelo base (safetensors) vLLM, TGI o Transformers.
-- Latencia y throughput: no disponible; dependerá del hardware y la cuantización. En una RTX 4090 con Q4_K_M se puede esperar una generación de 20-40 tokens/s, pero no hay mediciones oficiales.
+- VRAM estimada para inferencia (solo pesos, sin cache KV): Q2_K 11,0 GB; Q3_K_S 12,4 GB; Q3_K_M 13,6 GB; Q3_K_L 14,7 GB; IQ4_XS 15,5 GB; Q4_K_S 15,9 GB; Q4_K_M 16,9 GB; Q5_K_S 19,1 GB; Q5_K_M 19,6 GB; Q6_K 22,5 GB; Q8_0 29,1 GB; F16 aproximadamente 54,6 GB (27,32B x 2 bytes).
+- Modulo multimodal adicional: 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16).
+- Cache KV: no cuantificada en los datos disponibles; con contexto de 256k o 1M el consumo adicional es determinante y debe calcularse segun capas y cabezas del modelo base, dato no disponible.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40/80 GB o H100 para Q8_0 y contextos largos; multiples GPUs para F16.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M o Q5_K_M, y en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base en safetensors se sirve con transformers, vLLM o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (por ejemplo, Qwen3-27B, Llama-3.1-27B o Mistral-27B) en la información proporcionada. No se puede realizar una comparación fiable sin benchmarks publicados.
+| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32 (este, GGUF) | 27,32B | 1M / 256k declarados | Apache 2.0 | GGUF, 13 cuantizaciones, mmproj | Afinado para ficcion, razonamiento y codigo; destilado |
+| nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32 | 27,32B | 1M / 256k declarados | Apache 2.0 | safetensors bf16 | Modelo base del que deriva esta cuantizacion |
+| Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-i1-GGUF (mradermacher) | 27,32B | idem | Apache 2.0 | GGUF con cuantizacion imatrix | Misma base, cuantizacion ponderada de mayor calidad esperada |
+| Alternativas de ~27-32B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar rendimiento |
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: al ser un merge con destilación, puede presentar comportamientos impredecibles o inconsistencias en tareas no cubiertas por el ajuste.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en dominios especializados.
-- Sesgos: no se han documentado sesgos específicos, pero al entrenarse con datos multilingües y creativos, puede reflejar sesgos culturales o de género.
-- Contexto no confirmado: aunque los tags indican 256k/1M, no hay documentación oficial que verifique la longitud real de contexto soportada; se recomienda probar con secuencias largas.
-- Soporte multimodal limitado: el mmproj permite entrada de imágenes, pero no se especifica la calidad ni el alcance (p. ej., si soporta video o múltiples imágenes).
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base puede tener restricciones adicionales si se deriva de otros modelos con licencias distintas (no se ha confirmado).
-- Para producción, se recomienda validar el modelo en tareas específicas y considerar el uso de cuantizaciones superiores (Q6_K o Q8_0) para reducir pérdida de calidad.
+- Modelo experimental: las etiquetas incluyen experimental y distillation, sin benchmarks publicados que respalden el rendimiento real.
+- Riesgo de alucinacion: al ser un modelo destilado y afinado para ficcion, puede generar contenido verosimil pero falso, especialmente en datos factuales, citas y referencias.
+- Contexto: las etiquetas declaran 1M y 256k simultaneamente; la ventana efectiva no esta verificada y el consumo de cache KV a esas longitudes puede hacer inviable el despliegue en GPU de consumo.
+- Idiomas: solo se declaran en, zh, ja y es; el rendimiento en espanol no esta documentado y puede ser inferior al de ingles.
+- Tool calling y agentes: no confirmados; no disenar pipelines que dependan de function calling sin validacion previa.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base incorpora destilacion de un modelo de terceros (etiqueta claude4.6); conviene revisar las condiciones del proveedor original antes de un uso comercial a gran escala.
+- Cuantizaciones bajas: Q2_K y Q3_K_S degradan la calidad de forma notable; el propio autor marca Q3_K_M como lower quality y recomienda Q4_K_S o Q4_K_M para uso general.
+- Repositorio de 190,8 GB: descargar solo los ficheros necesarios; los GGUF pueden estar divididos en varias partes.
+- Sin datos de latencia ni throughput: no apto para planificar SLA de produccion sin pruebas de carga propias.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32
-- Variante con cuantizaciones iMatrix: https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-Tess-i1-GGUF
-- Receta NVFP4 para DGX Spark: https://github.com/PassingByPixels/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-NVFP4_Dflash_DGX_recipe
-- Visor de arquitectura: https://hfviewer.com/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-Tess
+- Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-i1-GGUF
+- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32-GGUF
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

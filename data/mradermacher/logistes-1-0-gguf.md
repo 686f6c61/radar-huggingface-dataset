@@ -2,85 +2,88 @@
 
 ## Resumen
 
-Logistes-1.0 es un modelo de lenguaje de 1.170.340.608 parámetros (aproximadamente 1,17 mil millones) desarrollado por Openwist y distribuido en formato GGUF por el cuantizador mradermacher. Se trata de un ajuste fino mediante LoRA sobre un modelo base no especificado en la información disponible, orientado explícitamente al uso en dispositivo (on-device) y al uso de herramientas (tool-use), según las etiquetas de la model card.
+Logistes-1.0 es un modelo de lenguaje de tipo transformer con aproximadamente 1.170 millones de parametros, desarrollado originalmente por el colectivo Openwist y distribuido en formato GGUF por mradermacher. Se trata de un modelo derivado de un ajuste fino con LoRA sobre una base no especificada, posteriormente fusionado (merged) para su publicacion. La version aqui descrita es la cuantizacion estatica en GGUF, pensada para inferencia en dispositivo (on-device) y entornos con recursos limitados.
 
-La relevancia de esta ficha radica en que el repositorio publicado por mradermacher contiene únicamente las versiones cuantizadas en GGUF del modelo original, con un conjunto amplio de niveles de cuantización que van desde Q2_K (0,6 GB) hasta f16 (2,4 GB). Esto lo hace candidato para despliegues en hardware de consumo y entornos con memoria limitada, donde un modelo de 1,17 B parámetros cuantizado a 4 bits ocupa menos de 1 GB.
+Su proposito principal, segun las etiquetas de la model card, es el uso de herramientas (tool-use) en escenarios conversacionales y de despliegue local. El modelo esta declarado como monolingue en ingles y se distribuye bajo la licencia lfm1.0, lo que condiciona su uso comercial. El repositorio ocupa 10,6 GB en total, aunque cada cuantizacion individual pesa entre 0,6 GB (Q2_K) y 2,4 GB (f16), lo que lo hace manejable en hardware de consumo.
 
-No obstante, la información disponible es muy limitada: no se especifican la arquitectura concreta, la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks. La licencia indicada es lfm1.0 (Liquid Foundation Model license), lo que impone restricciones que deben revisarse antes de cualquier uso comercial.
+La relevancia actual de esta ficha radica en que ejemplifica el ecosistema de modelos pequenos orientados a agentes y tool calling, donde el tamano reducido y el formato GGUF permiten ejecucion en CPU o GPUs modestas. No obstante, la informacion publica disponible es muy escasa: no hay datos de contexto, composicion del dataset ni benchmarks.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo transformer, inferido por el formato de pesos y la librería transformers) |
-| Parámetros totales | 1.170.340.608 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | transformer (derivado de ajuste LoRA fusionado; detalles no disponibles) |
+| Parametros totales | 1.170.340.608 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (inglés) |
-| Licencia | lfm1.0 (Liquid Foundation Model license) |
-| Formato de pesos | GGUF (safetensors en el modelo base original) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | lfm1.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Los metadatos indican que se trata de un ajuste fino mediante LoRA sobre el modelo base Openwist/Logistes-1.0, y que el resultado se distribuye a través de la librería transformers. El recuento de parámetros (1,17 B) y el hecho de que el autor lo etiquete como on-device sugieren un modelo compacto pensado para inferencia local, pero no se confirma la familia arquitectónica (transformer denso, MoE, híbrido, etc.).
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un transformer ajustado mediante LoRA sobre una base no identificada en la model card y posteriormente fusionado. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o instruccion supervisada. Las etiquetas indican un enfoque hacia tool-use y despliegue on-device, lo que sugiere un ajuste orientado a instrucciones y llamadas a funciones, pero no se aportan detalles tecnicos verificables.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio GGUF es puramente operativa: describe los cuantizados disponibles y remite al modelo base para más detalles, sin aportar información sobre el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, etc.) sería especulativa y no se incluye.
+Las cuantizaciones han sido generadas por mradermacher como cuantizaciones estaticas (sin imatrix ni weighted quants en el momento de la publicacion). No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta "conversational" del repositorio.
-- Uso de herramientas (tool-use / function calling), según la etiqueta "tool-use" de la model card.
-- Orientación a despliegue en dispositivo (on-device), según la etiqueta homónima.
-- Ajuste fino mediante LoRA sobre el modelo base Openwist/Logistes-1.0.
-- Capacidades multilingües: limitadas al inglés según el campo `language: en`.
-- No se documentan capacidades de visión, audio, modo thinking ni razonamiento multi-paso explícito.
+- Generacion de texto conversacional en ingles.
+- Soporte declarado de tool-use / function calling (segun etiquetas de la model card).
+- Orientado a despliegue on-device y entornos con recursos limitados.
+- Capacidades multilingues: limitadas al ingles segun la metadata.
+- No se documentan capacidades de vision, audio, thinking mode ni razonamiento multi-paso explicito.
+- No se confirma soporte de agentes ni de razonamiento multi-step mas alla del tool-use declarado.
 
 ## Casos de uso
 
-- Asistentes locales en dispositivo: con 1,17 B parámetros y cuantizaciones de 0,6 a 1,3 GB, el modelo puede ejecutarse en portátiles y equipos de gama media sin GPU dedicada, ofreciendo un asistente conversacional que no envía datos a la nube. Es adecuado por su tamaño reducido y su orientación explícita a on-device.
-- Integración de tool calling en aplicaciones de escritorio: la etiqueta tool-use sugiere que el modelo puede invocar funciones definidas por el desarrollador (por ejemplo, abrir aplicaciones, consultar APIs locales), lo que permite construir agentes ligeros que operan sobre el sistema de archivos o servicios internos.
-- Automatización de tareas de texto en entornos con recursos limitados: resúmenes, reescritura y clasificación de textos en inglés dentro de contenedores pequeños o dispositivos edge, donde un modelo de 7 B o superior no cabría en memoria.
-- Prototipado rápido de pipelines conversacionales: al estar disponible en GGUF, se puede cargar con llama.cpp u Ollama para validar flujos de diálogo y herramientas antes de migrar a un modelo mayor.
-- Filtrado y preprocesado en pipelines de datos: tareas de etiquetado, normalización o generación de plantillas en inglés que no requieren razonamiento complejo y se benefician de una latencia baja en CPU.
-- Educación y experimentación: por su tamaño y su amplia gama de cuantizaciones, es útil para estudiar el efecto de la cuantización en la calidad de salida y para prácticas de despliegue de modelos pequeños.
+- Asistentes locales de escritorio: el modelo, con 1,17 mil millones de parametros y cuantizaciones de 0,6 a 1,3 GB, puede ejecutarse en un portatil convencional mediante llama.cpp u Ollama para tareas de asistencia conversacional en ingles sin conexion.
+- Automatizacion de tool calling en flujos ligeros: las etiquetas de tool-use sugieren su uso para invocar funciones externas (APIs, calculadoras, busquedas) en pipelines de agentes simples donde no se requiere un modelo grande.
+- Prototipado rapido de chatbots: al ser un modelo pequeno y con cuantizaciones Q4_K_S/Q4_K_M marcadas como "fast, recommended", permite iterar rapidamente en el desarrollo de interfaces conversacionales antes de escalar a modelos mayores.
+- Educacion e investigacion: util como caso de estudio de ajuste LoRA fusionado y cuantizacion GGUF para quienes investigan tecnicas de compresion y despliegue eficiente.
+- Filtrado y clasificacion de texto en ingles: tareas de extraccion o etiquetado simple donde un modelo de 1B es suficiente y la latencia importa.
+- Integracion en aplicaciones moviles o embebidas: el formato GGUF y el tamano reducido permiten su inclusion en apps con presupuesto de memoria ajustado, siempre que el caso de uso sea en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,8 GB con Q4_K_M, 1,3 GB con Q8_0 y 2,4 GB con f16 (tamaños de archivo indicados en la model card; el consumo real en runtime es algo superior por el contexto y el overhead).
-- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM para cuantizaciones bajas; tarjetas como RTX 3060, RTX 4060 o superiores son más que suficientes. También puede ejecutarse íntegramente en CPU.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base original es compatible con transformers.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera una latencia baja en CPU y muy baja en GPU, pero no se aportan cifras.
+- VRAM estimada para inferencia: aproximadamente 0,8-1,0 GB con Q4_K_M, 1,3 GB con Q8_0 y 2,4 GB con f16 (mas overhead del runtime).
+- GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.); en GPUs de datacenter como A100 o H100 el modelo queda sobredimensionado en recursos y no aprovecha su capacidad.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU moderna e incluso en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el repo base en safetensors puede servirse con transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones completas (contexto, arquitectura) que permitan una comparación rigurosa con alternativas. A continuación se indica la comparación posible con la información disponible:
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Logistes-1.0 (este) | 1,17 B | no disponible | lfm1.0 | GGUF, safetensors | Ajuste LoRA, orientado a on-device y tool-use |
-| Alternativas de ~1 B | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la información proporcionada |
+| Logistes-1.0 (GGUF) | 1,17B | no disponible | lfm1.0 | GGUF | Tool-use, on-device, solo ingles |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Base generalista, sin tool-use especifico |
+| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Multilingue, contexto amplio |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Multilingue, orientado a instrucciones |
+
+La comparativa se ofrece como referencia de categoria; los datos de los modelos alternativos provienen de sus respectivas model cards publicas y no de la informacion proporcionada para Logistes-1.0.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el modelo está etiquetado únicamente para inglés (`language: en`); su rendimiento en castellano no está garantizado y probablemente sea deficiente.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar conversaciones largas o documentos extensos con garantías.
-- Alucinación: al no haber benchmarks ni documentación sobre alineación, no se puede evaluar la tasa de alucinación; en un modelo de 1,17 B es esperable un riesgo elevado en tareas de conocimiento factual.
-- Licencia lfm1.0: la licencia Liquid Foundation Model impone condiciones específicas para uso comercial; es obligatorio revisar sus términos antes de desplegar el modelo en producción.
-- Modelo derivado: se trata de un ajuste LoRA sobre un base no documentado en esta ficha; las limitaciones del base se heredan y no se detallan.
-- Información escasa: la model card del repositorio GGUF es operativa y no aporta datos de entrenamiento, arquitectura ni evaluación, lo que dificulta la validación técnica.
-- Cuantizaciones bajas: las versiones Q2_K y Q3_K pueden degradar notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- Solo soporta ingles; no es adecuado para produccion en castellano u otros idiomas.
+- No se dispone de informacion sobre longitud de contexto, lo que impide planificar conversaciones largas o documentos extensos.
+- La licencia lfm1.0 puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en produccion.
+- Riesgo de alucinacion inherente a modelos de 1B, especialmente en tareas de razonamiento o conocimiento factual.
+- No hay benchmarks publicados que permitan validar su calidad frente a alternativas.
+- La model card no documenta sesgos conocidos ni datos de entrenamiento, lo que dificulta la evaluacion de riesgos.
+- Las cuantizaciones son estaticas; no habia weighted/imatrix quants en el momento de la publicacion, lo que puede afectar la calidad en cuantizaciones bajas (Q2_K, Q3_K).
+- Al ser un ajuste LoRA fusionado sobre una base no identificada, la trazabilidad del modelo es limitada.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Logistes-1.0-GGUF
 - Modelo base: https://huggingface.co/Openwist/Logistes-1.0
-- Página de descargas del cuantizador: https://hf.tst.eu/model#Logistes-1.0-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#Logistes-1.0-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

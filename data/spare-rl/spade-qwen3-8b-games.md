@@ -2,86 +2,92 @@
 
 ## Resumen
 
-SPADE-Qwen3-8B-Games es un checkpoint de la familia SPADE, entrenado a partir del modelo base Qwen/Qwen3-8B mediante un esquema de reinforcement learning con self-play. El desarrollo corre a cargo del usuario spare-rl y se distribuye bajo licencia Apache 2.0. La idea central es que un único modelo desempeña dos papeles: el de proposer, que genera entornos ejecutables, y el de actor, que los resuelve. El proposer recibe recompensa por producir entornos situados en la frontera de lo que el actor es capaz de resolver en cada momento, de modo que el curriculo de entrenamiento se adapta dinámicamente en lugar de estar prefijado.
+SPADE-Qwen3-8B-Games es un checkpoint de 8.190.735.360 parámetros (8,19 mil millones) derivado de Qwen/Qwen3-8B mediante el método SPADE (Self-Play with Adaptive Environment Design), desarrollado por el equipo spare-rl. El modelo está especializado en el "setting" de juegos: entornos ejecutables generados y resueltos de forma iterativa. Su publicación en Hugging Face con licencia Apache 2.0 y pesos en safetensors lo hace directamente desplegable en infraestructuras estándar de inferencia.
 
-El modelo se libera con 8.190.735.360 parámetros (8,19B), con arquitectura densa derivada de Qwen3-8B, y está especializado en el dominio de juegos. El checkpoint publicado corresponde a la iteración 399 del entrenamiento, que es el punto final de la ejecución, sin que se haya realizado un barrido de evaluación offline. El corpus de grounding utilizado es spare-rl/spade-grounding-corpus-games-15k, con 15.000 entradas. Su relevancia radica en que demuestra la viabilidad de generar entornos de entrenamiento automáticamente, sin intervención humana, para agentes de reinforcement learning.
+La innovación central de SPADE es entrenar un único modelo en dos roles complementarios: un Diseñador de Entornos que escribe entornos ejecutables y un Agente Razonador que los resuelve. El Diseñador recibe recompensa por producir entornos en la frontera de lo que el Agente puede resolver en cada momento, de modo que el currículo de entrenamiento se adapta dinámicamente a la política en lugar de fijarse de antemano. Este enfoque de self-play con generación de entornos busca mejorar el razonamiento del modelo sin depender exclusivamente de datasets estáticos.
 
-## Especificaciones técnicas
+El modelo hereda la arquitectura y el tokenizador de Qwen3-8B, con una longitud de contexto declarada de 32.768 tokens, y se distribuye con pesos completos (16,4 GB en el repositorio). Es relevante para quienes investigan entrenamiento por refuerzo con auto-juego, generación de entornos y agentes que razonan sobre problemas procedurales, así como para desarrolladores que quieran un modelo de 8B afinado específicamente para tareas de razonamiento lúdico y ejecución de reglas.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3-8B) |
-| Parametros totales | 8.190.735.360 (8, 19B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No especificada en la ficha; el base Qwen3-8B soporta 32.000 tokens según el report tecnico de Qwen3 |
-| Tipos de cuantizacion | No disponibles (el repo contiene pesos safetensors en precision completa; sin GGUF ni AWQ publicados) |
-| Idiomas soportados | No disponibles (el base Qwen3-8B es multilingue, pero el finetune no especifica idiomas) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-8B; detalles internos no disponibles en la información proporcionada) |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no disponible (no es un modelo MoE según los datos disponibles) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base Qwen3-8B, un transformer denso de 8B parámetros con capacidad para alternar entre modo de pensamiento (thinking) y modo directo (non-thinking), tal y como describe el report tecnico de Qwen3. Sobre esta base, SPADE aplica un entrenamiento de reinforcement learning con self-play en dos roles: el proposer genera entornos ejecutables (en este caso, juegos) y el actor los resuelve. La recompensa del proposer depende de que el entorno se encuentre en la frontera de capacidad del actor, lo que obliga al curriculo a avanzar al ritmo de la politica.
+El modelo parte de Qwen/Qwen3-8B, un transformer decoder-only de 8,19 mil millones de parámetros, y se afina mediante SPADE, un procedimiento de self-play con diseño adaptativo de entornos. En este esquema, el mismo modelo actúa como Diseñador (genera entornos ejecutables, en este caso juegos) y como Agente (los resuelve). La señal de recompensa del Diseñador se orienta a mantener los entornos en la frontera de dificultad resoluble por el Agente, lo que produce un currículo que evoluciona con la política. El entrenamiento se enmarca en aprendizaje por refuerzo y se apoya en corpus de "grounding" publicados por el mismo equipo (spade-grounding-corpus-games-15k y spade-grounding-corpus-tooluse-15k).
 
-El entrenamiento se apoya en el corpus de grounding spare-rl/spade-grounding-corpus-games-15k, que contiene 15.000 juegos, y los entornos se generan online por el propio modelo durante el entrenamiento. No se especifica el número de tokens de entrenamiento, ni el uso de RLHF o DPO. El checkpoint liberado corresponde a la iteración 399, que es el punto final de la ejecución sin evaluacion offline previa.
+No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron fases de RLHF o DPO adicionales más allá del bucle de self-play. Tampoco se detallan innovaciones de inferencia como decodificación especulativa o atención lineal; el modelo conserva el stack de transformers y es compatible con sglang >= 0.4.6.post1 y vllm >= 0.8.5 para servir una API compatible con OpenAI.
 
 ## Capacidades
 
-- Generación de entornos ejecutables (juegos) en formato texto, gracias a su papel como proposer.
-- Actuación dentro de entornos generados, resolviendo tareas como actor.
-- Curriculo adaptativo: el modelo ajusta la dificultad de los entornos de forma automatica segun su propia capacidad.
-- Razonamiento multi-paso heredado del base Qwen3-8B, util para tareas de planificacion y logica.
-- Capacidad conversacional (tag de transformers), aunque no se especifican detalles de soporte de tool calling.
-- No se documenta soporte explicito para vision, audio ni function calling especifico.
+- Generación de texto conversacional con plantilla de chat (apply_chat_template) y soporte de system/user/assistant.
+- Razonamiento multi-paso orientado a resolución de problemas y ejecución de reglas.
+- Generación de entornos ejecutables (código de juegos) en el rol de Diseñador.
+- Resolución de entornos y tareas procedurales en el rol de Agente.
+- Entrenamiento específico para el "setting" de juegos; el equipo publica además un corpus de tool use, lo que sugiere capacidades relacionadas con uso de herramientas en el ecosistema SPADE (no confirmadas como capacidades nativas del checkpoint de games).
+- Contexto de 32.768 tokens, adecuado para conversaciones y problemas de varios turnos.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Generacion procedural de entornos de entrenamiento para agentes de RL: el modelo puede producir juegos de texto que sirven como banco de pruebas para politicas de aprendizaje, sin intervencion humana.
-- Curriculo adaptativo en sistemas de entrenamiento de agentes: se usa como generador de entornos que se ajustan a la capacidad actual del agente, acelerando la convergencia.
-- Evaluacion de robustez de agentes: los entornos generados en la frontera de capacidad permiten detectar debilidades en agentes existentes.
-- Creacion de juegos basados en texto: el modelo puede generar descripciones y mecanicas de juego para prototipos rapidos o para contenido procedural en demos.
-- Simulacion de escenarios para testing de agentes conversacionales: los entornos generados pueden usarse para probar agentes en contextos de juego interactivo.
-- Investigacion en self-play y generacion automatica de entornos: sirve como punto de partida para experimentos sobre curriculum learning y autoevaluacion de politicas.
+- Investigación en self-play y RL: reproducir el bucle Diseñador/Agente para estudiar cómo evoluciona el currículo; el checkpoint permite arrancar desde una política ya entrenada en el setting de games en lugar de desde Qwen3-8B base.
+- Generación automática de entornos de evaluación: usar el rol de Diseñador para producir juegos y puzzles ejecutables que sirvan como tests dinámicos para otros agentes, con dificultad ajustable.
+- Agentes que resuelven problemas procedurales: el modelo puede razonar paso a paso sobre reglas, estados y objetivos, útil en simuladores ligeros y entornos tipo grid o puzzle.
+- Evaluación de robustez de agentes: emplear el modelo como generador de escenarios adversariales o de dificultad creciente para stress-testing de pipelines de agentes.
+- Prototipado de videojuegos y mecánicas: generar código de mecánicas de juego y reglas ejecutables como punto de partida para diseñadores humanos.
+- Benchmarking de razonamiento en dominios lúdicos: comparar la política SPADE frente a Qwen3-8B base en tareas de juegos para medir la ganancia del entrenamiento por self-play.
+- Servicio de inferencia interno: desplegar con vLLM o SGLang (contexto 32.768) para experimentos de investigación con API compatible con OpenAI, con temperature=0.6, top_p=0.95, top_k=20, min_p=0.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que el checkpoint seleccionado es el punto final de la ejecucion y que no se realizo un barrido de evaluacion offline para esta rama del proyecto.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 16, 4 GB para los pesos, mas overhead de atencion, por lo que se recomienda un minimo de 20 GB de VRAM.
-- VRAM estimada con cuantizacion 4-bit (si se convierte a GGUF): entre 5 y 6 GB, lo que permitiria ejecucion en GPU de consumo con 8 GB o mas.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para FP16; A100 80 GB o H100 para despliegue con mayor margen.
-- El modelo cabe en GPU de consumo modernas (RTX 3090/4090) en precision completa, y en GPU de 8 GB si se cuantiza.
-- Opciones de despliegue: transformers (con device_map="auto"), vLLM (compatible con la arquitectura Qwen3), llama.cpp tras convertir a GGUF, y Ollama si se publica un modelo GGUF.
-- Latencia y throughput: no disponibles; dependen de la GPU y del modo de pensamiento activado (thinking mode consume mas tokens).
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 16,4 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda 24 GB o más para contexto completo.
+- Cuantización: no se publican variantes oficiales; una cuantización a 8 bits reduciría los pesos a ~8 GB y a 4 bits a ~4-5 GB, aunque dichas conversiones no están verificadas por el autor.
+- GPU recomendadas: A100 40/80 GB, H100, L40S para contexto completo y throughput alto; RTX 4090 (24 GB) puede ejecutar el modelo en BF16 con contexto reducido.
+- GPU de consumo: cabe en RTX 4090 y potencialmente en GPUs de 16 GB solo con cuantización, no verificada oficialmente.
+- Despliegue: transformers (recomendado última versión), vLLM >= 0.8.5, SGLang >= 0.4.6.post1; el autor advierte reducir la longitud de contexto si aparecen OOM.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPADE-Qwen3-8B-Games | 8, 19B | 32K (base) | RL self-play con generacion de entornos | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-8B (base) | 8,19B | 32K | Preentrenamiento estandar | Apache 2.0 | Hugging Face |
-| KKKrainbow1/SPA-RL-Qwen3 (GitHub) | 8,19B | 32K | RL con atribucion de progreso por pasos y tool call | No especificada | GitHub |
-| yeok/Qwen3-8B-random_insertion_rl | 8,19B | 32K | RL con insercion aleatoria | Apache 2.0 | Hugging Face |
+| SPADE-Qwen3-8B-Games | 8,19 B | 32.768 | Self-play, generación de entornos de juegos | Apache 2.0 | Hugging Face (spare-rl) |
+| Qwen/Qwen3-8B | 8,19 B | no disponible en esta ficha | Modelo base generalista | Apache 2.0 (según model card del base) | Hugging Face |
+| Alternativas de 8B para razonamiento/agentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a finetunes del mismo base model (Qwen3-8B). SPADE se diferencia por su enfoque en generacion de entornos y self-play, mientras que los otros se centran en mejoras de razonamiento o tool calling.
+La comparación cuantitativa de rendimiento frente a Qwen3-8B u otros modelos de 8B no está disponible: no se han publicado benchmarks en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks; el checkpoint es el final de la ejecucion sin evaluacion offline, lo que limita la confianza en el rendimiento general.
-- Enfoque exclusivo en el dominio de juegos: su capacidad de generacion de entornos esta ligada al corpus de 15K juegos, por lo que no se debe esperar un comportamiento generalista fuera de ese ambito.
-- Riesgo de alucinacion en los entornos generados: el modelo puede producir juegos con reglas inconsistentes o no ejecutables, dado que no se ha validado la calidad de los entornos de forma externa.
-- Idiomas no especificados: aunque el base Qwen3-8B es multilingue, el finetune no documenta que idiomas mantiene o pierde capacidad.
-- Longitud de contexto heredada de Qwen3-8B (32K tokens), pero no se ha verificado si el entrenamiento SPADE mantiene la ventana completa.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo derivado de Qwen3-8B puede estar sujeto a las condiciones del modelo base (tambien Apache 2.0).
-- No se documenta soporte de tool calling o function calling para este checkpoint concreto.
+- No se han publicado evaluaciones de sesgo, toxicidad o alucinación para este checkpoint; el riesgo de alucinación es el propio de un modelo de 8B y debe mitigarse con verificación externa.
+- El modelo está afinado para el setting de "games"; su rendimiento fuera de ese dominio (atención al cliente, código de producción general, etc.) no está validado y podría degradarse respecto a Qwen3-8B base.
+- Idiomas soportados no declarados: no se garantiza un comportamiento multilingüe equilibrado.
+- El contexto declarado es de 32.768 tokens; superarlo o acercarse al límite puede provocar OOM o degradación, y el autor sugiere reducirlo en caso de problemas de memoria.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo deriva de Qwen3-8B; conviene revisar la model card del base por si hubiera condiciones adicionales.
+- Es un checkpoint de investigación con 259 descargas y 1 "like" en el momento de la consulta: no hay evidencia de uso en producción ni de soporte mantenido.
+- No se publican variantes cuantizadas oficiales; cualquier cuantización a GGUF/AWQ/GPTQ sería no verificada por el autor.
+- El paper referenciado (arXiv:2608.19197) debe consultarse para entender el protocolo de entrenamiento y sus posibles sesgos de currículo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/spare-rl/SPADE-Qwen3-8B-Games
-- Corpus de grounding (games): https://huggingface.co/datasets/spare-rl/spade-grounding-corpus-games-15k
-- Corpus de grounding (tool use): https://huggingface.co/datasets/spare-rl/spade-grounding-corpus-tooluse-15k
-- Repositorio relacionado SPA-RL-Qwen3 (GitHub): https://github.com/KKKrainbow1/SPA-RL-Qwen3
-- Report tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
-- Blog de NVIDIA sobre Qwen3-8B en juegos: https://developer.nvidia.com/blog/nvidia-ace-adds-open-source-qwen3-slm-for-on-device-deployment-in-pc-games/
+- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- Paper: https://arxiv.org/abs/2608.19197
+- Corpus de grounding (games): https://huggingface.co/datasets/spade-rl/spade-grounding-corpus-games-15k
+- Corpus de grounding (tool use): https://huggingface.co/datasets/spade-rl/spade-grounding-corpus-tooluse-15k
+- Organización spare-rl: https://huggingface.co/spade-rl

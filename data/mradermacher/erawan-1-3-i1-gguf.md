@@ -2,98 +2,89 @@
 
 ## Resumen
 
-Erawan 1.3 es un modelo de lenguaje de aproximadamente 1.720 millones de parametros (etiquetado como 2B por el autor) desarrollado por AIRAVAT-AI-ML. Se trata de un fine-tuning mediante LoRA sobre una base de la familia Qwen3, orientado especificamente a flujos agenticos: uso de herramientas, function calling y razonamiento multi-paso. El modelo que nos ocupa, `mradermacher/erawan-1.3-i1-GGUF`, es la version cuantizada en formato GGUF publicada por mradermacher, con una amplia gama de cuantizaciones que van desde IQ1_S (0,6 GB) hasta Q6_K (1,5 GB), todas generadas con imatrix.
+Erawan 1.3 es un modelo de lenguaje de aproximadamente 1.720 millones de parámetros (etiquetado como "2B" por el autor) afinado mediante LoRA sobre una base de la familia Qwen3. Lo desarrolla Airavat-AI y está orientado explícitamente a casos de uso agénticos: uso de herramientas (tool use), function calling y razonamiento. Esta ficha describe la versión cuantizada en GGUF publicada por mradermacher, un conocido cuantizador de la comunidad que distribuye pesos optimizados para inferencia local con llama.cpp.
 
-La relevancia de esta ficha radica en que el modelo base original se distribuye en safetensors (transformers), mientras que esta variante permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama o cualquier runtime compatible con GGUF. Al ser un modelo de ~1,7B de parametros con licencia Apache 2.0, resulta atractivo para prototipado de agentes locales, automatizacion ligera y despliegues en entornos con recursos limitados.
+El repositorio que nos ocupa no contiene los pesos originales en safetensors, sino un conjunto amplio de cuantizaciones GGUF generadas con imatrix (importancia matricial ponderada), lo que permite ejecutar el modelo en hardware modesto, desde equipos de gama baja hasta GPUs de consumo. La relevancia actual del modelo radica en su tamaño reducido combinado con capacidades de razonamiento y llamada a funciones, un perfil muy demandado para agentes ligeros desplegados en local o en entornos con recursos limitados.
 
-No se dispone de informacion publica sobre la longitud de contexto, el volumen de datos de entrenamiento ni los resultados de benchmarks en la informacion proporcionada. El modelo declara soporte unicamente para ingles.
+La información disponible en la model card es escasa: se limita a metadatos, la lista de cuantizaciones y notas sobre el proceso de cuantización. No se detallan datos de entrenamiento, benchmarks ni especificaciones de contexto, por lo que muchos campos de esta ficha se marcan como "no disponible".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3, segun tags del autor); detalles no disponibles |
-| Parametros totales | 1.720.574.976 (~1,72B) |
-| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
+| Arquitectura | Transformer (derivada de Qwen3, según tags; detalles no disponibles) |
+| Parámetros totales | 1.720.574.976 (≈1,72 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `AIRAVAT-AI-ML/erawan-1.3` es un fine-tuning mediante LoRA sobre una base de la familia Qwen3, segun los tags declarados por el autor (`qwen3`, `lora`, `Fine-tuned`). El objetivo del ajuste es reforzar capacidades agenticas: `agentic`, `tool-use`, `function-calling` y `reasoning` aparecen como tags del modelo. No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO.
+El modelo base es Airavat-ai/erawan-1.3, un ajuste fino mediante LoRA (según los tags del repositorio) sobre una base de la familia Qwen3, con un total de 1.720.574.976 parámetros según los safetensors del modelo original. Los tags indican un enfoque en razonamiento, uso de herramientas y function calling, lo que sugiere un entrenamiento orientado a tareas agénticas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La variante aqui descrita es una cuantizacion GGUF producida por mradermacher utilizando ficheros imatrix (importance matrix), lo que segun el autor mejora la calidad de las cuantizaciones de baja precision respecto a las cuantizaciones estaticas equivalentes. El repositorio incluye tambien una version estatica en `mradermacher/erawan-1.3-GGUF`. No se documentan innovaciones arquitectonicas adicionales (atencion lineal, decodificacion especulativa, etc.) en la informacion proporcionada.
+La versión aquí descrita es la cuantización GGUF realizada por mradermacher mediante el método i1 (imatrix), que emplea un fichero de importancia matricial para ponderar la cuantización y mejorar la calidad respecto a cuantizaciones estáticas equivalentes. El repositorio incluye tanto el fichero imatrix como 24 variantes de cuantización, desde IQ1_S (0,6 GB) hasta Q6_K (1,5 GB). No se documentan innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento multi-paso (`reasoning` declarado como tag).
-- Uso de herramientas y function calling (`tool-use`, `function-calling`).
-- Comportamiento orientado a agentes (`agentic`).
-- Fine-tuning especifico sobre Qwen3, heredando las capacidades base de dicha familia.
-- Capacidades multilingues: limitadas al ingles segun los metadatos.
-- Vision, audio y thinking mode: no disponibles en la informacion proporcionada.
+- Generación de texto conversacional en inglés.
+- Razonamiento (tag "reasoning").
+- Uso de herramientas y function calling (tags "tool-use", "function-calling").
+- Comportamiento agéntico (tag "agentic"), orientado a flujos multi-paso.
+- Capacidades multilingües: limitadas al inglés según los metadatos.
+- No se documentan capacidades de visión, audio ni modos de pensamiento explícitos.
 
 ## Casos de uso
 
-- Agentes locales en hardware de consumo: gracias a las cuantizaciones de 1,1-1,5 GB (IQ4_XS, Q4_K_M, Q5_K_M), el modelo puede ejecutarse en GPUs con 4-6 GB de VRAM o incluso en CPU, permitiendo prototipar agentes con tool calling sin infraestructura dedicada.
-- Automatizacion de tareas con function calling: el modelo esta ajustado explicitamente para emitir llamadas a funciones, por lo que encaja en pipelines donde un LLM debe decidir que herramienta invocar (APIs REST, consultas a bases de datos, operaciones de ficheros).
-- Razonamiento encadenado en asistentes de codigo: su tag `reasoning` sugiere utilidad en tareas de descomposicion de problemas; puede integrarse como paso intermedio en asistentes de desarrollo para planificar cambios antes de generar parches.
-- Enrutamiento y clasificacion de intenciones en sistemas multiagente: por su tamano reducido, es viable desplegarlo como modelo "router" que decide a que agente o herramienta derivar cada peticion, con latencia baja en GPU de gama media.
-- Prototipado rapido con Ollama o llama.cpp: al estar disponible en GGUF con cuantizaciones desde 0,6 GB, permite iterar sobre prompts y esquemas de herramientas en un portatil antes de escalar a un modelo mayor.
-- Educacion e investigacion sobre fine-tuning agentico: al ser Apache 2.0 y derivar de Qwen3 con LoRA, sirve como caso de estudio reproducible para analizar como un ajuste LoRA sobre una base pequena mejora tool calling.
-- Despliegue en el borde (edge): con cuantizaciones IQ2/IQ3 de menos de 1 GB, es posible ejecutarlo en dispositivos con memoria muy limitada, aceptando la perdida de calidad documentada por el autor.
+- Agentes ligeros de automatización: el tamaño de 1,72 B permite ejecutar el modelo en local para orquestar tareas multi-paso con llamadas a herramientas, adecuado cuando no se dispone de GPU de gran capacidad.
+- Function calling en asistentes de desarrollo: puede integrarse en pipelines que requieran invocar APIs o funciones de forma estructurada, gracias a su entrenamiento específico en tool use.
+- Prototipado rápido en equipos de sobremesa: las cuantizaciones de 1,2 GB (Q4_K_M) caben en GPUs de consumo con 4-6 GB de VRAM, lo que facilita experimentación sin infraestructura dedicada.
+- Razonamiento en entornos con restricciones de privacidad: al poder ejecutarse íntegramente en local, es apto para procesar datos sensibles sin enviarlos a servicios externos.
+- Chatbots de soporte técnico en inglés: su naturaleza conversacional y su ventana de contexto (no documentada) permiten gestionar diálogos multi-turno, aunque se recomienda validar el límite real de contexto.
+- Evaluación de pipelines agénticos: sirve como modelo de referencia de bajo coste para probar arquitecturas de agentes antes de escalar a modelos mayores.
+- Despliegue en dispositivos edge: las variantes IQ2 e IQ3 (0,7-1,0 GB) permiten inferencia en hardware muy limitado, útil para demos y pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun tamano de fichero GGUF):
-  - IQ1_S / IQ1_M: ~0,6 GB de pesos; ~1,5-2 GB de VRAM total con contexto moderado.
-  - IQ2_XXS a IQ2_M: ~0,7-0,8 GB de pesos; ~2 GB de VRAM total.
-  - IQ3_XXS a Q3_K_L: ~0,9-1,1 GB de pesos; ~2,5-3 GB de VRAM total.
-  - IQ4_XS a Q4_1: ~1,1-1,2 GB de pesos; ~3 GB de VRAM total.
-  - Q5_K_S / Q5_K_M: ~1,3-1,4 GB de pesos; ~3,5 GB de VRAM total.
-  - Q6_K: ~1,5 GB de pesos; ~4 GB de VRAM total.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) es suficiente; tambien cabe en GPUs de datacenter (A100, H100) aunque estas estan sobredimensionadas para un modelo de 1,7B.
-- Cabe en GPU consumer: si, en practicamente todas las GPU modernas, e incluso en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. El modelo base original puede servirse con transformers, vLLM o TGI en formato safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (según cuantización): desde ~0,6 GB (IQ1_S) hasta ~1,5 GB (Q6_K) solo para los pesos; añadir overhead de contexto y KV cache (típicamente 0,5-2 GB adicionales según longitud de contexto).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090 o superiores ofrecen margen holgado; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs modernas con 4 GB o más; las variantes IQ2/IQ3 pueden ejecutarse incluso en iGPU o CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Erawan 1.3 (esta ficha, GGUF) | ~1,72B | no disponible | Apache 2.0 | GGUF (i1) | Fine-tuning LoRA de Qwen3 orientado a agentes y tool calling |
-| Qwen3 (base de la familia) | no disponible para la variante concreta | no disponible | no disponible en esta ficha | safetensors/GGUF | Base sobre la que se aplica el LoRA; capacidades generales |
-| Erawan 1.3 estatico (`mradermacher/erawan-1.3-GGUF`) | ~1,72B | no disponible | Apache 2.0 | GGUF (estatico) | Misma base, cuantizaciones sin imatrix |
+| Erawan 1.3 (i1-GGUF) | 1,72 B | no disponible | Apache 2.0 | GGUF en HF | Afinado para tool use y agentes |
+| Qwen3 (base de la familia) | variable | no disponible | según variante | HF | Base sobre la que se afina Erawan |
+| Alternativas de ~2 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-No se dispone de informacion suficiente para comparar con alternativas de otros autores (por ejemplo, otros modelos de ~2B orientados a tool calling) sin inventar datos.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles segun los metadatos del autor; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Longitud de contexto no documentada: no es posible planificar despliegues con ventanas largas sin verificacion empirica.
-- Riesgo de alucinacion inherente a modelos de ~1,7B, especialmente en tareas de razonamiento complejo o generacion factual.
-- Las cuantizaciones de muy baja precision (IQ1_S, IQ1_M, IQ2_*) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
-- No hay benchmarks publicados que permitan validar las capacidades agenticas declaradas en los tags.
-- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene verificar las condiciones de la base Qwen3 subyacente si se redistribuye el modelo.
-- El fine-tuning es LoRA sobre una base pequena: no debe asumirse un rendimiento comparable al de modelos mayores en tool calling complejo o razonamiento profundo.
-- El repositorio tiene 0 likes y ~2120 descargas en el momento de la consulta, lo que indica una validacion comunitaria limitada.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Contexto: la longitud de contexto no está documentada, lo que impide planificar despliegues con ventanas largas sin validación empírica.
+- Alucinación: no hay datos publicados sobre tasas de alucinación; al ser un modelo de 1,72 B, es esperable una fiabilidad inferior a modelos mayores en tareas de razonamiento complejo.
+- Sesgos: no se documentan evaluaciones de sesgo; el dataset de entrenamiento es desconocido.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3 subyacente.
+- Producción: las cuantizaciones de baja precisión (IQ1, IQ2) degradan notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- Model card escasa: la ausencia de benchmarks y detalles de entrenamiento limita la evaluación rigurosa antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/erawan-1.3-i1-GGUF
-- Modelo base original: https://huggingface.co/AIRAVAT-AI-ML/erawan-1.3
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/erawan-1.3-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#erawan-1.3-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Repositorio GGUF: https://huggingface.co/mradermacher/erawan-1.3-i1-GGUF
+- Modelo base: https://huggingface.co/Airavat-ai/erawan-1.3
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/erawan-1.3-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#erawan-1.3-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- nethype GmbH (patrocinador del autor): https://www.nethype.de/

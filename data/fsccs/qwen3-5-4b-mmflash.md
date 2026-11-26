@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Qwen3.5-4B-MMFlash es un modelo borrador (draft model) para decodificación especulativa sobre el modelo objetivo Qwen/Qwen3.5-4B, desarrollado por el usuario FSCCS. No se trata de un modelo de lenguaje autónomo: su función es proponer bloques de tokens que el modelo objetivo verifica, acelerando la inferencia en servidores que implementan decodificación especulativa con SGLang y el algoritmo DFLASH. Con 537 millones de parámetros en bf16, es un componente auxiliar que se acopla al modelo base de 4B.
+Qwen3.5-4B-MMFlash es un modelo borrador (*draft model*) para decodificación especulativa sobre el modelo multimodal Qwen/Qwen3.5-4B, desarrollado por FSCCS. No es un modelo de lenguaje autónomo: se empareja con el modelo objetivo dentro de un servidor de decodificación especulativa (SGLang con backend DFLASH) para acelerar la inferencia sobre entradas de imagen y texto. Su propósito es proponer bloques de tokens que el modelo objetivo verifica en un solo paso, reduciendo la latencia de generación en cargas de trabajo visión-lenguaje.
 
-La arquitectura se basa en DFlash, un esquema de block-diffusion drafting: el borrador lee los estados ocultos de cinco capas del modelo objetivo (capas 1, 8, 15, 22 y 29 de 32) y propone un bloque de 16 tokens en un único forward pass, que el modelo objetivo verifica también en un solo paso. La innovación de MMFlash respecto a DFlash es que está entrenado sobre datos multimodales (imagen y texto) con una función de pérdida ponderada por puntuaciones de visual-grounding (visual-KL) por token.
+El modelo sigue la arquitectura DFlash de *block diffusion drafting*: lee estados ocultos de cinco capas del modelo objetivo y propone un bloque de 16 tokens en un único forward pass, que el target verifica también en un único forward pass. La innovación de MMFlash respecto a DFlash es el entrenamiento sobre datos multimodales con una pérdida ponderada por puntuaciones de *visual-grounding* (visual-KL) por token. Con 537 millones de parámetros y licencia Apache 2.0, está pensado para despliegues de producción que ya sirven Qwen3.5-4B y necesitan reducir la latencia sin cambiar el modelo generador.
 
-Su relevancia actual reside en que permite reducir la latencia de inferencia de Qwen3.5-4B en cargas multimodales sin modificar el modelo objetivo, manteniendo la calidad de la verificación. El repositorio ocupa 1,1 GB y se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors.
+Es relevante ahora porque la decodificación especulativa se ha consolidado como técnica estándar para abaratar inferencia, y hasta la fecha la mayoría de drafters publicados se centraban en texto puro. MMFlash traslada esa ventaja al dominio multimodal, donde el coste de prefill y verificación visual es especialmente alto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Block-diffusion draft model (DFlash) sobre estados ocultos del modelo objetivo |
+| Arquitectura | DFlash block-diffusion draft (transformer lector de estados ocultos, propuesta de bloques de 16 tokens) |
 | Parametros totales | 537.427.200 (537M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (depende del modelo objetivo; el ejemplo de vLLM usa 32768) |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (repo en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-MMFlash hereda la arquitectura de DFlash, un esquema de decodificación especulativa basado en block diffusion. En lugar de generar tokens de uno en uno, el borrador consume los estados ocultos de cinco capas del modelo objetivo (1, 8, 15, 22 y 29 de las 32 totales) y propone un bloque completo de 16 tokens en un único forward pass. El modelo objetivo verifica después ese bloque también en un solo paso, aceptando o corrigiendo las propuestas. El tamaño del bloque está fijado en 16 y se configura en SGLang mediante `--speculative-dflash-block-size 16`.
+MMFlash hereda la arquitectura DFlash de *block diffusion drafting*. El borrador consume los estados ocultos de cinco capas del modelo objetivo Qwen3.5-4B y genera en un solo forward pass un bloque de 16 tokens candidatos; el modelo objetivo verifica ese bloque en un único forward pass, aceptando el prefijo correcto y corrigiendo el resto. Este esquema reduce el número de pasos secuenciales del decoding autorregresivo clásico, que es donde se concentra la latencia en modelos multimodales.
 
-El entrenamiento se realizó sobre datos multimodales (imagen y texto) partiendo del modelo base Qwen/Qwen3.5-4B, con una función de pérdida ponderada por puntuaciones de visual-grounding (visual-KL) calculadas por token. Esta ponderación prioriza los tokens con mayor dependencia del contenido visual, lo que resulta relevante para cargas de trabajo que combinan imagen y texto. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO.
+La diferencia respecto a DFlash es el régimen de entrenamiento: MMFlash se entrena sobre datos multimodales (imagen y texto) con una función de pérdida ponderada por puntuaciones de *visual-grounding* (visual-KL) calculadas por token. Es decir, los tokens con mayor dependencia de la información visual reciben un peso mayor en el ajuste del borrador, lo que debería mejorar la tasa de aceptación en tareas que requieren grounding sobre la imagen. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO (en un draft model esto sería inusual, pero no se documenta).
 
 ## Capacidades
 
-- Decodificación especulativa de bloques de 16 tokens en un único forward pass, verificados por el modelo objetivo en otro paso.
-- Soporte de entradas multimodales (imagen y texto), entrenado específicamente para ese dominio.
-- Integración con SGLang mediante el algoritmo DFLASH y el parser de razonamiento qwen3.
-- Compatibilidad con backends de atención diferenciados para texto (`fa3`) y multimodal (`sdpa`).
-- No es un modelo generativo autónomo: no produce respuestas por sí mismo, solo propuestas de tokens para el modelo objetivo.
-- No dispone de tool calling, function calling ni capacidades de agente propias; estas residen en el modelo objetivo Qwen3.5-4B.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de tokens candidatos para decodificación especulativa sobre Qwen3.5-4B, en modalidad imagen-texto y texto.
+- Propuesta de bloques de 16 tokens por forward pass, verificados por el modelo objetivo.
+- Aprovechamiento de estados ocultos de cinco capas del target para condicionar la propuesta.
+- Entrenamiento específico para grounding visual, con ponderación por token según dependencia de la imagen.
+- Integración con SGLang mediante el backend DFLASH.
+- No soporta uso autónomo: no genera respuestas finales por sí mismo, no tiene tool calling propio ni capacidades de agente independientes.
+- Capacidades multilingües: no disponibles (heredadas del target, pero no documentadas para el drafter).
 
 ## Casos de uso
 
-- Aceleración de inferencia multimodal en producción: desplegar Qwen3.5-4B con MMFlash como borrador en SGLang permite reducir la latencia por token en cargas que combinan imagen y texto, manteniendo la verificación del modelo objetivo.
-- Servicios de descripción de imágenes o VQA de baja latencia: el borrador propone bloques de 16 tokens que el modelo objetivo valida, lo que resulta adecuado para aplicaciones interactivas donde el tiempo de respuesta es crítico.
-- Asistentes conversacionales con entrada visual: al integrarse en un servidor SGLang con `--reasoning-parser qwen3`, puede acelerar conversaciones multi-turno que incluyen capturas o documentos escaneados.
-- Procesamiento por lotes de documentos con texto e imagen: el esquema de block diffusion reduce el número de pasos de decodificación, lo que mejora el throughput en pipelines de extracción de información.
-- Investigación en decodificación especulativa multimodal: sirve como referencia reproducible para estudiar el impacto de la ponderación visual-KL en la tasa de aceptación de tokens.
-- Evaluación comparativa de borradores: permite medir la ganancia de velocidad frente a un borrador entrenado solo con texto sobre el mismo modelo objetivo Qwen3.5-4B.
-- Prototipado de servidores de inferencia con SGLang: el comando de lanzamiento documentado facilita reproducir la configuración DFLASH en entornos de desarrollo.
+- Aceleración de asistentes visuales en producción: desplegar Qwen3.5-4B con MMFlash en SGLang para reducir la latencia de respuestas sobre imágenes en aplicaciones de chat multimodal, manteniendo la calidad del modelo objetivo gracias a la verificación por bloque.
+- Análisis de documentos escaneados y capturas: en pipelines de extracción de información donde el prefill visual domina el coste, el drafter reduce el número de pasos de decoding y mejora el throughput por GPU.
+- Respuestas sobre gráficos y tablas (estilo MathVista): el entrenamiento con ponderación visual-KL está orientado a tokens dependientes de la imagen, lo que encaja con preguntas que requieren leer valores concretos del gráfico.
+- Atención al cliente con soporte de imágenes: conversaciones multi-turno donde el usuario adjunta capturas o fotos; el drafter acelera la generación sin alterar el modelo que decide la respuesta.
+- Servicios de accesibilidad (descripción de imágenes en tiempo real): la reducción de latencia por bloque hace viable la generación de descripciones en flujos interactivos.
+- Evaluación comparativa de técnicas de speculative decoding: usar MMFlash como referencia reproducible para medir tasas de aceptación en cargas multimodales frente a drafters de texto.
+- Despliegue en clústeres con SGLang: sustituir el decoding autorregresivo estándar de Qwen3.5-4B por el par target+drafter para aumentar tokens por segundo por nodo.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +53,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM del borrador: 537M parámetros en bf16 equivalen aproximadamente a 1,1 GB de pesos; el repositorio ocupa 1,1 GB.
-- VRAM total: debe sumarse a la del modelo objetivo Qwen3.5-4B, que se sirve en bf16 junto con el borrador en el mismo servidor SGLang.
-- GPU recomendadas: no disponibles de forma explícita; el ejemplo oficial usa el backend de atención `fa3` (FlashAttention 3), asociado a GPUs Hopper (H100) y, según versión, Ada (RTX 4090, L40S).
-- Cabe en GPU de consumo: el borrador por sí solo sí (1,1 GB), pero el despliegue completo depende del modelo objetivo de 4B y del backend de atención requerido.
-- Opciones de despliegue: SGLang con `--speculative-algorithm DFLASH` (documentado). El README incluye un ejemplo con vLLM que aparece truncado en la información disponible; no se confirma soporte completo en vLLM.
-- Latencia y throughput: no disponibles; dependen de la tasa de aceptación del borrador y del hardware.
+- VRAM del drafter: 537M parámetros en safetensors, aproximadamente 1,1 GB en precisión de entrenamiento (el tamaño del repo es de 1,1 GB); en fp16/bf16 rondaría 1,1 GB adicionales sobre el modelo objetivo.
+- VRAM total: debe sumarse a la del target Qwen3.5-4B (no disponible el detalle exacto de su huella, pero un 4B en bf16 requiere del orden de 8 GB de pesos más caché KV).
+- GPU recomendadas: la demo del autor se grabó en una NVIDIA H200 con SGLang; el drafter es pequeño y no impone requisitos propios de memoria más allá de los del target.
+- GPU de consumo: el drafter por sí solo cabría en cualquier GPU consumer moderna; la viabilidad del conjunto depende de si el target Qwen3.5-4B cabe en la VRAM disponible (posible en RTX 4090 de 24 GB en bf16, no confirmado en la información).
+- Opciones de despliegue: SGLang con backend DFLASH (soporte documentado). No se documentan vLLM, llama.cpp, Ollama ni TGI para este drafter.
+- Latencia y throughput: no disponibles de forma numérica; el autor solo indica que la demo está grabada en tiempo real con decoding greedy en una H200.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Uso |
 |---|---|---|---|---|---|
-| FSCCS/Qwen3.5-4B-MMFlash | 537M | no disponible | Borrador especulativo multimodal para Qwen3.5-4B | Apache 2.0 | Hugging Face |
-| DFlash (z-lab) | no disponible | no disponible | Borrador especulativo base, orientado a texto | no disponible | GitHub |
-| Qwen/Qwen3.5-4B | 4B (modelo objetivo) | no disponible | Modelo generativo completo | no disponible | Hugging Face |
+| FSCCS/Qwen3.5-4B-MMFlash | 537M | no disponible | imagen-texto (drafter) | Apache 2.0 | Draft para Qwen3.5-4B en SGLang |
+| DFlash (z-lab) | no disponible | no disponible | texto (drafter) | no disponible | Draft de bloques para modelos de texto |
+| Drafters EAGLE / Medusa (genéricos) | variable | no disponible | texto | variable | Decodificación especulativa en texto |
 
-No se dispone de datos de rendimiento comparado entre estas alternativas en la información proporcionada.
+No se dispone de datos de rendimiento comparativos entre MMFlash y otros drafters en la información proporcionada; la comparativa se limita a categoría y modalidad.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: no puede usarse sin el modelo objetivo Qwen/Qwen3.5-4B ni sin un servidor que implemente decodificación especulativa DFLASH.
-- El campo `inference: false` de la model card indica que no está pensado para inferencia directa.
-- Requiere SGLang con soporte DFLASH y `--trust-remote-code`; el soporte en vLLM no queda confirmado en la información disponible.
-- El ejemplo oficial desactiva la caché radix (`--disable-radix-cache`), lo que puede afectar al rendimiento en cargas con prefijos repetidos.
-- El tamaño de bloque está fijado en 16; desviarse de ese valor puede degradar la tasa de aceptación.
-- Sesgos conocidos: no disponibles.
-- Riesgo de alucinación: no aplica directamente al borrador, pero las propuestas rechazadas por el modelo objetivo no llegan al usuario; la calidad final depende de la verificación del modelo base.
-- Idiomas soportados: no disponibles.
-- Uso comercial: permitido bajo Apache 2.0, sujeto a las condiciones de la licencia del modelo objetivo Qwen3.5-4B.
-- El autor indica que planea publicar un checkpoint para Qwen4; la compatibilidad futura no está garantizada.
+- No es un modelo autónomo: requiere Qwen3.5-4B y un servidor SGLang con DFLASH; no puede usarse con vLLM, llama.cpp u otros runtimes sin adaptación.
+- Solo sirve para su modelo objetivo exacto (Qwen/Qwen3.5-4B); no es portable a otros targets.
+- La calidad final depende de la tasa de aceptación del bloque; si el borrador falla, el coste puede superar al decoding estándar.
+- Riesgo de alucinación: aunque el target verifica cada bloque, un drafter mal calibrado puede degradar el throughput sin mejorar la calidad.
+- Idiomas soportados no documentados; el comportamiento multilingüe no está garantizado más allá del target.
+- Sesgos: no documentados; al heredar el comportamiento del target, arrastra los sesgos de Qwen3.5-4B.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B.
+- Contexto máximo no especificado; no se puede planificar despliegue con ventanas largas sin validación empírica.
+- El repo tiene pocas descargas (243) y likes (2); madurez y soporte comunitario limitados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FSCCS/Qwen3.5-4B-MMFlash
-- Modelo objetivo: https://huggingface.co/Qwen/Qwen3.5-4B
-- Repositorio DFlash: https://github.com/z-lab/dflash
-- Contacto del autor: fscnkucs@gmail.com
+- Hugging Face: https://huggingface.co/FSCCS/Qwen3.5-4B-MMFlash
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Paper (arXiv 2611.18482): https://huggingface.co/papers/2611.18482
+- Project page: https://fscdc.github.io/MMFlash/
+- Código: https://github.com/fscdc/MMFlash
+- DFlash (z-lab): https://github.com/z-lab/dflash
+- Demo (vídeo): https://huggingface.co/FSCCS/Qwen3.5-4B-MMFlash/resolve/main/assets/demo.mp4

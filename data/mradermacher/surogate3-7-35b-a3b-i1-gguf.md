@@ -2,83 +2,91 @@
 
 ## Resumen
 
-Surogate3.7-35B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Surogate, orientado a tareas de agente, uso de herramientas (tool-use) y razonamiento. La variante aqui descrita es una cuantizacion GGUF publicada por mradermacher, un tercero especializado en generar versiones cuantizadas (IMATRIX y estaticas) de modelos populares para su uso con llama.cpp y herramientas compatibles. El modelo base esta etiquetado con arquitectura MoE, capacidades de agente y tool-use, y una licencia Apache 2.0.
+Surogate3.7-35B-A3B es un modelo de lenguaje de arquitectura Mixture of Experts (MoE) desarrollado por Surogate, distribuido originalmente bajo licencia Apache 2.0. El repositorio analizado aquí no contiene los pesos originales, sino las cuantizaciones GGUF generadas por mradermacher, un conocido publicador de versiones cuantizadas de modelos abiertos. El modelo base cuenta con 35.505.251.456 parámetros totales (aproximadamente 35,5 mil millones) y, por su nomenclatura "A3B", se infiere una arquitectura MoE con unos 3 mil millones de parámetros activos por token, aunque el dato exacto de parámetros activos no está confirmado en la información disponible.
 
-La informacion disponible sobre esta ficha es limitada: la model card del repositorio cuantizado se centra casi exclusivamente en el proceso de cuantizacion y no detalla la arquitectura interna, el entrenamiento ni los benchmarks del modelo original. Los datos de parametros totales reflejados en los metadatos de Hugging Face (96.047.470) entran en conflicto con la nomenclatura del modelo (35B-A3B, que sugiere 35 mil millones de parametros totales y 3 mil millones activos), por lo que deben tratarse con cautela. El repositorio cuantizado pesa 0,4 GB, lo que corresponde probablemente a un unico archivo de cuantizacion de bajo tamano o a los metadatos, no al conjunto completo de pesos.
+El modelo está orientado a tareas de agente, uso de herramientas (tool-use) y razonamiento, según las etiquetas declaradas por el autor. La versión aquí documentada es una recopilación de cuantizaciones con imatrix (importancia matricial) que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y formatos GGUF, con tamaños que van desde 13,3 GB en i1-Q2_K hasta 29,3 GB en i1-Q6_K.
 
-La relevancia de esta ficha radica en que documenta una opcion de despliegue local de un modelo MoE orientado a agentes, con licencia permisiva (Apache 2.0) y soporte para cuantizacion GGUF, lo que facilita su integracion en entornos con recursos limitados. No obstante, la ausencia de datos verificables sobre rendimiento y arquitectura obliga a marcar numerosos campos como no disponibles.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo MoE de 35B en entornos locales, algo que con pesos en precisión completa (unos 71 GB en FP16) requeriría hardware de gama alta. La licencia Apache 2.0 facilita el uso comercial, y el soporte declarado de tool calling y razonamiento lo sitúa en la categoría de modelos para pipelines de agentes.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), segun etiquetas del autor |
-| Parametros totales | 35B segun nomenclatura (35B-A3B); 96.047.470 segun metadatos safetensors (dato en conflicto, tratar con cautela) |
-| Parametros activos | 3B segun nomenclatura (A3B) |
+| Arquitectura | Mixture of Experts (MoE), transformer; inferida por la etiqueta `moe` y el sufijo A3B |
+| Parámetros totales | 35.505.251.456 (~35,5 B) |
+| Parámetros activos | no disponible (el sufijo A3B sugiere ~3 B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IMATRIX y estaticas; lista de quants indicada en la model card: Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantización | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; más fichero imatrix |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en formato transformers/safetensors |
+| Formato de pesos | GGUF (cuantizado); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible confirma que el modelo base emplea una arquitectura de tipo Mixture of Experts (MoE), tal como indican las etiquetas `moe`, `agent`, `tool-use` y `reasoning` de la model card. La nomenclatura 35B-A3B sugiere 35 mil millones de parametros totales con aproximadamente 3 mil millones activos por token, un esquema habitual en modelos MoE disenados para reducir el coste computacional de inferencia manteniendo una capacidad de parametros elevada. Sin embargo, no se dispone de detalles sobre el numero de expertos, el mecanismo de enrutamiento, la longitud de contexto nativa ni la composicion del dataset de entrenamiento.
+La arquitectura es de tipo Mixture of Experts, según la etiqueta `moe` del repositorio y la convención de nomenclatura "A3B" que indica parámetros activos. No se dispone de información detallada sobre el número de expertos, la estrategia de enrutamiento ni la proporción de parámetros activos por token en la documentación proporcionada. Tampoco se detallan los datos de entrenamiento: número de tokens, composición del corpus, ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco se documentan en la informacion proporcionada los datos de entrenamiento (numero de tokens, mezcla de datasets), ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio cuantizado no incluye innovaciones tecnicas destacables mas alla de la propia cuantizacion IMATRIX, que emplea una matriz de importancia (imatrix) para mejorar la calidad de las cuantizaciones de baja precision. Cualquier dato adicional sobre la arquitectura interna del modelo original debe consultarse en el repositorio del modelo base.
+La información disponible se limita a las etiquetas declaradas (`agent`, `tool-use`, `reasoning`, `conversational`), que indican que el modelo fue ajustado para tareas de agente y conversación con uso de herramientas. Las cuantizaciones aquí publicadas emplean imatrix (importancia matricial) calculada sobre el modelo base, una técnica que mejora la calidad de las cuantizaciones de baja precisión al ponderar los pesos según su relevancia para la perplejidad. No se dispone de detalles sobre innovaciones arquitectónicas específicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto en ingles, con enfasis en tareas de razonamiento segun las etiquetas del autor.
-- Soporte de tool calling / function calling, indicado por la etiqueta `tool-use`.
-- Orientacion a flujos de agente y razonamiento multi-paso, indicado por las etiquetas `agent` y `reasoning`.
-- Capacidad multimodal (vision): la model card del cuantizador menciona explicitamente que se trata de un modelo de vision y que los archivos mmproj, si existen, estarian en el repositorio estatico.
-- Soporte de cuantizacion GGUF para despliegue local con llama.cpp y herramientas compatibles.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
+- Generación de texto conversacional multi-turno, según la etiqueta `conversational`.
+- Razonamiento (etiqueta `reasoning`), orientado a tareas que requieren cadenas de pensamiento.
+- Uso de herramientas y function calling (etiqueta `tool-use`).
+- Comportamiento como agente (etiqueta `agent`), con capacidad de razonamiento multi-paso.
+- Soporte multilingüe limitado al inglés según la model card.
+- Capacidad de visión: la model card de mradermacher indica explícitamente "This is a vision model", aunque los ficheros mmproj (proyector multimodal) se alojan en el repositorio estático, no en este.
+- No se documentan capacidades de audio ni modos de pensamiento explícitos más allá de la etiqueta `reasoning`.
 
 ## Casos de uso
 
-- Agentes autonomos con uso de herramientas: el modelo esta etiquetado como `agent` y `tool-use`, por lo que puede integrarse en bucles de razonamiento donde invoque APIs, funciones o comandos externos y procese sus resultados en varios pasos.
-- Asistentes de codigo en local: al ser un MoE con unos 3B parametros activos y cuantizaciones GGUF, puede desplegarse en estaciones de trabajo para autocompletado y generacion de codigo sin depender de la nube, siempre que se valide su calidad en tareas de programacion.
-- Automatizacion de flujos con llamadas a funciones: en pipelines de CI/CD o RPA, el modelo puede decidir que herramienta invocar y con que argumentos, aprovechando su soporte de function calling.
-- Procesamiento de documentos con componente visual: dado que la model card lo describe como modelo de vision, podria emplearse para tareas de extraccion de informacion de imagenes o documentos escaneados, usando los archivos mmproj del repositorio estatico.
-- Prototipado rapido de agentes en hardware de consumo: las cuantizaciones de baja precision (Q4_K_M, IQ4_XS, Q5_K_M) permiten ejecutar el modelo en GPU consumer o incluso CPU, facilitando pruebas de concepto sin infraestructura dedicada.
-- Razonamiento asistido en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su incorporacion en productos comerciales, sujeto a las obligaciones de atribucion correspondientes.
-- Investigacion sobre eficiencia de modelos MoE: la disponibilidad de multiples cuantizaciones IMATRIX y estaticas permite comparar calidad y rendimiento entre precisiones en un mismo modelo.
+- Agentes autónomos con tool calling: el modelo declara soporte de `tool-use` y `agent`, por lo que puede integrarse en frameworks como LangChain o LlamaIndex para ejecutar acciones sobre APIs externas, consultar bases de datos o invocar funciones definidas por el desarrollador.
+- Asistente de atención al cliente: al ser conversacional y multilingüe (inglés), puede gestionar diálogos multi-turno; la cuantización i1-Q4_K_M (21,8 GB) permite desplegarlo en una única GPU de 24 GB para este fin.
+- Generación de código asistida: aunque no se declara explícitamente una capacidad de código, los modelos con razonamiento y tool-use suelen emplearse en pipelines de CI/CD para revisión de parches y generación de tests; conviene validar su rendimiento en código antes de producción.
+- Razonamiento sobre documentos largos: si el contexto es amplio (dato no disponible), adecuado para resumen y extracción de información; la versión i1-Q5_K_M (25,4 GB) ofrece mayor fidelidad para tareas de extracción.
+- Prototipado local en estaciones de trabajo: con la cuantización i1-IQ3_S (15,7 GB) se puede ejecutar en una RTX 4090 (24 GB) o incluso en una RTX 3090, facilitando iteración rápida sin depender de la nube.
+- Evaluación de modelos MoE en investigación: el repositorio ofrece 14 cuantizaciones distintas más el fichero imatrix, lo que permite estudiar el impacto de la precisión en la calidad de salida sobre un mismo modelo base.
+- Despliegue en entornos con requisitos de soberanía de datos: al ser Apache 2.0 y ejecutable con llama.cpp, puede alojarse en infraestructura propia sin restricciones de licencia comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en la nomenclatura 35B-A3B, una cuantizacion de 4 bits de un modelo de 35B parametros totales requeriria del orden de 18-22 GB de VRAM, mientras que una de 2 bits rondaria los 10-12 GB; estos calculos son estimaciones y no datos confirmados por el autor.
-- GPU recomendadas: no disponibles. Por tamano, cabria esperar que una RTX 4090 (24 GB) pudiera ejecutar cuantizaciones de 4 bits o inferiores, y que GPU de datacenter como A100 o H100 permitieran precisiones mayores.
-- Cabe en GPU consumer: probablemente en modelos con 16-24 GB de VRAM usando cuantizaciones de 2 a 4 bits, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) para los archivos GGUF; el modelo base en transformers puede servirse con vLLM o TGI, aunque no se documenta compatibilidad explicita.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: entre 13,3 GB (i1-Q2_K) y 29,3 GB (i1-Q6_K) solo para los pesos; hay que añadir la caché KV, cuyo tamaño depende del contexto y de la configuración de la arquitectura MoE (no disponible).
+- GPU recomendadas: para las cuantizaciones de mayor calidad (i1-Q5_K_M, i1-Q6_K) se recomienda una A100 40 GB, H100 o RTX 4090 de 24 GB con offloading parcial; para i1-Q4_K_M (21,8 GB) una RTX 4090 o RTX 3090 de 24 GB es suficiente.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 (24 GB) con cuantizaciones hasta i1-Q4_K_M; en GPUs de 16 GB solo con i1-Q2_K o i1-Q3_K_S y posible offloading a RAM.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), y servidores compatibles con la API de OpenAI mediante llama.cpp server; vLLM y TGI no soportan GGUF de forma nativa, por lo que requerirían los pesos originales en safetensors.
+- Latencia y throughput: no disponibles; al ser MoE con ~3 B activos (inferido), el throughput por token debería ser superior al de un modelo denso de 35 B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones suficientes del modelo base como para establecer una comparacion rigurosa con alternativas de la misma categoria (modelos MoE de ~35B parametros totales y ~3B activos orientados a agentes y tool-use).
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Surogate3.7-35B-A3B (este) | 35,5 B | ~3 B (inferido) | no disponible | Apache 2.0 | GGUF, safetensors |
+| Mixtral 8x7B | 46,7 B | 12,9 B | 32 K | Apache 2.0 | safetensors, GGUF |
+| Qwen1.5-MoE-A2.7B | 14,3 B | 2,7 B | 32 K | Apache 2.0 | safetensors, GGUF |
+| DeepSeek-V2-Lite | 15,7 B | 2,4 B | 32 K | MIT (código) / modelo abierto | safetensors, GGUF |
+
+La comparación se ofrece a título orientativo: no se dispone de datos de rendimiento del modelo Surogate que permitan una comparación cuantitativa con estas alternativas. La principal ventaja diferencial es su licencia Apache 2.0 combinada con un tamaño de 35 B totales y un perfil de activación reducido, que lo hace desplegable en hardware de consumo con cuantizaciones de 4 bits.
 
 ## Limitaciones y advertencias
 
-- Los metadatos de parametros totales (96.047.470) entran en conflicto con la nomenclatura del modelo (35B-A3B); debe verificarse en el repositorio del modelo base antes de dimensionar infraestructura.
-- El modelo solo declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
-- No hay informacion sobre sesgos, datos de entrenamiento ni procesos de alineacion, lo que impide evaluar riesgos de sesgo y toxicidad.
-- Riesgo de alucinacion no cuantificado: al no haber benchmarks publicados, no puede estimarse su fiabilidad en tareas factuales.
-- La model card del cuantizador es generica y no describe el modelo original; la informacion sobre capacidades (vision, agente, tool-use) proviene unicamente de etiquetas y debe validarse empiricamente.
-- Aunque la licencia es Apache 2.0, conviene revisar la model card del modelo base por si existieran terminos adicionales de uso aceptable.
-- El repositorio cuantizado tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia comunitaria de su calidad o estabilidad.
-- La fecha de creacion del repositorio (2026-11-22) es posterior a la fecha habitual de referencia; verificar la vigencia y procedencia de los artefactos antes de usarlos en produccion.
+- Solo se declara soporte de inglés; no hay evidencia de capacidades multilingües y el rendimiento en castellano es desconocido.
+- No se han publicado benchmarks, por lo que no es posible validar las afirmaciones de razonamiento, tool-use o calidad conversacional.
+- Riesgo de alucinación inherente a los modelos de lenguaje; sin datos de evaluación no se puede estimar su magnitud.
+- La longitud de contexto no está documentada, lo que impide planificar su uso en tareas de contexto largo.
+- La model card indica que es un modelo de visión, pero los ficheros mmproj no están en este repositorio; para uso multimodal hay que acudir al repositorio estático.
+- Las cuantizaciones de baja precisión (i1-Q2_K, i1-Q3_K_S) degradan la calidad; para producción se recomienda i1-Q4_K_M o superior.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia y condiciones del modelo base original (surogate/Surogate3.7-35B-A3B) antes de un despliegue comercial.
+- El repositorio tiene muy pocas descargas (1.726) y un solo like, lo que sugiere una adopción limitada y escasa validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio cuantizado en Hugging Face: https://huggingface.co/mradermacher/Surogate3.7-35B-A3B-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Surogate3.7-35B-A3B-GGUF
-- Modelo base: https://huggingface.co/surogate/Surogate3.7-35B-A3B
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Surogate3.7-35B-A3B-i1-GGUF
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Surogate3.7-35B-A3B-i1-GGUF
+- Modelo base original: https://huggingface.co/surogate/Surogate3.7-35B-A3B
+- Cuantizaciones estáticas (incluye posible mmproj de visión): https://huggingface.co/mradermacher/Surogate3.7-35B-A3B-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#Surogate3.7-35B-A3B-i1-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

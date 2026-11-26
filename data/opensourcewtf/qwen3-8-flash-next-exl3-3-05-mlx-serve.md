@@ -2,106 +2,89 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve es una cuantización de terceros del modelo Qwen3.8-Flash-Next, publicado por el usuario OpensourceWTF en Hugging Face. No se trata de una cuantización nueva: el repositorio reempaqueta los ficheros EXL3 a 3,05 bits por peso creados por turboderp (repositorio turboderp/Qwen3.8-Flash-Next-exl3, rama `3.05bpw_h5_ng5`) al layout de ficheros que carga mlx-serve, un runtime de inferencia para Apple silicon. El modelo base es un modelo de generación de texto conversacional con arquitectura MoE (etiqueta `qwen4_exp`) que incluye capa MTP (multi-token prediction), tabla n-gram y torre de visión, aunque el pack solo ha sido probado con texto.
+Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve es un artefacto de pesos cuantizados del modelo Qwen3.8-Flash-Next, empaquetado por el usuario OpensourceWTF para su uso con la librería mlx-serve en hardware Apple Silicon. No se trata de un modelo entrenado desde cero, sino de una conversión del checkpoint EXL3 de 3,05 bits por peso producido por turboderp con exllamav3, cuyo propósito es permitir la inferencia local en equipos Mac con memoria unificada. El repositorio contiene 26.349.105.555 parámetros en formato safetensors y ocupa 85,4 GB.
 
-Su relevancia es que permite ejecutar una cuantización agresiva (3,05 bpw) de un modelo MoE con 26.349 millones de parámetros totales en hardware Apple silicon, con soporte completo de la cuantización EXL3 para el trunk, la tabla n-gram y la cabeza MTP. El resultado es un pack de 85,4 GB que en las pruebas del autor alcanza 0,982 de pass@1 en HumanEval, cifras notables para un modelo cuantizado a poco más de 3 bits por peso. Es un release no oficial: ni Qwen, ni turboderp ni los mantenedores de mlx-serve lo publican.
+La relevancia de este artefacto es logística más que algorítmica: la model card indica que el repositorio ha sido trasladado a la rama `3.05bpw` del repositorio `OpensourceWTF/Qwen3.8-Flash-Next-exl3`, y que todos los ficheros salvo `ngram_embedding.safetensors` están replicados byte a byte en esa rama. La tabla n-gram debe generarse a partir del fichero de turboderp en la rama `3.05bpw_h5_ng5` mediante el paso de cabecera del conversor del autor. El historial de este repositorio fue comprimido para liberar almacenamiento.
+
+Por tanto, esta ficha documenta un checkpoint cuantizado de tercera mano (Qwen → turboderp → OpensourceWTF) orientado a inferencia en Apple Silicon, con licencia comunitaria Qwen y sin datos publicados de benchmarks propios. La información disponible sobre arquitectura interna, datos de entrenamiento y evaluación del modelo original es limitada en el material proporcionado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (transformer con expertos enrutados, Gated DeltaNet, sparse attention con indexer, capa MTP) |
-| Parametros totales | 26.349.105.555 (dato real de safetensors) |
+| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; familia Qwen, detalles no proporcionados) |
+| Parametros totales | 26.349.105.555 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 3,05 bpw (K3 expertos, K5 atencion y lm_head, K4 MTP fc, tensores pequenos en bf16) |
-| Idiomas soportados | no disponibles |
-| Licencia | qwen-community-1.0 (licencia "other") |
-| Formato de pesos | safetensors (repack EXL3 para mlx-serve) |
+| Tipos de cuantizacion | EXL3 a 3,05 bits por peso (bpw) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (empaquetado para mlx-serve) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen3.8-Flash-Next, es una arquitectura MoE hibrida. El pack contiene 49 capas con expertos enrutados (48 capas del trunk mas la capa MTP), con 512 expertos por capa, proyecciones de atencion q/k/v/o, proyecciones Gated DeltaNet y expertos compartidos, un indexer de sparse attention, una tabla de embebido n-gram de 32,64 GB usada para decodificacion especulativa por n-gram, y una torre de vision en bf16. La cuantizacion EXL3 usa codigos trellis con distintos niveles K (bits por peso): K3 para expertos e indexer, K5 para atencion, lm_head y tabla n-gram, K4 para las proyecciones del MTP, con codebook MUL1. Los routers, normas, embebidos de tokens, pesos de hiperconexiones y convoluciones permanecen en bf16 sin cuantizar.
+No se dispone de información sobre la arquitectura interna del modelo base Qwen3.8-Flash-Next en el material proporcionado. El artefacto aquí descrito es una cuantización de terceros: turboderp generó el checkpoint EXL3 de 3,05 bpw con exllamav3 a partir del modelo original, y OpensourceWTF lo ha reempaquetado para mlx-serve. No hay datos sobre número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineamiento.
 
-Sobre el entrenamiento del modelo base no se proporciona informacion (numero de tokens, composicion del dataset, RLHF/DPO): no disponible. La innovacion tecnica principal de este pack no esta en el entrenamiento sino en el empaquetado: los tensores por-experto de cada capa se apilan en un unico tensor por proyeccion (`switch_mlp.{gate,up,down}_proj.{trellis,suh,svh}`) sin recuantizar ningun byte, y el pack requiere el plugin turboexl3 y una rama de mlx-serve con soporte EXL3 completo (`qwen38-exl3-full`).
+La innovación técnica documentada es la cuantización EXL3 a 3,05 bpw, que reduce el peso del modelo a 85,4 GB de repositorio, y la inclusión de una tabla n-gram (`ngram_embedding.safetensors`) que debe regenerarse a partir del fichero de turboderp mediante el conversor de OpenSourceWTF. No se detalla si el modelo base emplea atención lineal, decodificación especulativa u otras optimizaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation).
-- Generacion de codigo: en las pruebas del autor con EvalPlus greedy pass@1 obtiene 0,982 en HumanEval, 0,939 en HumanEval+, 0,950 en MBPP y 0,820 en MBPP+.
-- Decodificacion especulativa mediante la tabla n-gram EXL3 y la cabeza MTP (multi-token prediction), que aceleran la inferencia.
-- Arquitectura hibrida con Gated DeltaNet y sparse attention con indexer para manejo eficiente de secuencias.
-- Torre de vision incluida en bf16 (0,90 GB), aunque el pack no ha sido probado con entrada de imagen o video.
-- Capacidades de tool calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles.
+- Generación de texto: el pipeline declarado es `text-generation`.
+- Razonamiento y código: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (los idiomas no están listados).
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Inferencia local en Apple Silicon mediante la librería mlx-serve.
 
 ## Casos de uso
 
-- Inferencia local en Apple silicon de gama alta: el pack esta pensado para servirse con mlx-serve en Macs con memoria unificada amplia; el autor lo ha validado en un M5 Max con 128 GB.
-- Generacion y revision de codigo en local: con 0,982 de pass@1 en HumanEval, es adecuado para asistentes de codigo que ejecutan offline sin depender de APIs externas.
-- Chatbot conversacional autoalojado: al ser un modelo conversacional con inferencia eficiente en Mac, sirve para desplegar asistentes privados sin enviar datos a terceros.
-- Experimentacion con decodificacion especulativa: incluye tabla n-gram y cabeza MTP, util para investigar aceleracion de inferencia en hardware de consumo.
-- Investigacion sobre cuantizacion EXTREMA (3,05 bpw): util como punto de comparacion frente a otras cuantizaciones (2,05, 4,05 y 5,05 bpw de la serie EXL3 de turboderp) midiendo KLD y perplejidad.
-- Prototipado de pipelines con vision en Mac: la torre de vision esta incluida en bf16, lo que abre la puerta a pruebas multimodales una vez validadas (actualmente sin probar).
+- Inferencia local en Mac con memoria unificada: el empaquetado para mlx-serve permite ejecutar un modelo de 26,3 mil millones de parámetros cuantizado a 3,05 bpw en equipos Apple Silicon con suficiente RAM unificada, evitando depender de GPUs dedicadas.
+- Prototipado y experimentación offline: al ser un checkpoint autocontenido en safetensors, se puede cargar en entornos de desarrollo sin conexión para pruebas de generación de texto.
+- Evaluación de cuantizaciones EXL3: sirve como referencia para comparar la calidad de la cuantización a 3,05 bpw frente a otros niveles del mismo modelo base.
+- Despliegue en estaciones de trabajo con macOS: útil en equipos de investigación que ya trabajan con el stack MLX y quieren incorporar un modelo de la familia Qwen sin salir del ecosistema Apple.
+- Reproducción de pipelines de conversión: el repositorio documenta el proceso de generación de la tabla n-gram mediante el conversor, lo que permite replicar el empaquetado para otros checkpoints EXL3.
+- Archivado y distribución de pesos cuantizados: al estar replicados byte a byte en la rama `3.05bpw`, facilita la verificación por sha256 y la distribución controlada de los pesos.
 
 ## Benchmarks y rendimiento
 
-Datos medidos por turboderp sobre los ficheros EXL3 originales (rama `3.05bpw_h5_ng5`, traza auto-generada in-domain de 14.496 tokens de entrada y 45.588 de salida, con exllamav3; este pack contiene los mismos ficheros pero no fue medido a traves de mlx-serve):
-
-| Metrica | Valor |
-|---|---|
-| KL divergence media D_KL(p_BF16 ‖ p_quant) | 0,0174 |
-| Perplejidad del pack 3,05 bpw | 1,4074 |
-| Perplejidad BF16 (referencia) | 1,38474 |
-| Suelo de ruido KLD | 0,00262 |
-
-Evaluacion end-to-end a traves de mlx-serve (EvalPlus, greedy pass@1, segun turboexl3):
-
-| Benchmark | Pass@1 |
-|---|---|
-| HumanEval | 0,982 (161/164) |
-| HumanEval+ | 0,939 (154/164) |
-| MBPP | 0,950 (359/378) |
-| MBPP+ | 0,820 (310/378) |
-
-No se han publicado resultados de benchmarks estandar tipo MMLU o GSM8K en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el pack completo pesa 85,36 GB; sin la tabla n-gram, 52,72 GB. El unico Mac probado es un Apple M5 Max con 128 GB de memoria unificada; otros Macs no han sido testeados.
-- GPU: al ser un pack para Apple silicon via mlx-serve, no aplica VRAM de GPU NVIDIA; se necesita memoria unificada suficiente para alojar el modelo (idealmente 128 GB o mas para el pack completo).
-- Consumer GPU: no aplicable; el pack no carga en exllamav3, transformers, vLLM, SGLang ni mlx-lm.
-- Despliegue: requiere mlx-serve con soporte EXL3 completo para Qwen3.8 (rama `qwen38-exl3-full` de davidtai/mlx-serve, o la head de ddalcu/mlx-serve#997) mas el plugin turboexl3 compilado desde el directorio `plugin/` de davidtai/turboexl3, que gestiona los bloques `expert_quant` y `trunk_quant`.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: el repositorio ocupa 85,4 GB, por lo que se requiere al menos esa cantidad de memoria unificada para cargar los pesos completos; con overhead de inferencia conviene disponer de 96 GB o más.
+- GPU recomendadas: el formato está orientado a Apple Silicon (mlx-serve); no se documentan requisitos para GPUs NVIDIA o AMD.
+- ¿Cabe en GPU consumer?: en el ecosistema Apple, equipos con 96 GB o 128 GB de memoria unificada (por ejemplo, Mac Studio con M2 Ultra o M3 Ultra) son los candidatos naturales; en GPUs consumer convencionales de 24 GB no cabe sin cuantización adicional.
+- Opciones de despliegue: mlx-serve (librería declarada); el checkpoint EXL3 original de turboderp está pensado para exllamav3.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Formato/runtime | Licencia |
-|---|---|---|---|---|
-| OpensourceWTF/Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve | 26.349 M (total) | EXL3 3,05 bpw | safetensors / mlx-serve | qwen-community-1.0 |
-| turboderp/Qwen3.8-Flash-Next-exl3 | 26.349 M (total) | EXL3 (2,05 a 5,05 bpw) | EXL3 / exllamav3 | no disponible |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | bf16 (sin cuantizar) | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve (este) | 26,3 B | no disponible | EXL3 3,05 bpw | qwen-community-1.0 | Hugging Face (mlx-serve) |
+| turboderp/Qwen3.8-Flash-Next-exl3 (rama `3.05bpw_h5_ng5`) | 26,3 B (mismo base) | no disponible | EXL3 3,05 bpw | qwen-community-1.0 | Hugging Face (exllamav3) |
+| OpensourceWTF/Qwen3.8-Flash-Next-exl3 (rama `3.05bpw`) | 26,3 B (mismo base) | no disponible | EXL3 3,05 bpw | qwen-community-1.0 | Hugging Face (mlx-serve) |
 
-El pack de OpensourceWTF es esencialmente el punto 3,05 bpw de la serie EXL3 de turboderp, reempaquetado para Apple silicon; para usarlo con exllamav3 hay que acudir al repositorio original de turboderp.
+No se dispone de información sobre otros modelos comparables de la misma categoría en el material proporcionado.
 
 ## Limitaciones y advertencias
 
-- No es un release oficial de Qwen, turboderp ni mlx-serve; es un repack comunitario con 247 descargas y sin validacion amplia.
-- El autor no midio la calidad del pack: no se ejecutaron pruebas KLD ni de perplejidad a traves de mlx-serve; las metricas de turboderp fueron medidas con exllamav3 sobre sus ficheros.
-- Solo probado con texto; la entrada de imagen o video no ha sido testada pese a incluir la torre de vision.
-- Solo probado en un Apple M5 Max con 128 GB; compatibilidad con otros Macs desconocida.
-- Incompatible con runtimes estandar: no carga en exllamav3, transformers, vLLM, SGLang ni mlx-lm; exige ramas y plugins concretos, lo que anade fragilidad para produccion.
-- La cuantizacion a 3,05 bpw introduce degradacion medible respecto a BF16 (KLD 0,0174 frente a suelo de ruido 0,00262), con posible aumento de alucinaciones en tareas delicadas.
-- Sesgos, limitaciones de idioma y restricciones de uso comercial concretas: no disponibles en la informacion proporcionada; la licencia es "other" (qwen-community-1.0), por lo que conviene revisar el texto LICENSE antes de uso comercial.
+- Repositorio movido: la model card indica que el contenido se ha trasladado a la rama `3.05bpw` de `OpensourceWTF/Qwen3.8-Flash-Next-exl3`; este repositorio debe considerarse obsoleto.
+- Fichero ausente: `ngram_embedding.safetensors` no está incluido y debe regenerarse a partir del fichero de turboderp con el conversor, lo que añade un paso manual y un riesgo de error.
+- Historial comprimido: el historial del repositorio fue aplastado para liberar almacenamiento, lo que dificulta la auditoría de cambios previos.
+- Cuantización agresiva: 3,05 bpw es una cuantización de muy baja precisión que puede degradar la calidad respecto al modelo original; no se aportan métricas de degradación.
+- Licencia: qwen-community-1.0 impone condiciones de uso comunitario; deben revisarse los términos antes de un uso comercial.
+- Idiomas y sesgos: no se documentan los idiomas soportados ni los sesgos conocidos del modelo base.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Hardware restringido: el empaquetado mlx-serve limita su uso a Apple Silicon; no es portable a otros backends sin reconversión.
 
 ## Enlaces
 
-- Ficha del modelo: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve
-- Cuantizacion original de turboderp: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3 (rama `3.05bpw_h5_ng5`: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3/tree/3.05bpw_h5_ng5)
-- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Hugging Face (este repositorio): https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-EXL3-3.05-mlx-serve
+- Repositorio destino (rama `3.05bpw`): https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-exl3/tree/3.05bpw
+- Cuantización original de turboderp (rama `3.05bpw_h5_ng5`): https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3/tree/3.05bpw_h5_ng5
+- Repositorio de turboderp: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3
+- Conversor mlx-serve: https://github.com/OpenSourceWTF/qwen38-exl3-mlx-serve-converter
 - exllamav3: https://github.com/turboderp-org/exllamav3
-- mlx-serve: https://github.com/ddalcu/mlx-serve
-- Rama con soporte EXL3 completo: https://github.com/davidtai/mlx-serve/tree/qwen38-exl3-full
-- Pull request de soporte: https://github.com/ddalcu/mlx-serve/pull/997
-- turboexl3 (plugin): https://github.com/davidtai/turboexl3 (plugin: https://github.com/davidtai/turboexl3/tree/main/plugin)
-- Resultados de evaluaciones de codigo: https://github.com/davidtai/turboexl3/blob/main/docs/RESULTS.md#coding-evals
+- Licencia: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-exl3/blob/3.05bpw/LICENSE

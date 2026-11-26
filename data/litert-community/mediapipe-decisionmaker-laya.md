@@ -2,95 +2,95 @@
 
 ## Resumen
 
-MediaPipe DecisionMaker Laya es un paquete de modelos `.task` para la tarea Decision Maker de MediaPipe, construido sobre el encoder multilingüe Laya (`mmBERT-base`, 149M parámetros) de convaiinnovations. No es un modelo generativo: es un cross-encoder bidireccional que evalúa opciones categóricas estructuradas, comprobaciones booleanas y rúbricas ordinales en un único pase forward sin decodificación. Se distribuye en dos variantes de longitud de contexto, 256 y 512 tokens, con pesos en FP16 y grafo TFLite optimizado para LiteRT.
+MediaPipe DecisionMaker Laya es un paquete de modelos empaquetados en formato `.task` para la tarea DecisionMaker de MediaPipe, distribuido por la comunidad litert-community. Se construye a partir de `convaiinnovations/laya`, un encoder bidireccional `mmBERT-base` de 149 millones de parametros, y se ofrece en dos variantes de longitud de contexto: `laya_s256.task` (256 tokens) y `laya_s512.task` (512 tokens). Su proposito no es generar texto, sino evaluar decisiones estructuradas —elecciones categoricas, comprobaciones booleanas y rubricas ordinales— en un unico paso forward sin decodificacion autoregresiva.
 
-El modelo resuelve el problema de la clasificación zero-shot en dispositivo: en lugar de generar texto para decidir, puntúa directamente cada opción contra un contexto dado. En su interior, hasta aproximadamente 8 opciones compactas caben junto al contexto en un único pase de cross-attention, lo que el autor estima unas 4 veces más rápido que la evaluación por pares; conjuntos de opciones mayores recurren a evaluación multi-pase.
+La relevancia del modelo radica en su enfoque de despliegue: esta pensado para inferencia on-device en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks y LiteRT (TFLite). Al tratarse de un cross-encoder que evalua opciones contra un contexto en una sola pasada de atencion cruzada, evita el coste de generar tokens y permite clasificar hasta aproximadamente 8 opciones compactas por pasada, unas 4 veces mas rapido que la evaluacion por pares. Con pesos en FP16 y un tamano de bundle de unos 678-679 MB, se posiciona como una alternativa practica para logica de decision local en aplicaciones moviles y web.
 
-Es relevante ahora porque permite integrar enrutado y toma de decisiones semántica en aplicaciones Android, iOS, web, Python y Flutter sin conexión a servidores, con pesos Apache-2.0 y un tamaño de bundle de unos 678-679 MB por variante. El upstream declara soporte de más de 100 idiomas, aunque en este paquete solo se validan inglés y japonés.
+El modelo se publica bajo licencia Apache-2.0 y declara soporte para ingles y japones (validados), aunque el encoder base mmBERT soporta mas de 100 idiomas upstream. Es, por tanto, una pieza de infraestructura para enrutado, clasificacion zero-shot y control de flujo en agentes, mas que un modelo conversacional generalista.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cross-encoder bidireccional (encoder `mmBERT-base`) con cross-attention sobre opciones; grafo TFLite para LiteRT |
-| Parametros totales | 149M (modelo base `mmBERT-base`) |
+| Arquitectura | Transformer encoder bidireccional (mmBERT-base) empaquetado como cross-encoder TFLite para MediaPipe DecisionMaker |
+| Parametros totales | 149 M (mmBERT-base) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 256 tokens (`laya_s256.task`) y 512 tokens (`laya_s512.task`) |
-| Tipos de cuantizacion | Pesos en FP16 (`wfp16`); embeddings en `token_embeddings_fp16.bin`; tensores de E/S en float32 |
-| Idiomas soportados | Inglés y japonés validados en este paquete; upstream declara más de 100 idiomas |
+| Longitud de contexto | 256 tokens (`laya_s256.task`) o 512 tokens (`laya_s512.task`) |
+| Tipos de cuantizacion | Pesos FP16 (`wfp16`); `model.tflite` con entradas/salidas float32 y `token_embeddings_fp16.bin` |
+| Idiomas soportados | Ingles y japones validados; encoder base con soporte upstream de mas de 100 idiomas |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Bundles `.task` (MediaPipe) con `model.tflite`, `tokenizer.json`, `calibration.json` y `token_embeddings_fp16.bin` |
+| Formato de pesos | `.task` (MediaPipe bundle: `model.tflite`, `tokenizer.json`, `calibration.json`, `token_embeddings_fp16.bin`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `convaiinnovations/laya`, un encoder `mmBERT-base` de 149M parámetros. La variante empaquetada aquí es un cross-encoder: recibe las embeddings de entrada (`[1, 256, 768]` o `[1, 512, 768]`), una máscara de atención y un one-hot de tipo de pregunta (`qtype_onehot`, `[1, 3]`), y produce logits por token (`token_logits_output`) más una representación pooled del CLS (`pooled_cls_output`, `[1, 768]`). La evaluación de opciones se realiza mediante cross-attention en un único pase forward, sin generación autoregresiva.
+El modelo parte de `convaiinnovations/laya`, un encoder `mmBERT-base` de 149 millones de parametros con atencion bidireccional completa. Sobre esa base, litert-community ha empaquetado dos grafos TFLite con pesos FP16 y longitudes de secuencia fijas de 256 y 512 tokens. El sub-modelo `model.tflite` recibe `inputs_embeds` de forma `[1, 256, 768]` o `[1, 512, 768]`, una `attention_mask`, y un vector one-hot `qtype_onehot` de dimension 3 que codifica el tipo de consulta (categorica, booleana u ordinal). Devuelve `token_logits_output` y un `pooled_cls_output` de 768 dimensiones.
 
-El paquete incluye dos sub-modelos TFLite de 250,89 MB (256 tokens) y 251,81 MB (512 tokens), más un fichero de embeddings FP16 de 393,22 MB compartido y un `tokenizer.json` de 34,36 MB. Los pesos se han convertido a FP16 y el bundle incorpora un `calibration.json` para el pipeline de conversión. No se detallan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; el modelo base es un encoder, por lo que el ajuste relevante es de tipo clasificación, no de alineamiento generativo.
-
-La innovación principal es el modo de decisión sin decodificación: en lugar de generar una respuesta y parsearla, el modelo puntúa directamente las opciones contra el contexto. Hasta unas 8 opciones compactas caben en un solo pase; por encima de ese umbral se realiza evaluación multi-pase.
+La innovacion principal es el modo de inferencia: DecisionMaker evalua las opciones contra el contexto en una unica pasada de atencion cruzada, sin decodificacion autoregresiva. Esto permite encajar hasta aproximadamente 8 opciones compactas junto al contexto en un solo forward; conjuntos de opciones mayores recurren a evaluacion multipasada. El bundle incluye `calibration.json` (9,2 KB) para el ajuste de calibracion y un fichero separado de embeddings de tokens en FP16 (393,22 MB). No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación zero-shot de opciones categóricas: dado un contexto y un conjunto de claves con descripciones, devuelve la clave seleccionada y las probabilidades.
-- Comprobaciones booleanas: evaluación de condiciones sí/no sobre un texto.
-- Rúbricas ordinales: puntuación de opciones ordenadas mediante el tipo de pregunta correspondiente.
-- Evaluación en un solo pase forward sin decodificación, con cross-attention sobre hasta aproximadamente 8 opciones.
-- Fallback a evaluación multi-pase para conjuntos de opciones mayores.
-- Soporte multilingüe: inglés y japonés validados en este paquete; el upstream declara más de 100 idiomas.
-- Despliegue en dispositivo en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
-- No soporta tool calling, function calling, agentes multi-paso ni generación de texto: es un clasificador, no un modelo generativo.
+- Clasificacion de texto zero-shot mediante evaluacion de opciones candidatas contra un contexto.
+- Evaluacion de elecciones categoricas estructuradas (seleccion entre opciones discretas).
+- Comprobaciones booleanas (verdadero/falso) sobre un contexto dado.
+- Evaluacion de rubricas ordinales (puntuacion por niveles ordenados).
+- Razonamiento de decision en un solo paso forward, sin generacion de texto.
+- Soporte multilingue: ingles y japones validados; cobertura upstream de mas de 100 idiomas en el encoder base.
+- Despliegue on-device en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
+- Integracion como componente de enrutado o control de flujo en pipelines y agentes.
+- No soporta tool calling, function calling, agentes multi-step ni generacion de texto libre.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasificar un mensaje entrante en categorías como reembolso, ayuda técnica o facturación usando `ChoiceQuestion` con descripciones por clave, sin llamada a servidor y con latencia de un único pase forward.
-- Moderación y filtrado en dispositivo: aplicar comprobaciones booleanas sobre texto de usuario antes de enviarlo a un backend, reduciendo tráfico y exposición de datos.
-- Asistentes de voz o chat en apps móviles: decidir la intención del usuario entre un conjunto acotado de acciones y disparar el flujo correspondiente en la app.
-- Formularios inteligentes: inferir la categoría o el campo correcto a partir de texto libre introducido por el usuario, con normalización de prior (`normalize_prior=True`).
-- Evaluación de calidad ordinal: puntuar respuestas o contenidos según una rúbrica ordenada (por ejemplo, relevancia baja/media/alta) en pipelines de anotación.
-- Clasificación multilingüe en el borde: procesar texto en inglés y japonés en apps Flutter o web sin depender de conectividad, útil en entornos con red intermitente.
-- Prefiltrado en pipelines RAG: decidir en dispositivo si una consulta requiere recuperación documental antes de invocar un modelo mayor en servidor.
+- Enrutado de intenciones en asistentes moviles: el modelo clasifica la consulta del usuario entre un conjunto de intenciones predefinidas en una sola pasada, con latencia baja y sin conexion, adecuado para apps Android o iOS que necesitan decidir a que modulo derivar la peticion.
+- Moderacion de contenido local: comprobaciones booleanas sobre mensajes de usuario (por ejemplo, si un texto infringe una politica) ejecutadas on-device, lo que evita enviar contenido sensible a un servidor.
+- Clasificacion de tickets de soporte: asignacion de categoria o prioridad a partir de una rubrica ordinal, aprovechando la ventana de 512 tokens para incluir el cuerpo del ticket y las definiciones de categoria.
+- Control de flujo en agentes: uso como "decision maker" que elige la siguiente accion entre hasta 8 opciones compactas, sustituyendo llamadas a un LLM en pasos de enrutado simples y reduciendo coste y latencia.
+- Filtrado y etiquetado en pipelines de datos: clasificacion por lotes de registros en Python con MediaPipe, aplicando rubricas para puntuar calidad o relevancia sin generacion autoregresiva.
+- Aplicaciones web interactivas: demos y herramientas en navegador que necesitan clasificar entrada del usuario en tiempo real con el runtime web de MediaPipe, sin backend de inferencia.
+- Soporte multilingue en japones e ingles: clasificacion de consultas en ambos idiomas validados para productos con audiencia en esos mercados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor únicamente indica que la evaluación de hasta unas 8 opciones en un solo pase es aproximadamente 4 veces más rápida que la evaluación por pares, sin cifras absolutas de latencia ni de precisión.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del bundle: 678,48 MB (`laya_s256.task`) y 679,40 MB (`laya_s512.task`); el sub-modelo TFLite ocupa unos 251 MB y los embeddings FP16 unos 393 MB.
-- Al estar diseñado para LiteRT y MediaPipe, el despliegue objetivo es en dispositivo (CPU/GPU/NPU móviles, navegador y equipos de escritorio), no en servidores con GPU de datacenter.
-- VRAM estimada para inferencia en GPU de escritorio: no disponible en la información proporcionada.
-- GPU recomendadas: no disponible; el paquete está orientado a aceleradores móviles y web, no a A100, H100 o RTX 4090.
-- Despliegue: MediaPipe Tasks (`mp.tasks.decision.DecisionMaker`) en Python, Android, iOS, web y Flutter; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
-- Latencia y throughput: no disponible; solo se indica la ventaja relativa de aproximadamente 4x frente a la evaluación por pares.
+- VRAM estimada: no disponible de forma explicita; los bundles pesan 678,48 MB (`laya_s256.task`) y 679,40 MB (`laya_s512.task`), con un `model.tflite` de 250,89 MB y 251,81 MB respectivamente y embeddings FP16 de 393,22 MB.
+- GPU recomendadas: no disponible; el modelo esta disenado para inferencia on-device con LiteRT/MediaPipe, no para despliegue en GPU de centro de datos.
+- Cabe en GPU consumer: no disponible como dato verificado; el enfoque previsto es CPU/NPU/GPU movil mediante MediaPipe Tasks.
+- Opciones de despliegue: MediaPipe Tasks (`mp.tasks.decision.DecisionMaker`) en Android, iOS, web, Python y Flutter; LiteRT/TFLite como runtime subyacente.
+- Latencia y throughput: no disponibles; la model card indica que una unica pasada de atencion cruzada es aproximadamente 4 veces mas rapida que la evaluacion por pares, sin cifras absolutas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| MediaPipe DecisionMaker Laya (este) | 149M | 256 / 512 tokens | Clasificación zero-shot en dispositivo | Apache-2.0 | `.task` / TFLite |
-| convaiinnovations/laya (upstream) | 149M | No disponible | Encoder multilingüe base | No disponible en la información | Safetensors (presumible, no confirmado) |
-| litert-community/Laya-Multilingual-LiteRT | 149M | No disponible | Encoder LiteRT multilingüe | No disponible en la información | LiteRT |
+| MediaPipe DecisionMaker Laya | 149 M | 256 / 512 tokens | `.task` (TFLite) | Apache-2.0 | Cross-encoder de decision on-device |
+| `convaiinnovations/laya` | 149 M | no disponible | safetensors (upstream) | no disponible | Encoder mmBERT-base original |
+| `litert-community/Laya-Multilingual-LiteRT` | 149 M | no disponible | LiteRT | no disponible | Encoder Laya empaquetado para LiteRT |
 
-No se dispone de datos de benchmarks ni de modelos comparables de la misma categoría (cross-encoders de decisión en dispositivo) en la información proporcionada, por lo que no es posible comparar rendimiento numérico.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre ni razonamiento multi-paso; solo puntúa opciones predefinidas.
-- El rendimiento óptimo se da con hasta aproximadamente 8 opciones; conjuntos mayores activan evaluación multi-pase con mayor coste.
-- Idiomas validados limitados a inglés y japonés en este paquete, pese al soporte multilingüe declarado del upstream; el comportamiento en otros idiomas no está verificado.
-- Contexto máximo de 256 o 512 tokens según la variante; textos más largos requieren truncado o segmentación.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí de clasificaciones erróneas o sobreconfiadas cuando el contexto es ambiguo o las descripciones de las opciones se solapan.
-- Sesgos heredados del corpus de entrenamiento del modelo base `mmBERT-base`; no se documentan evaluaciones de sesgo en la información disponible.
-- Licencia Apache-2.0 permite uso comercial, pero conviene revisar `NOTICE` para las atribuciones de componentes de terceros.
-- El tamaño del bundle (unos 679 MB) puede ser elevado para aplicaciones móviles con restricciones de descarga; considerar la variante de 256 tokens frente a la de 512 según necesidad.
-- No se documentan métricas de precisión ni de calibración; validar en el dominio concreto antes de producción.
+- No es un modelo generativo: no produce texto libre, solo puntuaciones de decision sobre opciones predefinidas.
+- La ventana de contexto esta limitada a 256 o 512 tokens segun la variante; contextos mas largos requieren truncado o troceado.
+- Solo ingles y japones estan validados, pese al soporte upstream de mas de 100 idiomas del encoder base; el rendimiento en otros idiomas no esta verificado.
+- El limite practico de aproximadamente 8 opciones por pasada implica que conjuntos mayores degradan a evaluacion multipasada, con mayor coste.
+- Riesgo de sesgo y alucinacion inherente al encoder base; no se documentan evaluaciones de sesgo en la informacion disponible.
+- El modelo depende del runtime MediaPipe Tasks y del formato `.task`; no es directamente utilizable en frameworks como vLLM, TGI o llama.cpp.
+- Licencia Apache-2.0 permite uso comercial, pero deben respetarse las atribuciones del fichero `NOTICE` y las licencias de los componentes upstream.
+- No se documentan garantias de calibracion fuera de los datos de `calibration.json`; conviene validar umbrales en el dominio de produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-DecisionMaker-Laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya
-- Variante LiteRT multilingüe: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
-- Documentación de Decision Maker: https://developers.google.com/edge/mediapipe/solutions/decision/decision_maker
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/decision/decision_maker
-- Fichero `laya_s256.task`: https://huggingface.co/litert-community/MediaPipe-DecisionMaker-Laya/blob/main/laya_s256.task
-- Fichero `laya_s512.task`: https://huggingface.co/litert-community/MediaPipe-DecisionMaker-Laya/blob/main/laya_s512.task
+- Encoder Laya empaquetado para LiteRT: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
+- Documentacion de MediaPipe Decision Maker: https://developers.google.com/edge/mediapipe/solutions/decision/decision_maker
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/decision_maker/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/decision_maker/ios
+- Notebook Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/decision_maker/python/decision_maker.ipynb
+- Ejemplo web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/decision-maker.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/decision/decision_maker
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/decision/decision_maker

@@ -2,49 +2,55 @@
 
 ## Resumen
 
-M5-TTS-Audio-Tokenizer es un componente publicado por ASLP-lab en Hugging Face bajo licencia Apache 2.0. Por su denominación, se trata de un tokenizador de audio concebido como pieza auxiliar de una familia de modelos de síntesis de voz (TTS) denominada M5-TTS, no de un modelo generativo de texto completo. Su función esperable es convertir formas de onda de audio en secuencias discretas de tokens que un modelo lingüístico o acústico pueda procesar, y reconstruir audio a partir de esos tokens.
+M5-TTS-Audio-Tokenizer es el códec de audio neuronal que utiliza la familia de modelos M5-TTS, desarrollada por ASLP-lab, para convertir grabaciones de referencia en tokens discretos y reconstruir habla a partir de tokens generados. No es un modelo de texto-a-habla autonómo: es el componente de tokenizacion acustica del pipeline TTS, complementario al tokenizador de texto que se distribuye con los checkpoints de M5. Concretamente, se trata del codec Qwen3-TTS de 12 Hz reempaquetado con un adaptador propio para su uso dentro de M5.
 
-La información pública disponible es mínima: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción técnica, arquitectura, tamaño de parámetros, vocabulario de tokens ni detalles de entrenamiento. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 10 de noviembre de 2026, lo que sugiere una publicación reciente y sin validación comunitaria todavía.
+El modelo opera a una frecuencia de muestreo de 24 kHz y una tasa de trama de 12,5 frames por segundo, con 16 codebooks empleados por M5 y un layout de codigos `(batch, frames, 16)` para lotes con padding. El repositorio pesa aproximadamente 0,7 GB y contiene 170.557.441 parametros en formato safetensors, lo que lo situa en el rango de los codecs neuronales ligeros aptos para inferencia en CPU.
 
-Es relevante para desarrolladores que trabajen en pipelines de voz porque los tokenizadores de audio son la pieza que permite tratar señales acústicas con arquitecturas de tipo transformer o LLM, habilitando TTS basado en tokens, clonación de voz y modelos de audio autoregresivos. No obstante, al carecer de documentación, cualquier evaluación rigurosa exige inspeccionar los pesos y el código del repositorio directamente.
+Su relevancia practica radica en que cualquier despliegue de M5-TTS para clonacion de voz o sintesis con voz personalizada depende de este codec: los scripts de inferencia de VoiceClone y CustomVoice lo descargan automaticamente. La licencia Apache-2.0 y la inclusión de la implementacion minima del codec en el repositorio M5 simplifican su integracion en productos comerciales sin dependencias externas del paquete `qwen-tts`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tokenizador de audio; arquitectura concreta no documentada) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
+| Arquitectura | Codec de audio neuronal (Qwen3-TTS 12Hz tokenizer) con adaptador M5 |
+| Parametros totales | 170.557.441 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: procesa audio, no texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors |
+| Frecuencia de muestreo | 24 kHz |
+| Tasa de trama del codec | 12,5 frames/s |
+| Codebooks usados por M5 | 16 |
+| Layout de codigos | `(batch, frames, 16)` con padding |
+| Tamano del repositorio | ~0,7 GB |
+| Pipeline | feature-extraction |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del tokenizador. Por la naturaleza del artefacto (un tokenizador de audio para TTS), las implementaciones habituales de esta categoría emplean codificadores convolucionales o basados en transformer con cuantización vectorial residual (RVQ) para producir tokens discretos, pero no hay confirmación de que M5-TTS-Audio-Tokenizer siga este esquema. Tampoco se documentan el número de tokens por segundo, el tamaño del codebook, la tasa de muestreo de entrada ni la profundidad de cuantización.
+El modelo es un codec de audio neuronal derivado del tokenizador Qwen3-TTS de 12 Hz. Su funcion es doble: codificar audio PCM de entrada en una secuencia de tokens discretos organizados en 16 codebooks y decodificar dichos tokens de vuelta a forma de onda. La tasa de trama de 12,5 frames/s implica que cada segundo de audio se representa con aproximadamente 12,5 pasos temporales, cada uno con 16 codigos; esta compresion es lo que permite a un modelo autorregresivo o de difusion como M5-TTS modelar el habla como una secuencia de tokens manejable.
 
-Respecto al entrenamiento, la model card no indica volumen de datos, composición del corpus, idiomas de entrenamiento ni si se aplicaron técnicas de ajuste fino o alineación. Cualquier afirmación sobre estas cuestiones sería especulativa y no debe asumirse en producción.
+El adaptador de M5 gestiona el remuestreo de la entrada al formato interno del codec y expone la API `Qwen3TTSTokenizer` con metodos `encode()` y `decode()`. La implementacion incluida en el repositorio M5 es una version minima del codec upstream, con la licencia y el aviso de modificacion correspondientes. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o ajuste fino; la model card no detalla el proceso de entrenamiento del codec original de Qwen3-TTS.
 
 ## Capacidades
 
-- Conversión de audio a tokens discretos y, presumiblemente, reconstrucción de audio a partir de tokens, como componente de un pipeline TTS.
-- Integración potencial con modelos de lenguaje para síntesis de voz basada en tokens.
-- Capacidades multilingües: no disponible.
-- Soporte de tool calling o function calling: no aplicable a un tokenizador de audio.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Modo thinking, visión o audio generativo de extremo a extremo: no disponible.
-- Cualquier otra capacidad específica (clonación de voz, control de prosodia, emoción): no documentada.
+- Codificacion de audio a tokens discretos: convierte grabaciones WAV o arrays NumPy (con `sr` explicito) en secuencias de codigos con 16 codebooks.
+- Decodificacion de tokens a forma de onda: reconstruye audio a 24 kHz a partir de los tokens generados.
+- Remuestreo interno: el adaptador acepta audio con frecuencia de origen distinta a 24 kHz y lo ajusta automaticamente.
+- Ejecucion en CPU: el ejemplo de la model card funciona sin FlashAttention ni GPU.
+- Integracion con M5-TTS: consumido automaticamente por los scripts de VoiceClone y CustomVoice.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es exclusivamente un componente acustico.
+- Capacidades multilingues: no documentadas; dependen del modelo TTS que consuma los tokens, no del codec.
 
 ## Casos de uso
 
-- Síntesis de voz en pipelines TTS basados en tokens: el tokenizador permitiría transformar el audio de referencia o de entrenamiento en secuencias discretas que un modelo acústico o un LLM pueda modelar, siempre que se valide su calidad de reconstrucción.
-- Clonación de voz con pocos ejemplos: si el tokenizador preserva timbre y prosodia, podría emplearse para extraer representaciones de una muestra corta de habla y condicionar un modelo generativo; requiere verificación empírica previa.
-- Preprocesamiento de corpus de voz para entrenamiento: conversión de horas de audio a tokens para alimentar modelos autoregresivos de audio, con la ventaja de reducir la dimensionalidad frente a espectrogramas.
-- Investigación en modelos de audio tipo LLM: uso como capa de tokenización en experimentos académicos sobre modelado de habla con arquitecturas transformer.
-- Compresión de audio para almacenamiento o transmisión: si la reconstrucción es fiel, los tokens podrían servir como representación compacta de señales de voz en sistemas de archivo o streaming.
-- Integración en asistentes conversacionales: como pieza del stack de voz (ASR/TTS) en sistemas de atención al cliente, sujeta a evaluación de latencia y calidad antes de producción.
+- Clonacion de voz con M5-TTS: el codec codifica la grabacion de referencia del hablante objetivo en tokens que el modelo TTS usa como condicionamiento; es el primer paso obligatorio del pipeline VoiceClone.
+- Sintesis de voz con voz personalizada: en CustomVoice, el codec decodifica los tokens generados por el modelo en audio final a 24 kHz, cerrando el pipeline de inferencia.
+- Preprocesamiento de datasets de habla: convertir corpus de audio a representaciones tokenizadas para entrenamiento o ajuste fino de modelos TTS sobre el espacio latente del codec.
+- Analisis y reconstruccion de audio: usar `encode()`/`decode()` de forma aislada para estudiar la fidelidad de la compresion o para pipelines de transcodificacion con perdida controlada.
+- Prototipado en CPU: validar pipelines de audio en entornos sin GPU gracias a que el ejemplo de la model card corre en CPU con un repositorio de 0,7 GB.
+- Integracion en servicios de TTS en produccion: al ser Apache-2.0 y no requerir el paquete `qwen-tts`, puede empaquetarse directamente en contenedores propios junto con los checkpoints de M5.
 
 ## Benchmarks y rendimiento
 
@@ -52,28 +58,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el tamaño del modelo.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible; dependerá del tamaño real de los pesos, que no se documenta.
-- Opciones de despliegue: no disponible; no se confirma compatibilidad con vLLM, llama.cpp, Ollama, TGI ni bibliotecas de audio específicas.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 170,5 M de parametros, los pesos en fp32 ocupan aproximadamente 0,68 GB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer con 4 GB o mas.
+- GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere A100 ni H100 para este componente aislado.
+- Cabe en GPU consumer: si, en cualquier modelo con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 4090, etc.).
+- Ejecucion en CPU: soportada y documentada en la model card con `device_map="cpu"`.
+- Opciones de despliegue: uso directo via `Qwen3TTSTokenizer` del repositorio M5; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información técnica suficiente sobre M5-TTS-Audio-Tokenizer (parámetros, contexto, rendimiento) ni de datos verificados de alternativas comparables en la información proporcionada, por lo que cualquier tabla comparativa incurriría en datos inventados.
+| Modelo | Parametros | Frecuencia / tasa | Licencia | Notas |
+|---|---|---|---|---|
+| M5-TTS-Audio-Tokenizer | 170,5 M | 24 kHz / 12,5 fps | Apache-2.0 | Codec Qwen3-TTS 12Hz con adaptador M5 |
+| Qwen3-TTS-Tokenizer-12Hz (upstream) | no disponible | 12 Hz | no disponible en la informacion | Codec original del que deriva este repositorio |
+| Otros codecs neuronales (EnCodec, DAC, etc.) | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada; el unico pariente documentado es el tokenizador Qwen3-TTS de 12 Hz, del cual este repositorio es una adaptacion para M5.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: la model card solo declara la licencia, sin arquitectura, datos de entrenamiento ni instrucciones de uso.
-- Cero descargas y cero likes: no hay evidencia de validación por parte de la comunidad ni de que los pesos funcionen correctamente.
-- Riesgo de artefactos acústicos y pérdida de información en la reconstrucción de audio, no evaluable sin pruebas propias.
-- Idiomas soportados desconocidos; no debe asumirse cobertura multilingüe.
-- Sesgos de habla, acento o género potencialmente presentes en los datos de entrenamiento, no documentados.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantías y de documentación traslada al integrador toda la responsabilidad de validación.
-- Fecha de creación futura respecto a la consulta (2026-11-10): conviene verificar la integridad y procedencia del repositorio antes de descargar pesos.
+- No es un modelo TTS autonomo: no genera habla a partir de texto por si solo; requiere un modelo M5-TTS que produzca los tokens.
+- Reconstruccion con perdida: la propia model card advierte que la decodificacion es lossy; no debe usarse como codec sin perdida.
+- Idiomas soportados no documentados: la cobertura linguistica depende del modelo TTS consumidor, no del codec.
+- Sin datos de sesgos, alucinacion o robustez: no se ha publicado informacion al respecto; en TTS, los riesgos tipicos (artefactos, perdida de prosodia, sesgos de hablante) recaen sobre el modelo generador.
+- Dependencia del repositorio M5: el uso standalone requiere clonar el repositorio de GitHub e instalar sus dependencias; no hay paquete pip independiente documentado.
+- Licencia Apache-2.0: permite uso comercial, pero debe conservarse el aviso de licencia y modificacion del codec upstream de Qwen incluido en `m5/codec_qwen12hz`.
+- Fecha de creacion del repositorio en 2026: verificar la vigencia y el soporte del proyecto antes de adoptarlo en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ASLP-lab/M5-TTS-Audio-Tokenizer
-- Repositorio o paper del modelo: no disponible
-- Blog o demo: no disponible
+- Repositorio GitHub de M5-TTS: https://github.com/ASLP-lab/M5-TTS
+- Demo: https://aslp-lab.github.io/M5-TTS-Demo-Page/
+- Space: https://huggingface.co/spaces/ASLP-lab/M5-TTS-Space
+- Coleccion de modelos M5: https://huggingface.co/collections/ASLP-lab/m5-tts
+- Modelo VoiceClone: https://huggingface.co/ASLP-lab/M5-TTS-50M-VoiceClone
+- Modelo CustomVoice: https://huggingface.co/ASLP-lab/M5-TTS-50M-CustomVoice
+- Codec upstream Qwen3-TTS 12Hz: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
+- Implementacion del codec en M5 (licencia y aviso de modificacion): https://github.com/ASLP-lab/M5-TTS/tree/main/m5/codec_qwen12hz

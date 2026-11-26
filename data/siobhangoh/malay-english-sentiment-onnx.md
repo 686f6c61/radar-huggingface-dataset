@@ -2,96 +2,98 @@
 
 ## Resumen
 
-El modelo `SiobhanGoh/malay-english-sentiment-onnx` es una conversión a ONNX del checkpoint `google-bert/bert-base-multilingual-cased` afinado para clasificación de sentimiento en tres clases (negativo, neutro, positivo) sobre texto social en malayo, inglés y combinaciones de cambio de código (code-switching) entre ambos idiomas. Lo desarrolla SiobhanGoh como parte de un proyecto de fin de grado (capstone) 2025-26, y su propósito principal es permitir la inferencia directamente en el navegador mediante la librería transformers.js, sin necesidad de backend.
+Malay–English sentiment (ONNX) es un modelo de clasificación de sentimiento en tres clases (negativo, neutro, positivo) diseñado para texto social en malayo, inglés y código mezclado (code-switching) entre ambos idiomas. Lo publica SiobhanGoh como resultado de un proyecto de fin de grado (capstone) 2025–26, y está pensado para ejecutarse directamente en el navegador mediante transformers.js sobre ONNX Runtime Web. El modelo deriva de google-bert/bert-base-multilingual-cased, por lo que mantiene un tamaño de BERT-base (356 MB en fp16) y una ventana de entrada truncada a 128 tokens.
 
-La relevancia de esta ficha radica en su nicho: el análisis de sentimiento en textos mixtos malayo-inglés es un caso poco cubierto por los modelos multilingües genéricos, y la exportación a ONNX en 16 bits permite ejecutarlo en entornos web con recursos limitados. El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato ONNX y un tamaño de repositorio de 0,4 GB.
+Desde noviembre de 2026 el checkpoint publicado es una versión destilada: un estudiante BERT-base inicializado desde un fine-tuning previo del autor y entrenado para imitar a un conjunto de tres modelos XLM-RoBERTa-large (unos 3,3 GB en total) mediante knowledge distillation con etiquetas duras y suaves. Según la model card, esta destilación mejora la exactitud en test del 76,04 % al 79,61 % (macro-F1 de 0,7557 a 0,7943) sobre una partición congelada de 981 entradas, y hasta el 80,33 % (macro-F1 0,8001) cuando se combina con una línea base TF-IDF en la aplicación web del proyecto.
 
-Arquitectónicamente es un transformer encoder BERT base multilingüe (no se especifica el número exacto de parámetros en la información disponible, pero el checkpoint base es `bert-base-multilingual-cased`, con 12 capas y 768 dimensiones ocultas según la arquitectura estándar de BERT base). La longitud de contexto de entrada está truncada a 128 tokens.
+Su relevancia práctica es doble: por un lado, demuestra que un modelo pequeño y desplegable en cliente puede superar a su versión original gracias a la destilación desde profesores más grandes; por otro, su licencia es estrictamente no comercial (solo investigación y educación), lo que limita su uso en producción. No hay datos publicados sobre arquitectura interna más allá de ser un transformer BERT-base, ni sobre el número exacto de tokens de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (BERT base multilingüe, `google-bert/bert-base-multilingual-cased`) |
-| Parametros totales | no disponible (el checkpoint base BERT base multilingüe tiene ~178M, pero no se confirma en la información) |
+| Arquitectura | Transformer encoder (BERT-base multilingüe), exportado a ONNX |
+| Parametros totales | no disponible (modelo base BERT-base, ~110 M según arquitectura de referencia; no confirmado en la ficha) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 128 tokens (truncado en preprocesado) |
-| Tipos de cuantizacion | FP16 (16 bits, publicado); FP32 y 8 bits mencionados como no publicados |
-| Idiomas soportados | malayo (ms), inglés (en), con soporte de code-switching ms-en |
-| Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (compatible con transformers.js) |
+| Longitud de contexto | 128 tokens (truncado en entrada) |
+| Tipos de cuantizacion | fp16 (16-bit) publicado y validado; la conversión a 8-bit rompe el modelo y no se publica |
+| Idiomas soportados | malayo (ms) e inglés (en), incluido code-switching ms–en |
+| Licencia | non-commercial-research (solo investigación y educación; uso comercial no permitido) |
+| Formato de pesos | ONNX (compatible con transformers.js); el checkpoint PyTorch del estudiante se menciona pero no se detalla su formato de publicación |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer encoder basado en BERT base multilingüe, con una cabeza de clasificación de secuencias para tres etiquetas (`NEGATIVE`, `NEUTRAL`, `POSITIVE`). El modelo original fue afinado a partir de `google-bert/bert-base-multilingual-cased` en el checkpoint `SiobhanGoh/CP2_Emotion_Model_New` (revisión `9bc6645ce7a8e02761c59386ffd16969bed1bc55`, subcarpeta `corrected-2026-10`), y esta versión es una conversión a ONNX en 16 bits.
+El modelo es un transformer encoder de tipo BERT-base multilingüe, inicializado desde el checkpoint original del autor (SiobhanGoh/CP2_Emotion_Model_New, revisión 9bc6645, subcarpeta corrected-2026-10) y destilado desde un profesor compuesto por tres XLM-RoBERTa-large fine-tuned con tres semillas distintas sobre 4.577 comentarios de entrenamiento del capstone. El profesor se eligió entre nueve alternativas por macro-F1 con validación cruzada dentro del split de validación.
 
-No se detalla en la información proporcionada el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El preprocesado de entrada incluye normalización Unicode NFKC, case-folding, eliminación de enlaces, menciones `@`, almohadillas `#` y colapso de espacios en blanco, aplicado de forma consistente entre entrenamiento e inferencia. La evaluación se realizó sobre una partición de test congelada de 981 entradas, con verificación de la huella del split y del checksum del fichero fuente. La conversión a FP16 reproduce exactamente el resultado de precisión completa (misma matriz de confusión), y en navegador mediante transformers.js se obtuvo la misma etiqueta en las 981 entradas, con una diferencia máxima de puntuación de 0,0042.
+El estudiante se entrenó con las etiquetas gold más las etiquetas suaves del profesor, sobre los comentarios de entrenamiento y 150.276 tuits malayos usados como texto no etiquetado (dataset mesolitica/chatgpt-explain-sentiment, sin usar sus etiquetas ChatGPT). Se eliminaron los tuits que coincidían exacta o casi exactamente (Jaccard de conjuntos de palabras ≥ 0,8) con comentarios de validación o test; según la model card, ninguno coincidió. La selección del estudiante y de su época se hizo sobre validación, y el test se evaluó una sola vez después. El preprocesado de texto es parte del pipeline: normalización Unicode NFKC, case-folding, eliminación de enlaces y menciones, eliminación de `#` y colapso de espacios.
 
 ## Capacidades
 
-- Clasificación de sentimiento en tres clases: negativo, neutro y positivo.
-- Soporte de texto en malayo, inglés y code-switching malayo-inglés.
-- Inferencia en navegador mediante transformers.js y pesos ONNX.
-- Entrada truncada a 128 tokens, adecuada para publicaciones cortas en redes sociales.
-- No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes.
-- No se documentan capacidades multilingües más allá de ms y en.
-- No se documenta modo thinking ni otras capacidades especiales.
+- Clasificación de sentimiento en tres clases: `NEGATIVE`, `NEUTRAL`, `POSITIVE`.
+- Procesamiento de texto en malayo, inglés y code-switching malayo–inglés en publicaciones sociales.
+- Inferencia en navegador vía transformers.js y ONNX Runtime Web, con pesos fp16.
+- Distilación de conocimiento desde un conjunto de profesores XLM-RoBERTa-large, con mejora medida sobre el checkpoint original.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento (thinking); es un clasificador de secuencia, no un modelo generativo.
+- Capacidad multilingüe limitada a los dos idiomas declarados; no se documenta soporte para otros idiomas.
 
 ## Casos de uso
 
-- Moderación de comentarios en redes sociales malayas: el modelo puede clasificar la polaridad de publicaciones cortas en malayo, inglés o mixtas, integrándose en un pipeline de filtrado previo a revisión humana.
-- Análisis de opinión en foros y tuits con code-switching: adecuado para corpus donde los usuarios alternan malayo e inglés en la misma frase, un escenario que los modelos monolingües no cubren.
-- Monitorización de marca en tiempo real en el navegador: al ejecutarse con transformers.js y ONNX, puede desplegarse en una aplicación web sin backend, procesando el texto en el cliente.
-- Investigación académica sobre sentimiento en textos mixtos: útil como línea base reproducible para estudios de code-switching ms-en, con partición de test congelada y hashes verificables.
-- Enrutamiento de tickets de soporte: clasificación rápida de la polaridad de mensajes entrantes para priorizar casos negativos hacia atención humana.
-- Análisis de encuestas abiertas en mercados malayohablantes: procesamiento por lotes de respuestas cortas para agregar sentimiento a nivel de producto o servicio.
-- Filtrado de reseñas en aplicaciones móviles: integración en el cliente para etiquetar reseñas antes de enviarlas a un servidor, reduciendo costes de infraestructura.
+- Moderación de comentarios en redes sociales malayas: clasificar automáticamente comentarios como negativos, neutros o positivos para priorizar revisión humana, aprovechando el soporte de code-switching ms–en típico de plataformas como Twitter o TikTok en Malasia.
+- Análisis de sentimiento en el navegador para paneles de marca: al ejecutarse con transformers.js, permite procesar texto del usuario en cliente sin enviar datos a un servidor, útil para cumplimiento de privacidad.
+- Investigación académica sobre code-switching: servir como línea base reproducible (con revisión fijada) para estudiar sentimiento en texto mixto malayo–inglés, dado que el autor documenta el protocolo de entrenamiento y evaluación.
+- Prototipado rápido de clasificadores de opinión: integrar el modelo en una demo web o notebook para validar hipótesis de producto antes de invertir en un modelo mayor, gracias a su tamaño de 356 MB en fp16.
+- Enriquecimiento de datasets de investigación: etiquetar de forma automática grandes volúmenes de tuits malayos no etiquetados para su posterior revisión manual, usando el modelo como primer filtro.
+- Educación y docencia: ejemplo práctico de destilación de conocimiento y despliegue ONNX en navegador para cursos de NLP, dado que la licencia permite uso educativo no comercial.
 
 ## Benchmarks y rendimiento
 
-| Fichero | Tamano | Precision en test | Macro-F1 | Misma etiqueta que precision completa |
-|---|---:|---:|---:|---:|
-| Precision completa (no publicado) | 712 MB | 76,04% | 0,7557 | 100,0% |
-| 16 bits (este repo) | 356 MB | 76,04% | 0,7557 | 100,0% |
-| 8 bits (no publicado) | 179 MB | 75,84% | 0,7490 | 89,8% |
+Resultados publicados en la model card sobre una partición de test congelada de 981 entradas:
 
-Los resultados son internos y retrospectivos sobre el corpus existente, no una validación externa nueva. Las puntuaciones softmax no están calibradas.
+| Modelo | Exactitud en test | Macro-F1 |
+|---|---:|---:|
+| Checkpoint original (fine-tuned) | 76,04 % | 0,7557 |
+| Este modelo, archivo 16-bit | 79,61 % | 0,7943 |
+| Este modelo + línea base TF-IDF (como en la web app) | 80,33 % | 0,8001 |
+
+Comparaciones estadísticas reportadas: frente al checkpoint original, la combinación de la web app acierta 93 entradas de test que el original falla y 51 a la inversa (McNemar exacto, p < 0,001); frente a la web app anterior (77,37 %), las cifras son 78 y 49 (p = 0,013). El archivo fp16 coincide con la etiqueta del estudiante PyTorch en todas las entradas de validación y test. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero FP16 ocupa 356 MB, por lo que la inferencia requiere aproximadamente 0,4-0,6 GB de memoria en GPU o en el navegador.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no se requiere A100 ni H100. También puede ejecutarse en CPU.
-- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1 GB de memoria libre (GTX 1050, RTX 3050, etc.).
-- Opciones de despliegue: transformers.js en navegador (soporte oficial), ONNX Runtime, y potencialmente llama.cpp no aplica (no es un modelo generativo). No se documenta soporte para vLLM ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: muy baja; el archivo fp16 pesa 356 MB y el repositorio completo 0,7 GB, por lo que cabe holgadamente en cualquier GPU consumer con al menos 1–2 GB libres.
+- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU y en navegador. Para lotes grandes, cualquier GPU moderna (RTX 3060 o superior) es más que suficiente.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer actual e incluso en CPU; también en el navegador del cliente.
+- Opciones de despliegue: transformers.js (navegador), ONNX Runtime (CPU/GPU), y potencialmente otros runtimes compatibles con ONNX; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a un clasificador BERT).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiobhanGoh/malay-english-sentiment-onnx | no disponible (~178M base) | 128 tokens | ms, en | Apache 2.0 | ONNX |
-| google-bert/bert-base-multilingual-cased | ~178M | 512 tokens | 104 idiomas | Apache 2.0 | safetensors, PyTorch |
-| Modelos de sentimiento multilingües genéricos (p. ej., cardiffnlp/twitter-xlm-roberta-base-sentiment) | ~278M (XLM-R base) | 512 tokens | multilingüe | MIT / según variante | safetensors, PyTorch |
+| Este modelo (destilado BERT-base ONNX) | ~110 M (BERT-base, no confirmado) | 128 tokens | 79,61 % exactitud / 0,7943 macro-F1 en su test interno | No comercial (investigación) | Hugging Face, ONNX fp16, transformers.js |
+| Checkpoint original del autor (SiobhanGoh/CP2_Emotion_Model_New) | BERT-base multilingüe | 128 tokens | 76,04 % exactitud / 0,7557 macro-F1 | No disponible en la información | Hugging Face (revisión 9bc6645) |
+| Profesor: XLM-RoBERTa-large fine-tuned (3 semillas) | XLM-RoBERTa-large (no se detalla el número exacto) | no disponible | Elegido por macro-F1 en validación; no se publican métricas de test del profesor | No disponible en la información | Interno del proyecto, no publicado como modelo |
+| google-bert/bert-base-multilingual-cased (base) | BERT-base multilingüe | 512 tokens (arquitectura original) | No es un clasificador de sentimiento; no comparable directamente | Licencia de BERT (no detallada aquí) | Hugging Face |
 
-No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada. La comparativa se limita a parámetros, contexto, licencia y disponibilidad.
+No se dispone de comparaciones con otros clasificadores de sentimiento malayo–inglés de terceros en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los resultados son internos y retrospectivos sobre el corpus existente, no una validación externa independiente.
-- Las puntuaciones softmax no están calibradas; no deben interpretarse como probabilidades fiables sin calibración posterior.
+- Licencia estrictamente no comercial: solo investigación y educación; el uso en producción comercial no está permitido.
+- Los resultados son retrospectivos e internos sobre el corpus existente, no una validación externa nueva; la validación guió muchas decisiones del proyecto y el test ya se había puntuado en experimentos previos, por lo que la mejora real es probablemente algo menor que la medida.
 - Se esperan errores en sarcasmo, jerga, code-switching intenso y temas alejados de los datos de entrenamiento.
-- Entrada truncada a 128 tokens: textos más largos pierden información.
-- Solo cubre malayo e inglés; no se documenta soporte para otros idiomas.
-- El modelo es de clasificación, no generativo: no admite tool calling, agentes ni generación de texto.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios distintos al de entrenamiento.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- Es necesario aplicar el mismo preprocesado que en entrenamiento (NFKC, case-folding, eliminación de enlaces y menciones) para obtener resultados consistentes.
+- Ventana de contexto muy corta (128 tokens), insuficiente para documentos largos.
+- La cuantización a 8-bit rompe el modelo y no se publica; solo fp16 está validado.
+- Riesgo de sesgo por el corpus de entrenamiento (4.577 comentarios y tuits malayos de mesolitica), que puede no representar todos los registros ni dialectos.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de clasificaciones erróneas con alta confianza en entradas fuera de distribución.
+- El modelo no es generativo: no soporta razonamiento, código, matemáticas, tool calling ni agentes.
+- El checkpoint original y el modelo destilado no deben confundirse: la revisión 80f942af84c6b05e7e5c7b56a4e7d0bda6d85595 corresponde a la versión anterior (76,04 %).
+- Para producción conviene fijar una revisión concreta del repositorio (pinned commit), como recomienda el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SiobhanGoh/malay-english-sentiment-onnx
-- Checkpoint fuente: https://huggingface.co/SiobhanGoh/CP2_Emotion_Model_New (revisión `9bc6645ce7a8e02761c59386ffd16969bed1bc55`, subcarpeta `corrected-2026-10`)
-- Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
-- Repositorio del proyecto (código, protocolo de entrenamiento y app web): https://github.com/SiobhanGoh/capstone2-sentiment-streamlit-colab
+- Modelo en Hugging Face: https://huggingface.co/SiobhanGoh/malay-english-sentiment-onnx
+- Checkpoint original: https://huggingface.co/SiobhanGoh/CP2_Emotion_Model_New
+- Repositorio del proyecto (código, protocolo de entrenamiento y web app): https://github.com/SiobhanGoh/capstone2-sentiment-streamlit-colab
 - transformers.js: https://github.com/huggingface/transformers.js
-- Manifiesto de exportación con hashes: `export_manifest.json` en el repositorio del modelo
+- Dataset de tuits malayos usado como texto no etiquetado: https://huggingface.co/datasets/mesolitica/chatgpt-explain-sentiment
+- Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased

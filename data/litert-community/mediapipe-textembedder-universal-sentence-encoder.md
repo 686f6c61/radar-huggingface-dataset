@@ -2,104 +2,107 @@
 
 ## Resumen
 
-El MediaPipe TextEmbedder Universal Sentence Encoder es un modelo compacto de embeddings de frases distribuido por la comunidad litert-community para su uso con la tarea TextEmbedder de MediaPipe. Se trata de un codificador dual (dual-encoder) en formato TFLite de tan solo 6,12 MB en precisión FP32, que proyecta texto de entrada en vectores densos de 100 dimensiones para calcular similitud semántica mediante coseno en dispositivos de borde. Su origen es el artefacto oficial servido por Google desde `storage.googleapis.com/mediapipe-models`, y el binario del repositorio es byte a byte idéntico a dicho artefacto.
+El MediaPipe TextEmbedder Universal Sentence Encoder es un modelo compacto de embeddings de frases publicado por la comunidad litert-community (Google AI Edge) en formato LiteRT/TFLite. Se trata de un codificador dual (dual-encoder) de tipo USE-QA que transforma texto de entrada en vectores densos de 100 dimensiones, pensado para calcular similitud semantica por coseno y agrupamiento tematico directamente en el dispositivo (on-device), sin necesidad de servidor ni conexion de red.
 
-El modelo resuelve el problema de la comparación semántica de texto en entornos con recursos muy limitados: Android, iOS, web y Flutter, sin necesidad de backend ni conexión de red. Frente a los embeddings de 768 dimensiones típicos de los LLM actuales, sacrifica granularidad semántica a cambio de un tamaño mínimo y una latencia de CPU en torno a 10 ms en un Galaxy S26 Ultra con 4 hilos. Está entrenado sobre pares pregunta-respuesta, por lo que captura similitud temática más que polaridad sentimental.
+Su relevancia radica en el tamano: el fichero `universal_sentence_encoder.tflite` ocupa 6,12 MB en precision FP32, lo que permite integrarlo en aplicaciones Android, iOS, web (JavaScript) y Flutter a traves de la tarea MediaPipe Text Embedder. Esta disenado para escenarios de baja latencia en movil; la documentacion oficial reporta 10 ms de latencia media de pipeline en CPU con 4 hilos en un Galaxy S26 Ultra.
 
-Es relevante ahora porque encaja en la tendencia de inferencia en el dispositivo (on-device) para tareas de recuperación ligera, agrupamiento temático y coincidencia FAQ, donde el coste de invocar un modelo grande en la nube no está justificado. La licencia Apache 2.0 y la disponibilidad multiplataforma facilitan su integración en productos comerciales.
+No es un modelo generativo ni un LLM: no produce texto, no razona y no soporta tool calling. Es una pieza de infraestructura para busqueda semantica ligera, deduplicacion de textos y clasificacion por similitud en el borde. Su entrenamiento sobre pares pregunta-respuesta (QA) condiciona su comportamiento: captura similitud tematica, no polaridad sentimental.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador dual (dual-encoder) transformer compacto, exportado a TFLite |
+| Arquitectura | Codificador dual (dual-encoder) tipo Universal Sentence Encoder, variante USE-QA, exportado a LiteRT/TFLite |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP32 (float32); el ejemplo de MediaPipe permite `quantize=True` en el pipeline |
-| Idiomas soportados | ingles (en) |
+| Tipos de cuantizacion | FP32 en el fichero publicado; la API TextEmbedder expone una opcion `quantize=True` en el ejemplo de Python |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`universal_sentence_encoder.tflite`, 6,12 MB) |
+| Formato de pesos | TFLite (`universal_sentence_encoder.tflite`, 6.120.274 bytes, SHA-256 `89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un codificador dual que genera dos salidas de 100 dimensiones: `Final/EncodeQuery/mul` (codificación de consulta) y `Final/EncodeResult/mul` (codificación de respuesta). La entrada se compone de tres tensores de tipo string (`inp_text`, `res_context`, `res_text`), lo que refleja un pipeline de parseo de ejemplos (`ParseExample/ParseExampleV2`) orientado a pares pregunta-respuesta. El modelo está entrenado sobre conjuntos de datos de pregunta-respuesta, de ahí la denominación USE-QA en los metadatos embebidos.
+La model card describe un codificador dual compacto entrenado sobre conjuntos de datos de pregunta-respuesta. La arquitectura sigue el esquema clasico de dos torres: una torre codifica la consulta (query) y otra el resultado (response), y la similitud se calcula entre sus embeddings. El modelo exportado expone dos salidas de 100 dimensiones (`Final/EncodeQuery/mul` y `Final/EncodeResult/mul`), ambas de tipo `float32`, y tres entradas de tipo `string` (`inp_text`, `res_context`, `res_text`) con forma `[-1]`.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación principal no es arquitectónica sino de despliegue: un codificador dual de muy bajo coste computacional empaquetado en TFLite con metadatos embebidos (nombre `USE-QA TFLite model`, versión 1, autor MediaPipe), diseñado para ejecutarse en CPU de dispositivos móviles y navegador. La captura de similitud es temática, no de sentimiento: frases como "I like my phone" y "I hate my phone" obtienen alta similitud porque ambas tratan sobre teléfonos.
+Los metadatos embebidos en el TFLite identifican el modelo como `USE-QA TFLite model`, version 1, autor MediaPipe. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO; al ser un modelo de embeddings y no generativo, estas tecnicas no serian de aplicacion directa. La innovacion principal es la compresion a 6,12 MB con salida de 100 dimensiones, que reduce el coste de almacenamiento y de calculo de similitud frente a embeddings de 512 o 768 dimensiones.
 
 ## Capacidades
 
-- Generación de embeddings de frases en 100 dimensiones para similitud semántica mediante coseno.
-- Coincidencia temática y agrupamiento (clustering) de textos por tópico.
-- Recuperación ligera y coincidencia FAQ sobre pares pregunta-respuesta.
-- Ejecución en el dispositivo (on-device) en Android, iOS, web y Flutter mediante MediaPipe Tasks.
-- Inferencia en CPU con latencia muy baja (≈10 ms en Galaxy S26 Ultra con 4 hilos).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidades multilingües limitadas al inglés.
-- No dispone de modo de pensamiento (thinking), visión ni audio.
+- Generacion de embeddings de frases en 100 dimensiones para similitud semantica por coseno.
+- Calculo de similitud tematica entre pares de textos (la model card advierte que captura tema, no sentimiento: "I like my phone" y "I hate my phone" resultan muy similares).
+- Agrupamiento (clustering) tematico de textos por proximidad vectorial.
+- Busqueda semantica ligera y deduplicacion de contenido en el dispositivo.
+- Inferencia on-device en Android, iOS, web (JavaScript) y Flutter mediante MediaPipe Tasks.
+- Ejecucion en Python via `mediapipe` con la API `TextEmbedder`.
+- No soporta tool calling, function calling ni razonamiento multi-paso.
+- No es un modelo generativo: no produce texto, codigo, matematicas ni vision.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Coincidencia FAQ en aplicaciones móviles: el modelo permite comparar la consulta del usuario con una base de preguntas frecuentes precalculada y devolver la respuesta más similar sin conexión, gracias a sus vectores de 100 dimensiones y su latencia de 10 ms.
-- Búsqueda semántica local en el navegador: integrado vía MediaPipe Web, permite indexar y consultar contenido de una web o PWA en el propio cliente, evitando enviar texto del usuario a un servidor.
-- Agrupamiento temático de reseñas o comentarios: al capturar similitud por tópico, sirve para agrupar feedback de usuarios en categorías (por ejemplo, quejas sobre batería o pantalla) en un dispositivo de borde.
-- Deduplicación y filtrado de contenido: comparar titulares o mensajes entrantes para detectar duplicados o contenido muy similar antes de mostrarlo, con coste computacional despreciable.
-- Enrutamiento ligero de intenciones en asistentes de voz: usar la similitud entre la transcripción y un conjunto de intenciones predefinidas para decidir el flujo de conversación en el dispositivo.
-- Prefiltrado en pipelines de RAG: como primera etapa de recuperación de bajo coste, descartar candidatos irrelevantes antes de invocar un modelo de embeddings mayor o un LLM, reduciendo el cómputo total.
-- Clasificación de texto por prototipos: calcular el vector medio de cada clase y asignar nuevas entradas a la clase más cercana, útil para etiquetado rápido en apps de notas o correo.
+- Busqueda semantica local en aplicaciones moviles: indexar un corpus pequeno de notas o articulos y recuperar los mas proximos a una consulta usando similitud por coseno, sin enviar datos a un servidor y con latencia de milisegundos.
+- Deduplicacion de mensajes o resenas: agrupar textos tematicamente equivalentes antes de almacenarlos o moderarlos, aprovechando que el modelo captura tema aunque difiera la formulacion.
+- Clasificacion ligera de tickets de soporte: comparar el texto de un ticket con prototipos de categorias predefinidas y asignar la mas cercana, como paso previo a un modelo mayor.
+- Sugerencia de contenido relacionado: en una app de lectura, calcular la similitud entre el articulo abierto y el resto del catalogo para recomendar articulos del mismo tema en local.
+- Filtrado previo en pipelines RAG en el borde: descartar candidatos irrelevantes antes de invocar un modelo mayor o un servicio remoto, reduciendo coste y latencia.
+- Deteccion de duplicados en formularios o encuestas: comparar respuestas abiertas de usuarios y marcar entradas casi identicas para revision.
+- Prototipado rapido multiplataforma: validar una idea de similitud semantica en Android, iOS, web y Flutter con el mismo fichero TFLite y las muestras oficiales de MediaPipe.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Dispositivo | Latencia CPU |
-|---|---|---:|
-| Universal Sentence Encoder | Galaxy S26 Ultra (4 hilos) | 10 ms |
+La model card solo publica una medicion de latencia, no resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, MTEB u otros).
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otras métricas de recuperación como MTEB) en la información disponible.
+| Metrica | Dispositivo | Valor |
+|---|---|---|
+| Latencia media de pipeline en CPU (4 hilos) | Galaxy S26 Ultra | 10 ms |
+
+No se han publicado resultados de benchmarks de calidad en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica; el modelo está pensado para CPU y ejecución en el dispositivo. El artefacto pesa 6,12 MB en FP32.
-- GPU recomendadas: no requiere GPU; funciona en CPU de móvil, navegador y sistemas embebidos.
-- Cabe en cualquier GPU de consumo y en la práctica totalidad de dispositivos móviles actuales; no es un modelo destinado a GPU de datacenter.
-- Opciones de despliegue: MediaPipe Tasks (Python, Web/JavaScript, Android Kotlin/Java, iOS Swift, Flutter Dart); el formato TFLite también puede ejecutarse con el intérprete de TensorFlow Lite.
-- Latencia y throughput estimados: ≈10 ms por inferencia en CPU de Galaxy S26 Ultra con 4 hilos, según la documentación de MediaPipe; no se dispone de cifras de throughput.
+- VRAM estimada para inferencia: no aplica en el sentido de GPU; el modelo esta pensado para CPU y aceleradores moviles. El fichero pesa 6,12 MB en FP32.
+- GPU recomendadas: no disponibles; el caso de uso objetivo es CPU en dispositivos moviles y navegador.
+- Cabe en cualquier GPU de consumo y en practicamente cualquier dispositivo movil moderno por su tamano.
+- Opciones de despliegue: MediaPipe Tasks (`TextEmbedder`) en Python, Android (Kotlin/Java), iOS (Swift), web (JavaScript) y Flutter (Dart); el fichero es un `.tflite` compatible con el runtime LiteRT.
+- Latencia: 10 ms de media en CPU con 4 hilos en Galaxy S26 Ultra segun la documentacion oficial. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Dimension de embedding | Tamano | Idiomas | Licencia | Formato |
-|---|---|---:|---|---|---|
-| MediaPipe-TextEmbedder-Universal-Sentence-Encoder | 100 | 6,12 MB (FP32) | ingles | Apache 2.0 | TFLite |
-| MediaPipe-TextEmbedder-EmbeddingGemma-300M | no disponible | no disponible | multilingue (segun model card) | no disponible | no disponible |
-| Embeddings de LLM de 768 dimensiones (referencia generica) | 768 | orden de cientos de MB a GB | multilingue | variable | safetensors, GGUF, etc. |
+| Modelo | Parametros | Dimension del embedding | Contexto | Licencia | Despliegue |
+|---|---|---|---|---|---|
+| MediaPipe USE (este modelo) | no disponible (6,12 MB) | 100 | no disponible | Apache 2.0 | TFLite / MediaPipe, on-device |
+| Universal Sentence Encoder original (TensorFlow Hub) | no disponible | 512 | no disponible | Apache 2.0 | TensorFlow / TF Hub |
+| all-MiniLM-L6-v2 (Sentence Transformers) | ~22 M | 384 | 256 tokens | Apache 2.0 | PyTorch / ONNX / GGUF |
+| no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La model card recomienda `MediaPipe-TextEmbedder-EmbeddingGemma-300M` para tareas multilingües o de recuperación y clasificación guiadas por instrucciones, lo que sitúa a este modelo como la opción de mínima huella dentro de la familia MediaPipe TextEmbedder. No se dispone de datos de rendimiento comparativo entre ambos.
+La comparativa con alternativas de la misma categoria (embeddings de frases ligeros) solo puede establecerse por tamano y dimension de salida, ya que la informacion proporcionada no incluye metricas de calidad comparables.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés; no es adecuado para tareas multilingües.
-- Captura similitud temática, no polaridad sentimental: frases con sentimiento opuesto sobre el mismo tema obtienen alta similitud, lo que puede producir resultados contraintuitivos en tareas de análisis de opinión.
-- Entrenado sobre pares pregunta-respuesta, por lo que su comportamiento en otros dominios (clasificación fina, instrucciones) puede degradarse.
-- Los vectores de 100 dimensiones ofrecen menor granularidad semántica que embeddings de 768 dimensiones; para recuperación precisa se recomienda un modelo mayor.
-- Riesgo de alucinación no aplica en sentido estricto (no genera texto), pero sí existe riesgo de falsos positivos en la coincidencia semántica.
-- No se ha publicado un informe de equidad (fairness) específico de Google para este modelo en la página de documentación de MediaPipe.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de los artefactos upstream de MediaPipe y de las dependencias de despliegue.
-- Para producción en tareas multilingües o guiadas por instrucciones, la propia model card sugiere migrar a `MediaPipe-TextEmbedder-EmbeddingGemma-300M`.
+- Solo soporta ingles; el rendimiento en otros idiomas no esta garantizado.
+- Captura similitud tematica, no polaridad sentimental: textos con sentimiento opuesto sobre el mismo tema resultan muy similares.
+- Embeddings de solo 100 dimensiones implican menor capacidad de discriminacion fina que modelos de 384 o 768 dimensiones.
+- No es un modelo generativo: no responde preguntas, no resume ni razona; solo produce vectores.
+- Longitud maxima de entrada no documentada en la informacion disponible.
+- Riesgo de alucinacion no aplicable (no genera texto), pero si de falsos positivos en similitud por la baja dimensionalidad.
+- Licencia Apache 2.0: permite uso comercial con atribucion y sin garantias; conviene revisar los terminos de MediaPipe y LiteRT para el despliegue.
+- Para produccion en servidor con corpus grandes, un modelo de embeddings de mayor dimension suele ser mas adecuado; este esta optimizado para el borde.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder
-- Archivo del modelo: https://huggingface.co/litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder/blob/main/universal_sentence_encoder.tflite
-- Documentación de la tarea Text Embedder: https://developers.google.com/edge/mediapipe/solutions/text/text_embedder
-- Benchmarks de la tarea: https://developers.google.com/edge/mediapipe/solutions/text/text_embedder#task_benchmarks
-- Guía de instalación Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guía de instalación Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
-- Guía de instalación Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
-- Guía de instalación iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
-- Guía de instalación Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
+- Fichero del modelo: https://huggingface.co/litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder/blob/main/universal_sentence_encoder.tflite
+- Documentacion de MediaPipe Text Embedder: https://developers.google.com/edge/mediapipe/solutions/text/text_embedder
+- Benchmarks de Text Embedder: https://developers.google.com/edge/mediapipe/solutions/text/text_embedder#benchmarks
+- Setup Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
+- Setup Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
+- Setup Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
+- Setup iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
+- Setup Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
 - Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/text/text_embedder
-- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/text_embedder/android
-- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/text_embedder/ios
-- Notebook Python: https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/text_embedder/python/text_embedder.ipynb
-- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/text/text_embedder
-- Artefacto upstream: https://storage.googleapis.com/mediapipe-models/text_e
+- Codigo fuente web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/text-embedder.ts
+- Muestra Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/text_embedder/android
+- Muestra iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/text_embedder/ios
+- Notebook Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/text_embedder/python/text_embedder.ipynb
+- Muestra Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/text/text_embedder

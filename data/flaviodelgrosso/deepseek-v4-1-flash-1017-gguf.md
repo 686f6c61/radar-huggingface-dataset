@@ -2,110 +2,103 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es un modelo de lenguaje de gran escala desarrollado por DeepSeek, publicado originalmente en formato safetensors con 329.965.689.984 parámetros totales. La versión aquí descrita es una cuantización GGUF realizada por el usuario flaviodelgrosso, empaquetada específicamente para ejecutarse en un único Mac con Apple Silicon y 128 GB de memoria unificada mediante el runtime Razor. El modelo base emplea una arquitectura de mezcla de expertos (MoE), a juzgar por la referencia explícita a "routed experts" y a la transmisión selectiva de expertos desde el SSD.
+DeepSeek-V4.1-Flash-1017 es un modelo de lenguaje de gran escala desarrollado por DeepSeek, distribuido en este repositorio como una cuantización GGUF empaquetada por el usuario flaviodelgrosso para su ejecución local en Apple Silicon mediante el runtime Razor. El checkpoint original cuenta con 329.965.689.984 parámetros (aproximadamente 330 mil millones) y una arquitectura de mezcla de expertos (MoE), según se deduce del tratamiento diferenciado de los "routed experts" descrito en la model card. El modelo soporta generación de texto, razonamiento, código y entrada de imágenes mediante un sidecar de visión opcional.
 
-La relevancia de esta ficha reside en su carácter atípico: no es una cuantización GGUF convencional, sino un empaquetado propietario que solo funciona con Razor, un runtime que, según la model card, no es de código abierto y no ha sido publicado. Los pesos están disponibles, pero no pueden ejecutarse en llama.cpp ni en otros motores GGUF estándar. El autor comprime los expertos enrutados a aproximadamente 2 bits por peso, aplicando más bits a los expertos críticos para chat y texto no inglés, mientras mantiene el resto de componentes en la precisión original del checkpoint.
+La relevancia de esta ficha radica en que el repositorio no distribuye el modelo en un formato GGUF convencional, sino en un empaquetado propietario que solo puede cargarse con Razor, un runtime que, en la fecha de publicación de la model card, no era de código abierto. El modelo completo ocupa 349,3 GB y requiere streaming desde SSD, ya que excede la memoria unificada de 128 GB del hardware objetivo. Se incluye además un modelo draft de 8,6 GB para decodificación especulativa y un codificador de visión de 972 MB en BF16.
 
-La propuesta de valor es ejecutar un modelo de más de 300.000 millones de parámetros en hardware de consumo Apple, con un rendimiento medido de unos 36 tokens/s en texto ordinario y entre 71 y 79 tokens/s con el modelo borrador de decodificación especulativa, a costa de una pérdida de calidad notable en idiomas distintos del inglés (79,8 % de coincidencia con el modelo completo) frente a código y razonamiento (97,8 % y 96,0 % respectivamente).
+La licencia declarada es MIT, heredada del modelo base, aunque la model card advierte explícitamente de que los pesos no son ejecutables con llama.cpp ni con otros runtimes GGUF estándar. Esta restricción práctica es el dato más importante para cualquier evaluador que considere su despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), segun la referencia a "routed experts" en la model card; detalles de capas y atencion no disponibles |
-| Parametros totales | 329.965.689.984 (329,97 mil millones) |
+| Arquitectura | Mezcla de expertos (MoE) según referencias a "routed experts"; detalles completos no disponibles |
+| Parametros totales | 329.965.689.984 (≈330 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF propietario: expertos enrutados comprimidos a ~2 bits por peso con asignacion variable de bits; resto de componentes en precision original del checkpoint; modelo borrador opcional DSpark (8,6 GB) |
-| Idiomas soportados | no disponible (la model card menciona texto no ingles y capacidades multilingues, sin listado) |
-| Licencia | MIT (heredada del modelo base DeepSeek) |
-| Formato de pesos | GGUF propietario compatible solo con el runtime Razor; no compatible con llama.cpp ni otros motores GGUF |
+| Tipos de cuantizacion | GGUF propietario: expertos enrutados a ~2 bits por peso, resto en precisión original del checkpoint; sidecar de visión en BF16 |
+| Idiomas soportados | no disponible (la model card menciona "non-English text" sin enumerar idiomas) |
+| Licencia | MIT |
+| Formato de pesos | GGUF propietario (solo cargable con Razor; incompatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que el modelo base es una arquitectura de mezcla de expertos: la model card describe "routed experts" comprimidos a unos 2 bits por peso, con mayor asignación de bits a los expertos más relevantes para chat y texto no inglés. El resto de los componentes del checkpoint conserva su precisión original. No se dispone de datos sobre número de capas, dimensión oculta, número de expertos, mecanismo de atención, composición del dataset de entrenamiento, número de tokens vistos ni si se emplearon técnicas de RLHF o DPO.
+El modelo base es un transformer de mezcla de expertos con aproximadamente 330 mil millones de parámetros totales. La model card del repositorio cuantizado no detalla el número de expertos, la proporción de parámetros activos por token ni la longitud de contexto nativa. La cuantización aplicada por el autor del repositorio es selectiva: los expertos enrutados se comprimen a unos 2 bits por peso, con mayor precisión asignada a los expertos más relevantes para chat y texto no inglés, mientras que el resto de componentes conserva la precisión del checkpoint original.
 
-La innovación técnica destacable de este empaquetado es doble. Por un lado, la compresión selectiva de expertos permite que un modelo de casi 330.000 millones de parámetros quepa en un Mac de 128 GB, a costa de transmitir los expertos necesarios desde el SSD interno a una caché en memoria (el modelo completo ocupa 349,3 GB en disco, más que la RAM disponible). Por otro, se incluye un modelo borrador opcional DSpark de 8,6 GB para decodificación especulativa, que acelera la generación en texto predecible hasta 79 tokens/s. El runtime Razor expone APIs compatibles con OpenAI y Anthropic.
+El empaquetado incluye tres artefactos: el modelo principal (349,3 GB), un modelo draft DSpark de 8,6 GB para decodificación especulativa y un sidecar de visión de 972 MB que contiene el codificador de imágenes y la proyección imagen-texto copiados sin modificar en BF16. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: la model card reporta un 96,0 % de coincidencia de siguiente token con el modelo completo en prompts de razonamiento.
-- Generación de código: 97,8 % de coincidencia con el modelo completo en prompts de programación, la categoría mejor preservada tras la compresión.
-- Capacidades multilingües: presentes pero degradadas; la coincidencia cae al 79,8 % en la categoría multilingüe, la más afectada por la compresión a 2 bits.
-- Conversación (chat): 88,2 % de coincidencia con el modelo completo en prompts de chat.
-- Decodificación especulativa: soportada mediante el modelo borrador DSpark, con ganancias de velocidad en texto predecible.
-- Integración con agentes y clientes: el runtime Razor sirve APIs compatibles con OpenAI y Anthropic, lo que permite conectar agentes de programación y clientes de chat.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generación de texto y razonamiento multi-turno.
+- Generación de código, con un 97,8 % de acuerdo de siguiente token respecto al modelo completo en la categoría de coding.
+- Razonamiento, con un 96,0 % de acuerdo respecto al modelo completo.
+- Entrada de imágenes mediante el sidecar de visión: admite PNG y JPEG en mensajes de usuario con formatos OpenAI `image_url`, Responses `input_image`, bloques `image` de Anthropic y el comando `/image <path>` en el cliente de chat de Razor.
+- Decodificación especulativa mediante el modelo draft DSpark, con aceleración de hasta 71-79 tokens/s en texto predecible.
+- Servido de APIs compatibles con OpenAI y Anthropic, lo que permite conectar agentes de código y clientes de chat.
+- Capacidades multilingües presentes pero degradadas por la cuantización: 79,8 % de acuerdo con el modelo completo en la categoría multilingual.
+- No se documenta soporte explícito de tool calling ni de function calling en la model card del repositorio cuantizado.
 
 ## Casos de uso
 
-- Asistencia de programación local en Mac: el modelo conserva el 97,8 % de coincidencia con el modelo completo en código y expone una API compatible con OpenAI y Anthropic, por lo que puede conectarse a agentes de programación (tipo Continue, Cline o similares) que apunten a `localhost` sin enviar código a la nube.
-- Razonamiento y análisis de documentos en local: con 96,0 % de coincidencia en razonamiento, es adecuado para tareas de análisis que requieran confidencialidad y no puedan salir de la máquina del desarrollador.
-- Prototipado de aplicaciones sobre modelos de gran escala: permite desarrollar y depurar integraciones contra un modelo de casi 330.000 millones de parámetros antes de desplegar en infraestructura con GPU, usando la misma API compatible con OpenAI.
-- Chat de uso personal con contexto largo: la ventana de contexto no está documentada, pero el modelo base está pensado para conversaciones multi-turno; la coincidencia del 88,2 % en chat es suficiente para uso interactivo no crítico.
-- Investigación sobre cuantización extrema de MoE: el empaquetado sirve como caso de estudio de compresión selectiva de expertos a 2 bits y de su impacto medido por categoría (código, razonamiento, chat, multilingüe).
-- Evaluación de decodificación especulativa en Apple Silicon: el par modelo + DSpark permite medir ganancias de throughput con y sin borrador en hardware de consumo, con cifras de referencia de 36 frente a 71-79 tokens/s.
-- Generación de texto en inglés en local: para texto ordinario en inglés, el modelo ofrece 36 tokens/s sostenidos con caché de expertos caliente, suficiente para generación de borradores y resúmenes.
+- Asistencia de código en local: el modelo mantiene un 97,8 % de acuerdo con la versión completa en coding, por lo que puede usarse como asistente de programación en un Mac de 128 GB sin depender de la nube, conectándolo a agentes de código mediante la API compatible con OpenAI.
+- Razonamiento y análisis de documentos extensos: la naturaleza MoE con streaming de expertos permite procesar prompts largos en local, aunque el rendimiento depende críticamente de la velocidad del SSD interno.
+- Análisis de imágenes con preguntas de seguimiento: el sidecar de visión codifica imágenes en hasta 1.024 tokens de prompt y reutiliza la codificación en preguntas posteriores sobre la misma imagen, lo que resulta adecuado para inspección de capturas, diagramas o documentos escaneados.
+- Prototipado de agentes conversacionales: la API compatible con Anthropic y OpenAI permite integrar el modelo en frameworks de agentes existentes sin adaptadores personalizados.
+- Evaluación de cuantizaciones agresivas: el repositorio sirve como caso de estudio de compresión selectiva a ~2 bits en expertos enrutados, útil para investigadores que estudien la degradación por cuantización en modelos MoE.
+- Procesamiento de texto en inglés y chat general: con un 88,2 % de acuerdo en chat, es viable para conversación general, aunque con pérdida perceptible frente al modelo completo.
+- Inferencia offline en hardware Apple: para entornos sin conectividad o con requisitos de privacidad, el modelo se ejecuta íntegramente en local en un M5 Max con 128 GB.
 
 ## Benchmarks y rendimiento
 
-La model card no publica benchmarks estándar (MMLU, HumanEval, GSM8K). El único dato de calidad es la tasa de coincidencia del siguiente token con el modelo completo, medida sobre 48 prompts reservados:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card proporciona métricas de acuerdo de siguiente token frente al modelo completo de precisión original sobre 48 prompts reservados:
 
-| Categoria | Coincidencia con el modelo completo |
+| Categoria | Acuerdo con el modelo completo |
 |---|---:|
-| Codigo | 97,8 % |
-| Razonamiento | 96,0 % |
+| Coding | 97,8 % |
+| Reasoning | 96,0 % |
 | Chat | 88,2 % |
-| Multilingue | 79,8 % |
+| Multilingual | 79,8 % |
 
-Rendimiento medido en Apple M5 Max con 128 GB (prompt de prosa de 2.048 tokens, 256 tokens generados, caché de expertos automática):
+Rendimiento medido en Apple M5 Max con 128 GB (prompt de 2.048 tokens, 256 tokens generados, caché de expertos automática):
 
-| Escenario | Throughput |
+| Escenario | Velocidad |
 |---|---:|
 | Texto ordinario, caché caliente | ~36 tokens/s (27,3-27,5 ms/token) |
 | Primera petición tras carga | ~34 tokens/s |
-| Con modelo borrador DSpark, texto predecible | 71-79 tokens/s |
-| Con DSpark, prosa corta y variada | sin ganancia apreciable |
-
-La generación sostenida se degrada unos pocos puntos porcentuales por calentamiento del equipo.
+| Con draft DSpark en texto predecible | 71-79 tokens/s |
+| Codificación de imagen grande | ~1,6 s |
 
 ## Requisitos de hardware
 
-- Memoria unificada: 128 GB en Mac con Apple Silicon; el modelo (349,3 GB) excede la RAM y Razor transmite los expertos desde el SSD interno a una caché en memoria.
-- Almacenamiento: unos 360 GB libres para el modelo (349,3 GB) y el borrador DSpark (8,6 GB); se recomienda SSD interno rápido por la transmisión continua de expertos.
-- Sistema operativo: macOS 15 o posterior.
-- Hardware de referencia: Apple M5 Max con 128 GB; el runtime fue desarrollado y probado en ese equipo.
-- GPU dedicadas (A100, H100, RTX 4090): no aplicable; estos archivos solo se ejecutan en Razor sobre Apple Silicon.
-- Despliegue: exclusivamente mediante el runtime Razor (`razor serve`), con APIs compatibles con OpenAI y Anthropic. No compatible con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ~27,3-27,5 ms por token en texto ordinario con caché caliente; 71-79 tokens/s con DSpark en texto predecible.
+- Apple Silicon Mac con 128 GB de memoria unificada; el autor desarrolló y probó el modelo en un M5 Max.
+- macOS 15 o posterior.
+- Aproximadamente 360 GB de espacio libre en disco para los tres archivos (349,3 GB + 8,6 GB + 972 MB).
+- El modelo excede los 128 GB de RAM: Razor hace streaming de los expertos necesarios desde el SSD interno a una caché en memoria, por lo que la velocidad del SSD es determinante para el rendimiento.
+- No es compatible con GPU NVIDIA, llama.cpp, Ollama, vLLM ni TGI; únicamente funciona con el runtime Razor, no publicado como código abierto en la fecha de la model card.
+- Latencia estimada: 27,3-27,5 ms por token en régimen estable; el rendimiento sostenido cae unos pocos puntos porcentuales por calentamiento del equipo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación más directa es con el propio modelo base sin comprimir:
+No se dispone de datos de benchmarks del modelo base ni de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. A nivel cualitativo, el punto diferencial frente a otras distribuciones GGUF es que este repositorio no es ejecutable con runtimes estándar: requiere Razor y hardware Apple Silicon con 128 GB, lo que lo sitúa en una categoría de despliegue distinta a la de las cuantizaciones convencionales de llama.cpp.
 
-| Modelo | Parametros | Contexto | Calidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (original) | 329,97 mil millones | no disponible | referencia completa | MIT | safetensors en Hugging Face |
-| DeepSeek-V4.1-Flash-1017-TRL-R2 (esta ficha) | 329,97 mil millones | no disponible | 79,8-97,8 % de coincidencia segun categoria | MIT | GGUF solo para Razor (runtime no publicado) |
-
-Otros modelos de la misma categoría (mismo tamaño o misma tarea) no están disponibles en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Runtime |
+|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017 (este repo) | ≈330 B | no disponible | MIT | Razor (Apple Silicon) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El runtime Razor no es de código abierto y no ha sido publicado: los pesos pueden descargarse, pero no ejecutarse hasta que el autor lo publique.
-- Los archivos solo funcionan en Razor sobre Apple Silicon; llama.cpp y otros motores GGUF no pueden cargarlos, lo que rompe la portabilidad habitual del formato GGUF.
-- Degradación de calidad medible: 79,8 % de coincidencia en multilingüe y 88,2 % en chat frente al modelo completo; el texto no inglés es la categoría más afectada.
-- El modelo completo (349,3 GB) no cabe en 128 GB de RAM; depende de la transmisión de expertos desde el SSD, por lo que un SSD lento degrada el rendimiento y aumenta la latencia.
-- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos, agravado por la compresión a 2 bits en los expertos.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Longitud de contexto: no disponible, lo que impide planificar cargas de trabajo con contexto largo.
-- Licencia MIT heredada del modelo base; no se especifican restricciones adicionales para uso comercial, pero conviene verificar la licencia del modelo original de DeepSeek antes de desplegar en producción.
-- El rendimiento se degrada unos pocos puntos porcentuales por calentamiento térmico en generaciones sostenidas.
-- La ganancia del modelo borrador DSpark es inconsistente: nula o escasa en prosa corta y variada.
+- El runtime Razor no es de código abierto según la model card; los pesos se pueden descargar pero no ejecutar hasta su publicación.
+- Incompatibilidad total con llama.cpp y otros runtimes GGUF: el formato es propietario.
+- La cuantización a ~2 bits en expertos enrutados degrada especialmente el texto no inglés (79,8 % de acuerdo) y el chat (88,2 %), con pérdida menor en código y razonamiento.
+- El modelo supera la memoria unificada de 128 GB, lo que obliga a streaming desde SSD y hace que el rendimiento dependa del almacenamiento interno.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos ni limitaciones de contexto o idioma más allá de la degradación multilingual.
+- La licencia es MIT, lo que permite uso comercial, pero la dependencia de un runtime propietario condiciona la viabilidad en producción.
+- Las URLs remotas de imágenes no se descargan: solo se admiten imágenes en base64 o rutas locales.
+- El rendimiento sostenido cae por calentamiento del equipo; las cifras de velocidad corresponden a un M5 Max concreto.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF
+- Repositorio Hugging Face: https://huggingface.co/flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE

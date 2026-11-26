@@ -2,78 +2,85 @@
 
 ## Resumen
 
-VOCaboose-SFT-Ripple-65B-T1-GGUF es una cuantización en formato GGUF (tipo q8_0) de un modelo de lenguaje de aproximadamente 64.800 millones de parámetros, publicado por el usuario schonsense en Hugging Face. El nombre sugiere un ajuste fino supervisado (SFT) sobre una base denominada "Ripple" de 65B, orientado a conversación y, según la model card, a uso de rol (roleplay). La model card es extremadamente escueta: apenas indica la licencia Apache 2.0, que la cuantización q8_0 es "for testing purposes" y que el uso previsto es "Roleplay only".
+VOCaboose-SFT-Ripple-65B-T1-GGUF es una distribucion en formato GGUF de un modelo de lenguaje conversacional de aproximadamente 64.800 millones de parametros, publicada por el usuario schonsense en Hugging Face. El modelo se presenta como una variante afinada mediante SFT (supervised fine-tuning) orientada explicitamente a roleplay, segun la propia model card del autor, que lo describe como material "for testing purposes" y abierto a feedback. No se documenta la arquitectura base ni el proceso de entrenamiento en la informacion disponible.
 
-El modelo se distribuye exclusivamente en formato GGUF, lo que lo hace compatible con motores de inferencia orientados a CPU y GPU de consumo como llama.cpp, Ollama o LM Studio, aunque su tamaño (69,8 GB en el repositorio) lo sitúa fuera del alcance de la mayoría de equipos de consumo sin cuantizaciones más agresivas. No se dispone de información pública sobre la arquitectura interna, el dataset de entrenamiento, los idiomas soportados ni los resultados de evaluación.
+El interes tecnico de esta publicacion reside en su formato de distribucion: pesos GGUF cuantizados con ficheros de importancia (imatrix), lo que permite ejecutar un modelo de casi 65.000 millones de parametros en infraestructura local mediante llama.cpp u otros runners compatibles con GGUF. El repositorio ocupa 104,8 GB, coherente con las multiples cuantizaciones de un modelo de este tamano.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, sin documentación técnica asociada, y cuya única indicación de uso es el roleplay. Cualquier evaluación seria de su calidad requeriría pruebas empíricas por parte del usuario.
+Se trata de un modelo de nicho, con muy poca traccion (242 descargas y 1 like en el momento de la consulta), sin benchmarks publicados ni documentacion tecnica detallada. Su uso previsto declarado es el roleplay y las pruebas, no tareas de produccion general. La licencia Apache 2.0 facilita su reutilizacion, aunque la ausencia de informacion sobre el modelo base limita la evaluacion de riesgos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, sin confirmar) |
-| Parámetros totales | 64.782.689.360 (~64,8 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo de lenguaje transformer, inferido del formato GGUF; no confirmado por el autor) |
+| Parametros totales | 64.782.689.360 (64,78 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | q8_0 (GGUF); el autor indica que es "for testing purposes" |
+| Tipos de cuantizacion | GGUF con imatrix (multiples cuantizaciones; niveles concretos no detallados) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantización q8_0); el repositorio ocupa 69,8 GB |
+| Formato de pesos | GGUF (repo de 104,8 GB); existen pesos safetensors del modelo base segun el dato de parametros |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base. El nombre "Ripple-65B" y el recuento real de parámetros (64.782.689.360) apuntan a un transformer decoder-only de aproximadamente 65.000 millones de parámetros, pero no hay confirmación oficial en la model card ni en los metadatos de Hugging Face. Tampoco se especifica si emplea atención completa, atención con ventana deslizante, mezcla de expertos u otra variante.
+No se dispone de informacion sobre la arquitectura interna del modelo. El dato de parametros totales (64.782.689.360) proviene de los pesos en safetensors del modelo de referencia, y el formato de publicacion es GGUF, lo que implica compatibilidad con el ecosistema llama.cpp. No se especifica si la arquitectura es un transformer denso, un modelo con mezcla de expertos (MoE) o una variante hibrida.
 
-Respecto al entrenamiento, el sufijo "SFT" indica que el modelo ha pasado por un ajuste fino supervisado, presumiblemente sobre una base preentrenada llamada "Ripple". No se detalla el número de tokens de preentrenamiento, la composición del dataset de SFT, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. La única indicación de la model card es que el modelo está orientado a roleplay, lo que sugiere que el dataset de SFT podría estar compuesto por diálogos de personaje, pero esto es una inferencia y no un dato confirmado. No se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, etc.).
+Respecto al entrenamiento, la model card solo indica que se trata de un modelo afinado con SFT y orientado a roleplay ("Roleplay only"), sin detallar el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La presencia de ficheros imatrix sugiere un proceso de cuantizacion cuidadoso con calibracion por importancia de pesos, pero no aporta informacion sobre el entrenamiento original.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" y su uso declarado es el roleplay, por lo que se espera que mantenga diálogos multi-turno con coherencia de personaje.
-- Roleplay y simulación de personajes: es el único caso de uso explícitamente indicado por el autor ("Roleplay only").
-- Razonamiento y código: no disponible; no hay evidencia publicada de que el modelo destaque en estas tareas.
-- Soporte de tool calling / function calling: no disponible; no se menciona en la model card ni en los tags.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se listan idiomas en los metadatos.
-- Capacidades especiales (modo thinking, visión, audio): no disponible; no se documenta ninguna.
+- Generacion de texto conversacional: el modelo esta disenado para mantener dialogos multi-turno, segun su orientacion declarada a roleplay.
+- Roleplay y personificacion: uso principal declarado por el autor; adecuado para simulacion de personajes y narrativa interactiva.
+- Conversacion general: la etiqueta "conversational" del repositorio indica soporte de dialogos abiertos.
+- Tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingues: no disponible (idiomas no declarados).
+- Capacidades especiales (vision, audio, modo thinking): no disponible.
 
 ## Casos de uso
 
-- Roleplay conversacional en local: el modelo puede utilizarse con llama.cpp u Ollama para mantener conversaciones de personaje en una máquina con suficiente memoria, gracias a su formato GGUF y a la cuantización q8_0 que preserva prácticamente la precisión del modelo original.
-- Prototipado de chatbots de ficción: útil para desarrolladores que quieran probar interacciones de personaje sin depender de APIs externas, aunque la falta de documentación sobre contexto e idiomas limita su uso en producción.
-- Investigación sobre ajuste fino supervisado: el modelo puede servir como caso de estudio de un SFT orientado a rol, comparando su comportamiento con el de la base "Ripple" si esta estuviera disponible.
-- Evaluación de cuantizaciones GGUF: al ser una cuantización q8_0 "for testing purposes", puede emplearse para medir la degradación de calidad frente a los pesos originales en tareas de diálogo.
-- Generación de guiones y diálogos creativos: con la debida supervisión humana, podría asistir en la escritura de escenas dialogadas, aunque sin garantías de calidad ni de ausencia de alucinaciones.
-- Despliegue en entornos con GPU de gran memoria: en una A100 80 GB o H100, el modelo q8_0 (≈69 GB) puede cargarse íntegramente en VRAM para inferencia de baja latencia en aplicaciones de roleplay interactivo.
+- Roleplay interactivo y simulacion de personajes: es el uso explicito para el que se publica el modelo; puede desplegarse en interfaces de chat locales con llama.cpp u Ollama para sesiones narrativas multi-turno.
+- Prototipado de experiencias conversacionales: util para probar flujos de dialogo en entornos de desarrollo antes de comprometerse con modelos mayores o APIs de pago, gracias a su licencia Apache 2.0.
+- Investigacion sobre fine-tuning conversacional: al ser una variante SFT publicada para pruebas, sirve como referencia para comparar el efecto del ajuste supervisado en modelos de ~65B.
+- Generacion creativa de ficcion: redaccion asistida de dialogos, tramas y escenas en herramientas de escritura, aprovechando el sesgo hacia roleplay del ajuste.
+- Despliegue local en hardware de gama alta: con cuantizaciones GGUF e imatrix, puede ejecutarse en estaciones de trabajo con suficiente VRAM o RAM, sin depender de servicios en la nube.
+- Evaluacion comparativa de cuantizaciones: el repositorio con multiples ficheros GGUF permite estudiar el impacto de la cuantizacion con imatrix en la calidad conversacional de un modelo de 65B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la cuantización q8_0 ocupa aproximadamente 69 GB, por lo que se necesita al menos una GPU con 80 GB de VRAM (A100 80 GB, H100 80 GB) para cargar el modelo completo en memoria de vídeo.
-- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU (por ejemplo, 2× RTX 4090 de 24 GB con reparto de capas) para inferencia distribuida.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 3090 (24 GB) en q8_0; sería necesario recurrir a cuantizaciones más agresivas (q4_K_M, q5_K_M) no publicadas en este repositorio, o a inferencia parcial en CPU con offloading.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier motor compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían conversión a safetensors.
-- Latencia y throughput estimados: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible con precision; para un modelo de 64,78B parametros, una cuantizacion de 4 bits requiere aproximadamente 35-40 GB de memoria, y una de 8 bits en torno a 65-70 GB (estimaciones genericas por tamano, no confirmadas para este modelo).
+- GPU recomendadas: no documentadas por el autor; por tamano, serian necesarias GPU con 48-80 GB de VRAM (A100 80GB, H100, o configuraciones multi-GPU) para cuantizaciones altas.
+- Cabe en GPU de consumo: solo en configuraciones con cuantizaciones muy agresivas y offloading parcial a RAM; una RTX 4090 (24 GB) no puede alojar el modelo completo en 4 bits sin descarga a memoria del sistema.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; la etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia tipo API.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre modelos comparables de la misma categoría (roleplay de ~65B) con datos verificables de parámetros, contexto o rendimiento en la información proporcionada. La ausencia de benchmarks y de documentación técnica impide establecer una comparación rigurosa con alternativas como Llama-3-70B, Qwen2.5-72B u otros modelos de roleplay de tamaño similar.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| VOCaboose-SFT-Ripple-65B-T1-GGUF | 64,78B | no disponible | GGUF | Apache 2.0 | Roleplay, sin benchmarks |
+| Llama 3.1 70B | 70B | 128K | safetensors, GGUF | Llama 3.1 Community | Estandar abierto con amplia documentacion |
+| Qwen2.5 72B | 72B | 128K | safetensors, GGUF | Apache 2.0 | Multilingue, benchmarks publicados |
+| Mistral Large (clase 123B) | 123B | 128K | API/pesos | Mistral Research/Commercial | No comparable en tamano exacto |
+
+La comparativa con Llama 3.1 70B y Qwen2.5 72B es orientativa por rango de parametros; no existen datos de rendimiento de VOCaboose que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no especifica arquitectura, contexto, idiomas ni dataset de entrenamiento, lo que dificulta evaluar su idoneidad para producción.
-- Uso declarado restringido: el autor indica "Roleplay only", por lo que no se recomienda su empleo en tareas de razonamiento, código, matemáticas o atención al cliente sin validación previa.
-- Riesgo de alucinación: al ser un modelo de roleplay sin benchmarks publicados, la probabilidad de generar información falsa o inconsistente es desconocida y potencialmente alta.
-- Sesgos conocidos: no disponible; no se ha publicado ninguna evaluación de sesgos.
-- Limitaciones de contexto e idioma: no disponible; se desconoce la ventana de contexto efectiva y los idiomas soportados.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías sobre el comportamiento del modelo; el usuario asume la responsabilidad legal y ética de su despliegue.
-- Cuantización "for testing purposes": el propio autor advierte que la q8_0 es para pruebas, lo que sugiere que no ha sido validada exhaustivamente para producción.
-- Repositorio sin tracción: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validación comunitaria.
+- Ausencia total de benchmarks y documentacion tecnica: no es posible evaluar su calidad frente a alternativas.
+- Modelo declarado "Roleplay only": no esta pensado para tareas de produccion como codigo, matematicas o atencion al cliente seria.
+- Riesgo elevado de alucinacion y de salidas fuera de personaje en usos no conversacionales, dado el ajuste especifico.
+- Sesgos desconocidos: al no documentarse el dataset de entrenamiento ni el modelo base, no se pueden evaluar sesgos de genero, raza o idioma.
+- Idiomas no declarados: no hay garantia de calidad fuera del idioma o idiomas usados en el ajuste.
+- Longitud de contexto no disponible: limita el diseno de aplicaciones con documentos largos.
+- Publicado "for testing purposes": el autor no ofrece garantias de estabilidad ni soporte.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de trazabilidad del modelo base aconseja revision legal en despliegues productivos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/schonsense/VOCaboose-SFT-Ripple-65B-T1-GGUF
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

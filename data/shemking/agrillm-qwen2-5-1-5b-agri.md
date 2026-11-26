@@ -2,87 +2,105 @@
 
 ## Resumen
 
-agrillm-qwen2.5-1.5b-agri es un modelo publicado en Hugging Face por el usuario shemking bajo el identificador `shemking/agrillm-qwen2.5-1.5b-agri`. Por el nombre del repositorio y por el recuento real de parametros (1.543.714.304, equivalente a 1,54 mil millones), todo apunta a una adaptacion o ajuste fino de la familia Qwen2.5 en su variante de 1.5B, orientada al dominio agricola segun el sufijo "agri". Esta interpretacion procede de la nomenclatura del repositorio y no esta confirmada por ninguna ficha tecnica oficial dentro de la informacion disponible.
+AgriLLM es un ajuste fino completo de Qwen2.5-1.5B-Instruct orientado a asistencia agronómica para pequeños agricultores y agentes de extensión agraria en África subsahariana. Lo desarrolla el autor independiente shemking en el contexto de ADTC 2026, y su propuesta central es la operación totalmente offline: el modelo se distribuye cuantizado en GGUF Q4_K_M (940 MB) y funciona solo con CPU en aproximadamente 1 GB de memoria, sin GPU ni conexión de red tras la descarga. Con 1.543.714.304 parámetros, cubre el hueco de herramientas de IA accesibles en entornos donde la conectividad es intermitente y el coste de la inferencia en la nube es prohibitivo.
 
-Se trata de un modelo de tamano pequeno, con un espacio en disco de repositorio de 5,9 GB, etiquetado como `gguf`, `endpoints_compatible` y `conversational`. La combinacion de estas etiquetas sugiere que esta pensado para inferencia local o en entornos con recursos limitados, con pesos cuantizados listos para motores como llama.cpp u Ollama, y con un formato de chat conversacional.
+El corpus de entrenamiento es específico y deliberadamente acotado: 6.703 filas que cubren plagas y cultivos relevantes para la región (gusano cogollero, Striga, sorgo, yuca y batata, incluida la enfermedad del mosaico y la raya parda, cacahuete, aflatoxina en maíz almacenado, mijo, tef y la enfermedad de Newcastle en avicultura rural). El modelo incorpora en su plantilla de chat un system prompt propio con instrucciones de seguridad explícitas: no prescribir dosis de pesticidas o medicamentos veterinarios y derivar al etiquetado del producto y al agrovet o veterinario local.
 
-Su relevancia practica es la de un modelo de nicho: ajustes de dominio sobre modelos de 1-2B parametros permiten desplegar asistentes especializados en hardware de gama de consumo, algo atractivo para el sector agrario (asistencia tecnica en campo, consultas sobre cultivos o fitosanitarios). No obstante, la ausencia de licencia declarada, de idiomas declarados, de pipeline y de resultados de benchmarks limita seriamente su adopcion en produccion sin una evaluacion previa por parte del usuario.
+La relevancia actual del proyecto reside en su enfoque de despliegue y en su política de publicación: pesos en precisión completa junto a los GGUF, hashes SHA256 fijados a un commit concreto, informe técnico público y varios checkpoints intermedios para comparación. La licencia GPL-3.0, sin embargo, condiciona seriamente su adopción en productos propietarios.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del repositorio sugiere una variante de Qwen2.5, transformer decoder-only, sin confirmar) |
-| Parametros totales | 1.543.714.304 (1,54 mil millones) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible (si hereda la configuracion de Qwen2.5, serian 32.768 tokens nativos, dato no confirmado) |
-| Tipos de cuantizacion | no disponible en detalle; el tag `gguf` indica que existe al menos un archivo en formato GGUF (Q4_K_M, Q5_K_M, Q8_0, etc. no confirmados) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (confirmado por el recuento de parametros) y GGUF (confirmado por el tag) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-1.5B-Instruct) |
+| Parámetros totales | 1.543.714.304 (1,54 B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4.096 tokens (configuración de referencia en llama.cpp; contexto nativo del modelo base no disponible en la información proporcionada) |
+| Tipos de cuantización | GGUF Q4_K_M (fichero principal, 940 MB); pesos en precisión completa en `checkpoints/2stage-ckpt1224/` |
+| Idiomas soportados | Inglés |
+| Licencia | GPL-3.0 |
+| Formato de pesos | GGUF y safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura ni sobre el proceso de entrenamiento en los datos disponibles. El unico dato objetivo es el recuento de parametros (1.543.714.304), leido de los pesos en safetensors, y la etiqueta `conversational`, que indica que el modelo esta ajustado para mantener dialogos multi-turno en lugar de ser un modelo base de continuacion de texto.
+El modelo parte de Qwen2.5-1.5B-Instruct, un transformer decoder-only denso de 1,54 B parámetros, y se ajusta mediante un proceso en dos etapas. La model card distingue entre `checkpoints/stage1-final/` (etapa 1) y `checkpoints/2stage-ckpt1224/` (etapa 2, el checkpoint publicado como modelo actual). El checkpoint `2stage-x-final` obtuvo puntuaciones superiores pero fue descartado por memorizar sus datos de entrenamiento, lo que indica que el autor aplicó criterios de selección basados en generalización y no solo en métricas de ajuste. La versión anterior del repositorio (`adtc-agri-Q4_K_M.gguf`) era un ajuste LoRA y se conserva únicamente como referencia.
 
-El identificador del repositorio apunta a la familia Qwen2.5 como modelo de partida, lo que en su variante de 1.5B implicaria un transformer decoder-only con atencion por consultas agrupadas, normalizacion RMSNorm y una ventana de contexto nativa de 32.768 tokens ampliable mediante RoPE escalado. Todo ello es una inferencia basada en la nomenclatura, no un dato verificado en este repositorio. Se desconoce igualmente el volumen de tokens de ajuste, la composicion del corpus agricola utilizado, si hubo destilacion o ajuste supervisado, y si se aplicaron tecnicas de alineacion como RLHF, DPO u ORPO.
+El dataset de ajuste es `AI71ai/agrillm-train-146k`, aunque la model card describe un corpus de 6.703 filas efectivamente utilizado para el dominio agrícola. No se especifica en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF, DPO u otras técnicas de alineación posteriores al ajuste supervisado. La innovación destacable no es arquitectónica sino de despliegue y de comportamiento: la plantilla de chat inyecta un system prompt que instruye al modelo a rechazar la invención de plagas o tratamientos inexistentes y a abstenerse de prescribir dosis. La model card documenta este efecto con el caso de una plaga ficticia ("Letticea leaf miner"), ante la cual el modelo ajustado responde con una negativa explícita en 8 de 8 intentos, frente al modelo base, que genera un programa de tratamiento completo en 0 de 8.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, coherente con la etiqueta `conversational` del repositorio.
-- Especializacion probable en dominio agricola, deducida del sufijo "agri" en el nombre del modelo; no confirmada por documentacion.
-- Compatibilidad con endpoints de inferencia, segun la etiqueta `endpoints_compatible`.
-- Ejecucion en motores de inferencia basados en GGUF, segun el tag `gguf`.
-- Razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, modo de pensamiento y capacidades de agente: no disponible.
+- Generación de texto conversacional en inglés con registro divulgativo, orientado a personas sin formación formal en agronomía.
+- Conocimiento agronómico específico: identificación y manejo de gusano cogollero, Striga, sorgo, yuca, batata, cacahuete, mijo, tef y aflatoxina en maíz almacenado.
+- Sanidad animal en avicultura rural: enfermedad de Newcastle en aves de corral de aldea.
+- Recomendación de siguientes pasos con actores locales existentes (agrodealer, agrovet, agente de extensión del condado).
+- Abstención calibrada ante preguntas fuera de dominio o sobre plagas inexistentes, con petición de información adicional.
+- Restricción de seguridad incorporada: no proporciona dosis de pesticidas ni de medicamentos veterinarios.
+- Conversación multi-turno con contexto de 4.096 tokens.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente agronomico local en explotaciones agricolas sin conectividad estable: un modelo de 1,5B en GGUF puede ejecutarse en un portatil o en una Raspberry Pi con suficiente RAM para resolver consultas sobre tratamientos, epocas de siembra o rotacion de cultivos sin enviar datos a la nube.
-- Chatbot de atencion al agricultor en portales de cooperativas: el formato conversacional permite gestionar turnos encadenados con historial de la consulta, con un coste de inferencia muy bajo por sesion.
-- Clasificacion y resumen de informes de campo: con 1,5B parametros es viable procesar notas de campo, partes de incidencias o fichas de parcela y devolver resumenes estructurados en lotes, siempre que se valide antes la calidad en castellano.
-- Prototipado rapido de producto vertical agrario: sirve como punto de partida para validar una interfaz conversacional especializada antes de invertir en modelos mayores o en recuperacion aumentada sobre normativa fitosanitaria.
-- Filtrado y preetiquetado de consultas entrantes: el modelo puede clasificar la intencion de una consulta agricola y derivarla al sistema correspondiente, actuando como primera capa de un pipeline mas grande.
-- Educacion y divulgacion agraria: generacion de explicaciones breves y adaptadas a un publico no tecnico sobre practicas agricolas, con la advertencia de que cualquier recomendacion fitosanitaria debe ser validada por un tecnico.
-- Inferencia en el borde (edge) con presupuesto de memoria reducido: al caber en cuantizaciones de 4 bits en torno a 1 GB de pesos, permite despliegues en dispositivos con 4-8 GB de RAM total compartida.
+- Asistencia en visitas de campo de agentes de extensión: el modelo se ejecuta en el portátil que el agente ya posee, sin red, y responde en segundos a preguntas sobre síntomas observados en el cultivo. Los 4.096 tokens de contexto permiten mantener el hilo de una visita completa con varias parcelas.
+- Diagnóstico inicial de plagas y malas hierbas por descripción: el agricultor o el agente describe el daño y el modelo nombra el problema (por ejemplo, Striga en maíz) y explica por qué el fertilizante aplicado no revirtió el estancamiento.
+- Consulta sobre enfermedades del cultivo de yuca: identificación de mosaico y raya parda, con orientación sobre manejo y material de siembra.
+- Gestión poscosecha y aflatoxina: recomendaciones sobre almacenamiento de maíz para reducir el riesgo de contaminación por aflatoxina, un problema con implicaciones directas en salud y acceso a mercado.
+- Sanidad avícola en explotaciones familiares: orientación sobre enfermedad de Newcastle y derivación al veterinario local, sin prescripción de dosis.
+- Formación y divulgación: generación de explicaciones breves y prácticas (por ejemplo, rotación maíz-leguminosa y fertilidad del suelo) para talleres con agricultores sin formación formal, con control de longitud mediante instrucción.
+- Despliegue en cooperativas y oficinas de extensión con hardware antiguo: 11,9 tokens/s en un Intel Core i5-7200U de 2016 y 15,7 tokens/s en 4 vCPU, con un pico de memoria de 1,07 GB, lo que permite servir consultas en un equipo compartido sin inversión en GPU.
+- Integración en servicios de extensión con conectividad intermitente: el binario `llama-server` expone una API HTTP local en el puerto 8080 compatible con clientes de chat, utilizable en una red de oficina sin salida a internet.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye pipeline declarado, modelo base confirmado, ni ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, AGIEval u otras). Las unicas metricas objetivas disponibles son el recuento de parametros (1.543.714.304), el tamano del repositorio (5,9 GB), 34 descargas y 0 likes en el momento de la consulta.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de despliegue:
+
+| Métrica | Valor |
+|---|---|
+| Velocidad en 4 vCPU | 15,7 tokens/s |
+| Velocidad en Intel Core i5-7200U (2016) | 11,9 tokens/s |
+| Memoria pico | 1,07 GB |
+| Tamaño del fichero GGUF Q4_K_M | 940 MB |
+| Tasa de abstención ante plaga inexistente ("Letticea leaf miner") | 8/8 en AgriLLM frente a 0/8 en el modelo base |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, calculada a partir de los 1,54 mil millones de parametros y sin contar cache KV: unos 3,1 GB en FP16/BF16, unos 1,6 GB en cuantizacion de 8 bits y en torno a 1,0-1,2 GB en cuantizacion de 4 bits.
-- Sumar a esas cifras aproximadamente 0,5-1,5 GB adicionales de cache KV y buffers de activaciones, en funcion de la longitud de contexto efectiva y del tamano de lote.
-- GPU compatibles: cualquier GPU consumer con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y RTX 4090. Tambien es viable en CPU con 8-16 GB de RAM del sistema.
-- GPU de datacenter (A100, H100, L40S) sobredimensionadas para este tamano; solo tendrian sentido para servir muchos lotes concurrentes.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con endpoints de inferencia (la etiqueta `endpoints_compatible` asi lo indica). vLLM y TGI son viables si se dispone de los pesos en safetensors, aunque no estan confirmados como probados.
-- Latencia y throughput medidos: no disponible. No se han publicado cifras de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM: no requiere GPU. La inferencia de referencia se ejecuta con `-ngl 0` (todas las capas en CPU).
+- Memoria RAM: aproximadamente 1,07 GB de pico con la cuantización Q4_K_M.
+- CPU: cualquier x86-64 con llama.cpp. Medido en 4 vCPU (15,7 tokens/s) y en un Intel Core i5-7200U de 2016 (11,9 tokens/s).
+- GPU: no necesaria; no se documentan velocidades con aceleración por GPU. Cabe en cualquier GPU consumer con más de 2 GB de VRAM si se opta por descarga parcial o total de capas, aunque no es el escenario previsto por el autor.
+- Despliegue: llama.cpp (`llama-cli` para terminal, `llama-server` para API HTTP local en el puerto 8080). No se documentan integraciones con vLLM, TGI, Ollama ni otros servidores.
+- Parámetros de muestreo recomendados en la demo: `--temp 0.2 --top-p 0.9 --repeat-penalty 1.15 --repeat-last-n 256 -c 4096`. Los valores por defecto embebidos en el fichero son temperatura 0,7, top-p 0,8, top-k 20 y repeat penalty 1,1.
+- Entorno probado: Ubuntu 24.04 nativo y bajo WSL2 en Windows.
 
 ## Comparativa con modelos similares
 
-Los datos del modelo evaluado no estan disponibles, por lo que la comparacion se limita a situarlo frente a alternativas de tamano equivalente. Las cifras de los modelos de referencia corresponden a sus fichas oficiales publicas.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| agrillm-qwen2.5-1.5b-agri | 1,54B (confirmado) | no disponible | no disponible | no disponible | Hugging Face, 34 descargas, 0 likes |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens nativos (ampliable) | Apache 2.0 | 29 idiomas | Ampliamente disponible y muy adoptado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | 8 idiomas oficiales | Ampliamente disponible |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | predominantemente ingles | Ampliamente disponible |
+| AgriLLM (este modelo) | 1,54 B | 4.096 tokens (config. de referencia) | Agronomía para África subsahariana, offline | GPL-3.0 | GGUF Q4_K_M, CPU, llama.cpp |
+| Qwen2.5-1.5B-Instruct | 1,54 B | No disponible en la información proporcionada | Asistente generalista, multilingüe | No disponible en la información proporcionada | Múltiples formatos, GPU o CPU |
+| Qwen2.5-7B-Instruct | 7 B (aprox.) | No disponible en la información proporcionada | Asistente generalista de mayor capacidad | No disponible en la información proporcionada | Requiere más memoria; GPU recomendada |
 
-La ventaja diferencial del modelo de shemking residiria en la especializacion de dominio agricola y en el empaquetado GGUF listo para consumo. La desventaja principal es la opacidad: no se declara licencia, ni idiomas, ni modelo base, ni resultados, frente a alternativas con licencias permisivas y evaluaciones publicas.
+La comparación relevante es frente a su propio modelo base: AgriLLM sacrifica cobertura generalista y multilingüismo a cambio de precisión en dominio agrícola y de una política de abstención explícita, con un coste de inferencia que permite ejecución en CPU. Frente a modelos de 7 B o superiores, la ventaja no es de capacidad bruta sino de huella de memoria y de comportamiento seguro en el dominio. No se dispone de datos de benchmarks que permitan comparar calidad de forma cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin una licencia explicita no se puede asumir permiso de uso comercial. Cualquier despliegue en produccion requiere contactar con el autor o abstenerse.
-- Ausencia total de benchmarks: no hay evidencia publica de calidad, y con 0 likes y 34 descargas el modelo carece de validacion por parte de la comunidad.
-- Idiomas no declarados: no se puede confirmar el soporte de castellano ni la calidad del mismo. La busqueda web realizada no devolvio informacion relevante sobre el modelo, solo resultados no relacionados.
-- Modelo base sin confirmar: la atribucion a Qwen2.5 procede del nombre del repositorio; si el ajuste se hizo sobre otra base o con un tokenizador distinto, el comportamiento esperado cambia.
-- Riesgo de alucinacion elevado en recomendaciones de dominio: en ambito agricola, una alucinacion sobre dosis de fitosanitarios o plazos de seguridad puede tener consecuencias legales y de seguridad alimentaria. Requiere validacion humana obligatoria.
-- Contexto efectivo desconocido: aunque heredase 32.768 tokens de Qwen2.5, el ajuste fino puede haber degradado el rendimiento en ventanas largas.
-- Modelo pequeno con conocimiento factual limitado: 1,54 mil millones de parametros no bastan para retener conocimiento agronomico extenso; es previsible que necesite recuperacion aumentada (RAG) sobre documentacion tecnica.
-- Tamano de repo de 5,9 GB: conviene verificar que los archivos GGUF descargados corresponden a la cuantizacion deseada y que no hay pesos duplicados o incompletos.
+- Licencia GPL-3.0: cualquier distribución de software que incorpore el modelo o un trabajo derivado debe publicarse bajo la misma licencia. Esto excluye de facto su integración en productos propietarios o en servicios SaaS de código cerrado sin liberar el código.
+- Idioma único: solo inglés. Un modelo pensado para pequeños agricultores africanos que no cubre swahili, francés, hausa, amhárico ni otras lenguas locales limita gravemente su utilidad real en el segmento objetivo.
+- Dominio muy acotado: el corpus de ajuste es de 6.703 filas. Fuera de los cultivos y plagas cubiertos, el comportamiento no está caracterizado y la calidad puede degradarse hacia la del modelo base.
+- Riesgo de alucinación agronómica: aunque se documenta una mejora clara en la abstención ante plagas inexistentes, no hay evaluación sistemática publicada de tasas de alucinación en el dominio. Un consejo agronómico incorrecto puede traducirse en pérdida de cosecha.
+- Riesgo de seguridad en dosis: la política de no prescribir dosis depende de la obediencia al system prompt de la plantilla de chat. Si se invoca el modelo sin dicha plantilla o con un system prompt alternativo, esa salvaguarda puede desaparecer.
+- Contexto limitado a 4.096 tokens en la configuración de referencia, insuficiente para documentos técnicos extensos o historiales de conversación largos.
+- Sesgos: no se documenta ninguna evaluación de sesgos. El corpus está centrado en África subsahariana y en un conjunto concreto de cultivos, lo que puede producir recomendaciones poco ajustadas a otras regiones agroclimáticas.
+- Modelo de 1,54 B parámetros: capacidad de razonamiento limitada. No es adecuado para cálculos agronómicos complejos, planificación multi-paso ni razonamiento sobre tablas de datos.
+- Repositorio de 27,4 GB por la inclusión de pesos en precisión completa y múltiples checkpoints; conviene descargar solo el GGUF necesario.
+- Trazabilidad: el autor recomienda fijar la descarga a un commit concreto y verificar el SHA256 (`ad7e079f7cfd307edc7629a35c906cb55ed41218ba14a93e48120d81952d3e0f` para el Q4_K_M actual). No se documenta auditoría externa del dataset ni del proceso de entrenamiento.
+- Advertencia de producción: el modelo no sustituye la diagnosis de un agrónomo o veterinario; su uso debe presentarse como orientación inicial con derivación a profesionales locales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shemking/agrillm-qwen2.5-1.5b-agri
-- No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.
+- Demo en vídeo (2 minutos): https://youtu.be/oGjm1zTiEGA
+- Código, informe y pruebas de entrenamiento: https://github.com/shem2019/adtc-2026-agrillm
+- Informe técnico completo: https://github.com/shem2019/adtc-2026-agrillm/blob/main/REPORT_DETAILS.md
+- Instrucciones de instalación y prueba: https://github.com/shem2019/adtc-2026-agrillm#try-it-yourself
+- Dataset de entrenamiento: https://huggingface.co/datasets/AI71ai/agrillm-train-146k
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

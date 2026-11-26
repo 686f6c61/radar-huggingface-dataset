@@ -2,105 +2,102 @@
 
 ## Resumen
 
-MediaPipe BlazeFace Full-Range es un detector facial de una sola etapa (single-shot) desarrollado originalmente por Google para la plataforma MediaPipe y empaquetado por la comunidad litert-community para su uso con LiteRT (anteriormente TensorFlow Lite). El modelo resuelve la deteccion de rostros en imagenes de camaras traseras de smartphone, donde las caras aparecen pequenas o lejanas (hasta aproximadamente 5 metros), un escenario que los detectores de corto alcance no cubren bien. Se distribuye como un unico fichero `blaze_face_full_range.tflite` de 1,08 MB con pesos en FP16.
+MediaPipe FaceDetector BlazeFace Full-Range es un detector facial de una sola etapa (single-shot) empaquetado como modelo LiteRT/TFLite para la tarea `FaceDetector` de MediaPipe. Lo publica la organizacion `litert-community` en Hugging Face, aunque el modelo subyacente es de Google (MediaPipe) y se distribuye bajo licencia Apache 2.0. Resuelve la deteccion de rostros en imagenes de camara de smartphone de rango completo (hasta aproximadamente 5 metros), incluyendo rostros pequenos o lejanos tipicos de camaras traseras.
 
-Arquitectonicamente es una red convolucional de tipo CenterNet con un encoder personalizado, disenada para predecir cajas delimitadoras, seis puntos clave faciales aproximados y una puntuacion de confianza por cada rostro. A diferencia de los modelos generativos, no tiene parametros en el sentido habitual de un transformer ni una ventana de contexto textual: es un modelo puramente visual, de inferencia en dispositivo (on-device), pensado para movil, web y sistemas embebidos.
+La arquitectura es una CNN tipo CenterNet con encoder personalizado (BlazeFace), con pesos en FP16 y un tamano de fichero de 1,08 MB. La entrada es un tensor `[1, 192, 192, 3]` float32 RGB normalizado a `[-1.0, 1.0]`; la salida son predicciones crudas de anclas que la tarea MediaPipe decodifica y filtra con NMS para devolver cajas, 6 keypoints faciales y una puntuacion de confianza.
 
-Su relevancia actual radica en que ofrece deteccion facial de rango completo con un coste computacional minimo (del orden de milisegundos por fotograma en GPU movil) y una licencia Apache 2.0 permisiva, lo que lo hace apto para integrarse en pipelines de vision por computador en produccion sin dependencias de servidor.
+Es relevante porque ofrece deteccion facial on-device (Android, iOS, web, Python, Flutter) con un coste computacional minimo y sin dependencia de servidor, lo que encaja en pipelines de vision en tiempo real y en aplicaciones con requisitos de privacidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CNN tipo CenterNet con encoder personalizado (BlazeFace full-range) |
+| Arquitectura | CNN tipo CenterNet con encoder personalizado (BlazeFace) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, entrada fija de 192x192x3) |
-| Tipos de cuantizacion | pesos en float16; no se documentan otras variantes en el repo |
-| Idiomas soportados | no aplica (modelo de vision, independiente del idioma) |
+| Longitud de contexto | no aplica (modelo de vision) |
+| Tipos de cuantizacion | pesos en float16 (FP16); no se documentan otras variantes |
+| Idiomas soportados | no aplica (modelo de vision, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`.tflite`), con metadatos TFLITE_METADATA embebidos |
+| Formato de pesos | TFLite (`blaze_face_full_range.tflite`) |
+| Entrada | `[1, 192, 192, 3]` float32 RGB, normalizacion mean=127.5, std=127.5 |
+| Salidas | `reshaped_regressor_face_4` `[1, 2304, 16]` y `reshaped_classifier_face_4` `[1, 2304, 1]` |
+| Tamano del fichero | 1,08 MB (1.083.786 bytes) |
+| SHA-256 | `3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b` |
+| Pipeline | object-detection |
+| Libreria | litert |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura convolucional de una sola etapa inspirada en CenterNet, con un encoder disenado especificamente para detectar rostros de menor tamano o mas lejanos que los que captura la variante de corto alcance. La entrada es un tensor `[1, 192, 192, 3]` en `float32` RGB normalizado con `mean=[127.5]` y `std=[127.5]`, lo que produce un rango de `[-1.0, 1.0]`. La red genera dos salidas crudas: `reshaped_regressor_face_4` de forma `[1, 2304, 16]` (cajas y puntos clave sin decodificar) y `reshaped_classifier_face_4` de forma `[1, 2304, 1]` (puntuaciones por ancla). La tarea `FaceDetector` de MediaPipe se encarga de decodificar las predicciones de anclas y aplicar supresion de no maximos (NMS) para devolver las detecciones finales.
+BlazeFace Full-Range emplea una arquitectura convolucional tipo CenterNet con un encoder disenado especificamente para detectar rostros pequenos o lejanos, en contraste con las variantes de corto alcance pensadas para selfies. El modelo produce predicciones sobre 2304 anclas: un regresor que estima cajas y keypoints (16 valores por ancla) y un clasificador que asigna una puntuacion a cada ancla. La tarea `FaceDetector` de MediaPipe se encarga de decodificar esas predicciones y aplicar Non-Maximum Suppression.
 
-No se dispone de informacion sobre el volumen de tokens, la composicion del dataset de entrenamiento ni sobre si se aplicaron tecnicas de RLHF o DPO; estos datos no estan disponibles en la informacion proporcionada. El modelo se distribuye con pesos en FP16, lo que reduce el tamano del fichero a 1,08 MB (1.083.786 bytes) y facilita su despliegue en dispositivos con recursos limitados. La model card referencia el paper arXiv:1907.05047 como origen de la familia BlazeFace.
+No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF/DPO (no aplicables a un detector de objetos). Tampoco se especifica el numero de parametros del modelo. La innovacion tecnica destacable es el diseno orientado a rango completo (hasta aproximadamente 5 metros) y el empaquetado como modelo LiteRT/TFLite con pesos FP16 para inferencia on-device en movil y web, con metadatos TFLITE embebidos (nombre `Full Range Face Detection`).
 
 ## Capacidades
 
-- Deteccion de rostros en imagenes de rango completo, incluyendo caras pequenas o lejanas capturadas por camaras traseras de smartphone (hasta aproximadamente 5 metros).
-- Prediccion de caja delimitadora alineada a los ejes (`origin_x`, `origin_y`, `width`, `height`) en pixeles.
-- Prediccion de seis puntos clave faciales 2D aproximados, normalizados a `[0.0, 1.0]`: `left_eye`, `right_eye`, `nose_tip`, `mouth`, `left_eye_tragion`, `right_eye_tragion` (desde la perspectiva del observador).
-- Puntuacion de confianza por deteccion en el rango `[0.0, 1.0]`.
-- Ejecucion en dispositivo (on-device) en Android, iOS, web, Python y Flutter mediante la tarea `FaceDetector` de MediaPipe y LiteRT.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo de vision especializado y no generativo.
+- Deteccion de rostros en imagenes con un unico forward pass (single-shot).
+- Devolucion de caja delimitadora alineada con los ejes en pixeles (`origin_x`, `origin_y`, `width`, `height`).
+- Prediccion de 6 keypoints faciales aproximados normalizados a `[0.0, 1.0]`: `left_eye`, `right_eye`, `nose_tip`, `mouth`, `left_eye_tragion`, `right_eye_tragion` (desde la perspectiva del observador).
+- Puntuacion de confianza de deteccion en `[0.0, 1.0]`.
+- Umbral de confianza minima configurable (`min_detection_confidence`).
+- Modos de ejecucion de MediaPipe (`IMAGE`, y los que exponga la tarea `VisionRunningMode`).
+- Ejecucion on-device en Android, iOS, web (JavaScript/TypeScript), Python y Flutter.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente de vision.
 
 ## Casos de uso
 
-- **Desbloqueo facial y autenticacion en movil**: el modelo detecta el rostro y devuelve caja y puntos clave en milisegundos, lo que permite alimentar una etapa posterior de reconocimiento facial o verificacion de vivacidad dentro de la propia aplicacion, sin enviar imagenes al servidor.
-- **Fotografia computacional y autoenfoque**: en aplicaciones de camara, la deteccion de rostros lejanos (hasta unos 5 metros) permite al pipeline de captura ajustar el enfoque, la exposicion o el encuadre antes de disparar, algo que la variante de corto alcance no cubre bien.
-- **Videoconferencia y efectos en tiempo real**: con latencias del orden de milisegundos en GPU movil, el modelo puede rastrear rostros fotograma a fotograma para aplicar desenfoque de fondo, filtros o encuadre automatico en llamadas de video.
-- **Analitica de aforo y presencia**: en aplicaciones de conteo de personas en espacios controlados, el detector identifica y localiza rostros en imagenes de camara trasera, permitiendo estimar ocupacion sin infraestructura de servidor.
-- **Preprocesado para reconocimiento facial**: los seis puntos clave y la caja delimitadora sirven para alinear y recortar el rostro antes de pasarlo a un modelo de embeddings faciales, mejorando la precision del reconocimiento aguas abajo.
-- **Accesibilidad y control por gestos faciales**: los puntos clave (ojos, nariz, boca) permiten construir interfaces que respondan a movimientos faciales basicos en aplicaciones de accesibilidad ejecutadas en el dispositivo.
-- **Procesamiento por lotes en Python**: mediante la API de MediaPipe Tasks se puede integrar en scripts de Python para etiquetar o filtrar grandes colecciones de imagenes en local, sin GPU dedicada.
+- Desbloqueo y autenticacion facial en movil: el modelo detecta el rostro y sus keypoints para alinear y recortar la region antes de pasarla a un verificador biometrico, con inferencia local sin enviar imagenes a servidores.
+- Fotografia computacional en camara trasera: deteccion de rostros a hasta aproximadamente 5 metros para enfoque automatico, exposicion o encuadre en apps de camara Android/iOS.
+- Preprocesado en pipelines de vision: localizar rostros antes de tareas posteriores (reconocimiento de emociones, estimacion de pose, seguimiento) gracias a las cajas y keypoints devueltos.
+- Moderacion y analitica de contenido en el dispositivo: contar o localizar rostros en imagenes capturadas por el usuario sin subirlas a la nube, reduciendo riesgos de privacidad.
+- Aplicaciones web en tiempo real: integracion via JavaScript/TypeScript en el navegador (demo web de MediaPipe) para deteccion facial en streaming de webcam.
+- Apps Flutter multiplataforma: deteccion facial en Android, iOS y web con un unico modelo de 1,08 MB, adecuado para apps con presupuesto de almacenamiento y memoria muy ajustado.
+- Investigacion y prototipado rapido: uso en notebooks Python (Colab) para experimentar con deteccion facial sin infraestructura GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precision (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que se trata de un modelo de vision y no de un modelo de lenguaje. La model card incluye unicamente datos de latencia:
-
-| Plataforma | Modo | Rendimiento reportado |
-|---|---|---|
-| Pixel 3 | GPU | ≈90 FPS |
-| Pixel 4 | GPU | ≈165 FPS |
-| Pixel 3 | CPU mononucleo con XNNPACK | ≈50 FPS |
-| Pixel 4 | CPU con XNNPACK | ≈145 FPS |
-
-La documentacion de MediaPipe Face Detector solo reporta latencia para la variante de corto alcance (`BlazeFace short-range`: 2,94 ms en CPU y 7,41 ms en GPU en Pixel 6); no se ofrecen cifras equivalentes para esta variante de rango completo en ese dispositivo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: al tratarse de un modelo de 1,08 MB en FP16, la huella de memoria es minima; cabe holgadamente en cualquier GPU consumer e incluso en memoria compartida de dispositivos moviles.
-- **GPU recomendadas**: no requiere GPU dedicada. Funciona en GPU integradas de movil (Pixel 3, Pixel 4 y superiores) y en cualquier GPU de escritorio (RTX 4090, A100, H100) sin aprovechar su capacidad, ya que el modelo es muy pequeno.
-- **Cabe en GPU consumer**: si, en cualquier GPU consumer; tambien en CPU y en aceleradores moviles.
-- **Opciones de despliegue**: LiteRT (TFLite) con la tarea `FaceDetector` de MediaPipe en Python, Android (Kotlin/Java), iOS (Swift), web (JavaScript) y Flutter (Dart); el runtime incluye soporte para XNNPACK en CPU y delegados de GPU.
-- **Latencia y throughput estimados**: segun la model card, aproximadamente 90 FPS en GPU de Pixel 3, 165 FPS en GPU de Pixel 4, 50 FPS en CPU mononucleo de Pixel 3 con XNNPACK y 145 FPS en CPU de Pixel 4 con XNNPACK.
+- VRAM estimada para inferencia: el modelo pesa 1,08 MB en FP16 y opera sobre entradas de 192x192x3; el consumo de memoria es minimo y no requiere GPU dedicada.
+- GPU recomendadas: no aplica; el modelo esta disenado para CPU y aceleradores moviles (NPU/DSP via LiteRT, GPU movil opcional).
+- Cabe en cualquier GPU consumer e incluso en dispositivos moviles de gama baja; no se documentan requisitos especificos.
+- Opciones de despliegue: MediaPipe Tasks (Python, Android, iOS, web, Flutter) sobre LiteRT/TFLite; el fichero `.tflite` puede cargarse directamente con el runtime LiteRT.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
+| Modelo | Parametros | Entrada | Contexto/alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MediaPipe BlazeFace Full-Range (este modelo) | CNN single-shot tipo CenterNet | 192x192x3 | Caja, 6 keypoints, score | Apache 2.0 | Hugging Face, LiteRT/MediaPipe |
-| MediaPipe BlazeFace Short-Range | CNN single-shot | no disponible en la informacion | Caja, keypoints, score | Apache 2.0 | MediaPipe |
-| Otros detectores faciales de la familia MediaPipe | CNN | no disponible | Caja, keypoints | Apache 2.0 | MediaPipe |
+| MediaPipe BlazeFace Full-Range (este) | no disponible (1,08 MB FP16) | 192x192x3 | rango completo (~5 m) | Apache 2.0 | Hugging Face, LiteRT/MediaPipe |
+| MediaPipe BlazeFace short-range | no disponible | no disponible | rostros cercanos (selfie) | Apache 2.0 | MediaPipe |
+| Otras alternativas (p. ej. detectores faciales genericos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de precision comparativa entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a aspectos de arquitectura, licencia y disponibilidad. La diferencia principal documentada es el rango de distancia: la variante full-range esta optimizada para caras lejanas (hasta aproximadamente 5 metros), mientras que la short-range se orienta a caras cercanas.
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones detalladas de las alternativas como para establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- **Alcance de distancia**: el modelo esta optimizado para caras dentro de aproximadamente 5 metros; su comportamiento fuera de ese rango no esta documentado.
-- **Puntos clave aproximados**: los seis keypoints son estimaciones 2D normalizadas, no landmarks densos ni precisos, por lo que no son adecuados para tareas que requieran malla facial detallada.
-- **Sesgos y equidad**: la model card original incluye una seccion de "Fairness" que no se ha podido consultar en detalle; no se dispone de datos sobre sesgos por demografia, iluminacion o etnia en la informacion proporcionada.
-- **Riesgo de falsos positivos y negativos**: como todo detector single-shot, puede producir detecciones espurias en escenas con patrones similares a rostros o fallar en condiciones de oclusion, angulos extremos o baja iluminacion; no se documentan metricas de precision en la informacion disponible.
-- **Dependencia del runtime**: el modelo esta empaquetado para la tarea `FaceDetector` de MediaPipe y LiteRT; su uso fuera de ese ecosistema requiere implementar manualmente la decodificacion de anclas y el NMS.
-- **Licencia**: Apache 2.0 permite uso comercial y modificacion, pero conviene revisar las condiciones de los componentes upstream de Google y del paper referenciado.
-- **Sin capacidades generativas**: no genera texto, no razona y no soporta tool calling; no debe evaluarse con los criterios habituales de modelos de lenguaje.
+- Modelo de vision sin capacidades de lenguaje, razonamiento ni tool calling; no debe evaluarse como un LLM.
+- Los keypoints son aproximados (6 puntos) y no sustituyen a un modelo de malla facial completa.
+- El rango de diseno es hasta aproximadamente 5 metros; el rendimiento fuera de ese rango o con rostros muy pequenos no esta documentado.
+- No se documentan sesgos demograficos, de iluminacion ni de oclusion; conviene validar en el dominio de despliegue.
+- Riesgo de falsos positivos y negativos segun el umbral `min_detection_confidence`; requiere calibracion.
+- No se especifican limitaciones de idioma (no aplica) ni de contexto.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos de MediaPipe/LiteRT y de los datasets de entrenamiento originales (no documentados aqui).
+- No se detallan los datos de entrenamiento, lo que limita la evaluacion de riesgos de sesgo y generalizacion.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/litert-community/MediaPipe-FaceDetector-BlazeFace-Full-Range)
-- [Fichero blaze_face_full_range.tflite](https://huggingface.co/litert-community/MediaPipe-FaceDetector-BlazeFace-Full-Range/blob/main/blaze_face_full_range.tflite)
-- [Documentacion de MediaPipe Face Detector](https://developers.google.com/edge/mediapipe/solutions/vision/face_detector)
-- [LiteRT](https://developers.google.com/edge/litert)
-- [Demo web](https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/face_detector)
-- [Guia de instalacion en Python](https://developers.google.com/edge/mediapipe/solutions/setup_python)
-- [Guia de instalacion en web/JavaScript](https://developers.google.com/edge/mediapipe/solutions/setup_web)
-- [Guia de instalacion en Android](https://developers.google.com/edge/mediapipe/solutions/setup_android)
-- [Guia de instalacion en iOS](https://developers.google.com/edge/mediapipe/solutions/setup_ios)
-- [Guia de instalacion en Flutter](https://developers.google.com/edge/mediapipe/solutions/setup_flutter)
-- [Ejemplo Android](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_detector/android)
-- [Ejemplo iOS](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_detector/ios)
-- [Notebook de Python en Colab](https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/face_detector/python/face_detector.ipynb)
-- [Ejemplo Flutter](https://github.com/google/flutter-mediapipe/tree/main/samples/vision/face_detector)
-- [Paper BlazeFace (arXiv:1907.05047)](https://arxiv.org/abs/1907.05047)
+- Hugging Face: https://huggingface.co/litert-community/MediaPipe-FaceDetector-BlazeFace-Full-Range
+- Fichero del modelo: https://huggingface.co/litert-community/MediaPipe-FaceDetector-BlazeFace-Full-Range/blob/main/blaze_face_full_range.tflite
+- Documentacion MediaPipe Face Detector: https://developers.google.com/edge/mediapipe/solutions/vision/face_detector
+- LiteRT: https://developers.google.com/edge/litert
+- Paper BlazeFace (arXiv:1907.05047): https://arxiv.org/abs/1907.05047
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_detector/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/face_detector/ios
+- Ejemplo Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/face_detector/python/face_detector.ipynb
+- Ejemplo Web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/face-detector.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/face_detector
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/face_detector
+- Guias de setup: Python https://developers.google.com/edge/mediapipe/solutions/setup_python · Web https://developers.google.com/edge/mediapipe/solutions/setup_web · Android https://developers.google.com/edge/mediapipe/solutions/setup_android · iOS https://developers.google.com/edge/mediapipe/solutions/setup_ios · Flutter https://developers.google.com/edge/mediapipe/solutions/setup_flutter

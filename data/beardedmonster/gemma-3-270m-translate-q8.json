@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "BeardedMonster/gemma-3-270m-translate-Q8",
+  "slug": "beardedmonster-gemma-3-270m-translate-q8",
+  "author": "BeardedMonster",
+  "url": "https://huggingface.co/BeardedMonster/gemma-3-270m-translate-Q8",
+  "created_at": "2026-11-25T23:19:15.000Z",
+  "updated_at": "2026-11-25T23:19:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma3_text",
+    "translation",
+    "african-languages",
+    "q8_0",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 333133015,
+  "storage_human": "333 MB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

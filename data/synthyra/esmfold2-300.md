@@ -2,109 +2,123 @@
 
 ## Resumen
 
-`Synthyra/ESMFold2-300` es un checkpoint de plegado y representacion de proteinas publicado por Synthyra que empaqueta el modelo `biohub/ESMFold2-Experimental-Fast-base300M-step1500k` junto con el runtime FastPLMs para Hugging Face Transformers. El artefacto expone una unica interfaz de carga (`AutoModel` con `trust_remote_code=True`) que cubre extraccion de caracteristicas, plegado de estructuras y cabezas de clasificacion de secuencia y de residuo. No es un modelo de lenguaje natural: su entrada son secuencias de aminoacidos en crudo o especificaciones tipadas de complejos moleculares (multicadena y multimolecula).
+ESMFold2-300 es un modelo de prediccion de estructura de proteinas publicado por Synthyra bajo el identificador `Synthyra/ESMFold2-300`. Empaqueta el checkpoint `biohub/ESMFold2-Experimental-Fast-base300M-step1500k` junto con el runtime FastPLMs y una cabeza de confianza nativa adaptada por Synthyra para Hugging Face Transformers. El modelo acepta secuencias de aminoacidos en bruto o especificaciones tipadas de complejos moleculares y devuelve estructuras en formato mmCIF, ademas de puntuaciones pLDDT, PAE, pTM e ipTM.
 
-El checkpoint declara 171.123.237 parametros reales en safetensors, aunque los sufijos "300" y "600" de la familia hacen referencia a la escala del backbone, no al total de parametros del modelo. La arquitectura combina un backbone de lenguaje de proteinas ESM++ small congelado (`Synthyra/ESMplusplus_small`) con un tronco de plegado de 24 bloques y un modulo de difusion estructural con muestreador de 15 pasos y tres bucles de plegado. El backbone declarado en config (step 1.500.000) y los pesos ESM++ fijados son identicos tensor a tensor en BF16 tras la conversion de layout.
+Con aproximadamente 178,9 millones de parametros efectivos (repo de 1,4 GB), se posiciona como una variante ligera orientada a inferencia rapida dentro de la familia ESMFold2. Su interes actual radica en que permite plegar proteinas y complejos multiméricos en hardware modesto, con una cabeza de confianza entrenada especificamente para calibrar las predicciones, algo critico cuando se usa la estructura predicha como entrada de pipelines downstream.
 
-Su relevancia actual radica en dos decisiones de diseno poco habituales: el plegado se realiza sin condicionamiento por MSA (el checkpoint rechaza `ProteinInput.msa` y cualquier caracteristica derivada de alineamientos multiples) y la cabeza de confianza esta deshabilitada, por lo que no produce pLDDT, pTM, iPTM ni PAE. Esto lo situa como una pieza orientada a extraccion de representaciones y plegado rapido de secuencia unica, no como sustituto directo de predictores de estructura con estimacion de confianza.
+La licencia MIT y la integracion con `transformers` mediante `trust_remote_code=True` lo hacen especialmente atractivo para integracion en flujos de trabajo de biologia computacional sin fricciones legales ni de infraestructura. No obstante, el modelo esta claramente orientado a extraccion de caracteristicas y plegado, no a generacion de texto ni tareas de lenguaje natural.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ESMFold2 sobre runtime FastPLMs: backbone pLM ESM++ small congelado + tronco de plegado de 24 bloques + modulo de difusion estructural |
-| Parametros totales | 171.123.237 |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | ESMFold2 (protein language model con modulo de plegado por difusion) |
+| Parametros totales | 178.891.050 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; solo se distribuyen pesos en safetensors. Las peticiones FP8 fallan. El tronco de plegado permanece en FP32 con autocast BF16 en CUDA y el backbone en BF16 |
-| Idiomas soportados | no disponible; el modelo no procesa lenguaje natural, su entrada son secuencias de aminoacidos y especificaciones de complejos moleculares |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, fp32/bf16 en carga) |
+| Idiomas soportados | no disponible (modelo de proteinas, no de lenguaje natural) |
 | Licencia | MIT |
-| Formato de pesos | safetensors con `custom_code` (requiere `trust_remote_code=True`) |
-| Pipeline declarado | feature-extraction |
-| Tarea principal | plegado de proteinas y extraccion de representaciones por residuo |
-| Backbone | `Synthyra/ESMplusplus_small` (congelado) |
-| Checkpoint de origen | `biohub/ESMFold2-Experimental-Fast-base300M-step1500k` (step 1.500.000) |
-| Muestreador de difusion | 15 pasos, 3 bucles de plegado (valores por defecto del checkpoint) |
-| Proyeccion aprendida | `H: (b, l, 31, 960) -> Z: (b, l, 256)` |
-| Backends de atencion | `eager`, `sdpa`, `flex_attention` |
-| Requisitos de entorno | Python 3.11-3.14, PyTorch 2.13, Transformers 5.13 |
-| Tamano del repositorio | 0,7 GB |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | safetensors |
+| Pipeline | feature-extraction |
+| Libreria | transformers (con `trust_remote_code=True`) |
+| Requisitos | Python 3.12-3.14, PyTorch 2.14, Transformers 5.17 |
+| Tamano del repo | 1,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se organiza en tres piezas. La primera es un backbone de lenguaje de proteinas ESM++ small, cargado desde `Synthyra/ESMplusplus_small` y mantenido congelado; segun la model card, sus pesos son exactamente iguales al backbone declarado en la configuracion del checkpoint base tras la conversion de layout, y opera en BF16. La segunda es un tronco de plegado de 24 bloques que consume las representaciones del backbone. La tercera es un modulo de difusion que genera coordenadas atomicas mediante un muestreador de 15 pasos y tres bucles de plegado, ambos valores por defecto del checkpoint. Los parametros de plegado se mantienen en FP32 con autocast BF16 sobre CUDA.
+ESMFold2-300 combina un backbone de protein language model (heredero de la linea ESM) con un modulo de plegado basado en difusion. El proceso de plegado utiliza multiples pasos de difusion (15 en la configuracion experimental del quick start) y bucles de reciclado (3 en la evaluacion reportada). El modelo acepta secuencias individuales o complejos multiméricos especificados mediante objetos tipados (`ProteinInput`), lo que permite plegar cadenas multiples de forma nativa.
 
-Para las tareas de clasificacion, el modelo reutiliza el backbone preentrenado y anade una cabeza `classifier` nueva y sin entrenar. El trunk de plegado se omite en esa ruta: la clasificacion usa la mezcla de estados pLM aprendida y su proyeccion, seguidas de una sonda transformer entrenable. La proyeccion aprendida transforma tensores `(b, l, 31, 960)` en representaciones `(b, l, 256)`, de modo que `embed_dataset` devuelve un vector de 256 dimensiones por residuo y secuencia.
-
-En cuanto a entrenamiento, la informacion disponible no detalla el numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO; esos datos no estan publicados en la fuente consultada. Si se documenta explicitamente que el checkpoint se entreno sin condicionamiento por MSA: rechaza `ProteinInput.msa` y cualquier caracteristica derivada de alineamientos. La arquitectura experimental no expone folding TTT (test-time training de plegado). La cabeza de confianza esta deshabilitada.
+El checkpoint base proviene de `biohub/ESMFold2-Experimental-Fast-base300M-step1500k`, mientras que la cabeza de confianza fue entrenada por Synthyra sobre el dataset [AtlasFold-Data](https://huggingface.co/datasets/lhallee/AtlasFold-Data) durante 780 actualizaciones (18,1 horas), manteniendo congelados el backbone y el modelo de plegado. El entrenamiento muestreo de 475.969 estructuras elegibles, incluyendo monomeros, dimeros y complejos mayores. Se uso el checkpoint final de la media movil exponencial (EMA) para la evaluacion. La cabeza de confianza devuelve pLDDT, PAE, pTM e ipTM, y su calculo es opcional.
 
 ## Capacidades
 
-- Plegado de proteinas a partir de secuencia unica: `infer_protein` acepta una secuencia de aminoacidos, una semilla y un numero de muestras de difusion, y devuelve coordenadas atomicas (`sample_atom_coords`).
-- Entrada de complejos tipados: soporta entradas multicadena y multimolecula sin condicionamiento por MSA.
-- Extraccion de caracteristicas: representaciones por residuo de 256 dimensiones mediante `embed_dataset`, utiles como embeddings de proteinas.
-- Clasificacion de secuencia: `AutoModelForSequenceClassification` con logits de forma `(b,)`; la cabeza es nueva y hay que ajustarla antes de interpretar los logits.
-- Clasificacion de residuo: `AutoModelForTokenClassification` con logits de forma `(b, l)` usando `-100` fuera de las posiciones biologicas.
-- Ajuste fino eficiente: compatible con PEFT/LoRA (`target_modules="all-linear"`, `modules_to_save=["classifier"]`) y con el contrato `PreTrainedModel` de Transformers.
-- Seleccion de backend de atencion: `eager`, `sdpa` y `flex_attention`; si se solicita un backend no disponible, se lanza un error en lugar de cambiar de implementacion silenciosamente.
-- Capacidades ausentes: no hay soporte de tool calling, function calling, agentes, razonamiento multi-paso sobre lenguaje natural, vision, audio ni modo de pensamiento. No es un modelo generativo de texto.
+- Prediccion de estructura tridimensional de proteinas a partir de secuencias de aminoacidos.
+- Plegado de complejos multiméricos (dimeros y complejos mayores) mediante especificaciones tipadas de entrada.
+- Generacion de puntuaciones de confianza calibradas: pLDDT, PAE, pTM e ipTM.
+- Extraccion de caracteristicas (feature extraction) del backbone proteico.
+- Clases de clasificacion de secuencia y de token disponibles, aunque sus cabezas estan inicializadas de novo y requieren fine-tuning antes de interpretar sus logits.
+- Soporte de chunking configurable (`set_chunk_size`) para gestionar secuencias largas.
+- Control de semilla para reproducibilidad en el muestreo de difusion.
+- Salida en formato mmCIF lista para su uso en pipelines estructurales.
+- No soporta tool calling, agentes ni capacidades multilingues de lenguaje natural.
 
 ## Casos de uso
 
-- Extraccion de embeddings de proteinas a escala: usar `embed_dataset` para obtener un vector de 256 dimensiones por residuo y alimentar busqueda por similitud, agrupamiento o clasificacion no supervisada de familias proteicas sin necesidad de alineamientos.
-- Plegado de secuencia unica en entornos sin MSA: en genomas poco anotados o metagenomas donde no hay alineamientos disponibles, `infer_protein` permite obtener coordenadas atomicas directamente desde la secuencia, evitando la busqueda en bases de datos que exigen los predictores dependientes de MSA.
-- Anotacion de residuos funcionales: tras ajustar la cabeza de `AutoModelForTokenClassification`, se puede predecir por residuo sitios activos, regiones de union o propension a desorden, aprovechando que la mascara `-100` delimita las posiciones biologicas.
-- Clasificacion de secuencias a nivel de proteina: con `AutoModelForSequenceClassification` ajustado, clasificar localizacion subcelular, familia enzimatica o termoestabilidad, reutilizando el backbone congelado y entrenando solo la cabeza.
-- Ajuste fino con pocos datos de laboratorio: aplicar LoRA sobre modulos lineales con `r=8`, `lora_alpha=16` y guardar el clasificador junto al adaptador, lo que permite adaptar el modelo a un ensayo concreto con un coste de computo reducido.
-- Priorizacion en pipelines de diseno de proteinas: generar estructuras candidatas de variantes y usarlas como filtro geometrico previo a la sintesis, dado que el modelo no depende de MSA y puede evaluar secuencias disenadas que no existen en bases de datos.
-- Analisis de variantes y mutaciones: comparar las representaciones por residuo de una secuencia wild-type y sus mutantes para localizar que posiciones alteran mas el espacio latente, como senal de impacto estructural potencial.
-- Precalculo de representaciones en procesos batch: dado que el modelo es pequeno (171 millones de parametros) y admite `sdpa` o `flex_attention`, se puede precalcular una base de embeddings propia en una sola GPU y reutilizarla en busquedas posteriores.
+- Prediccion de estructura de proteinas en pipelines de biologia computacional: el modelo pliega secuencias en bruto y escribe mmCIF, lo que permite integrarlo en flujos automatizados de analisis estructural sin intervencion manual.
+- Plegado de complejos proteina-proteina: la entrada tipada con multiples `ProteinInput` permite modelar dimeros y complejos mayores, util para estudiar interacciones moleculares.
+- Filtrado por confianza en cribados masivos: las puntuaciones pLDDT, pTM e ipTM permiten descartar predicciones poco fiables antes de analisis costosos (docking, dinamica molecular).
+- Anotacion de desorden intrinseco: la AUROC de 0,856 para discriminar residuos no resueltos frente a resueltos permite usar el modelo como proxy de regiones desordenadas.
+- Extraccion de embeddings proteicos para modelos downstream: el backbone puede usarse como extractor de caracteristicas en tareas de clasificacion o regresion, con fine-tuning de las cabezas.
+- Generacion de estructuras para diseno de farmacos: las estructuras predichas con confianza calibrada sirven como entrada para docking virtual y cribado de compuestos.
+- Validacion de hipotesis en investigacion academica: el bajo coste computacional (178,9 M de parametros) permite ejecutar experimentos exploratorios en GPU de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados reportados por el autor sobre 512 objetivos del split de test, con 5 predicciones por objetivo, 3 bucles de reciclado y 50 pasos de difusion. Los intervalos son del 95% por bootstrap sobre objetivos.
+
+| Metrica | ESMFold2-300 | Intervalo 95% |
+|---|---:|---|
+| pLDDT vs lDDT all-atom (Spearman) | 0,88003 | 0,85090 - 0,90258 |
+| pTM vs TM-score (Spearman) | 0,84004 | 0,80621 - 0,86693 |
+| ipTM vs DockQ (Spearman) | 0,81403 | 0,76544 - 0,85119 |
+| MAE de pLDDT atomico | 0,07867 | 0,07617 - 0,08124 |
+| Error de calibracion (10 bins) | 0,00426 | 0,00241 - 0,00831 |
+| Entropia cruzada pLDDT | 2,72722 | 2,68388 - 2,77285 |
+| Entropia cruzada PAE | 2,81677 | 2,76512 - 2,86575 |
+| Precision de seleccion lDDT intra-objetivo | 0,58505 | 0,50357 - 0,66201 |
+| Precision de seleccion ipTM/DockQ intra-objetivo | 0,57173 | 0,50567 - 0,63475 |
+| Regret de seleccion top-1 | 0,02312 | 0,01814 - 0,02899 |
+| Regret de eleccion aleatoria | 0,02556 | - |
+| AUROC residuos no resueltos vs resueltos | 0,85591 | 0,83319 - 0,87786 |
+| pLDDT medio residuos resueltos | 0,75550 | 0,74226 - 0,76848 |
+| pLDDT medio residuos no resueltos | 0,49950 | 0,48104 - 0,51862 |
+| Residuos resueltos con pLDDT < 0,5 | 0,11332 | 0,08916 - 0,13865 |
+| Residuos no resueltos con pLDDT < 0,5 | 0,56934 | 0,52484 - 0,61523 |
+
+Acuerdo con el ESMFold2 de produccion (correlacion de Spearman / diferencia media):
+
+| Metrica | Spearman | Diferencia media |
+|---|---:|---:|
+| pLDDT medio | 0,68423 | -0,07777 |
+| pTM | 0,79666 | -0,03602 |
+| ipTM | 0,73161 | +0,01022 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no especificada por el autor. Como referencia derivada del numero de parametros, los pesos en BF16 ocupan aproximadamente 0,34 GB; sumando el tronco de plegado en FP32, las activaciones y el muestreador de difusion, la huella deberia mantenerse muy por debajo de los 4 GB en la mayoria de configuraciones. Se trata de una estimacion propia, no de un dato publicado.
-- GPU recomendadas: cualquier GPU CUDA compatible para la validacion en Docker. El autor indica que no se requiere ningun producto de GPU ni estacion de trabajo concretos. Dado el tamano, tarjetas consumer como la RTX 3060, RTX 4070 o RTX 4090 son suficientes; en el extremo alto, A100 o H100 no aportan una ventaja determinante por capacidad de memoria, solo por throughput.
-- Compatibilidad con GPU consumer: si. Con 171 millones de parametros y 0,7 GB de repositorio, el modelo cabe en practicamente cualquier GPU consumer moderna.
-- Opciones de despliegue: PyTorch 2.13 con Transformers 5.13, cargando con `AutoModel.from_pretrained(..., trust_remote_code=True)`; backends de atencion `eager`, `sdpa` y `flex_attention`; validacion en contenedor Docker sobre cualquier dispositivo CUDA compatible; soporte de PEFT para ajuste fino. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados.
-- Modo sin conexion: la model card documenta un flujo offline que exige construir primero el artefacto local fijado por manifiesto y usar `local_files_only=True`.
-- Precision: el backbone opera en BF16; el tronco de plegado mantiene parametros en FP32 con autocast BF16 en CUDA. Las peticiones FP8 fallan.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: el modelo tiene 178,9 M de parametros; en fp32 ocupa aproximadamente 0,72 GB de pesos, y en bf16 alrededor de 0,36 GB. Con activaciones y buffers de difusion, se estima un consumo de 2-4 GB de VRAM para secuencias tipicas, aunque no se ha publicado una cifra oficial.
+- GPU recomendadas: cualquier GPU CUDA compatible; el autor indica que la validacion se ejecuta en Docker sobre cualquier dispositivo CUDA compatible, sin requerir un producto de GPU o estacion de trabajo especificos.
+- Cabe en GPU de consumo: si, previsiblemente en RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4090 y similares, dado el bajo numero de parametros.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (unica via documentada); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Plegado sin MSA | Cabeza de confianza | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Synthyra/ESMFold2-300 | 171.123.237 | no disponible | si | deshabilitada (sin pLDDT, pTM, iPTM ni PAE) | MIT | Hugging Face |
-| Synthyra/ESMFold2-600 | no disponible | no disponible | no disponible | no disponible | no disponible | mencionado en la model card como variante de mayor escala de backbone |
-| ESMFold original (Meta) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Plegado de complejos | Cabeza de confianza |
+|---|---|---:|---|---|---|
+| ESMFold2-300 (Synthyra) | 178,9 M | no disponible | MIT | Si (entrada tipada multimérica) | Si (pLDDT, PAE, pTM, ipTM) |
+| Production ESMFold2 | no disponible | no disponible | no disponible | Si | Si |
+| ESMFold (original, Meta) | ~690 M | no disponible | MIT | No (solo monomeros) | pLDDT |
+| AlphaFold2 | ~93 M por modelo (5 modelos) | no disponible | no comercial (parametros) | Si | pLDDT, PAE, pTM |
 
-No se dispone en la informacion proporcionada de datos comparativos de parametros, contexto, rendimiento o licencia de las alternativas, por lo que la comparacion cuantitativa no es posible. La unica diferencia verificable entre las variantes de la familia es la escala del backbone, que los sufijos "300" y "600" describen, y que no equivale al total de parametros del modelo.
+La comparativa se limita a lo que la model card documenta; no se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada. El modelo de produccion ESMFold2 se usa como referencia de acuerdo de confianza, no de precision de plegado.
 
 ## Limitaciones y advertencias
 
-- Cabeza de confianza deshabilitada: no se puede obtener pLDDT, pTM, iPTM ni PAE, por lo que no hay estimacion de incertidumbre por residuo ni de calidad global del plegado. Cualquier uso en produccion debe aportar su propio mecanismo de validacion.
-- Sin condicionamiento por MSA: el checkpoint rechaza `ProteinInput.msa` y las caracteristicas derivadas de alineamientos. Esto limita la precision en dianas dificiles donde los alineamientos aportan informacion evolutiva critica.
-- Cabezas de clasificacion sin entrenar: las clases de clasificacion de secuencia y de residuo crean un `classifier` nuevo. Interpretar sus logits sin ajuste fino previo produce resultados sin sentido.
-- Estado experimental: el nombre del checkpoint incluye la etiqueta "Experimental" y no hay benchmarks publicados, descargas ni likes registrados. No hay evidencia publica de validacion independiente.
-- Limitaciones de precision: las peticiones FP8 fallan; el tronco de plegado debe permanecer en FP32 con autocast BF16 en CUDA.
-- Ausencia de folding TTT: la arquitectura experimental no expone test-time training de plegado, una tecnica presente en otras variantes de la familia.
-- Dominio restringido: el modelo no procesa lenguaje natural, no soporta tool calling, agentes ni tareas multimodales. Aplicarlo fuera del ambito de proteinas no es viable.
-- Riesgo de predicciones erroneas: al no existir cabeza de confianza, un plegado incorrecto no se distingue de uno correcto a partir de la salida del modelo. Es necesario validar con metodos externos.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia. No se identifican clausulas adicionales en la informacion disponible, aunque conviene revisar las condiciones del checkpoint de origen `biohub/ESMFold2-Experimental-Fast-base300M-step1500k` y del backbone `Synthyra/ESMplusplus_small`.
-- Dependencia de codigo remoto: la carga exige `trust_remote_code=True`, lo que implica ejecutar codigo incluido en el repositorio. En entornos con requisitos de seguridad estrictos conviene auditar ese codigo antes del despliegue.
-- Fechas del repositorio: las marcas de creacion y actualizacion registradas son del 15 de septiembre de 2026, posteriores a la fecha habitual de referencia; conviene verificar la vigencia del artefacto antes de integrarlo.
+- Modelo especializado en proteinas: no es un modelo de lenguaje natural y no soporta generacion de texto, codigo, matematicas ni capacidades multilingues.
+- Las cabezas de clasificacion de secuencia y de token estan inicializadas de novo y deben fine-tunearse antes de interpretar sus logits como predicciones.
+- La cabeza de confianza se entreno con backbone y modulo de plegado congelados; su calibracion puede no transferirse a distribuciones de proteinas muy alejadas de AtlasFold-Data.
+- Los residuos no resueltos son un proxy de desorden, no etiquetas definitivas de desorden intrinseco.
+- Las metricas de acuerdo con el ESMFold2 de produccion comparan confianzas medias por objetivo, no precision de plegado sobre estructuras identicas.
+- Requiere versiones muy especificas de dependencias (Python 3.12-3.14, PyTorch 2.14, Transformers 5.17), lo que puede complicar la integracion en entornos existentes.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio del autor.
+- La licencia MIT permite uso comercial, pero no se especifican restricciones adicionales sobre los datos de entrenamiento subyacentes.
+- Riesgo de alucinacion estructural en secuencias largas o sin homologos conocidos; el autor excluye objetivos largos de las tablas principales de evaluacion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Synthyra/ESMFold2-300
-- Checkpoint de origen: https://huggingface.co/biohub/ESMFold2-Experimental-Fast-base300M-step1500k
-- Backbone congelado: https://huggingface.co/Synthyra/ESMplusplus_small
-- Dependencias directas: https://huggingface.co/Synthyra/ESMFold2-300/resolve/main/requirements.txt
-- Repositorio FastPLMs: no disponible
-- Paper o blog tecnico del autor: no disponible
-- Demos o espacios: no disponible
+- [Hugging Face: Synthyra/ESMFold2-300](https://huggingface.co/Synthyra/ESMFold2-300)
+- [Dataset AtlasFold-Data](https://huggingface.co/datasets/lhallee/AtlasFold-Data)
+- [Guia de entrenamiento de confianza FastPLMs](https://github.com/Synthyra/FastPLMs/blob/main/docs/confidence_training.md)
+- [Repositorio FastPLMs](https://github.com/Synthyra/FastPLMs)
+- Checkpoint base: `biohub/ESMFold2-Experimental-Fast-base300M-step1500k` (referenciado en la model card; no se proporciona URL directa)

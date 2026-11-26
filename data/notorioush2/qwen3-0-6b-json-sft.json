@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "NotoriousH2/Qwen3-0.6B-JSON-SFT",
+  "slug": "notorioush2-qwen3-0-6b-json-sft",
+  "author": "NotoriousH2",
+  "url": "https://huggingface.co/NotoriousH2/Qwen3-0.6B-JSON-SFT",
+  "created_at": "2026-07-19T14:05:04.000Z",
+  "updated_at": "2026-11-26T01:56:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "trl",
+    "sft",
+    "text-generation",
+    "conversational",
+    "ko",
+    "dataset:NotoriousH2/meeting-to-json-ko",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 662,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3587827938,
+  "storage_human": "3.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

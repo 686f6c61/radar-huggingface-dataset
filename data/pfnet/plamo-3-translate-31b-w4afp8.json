@@ -156,16 +156,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "pfnet/plamo-3-translate-31b-W4AFP8 · Hugging Face",
-      "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-W4AFP8",
-      "snippet": "PLaMo 3 Translate 31B is a translation-specialized LLM developed by Preferred Networks (PFN) that delivers world-class translation quality. It is built on PLaMo 3 NICT, a pretrained model developed through joint research by PFN and the National Institute of Information and Communications Technology (NICT). We further trained this base model on tens of billions of tokens of translation-focused ..."
-    },
-    {
-      "title": "pfnet/plamo-3-translate-31b-FP8 · Hugging Face",
-      "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-FP8",
-      "snippet": "Each size of PLaMo 3 Translate is available in the following distribution formats, depending on your use case and hardware. W4A16 NVIDIA Ampere or later vLLM 4-bit weights to run with less GPU memory W4AFP8 NVIDIA Hopper vLLM 4-bit weights with FP8 compute, aiming at both low memory and high ..."
-    }
-  ]
+  "sources": []
 }

@@ -126,5 +126,11 @@
       "value": 5.2
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "title": "balbal · PyPI",
+      "url": "http://go/v1/AW53W6687lAsaweFgAFnJuLxTefwD56dYB-aqVlwg9IhyLoL8n092H7heBzSSX8ubx2BdVAJkbzo5_neeiDBb0RkoaQzNnHeHwIrfdnd58HOEKzoETzKSsiY_-RevFCGNB7ICU3A0ZCc2OTVyrmKJtlAQnBIsOdIurOddt3_5QNcQ7KXbaU_T1l77AHCIY8BvKXBW5-ilUoB",
+      "snippet": "Open Turkish speech recognition on CPU: balbal-v2 and balbal-v2-manas (and models trained on their architectures), plus the experimental Moroccan Darija model balbal-v2e-zellige and Ancient Greek model balbal-v2e-calliope; weights fetched from Hugging Face on first use."
+    }
+  ]
 }

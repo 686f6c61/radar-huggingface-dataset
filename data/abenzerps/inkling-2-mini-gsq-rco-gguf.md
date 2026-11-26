@@ -2,108 +2,102 @@
 
 ## Resumen
 
-Inkling-2-Mini GSQ-RCO GGUF es una cuantización de precisión mixta del modelo multimodal thinkingmachines/Inkling-2-Mini, publicada por el usuario abenzerps. El modelo base es un transformer de tipo Looped Sparse MoE (mezcla de expertos con capas intermedias repetidas en bucle) con 26.070.385.152 parámetros totales, de los cuales aproximadamente 3.4B son activos en crudo y 5.4B efectivos a través de tres capas medias en bucle, con 128 expertos y enrutamiento top-8. Combina entrada de imagen y texto (pipeline image-text-to-text) y soporta una ventana de contexto de hasta 1M de tokens mediante atención híbrida de ventana deslizante y global.
+Inkling-2-Mini es un modelo multimodal (texto e imagen) desarrollado por Thinking Machines, publicado originalmente en formato safetensors y aquí redistribuido en cuantizaciones GGUF por el usuario abenzerps bajo el esquema denominado GSQ-RCO (mixed-precision). Se trata de un transformer de tipo Looped Sparse MoE con 26.070.385.152 parámetros totales, 128 expertos con enrutamiento top-8 y una ventana de contexto de hasta 1M de tokens mediante atención híbrida de ventana deslizante y atención global.
 
-La relevancia de esta publicación reside en que empaqueta un modelo MoE multimodal de gran tamaño en archivos GGUF que caben en GPUs de consumo, desde 8 GB de VRAM (IQ1_M, 7.32 GB) hasta 16 GB (IQ4_XS, 13.84 GB), manteniendo según el autor un enrutamiento sin pérdidas y razonamiento multi-paso. El formato GSQ-RCO (cuantización de precisión mixta con atención en Q8_0 en algunas variantes) está pensado para llama.cpp y Ollama, con soporte de proyector de visión separado (mmproj) en BF16 o Q8_0.
+El modelo resuelve el problema de ejecutar un MoE multimodal de gran tamaño en hardware de consumo: las cuantizaciones publicadas van desde 2,25 bpw (7,32 GB) hasta 4,25 bpw (13,84 GB), lo que permite inferencia con 8, 12, 16 o 24 GB de VRAM. Incluye un proyector de visión independiente (mmproj) en BF16 y Q8_0, y soporta decodificación especulativa opcional mediante un modelo draft DSpark.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado para razonamiento, uso conversacional y despliegue compatible con endpoints. La model card no especifica los idiomas soportados ni detalles del dataset de entrenamiento del modelo base.
+Su relevancia actual radica en la combinación de contexto extremadamente largo (128k verificados en 12 GB de VRAM con caché KV cuantizada), capacidades de razonamiento multi-paso y multimodalidad nativa, todo ello bajo licencia Apache 2.0 y ejecutable en llama.cpp y Ollama. El repositorio acumula 16.479 descargas y 33 likes desde su publicación el 22 de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Looped Sparse MoE (transformer con mezcla de expertos y capas medias en bucle), vision + texto |
-| Parametros totales | 26.070.385.152 (26.1B) |
-| Parametros activos | 3.4B en crudo / 5.4B efectivos (128 expertos, top-8) |
-| Longitud de contexto | Hasta 1M tokens (atencion hibrida: ventana deslizante + global) |
-| Tipos de cuantizacion | IQ1_M (2.25 bpw), IQ2_XS (2.75 bpw), IQ3_XS (3.25 bpw), IQ4_XS (4.25 bpw); proyectores de vision BF16 y Q8_0 |
+| Arquitectura | Looped Sparse MoE (transformer con capas medias en bucle) + vision encoder |
+| Parametros totales | 26.070.385.152 (26,1B) |
+| Parametros activos | 3,4B brutos / 5,4B efectivos (3x capas medias en bucle, 128 expertos top-8) |
+| Longitud de contexto | Hasta 1M tokens (atencion hibrida: ventana deslizante + global); 128k verificados en configuraciones de 12-24 GB |
+| Tipos de cuantizacion | IQ1_M (2,25 bpw), IQ2_XS (2,75 bpw), IQ3_XS (3,25 bpw), IQ3_M (3,75 bpw), IQ4_XS (4,25 bpw); mmproj en BF16 y Q8_0; draft DSpark en Q8_0 y BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), con mmproj separado para vision |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Looped Sparse MoE: un transformer con capas medias que se ejecutan en bucle (3x), 128 expertos por capa y enrutamiento top-8. Esto da 26.1B parámetros totales pero solo 3.4B activos en crudo y 5.4B efectivos, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamaño. La atención es híbrida, combinando ventana deslizante con atención global para alcanzar hasta 1M tokens de contexto. El modelo es nativamente multimodal (visión y texto) y el pipeline declarado es image-text-to-text.
+La arquitectura es un MoE disperso con bucle (Looped Sparse MoE): las capas medias se ejecutan tres veces, lo que eleva los parámetros activos efectivos de 3,4B a 5,4B sin incrementar el coste de memoria. El enrutamiento top-8 sobre 128 expertos está diseñado para preservar el enrutamiento sin pérdida tras la cuantización, según el autor de la conversión. La atención es híbrida, combinando ventana deslizante con atención global, lo que habilita la ventana de 1M de tokens. El modelo integra un proyector de visión separado para entrada image-text-to-text.
 
-La cuantización GSQ-RCO es una técnica de precisión mixta del autor de la publicación, orientada a preservar el enrutamiento de expertos y el razonamiento multi-paso en llama.cpp; algunas variantes mantienen la atención en Q8_0 para limitar la degradación. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. Los parámetros de muestreo recomendados son temperature 1.0, top_p 1.0, top_k 0 y min_p 0.0, con `--jinja`.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en la información proporcionada. La innovación técnica destacable en esta distribución es la cuantización mixed-precision GSQ-RCO, orientada a mantener la calidad del enrutamiento de expertos, junto con el soporte de decodificación especulativa mediante el draft DSpark (PR #32218 de llama.cpp) y la gestión de caché KV cuantizada (q4_0/q8_0) para maximizar el contexto útil en VRAM limitada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con etiqueta explícita de "reasoning" en el modelo.
-- Comprensión de imagen y texto (multimodal), mediante proyector de visión mmproj en BF16 o Q8_0.
-- Razonamiento con enrutamiento de expertos preservado por la cuantización GSQ-RCO.
-- Uso conversacional multi-turno.
-- Contexto largo de hasta 1M tokens (atención híbrida deslizante y global).
-- Compatibilidad con endpoints y despliegue en llama.cpp y Ollama.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y multi-step reasoning: el modelo está etiquetado para razonamiento, pero no se detallan capacidades de agente.
-- Capacidades multilingües: no disponible.
+- Generación de texto y razonamiento multi-paso, con modo de razonamiento explícito (tag `reasoning`).
+- Procesamiento de imagen y texto de forma nativa (pipeline image-text-to-text) mediante `--mmproj`.
+- Generación de código y matemáticas, con aceleración específica mediante decodificación especulativa DSpark en cargas estructuradas de código y matemáticas en inglés.
+- Conversación multi-turno con plantilla Jinja (`--jinja`).
+- Contexto largo de hasta 1M de tokens, con 128k prácticos en 12 GB de VRAM.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y despliegue en llama.cpp, llama-server, LM Studio y Ollama.
+- Capacidades multilingües: no disponible (no se especifican idiomas en la información).
 
 ## Casos de uso
 
-- Asistente conversacional con contexto largo: el modelo puede mantener conversaciones multi-turno con hasta 1M tokens de ventana, útil para atención al cliente con historiales extensos o documentos adjuntos.
-- Análisis de documentos e imágenes: con el proyector de visión, se pueden enviar capturas, diagramas o páginas escaneadas junto a preguntas de texto para extracción de información.
-- Razonamiento sobre código y problemas técnicos: el modelo está etiquetado para razonamiento y puede emplearse en revisión de código o explicación de errores, aunque no se documenta tool calling.
-- Despliegue en estaciones de trabajo con GPU de consumo: la variante IQ3_XS (10.58 GB) cabe en 12 GB de VRAM y permite servir el modelo localmente con llama-server.
-- Prototipado en portátiles Apple Silicon: las variantes IQ2_XS (8.95 GB) e IQ4_XS (13.84 GB) están indicadas para 16 GB y 24 GB de memoria unificada respectivamente.
-- Investigación sobre cuantización de MoE: el formato GSQ-RCO y los distintos niveles bpw permiten estudiar la degradación de un MoE multimodal al reducir precisión.
-- Procesamiento por lotes de imágenes con texto: el pipeline image-text-to-text permite clasificar, describir o resumir lotes de imágenes con instrucciones en lenguaje natural.
+- Análisis de documentos extensos: con 128k tokens de contexto en 12 GB de VRAM (IQ2_XS, caché KV q4_0), el modelo puede procesar informes completos, expedientes o bases de código sin fragmentación, manteniendo coherencia entre secciones distantes.
+- Asistente de código en local: la cuantización IQ3_XS (10,58 GB) cabe en GPU de 12-16 GB y, combinada con el draft DSpark, acelera la generación de código estructurado en inglés dentro de flujos de autocompletado o revisión.
+- Procesamiento de capturas y documentos escaneados: el proyector de visión BF16 (642 MB, aproximadamente 9 veces más rápido en GPU que Q8_0) permite extraer y razonar sobre texto e imágenes en un mismo prompt, útil para digitalización con comprensión semántica.
+- Razonamiento matemático y resolución de problemas: el modo de razonamiento multi-paso y la decodificación especulativa en matemáticas lo hacen adecuado para tutoría o verificación de cálculos en entornos sin conexión.
+- Despliegue en estaciones de trabajo con 24 GB: con IQ4_XS (13,84 GB) y caché KV q8_0 se obtiene una calidad casi sin pérdida y 128k de contexto, apto para pipelines de análisis internos que requieren privacidad de datos.
+- Prototipado rápido en portátiles Apple Silicon: IQ2_XS (8,95 GB) e IQ3_M (12,21 GB) están indicados para Mac de 16 y 24 GB respectivamente, permitiendo experimentar con un MoE multimodal sin infraestructura de servidor.
+- Automatización de agentes con contexto largo: la ventana extendida y el soporte de plantilla Jinja facilitan cadenas de razonamiento multi-paso sobre historiales extensos de herramientas y observaciones.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de evaluaciones del modelo base con comparaciones frente a Gemma 4 31B, Muse Glimmer, Qwen3.8-27B y Nemotron 3.5 Super VL. Los datos disponibles son parciales:
+La model card incluye una tabla de evaluaciones oficiales del modelo base que compara Inkling 2 Mini con Gemma 4 31B, Muse Glimmer, Qwen3.8-27B y Nemotron 3.5 Super VL, pero los valores numéricos de dicha tabla no están disponibles en la información proporcionada.
 
-| Modelo | Parametros (activos/total, B) | AA Index (v5.0) | Vals Index (v2.2) |
-|---|---|---|---|
-| Inkling 2 Mini | 5/26 | 20.1 | 46.5% |
-| Gemma 4 31B | 31/31 | 4.4 | no disponible |
-| Muse Glimmer | 30/30 | 6.3 | no disponible |
-| Qwen3.8-27B | 27/27 | 20.1 | no disponible |
-| Nemotron 3.5 Super VL | 12/125 | 13.6 | no disponible |
-
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni métricas de las cuantizaciones GGUF respecto al modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según la model card:
-  - IQ1_M (2.25 bpw, 7.32 GB): 8 GB de VRAM.
-  - IQ2_XS (2.75 bpw, 8.95 GB): 10 GB de VRAM o 16 GB de Mac.
-  - IQ3_XS (3.25 bpw, 10.58 GB): 12 GB de VRAM (opción recomendada).
-  - IQ4_XS (4.25 bpw, 13.84 GB): 16 GB de VRAM o 24 GB de Mac.
-  - Proyector de visión: mmproj BF16 (642 MB) o Q8_0 (346 MB), adicional a los pesos.
-- GPU recomendadas: no se especifican modelos concretos (A100, H100, RTX 4090); los tamaños indicados apuntan a GPUs de consumo de 8 a 16 GB de VRAM.
-- Cabe en GPU de consumo: sí, en las variantes indicadas por el autor.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server con `--jinja`, `-ngl 99`, `--flash-attn on`) y Ollama (`ollama run hf.co/abenzerps/Inkling-2-Mini-GSQ-RCO-GGUF:IQ3_XS`).
-- Latencia y throughput: no disponibles.
+- VRAM estimada (solo pesos): IQ1_M 7,32 GB; IQ2_XS 8,95 GB; IQ3_XS 10,58 GB; IQ3_M 12,21 GB; IQ4_XS 13,84 GB. Añadir 346-642 MB si se usa visión con mmproj.
+- 8 GB de VRAM: IQ1_M, uso ultracompacto.
+- 12 GB de VRAM: IQ2_XS con 128k de contexto y caché KV q4_0 (11,7 GiB medidos); IQ3_XS como punto óptimo de compromiso.
+- 16 GB de VRAM: IQ3_M con 128k de contexto (14,3 GiB medidos con `-ub 64 -ctk q4_0 -ctv q4_0`).
+- 24 GB de VRAM: IQ3_M con 128k y caché KV q8_0 (20,1 GiB medidos con `-ub 256`); IQ4_XS para calidad casi sin pérdida.
+- Mac Apple Silicon: IQ2_XS en 16 GB; IQ4_XS en 24 GB.
+- GPU recomendadas: no se especifican modelos concretos (A100, H100, RTX 4090) en la información; los datos de VRAM apuntan a GPUs de consumo de 8-24 GB y a Mac unificados.
+- Despliegue: llama.cpp / llama-server, LM Studio, Ollama (`ollama run hf.co/abenzerps/Inkling-2-Mini-GSQ-RCO-GGUF:IQ3_XS`). No se mencionan vLLM ni TGI para estos GGUF.
+- Ajustes clave: Flash Attention activada (`-fa on`), `-np 1`, `-b 2048`, y `-ub` entre 64 y 128 (el batch físico escala el buffer de cómputo linealmente con el contexto; `-b` no). Evitar caché KV mixta q8_0/q4_0. Muestreo recomendado: temperature 1.0, top_p 1.0, top_k 0, min_p 0.0.
+- Latencia y throughput: no disponibles como cifras absolutas; la model card solo indica que DSpark acelera código y matemáticas estructuradas en inglés y ralentiza chat general o generación no inglesa cuando baja la tasa de aceptación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros (activos/total, B) | Contexto | AA Index (v5.0) | Licencia | Formato |
-|---|---|---|---|---|---|
-| Inkling-2-Mini GSQ-RCO (esta ficha) | 5/26 | 1M tokens | 20.1 (modelo base) | Apache 2.0 | GGUF |
-| Gemma 4 31B | 31/31 | no disponible | 4.4 | no disponible | no disponible |
-| Muse Glimmer | 30/30 | no disponible | 6.3 | no disponible | no disponible |
-| Qwen3.8-27B | 27/27 | no disponible | 20.1 | no disponible | no disponible |
-| Nemotron 3.5 Super VL | 12/125 | no disponible | 13.6 | no disponible | no disponible |
+La model card del autor compara el modelo base con las siguientes alternativas, aunque sin valores numéricos disponibles:
 
-La comparativa se limita a los datos publicados en la model card; no se dispone de contexto, licencia ni formato de pesos de los modelos alternativos.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Inkling-2-Mini (este) | 26,1B totales / 5,4B efectivos | Hasta 1M (128k prácticos en 12 GB) | Apache 2.0 | GGUF en HF, llama.cpp, Ollama |
+| Gemma 4 31B | 31B (dato de la model card) | no disponible | no disponible | no disponible |
+| Muse Glimmer | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-27B | 27B (dato de la model card) | no disponible | no disponible | no disponible |
+| Nemotron 3.5 Super VL | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparado en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no se documenta; como modelo generativo de lenguaje, es esperable, pero no hay datos concretos.
-- Limitaciones de contexto o idioma: la ventana máxima es de 1M tokens, pero no se especifican los idiomas soportados ni el rendimiento por idioma.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y de los componentes de visión.
-- Las cuantizaciones de baja precisión (IQ1_M, IQ2_XS) pueden degradar el enrutamiento de expertos y el razonamiento; el autor recomienda IQ3_XS como punto óptimo.
-- La model card es de un tercero (abenzerps), no del desarrollador original; los benchmarks corresponden al modelo base, no a las cuantizaciones GGUF.
-- El repositorio registra 0 descargas en el momento de la consulta, por lo que no hay evidencia de uso en producción.
-- No se documentan capacidades de tool calling ni de agente, lo que limita su uso en pipelines automatizados que las requieran.
+- No se documentan sesgos conocidos del modelo base en la información disponible.
+- Riesgo de alucinación inherente a los modelos generativos; no se aportan tasas de error ni evaluaciones de fidelidad.
+- Idiomas soportados no especificados; la decodificación especulativa DSpark solo beneficia a código y matemáticas en inglés y puede degradar el rendimiento en otros idiomas.
+- La cuantización IQ1_M e IQ2_XS puede degradar la calidad respecto al modelo base; el autor solo garantiza "enrutamiento sin pérdida" como objetivo del esquema GSQ-RCO, sin métricas publicadas que lo respalden.
+- DSpark requiere una compilación de llama.cpp con soporte específico (PR #32218) y no funciona en LM Studio estándar; además puede ralentizar cargas no estructuradas.
+- El contexto de 1M no está verificado en las configuraciones de VRAM listadas; los valores medidos llegan a 128k. El autor menciona un PR pendiente (#32740) para maximizar el contexto utilizable.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y atribución correspondiente.
+- El repositorio es una cuantización de terceros (abenzerps), no una publicación oficial de Thinking Machines; la responsabilidad sobre la fidelidad de los pesos recae en el conversor.
+- Tamaño del repo de 54,9 GB: requiere espacio en disco considerable para descargar varias cuantizaciones.
 
 ## Enlaces
 
-- Hugging Face (esta cuantización): https://huggingface.co/abenzerps/Inkling-2-Mini-GSQ-RCO-GGUF
+- Repositorio GGUF: https://huggingface.co/abenzerps/Inkling-2-Mini-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Solicitud de modelos del autor: https://abenzerps.com/request-a-model/
 - GitHub del autor: https://github.com/abenzerps
+- Paper referenciado (arXiv 2604.18556): https://arxiv.org/abs/2604.18556
+- Paper referenciado (arXiv 2605.00649): https://arxiv.org/abs/2605.00649
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Papers referenciados en los tags: arxiv:2604.18556 y arxiv:2605.00649 (no se dispone de sus URLs directas en la información proporcionada)

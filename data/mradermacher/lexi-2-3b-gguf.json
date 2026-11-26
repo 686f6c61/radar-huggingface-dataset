@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/lexi-2.3b-GGUF",
+  "slug": "mradermacher-lexi-2-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lexi-2.3b-GGUF",
+  "created_at": "2026-11-26T01:22:33.000Z",
+  "updated_at": "2026-11-26T01:30:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lexi",
+    "reallexi",
+    "en",
+    "base_model:Reallexi-llc/lexi-2.3b",
+    "base_model:quantized:Reallexi-llc/lexi-2.3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2245681664,
+  "parameters_human": "2.25B",
+  "storage_bytes": 20370515328,
+  "storage_human": "20.4 GB",
+  "context_length": 32768,
+  "base_model": "Reallexi-llc/lexi-2.3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

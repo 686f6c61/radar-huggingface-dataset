@@ -2,100 +2,103 @@
 
 ## Resumen
 
-Cosmos3-Nano-Policy-LIBERO_10 es una política robótica (visión-lenguaje-acción) obtenida mediante fine-tuning del checkpoint base lerobot/Cosmos3-Nano sobre el conjunto de datos LIBERO-10. El modelo, publicado por el equipo de LeRobot en Hugging Face, resuelve el problema de control robótico de manipulación a partir de instrucciones en lenguaje natural y dos vistas de cámara (tercera persona y muñeca), generando bloques de 16 acciones junto con una predicción del vídeo futuro de la escena. Es relevante porque combina un backbone de tipo Qwen3-VL MoT con un cabezal de difusión de acciones y vídeo, alcanzando un 97,6 % de éxito en la suite LIBERO-10, un resultado puntero dentro de los benchmarks de manipulación de propósito general.
+Cosmos3-Nano-Policy-LIBERO_10 es una política robótica de tipo vision-language-action (VLA) desarrollada por el equipo de LeRobot (Hugging Face) mediante ajuste fino del checkpoint base lerobot/Cosmos3-Nano, que a su vez es la conversión al formato LeRobot del modelo nvidia/Cosmos3-Nano. El modelo resuelve el problema de control robótico de extremo a extremo: a partir de una instrucción de tarea en lenguaje natural y de dos vistas de cámara (tercera persona y muñeca), predice un bloque de 16 acciones junto con un vídeo futuro de la escena, lo que lo convierte en un modelo generativo con planificación visual implícita.
 
-El modelo tiene 16.454.213.580 parámetros (aproximadamente 16,5 mil millones), se distribuye en formato safetensors con pesos en BF16 (salvo cuatro tensores FP32 correspondientes al embedding de timestep) y ocupa 33 GB en el repositorio. Está pensado para su uso dentro del ecosistema LeRobot, con un pipeline declarado como `robotics` y una licencia OpenMDW 1.1.
+La arquitectura se apoya en un backbone Qwen3-VL con 36 capas de decodificador y anchura oculta de 4096, con un total de 16.454.213.580 parámetros en pesos BF16 (1356 tensores, de los cuales 4 son FP32 para el embedding de timesteps). El modelo se ha ajustado específicamente sobre el conjunto de datos LIBERO-10, un benchmark estándar de manipulación robótica con 10 tareas de largo horizonte, alcanzando una tasa de éxito de 97,6% (488/500 episodios) en evaluación cerrada.
 
-La ficha describe las especificaciones técnicas, la arquitectura, las capacidades, los casos de uso realistas, los resultados publicados en LIBERO, los requisitos de hardware y las limitaciones de esta política, así como una comparativa con las alternativas disponibles en el ecosistema Cosmos3.
+Su relevancia actual radica en que demuestra que los modelos generativos de vídeo de gran escala pueden convertirse en políticas de control competitivas mediante ajuste fino supervisado, y en que se distribuye con pesos abiertos y una integración completa en LeRobot, lo que facilita su reproducción y evaluación por parte de la comunidad investigadora.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer visión-lenguaje-acción (Qwen3-VL MoT como backbone, 36 capas de decoder, anchura oculta 4096) con cabezal de difusión de acciones y vídeo |
-| Parámetros totales | 16.454.213.580 |
-| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
+| Arquitectura | Transformer VLA con backbone Qwen3-VL MoT (Mixture of Tokens), 36 capas de decodificador, anchura oculta 4096 |
+| Parametros totales | 16.454.213.580 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos publicados en BF16 y 4 tensores FP32) |
-| Idiomas soportados | no disponible (las instrucciones de LIBERO están en inglés, pero no se declara cobertura multilingüe) |
-| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16, con 4 tensores FP32) |
+| Idiomas soportados | no disponible (las instrucciones de tarea son en inglés en LIBERO) |
+| Licencia | openmdw1.1-license (Other) |
 | Formato de pesos | safetensors (1356 tensores: 1352 BF16 y 4 FP32) |
 
 ## Arquitectura y entrenamiento
 
-La política se construye sobre el checkpoint lerobot/Cosmos3-Nano, que a su vez es el formato LeRobot del modelo nvidia/Cosmos3-Nano. El backbone es un Qwen3-VL MoT con 36 capas de decoder y anchura oculta de 4096, que procesa la instrucción de tarea junto con dos observaciones visuales (cámara en tercera persona y cámara de muñeca, 256x256 RGB a 20 FPS, sin estado propio del robot). Sobre este backbone se acoplan módulos de acción reinicializados durante el fine-tuning y un cabezal generativo que produce, en cada paso, un bloque de 16 acciones junto con el vídeo futuro de la escena. Las acciones se representan en un espacio de 10 dimensiones (3 de posición delta, 6 de rotación en formato rot6d y 1 de pinza) que los procesadores del entorno convierten a las 7 dimensiones nativas de LIBERO.
+El modelo es una política VLA construida sobre el backbone Qwen3-VL en configuración MoT (Mixture of Tokens) con 36 capas de decodificador y anchura oculta de 4096. A partir de una instrucción textual y de dos observaciones visuales (cámara de tercera persona y cámara de muñeca, 256x256 RGB a 20 FPS, sin estado proprioceptivo), el modelo genera de forma conjunta un chunk de 16 acciones y el vídeo futuro de la escena. Las acciones se representan en un espacio de 10 dimensiones `[delta position (3), rot6d (6), gripper]` que los procesadores del entorno convierten a las 7 dimensiones nativas de LIBERO.
 
-El entrenamiento se realizó sobre el dataset lerobot/LIBERO_10-Cosmos3 (379 episodios, 10 tareas, sin split de validación), con batch global de 2048 muestras por actualización (32 por GPU × 32 GPUs × 2 de acumulación), usando 32 NVIDIA A100-SXM4-80GB en 4 nodos de 8 GPUs con InfiniBand y paralelismo FSDP2 HSDP (sharding intra-nodo, replicación entre nodos). Se aplicó AdamW con learning rate 5e-5 (2,5e-4 para los módulos de acción), betas (0,9, 0,99), weight decay 0,05, gradient clipping 1,0, warmup lineal de 500 actualizaciones y decaimiento lineal hasta la actualización 16000. El checkpoint publicado corresponde a la actualización de optimizador 2000 (paso 4000 de LeRobot), seleccionado por su tasa de éxito en LIBERO entre los checkpoints guardados; se usan pesos EMA y precisión mixta con pesos maestros en float32 y cómputo en bfloat16. La atención es SDPA y no se aplicó `torch.compile`.
+El ajuste fino se realizó sobre el conjunto lerobot/LIBERO_10-Cosmos3 (379 episodios, 10 tareas, sin split de validación), partiendo del checkpoint lerobot/Cosmos3-Nano con los módulos de acción reinicializados. El entrenamiento usó 32 GPUs NVIDIA A100-SXM4-80GB (4 nodos de 8 con InfiniBand), paralelismo FSDP2 HSDP (sharding intra-nodo, replicación inter-nodo), batch global de 2048 muestras por actualización (32 x 32 x 2), optimizador AdamW con learning rate 5e-5 (2.5e-4 para los módulos de acción), betas (0,9, 0,99), weight decay 0,05, gradient clipping 1,0 y un schedule de warmup lineal de 500 actualizaciones seguido de decaimiento lineal hasta 16000. Se realizaron 2000 actualizaciones del optimizador con checkpoint cada 250; el checkpoint publicado corresponde a la actualización 2000 (paso LeRobot 4000), seleccionado por tasa de éxito en LIBERO. Se usó precisión mixta con pesos maestros en float32, cómputo y reducción de gradientes en bfloat16, TF32 desactivado, gradient checkpointing activo y atención SDPA sin `torch.compile`.
 
 ## Capacidades
 
-- Generación de acciones robóticas de manipulación a partir de instrucciones en lenguaje natural y dos vistas de cámara.
-- Predicción conjunta de un bloque de 16 acciones y del vídeo futuro de la escena (modelo de mundo implícito).
-- Control de brazo robótico con efector final en espacio de posición delta y rotación rot6d, más apertura/cierre de pinza.
-- Ejecución de tareas de manipulación de horizonte largo (LIBERO-10 incluye cadenas de hasta 10 subtareas).
-- Política cerrada lista para evaluación con `lerobot-eval` y el entorno `libero`.
-- No se declara soporte de tool calling, function calling, agentes multi-paso, visión general, audio ni modo thinking; el modelo está especializado en robótica.
-- Capacidades multilingües: no disponibles.
+- Generación de acciones robóticas de manipulación: predice chunks de 16 acciones de 10 dimensiones (posición delta, rotación 6D y gripper) a partir de instrucciones de tarea e imágenes.
+- Generación de vídeo futuro de la escena: el modelo produce de forma conjunta la predicción visual de los frames siguientes, lo que actúa como planificación implícita.
+- Comprensión de instrucciones en lenguaje natural para especificar tareas de manipulación.
+- Fusión multimodal de dos vistas de cámara (tercera persona y muñeca) a 256x256 RGB y 20 FPS.
+- Control de extremo a extremo sin estado proprioceptivo: solo depende de imágenes e instrucción textual.
+- Muestreo con UniPC de 30 pasos, guidance scale 1 (sin classifier-free guidance) y sampling shift 5.
+- Soporte de ejecución completa de chunks de 16 acciones antes de replanificar.
+- No se ha documentado soporte de tool calling, function calling ni razonamiento multi-paso en el sentido de agentes LLM; sus capacidades son específicas de control robótico.
 
 ## Casos de uso
 
-- Evaluación comparativa en LIBERO-10: sirve como referencia puntera (97,6 % de éxito) para medir nuevas políticas de manipulación con el mismo protocolo (MuJoCo 2.3.7, robosuite 1.4.0, hf-libero 0.1.4, 50 episodios por tarea). Es adecuado porque el repositorio documenta el comando exacto de evaluación y el setup completo.
-- Investigación en modelos de mundo para robótica: la predicción del vídeo futuro permite estudiar cómo la representación visual anticipada mejora la planificación de acciones en tareas de contacto rico.
-- Base para fine-tuning en dominios propios: al ser un checkpoint LeRobot con módulos de acción reinicializables, se puede adaptar a nuevos datasets de manipulación manteniendo el backbone Qwen3-VL.
-- Prototipado de políticas viso-lenguaje-acción en laboratorio: con una sola GPU A800/H100 de 80 GB se puede reproducir la evaluación documentada, lo que facilita la validación interna antes de desplegar en un robot real.
-- Estudio de robustez ante instrucciones de lenguaje natural: LIBERO-10 incluye 10 tareas con instrucciones distintas, lo que permite analizar la sensibilidad de la política a variaciones de prompt.
-- Benchmarking de infraestructura de inferencia: al requerir muestreo UniPC con 30 pasos y bloques de 16 acciones, es útil para medir latencia y throughput de pipelines de difusión de acciones en GPUs de datacenter.
+- Evaluación comparativa en LIBERO-10: el modelo sirve como referencia de política VLA para medir tasas de éxito en las 10 tareas del benchmark, con un protocolo reproducible mediante `lerobot-eval` y MuJoCo 2.3.7.
+- Investigación en políticas generativas de vídeo: permite estudiar cómo la predicción conjunta de acciones y vídeo futuro afecta a la robustez del control en tareas de largo horizonte, gracias a que los pesos están abiertos.
+- Base para ajuste fino en nuevos dominios robóticos: al estar integrado en LeRobot y partir de un checkpoint Cosmos3-Nano, se puede reentrenar con conjuntos propios en formato LeRobot cambiando los módulos de acción.
+- Manipulación con cámaras duales en laboratorio: su uso de vista de tercera persona y de muñeca lo hace adecuado para montajes experimentales con dos cámaras RGB a 256x256 y 20 Hz.
+- Benchmarking de infraestructura de inferencia robótica: permite medir latencia y throughput de políticas VLA de 16,4 mil millones de parámetros en GPUs como la A800-80GB usada en la evaluación oficial.
+- Reproducción de resultados académicos: el repositorio documenta versiones exactas de MuJoCo, robosuite, hf-libero, Gymnasium y el commit de LeRobot, lo que facilita replicar el 97,6% reportado.
+- Estudio de selección de checkpoints por rendimiento en entorno: el modelo ilustra la práctica de elegir el checkpoint final por tasa de éxito cerrada en lugar de por pérdida de validación.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card para la suite LIBERO-10 (tasas de éxito en bucle cerrado, 50 episodios por tarea, 500 episodios por suite):
-
-| Modelo | LIBERO-10 |
+| Modelo | LIBERO-10 (tasa de éxito) |
 |---|---|
-| Cosmos3-Nano-Policy-LIBERO_10 (este checkpoint) | 97,6 % (488/500) |
-| Cosmos3-Edge-Policy-LIBERO_10 | 95,2 % (476/500) |
-| Cosmos3-Nano-Policy-LIBERO_10 según TechReport (arXiv 2606.02800) | 97,40 % |
+| Cosmos3-Nano-Policy-LIBERO_10 (evaluación cerrada, 500 episodios) | 97,6% (488/500) |
+| Cosmos3-Edge-Policy-LIBERO_10 | 95,2% (476/500) |
+| Cosmos3-Nano-Policy-LIBERO_10 (TechReport, arXiv 2606.02800) | 97,40% |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de lenguaje, lo cual es esperable en una política robótica especializada.
+La evaluación se realizó con 50 episodios por tarea (10 tareas, 500 episodios por suite), semillas 0 a 49, 4 entornos por batch, presupuesto de 510 pasos para LIBERO-10 tras 10 pasos de asentamiento, inferencia en bfloat16 con atención SDPA, sin `torch.compile`, TF32 desactivado y cuDNN benchmarking desactivado. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K) en la información disponible, ya que el modelo es específico de robótica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en BF16 suman aproximadamente 33 GB, por lo que se necesita una GPU con al menos 40 GB de VRAM para cargar el modelo completo sin cuantización; con cuantización a 8 bits cabría en GPUs de 24 GB, aunque no se documentan recetas oficiales de cuantización.
-- GPU recomendadas: la evaluación oficial se realizó en una NVIDIA A800-SXM4-80GB; también son adecuadas A100-SXM4-80GB, H100-80GB y, en general, GPUs de datacenter con 80 GB.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) en BF16; requeriría cuantización agresiva no documentada.
-- Despliegue: el flujo oficial es `lerobot-eval` con el entorno `libero` (MuJoCo 2.3.7, robosuite 1.4.0, hf-libero 0.1.4, Gymnasium 1.3.0), PyTorch 2.11.0+cu128, Transformers 5.5.4 y Diffusers 0.39.0. No se documentan opciones con vLLM, llama.cpp, Ollama ni TGI para esta política.
-- Latencia y throughput: no disponibles de forma explícita; el muestreo usa UniPC con 30 pasos, guidance scale 1, sampling shift 5 y ejecuta el bloque completo de 16 acciones antes de volver a planificar.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 16,45 mil millones de parámetros en BF16, los pesos ocupan aproximadamente 33 GB, por lo que se necesita una GPU con al menos 40-48 GB de memoria para inferencia en BF16 sin cuantización.
+- GPU recomendadas: la evaluación oficial usó 1 NVIDIA A800-SXM4-80GB por suite; son adecuadas A100-80GB, H100-80GB y A800-80GB.
+- GPU de consumo: no cabe en GPUs de consumo de 24 GB en BF16; se requeriría cuantización, cuyos formatos no están documentados en la información disponible.
+- Opciones de despliegue: `lerobot-eval` con el stack LeRobot (PyTorch 2.11, Transformers 5.5.4, Diffusers 0.39.0), MuJoCo 2.3.7 con renderizado EGL en GPU, robosuite 1.4.0 y hf-libero 0.1.4. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; el modelo ejecuta chunks completos de 16 acciones y usa muestreo UniPC de 30 pasos, lo que condiciona la frecuencia de replanificación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | LIBERO-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos3-Nano-Policy-LIBERO_10 | 16,45 B | no disponible | 97,6 % | OpenMDW 1.1 | Hugging Face (lerobot) |
-| Cosmos3-Edge-Policy-LIBERO_10 | no disponible | no disponible | 95,2 % | no disponible | Hugging Face (lerobot) |
-| Cosmos3-Nano (base, sin fine-tuning LIBERO) | 16,45 B (formato LeRobot) | no disponible | no disponible | no disponible | Hugging Face (lerobot) |
+| Cosmos3-Nano-Policy-LIBERO_10 | 16,45 mil millones | no disponible | 97,6% (488/500) | openmdw1.1-license | Pesos abiertos en HF |
+| Cosmos3-Edge-Policy-LIBERO_10 | no disponible | no disponible | 95,2% (476/500) | no disponible | Pesos abiertos en HF |
+| Cosmos3-Nano (base) | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en HF |
 
-La información disponible no incluye otros modelos comparables de la misma categoría (políticas viso-lenguaje-acción con predicción de vídeo) fuera del ecosistema Cosmos3.
+La comparativa se limita a los modelos de la misma familia Cosmos3 documentados en la información disponible; no se dispone de datos de otros modelos VLA comparables en LIBERO-10.
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: la política está entrenada únicamente en LIBERO-10 (379 episodios, 10 tareas); no se garantiza generalización a otros robots, morfologías o tareas fuera de ese dominio.
-- Dependencia del entorno de evaluación: los resultados solo son comparables con MuJoCo 2.3.7; MuJoCo 3.x altera el resultado de tareas de contacto rico y los números dejan de ser equiparables.
-- Diferencias numéricas entre `lerobot-eval` y la evaluación nativa: el preprocesador corre en el dispositivo de la política y se activa cuDNN benchmarking, lo que cambia ligeramente las entradas y el muestreo.
-- Riesgo de alucinación: como modelo generativo de vídeo y acciones, puede producir predicciones visuales plausibles pero incorrectas; no se documentan métricas de calibración.
-- Sesgos: no se documentan análisis de sesgo; el dataset LIBERO-10 tiene un conjunto fijo de 10 tareas y una distribución visual concreta (256x256, 20 FPS), lo que puede introducir sesgos de dominio.
-- Idiomas: no se declara soporte multilingüe; las instrucciones de LIBERO están en inglés.
-- Licencia: OpenMDW 1.1; es necesario revisar sus términos para uso comercial, ya que no es una licencia permisiva estándar tipo Apache 2.0 o MIT.
-- Reproducibilidad: el checkpoint se seleccionó por tasa de éxito en LIBERO entre los guardados, lo que puede introducir un sesgo de selección sobre el conjunto de evaluación.
-- Sin soporte declarado de tool calling, agentes o razonamiento multi-paso fuera del bucle de control robótico.
+- El modelo está ajustado exclusivamente para LIBERO-10 (10 tareas de manipulación); no es un modelo de propósito general y su rendimiento fuera de ese dominio no está documentado.
+- Depende de un protocolo de evaluación muy específico: MuJoCo 2.3.7 (no 3.x, que altera tareas con mucho contacto), robosuite 1.4.0, hf-libero 0.1.4 y un commit concreto de LeRobot; variaciones en estas versiones invalidan la comparación de resultados.
+- La evaluación oficial ejecutó el paso de canvas de vídeo del preprocesador en CPU y desactivó cuDNN benchmarking; `lerobot-eval` lo ejecuta en el dispositivo de la política y activa cuDNN benchmarking, lo que cambia las entradas y el muestreo por pequeñas cantidades numéricas.
+- No se ha documentado el comportamiento en idiomas distintos del inglés para las instrucciones de tarea.
+- Riesgo de alucinación visual y de acciones: al ser un modelo generativo que predice vídeo futuro y acciones, puede producir planes plausibles pero incorrectos en escenas fuera de distribución.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse solo con LIBERO-10, hereda los sesgos de ese conjunto (objetos, iluminación y configuraciones específicas).
+- Restricciones de licencia: openmdw1.1-license; es necesario revisar los términos en https://openmdw.ai/license/1-1/ antes de uso comercial.
+- El checkpoint publicado es el de la actualización 2000, seleccionado por tasa de éxito en LIBERO; no se ha validado con un split independiente, ya que no se usó split de validación.
+- No se documentan formatos de cuantización, por lo que el despliegue en GPUs de menor VRAM requiere trabajo adicional no cubierto por la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lerobot/Cosmos3-Nano-Policy-LIBERO_10
 - Modelo base en formato LeRobot: https://huggingface.co/lerobot/Cosmos3-Nano
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Nano/tree/e59a53c25979a090fa8706c9acc0c254a6e89b92
-- Política Cosmos3-Edge para LIBERO-10: https://huggingface.co/lerobot/Cosmos3-Edge-Policy-LIBERO_10
+- Modelo comparable Cosmos3-Edge-Policy-LIBERO_10: https://huggingface.co/lerobot/Cosmos3-Edge-Policy-LIBERO_10
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/LIBERO_10-Cosmos3
-- Tech report (arXiv): https://arxiv.org/abs/2606.02800
+- Tech report (arXiv 2606.02800): https://arxiv.org/abs/2606.02800
+- Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
+- Repositorio de LeRobot en GitHub: https://github.com/huggingface/lerobot/tree/main/src/lerobot
 - Commit de LeRobot usado en la evaluación: https://github.com/huggingface/lerobot/commit/d0a20dc38e058a8aa3f7bc48cf32d48bb2f99e5b
-- Pull request de LeRobot: https://github.com/huggingface/lerobot/pull/5134
+- Pull request de LeRobot #5134: https://github.com/huggingface/lerobot/pull/5134
+- Paper de LeRobot (arXiv 2602.22818): https://arxiv.org/abs/2602.22818
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

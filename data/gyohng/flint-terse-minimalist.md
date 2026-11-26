@@ -2,101 +2,99 @@
 
 ## Resumen
 
-Flint Terse Minimalist es un adaptador LoRA en formato GGUF para el modelo Recursive Flint, desarrollado por el usuario gyohng. Su proposito es reducir drasticamente la longitud del razonamiento interno que el modelo genera dentro de las etiquetas `<think>`, manteniendo intactas las respuestas finales. Segun la model card, consigue una reduccion del 81% en tokens de pensamiento para tareas de codigo, del 86% en matematicas y del 85% en prosa y chat, con una perdida de precision de aproximadamente 4 tareas de codigo sobre 110 respecto al modelo base.
+flint-terse-minimalist es un ajuste fino del modelo Flint de RecursiveSI, publicado por gyohng, cuyo objetivo es reducir de forma drastica el numero de tokens de razonamiento que el modelo genera dentro de los bloques `<think>` sin degradar en exceso la calidad de las respuestas finales. Se distribuye como un unico archivo GGUF de 33,7 GB listo para usar en LM Studio o llama.cpp, sin necesidad de instalar adaptadores adicionales. El modelo base es `RecursiveSI/flint-int4-gguf`, una cuantizacion Q4_1 de Flint.
 
-El adaptador se aplica sobre el checkpoint int4 del modelo base sin modificarlo, por lo que no requiere reentrenar ni sustituir los pesos originales. Esta pensado para entornos de inferencia local con llama.cpp y LM Studio, y existe una variante separada para MLX. El interes actual reside en que permite desplegar un modelo con capacidad de razonamiento explicito en hardware modesto, reduciendo el coste en tokens de salida y la latencia asociada al modo de pensamiento.
+El modelo parte de una arquitectura MoE con aproximadamente 39.800 millones de parametros totales y una ventana de contexto de 262.144 tokens, heredada integramente del modelo base. La innovacion principal no esta en la arquitectura sino en el entrenamiento: mediante aprendizaje por refuerzo se penaliza la longitud del razonamiento interno, forzando al modelo a "pensar en taquigrafia" y a emitir respuestas completas con un coste computacional de decoding mucho menor.
 
-El modelo base, Recursive Flint, es un modelo MoE (mezcla de expertos) con 126.615.552 parametros totales reportados en safetensors, licencia Apache-2.0 y entrenamiento orientado a razonamiento y codigo. La ficha se centra en el adaptador, pero describe el comportamiento del conjunto base mas adaptador tal como lo documenta el autor.
+Es relevante ahora porque el coste de inferencia en modelos con modo de razonamiento (thinking) esta dominado por los tokens generados antes de la respuesta final. Reducir ese pensamiento entre un 83% y un 93% segun la tarea tiene un impacto directo en latencia y coste, a cambio de una perdida acotada de precision en tareas de codigo (unos 10 aciertos menos sobre 110 tareas respecto al base).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con atencion y expertos enrutados; el adaptador actua sobre atencion, experto compartido, MLPs densos y `down_proj` de las ultimas 16 capas MoE |
-| Parametros totales | 126.615.552 (modelo base, dato de safetensors); el adaptador LoRA es un fichero GGUF de 339 MB |
+| Arquitectura | Transformer MoE (mezcla de expertos), con expertos compartidos, expertos enrutados y MLPs densos; derivada de Flint |
+| Parametros totales | 39.785.287.456 (~39,8 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Base en int4 (fichero `flint-int4-q4_1.gguf`); el adaptador se distribuye en GGUF y se aplica sobre esa cuantizacion concreta |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | GGUF Q4_1 (tensores base) con determinados tensores reescritos a F16; existen adaptadores LoRA en GGUF y MLX, y un modelo MLX completo |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (adaptador LoRA); base en GGUF int4 q4_1 |
+| Formato de pesos | GGUF (archivo unico `flint-terse-minimalist.gguf`, 33,7 GB); tambien LoRA GGUF/MLX y modelo MLX completo en repos separados |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena directamente sobre los coeficientes int4 del modelo base, sin desquantizar, mediante LoRA de rango 32 en FP32 aplicado a las capas de atencion, al experto compartido y a los MLPs densos. Ademas, adapta los expertos enrutados con LoRA por experto sobre `down_proj` en las ultimas 16 capas MoE, lo que exige una version de llama.cpp con soporte de LoRA por experto. El entrenamiento combina una fase de aprendizaje por refuerzo, en la que una respuesta solo obtiene recompensa si supera sus tests y cabe en un presupuesto de pensamiento decreciente, con una pasada supervisada posterior para ensenar el estilo telegrafico en prosa y chat.
+La arquitectura es la del modelo Flint: un transformer con mezcla de expertos (MoE) que incluye un experto compartido, dos MLPs densos y expertos enrutados en las ultimas 16 capas MoE. El ajuste fino se aplico directamente sobre los coeficientes cuantizados int4 del base, con LoRA de rango 32 en FP32 sobre atencion (q/k/v/o), el experto compartido y los MLPs densos, mas LoRA de rango 8 sobre las proyecciones down de los expertos enrutados de las ultimas 16 capas MoE. La fusion se realizo con `llama-export-lora`, reescribiendo esos tensores como F16 y copiando el resto sin cambios como Q4_1.
 
-La innovacion principal no esta en la arquitectura del modelo base, sino en el procedimiento de destilacion del razonamiento: se penaliza explicitamente la verbosidad del bloque `<think>` y se premia la correccion funcional, lo que produce un modo de pensamiento abreviado sin degradar de forma significativa la respuesta final. El adaptador no modifica los pesos base, de modo que puede cargarse y descargarse sin alterar el checkpoint original.
+El entrenamiento combina una fase supervisada breve (para ensenar pensamiento conciso en prosa y chat) con aprendizaje por refuerzo en el que una respuesta solo recibe recompensa si supera sus tests, y recibe menos recompensa cuanto mas largo es el razonamiento. En esta variante "minimalist" el presupuesto de pensamiento se fija de forma estricta, a diferencia de flint-terse, que solo penaliza por encima de un cuarto del pensamiento del base. Un paso final sobre chats cortos y conversaciones multiturno mantiene el pensamiento breve en el uso cotidiano. El autor reporta que el GGUF fusionado es equivalente a base mas adaptador: sobre mas de 16K tokens de transcripciones, la divergencia KL media es inferior a 0,005 con un 98% de coincidencia en el top token, dentro de la variacion por tamano de batch.
 
 ## Capacidades
 
-- Generacion de texto conversacional con respuestas finales completas.
-- Razonamiento en modo pensamiento abreviado dentro de `<think>`, con reduccion del 81-86% de tokens segun categoria.
-- Resolucion de tareas de codigo: 98,0 sobre 110 tareas en la evaluacion del autor.
-- Resolucion de tareas matematicas: 108,0 sobre 120 tareas en la evaluacion del autor.
-- Generacion de prosa y chat con reduccion del 85% de pensamiento respecto al base.
-- Compatibilidad con llama.cpp y LM Studio mediante carga de LoRA GGUF.
-- Variante separada para MLX (Apple Silicon).
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
-- No se documentan capacidades multilingues explicitas; los idiomas soportados figuran como no disponibles.
+- Generacion de texto y conversacion multiturno con contexto de hasta 262.144 tokens.
+- Razonamiento interno en modo thinking, pero deliberadamente comprimido y en taquigrafia dentro de `<think>`.
+- Generacion de codigo, con soporte para tareas de programacion evaluadas en 110 tareas de test.
+- Razonamiento matematico, evaluado en 120 tareas.
+- Prosa y chat general, incluyendo saludos y conversacion trivial, con pensamiento minimo.
+- Plantilla de chat propia de Flint embebida, compatible con llama.cpp (`--jinja`) y LM Studio; omite mensajes de sistema vacios.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags del repo).
+- No se documenta soporte explicito de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Asistentes de codigo en local: el adaptador mantiene 98,0 sobre 110 tareas de codigo con un 81% menos de tokens de pensamiento, lo que reduce el coste por consulta en entornos de desarrollo integrado con llama.cpp.
-- Razonamiento matematico por lotes: con 108,0 sobre 120 tareas y un 86% menos de pensamiento, es adecuado para pipelines que resuelven problemas aritmeticos o algebraicos de forma masiva donde el coste de salida importa.
-- Chat de atencion al cliente: la reduccion del 85% en prosa y chat disminuye la latencia percibida en conversaciones multi-turno, manteniendo respuestas finales completas.
-- Despliegue en portatiles y equipos de sobremesa: al ser un LoRA de 339 MB sobre un base int4, permite ejecutar un modelo con modo de razonamiento en hardware de consumo mediante LM Studio.
-- Prototipado rapido de agentes con razonamiento acotado: el pensamiento telegrafico reduce el riesgo de desbordar presupuestos de tokens en cadenas de varios pasos, aunque el soporte de agentes no esta documentado explicitamente.
-- Evaluacion comparativa de estilos de razonamiento: sirve como referencia para estudiar el equilibrio entre verbosidad del pensamiento y precision en tareas verificables, dado que el autor publica el codigo y los datos de reproduccion.
-- Integracion en flujos de CI con llama-server: el binario admite `--lora` y plantilla Jinja, lo que facilita pruebas automatizadas de generacion con muestreo fijo (temperatura 1, top-p 0,95, top-k 20).
+- Asistentes conversacionales de bajo coste: al reducir el pensamiento un 93% en prosa y chat, el modelo responde con mucha menos latencia en conversaciones cotidianas, lo que abarata el despliegue de chatbots de atencion al publico.
+- Generacion de codigo en produccion: mantiene aproximadamente 92,3 sobre 110 tareas de codigo (frente a 102,3 del base), suficiente para autocompletado, generacion de tests y refactorizaciones donde la latencia importa mas que el ultimo punto de precision.
+- Razonamiento matematico asistido: con 107,7 sobre 120 tareas, supera al base (103,3) en matematicas, por lo que es adecuado para tutoria o resolucion de problemas paso a paso con presupuesto de tokens controlado.
+- Despliegue local en estaciones de trabajo: al ser un GGUF unico de 33,7 GB, se puede cargar en LM Studio o llama.cpp sin infraestructura adicional, util para entornos con requisitos de privacidad.
+- Procesamiento de documentos largos: la ventana de 262.144 tokens permite resumir o extraer informacion de contratos, informes o bases de codigo extensas en una sola pasada.
+- Pipelines de CI/CD para revision de codigo: el bajo coste de pensamiento permite ejecutar el modelo sobre cada pull request sin disparar el gasto en GPU, generando comentarios y sugerencias.
+- Prototipado rapido de agentes conversacionales: la plantilla de chat compatible con llama.cpp y LM Studio facilita integrarlo en backends existentes con minimos cambios.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, medidos sobre el base int4 sin modificar en llama.cpp, media de tres semillas con una muestra por tarea (temperatura 1, top-p 0,95, top-k 20):
+Resultados publicados por el autor, medidos sobre el base int4 con el adaptador en llama.cpp, media de tres semillas, una muestra por tarea, temperatura 1, top-p 0,95, top-k 20. La reduccion de pensamiento es relativa al base en las mismas tareas.
 
 | Modelo | Codigo (110 tareas) | Matematicas (120 tareas) | Menos pensamiento: codigo | matematicas | prosa y chat |
 |---|---:|---:|---:|---:|---:|
 | Flint int4 (base) | 102,3 | 103,3 | — | — | — |
-| flint-terse | 102,7 | 109,7 | 62% | 79% | 85% |
-| flint-terse-minimalist | 98,0 | 108,0 | 81% | 86% | 85% |
+| flint-terse | 101,3 | 108,7 | 72% | 84% | 87% |
+| flint-terse-minimalist | 92,3 | 107,7 | 83% | 85% | 93% |
 
-No se han publicado en la informacion disponible resultados de benchmarks estandar como MMLU, HumanEval o GSM8K, ni comparaciones con modelos de otros autores.
+Ejemplo cualitativo del autor: ante un "Hi!", el base genera 123 tokens de pensamiento y esta variante 15.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita; el base se distribuye en int4 q4_1 y el adaptador ocupa 339 MB adicionales.
-- GPU recomendadas: no disponible. El autor documenta ejecucion en llama.cpp y LM Studio, incluido LM Studio en Mac, lo que sugiere viabilidad en Apple Silicon y GPUs de consumo.
-- Cabe en GPU de consumo: probablemente si, dado el tamano del base en int4 y el LoRA de 339 MB, aunque no se aporta una cifra de VRAM concreta.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--lora` y `--jinja`), LM Studio con el loader del repositorio GitHub, y MLX mediante la variante `flint-terse-minimalist-mlx`.
-- Requisito critico: se necesita una build de llama.cpp con soporte de LoRA por experto; no se ha probado con el llama.cpp incluido en LM Studio y, si falla, el autor recomienda usar `flint-terse`.
-- Latencia y throughput: no disponibles; la reduccion de tokens de pensamiento (81-86%) implica menor coste de decodificacion, pero no se publican cifras absolutas.
+- VRAM estimada: el archivo GGUF pesa 33,7 GB, por lo que se necesita al menos esa cantidad de VRAM (o memoria unificada) para cargarlo entero en GPU; con offloading parcial a RAM se puede ejecutar en equipos con menos VRAM a costa de latencia.
+- GPU recomendadas: A100 80 GB, H100, o configuraciones multi-GPU; en consumer, RTX 4090 (24 GB) no permite cargar el modelo completo en VRAM, pero si con offloading parcial via llama.cpp.
+- Cabe en consumer GPU: solo de forma parcial; el modelo completo no entra en GPUs de 24 GB o menos sin offloading a memoria del sistema.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio, y cualquier runtime compatible con GGUF. No se mencionan vLLM ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles de forma numerica; el autor solo indica reducciones relativas de tokens de pensamiento (83-93%) que se traducen directamente en menor tiempo de decoding.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Codigo (110) | Matematicas (120) | Menos pensamiento | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---|---|---|
-| Flint int4 (base) | 126.615.552 | no disponible | 102,3 | 103,3 | — | Apache-2.0 | Hugging Face |
-| flint-terse | no disponible | no disponible | 102,7 | 109,7 | 62% / 79% / 85% | Apache-2.0 | Hugging Face |
-| flint-terse-minimalist | 126.615.552 (base) | no disponible | 98,0 | 108,0 | 81% / 86% / 85% | Apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Codigo (110) | Matematicas (120) | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| flint-terse-minimalist | ~39,8 B (MoE) | 262.144 | 92,3 | 107,7 | Apache-2.0 | GGUF, LoRA, MLX |
+| flint-terse | ~39,8 B (MoE) | 262.144 | 101,3 | 108,7 | Apache-2.0 | GGUF, LoRA |
+| Flint int4 (base) | ~39,8 B (MoE) | 262.144 | 102,3 | 103,3 | Apache-2.0 | GGUF int4 |
 
-No se dispone de datos para comparar con modelos de otros autores en la informacion proporcionada.
+Las tres variantes comparten arquitectura, tamano y contexto; la diferencia esta en el equilibrio entre precision y longitud del razonamiento. flint-terse-minimalist prioriza el menor coste de decoding a cambio de una perdida de unos 10 aciertos en codigo. No se dispone de comparaciones con modelos de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo es compatible con el fichero `flint-int4-q4_1.gguf` en la revision `9c47151036bc2c34331142dda04488bceab2bc9f` y con el SHA-256 indicado; otras cuantizaciones son checkpoints distintos y no estan soportadas.
-- Requiere una build de llama.cpp con soporte de LoRA por experto; puede fallar en el llama.cpp incluido en LM Studio.
-- La plantilla de chat incluida elimina el `replace("\x00", "")` original porque el motor de plantillas de LM Studio no lo soporta; usar otra plantilla puede alterar el comportamiento.
-- Perdida de precision en codigo de aproximadamente 4 tareas sobre 110 respecto al base (98,0 frente a 102,3); para maxima precision en codigo el autor recomienda `flint-terse`.
-- Los benchmarks son del propio autor, con una muestra por tarea y tres semillas; no hay validacion independiente.
-- No se documentan sesgos conocidos, comportamiento multilingue ni evaluaciones de alucinacion.
-- Licencia Apache-2.0 sin condiciones adicionales, lo que permite uso comercial, pero el modelo base y el adaptador se distribuyen sin garantias.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion por terceros.
+- Perdida de precision en codigo: unos 10 aciertos menos sobre 110 tareas respecto al base (92,3 frente a 102,3); para maxima precision en codigo el autor remite a flint-terse.
+- Pensamiento en taquigrafia: el razonamiento interno puede ser dificil de auditar o interpretar, lo que complica la depuracion de fallos.
+- Artefactos de formato: en chats, aproximadamente el 3% de las respuestas de flint-terse (variante relacionada) incluyen un `</think>` suelto; el autor no cuantifica este efecto para la variante minimalist.
+- Sesgos: no se documentan sesgos especificos en la informacion disponible.
+- Riesgo de alucinacion: inherente a los modelos generativos; no se publican tasas de alucinacion.
+- Idiomas: no se especifican los idiomas soportados, por lo que la calidad multilingue no esta garantizada.
+- Licencia: Apache-2.0 permite uso comercial sin condiciones adicionales; el ajuste fino no anade restricciones.
+- Contexto: aunque la ventana es de 262.144 tokens, el rendimiento en contextos muy largos no se ha documentado mas alla de las pruebas de divergencia KL sobre 16K tokens.
 
 ## Enlaces
 
-- Hugging Face del adaptador: https://huggingface.co/gyohng/flint-terse-minimalist
-- Variante MLX: https://huggingface.co/gyohng/flint-terse-minimalist-mlx
-- Adaptador hermano con mayor precision en codigo: https://huggingface.co/gyohng/flint-terse
-- Modelo base: https://huggingface.co/RecursiveSI/flint
-- Base int4 GGUF: https://huggingface.co/RecursiveSI/flint-int4-gguf
-- Repositorio con codigo, datos y reproduccion: https://github.com/gyohng/flint-terse
-- Organizacion Recursive: https://huggingface.co/RecursiveSI
+- Modelo en Hugging Face: https://huggingface.co/gyohng/flint-terse-minimalist
+- Adaptadores LoRA (GGUF y MLX): https://huggingface.co/gyohng/flint-terse-minimalist-lora
+- Modelo MLX completo: https://huggingface.co/gyohng/flint-terse-minimalist-mlx
+- Variante flint-terse: https://huggingface.co/gyohng/flint-terse
+- Modelo base cuantizado: https://huggingface.co/RecursiveSI/flint-int4-gguf
+- Modelo Flint original: https://huggingface.co/RecursiveSI/flint
+- Repositorio con codigo y reproduccion: https://github.com/gyohng/flint-terse

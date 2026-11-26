@@ -2,92 +2,90 @@
 
 ## Resumen
 
-Qwen3-4B-SafeRL-MNN es un paquete de inferencia de texto para el motor MNN (Mobile Neural Network, de Alibaba) construido a partir del modelo Qwen/Qwen3-4B-SafeRL. Lo publica la organizacion taobao-mnn, que se encarga de convertir modelos de la familia Qwen a un formato optimizado para ejecucion en CPU mediante MNN. El objetivo no es ofrecer un modelo nuevo, sino un artefacto listo para desplegar el modelo base en entornos donde no hay GPU o donde se prefiere una pila ligera y determinista.
+Qwen3-4B-SafeRL-MNN es la versión cuantizada para el motor de inferencia MNN del modelo Qwen3-4B-SafeRL, un ajuste de alineación de seguridad del Qwen3-4B de Alibaba. El modelo base se entrena mediante aprendizaje por refuerzo usando señales de recompensa proporcionadas por Qwen3Guard-Gen, un clasificador de seguridad de la propia familia Qwen. Este repositorio, publicado por el equipo taobao-mnn, no contiene los pesos originales en safetensors sino una exportación optimizada para ejecución en CPU mediante MNN, combinando cuantización HQQ de 4 bits en las capas lineales del transformer y 8 bits en la cabeza de salida.
 
-El modelo subyacente declara arquitectura `Qwen3ForCausalLM` (model_type `qwen3`) con 36 capas de lenguaje y un campo `max_position_embeddings` de 40960 en la configuracion. El paquete solo exporta el modulo de lenguaje (entrada y salida de texto), con pesos lineal del backbone cuantizados en HQQ 4 bits y la cabeza LM en HQQ 8 bits. La licencia es apache-2.0, heredada del modelo original.
+El modelo conserva la arquitectura transformer densa del Qwen3-4B original, con 36 capas y una dimensión oculta de 2560, lo que sitúa el total en aproximadamente 4 000 millones de parámetros. La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 4B con alineación de seguridad en hardware sin GPU, algo poco habitual en el ecosistema, ya que la mayoría de distribuciones cuantizadas se orientan a llama.cpp o a formatos GGUF. El formato MNN está pensado para integración en aplicaciones móviles y de escritorio mediante el runtime de Alibaba.
 
-La relevancia de esta ficha es doble: por un lado, documenta una conversion concreta con trazabilidad estricta (version de MNN 3.6.2, commit fijado, fecha de aceptacion 2026-11-12); por otro, deja claro que la validacion se limita a CPU x64 y que no hay verificacion en ARM, Metal, OpenCL, Vulkan, CUDA ni dispositivos moviles. Es, por tanto, un artefacto util para prototipado y despliegue en CPU, no una alternativa a los pesos originales en GPU.
+El repositorio ocupa 5,2 GB e incluye el grafo del modelo (`llm.mnn`), los pesos (`llm.mnn.weight`), el tokenizador (`tokenizer.mtok`) y los ficheros de configuración. La licencia es Apache 2.0, heredada del modelo base, y los idiomas declarados son chino e inglés. Su perfil de uso es el de un modelo de generación de texto para asistentes y aplicaciones con requisitos de seguridad, ejecutado en CPU con precisión baja y consumo de memoria reducido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (model_type `qwen3`), transformer decoder-only, 36 capas |
-| Parametros totales | no disponible (el repo ocupa 5.2 GB; no se declara el recuento exacto) |
-| Parametros activos | no aplica (no es MoE; la config no declara expertos enrutados) |
-| Longitud de contexto | max_position_embeddings=40960 en config; no es contexto maximo medido |
-| Tipos de cuantizacion | HQQ 4 bits (backbone lineal, block=64, alpha_bytes=2 FP16, sym=false) y HQQ 8 bits (cabeza LM, block=64, alpha_bytes=2 FP16, sym=false); embeddings comparten pesos de la cabeza LM |
-| Idiomas soportados | zh, en |
-| Licencia | apache-2.0 |
-| Formato de pesos | paquete MNN (grafo + pesos cuantizados HQQ), no safetensors ni GGUF |
+| Arquitectura | Transformer denso (Qwen3-4B), exportado a MNN |
+| Parametros totales | ~4 000 millones (modelo base Qwen3-4B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | HQQ 4 bits (grupo 64) en capas lineales; HQQ 8 bits (grupo 64) en cabeza de salida; escalas en FP16; embeddings compartidos con la cabeza en 8 bits |
+| Idiomas soportados | chino (zh), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MNN (`llm.mnn`, `llm.mnn.weight`), tokenizador `tokenizer.mtok` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de la familia Qwen3 con 36 capas de lenguaje, segun la configuracion de origen. El paquete MNN solo exporta el modulo de lenguaje: no incluye vision, audio ni video, y la entrada y salida son exclusivamente texto. La cuantizacion aplicada es HQQ (Half-Quadratic Quantization) con bloques de 64 y escalas en FP16 (`alpha_bytes=2`), simetrica desactivada (`sym=false`). El backbone lineal usa 4 bits y la cabeza de salida 8 bits; la matriz de embeddings de entrada no es una copia BF16 independiente, sino que comparte los pesos cuantizados de la cabeza LM.
+El modelo base Qwen3-4B-SafeRL parte de la arquitectura transformer densa de Qwen3-4B: 36 capas, dimensión oculta de 2560 y atención multi-cabeza estándar. Sobre ese modelo se aplica un proceso de aprendizaje por refuerzo cuyo reward model es Qwen3Guard-Gen, un clasificador generativo de seguridad de la familia Qwen. El objetivo es reducir respuestas dañinas o inseguras manteniendo la capacidad general del modelo. No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset de RL ni los hiperparámetros del proceso.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, el proceso de alineamiento (RLHF/DPO) ni innovaciones de decodificacion del modelo original en la documentacion proporcionada. La model card del paquete MNN declara explicitamente que no reproduce afirmaciones de rendimiento o capacidad del modelo upstream que no hayan sido medidas en el propio paquete. La conversion se realizo con el exportador estandar de MNN en el commit `b0239771b07b317a258fbc384683bbd540741406` y la version de runtime MNN 3.6.2, con soporte de LLM, bajo consumo de memoria y fusion de transformer.
+La exportación a MNN sustituye las capas lineales por versiones cuantizadas con HQQ (Half-Quadratic Quantization) a 4 bits con grupo de 64, mientras que la cabeza de salida y los embeddings compartidos se mantienen a 8 bits. Las escalas de cuantización se almacenan en FP16. El resultado es un paquete autocontenido que el runtime MNN ejecuta en CPU con cuatro hilos por defecto, en modo `precision=low` y `memory=low`. La verificación publicada por el autor (12 de noviembre de 2026, x64 CPU) cubre alineación de mapeo FP32, saludos, aritmética, traducción y una prueba de humo con la configuración por defecto. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto en chino e ingles, con el modelo base Qwen3-4B-SafeRL como referencia.
-- Razonamiento y respuesta a preguntas de tipo aritmetico y conversacional (validado en los casos de prueba del paquete: saludo, aritmetica, traduccion y traduccion larga).
-- Traduccion entre idiomas soportados (se incluye un caso de traduccion larga de 875 tokens de prompt en la validacion).
-- Modo de razonamiento hibrido: la configuracion clasifica el razonamiento como `hybrid` y no desactiva el pensamiento forzado por defecto; el contexto Jinja por defecto es `null`.
-- Inferencia determinista en CPU x64 con muestreo configurable (penalty, topK, topP, min_p, temperature).
-- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni video en la informacion disponible.
+- Generación de texto conversacional en chino e inglés.
+- Razonamiento y aritmética básica, verificado en las pruebas de exportación del autor.
+- Traducción entre los idiomas soportados, también verificada en las pruebas de exportación.
+- Alineación de seguridad reforzada mediante RL con Qwen3Guard-Gen como reward model.
+- Ejecución en CPU sin GPU mediante el runtime MNN.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles (modelo solo de texto).
 
 ## Casos de uso
 
-- Prototipado en CPU sin GPU: el paquete esta disenado para ejecutarse con MNN en x64 CPU con precision baja y bajo consumo de memoria, lo que permite levantar un endpoint de generacion de texto en maquinas sin acelerador.
-- Traduccion zh-en en entornos embebidos: la validacion incluye un caso de traduccion larga (875 tokens de prompt) que sugiere uso para traduccion de parrafos completos en pipelines sin GPU.
-- Asistentes conversacionales ligeros: con contexto de hasta 40960 posiciones declaradas y generacion por defecto de 512 tokens, sirve para dialogos multi-turno de longitud moderada en aplicaciones de escritorio o servidores modestos.
-- Generacion de respuestas a preguntas frecuentes: el caso aritmetico y de saludo validado indica utilidad para FAQ y respuestas cortas deterministas con muestreo controlado.
-- Despliegue en contenedores con requisitos de memoria ajustados: la cuantizacion HQQ 4/8 bits y el modo `low memory` reducen la huella frente a los pesos originales, lo que facilita ejecutar el modelo en instancias pequenas.
-- Evaluacion y comparacion de cuantizaciones: al incluir `export_args.json` y `refresh_metadata.json`, el paquete sirve como referencia reproducible para medir el impacto de HQQ 4/8 bits frente al modelo base en tareas de texto.
-- Integracion en aplicaciones moviles o de borde (con cautela): aunque el motor MNN esta pensado para despliegue ligero, la model card advierte que ARM CPU FP16, Metal, OpenCL, Vulkan y dispositivos moviles no han sido verificados, por lo que este caso requiere validacion propia.
+- Asistentes conversacionales en aplicaciones de escritorio o móviles: el paquete MNN está diseñado para integrarse en apps mediante el runtime de Alibaba, de modo que un asistente con alineación de seguridad puede ejecutarse localmente en CPU sin depender de servicios en la nube.
+- Moderación y generación de respuestas seguras en entornos con requisitos de cumplimiento: el ajuste con Qwen3Guard-Gen reduce la probabilidad de respuestas dañinas, lo que resulta adecuado para chatbots orientados al usuario final en productos de consumo.
+- Traducción automática ligera chino-inglés: las pruebas del autor incluyen casos de traducción, y el tamaño de 4B con cuantización de 4 bits permite desplegarlo en equipos modestos.
+- Procesamiento por lotes en servidores sin GPU: al ejecutarse en CPU con MNN, puede integrarse en pipelines de preprocesado o generación de contenido donde no hay aceleradores disponibles.
+- Prototipado e investigación sobre alineación de seguridad: al estar basado en Qwen3-4B-SafeRL, sirve para evaluar el efecto del RL con rewards de seguridad en un modelo pequeño y desplegable localmente.
+- Aplicaciones embebidas y de borde: el formato MNN y la configuración de baja memoria están pensados para dispositivos con recursos limitados, donde otros formatos cuantizados resultan menos prácticos.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card indica explicitamente que no se publican cifras de rendimiento ni de memoria por dispositivo, y que las pruebas realizadas son de tipo estructural (determinismo, alineacion FP32, smoke test con la configuracion por defecto), no de precision o exactitud. Los casos validados cubren prompts de 19 a 875 tokens, pero no constituyen una evaluacion de calidad.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el paquete esta orientado a CPU y no se publican cifras de memoria.
-- GPU recomendadas: no disponibles; la validacion solo cubre CPU x64. No hay verificacion en CUDA, Metal, OpenCL ni Vulkan.
-- Compatibilidad con GPU de consumo: no verificada; no se puede confirmar que quepa en RTX 4090 u otras GPU consumer con este paquete.
-- Despliegue: MNN 3.6.2 compilado con `MNN_BUILD_LLM=ON`, `MNN_LOW_MEMORY=ON`, `MNN_BUILD_CONVERTER=ON` y `MNN_SUPPORT_TRANSFORMER_FUSE=ON`; ejecutable de referencia `llm_demo`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI con este formato.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
-- Configuracion por defecto del paquete: backend CPU, memoria baja, precision baja, 4 hilos, temperature 0.6, top_k 20, top_p 0.95, repetition_penalty 1.1, sampler mixto y limite de generacion de 512 tokens.
+- VRAM estimada para inferencia: no aplica en el modo previsto (CPU); el repositorio ocupa 5,2 GB en disco y la ejecución usa cuantización de 4/8 bits con `memory=low`.
+- GPU recomendadas: no disponible; el autor valida la ejecución en CPU x64.
+- Compatibilidad con GPU de consumo: no documentada en la información proporcionada.
+- Opciones de despliegue: runtime MNN (compilación con `MNN_BUILD_LLM=ON`, `MNN_LOW_MEMORY=ON`, `MNN_SUPPORT_TRANSFORMER_FUSE=ON`) mediante el binario `llm_demo`; verificado con MNN 3.6.2 en el commit `b0239771b07b317a258fbc384683bbd540741406`.
+- Configuración por defecto: CPU, 4 hilos, `precision=low`, `memory=low`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-SafeRL-MNN | no disponible (base 4B) | 40960 declarado | MNN + HQQ 4/8 bits | apache-2.0 | Solo CPU x64 validado; solo texto; zh/en |
-| Qwen/Qwen3-4B-SafeRL | 4B (por nombre) | no disponible en esta ficha | safetensors (upstream) | apache-2.0 | Modelo original; pesos completos; requiere pila estandar (transformers, vLLM, etc.) |
-| Qwen3-4B (familia Qwen3) | 4B | no disponible en esta ficha | safetensors, GGUF (segun distribucion) | apache-2.0 | Alternativa de referencia de la misma familia, sin el ajuste SafeRL |
-
-No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a formato, licencia y disponibilidad.
+| Qwen3-4B-SafeRL-MNN | ~4B | no disponible | MNN, CPU | Apache 2.0 | Versión cuantizada HQQ 4/8 bits; alineación de seguridad con Qwen3Guard-Gen |
+| Qwen3-4B-SafeRL (base) | ~4B | no disponible | safetensors (Hugging Face) | Apache 2.0 | Modelo original sin cuantizar; requiere framework estándar (transformers, vLLM) |
+| Qwen3-4B | ~4B | no disponible | safetensors, GGUF en la familia Qwen | Apache 2.0 | Modelo base sin el ajuste de seguridad específico |
+| Otras distribuciones cuantizadas de Qwen3-4B (GGUF/llama.cpp) | ~4B | no disponible | GGUF | Apache 2.0 | Orientadas a llama.cpp/Ollama; no comparables directamente en formato con MNN |
 
 ## Limitaciones y advertencias
 
-- Validacion restringida: solo se ha verificado CPU x64; ARM CPU FP16, Metal, OpenCL, Vulkan, CUDA y dispositivos moviles no estan validados.
-- Sin datos de rendimiento: no hay benchmarks de precision, latencia ni memoria publicados; las pruebas son estructurales y de determinismo, no de calidad.
-- Riesgo de alucinacion: la model card advierte que la salida cuantizada puede seguir produciendo errores; la cuantizacion HQQ 4 bits en el backbone puede degradar la fidelidad respecto al modelo original.
-- Contexto: `max_position_embeddings=40960` es un campo de configuracion, no un contexto maximo medido; los casos validados llegan a 875 tokens de prompt.
-- Idiomas: solo chino e ingles declarados; no se garantiza comportamiento en castellano ni en otros idiomas.
-- Capacidades no cubiertas: no hay soporte documentado de vision, audio, video, tool calling ni agentes.
-- Licencia: apache-2.0 heredada del modelo original; la conversion cuantizada no amplia la autorizacion y persisten las obligaciones de atribucion y politica de uso del upstream.
-- Integridad del paquete: grafo, pesos, tokenizador, embeddings, plantilla y configuracion deben actualizarse como un conjunto; no se deben mezclar revisiones ni sustituir solo el archivo de grafo.
-- Reproducibilidad: reexportar con distintas versiones de dependencias no garantiza bytes identicos; hay que usar un directorio de salida nuevo y revalidar.
+- Solo se declaran chino e inglés; el rendimiento en castellano no está verificado y probablemente sea inferior.
+- El ajuste de seguridad reduce pero no elimina el riesgo de respuestas dañinas o alucinaciones; no debe usarse como único mecanismo de moderación en producción.
+- La cuantización HQQ a 4 bits introduce pérdida de precisión respecto al modelo original; el autor solo valida pruebas de humo, no evaluaciones exhaustivas de calidad.
+- La longitud de contexto no se especifica en la información proporcionada; conviene consultar `llm_config.json` antes de asumir la ventana del Qwen3-4B original.
+- El formato MNN limita la portabilidad: no es compatible directamente con vLLM, TGI, llama.cpp ni Ollama, y requiere compilar el runtime MNN.
+- La licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen3-4B-SafeRL; conviene revisar la licencia upstream.
+- El repositorio tiene muy pocas descargas (247) y ningún "like", lo que indica escasa validación por parte de la comunidad.
+- No hay información sobre sesgos específicos del ajuste de seguridad ni sobre su comportamiento en dominios sensibles.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/taobao-mnn/Qwen3-4B-SafeRL-MNN
-- Modelo base (ModelScope): https://modelscope.cn/models/Qwen/Qwen3-4B-SafeRL/summary
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-SafeRL/blob/main/LICENSE
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-SafeRL
+- ModelScope: https://modelscope.cn/models/MNN/Qwen3-4B-SafeRL-MNN
 - Repositorio MNN: https://github.com/alibaba/MNN
-- Exportador MNN (commit fijado): https://github.com/alibaba/MNN/tree/b0239771b07b317a258fbc384683bbd540741406/transformers/llm/export
-- Documentacion MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+- Documentación MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-SafeRL/blob/main/LICENSE

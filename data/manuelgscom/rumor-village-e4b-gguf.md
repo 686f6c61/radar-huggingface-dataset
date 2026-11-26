@@ -2,97 +2,105 @@
 
 ## Resumen
 
-rumor-village-e4b es un ajuste fino mediante LoRA del modelo Gemma 4 E4B de Google, fusionado y cuantizado a GGUF Q4_K_M, desarrollado por Manuel García Sanz. Su propósito no es la conversación general, sino actuar como motor de decisión de los NPC de Rumor Village, un juego de simulación de rumores para Linux y Windows en el que hasta 100 vecinos de un pueblo 3D toman decisiones de forma autónoma. Cada vecino envía al modelo una tarjeta breve (identidad, ubicación, vecinos presentes y conocimiento acumulado) y recibe una única acción en JSON: saludar, contar un rumor, preguntar por él, despedirse, desplazarse o no hacer nada, acompañada de una frase para el bocadillo.
+rumor-village-e4b es un ajuste fino mediante LoRA del modelo Gemma 4 E4B de Google, desarrollado por Manuel García Sanz y publicado en formato GGUF (Q4_K_M) para su uso con llama.cpp. El modelo no es un asistente conversacional de propósito general: está entrenado para cumplir un contrato muy concreto dentro de Rumor Village, un videojuego de simulación de rumores para Linux y Windows en el que hasta 100 vecinos de un pueblo 3D toman decisiones autónomas. Cada vecino envía al modelo una tarjeta breve (identidad, ubicación, vecinos presentes y conocimiento acumulado) y recibe una única acción en JSON: saludar, contar un rumor, preguntar por él, despedirse, desplazarse o no hacer nada, junto con una frase para el bocadillo.
 
-La relevancia del modelo reside en su contrato de salida estrictamente cerrado y en su eficiencia: todas las decisiones de los vecinos se procesan en un único lote sobre una GPU de consumo, sin conexión a internet y en tiempo real. El modelo base cuenta con 7.518.069.290 parámetros totales, y el autor declara un contexto de trabajo de 256 tokens por decisión con prefijo compartido cacheado, lo que reduce drásticamente el coste por inferencia en comparación con un prompt completo.
+El modelo base, Gemma 4 E4B, aporta una arquitectura transformer con aproximadamente 7.500 millones de parámetros totales, según los pesos en safetensors publicados. El ajuste se ha fusionado con el modelo base y cuantizado a Q4_K_M (5.335.287.008 bytes), lo que permite ejecutar a todos los vecinos en un solo lote sobre una única GPU de consumo, sin conexión a internet y en tiempo real. Es relevante porque demuestra un patrón de despliegue de agentes generativos a escala de juego: inferencia por lotes, salida forzada por gramática y validación determinista por parte del motor.
 
-El ajuste se centra en dos tareas concretas, `decide` y `extract`, y está entrenado para leer y escribir en inglés y español. La licencia Apache-2.0 y la disponibilidad del GGUF en un único archivo de 5,34 GB facilitan su integración en proyectos de agentes generativos y simulación multiagente fuera del propio juego.
+El modelo es bilingüe inglés-español, se distribuye bajo licencia Apache-2.0 y está pensado exclusivamente para las tareas `decide` (elegir la acción de un vecino a partir de su tarjeta) y `extract` (convertir un rumor escrito por el jugador con sus propias palabras en un hecho estructurado). No debe emplearse como chatbot general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4 E4B de Google), ajuste fino LoRA fusionado |
+| Arquitectura | Transformer (Gemma 4 E4B), ajuste fino con LoRA fusionado |
 | Parametros totales | 7.518.069.290 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 256 tokens por tarjeta de decisión (prefijo compartido cacheado); longitud máxima del modelo base no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (5.335.287.008 bytes) |
-| Idiomas soportados | Inglés y español |
+| Longitud de contexto | no disponible (las tarjetas de entrada rondan los 256 tokens con prefijo compartido cacheado) |
+| Tipos de cuantizacion | GGUF Q4_K_M (5,34 GB); no se detallan otras variantes |
+| Idiomas soportados | inglés, español |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (`gemma-4-E4B-it-rumor-Q4_K_M.gguf`) |
+| Modelo base | google/gemma-4-E4B-it |
+| Tamano del repositorio | 5,5 GB |
+| Tareas soportadas | `decide`, `extract` |
+| Salida estructurada | JSON forzado por gramática (say / go / none + texto) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 E4B, un transformer de Google con 7.518.069.290 parámetros totales, sobre el que se aplica un ajuste fino LoRA posteriormente fusionado en los pesos base. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se emplearon técnicas de RLHF o DPO; tampoco se especifican innovaciones de atención o decodificación más allá del uso de gramáticas para forzar la salida JSON.
+El modelo parte de Gemma 4 E4B, un transformer de Google con unos 7.500 millones de parámetros totales. Sobre esa base se aplicó un ajuste fino con LoRA, posteriormente fusionado en los pesos y cuantizado a GGUF Q4_K_M para su ejecución con llama.cpp. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; esa información no está disponible.
 
-La innovación principal del ajuste es la adaptación a un contrato de salida cerrado: el modelo responde con una acción perteneciente a un vocabulario finito (lugares, vecinos y tipos de noticias del juego) y una frase de diálogo, validada después por el motor del juego. El entrenamiento se orienta a dos tareas, `decide` (acción de un vecino a partir de su tarjeta) y `extract` (conversión de un rumor escrito por el jugador en un hecho estructurado), con tarjetas de aproximadamente 256 tokens y prefijo compartido cacheado para procesar a todos los vecinos en un solo lote.
+La innovación técnica principal no reside en la arquitectura, sino en el contrato de uso: la salida se restringe mediante una gramática a un conjunto cerrado de acciones JSON, de modo que el modelo propone y el motor del juego decide. El motor valida cada acción contra las reglas del mundo antes de aplicarla, y el estado viaja siempre como datos estructurados, nunca como texto de un bocadillo. Las tarjetas de entrada son cortas (unos 256 tokens) y comparten un prefijo cacheado, lo que permite procesar a todos los vecinos en un único lote. La evaluación se realizó sobre un test congelado de 1.000 tarjetas en inglés y otras 1.000 en español.
 
 ## Capacidades
 
-- Generación de acciones estructuradas en JSON forzadas por gramática: saludar, contar un rumor, preguntar por él, despedirse, desplazarse o no hacer nada.
-- Generación de una frase breve de diálogo para el bocadillo del personaje, coherente con la acción elegida.
-- Tarea `extract`: transformación de un rumor escrito en lenguaje natural por el jugador en un hecho estructurado dentro del vocabulario del juego.
-- Decisión multiagente por lotes: hasta 100 vecinos evaluados simultáneamente en una sola GPU de consumo.
-- Soporte bilingüe inglés-español, tanto en lectura de tarjetas como en generación de diálogo.
-- Funcionamiento completamente offline tras la descarga inicial del GGUF, verificado por SHA-256.
-- No es un modelo de chat general: no está entrenado para conversación abierta, razonamiento libre ni tool calling genérico.
+- Generación de una única acción JSON por vecino: saludar, contar un rumor, preguntar por un rumor, despedirse, desplazarse o no hacer nada.
+- Generación de una frase breve para el bocadillo del personaje, asociada a la acción elegida.
+- Extracción de rumores: convierte texto libre del jugador en un hecho estructurado (tarea `extract`).
+- Salida estructurada garantizada mediante gramática, con formato JSON forzado.
+- Decisiones por lotes: hasta 100 vecinos decidiendo simultáneamente en un solo lote.
+- Soporte bilingüe de lectura y escritura en inglés y español.
+- Ejecución totalmente offline tras la descarga inicial del archivo GGUF.
+- No es un modelo de chat general: no está entrenado para conversación abierta, código, matemáticas ni razonamiento de múltiples pasos fuera de su contrato.
 
 ## Casos de uso
 
-- Simulación de sociedades de agentes generativos: el modelo puede poblar un entorno con decenas de NPC que intercambian rumores y toman decisiones autónomas, gracias a su capacidad de procesar un lote completo de tarjetas en una sola GPU de consumo.
-- Videojuegos con NPC reactivos y offline: integrado mediante llama.cpp con backend CUDA o Vulkan, permite que un título de Linux o Windows ejecute diálogos y decisiones emergentes sin conexión ni costes de API, como demuestra el propio Rumor Village.
-- Investigación sobre propagación de información: su tarea `extract` convierte rumores en hechos estructurados, lo que facilita experimentos reproducibles sobre cómo se difunde y distorsiona una noticia en una red de agentes.
-- Prototipado de contratos de salida cerrados: sirve como referencia para entrenar modelos pequeños que deban responder exclusivamente con un JSON validable por gramática, sin texto libre alrededor.
-- Evaluación de robustez multilingüe en agentes: al cubrir inglés y español con métricas separadas por idioma, permite comparar la coherencia de decisiones entre ambas lenguas en un mismo entorno simulado.
-- Generación de diálogo breve contextualizado: la frase asociada a cada acción puede reutilizarse en sistemas de bocadillos, subtítulos o registros de eventos de mundos virtuales sin necesidad de un modelo conversacional mayor.
+- Simulación de PNJ en videojuegos: cada personaje recibe su tarjeta de contexto y devuelve una acción validable por el motor, lo que permite poblar un pueblo con hasta 100 agentes autónomos en una sola GPU de consumo.
+- Propagación de rumores en un mundo simulado: el modelo decide a quién contar un rumor y a quién preguntar por él, generando cadenas de información (y desinformación) emergentes entre vecinos.
+- Prototipado de agentes generativos: sirve como referencia de arquitectura "el modelo propone, el motor decide" para investigadores que quieran separar la generación de lenguaje de la lógica determinista del sistema.
+- Extracción de hechos estructurados en lenguaje natural: la tarea `extract` convierte frases libres del jugador en datos que el motor puede almacenar y consultar.
+- Despliegue offline en entornos sin conectividad: al ejecutarse con llama.cpp sobre GGUF, encaja en equipos de escritorio con GPU de consumo y sin acceso a red.
+- Modding y experimentación sobre Rumor Village: el código del juego es abierto y el modelo se descarga automáticamente con verificación SHA-256, lo que facilita sustituirlo o reentrenarlo para otras simulaciones sociales.
+- Investigación sobre coherencia en agentes: el test congelado de decisiones permite medir contradicciones, memorias inventadas y acciones rechazadas en un entorno controlado.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el conjunto congelado Rumor Village decision test (1.000 tarjetas por idioma). No están verificados de forma independiente.
+Resultados declarados por el autor sobre el test congelado de decisiones (1.000 tarjetas por idioma). No están verificados de forma independiente.
 
-| Métrica (%) | Inglés | Español |
+| Metrica | Inglés (%) | Español (%) |
 |---|---|---|
-| Memorias inventadas (made-up memories) | 0,0 | 0,0 |
+| Memorias inventadas | 0,0 | 0,0 |
 | Contradicciones | 0,1 | 0,2 |
 | Texto incoherente | 0,6 | 0,0 |
 | Acciones rechazadas | 0,9 | 1,0 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+La model card indica además que las memorias inventadas pasaron del 2,3 % en el modelo base al 0 % tras el ajuste fino. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF Q4_K_M ocupa 5,34 GB, por lo que se necesita algo más de esa cifra para pesos y caché KV; una GPU con 8 GB de VRAM es un objetivo razonable para el despliegue.
-- GPU recomendadas: el autor indica ejecución en una única GPU de consumo; los tags del repositorio mencionan backends CUDA y Vulkan, por lo que tarjetas NVIDIA y AMD/Intel recientes son compatibles a través de llama.cpp.
-- Cabe en GPU de consumo: sí, con cuantización Q4_K_M y un único archivo de 5,34 GB.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), con backends CUDA y Vulkan; el repositorio incluye la etiqueta `endpoints_compatible`. No se documentan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: no se publican cifras concretas; el autor afirma que los 100 vecinos deciden en un solo lote en tiempo real sobre una GPU de consumo, con tarjetas de 256 tokens y prefijo compartido cacheado.
+- VRAM estimada para inferencia: en torno a 5,5-6 GB con la cuantización Q4_K_M publicada, incluyendo el contexto y el prefijo cacheado compartido.
+- GPU recomendadas: cualquier GPU de consumo con al menos 6-8 GB de VRAM; el autor menciona explícitamente soporte CUDA y Vulkan.
+- Cabe en GPU de consumo: sí, con la cuantización Q4_K_M y procesando a todos los vecinos en un solo lote.
+- Opciones de despliegue: llama.cpp (formato nativo del archivo), con backend CUDA o Vulkan; el juego lo descarga y ejecuta directamente.
+- Latencia y throughput: no se publican cifras concretas; el autor afirma que los 100 vecinos deciden en un lote en tiempo real sobre una única GPU de consumo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rumor-village-e4b | 7.518.069.290 | 256 tokens por tarjeta (prefijo cacheado) | GGUF Q4_K_M | Apache-2.0 | Decisiones JSON de NPC en un juego concreto |
-| google/gemma-4-E4B-it (base) | 7.518.069.290 | no disponible | safetensors y otros | no disponible en la información | Chat general de propósito múltiple |
-| Alternativas de agentes pequeños para juegos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| rumor-village-e4b | 7.518.069.290 | no disponible | Agente de simulación con salida JSON forzada por gramática | Apache-2.0 | GGUF en Hugging Face |
+| google/gemma-4-E4B-it | no disponible en la información | no disponible | Chat generalista | licencia de Gemma (no detallada aquí) | Hugging Face |
+| Alternativas de agentes para juegos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con otros ajustes finos para NPC o simulación multiagente no está disponible en la información proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (agentes para simulación de PNJ con salida estructurada) en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado: no es un chat general y su rendimiento fuera del formato de tarjeta y del vocabulario cerrado del juego no está garantizado.
-- Contexto de trabajo corto: las decisiones se diseñan para tarjetas de unos 256 tokens con prefijo compartido; entradas más largas o sin caché de prefijo pueden degradar el comportamiento y el rendimiento.
-- Sesgos: no se documentan sesgos específicos; al derivar de Gemma 4 E4B, puede heredar los del modelo base, no detallados en la información disponible.
-- Alucinación: el autor declara un 0 % de memorias inventadas en su test congelado, pero se trata de una métrica autodeclarada y no verificada; en producción conviene mantener la validación por parte del motor.
-- Idiomas: solo inglés y español; no hay soporte documentado para otras lenguas.
-- Licencia: Apache-2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Gemma 4 E4B de Google, cuyos términos no se detallan en la información disponible.
-- Dependencia del contrato: cualquier cambio en el formato de tarjeta, en el vocabulario de acciones o en la gramática de salida requiere reentrenamiento o ajuste, ya que el modelo está entrenado para un contrato único.
+- No es un modelo de chat general: está entrenado para un contrato cerrado de dos tareas y su uso fuera de él no está validado.
+- Los benchmarks son declarados por el autor y no han sido verificados de forma independiente.
+- El modelo base Gemma puede arrastrar sesgos presentes en sus datos de entrenamiento; la model card no documenta evaluaciones de sesgo.
+- Riesgo de alucinación mitigado por la gramática y la validación del motor, pero no eliminado: el motor rechaza entre el 0,9 % y el 1,0 % de las acciones en el test congelado.
+- Cobertura lingüística limitada a inglés y español.
+- La longitud de contexto no está documentada; el diseño asume tarjetas de unos 256 tokens, por lo que entradas mucho más largas pueden degradar el comportamiento.
+- Aunque la licencia es Apache-2.0, el modelo base Gemma puede imponer condiciones adicionales que conviene revisar antes de un uso comercial.
+- El archivo GGUF publicado corresponde únicamente a la cuantización Q4_K_M; no se ofrecen otras variantes en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/manuelgscom/rumor-village-e4b-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Repositorio del juego y código fuente: https://github.com/manuelgscom/rumor-village
+- Sitio web del autor: https://manuelgs.com/en/rumor-village/
+- Demo web del juego: https://manuelgs.com/en/rumor-village/demo/
+- Repositorio del juego: https://github.com/manuelgscom/rumor-village
 - Descargas del juego: https://github.com/manuelgscom/rumor-village/releases/latest
 - Archivo GGUF Q4_K_M: https://huggingface.co/manuelgscom/rumor-village-e4b-GGUF/resolve/main/gemma-4-E4B-it-rumor-Q4_K_M.gguf?download=true
 - Licencia: https://huggingface.co/manuelgscom/rumor-village-e4b-GGUF/blob/main/LICENSE
-- Sitio web del autor: https://manuelgs.com/en/

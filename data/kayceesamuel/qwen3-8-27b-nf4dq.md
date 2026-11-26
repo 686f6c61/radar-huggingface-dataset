@@ -2,89 +2,113 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de visión-lenguaje (VLM) denso de 27 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. Se presenta como un modelo de código abierto optimizado para hardware local, con especial énfasis en tareas de programación, flujos agénticos y automatización de oficina. Su arquitectura híbrida combina atención lineal en 48 de sus 64 capas con atención completa en las restantes, lo que reduce el coste computacional en contextos largos.
+Qwen3.8-27B-NF4DQ es una cuantizacion del modelo base Qwen/Qwen3.8-27B realizada por el usuario kayceesamuel (runciu) mediante un nuevo tipo de bloque ggml denominado NF4DQ. No se trata de una receta construida a partir de tipos existentes, sino de un formato propio que combina indices NF4 de 4 bits con una segunda etapa de cuantizacion de escalas: cada sub-bloque de 32 pesos almacena su escala como un indice de 4 bits en un codebook fijo, en lugar de un valor fp16. El resultado son 4,1562 bits por peso y un fichero de 13,23 GiB.
 
-Esta ficha corresponde a la cuantización GGUF NF4 con doble cuantización (NF4DQ) publicada por el usuario kayceesamuel en Hugging Face. El modelo original soporta una ventana de contexto nativa de 262 000 tokens, extensible hasta 1 millón, e incorpora un vision tower para entrada multimodal y un cabezal MTP (Multi-Token Prediction) para decodificación especulativa. La licencia Apache-2.0 permite uso comercial sin restricciones significativas.
+El modelo resuelve un problema concreto de despliegue: acercarse a la calidad de Q4_K_M con un tamano inferior a Q3_K_M, liberando VRAM en tarjetas de 24 GB. Con 27.320.697.856 parametros totales, el peso completo en BF16 ocupa 50,9 GiB, mientras que esta cuantizacion cabe holgadamente en una NVIDIA L4 de 23 GB o en un Mac con 24 GB de memoria unificada. La relevancia actual esta en que permite ejecutar un modelo de 27B en hardware de gama consumer-profesional con una perdida de perplejidad muy contenida.
 
-La relevancia de este modelo radica en su equilibrio entre capacidades multimodales, razonamiento configurable y eficiencia en hardware de consumo, lo que lo convierte en una opción atractiva para desarrolladores que necesitan desplegar un asistente de código o un agente autónomo en entornos con recursos limitados.
+La contrapartida principal es la compatibilidad: NF4DQ es el tipo ggml 43 y no lo reconoce ninguna build upstream de llama.cpp, Ollama ni LM Studio. Es necesario usar la aplicacion CIU o compilar el fork `runciu/llama.cpp` en la rama `nf4dq`. El modelo se distribuye bajo licencia Apache 2.0, igual que el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Dense hybrid-attention transformer (linear attention en 48/64 capas, vision tower, MTP draft head) |
-| Parametros totales | 27 320 697 856 (27,3 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262 000 tokens nativos, extensible a 1 000 000 |
-| Tipos de cuantizacion | NF4 (4 bits) con doble cuantizacion (DQ) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 14,2 GB) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-27B; cuantizacion GGUF tipo ggml 43) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de despliegue usan `-c 8192` y `-c 4096` |
+| Tipos de cuantizacion | NF4DQ (4,1562 bits por peso; 1024 pesos en 532 bytes) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (tipo ggml 43, requiere fork `nf4dq` de llama.cpp o CIU) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura densa de 64 capas transformer con atención híbrida: 48 capas utilizan atención lineal (de menor coste computacional) y 16 capas conservan atención completa. Esta combinación permite manejar ventanas de contexto muy largas (262K nativos) con un coste de memoria y cómputo inferior al de un transformer convencional. Además, incorpora un vision tower para procesar imágenes y un cabezal MTP (Multi-Token Prediction) que habilita decodificación especulativa, acelerando la generación de texto.
+No se dispone de informacion sobre la arquitectura del transformer subyacente ni sobre el proceso de entrenamiento del modelo base Qwen/Qwen3.8-27B en la informacion proporcionada. La model card solo documenta el proceso de cuantizacion.
 
-No se dispone de información detallada sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la documentación consultada. El modelo se distribuye con pesos abiertos bajo licencia Apache-2.0, lo que permite su uso comercial y su adaptación mediante fine-tuning.
-
-La cuantización NF4DQ publicada en este repositorio reduce el tamaño de los pesos a aproximadamente 14,2 GB, manteniendo la arquitectura completa del modelo original, incluido el vision tower y el cabezal MTP.
+La innovacion tecnica documentada es el formato NF4DQ. Empaqueta 1024 pesos en 532 bytes con tres componentes: indices NF4 de 4 bits que apuntan a un codebook int8, un indice de escala de 4 bits por cada sub-bloque de 32 pesos y una super-escala fp16 por bloque. La segunda etapa de cuantizacion de escalas es lo que permite bajar de los 4,50 bits por peso de Q4_K. El autor indica que las notas de diseno, los datos de ajuste de cada constante y los enfoques medidos y descartados estan en el documento de diseno del fork. La cuantizacion no genera una obra nueva segun el autor, por lo que mantiene la licencia Apache 2.0 del modelo base. No se documentan fases de RLHF, DPO ni composicion del dataset.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multilingüe (idiomas exactos no especificados).
-- Comprensión de imágenes (visión) gracias al vision tower integrado.
-- Generación de código en múltiples lenguajes de programación, con soporte para tareas de programación complejas.
-- Razonamiento configurable: el modelo puede operar en modo estándar o en modo de razonamiento extendido (thinking mode) según la configuración.
-- Soporte de flujos agénticos (agentic workflows) con razonamiento multi-paso y planificación de tareas.
-- Automatización de oficina: resumen de documentos, generación de informes, extracción de información.
-- Decodificación especulativa mediante el cabezal MTP, que acelera la inferencia en entornos compatibles.
-- Ventana de contexto nativa de 262K tokens, ampliable a 1M, adecuada para documentos extensos y conversaciones de largo recorrido.
+- Generacion de texto conversacional: la pipeline declarada es `text-generation` y el tag `conversational` aparece en los metadatos del repositorio.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con APIs compatibles con OpenAI a traves de CIU, que sirve en `127.0.0.1:8674`.
+- Decodificacion multi-token: el fork soporta decodificacion especulativa con `--spec-type draft-mtp --spec-draft-n-max 4`, que eleva el decode de 16,84 a 30,13 t/s en una L4.
+- Ejecucion local con backend CUDA y Metal en el fork; no hay backend Vulkan.
+- Capacidades de razonamiento, codigo, matematicas, vision, tool calling, function calling, agentes o multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación en producción: el modelo puede integrarse en entornos de desarrollo (IDE, CLI) para autocompletar código, generar funciones y explicar fragmentos. Su capacidad de razonamiento y su contexto largo permiten manejar proyectos completos sin perder el hilo.
-- Agente autónomo de automatización de oficina: gracias a su soporte de flujos agénticos, puede procesar correos, redactar respuestas, resumir actas y gestionar calendarios mediante llamadas a herramientas externas.
-- Análisis de documentos legales o técnicos extensos: con 262K tokens de contexto, puede leer contratos, informes o papers completos y extraer cláusulas, riesgos o conclusiones sin necesidad de dividir el texto.
-- Chatbot de atención al cliente con memoria de conversación larga: la ventana de contexto amplia permite mantener el historial completo de una interacción de varias horas sin truncamiento.
-- Generación de informes a partir de datos e imágenes: al ser multimodal, puede analizar capturas de pantalla, gráficos o diagramas y generar descripciones o resúmenes textuales.
-- Investigación y revisión bibliográfica: el modelo puede resumir múltiples artículos, comparar metodologías y extraer referencias relevantes, ayudando a investigadores en fases de revisión de literatura.
-- Despliegue en hardware de consumo: gracias a la cuantización NF4 (14,2 GB), puede ejecutarse en GPUs de 16 GB o 24 GB, lo que lo hace viable para estaciones de trabajo locales sin infraestructura cloud.
+- Despliegue en estaciones de trabajo con GPU de 24 GB: el modelo completo ocupa unos 16,9 GB a 8k de contexto en una L4 de 23 GB, dejando margen para el cache KV y otros procesos. Es el escenario principal que justifica la cuantizacion frente a Q4_K_M, que deja mucho menos espacio libre.
+- Inferencia local en Mac con memoria unificada: CIU detecta la memoria disponible, descarga el motor adecuado y sirve una API compatible con OpenAI en `127.0.0.1:8674`, de modo que herramientas existentes pueden apuntar al endpoint sin cambios de codigo. Requiere 24 GB o mas de memoria unificada.
+- Sustitucion de Q4_K_M en pipelines existentes con llama.cpp: el fork `nf4dq` expone `llama-server` con la misma interfaz, por lo que se puede cambiar el fichero GGUF y mantener el resto del stack, obteniendo un 25% mas de velocidad en decode (60,81 frente a 48,67 t/s en A100) a costa de menor prefill.
+- Prototipado en Google Colab con GPU A100 o L4: la model card incluye un flujo completo de compilacion del fork y descarga del GGUF desde Hugging Face para pruebas puntuales sin infraestructura propia. Una T4 no es suficiente para este modelo.
+- Generacion de texto por lotes con temperatura cero: el ejemplo oficial usa `llama-completion` con `--temp 0 -no-cnv`, adecuado para tareas deterministas de resumen o explicacion donde no se necesita el modo conversacional.
+- Evaluacion comparativa de tecnicas de cuantizacion: el modelo sirve como referencia practica para medir la curva tamano-calidad de NF4DQ frente a K-quants en wikitext-2, con un binario y un conjunto de test identicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K u otras pruebas estandarizadas para esta cuantización ni para el modelo base en las fuentes consultadas.
+Perplejidad en wikitext-2 a contexto 512, A100-80GB, fichero de test completo, mismos pesos de origen y mismo binario:
+
+| Build | Tamano | PPL @512 |
+|---|---|---|
+| BF16 | 50,9 GiB | 6,9530 |
+| Q4_K_M | 15,652 GiB | 6,9787 |
+| NF4DQ | 13,230 GiB | 7,0890 |
+| Q3_K_M | 12,643 GiB | 7,3362 |
+
+Segun el autor, interpolando en la curva tamano-calidad de K-quants de llama.cpp, un K-quant a 4,16 bpw quedaria cerca de 7,29; NF4DQ mide 7,089.
+
+Throughput frente a Q4_K_M, misma A100, misma ejecucion de `llama-bench`:
+
+| Build | Tamano | Prefill | Decode |
+|---|---|---|---|
+| NF4DQ | 13,23 GiB | 734,52 t/s | 60,81 t/s |
+| Q4_K_M | 17,66 GiB | 1300,04 t/s | 48,67 t/s |
+
+En una NVIDIA L4 de 23 GB, el modelo completo ocupa unos 16,9 GB a 8k de contexto y alcanza 16,84 t/s en decode, o 30,13 t/s con decodificacion multi-token. El prefill de NF4DQ es mas lento porque el fork aun no tiene un cargador de tiles NF4DQ en `mmq.cu`. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización NF4 (14,2 GB de pesos), se requieren al menos 16 GB de VRAM para ejecutar el modelo con contexto moderado (4K-8K tokens). Para contextos de 262K tokens, la memoria de caché KV puede superar los 24 GB, por lo que se recomienda una GPU con 32 GB o más, o el uso de offloading a CPU.
-- GPU recomendadas: RTX 4090 (24 GB) para contextos medios; A100 40 GB o H100 para contextos largos y despliegue en producción.
-- Compatibilidad con GPU de consumo: sí, en RTX 3090/4090 (24 GB) con contexto reducido; en RTX 4080 (16 GB) con cuantización adicional o contexto muy corto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (con soporte GGUF), text-generation-inference (TGI) si se convierte a safetensors.
-- Latencia y throughput: no disponible. La decodificación especulativa del cabezal MTP puede acelerar la generación entre 1,5x y 2x en implementaciones que la soporten, pero no se han publicado cifras concretas.
+- VRAM estimada: aproximadamente 16,9 GB para el modelo completo a 8k de contexto en una L4, segun la medicion del autor. El fichero pesa 13,23 GiB.
+- GPU recomendadas: NVIDIA A100-80GB (referencia de las mediciones), NVIDIA L4 de 23 GB. El autor indica que el modelo quiere una tarjeta NVIDIA de 24 GB o un Mac con 24 GB o mas de memoria unificada.
+- GPU consumer: cabe en tarjetas de 24 GB como la RTX 4090, aunque no se aportan mediciones especificas para ese modelo. Una T4 no es suficiente.
+- Opciones de despliegue: CIU (aplicacion local con API compatible con OpenAI en `127.0.0.1:8674`, disponible para macOS Apple Silicon y Windows 10/11 x64), o compilacion manual del fork `runciu/llama.cpp` rama `nf4dq` con `llama-server`. Backends CUDA y Metal; sin Vulkan. No funciona en llama.cpp stock, Ollama ni LM Studio.
+- Nota de configuracion: `-np 1` es obligatorio en `llama-server`, ya que por defecto usa 4 slots y `-c` se aplica por slot, por lo que pedir 8k sin `-np 1` reserva 32k tokens de cache.
+- Latencia y throughput: 60,81 t/s de decode y 734,52 t/s de prefill en A100-80GB; 16,84 t/s de decode (30,13 t/s con MTP) en L4.
+- Plataformas no soportadas por CIU: Intel Mac y Linux.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Tamano | PPL wikitext-2 @512 | Decode (A100) | Licencia |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (NF4DQ) | 27,3 B | 262K (1M ext.) | Apache-2.0 | GGUF | Multimodal, atención híbrida, MTP |
-| Qwen2.5-27B (si existe) | No disponible | No disponible | Apache-2.0 | No disponible | Modelo anterior de la serie Qwen |
-| Gemma 2 27B | 27 B | 8K | Gemma license | Safetensors | Solo texto, sin visión |
-| Llama 3.1 8B | 8 B | 128K | Llama license | Safetensors/GGUF | Menor tamaño, contexto largo |
+| Qwen3.8-27B-NF4DQ | 27,32B | 13,23 GiB | 7,0890 | 60,81 t/s | Apache 2.0 |
+| Qwen3.8-27B Q4_K_M | 27,32B | 15,652 GiB | 6,9787 | 48,67 t/s | Apache 2.0 |
+| Qwen3.8-27B Q3_K_M | 27,32B | 12,643 GiB | 7,3362 | no disponible | Apache 2.0 |
+| Qwen3.8-27B BF16 | 27,32B | 50,9 GiB | 6,9530 | no disponible | Apache 2.0 |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en las fuentes consultadas. La comparación se limita a características estructurales.
+Como alternativa de menor tamano, el autor referencia `kayceesamuel/Qwen3.5-9B-NF4DQ`, que cabe en una T4. No se dispone de datos de benchmarks de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos o alucinaciones específicas para este modelo. Como cualquier LLM, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo.
-- La cuantización NF4 introduce una ligera degradación de calidad respecto al modelo en precisión completa (BF16/FP16). Para tareas que requieran máxima precisión, se recomienda usar los pesos originales.
-- El modelo es multimodal, pero la cuantización GGUF puede no incluir el vision tower en todas las implementaciones. Es necesario verificar que el runtime utilizado soporte entrada de imágenes.
-- La ventana de contexto de 262K tokens requiere una gestión cuidadosa de la memoria: el coste de la caché KV crece linealmente con el contexto, y en GPUs de 24 GB puede ser necesario reducir el contexto a 32K-64K tokens.
-- La licencia Apache-2.0 permite uso comercial, pero no se proporcionan garantías sobre el comportamiento del modelo en entornos de producción. Se recomienda realizar pruebas exhaustivas antes de desplegarlo en servicios críticos.
-- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que la cuantización no ha sido ampliamente validada por la comunidad. Se recomienda verificar la integridad de los pesos y probar el modelo en un entorno controlado antes de usarlo en producción.
+- Incompatibilidad con herramientas estandar: el fichero no carga en llama.cpp stock, Ollama ni LM Studio. Descargarlo sin CIU ni el fork produce un fichero de 13,23 GiB que ninguna herramienta abre.
+- Riesgo de colision de tipo: el tipo 43 es el siguiente hueco libre en upstream. Si upstream lo reclama, una build estandar leera estos ficheros como ese tipo y decodificara basura en lugar de rechazar la carga. Ante salidas incorrectas, hay que verificar primero que binario se esta ejecutando.
+- Prefill degradado: 734,52 t/s frente a 1300,04 t/s de Q4_K_M, por la ausencia de cargador de tiles NF4DQ en `mmq.cu`. Afecta a cargas de contexto largo y a cargas de trabajo con prompts extensos.
+- Perdida de calidad medible: PPL de 7,0890 frente a 6,9787 de Q4_K_M y 6,9530 de BF16. Es una degradacion pequena pero real.
+- Cobertura de plataformas limitada: CIU no soporta Intel Mac ni Linux; el fork no tiene backend Vulkan.
+- Builds de CIU sin firma de codigo: el primer arranque requiere un paso adicional documentado en `FIRST-RUN.txt`.
+- Sesgos, riesgo de alucinacion y limitaciones de idioma del modelo base: no disponibles en la informacion proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor sostiene que la cuantizacion no crea una obra nueva; conviene verificar la cadena de licencias del modelo base antes de un despliegue en produccion.
+- Madurez: 241 descargas y 0 likes en el momento de la consulta, con un formato de cuantizacion nuevo y un ecosistema de herramientas muy reducido. El propio autor pide que se le informe de los fallos de ejecucion por correo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/kayceesamuel/Qwen3.8-27B-NF4DQ
-- Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Ficha en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
-- Ficha en LM Studio: https://lmstudio.ai/models/qwen3.8
+- Modelo en Hugging Face: https://huggingface.co/kayceesamuel/Qwen3.8-27B-NF4DQ
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo hermano de 9B: https://huggingface.co/kayceesamuel/Qwen3.5-9B-NF4DQ
+- Fork de llama.cpp (rama nf4dq): https://github.com/runciu/llama.cpp
+- Documento de diseno de NF4DQ: https://github.com/runciu/llama.cpp/blob/nf4dq/docs/nf4dq-design.md
+- Releases del fork (binarios de llama-server): https://github.com/runciu/llama.cpp/releases
+- Aplicacion CIU: https://github.com/runciu/ciu
+- Issues de CIU: https://github.com/runciu/ciu/issues
+- Descarga CIU macOS Apple Silicon: https://github.com/runciu/ciu/releases/latest/download/ciu-macos-arm64.zip
+- Descarga CIU Windows x64: https://github.com/runciu/ciu/releases/latest/download/ciu-windows-x64.zip
+- Contacto del autor: hello@runciu.com

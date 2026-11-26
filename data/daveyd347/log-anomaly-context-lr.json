@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "id": "DaveyD347/log-anomaly-context-lr",
+  "slug": "daveyd347-log-anomaly-context-lr",
+  "author": "DaveyD347",
+  "url": "https://huggingface.co/DaveyD347/log-anomaly-context-lr",
+  "created_at": "2026-11-25T23:50:18.000Z",
+  "updated_at": "2026-11-25T23:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "logistic_regression",
+    "cybersecurity",
+    "security",
+    "logs",
+    "anomaly-detection",
+    "intrusion-detection",
+    "siem",
+    "mitre-attack",
+    "explainable-ai",
+    "logistic-regression",
+    "skops",
+    "tabular-classification",
+    "en",
+    "dataset:DaveyD347/sanitized-incident-logs",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1079084,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Per-line log anomaly detection (shifted challenge set)",
+      "dataset": "Shifted challenge set (unseen attack variants and hard negatives)",
+      "metric": null,
+      "value": 0.926
+    },
+    {
+      "task": "Per-line log anomaly detection (shifted challenge set)",
+      "dataset": "Shifted challenge set (unseen attack variants and hard negatives)",
+      "metric": null,
+      "value": 0.991
+    },
+    {
+      "task": "Per-line log anomaly detection (shifted challenge set)",
+      "dataset": "Shifted challenge set (unseen attack variants and hard negatives)",
+      "metric": null,
+      "value": 0.93
+    },
+    {
+      "task": "Per-line log anomaly detection (shifted challenge set)",
+      "dataset": "Shifted challenge set (unseen attack variants and hard negatives)",
+      "metric": null,
+      "value": 0.923
+    },
+    {
+      "task": "Per-line log anomaly detection",
+      "dataset": "Sanitized Incident Logs (events, test split)",
+      "metric": null,
+      "value": 0.9995
+    },
+    {
+      "task": "Per-line log anomaly detection",
+      "dataset": "Sanitized Incident Logs (events, test split)",
+      "metric": null,
+      "value": 1
+    },
+    {
+      "task": "Per-line log anomaly detection",
+      "dataset": "Sanitized Incident Logs (events, test split)",
+      "metric": null,
+      "value": 0.999
+    },
+    {
+      "task": "Per-line log anomaly detection",
+      "dataset": "Sanitized Incident Logs (events, test split)",
+      "metric": null,
+      "value": 0.9999
+    }
+  ],
+  "sources": []
+}

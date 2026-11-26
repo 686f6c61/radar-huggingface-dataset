@@ -2,65 +2,54 @@
 
 ## Resumen
 
-El modelo `dronefreak/rdd2022-yolov8n` es un detector de objetos YOLOv8n afinado sobre el conjunto de datos RDD2022 Road Damage, desarrollado por el usuario de Hugging Face dronefreak en el marco del proyecto DetectionBench. Se trata de un modelo de visión por computador de una sola etapa orientado a la detección de cuatro tipos de deterioro del firme: grieta longitudinal, grieta transversal, grieta de piel de cocodrilo y bache. Con 3,2 millones de parámetros y 8,7 GFLOPs a 640 píxeles, es la variante más ligera de la familia YOLOv8 aplicada a este dominio.
+rdd2022-yolov8n es un detector de objetos YOLOv8n (variante nano de Ultralytics) afinado por el usuario dronefreak sobre el conjunto de datos RDD2022 de daños en la carretera. El modelo resuelve una tarea de visión por computador muy concreta: localizar y clasificar cuatro tipos de deterioro del firme (grietas longitudinales, grietas transversales, grietas de piel de cocodrilo y baches) en imágenes de calzada. Es relevante porque forma parte de DetectionBench, un marco de trabajo que entrena y evalúa distintos detectores con la misma receta y las mismas métricas, lo que permite comparaciones reproducibles entre arquitecturas.
 
-Su relevancia radica en dos factores. Por un lado, cubre una tarea de infraestructura civil con impacto directo en mantenimiento vial y seguridad en carretera, un ámbito donde los modelos genéricos de detección rinden mal por la naturaleza textural y de bajo contraste de las patologías del pavimento. Por otro, forma parte de DetectionBench, un framework que entrena y evalúa distintos detectores con recetas idénticas y métricas homogéneas, lo que permite comparaciones reproducibles entre arquitecturas. En este sentido, el modelo publica métricas declaradas por el autor (`verified: false`) sobre el split de test de RDD2022: mAP@50 de 58,8, mAP@50-95 de 32,05, precisión de 62,03 y recall de 56,08.
+La arquitectura es una CNN de detección de una sola etapa de la familia YOLOv8, con solo 3.022.028 parámetros (3,2 M) y 8,7 GFLOPs a 640 píxeles, lo que lo sitúa en el extremo más ligero de la familia. Se distribuye bajo licencia AGPL-3.0 y los pesos están en formato PyTorch (best.pt), cargables directamente con la librería ultralytics.
 
-El modelo no es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso. Es un componente puramente perceptivo, pensado para integrarse en pipelines de inspección vial, vehículos instrumentados o plataformas de mantenimiento predictivo. La licencia AGPL-3.0 condiciona de forma relevante su uso comercial.
+El interés práctico del modelo está en su relación entre coste computacional y precisión: con un tercio de los parámetros de YOLOv8s, alcanza un mAP@50 de 58,8 % en el split de test de RDD2022, suficiente para tareas de triaje o despliegue en dispositivos con recursos limitados. No es un modelo multimodal ni de lenguaje: es exclusivamente un detector visual de cuatro clases.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YOLOv8n (CNN de deteccion de objetos de una etapa, derivada de Ultralytics/YOLOv8) |
-| Parametros totales | 3,2 M |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo de vision; entrada de imagen, 640 px por defecto) |
-| Tipos de cuantizacion | No disponible en la model card (solo se distribuyen pesos PyTorch) |
-| Idiomas soportados | No aplica (modelo de vision por computador) |
+| Arquitectura | YOLOv8n (CNN de detección de una etapa, familia Ultralytics YOLOv8) |
+| Parametros totales | 3.022.028 (3,2 M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, entrada de imagen 640 px) |
+| Tipos de cuantizacion | no disponible (el autor no documenta cuantizaciones; al ser un modelo ultralytics es compatible con exportación a ONNX, TensorRT y otras, pero no se confirma en la información) |
+| Idiomas soportados | no disponible (no procesa texto) |
 | Licencia | AGPL-3.0 |
-| Formato de pesos | PyTorch (`best.pt`), cargado mediante la libreria `ultralytics` |
-| FLOPs | 8,7 GFLOPs a 640 px |
-| Clases | longitudinal_crack, transverse_crack, alligator_crack, pothole |
-| Dataset de entrenamiento | dronefreak/RDD2022 (RDD2022 Road Damage) |
-| Framework | Ultralytics YOLO |
-| Libreria declarada | `ultralytics` |
-| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Formato de pesos | PyTorch (best.pt) y safetensors (según los tags del repositorio) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Ultralytics/YOLOv8`, del que hereda la arquitectura YOLOv8n: un detector de una sola etapa con backbone convolucional y cabeza de deteccion desacoplada, del orden de 3,2 M de parametros y 8,7 GFLOPs a 640 px. Sobre esa base se realiza un ajuste fino supervisado sobre el conjunto RDD2022 Road Damage, con anotaciones en caja de cuatro clases de deterioro del pavimento. La model card no detalla la arquitectura interna mas alla de identificar el modelo base, por lo que cualquier afirmacion adicional sobre bloques concretos, mecanismos de atencion o estrategias de asignacion de etiquetas no esta respaldada por la informacion disponible.
+El modelo es un YOLOv8n, la variante nano de la arquitectura YOLOv8 de Ultralytics: un detector de una etapa con backbone convolucional, cuello de agregación de características y cabecera de predicción anclada libre (anchor-free). Con 3,2 M de parámetros y 8,7 GFLOPs a 640 px, está diseñado para inferencia de baja latencia. La entrada de entrenamiento y evaluación es de 640 × 640 píxeles.
 
-En cuanto al entrenamiento, la model card incluye una seccion de configuracion que aparece truncada en la informacion proporcionada, de modo que solo se conocen dos campos: el dataset (RDD2022 Road Damage) y el framework (Ultralytics YOLO). No se documentan el numero de epocas, el optimizador, la tasa de aprendizaje, el esquema de aumento de datos, la resolucion de entrenamiento ni el tamano de los splits de entrenamiento y validacion. Tampoco se indica si hubo tecnicas de ajuste adicionales como destilacion, poda o calibracion. Lo que si se explicita es el protocolo de evaluacion: las metricas se calculan sobre el split de test de RDD2022 mediante el pipeline estandar de DetectionBench (`detectionbench-evaluate`), y el autor marca los resultados como no verificados de forma independiente. La innovacion diferencial del modelo no esta en la arquitectura, sino en su encaje dentro de DetectionBench, que aplica recetas de entrenamiento identicas y metricas comunes a multiples detectores para permitir comparaciones reproducibles.
+El ajuste fino se realizó con la herramienta DetectionBench sobre el conjunto RDD2022, con una configuración documentada por el autor: 50 épocas configuradas y 50 efectivamente entrenadas, paciencia de parada temprana de 10, tamaño de lote 32, tamaño de imagen 640, optimizador Adam, tasa de aprendizaje inicial 0,001 y semilla 0. No se especifica en la información disponible el número de tokens ni la composición exacta del dataset más allá de las cuatro clases (longitudinal_crack, transverse_crack, alligator_crack y pothole), ni si hubo técnicas de aumento de datos adicionales. Tampoco se documenta RLHF/DPO, lo cual es esperable al no ser un modelo generativo de lenguaje.
 
 ## Capacidades
 
-- Deteccion de objetos en imagenes de carretera con cuatro clases: grieta longitudinal, grieta transversal, grieta de piel de cocodrilo y bache.
-- Localizacion mediante cajas delimitadoras con umbral de confianza configurable (el ejemplo de la model card usa `conf=0.25`).
-- Inferencia sobre imagen individual o lotes mediante `model.predict()` de Ultralytics.
-- Rendimiento especialmente solido en la clase `pothole`: mAP@50 de 70,76 y mAP@50-95 de 43,48, la mejor del modelo con diferencia.
-- Capacidad de servir como baseline reproducible dentro de DetectionBench para comparar arquitecturas bajo la misma receta.
-- No dispone de generacion de texto, razonamiento, codigo ni matematicas.
-- No soporta tool calling, function calling ni uso como agente.
-- No soporta razonamiento multi-paso ni modos de pensamiento.
-- No tiene capacidades multilingues: la salida son cajas y etiquetas de clase, no lenguaje natural.
-- No incorpora vision-lenguaje, audio ni ninguna otra modalidad adicional: es vision pura de deteccion.
+- Detección de objetos en imágenes de calzada con cuatro clases: grieta longitudinal, grieta transversal, grieta de piel de cocodrilo y bache.
+- Localización con cajas delimitadoras y puntuaciones de confianza por detección.
+- Inferencia sobre imágenes individuales o lotes mediante `model.predict(source=..., conf=0.25)`.
+- Integración directa con la librería ultralytics y con el ecosistema Hugging Face mediante `hf_hub_download`.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente perceptivo.
+- No tiene capacidades multilingües ni de generación de texto.
+- No dispone de modo thinking, visión general, audio ni otras capacidades especiales más allá de la detección visual.
 
 ## Casos de uso
 
-- Inspeccion vial con vehiculos instrumentados: montar el detector sobre una camara de salpicadero y procesar fotogramas en tiempo real para inventariar grietas y baches a lo largo de una ruta. El reducido coste computacional (8,7 GFLOPs) permite ejecutarlo en hardware embebido dentro del propio vehiculo.
-- Inspeccion aerea con drones: el tamano minimo del modelo (3,2 M de parametros) hace viable su despliegue a bordo de un dron con computacion limitada, capturando ortomosaicos de firme y detectando patologias sin necesidad de transmitir video a un servidor.
-- Priorizacion de mantenimiento por parte de administraciones publicas: procesar por lotes imagenes historicas de carreteras y generar un ranking de tramos por densidad y severidad de detecciones, de modo que los equipos de conservacion asignen presupuesto donde el deterioro es mayor.
-- Reporte ciudadano de baches: integrar el modelo en una aplicacion movil donde el usuario fotografiar el firme y la app marque automaticamente la presencia de un bache antes de enviar la incidencia al ayuntamiento, reduciendo el trabajo de triaje manual.
-- Generacion de inventarios georreferenciados: combinar las detecciones con metadatos GPS de las capturas para producir capas GIS de patologias del pavimento que alimenten un sistema de gestion de activos viarios.
-- Preprocesado en conduccion autonoma o ADAS: usar la deteccion de baches y grietas como senal auxiliar para ajustar el comportamiento del vehiculo (por ejemplo, suavizar la respuesta de suspension o advertir al conductor) en tramos con firme deteriorado.
-- Evaluacion comparativa de detectores: emplear el modelo como punto de referencia ligero en experimentos de investigacion que comparen arquitecturas sobre RDD2022, gracias a su integracion con el pipeline de DetectionBench.
-- Auditoria de calidad de obra: verificar automaticamente el estado de un tramo recien pavimentado comparando detecciones antes y despues de la intervencion.
+- Inspección automatizada de firmes con vehículos equipados con cámara: el modelo procesa fotogramas a 640 px y detecta baches y grietas en tiempo real, adecuado por su bajo coste (8,7 GFLOPs) para ejecutarse a bordo de un vehículo o en un dispositivo embebido.
+- Triaje de mantenimiento vial: a partir de imágenes capturadas por drones o vehículos de servicio, el modelo clasifica el tipo de deterioro y permite priorizar reparaciones según la clase detectada (por ejemplo, baches frente a grietas longitudinales).
+- Despliegue en dispositivos de borde: con 3,2 M de parámetros, cabe en GPUs de consumo e incluso en aceleradores de baja potencia, lo que facilita inspecciones en campo sin conexión a la nube.
+- Generación de inventarios geoespaciales de daños: combinando las detecciones con metadatos GPS, se pueden construir mapas de estado del firme para planificación municipal.
+- Preetiquetado de datos para anotación humana: el modelo puede usarse como primer paso en pipelines de anotación semiautomática, reduciendo el coste de etiquetar grandes volúmenes de imágenes de carretera.
+- Monitorización continua en flotas: integrado en cámaras de salpicadero o sistemas de registro de flotas, permite alertar de tramos con deterioro recurrente y alimentar sistemas de mantenimiento predictivo.
+- Evaluación comparativa de detectores: al formar parte de DetectionBench, sirve como referencia ligera para comparar arquitecturas bajo la misma receta de entrenamiento y métricas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el split de test de RDD2022 Road Damage. Todos los valores estan marcados como no verificados (`verified: false`) en el model-index.
+Resultados declarados por el autor en el split de test de RDD2022 (no verificados de forma independiente):
 
 | Metrica | Valor (%) |
 |---|---|
@@ -68,9 +57,11 @@ Resultados declarados por el autor sobre el split de test de RDD2022 Road Damage
 | mAP@50-95 | 32,05 |
 | Precision | 62,03 |
 | Recall | 56,08 |
-| F1 | 58,91 |
+| F1 Score | 58,91 |
+| Parametros | 3,2 M |
+| FLOPs | 8,7 B (a 640 px) |
 
-Rendimiento por clase:
+Rendimiento por clase en el mismo split:
 
 | Clase | mAP@50 | mAP@50-95 |
 |---|---|---|
@@ -79,21 +70,7 @@ Rendimiento por clase:
 | alligator_crack | 61,13 | 31,92 |
 | pothole | 70,76 | 43,48 |
 
-Coste computacional declarado: 3,2 M de parametros y 8,7 GFLOPs a 640 px.
-
-## Requisitos de hardware
-
-- Peso de los parametros: aproximadamente 12,8 MB en FP32 (3,2 M x 4 bytes), unos 6,4 MB en FP16 y unos 3,2 MB en INT8. Son estimaciones derivadas del numero de parametros, no cifras publicadas en la model card.
-- VRAM de inferencia: muy reducida. Por el orden de magnitud del modelo (8,7 GFLOPs a 640 px), la inferencia cabe holgadamente en cualquier GPU con 2 GB o mas; una estimacion prudente es menos de 1 GB en FP16 a 640 px, aunque la model card no publica mediciones de consumo.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente. Una RTX 3060, RTX 4060 o superior ejecutaria el modelo con margen amplio; tambien es viable en iGPU recientes y en CPU para procesamiento por lotes no critico en latencia.
-- GPU de datacenter (A100, H100, L40S) no son necesarias; solo tendrian sentido para procesar volumenes masivos de imagenes en paralelo.
-- Despliegue en edge: por debajo de 13 MB de pesos en FP32, es candidato natural para dispositivos embebidos tipo Jetson, Raspberry Pi con acelerador o NPU de movil.
-- Opciones de despliegue: la model card solo documenta la carga mediante la libreria `ultralytics` en Python (`YOLO(weights)` y `model.predict()`). El repositorio no especifica otros formatos ni runtimes.
-- Latencia y throughput: no disponible. La informacion proporcionada no incluye mediciones de FPS ni de latencia por imagen en ningun hardware.
-
-## Comparativa con modelos similares
-
-La model card incluye el "RDD2022 Road Damage Model Zoo" completo de DetectionBench, con todos los modelos entrenados y evaluados hasta la fecha bajo la misma receta. Todos los valores son declarados por el autor.
+Comparativa dentro del zoo de modelos de DetectionBench sobre RDD2022:
 
 | Modelo | mAP@50 | mAP@50-95 | Precision | Recall |
 |---|---|---|---|---|
@@ -101,34 +78,46 @@ La model card incluye el "RDD2022 Road Damage Model Zoo" completo de DetectionBe
 | RF-DETR Small | 64,71 | 35,73 | 65,69 | 59,41 |
 | YOLOv8m | 62,03 | 34,08 | 65,61 | 57,42 |
 | YOLOv8s | 61,45 | 33,53 | 64,55 | 57,18 |
-| YOLOv26s | 61,27 | 33,30 | 64,42 | 57,13 |
-| YOLOv26m | 61,24 | 33,38 | 63,70 | 57,27 |
-| RF-DETR Nano | 60,85 | 33,22 | 65,49 | 54,30 |
-| YOLOv8n (este modelo) | 58,80 | 32,05 | 62,03 | 56,08 |
+| YOLO26s | 61,27 | 33,3 | 64,42 | 57,13 |
+| YOLO26m | 61,24 | 33,38 | 63,7 | 57,27 |
+| RF-DETR Nano | 60,85 | 33,22 | 65,49 | 54,3 |
+| YOLOv8n (este modelo) | 58,8 | 32,05 | 62,03 | 56,08 |
+| YOLO11x | 51,05 | 26,54 | 56,64 | 49,54 |
 
-Lectura de la tabla: este modelo es el de menor mAP@50 del zoo, con una diferencia de 3,65 puntos respecto a RF-DETR Nano y de 6,28 puntos respecto al mejor modelo (RF-DETR Medium). A cambio, es el de menor coste computacional del conjunto al estar construido sobre la variante nano de YOLOv8. El recall (56,08) es superior al de RF-DETR Medium (55,98) y RF-DETR Nano (54,30), pero inferior al de RF-DETR Small (59,41) y a las variantes s y m de YOLOv8. La model card no publica el numero de parametros ni los FLOPs de los modelos comparados, por lo que la comparacion de eficiencia no puede cerrarse con los datos disponibles. En cuanto a licencia y disponibilidad, la informacion proporcionada solo cubre este modelo (AGPL-3.0); el resto de licencias del zoo figuran como no disponibles.
+## Requisitos de hardware
+
+- VRAM estimada para inferencia: muy baja; con 3,2 M de parámetros el peso de los pesos en FP32 ronda los 12 MB, por lo que la inferencia cabe holgadamente en cualquier GPU con 2 GB o más de VRAM. La memoria real depende del tamaño de lote y de la resolución de entrada.
+- GPU recomendadas: cualquier GPU moderna sirve; para máximo throughput, A100, H100 o L4; para despliegue en borde, Jetson Orin, Jetson Nano o GPUs de consumo como RTX 3060, RTX 4060 o RTX 4090.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo de los últimos años, e incluso en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: ultralytics (PyTorch), exportación a ONNX y TensorRT (compatible con el ecosistema ultralytics, aunque no se documenta explícitamente en la información disponible), y despliegue vía Hugging Face con `hf_hub_download`. No se confirma soporte documentado de vLLM, llama.cpp, Ollama o TGI, que no están orientados a detectores de este tipo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo (8,7 GFLOPs a 640 px) se espera una latencia de milisegundos en GPU moderna, pero no hay cifras oficiales.
+
+## Comparativa con modelos similares
+
+| Modelo | Parametros | Contexto / entrada | mAP@50 (RDD2022) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| YOLOv8n (este modelo) | 3,2 M | imagen 640 px | 58,8 | AGPL-3.0 | Hugging Face |
+| YOLOv8s | no disponible en la información | imagen 640 px | 61,45 | AGPL-3.0 (Ultralytics) | Hugging Face / Ultralytics |
+| YOLOv8m | no disponible en la información | imagen 640 px | 62,03 | AGPL-3.0 (Ultralytics) | Hugging Face / Ultralytics |
+| RF-DETR Nano | no disponible en la información | imagen 640 px | 60,85 | no disponible | DetectionBench |
+| RF-DETR Small | no disponible en la información | imagen 640 px | 64,71 | no disponible | DetectionBench |
+
+La comparación dentro de DetectionBench muestra que YOLOv8n es el modelo con menor mAP@50 de la tabla, pero también el más ligero en la familia YOLOv8 comparada (YOLOv8s y YOLOv8m superan en precisión a costa de más parámetros y cómputo). RF-DETR Small y Medium lideran en precisión, mientras que YOLO11x obtiene resultados peores en este conjunto, lo que sugiere que el ajuste fino y la receta de entrenamiento influyen tanto como la arquitectura.
 
 ## Limitaciones y advertencias
 
-- Licencia AGPL-3.0: es la advertencia mas importante para produccion. El uso comercial en un servicio accesible por red obliga, segun los terminos de la AGPL, a poner a disposicion de los usuarios el codigo fuente correspondiente. Cualquier producto propietario que integre este modelo debe revisar previamente sus implicaciones legales.
-- Metricas no verificadas: los cuatro valores del model-index estan marcados con `verified: false`. Proceden del pipeline del propio autor (DetectionBench) y no han sido replicados por un tercero independiente.
-- Menor precision global del zoo: con 58,8 de mAP@50 es el modelo menos preciso de los ocho comparados, lo que implica mas falsos positivos y negativos en la practica.
-- Recall limitado al 56,08: aproximadamente cuatro de cada diez instancias reales de deterioro no se detectan. En un escenario de seguridad vial, los falsos negativos sobre baches son especialmente criticos.
-- Rendimiento desigual por clase: `transverse_crack` es la clase peor detectada (mAP@50 de 50,57 y mAP@50-95 de 24,24), mientras que `pothole` alcanza 70,76. La grieta transversal, ademas de ser la mas dificil, es una de las patologias que mas rapido degenera si no se sella.
-- Sin validacion fuera de dominio: la model card no documenta evaluaciones con lluvia, asfalto mojado, iluminacion nocturna, sombras o desenfoque de movimiento. No hay evidencia de robustez frente a estas condiciones, muy habituales en capturas reales de carretera.
-- Sesgos potenciales del dataset: RDD2022 agrega imagenes de varios paises con tecnicas de pavimentacion y camaras distintas. La model card no desglosa el rendimiento por region, por lo que se desconoce si el modelo rinde igual en todos los paises representados.
-- Clases cerradas: el modelo solo reconoce cuatro tipos de deterioro. Cualquier otra patologia (baches de gran profundidad, desprendimientos, roderas, exudacion de betun) no sera clasificada correctamente y puede generar falsos positivos sobre las cuatro clases existentes.
-- Informacion de entrenamiento incompleta: la seccion de configuracion de la model card aparece truncada, sin epocas, optimizador ni hiperparametros, lo que dificulta la reproducibilidad exacta del resultado.
-- Proposito exclusivamente perceptivo: no produce texto ni explicaciones, no se puede interrogar en lenguaje natural y no toma decisiones. Cualquier sistema que lo use debe aportar la capa de logica, georreferenciacion y priorizacion por su cuenta.
-- Sin informacion sobre licencia del dataset: la model card remite a la dataset card de `dronefreak/RDD2022` para los terminos de uso de los datos, que deben consultarse por separado antes de reentrenar o redistribuir el modelo.
-- Sin senal de adopcion: cero descargas y cero likes en el momento de la consulta, y repositorio de 0,0 GB. No hay comunidad que haya reportado comportamiento en produccion.
+- Sesgos conocidos: el modelo se entrena solo con imágenes de RDD2022, por lo que su rendimiento puede degradarse en condiciones de iluminación, clima, tipo de asfalto o países no representados en el conjunto de datos.
+- Riesgo de falsos positivos y negativos: la precisión (62,03 %) y el recall (56,08 %) son moderados; en producción conviene calibrar el umbral de confianza y validar con datos propios.
+- Limitaciones de idioma: no aplica, es un modelo de visión; no procesa texto.
+- Limitaciones de contexto: no aplica; la entrada es una imagen de 640 px y no hay ventana de contexto textual.
+- Restricciones de licencia: AGPL-3.0 implica obligaciones de copyleft para obras derivadas y para el uso en servicios en red; para uso comercial propietario conviene revisar las condiciones con asesoramiento legal o considerar una licencia comercial de Ultralytics.
+- Caveat de producción: los resultados de benchmarks están declarados por el autor y marcados como no verificados; no se han validado de forma independiente. Además, el repositorio tiene un tamaño de 0,0 GB y pocas descargas (260), lo que sugiere poca adopción y escasa validación comunitaria.
+- No se documentan cuantizaciones ni exportaciones probadas, por lo que el despliegue en formatos distintos de PyTorch requiere validación adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolov8n
 - Dataset RDD2022: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
-- Modelo base Ultralytics YOLOv8: https://huggingface.co/Ultralytics/YOLOv8
-- Referencias arXiv citadas en las etiquetas del modelo: arxiv:2209.08538, arxiv:2511.09554, arxiv:2304.07193, arxiv:2606.03748. La informacion proporcionada no incluye los titulos ni el contenido de estos articulos, por lo que no se puede confirmar a que trabajo corresponde cada identificador.
-- Recursos graficos incluidos en el repositorio del modelo (referenciados en la model card, no verificados en esta busqueda): `rdd2022_yolov8n_showcase.jpg`, `BoxPR_curve.png`, `BoxF1_curve.png`, `confusion_matrix.png`, `confusion_matrix_normalized.png`.
-- La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo ni sobre RDD2022; los enlaces obtenidos correspondian a temas ajenos (soporte de YouTube y prensa de ciclismo) y se han descartado por no ser pertinentes.
+- Paper de referencia (arXiv:2209.08538): https://arxiv.org/abs/2209.08538
+- Modelo base YOLOv8 de Ultralytics: https://huggingface.co/Ultralytics/YOLOv8

@@ -40,7 +40,7 @@
   "trending_score": 15,
   "parameters": 149707140,
   "parameters_human": "149.7M",
-  "storage_bytes": 602795548,
+  "storage_bytes": 602604848,
   "storage_human": "603 MB",
   "context_length": null,
   "base_model": "Linkup-Platform/linkup-sparseup-embed-v2-pretrain",

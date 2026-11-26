@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Reddit - Dive into anything",
-      "url": "https://www.reddit.com/",
-      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
-    },
-    {
-      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
-      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "r/news - Reddit",
-      "url": "https://www.reddit.com/r/news/",
-      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
-    },
-    {
-      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
-      "url": "https://ifm.ai/blog/k2",
-      "snippet": "The result is K2 Horizon MoVA 36B-A4B: a model with 36 billion total parameters but approximately 4 billion active parameters per token. Under the same training conditions, it performs only slightly below the dense Horizon 32B model while requiring substantially fewer active parameters."
-    },
-    {
-      "title": "The back page of the internet. - Reddit",
-      "url": "https://www.reddit.com/r/soccer/",
-      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
-    }
-  ]
+  "sources": []
 }

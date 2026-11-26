@@ -5,7 +5,7 @@
   "author": "ChaitanyaLaxman",
   "url": "https://huggingface.co/ChaitanyaLaxman/cve2cwe-qwen3.5-4b",
   "created_at": "2026-11-24T17:06:50.000Z",
-  "updated_at": "2026-11-24T17:08:28.000Z",
+  "updated_at": "2026-11-25T18:30:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

@@ -118,31 +118,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "202020.net - دليل أفضل المواقع",
-      "url": "https://www.202020.net/",
-      "snippet": "دليل أفضل المواقع العربية والأجنبية مرتبة حسب عدد الزيارات"
-    },
-    {
-      "title": "أفضل مواقع الأخبار الإنجليزية 1 - 202020.net",
-      "url": "https://www.202020.net/tab_files/x6.htm",
-      "snippet": "أفضل مواقع الأخبار الإنجليزية 1"
-    },
-    {
-      "title": "أفضل مواقع البنوك 1 - mail.202020.net",
-      "url": "https://mail.202020.net/tab_files/x29.htm",
-      "snippet": "أفضل مواقع البنوك 1"
-    },
-    {
-      "title": "أفضل مواقع التعليم 2 - mail.202020.net",
-      "url": "https://mail.202020.net/tab_files/x34.htm",
-      "snippet": "أفضل مواقع التعليم 2"
-    },
-    {
-      "title": "أفضل مواقع الفنادق - المختصر - cpanel.202020.net",
-      "url": "https://cpanel.202020.net/tab_files/z11.htm",
-      "snippet": "أفضل مواقع الفنادق - المختصر"
-    }
-  ]
+  "sources": []
 }

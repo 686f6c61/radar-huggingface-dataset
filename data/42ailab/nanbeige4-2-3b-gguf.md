@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Nanbeige4.2-3B es un modelo de chat bilingue (chino e ingles) desarrollado por el equipo Nanbeige, orientado a generacion de texto, programacion y razonamiento, con un rendimiento declarado por el autor especialmente alto para su tamano en tareas de codigo. El modelo original se publica bajo licencia Apache-2.0 y cuenta con aproximadamente 4.170 millones de parametros totales, pese a la denominacion comercial "3B" del nombre.
+Nanbeige4.2-3B es un modelo de lenguaje conversacional bilingue (chino e ingles) desarrollado por el equipo Nanbeige y publicado bajo licencia Apache-2.0. Con aproximadamente 4.170 millones de parametros totales, esta disenado para destacar en tareas de codigo y razonamiento dentro de su rango de tamano, lo que lo situa como una opcion compacta para despliegues con recursos limitados. El repositorio analizado, `42ailab/Nanbeige4.2-3B-GGUF`, es una redistribucion en formato GGUF mantenida por 42ailab para su integracion en la aplicacion 42model.
 
-El repositorio `42ailab/Nanbeige4.2-3B-GGUF` no contiene un modelo nuevo ni una conversion propia: es una copia de seguridad byte a byte de la cuantizacion GGUF Q4_K_M generada por bartowski y publicada originalmente en `bartowski/Nanbeige_Nanbeige4.2-3B-GGUF`. El objetivo declarado es preservar la disponibilidad de los mismos bytes (nombres, tamanos y digests sha256 identicos) ante una posible eliminacion, renombrado o sustitucion del repositorio del conversor.
+Esta ficha corresponde especificamente a la version cuantizada en GGUF, orientada a inferencia local y a entornos de escritorio. El archivo principal disponible es una cuantizacion Q4_K_M de 2,50 GiB, generada originalmente por bartowski y replicada byte a byte por 42ailab con digests sha256 fijados para garantizar la reproducibilidad de las descargas. La licencia Apache-2.0 del modelo original se mantiene intacta.
 
-Por tanto, esta ficha describe principalmente el modelo subyacente Nanbeige4.2-3B en su formato GGUF Q4_K_M, util para inferencia local en CPU o GPU con llama.cpp y derivados, y no una variante con pesos propios. La relevancia practica reside en la disponibilidad de una cuantizacion de 2,50 GiB que permite ejecutar un modelo de chat de ~4,2B parametros en hardware de consumo, con licencia permisiva Apache-2.0.
+La relevancia de esta publicacion radica en su empaquetado: los pesos estan anclados a hashes verificables y el repositorio actua como fuente estable para la aplicacion 42model, con el repositorio original de bartowski como respaldo. Para desarrolladores que necesitan un modelo de 3B-4B en formato GGUF con licencia permisiva, esta variante ofrece una via de descarga determinista.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 4.169.800.704 (~4,17B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo de lenguaje tipo transformer, segun la nomenclatura del autor) |
+| Parametros totales | 4.169.800.704 (aprox. 4,17B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repo) |
-| Idiomas soportados | chino e ingles (bilingue, segun model card) |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado en este repositorio) |
+| Idiomas soportados | chino e ingles (segun la model card) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (fichero `Nanbeige_Nanbeige4.2-3B-Q4_K_M.gguf`, 2,50 GiB) |
+| Formato de pesos | GGUF (archivo `Nanbeige_Nanbeige4.2-3B-Q4_K_M.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. La model card lo describe como un modelo de chat bilingue (chino/ingles) "fuerte en programacion y razonamiento para su tamano", pero no especifica si emplea un transformer denso convencional, una variante MoE, ni detalles sobre atencion, normalizacion o posicional. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO o similares.
+No se dispone de informacion detallada sobre la arquitectura interna en la model card proporcionada. El autor la describe como un modelo conversacional bilingue (chino/ingles) optimizado para codigo y razonamiento en su rango de tamano, lo que sugiere un transformer decoder-only entrenado con datos mixtos de texto y codigo, pero no se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. Cualquier afirmacion adicional sobre atencion lineal, MoE o hibridaciones no esta respaldada por la informacion disponible.
 
-Lo unico verificable tecnicamente es el artefacto publicado: una cuantizacion GGUF Q4_K_M de 2,50 GiB generada por bartowski a partir de los pesos originales de Nanbeige, con digest sha256 `b92d2e35c9876b0c4bc671996360204f4149d0546c23d5954d5eb3b106c81f24`. El repositorio de 42ailab es una copia sin modificaciones, por lo que cualquier innovacion de entrenamiento o decodificacion del modelo original no se documenta aqui.
+El unico detalle tecnico verificable del proceso de publicacion es la conversion a GGUF realizada por bartowski, que empleo tecnicas de imatrix (segun los tags del repositorio) para optimizar la cuantizacion Q4_K_M. Los pesos en este repositorio son identicos byte a byte a los de `bartowski/Nanbeige_Nanbeige4.2-3B-GGUF`, con digests sha256 publicados para verificacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional multi-turno en chino e ingles.
-- Programacion: la model card destaca un rendimiento en codigo notable para su tamano, sin cifras publicadas.
-- Razonamiento: orientado a tareas de razonamiento general segun la descripcion del autor.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas a chino e ingles segun la model card; no se declaran otros idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles en la informacion proporcionada.
+- Razonamiento y resolucion de problemas, segun la descripcion del autor de un modelo "fuerte en codigo y razonamiento para su tamano".
+- Generacion de codigo, aunque no se detallan lenguajes soportados ni benchmarks especificos.
+- Capacidades bilingues limitadas a chino e ingles; no se declaran otros idiomas.
+- No se documenta soporte de tool calling ni function calling en la informacion disponible.
+- No se documenta soporte explicito de agentes o razonamiento multi-paso.
+- No se declaran capacidades de vision, audio ni modo de pensamiento (thinking mode).
 
 ## Casos de uso
 
-- Asistente de codigo en local: el fichero GGUF Q4_K_M de 2,50 GiB permite ejecutar el modelo en un portatil con GPU de consumo o incluso en CPU, ofreciendo autocompletado y explicacion de codigo sin conexion y sin coste de API.
-- Chat bilingue chino-ingles: adecuado para equipos que atienden a usuarios en ambos idiomas, ya que el modelo se ha entrenado explicitamente para esas dos lenguas.
-- Prototipado rapido de aplicaciones conversacionales: al ser Apache-2.0 y caber en hardware modesto, sirve para validar flujos de chat antes de migrar a modelos mayores.
-- Despliegue en entornos con requisitos de privacidad: la inferencia local con llama.cpp evita enviar datos a servicios externos, util en sectores regulados.
-- Educacion y experimentacion: un modelo de ~4,2B parametros cuantizado a 4 bits es un banco de pruebas asequible para estudiar tecnicas de prompting, cuantizacion y evaluacion.
-- Tareas de generacion de texto auxiliar (resumenes, reescritura, clasificacion simple): con la salvedad de que no se han publicado benchmarks que respalden su calidad frente a alternativas del mismo tamano.
-- Integracion en pipelines de CI/CD para revision de codigo automatizada: plausible por su enfoque en programacion, aunque sin datos publicados sobre tool calling ni latencia que lo confirmen.
+- Asistencia de codigo en local: el modelo puede integrarse en editores o CLI para autocompletado y explicacion de fragmentos de codigo, aprovechando su cuantizacion Q4_K_M de 2,50 GiB que cabe en GPUs de consumo y en CPU con llama.cpp.
+- Chatbot bilingue chino-ingles: adecuado para aplicaciones de atencion al cliente o asistentes internos que requieran alternar entre ambos idiomas, con la ventaja de una licencia Apache-2.0 que permite uso comercial sin restricciones adicionales.
+- Prototipado rapido de aplicaciones de IA: al ser un modelo de ~4B parametros en GGUF, permite iterar en estaciones de trabajo sin GPU dedicada, reduciendo el coste de experimentacion frente a modelos de mayor tamano.
+- Despliegue en escritorio mediante 42model: el repositorio esta disenado para descarga directa desde la aplicacion 42model con el comando `42model download nanbeige4.2:3b-q4_k_m`, lo que facilita la distribucion a usuarios finales con verificacion de integridad por sha256.
+- Educacion y formacion en IA: util como modelo de referencia para demostrar flujos de cuantizacion GGUF, verificacion de digests y despliegue local en cursos o talleres.
+- Generacion de documentacion tecnica en chino e ingles: el modelo puede redactar y traducir contenido tecnico entre ambos idiomas, aunque sin garantias de calidad medible al no publicarse benchmarks.
+- Entornos con requisitos de reproducibilidad: gracias a los digests sha256 fijados, es adecuado para pipelines que exigen artefactos inmutables, como auditorias o despliegues regulados.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3,5 GiB con Q4_K_M (2,50 GiB de pesos mas overhead de contexto y cache KV).
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; tarjetas como RTX 3050, RTX 4060, RTX 4090 o superiores pueden ejecutarlo con holgura. Tambien es viable en A100/H100 para despliegues con mayor concurrencia.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna con 4 GB o mas; tambien en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), y otros runners compatibles con GGUF. vLLM y TGI no son la via natural para este artefacto concreto.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,5-3,5 GB con la cuantizacion Q4_K_M, incluyendo overhead de contexto y cache KV.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM, como GTX 1650, RTX 3050, RTX 4060 o superiores; tambien funciona en A100/H100 aunque no es su objetivo.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs modernas con 4 GB o mas; tambien puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importacion del GGUF), 42model (descarga nativa), y cualquier runtime compatible con GGUF. No se documenta soporte de vLLM ni TGI para este formato.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Nanbeige4.2-3B (este, GGUF Q4_K_M) | ~4,17B | no disponible | Apache-2.0 | GGUF | Copia de la conversion de bartowski; bilingue chino/ingles |
-| Abiray/Nanbeige4.2-3B-GGUF | ~4,17B (mismo modelo) | no disponible | Apache-2.0 | GGUF | Otra conversion GGUF del mismo modelo base |
-| Nanbeige/Nanbeige4.2-3B (original) | ~4,17B | no disponible | Apache-2.0 | safetensors (presumiblemente) | Pesos originales del equipo Nanbeige |
+| Nanbeige4.2-3B (este) | ~4,17B | no disponible | Apache-2.0 | GGUF (Q4_K_M) | Bilingue chino/ingles, orientado a codigo y razonamiento |
+| Qwen2.5-3B | ~3,1B | 32K (segun documentacion publica del modelo) | Apache-2.0 | safetensors, GGUF | Bilingue, ecosistema amplio y benchmarks publicos |
+| Llama-3.2-3B | ~3,2B | 128K (segun documentacion publica del modelo) | Llama 3.2 Community License | safetensors, GGUF | Multilingue, requiere aceptar licencia |
+| Phi-3.5-mini | ~3,8B | 128K (segun documentacion publica del modelo) | MIT | safetensors, GGUF | Enfocado en razonamiento y codigo |
 
-No se dispone de datos de rendimiento comparado con otras familias de modelos del mismo tamano (por ejemplo, Qwen, Llama o Gemma en el rango 3-4B) en la informacion proporcionada, por lo que no se incluye comparacion cuantitativa.
+Nota: los datos de contexto y licencia de los modelos comparables provienen de su documentacion publica general y no de la informacion proporcionada en esta busqueda; se incluyen como referencia orientativa. Para Nanbeige4.2-3B no se dispone de benchmarks publicos que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion proporcionada; como todo modelo entrenado con datos web, es probable que herede sesgos de esos datos, pero no hay analisis publicado.
-- Riesgo de alucinacion: no cuantificado; no hay evaluaciones publicadas de fidelidad o tasa de alucinacion.
-- Limitaciones de contexto e idioma: solo se declaran chino e ingles; el rendimiento en castellano no esta garantizado ni evaluado.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia; el repositorio incluye el texto canonico de Apache-2.0.
-- Caveat de procedencia: este repositorio no es el oficial del modelo ni la conversion original; es una copia de seguridad. Para trazabilidad conviene verificar los digests sha256 contra el repositorio de bartowski.
-- Ausencia de benchmarks: no hay datos publicados que permitan estimar su calidad frente a alternativas, lo que desaconseja su adopcion en produccion sin evaluacion propia.
-- Cuantizacion unica: solo se ofrece Q4_K_M en este repo; quien necesite Q5, Q6, Q8 o FP16 debera acudir a otras conversiones.
+- No se han publicado benchmarks oficiales, por lo que el rendimiento real en codigo y razonamiento no puede verificarse de forma independiente.
+- Solo se declaran chino e ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
+- No se especifica la longitud de contexto, lo que impide planificar aplicaciones con ventanas largas.
+- Riesgo de alucinacion inherente a modelos de ~4B parametros, especialmente en tareas de razonamiento complejo o datos factuales.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado principalmente con datos chinos e ingleses, es probable que presente sesgos culturales y linguisticos de esas fuentes.
+- La licencia Apache-2.0 permite uso comercial sin restricciones adicionales, pero el autor original no ofrece garantias sobre el modelo.
+- Este repositorio es una redistribucion; la responsabilidad del mantenimiento recae en 42ailab, y las capacidades pertenecen a los autores originales (Nanbeige).
+- Solo hay una cuantizacion disponible (Q4_K_M); para otros niveles de precision habria que acudir al repositorio de bartowski.
+- El repositorio tiene 262 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio de este artefacto: https://huggingface.co/42ailab/Nanbeige4.2-3B-GGUF
-- Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
-- Conversion original de bartowski: https://huggingface.co/bartowski/Nanbeige_Nanbeige4.2-3B-GGUF
-- Conversion alternativa: https://huggingface.co/Abiray/Nanbeige4.2-3B-GGUF
-- ModelScope (copia de 42ailab): https://modelscope.cn/models/42ailab/Nanbeige4.2-3B-GGUF
-- Sitio del empaquetador: https://42ailab.com
+- Repositorio Hugging Face: https://huggingface.co/42ailab/Nanbeige4.2-3B-GGUF
+- Repositorio original de bartowski (ModelScope): https://www.modelscope.cn/models/bartowski/Nanbeige_Nanbeige4.2-3B-GGUF
+- Sitio de 42ailab: https://42ailab.com
 - Aplicacion 42model: https://42model.com
+- ModelScope del repositorio: https://modelscope.cn/models/42ailab/Nanbeige4.2-3B-GGUF

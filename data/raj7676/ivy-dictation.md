@@ -2,55 +2,59 @@
 
 ## Resumen
 
-Ivy Dictation es un modelo de reconocimiento automático del habla (ASR) especializado en dictado, desarrollado por raj7676 (Glow.co) como fine-tune de Qwen3-ASR-1.7B. Su particularidad es que no se limita a transcribir literalmente: aplica en una sola pasada las autocorrecciones que el hablante introduce en su discurso ("el martes, perdón, el jueves" se convierte en "el jueves"), elimina muletillas y tartamudeos, y añade puntuación y mayúsculas. No hay un segundo modelo de lenguaje reescribiendo la salida; la corrección está integrada en el propio modelo.
+Ivy Dictation es un modelo de reconocimiento automatico del habla (ASR) especializado en dictado, desarrollado por Glow.co (autor raj7676 en Hugging Face) como fine-tune de Qwen3-ASR-1.7B de Alibaba Cloud. Su particularidad es que no se limita a transcribir literalmente lo que se dice: aplica las autocorrecciones del hablante en una sola pasada, elimina muletillas y tartamudeos, y anade puntuacion y mayusculas. Por ejemplo, ante "Let's meet on Tuesday, sorry, I mean Thursday" produce directamente "Let's meet on Thursday".
 
-El modelo tiene 1.720.574.976 parámetros y se distribuye en formato GGUF para llama.cpp, dividido en dos ficheros: el modelo de lenguaje cuantizado a Q8_0 (1,83 GB) y el codificador de audio más proyector en F16 (0,64 GB). Está entrenado exclusivamente en inglés y se integra en la aplicación de escritorio Ivy para Windows y Linux, que funciona de forma totalmente offline tras la primera descarga.
+El modelo tiene 1.720.574.976 parametros y se distribuye en formato GGUF para llama.cpp, dividido en dos ficheros: el modelo de lenguaje cuantizado a Q8_0 (1,83 GB) y el codificador de audio con su proyector en F16 (0,64 GB). Es la pieza central de Ivy, una aplicacion de dictado offline gratuita para Windows, Linux y Android, lo que lo convierte en un caso de uso practico de ASR local sin dependencia de la nube.
 
-Es relevante porque aborda un problema práctico del dictado real: el habla espontánea está llena de reformulaciones y ruido verbal que los ASR convencionales transcriben tal cual. Ivy resuelve esto mediante un fine-tune con LoRA sobre horas de audio real con ruido, micrófonos baratos y diversos acentos, más párrafos de dictado guionizados con autocorrecciones, todos con transcripciones escritas por humanos.
+Su relevancia actual radica en dos factores: la integracion de la correccion semantica dentro del propio modelo ASR (sin un segundo modelo de reescritura) y su despliegue totalmente offline mediante llama.cpp con soporte multimodal de audio. La licencia es Apache 2.0 con Commons Clause, lo que permite uso, estudio y fine-tune, pero prohibe la venta de productos cuyo valor provenga principalmente del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador de audio + proyector + LLM base Qwen3-ASR-1.7B) |
+| Arquitectura | Transformer multimodal (modelo de lenguaje Qwen3-ASR-1.7B + codificador de audio y proyector); inferencia via llama.cpp mtmd |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 (modelo de lenguaje), F16 (codificador de audio y proyector) |
-| Idiomas soportados | Ingles |
-| Licencia | Apache-2.0 con Commons Clause (fine-tune); Apache-2.0 (modelo base Qwen3-ASR-1.7B) |
-| Formato de pesos | GGUF (llama.cpp) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (modelo de lenguaje), F16 (codificador de audio y proyector); en Android se usan variantes de 0,6B y 0,5B |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 con Commons Clause (apache-2.0-with-commons-clause); el modelo base Qwen3-ASR-1.7B mantiene Apache 2.0 |
+| Formato de pesos | GGUF (ivy-Q8_0.gguf y mmproj-ivy-f16.gguf) |
+| Entrada | audio mono a 16 kHz |
+| Tamano del repo | 4,1 GB |
+| Modelo base | Qwen/Qwen3-ASR-1.7B |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-ASR-1.7B, un ASR multimodal de Alibaba Cloud que combina un codificador de audio con un modelo de lenguaje. Ivy conserva esa arquitectura y añade un fine-tune mediante LoRA que se fusionó posteriormente en los pesos y se convirtió a GGUF. La inferencia se realiza a través de la API multimodal (mtmd) de llama.cpp, alimentando audio mono a 16 kHz junto con un prompt de sistema que instruye al modelo a escribir lo que el hablante quiere decir, aplicando sus propias correcciones.
+El modelo parte de Qwen3-ASR-1.7B, un ASR multimodal de Alibaba Cloud que procesa audio a traves de un codificador y lo proyecta al espacio del modelo de lenguaje. Ivy anade un fine-tune con LoRA sobre ese modelo base, que posteriormente se fusiona en los pesos y se convierte a GGUF. La inferencia se realiza en llama.cpp mediante la API multimodal (mtmd), alimentando audio de 16 kHz mono junto con un prompt de sistema que instruye al modelo a escribir lo que el hablante quiere decir, aplicando sus propias correcciones y conservando el resto de palabras.
 
-El entrenamiento se realizó sobre muchas horas de habla real en condiciones adversas (salas ruidosas, micrófonos de baja calidad, múltiples acentos) con transcripciones escritas por humanos, complementadas con miles de párrafos de dictado guionizados repletos de autocorrecciones, leídos por muchas voces sobre ruido de fondo real. El autor indica explícitamente que ninguna transcripción de entrenamiento fue generada por IA. No se especifica el número total de tokens ni la composición exacta del dataset, ni si hubo etapas de RLHF o DPO.
+El entrenamiento se realizo sobre muchas horas de habla real (salas ruidosas, microfonos baratos, multiples acentos) con transcripciones escritas por humanos, mas miles de parrafos de dictado guionizados llenos de autocorrecciones, leidos con muchas voces y sobre ruido de fondo real. Todos los objetivos de entrenamiento fueron escritos por humanos, sin transcripciones generadas por IA. El modelo produce la salida limpia y se detiene en `<|im_end>`. No se detalla el numero de tokens de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en inglés con salida de texto limpio y listo para pegar.
-- Aplicación de autocorrecciones del hablante en una sola pasada, sin modelo secundario de reescritura.
-- Eliminación de muletillas, tartamudeos y repeticiones.
-- Puntuación y capitalización automáticas.
-- Funcionamiento totalmente offline una vez descargado el modelo.
-- Integración con llama.cpp mediante la API multimodal mtmd.
-- Detección e indicación del idioma en la plantilla de prompt (`language English`).
-- No se documentan capacidades de tool calling, agentes, visión ni audio más allá del ASR.
+- Reconocimiento automatico del habla en ingles con transcripcion de audio a texto.
+- Autocorreccion semantica en una sola pasada: aplica las rectificaciones del hablante ("sorry, I mean...", "actually make it...", "no wait...").
+- Eliminacion de muletillas y tartamudeos ("um", "uh", repeticiones de palabras).
+- Puntuacion y mayusculas automaticas.
+- Salida lista para pegar directamente en cualquier campo de texto.
+- Procesamiento totalmente offline una vez descargado el modelo.
+- Integracion con llama.cpp mediante la API mtmd (audio como entrada multimodal).
+- No se documenta soporte de tool calling, agentes, vision ni audio de salida.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Dictado de escritorio en tiempo real: la aplicación Ivy captura audio al mantener pulsada una tecla y pega el texto limpio en el cursor activo; el modelo está optimizado para latencias bajas (0,22 s para 5 s de audio en GPU).
-- Redacción de correos y mensajes: el usuario habla de forma natural con reformulaciones y el modelo entrega texto coherente y puntuado, sin necesidad de editar manualmente las correcciones.
-- Documentación clínica o de campo: profesionales que dictan notas mientras trabajan pueden beneficiarse de la supresión de muletillas y la aplicación de correcciones sin conexión, útil en entornos sin red.
-- Accesibilidad: personas con movilidad reducida o dificultades para teclear pueden usar dictado por voz con salida directa a cualquier aplicación.
-- Transcripción de reuniones y notas de voz: aunque el modelo está orientado a dictado, su robustez ante ruido y acentos permite transcribir grabaciones cortas en inglés con limpieza automática.
-- Integración en pipelines de llama.cpp: desarrolladores pueden invocar el modelo vía mtmd para preprocesar audio en aplicaciones propias, siempre que respeten la restricción de no venta de la licencia.
-- Uso educativo o de investigación: fine-tune reproducible sobre Qwen3-ASR-1.7B para estudiar técnicas de corrección integrada en ASR.
+- Dictado de texto en escritorio: la aplicacion Ivy captura audio con una tecla mantenida (Ctrl + Shift) y el modelo transcribe y limpia el texto alli donde este el cursor, adecuado para redactar correos, notas o documentacion sin cambiar de aplicacion.
+- Redaccion de mensajes con correcciones en tiempo real: al dictar frases con rectificaciones ("el miercoles, perdon, el jueves"), el modelo entrega la version final sin necesidad de editar manualmente, lo que reduce la friccion en comunicaciones rapidas.
+- Notas de reunion o apuntes: con clips de hasta 30 segundos y latencia de 0,34 s en GPU, permite transcribir intervenciones cortas de forma casi instantanea y offline, util en entornos sin conexion o con requisitos de privacidad.
+- Accesibilidad: personas con movilidad reducida o dificultades para teclear pueden introducir texto en cualquier aplicacion de Windows, Linux o Android mediante voz, con el modelo ejecutandose localmente.
+- Uso en dispositivos moviles sin red: la version Android incluye modelos mas pequenos (0,6B de voz y 0,5B de pulido de texto, unos 1,5 GB) que permiten dictado offline en el telefono.
+- Entornos con privacidad estricta: al no enviar audio a ningun servidor, encaja en flujos de trabajo donde los datos de voz no pueden salir del dispositivo (sanidad, legal, banca).
+- Integracion en pipelines propios: al ser GGUF para llama.cpp, puede incorporarse a aplicaciones personalizadas que necesiten transcripcion con limpieza semantica sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente proporciona mediciones de velocidad en la aplicación Ivy (llama.cpp, mediana de ejecuciones) sobre una RTX 4060 Laptop GPU y un Intel Core i7:
+No se han publicado resultados de benchmarks (WER, MMLU, etc.) en la informacion disponible. El autor unicamente proporciona mediciones de latencia en la aplicacion Ivy (llama.cpp, mediana de ejecuciones) sobre una RTX 4060 Laptop GPU y un Intel Core i7:
 
 | Duracion del clip | GPU (Vulkan) | Solo CPU |
 |---|---|---|
@@ -60,41 +64,42 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 2,5 GB para los dos ficheros GGUF (1,83 GB Q8_0 + 0,64 GB F16), más overhead de llama.cpp; en la práctica cabe en GPUs con 4 GB o más.
-- GPU recomendadas: cualquier GPU con soporte Vulkan y al menos 4 GB de VRAM; el autor reporta resultados en una RTX 4060 Laptop. GPUs de gama alta (A100, H100) no aportan ventaja significativa dado el tamaño del modelo.
-- Cabe en GPU de consumo: sí, en RTX 4060 y superiores; también funciona solo en CPU con latencias de 2 a 5 segundos según la duración del clip.
-- Opciones de despliegue: llama.cpp (API mtmd), que es el runtime oficial; la aplicación Ivy para Windows y Linux lo integra. No se documenta soporte para vLLM, TGI, Ollama u otros runtimes.
-- Latencia y throughput: según la tabla del autor, la GPU ofrece latencias subsegundo incluso para clips de 30 s; la CPU multiplica por 6-9 el tiempo de proceso respecto a GPU.
+- VRAM estimada: el modelo de lenguaje Q8_0 ocupa 1,83 GB y el codificador de audio F16 0,64 GB, por lo que la inferencia completa requiere aproximadamente 2,5-3 GB de memoria (GPU o RAM).
+- GPU recomendadas: cualquier GPU con al menos 3-4 GB de VRAM; el autor mide sobre una RTX 4060 Laptop. GPUs de gama alta (A100, H100) no aportan ventaja significativa dado el tamano del modelo.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 3060 en adelante, e incluso integradas con suficiente memoria compartida), y funciona en CPU sola con latencias de 2-5 s por clip.
+- Opciones de despliegue: llama.cpp (con API mtmd para audio), la aplicacion Ivy para Windows/Linux/Android. No se documenta soporte de vLLM, TGI u Ollama.
+- Latencia y throughput: 0,22-0,34 s por clip de 5-30 s en GPU Vulkan; 1,95-4,88 s en CPU. El throughput no se especifica en tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Ivy Dictation | 1,72 B | No disponible | Ingles | Apache-2.0 + Commons Clause | GGUF | Fine-tune de Qwen3-ASR-1.7B con correccion integrada |
-| Qwen3-ASR-1.7B (base) | 1,72 B | No disponible | Multilingue (segun modelo base) | Apache-2.0 | Safetensors y otros | ASR general sin correccion de dictado |
-| Whisper large-v3 | 1,55 B | 30 s por ventana | Multilingue | MIT | Safetensors, GGUF, etc. | ASR general, sin autocorreccion ni limpieza de muletillas |
-| Parakeet / Conformer ASR | Variable | Variable | Ingles principalmente | Variable | Variable | Alternativas clasicas de ASR sin postprocesado integrado |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Ivy Dictation | 1,72B | no disponible | en | Apache 2.0 + Commons Clause | GGUF |
+| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | no disponible | Apache 2.0 | no disponible |
+| Whisper large-v3 (referencia ASR) | ~1,55B | no disponible | multilingue | MIT | safetensors, GGUF, etc. |
 
-La comparativa se limita a los datos disponibles; no se han publicado mediciones comparativas de calidad entre Ivy Dictation y estos modelos en la informacion proporcionada.
+No se dispone de datos de benchmark comparativos en la informacion proporcionada. La diferencia funcional clave de Ivy frente a un ASR convencional es la correccion semantica integrada y la limpieza de muletillas en una sola pasada, capacidades que Whisper u otros ASR estandar no ofrecen de forma nativa. Frente a su modelo base, Ivy anade el fine-tune para dictado y la conversion a GGUF para ejecucion offline.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no se ha entrenado ni evaluado en otros idiomas.
-- Licencia Apache-2.0 con Commons Clause: permite uso, estudio y fine-tune, pero prohíbe vender un producto o servicio cuyo valor provenga principalmente de este modelo.
-- El modelo base Qwen3-ASR-1.7B mantiene su licencia Apache-2.0 original, que debe respetarse por separado.
-- Riesgo de alucinación o de "corregir" en exceso: al aplicar autocorrecciones, podría eliminar información que el hablante quería conservar o interpretar mal una reformulación.
-- Entrenado con transcripciones humanas, pero no se documentan evaluaciones de sesgo por acento, género o dialecto.
-- La aplicación Ivy tiene limitaciones de plataforma: X11 en Linux (Wayland en pruebas), no disponible para Arch, ARM ni 32 bits.
-- No se especifica la longitud de contexto ni el comportamiento con clips muy largos.
-- El modelo está pensado para dictado de frases cortas; su uso en transcripción de audio extenso no está validado.
-- Solo se distribuye en GGUF para llama.cpp; no hay pesos en safetensors ni integración con otros runtimes.
+- Solo soporta ingles; el prompt fija explicitamente "language English".
+- Riesgo de alucinacion o de "corregir" en exceso: al aplicar correcciones semanticas, puede alterar el significado si interpreta mal una rectificacion o un cambio de idea.
+- No se documentan sesgos especificos, pero al entrenarse con habla real de acentos y entornos concretos puede tener sesgos de acento, genero o dominio.
+- La licencia Commons Clause prohibe vender productos o servicios cuyo valor provenga principalmente del modelo; el uso comercial directo esta restringido.
+- El nombre y el logo "Ivy" pertenecen a Glow.co y no se ceden con la licencia; cualquier copia modificada debe usar su propio nombre e icono.
+- En Linux, el soporte en Wayland esta en pruebas y solo funciona el atajo Ctrl + Shift; no hay version para Arch, ARM ni PCs de 32 bits.
+- La longitud de contexto no esta publicada, lo que limita la planificacion de clips largos.
+- No se especifican requisitos de tool calling ni integracion con agentes; no es un modelo conversacional general.
+- La version Android usa modelos distintos y mas pequenos (0,6B y 0,5B), por lo que su calidad puede diferir de la version de escritorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/raj7676/ivy-dictation
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Web de la aplicacion Ivy: https://raj-7676.github.io/ivy-dictation/
+- Web oficial de Ivy: https://raj-7676.github.io/ivy-dictation/
 - Codigo fuente en GitHub: https://github.com/raj-7676/ivy-dictation
-- Releases de la aplicacion: https://github.com/raj-7676/ivy-dictation/releases/latest
-- Microsoft Store (Windows): https://apps.microsoft.com/detail/9P420N80LXQJ
+- Releases (Windows, Android APK, Linux): https://github.com/raj-7676/ivy-dictation/releases/latest
+- Microsoft Store: https://apps.microsoft.com/detail/9P420N80LXQJ
 - llama.cpp: https://github.com/ggml-org/llama.cpp
+- Politica de marca: https://github.com/raj-7676/ivy-dictation/blob/main/TRADEMARK.md
+- Carpeta de modelos Android: https://huggingface.co/raj7676/ivy-dictation/tree/main/android

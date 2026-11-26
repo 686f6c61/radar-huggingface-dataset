@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Ministral-3b-instruct-GGUF",
+  "slug": "mradermacher-ministral-3b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3b-instruct-GGUF",
+  "created_at": "2024-12-23T14:28:18.000Z",
+  "updated_at": "2026-11-26T01:32:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ministral/Ministral-3b-instruct",
+    "base_model:quantized:ministral/Ministral-3b-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 3418,
+  "trending_score": 0,
+  "parameters": 3315716096,
+  "parameters_human": "3.32B",
+  "storage_bytes": 29392225152,
+  "storage_human": "29.4 GB",
+  "context_length": 131072,
+  "base_model": "ministral/Ministral-3b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

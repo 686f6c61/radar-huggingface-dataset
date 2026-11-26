@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Olala-v1.0-mini-7A1B es un modelo de lenguaje de tipo "small reasoning model" desarrollado por OVHai LLM (grupo OVHcloud) y publicado con pesos abiertos bajo licencia Apache 2.0. Está disenado para chat, seguimiento de instrucciones y uso de herramientas, y se construye sobre una arquitectura híbrida Mamba-3 / atención con mezcla de expertos (MoE). Con 6.773.124.144 parámetros totales y aproximadamente 1.000 millones de parámetros activos por token, prioriza la eficiencia computacional: solo 7 de sus 36 capas mantienen KV cache.
+Olala-v1.0-mini-7A1B es un modelo de lenguaje de tipo *small reasoning model* orientado a chat, seguimiento de instrucciones y uso de herramientas (tool calling), desarrollado por OVHai LLM (grupo OVHcloud) y publicado con pesos abiertos bajo licencia Apache 2.0. Se construye sobre una arquitectura híbrida Mamba-3 / atención con mezcla de expertos (MoE), con 6.773.124.144 parámetros totales y aproximadamente 1.000 millones de parámetros activos por token. El modelo forma parte de una familia que incluye el checkpoint base (preentrenado con 12,8 billones de tokens), el checkpoint tras SFT y esta versión final post-entrenada con razonamiento, chat y tool use.
 
-El modelo fue entrenado sobre 12,8 billones de tokens combinando datasets públicos y datos sintéticos propios, en tres supercomputadores europeos (JUPITER en Alemania, Jean Zay en Francia y MeluXina en Luxemburgo), usando 1.024 GPU NVIDIA GH200 en JUPITER y GPU H100 en Jean Zay. La estimación de emisiones declarada por el autor es de 40.000 toneladas de CO2 equivalente (rango 30-50 t, suministro renovable) para el entrenamiento completo de la familia.
+La propuesta de valor principal es la eficiencia: solo 7 de sus 36 capas mantienen caché KV, lo que reduce drásticamente los requisitos de memoria durante la inferencia y permite, según el autor, ejecutarlo en un portátil. Además, incorpora un modo de razonamiento con cuatro niveles de esfuerzo, entrenado mediante aprendizaje por refuerzo para llamar a herramientas y realizar búsquedas en múltiples turnos. Está entrenado en tres supercomputadores europeos (JUPITER en Alemania, Jean Zay en Francia y MeluXina en Luxemburgo) sobre 1.024 GPU NVIDIA GH200 y GPU H100.
 
-Su relevancia actual reside en tres ejes: es un modelo europeo con licencia permisiva, incorpora razonamiento explícito con cuatro niveles de esfuerzo y fue entrenado con aprendizaje por refuerzo para llamadas a herramientas y búsqueda multi-turno. La familia incluye un modelo base, un checkpoint SFT y este modelo post-entrenado final, además de dos modelos especializados. El modelo soporta 37 idiomas, entre ellos el castellano.
+Es relevante ahora por su combinación de licencia permisiva (Apache 2.0), soporte multilingüe amplio (37 idiomas declarados), arquitectura híbrida poco habitual en modelos abiertos de este tamaño y enfoque agéntico con razonamiento explícito. El modelo se publicó el 30 de octubre de 2026 y acumula más de 64.000 descargas y 350 likes en Hugging Face, lo que indica una adopción temprana significativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-3 / atención con mezcla de expertos (MoE) |
-| Parametros totales | 6.773.124.144 |
-| Parametros activos | Aproximadamente 1.000 millones por token |
+| Arquitectura | Híbrida Mamba-3 / atención con mezcla de expertos (MoE); 36 capas, de las cuales solo 7 mantienen caché KV |
+| Parametros totales | 6.773.124.144 (≈6,77 mil millones) |
+| Parametros activos | ≈1.000 millones por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 37 idiomas: en, zh, fr, de, it, ja, ru, es, pl, pt, nl, el, tr, cs, uk, hu, ro, ko, ar, fi, sv, no, da, bg, sk, hr, lt, sl, bs, he, et, ca, lv, ka, sr, sq, is |
+| Tipos de cuantizacion | no disponible (el repo contiene pesos en safetensors; no se detallan cuantizaciones oficiales) |
+| Idiomas soportados | en, zh, fr, de, it, ja, ru, es, pl, pt, nl, el, tr, cs, uk, hu, ro, ko, ar, fi, sv, no, da, bg, sk, hr, lt, sl, bs, he, et, ca, lv, ka, sr, sq, is (37 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers, con código custom) |
+| Formato de pesos | safetensors (librería transformers, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina capas Mamba-3 (modelo de espacio de estados) con capas de atención en un esquema híbrido, sobre una estructura de mezcla de expertos. De las 36 capas totales, solo 7 conservan KV cache, lo que reduce drásticamente el coste de memoria durante la inferencia y permite ejecutar el modelo en un portátil según el autor. El modelo activa aproximadamente 1.000 millones de parámetros por token pese a tener 6,77 mil millones totales.
+El modelo emplea una arquitectura híbrida que combina capas Mamba-3 (modelo de espacio de estados) con capas de atención, organizadas en una estructura de mezcla de expertos. De las 36 capas totales, solo 7 conservan caché KV, lo que reduce el coste de memoria asociado al contexto largo y explica la afirmación del autor de que puede ejecutarse en un portátil. Con aproximadamente 1.000 millones de parámetros activos por token sobre 6,77 mil millones totales, el modelo sigue un patrón de activación dispersa típico de MoE.
 
-El preentrenamiento se realizó sobre 12,8 billones de tokens de datasets públicos y datos sintéticos propios. El pipeline de post-entrenamiento incluye SFT (checkpoint intermedio publicado) y una fase de aprendizaje por refuerzo orientada a razonamiento, llamadas a herramientas y búsqueda multi-turno. El modelo incorpora un modo de razonamiento con cuatro niveles de esfuerzo configurables. El entrenamiento se llevó a cabo en JUPITER (1.024 GPU GH200), Jean Zay (GPU H100) y MeluXina, con un consumo energético estimado de 1,16 GWh y 40.000 toneladas de CO2 equivalente declaradas.
+El entrenamiento se realizó sobre 12,8 billones de tokens procedentes de conjuntos de datos públicos y datos sintéticos propios. El proceso incluyó preentrenamiento, una fase de *annealing*, SFT (supervised fine-tuning) y RL (reinforcement learning). El post-entrenamiento con RL se orientó específicamente a dotar al modelo de capacidades de razonamiento (con cuatro niveles de esfuerzo configurables) y de uso de herramientas con búsqueda multi-turno. La infraestructura utilizó 1.024 GPU NVIDIA GH200 en JUPITER, además de GPU H100 en Jean Zay, con un consumo energético estimado de aproximadamente 1,16 GWh y unas emisiones de 30-50 toneladas de CO₂ (valor declarado de 40.000.000 g, con suministro renovable).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en 37 idiomas, incluido el castellano.
-- Razonamiento explícito con cuatro niveles de esfuerzo configurables ("thinking mode").
-- Llamadas a herramientas y function calling, entrenado mediante aprendizaje por refuerzo.
-- Comportamiento agéntico con búsqueda y razonamiento multi-paso a lo largo de varios turnos.
-- Seguimiento de instrucciones y tareas de chat general.
-- Capacidades multilingües amplias (37 idiomas de familias diversas: germánicas, románicas, eslavas, urálicas, semíticas, kartvelianas, etc.).
-- No se documentan capacidades de visión ni audio en la información disponible.
+- Generación de texto conversacional multi-turno con seguimiento de instrucciones.
+- Razonamiento explícito con cuatro niveles de esfuerzo (*reasoning effort levels*): el modelo "piensa antes de responder".
+- Tool calling / function calling, entrenado mediante RL.
+- Razonamiento agéntico multi-paso, incluyendo búsqueda sobre múltiples turnos.
+- Capacidades multilingües en 37 idiomas, con presencia destacada de lenguas europeas (español, catalán, euskera, gallego no declarado, pero sí ca, eu no listado; sí ca, y lenguas eslavas y nórdicas).
+- Modo chat e instrucciones generales.
+- No se declaran capacidades de visión ni audio en la información disponible.
+- No se declaran capacidades específicas de código o matemáticas en la model card, aunque el razonamiento y el tool calling son aplicables a esos dominios.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con llamadas a herramientas para consultar estado de pedidos o bases de conocimiento, gracias a su entrenamiento específico en tool calling y su soporte de 37 idiomas.
-- Agentes de búsqueda multi-turno: adecuado para flujos donde el agente debe reformular consultas, consultar fuentes externas y razonar sobre resultados parciales, una capacidad reforzada explícitamente mediante RL.
-- Asistentes de código con integración de herramientas: puede invocarse en pipelines donde el modelo decida qué función o API llamar (por ejemplo, ejecutar tests, consultar documentación) dentro de un bucle agéntico.
-- Despliegue en entornos con recursos limitados: con solo 7 capas con KV cache y ~1B parámetros activos, es viable en portátiles y estaciones de trabajo sin GPU de datacenter, lo que facilita prototipado local y aplicaciones de borde.
-- Razonamiento con coste controlado: los cuatro niveles de esfuerzo permiten ajustar la latencia y el consumo de tokens de razonamiento según la criticidad de la tarea, útil en aplicaciones de clasificación o extracción donde no se necesita cadena de pensamiento larga.
-- Aplicaciones multilingües europeas: cobertura de idiomas como castellano, catalán, euskera no listado, gallego no listado, polaco, checo, húngaro, rumano, búlgaro, croata, esloveno, etc., útil para servicios públicos o atención al cliente en la UE.
-- Investigación sobre arquitecturas híbridas SSM/atención: al ser pesos abiertos Apache 2.0 con código custom, sirve como base para estudiar eficiencia de KV cache y enrutamiento MoE en modelos pequeños.
+- **Atención al cliente automatizada:** el modelo puede gestionar conversaciones multi-turno con razonamiento y tool calling, integrándose con sistemas de ticketing o CRM mediante function calling para consultar pedidos, estados de cuenta o bases de conocimiento.
+- **Agentes de búsqueda multi-turno:** gracias al entrenamiento con RL para búsqueda sobre varios turnos, es adecuado para asistentes que consultan APIs o motores de búsqueda de forma iterativa y sintetizan resultados.
+- **Automatización de flujos con herramientas:** en pipelines donde el modelo debe decidir qué función invocar (envío de correo, consulta a base de datos, creación de tareas) y encadenar varias llamadas, el soporte nativo de tool calling reduce la ingeniería de prompts.
+- **Asistencia en escritura multilingüe:** con 37 idiomas soportados, sirve para redacción, traducción asistida y resumen en entornos corporativos europeos con requisitos de cobertura lingüística amplia.
+- **Prototipado y despliegue en hardware limitado:** al requerir solo 7 capas con caché KV y ~1B de parámetros activos, puede ejecutarse en portátiles o estaciones de trabajo sin GPU de datacenter, lo que facilita demos, pruebas locales y desarrollo offline.
+- **Razonamiento con coste controlado:** los cuatro niveles de esfuerzo permiten ajustar la profundidad de razonamiento según la tarea, útil en aplicaciones donde se quiere equilibrar latencia y calidad (por ejemplo, clasificación rápida frente a resolución de problemas complejos).
+- **Procesamiento de documentos y extracción de datos:** combinado con tool calling para consultar fuentes externas y con razonamiento multi-paso, puede emplearse en pipelines de extracción y verificación de información.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 6,77 mil millones de parámetros totales, en fp16 requeriría aproximadamente 13,5 GB solo para pesos, más overhead de activaciones y KV cache. En cuantización de 8 bits rondaría 7 GB y en 4 bits unos 3,5-4 GB, aunque el autor no publica cifras oficiales.
-- GPU recomendadas: el autor indica que el modelo "funciona en un portátil". Para uso en servidor, GPU con al menos 16-24 GB de VRAM (RTX 4090, A10, L4, A100, H100) permitirían fp16 o cuantizaciones altas con comodidad.
-- Cabe en GPU de consumo: sí, según el autor, gracias a los ~1B parámetros activos y las solo 7 capas con KV cache. Una RTX 4090 (24 GB) o incluso GPU con 8-12 GB en cuantización 4 bits serían suficientes.
-- Opciones de despliegue: transformers (librería declarada, requiere `trust_remote_code=True` por el código custom). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible; la naturaleza híbrida Mamba/MoE puede requerir kernels específicos.
-- Latencia y throughput estimados: no disponibles.
+- **VRAM estimada para inferencia:** no disponible de forma oficial. Como referencia orientativa basada en el tamaño del repo (13,6 GB en safetensors, presumiblemente en fp16/bf16), la inferencia en precisión completa requeriría del orden de 14-16 GB de VRAM; con cuantización a 8 bits podría situarse en torno a 7-8 GB y a 4 bits en torno a 4-5 GB, aunque estas cifras no están confirmadas por el autor.
+- **GPU recomendadas:** el autor indica que el modelo "funciona en un portátil". Para despliegue en servidor se puede usar cualquier GPU con suficiente VRAM; no se especifican modelos concretos.
+- **Consumer GPU:** según la afirmación del autor, cabe en hardware de consumo; la reducción de caché KV a 7 capas favorece contextos largos en GPU con VRAM moderada.
+- **Opciones de despliegue:** transformers (requiere `custom_code`); no se confirman oficialmente vLLM, llama.cpp, Ollama o TGI en la información disponible. Existe un endpoint gestionado en OVHcloud AI Endpoints.
+- **Latencia y throughput:** no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Olala-v1.0-mini-7A1B | 6,77B | ~1B | no disponible | Apache 2.0 | Hugging Face, OVHcloud AI Endpoints |
-| Alternativas de ~7B densos (p. ej. Mistral-7B, Llama-3-8B) | 7-8B | 7-8B (densos) | 8K-128K según versión | Apache 2.0 / licencia comunitaria | Hugging Face |
-| Alternativas MoE pequeñas (p. ej. Qwen MoE, Mixtral 8x7B) | variable | variable | variable | variable | Hugging Face |
+No se dispone de datos de benchmarks ni de comparaciones oficiales en la información proporcionada. La siguiente tabla recoge únicamente los datos verificables del modelo frente a alternativas de categoría similar, marcando como "no disponible" lo que no se conoce.
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento con estos modelos. La comparación se limita a parámetros, licencia y disponibilidad.
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Olala-v1.0-mini-7A1B | 6,77B | ≈1B | no disponible | Apache 2.0 | Híbrido Mamba-3/atención MoE, 37 idiomas, tool calling con RL |
+| Alternativas de ~7B tipo transformer | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos |
+| Alternativas MoE pequeñas | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos |
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que el rendimiento real en tareas estándar (MMLU, GSM8K, HumanEval) es desconocido.
-- Riesgo de alucinación inherente a modelos generativos; no se documentan medidas específicas de mitigación.
-- Longitud de contexto no especificada: planificar aplicaciones con documentos largos requiere verificación empírica.
-- Sesgos: no se documenta análisis de sesgos ni composición detallada del dataset de preentrenamiento más allá de "datasets públicos y datos sintéticos propios".
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el modelo requiere `trust_remote_code=True` por el código custom de arquitectura, lo que implica ejecutar código del autor.
-- El soporte de herramientas de inferencia (vLLM, llama.cpp, TGI) no está confirmado; la arquitectura híbrida Mamba-3/MoE puede no estar soportada por todos los frameworks.
-- El modelo es de tipo "small reasoning": para tareas de razonamiento complejo o contextos muy largos, modelos de mayor tamaño pueden ser más adecuados.
-- Emisiones declaradas de 40.000 t CO2e para el entrenamiento de la familia; relevante para informes de sostenibilidad si se cita el modelo.
-- Los 37 idiomas listados no implican calidad uniforme; no se publican evaluaciones por idioma.
+- **Sesgos:** no se documentan sesgos específicos en la información disponible; al entrenarse con datos públicos y sintéticos, es probable que herede sesgos de esas fuentes, pero no hay evaluación publicada.
+- **Alucinación:** no se han publicado tasas de alucinación ni evaluaciones de fidelidad; como todo modelo generativo, existe riesgo, especialmente en razonamiento multi-paso y tool calling.
+- **Contexto:** la longitud máxima de contexto no está especificada, lo que impide planificar su uso en tareas de contexto largo con garantías.
+- **Idiomas:** aunque se declaran 37 idiomas, no se especifica el nivel de calidad por idioma; el rendimiento puede variar considerablemente entre lenguas con más o menos presencia en los datos.
+- **Licencia:** Apache 2.0 permite uso comercial, modificación y redistribución, pero conviene revisar las obligaciones de atribución y las condiciones del código personalizado (`custom_code`) que requiere transformers.
+- **Producción:** la falta de benchmarks publicados, de datos de latencia/throughput y de cuantizaciones oficiales dificulta una evaluación rigurosa antes de desplegar en producción; se recomienda validación propia.
+- **Formato:** requiere `custom_code` en transformers, lo que puede complicar la integración con herramientas estándar y aumentar la superficie de mantenimiento.
+- **Emisiones:** el dato de emisiones (40 t CO₂) es una estimación del autor con suministro renovable, no una medición independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B
-- Modelo base: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base
+- Modelo base (preentrenado): https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base
 - Checkpoint SFT: https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-SFT
 - Informe técnico (PDF): https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf
 - Playground: https://olala.ovh.com
-- Catálogo OVHcloud AI Endpoints: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/
+- Endpoint gestionado en OVHcloud AI Endpoints: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/

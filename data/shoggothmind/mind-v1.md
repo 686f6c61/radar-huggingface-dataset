@@ -2,89 +2,115 @@
 
 ## Resumen
 
-Mind-v1 es un modelo de lenguaje decoder-only de 134 millones de parametros (134.105.856 exactos, segun los pesos en safetensors) desarrollado por ShoggothMind, presentado como "Autonomous Consensus Foundation Model (Generation 1)". El modelo se entrena desde cero sobre un corpus propio, ShoggothMind/mind-judgements, que recoge evaluaciones horarias de consenso multi-modelo sobre mas de 500 modelos frontera en benchmarks de verdad objetiva de tipo matematico y logico. Cada lote de entrenamiento se atestigua criptograficamente mediante transacciones SPL Memo en la cadena de Solana, lo que vincula la procedencia de los datos a un registro on-chain.
+Mind-v1 es un modelo de lenguaje decoder-only de 35,8 millones de parámetros entrenado desde cero por ShoggothMind, un proyecto vinculado al protocolo autónomo "The Mind" sobre la blockchain de Solana. Se presenta como un modelo de razonamiento determinista y propósito específico, entrenado exclusivamente con problemas sintéticos de lógica, secuencias, aritmética simple y cálculo de calendario generados por dicho protocolo. No utiliza pesos preentrenados de ningún modelo base: la inicialización es aleatoria y el entrenamiento completo se realizó en aproximadamente 14,9 minutos sobre hardware convencional.
 
-La arquitectura es un transformer clasico con 12 bloques, hidden size de 768, intermediate size de 2.048 con activacion SwiGLU, 12 cabezas de atencion (dimension de cabeza 64), embeddings posicionales rotatorios (RoPE) y normalizacion RMSNorm con epsilon 1e-5. El vocabulario es de 32.000 tokens y la precision declarada es float16. El repositorio ocupa 0,3 GB y se distribuye en formato safetensors bajo licencia Apache-2.0.
+La arquitectura sigue el estilo LLaMA con activaciones SwiGLU, normalización RMSNorm y embeddings posicionales rotatorios (RoPE), con 6 bloques transformer, dimensión oculta de 512 y 8 cabezas de atención. Incorpora un tokenizador BPE a nivel de byte propio con vocabulario de 16.384 tokens. El modelo se distribuye en formato SafeTensors (float32, 143 MB) bajo licencia Apache 2.0.
 
-El interes del modelo es mas conceptual que de rendimiento: se plantea como una "fundacion de consenso" que aprende a destilar la senal agregada de muchos modelos evaluadores sobre preguntas con respuesta verificable. No es un modelo generalista de gran escala y, a fecha de los datos disponibles, no registra descargas ni likes ni publica resultados de benchmarks, por lo que su utilidad practica en produccion esta por demostrar.
+Su relevancia no reside en competir con modelos frontera, sino en ofrecer un caso de estudio reproducible de entrenamiento desde cero, con pesos y pipeline completamente abiertos, orientado a inferencia local en CPU con latencia inferior a 100 ms y sin dependencias de API. Es útil como referencia para quienes investigan modelos pequeños, razonamiento algorítmico determinista o despliegues de coste cero en entornos con recursos muy limitados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (12 bloques, SwiGLU, RoPE, RMSNorm) |
-| Parametros totales | 134.105.856 (~134M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder-only estilo LLaMA (SwiGLU, RMSNorm, RoPE) |
+| Parámetros totales | 35.756.544 (~35,8 M) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2.048 tokens configurados; entrenado con secuencias de 128 tokens |
+| Tipos de cuantización | no disponible (pesos publicados en float32) |
+| Idiomas soportados | inglés (etiqueta `en`); el autor incluye `multilingual` pero no se detallan idiomas adicionales |
+| Licencia | Apache 2.0 |
+| Formato de pesos | SafeTensors (`model.safetensors`, float32, 143 MB) |
 
 ## Arquitectura y entrenamiento
 
-Es un transformer decoder-only de 12 bloques con hidden size 768, intermediate size 2.048 y activacion SwiGLU, 12 cabezas de atencion con dimension de cabeza 64, normalizacion RMSNorm (eps 1e-5) y embeddings posicionales rotatorios (RoPE). El vocabulario es de 32.000 tokens y los pesos se almacenan en float16. La longitud de contexto no se especifica en la informacion disponible.
+El modelo emplea un transformer decoder-only con 6 bloques, dimensión oculta de 512, proyección intermedia SwiGLU de 1.376 y 8 cabezas de atención de 64 dimensiones cada una. Usa RMSNorm con épsilon 10⁻⁵ y RoPE para posiciones. El tokenizador es un BPE a nivel de byte independiente, entrenado específicamente para este proyecto, con vocabulario de 16.384 tokens.
 
-El entrenamiento se realizo desde cero sobre el dataset ShoggothMind/mind-judgements, descrito como evaluaciones de consenso multi-modelo recogidas cada hora sobre 500+ modelos frontera en benchmarks de verdad objetiva de tipo matematico y logico. La procedencia se refuerza mediante atestacion criptografica on-chain de cada lote via transacciones SPL Memo en Solana y Base. No se detalla en la informacion proporcionada el numero total de tokens, la composicion exacta del dataset, ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineamiento posteriores al preentrenamiento.
+El entrenamiento partió de pesos inicializados aleatoriamente, sin modelo base preentrenado. El dataset es `ShoggothMind/mind-judgements` (split `synthetic_train`), con 3.000 ejemplos verificados de razonamiento repartidos en 8 tipos de tarea y 10 niveles de dificultad; la validación usó 500 ejemplos reservados. Se optimizó con AdamW (β₁=0,9, β₂=0,95, weight decay 0,01, learning rate 3×10⁻⁴) y scheduler de cosine annealing con 100 pasos de warmup. La pérdida inicial fue 9,7041, coherente con la línea base teórica de azar uniforme (−ln(1/16384) = 9,704); la pérdida final de entrenamiento fue 1,0608 y la de validación 1,2210. El entrenamiento completo duró unos 14,9 minutos. No se documenta RLHF, DPO ni ajuste por preferencias.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles con transformers (pipeline text-generation).
-- Razonamiento matemático y logico orientado a tareas con respuesta verificable, derivado del tipo de datos de consenso con el que se entreno.
-- Uso previsto como generador de juicios/consensos sobre preguntas factuales o de verdad objetiva (el ejemplo de la model card usa el prompt "The consensus truth for question H132-Q1 is:").
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto restringida a tareas de razonamiento algorítmico: lógica de relaciones, conteo de letras, cálculo de días de la semana, secuencias numéricas y aritmética simple.
+- Formato de salida determinista: encapsula las respuestas en etiquetas `<answer>...</answer>` tal como se aprendió durante el entrenamiento.
+- Inferencia determinista con decodificación greedy (`do_sample=False`), reproducible entre ejecuciones.
+- Ejecución local en CPU sin dependencias de API ni claves externas.
+- Soporte de integración vía API HTTP con el enjambre de consenso de The Mind en Solana (alternativa a ejecutar los pesos localmente).
+- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento extendido (thinking mode).
+- Capacidad multilingüe no demostrada: la model card etiqueta `multilingual` pero solo se documenta entrenamiento en inglés.
 
 ## Casos de uso
 
-- Agregacion de respuestas sobre preguntas con verdad objetiva: dado que se entreno con evaluaciones de consenso multi-modelo, puede emplearse como componente generador de juicios de consenso en pipelines que ya dispongan de respuestas de multiples modelos y necesiten una sintesis textual. Es adecuado por su tamano reducido (134M) y su coste de inferencia bajo.
-- Filtrado y puntuacion de datasets de razonamiento: su entrenamiento en benchmarks matematicos y logicos lo hace candidato a pre-clasificador o generador de etiquetas auxiliares en pipelines de curacion de datos, siempre que se valide empiricamente.
-- Prototipado rapido en entornos con recursos limitados: al pesar unos 0,3 GB en safetensors, puede ejecutarse en una unica GPU consumer o incluso en CPU para experimentos de investigacion sobre consenso y procedencia de datos.
-- Investigacion sobre procedencia verificable: el uso de atestacion on-chain por lote permite estudiar tecnicas de trazabilidad de datos de entrenamiento, un area relevante para auditoria de modelos.
-- Educacion y demostraciones de arquitectura transformer pequena: sirve como ejemplo reproducible de un transformer decoder-only de 12 capas entrenado desde cero, util para cursos o talleres.
-- Base para fine-tuning especifico de dominio: al estar bajo Apache-2.0, puede afinarse sobre tareas de clasificacion o generacion corta en dominios especializados, reutilizando el tokenizador de 32.000 tokens.
+- Validación de pipelines de entrenamiento desde cero: el modelo sirve como referencia reproducible para verificar que una implementación de transformer, tokenizador y bucle de entrenamiento converge correctamente, comparando la pérdida inicial con la línea base teórica de azar uniforme.
+- Clasificación de tareas lógicas simples en entornos embebidos: con 143 MB en RAM y 96 ms de latencia en CPU, puede integrarse en dispositivos sin GPU para resolver consultas acotadas de calendario o secuencias numéricas.
+- Componente de enrutamiento determinista: su salida etiquetada de forma consistente permite usarlo como clasificador o extractor de respuestas estructuradas dentro de un sistema mayor que derive las consultas complejas a modelos de mayor capacidad.
+- Docencia y divulgación técnica: el pipeline completo, tokenizador incluido, es material didáctico para explicar entrenamiento de transformers a escala reducida con métricas verificables.
+- Pruebas de integración en CI/CD: al ser ligero y determinista, puede incorporarse como fixture en tests de pipelines de inferencia (formato de salida, tokenización, carga de pesos SafeTensors) sin coste de API.
+- Investigación sobre razonamiento sintético: permite estudiar cómo un modelo de 35,8 M distribuye su rendimiento entre 8 tipos de tarea y 10 niveles de dificultad, y hasta dónde llega la capacidad de generalización con 3.000 ejemplos de entrenamiento.
+- Despliegue en escenarios de conectividad nula: al no requerir claves ni red, es adecuado para entornos aislados donde solo se necesitan respuestas a problemas algorítmicos predefinidos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluación del autor contra seis modelos frontera sobre una porción reservada de `test.jsonl`, con precisión de coincidencia exacta (exact-match):
+
+| Modelo | Parámetros | Exact-Match | Latencia media | Coste por 1M tokens | Huella de memoria | Pesos abiertos |
+|---|---|---|---|---|---|---|
+| Mind-v1 | 35,8 M | 6,0 % (salida directa) | 96,0 ms (CPU) | 0,00 $ | 143 MB | Sí |
+| DeepSeek V3 | 671 B (37 B activos) | 20,0 % | 5.080 ms | 0,14 / 0,28 $ | Nube | No |
+| Qwen 2.5 72B | 72 B | 60,0 % | 1.410 ms | 0,35 / 0,40 $ | Nube | Sí |
+| Claude 3.5 Sonnet | Propietario | 0,0 %* | 350 ms | 3,00 / 15,00 $ | Nube | No |
+| GPT-4o | Propietario | 80,0 % | 1.930 ms | 2,50 / 10,00 $ | Nube | No |
+| Llama 3.3 70B | 70 B | 60,0 % | 2.300 ms | 0,30 / 0,40 $ | Nube | Sí |
+| Mistral Large | Propietario | 0,0 %* | 480 ms | 2,00 / 6,00 $ | Nube | No |
+
+\*El autor atribuye los resultados del 0 % a rechazos conversacionales o respuestas fuera de las etiquetas `<answer>` bajo la restricción de generación de un solo token, no a incapacidad del modelo.
+
+Desglose por tarea de Mind-v1 y métricas del conjunto de test:
+
+| Tarea / métrica | Resultado |
+|---|---|
+| Lógica y relaciones | 30,0 % |
+| Conteo de letras | 10,0 % |
+| Cálculo de día de la semana | 10,0 % |
+| Secuencias numéricas | 5,0 % |
+| Entropía cruzada en test | 1,8986 |
+| Perplejidad en test | 6,68 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en float16, los pesos ocupan aproximadamente 0,27 GB (134M x 2 bytes); con overhead de activaciones y cache KV, el consumo tipico se situa en torno a 0,5-1 GB. La cuantizacion a 8 bits o 4 bits reduciria el peso a ~0,13 GB y ~0,07 GB respectivamente, aunque el autor no publica pesos cuantizados.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100); tambien es viable en CPU.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en placas integradas con suficiente memoria compartida.
-- Opciones de despliegue: transformers (referencia de la model card), llama.cpp y Ollama si se generan pesos GGUF, vLLM y TGI previa conversion de formato. No se confirma en la informacion disponible que existan pesos GGUF publicados.
-- Latencia y throughput estimados: no disponibles. Por el tamano (134M parametros), en una GPU moderna se espera un throughput alto y latencias de milisegundos por token, pero no hay cifras publicadas.
+- VRAM estimada: no requiere GPU; los pesos en float32 ocupan 143 MB y caben íntegramente en RAM de cualquier equipo actual.
+- GPU recomendadas: no aplica; el autor reporta inferencia en una única CPU x86_64. Cualquier GPU consumer (por ejemplo, RTX 4090) puede ejecutarlo, pero no aporta ventaja relevante.
+- Cabe en cualquier GPU consumer, incluida la gama de entrada, y en CPU de un solo núcleo.
+- Opciones de despliegue: `transformers` con PyTorch (documentado en la model card); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y la disponibilidad de GGUF no está confirmada.
+- Latencia y throughput: ~96 ms por inferencia en CPU convencional, con generación de hasta 16 tokens nuevos en el ejemplo oficial.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
-|---|---|---|---|---|---|
-| ShoggothMind/mind-v1 | 134M | no disponible | Apache-2.0 | Hugging Face, 0 descargas | no disponible |
-| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente usado | benchmarks publicos |
-| GPT-2 small | 124M | 1.024 tokens | MIT | Hugging Face, ampliamente usado | benchmarks publicos |
-| Qwen2-0.5B | ~500M | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado | benchmarks publicos |
+No se dispone de comparativas publicadas frente a modelos de tamaño equivalente (por ejemplo, modelos de 30–50 M de parámetros orientados a razonamiento). La comparativa del autor se realiza contra modelos frontera de 70 B o superiores, que no son alternativas realistas para el mismo caso de uso. Los datos disponibles son los siguientes:
 
-La comparativa es orientativa: mind-v1 comparte escala con GPT-2 small (124M) pero no publica contexto, idiomas ni benchmarks, mientras que los modelos alternativos si ofrecen esos datos. No hay modelos comparables exactos por proposito (consenso multi-modelo con procedencia on-chain) en la informacion disponible.
+| Criterio | Mind-v1 | Modelos frontera comparados (GPT-4o, Qwen 2.5 72B, Llama 3.3 70B) |
+|---|---|---|
+| Parámetros | 35,8 M | 70 B o superior |
+| Contexto | 2.048 tokens | no disponible en la información |
+| Exact-match en test del autor | 6,0 % | 60–80 % |
+| Licencia | Apache 2.0 | mixta (propietaria o pesos abiertos) |
+| Despliegue | Local en CPU, coste cero | Nube, coste por token |
+| Latencia | 96 ms | 350–5.080 ms |
 
 ## Limitaciones y advertencias
 
-- No se declaran idiomas soportados; el ejemplo de la model card es en ingles, por lo que el soporte multilingue, y en particular el castellano, no esta garantizado.
-- No se publica la longitud de contexto, lo que impide planificar tareas de contexto largo.
-- No hay resultados de benchmarks, por lo que no es posible estimar su calidad frente a modelos de tamano similar.
-- Riesgo de alucinacion: al ser un modelo entrenado sobre consensos de otros modelos, puede reproducir de forma acritica salidas erroneas presentes en esos consensos, sin una verificacion factual independiente.
-- Sesgos conocidos: no disponibles, pero al derivar de evaluaciones de modelos frontera hereda los sesgos de esos modelos y de sus procesos de evaluacion.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion y manteniendo el aviso de licencia; no se imponen restricciones adicionales en la informacion disponible.
-- Caveat de produccion: con 0 descargas y 0 likes, el modelo no tiene validacion de la comunidad; cualquier despliegue en produccion deberia acompanarse de una evaluacion propia.
-- La atestacion on-chain depende de la infraestructura de Solana y Base; no es un mecanismo verificable de forma independiente sin acceso a esas cadenas.
-- El nombre y la tematica (ShoggothMind) tienen connotaciones del ambito de la ficcion; conviene tratarlo como un proyecto experimental, no como un modelo fundacional en el sentido habitual del termino.
+- Capacidad muy limitada: con 35,8 M de parámetros no puede realizar aritmética mental de varios pasos (multiplicación de varios dígitos, exponenciación modular) sin un scratchpad de cadena de pensamiento externo.
+- Dominio restringido: entrenado solo con problemas sintéticos de matemáticas, secuencias, lógica y calendario; carece de conocimiento del mundo, literatura o trivia.
+- Contexto efectivo corto: ventana configurada de 2.048 tokens pero entrenado con secuencias de 128, por lo que no es apto para resumir documentos ni conversaciones largas.
+- Riesgo de alucinación fuera de su dominio: al no tener conocimiento general, cualquier consulta abierta producirá salidas sin fundamento.
+- Idiomas: solo se documenta entrenamiento en inglés; la etiqueta `multilingual` no está respaldada por datos de evaluación.
+- Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento con datos sintéticos generados por un protocolo puede heredar los sesgos de dicho generador.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo no ofrece garantías de calidad para producción en tareas fuera de su dominio sintético.
+- Los resultados de benchmark del autor tienen un tamaño de muestra reducido y una metodología de un solo token que penaliza a modelos conversacionales; deben interpretarse con cautela y no como una comparación de capacidad general.
+- No se documentan cuantizaciones ni formatos GGUF, lo que limita su uso en herramientas de inferencia alternativas sin conversión manual.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ShoggothMind/mind-v1
+- Modelo en Hugging Face: https://huggingface.co/ShoggothMind/mind-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ShoggothMind/mind-judgements
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-
-No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.
+- Repositorio del proyecto (pipeline y tokenizador, referenciado en la model card): no disponible como URL directa en la información proporcionada
+- Ejemplo de integración con The Mind en Solana: `examples/query_the_mind.py` dentro del repositorio del proyecto (URL no disponible)
+- Curva de pérdida de entrenamiento: `loss.png` en el repositorio del modelo (URL no disponible)

@@ -2,101 +2,97 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL-MLX-4bit es una conversion comunitaria al formato MLX y cuantizada a 4 bits del modelo multimodal XiaomiMiMo/MiMo-V2.6-Flash-RL, desarrollado originalmente por Xiaomi. El checkpoint lo publica el usuario nativ-community (aunque la propia model card atribuye la conversion a AlazarM) y su proposito es permitir la ejecucion de un modelo vision-lenguaje de gran tamano en hardware Apple Silicon mediante la libreria mlx-vlm, en su version 0.7.2.
+MiMo-V2.6-Flash-RL es un modelo multimodal de gran escala desarrollado por Xiaomi (familia MiMo), publicado originalmente en Hugging Face bajo el identificador `XiaomiMiMo/MiMo-V2.6-Flash-RL`. Esta ficha describe la variante cuantizada a 4 bits en formato MLX, publicada por el usuario `nativ-community` (y referenciada en la model card como `AlazarM`), pensada para ejecución en hardware Apple Silicon mediante la librería `mlx-vlm`. El modelo cubre generación de texto, comprensión de imagen, vídeo y audio, además de capacidades de agente y contexto largo.
 
-El modelo es multimodal: acepta texto e imagen como entrada (pipeline image-text-to-text) y sus etiquetas declaran ademas capacidades de audio, comprension de video, contexto largo y uso como agente. El recuento real de parametros en los pesos safetensors es de 308.778.780.864 (unos 308,8 mil millones), y el repositorio ocupa 178,6 GB, coherente con una cuantizacion de 4 bits.
+El modelo cuenta con aproximadamente 309.768 millones de parámetros totales según los pesos en safetensors del repositorio, lo que lo sitúa en la categoría de modelos densos de gran tamaño (no se dispone de información que indique una arquitectura MoE). La cuantización a 4 bits reduce el peso del repositorio a unos 352 GB, lo que sigue exigiendo hardware de gama muy alta (varios Mac Studio con memoria unificada grande o clústeres de GPUs) para su ejecución completa.
 
-Su relevancia radica en que permite experimentar con un VLM de escala muy grande en un Mac con memoria unificada amplia, sin necesidad de GPUs de datacenter. No obstante, se trata de un artefacto de comunidad con cero descargas y cero likes en el momento de redactar esta ficha, sin benchmarks publicados ni validacion independiente, por lo que debe tratarse como material experimental.
+La relevancia de esta ficha radica en que ofrece una vía práctica para probar un modelo multimodal de frontera en el ecosistema MLX, con licencia MIT y soporte para inglés y chino. No obstante, la información pública disponible es escasa: la model card es un stub generado automáticamente por `mlx-vlm` y no incluye detalles de arquitectura, entrenamiento ni benchmarks.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible en detalle (modelo multimodal de tipo vision-lenguaje y audio; requiere custom_code y transformers, y se distribuye con la libreria mlx) |
-| Parametros totales | 308.778.780.864 (unos 308,8 mil millones, dato real de los safetensors) |
-| Parametros activos | no disponible (no se confirma que la arquitectura sea MoE) |
-| Longitud de contexto | no disponible (el modelo esta etiquetado como long-context, pero no se publica la cifra) |
-| Tipos de cuantizacion | 4 bits (formato MLX); no se documentan otras variantes en este repositorio |
-| Idiomas soportados | ingles (en) y chino (zh) |
+| Arquitectura | no disponible (etiqueta `mimo_v2`; se desconoce si es transformer denso, MoE o híbrido) |
+| Parámetros totales | 309.768.502.464 (~309,8 mil millones) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (etiqueta `long-context`, sin cifra) |
+| Tipos de cuantización | 4 bits (esta variante); se desconoce si el modelo base ofrece otras |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors en formato MLX (4 bits) |
-| Tamano del repositorio | 178,6 GB |
-| Modalidades de entrada | texto, imagen (declara tambien audio y video en las etiquetas) |
+| Formato de pesos | safetensors (MLX, `mlx-vlm` 0.7.2) |
+| Modalidades | texto, imagen, vídeo, audio |
+| Pipeline | image-text-to-text |
+| Tamaño del repositorio | 352,0 GB |
 | Modelo base | XiaomiMiMo/MiMo-V2.6-Flash-RL |
-| Herramienta de conversion | mlx-vlm 0.7.2 |
-| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. Las etiquetas del repositorio indican que se trata de un modelo multimodal con soporte de vision, audio y video, etiquetado como mimo_v2 y con requerimiento de custom_code, lo que implica que la definicion de la arquitectura no es estandar en transformers y depende del codigo remoto del autor. El modelo base es XiaomiMiMo/MiMo-V2.6-Flash-RL, del que este repositorio es una conversion a MLX con cuantizacion de 4 bits; no se documentan ni el numero de tokens de entrenamiento ni la composicion del dataset.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. La etiqueta `mimo_v2` sugiere que pertenece a la segunda generación de la familia MiMo de Xiaomi, y las etiquetas `multimodal`, `vision-language`, `audio` y `video-understanding` indican que integra codificadores para imagen, vídeo y audio junto con el modelo de lenguaje. El sufijo `-RL` en el nombre del modelo base apunta a un ajuste mediante aprendizaje por refuerzo (RL), aunque no se especifica el algoritmo, los datos ni la metodología.
 
-Tampoco se especifican en la informacion disponible las tecnicas de alineacion empleadas (RLHF, DPO u otras), pese a que el sufijo "RL" del nombre sugiere algun tipo de entrenamiento con refuerzo. La unica innovacion tecnica verificable en este checkpoint es la propia conversion: mlx-vlm 0.7.2 adapta los pesos al formato MLX y los cuantiza a 4 bits, lo que reduce el peso en disco hasta 178,6 GB. No hay datos sobre decodificacion especulativa, atencion lineal ni otras optimizaciones.
+Tampoco se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.). La model card de esta variante es un stub generado por la herramienta de conversión `mlx-vlm` versión 0.7.2 y remite a la model card original de Xiaomi para más detalles, que no forma parte de la información proporcionada. Cualquier afirmación sobre la arquitectura sería especulativa y no se incluye aquí.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Comprension de imagen y texto de forma conjunta (pipeline image-text-to-text).
-- Comprension de video, segun la etiqueta video-understanding del repositorio.
-- Procesamiento de audio, segun la etiqueta audio del repositorio.
-- Contexto largo, segun la etiqueta long-context (sin cifra publicada).
-- Uso como agente, segun la etiqueta agent, lo que sugiere soporte de flujos multi-paso.
-- Soporte de tool calling o function calling: no confirmado de forma explicita en la informacion disponible.
-- Capacidades de razonamiento, codigo o matematicas: no documentadas en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Generación de texto conversacional multi-turno (pipeline `image-text-to-text`).
+- Comprensión de imágenes (vision-language): descripción, respuesta a preguntas visuales.
+- Comprensión de vídeo (etiqueta `video-understanding`).
+- Procesamiento de audio (etiqueta `audio`).
+- Capacidades de agente y razonamiento multi-paso (etiqueta `agent`).
+- Soporte de contexto largo (etiqueta `long-context`; longitud exacta no disponible).
+- Multilingüe limitado a inglés y chino.
+- Ejecución en Apple Silicon mediante MLX (`mlx-vlm`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de video de larga duracion: la etiqueta video-understanding y la de contexto largo permiten procesar grabaciones extensas para extraer resumenes, indices de escenas o busqueda semantica sobre el contenido. Es adecuado porque combina ambas capacidades en un unico modelo.
-- Agentes autonomos multi-paso: la etiqueta agent indica que el modelo puede encadenar razonamiento y acciones. Se usaria como nucleo de un agente que planifica tareas y consume herramientas externas, siempre que se valide el soporte real de tool calling.
-- Atencion al cliente bilingue ingles-chino: al soportar unicamente estos dos idiomas, encaja en operaciones con clientela de esos mercados, con conversaciones multi-turno y adjuntos de imagen o capturas.
-- Procesamiento de documentacion tecnica con diagramas: al aceptar entrada de imagen y texto, puede extraer informacion de manuales, planos o capturas de pantalla y responder preguntas sobre ellos.
-- Transcripcion y analisis de audio: la etiqueta audio sugiere que puede procesar locuciones para generar resumenes, actas o clasificacion tematica de reuniones.
-- Descripcion de imagenes para accesibilidad: generacion de texto alternativo y descripciones detalladas de fotografias o ilustraciones en aplicaciones de apoyo a personas con discapacidad visual.
-- Investigacion sobre cuantizacion en MLX: al ser una conversion 4 bits de un modelo de 308,8 mil millones de parametros, sirve como caso de estudio para medir la degradacion de calidad frente al modelo base en hardware Apple Silicon.
-- Experimentacion local en Mac de gama alta: permite a investigadores sin acceso a GPUs de datacenter probar un VLM de gran escala en un unico equipo con memoria unificada suficiente.
+- Asistente multimodal en local para Apple Silicon: un desarrollador con un Mac Studio de memoria unificada alta puede ejecutar la variante 4-bit con `mlx-vlm` para prototipar asistentes que combinen texto e imagen sin depender de la nube, aprovechando el formato MLX nativo.
+- Descripción y análisis de imágenes en pipelines de accesibilidad: el modelo puede generar descripciones textuales de imágenes para sistemas de lectores de pantalla o catalogación automática de archivos multimedia.
+- Análisis de vídeo para moderación o indexación: gracias a la etiqueta `video-understanding`, puede emplearse para resumir o etiquetar contenido audiovisual en flujos de trabajo internos, siempre que el hardware lo permita.
+- Transcripción y comprensión de audio combinada con texto: la etiqueta `audio` sugiere uso en asistentes que reciben audio y responden con texto, útil en prototipos de atención al cliente por voz.
+- Agentes multi-paso con contexto largo: la combinación de `agent` y `long-context` permite experimentar con agentes que mantienen historiales extensos y ejecutan tareas encadenadas sobre documentos o conversaciones largas.
+- Investigación y evaluación de modelos multimodales: al ser una conversión MLX con licencia MIT, sirve como banco de pruebas para comparar el rendimiento de un modelo de ~310B en hardware Apple frente a alternativas en CUDA.
+- Generación de documentación técnica bilingüe (inglés/chino): útil para equipos que trabajan con documentación en ambos idiomas y necesitan resúmenes o traducciones asistidas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas multimodales (MMMU, DocVQA, etc.), y tampoco se aportan comparaciones con el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la información disponible. La model card de esta variante no incluye métricas (MMLU, HumanEval, GSM8K, MMMU, etc.) ni comparaciones con otros modelos, y la model card original de Xiaomi no forma parte de los datos proporcionados.
 
 ## Requisitos de hardware
 
-- Peso de los pesos en disco y en memoria: 178,6 GB de repositorio; una estimacion de memoria de trabajo se situa en torno a 180-200 GB para el modelo cargado, a lo que hay que sumar el cache KV.
-- Memoria unificada recomendada: al menos 192 GB para una ejecucion holgada; configuraciones de 256 GB o 512 GB ofrecen margen para contexto largo y procesamiento de imagen y video.
-- Equipos compatibles: Mac Studio o Mac Pro con chip M2 Ultra o M3 Ultra y 192 GB o mas de memoria unificada. No esta pensado para MacBook Pro de gama estandar por limite de memoria.
-- GPU dedicada: no aplicable directamente, ya que MLX es un framework especifico de Apple Silicon. No cabe en GPUs de consumo como la RTX 4090 (24 GB), ni siquiera en configuraciones multi-GPU con CUDA sin una conversion previa del formato.
-- Opciones de despliegue: mlx-vlm (version 0.7.2 o superior) es la via documentada, con el comando `python -m mlx_vlm.generate`. El uso con vLLM, llama.cpp, Ollama o TGI no esta documentado ni confirmado para este checkpoint en formato MLX.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia en el repositorio.
+- VRAM/memoria estimada: el repositorio pesa 352 GB en cuantización 4 bits, por lo que se necesita al menos esa cantidad de memoria unificada o VRAM para cargar los pesos completos, más overhead para el contexto y los codificadores multimodales.
+- GPU recomendadas: no es viable en GPUs de consumo convencionales (RTX 4090 con 24 GB, RTX 3090 con 24 GB). Requiere configuraciones de memoria muy alta: múltiples GPUs de datacenter (A100 80 GB, H100 80 GB) o, en el ecosistema MLX, Mac Studio / Mac Pro con memoria unificada de 384 GB o superior.
+- ¿Cabe en consumer GPU? No, en ningún modelo de consumo actual con 24 GB o menos.
+- Opciones de despliegue: `mlx-vlm` (versión 0.7.2 o superior) para Apple Silicon. No se dispone de información sobre soporte en vLLM, llama.cpp, Ollama o TGI para esta variante concreta; el formato MLX no es directamente compatible con esos motores sin conversión.
+- Latencia y throughput: no disponible. Dado el tamaño (~310B parámetros) y la cuantización 4 bits, se espera un throughput bajo incluso en hardware de gama alta, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato | Estado |
-|---|---|---|---|---|---|---|
-| nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit | 308,8 mil millones | no disponible | texto, imagen, audio, video | MIT | safetensors MLX 4 bits | Artefacto de comunidad, sin benchmarks ni validacion |
-| XiaomiMiMo/MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | no disponible | no disponible | Modelo base oficial del que deriva esta conversion |
-| Alternativas de la misma categoria (otras familias VLM de gran tamano) | no disponible | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada datos verificables para comparar |
+No se dispone de datos de rendimiento del modelo base ni de esta variante, por lo que una comparativa cuantitativa rigurosa no es posible. A modo orientativo estructural:
 
-No se dispone de datos de rendimiento de ninguno de los modelos comparados, por lo que la comparacion se limita a la relacion de derivacion entre el checkpoint cuantizado y su modelo base.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato MLX |
+|---|---|---|---|---|---|
+| MiMo-V2.6-Flash-RL (esta ficha, 4-bit MLX) | ~309,8B | no disponible | texto, imagen, vídeo, audio | MIT | sí |
+| XiaomiMiMo/MiMo-V2.6-Flash-RL (base) | no disponible | no disponible | texto, imagen, vídeo, audio | MIT | no disponible |
+| Alternativas de ~300B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se identifican en la información proporcionada modelos comparables de la misma categoría con datos verificables. Se indica "no disponible" para evitar especulaciones.
 
 ## Limitaciones y advertencias
 
-- Artefacto de comunidad: publicado por nativ-community con cero descargas y cero likes, sin revision por pares ni validacion independiente. No es una publicacion oficial de Xiaomi.
-- Discrepancia de autoria: la model card interna atribuye la conversion a AlazarM y titula el modelo como AlazarM/MiMo-V2.6-Flash-RL-MLX-4bit, mientras que el identificador del repositorio corresponde a nativ-community. Conviene verificar el origen real de los pesos antes de cualquier uso en produccion.
-- Degradacion por cuantizacion: la conversion a 4 bits reduce la precision numerica y puede afectar a tareas sensibles, especialmente en comprension de imagen, audio y video, sin que se hayan publicado mediciones de esa perdida.
-- Idiomas limitados: solo ingles y chino. No hay soporte declarado de castellano ni de otras lenguas, lo que provoca degradacion en entradas en espanol.
-- Riesgo de alucinacion: inherente a los modelos generativos de gran tamano, agravado por la ausencia de evaluaciones publicadas. No debe usarse como fuente de verdad sin verificacion humana.
-- Sin benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni metricas multimodales, por lo que el rendimiento real es desconocido.
-- Capacidades no confirmadas: el soporte de tool calling, function calling y agentes se infiere de la etiqueta agent, pero no se documenta su implementacion ni su fiabilidad.
-- Restricciones de licencia: el checkpoint se distribuye bajo licencia MIT, lo que permite uso comercial, pero debe verificarse de forma independiente la licencia del modelo base XiaomiMiMo/MiMo-V2.6-Flash-RL, que puede imponer condiciones adicionales.
-- Dependencia de custom_code: la carga requiere ejecutar codigo remoto del autor, lo que supone un riesgo de seguridad en entornos de produccion.
-- Limitacion de plataforma: al estar en formato MLX, no es desplegable directamente en infraestructura CUDA habitual, lo que restringe su integracion en pipelines ya existentes.
-- Fechas de metadatos: el repositorio figura creado y actualizado en septiembre de 2026, con una diferencia de apenas 37 minutos entre ambos eventos, lo que sugiere una publicacion automatica sin curaduria posterior.
+- La model card de esta variante es un stub generado automáticamente; no documenta sesgos, datos de entrenamiento ni evaluaciones de seguridad.
+- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no hay evaluaciones publicadas que lo cuantifiquen.
+- Idiomas soportados limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- La longitud de contexto real no se especifica, aunque la etiqueta `long-context` sugiere ventanas amplias; sin cifra, no debe asumirse un valor concreto en producción.
+- Requisitos de hardware extremos (≈352 GB en 4 bits): no apto para entornos de desarrollo convencionales ni para despliegues de bajo coste.
+- La licencia MIT del repositorio permite uso comercial, pero conviene verificar la licencia del modelo base de Xiaomi, ya que la model card remite a ella y no se incluye aquí.
+- Al ser una conversión de la comunidad (`nativ-community`), no hay garantía de paridad exacta con el modelo original; pueden existir degradaciones por la cuantización a 4 bits.
+- El soporte se limita al ecosistema MLX; no hay información sobre compatibilidad con otros motores de inferencia.
+- No se dispone de información sobre tool calling, modo de razonamiento explícito ni políticas de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit
+- Repositorio Hugging Face de esta variante: https://huggingface.co/nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
-- Libreria de conversion mencionada en la model card: mlx-vlm 0.7.2 (instalable con `pip install -U mlx-vlm`); no se proporciona URL en la informacion disponible.
-- La busqueda web realizada no devolvio enlaces relevantes al modelo, al paper ni al repositorio de codigo: los resultados obtenidos correspondian a agencias de viajes, fabricantes de instrumentos musicales y comercios de moda sin relacion con el modelo.
+- Librería `mlx-vlm`: no disponible enlace directo en la información proporcionada (se instala con `pip install -U mlx-vlm`)
+- Paper, blog o demo oficial: no disponible en la información proporcionada.

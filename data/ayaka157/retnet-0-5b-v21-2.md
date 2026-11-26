@@ -2,98 +2,98 @@
 
 ## Resumen
 
-RetNet-0.5B-v21.2 es un modelo de lenguaje de 504.179.896 parámetros desarrollado por el usuario Ayaka157 y publicado en Hugging Face bajo licencia MIT. Se trata de una implementación de la arquitectura RetNet (Retentive Network), una alternativa a los transformers clásicos que sustituye la atención por un mecanismo de retención con decaimiento aprendido por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques (chunkwise). El modelo es un export de investigación orientado a estudiar el comportamiento del contexto largo, no un modelo de producción.
+RetNet-0.5B-v21.2 es un checkpoint de investigación de 504.179.896 parámetros construido sobre la arquitectura RetNet (Retentive Network), una alternativa a los transformers con atención tradicional que sustituye el mecanismo de atención por un mecanismo de retención con decaimiento exponencial por cabeza. Lo publica el usuario Ayaka157 en Hugging Face bajo licencia MIT, con el código de modelado incluido en el repositorio para poder cargarse mediante `trust_remote_code=True`. El modelo está entrenado con un contexto de 2.048 tokens y vocabulario ByteLevel BPE de 20.000 entradas.
 
-La relevancia de esta ficha reside en su honestidad documental: el autor publica un informe técnico con resultados negativos medidos. El entrenamiento de contexto largo (13.000 pasos, 0,852 B tokens) redujo la perplejidad de cola larga a 16k de 3,2841 a 2,5942, pero el análisis demuestra que la mejora es un desplazamiento uniforme de nivel (-0,68 a -0,72 nats en todos los buckets de posición) y no un efecto posicional real. La recuperación tipo needle a 16k es de 0,0978, prácticamente equivalente al azar (brazo nulo 0,1024, item_acc 0/360).
+El interés de esta versión v21.2 no es su calidad como modelo de producción, sino que documenta un experimento de extensión de contexto: un entrenamiento adicional de 13.000 pasos sobre 0,852 mil millones de tokens para llevar el modelo a 16.000 tokens de ventana. El resultado, medido y publicado por el propio autor, es negativo para recuperación de información: la perplejidad de cola larga dentro de documento baja de 3,2841 a 2,5942, pero se trata de un desplazamiento uniforme de nivel (todas las posiciones mejoran entre 0,68 y 0,72 nats), no de un efecto posicional. La recuperación tipo needle a 16k se queda en 0,0978, prácticamente el nivel de azar (brazo nulo 0,1024, ítems acertados 0/360).
 
-El modelo tiene 20 capas, anchura 1408, 22 cabezas, dimensión de valor/FFN de 2816, vocabulario de 20.000 tokens ByteLevel BPE y contexto de entrenamiento de 2048 tokens. Se almacena en fp32 (1,92 GB) y debe cargarse en bfloat16 para inferencia. Es, por tanto, un artefacto de investigación útil para reproducir y estudiar los límites de la retención con decaimiento aprendido, no una base recomendable para despliegues de recuperación de contexto largo.
+Por tanto, es un export de investigación útil como evidencia empírica sobre el colapso de los decaimientos aprendidos en RetNet, no un modelo para desplegar en tareas de contexto largo. Los decaimientos aprendidos colapsaron durante el entrenamiento: la semivida máxima es de 1.649 tokens, ninguna cabeza alcanza una semivida de 2.048 tokens y el peso máximo a 16k es 0,00102.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | RetNet (retention), 20 capas, anchura 1408, 22 cabezas, dim. valor/FFN 2816 |
-| Parametros totales | 504.179.896 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2048 tokens de entrenamiento; export evaluado a 16k con resultados negativos en retrieval |
-| Tipos de cuantizacion | no disponible (solo se documenta fp32 en safetensors y carga en bfloat16) |
+| Arquitectura | RetNet (retention), 20 capas, anchura 1408, 22 cabezas, dimensión de valor/FFN 2816 |
+| Parámetros totales | 504.179.896 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens de entrenamiento; export experimental a 16.000 tokens |
+| Tipos de cuantización | no disponible (pesos almacenados en fp32; el autor recomienda cargar en bfloat16 para inferencia) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (fp32, 1,92 GB); repo de 2,0 GB |
+| Formato de pesos | safetensors (fp32, 1,92 GB), más `modeling_retnet.py`, `retention_fast.py`, `fused_ce.py` y ficheros de tokenizer |
 
 ## Arquitectura y entrenamiento
 
-RetNet sustituye la atención multi-cabeza por un mecanismo de retención que admite tres modos de cómputo equivalentes: forma paralela para prefill/serving, forma chunkwise para entrenamiento y forma recurrente para decodificación. El modelo implementa decaimiento gamma aprendido por cabeza y una rama GLA (Gated Linear Attention) presente en el código pero desactivada (`gla_rank=0`). La decodificación puede usar `RETNET_FAST_CHUNKWISE=1` para chunkwise por lotes. Los ficheros de modelado (`modeling_retnet.py`, `retention_fast.py`, `fused_ce.py`) provienen del codebase publicado de RetNet y requieren `trust_remote_code=True`.
+RetNet es una arquitectura de secuencia que reemplaza la atención cuadrática por retención con decaimiento exponencial por cabeza, con tres modos de cómputo: forma paralela para prefill/serving, forma chunkwise para entrenamiento y forma recurrente para decodificación. Este checkpoint implementa 20 capas con anchura 1408, 22 cabezas y dimensión de valor/FFN de 2816, con decaimiento gamma aprendido por cabeza. Incluye una rama GLA implementada pero desactivada (`gla_rank=0`). El vocabulario es ByteLevel BPE de 20.000 entradas y el contexto de entrenamiento original es de 2.048 tokens.
 
-El entrenamiento de contexto largo consistió en 13.000 pasos sobre 0,852 B tokens. El resultado principal es que los decaimientos aprendidos colapsaron durante el entrenamiento: la vida media máxima es de 1.649 tokens, ninguna cabeza alcanza una vida media de 2.048 tokens y el peso máximo a 16k es de 0,00102. Esto explica que la ventana efectiva no cubra la longitud extendida y que la recuperación a 16k quede en el nivel del azar. No se documentan fases de RLHF, DPO ni ajuste por preferencias.
+El entrenamiento de extensión de contexto consistió en 13.000 pasos sobre 0,852 mil millones de tokens para alcanzar 16.000 tokens de ventana. Los resultados publicados muestran que la mejora en perplejidad de cola larga es un desplazamiento uniforme de nivel y no un efecto posicional, y que los decaimientos aprendidos colapsaron: semivida máxima de 1.649 tokens, ninguna cabeza con semivida mayor o igual a 2.048 y peso máximo de 0,00102 a 16k. No se documentan en la información disponible detalles sobre composición del dataset, RLHF, DPO ni otras fases de alineamiento.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en modo causal, con decodificación recurrente o chunkwise.
-- Modelado de lenguaje a contexto de 16k funcional en términos de perplejidad (con la salvedad de que la mejora es un desplazamiento uniforme, no posicional).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (idiomas no declarados).
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Modos de atención: paralelo (prefill), chunkwise (entrenamiento) y recurrente (decodificación).
+- Generación de texto autoregresiva mediante decodificación recurrente.
+- Modelado de lenguaje a contexto corto (2.048 tokens) y, experimentalmente, a 16.000 tokens con calidad de perplejidad mejorada pero sin capacidad de recuperación.
+- Prefill y serving mediante forma paralela; entrenamiento mediante forma chunkwise; decodificación mediante forma recurrente.
+- Soporte de chunkwise por lotes activando `RETNET_FAST_CHUNKWISE=1`.
+- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Investigación sobre mecanismos de retención: el modelo permite reproducir los experimentos del informe técnico y estudiar por qué el decaimiento aprendido colapsa a vidas medias cortas, comparando con variantes de GLA o decaimientos fijos.
-- Estudio de contexto largo con resultados negativos controlados: sirve como línea base documentada para medir retrieval a 16k (0,0978 frente a 0,1024 del brazo nulo) y contrastar con arquitecturas alternativas.
-- Docencia y divulgación: un checkpoint pequeño (0,5B) y ligero (2 GB) es adecuado para explicar las tres formulaciones de RetNet y ejecutar demos en el playground del autor.
-- Pruebas de integración de `trust_remote_code`: útil para validar pipelines de carga de modelos con código personalizado en transformers sin depender de pesos propietarios.
-- Benchmarking de eficiencia de decodificación recurrente: permite medir latencia y memoria frente a transformers de tamaño similar en GPUs de consumo.
-- Desarrollo de tooling de evaluación de retrieval: los scripts del repositorio y el conjunto needle a 16k pueden reutilizarse como plantilla para evaluar otros modelos de contexto largo.
+- Investigación sobre arquitecturas RetNet: el checkpoint permite reproducir y analizar el comportamiento de los decaimientos aprendidos por cabeza en un modelo de 0,5B, comparando formas paralela, chunkwise y recurrente.
+- Estudio del colapso de decaimientos en extensiones de contexto: sirve como evidencia controlada de que un entrenamiento adicional de 0,852 B tokens a 16k produce un desplazamiento uniforme de perplejidad sin efecto posicional, útil para diseñar experimentos posteriores.
+- Evaluación de pipelines de recuperación (needle-in-a-haystack): el modelo documenta un resultado de 0,0978 a 16k frente a 0,1024 del brazo nulo, lo que permite validar arneses de evaluación y comprobar que detectan la ausencia de capacidad de recuperación.
+- Docencia y divulgación: ejemplo práctico de arquitectura no-transformer con código de modelado incluido en el repositorio, cargable con `trust_remote_code=True` para estudiar el flujo de prefill, entrenamiento y decodificación.
+- Pruebas de integración de código personalizado en transformers: útil para verificar que un entorno de serving carga correctamente modelos con `modeling_retnet.py` y `retention_fast.py` propios.
+- Generación de texto a contexto corto en entornos de investigación con requisitos de licencia permisiva (MIT), siempre que no se dependa de recuperación a larga distancia.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| Perplejidad de cola larga a 16k (antes) | 3,2841 |
-| Perplejidad de cola larga a 16k (despues) | 2,5942 |
-| Mejora por bucket de posicion | -0,68 a -0,72 nat (desplazamiento uniforme) |
-| Needle retrieval a 16k | 0,0978 |
-| Brazo nulo (control) | 0,1024 |
-| item_acc en retrieval | 0/360 |
-| Vida media maxima aprendida | 1.649 tokens |
-| Cabezas con vida media >= 2.048 | 0 |
-| Peso maximo a 16k | 0,00102 |
+| Perplejidad de cola larga a 16k, antes del entrenamiento | 3,2841 |
+| Perplejitud de cola larga a 16k, después del entrenamiento | 2,5942 |
+| Mejora por bucket de posición | entre -0,68 y -0,72 nats (uniforme) |
+| Needle retrieval a 16k (modelo) | 0,0978 |
+| Needle retrieval a 16k (brazo nulo) | 0,1024 |
+| Ítems acertados (item_acc) | 0/360 |
+| Semivida máxima aprendida | 1.649 tokens |
+| Cabezas con semivida >= 2.048 | 0 |
+| Peso máximo a 16k | 0,00102 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks estándar en la información disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en fp32: aproximadamente 2 GB solo para pesos, más overhead de activaciones y KV equivalente; en bfloat16 se reduce a unos 1 GB de pesos.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM para inferencia en bfloat16; A100, H100 o RTX 4090 son sobredimensionadas para este tamaño.
-- Cabe en GPU de consumo: sí, en GTX 1660, RTX 3060, RTX 4060 y superiores; también en Apple Silicon vía Metal con llama.cpp si se exporta a GGUF (no documentado).
-- Opciones de despliegue: transformers con `trust_remote_code=True`; el playground oficial en https://retnet.ayaka157.icu/play/; vLLM, TGI, llama.cpp u Ollama no están documentados para esta arquitectura.
+- Pesos en fp32: 1,92 GB en safetensors; el repositorio ocupa 2,0 GB.
+- Para inferencia se recomienda cargar con `torch_dtype=torch.bfloat16`, lo que reduce la huella de pesos a aproximadamente 1 GB.
+- VRAM estimada: en torno a 2-3 GB en bfloat16 para inferencia con contexto corto, sin contar caché de activaciones; en fp32, alrededor de 2-3 GB solo para pesos.
+- Cabe en GPU de consumo: RTX 3060, RTX 4060, RTX 4070, RTX 4090 y similares con 8 GB o más; también en GPUs de 4-6 GB en bfloat16 con contexto reducido.
+- Despliegue: carga mediante `transformers` con `trust_remote_code=True`; no se documenta soporte en vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Retrieval a contexto largo |
+| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RetNet-0.5B-v21.2 | 504 M | 2048 (entrenamiento); 16k export negativo | RetNet | MIT | 0,0978 a 16k (azar) |
-| Alternativas de 0,5B tipo transformer | ~500 M | 2k-8k típico | Transformer | variable | no disponible |
-| Modelos SSM/híbridos de 0,5B | ~500 M | variable | SSM/híbrido | variable | no disponible |
+| RetNet-0.5B-v21.2 | 504.179.896 | 2.048 (export a 16k) | RetNet | MIT | Hugging Face |
+| Alternativas de ~0,5B tipo transformer | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con alternativas concretas.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de la misma categoría, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte: no usar este export para retrieval a 16k; los resultados están al nivel del azar (item_acc 0/360).
-- El decaimiento aprendido colapsó: ninguna cabeza supera una vida media de 2.048 tokens, por lo que la ventana efectiva no cubre el contexto extendido.
-- La mejora de perplejidad a 16k es un desplazamiento uniforme de nivel, no un efecto posicional; no debe interpretarse como comprensión de contexto largo.
-- Idiomas soportados no declarados; el vocabulario es de solo 20.000 tokens ByteLevel BPE, lo que limita la cobertura multilingüe.
-- No hay evidencia de alineación (RLHF/DPO); riesgo de alucinación y de salidas no deseadas no cuantificado.
-- Licencia MIT permite uso comercial, pero el modelo es un export de investigación sin garantías de calidad en producción.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; auditar `modeling_retnet.py` y `retention_fast.py` antes de desplegar.
-- Pesos en fp32 (1,92 GB); cargar en bfloat16 para inferencia según indica el autor.
+- El propio autor advierte de que no debe publicitarse ni usarse este export para recuperación a 16k: el resultado de needle retrieval es 0,0978, equivalente al azar.
+- Los decaimientos aprendidos colapsaron durante el entrenamiento: semivida máxima de 1.649 tokens y ninguna cabeza con semivida mayor o igual a 2.048, lo que limita estructuralmente la memoria a largo plazo.
+- La mejora de perplejidad a 16k es un desplazamiento uniforme de nivel, no un efecto posicional; no implica mejor uso de la posición.
+- Riesgo de alucinación: no evaluado en la información disponible, pero esperable en un modelo de 0,5B entrenado con un dataset no documentado.
+- Sesgos conocidos: no documentados.
+- Idiomas soportados: no disponibles; el vocabulario de 20.000 entradas es reducido y probablemente limita la cobertura multilingüe.
+- Restricciones de licencia: MIT, permite uso comercial, pero el estado de investigación y las limitaciones de recuperación desaconsejan su uso en producción para tareas de contexto largo.
+- Requiere `trust_remote_code=True` y ejecuta código de modelado incluido en el repositorio, lo que implica revisar `modeling_retnet.py`, `retention_fast.py` y `fused_ce.py` antes de desplegarlo en entornos sensibles.
+- Es un export de investigación fechado en 2026-10-29 y actualizado en 2026-11-17, con 227 descargas y 0 likes; no hay evidencia de mantenimiento ni de comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.2
-- Repositorio de código y análisis: https://github.com/Ayaka157/RetNet
-- Informe técnico (2026-10-29): https://github.com/Ayaka157/RetNet/blob/main/docs/latex/en/RetNet-0.5B-Technical-Report.pdf
-- Demo/playground: https://retnet.ayaka157.icu/play/
+- Repositorio de código, datos y evaluación: https://github.com/Ayaka157/RetNet
+- Informe técnico (2026-10-29, PDF en inglés y chino): https://github.com/Ayaka157/RetNet/blob/main/docs/latex/en/RetNet-0.5B-Technical-Report.pdf
+- Demo: https://retnet.ayaka157.icu/play/

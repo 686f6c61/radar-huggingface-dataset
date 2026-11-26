@@ -2,86 +2,101 @@
 
 ## Resumen
 
-Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI es un fine-tune comunitario desarrollado por DavidAU sobre el modelo base thinkingmachines/Inkling-2-Mini. Se trata de una variante "abliterated" y "uncensored", es decir, con los mecanismos de rechazo y alineación de seguridad eliminados o atenuados, orientada a usos creativos, roleplay y generación de contenido sin restricciones de contenido. El autor la presenta como una versión "Turbo-Brilliance" con modos de razonamiento e instrucción extendidos.
+Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI es un ajuste fino (finetune) del modelo base thinkingmachines/Inkling-2-Mini, publicado por el usuario DavidAU en Hugging Face. Se trata de una variante "heretic" o "abliterated", es decir, una version en la que se ha reducido deliberadamente la tendencia del modelo a rechazar peticiones, acompanada de un conjunto de system prompts y "constructs" propietarios del autor (Turbo Brilliance V2 50x AGI) que anaden modos de razonamiento, modos instruct y lo que el autor denomina "AI Constructs" y "AGI Constructs".
 
-El modelo se distribuye como un Mixture of Experts (MoE) de 26B de parámetros (según el nombre del repositorio) con capacidad multimodal image-text-to-text, y declara soporte para inglés y chino. La ficha del autor menciona 27 modos de razonamiento, 27 modos de instrucción, 15 "AI Constructs" y 21 "AGI Constructs", así como 9 modos de razonamiento "Xhigh", aunque no se aportan especificaciones técnicas verificables sobre estos modos en la información disponible.
+El modelo base es un Mixture of Experts (MoE) de 26.388.641.280 parametros totales (unos 26,4 mil millones) con "looping processing" y una ventana de contexto que el autor declara de 1 millon de tokens. El finetune conserva la licencia Apache 2.0 y se distribuye en formato safetensors (bfloat16), con un repositorio de 53,5 GB. La model card menciona que existe una version cuantizada en GGUF en un repositorio separado del mismo autor.
 
-La relevancia de este modelo es limitada y de nicho: se publica bajo licencia Apache 2.0 pero con acceso restringido (gated) en Hugging Face, sin descargas ni interacciones registradas en el momento de la consulta, y con un tamaño de repositorio de 0.0 GB, lo que sugiere que los pesos podrían no estar efectivamente alojados o que el repositorio es meramente declarativo. No se dispone de datos de benchmarks ni de documentación técnica del autor.
+La relevancia de esta ficha es doble: por un lado, documenta un ejemplo de modelo MoE de ~26B con contexto muy largo; por otro, ilustra el fenomeno de los finetunes "uncensored" con system prompts empaquetados, cuyas afirmaciones (27 modos de razonamiento, 21 AGI Constructs, reduccion de rechazos de 100/100 a 5/100) deben tratarse con cautela porque proceden del propio autor y no de una evaluacion independiente.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), según tags del autor; detalles no disponibles |
-| Parámetros totales | 26B (según nombre del repositorio); no confirmado en documentación |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (precisión declarada: bfloat16) |
-| Idiomas soportados | inglés (en), chino (zh) |
+| Arquitectura | Mixture of Experts (MoE) con "looping processing"; modelo base thinkingmachines/Inkling-2-Mini |
+| Parametros totales | 26.388.641.280 (~26,4 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 1.000.000 de tokens (segun la model card del autor) |
+| Tipos de cuantizacion | safetensors en bfloat16 en este repo; GGUF (incluye Q4_K_M citado en la model card) en repositorio separado |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo reporta 0.0 GB) |
+| Formato de pesos | safetensors (bfloat16); GGUF en el repo NEO-GGUF del mismo autor |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es thinkingmachines/Inkling-2-Mini, del que no se proporcionan detalles arquitectónicos en la información disponible. El autor etiqueta el fine-tune como MoE ("mixture of experts") y declara precisión bfloat16, pero no se especifica el número de expertos, el tamaño de los mismos, la longitud de contexto nativa ni la composición del dataset de entrenamiento.
+El modelo base Inkling-2-Mini, de thinkingmachines, es un transformer con arquitectura Mixture of Experts y un mecanismo que el autor denomina "looping processing", orientado a extender el contexto hasta 1 millon de tokens. El finetune de DavidAU no documenta el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; la model card se limita a describir el proceso como una version "Heretic'ed" (abliterated) del modelo original, con cuatro variantes probadas por el autor antes de elegir la final.
 
-El proceso de fine-tune se describe mediante etiquetas como "heretic", "uncensored" y "abliterated", que en la práctica comunitaria indican la eliminación de direcciones de activación asociadas al rechazo de peticiones (abliteration) y un ajuste adicional orientado a eliminar filtros de contenido. Se menciona también "NEO Imatrix", probablemente referido a una matriz de importancia para cuantización, aunque no se detalla su uso. No hay información sobre volumen de tokens de entrenamiento, uso de RLHF/DPO ni innovaciones técnicas verificables.
+La innovacion principal que declara el autor no esta en los pesos sino en el empaquetado de system prompts: los "Turbo Brilliance V2 50x AGI" incluyen 27 modos de razonamiento, 27 modos instruct, 15 AI Constructs, 5 Super AI Constructs y 21 AGI Constructs, con modos de razonamiento etiquetados como "minimal", "medium", "high" y "xhigh". El autor afirma que el modo "high" del modelo base se activa automaticamente cuando no se usan estos sistemas. No se aporta informacion sobre la composicion del dataset de abliteration ni sobre el metodo exacto empleado para reducir los rechazos.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés y chino.
-- Procesamiento multimodal image-text-to-text (entrada de imagen y texto), según el pipeline declarado.
-- Modos de razonamiento e instrucción múltiples (el autor declara 27 + 27), sin documentación técnica que los describa.
-- "AI Constructs" y "AGI Constructs" (15 y 21 respectivamente): terminología propia del autor sin definición técnica pública.
-- Orientación a escritura creativa, ficción, todos los géneros y roleplay.
-- Capacidad de código declarada vía tag "coder".
-- Sin confirmación de soporte de tool calling, function calling ni razonamiento multi-paso con agentes más allá de las etiquetas del autor ("Agent AI Construct").
-- Modo "thinking" declarado en tags, sin especificación de formato.
+- Generacion de texto y razonamiento en multiples modos ("minimal", "medium", "high", "xhigh"), seleccionables mediante los system prompts del autor.
+- Generacion de codigo, segun la etiqueta "coder" de la model card.
+- Escritura creativa, ficcion, narrativa y roleplaying en "todos los generos", segun el autor.
+- Procesamiento image-text-to-text (pipeline declarado en Hugging Face), aunque la model card no detalla la arquitectura de vision.
+- Soporte de "AI Constructs" y "AGI Constructs": plantillas de 6.000 a 8.000 instrucciones que el autor describe como generadas dinamicamente a partir del prompt del usuario (por ejemplo, el construct "{REASON:agi-musk-curie}").
+- Capacidades multilingues limitadas a ingles y chino.
+- Reduccion de rechazos declarada por el autor: de 100/100 a 5/100 en una prueba propia (7/97 con "thinking" activado).
+- No se documenta soporte explicito de tool calling, function calling ni de agentes multi-paso mas alla de la etiqueta "Agent AI Construct".
 
 ## Casos de uso
 
-- Escritura creativa y ficción sin restricciones de contenido: el ajuste "uncensored" permite generar narrativa en géneros que los modelos alineados suelen rechazar; adecuado para autores que necesitan explorar temas sensibles en un entorno controlado.
-- Roleplay y personajes conversacionales: la orientación explícita a roleplay y los múltiples "modos" declarados permiten mantener personajes con estilos definidos, aunque la ausencia de documentación obliga a validación empírica.
-- Generación de descripciones a partir de imágenes: al ser image-text-to-text, puede emplearse para captioning o descripción detallada de imágenes en inglés o chino.
-- Prototipado de asistentes para investigación sobre alineación: útil como caso de estudio de modelos abliterated para comparar comportamientos frente a versiones alineadas.
-- Traducción y generación bilingüe inglés-chino en contextos donde el contenido no requiera filtros corporativos.
-- Experimentación académica con MoE de 26B: permite estudiar el efecto de fine-tunes comunitarios sobre un modelo base, siempre que se obtengan los pesos (acceso gated).
+- Generacion de ficcion y narrativa larga: el contexto declarado de 1 millon de tokens permite mantener coherencia en novelas o sagas con muchos personajes y tramas secundarias, algo inviable en modelos con ventanas de 8K-32K.
+- Roleplaying y escritura creativa sin restricciones tematicas: la variante "heretic" reduce los rechazos, lo que resulta util en talleres de escritura que abordan temas sensibles (violencia en ficcion, personajes moralmente ambiguos).
+- Analisis de documentos extensos: informes tecnicos, expedientes o bases de conocimiento de cientos de miles de tokens que caben en una sola ventana sin necesidad de RAG.
+- Asistencia a la programacion en entornos controlados: la etiqueta "coder" y los modos de razonamiento permiten usarlo para generar y explicar codigo, aunque sin garantias de tool calling verificado.
+- Experimentacion con system prompts complejos: util para investigadores que estudian el efecto de instrucciones largas (6.000-8.000 tokens) en el comportamiento del modelo, ya que el autor publica los "constructs" como parte del paquete.
+- Generacion de material didactico bilingue ingles-chino: el soporte de ambos idiomas permite crear explicaciones paralelas, aunque no cubre el castellano.
+- Prototipado de agentes con "Agent AI Construct": sirve para probar flujos de agente sencillos, siempre que se validen manualmente las salidas por el riesgo de alucinacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Los unicos datos disponibles proceden del autor y comparan la variante heretic con el modelo base en su propia prueba:
+
+| Metrica | Modelo base (segun autor) | Variante heretic |
+|---|---|---|
+| Rechazos (prueba del autor) | 100/100 | 5/100 (7/97 con thinking) |
+| MMLU | 78,7 % | 77,0 % |
+| Divergencia KL | no disponible | 0,120 |
+
+No se han publicado resultados independientes de MMLU, HumanEval, GSM8K ni de otros benchmarks estandar en la informacion disponible. Las cifras anteriores deben interpretarse como declaraciones del autor, no como evaluaciones verificadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 52 GB solo para pesos (26B × 2 bytes), más overhead de activaciones y KV cache; se requieren GPUs de 80 GB (A100, H100) para inferencia cómoda en precisión completa.
-- En cuantización de 8 bits: ~26 GB, viable en una RTX 4090 (24 GB) solo con cuantizaciones más agresivas u offloading parcial.
-- En cuantización de 4 bits: ~13-15 GB, cabe en RTX 4090, RTX 3090 y GPUs consumer de 16 GB o más, siempre que existan pesos GGUF (no confirmados).
-- Opciones de despliegue: no se documentan; por el formato declarado (bfloat16) se asume compatibilidad con transformers, vLLM o TGI, pero no está verificado. llama.cpp/Ollama requerirían conversión a GGUF no publicada.
+- VRAM estimada en bfloat16: aproximadamente 52,8 GB solo para pesos (26,4 B x 2 bytes), mas overhead de activaciones y cache KV; en la practica se necesitan 60-80 GB para contexto moderado.
+- VRAM estimada en Q4_K_M (GGUF): alrededor de 16-18 GB para pesos, con margen adicional para cache KV segun la longitud de contexto.
+- GPU recomendadas: A100 80 GB o H100 80 GB para bfloat16 con contexto largo; para cuantizaciones Q4 se puede usar una RTX 4090 (24 GB) o una RTX 3090 (24 GB), con contexto limitado.
+- Cabe en GPU de consumo: si, en cuantizacion Q4 o inferior y con ventanas de contexto reducidas; el contexto de 1 millon de tokens no es viable en 24 GB.
+- Opciones de despliegue: llama.cpp y LM Studio (el autor cita LM Studio con Q4_K_M), vLLM y TGI para bfloat16; el autor advierte de que hay actualizaciones en curso en llama.cpp y transformers para soportar Inkling.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI | 26B (MoE, declarado) | no disponible | Apache 2.0 | Gated | Fine-tune uncensored, sin benchmarks |
-| thinkingmachines/Inkling-2-Mini (base) | no disponible | no disponible | no disponible | no disponible | Modelo base del fine-tune |
-| Alternativas uncensored de la comunidad | variable | variable | variable | variable | No se dispone de datos comparables verificables en la información proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Inkling-2-Mini-26B-Heretic (este) | ~26,4 B (MoE) | 1 M (declarado) | Apache 2.0 | Hugging Face, safetensors + GGUF |
+| thinkingmachines/Inkling-2-Mini (base) | ~26,4 B (MoE) | 1 M (declarado) | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B | 46,7 B (MoE, 12,9 B activos) | 32K | Apache 2.0 | Hugging Face, amplia comunidad |
+| Qwen2.5-32B | 32,5 B (denso) | 128K | Apache 2.0 | Hugging Face |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
+La comparativa con Mixtral y Qwen2.5 es orientativa por tamano y categoria; no se dispone de benchmarks comparativos publicados para este finetune concreto. El contexto de 1 millon de tokens declarado supera ampliamente al de los modelos de la tabla, pero no ha sido verificado de forma independiente.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated" y "uncensored": no aplica filtros de seguridad, por lo que puede generar contenido dañino, ilegal o sesgado; no apto para producción orientada al público sin capas de moderación externas.
-- Riesgo elevado de alucinación: sin benchmarks ni documentación de entrenamiento, no hay evidencia de fiabilidad factual.
-- Idiomas limitados a inglés y chino; no se declara soporte de castellano.
-- Repositorio con 0.0 GB y 0 descargas: los pesos podrían no estar disponibles o el repositorio ser incompleto; verificar antes de cualquier uso.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso comercial o automatizado.
-- Terminología del autor ("AGI Constructs", "Turbo-Brilliance", "50X") sin respaldo técnico verificable; tratarla como marketing y no como especificación.
-- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal sobre el contenido generado recae en el desplegador.
-- Sin información sobre sesgos específicos medidos; se asume herencia de sesgos del modelo base y del corpus de fine-tune.
+- Las cifras de reduccion de rechazos y de MMLU proceden de pruebas del propio autor, sin validacion externa.
+- La variante "uncensored/abliterated" elimina parte de las salvaguardas del modelo base; no es adecuada para aplicaciones de cara al publico sin filtros adicionales.
+- El riesgo de alucinacion aumenta en modos de razonamiento "xhigh" con constructs largos, ya que el modelo genera cadenas de razonamiento extensas sin verificacion factual.
+- Soporte limitado a ingles y chino; no hay garantias de calidad en castellano.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del finetune ni sobre los derechos de los system prompts empaquetados.
+- El contexto de 1 millon de tokens es una declaracion del autor; el rendimiento real en ventanas extremas no esta documentado.
+- Hay actualizaciones en curso en llama.cpp y transformers que pueden afectar a la compatibilidad y al formato de salida (el autor menciona etiquetas de razonamiento visibles en la salida).
+- El modelo base y este finetune tienen pocas descargas (306) y likes (29), por lo que la comunidad de validacion es reducida.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DavidAU/Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI
+- Repositorio GGUF del autor: https://huggingface.co/DavidAU/Inkling-2-Mini-26B-Heretic-Uncensored-Turbo-Brilliance-50X-V2-AGI-NEO-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- Repositorio de referencia de los constructs Turbo Brilliance: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
 - Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Variante heretic citada: https://huggingface.co/yanauto/Inkling-2-Mini-heretic-full-GGUF

@@ -65,31 +65,5 @@
   "renamed_to": "TyroneNel/Orca-Qwen3.8-27B-Uncensored-W4A16",
   "renamed_at": "2026-11-11T04:05:34.235Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kevin Spacey - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Kevin_Spacey",
-      "snippet": "Kevin Spacey Fowler (born July 26, 1959) [1] is an American actor. Known for his work on stage and screen, he has received …"
-    },
-    {
-      "title": "Kevin Spacey – Wikipedia",
-      "url": "https://de.m.wikipedia.org/wiki/Kevin_Spacey",
-      "snippet": "Kevin Spacey Fowler, KBE (* 26. Juli 1959 in South Orange, New Jersey), ist ein US-amerikanischer Schauspieler, Film- und …"
-    },
-    {
-      "title": "Kevin Spacey on screen and stage - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Kevin_Spacey_on_screen_and_stage",
-      "snippet": "Kevin Spacey is an American actor who began his acting career on stage. His film career started in the late 1980s after small parts in …"
-    },
-    {
-      "title": "Kevin Spacey - IMDb",
-      "url": "https://m.imdb.com/name/nm0000228/",
-      "snippet": "Kevin Spacey Fowler, better known by his stage name Kevin Spacey, is an American actor of screen and stage, film director, …"
-    },
-    {
-      "title": "Kevin Spacey - Biografie - IMDb",
-      "url": "https://www.imdb.com/de/name/nm0000228/bio/",
-      "snippet": "Kevin Spacey wurde am 26 Juli 1959 in South Orange, New Jersey, USA geboren. Er ist Schauspieler und Produzent, bekannt für …"
-    }
-  ]
+  "sources": []
 }

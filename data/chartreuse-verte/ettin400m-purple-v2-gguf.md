@@ -2,101 +2,97 @@
 
 ## Resumen
 
-ettin400m-purple-v2-GGUF es un clasificador de texto derivado de Ettin-Encoder-400m, un encoder de la familia ModernBERT desarrollado por el grupo JHU-CLSP. Lo publica el usuario chartreuse-verte como parte del proyecto Chartreuse, una herramienta orientada a detectar "purple prose" (prosa recargada) y "slop" generado por modelos de lenguaje en textos narrativos. El modelo resuelve un problema concreto: la deteccion de prosa artificial a nivel de parrafo, no de frase, capturando patrones que solo emergen cuando se lee un bloque completo de texto.
+ettin400m-purple-v2-GGUF es la version cuantizada en formato GGUF de un clasificador de texto entrenado para detectar prosa artificial generada por modelos de lenguaje, el fenomeno conocido como *purple prose* o *slop*. Lo desarrolla el usuario chartreuse-verte como parte del proyecto Chartreuse y se presenta como una evolucion de su predecesor ettin150m-purple, que operaba a nivel de frase y no capturaba el estilo de LLM moderno, donde cada oracion parece limpia de forma aislada pero el problema se manifiesta a lo largo del parrafo.
 
-La version v2 sustituye el enfoque de v1 (ettin150m-purple), que puntuaba frases sueltas y por tanto fallaba ante el slop moderno de los LLM, donde cada frase es limpia de forma aislada pero el conjunto delata el origen automatico. El modelo se distribuye en formato GGUF para su uso con llama.cpp, con un umbral de operacion calibrado y un AUC de 0,998 en el conjunto de test con negativos humanos. Con 395,8 millones de parametros y una ventana de 512 tokens, esta pensado para integrarse en pipelines de evaluacion o filtrado de texto, no como generador.
+El modelo parte de jhu-clsp/ettin-encoder-400m, un encoder de la familia ModernBERT, y se afina como clasificador binario de parrafos con un maximo de 512 tokens por entrada. Devuelve una probabilidad de que el parrafo sea "purple" (etiqueta 1) frente a "clean" (etiqueta 0), con un umbral operativo calibrado de 0,0599 pensado para mantener una precision de al menos 0,90.
 
-Es relevante ahora porque la deteccion de procedencia LLM y de estilo artificial se ha convertido en un problema practico para editores, plataformas de contenido y equipos que entrenan modelos de recompensa o filtros de calidad. La propuesta del autor es explicita: el clasificador mide "cuanto se aleja un texto de la prosa humana", no solo cuanto slop contiene, lo que lo hace util tambien como senal de provenance.
+Su relevancia actual reside en que aborda un problema creciente en entornos de publicacion, moderacion y evaluacion de contenido: distinguir prosa humana de prosa generada por LLM con patrones estilisticos reconocibles (relleno, muletillas de casa, ritmo entrecortado camuflado, construcciones "no X sino Y"). El repositorio incluye pesos en q8_0 y f16, un fichero de umbral y un fichero de configuracion de puntuacion, y esta pensado para ejecutarse con llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (ModernBERT, base Ettin-Encoder-400m) |
+| Arquitectura | Transformer encoder (ModernBERT), fine-tuned para clasificacion de secuencias |
 | Parametros totales | 395.833.346 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | q8_0 (recomendada) y f16 (precision de referencia) |
-| Idiomas soportados | ingles unicamente |
+| Longitud de contexto | 512 tokens (max_length de la unidad de puntuacion) |
+| Tipos de cuantizacion | q8_0 y f16 |
+| Idiomas soportados | ingles (el autor indica "English only") |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp) |
-| Pooling | mean pooling (`classifier.pooling_type` embebido en el GGUF) |
-| Etiquetas | 0 = clean, 1 = purple_para |
-| Umbral de operacion | 0,0599 (calibrado a precision >= 0,90) |
-| Tamano del repo | 1,2 GB |
+| Formato de pesos | GGUF (tambien existe el modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de jhu-clsp/ettin-encoder-400m, un encoder de 395,8 millones de parametros basado en la arquitectura ModernBERT, disenada para secuencias largas con attention eficiente y sesgos rotatorios. Sobre esa base se anade una cabeza de clasificacion binaria con mean pooling, y se afina para la tarea de clasificar parrafos como prosa limpia o "purple_para". La entrada es un unico parrafo (sin lineas en blanco internas, aunque los saltos de linea simples son validos) de hasta 512 tokens; los parrafos de una sola frase tambien estan representados en el entrenamiento.
+El modelo es un encoder transformer de la familia ModernBERT, derivado de jhu-clsp/ettin-encoder-400m (395,8 millones de parametros), reutilizado como cabecera de clasificacion binaria con pooling de tipo *mean* (el campo `classifier.pooling_type` va embebido en el GGUF). La entrada es un unico parrafo, sin linea en blanco interna, de hasta 512 tokens; los parrafos de una sola frase tambien forman parte del conjunto de entrenamiento, de modo que una linea ornamentada aislada sigue puntuando como purple.
 
-El detalle mas relevante del entrenamiento es la composicion del dataset: todos los negativos son texto escrito por humanos, mientras que los positivos son mayoritariamente salida de una unica familia de modelos. Las etiquetas provienen de grading automatico con un LLM, no de anotacion humana. El autor documenta los patrones que el modelo aprende a penalizar: relleno y micro-beats ("A pause.", "You breathe."), spam de negaciones y construcciones "not X, but Y", atmosfera y senalizacion de importancia que sustituyen a eventos, ritmos staccato camuflados y tics de estilo recurrentes ("tilts her head", "her voice drops", "for half a heartbeat"). No se especifica el numero de tokens de entrenamiento ni si hubo una fase de RLHF o DPO; al tratarse de un clasificador, la innovacion tecnica esta en la formulacion de la tarea y en la calibracion del umbral, no en tecnicas de decodificacion.
+El entrenamiento se realizo con ejemplos negativos exclusivamente de prosa escrita por humanos y positivos mayoritariamente generados por una unica familia de modelos, con etiquetas obtenidas mediante calificacion por LLM en lugar de anotacion humana. La version v2 amplia el alcance respecto a v1 (ettin150m-purple), que puntuaba frase a frase, e incorpora patrones de slop moderno: relleno y micro-beats, spam de negaciones, atmosfera y senalizacion de trascendencia en lugar de eventos, ritmo entrecortado camuflado y tics de casa estereotipados. El umbral de 0,0599 se calibro para una precision de al menos 0,90 sobre negativos humanos.
 
 ## Capacidades
 
-- Clasificacion binaria de parrafos en prosa limpia o purple/slop, con salida de probabilidad calibrada.
-- Deteccion de procedencia LLM: asigna puntuaciones altas (~0,85-0,91) a casi cualquier parrafo generado por un LLM, independientemente de si es slop o no.
-- Deteccion de patrones de slop a nivel de parrafo: relleno, negaciones encadenadas, atmosfera sin eventos, ritmos fragmentados y tics de estilo.
-- Deteccion de prosa recargada en parrafos de una sola frase, gracias a la presencia de este tipo de ejemplos en el entrenamiento.
-- Extraccion de embeddings compatible con llama.cpp (`--embeddings`), lo que permite reutilizar el modelo como encoder para otras tareas.
-- Inferencia local sin GPU dedicada obligatoria, al distribuirse en GGUF cuantizado.
-- No soporta tool calling, function calling, agentes, vision, audio ni modo thinking: es un encoder de clasificacion, no un modelo generativo.
+- Clasificacion binaria de parrafos en ingles: devuelve probabilidad de `purple_para` (1) frente a `clean` (0).
+- Deteccion de prosa artificial a nivel de parrafo, incluyendo relleno, micro-beats, negaciones encadenadas, atmosfera sin eventos y ritmo fragmentado.
+- Deteccion de tics estilisticos de casa (`tilts her head`, `her voice drops`, `for half a heartbeat`, `lets the question hang`, etc.).
+- Deteccion de procedencia LLM de forma deliberada: practicamente cualquier parrafo generado por un LLM recibe una puntuacion alta (aproximadamente 0,85-0,91), sea slop o no.
+- Extraccion de caracteristicas (tag `feature-extraction`) mediante el endpoint de embeddings de llama.cpp.
+- Puntuacion por parrafo con pooling de tipo *mean* y logits de dos clases accesibles via API.
+- No dispone de generacion de texto, tool calling, capacidades de agente, vision ni audio: es un clasificador, no un modelo generativo.
 
 ## Casos de uso
 
-- Filtrado de calidad en pipelines editoriales: dividir un manuscrito por lineas en blanco, puntuar cada parrafo con el umbral 0,0599 y marcar los que superan el corte para revision humana. El AUC de 0,998 con negativos humanos lo hace adecuado como primera pasada.
-- Deteccion de procedencia LLM en plataformas de contenido: usar la probabilidad como senal de "distancia a prosa humana" para moderacion o etiquetado, asumiendo que la puntuacion no distingue slop de texto LLM limpio.
-- Entrenamiento de modelos de recompensa o filtros de datos: el autor indica que para ranking o reward conviene leer la probabilidad directamente en lugar de aplicar el umbral, ya que los negativos de calibracion son todos humanos.
-- Control de calidad en generacion creativa asistida: integrar el clasificador en un bucle de generacion para rechazar o regenerar parrafos que superen el umbral, reduciendo tics como "for half a heartbeat" o "lets the question hang".
-- Investigacion sobre estilos de escritura: usar los embeddings del encoder para agrupar o analizar corpus narrativos segun su grado de artificialidad.
-- Evaluacion de modelos de escritura creativa: comparar la distribucion de puntuaciones de distintos generadores sobre el mismo prompt para medir cuanto se acercan a la prosa humana.
-- Despliegue en local o en CPU: con un GGUF q8_0 y llama-server en modo embeddings, se puede ejecutar en maquinas sin GPU para procesar volumenes moderados de texto.
+- Moderacion de contenido en plataformas de escritura: puntuar cada parrafo enviado y marcar automaticamente los que superen el umbral de 0,0599 para revision humana, usando el clasificador como filtro previo de bajo coste.
+- Control de calidad en pipelines editoriales: detectar prosa generada por LLM en manuscritos, articulos o guiones antes de publicacion, separando documentos por lineas en blanco y puntuando cada parrafo de forma independiente.
+- Filtrado de datos para entrenamiento: descartar parrafos con alta probabilidad de procedencia LLM en corpus recolectados de la web, aprovechando que el modelo asigna puntuaciones altas a texto generado independientemente de su calidad.
+- Evaluacion de asistentes de escritura: medir si las salidas de un sistema de generacion caen en patrones de slop (relleno, tics, atmosfera sin accion) y usar la probabilidad como senal de recompensa o ranking.
+- Deteccion de roleplay generado: el entrenamiento esta mayoritariamente compuesto por prosa de estilo roleplay, por lo que encaja en la revision de ficcion interactiva y comunidades de escritura colaborativa.
+- Investigacion sobre estilometria y procedencia de texto: usar los logits y la probabilidad como variable continua para estudiar como evolucionan los patrones estilisticos de distintos modelos generativos.
+- Integracion en herramientas de escritura: desplegar el GGUF con llama.cpp detras de un servicio local y ofrecer al autor una senal en tiempo real sobre parrafos que se alejan de la prosa humana.
 
 ## Benchmarks y rendimiento
 
 | Metrica | Valor |
 |---|---|
 | AUC en test (negativos solo humanos) | 0,998 |
-| Falsos positivos a umbral 0,0599 | 6,4% de parrafos humanos retenidos |
-| Concordancia GGUF q8_0 vs torch (400 filas) | 400/400 decisiones, media de abs(delta p) 0,0013 |
-| Concordancia GGUF f16 vs torch (400 filas) | 400/400 decisiones, media de abs(delta p) < 0,0001 |
+| Tasa de falsos positivos con umbral 0,0599 | 6,4 % de parrafos humanos retenidos |
+| Concordancia GGUF q8_0 vs modelo torch | 400/400 decisiones, diferencia media absoluta de probabilidad 0,0013 |
+| Concordancia GGUF f16 vs modelo torch | 400/400 decisiones, diferencia media absoluta < 0,0001 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible, algo esperable en un clasificador de texto.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible, dado que se trata de un clasificador y no de un modelo generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en q8_0 y en torno a 0,8 GB en f16 para los pesos; el consumo real depende del contexto y del backend.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB libres (GTX 1650, RTX 3060, RTX 4090); tambien funciona en CPU.
-- Cabe en GPU consumer sin problema, e incluso en entornos sin GPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--embeddings --pooling rank --flash-attn off`), y por extension cualquier runtime compatible con GGUF. No se documentan integraciones con vLLM, TGI u Ollama en la informacion disponible.
-- Requisito critico: la build de llama.cpp debe leer `classifier.pooling_type`; las builds antiguas caen a CLS pooling sin aviso y el AUC baja a ~0,5.
-- En la API de embeddings es obligatorio `embd_normalize: -1`; sin ello todos los logits leen aproximadamente 0.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: inferior a 1 GB para la variante q8_0 y aproximadamente 0,8 GB para f16, dado el tamano de 395,8 millones de parametros y un repositorio de 1,2 GB.
+- Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1060, RTX 3060, RTX 4090, asi como en CPU mediante llama.cpp.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; para lotes grandes conviene una RTX 3090, RTX 4090, A100 o H100.
+- Despliegue mediante llama.cpp (`llama-server`), con los parametros indicados por el autor: `-c 512 -b 512 -ub 512 --embeddings --pooling rank --flash-attn off`.
+- Requisito critico: la build de llama.cpp debe leer `classifier.pooling_type`; las builds antiguas caen a pooling CLS sin aviso y el AUC baja a aproximadamente 0,5.
+- El endpoint de embeddings debe invocarse con `embd_normalize: -1`; sin ello todos los logits leen aproximadamente 0.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera procesamiento de miles de parrafos por segundo en GPU, aunque no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ettin400m-purple-v2-GGUF | 395,8 M | 512 tokens | Clasificacion de parrafo (purple/slop y provenance LLM) | MIT | GGUF en Hugging Face |
-| ettin150m-purple-GGUF (v1) | no disponible | no disponible | Clasificacion de frase | MIT | GGUF en Hugging Face |
-| jhu-clsp/ettin-encoder-400m | 395,8 M | no disponible | Encoder base ModernBERT, sin cabeza de clasificacion | no disponible en la informacion | Hugging Face |
+| ettin400m-purple-v2-GGUF | 395,8 M | 512 tokens | Clasificacion de prosa purple/slop por parrafo | MIT | Hugging Face, GGUF |
+| ettin150m-purple-GGUF (v1 del mismo autor) | no disponible (familia Ettin-150m) | no disponible | Clasificacion de prosa purple por frase | MIT | Hugging Face, GGUF |
+| jhu-clsp/ettin-encoder-400m (modelo base) | 395,8 M | no disponible | Encoder general (fine-tuning) | no disponible | Hugging Face |
 
-La comparacion con clasificadores de slop de otros autores no esta disponible en la informacion proporcionada. La diferencia principal frente a v1 es la unidad de analisis: v1 puntua frases y v2 puntua parrafos, lo que segun el autor corrige el fallo ante slop moderno con frases individualmente limpias.
+No se dispone de datos de benchmarks de clasificadores comparables de terceros en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ingles; el entrenamiento es mayoritariamente prosa de estilo roleplay, lo que puede reducir el rendimiento en otros generos.
-- Hay que dividir los documentos por lineas en blanco y puntuar cada parrafo por separado; una entrada larga con varios parrafos queda fuera de distribucion y diluye la puntuacion.
-- Las etiquetas provienen de grading con LLM, no de anotacion humana, y los positivos son mayoritariamente salida de una unica familia de modelos, lo que introduce sesgo hacia ese estilo.
-- El modelo detecta procedencia LLM de forma deliberada: casi cualquier parrafo de LLM recibe 0,85-0,91, slop o no, y las puntuaciones entre parrafos de LLM son muy cercanas. No debe interpretarse como un medidor puro de slop.
-- El umbral 0,0599 es muy bajo porque todos los negativos de calibracion son humanos; para ranking o reward conviene usar la probabilidad en bruto.
-- Un escritor puede eludir la deteccion parafraseando los tics aprendidos a nivel de frase.
-- Riesgo de alucinacion no aplica (no genera texto), pero si de falsos positivos sobre prosa humana muy ornamentada.
-- La licencia MIT permite uso comercial, aunque no se documentan garantias de robustez fuera del dominio de roleplay en ingles.
-- Requiere una build reciente de llama.cpp y el parametro `embd_normalize: -1`; un error de configuracion degrada el AUC a ~0,5 sin aviso.
+- Solo ingles: el autor indica explicitamente que el modelo es English only, por lo que no es fiable en castellano ni en otros idiomas.
+- Entrada por parrafo: hay que dividir los documentos por lineas en blanco y puntuar cada parrafo por separado; una entrada larga con varios parrafos queda fuera de distribucion y diluye la puntuacion.
+- Etiquetas generadas por LLM, no por anotacion humana, y los positivos proceden mayoritariamente de una unica familia de modelos, lo que puede introducir sesgo hacia ese estilo concreto.
+- El modelo detecta procedencia LLM de forma deliberada: casi cualquier parrafo generado por un LLM puntua alto (0,85-0,91), slop o no, por lo que debe leerse como "distancia a la prosa humana" y no como medidor puro de slop.
+- El umbral de 0,0599 esta calibrado con negativos exclusivamente humanos; para uso como ranking o recompensa conviene leer la probabilidad en lugar de la decision binaria.
+- Fragilidad ante parafraseo: una vez aprendido un tic a nivel de frase, un escritor puede parafrasearlo y evitar la deteccion.
+- Dependencia de la build de llama.cpp: sin soporte de `classifier.pooling_type` el rendimiento se degrada a AUC de aproximadamente 0,5 sin aviso.
+- El entrenamiento se centra en prosa de estilo roleplay, lo que puede reducir la generalizacion a otros generos.
+- La licencia MIT permite uso comercial, pero no se especifican garantias sobre el rendimiento en dominios distintos al entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/ettin400m-purple-v2-GGUF
-- Modelo v1: https://huggingface.co/chartreuse-verte/ettin150m-purple-GGUF
+- Version anterior v1: https://huggingface.co/chartreuse-verte/ettin150m-purple-GGUF
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-400m
 - Proyecto Chartreuse: https://github.com/OrbFrontend/Chartreuse

@@ -2,89 +2,107 @@
 
 ## Resumen
 
-Alkus 3.1 27B Abliterated es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B, desarrollado por MK4-Research, orientado a razonamiento compacto, honesto y persistente. Se presenta como el hermano "puro de razonamiento" de Mizar 3.0 (centrado en uso de herramientas y agentes), y ambos parten de una base Qwen3.8-27B sometida a un proceso de *abliteration*, es decir, la eliminación o atenuación de los mecanismos de rechazo alineados del modelo original. El modelo se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, con un tamano de repositorio de 16,5 GB.
+Alkus 3.1 27B Abliterated es un ajuste fino (fine-tune) de Qwen3.8-27B orientado a razonamiento compacto, honesto y persistente. Lo desarrolla MK4-Research y se distribuye en formato GGUF con cuantización Q4_K_M. El modelo se presenta como el hermano "puro de razonamiento" de Mizar 3.0 (centrado en uso de herramientas y agentes); ambos parten de una base Qwen3.8-27B "abliterated", es decir, con los mecanismos de rechazo eliminados del modelo original.
 
-El modelo cuenta con 26.895.998.464 parámetros totales (aproximadamente 26,9 mil millones) y declara una ventana de contexto de hasta 131.072 tokens. Su propuesta diferencial no es el rendimiento bruto, sino el estilo de razonamiento: cadenas de pensamiento compactas y telegráficas, con autoverificación explícita, y una preferencia declarada por admitir desconocimiento antes que fabricar una respuesta. Está pensado como asistente de investigación para tareas de razonamiento multi-paso.
+El objetivo declarado es un modelo que razone paso a paso con autoverificación explícita y que prefiera admitir desconocimiento antes que fabricar una respuesta. Está afinado con QLoRA (rango 16, alpha 32, 2 épocas) sobre la base abliterated y empaquetado en GGUF Q4_K_M de aproximadamente 15,8 GB, con una ventana de contexto de hasta 131.072 tokens.
 
-Es relevante ahora porque combina tres tendencias del ecosistema open source: los fine-tunes de razonamiento sobre bases Qwen3, la distribución en GGUF para inferencia local y los modelos "abliterated" que eliminan restricciones de rechazo. No obstante, se trata de un modelo de investigación con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados y con una licencia Apache 2.0 que no exime de los riesgos propios de un modelo sin alineación de seguridad.
+Es relevante porque combina tres cosas poco habituales en un modelo local de 27B: un contexto muy largo, un sesgo explícito hacia la honestidad epistémica y una orientación a tareas de revisión de código y seguridad (code review, ciberseguridad). El autor reporta resultados locales medidos sobre el propio GGUF cuantizado, no sobre el modelo en precisión completa, y advierte que es un modelo de investigación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3.8-27B); detalles internos no disponibles |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B); detalles internos no disponibles |
 | Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 131.072 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_M (~15,8 GB); otras cuantizaciones no disponibles |
-| Idiomas soportados | no disponible |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | Hasta 131.072 tokens |
+| Tipos de cuantizacion | GGUF Q4_K_M (unica cuantizacion publicada en el repo) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors solo como referencia del modelo base) |
+| Formato de pesos | GGUF (Q4_K_M, ~15,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de Qwen/Qwen3.8-27B, que a su vez es una base Qwen3 previamente sometida a *abliteration*. El ajuste se realizó mediante QLoRA con rango 16 y alpha 32 durante 2 épocas. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La model card describe el registro de salida como "compacto y telegráfico", con autoverificación explícita, lo que sugiere un dataset de entrenamiento orientado a cadenas de razonamiento breves y verificables, aunque esta composición no se detalla.
+El modelo parte de Qwen3.8-27B, una base de tipo transformer de aproximadamente 26,9 mil millones de parámetros. Sobre esa base, y concretamente sobre su variante "abliterated" (a la que se le han eliminado las direcciones de rechazo para que no se niegue a responder), MK4-Research aplica un ajuste fino QLoRA con rango 16, alpha 32 y 2 épocas. No se detalla en la información disponible el volumen de tokens de entrenamiento ni la composición exacta del dataset.
 
-La innovación técnica declarada no reside en la arquitectura, sino en el comportamiento inducido por el ajuste: autocorrección y preferencia por la incertidumbre honesta frente a la respuesta fabricada. El autor recomienda Flash Attention activada, caché K/V en Q8_0 y un máximo de una petición concurrente, lo que apunta a un despliegue de un solo usuario o de investigación más que a serving de alta concurrencia.
+La innovación declarada no es arquitectónica sino de comportamiento: el modelo se entrena para un "registro compacto y telegráfico" de razonamiento con autoverificación explícita, de modo que tiende a autocorregirse y a declarar incertidumbre en lugar de inventar. El autor indica que la ablación solo elimina rechazos y no afecta a los benchmarks de código. El paquete distribuido es únicamente el GGUF cuantizado, no los pesos en precisión completa (safetensors), aunque el dato de parámetros totales procede de los safetensors del modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`).
-- Razonamiento multi-paso con cadenas de pensamiento compactas y autoverificación explícita.
-- Autocorrección: el modelo está ajustado para revisar y corregir sus propios pasos.
-- Honestidad calibrada: preferencia declarada por admitir desconocimiento en lugar de inventar.
-- Capacidad de razonamiento heredada de la base Qwen3 (matemáticas, lógica, código), aunque no se documentan evaluaciones específicas.
+- Generación de texto conversacional y razonamiento multi-paso con cadena de pensamiento compacta y autoverificación.
+- Razonamiento matemático (reportado alto rendimiento en GSM8K).
+- Generación y revisión de código (HumanEval, MBPP), incluida la extracción de respuestas desde bloques de código delimitados.
+- Revisión de código y análisis orientado a seguridad (tags de cybersecurity y code-review).
+- Comportamiento de honestidad epistémica: declarar desconocimiento en lugar de fabricar datos.
+- Capacidad de agente con herramientas en el contexto de investigación de seguridad (el benchmark ExploitBench se midió sobre el hermano Alkus 3.0, no sobre 3.1).
+- Contexto largo de hasta 131.072 tokens para conversaciones y documentos extensos.
 - Soporte multilingüe: no disponible en la información proporcionada.
-- Tool calling / function calling: no documentado para este modelo (esa función se atribuye al modelo hermano Mizar 3.0).
-- Capacidades de agente y multi-step reasoning: el razonamiento multi-paso está en el núcleo del ajuste, pero no se documenta integración con frameworks de agentes.
-- Modo *thinking*: no se detalla un modo explícito; el razonamiento se describe como parte del registro de salida.
-- Visión y audio: no disponibles.
+- Tool calling / function calling: no confirmado explícitamente para 3.1 en la información disponible.
 
 ## Casos de uso
 
-- Asistente de investigación en razonamiento multi-paso: el modelo está entrenado para descomponer problemas y verificar cada paso, lo que encaja en entornos de investigación donde se prioriza la trazabilidad del razonamiento sobre la velocidad de respuesta.
-- Revisión de argumentos y detección de errores lógicos: su sesgo hacia la autoverificación permite usarlo como segundo revisor de cadenas de razonamiento generadas por otros modelos o por humanos.
-- Análisis de documentos largos: con 131.072 tokens de contexto puede procesar informes, papers o expedientes completos y razonar sobre ellos sin truncar el material.
-- Prototipado de asistentes que deben declarar incertidumbre: útil en dominios donde una respuesta inventada es más costosa que un "no lo sé", como auditoría interna o verificación de datos.
-- Inferencia local en estación de trabajo: al distribuirse en GGUF Q4_K_M (~15,8 GB), puede ejecutarse con llama.cpp u Ollama en una GPU de consumo de gama alta con suficiente VRAM.
-- Experimentación en seguridad y alineación: al ser un modelo abliterated, sirve como caso de estudio para investigar el comportamiento de modelos sin mecanismos de rechazo y diseñar mitigaciones externas.
-- Generación de borradores de razonamiento para pipelines de verificación: puede producir cadenas de pensamiento que luego se validan con herramientas deterministas o con un modelo mayor.
+- Asistente de razonamiento multi-paso: para problemas de análisis o planificación donde interesa una cadena de pensamiento que se autocorrija y señale sus dudas en lugar de dar una respuesta segura pero errónea.
+- Revisión de código en local: el modelo puede analizar fragmentos o ficheros completos aprovechando el contexto de 131k tokens para detectar patrones problemáticos, con resultados medidos en HumanEval (92%) y MBPP (84%).
+- Investigación de vulnerabilidades asistida: ejecutado como agente con herramientas (setup/exec/read/write/grade) contra objetivos en contenedor, puede localizar y alcanzar código vulnerable (según el baseline de Alkus 3.0 en un CVE de Chrome V8), útil como primer filtro en triaje de seguridad.
+- Generación de código en pipelines locales: al ser un GGUF Q4_K_M de ~15,8 GB, puede servirse con llama.cpp en una sola GPU de consumo para tareas de autocompletado y generación con verificación humana.
+- Análisis de documentos largos: con 131k tokens de contexto puede procesar informes, expedientes o bases de código extensas en una sola pasada sin truncar.
+- Evaluación de honestidad y calibración: útil en investigación para estudiar comportamiento de modelos que declaran incertidumbre, comparándolo con la base Qwen sin ajustar.
+- Prototipado de asistentes de seguridad: como base para herramientas de análisis estático/dinámico asistido, siempre con revisión humana dada la advertencia del autor sobre no uso en producción sin supervisión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Medidos sobre el propio GGUF Q4_K_M servido con llama.cpp, con EleutherAI lm-evaluation-harness, decodificación greedy (temperatura 0) y 100 ítems por tarea:
+
+| Benchmark | Métrica | Alkus 3.1 |
+|---|---|---|
+| GSM8K | exact match | 96% |
+| HumanEval | pass@1 | 92% |
+| MBPP | pass@1 | 84% |
+
+Comparación antes/después del ajuste fino en MBPP (misma tubería, 100 ítems):
+
+| Modelo | MBPP pass@1 |
+|---|---|
+| Qwen3.8-27B (base vanilla) | 75% |
+| Alkus 3.1 | 84% |
+
+Mejora de +9 puntos en MBPP. El autor aclara que GSM8K y HumanEval no se volvieron a medir sobre la base, por lo que no se reclama comparación antes/después para esas tareas. Los resultados son una medición local reproducible sobre el GGUF cuantizado, no un envío oficial a leaderboards.
+
+En seguridad (ExploitBench, medido sobre Alkus 3.0, no sobre 3.1): sobre el CVE-2024-1939 de Chrome V8, con una escalera de 16 indicadores, la mejor ejecución alcanzó 2/16 (`cov_func` y `cov_line`), es decir, localizó y ejecutó el código vulnerable sin producir crash, informe ASAN ni primitiva de exploit.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 16 GB para la cuantización Q4_K_M (~15,8 GB de pesos) más la caché K/V; con contexto largo la caché crece de forma significativa, por lo que se recomienda reservar margen adicional.
-- GPU recomendadas: no especificadas por el autor. Por tamano, una GPU con 24 GB de VRAM (RTX 4090, RTX 3090, A10G) permite cargar el modelo en Q4_K_M con contexto moderado; para contexto cercano a 131.072 tokens se necesitan GPUs de 40-80 GB (A100 40/80 GB, H100).
-- Cabe en GPU de consumo: sí, en GPUs de 24 GB con la cuantización Q4_K_M y contexto limitado; en GPUs de 16 GB el margen es muy ajustado o insuficiente.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no están confirmados para este repositorio GGUF.
-- Latencia y throughput estimados: no disponibles. El autor recomienda un máximo de una petición concurrente, lo que indica que no está optimizado para serving concurrente.
+- VRAM estimada para inferencia: el GGUF Q4_K_M ocupa ~15,8 GB, por lo que se necesita aproximadamente 16-18 GB de VRAM considerando caché KV y overhead (el autor recomienda caché K/V en Q8_0).
+- GPU recomendadas: una RTX 4090 (24 GB) o RTX 3090 (24 GB) permiten cargar el modelo completo en VRAM; A100/H100 para mayor throughput o contextos muy largos.
+- Cabe en GPU de consumo: sí, en GPUs con 24 GB o más (4090, 3090). En GPUs de 16 GB no cabe entero en Q4_K_M y requeriría offload a CPU o cuantizaciones más agresivas (no publicadas en el repo).
+- Opciones de despliegue: llama.cpp (entorno de medición del autor), y por extensión otros runners compatibles con GGUF como Ollama o LM Studio; vLLM y TGI no aplican directamente al formato GGUF.
+- Ajustes recomendados por el autor: Flash Attention activado, caché K/V en Q8_0 y máximo 1 petición concurrente.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Alkus 3.1 27B Abliterated | ~26,9 B | 131.072 | GGUF Q4_K_M | Apache 2.0 | Fine-tune QLoRA de Qwen3.8-27B abliterated; sin benchmarks publicados |
-| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en esta ficha | safetensors | según modelo base | Modelo original con alineación intacta; referencia directa |
-| Mizar 3.0 | no disponible | no disponible | no disponible | no disponible | Modelo hermano del mismo autor, orientado a uso de herramientas y agentes |
+| Alkus 3.1 27B Abliterated | ~26,9 B | 131.072 | GGUF Q4_K_M | Apache 2.0 | Fine-tune QLoRA de Qwen3.8-27B abliterated; GSM8K 96%, HumanEval 92%, MBPP 84% |
+| Qwen3.8-27B (base vanilla) | ~26,9 B | no disponible en la información | safetensors | no disponible en la información | Base sin ajuste; MBPP 75% en la misma tubería |
+| Mizar 3.0 | no disponible | no disponible | no disponible | no disponible | Hermano del mismo autor orientado a uso de herramientas y agentes; misma base abliterated |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks de Mizar 3.0 ni de otros modelos de 27B comparables, por lo que la comparativa cuantitativa se limita a la base Qwen en MBPP.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: el autor indica explícitamente que no está pensado para producción sin revisión humana.
-- Riesgo de alucinación: puede producir detalles concretos y seguros pero incorrectos (constantes numéricas, hashes de commits, nombres de API) cuando no puede verificar los hechos desde el contexto.
-- Abliteration: al haberse eliminado los mecanismos de rechazo de la base, el modelo puede generar contenido que el Qwen3.8-27B original rechazaría; requiere filtros y moderación externos en cualquier despliegue.
-- Idiomas soportados no documentados: no se puede garantizar un rendimiento multilingüe fiable sin evaluación.
-- Contexto largo: aunque declara 131.072 tokens, no hay evaluación publicada de la degradación del rendimiento a esa longitud.
-- Serving: el autor recomienda una sola petición concurrente, lo que limita su uso en entornos de alta carga.
-- Licencia Apache 2.0: permite uso comercial, pero la licencia no cubre los riesgos de seguridad derivados del contenido generado ni garantiza el cumplimiento de las condiciones del modelo base.
-- Sin benchmarks ni adopción verificable: cero descargas y cero likes en el momento de la consulta, sin resultados de evaluación publicados.
+- Modelo de investigación: el autor advierte explícitamente que no está pensado para producción sin revisión humana.
+- Alucinación: puede producir detalles seguros pero incorrectos en hechos que no puede verificar desde el contexto (constantes numéricas, hashes de commit, nombres de API). Verificar especificaciones de seguridad o datos factuales contra fuentes primarias.
+- La base es "abliterated", lo que elimina los rechazos del modelo original; esto puede aumentar el riesgo de respuestas a solicitudes dañinas y debe tenerse en cuenta en despliegues abiertos.
+- Benchmarks medidos sobre una única cuantización (Q4_K_M) y 100 ítems por tarea con decodificación greedy; no son resultados oficiales ni comparables directamente con mediciones en precisión completa.
+- Los datos de ExploitBench corresponden a Alkus 3.0, no a 3.1; no hay medición de seguridad para esta versión.
+- Idiomas soportados no documentados; el comportamiento multilingüe no está garantizado.
+- Configuración recomendada de 1 petición concurrente, lo que limita el despliegue como servicio de alto throughput.
+- Licencia Apache 2.0 permite uso comercial, pero la naturaleza de investigación y la ablación aconsejan evaluación propia antes de cualquier uso en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/MK4-Research/Alkus-3.1-27B-Abliterated-GGUF
+- Hugging Face: https://huggingface.co/MK4-Research/Alkus-3.1-27B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Imagen de presentación del modelo: https://cdn-uploads.huggingface.co/production/uploads/692c9b3b93121a11649cec08/RGNh5KrWxN8kztzwzpD6m.png
+- EleutherAI lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- CVE-2024-1939 (Chrome V8): https://nvd.nist.gov/vuln/detail/CVE-2024-1939

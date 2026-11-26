@@ -2,97 +2,111 @@
 
 ## Resumen
 
-prajna-ai-124m-chat es un modelo de lenguaje conversacional de 123,6 millones de parámetros entrenado desde cero por el desarrollador independiente somdevsheel (anteriormente publicado como kaggle-llm-124m-chat). Se trata de un proyecto de aprendizaje ejecutado íntegramente en GPUs gratuitas de Kaggle (2x NVIDIA T4), con un preentrenamiento sobre 1.920 millones de tokens de FineWeb-Edu y un ajuste supervisado posterior sobre 451.000 conversaciones de smol-smoltalk más 1.000 conversaciones sintéticas de identidad.
+prajna-ai-124m-chat es un modelo de lenguaje conversacional de 123,6 millones de parámetros entrenado desde cero por el desarrollador independiente somdevsheel (publicado anteriormente como `kaggle-llm-124m-chat`). Se trata de un transformer decoder-only de estilo LLaMA con 12 capas, dimensión oculta 768, 12 cabezas de atención, FFN de 2048 y una longitud de contexto de 4096 tokens. El modelo parte de un preentrenamiento sobre 1,92 mil millones de tokens de FineWeb-Edu, seguido de una fase de extensión de contexto y un ajuste supervisado (SFT) orientado a conversación.
 
-Arquitectónicamente es un transformer decoder-only de estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos, embeddings atados) con 12 capas, dimensión oculta 768, 12 cabezas de atención, FFN de 2048 y una ventana de contexto de solo 1.024 tokens. Utiliza el tokenizador BPE de GPT-2 con vocabulario ampliado a 50.304 entradas. Los pesos son un `LlamaForCausalLM` estándar, por lo que funciona directamente con `transformers`.
+Su relevancia es fundamentalmente didáctica y de investigación: demuestra el ciclo completo de entrenamiento de un LLM (preentrenamiento, extensión de contexto y SFT) sobre hardware de consumo, concretamente 2 GPU NVIDIA T4 gratuitas de Kaggle, en sesiones de menos de 12 horas. Incorpora además un componente específico para inglés de India y hinglish romanizado, lo que lo hace interesante para estudiar el comportamiento multilingüe en modelos muy pequeños.
 
-Su relevancia es principalmente didáctica y de referencia: demuestra el ciclo completo de preentrenamiento y SFT de un modelo pequeño con recursos mínimos, y sirve como banco de pruebas para pipelines de entrenamiento, cuantización y despliegue. El propio autor lo describe explícitamente como un proyecto de aprendizaje y no como un asistente apto para producción, advirtiendo de que con frecuencia afirma hechos erróneos con seguridad.
+No es un asistente de producción: el propio autor lo describe como un proyecto de aprendizaje, con conocimiento factual limitado (ratio de unos 20 tokens de preentrenamiento por parámetro, cercano al óptimo de Chinchilla pero insuficiente para conocimiento robusto) y sin ajuste de seguridad ni preferencias. Es útil como base para experimentación, fine-tuning y comparativas de modelos de escala reducida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos, embeddings atados) |
+| Arquitectura | Transformer decoder-only estilo LLaMA: RoPE, RMSNorm (pre-norm), SwiGLU, sin biases, embeddings atados |
 | Parametros totales | 123.587.328 (85,0M no-embedding) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | no disponible (el repo incluye safetensors y ONNX; no se documentan variantes GGUF ni cuantizaciones publicadas) |
-| Idiomas soportados | inglés (en) |
+| Longitud de contexto | 4.096 tokens (RoPE theta 100.000) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors y ONNX; cuantizaciones GGUF no documentadas) |
+| Idiomas soportados | Inglés (en) e hindi romanizado/hinglish; devanagari no entrenado |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, ONNX |
-| Capas / dimension oculta / cabezas | 12 / 768 / 12 |
-| FFN | 2.048 |
-| Tokenizador | GPT-2 BPE, vocabulario ampliado a 50.304 |
-| Dataset de entrenamiento | FineWeb-Edu (sample-10BT) para preentrenamiento; smol-smoltalk + 1.000 conversaciones sintéticas de identidad para SFT |
+| Tokenizer | GPT-2 BPE, vocabulario ampliado a 50.304 |
+| Forma | 12 capas, hidden 768, 12 cabezas, FFN 2048 |
 | Modelo base | somdevsheel/prajna-ai-124m-base |
-| Tamano del repo | 1,9 GB |
+| Tamano del repo | 2,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la receta de un transformer decoder-only compacto al estilo LLaMA: normalización RMSNorm en configuración pre-norm, embeddings rotatorios (RoPE) para la posición, activación SwiGLU en la FFN y ausencia de términos de sesgo en las capas lineales, con los embeddings de entrada y salida atados. La forma es de 12 capas con hidden de 768, 12 cabezas de atención y FFN de 2.048, lo que da los 123,6M de parámetros totales (85,0M sin contar embeddings). La ventana de contexto es de 1.024 tokens, y el tokenizador es el BPE de GPT-2 con el vocabulario rellenado hasta 50.304.
+La arquitectura es un transformer decoder-only convencional de estilo LLaMA: normalización RMSNorm en pre-norm, activación SwiGLU en la FFN, embeddings atados entre entrada y salida, ausencia de biases y codificación posicional rotatoria (RoPE) con theta 100.000. Usa el tokenizer BPE de GPT-2 con el vocabulario rellenado hasta 50.304 entradas. No incorpora innovaciones como decodificación especulativa, atención lineal ni arquitecturas híbridas SSM.
 
-El entrenamiento se dividió en dos fases. El preentrenamiento consumió 1.920 millones de tokens de FineWeb-Edu (muestra sample-10BT) en 3.661 pasos de 524K tokens repartidos en dos ejecuciones, unas 21 horas en 2x T4, alcanzando una pérdida de validación de 3,30 (perplejidad 27). Se usó PyTorch DDP entre las dos GPUs, precisión mixta fp16 con loss scaling, AdamW con betas (0,9, 0,95), weight decay 0,1 y schedule coseno; el learning rate fue 1,2e-3 en el preentrenamiento inicial y 6e-4 en el preentrenamiento continuado sobre datos no vistos, con el schedule ajustado automáticamente al límite de 12 horas por sesión de Kaggle. La fase de SFT empleó 451.000 conversaciones de smol-smoltalk (conjunto completo) más 1.000 conversaciones sintéticas de identidad, empaquetadas en bloques de 1.024 tokens (299M tokens), durante 4.578 pasos de 65K tokens (3,2 horas en 2x T4), con learning rate 2e-4 y pérdida calculada únicamente sobre los tokens del asistente. La pérdida de validación sobre tokens de asistente bajó de 2,65 a 1,46. No se aplicó RLHF ni DPO.
+El entrenamiento se dividió en tres fases documentadas:
+
+- **Preentrenamiento**: 1,92 mil millones de tokens de FineWeb-Edu (muestra sample-10BT), en 3.661 pasos de 524K tokens (dos ejecuciones), unas 21 horas en 2 T4. Pérdida de validación 3,30 (perplejidad 27).
+- **Extensión de contexto**: 580 millones de tokens de texto en inglés centrado en India (Sangraha, Wikipedia, FineWeb-Edu), ampliando el contexto de 1024 a 4096 tokens, en 2.211 pasos de 262K tokens. La pérdida de validación a 4096 tokens bajó de 5,02 a 3,25.
+- **SFT conversacional**: 457K conversaciones de smol-smoltalk, 27K conversaciones en hindi romanizado/hinglish de samvaad-hi-v1 y 1.500 conversaciones sintéticas de identidad (inglés y hinglish), empaquetadas en bloques de 4096 tokens (402M tokens). Pérdida en tokens del asistente de 2,49 a 1,46.
+
+El entrenamiento usó PyTorch DDP en 2 GPU con precisión mixta fp16 y loss scaling, AdamW (0,9, 0,95), weight decay 0,1 y schedule coseno. La tasa de aprendizaje fue 1,2e-3 en preentrenamiento, 6e-4 en continuación y 2e-4 en SFT. La pérdida en SFT se calculó solo sobre tokens del asistente y el empaquetado fue first-fit con 99% de ocupación. No hubo RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno siguiendo una plantilla de chat con etiquetas de rol en texto plano (`<|system|>`, `<|user|>`, `<|assistant|>`, cierre con `<|endoftext|>`).
-- Escritura de código corto y bien especificado (por ejemplo, inversión de cadenas o comprobación de primalidad); el código más largo o con especificaciones vagas suele fallar.
-- Razonamiento básico y respuesta a preguntas sencillas, con conocimiento factual muy limitado.
-- Autoconocimiento de identidad: responde con su nombre y creador gracias a las 1.000 conversaciones sintéticas de identidad del SFT, aunque puede añadir detalles inventados alrededor.
-- Capacidad multilingüe: no disponible (entrenado y evaluado solo en inglés).
-- Tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto conversacional multi-turno siguiendo una plantilla de chat con etiquetas de rol en texto plano (`<|system|>`, `<|user|>`, `<|assistant|>`, terminador `<|endoftext|>`).
+- Escritura de código corto y sencillo (por ejemplo, invertir una cadena o comprobar si un número es primo), con fiabilidad limitada en código largo o ambiguo.
+- Conversación en inglés y en hinglish romanizado; las respuestas en hinglish suenan fluidas pero a menudo son incoherentes.
+- Identidad propia: responde llamándose Prajna AI y nombrando a su creador, aunque puede añadir detalles inventados.
+- No dispone de tool calling ni function calling documentado.
+- No dispone de capacidades de agente ni de razonamiento multi-paso documentadas.
+- No dispone de modo thinking, visión ni audio.
+- Sin ajuste de seguridad ni de preferencias.
 
 ## Casos de uso
 
-- Docencia y formación en entrenamiento de LLM: el modelo sirve como ejemplo completo y reproducible de preentrenamiento más SFT con presupuesto mínimo (2x T4, ~24 horas totales), útil en cursos y talleres sobre pipelines de entrenamiento.
-- Banco de pruebas de infraestructura de inferencia: al ser un `LlamaForCausalLM` estándar de 124M, permite validar configuraciones de vLLM, TGI, llama.cpp u Ollama, medir latencia y probar cuantizaciones sin coste apreciable de GPU.
-- Prototipado rápido de interfaces de chat: su plantilla de chat y su tamaño permiten iterar en el diseño de UX conversacional (formato de turnos, prompts de sistema) antes de migrar a un modelo mayor.
-- Generación de código de ejemplo en documentación técnica: para fragmentos cortos y canónicos (invertir una cadena, comprobar primos) puede producir snippets válidos que luego revisa un humano.
-- Experimentos de alineación e identidad: las conversaciones sintéticas de identidad permiten estudiar cómo un SFT pequeño modifica la auto-representación del modelo y comparar versiones (v1, v2, v3) con pérdidas de validación de 1,61, 1,54 y 1,46.
-- Base para fine-tuning específico de dominio: al estar bajo Apache 2.0 y con solo 124M de parámetros, es un punto de partida barato para ajustar tareas acotadas (clasificación ligera vía generación, extracción de campos) en una única GPU de consumo.
-- Evaluación comparativa de tokenizadores y arquitecturas pequeñas: su combinación de tokenizador GPT-2 con arquitectura LLaMA lo hace útil en estudios controlados sobre eficiencia de vocabulario y contexto corto.
+- Docencia y formación en entrenamiento de LLM: sirve como ejemplo reproducible del pipeline completo (preentrenamiento, extensión de contexto y SFT) sobre 2 T4, útil para cursos y talleres que expliquen cada fase con métricas concretas de pérdida y perplejidad.
+- Experimentación académica con modelos de escala reducida: su tamaño de 123,6M permite ejecutar ablaciones (cambios de tokenizer, schedules de LR, composición de datos) en una sola GPU de consumo en horas, no días.
+- Fine-tuning específico de dominio: al ser un `LlamaForCausalLM` estándar con licencia Apache 2.0, se puede reentrenar para tareas acotadas (clasificación de texto, extracción de entidades, respuestas de FAQ) partiendo de los pesos base o de chat.
+- Estudio de multilingüismo inglés-hinglish: permite analizar cómo un modelo pequeño distribuye capacidad entre dos registros lingüísticos y por qué el hinglish romanizado resulta fluido pero incoherente, con datos de validación comparables entre versiones.
+- Prototipado rápido de interfaces conversacionales: para validar plantillas de chat, flujos de prompt y UX de conversación antes de migrar a un modelo mayor, dado su bajo coste de inferencia y su compatibilidad con TGI y endpoints.
+- Evaluación de alucinación en modelos pequeños: su tendencia documentada a afirmar hechos falsos con seguridad (por ejemplo, al preguntar por DSA) lo convierte en un caso de estudio controlado para técnicas de detección de alucinaciones y calibración.
+- Generación de código de ejemplo en entornos educativos: para demostraciones de funciones cortas en Python donde el resultado se revisa manualmente, no para código de producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de entrenamiento: pérdida de validación de 3,30 (perplejidad 27) en preentrenamiento y pérdida de validación sobre tokens de asistente de 1,46 tras el SFT (frente a 1,61 en v1 y 1,54 en v2).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta pérdidas de validación en tokens del asistente sobre conjuntos retenidos (bloques de 1024 tokens; menor es mejor):
+
+| Version | smol-smoltalk val | samvaad (Hinglish) val |
+|---|---|---|
+| v3 (contexto 1024, SFT inglés) | 1,450 | 3,543 |
+| v4 (contexto 1024, + hinglish) | 1,458 | 2,475 |
+| v5 (esta versión, contexto 4096) | 1,415 | 2,318 |
+
+Pérdidas de las fases previas: preentrenamiento con pérdida de validación 3,30 (perplejidad 27); extensión de contexto con pérdida a 4096 tokens reducida de 5,02 a 3,25; SFT con pérdida en tokens del asistente de 2,49 a 1,46.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,25 GB en fp16 (123,6M parámetros x 2 bytes), más overhead de activaciones y caché KV; en la práctica cabe holgadamente en cualquier GPU con 2 GB o más. En fp32 serían unos 0,5 GB.
-- GPU recomendadas: cualquier GPU moderna sirve; el modelo se entrenó en 2x NVIDIA T4, por lo que una sola T4, L4, RTX 3060, RTX 4090, A100 o H100 lo ejecuta sin problemas. Para lotes grandes, A100/H100 aportan margen de throughput.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.), e incluso en CPU para inferencia interactiva.
-- Opciones de despliegue: `transformers` (soporte nativo, tal como documenta el autor), text-generation-inference (el repo está etiquetado como endpoints_compatible), ONNX Runtime (hay pesos ONNX publicados), y potencialmente llama.cpp/Ollama si se generan pesos GGUF, aunque no se documentan conversiones oficiales.
-- Latencia y throughput estimados: no disponible (no se publican medidas).
+- VRAM estimada para inferencia en fp16: aproximadamente 0,25 GB para los pesos (123,6M parámetros × 2 bytes), más overhead de activaciones y caché KV; cabe holgadamente en cualquier GPU con 2 GB o más.
+- En cuantización de 8 bits o 4 bits ocuparía del orden de 0,12-0,06 GB de pesos, aunque el autor no publica versiones cuantizadas.
+- GPU recomendadas: cualquier GPU moderna; el modelo fue entrenado en 2 NVIDIA T4, por lo que una sola T4, RTX 3060, RTX 4090, A100 o H100 lo ejecutan sin problema.
+- Cabe en GPU de consumo, incluidas GTX 1650, RTX 3050 y superiores; también en CPU para inferencia de baja concurrencia.
+- Opciones de despliegue: `transformers` (probado por el autor), text-generation-inference (TGI, etiqueta `text-generation-inference` en el repo) y endpoints compatibles; el repo incluye pesos ONNX. No se documenta soporte explícito de llama.cpp, Ollama ni vLLM.
+- Latencia y throughput: no disponibles en la información proporcionada. Por tamaño, se espera un throughput alto en GPU modernas, pero no hay cifras publicadas.
+- Parámetros de muestreo recomendados por el autor: temperature 0,7, top-k 50, repetition penalty 1,15, `max_new_tokens` 200.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| prajna-ai-124m-chat | 123,6M | 1.024 | Apache 2.0 | en | Entrenado desde cero, sin RLHF/DPO, proyecto didáctico |
-| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 | Apache 2.0 | en (principalmente) | Familia de modelos pequeños de Hugging Face; contexto mayor y más datos de entrenamiento |
-| GPT-2 small (OpenAI) | 124M | 1.024 | MIT | en | Referencia histórica de mismo tamaño; sin ajuste conversacional nativo |
-| TinyLlama-1.1B (opcional, escala superior) | 1,1B | 2.048 | Apache 2.0 | en | Un orden de magnitud más grande; útil como referencia de escalado |
+| prajna-ai-124m-chat | 123,6M | 4.096 | Apache 2.0 | en, hinglish | Entrenado desde cero en 2 T4; sin RLHF; pérdida de validación publicada |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 (versión base) | Apache 2.0 | en (principalmente) | Entrenado con más datos y ajustado con preferencias; sin foco en hinglish |
+| GPT-2 small (OpenAI) | 124M | 1.024 | MIT (pesos) | en | Referencia histórica; sin plantilla de chat nativa |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | multilingüe amplio | Cuatro veces más grande; capacidades superiores pero mayor coste |
 
-Los datos de SmolLM-135M, GPT-2 small y TinyLlama-1.1B provienen de conocimiento general y no de la información proporcionada; los benchmarks comparativos no están disponibles en la documentación del modelo.
+La comparación directa de rendimiento no es posible porque prajna-ai-124m-chat no publica resultados de benchmarks estándar. Frente a SmolLM-135M, de tamaño casi idéntico, la diferencia principal es el volumen de datos de entrenamiento y la presencia de ajuste de preferencias en SmolLM, ausente aquí; a cambio, prajna-ai incluye datos específicos de hinglish y una documentación detallada de cada fase de entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Alucinación elevada: el autor advierte explícitamente de que el modelo afirma hechos erróneos con seguridad. Ejemplo documentado: al preguntar "What is DSA in computer science?" inventa una definición.
-- Conocimiento factual muy limitado: solo ~16 tokens de entrenamiento por parámetro (frente a los ~20 de Chinchilla), lo que deja el conocimiento del mundo muy mermado.
-- Contexto muy corto: 1.024 tokens, insuficiente para documentos largos, conversaciones extensas o bases de código.
-- Solo inglés: no hay soporte ni evaluación en otros idiomas, incluido el castellano.
-- Sin alineación de seguridad: no se aplicó RLHF ni DPO, por lo que no hay garantías de comportamiento seguro ni de rechazo de peticiones dañinas.
-- Código: solo fragmentos cortos y bien especificados suelen ser correctos; el código largo o ambiguo falla con frecuencia.
-- Identidad: responde con el nombre y creador correctos, pero puede añadir detalles inventados; además, los pesos actuales se presentan con el nombre antiguo (kaggle-llm-124m-chat) hasta el siguiente fine-tune.
-- Uso comercial: la licencia Apache 2.0 lo permite, pero el propio autor desaconseja su uso en producción y en contextos factuales, médicos, legales o financieros.
-- No apto como asistente de producción: es un proyecto de aprendizaje; no debe desplegarse en atención al cliente real ni en flujos críticos.
+- **Alucinación elevada**: con unos 20 tokens de preentrenamiento por parámetro, el conocimiento factual es muy limitado; el autor documenta que inventa definiciones (por ejemplo, de DSA) con seguridad.
+- **Auto-descripción parcialmente inventada**: acierta el nombre y el creador, pero puede añadir detalles falsos sobre sí mismo.
+- **Hinglish incoherente**: las respuestas en hindi romanizado suenan fluidas pero a menudo carecen de coherencia; el devanagari no se entrenó y no debe esperarse soporte.
+- **Código poco fiable**: funciones cortas suelen ser correctas; código largo o con especificaciones vagas generalmente no lo es.
+- **Sin ajuste de seguridad ni de preferencias**: no hay RLHF ni DPO, por lo que no existen garantías de comportamiento seguro o alineado.
+- **Sesgos**: no se documentan evaluaciones de sesgo; al entrenarse principalmente con FineWeb-Edu y datos de India, pueden aparecer sesgos de dominio y geográficos no medidos.
+- **Contexto limitado a 4096 tokens**: suficiente para conversaciones cortas, insuficiente para documentos largos o agentes con memoria extensa.
+- **Licencia Apache 2.0**: permite uso comercial y modificaciones, pero el autor desaconseja explícitamente su uso para respuestas factuales, médicas, legales o financieras.
+- **No apto para producción**: el propio autor lo califica como proyecto de aprendizaje, no como asistente de producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/somdevsheel/prajna-ai-124m-chat
-- Modelo base (solo preentrenamiento): https://huggingface.co/somdevsheel/prajna-ai-124m-base
-- Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Dataset de SFT smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Paper, blog o demo adicionales: no disponible en la información proporcionada.
+- Modelo base: https://huggingface.co/somdevsheel/prajna-ai-124m-base
+- Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
+- Dataset samvaad-hi-v1: https://huggingface.co/datasets/sarvamai/samvaad-hi-v1
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

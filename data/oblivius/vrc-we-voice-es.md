@@ -1,104 +1,103 @@
 # oblivius/vrc-we-voice-es
 
 ## Resumen
-vrc-we-voice-es es un modelo de deteccion de palabras clave (keyword spotting) para espanol, publicado por el usuario oblivius dentro del proyecto vrc-WiredExpressions. Se trata de un wav2vec2 afinado con CTC sobre letras, podado de 24 a 16 capas transformer y exportado a ONNX con cuantizacion dinamica int8, lo que reduce el peso del fichero a 254 MB. No es un transcriptor de proposito general, sino un detector de frases registradas por el cliente que debe dispararse cuando esas frases aparecen en audio continuo.
 
-El modelo parte de jonatasgrosman/wav2vec2-large-xlsr-53-spanish (Apache 2.0) y se entrena con Common Voice 19.0, Multilingual Spoken Words Corpus y FLEURS, anadiendo ruido MUSAN en la mitad de las muestras. La innovacion principal es la tabla de pronunciacion `pron.tsv`, que permite registrar una frase por su sonido y no solo por su grafia, mejorando la deteccion de homofonos y variantes ortograficas.
+vrc-we-voice-es es un modelo de deteccion de palabras clave (keyword spotting) para castellano desarrollado por el usuario oblivius, pensado para integrarse en el motor de reconocimiento por voz vrc-WiredExpressions. Se construye sobre jonatasgrosman/wav2vec2-large-xlsr-53-spanish (Apache 2.0), podado a sus 16 capas inferiores de 24, y anade una segunda cabeza de fonemas sobre el mismo codificador, de modo que el modelo transcribe tanto grafemas (41 simbolos) como fonemas IPA (56 simbolos) con marcos de 20 ms. Se distribuye como ONNX cuantizado en int8 con un tamano de 254 MB.
 
-Es relevante porque ofrece un detector de palabras clave ligero, ejecutable en local y en varios idiomas (comparte el codificador convolucional con otros modelos vrc-we-voice), con metricas de falsos positivos por hora sensiblemente mejores que el modelo base en pruebas locales de palabras aisladas y audio concurrido.
+La propuesta tecnica es inusual: en lugar de un unico decodificador CTC de letras, mantiene dos cabezas sobre el mismo encoder y fusiona sus puntuaciones por fotograma para decidir si una frase registrada se ha pronunciado. Esta fusion permite reconocer variantes de pronunciacion y homofonos que un modelo puramente ortografico descartaria, y el coste computacional es practicamente el de un modelo de letras, ya que la cabeza de fonemas es una unica capa lineal.
+
+El modelo esta pensado para reconocimiento de frases cortas en aplicaciones interactivas, no para transcripcion general de audio largo. Su licencia Apache 2.0 y su formato ONNX lo hacen desplegable en entornos de cliente sin dependencias de frameworks de inferencia pesados. La informacion disponible no incluye resultados de benchmarks estandar (WER, MMLU, etc.) ni detalles sobre latencia o throughput.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2 (transformer encoder) con cabeza CTC sobre letras |
-| Parametros totales | no disponible (red podada a 16 capas transformer; repo de 0.5 GB) |
+| Arquitectura | Wav2Vec2 (transformer) con dos cabezas CTC: letras y fonemas |
+| Parametros totales | no disponible (repo de 1,0 GB; ONNX int8 de 254 MB) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventanas de audio; entrenamiento con utterances de 0.5 a 15 s) |
-| Tipos de cuantizacion | int8 dinamica en las MatMul (model.onnx y enc.onnx) |
-| Idiomas soportados | es (espanol) |
-| Licencia | Apache 2.0 (pesos y configuracion); pron.tsv bajo CC BY 4.0 |
-| Formato de pesos | ONNX (model.onnx, enc.onnx), vocab.json, config.json, voice.json, pron.tsv |
+| Longitud de contexto | no disponible (marcos de 20 ms; ventana de decision de 0,6 s) |
+| Tipos de cuantizacion | int8 dinamica sobre las MatMul (ONNX) |
+| Idiomas soportados | es (castellano) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (`model.onnx`, `enc.onnx`, `fx.onnx`); JSON para vocabularios y configuracion |
 
 ## Arquitectura y entrenamiento
-El modelo es un wav2vec2 afinado con CTC sobre letras, derivado de jonatasgrosman/wav2vec2-large-xlsr-53-spanish. Se poda a las 16 capas inferiores de 24 y se entrena con todas las capas y la cabeza activas. El codificador convolucional de rasgos queda congelado tras el afinado, de modo que se comparte entre todos los modelos vrc-we-voice y se expone por separado en `fx.onnx`; `enc.onnx` contiene la parte restante, de forma que `enc.onnx(fx.onnx(x))` equivale exactamente a `model.onnx(x)`. La salida son logits de forma `[batch, frames, 41]` con frames de 20 ms, entrada float32 a 16 kHz mono con media cero y varianza unitaria.
 
-El entrenamiento usa lotes de 40 s de audio con 2 acumulaciones por paso, AdamW, 10 % de warm-up y decaimiento lineal. Los datos son Common Voice 19.0 (280.781 utterances, CC0 1.0), Multilingual Spoken Words Corpus (446.571 utterances, CC BY 4.0) y FLEURS train (2.205 utterances, CC BY 4.0), con ruido MUSAN (CC BY 4.0) en la mitad de las utterances a 5-20 dB SNR y un 5 % de muestras solo de ruido con objetivo vacio. La primera etapa (poda a 16 capas, 12.000 pasos, 3e-5) se conserva; la continuacion de 4.000 pasos a 1e-5 con palabras aisladas muestreadas al 0,35 es la version final (mejora de +12,3 en palabras con ruido); una segunda continuacion de 6.000 pasos a 1,5e-5 se descarto (neto -17,8).
+El modelo parte de jonatasgrosman/wav2vec2-large-xlsr-53-spanish, fine-tuneado con CTC sobre letras y podado a las 16 capas inferiores de 24. Sobre esa base se anaden dos etapas de 10.000 pasos cada una: en la primera se incorpora una cabeza de fonemas que se entrena junto con el encoder y la cabeza de letras. El codificador convolucional de caracteristicas queda congelado durante el fine-tuning, lo que permite cortar el modelo en dos ficheros (`fx.onnx` y `enc.onnx`) y compartir la parte convolucional entre modelos de distintos idiomas de la misma familia vrc-we-voice.
 
-La tabla `pron.tsv` contiene 30.000 palabras con su sonido en IPA (CharsiuG2P sin marcas de acento, silaba ni enlace) y sus variantes ortograficas (2.363 en total), generadas por un transformer de caracteres de 3+3 capas y anchura 256 entrenado de sonido a grafia con beam 8. Permite registrar una frase por su sonido ademas de por su grafia.
+Los datos de entrenamiento combinan Common Voice 19.0 (280.781 enunciados, CC0), Multilingual Spoken Words Corpus (446.571, CC BY 4.0), FLEURS train (2.205, CC BY 4.0), Multilingual LibriSpeech (220.699, CC BY 4.0) y VoxPopuli transcrito (50.919, CC0). Las etiquetas de fonemas se generan con CharsiuG2P (MIT) a partir de un lexico de 135.836 palabras; 920.043 enunciados disponen de transcripcion fonetica y el resto entrena solo la cabeza de letras. Se anaden ruido y salas de MUSAN y FSD50K. La fusion de las dos cabezas puntua cada fotograma con el maximo alcanzado en los ultimos 0,6 s, combina 0,7 de la cabeza de letras y 0,3 de la de fonemas cuando ambas coinciden, y penaliza 0,4 cuando solo una detecta la frase; los umbrales de disparo son -0,537 para una palabra y -0,478 para varias.
 
 ## Capacidades
-- Deteccion de palabras clave y frases registradas por el cliente en audio continuo, con umbral de disparo configurable (por defecto -0,6 en `voice.json`).
-- Reconocimiento de voz CTC sobre letras en espanol (salida de logits por frame de 20 ms).
-- Deteccion por sonido ademas de por grafia: homofonos y variantes ortograficas se agrupan bajo la misma frase registrada.
-- Inferencia en dos etapas (`fx.onnx` + `enc.onnx`) para reutilizar el codificador convolucional entre idiomas.
-- Ejecucion en ONNX Runtime con cuantizacion int8 dinamica.
-- No soporta tool calling, function calling, agentes, vision, audio generativo ni modo de razonamiento explicito; es un modelo puramente acustico y discriminativo.
+
+- Deteccion de palabras clave y frases cortas en castellano a partir de audio mono a 16 kHz.
+- Salida CTC dual: logits de letras (41 simbolos) y logits de fonemas IPA (56 simbolos) por fotograma de 20 ms.
+- Reconocimiento de variantes de pronunciacion y homofonos mediante la tabla `pron.tsv` y la fusion de cabezas.
+- Uso de lexico de pronunciaciones (`lexicon.tsv`) para mapear palabras a fonemas.
+- Inferencia en ONNX Runtime con cuantizacion int8 dinamica, sin necesidad de GPU.
+- Reutilizacion del extractor convolucional (`fx.onnx`) entre idiomas de la familia vrc-we-voice.
+- No soporta tool calling, agentes, vision ni audio generativo; es exclusivamente un modelo de reconocimiento de voz por CTC.
 
 ## Casos de uso
-- Activacion por voz en dispositivos empotrados: el modelo int8 de 254 MB puede ejecutarse en local para detectar una palabra de activacion concreta antes de despertar un asistente mayor, con umbral ajustable y bajo coste de falsos positivos en audio no hablado (0,05 por frase-hora).
-- Deteccion de comandos en aplicaciones de accesibilidad: registrar frases como "abrir menu" o "detener" y disparar acciones cuando se pronuncian, con tolerancia a homofonos gracias a `pron.tsv`.
-- Monitorizacion de emisiones de radio o podcast: registrar terminos de marca o nombres propios y contar apariciones en audio continuo, usando la deteccion por sonido para capturar variantes de pronunciacion.
-- Filtrado previo en pipelines de ASR: usar el detector como etapa de cribado para decidir que segmentos de audio se envian a un transcriptor completo, reduciendo coste computacional.
-- Sistemas de subtitulado con palabras clave resaltadas: detectar terminos concretos en una transcripcion en curso para resaltarlos o enlazarlos, aprovechando la salida CTC por frame.
-- Juguetes y dispositivos interactivos: activacion por frases registradas en hardware con CPU, sin GPU, gracias al formato ONNX int8 y a la separacion en dos ficheros para clientes multilingues.
-- Investigacion en keyword spotting: punto de partida podado y cuantizado para comparar estrategias de deteccion por sonido frente a deteccion por grafia con las mismas condiciones de evaluacion.
+
+- Activacion por palabra clave en asistentes de voz: el modelo dispara una frase registrada cuando la fusion de cabezas supera el umbral, con una ventana de decision de 0,6 s que reduce falsos positivos en entornos ruidosos.
+- Control por voz de aplicaciones de escritorio o moviles: al ser ONNX int8 de 254 MB, puede embeberse en un cliente sin servidor de inferencia y ejecutarse en CPU.
+- Reconocimiento de comandos con variantes de pronunciacion: la tabla `pron.tsv` permite que un mismo comando se detecte aunque el usuario lo pronuncie con otra grafia o como homofono.
+- Filtrado de audio en pipelines de transcripcion: usar la cabeza de letras como etapa previa para decidir si un segmento contiene una frase de interes antes de enviarlo a un ASR completo.
+- Sistemas multilingues con deteccion por idioma: al compartir `fx.onnx` con los demas modelos vrc-we-voice, un cliente puede escuchar en varios idiomas ejecutando el extractor convolucional una sola vez por ventana.
+- Investigacion en keyword spotting y CTC fonetico: el par de cabezas y la fusion documentada en `voice.json` sirven como referencia reproducible para experimentos de deteccion con fonemas.
+- Accesibilidad: comandos de voz para usuarios con dificultades motoras, con umbrales ajustables y bajo coste de despliegue en hardware de consumo.
 
 ## Benchmarks y rendimiento
-Los datos son pruebas locales de keyword spotting del autor, no benchmarks estandar. Ambos modelos se ejecutan en int8 con su propio umbral (este modelo -0,6; el base -0,75). Se compara con facebook/wav2vec2-xlsr-53-espeak-cv-ft.
 
-| Exito % / falsos positivos por hora | wav2vec2-xlsr-53-espeak-cv-ft (base) | vrc-we-voice-es |
-|---|---|---|
-| Frases | 94,5 / 0,48 | 95,4 / 0,18 |
-| Frases con ruido | 95,4 / 0,42 | 93,6 / 0,24 |
-| Palabras | 56,8 / 2,12 | 80,5 / 0,65 |
-| Palabras con ruido | 51,6 / 1,79 | 80,5 / 0,49 |
-| Audio concurrido | 70,6 / 0,92 | 86,0 / 0,31 |
-| Audio no hablado | no disponible / 0,21 | no disponible / 0,05 |
-
-Efecto de la tabla de pronunciacion en conjuntos de palabras locales limpias:
+La model card solo publica metricas internas de la tabla de pronunciacion, no benchmarks estandar de ASR:
 
 | Metrica | Sin tabla | Con tabla |
 |---|---|---|
-| Homofonos detectados como otro miembro del grupo, % | 48 | 69 |
-| Variantes ortograficas detectadas como otro miembro del grupo, % | 34 | 54 |
-| Falsos positivos por frase-hora en los conjuntos de palabras | 0,35 | 0,35 |
+| Homofonos reconocidos como otro miembro del grupo, % | 48 | 69 |
+| Variantes ortograficas reconocidas como otro miembro del grupo, % | 34 | 54 |
+| Falsos disparos por frase-hora en los conjuntos de palabras | 0,35 | 0,35 |
 
-Las pruebas de frases usan una frase por oracion del test de FLEURS; la variante con ruido anade ruido a 10 dB SNR. Las de palabras usan clips aislados del test de Multilingual Spoken Words de hablantes no vistos en entrenamiento. La prueba de audio concurrido registra todas las frases a la vez; la de audio no hablado usa musica de MUSAN y sonidos vocales de VocalSound.
+No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma explicita; el fichero int8 pesa 254 MB, por lo que cabe en memoria de CPU y en GPUs de gama baja.
-- GPU recomendadas: no disponible; al ser ONNX int8, puede ejecutarse en CPU, GPU integrada o GPUs consumer como RTX 3060 o superiores sin requisitos especificos documentados.
-- Cabe en GPU consumer: si, dado el tamano del modelo; no se documentan requisitos minimos.
-- Opciones de despliegue: ONNX Runtime (formato nativo); no se documentan exportaciones a vLLM, llama.cpp, Ollama o TGI.
+
+- VRAM estimada: no disponible; el modelo ONNX int8 ocupa 254 MB y puede ejecutarse en CPU sin GPU.
+- GPU recomendadas: no disponible; al ser un modelo pequeno y cuantizado, cualquier GPU con soporte ONNX Runtime es suficiente, pero no se especifican modelos concretos.
+- Cabe en GPU de consumo: si, por el tamano del fichero int8, aunque no se detalla que GPUs concretas se han probado.
+- Opciones de despliegue: ONNX Runtime (formato nativo); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en la prueba local | Licencia | Formato |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vrc-we-voice-es | no disponible (16 capas, podado) | no disponible | 95,4 % frases / 80,5 % palabras | Apache 2.0 (pesos) | ONNX int8 |
-| jonatasgrosman/wav2vec2-large-xlsr-53-spanish | no disponible (24 capas) | no disponible | no evaluado en la prueba local | Apache 2.0 | safetensors |
-| facebook/wav2vec2-xlsr-53-espeak-cv-ft | no disponible | no disponible | 94,5 % frases / 56,8 % palabras | no disponible | no disponible |
+| oblivius/vrc-we-voice-es | no disponible (16 capas, int8 254 MB) | no disponible (marcos de 20 ms) | metricas internas de homofonos y falsos disparos | Apache 2.0 | Hugging Face, ONNX |
+| jonatasgrosman/wav2vec2-large-xlsr-53-spanish | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| oblivius/vrc-we-voice-en | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+
+No se dispone de datos de benchmarks comparables entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- Modelo especializado en deteccion de palabras clave, no en transcripcion de proposito general; la salida es CTC sobre letras y requiere un cliente que registre frases y aplique umbral.
-- Solo soporta espanol.
-- Las metricas son pruebas locales del autor, no benchmarks estandar; la comparacion con el modelo base usa umbrales distintos para cada uno.
-- Riesgo de falsos positivos en audio concurrido (0,31 por frase-hora) y en homofonos; la tabla de pronunciacion mejora la deteccion pero no elimina la ambiguedad (31 % de homofonos no detectados como grupo correcto).
-- La tabla `pron.tsv` tiene licencia CC BY 4.0, distinta de la Apache 2.0 de los pesos; conviene revisar atribuciones si se redistribuye.
-- El modelo se entrena con utterances de 0,5 a 15 s; no se documenta comportamiento con ventanas mas largas.
-- No se documentan sesgos demograficos ni de acento; el rendimiento puede variar con hablantes fuera de la distribucion de Common Voice y Multilingual Spoken Words.
-- La cuantizacion int8 dinamica puede degradar ligeramente la precision respecto al modelo en float; no se publican metricas comparativas float frente a int8.
+
+- Modelo especializado en deteccion de frases cortas, no en transcripcion de audio largo ni en ASR general.
+- Solo soporta castellano; no se declaran capacidades multilingues.
+- Las frases con palabras ausentes del lexico y las de menos de cinco letras se deciden unicamente por la cabeza de letras, lo que reduce la cobertura de la fusion.
+- Los umbrales de disparo estan ajustados para igualar los falsos positivos de la version anterior; cambios en el dominio acustico pueden alterar la tasa real de falsos disparos.
+- Riesgo de alucinacion en la decodificacion CTC ante audio ruidoso o fuera de dominio; no se documentan tasas de error en condiciones adversas.
+- La licencia Apache 2.0 permite uso comercial, pero las dependencias de datos (CharsiuG2P, WikiPron, MUSAN, FSD50K) tienen sus propias condiciones que conviene revisar.
+- No se documentan sesgos demograficos ni de acento; el rendimiento puede variar segun la variedad de castellano.
+- La informacion sobre latencia, throughput y consumo de recursos es insuficiente para planificar produccion a gran escala.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/oblivius/vrc-we-voice-es
+
+- Modelo en Hugging Face: https://huggingface.co/oblivius/vrc-we-voice-es
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-spanish
-- Modelo de comparacion: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
 - Modelo hermano en ingles: https://huggingface.co/oblivius/vrc-we-voice-en
-- Common Voice 19.0: https://commonvoice.mozilla.org
+- Common Voice: https://commonvoice.mozilla.org
 - Multilingual Spoken Words Corpus: https://mlcommons.org/datasets/multilingual-spoken-words/
 - FLEURS: https://huggingface.co/datasets/google/fleurs
-- MUSAN: https://www.openslr.org/17/
+- Multilingual LibriSpeech: https://huggingface.co/datasets/facebook/multilingual_librispeech
+- VoxPopuli: https://github.com/facebookresearch/voxpopuli
 - CharsiuG2P: https://github.com/lingjzhu/CharsiuG2P
-- Exportacion ONNX de CharsiuG2P: https://huggingface.co/klebster/g2p_multilingual_byT5_tiny_onnx
+- MUSAN: https://www.openslr.org/17/
+- FSD50K: https://zenodo.org/records/4060432

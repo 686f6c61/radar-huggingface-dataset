@@ -1,71 +1,53 @@
 # jalaldoust/tautos-124m
 
-# Tautos-124m (jalaldoust)
-
 ## Resumen
 
-Tautos-124m es un modelo de lenguaje de 124.475.904 parámetros con la arquitectura GPT-2 124M estándar (12 capas, 768 de anchura, 12 cabezas de atención, 1.024 tokens de contexto), publicado por el autor jalaldoust con la intención de que la comunidad pueda evaluar de forma independiente un resultado de eficiencia de muestreo en fine-tuning por refuerzo. El modelo se ha preentrenado con la "receta Tautos" sobre 100 millones de tokens de FineWeb-Edu, exactamente los mismos tokens que el baseline con el que se compara.
+Tautos 124M es un modelo de lenguaje de tipo GPT-2 con 124.475.904 parametros, desarrollado por el autor de Hugging Face `jalaldoust` en el contexto del proyecto Tautos (tautos.io). No es un modelo pensado para uso general, sino un artefacto de investigacion liberado para verificar de forma independiente una afirmacion concreta: que un modelo preentrenado con el algoritmo Tautos, inspirado en teoria de transportabilidad causal, requiere menos senal de ajuste fino para alcanzar el mismo rendimiento que un modelo entrenado con la receta estandar.
 
-La relevancia no está en el modelo en sí —es un GPT-2 pequeño, en inglés y sin ajuste por instrucciones— sino en el protocolo de evaluación que lo acompaña: un script (`rl_eval.py`) que ejecuta GRPO sobre una tarea de sentimiento con reseñas de IMDB y un verificador basado en `lvwerra/distilbert-imdb`, y un fichero `reference_results.json` con las curvas de recompensa de este modelo y del baseline. Según esos datos, Tautos necesita entre 1,57x y 1,77x menos llamadas al verificador para alcanzar una recompensa retenida de 2,5 en tamaños de prompt de 64 a 4.096, ventaja que se diluye (1,07x y 1,01x) a partir de 8.192 prompts.
+La arquitectura es exactamente la de GPT-2 124M (12 capas, 768 de anchura, 12 cabezas de atencion, contexto de 1.024 tokens) y se carga con el `GPT2LMHeadModel` estandar de Transformers. El tokenizador es el BPE de GPT-2, con la matriz de embeddings rellenada hasta 50.304 filas (los ids 50.257 y superiores no se usan). El preentrenamiento se hizo sobre 100 millones de tokens de FineWeb-Edu, los mismos tokens que el modelo de comparacion `jalaldoust/tautos-baseline-124m`, entrenado con la receta nanoGPT.
 
-El método de preentrenamiento es propietario y no se describe ni en la model card ni en ningún otro sitio: el repositorio contiene únicamente los pesos preentrenados y el protocolo de evaluación, con licencia "evaluation-only". Esto convierte al modelo en un artefacto de verificación de una afirmación comercial, no en una base reutilizable para producción.
+Su relevancia es metodologica, no de producto: publica un protocolo reproducible de evaluacion con GRPO sobre IMDB y un script (`rl_eval.py`) para replicar la comparacion. La licencia es "evaluation-only", lo que restringe explicitamente el uso comercial. El modelo solo soporta ingles y su ventana de contexto es corta (1.024 tokens), por lo que no compite con modelos generativos modernos en capacidades, sino en la hipotesis cientifica que ilustra.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 124M estándar (`GPT2LMHeadModel`): 12 capas, 768 de anchura, 12 cabezas, 1.024 de contexto |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (12 capas, 768 de anchura, 12 cabezas), `GPT2LMHeadModel` estandar |
 | Parametros totales | 124.475.904 |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | no disponible; el autor solo publica pesos fp32 en safetensors y no distribuye versiones cuantizadas |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | `other`, con nombre "evaluation-only" (ver `LICENSE.md` en el repositorio) |
-| Formato de pesos | safetensors, fp32 (tamaño del repo: 0,5 GB) |
-| Tokenizador | GPT-2 BPE (`gpt2`); matriz de embeddings ampliada a 50.304 filas, los ids 50.257 y superiores no se usan |
-| Datos de preentrenamiento | 100M tokens de HuggingFaceFW/fineweb-edu, muchas épocas |
-| Pérdida de validación | 3,756 nats/token en 4M tokens retenidos de FineWeb-Edu (baseline: 3,744) |
-| Pipeline | text-generation |
+| Tipos de cuantizacion | no disponible (pesos publicados en fp32; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ingles (en) |
+| Licencia | evaluation-only (licencia "other", ver `LICENSE.md`) |
+| Formato de pesos | safetensors (fp32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only idéntico al GPT-2 de 124M de OpenAI: 12 bloques, dimensión de modelo 768, 12 cabezas de atención y ventana de contexto de 1.024 tokens. No hay innovaciones arquitectónicas: el modelo se carga con `GPT2LMHeadModel` sin modificaciones y el tokenizador es el BPE estándar de GPT-2. El único detalle no estándar es que la matriz de embeddings está rellenada hasta 50.304 filas, con los ids 50.257 en adelante sin uso, presumiblemente por requisitos de alineación del entrenamiento.
+El modelo es un GPT-2 124M sin modificaciones estructurales: 12 bloques transformer con atencion multi-cabeza causal y capas feed-forward, con contexto maximo de 1.024 tokens. La diferencia respecto a un GPT-2 convencional no esta en la arquitectura, sino en el procedimiento de preentrenamiento. Segun la model card, Tautos es un algoritmo de preentrenamiento inspirado en teoria de transportabilidad causal, y el modelo resultante puede usarse en procedimientos de ajuste fino convencionales requiriendo "mucha menos senal de ajuste fino" para el mismo rendimiento.
 
-El preentrenamiento usa 100 millones de tokens de FineWeb-Edu —el mismo conjunto y el mismo número de tokens que el baseline— durante muchas épocas. El baseline es la configuración nanoGPT: AdamW, lotes de 0,5M tokens, schedule coseno y mejor checkpoint por pérdida de validación. La diferencia entre ambos es exclusivamente la receta de preentrenamiento, que el autor declara propietaria y no describe. No se documenta ningún ajuste posterior (RLHF, DPO, SFT); el modelo es una base de lenguaje pura. La pérdida de validación es ligeramente peor que la del baseline (3,756 frente a 3,744 nats/token), de modo que la ventaja declarada no proviene de un mejor modelado del lenguaje sino de una representación que se adapta con menos muestras en la fase de RL.
+El corpus de preentrenamiento son 100 millones de tokens de FineWeb-Edu, identicos a los del modelo de comparacion entrenado con la receta nanoGPT. El coste de preentrenamiento se declara entre 20 y 100 veces el de la receta estandar para el mismo tamano de modelo y corpus, un dato relevante para valorar el trade-off. No se documentan en la informacion disponible detalles sobre RLHF, DPO ni tecnicas de decodificacion especulativa; el ajuste con RL aparece solo en el protocolo de evaluacion (GRPO via TRL con penalizacion KL de 0,05 respecto al modelo inicial, learning rate 1e-5, temperatura 1 y 8 completaciones de 32 tokens por prompt).
 
 ## Capacidades
 
-- Generación de texto autorregresiva en inglés, como modelo base sin ajuste por instrucciones.
-- Continuación de prompts y modelado de lenguaje genérico; no mantiene formato de chat ni sigue instrucciones de sistema.
-- Adaptabilidad a tareas de clasificación o sentimiento mediante fine-tuning supervisado o por refuerzo, que es el escenario evaluado en la model card.
-- Fine-tuning por RL con GRPO: el repositorio incluye `rl_eval.py`, que entrena contra un verificador externo (`lvwerra/distilbert-imdb`) usando como recompensa el logit POSITIVE del clasificador sobre prompt más completación.
-- Soporte de tool calling / function calling: no disponible; el modelo no ha sido entrenado para ello.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no; solo inglés según la model card.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto autoregresiva en ingles, con el comportamiento estandar de un GPT-2 124M.
+- Ajuste fino convencional: compatible con el pipeline de Transformers y con procedimientos estandar de fine-tuning supervisado.
+- Ajuste fino con RL: el protocolo publicado usa GRPO sobre un conjunto fijo de prompts con recompensa de un clasificador de sentimiento.
+- Evaluacion reproducible: incluye `rl_eval.py` y `reference_results.json` para replicar la comparacion frente al baseline.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Verificación independiente del resultado de eficiencia de muestreo: clonar el repositorio, instalar `requirements.txt` y ejecutar `python rl_eval.py --model jalaldoust/tautos-124m --budget 512 --passes 32` para reproducir la curva de recompensa retenida y compararla con `reference_results.json`. El modelo está pensado exactamente para esto.
-- Investigación en eficiencia de muestreo en RL: sirve como punto de partida para estudiar cuántas llamadas a un verificador necesita un modelo pequeño para saturar una recompensa, con la ventaja de que el baseline y las curvas de referencia están publicados.
-- Ablaciones de recetas de preentrenamiento a bajo coste: con 124M parámetros y 100M tokens de entrenamiento, cualquier experimento de preentrenamiento o de schedule se puede repetir en una sola GPU, usando este checkpoint como referencia pública.
-- Docencia y formación en pipelines de transformers: el modelo se carga en tres líneas con `GPT2LMHeadModel` y `GPT2TokenizerFast`, y su tamaño (0,5 GB en fp32) permite ejecutar ejemplos completos de generación, evaluación y fine-tuning en un portátil.
-- Pruebas de integración de infraestructura de inferencia: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, es útil como modelo de humo para validar despliegues TGI o endpoints compatibles antes de mover cargas mayores.
-- Experimentos de control de sentimiento y steering: el par prompt de 12 tokens de reseña de IMDB más verificador DistilBERT-IMDB constituye un banco reproducible para probar técnicas de control de la salida sin necesidad de anotación humana.
-- Estudio comparativo de tokenizadores y embeddings: la ampliación de la matriz de embeddings a 50.304 filas permite analizar el efecto del padding de vocabulario en modelos pequeños.
+- Verificacion cientifica del algoritmo Tautos: replicar el experimento de GRPO sobre IMDB con `rl_eval.py` y comparar el numero de llamadas al verificador necesarias para alcanzar una recompensa retenida de 2,5 frente al baseline. Es el uso principal y el motivo declarado de la publicacion.
+- Investigacion en eficiencia de muestra: estudiar por que un modelo preentrenado con un coste 20-100 veces mayor rinde mejor con menos senal de ajuste fino, midiendo la relacion entre presupuesto de verificador y recompensa.
+- Experimentos de ajuste fino supervisado de bajo coste: al ser un GPT-2 124M estandar, cabe en una sola GPU consumer y sirve para probar hipotesis de transferencia con pocos ejemplos etiquetados.
+- Extension del protocolo a otras tareas: el script permite pasar `--dataset`, `--text_field`, `--reward_model` y `--positive_label` para usar cualquier dataset de texto y cualquier clasificador de secuencias como funcion de recompensa.
+- Docencia y divulgacion sobre RLHF/GRPO: el modelo y su baseline permiten montar practicas reproducibles de ajuste con refuerzo en unas 15 minutos por ejecucion en una A100.
+- Reproducibilidad de resultados: usar `reference_results.json` como referencia para validar implementaciones propias de GRPO o de evaluacion con recompensa retenida sobre 512 resenas de test de IMDB.
 
 ## Benchmarks y rendimiento
 
-El autor no publica MMLU, HumanEval, GSM8K ni benchmarks estándar. El único dato de rendimiento es la pérdida de validación y la tabla de eficiencia de muestreo en RL.
-
-Pérdida de validación (4M tokens retenidos de FineWeb-Edu):
-
-| Modelo | Pérdida (nats/token) |
-|---|---|
-| Baseline (receta GPT-2 estándar, nanoGPT) | 3,744 |
-| Tautos-124m | 3,756 |
-
-Llamadas al verificador necesarias para alcanzar por primera vez una recompensa retenida de 2,5 (P(positivo) ≈ 0,98; el clasificador satura en ~2,95). Presupuesto de 8 completaciones por prompt y pasada:
+La model card no publica resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K). El unico resultado publicado es el numero de llamadas al verificador necesarias para alcanzar por primera vez una recompensa retenida de 2,5 en IMDB con GRPO (una semilla):
 
 | Prompts | Baseline | Tautos | Ratio |
 |---|---|---|---|
@@ -74,55 +56,46 @@ Llamadas al verificador necesarias para alcanzar por primera vez una recompensa 
 | 256 | 46,2k | 29,5k | 1,57x |
 | 512 | 47,0k | 28,2k | 1,66x |
 | 1.024 | 45,6k | 28,6k | 1,59x |
-| 2.048 | 47,2k | 29,6k | 1,59x |
-| 4.096 | 55,0k | 31,1k | 1,77x |
-| 8.192 | 58,7k | 54,8k | 1,07x |
-| 16.384 | 108,5k | 107,6k | 1,01x |
 
-Advertencias del propio autor: se trata de una sola semilla, las completaciones muestreadas introducen ruido de centésimas en la recompensa, y a partir de 8.192 prompts ambos modelos alcanzan el umbral en una o dos pasadas, por lo que la comparación es poco precisa en ese rango.
+Segun el autor, en niveles de recompensa mas bajos el ratio es mayor, hasta 2,4x. El fichero `reference_results.json` contiene la recompensa retenida tras cada pasada para ambos modelos, incluidos los rangos de 2.048 a 16.384 prompts.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: los pesos en fp32 ocupan aproximadamente 0,5 GB, por lo que la inferencia cabe holgadamente en 2 GB de VRAM (estimación a partir del recuento de parámetros; el autor no publica cifras de VRAM).
-- GPU recomendadas para inferencia: cualquier GPU consumer con 2 GB o más; una RTX 3060, RTX 4060 o superior es más que suficiente. No se requiere A100 ni H100 para servir el modelo.
-- Memoria en bf16/fp16: alrededor de 0,25 GB de pesos, más caché KV para 1.024 tokens de contexto, insignificante frente a los pesos (estimación).
-- Protocolo de evaluación RL: el autor indica que una ejecución con 512 prompts y 32 pasadas tarda unos 15 minutos en una A100. No se documenta el rendimiento en GPUs consumer para este protocolo, que además requiere cargar el verificador DistilBERT-IMDB.
-- Opciones de despliegue: `transformers` es la vía documentada. El modelo está etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y endpoints tipo Inference Endpoints, aunque no se aportan configuraciones. No se publican ficheros GGUF ni recetas para llama.cpp u Ollama; vLLM no está documentado en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB de pesos, mas overhead de activaciones y KV cache; en la practica cabe holgadamente en cualquier GPU con 4 GB o mas.
+- En cuantizacion de 8 bits o 4 bits el modelo ocuparia del orden de 125-250 MB, aunque no se publican pesos cuantizados oficiales.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente para inferencia; el autor reporta unas 15 minutos por ejecucion de evaluacion en una A100.
+- Despliegue: transformers de forma nativa; compatible con text-generation-inference segun los tags del repositorio. No se documentan recetas para vLLM, llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tautos-124m | 124,5M | 1.024 | evaluation-only | Receta de preentrenamiento propietaria orientada a eficiencia de muestreo en RL | Pesos safetensors fp32 en Hugging Face |
-| Baseline nanoGPT (misma arquitectura y tokens) | 124,5M | 1.024 | no disponible en la información proporcionada | Receta GPT-2 estándar (AdamW, lotes de 0,5M tokens, schedule coseno) | Referenciado en la model card; no se publica un repositorio aparte |
-| GPT-2 124M original (OpenAI) | 124M | 1.024 | MIT | Modelo base preentrenado en WebText | Ampliamente disponible en Hugging Face |
-| SmolLM-135M | 135M | 2.048 | Apache-2.0 | Modelo base pequeño orientado a despliegue en dispositivo | Disponible en Hugging Face |
+| Tautos 124M | 124,5M | 1.024 | 100M tokens FineWeb-Edu con Tautos | evaluation-only | Hugging Face |
+| tautos-baseline-124m | 124,5M (misma arquitectura) | 1.024 | 100M tokens FineWeb-Edu con receta nanoGPT | no disponible | Hugging Face |
+| GPT-2 124M original (OpenAI) | 124M | 1.024 | WebText, receta original | MIT | Hugging Face, OpenAI |
 
-Nota: los datos de GPT-2 124M original y SmolLM-135M proceden de conocimiento general sobre esos modelos y no están verificados en la información proporcionada por el autor; se incluyen solo como referencia de categoría. Frente a ellos, la única ventaja documentada de Tautos-124m es la reducción de llamadas al verificador en el protocolo GRPO descrito, no una mejora en perplejidad ni en capacidades generales.
+La comparacion relevante es interna: Tautos 124M frente a su baseline nanoGPT, que comparten arquitectura, tokenizador y tokens de preentrenamiento, y difieren solo en el algoritmo. Frente al GPT-2 original, el modelo de Tautos se entrena con un corpus mucho menor (100M tokens frente a los aproximadamente 40 GB de WebText) y con un coste de computo declarado 20-100 veces superior al de la receta estandar; no se publican comparaciones de rendimiento generativo frente a GPT-2 original.
 
 ## Limitaciones y advertencias
 
-- Licencia "evaluation-only": está pensada para evaluar la afirmación del autor. El uso comercial, el reentrenamiento y la redistribución quedan restringidos; hay que leer `LICENSE.md` antes de cualquier uso que no sea de evaluación.
-- Método de preentrenamiento propietario y no descrito: el resultado no es reproducible. La afirmación de eficiencia de muestreo solo puede comprobarse empíricamente con el protocolo incluido, no reconstruirse.
-- Modelo base sin ajuste por instrucciones: no sigue instrucciones, no mantiene formato de chat, no soporta tool calling ni razonamiento multi-paso. No es apto para asistentes directos.
-- Contexto de 1.024 tokens: insuficiente para documentos largos, conversaciones multi-turno extensas o código con mucho contexto.
-- Solo inglés: cualquier uso en castellano queda fuera de lo declarado por el autor.
-- Entrenado con 100M tokens: conocimiento del mundo muy limitado y tendencia alta a la alucinación y a la incoherencia en temas especializados.
-- Pérdida de validación ligeramente peor que el baseline (3,756 frente a 3,744): la ventaja declarada es específica de la fase de RL, no del modelado del lenguaje.
-- Evidencia limitada: una sola semilla, ruido de centésimas en la recompensa y comparación poco fiable a partir de 8.192 prompts, donde ambos modelos saturan.
-- Dependencia del verificador: la métrica se apoya en `lvwerra/distilbert-imdb`, un clasificador de sentimiento que satura en ~2,95; los resultados están acotados por los sesgos y errores de ese clasificador y por el dominio de IMDB.
-- Sin cuantizaciones oficiales ni datos de rendimiento en producción (latencia, throughput, VRAM) publicados por el autor.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de uso independiente por parte de terceros.
+- Licencia "evaluation-only": no esta permitido el uso comercial; el modelo se libera exclusivamente para evaluacion e investigacion.
+- Modelo de 124M parametros y 100M tokens de preentrenamiento: su capacidad generativa y de conocimiento factual es muy limitada en terminos absolutos.
+- Ventana de contexto de solo 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Solo ingles; no hay soporte multilingue documentado.
+- Riesgo elevado de alucinacion y de generar texto incoherente en dominios fuera de la distribucion de FineWeb-Edu.
+- Los resultados publicados provienen de una unica semilla y de una unica tarea (sentimiento en IMDB); la generalizacion de la ventaja de eficiencia de muestra a otras tareas no esta demostrada en la informacion disponible.
+- No se documentan sesgos especificos ni evaluaciones de seguridad; al derivar de FineWeb-Edu, hereda los sesgos de ese corpus.
+- El coste de preentrenamiento declarado (20-100x) implica que la ventaja en ajuste fino no sale gratis en computo total.
+- No se publican pesos cuantizados ni integraciones listas para produccion (vLLM, llama.cpp, Ollama).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jalaldoust/tautos-124m
-- Sitio del autor con el resultado de eficiencia de muestreo: https://tautos.io
+- Modelo baseline: https://huggingface.co/jalaldoust/tautos-baseline-124m
+- Proyecto Tautos: https://tautos.io
+- Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset de evaluacion: https://huggingface.co/datasets/stanfordnlp/imdb
+- Modelo de recompensa: https://huggingface.co/lvwerra/distilbert-imdb
+- Licencia: https://huggingface.co/jalaldoust/tautos-124m/blob/main/LICENSE.md
 - Contacto del autor: kasra@tautos.io
-- Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Dataset de evaluación IMDB: https://huggingface.co/datasets/stanfordnlp/imdb
-- Verificador de recompensa DistilBERT-IMDB: https://huggingface.co/lvwerra/distilbert-imdb
-- Tokenizador GPT-2: https://huggingface.co/gpt2
-- Configuración nanoGPT citada como baseline (referencia externa, no enlazada en la model card): https://github.com/karpathy/nanoGPT
-- Ficheros del repositorio no enlazados individualmente en la información disponible: `rl_eval.py`, `reference_results.json`, `requirements.txt`, `LICENSE.md`

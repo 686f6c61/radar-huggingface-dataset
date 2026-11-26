@@ -2,115 +2,117 @@
 
 ## Resumen
 
-AADD v3 (Automatic Audio Degradation Detection) es un modelo de clasificación de audio desarrollado por agertel que detecta 12 tipos distintos de degradación en grabaciones de voz con una resolución temporal de 20 ms. El modelo parte del encoder de Whisper-small (88 millones de parámetros) y se ha afinado de extremo a extremo para emitir una probabilidad sigmoide por clase y por frame, permitiendo localizar en el tiempo eventos como ruido de fondo, música, reverberación, clipping, filtrado paso bajo o paso alto, artefactos de códec, pérdida de paquetes, zumbido de red, clics, cambio de tono y estiramiento temporal. Su relevancia actual radica en la curación de datasets de voz para ASR y TTS, donde la detección automática de audio degradado permite filtrar, priorizar o reparar material antes de entrenar.
+AADD (Automatic Audio Degradation Detection) v3.1 es un modelo de clasificación de audio desarrollado por agertel (usuario de Hugging Face vinculado al repositorio GitHub gertelrina/aadd). Detecta 12 tipos de degradación en grabaciones de voz con una resolución de 20 ms por frame: ruido de fondo, música, reverberación, clipping, filtrado paso bajo y paso alto, artefactos de códec, pérdida de paquetes, zumbido de red eléctrica, clics, cambio de tono y estiramiento temporal. Varias degradaciones pueden coexistir en la misma señal.
 
-El modelo se distribuye como un checkpoint PyTorch de 177 MB (repositorio total de 0,2 GB) con licencia MIT, y se acompaña de una CLI y una API de Python en el repositorio de GitHub del autor. Está entrenado con habla en inglés y ruso (LibriSpeech train-clean-100 y Russian LibriSpeech train), con degradaciones sintetizadas al vuelo, y ofrece ventanas deslizantes para procesar audio de cualquier duración.
+El modelo parte del encoder de Whisper-small (88 M de parámetros) afinado de extremo a extremo. Su propósito es la curación de datasets de voz para ASR y TTS, así como la auditoría de calidad de grabaciones. La versión 3.1 se publicó el 6 de noviembre de 2026 y corrige el principal defecto de la v3.0, que clasificaba erróneamente el ruido de fondo real de cafeterías, calles y autobuses como música, mediante un ajuste fino con aproximadamente 36 horas de ruido ambiental real de FSD50K y babble sintético.
 
-La propuesta es poco habitual: en lugar de clasificar clips completos, AADD v3 produce una matriz de probabilidades de forma `(n_frames_20ms, 12)`, lo que lo convierte en una herramienta de auditoría y segmentación fina más que en un clasificador global. Es relevante para equipos que construyen pipelines de datos de audio a escala y necesitan identificar qué porción de una grabación está contaminada y por qué tipo de artefacto.
+Es relevante porque ofrece detección localizada temporalmente (no solo a nivel de clip) con un coste computacional bajo: 23 ms por segundo de audio en CPU, lo que permite procesar una hora de audio en unos 84 segundos. Está entrenado y evaluado en inglés y ruso, y se distribuye con licencia MIT.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Whisper-small encoder (transformer) con suma ponderada aprendible de las 13 capas ocultas, dos convoluciones 1-D y cabeza lineal con 12 sigmoides por frame |
-| Parametros totales | 88 M (encoder Whisper-small); checkpoint de 177 MB |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Ventanas de 8 s; audio de cualquier duración mediante ventanas deslizantes; resolución de 20 ms por frame |
-| Tipos de cuantizacion | No disponible (checkpoint PyTorch en precisión original; no se documentan variantes GGUF, INT8 ni otras) |
-| Idiomas soportados | Inglés y ruso (idiomas vistos en entrenamiento) |
+| Arquitectura | Encoder de Whisper-small (transformer) con cabeza de clasificación multi-etiqueta por frame |
+| Parámetros totales | 88 M (backbone Whisper-small encoder) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | Ventanas de 8 s; audio de cualquier duración mediante ventanas deslizantes |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (en), ruso (ru) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (`.pt`); checkpoint `aadd_v3_whisper_small_frames.pt` |
+| Formato de pesos | PyTorch (.pt: `aadd_v3_1_whisper_small_frames.pt`) |
+| Resolución temporal | Frames de 20 ms; segmentos configurables (por defecto 1,0 s) |
+| Número de clases | 12 degradaciones simultáneas (salida sigmoide por clase y frame) |
+| Tamaño del repositorio | 0,4 GB |
+| Pipeline | audio-classification |
 
 ## Arquitectura y entrenamiento
 
-AADD v3 reutiliza el encoder de Whisper-small como backbone y lo afina de extremo a extremo. Sobre las 13 representaciones ocultas del encoder se aplica una suma ponderada con pesos aprendibles, seguida de dos convoluciones 1-D y una cabeza lineal que emite 12 salidas sigmoides por cada frame de 20 ms. El modelo procesa ventanas de 8 s y, mediante ventanas deslizantes, admite audio de cualquier longitud. La resolución temporal de 20 ms permite localizar el inicio y el fin de cada degradación, y varias degradaciones pueden coexistir en el mismo frame.
+El modelo reutiliza el encoder de Whisper-small (88 M de parámetros) y lo afina de extremo a extremo con una cabeza de clasificación que emite una probabilidad sigmoide independiente por cada una de las 12 clases en cada frame de 20 ms. El procesamiento se realiza sobre ventanas de 8 segundos y se aplica ventana deslizante para cubrir audio de cualquier duración, de modo que la salida es una matriz de forma (n_frames_20ms, 12).
 
-El entrenamiento combina habla limpia de LibriSpeech train-clean-100 (100 h, inglés) y Russian LibriSpeech train (93 h, ruso), con hablantes de validación y test disjuntos, y degradaciones generadas al vuelo en ventanas de 8 s con 0 a 3 eventos por ventana, ya sea cubriendo toda la ventana o intervalos de 0,5 a 4 s con inicios aleatorios. El catálogo de degradaciones incluye ruido MUSAN (−5 a 30 dB SNR), música (0 a 25 dB), respuestas al impulso de sala de RIRS_NOISES, clipping duro y suave (2 a 30 % de muestras), paso bajo Butterworth o por remuestreo (1 a 5 kHz), paso alto (200 a 1000 Hz), MP3 a 8–41 kbit/s, Opus a 10–32 kbit/s, Vorbis, GSM, µ-law, A-law, G.721, IMA-ADPCM, pérdida de paquetes con modelo Gilbert–Elliott (5 a 30 %), zumbido de 50/60 Hz, clics, cambio de tono (±2 a 8 semitonos) y estiramiento temporal (0,7–0,9 y 1,15–1,5). Las etiquetas son por frame de 20 ms y se enmascaran los frames donde la degradación está físicamente ausente.
-
-La receta de entrenamiento emplea AdamW con learning rate 3e-5 para el encoder y 1e-3 para la cabeza, 1000 pasos de warm-up, scheduler coseno, precisión bf16, batch de 64 ventanas y 30 000 pasos (aproximadamente 4 300 h de audio generado). El entrenamiento completo se ejecutó en una sola H100 en 2,4 h, y el mejor checkpoint de validación se seleccionó en el paso 16 000 con un macro-AP por frame de 0,969.
+El entrenamiento combina datos de LibriSpeech (openslr/librispeech_asr) y Russian LibriSpeech (istupakov/russian_librispeech) con mezclas sintéticas de degradaciones (hasta tres solapadas con inicios aleatorios) y, en la versión 3.1, aproximadamente 36 horas de ruido ambiental real extraído de FSD50K (solo clips CC0/CC BY, sin etiquetas de música ni voz) más babble de multitud sintético añadido a la clase de ruido. La v3.1 corresponde al checkpoint del paso 4.000 de una ejecución de 10.000 pasos (lr 1e-5 en el encoder, 3e-4 en la cabeza, 500 pasos de warm-up, scheduler coseno, semilla 1), seleccionado por mejor AP de validación. No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Detección multi-etiqueta de 12 tipos de degradación de audio por frame de 20 ms: ruido de fondo, música, reverberación, clipping, paso bajo, banda estrecha, paso alto, artefactos de códec, pérdida de paquetes, zumbido de red, clics, cambio de tono y estiramiento temporal.
-- Localización temporal fina: devuelve una matriz `(n_frames_20ms, 12)` de probabilidades, lo que permite identificar en qué tramo exacto de una grabación aparece cada degradación.
+- Detección multi-etiqueta de 12 degradaciones de audio simultáneas: ruido de fondo, música, reverberación, clipping, paso bajo, banda estrecha, paso alto, artefactos de códec, pérdida de paquetes, zumbido de red, clics, cambio de tono y estiramiento temporal.
+- Localización temporal fina: probabilidad por clase cada 20 ms, con agregación configurable a segmentos (por defecto 1,0 s) y puntuación de clip basada en el percentil 95 de las probabilidades de frame.
 - Procesamiento de audio de duración arbitraria mediante ventanas deslizantes de 8 s.
-- Agregación configurable a resolución de 1 s o 100 ms mediante el parámetro `resolution` de la API.
-- Detección simultánea de varias degradaciones solapadas en el mismo instante.
-- Soporte de inferencia por archivo individual (`predict_file`) y por directorio completo (`aadd scan`).
-- Generación de informes HTML interactivos a partir de un dataset de audio.
-- Exportación de resultados a CSV con segmentos por resolución configurable.
-- Idiomas de habla cubiertos en entrenamiento: inglés y ruso.
+- Soporte de dos idiomas en entrenamiento: inglés y ruso.
+- API de Python (`Detector`) y CLI (`aadd scan`) para escanear datasets completos y generar informes HTML interactivos.
+- Capacidad de filtrar y curar datasets de ASR/TTS identificando clips degradados y el tipo concreto de degradación.
+- No dispone de tool calling, capacidades de agente, visión ni audio generation; es un clasificador, no un modelo generativo.
 
 ## Casos de uso
 
-- Curación de datasets de ASR: antes de entrenar o evaluar un sistema de reconocimiento de voz, AADD v3 permite escanear el corpus completo y descartar o marcar clips con ruido, reverberación o artefactos de códec, usando la CLI `aadd scan my_dataset/ --report report.html` para obtener un informe HTML con la distribución de degradaciones por archivo.
-- Curación de datasets de TTS: en la preparación de corpus para síntesis de voz, el modelo identifica grabaciones con clipping, zumbido o paso bajo que degradarían la calidad del modelo entrenado, y permite filtrar por umbral ajustable según la tolerancia del pipeline.
-- Auditoría de calidad de grabaciones telefónicas o de call center: con resolución de 100 ms o 1 s, el modelo detecta pérdida de paquetes, artefactos de códec y banda estrecha en llamadas VoIP, útil para monitorización de calidad en producción y para priorizar revisiones manuales.
-- Diagnóstico de cadenas de captura: al localizar en el tiempo clics, zumbido de 50/60 Hz o clipping, el modelo ayuda a identificar fallos de hardware o de configuración en la cadena de grabación (micrófonos, interfaces, cableado).
-- Detección de contenido musical o ruidoso en archivos de voz: la clase de música (0 a 25 dB) y la de ruido de fondo permiten separar segmentos aptos para transcripción de los que no lo son, integrándose como paso previo a un pipeline de ASR.
-- Investigación en evaluación de robustez de ASR: el modelo sirve para etiquetar automáticamente conjuntos de test con el tipo y la posición de la degradación, permitiendo análisis de error desagregados por artefacto en lugar de métricas agregadas.
-- Segmentación previa a restauración de audio: al identificar tramos concretos con reverberación o ruido, se pueden aplicar modelos de enhancement solo donde son necesarios, ahorrando cómputo en lugar de procesar la grabación completa.
-- Filtrado en tiempo casi real de streams de audio: con ventanas deslizantes de 8 s y resolución configurable, puede integrarse en sistemas de monitorización continua de calidad de emisión o de ingesta.
+- Curación de datasets de ASR: escanear un corpus completo con `aadd scan dataset/ --report report.html` para identificar y descartar clips con ruido, reverberación o clipping antes de entrenar un modelo de reconocimiento de voz, usando la localización a 20 ms para recortar solo los tramos afectados.
+- Auditoría de calidad de grabaciones de call center: detectar pérdida de paquetes, artefactos de códec y zumbido de red en llamadas telefónicas, gracias a su resolución temporal y a su velocidad de 43× tiempo real en CPU.
+- Filtrado de datos para TTS: eliminar clips con reverberación o cambio de tono que degradarían la naturalidad de un modelo de síntesis, aprovechando las puntuaciones por clase y el umbral configurable.
+- Monitorización de pipelines de captura en producción: integrar el detector en un servicio que valide continuamente la calidad de audio entrante y alerte cuando aparezcan degradaciones concretas (clics, clipping, ruido).
+- Selección de datos para entrenamiento de modelos de mejora de voz (speech enhancement): etiquetar automáticamente mezclas ruidosas por tipo de ruido y SNR aproximada para construir pares limpio/degradado.
+- Investigación en percepción de calidad de audio: usar las probabilidades por frame como señal auxiliar para estudiar la relación entre degradaciones específicas y métricas subjetivas como MOS.
+- Verificación de conformidad en archivos de patrimonio sonoro: auditar digitalizaciones para detectar zumbido de red, filtrado de banda o artefactos de códec antes de su archivo definitivo.
 
 ## Benchmarks y rendimiento
 
-Resultados fuera de dominio sobre grabaciones reales (puntuación por clip = percentil 95 de las probabilidades por frame):
+Resultados en benchmarks públicos de ruido y reverberación no usados en entrenamiento (mezclas de voz de estudio con ruido real y salas reales o simuladas). La puntuación de clip es el percentil 95 de las probabilidades de frame; se marca un clip cuando es ≥ 0,5.
 
-| Conjunto | Clase | ROC-AUC | Recall a p ≥ 0,5 | Falsas alarmas en limpio |
-|---|---|---|---|---|
-| VoiceBank-DEMAND test (824 ruidosos vs 824 limpios) | ruido | 0,985 | 0,51 | 0,4 % |
-| DNS Challenge 2020 synthetic dev-test (600 clips) | ruido | 0,997 | 0,85 | 0,0 % |
-| DNS Challenge 2020 synthetic dev-test (600 clips) | reverberación | 1,000 | 1,00 | 0,0 % |
-| Dynamic-SUPERB noise detection (VCTK + MUSAN) | ruido | 0,995 | 0,96 | 1,1 % |
-| Dynamic-SUPERB reverberación, sala pequeña / media / grande | reverberación | 0,995 / 1,000 / 0,998 | 0,97 / 1,00 / 0,96 | 0 % |
+| Conjunto | Clase | ROC-AUC | Recall a p ≥ 0,5 | Falsas alarmas en limpios (misma clase) | Detecciones de música sin música |
+|---|---|---|---|---|---|
+| VoiceBank-DEMAND test (824 ruidosos vs 824 limpios) | noise | 0,992 | 0,60 | 0,0 % | 28 % de clips ruidosos (v3.0: 42 %) |
+| DNS Challenge 2020 dev-test sintético (600 clips) | noise | 0,998 | 0,91 | 0,0 % | 16 % de clips ruidosos (v3.0: 23 %) |
+| DNS Challenge 2020 dev-test sintético (600 clips) | reverberation | 1,000 | 1,00 | 0,0 % | — |
+| Dynamic-SUPERB noise (VCTK + MUSAN) | noise | 0,992 | 0,96 | 2,2 % | 0,5 % |
+| Dynamic-SUPERB reverberation (sala pequeña/mediana/grande) | reverberation | 0,994 / 1,000 / 0,996 | 0,98 / 1,00 / 0,97 | 0 % | 0–1,5 % |
 
-Resultados sobre conjuntos de test sintéticos retenidos (hablantes, ruidos y salas no vistos; hasta tres degradaciones solapadas con inicios aleatorios):
+Conjuntos sintéticos held-out (hablantes, ruidos y salas no vistos; hasta tres degradaciones solapadas con inicios aleatorios):
 
-| Conjunto de test | Macro-AP por frame (20 ms) | Macro-F1 por segmento de 1 s | Macro-AUC por clip |
+| Conjunto | macro-AP por frame (20 ms) | macro-F1 por segmento de 1 s | macro-AUC por clip |
 |---|---|---|---|
-| Inglés (LibriSpeech test-clean), 3 000 × 8 s | 0,955 | 0,915 | 0,988 |
-| Ruso (Russian LibriSpeech test), 3 000 × 8 s | 0,959 | 0,883 | 0,986 |
-| Inglés, RIRs reales medidas | 0,951 | 0,909 | 0,989 |
-| Inglés, RIRs del MIT IR survey | 0,940 | 0,892 | 0,988 |
+| Inglés (LibriSpeech test-clean), 3.000 × 8 s | 0,955 | 0,905 | 0,989 |
+| Ruso (Russian LibriSpeech test), 3.000 × 8 s | 0,960 | 0,881 | 0,987 |
+| Inglés, RIRs reales medidos | 0,954 | 0,902 | 0,991 |
+| Inglés, RIRs del MIT IR survey | 0,946 | 0,883 | 0,990 |
 
-AP por frame y por clase (inglés / ruso): cambio de tono 0,999 / 0,992; estiramiento temporal 0,997 / 0,992; clipping 0,996 / 0,996; paso alto 0,991 / 0,998; pérdida de paquetes 0,989 / 0,990; reverberación 0,987 / 0,989; música 0,983 / 0,985; clics 0,972 / 0,975; paso bajo 0,966 / 0,981; códec 0,920 / 0,949; ruido de fondo 0,885 / 0,803; zumbido de red 0,772 / 0,864.
+AP por frame y clase (inglés / ruso): pitch shift 0,999 / 0,993; time stretch 0,999 / 0,994; paso bajo 0,996 / 0,994; clipping 0,993 / 0,997; pérdida de paquetes 0,991 / 0,992; paso alto 0,991 / 1,000; música 0,985 / 0,990; reverberación 0,985 / 0,991; clics 0,976 / 0,979; códec 0,925 / 0,961; ruido de fondo 0,898 / 0,799; zumbido de red 0,726 / 0,825.
+
+Velocidad (extremo a extremo: decodificación, features y modelo, un proceso): 23 ms por segundo de audio en CPU (43× tiempo real, unos 84 s por hora de audio) y 6,5 ms en GPU Apple (MPS), medido en un MacBook Pro M3 Pro.
 
 ## Requisitos de hardware
 
-- El checkpoint pesa 177 MB en PyTorch, por lo que la inferencia cabe holgadamente en cualquier GPU de consumo con al menos 2–4 GB de VRAM libre, incluidas RTX 3060, RTX 4060, RTX 4090 y similares.
-- GPU recomendadas para producción: cualquier GPU moderna con soporte bf16 (A100, H100, L40S, RTX 4090). El entrenamiento se completó en una sola H100 en 2,4 h, lo que da una idea del coste de reentrenamiento.
-- Cabe en CPU para procesamiento por lotes no interactivo, aunque no se documentan latencias concretas en ese modo.
-- Opciones de despliegue: la librería oficial `aadd` (instalable con `pip install "aadd[app] @ git+https://github.com/gertelrina/aadd"`), que incluye CLI y API de Python; el checkpoint también puede cargarse directamente con `huggingface_hub.hf_hub_download` y la clase `Detector`. No se documenta soporte nativo para vLLM, TGI, llama.cpp ni Ollama, dado que no es un modelo generativo de texto.
-- Latencia y throughput: no se publican cifras concretas en la información disponible; el repositorio incluye un benchmark de velocidad en `eval/`, pero sus valores no se detallan en la model card.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 88 M de parámetros y pesos en fp32 (tamaño del repo 0,4 GB), la huella es inferior a 1 GB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; el autor reporta 6,5 ms por segundo de audio en GPU Apple (MPS) de un M3 Pro.
+- Cabe en GPU consumer: sí, en cualquier RTX (incluso series 20xx y anteriores) y en GPUs integradas Apple Silicon vía MPS.
+- CPU: funciona a 23 ms por segundo de audio (43× tiempo real) en un solo proceso, suficiente para procesamiento por lotes de datasets.
+- Opciones de despliegue: paquete Python `aadd` instalable desde GitHub (`pip install "aadd @ git+https://github.com/gertelrina/aadd"`), CLI `aadd scan`, API `Detector` y descarga directa del checkpoint vía `huggingface_hub`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplica a un clasificador de este tamaño).
+- Latencia y throughput: 23 ms/s de audio en CPU y 6,5 ms/s en MPS; aproximadamente 84 s por hora de audio en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / resolución | Tarea | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Tarea | Idiomas | Licencia |
 |---|---|---|---|---|---|
-| AADD v3 (este modelo) | 88 M (encoder Whisper-small) | Ventanas de 8 s, frames de 20 ms | Detección multi-etiqueta de 12 degradaciones | MIT | Hugging Face + GitHub |
-| AADD v2 | EfficientNet-B0 | 1 s, 7 clases sintéticas | Detección de degradaciones sintéticas | MIT | Incluido en el mismo repo |
-| AADD v1 | EfficientNet-B0 | 1 s, 7 clases sintéticas | Detección sobre imágenes de mel renderizadas | MIT | Incluido en el mismo repo |
-| Whisper-small (modelo base) | 88 M encoder + decoder | 30 s de audio | ASR multilingüe | MIT | Hugging Face (openai/whisper-small) |
+| AADD v3.1 | Clasificador multi-etiqueta por frame | 88 M | Detección de 12 degradaciones de audio | en, ru | MIT |
+| Whisper-small (base) | ASR transformer | 244 M | Transcripción de voz | multilingüe | MIT |
+| Modelos de speech enhancement (p. ej. Demucs, DNS) | Generativos/separación | variable | Mejora de voz, no detección | no aplica | variable |
+| Detección de ruido genérica (clasificadores binarios) | Clasificador binario | variable | Ruido sí/no | variable | variable |
 
-No se dispone de comparación con otros detectores de degradación de audio de terceros en la información proporcionada.
+No se dispone en la información proporcionada de resultados comparativos directos con alternativas específicas de detección de degradación. La comparación con Whisper-small es relevante porque AADD reutiliza su encoder: AADD no transcribe, sino que clasifica degradaciones, y su licencia MIT coincide con la del modelo base.
 
 ## Limitaciones y advertencias
 
-- El modelo solo ha visto habla en inglés y ruso durante el entrenamiento; su comportamiento en otros idiomas no está validado y puede degradarse.
-- En ruido leve (VoiceBank-DEMAND, SNR 2,5–17,5 dB) el modelo es conservador con el umbral por defecto (recall de 0,51 a p ≥ 0,5); el autor recomienda bajar el umbral al filtrar datos, lo que incrementará las falsas alarmas.
-- El rendimiento es más bajo en las clases de ruido de fondo (AP 0,885 en inglés, 0,803 en ruso) y zumbido de red (0,772 en inglés), por lo que estas detecciones son menos fiables que las de cambio de tono, estiramiento temporal o clipping.
-- Las degradaciones se generan sintéticamente durante el entrenamiento; aunque se evalúa con grabaciones reales (VoiceBank-DEMAND, DNS Challenge, Dynamic-SUPERB), pueden existir tipos de degradación del mundo real no cubiertos por el catálogo sintético.
-- Riesgo de alucinación en el sentido de falsos positivos: el modelo puede marcar degradaciones en audio limpio, especialmente con umbrales bajos; las tasas de falsas alarmas medidas oscilan entre 0 % y 1,1 % en los conjuntos evaluados.
-- La licencia MIT permite uso comercial sin restricciones adicionales, pero el modelo se distribuye sin garantías y el autor no ofrece soporte ni SLA.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción muy limitada y poca validación por parte de la comunidad.
-- No se documentan cuantizaciones ni formatos alternativos de pesos, lo que limita el despliegue en entornos sin PyTorch.
-- El modelo no es generativo: no produce transcripciones ni texto, solo probabilidades de degradación; debe combinarse con un ASR u otro sistema para tareas de transcripción.
+- Solo se ha entrenado y evaluado en inglés y ruso; el rendimiento en otros idiomas no está documentado.
+- El umbral por defecto (0,5 sobre el percentil 95) es conservador con ruido leve: en VoiceBank-DEMAND (SNR 2,5–17,5 dB) el recall de ruido es solo 0,60; el autor recomienda bajarlo al filtrar datos.
+- Persisten falsos positivos de "música" en ruido real: 28 % de clips ruidosos en VoiceBank-DEMAND y 16 % en DNS-2020 (aunque en este último el ruido contiene tonos armónicos sostenidos y la detección podría ser correcta). El ruido de fondo se detecta con más frecuencia que en v3.0 (café 84 % → 95 %, plaza pública 55 % → 78 %), lo que puede aumentar los falsos positivos de ruido.
+- Las clases con peor AP por frame son zumbido de red (0,726 en inglés) y ruido de fondo (0,799 en ruso), por lo que su fiabilidad es menor que la de otras degradaciones.
+- Riesgo de alucinación no aplica (no es un modelo generativo), pero sí hay riesgo de clasificación errónea en condiciones acústicas no representadas en entrenamiento.
+- La evaluación se basa mayoritariamente en mezclas sintéticas y benchmarks públicos; el rendimiento en grabaciones reales muy diversas puede diferir.
+- Licencia MIT: permite uso comercial sin restricciones adicionales, pero se recomienda conservar el aviso de copyright.
+- No se documentan sesgos demográficos ni de otro tipo; al ser un clasificador de señal, el riesgo principal es la variabilidad acústica, no el sesgo social.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/agertel/aadd
-- Repositorio GitHub (código, CLI, API y informe interactivo): https://github.com/gertelrina/aadd
+- Repositorio GitHub (código, CLI, API Python e informe interactivo): https://github.com/gertelrina/aadd
 - Licencia en GitHub: https://github.com/gertelrina/aadd/blob/main/LICENSE
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset LibriSpeech ASR: https://huggingface.co/datasets/openslr/librispeech_asr
 - Dataset Russian LibriSpeech: https://huggingface.co/datasets/istupakov/russian_librispeech
+- Checkpoint directo: `aadd_v3_1_whisper_small_frames.pt` en el repositorio de Hugging Face

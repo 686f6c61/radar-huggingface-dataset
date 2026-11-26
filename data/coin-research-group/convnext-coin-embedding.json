@@ -5,7 +5,7 @@
   "author": "COIN-Research-Group",
   "url": "https://huggingface.co/COIN-Research-Group/convnext-coin-embedding",
   "created_at": "2026-11-23T03:29:11.000Z",
-  "updated_at": "2026-11-25T14:42:24.000Z",
+  "updated_at": "2026-11-25T15:06:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

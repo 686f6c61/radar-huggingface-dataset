@@ -2,94 +2,95 @@
 
 ## Resumen
 
-ThoxFlux-350M es un modelo de lenguaje de 350 millones de parametros desarrollado por Thox-ai como fine-tune del modelo base LiquidAI/LFM2.5-350M. Se trata de un ajuste LoRA de rango 32 sobre un corpus de 982 ejemplos de chat, uso de herramientas y factualidad, cuyos pesos resultantes se han fusionado en los pesos base. El modelo esta disenado especificamente para el asistente local ThoxClip, un dispositivo de borde (edge) que ejecuta inferencia completamente offline.
+ThoxFlux-350M es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, desarrollado por Thox-ai para su linea de dispositivos de asistencia local denominada ThoxClip. Se trata de un LoRA de rango 32 entrenado sobre un corpus propio de 982 ejemplos de conversacion, uso de herramientas y factualidad, cuyos pesos se han fusionado en los pesos base. El modelo esta disenado para ejecutarse integramente en dispositivo (on-device), sin conexion a red, y su proposito principal es la identidad de marca, la voz corporativa de THOX y el enrutado de intenciones hacia funciones del dispositivo y de la malla (mesh).
 
-El modelo resuelve el problema de dotar a un dispositivo de muy baja potencia de una identidad conversacional propia, un tono de marca definido y la capacidad de enrutar intenciones hacia funciones del dispositivo y de la malla (mesh). No pretende ser una fuente fiable de conocimiento factual: el autor indica explicitamente que los hechos deben suministrarse desde la capa de servicio (grounding), no desde los pesos desnudos. Su relevancia actual radica en la tendencia hacia asistentes locales y privados que caben en hardware de consumo y no dependen de la nube.
+Con 354.483.968 parametros reales y un tamano de repositorio de 2,8 GB, se distribuye en safetensors y en una cuantizacion GGUF Q4_K_M de aproximadamente 229 MB, ademas de un Modelfile para Ollama. La arquitectura subyacente es LFM2.5 de LiquidAI, si bien la model card no detalla la composicion interna de la misma. El modelo solo declara soporte de ingles.
 
-La arquitectura subyacente es LFM2.5 de LiquidAI, un transformer compacto de 354.483.968 parametros reales (segun los safetensors del repositorio). El modelo se distribuye en formato safetensors y GGUF Q4_K_M, con un Modelfile para Ollama, y esta disponible publicamente bajo la licencia LFM Open License v1.0.
+Su relevancia actual es limitada y muy especifica: no compite en capacidad general, sino que ejemplifica el patron de modelos diminutos para dispositivos dedicados. El propio autor advierte que los pesos desnudos no son una fuente fiable de hechos y que el despliegue requiere una capa de servicio que aporte el contexto factual (grounding).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (LFM2.5, modelo base LiquidAI/LFM2.5-350M) |
+| Arquitectura | LFM2.5 (LiquidAI), ajuste fino LoRA rango 32 fusionado; detalles internos no disponibles |
 | Parametros totales | 354.483.968 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (unico publicado en el repo) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | LFM Open License v1.0 (no es Apache-2.0; restringe uso comercial a entidades con ingresos anuales inferiores a 10 M USD) |
-| Formato de pesos | safetensors (708.984.464 B) y GGUF Q4_K_M (229.314.592 B) |
+| Tipos de cuantizacion | GGUF Q4_K_M; safetensors en precision original |
+| Idiomas soportados | en (ingles) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other"); no es Apache-2.0 |
+| Formato de pesos | safetensors (708.984.464 B), GGUF Q4_K_M (229.314.592 B), Modelfile de Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/LFM2.5-350M, un transformer compacto de 350 millones de parametros. Sobre esa base se aplico un fine-tune mediante LoRA de rango 32 entrenado con un corpus autorado por THOX compuesto por 982 ejemplos de chat, uso de herramientas y factualidad. Los adaptadores se fusionaron posteriormente en los pesos base, de modo que el repositorio contiene los pesos completos ya fusionados junto con el tokenizer y la plantilla de chat (`chat_template.jinja`).
+El modelo parte de LiquidAI/LFM2.5-350M y se obtiene mediante un ajuste fino LoRA de rango 32 sobre un corpus elaborado por THOX de 982 ejemplos que cubren conversacion, uso de herramientas y factualidad. Los adaptadores se fusionan posteriormente en los pesos base, de modo que el repositorio contiene los pesos completos y el tokenizador, no un adaptador separado. La model card no especifica el numero de tokens de entrenamiento, la composicion detallada del dataset, ni si se aplicaron tecnicas de RLHF o DPO; tampoco describe innovaciones arquitectonicas propias, ya que la estructura corresponde a la del modelo base.
 
-El objetivo del ajuste no es ampliar la capacidad del modelo base, sino ensenar identidad de marca (THOX), un tono de voz propio y las formas de enrutamiento de herramientas. El autor lo declara explicitamente: el fine-tune no anade nueva capacidad, sino comportamiento de identidad y enrutamiento. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset, ni si se emplearon tecnicas de RLHF o DPO. El repositorio incluye un `training_summary.json` que no se ha podido consultar en detalle.
+El entrenamiento declarado no pretende anadir capacidad nueva, sino ensenar identidad de marca, voz corporativa y las formas de enrutado de herramientas. El autor es explicito en que no se reclama ningun entrenamiento adicional mas alla de lo descrito en la tarjeta. Se incluye un archivo `training_summary.json` en el repositorio, aunque su contenido no se detalla en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional breve, orientada a respuestas cortas de asistente.
-- Enrutamiento de intenciones hacia funciones del dispositivo y de la malla (tool routing).
-- Uso de herramientas (tool use) segun el corpus de entrenamiento.
-- Adopcion de una identidad y tono de marca consistentes (THOX house voice).
-- Ejecucion completamente offline en dispositivos de borde.
-- Capacidad de abtencion ante preguntas fuera de su alcance, con escalado a traves de MeshStack (segun describe el autor).
-- Soporte de plantilla de chat y Modelfile para integracion con Ollama.
-- No se documentan capacidades de vision, audio, razonamiento multi-paso complejo ni modo de pensamiento (thinking mode).
+- Generacion de texto conversacional de respuesta corta, orientada a un asistente de dispositivo.
+- Enrutado de intenciones (tool routing) hacia funciones del dispositivo y de la malla MeshStack.
+- Uso de herramientas (tool use) segun el corpus de entrenamiento, con formas de llamada aprendidas.
+- Adopcion de una voz corporativa concreta (house voice de THOX) e identidad de marca.
+- Respuesta en ingles unicamente.
+- Ejecucion completamente offline en hardware de gama baja.
+- No se declaran capacidades de vision, audio, razonamiento multi-paso avanzado ni modo de pensamiento extendido.
+- La factualidad no reside en los pesos: requiere una capa de servicio que aporte los hechos.
 
 ## Casos de uso
 
-- Asistente de voz o texto en dispositivo dedicado: el modelo gestiona conversaciones cortas de ida y vuelta en local, sin conexion, lo que permite respuestas inmediatas y privacidad total de los datos del usuario.
-- Enrutamiento de comandos del dispositivo: traduce la intencion del usuario en llamadas a funciones concretas del hardware o de la malla (MeshStack), adecuado por su entrenamiento especifico en tool routing y su baja latencia en hardware modesto.
-- Interfaz conversacional con tono de marca: util para productos que necesitan una personalidad coherente y reconocible en todas las respuestas, gracias al ajuste de identidad y voz de marca.
-- Prototipado rapido de asistentes locales: su tamano reducido y su formato GGUF Q4_K_M permiten desplegarlo en portatiles y dispositivos de gama baja para validar flujos conversacionales antes de escalar a modelos mayores.
-- Filtro o primera capa de un sistema con grounding: el modelo responde a saludos, aclaraciones y preguntas de enrutamiento, mientras la capa de servicio inyecta los hechos verificados, evitando que el usuario reciba informacion inventada.
-- Educacion y demostraciones de IA en el borde: sirve para ensenar como funciona un pipeline de inferencia local completo con Ollama, desde la descarga del GGUF hasta la generacion, en equipos sin GPU dedicada.
-- Integracion en pipelines de CI/CD para pruebas de regresion conversacional: su bajo coste de ejecucion permite incluirlo en tests automatizados de calidad de respuesta y de enrutamiento en cada version.
+- Asistente de dispositivo dedicado: el modelo gestiona respuestas conversacionales breves en local, sin salida a red, lo que encaja con el requisito de privacidad de los dispositivos ThoxClip y con su reducido consumo de memoria (unos 229 MB en Q4_K_M).
+- Enrutado de comandos por voz o texto: traduce una intencion del usuario en una llamada a una funcion del dispositivo o de la malla, aprovechando el entrenamiento especifico en tool routing y su baja latencia esperada en hardware modesto.
+- Prototipado de interfaces conversacionales embebidas: sirve como banco de pruebas para validar plantillas de chat y flujos de herramientas en un entorno Ollama antes de integrar un modelo mayor.
+- Filtro o clasificador de primera etapa: al ser un modelo de 350M, puede preclasificar consultas y derivar las complejas a un modelo mayor o a un servicio con grounding, reduciendo coste y latencia en el camino comun.
+- Demostraciones de IA local-first: util para articulos y talleres sobre despliegue en dispositivo, dado que se ejecuta con `ollama run` en un portatil convencional.
+- Personalizacion de marca en asistentes de terceros: el patron de ajuste LoRA sobre un corpus pequeno y propio es replicable para dotar a un asistente de una voz e identidad concretas, aunque el resultado hereda las limitaciones de un modelo de 350M.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | Resultado |
 |---|---|
-| THOX GATE49 (factualidad, conjunto de desarrollo, ponderado por abtencion) | 20/49 — media 2,49/5 |
-| Fallos graves (hard failures) | 18 |
+| THOX GATE49 (factualidad, conjunto de desarrollo, ponderado por abstencion) | 20/49 — media 2,49/5 |
+| Fallos duros en GATE49 | 18 |
 
-El propio autor califica este resultado como debil y senala que el modelo se publica por su identidad, voz y comportamiento de enrutamiento bajo grounding, no por su recall factual desde los pesos. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El unico dato de evaluacion es el GATE49 propio del autor, medido solo con los pesos y sin grounding del lado del servicio, y el propio autor lo califica como un resultado debil.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cuantizacion Q4_K_M (archivo de 229 MB) y aproximadamente 1,4 GB en safetensors a precision completa (archivo de 709 MB), mas overhead de contexto y runtime.
-- GPU recomendadas: cualquier GPU de consumo moderna es suficiente; el modelo esta pensado para CPU y aceleradores de borde. Funciona en RTX 4090, RTX 3060 y en iGPU sin problema.
-- Cabe holgadamente en GPU de consumo y en dispositivos de borde; tambien se ejecuta en CPU.
-- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxflux-350m`), llama.cpp con el GGUF Q4_K_M, y descarga directa de safetensors desde Hugging Face para frameworks compatibles.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera latencia de decenas de milisegundos por token en CPU moderna y muy inferior en GPU.
+- VRAM estimada para inferencia: en torno a 0,7 GB con safetensors en precision original y aproximadamente 0,25-0,5 GB con el GGUF Q4_K_M, incluyendo overhead de contexto y runtime.
+- GPU recomendadas: no requiere GPU dedicada; cualquier GPU consumer con 2 GB o mas de VRAM es suficiente. Una RTX 4090 o una A100 estan sobredimensionadas para este modelo.
+- Cabe holgadamente en GPU consumer (GTX 1050 Ti, RTX 3050, RTX 4060 y superiores) y en CPU sola.
+- Opciones de despliegue: Ollama (via `ollama pull Thox-ai/thoxflux-350m`), llama.cpp con el GGUF Q4_K_M, y transformers con los safetensors. vLLM y TGI no estan documentados para este modelo en la informacion disponible.
+- Latencia y throughput: no disponibles. Por el tamano, se espera una generacion en tiempo real o superior en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| ThoxFlux-350M | 354 M | no disponible | LFM Open License v1.0 (uso comercial limitado a <10 M USD de ingresos) | Hugging Face (safetensors + GGUF), Ollama | Fine-tune de identidad y enrutamiento sobre LFM2.5-350M |
-| LiquidAI/LFM2.5-350M | 350 M | no disponible | LFM Open License v1.0 | Hugging Face | Modelo base sin ajuste de identidad ni enrutamiento THOX |
-| Qwen2.5-0.5B | 500 M | 32 768 tokens (segun documentacion publica de Qwen) | Apache-2.0 | Hugging Face, Ollama | Alternativa de proposito general con licencia permisiva; no especializada en borde ni en enrutamiento |
-| SmolLM2-360M | 360 M | 8 192 tokens (segun documentacion publica de Hugging Face) | Apache-2.0 | Hugging Face, Ollama | Modelo pequeno de proposito general; sin fine-tune de marca ni tool routing especifico |
+| ThoxFlux-350M | 354M | no disponible | en | LFM Open License v1.0 (limita uso comercial a entidades con menos de 10 M USD de ingresos anuales) | Fine-tune de marca con tool routing; requiere grounding |
+| LiquidAI/LFM2.5-350M | 350M | no disponible | en | LFM Open License v1.0 | Modelo base sin ajuste de marca; referencia directa |
+| Qwen2.5-0.5B | 0,5B | no disponible en esta ficha | multilingue | Apache-2.0 | Alternativa de tamano similar con licencia permisiva |
+| SmolLM2-360M | 360M | no disponible en esta ficha | en | Apache-2.0 | Alternativa de tamano similar orientada a dispositivo |
 
-No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada.
+La comparativa con Qwen2.5-0.5B y SmolLM2-360M se ofrece por categoria y tamano; no se dispone de datos de rendimiento comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Respuestas factuales poco fiables desde los pesos desnudos: el autor exige grounding en la capa de servicio y reporta 18 fallos graves en su propia puerta de factualidad (GATE49).
-- Modelo de 350 M: contexto corto y techo de razonamiento bajo por diseno; el fine-tune no anade capacidad nueva, solo identidad y formas de enrutamiento.
-- Solo soporta ingles; no se documenta soporte multilingue.
-- Licencia LFM Open License v1.0: no es Apache-2.0 y restringe el uso comercial a entidades con ingresos anuales inferiores a 10 millones de USD; es imprescindible leer el archivo LICENSE antes de cualquier despliegue comercial.
-- Riesgo de alucinacion elevado en preguntas de conocimiento general; el modelo debe combinarse con una capa de recuperacion o abtencion.
-- No apto para decisiones criticas de seguridad, medicas o legales sin supervision humana, segun el propio autor.
-- El autor indica que esta version no ha sido cualificada en el dispositivo ThoxClip (texto truncado en la model card).
-- La model card incluye contenido promocional de una campana de Kickstarter; conviene separar esa informacion de los datos tecnicos.
+- Factualidad poco fiable en los pesos desnudos: el propio autor indica que el modelo no es una fuente fiable de hechos de THOX y exige una capa de servicio con grounding.
+- Resultado debil en la evaluacion propia: 20/49 en GATE49, con 18 fallos duros y una media de 2,49/5.
+- Techo de razonamiento bajo por diseno, propio de un modelo de 350M; el ajuste no anade capacidad nueva.
+- Contexto limitado, aunque la longitud exacta no se especifica en la informacion disponible.
+- Solo ingles; no se declara soporte de castellano ni de otros idiomas.
+- Licencia restrictiva: la LFM Open License v1.0 no es Apache-2.0 y limita el uso comercial a entidades por debajo de 10 M USD de ingresos anuales; debe revisarse el archivo `LICENSE` antes de cualquier despliegue comercial.
+- Uso fuera de alcance: decisiones medicas, legales o de seguridad sin supervision humana.
+- La model card esta truncada en la informacion disponible, por lo que podrian existir limitaciones adicionales no recogidas aqui.
+- Riesgo de alucinacion inherente al tamano y al corpus de entrenamiento reducido (982 ejemplos).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxFlux-350M
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
-- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
+- Demostracion de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
 - Campana de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- Repositorio de Ollama: https://ollama.com/Thox-ai/thoxflux-350m

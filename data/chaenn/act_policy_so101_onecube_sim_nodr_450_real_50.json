@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Chaenn/act_policy_so101_onecube_sim_nodr_450_real_50",
+  "slug": "chaenn-act_policy_so101_onecube_sim_nodr_450_real_50",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_policy_so101_onecube_sim_nodr_450_real_50",
+  "created_at": "2026-11-25T20:44:58.000Z",
+  "updated_at": "2026-11-25T20:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Chaenn/so101_onecube_sim_nodr_450_real_50",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

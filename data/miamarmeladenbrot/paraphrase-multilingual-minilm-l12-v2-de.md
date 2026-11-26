@@ -2,93 +2,86 @@
 
 ## Resumen
 
-paraphrase-multilingual-MiniLM-L12-v2-de es una copia con poda de vocabulario del modelo de embeddings de frases `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, exportado a ONNX en cuantización int8 y adaptado para texto en alemán (con soporte parcial de inglés). Lo publica la usuaria MiaMarmeladenbrot y su objetivo es reducir el peso del modelo para que pueda cargarse rápidamente en el navegador mediante transformers.js, sin reentrenar ni modificar los pesos del transformer.
+`paraphrase-multilingual-MiniLM-L12-v2-de` es una copia podada de vocabulario de `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, el conocido modelo de embeddings multilingue de Sentence Transformers. La desarrolla la usuaria de Hugging Face MiaMarmeladenbrot y su objetivo es concreto: reducir el peso de carga del modelo en el navegador para texto en aleman (y algo de ingles), manteniendo intactas las 12 capas del transformer original y todos los pesos que se conservan.
 
-El modelo original dedica aproximadamente el 82 % de su tamaño a la matriz de embeddings: 250.002 tokens para más de 50 idiomas. Esta variante conserva 28.789 tokens y elimina el resto de filas de la matriz de embeddings, renumerando el tokenizador en consecuencia. Las 12 capas del transformer permanecen intactas y ningún peso conservado ha sido alterado.
+El modelo original dedica el 82 % de sus parametros a la matriz de embeddings: 250.002 tokens para mas de 50 idiomas. Esta version conserva 28.801 tokens (los del corpus de libros y episodios de 2seiten, los 50.000 palabras alemanas y 20.000 inglesas mas frecuentes, y todos los caracteres latinos, digitos y signos de puntuacion), elimina el resto de filas de la matriz de embeddings y renumera el tokenizador en consecuencia. El resultado es un ONNX int8 de 33,4 MB frente a los 112,8 MB del original, y un `tokenizer.json` de 1,3 MB frente a 16,3 MB.
 
-Es relevante para desarrolladores que necesitan búsqueda semántica o similitud de frases en alemán dentro de aplicaciones web ligeras, donde el tamaño de descarga y el tiempo de carga del modelo son críticos. La reducción de 112,8 MB a 33,3 MB en el archivo ONNX cuantizado y de 16,3 MB a 1,3 MB en el tokenizador hace viable su uso en entornos con recursos limitados.
+Es relevante para quienes despliegan busqueda semantica o similitud de frases en el cliente (navegador, extensiones, apps web) con `transformers.js`, donde el tamano de descarga y el tiempo de arranque son criticos. La contrapartida es clara: solo debe usarse con texto aleman o ingles, y las frases con palabras fuera del vocabulario conservado pueden producir vectores ligeramente distintos al original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer BERT (MiniLM-L12, 12 capas), encoder de frases |
-| Parametros totales | no disponible |
+| Arquitectura | Transformer BERT (MiniLM-L12), encoder de 12 capas para sentence embeddings |
+| Parametros totales | no disponible (el original ronda los 118 M; esta version reduce la matriz de embeddings a 28.801 filas) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 (ONNX cuantizado, `model_quantized.onnx`); el pipeline de transformers.js usa `dtype: 'q8'` |
-| Idiomas soportados | aleman (principal), ingles (parcial) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base MiniLM suele usar 128 tokens, sin confirmacion aqui) |
+| Tipos de cuantizacion | ONNX int8 (`onnx/model_quantized.onnx`, dtype `q8` en transformers.js) |
+| Idiomas soportados | aleman (principal) e ingles (parcial) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (cuantizado int8) y tokenizador JSON |
-| Tamano del repositorio | 0,1 GB |
-| Dimension del vocabulario | 28.789 tokens (frente a 250.002 del original) |
-| Tamano de `onnx/model_quantized.onnx` | 33,3 MB (original: 112,8 MB) |
-| Tamano de `tokenizer.json` | 1,3 MB (original: 16,3 MB) |
-| Libreria | transformers.js |
-| Pipeline | feature-extraction |
+| Formato de pesos | ONNX (int8), tokenizador JSON |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer tipo BERT de 12 capas (MiniLM-L12), utilizado como encoder de frases para generar embeddings. El modelo no ha sido reentrenado: se trata de una poda de vocabulario sobre la exportación int8 ONNX del modelo original. Se conservaron los tokens empleados por los datos de libros y episodios de 2seiten, los tokens de las 50.000 palabras alemanas y 20.000 inglesas más frecuentes, y todos los caracteres latinos, dígitos y signos de puntuación. El resto de filas de la matriz de embeddings se eliminaron y el tokenizador se renumeró para coincidir.
+La arquitectura es la del modelo base: un transformer tipo BERT con 12 capas (MiniLM-L12), entrenado originalmente por Sentence Transformers para producir embeddings de frase mediante pooling con normalizacion. Esta version no reentrena ni modifica ningun peso conservado: las 12 capas del transformer estan intactas y las filas de la matriz de embeddings que se mantienen son identicas bit a bit a las del original.
 
-No se dispone de información sobre el dataset de entrenamiento original, el número de tokens, ni sobre procesos de RLHF o DPO en la información proporcionada. La innovación técnica destacable es la poda selectiva de vocabulario: para cualquier texto cuyos tokens se hayan conservado, los vectores de salida son idénticos bit a bit a los del modelo original; las palabras fuera del vocabulario conservado se dividen en piezas más pequeñas que sí se conservan, de modo que el modelo no falla, aunque el vector resultante puede diferir ligeramente.
+La unica intervencion es la poda de vocabulario. Se conservan los tokens del corpus de 2seiten (libros y episodios), los de las 50.000 palabras alemanas y 20.000 inglesas mas frecuentes, y todos los caracteres latinos, digitos y signos de puntuacion; se eliminan las demas filas de la matriz de embeddings y se renumera el tokenizador para que coincida. No se documenta en la informacion disponible ningun proceso adicional de entrenamiento, RLHF, DPO ni ajuste fino.
 
 ## Capacidades
 
-- Generación de embeddings de frases para similitud semántica y búsqueda vectorial.
-- Extracción de características (`feature-extraction`) con pooling de media y normalización.
-- Similitud de frases (`sentence-similarity`) en alemán y, parcialmente, en inglés.
-- Ejecución en navegador mediante transformers.js y ONNX Runtime Web.
-- Manejo robusto de palabras fuera del vocabulario mediante segmentación en subpiezas conservadas.
-- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso: es exclusivamente un encoder de embeddings.
-- No dispone de capacidades de visión, audio ni modo de razonamiento.
+- Extraccion de embeddings de frase (`feature-extraction`) para similitud semantica y busqueda vectorial.
+- Generacion de vectores con pooling de media y normalizacion, segun el ejemplo de uso de la model card.
+- Texto en aleman como idioma principal; soporte parcial de ingles.
+- Ejecucion en navegador mediante `transformers.js` y ONNX Runtime Web.
+- Salida identica bit a bit al original para cualquier texto cuyos tokens esten en el vocabulario conservado.
+- No soporta generacion de texto, tool calling, agentes, vision ni audio: es exclusivamente un encoder de embeddings.
 
 ## Casos de uso
 
-- Búsqueda semántica en aplicaciones web en alemán: el modelo genera embeddings en el navegador con un archivo ONNX de 33,3 MB, lo que permite indexar y consultar documentos sin enviar texto a un servidor.
-- Detección de duplicados y near-duplicates en corpus alemanes: la similitud coseno entre embeddings permite agrupar artículos o reseñas casi idénticas.
-- Clasificación de textos por similitud a prototipos: se calculan embeddings de frases de referencia y se asigna la categoría del prototipo más cercano, útil para moderación o etiquetado ligero.
-- Sistemas de recomendación basados en contenido: se vectorizan descripciones de productos o artículos y se recuperan los más similares semánticamente.
-- Clustering de opiniones o tickets de soporte en alemán: los embeddings alimentan algoritmos de agrupamiento para descubrir temas recurrentes sin etiquetas previas.
-- Búsqueda dentro de documentación técnica o bases de conocimiento: integración en un pipeline RAG ligero del lado del cliente, donde el tamaño reducido del modelo es determinante.
-- Filtrado previo en pipelines de recuperación: al ser un bi-encoder rápido y pequeño, sirve como primera etapa de recuperación antes de un reranker más pesado.
+- Busqueda semantica en el navegador: indexar y consultar documentos alemanes en el cliente sin llamadas al servidor, gracias a los 33,4 MB del ONNX int8 y al tokenizador de 1,3 MB.
+- Deteccion de duplicados y near-duplicates en corpus alemanes: calcular similitud coseno entre frases para agrupar parafrasis en pipelines de limpieza de datos.
+- Clasificacion de texto por similitud a prototipos: comparar embeddings de consultas o tickets con vectores de referencia de categorias predefinidas.
+- Recomendacion de contenido: generar embeddings de titulos y resumenes de articulos o episodios en aleman para un motor de recomendacion ligero.
+- Extensiones de navegador y apps de escritorio: empaquetar el modelo dentro de la propia extension (repo de 0,1 GB) para funciones de busqueda o agrupacion sin dependencia de red.
+- Filtrado previo en pipelines RAG: usar el modelo como primer recuperador de bajo coste en textos alemanes antes de un reranker mas pesado en servidor.
+- Prototipado rapido de similitud de frases: validar una idea de producto con un modelo de 33 MB antes de invertir en infraestructura de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo aporta una garantia de equivalencia: para texto cuyos tokens se conservan, los vectores de salida son identicos bit a bit a los del modelo original. No se ofrecen cifras de MTEB, precision de recuperacion ni latencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el archivo ONNX cuantizado ocupa 33,3 MB y el tokenizador 1,3 MB, por lo que el modelo completo cabe holgadamente en memoria de cualquier dispositivo.
-- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU. En servidor, cualquier GPU moderna (A100, H100, RTX 4090) lo ejecuta con latencias mínimas, aunque es sobredimensionada para esta carga.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso en dispositivos móviles y navegadores.
-- Opciones de despliegue: transformers.js (diseño principal), ONNX Runtime Web, ONNX Runtime en servidor; también puede exportarse a otros runtimes compatibles con ONNX.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada: no aplica en el caso principal; el modelo esta pensado para ejecucion en CPU en el navegador. El ONNX int8 ocupa 33,4 MB en disco y una huella de memoria del orden de decenas de MB en runtime.
+- GPU: no requiere GPU dedicada; puede ejecutarse en cualquier CPU moderna. En servidor puede acelerarse con GPUs convencionales (RTX 4090, A100, H100) mediante ONNX Runtime, aunque el modelo es demasiado pequeno para aprovecharlas.
+- GPU de consumo: cabe sobradamente en cualquier GPU de consumo e incluso en moviles y navegadores.
+- Despliegue: `transformers.js` (via `@huggingface/transformers` con `dtype: 'q8'`), ONNX Runtime Web y ONNX Runtime en servidor. No se documenta soporte de vLLM, TGI o llama.cpp, orientados a modelos generativos.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Tamano ONNX int8 |
-|---|---|---|---|---|---|---|
-| paraphrase-multilingual-MiniLM-L12-v2-de (este modelo) | no disponible (MiniLM-L12) | no disponible | de, en (parcial) | Apache 2.0 | ONNX int8 | 33,3 MB |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | no disponible (MiniLM-L12) | no disponible | más de 50 idiomas | Apache 2.0 | safetensors, ONNX | 112,8 MB |
-| Xenova/paraphrase-multilingual-MiniLM-L12-v2 | no disponible (MiniLM-L12) | no disponible | más de 50 idiomas | Apache 2.0 | ONNX int8 | 112,8 MB |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Este modelo (podado) | no disponible (embeddings reducidos a 28.801 filas) | no disponible | de, en | Apache 2.0 | ONNX int8 |
+| `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | no disponible | mas de 50 | Apache 2.0 | safetensors, PyTorch |
+| `Xenova/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | no disponible | mas de 50 | Apache 2.0 | ONNX int8 (112,8 MB) |
 
-La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
+Frente al original de Sentence Transformers, esta version sacrifica cobertura linguistica (de mas de 50 idiomas a aleman e ingles) a cambio de un tercio del tamano en ONNX y una doceava parte del tokenizador. Frente a la exportacion de Xenova, mantiene la misma calidad para texto aleman con tokens conservados, pero descarta el resto de idiomas. Para aplicaciones multilingues reales conviene el original; para aleman en el navegador, esta version es la opcion mas ligera de las tres.
 
 ## Limitaciones y advertencias
 
-- El vocabulario podado está optimizado para alemán y parcialmente para inglés; el uso con otros idiomas degradará la calidad de los embeddings o segmentará las palabras en subpiezas no representativas.
-- Las palabras fuera del vocabulario conservado se dividen en piezas más pequeñas, lo que puede producir vectores ligeramente distintos a los del modelo original para esos textos.
-- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
-- No se han publicado evaluaciones de sesgo, robustez o rendimiento downstream en la información disponible.
-- Riesgo de alucinación no aplica en el sentido generativo, pero la similitud semántica puede producir falsos positivos en tareas de recuperación o clasificación.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar el cumplimiento de las condiciones del modelo base original.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validación communitaria.
-- La fecha de creación indicada (2026-11-03) es futura respecto a la información habitual disponible; conviene verificar la vigencia del repositorio.
+- Solo debe usarse con texto aleman o ingles; con otros idiomas el vocabulario conservado es insuficiente y los embeddings pierden calidad.
+- Las palabras fuera del vocabulario conservado se dividen en piezas mas pequenas, de modo que no fallan, pero el vector resultante puede diferir del original.
+- No es un modelo generativo: no produce texto, no hace razonamiento, tool calling ni agentes.
+- Posible sesgo heredado del corpus original de Sentence Transformers y del corpus de 2seiten usado para seleccionar el vocabulario; no se documenta analisis de sesgos.
+- El riesgo de alucinacion no aplica a la tarea de embeddings, pero si la similitud coseno puede dar falsos positivos en textos cortos o ambiguos.
+- La licencia Apache 2.0 permite uso comercial, igual que el modelo original; conviene conservar el aviso de licencia.
+- El modelo se creo en noviembre de 2026 y tiene 236 descargas y 0 likes: validacion comunitaria practicamente nula, por lo que conviene evaluar su calidad en el dominio propio antes de produccion.
+- No hay garantia de mantenimiento ni de actualizaciones por parte del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MiaMarmeladenbrot/paraphrase-multilingual-MiniLM-L12-v2-de
-- Modelo base original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-- Exportación ONNX de referencia: https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
-- Licencia: https://huggingface.co/MiaMarmeladenbrot/paraphrase-multilingual-MiniLM-L12-v2-de/blob/main/LICENSE
+- Modelo base (Sentence Transformers): https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- Exportacion ONNX de referencia (Xenova): https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
+- Libreria transformers.js: https://huggingface.co/docs/transformers.js

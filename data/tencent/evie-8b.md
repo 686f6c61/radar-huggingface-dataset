@@ -2,94 +2,93 @@
 
 ## Resumen
 
-EVIE-8B es un modelo de recuperacion de documentos visuales desarrollado por Tencent, publicado bajo licencia Apache 2.0 en Hugging Face. Se articula sobre el backbone Qwen3.5-9B y emplea una arquitectura de late-interaction multi-vector tipo ColBERT, generando embeddings de 4096 dimensiones por token para consultas de texto y parches visuales. Su funcion principal es rankear documentos o paginas de imagenes a partir de una consulta textual, preservando detalles de layout, tipografia, graficos y tablas gracias a su representacion token-level.
+EVIE-8B (Evidence-Vector-Informed Embedding) es un modelo de recuperación visual de documentos desarrollado por Tencent, construido sobre el backbone Qwen3.5 y publicado bajo licencia Apache 2.0. No es un modelo generativo al uso, sino un encoder multimodal de tipo late-interaction (familia ColBERT/ColPali) que produce representaciones multi-vector por token de 4096 dimensiones, tanto para consultas de texto como para imágenes de páginas de documento. Su propósito es resolver la búsqueda semántica sobre documentos escaneados, PDFs, tablas, gráficos y maquetación compleja sin necesidad de OCR previo.
 
-El modelo esta diseñado como teacher de la familia EVIE, concretamente del modelo ligero EVIE-4.5B, al que proporciona objetivos de destilacion mediante transferencia de relaciones topologicas y margin hard-negative. Segun la model card, alcanza el primer puesto en el benchmark ViDoRe V3 con un nDCG@10 de 66.75 y en ViDoRe V1+V2 con 92.18, convirtiendose en el recuperador visual mas preciso de su categoria. Incluye 8.41 mil millones de parametros, aunque la longitud de contexto y los idiomas soportados no se especifican en los materiales publicados.
+El modelo cuenta con 8.409.476.336 parámetros (8,4B) y se distribuye en formato safetensors con un repositorio de 16,9 GB. Emplea atención bidireccional completa sobre secuencias multimodal visión-texto, lo que permite interacción cruzada entre los parches visuales y el contexto del prompt. La puntuación de relevancia se calcula mediante MaxSim sobre los embeddings por token, preservando la estructura espacial, la tipografía y las relaciones tabulares que se perderían en una compresión a vector único.
+
+Su relevancia actual radica en que encabeza la clasificación ViDoRe V3 con 66,24 de media por tarea (66,75 nDCG@10 según la model card) y actúa como profesor de destilación para el modelo compacto EVIE-4.5B. Ha sido validado sobre 138 tareas de los conjuntos ViDoRe V1, V2, V3 y JinaVDR, con métricas nDCG, Recall, MAP y MRR.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Late-interaction multi-vector (ColBERT-style) con atencion bidireccional multimodal sobre Qwen3.5 |
-| Parametros totales | 8.409.476.336 (8.41B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Vision-language encoder con late-interaction multi-vector (ColQwen3.5), atención bidireccional completa, backbone Qwen3.5 |
+| Parametros totales | 8.409.476.336 (8,4B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería colpali-engine) |
 
 ## Arquitectura y entrenamiento
 
-EVIE-8B utiliza un encoder de vision y texto derivado de Qwen3.5, denominado ColQwen3.5, que procesa secuencias multimodales con atencion bidireccional completa. En lugar de comprimir cada documento en un unico vector, genera embeddings por token de 4096 dimensiones tanto para la consulta de texto como para los parches de la imagen. La relevancia entre consulta y documento se calcula mediante MaxSim: \( S(Q, D) = \sum_{i=1}^{|Q|} \max_{j=1}^{|D|} (q_i \cdot d_j) \). Esta estrategia permite conservar relaciones espaciales, tipografia y estructura de tablas que los modelos de un solo vector pierden.
+EVIE-8B se apoya en el backbone Qwen3.5 y lo adapta a un esquema de recuperación por late interaction. La consulta textual pasa por un encoder ColQwen3.5 con atención bidireccional y se proyecta a embeddings por token de 4096 dimensiones; la imagen del documento pasa por el encoder visual y se descompone en embeddings multi-vector de parches. La relevancia entre consulta y documento se calcula con MaxSim, sumando sobre cada token de consulta el máximo producto escalar contra los tokens del documento. Este diseño evita la pérdida de información que supone el pooling a un único vector y conserva detalles de maquetación, tipografía y estructura de tablas.
 
-El entrenamiento se basa en los datasets vidore/vidore_benchmark, vidore/vidore_benchmark_v2 y jinaai/jina-vdr, y ha sido validado en 138 tareas de recuperacion. No se han publicado detalles sobre el numero de tokens de entrenamiento ni sobre procesos de RLHF o DPO, que por otra parte no son habituales en modelos de retrieval. EVIE-8B ejerce como modelo anchor para destilar EVIE-4.5B mediante transferencia de relaciones topologicas y supervision con margin hard-negative (ARD). El repositorio GitHub publica los pesos, pipelines de inferencia y suites de evaluacion, aunque el paper formal se anuncia para una actualizacion futura.
+La model card no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO (no disponible). Sí se documenta que el modelo se entrena sobre los conjuntos ViDoRe V1, V2, V3 y JinaVDR, y que ejerce como profesor de destilación para EVIE-4.5B mediante transferencia de relaciones topológicas y supervisión de márgenes con negativos duros (ARD, margin distillation). La innovación destacable es la combinación de representaciones de alta capacidad (4096D por token) con atención bidireccional multimodal y un esquema de destilación que permite trasladar parte de esa precisión a un modelo de 4,5B.
 
 ## Capacidades
 
-- Recuperacion visual de documentos: rankea paginas de PDF, imagenes escaneadas o slides a partir de consultas de texto.
-- Embeddings multi-vector de 4096 dimensiones por token, con matching late-interaction mediante MaxSim.
-- Preservacion de detalles finos de layout, tipografia, graficos y tablas en documentos visuales.
-- Atencion bidireccional en secuencias multimodales que combina tokens de imagen y de texto.
-- Validacion en 138 tareas de los benchmarks ViDoRe V1, V2, V3 y JinaVDR, cubriendo metricas nDCG, Recall, MAP y MRR.
-- No es un modelo generativo: no soporta generacion de texto, tool calling, agentes ni razonamiento paso a paso.
+- Recuperación visual de documentos (visual document retrieval) sobre imágenes de páginas, PDFs escaneados y capturas.
+- Representación multi-vector por token con late interaction (MaxSim) en 4096 dimensiones.
+- Codificación conjunta de consultas de texto e imágenes de documento en un mismo espacio de similitud.
+- Preservación de estructura de tablas, gráficos, tipografía y disposición espacial sin OCR previo.
+- Evaluación y uso dentro del ecosistema colpali-engine y sentence-transformers.
+- No es un modelo generativo: no produce texto libre, ni soporta tool calling, function calling, agentes ni modos de razonamiento explícito.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Busqueda en archivos de contratos legales: permite localizar clausulas especificas en documentos escaneados de varias paginas mediante consultas textuales. La representacion multi-vector conserva la posicion del texto en la pagina y facilita el ranking por relevancia.
-- Recuperacion de documentos en repositorios corporativos: puede indexar PDFs, imagenes y presentaciones internas para que empleados encuentren la pagina exacta donde se menciona un producto, proceso o dato.
-- Búsqueda semantica en presentaciones de ventas: las diapositivas con graficos y tablas se recuperan con precision a partir de preguntas sobre cifras o tendencias, sin necesidad de extracion previa de OCR.
-- Componente de RAG visual: los embeddings late-interaction sirven como recuperador para un LLM generativo, proporcionando el fragmento de documento visual mas relevante como contexto antes de la respuesta.
-- Gestion de facturas y recibos: un sistema puede indexar documentos financieros escaneados y recuperar la factura correcta asociada a un proveedor, numero de pedido o importe.
-- Indexacion de articulos academicos escaneados: permite buscar en revistas antiguas o libros digitalizados por contenido visual y textual, manteniendo el contexto de columnas y figuras.
-- Auditoria de documentos regulatorios: facilita el acceso a paginas concretas de normativas extensas, en las que la estructura de tablas y notas al pie es critica para la comprension.
+- Búsqueda semántica en archivos corporativos escaneados: indexar páginas de PDF como embeddings multi-vector y recuperar por consulta en lenguaje natural; el modelo es adecuado porque conserva la estructura visual que los pipelines OCR pierden.
+- Recuperación sobre documentación técnica con tablas y diagramas: útil para localizar la página exacta de una especificación o un esquema, gracias a la representación por parches y a la puntuación MaxSim.
+- Atención al cliente sobre base documental: recuperar fragmentos de manuales, contratos o facturas escaneadas para alimentar un sistema RAG; el modelo actúa como recuperador y se combina con un LLM generador aparte.
+- Gestión documental y compliance: localizar cláusulas o formularios en expedientes digitalizados masivos sin depender de OCR, reduciendo errores en documentos con maquetación irregular.
+- Investigación académica y análisis de literatura: indexar artículos en PDF y recuperar figuras, tablas o secciones relevantes por similitud visual-semántica.
+- Fine-tuning y destilación: usar EVIE-8B como profesor para entrenar recuperadores más pequeños (como EVIE-4.5B) o para ajustar el modelo a un dominio vertical con datos propios.
+- Construcción de índices multimodales: integrar el encoder en pipelines de sentence-transformers/colpali-engine para generar índices vectoriales multi-vector reutilizables en motores de búsqueda internos.
 
 ## Benchmarks y rendimiento
 
-La tabla siguiente muestra los resultados publicados en la model card para el propio EVIE-8B y algunos modelos comparables de la misma categoria. Los valores corresponden a nDCG@5 para ViDoRe V1 y V2, y nDCG@10 para ViDoRe V3.
+| Benchmark | Métrica | EVIE-8B | EVIE-4.5B | webAI-ColVec1.1-8b | VultronRetrieverPrime-Qwen3.5-8B |
+|---|---|---|---|---|---|
+| ViDoRe V3 (Mean Task) | Media | 66,24 | 65,70 | 64,95 | 64,26 |
+| ViDoRe V3 | nDCG@10 | 66,75 | no disponible | no disponible | no disponible |
 
-| Modelo | Base Model | Parametros | Embed Dim | ViDoRe V1 (nDCG@5) | ViDoRe V2 (nDCG@5) | ViDoRe V3 (nDCG@10) |
-|---|---|---|---|---|---|---|
-| EVIE-8B | Qwen3.5-9B | 8.41B | 4096D | 92.18 | 74.23 | 66.75 |
-| EVIE-4.5B | Qwen3.5-4B | 4.61B | 64-2048D | 92.07 | 73.38 | 66.02 |
-| webAI-ColVec1.1-8b | Qwen2.5-VL | 8.40B | 640D | 91.30 | 65.82 | 65.32 |
-| VultronRetrieverPrime-8B | Qwen3.5-9B | 8.40B | 320D | 92.08 | 68.18 | 64.26 |
-| nemotron-colembed-vl-8b-v2 | Nemotron-8B | 8.80B | 4096D | 92.65 | 65.16 | 63.54 |
-
-No se han publicados resultados en benchmarks generativos como MMLU, HumanEval o GSM8K, ya que el modelo no esta diseñado para tareas de lenguaje generativo.
+La model card indica además validación sobre 138 tareas (ViDoRe V1, V2, V3 y JinaVDR) con métricas nDCG, Recall, MAP y MRR @1/5/10, pero la información proporcionada solo incluye cifras completas de ViDoRe V3. Los resultados de ViDoRe V1 (nDCG@5) y ViDoRe V2 (nDCG@5) no están disponibles en el extracto recibido.
 
 ## Requisitos de hardware
 
-- No se han publicado requisitos oficiales de VRAM para inferencia.
-- Los pesos safetensors ocupan 16.9 GB en disco, lo que da una referencia del espacio necesario para almacenar el checkpoint.
-- El modelo se distribuye a traves de la libreria colpali-engine y es compatible con sentence-transformers segun los tags de Hugging Face.
-- No se especifican GPUs de referencia ni opciones de despliegue en vLLM, llama.cpp, Ollama o TGI.
-- No hay datos publicados sobre latencia o throughput.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 8,4B en fp16 requiere aproximadamente 17 GB solo para pesos, a los que hay que sumar el coste de los embeddings multi-vector por token (4096D), que es elevado en memoria de índice.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, encaja en A100 40/80 GB, H100 y L40S; en consumer, requiere GPUs de 24 GB o más (RTX 3090, RTX 4090) para fp16, con cuantización no documentada.
+- Cabe en consumer GPU: previsiblemente en RTX 4090/3090 en fp16, aunque el coste de almacenamiento de embeddings multi-vector puede ser el factor limitante más que los pesos.
+- Opciones de despliegue: colpali-engine (librería oficial declarada) y sentence-transformers; compatibilidad con vLLM, llama.cpp, Ollama o TGI no está documentada (no disponible).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Embed Dim | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| EVIE-8B | 8.41B | 4096D | Apache 2.0 | Hugging Face + GitHub |
-| EVIE-4.5B | 4.61B | 64-2048D (Prefix-MRL) | Apache 2.0 | Hugging Face |
-| webAI-ColVec1.1-8b | 8.40B | 640D | no disponible | Hugging Face |
-| VultronRetrieverPrime-8B | 8.40B | 320D | no disponible | Hugging Face |
-| nemotron-colembed-vl-8b-v2 | 8.80B | 4096D | no disponible | Hugging Face |
-
-EVIE-8B destaca por la mayor dimension de embedding entre los modelos de 8B comparados y por su ventaja en ViDoRe V3. A diferencia de EVIE-4.5B, no incorpora compresion de tokens HAC ni entrenamiento con Prefix-MRL, pero funciona como teacher de ese modelo.
+| Modelo | Parámetros | Embed dim | ViDoRe V3 (Mean Task) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| tencent/EVIE-8B | 8,4B | 4096D | 66,24 | Apache 2.0 | Hugging Face |
+| tencent/EVIE-4.5B | 4,5B | no disponible (Prefix-MRL) | 65,70 | Apache 2.0 (según repositorio) | Hugging Face |
+| webAI-ColVec1.1-8b | 8,4B | no disponible | 64,95 | no disponible | Hugging Face |
+| VultronRetrieverPrime-Qwen3.5-8B | 8,4B | no disponible | 64,26 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no puede producir texto, codigo ni respuestas a preguntas; su unica funcion es la recuperacion de documentos visuales.
-- Los idiomas soportados no estan especificados. El rendimiento en idiomas fuera de los datasets de entrenamiento puede ser inferior.
-- La representacion multi-vector requiere almacenar embeddings por token para todos los documentos indexados, lo que implica un coste de memoria mayor que los modelos de embedding de vector unico.
-- Puede producir falsos positivos en el ranking si la consulta es ambigua o si el documento contiene informacion visual similar al texto consultado.
-- Al ser una publicacion reciente, no se han documentado sesgos conocidos ni un analisis exhaustivo de alucinaciones, aunque al no generar texto el riesgo de alucinacion es menor.
-- La licencia Apache 2.0 permite uso comercial, pero es necesario verificar la licencia del backbone Qwen3.5 en caso de redistribucion.
+- No es un modelo generativo: no debe emplearse para producir respuestas, código o razonamiento; su función es exclusivamente la recuperación.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre ViDoRe y JinaVDR, puede heredar sesgos de esos corpus.
+- Riesgo de alucinación: no aplica en sentido generativo, pero sí existe riesgo de falsos positivos en la recuperación (documentos irrelevantes con alta puntuación MaxSim).
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados; no se puede asumir cobertura multilingüe sin verificación.
+- Coste de almacenamiento: los embeddings multi-vector de 4096D por token implican índices mucho mayores que los de un modelo de vector único, lo que encarece el almacenamiento y la búsqueda a gran escala.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar los términos del backbone Qwen3.5 y de los datasets de entrenamiento antes de desplegar en producción.
+- Cuantizaciones y formatos alternativos (GGUF, ONNX) no documentados; la integración está pensada para colpali-engine.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/tencent/EVIE-8B
-- GitHub: https://github.com/Tencent/EVIE
-- Blog de analisis: https://www.orcarouter.ai/blog/evie-8b-quiet-release
-- Modelo hermano EVIE-4.5B: https://huggingface.co/tencent/EVIE-4.5B
+- Modelo compacto EVIE-4.5B: https://huggingface.co/tencent/EVIE-4.5B
+- Repositorio GitHub: https://github.com/Tencent/EVIE
+- Paper arXiv: https://arxiv.org/abs/2610.11553
+- Leaderboard ViDoRe: https://huggingface.co/spaces/vidore/vidore-leaderboard
+- Papers with Code: https://paperswithcode.co/paper/114151
+- Backbone Qwen2.5-VL / QwenLM: https://github.com/QwenLM/Qwen2.5-VL

@@ -2,110 +2,117 @@
 
 ## Resumen
 
-Salamandra-2B GDPR + LGPD privacy specialist es una compilación ONNX int4 del modelo Salamandra-2B-Instruct del Barcelona Supercomputing Center (BSC-LT), adaptada por eduardoworrel para una tarea muy concreta: clasificar si un fragmento de una política de privacidad aborda o no un requisito de transparencia determinado. En lugar de generar texto libre, incorpora una cabeza de clasificación (pointer head) que responde "Yes"/"No" en inglés y "Sim"/"Não" en portugués en un único forward pass, devolviendo además una probabilidad y un margen de decisión.
+Salamandra-2B GDPR + LGPD es una especialización del modelo base BSC-LT/salamandra-2b-instruct (2 000 millones de parámetros, desarrollado por el Barcelona Supercomputing Center) orientada a la clasificación de pasajes de políticas de privacidad frente a requisitos de transparencia del RGPD (en inglés) y de la LGPD brasileña (en portugués). El modelo no genera texto libre para responder: incorpora una cabeza de decisión ("pointer head") que, dado un pasaje y una pregunta de tipo elección, devuelve en un único forward pass una respuesta tipada Yes/No (o " Sim"/" Não") acompañada de probabilidad y margen. Sobre esa decisión se puede activar, solo cuando el margen es bajo, una segunda fase generativa ("System 2") que cita la frase justificativa reutilizando el mismo prefill.
 
-La compilación está pensada para ejecutarse íntegramente en el navegador mediante la librería s1s2 sobre onnxruntime-genai 0.19 con backend WebGPU, con un grafo int4 de 2,03 GB de descarga. El autor aplica un esquema de dos sistemas: un "System 1" rápido de una sola pasada para la decisión tipada y un "System 2" generativo que se activa solo cuando el margen de la respuesta cae por debajo de un umbral calibrado por el usuario, reutilizando el mismo prefill.
+El autor es eduardoworrel y la build publicada es una cuantización int4 en formato ONNX para onnxruntime-genai 0.19, pensada para ejecutarse íntegramente en el navegador mediante WebGPU con la librería s1s2 (descarga de 2,03 GB). La arquitectura subyacente es la del modelo Salamandra-2B (transformer decoder-only), sobre la que se ha aplicado un adaptador LoRA y cabezas entrenadas para la tarea de transparencia. La propuesta encaja en el patrón "dual-system": razonamiento rápido y barato (System 1) con escalado selectivo a generación (System 2) cuando la confianza es insuficiente.
 
-El modelo es relevante por su enfoque de privacidad en el borde (todo el cómputo ocurre en el cliente), por su especialización en normativa GDPR (inglés) y LGPD (portugués) y por la integración explícita de una política de escalado basada en confianza. La licencia es GPL-3.0, condicionada por el corpus de entrenamiento GDPR-Transparency-200.
+Es relevante ahora porque demuestra un caso de uso de cumplimiento normativo (RGPD/LGPD) desplegable en cliente, sin servidor, con cuantización agresiva y evaluación de fidelidad frente a los pesos fp32. La licencia es GPL-3.0, condicionada por el corpus de entrenamiento GDPR-Transparency-200.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Salamandra-2B-Instruct) con cabeza de clasificación pointer head añadida |
-| Parametros totales | 2B (modelo base); tamaño del grafo int4: 2,03 GB |
+| Arquitectura | Transformer decoder-only (base Salamandra-2B) con cabeza de decisión tipo pointer head y adaptador LoRA; pipeline dual System 1 / System 2 |
+| Parametros totales | 2 000 millones (modelo base); no se detalla el recuento exacto de la cabeza |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 (onnxruntime-genai 0.19, WebGPU) |
+| Tipos de cuantizacion | int4 (ONNX para onnxruntime-genai 0.19, WebGPU); existen pesos fp32 y bf16 en la variante PyTorch |
 | Idiomas soportados | en, pt |
 | Licencia | GPL-3.0 |
-| Formato de pesos | ONNX (onnxruntime-genai), int4; adaptador PyTorch LoRA y cabezas en repo separado |
+| Formato de pesos | ONNX (onnxruntime-genai); adaptador y cabezas en PyTorch en el repo LoRA; variante alternativa en formato Transformers.js |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de BSC-LT/salamandra-2b-instruct (Apache-2.0), un transformer decoder-only de 2B parámetros, y le añade una cabeza de apuntamiento (pointer head) entrenada para clasificar pares pasaje-requisito. La cabeza se entrenó con exactamente las palabras opcionales " Yes" y " No" (con espacio inicial) en inglés y " Sim" y " Não" en portugués, definidas en los manifiestos `manifest.en.json` y `manifest.pt.json`. Cualquier otra palabra, incluida una traducción, altera el prompt que lee la cabeza y no funciona.
+El modelo parte de BSC-LT/salamandra-2b-instruct, un transformer decoder-only de 2B parámetros del BSC. Sobre él se entrena un adaptador LoRA y una cabeza de decisión que lee las representaciones del modelo para emitir una elección entre dos opciones fijas (" Yes"/" No" en inglés, " Sim"/" Não" en portugués), con probabilidad y margen asociados. El mecanismo System 1 resuelve la pregunta en un solo forward pass; el System 2 se invoca opcionalmente cuando el margen cae por debajo de un umbral calibrado sobre datos etiquetados propios, y reutiliza el prefill para generar una justificación textual sin repetir el coste de codificación.
 
-Los datos de entrenamiento combinan GDPR-Transparency-200 (inglés, GPL-3.0), el corpus Claudinha (portugués, CC BY 4.0), datos sintéticos Kev (legacy_policy, composicional) y, según el autor, no se entrenó con CCPA. La receta de entrenamiento y la cabeza pointer provienen del proyecto Kev (Apache-2.0). La variante publicada en este repo es `joint_k` (2 épocas, merge fp32) cuantizada a int4. La innovación destacable es el esquema System 1 / System 2 con puerta de margen: la decisión tipada se obtiene en un forward pass y, si el margen es bajo, se escala a generación reutilizando el mismo prefill.
+Los datos de entrenamiento combinan GDPR-Transparency-200 (inglés, GPL-3.0), el corpus Claudinha de políticas LGPD (portugués, CC BY 4.0) y datos sintéticos Kev (legacy_policy, compositional). La receta reportada usa 2 épocas con la regla de learning rate de Kev y merge en fp32 para la variante "Kev-faithful"; existe una variante "joint" con 1 época y merge en bf16. CCPA (inglés) nunca se usa en entrenamiento y sirve como evaluación de transferencia zero-shot. La innovación destacable es la separación explícita entre decisión tipada barata y generación condicionada, con compuerta de margen y evaluación de fidelidad frente a los pesos fp32.
 
 ## Capacidades
 
-- Clasificación binaria de cumplimiento de requisitos de transparencia en políticas de privacidad (respuesta tipada con probabilidad y margen).
-- Respuesta en una sola pasada (System 1) con opciones fijas " Yes"/" No" (en) y " Sim"/" Não" (pt).
-- Generación de texto (System 2) para justificar o citar la frase relevante, activable bajo demanda.
-- Escalado condicionado por umbral de margen calibrado sobre datos etiquetados propios.
-- Ejecución en navegador vía WebGPU con s1s2 y onnxruntime-genai.
-- Transferencia zero-shot observada a CCPA (inglés), sin entrenamiento específico.
-- Soporte multilingüe limitado a inglés y portugués.
-- No se documenta soporte de tool calling, agentes ni visión en la información disponible.
+- Clasificación binaria de pasajes de política de privacidad frente a requisitos de transparencia (RGPD en inglés, LGPD en portugués) con salida tipada Yes/No, probabilidad y margen.
+- Decisión en un único forward pass (System 1) con coste de inferencia mínimo.
+- Generación de justificación textual condicionada (System 2) reutilizando el prefill de la decisión.
+- Escalado selectivo mediante umbral de margen calibrado sobre datos propios del usuario.
+- Transferencia zero-shot a CCPA (inglés) sin entrenamiento específico.
+- Capacidades heredadas del modelo base: generación de texto conversacional en inglés y portugués.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible como capacidad nativa; el patrón dual-system implementa un razonamiento de dos etapas.
+- Capacidades multimodales (visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Auditoría de políticas de privacidad en el navegador: cargar el manifiesto GDPR o LGPD y evaluar pasajes contra requisitos de transparencia sin enviar texto a un servidor, gracias al cómputo local en WebGPU.
-- Herramienta de cumplimiento para equipos legales: clasificar automáticamente secciones de una política y marcar las que abordan destinatarios, retención u otras categorías, con probabilidad y margen para priorizar la revisión humana.
-- Triaje con escalado: usar el umbral `thresholdFromQuantile` sobre márgenes de desarrollo para que solo las decisiones de baja confianza pasen a System 2 y generen una cita justificativa.
-- Extensión de un asistente de privacidad en portugués: evaluar políticas LGPD con las opciones " Sim"/" Não" y generar explicaciones en el mismo prefill.
-- Investigación sobre clasificación con cabezas pointer: comparar el rendimiento de la variante `joint_k` frente a `joint` y estudiar el efecto de la cuantización int4 en la precisión balanceada.
-- Prototipado de aplicaciones privacy-first: integrar s1s2 en una web app que procese políticas de terceros localmente, sin infraestructura de inferencia dedicada.
-- Evaluación de transferencia zero-shot: aplicar el modelo entrenado en GDPR/LGPD a textos CCPA para estimar su robustez entre marcos normativos.
+- Auditoría de políticas de privacidad a escala: dado un corpus de políticas y un conjunto de requisitos de transparencia (destinatarios, base legal, plazos de conservación), el modelo responde Yes/No por requisito en un solo forward pass, lo que permite procesar miles de pasajes con coste bajo y umbral de confianza configurable.
+- Revisión previa al lanzamiento de productos: integrado en un pipeline de CI documental, marca qué secciones de una política no abordan un requisito y escala a System 2 solo en los casos de margen bajo para obtener la cita textual que justifica la decisión.
+- Asistencia a equipos de compliance: el modelo señala si un pasaje "aborda" un requisito (no si cumple), sirviendo como triaje que prioriza la revisión humana y reduce el volumen de lectura.
+- Despliegue en navegador para clientes: gracias a la build ONNX int4 con WebGPU (2,03 GB), la clasificación puede ejecutarse en el dispositivo del usuario sin enviar texto de políticas a un servidor, lo que encaja con requisitos de minimización de datos.
+- Investigación en evaluación de fidelidad de cuantización: el repo incluye registros de fidelidad (93,8 % de coincidencia con la cabeza en fp32 sobre 1 112 preguntas de desarrollo) que sirven de base para estudiar el impacto de int4 en tareas de decisión.
+- Transferencia a marcos regulatorios afines: la evaluación zero-shot sobre CCPA (75,0 % de balanced accuracy en fp32) permite prototipar clasificadores para otras normativas antes de disponer de datos etiquetados propios, calibrando después el umbral con un conjunto local.
 
 ## Benchmarks y rendimiento
 
-Precisión balanceada de la cabeza pointer. Pesos fp32 PyTorch de la variante `joint_k` (2 épocas, merge fp32) sobre conjunto de test reservado:
+Resultados publicados en la model card. Balanced accuracy de la cabeza de decisión sobre conjuntos de test retenidos (pesos fp32 PyTorch, variante Kev-faithful):
 
-| Conjunto | Precisión balanceada (%) |
-|---|---|
-| GDPR (inglés), n = 558 | 81,9 |
-| LGPD (portugués), n = 802 | 78,2 |
-| CCPA (inglés, zero-shot), n = 420 | 75,0 |
+| Conjunto | Balanced accuracy (%) | n |
+|---|---|---|
+| GDPR (inglés) | 81,9 | 558 |
+| LGPD (portugués) | 78,2 | 802 |
+| CCPA (inglés, zero-shot) | 75,0 | 420 |
 
-Compilación int4 medida en navegador (Chrome WebGPU, Mac M2 Pro), **preliminar**, sobre split de desarrollo:
+Build int4 medida en navegador (Chrome WebGPU, Mac M2 Pro), preliminar, sobre split de desarrollo:
 
-| Conjunto | Precisión balanceada (%) | Decisiones distintas vs fp32 (%) |
+| Conjunto | Balanced accuracy (%) | Decisiones distintas vs fp32 (%) |
 |---|---|---|
 | GDPR | 81,7 | 7,9 |
 | LGPD | 83,4 | 4,8 |
 | CCPA | 73,1 | 5,5 |
 
-Compilación int4 `joint` en navegador (test reservado): GDPR 57,0 / LGPD 64,0 / CCPA 63,1. Variante `joint` (1 época, merge bf16): GDPR 59,5 / LGPD 67,1 / CCPA 65,0 frente a 81,9 / 78,2 / 75,0 de `joint_k`.
+Variante "joint" int4 en navegador (test retenido): GDPR 57,0 / LGPD 64,0 / CCPA 63,1. Variante "joint" con merge bf16: GDPR 59,5 / LGPD 67,1 / CCPA 65,0.
+
+Fidelidad frente al modelo fp32 (1 112 preguntas de desarrollo, Chrome WebGPU, M2 Pro): coincidencia del 93,8 % con lectura por cabeza (IC 95 %: 92,2–95,1) y 88,5 % con lectura por logits.
+
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Descarga del grafo int4: 2,03 GB; requiere navegador con soporte WebGPU (probado en Chrome sobre Mac M2 Pro).
-- Ejecución en cliente: no requiere GPU de servidor; el cómputo ocurre en la GPU del dispositivo vía WebGPU.
-- VRAM estimada: no disponible de forma explícita; el tamaño del grafo (2,03 GB) da una cota inferior orientativa.
-- GPU de servidor recomendadas: no disponible; el diseño apunta a ejecución en navegador, no a despliegue en A100/H100.
-- Despliegue: onnxruntime-genai 0.19 con la librería s1s2; no se documentan opciones vLLM, llama.cpp, Ollama ni TGI para esta compilación.
+- Descarga de la build int4 ONNX: 2,03 GB (tamaño del repo: 2,1 GB).
+- Inferencia en navegador mediante WebGPU; validado en Chrome sobre Apple M2 Pro.
+- VRAM estimada: no disponible de forma explícita; por el tamaño de los pesos int4, el requisito de memoria gráfica ronda los 2 GB más overhead del runtime.
+- GPU de consumo: cabe en GPUs integradas y discretas modernas con soporte WebGPU; no se especifican modelos concretos.
+- GPU de datacenter (A100, H100): compatibles por capacidad, pero no se reportan cifras de throughput para ellas.
+- Opciones de despliegue: onnxruntime-genai 0.19 con WebGPU vía la librería s1s2; variante alternativa en formato Transformers.js; pesos PyTorch (LoRA y cabezas) en el repo asociado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Salamandra-2B GDPR+LGPD ONNX int4 (este) | 2B | no disponible | Clasificación de requisitos de privacidad + generación | GPL-3.0 | Hugging Face, ejecución en navegador |
-| BSC-LT/salamandra-2b-instruct | 2B | no disponible | Generación de texto general | Apache-2.0 | Hugging Face |
-| eduardoworrel/Salamandra-2B-GDPR-LGPD-LoRA | 2B | no disponible | Adaptador PyTorch y cabezas para la misma tarea | no disponible | Hugging Face |
-| aliasrobotics/alias3-web | no disponible | no disponible | Clasificación en navegador (precursor) | no disponible | Hugging Face |
+| Salamandra-2B GDPR+LGPD (este) | 2B (int4 ONNX) | no disponible | Clasificación de transparencia RGPD/LGPD + justificación | GPL-3.0 | Hugging Face, navegador |
+| BSC-LT/salamandra-2b-instruct | 2B | no disponible | Generación de texto general (en, pt, etc.) | Apache-2.0 | Hugging Face |
+| aliasrobotics/alias3-web | no disponible | no disponible | Clasificación/seguridad en navegador (precursor) | no disponible | Hugging Face |
+
+No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo indica si un pasaje aborda un requisito, no si una política cumple la normativa; no constituye asesoramiento legal.
-- Entrenado con políticas GDPR (inglés) y LGPD (portugués); CCPA solo se evaluó en zero-shot, sin entrenamiento.
-- Las opciones están fijadas (" Yes"/" No", " Sim"/" Não"); traducciones u otras palabras rompen la cabeza.
-- La cuantización int4 introduce divergencias frente a fp32 (7,9 / 4,8 / 5,5 % de decisiones distintas en desarrollo) y la medición en navegador es preliminar.
-- La variante `joint` rinde muy por debajo de `joint_k` (57,0 frente a 81,9 en GDPR), por lo que la elección de variante es crítica.
-- Licencia GPL-3.0 por los datos GDPR-Transparency-200; restringe el uso comercial propietario y exige mantener la atribución de Claudinha (CC BY 4.0), Kev y el modelo base (Apache-2.0).
-- Idiomas limitados a inglés y portugués; no se documenta cobertura de otras lenguas.
-- Riesgo de alucinación en la fase System 2 (generación de citas justificativas); conviene validar las citas producidas.
-- Sin datos publicados de sesgos, latencia ni throughput; el repo registra 0 descargas y 0 likes en el momento de la consulta.
+- El modelo indica si un pasaje aborda un requisito de transparencia, no si la política cumple la normativa; no constituye asesoramiento legal.
+- Entrenado sobre políticas de apps RGPD (inglés) y LGPD (portugués); CCPA nunca se usó en entrenamiento y su rendimiento es inferior.
+- Las palabras de opción están fijadas (" Yes"/" No", " Sim"/" Não"); traducciones u otras variantes rompen la cabeza de decisión.
+- La build int4 introduce divergencias frente a fp32 (7,9 % en GDPR, 4,8 % en LGPD, 5,5 % en CCPA en desarrollo); la variante "joint" int4 cae notablemente en test (57,0 % en GDPR).
+- Los registros de fidelidad se calculan solo sobre el split de desarrollo, sin test.
+- Licencia GPL-3.0 por los datos de entrenamiento GDPR-Transparency-200; condiciona el uso comercial y la redistribución.
+- Riesgo de alucinación en la fase System 2 (generación de la cita justificativa), no evaluado en la información disponible.
+- Idiomas limitados a inglés y portugués; sin soporte declarado de castellano.
+- No se documentan sesgos específicos ni evaluaciones de robustez adversarial.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-genai-int4-S1S2
-- Adaptador PyTorch y cabezas: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-LoRA
+- Modelo en Hugging Face: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-genai-int4-S1S2
+- Adaptador LoRA y cabezas en PyTorch: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-LoRA
+- Variante Transformers.js: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2
 - Modelo base: https://huggingface.co/BSC-LT/salamandra-2b-instruct
 - Librería s1s2: https://github.com/eduardoworrel/s1s2
-- GDPR-Transparency-200: https://github.com/tomcory/privacy-policy-annotator
-- Corpus Claudinha: https://zenodo.org/records/13371639
-- Kev: https://github.com/jaredpalmer/kev
+- Datos GDPR-Transparency-200: https://github.com/tomcory/privacy-policy-annotator
+- Corpus Claudinha (LGPD): https://zenodo.org/records/13371639
+- Receta y cabeza (Kev): https://github.com/jaredpalmer/kev
 - Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
 - Paper Browser Immune System: https://arxiv.org/abs/2611.15302

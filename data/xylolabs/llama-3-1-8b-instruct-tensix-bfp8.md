@@ -1,94 +1,104 @@
 # Xylolabs/Llama-3.1-8B-Instruct-Tensix-BFP8
 
 ## Resumen
+Llama-3.1-8B-Instruct-Tensix-BFP8 es una versión cuantizada del modelo meta-llama/Llama-3.1-8B-Instruct, publicada por Xylolabs y optimizada específicamente para aceleradores Tenstorrent Tensix (Wormhole y Blackhole). El modelo conserva la arquitectura transformer decoder-only de Llama 3.1 con 8.030.261.248 parámetros, pero sustituye el formato de pesos de las proyecciones de atención y MLP por block-floating-point de 8 bits (bfloat8_b), manteniendo en bf16 el LM head, los embeddings y las capas de normalización.
 
-Llama-3.1-8B-Instruct-Tensix-BFP8 es una cuantizacion del modelo meta-llama/Llama-3.1-8B-Instruct realizada por Xylolabs, orientada especificamente a las NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo mantiene la arquitectura transformer decoder-only original de Llama 3.1 con 8.030.261.248 parametros, pero redondea las capas lineales (proyecciones q, k, v, o de atencion y gate, up, down del MLP en las 32 capas) a formato block-floating-point de 8 bits (`ttnn.bfloat8_b`), mientras que el resto de tensores (embeddings, LM head, normalizaciones) permanecen en bf16.
+La propuesta de valor es doble: por un lado, reduce el peso empaquetado a 9,517 GB frente a los 16,06 GB del modelo en bf16, lo que facilita su despliegue en NPUs con memoria limitada; por otro, la cuantización GPTQ sobre la rejilla bfloat8_b logra una fidelidad notablemente superior a la de llama.cpp Q4_K_M, con una KL media frente a bf16 de 0,0008 frente a 0,0323 del Q4_K_M (unas 0,03 veces). Es relevante ahora porque el ecosistema Tenstorrent (tt-metal, ttnn, tt-forge) empieza a ofrecer alternativas viables a GPU para inferencia de LLMs, y este checkpoint es una de las primeras publicaciones que empaqueta Llama 3.1 directamente para esa pila.
 
-La relevancia de esta publicacion es que no se trata de una cuantizacion generica tipo GPTQ/AWQ para GPU, sino de un empaquetado que coincide exactamente con la rejilla numerica que consumen las NPU Tensix via TT-NN, evitando un segundo redondeo en el dispositivo. El resultado son 9.48 bits por peso de media y un tamano empaquetado de 9.52 GB (frente a los ~16 GB del checkpoint bf16 completo), lo que facilita el despliegue en hardware de inferencia de bajo consumo.
-
-El modelo hereda todas las capacidades del Llama 3.1 8B Instruct original (contexto de 128.000 tokens, soporte multilingue en ocho idiomas, tool calling), y su licencia es la Llama 3.1 Community License. Es relevante para equipos que evaluan hardware alternativo a GPU para servir LLMs, aunque conviene senalar que las pruebas publicadas por el autor se han realizado sobre el simulador ttsim, no sobre silicio real.
+El modelo hereda el contexto de 128.000 tokens, el chat template y las capacidades multilingües de Llama 3.1, con soporte declarado para inglés, alemán, francés, italiano, portugués, hindi, español y tailandés. La licencia es Llama 3.1, con las restricciones habituales de Meta para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.1), con capas lineales cuantizadas a BFP8 |
+| Arquitectura | Transformer decoder-only (Llama 3.1), pesos cuantizados en block-floating-point bfloat8_b (BFP8) en proyecciones de atención y MLP |
 | Parametros totales | 8.030.261.248 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del base Llama 3.1: 128.000 tokens) |
-| Tipos de cuantizacion | BFP8 (`ttnn.bfloat8_b`) en proyecciones lineales; bf16 en embeddings, LM head y normas. 9.48 bits/peso de media |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128.000 tokens (heredado de Llama 3.1-8B-Instruct) |
+| Tipos de cuantizacion | BFP8 (bfloat8_b) en q, k, v, o, gate, up, down de las 32 capas; bf16 en LM head, embeddings y normas; existe variante BFP4 del mismo autor |
 | Idiomas soportados | en, de, fr, it, pt, hi, es, th |
-| Licencia | llama3.1 (Llama 3.1 Community License) |
-| Formato de pesos | safetensors (bf16 en almacenamiento, valores ya alineados a la rejilla BFP8) |
+| Licencia | llama3.1 |
+| Formato de pesos | safetensors (empaquetado Tensix, 9,517 GB), compatible con transformers y con ttnn |
+| Tamano del repo | 16,1 GB |
+| Modelo base | meta-llama/Llama-3.1-8B-Instruct |
+| Herramientas asociadas | tensix-bfp-gptq, tensix-kernels, tensix-runner (v0.1.0) |
 
 ## Arquitectura y entrenamiento
+La arquitectura subyacente es la de Llama 3.1-8B-Instruct: un transformer decoder-only con 32 capas, atención con RoPE, GQA y FFN con activación SwiGLU. Xylolabs no reentrena el modelo; aplica cuantización GPTQ directamente sobre la rejilla bfloat8_b de Tensix, de modo que las matrices de proyección de atención (q, k, v, o) y de MLP (gate, up, down) quedan en BFP8, mientras que el LM head, los embeddings y todas las normas se mantienen en bf16 tal como en el modelo base. El fichero `quant4.json` documenta el formato de cada proyección.
 
-La arquitectura es la del Llama 3.1 8B Instruct original: transformer decoder-only denso con 32 capas, atencion multi-cabeza con RoPE y MLP con activacion SwiGLU. No se ha reentrenado ni ajustado el modelo; la unica transformacion es un redondeo post-entrenamiento de las matrices de proyeccion a la rejilla block-floating-point de 8 bits mediante GPTQ, calibrado sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. Cada bloque comparte un exponente propio que coincide con el que utiliza el empaquetador de TT-NN, de modo que el dispositivo no vuelve a redondear.
-
-Los pesos bf16 de partida son byte-identicos a los de la rama principal de meta-llama/Llama-3.1-8B-Instruct, y los ficheros de configuracion, tokenizer y plantilla de chat son los de unsloth/Llama-3.1-8B-Instruct, incluidos sin modificaciones. El repositorio incluye `quant4.json`, que documenta el formato de cada proyeccion. La innovacion tecnica destacable es precisamente la alineacion de la cuantizacion con el formato nativo del hardware Tensix, lo que permite cargar los pesos empaquetados sin conversion adicional; el autor proporciona scripts (`pack_tensix.py`, `verify_grid.py`) para verificar que ningun valor cambia tras el empaquetado.
+El empaquetado se realiza con `tools/pack_tensix.py` y se verifica con `tools/verify_grid.py`, ambos incluidos en el repo y procedentes de tensix-bfp-gptq en el commit 5c52065. La verificación comprueba que cada matriz empaquetada, al descomprimirse con ttnn, coincide exactamente con la representación en torch, y opcionalmente realiza un round-trip por DRAM del dispositivo. El `config.json`, `generation_config.json`, tokenizer y `chat_template.jinja` provienen sin cambios de unsloth/Llama-3.1-8B-Instruct. No se documentan en la información disponible detalles sobre datos de entrenamiento, RLHF/DPO ni innovaciones de decodificación más allá de la propia cuantización.
 
 ## Capacidades
-
-- Generacion de texto conversacional multi-turno con plantilla de chat compatible con el formato Llama 3.1 Instruct.
-- Razonamiento y respuesta a instrucciones, heredados del ajuste instructivo original de Meta.
-- Generacion de codigo y asistencia en tareas de programacion.
-- Razonamiento matematico basico y resolucion de problemas paso a paso.
-- Soporte de tool calling / function calling segun el formato de Llama 3.1 Instruct.
-- Capacidades multilingues en ocho idiomas: ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes.
-- Capacidad de contexto largo heredada del modelo base (hasta 128.000 tokens segun la documentacion de Llama 3.1).
-- No incluye vision, audio ni modo de razonamiento explicito (thinking mode).
+- Generación de texto conversacional multi-turno, con el chat template de Llama 3.1.
+- Razonamiento y respuesta a instrucciones, heredados del modelo base Instruct.
+- Generación de código y matemáticas, en la medida en que lo soporta Llama 3.1-8B-Instruct.
+- Soporte multilingüe para inglés, alemán, francés, italiano, portugués, hindi, español y tailandés.
+- Compatibilidad con tool calling y function calling a través del formato de Llama 3.1 (no se documenta explícitamente en la model card, pero es una capacidad del modelo base).
+- Ejecución en transformers estándar (con `dtype="bfloat16"` y `device_map="auto"`) y en la pila Tenstorrent (ttnn, tt-metal, tt-transformers, tt-forge).
+- Integración con text-generation-inference según los tags del repo, y endpoints compatibles.
+- No se documentan capacidades de visión, audio ni modo thinking explícito.
 
 ## Casos de uso
-
-- Despliegue en NPU Tenstorrent: el caso principal del checkpoint es servir el modelo en Wormhole o Blackhole aprovechando el formato BFP8 nativo de TT-NN, con un peso empaquetado de 9.52 GB que reduce la presion sobre la DRAM del dispositivo.
-- Evaluacion de hardware alternativo a GPU: equipos que comparan el rendimiento de Tensix frente a GPU pueden usar este checkpoint como referencia directa del Llama 3.1 8B Instruct sin reentrenamiento.
-- Atencion al cliente automatizada: al conservar la plantilla de chat y el comportamiento instructivo del modelo original, puede gestionar conversaciones multi-turno con contexto largo en los ocho idiomas soportados.
-- Generacion de codigo en pipelines internos: el soporte de tool calling permite integrarlo en flujos de asistencia a desarrolladores o revision de codigo, siempre que el entorno de ejecucion sea compatible con TT-NN o transformers.
-- Procesamiento de documentos multilingues: la combinacion de contexto largo y cobertura de idiomas europeos y asiaticos lo hace util para resumen y extraccion de informacion en corpus mixtos.
-- Prototipado e investigacion en cuantizacion: el repositorio incluye scripts de verificacion (`pack_tensix.py`, `verify_grid.py`) que sirven como base para estudiar el impacto del redondeo BFP8 en calidad de generacion.
-- Inferencia en entornos con restricciones de memoria: el empaquetado de 9.52 GB permite cargar el modelo en dispositivos con menos memoria que la necesaria para el checkpoint bf16 completo.
+- Despliegue en aceleradores Tenstorrent: el modelo está empaquetado para Wormhole y Blackhole y se ejecuta con tt-transformers sobre tt-metal v0.81.1, lo que permite servir Llama 3.1-8B en NPUs en lugar de GPU.
+- Inferencia en entornos con memoria restringida: los 9,517 GB empaquetados frente a 16,06 GB en bf16 permiten cargar el modelo en dispositivos con menos DRAM, y existe una variante BFP4 para aún menos memoria.
+- Atención al cliente automatizada: con 128.000 tokens de contexto y chat template nativo, puede gestionar conversaciones largas con historial extenso y documentación adjunta.
+- Generación de código en pipelines internos: al conservar las capacidades del modelo Instruct, puede integrarse en asistentes de código y flujos de revisión, siempre que el backend sea compatible con el formato empaquetado.
+- Procesamiento multilingüe: cubre ocho idiomas declarados, útil para soporte y moderación de contenido en mercados europeos, India y Tailandia.
+- Investigación en cuantización: sirve como referencia para estudiar la fidelidad de BFP8 frente a bf16 y comparar con Q4_K_M u otros esquemas, gracias a las herramientas de verificación publicadas.
+- Prototipado en simulación: la model card indica que se validó con ttnn 0.81.1 sobre ttsim, el simulador de Blackhole, lo que permite desarrollar kernels sin hardware físico.
 
 ## Benchmarks y rendimiento
+La model card incluye una tabla de evaluación parcial (el contenido citado se corta tras la cabecera). Los datos disponibles son:
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta una comprobacion de fidelidad numerica: en una prueba de prefill de 2 capas con tt-transformers (tt-metal v0.81.1) y la configuracion indicada, el resultado coincidio con transformers con un PCC de 0.9988. No se aportan datos de MMLU, HumanEval, GSM8K ni metricas de throughput o latencia.
+| Metrica | Valor |
+|---|---|
+| Tamano empaquetado Tensix | 9,517 GB (frente a 16,06 GB en bf16) |
+| KL media frente a bf16 (este modelo) | 0,0008 |
+| KL media frente a bf16 (llama.cpp Q4_K_M) | 0,0323 |
+| Ratio de KL frente a Q4_K_M | 0,03 veces |
+| Top-1 (%) | no disponible en la información proporcionada |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar para este checkpoint.
 
 ## Requisitos de hardware
-
-- VRAM estimada: el checkpoint empaquetado ocupa 9.52 GB; en bf16 para transformers se necesita aproximadamente el tamano del repo (16.1 GB) mas overhead de activaciones y cache KV.
-- GPU recomendadas: no aplica como objetivo principal; el modelo esta pensado para NPU Tensix. Para ejecucion en GPU via transformers seria necesario hardware con al menos 16-24 GB de memoria (RTX 4090, A100, H100), aunque el autor no documenta este escenario.
-- Cabe en consumer GPU: si, en GPUs con 24 GB o mas (por ejemplo RTX 4090) ejecutando la version bf16 mediante transformers, segun el tamano del repo; no se documenta soporte optimizado para este caso.
-- Opciones de despliegue: TT-NN / tt-metal (version probada 0.81.1), tt-transformers con `--use_hf_rope`, tt-forge (tt-xla, aun no probado con este checkpoint), y transformers con `AutoModelForCausalLM` en bf16.
-- Latencia y throughput: no disponibles. Las pruebas del autor se realizaron sobre el simulador ttsim (Blackhole), no sobre hardware real, por lo que no hay cifras de rendimiento fisico.
+- VRAM/DRAM estimada: 9,517 GB para los pesos empaquetados en BFP8; el repo completo ocupa 16,1 GB, por lo que se necesita espacio en disco adicional para la descarga.
+- Aceleradores objetivo: Tenstorrent Wormhole y Blackhole (NPUs Tensix). Validado con ttnn 0.81.1 sobre ttsim (simulador de Blackhole).
+- GPU: no se documenta soporte GPU específico; el modelo se puede cargar en transformers con `dtype="bfloat16"` y `device_map="auto"`, pero el formato BFP8 está pensado para Tensix.
+- Consumer GPU: no hay datos publicados sobre ejecución en RTX 4090 u otras GPU de consumo; la cuantización BFP8 no es un formato estándar de llama.cpp ni de vLLM.
+- Opciones de despliegue: tt-transformers sobre tt-metal v0.81.1 (con `--use_hf_rope`), ttnn, tensix-runner v0.1.0, tensix-kernels v0.1.0, y transformers para carga en bf16.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Objetivo |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xylolabs/Llama-3.1-8B-Instruct-Tensix-BFP8 | 8,03 B | no disponible (base: 128k) | BFP8 en lineales, 9.48 bits/peso | llama3.1 | NPU Tensix (Tenstorrent) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | bf16 | llama3.1 | GPU/CPU generico |
-| unsloth/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | bf16 (base para cuantizaciones) | llama3.1 | Fine-tuning y cuantizacion |
-| Cuantizaciones GPTQ/AWQ de Llama 3.1 8B (genericas) | 8,03 B | 128.000 tokens | 4-8 bits para GPU | llama3.1 | Inferencia en GPU |
+| Llama-3.1-8B-Instruct-Tensix-BFP8 (este) | 8,03 B | 128.000 | BFP8 Tensix, 9,517 GB | llama3.1 | Hugging Face, orientado a NPU Tensix |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | bf16, 16,06 GB | llama3.1 | Hugging Face, GPU/CPU |
+| llama.cpp Q4_K_M de Llama 3.1-8B | 8,03 B | 128.000 | GGUF Q4_K_M | llama3.1 | llama.cpp, CPU/GPU |
+| Xylolabs Llama-3.1-8B-Instruct-Tensix-BFP4 | 8,03 B | 128.000 | BFP4 Tensix | llama3.1 | Hugging Face, Tensix con menos memoria |
 
-La diferencia clave frente a las alternativas es el formato de destino: las cuantizaciones GPTQ/AWQ habituales se disenan para kernels de GPU, mientras que esta version alinea los pesos con la rejilla `bfloat8_b` de TT-NN. En parametros, contexto y licencia es identico al modelo base de Meta.
+La comparación de fidelidad disponible sitúa a este modelo con KL 0,0008 frente a bf16, mientras que Q4_K_M obtiene 0,0323. No hay datos de benchmarks de tarea que permitan comparar rendimiento cualitativo con las alternativas.
 
 ## Limitaciones y advertencias
-
-- El redondeo a BFP8 introduce perdida de precision en las proyecciones lineales; no se han publicado evaluaciones de calidad (perplejidad, benchmarks) que cuantifiquen ese impacto.
-- Las pruebas de ejecucion se han realizado sobre el simulador ttsim, no sobre hardware Wormhole o Blackhole real; el rendimiento y la correccion en silicio no estan verificados por el autor.
-- tt-forge (tt-xla) no se ha probado con este checkpoint; por defecto mantiene bf16 y sus opciones `bfp_bf8` y `bfp_bf4` no estan validadas con estos pesos.
-- En tt-transformers es obligatorio pasar `--use_hf_rope`; sin ese flag el demo permuta las filas de q y k y vuelve a redondear el QKV fusionado, lo que altera el resultado.
-- El demo de tt-transformers empaqueta el LM head en bfloat8_b, por lo que el head bf16 de este checkpoint no es exacto en ese entorno.
-- Riesgo de alucinacion inherente al modelo base, no mitigado por la cuantizacion.
-- Sesgos conocidos del Llama 3.1 original, no evaluados especificamente en esta version.
-- Licencia Llama 3.1 Community License: impone restricciones de uso comercial (umbral de 700 millones de usuarios mensuales), obligaciones de atribucion y politicas de uso aceptable; es necesario revisar los terminos antes de un despliegue en produccion.
-- El modelo no incluye vision, audio ni modo de razonamiento extendido.
+- El formato BFP8 está diseñado para Tensix; no es un formato estándar de llama.cpp, vLLM u Ollama, por lo que la portabilidad a otros backends es limitada.
+- La licencia llama3.1 impone restricciones de uso comercial y obligaciones de atribución; conviene revisar los términos de Meta antes de producción.
+- Al ser una cuantización, puede introducir degradaciones en tareas sensibles a precisión numérica, aunque la KL media frente a bf16 es muy baja (0,0008).
+- Riesgo de alucinación inherente al modelo base Llama 3.1-8B-Instruct; no se documentan mitigaciones adicionales.
+- Sesgos heredados del modelo base y de sus datos de entrenamiento; no se documenta ninguna evaluación de sesgos específica para este checkpoint.
+- El soporte multilingüe se limita a los ocho idiomas declarados; el rendimiento en otros idiomas no está garantizado.
+- La model card está incompleta en la sección de evaluación (la tabla se corta), por lo que faltan métricas de tarea como Top-1.
+- El repo ocupa 16,1 GB aunque los pesos empaquetados sean 9,517 GB, lo que requiere planificar el espacio en disco.
+- No se documentan garantías de latencia ni throughput en producción.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/Xylolabs/Llama-3.1-8B-Instruct-Tensix-BFP8
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Repositorio de codigo (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
-- Config y tokenizer de origen (unsloth): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct/tree/4699cc75b550f9c6f3173fb80f4703b62d946aa5
-- Documentacion de Tenstorrent: https://docs.tenstorrent.com
-- tt-metal (rama v0.81.1): https://github.com/tenstorrent/tt-metal
-- Licencia: https://huggingface.co/Xylolabs/Llama-3.1-8B-Instruct-Tensix-BFP8/blob/main/LICENSE
+- Variante BFP4: https://huggingface.co/Xylolabs/Llama-3.1-8B-Instruct-Tenstorrent-Tensix-BFP4
+- Repositorio tensix-bfp-gptq: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Commit de referencia: https://github.com/XylolabsInc/tensix-bfp-gptq/tree/5c52065fffec88021a0703a1bfe5266e4c674711
+- Release tensix-bfp-gptq v0.1.0: https://github.com/XylolabsInc/tensix-bfp-gptq/releases/tag/v0.1.0
+- Release tensix-kernels v0.1.0: https://github.com/XylolabsInc/tensix-kernels/releases/tag/v0.1.0
+- Release tensix-runner v0.1.0: https://github.com/XylolabsInc/tensix-runner/releases/tag/v0.1.0
+- tt-metal v0.81.1: https://github.com/tenstorrent/tt-metal
+- Documentación Tenstorrent: https://docs.tenstorrent.com
+- Tokenizer y configuración de referencia: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct/tree/4699cc75b550f9c6f3173fb80f4703b62d946aa5

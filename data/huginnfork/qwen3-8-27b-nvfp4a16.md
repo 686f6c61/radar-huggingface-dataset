@@ -2,67 +2,98 @@
 
 ## Resumen
 
-Este repositorio es un **placeholder público** para una cuantización planificada del modelo `Qwen/Qwen3.8-27B`, que aún no ha sido lanzado por Qwen. El autor, `huginnfork`, ha reservado el nombre y la receta de cuantización para que la comunidad conozca de antemano el esquema previsto: NVFP4A16 (pesos de 4 bits en formato NVFP4, activaciones en bf16) sobre el tronco LLM del modelo base. **No hay pesos en el repositorio**; cualquier intento de descarga o inferencia fallará.
+Qwen3.8-27B-NVFP4A16 es una cuantizacion de 4 bits del modelo multimodal Qwen/Qwen3.8-27B, desarrollada por el usuario huginnfork y publicada bajo licencia Apache 2.0. Se trata de un checkpoint de 27.781 millones de parametros que aplica el esquema NVFP4A16 (pesos FP4 con escalas FP8 E4M3 por grupo y activaciones en bf16) exclusivamente a las proyecciones de las MLP, manteniendo en bf16 el bloque de atencion completa, el bloque de atencion lineal (SSM), la torre de vision, el `lm_head` y la cabeza de prediccion multi-token (MTP).
 
-La relevancia de esta ficha es doble: documenta la intención técnica de una cuantización que podría interesar a quienes despliegan modelos Qwen en entornos con VRAM limitada, y sirve como advertencia para evitar confusiones con otros repositorios homónimos. Hasta que el modelo base se publique y la cuantización se construya y mida, no se puede evaluar ningún aspecto de rendimiento o calidad.
+El modelo base pertenece a la familia Qwen3.5 (`qwen3_5`) y combina atencion hibrida lineal y completa con una torre de vision y una cabeza MTP para decodificacion especulativa. La cuantizacion reduce el peso de 51,7 GiB en bf16 a 28,8 GiB en 6 shards, lo que facilita el despliegue en GPUs Blackwell con soporte nativo de FP4.
+
+Su relevancia actual reside en que demuestra una estrategia de cuantizacion selectiva: frente a la release oficial FP8 (que cuantiza 407 modulos), esta version cuantiza solo 192 modulos y obtiene una divergencia menor respecto al padre bf16 en la metrica KLD (0,1267 frente a 0,1001 en despliegue), a costa de un incremento de perplejidad del 3,00 % en wikitext-2.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el modelo base no ha sido lanzado; se espera comparable a la familia Qwen3.5/3.6, posiblemente con bloque SSM `linear_attn` y cabeza MTP) |
-| Parametros totales | 27B (según el nombre, pendiente de confirmación) |
-| Parametros activos | No disponible (se desconoce si el modelo base será MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4A16 (W4A16) planificado; atención, torre de visión, bloque SSM y cabeza MTP en bf16 |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (la del modelo base, según la model card) |
-| Formato de pesos | `compressed-tensors` (planificado, aún sin pesos) |
+| Arquitectura | Transformer hibrido con atencion lineal (SSM) y atencion completa, torre de vision y cabeza MTP |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4A16 (W4A16): pesos FP4 con escalas FP8 E4M3 por grupo, activaciones bf16; solo MLPs cuantizadas |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (compressed-tensors), 6 shards, 28,8 GiB |
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura final, ya que el modelo base `Qwen/Qwen3.8-27B` no ha sido liberado. La model card indica que la receta de cuantización está pensada para un tronco LLM con MLPs, un bloque SSM (`linear_attn`), atención completa (`self_attn`) y una cabeza de predicción multi-token (MTP). El plan es cuantizar únicamente los MLPs a NVFP4 4 bits con activaciones bf16 (W4A16), manteniendo el resto en bf16. El autor señala que, en familias anteriores (Qwen3.5/3.6), la cuantización de activaciones (W4A4) duplicaba la divergencia KL sin ahorro de espacio, por lo que opta por W4A16.
+El modelo base Qwen3.8-27B es un transformer denso multimodal de la familia Qwen3.5 con 64 capas, de las cuales solo 16 son de atencion completa (`full_attention`) y el resto son de atencion lineal (`linear_attn`, bloque tipo Mamba/SSM). Incorpora una torre de vision para entrada image-text-to-text, un `lm_head` y una cabeza de prediccion multi-token (MTP) orientada a decodificacion especulativa. El modelo activa `attn_output_gate: true`, lo que fusiona la puerta de salida de atencion en `q_proj` y duplica su dimension a `[12288, 5120]`.
 
-No se ha realizado ningún fine-tuning, abliteración ni fusión de modelos: se trata de una cuantización pura derivada del modelo base, cuyos términos de licencia se aplican. No hay datos de entrenamiento adicionales.
+Esta version no entrena el modelo: es una cuantizacion post-entrenamiento generada con `llm-compressor` y el formato `compressed-tensors`. La receta (`nvfp4a16_attnbf16.yaml`) cuantiza las 192 proyecciones de las MLP (64 capas x 3 proyecciones) y conserva en bf16 el resto de modulos. La justificacion tecnica es que la puerta multiplicativa de atencion es mas sensible al error de cuantizacion que una proyeccion aditiva, que el bloque SSM degrada de forma medible al cuantizar sus proyecciones recurrentes y que las MLP concentran casi toda la compresion. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las fases de RLHF o DPO del modelo base.
 
 ## Capacidades
 
-- **No aplicable**: el repositorio no contiene pesos, por lo que el modelo no puede ejecutarse ni evaluarse.
-- Capacidades planificadas (según la receta): procesamiento imagen-texto-a-texto (pipeline `image-text-to-text`), generación de texto con razonamiento, y posiblemente tool calling y modo agente si el modelo base las incorpora (no confirmado).
-- No hay información sobre capacidades multilingües, visión o audio más allá del pipeline declarado.
+- Generacion de texto conversacional y razonamiento general en un modelo denso de 27.800 millones de parametros.
+- Procesamiento multimodal image-text-to-text mediante la torre de vision integrada.
+- Generacion de codigo y matematicas (capacidades heredadas del modelo base, sin benchmarks publicados en la informacion disponible).
+- Decodificacion especulativa mediante la cabeza MTP, que permite proponer varios tokens por paso.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponible el listado de idiomas.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- **No aplicable actualmente**: al ser un placeholder sin pesos, no se puede desplegar ni usar.
-- Cuando exista, los casos de uso potenciales serían los de un Qwen3.8-27B cuantizado a 4 bits: inferencia local en GPUs de consumo (p. ej., RTX 4090 con 24 GB), despliegue en edge con vLLM o llama.cpp, y aplicaciones de visión-lenguaje que requieran menor huella de memoria.
-- Se recomienda esperar a la publicación real del modelo y de las métricas de calidad (KLD, perplejidad) antes de planificar cualquier integración.
+- Despliegue en GPUs Blackwell con FP4 nativo: el esquema NVFP4A16 esta pensado para aprovechar las unidades de computo FP4 de las GPU Blackwell, reduciendo el peso a 28,8 GiB y permitiendo servir el modelo en una sola GPU de 48 GB o en configuraciones de 2x24 GB.
+- Asistente multimodal en produccion: la torre de vision en bf16 y el contexto conversacional permiten gestionar consultas sobre imagenes y texto en un unico pipeline image-text-to-text, sin perder precision en la ruta visual.
+- Servicio de chat con latencia reducida: la cabeza MTP habilita decodificacion especulativa, lo que incrementa el throughput de generacion frente a un decode autoregresivo puro, adecuado para APIs de atencion al cliente.
+- Razonamiento sobre documentos largos: la combinacion de atencion hibrida (lineal mas completa) reduce el coste de memoria en secuencias largas, lo que lo hace util para resumen y extraccion sobre documentos extensos.
+- Fine-tuning ligero o adaptadores sobre una base cuantizada: al mantener `lm_head` y rutas de atencion en bf16, es posible aplicar LoRA sobre las MLP cuantizadas con menor degradacion acumulada que en una cuantizacion total.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye recetas, experimentos de escalas y de redondeo, lo que lo convierte en una referencia practica para investigar el impacto de la cuantizacion selectiva en arquitecturas hibridas.
+- Entornos con restricciones de VRAM: al ocupar 28,8 GiB, cabe en GPUs de consumo alto (RTX 5090 de 32 GB) y en A100 de 40 GB, ampliando el acceso al modelo completo sin recurrir a CPU offload.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que, cuando existan pesos, se añadirán métricas de divergencia KL por token frente al base bf16 y perplejidad en wikitext-2-raw, medidas con el harness propio del autor. Hasta entonces, no hay datos que reportar.
+| Modelo | Modulos cuantizados | KLD (solo pesos) | KLD (en despliegue) | PPL (wikitext-2) | ΔPPL |
+|---|---|---|---|---|---|
+| Qwen/Qwen3.8-27B (bf16) | — | 0 | 0 | 6,9416 | — |
+| Qwen/Qwen3.8-27B-FP8 (oficial) | 407 | 0,0523 | 0,1001 | 6,9539 | +0,18 % |
+| Este modelo | 192 | 0,1267 | 0,1267 | 7,1497 | +3,00 % |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Las metricas anteriores miden unicamente la perdida por cuantizacion respecto al padre bf16, con KLD por token sobre 8 muestras de `neuralmagic/calibration` a `max_seq=1024` y perplejidad sobre `wikitext-2-raw` en fragmentos no solapados de 2048 tokens.
 
 ## Requisitos de hardware
 
-- No disponibles: sin pesos, no se puede estimar VRAM, latencia ni throughput.
-- Cuando se publique, se espera que una cuantización W4A16 de 27B requiera aproximadamente 14-16 GB de VRAM en FP16 para los pesos (27B × 2 bytes × 0.5 por cuantización 4 bits ≈ 13.5 GB), más overhead de activaciones y KV cache. Esto cabría en GPUs de 24 GB como RTX 4090, RTX 3090 o A10G, y en A100 40 GB con margen.
-- Herramientas de despliegue previsibles: vLLM (por el uso de `compressed-tensors`), llama.cpp (si se exporta a GGUF), Ollama, TGI.
-- No se dispone de datos de latencia.
+- VRAM estimada para inferencia: aproximadamente 28,8 GiB de pesos en el checkpoint NVFP4A16, mas overhead de activaciones bf16 y cache KV; se recomienda un minimo de 32 GB.
+- GPU recomendadas: Blackwell (B200, RTX 5090) para aprovechar FP4 nativo; tambien funciona en A100 40/80 GB y H100, aunque sin aceleracion FP4 nativa.
+- Cabe en GPU de consumo: si, en RTX 5090 (32 GB) y en RTX 4090 (24 GB) solo con margen muy ajustado o mediante offload parcial.
+- Opciones de despliegue: transformers con `compressed-tensors`; el soporte en vLLM, llama.cpp, Ollama o TGI para el esquema NVFP4A16 no esta confirmado en la informacion disponible.
+- Latencia y throughput: no disponibles. La cabeza MTP permite decodificacion especulativa, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No disponible. No existe ningún modelo comparable real porque el modelo base aún no ha sido lanzado. El repositorio es un placeholder y no se puede comparar con alternativas como Qwen2.5-VL-32B o Qwen3-VL-30B hasta que haya pesos y benchmarks.
+| Modelo | Parametros | Contexto | Cuantizacion | PPL (wikitext-2) | Licencia |
+|---|---|---|---|---|---|
+| Qwen/Qwen3.8-27B (bf16) | 27,8 B | no disponible | bf16 | 6,9416 | apache-2.0 |
+| Qwen/Qwen3.8-27B-FP8 | 27,8 B | no disponible | FP8 W8A8, 407 modulos | 6,9539 | apache-2.0 |
+| Este modelo | 27,8 B | no disponible | NVFP4A16, 192 modulos | 7,1497 | apache-2.0 |
+
+La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de benchmarks de tareas para contrastar con otras familias de tamano similar.
 
 ## Limitaciones y advertencias
 
-- **El repositorio no contiene pesos**: cualquier intento de descarga o inferencia fallará. Es un placeholder.
-- El modelo base `Qwen/Qwen3.8-27B` no ha sido lanzado; la arquitectura y las capacidades están sin confirmar.
-- La receta de cuantización es contingente: si el modelo base resulta ser MoE o tiene una disposición de módulos diferente, la receta cambiará.
-- No hay métricas de calidad (KLD, perplejidad) publicadas; no se puede evaluar la fidelidad de la cuantización.
-- La licencia Apache 2.0 del modelo base se aplicará, pero los términos exactos del modelo base original (Qwen) deberán verificarse cuando se publique.
-- Riesgo de confusión con otros repositorios de cuantización de Qwen: verificar siempre que el repositorio contenga pesos antes de usarlo.
+- Perdida de precision medible: incremento de perplejidad del 3,00 % en wikitext-2 y KLD de 0,1267 frente al padre bf16, superior al 0,1001 en despliegue del checkpoint FP8 oficial.
+- La ruta de atencion, el bloque SSM, la torre de vision, `lm_head` y la cabeza MTP permanecen en bf16, por lo que el ahorro de memoria es menor que en una cuantizacion integral (28,8 GiB frente a 51,7 GiB, no una reduccion a la cuarta parte).
+- Requiere soporte del formato `compressed-tensors` y, para rendimiento optimo, hardware Blackwell con FP4 nativo; en GPUs Ampere o Hopper el beneficio de velocidad puede no materializarse.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; se heredan los del modelo base.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; la cuantizacion puede agravarlo en tareas de razonamiento largo.
+- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingue.
+- Longitud de contexto: no disponible, lo que impide planificar despliegues con secuencias largas sin verificacion previa.
+- Licencia Apache 2.0: permite uso comercial, pero el autor de la cuantizacion no ofrece garantias sobre el comportamiento en produccion.
+- El repositorio incluye experimentos propios del autor; las conclusiones sobre escalas y redondeo deben tratarse como afirmaciones del autor, no como resultados revisados por pares.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16
-- Herramienta de cuantización mencionada: [llm-compressor](https://github.com/vllm-project/llm-compressor)
-- Modelo base (pendiente de publicación): `Qwen/Qwen3.8-27B` (no disponible en Hugging Face en el momento de redactar esta ficha)
+- Modelo en Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Release oficial FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Receta de cuantizacion: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16/blob/main/recipe.yaml
+- Experimento de escalas por bloque: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16/blob/main/block_scale_experiment.json
+- Experimento de redondeo: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16/blob/main/rounding_experiment.json
+- Dataset de calibracion: https://huggingface.co/datasets/neuralmagic/calibration

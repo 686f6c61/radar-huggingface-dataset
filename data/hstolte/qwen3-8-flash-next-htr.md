@@ -2,116 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-HTR es una cuantizacion del modelo Qwen3.8-Flash-Next (desarrollado por el equipo Qwen de Alibaba) realizada por el usuario hstolte bajo el sello HawgAuto, mediante un formato propietario denominado Halo Trellis (HTR). El modelo base es un transformer disperso de tipo Mixture of Experts con 125.000 millones de parametros totales, 6.000 millones activos, 51.000 millones de embeddings n-gram y 4.000 millones adicionales de cabezas MTP (multi-token prediction), con vision integrada. Esta version cuantizada anade un runtime especifico, vLLM HTR v0.2.4, y esta pensada para ejecutarse en hardware AMD Strix Halo (gfx1151, Radeon 8060S) con 128 GB de memoria unificada.
+Qwen3.8-Flash-Next-HTR es una distribución cuantizada del modelo Qwen3.8-Flash-Next de Alibaba Qwen, publicada por el desarrollador independiente hstolte bajo el formato propietario Halo Trellis (HTR). No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint de servicio optimizado para hardware AMD Strix Halo (Radeon 8060S, arquitectura RDNA 3.5, ISA `gfx1151`), que requiere un runtime vLLM modificado (vllm-htr) para funcionar. El modelo base es un transformer de 53.986 millones de parámetros (aproximadamente 54B) con capacidades de generación de texto y conversación.
 
-El interes de esta ficha radica en que muestra un caso atipico: no es una cuantizacion estandar (no hay GGUF ni AWQ ni GPTQ), sino un formato cerrado que exige un binario de vLLM parcheado. El checkpoint completo ocupa 173,759 GB, con tablas PLE de 102,4 GB que permanecen en SSD y se cargan bajo demanda. El repositorio de Hugging Face pesa 182,1 GB e incluye varias variantes (Htr5Core como recomendada, Bf16Core como referencia de investigacion).
+La relevancia de esta ficha radica en que ejemplifica una tendencia creciente: la optimización de modelos grandes para hardware de consumo o semi-profesional mediante cuantización agresiva y kernels AOT (ahead-of-time) específicos para una GPU concreta. La versión v0.2.6 del runtime elimina las pausas por compilación JIT de Triton en mitad de la inferencia y duplica la velocidad de prefill en contextos largos (de 551,9 a 1.137,7 tok/s en prefill cálido de 13K tokens), lo que lo hace viable para despliegues interactivos en una única máquina con GPU integrada.
 
-La release v0.2.4 se centra en mejoras de decodificacion single-stream y en la reparacion del arranque de PLE, sin cambios en pesos, tokenizer ni configuracion. Es, por tanto, una actualizacion de serving, no de modelo. La licencia es qwen-community-1.0, con restricciones que conviene revisar antes de cualquier uso comercial.
+El modelo se distribuye en dos variantes: Htr5Core (recomendada para inferencia) y Bf16Core (referencia de investigación que restaura el núcleo en BF16, sin cualificación de rendimiento). El repositorio completo ocupa 182,1 GB, aunque la model card indica que debe descargarse una sola variante, no el repositorio entero. La licencia es qwen-community-1.0, con restricciones que deben revisarse antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso (segun model card: 125B totales, 6B activos, 51B embeddings n-gram, 4B MTP), con vision integrada |
-| Parametros totales | 53.986.623.187 en safetensors del repositorio; la model card declara 125B totales con 6B activos para la variante Htr5Core (cifras no coincidentes, ver limitaciones) |
-| Parametros activos | 6B (declarado en model card para Htr5Core) |
-| Longitud de contexto | 40.960 configurado en las pruebas de v0.2.4; recetas historicas mencionan 262K configurado y hasta 1M en BF16 y 2M/3M/4M con KV cuantizada, no revalidadas en v0.2.4 |
-| Tipos de cuantizacion | Formato propietario Halo Trellis (HTR), no compatible con GGUF, AWQ, GPTQ ni bitsandbytes; KV cache INT8 disponible |
-| Idiomas soportados | No disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | safetensors dentro de un layout HTR propietario; requiere runtime vLLM HTR v0.2.4 |
+| Arquitectura | Transformer (detalles no disponibles; el modelo base Qwen3.8-Flash-Next no se describe en la informacion proporcionada) |
+| Parametros totales | 53.986.623.187 (~54B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (max-model-len usado en las pruebas del runtime); máximo no confirmado en la informacion disponible |
+| Tipos de cuantizacion | Halo Trellis (HTR) propietaria; variantes Htr5Core y Bf16Core; KV cache en `int8_per_token_head` e `int4_per_token_head`; W4A16 para MoE; V5-Q4 |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (con runtime HTR personalizado; no compatible con vLLM estándar) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next es un transformer con mezcla de expertos enrutada, disenado para activar solo una fraccion de sus parametros por token (6B de 125B). Incorpora ademas 51.000 millones de parametros en embeddings n-gram (PLE, probablemente "phrase-level embeddings" o similar) que actuan como memoria externa y se cargan desde SSD, y 4.000 millones de parametros en cabezas MTP (multi-token prediction) para decodificacion especulativa. La variante incluye vision, lo que la situa en la categoria de modelos multimodales.
+La información disponible no describe la arquitectura interna del modelo base Qwen3.8-Flash-Next (número de capas, dimensión oculta, tipo de atención, composición del dataset de entrenamiento ni si hubo RLHF o DPO). Lo que sí se detalla es la capa de optimización introducida por HTR: el runtime vLLM modificado implementa kernels HIP AOT compilados para `gfx1151`, incluyendo atención QSA con WMMA INT8 (`v_wmma_i32_16x16x16_iu8`), GDN (probablemente un mecanismo de atención o convolución con estado), `causal_conv1d`, MoE en W4A16, HyperConnection, prefill denso, transposición PLE y sampler Gumbel. La versión v0.2.6 añade 20 kernels AOT sin spill y tres extensiones de decodificación con optimizaciones ISA RDNA 3.5 (dual-issue `v_dual_dot2acc_f32_bf16`, `v_perm_b32` de un ciclo y emparejamiento VOPD con bancos escalonados).
 
-Sobre el entrenamiento del modelo base no hay informacion en la documentacion proporcionada: no se detalla el numero de tokens, la composicion del dataset ni si hubo RLHF, DPO o similar. La model card de esta ficha se limita a describir la cuantizacion y el runtime. La innovacion tecnica destacable de esta release es el runtime HTR: decodificacion K6 para el MoE enrutado a 2-4 filas, WMMA denso en proyecciones de 9-15 filas, y un sistema de cache de filas calientes de PLE opcional con presupuesto de RAM configurable. El formato HTR no es un contenedor estandar; requiere el binario vLLM parcheado publicado en GitHub.
+El entrenamiento del modelo base no se documenta en la información proporcionada. La cuantización HTR parece ser post-entrenamiento (PTQ) y mantiene los pesos, tokenizador y configuración sin cambios respecto al checkpoint original; las actualizaciones de versión son exclusivamente de serving. El runtime emplea decodificación especulativa MTP (Multi-Token Prediction) con una tasa de aceptación de 3,21 tokens por paso (73,80% en BF16 KV) y 63,45% en MTP-3 con atención INT8.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento multi-turno, con modo "thinking" activable (usado en las pruebas con temperatura 1.0, top-p 0.95, top-k 20).
-- Capacidades de vision integradas (declaradas en la model card para Htr5Core).
-- Tool calling y function calling: la model card reporta resultados en ToolEval (125/138) y Hermes20 (1850-1950/2000).
-- Razonamiento multi-paso y agentes: soportado por el modo thinking y las cabezas MTP para decodificacion especulativa.
-- Generacion de codigo: evaluado con HumanEval+ (159-162 sobre 164).
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Decodificacion especulativa mediante MTP3 (tres tokens especulativos por paso).
-- Cache KV en INT8 para reducir huella de memoria.
+- Generación de texto y conversación multi-turno (pipeline `text-generation`, etiqueta `conversational`).
+- Razonamiento y respuesta a instrucciones (heredado del modelo base Qwen3.8-Flash-Next, aunque no se detallan capacidades específicas en la información disponible).
+- Soporte de decodificación especulativa MTP para acelerar la generación.
+- Inferencia con KV cache cuantizada en INT8 e INT4 por cabeza de token (`int8_per_token_head`, `int4_per_token_head`).
+- Capacidad de servir múltiples peticiones concurrentes (probado con `c=4` y `c=8`).
+- No se documentan en la información disponible capacidades de visión, audio, tool calling, function calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Despliegue local en estacion de trabajo AMD Strix Halo: el modelo esta disenado explicitamente para gfx1151 con 128 GB de memoria unificada, lo que permite ejecutar un MoE de 125B en hardware consumer de gama alta sin GPUs dedicadas. Apropiado para investigadores que quieran un modelo grande en local.
-- Asistente de codigo en IDE o pipeline CI/CD: con HumanEval+ cercano al techo (162/164) y soporte de tool calling, puede integrarse en flujos de revision de codigo, generacion de tests o refactorizacion asistida, siempre que se acepte la latencia del runtime HTR.
-- Agente conversacional con contexto largo: la configuracion de 40.960 tokens (y recetas historicas de hasta 262K) permite gestionar conversaciones multi-turno extensas o documentos largos en un solo contexto, util para atencion al cliente tecnica o analisis de contratos.
-- Procesamiento de documentos con vision: al incluir vision, puede extraer informacion de capturas, diagramas o PDFs escaneados en flujos de digitalizacion, aunque la model card no detalla el rendimiento en tareas visuales.
-- Evaluacion de modelos y reproducibilidad de investigacion: la variante Bf16Core sirve como referencia en BF16 para comparar el impacto de la cuantizacion HTR frente al modelo original, aunque su serving GPU y contexto maximo no estan cualificados.
-- Prototipado de agentes con tool calling: los resultados en ToolEval y Hermes20 indican que el modelo mantiene capacidad de invocar herramientas tras la cuantizacion, adecuado para construir agentes que consulten APIs o bases de datos.
-- Experimentacion con decodificacion especulativa: las cabezas MTP3 y el runtime K6 permiten estudiar tecnicas de aceleracion de inferencia en hardware AMD, un nicho poco cubierto por el ecosistema NVIDIA.
+- **Servicio de chat interactivo en estación de trabajo AMD Strix Halo**: el modelo puede atender conversaciones multi-turno con hasta 32K tokens de contexto en una única máquina con GPU integrada Radeon 8060S, usando el runtime vLLM-HTR y KV cache INT8. Es adecuado porque el prefill cálido de 13K tokens se completa en 11,44 s y la decodificación greedy alcanza 45,16 tok/s, suficiente para interacción humana fluida.
+- **Procesamiento por lotes de documentos largos**: con 32K de contexto y prefill frío de 13K tokens a 910,5 tok/s, se pueden resumir o extraer información de informes, contratos o artículos de forma local, sin depender de API en la nube. La cuantización HTR reduce el espacio de pesos para que quepan en la memoria unificada del sistema.
+- **Generación de código asistida en local**: aunque no se documenta soporte explícito de tool calling, el modelo base Qwen3.8-Flash-Next está orientado a texto y conversación; puede usarse como asistente de autocompletado o revisión en un IDE local, con la ventaja de que el runtime elimina las pausas por JIT de Triton durante la inferencia (`0` avisos), lo que evita bloqueos en sesiones interactivas.
+- **Investigación en cuantización y kernels para RDNA 3.5**: el repositorio incluye kernels AOT, scripts de cualificación y datos de evidencia (`evidence/v0.2.6-release-qualification.json`), lo que lo convierte en una base para estudiar el rendimiento de WMMA INT8, W4A16 MoE y decodificación especulativa en `gfx1151`.
+- **Despliegue de bajo coste en hardware de consumo**: al no requerir GPU de datacenter (A100/H100), el modelo permite a desarrolladores individuales o equipos pequeños servir un modelo de ~54B en una máquina con memoria unificada grande, siempre que acepten la dependencia del runtime HTR y la licencia qwen-community-1.0.
+- **Evaluación comparativa de runtimes de inferencia**: los datos de throughput y latencia publicados (prefill, decodificación greedy, concurrencia `c=4` y `c=8`) permiten comparar el rendimiento de vLLM-HTR frente a otras pilas de serving en el mismo hardware, útil para decisiones de arquitectura en equipos de infraestructura.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son de la release v0.2.4 y comparan con la release anterior (predecesor), no con otros modelos. Se presentan como "selected-stack screens", no como resultados universales.
+Los datos disponibles son mediciones de serving del runtime, no benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K, etc.). No se han publicado resultados de benchmarks de calidad en la información disponible.
 
-| Benchmark | Predecesor | v0.2.4 | Notas |
-|---|---|---|---|
-| HumanEval+ | 159 / 164 | 162 / 164 | Configuracion 262K, MTP3, INT8 KV, thinking on |
-| ToolEval | 125 / 138 | 125 / 138 | Sin cambio |
-| Hermes20 | 1850 / 2000 | 1950 / 2000 | Mejora de 100 puntos |
-| Throughput single-stream (steady) | 48,05 tok/s | 55,35 tok/s | +15,19% |
-| Throughput mixed-prompt (output/full wall) | 34,08 tok/s | 36,41 tok/s | +6,82% |
-| Decode mediano mixed-prompt | 48,10 tok/s | 53,83 tok/s | +11,91% |
-| Throughput 2 streams (steady) | — | -5,60% | Sin mejora establecida |
-| Throughput 3 streams (steady) | — | +2,44% | Sin mejora establecida |
-| Throughput 4 streams (steady) | — | +4,14% | Sin mejora establecida |
+| Carga de trabajo | v0.2.5 KV8 | v0.2.6 | Cambio |
+|---|---:|---:|---|
+| Prefill cálido 13K (13.018 tok) | 551,9 tok/s (23,58 s) | 1.137,7 tok/s (11,44 s) | 2,06× más rápido |
+| Prefill frío 13K (13.017 tok) | 551,9 tok/s (23,58 s) | 910,5 tok/s (14,30 s) | 1,65× más rápido |
+| Decodificación greedy `c=1` (128 tok) | 45,05 tok/s | 45,16 tok/s | +0,2% |
+| `c=4 × 4K` (16.702 ctx), wall / suma decode | 23,82 s / 57,25 tok/s | 21,77 s / 61,65 tok/s | 1,09× wall / +7,7% dec |
+| `c=8` alta concurrencia (8×128), wall / agg | 19,03 s / 53,80 tok/s | 15,51 s / 66,01 tok/s | 1,23× wall |
+| Avisos JIT de Triton en inferencia | múltiples | 0 | eliminados |
 
-No se han publicado resultados de MMLU, GSM8K ni comparativas con modelos de la competencia en la informacion disponible.
+Datos adicionales de v0.2.5 frente a v0.2.4: con KV BF16 y `max-num-seqs=4`, 32K ctx, MTP3, 4 GiB KV, la decodificación greedy `c=1` pasó de 42,21 a 44,60 tok/s (+5,7%); la decodificación 4K de 54,59 a 59,56 tok/s (+9,1%); `c=4` concurrente (t=0,7, 4×256) de 71,33 a 100,50 tok/s de suma (+40,9%). Con KV INT8 y `max-num-seqs=8`, el prefill 13K pasó de 409,6 a 551,9 tok/s (+34,7%) y la decodificación 13K de 43,39 a 63,92 tok/s (+47,3%).
 
 ## Requisitos de hardware
 
-- Plataforma objetivo: Linux sobre AMD Strix Halo / Radeon 8060S (gfx1151), con 128 GB de memoria unificada y SSD local rapido.
-- VRAM estimada: no aplica en el sentido tradicional; el modelo usa memoria unificada. El checkpoint completo ocupa 173,759 GB, de los cuales 102,4 GB de tablas PLE permanecen en SSD y se cargan bajo demanda. Debe reservarse memoria para el runtime, KV cache, compilacion y el sistema operativo.
-- GPU recomendadas: AMD Strix Halo (unica plataforma cualificada). No hay soporte declarado para A100, H100, RTX 4090 ni otras GPUs NVIDIA en esta release.
-- Cabe en consumer GPU: si, en el sentido de que Strix Halo es un APU de consumo profesional; no cabe en GPUs consumer discretas de 24 GB o menos.
-- Opciones de despliegue: exclusivamente vLLM HTR v0.2.4 (imagen `ghcr.io/hawgauto/vllm-htr@sha256:cbd537589cc7f2e6e9d73940d5da49a9d956ffbfd795277f54b15787284eeab5`). No es compatible con vLLM estandar, Transformers, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 55,35 tok/s en single-stream steady y 36,41 tok/s en mixed-prompt con la configuracion de pruebas (MTP3, 4 secuencias maximo, contexto 40.960). El arranque en frio de v0.2.2 tardo 446,810 s en modo nativo y 143,003 s en modo seeded; no se garantiza que se repita.
-- Almacenamiento: se requiere SSD rapido; las tablas PLE no caben en RAM junto con el resto del modelo.
+- **GPU objetivo**: AMD Strix Halo / Radeon 8060S (RDNA 3.5, ISA `gfx1151`). El runtime está compilado específicamente para esta arquitectura; no se documenta soporte para otras GPU.
+- **VRAM/memoria**: el repositorio completo ocupa 182,1 GB, pero debe descargarse una sola variante (Htr5Core o Bf16Core). No se especifica el tamaño exacto de cada variante en la información disponible. Las pruebas usan 4 GiB de KV cache con `max-num-seqs=4` u `8` y contexto de 32K, lo que sugiere que la memoria unificada del sistema debe acomodar pesos más KV.
+- **GPU de consumo**: sí, cabe en hardware de consumo/semi-profesional AMD Strix Halo con memoria unificada; no se documenta compatibilidad con RTX 4090, A100 ni H100.
+- **Despliegue**: exclusivamente mediante el runtime vLLM-HTR (imagen de contenedor con kernels AOT). No se menciona compatibilidad con llama.cpp, Ollama, TGI ni vLLM estándar.
+- **Latencia y throughput**: prefill cálido de 13K a 1.137,7 tok/s; decodificación greedy `c=1` a 45,16 tok/s; `c=8` con 66,01 tok/s agregados. Tasa de aceptación MTP3 del 73,80% con KV BF16 y 63,45% con atención INT8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-HTR (esta ficha) | 125B totales, 6B activos (declarado); 53,99B en safetensors | 40.960 configurado (hasta 262K en recetas historicas) | qwen-community-1.0 | HTR propietario | Hugging Face + runtime vLLM HTR |
-| Qwen3.8-Flash-Next (base) | 125B totales, 6B activos | No disponible en la informacion | qwen-community-1.0 | safetensors | Hugging Face |
-| Bf16Core (variante del mismo repo) | No disponible | No disponible | qwen-community-1.0 | BF16 | Hugging Face (referencia de investigacion) |
-
-No se dispone de datos de benchmarks ni especificaciones de modelos de la competencia (por ejemplo, otros MoE de ~100B) en la informacion proporcionada, por lo que la comparativa se limita a las variantes del propio repositorio.
+No se dispone de datos de benchmarks de calidad ni de especificaciones del modelo base Qwen3.8-Flash-Next en la información proporcionada, por lo que no es posible establecer una comparativa rigurosa con alternativas de la misma categoría. La comparación disponible es exclusivamente de rendimiento de serving entre versiones del propio runtime (v0.2.4, v0.2.5 y v0.2.6), ya presentada en la sección de benchmarks. Cualquier comparación con otros modelos de ~54B o con otras distribuciones cuantizadas del mismo modelo base requeriría datos que no se han publicado aquí.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parametros: la model card declara 125B totales con 6B activos, pero los safetensors del repositorio suman 53.986.623.187 parametros. Es posible que la cifra de 125B incluya las tablas PLE (51B) y las cabezas MTP (4B) almacenadas por separado, pero no se aclara en la documentacion. Verificar antes de dimensionar infraestructura.
-- Formato cerrado: HTR no es GGUF ni ningun estandar abierto. Sin el runtime vLLM HTR v0.2.4 no se puede ejecutar el modelo. Esto crea dependencia de un unico mantenedor (HawgAuto) y de una imagen de contenedor concreta.
-- Plataforma unica: solo cualificado para AMD Strix Halo / gfx1151. No hay soporte declarado para NVIDIA ni para otras GPUs AMD.
-- Bucle de razonamiento conocido: HumanEval/157 entro en bucle con semilla 42 en la configuracion seleccionada, reproducido dos veces. De 44 semillas probadas, una provoco el bucle. No es una estimacion de tasa poblacional ni se afirma que los bucles esten resueltos.
-- Sin mejoras multi-stream ni de prefill: los cambios en 2/3/4 streams son pequenos y no estadisticamente concluyentes (-5,60% a +4,14%). No prometer escalado por concurrencia.
-- Contexto maximo no revalidado: las cifras de 1M (BF16) y 2M/3M/4M (KV cuantizada) son recetas historicas en imagenes antiguas, no afirmaciones de capacidad de v0.2.4.
-- Arranque en frio lento: 446,810 s en modo nativo y 143,003 s en seeded (v0.2.2). La compilacion de nuevas formas puede anadir latencia.
-- Idiomas no declarados: no hay informacion sobre cobertura multilingue; asumir sesgos hacia ingles y chino por el origen del modelo base.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo LLM, puede generar contenido plausible pero falso, especialmente en modo thinking con temperatura alta.
-- Licencia qwen-community-1.0: etiquetada como "other" en Hugging Face; revisar el archivo LICENSE antes de uso comercial. No se detallan restricciones en la informacion proporcionada.
-- Variante Bf16Core: su serving GPU, rendimiento y contexto maximo no estan cualificados; usarla solo como referencia de investigacion.
-- Cache de filas calientes PLE desactivada por defecto; activarla consume RAM de CPU adicional.
-- Sin datos de sesgos: no hay evaluacion de sesgos publicada en la informacion disponible.
+- **Dependencia de hardware y runtime**: el modelo solo funciona con el runtime vLLM-HTR y kernels compilados para `gfx1151` (AMD Strix Halo). No es portable a otras GPU sin recompilación, y la model card marca `inference: false` en los metadatos, lo que indica que no es un checkpoint listo para pipelines estándar.
+- **Licencia**: qwen-community-1.0 (etiquetada como `other`). Es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial; la información disponible no detalla las restricciones concretas.
+- **Idiomas**: no se especifican los idiomas soportados; no se puede garantizar calidad multilingüe sin evaluación.
+- **Sesgos y alucinación**: no se documentan evaluaciones de sesgo ni de tasa de alucinación para este checkpoint ni para el modelo base en la información proporcionada. Al ser un modelo de ~54B cuantizado, cabe esperar degradación adicional respecto al original, aunque no se cuantifica.
+- **Contexto**: las pruebas se limitan a 32.768 tokens (`max-model-len=32768`); no se confirma si el modelo soporta contextos mayores ni con qué degradación.
+- **Madurez**: la versión v0.2.6 es una actualización de serving reciente (noviembre de 2026) con 0 likes y sin benchmarks de calidad publicados; el ecosistema de herramientas en torno a HTR es reducido y específico.
+- **Variantes**: Bf16Core se describe como referencia de investigación sin cualificación de rendimiento en GPU; no debe usarse en producción sin validación propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HTR
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Runtime vLLM HTR v0.2.4: https://github.com/HawgAuto/vllm-htr/releases/tag/htr-v0.2.4
-- Codigo fuente del runtime (commit): https://github.com/HawgAuto/vllm-htr/tree/62cb02413de66042cb11c6dc853922618c368887
-- Imagen de contenedor: ghcr.io/hawgauto/vllm-htr@sha256:cbd537589cc7f2e6e9d73940d5da49a9d956ffbfd795277f54b15787284eeab5
-- Documentacion de variantes: docs/VARIANTS.md (en el repositorio)
-- Historial de releases: docs/RELEASES.md (en el repositorio)
-- Guia de ejecucion y sampling: docs/RUNNING.md#sampling-for-existing-clients (en el repositorio)
-- Tablas de cualificacion v0.2.2: https://github.com/HawgAuto/vllm-htr/blob/main/htr_runtime/releases/v0.2.2/QUALIFICATION.md
-- Evidencia de cualificacion v0.2.4: evidence/v0.2.4-release-qualification.json (en el repositorio)
-- Paper de referencia citado en tags: arxiv:2406.11235 (no verificado en la informacion proporcionada)
+- Runtime vLLM-HTR (release v0.2.6): https://github.com/HawgAuto/vllm-htr/releases/tag/htr-v0.2.6
+- Repositorio del runtime: https://github.com/HawgAuto/vllm-htr
+- Historial de releases (documentación del repo): docs/RELEASES.md
+- Detalles de variantes (documentación del repo): docs/VARIANTS.md
+- Evidencia de cualificación v0.2.6: evidence/v0.2.6-release-qualification.json
+- Paper referenciado en los tags (arXiv:2406.11235): https://arxiv.org/abs/2406.11235

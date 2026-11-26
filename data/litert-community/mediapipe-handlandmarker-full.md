@@ -2,89 +2,98 @@
 
 ## Resumen
 
-MediaPipe Hand Landmarker (Full) es un paquete de tareas de MediaPipe que agrupa dos redes neuronales para la deteccion y el seguimiento de manos en imagenes y video: un detector de palmas y un regresor de 21 puntos clave tridimensionales. Lo publica la organizacion `litert-community` en Hugging Face y esta disenado para ejecutarse en el dispositivo (on-device) en Web, Android, iOS, Python y Flutter a traves de la API `HandLandmarker` de MediaPipe. No es un modelo de lenguaje, sino un modelo de vision por computador especializado en keypoint detection, con pesos en FP16 y un tamano total de 7,8 MB, lo que lo hace apto para entornos con recursos muy limitados.
+MediaPipe Hand Landmarker (Full) es un paquete de tareas de MediaPipe que agrupa dos redes neuronales para la detección y el seguimiento de manos en imágenes y vídeo. Lo publica la comunidad `litert-community` a partir de los modelos originales de Google MediaPipe, y se distribuye como un único fichero `hand_landmarker.task` de 7,82 MB con pesos en FP16. Resuelve el problema de localizar manos en una imagen y estimar 21 puntos clave tridimensionales de la mano (nudillos y articulaciones de los dedos) con latencia propia de ejecución en dispositivo.
 
-El modelo resuelve dos problemas encadenados: primero localiza las manos en el fotograma completo mediante un detector single-shot, y despues regresa sobre la region recortada las coordenadas normalizadas de 21 articulaciones, coordenadas metricas en un sistema de referencia 3D basado en el modelo articulado GHUM, una puntuacion de presencia de mano y la lateralidad del sujeto (izquierda o derecha). En modos `VIDEO` y `LIVE_STREAM` reutiliza la caja delimitadora del fotograma anterior para localizar la mano y solo vuelve a disparar el detector de palmas cuando la confianza cae por debajo del umbral, lo que reduce el coste computacional en secuencias.
+La relevancia del modelo está en su naturaleza *on-device*: está empaquetado como TensorFlow Lite y funciona en Web, Android, iOS, Python y Flutter sin necesidad de GPU de servidor ni conexión a la nube. Combina un detector de palmas de tiro único (que localiza manos en el fotograma completo) con un regresor de puntos clave que opera sobre el recorte de la mano. En los modos `VIDEO` y `LIVE_STREAM`, el pipeline reutiliza el cuadro delimitador del fotograma anterior para localizar la mano y solo reactiva el detector de palmas cuando la confianza de presencia o de seguimiento cae por debajo del umbral.
 
-Su relevancia actual radica en que ofrece una solucion de seguimiento de manos lista para produccion, con licencia Apache 2.0, pesos cuantizados a FP16 y soporte multiplataforma, sin necesidad de infraestructura de servidor. Esta orientado a aplicaciones de interaccion gestual, realidad aumentada, accesibilidad y analisis de video en tiempo real.
+El modelo está entrenado con aproximadamente 30.000 imágenes reales junto con poses de mano sintéticas renderizadas sobre fondos variados. No es un modelo de lenguaje ni un modelo generativo: es un modelo de visión por computador especializado en detección de puntos clave, con licencia Apache 2.0 y disponible en Hugging Face con 3.383 descargas en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Dos etapas: detector de palmas single-shot + regresor de landmarks (CNN, formato TFLite) |
-| Parametros totales | no disponible |
+| Arquitectura | Pipeline de dos etapas: detector de palmas (single-shot detector) + regresor de 21 puntos clave 3D sobre recorte de mano; ambos en TensorFlow Lite |
+| Parametros totales | no disponible (el paquete pesa 7,82 MB; submodelos de 2,34 MB y 5,48 MB) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision; entrada de imagen 192x192 y 224x224) |
-| Tipos de cuantizacion | FP16 (pesos del bundle) |
-| Idiomas soportados | no disponible (no aplica) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | Pesos en FP16 (`float16`) en el bundle distribuido; tensores de entrada/salida en `float32` |
+| Idiomas soportados | no aplica (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite empaquetado en `.task` (`hand_landmarker.task`, 7,82 MB) |
+| Formato de pesos | TFLite (`.tflite`) empaquetado en bundle `.task`; el bundle contiene `hand_detector.tflite` y `hand_landmarks_detector.tflite` |
+| Tamano del bundle | 7,82 MB (7.819.105 bytes) |
+| Entrada del detector | `[1, 192, 192, 3]` float32, normalización media 0,0 / desviación 255,0 |
+| Entrada del regresor | `[1, 224, 224, 3]` float32, normalización media 0,0 / desviación 255,0 |
+| Salida del detector | `[1, 2016, 18]` (cajas de palma) y `[1, 2016, 1]` (puntuaciones) |
+| Salida del regresor | `[1, 63]` (21 puntos × 3 coordenadas), `[1, 1]` (presencia) y `[1, 1]` (lateralidad) |
+| Puntos clave | 21 landmarks 3D (coordenadas normalizadas) + 21 coordenadas métricas de mundo vía modelo GHUM |
+| Plataformas | Web, Android, iOS, Python, Flutter |
 
 ## Arquitectura y entrenamiento
 
-El bundle `hand_landmarker.task` contiene dos submodelos TFLite. El primero, `hand_detector.tflite` (2,34 MB), es un detector single-shot con entrada `[1, 192, 192, 3]` en `float32` y normalizacion `mean=[0.0]`, `std=[255.0]`; produce 2016 anclas con 18 valores de regresion de palma y una puntuacion de deteccion. El segundo, `hand_landmarks_detector.tflite` (5,48 MB), recibe un recorte de `[1, 224, 224, 3]` y devuelve cuatro salidas: 63 valores de landmarks normalizados, una puntuacion de presencia, una puntuacion de lateralidad y 63 valores de landmarks en coordenadas de mundo. Ambos submodelos incluyen metadatos `TFLITE_METADATA` con autor `MediaPipe` y ficheros asociados (`labels.txt` y `handedness.txt`).
+El bundle implementa un pipeline en cascada de dos etapas. La primera etapa, `hand_detector.tflite` (2,34 MB), es un detector de palmas de tiro único que procesa la imagen completa a 192×192 y devuelve 2.016 candidatos de caja con sus puntuaciones. La segunda etapa, `hand_landmarks_detector.tflite` (5,48 MB), toma un recorte de la mano a 224×224 y regresa 21 coordenadas 3D de nudillos en espacio de imagen normalizado, 21 coordenadas métricas de mundo estimadas mediante el modelo articulado GHUM, una puntuación de presencia y la lateralidad del sujeto (`Left`/`Right`).
 
-El entrenamiento se realizo con aproximadamente 30 000 imagenes reales junto con poses de mano sinteticas renderizadas sobre fondos variados. La model card no detalla el numero de tokens ni un pipeline de RLHF/DPO, algo esperable en un modelo de vision. La innovacion tecnica destacable es el seguimiento por reutilizacion de la caja del fotograma anterior en modos de video y streaming, que evita ejecutar el detector de palmas en cada fotograma y reduce la latencia. La estimacion de coordenadas metricas de mundo se apoya en el modelo articulado GHUM.
+El entrenamiento se realizó con aproximadamente 30.000 imágenes reales de manos junto con poses sintéticas renderizadas sobre fondos variados, según indica la model card. No se especifican en la información disponible el número exacto de tokens (no aplica), la composición detallada del dataset ni si hubo etapas de ajuste fino con RLHF o DPO (no procede en un modelo de visión). La innovación técnica destacable es el modo de seguimiento: en `VIDEO` y `LIVE_STREAM`, el pipeline reutiliza el cuadro delimitador del fotograma anterior para localizar la mano y solo vuelve a ejecutar el detector de palmas cuando la confianza de presencia o de seguimiento cae por debajo del umbral, lo que reduce el coste computacional en secuencias.
 
 ## Capacidades
 
-- Deteccion de manos en imagen completa mediante el detector de palmas, con soporte para varias manos simultaneas (`num_hands` configurable).
-- Regresion de 21 puntos clave 3D por mano en coordenadas normalizadas de imagen.
-- Regresion de 21 puntos clave 3D en coordenadas metricas de mundo estimadas con el modelo GHUM.
-- Puntuacion de presencia de mano por deteccion.
-- Clasificacion de lateralidad (izquierda o derecha) referida a la mano del sujeto, no a la del observador.
-- Seguimiento temporal en modos `VIDEO` y `LIVE_STREAM` con reutilizacion de la caja del fotograma previo.
-- Ejecucion on-device en Web, Android, iOS, Python y Flutter mediante la API `HandLandmarker` de MediaPipe.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues; no es un modelo generativo.
+- Detección de manos en imágenes estáticas y en flujos de vídeo o cámara en directo.
+- Regresión de 21 puntos clave 3D por mano (nudillos y articulaciones de los dedos), con índices documentados del 0 (`WRIST`) al 20 (`PINKY_TIP`).
+- Estimación de 21 coordenadas métricas de mundo mediante el modelo articulado GHUM.
+- Puntuación de presencia de mano en la imagen.
+- Clasificación de lateralidad (`Left`/`Right`) referida a las manos del sujeto, no del observador.
+- Seguimiento multi-fotograma con reutilización de la caja del fotograma anterior en modos `VIDEO` y `LIVE_STREAM`.
+- Ejecución en dispositivo en Web, Android, iOS, Python y Flutter.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo de visión especializado, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Interaccion gestual en tiempo real: el modelo permite reconocer la posicion de las 21 articulaciones de la mano en cada fotograma y mapearlas a comandos de interfaz, aprovechando el modo `LIVE_STREAM` y el seguimiento por caja previa para mantener la latencia baja en dispositivos moviles.
-- Realidad aumentada y filtros: superponer objetos virtuales anclados a puntos clave concretos (por ejemplo, `INDEX_FINGER_TIP` o `WRIST`) gracias a las coordenadas normalizadas y de mundo que devuelve el regresor.
-- Accesibilidad: control de aplicaciones o cursores mediante gestos de mano para usuarios con movilidad reducida, desplegando el bundle en Android, iOS o Web sin servidor.
-- Analisis de video deportivo o de rehabilitacion: extraer trayectorias de articulaciones a lo largo de una secuencia para evaluar movimientos de la mano, usando el modo `VIDEO` con seguimiento temporal.
-- Educacion y demostraciones interactivas: aplicaciones web que muestran en el navegador el esqueleto de la mano detectado, apoyandose en la demo web oficial y en el runtime de MediaPipe para Web.
-- Prototipado rapido en Python: validar pipelines de vision con `mediapipe` y `huggingface_hub` en pocas lineas, descargando el `.task` directamente desde el repositorio.
-- Sistemas de senalizacion o control sin contacto en entornos industriales o sanitarios, donde un modelo de 7,8 MB puede ejecutarse en hardware embebido sin conexion.
+- Control por gestos en interfaces de usuario: el modelo proporciona 21 puntos clave 3D por fotograma, lo que permite mapear gestos de la mano a acciones de la interfaz (selección, arrastre, zoom) en aplicaciones Android, iOS o web sin enviar vídeo a la nube.
+- Realidad aumentada y filtros: la estimación de coordenadas métricas de mundo vía GHUM permite anclar objetos virtuales a la mano con escala realista en aplicaciones de RA y efectos de cámara.
+- Educación y rehabilitación: el seguimiento de articulaciones de los dedos sirve para evaluar ejercicios de motricidad fina o posturas de la mano en aplicaciones de fisioterapia, con la ventaja de ejecutarse localmente y preservar la privacidad del paciente.
+- Interacción sin contacto en entornos industriales o sanitarios: el modo `LIVE_STREAM` permite operar paneles y equipos mediante gestos cuando no se quiere tocar superficies, con latencia propia de ejecución en dispositivo.
+- Accesibilidad: traducción de lengua de signos a nivel de puntos clave (no de lenguaje natural) y control de dispositivos por parte de usuarios con movilidad reducida, usando la lateralidad y la posición de los dedos.
+- Análisis deportivo y ergonomía: seguimiento de la postura de la mano en deportes de raqueta o en tareas de montaje para detectar desviaciones posturales, procesando el vídeo en el propio dispositivo.
+- Prototipado rápido en Python: el cuaderno de Colab y la API de Python permiten validar pipelines de detección de manos antes de portar la lógica a móvil o web.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de precisión (mAP, error de puntos clave, latencia) ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el bundle completo ocupa 7,82 MB en FP16, por lo que la huella de memoria es muy reducida y cabe en GPUs integradas o en CPU.
-- GPU recomendadas: no se especifican; el modelo esta pensado para ejecucion on-device en CPU, GPU movil o aceleradores delegados de TFLite (GPU delegate, NNAPI, Core ML) segun la plataforma.
-- Compatibilidad con GPU de consumo: si, dada la baja huella de memoria; no requiere GPUs de datacenter como A100 o H100.
-- Opciones de despliegue: MediaPipe Tasks en Python, Android, iOS, Web y Flutter; el formato TFLite permite su uso con el runtime de TensorFlow Lite y con LiteRT.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: el bundle completo pesa 7,82 MB en FP16, por lo que la huella de memoria es mínima y no requiere GPU dedicada; puede ejecutarse en CPU.
+- GPU recomendadas: no aplica en el sentido habitual; el modelo está pensado para CPU, GPU integrada o aceleradores móviles (NNAPI en Android, Core ML en iOS, WebGL/WebGPU en navegador según el backend de MediaPipe).
+- Cabe en cualquier GPU de consumo e incluso en dispositivos móviles de gama media; no requiere A100, H100 ni RTX 4090.
+- Opciones de despliegue: MediaPipe Tasks en Python, Android, iOS, Web y Flutter; el fichero `.task` se carga directamente con la API `HandLandmarker`. No está pensado para vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos de lenguaje.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; dependen del backend y del hardware. El diseño con seguimiento entre fotogramas reduce el coste al evitar ejecutar el detector de palmas en cada fotograma.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
+| Modelo | Tipo | Puntos clave | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MediaPipe Hand Landmarker (Full) | no disponible (bundle de 7,82 MB) | Imagen 192x192 y 224x224 | 21 landmarks 3D + lateralidad | Apache 2.0 | Hugging Face, MediaPipe Tasks |
-| MediaPipe Hand Landmarker (Lite) | no disponible | no disponible | 21 landmarks 3D | Apache 2.0 | Referenciado en la model card upstream |
-| Otras alternativas de hand tracking | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MediaPipe Hand Landmarker (Full) | Pipeline TFLite de dos etapas | 21 3D + 21 métricos (GHUM) | 192×192 y 224×224 | Apache 2.0 | Hugging Face, MediaPipe Tasks |
+| MediaPipe Hand Landmarker (Lite) | Pipeline TFLite de dos etapas | 21 3D | no disponible en esta ficha | Apache 2.0 | MediaPipe (variante lite mencionada en la model card) |
+| Otros detectores de mano genéricos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La model card menciona una variante Lite frente a la Full y un model card upstream de Google con evaluacion de fairness (octubre de 2021), pero no se proporcionan especificaciones detalladas de la variante Lite ni de modelos competidores que permitan una comparacion cuantitativa.
+La información disponible solo permite comparar con la variante Lite mencionada en el nombre de la model card upstream (`Model Card Hand Tracking (Lite_Full)`), de la que no se detallan especificaciones numéricas en esta ficha. No se dispone de datos de benchmarks para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- La lateralidad devuelta corresponde a la mano del sujeto, no a la del observador; en fotogramas de selfie con espejo hay que invertir las coordenadas o la etiqueta para evitar confusiones.
-- El modelo esta entrenado principalmente con unas 30 000 imagenes reales y poses sinteticas; puede degradarse en condiciones de iluminacion extrema, oclusiones severas, manos fuera de encuadre o fondos muy similares al tono de piel.
-- Al ser un modelo de vision no generativo, no produce texto ni razonamiento; no debe emplearse para tareas de lenguaje, codigo o matematicas.
-- No se dispone de informacion sobre sesgos demograficos especificos en la model card incluida; el PDF upstream de fairness (octubre de 2021) es la referencia citada para evaluar este aspecto.
-- El seguimiento por reutilizacion de caja puede perder la mano si el movimiento entre fotogramas es muy rapido, obligando a reejecutar el detector de palmas.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del model card upstream de Google y de las dependencias de MediaPipe.
-- No se han publicado cifras de latencia, throughput ni benchmarks de precision en la informacion disponible, lo que limita la evaluacion previa al despliegue en produccion.
+- Sesgos conocidos: la model card upstream incluye un documento de equidad (`Model Card Hand Tracking (Lite_Full) with Fairness Oct 2021.pdf`), lo que indica que Google evaluó sesgos de rendimiento por tono de piel y otras variables; no se detallan los resultados en la información disponible.
+- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de falsos positivos y de puntos clave imprecisos en manos ocluidas, borrosas o fuera de encuadre.
+- Limitaciones de contexto o idioma: no aplica contexto textual ni idioma; el modelo es puramente visual y no procesa lenguaje.
+- Lateralidad: `Left` y `Right` se refieren a las manos del sujeto, no a las del observador; en fotogramas de selfi espejados hay que invertir las coordenadas o la etiqueta.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo upstream de Google MediaPipe y las dependencias de la librería MediaPipe.
+- Caveats para producción: el rendimiento depende del backend de ejecución y del hardware; el modo de seguimiento puede perder la mano si la confianza cae por debajo del umbral y provocar un salto en la detección; el bundle está en FP16, por lo que la precisión numérica es inferior a la de un modelo en FP32.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/litert-community/MediaPipe-HandLandmarker-Full
-- Fichero del bundle: https://huggingface.co/litert-community/MediaPipe-HandLandmarker-Full/blob/main/hand_landmarker.task
-- Demo web oficial: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/hand_landmarker
-- Documentacion de MediaPipe Hand Landmarker: https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker
-- Paper citado (arXiv:2006.10214): https://arxiv.org/abs/2006.10214
-- Model card upstream (PDF en el repositorio): https://huggingface.co/litert-community/MediaPipe-HandLandmarker-Full/blob/main/Model%20Card%20Hand%20Tracking%20%28Lite_Full%29%20with%20Fairness%20Oct%202021.pdf
+- Documentación de MediaPipe Hand Landmarker: https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/hand_landmarker/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/hand_landmarker/ios
+- Cuaderno Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/hand_landmarker/python/hand_landmarker.ipynb
+- Ejemplo Web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/hand-landmarker.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/hand_landmarker
+- Demo en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/hand_landmarker
+- Paper de referencia (arXiv:2006.10214): https://arxiv.org/abs/2006.10214

@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "kayceesamuel/Qwen3.8-27B-NF4DQ · Hugging Face",
-      "url": "https://huggingface.co/kayceesamuel/Qwen3.8-27B-NF4DQ",
-      "snippet": "kayceesamuel / Qwen3.8-27B-NF4DQ like 0 GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen3.8-27B - GitHub",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
-    },
-    {
-      "title": "Fine-tuned Models for Qwen/Qwen3.8-27B - Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.8-27B",
-      "snippet": "Explore machine learning models."
-    },
-    {
-      "title": "Qwen3.8 - lmstudio.ai",
-      "url": "https://lmstudio.ai/models/qwen3.8",
-      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
-    }
-  ]
+  "sources": []
 }

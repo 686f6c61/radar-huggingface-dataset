@@ -2,117 +2,100 @@
 
 ## Resumen
 
-drex-v1.5-9B-MLX-8bit es una conversión a 8 bits en formato MLX del modelo base nace-ai/drex-v1.5, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería `mlx_lm`. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos originales se cuantizan a 8 bits sin cambios de arquitectura, con el objetivo de reducir el espacio en disco y la memoria residente para inferencia local en Macs con chip M-series. El repositorio incluye tanto los pesos como el código de carga (`drex_mlx.py`) y utilidades de cabecera de decisión (`head.pt`, `decision_config.json`).
+drex-v1.5-9B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo nace-ai/drex-v1.5, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería `mlx_lm`. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos, la arquitectura y el tokenizador son idénticos a los del modelo original; únicamente cambia la representación numérica de los pesos para reducir el espacio en disco y el consumo de memoria en equipos Mac con chip de la serie M.
 
-El modelo deriva de la familia Qwen3.5 (el campo `qwen3_5_text` aparece en los tags de Hugging Face) y cuenta con 8.953.803.264 parámetros totales según el índice de safetensors, lo que lo sitúa en la categoría de 9B. La model card documenta un modo de uso orientado a "decisiones" estructuradas (tipos `noul`, `choice` y `score`) sobre texto de entrada, con latencias medidas en un Mac mini M4 Pro de 48 GB. La licencia es la NACE AI OpenRAIL-M (modificada), heredada del modelo upstream.
+El modelo subyacente emplea una arquitectura de transformer con atención lineal en al menos la primera capa (`linear_attn.in_proj_a`), etiquetada en Hugging Face con el tipo `qwen3_5_text`, lo que sugiere una variante de la familia Qwen 3.5 orientada a texto. Cuenta con 8.953.803.264 parámetros totales (aproximadamente 9B) y una cabeza de decisión adicional (`head.pt`, 8 MB) que permite plantear tareas de clasificación estructurada —tipo `noul`, `choice` y `score`— sobre una entrada de texto.
 
-La relevancia actual radica en que ofrece una vía práctica para desplegar un modelo de ~9B en hardware de consumo Apple con un consumo de memoria medido de aproximadamente 11,3 GB en pico, manteniendo una calidad declarada idéntica a la versión bf16 en las evaluaciones internas del autor.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de 9B en hardware de consumo Apple con un consumo de memoria medido de 11,31 GB de RSS máximo y una latencia mediana de decisión de 431 ms, manteniendo una calidad prácticamente idéntica a la de los pesos bf16 originales según las métricas publicadas por el autor de la conversión.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Qwen3.5 (tag `qwen3_5_text`); incluye capas con `linear_attn` según el audit de cuantización |
-| Parametros totales | 8.953.803.264 |
+| Arquitectura | Transformer con atención lineal (`qwen3_5_text`), cabeza de decisión adicional |
+| Parametros totales | 8.953.803.264 (≈9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (MLX); se compara contra los pesos bf16 originales |
+| Tipos de cuantizacion | 8 bits (MLX); existe una variante 4-bit del mismo autor |
 | Idiomas soportados | no disponible |
 | Licencia | nace-ai-open-rail-m-license-modified (OpenRAIL-M modificada) |
-| Formato de pesos | safetensors (layout MLX, 4 shards) + `head.pt` |
+| Formato de pesos | safetensors (layout MLX), más `head.pt`, `config.json`, tokenizer y glue de inferencia (`drex_mlx.py`, `decision_config.json`, `joint_config.json`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al modelo base nace-ai/drex-v1.5, del que se indica únicamente que pertenece a la familia Qwen3.5 (`qwen3_5_text`). El audit de cuantización incluido en el repositorio (`kl_audit.json`) revela la presencia de capas de atención lineal (`model.language_model.layers.0.linear_attn.in_proj_a.weight`), lo que sugiere un diseño híbrido con mecanismos de atención lineal junto a atención estándar. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+La arquitectura es un transformer de tipo `qwen3_5_text` con atención lineal en la primera capa, según se deduce del tensor con mayor error de cuantización (`model.language_model.layers.0.linear_attn.in_proj_a.weight`). El repositorio incorpora además una cabeza de decisión (`head.pt`) y ficheros de configuración específicos (`decision_config.json`, `joint_config.json`) que permiten invocar un método `decide()` con tareas tipadas: `noul` (sí/no), `choice` (selección entre criterios) y `score` (puntuación ordinal). Esta funcionalidad no es generación de texto libre, sino clasificación estructurada sobre una entrada.
 
-Esta publicación concreta no entrena ni modifica el modelo: aplica cuantización a 8 bits sobre los pesos bf16 originales. El autor documenta una auditoría tensor a tensor (427 tensores comparados, histograma KL de 512 bins) con un KL medio de 3,84e-04 y un máximo de 5,47e-03, localizado en la capa `linear_attn.in_proj_a` de la capa 0. Adicionalmente, el repositorio incorpora una cabecera de decisión (`head.pt`, 8 MB) y ficheros de configuración (`decision_config.json`, `joint_config.json`) para el modo de decisión estructurada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original. La conversión aquí descrita no introduce reentrenamiento ni cambios arquitectónicos: solo aplica cuantización de pesos a 8 bits para MLX. El autor publica una auditoría de la cuantización a nivel de tensor: 427 tensores comparados, KL media de 3,84e-04 y KL máxima de 5,47e-03, con 249 tensores con KL distinto de cero.
 
 ## Capacidades
 
-- Generación de texto y procesamiento de lenguaje natural sobre el modelo base Qwen3.5 subyacente.
-- Modo de decisión estructurada con tres tipos de tarea: `noul` (respuesta binaria sí/no), `choice` (clasificación entre criterios definidos) y `score` (puntuación sobre una lista de criterios ordenados).
-- Inferencia en Apple Silicon mediante `mlx_lm`, con API Python propia (`Drex.decide(texto, especificacion)`).
-- Procesamiento de texto de entrada de al menos 512 tokens en las pruebas documentadas.
-- Soporte de plantilla de chat (`chat_template.jinja`).
-- No soporta imagen (512x512) ni detección de cajas ("box"), según las pruebas del autor.
-- Tool calling, function calling, agentes multi-step, vision, audio o modo thinking: no disponible en la información proporcionada.
+- Clasificación estructurada mediante `decide()`: tareas de tipo `noul` (pregunta binaria), `choice` (selección entre opciones con criterios descriptivos) y `score` (puntuación sobre una escala ordinal).
+- Procesamiento de texto de hasta 512 tokens en las pruebas publicadas (404 tokens reales medidos).
+- Toma de decisiones de baja latencia: mediana de 431 ms y 5,69 decisiones cortas por segundo sostenidas.
+- Conversión MLX optimizada para Apple Silicon con `mlx_lm`.
+- No soporta imagen (512x512: no soportado) ni tareas de bounding box (no soportado).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo en la información disponible.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: el modelo puede clasificar una consulta entrante entre equipos (por ejemplo, `billing` frente a `shipping`) usando el tipo `choice`, con una latencia mediana de decisión de 431 ms medida en M4 Pro.
-- Detección de intención de reembolso: con el tipo `noul` se responde a preguntas binarias como "¿el cliente quiere un reembolso?" sobre el texto del ticket, adecuado para enrutado automático en sistemas de atención al cliente.
-- Priorización de incidencias: el tipo `score` permite puntuar la severidad de un error (por ejemplo, `cosmetic`, `annoying`, `blocks`) y ordenar la cola de trabajo de un equipo de operaciones.
-- Clasificación de errores de infraestructura: mensajes como "disk quota exceeded on the worker" pueden evaluarse con criterios predefinidos para decidir escalado o resolución automática.
-- Procesamiento por lotes en local: con 5,69 decisiones cortas por segundo sostenidas en M4 Pro, sirve para clasificar grandes volúmenes de mensajes sin depender de la nube.
-- Prototipado y evaluación en equipos con Mac: al ocupar 10,47 GB en disco y 11,29 GB de memoria pico, permite iterar sobre pipelines de decisión en portátiles y mini-PC Apple sin GPU dedicada.
-- Verificación de integridad de despliegues: los checksums SHA-256 publicados por fichero permiten validar descargas antes de integrarlas en entornos controlados.
+- Triaje de tickets de soporte: el modelo puede clasificar una incidencia entrante en categorías predefinidas (`billing`, `shipping`, etc.) mediante una tarea `choice`, como se muestra en el ejemplo del autor con el pedido #7821. Adecuado por su latencia de 431 ms y su capacidad de definir criterios descriptivos por categoría.
+- Detección de intención de reembolso: con una tarea `noul` sobre el texto del cliente ("I was charged twice for order #4411...") se obtiene una respuesta binaria sobre si el usuario solicita reembolso, útil en flujos de atención al cliente automatizados.
+- Priorización de incidencias: mediante una tarea `score` con criterios ordinales (`cosmetic`, `annoying`, `blocks`) se puede asignar severidad a errores técnicos como "disk quota exceeded on the worker", integrándose en sistemas de ticketing.
+- Enrutamiento en pipelines de soporte: al permitir varias llamadas independientes por tipo de tarea sobre la misma entrada, encaja en arquitecturas donde cada clasificador es un objeto separado y se compone la decisión final.
+- Procesamiento local en Mac: al ejecutarse con MLX sobre Apple Silicon con 11,3 GB de memoria pico, es viable desplegar el modelo en estaciones de trabajo Mac mini M4 Pro sin GPU dedicada.
+- Clasificación por lotes de baja latencia: con 5,69 decisiones cortas por segundo en el hardware de referencia, es apto para preclasificar grandes volúmenes de mensajes antes de un modelo mayor.
+- Evaluación y prototipado en investigación: la disponibilidad de métricas de calibración (PPL 2,068 frente a 2,053 en bf16) y de KL por tensor permite estudiar el impacto de la cuantización en tareas de decisión.
 
 ## Benchmarks y rendimiento
 
-Evaluaciones internas del autor (Mac mini M4 Pro 48 GB, MLX 8-bit) frente a bf16:
+| Metrica | bf16 (original) | 8-bit (esta version) | 4-bit (misma familia) |
+|---|---|---|---|
+| Accuracy | 78,4% | 78,4% | 84,1% |
+| noul | 84,6% | 84,6% | 92,3% |
+| choice | 80,0% | 80,0% | 84,0% |
+| score | 66,7% | 66,7% | 70,8% |
+| PPL de calibración | 2,053 | 2,068 | 1,978 |
+| KL de salida vs original | referencia | 4,69e-04 | 5,28e-02 |
+| Tamano en disco | 17,91 GB | 10,47 GB | 6,5 GB |
+| Latencia mediana | 476 ms | 431 ms | 1292 ms |
 
-| Metrica | 8-bit | bf16 |
-|---|---|---|
-| Accuracy | 78,4% | 78,4% |
-| Noul | 84,6% | 84,6% |
-| Choice | 80,0% | 80,0% |
-| Score | 66,7% | 66,7% |
-| Calibration PPL | 2,068 | 2,053 |
-| Decision Index 0.4.1 | 49,17 | no disponible |
-
-Rendimiento medido en el mismo equipo:
-
-| Metrica | Valor |
-|---|---|
-| Carga del modelo | 4,96 s (4,86 s en la medición de disco) |
-| RSS pico | 11,31 GB (11,29 GB en la medición de disco) |
-| Texto 512 tokens (404 tok, media de 5 tras 3 warm-up) | binary 1121 ms · multichoice 1204 ms · score 1121 ms |
-| Latencia mediana de decisión | 431 ms |
-| Decisiones cortas sostenidas | 5,69/s |
-| Imagen 512x512 | no soportada |
-| Box | no soportada |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Mediciones realizadas por el autor en un Mac mini M4 Pro de 48 GB con MLX 8-bit. El índice de decisión (Decision Index 0.4.1) es 49,17. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM unificada: aproximadamente 11,3 GB de memoria residente pico medidos en inferencia MLX 8-bit.
-- Espacio en disco: 10,47 GB para el repositorio completo.
-- Hardware validado: Mac mini M4 Pro con 48 GB de memoria unificada.
-- GPU dedicadas (A100, H100, RTX 4090): no aplicable directamente, al ser un formato MLX orientado a Apple Silicon; no hay datos de despliegue en CUDA.
-- Cabe en GPU de consumo Apple: sí, en equipos con al menos ~16 GB de memoria unificada (estimación basada en el RSS pico de 11,3 GB; no confirmado por el autor para configuraciones menores).
-- Opciones de despliegue: `mlx_lm` y el cargador propio `drex_mlx.py`; no se documentan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: mediana de 431 ms por decisión y 5,69 decisiones cortas por segundo en M4 Pro 48 GB.
+- VRAM/RAM unificada estimada: 11,31 GB de RSS pico medido en carga estándar y 11,29 GB en disco; el modelo ocupa 10,47 GB en disco.
+- Hardware de referencia: Mac mini M4 Pro con 48 GB de memoria unificada.
+- Cabe en equipos Apple Silicon de gama consumer con al menos 16 GB de memoria unificada, aunque no se ha verificado en configuraciones inferiores a la de referencia.
+- Despliegue: librería `mlx_lm` con el cargador `drex_mlx.py` incluido en el repositorio; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Tiempo de carga: 4,86-4,96 s.
+- Throughput: 5,69 decisiones cortas por segundo sostenidas; latencia mediana de 431 ms.
+- Procesamiento de texto de 512 tokens: 1121 ms (binario), 1204 ms (multichoice), 1121 ms (score), promediado sobre 5 ejecuciones tras 3 de calentamiento.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks públicos ni de comparaciones directas con otros modelos en la información proporcionada. Como referencia estructural, el modelo base pertenece a la familia Qwen3.5 (~9B), pero no se han publicado métricas comparativas frente a otras variantes de esa familia ni frente a alternativas de tamaño equivalente.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| sergolsub/drex-v1.5-9B-MLX-8bit | ≈9B | no disponible | OpenRAIL-M modificada | safetensors MLX 8-bit | 10,47 GB, 431 ms mediana |
+| sergolsub/drex-v1.5-9B-MLX-4bit | ≈9B | no disponible | OpenRAIL-M modificada | safetensors MLX 4-bit | 6,5 GB, 1292 ms mediana, accuracy 84,1% |
+| nace-ai/drex-v1.5 (bf16) | ≈9B | no disponible | OpenRAIL-M modificada | safetensors bf16 | 17,91 GB, 476 ms mediana, referencia de calidad |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| sergolsub/drex-v1.5-9B-MLX-8bit | 8,95B | no disponible | OpenRAIL-M modificada | safetensors MLX 8-bit |
-| nace-ai/drex-v1.5 (upstream) | no disponible (base del anterior) | no disponible | OpenRAIL-M modificada | no disponible (presumiblemente bf16) |
-| Alternativas de ~9B | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información sobre otros modelos comparables de la misma categoría (clasificación estructurada sobre texto con cabeza de decisión) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una conversión cuantizada, no un modelo nuevo: cualquier limitación del modelo upstream nace-ai/drex-v1.5 se hereda, incluidas posibles restricciones de uso.
-- La licencia OpenRAIL-M modificada impone restricciones de uso (típicamente prohibiciones sobre usos dañinos y requisitos de atribución); debe revisarse el fichero LICENSE antes de uso comercial.
-- No hay información sobre idiomas soportados; no se puede garantizar calidad en castellano ni en otros idiomas distintos del inglés de los ejemplos.
-- No se ha publicado la longitud de contexto, lo que impide planificar despliegues con documentos largos.
-- No soporta entrada de imagen ni detección de cajas, pese a que el modelo base pudiera tener capacidades multimodales.
-- Riesgo de alucinación inherente a los modelos generativos; en tareas de decisión binaria o de clasificación el impacto puede ser menor, pero no se han publicado evaluaciones de calibración fuera del conjunto interno del autor.
-- La evaluación de calidad (78,4% de accuracy) procede de pruebas internas del autor, no de benchmarks públicos independientes.
-- El rendimiento medido corresponde a un único equipo (Mac mini M4 Pro 48 GB); no hay datos para otros chips Apple ni para GPUs dedicadas.
-- El repositorio incluye código Python (`drex_mlx.py`, `code/kev/*`) que debe auditarse antes de ejecutarlo en entornos de producción.
-- El campo `pipeline` no está definido en Hugging Face, lo que puede afectar a la integración automática con herramientas que dependan de esa etiqueta.
+- La licencia es OpenRAIL-M modificada, con posibles restricciones de uso comercial; debe revisarse el fichero LICENSE del repositorio y, en caso de conflicto, prevalece la licencia del repositorio upstream nace-ai/drex-v1.5.
+- El modelo no es de generación de texto libre en su modo principal: la API documentada es `decide()`, orientada a tareas de clasificación estructurada.
+- No soporta entrada de imagen ni tareas de detección de objetos (bounding box).
+- La longitud de contexto no está documentada; las pruebas se limitan a 512 tokens.
+- No se documentan idiomas soportados; el único ejemplo publicado está en inglés.
+- La conversión 8-bit introduce una KL media de 4,69e-04 frente a bf16, con un máximo de 4,54e-03 por fila; aunque pequeña, no es nula.
+- Curiosamente, la variante 4-bit obtiene mejores métricas de accuracy que la 8-bit en la evaluación del autor (84,1% frente a 78,4%), lo que sugiere que la métrica de accuracy puede no ser monotónica con la precisión de pesos y debe interpretarse con cautela.
+- No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que la comparación con otros modelos de 9B es limitada.
+- Riesgo de alucinación no cuantificado en la información disponible.
+- El despliegue está restringido a Apple Silicon con MLX; no hay soporte documentado para CUDA, ROCm ni otras plataformas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/drex-v1.5-9B-MLX-8bit
-- Modelo base upstream: https://huggingface.co/nace-ai/drex-v1.5
-- Librería MLX: https://github.com/ml-explore/mlx
-- Documentación de `mlx_lm`: https://github.com/ml-explore/mlx-examples/tree/main/llms
-- Licencia OpenRAIL-M (referencia general): https://www.licenses.ai/blog/2022/8/26/bigscience-open-rail-m-license
-- Auditoría de cuantización incluida en el repo: `kl_audit.json` (https://huggingface.co/sergolsub/drex-v1.5-9B-MLX-8bit/blob/main/kl_audit.json)
-- Fichero de licencia: https://huggingface.co/sergolsub/drex-v1.5-9B-MLX-8bit/blob/main/LICENSE
+- Modelo original (upstream): https://huggingface.co/nace-ai/drex-v1.5
+- Variante 4-bit del mismo autor: https://huggingface.co/sergolsub/drex-v1.5-9B-MLX-4bit

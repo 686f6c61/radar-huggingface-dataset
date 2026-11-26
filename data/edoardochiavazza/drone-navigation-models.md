@@ -2,52 +2,48 @@
 
 ## Resumen
 
-`edoardochiavazza/drone-navigation-models` es un repositorio que agrupa varios artefactos de inferencia (no un unico modelo) desarrollados en el marco de un proyecto de tesis sobre navegacion de drones controlada por LLM en dispositivos edge. Incluye un modelo de lenguaje pequeno (SmolLM2-135M) afinado para interpretar comandos de dron y exportado a GGUF en cuantizaciones Q8_0 y Q4_0, junto con detectores de objetos YOLOv8n y YOLOv5s compilados para distintas plataformas de hardware (CPU, NPU STM32MP2 y NPU Rockchip).
+El repositorio `edoardochiavazza/drone-navigation-models` no contiene un unico modelo generativo, sino un conjunto de artefactos heterogeneos orientados a la navegacion autonoma de drones en dispositivos de borde (edge devices). Lo publica Edoardo Chiavazza en el marco de su proyecto de tesis "LLM-driven drone navigation on edge devices", vinculado al repositorio `idsia-robotics/chiavazza-slm-semantic-exploration`. El paquete combina un modelo de lenguaje pequeno (SmolLM2-135M afinado para comandos de dron) con detectores de objetos de la familia YOLO (YOLOv8n y YOLOv5s) compilados para distintas plataformas de hardware.
 
-El componente de lenguaje tiene 134.515.008 parametros (segun los safetensors del repo) y parte de la arquitectura SmolLM2 de Hugging Face, un transformer decoder-only de la familia de modelos pequenos. El repositorio ocupa 0,3 GB y esta pensado para ejecutarse en placas embebidas como la STM32MP2 con llama.cpp/llama-server.
+La relevancia del conjunto reside en su enfoque: llevar razonamiento en lenguaje natural y percepcion visual a hardware embebido con recursos muy limitados, concretamente una placa STM32MP2 (con NPU) y una plataforma Rockchip. Para ello se emplean cuantizaciones agresivas (Q4_0 y Q8_0 con importance matrix para el SLM, INT8 para el detector) y formatos especificos de cada acelerador (`.nb` para STM32MP2, `.rknn` para Rockchip).
 
-Su relevancia actual radica en el creciente interes por llevar agentes de lenguaje a hardware de bajo consumo para robotica y sistemas autonomos. Este repositorio es un ejemplo concreto de ese patron: un SLM que traduce instrucciones en lenguaje natural a acciones de navegacion, combinado con un detector visual cuantizado para percibir el entorno. La licencia es "other" y no se declaran idiomas soportados.
+El dato de parametros reportado por safetensors (134.515.008) es coherente con el tamano de SmolLM2-135M, lo que confirma que el componente de lenguaje es un transformer decoder de ~135 millones de parametros. El repo ocupa 0,3 GB. La licencia es "other", sin que la model card concrete los terminos exactos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SmolLM2 (transformer decoder-only) para el SLM; YOLOv8n y YOLOv5s para deteccion visual |
-| Parametros totales | 134.515.008 (componente SLM) |
+| Arquitectura | Transformer decoder (SmolLM2-135M afinado) para el SLM; CNN (YOLOv8n / YOLOv5s) para deteccion |
+| Parametros totales | 134.515.008 (componente SLM, segun safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (con importance matrix) y Q4_0 (con importance matrix); INT8 para el detector TFLite; compilaciones NPU (.nb, .rknn) |
+| Tipos de cuantizacion | Q8_0 con importance matrix, Q4_0 con importance matrix (GGUF); INT8 (TFLite); compilacion NPU (`.nb`, `.rknn`) |
 | Idiomas soportados | no disponible |
-| Licencia | other |
-| Formato de pesos | GGUF (SLM), .pt (PyTorch), .tflite (INT8), .nb (STM32MP2 NPU), .rknn (Rockchip NPU) |
+| Licencia | other (terminos no detallados en la model card) |
+| Formato de pesos | GGUF, TFLite, `.nb` (STM32MP2 NPU), `.rknn` (Rockchip NPU), `.pt` (PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-El componente de lenguaje es un fine-tune de SmolLM2-135M, un transformer decoder-only de 135 millones de parametros. El autor lo ha afinado para la tarea de interpretar comandos de dron y lo ha exportado a GGUF con cuantizacion Q8_0 y Q4_0, ambas generadas con importance matrix (imat), lo que suele mejorar la fidelidad de la cuantizacion al ponderar los pesos segun su relevancia para la distribucion de calibracion. El objetivo declarado es su despliegue en la STM32MP2, una placa con CPU y NPU de bajo consumo.
+El componente de lenguaje es un SmolLM2-135M afinado para la tarea de interpretar y emitir comandos de dron, distribuido en GGUF con cuantizacion Q8_0 y Q4_0 generadas con importance matrix (imatrix), tecnica que pondera la cuantizacion segun la relevancia de los pesos para reducir la perdida de calidad. La model card indica que la variante Q8_0 es la empleada sobre la STM32MP2.
 
-El componente de percepcion son detectores YOLO: un YOLOv8n con entrada de 320x320 y 5 clases (pedestrian, BMW_X5, dog, bench, oil_barrel), exportado a PyTorch, TFLite INT8 y formato .nb para la NPU del STM32MP2; y un YOLOv5s con entrada de 640x640 compilado a .rknn para la NPU de Rockchip. Los datos de entrenamiento estan publicados en el dataset `edoardochiavazza/drone-datasets`. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset de lenguaje ni si hubo RLHF/DPO.
+El componente de percepcion es YOLOv8n con entrada de 320x320 y cinco clases (pedestrian, BMW_X5, dog, bench, oil_barrel), exportado a PyTorch (`.pt`), TFLite INT8 y binario compilado para la NPU del STM32MP2. Se incluye ademas un YOLOv5s de 640x640 en formato `.rknn` para la NPU de Rockchip. Los datos de entrenamiento se publican en el dataset `edoardochiavazza/drone-datasets`. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Interpretacion de comandos de dron en lenguaje natural (fine-tune especifico del SLM sobre SmolLM2-135M).
-- Generacion de texto conversacional (tag "conversational" en el repo).
-- Deteccion de objetos con YOLOv8n en 5 clases: peatones, BMW_X5, perro, banco y barril de aceite.
-- Deteccion de objetos con YOLOv5s a 640x640 para la NPU de Rockchip.
-- Inferencia en dispositivos edge: CPU (GGUF via llama.cpp), NPU STM32MP2 (.nb) y NPU Rockchip (.rknn).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles.
-- Modo thinking, vision o audio del SLM: no disponible (la vision la aporta el componente YOLO, no el SLM).
+- Generacion de comandos de dron en lenguaje natural mediante el SLM afinado (SmolLM2-135M).
+- Deteccion de objetos en tiempo real con YOLOv8n a 320x320 sobre cinco clases concretas del entorno de simulacion Webots.
+- Inferencia en dispositivos de borde: despliegue en STM32MP2 (CPU y NPU) y Rockchip (NPU).
+- Ejecucion local sin conexion mediante `llama-server` con los ficheros GGUF.
+- Integracion con simulacion Webots (etiqueta `webots` del repo).
+- Capacidades de tool calling, agentes multi-paso, vision-lenguaje unificada, audio o modo thinking: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Control de dron por voz o texto en edge: el SLM traduce instrucciones en lenguaje natural a comandos de navegacion ejecutables, ejecutandose localmente en la STM32MP2 mediante llama-server sin depender de la nube.
-- Navegacion asistida en interiores con percepcion embebida: el detector YOLOv8n INT8 identifica peatones y obstaculos (bancos, barriles) a 320x320 y el SLM convierte la intencion del operador en maniobras.
-- Prototipado en simulacion Webots: el tag "webots" indica que los modelos se integran en el simulador para validar el bucle percepcion-decision antes de pasar al hardware real.
-- Despliegue en plataformas Rockchip: el YOLOv5s .rknn permite deteccion a 640x640 en placas con NPU Rockchip para aplicaciones de vigilancia o inspeccion aerea.
-- Investigacion academica en SLM para robotica: el repo sirve como referencia reproducible (pesos, cuantizaciones y dataset publicados) para estudiar el rendimiento de un LLM de 135M en tareas de control embebido.
-- Sistemas de bajo consumo y desconectados: al caber en 0,3 GB y ejecutarse con llama.cpp, el SLM es apto para drones con restricciones severas de energia y conectividad.
-- Pipeline de vision + lenguaje en tiempo real: combinacion del detector cuantizado y el SLM para generar descripciones de escena o decisiones de evasion a partir de la deteccion.
+- Navegacion semantica de drones en simulacion: el SLM traduce instrucciones de alto nivel en comandos de movimiento, mientras YOLOv8n aporta la percepcion de obstaculos y objetivos (peatones, vehiculos, bancos, barriles) en el entorno Webots.
+- Despliegue en robotica embebida con STM32MP2: los ficheros `.nb` y el GGUF Q8_0 estan compilados y cuantizados especificamente para esta placa, lo que permite ejecutar percepcion y control en el mismo SoC sin GPU dedicada.
+- Prototipado en plataformas Rockchip: el `.rknn` de YOLOv5s a 640x640 permite acelerar la deteccion por NPU en placas basadas en Rockchip para pruebas de vision a bordo.
+- Investigacion academica en SLM para control: sirve como referencia reproducible (codigo y dataset publicados) para estudiar como un modelo de 135M parametros puede mapear lenguaje a acciones de bajo nivel.
+- Benchmarking de cuantizacion en edge: la disponibilidad de Q4_0 y Q8_0 con imatrix sobre el mismo modelo permite comparar latencia y calidad en hardware restringido.
+- Educacion y demostraciones de IA en el borde: el tamano reducido del repo (0,3 GB) y el uso de `llama-server` facilitan montar demos locales de pipelines percepcion-mas-lenguaje.
 
 ## Benchmarks y rendimiento
 
@@ -55,37 +51,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para el SLM: el repo completo ocupa 0,3 GB; el GGUF Q4_0 de un modelo de 135M ronda los 80-100 MB y el Q8_0 en torno a 140-150 MB (estimacion por tamano de parametros, no confirmada en la informacion).
-- GPU recomendadas: no disponible; el diseno apunta a CPU y NPU embebidas, no a GPU de datacenter.
-- Cabe en GPU consumer: si, cualquier GPU consumer moderna puede ejecutar un modelo de 135M; tambien cabe en CPU de placa embebida.
-- Opciones de despliegue: llama.cpp / llama-server (comando de uso incluido en la model card), TFLite para el detector INT8, runtime de NPU STM32MP2 (.nb) y runtime RKNN de Rockchip (.rknn).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para el SLM: inferior a 1 GB en Q4_0 y en torno a 150-200 MB en Q8_0 para un modelo de 135M parametros (estimacion por tamano, no confirmada en la model card).
+- Hardware objetivo declarado: STM32MP2 (CPU y NPU) y plataformas Rockchip con NPU.
+- GPU de escritorio: no se especifican; por tamano, el SLM cabe en cualquier GPU consumer e incluso en CPU.
+- Despliegue del SLM: `llama-server` con GGUF, segun el ejemplo de uso de la model card.
+- Despliegue de deteccion: TFLite (INT8), runtime de STM32MP2 para `.nb` y runtime Rockchip para `.rknn`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| edoardochiavazza/drone-navigation-models (SLM) | 134,5 M | no disponible | other | SLM afinado para comandos de dron + YOLO |
-| SmolLM2-135M (Hugging Face) | 135 M | no disponible | Apache 2.0 (modelo base) | LLM generalista pequeno |
-| Qwen2.5-0.5B | 494 M | 32k (segun ficha del modelo base) | Apache 2.0 | LLM generalista pequeno |
-| TinyLlama-1.1B | 1,1 B | 2k (segun ficha del modelo base) | Apache 2.0 | LLM generalista pequeno |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Formatos |
+|---|---|---|---|---|---|
+| edoardochiavazza/drone-navigation-models (SLM) | 134,5 M | no disponible | Comandos de dron | other | GGUF (Q4_0, Q8_0 imatrix) |
+| SmolLM2-135M (base) | 135 M | no disponible en esta ficha | Generacion de texto general | no disponible en esta ficha | safetensors, GGUF |
+| YOLOv8n (Ultralytics) | no disponible en esta ficha | no aplica | Deteccion de objetos | no disponible en esta ficha | `.pt`, TFLite, ONNX |
 
-La comparativa se limita al componente de lenguaje; no se dispone de datos de rendimiento para comparar tareas especificas de navegacion de dron. Los modelos alternativos son generalistas y no incluyen el pipeline de percepcion YOLO ni las compilaciones para NPU embebida.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia "other": no se especifican los terminos exactos; es imprescindible revisar las condiciones antes de cualquier uso comercial.
-- El SLM es un fine-tune muy especializado en comandos de dron; su rendimiento en tareas generales de lenguaje sera limitado por sus 135M de parametros.
-- No se declaran idiomas soportados; no hay garantia de funcionamiento en castellano u otros idiomas distintos del usado en el entrenamiento.
-- Riesgo de alucinacion inherente a un modelo de lenguaje pequeno, especialmente en instrucciones ambiguas o fuera de distribucion.
-- El detector YOLOv8n esta entrenado solo para 5 clases (pedestrian, BMW_X5, dog, bench, oil_barrel); no generaliza a otros objetos o entornos.
-- No hay datos publicados de benchmarks, latencia ni throughput; el rendimiento real en la STM32MP2 o en Rockchip no esta cuantificado en la informacion disponible.
-- El repositorio mezcla artefactos de distintos formatos y plataformas; no es un unico modelo cargable con una sola libreria.
-- No se especifican sesgos conocidos ni detalles del dataset de entrenamiento del SLM mas alla del enlace al dataset.
+- El SLM esta afinado para un dominio muy concreto (comandos de dron en un entorno de simulacion con cinco clases de objetos); su uso fuera de ese dominio no esta validado.
+- El detector YOLOv8n solo reconoce cinco clases (pedestrian, BMW_X5, dog, bench, oil_barrel), insuficientes para navegacion real en entornos abiertos.
+- La licencia "other" no detalla condiciones de uso comercial; es necesario contactar con el autor o revisar el repositorio de codigo antes de un uso productivo.
+- No se documentan idiomas soportados ni longitud de contexto del SLM.
+- No hay benchmarks publicados, por lo que no puede evaluarse la calidad del afinado frente al SmolLM2-135M original.
+- Riesgo de alucinacion inherente a un modelo de 135M parametros; en control de drones, una salida erronea puede traducirse en comandos peligrosos, por lo que requiere capas de validacion.
+- Los binarios `.nb` y `.rknn` dependen de versiones concretas de toolchains y runtimes de cada plataforma; la portabilidad entre versiones no esta garantizada.
+- El proyecto es un trabajo de tesis con 230 descargas y 0 likes; no hay evidencia de mantenimiento a largo plazo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/edoardochiavazza/drone-navigation-models
+- Hugging Face: https://huggingface.co/edoardochiavazza/drone-navigation-models
 - Dataset de entrenamiento: https://huggingface.co/datasets/edoardochiavazza/drone-datasets
-- Codigo del proyecto: referenciado en la model card como repositorio de GitHub (URL no incluida en la informacion disponible)
-- Modelo base SmolLM2: no disponible en la informacion proporcionada
+- Codigo del proyecto: https://github.com/idsia-robotics/chiavazza-slm-semantic-exploration

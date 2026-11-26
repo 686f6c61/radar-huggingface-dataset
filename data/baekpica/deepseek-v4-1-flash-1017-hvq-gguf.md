@@ -2,94 +2,104 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-hVQ-GGUF es una cuantización experimental de muy bajo bit de `deepseek-ai/DeepSeek-V4.1-Flash-1017`, el modelo insignia de DeepSeek publicado el 17 de octubre. La desarrolla el usuario Baekpica, no DeepSeek, y aplica una técnica propia de cuantización vectorial con realimentación de error (hVQ) sobre los expertos enrutados de una arquitectura de mezcla de expertos (MoE). El resultado se distribuye en formato GGUF con un contexto declarado de 1.048.576 tokens y capacidades multimodales de imagen y texto.
+DeepSeek-V4.1-Flash-1017-hVQ-GGUF es una cuantización experimental de muy bajo bit del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario Baekpica en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión de los pesos originales (FP4/FP8) a formato GGUF mediante una técnica propia de cuantización vectorial con realimentación de error (hVQ, Hessian vector quantization), que aplica ideas de GPTQ/GPTVQ sobre los expertos enrutados de la arquitectura Mixture-of-Experts (MoE). El resultado conserva el inventario de tensores y el diseño de bytes del release VQ base, de modo que puede servirse con el mismo runtime.
 
-La innovación central es la sustitución de los codebooks de cuantización vectorial (VQ) por una asignación de índices que incorpora la correlación de las entradas reales, al estilo GPTQ/GPTVQ. Según el autor, esto reduce el error medio por capa de la salida de los expertos enrutados de 0,2876 a 0,1885 (-34,5 %) y la KL en posiciones generadas de 0,2899 a 0,2408 (-17,0 %) respecto al modelo original en FP4/FP8, a costa de un aumento del 0,9 % en la NLL. Los expertos enrutados quedan a unos 1,6 bits por peso.
+El modelo base es un transformer MoE multimodal (image-text-to-text) con capacidades declaradas de visión, contexto de 1.048.576 tokens, decodificación especulativa mediante torres MTP (multi-token prediction) y tablas Engram. La conversión mantiene los expertos enrutados a aproximadamente 1,6 bits por peso, lo que reduce el peso del repositorio a unos 113,5 GB repartidos en 40 ficheros, un tamaño manejable en estaciones de trabajo con suficiente memoria unificada.
 
-Es relevante porque demuestra que es posible servir un modelo MoE de gran tamaño con visión y contexto de un millón de tokens en hardware de una sola máquina (DGX Spark, GB10), manteniendo el mismo diseño de fichero que las variantes VQ e iVQ previas. No obstante, es una publicación de investigación con cero descargas, sin mediciones de velocidad ni de generación muestreada, y con un número de parámetros declarado en safetensors (485 millones) que no concuerda con el tamaño del repositorio (317,6 GB), lo que obliga a tratar las cifras con cautela.
+Su relevancia es doble: por un lado, demuestra una técnica de cuantización que mejora la fidelidad respecto a la cuantización vectorial escalar (iVQ) sin cambiar el tamaño ni el layout del fichero; por otro, hace accesible un modelo de contexto de un millón de tokens en hardware tipo DGX Spark (GB10) con velocidades de decodificación de 30 a 36 tok/s. La licencia es MIT y los idiomas declarados son inglés, chino y coreano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) con torres MTP, sidecar de visión y tablas Engram; cuantización vectorial con realimentación de error (hVQ) sobre los expertos enrutados |
-| Parametros totales | 485.283.840 según safetensors; no disponible el recuento total real del modelo base (el repositorio ocupa 317,6 GB y el GGUF base 113.556.639.424 bytes, lo que apunta a un modelo mucho mayor) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal, con MTP y Engram; cuantización vectorial hVQ sobre expertos enrutados |
+| Parametros totales | 485.283.840 (dato de safetensors del repo); el modelo base declara un inventario de 1.000 tensores y 113.556.639.424 bytes en GGUF |
 | Parametros activos | no disponible |
 | Longitud de contexto | 1.048.576 tokens (según metadatos del modelo) |
-| Tipos de cuantizacion | GGUF con expertos enrutados a ~1,6 bits por peso; capas 0-13 con 13 bits K=8192, capas 14-39 con 12 bits K=4096; esqueleto q4_K; ganancias de fila en F16 |
+| Tipos de cuantizacion | GGUF con expertos enrutados a ~1,6 bits por peso; capas 0–13 a 13 bits K=8192, capas 14–39 a 12 bits K=4096; esqueleto q4_K; gains F16 |
 | Idiomas soportados | en, zh, ko |
 | Licencia | MIT |
-| Formato de pesos | GGUF (40 partes) |
+| Formato de pesos | GGUF (40 partes, 113.556.639.424 bytes); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 40 capas de expertos enrutados, torres de decodificación especulativa MTP (multi-token prediction), un módulo de visión independiente y tablas Engram. Esta publicación no entrena el modelo: parte del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash-1017` en la revisión `1bae0e1` y solo recuantiza los 40 blobs de expertos enrutados, manteniendo byte a byte el esqueleto q4_K, las torres MTP, el sidecar de visión y las tablas Engram respecto a la variante VQ.
+El modelo base DeepSeek-V4.1-Flash-1017 es un transformer con mezcla de expertos (MoE) de tipo multimodal image-text-to-text. Incorpora torres MTP (multi-token prediction) para decodificación especulativa, tablas Engram y un sidecar de visión. El contexto declarado alcanza 1.048.576 tokens. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-La técnica hVQ divide cada matriz de experto en vectores de 8 pesos por fila, normaliza cada fila por su ganancia y sustituye cada vector por uno de K codewords compartidos. Frente a iVQ, que solo usa la diagonal de la matriz de segundo momento de las entradas `H = Σ x xᵀ`, hVQ incorpora la parte fuera de la diagonal con realimentación de error: los bloques se asignan en orden y el error de cada bloque se propaga a los objetivos de los bloques posteriores mediante el factor `V` de `H_t = D^{1/2}((1-t)I + tR)D^{1/2}`. El parámetro `t = 1` se eligió una sola vez sobre cuatro capas y se aplicó a las 40. La calibración usó 3.095 secuencias y 3.653.893 tokens del mismo flujo de profesor que iVQ. Solo cambian los índices de código y las ganancias de fila en F16; los codebooks son idénticos a los de iVQ.
+La contribución técnica de esta ficha es la cuantización hVQ aplicada a los 40 blobs de expertos enrutados. Cada matriz de experto se divide en vectores de 8 pesos por fila; cada fila se normaliza por su ganancia y cada vector se sustituye por uno de K codewords compartidos. Frente a iVQ, que solo usa la diagonal de la segunda matriz de momentos de entrada H = Σ x xᵀ, hVQ incorpora la parte fuera de la diagonal al estilo GPTQ/GPTVQ: los bloques de 8 columnas se asignan en orden y el error de cada bloque se propaga a los objetivos de los bloques posteriores mediante la factorización H_t = V Vᵀ, de modo que los errores en canales de entrada correlacionados se cancelan en la salida del experto. La ganancia de fila se reajusta por mínimos cuadrados bajo H_t. Solo cambian los índices de código y las ganancias de fila; los codebooks, el reparto de bits, el layout y el tamaño del fichero son idénticos al release iVQ, y todo lo que queda fuera de los blobs de expertos es byte a byte igual al VQ base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-turno con ventana de contexto de hasta 1.048.576 tokens.
-- Procesamiento de imagen y texto (`image-text-to-text`), gracias al sidecar de visión heredado del modelo base.
-- Decodificación especulativa mediante las torres MTP incluidas en el paquete.
-- Soporte multilingüe en inglés, chino y coreano.
-- Compatibilidad con el runtime `ds4-dfm-rs` sobre CUDA (DGX Spark) y con `ds4-server` de YoungAi, que lee el mismo diseño de fichero.
-- No hay información en la documentación proporcionada sobre tool calling, function calling, modo thinking ni capacidades de audio.
+- Generación de texto y razonamiento multi-turno con ventanas de hasta 1.048.576 tokens.
+- Procesamiento de imagen y texto (pipeline image-text-to-text), con sidecar de visión incluido en el paquete.
+- Modo thinking (razonamiento explícito) y modo chat, verificados en el runtime ds4-dfm-rs.
+- Tool calling y function calling, con las cuatro superficies de API operativas según la model card.
+- Decodificación especulativa automática mediante torres MTP, que acelera la generación.
+- Capacidades multilingües en inglés, chino y coreano.
+- Soporte de agentes y razonamiento multi-paso a través de las herramientas y el modo thinking.
+- Uso de tablas Engram para memoria asociativa interna del modelo.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos en una sola pasada: con 1.048.576 tokens de contexto, el modelo puede ingerir contratos, expedientes o bases de código completas sin troceado, algo crítico cuando la coherencia entre secciones lejanas importa.
-- Análisis de imágenes con texto asociado: el pipeline `image-text-to-text` permite describir capturas, extraer datos de diagramas o responder preguntas sobre figuras dentro de un flujo documental.
-- Investigación sobre cuantización extrema: el paquete sirve como referencia reproducible para comparar VQ, iVQ y hVQ sobre los mismos codebooks y el mismo diseño de fichero, midiendo solo el efecto de la realimentación de error.
-- Despliegue en hardware de una sola máquina: pensado para DGX Spark (GB10) con el runtime `ds4-dfm-rs`, permite ejecutar un MoE de gran tamaño en un equipo de sobremesa con CUDA en lugar de un clúster.
-- Evaluación de fidelidad de modelos comprimidos: los datos de error por capa y KL permiten validar pipelines de cuantización antes de adoptarlos en producción.
-- Traducción y asistentes en inglés, chino y coreano: los tres idiomas declarados cubren casos de atención al cliente y localización en esos mercados, aunque sin garantías de calidad fuera de ellos.
+- Análisis de documentación extensa: con 1.048.576 tokens de contexto, el modelo puede ingerir manuales técnicos, expedientes o bases de código completas en una sola pasada y responder preguntas cruzadas sin trocear el material.
+- Asistencia conversacional multilingüe: cubre inglés, chino y coreano en un mismo despliegue, útil para atención al cliente en organizaciones con operaciones en Asia Oriental.
+- Procesamiento de documentos con imágenes: al ser image-text-to-text, permite extraer y razonar sobre capturas, diagramas o formularios escaneados combinados con texto.
+- Agentes con herramientas: el soporte de tool calling y las cuatro superficies de API permiten integrarlo en orquestadores de agentes que consulten bases de datos o ejecuten acciones externas.
+- Despliegue en hardware de un solo nodo: con unos 113,5 GB de pesos y 30–36 tok/s de decodificación en DGX Spark (GB10), es viable para prototipos y entornos de investigación sin clúster multi-GPU.
+- Investigación en cuantización: sirve como referencia reproducible para estudiar el efecto de la realimentación de error fuera de la diagonal en modelos MoE, ya que el autor publica métricas de fidelidad frente al modelo original.
+- Generación de código y razonamiento técnico: el modo thinking y el contexto largo permiten revisar repositorios completos y razonar sobre dependencias entre ficheros.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Original FP4/FP8 | hVQ | Variacion |
-|---|---|---|---|
-| Error medio por capa (mediana) de salida de expertos enrutados | 0,2876 | 0,1885 | -34,5 % |
-| KL en posiciones generadas | 0,2899 | 0,2408 | -17,0 % |
-| NLL en posiciones generadas | 1,3466 | 1,3589 | +0,9 % |
+No se han publicado resultados de benchmarks de tareas en la información disponible. El autor indica explícitamente que no se ha ejecutado ningún benchmark de tarea y que la generación muestreada solo se comprobó en un conjunto pequeño con semilla. Las métricas publicadas son de fidelidad respecto al modelo original:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores son medidas de fidelidad con teacher forcing frente al modelo original, no evaluaciones de capacidad. El autor indica que la velocidad de servicio y el consumo de memoria en DGX Spark no se han medido para estos ficheros, y que la generación muestreada tampoco se ha evaluado.
+| Metrica | Original | hVQ | Variacion |
+|---|---|---|---|
+| Error mediano por capa de salida enrutada | 0,2876 | 0,1885 | -34,5% |
+| KL en posiciones generadas (referencia forward) | 0,2899 | 0,2408 | -17,0% |
+| NLL en posiciones generadas (referencia forward) | 1,3466 | 1,3589 | +0,9% |
+| KL en DGX Spark (GGUF liberado) | 0,296 | 0,247 | -16,7% |
+| Top-1 coincidente en DGX Spark | 81,9% | 84,0% | +2,1 pp |
+| NLL en DGX Spark | 1,348 | 1,360 | +0,012 |
+
+En DGX Spark con ds4-dfm-rs (commit 58738c04), el prefill se sitúa en 1.291–1.757 tok/s y la decodificación en 30–36 tok/s con MTP automático, en un barrido de prefill completo de 2K a 64K.
 
 ## Requisitos de hardware
 
-- El GGUF base ocupa 113.556.639.424 bytes (unos 113,6 GB) repartidos en 40 partes, por lo que la VRAM o memoria unificada necesaria para cargarlo completo ronda esa cifra más el overhead del runtime.
-- Hardware objetivo declarado: DGX Spark con GB10 y CUDA, mediante `ds4-dfm-rs`; el servidor `ds4-server` de YoungAi lee el mismo diseño.
-- No cabe en GPU de consumo convencionales (RTX 4090 con 24 GB) por el tamaño del conjunto de pesos; requeriría memoria unificada o un sistema multi-GPU.
-- Opciones de despliegue: `ds4-dfm-rs` (CUDA) y `ds4-server`. No se menciona compatibilidad con llama.cpp, vLLM, TGI u Ollama.
-- Latencia y throughput: no disponibles; el autor confirma que no se han medido para estos ficheros.
+- VRAM/memoria estimada: unos 113,5 GB de pesos en GGUF, más overhead de contexto KV; el contexto de 1M tokens requiere memoria adicional significativa no cuantificada en la información disponible.
+- GPU recomendadas: DGX Spark (GB10) es el hardware validado por el autor; el runtime ds4-dfm-rs es CUDA. Para GPUs de centro de datos (A100, H100) no se han publicado pruebas.
+- GPU de consumo: no cabe en GPUs consumer convencionales por el tamaño del modelo; requiere memoria unificada o multi-GPU.
+- Opciones de despliegue: ds4-dfm-rs (CUDA, DGX Spark) y YoungAi ds4-server, que lee el mismo layout. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: prefill 1.291–1.757 tok/s y decodificación 30–36 tok/s en DGX Spark con MTP automático.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Estado |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-hVQ-GGUF | 485.283.840 según safetensors (no concordante con el tamaño real) | 1.048.576 | GGUF hVQ, expertos a ~1,6 bits | MIT | Experimental, 0 descargas |
-| DeepSeek-V4.1-Flash-1017-iVQ-GGUF | Mismo inventario de tensores | 1.048.576 | GGUF iVQ, mismos codebooks | MIT | Publicado por el mismo autor |
-| DeepSeek-V4.1-Flash-1017-VQ-GGUF | Mismo inventario de tensores | 1.048.576 | GGUF VQ (`vq8sh14-q4k-mtpnative`) | MIT | Base de la lineage |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | 1.048.576 | FP4/FP8 | no disponible en la información | Modelo original de DeepSeek |
+| DeepSeek-V4.1-Flash-1017-hVQ-GGUF | 485.283.840 (safetensors); GGUF de 113,5 GB | 1.048.576 | ~1,6 bits expertos, q4_K esqueleto | MIT | Hugging Face, runtime ds4-dfm-rs |
+| DeepSeek-V4.1-Flash-1017-iVQ-GGUF | Mismo inventario que hVQ | 1.048.576 | VQ con diagonal de H | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash-1017-VQ-GGUF | Mismo inventario que hVQ | 1.048.576 | VQ base (vq8sh14-q4k-mtpnative) | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (original) | no disponible en detalle | 1.048.576 | FP4/FP8 | MIT | Hugging Face |
 
-Las tres variantes de Baekpica comparten diseño de fichero, codebooks y tamaño, de modo que la comparación aísla el efecto del método de asignación de índices. No se dispone de datos de benchmarks estándar para comparar capacidades con modelos de otras familias.
+Las tres variantes cuantizadas comparten codebooks, layout y tamaño; la diferencia medible es la fidelidad, con hVQ por delante de iVQ y VQ en error de salida enrutada y KL. No se dispone de comparación con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Publicación experimental de muy bajo bit: los expertos enrutados están a ~1,6 bits por peso, lo que puede degradar la calidad en generación libre pese a las métricas de fidelidad con teacher forcing.
-- El autor no ha medido generación muestreada, velocidad ni memoria en DGX Spark; no hay garantías de comportamiento en producción.
-- El recuento de parámetros en safetensors (485 millones) no concuerda con el tamaño del repositorio ni del GGUF, lo que sugiere un dato erróneo o incompleto; no debe usarse para dimensionar el despliegue.
-- Cero descargas y cero valoraciones: no hay evidencia de la comunidad sobre estabilidad o calidad.
-- Idiomas limitados a inglés, chino y coreano; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación inherente al modelo base, no evaluado en esta cuantización.
-- La licencia MIT se hereda del paquete, pero conviene verificar los términos del modelo base de DeepSeek antes de un uso comercial.
-- Requiere un runtime específico (`ds4-dfm-rs` o `ds4-server`); no es un GGUF estándar compatible con llama.cpp.
+- Release experimental de bajo bit: los expertos enrutados están a ~1,6 bits por peso y las métricas describen fidelidad con teacher forcing, no calidad en generación libre.
+- No se ha ejecutado ningún benchmark de tarea; el rendimiento en MMLU, HumanEval, GSM8K u otras pruebas no está medido.
+- La generación muestreada solo se comprobó en un conjunto pequeño con semilla, por lo que pueden aparecer degradaciones no caracterizadas.
+- Riesgo de alucinación inherente a los modelos de lenguaje, no cuantificado en esta conversión.
+- Idiomas limitados a inglés, chino y coreano; el castellano no está declarado como soportado.
+- El contexto de 1M tokens exige memoria adicional para KV cache no especificada; en hardware limitado habrá que truncar.
+- Dependencia de un runtime específico (ds4-dfm-rs o YoungAi ds4-server); no hay soporte documentado en vLLM, llama.cpp u Ollama.
+- Licencia MIT permite uso comercial, pero el modelo base y los pesos originales deben verificarse por separado; la model card no detalla restricciones adicionales del modelo fuente.
+- El autor pide reportar problemas con prompt, parámetros de muestreo y commit del runtime en la pestaña Community.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF
-- Variante iVQ: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-iVQ-GGUF
-- Variante VQ: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF
+- Release iVQ: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-iVQ-GGUF
+- Release VQ base: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/1bae0e1088993b9b82de08f59de5be5a34e42170
-- Runtime: https://github.com/Baekpica/ds4-dfm-rs
+- Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
 - Discusiones: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF/discussions
+- Papers referenciados en los tags: arXiv 2402.15319, 2402.04396, 2307.13304, 2210.17323, 2604.13806, 2310.16795, 2505.03804, 2506.07900, 1612.01543, 1907.05686, 2306.07629, 2409.17066, 2401.06118, 2410.16926, 1412.6115, 2608.25188

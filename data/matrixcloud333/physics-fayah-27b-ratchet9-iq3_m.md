@@ -2,99 +2,92 @@
 
 ## Resumen
 
-Physics-Fayah 27B (Ratchet-9) es un modelo de lenguaje de 27.000 millones de parametros publicado por el usuario matrixCloud333 en Hugging Face, derivado del checkpoint Qwen/Qwen3.8-27B-TurboFCFusion mediante nueve rondas consecutivas de calibracion direccional de pesos. Esta orientado de forma especifica a fisica computacional, resolucion numerica de EDO y EDP, invariantes diferenciales y desarrollo de software cientifico en Python, Rust y C++.
+Physics-Fayah-27B-Ratchet9-IQ3_M es un checkpoint GGUF derivado de Qwen/Qwen3.8-27B, publicado por el usuario matrixCloud333 y orientado a programación científica y exploración en física computacional. No se trata de un modelo entrenado desde cero, sino de una adaptación local con calibración de cuantización IQ3_M y un ajuste de continuación (*continual learning*) documentado en la model card. El autor lo describe explícitamente como un artefacto experimental, no como un solver numérico validado.
 
-La relevancia declarada del checkpoint reside en su metodo de ajuste: segun la model card, la calibracion se ejecuto integramente en hardware de consumo (una RTX 5060 Ti junto a un Ryzen Zen 4 con AVX-512), modificando decenas de millones de interacciones de parametros sobre 336 tensores y validando el resultado contra una suite de 89 comprobaciones fisicas sin regresion de retencion. Incorpora cabezas de prediccion multi-token (MTP) para decodificacion especulativa y declara una ventana de contexto de 200.000 tokens.
+El modelo conserva la arquitectura y el tamaño del base (27.320.697.856 parámetros totales según safetensors), pero se distribuye únicamente en formato GGUF cuantizado a IQ3_M, con un fichero de 14.532.048.416 bytes (aproximadamente 14,5 GB). El repositorio completo ocupa 29,1 GB, lo que sugiere la presencia de artefactos adicionales (backups, logs de calibración u otros ficheros) más allá del GGUF principal.
 
-Se distribuye en formato GGUF con cuantizacion IQ3_M, licencia Apache 2.0 e idiomas declarados ingles y chino. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa publica.
+Su relevancia es limitada y muy específica: sirve como ejemplo de flujo de calibración de cuantización con imatrix y de ajuste ligero sobre un modelo base grande, con evidencia de calibración publicada de forma inusualmente detallada (pérdidas de aprendizaje y retención, aceptación de borrador MTP). Para producción general conviene usar el modelo base Qwen3.8-27B directamente, ya que este derivado no aporta garantías de mejora medibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible con detalle; la model card menciona capas de estado continuo (SSM), capas de normalizacion en F32 y cabezas de prediccion multi-token (MTP), sobre la arquitectura del modelo base Qwen 3.8 (27B) |
-| Parametros totales | 27.000 millones (segun denominacion del modelo) |
-| Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 200.000 tokens (con offload de la cache KV a memoria del sistema) |
-| Tipos de cuantizacion | IQ3_M (unico formato publicado en este repositorio) |
-| Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | Apache 2.0 |
+| Arquitectura | no disponible (derivado de Qwen/Qwen3.8-27B; el autor no detalla la arquitectura en la model card) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (depende del runtime y de la política de KV-cache según el autor) |
+| Tipos de cuantizacion | IQ3_M (único artefacto publicado) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF |
-| Modelo base | Qwen/Qwen3.8-27B-TurboFCFusion |
-| Fecha de publicacion | 24 de septiembre de 2026 (creacion y ultima actualizacion del repositorio) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura completa. La model card hace referencia explicita a tres grupos de tensores intervenidos durante la calibracion: capas de normalizacion en F32 (ajustadas para estabilizar la acumulacion en coma flotante de alta precision en integradores Runge-Kutta y leapfrog simplectico), capas de memoria de estado continuo (`ssm_a`, `ssm_dt.bias`, `ssm_conv1d`), lo que sugiere una arquitectura hibrida con componentes de espacio de estados, y cabezas de prediccion multi-token (`blk.64.nextn.*`), que implican al menos 64 bloques y decodificacion especulativa nativa. El modelo hereda la arquitectura del checkpoint base Qwen 3.8 (27B), del que no se proporcionan especificaciones detalladas.
+El autor no describe la arquitectura interna del modelo en la model card; únicamente indica que es un checkpoint derivado de Qwen/Qwen3.8-27B, por lo que hereda la arquitectura del base. El proceso aplicado consiste en una recalibración de cuantización IQ3_M (con soporte de imatrix, según los tags) y un ajuste de continuación sobre datos no especificados. La calibración documentada corresponde a la "secuencia 16", con fecha 2026-10-20, y el fichero conserva el nombre antiguo `Ratchet9` en el origen local, mientras que el nombre en el Hub se actualizó a `Ratchet16` para reflejar el linaje.
 
-En cuanto al entrenamiento, no se indica el numero de tokens, la composicion del dataset, ni si hubo RLHF o DPO. El proceso descrito es una calibracion direccional de pesos en nueve rondas ("ratchet sequences") sobre 336 tensores, con ajuste de las cabezas MTP a sintaxis cientifica y ecuaciones de equilibrio de unidades. Se declara una validacion contra una suite de 89 comprobaciones fisicas y una mejora acumulada de perplejidad de aproximadamente el 14 % respecto al modelo base. Los detalles metodologicos de la calibracion (algoritmo, datos, hiperparametros) no estan disponibles en la informacion proporcionada.
+La evidencia de calibración publicada es de muestra pequeña: tres prompts equivalentes. Los valores registrados son loss de aprendizaje 0.2147887469 (baseline) frente a 0.2100177841 (candidato), loss de retención 0.2489672313 frente a 0.2496686303, y aceptación de borrador MTP 0.7482014388 frente a 0.7481481481. La comprobación de equivalencia de salida del candidato pasó, pero la puerta MTP no pasó y la puerta de comportamiento no se evaluó; la semilla se admitió mediante un override explícito de semilla aprendida. El autor advierte que estas medidas no establecen una mejora general de capacidad ni de aceptación, y que no se remidieron las cifras de rendimiento de Ratchet9 para este hash exacto de pesos.
 
 ## Capacidades
 
-- Generacion de texto tecnico y cientifico en ingles y chino.
-- Generacion de codigo para simulacion numerica: integradores de EDO/EDP, esquemas en diferencias finitas, retículas de Yee, condiciones CFL.
-- Software cientifico en Python, Rust y C++ (etiquetas declaradas por el autor).
-- Razonamiento sobre invariantes diferenciales y formulaciones hamiltonianas.
-- Decodificacion especulativa mediante cabezas MTP, con una tasa de aceptacion declarada del 95,6 % y un rendimiento de 4,8 a 8,7 tokens por paso.
-- Memoria multi-turno extendida sobre invariantes conservados, segun la calibracion de las capas SSM.
-- Ventana de contexto larga (hasta 200.000 tokens) con offload de la cache KV a RAM del sistema.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles de forma explicita.
-- Vision, audio u otras modalidades: no disponibles.
+- Generación de texto conversacional en inglés y chino, heredada del modelo base Qwen3.8-27B.
+- Asistencia en programación científica: generación de código numérico, expresiones y explicaciones de física computacional (según la orientación declarada por el autor).
+- Soporte de calibración con imatrix para cuantización IQ3_M.
+- Integración con decodificación especulativa mediante borradores MTP (el autor reporta métricas de aceptación de borrador, aunque la puerta MTP no pasó en la secuencia 16).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del Hub).
+- No se documentan capacidades de visión, audio, tool calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Generacion de integradores numericos: el modelo puede producir codigo de Runge-Kutta, leapfrog simplectico o esquemas implicitos listos para compilar, aprovechando que sus capas de normalizacion F32 fueron calibradas para reducir el error de acumulacion en coma flotante.
-- Revision de estabilidad de simulaciones: analisis de un esquema existente para detectar inversiones de signo en hamiltonianos, violaciones de la condicion CFL o retículas descentradas, que son las causas tipicas de explosion a NaN.
-- Migracion de prototipos Python a Rust o C++: traduccion de codigo numerico de un lenguaje interpretado a otro compilado, con atencion a tipos, alineacion de memoria y equilibrio de unidades.
-- Asistencia a investigacion en fisica computacional: apoyo en la formulacion de discretizaciones, eleccion de condiciones de contorno y comprobacion de invariantes conservados a lo largo de cadenas de razonamiento largas.
-- Generacion de pruebas unitarias y de regresion para codigo cientifico: creacion de casos de prueba con soluciones analiticas conocidas para validar un solver antes de integrarlo en produccion.
-- Laboratorios con hardware limitado: el modelo esta pensado para ejecutarse en una GPU de 16 GB con contexto completo de 200.000 tokens mediante offload a memoria del host, lo que permite su uso local sin infraestructura de centro de datos.
-- Documentacion tecnica de pipelines de simulacion: redaccion de documentacion y comentarios para codigo de HPC, un caso de uso coherente con el sesgo hacia contenido cientifico de la calibracion.
+- Exploración de física computacional en local: el modelo puede generar borradores de ecuaciones, scripts de simulación y explicaciones conceptuales en una máquina con ~14,5 GB de pesos, útil para prototipado rápido antes de validar con herramientas formales.
+- Asistencia a la docencia y estudio de métodos numéricos: generación de ejemplos de discretización, condiciones de contorno y análisis de convergencia, siempre con verificación manual de unidades e invariantes.
+- Pruebas de pipelines de cuantización: sirve como caso de estudio reproducible de calibración IQ3_M con imatrix y de evaluación de pérdidas de aprendizaje/retención en muestras pequeñas.
+- Evaluación de decodificación especulativa: los registros de aceptación de borrador MTP permiten experimentar con configuraciones de speculative decoding en llama.cpp sobre un modelo de 27B cuantizado a 3 bits.
+- Desarrollo de herramientas internas en inglés o chino: al soportar ambos idiomas, puede usarse para generar documentación técnica o comentarios de código bilingües en entornos de investigación.
+- Reproducción de linajes de checkpoints: el repositorio incluye hashes SHA-256 del artefacto y del backup previo, lo que facilita auditorías de procedencia en proyectos de investigación que exigen trazabilidad de pesos.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni equivalentes). Los unicos datos numericos disponibles son las metricas internas de validacion de la secuencia Ratchet #9 frente a la #8:
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye únicamente métricas de calibración de muestra pequeña (tres prompts), que no constituyen benchmarks de capacidad:
 
-| Metrica | Baseline (Seq #8) | Calibrado (Seq #9) | Variacion |
-|---|---|---|---|
-| Perdida de aprendizaje causal (L_learning) | 0,07204 | 0,07018 | -2,58 % |
-| Perplejidad de aprendizaje causal (1,8 M tokens) | 1,0747 | 1,0727 | Superior en 9/9 fragmentos |
-| Perdida de retencion (L_retention) | 0,13514 | 0,13506 | -0,07 % (sin regresion) |
-| Tasa de exito en anclas de comportamiento | 8/8 (100 %) | 8/8 (100 %) | 89/89 comprobaciones fisicas verificadas |
-| Rendimiento especulativo MTP | 6,3 tokens/paso | 4,8-8,7 tokens/paso | 95,6 % de aceptacion especulativa |
+| Medicion | Baseline | Candidato |
+|---|---:|---:|
+| Learning loss | 0.2147887469 | 0.2100177841 |
+| Retention loss | 0.2489672313 | 0.2496686303 |
+| MTP draft acceptance | 0.7482014388 | 0.7481481481 |
 
-Estos valores proceden unicamente del autor y no han sido reproducidos por terceros. No se dispone de comparaciones con otros modelos en benchmarks publicos dentro de la informacion proporcionada.
+El autor declara explícitamente que no se hacen afirmaciones de throughput, perplejidad ni validación de modelos físicos, y que las cifras previas de Ratchet9 no se remidieron para este hash de pesos.
 
 ## Requisitos de hardware
 
-- GPU de 16 GB (RTX 5060 Ti, 4080, 3090, 4090): offload completo en GPU (`-ngl 99`), hasta 200.000 tokens de contexto con la cache KV en RAM del host, con una velocidad esperada de 25-45+ tokens/s empleando MTP.
-- GPU de 12 GB (RTX 3060, 4070): offload parcial (`-ngl 55-65`), contexto de hasta 64.000 tokens, 15-25 tokens/s.
-- Apple Silicon (M2/M3/M4 Max con 36 GB o mas): memoria unificada, contexto de 128.000+ tokens, 30-50 tokens/s.
-- RAM del sistema: se recomiendan 32 GB DDR5 para contextos superiores a 64.000 tokens.
-- Despliegue recomendado por el autor: `llama-server` de llama.cpp con los flags `-dev CUDA0 --fit off -ngl 99 --no-kv-offload -fa 1 -c 200000 -ctk q4_0 -ctv q4_0 --cache-ram 12288`.
-- Otras opciones de despliegue (vLLM, TGI, Ollama, TensorRT-LLM): no disponibles en la informacion proporcionada.
-- No se proporcionan datos de latencia por peticion ni de throughput agregado en lote.
+- VRAM estimada para inferencia: aproximadamente 14,5 GB solo para los pesos en IQ3_M; hay que sumar la KV-cache, que depende de la longitud de contexto y de la política de caché del runtime.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, una GPU de 24 GB (por ejemplo, RTX 4090) o superior debería poder alojar los pesos, pero el autor no confirma hardware validado.
+- Cabe en GPU de consumo: probablemente sí en GPUs con 24 GB o más, siempre que se limite el contexto y el tamaño de la KV-cache; no confirmado por el autor.
+- Opciones de despliegue: llama.cpp con soporte GGUF actualizado (requisito explícito del autor). No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles; el autor indica que dependen del runtime, hardware, política de KV-cache y configuración de decodificación especulativa, y que el repositorio no garantiza ningún nivel concreto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. El unico punto de referencia documentado es el propio checkpoint base, Qwen/Qwen3.8-27B-TurboFCFusion, para el que tampoco se facilitan parametros, contexto, licencia ni resultados publicos. Por tanto, no es posible establecer una comparativa rigurosa frente a alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Physics-Fayah-27B-Ratchet9-IQ3_M | 27,3 B | no disponible | GGUF IQ3_M | Apache-2.0 | Derivado experimental con calibración documentada; sin benchmarks |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible en esta ficha | safetensors y otros | Apache-2.0 | Modelo original; referencia para comparar calidad y soporte |
+| Otros GGUF de 27B de la familia Qwen | ~27 B | no disponible | GGUF | Apache-2.0 | Alternativas de cuantización estándar sin ajuste específico de física |
+
+La comparación cuantitativa de rendimiento no está disponible: no hay benchmarks publicados para este derivado ni datos de contexto en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio presenta 0 descargas y 0 likes, por lo que no existe validacion independiente del modelo ni de sus metricas declaradas.
-- Todos los numeros de rendimiento y validacion provienen exclusivamente del autor y no son reproducibles con la informacion publicada.
-- La model card emplea lenguaje promocional ("La Crema Catalana", "soberania", "ratchet criptografico") y afirmaciones no verificables; conviene tratarlas como marketing y no como evidencia tecnica.
-- Se desconoce el numero de tokens de entrenamiento, la composicion del dataset y si se aplicaron tecnicas de alineacion (RLHF, DPO); esto dificulta evaluar sesgos y calidad general.
-- Idiomas declarados limitados a ingles y chino; el rendimiento en castellano no esta documentado y es probable que sea inferior.
-- La cuantizacion publicada es IQ3_M, de 3 bits, lo que puede degradar la precision en tareas de calculo numerico fino, justamente el dominio objetivo del modelo. No se ofrecen variantes de mayor precision en este repositorio.
-- El contexto de 200.000 tokens depende del offload de la cache KV a RAM del sistema; sin esa configuracion, la ventana efectiva es considerablemente menor.
-- Riesgo de alucinacion en ecuaciones, constantes fisicas y referencias bibliograficas: el modelo deberia validarse siempre con pruebas de regresion fisica antes de usar su salida en produccion.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B-TurboFCFusion, ya que podrian imponer restricciones adicionales.
-- Fecha de publicacion declarada en septiembre de 2026; no hay historial de mantenimiento ni versiones posteriores documentadas.
+- El propio autor califica el checkpoint como experimental y no validado como solver numérico; las ecuaciones, el código y las explicaciones científicas deben tratarse como hipótesis y verificarse de forma independiente (unidades, condiciones de contorno, convergencia e invariantes).
+- La evidencia de calibración proviene de tres prompts; la puerta MTP no pasó, la puerta de comportamiento no se evaluó y la semilla se admitió con un override explícito. No hay base para afirmar mejoras de capacidad o aceptación.
+- No se han publicado benchmarks de MMLU, HumanEval, GSM8K ni similares para este artefacto; las cifras de Ratchet9 no se remidieron para el hash actual.
+- Idiomas limitados a inglés y chino; no se documenta soporte de castellano.
+- Riesgo de alucinación inherente a un modelo de lenguaje de 27B cuantizado a 3 bits; la cuantización agresiva puede degradar precisión en tareas numéricas.
+- La licencia Apache-2.0 debe revisarse junto con los términos del modelo base Qwen3.8-27B y de cualquier fuente fusionada antes de redistribuir artefactos derivados.
+- El repositorio incluye backups y logs de calibración; conviene verificar el SHA-256 del GGUF antes de usarlo en producción.
+- El registro de calibración de la secuencia 16 no forma parte de la campaña de diez modelos en curso y no implica que esos candidatos hayan pasado revisión.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B-TurboFCFusion
-- Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a contenido no relacionado sobre hongos de pudricion de la madera).
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

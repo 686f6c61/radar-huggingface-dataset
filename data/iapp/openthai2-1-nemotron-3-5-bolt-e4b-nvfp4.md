@@ -2,98 +2,95 @@
 
 ## Resumen
 
-OpenThai 2.1 Bolt E4B NVFP4 es la versión cuantizada a NVFP4 del modelo OpenThai 2.1 Bolt E4B, desarrollado por iApp Technology en colaboración con la AIEAT (Asociación de Empresarios de Inteligencia Artificial de Tailandia). El modelo base parte de NVIDIA Nemotron 3.5 Bolt E4B, que a su vez deriva de Google Gemma 4 E4B-it mediante post-entrenamiento por parte de NVIDIA. Está diseñado específicamente para GPUs NVIDIA Blackwell (DGX Spark, serie RTX 50 y B200), donde aprovecha el hardware FP4 nativo.
+OpenThai2.1-Nemotron-3.5-Bolt-E4B-NVFP4 es una compilación cuantizada en NVFP4 del modelo OpenThai 2.1 Bolt E4B, desarrollado por el equipo OpenThai (iApp Technology en colaboración con AIEAT, la asociación tailandesa de empresas de inteligencia artificial). Parte del modelo base NVIDIA Nemotron 3.5 Bolt E4B, que a su vez es un post-entrenamiento de Google Gemma-4-E4B-it, con 8.000 millones de parámetros totales y 4.000 millones efectivos, 42 capas y un vocabulario de 262.144 tokens. El modelo está afinado con LoRA para reforzar conocimiento en tailandés, identidad propia de OpenThai, respuestas en tailandés generadas por el propio modelo base y conversaciones con llamada a herramientas.
 
-La cuantización se realizó con NVIDIA ModelOpt 0.48.0, aplicando NVFP4 (4 bits en pesos y activaciones, en bloques de 16 con escalas FP8) únicamente a las capas lineales del modelo de lenguaje. Las embeddings, proyecciones de entrada por capa, cabeza de salida y los codificadores de visión y audio se mantienen en BF16. El resultado es un checkpoint de 10,3 GB frente a los 15,9 GB del modelo BF16, con una degradación medida inferior a 1,5 puntos en los benchmarks tailandeses evaluados.
+La relevancia de esta versión concreta reside en la cuantización: reduce el peso de 15,9 GB en BF16 a 10,3 GB mediante NVIDIA ModelOpt 0.48.0, aplicando NVFP4 (pesos y activaciones de 4 bits en bloques de 16 con escalas FP8) únicamente a las capas lineales del modelo de lenguaje. Las embeddings, las proyecciones de entrada por capa, la cabeza de salida y los codificadores de visión y audio se mantienen en BF16. Está pensada para GPUs NVIDIA Blackwell (DGX Spark, serie RTX 50, B200), aunque también se ha probado en H100 con el kernel Marlin de vLLM.
 
-El modelo es multimodal (texto, imagen y audio de entrada) y está orientado a generación de texto conversacional en tailandés e inglés, con soporte de tool calling, modo de razonamiento (thinking) y un contexto declarado de 262.144 tokens en el vocabulario. Su relevancia actual radica en ser una de las primeras builds NVFP4 de un modelo tailandés de estas características, pensada para despliegue eficiente en hardware Blackwell.
+El modelo soporta tailandés e inglés, tiene una longitud de contexto de 64K tokens en el modelo base (probado a 32.768), admite entrada de imagen, texto y audio, y responde con el modo de razonamiento desactivado por defecto. Es el modelo inicial de ChindaBot y está liberado bajo licencia OpenMDW-1.1.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (familia Gemma 4), con capas lineales cuantizadas a NVFP4 |
-| Parámetros totales | 5.995.992.352 (aproximadamente 6,0 B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | 262.144 tokens de vocabulario declarados; en el ejemplo de despliegue se limita a 16.384 con `--max-model-len` |
-| Tipos de cuantización | NVFP4 (4 bits en pesos y activaciones, bloques de 16, escalas FP8); embeddings, proyecciones de entrada, cabeza de salida y codificadores de visión/audio en BF16 |
-| Idiomas soportados | tailandés (th), inglés (en) |
-| Licencia | OpenMDW-1.1 |
-| Formato de pesos | safetensors (librería transformers; compatible con vLLM) |
+| Arquitectura | Transformer Gemma-4-E4B (layout de Google Gemma-4-E4B-it, post-entrenado por NVIDIA); multimodal image-text-to-text con codificadores de visión y audio |
+| Parametros totales | 5.995.992.352 (~6B en safetensors; la model card declara 8B totales / 4B efectivos) |
+| Parametros activos | 4B efectivos (según model card) |
+| Longitud de contexto | 64K tokens (modelo base); servido y probado a 32.768 |
+| Tipos de cuantizacion | NVFP4 (4 bits en pesos y activaciones, bloques de 16 con escalas FP8); embeddings, proyecciones de entrada, cabeza de salida y codificadores visión/audio en BF16 |
+| Idiomas soportados | Tailandés (th), inglés (en) |
+| Licencia | OpenMDW-1.1 (heredada del modelo base); Gemma 4 subyacente bajo Apache 2.0 |
+| Formato de pesos | safetensors (repo de 30,3 GB; pesos NVFP4 de 10,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal de la familia Gemma 4, con codificadores separados de visión y audio que se mantienen en BF16 tras la cuantización. La build NVFP4 cuantiza exclusivamente las capas lineales del modelo de lenguaje, preservando en precisión completa las embeddings (incluida la tabla de tokens de 262.144 entradas, que ocupa 7,0 GB de los 10,3 GB totales), las proyecciones de entrada por capa, la cabeza de salida y los codificadores multimodales. La calibración se realizó con 256 conversaciones en tailandés e inglés extraídas del split de validación de los datos de entrenamiento, con un máximo de 2.048 tokens por muestra.
+El modelo sigue la arquitectura Gemma-4-E4B en su variante post-entrenada por NVIDIA (Nemotron 3.5 Bolt E4B): 42 capas, vocabulario de 262.144 tokens y 8.000 millones de parámetros con 4.000 millones efectivos. Incluye codificadores de visión y audio que se mantienen intactos respecto al modelo de NVIDIA. El ajuste fino se realizó con LoRA de rango 64 y alpha 128 sobre las proyecciones de atención (q, k, v, o) y de MLP (gate, up, down) del modelo de lenguaje, durante una época, con tasa de aprendizaje 1e-4, y se fusionó en los pesos base a escala 1.0.
 
-El linaje de entrenamiento es el siguiente: Google Gemma 4 E4B-it (licencia Apache 2.0) fue post-entrenado por NVIDIA para dar lugar a Nemotron 3.5 Bolt E4B (OpenMDW-1.1), y sobre este iApp Technology construyó OpenThai 2.1 Bolt E4B, del que esta es la variante cuantizada. La model card no detalla el volumen de tokens de entrenamiento ni la composición del dataset del modelo base; remite al repositorio principal para esa información. Tampoco se especifica si hubo RLHF o DPO en las etapas descritas.
+El conjunto de entrenamiento consta de 81.556 conversaciones (39,0 millones de tokens), todas con el modo de razonamiento desactivado, centradas en conocimiento tailandés, identidad de OpenThai, respuestas en tailandés escritas por el propio modelo base y diálogos con llamada a herramientas. La cuantización NVFP4 se aplicó con NVIDIA ModelOpt 0.48.0 usando el preset `NVFP4_W4A4_WEIGHT_MSE_FP8_SWEEP_CFG`, que elige escalas de bloque que minimizan el error de pesos, calibrado con 128 conversaciones tailandés/inglés del split de validación de hasta 1.024 tokens cada una. Esta es la segunda release (15 de noviembre de 2026); la primera (11 de noviembre de 2026) permanece en la revisión `a8c040ea0d5ed91a3212d345b9cb3a874d3d8e2f`.
 
 ## Capacidades
 
-- Generación de texto conversacional en tailandés e inglés, con calidad evaluada mediante ThaiExam, OpenThaiEval e IFEval-TH.
-- Entrada multimodal: imagen y audio (pipeline `image-text-to-text`, con codificadores de visión y audio en BF16).
-- Tool calling / function calling, con parser dedicado en vLLM (`--tool-call-parser gemma4`).
-- Modo de razonamiento (thinking) desactivable; por defecto está apagado y se activa con `chat_template_kwargs={"enable_thinking": true}`. Incluye parser de razonamiento (`--reasoning-parser gemma4`).
-- Conversación multi-turno, verificada en las pruebas del autor (segundo turno tras un tool call).
-- Seguimiento de instrucciones en tailandés (IFEval-TH), con 78,6 puntos en la build NVFP4.
-- No se documentan capacidades de agente multi-paso más allá del tool calling descrito.
+- Generación de texto conversacional en tailandés e inglés, con respuestas multi-turno.
+- Razonamiento explícito opcional mediante modo thinking, activable con `chat_template_kwargs={"enable_thinking": true}` (desactivado por defecto).
+- Llamada a herramientas y function calling, con parsers `gemma4` para tool-call y reasoning en vLLM.
+- Entrada multimodal: imagen, texto y audio (codificadores de visión y audio heredados de NVIDIA, sin cambios).
+- Capacidades de agente y razonamiento multi-paso a través del soporte de tool calling.
+- Conocimiento específico de dominio tailandés e identidad de marca OpenThai.
+- Evaluaciones específicas en tailandés: ThaiExam, OpenThaiEval e IFEval-TH.
 
 ## Casos de uso
 
-- Atención al cliente en tailandés: el modelo puede mantener conversaciones multi-turno con contexto amplio y responder en registro formal tailandés, como demuestra la prueba de auto-presentación incluida en la model card. Adecuado para empresas que operan en el mercado tailandés.
-- Asistentes con acceso a herramientas: gracias al soporte de tool calling con parser `gemma4` en vLLM, puede integrarse en flujos donde el modelo consulta APIs externas (por ejemplo, clima, como en la prueba del autor) y elabora la respuesta con el resultado devuelto.
-- Procesamiento de documentos con imagen: al aceptar entrada de imagen, puede extraer y resumir información de capturas, formularios o documentos escaneados, combinando el codificador visual con generación de texto.
-- Transcripción y análisis de audio: el codificador de audio permite tareas de comprensión de voz sin un pipeline separado, útil para atención telefónica o análisis de reuniones.
-- Evaluación educativa y exámenes: el rendimiento en ThaiExam (66,0 en NVFP4) lo hace utilizable para generación de preguntas y respuestas de ámbito académico en tailandés.
-- Despliegue en hardware Blackwell de borde: con 10,3 GB de pesos, cabe en DGX Spark y GPUs RTX 50-series, lo que permite inferencia local en estaciones de trabajo sin depender de la nube.
-- Razonamiento con modo thinking: para tareas que requieren cadenas de razonamiento más largas, se puede activar el modo thinking por petición y usar el parser de razonamiento de vLLM para separar el razonamiento de la respuesta final.
+- Atención al cliente en tailandés: el modelo gestiona conversaciones multi-turno con hasta 32.768 tokens de contexto probados, adecuado para historiales largos de soporte con conocimiento local tailandés.
+- Asistente de marca OpenThai (ChindaBot): es el modelo inicial de ChindaBot, por lo que encaja directamente en despliegues de asistentes con identidad corporativa ya integrada.
+- Automatización con herramientas: gracias al soporte de tool calling y a los parsers de vLLM, puede invocar APIs externas (por ejemplo, consultas meteorológicas, como se valida en las pruebas del autor) dentro de flujos de agente.
+- Evaluación educativa y exámenes en tailandés: su rendimiento en ThaiExam (66,1 en NVFP4) lo hace utilizable en sistemas de práctica y corrección de pruebas tailandesas.
+- Procesamiento multimodal local: al conservar los codificadores de visión y audio, puede emplearse en tareas de descripción de imágenes o transcripción combinada con texto, siempre que el despliegue lo permita.
+- Despliegue en hardware Blackwell de consumo o estación de trabajo: con 10,3 GB de pesos NVFP4, es viable en DGX Spark y GPUs RTX 50-series para inferencia local con datos sensibles sin salir del equipo.
+- Generación de contenido y respuestas en tailandés con contexto largo: útil para resumir o redactar documentos extensos en tailandés dentro de la ventana de 32K tokens probada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en H100 con vLLM v0.31.0 (thinking off, greedy), comparando NVFP4 frente al modelo BF16:
+Resultados publicados por el autor (thinking off, greedy, 4k tokens nuevos, en una H100 con vLLM v0.31.0), comparando NVFP4 frente a BF16:
 
-| Benchmark | NVFP4 | BF16 | Δ | Error estándar |
+| Benchmark | NVFP4 | BF16 | Delta | Error estándar |
 |---|---|---|---|---|
-| ThaiExam (565) | 66,0 | 67,4 | −1,49 | 1,48 |
-| OpenThaiEval (1.232) | 67,0 | 67,8 | −0,81 | 0,87 |
-| IFEval-TH (215) | 78,6 | 79,5 | −0,93 | 1,14 |
+| ThaiExam (565) | 66,1 | 67,3 | −1,21 | 1,31 |
+| OpenThaiEval (1.232) | 67,1 | 68,0 | −0,89 | 0,78 |
+| IFEval-TH (215) | 79,1 | 79,5 | −0,47 | 0,81 |
 
-Ninguna de las tres caídas supera el doble de su error estándar, aunque las tres apuntan en la misma dirección. El autor recomienda usar el modelo BF16 como referencia si la memoria lo permite. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
+Ninguna de las tres caídas supera el doble de su error estándar, aunque las tres apuntan en la misma dirección. Con el preset por defecto de ModelOpt (escala del mayor peso del bloque), ThaiExam quedaba 3,4 puntos por debajo de BF16 (SE 1,5); la compilación publicada usa escalas que minimizan el error. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 10,3 GB de pesos en NVFP4; con overhead de KV cache y activaciones, se recomienda al menos 16-20 GB para contextos moderados.
-- GPUs objetivo: NVIDIA Blackwell (DGX Spark, RTX 50-series, B200), donde se aprovecha la cuantización FP4 de activaciones.
-- En H100 (sin hardware FP4), vLLM ejecuta las capas NVFP4 como pesos de 4 bits con activaciones de 16 bits mediante su kernel Marlin; probado en una sola H100 con vLLM v0.31.0.
-- Cabe en GPUs de consumo de la serie RTX 50; en generaciones anteriores (RTX 40, RTX 30) funcionaría vía kernel Marlin, aunque no se ha probado según la model card.
-- Despliegue recomendado: vLLM v0.31.0 con `--max-model-len 16384`, `--enable-auto-tool-choice`, `--tool-call-parser gemma4`, `--reasoning-parser gemma4` y `--limit-mm-per-prompt '{"image":0,"video":0,"audio":0}'` para desactivar entradas multimodales.
-- Latencia y throughput: no disponibles en la información proporcionada. La ruta de activaciones FP4 en Blackwell no ha sido probada por el autor.
+- VRAM estimada: los pesos NVFP4 ocupan 10,3 GB; con caché KV y overhead de servido, se recomienda al menos 16 GB de VRAM para contexto moderado.
+- GPUs recomendadas: NVIDIA Blackwell (DGX Spark, RTX 50-series, B200) para aprovechar la cuantización de activaciones a 4 bits; también funciona en H100 con el kernel Marlin de vLLM (pesos de 4 bits, activaciones de 16 bits).
+- Cabe en GPU de consumo: sí, en GPUs con 16 GB o más de VRAM; en DGX Spark el autor indica que aún no se ha probado la carga.
+- Despliegue: vLLM v0.31.0 (probado por el autor, con `--max-model-len 16384`, `--enable-auto-tool-choice`, `--tool-call-parser gemma4` y `--reasoning-parser gemma4`); otros motores no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles; el autor solo reporta pruebas funcionales y de calidad, no métricas de rendimiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| OpenThai 2.1 Bolt E4B NVFP4 (este) | 6,0 B | 262.144 (vocabulario); 16.384 en ejemplo vLLM | OpenMDW-1.1 | safetensors NVFP4 | Multimodal, tailandés/inglés, tool calling |
-| OpenThai 2.1 Bolt E4B (BF16) | 6,0 B | igual | OpenMDW-1.1 | safetensors BF16 | Referencia de precisión; 15,9 GB; métricas ligeramente superiores |
-| NVIDIA Nemotron 3.5 Bolt E4B | no disponible | no disponible | OpenMDW-1.1 | no disponible | Modelo base de NVIDIA del que deriva este |
-| Google Gemma 4 E4B-it | no disponible | no disponible | Apache 2.0 | no disponible | Origen de la familia; sin adaptación al tailandés |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| OpenThai2.1-Nemotron-3.5-Bolt-E4B-NVFP4 | ~6B safetensors (8B totales / 4B efectivos) | 64K (probado 32K) | OpenMDW-1.1 | Hugging Face, 270 descargas |
+| NVIDIA Nemotron-3.5-Bolt-E4B-BF16 (modelo base) | 8B totales / 4B efectivos | 64K | OpenMDW-1.1 | Hugging Face (referencia del autor) |
+| Google Gemma-4-E4B-it (origen) | 8B totales / 4B efectivos | no disponible en la información | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
+No se dispone de datos de benchmarks comparativos con modelos alternativos en la información proporcionada; la única comparación publicada es la del propio modelo frente a su versión BF16.
 
 ## Limitaciones y advertencias
 
-- Degradación por cuantización: las tres métricas evaluadas caen entre 0,8 y 1,5 puntos respecto a BF16; el autor recomienda BF16 como referencia si hay memoria suficiente.
-- Cobertura limitada de benchmarks: solo se publican ThaiExam, OpenThaiEval e IFEval-TH; no hay datos de código, matemáticas ni razonamiento general.
-- Ruta FP4 en Blackwell no probada: las pruebas se realizaron en H100 (sin FP4 nativo); el comportamiento con activaciones cuantizadas a 4 bits en hardware Blackwell está pendiente de validación.
-- DGX Spark no probado: la prueba de carga en DGX Spark estaba pendiente de aprobación en el momento de redactar la model card.
-- Idiomas limitados a tailandés e inglés; no se documenta soporte de otros idiomas.
-- Riesgo de alucinación: no se documenta explícitamente en la model card; aplican los riesgos habituales de los modelos generativos, especialmente en dominios especializados.
-- Sesgos: no documentados en la información disponible; al derivar de Gemma 4, pueden heredarse sesgos del modelo original.
-- Licencia OpenMDW-1.1: es una licencia "other", no Apache ni MIT; conviene revisar sus términos antes de uso comercial. El modelo base Gemma 4 es Apache 2.0, pero el post-entrenamiento de NVIDIA y de iApp introduce la licencia OpenMDW-1.1.
-- La model card está marcada como borrador (DRAFT v0.3) y puede cambiar.
+- Sesgos: no se documentan sesgos específicos en la información disponible; al estar entrenado mayoritariamente con datos tailandeses e ingleses, el rendimiento fuera de esos idiomas no está garantizado.
+- Alucinación: no se reportan evaluaciones de tasa de alucinación; como modelo de 4B efectivos, es esperable una fiabilidad limitada en conocimiento factual extenso.
+- Contexto e idioma: el contexto probado es de 32.768 tokens aunque el modelo base soporta 64K; solo se soportan tailandés e inglés.
+- Licencia: OpenMDW-1.1, heredada del modelo base, con la restricción adicional de que Gemma 4 subyacente está bajo Apache 2.0; conviene revisar los términos de OpenMDW-1.1 antes de uso comercial.
+- Cuantización: la NVFP4 introduce una degradación pequeña pero consistente en las tres evaluaciones tailandesas; el autor recomienda usar BF16 si la memoria lo permite.
+- Hardware: la ruta de activaciones a 4 bits en Blackwell no ha sido probada por el autor; en H100 se ejecuta con pesos de 4 bits y activaciones de 16 bits vía Marlin, lo que no aprovecha la aceleración FP4.
+- Los pesos BF16 no están publicados todavía; solo está disponible esta compilación NVFP4.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B-NVFP4
-- Modelo base BF16: https://huggingface.co/iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Assets de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
+- Repositorio de assets de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
+- Revisión de la primera release: `a8c040ea0d5ed91a3212d345b9cb3a874d3d8e2f` (en el repositorio de Hugging Face del modelo)

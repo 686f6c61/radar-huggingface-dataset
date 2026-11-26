@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "aesthetic0001/rent-k-dubs-search-v14",
+  "slug": "aesthetic0001-rent-k-dubs-search-v14",
+  "author": "aesthetic0001",
+  "url": "https://huggingface.co/aesthetic0001/rent-k-dubs-search-v14",
+  "created_at": "2026-11-26T01:09:20.000Z",
+  "updated_at": "2026-11-26T01:10:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "named-entity-recognition",
+    "rental-search",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:finetune:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193581591,
+  "parameters_human": "193.6M",
+  "storage_bytes": 774366564,
+  "storage_human": "774 MB",
+  "context_length": null,
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Changing 3ds clock - RTC and DSP setup : r/3dspiracy - Reddit",
+      "url": "https://www.reddit.com/r/3dspiracy/comments/1ba984x/changing_3ds_clock_rtc_and_dsp_setup/",
+      "snippet": "Mar 9, 2024 · Hi, I modded my new 3ds a few months ago, following the guide as you all know. All works well, I'm currently travelling …"
+    }
+  ]
+}

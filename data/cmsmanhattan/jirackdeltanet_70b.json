@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b",
   "created_at": "2026-10-18T17:34:21.000Z",
-  "updated_at": "2026-11-20T04:43:46.000Z",
+  "updated_at": "2026-11-25T21:37:11.000Z",
   "license": "jirack-proprietary",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -66,7 +66,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1380,
+  "downloads_30d": 1384,
   "trending_score": 0,
   "parameters": 69934845440,
   "parameters_human": "69.93B",
@@ -79,7 +79,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

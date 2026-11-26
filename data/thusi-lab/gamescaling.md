@@ -2,52 +2,51 @@
 
 ## Resumen
 
-GameScaling es una familia de modelos vision-lenguaje desarrollada por el equipo de I+D de miHoYo Honkai AI junto con investigadores de la Universidad de Tsinghua, la Universidad de la Academia China de Ciencias, la Universidad de Hong Kong, la Universidad Nacional de Singapur y la Universidad de Pekín. El modelo se entrena mediante preentrenamiento continuado (continued pre-training) sobre la familia Qwen3.5 con el objetivo de convertirse en un agente encarnado (embodied agent) capaz de operar en entornos de videojuego mediante control de teclado y ratón.
+GameScaling es una familia de modelos de lenguaje y visión-lenguaje desarrollada por THUSI-Lab en colaboración con el equipo de I+D de IA de miHoYo (Honkai), la Universidad de Tsinghua, la Universidad de la Academia China de Ciencias, la Universidad de Hong Kong, la Universidad Nacional de Singapur y la Universidad de Pekín. El modelo se presenta como una iniciativa de preentrenamiento continuado orientada a construir agentes encarnados (embodied agents) capaces de operar en entornos de videojuegos diversos mediante interacciones de teclado y ratón. Se construye como un fine-tuning sobre la familia Qwen3.5 en cuatro escalas: 0,8B, 2B, 9B y 27B parámetros.
 
-La propuesta central es el escalado del entrenamiento en dominios de juego: en lugar de especializar un modelo en un único título, GameScaling se preentrena sobre datos de múltiples mundos virtuales diversos, lo que busca transferencia entre juegos y una mejor generalización como agente. Se publica en cuatro tamaños (0,8B, 2B, 9B y 27B) y en dos etapas de entrenamiento (S1 y S3), lo que permite estudiar empíricamente las leyes de escalado en este dominio.
+La propuesta central es estudiar cómo escala el rendimiento de agentes de juego al aumentar el tamaño del modelo y la cantidad de datos de preentrenamiento continuado sobre trayectorias de juego reales. Para ello se publican variantes etiquetadas como S1 y S3, que corresponden a distintos niveles de escalado de datos de entrenamiento. El modelo acepta entradas de imagen y texto (pipeline image-text-to-text) y produce acciones discretas de teclado y ratón, lo que lo sitúa en la categoría de modelos de política para agentes encarnados.
 
-El modelo es relevante porque aborda un problema poco explorado: cómo escalar agentes encarnados que perciben píxeles y emiten acciones de bajo nivel (pulsaciones de teclado y movimientos de ratón) en lugar de acciones simbólicas de alto nivel. La licencia Apache 2.0 y la compatibilidad con `transformers` y endpoints facilitan su evaluación y despliegue.
+Es relevante ahora porque aborda uno de los cuellos de botella de los agentes basados en modelos de lenguaje: la transferencia de conocimiento general a control motor de bajo nivel en entornos visuales dinámicos. Al liberar los pesos bajo licencia Apache 2.0 y en múltiples tamaños, permite a investigadores reproducir y extender el estudio de escalado sin depender de infraestructura propietaria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) basado en Qwen3.5, con preentrenamiento continuado para control de teclado y ratón |
-| Parametros totales | Cuatro variantes: 0,8B, 2B, 9B y 27B (por variante) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text) derivado de Qwen3.5; no se detalla la variante interna |
+| Parametros totales | Cuatro escalas: 0,8B, 2B, 9B y 27B (por variante) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (repo de 162,4 GB en total para todas las variantes) |
+| Formato de pesos | safetensors (libreria transformers; repo de 162,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-GameScaling parte de los modelos Qwen3.5 (0,8B, 2B, 9B y 27B) y aplica un proceso de continued pre-training sobre datos de interacción en videojuegos. La modalidad de entrada es image-text-to-text: el modelo recibe observaciones visuales del juego junto con contexto textual y produce acciones de control de teclado y ratón. La arquitectura subyacente es la de Qwen3.5, un transformer multimodal, aunque la model card no detalla modificaciones estructurales específicas.
+GameScaling parte de los modelos Qwen3.5 (0,8B, 2B, 9B y 27B) y aplica un proceso de preentrenamiento continuado (continued pre-training) sobre datos de interacción en videojuegos. La arquitectura es, por tanto, la de un transformer multimodal de la familia Qwen3.5, con capacidad de procesar imágenes y texto y de emitir acciones de teclado y ratón. No se especifica en la información disponible si emplea mezcla de expertos, atención lineal u otras innovaciones internas de la familia base.
 
-El entrenamiento se organiza en etapas (S1 y S3 publicadas como checkpoints separados), lo que sugiere un currículo progresivo de preentrenamiento continuado. La contribución metodológica principal es el uso de datos de múltiples mundos virtuales diversos para inducir transferencia entre juegos, en lugar de especialización en un único título. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
+El entrenamiento se organiza en niveles de escalado (S1 y S3) que corresponden a distintas cantidades de datos de preentrenamiento continuado, lo que permite estudiar empíricamente la relación entre volumen de datos, tamaño de parámetros y rendimiento como agente. No se detalla el número exacto de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO. La model card menciona dos referencias arXiv (2610.28698 y 2611.30771) donde presumiblemente se describe la metodología completa.
 
 ## Capacidades
 
 - Percepción visual de entornos de juego a partir de capturas de pantalla (pipeline image-text-to-text).
-- Generación de acciones de bajo nivel: pulsaciones de teclado y movimientos de ratón para controlar al agente.
-- Comportamiento de agente encarnado en entornos interactivos (embodied-agent).
-- Transferencia entre múltiples videojuegos gracias al preentrenamiento continuado sobre mundos virtuales diversos.
-- Comprensión de instrucciones en inglés combinadas con observaciones visuales.
-- Checkpoints intermedios (S1, S3) para estudiar el efecto del escalado del entrenamiento.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes multi-paso y razonamiento explícito (thinking mode): no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
+- Generación de acciones discretas de teclado y ratón para controlar personajes o interfaces.
+- Razonamiento multimodal combinando observaciones visuales y contexto textual.
+- Comportamiento como agente encarnado en entornos interactivos (game-agent, embodied-agent).
+- Capacidad de operar en distintos videojuegos gracias al preentrenamiento continuado sobre mundos virtuales diversos.
+- Soporte de conversación multimodal multi-turno (implícito en el pipeline image-text-to-text).
+- No se documenta soporte explícito de tool calling, function calling ni modo de razonamiento extendido (thinking mode).
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Investigación en agentes encarnados: el modelo sirve como base para estudiar leyes de escalado en control de videojuegos, comparando las cuatro variantes de tamaño y las etapas S1/S3 en entornos controlados.
-- Automatización de pruebas de juego (playtesting): un agente basado en GameScaling puede jugar de forma autónoma para detectar bugs, bloqueos o comportamientos anómalos en builds de desarrollo, reduciendo horas de QA manual.
-- Generación de datos sintéticos de gameplay: el agente puede producir trayectorias de interacción (pantalla → acción) que alimenten el entrenamiento de otros modelos de imitación o de refuerzo.
-- Benchmarking de modelos vision-lenguaje en control de bajo nivel: al emitir eventos de teclado y ratón, permite evaluar la capacidad motora fina de modelos multimodales, una dimensión poco cubierta por benchmarks estándar.
-- Prototipado de NPCs controlados por modelo: estudiar cómo un modelo de este tipo puede pilotar personajes no jugadores con comportamiento visualmente coherente en entornos 3D.
-- Investigación en transferencia entre dominios: evaluar hasta qué punto el preentrenamiento en múltiples juegos mejora el rendimiento en un título no visto durante el entrenamiento.
-- Educación e investigación académica: servir como referencia reproducible (Apache 2.0) para trabajos sobre agentes encarnados y multimodalidad aplicada a entornos interactivos.
+- Investigación en agentes encarnados: utilizar las variantes S1 y S3 de cada escala para reproducir los experimentos de escalado del paper y analizar la relación entre parámetros, datos y rendimiento en tareas de juego.
+- Automatización de pruebas de videojuegos: el modelo puede generar secuencias de teclado y ratón para recorrer menús, validar flujos de UI o detectar regresiones en builds, aprovechando su percepción visual directa de la pantalla.
+- Generación de datos sintéticos de gameplay: ejecutar el agente en entornos controlados para producir trayectorias etiquetadas que alimenten otros modelos de imitación o de refuerzo.
+- Benchmarking de modelos multimodal en control motor: comparar el rendimiento de las cuatro escalas (0,8B a 27B) sobre el mismo conjunto de tareas para estudiar leyes de escalado en agentes.
+- Asistencia a jugadores en tareas repetitivas: integrado en un bucle de captura de pantalla y emisión de eventos, puede automatizar rutinas de farming o navegación en entornos donde esté permitido.
+- Educación e investigación en IA multimodal: servir como caso de estudio reproducible de preentrenamiento continuado sobre Qwen3.5 con licencia permisiva, adecuado para cursos y trabajos académicos.
+- Desarrollo de entornos de evaluación para agentes: usar el modelo como agente de referencia en simuladores o entornos tipo Gym para medir la dificultad de nuevas tareas.
 
 ## Benchmarks y rendimiento
 
@@ -55,39 +54,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; como referencia orientativa, un modelo de 0,8B en FP16 ocupa aproximadamente 1,6 GB de pesos, uno de 2B unos 4 GB, uno de 9B unos 18 GB y uno de 27B unos 54 GB, a lo que hay que sumar el codificador visual y el contexto.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, las variantes 0,8B y 2B son aptas para GPU de consumo; la de 9B requiere GPU de 24 GB o superior (RTX 4090, A100 40GB); la de 27B requiere A100/H100 de 80 GB o cuantización.
-- Cabe en GPU de consumo: las variantes 0,8B y 2B sí; la de 9B en RTX 4090 con cuantización; la de 27B no de forma holgada.
-- Opciones de despliegue: compatible con `transformers` y con endpoints compatibles según los tags; vLLM, llama.cpp, Ollama o TGI no se confirman en la información disponible.
+- VRAM estimada para inferencia (aproximada, sin cuantizar): 0,8B en torno a 2 GB; 2B en torno a 5 GB; 9B en torno a 20 GB; 27B en torno a 56 GB. Estas cifras son estimaciones por tamaño de parámetros y no proceden de la model card.
+- GPU recomendadas: RTX 4090 (24 GB) para las variantes 0,8B, 2B y 9B; A100 80 GB o H100 para la variante 27B sin cuantizar.
+- Cabe en GPU de consumo: las variantes 0,8B y 2B con holgura en cualquier GPU de 8 GB o más; la 9B en una RTX 4090 o RTX 3090; la 27B requiere cuantización para caber en 24 GB.
+- Opciones de despliegue: transformers (librería declarada); vLLM, TGI, llama.cpp u Ollama son compatibles en principio con pesos safetensors de Qwen3.5, aunque no se confirman en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| GameScaling (0,8B–27B) | 0,8B / 2B / 9B / 27B | no disponible | image-text-to-text + acciones teclado/ratón | Apache 2.0 | Hugging Face |
-| Qwen3.5 (base) | 0,8B / 2B / 9B / 27B | no disponible | image-text-to-text | según variante | Hugging Face |
-| Alternativas de agentes encarnados en juegos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| GameScaling (THUSI-Lab) | 0,8B / 2B / 9B / 27B | no disponible | Apache 2.0 | Agente encarnado en videojuegos, multimodal |
+| Qwen3.5 (Qwen) | 0,8B / 2B / 9B / 27B | no disponible | Apache 2.0 (segun familia base) | LLM/VLM generalista |
+| Alternativas de agentes de juego | no disponible | no disponible | no disponible | no disponible |
 
-La comparación directa con otros agentes encarnados de videojuegos no está disponible en la información proporcionada; el principal punto de referencia es la familia Qwen3.5 sobre la que se construye.
+La comparación directa con otros modelos de agentes de juego no está disponible en la información proporcionada. El competidor natural es la familia Qwen3.5 original, de la que GameScaling hereda arquitectura y licencia pero especializa en control de videojuegos.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de inglés; el rendimiento en otros idiomas no está garantizado.
-- Es un modelo especializado en control de videojuegos: su utilidad fuera de entornos interactivos visuales es limitada y no debe asumirse como modelo de propósito general.
-- No se han publicado benchmarks, por lo que el rendimiento real en tareas concretas no puede verificarse a priori.
-- Riesgo de alucinación y de acciones erráticas en entornos no vistos durante el entrenamiento; la generalización entre juegos es una hipótesis del trabajo, no un hecho medido en la información disponible.
-- Sesgos conocidos: no disponibles en la información proporcionada; al entrenarse sobre datos de juego, puede heredar sesgos de los títulos utilizados.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los datos de entrenamiento y de los modelos base Qwen3.5.
-- El repositorio completo ocupa 162,4 GB, lo que exige planificación de almacenamiento y ancho de banda para su descarga.
-- No se detallan requisitos de contexto ni límites de longitud de secuencia, lo que puede afectar a tareas que requieran memoria prolongada de la partida.
+- El modelo está entrenado y evaluado únicamente en inglés; su uso en otros idiomas no está soportado oficialmente.
+- Al ser un agente de control de videojuegos, su uso fuera de entornos de juego o simuladores no está validado y probablemente degrade.
+- Riesgo de alucinación en la generación de acciones: puede emitir secuencias de teclado y ratón incoherentes ante estados visuales no vistos durante el entrenamiento.
+- Sesgos potenciales derivados de los videojuegos utilizados en el preentrenamiento continuado: el modelo puede sobreajustarse a los géneros, estilos visuales y mecánicas presentes en el corpus.
+- La licencia Apache 2.0 permite uso comercial, pero el uso del modelo para automatizar juegos puede infringir los términos de servicio de las plataformas correspondientes; la responsabilidad recae en el usuario.
+- No se documentan límites de contexto ni comportamiento en secuencias largas, lo que dificulta planificar despliegues con historiales extensos.
+- El tamaño del repositorio (162,4 GB) sugiere que incluye múltiples variantes; conviene descargar solo la escala necesaria.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/THUSI-Lab/GameScaling
+- Hugging Face: https://huggingface.co/THUSI-Lab/GameScaling
 - Paper (arXiv): https://arxiv.org/abs/2610.28698
-- Daily Paper en Hugging Face: https://huggingface.co/papers/2610.28698
+- Paper en HF Papers: https://huggingface.co/papers/2610.28698
 - Repositorio GitHub: https://github.com/THUSI-Lab/GameScaling
 - Página del proyecto: https://gamescaling.github.io/
-- Variantes: https://huggingface.co/THUSI-Lab/GameScaling-0.8B-S1, https://huggingface.co/THUSI-Lab/GameScaling-0.8B-S3, https://huggingface.co/THUSI-Lab/GameScaling-2B-S1, https://huggingface.co/THUSI-Lab/GameScaling-2B-S3, https://huggingface.co/THUSI-Lab/GameScaling-9B-S1, https://huggingface.co/THUSI-Lab/GameScaling-9B-S3, https://huggingface.co/THUSI-Lab/GameScaling-27B-S1
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Variante 0.8B-S1: https://huggingface.co/THUSI-Lab/GameScaling-0.8B-S1
+- Variante 0.8B-S3: https://huggingface.co/THUSI-Lab/GameScaling-0.8B-S3
+- Variante 2B-S1: https://huggingface.co/THUSI-Lab/GameScaling-2B-S1
+- Variante 2B-S3: https://huggingface.co/THUSI-Lab/GameScaling-2B-S3
+- Variante 9B-S1: https://huggingface.co/THUSI-Lab/GameScaling-9B-S1
+- Variante 9B-S3: https://huggingface.co/THUSI-Lab/GameScaling-9B-S3
+- Variante 27B-S1: https://huggingface.co/THUSI-Lab/GameScaling-27B-S1

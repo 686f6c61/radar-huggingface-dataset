@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 163,
+  "downloads_30d": 292,
   "trending_score": 0,
   "parameters": 307336448,
   "parameters_human": "307.3M",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "BarraHome/Decision-Jef-0.1 · Hugging Face",
-      "url": "https://huggingface.co/BarraHome/Decision-Jef-0.1",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Jev AI — Decisions at machine speed",
-      "url": "https://jevai.net/",
-      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.042 per million."
-    },
-    {
-      "title": "decision-jef · PyPI",
-      "url": "https://pypi.org/project/decision-jef/",
-      "snippet": "Decision-Jef-.1 Answer several runtime-defined questions about one state, in a single forward pass, with calibrated probabilities over exactly the options you supply."
-    },
-    {
-      "title": "BarraHome (Alberto Ferrer) - Hugging Face",
-      "url": "https://huggingface.co/BarraHome/models",
-      "snippet": "BarraHome/jina-reranker-v1-turbo-en Text Classification • Updated Apr 17 • 27 • 1"
-    },
-    {
-      "title": "Jev | TypeSafe AI System One Model",
-      "url": "https://jevtypesafe.org/",
-      "snippet": "Jev is the System One decision model introduced by TypeSafe AI. It is designed for AI agent pipelines where predictable, consistent decisions matter more than creative text generation."
-    }
-  ]
+  "sources": []
 }

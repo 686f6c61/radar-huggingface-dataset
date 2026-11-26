@@ -2,91 +2,101 @@
 
 ## Resumen
 
-`sam-llm-dev/Llama-3.2-3B-SAM-GGUF` es una distribucion en formato GGUF del modelo Llama 3.2 3B, publicada por el usuario `sam-llm-dev` en Hugging Face. Se trata de una conversion de pesos del modelo base de Meta a un formato optimizado para inferencia local con llama.cpp y herramientas compatibles, lo que permite ejecutar el modelo en hardware de consumo sin necesidad de GPUs de datacenter.
+Llama-3.2-3B-SAM (Small Assistant Model) es un ajuste fino mediante QLoRA del modelo `meta-llama/Llama-3.2-3B-Instruct`, desarrollado por el usuario `sam-llm-dev`. Su objetivo declarado es ofrecer explicaciones educativas densas en hechos con un consumo de VRAM reducido, de modo que pueda ejecutarse en hardware de consumo modesto y dispositivos de borde. Se distribuye principalmente en formato GGUF, lo que facilita su despliegue con llama.cpp y herramientas derivadas.
 
-La model card publicada es practicamente vacia: unicamente declara la licencia `llama3.2` y no aporta informacion sobre el proceso de cuantizacion aplicado, los niveles de quant disponibles, el dataset de entrenamiento adicional (si lo hubiera) ni las capacidades esperadas. El nombre "SAM" en el identificador sugiere algun tipo de ajuste o variante propia del autor, pero no se documenta en ningun sitio de la ficha.
+El modelo hereda la arquitectura transformer decoder-only de Llama 3.2 3B, con 3.212.749.888 parametros totales, y se ha entrenado sobre el dataset propio `sam-llm-dev/SAM-Family-Dataset`. La model card indica que la version v1.1 utiliza un conjunto de entrenamiento deduplicado para aumentar la variedad del ajuste fino. El repositorio ocupa 23,7 GB, lo que sugiere la presencia de multiples cuantizaciones GGUF (FP16, Q8_0, Q4_K_M y posiblemente otras).
 
-Por tanto, esta ficha describe lo que se puede inferir del modelo base Llama 3.2 3B (arquitectura, contexto, licencia) y advierte explicitamente de que cualquier detalle especifico de esta conversion (niveles de quant, posibles fine-tunings, idiomas) no esta disponible en la informacion proporcionada. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y sin validacion por parte de la comunidad.
+Su relevancia actual radica en el nicho de asistentes educativos ligeros: un modelo de 3B parametros que cabe en GPUs de gama de entrada y que prioriza respuestas concisas y factuales. No obstante, los benchmarks publicados por el propio autor muestran un rendimiento limitado en matematicas, y el autor advierte explicitamente de que el modelo no debe usarse para calculos fiables en su version actual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada del modelo base Llama 3.2 3B; no documentada en esta ficha) |
-| Parametros totales | 3B (segun el identificador del modelo; no verificado en la model card) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible en esta ficha (el modelo base Llama 3.2 3B soporta 128 000 tokens, pero no se confirma en la conversion) |
-| Tipos de cuantizacion | no disponible (el formato es GGUF, pero no se listan los niveles Q4_K_M, Q5_K_M, Q8_0, etc.) |
-| Idiomas soportados | no disponible |
-| Licencia | llama3.2 (Llama 3.2 Community License) |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer decoder-only (derivado de Llama 3.2 3B Instruct) |
+| Parametros totales | 3.212.749.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Llama 3.2 3B: 128k tokens, no confirmado en la model card) |
+| Tipos de cuantizacion | FP16, Q8_0, Q4_K_M (GGUF) |
+| Idiomas soportados | ingles (segun la model card) |
+| Licencia | Llama 3.2 Community License Agreement |
+| Formato de pesos | GGUF (repo con libreria transformers y tags qlora) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura especifica de esta conversion mas alla de que deriva del modelo Llama 3.2 3B de Meta, un transformer decoder-only con atencion por grupos (GQA) y tokenizador BPE de 128 256 entradas. El proceso de cuantizacion empleado para generar los ficheros GGUF, la herramienta utilizada (llama.cpp `convert_hf_to_gguf.py` u otra) y los niveles de precision ofrecidos no estan documentados en la model card.
+El modelo parte de `meta-llama/Llama-3.2-3B-Instruct`, un transformer decoder-only con atencion por grupos (GQA) y RoPE, y se ajusta mediante QLoRA, es decir, cuantizacion del modelo base a 4 bits durante el entrenamiento y adaptadores de bajo rango sobre las capas. No se especifican en la informacion disponible los hiperparametros de entrenamiento (rango LoRA, alpha, tasa de aprendizaje, numero de pasos) ni el volumen exacto de tokens del dataset `SAM-Family-Dataset`.
 
-Tampoco se documenta si el autor ha aplicado algun ajuste fino adicional sobre el modelo base (el sufijo "SAM" podria sugerirlo, pero no hay evidencia en la informacion proporcionada), ni si se ha realizado RLHF, DPO o cualquier otra fase de alineamiento posterior. Los datos de entrenamiento del modelo base (numero de tokens, composicion del corpus, fases de post-entrenamiento) corresponden a la documentacion oficial de Meta para Llama 3.2 y no se reproducen aqui porque esta ficha no los confirma para esta conversion concreta.
+La model card menciona que la version v1.1 emplea un conjunto de entrenamiento deduplicado para aumentar la variedad. No se documenta el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. Tampoco se detalla la composicion del dataset mas alla de su orientacion educativa y conversacional.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, heredada del modelo base Llama 3.2 3B (no verificada en esta conversion).
-- Razonamiento basico y respuesta a instrucciones, asumiendo que la conversion preserva el comportamiento del modelo original.
-- Generacion de codigo y matematicas a nivel de modelo pequeno (3B), con las limitaciones propias de ese tamano.
-- Soporte multilingue limitado, segun el modelo base (oficialmente 8 idiomas: ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes), aunque no se confirma en esta ficha.
-- Tool calling y function calling: no disponible en la informacion proporcionada.
-- Modo "thinking" o razonamiento extendido: no disponible.
-- Vision o audio: no disponible (el modelo base Llama 3.2 3B es solo texto).
+- Generacion de texto conversacional multi-turno en ingles.
+- Explicaciones educativas concisas y densas en hechos, orientadas a estudiantes y docentes.
+- Razonamiento basico y respuesta a preguntas de conocimiento general.
+- Capacidad limitada de matematicas: el autor advierte que no es fiable para calculos.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo ingles declarado.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Prototipado local en estaciones de trabajo sin GPU dedicada: al estar en formato GGUF, el modelo puede ejecutarse con llama.cpp u Ollama en CPU y GPUs de consumo, lo que permite validar pipelines de generacion de texto antes de escalar a modelos mayores.
-- Asistentes de texto offline en aplicaciones de escritorio: integrable mediante bindings de llama.cpp (Python, Rust, Go) para ofrecer resumenes, reescritura y generacion de borradores sin conexion a Internet.
-- Clasificacion y extraccion de informacion en lotes: con 3B parametros y cuantizacion agresiva, es viable procesar grandes volumenes de documentos en CPU para tareas de etiquetado o extraccion de entidades simples.
-- Educacion e investigacion: util como modelo de referencia para experimentos de cuantizacion, evaluacion de degradacion por precision y comparativas de rendimiento en hardware modesto.
-- Generacion de codigo asistida en entornos con restricciones de red: al ejecutarse localmente, encaja en entornos donde no se permite enviar codigo a APIs externas, siempre que se acepten las limitaciones de un modelo de 3B.
-- Chatbot de bajo coste para demos y pruebas de integracion: permite montar un endpoint compatible con la API de OpenAI (por ejemplo con llama.cpp server u Ollama) para probar frontends y flujos de agente sin coste de tokens.
-- Fine-tuning ligero sobre la conversion: el formato GGUF no es el ideal para entrenamiento, pero puede servir como base para evaluar la calidad del modelo antes de decidir si merece la pena ajustar la version original en safetensors.
+- Asistencia educativa en el aula: el modelo puede generar explicaciones breves y estructuradas de conceptos cientificos o humanisticos, adecuado por su ajuste especifico en pedagogia y su bajo consumo de VRAM para ejecutarse en portatiles de estudiantes.
+- Tutoria conversacional en dispositivos de borde: gracias a su huella de 2,5-3,0 GB en Q4_K_M, puede desplegarse en Raspberry Pi con suficiente RAM o en mini-PCs para sesiones de repaso sin conexion.
+- Generacion de material de estudio: produccion de resumenes, definiciones y preguntas de autoevaluacion a partir de apuntes, aprovechando su orientacion a respuestas concisas.
+- Prototipado rapido de asistentes conversacionales: util como baseline en entornos de investigacion educativa donde se necesita un modelo pequeno y desplegable con llama.cpp u Ollama.
+- Filtrado y clasificacion de texto educativo: tareas de etiquetado o reescritura de contenido didactico en pipelines ligeros, aunque sin garantias de tool calling.
+- Demostraciones docentes de ajuste fino: sirve como ejemplo practico de QLoRA sobre Llama 3.2 3B en cursos de IA, dado su tamano manejable y su publicacion abierta en Hugging Face.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los unicos datos publicados por el autor son una evaluacion propia de 20 preguntas (posiblemente matematicas, dado el aviso), sin especificar el conjunto exacto:
+
+| Variante | Sin Python (estandar) | Con Python (interprete de codigo) |
+|---|---|---|
+| Llama-3.2-3B-SAM-v1.0-Q4_K_M.gguf | 50,0 % (10/20) | 45,0 % (9/20) |
+| Llama-3.2-3B-SAM-v1.0-F16.gguf | 55,0 % (11/20) | 40,0 % (8/20) |
+| Llama-3.2-3B-SAM-v1.0-Q8_0.gguf | 25,0 % (5/20) | 35,0 % (7/20) |
+
+El autor reconoce que estos resultados no son optimos y que el modelo no debe usarse para matematicas. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica, ya que no se listan los niveles de cuantizacion. Como referencia orientativa para un modelo de 3B en GGUF, las cuantizaciones de 4 bits suelen ocupar en torno a 2 GB y las de 8 bits en torno a 3,5 GB, pero estos valores no se confirman en la ficha del autor.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano del modelo base y el formato GGUF, pero no se confirma en la model card.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). vLLM y TGI no son compatibles de forma nativa con GGUF en todas sus versiones.
-- Latencia y throughput estimados: no disponible.
+- VRAM/RAM estimada (segun la model card):
+  - FP16: ~7,0-7,5 GB
+  - Q8_0: ~4,0-4,5 GB
+  - Q4_K_M: ~2,5-3,0 GB
+- GPU recomendadas: no especificadas por el autor; por tamano, cabe en RTX 3060 12 GB, RTX 4060 Ti 8 GB, RTX 4090 y GPUs de datacenter como A100 o H100 sin problema.
+- Cabe en GPU de consumo: si, en Q4_K_M practicamente en cualquier GPU con 4 GB o mas; en FP16 requiere al menos 8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. Tambien puede cargarse con transformers si se dispone de los pesos en safetensors (no confirmado en el repo).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| sam-llm-dev/Llama-3.2-3B-SAM-GGUF | 3B (segun identificador) | no disponible | GGUF | llama3.2 | Hugging Face, 0 descargas |
-| meta-llama/Llama-3.2-3B | 3B | 128 000 tokens | safetensors | llama3.2 | Hugging Face, oficial |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128 000 tokens | safetensors | llama3.2 | Hugging Face, oficial |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32 768 tokens | safetensors | Apache 2.0 | Hugging Face, oficial |
+| Llama-3.2-3B-SAM | 3,21B | no disponible | Llama 3.2 | GGUF | Ajuste educativo QLoRA, solo ingles |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k (segun Meta) | Llama 3.2 | safetensors, GGUF | Modelo base oficial, multilingue |
+| Qwen2.5-3B-Instruct | ~3,1B | 32k (segun Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa con licencia permisiva |
+| Phi-3.5-mini-instruct | ~3,8B | 128k (segun Microsoft) | MIT | safetensors, GGUF | Orientado a razonamiento y codigo |
 
-La comparativa se limita a modelos de la misma categoria (3B parametros, uso general). No se dispone de datos de rendimiento de esta conversion concreta para comparar calidad, por lo que la comparacion se reduce a aspectos estructurales y de licencia. La ventaja principal de esta publicacion frente a las oficiales es el formato GGUF listo para inferencia local; la desventaja es la ausencia de documentacion y de validacion por la comunidad.
+Los datos de contexto y licencia de los modelos comparables provienen del conocimiento general de dichos modelos, no de la informacion proporcionada en esta ficha; conviene verificarlos en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- La model card esta practicamente vacia: no se documentan los niveles de cuantizacion, el proceso de conversion, el dataset de ajuste (si lo hay) ni las capacidades reales del modelo.
-- El sufijo "SAM" no se explica; podria tratarse de un fine-tuning propio del autor o simplemente de una convencion de nombres, pero no hay evidencia en la informacion disponible.
-- Al ser una conversion no oficial, no hay garantia de que los pesos coincidan exactamente con el modelo base de Meta ni de que la cuantizacion se haya realizado con los parametros recomendados.
-- Riesgo de alucinacion inherente a los modelos de 3B parametros, especialmente en tareas de razonamiento complejo, matematicas y codigo.
-- Sesgos heredados del corpus de entrenamiento del modelo base Llama 3.2, no auditados en esta conversion.
-- Idiomas soportados no confirmados en esta ficha; el modelo base cubre oficialmente 8 idiomas, pero la conversion no lo verifica.
-- La licencia Llama 3.2 Community License impone restricciones de uso comercial (limite de 700 millones de usuarios mensuales, obligacion de atribucion, restricciones de uso aceptable) que deben revisarse antes de desplegar en produccion.
-- Repositorio con 0 descargas y 0 likes: sin validacion de la comunidad, sin issues resueltos y sin garantia de mantenimiento.
-- No apto para entrenamiento directo en formato GGUF; para fine-tuning seria necesario recurrir a los pesos originales en safetensors.
+- Rendimiento matematico deficiente: el propio autor desaconseja su uso para calculos; los benchmarks internos muestran entre 25 % y 55 % de acierto en 20 preguntas.
+- Solo ingles declarado: no se garantiza un comportamiento adecuado en castellano u otros idiomas.
+- Riesgo de alucinacion: al ser un ajuste fino sobre un modelo de 3B sin RAG, puede generar afirmaciones incorrectas con tono seguro, especialmente en datos factuales.
+- Contexto no documentado: la model card no confirma la ventana de contexto efectiva tras el ajuste.
+- Licencia Llama 3.2 Community License: impone restricciones a usuarios con mas de 700 millones de usuarios mensuales, obligaciones de atribucion ("Built with Llama") y sujecion a la politica de uso aceptable de Meta; revisar antes de uso comercial.
+- Repositorio de 23,7 GB: incluye multiples cuantizaciones, lo que puede complicar la descarga selectiva; conviene descargar solo el archivo GGUF necesario.
+- Version temprana (v1.1): el autor anuncia una v2.0 con RAG y calculadora, lo que indica que la version actual es un trabajo en progreso.
+- Sin soporte documentado de tool calling ni agentes: no apto para pipelines que requieran function calling fiable.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/sam-llm-dev/Llama-3.2-3B-SAM-GGUF
-- Modelo base oficial (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B
-- Modelo base instruct (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Hugging Face: https://huggingface.co/sam-llm-dev/Llama-3.2-3B-SAM-GGUF
+- Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
+- Dataset de entrenamiento: https://huggingface.co/datasets/sam-llm-dev/SAM-Family-Dataset
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
-- llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama (runtime GGUF): https://ollama.com
+- Politica de uso aceptable de Meta: https://www.llama.com/llama3_2/use-policy/
+- Contacto del autor: samllmdev@gmail.com

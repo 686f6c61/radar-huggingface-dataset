@@ -2,96 +2,92 @@
 
 ## Resumen
 
-Boulesis-v2-26B-A4B-GGUF es la version cuantizada en formato GGUF del modelo SubMaroon/Boulesis-v2-26B-A4B, publicada por el usuario mradermacher, conocido por generar cuantizaciones estaticas y ponderadas (imatrix) de modelos abiertos. El modelo base es un merge (fusion de pesos) de arquitectura MoE etiquetado como gemma4 y orientado a roleplay, conversacion sin censura y razonamiento con modo thinking. El repositorio no incluye model card propia mas alla de la plantilla estandar de mradermacher: la informacion sobre entrenamiento, composicion de datos y capacidades del modelo original no esta disponible en esta ficha.
+Boulesis-v2-26B-A4B-GGUF es la versión cuantizada en formato GGUF del modelo Boulesis-v2-26B-A4B, publicado por el usuario mradermacher a partir del modelo original de SubMaroon-exp. Se trata de un merge de modelos de la familia Gemma (etiquetado como "gemma4") con arquitectura de mezcla de expertos (MoE), orientado a roleplay, razonamiento y uso conversacional sin censura en herramientas como SillyTavern. El modelo incluye un modo de razonamiento explícito ("thinking") y ha sido procesado con técnicas de "abliteration"/"heretic" para eliminar los rechazos del modelo base.
 
-El interes practico de esta publicacion es que ofrece hasta once variantes de cuantizacion GGUF (desde Q2_K de 10,9 GB hasta Q8_0 de 27,7 GB) que permiten ejecutar un modelo MoE de ~26.000 millones de parametros en hardware de consumo, siempre que el numero de parametros activos por token sea bajo (la nomenclatura A4B sugiere unos 4.000 millones activos, aunque este dato no aparece confirmado de forma explicita en la informacion proporcionada). Esta pensado para su uso en frontends de rol conversacional (SillyTavern) y en despliegues locales con llama.cpp u Ollama.
+El repositorio contiene únicamente pesos cuantizados estáticos en GGUF (desde Q2_K hasta Q8_0), pensados para inferencia local con llama.cpp y derivados. El modelo original cuenta con 25.971.339.550 parámetros totales según los safetensors reportados, lo que lo sitúa en la categoría de ~26B, con una ventana de contexto que no se especifica en la información disponible.
 
-El modelo esta etiquetado como "uncensored" y "heretic", terminos que en la comunidad hacen referencia a ajustes destinados a reducir los rechazos del modelo base; esto implica que las salvaguardas de contenido son previsiblemente menores y que su uso en produccion exige controles adicionales. La licencia declarada es la Gemma, heredada del modelo base, con las restricciones de uso que esta conlleva.
+Su relevancia actual radica en que ofrece una alternativa de roleplay y razonamiento de tamaño medio con cuantizaciones accesibles para hardware de consumo, aunque su licencia Gemma y su naturaleza de merge experimental limitan su uso comercial y su evaluación rigurosa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) sobre base Gemma 4; merge de pesos. Detalles de capas y configuracion no disponibles |
-| Parametros totales | 25.971.339.550 (~26B), segun safetensors del modelo base |
-| Parametros activos | ~4B segun la nomenclatura A4B del nombre; no confirmado explicitamente en la informacion disponible |
+| Arquitectura | Mezcla de expertos (MoE) basada en Gemma (etiqueta "gemma4"); detalles de capas y atención no disponibles |
+| Parámetros totales | 25.971.339.550 (~26B) |
+| Parámetros activos | no disponible (el sufijo A4B sugiere ~4B activos, sin confirmación oficial) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas). Tambien existe una familia i1 (ponderada/imatrix) en mradermacher/Boulesis-v2-26B-A4B-i1-GGUF |
-| Idiomas soportados | en (ingles) |
-| Licencia | gemma |
-| Formato de pesos | GGUF en este repositorio; el modelo base emplea transformers/safetensors |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estáticas); versiones imatrix en repositorio i1-GGUF |
+| Idiomas soportados | en (inglés) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite afirmar que se trata de un modelo de arquitectura MoE (mezcla de expertos) construido sobre una base Gemma 4, segun las etiquetas `moe` y `gemma4` del repositorio, y que el modelo base es un merge: los pesos se obtuvieron combinando otros modelos, no mediante un entrenamiento desde cero documentado en esta ficha. El numero total de parametros es de 25.971.339.550 y la nomenclatura A4B del nombre apunta a unos 4.000 millones de parametros activos por token, patron habitual en los MoE de este tamano. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineamiento.
+La información disponible no detalla la arquitectura interna más allá de las etiquetas del repositorio: se trata de un modelo de mezcla de expertos (MoE) derivado de la familia Gemma, con 25.971.339.550 parámetros totales. El sufijo "A4B" del nombre sugiere aproximadamente 4.000 millones de parámetros activos por token, patrón habitual en modelos MoE de este tamaño, pero este dato no está confirmado en la documentación proporcionada.
 
-El etiquetado `heretic` y `uncensored` indica que el merge incorpora algun tipo de ajuste orientado a eliminar o reducir los mecanismos de rechazo del modelo base, aunque se desconoce el metodo concreto empleado. Las etiquetas `thinking` y `reasoning` sugieren la presencia de un modo de razonamiento explicito (cadena de pensamiento) en la plantilla de chat, sin que se detallen sus caracteristicas tecnicas. No hay informacion sobre innovaciones de inferencia como decodificacion especulativa o atencion lineal.
+El modelo es un merge (fusión) de pesos, no un entrenamiento desde cero, y ha pasado por un proceso de "heretic"/abliteration para eliminar comportamientos de rechazo (uncensored). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste fino supervisado. La model card del cuantizador es puramente operativa y no incluye detalles técnicos del modelo original.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con orientacion a roleplay y personajes, segun las etiquetas `roleplay` y `sillytavern`.
-- Razonamiento con modo thinking: el modelo declara soporte de cadenas de razonamiento (`thinking`, `reasoning`), aunque no se especifica el formato exacto de activacion.
-- Conversacion sin censura: el ajuste tipo `heretic` y `uncensored` reduce los rechazos ante peticiones que los modelos alineados convencionalmente declinarian.
-- Integracion con transformers y con el ecosistema GGUF (llama.cpp y derivados).
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma `en`.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de vision o audio: no disponible; el repositorio indica `skip_mmproj: 1`, es decir, no se incluye proyector multimodale.
-- Uso agentico o multi-step reasoning mas alla del modo thinking declarado: no disponible.
+- Generación de texto conversacional en inglés, orientada a roleplay y personajes.
+- Modo de razonamiento explícito ("thinking"/"reasoning"), según las etiquetas del repositorio.
+- Comportamiento sin censura ("uncensored"/"heretic"): menor probabilidad de rechazar peticiones que el modelo base.
+- Integración con SillyTavern y frontends de roleplay (etiqueta "sillytavern").
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Soporte de tool calling / function calling: no disponible.
+- Capacidades de agente o razonamiento multi-paso: no documentadas.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Visión, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Roleplay conversacional local: el modelo esta etiquetado especificamente para `roleplay` y `sillytavern`, por lo que encaja en frontends de chat con personajes, fichas de personaje y prompts de sistema largos, ejecutado en local mediante llama.cpp.
-- Generacion creativa de ficcion: su orientacion sin censura permite redactar narrativa adulta, terror o tematicas que los modelos alineados suelen rechazar, sin necesidad de sortear filtros externos.
-- Asistente personal ofline: al poder ejecutarse con cuantizaciones Q4_K_M de 17,3 GB en una GPU de 24 GB, es viable como asistente local sin enviar datos a terceros.
-- Prototipado de agentes conversacionales: sirve para probar plantillas de dialogo, gestion de memoria y flujos multi-turno antes de decidir el modelo definitivo, siempre que el caso no requiera tool calling confirmado.
-- Investigacion sobre alineamiento y censura: al ser un modelo modificado con tecnicas tipo `heretic`, es util como objeto de estudio comparativo frente a su base Gemma 4 sin modificar.
-- Despliegue en hardware modesto: las variantes Q2_K (10,9 GB) y Q3_K_S (12,6 GB) permiten ejecutar el modelo en GPU de 12-16 GB o incluso en CPU con RAM suficiente, a costa de perdida de calidad.
-- Evaluacion de cuantizaciones: el repositorio ofrece once variantes del mismo modelo, lo que permite medir de forma controlada el impacto de la cuantizacion en la calidad de generacion para tareas de rol.
+- Roleplay y personajes conversacionales: el modelo está etiquetado explícitamente para roleplay y SillyTavern, por lo que puede gestionar diálogos multi-turno con personalidad consistente en inglés, usando las cuantizaciones Q4_K_M o Q5_K_M para equilibrar calidad y velocidad en GPU de consumo.
+- Generación creativa de ficción: su naturaleza uncensored permite narrativa sin filtros temáticos, útil para escritura de ficción adulta o tramas oscuras donde otros modelos rechazan contenido.
+- Asistente personal local sin conexión: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en un equipo de sobremesa, manteniendo las conversaciones íntegramente en local.
+- Prototipado de chatbots con razonamiento: el modo thinking permite obtener cadenas de razonamiento antes de la respuesta, útil para experimentar con prompting estructurado en inglés.
+- Evaluación de merges y abliterations: investigadores pueden comparar el comportamiento de este merge frente al Gemma base para estudiar el efecto del uncensoring y la fusión de pesos.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K (10,9 GB) y Q3_K_S (12,6 GB) permiten probar el modelo en GPUs de 12-16 GB, aunque con pérdida de calidad notable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun la cuantizacion del repositorio: Q2_K 10,9 GB; Q3_K_S 12,6 GB; Q3_K_M 13,7 GB; Q3_K_L 14,2 GB; IQ4_XS 14,6 GB; Q4_K_S 16,0 GB; Q4_K_M 17,3 GB; Q5_K_S 18,6 GB; Q5_K_M 19,7 GB; Q6_K 23,3 GB; Q8_0 27,7 GB.
-- GPU de consumo compatibles: RTX 4090 / RTX 3090 (24 GB) para Q4_K_M, Q5_K_M y Q6_K; RTX 4080 / 4070 Ti (16 GB) para Q4_K_S e IQ4_XS; RTX 3060 12 GB para Q2_K y Q3_K_S.
-- GPU profesionales: A100, H100 o L40S para las variantes Q8_0 y Q6_K sin necesidad de offload; no se dispone de cifras de rendimiento especificas.
-- Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q6_K con 24 GB de VRAM, y hasta Q4_K_S con 16 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF; el modelo base tambien es cargable con transformers.
-- Nota sobre el MoE: al activarse solo una fraccion de los expertos por token, la velocidad de generacion es previsiblemente superior a la de un modelo denso de 26B, pero no se han publicado cifras de latencia ni de throughput.
-- Repositorio: 187,7 GB en total, correspondientes a la suma de todas las variantes de cuantizacion.
+- VRAM estimada (solo pesos, sin caché KV): Q2_K ~10,9 GB; Q3_K_S ~12,6 GB; Q3_K_M ~13,7 GB; Q3_K_L ~14,2 GB; IQ4_XS ~14,6 GB; Q4_K_S ~16,0 GB; Q4_K_M ~17,3 GB; Q5_K_S ~18,6 GB; Q5_K_M ~19,7 GB; Q6_K ~23,3 GB; Q8_0 ~27,7 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M con contexto moderado; A100 40 GB o H100 para Q6_K/Q8_0 y contextos largos; RTX 3090 (24 GB) válida para Q4_K_M y Q5_K_M.
+- GPU de consumo: sí, en RTX 3060 12 GB (Q2_K/Q3_K_S con contexto corto), RTX 4070 Ti 16 GB (Q4_K_S) y RTX 4090 24 GB (Q5_K_M/Q6_K). En GPUs de 8 GB no cabe ninguna cuantización completa; sería necesario offloading a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF; para el modelo base en safetensors, vLLM o TGI (no confirmado para esta arquitectura MoE concreta).
+- Latencia y throughput: no disponibles. Al ser MoE con ~4B activos (según el nombre), se espera un throughput superior al de un denso de 26B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible: la informacion proporcionada no incluye datos de rendimiento del modelo base ni de alternativas comparables, y no se encontraron resultados de busqueda web pertinentes (los resultados devueltos eran contenido no relacionado con el modelo).
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Boulesis-v2-26B-A4B (GGUF) | ~26B totales, ~4B activos estimados | no disponible | gemma | GGUF | Repositorio analizado |
-| SubMaroon/Boulesis-v2-26B-A4B | ~26B totales | no disponible | gemma | safetensors | Modelo base del que se parte |
-| Boulesis-v2-26B-A4B-i1-GGUF | ~26B totales | no disponible | gemma | GGUF (imatrix) | Misma base, cuantizacion ponderada |
+| Boulesis-v2-26B-A4B-GGUF | ~26B (MoE) | no disponible | Gemma | GGUF | Roleplay uncensored, solo inglés |
+| Gemma 2 27B (referencia de familia) | 27B denso | 8K | Gemma | safetensors, GGUF | Modelo oficial de Google, con alineación y benchmarks publicados |
+| Modelos de roleplay 20-30B en GGUF (p. ej. merges de Yi/Llama) | 20-34B | variable | variable | GGUF | Ecosistema comparable de merges comunitarios sin benchmarks formales |
+
+La comparación cuantitativa con alternativas no es posible: no hay benchmarks publicados para este merge, y las diferencias de arquitectura (MoE frente a denso) impiden extrapolar rendimiento por tamaño. Cualquier comparación de calidad requeriría evaluación propia.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como `uncensored` y `heretic`: cabe esperar que genere contenido que otros modelos rechazarian. No debe desplegarse de cara al publico sin filtros de entrada y salida propios.
-- Riesgo de alucinacion: no hay evaluaciones publicadas que cuantifiquen la fiabilidad factual del modelo. Al ser un merge de pesos sin documentacion de entrenamiento, el comportamiento fuera de las tareas de rol es impredecible.
-- Idioma: solo se declara soporte de ingles (`en`). El rendimiento en castellano no esta verificado y probablemente sea degradado.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas ni en tareas de recuperacion sobre documentos extensos.
-- Licencia Gemma: el uso comercial esta sujeto a los terminos de la licencia Gemma, que impone obligaciones de atribucion y una politica de uso aceptable. Conviene revisarla antes de cualquier despliegue en produccion.
-- Ausencia de tool calling documentado: no debe asumirse soporte de function calling ni de flujos agenticos con llamadas a herramientas.
-- Numero de parametros activos no confirmado: el dato de ~4B activos se infiere del nombre del modelo, no de una especificacion oficial.
-- Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026) y el conteo de descargas y likes (0) proceden de la API de Hugging Face tal cual; no se ha verificado su coherencia.
-- Sin benchmarks: no existe ninguna medicion publicada de MMLU, HumanEval, GSM8K ni de tareas de rol que permita validar su calidad frente a alternativas.
+- Solo soporta inglés según la model card; el rendimiento en castellano no está garantizado.
+- Es un merge comunitario sin evaluación formal: no hay benchmarks de MMLU, HumanEval, GSM8K ni evaluaciones de seguridad.
+- Riesgo elevado de alucinación y de degradación en tareas de razonamiento o código, al no estar entrenado específicamente para ellas.
+- El proceso "heretic"/uncensored elimina rechazos de seguridad: puede generar contenido ofensivo, ilegal o dañino sin filtros; no apto para aplicaciones orientadas al público sin moderación adicional.
+- Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribución; revisar los términos antes de cualquier despliegue en producción.
+- Las cuantizaciones bajas (Q2_K, Q3_K_S) degradan notablemente la coherencia; para uso serio se recomienda Q4_K_M o superior.
+- No se dispone de información sobre la longitud de contexto real, lo que impide planificar aplicaciones con ventanas largas.
+- El repositorio ocupa 187,7 GB por incluir todas las cuantizaciones; la descarga selectiva de un solo archivo es imprescindible.
+- Sin garantías de mantenimiento: modelo creado en septiembre de 2026 y actualizado en octubre de 2026, con solo 261 descargas y 2 likes, lo que indica escasa validación por la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-GGUF
-- Modelo base: https://huggingface.co/SubMaroon/Boulesis-v2-26B-A4B
-- Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-i1-GGUF
-- Listado de cuantizaciones del autor: https://hf.tst.eu/model#Boulesis-v2-26B-A4B-GGUF
-- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del autor de las cuantizaciones: https://www.nethype.de/
+- Modelo base: https://huggingface.co/SubMaroon-exp/Boulesis-v2-26B-A4B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Boulesis-v2-26B-A4B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests

@@ -2,86 +2,92 @@
 
 ## Resumen
 
-20Bob Bill es una variante del modelo Qwen3.6-35B-A3B, un transformer de tipo mixture-of-experts (MoE) desarrollado originalmente por el equipo Qwen de Alibaba. La variante ha sido publicada por el usuario MouseWurX bajo el paraguas de un proyecto personal denominado "Bob's Forge", y se distribuye en formato GGUF cuantizado para inferencia local. El modelo conserva todos los expertos por capa del modelo base, con aproximadamente 20.558 millones de parametros totales y unos 3.000 millones activos por token, segun indica la model card.
+20Bob Bill es un modelo de lenguaje derivado de Qwen/Qwen3.6-35B-A3B, publicado por MouseWurX dentro del proyecto Bob, un agente de IA de codigo abierto que se ejecuta en local. El modelo parte de la arquitectura MoE del Qwen3.6-35B-A3B original y se ha sometido a un proceso de poda de expertos (de los 128 o mas del modelo base se conservan 144 por capa segun la model card, con unos 21 000 millones de parametros totales y unos 3000 millones activos por token) y a un reentrenamiento orientado al uso de herramientas (tool-use) dentro de un agente.
 
-El objetivo declarado del autor es adaptar el modelo a tareas concretas: uso de herramientas (tool use), generacion de codigo, produccion de formatos exactos y conversacion cotidiana. Se trata, por tanto, de un ajuste orientado a un perfil de uso practico y no de un modelo generalista nuevo. La relevancia actual radica en que ofrece una alternativa cuantizada y ligera (10-12,6 GB en disco) para despliegue en hardware de consumo, manteniendo la arquitectura MoE del modelo base.
+La relevancia de esta ficha no esta en su rendimiento, sino en su estado: el propio autor lo marca como **"unintentionally poisoned, kept for study only"**. Fue entrenado con las versiones v1 a v3 de los "lesson sets" de Bob, que posteriormente se descubrieron contaminados: de 5788 lecciones de herramientas, solo el 3 % (189) se consideraron validas tras una revision; el 40 % contenian resultados de herramientas inventados, el 28 % incluian detalles privados filtrados desde el prompt y el 23 % tenian un paso de herramienta incorrecto. Ademas, ensenaban habitos que el proyecto ha retirado, como delegar en `ask_specialist` o escribir ficheros mediante `run_command`.
 
-No obstante, la informacion publica es muy limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados y no aporta resultados de benchmarks. La ficha se completa con los datos disponibles y se indica explicitamente cuando un dato no esta disponible.
+Se distribuye principalmente en formato GGUF (Q3_K_M y Q4_K_M) para ejecucion local en tarjetas graficas de consumo, aunque el repositorio tambien contiene pesos en safetensors. La licencia es Apache 2.0, heredada del modelo base de Alibaba. Su interes practico es limitado: sirve como caso de estudio de un pipeline de poda y destilacion de un MoE, y como advertencia sobre la contaminacion de datos sinteticos de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mixture-of-experts (MoE), derivada de Qwen3.6-35B-A3B |
-| Parametros totales | 20.558.574.208 (~20,6 B) |
-| Parametros activos | ~3 B por token (segun model card) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q3_K_M y Q4_K_M (GGUF); no se detallan otras |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer con mezcla de expertos (MoE), derivado de Qwen3.6-35B-A3B; 144 expertos conservados por capa |
+| Parametros totales | 21 005 145 456 (dato real de safetensors) |
+| Parametros activos | Aproximadamente 3 000 millones por token |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF Q3_K_M y Q4_K_M publicados; safetensors en el repo |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (ficheros `20Bob-Q3_K_M.gguf` y `20Bob-Q4_K_M.gguf`) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos en las que se conservan todos los expertos por capa, pero solo se activa una fraccion de ellos por token (aproximadamente 3 B de los 20,6 B totales). Esta configuracion permite un coste computacional por token mucho menor que un modelo denso del mismo tamano, a cambio de un mayor uso de memoria para almacenar todos los parametros.
+El modelo es un MoE derivado del Qwen3.6-35B-A3B. El pipeline de "Bob's Forge" descrito por el autor sigue este orden: linea base, limpieza previa, analisis, entrenamiento, poda por pasos, "healing" por destilacion desde el modelo completo (copiar las probabilidades del profesor), comprobacion de objetivos, aprendizaje on-policy a partir de sus propias respuestas (con recompensa por llamadas a herramientas que funcionan), mezcla y publicacion. La poda se guia por REAP (medicion previa de la carga de trabajo real de cada experto segun trazas de uso), de modo que se eliminan los expertos con menor contribucion por tarea.
 
-El proceso de entrenamiento o ajuste no esta documentado en la model card mas alla de la mencion a "lesson sets" propios del proyecto Bob (con licencia CC BY-SA 4.0) y a trazas de otros modelos con licencias abiertas, segun se indica en el "Forge journal" enlazado en el repositorio de GitHub. No se especifican el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se detallan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO convencionales; el autor menciona entrenamiento con lecciones (lesson sets) y senales de recompensa por tool calls exitosas. La innovacion principal es el propio metodo de poda y destilacion, no la arquitectura, que se mantiene la del modelo base. El fallo critico es la calidad de los datos: las lecciones v1 a v3 estaban contaminadas con resultados fabricados, fugas de informacion del prompt y pasos erroneos, lo que hace que el efecto real de ese entrenamiento sobre el modelo no este verificado ("unproven in our lab, as we have yet to test", segun el autor).
 
 ## Capacidades
 
-- Generacion de texto conversacional en multiples turnos, orientada a chat cotidiano.
-- Uso de herramientas (tool use / function calling), segun los tags del repositorio.
-- Generacion de codigo, con enfasis en la produccion de formatos exactos.
-- Razonamiento multi-paso y soporte para agentes, derivado de las capacidades del modelo base.
-- Capacidades multilingues: no confirmadas en la informacion disponible.
-- Modo "thinking" o vision: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en formato chat, orientada a un agente local.
+- Uso de herramientas (tool calling / function calling): es el eje del entrenamiento, aunque parte de las lecciones que lo ensenaron estaban contaminadas.
+- Razonamiento multi-paso y ejecucion de tareas de agente (investigar, escribir y corregir codigo, leer y editar ficheros, manipular documentos).
+- Capacidades multilingues: no disponibles de forma explicita en la informacion.
+- No se documentan capacidades de vision, audio ni modo "thinking" especifico.
+- Integracion con el agente Bob en Windows, macOS, Linux, Raspberry Pi y Android, con soporte de red local Bob-Net para repartir carga entre equipos.
 
 ## Casos de uso
 
-- Asistente de atencion al cliente: el modelo puede gestionar conversaciones multi-turno y ejecutar llamadas a herramientas para consultar estado de pedidos o bases de conocimiento, aprovechando su soporte de tool calling.
-- Generacion de codigo en pipelines de desarrollo: integrable en flujos de CI/CD o asistentes de IDE para autocompletar, refactorizar o generar tests, gracias a su capacidad de codigo y a su tamano contenido.
-- Automatizacion de formatos exactos: generacion de JSON, YAML o plantillas estructuradas con validacion estricta, adecuado para integraciones entre sistemas.
-- Agentes autonomos de proposito general: el modelo puede encadenar pasos de razonamiento y llamadas a herramientas en tareas de automatizacion de flujos de trabajo.
-- Despliegue local en estaciones de trabajo: con cuantizacion Q4_K_M (12,6 GB) puede ejecutarse en GPUs de consumo con 14 GB de VRAM, lo que permite prototipado sin infraestructura cloud.
-- Chatbot interno para equipos: conversacion cotidiana y asistencia en tareas de documentacion o resumen, con coste de inferencia bajo gracias a sus ~3 B parametros activos.
-- Experimentacion en investigacion: base para estudiar tecnicas de ajuste sobre arquitecturas MoE cuantizadas, dado su formato GGUF y su licencia permisiva.
+- Estudio de pipelines de poda de MoE: util como referencia para analizar como afecta la eliminacion de expertos guiada por REAP y la destilacion posterior a un modelo base de ~35B con ~3B activos.
+- Analisis de contaminacion de datos sinteticos: sirve como caso documentado de lecciones generadas por modelos que introducen resultados inventados y fugas de datos privados, util para disenar filtros de calidad.
+- Pruebas de agentes locales en hardware de consumo: con el GGUF Q4_K_M (12,6 GB) puede ejecutarse en tarjetas de 14 GB o mas para experimentar con tool calling en un entorno aislado.
+- Evaluacion de "healing" por destilacion: permite comparar el comportamiento del modelo podado frente al Qwen3.6-35B-A3B original en tareas controladas.
+- Docencia y divulgacion: ejemplo real de por que conviene marcar un modelo como no apto para produccion tras detectar fallos en su dataset.
+- Investigacion de robustez: medir la tasa de llamadas a herramientas erroneas o de delegacion indebida (`ask_specialist`, `run_command`) para caracterizar el impacto de datos contaminados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que no ha probado en laboratorio cuanto del sesgo de las lecciones contaminadas conserva el modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 12 GB para la cuantizacion Q3_K_M y 14 GB para Q4_K_M, segun la model card.
-- GPU recomendadas: no especificadas por el autor; por el perfil de memoria, tarjetas con 12-16 GB de VRAM como RTX 4070 Ti, RTX 4080 o RTX 4090 son candidatas razonables, aunque no se confirma oficialmente.
-- Cabe en GPU de consumo: si, segun los requisitos de memoria indicados (12-14 GB).
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; los tags indican compatibilidad con endpoints.
+- VRAM estimada: unos 12 GB para el GGUF Q3_K_M (10,0 GB de fichero) y unos 14 GB para el Q4_K_M (12,6 GB de fichero), segun la model card.
+- GPU recomendadas: tarjetas de consumo con 12-16 GB o mas (por ejemplo, RTX 4080/4090 o equivalentes); para los pesos safetensors completos (21B parametros) se necesitarian del orden de 42 GB en FP16, lo que exige A100 80 GB, H100 o varias GPU.
+- Cabe en GPU de consumo en cuantizacion Q3_K_M y Q4_K_M.
+- Opciones de despliegue: llama.cpp u Ollama para los GGUF; vLLM o TGI para los safetensors si se dispone de hardware suficiente. El agente Bob lo carga directamente como "cerebro" propio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| 20Bob Bill | ~20,6 B | ~3 B | no disponible | Apache 2.0 | GGUF (Q3_K_M, Q4_K_M) |
-| Qwen3.6-35B-A3B (base) | ~35 B | ~3 B | no disponible | Apache 2.0 | safetensors, GGUF |
-| Alternativas de ~20 B densas | ~20 B | ~20 B | variable | variable | variable |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Estado |
+|---|---|---|---|---|
+| 20Bob Bill | 21,0B / ~3B | No disponible | Apache 2.0 | Marcado como envenenado, solo estudio |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B / ~3B | No disponible | Apache 2.0 | Modelo base original, sin poda |
+| Alternativas MoE de ~20-30B con ~3B activos | No disponible | No disponible | No disponible | No disponible |
 
-La comparacion con alternativas densas de tamano similar es favorable en coste de inferencia por token (solo ~3 B activos), pero desfavorable en requisitos de memoria total. No se dispone de datos de rendimiento comparativo para 20Bob Bill.
+La comparacion directa mas relevante es con su modelo base: 20Bob Bill conserva aproximadamente el 60 % de los parametros totales del Qwen3.6-35B-A3B, mantiene el regimen de ~3B activos y anade entrenamiento especifico de tool-use, pero con datos contaminados. No se dispone de datos de rendimiento para comparar con otras alternativas.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks ni evaluaciones independientes; el rendimiento real es desconocido.
-- La model card no documenta sesgos conocidos, pero al derivar de un modelo base entrenado con datos web, es probable que herede sesgos de este.
-- Riesgo de alucinacion inherente a los modelos generativos; no hay evaluacion especifica disponible.
-- La longitud de contexto no esta especificada, lo que dificulta planificar casos de uso con documentos largos.
-- Los idiomas soportados no estan declarados; el soporte multilingue no esta confirmado.
-- El ajuste se realizo con "lesson sets" propios y trazas de otros modelos; la procedencia exacta y la calidad del dataset no son verificables a partir de la informacion publica.
-- Licencia Apache 2.0 permisiva para uso comercial, pero las "lesson sets" del proyecto Bob tienen licencia CC BY-SA 4.0, lo que podria introducir obligaciones adicionales de atribucion o comparticion; conviene revisar el Forge journal antes de un uso comercial.
-- El nombre "Bob" es un homenaje a las novelas de Dennis E. Taylor; el proyecto no esta afiliado al autor.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- **Modelo envenenado de forma no intencionada**: el autor lo marca como "kept for study only". No debe usarse en produccion ni en aplicaciones reales.
+- Riesgo elevado de alucinacion en llamadas a herramientas: el 40 % de las lecciones de entrenamiento contenian resultados inventados y el 23 % pasos erroneos.
+- Riesgo de fuga de informacion: el 28 % de las lecciones incluian detalles privados recogidos del prompt.
+- Habitos no deseados aprendidos: delegacion en `ask_specialist` y escritura de ficheros mediante `run_command`, practicas que el proyecto ha retirado.
+- No se ha medido cuanto de estos defectos persiste en el modelo final.
+- Idiomas y contexto no documentados; no se puede garantizar comportamiento multilingue ni ventanas largas.
+- Licencia Apache 2.0: permite uso comercial segun los terminos, pero el estado de contaminacion hace desaconsejable cualquier despliegue.
+- Las lecciones originales son CC BY-SA 4.0; el autor cita que se han usado trazas de otros modelos con licencias abiertas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MouseWurX/20Bob-Bill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Forge journal (GitHub): https://github.com/MouseWurX/Bob/blob/main/app/docs/FORGE-JOURNAL.md
+- Dataset de lecciones y analisis de contaminacion: https://huggingface.co/datasets/MouseWurX/bob-lessons
+- Repositorio del proyecto Bob: https://github.com/MouseWurX/Bob
+- Forge journal (metodo y numeros): https://github.com/MouseWurX/Bob/blob/main/app/docs/FORGE-JOURNAL.md
+- Guia de Forge: https://github.com/MouseWurX/Bob/blob/main/app/model-lab/forge/README.md
+- Documento sobre modelos mas pequenos: https://github.com/MouseWurX/Bob/blob/main/app/docs/MAKING-SMALLER-MODELS.md
+- Guia de usuario y laboratorio: https://github.com/MouseWurX/Bob/blob/main/app/docs/USER-GUIDE.md#make-your-own-brain-the-lab
+- Codigo del laboratorio: https://github.com/MouseWurX/Bob/tree/main/app/model-lab
+- Costes: https://github.com/MouseWurX/Bob/blob/main/app/docs/COSTS.md
+- Hoja de ruta: https://github.com/MouseWurX/Bob/pull/230

@@ -96,7 +96,7 @@
       "task": "Coreference resolution",
       "dataset": "LitBank",
       "metric": "CoNLL F1",
-      "value": 0.667
+      "value": 0.671
     },
     {
       "task": "Document-level relation extraction",
@@ -120,7 +120,7 @@
       "task": "Zero-shot named entity recognition",
       "dataset": "CrossNER",
       "metric": "span F1, mean of 4 domains",
-      "value": 0.496
+      "value": 0.503
     }
   ],
   "sources": []

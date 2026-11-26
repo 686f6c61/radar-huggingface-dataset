@@ -2,110 +2,114 @@
 
 ## Resumen
 
-P220-ThaiOCR-9B es un modelo de visión-lenguaje de 9B parámetros especializado en la transcripción y comprensión de documentos tailandeses: texto impreso y manuscrito, tablas, formularios, recibos, PDF gubernamentales y escaneos. Lo desarrolla Porsuk Rungarunsrisuk y se distribuye bajo licencia Apache-2.0. El modelo resuelve el problema de la digitalización de documentos en tailandés sin necesidad de reglas específicas por plantilla: lee páginas completas y las devuelve en texto plano, Markdown o tablas HTML, además de responder preguntas sobre el contenido (información clave, clasificación, gráficos y diagramas).
+P220-ThaiOCR-9B-GGUF es la distribucion en formato GGUF de P220-ThaiOCR-9B, un modelo de vision-lenguaje de 9.197.093.888 parametros especializado en reconocimiento optico de caracteres (OCR) y comprension de documentos tailandeses. Lo desarrolla Porsuk Rungarunsrisuk y parte de Qwen/Qwen3.5-9B (licencia Apache-2.0), afinado mediante LoRA y posteriormente fusionado. El modelo resuelve la transcripcion de texto impreso y manuscrito, tablas, formularios, recibos, PDF gubernamentales y escaneos, ademas de responder preguntas sobre el contenido de un documento sin necesidad de reglas por plantilla.
 
-La versión aquí descrita es la cuantización GGUF, pensada para llama.cpp y Ollama. Está construida sobre Qwen/Qwen3.5-9B (Apache-2.0) mediante fine-tuning con LoRA y posterior merge. El modelo opera con el modo *thinking* desactivado: fue entrenado y evaluado sin razonamiento explícito, por lo que es necesario desactivarlo en llama.cpp (`enable_thinking: false`) y en Ollama (`--think=false`).
+La relevancia actual del modelo radica en su rendimiento para su tamano: la version v1.1 (24 de noviembre de 2026) se situa por encima de GPT-6.1 Sol en la media de las cinco tareas de transcripcion de ThaiOCRBench (0.662 frente a 0.652) y supera a todos los modelos abiertos probados en dicho benchmark, incluidos Qwen3.6-35B-A3B y OpenThai 2.0 27B. Incluso el archivo mas pequeno, Q2_K (3.9 GB), presenta menor CER que P110-ThaiOCR-4B en BF16.
 
-Su relevancia radica en la relación precisión/tamaño: incluso el archivo más pequeño, Q2_K (3.9 GB), obtiene un CER inferior al de P110-ThaiOCR-4B en BF16 y al de la mayoría de modelos probados. El autor lo sitúa como el mejor modelo abierto evaluado en ThaiOCRBench, por delante de Qwen3.6-35B-A3B y OpenThai 2.0 27B.
+Esta publicacion concreta contiene los pesos cuantizados para llama.cpp y Ollama en BF16, Q8_0, Q4_K_M, Q3_K_M y Q2_K, junto con el codificador visual (mmproj) en F16 y Q8_0, necesario para procesar imagenes. El modelo opera sin modo thinking y soporta tailandes e ingles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (base Qwen3.5-9B, fine-tuning LoRA + merge) |
-| Parámetros totales | 9.197.093.888 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de llama.cpp usa `-c 32768`) |
-| Tipos de cuantización | GGUF: BF16, Q8_0, Q4_K_M, Q3_K_M, Q2_K; además FP8, W4A16 y NVFP4 en otros repos |
-| Idiomas soportados | tailandés (th), inglés (en) |
+| Arquitectura | Vision-lenguaje basada en Qwen/Qwen3.5-9B, afinada con LoRA y fusionada |
+| Parametros totales | 9.197.093.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (configuracion recomendada en llama.cpp con `-c 32768`) |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_K_M, Q3_K_M, Q2_K (modelo); F16 y Q8_0 (codificador visual mmproj) |
+| Idiomas soportados | Tailandes (th), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp, Ollama); BF16/FP8/W4A16/NVFP4 en repos separados |
+| Formato de pesos | GGUF (llama.cpp, Ollama); variantes BF16, FP8, W4A16 y NVFP4 en otros repositorios |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de visión-lenguaje derivado de Qwen3.5-9B, con un codificador visual separado que en GGUF se distribuye como archivo `mmproj-P220-ThaiOCR-9B-*.gguf` (disponible en F16 y Q8_0) y que es obligatorio para procesar imágenes. El ajuste se realizó con LoRA sobre el modelo base y posteriormente se fusionaron los pesos. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset, más allá de que está orientado a OCR tailandés (texto impreso, manuscrito, tablas y formularios).
+El modelo es un vision-lenguaje construido sobre Qwen/Qwen3.5-9B, un transformer denso de aproximadamente 9.200 millones de parametros. El autor lo entreno mediante LoRA sobre el modelo base y posteriormente fusiono los adaptadores en los pesos finales. La model card no detalla el numero de tokens de entrenamiento ni la composicion exacta del dataset, pero indica que la version v1.1 se reentreno con un conjunto de datos mejorado y una receta de entrenamiento actualizada respecto a la primera release.
 
-La innovación técnica destacable está en el proceso de cuantización: los archivos de 4, 3 y 2 bits se generaron con una imatrix construida específicamente a partir de texto OCR tailandés, y W4A16 y NVFP4 se calibraron con el mismo texto, con el objetivo de preservar la precisión de transcripción en cada tamaño. El autor descartó Q3_K_L (menos preciso que Q4_K_M con tamaño similar), IQ3_M (peor en texto impreso y más lento en CPU) e IQ2_M (menos preciso que Q2_K al mismo tamaño). El modelo no utiliza *thinking*: fue entrenado y evaluado sin modo de razonamiento.
+Las innovaciones tecnicas destacables se centran en el proceso de cuantizacion orientado a preservar la calidad OCR: los archivos de 4, 3 y 2 bits emplean una imatrix construida a partir de texto OCR tailandes, y las variantes W4A16 y NVFP4 se calibran sobre el mismo texto. El modelo se entreno y evaluo sin modo thinking, y la plantilla de chat de los GGUF lo desactiva por defecto. El codificador visual se distribuye por separado como archivo mmproj, requisito para el procesamiento de imagenes.
 
 ## Capacidades
 
-- Transcripción OCR de texto impreso y manuscrito en tailandés, con salida en texto plano.
-- Extracción de tablas y conversión a Markdown o HTML.
-- Comprensión de documentos: formularios, recibos, PDF gubernamentales y escaneos.
-- Respuesta a preguntas sobre el documento (información clave, clasificación).
-- Interpretación de gráficos y diagramas.
-- Procesamiento de imágenes junto con instrucciones en lenguaje natural (pipeline image-text-to-text).
-- Soporte bilingüe tailandés-inglés.
-- Conversación multi-turno (etiqueta `conversational`).
-- Compatibilidad con endpoints (`endpoints_compatible`).
-- No dispone de modo *thinking*; debe desactivarse explícitamente en llama.cpp y Ollama.
-- No se documenta soporte de tool calling ni de agentes multi-paso en la información disponible.
+- Transcripcion de texto impreso en tailandes con CER del 0,72 % en el conjunto ocr_th (v1.1).
+- Reconocimiento de escritura manuscrita en tailandes con CER del 16,8 % en el conjunto iapp (v1.1).
+- Conversion de paginas a texto plano, Markdown o tablas HTML.
+- Comprension de documentos: formularios, recibos, PDF gubernamentales y escaneos.
+- Respuesta a preguntas sobre el contenido de un documento (informacion clave, clasificacion).
+- Interpretacion de graficos, diagramas e infografias.
+- Procesamiento de imagenes mediante codificador visual independiente (mmproj).
+- Soporte bilingue tailandes-ingles.
+- Capacidad conversacional multi-turno segun los tags del repositorio.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Sin modo thinking (desactivado por diseno en entrenamiento y plantilla).
 
 ## Casos de uso
 
-- Digitalización de archivos gubernamentales: el modelo transcribe PDF y escaneos completos a texto plano o Markdown sin reglas por plantilla, lo que permite procesar lotes heterogéneos de documentos administrativos tailandeses con un único pipeline.
-- Extracción de tablas de facturas y recibos: convierte tablas impresas en Markdown o HTML estructurado, adecuado para alimentar sistemas de contabilidad o ERP.
-- Procesamiento de formularios manuscritos: con un CER del 24,81 % en manuscrito con Q4_K_M, es viable para digitalización asistida con revisión humana en formularios y registros.
-- Atención al cliente sobre documentos: al responder preguntas sobre el contenido de una página (información clave, clasificación), puede integrarse en flujos de soporte que reciben imágenes de documentos de usuarios.
-- Despliegue en CPU o Mac: la versión Q4_K_M (6,7 GB con codificador visual) funciona en llama.cpp y Ollama sin GPU, con un tiempo de unos 2,9 s por línea de texto impreso en CPU de servidor, lo que sirve para digitalización por lotes en infraestructura sin acelerador.
-- Clasificación documental automatizada: el modelo puede clasificar documentos y extraer información clave, útil en gestores documentales que necesitan enrutar expedientes por tipo.
-- Análisis de gráficos y diagramas en informes: permite responder preguntas sobre figuras incluidas en documentos técnicos o financieros.
+- Digitalizacion de archivos gubernamentales tailandeses: el modelo transcribe PDF y escaneos de documentos oficiales a texto estructurado, aprovechando su entrenamiento especifico en los tres conjuntos de documentos gubernamentales tailandeses donde supera a GPT-6.1 Sol.
+- Procesamiento de formularios y recibos: extrae campos y contenido de formularios y recibos convirtiendolos a Markdown o tablas HTML, sin necesidad de definir reglas por plantilla.
+- Reconocimiento de manuscritos: transcribe notas y documentos manuscritos en tailandes con un CER del 16,8 %, adecuado para digitalizacion de archivos historicos o administrativos.
+- Extraccion de tablas y graficos: convierte tablas de documentos a formato estructurado e interpreta graficos e infografias para tareas de analisis documental.
+- Atencion al cliente sobre documentos: responde preguntas sobre el contenido de un documento (informacion clave, clasificacion) en un flujo conversacional bilingue tailandes-ingles.
+- Despliegue en CPU, Mac u Ollama: la cuantizacion Q4_K_M (6,7 GB con codificador visual) permite ejecutar el modelo en entornos sin GPU dedicada manteniendo una calidad OCR superior a P110-ThaiOCR-4B en BF16.
+- Pipelines de bajo consumo de memoria: el archivo Q2_K (4,8 GB con vision encoder) ofrece una opcion para presupuestos de memoria reducidos con CER de 20,63 % en manuscrito y 1,49 % en impreso.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son de CER (tasa de error de caracteres) sobre conjuntos de evaluación retenidos, comparando archivos cuantizados del propio modelo con P110-ThaiOCR-4B:
+| Metrica | P220 v1.0 | P220 v1.1 | Referencia |
+|---|---|---|---|
+| ThaiOCRBench handwriting | 0,475 | 0,546 | no disponible |
+| ThaiOCRBench media 13 tareas | 0,674 | 0,696 | no disponible |
+| CER manuscrito (iapp) | 24,4 % | 16,8 % | no disponible |
+| CER texto impreso (ocr_th) | 1,35 % | 0,72 % | no disponible |
+| ThaiOCRBench media transcripcion (5 tareas) | no disponible | 0,662 | GPT-6.1 Sol: 0,652 |
 
-| Archivo | Tamaño con codificador visual | CER % manuscrito / impreso |
+Comparativa de cuantizaciones (CER % manuscrito / impreso):
+
+| Archivo | Tamano con vision encoder | CER manuscrito / impreso |
 |---|---|---|
-| P220 Q4_K_M | 6,7 GB | 24,81 / 1,29 |
-| P220 Q3_K_M | 5,7 GB | 27,39 / 1,46 |
-| P220 Q2_K | 4,8 GB | 29,63 / 1,56 |
+| P220 Q4_K_M | 6,7 GB | 17,46 / 0,86 |
+| P220 Q3_K_M | 5,7 GB | 18,54 / 0,91 |
+| P220 Q2_K | 4,8 GB | 20,63 / 1,49 |
 | P110 BF16 | 9,3 GB | 35,52 / 1,98 |
 | P110 FP8 | 5,8 GB | 35,58 / 2,13 |
 | P110 Q4_K_M | 3,4 GB | 35,86 / 2,08 |
 
-Con el codificador visual Q8_0 en lugar de F16, el CER con Q4_K_M es de 25,19 / 1,28 (manuscrito / impreso), frente a 24,81 / 1,29 con F16.
-
-El autor afirma que P220-ThaiOCR-9B obtiene la mejor puntuación en ThaiOCRBench entre todos los modelos abiertos probados, incluidos Qwen3.6-35B-A3B y OpenThai 2.0 27B, y por encima de GPT-6 Luna, además de acercarse a GPT-6.1 Sol en tareas de transcripción. Sin embargo, la tabla completa de resultados de ThaiOCRBench no está incluida en la información proporcionada, por lo que no se reproducen cifras adicionales.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval ni GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: Q2_K ocupa 4,8 GB con codificador visual; Q3_K_M, 5,7 GB; Q4_K_M, 6,7 GB; BF16, aproximadamente 18 GB solo para los pesos del modelo (el repo completo mide 44,2 GB).
-- GPU recomendadas según el autor: NVIDIA Blackwell para NVFP4; Ada/Hopper para FP8; Ampere para W4A16; CPU, Mac u Ollama para GGUF.
-- En GPU de consumo: los archivos Q4_K_M, Q3_K_M y Q2_K caben en tarjetas con 8 GB o más de VRAM, aunque la información no detalla pruebas específicas en RTX 4090 u otras consumer.
-- Opciones de despliegue: llama.cpp (`llama-server`), Ollama, vLLM (BF16, FP8, W4A16, NVFP4) y transformers.
-- Latencia en CPU de servidor sin GPU: unos 2,9 s por imagen de una línea de texto impreso con Q4_K_M, Q3_K_M o Q2_K; P110-ThaiOCR-4B Q4_K_M tarda 2,0 s en la misma máquina. En CPU se recomienda `-np 1`.
-- Configuración recomendada: `--image-min-tokens 64`; probado con llama.cpp b11913 (build CUDA).
-- Throughput en GPU: no disponible en la información proporcionada.
+- VRAM estimada: Q2_K 4,8 GB, Q3_K_M 5,7 GB, Q4_K_M 6,7 GB, todos incluyendo el codificador visual; el repo completo ocupa 44,2 GB.
+- GPU recomendadas segun el autor: NVIDIA Blackwell para NVFP4, NVIDIA Ada/Hopper para FP8, NVIDIA Ampere para W4A16.
+- CPU, Mac u Ollama: usar GGUF Q4_K_M (recomendado), Q3_K_M o Q2_K segun memoria disponible.
+- Cabe en GPU de consumo: si, con Q4_K_M (6,7 GB) o inferiores en tarjetas con 8 GB o mas de VRAM.
+- Opciones de despliegue: llama.cpp (llama-server), Ollama, vLLM (variantes BF16, FP8, W4A16, NVFP4) y transformers (BF16).
+- Parametros de ejecucion recomendados: `--image-min-tokens 64`, `-c 32768`, `-n 4096`, thinking desactivado mediante `--chat-template-kwargs '{"enable_thinking": false}'` en llama.cpp o `--think=false` en Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | CER manuscrito / impreso | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | ThaiOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P220-ThaiOCR-9B (Q4_K_M) | 9,2B | no disponible | 24,81 / 1,29 | Apache-2.0 | GGUF, BF16, FP8, W4A16, NVFP4 |
-| P110-ThaiOCR-4B (BF16) | 4B (aproximado) | no disponible | 35,52 / 1,98 | no disponible | BF16, FP8, Q4_K_M |
-| Qwen3.6-35B-A3B | 35B (MoE) | no disponible | no disponible | no disponible | mencionado como comparación en ThaiOCRBench |
-| OpenThai 2.0 27B | 27B | no disponible | no disponible | no disponible | mencionado como comparación en ThaiOCRBench |
-
-El autor sitúa a P220-ThaiOCR-9B por delante de Qwen3.6-35B-A3B y OpenThai 2.0 27B en ThaiOCRBench, y por encima de GPT-6 Luna, aunque los valores numéricos de esas comparaciones no se incluyen en la información disponible.
+| P220-ThaiOCR-9B | 9,2 B | 32.768 | 0,696 (media 13 tareas) | Apache-2.0 | GGUF, BF16, FP8, W4A16, NVFP4 |
+| P110-ThaiOCR-4B | no disponible | no disponible | inferior a P220 en ambos conjuntos held-out | no disponible | BF16, FP8, Q4_K_M |
+| Qwen3.6-35B-A3B | 35 B (MoE) | no disponible | inferior a P220 | no disponible | no disponible |
+| OpenThai 2.0 27B | 27 B | no disponible | inferior a P220 | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a tailandés e inglés; el rendimiento en otros idiomas no está documentado.
-- El modo *thinking* debe desactivarse explícitamente; si se deja activado (comportamiento por defecto en llama.cpp y Ollama), la calidad puede degradarse respecto a la evaluación publicada.
-- El CER en manuscrito es notablemente superior al de texto impreso (24,81 % frente a 1,29 % con Q4_K_M), por lo que la transcripción manuscrita requiere revisión humana en producción.
-- Las cuantizaciones de 2 y 3 bits pierden precisión de forma apreciable (29,63 % y 27,39 % de CER en manuscrito); Q4_K_M es la opción recomendada.
-- El modelo es más lento que P110-ThaiOCR-4B en CPU (2,9 s frente a 2,0 s por línea de texto impreso).
-- No se documentan sesgos específicos ni tasas de alucinación en la información proporcionada.
-- Aunque la licencia es Apache-2.0 y permite uso comercial, conviene verificar las condiciones del modelo base Qwen3.5-9B, también Apache-2.0 según la model card.
-- El repo tiene 338 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria todavía escasa.
-- No hay información sobre soporte de tool calling ni sobre el comportamiento en contextos multi-imagen.
+- El modelo solo soporta tailandes e ingles; no se ha validado para otros idiomas.
+- No dispone de modo thinking; la plantilla de Ollama puede activarlo por defecto, por lo que debe forzarse su desactivacion.
+- Requiere el archivo mmproj separado para procesar imagenes; sin el, el modelo no puede leer documentos.
+- La model card no detalla sesgos conocidos ni tasas de alucinacion; se recomienda validacion humana en produccion.
+- El contexto maximo documentado es de 32.768 tokens en la configuracion de llama.cpp; documentos muy extensos requieren paginacion.
+- Aunque la licencia es Apache-2.0, el modelo base Qwen/Qwen3.5-9B tambien es Apache-2.0, por lo que no se indican restricciones adicionales para uso comercial.
+- Los benchmarks publicados se limitan a ThaiOCRBench y conjuntos held-out de OCR; no hay datos de tareas generales de razonamiento o codigo.
+- La calidad del OCR decae con cuantizaciones agresivas: Q2_K presenta CER de 20,63 % en manuscrito frente a 17,46 % de Q4_K_M.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF
+- Repositorio GGUF: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF
 - Modelo base BF16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante FP8: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Variante W4A16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16
 - Variante NVFP4: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
+- Changelog: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF/blob/main/CHANGELOG.md

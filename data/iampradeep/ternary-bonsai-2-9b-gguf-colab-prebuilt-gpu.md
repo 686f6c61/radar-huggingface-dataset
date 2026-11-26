@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-9B es un modelo de lenguaje y visión derivado de Qwen3.5-9B en el que los pesos del transformer de lenguaje se han cuantizado de forma ternaria a valores {-1, 0, +1}, reduciendo el peso del modelo a aproximadamente 2,42 GB en la variante PQ2_0 frente a los ~17,9 GB que ocuparía en FP16. La arquitectura subyacente se mantiene sin cambios respecto al modelo base, incluyendo una ventana de contexto de 262.144 tokens y la capacidad de procesar entrada visual mediante un proyector multimodal separado. El repositorio, publicado por el usuario IamPradeep, distribuye los ficheros GGUF junto con un paquete binario precompilado de llama.cpp (fork PrismML) pensado para arrancar el modelo en Google Colab en menos de un minuto.
+Ternary-Bonsai-2-9B-GGUF-Colab-Prebuilt-GPU es un repositorio de pesos cuantizados en formato GGUF del modelo Ternary-Bonsai-2-9B, publicado por el usuario IamPradeep. Se trata de una variante ternaria (pesos restringidos a {-1, 0, +1}) derivada de Qwen3.5-9B, con la arquitectura sin cambios respecto al modelo base, que incluye capacidad de vision y una ventana de contexto de 262.000 tokens. El repositorio empaqueta ademas un binario precompilado de llama.cpp (fork PrismML) y librerias CUDA 12 para ejecutar el modelo en Google Colab en menos de un minuto.
 
-El interés del proyecto reside en la combinación de tres factores poco habituales en un mismo artefacto: cuantización ternaria extrema, contexto de 262K tokens y soporte de visión, todo empaquetado para ejecución inmediata en GPU de consumo o en entornos cloud gratuitos. Incluye además un cabezal de predicción multi-token (MTP) para decodificación especulativa, lo que permite acelerar la generación sin un modelo borrador independiente.
+La propuesta principal es la compresion extrema: la variante PQ2_0 ocupa aproximadamente 2,42 GB frente a unos 17,9 GB en FP16, manteniendo contexto largo y entrada multimodal. Esto lo hace atractivo para entornos con VRAM limitada, como GPU de consumo o instancias gratuitas de Colab, donde un modelo de 9B en precision completa no cabria.
 
-No obstante, conviene señalar que se trata de un artefacto de distribución (GGUF + binarios), no de un modelo entrenado desde cero por el autor del repositorio, y que la información pública disponible sobre benchmarks, licencia explícita y composición del dataset de entrenamiento es muy limitada. El número de parámetros reportado en safetensors (1.470.621.184) no coincide con la denominación comercial "9B", lo que sugiere que la cifra corresponde a un subconjunto de tensores o a un componente concreto y no al total del modelo.
+El modelo esta orientado a conversacion (tag `conversational`), admite modo de razonamiento (thinking) y vision mediante un proyector multimodal separado. La licencia del modelo base se declara como Apache 2.0 en la model card, aunque el campo de licencia del repositorio en Hugging Face figura como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.5-9B (arquitectura sin cambios), con proyector visual multimodal y cabezal MTP opcional |
-| Parametros totales | No disponible de forma fiable; el nombre comercial indica 9B, mientras que el dato safetensors reporta 1.470.621.184 (probable subconjunto de tensores) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262.144 tokens (262K) |
-| Tipos de cuantizacion | Ternaria {-1, 0, +1}; variante PQ2_0 (~2,42 GB); proyector visual en Q8_0 (~624 MB) y BF16 (referencia) |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache 2.0 (según la model card, heredada de Qwen3.5-9B) |
-| Formato de pesos | GGUF (modelo principal, proyector mmproj y variante MTP) |
+| Arquitectura | Transformer derivado de Qwen3.5-9B (arquitectura sin cambios), con proyector de vision para entrada multimodal |
+| Parametros totales | 1.470.621.184 (segun safetensors); la model card lo describe como modelo de 9B |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.000 tokens |
+| Tipos de cuantizacion | Ternaria: PQ2_0 (~2,42 GB), PTQ1_0, Q2_0, PQ2_0 + MTP; proyector de vision en Q8_0 (~624 MB) o BF16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 (declarada en la model card para el modelo base); campo de licencia del repo no disponible |
+| Formato de pesos | GGUF (mas proyector mmproj en GGUF y paquete binario llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo mantiene la arquitectura del transformer Qwen3.5-9B sin modificaciones estructurales, pero sustituye los pesos del decodificador de lenguaje por valores ternarios en el rango {-1, 0, +1}. Esta cuantización reduce drásticamente el espacio de almacenamiento (de ~17,9 GB en FP16 a ~2,42 GB en PQ2_0) manteniendo la ventana de contexto de 262K tokens. El soporte multimodal se implementa mediante un proyector visual independiente distribuido como fichero mmproj en GGUF, disponible en Q8_0 (recomendado para producción) y en BF16 (solo como referencia de precisión).
+El modelo mantiene la arquitectura del transformer Qwen3.5-9B, sin modificaciones estructurales, pero con los pesos del modelo de lenguaje cuantizados a valores ternarios {-1, 0, +1}. Esta cuantizacion ternaria es la que permite reducir el tamano del modelo de aproximadamente 17,9 GB en FP16 a unos 2,42 GB en la variante PQ2_0, manteniendo la ventana de contexto de 262.000 tokens. La componente de vision se distribuye como un proyector multimodal independiente (mmproj) en Q8_0 o BF16.
 
-El repositorio incluye además una variante con cabezal de predicción multi-token (MTP) que actúa como borrador para decodificación especulativa, con profundidad de borrador recomendada de 2. La model card no detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO; tampoco se documenta el proceso de ternarización (PTQ, QAT u otra técnica). El paquete binario precompilado corresponde a un fork de llama.cpp denominado PrismML, necesario para aprovechar las funciones de decodificación especulativa y el modo razonamiento.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion. Tampoco se documenta el proceso de cuantizacion ternaria (metodo de entrenamiento o post-entrenamiento) ni innovaciones adicionales como decodificacion especulativa. La model card menciona una variante con MTP (multi-token prediction) como opcion de despliegue, pero sin detallar su funcionamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con prompts de sistema.
-- Razonamiento explícito activable mediante el flag `--reasoning on` (modo thinking), con presupuesto de salida recomendado de al menos 8.192 tokens.
-- Comprensión de imágenes: descripción detallada, respuesta a preguntas visuales y lectura de texto en imágenes (con `--image-min-tokens 1024` para texto denso).
-- Decodificación especulativa mediante cabezal MTP integrado (profundidad 2), sin necesidad de modelo borrador externo.
-- Contexto largo de hasta 262.144 tokens, útil para documentos extensos o conversaciones prolongadas.
-- Compatibilidad con `llama-cli` y presumiblemente `llama-server` del fork PrismML.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente, aunque el modo thinking sugiere cierto soporte de razonamiento encadenado.
-- Idiomas: no disponibles.
+- Generacion de texto conversacional multi-turno.
+- Modo de razonamiento (thinking mode) activable mediante `--reasoning on`, con recomendacion de usar temperatura 1.0 y al menos 8192 tokens de salida.
+- Entrada de vision: procesamiento de imagenes mediante el proyector multimodal Q8_0 o BF16.
+- Contexto largo de hasta 262.000 tokens, adecuado para documentos extensos o conversaciones prolongadas.
+- Renderizado de matematicas en la interfaz interactiva (KaTeX), lo que sugiere soporte de contenido matematico en las respuestas.
+- Adjuncion de archivos de codigo en la UI interactiva de Colab.
+- Compatibilidad con endpoints (`endpoints_compatible` segun los tags del repositorio).
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte explicito de tool calling / function calling: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Análisis de documentos largos en Colab o portátil con GPU modesta**: gracias a los 262K tokens de contexto y a los ~2,42 GB del fichero PQ2_0, se puede cargar un corpus extenso (contratos, informes, papers) y hacer preguntas sobre él sin infraestructura dedicada.
-- **Asistente visual para accesibilidad**: el modelo puede describir imágenes subidas por el usuario con detalle, usando el proyector Q8_0, en un flujo tipo notebook interactivo o aplicación web ligera.
-- **Extracción de información de capturas y documentos escaneados**: con `--image-min-tokens 1024` el modelo lee texto pequeño en imágenes, lo que permite transcribir formularios, tickets o pantallazos en pipelines de digitalización.
-- **Prototipado rápido de chatbots conversacionales**: la combinación de binario precompilado y GGUF ligero permite levantar un endpoint conversacional en minutos, útil para demos y validación de producto antes de invertir en infraestructura.
-- **Generación asistida con latencia reducida en GPU de consumo**: la decodificación especulativa con MTP acelera la generación de tokens en tarjetas como RTX 4090 o T4, adecuada para aplicaciones interactivas donde el tiempo de respuesta importa.
-- **Investigación sobre cuantización ternaria**: el artefacto sirve como banco de pruebas para medir la degradación de calidad frente al Qwen3.5-9B original en tareas de razonamiento, visión y contexto largo.
-- **Educación y experimentación en entornos gratuitos**: al ejecutarse en Colab en menos de un minuto, es viable en cursos y talleres donde no se dispone de clústeres GPU.
+- Prototipado rapido en Google Colab: el repositorio incluye un binario precompilado y un notebook de dos celdas que permite tener el modelo conversando en menos de un minuto, ideal para pruebas de concepto sin configurar un entorno de inferencia desde cero.
+- Analisis de documentos largos: con 262.000 tokens de contexto, el modelo puede procesar contratos, informes o bases de codigo extensas en una sola pasada, util para resumen y extraccion de informacion.
+- Asistencia multimodal en entornos con VRAM limitada: al ocupar unos 2,42 GB en PQ2_0, permite describir imagenes o responder preguntas sobre capturas en GPU de consumo o instancias gratuitas de Colab.
+- Chatbot de atencion al cliente en prototipos: su naturaleza conversacional y el modo instant/thinking permiten simular flujos de soporte multi-turno antes de invertir en infraestructura mayor.
+- Educacion y tutoria con matematicas: la UI interactiva renderiza formulas en KaTeX, lo que facilita usar el modelo para explicar problemas paso a paso con modo de razonamiento.
+- Evaluacion de cuantizacion ternaria: investigadores pueden comparar la calidad de las variantes PQ2_0, PTQ1_0, Q2_0 y PQ2_0 + MTP sobre las mismas tareas para estudiar el impacto de la compresion extrema.
+- Experimentacion con vision en local: descargando el proyector Q8_0 (~624 MB) se puede montar un pipeline multimodal ligero en un portatil con GPU modesta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: ~2,5-3 GB para el modelo PQ2_0 en solitario; añadir ~0,7 GB si se carga el proyector visual Q8_0; añadir ~2-3 GB adicionales de overhead de contexto KV para ventanas muy largas (el contexto de 262K puede requerir decenas de GB de KV cache según configuración).
-- **GPU recomendadas**: T4 (Colab gratuito) suficiente para el modelo base en contexto corto; RTX 3090/4090, A10G, L4 o A100 para contexto largo y visión concurrente.
-- **Cabe en GPU de consumo**: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y GPUs con 8 GB o más para contexto moderado.
-- **Opciones de despliegue**: `llama-cli` y `llama-server` del fork PrismML incluido en el repositorio (`llama_bin.tar.gz`); requiere runtime CUDA 12 (`nvidia-cuda-runtime-cu12`, `nvidia-cublas-cu12`, `nvidia-cuda-nvrtc-cu12`). Compatibilidad con vLLM, Ollama o TGI: no documentada.
-- **Latencia y throughput**: no disponibles de forma numérica; la model card afirma arranque en menos de un minuto en Colab incluyendo descarga y setup, y recomienda decodificación especulativa con MTP para acelerar la generación.
+- VRAM estimada para inferencia: aproximadamente 2,42 GB para los pesos del modelo en PQ2_0, mas el proyector de vision Q8_0 (~624 MB) si se usa entrada multimodal, mas overhead de contexto KV cache (que crece con la ventana usada; el contexto maximo de 262.000 tokens requiere mucha mas memoria que los pesos).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para uso texto con contexto moderado; el repositorio esta disenado para GPUs de Colab (tipicamente T4 con 16 GB o similares).
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, 4060, 4070 o superiores, especialmente en modo texto y con contexto reducido.
+- Opciones de despliegue: llama.cpp mediante el binario precompilado del fork PrismML incluido en el repositorio; tambien deberia funcionar con builds estandar de llama.cpp compatibles con GGUF ternario, aunque no se confirma en la informacion disponible. vLLM, TGI y Ollama no se mencionan.
+- Latencia y throughput: no disponibles. La model card afirma que el setup y la descarga completa se hacen en menos de un minuto en Colab, pero no aporta cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Visión | Cuantización extrema | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-9B (PQ2_0) | ~9B (nominal) | 262K | Sí (mmproj Q8_0) | Ternaria {-1,0,+1} | Apache 2.0 (según model card) | GGUF + binarios en HF |
-| Qwen3.5-9B (modelo base) | ~9B | 262K | Sí | No (FP16/BF16) | Apache 2.0 | Pesos originales en HF |
-| BitNet b1.58 (referencia académica) | Variable (2B-3.9B publicados) | No disponible | No | Ternaria {-1,0,+1} | No disponible | Pesos de investigación |
-| Llama 3.2 11B Vision | 11B | 128K | Sí | No | Llama Community License | HF, Ollama, vLLM |
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|---|
+| Ternary-Bonsai-2-9B (PQ2_0) | 9B (1.470.621.184 segun safetensors) | 262.000 | Si (proyector separado) | Apache 2.0 (declarada) | GGUF, repo con binario precompilado |
+| Qwen3.5-9B (modelo base) | 9B | 262.000 (heredado) | Si | Apache 2.0 | Pesos originales en BF16/FP16, ~17,9 GB |
+| BitNet b1.58 (referencia de cuantizacion ternaria) | Varios tamanos | no disponible | No | no disponible | Pesos ternarios, ecosistema de investigacion |
 
-La comparación directa con Qwen3.5-9B es la más informativa: Ternary-Bonsai-2-9B es esencialmente el mismo modelo con pesos ternarios, por lo que la diferencia esperada está en la fidelidad de las respuestas y no en la arquitectura o el contexto. Frente a BitNet b1.58, este artefacto aporta multimodalidad y contexto de 262K, pero carece de la documentación académica y los benchmarks publicados del trabajo original de Microsoft Research. Frente a Llama 3.2 11B Vision, ofrece mayor contexto y menor huella en disco, aunque con calidad no verificada por benchmarks públicos.
+La comparativa con alternativas de cuantizacion ternaria de terceros no esta disponible en la informacion proporcionada. Frente al modelo base Qwen3.5-9B, la ventaja principal es el tamano (2,42 GB frente a 17,9 GB) a costa de una posible perdida de calidad no cuantificada en la model card.
 
 ## Limitaciones y advertencias
 
-- **Calidad no verificada**: no hay benchmarks publicados que cuantifiquen la degradación introducida por la ternarización frente a Qwen3.5-9B; el uso en producción sin evaluación propia es arriesgado.
-- **Riesgo de alucinación**: inherente a los modelos de ~9B, potencialmente amplificado por la cuantización ternaria, especialmente en tareas de razonamiento matemático o factual.
-- **Discrepancia en el recuento de parámetros**: el dato safetensors (1.470.621.184) no concuerda con el nombre "9B"; conviene verificar la composición real de los tensores antes de asumir capacidades.
-- **Licencia**: la model card declara Apache 2.0 heredada de Qwen3.5-9B, pero el campo de licencia del repositorio Hugging Face figura como "no disponible"; conviene confirmar los términos antes de uso comercial.
-- **Dependencia de un fork no estándar**: la decodificación especulativa MTP y posiblemente otras funciones requieren el binario PrismML incluido, lo que limita la portabilidad a otros runners (vLLM, TGI, Ollama) y complica el mantenimiento.
-- **Proyector BF16 inestable**: la propia model card advierte de que el mmproj BF16 puede provocar caídas de `llama-server` con peticiones concurrentes; usar siempre Q8_0.
-- **Contexto largo y KV cache**: aunque el modelo soporte 262K tokens, la memoria necesaria para la caché KV en ventanas completas puede exceder la VRAM de GPUs de consumo.
-- **Idiomas no documentados**: se desconoce el soporte real del castellano y de otros idiomas distintos del inglés.
-- **Repositorio con 0 descargas y 0 likes**: sin validación comunitaria; el artefacto es reciente y no ha sido auditado por terceros.
-- **Fecha de creación futura en los metadatos** (2026-11-10): inconsistencia que sugiere posibles errores en la publicación del repositorio.
+- La cuantizacion ternaria extrema puede degradar la calidad respecto al modelo base en tareas complejas de razonamiento o codigo; no se publican evaluaciones que cuantifiquen esta perdida.
+- El campo de licencia del repositorio figura como no disponible; la model card declara Apache 2.0 para el modelo base, pero conviene verificar la licencia aplicable antes de uso comercial.
+- Los idiomas soportados no estan documentados; el rendimiento fuera del ingles y el chino (idiomas habituales de la familia Qwen) es incierto.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, potencialmente amplificado por la cuantizacion agresiva.
+- El modo thinking puede consumir mas de 3000 tokens en prompts simples; hay que reservar al menos 8192 tokens de salida y evitar decodificacion greedy, segun la model card.
+- El repositorio depende de un binario precompilado de un fork de llama.cpp (PrismML) y de librerias CUDA 12 especificas; la compatibilidad con otras herramientas no esta garantizada.
+- El contexto de 262.000 tokens es el maximo teorico; usarlo completo requiere una KV cache muy grande que supera la VRAM de GPU de consumo.
+- El autor del repositorio (IamPradeep) no es el desarrollador original del modelo; se trata de un empaquetado de terceros, lo que anade un nivel de confianza adicional a verificar.
+- No hay informacion sobre sesgos conocidos ni sobre el proceso de alineacion del modelo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-9B-GGUF-Colab-Prebuilt-GPU
-- Modelo base referenciado (Qwen3.5-9B): no se proporciona enlace directo en la información disponible
-- Fork de llama.cpp (PrismML): no se proporciona enlace directo; se distribuye como `llama_bin.tar.gz` dentro del repositorio
-- Paper de BitNet b1.58 (referencia técnica sobre cuantización ternaria): no disponible en la información proporcionada
+- Notebook interactivo de Colab: https://colab.research.google.com/#fileId=https://huggingface.co/IamPradeep/Ternary-Bonsai-2-9B-GGUF-Colab-Prebuilt-GPU/blob/main/Ternary-Bonsai-2-9B-GGUF-Interactive-UI.ipynb
+- Imagen de configuracion del servidor: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-9B-GGUF-Colab-Prebuilt-GPU/resolve/main/Ternary-Bonsai-2-9B-Server-Setup.png
+- GIF de la interfaz de chat: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-9B-GGUF-Colab-Prebuilt-GPU/resolve/main/Ternary-Bonsai-2-9B-Response-Generation.gif
+- Paper, blog o repositorio del modelo base Qwen3.5-9B: no disponible en la informacion proporcionada.

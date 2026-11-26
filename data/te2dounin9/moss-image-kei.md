@@ -2,82 +2,86 @@
 
 ## Resumen
 
-MOSS-Image-Kei es un adaptador LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario Te2douNin9 en Hugging Face. El modelo se construye sobre MOSS-Image-Base, el modelo base de difusión desarrollado por el equipo OpenMOSS, y su finalidad principal es generar ilustraciones en estilo anime japonés de un personaje concreto: Tendou Kei del juego Blue Archive, identificable mediante el trigger `tendou_kei_moss` incluido en los prompts de ejemplo.
+MOSS-Image-Kei es un adaptador LoRA de tipo text-to-image publicado por el usuario Te2douNin9 sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. Se distribuye como un LoRA compatible con la librería diffusers y está especializado en la generación de ilustraciones de estilo anime, concretamente en el personaje Tendou Kei del videojuego Blue Archive, con un sesgo claro hacia escenas de verano, iluminación etérea y composiciones de playa. El repositorio ocupa 1,1 GB y acumula 246 descargas y 2 likes en el momento de la consulta.
 
-Se trata, por tanto, de un LoRA de personaje (character LoRA) entrenado para preservar fielmente los rasgos distintivos del diseño original: el largo cabello blanco plateado, los ojos rosa-rojizos y el halo geométrico rosa característico. El repositorio pesa aproximadamente 0,4 GB, tamaño coherente con un adaptador LoRA en lugar de un modelo completo, y está pensado para usarse con la librería `diffusers` de Hugging Face.
+El modelo no es un modelo fundacional, sino un ajuste fino ligero (LoRA) que modifica el comportamiento del modelo base MOSS-Image-Base sin alterar sus pesos originales. Su relevancia es acotada: resulta útil para quien necesite generar ilustraciones consistentes de este personaje concreto con un estilo visual muy definido, pero no aporta capacidades generales nuevas ni compite con modelos de propósito general. La licencia Apache 2.0 permite uso comercial y modificación, siempre que se respeten las condiciones de la licencia del modelo base.
 
-Su relevancia es limitada y de nicho: con solo 27 descargas y 2 likes en el momento de la ficha, es un recurso comunitario dirigido a usuarios de generación de imágenes anime, no un modelo de propósito general. Aun así, ilustra el ecosistema habitual de los LoRA de personaje sobre modelos base de difusión, un flujo de trabajo muy extendido en la comunidad open source.
+La información disponible es escasa: la model card se limita a describir prompts de ejemplo y parámetros de generación (prompt negativo, estilo), sin detallar el dataset de entrenamiento, el número de pasos, el rango del LoRA ni los hiperparámetros utilizados. No se han publicado benchmarks ni comparativas cuantitativas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusion text-to-image |
+| Arquitectura | LoRA sobre modelo de difusión (text-to-image) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible (depende del modelo base y de su codificador de texto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los prompts de ejemplo estan en ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | pesos de diffusers (tamano del repositorio: 0,4 GB) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (compatible con diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation), una tecnica de fine-tuning parametricamente eficiente que inyecta matrices de bajo rango en las capas de atencion (y normalmente en las capas lineales) de un modelo de difusion preentrenado. En este caso, el modelo base es OpenMOSS-Team/MOSS-Image-Base, de modo que el adaptador modifica el comportamiento del modelo base sin reentrenarlo por completo, lo que explica el tamano reducido del repositorio (0,4 GB frente a los varios GB u horas de un modelo de difusion completo).
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre OpenMOSS-Team/MOSS-Image-Base, un modelo de difusión para generación de imágenes a partir de texto. La técnica LoRA introduce matrices de bajo rango en las capas del modelo base, lo que permite especializar el modelo en un concepto o estilo concreto con un coste computacional y de almacenamiento muy reducido (1,1 GB frente a los pesos completos del modelo base). No se dispone de información sobre el rango del LoRA, las capas objetivo, el número de pasos de entrenamiento, el tamaño del dataset ni la composición de las imágenes de entrenamiento.
 
-No se ha publicado informacion sobre el dataset de entrenamiento, el numero de pasos, el rank del LoRA, la resolucion de entrenamiento ni los hiperparametros utilizados. Los ejemplos del widget sugieren un entrenamiento orientado a la consistencia del personaje (preservacion de peinado, color de pelo, halo geometrico y rasgos faciales), con prompts negativos detallados que indican atencion a artefactos tipicos como anatomia distorsionada, manos o brazos extra y degradacion de calidad.
+La model card no documenta si se emplearon técnicas adicionales como regularización, balanceo de clases o aumento de datos. Tampoco se especifica si el entrenamiento se realizó con captions detallados (como los prompts de ejemplo, muy descriptivos) o con etiquetas simples. La única información técnica implícita es el uso de un prompt negativo muy específico orientado a evitar artefactos anatómicos y elementos no deseados (personajes extra, calzado, atmósfera oscura, halos ausentes o alterados, texto fuera de encuadre, baja calidad, sombreado plano, extremidades extra).
 
 ## Capacidades
 
-- Generacion de imagenes text-to-image en estilo anime japones, como adaptador sobre MOSS-Image-Base.
-- Representacion consistente del personaje Tendou Kei de Blue Archive mediante el trigger `tendou_kei_moss`.
-- Preservacion de rasgos finos del diseno: halo geometrico rosa de contornos rectangulares superpuestos, cabello blanco plateado muy largo y rasgos faciales caracteristicos.
-- Respuesta a prompts largos y estructurados: los ejemplos del widget usan descripciones de varias centenas de palabras con secciones (apariencia, ropa, pose), lo que sugiere compatibilidad con prompts detallados.
-- Uso de prompts negativos para controlar artefactos (anatomia, calidad, composicion).
-- Integracion con la libreria `diffusers` de Hugging Face mediante pipeline text-to-image.
-- No soporta tool calling, agentes ni razonamiento multi-paso: no es un modelo de lenguaje.
+- Generación de imágenes text-to-image de estilo anime, con especialización en el personaje Tendou Kei de Blue Archive.
+- Reproducción consistente de rasgos del personaje: pelo blanco plateado muy largo, ojos cerrados o abiertos según el prompt, halo geométrico rosa de contornos rectangulares superpuestos.
+- Control fino mediante prompts descriptivos largos, con énfasis en iluminación, composición, pose y vestuario.
+- Soporte de prompt negativo para suprimir artefactos (extremidades extra, anatomía distorsionada, elementos no deseados).
+- Estilo visual orientado a escenas de verano, playa, iluminación etérea y paleta de azules y rosas.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multimodalidad de entrada.
+- Capacidades multilingües: no documentadas; los prompts de ejemplo están en inglés.
 
 ## Casos de uso
 
-- Generacion de fan art del personaje: el usuario escribe prompts con el trigger `tendou_kei_moss` para obtener ilustraciones del personaje con su diseno canonico, ideal para ilustradores que buscan referencias rapidas.
-- Produccion de ilustraciones de escena: los prompts de ejemplo muestran composiciones complejas (playa de verano, vestido, pose dinamica), util para crear escenas narrativas completas con el personaje.
-- Exploracion de estilos sobre un modelo base: al ser un LoRA, puede combinarse con otros adaptadores (mezcla de LoRA) para variar el estilo de renderizado manteniendo la identidad del personaje.
-- Prototipado con diffusers: integracion directa en scripts de Python con `diffusers` para generar lotes de imagenes de forma automatizada.
-- Pruebas de consistencia de personajes: util para investigadores que estudian la fidelidad de los LoRA de personaje frente al diseno original (halo, peinado, paleta de color).
-- Material para comunidades de contenido: generacion de avatares, banners o ilustraciones para foros y redes centradas en anime, respetando el estilo visual del personaje.
+- Ilustración de fan art de Blue Archive: el LoRA permite generar imágenes consistentes de Tendou Kei en distintas poses y escenarios, manteniendo los rasgos canónicos del personaje (halo, pelo, paleta) sin necesidad de describirlos exhaustivamente en cada prompt.
+- Creación de fondos de pantalla y material promocional para comunidades de fans: con prompts detallados se pueden obtener composiciones de alta calidad en formato vertical u horizontal, ajustando la iluminación y el encuadre mediante el prompt negativo.
+- Prototipado rápido de escenas de verano para proyectos de ilustración: el modelo está entrenado para escenas de playa y luz etérea, por lo que sirve como base para bocetos que luego se retocan manualmente.
+- Generación de variaciones de vestuario: aunque el LoRA está sesgado hacia el vestido blanco de verano, los prompts permiten explorar otras prendas siempre que se mantenga la identidad del personaje.
+- Uso educativo en talleres de difusión: sirve como ejemplo práctico de cómo un LoRA especializa un modelo base en un concepto concreto y de cómo el prompt negativo influye en la calidad final.
+- Integración en pipelines de generación por lotes: al ser compatible con diffusers, se puede cargar junto al modelo base en scripts de Python para producir lotes de imágenes con semillas controladas, útil para pruebas A/B de prompts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un LoRA de generacion de imagenes, los benchmarks estandar de LLM (MMLU, HumanEval, GSM8K) no son aplicables; las metricas habituales del dominio (FID, CLIP Score) tampoco se han publicado para este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador ocupa 0,4 GB en disco; la VRAM necesaria depende del modelo base OpenMOSS-Image-Base, cuyas especificaciones no estan disponibles en la informacion proporcionada.
-- Para inferencia de modelos de difusion tipicos, una GPU de consumo como la RTX 3060 de 12 GB o la RTX 4090 de 24 GB suele ser suficiente; no se puede afirmar con certeza para este caso concreto.
-- No se han publicado recomendaciones de GPU, latencia ni throughput.
-- Despliegue mediante la libreria `diffusers` de Hugging Face, la via documentada en el repositorio. La compatibilidad con otras herramientas (ComfyUI, AUTOMATIC1111, llama.cpp) no esta indicada y no es aplicable en el caso de llama.cpp, orientado a modelos de lenguaje.
+- VRAM estimada para inferencia: depende del modelo base MOSS-Image-Base, no del LoRA. El adaptador en sí ocupa 1,1 GB en disco y se carga en memoria junto con el modelo base; no se dispone de la VRAM exacta del modelo base.
+- GPU recomendadas: no disponible para el modelo base; para modelos de difusión de tamaño comparable se suele recomendar al menos 8-12 GB de VRAM en cuantización FP16, y 16-24 GB para mayor resolución o lotes.
+- Cabe en GPU de consumo: probablemente sí en GPUs con 8 GB o más si el modelo base lo permite, pero no se confirma en la información disponible.
+- Opciones de despliegue: diffusers (librería declarada), con posibilidad de usar pipelines de text-to-image; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusión).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Licencia | Uso principal |
-|---|---|---|---|---|
-| Te2douNin9/MOSS-Image-Kei | LoRA de personaje | OpenMOSS-Team/MOSS-Image-Base | apache-2.0 | Ilustracion anime de un personaje concreto |
-| LoRA de personaje tipico sobre SDXL | LoRA de personaje | SDXL 1.0 | variable (segun autor) | Ilustracion anime, ecosistema muy amplio |
-| LoRA de personaje sobre FLUX.1-dev | LoRA de personaje | FLUX.1-dev | variable (base no comercial) | Ilustracion anime con mayor fidelidad a prompts |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MOSS-Image-Kei | LoRA sobre difusión | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base de difusión | no disponible | no disponible | no disponible | Hugging Face |
+| LoRA de personaje típico (p. ej. en Civitai) | LoRA sobre SDXL/SD1.5 | variable | no aplica | variable | Civitai / HF |
 
-Comparado con LoRA equivalentes sobre SDXL o FLUX, este modelo se distingue por basarse en MOSS-Image-Base, un modelo base menos extendido, lo que limita la compatibilidad con herramientas de la comunidad pero ofrece licencia apache-2.0 sin restricciones comerciales. Datos de rendimiento comparativo: no disponible.
+No se dispone de datos de rendimiento comparativo (FID, CLIP score, etc.) para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Alcance muy limitado: el LoRA esta entrenado para un unico personaje; fuera de ese caso no aporta valor sobre el modelo base.
-- Sin documentacion tecnica: no se publican hiperparametros, dataset de entrenamiento ni recomendaciones de uso (peso del LoRA, pasos de inferencia, CFG), lo que obliga a prueba y error.
-- Riesgo de artefactos tipicos de difusion: los propios prompts negativos del autor (manos o brazos extra, anatomia distorsionada, texto fuera de marco) indican sensibilidad a estos fallos.
-- Personaje con derechos: Tendou Kei es un personaje de Blue Archive (Nexon / Nexon Games); el uso comercial de imagenes del personaje puede infringir derechos de propiedad intelectual aunque el codigo del LoRA sea apache-2.0. La licencia apache-2.0 cubre el adaptador, no los contenidos generados ni los derechos sobre el personaje.
-- Popularidad muy baja (27 descargas), por lo que no existe retroalimentacion comunitaria que valide su calidad.
-- Los prompts de ejemplo estan en ingles; el comportamiento con prompts en otros idiomas no esta documentado.
+- Especialización muy estrecha: el LoRA está entrenado para un personaje concreto y un estilo de verano; fuera de ese dominio puede degradar la calidad o ignorar el prompt.
+- Riesgo de sobreajuste: al ser un LoRA de personaje, puede reproducir poses, composiciones o fondos del dataset de entrenamiento, limitando la variedad.
+- Sesgo de estilo: la paleta y la iluminación están sesgadas hacia azules, rosas y luz etérea; prompts que pidan atmósferas oscuras o realistas pueden no funcionar bien.
+- Alucinación visual: como todo modelo de difusión, puede generar anatomía incorrecta (manos, pies), halos deformados o texto ilegible, especialmente con prompts complejos.
+- Idiomas: no se documenta soporte multilingüe; los prompts de ejemplo están en inglés y no hay evidencia de buen rendimiento en castellano.
+- Licencia: Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base OpenMOSS-Team/MOSS-Image-Base, que no se detalla en la información disponible.
+- Falta de documentación técnica: no hay información sobre el dataset, los hiperparámetros ni las limitaciones declaradas por el autor, lo que dificulta evaluar su robustez en producción.
+- El modelo base puede tener sus propias restricciones de uso y sesgos no documentados aquí.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Te2douNin9/MOSS-Image-Kei
+- Hugging Face: https://huggingface.co/Te2douNin9/MOSS-Image-Kei
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Paper, blog o demo: no disponible
+- Librería diffusers: https://github.com/huggingface/diffusers
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

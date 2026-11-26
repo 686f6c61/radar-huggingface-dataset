@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SOMA-S1 es un modelo de lenguaje de tipo fundacional (base, no instruido) desarrollado por Boore y orientado especificamente al idioma somali. Se presenta como un esfuerzo experimental para dotar a una lengua con escasa representacion en la investigacion moderna de IA de una base de modelado propia, entrenada desde cero en lugar de adaptar un checkpoint existente. El modelo emplea una arquitectura Transformer decoder-only con atencion de latencia multi-cabeza (MLA) y una capa feed-forward de mezcla de expertos (MoE) dispersa, con 18 expertos enrutados y uno compartido por capa, activando dos expertos enrutados por token.
+SOMA-S1 es un modelo de lenguaje base (foundation model) desarrollado por Boore bajo el seudónimo boore1, diseñado específicamente para el idioma somalí. Se trata de un transformer decoder-only con arquitectura de mezcla de expertos dispersa (MoE) y atención latente multi-cabeza (MLA), preentrenado desde cero sobre un corpus dedicado al somalí en lugar de adaptarse a partir de un checkpoint existente. El modelo tiene 126,19 millones de parámetros totales y 69,57 millones de parámetros activos por token, con una ventana de contexto de 2.048 tokens.
 
-Con aproximadamente 126,19 millones de parametros totales y 69,57 millones activos por token, SOMA-S1 se situa en la categoria de modelos pequenos, disenado para investigacion y experimentacion mas que para produccion. Su contexto maximo es de 2.048 tokens y su tokenizador es un BPE a nivel de byte con vocabulario de 60.000 tokens, entrenado especificamente para somali. La licencia Apache-2.0 facilita su reutilizacion y estudio.
+El modelo aborda la infrarrepresentación del somalí en la investigación moderna de IA y en el desarrollo de modelos de lenguaje a gran escala. Para ello emplea un tokenizador propio de 60.000 tokens, un corpus centrado en somalí y una arquitectura neuronal personalizada. Es un modelo de investigación en fase temprana, no un asistente conversacional: está entrenado para continuar texto, no para seguir instrucciones.
 
-El modelo se publica como una "research preview" y el propio autor advierte de que es un modelo base, no un asistente conversacional: genera continuaciones de texto y su calidad actual es limitada, con tendencia a la repeticion tras unas 10-20 tokens en decodificacion voraz. Es relevante ahora como referencia temprana para el desarrollo de PLN en somali y como ejemplo de arquitectura MoE+MLA de escala reducida.
+SOMA-S1 es relevante como esfuerzo experimental para establecer capacidades de modelado fundamentales para el somalí, un idioma con escasa cobertura en los grandes modelos multilingües. Su licencia Apache-2.0 y su reducido tamaño lo hacen accesible para experimentación, aunque su calidad de generación es todavía limitada.
 
 ## Especificaciones tecnicas
 
@@ -14,39 +14,39 @@ El modelo se publica como una "research preview" y el propio autor advierte de q
 |---|---|
 | Arquitectura | Transformer decoder-only con MoE dispersa y Multi-head Latent Attention (MLA) |
 | Parametros totales | 126,19 millones |
-| Parametros activos | 69,57 millones por token (incluye parametros no enrutados y 2 expertos enrutados por capa) |
+| Parametros activos | 69,57 millones por token (top-2 expertos enrutados + experto compartido) |
 | Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP32; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Somali (so) |
+| Tipos de cuantizacion | No disponible (pesos publicados en FP32; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Somalí (so) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (FP32) |
+| Formato de pesos | safetensors (FP32), transformers |
 
 ## Arquitectura y entrenamiento
 
-SOMA-S1 es un Transformer decoder-only con atencion de latencia multi-cabeza (MLA), que comprime la representacion latente de claves y valores (rango KV latente de 128) y de queries (rango Q latente de 128), con dimensiones de cabeza QK sin PE de 32, QK con RoPE de 32 y V de 64. La capa feed-forward es una mezcla de expertos dispersa con 18 expertos enrutados y 1 compartido por capa, activando 2 expertos enrutados por token; el tamano intermedio de cada experto es de 128. El modelo tiene 12 capas, dimension oculta de 768, 12 cabezas de atencion, normalizacion RMSNorm, activacion SiLU, codificacion posicional RoPE (theta = 10.000) y embeddings atados. El vocabulario es de 60.000 tokens con tokenizador BPE a nivel de byte personalizado.
+SOMA-S1 es un transformer decoder-only autorregresivo. Su atención emplea Multi-head Latent Attention (MLA) con representación latente comprimida de clave-valor (rango latente KV de 128, rango latente Q de 128), 12 cabezas de atención, dimensión de cabeza QK sin PE de 32, dimensión de cabeza QK con RoPE de 32 y dimensión de cabeza V de 64. La codificación posicional usa RoPE con θ = 10.000. La dimensión oculta es 768, con 12 capas, normalización RMSNorm, activación SiLU y embeddings atados.
 
-El entrenamiento se realizo desde cero sobre el Somali NLP Corpus de SOMAST, con empaquetado de secuencias, longitud de secuencia de 2.048 tokens, precision mixta BF16, entrenamiento distribuido en 2 GPUs NVIDIA con DDP, acumulacion de gradientes y planificacion de tasa de aprendizaje coseno. No se documenta el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO (al ser un modelo base, no se espera alineacion por preferencias). El autor senala que el corpus requiere mejoras en cobertura, diversidad linguistica, calidad y representatividad.
+La capa feed-forward es una mezcla de expertos con 18 expertos enrutados y 1 experto compartido por capa; se seleccionan 2 expertos enrutados por token además del compartido. El tamaño intermedio de cada experto MoE es 128, y los expertos enrutados activos suman aproximadamente 7,08 millones de parámetros en las 12 capas. El vocabulario es de 60.000 tokens con un tokenizador BPE byte-level personalizado.
+
+El entrenamiento se realizó desde cero sobre el Somali NLP Corpus de SOMAST, con empaquetado de secuencias, longitud de 2.048 tokens, precisión mixta BF16, entrenamiento distribuido en 2 GPUs NVIDIA con Distributed Data Parallel (DDP), acumulación de gradientes y planificación de tasa de aprendizaje coseno. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF/DPO (es un modelo base, no instruction-tuned).
 
 ## Capacidades
 
-- Generacion de texto en somali: continuacion de texto autoregresiva, propia de un modelo base.
-- Modelado de lenguaje: util para investigacion en PLN del somali y como base para fine-tuning.
-- Razonamiento, codigo y matematicas: no disponible; no se documentan capacidades especificas ni evaluaciones.
-- Tool calling / function calling: no soportado de forma nativa (modelo base sin instruccion).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al somali; no se documenta soporte de otros idiomas.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles.
-- Contexto: ventana de 2.048 tokens, adecuada solo para textos cortos.
+- Generación de texto en somalí mediante continuación de texto (modelo base, no sigue instrucciones).
+- Modelado de lenguaje y experimentación sobre arquitecturas MoE y MLA en un idioma de bajos recursos.
+- Tokenizador específico para somalí con vocabulario de 60.000 tokens.
+- No dispone de tool calling ni function calling documentados.
+- No dispone de capacidades de agente ni razonamiento multi-paso documentadas.
+- Capacidad multilingüe limitada al somalí.
+- No se documentan modos especiales (thinking, visión, audio).
 
 ## Casos de uso
 
-- Investigacion en PLN para somali: servir como punto de partida para estudiar tokenizacion, arquitectura MoE+MLA y comportamiento de modelos pequenos en una lengua de bajos recursos.
-- Fine-tuning supervisado: usar los pesos base para adaptarlos a tareas concretas (clasificacion, extraccion, resumen) con datasets anotados en somali.
-- Experimentacion con arquitecturas MoE: comparar el comportamiento de una MoE dispersa de 126 M de parametros con alternativas densas en tareas de modelado de lenguaje.
-- Generacion de texto asistida en entornos de investigacion: completar fragmentos cortos en somali para estudiar coherencia, repeticion y sesgos del corpus.
-- Educacion y docencia: ejemplo practico de entrenamiento desde cero, pipeline de datos, empaquetado de secuencias y entrenamiento distribuido en pocas GPUs.
-- Desarrollo de tokenizadores y recursos linguisticos: reutilizar el tokenizador BPE de 60.000 tokens para otros proyectos en somali.
-- Evaluacion de calidad de corpus: emplear las limitaciones observadas (repeticion, incoherencia) como senal para mejorar la curación del Somali NLP Corpus.
+- Investigación en modelado de lenguas de bajos recursos: servir como punto de partida para estudiar cómo se comportan arquitecturas MoE y MLA en somalí con un corpus dedicado.
+- Experimentación académica con tokenizadores específicos: evaluar el impacto de un BPE byte-level de 60.000 tokens entrenado para somalí frente a tokenizadores multilingües genéricos.
+- Fine-tuning supervisado para tareas downstream: al ser un modelo base con licencia Apache-2.0, puede adaptarse con SFT para clasificación de texto, etiquetado o generación acotada en somalí.
+- Evaluación comparativa de arquitecturas eficientes: su relación de 126,19 M totales frente a 69,57 M activos permite estudiar el equilibrio entre capacidad y coste computacional en GPUs modestas.
+- Generación de texto exploratoria en somalí: útil para análisis lingüístico y creación de datasets sintéticos preliminares, siempre con revisión humana por la baja coherencia.
+- Reproducción de pipelines de preentrenamiento: el modelo documenta un flujo completo (tokenizador, empaquetado de secuencias, BF16, DDP en 2 GPUs) replicable para otros idiomas de bajos recursos.
 
 ## Benchmarks y rendimiento
 
@@ -54,33 +54,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de 126,19 M de parametros en FP32, los pesos ocupan aproximadamente 0,5 GB; en BF16/FP16 serian unos 0,25 GB, y en cuantizaciones de 8 bits o 4 bits, menos de 0,15 GB (estimaciones teoricas, no documentadas por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien cabe en CPU.
-- Cabe en GPU consumer: si, con amplio margen, incluso en GPUs de gama baja o en modo CPU.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference y endpoints compatibles segun los tags; no se documentan variantes GGUF para llama.cpp/Ollama.
-- Latencia y throughput estimados: no disponibles; el modelo es muy pequeno, por lo que la latencia deberia ser baja, pero no se aportan mediciones.
+- VRAM estimada para inferencia: los pesos en FP32 ocupan aproximadamente 505 MB; en BF16/FP16 serían unos 252 MB, y en cuantización de 8 bits alrededor de 126 MB. La VRAM real necesaria es mayor por el estado de activaciones y la caché KV, pero el modelo cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; se ha entrenado en 2 GPUs NVIDIA sin especificar modelo. Para inferencia, una RTX 3060, RTX 4090 o incluso una GPU integrada con suficiente memoria pueden servir.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU consumer modernas.
+- Opciones de despliegue: transformers (soporte nativo, `model_type: deepseek_v2`), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en Hugging Face). No se documentan variantes GGUF para llama.cpp u Ollama.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Enfoque |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Idiomas |
 |---|---|---|---|---|---|
-| SOMA-S1 | 126,19 M | 69,57 M | 2.048 | Apache-2.0 | Somali, MoE + MLA, base |
-| Modelos multilingues pequenos tipo Qwen2.5-0.5B | ~500 M | denso | 32.768 | Apache-2.0 | Multilingue, instruido |
-| Modelos tipo TinyLlama-1.1B | ~1,1 B | denso | 2.048 | Apache-2.0 | Ingles, base/instruido |
+| SOMA-S1 | 126,19 M | 69,57 M | 2.048 | Apache-2.0 | Somalí |
+| Modelos multilingües pequeños (p. ej. familia Qwen2.5-0.5B) | ~500 M | No aplica (denso) | 32.768 | Apache-2.0 | Multilingüe |
+| Modelos base de bajos recursos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de comparaciones directas con modelos especializados en somali en la informacion proporcionada; los modelos de la tabla son referencias genericas de escala y no se han evaluado frente a SOMA-S1.
+No se dispone de benchmarks publicados que permitan una comparación cuantitativa de rendimiento con alternativas. La comparativa se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base, no un asistente: no sigue instrucciones ni responde preguntas de forma fiable.
-- Calidad de generacion limitada: el autor advierte de repeticion tras aproximadamente 10-20 tokens en decodificacion voraz.
-- Coherencia, precision factual y generacion de texto largo deficientes segun la propia model card.
-- Contexto maximo de solo 2.048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Entrenado unicamente en somali; no se documenta soporte de otros idiomas.
-- Corpus de entrenamiento con limitaciones de cobertura, diversidad y calidad; posibles sesgos derivados de las fuentes.
-- Riesgo de alucinacion elevado por tratarse de un modelo pequeno y poco entrenado.
-- Licencia Apache-2.0 permite uso comercial, pero la calidad actual no lo hace recomendable para produccion.
-- Estado de "research preview": no apto para despliegues criticos sin validacion adicional.
+- Es un modelo base, no un asistente conversacional: no sigue instrucciones ni responde preguntas de forma fiable.
+- Baja coherencia textual, precisión factual limitada y tendencia a la repetición, que aparece a menudo tras unos 10-20 tokens generados con decodificación greedy.
+- Generación de texto largo deficiente.
+- Corpus de entrenamiento con cobertura, diversidad lingüística, calidad y representatividad del somalí que requieren mejora.
+- Ventana de contexto corta (2.048 tokens), insuficiente para documentos largos.
+- Riesgo de sesgos derivados de las fuentes del corpus, no evaluado ni documentado.
+- Riesgo de alucinación elevado por el estado temprano del modelo.
+- Licencia Apache-2.0 permite uso comercial, pero la calidad actual desaconseja su uso en producción sin fine-tuning y validación previas.
+- No se documentan evaluaciones de seguridad ni de sesgo.
 
 ## Enlaces
 

@@ -2,92 +2,89 @@
 
 ## Resumen
 
-Qwen3.5-4B-Code-GGUF es una publicacion de pesos cuantizados en formato GGUF de un modelo de la familia Qwen3.5, etiquetado por su autor como orientado a codigo. La publica el usuario `reaperdoesntknow` en Hugging Face y no se trata de un lanzamiento oficial de Alibaba/Qwen, sino de una exportacion derivada. El repositorio incluye tres cuantizaciones del modelo de lenguaje (Q4_0, Q4_K_M y Q8_0) y un proyector multimodal en BF16, lo que confirma que el modelo base es de tipo vision-language. Segun el `config.json` incluido, la arquitectura declarada es `Qwen3_5ForConditionalGeneration`, con componentes de texto y vision, y el modelo de texto esta configurado en bfloat16.
+reaperdoesntknow/qwen3.5-4B-Code-GGUF es una publicación de pesos en formato GGUF derivada de un modelo Qwen3.5 de 4B orientado a código, distribuida por el usuario reaperdoesntknow. El repositorio contiene tres cuantizaciones del modelo de lenguaje (Q4_0, Q4_K_M y Q8_0) y un proyector multimodal BF16 (mmproj), lo que indica que el checkpoint de origen es un modelo conditional generation con componentes de texto y visión (Qwen3_5ForConditionalGeneration). El modelo cuenta con 4.326.350.848 parámetros totales según los safetensors del checkpoint asociado.
 
-El modelo cuenta con 4.326.350.848 parametros totales, lo que lo situa en la gama de 4B, un tamano adecuado para inferencia local en GPU de consumo y en CPU mediante llama.cpp. Su relevancia practica radica en que permite ejecutar un modelo conversacional con capacidad de vision y orientacion a codigo en hardware modesto, usando el ecosistema GGUF y runtimes compatibles. La conversion se realizo, segun la model card, con Unsloth.
+La relevancia de esta ficha es doble: por un lado, ofrece una vía práctica para ejecutar localmente un modelo Qwen3.5 de 4B con capacidades multimodales mediante llama.cpp; por otro, la propia model card es explícita sobre las carencias de documentación: no se declara licencia, no se identifica la revisión exacta del checkpoint de origen, no hay benchmarks de código ni comparación entre cuantizaciones. Todo uso en producción debe partir de esa base de incertidumbre.
 
-La informacion publicada es limitada: no se documentan datos de entrenamiento, benchmarks, evaluacion de seguridad ni comparacion entre cuantizaciones. La model card advierte explicitamente de que el nombre "Code" y una conversion correcta no garantizan mejor capacidad de programacion. Esta ficha refleja unicamente lo verificable en la informacion disponible.
+La información disponible no permite confirmar mejoras específicas en código respecto al modelo base pese al sufijo "Code" del nombre, ni verificar el rendimiento multimodal. Se trata, por tanto, de un artefacto para experimentación local y evaluación, no de una release con garantías documentadas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer con componentes de texto y vision) |
-| Parametros totales | 4.326.350.848 |
-| Parametros activos | no disponible (no se declara que sea MoE) |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer con componentes de texto y visión) |
+| Parámetros totales | 4.326.350.848 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_0, Q4_K_M, Q8_0 (modelo de lenguaje); proyector multimodal en BF16 |
+| Tipos de cuantización | Q4_0, Q4_K_M, Q8_0 (modelo de lenguaje); BF16 para el proyector multimodal |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (los metadatos GGUF no declaran licencia ni modelo base) |
-| Formato de pesos | GGUF (llama.cpp); config de texto en bfloat16 |
-| Tamano del repositorio | 10,7 GB |
-| Preprocesador multimodal | Qwen3.5-4B.BF16-mmproj.gguf (proyector separado, no es modelo autonomo) |
+| Licencia | no disponible (los metadatos GGUF no la declaran) |
+| Formato de pesos | GGUF (llama.cpp); proyector mmproj en BF16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada en el `config.json` es `Qwen3_5ForConditionalGeneration`, un modelo condicional con dos componentes: un modulo de texto y un modulo de vision. El componente de texto esta configurado en bfloat16, aunque esa precision describe la configuracion original y no la precision de almacenamiento de los ficheros GGUF cuantizados. El repositorio incluye un proyector multimodal independiente en BF16, lo que confirma el caracter vision-language del modelo, aunque la model card no detalla como se combinan las representaciones visuales con el modelo de lenguaje ni el numero de tokens de imagen.
+El config.json incluido identifica la clase Qwen3_5ForConditionalGeneration, con un componente de texto configurado en bfloat16 y un componente de visión. El repositorio publica el modelo de lenguaje en tres cuantizaciones GGUF y, por separado, un proyector multimodal BF16 (Qwen3.5-4B.BF16-mmproj.gguf) que debe emparejarse con el modelo principal para entradas de imagen; el proyector no es un modelo autónomo. La conversión se realizó, según la card original, con Unsloth.
 
-No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La model card indica que la conversion se hizo con Unsloth, pero no identifica la revision exacta del checkpoint de origen, el comando de conversion ni la version de la herramienta de cuantizacion, por lo que no se puede afirmar una relacion de conversion exacta con ningun checkpoint concreto. Tampoco se documenta ninguna evaluacion de calidad comparando las tres cuantizaciones.
+No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO ni innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.). Tampoco se identifica la revisión exacta del checkpoint de origen, el comando de conversión ni la versión de la herramienta de cuantización, por lo que no puede afirmarse una relación de conversión exacta con ningún checkpoint concreto. El campo bfloat16 del config describe la configuración del texto, no la precisión de almacenamiento de los ficheros GGUF cuantizados.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
-- Procesamiento de imagenes: el repositorio incluye un proyector multimodal (`BF16-mmproj.gguf`) que, junto con el modelo de lenguaje, habilita entradas de vision en runtimes compatibles.
-- Orientacion a codigo por nombre del modelo, aunque no se aporta ninguna evaluacion que lo respalde.
-- Compatibilidad con `llama.cpp` y con el ecosistema de herramientas GGUF, incluyendo `llama-cli` y `llama-mtmd-cli` con `--jinja` segun los ejemplos de la model card original.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags).
-- No se documenta soporte de tool calling, function calling, agentes, modo thinking ni capacidades de audio.
-- Capacidades multilingues: no disponibles.
+- Generación de texto conversacional en formato de chat (tag "conversational").
+- Generación de código, presumiblemente orientada por el sufijo "Code" del nombre, aunque sin benchmark publicado que lo respalde.
+- Entrada de imágenes mediante el proyector multimodal BF16 emparejado con el modelo principal, en runtimes que soporten mtmd.
+- Compatibilidad declarada con endpoints (tag "endpoints_compatible"), lo que sugiere uso tras una API compatible con el runtime.
+- Ejecución local mediante llama.cpp y llama-cpp.
+- No se documentan capacidades de tool calling, function calling, agentes, modo thinking ni soporte de audio.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- Experimentacion local con modelos vision-language: permite probar entradas de imagen y texto en un equipo de consumo usando `llama-mtmd-cli` y el proyector BF16, sin depender de APIs externas.
-- Asistencia de programacion en local: el modelo puede usarse como ayuda para autocompletar o explicar fragmentos de codigo en un entorno de desarrollo integrado, con la advertencia de que la calidad de codigo no esta evaluada y requiere revision humana.
-- Prototipado de asistentes conversacionales: su etiqueta `conversational` y su tamano de 4B permiten montar un chatbot de prueba en una estacion de trabajo para validar flujos de producto antes de escalar a modelos mayores.
-- Evaluacion comparativa de cuantizaciones: al ofrecer Q4_0, Q4_K_M y Q8_0 del mismo modelo, sirve para medir en primera persona el impacto de la cuantizacion en calidad y velocidad sobre el hardware propio.
-- Procesamiento de documentos con imagenes: con el proyector multimodal se pueden probar tareas de descripcion de capturas, diagramas o capturas de pantalla en un pipeline local de preprocesamiento.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse integramente en local mediante llama.cpp, es apto para escenarios donde no se permite enviar datos a servicios en la nube, siempre que se revise antes la licencia del modelo base.
-- Educacion y divulgacion: util para demostrar el funcionamiento de modelos GGUF y de la inferencia multimodal en talleres o cursos, dado su bajo requisito de hardware en cuantizacion Q4.
+- Experimentación local con modelos de 4B: cargar Q4_K_M en llama.cpp para probar generación de texto en un equipo de sobremesa, aprovechando que el tamaño cuantizado cabe en memoria de GPU de consumo.
+- Evaluación de cuantizaciones: comparar las salidas de Q4_0, Q4_K_M y Q8_0 sobre el mismo conjunto de prompts para medir la degradación introducida por la cuantización antes de fijar un fichero en producción.
+- Asistencia de código en local con revisión humana obligatoria: usar el modelo para autocompletar o explicar fragmentos en un editor integrado vía llama.cpp, con tests automáticos que validen cualquier código generado antes de ejecutarlo.
+- Prototipado multimodal: emparejar el modelo con el mmproj BF16 en llama-mtmd-cli para experimentar con consultas sobre imágenes en local, sin enviar datos a servicios externos.
+- Despliegue en entornos con requisitos de privacidad: ejecutar la inferencia en máquinas propias para procesar código o documentación sensible que no puede salir de la red corporativa.
+- Base para fine-tuning o destilación: servir como punto de partida en experimentos de ajuste sobre código, dado que el formato GGUF puede reconvertirse o complementarse con el checkpoint Transformers relacionado.
+- Docencia y formación: demostrar en un taller el flujo completo de descarga, carga en llama.cpp y ejecución de un modelo Qwen3.5 cuantizado con soporte de visión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no incluye benchmark de codigo, comparacion entre cuantizaciones ni evaluacion de seguridad.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no incluye documentación de datos de entrenamiento, benchmark de código, comparación entre cuantizaciones ni evaluación de seguridad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; la model card no documenta requisitos de memoria. Como referencia orientativa basada en el numero de parametros (4,33B), la cuantizacion Q4_0 y Q4_K_M ocupan del orden de 2,5-3 GB en pesos, Q8_0 del orden de 4,5-5 GB, y el proyector BF16 anade una cantidad adicional no especificada. Estas cifras son estimaciones por tamano, no medidas publicadas.
-- GPU recomendadas: no disponibles. Por tamano, el modelo es apto para GPU de consumo con 8 GB o mas de VRAM en cuantizaciones Q4; Q8_0 requiere mas margen.
-- Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM en Q4, aunque no hay medicion oficial.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`), y runtimes GGUF compatibles con Qwen3.5. La model card no confirma soporte de vLLM, TGI u Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no documentada por el autor. Como referencia orientativa por tamaño de fichero, Q4_0 y Q4_K_M de un modelo de 4B suelen ocupar del orden de 2,5-3 GB y Q8_0 del orden de 4,5 GB, más overhead de contexto y, en su caso, el proyector multimodal; el autor no publica requisitos de memoria específicos.
+- GPU recomendadas: no disponible en la información proporcionada; no se han realizado pruebas de humo de inferencia documentadas para estas exportaciones.
+- GPU de consumo: por el tamaño del modelo (4B) y las cuantizaciones publicadas, es plausible que quepa en GPU de consumo con suficiente VRAM, pero no hay confirmación empírica en la card.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-mtmd-cli para multimodal) y runtimes GGUF que soporten explícitamente Qwen3.5. El soporte exacto de comandos depende de la revisión del runtime instalado.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo ni de especificaciones verificables de alternativas comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. A continuacion se indican unicamente los datos estructurales conocidos frente a la referencia interna del propio autor.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Code-GGUF (este) | 4,33B | no disponible | GGUF | no disponible | Vision-language, tres cuantizaciones |
-| Qwen3.5-4B-Coder | no disponible | no disponible | Transformers | no disponible | Repositorio relacionado citado en la model card |
-| Alternativas de 4B de otras familias | no disponible | no disponible | no disponible | no disponible | Sin datos verificables en la informacion disponible |
+| reaperdoesntknow/qwen3.5-4B-Code-GGUF | 4,33B | no disponible | no disponible | GGUF + mmproj BF16 | Cuantizaciones Q4_0, Q4_K_M, Q8_0; sin benchmarks publicados |
+| Qwen3.5-4B-Coder (reaperdoesntknow) | no disponible | no disponible | no disponible | Transformers | Repositorio relacionado citado en la card; relación exacta no confirmada |
+| Alternativas de 4B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
+
+No se dispone de datos suficientes para una comparativa cuantitativa con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en los metadatos GGUF ni en la model card. Antes de redistribuir o usar comercialmente hay que confirmar los terminos del modelo de origen.
-- No se identifica el checkpoint fuente exacto, el comando de conversion ni la version de la herramienta de cuantizacion, por lo que la trazabilidad es incompleta.
-- No hay benchmarks ni evaluacion de seguridad: el nombre "Code" no garantiza mejor rendimiento en programacion.
-- El codigo generado puede contener errores o vulnerabilidades; debe revisarse y probarse antes de ejecutarlo.
-- No se deben exponer secretos ni sistemas de produccion a codigo generado sin revision.
-- La cuantizacion altera las salidas; hay que evaluar el fichero y el runtime concretos que se vayan a usar.
-- El proyector multimodal no sustituye al modelo de lenguaje: es necesario cargar ambos ficheros para entradas de imagen.
-- No se documentan sesgos conocidos, limitaciones de contexto ni cobertura idiomatica.
-- Se desconoce el soporte real de tool calling y de flujos de agente.
-- El repositorio tiene 0 likes y 2147 descargas en el momento de la consulta, lo que sugiere una adopcion limitada y poca validacion comunitaria.
+- Licencia no declarada: los metadatos GGUF no incluyen licencia ni modelo base; debe confirmarse los términos del modelo de origen antes de redistribuir o usar comercialmente.
+- Sin benchmarks: el nombre "Code" no demuestra mejor capacidad de código ni rendimiento multimodal probado.
+- Sin evaluación de seguridad ni documentación de datos de entrenamiento.
+- Riesgo de código erróneo o vulnerable: revisar y testear cualquier código generado antes de ejecutarlo; no exponer secretos ni sistemas de producción a código no revisado.
+- La cuantización altera las salidas: evaluar el fichero y el runtime exactos que se vayan a usar.
+- El proyector mmproj no sustituye al modelo principal y requiere un runtime multimodal compatible.
+- No se documentan sesgos conocidos, limitaciones de contexto ni cobertura de idiomas.
+- La revisión exacta del checkpoint de origen no está identificada, lo que dificulta la trazabilidad y la reproducibilidad.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF
-- Repositorio relacionado en Transformers: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
-- Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
-- llama.cpp (documentacion oficial): https://github.com/ggml-org/llama.cpp
-- Documentacion multimodal de llama.cpp: https://github.com/ggml-org/llama.cpp/tree/master/tools/mtmd
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF
+- Ficheros del repositorio: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF/tree/main
+- Repositorio Transformers relacionado: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
+- Unsloth: https://github.com/unslothai/unsloth
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Documentación multimodal de llama.cpp: https://github.com/ggml-org/llama.cpp/tree/master/tools/mtmd

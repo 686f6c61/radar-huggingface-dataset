@@ -51,5 +51,31 @@
   "renamed_to": "impresso-project/mmbert-impresso-mediaagencies-ner",
   "renamed_at": "2026-11-23T08:49:06.248Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Impresso",
+      "url": "https://impresso.com/",
+      "snippet": "Copyright © 2026 Impresso Design Inc. All rights reserved. 1111B S Governors Ave, STE 37647, Dover, DE 19904, United States +1 …Read more"
+    },
+    {
+      "title": "Impresso",
+      "url": "https://impresso.com/use-cases",
+      "snippet": "Discover how Impresso can enhance your work. Create professional photoshoots, generate realistic AI Backgrounds and create …Read more"
+    },
+    {
+      "title": "Impresso - Video & Logo Maker – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pixery.impresso&hl=fr",
+      "snippet": "Que vous lanciez une entreprise, réorganisiez votre marque ou amélioriez votre présence sur les réseaux sociaux, les outils …Read more"
+    },
+    {
+      "title": "Impresso",
+      "url": "https://app.impresso.com/",
+      "snippet": "Impresso ... AI-Product"
+    },
+    {
+      "title": "Impresso - Video & Logo Maker - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pixery.impresso&hl=en-US",
+      "snippet": "Unlike other tools, Impresso combines the power of AI-powered design with user-friendly features. Whether you need a brand logo or …Read more"
+    }
+  ]
 }

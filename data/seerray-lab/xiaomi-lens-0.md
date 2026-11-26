@@ -2,54 +2,62 @@
 
 ## Resumen
 
-Xiaomi-Lens-0 es un modelo multimodal de lenguaje de 4B parámetros desarrollado por SeerRay-Lab, construido mediante fine-tuning sobre Qwen3.5-4B. Su particularidad es que incorpora un decodificador ligero de máscaras de píxeles que se activa cada vez que el modelo emite el token especial `<|mask|>`, permitiendo que cada región identificada en el texto se traduzca en una máscara de segmentación real. Esto unifica en un solo modelo la comprensión de expresiones referenciales, la segmentación y el razonamiento visual.
+Xiaomi-Lens-0 es un modelo de lenguaje multimodal de 4B parametros desarrollado por Xiaomi Research (publicado en el repositorio de Hugging Face bajo el espacio SeerRay-Lab) y construido como un fine-tuning de Qwen3.5-4B. Su rasgo diferencial es que anade un decodificador ligero de mascaras de pixeles y se entrena con supervision conjunta de lenguaje y mascaras: cada token especial `<|mask|>` que genera el modelo identifica una region de la imagen que el decodificador convierte en una mascara de segmentacion. Esto le permite resolver tareas de comprension y segmentacion de expresiones referidas, grounding multi-instancia, segmentacion con razonamiento y percepcion visual de grano fino dentro de una misma conversacion.
 
-El modelo está diseñado para tareas de *visual grounding* de grano fino: desde la comprensión de expresiones referenciales (REC) hasta la segmentación por expresión referencial (RES), el grounding multi-instancia, la segmentación con razonamiento y el *embodied referring*. A diferencia de pipelines que encadenan un detector y un segmentador, Xiaomi-Lens-0 genera las máscaras de forma nativa durante la decodificación, lo que simplifica la arquitectura de despliegue.
+El modelo esta pensado para escenarios donde no basta con describir una imagen, sino que hay que localizar y segmentar objetos concretos a partir de instrucciones en lenguaje natural, incluyendo cadenas de razonamiento intermedias. Con 4.622 millones de parametros y un tamano de repositorio de 9,4 GB, se posiciona como una alternativa ligera frente a modelos de segmentacion multimodal de mayor tamano, y su licencia Apache 2.0 facilita el uso comercial.
 
-Con 4.622.144.192 parámetros y pesos en safetensors (9,3 GB de repositorio), se posiciona como una alternativa compacta a modelos de segmentación multimodal de mayor tamaño. Su licencia Apache-2.0 y su compatibilidad con `transformers` lo hacen atractivo para integración en producción, aunque requiere el paquete de código específico del autor para decodificar las máscaras.
+Su relevancia actual radica en la integracion de grounding visual y segmentacion directamente en el bucle generativo del modelo de lenguaje, sin necesidad de un pipeline separado de deteccion o segmentacion. El modelo se distribuye con pesos en safetensors, configuracion, tokenizer, processor y chat template, y requiere la clase `XiaomiLensQwen3_5ForConditionalGeneration` del repositorio de codigo acompanante para cargar los pesos y decodificar las mascaras.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Qwen3.5-4B) con decodificador ligero de máscaras de píxeles |
+| Arquitectura | Transformer multimodal (base Qwen3.5-4B) con decodificador ligero de mascaras de pixeles |
 | Parametros totales | 4.622.144.192 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Tamano del repositorio | 9,4 GB |
+| Modelo base | Qwen/Qwen3.5-4B |
+| Libreria | transformers |
+| Pipeline | image-text-to-text |
+| Fecha de creacion | 2026-10-19 |
+| Ultima actualizacion | 2026-11-25 |
+| Descargas | 842 |
+| Likes | 33 |
 
 ## Arquitectura y entrenamiento
 
-Xiaomi-Lens-0 parte de Qwen3.5-4B, un transformer multimodal de 4B parámetros, y le añade un decodificador ligero de máscaras de píxeles. El entrenamiento combina supervisión conjunta de lenguaje y de máscaras: cada token `<|mask|>` generado por el modelo identifica una región de la imagen que el decodificador convierte en una máscara de segmentación. Esta formulación permite que el modelo produzca máscaras tanto en la respuesta final como durante el razonamiento intermedio.
+Xiaomi-Lens-0 parte de Qwen3.5-4B, un transformer de 4B parametros, y le incorpora un decodificador ligero de mascaras de pixeles. El entrenamiento combina supervision de lenguaje y de mascaras de forma conjunta: el modelo aprende a emitir tokens `<|mask|>` alineados con regiones de la imagen, y el decodificador transforma cada uno de esos tokens en una mascara de segmentacion. Las mascaras pueden aparecer tanto en la respuesta final como durante el razonamiento intermedio, lo que habilita la segmentacion con razonamiento.
 
-La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales como decodificación especulativa o atención lineal. La innovación principal documentada es el acoplamiento entre la generación de tokens de máscara y el decodificador de segmentación, que permite segmentación nativa sin componentes externos.
+La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales como decodificacion especulativa o atencion lineal. La informacion tecnica completa se remite al informe tecnico en arXiv (2610.23279) y al repositorio de codigo del proyecto.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal sobre imágenes.
-- Comprensión de expresiones referenciales (REC): localizar objetos descritos en lenguaje natural.
-- Segmentación por expresión referencial (RES): generar máscaras de píxeles para objetos descritos textualmente.
-- Grounding multi-instancia: identificar y segmentar varias instancias de una misma categoría o descripción.
-- Segmentación con razonamiento: producir máscaras durante el razonamiento intermedio, no solo en la respuesta final.
-- *Embodied referring*: referencias espaciales y deícticas en contextos de robótica o agentes embodied.
-- Percepción visual de grano fino: distinciones sutiles entre objetos similares (p. ej., «el segundo gajo de pomelo de izquierda a derecha»).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: parcial, limitado al razonamiento visual con emisión de máscaras.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo *thinking* explícito, visión, audio: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento multimodal sobre imagenes.
+- Comprension de expresiones referidas (referring expression comprehension): localizar el objeto descrito por una frase.
+- Segmentacion de expresiones referidas (referring expression segmentation): generar la mascara del objeto descrito.
+- Grounding multi-instancia: localizar y segmentar varias instancias en una misma imagen.
+- Segmentacion con razonamiento (reasoning segmentation): producir mascaras durante cadenas de razonamiento intermedias.
+- Embodied referring: referencias visuales orientadas a entornos embodied.
+- Percepcion visual de grano fino.
+- Generacion de mascaras tanto en la respuesta final como en el razonamiento.
+- Conversacion multi-turno con imagenes (pipeline image-text-to-text).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Anotación automática de datasets de segmentación: el modelo genera máscaras a partir de descripciones textuales, lo que permite crear datasets de RES/REC a escala sin anotadores humanos para cada píxel. Es adecuado por su decodificador de máscaras nativo y su licencia Apache-2.0.
-- Robótica y agentes embodied: el *embodied referring* permite que un agente identifique y segmente objetos referidos de forma deíctica («coge la taza que está a la izquierda del plato»), facilitando la manipulación guiada por lenguaje.
-- Edición de imágenes asistida por lenguaje: integrado en herramientas de edición, el modelo puede segmentar regiones descritas por el usuario («selecciona el gajo de pomelo») para aplicar máscaras de recorte o retoque.
-- Análisis de imágenes médicas o industriales: la percepción de grano fino y la segmentación con razonamiento permiten localizar lesiones o defectos descritos textualmente, siempre que se valide el dominio específico.
-- Moderación y análisis de contenido visual: segmentación multi-instancia para identificar objetos o personas en imágenes y aplicar políticas de contenido con trazabilidad por región.
-- Asistentes de accesibilidad: descripción y localización de objetos en imágenes para usuarios con discapacidad visual, con máscaras que permiten resaltar regiones concretas en la interfaz.
-- Búsqueda visual por descripción: indexar imágenes por regiones segmentadas a partir de descripciones naturales, mejorando la recuperación en catálogos de producto.
+- Anotacion automatica de datasets de segmentacion: dado un conjunto de imagenes y descripciones textuales, el modelo genera mascaras por instancia que pueden revisarse y servir como preanotacion, reduciendo el coste manual en pipelines de etiquetado.
+- Edicion de imagen asistida por lenguaje: el usuario describe la region a modificar ("el portatil con el cartel blanco") y el modelo devuelve la mascara exacta que un pipeline posterior puede usar para inpainting o reemplazo de fondo.
+- Robotica y navegacion embodied: el modelo puede resolver referencias como "el jugador que corre detras del pitcher" y devolver la region correspondiente, util para seleccionar objetivos de manipulacion o seguimiento en entornos fisicos.
+- Analisis de imagenes medicas o industriales asistido: la segmentacion de grano fino con razonamiento permite localizar estructuras concretas descritas por el operador y justificar la seleccion en la cadena de razonamiento.
+- Asistentes de accesibilidad: descripcion y localizacion de objetos en la escena para usuarios con discapacidad visual, indicando no solo que hay un objeto sino donde esta exactamente mediante la mascara.
+- Busqueda visual y recuperacion: indexar objetos segmentados por descripcion textual para busquedas del tipo "encuentra todas las tazas rojas" en catalogos o archivos fotograficos.
+- Control de calidad en retail o manufactura: verificar la presencia, posicion y estado de productos concretos mediante grounding multi-instancia sobre imagenes de linea de produccion.
 
 ## Benchmarks y rendimiento
 
@@ -57,37 +65,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 4.622.144.192 parámetros, en FP16 se requieren aproximadamente 9,2 GB solo para pesos; en BF16 similar. En cuantización de 8 bits, unos 4,6 GB; en 4 bits, unos 2,3 GB (estimaciones teóricas, no confirmadas por el autor).
-- GPU recomendadas: A100 40GB, H100, L40S para despliegue en FP16 con margen para el decodificador de máscaras y el procesador de imagen. RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes en FP16.
-- ¿Cabe en GPU de consumo? Sí, en RTX 4090/3090 en FP16; en RTX 4070 Ti (12 GB) o RTX 3060 (12 GB) probablemente requiera cuantización a 8 bits o 4 bits.
-- Opciones de despliegue: `transformers` con la clase `XiaomiLensQwen3_5ForConditionalGeneration` del repositorio de código del autor. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia en precision completa (BF16): aproximadamente 9,2 GB solo para pesos, mas memoria para activaciones y el decodificador de mascaras; se recomienda un minimo de 16 GB de VRAM.
+- VRAM estimada con cuantizacion de 8 bits: en torno a 5-6 GB para pesos; con 4 bits, en torno a 3-4 GB. Los formatos de cuantizacion concretos no estan documentados en la informacion disponible.
+- GPU recomendadas: A100, H100 o L40S para despliegue en produccion con alta concurrencia; RTX 4090 o RTX 3090 para desarrollo e inferencia individual.
+- GPU de consumo: el modelo deberia caber en GPUs consumer con 16 GB o mas (RTX 4080, RTX 4090) en BF16, y en GPUs de 8-12 GB con cuantizacion, aunque estos valores son estimaciones no verificadas por el autor.
+- Opciones de despliegue: la carga requiere la clase `XiaomiLensQwen3_5ForConditionalGeneration` del repositorio de codigo del proyecto, por lo que no es un modelo cargable directamente con pipelines genericos sin ese paquete. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta documentada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Segmentación nativa | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-Lens-0 | 4,62B | no disponible | Sí (decodificador de máscaras) | Apache-2.0 | Hugging Face, GitHub, demo |
-| Qwen3.5-4B (base) | 4B | no disponible | No | no disponible | Hugging Face |
-| Modelos de segmentación multimodal de mayor tamaño | no disponible | no disponible | Variable | no disponible | no disponible |
+| Xiaomi-Lens-0 | 4,62B | no disponible | Segmentacion y grounding multimodal | Apache 2.0 | Hugging Face, demo en Spaces |
+| Qwen3.5-4B (modelo base) | 4B | no disponible | Lenguaje multimodal general | no disponible | Hugging Face |
+| Alternativas de segmentacion multimodal de 4B | no disponible | no disponible | Segmentacion referida | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de comparativas de rendimiento con alternativas de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada que permitan una comparacion cuantitativa rigurosa. El modelo base Qwen3.5-4B es la referencia natural, pero Xiaomi-Lens-0 anade el decodificador de mascaras y el entrenamiento conjunto, por lo que no son directamente intercambiables en tareas de segmentacion.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al derivar de Qwen3.5-4B, puede heredar sesgos del corpus de entrenamiento del modelo base.
-- Riesgo de alucinación: presente en la generación de texto y en la localización de regiones; las máscaras pueden no corresponder a objetos reales si la descripción es ambigua.
-- Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no están documentados; no se garantiza un rendimiento multilingüe uniforme.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene verificar las obligaciones de atribución y las licencias de las dependencias del paquete de código.
-- Caveat de producción: la inferencia requiere instalar el paquete `Xiaomi-Lens-0` del autor para decodificar máscaras; no funciona solo con `transformers` estándar. La falta de soporte documentado para vLLM, TGI o llama.cpp limita el despliegue a gran escala.
-- El repositorio ocupa 9,3 GB, lo que implica requisitos de almacenamiento y transferencia considerables.
-- No se documentan procesos de RLHF/DPO ni evaluaciones de seguridad, por lo que se recomienda validación en el dominio de aplicación antes de producción.
+- La model card no documenta sesgos conocidos; al derivar de Qwen3.5-4B, hereda los sesgos del corpus de entrenamiento del modelo base, que no se detalla.
+- Riesgo de alucinacion en la identificacion de objetos: el modelo puede generar mascaras para regiones que no corresponden a la descripcion, especialmente en imagenes con muchos objetos similares o descripciones ambiguas.
+- No se especifican los idiomas soportados; la capacidad multilingue no esta confirmada y el rendimiento en castellano es desconocido.
+- La longitud de contexto no esta documentada, lo que impide planificar conversaciones multi-turno largas o imagenes de alta resolucion con garantias.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-4B tiene su propia licencia que conviene verificar antes de desplegar en produccion.
+- Requiere instalar el paquete de codigo acompanante para cargar los pesos y decodificar mascaras; no es compatible con pipelines genericos de transformers sin ese paso.
+- El modelo tiene solo 842 descargas y 33 likes, por lo que la validacion por parte de la comunidad es limitada.
+- No hay datos publicos de benchmarks en la informacion disponible, lo que dificulta evaluar su calidad frente a alternativas.
+- El decodificador de mascaras anade latencia y memoria respecto al modelo base; no se han publicado mediciones de throughput.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0
-- Página del proyecto: https://seerray-lab.github.io/Xiaomi-Lens-0/
-- Repositorio GitHub: https://github.com/SeerRay-Lab/Xiaomi-Lens-0
-- Informe técnico (arXiv): https://arxiv.org/abs/2610.23279
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/xiaomi-lens-0
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Demo online: https://huggingface.co/spaces/SeerRay-Lab/xiaomi-lens-0
+- Pagina del proyecto: https://xiaomi-research.github.io/xiaomi-lens-0/
+- Repositorio de codigo: https://github.com/xiaomi-research/xiaomi-lens-0
+- Informe tecnico en arXiv: https://arxiv.org/abs/2610.23279
+- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

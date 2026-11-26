@@ -41,11 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "USEN スピードテスト powered by USEN GATE 02 ...",
-      "url": "https://speedtest.gate02.ne.jp/",
-      "snippet": "速度測定や 速度診断を行います 「USEN スピードテスト」は、1クリックで簡単にインターネット通信速度を測定できます。"
-    }
-  ]
+  "sources": []
 }

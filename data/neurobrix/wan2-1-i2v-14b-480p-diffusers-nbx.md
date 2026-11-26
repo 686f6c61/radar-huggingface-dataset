@@ -2,86 +2,93 @@
 
 ## Resumen
 
-Wan2.1-I2V-14B-480P es un modelo de generación de vídeo a partir de imagen (image-to-video) desarrollado por Wan-AI (Alibaba). Este repositorio concreto, `Neurobrix/Wan2.1-I2V-14B-480P-Diffusers-nbx`, no contiene pesos nuevos ni un modelo reentrenado: es un contenedor `.nbx` que empaqueta el modelo original de Wan-AI para ejecutarlo dentro del motor de inferencia NeuroBrix. El autor del empaquetado es NeuroBrix y mantiene la licencia Apache 2.0 del modelo original.
+Wan2.1-I2V-14B-480P-Diffusers-nbx es una conversión y empaquetado del modelo de generación de vídeo a partir de imagen (image-to-video) Wan2.1-I2V-14B-480P de Wan-AI, publicada por Neurobrix bajo su propia librería de inferencia local. El modelo original es un modelo de difusión de 14.000 millones de parámetros orientado a generar clips de vídeo a resolución 480P a partir de una imagen de entrada y un prompt textual. Esta variante no modifica los pesos en cuanto a arquitectura, sino que los redistribuye para su ejecución con el stack Neurobrix, que emplea kernels Triton para acelerar la inferencia local.
 
-El modelo resuelve la tarea de animar una imagen estática a partir de una descripción textual, generando clips de vídeo a resolución 480P. La variante I2V-14B cuenta con 14.000 millones de parámetros y se distribuye en formato Diffusers. Es relevante para desarrolladores que quieran desplegar generación de vídeo en hardware propio, ya que el contenedor incluye el grafo de cómputo, los pesos, las conexiones entre componentes y los valores por defecto de ejecución, y el motor planifica automáticamente la distribución entre varias GPU, streaming o CPU.
+La relevancia de esta ficha radica en que el repositorio es un ejemplo de reempaquetado de terceros de un modelo de difusión de vídeo grande: el tamaño del repo es de 90,6 GB, lo que refleja pesos en precisión completa o semi-precisión (probablemente bf16/fp16) y no una cuantización agresiva. La licencia declarada es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo cual conviene verificar antes de integrarlo en un pipeline de producción.
 
-La información pública disponible sobre este repositorio es escasa: no hay descargas ni likes registrados, y la model card se limita a describir el empaquetado remitiendo al modelo original para detalles de entrenamiento, uso previsto y limitaciones.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni resultados de benchmarks en la información proporcionada. Los datos de arquitectura interna del modelo original (tipo de backbone de difusión, VAE, encoder de texto) no se detallan en la ficha de Hugging Face consultada, por lo que se indican como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión para vídeo, empaquetado como contenedor `.nbx`) |
-| Parametros totales | 14B (según el nombre del modelo base) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (no aplica en el sentido de LLM; es un modelo de difusión vídeo) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los prompts de texto del modelo original; no se especifican en este repositorio) |
-| Licencia | apache-2.0 |
-| Formato de pesos | contenedor `.nbx` de NeuroBrix (modelo base en formato Diffusers) |
+| Arquitectura | Modelo de difusión para image-to-video (detalle interno no disponible) |
+| Parametros totales | 14B (según nombre del modelo) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (modelo de difusión, no aplica ventana de tokens de texto de forma estándar) |
+| Tipos de cuantizacion | no disponible (repo de 90,6 GB, compatible con pesos bf16/fp16; cuantizaciones GGUF/INT8 no confirmadas) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Pesos para la librería Neurobrix (formato nbx); pesos base derivados de Diffusers; safetensors/GGUF no confirmados |
+| Resolución de salida | 480P |
+| Tarea | Image-to-video |
+| Librería | neurobrix |
+| Tamaño del repo | 90,6 GB |
+| Acceso | Restringido (gated) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna ni sobre el proceso de entrenamiento en la documentación de este repositorio. El modelo base es `Wan-AI/Wan2.1-I2V-14B-480P-Diffusers`, un modelo de difusión para generación de vídeo a partir de imagen con 14.000 millones de parámetros, según se deduce del propio nombre. La model card de este repositorio remite explícitamente al modelo original de Wan-AI para cualquier detalle sobre entrenamiento, datos, uso previsto y limitaciones.
+El modelo base Wan2.1-I2V-14B-480P es un modelo de difusión para generación de vídeo condicionada por imagen, con 14.000 millones de parámetros. La variante -nbx de Neurobrix mantiene los pesos del modelo original y los adapta al formato de la librería Neurobrix, que según los tags del repositorio utiliza Triton para la inferencia local. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF/DPO; estos datos deben consultarse en la ficha del modelo base Wan-AI/Wan2.1-I2V-14B-480P-Diffusers.
 
-La innovación que introduce este repositorio no está en el modelo en sí, sino en el empaquetado: el contenedor `.nbx` incluye el grafo de cómputo del modelo, sus pesos, la forma en que se conectan sus componentes y sus valores por defecto de ejecución. El motor NeuroBrix planifica la ejecución según las GPU y la memoria disponibles (una GPU, varias, streaming o host), y ofrece dos motores de ejecución: PyTorch o Triton (este último sin dependencia de PyTorch, usando kernels `nbxtensor` certificados por clase de GPU). Soporta NVIDIA, GPU de Mac (Metal) y CPU.
+La innovación técnica destacable de esta variante es el empaquetado para inferencia local con kernels Triton, que busca reducir la dependencia de frameworks de difusión genéricos y optimizar la ejecución en hardware local. No se documentan en la información disponible técnicas como decodificación especulativa, atención lineal o variantes de muestreo específicas.
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen de entrada y un prompt de texto (image-to-video).
-- Salida a resolución 480P (según el nombre del modelo base).
-- Control de la generación mediante instrucciones textuales (por ejemplo, movimientos de cámara), tal como muestra el ejemplo de la model card: `--prompt "the camera slowly pulls back"`.
-- Ejecución local en hardware propio mediante el motor NeuroBrix.
-- Planificación automática de la ejecución entre una o varias GPU, streaming o CPU.
-- Ejecución con motor PyTorch o con motor Triton sin PyTorch.
-- Soporte de NVIDIA, Mac (Metal) y CPU.
-- No se documentan en este repositorio capacidades de tool calling, agentes, razonamiento multi-paso, visión general ni audio; se trata de un modelo generativo de vídeo.
+- Generación de vídeo a partir de una imagen de entrada (image-to-video) con resolución 480P.
+- Condicionamiento por prompt textual además de la imagen de referencia.
+- Ejecución local mediante la librería Neurobrix con kernels Triton.
+- Compatibilidad con el ecosistema Diffusers a través del modelo base del que deriva.
+- No se documentan capacidades de tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo de difusión de vídeo).
+- Capacidades multilingües: no disponibles.
+- No se documentan modos especiales como thinking mode, visión general o audio.
 
 ## Casos de uso
 
-- Prototipado de animaciones a partir de storyboards: se toma un fotograma clave como imagen de entrada y se genera un clip de 480P con un prompt que describa el movimiento de cámara o de la escena, útil para previsualizar secuencias antes de producir el render final.
-- Generación de vídeo en local sin depender de la nube: el contenedor `.nbx` permite ejecutar el modelo en las GPU del propio equipo, lo que resulta adecuado para equipos que manejan material sensible que no puede salir de su infraestructura.
-- Pruebas de concepto en estaciones de trabajo con varias GPU: el motor NeuroBrix distribuye automáticamente el modelo entre las GPU disponibles, lo que facilita experimentar con un modelo de 14B sin tener que configurar manualmente el reparto de memoria.
-- Despliegue en macOS: al soportar Metal, el modelo puede ejecutarse en equipos Mac, lo que permite a diseñadores y creadores de contenido generar clips sin una GPU NVIDIA dedicada.
-- Integración en pipelines de producción de contenido: mediante la CLI (`neurobrix run --model ... --input-image ... --prompt ... --output clip.mp4`) se puede automatizar la generación de clips dentro de flujos de trabajo por lotes.
-- Evaluación comparativa de motores de inferencia: al ofrecer motores PyTorch y Triton, el contenedor sirve para medir rendimiento y consumo de memoria entre ambos enfoques sobre el mismo modelo.
-- Docencia e investigación sobre modelos de difusión de vídeo: al ser un contenedor reproducible con SHA-256 verificado, facilita la replicabilidad de experimentos.
+- Prototipado de vídeo generativo local: usar el modelo para animar imágenes fijas en un entorno de desarrollo con GPU propia, aprovechando el empaquetado Neurobrix para evitar dependencias pesadas de frameworks de difusión.
+- Generación de clips publicitarios cortos: a partir de una imagen de producto, generar un clip de 480P para pruebas de concepto y maquetas antes de producir el vídeo final con herramientas de mayor resolución.
+- Previsualización de storyboards: animar fotogramas clave de un guion gráfico para validar ritmo y composición antes del rodaje o de la producción 3D.
+- Creación de contenido para redes sociales: generar variaciones animadas de una imagen de marca en 480P, adecuadas para formatos verticales u horizontales de baja resolución.
+- Investigación en difusión de vídeo: servir como punto de partida reproducible para experimentos de image-to-video con un modelo de 14B y licencia Apache 2.0, comparando el rendimiento del stack Neurobrix frente a Diffusers estándar.
+- Automatización de contenido educativo: animar diagramas o ilustraciones estáticas para materiales docentes, con la ventaja de que la inferencia puede ejecutarse en infraestructura local sin enviar imágenes a servicios en la nube.
+- Integración en pipelines de postproducción: usar el modelo como etapa de generación de metraje de relleno (b-roll) a partir de imágenes de archivo, siempre que la resolución 480P sea suficiente para el destino final.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. El contenedor ocupa 90,6 GB, lo que da una idea del tamaño de los pesos y componentes empaquetados; el modelo base tiene 14B parámetros.
-- GPU recomendadas: no se especifican modelos concretos. El motor NeuroBrix soporta NVIDIA en general, GPU de Mac (Metal) y CPU.
-- ¿Cabe en GPU de consumo? No disponible. El tamaño del contenedor (90,6 GB) sugiere que no cabe en una única GPU de consumo sin estrategias de streaming o reparto, pero no se confirma en la documentación.
-- Opciones de despliegue: motor NeuroBrix (instalable con `pip install neurobrix`), con motor PyTorch o motor Triton (kernels `nbxtensor`, sin PyTorch). No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
+- VRAM estimada para inferencia: el repo ocupa 90,6 GB, lo que sugiere pesos en bf16/fp16. Para cargar el modelo completo se necesitan del orden de 80-90 GB de VRAM o el uso de offloading a CPU/RAM; no se dispone de cifras oficiales de VRAM pico.
+- GPU recomendadas: no disponibles de forma oficial. Por tamaño, un modelo de 14B en precisión completa requiere GPUs de clase数据中心 (A100 80 GB, H100 80 GB) o configuraciones multi-GPU.
+- ¿Cabe en consumer GPU? No de forma directa en precisión completa. Podría caber en GPUs de 24 GB (RTX 4090) solo con cuantización u offloading, pero no se confirman cuantizaciones oficiales para esta variante.
+- Opciones de despliegue: librería Neurobrix (con Triton) según los tags del repo; compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada y, en general, estos motores no están orientados a modelos de difusión de vídeo. Diffusers podría ser una vía alternativa usando el modelo base.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni comparativas con otros modelos de generación de vídeo, y no se dispone de cifras verificables para establecer una comparación rigurosa.
+| Modelo | Parámetros | Tarea | Resolución | Licencia | Acceso |
+|---|---|---|---|---|---|
+| Wan2.1-I2V-14B-480P-Diffusers-nbx (este) | 14B | Image-to-video | 480P | Apache 2.0 | Gated |
+| Wan-AI/Wan2.1-I2V-14B-480P-Diffusers (base) | 14B | Image-to-video | 480P | Apache 2.0 | No disponible en la información |
+| Otros modelos image-to-video de la familia Wan2.1 | no disponible | Image-to-video | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparativo ni de especificaciones detalladas de alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es un empaquetado del modelo de Wan-AI; las limitaciones, sesgos y advertencias del modelo original aplican sin cambios y deben consultarse en su model card.
-- No se documentan en este repositorio los sesgos conocidos del modelo.
-- Riesgo de alucinación: no disponible; se trata de un modelo generativo de vídeo, por lo que las salidas pueden no corresponder fielmente a la imagen de entrada o al prompt.
-- Limitaciones de contexto o idioma: no documentadas en este repositorio.
-- Licencia Apache 2.0, la misma del modelo original; se permite uso comercial según los términos de dicha licencia, pero conviene revisar la model card original de Wan-AI para condiciones adicionales.
-- El repositorio no registra descargas ni likes y fue creado y actualizado el mismo día (13 de noviembre de 2026), lo que indica que es un empaquetado reciente y sin validación comunitaria documentada.
-- La ejecución requiere instalar el motor NeuroBrix y aceptar la licencia (`--accept-license`); no es un modelo que se pueda cargar directamente con `transformers` o `diffusers` desde este repositorio.
-- El SHA-256 del contenedor está publicado (`b2d259e5ddab561af4678b4f9e791aa36a32d98d016fdcf5efb5ea1dacf4957f`), lo que permite verificar la integridad de la descarga.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear automatizaciones y pipelines de CI.
+- Repositorio de 90,6 GB: requiere almacenamiento considerable y tiempos de descarga largos; no apto para entornos con cuotas de disco ajustadas.
+- Es un reempaquetado de terceros (Neurobrix) del modelo de Wan-AI; la calidad y el soporte dependen del mantenedor de la variante, no del equipo original.
+- La licencia Apache 2.0 se declara en los tags, pero conviene verificar los términos exactos del modelo base y del reempaquetado antes de uso comercial.
+- Resolución limitada a 480P: no adecuado para producción final en alta definición sin upscaling posterior.
+- No se documentan sesgos conocidos, riesgo de alucinación específico ni limitaciones idiomáticas en la información disponible.
+- No se confirman cuantizaciones oficiales ni compatibilidad con motores de inferencia estándar (vLLM, llama.cpp, Ollama, TGI), lo que limita las opciones de despliegue.
+- Al ser un modelo de difusión de vídeo, no aplican consideraciones de tool calling ni agentes; no debe evaluarse con los mismos criterios que un LLM.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Neurobrix/Wan2.1-I2V-14B-480P-Diffusers-nbx
-- Modelo original de Wan-AI: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P-Diffusers
-- GitHub de NeuroBrix: https://github.com/NeuroBrix
-- Kernels nbxtensor: https://github.com/NeuroBrix/nbxtensor
-- Hub de NeuroBrix: https://neurobrix.org
-- Página del modelo en el hub de NeuroBrix: https://neurobrix.org/models/Wan-AI/Wan2.1-I2V-14B-480P-Diffusers
-- Documentación: https://docs.neurobrix.org
-- Canal de YouTube: https://www.youtube.com/@NeuroBrix
+- Hugging Face: https://huggingface.co/Neurobrix/Wan2.1-I2V-14B-480P-Diffusers-nbx
+- Modelo base: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P-Diffusers
+- Repositorio de Wan2.1 en GitHub: no disponible en la información proporcionada
+- Paper de Wan2.1: no disponible en la información proporcionada
+- Demo o blog oficial: no disponible en la información proporcionada

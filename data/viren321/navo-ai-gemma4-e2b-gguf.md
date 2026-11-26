@@ -2,86 +2,86 @@
 
 ## Resumen
 
-Navo-AI-Gemma4-E2B-GGUF es una cuantización en formato GGUF publicada por el usuario Viren321 bajo el identificador Viren321/Navo-AI-Gemma4-E2B-GGUF. Se trata de un derivado del modelo unsloth/gemma-4-E2B-it-GGUF, que a su vez es una versión cuantizada del Gemma 4 E2B instruction-tuned de Google. El autor no documenta ningún proceso de ajuste fino propio: la model card se limita a metadatos (licencia, idiomas y etiquetas), por lo que debe interpretarse como una redistribución cuantizada y no como un modelo entrenado desde cero.
+Navo-AI-Gemma4-E2B-GGUF es una cuantizacion en formato GGUF publicada por el usuario Viren321 en Hugging Face, derivada del modelo `unsloth/gemma-4-E2B-it-GGUF`, que a su vez es una version cuantizada del Gemma 4 E2B instruct de Google. El repositorio contiene pesos de 4.647.450.147 parametros totales (segun los metadatos de safetensors) en un paquete de 3,4 GB, lo que sugiere cuantizaciones de baja precision orientadas a inferencia en hardware de consumo.
 
-El repositorio ocupa 3,4 GB y declara 4.647.450.147 parámetros en los pesos en safetensors del modelo base, lo que sitúa al modelo en la gama de los 4-5 mil millones de parámetros. La licencia declarada es MIT, más permisiva que la licencia habitual de la familia Gemma, lo que constituye un punto a verificar antes de cualquier uso comercial. El modelo se etiqueta como conversacional y compatible con endpoints, y declara soporte para inglés (en) e hindi (hi).
+El modelo se distribuye bajo licencia Apache 2.0 y declara soporte para ingles (en) e hindi (hi). La model card publicada es practicamente vacia: solo incluye metadatos YAML de licencia, idiomas y etiquetas, sin descripcion tecnica, sin datos de entrenamiento y sin benchmarks. Por tanto, toda la informacion sustantiva sobre arquitectura, contexto y capacidades debe inferirse del modelo base, no del repositorio en si.
 
-Su relevancia es limitada y muy específica: sirve como artefacto GGUF listo para inferencia local en entornos con recursos moderados, pero la ausencia de benchmarks, de documentación de entrenamiento y de cualquier validación publicada por el autor obliga a tratarlo con cautela en producción. El contador de descargas es 0 y los likes 1 en el momento de la consulta, lo que indica una adopción prácticamente nula.
+Su relevancia practica es limitada pero concreta: ofrece una via de despliegue local de un modelo Gemma de ultima generacion en formato GGUF, compatible con runtimes como llama.cpp u Ollama, y con soporte declarado de endpoints. Para equipos que necesiten inferencia offline en castellano o ingles con hardware modesto, puede ser un punto de partida, aunque la ausencia de documentacion y de validacion publica exige precaucion antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (heredada del modelo base Gemma 4 E2B; no documentada en el repositorio) |
-| Parametros totales | 4.647.450.147 (según safetensors del modelo base) |
+| Arquitectura | no disponible (heredada del modelo base Gemma 4 E2B; no documentada en el repo) |
+| Parametros totales | 4.647.450.147 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (niveles concretos no especificados en la model card) |
+| Tipos de cuantizacion | no disponible (el repo es GGUF; no se detallan los niveles Q4, Q5, Q8, etc.) |
 | Idiomas soportados | en, hi |
-| Licencia | MIT |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna en la documentación proporcionada. El modelo deriva de unsloth/gemma-4-E2B-it-GGUF, que a su vez procede de la familia Gemma 4 de Google en su variante E2B instruction-tuned. El autor no describe la arquitectura (transformer denso, MoE u otra), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste instructivo adicional.
+No hay informacion publicada en el repositorio sobre la arquitectura interna del modelo. El nombre del modelo base (`gemma-4-E2B-it-GGUF`) indica que se trata de una variante instruct de la familia Gemma 4 de Google, con el sufijo "E2B" que sugiere una configuracion de aproximadamente 2.000 millones de parametros efectivos, aunque el recuento de safetensors reporta 4.647.450.147 parametros totales. Esta discrepancia es habitual en modelos con componentes adicionales (embeddings, cabezas de salida o posibles mezclas de expertos) y no puede resolverse sin la model card original.
 
-Tampoco se documenta ningún proceso de entrenamiento propio por parte de Viren321. La operación realizada parece ser una conversión o reempaquetado a GGUF del modelo base de Unsloth, sin evidencia de fine-tuning, destilación ni modificación de pesos. Cualquier innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento) sería heredada del modelo Gemma 4 original, pero no está descrita en este repositorio.
+Tampoco se documentan los datos de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico dato cierto es que el autor ha tomado los pesos GGUF de Unsloth y los ha republicado bajo una identidad propia ("Navo AI", "Nex AI"), sin anadir informacion sobre el proceso de cuantizacion aplicado ni sobre posibles ajustes finos.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés e hindi, según los idiomas declarados.
-- Instrucciones: al derivar de una variante "-it" (instruction-tuned), se espera que responda a prompts en formato de instrucción, aunque el formato exacto de chat no está documentado en este repositorio.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
-- Inferencia local en formato GGUF mediante runtimes como llama.cpp u Ollama.
-- Tool calling / function calling: no disponible (no documentado).
-- Capacidades de agente o razonamiento multi-paso: no disponible (no documentado).
-- Visión, audio o modo thinking: no disponible (no documentado en este repositorio).
+- Generacion de texto conversacional en ingles e hindi, segun los idiomas declarados en los metadatos.
+- Modo instruct heredado del modelo base (`-it`), orientado a seguir instrucciones y mantener dialogos multi-turno.
+- Compatibilidad con endpoints declarada en las etiquetas (`endpoints_compatible`), lo que sugiere integracion con infraestructuras de inferencia estandar.
+- Soporte de tool calling y function calling: no disponible en la documentacion del repositorio.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multimodales (vision, audio): no disponible.
+- Modo thinking explicito: no disponible.
+- Capacidades multilingues adicionales al ingles y al hindi: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés o hindi: el modelo puede desplegarse en un portátil o estación de trabajo mediante llama.cpp u Ollama para conversaciones multi-turno sin conexión a internet, aprovechando el formato GGUF y su tamaño de 3,4 GB.
-- Prototipado rápido de chatbots: al ser un artefacto GGUF listo para cargar, permite validar flujos de conversación en inglés e hindi antes de invertir en infraestructura mayor.
-- Traducción y asistencia bilingüe inglés-hindi: los dos idiomas declarados permiten usarlo como apoyo en tareas de redacción o reformulación entre ambos idiomas, siempre con revisión humana.
-- Generación de texto en entornos con GPU de consumo: su volumen de parámetros (4,6 mil millones) permite ejecutarlo en tarjetas con 8-12 GB de VRAM según la cuantización, lo que lo hace apto para equipos de desarrollo individuales.
-- Evaluación comparativa de cuantizaciones: sirve como artefacto de prueba para medir el impacto de distintas cuantizaciones GGUF sobre el modelo Gemma 4 E2B en tareas de generación.
-- Filtrado o resumen de documentos en inglés/hindi: con prompts adecuados puede emplearse para resumir textos cortos o extraer información, aunque la longitud de contexto no está documentada y debe validarse empíricamente.
+- Despliegue local de un asistente conversacional: al estar en formato GGUF, el modelo puede cargarse en llama.cpp u Ollama y ejecutarse en una estacion de trabajo sin conexion, gestionando dialogos multi-turno en ingles o hindi con un peso de 3,4 GB en disco.
+- Prototipado rapido de chatbots para mercados indios: el soporte declarado de hindi permite construir asistentes de atencion al cliente en ese idioma, aunque la calidad real no esta validada por benchmarks publicos.
+- Inferencia en hardware de consumo: con 4.647 millones de parametros y cuantizacion GGUF, es viable en GPUs de gama media (8-12 GB de VRAM) o incluso en CPU, lo que facilita pruebas de concepto sin presupuesto de nube.
+- Generacion de texto asistida en entornos air-gapped: sectores con requisitos de confidencialidad pueden desplegarlo en servidores aislados, siempre que se acepte la falta de documentacion sobre sesgos y alucinaciones.
+- Integracion en pipelines de CI/CD para pruebas de regresion de prompts: el formato GGUF y la compatibilidad con endpoints permiten levantar un servidor de inferencia ligero en contenedores para evaluar cambios de plantillas o de logica de negocio.
+- Educacion e investigacion: util como banco de pruebas para estudiar el comportamiento de cuantizaciones de Gemma 4 en tareas de razonamiento basico, comparando con el modelo base de Unsloth.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la model card se limita a metadatos YAML.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por el tamaño (4,6 mil millones de parámetros y repo de 3,4 GB), una cuantización de 4 bits requeriría del orden de 3-4 GB de VRAM, y una de 8 bits en torno a 5-6 GB; estas cifras son estimaciones, no datos del autor.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría esperar funcionamiento en RTX 3060, RTX 4060, RTX 4090 y GPUs de datacenter (A100, H100), pero no hay validación publicada.
-- GPU de consumo: probablemente sí en tarjetas con 8 GB o más de VRAM en cuantizaciones bajas, sujeto a verificación.
-- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; la etiqueta `endpoints_compatible` apunta a despliegue en endpoints de Hugging Face.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de 4.647 millones de parametros en cuantizacion de 4 bits ocupa aproximadamente 2,5-3 GB de pesos, mas overhead de contexto y cache KV.
+- GPU recomendadas: no documentadas por el autor. Por tamano, cabria en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y GPUs de datacenter como A100 o H100, aunque no hay validacion publicada.
+- Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con 8 GB o mas de VRAM en cuantizaciones de 4-5 bits; en CPU tambien es viable con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. No se confirma soporte de vLLM ni TGI, que requieren formatos distintos.
+- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Navo-AI-Gemma4-E2B-GGUF | 4.647.450.147 | no disponible | MIT | GGUF | Cuantización derivada de Gemma 4 E2B; sin benchmarks |
-| unsloth/gemma-4-E2B-it-GGUF (base) | no disponible | no disponible | no disponible | GGUF | Modelo de origen del que deriva este artefacto |
-| Gemma 4 E2B (original de Google) | no disponible | no disponible | no disponible | no disponible | Modelo de referencia de la familia Gemma 4 |
+| Navo-AI-Gemma4-E2B-GGUF | 4.647.450.147 | no disponible | apache-2.0 | GGUF | Republicacion sin documentacion tecnica |
+| unsloth/gemma-4-E2B-it-GGUF (base) | no disponible | no disponible | no disponible | GGUF | Modelo de origen, mantenido por Unsloth |
+| Gemma 4 E2B instruct (original) | no disponible | no disponible | no disponible | safetensors | Modelo de referencia de Google |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no hay información sobre arquitectura, contexto, datos de entrenamiento ni proceso de cuantización.
-- Sin benchmarks publicados: no es posible evaluar su calidad frente al modelo base ni frente a alternativas.
-- Adopción prácticamente nula (0 descargas, 1 like): no hay evidencia de uso en producción ni informes de la comunidad.
-- Licencia MIT declarada: conviene verificar que sea compatible con las condiciones de la familia Gemma original, ya que el modelo base de Google suele tener su propia licencia de uso.
-- Idiomas limitados a inglés e hindi: no se declara soporte para castellano, por lo que su uso en español no está validado.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño; sin evaluación publicada no puede cuantificarse.
-- Sesgos: no documentados por el autor; deben asumirse los del modelo base, no evaluados en este repositorio.
-- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin validación empírica.
-- Alucinación de identidad: las etiquetas "Nex Ai", "Navo" y "Nex" no corresponden a ningún desarrollo técnico documentado, lo que puede inducir a confusión sobre el origen real del modelo.
+- Documentacion practicamente inexistente: la model card no describe arquitectura, entrenamiento, contexto ni limitaciones, lo que impide evaluar su idoneidad con rigor.
+- Sesgos desconocidos: al no documentarse la composicion del dataset de entrenamiento, no es posible anticipar sesgos de genero, etnicos, religiosos o politicos.
+- Riesgo de alucinacion no cuantificado: no hay evaluaciones publicadas de fidelidad factual ni de tasas de alucinacion.
+- Cobertura idiomatica limitada: solo se declaran ingles e hindi; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
+- Contexto desconocido: se desconoce la longitud maxima de contexto, lo que complica el diseno de aplicaciones con documentos largos.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad recae en el integrador.
+- Republicacion no oficial: el repositorio no procede del equipo de Google ni de Unsloth, por lo que no hay compromiso de mantenimiento ni de actualizaciones.
+- Trazabilidad de la cuantizacion: no se especifica el nivel de cuantizacion ni el proceso aplicado, lo que dificulta reproducir resultados.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Viren321/Navo-AI-Gemma4-E2B-GGUF
-- Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
-- DOI asociado: 10.57967/hf/11676
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
+- DOI asociado: https://doi.org/10.57967/hf/11676

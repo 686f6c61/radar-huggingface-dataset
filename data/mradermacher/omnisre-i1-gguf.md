@@ -2,90 +2,97 @@
 
 ## Resumen
 
-OmniSRE es un modelo de lenguaje de aproximadamente 26.900 millones de parametros, desarrollado por el usuario w3joe y publicado bajo licencia Apache 2.0. Esta orientado especificamente a tareas de Site Reliability Engineering (SRE), AIOps, Kubernetes y DevOps, e incorpora etiquetas que indican entrenamiento mediante tecnicas de reinforcement learning con verificacion (RLVR), concretamente CISPO, DAPO y GTPO, ademas de capacidades de agente y uso de herramientas (tool-use). El modelo base esta disponible en el repositorio w3joe/OmniSRE.
+OmniSRE-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix, del modelo OmniSRE de w3joe. Se trata de un modelo orientado a tareas de Site Reliability Engineering (SRE) y AIOps: diagnóstico de incidencias, operación de clústeres Kubernetes y automatización de flujos DevOps mediante agentes y uso de herramientas. El modelo original tiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) según los pesos en safetensors, y se distribuye bajo licencia Apache 2.0.
 
-La ficha que nos ocupa corresponde a la version cuantizada en GGUF publicada por mradermacher bajo el esquema i1 (imatrix), lo que permite ejecutar el modelo en hardware mas modesto que el necesario para los pesos completos en safetensors. El repositorio incluye un rango amplio de cuantizaciones, desde Q2_K hasta Q6_K, ademas del fichero imatrix para generar cuantizaciones propias. La model card indica que se trata de un modelo de vision, aunque los ficheros mmproj (proyector multimodal) se alojan en el repositorio estatico separado.
+La relevancia de esta ficha radica en que el repositorio de mradermacher permite ejecutar un modelo de casi 27B en hardware de consumo mediante cuantizaciones que van desde 7,8 GB (i1-IQ1_S) hasta 22,2 GB (i1-Q6_K). El modelo base incorpora técnicas de entrenamiento con refuerzo verificable (RLVR) y variantes de optimización como CISPO, DAPO y GTPO, además de capacidades de agent y tool-use, lo que lo sitúa en la categoría de modelos especializados en operaciones de infraestructura más que en propósito general.
 
-Su relevancia actual radica en la especializacion vertical: frente a modelos generalistas, OmniSRE apunta a tareas de diagnostico operativo, razonamiento sobre infraestructura y uso de herramientas dentro de pipelines de agentes, un nicho en el que la precision y la capacidad de seguir procedimientos importan mas que el conocimiento enciclopedico general. El idioma declarado es unicamente ingles.
+La model card del cuantizador indica que el modelo base es de tipo visión, aunque los ficheros mmproj, si existen, se alojan en el repositorio estático OmniSRE-GGUF. El idioma declarado es únicamente inglés. No se proporcionan datos sobre longitud de contexto, arquitectura interna ni resultados de benchmarks en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformers; el repositorio base no detalla la arquitectura interna) |
-| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo transformer con capacidades de visión según la model card del cuantizador) |
+| Parámetros totales | 26.895.998.464 (~26,9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q4_K_S (en este repositorio); cuantizaciones estaticas adicionales en el repositorio OmniSRE-GGUF |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); pesos originales en safetensors en el modelo base |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Las etiquetas del repositorio indican que se apoya en la libreria transformers y que el modelo original se distribuye en safetensors con 26.895.998.464 parametros. La model card del repositorio cuantizado no incluye detalles sobre el numero de capas, tipo de atencion, dimension de embeddings ni vocabulario.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Los tags del repositorio apuntan a un modelo de tipo transformer con soporte conversacional, entrenado con técnicas de aprendizaje por refuerzo verificable (RLVR) y optimizadores como CISPO, DAPO y GTPO, orientados a mejorar el razonamiento multi-paso y el uso de herramientas en entornos de agentes. El modelo base es w3joe/OmniSRE, del que no se detallan en esta información el volumen de tokens de entrenamiento ni la composición del dataset.
 
-En cuanto al entrenamiento, las etiquetas (rlvr, cispo, dapo, gtpo) sugieren un proceso de aprendizaje por refuerzo con verificacion (RLVR) empleando variantes de optimizacion como CISPO, DAPO y GTPO, orientadas a mejorar el razonamiento en tareas verificables. Tambien aparecen las etiquetas agent y tool-use, lo que indica que el modelo fue ajustado para invocar herramientas y operar en entornos de agente. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO adicionales. La model card menciona que es un modelo de vision, con ficheros mmproj alojados en el repositorio estatico, pero no se detalla la arquitectura del componente visual.
+La model card del cuantizador menciona explícitamente que se trata de un modelo de visión ("This is a vision model"), lo que sugiere que el modelo base incorpora un codificador multimodal; los ficheros mmproj asociados, si existen, se encuentran en el repositorio estático OmniSRE-GGUF. Las cuantizaciones i1 se han generado con fichero imatrix, lo que en la práctica de llama.cpp suele mejorar la calidad respecto a cuantizaciones estáticas del mismo tamaño, especialmente en los rangos bajos (IQ2, IQ3).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento especializado en dominios de SRE, AIOps, Kubernetes y DevOps.
-- Uso de herramientas (tool calling / function calling), segun la etiqueta tool-use del repositorio.
-- Operacion como agente en entornos multi-paso, segun la etiqueta agent.
-- Razonamiento reforzado mediante RLVR con variantes CISPO, DAPO y GTPO, orientado a tareas con verificacion objetiva.
-- Capacidad multimodal (vision) declarada en la model card, con proyector mmproj en el repositorio estatico; no se detallan las tareas visuales soportadas.
-- Soporte multilingue limitado al ingles.
-- No se documentan capacidades especificas de modo thinking, audio ni otras modalidades en la informacion disponible.
+- Generación de texto conversacional en inglés.
+- Razonamiento orientado a diagnóstico de incidencias SRE y análisis de causas raíz.
+- Operación y consulta de clústeres Kubernetes (tags: kubernetes, devops, sre).
+- Uso de herramientas (tool-use) y flujos de agente multi-paso, según los tags agent y tool-use.
+- Capacidades de AIOps para automatización de tareas operativas.
+- Posible soporte de visión (el cuantizador lo etiqueta como modelo de visión; los mmproj estarían en el repositorio estático).
+- Entrenamiento con RLVR y optimizadores CISPO/DAPO/GTPO, orientado a mejorar la fiabilidad del razonamiento verificable.
+- No se documentan capacidades de audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Diagnostico de incidentes en Kubernetes: el modelo puede analizar descripciones de pods, eventos y logs para proponer causas raiz y pasos de remediacion, aprovechando su ajuste especifico en SRE y su capacidad de razonamiento multi-paso.
-- Automatizacion de runbooks: dado un procedimiento operativo, el modelo puede ejecutar pasos secuenciales mediante tool calling, consultando APIs del cluster o sistemas de monitorizacion y verificando resultados intermedios.
-- Asistente de guardia (on-call): integrado en un chatbot de operaciones, puede resumir alertas, correlacionar metricas y sugerir acciones, con la ventaja de estar entrenado en el vocabulario y los patrones de infraestructura.
-- Analisis de configuraciones y manifiestos: revision de YAML de Kubernetes, Helm charts o politicas de despliegue para detectar errores, malas practicas o riesgos de seguridad, usando su conocimiento del dominio DevOps.
-- Generacion de scripts de automatizacion: produccion de scripts de shell, Terraform o Ansible a partir de descripciones en lenguaje natural, con soporte de tool calling para validar sintaxis o consultar documentacion.
-- Triaje de alertas en AIOps: clasificacion y priorizacion de alertas entrantes, agrupacion por causa probable y enrutamiento al equipo correspondiente, aprovechando el ajuste por refuerzo para tareas de decision verificable.
-- Analisis de capturas o diagramas de infraestructura: si se confirma la capacidad de vision, el modelo podria interpretar diagramas de arquitectura o capturas de paneles de monitorizacion para explicar el estado del sistema.
+- Diagnóstico asistido de incidencias en producción: el modelo puede analizar logs, trazas y descripciones de fallos para proponer causas raíz y pasos de mitigación, aprovechando su especialización en SRE y AIOps.
+- Automatización de operaciones en Kubernetes: generación de manifiestos, consultas a la API del clúster y propuestas de remediación ante pods en CrashLoopBackOff o despliegues fallidos, gracias al soporte de tool-use.
+- Agentes de guardia (on-call): integración como agente que recibe alertas, consulta métricas y ejecuta runbooks paso a paso mediante llamadas a herramientas.
+- Asistente de ingeniería DevOps en CI/CD: revisión de pipelines, generación de scripts de despliegue y explicación de errores de build en inglés técnico.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,8 GB) o i1-IQ4_XS (15,4 GB) permiten ejecutar el modelo en GPUs de 24 GB como la RTX 4090, útil para laboratorios y entornos de pruebas sin infraestructura dedicada.
+- Documentación operativa automatizada: generación de post-mortems y resúmenes de incidentes a partir de transcripciones y datos de monitorización.
+- Análisis de capturas o diagramas de infraestructura, si se despliega con los ficheros mmproj del repositorio estático, aprovechando la faceta de visión del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun las cuantizaciones del repositorio: i1-Q2_K ~11,2 GB, i1-IQ3_XXS ~11,6 GB, i1-IQ3_M ~12,9 GB, i1-Q4_K_S ~15,7 GB (tamanos de fichero; la VRAM necesaria es algo superior por el contexto y el overhead).
-- GPU recomendadas: para cuantizaciones Q4 o superiores, GPUs con 24 GB o mas (RTX 3090, RTX 4090, A10G, L4); para Q2/IQ3, GPUs de 16 GB podrian ser suficientes con contexto reducido.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4_K_S o inferiores; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) con cuantizaciones IQ3 o Q2 y contexto moderado.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) para GGUF; vLLM y TGI para los pesos originales en safetensors; el repositorio indica endpoints_compatible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada según cuantización (tamaño de fichero, sin contar overhead de contexto):
+  - i1-IQ1_S: 7,8 GB; i1-IQ1_M: 8,3 GB.
+  - i1-IQ2_XXS a i1-IQ2_M: entre 9,0 y 10,5 GB.
+  - i1-Q2_K_S a i1-Q3_K_L: entre 10,7 y 14,8 GB.
+  - i1-IQ4_XS a i1-Q4_1: entre 15,4 y 17,2 GB.
+  - i1-Q5_K_S y i1-Q5_K_M: 18,8 y 19,4 GB.
+  - i1-Q6_K: 22,2 GB.
+- GPU recomendadas: para cuantizaciones Q4/Q5, una RTX 4090 (24 GB) es suficiente; para Q6_K conviene una GPU de 24 GB con margen ajustado o una A100/H100 de 40-80 GB si se requiere contexto largo.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB con cuantizaciones IQ2/IQ3, hasta una RTX 4090 con Q4_K_M o IQ4_XS.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) para GGUF; el repositorio está etiquetado como endpoints_compatible, lo que sugiere compatibilidad con endpoints tipo API. Para el modelo base en safetensors, vLLM o TGI serían las opciones habituales, aunque no se confirman en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones comparables suficientes para establecer una comparativa rigurosa con otros modelos de la misma categoria. La informacion proporcionada no incluye benchmarks ni modelos alternativos de referencia en el nicho SRE/AIOps.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| OmniSRE (i1-GGUF) | ~26,9B | no disponible | Apache 2.0 | SRE/AIOps, agentes, tool-use | GGUF en HF |
+| Qwen2.5-Coder-32B-Instruct | 32,8B | 128K (según modelo original) | Apache 2.0 | Código y razonamiento general | GGUF y safetensors |
+| DeepSeek-R1-Distill-Qwen-32B | 32,8B | 128K (según modelo original) | MIT | Razonamiento con RL | GGUF y safetensors |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| OmniSRE (i1-GGUF) | ~26,9 mil millones | no disponible | apache-2.0 | GGUF |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+La comparativa es orientativa: no se dispone de benchmarks de OmniSRE que permitan contrastar rendimiento real frente a estas alternativas. La principal diferencia de OmniSRE es su especialización declarada en SRE, Kubernetes y AIOps, frente al enfoque generalista o de código de los modelos citados.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- No se han publicado benchmarks, por lo que no es posible evaluar su calidad relativa frente a modelos generalistas o especializados.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente critico en dominios operativos donde una recomendacion erronea puede afectar a sistemas en produccion.
-- La especializacion en SRE y DevOps puede implicar un rendimiento inferior en tareas generales fuera de ese dominio.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base (w3joe/OmniSRE) y de los datos de entrenamiento, no detallados en la informacion disponible.
-- Las cuantizaciones de baja precision (Q2_K, IQ3_XXS) degradan la calidad; para uso en produccion se recomienda Q4_K_S o superior.
-- La capacidad de vision requiere el fichero mmproj del repositorio estatico; sin el, el modelo opera solo en modo texto.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad en la informacion proporcionada.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion comunitaria.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado.
+- No se han publicado benchmarks, por lo que la calidad real frente a alternativas generalistas es desconocida.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente crítico en un dominio operativo donde una acción incorrecta puede afectar a producción.
+- Las cuantizaciones de muy baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- El modelo base es de visión según el cuantizador, pero los ficheros mmproj no están en este repositorio; para uso multimodal hay que acudir al repositorio estático.
+- Licencia Apache 2.0 permite uso comercial, pero debe verificarse la procedencia de los datos de entrenamiento del modelo base, no documentada aquí.
+- No se especifica longitud de contexto; planificar despliegues con ventanas largas requiere validación empírica.
+- El tamaño del repositorio (305,8 GB) implica descargas parciales: conviene seleccionar únicamente la cuantización necesaria.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/OmniSRE-i1-GGUF
 - Modelo base: https://huggingface.co/w3joe/OmniSRE
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/OmniSRE-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#OmniSRE-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/OmniSRE-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#OmniSRE-i1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

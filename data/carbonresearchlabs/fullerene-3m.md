@@ -2,109 +2,124 @@
 
 ## Resumen
 
-Fullerene 3M es un conjunto de cuatro redes neuronales pequenas desarrolladas por Carbon Research Labs como parte del motor OCR Carbon-OCR, escrito en C++ y CUDA. En total suma 2.774.014 parametros entrenados desde cero, y su funcion es leer paginas escaneadas, fotografias de documentos y PDFs, convirtiendolas en texto, HTML, Markdown y JSON con cajas delimitadoras, orden de lectura, etiquetas de bloque y celdas de tabla. El conjunto cubre orientacion de pagina, deteccion de lineas y figuras, reconocimiento de lineas en alfabetos latino, cirilico y griego, y ordenacion/estructura de bloques.
+Fullerene-3M es el conjunto de modelos para escritura latina del motor de OCR Carbon-OCR, desarrollado por Carbon Research Labs. No se trata de un único modelo monolítico, sino de cuatro redes neuronales pequeñas entrenadas desde cero que suman 2.774.014 parámetros en total: un modelo de orientación de página, un detector de líneas y figuras, un reconocedor de líneas de texto y un modelo de orden de lectura y estructura de tablas. Se complementa con un modelo de lenguaje de carácter 7-grama (Kneser-Ney modificado) que puntúa las lecturas del reconocedor.
 
-El modelo resuelve el problema del OCR clasico en documentos complejos: Tesseract y motores de lineas similares solo devuelven texto plano, mientras que Fullerene 3M produce estructura (tablas, encabezados, listas, notas al pie) directamente. Segun la model card, en las 2.937 paginas de OmniParseBench obtiene una puntuacion global de 43,5 frente a 5,9 de Tesseract 5.5, y procesa 5,0 veces mas paginas por segundo en un solo nucleo de CPU.
+El objetivo del modelo es convertir escaneos, fotografías de documentos y PDF en texto, HTML, Markdown y JSON con cajas delimitadoras, en orden de lectura, con bloques etiquetados y celdas de tabla. Frente a alternativas clásicas como Tesseract, el autor declara mejoras notables en pruebas de tablas, orden de lectura y velocidad de inferencia, manteniendo un tamaño extremadamente reducido (repositorio de 0,1 GB) y pesos disponibles en safetensors y ONNX.
 
-Es relevante por su enfoque: cuatro redes diminutas (entre 338.669 y 1.511.104 parametros) que caben en CPU y GPU consumer, distribuidas en formato ONNX (FP32 y FP16), lo que permite despliegue ligero sin infraestructura pesada. La licencia es propia (carbon-ocr-openrail-ams), no estandar, lo que condiciona su uso comercial.
+Su relevancia actual radica en la eficiencia: un conjunto de menos de 3 millones de parámetros que declara leer 9,34 páginas por segundo en un solo núcleo de CPU y 209,9 páginas por segundo en una RTX 4060 Ti con TensorRT, lo que lo hace atractivo para pipelines de digitalización masiva en entornos con recursos limitados. El modelo está orientado a documentos en inglés, ruso y griego, y su licencia es propietaria (carbon-ocr-openrail-ams), lo que condiciona su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Cuatro redes neuronales independientes (orient, det, rec-latin, order); detalles de capas no disponibles |
-| Parametros totales | 2.774.014 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo OCR por pagina, no modelo de lenguaje) |
-| Tipos de cuantizacion | ONNX FP32 y ONNX FP16 |
-| Idiomas soportados | en, ru, el (alfabetos latino, cirilico y griego) |
-| Licencia | carbon-ocr-openrail-ams (licencia propia, enlace a LICENSE-WEIGHTS.md) |
-| Formato de pesos | ONNX (orient.onnx, orient.fp16.onnx y equivalentes) |
-
-Desglose por submodelo:
-
-| Submodelo | Funcion | Parametros | Entrada | Salida |
-|---|---|---|---|---|
-| orient | Orientacion de pagina | 338.669 | Miniatura 512x512 en gris, mapa de tinta | 13 clases (12 bins de 30 grados + CJK vertical) |
-| det | Deteccion de lineas y figuras | 442.564 | Pagina en gris, lado largo 1024, H y W multiplos de 32 | 4 mapas a stride 2 |
-| rec-latin | Lectura de lineas latinas, cirilicas y griegas | 1.511.104 | Recorte de linea 32 x W, mapa de tinta | 800 clases CTC por 4 px |
-| order | Orden de lectura, etiquetas y tablas | 481.677 | 16 caracteristicas por linea | Sucesor, mismo-bloque, fila, columna, celda y 13 etiquetas |
+| Arquitectura | Conjunto de cuatro redes convolucionales pequeñas (orientación, detección, reconocimiento CTC y orden de lectura) más un modelo de lenguaje de carácter 7-grama |
+| Parámetros totales | 2.774.014 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (modelo de imagen a texto, procesa líneas y páginas, no secuencias de contexto) |
+| Tipos de cuantización | INT8 para el reconocedor y el modelo de orientación (según la model card); no se detallan otras cuantizaciones |
+| Idiomas soportados | Inglés (en), ruso (ru), griego (el) |
+| Licencia | carbon-ocr-openrail-ams (licencia «other», con enlace a LICENSE-WEIGHTS.md) |
+| Formato de pesos | safetensors, ONNX |
+| Desglose de parámetros | orient: 338.669; det: 442.564; rec-latin: 1.511.104; order: 481.677 |
+| Modelo de lenguaje | lm-latin.bin, 7-grama de caracteres, Kneser-Ney modificado interpolado, 12,7 M de n-gramas, 93,9 MB |
+| Tamaño del repositorio | 0,1 GB |
+| Entrada de imagen | Orientación: miniatura en escala de grises de 512×512; detección: página en grises con lado largo 1024; reconocimiento: recorte de línea de 32×W |
+| Etiquetas de bloque | Text, Section-Header, Page-Header, Page-Footer, List-Group, Table, Caption, Footnote, Table-Of-Contents, Form, Picture, Formula, Other |
 
 ## Arquitectura y entrenamiento
 
-El conjunto se compone de cuatro redes entrenadas desde cero, cada una con una tarea especializada. `orient` clasifica la orientacion de la pagina en 12 bins de 30 grados mas una clase para CJK vertical, con un umbral de giro de 0,65 almacenado en los metadatos del modelo. `det` produce mapas de deteccion a stride 2 (logit de banda central, distancias superior e inferior, logit de figura) para localizar lineas de texto y elementos graficos. `rec-latin` es un reconocedor CTC que procesa recortes de linea de 32 x W pixeles y emite 800 clases por cada 4 px, con la clase 0 reservada para el blank. `order` opera sobre 16 caracteristicas geometricas y textuales por linea para predecir sucesion, pertenencia a bloque, filas y columnas de tabla, celdas y 13 etiquetas de bloque (Text, Section-Header, Page-Header, Page-Footer, List-Group, Table, Caption, Footnote, Table-Of-Contents, Form, Picture, Formula, Other).
+El conjunto está formado por cuatro redes independientes entrenadas desde cero. El modelo `orient` clasifica la orientación de la página en 13 clases (12 bins de 30 grados más CJK vertical) a partir de una miniatura de 512×512 en escala de grises y un mapa de tinta. El modelo `det` detecta líneas de texto y figuras produciendo cuatro mapas con stride 2 (logit de banda central, distancia superior, distancia inferior y logit de figura) sobre la página en grises con lado largo 1024. El modelo `rec-latin` reconoce líneas de escritura latina, cirílica y griega mediante CTC, con 800 puntuaciones de clase por cada 4 píxeles sobre recortes de 32×W. El modelo `order` procesa 16 características geométricas y textuales por línea para predecir sucesor, misma agrupación, fila de tabla, columna y celda, además de 13 etiquetas de bloque.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO; al ser un modelo OCR, el entrenamiento seria supervisado sobre pares imagen-texto. La innovacion destacable es la division en cuatro redes muy pequenas que evitan un router de scripts (todas las lineas pasan por `rec-latin`) y la integracion de orden de lectura y estructura de tablas en un modelo de 481.677 parametros, con fallback a XY-cut cuando `order` no esta seguro. El formato ONNX FP16 se comporta de forma equivalente al FP32 en CPU (33,4 tests superados en ambos casos).
+El reconocedor se apoya en un modelo de lenguaje de carácter 7-grama con suavizado Kneser-Ney modificado interpolado, con 12,7 millones de n-gramas almacenados en un fichero compacto de 93,9 MB (etiqueta de 32 bits por ranura y códecs de 8 bits para los valores), mapeado en memoria. Sus pesos de interpolación (alpha 0,3; beta 0,5; gate 2,0) están ajustados para este reconocedor. No se detalla en la información disponible el volumen de tokens ni la composición exacta del dataset de entrenamiento (CarbonResearchLabs/fullerene-data), ni si se emplearon técnicas de RLHF o DPO, que en un modelo OCR de este tipo no resultan de aplicación directa.
+
+La innovación técnica principal es la combinación de modelos minúsculos con un motor C++/CUDA (Carbon-OCR) que orquesta orientación y corrección de inclinación hasta 45 grados, detección con segunda pasada para texto diminuto, reconocimiento, y orden de lectura con XY-cut como respaldo cuando el modelo de orden no está seguro. El motor descarta líneas no textuales pero conserva viñetas y guiones de celdas vacías, y reconstruye la rejilla de tablas a partir de filas y columnas detectadas.
 
 ## Capacidades
 
-- OCR de documentos escaneados, fotografias de documentos y PDFs.
-- Salida en texto, HTML, Markdown, JSON, hOCR, ALTO y PDF.
-- Cajas delimitadoras por linea y bloque, con orden de lectura.
-- Etiquetado de 13 tipos de bloque (encabezados, listas, tablas, leyendas, notas al pie, formularios, formulas, figuras, etc.).
-- Extraccion de estructura de tablas (filas, columnas y celdas).
-- Deteccion de orientacion y deskew de pagina.
-- Deteccion de lineas con segunda pasada para texto muy pequeno.
-- Reconocimiento en alfabetos latino, cirilico y griego (en, ru, el).
-- Ejecucion en CPU (FP32 y FP16) y en GPU NVIDIA via TensorRT.
-- API Python (`carbon_ocr.Engine`) y CLI (`carbon-ocr ocr`).
-- No dispone de tool calling, agentes ni razonamiento multi-step; es un modelo image-to-text especializado.
+- Conversión de escaneos, fotografías de documentos y PDF a texto plano, HTML, Markdown y JSON con cajas delimitadoras.
+- Orden de lectura con bloques etiquetados (13 categorías: texto, encabezados, pies, listas, tablas, leyendas, notas al pie, formularios, figuras, fórmulas, etc.).
+- Detección y reconstrucción de estructura de tablas, incluyendo celdas y unión de tablas cortadas en dos.
+- Detección de orientación de página con 12 bins de 30 grados y soporte de CJK vertical en la clasificación.
+- Corrección de inclinación (deskew) de hasta 45 grados, gestionada por el motor Carbon-OCR.
+- Detección de líneas de texto y figuras, con segunda pasada para texto de tamaño muy reducido.
+- Reconocimiento de escritura latina, cirílica y griega (inglés, ruso y griego declarados).
+- Modelo de lenguaje de carácter 7-grama para puntuar y corregir las lecturas del reconocedor.
+- No dispone de tool calling, function calling, razonamiento multi-paso ni modo «thinking»: es un pipeline OCR especializado, no un modelo generativo de propósito general.
+- No soporta visión general más allá de la lectura de documentos ni audio.
 
 ## Casos de uso
 
-- Digitalizacion masiva de archivos escaneados: el modelo procesa lotes de imagenes o PDFs con `carbon-ocr ocr scans/*.png --device cuda` y devuelve HTML/Markdown estructurado, adecuado para ingestion en sistemas de gestion documental gracias a su velocidad (5,0 veces mas paginas por segundo que Tesseract en un nucleo).
-- Extraccion de tablas de facturas e informes: el submodelo `order` predice filas, columnas y celdas, permitiendo reconstruir tablas en HTML o JSON sin post-procesado manual, algo que Tesseract no ofrece (0,0 en tests de tablas).
-- Procesamiento de documentos multilingues en cirilico y griego: `rec-latin` cubre latin, cirilico y griego en un solo reconocedor, util para corpus en ruso y griego (48,0 en tests multilingues frente a 20,0 de Tesseract).
-- Indexacion de PDFs para RAG: la salida en Markdown con bloques etiquetados y orden de lectura facilita trocear documentos respetando secciones, listas y tablas antes de indexarlos en un pipeline de recuperacion.
-- Correccion de orientacion y deskew en escaneos de produccion: `orient` detecta paginas giradas (57,4 en paginas rotadas y skewed frente a 17,3 de Tesseract) y aplica el giro antes de la deteccion, reduciendo fallos en alimentadores automaticos de escaner.
-- Digitalizacion de formularios y documentos administrativos: las etiquetas Form, Table-Of-Contents y Page-Header/Footer permiten separar campos y estructura en documentos oficiales con diseños heterogeneos.
-- Despliegue en hardware modesto: al ser cuatro redes de menos de 1,6 M parametros en ONNX, puede ejecutarse en CPU de servidor o en GPU consumer, util para entornos sin acceso a aceleradores de gran escala.
+- Digitalización masiva de archivos administrativos: el motor procesa páginas en lote a 9,34 páginas por segundo en un solo núcleo de CPU, lo que permite convertir fondos documentales completos en texto buscable sin depender de GPU.
+- Extracción de tablas de informes financieros: el modelo de orden reconstruye filas, columnas y celdas, y declara 49,7 % de pruebas de tabla superadas en OmniParseBench, adecuado para poblar bases de datos a partir de balances y estados de resultados.
+- Procesamiento de facturas y formularios: la etiqueta de bloque «Form» y la salida JSON con cajas permiten mapear campos a un esquema estructurado en pipelines de contabilidad.
+- Indexación de documentación técnica multilingüe: al cubrir inglés, ruso y griego, sirve para digitalizar manuales y papers en estos idiomas y alimentar motores de búsqueda internos.
+- Digitalización de prensa histórica y documentos con columnas: el orden de lectura y la eliminación de encabezados y pies repetidos (73,9 % de pruebas superadas en olmOCR-Bench) facilitan la conversión de periódicos y revistas a texto lineal.
+- Despliegue en dispositivos de borde o entornos sin GPU: con 2,77 millones de parámetros y pesos ONNX en INT8, cabe en CPU de escritorio e incluso en hardware embebido para escaneo en oficina.
+- Preprocesado para pipelines de RAG: la salida en Markdown con estructura de bloques y tablas preserva el formato necesario para fragmentar documentos y alimentar sistemas de recuperación aumentada.
+- Automatización de accesibilidad documental: conversión de PDF escaneados a HTML estructurado para lectores de pantalla, conservando orden de lectura y jerarquía de encabezados.
 
 ## Benchmarks y rendimiento
 
-Resultados en las 2.937 paginas de OmniParseBench, grader `omni-parse-bench` 1.2.0 (scorer `unit_tests`), puntuaciones sobre 100:
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
-| Metrica | fullerene-3M | fullerene-3M FP16 CPU | Tesseract 5.5 |
+| Benchmark | Métrica | fullerene-3M | Referencia (Tesseract 5.5) |
 |---|---|---|---|
-| Headline (media de tres familias) | 43,5 | 43,5 | 5,9 |
-| Text (8.499 tests) | 26,2 | 26,2 | 17,8 |
-| Tables (5.386 tests) | 23,6 | 23,7 | 0,0 |
-| Layout (2.403 tests) | 80,6 | 80,5 | 0,0 |
-| Paginas leidas (fallidas); cobertura | 2.937 (0); 1,0000 | 2.937 (0); 1,0000 | 2.937 (0); 1,0000 |
+| OmniParseBench (2.937 páginas) | Headline (media de texto, tablas y layout) | 53,0 (54,0 con 7-grama) | 5,9 |
+| OmniParseBench | Pruebas de texto superadas (%) | 27,2 | 17,8 |
+| OmniParseBench | Pruebas de tabla superadas (%) | 49,7 | No puede superarlas (solo texto) |
+| OmniParseBench | Pruebas de layout superadas (%) | 81,9 | No disponible |
+| olmOCR-Bench | Headline (%) | 47,0 | 34,2 |
+| olmOCR-Bench | Pruebas de tabla superadas (%) | 54,3 | No disponible |
+| olmOCR-Bench | Encabezados y pies superados (%) | 73,9 | No disponible |
+| OmniDocBench v1.6 (páginas en inglés) | Distancia de edición de texto (menor es mejor) | 0,164 | 0,129 |
+| OmniDocBench v1.6 | Table TEDS | 51,1 | No disponible |
+| OmniDocBench v1.6 | Distancia de edición de orden de lectura (menor es mejor) | 0,287 | No disponible |
 
-Comparativa por tipo de documento (fullerene-3M frente a Tesseract 5.5): fotos de documentos 67,9 frente a 17,3; paginas rotadas y skewed 57,4 frente a 17,3; paginas reales 57,4 frente a 25,8; paginas multilingues 48,0 frente a 20,0; documentos ParseBench 70,3 frente a 48,6. Leido como motor de lineas (sus lineas como parrafos), fullerene-3M obtiene 26,6 en texto. En FP16 sobre CPU supera 33,4 tests totales, igual que FP32. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la informacion disponible, al no tratarse de un modelo de lenguaje.
+Rendimiento de velocidad declarado por el autor:
+
+| Entorno | Páginas por segundo |
+|---|---|
+| 1 núcleo de CPU de escritorio (INT8) | 9,34 |
+| Tesseract 5.5 en el mismo núcleo | 0,92 (fullerene-3M es 10,2 veces más rápido) |
+| 8 núcleos de CPU del escritorio | 53,2 |
+| RTX 4060 Ti con TensorRT (sostenido 5 minutos) | 209,9 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la model card; por el tamano (2,77 M parametros totales), el conjunto de pesos es del orden de decenas de MB, por lo que la huella de memoria es muy reducida.
-- GPU recomendadas: cualquier GPU NVIDIA compatible con TensorRT (`--device cuda`); no se especifican modelos concretos (A100, H100, RTX 4090).
-- Cabe en GPU consumer: si, dado el reducido numero de parametros; tambien funciona en CPU (FP32 y FP16).
-- Opciones de despliegue: Carbon-OCR (CLI `carbon-ocr` y API Python `carbon_ocr.Engine`), con ejecucion en CPU o GPU NVIDIA via TensorRT. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: 5,0 veces mas paginas por segundo que Tesseract 5.5 en un solo nucleo de CPU (seis procesos worker, paginas renderizadas a 200 dpi). No se proporcionan cifras absolutas de latencia.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 2,77 millones de parámetros en INT8 el conjunto de pesos ocupa del orden de unos pocos megabytes, más el modelo de lenguaje de 93,9 MB mapeado en memoria.
+- GPU recomendadas: el autor cita una RTX 4060 Ti con TensorRT alcanzando 209,9 páginas por segundo; no se detallan otras GPU.
+- Cabe holgadamente en cualquier GPU de consumo e incluso en CPU: el rendimiento en un solo núcleo de escritorio es de 9,34 páginas por segundo.
+- Opciones de despliegue: el motor oficial Carbon-OCR (C++/CUDA) que carga los cuatro modelos; pesos disponibles en ONNX y safetensors para integración en otros runtimes. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de pipeline OCR.
+- Latencia y throughput: 9,34 páginas/s por núcleo de CPU, 53,2 páginas/s con 8 núcleos y 209,9 páginas/s en RTX 4060 Ti con TensorRT, sostenido durante cinco minutos según el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Estructura de salida |
+| Modelo | Parámetros | Idiomas | Tablas y layout | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Fullerene 3M | OCR (4 redes ONNX) | 2.774.014 | no disponible | carbon-ocr-openrail-ams | Texto, HTML, Markdown, JSON, hOCR, ALTO, PDF con cajas y bloques |
-| Tesseract 5.5 | OCR clasico | no disponible | no disponible | Apache 2.0 (estandar) | Texto plano por lineas |
-| Otros OCR neuronales (p. ej. basados en transformers) | OCR/VLM | no disponible | no disponible | variable | Variable |
+| fullerene-3M | 2,77 M | en, ru, el | Sí (49,7 % pruebas de tabla en OmniParseBench; 81,9 % layout) | carbon-ocr-openrail-ams (propietaria) | safetensors, ONNX |
+| Tesseract 5.5 | No disponible | Muy amplio (incluye en, ru, el) | No (solo texto; 5,9 headline en OmniParseBench) | Apache 2.0 | Pesos propios (traineddata) |
+| Modelos OCR basados en VLM de gran tamaño (p. ej. familia olmOCR) | Del orden de miles de millones (no disponible el dato exacto) | Principalmente inglés | Sí, vía generación | Varía según modelo | safetensors, GGUF |
 
-Datos comparativos disponibles: en OmniParseBench, Fullerene 3M obtiene 43,5 de headline frente a 5,9 de Tesseract 5.5, 26,2 frente a 17,8 en texto, y 23,6/80,6 frente a 0,0/0,0 en tablas y layout. No se dispone de comparativas con otros motores OCR neuronales en la informacion proporcionada.
+La comparación directa con Tesseract es la que aporta el autor: fullerene-3M supera a Tesseract en OmniParseBench (53,0 frente a 5,9), en olmOCR-Bench (47,0 frente a 34,2) y en velocidad (10,2 veces más rápido por núcleo), aunque Tesseract obtiene mejor distancia de edición en texto plano en OmniDocBench (0,129 frente a 0,164). No se dispone de datos comparativos con otros modelos OCR neuronales en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no estandar (carbon-ocr-openrail-ams): es necesario revisar LICENSE-WEIGHTS.md antes de cualquier uso comercial; no es una licencia open source reconocida.
-- Cobertura limitada a tres idiomas (en, ru, el) y tres alfabetos (latino, cirilico, griego); no hay router de scripts, por lo que otros alfabetos no estan soportados.
-- Es un modelo OCR, no un modelo de lenguaje: no realiza razonamiento, generacion libre, tool calling ni agentes.
-- Riesgo de errores de reconocimiento en texto muy pequeno, manuscritos o tipografias atipicas; la deteccion incluye una segunda pasada para texto pequeno, pero no se documentan limites concretos.
-- El orden de lectura y la estructura de tablas dependen del submodelo `order` (481.677 parametros), con fallback a XY-cut cuando no esta seguro; casos ambiguos pueden producir bloques o celdas mal asignados.
-- El umbral de giro de `orient` esta fijado en 0,65 y almacenado en metadatos; cambiarlo requiere editar el modelo o la configuracion del motor.
-- No se documentan sesgos especificos ni tasas de alucinacion; al ser extractivo, el riesgo principal es la mala transcripcion, no la invencion de contenido.
-- El repositorio figura con 0.0 GB y 0 descargas en el momento de la consulta; la disponibilidad de los pesos ONNX y del motor Carbon-OCR debe verificarse en el repositorio y en GitHub.
+- Cobertura lingüística limitada a inglés, ruso y griego; no soporta otros alfabetos ni escrituras no latinas/cirílicas/griegas salvo la clasificación de orientación CJK vertical.
+- En texto plano, Tesseract obtiene mejor distancia de edición en OmniDocBench (0,129 frente a 0,164), por lo que para documentos sin tablas ni estructura compleja puede no ser la mejor opción.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false` en el model-index).
+- Licencia propietaria carbon-ocr-openrail-ams: es necesario revisar LICENSE-WEIGHTS.md antes de cualquier uso comercial; no es una licencia de código abierto estándar.
+- El modelo no es generativo ni conversacional: no admite tool calling, agentes ni razonamiento multi-paso, lo que limita su uso a pipelines OCR.
+- Riesgo de errores en documentos con tipografías inusuales, manuscritos, sellos o ruido extremo; no se documentan métricas para estos casos.
+- El modelo de lenguaje 7-grama está ajustado específicamente para este reconocedor y no es reutilizable como modelo de lenguaje general.
+- No se detallan sesgos conocidos ni composición del dataset de entrenamiento, lo que dificulta evaluar posibles sesgos en la lectura de determinados documentos.
+- El rendimiento de 209,9 páginas/s depende de TensorRT y de una GPU concreta (RTX 4060 Ti); en otros entornos las cifras pueden variar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/CarbonResearchLabs/fullerene-3M
+- Repositorio del motor Carbon-OCR: https://github.com/CarbonResearchLabs/Carbon-OCR
 - Licencia de pesos: https://huggingface.co/CarbonResearchLabs/fullerene-3M/blob/main/LICENSE-WEIGHTS.md
-- Repositorio del motor Carbon-OCR: https://github.com/karanvora2599/Carbon-OCR
+- Dataset de entrenamiento: https://huggingface.co/datasets/CarbonResearchLabs/fullerene-data
+- Benchmark OmniParseBench: https://huggingface.co/datasets/datalab-to/omni_parse_bench
+- Benchmark olmOCR-Bench: https://huggingface.co/datasets/allenai/olmOCR-bench
+- Benchmark OmniDocBench: https://huggingface.co/datasets/opendatalab/OmniDocBench

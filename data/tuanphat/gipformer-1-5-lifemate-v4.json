@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "TuanPhat/GipFormer-1.5-LifeMate-v4",
+  "slug": "tuanphat-gipformer-1-5-lifemate-v4",
+  "author": "TuanPhat",
+  "url": "https://huggingface.co/TuanPhat/GipFormer-1.5-LifeMate-v4",
+  "created_at": "2026-11-26T03:47:48.000Z",
+  "updated_at": "2026-11-26T04:27:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "zipformer-transducer",
+    "lifemate",
+    "vietnamese",
+    "int8",
+    "automatic-speech-recognition",
+    "vi",
+    "base_model:g-group-ai-lab/gipformer1.5-68M-rnnt",
+    "base_model:quantized:g-group-ai-lab/gipformer1.5-68M-rnnt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69651494,
+  "parameters_human": "69.7M",
+  "storage_bytes": 354144523,
+  "storage_human": "354 MB",
+  "context_length": null,
+  "base_model": "g-group-ai-lab/gipformer1.5-68M-rnnt",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

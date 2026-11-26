@@ -2,91 +2,105 @@
 
 ## Resumen
 
-Humaneness Voice Large 1.7 es un modelo de síntesis de voz expresiva (text-to-speech) desarrollado por LAION. Resuelve el problema de generar habla con control fino sobre la interpretación actoral: el usuario escribe el texto literal que debe pronunciarse y, por separado, describe la emoción, el ritmo, las pausas y las reacciones no verbales. Está disponible en inglés, alemán, francés, español y neerlandés.
+Humaneness Voice Large 1.7 es un modelo de síntesis de voz (text-to-speech) expresiva desarrollado por LAION, la organización sin ánimo de lucro alemana conocida por sus datasets abiertos de pares imagen-texto. El modelo parte de la arquitectura MOSS TTS (etiqueta `moss_tts_local` en Hugging Face) y se distribuye como un finetune del checkpoint `laion/Humaneness-Voice-Large-1.3-Alpha`. Con 4.129.990.144 parámetros (aproximadamente 4,13 mil millones), está orientado a la generación de habla con control fino de la interpretación: emoción, pausas, reacciones vocales y estilo conversacional.
 
-Se trata de un fine-tune supervisado sobre la rama Large 1.3 del mismo autor, con 4.129.990.144 parámetros totales (aproximadamente 4,13 mil millones) almacenados en safetensors. La versión 1.7 incluye los pesos completos ya fusionados con el adaptador rank-32 seleccionado (update 44.250 a escala 1.0), por lo que no requiere adjuntar adaptadores para inferencia ordinaria. No contiene la pila de adaptadores RL de las versiones 1.4/1.5.
+La propuesta diferencial frente a otros TTS es la separación explícita entre el texto que se pronuncia (`text`) y las instrucciones de dirección interpretativa (`prompt`), que se estructuran en dos bloques `GENERAL:` y `SCRIPT:`. Esto permite dirigir la actuación como si se tratase de un guion teatral, incluyendo duraciones objetivo y pausas entre corchetes. Además, admite clonación de voz mediante una grabación de referencia limpia de un solo hablante, o generar una voz sin referencia.
 
-El modelo es relevante porque separa explícitamente el contenido hablado de la dirección interpretativa, permite condicionamiento de identidad del hablante mediante una grabación de referencia de al menos 5,04 segundos y admite decodificación con guidance (CFG) para intensificar la actuación. La licencia CC-BY-4.0 facilita su uso comercial con atribución.
+El modelo cubre cinco idiomas (inglés, alemán, francés, español y neerlandés) y se publica bajo licencia CC-BY-4.0. La versión 1.7 incorpora una ruta de servicio optimizada en BF16 con referencias cacheadas, compilación con CUDA graphs/Inductor y decodificación optimizada de tokens acústicos, lo que reduce la latencia en despliegues de streaming y batch.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (implementación custom con `trust_remote_code=True`; pipeline `moss_tts_local`) |
-| Parametros totales | 4.129.990.144 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repo raíz se distribuye en FP32 y el cargador de inferencia usa BF16 en pesos y cómputo |
-| Idiomas soportados | en, de, fr, es, nl |
-| Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors (shards en la raíz) + `adapter/adapter.safetensors` para auditoría |
+| Arquitectura | MOSS TTS local (transformers, `moss_tts_local`), con codec de audio MOSS Audio Tokenizer v2 |
+| Parametros totales | 4.129.990.144 (~4,13 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Pesos raíz en FP32; la ruta de inferencia oficial usa BF16. Otras cuantizaciones no disponibles |
+| Idiomas soportados | Inglés (en), alemán (de), francés (fr), español (es), neerlandés (nl) |
+| Licencia | CC-BY-4.0 (el tokenizador MOSS Audio Tokenizer v2 mantiene sus propios términos) |
+| Formato de pesos | safetensors (FP32 en el repositorio); requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que se trata de un modelo de la familia MOSS TTS local (pipeline `moss_tts_local`) con implementación custom que requiere `trust_remote_code=True`. El modelo utiliza un códec externo, MOSS Audio Tokenizer v2 (OpenMOSS-Team), cargado por separado y sujeto a sus propios términos upstream. El modelo base es laion/Humaneness-Voice-Large-1.3-Alpha, sobre el que se aplicó un fine-tune supervisado.
+El modelo se basa en la familia MOSS TTS, una arquitectura de síntesis de voz que combina un modelo de lenguaje para la generación de tokens acústicos con un codec de audio (MOSS Audio Tokenizer v2) que reconstruye la forma de onda. El repositorio contiene los pesos completos fusionados de la versión 1.7, de modo que la inferencia ordinaria no requiere adjuntar adaptadores. La implementación es código personalizado (`custom_code`), por lo que es necesario revisar el código antes de cargarlo con `trust_remote_code=True`.
 
-La versión 1.7 fusiona el checkpoint supervisado Acting High-8654 con su adaptador de actuación rank-32 seleccionado (update 44.250 a escala 1.0). Es una rama supervisada nueva respecto a Large 1.3 y no incorpora la pila de adaptadores RL de 1.4/1.5. El repositorio incluye documentación de entrenamiento (TRAINING.md), procedencia (provenance.json), criterios de selección del checkpoint (stats/selection.json) y un script para entrenar adaptadores propios (training/train_reference.py). No se especifican en la información proporcionada el número de tokens de entrenamiento ni la composición del dataset.
-
-Una innovación destacable es el uso de true logit CFG (classifier-free guidance) o lotes de candidatos para intensificar la actuación, con CFG 2.5 como ajuste del showcase actual (no validado como óptimo universal). El condicionamiento de hablante recorta la referencia a 14,96 segundos antes de codificar, con un mínimo de 5,04 segundos de habla limpia de un único hablante.
+El modelo se ha afinado a partir de `laion/Humaneness-Voice-Large-1.3-Alpha` (relación `finetune`). La model card no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación principal documentada es el control condicionado de la interpretación mediante prompts estructurados: las duraciones y pausas solicitadas son condicionamiento aprendido, no límites de edición garantizados. En la parte de servicio, la versión 1.7 incorpora una ruta BF16 probada con referencias cacheadas, CUDA graphs/Inductor y decodificación optimizada de tokens acústicos y codec, con chunks de streaming crecientes.
 
 ## Capacidades
 
-- Síntesis de voz expresiva con control separado de texto literal y dirección interpretativa (emoción, entrega, pausas, reacciones vocales).
-- Dirección actoral mediante prompt estructurado con secciones `GENERAL` y `SCRIPT`, paréntesis para entrega local y corchetes para tiempos solicitados.
-- Condicionamiento de identidad del hablante mediante audio de referencia (mínimo 5,04 s de habla limpia, palabras distintas al texto objetivo).
-- Selección de voz plausible automática cuando no se aporta referencia.
-- Multilingüe en cinco idiomas: inglés, alemán, francés, español y neerlandés; las direcciones de actuación se escriben normalmente en inglés.
-- Guidance con CFG para reforzar la interpretación (CFG 1 equivale a guidance desactivado).
-- Generación controlada por semilla y duración solicitada en segundos.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso; no es un modelo de lenguaje general.
-- No se documenta capacidad de visión ni de audio de entrada más allá de la referencia de hablante.
+- Generación de voz expresiva con control de emoción, estilo conversacional, pausas y reacciones vocales (suspiros, jadeos, etc.).
+- Dirección interpretativa mediante prompt estructurado en bloques `GENERAL:` y `SCRIPT:`, con instrucciones locales entre paréntesis y control de duración/pausa entre corchetes.
+- Clonación de voz a partir de una grabación de referencia limpia de un solo hablante; también permite generar una voz sin referencia.
+- Multilingüe en cinco idiomas: inglés, alemán, francés, español y neerlandés. Las instrucciones de interpretación se recomienda mantenerlas en inglés.
+- Catálogo de recetas buscables: 40 emociones, 15 estilos de habla y 18 clases de vocalizaciones en cinco idiomas (455 combinaciones objetivo/idioma/condición).
+- Servicio en streaming y batch con ruta BF16 optimizada (CFG 2, temperatura 0,8).
+- No se documentan capacidades de tool calling, agentes, visión ni audio de entrada (ASR) en la información disponible.
 
 ## Casos de uso
 
-- Doblaje y localización de contenido: el modelo permite generar la misma interpretación en inglés, alemán, francés, español y neerlandés manteniendo direcciones actorales coherentes, lo que facilita producir versiones multilingües de un mismo guion.
-- Audiolibros y narración: la separación entre texto y dirección permite marcar pausas con corchetes de duración y cambios de tono con paréntesis, produciendo narraciones con ritmo controlado en lugar de lectura plana.
-- Videojuegos con diálogo ramificado: la generación por semilla y duración fija permite producir líneas de personaje reproducibles y ajustar la emoción por escena sin regrabar actores.
-- Asistentes de voz con identidad consistente: el condicionamiento por referencia de hablante permite mantener un timbre reconocible en conversaciones multi-turno, con la advertencia de que la preservación exacta de la voz no está garantizada.
-- Preproducción y prototipado de animación: los estudios pueden generar pistas temporales con marcas de tiempo solicitadas para validar ritmo y duración antes de contratar actores reales.
-- Accesibilidad y lectura en voz alta: la ventana de cinco idiomas y el control de pausas permiten generar audio comprensible para contenidos escritos, ajustando la entrega a un registro natural o formal.
-- Investigación en habla expresiva: el repositorio incluye audio de evaluación, mediciones de canary y scripts de entrenamiento de adaptadores, lo que permite reproducir experimentos y entrenar adaptadores propios con datos compatibles.
+- Doblaje y localización de contenido: el modelo permite generar la misma interpretación en inglés, alemán, francés, español y neerlandés manteniendo el control de emoción y pausas, lo que facilita adaptar un guion a varios mercados sin regrabar actores.
+- Audiolibros y narración expresiva: la separación entre `text` y `prompt` permite dirigir el ritmo, las pausas y el tono de cada pasaje, algo útil para narrativa con diálogos y cambios de registro emocional.
+- Asistentes de voz con personalidad: la clonación mediante referencia y el control de estilo conversacional permiten definir una identidad de voz consistente y un registro cercano en interacciones multi-turno.
+- Videojuegos y personajes interactivos: el catálogo de 40 emociones y 18 clases de vocalizaciones (suspiros, jadeos) cubre las necesidades de actuación de voz para personajes, con generación bajo demanda en lugar de grabaciones pregrabadas.
+- Prototipado rápido de voces para accesibilidad: generación de voz sin referencia para convertir texto en audio en aplicaciones de lectura asistida en los cinco idiomas soportados.
+- Producción de podcasts y contenido breve: la ruta de streaming con primer PCM en 0,470 s en una RTX 3090 y RTF de 0,2873 permite generar fragmentos de audio en tiempo casi real para flujos de publicación automatizados.
+- Investigación en habla expresiva: el manual interactivo con recetas validadas (`usable: true`) y las condiciones de evaluación held-out sirven como banco de pruebas reproducible para estudiar control prosódico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor proporciona audio de evaluación generado y puntuaciones registradas en el dataset laion/humaneness-voice-gemini-r32-cfg-eval, así como comparaciones de checkpoints y una demo de actuación en cinco idiomas, pero no se incluyen cifras de MMLU, HumanEval, GSM8K ni métricas TTS estándar (MOS, WER) en la información proporcionada.
+La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros). Sí incluye mediciones de rendimiento de inferencia en una RTX 3090 de 24 GiB, en flujo único, con CFG 2, temperatura 0,8 y tres repeticiones en caliente:
+
+| Modelo | GPU | Primer PCM vía HTTP local | RTF en dispositivo | Segundos de audio / segundo de cómputo |
+|---|---|---:|---:|---:|
+| Small 1.1 Alpha RL r128 v1 | RTX 3090, 24 GiB | 0,394 s | 0,1669 | 5,99 |
+| Large 1.7 | RTX 3090, 24 GiB | 0,470 s | 0,2873 | 3,48 |
+
+En una prueba offline corta con 16 candidatos y CFG 2, Large 1.7 alcanza 15,45 segundos de audio por segundo; el límite de batch desplegado es 8. El primer PCM es una medición HTTP local; el RTF incluye el tiempo de TTS más codec dividido por la duración generada. La reproducción en navegador, el ASR, el LLM y la carga en frío se miden por separado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con 4,13 mil millones de parámetros, los pesos en FP32 ocupan aproximadamente 16,5 GB y en BF16 aproximadamente 8,3 GB, a lo que hay que sumar el códec externo y las activaciones.
-- El repositorio completo ocupa 25,7 GB, incluyendo shards, adaptador y material de evaluación.
-- GPU recomendadas: no disponibles en la información proporcionada; el autor indica instalar una build de PyTorch con CUDA para el servidor.
-- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por el tamaño en BF16 es plausible en GPUs con 16 GB o más, pero no está verificado por el autor.
-- Opciones de despliegue: el flujo oficial es `transformers` con `trust_remote_code=True` mediante `infer.py` o la API Python (`infer.load()`, `api.load_codec()`, `infer.generate_codes()`, `api.decode()`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El autor menciona una guía de optimizaciones de inferencia (INFERENCE_OPTIMIZATIONS.md) con true logit CFG y lotes de candidatos, pero sin cifras en la información proporcionada.
+- VRAM estimada: con 4,13 mil millones de parámetros, en BF16 los pesos ocupan aproximadamente 8,3 GB; en FP32, unos 16,5 GB. La VRAM total necesaria depende del codec de audio, las referencias cacheadas y los buffers de streaming; no se publica una cifra cerrada.
+- GPU recomendadas: la model card documenta y valida una RTX 3090 de 24 GiB. GPU de gama profesional como A100 o H100 son compatibles por capacidad, aunque no hay mediciones publicadas para ellas.
+- Cabe en GPU de consumo: sí, al menos en una RTX 3090 de 24 GiB según las mediciones oficiales. No se documenta su funcionamiento en GPU con menos VRAM.
+- Opciones de despliegue: el repositorio incluye `infer.py` como ruta de referencia de utterance completa, más una ruta de servicio BF16 con CUDA graphs/Inductor y streaming. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: primer PCM de 0,470 s vía HTTP local, RTF de 0,2873 y 3,48 segundos de audio por segundo de cómputo en flujo único sobre RTX 3090. El modelo Small alcanza 5,99 segundos de audio por segundo de cómputo en la misma GPU.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (TTS expresivo multilingüe de tamaño similar) con datos verificables de parámetros, contexto, rendimiento y licencia.
+No se dispone de datos de benchmarks ni de especificaciones comparables de otros modelos TTS en la información proporcionada. La única comparación documentada es interna, frente a la variante Small 1.1 Alpha RL r128 v1 de la misma familia:
+
+| Modelo | Parámetros | Idiomas | RTF (RTX 3090) | Audio s / cómputo s | Licencia |
+|---|---|---|---|---|---|
+| Humaneness Voice Large 1.7 | 4,13 mil M | en, de, fr, es, nl | 0,2873 | 3,48 | CC-BY-4.0 |
+| Humaneness Voice Small 1.1 Alpha RL r128 v1 | No disponible | No disponible | 0,1669 | 5,99 | No disponible |
+
+Comparativas con alternativas de la misma categoría (por ejemplo, otros TTS expresivos multilingües): no disponible.
 
 ## Limitaciones y advertencias
 
-- La preservación exacta de la voz a partir de la referencia no está garantizada; la referencia mejora la señal de identidad, pero no la asegura.
-- Las duraciones solicitadas con corchetes son peticiones aprendidas, no límites duros de edición de audio.
-- El ajuste CFG 2.5 es el del showcase actual y no un óptimo demostrado para todas las escenas ni para el runtime fusionado.
-- Los manuales de prompting de 1.5/1.6 y sus recomendaciones de adaptadores se midieron sobre otros pesos; no deben apilarse adaptadores en 1.7 solo por coincidir en rank o nombre de fichero.
-- Riesgo de alucinación no documentado en la información disponible; al ser un modelo TTS, el riesgo principal es una entrega o prosodia no deseada, no la invención de contenido factual.
-- Sesgos conocidos: no documentados en la información disponible; al ser un modelo multilingüe entrenado por LAION, cabe esperar sesgos de los datos de habla no especificados.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; el códec externo MOSS Audio Tokenizer v2 mantiene sus propios términos upstream, que deben revisarse por separado.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código custom del repositorio; conviene auditar la implementación antes de desplegar en producción.
-- El showcase de evaluación crece a medida que terminan 2.200 condiciones; un caso pendiente no equivale a una actuación correcta.
+- Los tiempos solicitados en el prompt (duraciones y pausas) son condicionamiento aprendido, no límites de edición garantizados; el audio generado puede desviarse de lo pedido.
+- El modelo requiere `trust_remote_code=True` y ejecuta código personalizado; es imprescindible revisar el código antes de cargarlo en producción.
+- Solo se soportan cinco idiomas (en, de, fr, es, nl); no se documenta cobertura fuera de ellos.
+- No se han publicado datos sobre sesgos, tasas de alucinación o fidelidad de la clonación de voz. La clonación de voces plantea riesgos de suplantación y requiere consentimiento explícito del hablante de la referencia.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero el tokenizador MOSS Audio Tokenizer v2 conserva sus propios términos, que deben verificarse por separado.
+- La ruta de inferencia `infer.py` es una referencia de utterance completa; los flags de servicio optimizado no la modifican automáticamente, por lo que el rendimiento en producción depende de usar la ruta de servicio BF16.
+- Las mediciones de rendimiento se limitan a una RTX 3090 y a flujo único; no hay datos publicados de escalado multi-GPU ni de latencia en otros aceleradores.
+- No se documentan capacidades de tool calling, agentes, visión ni entrada de audio, por lo que no debe asumirse que las tenga.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-1.7
 - Modelo base: https://huggingface.co/laion/Humaneness-Voice-Large-1.3-Alpha
-- Códec externo MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
-- Comparación de checkpoints: https://laion-humaneness-voice-gemini-r32-cfg-comparison.static.hf.space/index.html
-- Showcase de actuación en cinco idiomas: https://laion-humaneness-voice-gemini-r32-cfg-comparison.static.hf.space/showcase.html
-- Dataset de evaluación y puntuaciones: https://huggingface.co/datasets/laion/humaneness-voice-gemini-r32-cfg-eval
-- Manuales de prompting 1.5/1.6: https://laion-humaneness-voice-large-prompting-manuals.static.hf.space/synthesis/index.html
-- Documentación interna del repo: PROMPTING.md, INFERENCE_OPTIMIZATIONS.md, TRAINING.md, provenance.json, stats/selection.json, stats/inference_canary.json, stats/merge-canary-listening.html, examples/canary, training/train_reference.py
+- Tokenizador de audio MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
+- Vídeo de presentación: https://youtu.be/rSRAkc1jAJQ
+- Manual interactivo de prompting con audio: https://laion-humaneness-voice-large-1-7-prompting-manual.static.hf.space/
+- Guía de prompting (PROMPTING.md): https://huggingface.co/laion/Humaneness-Voice-Large-1.7/blob/main/PROMPTING.md
+- Recetas legibles por máquina (recipes.jsonl): https://huggingface.co/laion/Humaneness-Voice-Large-1.7/blob/main/manual/recipes.jsonl
+- Guía para agentes (AGENT_GUIDE.md): https://huggingface.co/laion/Humaneness-Voice-Large-1.7/blob/main/manual/AGENT_GUIDE.md
+- Recetas de optimización y tablas de hardware (ROBBY_RTX3090.md): https://huggingface.co/laion/Humaneness-Voice-Large-1.7/blob/main/ROBBY_RTX3090.md
+- Notas de inferencia y batching (INFERENCE_OPTIMIZATIONS.md): https://huggingface.co/laion/Humaneness-Voice-Large-1.7/blob/main/INFERENCE_OPTIMIZATIONS.md
+- Cambio de modelos en Robby: https://github.com/christophschuhmann/cartoon-face-generator/blob/main/robby/voice-assistant/LARGE17.md
+- Sitio de LAION: https://laion.ai/
+- Proyectos de LAION: https://laion.ai/projects/
+- LAION en Wikipedia: https://en.wikipedia.org/wiki/LAION

@@ -2,113 +2,109 @@
 
 ## Resumen
 
-kniv-v7-xlarge-d-en es un encoder transformer multi-tarea en ingles desarrollado por Dragonscale (dragonscale-ai) sobre microsoft/deberta-v3-large. Resuelve dos problemas en una sola pasada: por un lado, ofrece una capa de analisis linguistico completo (POS, morfologia, lemas, NER, arboles de dependencias, roles semanticos, acto de dialogo y sentimiento por oracion, y correferencia); por otro, una capa de extraccion de conocimiento contra un esquema definido en tiempo de inferencia, es decir, el usuario nombra los tipos de entidad y las relaciones que le interesan y el modelo extrae hechos con polaridad, modalidad, titular y marca temporal.
+kniv-v7-xlarge-d-en es un encoder transformer multi-tarea en inglés desarrollado por Dragonscale (dragonscale-ai) y publicado en Hugging Face bajo licencia Apache-2.0. Se construye sobre microsoft/deberta-v3-large (538M parámetros) y se distribuye exclusivamente en formato ONNX (fp16 e int8), junto con el tokenizer, los ficheros de configuración y el paquete Python `kniv_v7` que convierte texto en resultados estructurados. Su pipeline declarado es token-classification, pero en la práctica cubre una capa lingüística completa y una capa de extracción de conocimiento.
 
-El modelo tiene 538 millones de parametros y procesa ventanas de hasta 512 subwords, con un maximo de 512 palabras por ventana segun la model card. Se distribuye en formato ONNX (grafos fp16 e int8) junto con el tokenizer, la configuracion y el paquete Python `kniv_v7`, de modo que todo lo necesario para ejecutarlo esta en el propio repositorio. La licencia es Apache-2.0.
+El modelo resuelve dos problemas en una sola pasada: por un lado, ofrece análisis lingüístico denso (POS, morfología, lemas, entidades nombradas, árboles de dependencias, roles semánticos, acto de diálogo y sentimiento por oración, y correferencia); por otro, extrae hechos contra un esquema definido en tiempo de inferencia, incluyendo polaridad, modalidad, titular y tiempo de cada hecho. Esto lo hace relevante para memoria de agentes conversacionales, grafos de conocimiento, búsqueda y analítica documental, donde normalmente se encadenan varios modelos especializados.
 
-Su relevancia actual esta en el nicho de memoria de agentes y construccion de grafos de conocimiento: al ser un encoder pequeno y determinista, permite extraer entidades y relaciones sin depender de un LLM generativo, con menor coste y menor riesgo de alucinacion. Forma parte de una familia de cinco modelos (tiny, small, large, xlarge-d y xlarge-u) donde este actua como teacher.
+La ventana de entrada es de hasta 512 palabras por ventana (512 subvocablos), está entrenado solo para inglés y su tamaño de repositorio es de 17,1 GB, coherente con múltiples grafos ONNX cuantizados. La versión documentada es kniv v7.1.2 (`deberta-v3-large-v7b8ev`, 2026-11-13), con iteraciones previas v7.1.1, v7.1 y v7.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder multi-tarea (DeBERTa-v3-large) |
+| Arquitectura | Transformer encoder multi-tarea (base: microsoft/deberta-v3-large) |
 | Parametros totales | 538M |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | hasta 512 palabras por ventana (512 subwords) |
-| Tipos de cuantizacion | fp16, int8 |
-| Idiomas soportados | ingles (en) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 512 palabras por ventana (512 subvocablos) |
+| Tipos de cuantizacion | fp16, int8 (ONNX) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (grafos fp16 e int8) |
-| Modelo base | microsoft/deberta-v3-large |
-| Version | kniv v7 (`deberta-v3-large-v7b8ev`), 2026-10-20 |
-| Libreria | onnx (onnxruntime) |
-| Tamano del repositorio | 12,9 GB |
-| Pipeline declarado | token-classification |
+| Formato de pesos | ONNX (grafos fp16 e int8), tokenizer y configuración incluidos en el repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de DeBERTa-v3-large, un encoder transformer con atencion disentangled y embeddings de posicion relativos, y anade cabezas multi-tarea para las distintas capas de analisis. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se empleo RLHF o DPO; esa informacion no esta disponible. Si se explicita la version de entrenamiento (`deberta-v3-large-v7b8ev`, fechada el 2026-10-20).
+El modelo es un encoder transformer multi-tarea derivado de DeBERTa-v3-large, que emplea atención desacoplada y un encoder de posiciones relativas; no se trata de un modelo generativo ni de un MoE. Sobre esa base, Dragonscale añade cabezas de predicción para tareas lingüísticas (POS, morfología, lematización, NER, parsing de dependencias, etiquetado de roles semánticos, clasificación de acto de diálogo y sentimiento, correferencia) y para extracción de conocimiento (entidades y relaciones definidas por esquema, con polaridad, modalidad, titular y tiempo asociados a cada hecho). El diseño trata a cada hablante de una conversación como una entidad, de modo que una frase como «I live in Berlin» produce el hecho `(user, lives in, Berlin)`.
 
-La innovacion principal no es arquitectonica sino de interfaz: el modelo acepta en inferencia un esquema de relaciones definido por el usuario (un nombre y una descripcion opcional) y devuelve hechos estructurados con polaridad, modalidad, titular y tiempo, ademas del analisis linguistico. En conversaciones, cada hablante se trata como una entidad, de forma que "I moved to Lisbon" produce el hecho `(user, lives in, Lisbon)`. El repositorio incluye un fichero GUIDE.md que compara este modelo con su hermano kniv-v7-xlarge-u-en y documenta como sortear sus modos de fallo conocidos.
+La información disponible no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron RLHF o DPO; el modelo es un encoder discriminativo, por lo que esas técnicas no encajan en su paradigma. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal. Lo que sí se explicita es la existencia de un modelo hermano, kniv-v7-xlarge-u-en (base UltraBERT-380M, 485M parámetros), que comparte diseño y sirve como alternativa cuando se prioriza otro equilibrio entre tareas; esta variante «d» se recomienda cuando se busca un mejor rendimiento en parsing, NER, roles semánticos y relaciones enciclopédicas. La familia incluye además estudiantes destilados: kniv-v7-tiny-en (55M, base ettin-encoder-17m), kniv-v7-small-en (76M, ettin-encoder-32m), kniv-v7-medium-en (122M, ettin-encoder-68m) y kniv-v7-large-en (221M, base ModernBERT-base).
 
 ## Capacidades
 
-- Analisis linguistico: etiquetado POS (UPOS), morfologia, lematizacion, reconocimiento de entidades nombradas, parsing de dependencias, etiquetado de roles semanticos y resolucion de correferencia.
-- Clasificacion a nivel de oracion: acto de dialogo y analisis de sentimiento.
-- Extraccion de conocimiento segun esquema: entidades de los tipos indicados y hechos para las relaciones indicadas, con polaridad, modalidad, titular y tiempo.
-- Relaciones de documento completo (document-level relation extraction).
-- Clasificacion de relaciones y NER en modo zero-shot sobre tipos no vistos.
-- Memoria conversacional y de agente: modela hablantes como entidades para construir hechos persistentes.
-- Soporte para construccion de grafos de conocimiento.
-- No dispone de generacion de texto, razonamiento generativo, codigo, matematicas, vision, audio ni tool calling; es un encoder de extraccion, no un modelo conversacional.
+- Análisis lingüístico completo en inglés: etiquetado POS (UPOS), morfología, lematización, entidades nombradas, árboles de dependencias, roles semánticos, correferencia, acto de diálogo y sentimiento por oración.
+- Extracción de entidades y relaciones contra un esquema definido en tiempo de inferencia, sin fine-tuning (zero-shot a nivel de esquema).
+- Extracción de hechos con metadatos: polaridad, modalidad, titular y tiempo de cada hecho.
+- Modelado de conversaciones multi-turno: cada hablante se trata como entidad, lo que permite construir memoria de agente y de conversación.
+- Salida apta para grafos de conocimiento y pipelines de information extraction.
+- Clasificación zero-shot de relaciones y NER zero-shot sobre tipos no vistos.
+- No es un modelo generativo: no produce texto libre, no hace tool calling ni razonamiento multi-paso por sí mismo; su función es analítica y extractiva.
 
 ## Casos de uso
 
-- Memoria de agentes conversacionales: el modelo procesa los turnos de una conversacion y extrae hechos del tipo `(user, lives in, Lisbon)` con su polaridad y tiempo, lo que permite mantener una memoria estructurada y auditable del usuario entre sesiones sin recurrir a un LLM generativo.
-- Construccion de grafos de conocimiento: dado un esquema de entidades y relaciones, extrae tripletas de documentos completos (relation extraction a nivel de documento) para poblar bases de datos de conocimiento o motores de busqueda semantica.
-- Enriquecimiento de pipelines de busqueda y analitica documental: el analisis linguistico completo (POS, dependencias, roles semanticos) permite indexar documentos con estructura sintactica y semantica, mejorando el filtrado y la recuperacion.
-- Extraccion de informacion en dominios con esquema propio: al aceptar el esquema en inferencia, se puede adaptar a dominios como contratos, informes o articulos sin fine-tuning, usando las relaciones y entidades que defina el equipo.
-- Analisis de conversaciones y atencion al cliente: la clasificacion de actos de dialogo y sentimiento por oracion permite medir la evolucion de una conversacion y detectar frustracion o intenciones sin un modelo generativo.
-- Anonimizacion y analisis de entidades: el NER con F1 de 0,87 en OntoNotes permite localizar personas, organizaciones y lugares en textos para tareas de redaccion o cumplimiento, revisando siempre los resultados.
-- Preprocesado para pipelines de NLP: al ser un encoder ONNX cuantizado (fp16/int8), se puede desplegar en CPU o GPU modesta como etapa de preprocesado determinista antes de un modelo mayor.
+- Memoria de agentes conversacionales: el modelo procesa los turnos de una conversación y emite hechos del tipo `(usuario, vive en, Berlín)` con polaridad y tiempo, que se almacenan en una memoria estructurada consultable por el agente en turnos posteriores.
+- Construcción de grafos de conocimiento: a partir de documentos en inglés se extraen entidades y relaciones según un esquema propio, con lo que se puebla un KG sin entrenar un extractor a medida para cada dominio.
+- Búsqueda y analítica documental: el análisis de dependencias, roles semánticos y correferencia permite indexar pasajes por estructura lingüística y resolver menciones, mejorando la recuperación sobre corpus en inglés.
+- Enriquecimiento de pipelines de NLP existentes: sustituye a varias herramientas encadenadas (POS, lematizador, NER, parser, SRL) por una sola pasada ONNX, lo que simplifica el despliegue y reduce la latencia agregada.
+- Análisis de opinión y diálogo: la clasificación de sentimiento y acto de diálogo por oración sirve para monitorizar conversaciones de soporte, moderación o investigación cualitativa.
+- Extracción zero-shot en dominios nuevos: al definir el esquema en inferencia, se pueden extraer tipos de entidad y relación no vistos durante el entrenamiento (por ejemplo, en dominios científicos o industriales) sin reentrenar.
+- Preprocesado para modelos generativos: la salida estructurada (entidades, hechos, dependencias) puede alimentar a un LLM como contexto compacto y verificable, reduciendo alucinaciones en tareas posteriores.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente):
+Resultados declarados por el autor en la model card (no verificados de forma independiente; `verified: false`):
 
-| Tarea | Dataset | Metrica | Valor |
+| Tarea | Dataset (split) | Metrica | Valor |
 |---|---|---|---|
 | Part-of-speech tagging | UD English EWT (test) | UPOS accuracy | 0,982 |
 | Dependency parsing | UD English EWT (test) | LAS | 0,929 |
 | Named entity recognition | OntoNotes 5.0 (test) | span F1 | 0,870 |
 | Semantic role labeling | PropBank EWT (test) | end-to-end argument F1 | 0,810 |
-| Coreference resolution | LitBank (test) | CoNLL F1 | 0,692 |
+| Coreference resolution | LitBank (test) | CoNLL F1 | 0,697 |
 | Document-level relation extraction | Re-DocRED (test) | F1 (gold entities) | 0,733 |
 | Document-level relation extraction | Re-DocRED (test) | F1 (end to end) | 0,627 |
 | Zero-shot relation classification | FewRel (15 unseen, train+validation) | macro F1, m=5 | 0,731 |
 | Zero-shot NER | CrossNER (test) | span F1, media de 4 dominios | 0,533 |
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni comparativas con modelos de la misma categoria.
+No se han publicado en la información disponible resultados de benchmarks comparativos con otros modelos de la misma categoría.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 538M parametros, en fp16 el modelo ocupa aproximadamente 1,1 GB de pesos; en int8, alrededor de 0,55 GB. Hay que sumar el overhead de onnxruntime y de los buffers de activacion, por lo que un presupuesto realista es de 2-4 GB en fp16 y 1-2 GB en int8.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen holgado. Para lotes grandes o alto throughput, A100 o H100 no son necesarias dado el tamano del modelo.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 20xx en adelante) y tambien en CPU mediante onnxruntime.
-- Opciones de despliegue: onnxruntime (unica via documentada, con el paquete `kniv_v7` incluido en el repositorio). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- El repositorio ocupa 17,1 GB e incluye varios grafos ONNX (fp16 e int8); el espacio en disco necesario depende de qué variantes se descarguen.
+- VRAM estimada para inferencia: con 538M parámetros, en fp16 el peso ronda 1,1 GB y en int8 unos 0,55 GB; a ello hay que sumar activaciones y buffers de runtime, por lo que un presupuesto de 2-4 GB de VRAM es razonable para lotes pequeños en fp16.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 en lotes pequeños; A100, H100, L40S o RTX 4090 para mayor throughput y lotes grandes.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090, especialmente con la variante int8.
+- Opciones de despliegue: ONNX Runtime (dependencia declarada por el autor), con soporte de ejecución en CPU y GPU; el paquete `kniv_v7` incluido en el repo gestiona el preprocesado y la orquestación. No se documentan integraciones con vLLM, TGI, llama.cpp ni Ollama (no aplicables a un encoder ONNX de este tipo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| kniv-v7-xlarge-d-en | 538M | 512 subwords | Encoder multi-tarea + extraccion de conocimiento | Apache-2.0 |
-| kniv-v7-xlarge-u-en | 485M | no disponible | Mismo diseno sobre UltraBERT-380M; mejor en relaciones conversacionales | Apache-2.0 |
-| kniv-v7-large-en | 221M | no disponible | Estudiante destilado sobre ModernBERT-base | Apache-2.0 |
-| microsoft/deberta-v3-large | 435M | 512 tokens | Encoder base, sin cabezas multi-tarea | MIT |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| kniv-v7-xlarge-d-en | 538M | 512 subvocablos | Encoder multi-tarea ONNX (lingüística + extracción de conocimiento) | Apache-2.0 | Hugging Face (ONNX) |
+| kniv-v7-xlarge-u-en | 485M | 512 subvocablos (declarado en su ficha) | Mismo diseño, base UltraBERT-380M; mejor en otras tareas | Apache-2.0 | Hugging Face |
+| kniv-v7-large-en | 221M | no disponible | Estudiante destilado, base ModernBERT-base | Apache-2.0 | Hugging Face |
+| microsoft/deberta-v3-large | 435M (aprox., según ficha del modelo base) | 512 subvocablos | Encoder base, sin cabezas multi-tarea | MIT | Hugging Face |
 
-La model card indica que kniv-v7-xlarge-d-en ofrece un parsing, NER, roles semanticos y relaciones enciclopedicas ligeramente mejores que su hermano xlarge-u, mientras que este ultimo se orienta a relaciones conversacionales. No se dispone de comparativas de rendimiento frente a modelos de extraccion de terceros en la informacion proporcionada.
+La comparación con alternativas de propósito general (por ejemplo, pipelines de spaCy o Stanford Stanza) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no soporta otros idiomas.
-- Ventana de 512 subwords (hasta 512 palabras por ventana): los documentos mas largos requieren segmentacion y el modelo puede perder contexto entre ventanas.
-- No es un modelo generativo: no produce texto, razonamiento libre, codigo ni respuestas conversacionales.
-- Riesgo de error en la extraccion: la model card desaconseja actuar sobre los hechos extraidos sin revision en contextos donde los errores importan (decisiones medicas, legales, financieras o de empleo sobre personas).
-- Zero-shot NER limitado: F1 de 0,533 de media en CrossNER, muy por debajo del rendimiento supervisado; conviene validar el esquema antes de usarlo en produccion.
-- Correferencia moderada: CoNLL F1 de 0,692 en LitBank, con margen de mejora.
-- Sesgos: no se documentan sesgos especificos en la informacion disponible; al entrenarse sobre corpus en ingles, es esperable que herede sesgos de esos datos.
-- Uso comercial: permitido por Apache-2.0, pero la model card excluye explicitamente el perfilado de individuos sin consentimiento.
-- Dependencia del ecosistema ONNX y del paquete `kniv_v7` incluido en el repositorio; no hay integracion documentada con frameworks de inferencia genericos.
+- Solo inglés: el modelo no soporta otros idiomas, y su uso fuera del inglés queda explícitamente fuera de alcance.
+- Ventana de 512 subvocablos: los documentos largos deben trocearse en ventanas, lo que puede romper la correferencia y las relaciones a nivel de documento.
+- Riesgo de alucinación y de extracción incorrecta: al ser un extractor, puede generar entidades o hechos espurios; el autor recomienda revisión humana en dominios sensibles (médico, legal, financiero o decisiones laborales sobre personas).
+- Rendimiento zero-shot limitado: el span F1 medio en CrossNER es 0,533, sensiblemente inferior al rendimiento supervisado, por lo que los esquemas nuevos requieren validación.
+- Correferencia moderada: CoNLL F1 de 0,697 en LitBank indica margen de error apreciable en textos largos o literarios.
+- Uso comercial permitido por Apache-2.0, pero con las obligaciones habituales de la licencia (atribución y aviso de cambios); no se documentan restricciones adicionales.
+- Prohibición de perfilado de individuos sin consentimiento, según la model card.
+- Los benchmarks están declarados por el autor y marcados como no verificados; no deben tomarse como resultados auditados.
+- El despliegue requiere ONNX Runtime y el paquete `kniv_v7` incluido en el repositorio; no hay integración documentada con servidores de inferencia estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
 - Modelo hermano: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
-- Modelo tiny: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
-- Modelo small: https://huggingface.co/dragonscale-ai/kniv-v7-small-en
-- Modelo large: https://huggingface.co/dragonscale-ai/kniv-v7-large-en
+- Guía comparativa (GUIDE.md): https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en/blob/main/GUIDE.md
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
-- Organizacion: https://huggingface.co/dragonscale-ai
-- Guia de uso y modos de fallo: GUIDE.md dentro del repositorio del modelo (https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en/blob/main/GUIDE.md)
+- kniv-v7-tiny-en: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
+- kniv-v7-small-en: https://huggingface.co/dragonscale-ai/kniv-v7-small-en
+- kniv-v7-medium-en: https://huggingface.co/dragonscale-ai/kniv-v7-medium-en
+- kniv-v7-large-en: https://huggingface.co/dragonscale-ai/kniv-v7-large-en
+- Organización en Hugging Face: https://huggingface.co/dragonscale-ai

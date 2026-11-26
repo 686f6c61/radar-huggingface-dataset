@@ -2,105 +2,84 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ3.5e-mtp es una version cuantizada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. Se trata de una conversion a 3 bits mediante cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.1.dev1), empaquetada en formato MLX safetensors para su ejecucion en el framework MLX de Apple. El repositorio ocupa 89,8 GB y declara 179.999.981.459 parametros totales, lo que situa al modelo base en la categoria de aproximadamente 180.000 millones de parametros.
+Qwen3.8-Flash-Next-oQ3.5e-mtp es una cuantizacion mixta del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry. No se trata de un modelo entrenado desde cero, sino de un checkpoint cuantizado con la herramienta oQ (oMLX v0.7.4.dev1) en formato MLX, pensado para ejecucion en hardware Apple Silicon. El checkpoint completo ocupa 97,4 GB en disco (90,655 GiB de pesos) y contiene 180.000 millones de parametros logicos.
 
-El modelo no aporta pesos originales ni entrenamiento propio: es exclusivamente una redistribucion optimizada para inferencia con memoria reducida. Su relevancia practica esta en permitir ejecutar un modelo de esa escala en hardware con memoria unificada de Apple Silicon, donde de otro modo el modelo en precision completa no cabria. El sufijo "mtp" del nombre aparece en el identificador del repositorio, pero la model card no documenta su significado, por lo que no se puede confirmar a que hace referencia.
+La relevancia de esta publicacion reside en el esquema de cuantizacion mixta: combina capas en 3, 4, 6 y 8 bits con grupos de 64 o 128, ademas de una tabla de embeddings N-gram cuantizada a 4 bits con grupo 32, logrando un promedio efectivo de 4,058 bits por peso (excluyendo la tabla N-gram) o 4,326 bits por peso para el checkpoint completo. Esto permite reducir un modelo de gran tamano a un tamano manejable en equipos con memoria unificada de gama alta.
 
-La informacion publicada es muy limitada. No hay pipeline declarado, no hay licencia indicada, no hay idiomas declarados y no se han publicado resultados de benchmarks. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion comunitaria conocida. Cualquier evaluacion de calidad debe hacerse contra el modelo base, no contra esta cuantizacion.
+El modelo incluye componentes diferenciados: un language model de 125.744B de pesos logicos, una tabla de embeddings N-gram de 51.200B, un modulo de vision de 0,449B y una cabeza MTP (multi-token prediction) de 2,607B. La presencia de vision y MTP sugiere capacidades multimodales y de decodificacion especulativa, aunque la model card no detalla el entrenamiento original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag interno del repositorio indica "qwen4_exp"; no se detalla la arquitectura) |
-| Parametros totales | 179.999.981.459 (segun metadatos de safetensors) |
-| Parametros activos | no disponible (no se especifica si el modelo base es MoE) |
+| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; incluye language model, vision, N-gram embedding y MTP head) |
+| Parametros totales | 179.999.981.459 (180.000B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 3 bits, group size 64, cuantizacion de precision mixta (oQ / oMLX v0.7.1.dev1) |
+| Tipos de cuantizacion | Mixta: affine 3-bit grupo 64, 4-bit grupo 64, 6-bit grupo 64, 8-bit grupo 128, 8-bit grupo 64, BF16, N-gram affine 4-bit grupo 32 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | MLX safetensors (libreria mlx) |
-| Tamano del repositorio | 89,8 GB |
-| Modelo base | Qwen/Qwen3.8-Flash-Next |
-| Fecha de creacion | 2026-10-12 |
-| Ultima actualizacion | 2026-10-12 |
+| Formato de pesos | safetensors (formato MLX), libreria mlx |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base dentro de la informacion proporcionada. El unico dato tecnico estructural es el tag "qwen4_exp" que el autor incluye en los metadatos, que sugiere una variante experimental de la familia Qwen, pero no se documenta ni el tipo de capa de atencion, ni si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni el numero de capas o dimensiones del modelo.
+La informacion disponible no describe la arquitectura interna del modelo base Qwen3.8-Flash-Next ni su proceso de entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO). Lo que si se detalla es la composicion del checkpoint cuantizado: un language model de 125.744B de pesos logicos almacenado en 62,971 GB, una tabla de embeddings N-gram de 51.200B en 32,000 GB, un modulo de vision de 0,449B en 0,898 GB y una cabeza MTP de 2,607B en 1,471 GB.
 
-Respecto al proceso de cuantizacion, la model card indica que se aplico cuantizacion de precision mixta con oQ (oMLX v0.7.1.dev1) a 3 bits con group size de 64. La precision mixta implica que distintas capas o tensores pueden conservar una precision distinta de la nominal de 3 bits, y que los parametros con mayor impacto en la calidad se cuantizan de forma mas conservadora. El repositorio, de 89,8 GB, es coherente con esa mezcla: una cuantizacion uniforme de 3 bits sobre 180.000 millones de parametros ocuparia aproximadamente 67,5 GB solo en pesos, de modo que los 22 GB adicionales corresponden a escalas, sesgos de cuantizacion, tensores mantenidos en mayor precision y otros metadatos. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras), ya que este repositorio no entrena el modelo.
+La innovacion tecnica destacable es el esquema de cuantizacion mixta de oQ, que asigna precision variable segun la sensibilidad de cada tensor. El 44,739% de los pesos logicos se almacena en 3 bits (3,50 bits efectivos), el 23,815% en 4 bits (4,50 bits efectivos) y el 28,445% corresponde a la tabla N-gram en 4 bits con grupo 32 (5,00 bits efectivos). Solo el 0,287% de los pesos permanece en BF16. La cabeza MTP apunta a decodificacion especulativa o prediccion multi-token, una tecnica habitual para acelerar la inferencia.
 
 ## Capacidades
 
-No se dispone de documentacion de capacidades especifica para esta cuantizacion. Las capacidades heredadas del modelo base no estan descritas en la informacion proporcionada. Como referencia de lo que no se puede confirmar:
-
-- Generacion de texto: no documentada en la informacion disponible.
-- Razonamiento y matematicas: no documentado.
-- Generacion de codigo: no documentado.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentado (el campo de idiomas esta vacio).
-- Capacidades multimodales (vision, audio): no documentado.
-- Modo de razonamiento explicito ("thinking mode"): no documentado.
-- Capacidad de prediccion multi-token: no documentada; el sufijo "mtp" del nombre no se explica en la model card.
-
-Se recomienda consultar la model card y la documentacion del modelo base Qwen/Qwen3.8-Flash-Next para conocer las capacidades reales antes de asumir cualquiera de las anteriores.
+- Generacion de texto y razonamiento: el componente language model de 125.744B de pesos soporta las capacidades del modelo base Qwen3.8-Flash-Next, si bien la model card no las enumera.
+- Vision: incluye un modulo de vision de 0,449B de pesos, lo que indica capacidad multimodal de entrada de imagen.
+- Prediccion multi-token (MTP): la cabeza dedicada de 2,607B de pesos sugiere soporte de decodificacion especulativa para acelerar la generacion.
+- Embeddings N-gram: la tabla de 51.200B de pesos logicos apunta a un mecanismo de recuperacion o memorizacion de secuencias, no detallado en la informacion disponible.
+- Tool calling, function calling y agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicaciones plausibles dado el tamano del modelo y el formato de despliegue, pero no estan avalados por evaluaciones publicadas de esta cuantizacion. Deben validarse con pruebas propias antes de llevarlos a produccion.
-
-- Inferencia local en estaciones de trabajo Apple Silicon: el modelo esta empaquetado en MLX safetensors, por lo que el caso de uso principal es ejecutarlo en un Mac con memoria unificada suficiente (96 GB o mas) mediante mlx-lm, sin depender de GPUs dedicadas ni de servicios en la nube. Es el escenario mas realista y alineado con el formato publicado.
-- Procesamiento por lotes de documentos en local: para equipos que necesitan resumir, clasificar o extraer informacion de grandes volumenes de texto sin enviar datos a terceros, una cuantizacion de 3 bits reduce el coste de memoria frente a la version completa a cambio de cierta perdida de calidad.
-- Asistentes de codigo autoalojados: si el modelo base conserva capacidades de generacion de codigo, esta variante permitiria integrarlo en un IDE o en un servidor interno con mlx_lm.server, manteniendo el codigo fuente dentro de la organizacion.
-- Investigacion sobre cuantizacion de precision mixta: el repositorio es un caso de estudio util para medir el impacto de oQ con 3 bits y group size 64 sobre un modelo de ~180.000 millones de parametros, comparando contra el modelo base y contra otras configuraciones de cuantizacion.
-- Prototipado de agentes con contexto largo: si el modelo base soporta ventanas de contexto amplias y tool calling, esta version permitiria levantar un prototipo de agente en hardware local antes de escalar a una version sin cuantizar.
-- Generacion de datos sinteticos y anotacion asistida: para crear conjuntos de datos de entrenamiento o evaluacion en un entorno controlado, donde la perdida de calidad por cuantizacion es tolerable y el coste de inferencia es el factor critico.
-- Sustitucion de APIs de pago en entornos con requisitos de soberania de datos: organizaciones que no pueden enviar prompts a proveedores externos pueden desplegar el modelo en su propio hardware, siempre que la licencia (no declarada) lo permita.
+- Inferencia local en Apple Silicon de gama alta: el formato MLX y el tamano de 97,4 GB permiten ejecutar el modelo en equipos con memoria unificada de 128 GB o superior, como Mac Studio o MacBook Pro con M-series Max/Ultra, sin depender de GPUs dedicadas.
+- Prototipado de aplicaciones multimodales: el modulo de vision integrado permite experimentar con tareas de imagen y texto en local, util para validar pipelines antes de migrar a infraestructura cloud.
+- Investigacion sobre cuantizacion mixta: el checkpoint sirve como caso de estudio reproducible del esquema oQ, con desglose de bits por componente, para analizar el impacto de la precision variable en la calidad de salida.
+- Evaluacion de decodificacion especulativa: la cabeza MTP permite medir ganancias de throughput en comparacion con decodificacion autoregresiva estandar en hardware Apple.
+- Generacion de texto asistida en entornos con requisitos de privacidad: al ejecutarse en local, los datos no salen del dispositivo, adecuado para prototipos con informacion sensible.
+- Benchmarking de recuperacion N-gram: la tabla de embeddings de 51.200B de pesos logicos permite estudiar el comportamiento de mecanismos de memorizacion de secuencias en tareas de continuacion de texto.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-El repositorio no incluye tablas comparativas, no declara evaluaciones en MMLU, HumanEval, GSM8K ni en ninguna otra suite, y registra cero descargas y cero "likes", por lo que tampoco existen evaluaciones de terceros conocidas. Cualquier cifra que se quiera usar debe medirse directamente contra el modelo base Qwen/Qwen3.8-Flash-Next para cuantificar la degradacion introducida por la cuantizacion a 3 bits.
-
 ## Requisitos de hardware
 
-- VRAM o memoria unificada estimada: los pesos ocupan 89,8 GB. Para inferencia en MLX hay que anadir el espacio de trabajo del runtime y la cache KV, cuyo tamano depende de la longitud de contexto y de la arquitectura (no documentada). Como orientacion, se necesita un equipo con al menos 96 GB de memoria unificada y, para contextos largos o trabajo comodo, 128-192 GB.
-- Equipos Apple Silicon compatibles: Mac Studio con M2 Ultra de 192 GB, Mac Studio con M3 Ultra en configuraciones de 96, 192 o 256 GB, o Mac Pro con memoria equivalente. Un Mac con 64 GB o menos no puede cargar el modelo.
-- GPU dedicadas: el formato publicado es MLX, que no se ejecuta sobre CUDA ni ROCm. Para usar una GPU NVIDIA o AMD habria que reconvertir los pesos a otro formato (por ejemplo GGUF o safetensors en precision completa), lo que no esta cubierto por este repositorio.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual (24 GB o menos), ni siquiera en una RTX 4090 o RTX 5090, por tamano de pesos.
-- Opciones de despliegue: MLX con mlx-lm (carga de modelos, generacion y servidor compatible con la API de OpenAI mediante mlx_lm.server). No se proporcionan pesos en GGUF, por lo que llama.cpp, Ollama y LM Studio no pueden consumir directamente este repositorio. vLLM y TGI no soportan el formato MLX.
-- Latencia y throughput: no disponibles. Dependeran del chip concreto (ancho de banda de memoria), de la longitud de contexto y del backend de MLX. No hay cifras publicadas para este repositorio.
+- VRAM/memoria unificada estimada: 97,4 GB de almacenamiento en disco; para inferencia en memoria se requiere al menos ~90,7 GiB de pesos mas overhead de activaciones y cache KV, por lo que se recomienda un minimo de 128 GB de memoria unificada.
+- GPU recomendadas: el formato MLX esta optimizado para Apple Silicon (M1/M2/M3/M4 en variantes Max y Ultra). No hay informacion sobre soporte en GPUs NVIDIA o AMD.
+- Cabe en consumer GPU: no en GPUs de consumo convencionales (RTX 4090 con 24 GB queda muy lejos). Solo es viable en equipos Apple con memoria unificada de 128 GB o superior.
+- Opciones de despliegue: mlx (libreria declarada), oMLX para cuantizacion. No se indica soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre cuantizaciones alternativas comparables del mismo modelo base en la documentacion proporcionada. La unica comparacion posible con los datos disponibles es contra el modelo original.
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp | 180.000B (4,326 bits/peso) | no disponible | MLX safetensors | no disponible | Hugging Face, 231 descargas |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Formato | Cuantizacion | Tamano | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp | 179.999.981.459 | MLX safetensors | 3 bits, group size 64, precision mixta | 89,8 GB | no disponible | publico en Hugging Face, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible en esta informacion | no disponible | sin cuantizar | no disponible | no disponible | publico en Hugging Face |
-
-No se han identificado en la informacion disponible otros modelos comparables de la misma categoria (mismo orden de parametros y mismo proposito de despliegue local). Cualquier comparacion adicional requeriria consultar el catalogo de Hugging Face y la documentacion del modelo base.
+No se dispone de informacion sobre alternativas comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion agresiva a 3 bits: es una precision muy baja para un modelo de ~180.000 millones de parametros. Aunque la precision mixta de oQ mitiga parte del dano, cabe esperar degradacion en tareas sensibles a la precision, como razonamiento multi-paso, matematicas y generacion de codigo. No hay benchmarks publicados que cuantifiquen esa perdida.
-- Licencia no declarada: el repositorio no indica licencia. Esto impide determinar si el uso comercial esta permitido. Ademas, al ser una obra derivada, la licencia efectiva depende de la del modelo base Qwen/Qwen3.8-Flash-Next, que debe consultarse antes de cualquier uso en produccion.
-- Sin validacion comunitaria: cero descargas y cero "likes". No hay evidencia de que los pesos se hayan cargado correctamente, de que la conversion sea fiel ni de que el modelo funcione como se espera. Se recomienda verificar la integridad y comparar salidas contra el modelo base.
-- Riesgo de alucinacion: no documentado para esta variante. Al no haber evaluaciones, no se puede estimar la tasa de alucinacion ni su comportamiento en dominios especializados.
-- Idiomas no declarados: se desconoce que idiomas soporta y con que calidad. No se puede asumir buen rendimiento en castellano sin pruebas.
-- Contexto no declarado: se desconoce la longitud de contexto maxima. Esto afecta directamente al consumo de memoria en inferencia, ya que la cache KV crece con la longitud de secuencia.
-- Compatibilidad de hardware restringida: al estar en formato MLX, el modelo solo es utilizable en Apple Silicon. No hay pesos en GGUF ni en safetensors estandar para CUDA.
-- Ambiguedad del nombre: el sufijo "mtp" y la etiqueta "qwen4_exp" no se explican en la model card. No se debe inferir ninguna capacidad a partir de ellos.
-- Ausencia de datos de entrenamiento y alineacion: al ser una cuantizacion, no hay informacion sobre el proceso de entrenamiento, los datos utilizados ni las tecnicas de alineacion del modelo base en este repositorio.
+- La cuantizacion mixta a 3-4 bits puede degradar la calidad respecto al modelo base en tareas sensibles a precision, como matematicas o razonamiento de multiples pasos; no se aportan evaluaciones que lo cuantifiquen.
+- El checkpoint esta en formato MLX y depende de la libreria mlx; no es portable directamente a ecosistemas CUDA o ROCm sin conversion.
+- La licencia no esta declarada en la informacion disponible, lo que impide confirmar si se permite uso comercial. Es imprescindible verificar la licencia del modelo base Qwen/Qwen3.8-Flash-Next antes de cualquier despliegue en produccion.
+- El autor indica que el modelo se recuantizo el 2026-11-11 con oMLX v0.7.4.dev1 y recomienda volver a descargarlo si se tenia una copia anterior; versiones previas pueden presentar diferencias.
+- No hay informacion sobre sesgos, idiomas soportados, riesgo de alucinacion ni limites de contexto.
+- El repositorio tiene 0 likes y 231 descargas, lo que sugiere una validacion comunitaria limitada.
+- El modulo de vision y la cabeza MTP anaden complejidad de despliegue; no se documenta como activarlos o si requieren codigo adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
-
-Nota: los resultados de busqueda web proporcionados corresponden a enlaces de Instagram y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios de evaluacion ni demos asociados a este repositorio en la informacion disponible.
+- Herramienta oQ / oMLX: https://github.com/jundot/omlx

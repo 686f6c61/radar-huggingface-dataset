@@ -53,20 +53,14 @@
     {
       "task": "Khmer text-line OCR",
       "dataset": "KHOB (all 4,018 lines)",
-      "metric": "CER (%)",
-      "value": 4.5
+      "metric": "CER (%) with the word checker",
+      "value": 3.6
     },
     {
       "task": "Khmer text-line OCR",
       "dataset": "KHOB (all 4,018 lines)",
       "metric": "Lines fully right (%)",
-      "value": 58.8
-    },
-    {
-      "task": "Khmer text-line OCR",
-      "dataset": "Cambodian decrees 1993-2003 (12 held-out pages, 238 lines)",
-      "metric": "CER (%)",
-      "value": 2.09
+      "value": 65.1
     }
   ],
   "sources": []

@@ -2,91 +2,93 @@
 
 ## Resumen
 
-EfficientNet-B1 es un modelo de clasificación de imágenes preentrenado en ImageNet-1k, desarrollado originalmente por Tan y Le en 2019 y publicado en el paper «EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks». La comunidad LiteRT (sucesor de TensorFlow Lite) ha publicado una versión convertida a formato TFLite, lista para su uso en dispositivos edge. El modelo utiliza compound scaling para equilibrar profundidad, anchura y resolución, lo que permite obtener una precisión elevada con un coste computacional reducido en comparación con arquitecturas tradicionales.
+EfficientNet B1 es un modelo de clasificación de imágenes de tipo red neuronal convolucional (CNN) presentado por Mingxing Tan y Quoc V. Le en el artículo "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks" (2019). Esta ficha concreta corresponde a la conversión publicada por la comunidad `litert-community`, que distribuye los pesos originales de `google/efficientnet-b1` en formato TensorFlow Lite (`.tflite`) listos para su ejecución con el runtime LiteRT (antes TensorFlow Lite) de Google.
 
-La variante disponible en Hugging Face incluye un archivo TFLite de 40.2 MB y, según la model card, una cuantización weight-only int8 que reduce el tamaño aproximadamente 3.5 veces respecto a float32. El modelo tiene 7.794.184 parámetros y está diseñado para tareas de clasificación de imágenes en 1000 clases. Al tratarse de un modelo de visión, no aplica el concepto de longitud de contexto ni soporte de lenguaje natural.
+El modelo resuelve la clasificación de imágenes en 1.000 categorías de ImageNet-1k y su interés principal es práctico: ofrece un artefacto ligero (unos 0,1 GB de repositorio, 7,79 millones de parámetros) pensado para inferencia en dispositivos de borde, móviles y entornos embebidos donde no se dispone de GPU. Incluye además una variante con cuantización de solo pesos a int8 que reduce el tamaño aproximadamente 3,5 veces respecto a float32.
 
-## Especificaciones técnicas
+La relevancia actual del modelo no reside en su precisión (un 78,55 % de top-1 en la validación de ImageNet-1k, por debajo de los 79,838 % declarados para el modelo original), sino en su utilidad como componente de clasificación rápida, de bajo coste computacional y desplegable en hardware modesto dentro de pipelines de visión por computador.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | EfficientNet-B1 (red neuronal convolucional basada en bloques MBConv con compound scaling) |
-| Parámetros totales | 7.794.184 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo de visión) |
-| Tipos de cuantización | Weight-only int8 (según model card) |
-| Idiomas soportados | No aplica (clasificación de imágenes) |
-| Licencia | No disponible |
-| Formato de pesos | TFLite (LiteRT) |
+| Arquitectura | CNN EfficientNet (compound scaling de profundidad, anchura y resolución), con bloques MBConv y módulos SE |
+| Parametros totales | 7.794.184 |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de lenguaje) |
+| Tipos de cuantizacion | float32 (original) y weight-only int8 con activaciones float32 (`efficientnet_b1_weight_only_wi8_afp32.tflite`) |
+| Idiomas soportados | no disponible (no procesa texto) |
+| Licencia | no disponible (la model card remite a las licencias de PyTorch Vision y del dataset de entrenamiento) |
+| Formato de pesos | TFLite (`.tflite`), ejecutable con ai-edge-litert |
 
 ## Arquitectura y entrenamiento
 
-EfficientNet-B1 es una red neuronal convolucional basada en bloques MBConv (inverted residual blocks) con conexiones residuales y capas de squeeze-and-excitation (SE). La innovación principal del paper original es el compound scaling, que escala de forma sistemática la profundidad, la anchura y la resolución de entrada mediante un coeficiente compuesto, logrando una mejor relación precisión-coste que escalar una sola dimensión.
+EfficientNet B1 es una red convolucional que aplica el escalado compuesto propuesto por Tan y Le: en lugar de escalar solo la profundidad, la anchura o la resolución de entrada de forma aislada, el método busca un coeficiente conjunto que equilibre las tres dimensiones. La familia EfficientNet se construye a partir de bloques MBConv (convoluciones invertidas con conexiones residuales) e incorpora módulos de atención Squeeze-and-Excitation (SE) y activaciones SiLU. El modelo B1 es el segundo de la familia, con 7.794.184 parámetros.
 
-El modelo base fue preentrenado en ImageNet-1k y posteriormente convertido a TFLite por litert-community. Según la model card, la conversión incluye una cuantización weight-only int8 (archivo `efficientnet_b1_weight_only_wi8_afp32.tflite`) que reduce el tamaño de los pesos un 3.5x respecto a float32. Se optó por cuantización weight-only en lugar de dynamic-range porque las capas SE y SiLU son sensibles a la cuantización de activaciones. En una comprobación de 10 imágenes, el modelo cuantizado coincidió con el modelo float en 9 de 10 predicciones top-1, con una correlación logit de 0.996.
+El entrenamiento se realizó sobre ImageNet-1k (1.000 clases), según indica la model card, que cita como origen los pesos preentrenados de PyTorch Vision. No se detallan en la información disponible el número de tokens (no aplica), la composición exacta del dataset más allá de ImageNet-1k ni si hubo fases de ajuste fino adicionales. La conversión a TFLite la realiza la comunidad `litert-community`; la variante cuantizada usa cuantización de solo pesos en lugar de cuantización de rango dinámico porque las capas SE y SiLU de EfficientNet son sensibles a la cuantización de activaciones, según explica el autor.
 
 ## Capacidades
 
-- Clasificación de imágenes en 1000 clases del dataset ImageNet-1k.
-- Modelo preentrenado, listo para inferencia directa o para fine-tuning en tareas específicas.
-- Formato TFLite/LiteRT optimizado para ejecución en dispositivos edge y móviles.
-- Cuantización weight-only int8 disponible para reducir el tamaño del modelo.
-- No soporta generación de texto, tool calling, ni razonamiento multi-step.
-- No soporta detección de objetos, segmentación semántica ni otras tareas de visión más allá de la clasificación.
-- Capacidades multilingües: no aplica, al tratarse de un modelo de visión.
+- Clasificación de imágenes en 1.000 categorías de ImageNet-1k (top-1 y top-5).
+- Extracción de logits por clase para su uso como cabecera de clasificación o como base para ajuste fino.
+- Inferencia en dispositivos de borde y móviles mediante el runtime LiteRT (ai-edge-litert).
+- Ejecución con entrada de imagen RGB normalizada (media [0.485, 0.456, 0.406], desviación [0.229, 0.224, 0.225]) y redimensionado a 240×240 píxeles según el script de ejemplo de la model card.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de visión.
+- No dispone de capacidades multilingües (no procesa lenguaje).
+- No dispone de modo "thinking", visión generativa, audio ni otras capacidades multimodales.
 
 ## Casos de uso
 
-- Clasificación de imágenes en aplicaciones móviles: el modelo puede integrarse en apps Android o iOS mediante LiteRT para clasificar objetos en tiempo real, aprovechando su tamaño reducido (40.2 MB) y su formato TFLite optimizado para dispositivos edge.
-- Control de calidad industrial: se puede usar para clasificar defectos en piezas manufacturadas a partir de imágenes capturadas por cámaras en línea, con fine-tuning sobre un dataset propio de la planta.
-- Vigilancia y seguridad perimetral: el modelo permite clasificar escenas o eventos (vehículos, personas, animales) en cámaras edge, sin necesidad de enviar imágenes a la nube, reduciendo latencia y costes de ancho de banda.
-- Agricultura de precisión: clasificar enfermedades en hojas de cultivo o tipos de malas hierbas mediante imágenes capturadas con drones o sensores de campo, tras un fine-tuning con datos agrícolas específicos.
-- Asistencia visual para personas con discapacidad: integrar el modelo en una aplicación que describe objetos del entorno en tiempo real, ayudando a usuarios con baja visión a identificar elementos cotidianos.
-- Filtrado de contenido en plataformas sociales: clasificar automáticamente imágenes subidas por usuarios en categorías (violencia, desnudos, etc.) para moderación, usando el modelo como clasificador base.
-- Reconocimiento de especies en aplicaciones de naturaleza: identificar aves, insectos o plantas a partir de fotografías, con fine-tuning sobre datasets específicos de biodiversidad.
+- Clasificación de imágenes en aplicaciones móviles: el modelo se distribuye en TFLite y se ejecuta con ai-edge-litert, por lo que puede integrarse en apps Android/iOS para etiquetar fotos localmente sin enviar datos a la nube.
+- Prefiltrado en pipelines de visión: usar el modelo como primera etapa para descartar o etiquetar imágenes antes de pasarlas a modelos más grandes y costosos, aprovechando sus 7,79 M de parámetros y su bajo coste de inferencia.
+- Moderación de contenido básica: clasificación rápida de imágenes en categorías genéricas para señalizar contenido que requiera revisión humana posterior.
+- Sistemas embebidos y IoT con recursos limitados: la variante int8 de solo pesos reduce el tamaño aproximadamente 3,5 veces, lo que permite desplegarlo en dispositivos con poca memoria y sin acelerador de GPU.
+- Etiquetado automático de datasets: generar etiquetas preliminares de ImageNet sobre grandes colecciones de imágenes para acelerar el etiquetado manual o para auditorías de calidad de datos.
+- Extracción de características para tareas downstream: usar las activaciones intermedias como representación visual en tareas de recuperación de imágenes o clasificación con pocos ejemplos, partiendo de los pesos preentrenados en ImageNet-1k.
+- Prototipado rápido de demos de visión: el script de ejemplo de la model card permite tener una clasificación funcional con `pip install numpy Pillow huggingface_hub ai-edge-litert` y un único comando.
 
 ## Benchmarks y rendimiento
 
-Según el model-index oficial publicado en Hugging Face, los resultados sobre el dataset ImageNet-1k (split validation) son los siguientes:
+Resultados declarados por el autor en la model card (no verificados):
 
-| Métrica | Valor |
-|---|---|
-| Top-1 Accuracy (Full Precision) | 0.7855 (78.55%) |
-| Top-5 Accuracy (Full Precision) | 0.9419 (94.19%) |
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| ImageNet-1k (validation) | Top-1 accuracy (float32) | 0,7855 |
+| ImageNet-1k (validation) | Top-5 accuracy (float32) | 0,9419 |
 
-Nota: la model card del modelo original reporta una precisión top-1 de 79.838% y top-5 de 94.934% para los pesos PyTorch originales. El benchmark del repositorio (78.55% top-1) corresponde a la evaluación del modelo convertido a TFLite. No se han publicado resultados de benchmarks para la variante cuantizada weight-only int8; solo se indica una comprobación informal de 10 imágenes con 9 coincidencias en top-1.
+La model card indica además que el modelo original declara 79,838 % de top-1 y 94,934 % de top-5 en ImageNet-1K. Para la variante cuantizada int8 de solo pesos, el autor reporta una comprobación puntual sobre 10 imágenes en la que coincide con la predicción top-1 del modelo float en 9 de 10 casos, con una correlación de logits de 0,996. No se han publicado en la información disponible resultados de la variante cuantizada sobre el conjunto completo de validación.
 
 ## Requisitos de hardware
 
-- El modelo tiene 7.794.184 parámetros; el archivo TFLite disponible pesa 40.2 MB.
-- VRAM estimada para inferencia: menos de 1 GB en GPU; el modelo también puede ejecutarse en CPU.
-- GPU recomendadas: cualquier GPU moderna (RTX 3060, A100, H100, etc.) o aceleradores edge como Google Edge TPU.
-- Cabe en GPU de consumo: sí, incluso en GPUs integradas o en dispositivos móviles.
-- Opciones de despliegue: LiteRT (runtime de Google), TensorFlow Lite, y posibles conversiones a ONNX o CoreML.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no aplica en el sentido habitual; el modelo está pensado para CPU y aceleradores de borde. El repositorio completo ocupa 0,1 GB.
+- GPU recomendadas: no se especifican; el runtime LiteRT está orientado a CPU, GPU móvil y NPU de dispositivos, no a GPUs de servidor.
+- ¿Cabe en GPU de consumo? Sí, con holgura: con 7,79 M de parámetros, el modelo float32 ocupa del orden de decenas de megabytes, por lo que cabe en cualquier GPU de consumo e incluso en memoria de móvil.
+- Opciones de despliegue: ai-edge-litert (Python), runtime LiteRT para Android/iOS, y conversión a otros formatos si se requiere. No se documentan en la información disponible despliegues con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de visión TFLite).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. Por tamaño y tarea, este modelo es comparable a otros CNN ligeros como EfficientNet-B0 o MobileNetV3, pero no se han proporcionado sus métricas de rendimiento ni licencias. A continuación se muestra la información disponible:
+| Modelo | Parametros | Contexto / entrada | Top-1 ImageNet-1k | Licencia | Formato |
+|---|---|---|---|---|---|
+| litert-community/efficientnet_b1 | 7.794.184 | Imagen 240×240 | 0,7855 (declarado) | no disponible | TFLite |
+| google/efficientnet-b1 (original) | 7.794.184 | Imagen 240×240 | 79,838 % (declarado en la model card) | no disponible | PyTorch |
+| Otras variantes de EfficientNet (B0, B2, etc.) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| EfficientNet-B1 (este) | 7.794.184 | No aplica | No disponible | TFLite/LiteRT |
-| EfficientNet-B0 | No disponible | No aplica | No disponible | No disponible |
-| MobileNetV3 | No disponible | No aplica | No disponible | No disponible |
+La comparativa se limita al modelo original del que deriva esta conversión, ya que la información proporcionada no incluye datos de otras alternativas comparables (por ejemplo, MobileNetV3 o ResNet-50). No se dispone de cifras verificadas de latencia ni de precisión de la variante cuantizada sobre el conjunto completo de validación.
 
 ## Limitaciones y advertencias
 
-- El modelo se entrenó en ImageNet-1k, un dataset con sesgos geográficos y culturales (principalmente imágenes occidentales y objetos comunes), lo que puede producir clasificaciones incorrectas en contextos no representados.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero el modelo puede devolver clasificaciones erróneas con alta confianza en imágenes fuera de distribución.
-- Limitación funcional: solo clasificación de imágenes en 1000 clases. No soporta detección de objetos, segmentación, ni texto.
-- Restricciones de licencia: la licencia del modelo no está disponible. Los pesos provienen de PyTorch Vision y del dataset ImageNet; es responsabilidad del usuario verificar los términos de uso antes de desplegarlo en producción.
-- Caveat de producción: la variante cuantizada weight-only int8 puede presentar pequeñas diferencias de precisión (en la comprobación informal, 9 de 10 coincidencias). Para aplicaciones críticas, se recomienda validar el rendimiento con el dataset objetivo.
+- Sesgos conocidos: el modelo se entrena sobre ImageNet-1k, un dataset con sesgos documentados en la literatura (representación desigual de clases, contextos geográficos y culturales); no se detallan análisis de sesgo específicos en la información disponible.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de clasificaciones erróneas con alta confianza en imágenes fuera de la distribución de ImageNet-1k.
+- Limitaciones de contexto o idioma: no procesa texto ni lenguaje; solo clasifica imágenes en las 1.000 clases de ImageNet-1k. No admite entradas de resolución arbitraria sin el preprocesado adecuado.
+- Restricciones de licencia para uso comercial: la licencia no está disponible en la información proporcionada. La model card advierte de que los pesos derivan de PyTorch Vision y del dataset de entrenamiento, y que es responsabilidad del usuario determinar si tiene permiso para su caso de uso. No debe asumirse uso comercial libre sin verificar las licencias de origen.
+- Caveats para producción: la variante cuantizada solo se ha validado con una comprobación puntual de 10 imágenes, no sobre el conjunto completo de validación; conviene validar la precisión en el dominio concreto antes de desplegarla. El modelo es de 2019 y su precisión es inferior a la de arquitecturas más recientes; para tareas de alta exigencia puede ser insuficiente. La conversión la mantiene una comunidad, no Google, por lo que no hay garantía de soporte oficial.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/efficientnet_b1
-- GitHub LiteRT: https://github.com/google-ai-edge/litert
-- Documentación de LiteRT: https://developers.google.com/edge/litert
+- Modelo en Hugging Face: https://huggingface.co/litert-community/efficientnet_b1
+- Modelo base: https://huggingface.co/google/efficientnet-b1
 - Paper original: https://arxiv.org/abs/1905.11946
-- Modelo base en Hugging Face: https://huggingface.co/google/efficientnet-b1
+- Repositorio de etiquetas ImageNet-1k: https://huggingface.co/datasets/huggingface/label-files
+- Runtime LiteRT (ai-edge-litert): no disponible en la información proporcionada
+- Repositorio de PyTorch Vision: no disponible en la información proporcionada

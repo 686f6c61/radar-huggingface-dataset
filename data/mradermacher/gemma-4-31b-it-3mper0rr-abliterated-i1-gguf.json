@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/gemma-4-31B-it-abliterated-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-i1-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "mradermacher/gemma-4-31b-it-heretic-ara-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/gemma-4-31b-it-heretic-ara-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "gemma4:31b - ollama.com",
-      "url": "https://ollama.com/library/gemma4:31b",
-      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
-    },
-    {
-      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
-      "url": "https://gemma4.org/",
-      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
-    },
-    {
-      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
-      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
-      "snippet": "What abliteration is and which models are worth running: Qwen 3.6, Gemma 4 Heretic, Llama 4, Hermes 3 — direct GGUF links matched to your VRAM, all free."
-    }
-  ]
+  "sources": []
 }

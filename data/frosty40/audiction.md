@@ -2,107 +2,98 @@
 
 ## Resumen
 
-Audiction es un modelo de normalización de texto para inglés, diseñado para convertir texto escrito en la forma hablada que debería pronunciar un sistema de text-to-speech (TTS). Por ejemplo, transforma "Doors open at 7:30 pm on 11/21" en "Doors open at seven thirty p m on November twenty-first". Lo desarrolla Frosty40 y se distribuye bajo licencia Apache 2.0. Se trata de un fine-tune de `google/byt5-small`, un modelo encoder-decoder de arquitectura T5 que opera a nivel de bytes, con aproximadamente 300 millones de parámetros (299.637.760 según los pesos en safetensors).
+Audiction es un modelo de normalización de texto para síntesis de voz (TTS), desarrollado por el usuario Frosty40 y publicado en Hugging Face bajo licencia Apache 2.0. Su función es convertir texto escrito en inglés en la forma hablada que un motor TTS debería pronunciar: expande números, fechas, monedas, unidades, acrónimos, direcciones web y correos electrónicos en palabras. No es un modelo generativo general, sino un componente especializado que se coloca delante de cualquier voz TTS.
 
-El modelo resuelve un problema muy concreto en pipelines de síntesis de voz: la expansión de números, fechas, monedas, abreviaturas, números romanos, acrónimos y unidades a su forma verbal. Su diseño es híbrido: un conjunto de reglas deterministas (`verbalize.py`) resuelve los casos seguros en unos 45 µs por frase, y el modelo solo interviene cuando las reglas no pueden decidir con certeza. Esta arquitectura reduce el riesgo de alucinación típico de los modelos generativos en tareas de normalización.
+Técnicamente es un fine-tuning de `google/byt5-small`, un transformer encoder-decoder byte-level con unos 299,6 millones de parámetros. Al operar a nivel de byte, evita problemas de vocabulario y tokenización con símbolos raros, cifras y formatos heterogéneos, algo habitual en tareas de normalización. El modelo se integra en un pipeline híbrido donde unas reglas deterministas en `verbalize.py` resuelven los casos seguros y el modelo solo interviene en las frases que las reglas dejan abiertas.
 
-Es relevante para desarrolladores que construyen asistentes de voz, lectores de pantalla, guiones de radio o sistemas que encadenan salidas de LLM con un motor TTS, porque la normalización correcta es un paso previo imprescindible para una pronunciación natural y comprensible.
+Su relevancia práctica está en que la normalización textual es un cuello de botella clásico en producción TTS: un fallo al leer "7:30 pm" o "$5-10" degrada la experiencia de voz de forma inmediata. Audiction propone un enfoque verificable: la salida del modelo se acepta solo si conserva las palabras originales en orden, solo añade formas habladas y no deja dígitos sin verbalizar. Está entrenado y ajustado para inglés estadounidense.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | T5 encoder-decoder a nivel de bytes (ByT5-small) |
-| Parámetros totales | 299.637.760 |
-| Parámetros activos | no aplica (modelo denso) |
+| Arquitectura | Transformer encoder-decoder byte-level (ByT5) |
+| Parametros totales | 299.637.760 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos safetensors en fp32/fp16 según repo) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés, orientado a inglés estadounidense) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/byt5-small`, un T5 encoder-decoder que procesa texto a nivel de byte en lugar de tokens de subpalabra. Esta elección es coherente con la tarea: permite manejar sin problemas dígitos, símbolos monetarios, barras, guiones y otros caracteres que los tokenizadores BPE fragmentan de forma inconsistente. El fine-tune se realizó con cuatro rondas sobre una misma receta: batch efectivo de 64 y aproximadamente 60.000 pares sintéticos más 200.000 pares derivados de FineWeb por época. La versión publicada corresponde a byt5-small entrenado durante 3 épocas.
+Audiction parte de `google/byt5-small`, un modelo ByT5 que procesa texto a nivel de byte en lugar de tokens de subpalabra. Esta elección encaja con la normalización: cifras, signos, abreviaturas y formatos como "1-800-555-0199" o "6'2"" no dependen de un vocabulario cerrado. El modelo se ha afinado para la tarea text2text de verbalización, con pipeline declarado como text-generation en la plataforma.
 
-La innovación principal no está en la arquitectura sino en el diseño híbrido: las reglas escritas a mano cubren dinero, horas, fechas, años y décadas, teléfonos, códigos postales, unidades, ordinales, rangos, fracciones, abreviaturas, números romanos, acrónimos y distancias de carrera. Cuando una regla no tiene certeza, delega en el modelo. La ronda 3 añadió siete categorías nuevas (fracciones, fechas con barra, abreviaturas, números romanos, acrónimos, distancias de carrera y dinero usado como adjetivo). El autor documenta que un byt5-base entrenado una época no superó al byt5-small entrenado tres épocas.
+El sistema completo es híbrido. Primero, las reglas de `verbalize.py` verbalizan una frase cuando están seguras de todos sus componentes; su salida también se comprueba para detectar signos entre números que hayan quedado sin verbalizar. El modelo ByT5 afinado se aplica solo a las frases que las reglas dejan abiertas, y su lectura se acepta únicamente si supera una validación estricta: conserva las palabras originales en orden, todas las palabras añadidas son formas habladas (números, unidades, meses), cada unidad y moneda coincide con un símbolo del texto fuente y no queda ningún dígito. En caso contrario, se mantiene la salida de las reglas y el resto se deja tal cual.
+
+El dataset de entrenamiento declarado es `HuggingFaceFW/fineweb`, aunque la model card no detalla el número de tokens, la composición exacta ni si hubo RLHF o DPO. La evaluación se realiza con conjuntos sintéticos generados a partir de plantillas no vistas en entrenamiento y con conjuntos de frases escritas a mano.
 
 ## Capacidades
 
 - Normalización de texto escrito a forma hablada para TTS en inglés.
-- Expansión de horas, fechas, años y décadas ("1660s" → "sixteen sixties").
-- Expansión de moneda ("$25" → "twenty-five dollars") y de dinero usado como adjetivo.
-- Expansión de números de teléfono, códigos postales y números de ruta.
-- Expansión de unidades, temperaturas, fracciones y rangos ("2 1/2" → "two and a half", "350 °F" → "three hundred fifty degrees Fahrenheit").
-- Expansión de abreviaturas comunes (Dr., St., Ave., Jr.), números romanos y acrónimos leídos letra a letra ("NBA" → "N B A").
-- Expansión de distancias de carrera ("10K" → "ten K").
-- Modo híbrido (reglas primero, modelo cuando las reglas rechazan) y modo solo modelo (`--mode model`).
-- No soporta tool calling, agentes, visión, audio ni modo de razonamiento; es una tarea de normalización acotada.
+- Verbalización de moneda: dólares, libras y euros, céntimos, "99¢", "$5bn", "£100m", rangos como "$5-10" y uso adjetival ("a five dollar discount").
+- Fechas y horas: horas de reloj, "10.30am", "8-10 am", duraciones ("3:05:12"), "Nov 21", "11/21", "2026-11-21", "28/06/2017", años, décadas y rangos como "1990-95".
+- Números: ordinales, rangos, puntuaciones, porcentajes, decimales, fracciones y números mixtos, ratios ("2:1", "16:9"), valoraciones ("4.5/5"), tamaños ("8.5x11"), sumas ("2+2=4"), "3x" y "18+".
+- Unidades: medidas de cocina, pantalla y red (tbsp, mL, fps, Mbps), grados, alturas ("6'2""), marcas de pulgada y coordenadas.
+- Datos de contacto: teléfonos (incluidos 1-800 y 911), códigos postales, direcciones web y correos electrónicos.
+- Palabras y códigos: abreviaturas (Dr., St., Ave., Jr., No., vs.), números romanos (Louis XIV, Super Bowl LX), acrónimos deletreados (NBA, FBI, ET), códigos de producto y modelo (MR16, F-150, PS5, 1080p) con plurales (B-52s, 747s), nombres con número (Boeing 737, Room 101, Flight 370, código de área 212), versiones de software (Python 3.12) y distancias de carrera (10K).
+- No dispone de tool calling, function calling, capacidades de agente ni modo de razonamiento multi-paso; es un modelo especializado de normalización.
+- Capacidad multilingüe limitada al inglés; el autor indica que está escrito para inglés estadounidense (dólares, °F y fechas mes/día).
 
 ## Casos de uso
 
-- Preprocesado de guiones de radio y podcast: el modelo convierte cifras, horas y abreviaturas del guion a su forma hablada antes de pasarlo al motor TTS, con reglas deterministas para los casos frecuentes y el modelo para los ambiguos.
-- Asistentes de voz y altavoces inteligentes: normaliza respuestas generadas por un LLM (precios, fechas de entrega, direcciones) antes de sintetizarlas, evitando que el TTS lea "11/21" como "once barra veintiuno".
-- Lectores de pantalla y accesibilidad: convierte contenido web con números, unidades y abreviaturas a una forma verbal comprensible para usuarios con discapacidad visual.
-- Integración en pipelines de LLM más TTS: actúa como etapa intermedia entre la generación de texto y la síntesis de voz, con la ventaja de que el modo híbrido limita las invenciones del modelo.
-- Locución automatizada de resultados deportivos o meteorológicos: expande marcadores, tiempos de carrera y temperaturas de forma consistente.
-- Sistemas de anuncios públicos y transporte: normaliza horarios, andenes y códigos de ruta antes de la locución automática.
-- Generación de audiolibros y contenido narrado: expande números de página, años y abreviaturas del texto fuente antes de la síntesis.
+- Preprocesado de guiones de radio y podcast: el modelo convierte guiones con horas, fechas y cifras en texto listo para locución TTS, evitando lecturas erróneas de "7:30 pm" o "Nov 21" antes de enviar el texto al motor de voz.
+- Asistentes de voz y altavoces inteligentes: se coloca delante de la voz TTS para verbalizar respuestas de un LLM que contengan importes, porcentajes o rangos ("$5-10", "12.5%") de forma natural.
+- Lectura de noticias y boletines financieros: normaliza cifras de mercado como "£100m", "up 12.5%" o "35-28" en resultados deportivos, manteniendo la forma hablada esperada por el oyente.
+- Accesibilidad y lectores de pantalla: convierte direcciones web, correos electrónicos y números de teléfono en formas pronunciables ("news at example dot org", "one, eight hundred, five five five...") para usuarios con discapacidad visual.
+- Automatización de atención telefónica: verbaliza códigos postales, números 1-800 y códigos de descuento ("SAVE twenty") en mensajes IVR generados dinámicamente antes de sintetizarlos.
+- Localización de contenido técnico para audio: transforma especificaciones como "Python 3.12", "1080p", "60fps" o "MR16" en lecturas correctas para audiolibros técnicos, cursos y tutoriales en vídeo.
+- Integración en pipelines de CI/CD de TTS: al ser un modelo pequeño (299,6 M de parámetros) y con reglas deterministas, puede ejecutarse como paso de validación que detecta dígitos sin verbalizar antes de publicar un audio.
 
 ## Benchmarks y rendimiento
 
-| Evaluación | Descripción | Modo | Resultado |
-|---|---|---|---|
-| `eval_synth.jsonl` | 2.000 pares sintéticos de plantillas no vistas | solo modelo | 1.000 (2.000/2.000) |
-| `eval_synth_v3.jsonl` | 2.000 pares de 11 plantillas no vistas (categorías nuevas) | solo modelo | 0.9995 (1.999/2.000) |
-| `eval_real_v0.jsonl` | 40 líneas de radio escritas a mano | híbrido | 30/30 en alcance, 10/10 en casos extendidos |
-| `eval_real_v1.jsonl` | 60 líneas de radio escritas a mano | híbrido | 25/25 en alcance; 28/28 en las 7 categorías nuevas ignorando mayúsculas (26/28 exacto); 4/7 en casos extendidos |
-| `eval_web.py` | Frases de FineWeb no vistas | solo modelo | 98,25% de acuerdo con las reglas en 2.000 frases que las reglas manejan; 70,3% limpias en 1.000 frases donde las reglas rechazan |
+Resultados publicados por el autor en la model card. La coincidencia exacta (exact match) se mide sobre la salida completa del pipeline híbrido.
 
-Comparación interna de variantes del autor en los mismos conjuntos de evaluación:
+| Evaluación | Pares o frases | Exact match |
+|---|---|---|
+| `eval/eval_synth.jsonl` (dinero, horas, fechas, números, unidades) | 2.000 | 1.000 (2.000/2.000) |
+| `eval/eval_synth_v4.jsonl` (fracciones, fechas, títulos y calles, números romanos, acrónimos, distancias) | 2.000 | 1.000 (2.000/2.000) |
+| `eval/eval_real_v2.jsonl` (líneas de radio escritas a mano) | 60 | 59/60 |
+| `eval/eval_outside_v1.jsonl` (frases cotidianas) | 130 | 129/130 |
+| `eval/eval_outside_v2.jsonl` (frases cotidianas) | 65 | 65/65 |
 
-| Modelo | eval_synth_v3 | Acuerdo en eval_web | Líneas rechazadas limpias |
-|---|---|---|---|
-| Ronda 3 (byt5-small, 1 época) | 0,9735 | 0,946 | 69,7% |
-| Esta release (byt5-small, 3 épocas) | 0,9995 | 0,9825 | 70,3% |
-| byt5-base, 1 época | 0,9835 | 0,969 | 71,0% |
-
-El autor advierte que los conjuntos sintéticos están cerca del techo y sirven sobre todo como protección contra regresiones, y que los conjuntos reales no son tests limpios (v1 se puntuó varias veces durante el desarrollo).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ya que no son aplicables a esta tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 1,2 GB en fp32 para los 300 millones de parámetros; menos de 1 GB con cuantización a fp16 o int8.
-- Cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en CPU para cargas moderadas.
-- GPU recomendadas para producción de alto throughput: A10, L4, A100 o H100, aunque el modelo es lo bastante pequeño para no requerirlas.
-- Opciones de despliegue: `transformers` (versión >= 4.46 y < 5 según la model card), con soporte de text-generation-inference y endpoints compatibles. No se documenta soporte de llama.cpp, Ollama ni vLLM.
-- Latencia: las reglas tardan unos 45 µs por frase; no se publican cifras de latencia ni throughput del modelo neuronal.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 299,6 M de parámetros, en fp32 ocuparía aproximadamente 1,2 GB de pesos; en fp16, unos 0,6 GB; en int8, unos 0,3 GB. Estas cifras son estimaciones a partir del tamaño del modelo, no datos publicados.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM debería poder ejecutar el modelo en fp16 o int8; una RTX 4090, A100 o H100 lo ejecutarían con holgura, aunque el modelo es lo bastante pequeño para GPUs consumer de gama baja.
+- Cabe en GPU consumer: sí, previsiblemente en tarjetas como GTX 1650, RTX 3050 o superiores, así como en CPU para lotes pequeños.
+- Opciones de despliegue: la model card indica `transformers>=4.46,<5` con PyTorch y `huggingface_hub`; el pipeline híbrido se ejecuta con los scripts `normalize.py` y `eval_hybrid.py`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. El autor señala que las reglas deterministas tardan microsegundos; el modelo solo se invoca en las frases que las reglas dejan abiertas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Audiction | 299,6 M | no disponible | Normalización de texto para TTS (inglés) | Apache 2.0 | Hugging Face |
-| google/byt5-small | 299,6 M | no disponible | Modelo base T5 a nivel de byte, multiuso | Apache 2.0 | Hugging Face |
-| byt5-base (variante entrenada por el autor) | ~600 M | no disponible | Misma tarea, 1 época | Apache 2.0 | No publicada como release |
-| Reglas deterministas puras (p. ej. `verbalize.py`) | 0 | no aplica | Normalización exacta de casos cubiertos | según implementación | Incluidas en el repo |
+| google/byt5-small | 299,6 M | no disponible | Texto a texto genérico byte-level | Apache 2.0 | Hugging Face |
+| Modelos de normalización TTS basados en reglas (p. ej., módulos de verbalización de motores TTS) | no aplica | no aplica | Normalización determinista | variable | variable |
 
-No se dispone de comparación con otros normalizadores TTS publicados en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada; la comparación se limita a arquitectura, tamaño y licencia.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no se ha validado para otros idiomas.
-- El modo solo modelo puede inventar palabras en entradas extrañas: el autor documenta que una versión anterior leyó "21K" como "twenty-one thousand kilowatt hours".
-- El modo híbrido es el recomendado; el modo solo modelo no debería usarse en producción sin revisión.
-- Los códigos promocionales no se manejan: "SAVE20" se lee como "SAVEtwenty".
-- Los tiempos de carrera pueden leerse como horas: "48:12" se interpreta como "forty-eight twelve".
-- Las evaluaciones con datos reales no son conjuntos de test limpios, según admite el propio autor.
-- Las comprobaciones de `eval_web` son proxies: detectan palabras perdidas o inventadas, pero no una lectura incorrecta de un número.
-- Riesgo de sesgo y alucinación inherente a un modelo generativo, mitigado en parte por el diseño híbrido.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base byt5-small también es Apache 2.0, por lo que no hay restricciones adicionales conocidas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay validación externa de la comunidad.
+- Sesgos conocidos: no documentados en la model card; al estar entrenado sobre FineWeb y ajustado para inglés estadounidense, puede heredar sesgos del corpus y de las convenciones de EE. UU.
+- Riesgo de alucinación: mitigado por el diseño híbrido, ya que la salida del modelo se descarta si no conserva las palabras originales en orden, añade palabras no habladas o deja dígitos sin verbalizar. Aun así, el pipeline puede dejar texto sin normalizar cuando las reglas y el modelo no alcanzan certeza.
+- Limitaciones de idioma: solo inglés y con convenciones de EE. UU. (dólares, °F, fechas mes/día); no cubre otras variantes regionales ni otros idiomas.
+- Limitaciones de contexto: no se especifica la longitud máxima de entrada; frases muy largas o con estructuras atípicas pueden quedar parcialmente sin normalizar.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base `google/byt5-small` y del dataset FineWeb.
+- Caveats para producción: el modelo depende de scripts y reglas externas (`verbalize.py`, `normalize.py`); no es un modelo autónomo de generación de texto y su pipeline declarado como text-generation en Hugging Face puede inducir a error sobre su función real. Los resultados de evaluación son autocontenidos y no han sido verificados de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Frosty40/Audiction
 - Modelo base: https://huggingface.co/google/byt5-small
-- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
+- Dataset de entrenamiento declarado: https://huggingface.co/datasets/HuggingFaceFW/fineweb

@@ -2,79 +2,90 @@
 
 ## Resumen
 
-For-Her-Darkside-26B-A4B-v1.4-GGUF es la versión cuantizada en formato GGUF del modelo homónimo creado por ReadyArt, preparada por mradermacher para su ejecución local eficiente. El modelo base es un transformer de arquitectura Mixture of Experts (MoE) con 26 000 millones de parámetros totales y 4 000 millones activos por token, basado en la familia Gemma 4. Está diseñado específicamente para roleplay, conversación y generación de texto instructivo, con un enfoque en contenido explícito para adultos y sin alineación de seguridad (unaligned).
+For-Her-Darkside-26B-A4B-v1.4 es un modelo de lenguaje orientado a roleplay y conversacion para adultos, distribuido como cuantizaciones GGUF estaticas por mradermacher a partir del modelo base ReadyArt/For-Her-Darkside-26B-A4B-v1.4. El repositorio no contiene los pesos originales en safetensors, sino un conjunto de ficheros GGUF listos para inferencia con llama.cpp y derivados. El modelo se etiqueta como derivado de la familia Gemma 4 y presenta 25.233.142.046 parametros totales (unos 25,2 mil millones), con una nomenclatura "A4B" que sugiere arquitectura de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parametros activos, aunque el autor no documenta explicitamente la arquitectura.
 
-La relevancia de esta versión GGUF radica en que permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles, sin necesidad de infraestructura de servidor. La cuantización reduce drásticamente los requisitos de memoria: los archivos van desde 10,7 GB (Q2_K) hasta 27 GB (Q8_0), lo que posibilita su uso en GPUs de gama media-alta o incluso en CPU con suficiente RAM. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación.
+La relevancia de esta ficha es doble: por un lado, muestra un caso de cuantizacion estatica de un modelo de 26B con variantes multimodales (mmproj); por otro, ilustra el ecosistema de modelos "unaligned" para roleplay, con licencia Apache 2.0 y contenido explicitamente marcado como NSFW y no apto para todas las audiencias. La model card del cuantizador es puramente operativa (tabla de ficheros y notas de uso) y no incluye informacion sobre entrenamiento, contexto o benchmarks.
 
-Al tratarse de un modelo sin alineación, no incorpora filtros de contenido ni rechazo de solicitudes explícitas, lo que lo hace atractivo para aplicaciones de entretenimiento adulto, escritura creativa sin censura y simulación de personajes, pero también implica riesgos legales y éticos que deben evaluarse antes de su despliegue.
+No se dispone de datos sobre longitud de contexto, composicion del dataset de entrenamiento, tecnicas de alineamiento ni evaluaciones de rendimiento en la informacion proporcionada. Todo lo que sigue se limita a lo verificable en el repositorio de Hugging Face y en la model card del cuantizador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer con MoE) |
-| Parametros totales | 25 233 142 046 (~26B) |
-| Parametros activos | 4B (según nomenclatura A4B) |
+| Arquitectura | no disponible (etiquetado como gemma-4; nomenclatura "A4B" sugiere MoE con ~4B activos, no confirmado) |
+| Parametros totales | 25.233.142.046 (~25,2B) |
+| Parametros activos | no disponible (la nomenclatura A4B sugiere ~4B, sin confirmacion del autor) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base For-Her-Darkside-26B-A4B-v1.4 emplea una arquitectura transformer con mezcla de expertos (MoE), donde solo 4 000 millones de parámetros se activan por token, lo que reduce el coste computacional en inferencia manteniendo una capacidad total de 26 000 millones. Según la información disponible, pertenece a la familia Gemma 4, aunque no se especifican detalles concretos sobre la configuración de capas, atención o el número de expertos.
+El repositorio es una coleccion de cuantizaciones estaticas generadas por mradermacher a partir de ReadyArt/For-Her-Darkside-26B-A4B-v1.4. La model card indica "quantize_version: 2", "output_tensor_quantised: 1" y "convert_type: hf", lo que implica una conversion desde pesos Hugging Face a GGUF y una cuantizacion por tensores de salida. Se ofrecen tanto cuantizaciones K-quant clasicas como IQ4_XS, ademas de un modulo multimodal (mmproj) en Q8_0 y f16, lo que confirma que el modelo base incorpora capacidad de vision.
 
-No se dispone de datos sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. La etiqueta "unaligned" sugiere que el modelo no fue sometido a alineación con preferencias humanas para rechazar contenido explícito, sino que se optimizó para seguir instrucciones y mantener conversaciones de roleplay sin restricciones. Tampoco hay información sobre el proceso de cuantización más allá de que se realizó con herramientas estándar (probablemente llama.cpp) para generar los distintos niveles de precisión.
+No hay informacion en la model card sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas de atencion. El tag "unaligned" sugiere que el modelo base no ha pasado por un proceso de alineamiento restrictivo orientado a seguridad, algo coherente con su enfoque a roleplay explicito. La etiqueta gemma-4 apunta a una base de la familia Gemma, pero no se documenta la variante concreta ni el proceso de fine-tuning. Existe una version con cuantizaciones ponderadas/imatrix publicada por el mismo autor en un repositorio separado (sufijo -i1-GGUF).
 
 ## Capacidades
 
-- Generación de texto conversacional y roleplay: el modelo está optimizado para mantener diálogos multi-turno con personajes, siguiendo instrucciones de sistema y contexto.
-- Instrucciones (instruct): responde a comandos y solicitudes directas en formato de chat.
-- Contenido explícito: al ser "unaligned", no rechaza solicitudes de naturaleza sexual, violenta u ofensiva, y puede generar descripciones detalladas de escenas adultas.
-- Multimodalidad parcial: los archivos mmproj (proyectores multimodales) incluidos en el repo sugieren que el modelo base podría soportar entrada de imágenes, aunque no se ha confirmado su funcionamiento en esta versión GGUF.
-- Sin soporte documentado de tool calling, function calling ni razonamiento multi-paso estructurado.
-- Multilingüismo: solo se declara inglés; no hay evidencia de buen rendimiento en otros idiomas.
+- Generacion de texto conversacional multi-turno orientada a roleplay y narrativa interactiva.
+- Contenido explicito para adultos (ERP, NSFW), segun los tags del repositorio.
+- Procesamiento multimodal: la presencia de ficheros mmproj indica soporte de entrada de imagenes en el modelo base.
+- Modo instruct/conversational, segun los tags del repositorio.
+- Capacidad multilingue limitada al ingles segun el campo language.
+- No se documenta soporte de tool calling, function calling ni razonamiento agente multi-paso.
+- No se documenta modo "thinking" ni capacidades de audio.
 
 ## Casos de uso
 
-- Entretenimiento para adultos: el modelo puede generar narrativas eróticas, diálogos explícitos y escenas de roleplay sexual bajo demanda, sin filtros de contenido. Es adecuado para aplicaciones de chat erótico o generación de ficción adulta.
-- Simulación de personajes para juegos de rol: permite crear asistentes virtuales con personalidades definidas, manteniendo coherencia de personaje a lo largo de conversaciones largas gracias a su contexto extenso (aunque no se ha confirmado la longitud exacta).
-- Escritura creativa sin censura: útil para autores que necesitan explorar temas tabú o transgresores en sus borradores, sin que el modelo imponga restricciones morales.
-- Investigación sobre alineación y seguridad: al ser un modelo "unaligned", sirve como caso de estudio para comparar comportamientos con modelos alineados y analizar sesgos o riesgos de contenido generado.
-- Prototipado de chatbots de nicho: desarrolladores pueden integrarlo en aplicaciones de chat para comunidades específicas que buscan interacciones sin censura, usando llama.cpp o vLLM como backend.
-- Generación de diálogos para guiones o videojuegos: su capacidad para mantener conversaciones naturales y su falta de inhibiciones lo hacen útil para crear guiones de personajes con diálogos provocativos o controvertidos.
+- Roleplay conversacional de larga duracion: el modelo esta disenado para mantener personajes y narrativa multi-turno; las cuantizaciones Q5_K_M y Q6_K conservan mejor los matices estilisticos necesarios para la coherencia de personaje.
+- Generacion de ficcion interactiva para adultos: adecuado para plataformas de narrativa ramificada donde se requiere contenido explicito y un tono no restrictivo, con la advertencia de que debe desplegarse tras verificacion de edad.
+- Prototipado de personajes con entrada de imagen: el modulo mmproj permite describir o reaccionar a imagenes dentro de una conversacion de roleplay (por ejemplo, interpretar una escena visual).
+- Investigacion sobre modelos "unaligned": util para estudiar el comportamiento de modelos sin alineamiento restrictivo en tareas creativas y comparar con variantes alineadas.
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_S (15,6 GB) y Q4_K_M (16,9 GB) permiten ejecucion en GPUs de consumo alto o en configuraciones CPU+GPU con llama.cpp.
+- Evaluacion de tecnicas de cuantizacion: el repositorio ofrece un espectro amplio (de Q2_K a Q8_0) para medir la degradacion de calidad en tareas generativas subjetivas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras pruebas estandarizadas para este modelo o su versión base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: según la cuantización, los archivos ocupan entre 10,7 GB (Q2_K) y 27 GB (Q8_0). Para inferencia con contexto razonable, se recomienda al menos 12-16 GB de VRAM para las versiones Q4 y superiores.
-- GPU recomendadas: una RTX 3090 o RTX 4090 (24 GB VRAM) puede ejecutar cómodamente Q4_K_M (16,9 GB) o Q5_K_M (19,2 GB). Para Q8_0 (27 GB) se necesita una GPU con 32 GB o más (A100, RTX 6000 Ada) o usar CPU con suficiente RAM.
-- Ejecución en CPU: con llama.cpp, las cuantizaciones Q2_K y Q3_K pueden funcionar en CPU con 16-32 GB de RAM, aunque la velocidad será limitada.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con adaptador GGUF), text-generation-webui, LM Studio, entre otros.
-- Latencia y throughput: no se han publicado mediciones específicas. Como referencia, un MoE de 4B activos en una RTX 4090 suele generar entre 20 y 40 tokens por segundo con cuantización Q4, pero depende del contexto y la implementación.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~10,7 GB; Q3_K_S ~12,3 GB; Q3_K_M ~13,4 GB; Q3_K_L ~13,9 GB; IQ4_XS ~14,2 GB; Q4_K_S ~15,6 GB; Q4_K_M ~16,9 GB; Q5_K_S ~18,1 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB. A estas cifras hay que sumar el modulo mmproj (0,9 GB en Q8_0 o 1,3 GB en f16) si se usa vision, y el espacio de cache KV segun contexto.
+- GPU recomendadas: para Q8_0, una A100 40 GB o H100; para Q6_K, una RTX 4090 de 24 GB o A100 40 GB; para Q4_K_M, una RTX 4090 o RTX 3090 de 24 GB con margen para contexto.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones de Q2_K a Q6_K; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints tipo TGI/vLLM aunque no se detalla.
+- Latencia y throughput: no disponibles. Al ser un modelo de ~25B con posible activacion parcial (~4B), el throughput deberia ser superior al de un denso de 25B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con otros modelos de roleplay sin alinear. Alternativas comunes en este nicho incluyen modelos como MythoMax-L2-13B, Noromaid-20B o Midnight-Miqu-70B, pero no hay datos de rendimiento relativo con For-Her-Darkside-26B-A4B-v1.4. La falta de benchmarks públicos impide una comparación objetiva.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| For-Her-Darkside-26B-A4B-v1.4 (este) | ~25,2B (posible MoE ~4B activos) | no disponible | Apache 2.0 | GGUF | Roleplay adulto, multimodal via mmproj |
+| Modelo base ReadyArt/For-Her-Darkside-26B-A4B-v1.4 | ~25,2B | no disponible | Apache 2.0 | safetensors | Pesos originales, sin cuantizar |
+| Version imatrix (mradermacher -i1-GGUF) | ~25,2B | no disponible | Apache 2.0 | GGUF | Cuantizaciones ponderadas de mayor calidad |
+
+No se dispone de datos de benchmarks ni de modelos comparables de la misma categoria documentados en la informacion proporcionada; la comparativa se limita a variantes del mismo modelo.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW explícito: el modelo genera material sexual, violento o perturbador sin restricciones. Su uso en aplicaciones públicas puede violar términos de servicio de plataformas o leyes locales.
-- Sin alineación: no tiene mecanismos de rechazo ante solicitudes dañinas, lo que puede derivar en respuestas ofensivas, ilegales o peligrosas si se usa sin supervisión.
-- Sesgos desconocidos: al no haber documentación sobre el dataset de entrenamiento, no se pueden evaluar sesgos de género, raza u otros.
-- Idioma limitado: solo inglés; el rendimiento en otros idiomas es probablemente pobre.
-- Longitud de contexto no confirmada: no se especifica el tamaño de la ventana de contexto, lo que puede llevar a errores en conversaciones muy largas.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar hechos, nombres o detalles, especialmente en contextos de roleplay.
-- Licencia Apache 2.0 permite uso comercial, pero el contenido generado puede incurrir en responsabilidades legales (difamación, pornografía ilegal, etc.). El usuario final es responsable del uso.
+- Contenido explicitamente NSFW y para adultos; no apto para menores ni para despliegues sin verificacion de edad.
+- Modelo etiquetado como "unaligned": no ha pasado por un proceso de alineamiento orientado a seguridad, por lo que puede producir contenido ofensivo o inapropiado fuera de contextos de roleplay.
+- Riesgo de alucinacion no cuantificado; no hay evaluaciones publicadas.
+- Soporte unicamente en ingles segun el campo language; el rendimiento en castellano no esta documentado.
+- Longitud de contexto desconocida; no se puede garantizar coherencia en conversaciones muy largas.
+- Aunque la licencia es Apache 2.0, el uso comercial de contenido explicito puede estar sujeto a normativa local y a las politicas de las plataformas de distribucion.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad en tareas generativas subjetivas; para roleplay se recomienda Q5_K_M o superior.
+- El repositorio pesa 184,9 GB en total; la descarga de todas las variantes no es practica y conviene seleccionar un unico fichero.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/For-Her-Darkside-26B-A4B-v1.4-GGUF
-- Modelo base original: https://huggingface.co/ReadyArt/For-Her-Darkside-26B-A4B-v1.4
-- Repositorio de cuantizaciones con imatrix (alternativa): https://huggingface.co/mradermacher/For-Her-Darkside-26B-A4B-v1.4-i1-GGUF
-- Proyecto TurboFieldfare (inferencia de Gemma 4 26B-A4B en ~2 GB de RAM): https://github.com/drumih/turbo-fieldfare
-- Guía visual de Gemma 4 (referencia de arquitectura): https://www.maartengrootendorst.com/ (enlace indirecto, no verificado)
+- Repositorio GGUF: https://huggingface.co/mradermacher/For-Her-Darkside-26B-A4B-v1.4-GGUF
+- Modelo base: https://huggingface.co/ReadyArt/For-Her-Darkside-26B-A4B-v1.4
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/For-Her-Darkside-26B-A4B-v1.4-i1-GGUF
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#For-Her-Darkside-26B-A4B-v1.4-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafica de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

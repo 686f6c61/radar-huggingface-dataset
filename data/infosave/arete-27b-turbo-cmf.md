@@ -2,106 +2,101 @@
 
 ## Resumen
 
-Arete-27B-Turbo-cmf es un fichero cuantizado a 4 bits del modelo NousResearch/Arete-27B, el post-entrenamiento que Nous Research realizó sobre Qwen3.8-27B. El autor del empaquetado, infosave, aplica sobre los pesos una cabecera propietaria denominada "turbo" que mantiene acotada la memoria de dispositivo en prompts largos, combinando atención exacta en las primeras filas con un mecanismo de campo lejano (far field) para el resto. El resultado se distribuye como un único fichero `.cmf` de 14,1 GB que se ejecuta con `cortiq`, un motor de inferencia escrito en Rust sin dependencias de Python ni de frameworks de machine learning.
+Arete-27B-Turbo-cmf es una cuantizacion de 4 bits del modelo NousResearch/Arete-27B, un post-entrenamiento de Qwen3.8-27B realizado por Nous Research. La publica el usuario infosave bajo el formato CMF (un unico fichero con cabecera propia) para `cortiq`, un motor de inferencia escrito en Rust sin dependencias de Python ni de frameworks de machine learning. El modelo conserva la arquitectura original de Arete y solo sustituye los pesos por una version de 4 bits con escalas en escalera, lo que reduce el fichero a 14,1 GB.
 
-La propuesta de valor es doble: por un lado, el modelo base de 27B parámetros con capacidades de razonamiento (hereda el modo thinking de la familia Qwen3.8); por otro, la tecnología de gestión de contexto largo que, según las mediciones del autor en una NVIDIA A40, reduce el pico de VRAM a 14,8 GB a 64 000 tokens (frente a 21,5 GB del mismo modelo sin la cabecera turbo) y sostiene la decodificación en torno a 27 tok/s donde el estándar cae a 16,2 tok/s. Es relevante para quienes necesitan procesar documentos extensos en GPUs de 16 GB o 24 GB sin renunciar a la precisión en datos críticos.
+La innovacion principal no esta en los pesos sino en la cabecera que los acompana: un mecanismo de atencion con techo fijo de memoria que mantiene las primeras 8192 filas del prompt en atencion exacta en la tarjeta grafica y expulsa las claves y valores de las filas posteriores a RAM o SSD, reconstruyendo un "campo lejano" comprimido. Segun el autor, a 64 000 tokens el modelo ocupa 14,8 GB de memoria de dispositivo frente a 21,5 GB del original, entrega el primer token en 443 s frente a 612 y decodifica a 27,2 tok/s frente a 16,2, manteniendo exactos contrasenas y codigos del texto.
 
-El modelo está pensado para generación de texto en inglés, ruso y chino, con licencia Apache 2.0. La innovación principal no reside en los pesos (que son los de Arete-27B) sino en la capa de gestión de memoria y atención que el autor superpone, y que incluye una patente en tramitación (No. 19/738,763).
+Es relevante para desarrolladores que necesitan contexto largo en hardware modesto: el modelo cabe en tarjetas de 16 GB con atencion exacta limitada a 4096 filas, y ofrece una API compatible con OpenAI a traves de `cortiq serve`. La licencia es Apache 2.0 y los idiomas declarados son ingles, ruso y chino.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen3.8-27B, sin cambios en los pesos); cabecera turbo de gestión de atención y memoria |
-| Parámetros totales | 27 000 millones (27B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 64 000 tokens medidos; atención exacta hasta 8192 filas (4096 en GPU de 16 GB) |
-| Tipos de cuantización | 4 bits con "ladder scales", solo texto (q4tp) |
-| Idiomas soportados | inglés (en), ruso (ru), chino (zh) |
+| Arquitectura | Transformer (hereda la de Qwen3.8-27B via NousResearch/Arete-27B); sin cambios estructurales |
+| Parametros totales | 27B (segun el nombre del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 131 072 tokens configurables via `CMF_MAX_SEQ`; 32 768 por defecto en el servidor; atencion exacta en las primeras 8192 filas (4096 en tarjeta de 16 GB) |
+| Tipos de cuantizacion | 4 bits con escalas en escalera (q4tp); fichero principal 14,1 GB; drafter DFlash 2 en 4 bits de 1,3 GB |
+| Idiomas soportados | en, ru, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.cmf` (fichero único que incluye pesos, tokenizador y plantilla de chat) |
+| Formato de pesos | CMF (fichero unico para `cortiq`); no se distribuyen safetensors ni GGUF en este repo |
 
 ## Arquitectura y entrenamiento
 
-Los pesos corresponden a NousResearch/Arete-27B, un post-entrenamiento de Qwen3.8-27B. La model card no detalla la composición del dataset de post-entrenamiento ni el número de tokens utilizados; esa información corresponde al modelo base y no se reproduce en el fichero cuantizado. La arquitectura subyacente es un transformer de 27B parámetros con modo de razonamiento (thinking) activable o desactivable mediante `--no-think`.
+El modelo es una cuantizacion del checkpoint NousResearch/Arete-27B, que a su vez es un post-entrenamiento de Qwen3.8-27B. No se anaden capas ni se modifica la arquitectura: los pesos de la puntuacion de filas exactas se ajustaron sobre Qwen3.8-27B y se reutilizan tal cual. El autor no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en esta ficha; esa informacion corresponderia a la model card del modelo base, no incluida aqui.
 
-La aportación técnica del empaquetado es la cabecera turbo, que opera en tres frentes. Primero, un "techo fijo": las primeras 8192 filas del prompt (4096 en tarjetas de 16 GB) se leen con atención exacta en la GPU; las claves y valores de las filas posteriores salen de la tarjeta hacia RAM o SSD conforme se leen, y antes de las últimas 512 filas se construye el campo lejano capa a capa. El campo lejano conserva las primeras 4 filas y las últimas 1800 exactas, y comprime el resto en 32 puntos de referencia (landmarks) por cabeza, de modo que el coste por token deja de crecer con la longitud del texto. Segundo, un mecanismo de "filas exactas": cada fila se puntúa según lo que las capas hacen con ella y las 248 mejores se mantienen exactas, lo que permite recuperar contraseñas, códigos y datos plantados. Tercero, un esquema de "hilos cortos" que divide la atención en siete etapas pequeñas para ocupar toda la tarjeta, en lugar de un único hilo largo por cabeza que deja la mayor parte inactiva. Los pesos del scorer de filas se ajustaron sobre Qwen3.8-27B y se reutilizan sin modificar.
+La innovacion tecnica esta en la capa de inferencia. La cabecera CMF implementa un techo fijo de memoria: las primeras 8192 filas del prompt se leen en atencion exacta en la GPU; las claves y valores de las filas posteriores salen de la tarjeta a RAM o SSD a medida que se leen, y antes de las ultimas 512 filas se construye un campo lejano por capas que conserva las primeras 4 filas y las ultimas 1800 exactas y comprime el resto en 32 puntos de referencia por cabeza. Ademas, cada fila se puntua segun lo que las capas hacen con ella y las 248 mejores se mantienen exactas, lo que preserva contrasenas y codigos. La atencion se descompone en siete etapas pequenas para llenar la tarjeta, y hay decodificacion especulativa opcional mediante el drafter DFlash 2 en CUDA. El autor cita una solicitud de patente, No. 19/738,763.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con modo thinking activable (por defecto) o respuesta directa mediante `--no-think`.
-- Procesamiento de contexto largo: hasta 64 000 tokens medidos, con atención exacta en las primeras 8192 filas y campo lejano aproximado para el resto.
-- Recuperación precisa de datos plantados en textos extensos: 5 de 5 aciertos en un test con pass key, código de acceso, contraseña y número de habitación en 100 000 caracteres.
-- Resumen de documentos largos: el autor reporta un resumen correcto de un párrafo de Wikipedia de 100 000 caracteres (~24 600 tokens).
-- Multilingüe en inglés, ruso y chino.
-- Ejecución en GPU mediante Vulkan, DX12 y Metal; en CPU funciona como el modelo estándar (sin la aceleración turbo).
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso orquestado: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles (el fichero es solo texto).
+- Generacion de texto y razonamiento: modo "thinking" activado por defecto; `--no-think` o `enable_thinking: false` piden respuesta directa.
+- Contexto largo con memoria acotada: prompts de hasta 131 072 tokens con techo de memoria de dispositivo fijo.
+- Preservacion de cadenas exactas: contrasenas, codigos y literales se mantienen exactos gracias a las 248 filas puntuadas.
+- Tool calling: el endpoint `/v1/chat/completions` acepta el campo `tools`.
+- API compatible con OpenAI: `/v1/chat/completions`, `/v1/completions`, `/v1/models`, `/healthz` y panel web.
+- Streaming de respuestas token a token (`stream: true`).
+- Multilinguee en ingles, ruso y chino.
+- Decodificacion especulativa en CUDA con el drafter DFlash 2 (hasta 102 tok/s en codigo segun el autor).
+- Desbordamiento a SSD (`--o1-spill`) para equipos con poca RAM.
+- Sin soporte declarado de vision ni audio.
 
 ## Casos de uso
 
-- Análisis de documentación legal o contractual extensa: el modelo puede ingerir contratos de decenas de miles de tokens y localizar cláusulas concretas, gracias al mecanismo de filas exactas que preserva números de artículo, importes y fechas literales.
-- Resumen de informes técnicos o artículos largos: con 64 000 tokens de contexto y decodificación sostenida a ~27 tok/s, es viable resumir papers o documentación interna de 50-100 páginas en una sola pasada sin truncar.
-- Extracción de credenciales y datos sensibles en pipelines de auditoría: el test de 5 de 5 con contraseñas, códigos y pass keys demuestra que el modelo mantiene la exactitud en cadenas críticas, lo que lo hace apto para tareas de verificación documental donde un carácter erróneo invalida el resultado.
-- Despliegue en estaciones de trabajo con GPU de 16 GB: con `CMF_GPU_VRAM_MB=15000` el fichero sella a 4096 filas y se mantiene en 14,3 GB, permitiendo atender prompts de 16 000-64 000 tokens en tarjetas consumer de gama alta (RTX 4080/4090) o profesionales de 16 GB.
-- Procesamiento por lotes en servidores sin Python: al ejecutarse con `cortiq` (Rust, sin framework ML), se integra en entornos de producción con dependencias mínimas y arranque rápido, útil para servicios de generación de texto en contenedores ligeros.
-- Asistencia en ruso o chino: para equipos que trabajan con documentación en esos idiomas, el modelo cubre las tres lenguas declaradas sin necesidad de modelos separados.
-- Escenarios con RAM limitada y SSD rápido: la opción `--o1-spill` vuelca las filas del prompt a disco, permitiendo operar en máquinas donde los 13,2 GB de RAM necesarios a 64 000 tokens no están disponibles.
+- Resumen de documentos largos: con `CMF_MAX_SEQ=131072` el modelo puede procesar informes completos de decenas de miles de tokens manteniendo la memoria de la GPU acotada, lo que permite resumir contratos o articulos en tarjetas de 16-24 GB.
+- Extraccion de datos exactos de textos extensos: la puntuacion de filas exactas conserva contrasenas, codigos e identificadores, util para auditar configuraciones o registros sin perder literales.
+- Asistente de codigo en produccion: con tool calling y el drafter DFlash 2 en CUDA alcanza hasta 102 tok/s en codigo, adecuado para autocompletado o generacion en pipelines de CI/CD.
+- Servicio de chat multi-turno autoalojado: `cortiq serve` expone una API compatible con OpenAI, de modo que cualquier cliente existente se conecta cambiando `base_url`; util para equipos que no pueden enviar datos a la nube.
+- Procesamiento por lotes en hardware de consumo: el fichero de 14,1 GB cabe en tarjetas de 16 GB con atencion exacta de 4096 filas, permitiendo clasificacion y extraccion de informacion en estaciones de trabajo sin A100.
+- Despliegue en equipos con poca RAM y SSD rapido: la opcion `--o1-spill` vuelca el exceso a disco, habilitando inferencia en portatiles o servidores sin memoria suficiente.
+- Analisis de conversaciones largas en ruso o chino: el soporte declarado de ambos idiomas permite atender clientes en esos mercados con contexto de decenas de miles de tokens.
 
 ## Benchmarks y rendimiento
 
-Mediciones del autor en NVIDIA A40 (48 GB) con Vulkan, `cortiq bench --core`, 60 tokens generados tras el prompt indicado. "Standard" es el mismo modelo sin la cabecera turbo.
+El autor publica mediciones de inferencia (no de calidad) con cortiq 0.8.63 en Vulkan y 0.8.69 en CUDA:
 
-| Prompt (tokens) | Primer token, s (standard) | Primer token, s (turbo) | Decodificación, tok/s (standard) | Decodificación, tok/s (turbo) | VRAM pico, GB (standard) | VRAM pico, GB (turbo) |
-|---:|---:|---:|---:|---:|---:|---:|
-| 1 000 | 5,1 | 5,1 | 28,2 | 27,8 | 13,3 | 13,3 |
-| 4 000 | 20,1 | 20,0 | 27,3 | 27,5 | 13,7 | 13,7 |
-| 16 000 | 92 | 115 | 24,0 | 27,0 | 15,2 | 14,8 |
-| 32 000 | 223 | 221 | 20,9 | 27,0 | 17,2 | 14,8 |
-| 64 000 | 612 | 443 | 16,2 | 27,2 | 21,5 | 14,8 |
+| Metrica | Arete-27B-Turbo-cmf | Referencia (modelo original, 4 bits) |
+|---|---|---|
+| Memoria de dispositivo a 64 000 tokens | 14,8 GB | 21,5 GB |
+| Tiempo hasta el primer token a 64 000 tokens | 443 s | 612 s |
+| Decodificacion a 64 000 tokens | 27,2 tok/s | 16,2 tok/s |
+| Decodificacion en CUDA (sin drafter) | 49 tok/s | no disponible |
+| Decodificacion en CUDA con DFlash 2 (codigo) | hasta 102 tok/s | no disponible |
 
-En configuración de 16 GB (`CMF_GPU_VRAM_MB=15000` sobre la misma A40): sella a 4096 filas, VRAM 14,3 GB, primer token 107 s a 16 000 tokens, 217 s a 32 000 y 436 s a 64 000, decodificación ~27 tok/s.
-
-Consumo de RAM del host durante la lectura del prompt: 4,4 GB a 16 000 tokens, 7,0 GB a 32 000 y 13,2 GB a 64 000, además de los pesos mapeados.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 13,3 GB para prompts cortos; 14,8 GB con la cabecera turbo hasta 64 000 tokens; 14,3 GB en configuración forzada de 16 GB. Sin turbo, el pico sube a 21,5 GB a 64 000 tokens.
-- GPU recomendadas: NVIDIA A40 (única tarjeta en la que el autor reporta mediciones). Cualquier GPU con soporte Vulkan, DX12 o Metal y al menos 16 GB de VRAM debería poder ejecutar la configuración de 16 GB, aunque no hay mediciones publicadas en otras tarjetas.
-- Cabe en GPU consumer: sí, en modelos de 16 GB o más (RTX 4080, 4090, 4060 Ti 16 GB) usando `CMF_GPU_VRAM_MB=15000`, según la configuración reportada; no hay cifras medidas en esas tarjetas.
-- RAM del host: 4,4-13,2 GB adicionales según longitud del prompt; mitigable con `--o1-spill` hacia SSD.
-- Opciones de despliegue: `cortiq` (CLI en Rust, instalable con `cargo install cortiq-cli`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.cmf` es específico de este runtime.
-- Latencia y throughput: primer token de 5,1 s (1 000 tokens) a 443 s (64 000 tokens); decodificación estable en ~27 tok/s con turbo. En CPU el fichero funciona como el estándar, sin la aceleración.
+- VRAM estimada: 14,1 GB para el fichero de pesos; 14,8 GB de memoria de dispositivo a 64 000 tokens segun el autor; el drafter anade 1,3 GB.
+- Cabe en GPU de consumo de 16 GB (por ejemplo, RTX 4080/4090 o equivalentes) con atencion exacta limitada a 4096 filas.
+- GPU recomendadas: NVIDIA con CUDA para maxima velocidad (49 tok/s, hasta 102 con DFlash 2); Vulkan, DX12 o Metal como alternativas sin drafter.
+- Despliegue: `cortiq` (CLI y servidor); no se mencionan vLLM, llama.cpp, Ollama ni TGI, y el formato CMF no es compatible con ellos.
+- Almacenamiento: SSD rapido recomendado para `--o1-spill` si falta RAM.
+- Latencia: primer token en 443 s a 64 000 tokens (Vulkan); decodificacion de 27,2 tok/s en ese regimen y 49 tok/s en CUDA con prompts cortos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato / runtime | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Motor |
 |---|---|---|---|---|---|
-| Arete-27B-Turbo-cmf | 27B | 64 000 (medido) | Apache 2.0 | `.cmf` / cortiq (Rust) | Cuantización 4 bits con cabecera turbo; 14,1 GB |
-| NousResearch/Arete-27B | 27B | no disponible | no disponible en la información | safetensors (presumible, no confirmado) | Modelo base sin cuantizar; sin la gestión de memoria turbo |
-| Qwen3.8-27B | 27B | no disponible | no disponible en la información | no disponible | Modelo original sobre el que se post-entrena Arete; arquitectura idéntica |
+| Arete-27B-Turbo-cmf | 27B | 131 072 (techo fijo de memoria) | 4 bits CMF | Apache 2.0 | cortiq |
+| NousResearch/Arete-27B | 27B | no disponible | completa | no disponible | varios |
+| Qwen3.8-27B (base) | 27B | no disponible | completa | no disponible | varios |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y formato.
+No se dispone de datos de benchmarks que permitan comparar la calidad de este modelo con alternativas de la misma categoria; la comparativa se limita a parametros, contexto y formato de despliegue.
 
 ## Limitaciones y advertencias
 
-- El campo lejano solo se ejecuta en Vulkan, DX12 y Metal. En CPU el fichero se comporta como el modelo estándar, sin las ventajas de memoria y velocidad.
-- Las mediciones se realizaron únicamente en una NVIDIA A40; no hay datos verificados en otras GPU, incluida la configuración de 16 GB.
-- Más allá del umbral de sellado (8192 filas, o 4096 en 16 GB), el texto lejano es aproximado: la model card advierte que "lo que queda muy atrás se desvanece". Solo las 248 filas puntuadas como relevantes y las primeras 4 / últimas 1800 se conservan exactas.
-- Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas más allá del mecanismo de filas exactas para datos literales.
-- Sesgos conocidos: no documentados en la información disponible. El ejemplo de respuesta incluido en la model card sobre un tema políticamente sensible sugiere que el modelo no aplica filtros de censura temática, lo que puede ser relevante para despliegues en jurisdicciones con restricciones de contenido.
-- Idiomas: solo inglés, ruso y chino declarados; el castellano no figura entre los idiomas soportados.
-- Licencia Apache 2.0 permite uso comercial, pero la cabecera turbo está sujeta a una solicitud de patente (No. 19/738,763); conviene revisar las implicaciones antes de un despliegue comercial a gran escala.
-- Dependencia de un runtime propietario (`cortiq`) y de un formato cerrado (`.cmf`): no hay interoperabilidad con el ecosistema estándar (transformers, vLLM, llama.cpp).
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
+- Solo tres idiomas declarados (en, ru, zh); el rendimiento en castellano no esta documentado.
+- El formato CMF solo funciona con `cortiq`; no es portable a llama.cpp, vLLM ni Ollama.
+- Las mediciones de rendimiento provienen del propio autor y no se han verificado de forma independiente.
+- El servidor no comprueba API key por defecto y escucha en todas las interfaces salvo que se pase `--host 127.0.0.1`; riesgo de exposicion en red.
+- La atencion exacta se limita a las primeras 8192 filas (4096 en 16 GB); mas alla, la informacion pasa por un campo lejano comprimido, lo que puede degradar la fidelidad en documentos muy largos.
+- El drafter DFlash 2 solo funciona en CUDA y antes del "seal"; en Vulkan no hay decodificacion especulativa.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de sesgo.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus condiciones deben verificarse en NousResearch/Arete-27B.
 
 ## Enlaces
 
-- Fichero cuantizado: https://huggingface.co/infosave/Arete-27B-Turbo-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Arete-27B-Turbo-cmf
 - Modelo base: https://huggingface.co/NousResearch/Arete-27B
-- Repositorio del formato CMF: https://huggingface.co/infosave/cmf
-- Runtime cortiq: https://github.com/infosave2007/cmf
-- Modelo de referencia con la misma tecnología: https://huggingface.co/infosave/Qwen3.8-27B-Turbo-cmf
+- Repositorio de cortiq/CMF: https://github.com/infosave2007/cmf
+- Modelo de referencia con la misma tecnologia: https://huggingface.co/infosave/Qwen3.8-27B-Turbo-cmf

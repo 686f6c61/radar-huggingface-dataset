@@ -2,101 +2,111 @@
 
 ## Resumen
 
-`axteam/Qwen3.5-2B-NVFP4` es una cuantización de 4 bits en formato NVFP4 (W4A4, FP4) del modelo multimodal `Qwen/Qwen3.5-2B` de Alibaba Cloud, publicada por el usuario axteam para servir el modelo con vLLM. El modelo base es un transformer denso de 2.213.241.664 parámetros (2,21 B) con arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet, de tipo SSM) con capas de atención completa, torre de visión para entrada image-text-to-text y una cabeza MTP (multi-token prediction). Según fuentes de terceros, la ventana de contexto del modelo base es de 128K tokens.
+Qwen3.5-2B-NVFP4 es una cuantizacion de 4 bits del modelo multimodal Qwen/Qwen3.5-2B, publicada por el usuario axteam. El modelo base, desarrollado por el equipo Qwen (Alibaba), es un transformer denso de aproximadamente 2.213 millones de parametros con una arquitectura hibrida que combina atencion lineal (tipo GatedDeltaNet/SSM) con atencion completa, e incluye una torre de vision y una cabeza de prediccion multi-token (MTP). Esta version cuantizada emplea el esquema NVFP4 (W4A4, FP4 E2M1) en formato `compressed-tensors`, pensado especificamente para servir el modelo con vLLM en GPUs Blackwell.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un formato de cuantización pensado exclusivamente para hardware Blackwell con tensor cores FP4 (B200 y sucesores), lo que lo convierte en una pieza de despliegue muy específica. Por otro, la propia model card reporta una pérdida de fidelidad medible frente al original en BF16 (perplejidad 2,0399 frente a 1,8515, un +10,2 %), y el autor recomienda explícitamente builds de 8 bits (FP8 o AWQ INT8) para producción en lugar de esta variante de 4 bits.
+El objetivo de esta publicacion es reducir el peso en disco y la huella de memoria del modelo hasta unos 3,1 GB, manteniendo la mayor parte de la calidad del original. Para ello se cuantizan pesos y activaciones a FP4, mientras que la torre de vision, la cabeza MTP, las RMSNorms, los embeddings, la LM head y toda la ruta de atencion lineal se conservan en BF16 (aproximadamente el 56% de los parametros). La cuantizacion es post-entrenamiento (PTQ) con calibracion AWQ sobre 256 muestras de un corpus mixto con predominio de coreano.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y fue creado el 29 de octubre de 2026, por lo que se trata de una publicación reciente y sin validación comunitaria. La licencia del derivado es Apache-2.0, heredada del modelo base.
+Es relevante ahora porque permite desplegar un modelo multimodal de 2B en hardware Blackwell con aceleracion FP4 nativa, a costa de una degradacion medible de calidad (94,8% de recuperacion media en benchmarks y +10,2% de perplejidad frente al BF16). El propio autor recomienda las variantes de 8 bits para produccion cuando la calidad sea prioritaria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: atención lineal (Gated DeltaNet / SSM) + atención completa; denso; multimodal con torre de visión; cabeza MTP |
-| Parametros totales | 2.213.241.664 (2,21 B) |
-| Parametros activos | No aplica: el modelo base es denso (la model card menciona "sparse-MoE" de forma contradictoria, ver limitaciones) |
-| Longitud de contexto | 128K tokens según fuentes de terceros; no confirmado en la model card de este repo |
-| Tipos de cuantizacion | NVFP4 W4A4 (FP4 E2M1 en pesos con grupo de 16, escala FP8 E4M3 + escala global FP32 por tensor, y activaciones FP4); componentes en BF16; el autor recomienda FP8 o AWQ INT8 para producción |
-| Idiomas soportados | No disponible en los metadatos del repo; la familia Qwen3.5 se describe como multilingüe y el conjunto de calibración es mayoritariamente coreano e inglés |
-| Licencia | Apache-2.0 (derivado de Qwen/Qwen3.5-2B) |
-| Formato de pesos | safetensors con compressed-tensors `nvfp4-pack-quantized` (no se distribuye GGUF) |
+| Arquitectura | Transformer hibrido (atencion lineal + atencion completa), denso, multimodal (vision), con cabeza MTP |
+| Parametros totales | 2.213.241.664 (dato de safetensors) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | NVFP4 (W4A4, FP4 E2M1) con grupo 16, escala FP8 E4M3 + escala global FP32 por tensor; resto en BF16 |
+| Idiomas soportados | No disponibles (la calibracion uso un corpus mixto ingles/coreano) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | Safetensors con `compressed-tensors` (`nvfp4-pack-quantized`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-2B emplea una arquitectura híbrida: capas de atención lineal basadas en Gated DeltaNet (SSM) combinadas con capas de atención completa, organizadas según una fuente externa en un patrón de seis bloques de (3× DeltaNet → FFN → 1× Attention → FFN). A esto se añade una torre de visión y un proyector para entrada de imagen, además de una cabeza de predicción multi-token (MTP), habitualmente usada para decodificación especulativa o entrenamiento con objetivos auxiliares. El resultado es un modelo denso de 2,21 B de parámetros con capacidad multimodal y una ventana de contexto declarada de 128K tokens por fuentes de terceros.
+El modelo base Qwen3.5-2B es un transformer denso de aproximadamente 2.213 millones de parametros con arquitectura hibrida: intercala capas de atencion lineal (ruta GatedDeltaNet/SSM) con capas de atencion completa, e incorpora una torre de vision con proyector para entrada de imagenes y texto, ademas de una cabeza de prediccion multi-token (MTP). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
-Esta variante concreta es una cuantización post-entrenamiento (PTQ), sin reentrenamiento, generada con compressed-tensors en el esquema `nvfp4-pack-quantized`. Se cuantizan a FP4 los pesos y las activaciones de las capas lineales, mientras que se mantienen en BF16 la torre de visión y el proyector (`model.visual.*`), la cabeza MTP (`mtp.*`), todas las RMSNorm, los embeddings de tokens, la LM head y la totalidad de la ruta de atención lineal (`linear_attn.*`). El autor justifica esta última decisión indicando que FP4 es una precisión demasiado gruesa para los pesos del SSM. La calibración se realizó con 256 muestras de un corpus mixto con predominio de coreano. La model card menciona también AWQ en un párrafo sobre protección de canales salientes, lo que resulta inconsistente con el resto de la descripción del método (ver limitaciones).
+Esta version concreta no reentrena el modelo: aplica cuantizacion post-entrenamiento (PTQ). El esquema NVFP4 cuantiza pesos y activaciones a FP4 (E2M1) con grupos de 16 elementos, usando una escala FP8 E4M3 por grupo y una escala global FP32 por tensor. La calibracion AWQ, sin gradientes, emplea 256 muestras de un corpus mixto con predominio de coreano para proteger canales de pesos relevantes antes del redondeo. Se mantienen en BF16 la torre de vision y el proyector (`model.visual.*`), la cabeza MTP (`mtp.*`), todas las RMSNorms, los embeddings de tokens, la LM head y toda la ruta de atencion lineal (`linear_attn.*`), ya que FP4 resulta demasiado grueso para los pesos del SSM. La revision del 1 de noviembre de 2026 restauro de forma bit-exacta los pesos de RMSNorm no suavizados que la herramienta llm-compressor habia dejado con ruido de redondeo BF16 (hasta un 0,4% en la ganancia efectiva). El tokenizador, la `chat_template` y las configuraciones de preprocesado son identicos a los del original; el `config.json` es el original mas un bloque `quantization_config`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat idéntica a la del modelo original.
-- Comprensión de imagen y texto (pipeline `image-text-to-text`): la torre de visión se conserva en BF16, por lo que la capacidad multimodal no se degrada por la cuantización de las capas lineales.
-- Razonamiento e instrucciones: la familia Qwen3.5 se presenta como una mejora en razonamiento y seguimiento de instrucciones frente a Qwen3.
-- Capacidades multilingües heredadas del modelo base, aunque el repo no declara lista de idiomas.
-- Cabeza MTP conservada en BF16, lo que permite mantener esquemas de decodificación especulativa asociados al modelo base.
-- Gestión de contexto largo: hasta 128K tokens según fuentes de terceros, lo que habilita tareas de documento completo o conversaciones extensas.
-- Al estar empaquetado con `chat_template` y `generation_config` originales, es compatible con los flujos estándar de transformers y vLLM.
+- Generacion de texto conversacional multi-turno.
+- Entrada multimodal imagen-texto (`image-text-to-text`): procesamiento de imagenes mediante torre de vision y proyector en BF16.
+- Razonamiento y respuesta a preguntas en formato generativo.
+- Razonamiento matematico basico (evaluado con GSM8K).
+- Capacidades multilingues: el modelo base es de la familia Qwen, aunque los idiomas soportados no estan documentados en esta ficha; la calibracion de la cuantizacion uso un corpus mixto ingles/coreano.
+- Cabeza de prediccion multi-token (MTP), util para decodificacion especulativa en el runtime.
+- Compatibilidad con tool calling y agentes: no documentada en la informacion disponible.
 
 ## Casos de uso
 
-- Servicio de inferencia de alto rendimiento en Blackwell: despliegue con `vllm serve axteam/Qwen3.5-2B-NVFP4` sobre B200 o GB200, donde el formato FP4 aprovecha los tensor cores de 4 bits para reducir el coste por token en cargas de gran volumen con modelos pequeños.
-- Procesamiento de documentos con imagen y texto: digitalización de facturas, formularios o capturas en las que el modelo recibe la imagen y devuelve campos estructurados; la torre de visión en BF16 preserva la calidad de la extracción.
-- Asistente conversacional de contexto largo: con 128K tokens de ventana (según fuentes externas) puede mantener historiales extensos o resumir contratos y expedientes completos en una sola pasada.
-- Extracción y clasificación por lotes en pipelines de datos: al ocupar aproximadamente 2,9 GB en disco, es viable ejecutar varias instancias por GPU, lo que resulta útil para etiquetado masivo o enriquecimiento de corpus multilingües.
-- Prototipado y evaluación de pipelines multimodales en entornos con hardware Blackwell, donde se necesita un modelo pequeño que quepa varias veces en memoria junto con el resto del stack.
-- Base para comparativas de cuantización: sirve como referencia para medir la degradación de NVFP4 frente a BF16 o FP8 en tareas propias, usando las métricas de fidelidad publicadas como punto de partida.
-- Inferencia en el borde o en dispositivos con aceleración FP4 dentro de la familia Blackwell, siempre que el runtime soporte compressed-tensors NVFP4.
+- Asistente conversacional multimodal de bajo coste: el modelo acepta imagenes y texto, por lo que puede emplearse en interfaces de chat que reciban capturas o fotos y respondan en lenguaje natural, con una huella de pesos de solo 3,1 GB.
+- Despliegue en GPUs Blackwell con aceleracion FP4: en B200/GB200, B300 o RTX 50xx se obtiene la ruta W4A4 completa, lo que permite servir el modelo con alta concurrencia en vLLM aprovechando los kernels FP4 nativos.
+- Prototipado rapido y entornos de desarrollo: al ocupar poco espacio en disco y memoria, cabe en estaciones de trabajo con una sola GPU consumer de la generacion RTX 50xx para pruebas de pipelines multimodales.
+- Clasificacion y extraccion de informacion a partir de imagenes: la torre de vision se mantiene en BF16, lo que preserva la calidad de la representacion visual para tareas de descripcion o lectura de documentos.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye mediciones frente a BF16, FP8-dynamic, AWQ-8bit, NVFP4A16 y AWQ-4bit con el mismo harness, lo que lo hace util como referencia para estudiar el impacto de FP4 en modelos pequenos.
+- Servicio de generacion de texto en ingles y coreano: dado que la calibracion se hizo sobre un corpus mixto ingles/coreano, es el escenario donde la fidelidad medida resulta mas representativa.
+- Backend de decodificacion especulativa: la cabeza MTP conservada en BF16 puede aprovecharse en el runtime para acelerar la generacion, aunque no se documentan cifras de throughput.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica métricas de fidelidad frente al modelo original en BF16, medidas sobre un conjunto interno mixto inglés/coreano de 100 prompts con respuestas greedy del modelo BF16 puntuadas por cada build, con el mismo arnés para todas las filas. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de tareas multimodales en la información disponible.
+Mediciones con lm-evaluation-harness sobre vLLM, greedy, prompts estilo completion sin chat template (0 o 5 disparos segun la fila). MMLU corresponde a la variante generativa (`mmlu_generative`), no comparable con puntuaciones por log-verosimilitud. Los porcentajes entre parentesis indican recuperacion respecto al BF16 original.
 
-| Metrica | Este modelo (NVFP4) | Original BF16 | Diferencia |
-|---|---|---|---|
-| Perplejidad (menor es mejor) | 2,0399 | 1,8515 | +10,2 % |
-| Acuerdo top-1 en siguiente token | 85,8 % | 98,9 % | -13,1 puntos |
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit | NVFP4A16 | NVFP4 (este repo) | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generativo) | 53,33 | 48,18 (90,3%) | 53,54 (100,4%) | 54,27 (101,8%) | 55,22 (103,5%) | 60,38 (113,2%) |
+| GSM8K (5-shot, estricto) | 58,23 | 56,63 (97,3%) | 56,56 (97,1%) | 54,51 (93,6%) | 51,71 (88,8%) | 54,06 (92,8%) |
+| ARC-Challenge (0-shot) | 41,47 | 41,98 (101,2%) | 41,30 (99,6%) | 41,04 (99,0%) | 39,51 (95,3%) | 39,59 (95,5%) |
+| Winogrande (5-shot) | 64,56 | 63,22 (97,9%) | 64,48 (99,9%) | 64,48 (99,9%) | 61,09 (94,6%) | 62,51 (96,8%) |
+| KMMLU (5-shot, directo) | 43,29 | 42,58 (98,4%) | 43,20 (99,8%) | 42,01 (97,1%) | 41,14 (95,0%) | 42,10 (97,3%) |
+| HAE-RAE (0-shot) | 45,65 | 45,00 (98,6%) | 45,10 (98,8%) | 44,91 (98,4%) | 42,07 (92,2%) | 41,06 (90,0%) |
+| Media | 51,09 | 49,60 (97,1%) | 50,70 (99,2%) | 50,21 (98,3%) | 48,46 (94,8%) | 49,95 (97,8%) |
 
-Estas cifras miden fidelidad respecto al modelo base, no rendimiento absoluto en tareas. El propio autor advierte que el modelo es sensible a la cuantización de 4 bits en estos valores y recomienda builds de 8 bits para producción.
+Fidelidad frente al original BF16 en un conjunto interno mixto ingles/coreano de 100 prompts, con respuestas greedy del BF16 puntuadas bajo cada variante:
+
+| Metrica | Este modelo | BF16 original |
+|---|---|---|
+| Perplejidad (menor es mejor) | 2,0399 | 1,8515 (+10,2%) |
+| Acuerdo top-1 del siguiente token | 85,8% | 98,9% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3 GB de pesos en disco (2,9 GB según el autor, repo de 3,1 GB) más los componentes en BF16 (embeddings, LM head, torre de visión, ruta SSM completa) y la caché KV. Estimación práctica: 4-6 GB de VRAM para contextos moderados; no disponible una medición oficial para 128K tokens.
-- GPU recomendadas: NVIDIA B200 o GB200, únicas plataformas donde el formato NVFP4 aprovecha los tensor cores FP4 a plena velocidad según el autor. En GPUs sin tensor cores FP4 el modelo puede ejecutarse, pero pierde la ventaja de rendimiento y requiere de-cuantización.
-- GPU de consumo: el formato está declarado como exclusivo de Blackwell; en generaciones anteriores (Ampere, Ada, Hopper) no hay aceleración FP4 nativa, por lo que no se recomienda su despliegue.
-- Opciones de despliegue: vLLM es el runtime objetivo (`vllm serve axteam/Qwen3.5-2B-NVFP4`); también es cargable con transformers al usar compressed-tensors. No se distribuyen pesos GGUF, por lo que llama.cpp u Ollama no son una vía directa con este repo. TGI y otros servidores no están documentados en la información disponible.
-- Latencia y throughput: no disponibles. El autor solo indica que se necesita hardware FP4 (B200) para velocidad plena.
-- Muestreo recomendado por Qwen: `temperature=0.7`, `top_p=0.8`, `top_k=20`.
+- VRAM estimada para inferencia: pesos de 3,1 GB; hay que sumar la cache KV (crece con la longitud de contexto y el numero de peticiones concurrentes) y varios GB para activaciones y CUDA graphs.
+- GPUs recomendadas: B200/GB200 (sm100), B300 (sm103) y RTX 50xx / RTX PRO 6000 (sm120) para velocidad FP4 completa (W4A4). Turing-Hopper (sm75-sm90) caen a FP4 solo de pesos, mas lento y con aviso de vLLM. V100 (sm70) no esta soportado. Solo se probo en B200.
+- Cabe en GPU consumer: si, en tarjetas RTX 50xx (sm120) con aceleracion FP4 nativa; en otras consumer el rendimiento sera menor por la ruta de solo pesos.
+- Opciones de despliegue: vLLM (la arquitectura esta en vLLM >= 0.17.0; probado con vLLM 0.32.0). Requiere Python 3.11-3.14, torch 2.13 (build CUDA 13.0, con driver NVIDIA compatible con CUDA 13), transformers >= 5.16.1,< 5.20 y compressed-tensors 0.17.0 (fijado por vLLM; lee este checkpoint guardado con 0.19.0, no actualizar por separado). Para pesos que no caben en una GPU, usar `--tensor-parallel-size N`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / precision | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| axteam/Qwen3.5-2B-NVFP4 (este) | 2,21 B | 128K según terceros | NVFP4 W4A4 con compressed-tensors | Apache-2.0 | HF, 0 descargas, solo vLLM/transformers en Blackwell |
-| Qwen/Qwen3.5-2B (original) | 2,21 B | 128K según terceros | BF16 safetensors | Apache-2.0 | HF, modelo de referencia, máxima fidelidad |
-| AxionML/Qwen3.5-2B-NVFP4 | 2 B (2B según su card) | No disponible | NVFP4 cuantizado con NVIDIA TensorRT Model Optimizer | No disponible en la información | HF, alternativa de cuantización equivalente de otro autor |
-| Builds de 8 bits del mismo modelo (FP8 o AWQ INT8) | 2,21 B | 128K según terceros | FP8 / INT8 | Apache-2.0 | Recomendados por el autor de esta ficha para producción; no se detalla el repositorio concreto |
+Comparativa entre las distintas variantes de cuantizacion del mismo modelo base, segun los datos medidos por el autor:
 
-La comparación con otras familias de 2B (por ejemplo, Qwen3-1.7B o modelos de tamaño similar de otros fabricantes) no está disponible en la información proporcionada.
+| Variante | Precision | Peso en disco | Media de benchmarks (recuperacion) | Perplejidad | Recomendacion |
+|---|---|---|---|---|---|
+| BF16 (original) | BF16 | No disponible | 51,09 (100%) | 1,8515 | Referencia de calidad |
+| FP8-dynamic | FP8 | No disponible | 49,60 (97,1%) | No disponible | Buena relacion calidad/tamano |
+| AWQ-8bit | INT8 | No disponible | 50,70 (99,2%) | No disponible | Recomendada para produccion |
+| NVFP4A16 | FP4 pesos, BF16 activaciones | No disponible | 50,21 (98,3%) | No disponible | Intermedia |
+| NVFP4 (este repo) | W4A4 FP4 | ~3,1 GB | 48,46 (94,8%) | 2,0399 | Maxima eficiencia en Blackwell |
+| AWQ-4bit | INT4 | No disponible | 49,95 (97,8%) | No disponible | Alternativa de 4 bits |
+
+No se dispone de datos de modelos comparables de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Pérdida de calidad medida y significativa: +10,2 % de perplejidad y 85,8 % de acuerdo top-1 frente al BF16 original. El propio autor desaconseja esta variante para producción y recomienda 8 bits.
-- Dependencia de hardware: formato declarado exclusivo de Blackwell. En GPUs sin tensor cores FP4 el rendimiento esperado no se cumple.
-- Inconsistencias en la model card: describe la arquitectura como "Dense" y a la vez advierte sobre un "sparse-MoE" sensible a 4 bits; además menciona AWQ (protección de canales salientes) en un procedimiento que describe como PTQ FP4. Conviene tratar esas afirmaciones con cautela y verificar contra el `config.json` del modelo base.
-- Calibración sesgada: 256 muestras de un corpus con predominio de coreano, lo que puede afectar la fidelidad en otros idiomas, entre ellos el castellano.
-- Idiomas no declarados: el repo no publica lista de idiomas soportados, por lo que el soporte multilingüe se hereda del modelo base sin garantía documentada.
-- Riesgo de alucinación inherente a un modelo de 2 B de parámetros; no se han publicado evaluaciones de veracidad ni de tasa de alucinación.
-- La ventana de 128K tokens proviene de fuentes de terceros y no está confirmada en la model card; el comportamiento en contextos muy largos con cuantización de 4 bits no está evaluado.
-- Sin validación comunitaria: 0 descargas y 0 likes; el autor no ofrece garantías de soporte.
-- Licencia Apache-2.0 permite uso comercial, pero el derivado mantiene los derechos del modelo base del equipo Qwen y conviene conservar la atribución y la nota de licencia enlazada.
-- El repo no incluye pesos GGUF, lo que limita las opciones de despliegue fuera de vLLM y transformers.
+- Degradacion de calidad medible: recuperacion media del 94,8% frente al BF16, con caidas notables en GSM8K (88,8%) y HAE-RAE (92,2%). El autor recomienda builds de 8 bits (FP8 o AWQ INT8) si la calidad es prioritaria.
+- Sensibilidad a la cuantizacion de 4 bits: +10,2% de perplejidad y solo 85,8% de acuerdo top-1 con el original; este modelo denso pequeno es especialmente sensible a FP4.
+- Riesgo de alucinacion: inherente a los modelos generativos; no se documentan evaluaciones especificas de veracidad.
+- Sesgos conocidos: no documentados; la calibracion con un corpus con predominio de coreano puede sesgar el comportamiento hacia ese idioma y el ingles.
+- Idiomas soportados no documentados oficialmente en esta ficha; el rendimiento en castellano no esta evaluado.
+- Restricciones de licencia: Apache-2.0, permite uso comercial con las obligaciones habituales de atribucion y aviso de licencia.
+- Dependencia estricta del runtime: requiere vLLM >= 0.17.0 (probado con 0.32.0) y versiones fijadas de torch, transformers y compressed-tensors; no se garantiza funcionamiento en otros motores (llama.cpp, Ollama, TGI no estan soportados por el formato `nvfp4-pack-quantized`).
+- Compatibilidad de hardware limitada: la ruta W4A4 completa solo esta en Blackwell; en generaciones anteriores el rendimiento cae a FP4 solo de pesos y V100 no esta soportado.
+- Longitud de contexto no disponible: no se puede planificar el uso de ventanas largas sin consultar el modelo base.
+- Solo se probo en B200; el resto de GPUs Blackwell se infiere del codigo de seleccion de kernels de vLLM 0.32, no de mediciones.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
-- Cuantización NVFP4 alternativa del mismo modelo base: https://huggingface.co/AxionML/Qwen3.5-2B-NVFP4
-- Ficha de especificaciones y VRAM de Qwen3.5-2B (terceros): https://apxml.com/models/qwen35-2b
-- Detalles de modelo y guía de cuantización (terceros): https://llmfit.io/models/qwen3.5%3A2b%20nvfp4
-- Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -87,31 +87,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
-      "url": "https://www.netflix.com/",
-      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
-    },
-    {
-      "title": "Netflix",
-      "url": "https://www.netflix.com/fr/login",
-      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
-    },
-    {
-      "title": "Netflix",
-      "url": "https://app.netflix.com/signup",
-      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
-    },
-    {
-      "title": "Netflixが利用できない | Netflixエラーコード | Netflixヘルプセンター",
-      "url": "https://help.netflix.com/ja/troubleshooting",
-      "snippet": "ヘルプホームへ戻る Netflixが利用できない Netflixをご利用いただけない場合は、エラーコードやエラーメッセージ、または問題の …"
-    },
-    {
-      "title": "Netflix",
-      "url": "https://www.netflix.com/ar/login",
-      "snippet": "Disfruta películas y series en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "SeregUs2002/cohere-transcribe-arabic-07-2026",
+  "slug": "seregus2002-cohere-transcribe-arabic-07-2026",
+  "author": "SeregUs2002",
+  "url": "https://huggingface.co/SeregUs2002/cohere-transcribe-arabic-07-2026",
+  "created_at": "2026-11-25T22:27:36.000Z",
+  "updated_at": "2026-11-25T22:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "arabic",
+    "asr",
+    "arabic-asr",
+    "arabic-dialect",
+    "arabic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132355803,
+  "storage_human": "4.1 GB",
+  "context_length": null,
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Make Fluffy Pancakes: A Reliable Homemade Method for Tall ...",
+      "url": "https://acadofchoc.com/blog/how-to-make-fluffy-pancakes/",
+      "snippet": "Jun 22, 2026 · Learn how to make fluffy pancakes with simple pantry ingredients, the right mixing method, and heat control for …Read more"
+    },
+    {
+      "title": "Best Fluffy Pancakes Recipe on the Internet (+Video)",
+      "url": "https://www.laurafuentes.com/fluffy-pancakes-recipe/",
+      "snippet": "Oct 21, 2026 · The best fluffy pancakes recipe on the internet with all the tips to make your homemade pancakes foolproof!"
+    }
+  ]
+}

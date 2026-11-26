@@ -2,98 +2,101 @@
 
 ## Resumen
 
-Parakeet TDT 0.6B V3 CoreML es la conversión a Core ML del modelo de reconocimiento automático del habla (ASR) multilingüe `nvidia/parakeet-tdt-0.6b-v3`, publicada por BuilderHelm. El objetivo no es reentrenar el modelo, sino empaquetar el checkpoint original de NVIDIA en cinco programas Core ML (`Preprocessor`, `Encoder`, `EncoderTail`, `Predictor` y `Joint`) para ejecutar transcripción offline sobre Apple Silicon, tanto en macOS 15+ (M1 y posteriores) como en iOS 18+.
+Parakeet-TDT-0.6B-V3-CoreML es la conversión a Core ML del modelo de reconocimiento automático del habla (ASR) multilingüe Parakeet TDT 0.6B v3 de NVIDIA, publicada por BuilderHelm. El modelo original combina un encoder Conformer con un decodificador Token-and-Duration Transducer (TDT) de 0,6 mil millones de parámetros, y esta versión lo empaqueta en cinco componentes Core ML ejecutables de forma totalmente offline sobre Apple Silicon (M1 en adelante, macOS 15+ e iOS 18+), aprovechando el Neural Engine.
 
-El modelo conserva la arquitectura TDT (Token-and-Duration Transducer) de NVIDIA: un encoder Conformer, un predictor LSTM de dos capas y 640 unidades, y una red conjunta que emite logits para 8.193 tokens y cinco duraciones. Los pesos y el cómputo del encoder, predictor y joint se ejecutan en FP16 sin cuantización, mientras que el frontend log-mel y las interfaces en coma flotante permanecen en FP32.
+El interés de esta ficha reside en que traslada un modelo ASR de referencia de NVIDIA al ecosistema nativo de Apple sin reentrenamiento: los pesos del encoder, predictor y joint se mantienen en FP16 sin cuantizar, mientras que el frontend y las interfaces en coma flotante permanecen en FP32. El paquete ocupa aproximadamente 1,27 GB antes de compresión y cubre 25 idiomas europeos, lo que lo convierte en una opción relevante para transcripción local en aplicaciones macOS/iOS con requisitos de privacidad estrictos.
 
-Su relevancia actual reside en que permite ASR multilingüe de 25 idiomas europeos completamente en el dispositivo, sin conexión y con los datos de audio y transcripción sin salir del hardware del usuario. El paquete ocupa aproximadamente 1,27 GB antes de compresión, lo que lo hace viable en equipos de consumo con Apple Silicon, aunque el autor advierte que el rendimiento en configuraciones de 8 GB y en chips distintos de M5 e iPhone 13 no se ha medido.
+La versión documentada es la 1.0.1 (FP16), distribuida a través del SDK BuilderHelmAudio 0.2.0 o superior. No se distribuye un modelo compilado específico para M5: los paquetes portables se compilan localmente, y la validación física se ha realizado únicamente en un Mac con M5 y en un iPhone 13.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TDT (Token-and-Duration Transducer): encoder Conformer en dos etapas secuenciales, predictor LSTM de 2 capas y 640 unidades, joint network con 8.193 logits de token y 5 de duración |
-| Parametros totales | 0,6 mil millones (600M) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | Ventanas de audio de 15 s y 30 s (funciones `w15` y `w30`); sin límite fijo de duración de grabación en la SDK, que procesa el audio en bloques de hasta 480.001 muestras |
-| Tipos de cuantizacion | FP16 sin cuantizar en encoder, predictor y joint; FP32 en frontend e interfaces de coma flotante. Se evaluaron candidatos INT8 block-32, INT8 block-16 e INT4 para el encoder, pero se descartaron en favor de FP16 |
-| Idiomas soportados | 25: bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, ru, sk, sl, sv, uk |
+| Arquitectura | Encoder Conformer (dos etapas secuenciales) + decodificador TDT (Token-and-Duration Transducer) con predictor LSTM de dos capas y 640 unidades + módulo joint |
+| Parametros totales | 0,6 mil millones (aproximado, según nombre del modelo base) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | Ventanas de audio de 15 s y 30 s (funciones `w15`/`w30`); sin límite fijo de duración de grabación en el SDK, procesado por bloques de hasta 480.001 muestras |
+| Tipos de cuantizacion | FP16 sin cuantizar en encoder, predictor y joint; FP32 en frontend e interfaces en coma flotante |
+| Idiomas soportados | bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, ru, sk, sl, sv, uk (25 idiomas) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | Core ML `.mlpackage` (FP16 y FP32), con `vocab.json` y `config.json`; biblioteca `coreml`, integración vía Swift |
+| Formato de pesos | Core ML `.mlpackage` (Preprocessor, Encoder, EncoderTail, Predictor, Joint) + `vocab.json` y `config.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transducer TDT heredado íntegramente del checkpoint de NVIDIA, sin entrenamiento adicional por parte de BuilderHelm. El encoder Conformer se divide en dos programas Core ML secuenciales (`Encoder` y `EncoderTail`), cada uno por debajo de 1 GB, para facilitar la compilación y la carga; ambas etapas comparten pesos entre las funciones de ventana corta (`w15`) y larga (`w30`), de modo que añadir la función larga solo incrementa el bundle un 3,3 % en lugar de duplicar el encoder. El predictor mantiene el LSTM original de dos capas y 640 unidades, y el joint emite los 8.193 logits de token y los cinco logits de duración que caracterizan la decodificación TDT.
+Esta publicación no entrena ningún modelo: es una conversión del checkpoint `nvidia/parakeet-tdt-0.6b-v3` a Core ML, sin entrenamiento adicional. El pipeline reproduce la arquitectura TDT original de NVIDIA: un encoder Conformer dividido en dos programas secuenciales (`Encoder.mlpackage` y `EncoderTail.mlpackage`) para mantenerse por debajo de 1 GB por programa, un predictor LSTM TDT de dos capas y 640 unidades, y un módulo joint que produce 8.193 logits de token y cinco logits de duración. Las dos etapas del encoder comparten pesos entre las funciones de ventana de 15 s y 30 s, de modo que añadir la función larga incrementó el tamaño del paquete solo un 3,3 % aproximadamente.
 
-El frontend FP32 extrae como máximo 401 tramas log-mel crudas por predicción DFT y normaliza después la ventana completa de 15 o 30 segundos; la preénfasis se evalúa en FP32 en tiempo de ejecución. Esta ruta acotada hace estable la decodificación completa repetida y las características congeladas coinciden con la referencia de ventana completa validada dentro de 0,0000005. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO, al tratarse de una conversión del modelo original.
+La innovación técnica de la conversión está en el frontend: un preprocesador FP32 que extrae como máximo 401 tramas log-mel crudas por predicción DFT y luego normaliza la ventana completa de 15 o 30 segundos (`normalize_w15`/`normalize_w30`). La preénfasis se evalúa en FP32 en tiempo de ejecución. Según el autor, esta ruta acotada hace estable la decodificación completa repetida y las características congeladas coinciden con la referencia de ventana completa validada dentro de 0,0000005. El vocabulario conserva las 8.192 piezas originales y el contrato de ejecución está fijado por checksum. El SDK descarga un commit fijado, verifica los SHA-256 de cada archivo, compila los paquetes portables y reutiliza su caché.
 
 ## Capacidades
 
-- Reconocimiento automático del habla offline en 25 idiomas europeos, con normalización de texto específica por idioma (Whisper EnglishTextNormalizer para inglés y BasicTextNormalizer con NFC y diacríticos conservados para el resto).
-- Procesamiento de grabaciones largas sin límite fijo en la SDK: lectura en bloques de hasta 480.001 muestras, ventanas con contexto derecho, cortes preferentes en pausas silenciosas y unión por solapamiento de secuencias de tokens coincidentes.
-- Recuperación de ventanas parcialmente en blanco mediante subdivisiones acotadas y hasta cuatro reintentos de ventana corta en audio activo y variable.
-- Ejecución íntegra en el dispositivo: el audio y las transcripciones no salen del hardware del usuario.
-- Integración nativa en Swift mediante BuilderHelmAudio 0.2.0 o superior, con descarga de commit fijado, verificación SHA-256 y caché de compilación.
-- Entrada resampleada a 16 kHz mono; selección automática de la función de 15 s para peticiones cortas y de 30 s para las largas.
-- No soporta resultados parciales en vivo, CTC, keyword spotting, timestamps alineados de palabra o segmento, subtítulos ni etiquetas de hablante; `ctcTranscript` es nulo y `tokens` está vacío para V3.
+- Reconocimiento automático del habla (ASR) offline en 25 idiomas europeos: búlgaro, checo, danés, alemán, griego, inglés, español, estonio, finés, francés, croata, húngaro, italiano, lituano, letone, maltés, neerlandés, polaco, portugués, rumano, ruso, eslovaco, esloveno, sueco y ucraniano.
+- Transcripción de audio completo mediante API asíncrona (`SpeechRecognizer.transcribe(file:)`), con entrada remuestreada a 16 kHz mono.
+- Procesamiento de grabaciones largas sin límite fijo de duración en el SDK: lectura por bloques acotados, ventanas con contexto derecho, cortes en pausas silenciosas y unión de secuencias de tokens solapadas que coinciden.
+- Reintentos acotados de subdivisión en ventanas con habla pero completamente en blanco, y hasta cuatro reintentos de ventana corta en audio activo y variable dentro de una ventana parcialmente en blanco.
+- Ejecución local completa: audio y transcripciones permanecen en el dispositivo.
+- Reutilización del reconocedor con peticiones serializadas y cancelación cooperativa.
+- No soporta: resultados parciales en vivo, CTC, keyword spotting, marcas de tiempo alineadas a palabra o segmento, subtítulos ni etiquetas de hablante. `ctcTranscript` es nulo y `tokens` está vacío para V3.
 
 ## Casos de uso
 
-- Transcripción de reuniones y entrevistas en local: la SDK procesa grabaciones largas en bloques acotados y une ventanas por solapamiento de tokens, por lo que puede transcribir conversaciones de horas sin enviar audio a la nube y cumpliendo requisitos de privacidad estrictos.
-- Dictado y notas de voz en aplicaciones iOS: con soporte para iOS 18+ y ejecución en el dispositivo, el modelo permite convertir voz a texto en apps de productividad sin conexión y sin coste por petición de API.
-- Subtitulado y archivo de contenido audiovisual multilingüe: los 25 idiomas cubiertos permiten transcribir material en búlgaro, checo, danés, neerlandés, polaco, rumano, sueco, ucraniano y otros, aunque sin timestamps alineados nativos, por lo que el alineado temporal debe resolverse en la capa de aplicación.
-- Análisis de llamadas de atención al cliente: los resultados reportados sobre extractos naturales de earnings calls (10,74 % WER en FP32 nativo y 10,78 % en la SDK FP16) indican un rendimiento adecuado para transcribir audio telefónico y alimentar pipelines de análisis de sentimiento o cumplimiento.
-- Investigación lingüística y corpus de habla: la licencia CC BY 4.0 y la preservación de diacríticos en la normalización facilitan la generación de transcripciones para estudios comparativos entre lenguas eslavas, bálticas y germánicas.
-- Procesamiento por lotes en estaciones de trabajo Mac: el paquete compila localmente y la SDK reutiliza la caché del reconocedor, de modo que se pueden serializar peticiones y procesar carpetas completas de audio en un Mac con Apple Silicon sin infraestructura de GPU dedicada.
-- Prototipado de asistentes de voz embebidos: la API Swift con `try await recognizer.transcribe(file:)` permite integrar ASR en prototipos de macOS e iOS con cancelación cooperativa de peticiones.
+- Transcripción de reuniones y notas de voz en macOS/iOS: el SDK procesa grabaciones de duración arbitraria por bloques y ventanas de 15/30 s, por lo que encaja en apps de productividad que necesitan transcribir audio localmente sin enviar datos a la nube.
+- Dictado por voz en aplicaciones nativas Swift: la API `SpeechRecognizer.load(.parakeetTdtV3)` permite integrar dictado en apps de escritorio y móviles con una llamada asíncrona, manteniendo el audio en el dispositivo.
+- Subtitulado y archivado de contenido audiovisual en 25 idiomas europeos: aunque el modelo no genera marcas de tiempo alineadas, la transcripción completa por ventanas sirve para generar borradores de subtítulos que se alinean posteriormente con herramientas externas.
+- Cumplimiento y privacidad en entornos regulados: al ejecutarse íntegramente offline en Apple Silicon, es adecuado para sectores (sanidad, legal, administración) donde el audio no puede salir del dispositivo.
+- Investigación en ASR multilingüe: permite reproducir y comparar el rendimiento FP16 frente a la referencia FP32 de NVIDIA en hardware Apple, con un WER medido de 14,46 % frente a 14,52 % en el conjunto reservado multilingüe de 200 archivos.
+- Herramientas de accesibilidad: transcripción local de audio para personas con discapacidad auditiva en apps de macOS/iOS, sin dependencia de conectividad.
+- Procesamiento por lotes de archivos de audio en un Mac: el SDK lee bloques de hasta 480.001 muestras y gestiona ventanas solapadas, lo que permite transcribir carpetas completas de grabaciones de forma desatendida.
 
 ## Benchmarks y rendimiento
 
-| Evaluación | Archivos | WER FP32 CPU nativa NVIDIA | WER FP16 SDK |
+Datos de precisión publicados por el autor (WER, con normalización Whisper EnglishTextNormalizer para inglés y BasicTextNormalizer con NFC y diacríticos para el resto; los errores y el habla vacía se mantienen en la puntuación):
+
+| Evaluación | Archivos | WER nativo NVIDIA CPU FP32 | WER SDK FP16 |
 |---|---:|---:|---:|
 | Habla multilingüe reservada | 200 | 14,52 % | 14,46 % |
 | Confirmación multilingüe final separada | 75 | 13,44 % | 13,21 % |
-| Grabaciones cortas reservadas únicas agrupadas | 275 | 14,24 % | 14,14 % |
-| Extractos naturales continuos de earnings calls | 29 | 10,74 % | 10,78 % |
-| Extractos de confirmación de llamadas naturales | 18 | 11,92 % | 11,86 % |
+| Poo... (dato truncado en la información disponible) | no disponible | no disponible | no disponible |
 
-Además, en el conjunto de regresión Long20 (20 composites conocidos de LibriSpeech), la política de solapamiento antigua de V3 puntuó un 14,03 % de WER, mientras que la SDK de producción actual sobre M5 alcanza un 1,83 % con recuperación acotada de ventanas parcialmente en blanco. El autor advierte que se trata de un resultado de conjunto de regresión, no de una nueva afirmación de precisión sobre datos reservados. Las 275 grabaciones se mantuvieron fuera del proceso de ingeniería, pero se desconoce el solapamiento con el preentrenamiento y la disjunción de hablantes; los extractos naturales en inglés provienen de un corpus usado previamente en investigación de 110M y la confirmación separada no es independiente por hablante.
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, LibriSpeech, Common Voice) ni métricas de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo se ejecuta en Apple Silicon con memoria unificada. El bundle ocupa aproximadamente 1,27 GB antes de compresión y requiere espacio adicional para la caché compilada de Core ML.
-- Equipos objetivo: Mac con Apple Silicon M1 o posterior y macOS 15+, e iPhone con iOS 18+.
-- Validación física: el autor solo ha validado el rendimiento en un Mac con M5 y un iPhone 13; el comportamiento en otros chips y en configuraciones de 8 GB no se ha medido.
-- Cabe en GPU de consumo: sí, en el ecosistema Apple Silicon; no se distribuye una versión compilada específica para M5, los paquetes se compilan localmente.
-- Despliegue: Core ML con la SDK BuilderHelmAudio 0.2.0 o superior en Swift; no se mencionan opciones de despliegue con vLLM, llama.cpp, Ollama o TGI, que no aplican a este formato.
-- Latencia y throughput: no disponibles en la información proporcionada. El autor indica que el primer uso de una función puede incurrir en coste de preparación y que las llamadas síncronas activas de Core ML pueden terminar antes de que la cancelación retorne.
+- VRAM/almacenamiento: el paquete ocupa aproximadamente 1,27 GB antes de compresión de descarga; hay que reservar espacio adicional para la caché compilada de Core ML. El repositorio completo en Hugging Face pesa 2,5 GB.
+- Hardware objetivo: Macs con Apple Silicon M1 o posterior, macOS 15 o superior; iPhone con iOS 18 o superior.
+- Validación física: únicamente un Mac con M5 y un iPhone 13. El rendimiento en otros chips y en configuraciones de 8 GB no está medido.
+- GPU dedicadas (A100, H100, RTX 4090): no aplica; el modelo está empaquetado para Core ML y Neural Engine de Apple.
+- Despliegue: Core ML a través del SDK BuilderHelmAudio 0.2.0 o superior en Swift; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son compatibles con este formato.
+- Latencia y throughput: no disponibles. El autor advierte que el primer uso de una función puede incurrir en un coste de preparación y que las llamadas síncronas activas a Core ML pueden terminar antes de que la cancelación retorne.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / ventana | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Idiomas | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Parakeet TDT 0.6B V3 CoreML (este) | 600M | Ventanas de 15 s y 30 s; grabaciones largas por bloques | 25 europeos | CC BY 4.0 | Core ML FP16/FP32 |
-| nvidia/parakeet-tdt-0.6b-v3 | 600M | no disponible en la información proporcionada | 25 europeos | no disponible en la información proporcionada | checkpoint original (no disponible el detalle) |
-| Whisper (referencia de normalización citada) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Parakeet-TDT-0.6B-V3-CoreML (este) | 0,6 B | 25 europeos | Core ML FP16 | CC BY 4.0 | Offline en Apple Silicon, sin marcas de tiempo |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | 25 europeos | NeMo (checkpoint original) | CC BY 4.0 | Referencia FP32; WER 14,52 % en el conjunto reservado |
+| Whisper large-v3 (OpenAI) | 1,55 B | ~99 | PyTorch, GGUF, Core ML (comunidad) | MIT | Mayor cobertura de idiomas; requiere más cómputo |
+| Whisper small (OpenAI) | 244 M | ~99 | PyTorch, GGUF, Core ML | MIT | Menor tamaño, menor precisión en idiomas distintos del inglés |
 
-La información proporcionada solo permite comparar con el checkpoint original de NVIDIA, del que este paquete es una conversión sin entrenamiento adicional y con precisión FP16 validada frente a FP32 nativo. No se dispone de datos de benchmarks de otros modelos ASR comparables en la documentación consultada.
+La comparación con Whisper se ofrece como referencia de categoría; no se dispone en la información proporcionada de WER comparativos entre Parakeet y Whisper sobre los mismos conjuntos.
 
 ## Limitaciones y advertencias
 
-- El modelo es offline y no ofrece resultados parciales en vivo, CTC, keyword spotting, timestamps alineados de palabra o segmento, subtítulos ni etiquetas de hablante; `ctcTranscript` es nulo y `tokens` está vacío para V3.
-- Los frames de emisión internos no son alineamientos de palabras, por lo que no deben usarse como tales en aplicaciones que requieran sincronización temporal precisa.
-- El estado del predictor se reinicia en cada ventana; el experimento de arrastre de estado no se distribuye.
-- El rendimiento solo está validado físicamente en un Mac con M5 y un iPhone 13; no se ha medido en otros chips ni en configuraciones de 8 GB.
-- Las grabaciones de evaluación tienen solapamiento desconocido con el preentrenamiento y disjunción de hablantes no verificada; los extractos naturales de confirmación no son independientes por hablante.
-- El resultado de 1,83 % de WER en Long20 es un conjunto de regresión, no una afirmación de precisión sobre datos reservados.
-- Riesgo de alucinación y sesgos: no se documentan en la información disponible; los errores y el habla vacía permanecen en la puntuación de evaluación.
-- Licencia CC BY 4.0: permite uso comercial con atribución, pero conviene verificar las condiciones del checkpoint base de NVIDIA antes de redistribuir.
-- Las llamadas síncronas activas de Core ML pueden completarse antes de que la cancelación retorne, lo que afecta al control de latencia en aplicaciones interactivas.
-- Se requiere espacio adicional en disco para la caché compilada de Core ML más allá de los 1,27 GB del bundle.
+- Es una API offline: no ofrece resultados parciales en vivo, CTC, keyword spotting, marcas de tiempo alineadas a palabra o segmento, subtítulos ni etiquetas de hablante.
+- `ctcTranscript` es nulo y `tokens` está vacío en V3; las tramas de emisión internas no son alineaciones a palabra.
+- La validación física se limita a un Mac con M5 y un iPhone 13; el rendimiento en otros chips Apple y en configuraciones de 8 GB no está medido.
+- El primer uso de una función de ventana puede incurrir en costes de preparación; las llamadas síncronas a Core ML pueden completarse antes de que la cancelación surta efecto.
+- Riesgo de alucinación y errores en habla con ruido, acentos no cubiertos o audio de baja calidad: el WER medido ronda el 13-15 % en los conjuntos multilingües publicados, con errores y habla vacía incluidos en la puntuación.
+- Cobertura limitada a 25 idiomas europeos; no incluye lenguas asiáticas, africanas ni americanas distintas del inglés.
+- Licencia CC BY 4.0: permite uso comercial con atribución; hay que conservar la atribución a NVIDIA y a BuilderHelm y revisar los términos del modelo base.
+- El modelo depende del SDK BuilderHelmAudio y de la compilación local de los paquetes Core ML; no se distribuye un binario compilado para M5.
+- El experimento de arrastre de estado del predictor entre ventanas falló y no se incluye; el estado se reinicia por ventana, lo que puede afectar a la coherencia en grabaciones muy largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Parakeet-TDT-0.6B-V3-CoreML
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- SDK BuilderHelmAudio: https://github.com/BuilderHelm/BuilderHelmAudio
-- Métricas de evaluación: https://huggingface.co/BuilderHelm/Parakeet-TDT-0.6B-V3-CoreML/blob/main/evaluation/metrics.json
+- Perfil del autor en Hugging Face: https://huggingface.co/BuilderHelm
+- Repositorio del SDK BuilderHelmAudio: https://github.com/BuilderHelm/BuilderHelmAudio
+- ZenVoice (homepage): https://getzenvoice.com
+- Descarga de ZenVoice para Mac: https://getzenvoice.com/download
+- Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

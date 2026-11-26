@@ -2,109 +2,101 @@
 
 ## Resumen
 
-Ishiki-ASR-0.5 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por Ishiki Labs Inc. como ajuste fino del modelo de NVIDIA `nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B`. Su proposito es la transcripcion de audio a texto en ingles, con enfasis en la calidad sobre los conjuntos de evaluacion del Open ASR Leaderboard. Se publica bajo la licencia OpenMDW-1.1 de NVIDIA, al ser una obra derivada del modelo base.
+Ishiki-ASR-0.5 es un modelo de reconocimiento automático del habla (ASR) desarrollado por Ishiki Labs Inc. a partir de `nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B`. Se trata de un ajuste fino (finetune) del modelo base de NVIDIA, orientado a transcripción de audio en inglés de formato corto, y evaluado contra los conjuntos de referencia del Open ASR Leaderboard, donde reporta un WER medio del 4,17 % en los ocho conjuntos principales y del 3,58 % en los diez conjuntos públicos del leaderboard.
 
-El modelo hereda la arquitectura del Nemotron-3.5-Transcribe-30B-A4B, un transformer con mezcla de expertos (MoE) de 30 mil millones de parametros totales y aproximadamente 4 mil millones de parametros activos por token, segun indica el sufijo A4B de su identificador. Esta construccion permite un coste de inferencia mas cercano al de un modelo de 4B que al de uno denso de 30B, manteniendo la capacidad del modelo completo.
+El modelo se distribuye en formato safetensors con un total de 34.053.546.277 parámetros según los pesos reales (la model card indica 27,48B, presumiblemente parámetros activos al tratarse de una arquitectura MoE heredada del base, aunque este dato no se confirma explícitamente en la información disponible). El repositorio ocupa 68,3 GB. Está pensado para su uso con la librería `transformers` y la arquitectura `nemo_speechlm` de NVIDIA.
 
-La relevancia de esta ficha es doble: por un lado, presenta resultados competitivos en los conjuntos de referencia del Open ASR Leaderboard (WER medio de 3,18 % en diez conjuntos publicos y 3,62 % en los siete conjuntos cortos por defecto de la API); por otro, es un modelo muy reciente con cero descargas y cero likes en el momento de la consulta, por lo que su adopcion en produccion aun no esta contrastada. La informacion disponible sobre arquitectura interna, datos de entrenamiento e idiomas es limitada y se remite en gran medida a la documentacion del modelo base.
+Su relevancia radica en que ofrece un rendimiento competitivo en ASR en inglés (WER de 0,82 % en LibriSpeech test-clean y 1,48 % en SPGISpeech) sobre una base de pesos abiertos bajo licencia OpenMDW-1.1, lo que permite su uso comercial con condiciones, aunque con la cautela de que es un modelo derivado y hereda las obligaciones de atribución del modelo original de NVIDIA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), derivada de NVIDIA Nemotron-3.5-Transcribe-30B-A4B |
-| Parametros totales | 30B (segun el identificador del modelo base) |
-| Parametros activos | Aproximadamente 4B (sufijo A4B del modelo base) |
+| Arquitectura | nemo_speechlm (modelo de lenguaje de habla de NVIDIA, derivado de Nemotron) |
+| Parametros totales | 34.053.546.277 (según safetensors); la model card indica 27,48B |
+| Parametros activos | no disponible (el modelo base es A4B, lo que sugiere arquitectura MoE con ~4B activos, pero no se confirma) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible en la model card; los benchmarks publicados son en ingles (en y en-IN) |
+| Idiomas soportados | inglés (evaluado en en-IN y en-US); otros idiomas no disponibles |
 | Licencia | OpenMDW-1.1 (NVIDIA Open Model License Agreement) |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del Nemotron-3.5-Transcribe-30B-A4B de NVIDIA, un modelo de transcripcion de voz construido sobre una arquitectura de mezcla de expertos con 30B parametros totales y unos 4B activos. La model card de Ishiki no detalla la arquitectura interna (codificador de audio, proyector, decodificador, mecanismo de atencion) ni la composicion exacta del dataset de ajuste; unicamente indica que se trata de una obra derivada y remite a la divulgacion de datos de entrenamiento del modelo base de NVIDIA.
+El modelo se basa en `nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B`, un modelo de la familia Nemotron de NVIDIA para transcripción de habla. La etiqueta `nemo_speechlm` indica que se trata de un modelo de lenguaje de habla (speech language model) que combina un codificador de audio con un modelo de lenguaje, aunque los detalles concretos de la arquitectura interna (número de capas, dimensión, mecanismo de atención, tipo de encoder de audio) no se detallan en la información disponible. El sufijo A4B del modelo base sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos, pero este dato no se confirma en la model card.
 
-En cuanto al proceso de entrenamiento, la model card declara explicitamente que no se utilizaron conjuntos de test del Open ASR Leaderboard durante la optimizacion, lo que refuerza la validez de los resultados reportados. No se menciona el uso de RLHF, DPO ni tecnicas de alineacion adicionales, ni el numero de tokens de audio o horas de entrenamiento empleadas. Tampoco se documentan innovaciones tecnicas propias mas alla del ajuste fino sobre el modelo base.
+En cuanto al entrenamiento, la model card indica que no se utilizaron conjuntos de test del Open ASR Leaderboard durante la optimización, y remite a la divulgación completa de datos del modelo base de NVIDIA. No se especifica el número de tokens de audio, la composición del dataset de ajuste fino ni si se emplearon técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (ASR) en ingles, con resultados especificos en variantes en-US y en-IN.
-- Transcripcion de audio corto (short-form) segun la terminologia de la model card y del Open ASR Leaderboard.
-- Buen rendimiento en audio limpio (LibriSpeech test-clean: 0,58 % WER; VoxPopuli: 0,90 % WER) y en dominios especializados (SPGISpeech: 1,21 % WER).
-- Manejo de audio con ruido o espontaneo con degradacion controlada (URGENT 2024: 8,66 % WER; AMI-Cleaned: 5,14 % WER).
-- Soporte de API HTTP mediante el endpoint `/v1/transcribe`, con parametros de modelo, idioma y almacenamiento (`store=false`).
-- Procesamiento de audio en memoria sin registro ni retencion, segun declara el autor para la API de evaluacion.
-- No se documentan capacidades de traduccion, diarizacion, marcas de tiempo, tool calling ni modos de razonamiento.
+- Reconocimiento automático del habla (ASR) en inglés, orientado a audio de formato corto.
+- Transcripción de audio con puntuación y formato, según el pipeline `automatic-speech-recognition`.
+- Evaluado en dominios diversos: conversacional (AMI), financiero (SPGISpeech, Earnings22), reuniones (GigaSpeech), llamadas de emergencia (URGENT 2024), discurso parlamentario (VoxPopuli) y lectura (LibriSpeech).
+- Soporte de inglés con acento indio (Voice Arena Monsoon en-IN, WER 2,60 %).
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de salida ni modo thinking.
+- Capacidades multilingües: no disponibles; la evaluación publicada es exclusivamente en inglés.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y actas: el WER de 5,14 % en AMI-Cleaned indica un rendimiento solido en audio de reunion, adecuado para generar actas automaticas o resumenes a partir de la transcripcion.
-- Subtitulado de contenido audiovisual en ingles: el 1,83 % WER en TED-LIUM y el 0,90 % en VoxPopuli lo hacen util para generar subtitulos de charlas, conferencias y discursos parlamentarios con alta fidelidad.
-- Transcripcion de llamadas de atencion al cliente: el 1,21 % WER en SPGISpeech (audio financiero limpio) sugiere buen comportamiento en grabaciones telefonicas de calidad controlada para analitica de contact center.
-- Dictado y notas de voz: el 0,58 % WER en LibriSpeech test-clean lo posiciona para aplicaciones de dictado donde la precision literal es critica (documentacion clinica, legal o periodistica).
-- Procesamiento de audio con ruido o espontaneo: el 8,66 % WER en URGENT 2024 (y 4,02 % en su variante limpia) lo hace viable para transcripcion de audio de campo, entrevistas o grabaciones no controladas, asumiendo mayor tasa de error.
-- Localizacion para el mercado indio: el 2,34 % WER en Voice Arena Monsoon (en-IN) lo hace adecuado para aplicaciones de voz dirigidas a hablantes de ingles indio.
-- Integracion via API en pipelines de terceros: el endpoint `/v1/transcribe` con autenticacion Bearer permite incorporar la transcripcion como servicio en flujos de analitica, indexacion de audio o busqueda semantica.
+- Transcripción de reuniones y actas: el modelo obtiene un WER del 5,90 % en AMI-Cleaned, lo que lo hace adecuado para generar actas automáticas de reuniones con habla espontánea y múltiples hablantes, integrándolo en pipelines de diarización previa.
+- Subtitulado y postproducción audiovisual: con WER de 1,34 % en VoxPopuli y 1,48 % en SPGISpeech, es apto para generar subtítulos en contenido de dominio público y financiero donde la precisión literal es crítica.
+- Análisis de llamadas de atención al cliente: su rendimiento en URGENT 2024 (8,23 % general, 3,60 % en limpio) permite transcribir llamadas de emergencia y centros de contacto para análisis de calidad y cumplimiento.
+- Transcripción de audio financiero: Earnings22-Cleaned con WER de 4,09 % lo hace útil para transcribir llamadas de resultados empresariales y generar resúmenes financieros automatizados.
+- Asistentes de voz y dictado: con WER de 0,82 % en LibriSpeech test-clean, puede emplearse en aplicaciones de dictado y asistentes de voz en inglés donde se requiere alta fidelidad en habla leída.
+- Localización de contenido para el mercado indio: el WER de 2,60 % en Monsoon en-IN lo hace adecuado para transcribir contenido en inglés con acento indio, un caso frecuente en centros de soporte deslocalizados.
+- Investigación en ASR: al ser un modelo abierto con pesos safetensors y licencia OpenMDW-1.1, sirve como base para experimentos de ajuste fino adicional y comparación en el Open ASR Leaderboard.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (WER, menor es mejor):
+Resultados publicados en la model card (WER %, inglés, formato corto):
 
 | Conjunto de evaluacion | WER (%) |
 |---|---|
-| AMI-Cleaned | 5,14 |
-| Earnings22-Cleaned-AA-chunked | 3,54 |
-| GigaSpeech-Cleaned | 3,55 |
-| SPGISpeech | 1,21 |
-| URGENT 2024 | 8,66 |
-| URGENT 2024 (Clean) | 4,02 |
-| Voice Arena Monsoon (en-IN) | 2,34 |
-| VoxPopuli-AA-Cleaned | 0,90 |
-| LibriSpeech (test-clean) | 0,58 |
-| LibriSpeech (test-other) | 1,90 |
-| TED-LIUM (test) | 1,83 |
-| Multilingual LibriSpeech (en) | 3,10 |
-| Common Voice (en) | 3,75 |
-| Media de 10 conjuntos publicos del leaderboard | 3,18 |
-| Media de 7 conjuntos cortos por defecto de la API | 3,62 |
+| AMI-Cleaned | 5,90 |
+| Earnings22-Cleaned-AA-chunked | 4,09 |
+| GigaSpeech-Cleaned | 6,13 |
+| SPGISpeech | 1,48 |
+| URGENT 2024 | 8,23 |
+| URGENT 2024 (Clean) | 3,60 |
+| Voice Arena Monsoon (en-IN) | 2,60 |
+| VoxPopuli-AA-Cleaned | 1,34 |
+| LibriSpeech (test-clean) | 0,82 |
+| LibriSpeech (test-other) | 1,63 |
+| **Media WER (8 conjuntos principales)** | **4,17** |
+| **Media WER (10 conjuntos del leaderboard)** | **3,58** |
 
-No se dispone de comparaciones directas con otros modelos en la informacion proporcionada.
+No se proporcionan comparaciones directas con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Con 30B parametros totales y unos 4B activos, la huella de memoria depende criticamente del esquema de cuantizacion y del soporte de MoE en el runtime; no se aportan cifras.
-- GPU recomendadas: no disponible. Por el tamano del modelo base, es previsible que requiera GPU de centro de datos (A100, H100 o superiores), pero no se confirma en la documentacion.
-- Compatibilidad con GPU de consumo: no confirmada. Un modelo de 30B totales con 4B activos podria ser candidato a cuantizacion agresiva en GPUs de consumo de gama alta, pero no hay datos publicados que lo verifiquen.
-- Opciones de despliegue: la model card solo documenta el uso mediante la API HTTP de Ishiki (`/v1/transcribe`). No se mencionan vLLM, llama.cpp, Ollama, TGI ni pesos publicados para despliegue local.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 34,05B parámetros en safetensors (68,3 GB en fp16/bf16), la inferencia en precisión completa requiere al menos ~68 GB de VRAM; en cuantización de 8 bits, ~34 GB; en 4 bits, ~17-20 GB (estimaciones orientativas, no confirmadas por el autor).
+- GPU recomendadas: para precisión completa, A100 80GB, H100 80GB o múltiples GPU; para cuantización 8 bits, A100 40GB o L40S; para 4 bits, RTX 4090 24GB podría ser suficiente, aunque no está verificado.
+- Cabe en GPU de consumo: probablemente en RTX 4090 24GB con cuantización de 4 bits, sujeto a verificación; no se garantiza en la información disponible.
+- Opciones de despliegue: la model card solo documenta uso con `transformers` y el script `run_eval.py`; no se mencionan vLLM, llama.cpp, Ollama ni TGI, y su compatibilidad no está confirmada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros modelos ASR en la informacion proporcionada para establecer una comparativa rigurosa. La model card unicamente referencia al modelo base NVIDIA Nemotron-3.5-Transcribe-30B-A4B, del que este modelo es un ajuste fino, sin ofrecer sus metricas para contrastar la mejora.
-
-| Modelo | Parametros | Contexto | WER medio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ishiki-labs/ishiki-asr-0.5 | 30B totales / ~4B activos | no disponible | 3,18 (10 conjuntos publicos) | OpenMDW-1.1 | Hugging Face y API de Ishiki |
-| nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B | 30B totales / ~4B activos | no disponible | no disponible | OpenMDW-1.1 | Hugging Face |
-| Otros modelos ASR comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de comparación con otros modelos ASR en la información proporcionada. La model card solo incluye resultados propios y remite al Open ASR Leaderboard para comparaciones, pero no presenta una tabla comparativa con alternativas como Whisper, Canary o Parakeet. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la model card. Al entrenarse sobre datos del modelo base de NVIDIA, puede heredar sesgos acusticos y dialectales de dicho corpus.
-- Riesgo de alucinacion: no cuantificado. En ASR, el riesgo se manifiesta como sustituciones, omisiones o inserciones de texto, especialmente en audio ruidoso (URGENT 2024: 8,66 % WER) o con acentos no representados.
-- Limitaciones de idioma: los benchmarks publicados son exclusivamente en ingles (en-US y en-IN). No hay evidencia de soporte multilingue; la model card no lista idiomas soportados.
-- Limitaciones de contexto: no se especifica la longitud maxima de audio por peticion; la documentacion habla de audio short-form, lo que sugiere limitaciones para grabaciones largas sin segmentacion previa.
-- Restricciones de licencia: al ser obra derivada de un modelo de NVIDIA, se rige por la NVIDIA Open Model License Agreement (OpenMDW-1.1). Es imprescindible revisar `LICENSE` y `THIRD_PARTY_NOTICES.md` antes de un uso comercial, y mantener la atribucion a NVIDIA Corporation e Ishiki Labs Inc.
-- Madurez: el modelo tiene cero descargas y cero likes en el momento de la consulta y fue creado el 16 de noviembre de 2026, por lo que no existe validacion independiente de los resultados reportados.
-- Dependencia de API: la unica via de uso documentada es la API de Ishiki; no se confirma la publicacion de pesos para inferencia local, lo que limita la portabilidad y la auditoria del modelo.
-- Privacidad: la model card declara procesamiento en memoria y descarte inmediato del audio en la API de evaluacion, pero no se detallan garantias equivalentes para el endpoint de produccion.
+- Modelo derivado: hereda las limitaciones y obligaciones del modelo base `nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B`, incluida la atribución a NVIDIA Corporation.
+- Licencia OpenMDW-1.1: es una licencia con condiciones; debe revisarse el archivo `LICENSE` y `THIRD_PARTY_NOTICES.md` antes de uso comercial, ya que no es una licencia permisiva estándar como Apache 2.0 o MIT.
+- Idiomas: solo se documenta inglés; no hay evidencia de soporte multilingüe.
+- Dominios: el rendimiento en URGENT 2024 (8,23 %) es notablemente peor que en habla leída, lo que indica degradación en audio ruidoso o espontáneo.
+- Riesgo de alucinación: no documentado, pero inherente a los modelos de lenguaje de habla; puede generar texto no presente en el audio en segmentos ruidosos o silenciosos.
+- Sesgos: no se documentan análisis de sesgo por acento, género o edad; el único dato por acento es en-IN.
+- Contexto: no se especifica la longitud máxima de audio soportada.
+- Formato corto: la evaluación es de formato corto; el comportamiento en audio largo no está verificado.
+- Repositorio de 68,3 GB: requiere almacenamiento y ancho de banda considerables para su descarga y despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ishiki-labs/ishiki-asr-0.5
-- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
-- Divulgacion de datos de entrenamiento del modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B#training-testing-and-evaluation-datasets
-- Open ASR Leaderboard (dataset de referencia): https://huggingface.co/datasets/hf-audio/open-asr-leaderboard
-- ESB datasets (test only): https://huggingface.co/datasets/hf-audio/esb-datasets-test-only-sorted
-- Voice Arena Monsoon en-IN test: https://huggingface.co/datasets/voice-arena-leaderboard/Monsoon-en-IN-test
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Divulgación de datos de entrenamiento del base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B#training-testing-and-evaluation-datasets
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Dataset de evaluación: https://huggingface.co/datasets/hf-audio/open-asr-leaderboard
+- Dataset ESB: https://huggingface.co/datasets/hf-audio/esb-datasets-test-only-sorted
+- Dataset Voice Arena Monsoon: https://huggingface.co/datasets/voice-arena-leaderboard/Monsoon-en-IN-test

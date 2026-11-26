@@ -2,105 +2,119 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Basalt es un artefacto de despliegue publicado por el usuario jesdga en Hugging Face: un único fichero autocontenido de 260 GB que empaqueta la cuantización UD-IQ1_M (Dynamic V3.1) de Unsloth del modelo deepseek-ai/DeepSeek-V4.1-Flash-1017, junto con la tabla Engram, el proyector de visión, el tokenizador y el drafter DSpark. No es un modelo nuevo entrenado por el autor, sino un formato empaquetado específico para Basalt, un motor de inferencia local para GPUs NVIDIA Blackwell (sm_120) con API compatible con OpenAI y Anthropic, del que jesdga es autor. El modelo base lo desarrolla DeepSeek y se distribuye bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017-Basalt es un paquete de pesos cuantizados del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, empaquetado por el desarrollador jesdga para su uso con Basalt, un motor de inferencia local orientado a GPUs NVIDIA Blackwell (sm_120) con API compatible con OpenAI y Anthropic. Cada fichero del repositorio es autocontenido: incluye los pesos, la tabla Engram, el proyector de visión, el tokenizador y el drafter DSpark. El modelo subyacente es una arquitectura Mixture-of-Experts (MoE) de la familia DeepSeek V4.1.
 
-La relevancia del artefacto es operativa: permite ejecutar un modelo de arquitectura MoE de gran tamaño en una sola tarjeta Blackwell, usando una segunda GPU como nivel de expertos peer y la RAM del sistema para los expertos que no caben en VRAM. El fichero incorpora decodificación especulativa mediante el drafter DSpark (ventanas de 3 tokens, con verificación de los tokens redactados) y soporte de contexto de hasta 1.048.576 tokens. El repositorio ocupa 518,2 GB y el fichero principal de pesos son 260 GB.
+El repositorio ofrece tres variantes: dos cuantizaciones dinámicas de Unsloth (UD-IQ1_M y UD-IQ2_XXS, formato Dynamic V3.1) y un pack NVFP4 construido a partir del checkpoint de NVIDIA. El contexto máximo soportado es de 1.048.576 tokens, y el motor incorpora decodificación especulativa mediante un drafter DSpark que trabaja en ventanas de 3 tokens conservando los 32 expertos más enrutados por etapa.
 
-La información pública disponible se limita a la model card del artefacto y a los resultados de velocidad y calidad medidos por el propio autor con el motor Basalt. No se detallan parámetros totales, número de expertos, composición del dataset de entrenamiento ni resultados de benchmarks estándar del modelo base, por lo que esos apartados se marcan como no disponibles.
+Su relevancia actual radica en que permite ejecutar un modelo de escala frontera con visión y contexto de un millón de tokens en hardware de consumo (una RTX 5090 más una RTX 5060 Ti como peer, con desbordamiento de expertos a RAM del sistema), manteniendo licencia MIT tanto en el modelo original como en la cuantización y en el motor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts), según la etiqueta del autor; detalles de capas y atención no disponibles |
+| Arquitectura | Mixture-of-Experts (MoE) transformer; modelo base DeepSeek-V4.1-Flash-1017 |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
-| Longitud de contexto | hasta 1.048.576 tokens (configurable con `--max-context`) |
-| Tipos de cuantizacion | UD-IQ1_M (Dynamic V3.1) de Unsloth; proyector de visión en BF16; drafter DSpark en Q8_0 |
+| Longitud de contexto | 1.048.576 tokens (`--max-context`) |
+| Tipos de cuantizacion | UD-IQ1_M (Unsloth Dynamic V3.1), UD-IQ2_XXS (Unsloth Dynamic V3.1), NVFP4 (checkpoint de NVIDIA); proyector de visión en BF16, drafter DSpark en Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (modelo base DeepSeek, cuantización Unsloth y motor Basalt) |
-| Formato de pesos | `.basalt` (fichero único autocontenido con pesos, tabla Engram, proyector de visión, tokenizador y drafter) |
+| Licencia | MIT (modelo, cuantización Unsloth y motor Basalt) |
+| Formato de pesos | `.basalt` (fichero autocontenido: pesos, tabla Engram, proyector de visión, tokenizador y drafter) |
+| Tamano del repositorio | 1232,1 GB |
+| Tamano por pack | UD-IQ1_M: 260 GB; UD-IQ2_XXS: 285 GB; NVFP4: 428 GB |
+| Requisito de motor | Basalt 0.3.0+ (packs Unsloth); Basalt 0.3.3+ (NVFP4) |
+| Hardware objetivo | NVIDIA Blackwell (sm_120) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es DeepSeek-V4.1-Flash-1017, de DeepSeek, con arquitectura de mezcla de expertos (MoE) según la etiqueta declarada. La información disponible no detalla el número de capas, la dimensión oculta, el número de expertos ni el esquema de enrutamiento. Tampoco se especifica el volumen de tokens de entrenamiento, la composición del corpus ni si se aplicaron etapas de RLHF o DPO. El artefacto incorpora una "tabla Engram", un componente propio del modelo base cuyo funcionamiento no se describe en la documentación consultada, y un proyector de visión que habilita entrada de imágenes.
+El modelo subyacente es DeepSeek-V4.1-Flash-1017, una arquitectura Mixture-of-Experts de DeepSeek. El paquete Basalt no reentrena ni modifica los pesos: cada tensor se almacena tal y como lo publica el GGUF de origen, sin recuantizar. Las cuantizaciones UD-IQ1_M y UD-IQ2_XXS provienen de la release de Unsloth (Dynamic V3.1); la tabla Engram, el proyector de visión (BF16) y el drafter DSpark (Q8_0) proceden de esa misma release. El pack NVFP4 se construye a partir del checkpoint de NVIDIA, con los expertos enrutados en NVFP4 tal cual se publican, las proyecciones FP8 convertidas a Q8_0 de sus valores exactos, la tabla Engram en MXFP4 y el tokenizador, proyector de visión y drafter tomados del pack UD-IQ1_M.
 
-La innovación técnica documentada está en el plano de la inferencia, no del entrenamiento. El motor Basalt no recuantiza los pesos: cada tensor se almacena tal como lo publica el GGUF de Unsloth, y el redondeo por etapa se documenta en la página de precisión del proyecto. La decodificación especulativa la realiza el drafter DSpark, que propone tokens en ventanas de 3 y conserva los 32 expertos más enrutados de cada etapa (2,4 GB de VRAM); los tokens propuestos se verifican, de modo que la salida es la del modelo. El motor reparte la ejecución entre una GPU Blackwell principal, una segunda GPU como nivel de expertos peer y la RAM del sistema para los expertos que no caben en VRAM.
+La innovación técnica destacable en el empaquetado es el drafter DSpark: decodificación especulativa en ventanas de 3 tokens que conserva los 32 expertos más enrutados de cada etapa (2,4 GB de VRAM). Los tokens redactados se verifican, por lo que la salida es la del propio modelo; se puede desactivar con `--spec 0`. El motor Basalt gestiona además el enrutado de expertos entre VRAM, una segunda GPU como peer y RAM del sistema. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el motor lee del fichero el formato de chat y el conmutador de "thinking" del modelo base.
-- Entrada de imágenes: soportada con `--vision dynamic`, codificada dentro del motor a partir del proyector incluido en el fichero.
-- Llamada a herramientas: el motor lee del fichero la sintaxis de tool-call del modelo, por lo que expone function calling a través de la API compatible con OpenAI y Anthropic.
-- Contexto muy largo: hasta 1.048.576 tokens configurables, adecuado para sesiones agénticas prolongadas.
-- Decodificación especulativa: activada por defecto mediante DSpark, desactivable con `--spec 0`.
-- Idiomas: no disponible en la información consultada.
-- Capacidades de audio: no disponible.
+- Generación de texto, razonamiento y código (el modelo base es de propósito general; la model card menciona sesiones agénticas de programación).
+- Visión: procesamiento de imágenes con `--vision dynamic`, codificadas dentro del motor mediante el proyector incluido en el fichero.
+- Contexto largo de hasta 1.048.576 tokens, adecuado para documentos extensos y sesiones multi-turno prolongadas.
+- Tool calling y formato de tool-call: el motor lee la sintaxis de llamada a herramientas directamente del fichero del modelo.
+- Modo de pensamiento (thinking switch): el motor extrae el conmutador de razonamiento del propio fichero.
+- Compatibilidad de API con OpenAI y Anthropic, lo que facilita la integración en clientes existentes.
+- Decodificación especulativa con el drafter DSpark para acelerar la generación.
+- Idiomas soportados: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Sesiones agénticas de programación de larga duración: la model card reporta unas 85 tok/s de media en sesiones agénticas de coding con DSpark activo, lo que permite mantener bucles multi-paso con muchas llamadas a herramientas sobre una sola máquina.
-- Procesamiento de repositorios completos: con hasta 1.048.576 tokens de contexto se pueden cargar árboles de código extensos y documentación asociada en una única ventana para tareas de revisión o refactorización.
-- Asistencia sobre documentación técnica con imágenes: el proyector de visión permite adjuntar diagramas, capturas de pantalla o esquemas junto al texto en flujos de soporte técnico.
-- Despliegue local con API compatible con OpenAI y Anthropic: el motor expone ambos formatos, de modo que herramientas cliente existentes pueden apuntar a `bin/basalt serve` sin adaptadores adicionales.
-- Servicio de chat interactivo en estación de trabajo: los 70,8 tok/s en modo chat y los 2.524 tok/s de prefill con prompt de 64K permiten conversaciones multi-turno con contexto precargado de forma ágil.
-- Generación estructurada: los 135,4 tok/s en modo estructurado lo hacen viable para producir JSON, esquemas o salidas con formato fijo en pipelines automatizados.
-- Evaluación e investigación de cuantizaciones extremas: el artefacto sirve para estudiar el impacto de IQ1_M en un MoE grande, con métricas de PPL y KLD frente a una referencia BF16.
+- Asistencia de programación agéntica en local: el modelo mantiene sesiones largas de código con tool calling y un contexto de hasta un millón de tokens; la model card reporta unas 85 tok/s de media en sesiones agénticas largas con drafting activo.
+- Análisis de repositorios completos: con 1.048.576 tokens de contexto se puede cargar un codebase extenso o documentación técnica completa en una sola pasada sin troceado.
+- Procesamiento de documentos con imágenes: la visión integrada permite extraer información de capturas, diagramas y páginas escaneadas junto al texto en la misma ventana de contexto.
+- Despliegue de API compatible con OpenAI/Anthropic en hardware propio: Basalt expone una API compatible, de modo que herramientas y SDK existentes pueden apuntar al servidor local sin cambios de código.
+- Inferencia local con privacidad de datos: al ejecutarse íntegramente en hardware propio (GPU Blackwell más RAM del sistema), los datos no salen de la máquina, adecuado para entornos con requisitos de confidencialidad.
+- Prototipado de agentes multi-paso: el soporte de tool calling y el contexto largo permiten cadenas de razonamiento y llamadas a herramientas en tareas de automatización.
+- Evaluación de cuantizaciones: los tres packs permiten comparar calidad (PPL, KLD) y velocidad sobre el mismo modelo para elegir el equilibrio adecuado en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de velocidad y de calidad de la cuantización medidas con el motor Basalt sobre una RTX 5090 a 400 W más una RTX 5060 Ti a 180 W como peer.
+Calidad medida con `basalt-bench --quality`: 100 fragmentos de wikitext-2 de 512 tokens, evaluados contra una referencia BF16 de llama.cpp del modelo original (PPL de referencia 2,731). Hardware: RTX 5090 a 400 W más RTX 5060 Ti a 180 W como peer.
 
-| Metrica | Valor |
-|---|---|
-| Tokens/s, prosa (UD-IQ1_M) | 72,2 |
-| Tokens/s, estructurado (UD-IQ1_M) | 135,4 |
-| Tokens/s, chat (UD-IQ1_M) | 70,8 |
-| Prefill con prompt de 64K (tok/s) | 2.524 |
-| Sesiones agénticas de coding, media | ~85 tok/s |
-| PPL en wikitext-2 (100 chunks de 512 tokens) | 3,033 (referencia BF16: 2,731) |
-| KLD media | 0,278 |
-| Coincidencia top-1 | 83,88 % |
+| Pack | PPL | KLD media | Mismo top-1 |
+|---|---:|---:|---:|
+| UD-IQ1_M | 3,033 | 0,278 | 83,88 % |
+| UD-IQ2_XXS | 3,107 | 0,241 | 85,15 % |
+| NVFP4 | no evaluado contra BF16 | no disponible | no disponible |
+
+Velocidad en un solo stream (tokens/s), con drafting DSpark activo por defecto:
+
+| Pack | Prosa | Estructurado | Chat | Prefill, prompt de 64K |
+|---|---:|---:|---:|---:|
+| UD-IQ1_M | 94 | 179 | 86 | 2.782 |
+| UD-IQ2_XXS | 45 | 102 | 40 | 1.363 |
+| NVFP4 | 2,8 (con expertos en SSD, 121 GiB de RAM) | no disponible | no disponible | no disponible |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: el fichero de pesos son 260 GB; el reparto previsto es una GPU Blackwell principal más una segunda GPU como nivel de expertos peer, con desbordamiento a RAM del sistema para los expertos restantes.
-- GPU recomendadas: NVIDIA Blackwell (sm_120), con RTX 5090 como tarjeta principal y RTX 5060 Ti como peer en las mediciones del autor. El motor está construido específicamente para sm_120, por lo que otras arquitecturas no están soportadas según la documentación.
-- VRAM adicional para el drafter: 2,4 GB con DSpark activo (por defecto).
-- Cabe en GPU de consumo: sí, en el esquema de una o dos tarjetas Blackwell más RAM del sistema; el rendimiento depende del ancho de banda de la RAM para los expertos fuera de VRAM.
-- Despliegue: motor Basalt 0.3.0 o superior, con `bin/basalt serve`. El formato `.basalt` es específico del motor; no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI para este fichero.
-- Latencia y throughput: los valores de la tabla anterior, medidos por el autor y sujetos a variación entre versiones del motor.
+- GPU: NVIDIA Blackwell (sm_120). El ejemplo de la model card usa una RTX 5090 a 400 W como principal y una RTX 5060 Ti a 180 W como peer para una segunda capa de expertos.
+- VRAM: el drafter DSpark consume 2,4 GB de VRAM adicionales; el resto de expertos se reparte entre VRAM, la segunda GPU y RAM del sistema.
+- RAM del sistema: crítica según el pack. El NVFP4 necesita aproximadamente 320 GB de RAM o más para funcionar bien (con 121 GiB decae a 2,8 tok/s por lectura de expertos desde SSD). UD-IQ1_M es el pack que más expertos mantiene en RAM y el más rápido; UD-IQ2_XXS queda más cerca de BF16 en calidad pero es más lento cuando los expertos desbordan a disco.
+- Almacenamiento: los ficheros pesan entre 260 GB y 428 GB.
+- Cabe en GPU de consumo: sí, en el ecosistema Blackwell descrito (RTX 5090 + RTX 5060 Ti), con apoyo de RAM del sistema.
+- Despliegue: exclusivamente mediante el motor Basalt (`bin/basalt serve <pack> --vision dynamic`, con `--gpu 0,1` para segunda tarjeta y `--max-context N` para contexto extendido). No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI para estos ficheros `.basalt`.
+- Throughput y latencia: ver tabla de velocidad en la sección de benchmarks.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Basalt (este) | no disponible (MoE) | 1.048.576 | `.basalt` (UD-IQ1_M) | MIT | Empaquetado para Basalt en Blackwell; 260 GB |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible (MoE) | no disponible | safetensors (original) | MIT | Modelo original de DeepSeek; referencia BF16 con PPL 2,731 |
-| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible (MoE) | no disponible | GGUF (UD-IQ1_M) | MIT | Cuantización de origen; compatible con llama.cpp |
+| DeepSeek-V4.1-Flash-1017-Basalt (este) | no disponible (MoE) | 1.048.576 | MIT | `.basalt`, motor Basalt (Blackwell) | Tres packs cuantizados, visión y drafter incluidos |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible (MoE) | no disponible | MIT | pesos originales (BF16) | Modelo base sin cuantizar |
+| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible (MoE) | no disponible | MIT | GGUF (UD-IQ1_M, UD-IQ2_XXS) | Origen de las cuantizaciones; ejecutable con llama.cpp |
+| nvidia/DeepSeek-V4.1-Flash-1017-NVFP4 | no disponible (MoE) | no disponible | MIT | NVFP4 | Checkpoint de NVIDIA usado para el pack NVFP4 |
 
-No se dispone de datos de benchmarks comparativos entre estos artefactos en la información consultada.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia de hardware: el motor Basalt está dirigido exclusivamente a NVIDIA Blackwell (sm_120); no hay soporte indicado para otras GPU ni para CPU.
-- Formato propietario del motor: el fichero `.basalt` requiere Basalt 0.3.0 o superior y no es directamente utilizable en vLLM, llama.cpp, Ollama o TGI.
-- Pérdida de calidad por cuantización: frente a la referencia BF16, la PPL sube de 2,731 a 3,033, la KLD media es 0,278 y la coincidencia top-1 cae al 83,88 %, lo que implica divergencias de tokens respecto al modelo original.
-- Rendimiento dependiente del sistema: los expertos que no caben en VRAM se ejecutan desde RAM del sistema, con el consiguiente impacto en latencia y throughput según la configuración de memoria.
-- Sesgos y alucinaciones: no se documentan análisis de sesgos ni tasas de alucinación en la información disponible.
-- Idiomas: no se especifica la cobertura lingüística del modelo base en la documentación consultada.
-- Licencia: MIT para modelo, cuantización y motor, lo que permite uso comercial, pero conviene verificar los términos del modelo base en su repositorio original.
-- Madurez: el artefacto tiene 0 descargas y 2 likes en el momento de la consulta, y las cifras de rendimiento proceden del propio autor del motor, sin verificación independiente.
+- El repositorio no contiene un modelo nuevo: es un empaquetado de pesos cuantizados del modelo de DeepSeek; las capacidades y sesgos son los del modelo base.
+- Las cuantizaciones UD-IQ1_M y UD-IQ2_XXS degradan la calidad respecto a BF16: PPL de 3,033 y 3,107 frente a 2,731 de referencia, con coincidencia top-1 del 83,88 % y 85,15 % respectivamente.
+- El pack NVFP4 no ha sido evaluado contra BF16, por lo que su degradación de calidad es desconocida.
+- Dependencia fuerte del hardware: requiere GPUs NVIDIA Blackwell (sm_120) y el motor Basalt; no es portable a otros motores ni a GPUs de generaciones anteriores según la información disponible.
+- El pack NVFP4 necesita aproximadamente 320 GB de RAM para un rendimiento aceptable; por debajo, la decodificación cae a 2,8 tok/s por acceso a SSD.
+- El contexto máximo de 1.048.576 tokens requiere configurarlo explícitamente (`--max-context`) y consume recursos adicionales; no se documentan límites de calidad en contextos extremos.
+- Idiomas soportados no documentados en la información disponible.
+- Riesgo de alucinación y sesgos: no documentados específicamente para este empaquetado; aplican los del modelo base DeepSeek-V4.1-Flash-1017.
+- Licencia MIT en modelo, cuantización y motor, lo que permite uso comercial; aun así, conviene verificar las condiciones del modelo base y de los pesos de NVIDIA en el checkpoint NVFP4.
+- Los números de velocidad "se mueven con cada release" del motor, según la propia model card; no deben tomarse como valores estables de producción.
 
 ## Enlaces
 
-- Repositorio del artefacto: https://huggingface.co/jesdga/DeepSeek-V4.1-Flash-1017-Basalt
-- Árbol de ficheros: https://huggingface.co/jesdga/DeepSeek-V4.1-Flash-1017-Basalt/tree/main
+- Repositorio Hugging Face: https://huggingface.co/jesdga/DeepSeek-V4.1-Flash-1017-Basalt
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Cuantización de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
-- Motor Basalt: https://github.com/jesdga95/basalt
+- Cuantizaciones Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
+- Checkpoint NVFP4 de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
+- Motor Basalt (GitHub): https://github.com/jesdga95/basalt
 - Documentación de DeepSeek-V4.1 en Basalt: https://github.com/jesdga95/basalt/blob/main/docs/models/deepseek41.md
-- Coste de la decodificación especulativa: https://github.com/jesdga95/basalt/blob/main/docs/models/deepseek41.md#what-it-costs
 - Página de precisión: https://github.com/jesdga95/basalt/blob/main/docs/precision/deepseek41.md
 - Configuración de modelos y router: https://github.com/jesdga95/basalt/blob/main/docs/configuration/models.md
-- Proyecto Strata (origen del fork): https://github.com/Niko1221/Strata
+- Web del proyecto: https://basalt.jgulfo.com
+- Fork de origen Strata: https://github.com/Niko1221/Strata

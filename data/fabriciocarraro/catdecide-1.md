@@ -2,48 +2,52 @@
 
 ## Resumen
 
-CatDecide-1 es un modelo de clasificación basado en la familia Qwen3, desarrollado por el usuario fabriciocarraro y publicado en Hugging Face bajo acceso restringido (gated). Con 9.094.607.872 parámetros totales (aproximadamente 9,1 mil millones) y pesos en formato safetensors, el modelo está orientado a tareas de clasificación y declara soporte para catalán, español e inglés, lo que lo sitúa en el nicho de modelos multilingües centrados en lenguas ibéricas.
+CatDecide-1 es un modelo de clasificación de texto desarrollado por el usuario fabriciocarraro y publicado en Hugging Face bajo el identificador `fabriciocarraro/CatDecide-1`. Está construido sobre la familia Qwen3, según indica la etiqueta `qwen3` del repositorio, y su propósito declarado es la clasificación de textos en catalán, castellano e inglés (etiquetas `ca`, `es`, `en`). Con 9.094.607.872 parámetros reales en safetensors, se trata de un modelo de aproximadamente 9.000 millones de parámetros, lo que lo sitúa en la gama media-alta de modelos densos.
 
-La relevancia del modelo radica en su especialización: frente a los modelos generativos de propósito general, CatDecide-1 parece concebido para decidir o clasificar contenido en un contexto trilingüe (ca/es/en), un caso de uso poco cubierto por los modelos comerciales y útil para pipelines de moderación, enrutamiento o etiquetado en entornos catalanohablantes. El tag `qwen3` indica que parte de una arquitectura transformer de la familia Qwen3, aunque no se especifica si es un ajuste fino (fine-tuning) sobre un checkpoint base o un modelo entrenado desde cero.
+El modelo resulta relevante porque aborda una tarea concreta —la clasificación multilingüe con cobertura del catalán— sobre una base arquitectónica moderna (Qwen3), y porque su acceso está restringido (gated), lo que sugiere un control deliberado de distribución por parte del autor. No obstante, la información pública disponible es muy limitada: no se especifican la licencia, el pipeline, los datos de entrenamiento ni resultados de benchmarks.
 
-La información pública disponible es limitada: no se detallan la longitud de contexto, los tipos de cuantización, la licencia ni los datos de entrenamiento. El repositorio ocupa 18,2 GB y acumula 245 descargas, con acceso condicionado a la aceptación de términos en la plataforma.
+Esta ficha se ha redactado exclusivamente a partir de los metadatos del repositorio de Hugging Face. Cualquier dato no presente en dicha información se marca explícitamente como "no disponible", sin inferencias ni estimaciones no respaldadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3, segun tag) |
-| Parametros totales | 9.094.607.872 (~9,1 B) |
+| Arquitectura | Basada en Qwen3 (tag `qwen3`); detalles exactos no disponibles |
+| Parametros totales | 9.094.607.872 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ca, es, en |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones publicadas no indicadas) |
+| Idiomas soportados | Catalán (ca), castellano (es), inglés (en) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Tarea | Clasificación (`classification`) |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
+| Tamano del repositorio | 18,2 GB |
+| Descargas | 470 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se etiqueta como `qwen3`, lo que sugiere que su arquitectura subyacente es un transformer decoder-only de la familia Qwen3, aunque no se especifica la variante exacta ni si se trata de un ajuste fino sobre un checkpoint preentrenado de Qwen o de un modelo entrenado de forma independiente. El tamaño de 9,1 mil millones de parámetros no coincide con los tamaños públicos habituales de Qwen3 (0.6B, 1.7B, 4B, 8B, 14B, 32B), por lo que podría tratarse de una modificación, fusión o ajuste con cabecera de clasificación añadida.
+El repositorio etiqueta el modelo con `qwen3`, lo que indica que la arquitectura subyacente pertenece a la familia Qwen3 de Alibaba. Con 9.094.607.872 parámetros en safetensors, se trata de un modelo denso de ~9B parámetros (no hay indicios de que sea de mezcla de expertos, ya que no se declaran parámetros activos). La tarea declarada es clasificación, por lo que lo más probable es que se trate de un modelo base Qwen3 ajustado con una cabeza de clasificación, aunque la información pública no detalla la configuración exacta de dicha cabeza ni el número de clases de salida.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.). Tampoco se documenta el proceso de alineación ni la metodología de evaluación. Toda esta información debe considerarse no disponible a partir de los datos públicos del repositorio.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.). Tampoco se documentan procesos de ajuste fino supervisado ni metodologías de evaluación. Todos estos apartados deben considerarse "no disponibles" a partir de la información proporcionada.
 
 ## Capacidades
 
-- Clasificación de texto: el tag `classification` indica que el modelo está diseñado para tareas de clasificación (etiquetado, categorización, decisión binaria o multietiqueta).
-- Soporte multilingüe para catalán, español e inglés, según los idiomas declarados.
-- Generación de texto: no confirmada explícitamente; al derivar de Qwen3 podría conservar capacidades generativas, pero no se documenta.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Clasificación de texto multilingüe en catalán, castellano e inglés.
+- Procesamiento de entradas textuales para asignación de etiquetas o categorías (el conjunto exacto de clases no está documentado).
+- Cobertura del catalán, un idioma con menor representación en modelos generalistas, lo que constituye un valor diferencial para aplicaciones en ese idioma.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- No se documenta generación de texto libre; la tarea declarada es exclusivamente de clasificación.
 
 ## Casos de uso
 
-- Moderación de contenido en catalán y español: el modelo puede clasificar comentarios o publicaciones como aptos o no aptos en plataformas dirigidas a comunidades catalanohablantes, un nicho donde los filtros entrenados solo en inglés rinden peor.
-- Enrutamiento de consultas en atención al cliente: clasificar tickets entrantes por categoría (facturación, soporte técnico, reclamación) en entornos trilingües ca/es/en antes de derivarlos al equipo adecuado.
-- Etiquetado de corpus para investigación lingüística: anotar automáticamente grandes volúmenes de texto en catalán con categorías temáticas o de dominio, acelerando la creación de datasets anotados.
-- Clasificación de reseñas y análisis de sentimiento: procesar opiniones de usuarios en las tres lenguas soportadas para alimentar dashboards de reputación de marca.
-- Detección de idioma o variedad lingüística: usar el modelo como clasificador auxiliar para distinguir entre catalán, español e inglés en pipelines de preprocesamiento.
-- Filtrado de contenido en foros y comunidades: identificar mensajes que requieren revisión humana en comunidades online catalanas, reduciendo la carga de moderación manual.
+- Moderación de contenido en catalán y castellano: el modelo puede clasificar comentarios o publicaciones en categorías predefinidas (tóxicos, spam, off-topic), aprovechando su cobertura del catalán, escasa en muchos modelos generalistas.
+- Enrutamiento de tickets de soporte: clasificar consultas entrantes por departamento o urgencia en entornos bilingües catalán-castellano, integrando el modelo como componente de un pipeline de atención al cliente.
+- Análisis de sentimiento o temática en redes sociales: etiquetar grandes volúmenes de publicaciones multilingües para paneles de monitorización de marca.
+- Clasificación de documentos administrativos: categorizar expedientes o correos en catalán y castellano en el sector público, donde la cobertura del catalán es un requisito legal o de servicio.
+- Filtrado previo en pipelines de datos: etiquetar corpus para seleccionar o descartar muestras antes de entrenar otros modelos, usando las tres lenguas soportadas.
+- Detección de idioma o clasificación de dominio: usar el modelo como clasificador auxiliar para enrutar textos según idioma o temática en sistemas de procesamiento documental.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +55,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 18 GB solo para pesos, más overhead de activaciones y KV cache; se recomienda al menos 24 GB para inferencia cómoda.
-- VRAM estimada en cuantización de 8 bits: en torno a 9-10 GB.
-- VRAM estimada en cuantización de 4 bits: en torno a 5-6 GB (estimaciones teóricas, no verificadas con el modelo).
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para FP16 sin compromisos; RTX 4090 (24 GB) para FP16 ajustado o 8 bits.
-- GPU de consumo: cabe en RTX 3090/4090 (24 GB) en FP16 con contexto moderado, y en GPUs de 8-12 GB si se cuantiza a 4-8 bits.
-- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama si se generan pesos GGUF; dado que el repo solo contiene safetensors, sería necesario convertirlos.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 18 GB solo para pesos (9,09B parámetros × 2 bytes), más overhead de activaciones y contexto.
+- En cuantización de 8 bits: ~9-10 GB de VRAM para pesos.
+- En cuantización de 4 bits: ~5-6 GB de VRAM para pesos (cuantizaciones no publicadas oficialmente; requeriría conversión propia).
+- GPU recomendadas: A100 40GB, H100, L40S o RTX 6000 Ada para fp16 sin compromisos. En consumer, una RTX 4090 (24 GB) puede alojar el modelo en fp16 con margen ajustado; una RTX 3090 (24 GB) también es viable.
+- Cabe en GPU de consumo de 16 GB únicamente con cuantización a 8 bits o inferior, y en 8-12 GB solo con cuantización a 4 bits.
+- Opciones de despliegue: vLLM, TGI o transformers para fp16; llama.cpp/Ollama requerirían conversión a GGUF (no publicada). Dado que el acceso es gated, es necesario autenticarse con un token de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CatDecide-1 | ~9,1 B | no disponible | ca, es, en | no disponible | Gated en HF |
-| Qwen3-8B | 8 B | no disponible en esta ficha | multilingue | Apache 2.0 (segun Qwen) | Publico en HF |
-| Qwen3-14B | 14 B | no disponible en esta ficha | multilingue | Apache 2.0 (segun Qwen) | Publico en HF |
-| Modelos de clasificacion multilingues (p. ej. XLM-R large) | ~0,56 B | 512 tokens tipicamente | multilingue | MIT / varias | Publico en HF |
+No se dispone de información sobre modelos comparables directos en la documentación proporcionada. Como referencia estructural, la familia Qwen3 incluye variantes densas de tamaño similar, pero no se han facilitado datos de rendimiento ni especificaciones de CatDecide-1 que permitan una comparación rigurosa.
 
-La comparativa es orientativa: CatDecide-1 se posiciona entre los Qwen3 de 8B y 14B en tamaño, pero su especialización en clasificación y su enfoque en catalán lo diferencian de los modelos generativos de propósito general. Los modelos tipo XLM-R son mucho más pequeños y eficientes para clasificación pura, aunque con menor capacidad de representación.
+| Modelo | Parametros | Contexto | Licencia | Acceso |
+|---|---|---|---|---|
+| CatDecide-1 | 9,09B | no disponible | no disponible | Restringido (gated) |
+| Alternativas Qwen3 densas | no disponible | no disponible | no disponible | no disponible |
+| Otros clasificadores multilingües con catalán | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en producción automatizada.
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar los términos antes de desplegarlo.
-- Falta de documentación: no hay model card detallada, datos de entrenamiento ni evaluación publicada, lo que dificulta estimar su calidad real.
-- Riesgo de sesgos: al no documentarse la composición del dataset, no se pueden evaluar sesgos de género, políticos o culturales en las tres lenguas soportadas.
-- Riesgo de alucinación: si el modelo conserva capacidades generativas de Qwen3, podría producir texto plausible pero incorrecto; en tareas de clasificación, podría asignar etiquetas con confianza injustificada.
-- Cobertura lingüística limitada a ca/es/en: no se garantiza un rendimiento adecuado en otras lenguas, incluidos el gallego, el euskera o el portugués.
-- Contexto desconocido: sin datos sobre la ventana de contexto, no se recomienda usarlo con entradas largas sin validación previa.
-- Sin benchmarks: no hay evidencia pública de rendimiento frente a alternativas, por lo que su adopción en producción debe ir precedida de una evaluación propia.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face y autenticarse para descargar los pesos, lo que puede complicar la integración automatizada en CI/CD.
+- Licencia no especificada: sin licencia declarada, no es posible confirmar si el uso comercial está permitido. Esto es un bloqueante para producción empresarial hasta que el autor la publique.
+- Falta de documentación: no se detallan datos de entrenamiento, clases de salida, métricas de evaluación ni limitaciones conocidas, lo que impide evaluar su fiabilidad.
+- Riesgo de sesgos y alucinación: no documentados; al ser un clasificador, el riesgo principal es la asignación errónea de etiquetas, no la generación de texto inventado.
+- Cobertura lingüística limitada a ca, es, en; el rendimiento en otras lenguas o en variantes dialectales no está evaluado.
+- Contexto máximo desconocido: no se puede planificar su uso con entradas largas sin información adicional.
+- Adopción muy baja (470 descargas, 0 likes) y sin pipeline declarado, lo que sugiere un modelo reciente o poco validado por la comunidad.
+- No se han publicado cuantizaciones oficiales, por lo que el despliegue en hardware limitado requiere trabajo adicional de conversión.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/fabriciocarraro/CatDecide-1
-- Repositorio de Qwen3 (referencia de arquitectura): https://huggingface.co/Qwen
-- Documentación de safetensors: https://huggingface.co/docs/safetensors
+- Repositorio en Hugging Face: https://huggingface.co/fabriciocarraro/CatDecide-1
+- No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

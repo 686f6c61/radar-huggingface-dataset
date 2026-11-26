@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Psalms23Wave/alkebulan-luganda-small-v0.1",
+  "slug": "psalms23wave-alkebulan-luganda-small-v0-1",
+  "author": "Psalms23Wave",
+  "url": "https://huggingface.co/Psalms23Wave/alkebulan-luganda-small-v0.1",
+  "created_at": "2026-11-26T02:17:43.000Z",
+  "updated_at": "2026-11-26T02:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "lg"
+  ],
+  "tags": [
+    "safetensors",
+    "luganda",
+    "bantu",
+    "african-languages",
+    "ablt",
+    "sekan",
+    "small-model",
+    "text-generation",
+    "lg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1695232,
+  "parameters_human": "1.7M",
+  "storage_bytes": 6785672,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

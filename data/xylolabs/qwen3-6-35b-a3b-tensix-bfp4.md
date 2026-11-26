@@ -2,101 +2,99 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Tensix-BFP4 es una cuantizacion del modelo Qwen/Qwen3.6-35B-A3B realizada por Xylolabs, orientada especificamente a las NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo base es un transformer MoE multimodal de 35.951.822.704 parametros totales con arquitectura `qwen3_5_moe`, que combina capas de atencion clasica, capas Gated DeltaNet y un bloque de expertos enrutados, ademas de un modulo visual y un bloque MTP (multi-token prediction).
+Xylolabs/Qwen3.6-35B-A3B-Tensix-BFP4 es una cuantizacion del modelo Qwen/Qwen3.6-35B-A3B, un modelo de mezcla de expertos (MoE) de 35.951.822.704 parametros totales desarrollado originalmente por el equipo Qwen. Esta version, publicada por Xylolabs, reempaqueta los pesos en formato de coma flotante por bloques de 4 bits (BFP4, `bfloat4_b`) especificamente para su ejecucion en aceleradores Tenstorrent Tensix (Wormhole y Blackhole), manteniendo el pipeline multimodal image-text-to-text del modelo base.
 
-La particularidad de esta version es que todas las proyecciones lineales del modelo de lenguaje se han redondeado a `ttnn.bfloat4_b` (BFP4, block floating point de 4 bits) mediante GPTQ, de modo que los pesos, almacenados en bf16 en safetensors, ya descansan sobre la rejilla BFP4 y TT-NN puede empaquetarlos sin un nuevo redondeo. El resultado son 4,84 bits por peso de media y 20,99 GB empaquetados frente a los 69,32 GB del modelo en BF16.
+El objetivo de esta ficha es documentar una variante de despliegue orientada a hardware NPU, no un modelo nuevo: la arquitectura, los datos de entrenamiento y las capacidades cognitivas son las del Qwen3.6-35B-A3B original. La innovacion aportada por Xylolabs reside en el esquema de cuantizacion GPTQ con busqueda de exponente por bloque y en el empaquetado de tensores para Tensix, que reduce el peso de 69,32 GB en bf16 a 20,991 GB empaquetados.
 
-Es relevante porque permite ejecutar un modelo MoE de ~36.000 millones de parametros en hardware de inferencia de bajo consumo de memoria (aceleradores Tensix), un escenario hasta ahora reservado a GPUs de datacenter. La licencia Apache 2.0 del modelo base facilita su adopcion comercial.
+Es relevante ahora porque demuestra que un MoE de ~36.000 millones de parametros con atencion hibrida (Gated DeltaNet mas atencion clasica) puede servirse en 4 bits sobre aceleradores no-GPU con una degradacion medible pero acotada frente al original: un KL medio de 0,05013 frente a bf16 y un top-1 del 89,62 %, frente al 90,80 % de una cuantizacion Q4_K_M de llama.cpp. La licencia Apache 2.0 heredada facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE hibrido (`qwen3_5_moe`): atencion clasica + Gated DeltaNet + expertos enrutados, con modulo visual y bloque MTP |
+| Arquitectura | Transformer MoE hibrido con Gated DeltaNet y atencion clasica (clase `qwen3_5_moe`); multimodal image-text-to-text |
 | Parametros totales | 35.951.822.704 |
-| Parametros activos | no disponible (el nombre A3B sugiere ~3.000 millones activos, pero no se confirma en la informacion) |
-| Longitud de contexto | no disponible (el demo de tt-metal menciona una variante `traced_128k`) |
-| Tipos de cuantizacion | BFP4 (`ttnn.bfloat4_b`, 4,5 bits por peso) en proyecciones lineales; bf16 en embeddings, LM head, normas, gate del experto compartido, `mtp` y `visual`; media de 4,84 bits por peso; compatible tambien con empaquetado exacto en `ttnn.bfloat8_b` |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (bf16 con valores sobre la rejilla BFP4), mas `quant4.json` con el formato de cada proyeccion |
+| Parametros activos | no disponible (el nombre A3B sugiere ~3B activos, pero el dato no se confirma en la informacion proporcionada) |
+| Longitud de contexto | no disponible (la demo de Tensix menciona una variante `traced_128k`, sin confirmacion oficial) |
+| Tipos de cuantizacion | BFP4 (`bfloat4_b`) para proyecciones de atencion, Gated DeltaNet y expertos; bf16 para LM head, embeddings, normas, shared expert gate, `mtp` y `visual` |
+| Idiomas soportados | no disponible (la evaluacion cubre texto en ingles y coreano) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (empaquetado Tensix BFP4), `quant4.json` con el formato por proyeccion, `model.safetensors.index.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer MoE hibrido. Segun la model card, la red combina 10 capas con atencion q/k/v/o clasica, 30 capas con proyecciones Gated DeltaNet (q, k, v, z, a, b y salida) y 40 capas con expertos enrutados (gate, up y down) mas un experto compartido. Incluye ademas un modulo `visual` para entrada de imagen y texto y un bloque `mtp` (multi-token prediction) que en el demo de tt-metal aparece desactivado por defecto para este modelo. No se detallan en la informacion disponible el numero de tokens de entrenamiento ni la composicion del dataset del modelo base.
+El modelo base es un transformer de mezcla de expertos con una capa hibrida: 10 capas usan atencion clasica (proyecciones q, k, v, o) y 30 capas usan Gated DeltaNet (proyecciones q, k, v, z, a, b y output). El bloque MoE consta de 40 capas con expertos enrutados (gate, up, down) y un experto compartido, cuyo gate permanece en bf16. El modelo incluye ademas un modulo `visual` para entrada de imagenes y un modulo `mtp` (multi-token prediction), ambos conservados en bf16 sin cuantizar.
 
-La innovacion de esta ficha es el proceso de cuantizacion: GPTQ con busqueda de exponente por bloque, calibrado sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. Los expertos enrutados comparten una unica matriz Hessiana por capa para gate y up, mientras que la proyeccion down de cada experto usa su propia Hessiana o, si vio pocos tokens de calibracion, redondeo al vecino mas cercano. Solo se cuantizo y evaluo el modelo de lenguaje; el modulo visual y el bloque MTP se mantienen en bf16 sin cambios.
+La cuantizacion aplicada por Xylolabs usa GPTQ con busqueda de exponente por bloque sobre formato de coma flotante por bloques de 4 bits, dirigida a las proyecciones de atencion, Gated DeltaNet y expertos enrutados y compartidos. El empaquetado conserva exactitud numerica verificable: las herramientas `pack_tensix.py` y `verify_grid.py` comprueban cada matriz mediante round-trip a traves de `ttnn`, y los mismos valores se empaquetan de forma exacta en `ttnn.bfloat8_b`. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento, heredadas del modelo base Qwen3.6-35B-A3B.
-- Procesamiento de imagen y texto (`image-text-to-text`), aunque el modulo visual no se ha cuantizado ni evaluado en esta version.
-- Soporte de plantilla de chat mediante `apply_chat_template` de transformers.
-- Arquitectura MoE con expertos enrutados y experto compartido, lo que reduce el coste de computo por token frente a un modelo denso del mismo tamano.
-- Capacidad de decodificacion multi-token potencial a traves del bloque `mtp` (desactivado por defecto en el demo de tt-metal).
-- Despliegue en NPU Tensix (Wormhole, Blackhole) mediante tt-metal y TT-NN, con empaquetado nativo del formato BFP4.
-- Soporte de tool calling, agentes o modo thinking: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Procesamiento multimodal image-text-to-text, segun el pipeline declarado y el modulo `visual` en bf16.
+- Razonamiento y codigo agentico, segun el titulo de la cita del modelo base ("Agentic Coding Power").
+- Prediccion multi-token (`mtp`) conservada en bf16, potencialmente util para decodificacion especulativa.
+- Capacidades multilingues: la evaluacion publicada incluye texto en ingles y coreano, aunque no se declara una lista oficial de idiomas.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia en aceleradores Tensix: el checkpoint esta disenado para empaquetarse directamente en `ttnn.bfloat4_b` sin redondeo adicional, lo que permite servir un MoE de ~36.000 millones de parametros en Wormhole o Blackhole con 20,99 GB de pesos.
-- Despliegue tensor-parallel en cuatro Blackhole P150: el demo oficial de tt-metal v0.81.1 ejecuta Qwen3.6-35B-A3B repartido en cuatro chips, un escenario realista para laboratorios que ya dispongan de ese hardware.
-- Prototipado en simulacion: el checkpoint se ha validado con ttnn 0.81.1 sobre `ttsim`, el simulador de Blackhole, lo que permite desarrollar y depurar pipelines sin hardware fisico.
-- Investigacion en cuantizacion de bajo bit: sirve como referencia reproducible de GPTQ con busqueda de exponente por bloque sobre un MoE hibrido, con scripts `pack_tensix.py` y `verify_grid.py` para comprobar la integridad del empaquetado.
-- Evaluacion de degradacion por cuantizacion: con una KL media de 0,05013 frente a BF16 y un 89,62 % de top-1, es util para estudiar el impacto de BFP4 en tareas de generacion.
-- Cargas de trabajo multimodales en el borde: al conservar el modulo visual en bf16, puede emplearse en tareas image-text-to-text donde la precision del encoder visual sea critica y el coste del LLM se reduzca con BFP4.
-- Experimentacion con decodificacion multi-token: el bloque `mtp` en bf16 permite investigar tecnicas de prediccion especulativa, aunque el demo lo desactive por defecto.
+- Despliegue en aceleradores Tenstorrent: el modelo esta empaquetado para Wormhole y Blackhole con `ttnn`, `tt-metal` y `tt-forge`, lo que permite servir un MoE de ~36.000 millones de parametros en 20,991 GB de memoria de dispositivo en lugar de 69,32 GB en bf16.
+- Sustitucion de GPU en inferencia de bajo consumo: al ocupar aproximadamente un tercio del espacio del modelo bf16, encaja en escenarios donde el presupuesto de memoria del acelerador es la restriccion principal y se acepta una perdida de fidelidad medida (KL 0,05013).
+- Evaluacion comparativa de cuantizaciones: sirve como referencia reproducible frente a Q4_K_M de llama.cpp, ya que la model card documenta el checkpoint, la version de llama.cpp y el sha256 del artefacto de comparacion.
+- Prototipado de asistentes multimodales: el pipeline image-text-to-text y el modulo `visual` en bf16 permiten construir interfaces que reciben imagenes y texto y generan respuestas conversacionales.
+- Investigacion en formatos de coma flotante por bloques: el par de herramientas `pack_tensix.py` y `verify_grid.py` permite validar el empaquetado y la rejilla de exponentes con PyTorch, util para estudiar el impacto de BFP4 en la calidad.
+- Integracion en pipelines de transformers: el modelo se carga con `AutoModelForCausalLM` y `AutoTokenizer` en `dtype="bfloat16"`, lo que facilita pruebas en CPU/GPU antes de portar el despliegue a Tensix.
+- Analisis de degradacion por idioma: la evaluacion sobre WikiText-2 y Wikipedia en coreano permite estudiar como afecta la cuantizacion a idiomas distintos del ingles.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una evaluacion comparativa frente al modelo base en BF16:
+| Modelo | Tamano (GB) | KL medio frente a bf16 | Top-1 (%) |
+|---|---:|---:|---:|
+| BF16 (Qwen/Qwen3.6-35B-A3B) | 69,32 | 0 | 100 |
+| Este modelo (BFP4) | 20,991 | 0,05013 | 89,62 |
+| Q4_K_M (llama.cpp) | 21,713 | 0,0404 | 90,80 |
 
-| Modelo | Bits por peso | Tamano (GB) | KL media vs BF16 | Top-1 (%) | Respuestas correctas | Perdidas |
-|---|---:|---:|---:|---:|---:|---:|
-| BF16 (Qwen/Qwen3.6-35B-A3B) | 16 | 69,32 | 0 | 100 | 39 de 40 | - |
-| **Este modelo (BFP4)** | 4,84 | 20,991 | 0,05013 | 89,62 | 39 de 40 | 0 |
-| Q4_K_... | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La fila de comparacion con Q4_K aparece truncada en la informacion disponible. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion proporcionada.
+La evaluacion cubre 8.188 posiciones de texto en ingles y coreano (test de WikiText-2 y Wikipedia en coreano), en formato de texto plano. La comparacion Q4_K_M se genero desde el mismo checkpoint con llama.cpp v0.9.0 (`cd959bae`) sin matriz de importancia. La model card indica que el KL de este modelo es 1,24 veces el de Q4_K_M. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de tareas en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos empaquetados: 20,99 GB en BFP4, frente a 69,32 GB en BF16.
-- VRAM estimada para inferencia en GPU: no disponible de forma oficial; como referencia, cargar el checkpoint en transformers con `dtype="bfloat16"` requiere del orden de 70 GB, por lo que no cabe en GPUs de consumo sin cuantizacion adicional.
-- Hardware objetivo: NPU Tensix de Tenstorrent, arquitecturas Wormhole y Blackhole.
-- Configuracion de referencia del demo: cuatro Blackhole P150 en tensor-parallel (MESH_DEVICE=P150x4); no se ejecuta en un solo chip.
-- Simulacion: ttnn 0.81.1 sobre `ttsim` (simulador de Blackhole).
-- Opciones de despliegue: transformers (`AutoModelForCausalLM`), tt-metal v0.81.1 (demo `models/demos/blackhole/qwen36`), TT-NN para empaquetado. tt-forge (tt-xla) aun no se ha probado con este checkpoint y tt-transformers no soporta esta arquitectura.
-- Latencia y throughput: no disponibles; la validacion se ha hecho en simulador, no en hardware.
+- VRAM o memoria de dispositivo: 20,991 GB empaquetados en BFP4 para Tensix; el repositorio completo ocupa 71,9 GB (incluye tensores bf16 y metadatos).
+- Aceleradores objetivo: Tenstorrent Wormhole y Blackhole; la demo verificada usa `MESH_DEVICE=P150x4` sobre `tt-metal` v0.81.1 con `ttnn` 0.81.1 en el simulador Blackhole (`ttsim`).
+- Carga en transformers: requiere `dtype="bfloat16"` y `device_map="auto"`; el peso efectivo en GPU se aproxima al del modelo bf16 si no se usa el runtime de Tensix, por lo que no cabe en GPU de consumo de 24 GB sin cuantizacion adicional.
+- GPU de consumo: no se documenta soporte nativo; la cuantizacion BFP4 esta pensada para Tensix, no para CUDA.
+- Opciones de despliegue: runtime de Tensix (`tensix-runner` v0.1.0, `tensix-kernels` v0.1.0), `tt-metal` y `ttnn`, y carga estandar con `transformers`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Xylolabs/Qwen3.6-35B-A3B-Tensix-BFP4 | 35.951.822.704 | no disponible | BFP4 (4,84 bits/peso) | Apache 2.0 | Hugging Face, validado en simulador |
-| Qwen/Qwen3.6-35B-A3B (base) | 35.951.822.704 | no disponible | BF16 | Apache 2.0 | Hugging Face |
-| Q4_K_... (mencionado en la model card) | no disponible | no disponible | Q4_K | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | KL frente a bf16 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Xylolabs/Qwen3.6-35B-A3B-Tensix-BFP4 | 35.951.822.704 | no disponible | BFP4 (Tensix) | 0,05013 | Apache 2.0 | Hugging Face, 243 descargas |
+| Qwen/Qwen3.6-35B-A3B (bf16) | 35.951.822.704 | no disponible | bf16 | 0 | Apache 2.0 (heredada) | Hugging Face |
+| Q4_K_M de llama.cpp (mismo checkpoint) | 35.951.822.704 | no disponible | Q4_K_M | 0,0404 | Apache 2.0 (heredada) | Artefacto de comparacion, sha256 documentado |
 
-La informacion disponible no permite una comparacion detallada con alternativas cuantizadas de la misma categoria.
+Frente a Q4_K_M, esta variante ocupa ligeramente menos espacio (20,991 GB frente a 21,713 GB) pero presenta mayor divergencia respecto a bf16 (KL 0,05013 frente a 0,0404) y menor top-1 (89,62 % frente a 90,80 %). Su ventaja no es la fidelidad numerica sino la compatibilidad con el runtime de Tensix. No se dispone de datos de benchmarks de tareas que permitan comparar con otros modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Solo se ha cuantizado y evaluado el modelo de lenguaje; el modulo visual y el bloque `mtp` permanecen en bf16 sin evaluacion especifica.
-- El checkpoint se ha validado con ttnn 0.81.1 sobre `ttsim` (simulador de Blackhole), no en hardware real; el reparto tensor-parallel en cuatro chips del demo de tt-metal no se ha ejecutado.
-- tt-forge (tt-xla) no se ha probado con este checkpoint y tt-transformers no soporta la arquitectura `qwen3_5_moe`.
-- La cuantizacion BFP4 introduce una divergencia medible frente a BF16: KL media de 0,05013 y top-1 del 89,62 %.
-- El calibrado de GPTQ uso 65.536 tokens de WikiText-2 y Wikipedia en coreano, lo que puede introducir sesgo hacia esos dominios e idiomas.
-- Algunos expertos con pocos tokens de calibracion se redondearon al vecino mas cercano en su proyeccion down, lo que puede degradar su calidad de forma desigual.
-- El LM head se re-redondea en el demo de tt-metal porque este lo empaqueta en bfloat8_b, aunque el checkpoint lo mantiene en bf16.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; se heredan los del modelo base.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base y del codigo `tensix-bfp-gptq`.
+- La cuantizacion BFP4 introduce degradacion medible: KL medio de 0,05013 y top-1 del 89,62 %, inferior al 90,80 % de Q4_K_M sobre el mismo checkpoint.
+- El soporte esta limitado al ecosistema Tenstorrent Tensix; no se documenta funcionamiento nativo en CUDA ni en GPU de consumo.
+- La demo se verifico en el simulador Blackhole (`ttsim`), no necesariamente en silicio fisico, segun la informacion proporcionada.
+- No se declara la lista de idiomas soportados; la evaluacion solo cubre ingles y coreano.
+- No se confirma la longitud de contexto oficial; la referencia a `traced_128k` en la demo no constituye una especificacion.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada; son los heredados del modelo base Qwen3.6-35B-A3B.
+- La licencia Apache 2.0 permite uso comercial, pero los cambios respecto al modelo base se detallan en `NOTICE`; el autor declara no estar afiliado a Tenstorrent.
+- El modelo incluye modulos `mtp` y `visual` sin cuantizar en bf16, lo que incrementa el peso total del repositorio (71,9 GB) frente al peso empaquetado para dispositivo (20,991 GB).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Xylolabs/Qwen3.6-35B-A3B-Tensix-BFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Revision del modelo base citada: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/345d467b117d1fd5eda9b879a5988de9ae5f47a7
-- Codigo de cuantizacion (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
-- Demo de tt-metal para Qwen3.5/3.6: https://github.com/tenstorrent/tt-metal/tree/v0.81.1/models/demos/blackhole/qwen36
+- Repositorio de cuantizacion: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Codigo en commit concreto: https://github.com/XylolabsInc/tensix-bfp-gptq/tree/5c52065fffec88021a0703a1bfe5266e4c674711
+- Release tensix-bfp-gptq v0.1.0: https://github.com/XylolabsInc/tensix-bfp-gptq/releases/tag/v0.1.0
+- Release tensix-kernels v0.1.0: https://github.com/XylolabsInc/tensix-kernels/releases/tag/v0.1.0
+- Release tensix-runner v0.1.0: https://github.com/XylolabsInc/tensix-runner/releases/tag/v0.1.0
 - Documentacion de Tenstorrent: https://docs.tenstorrent.com
-- Licencia: https://huggingface.co/Xylolabs/Qwen3.6-35B-A3B-Tensix-BFP4/blob/main/LICENSE
+- Licencia: https://huggingface.co/Xylolabs/Qwen3.6-35B-A3B-Tenstorrent-Tensix-BFP4/blob/main/LICENSE

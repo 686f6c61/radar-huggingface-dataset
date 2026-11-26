@@ -2,95 +2,112 @@
 
 ## Resumen
 
-`krush420/gpt-oss-120b-sre-lora` es un adaptador LoRA (PEFT) entrenado sobre el modelo abierto `openai/gpt-oss-120b`, un transformer con arquitectura de mezcla de expertos (MoE) de 116,8 mil millones de parametros totales y 5,1 mil millones activos por token. Lo desarrolla el usuario `krush420` como parte del ecosistema KruschStack, un stack de herramientas MCP (39 herramientas, 7 pilares) orientado a auditoria de codigo y remediacion de bugs en entornos de site reliability engineering (SRE). El adaptador ocupa un repositorio de 0,1 GB y se distribuye bajo licencia Apache 2.0.
+`krush420/gpt-oss-120b-sre-lora` es un adaptador LoRA (entrenado con QLoRA en MXFP4) sobre el modelo base `openai/gpt-oss-120b`, un transformer MoE de 116,8B parámetros totales y 5,1B activos. Lo desarrolla el usuario krush420 dentro del ecosistema KruschStack, un stack de 39 herramientas MCP orientado a agentes de coding y operaciones (SRE). El adaptador está pensado como "teacher" de alto VRAM y auditor de referencia profunda dentro de ese stack: afina el modelo base para auditoría de código, remediación de bugs, enrutado de tool calling nativo (Harmony `<|channel|>commentary`) y memoria conversacional de largo plazo.
 
-El problema que aborda es la auditoria profunda de repositorios multi-fichero: el adaptador ha sido ajustado con 17.899 trayectorias generadas y verificadas mediante AST y tests unitarios, con el objetivo de producir hallazgos citados de forma literal (`file:startLine-endLine`), refutacion de falsos positivos y criterios de convergencia tipo `CLEAN_PASS`. Dentro de la arquitectura KruschStack se posiciona como el "teacher" de alta VRAM (`L2.5`) que alimenta por destilacion al modelo local de 30B (`krush420/qwen3-coder-30b-sre-lora`) a traves de un enrutador en cascada.
+El problema que aborda es el "drift" de prosa y la deriva de rechazo en tareas de auditoría: según el autor, el adaptador elimina esa deriva y supera ligeramente al `gpt-oss:120b` original en la suite completa DolphinBench (39,50% frente a 39,17% con el harness estándar, bajo juicio oficial `gpt-5.6-sol`), manteniendo un 92,37% de recall en BEAM 100K. La relevancia actual está en su enfoque: un adaptador pequeño (11,9M parámetros entrenables, repo de 0,3 GB) sobre un MoE grande, distribuido también en GGUF, lo que permite ajustar comportamiento agéntico sin reentrenar el modelo completo.
 
-Es relevante ahora porque demuestra un patron de especializacion barata: un adaptador de 0,1 GB sobre un MoE abierto de gran tamano para tareas de ingenieria muy concretas, servible con vLLM en modo multi-LoRA o con Ollama mediante el `Modelfile` incluido. No se han publicado datos de benchmark ni de evaluacion cuantitativa en la informacion disponible.
+Es importante subrayar que el adaptador no es un modelo autónomo: requiere cargar el base `openai/gpt-oss-120b` y aplicar los pesos PEFT encima. El repo pesa 0,3 GB porque contiene únicamente los deltas LoRA, no los pesos completos del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) sobre transformer; el adaptador es LoRA (PEFT) sobre `openai/gpt-oss-120b` |
-| Parametros totales | 116,8 B en el modelo base; tamano del adaptador no disponible (repo de 0,1 GB) |
-| Parametros activos | 5,1 B |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base) |
-| Tipos de cuantizacion | QLoRA para el entrenamiento; MXFP4 (etiqueta del autor); pesos del adaptador en safetensors; `Modelfile` para Ollama |
-| Idiomas soportados | no disponible (la model card no declara idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) + `Modelfile` de Ollama |
+| Arquitectura | LoRA (PEFT) sobre transformer MoE `openai/gpt-oss-120b` |
+| Parametros totales | 11.943.936 (adaptador); modelo base: 116,8B |
+| Parametros activos | 5,1B (modelo base MoE) |
+| Longitud de contexto | no disponible (heredada del base; no declarada en la ficha) |
+| Tipos de cuantizacion | MXFP4 (entrenamiento QLoRA); pesos publicados en safetensors y GGUF |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (PEFT) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre `openai/gpt-oss-120b`, un modelo MoE con 116,8 B de parametros totales y 5,1 B activos por token. El ajuste es un LoRA (con QLoRA y cuantizacion MXFP4 en la pipeline de entrenamiento, segun las etiquetas del autor) usando `transformers` y `trl`. El resultado es un delta de pesos de bajo rango que requiere cargar el modelo base completo para la inferencia.
+El adaptador se entrena sobre `openai/gpt-oss-120b`, un MoE de 116,8B parámetros totales con 5,1B activos por token. El método es QLoRA en MXFP4 sobre una sola GPU, con una fase de SFT sobre el dataset `krush420/sovereign-code-audit-sft` (más de 18.131 registros SFT + DPO declarados, "zero-leak") seguida de una calibración de preferencias con `trl.DPOTrainer` anclada con KL. El adaptador resultante tiene 11,9M parámetros entrenables y se distribuye como delta PEFT más una conversión GGUF.
 
-El dataset de entrenamiento es `krush420/sovereign-code-audit-sft`, con 17.899 trayectorias. Segun la model card, esas trayectorias se generaron, anclaron con AST y verificaron contra suites de tests unitarios (`node:test` / `pytest`, codigo de salida 0) a traves del ecosistema MCP de KruschStack. El autor declara tres componentes de entrenamiento: remediaciones "golden" multi-fichero (etiquetadas como `argon_golden_remediations`) preparadas con `krusch-harness` y validadas contra tests en vivo; auditorias de codigo en 11 fases con rejection sampling elitista (`elitist_120b_teacher`) usando herramientas de AST y grafo de dependencias (`search_symbols`, `dependency_graph`, `read_blob`); y un "zero-leak portability gate" que elimina IPs privadas, hostnames internos, rutas de usuario y credenciales para que el adaptador generalice a repositorios ajenos. No se detalla la composicion exacta del dataset, el numero de tokens vistos ni si hubo fases de RLHF/DPO posteriores al SFT.
+La innovación declarada es el enrutado nativo de herramientas mediante el formato Harmony (`<|channel|>commentary`) y un `Modelfile` neutro en roles, orientado a integración con MCP (39 herramientas). El autor afirma que esta combinación elimina la deriva de rechazo en prosa del auditor y mantiene la calibración P0/P1 de referee al 100% `CLEAN_PASS`. No se detalla la composición exacta del dataset de entrenamiento ni el número de tokens vistos más allá de las cifras del dataset citado.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento tecnico orientado a codigo, con enfasis en auditoria de repositorios y analisis de causa raiz multi-fichero.
-- Remediacion de bugs: generacion de parches multi-fichero que el autor declara verificados contra suites de tests unitarios.
-- Citas verificables: produce referencias literales en formato `file:startLine-endLine` para cada hallazgo.
-- Refutacion de falsos positivos: capacidad entrenada para marcar explicitamente `NOT FLAGGED` sobre sospechas no confirmadas.
-- Convergencia controlada: criterio de parada `CLEAN_PASS` cuando no quedan hallazgos, orientado a evitar auditorias infinitas.
-- Integracion con tool calling mediante MCP: el adaptador esta entrenado sobre el uso de 39 herramientas anotadas del stack KruschStack (busqueda de simbolos, grafo de dependencias, lectura de blobs, memoria de trabajo, harness 2PC).
-- Soporte de flujos agente multi-paso: lectura de contexto, propuesta de diff, aplicacion en dos fases (2PC) y validacion.
-- Capacidades multilingues: no disponible (no declaradas en la model card).
-- Vision, audio y modo "thinking": no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Tool calling / function calling nativo con enrutado Harmony.
+- Integración con agentes y MCP (39 herramientas del stack KruschStack).
+- Memoria conversacional de largo plazo (evaluada en BEAM 100K y DolphinBench).
+- Auditoría de código y remediación de bugs (code-audit, bug-remediation).
+- Edición de repositorios multi-lenguaje (evaluada en Aider Polyglot, 6 lenguajes).
+- Calibración como referee/auditor (P0/P1, `CLEAN_PASS`).
+- Capacidades multilingües: no declaradas explícitamente; los benchmarks cubren 6 lenguajes de programación, no idiomas naturales.
 
 ## Casos de uso
 
-- Auditoria de codigo en CI/CD: ejecutar el adaptador sobre un diff o un repositorio completo para obtener hallazgos citados por fichero y linea, con criterio de parada `CLEAN_PASS`, integrado como paso previo al merge.
-- Analisis de causa raiz multi-fichero: cuando un test falla en produccion, el modelo recorre el grafo de dependencias (`dependency_graph`) y localiza el origen del fallo en lugar de limitarse al fichero que lanza la excepcion.
-- Remediacion automatica con validacion: generar un parche, aplicarlo en dos fases mediante `krusch-harness` y confirmar con la suite de tests (`node:test` o `pytest`) antes de aceptar el cambio.
-- Teacher para destilacion: usar este adaptador como modelo de alta capacidad que genera trayectorias de calidad para reentrenar el modelo local de 30B (`krush420/qwen3-coder-30b-sre-lora`), reduciendo el coste de anotacion.
-- Revision de seguridad y deuda tecnica en monorepos: auditorias de 11 fases con refutacion de falsos positivos, utiles para equipos SRE que reciben mucho ruido de linters y SAST.
-- Asistente de guardia (on-call): consultas sobre un repositorio concreto con memoria de trabajo persistida entre turnos, apoyandose en las herramientas de contexto y de sistema de ficheros del stack.
-- Estandarizacion de practicas de revision: al estar "scrubbed" de datos privados, el adaptador puede desplegarse en repositorios de empresa sin arrastrar informacion interna del autor.
+- Auditoría de código automatizada en CI/CD: el adaptador está afinado para code-audit y remediación, y puede insertarse como paso de revisión que detecta y clasifica hallazgos P0/P1 antes del merge, apoyándose en el enrutado de herramientas para consultar el repositorio.
+- Agente SRE autónomo: integrado en el stack MCP (39 herramientas), puede ejecutar diagnósticos, consultar métricas y proponer remediaciones multi-paso en un bucle agéntico con tool calling nativo.
+- Edición de repositorios multi-lenguaje: con un pass@2 del 51,56% en Aider Polyglot (6 lenguajes) bajo el harness 2PC, es adecuado para tareas de parcheo guiado con verificación al parar, no para one-shot ciego (19,56% pass@1).
+- Memoria de largo plazo en asistentes: su recall del 92,37% en BEAM 100K lo hace utilizable en asistentes que deben recordar contexto de conversaciones extensas (hasta 100K tokens en la evaluación).
+- Referee y juez de calidad en pipelines de evaluación: el autor lo posiciona como auditor de referencia profunda con calibración P0/P1, útil para puntuar salidas de otros modelos o agentes.
+- Enrutado de herramientas en productos con MCP: como capa que decide qué herramienta invocar y con qué argumentos en un harness agéntico, gracias al formato Harmony y al `Modelfile` neutro en roles.
+- Destilación de conocimiento: etiquetado como "teacher" L2.5, puede generar trazas de alta calidad para entrenar modelos estudiantes más pequeños del mismo ecosistema (30B, 8B).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K, SWE-bench ni de resolucion de issues, y tampoco se aportan metricas de tasa de exito en las auditorias o en la aplicacion de parches.
+Datos declarados por el autor (no verificados de forma independiente):
+
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| DolphinBench (600 tareas, 1,5M tokens, juez oficial gpt-5.6-sol) | Pass rate oficial | 39,50% (237/600) |
+| DolphinBench | Comprobaciones mecánicas deterministas de herramientas | 78,85% (1.033/1.310) |
+| BEAM 100K (ICLR 2026, n=400) | Recall estricto de turno primario (9 categorías) | 92,37% |
+| BEAM 100K | E2E QA (referee Hermes-3) | 69,03% |
+| BEAM 100K | E2E QA (referee Qwen2.5-32B) | 60,80% |
+| Aider Polyglot (6 lenguajes, n=225) | Pass@2 (2PC verify-on-stop) | 51,56% |
+| Aider Polyglot | Pass@1 (blind one-shot) | 19,56% |
+
+Comparación declarada por el autor: 39,50% (237/600) frente a 39,17% (235/600) del `gpt-oss:120b` original en DolphinBench, con +7 tareas en la persona `Morgan`. No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: el modelo base tiene 116,8 B de parametros; a 2 bytes por parametro el peso ronda los 234 GB, por lo que requiere agregado de varias GPU (por ejemplo 4x H100 80 GB o 8x A100 40 GB). Estimacion propia, no publicada por el autor.
-- VRAM estimada en MXFP4 (4 bits): aproximadamente 60-65 GB de pesos, mas overhead de KV cache y activaciones; encaja en 1x H100 80 GB o, con margen ajustado, en 2x A100 40 GB. Estimacion propia.
-- GPU consumer: no cabe en una RTX 4090 (24 GB) ni en una RTX 3090 (24 GB) con el modelo base completo; solo seria viable con offload a RAM/CPU, con latencia muy degradada. No hay datos de rendimiento publicados.
-- Despliegue: `transformers` + `peft` (ejemplo incluido en la model card), vLLM en modo multi-LoRA (`vllm serve openai/gpt-oss-120b` con el adaptador), y Ollama mediante el `Modelfile` incluido (`ollama create gpt-oss-sre:120b -f Modelfile`). No se documenta soporte de TGI ni de llama.cpp para este adaptador.
-- Latencia y throughput: no disponible. La model card solo menciona una latencia de enrutado del componente `krusch-cascade-router` (<25 microsegundos), que no es la latencia del modelo.
+- El adaptador en sí ocupa 0,3 GB, pero requiere cargar el modelo base `openai/gpt-oss-120b` (116,8B totales, 5,1B activos) para inferencia.
+- VRAM estimada: no disponible de forma explícita; por el tamaño del base en MXFP4, se necesita hardware de gama alta (el autor menciona entrenamiento en una sola GPU con QLoRA MXFP4, lo que sugiere GPUs de 80 GB o superiores para el base cuantizado).
+- GPU recomendadas: no disponibles en la ficha; por tamaño del base, A100/H100 de 80 GB son el objetivo razonable, aunque el autor no lo declara.
+- Consumer GPU: no cabe en GPUs de consumo convencionales (RTX 4090 de 24 GB) con el base completo; el adaptador por separado no es ejecutable sin el base.
+- Despliegue: pesos en safetensors (PEFT, vía transformers) y GGUF (vía llama.cpp/Ollama, presumiblemente con el `Modelfile` incluido); integración con el harness KruschStack vía MCP.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Especializacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| `krush420/gpt-oss-120b-sre-lora` | 116,8 B (base) + adaptador LoRA | 5,1 B | no disponible | Auditoria de codigo y remediacion SRE | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
-| `openai/gpt-oss-120b` (base) | 116,8 B | 5,1 B | no disponible en la informacion | Proposito general, sin ajuste SRE | no disponible en la informacion | Hugging Face (modelo base referenciado) |
-| `krush420/qwen3-coder-30b-sre-lora` (student) | 30 B (base `Qwen/Qwen3-Coder-30B-A3B-Instruct`) | no disponible | no disponible | Misma tarea, tier local de menor VRAM | no disponible en la informacion | Hugging Face (adaptador companion) |
+| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| gpt-oss-120b-sre-lora (este) | 11,9M adaptador / 116,8B base | no disponible | DolphinBench 39,50%; BEAM 100K recall 92,37%; Aider pass@2 51,56% | apache-2.0 | Hugging Face (PEFT + GGUF) |
+| gpt-oss:120b (stock) | 116,8B (5,1B activos) | no disponible | DolphinBench 39,17% (según autor) | apache-2.0 (base) | Ollama / HF |
+| krush420/gemma4-31b-sre-lora | 31B dense | no disponible | DolphinBench 57,33% (según autor) | no disponible | Hugging Face |
+| krush420/qwen3-coder-30b-sre-lora | 30B MoE (A3B) | no disponible | DolphinBench 43,00% con Grounded v0.3 (según autor) | no disponible | Hugging Face |
 
-No se han identificado en la informacion proporcionada otros adaptadores de auditoria de codigo directamente comparables; los datos de rendimiento relativos entre estas tres opciones no estan publicados.
+La comparativa se limita a los modelos del mismo ecosistema citados por el autor; no se dispone de datos de benchmarks de alternativas externas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: es un adaptador LoRA que exige descargar y cargar el modelo base `openai/gpt-oss-120b` (mas de 200 GB en bf16), lo que condiciona cualquier despliegue.
-- Ausencia total de evaluacion publicada: sin benchmarks ni metricas de tasa de exito en parches, la calidad declarada (tests en verde, refutacion de falsos positivos) no es verificable de forma independiente.
-- Sesgo de dominio: el entrenamiento se centra en auditoria y remediacion dentro del stack KruschStack; fuera de ese harness (herramientas MCP, formato de citas `file:startLine-endLine`, criterios `CLEAN_PASS` / `NOT FLAGGED`) el adaptador puede degradarse frente al modelo base.
-- Dependencia de herramientas: parte de la capacidad depende de que el entorno exponga las herramientas MCP del stack; sin ellas, el formato de salida esperado puede no reproducirse.
-- Riesgo de alucinacion: en tareas de auditoria el fallo tipico es inventar lineas, ficheros o APIs inexistentes; las citas literales mitigan pero no eliminan este riesgo, y requieren validacion automatica en produccion.
-- Idiomas no declarados: no hay garantia documentada de calidad en castellano ni en otros idiomas distintos del ingles tecnico predominante en el dataset.
-- Adopcion practicamente nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por terceros.
-- Licencia: Apache 2.0 permite uso comercial, pero la licencia y las condiciones del modelo base `openai/gpt-oss-120b` deben verificarse por separado antes de desplegar en produccion.
-- Fechas incoherentes: la model card indica creacion en 2026-10-23, dato que conviene confirmar antes de citar el modelo.
+- No es un modelo autónomo: sin el base `openai/gpt-oss-120b` los pesos PEFT no son ejecutables.
+- Los benchmarks son declarados por el autor y marcados como `verified: false`; no hay verificación independiente.
+- El pass@1 ciego en Aider Polyglot es bajo (19,56%): no es fiable para edición de código one-shot sin verificación.
+- El pass rate oficial en DolphinBench es moderado (39,50%): más de la mitad de las tareas fallan bajo el juez oficial.
+- Idiomas naturales soportados: no declarados; no se puede asumir cobertura multilingüe.
+- Longitud de contexto: no declarada en la ficha; depende del base.
+- Riesgo de alucinación: no cuantificado; el autor no publica tasas de alucinación.
+- Sesgos: no documentados.
+- Licencia apache-2.0 en el adaptador, pero conviene verificar la licencia y condiciones del modelo base `openai/gpt-oss-120b` para uso comercial en producción.
+- Ecosistema muy específico (KruschStack, MCP, Jean SRE): parte del rendimiento declarado depende del harness propietario (2PC verify-on-stop), no del modelo en aislamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/krush420/gpt-oss-120b-sre-lora
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/krush420/sovereign-code-audit-sft
-- Adaptador companion (student 30B): https://huggingface.co/krush420/qwen3-coder-30b-sre-lora
+- Logs de benchmarks: https://huggingface.co/datasets/krush420/sovereign-g4-benchmarks
+- Space de arena de routers: https://huggingface.co/spaces/krush420/sovereign-router-arena
 - Repositorio KruschStack: https://github.com/kruschdev/krusch-stack
 - Repositorio Jean SRE: https://github.com/kruschdev/Jean-SRE-by-kruschdev
-- Enrutador en cascada: https://github.com/kruschdev/krusch-cascade-router
-- Paper, blog o demo oficial: no disponible
-- Los resultados de busqueda web proporcionados no contenian enlaces relevantes al modelo.
+- Adaptador companion 31B: https://huggingface.co/krush420/gemma4-31b-sre-lora
+- Adaptador companion 30B: https://huggingface.co/krush420/qwen3-coder-30b-sre-lora
+- DolphinBench: https://dolphinbench.ai/
+- Dataset BEAM: https://huggingface.co/datasets/Mohammadta/BEAM
+- Aider Polyglot Benchmark: https://huggingface.co/datasets/Aider-AI/polyglot-benchmark

@@ -1,106 +1,95 @@
 # sergolsub/d3-v3.1.0-27B-MLX-8bit
 
 ## Resumen
+d3-v3.1.0-27B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo vllm-sr/d3, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante `mlx_lm`. El modelo original es un transformer de aproximadamente 26.085 millones de parámetros (26,08 mil millones) con arquitectura híbrida que combina capas de atención lineal (`linear_attn`) con atención estándar, y que incorpora una cabeza de decisión especializada para tareas de clasificación estructurada.
 
-sergolsub/d3-v3.1.0-27B-MLX-8bit es una conversión cuantizada a 8 bits en formato MLX del modelo vllm-sr/d3, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería mlx_lm. No se trata de un modelo entrenado desde cero, sino de una adaptación de pesos BF16 originales a un formato optimizado para el ecosistema MLX de Apple, sin reentrenamiento ni cambios de arquitectura, según declara el autor en la model card. El modelo cuenta con aproximadamente 26.085 millones de parámetros (26,08B) y un tamaño en disco de 27,9 GB en el repositorio.
+La relevancia de esta conversión radica en que reduce el peso en disco de 52,17 GB (BF16) a 28,15 GB, manteniendo una calidad prácticamente idéntica: la precisión evaluada por el autor es del 88,9 % tanto en BF16 como en 8 bits, con una perplejidad de calibración de 1,981 frente a 1,977, y una divergencia KL de salida media de solo 1,81e-04 nats. En un Mac mini M4 Pro de 48 GB, la latencia mediana por decisión baja de 212.108 ms (BF16) a 2.141 ms, lo que hace viable el uso interactivo en hardware de consumo.
 
-La relevancia de esta ficha reside en que el modelo incorpora una capacidad poco habitual: un modo de "decisión" (decision mode) con cabezas de inferencia específicas que permiten clasificar texto en categorías controladas (tipo noul, choice o score) mediante una API propia expuesta en el script d3_mlx.py. El autor reporta métricas de calidad tras la cuantización idénticas a las del modelo BF16 original en sus evaluaciones internas (88,9% de accuracy, 87,5% en noul, 96,0% en choice y 84,0% en score), así como una perplejidad de calibración de 1,981 frente a 1,977 en BF16.
-
-La licencia es Apache 2.0, heredada de los pesos originales de vllm-sr/d3. El modelo está pensado para despliegue local en hardware Apple Silicon, con métricas medidas en un Mac mini M4 Pro de 48 GB de memoria unificada: 28,15 GB en disco, 7,08 s de carga, 15,78 GB de memoria residente máxima y una latencia mediana de decisión de 2141 ms (0,63 decisiones cortas por segundo).
+El modelo está pensado para tareas de enrutamiento y decisión (refund, asignación de equipo, puntuación de severidad) más que para generación de texto libre, y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención lineal (linear_attn) y cabezas de decisión adicionales; etiqueta qwen3_5 en Hugging Face |
-| Parametros totales | 26.085.330.160 (26,08B) |
+| Arquitectura | Transformer híbrido con capas de atención lineal (`linear_attn`) y cabeza de decisión; familia qwen3_5 según tags |
+| Parametros totales | 26.085.330.160 (≈26,1 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (MLX); existen pesos BF16 en el repositorio upstream vllm-sr/d3 |
+| Tipos de cuantizacion | 8 bits MLX (esta versión); existe variante 4 bits del mismo autor |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en layout MLX (26 shards), más config.json, tokenizer, chat_template.jinja y scripts de inferencia |
+| Formato de pesos | safetensors en layout MLX (26 shards), más `d3_mlx.py`, `decision_config.json` y `joint_config.json` |
 
 ## Arquitectura y entrenamiento
+El modelo base vllm-sr/d3 emplea una arquitectura transformer con capas de atención lineal identificables en el nombre de los tensores (por ejemplo, `language_model.layers.0.linear_attn.in_proj_b.weight`), lo que sugiere un diseño híbrido que mezcla atención lineal con atención convencional para reducir el coste computacional en contextos largos. El tag `qwen3_5` indica que deriva de la familia Qwen 3.5. La conversión a MLX 8 bits no introduce reentrenamiento ni cambios arquitectónicos: se trata de una cuantización de los shards BF16 originales, con LICENSE y NOTICE subidos junto a los pesos.
 
-La arquitectura subyacente corresponde a un transformer con capas de atención lineal (el autor identifica `language_model.layers.0.linear_attn.in_proj_b.weight` como la capa con mayor divergencia tras la cuantización) y una etiqueta de arquitectura `qwen3_5` en los metadatos de Hugging Face. Sobre el modelo base se añaden cabezas de decisión específicas, cuya configuración se describe en `decision_config.json` y `joint_config.json`, y que se cargan mediante el script `d3_mlx.py`. Esta conversión concreta no introduce cambios arquitectónicos: es una cuantización a 8 bits de los pesos BF16 originales de vllm-sr/d3, realizada mediante conversión en streaming desde los shards de origen.
-
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias en el modelo original vllm-sr/d3. La model card de esta conversión no documenta el proceso de entrenamiento del modelo base, solo el proceso de cuantización. El autor sí publica una auditoría de cuantización (`kl_audit.json`) con comparación tensor a tensor frente a los originales BF16: 1183 tensores comparados, KL media de 3,80e-04, KL máxima de 7,78e-03 y 581 tensores con divergencia no nula. También se incluyen sumas de verificación SHA-256 de todos los ficheros del repositorio.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La model card sí documenta una auditoría de cuantización a nivel de tensor: 1.183 tensores comparados, KL medio de 3,80e-04, KL máximo de 7,78e-03 y 581 tensores con KL distinto de cero; la peor capa es `language_model.layers.0.linear_attn.in_proj_b.weight` con KL 7,78e-03. La innovación destacable es la cabeza de decisión (`decision_config.json`), que permite formular preguntas tipadas (`noul`, `choice`, `score`) sobre un texto de entrada y obtener una respuesta estructurada con probabilidades.
 
 ## Capacidades
-
-- Generación de texto y razonamiento general, heredados del modelo base vllm-sr/d3 (no documentados en detalle en esta conversión).
-- Modo de decisión estructurado: permite formular preguntas de clasificación con tres tipos de salida: `noul` (respuesta binaria sí/no), `choice` (selección entre categorías con criterios definidos) y `score` (puntuación sobre una escala de criterios ordenados).
-- Interfaz de programación propia mediante la clase `D3` del script `d3_mlx.py`, con un método `decide(texto, especificación)` que acepta una pregunta y un diccionario de tareas.
-- Soporte de plantilla de chat (`chat_template.jinja`), lo que sugiere compatibilidad con formatos conversacionales multi-turno, aunque no se detalla su comportamiento.
-- Capacidades multilingües: no disponibles.
-- Soporte de tool calling, function calling, agentes o multi-step reasoning: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles.
+- Decisión estructurada tipada: soporta tres tipos de tarea (`noul` sí/no, `choice` selección entre criterios, `score` puntuación ordinal sobre una lista de criterios).
+- Clasificación y enrutamiento: asignación de tickets a equipos, detección de intención de reembolso, evaluación de severidad.
+- Salida con probabilidades por fila, apta para umbrales y análisis de incertidumbre.
+- Cabeza conjunta (`joint_config.json`) para combinar varias decisiones en una sola pasada.
+- Ejecución nativa en Apple Silicon mediante `mlx_lm`.
+- Generación de texto libre: no confirmada en la información disponible; la model card solo documenta el modo de decisión.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes multi-paso: no disponible.
+- Capacidades multilingües: no disponible (idiomas no declarados).
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
-
-- Triaje automático de tickets de soporte: el modelo puede clasificar cada incidencia en un equipo responsable (por ejemplo, facturación o envíos) usando el tipo de decisión `choice` con criterios explícitos, tal como muestra el ejemplo de la model card con el pedido #7821.
-- Detección de intención de reembolso: mediante el tipo `noul`, el modelo responde sí o no a preguntas binarias como "¿el cliente quiere un reembolso?", útil para enrutar conversaciones de atención al cliente hacia el flujo adecuado.
-- Priorización de incidencias técnicas: con el tipo `score` y una escala de criterios como "cosmético, molesto, bloqueante", el modelo asigna severidad a errores de sistema (por ejemplo, "Export failed: disk quota exceeded"), lo que permite ordenar colas de trabajo.
-- Enrutamiento de correos o mensajes entrantes: clasificación por departamento o urgencia en un sistema de gestión documental, aprovechando la API de decisión con criterios definidos por el operador.
-- Moderación de contenido o verificación de políticas: formular preguntas binarias (`noul`) sobre si un texto cumple una política concreta, con la ventaja de que la salida es estructurada y fácil de integrar en un pipeline.
-- Despliegue local en estaciones de trabajo Apple Silicon: al estar en formato MLX 8 bits y ocupar 15,78 GB de memoria residente máxima en un M4 Pro de 48 GB, es viable para prototipos y herramientas internas que requieran privacidad de datos sin depender de la nube.
-- Evaluación de calidad de clasificadores existentes: el modo de decisión con criterios explícitos permite construir líneas base reproducibles para comparar con otros modelos o con reglas heurísticas.
+- Enrutamiento de tickets de soporte: usar `decide` con tipo `choice` y criterios como `billing` o `shipping` para asignar cada incidencia al equipo correcto; la latencia de ~2,1 s por decisión en un M4 Pro permite procesar en tiempo casi interactivo.
+- Detección de intención de reembolso: consulta `noul` sobre el texto del cliente para decidir si solicita devolución; la precisión medida del 88,9 % y la clase `noul` al 87,5 % dan una referencia concreta para calibrar umbrales.
+- Triaje de severidad de incidencias: consulta `score` con criterios ordinales (`cosmetic`, `annoying`, `blocks`) para priorizar colas de trabajo en sistemas de soporte técnico.
+- Moderación y clasificación de contenido: cualquier flujo que requiera una etiqueta booleana o categórica sobre texto libre puede formularse como una decisión tipada y ejecutarse en local sin enviar datos a la nube.
+- Procesamiento por lotes en estaciones de trabajo Mac: con 28,15 GB en disco y 15,78 GB de memoria residente pico, cabe en un Mac con 32 GB o más y permite clasificar grandes volúmenes de registros sin GPU dedicada.
+- Prototipado de pipelines de decisión antes de escalar a servidor: la paridad de calidad con BF16 (KL 1,81e-04) permite validar la lógica de negocio en local y desplegar después el modelo original en vLLM sin cambiar las consultas.
+- Automatización de back-office con datos sensibles: al ejecutarse íntegramente en local, es adecuado para clasificar documentación interna sujeta a requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
+Los datos publicados por el autor corresponden a su propio conjunto de evaluación (100 filas), no a benchmarks estándar como MMLU o HumanEval.
 
-El autor publica métricas de calidad de la cuantización y de rendimiento en su propio entorno, no benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K, etc.):
+| Version | Precision | noul | choice | score | PPL | KL salida vs original | Disco | Latencia mediana |
+|---|---|---|---|---|---|---|---|---|
+| original (BF16) | 88,9 % | 87,5 % | 96,0 % | 84,0 % | 1,977 | referencia | 52,17 GB | 212.108 ms |
+| 8 bits (esta) | 88,9 % | 87,5 % | 96,0 % | 84,0 % | 1,981 | 1,81e-04 | 28,15 GB | 2.141 ms |
+| 4 bits | 87,8 % | 85,0 % | 96,0 % | 84,0 % | 1,959 | 7,18e-03 | 14,87 GB | 2.114 ms |
 
-| Metrica | 8 bits (MLX) | BF16 (original) |
-|---|---|---|
-| Accuracy (eval del autor) | 88,9% | 88,9% |
-| Noul | 87,5% | 87,5% |
-| Choice | 96,0% | 96,0% |
-| Score | 84,0% | 84,0% |
-| Perplejidad de calibración | 1,981 | 1,977 |
-| Decision Index 0.4.1 | 62,5 | no disponible |
-
-| Metrica de rendimiento (Mac mini M4 Pro 48 GB) | Valor |
-|---|---|
-| Latencia de decisión corta (mediana de 5, tras 3 calentamientos) | 1238 ms |
-| Latencia de decisión (mediana general) | 2141 ms |
-| Decisiones cortas sostenidas | 0,63/s |
-| Tiempo de carga | 7,08 s |
-| Memoria residente máxima | 15,78 GB |
-| Tamano en disco | 28,15 GB |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+KL de salida por fila (nats): original → 8 bits, media 1,81e-04, p95 5,51e-04, máximo 6,26e-03; 8 bits → 4 bits, media 7,16e-03, p95 3,36e-02, máximo 9,07e-02. Decision Index 0.4.1: 62,5. Medición en Mac mini M4 Pro de 48 GB: carga en 7,08 s, 0,63 decisiones cortas por segundo sostenidas, decisión corta de 1.238 ms (mediana de 5 tras 3 de calentamiento).
 
 ## Requisitos de hardware
-
-- VRAM/memoria unificada estimada para inferencia: 15,78 GB de memoria residente máxima medida en MLX 8 bits; el repositorio ocupa 27,9 GB en disco (28,15 GB según el autor).
-- GPU recomendadas: el formato MLX está diseñado para Apple Silicon; el autor reporta mediciones en un Mac mini M4 Pro con 48 GB de memoria unificada. Para los pesos BF16 originales se requeriría hardware con mayor memoria, aunque no se documenta.
-- Compatibilidad con GPU de consumidor NVIDIA (RTX 4090, etc.): no disponible; este repositorio es específico de MLX y no incluye pesos GGUF.
-- Opciones de despliegue: `mlx_lm` y el script propio `d3_mlx.py` incluido en el repositorio; no se mencionan vLLM, llama.cpp, Ollama ni TGI para esta conversión.
-- Latencia y throughput: 1238 ms de mediana para decisiones cortas, 2141 ms de mediana general y 0,63 decisiones cortas por segundo en el hardware citado.
+- VRAM/memoria unificada: pico de memoria residente de 15,78 GB medido en MLX 8 bits; se recomienda un Mac con al menos 24-32 GB de memoria unificada para dejar margen al sistema.
+- Disco: 28,15 GB para los pesos; el repo completo ocupa 27,9 GB según Hugging Face.
+- GPU recomendadas: Apple Silicon (M-series) con `mlx_lm`; el autor validó en Mac mini M4 Pro de 48 GB. No hay datos de ejecución en A100, H100 ni RTX 4090, ya que el formato MLX está orientado a Apple Silicon.
+- GPU de consumo: sí cabe en equipos Apple con memoria unificada suficiente; no es ejecutable directamente en GPUs NVIDIA sin reconvertir los pesos.
+- Despliegue: `mlx_lm` con el cargador `d3_mlx.py` incluido en el repositorio; para servidor con GPUs NVIDIA habría que usar los pesos BF16 originales de vllm-sr/d3 (compatible con vLLM, según el nombre del repositorio upstream).
+- Latencia y throughput: mediana de 2.141 ms por decisión, 0,63 decisiones cortas por segundo sostenidas en M4 Pro de 48 GB; la variante 4 bits ofrece latencia similar (2.114 ms) con la mitad de disco.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directos en la documentación proporcionada. El modelo base vllm-sr/d3 es el referente natural, pero no se detallan sus especificaciones completas (contexto, idiomas, benchmarks). Se puede establecer la siguiente comparación mínima:
+| Modelo | Parametros | Contexto | Calidad (eval del autor) | Disco | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| sergolsub/d3-v3.1.0-27B-MLX-8bit | 26,1 B | no disponible | 88,9 % accuracy | 28,15 GB | Apache 2.0 | Hugging Face, MLX |
+| sergolsub/d3-v3.1.0-27B-MLX-4bit | 26,1 B | no disponible | 87,8 % accuracy | 14,87 GB | Apache 2.0 | Hugging Face, MLX |
+| vllm-sr/d3 (BF16 original) | 26,1 B | no disponible | 88,9 % accuracy | 52,17 GB | Apache 2.0 | Hugging Face |
+| Modelos de decisión comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| sergolsub/d3-v3.1.0-27B-MLX-8bit | 26,08B | MLX 8 bits | Apache 2.0 | Conversión para Apple Silicon con modo de decisión |
-| vllm-sr/d3 (base) | no disponible | BF16 | Apache 2.0 | Pesos originales, sin cuantizar |
-| Otros modelos de ~27B | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
+No se dispone de información sobre otros modelos de la misma categoría (clasificación y enrutamiento con cabeza de decisión) para establecer una comparación externa fiable.
 
 ## Limitaciones y advertencias
-
-- La model card no documenta sesgos conocidos, riesgos de alucinación ni limitaciones idiomáticas del modelo base; se desconoce su comportamiento fuera del modo de decisión.
-- El modo de decisión está pensado para preguntas cerradas con criterios explícitos; no se garantiza su fiabilidad en preguntas abiertas o ambiguas.
-- La longitud de contexto no está especificada, lo que impide planificar su uso en conversaciones o documentos largos.
-- El modelo está empaquetado exclusivamente para MLX (Apple Silicon); no es directamente utilizable en GPUs NVIDIA sin una conversión adicional a otro formato.
-- La licencia Apache 2.0 permite uso comercial, pero el autor advierte de que, en caso de conflicto, prevalece la licencia del repositorio upstream vllm-sr/d3.
-- Las métricas de calidad y rendimiento provienen de evaluaciones internas del autor, no de benchmarks independientes; deben interpretarse con cautela.
-- El repositorio tiene 306 descargas y 0 likes en el momento de la consulta, lo que indica una adopción comunitaria muy limitada y poca validación externa.
-- No se dispone de información sobre el proceso de entrenamiento del modelo base, lo que dificulta evaluar riesgos de sesgo o de alineación.
+- El conjunto de evaluación del autor tiene solo 100 filas y está orientado a tareas de decisión; no hay resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) que permitan comparar con el ecosistema generalista.
+- La model card no documenta el comportamiento en generación de texto libre, tool calling ni razonamiento multi-paso; no debe asumirse que estas capacidades funcionan.
+- Idiomas soportados no declarados: no hay garantía de calidad fuera del inglés, que es el idioma de los ejemplos de la model card.
+- Longitud de contexto no disponible: no se puede planificar su uso con documentos largos sin verificación empírica.
+- Riesgo de alucinación en las justificaciones textuales asociadas a cada decisión; las probabilidades de salida deben calibrarse con datos propios antes de producción.
+- La cuantización introduce una degradación medible aunque pequeña: KL medio de 1,81e-04 y máximo de 6,26e-03 por fila; la variante 4 bits degrada más (accuracy 87,8 %, noul 85,0 %).
+- El formato MLX limita el despliegue a Apple Silicon; para GPUs NVIDIA hay que usar los pesos BF16 originales.
+- Aunque la licencia es Apache 2.0, la model card indica que prevalece la licencia del repositorio upstream en caso de conflicto; conviene revisar el LICENSE de vllm-sr/d3 antes de un uso comercial.
+- El modelo tiene 325 descargas y 0 likes en el momento de la consulta: es una conversión de nicho con poca validación comunitaria.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/d3-v3.1.0-27B-MLX-8bit
-- Modelo base: https://huggingface.co/vllm-sr/d3
+- Modelo base original: https://huggingface.co/vllm-sr/d3
+- Variante 4 bits: https://huggingface.co/sergolsub/d3-v3.1.0-27B-MLX-4bit
+- Documentación de MLX: https://github.com/ml-explore/mlx
+- Documentación de mlx_lm: https://github.com/ml-explore/mlx-lm

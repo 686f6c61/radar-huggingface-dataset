@@ -2,97 +2,88 @@
 
 ## Resumen
 
-KyoukaUzen-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado por el usuario abbuibuibui sobre el checkpoint waiIllustriousSDXL v17. Representa a Kyouka Uzen (羽前京香), personaje de la serie *Mato Seihei no Slave*, y su proposito es fijar la identidad visual del personaje (rostro, peinado, ojos y vestuario) en la generacion de imagenes anime con la familia Illustrious de SDXL. No es un modelo de lenguaje: es un adaptador de bajo rango que se carga junto al checkpoint base mediante la libreria diffusers o dentro de ComfyUI.
+KyoukaUzen-Lora es un LoRA de personaje para modelos de difusión SDXL, desarrollado por el usuario abbuibuibui y publicado en Hugging Face. Reproduce a Kyouka Uzen (羽前京香), personaje de la serie *Mato Seihei no Slave*, y está entrenado sobre el checkpoint waiIllustriousSDXL v17, un modelo base de la familia Illustrious orientado a ilustración anime. El repositorio contiene en realidad tres linajes distintos de pesos: el LoRA original para WAI/Illustrious en la raíz, un LoRA para AutismMix Pony bajo `autism_pony/` y un LoRA para MOSS-Image bajo `moss/`, cada uno con su propio modelo base y sus propios prompts.
 
-El repositorio contiene siete checkpoints de entrenamiento (E1-E7), cada uno de 456.493.996 bytes (unos 456 MB), con un total de 3,2 GB en el repo. El autor publica una evaluacion comparativa propia y recomienda el epoch E6 a intensidad 0,8 como valor por defecto. El LoRA se entrena con rango 64 y alpha 32 sobre un dataset de 87 pares de imagenes etiquetadas con tres variantes de vestuario.
+El modelo resuelve un problema acotado pero muy demandado en la comunidad de generación de imágenes anime: la consistencia de identidad de un personaje concreto a través de prompts, poses, encuadres y vestuario. Para ello emplea el mecanismo estándar de LoRA sobre atención en un transformer de difusión SDXL, con rango 64 y alpha 32, entrenado con 91 pares imagen-texto y 2 repeticiones. El repositorio ocupa 7,9 GB e incluye pesos por epoch, muestras de evaluación y documentación bilingüe inglés-chino.
 
-Es relevante ahora porque el ecosistema Illustrious concentra buena parte de la generacion anime basada en SDXL, y los LoRA de personaje son la via estandar para incorporar identidades concretas sin reentrenar el modelo base. La ficha documenta tanto las capacidades reales del adaptador como sus limitaciones de licencia y de fidelidad visual.
+Su relevancia es práctica más que arquitectónica: no introduce técnicas nuevas de difusión, sino que ofrece una receta reproducible (dataset público, checkpoint recomendado, tokens de disparo y ajustes de inferencia verificados) para un personaje concreto. La evaluación comparativa del autor recomienda el epoch E6 a fuerza 0,8 sobre el linaje WAI/Illustrious, con muestras generadas en ComfyUI a 832×1216, Euler a, 28 pasos, CFG 4,5 y CLIP skip 2.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL, familia Illustrious |
-| Parametros totales | no disponible (rango 64, alpha 32; cada checkpoint pesa 456.493.996 bytes) |
+| Arquitectura | LoRA sobre transformer de difusión SDXL (familia Illustrious); linajes adicionales para AutismMix Pony y MOSS-Image |
+| Parametros totales | no disponible (pesos LoRA; cada fichero de 456.496.828 bytes) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de difusion de imagenes) |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors de precision completa) |
-| Idiomas soportados | en, zh (etiquetas y documentacion; los prompts de difusion funcionan en ingles) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusión; resolución de entrenamiento no especificada, muestras a 832×1216) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors de precisión nativa; no se documentan variantes GGUF ni fp8) |
+| Idiomas soportados | en, zh (prompts y documentación) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (compatible con diffusers y ComfyUI) |
-| Modelo base | waiIllustriousSDXL v17 |
-| Epochs publicados | E1-E7 (E1-E4 tempranos, E5 candidato matricial, E6 recomendado, E7 final) |
-| Tamano del repo | 3,2 GB |
-| Dataset de entrenamiento | abbuibuibui/KyoukaUzen-Dataset, 87 pares, repeats 2 |
+| Formato de pesos | safetensors (librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 con alpha 32 aplicado sobre el checkpoint SDXL waiIllustriousSDXL v17. Se entreno con AdamW en bf16, buckets con limite de 1536 y 7 epochs. El dataset consta de 87 pares de imagenes organizadas en tres categorias de vestuario: Combat_Uniform, White_Blouse y Navy_Sweater, con dos repeticiones por imagen. Las captions se generaron con `keep_tokens = 2`, lo que deja los dos primeros tokens fijos (presumiblemente los tokens de identidad y de vestuario) y permite que el resto del texto actue como modificador.
+El modelo es un adaptador LoRA aplicado sobre un UNet de SDXL. No se modifican los pesos del checkpoint base: el LoRA inyecta matrices de baja descomposición en las capas de atención, con rango 64 y alpha 32, lo que da un factor de escala efectivo de 0,5 antes de aplicar la fuerza de invocación en el prompt. El entrenamiento se realizó sobre waiIllustriousSDXL v17 con 91 pares imagen-texto, 2 repeticiones por par y ejecución en DGX Spark mediante ComfyUI. El dataset está publicado como `abbuibuibui/KyoukaUzen-Dataset`.
 
-El entrenamiento y la evaluacion se realizaron en un NVIDIA DGX Spark con ComfyUI. El autor documenta una evaluacion en tres rondas: la primera criba E1-E7 a intensidad 0,8; la tercera construye una matriz E5-E7 por 10 escenas por 4 intensidades (0,4, 0,6, 0,8 y 1,0). No se documentan tecnicas adicionales como decodificacion especulativa ni atencion lineal, ya que no aplican a un adaptador de difusion.
+El repositorio distribuye siete epochs numerados de forma peculiar: E1 a E4 como `kyouka_uzen-000001` a `000004`, E5 como `000005`, E6 como `000006` y E7 como el fichero sin numerar `kyouka_uzen.safetensors`. No existe un `000007`. La evaluación matricial en dos rondas sobre E5, E6 y E7 concluyó que E6 ofrece el mejor equilibrio entre identidad facial, fidelidad del uniforme de combate y estabilidad en vestuario casual, y es el valor por defecto recomendado a fuerza 0,8. El linaje AutismMix Pony se entrenó sobre AutismMix Pony y se muestra con AutismMix Confetti, con E6 a fuerza 1,0; el linaje MOSS-Image dispone de sus propios pesos. El autor advierte explícitamente de no mezclar pesos, modelos base ni prompts entre linajes.
 
 ## Capacidades
 
-- Generacion de imagenes anime del personaje Kyouka Uzen sobre el checkpoint base waiIllustriousSDXL v17.
-- Control de identidad mediante el token `kyouka_uzen` (pelo negro corto, ojos rojos).
-- Control de vestuario mediante tokens dedicados: `kyouka_uzen_combat_uniform` (uniforme de combate con charreteras doradas, ribete rojo, falda corta y botas a media pantorrilla) y `kyouka_uzen_white_blouse` (variante de blusa blanca).
-- Soporte de composicion multi-turno y multi-escena: retrato frontal, tres cuartos, perfil, cuerpo completo, sentado, fondo simple, escena nocturna compleja.
-- Funciona con prompts en ingles; la documentacion esta disponible en ingles y chino.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video: es exclusivamente un modelo de sintesis de imagen.
+- Generación de imágenes de un personaje concreto con identidad consistente: rostro, pelo lavanda pálido largo, ojos magenta y adornos azules con forma de ala.
+- Control de vestuario mediante tokens dedicados: `aoba_wakura_combat_uniform`, `aoba_wakura_red_turtleneck`, `aoba_wakura_black_turtleneck`, `aoba_wakura_green_tank_top` y `aoba_wakura_white_tank_top`.
+- Transferencia de identidad a encuadres variados: retrato, tres cuartos, perfil, cuerpo completo, sentada y escenas nocturnas con fondo complejo.
+- Composición con el checkpoint base Illustrious para estilos de ilustración anime, screencap y estética de alta resolución.
+- Compatibilidad con el ecosistema diffusers y con ComfyUI mediante el nodo de carga de LoRA.
+- Soporte de prompts en inglés y en chino según la documentación del autor.
+- No dispone de tool calling, razonamiento multi-paso, visión de entrada ni modo thinking: es un adaptador de generación de imagen, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Ilustracion de fan art consistente: usar E6 a 0,8 con el token `kyouka_uzen` para mantener el rostro del personaje entre distintas ilustraciones y encargos, evitando la deriva de identidad que aparece al describir el personaje solo con texto.
-- Generacion de variantes de vestuario: alternar `kyouka_uzen_combat_uniform` y `kyouka_uzen_white_blouse` para producir sets de imagenes del mismo personaje en contextos distintos sin reentrenar.
-- Creacion de hojas de personaje para proyectos derivados: la evaluacion publicada cubre retrato, tres cuartos, perfil y cuerpo completo, lo que permite generar una referencia visual coherente para documentacion o guiones.
-- Prototipado rapido de escenas: combinado con el checkpoint base en ComfyUI, permite iterar sobre composiciones (fondo simple, calle nocturna) con Euler a, 28 pasos, CFG 4,5 y CLIP skip 2 a 832x1216.
-- Pruebas de integracion de LoRA en pipelines de difusion: al ser un adaptador diffusers estandar en safetensors, sirve para validar flujos de carga, pesos y fuerza de adaptador en entornos de investigacion.
-- Comparacion de epochs y fuerzas de LoRA: los siete checkpoints publicados permiten estudiar el efecto del sobreentrenamiento y de la intensidad (0,4-1,0) sobre la fidelidad de identidad y la adherencia al prompt.
+- Ilustración de fan art consistente: el LoRA permite generar variaciones de Kyouka Uzen en distintas poses y escenarios manteniendo el rostro y los rasgos distintivos, gracias a los tokens de identidad y vestuario documentados.
+- Producción de fichas de personaje para proyectos derivados: se puede fijar E6 a 0,8 y generar un conjunto de retrato, tres cuartos y perfil para documentación visual interna.
+- Escenas narrativas seriadas: el control de vestuario por token permite alternar uniforme de combate y ropa casual dentro de una misma secuencia sin perder la identidad del personaje.
+- Pruebas de concepto de estilo anime: sirve como referencia para evaluar la calidad de un checkpoint Illustrious antes de entrenar LoRAs propios, usando el dataset y la configuración publicados como plantilla.
+- Integración en pipelines de ComfyUI: el LoRA se carga como nodo estándar y puede encadenarse con upscalers, ControlNet o IP-Adapter para flujos de ilustración más elaborados.
+- Comparación de linajes de modelo base: al incluir pesos para WAI/Illustrious, AutismMix Pony y MOSS-Image, permite medir cómo un mismo personaje se comporta en tres familias de SDXL distintas, siempre con prompts separados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la informacion disponible. El autor solo publica una evaluacion cualitativa por rondas:
-
-| Ronda | Candidatos | Configuracion | Resultado observado |
-|---|---|---|---|
-| Round 1 | E1-E7 | Intensidad 0,8 | Criba inicial; E5, E6 y E7 pasan a la siguiente ronda |
-| Round 3 | E5, E6, E7 | 10 escenas x 4 intensidades (0,4 / 0,6 / 0,8 / 1,0) | E6 seleccionado como recomendado a 0,8; E5 como alternativo; E7 como alternativo final |
+No se han publicado resultados de benchmarks en la informacion disponible. La evaluación del autor es cualitativa y visual: dos rondas de matriz comparativa sobre E5, E6 y E7 con muestras en ComfyUI (Euler a, 28 pasos, CFG 4,5, CLIP skip 2, 832×1216) y una tabla de decisión que recomienda E6 a 0,8. No hay métricas numéricas como FID, CLIP score ni comparaciones cuantitativas con otros LoRAs.
 
 ## Requisitos de hardware
 
-- VRAM: el LoRA en si ocupa unos 456 MB por checkpoint; el consumo real lo determina el checkpoint base SDXL (tipicamente 6-10 GB en fp16 segun resolucion y lote).
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para SDXL a 832x1216 en fp16; el autor entreno y evaluo en un NVIDIA DGX Spark.
-- Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas (RTX 3060 Ti, 3070, 4060 Ti, 4070, 4080, 4090) con el checkpoint base en fp16 o cuantizado.
-- Opciones de despliegue: ComfyUI (configuracion usada por el autor), Automatic1111/Forge, diffusers con `load_lora_weights`, y cualquier frontend que cargue LoRA en safetensors.
+- VRAM estimada: no disponible de forma explícita. Como LoRA sobre SDXL, el requisito lo marca el checkpoint base; el adaptador añade una sobrecarga pequeña respecto a los pesos del UNet.
+- GPU recomendadas: el autor entrenó en DGX Spark. Para inferencia, cualquier GPU capaz de ejecutar SDXL en ComfyUI; no se documentan modelos concretos.
+- GPU de consumo: no se confirma compatibilidad con tarjetas concretas; al depender de SDXL, la viabilidad en consumer GPU viene determinada por el checkpoint base y la cuantización que se le aplique, no por el LoRA.
+- Despliegue: ComfyUI es el entorno de referencia documentado; la librería declarada es diffusers, por lo que también puede cargarse en pipelines de Python con `load_lora_weights`.
 - Latencia y throughput: no disponibles.
-- Ajustes de referencia del autor: Euler a, 28 pasos, CFG 4,5, CLIP skip 2, 832x1216, sin hires fix ni ADetailer.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| KyoukaUzen-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
-| LoRA de personaje generico en Illustrious | LoRA de personaje | cualquiera de la familia Illustrious | variable | no aplica | variable | Hugging Face, Civitai |
-| Checkpoint SDXL base | modelo completo | SDXL | no disponible | no aplica | openrail / variantes | Hugging Face |
+| Modelo | Tipo | Modelo base | Contexto / resolución | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| KyoukaUzen-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 (+ AutismMix Pony, MOSS-Image) | muestras a 832×1216 | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRAs de personaje de la misma serie (Nei, Tenka, Himari) | LoRA de personaje | familia Illustrious | no disponible | no disponible | mencionados por el autor, sin enlace directo |
+| LoRA de personaje genérico para SDXL | LoRA de personaje | SDXL / Pony / Illustrious | depende del base | variable | ecosistema Civitai y Hugging Face |
 
-No se dispone de datos publicos de rendimiento comparativo frente a otros LoRA del mismo personaje en la informacion proporcionada.
+No se dispone de datos de rendimiento comparables entre estas alternativas; la comparación se limita a tipo de adaptador, modelo base y licencia.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos sobre el personaje y la obra original pertenecen a sus titulares; el autor lo declara explicitamente como fan-made.
-- Licencia creativeml-openrail-m: permite uso comercial con restricciones (clausulas de atribucion, prohibicion de uso ilicito y obligacion de compartir la licencia en derivados); conviene revisar el texto completo antes de explotacion comercial.
-- Fidelidad de vestuario limitada: el autor advierte que la variante `kyouka_uzen_white_blouse` tiende a renderizarse como vestido blanco de verano con sandalias; hay que escribir explicitamente "white blouse" si se necesita una blusa.
-- Color de pelo y ojos a menudo omitidos en las captions: es necesario anadir "short black hair, red eyes" en el prompt para asegurar la identidad.
-- Dependencia estricta del checkpoint base: el LoRA esta entrenado sobre waiIllustriousSDXL v17 y su comportamiento con otros checkpoints SDXL o Illustrious no esta documentado.
-- Riesgo de sobreajuste en epochs altos: el autor recomienda E6 a 0,8 y senala E7 como cercano pero alternativo; intensidades de 1,0 no se recomiendan por defecto.
-- Sin datos de sesgos, tasas de alucinacion visual ni evaluaciones cuantitativas de calidad; la validacion es exclusivamente cualitativa y realizada por el autor.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
+- Riesgo de deriva de identidad: el autor advierte que en vestuario casual el color de ojos se desvía si no se escribe explícitamente `magenta eyes`; los captions de entrenamiento a menudo omiten color de pelo y ojos.
+- Los adornos azules con forma de ala no siempre aparecen; deben escribirse en el prompt si se quieren garantizar.
+- Confusión entre linajes: mezclar los pesos de la raíz (WAI/Illustrious) con los de `autism_pony/` o `moss/`, o usar el prompt de un linaje con el modelo base de otro, produce resultados incorrectos.
+- El token de disparo documentado es `aoba_wakura`, no el nombre del personaje; usar el nombre natural en el prompt no garantiza la identidad.
+- Es un derivado no oficial y fan-made: no cuenta con el respaldo del titular de los derechos de la serie.
+- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso aceptable; conviene revisar las cláusulas antes de desplegarlo en productos.
+- No hay métricas cuantitativas publicadas ni evaluación independiente; la recomendación de E6 a 0,8 proviene del propio autor.
+- El repositorio es grande (7,9 GB) por acumular tres linajes y material de evaluación; la descarga completa no es necesaria si solo se usa un linaje.
+- Idiomas de prompt limitados a inglés y chino en la documentación; no se garantiza comportamiento con prompts en castellano.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/KyoukaUzen-Lora
-- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/KyoukaUzen-Dataset
-- Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/KyoukaUzen-Lora
-- Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/KyoukaUzen-Dataset
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio
+- Hugging Face: https://huggingface.co/abbuibuibui/KyoukaUzen-Lora
+- Dataset: https://huggingface.co/datasets/abbuibuibui/KyoukaUzen-Dataset
+- ModelScope: https://www.modelscope.cn/models/abbuibuibui/AobaWakura-Lora
+- Notas de evaluación en chino: `evaluation/横向测评记录.md` dentro del repositorio
 - README en chino: `README_zh.md` dentro del repositorio

@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - grammarly/gector: Official implementation of the papers ...",
-      "url": "https://github.com/grammarly/gector",
-      "snippet": "transformer_model {bert,distilbert,gpt2,roberta,transformerxl,xlnet,albert} model encoder tn_prob probability of getting sentences with no errors; helps to balance precision/recall pieces_per_token maximum number of subwords per token; helps not to get CUDA out of memory In our experiments we had 98/2 train/dev split."
-    },
-    {
-      "title": "Models – Hugging Face",
-      "url": "https://huggingface.co/models?search=GECToR",
-      "snippet": "Text-to-Video Text-to-Speech Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 46 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 ..."
-    }
-  ]
+  "sources": []
 }

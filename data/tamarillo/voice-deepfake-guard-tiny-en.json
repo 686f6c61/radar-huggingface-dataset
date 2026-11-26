@@ -1,0 +1,90 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/voice-deepfake-guard-tiny-en",
+  "slug": "tamarillo-voice-deepfake-guard-tiny-en",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/voice-deepfake-guard-tiny-en",
+  "created_at": "2026-11-26T02:32:59.000Z",
+  "updated_at": "2026-11-26T02:33:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "audio-deepfake-detection",
+    "anti-spoofing",
+    "voice-security",
+    "agent-forensics",
+    "distilhubert",
+    "transformers.js",
+    "en",
+    "dataset:jungjee/asvspoof5",
+    "dataset:SpeechAntiSpoofingBenchmarks/CD-ADD",
+    "dataset:SpeechAntiSpoofingBenchmarks/CVoiceFake_small",
+    "dataset:edinburghcstr/ami",
+    "dataset:PolyAI/minds14",
+    "dataset:openslr/librispeech_asr",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:quantized:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23689349,
+  "parameters_human": "23.7M",
+  "storage_bytes": 240208126,
+  "storage_human": "240 MB",
+  "context_length": null,
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …"
+    },
+    {
+      "title": "Le Tamarillo ou arbre à tomates - Les Jardins de Mélusine",
+      "url": "https://biodiversitefrance.com/le-tamarillo-arbre-a-tomates/",
+      "snippet": "Le Tamarillo, que l'on nomme aussi Arbre à tomates, est un étonnant petit arbuste qui produit des fruits rouges, au goût acidulé. …"
+    }
+  ]
+}

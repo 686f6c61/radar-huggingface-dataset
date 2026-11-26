@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 246,
+  "downloads_30d": 250,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -58,6 +58,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Financial sentiment classification",
+      "dataset": "Twitter Financial News Sentiment (held-out test, training overlap removed)",
+      "metric": "Clean accuracy",
+      "value": 0.908
+    },
+    {
+      "task": "Financial sentiment classification",
+      "dataset": "Twitter Financial News Sentiment (held-out test, training overlap removed)",
+      "metric": "Clean macro-F1 (3-class)",
+      "value": 0.884
+    }
+  ],
   "sources": []
 }

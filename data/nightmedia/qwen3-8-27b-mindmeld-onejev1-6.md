@@ -2,73 +2,70 @@
 
 ## Resumen
 
-Qwen3.8-27B-MindMeld-OneJev1.6 es un modelo experimental de lenguaje y visión (pipeline `image-text-to-text`) publicado por nightmedia, un laboratorio independiente con sede en Montana (EE. UU.). Se trata de un merge de dos modelos: `nightmedia/Qwen3.8-27B-MindMeld` y `OmniJev/OneJev1.6-27B`, construido con mergekit a partir de una cadena de modelos base que incluye variantes de la familia Qwen3.5 y Qwen3.6 (27B), destilaciones de Claude 4.6, y finetunes comunitarios orientados a razonamiento, escritura creativa y rol. Cuenta con 27.781 millones de parámetros en formato bf16 y pesos safetensors.
+Qwen3.8-27B-MindMeld-OneJev1.6 es un modelo de lenguaje de 27.781 millones de parametros resultado de un merge experimental de pesos (mediante mergekit) que combina nightmedia/Qwen3.8-27B-MindMeld con OmniJev/OneJev1.6-27B, ambos derivados de la familia Qwen 3.5/3.6/3.8. Lo publica el usuario nightmedia en Hugging Face bajo licencia Apache 2.0 y esta disenado explicitamente para generacion creativa, escritura de ficcion, roleplay y debate, no para programacion. El propio autor advierte que el modelo "fallara miserablemente" en tareas de dibujo estructurado (el ejemplo del pelicano en bicicleta) y lo presenta como un experimento de fusion de modelos con "sentido del humor".
 
-El modelo está etiquetado explícitamente por su autor como "experimental" y "no apto para código": la model card advierte que fallará en tareas de dibujo o generación visual estructurada, pero que mantiene capacidad de debate y escritura con "confianza tipo Borg". Su interés principal es como caso de estudio de merging de modelos de razonamiento (chain-of-thought largo, SFT, LoRA) y de cuantización (se publican métricas de perplejidad y throughput para mxfp8, q8, q6, q5, q4, mxfp4 y oQ2e).
+La relevancia de esta ficha es doble: por un lado, documenta un caso tipico de la escena de merges comunitarios de Qwen, donde se combinan decenas de finetunes (Heretic, Fable, Polaris, Cold-Fusion, Tess, entre otros) para obtener perfiles creativos o de roleplay; por otro, incluye metricas de cuantizacion poco habituales (perplejidad, memoria pico y tokens por segundo para mxfp8, q8-hi, q6-hi, q5-hi, q4-hi, mxfp4 y oQ2e-mtp) que permiten evaluar el coste real de despliegue. El modelo declara soporte de contexto de hasta 1M tokens (con 256k como referencia practica) segun los tags del repositorio, aunque no se detalla la configuracion exacta de RoPE en la model card.
 
-La relevancia actual es doble: por un lado, demuestra el ecosistema de merges comunitarios sobre Qwen3.x con contextos anunciados de hasta 1M y 256k tokens; por otro, incluye una tabla comparativa de rendimiento entre el merge y sus componentes, lo que permite evaluar empíricamente el coste del merging en tareas como ARC, BoolQ, HellaSwag, OpenBookQA, PIQA y Winogrande.
+El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales heredadas de los modelos base, si bien la model card no documenta tareas de vision con detalle. El repositorio ocupa 55,6 GB en safetensors (bf16) y acumula 285 descargas y 3 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.x, tag `qwen3_5`/`qwen3_6`), multimodal image-text-to-text |
-| Parametros totales | 27.781.427.952 (27,78B) |
-| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
-| Longitud de contexto | 256k y 1M tokens anunciados en tags (no verificado en model card) |
-| Tipos de cuantizacion | bf16, mxfp8, q8-hi, qx86-hi, q6-hi, q5-hi, qx64-hi, q4-hi, oQ4e-mtp, mxfp4, oQ2e-mtp (metricas publicadas); GGUF anunciado como pendiente |
+| Arquitectura | Transformer decoder-only (familia Qwen 3.5/3.6/3.8); merge de pesos con mergekit |
+| Parametros totales | 27.781.427.952 (~27,8B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | hasta 1M tokens segun tags; 256k como referencia practica declarada; configuracion RoPE no detallada |
+| Tipos de cuantizacion | bf16, mxfp8, q8-hi, q6-hi, q5-hi, q4-hi, mxfp4, oQ4e-mtp, oQ2e-mtp, qx86-hi, qx64-hi (metricas publicadas para varias de ellas) |
 | Idiomas soportados | en, zh, ja, es |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (transformers); GGUF anunciado para una version futura |
+| Formato de pesos | safetensors (bf16); se anuncia disponibilidad futura de GGUF por DavidAU |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un merge (mergekit) de dos checkpoints de 27B de la familia Qwen3.x: `nightmedia/Qwen3.8-27B-MindMeld` y `OmniJev/OneJev1.6-27B`. A su vez, la cadena de modelos participantes incluye `schneewolflabs/B1-27B`, `nbeerbower/Wichtel-Qwen3.6-27B`, `trohrbaugh/Qwen3.8-27B-heretic-ara`, `DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1`, `DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0`, `migtissera/Tess-4-27B`, `nbeerbower/CHUD-Qwen3.6-27B`, `nbeerbower/Elster-Qwen3.6-27B`, `MooreThreads/MusaCoder-27B`, `DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT`, `DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking`, `armand0e/Qwen3.6-27B-Fable-5-Experimental`, `DavidAU/Qwen3.5-27B-Polar-Rev1-Uncensored-Heretic`, `DavidAU/Qwen3.6-27B-F451-AND-TRI-Polar-Ultra-Pro-Writer-Uncensored-Heretic`, `nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B` y `nightmedia/Qwen3.6-27B-Architect-Polaris-Fable-F451`.
+El modelo es un merge de pesos, no un entrenamiento desde cero: segun la model card, combina nightmedia/Qwen3.8-27B-MindMeld y OmniJev/OneJev1.6-27B mediante mergekit, y en la lista de modelos participantes figuran al menos 18 finetunes y merges de la familia Qwen 3.5/3.6/3.8, entre ellos nbeerbower/Wichtel-Qwen3.6-27B, schneewolflabs/B1-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, migtissera/Tess-4-27B, nbeerbower/CHUD-Qwen3.6-27B, nbeerbower/Elster-Qwen3.6-27B, MooreThreads/MusaCoder-27B, DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT y armand0e/Qwen3.6-27B-Fable-5-Experimental, entre otros. Los tags incluyen sft, lora, distillation y claude-distillation, lo que indica que parte del linaje incorpora datos de destilacion y ajuste supervisado, aunque no se especifica el volumen de tokens ni la composicion del dataset en la informacion disponible.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO en este merge concreto. Los tags indican que los componentes han pasado por SFT, LoRA y destilación de Claude 4.6, además de técnicas de razonamiento con chain-of-thought largo. La innovación técnica destacable es la propia metodología de merging multi-fuente y la publicación de métricas de cuantización (perplejidad, memoria pico y tokens/s) para distintos esquemas, incluyendo formatos de 2 y 4 bits con decodificación especulativa (oQ2e-mtp, oQ4e-mtp).
+La model card no detalla la arquitectura interna (numero de capas, dimension oculta, cabezas de atencion, tipo de atencion) ni innovaciones como decodificacion especulativa o atencion lineal; solo se infiere la familia Qwen por los tags qwen3_5, qwen3_6 y Qwen3.6. El pipeline image-text-to-text sugiere un componente visual heredado, pero no se documenta su configuracion. Las metricas "brainwaves" publicadas (arc, arc/e, boolq, hswag, obkqa, piqa, wino) corresponden a evaluaciones del merge y de sus componentes, no a un proceso de entrenamiento descrito.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés, chino, japonés y español.
-- Razonamiento con chain-of-thought largo (long-cot) y modo "thinking" heredado de los componentes destilados de Claude 4.6.
-- Escritura creativa y de ficción: generación de tramas, subtramas, continuación de escenas, prosa vívida y roleplaying (tags explícitos `creative writing`, `fiction`, `roleplaying`).
-- Capacidad multimodal image-text-to-text (pipeline declarado), aunque la model card advierte que el rendimiento en tareas visuales estructuradas es deficiente.
-- Matemáticas y STEM (tags `math`, `stem`).
-- Soporte de tool calling / function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente; el long-cot sugiere capacidad de razonamiento extendido, pero sin garantías de uso agéntico.
-- Capacidad multilingüe limitada a los cuatro idiomas declarados.
-- No apto para generación de código según el propio autor.
+- Generacion de texto conversacional multi-turno en ingles, chino, japones y espanol.
+- Escritura creativa y de ficcion: generacion de tramas, subtramas, escenas, continuacion de escenas, narrativa de genero (incluida ciencia ficcion) y "prosa vivida" segun los tags del autor.
+- Roleplay y debate: el autor lo presenta como un modelo con "confianza tipo Borg" para discutir cualquier tema.
+- Razonamiento con cadena de pensamiento larga (long-cot, thinking mode), evidenciado por las evaluaciones oMLX que ejecutan con "Think: Yes".
+- Matematicas y STEM: los resultados de GSM8K (97,3%), MATHQA (91,1%) y ARC_CHALLENGE (97,9%) en la variante oQ6e-mtp indican capacidad matematica y de razonamiento notables.
+- Codigo: a pesar de la advertencia del autor de que "no es para programar", las metricas reportadas de HUMANEVAL (93,3%), MBPP (93,0%) y LIVECODEBENCH (83,0%) son altas; conviene tratar estas cifras con cautela por el caracter experimental del merge.
+- Capacidades multimodales (image-text-to-text) declaradas por el pipeline, sin documentacion adicional.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el modo thinking sugiere cierta capacidad de razonamiento extendido.
 
 ## Casos de uso
 
-- Escritura creativa y narrativa: generación de relatos de ficción, tramas y subtramas con prosa elaborada, aprovechando los componentes especializados en ficción y el estilo "vívido" que el autor destaca en los tags.
-- Roleplaying y personajes conversacionales: el modelo mantiene diálogos multi-turno con consistencia de personaje, como demuestra el ejemplo de la model card con Q y Caesar; útil para prototipos de NPCs o chatbots de entretenimiento.
-- Debate y exploración de ideas: la model card indica que "debate cualquier tema con espíritu y confianza", lo que lo hace adecuado para lluvia de ideas, generación de contraargumentos y exploración socrática de temas abiertos.
-- Razonamiento matemático y STEM en inglés y chino: los tags `math` y `stem` junto con el long-cot permiten abordar problemas que requieren cadenas de razonamiento largas, aunque sin benchmarks específicos publicados.
-- Experimentación en investigación sobre merging: al publicar métricas comparativas entre el merge y sus componentes, sirve como caso de estudio reproducible para investigar el efecto del merging en tareas de razonamiento (ARC, BoolQ, HellaSwag, etc.).
-- Evaluación de cuantizaciones en hardware de consumo: las tablas de perplejidad, memoria pico y tokens/s para mxfp4, q4-hi y oQ2e-mtp permiten seleccionar el esquema adecuado para MacBook Pro de 128 GB o GPUs con 24 GB de VRAM.
-- Asistencia multilingüe en entornos hispanohablantes: con soporte declarado de español, puede emplearse en generación de contenido y conversación, aunque sin benchmarks específicos en ese idioma.
+- Escritura de ficcion y narrativa larga: el modelo esta disenado para generar tramas, subtramas y continuaciones de escena; su contexto declarado de hasta 1M tokens (256k practicos) permite mantener coherencia en novelas o sagas con muchos personajes y arcos argumentales.
+- Roleplay y compania conversacional: los tags de roleplaying y conversational, junto con el tono de la model card, lo orientan a personajes persistentes en chats multi-turno; el contexto largo ayuda a recordar la ficha del personaje y el historial.
+- Debate y exploracion de ideas: el autor lo describe como capaz de debatir cualquier tema con confianza; util para lluvia de ideas, generacion de contraargumentos o simulacion de discusiones socraticas.
+- Asistencia creativa en videojuegos y narrativa interactiva: generacion de dialogos de PNJ, descripciones de escenas y ramificaciones de guion, aprovechando el soporte multilingue (en, zh, ja, es).
+- Analisis y resumen de documentos largos en espanol, chino o japones: la ventana de contexto extendida permite procesar informes o transcriptos extensos, aunque la calidad en estos idiomas no esta validada por benchmarks publicados.
+- Prototipado de asistentes multilingues: con licencia Apache 2.0 y pesos safetensors, se puede desplegar en entornos de investigacion para comparar merges comunitarios frente a modelos base.
+- Evaluacion de estrategias de cuantizacion: las metricas publicadas de perplejidad, memoria pico y tokens/s por cuantizacion lo convierten en un caso practico para estudiar el compromiso precision/rendimiento en GPUs de consumo.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card (formato `brainwaves`). Se comparan el merge final, su componente MindMeld y OneJev1.6 en tareas de razonamiento y comprensión.
+Resultados oMLX publicados en la model card para la variante Qwen3.8-27B-MindMeld-OneJev1.6-oQ6e-mtp (con modo thinking activado):
 
-| Modelo / cuantización | ARC | ARC/e | BoolQ | HellaSwag | OpenBookQA | PIQA | Winogrande |
-|---|---|---|---|---|---|---|---|
-| Merge bf16 | 0,747 | 0,901 | 0,915 | no disp. | no disp. | no disp. | no disp. |
-| Merge mxfp8 | 0,744 | 0,902 | 0,915 | 0,841 | 0,534 | 0,837 | 0,801 |
-| Merge q8-hi | 0,747 | 0,902 | 0,915 | 0,841 | 0,530 | 0,832 | 0,801 |
-| Merge q6-hi | 0,748 | 0,899 | 0,916 | 0,840 | 0,534 | 0,835 | 0,797 |
-| Merge q5-hi | 0,744 | 0,899 | 0,915 | 0,840 | 0,542 | 0,836 | 0,795 |
-| Merge q4-hi | 0,747 | 0,903 | 0,916 | 0,844 | 0,538 | 0,838 | 0,803 |
-| Merge mxfp4 | 0,742 | 0,897 | 0,911 | 0,831 | 0,524 | 0,832 | 0,804 |
-| Merge oQ2e-mtp | 0,727 | 0,890 | 0,912 | no disp. | no disp. | no disp. | no disp. |
-| MindMeld bf16 | 0,742 | 0,897 | 0,913 | 0,840 | 0,514 | 0,834 | 0,791 |
-| OneJev1.6 mxfp8 | 0,726 | 0,881 | 0,916 | no disp. | no disp. | no disp. | no disp. |
+| Benchmark | Precision | Correctas / total | Tiempo (s) | Notas |
+|---|---|---|---|---|
+| ARC_CHALLENGE | 97,9% | 1147 / 1172 | 4371,8 | Thinking activado |
+| TRUTHFULQA | 90,7% | 741 / 817 | 3250,6 | 90,9% sobre respuestas finalizadas (n=815) |
+| GSM8K | 97,3% | 1283 / 1319 | 10191,2 | 97,4% sobre respuestas finalizadas (n=1317) |
+| MATHQA | 91,1% | 2719 / 2985 | 28946,1 | 93,0% sobre respuestas finalizadas (n=2902) |
+| HUMANEVAL | 93,3% | 153 / 164 | 1934,4 | 93,8% sobre respuestas finalizadas (n=162) |
+| MBPP | 93,0% | 465 / 500 | 8777,4 | 96,7% sobre respuestas finalizadas (n=481) |
+| LIVECODEBENCH | 83,0% | 875 / 1054 | 91215,7 | 94,5% sobre respuestas finalizadas (n=917) |
 
-Métricas de eficiencia (perplejidad, memoria pico y throughput):
+Metricas de cuantizacion (perplejidad, memoria pico y throughput):
 
-| Cuantización | Perplejidad | Memoria pico | Tokens/s |
+| Cuantizacion | Perplejidad | Memoria pico | Tokens/s |
 |---|---|---|---|
 | mxfp8 | 3,791 ± 0,023 | 34,74 GB | 211 |
 | q8-hi | 3,779 ± 0,023 | 37,26 GB | 204 |
@@ -79,46 +76,46 @@ Métricas de eficiencia (perplejidad, memoria pico y throughput):
 | mxfp4 | 3,857 ± 0,024 | 21,30 GB | 211 |
 | oQ2e-mtp | 3,899 ± 0,024 | 17,50 GB | 216 |
 
-Referencia de los componentes: MindMeld en bf16 alcanza 3,693 ± 0,022 de perplejidad con 60,75 GB de memoria y 235 tokens/s; OneJev1.6 en mxfp8 registra 5,403 ± 0,035 de perplejidad con 34,74 GB y 207 tokens/s. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
+Evaluaciones "brainwaves" del merge completo (arc, arc/e, boolq, hswag, obkqa, piqa, wino) por cuantizacion, con bf16 como referencia: 0,747 / 0,901 / 0,915 en las tres primeras columnas; mxfp4 baja a 0,831 en hswag y 0,524 en obkqa; oQ2e-mtp cae a 0,727 en arc. No se han publicado comparaciones con otros modelos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 60,75 GB de memoria pico (dato de MindMeld, componente con mismo tamaño); el merge completo en bf16 requiere del orden de 55,6 GB de pesos más overhead de activaciones.
-- VRAM estimada en cuantizaciones: 34,74 GB (mxfp8), 37,26 GB (q8-hi), 30,54 GB (q6-hi), 27,18 GB (q5-hi), 23,82 GB (q4-hi), 23,18 GB (oQ4e-mtp), 21,30 GB (mxfp4), 17,50 GB (oQ2e-mtp).
-- GPUs recomendadas: A100 80 GB o H100 para bf16; A100 40 GB / RTX 6000 Ada / L40S para mxfp8 y q8-hi; GPUs de 24 GB (RTX 4090, RTX 3090) para q4-hi, oQ4e-mtp y mxfp4.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 (24 GB) con q4-hi, oQ4e-mtp o mxfp4; en GPUs de 16 GB no cabe en cuantizaciones publicadas (el mínimo es 17,50 GB en oQ2e-mtp).
-- Despliegue: transformers (librería declarada), con soporte MLX mencionado en tags (el autor prueba en MacBook Pro de 128 GB con q6-hi-mlx); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible. El GGUF está anunciado como pendiente bajo el nombre `DavidAU/Qwen3.8-27B-Jumbo-Fusion-...-GGUF`.
-- Throughput: 199-216 tokens/s en las cuantizaciones medidas (rango estrecho, sin penalización severa por bajar a 2 bits); bf16 del componente MindMeld alcanza 235 tokens/s.
+- VRAM estimada: entre 17,5 GB (oQ2e-mtp) y 37,3 GB (q8-hi) segun las metricas publicadas; en bf16 el repositorio pesa 55,6 GB, por lo que requiere al menos 64 GB de VRAM o descarga por capas.
+- GPU recomendadas: A100 80 GB o H100 para bf16 y contextos largos; RTX 4090 (24 GB) puede ejecutar q4-hi, oQ4e-mtp, mxfp4 y oQ2e-mtp con memoria pico de 17-24 GB, aunque el contexto util se vera limitado por la cache KV.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones de 4 bits o inferiores; en GPUs de 16 GB solo oQ2e-mtp con margen ajustado.
+- Opciones de despliegue: transformers (libreria declarada); el autor menciona variantes MLX (tag mlx) y anuncia GGUF futuros de DavidAU; vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible.
+- Latencia y throughput: 199-216 tokens/s en las pruebas oMLX publicadas, con variacion minima entre cuantizaciones; los tiempos de benchmark completos (por ejemplo, 91.215 s para LiveCodeBench) reflejan el coste del modo thinking en tareas largas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen3.8-27B-MindMeld-OneJev1.6 | 27,78B | 256k/1M (anunciado) | apache-2.0 | Merge experimental multimodal; perplejidad 3,71-3,90 según cuantización |
-| nightmedia/Qwen3.8-27B-MindMeld (componente) | ~27B | no disponible | apache-2.0 (presumible) | Mejor perplejidad bf16 (3,693) y mayor throughput (235 tok/s) que el merge |
-| OmniJev/OneJev1.6-27B (componente) | ~27B | no disponible | no disponible | Perplejidad mxfp8 de 5,403, notablemente peor que el merge |
-| schneewolflabs/B1-27B (base) | ~27B | no disponible | no disponible | Modelo base de la cadena de merging; sin métricas publicadas en esta ficha |
+| Qwen3.8-27B-MindMeld-OneJev1.6 | ~27,8B | hasta 1M (256k practico) | Apache 2.0 | Merge experimental orientado a creatividad y roleplay |
+| nightmedia/Qwen3.8-27B-MindMeld | no disponible | no disponible | Apache 2.0 (heredada) | Componente principal del merge; metricas brainwaves ligeramente inferiores en obkqa |
+| OmniJev/OneJev1.6-27B | no disponible | no disponible | no disponible | Componente base del merge |
+| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 | ~27B (familia Qwen) | no disponible | no disponible | Participante en el merge; orientado a escritura |
 
-La comparativa con modelos de la misma categoría fuera del ecosistema de merging (por ejemplo, Qwen3 oficial de 27B o Mistral de tamaño similar) no está disponible en la información proporcionada.
+No se dispone de comparaciones de rendimiento frente a modelos no pertenecientes a la familia en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo explícitamente experimental: el autor lo describe como un experimento de merging y advierte que "no es para código" y que fallará en tareas visuales estructuradas (ejemplo del pelícano en bicicleta).
-- Riesgo de alucinación: el propio autor menciona "confianza tipo Borg", lo que sugiere respuestas asertivas sin garantía de veracidad; no hay evaluaciones de factualidad publicadas.
-- Rendimiento en benchmarks modesto: ARC ~0,74, HellaSwag ~0,84, OpenBookQA ~0,53; por debajo de lo esperable en modelos frontera de 27B, coherente con su naturaleza de merge creativo.
-- Contexto anunciado (256k/1M) no verificado: los tags incluyen "1M context" y "256k context", pero la model card no documenta pruebas de recuperación en contextos largos.
-- Idiomas limitados a en, zh, ja y es; sin benchmarks por idioma.
-- Licencia apache-2.0 permite uso comercial, pero los componentes de la cadena de merging tienen licencias no verificadas en esta ficha; conviene auditar cada modelo base antes de producción.
-- Sin soporte confirmado de tool calling, function calling ni frameworks de agentes; no recomendado para pipelines agénticos sin validación previa.
-- Repositorio de 55,6 GB y solo 63 descargas y 2 likes en el momento de la consulta: comunidad pequeña, sin garantías de mantenimiento.
-- El GGUF prometido aún no está disponible en este repositorio; para despliegue en llama.cpp/Ollama habría que esperar a su publicación o convertirlo.
+- El autor declara explicitamente que el modelo "no es para codigo" pese a las metricas altas de HumanEval y MBPP; las cifras deben interpretarse con cautela por el caracter experimental del merge.
+- Riesgo de alucinacion: no se han publicado evaluaciones de factualidad mas alla de TruthfulQA (90,7%), insuficientes para garantizar precision en produccion.
+- El modelo se presenta con "confianza tipo Borg", lo que puede traducirse en respuestas asertivas aunque incorrectas.
+- Contexto: aunque los tags declaran 1M tokens, no se documenta la configuracion de RoPE ni la degradacion de calidad a contextos muy largos; 256k se cita como referencia practica.
+- Idiomas: solo en, zh, ja y es estan declarados; no hay benchmarks por idioma que validen la calidad en espanol, japones o chino.
+- Licencia Apache 2.0 permite uso comercial, pero los modelos base y participantes pueden tener terminos adicionales no verificados en esta ficha.
+- Modelo experimental sin garantias de estabilidad; los merges comunitarios pueden presentar comportamientos degenerados en tareas fuera de su dominio creativo.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados.
+- El repositorio incluye tags de contenido sin censura (heretic, uncensored) en los modelos participantes; revisar politicas de contenido antes de desplegar en entornos con moderacion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6
 - Modelo componente: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
 - Modelo componente: https://huggingface.co/OmniJev/OneJev1.6-27B
-- Modelo base: https://huggingface.co/schneewolflabs/B1-27B
 - GGUF anunciado: https://huggingface.co/DavidAU/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
-- Componentes adicionales de la cadena de merging: nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, migtissera/Tess-4-27B, nbeerbower/CHUD-Qwen3.6-27B, nbeerbower/Elster-Qwen3.6-27B, MooreThreads/MusaCoder-27B, DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT, DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking, armand0e/Qwen3.6-27B-Fable-5-Experimental, DavidAU/Qwen3.5-27B-Polar-Rev1-Uncensored-Heretic, DavidAU/Qwen3.6-27B-F451-AND-TRI-Polar-Ultra-Pro-Writer-Uncensored-Heretic, nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B, nightmedia/Qwen3.6-27B-Architect-Polaris-Fable-F451
-- Paper, blog o demo oficial: no disponible en la información proporcionada.
+- Modelo base: https://huggingface.co/schneewolflabs/B1-27B
+- Modelo base: https://huggingface.co/nightmedia/Qwen3.6-27B-Seven
+- Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
+- Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

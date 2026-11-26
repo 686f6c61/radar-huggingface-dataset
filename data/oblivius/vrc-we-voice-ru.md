@@ -2,115 +2,105 @@
 
 ## Resumen
 
-vrc-we-voice-ru es un modelo de detección de palabras clave (keyword spotting) para ruso, desarrollado por el usuario oblivius como parte del proyecto vrc-WiredExpressions. Se construye mediante fine-tuning del modelo jonatasgrosman/wav2vec2-large-xlsr-53-russian, podado de sus 24 capas originales a las 16 inferiores, y entrenado con CTC sobre letras. El resultado se distribuye en formato ONNX con cuantización dinámica int8 de las MatMul, lo que reduce el peso a 254 MB.
+vrc-we-voice-ru es un modelo de deteccion de palabras clave (keyword spotting) para ruso, desarrollado por el usuario oblivius como parte del proyecto vrc-WiredExpressions. Se construye sobre jonatasgrosman/wav2vec2-large-xlsr-53-russian (Apache 2.0), podado a sus 16 capas inferiores de 24, y anade una segunda cabeza de fonemas sobre el mismo codificador, de modo que el modelo transcribe tanto grafemas como fonemas IPA en una unica pasada. Su proposito no es la transcripcion general, sino disparar frases predefinidas con alta precision y bajo indice de falsos positivos, fusionando las puntuaciones de ambas cabezas.
 
-El modelo no está pensado para transcripción general, sino para disparar expresiones registradas (frases o palabras) en audio continuo, con un umbral de activación de -0,6. Incorpora una tabla de pronunciación (pron.tsv) con 21.559 palabras que permite reconocer una frase por su sonido y no solo por su grafía, mejorando la detección de homófonos y variantes ortográficas.
+La arquitectura es un transformer wav2vec2 con CTC, con marcos de 20 ms, salida de 39 simbolos para letras y 49 para fonemas (47 IPA mas blank y frontera de palabra). Se distribuye como ONNX con cuantizacion dinamica int8 (254 MB), lo que lo hace desplegable en CPU y en dispositivos de borde sin GPU. El repositorio ocupa 1,0 GB e incluye artefactos auxiliares como un lexico de 96.460 palabras y una tabla de pronunciaciones de 21.559 palabras.
 
-Su relevancia radica en el despliegue ligero: el archivo enc.onnx permite reutilizar el codificador convolucional congelado entre distintos idiomas del mismo proyecto, ejecutándolo una sola vez por ventana de audio en clientes multilingües. La licencia Apache 2.0 facilita su integración comercial.
+Su relevancia actual radica en el enfoque de dos cabezas: el modelo puede reconocer una frase tanto por su grafia como por su sonido, lo que mejora la robustez ante homofonos y variantes ortograficas (del 32 al 59 por ciento y del 34 al 53 por ciento respectivamente, segun la model card) sin incrementar el coste computacional, ya que la cabeza de fonemas es una sola capa lineal sobre el mismo codificador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2 con cabeza CTC (transformer, 16 capas) |
+| Arquitectura | Wav2Vec2 (transformer) con CTC, dos cabezas (letras y fonemas) sobre un codificador compartido, podado a 16 capas |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventanas de audio de 0,5 a 15 s en entrenamiento) |
-| Tipos de cuantizacion | int8 dinámica (ONNX) |
+| Longitud de contexto | no disponible (marcos de 20 ms; ventana de audio no especificada) |
+| Tipos de cuantizacion | int8 dinamica (MatMuls) en ONNX |
 | Idiomas soportados | ruso (ru) |
-| Licencia | Apache 2.0 (pron.tsv: CC BY 4.0) |
-| Formato de pesos | ONNX (model.onnx, enc.onnx) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (model.onnx, enc.onnx, fx.onnx); vocabularios en JSON |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de jonatasgrosman/wav2vec2-large-xlsr-53-russian, un wav2vec2 large XLSR-53 afinado para ruso. Se poda a las 16 capas inferiores de las 24 originales y se afina con CTC sobre letras, con marcos de 20 ms. La salida de logits tiene 39 clases: `<pad>` (0) actúa como blank CTC y `|` como frontera de palabra. El codificador convolucional de características queda congelado tras el fine-tuning, lo que permite compartirlo entre los modelos vrc-we-voice de distintos idiomas.
+El modelo parte de jonatasgrosman/wav2vec2-large-xlsr-53-russian, afinado previamente con CTC sobre letras y podado a las 16 capas inferiores de 24. Sobre esa base se anade una cabeza de fonemas (una capa lineal) y se continua el entrenamiento en dos etapas de 10.000 pasos cada una, entrenando conjuntamente codificador, cabeza de letras y cabeza de fonemas. El codificador convolucional de caracteristicas queda congelado tras el afinado, lo que permite reutilizarlo entre los modelos de la familia vrc-we-voice: fx.onnx y enc.onnx son cortes de model.onnx en ese punto, de modo que un cliente multilingue ejecuta el extractor una sola vez por ventana de audio.
 
-El entrenamiento combina cinco corpus: Common Voice 19.0 (39.918 enunciados, CC0 1.0), Multilingual Spoken Words Corpus (119.454, CC BY 4.0), FLEURS train (2.062, CC BY 4.0), Russian LibriSpeech SLR96 (57.224, dominio público) y SOVA RuDevices y RuDevices Audiobooks (296.388, CC BY 4.0). Se añade ruido MUSAN en la mitad de los enunciados a 5-20 dB SNR, más un 5% de muestras solo de ruido con objetivo vacío. Se usó AdamW con 10% de warm-up y decaimiento lineal, lotes de 40 s de audio con 2 acumulaciones por paso, y se entrenaron todas las capas y la cabeza. La etapa final consta de 15.000 pasos a 3e-5; una continuación de 6.000 pasos a 1,5e-5 fue rechazada por un balance neto de -8,2 puntos.
+Los datos de entrenamiento suman 514.049 enunciados: Common Voice 19.0 (39.918, CC0), Multilingual Spoken Words Corpus (119.454, CC BY 4.0), FLEURS train (2.062, CC BY 4.0), Russian LibriSpeech SLR96 (57.224, dominio publico) y SOVA RuDevices y RuDevices Audiobooks (296.391, CC BY 4.0). Las etiquetas de fonemas se generan con CharsiuG2P (MIT, entrenado sobre pronunciaciones WikiPron de Wiktionary, CC BY-SA) a traves de lexicon.tsv; 465.036 enunciados disponen de etiqueta fonetica y el resto solo entrena la cabeza de letras. Se incorpora ruido y salas de MUSAN (CC BY 4.0).
 
-La tabla pron.tsv se genera con CharsiuG2P (IPA sin estrés) y un transformer de caracteres (3+3 capas, anchura 256) entrenado de sonido a grafía con beam 8, excluyendo los conjuntos de evaluación.
+La innovacion principal es la fusion de cabezas descrita en voice.json: cada cabeza aporta su mejor puntuacion en los ultimos 0,6 s; si ambas detectan la frase, la puntuacion fusionada pondera 0,7 la de letras y 0,3 la de fonemas; si solo una la detecta, se resta 0,4. El umbral de disparo es -0,653 para una palabra y -0,6 para varias, calibrado para igualar los falsos positivos de la version anterior. Las frases con palabras ausentes del lexico o de menos de cinco letras se deciden solo por la cabeza de letras.
 
 ## Capacidades
 
-- Detección de palabras clave y frases registradas en audio continuo en ruso, con disparo por umbral (-0,6).
-- Reconocimiento por sonido además de por grafía: homófonos y variantes ortográficas se agrupan bajo la misma expresión registrada.
-- Reconocimiento de voz CTC sobre letras (salida de 39 clases), útil como base para transcripción ligera.
-- Procesamiento de ventanas de audio de 0,5 a 15 s, con entrada de 16 kHz mono normalizada (media cero, varianza unitaria).
-- Reutilización del codificador convolucional (fx.onnx) entre idiomas del proyecto vrc-we-voice.
-- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo puramente acústico.
-- Capacidad multilingüe limitada: solo ruso; el multilingüismo se logra combinando modelos separados del proyecto.
+- Deteccion de palabras clave y frases cortas en ruso, con salida de logits por marco para letras y fonemas.
+- Reconocimiento de voz CTC a nivel de caracter (39 simbolos, blank y frontera de palabra).
+- Reconocimiento fonetico IPA (47 fonemas, blank y frontera de palabra).
+- Fusion de puntuaciones entre cabezas para decidir el disparo de una frase, con umbrales configurables.
+- Reconocimiento por sonido ademas de por grafia, mediante pron.tsv (21.559 palabras, 1.505 variantes ortograficas).
+- Ejecucion en CPU y dispositivos de borde gracias a la cuantizacion int8 (254 MB).
+- Reutilizacion del extractor convolucional (fx.onnx) entre modelos de la familia para clientes multilingues.
+- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo acustico de keyword spotting.
 
 ## Casos de uso
 
-- Activación por voz en aplicaciones de escritorio: registrar frases de comando ("abrir configuración", "nuevo documento") y dispararlas en audio continuo con el modelo int8 de 254 MB, adecuado para ejecución en CPU sin GPU dedicada.
-- Asistentes de voz de bajo consumo: el tamaño reducido y la cuantización int8 permiten integrar el modelo en dispositivos con recursos limitados, usando enc.onnx para reutilizar el codificador si se despliegan varios idiomas.
-- Subtitulado o indexación de archivos de audio en ruso: el modelo CTC sobre letras puede producir transcripciones aproximadas para búsqueda y etiquetado, aunque su objetivo principal es el keyword spotting.
-- Filtrado de audio en pipelines de datos: detectar la presencia de términos concretos en grabaciones largas (por ejemplo, nombres de productos o palabras de seguridad) antes de pasarlas a un ASR completo, reduciendo coste computacional.
-- Sistemas de accesibilidad: comandos por voz para usuarios con movilidad reducida, con detección robusta en entornos ruidosos (96,2% de aciertos a 10 dB SNR en frases).
-- Control de dispositivos en el hogar: registrar palabras de activación en ruso y disparar acciones locales; la baja tasa de falsos positivos en no-voz (0,03 por frase-hora) reduce activaciones accidentales por música o ruidos vocales.
-- Investigación en keyword spotting: servir como referencia reproducible (Apache 2.0) para comparar estrategias de poda, cuantización y tablas de pronunciación en ruso.
+- Activacion por voz en asistentes embebidos: el modelo dispara frases de activacion en ruso con umbrales calibrados para minimizar falsos positivos, y su tamano int8 (254 MB) permite ejecutarlo en un Raspberry Pi o un movil sin GPU.
+- Control por voz en dispositivos del hogar: frases como encender una luz o ajustar temperatura se registran como palabras clave y se evaluan cada 20 ms, con la fusion de cabezas reduciendo disparos espurios por ruido de fondo.
+- Filtrado de audio en pipelines de transcripcion: se usa como primera etapa para detectar segmentos relevantes antes de invocar un ASR completo, ahorrando coste computacional en horas de grabacion.
+- Busqueda por voz en archivos de audio: la tabla de pronunciaciones permite localizar una palabra por su sonido aunque el hablante la pronuncie con variantes ortograficas, util en catalogos de podcast o archivos de radio.
+- Accesibilidad y comandos para personas con diccion movil: la deteccion por fonemas tolera articulaciones imperfectas que la grafia estandar no cubriria.
+- Monitorizacion de palabras clave en centros de llamadas: el modelo puede marcar en tiempo real la aparicion de terminos sensibles o de cumplimiento en conversaciones en ruso.
+- Investigacion en fonetica computacional: las dos cabezas permiten comparar la alineacion grafema-fonema sobre el mismo codificador, con salidas por marco exportables en ONNX.
 
 ## Benchmarks y rendimiento
 
-Evaluación local de keyword spotting del autor, no un benchmark estándar. Base comparativa: facebook/wav2vec2-xlsr-53-espeak-cv-ft, ambos en int8 con su propio umbral.
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros). Si incluye metricas internas de evaluacion del keyword spotting:
 
-| Aciertos % / falsos positivos por hora | wav2vec2-xlsr-53-espeak-cv-ft (base) | vrc-we-voice-ru |
+| Metrica (conjuntos de palabras limpios) | Sin tabla de pronunciacion | Con tabla |
 |---|---|---|
-| Frases | 78,8 / 0,22 | 97,1 / 0,22 |
-| Frases con ruido | 77,9 / 0,07 | 96,2 / 0,22 |
-| Palabras | 35,8 / 0,81 | 85,8 / 0,00 |
-| Palabras con ruido | 30,0 / 0,65 | 83,2 / 0,00 |
-| Aglomerado | 51,0 / 0,41 | 89,8 / 0,15 |
-| No-voz | — / 1,47 | — / 0,03 |
+| Homofonos reconocidos como otro miembro del grupo, % | 32 | 59 |
+| Variantes ortograficas reconocidas como otro miembro, % | 34 | 53 |
+| Falsos disparos por frase-hora en los conjuntos de palabras | 0,17 | 0,17 |
 
-Efecto de la tabla de pronunciación en conjuntos de palabras locales limpias:
-
-| Métrica | Sin tabla | Con tabla |
-|---|---|---|
-| Homófonos oídos como otro miembro del grupo, % | 32 | 59 |
-| Variantes ortográficas oídas como otro miembro, % | 34 | 53 |
-| Falsos positivos por frase-hora en los conjuntos de palabras | 0,17 | 0,17 |
+La model card indica que las frases y palabras de la evaluacion de la version anterior permanecen sin cambios, y que el umbral de varias palabras se endurecio a -0,6, donde los flujos de no-habla disparan una vez (frente a 105 de la version anterior) sin coste medido en aciertos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo model.onnx int8 pesa 254 MB; la inferencia cabe holgadamente en menos de 1 GB de memoria, incluido el estado de activaciones para ventanas cortas.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; también funciona en CPU. Para lotes grandes o baja latencia, una RTX 3060 o superior es suficiente; A100/H100 no son necesarias.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650, RTX 3050, RTX 4090, etc.) e incluso en CPU.
-- Opciones de despliegue: ONNX Runtime (CPU o GPU), con los archivos model.onnx o la pareja fx.onnx + enc.onnx. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible con precision; el modelo int8 ocupa 254 MB en disco y puede ejecutarse en CPU.
+- GPU recomendadas: no requiere GPU; cualquier GPU con soporte ONNX Runtime (RTX 4090, A100, H100) acelera la inferencia pero no es necesaria.
+- Cabe en GPU de consumo: si, en cualquier GPU consumer con al menos 1 GB de memoria libre; tambien en CPU y dispositivos de borde.
+- Opciones de despliegue: ONNX Runtime (CPU o GPU), integracion directa en aplicaciones C++/Python via la API de ONNX; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / ventana | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idioma | Licencia | Formato |
 |---|---|---|---|---|---|
-| vrc-we-voice-ru | no disponible (16 capas, int8 254 MB) | audio 0,5-15 s | keyword spotting ruso, CTC letras | Apache 2.0 | Hugging Face (ONNX) |
-| jonatasgrosman/wav2vec2-large-xlsr-53-russian | wav2vec2 large (24 capas) | audio variable | ASR ruso | Apache 2.0 | Hugging Face |
-| facebook/wav2vec2-xlsr-53-espeak-cv-ft | wav2vec2 large | audio variable | ASR multilingüe con fonemas | Apache 2.0 | Hugging Face |
+| oblivius/vrc-we-voice-ru | no disponible (16 capas, podado) | no disponible | ruso | Apache 2.0 | ONNX int8 |
+| jonatasgrosman/wav2vec2-large-xlsr-53-russian | no disponible (24 capas) | no disponible | ruso | Apache 2.0 | safetensors |
+| oblivius/vrc-we-voice-en | no disponible | no disponible | ingles | no disponible | ONNX |
 
-La comparación directa con modelos de ASR no es del todo equivalente: vrc-we-voice-ru está especializado en detección de expresiones, no en transcripción completa. Frente a su modelo base, reduce capas (24 a 16) y tamaño (int8), a costa de una salida restringida a 39 clases CTC.
+El modelo base de jonatasgrosman es un ASR general de ruso, mientras que vrc-we-voice-ru esta especializado en keyword spotting con dos cabezas y cuantizacion int8. vrc-we-voice-en comparte el extractor convolucional (fx.onnx) y el diseno de dos cabezas para ingles, lo que permite despliegues multilingues con un solo extractor. No se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ruso: no cubre otros idiomas; el multilingüismo requiere combinar modelos del proyecto.
-- No es un ASR general: la salida CTC sobre letras y el objetivo de keyword spotting limitan su uso para transcripción libre.
-- Riesgo de falsos positivos en audio no-voz: aunque bajo (0,03 por frase-hora), existe con música y sonidos vocales.
-- Umbral fijo de -0,6: el rendimiento depende del ajuste del umbral al dominio; el autor documenta que la base usa -0,75.
-- Sesgos: no se documentan análisis de sesgo por acento, género o edad; los corpus de entrenamiento (Common Voice, SOVA, etc.) pueden introducir desequilibrios.
-- Alucinación: en modelos CTC, el equivalente son disparos espurios o transcripciones incorrectas en audio degradado; no hay evaluación específica de este riesgo más allá de los falsos positivos reportados.
-- Licencia: los pesos ONNX y configuración son Apache 2.0, pero pron.tsv es CC BY 4.0 y requiere atribución; los datasets de entrenamiento tienen sus propias licencias (CC0, CC BY 4.0, dominio público).
-- Evaluación local del autor, no un benchmark estándar: los resultados no son directamente comparables con métricas de ASR convencionales (WER, etc.).
-- Fecha de creación futura (2026-10-21) en los metadatos: conviene verificar la vigencia del repositorio antes de usarlo en producción.
+- El modelo esta entrenado exclusivamente para ruso; no soporta otros idiomas.
+- Es un modelo de keyword spotting, no un ASR general: no debe usarse para transcripcion libre sin validacion adicional.
+- La cabeza de fonemas depende de lexicon.tsv y pron.tsv; las palabras ausentes del lexico se deciden solo por la cabeza de letras, lo que reduce la robustez ante homofonos en vocabulario no cubierto.
+- Las frases de menos de cinco letras se deciden unicamente por la cabeza de letras.
+- Los umbrales de disparo (-0,653 y -0,6) estan calibrados para un regimen concreto de falsos positivos; variaciones en el dominio acustico pueden alterar la tasa de disparo.
+- Riesgo de alucinacion inherente a los modelos CTC: pueden emitir secuencias plausibles en audio ruidoso o no vocal.
+- Sesgos potenciales derivados de los corpus de entrenamiento (Common Voice, SOVA, FLEURS), cuya composicion demografica no se detalla en la model card.
+- La licencia Apache 2.0 permite uso comercial, pero las etiquetas de fonemas derivan de CharsiuG2P, entrenado sobre WikiPron (CC BY-SA); conviene revisar la compatibilidad de esa cadena de licencias en produccion.
+- No se publican benchmarks estandar ni latencias, lo que dificulta la comparacion objetiva con alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/oblivius/vrc-we-voice-ru
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian
-- Modelo base alternativo (comparativa): https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
-- Modelo hermano en inglés: https://huggingface.co/oblivius/vrc-we-voice-en
+- Modelo hermano en ingles: https://huggingface.co/oblivius/vrc-we-voice-en
+- CharsiuG2P: https://github.com/lingjzhu/CharsiuG2P
 - Common Voice: https://commonvoice.mozilla.org
 - Multilingual Spoken Words Corpus: https://mlcommons.org/datasets/multilingual-spoken-words/
 - FLEURS: https://huggingface.co/datasets/google/fleurs
 - Russian LibriSpeech (SLR96): https://www.openslr.org/96/
 - SOVA datasets: https://github.com/sovaai/sova-dataset
 - MUSAN: https://www.openslr.org/17/
-- CharsiuG2P: https://github.com/lingjzhu/CharsiuG2P
-- Export ONNX de CharsiuG2P: https://huggingface.co/klebster/g2p_multilingual_byT5_tiny_onnx

@@ -51,32 +51,13 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/",
-      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
-    },
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/?hl=fr",
-      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
-    },
-    {
-      "title": "Instagram - Capture, Create & Share What You Love",
-      "url": "https://about.instagram.com/",
-      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
-    },
-    {
-      "title": "Instagram (@instagram) • Instagram photos and videos",
-      "url": "https://www.instagram.com/instagram/",
-      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
-    },
-    {
-      "title": "Sign up • Instagram",
-      "url": "https://www.instagram.com/accounts/emailsignup/",
-      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+      "task": "Language modeling",
+      "dataset": "TinyStories (held-out outer-val part of valid)",
+      "metric": "bits/byte (self-reported)",
+      "value": 1.0073
     }
-  ]
+  ],
+  "sources": []
 }

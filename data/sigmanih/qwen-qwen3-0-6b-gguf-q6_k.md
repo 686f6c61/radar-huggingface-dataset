@@ -2,109 +2,126 @@
 
 ## Resumen
 
-Qwen-Qwen3-0.6B-GGUF-Q6_K es una cuantizacion en formato GGUF del modelo Qwen3-0.6B, publicada por el usuario sigmanih a traves de su herramienta Sigma Studio. Se trata de un modelo de lenguaje de 0.6 mil millones de parametros activos, basado en la arquitectura qwen3, disenado para ejecucion en dispositivos con recursos limitados como equipos edge, agentes de voz en tiempo real y cargas de trabajo en CPU. El archivo pesa 0.58 GB y ofrece una ventana de contexto de 40.960 tokens, lo que lo hace adecuado para tareas de generacion de texto con contexto largo en entornos locales.
+Qwen-Qwen3-0.6B-GGUF-Q6_K es una cuantizacion en formato GGUF (Q6_K) del modelo base Qwen/Qwen3-0.6B, publicada por el usuario sigmanih a traves de su herramienta Sigma Studio. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos del modelo original de Qwen (Alibaba) a un formato optimizado para inferencia en CPU y GPU de gama baja. El modelo base pertenece a la familia Qwen3, con arquitectura CausalLM y una ventana de contexto declarada de 32.768 tokens.
 
-El modelo se distribuye exclusivamente en formato GGUF con cuantizacion Q6_K, lo que permite su uso directo con llama.cpp y otros motores compatibles. Segun la model card, esta pensado para inferencia en produccion en dispositivos de bajo consumo, y el autor ha medido velocidades de hasta 389 tokens por segundo en una GPU NVIDIA RTX 5070 Ti. Aunque el modelo base Qwen3-0.6B soporta modo de pensamiento (thinking mode) y no pensamiento, esta cuantizacion no documenta explicitamente esa capacidad, por lo que se asume que hereda las capacidades del modelo original.
+El interes practico de esta publicacion radica en su tamano: con aproximadamente 751 millones de parametros totales (0,6B activos segun la model card) y un peso en disco de unos 0,6 GB, es desplegable en hardware muy modesto, desde GPUs de consumo con 6-8 GB de VRAM hasta entornos CPU-only. La model card declara un consumo de aproximadamente 1,3 GB de VRAM con offload completo a GPU y unos 1,1 GB de RAM en modo CPU o hibrido.
 
-La relevancia de esta publicacion radica en su enfoque practico: ofrece un modelo pequeno, rapido y facil de desplegar, con benchmarks publicados por el autor sobre una muestra de datasets estandar. No obstante, hay que tener en cuenta que los resultados de evaluacion se basan en una fraccion de cada dataset, no en la suite completa, y que la licencia figura como "other", lo que exige revision antes de un uso comercial.
+La relevancia es limitada pero concreta: sirve como modelo de referencia para prototipado rapido, agentes de voz en tiempo real, entornos edge y pruebas de pipelines de inferencia donde no se dispone de hardware dedicado. Conviene senalar que la model card mezcla datos en ingles e italiano, incluye una licencia declarada como "other" pese a mostrar un badge de Apache-2.0, y presenta resultados de benchmark medidos sobre un subconjunto reducido de cada suite, por lo que no son comparables con ejecuciones completas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3 (transformer denso, 28 capas, dimension oculta 1024) |
-| Parametros totales | 751.632.384 (dato del modelo base en safetensors) |
-| Parametros activos | 0.6B (segun la model card) |
-| Longitud de contexto | 40.960 tokens |
-| Tipos de cuantizacion | Q6_K (esta version); Q4_K_S disponible en otro repositorio del mismo autor |
-| Idiomas soportados | ingles, italiano (segun la model card) |
-| Licencia | other (el badge del README indica Apache-2.0, pero el campo oficial es "other") |
-| Formato de pesos | GGUF (Q6_K) |
+| Arquitectura | CausalLM (transformer decoder-only, familia Qwen3) |
+| Parametros totales | 751.632.384 (0,6B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (segun model card) |
+| Tipos de cuantizacion | Q6_K (unica variante publicada en este repo) |
+| Idiomas soportados | en, it (segun metadatos del repo) |
+| Licencia | other (la model card muestra badge Apache-2.0, discrepancia no resuelta) |
+| Formato de pesos | GGUF |
+| Tamano del repositorio | 0,6 GB |
+| Modelo base | Qwen/Qwen3-0.6B |
+| Pipeline | text-generation |
+| VRAM estimada (offload total GPU) | ~1,3 GB |
+| RAM estimada (CPU/hibrido) | ~1,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura qwen3 de Qwen, un transformer causal denso con 28 capas y dimension oculta de 1024. No es un modelo de mezcla de expertos (MoE), por lo que todos los parametros se activan en cada inferencia. El modelo original Qwen3-0.6B fue entrenado por Alibaba Cloud con un enfoque que combina datos multilingues y un proceso de alineacion que incluye aprendizaje por refuerzo con retroalimentacion humana (RLHF) y optimizacion de preferencias directa (DPO), aunque los detalles especificos del entrenamiento no se detallan en la model card de esta cuantizacion.
+El modelo es una cuantizacion Q6_K del Qwen3-0.6B original. La arquitectura subyacente es un transformer decoder-only de tipo CausalLM, propia de la familia Qwen3, con 751.632.384 parametros totales. No se dispone de informacion en la model card sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si el modelo base utilizo RLHF, DPO u otras tecnicas de alineamiento; esos datos corresponden al modelo original de Qwen y no se reproducen en esta publicacion.
 
-Esta version concreta es una cuantizacion Q6_K del modelo base, realizada por sigmanih mediante su herramienta Sigma Studio. La cuantizacion reduce el peso de los parametros a 6 bits por valor, lo que explica el tamano de archivo de 0.58 GB frente a los aproximadamente 1.5 GB que ocuparia el modelo en precision completa. No se documentan innovaciones tecnicas adicionales en la cuantizacion; se trata de una conversion estandar a GGUF compatible con llama.cpp.
+La innovacion tecnica de esta publicacion es exclusivamente la cuantizacion a Q6_K mediante la herramienta Sigma Studio (modulo Model Hub), que produce un artefacto GGUF listo para motores de inferencia compatibles. La model card menciona un "SigmaEngine" para aceleracion GPU y un "Training Lab" para evaluacion, pero no documenta cambios en los pesos mas alla de la conversion de formato. No se declara decodificacion especulativa, atencion lineal ni otras modificaciones arquitectonicas.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de continuacion de texto en ingles e italiano.
-- Razonamiento basico y de sentido comun, con resultados moderados en datasets como ARC-Challenge (56%) y BIG-Bench Hard (57%).
-- Matematicas de nivel escolar, con un 89% de aciertos en GSM8K y un 67% en MATH (segun la muestra evaluada).
-- Generacion de codigo Python, aunque con rendimiento limitado (29% en HumanEval y 56% en MBPP).
-- Factualidad y resistencia a la alucinacion relativamente buena, con un 89% en TruthfulQA.
-- Capacidad de ejecucion en CPU y en GPUs de baja gama gracias a su tamano reducido.
-- Compatible con llama.cpp y con la herramienta Sigma Studio para despliegue local.
-- No se documenta soporte explicito para tool calling, function calling ni modo agente en esta cuantizacion, aunque el modelo base Qwen3-0.6B si lo incluye; se asume que la cuantizacion conserva esas capacidades, pero no estan verificadas.
+- Generacion de texto conversacional en ingles e italiano, segun los metadatos del repositorio.
+- Razonamiento basico y respuesta directa; la model card distingue entre modo "No-Thinking" (respuesta directa) y "Deep Thinking" (cadena de razonamiento CoT).
+- Aritmetica de varios pasos: la evaluacion interna reporta 8/9 en GSM8K sobre la muestra evaluada.
+- Generacion de codigo Python limitada: 2/7 en HumanEval y 5/9 en MBPP sobre las muestras evaluadas.
+- Conocimiento general acotado: 4/14 en MMLU sobre la muestra evaluada.
+- No se documenta soporte de tool calling ni function calling en la informacion disponible.
+- No se documenta soporte de agentes multi-paso, vision, audio ni otras modalidades.
+- Capacidad multilingue limitada a los idiomas declarados (en, it); el castellano no figura entre los idiomas soportados.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivos edge: el modelo puede ejecutarse en un Raspberry Pi o en un mini PC gracias a su tamano de 0.58 GB, ofreciendo respuestas en tiempo real con una latencia baja. Es adecuado para prototipos de asistentes de voz locales sin conexion a internet.
-- Atencion al cliente automatizada en italiano e ingles: con una ventana de contexto de 40.960 tokens, puede mantener conversaciones multi-turno largas sin perder el hilo, gestionando consultas frecuentes y derivando casos complejos a un agente humano.
-- Generacion de codigo en entornos de desarrollo locales: aunque su rendimiento en HumanEval es limitado (29%), puede usarse para autocompletar fragmentos de codigo sencillos o para generar plantillas en Python, especialmente en entornos donde no se permite enviar datos a la nube.
-- Educacion y practica de matematicas: con un 89% en GSM8K, puede resolver problemas de matematicas de nivel escolar y explicar los pasos, util como herramienta de apoyo en aplicaciones educativas.
-- Filtrado y clasificacion de texto: su capacidad de razonamiento basico permite clasificar correos, resumir documentos cortos o extraer entidades en aplicaciones de procesamiento de lenguaje natural ligeras.
-- Prototipado rapido de agentes conversacionales: al ser un modelo pequeno y rapido, es ideal para probar flujos de conversacion y pipelines de generacion antes de escalar a modelos mas grandes, reduciendo costes de desarrollo.
-- Inferencia en tiempo real en servidores con GPUs modestas: con 389 tokens por segundo en una RTX 5070 Ti, puede servir multiples peticiones simultaneas en aplicaciones de chat en vivo sin necesidad de hardware de alta gama.
+- Prototipado rapido de chatbots: con ~1,3 GB de VRAM y contexto de 32.768 tokens, permite levantar un servicio conversacional en una GPU de 6-8 GB o incluso en CPU para validar flujos antes de migrar a un modelo mayor.
+- Agentes de voz en tiempo real en entornos edge: la model card recomienda explicitamente este uso; el reducido footprint y la latencia baja en decodificacion (389,1 tok/s en una RTX 5070 Ti, medida de un solo stream) lo hacen apto para respuestas inmediatas en dispositivos con recursos limitados.
+- Procesamiento de texto en movil o dispositivos sin GPU: el modo CPU/hibrido con ~1,1 GB de RAM permite ejecutar el modelo en portatiles modestos o sistemas embebidos con llama.cpp u Ollama.
+- Clasificacion y extraccion de informacion en lotes: para tareas de etiquetado simple, resumen corto o extraccion de campos en documentos en ingles o italiano, el coste por token es minimo y el throughput agregado declarado (434,8 tok/s con varias peticiones en vuelo) permite procesar volumenes moderados.
+- Filtrado y preprocesado en pipelines de datos: util como primer paso barato para normalizar, deduplicar semanticamente o generar metadatos antes de pasar a un modelo mayor.
+- Educacion y demostraciones: su tamano permite desplegarlo en aulas, talleres o entornos de formacion donde no hay acceso a GPUs de datacenter, ilustrando el funcionamiento de un LLM cuantizado de extremo a extremo.
+- Pruebas de integracion de motores de inferencia: sirve como modelo de referencia para validar compatibilidad con vLLM, llama.cpp, Ollama o TGI antes de desplegar modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-El autor publico resultados de evaluacion sobre una muestra de cada dataset, no sobre la suite completa, y advierte explicitamente que estos valores no son comparables con una corrida completa. Los datos se obtuvieron con temperatura 0.0 y semilla 42 en una GPU.
+Los siguientes resultados provienen de la evaluacion interna declarada en la model card, medida sobre subconjuntos reducidos de cada suite (entre 7 y 14 preguntas por dataset), con temperatura 0,0 y semilla 42. No son comparables con ejecuciones sobre el conjunto completo.
 
-| Dataset | Dominio | Correctos / Total | Precision (%) |
-|---|---|---|---|
-| ARC-Challenge | Razonamiento cientifico y escolar | 5 / 9 | 56 |
-| BIG-Bench Hard | Logica y simbolos complejos | 4 / 7 | 57 |
-| GPQA | Razonamiento academico de posgrado | 0 / 9 | 0 |
-| GSM8K | Matematicas de escuela | 8 / 9 | 89 |
-| HellaSwag | Sentido comun y NLI situacional | 4 / 9 | 44 |
-| HumanEval | Codigo Python (pass@1) | 2 / 7 | 29 |
-| MATH | Matematicas de competicion | 6 / 9 | 67 |
-| MBPP | Programacion Python con tests | 5 / 9 | 56 |
-| MMLU | Conocimiento general multi-tema | 4 / 14 | 29 |
-| MMLU-Pro | Razonamiento avanzado multi-paso | 0 / 9 | 0 |
-| TruthfulQA | Factualidad y anti-alucinacion | 8 / 9 | 89 |
-| **Total** | **Todos los datasets** | **46 / 100** | **46** |
+| Benchmark | Correctas / total | Precision |
+|---|---|---|
+| ARC-Challenge | 5 / 9 | 56% |
+| BIG-Bench Hard | 4 / 7 | 57% |
+| GPQA | 0 / 9 | 0% |
+| GSM8K | 8 / 9 | 89% |
+| HellaSwag | 4 / 9 | 44% |
+| HumanEval (pass@1) | 2 / 7 | 29% |
+| MATH | 6 / 9 | 67% |
+| MBPP | 5 / 9 | 56% |
+| MMLU | 4 / 14 | 29% |
+| MMLU-Pro | 0 / 9 | 0% |
+| TruthfulQA | 8 / 9 | 89% |
+| Total agregado | 46 / 100 | 46% |
 
-Ademas, el autor midio velocidades en una NVIDIA GeForce RTX 5070 Ti con 15.9 GB de VRAM: 389.1 tokens por segundo en decodificacion de un solo flujo, 1812 tokens por segundo en procesamiento de prompt y 434.8 tokens por segundo en rendimiento agregado con varias peticiones en vuelo. Estas cifras corresponden a esa maquina concreta y no son extrapolables a otros hardware.
+Comparativa de modos de ejecucion declarada por el autor:
+
+| Modo | Precision | Preguntas superadas |
+|---|---|---|
+| No-Thinking (respuesta directa) | 49,1% | 28 / 57 |
+| Deep Thinking (CoT) | 41,9% | 18 / 43 |
+
+Rendimiento medido en una NVIDIA GeForce RTX 5070 Ti (15,9 GB VRAM):
+
+| Metrica | Valor |
+|---|---|
+| Decodificacion de un solo stream | 389,1 tok/s |
+| Procesamiento de prompt | 1.812 tok/s |
+| Throughput agregado durante evaluacion | 434,8 tok/s |
 
 ## Requisitos de hardware
 
-- Tamano del archivo: 0.58 GB, por lo que cabe en cualquier GPU con al menos 1 GB de VRAM libre, aunque no se especifica el requisito minimo oficial.
-- GPU recomendada: NVIDIA RTX 5070 Ti (15.9 GB VRAM) fue la usada para las mediciones de velocidad; se espera que funcione en GPUs de gama media como RTX 3060, RTX 4060 o incluso en iGPUs modernas.
-- CPU: al ser un modelo de 0.6B, puede ejecutarse en CPU con llama.cpp, aunque la velocidad dependera de la memoria RAM y del ancho de banda.
-- Opciones de despliegue: llama.cpp (compatible con llama-cli), Sigma Studio (herramienta del autor), y cualquier motor que soporte GGUF como Ollama o LM Studio.
-- Latencia: 389.1 tokens por segundo en decodificacion de un solo flujo en la RTX 5070 Ti; en CPU la latencia sera significativamente mayor, pero no se proporcionan datos.
-- Throughput: 434.8 tokens por segundo en modo agregado con varias peticiones simultaneas en la misma GPU.
+- VRAM estimada: ~1,3 GB con offload completo a GPU; ~1,1 GB de RAM en modo CPU o hibrido.
+- GPU recomendadas segun el autor: cualquier GPU con 6-8 GB de VRAM; el rendimiento medido se obtuvo en una RTX 5070 Ti.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna con 6 GB o mas (RTX 3060, RTX 4060, RTX 4090, etc.), y tambien en CPU con 16 GB de RAM de sistema.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI y el propio Sigma Studio; el formato GGUF es compatible con los motores basados en llama.cpp.
+- Latencia y throughput: 389,1 tok/s en decodificacion de un solo stream y 1.812 tok/s en procesamiento de prompt, medidos en una RTX 5070 Ti. No se han medido velocidades en otro hardware y el autor advierte explicitamente contra extrapolar estas cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Rendimiento (muestra) |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sigmanih/Qwen-Qwen3-0.6B-GGUF-Q6_K | 0.6B | 40.960 | GGUF Q6_K | other | 46% total (muestra) |
-| sigmanih/Qwen-Qwen3-0.6B-GGUF-Q4_K_S | 0.6B | 40.960 | GGUF Q4_K_S | other | no disponible |
-| Qwen/Qwen3-0.6B (modelo base) | 0.6B | 40.960 | safetensors | Apache-2.0 | no disponible en esta ficha |
+| Qwen-Qwen3-0.6B-GGUF-Q6_K (este) | 0,6B | 32.768 | other (badge Apache-2.0 en card) | GGUF Q6_K | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 | no disponible en la informacion | safetensors | Hugging Face |
+| Otros modelos de ~0,5B-1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion con el modelo base no es posible en terminos de rendimiento porque no se dispone de benchmarks publicados para Qwen3-0.6B en su version original. La diferencia principal entre las dos cuantizaciones del mismo autor es el nivel de precision (Q6_K frente a Q4_K_S), que afecta al tamano y a la velocidad, pero no se han publicado mediciones comparativas. No se incluyen otros modelos de 0.6B como Qwen2.5-0.5B o SmolLM2-0.6B por falta de datos comparables en la informacion disponible.
+No se dispone de datos de benchmarks comparables de otros modelos en la informacion proporcionada; los resultados de la tabla anterior proceden de subconjuntos reducidos y no permiten una comparacion rigurosa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Rendimiento muy bajo en tareas de razonamiento avanzado: 0% en GPQA y MMLU-Pro, lo que indica que no es adecuado para problemas academicos o cientificos complejos.
-- Generacion de codigo limitada: 29% en HumanEval, por lo que no debe usarse como asistente de programacion principal en produccion.
-- Conocimiento general debil: 29% en MMLU, lo que limita su utilidad en tareas que requieran amplia cultura general.
-- Riesgo de alucinacion: aunque TruthfulQA muestra un 89%, el modelo puede inventar informacion en contextos no cubiertos por su entrenamiento, especialmente en italiano, donde los datos pueden ser menos abundantes.
-- Licencia "other": a pesar del badge Apache-2.0 en el README, el campo oficial de licencia es "other", lo que exige revisar los terminos exactos antes de un uso comercial.
-- Idiomas limitados: la model card solo declara ingles e italiano, aunque el modelo base Qwen3 soporta mas idiomas; no se garantiza un rendimiento adecuado en otros.
-- Benchmarks no comparables: los resultados se basan en una muestra de 100 preguntas en total, no en las suites completas, por lo que no deben usarse para comparar con otros modelos.
-- Sin soporte documentado para tool calling ni modo agente en esta cuantizacion, aunque el modelo base los incluye; se recomienda verificar antes de integrarlo en pipelines de agentes.
-- Velocidades medidas solo en una GPU concreta; no se pueden extrapolar a otros hardware sin riesgo de error significativo.
+- Precision baja en conocimiento general y razonamiento avanzado: 29% en MMLU, 0% en MMLU-Pro y 0% en GPQA sobre las muestras evaluadas.
+- Generacion de codigo debil: 29% en HumanEval (pass@1) sobre la muestra evaluada.
+- Riesgo elevado de alucinacion en dominios especializados; el 89% en TruthfulQA sobre 9 preguntas no es evidencia suficiente para descartarlo.
+- El modo Deep Thinking (CoT) rinde peor que la respuesta directa en la evaluacion del autor (41,9% frente a 49,1%), un delta de -7,3 puntos.
+- Los benchmarks se midieron sobre 7-14 preguntas por suite, no sobre el conjunto completo; el propio autor advierte que las puntuaciones no son comparables con ejecuciones completas.
+- Idiomas soportados limitados a ingles e italiano; no se declara castellano.
+- Discrepancia de licencia: los metadatos indican "other" mientras la model card muestra un badge Apache-2.0. Antes de un uso comercial debe verificarse la licencia real del modelo base Qwen/Qwen3-0.6B.
+- La model card contiene texto en italiano mezclado con ingles y campos con valores inconsistentes (por ejemplo, formato de pesos "Sconosciuto" y footprint en disco "0.0 GB"), lo que reduce la fiabilidad de la documentacion.
+- No se documenta soporte de tool calling ni de flujos de agentes multi-paso.
+- Las cifras de velocidad corresponden a una unica maquina (RTX 5070 Ti) y no deben extrapolarse a otro hardware.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q6_K
-- Repositorio del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Repositorio GGUF oficial de Qwen3: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
-- GitHub de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- GitHub de Qwen3: https://github.com/QwenLM/Qwen3
-- Version Q4_K_S del mismo autor: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q4_K_S
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Repositorio de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
+- Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

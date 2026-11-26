@@ -5,7 +5,7 @@
   "author": "Coffmeteor",
   "url": "https://huggingface.co/Coffmeteor/MiniMaxH3-Realism-Turbo-Remix",
   "created_at": "2026-10-28T07:08:58.000Z",
-  "updated_at": "2026-10-28T07:34:52.000Z",
+  "updated_at": "2026-11-25T22:06:00.000Z",
   "license": "minimax-h3-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 899,
+  "downloads_30d": 908,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

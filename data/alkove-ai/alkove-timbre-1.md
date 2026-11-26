@@ -2,66 +2,66 @@
 
 ## Resumen
 
-alkove-timbre-1 es un modelo de verificación e identificación de hablante (speaker verification e identificación biométrica por voz) desarrollado por alkove-ai como parte del SDK de voz on-device Alkove. Convierte una ventana de audio de 16 kHz en un vector unitario de 192 dimensiones (voiceprint) que permite decidir si dos fragmentos de voz pertenecen a la misma persona comparando su producto escalar. El modelo está pensado para ejecutarse íntegramente en el dispositivo (móvil o navegador), sin enviar audio a ningún servidor.
+alkove-timbre-1 es un modelo de verificación e identificación de hablante (speaker verification / speaker identification) desarrollado por alkove-ai, diseñado para funcionar íntegramente en el dispositivo (on-device), ya sea en navegador vía WebAssembly o en teléfono. Convierte una ventana de voz de 16 kHz en un vector unitario de 192 valores (un "voiceprint" o huella de voz) que permite decidir si dos fragmentos de audio corresponden al mismo hablante mediante el producto escalar de sus embeddings. No genera texto ni transcribe: su tarea es la extracción de características biométricas de voz.
 
-El modelo es notable por su relación tamaño/calidad: pesa 0,97 MB con pesos mayoritariamente de 4 bits y declara una tasa de igual error (EER) del 2,07 % en verificación con voiceprints de unos 12 s contra ventanas de 1,5 s sobre 11 idiomas de Common Voice, con 2.325 hablantes nunca vistos en entrenamiento. Frente a alternativas open source como CAM++ (28 MB), ReDimNet2-B6 (51 MB) o w2v-BERT 2.0 (2,5 GB), ofrece un tamaño dos órdenes de magnitud menor.
+El modelo forma parte del SDK de voz Alkove, que agrupa aislamiento de voz, wake word, voiceprint, detección de actividad de voz, fin de turno y pronunciación, todo sin enviar audio a un servidor. Es relevante por su relación tamaño/calidad: con solo 0,97 MB de pesos (mayoritariamente 4-bit) declara un EER del 2,07 % en 11 idiomas sobre Common Voice, frente a modelos como ECAPA-TDNN 512 (25 MB, 5,52 % EER) o CAM++ (28 MB, 1,72 %). Sustituye a la versión preview de Alkove 0.5, cuyos voiceprints no son compatibles con esta versión.
 
-Se distribuye en el formato propietario `.alk` para el motor Alkove (Rust, Apache-2.0), con ejecución nativa o vía WebAssembly en un solo hilo, y SDKs para navegador, Python, Android, iOS y React Native. Sustituye a la versión preview `alkove-timbre-1-preview`, cuyos voiceprints no son compatibles y deben regenerarse.
+La arquitectura es una red estilo ECAPA-TDNN de 1,47 M de parámetros, entrenada sin pesos preentrenados, con pooling estadístico atencional y salida normalizada de 192 dimensiones. Está publicada bajo licencia Apache-2.0 y se distribuye en un formato propietario `.alk` para el motor Alkove (Rust, Apache-2.0), ejecutable de forma nativa o en WebAssembly en un solo hilo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de embeddings de hablante; salida de 192 dimensiones) |
-| Parametros totales | no disponible (peso del fichero: 0,97 MB, mayoritariamente 4-bit) |
+| Arquitectura | ECAPA-TDNN (red convolucional con SE-Res2 blocks y attentive statistics pooling) |
+| Parametros totales | 1,47 M |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; ventana de audio de 1.400 a 32.000 muestras (88 ms a 2 s), 1,5 s (24.000 muestras) recomendada |
-| Tipos de cuantizacion | 4-bit e int8 (pesos del fichero `.alk`) |
-| Idiomas soportados | 11 idiomas evaluados en Common Voice: frances, ingles, espanol, italiano, portugues, catalan, rumano, aleman, neerlandes, polaco y sueco |
+| Longitud de contexto | no aplica; ventana de entrada de 1.400 a 32.000 muestras (88 ms a 2 s), 1,5 s (24.000 muestras) recomendada |
+| Tipos de cuantizacion | pesos en 4-bit, primera convolucion en int8 |
+| Idiomas soportados | 11 idiomas en los test de Common Voice (sin listado explicito en la informacion disponible) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.alk` (formato propietario del motor Alkove, documentado); manifiesto JSON con sha256 y tamanos |
+| Formato de pesos | `.alk` (formato propio del motor Alkove) + manifiesto JSON |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo (tipo de red, capas, funcion de perdida ni composicion del dataset de entrenamiento). Lo que si se documenta es la interfaz: recibe audio float32 mono a 16 kHz en el rango -1 a 1, con ventanas de entre 1.400 y 32.000 muestras, y produce dos salidas, `embedding` e `id`, ambas vectores float32 `[1, 192]` de norma unitaria. En esta version `embedding` e `id` son el mismo vector.
+La red sigue el esquema ECAPA-TDNN: se calculan 80 bandas log-mel cada 10 ms con ventanas de 25 ms dentro del propio modelo; una convolucion 1D de kernel 5 proyecta a 256 canales; siguen tres bloques SE-Res2 (escala Res2 4, kernel 3, dilataciones 2, 3 y 4) con squeeze-excitation; las salidas de los tres bloques se concatenan, pasan por una convolucion 1x1 a 512 canales, se promedian sobre 40 ms y se reducen a 256; finalmente un pooling estadístico atencional con contexto global y una capa lineal producen los 192 valores normalizados. El modelo se entreno sin pesos preentrenados.
 
-El proceso de enrolamiento consiste en promediar el vector `id` de varias ventanas de la voz del usuario y renormalizar el resultado. La comparacion entre dos voces se hace por producto escalar de sus vectores. El modelo se ejecuta sobre el motor Alkove (Rust, Apache-2.0) en un solo hilo, de forma nativa o compilado a WebAssembly, con pesos cuantizados a 4 bits e int8. No se especifican datos sobre tokens de entrenamiento, uso de RLHF/DPO ni innovaciones de atencion; la innovacion principal declarada es la compresion extrema a 0,97 MB manteniendo EER competitivos.
+La informacion disponible no detalla el numero de tokens ni la composicion exacta del dataset de entrenamiento, ni si se aplico RLHF/DPO (no procede en esta tarea). Los datos de evaluacion declarados provienen de los conjuntos de test de Common Voice (CC0) en 11 idiomas, con 2.325 hablantes nunca vistos en entrenamiento; para aleman, neerlandes, polaco y sueco se usan hablantes de Common Voice 17 que el modelo nunca aprendio. La innovacion principal es la compresion agresiva a 4-bit/int8 (0,97 MB) manteniendo un EER competitivo, junto con la ejecucion en un solo hilo nativo o en WebAssembly.
 
 ## Capacidades
 
-- Extraccion de embeddings de hablante (voiceprint) de 192 dimensiones a partir de ventanas de 88 ms a 2 s de audio a 16 kHz.
-- Verificacion de hablante: decidir si una ventana de voz corresponde al mismo hablante que un voiceprint enrolado, mediante producto escalar.
-- Identificacion de hablante: determinar cual de las voces conocidas por la aplicacion esta hablando.
-- Localizacion del hablante objetivo dentro de un flujo de audio continuo (deteccion de donde aparece la voz del usuario).
-- Enrolamiento incremental: aprendizaje del voiceprint del usuario mientras habla, promediando y renormalizando vectores.
-- Umbrales adaptativos: las funciones `verify()` e `identify()` del SDK ajustan los umbrales segun la cantidad de voz disponible en el voiceprint y en la ventana.
-- Ejecucion on-device en un solo hilo: nativa (Rust), WebAssembly en navegador, Android, iOS, React Native y Python.
-- Integracion con alkove-focus-1 para aislar la voz del usuario en la senal.
-- No soporta generacion de texto, codigo, vision ni tool calling; es un modelo exclusivamente de audio.
+- Extraccion de embeddings de hablante: convierte una ventana de voz de 16 kHz mono en un vector unitario de 192 dimensiones.
+- Verificacion de hablante: compara dos voiceprints por producto escalar para decidir si son la misma voz.
+- Identificacion de hablante: determina cual de las voces conocidas por la aplicacion esta hablando.
+- Enrolamiento incremental: promediar los `id` de varias ventanas de una persona y renormalizar para construir su huella.
+- Localizacion de la voz del usuario en un flujo de audio continuo.
+- Integracion con alkove-focus-1 para conservar la voz de una persona concreta (aislamiento de voz).
+- Ejecucion on-device: nativa o WebAssembly, en un solo hilo, sin envio de audio a servidor.
+- Umbrales adaptativos: las funciones `verify()` e `identify()` del SDK ajustan los umbrales segun la cantidad de voz disponible en la huella y en la ventana.
+- Soporte multilingue en evaluacion (11 idiomas), sin listado explicito de idiomas.
 
 ## Casos de uso
 
-- Autenticacion biometrica local en aplicaciones moviles: el SDK enrola el voiceprint del usuario mientras habla y verifica cada frase contra el, sin enviar audio al servidor; adecuado por su tamano de 0,97 MB y su latencia de 5,9 ms por ventana de 1,5 s en un Galaxy Z Fold8.
-- Desbloqueo por voz y verificacion continua en el navegador: al ejecutarse en WebAssembly, permite verificar la identidad del hablante en aplicaciones web sin infraestructura de servidor ni coste de inferencia en la nube.
-- Aislamiento de la voz del usuario en llamadas o grabaciones: combinado con alkove-focus-1, el voiceprint indica que voz conservar, util para cancelacion de ruido selectiva o diarizacion centrada en el usuario.
-- Deteccion de wake word personalizada por hablante: el SDK comprueba cada frase o wake word contra el voiceprint, de modo que solo el propietario active el asistente.
-- Identificacion de participantes en reuniones o transcripciones: con varios voiceprints enrolados, el modelo determina cual de las voces conocidas habla en cada ventana de 1,5 s.
-- Control de acceso fisico o de dispositivos IoT con recursos limitados: el modelo cabe en microcontroladores o telefonos de gama baja y funciona sin conexion, con un coste de 0,97 MB de almacenamiento.
-- Investigacion en biometria de voz: su EER declarado en 11 idiomas de Common Voice con 2.325 hablantes no vistos lo hace util como referencia de modelos ultracompactos en experimentos de verificacion de hablante.
+- Autenticacion biometrica local en aplicaciones moviles: el SDK enrola la huella del usuario mientras habla y verifica cada frase contra ella, sin salir del dispositivo, lo que reduce el riesgo de filtracion de datos biometricos.
+- Aislamiento de voz en asistentes: combinado con alkove-focus-1, el modelo permite conservar solo la voz del usuario y descartar voces de fondo en llamadas o grabaciones.
+- Identificacion de interlocutor en reuniones o transcripciones multiparticipante: comparando el `id` de cada segmento con las huellas enroladas se etiqueta quien habla.
+- Wake word personalizada: el SDK comprueba cada wake word contra la huella del usuario para evitar activaciones por voces ajenas.
+- Segmentacion de la voz del usuario en un flujo de audio largo: el modelo localiza donde aparece su voz para recortar o procesar solo esos tramos.
+- Aplicaciones de accesibilidad y control por voz en navegador: al ejecutarse en WebAssembly, permite verificar al hablante en una web sin instalar nada ni enviar audio.
+- Filtrado de ruido de fondo en dispositivos con microfono siempre activo: el SDK lee una ventana de 1,5 s cada 0,5 s y ninguna con microfono silencioso, lo que limita el coste energetico.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Datos declarados por el autor (no verificados de forma independiente):
 
-| Metrica | Dataset | Valor |
-|---|---|---|
-| EER, voiceprint de ~12 s contra ventana de 1,5 s (%) | Common Voice, 11 idiomas, 2.325 hablantes | 2,07 |
-| EER, clip contra clip, clips completos (%) | Common Voice, 11 idiomas, 2.325 hablantes | 2,80 |
-| EER, voiceprint de ~12 s contra ventana de 1,5 s (%) | Common Voice, 7 idiomas, mismos trials que modelos abiertos | 2,26 |
+| Tarea | Dataset | Metrica | Valor |
+|---|---|---|---|
+| Verificacion de hablante | Common Voice, 11 idiomas, 2.325 hablantes | EER, huella de ~12 s contra ventana de 1,5 s (%) | 2,07 |
+| Verificacion de hablante | Common Voice, 11 idiomas, 2.325 hablantes | EER, clip contra clip, clips completos (%) | 2,80 |
+| Verificacion de hablante | Common Voice, 7 idiomas, modelos abiertos ejecutados igual | EER, huella de ~12 s contra ventana de 1,5 s (%) | 2,26 |
 
-Comparativa de EER (voiceprint contra ventana de 1,5 s, Common Voice en 7 idiomas) y tamano, segun la model card:
+Comparativa de tamano y calidad declarada por el autor (EER huella contra 1,5 s, Common Voice en 7 idiomas):
 
-| Modelo | EER (%) | Tamano |
+| Modelo | EER (%) | Tamano de pesos |
 |---|---|---|
 | alkove-timbre-1 | 2,26 | 0,97 MB |
 | ECAPA 512 | 5,52 | 25 MB |
@@ -69,56 +69,57 @@ Comparativa de EER (voiceprint contra ventana de 1,5 s, Common Voice en 7 idioma
 | ReDimNet2-B6 | 1,67 | 51 MB |
 | w2v-BERT 2.0 | 1,31 | 2,5 GB |
 
-Rendimiento de inferencia declarado:
+Rendimiento de inferencia (declarado por el autor):
 
-| Plataforma | Latencia por ventana de 1,5 s |
+| Plataforma | Latencia |
 |---|---|
-| CPU nativa, 1 hilo, Galaxy Z Fold8 (Android 17) | 5,9 ms |
-| CPU nativa, 1 hilo, Apple M1 Max (macOS) | 7,8 ms |
+| CPU nativa, 1 hilo, Galaxy Z Fold8 (Android 17) | 5,9 ms por ventana de 1,5 s |
+| CPU nativa, 1 hilo, Apple M1 Max (macOS) | 7,8 ms por ventana de 1,5 s |
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo esta disenado para CPU. El fichero de pesos ocupa 0,97 MB, por lo que la huella de memoria es minima.
-- GPU recomendadas: no necesarias. El modelo se ejecuta en CPU de un solo hilo.
-- Cabe en cualquier GPU consumer e incluso en telefonos moviles y navegadores; no requiere GPU dedicada.
-- Opciones de despliegue: motor Alkove (Rust, nativo o WebAssembly), SDK de navegador (`alkove` en npm), paquete Python (`alkove` en PyPI), SDK de Android, Swift package para iOS y React Native (`@alkove/react-native`).
-- Latencia: 5,9 ms por ventana de 1,5 s en Galaxy Z Fold8 y 7,8 ms en Apple M1 Max, en un solo hilo. El SDK procesa una ventana de 1,5 s cada 0,5 s mientras hay un voiceprint en uso, y ninguna con microfono silencioso.
-- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el modelo no usa esos runtimes.
+- VRAM estimada: no aplica; el modelo pesa 0,97 MB y esta pensado para CPU, no requiere GPU.
+- GPU recomendadas: no aplica; el motor Alkove ejecuta en CPU en un solo hilo.
+- Cabe en cualquier dispositivo: telefonos (Android, iOS), navegador via WebAssembly y equipos de escritorio; el consumo de memoria es inferior a 1 MB para los pesos.
+- Opciones de despliegue: motor Alkove (Rust, nativo o WebAssembly), SDK de Alkove para navegador (npm `alkove`), paquete Python `alkove`, SDK de Android, paquete Swift para iOS y React Native (`@alkove/react-native`). No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
+- Latencia: 5,9 ms por ventana de 1,5 s en Galaxy Z Fold8 y 7,8 ms en Apple M1 Max, en un hilo. El SDK lee una ventana cada 0,5 s mientras hay una huella en uso y ninguna con microfono silencioso.
+- Throughput: no disponible de forma explicita; puede estimarse a partir de la latencia por ventana.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros / tamano | EER (%) | Contexto / ventana | Licencia | Formato |
+| Modelo | Parametros | EER (%) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alkove-timbre-1 | 0,97 MB, mayoritariamente 4-bit | 2,26 (7 idiomas) / 2,07 (11 idiomas) | ventana de 88 ms a 2 s | Apache-2.0 | `.alk` (motor Alkove) |
-| CAM++ (`speech_campplus_sv_zh_en_16k-common_advanced`) | 28 MB | 1,72 | no disponible | Apache-2.0 | no disponible |
-| ReDimNet2-B6 | 51 MB | 1,67 | no disponible | no disponible | no disponible |
-| w2v-BERT 2.0 | 2,5 GB | 1,31 | no disponible | no disponible | no disponible |
-| ECAPA 512 | 25 MB | 5,52 | no disponible | no disponible | no disponible |
+| alkove-timbre-1 | 1,47 M | 2,26 (7 idiomas) / 2,07 (11 idiomas) | 0,97 MB | Apache-2.0 | Hugging Face, motor Alkove y SDKs |
+| ECAPA 512 | no disponible | 5,52 | 25 MB | no disponible | no disponible |
+| CAM++ | no disponible | 1,72 | 28 MB | no disponible | no disponible |
+| ReDimNet2-B6 | no disponible | 1,67 | 51 MB | no disponible | no disponible |
+| w2v-BERT 2.0 | no disponible | 1,31 | 2,5 GB | no disponible | no disponible |
 
-La ventaja de alkove-timbre-1 es el tamano (entre 25 y 2.500 veces menor que las alternativas) a costa de un EER algo superior al de CAM++, ReDimNet2-B6 y w2v-BERT 2.0, pero claramente mejor que ECAPA 512. La comparativa de EER la proporciona el propio autor ejecutando los modelos abiertos en los mismos trials.
+Los datos de EER y tamano de los modelos comparados proceden de la grafica de la model card del autor; no se dispone de informacion adicional sobre sus licencias, parametros o condiciones de ejecucion.
 
 ## Limitaciones y advertencias
 
-- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente (`verified: false` en el model-index).
-- La model card no detalla la arquitectura interna, los datos de entrenamiento ni la composicion del dataset, lo que dificulta evaluar sesgos y generalizacion.
-- El EER se mide sobre Common Voice (audio de lectura, CC0); el rendimiento puede degradarse en condiciones de ruido, microfonos lejanos o audio telefonico.
-- La cobertura linguistica declarada se limita a 11 idiomas; el rendimiento en otras lenguas no esta documentado.
-- Los voiceprints generados por la version preview (`alkove-timbre-1-preview`) no son compatibles con esta version y deben regenerarse.
-- El formato `.alk` es propietario del motor Alkove; aunque el formato esta documentado y el motor es Apache-2.0, no hay soporte para runtimes estandar de inferencia.
-- El modelo no genera texto ni realiza tareas de razonamiento; su uso esta acotado a biometria de voz.
-- Riesgo de suplantacion de voz (deepfakes, audio sintetico) no abordado en la informacion disponible; en produccion conviene combinar la verificacion con otros factores.
-- Licencia Apache-2.0 permite uso comercial, pero conviene revisar el fichero NOTICE de copyright incluido en el repositorio.
+- La model card no detalla sesgos conocidos por genero, edad, acento o idioma; los resultados se declaran sobre Common Voice y pueden no generalizar a dominios distintos (telefonia, ruido, microfonos lejanos).
+- Riesgo de falsos positivos y falsos negativos inherente a la verificacion biometrica; los umbrales deben calibrarse con `verify()` e `identify()` segun la cantidad de voz disponible.
+- La ventana de entrada esta limitada a 88 ms-2 s; no procesa audio largo de una vez, sino por ventanas.
+- Los voiceprints de la version preview (Alkove 0.5) no son compatibles con esta version y deben regenerarse.
+- El listado explicito de idiomas soportados no esta disponible; solo se indica que se evaluo en 11 idiomas de Common Voice.
+- Los benchmarks estan declarados por el autor y no han sido verificados de forma independiente (`verified: false` en el model-index).
+- El formato de pesos `.alk` es propio del motor Alkove; no hay pesos en safetensors ni GGUF, lo que limita su uso fuera del ecosistema Alkove.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar el archivo NOTICE por requisitos de atribucion.
+- Al ser un modelo biometrico, su uso en produccion exige cumplir la normativa de proteccion de datos (RGPD) sobre datos biometricos, incluso si el procesamiento es local.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-timbre-1
-- Version preview sustituida: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
+- Version preview anterior: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
 - Modelo complementario alkove-focus-1: https://huggingface.co/alkove-ai/alkove-focus-1
 - Sitio de Alkove: https://alkove.ai
 - Repositorio del motor Alkove (Rust): https://github.com/alkove-ai/alkove
-- Documentacion del formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
+- Motor de inferencia: https://github.com/alkove-ai/alkove/tree/main/crates/engine
+- Formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
 - SDK Android: https://github.com/alkove-ai/alkove/tree/main/android
 - SDK iOS (Swift package): https://github.com/alkove-ai/alkove/tree/main/ios
-- Paquete npm del SDK: https://www.npmjs.com/package/alkove
-- Paquete npm de React Native: https://www.npmjs.com/package/@alkove/react-native
+- SDK navegador (npm): https://www.npmjs.com/package/alkove
 - Paquete Python: https://pypi.org/project/alkove/
+- React Native (npm): https://www.npmjs.com/package/@alkove/react-native

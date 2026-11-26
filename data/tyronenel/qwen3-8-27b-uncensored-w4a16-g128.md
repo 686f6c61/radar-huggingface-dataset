@@ -1,108 +1,115 @@
 # TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128
 
 ## Resumen
+Orca-Qwen3.8-27B-Uncensored-W4A16 es una cuantización de 4 bits (W4A16) del modelo abliterated (sin rechazos) `orcarouter/Qwen3.8-27B-Uncensored`, que a su vez deriva del `Qwen/Qwen3.8-27B` de Alibaba. El autor del checkpoint es TyroneNel, y el objetivo es servir un modelo de vision-lenguaje de gran tamano en una unica GPU de 24 GB (clase RTX 3090) mediante vLLM y el stack HyperQwen, conservando la torre de vision, la cabeza de decodificacion especulativa MTP y el soporte de tool calling.
 
-Qwen3.8-27B-Uncensored-W4A16-g128 es una cuantizacion de pesos en 4 bits (esquema W4A16, grupo de 128) del modelo orcarouter/Qwen3.8-27B-Uncensored, publicada por el usuario TyroneNel. El modelo de partida es un ajuste fino "abliterated" de Qwen3.8-27B: se ha eliminado la direccion de rechazo editando 131 matrices que escriben en el flujo residual, de modo que el modelo apenas se niega a responder. La cuantizacion es exclusivamente de pesos y respeta ese edit byte a byte; no se ha reentrenado nada. El resultado es un checkpoint multimodal (image-text-to-text) de unos 16,7-16,8 GB que cabe en una unica tarjeta de 24 GB (RTX 3090, Ampere) dejando espacio para la cache KV.
+El modelo combina un cuerpo de decodificador cuantizado a int4 (group size 128, simetrico, generado con Intel AutoRound y empaquetado en formato `compressed-tensors` con kernels Marlin en Ampere) con cabezas en int8 (`lm_head`, `embed_tokens` y el modulo MTP) y una torre de vision que permanece en BF16. El resultado ocupa 16,7 GB en disco (67 ficheros safetensors, 2.022 tensores) y, segun el autor, alcanza 116 tok/s en decodificacion monousuario y 947 tok/s en servicio por lotes con 64 peticiones concurrentes en una RTX 3090.
 
-Arquitectonicamente es un transformer denso de la familia Qwen3.5/Qwen3.8, con torre de vision, cabeza MTP (multi-token prediction) y control de esfuerzo de razonamiento en la plantilla de chat. El objetivo declarado es servir el modelo abliterated completo (vision, tool calling, thinking) en hardware de consumo mediante el kernel Marlin de vLLM, con decodificacion especulativa DFlash2 y contexto nativo de 262.144 tokens (ampliable a 1M con YaRN estatico).
-
-La relevancia practica esta en el empaquetado: AutoRound de Intel, formato compressed-tensors con 411 tensores empaquetados (400 lineales int4 + 11 int8) y 790 tensores que se mantienen en BF16 (normas, torre de vision y embeddings MTP). Es un artefacto de nicho, sin descargas ni validacion de la comunidad en el momento de la consulta, y con una discrepancia documental notable en el recuento de parametros que se detalla mas abajo.
+Es relevante porque demuestra que un modelo multimodal de razonamiento y function calling puede desplegarse en hardware de consumo con perdida de calidad marginal: la perplejidad medida (8,216 frente a 8,186 del checkpoint oficial AutoRound) y el GSM8K (94,5 % en ambos) son practicamente identicos al modelo de referencia. La licencia Apache 2.0 facilita su uso comercial, aunque la naturaleza uncensored del modelo base implica riesgos de contenido que el integrador debe mitigar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso de la familia Qwen3.5/Qwen3.8, multimodal (image-text-to-text) con torre de vision y cabeza MTP (multi-token prediction) |
-| Parametros totales | 27,8 B en la fuente BF16 (56 GB, 18 shards). El index de safetensors de este repo declara 5.395.026.908 parametros, cifra incoherente con lo anterior y probablemente atribuible al recuento de tensores empaquetados en int4: dato no verificado |
-| Parametros activos | No aplica: no es un modelo MoE. Incluye cabeza MTP de 15 tensores para decodificacion especulativa |
-| Longitud de contexto | 262.144 tokens nativos; el ejemplo de servicio usa --max-model-len 131072; existe receta oficial de 1M con YaRN estatico via --hf-overrides |
-| Tipos de cuantizacion | W4A16 (pesos int4, activaciones 16 bits), group_size 128, en 400 lineales; int8 en lm_head, embed_tokens y 9 tensores MTP; BF16 en normas, torre de vision (333 tensores visual.*, 0 cuantizados) y embeddings MTP. No se publican GGUF de este artefacto |
-| Idiomas soportados | en, zh (segun los metadatos del repo) |
+| Arquitectura | Transformer con atencion hibrida (incluye GatedDeltaNet) y modulo MTP de decodificacion especulativa; vision-lenguaje |
+| Parametros totales | 4.537.038.374 (segun safetensors del checkpoint cuantizado) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 49.152 tokens en la configuracion medida; 32.768 en el ejemplo de vLLM de la model card |
+| Tipos de cuantizacion | W4A16 int4 group 128 simetrico (cuerpo), int8 group 128 (lm_head, embed_tokens, MTP), BF16 (vision tower, normas, in_proj_a/in_proj_b) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, compressed-tensors pack-quantized (kernel Marlin en Ampere), mas mtp_draft_vocab_ids.pt (40.960 ids) |
+| Formato de pesos | safetensors con `compressed-tensors` (pack-quantized), 67 ficheros, 16,7 GB |
 
 ## Arquitectura y entrenamiento
+El checkpoint es una cuantizacion, no un entrenamiento desde cero. El cuerpo del decodificador (64 capas lineales) se cuantizo con Intel AutoRound bajo el esquema `W4A16 --bits 4 --group_size 128`, usando 128 muestras de calibracion de 2.048 tokens y exportacion via `auto_round:llm_compressor`. Las cabezas `lm_head`, `embed_tokens` y las 8 capas lineales del modulo MTP se cuantizaron a int8 con redondeo al mas cercano, con error relativo frente a los pesos BF16 de origen de 0,0064 para `lm_head` y de 0,0066 a 0,0153 para las lineales MTP. La torre de vision (333 tensores), las normas y las proyecciones `in_proj_a`/`in_proj_b` de GatedDeltaNet se mantienen en BF16 sin tocar.
 
-El modelo de partida es un ajuste abliterated en BF16: se elimino la direccion de rechazo mediante una edicion de pesos sobre 131 matrices que escriben en el residual, y posteriormente se publico como orcarouter/Qwen3.8-27B-Uncensored (revision 404ea47aaa5d8a8b00049c9e9750089aca011ab2, repo gateado con auto-aprobacion). Sobre ese arbol BF16 local, byte-identico al publicado, se aplico unicamente cuantizacion: no hay fine-tuning posterior, ni RLHF ni DPO adicionales en este paso. La plantilla de chat se modifico de forma deliberada: el nivel de esfuerzo por defecto pasa de xhigh a medium y se anaden alias del vocabulario de OpenAI/gpt-5 (minimal→low, high/max→xhigh, desconocido→medium en lugar de lanzar excepcion); el resto de la plantilla es identico al original.
-
-La receta de cuantizacion usa Intel AutoRound (commit 1139c323, mas un parche local pack-guard para las capas linear_attn y visual no cuantizadas), esquema W4A16 con --bits 4 --group_size 128, calibracion sobre NeelNanda/pile-10k con --nsamples 128 --seqlen 2048, 200 iteraciones y --batch_size 4, con formato de salida auto_round:llm_compressor. La calibracion se ejecuto en streaming por bloques sobre una RTX 3090 (24 GB) y una RTX 3080 Ti (12 GB). El post-procesado (empaquetado int8 de lm_head/embed_tokens/MTP-MLP, construccion del vocabulario borrador de 40k ids y puerta de verificacion verify.sh) esta documentado en el repositorio syv-ai/qwen38-27b-rtx3090. El resultado son 411 tensores empaquetados (400 lineales int4 + 11 int8) y 790 tensores que permanecen en BF16.
+La cabeza de borrador MTP (`mtp.draft_lm_head`) usa 40.960 filas recortadas del `lm_head` int8, con los ids en `mtp_draft_vocab_ids.pt`; ese vocabulario de borrador cubre el 98,39 % de los tokens de salida retenidos. La abliteracion (eliminacion de la direccion de rechazo) es una propiedad del modelo BF16 de origen y se conserva intacta. No se dispone de informacion sobre el volumen de tokens de entrenamiento del modelo base ni sobre si hubo RLHF o DPO en su construccion.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento con modo thinking controlable por niveles de esfuerzo (low, medium, xhigh), con medium como valor por defecto en esta version.
-- Razonamiento matematico medido: 98,0 % de exact match en GSM8K 5-shot con thinking activado.
-- Vision-lenguaje: pipeline image-text-to-text con la torre visual intacta en BF16 (333 tensores), lo que preserva la capacidad multimodal del modelo base.
-- Tool calling y function calling multi-turno, verificado con el parser qwen3_coder de vLLM y activable con --enable-auto-tool-choice.
-- Decodificacion especulativa mediante la cabeza MTP y el vocabulario borrador incluido (DFlash2, k=7).
-- Capacidades agenticas y de razonamiento multi-paso derivadas del modelo base Qwen3.8-27B (no cuantificadas de forma independiente en este repo).
-- Multilingue limitado a ingles y chino segun los metadatos; no hay evaluacion publicada de otros idiomas para este artefacto.
-- API compatible con OpenAI servida en loopback, con reasoning_effort aceptado desde cualquier cliente del protocolo OpenAI.
-- Ausencia practica de rechazos por contenido (modelo abliterated).
+- Generacion de texto conversacional multi-turno en ingles y chino.
+- Razonamiento con modo thinking (se puede desactivar; los benchmarks se midieron con thinking off).
+- Capacidades de vision-lenguaje: pipeline `image-text-to-text` con torre de vision en BF16.
+- Function calling y tool calling conservados en la cuantizacion.
+- Razonamiento multi-paso y uso como agente.
+- Decodificacion especulativa mediante cabeza MTP integrada (y soporte del drafter externo DFlash2 en el stack HyperQwen).
+- Generacion de codigo y matematicas (GSM8K con cadena de pensamiento).
+- Ausencia de rechazos por abliteracion: responde a peticiones que el modelo base rechazaria.
 
 ## Casos de uso
-
-- Asistente matematico o de analisis cuantitativo en local: con 98,0 % en GSM8K 5-shot y thinking activado, se puede desplegar como resolutor de problemas paso a paso en una unica RTX 3090, sin depender de APIs externas.
-- Agente con herramientas en pipelines internos: el soporte de tool calling multi-turno con el parser qwen3_coder permite construir bucles de agente (consulta a bases de datos, ejecucion de comandos, llamadas HTTP) servidos por vLLM.
-- Procesamiento de documentos largos: la ventana nativa de 262.144 tokens permite pasar contratos, expedientes o transcripciones completas en una sola peticion, con --max-model-len 131072 como configuracion conservadora.
-- Extraccion estructurada multimodal: al conservar la torre de vision en BF16, sirve para transcribir y estructurar informacion de capturas, formularios escaneados o diagramas combinados con texto.
-- Generacion de codigo y asistencia en IDE o CI/CD: el modelo hereda el comportamiento de Qwen3.8 en codigo y admite function calling, lo que permite integrarlo en revisiones automatizadas o generacion de tests dentro de un runner con GPU.
-- Creacion de contenido narrativo sin filtros de rechazo: guiones, ficcion o dialogos donde el alineamiento estandar del modelo base bloquea tramas con violencia, ambiguedad moral o lenguaje adulto.
-- Investigacion en seguridad y alineacion: al ser un modelo abliterated con la edicion de pesos documentada (131 matrices), resulta util como sujeto de red-teaming y para estudiar como se comporta la direccion de rechazo tras una cuantizacion agresiva.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye el pipeline exacto y una puerta de verificacion, lo que facilita reproducir comparaciones W4A16 frente a BF16 o FP8 sobre el mismo conjunto de calibracion.
+- Asistencia conversacional sin filtros editoriales: el modelo mantiene conversaciones multi-turno en ingles y chino con hasta 49k tokens de contexto, util para entornos de investigación donde se necesita estudiar el comportamiento del modelo sin rechazos.
+- Analisis de documentos con imagenes: al conservar la torre de vision, puede procesar capturas, diagramas o formularios junto con texto largo en una sola GPU de 24 GB, por ejemplo para extraccion de datos de facturas o tickets.
+- Agente con tool calling en local: integrable en flujos de automatizacion que requieren llamadas a funciones (APIs internas, bases de datos) sin depender de servicios en la nube, gracias al soporte de function calling y al modo thinking.
+- Generacion de codigo en pipelines de CI/CD: con GSM8K del 94,5 % y perplejidad de 3,27 en codigo Python, es adecuado para autocompletado, generacion de tests o revision de parches en un runner con RTX 3090.
+- Servicio por lotes de bajo coste: con 947 tok/s a 64 peticiones concurrentes (128 entrada / 512 salida), sirve para tareas de anotacion masiva, resumen o clasificacion de corpus en una sola maquina.
+- Investigación sobre alineacion y seguridad: la comparacion entre el modelo base (99,0 % de rechazos en AdvBench) y esta variante (0,0 %) lo convierte en una herramienta para estudiar direcciones de rechazo y tecnicas de abliteracion.
+- Despliegue en estaciones de trabajo con una sola GPU: el formato `compressed-tensors` con kernels Marlin en Ampere permite servir el modelo en vLLM 0.28 o superior sin infraestructura de centro de datos.
 
 ## Benchmarks y rendimiento
+Resultados medidos por el autor en una RTX 3090 de 24 GB con vLLM 0.28.0, WSL2 + Docker y thinking desactivado.
 
-| Evaluacion | Configuracion | Resultado |
+Decodificacion monousuario (tok/s, muestreo por defecto / T=0):
+
+| Concurrencia | Este modelo | Variante fast | AutoRound oficial |
+|---|---|---|---|
+| C1 | 116,1 / 121,1 | 124,9 / 127,8 | 116,6 / 118,9 |
+| C2 | 172,6 / 189,2 | 180,3 / 191,2 | 175,7 / 169,6 |
+| C4 | 224,7 / 245,5 | 238,1 / 260,3 | 229,4 / 237,6 |
+| C8 | 209,8 / 256,7 | 224,7 / 233,5 | 223,6 / 207,4 |
+
+En C1 se aceptan 3,71 / 3,97 tokens por paso de verificacion y el tiempo hasta el primer token es de 186 ms.
+
+Servicio por lotes (tok/s):
+
+| Escenario | Este modelo | Variante fast |
 |---|---|---|
-| GSM8K | 5-shot, greedy, thinking activado (medium por defecto), n=250, presupuesto de 8192 tokens | 98,0 % exact match (± 0,89) |
-| GSM8K | Thinking desactivado, greedy, n=200. Medido sobre el checkpoint con alineamiento de rechazo Qwen3.8-27B-W4A16-AutoRound, no sobre este artefacto | 95,5 % |
-| GSM8K | Fuente BF16 (evaluacion de orcarouter, protocolo CoT, n=150) | 88,7 % (−1,3 respecto al modelo base) |
-| MMLU, MMLU-Pro, CMMLU y suites de seguridad | Medidos sobre la fuente BF16 y sus derivados FP8/GGUF, no sobre este checkpoint; sin cifras publicadas en la informacion disponible | no disponible |
+| 64 concurrentes, 128 entrada / 512 salida | 947,2 | 1.044,8 |
+| 64 concurrentes, 256 entrada / 256 salida | 700,4 | 752,4 |
+| Prefill 1.024 tokens | 1.804 | 1.818 |
+| Prefill 102.400 tokens | 1.063 | 1.064 |
+| 1 prompt de 100k: TTFT / TPOT | 93,0 s / 25,4 ms | 92,9 s / 24,6 ms |
+| 4 prompts de 60k, 1.024 salida | 17,1 | 17,4 |
 
-No se han publicado resultados de benchmarks de MMLU, HumanEval, MMLU-Pro, CMMLU ni suites de seguridad medidos sobre este artefacto concreto en la informacion disponible. La unica cifra medida sobre este checkpoint es la de GSM8K con thinking activado.
+Calidad:
+
+| Checkpoint | PPL total (en / da / codigo) | GSM8K | Tokens medios de respuesta |
+|---|---|---|---|
+| Este modelo | 8,216 (10,80 / 10,90 / 3,27) | 94,5 % | 384 |
+| Variante fast | 8,260 (10,83 / 10,98 / 3,29) | 96,0 % | 384 |
+| AutoRound oficial | 8,186 (10,68 / 10,85 / 3,30) | 94,5 % | 379 |
+
+Con n=200, el error estandar de GSM8K es de aproximadamente 1,6 puntos. El autor reporta para el modelo base abliterated (build FP8 por bloques) un 0,0 % de rechazos en AdvBench frente al 99,0 % del modelo original, MMLU del 84,7 % frente al 84,3 % y GSM8K CoT del 88,7 % frente al 90,0 %.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 15,8 GiB de pesos en carga (int4 + int8), sobre un repo de 16,8 GB. El resto de la VRAM queda disponible para cache KV.
-- GPU recomendadas: RTX 3090 (24 GB, Ampere) es el objetivo declarado y la plataforma verificada; el kernel Marlin de compressed-tensors esta etiquetado para Ampere. H100 y A100 son compatibles por VRAM pero no estan documentados en la model card para este artefacto.
-- Cabe en GPU de consumo: si, en tarjetas de 24 GB. No cabria en una RTX 3080 Ti (12 GB), que en este proyecto se uso solo para la calibracion en streaming por bloques.
-- Configuracion de memoria recomendada: --gpu-memory-utilization 0.93 en RTX 3090, valor elegido explicitamente para evitar un OOM de arranque en WSL2/Windows.
-- Opciones de despliegue: vLLM 0.28.0 o superior con --reasoning-parser qwen3, --enable-auto-tool-choice y --tool-call-parser qwen3_coder. Decodificacion especulativa DFlash2 con k=7 y API compatible con OpenAI en loopback. No se documentan llama.cpp, Ollama, TGI ni LMDeploy para este artefacto.
-- Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
-- Contexto y memoria: con --max-model-len 131072 se mantiene un pool KV amplio a 0,93 de utilizacion; la ventana nativa es de 262.144 tokens y la receta de 1M requiere YaRN estatico.
+- VRAM estimada: 16,7 GB de pesos mas cache KV; la configuracion medida usa 4,22 GiB de KV (`KV_MEM=4529848320`) con `MAX_LEN=49152`, lo que encaja en 24 GB.
+- GPU recomendadas: RTX 3090 (referencia medida), A100, H100 y cualquier GPU Ampere o superior con al menos 24 GB; los kernels Marlin estan optimizados para Ampere.
+- Cabe en GPU de consumo: si, en RTX 3090, RTX 4090 (24 GB) y modelos equivalentes; no se indica soporte para GPUs de 16 GB o menos.
+- Despliegue: vLLM 0.28 o superior con `compressed-tensors`, o el stack HyperQwen (Docker Compose, perfiles `single`) en Linux o WSL2. No se menciona soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 116 tok/s en monousuario, 186 ms de TTFT, 947 tok/s con 64 peticiones concurrentes y 1.804 tok/s de prefill a 1.024 tokens (cifras del autor en RTX 3090).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Rendimiento publicado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-W4A16-g128 (este) | 27,8 B en la fuente BF16 | 262.144 nativo | W4A16 g128 + int8 en lm_head/embed/MTP | GSM8K 98,0 % con thinking activado (n=250) | Apache 2.0 | Publico, 0 descargas y 0 likes en el momento de la consulta |
-| orcarouter/Qwen3.8-27B-Uncensored (BF16) | 27,8 B | 262.144 | BF16 | GSM8K 88,7 % (CoT, n=150); MMLU/MMLU-Pro/CMMLU sin cifras en la informacion disponible | Apache 2.0 | Repo gateado con auto-aprobacion |
-| Qwen3.8-27B-W4A16-AutoRound (checkpoint stock con alineamiento de rechazo) | no disponible | no disponible | W4A16 | GSM8K 95,5 % con thinking desactivado (n=200) | no disponible | no disponible |
-| Qwen/Qwen3.8-27B (upstream) | 27,8 B | 262.144 | BF16 | no disponible | Apache 2.0 | Publico |
+| Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Este modelo (W4A16) | 4.537.038.374 | 49.152 | 94,5 % | Apache 2.0 | Hugging Face, vLLM |
+| Orca-Qwen3.8-27B-Uncensored-W4A16-fast | no disponible | no disponible | 96,0 % | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-W4A16-AutoRound (oficial) | no disponible | no disponible | 94,5 % | Apache 2.0 | Hugging Face |
+| orcarouter/Qwen3.8-27B-Uncensored (BF16) | no disponible | no disponible | 88,7 % (CoT) | Apache 2.0 | Hugging Face |
 
-Las cifras de GSM8K de las tres primeras filas no son directamente comparables entre si: varian en el numero de ejemplos (150, 200 y 250), en el protocolo (CoT frente a 5-shot greedy) y en el estado del modo thinking. Ademas, la fila de 95,5 % corresponde a un checkpoint con pesos distintos a los de este repo.
+No se dispone de datos de benchmarks de otros modelos de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a las variantes derivadas del mismo modelo base.
 
 ## Limitaciones y advertencias
-
-- Modelo abliterated: la direccion de rechazo ha sido eliminada mediante edicion de pesos, por lo que no aplica ninguna capa de seguridad efectiva. Puede generar contenido danino, ilegal o gravemente inapropiado ante peticiones adversas.
-- Riesgo de alucinacion estandar en modelos de esta familia, agravado en dominios sin datos de evaluacion publicados para este artefacto.
-- Idiomas: los metadatos solo declaran ingles y chino. El rendimiento en castellano no esta documentado ni evaluado.
-- Discrepancia en el recuento de parametros: el index de safetensors declara 5.395.026.908 parametros frente a los 27,8 B del modelo BF16 de origen. Conviene verificar el artefacto antes de integrarlo en un pipeline de produccion.
-- La cifra de GSM8K con thinking desactivado (95,5 %) se midio sobre un checkpoint diferente, con alineamiento de rechazo, no sobre este modelo.
-- Cambios silenciosos en la plantilla de chat: el esfuerzo por defecto pasa de xhigh a medium y los valores desconocidos se resuelven a medium en lugar de provocar un error. Un cliente que antes recibia un HTTP 400 ahora obtendra una respuesta con un nivel de razonamiento distinto al esperado.
-- Cuantizacion W4A16: la perdida de calidad solo se ha medido con GSM8K, una tarea matematica. No hay evaluaciones de MMLU, codigo o vision sobre estos pesos, por lo que la degradacion en otras tareas es desconocida.
-- Dependencia del kernel Marlin y del hardware Ampere; el comportamiento en otras arquitecturas de GPU no esta documentado.
-- Requiere el fichero mtp_draft_vocab_ids.pt (40.960 ids) para la decodificacion especulativa; omitirlo puede degradar el rendimiento o fallar en el arranque.
-- Licencia Apache 2.0, que permite uso comercial, pero el modelo base esta gateado con auto-aprobacion, por lo que hay que aceptar su acuerdo antes de descargarlo y conviene revisar las condiciones de la cadena de derivacion.
-- Ausencia total de validacion por parte de la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin retroalimentacion independiente sobre calidad o estabilidad.
+- Modelo abliterated: responde a practicamente cualquier peticion (0,0 % de rechazos en AdvBench segun el autor), lo que implica riesgo de generar contenido danino, ilegal o sesgado; requiere moderacion externa en produccion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado por la perdida de alineacion tras la abliteracion.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- La cuantizacion int4 introduce una degradacion pequena pero medible: perplejidad de 8,216 frente a 8,186 del checkpoint oficial AutoRound, y GSM8K identico dentro del error estadistico.
+- El contexto maximo practico esta limitado por la VRAM: con 4,22 GiB de KV se cubren 49.152 tokens; prompts de 100k requieren 93 s de TTFT en una RTX 3090.
+- El soporte esta ligado a vLLM 0.28 o superior y a kernels Marlin en Ampere; no hay garantia de funcionamiento en otras pilas de inferencia.
+- La licencia Apache 2.0 permite uso comercial, pero el integrador asume la responsabilidad legal sobre las salidas del modelo sin rechazos.
+- El numero de parametros reportado por safetensors (4.537 millones) no coincide con la denominacion "27B" del nombre comercial; conviene verificar el recuento real antes de dimensionar infraestructura.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128
-- Modelo base (BF16 abliterated, gateado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Modelo upstream (Qwen/Qwen3.8-27B, citado en el linaje como origen Apache 2.0): https://huggingface.co/Qwen/Qwen3.8-27B
-- Commit de Intel AutoRound usado en la cuantizacion: https://github.com/intel/auto-round/commit/1139c323
-- Repositorio del pipeline de cuantizacion y verificacion: https://github.com/syv-ai/qwen38-27b-rtx3090
-- Documento de calidad del pipeline (incluye la medicion de GSM8K con thinking desactivado): https://github.com/syv-ai/qwen38-27b-rtx3090/blob/main/docs/quality.md
-- Dataset de calibracion: https://huggingface.co/datasets/NeelNanda/pile-10k
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.
+- Hugging Face: https://huggingface.co/TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128
+- Modelo base abliterated: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Variante fast: https://huggingface.co/TyroneNel/Orca-Qwen3.8-27B-Uncensored-W4A16-fast
+- Stack HyperQwen: https://github.com/syv-ai/HyperQwen

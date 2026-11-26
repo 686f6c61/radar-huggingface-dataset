@@ -2,124 +2,108 @@
 
 ## Resumen
 
-RoboJev-27B es un modelo visión-lenguaje especializado en una única tarea: dictaminar si un robot ha completado la instrucción que se le dio. No es un modelo conversacional ni genera texto; recibe una instrucción en lenguaje natural y cuatro fotogramas de una misma cámara (inicio del intento, un tercio, dos tercios y final) y devuelve un único número entre 0 y 1, la probabilidad de éxito. Lo publica el usuario josefchen como fine-tune de autotrust/JEV-27B-VL, que a su vez se apoya en la arquitectura Qwen3.8-27B según la model card.
+RoboJev-27B es un modelo de visión-lenguaje especializado en la detección de éxito en tareas de robótica (success detection). Lo desarrolla Josef Chen como investigador independiente y se distribuye con licencia Apache 2.0. El modelo recibe una instrucción de tarea en texto libre, diez fotogramas de la cámara principal de un intento de ejecución y, opcionalmente, el último fotograma de cámaras auxiliares, y devuelve una probabilidad calibrada de que la tarea se haya completado.
 
-El modelo resuelve un problema muy concreto en robótica de manipulación: etiquetar automáticamente rollouts de políticas (por ejemplo SO-101 con LeRobot) sin revisar vídeo a revisión humana, servir de señal de recompensa en aprendizaje sobre hardware real y filtrar demostraciones fallidas antes de entrenar. Con 27.356.728.560 parámetros (~27,4 B) en bf16 y 54,7 GB de pesos, cabe en una sola GPU de 80 GB y resuelve cada veredicto en aproximadamente medio segundo en una H100.
+El modelo parte de un fine-tuning sobre `autotrust/JEV-27B-VL` (a su vez derivado de la familia Qwen 3.5, según los tags de arquitectura) y cuenta con 27.356.728.560 parámetros en formato safetensors. Su relevancia radica en que sustituye a modelos frontera en una tarea concreta de evaluación de robots con un coste computacional muy inferior: según la model card, logra un 95,2 % de balanced accuracy en 268 episodios SO-101 retenidos, frente al 91,9-93,3 % de GPT-6 Astra, GPT-6.1 Sol, Claude Opus 5.5 y Claude Sonnet 5.5, con un coste estimado de 0,19 dólares por cada 1.000 respuestas frente a 2,08-9,29 dólares de las APIs frontera.
 
-Su relevancia radica en el enfoque de decisión: en lugar de generar una respuesta textual, el cliente lee los log-probabilities de los tokens `false` y `true` en un punto fijo del prompt (`[decision]:`), aplica unos offsets almacenados en `decision.json` y normaliza por temperatura. Es, en la práctica, un clasificador binario calibrado construido sobre un VLM grande, con licencia Apache 2.0.
+La inferencia es de un solo pase hacia delante sin generación de explicación: se leen las puntuaciones de los tokens `false` y `true` en una posición de respuesta y se aplica una calibración publicada. La latencia mediana en serie es de 0,26 segundos sobre una H100, lo que lo hace viable para evaluación en bucle cerrado durante la ejecución de políticas robóticas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; según el autor, Qwen3.8-27B con los pesos de decisión de JEV-27B-VL y el entrenamiento de RoboJev integrados. No se especifica si es transformer denso o MoE |
-| Parámetros totales | 27.356.728.560 (~27,4 B), dato real de safetensors |
-| Parámetros activos | No disponible (no se confirma que sea MoE) |
-| Longitud de contexto | 32.768 tokens en el ejemplo de despliegue del autor (`--max-model-len 32768`); no se declara la ventana nativa |
-| Tipos de cuantización | No disponible; solo se publican pesos en bf16 (54,7 GB) |
-| Idiomas soportados | No disponible (los ejemplos e instrucciones de la model card están en inglés) |
+| Arquitectura | Transformer multimodal visión-lenguaje (familia Qwen 3.5, tag `qwen3_5`); detalles internos no disponibles |
+| Parametros totales | 27.356.728.560 (27,36 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16), cargable con transformers y vLLM |
-| Pipeline | image-text-to-text |
-| Modelo base | autotrust/JEV-27B-VL (fine-tune) |
+| Formato de pesos | safetensors (librería transformers; compatible con vLLM) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el resultado como «Qwen3.8-27B con los pesos de decisión de JEV-27B-VL y el entrenamiento de RoboJev plegados», sin detallar la configuración interna (número de capas, atención, si hay mezcla de expertos). Es un VLM de imagen y texto que se carga como cualquier modelo Qwen3.8 con `vllm serve` o `transformers`. El mecanismo de inferencia es la pieza diferencial: la instrucción y los cuatro fotogramas se insertan en un prompt fijo que termina en el literal `[decision]:`; el modelo no emite texto, y el cliente extrae los log-probabilities de los dos tokens `false` y `true`, les suma los offsets recogidos en `decision.json`, divide por la temperatura configurada y convierte el par de puntuaciones en una probabilidad. Todo ese material (prompt, ids de token, offsets y temperatura) viaja en el repositorio.
+RoboJev-27B es un modelo visión-lenguaje de tipo image-text-to-text construido por fine-tuning sobre `autotrust/JEV-27B-VL`, que a su vez pertenece a la familia Qwen 3.5 según los tags del repositorio. El uso previsto es la clasificación binaria de éxito: el cliente envía la instrucción de la tarea como texto libre y diez fotogramas muestreados uniformemente desde el inicio hasta el final del intento, más el último fotograma de cada cámara auxiliar disponible. El modelo lee las puntuaciones de los tokens `false` y `true` en una única posición de respuesta y aplica una calibración publicada para devolver P(éxito), sin generar explicación textual.
 
-En cuanto a datos, el autor indica que RoboJev se entrenó con otras sesiones de grabación del mismo montaje SO-101 y que, en el conjunto de evaluación principal, nunca vio dos de las ocho tareas. No se publican el número de tokens, la composición del dataset, ni si hubo RLHF o DPO. Sí se documenta la integración con LeRobot (`lerobot_plugin/`), que añade un modelo de recompensa `robojev` para episodios grabados y un paso de recompensa para aprendizaje en robot real, sustituyendo al clásico clasificador entrenado por tarea.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La model card menciona un catálogo construido a partir del Hub con 68.555 episodios en 7.641 datasets públicos de LeRobot (aproximadamente 501 horas de vídeo) y un conjunto de evaluación de 927 episodios etiquetados por humanos, con 20.628 predicciones publicadas en 29 entradas modelo/protocolo. La evaluación principal se realiza sobre 268 episodios SO-101 retenidos y 862 episodios puntuados tras excluir 65 clips ambiguos. Los pesos evaluados están fijados en el commit `e089a9b69a365744b80765057d86583647af95a9`.
 
 ## Capacidades
 
-- Juicio de éxito o fracaso de una tarea robótica a partir de instrucción + cuatro fotogramas, devolviendo una probabilidad calibrada entre 0 y 1.
-- Procesamiento conjunto de imagen y texto (pipeline image-text-to-text), con hasta 8 imágenes por prompt en la configuración de vLLM indicada por el autor (`--limit-mm-per-prompt '{"image": 8}'`).
-- Extracción de fotogramas automática desde vídeo: el cliente `robojev.py` corta los cuatro fotogramas necesarios a partir de un MP4 (requiere `ffmpeg`).
-- Veredicto en directo sobre vídeo o cámara, recalculado cada medio segundo, mediante `robojev_overlay.py` (cámara requiere `opencv-python`).
-- Uso como modelo de recompensa en LeRobot, tanto para puntuar episodios ya grabados como para aprendizaje sobre robot real.
-- No soporta generación de texto libre, tool calling ni razonamiento multi-paso: la salida es un escalar derivado de log-probabilities.
-- Capacidades multilingües: no documentadas; los prompts de ejemplo están en inglés.
+- Clasificación binaria de éxito de tareas robóticas a partir de instrucción en texto libre y secuencia de imágenes.
+- Procesamiento de múltiples cámaras: diez fotogramas de la cámara principal más el último fotograma de cada cámara auxiliar.
+- Salida de probabilidad calibrada P(éxito) mediante lectura de logits de los tokens `false` y `true` y calibración publicada.
+- Inferencia de un solo pase sin generación de cadena de razonamiento, lo que reduce latencia y coste.
+- Integración con vLLM y con el ecosistema transformers.
+- Orientado a modelos de robot concretos como SO-101 y a datos en formato LeRobot.
+- Capacidades generales de visión-lenguaje heredadas del modelo base: no documentadas explícitamente en la información disponible.
+- Soporte de tool calling y de agentes multi-paso: no documentado en la información disponible.
 
 ## Casos de uso
 
-- Puntuación automática de barridos de políticas: lanzar cientos de intentos de una política robótica y obtener una tasa de éxito sin revisar cada vídeo a mano, usando `judge.done(instrucción, vídeo)` con los cuatro fotogramas extraídos automáticamente.
-- Señal de recompensa en aprendizaje sobre hardware real: el plugin de LeRobot integra `robojev` como reward model, de modo que el bucle de entrenamiento recibe una probabilidad de éxito por episodio en lugar de depender de un clasificador entrenado específicamente para cada tarea.
-- Curación de datasets de demostraciones: detectar episodios fallidos o incompletos en un dataset antes de entrenar con ellos, filtrando por el valor devuelto y evitando que las políticas imiten ejecuciones rotas.
-- Monitorización en producción de una célula robotizada: ejecutar `robojev_overlay.py --camera 0` para obtener un veredicto continuo cada ~0,5 s y disparar alertas o reintentos cuando la probabilidad se queda baja al final del ciclo.
-- Verificación por paso en secuencias programadas: cuando un programa dirige el robot, comprobar que cada subobjetivo se ha cumplido antes de pasar al siguiente, usando la misma instrucción y ventanas de cuatro fotogramas por etapa.
-- Evaluación comparativa de checkpoints: dado que el modelo no ha visto dos de las ocho tareas de ArmnetBench, sirve como juez sobre tareas nuevas del mismo montaje para comparar versiones de una política sin etiquetado humano adicional.
-- Control de calidad en laboratorios con brazos distintos: en el conjunto OOD (Franka, Koch, Trossen, xArm, otro SO-101) mantiene un ranking score de 0,872, suficiente como filtro grueso antes de la revisión humana.
+- Evaluación automática de políticas robóticas en investigación: el modelo puntúa cada intento de una política sobre SO-101 con P(éxito) calibrada, permitiendo calcular tasas de éxito sobre cientos de episodios sin intervención humana y con un coste de 0,19 dólares por 1.000 respuestas.
+- Etiquetado y curación de datasets LeRobot: dado un catálogo de decenas de miles de episodios, RoboJev-27B puede gradear aproximadamente 68.555 episodios en unas 4,9 GPU-horas (13,16 dólares), frente a los 637 dólares estimados con GPT-6 Astra.
+- Bucle cerrado durante la ejecución: con 0,26 segundos de latencia mediana en una H100, el modelo puede consultarse cada medio segundo durante una tarea real, como demuestra la model card con una tarea de anillas fuera del conjunto de entrenamiento.
+- Detección de fallos en producción robótica: integrado en el pipeline de control, permite abortar o reintentar una tarea cuando P(éxito) cae por debajo de un umbral, usando las cámaras auxiliares para desambiguar oclusiones.
+- Comparación de variantes de políticas y checkpoints: al ser determinista y barato, permite comparaciones estadísticamente robustas entre versiones de un mismo agente sobre el mismo conjunto de episodios.
+- Investigación en recompensas automáticas: la salida calibrada puede usarse como señal de recompensa o de filtrado en pipelines de aprendizaje por refuerzo o de imitación, sustituyendo anotación humana en la fase de evaluación.
+- Validación de datos de teleoperación: detectar episodios mal etiquetados o fallidos en datasets de demostración antes de entrenar una política.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor. Todos los modelos reciben los mismos cuatro fotogramas y la misma pregunta.
+Resultados publicados en la model card sobre 268 episodios SO-101 retenidos (balanced accuracy y coste por 1.000 respuestas):
 
-**ArmnetBench — 268 intentos de siete políticas sobre un brazo SO-101 real, ocho tareas, juicio humano; RoboJev no vio dos de las ocho tareas:**
+| Modelo | Balanced accuracy | Coste por 1.000 respuestas (USD) |
+|---|---|---|
+| RoboJev-27B | 95,2 % | 0,19 |
+| GPT-6 Astra | 91,9 %-93,3 % (rango del grupo) | 2,08-9,29 |
+| GPT-6.1 Sol | 91,9 %-93,3 % (rango del grupo) | 2,08-9,29 |
+| Claude Opus 5.5 | 91,9 %-93,3 % (rango del grupo) | 2,08-9,29 |
+| Claude Sonnet 5.5 | 91,9 %-93,3 % (rango del grupo) | 2,08-9,29 |
 
-| Modelo | Ranking score | Aciertos | Error de calibración | Tareas no vistas |
-|---|---:|---:|---:|---:|
-| RoboJev-27B | 0,987 | 92,4% | 0,052 | 0,973 |
-| JEV-27B-VL | 0,983 | 87,7% | 0,113 | 0,977 |
-| TypeSafe Jev 1.14 | 0,975 | 82,9% | 0,177 | 0,958 |
-| Perplexity Decider v1.2 | 0,954 | 81,1% | 0,116 | 0,947 |
-| Inception Mercury Decide | 0,938 | 81,6% | 0,109 | 0,949 |
-| Liquid d1-ultra | 0,918 | 81,4% | 0,062 | 0,878 |
-| Robometer-4B (lee el vídeo completo) | 0,777 | 67,7% | 0,251 | 0,812 |
-
-**RBM-1M OOD — 459 intentos de ocho laboratorios (Franka en dos laboratorios, Koch, Trossen, xArm y otro SO-101); ningún modelo entrenó con ellos:**
-
-| Modelo | Ranking score | Aciertos | Error de calibración |
-|---|---:|---:|---:|
-| Perplexity Decider v1.2 | 0,885 | 76,1% | 0,168 |
-| JEV-27B-VL | 0,880 | 77,4% | 0,162 |
-| RoboJev-27B | 0,872 | 76,1% | 0,173 |
-| Liquid d1-ultra | 0,859 | 73,5% | 0,143 |
-| Inception Mercury Decide | 0,859 | 75,6% | 0,205 |
-| TypeSafe Jev 1.14 | 0,841 | 72,1% | 0,197 |
-| Robometer-4B (lee el vídeo completo) | 0,818 | 59,8% | 0,414 |
-
-Métricas según el autor: ranking score es la probabilidad de que un intento exitoso aleatorio puntúe por encima de uno fallido (0,5 = azar); aciertos es la media entre la proporción de éxitos detectados y la de fallos detectados con umbral 0,5; el error de calibración mide la desviación entre la probabilidad declarada y la frecuencia real. En OOD, el propio autor advierte que con 459 intentos las diferencias por debajo de ~0,03 en ranking score no son significativas.
+Notas: el intervalo de confianza pareado al 95 % para la diferencia de balanced accuracy frente a GPT-6 Astra incluye el cero. Los modelos de lenguaje recibieron cuatro fotogramas de la cámara principal, mientras que RoboJev-27B recibió diez fotogramas más las demás cámaras. Los costes de API son precios de lista de las ejecuciones del autor; el coste de RoboJev-27B se estima con una H100 a 2,69 dólares por hora. Latencia mediana en serie de RoboJev-27B: 0,26 s en una H100; las APIs frontera registraron medianas de 5-7 s por llamada. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: los pesos en bf16 ocupan 54,7 GB; el autor afirma que el modelo cabe en una GPU de 80 GB. Estimación orientativa del editor para el conjunto completo en bf16 con caché KV: ~60-70 GB según longitud de contexto y lote (no publicado por el autor).
-- GPU recomendadas: H100 80 GB (referencia del autor, ~0,5 s por veredicto), A100 80 GB. En GPUs de 40 GB o menos no cabe en bf16 sin cuantizar.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en configuraciones de 48 GB en bf16. No se han publicado pesos GGUF ni recetas de cuantización para hacerlo viable en consumo.
-- Despliegue: vLLM es la vía documentada, con las opciones `--served-model-name robojev --max-model-len 32768 --limit-mm-per-prompt '{"image": 8}' --logprobs-mode processed_logprobs --trust-request-chat-template`. También carga con `transformers`. No hay integración confirmada con llama.cpp, Ollama ni TGI.
-- Latencia: ~0,5 s por veredicto en una H100, según el autor. Throughput con batching no disponible.
-- Cliente: `robojev.py` requiere `requests` y `pillow`; para vídeo, `ffmpeg`. El plugin de LeRobot se instala con `pip install ./robojev/lerobot_plugin`.
-- Almacenamiento: 54,7 GB de repositorio; conviene descarga selectiva (`--include "lerobot_plugin/*"`) para el plugin.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 27,36 B de parámetros, en FP16/BF16 se requieren aproximadamente 55 GB de pesos más memoria para activaciones y caché de imágenes; en cuantización de 8 bits rondaría los 27-30 GB y en 4 bits unos 14-16 GB, aunque estas cifras son estimaciones y no están confirmadas por el autor.
+- GPU recomendadas: H100 (medición oficial del autor, 0,26 s de latencia mediana en serie). Por tamaño, cabría esperar viabilidad en A100 80 GB y en configuraciones multi-GPU para FP16.
+- GPU de consumo: no confirmado. En cuantización agresiva podría caber en RTX 4090 (24 GB) o RTX 3090 (24 GB), pero no hay datos publicados al respecto.
+- Opciones de despliegue: transformers y vLLM (ambos citados en los tags y en la model card).
+- Latencia y throughput: 0,26 s mediana por respuesta en serie sobre una H100; el autor estima 4,9 GPU-horas para graduar 68.555 episodios, lo que equivale a unos 3,9 episodios por segundo en una H100.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Ranking (ArmnetBench) | Ranking (OOD) | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---|---|
-| RoboJev-27B | 27,36 B | 32.768 tokens (config. de despliegue) | 0,987 | 0,872 | Apache 2.0 | Hugging Face (josefchen/RoboJev-27B) |
-| JEV-27B-VL | No disponible | No disponible | 0,983 | 0,880 | No disponible | Hugging Face (autotrust/JEV-27B-VL) |
-| Perplexity Decider v1.2 | No disponible | No disponible | 0,954 | 0,885 | No disponible | No disponible |
-| Liquid d1-ultra | No disponible | No disponible | 0,918 | 0,859 | No disponible | No disponible |
-| Robometer-4B | ~4 B (por el nombre) | No disponible | 0,777 | 0,818 | No disponible | Hugging Face (robometer) |
+| Modelo | Parámetros | Contexto | Balanced accuracy (SO-101) | Coste/1.000 respuestas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| RoboJev-27B | 27,36 B | no disponible | 95,2 % | 0,19 USD (GPU propia) | Apache 2.0 | Pesos abiertos en HF |
+| GPT-6 Astra | no disponible | no disponible | 91,9 %-93,3 % | 2,08-9,29 USD (API) | propietaria | Solo API |
+| GPT-6.1 Sol | no disponible | no disponible | 91,9 %-93,3 % | 2,08-9,29 USD (API) | propietaria | Solo API |
+| Claude Opus 5.5 | no disponible | no disponible | 91,9 %-93,3 % | 2,08-9,29 USD (API) | propietaria | Solo API |
+| Claude Sonnet 5.5 | no disponible | no disponible | 91,9 %-93,3 % | 2,08-9,29 USD (API) | propietaria | Solo API |
 
-Criterio de comparación: todos son jueces de éxito robótico evaluados sobre los mismos cuatro fotogramas. RoboJev-27B es el mejor en el conjunto dentro de distribución y el mejor calibrado (0,052), mientras que en OOD queda tercero dentro del ruido estadístico, por detrás de Perplexity Decider v1.2 y de su propio modelo base JEV-27B-VL. Frente a Robometer-4B, que procesa el vídeo completo, RoboJev obtiene mejores cifras con solo cuatro fotogramas y un coste de ~0,5 s por veredicto. No se dispone de parámetros, contexto ni licencia del resto de competidores.
+La model card menciona además dos APIs de decisión (TypeSafe Jev 1.14 y Perplexity Decider) en el marcador comparativo, pero no se detallan sus cifras en la información disponible. No se dispone de comparación con otros modelos abiertos de success detection en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de tarea única: no genera texto, no razona en varios pasos y no responde a preguntas generales. Cualquier uso fuera del juicio de éxito requiere adaptación.
-- Dependencia estricta del protocolo de decisión: hay que usar el prompt, los ids de token, los offsets y la temperatura de `decision.json`, y servir con `--logprobs-mode processed_logprobs`. Un tokenizador o plantilla de chat distinta invalida la calibración.
-- En robots no vistos, la ventaja desaparece: ranking 0,872 y error de calibración 0,173, con diferencias dentro del ruido frente a otros modelos. El autor documenta 28 intentos de 459 (la mayoría de un laboratorio) en los que los cuatro mejores modelos se equivocan con alta confianza.
-- Sesgo de dominio: entrenado con sesiones de un montaje SO-101 concreto; generaliza peor a otras cámaras, iluminaciones, brazos o tareas de manipulación fina.
-- Clips ambiguos: en los casos disputados de OOD, el vídeo termina antes de que el desenlace sea visible (por ejemplo, el objeto aún en la pinza). El modelo no puede acertar si el resultado no aparece en los fotogramas.
-- Dependencia del muestreo de fotogramas: el cliente toma inicio, un tercio, dos tercios y final; un corte mal alineado con la ejecución real degrada el veredicto.
-- Idiomas no declarados: no hay garantía de comportamiento con instrucciones en castellano; los ejemplos publicados están en inglés.
-- Licencia Apache 2.0 permite uso comercial, pero no se detalla si el modelo base o los datos de entrenamiento imponen restricciones adicionales.
-- Madurez: 0 descargas y 0 likes en el momento de la consulta, creado el 20 de octubre de 2026; sin validación independiente de la comunidad más allá de los números del autor.
-- Sin cuantizaciones publicadas, lo que limita el despliegue fuera de GPUs de 80 GB.
+- La ventaja de balanced accuracy frente a GPT-6 Astra no es estadísticamente concluyente: el intervalo de confianza pareado al 95 % de la diferencia incluye el cero.
+- La comparación no es completamente homogénea: RoboJev-27B recibió diez fotogramas y cámaras auxiliares, mientras que los modelos de lenguaje recibieron cuatro fotogramas de la cámara principal.
+- El modelo está entrenado y evaluado principalmente sobre SO-101 y datos LeRobot; su generalización a otros brazos, morfologías o dominios no está documentada.
+- No se documentan sesgos conocidos, tasas de alucinación ni comportamiento fuera de distribución más allá de la mención a una tarea de anillas fuera del conjunto de entrenamiento.
+- Idiomas soportados no disponibles; la instrucción de tarea se envía en texto libre pero no se especifica cobertura multilingüe.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base (`autotrust/JEV-27B-VL`) y sus dependencias deben verificarse por separado.
+- El uso previsto es la clasificación binaria de éxito; no debe emplearse como generador de texto general ni como sustituto de un modelo de razonamiento.
+- Los pesos evaluados están fijados en un commit concreto; actualizaciones posteriores de documentación no implican cambios en los pesos, pero conviene verificar el hash en producción.
+- El coste de 0,19 dólares por 1.000 respuestas asume una H100 a 2,69 dólares por hora; el coste real variará según el proveedor y la utilización.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/josefchen/RoboJev-27B
-- Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
-- Dataset de evaluación ArmnetBench: https://huggingface.co/datasets/armnet/armnetbench_v01_robometer
-- Dataset de evaluación fuera de distribución RBM-1M OOD: https://huggingface.co/datasets/robometer/rbm-1m-ood
-- Vídeo de ejemplo, intento exitoso: https://huggingface.co/josefchen/RoboJev-27B/resolve/main/examples/robojev-ring-successful.mp4
-- Vídeo de ejemplo, intento fallido: https://huggingface.co/josefchen/RoboJev-27B/resolve/main/examples/robojev-ring-failure.mp4
-- Otros enlaces (paper, blog, repositorio independiente, demo): no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo: los hits obtenidos son calendarios de eventos caninos y de deportes de invierno, sin relación con RoboJev-27B.
+- Paper en arXiv: https://arxiv.org/abs/2610.33718
+- Página de lanzamiento: https://robo-jev.com
+- Demo: https://robo-jev.com/demo
+- Resultados completos: https://robo-jev.com/data
+- Dataset de evaluación: https://huggingface.co/datasets/josefchen/RoboJev-evals
+- Código en GitHub: https://github.com/josefchen/robojev
+- Pesos fijados (commit): https://huggingface.co/josefchen/RoboJev-27B/tree/e089a9b69a365744b80765057d86583647af95a9
+- Fuente LaTeX del paper: https://huggingface.co/josefchen/RoboJev-27B/resolve/main/paper/RoboJev-arxiv-source.zip
+- Bundle de reproducibilidad: https://huggingface.co/josefchen/RoboJev-27B/resolve/main/paper/RoboJev-reproducibility.zip
+- BibTeX: https://huggingface.co/josefchen/RoboJev-27B/resolve/main/paper/CITATION.bib

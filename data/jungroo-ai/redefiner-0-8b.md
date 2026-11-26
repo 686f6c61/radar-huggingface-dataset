@@ -2,100 +2,111 @@
 
 ## Resumen
 
-ReDefiNER 0.8B es un modelo de reconocimiento de entidades nombradas (NER) y extracción de información desarrollado por Jungroo AI Labs. Se trata de un fine-tune del modelo base Qwen/Qwen3.5-0.8B, con 755.675.585 parámetros reales, especializado en span-labeling y token-classification. Su particularidad es que no es generativo: no escribe texto nuevo, sino que marca y etiqueta spans exactos del texto de entrada según un "rulebook" en inglés llano que define los tipos de entidad que el usuario quiere extraer.
+ReDefiNER 0.8B es un modelo de reconocimiento de entidades nombradas (NER) y extraccion de informacion desarrollado por Jungroo AI Labs. A diferencia de los modelos generativos, es un modelo discriminativo de etiquetado de spans: identifica y marca fragmentos de texto segun un "rulebook" (libro de reglas) escrito en lenguaje natural, sin generar texto nuevo. El modelo se construye sobre Qwen/Qwen3.5-0.8B y emplea cabezas propias de span y label, por lo que requiere la libreria `redefiner` en lugar de `transformers` estandar.
 
-El modelo resuelve el problema de la extracción de entidades personalizable sin reentrenamiento: el usuario edita un fichero de reglas en lenguaje natural (tipos de entidad, descripciones de una línea y reglas específicas) y el modelo aplica esas definiciones sobre el texto. Esto lo hace adecuado para detección de PII, redacción de datos sensibles y extracción de información estructurada en dominios cambiantes, sin necesidad de anotar datos ni reentrenar el modelo.
+Su propuesta central es la redefinicion sin reentrenamiento: para cambiar que entidades detecta el modelo, el usuario edita las reglas en texto plano (tipos, descripciones y restricciones), no los pesos. Con 755 millones de parametros y un unico fichero int8 de 0,77 GB, esta disenado para ejecutarse en CPU convencional (2-2,6 GB de memoria en pico) o GPU NVIDIA, y funciona offline una vez descargado, lo que lo hace adecuado para entornos con requisitos estrictos de privacidad como banca, sanidad o administracion publica.
 
-Es relevante ahora porque ofrece un rendimiento cercano a modelos frontera en una tarea concreta (68,1 F1 en CrossNER AI frente a 73,1 de Claude Haiku 5.5 y 72,4 de Gemini 3.1 Pro, con el mismo rulebook) ejecutándose en CPU, con un único fichero int8 de 0,77 GB, licencia Apache 2.0 y funcionamiento offline. Está pensado para equipos que no pueden enviar datos fuera de sus servidores, como banca, sanidad y administración pública.
+Es relevante ahora porque ofrece una alternativa de bajo coste y desplegable on-premise a los modelos frontera para tareas de extraccion estructurada y deteccion de PII, con licencia Apache 2.0 que permite uso comercial. El modelo es solo para ingles y esta pensado para equipos que no pueden enviar datos a servicios externos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (fine-tune de Qwen/Qwen3.5-0.8B) con cabezas propias de span y label |
-| Parámetros totales | 755.675.585 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible; rulebooks probados hasta ~10.000 tokens; spans de hasta 16 tokens por defecto (64 para PII) |
-| Tipos de cuantización | int8 (fichero de 0,77 GB); etiqueta 8-bit en Hugging Face |
-| Idiomas soportados | inglés (en) |
+| Arquitectura | Transformer derivado de Qwen3.5-0.8B con cabezas propias de span y label (token-classification) |
+| Parametros totales | 755.675.585 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (rulebooks probados hasta ~10.000 tokens) |
+| Tipos de cuantizacion | int8 (fichero de 0,77 GB); 8-bit segun tags |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (carga mediante el paquete `redefiner`, no solo `transformers`) |
+| Formato de pesos | safetensors (cargados via libreria `redefiner`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer de aproximadamente 0,8 mil millones de parámetros, y se ha ajustado como modelo de token-classification con cabezas específicas de span y label. A diferencia de un modelo generativo, su salida son spans de caracteres exactos, cada uno con un tipo y una puntuación de confianza. La innovación principal es el control mediante rulebook: el comportamiento se define en tiempo de inferencia mediante un fichero de reglas en inglés llano con tipos de entidad, descripciones de una línea y reglas adicionales (por ejemplo, "etiquetar el nombre completo; excluir títulos como Dr o Prof"). No se requiere reentrenamiento para cambiar qué entidades se extraen.
+El modelo parte de Qwen/Qwen3.5-0.8B y anade cabezas especificas de etiquetado de spans y de tipos, lo que lo convierte en un modelo discriminativo de token-classification en lugar de un generador. Soporta dos modos: extract mode, que localiza y etiqueta spans en el texto de entrada, y label mode, que asigna tipos a spans ya proporcionados por el usuario. La salida son spans de caracteres exactos con su tipo y un valor de confianza; el modelo nunca escribe texto nuevo.
 
-No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo soporta dos modos: extract mode, que localiza y etiqueta spans en el texto, y label mode, que tipifica spans ya proporcionados por el usuario. La liberación de pesos corresponde a la versión 1.0 (octubre de 2026) y el paquete `redefiner` a la versión 1.0.10.
+La innovacion principal es el control mediante rulebooks en lenguaje natural: cada tipo de entidad se declara con una descripcion de una linea y reglas opcionales, y el modelo las sigue sin reentrenamiento. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Los spans tienen por defecto un maximo de 16 tokens, ampliable con `max_span_tokens` (64 para PII). En textos largos, cada parte se procesa de forma independiente, lo que puede producir etiquetas inconsistentes a lo largo de un documento.
 
 ## Capacidades
 
-- Extracción de entidades nombradas (NER) definidas por el usuario mediante un rulebook en inglés llano, sin reentrenamiento.
-- Span-labeling con devolución de spans de caracteres exactos, tipo de entidad y confianza.
-- Label mode: tipificación de spans ya identificados por el usuario.
-- Detección de PII (información personal identificable) y apoyo a redacción de datos sensibles.
-- Extracción de información estructurada en dominios diversos (producto, versión, dispositivo, código de error, organización, etc.).
-- Rule-following: aplicación de reglas específicas por tipo de entidad, como exclusiones o criterios de etiquetado.
-- Ejecución en CPU y en GPU NVIDIA; funcionamiento offline una vez descargado.
+- Extraccion de entidades nombradas (NER) guiada por rulebook en lenguaje natural, con spans de caracteres exactos.
+- Etiquetado de spans preexistentes (label mode) ademas de la extraccion (extract mode).
+- Deteccion de PII y soporte a redaccion de datos sensibles (personas, cuentas, emails, telefonos, etc.).
+- Extraccion de informacion estructurada: productos, versiones, dispositivos, codigos de error.
+- Seguimiento de reglas (rule-following) con restricciones del tipo "etiqueta el nombre completo, sin titulos".
+- Salida no generativa: no produce texto nuevo, solo marcas sobre el texto de entrada.
+- Ejecucion en CPU sin GPU y funcionamiento offline tras la descarga.
 - Interfaces Python (`Tagger.extract`, `Tagger.label`) y servidor HTTP local (`redefiner serve`).
-- No soporta generación de texto, tool calling, agentes, visión, audio ni razonamiento multi-paso; es exclusivamente no generativo.
+- Capacidades multilingues: no disponibles; solo ingles.
 
 ## Casos de uso
 
-- Detección y redacción de PII en atención al cliente: con un rulebook que defina PERSON, ACCOUNT_ID, EMAIL y PHONE, el modelo marca los spans sensibles en tickets y correos para su enmascaramiento antes de almacenarlos o enviarlos a terceros, sin sacar los datos del servidor.
-- Cumplimiento normativo en banca y seguros: extracción de identificadores de cuenta, nombres y contactos en documentación para anonimización previa a auditorías, aprovechando que el modelo funciona offline y con licencia Apache 2.0.
-- Procesamiento de documentación sanitaria: identificación de nombres de pacientes y profesionales en informes para seudonimización, con la ventaja de que el texto no abandona la infraestructura del hospital.
-- Extracción de información de producto en soporte técnico: un rulebook con PRODUCT, VERSION, DEVICE y ERROR_CODE permite estructurar tickets y mensajes de error en campos explotables por sistemas de ticketing o analítica.
-- Enriquecimiento de pipelines de datos con entidades personalizadas: el equipo de datos edita el rulebook para adaptar la extracción a nuevos dominios sin reentrenar ni anotar datos, reduciendo el ciclo de iteración.
-- Servicio local de etiquetado vía HTTP: despliegue con `redefiner serve` en un servidor CPU para ofrecer extracción de entidades a otras aplicaciones internas, con latencias de 0,4–0,7 s por frase en CPU de 4 núcleos o Apple M2.
-- Preetiquetado para anotación humana: uso del modelo para generar spans candidatos que los anotadores revisan, acelerando la construcción de datasets de NER en dominios nuevos.
+- Deteccion y redaccion de PII en soporte al cliente: con un rulebook de privacidad (PERSON, ACCOUNT_ID, EMAIL, PHONE), el modelo marca los spans sensibles en tickets antes de almacenarlos o enviarlos a terceros, y al ejecutarse offline mantiene los datos en los servidores propios.
+- Cumplimiento normativo en banca y sanidad: extraccion de identificadores y datos personales en documentos para anonimizacion previa a auditorias, sin sacar informacion de la infraestructura interna.
+- Enriquecimiento de tickets de soporte tecnico: con un rulebook de producto (PRODUCT, VERSION, DEVICE, ERROR_CODE), se extraen automaticamente los componentes afectados para clasificar y enrutar incidencias.
+- Procesamiento de contratos y formularios: extraccion de nombres, organizaciones e identificadores mediante rulebooks adaptados a cada tipo documental, sin reentrenar el modelo al cambiar de dominio.
+- Pipelines de ingesta de datos: etiquetado de campos en textos no estructurados para alimentar bases de datos o indices de busqueda, con spans exactos y confianza por entidad.
+- Despliegue en entornos air-gapped: organizaciones que no pueden usar APIs externas pueden ejecutar el modelo en CPU en sus propios servidores con un fichero int8 de 0,77 GB y sin coste por uso.
+- Prototipado rapido de tareas de extraccion: iterar sobre el rulebook en minutos para definir que cuenta como entidad antes de invertir en un modelo entrenado a medida.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | ReDefiNER 0.8B | Claude Haiku 5.5 | Gemini 3.1 Pro |
-|---|---|---|---|
-| CrossNER AI (F1) | 68,1 | 73,1 | 72,4 |
+Datos publicados en la model card (CrossNER AI, con el mismo rulebook):
 
-Los resultados corresponden a CrossNER AI con el mismo rulebook, según la model card. El modelo se ejecuta en CPU y queda aproximadamente 5 puntos F1 por debajo de Claude Haiku 5.5 y 4,3 por debajo de Gemini 3.1 Pro. No se han publicado en la información disponible resultados de otros benchmarks como MMLU, HumanEval o GSM8K, ni comparativas con modelos de investigación publicados más allá de la referencia genérica de la model card.
+| Modelo | F1 en CrossNER AI |
+|---|---|
+| ReDefiNER 0.8B (CPU) | 68,1 |
+| Claude Haiku 5.5 | 73,1 |
+| Gemini 3.1 Pro | 72,4 |
+
+Rendimiento de inferencia segun la model card:
+
+| Escenario | Latencia |
+|---|---|
+| CPU de 4 nucleos o Apple M2, extract mode, con rulebook cargado | 0,4-0,7 s por frase |
+| NVIDIA A10 o RTX A5000 | 0,05 s por texto |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo se distribuye como un único fichero int8 de 0,77 GB; en CPU consume aproximadamente 2–2,6 GB de memoria en pico.
-- GPU recomendadas: NVIDIA A10 o RTX A5000 para inferencia acelerada (0,05 s por texto); también funciona en cualquier GPU NVIDIA disponible según el paquete.
-- CPU: funciona en CPU convencional; 0,4–0,7 s por frase en un procesador de 4 núcleos o en un Apple M2 en extract mode con el rulebook cargado.
-- Cabe en GPU de consumo: sí, dado su tamaño (0,8B parámetros, fichero int8 de 0,77 GB), aunque la model card no detalla modelos concretos de consumo.
-- Opciones de despliegue: paquete Python `redefiner` (`Tagger.from_pretrained`) y servidor HTTP local (`redefiner serve`). No se mencionan vLLM, llama.cpp, Ollama ni TGI; la carga requiere el paquete `redefiner` por sus cabezas propias de span y label.
-- Latencia y throughput: 0,4–0,7 s por frase en CPU de 4 núcleos o Apple M2; 0,05 s por texto en NVIDIA A10 o RTX A5000.
+- VRAM/RAM estimada: 2-2,6 GB de memoria en pico en CPU; en GPU, no se especifica VRAM exacta, pero el fichero int8 de 0,77 GB sugiere un consumo bajo.
+- GPU recomendadas: NVIDIA A10 o RTX A5000 (0,05 s por texto segun la model card); funciona tambien en cualquier GPU NVIDIA disponible.
+- Cabe en GPU de consumo: si, por el tamano del fichero int8 (0,77 GB) y el bajo consumo de memoria; la model card no detalla modelos concretos de consumo.
+- Opciones de despliegue: paquete Python `redefiner` (`Tagger.from_pretrained`) y servidor HTTP local (`redefiner serve`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,4-0,7 s por frase en CPU de 4 nucleos o Apple M2 (extract mode); 0,05 s por texto en NVIDIA A10 o RTX A5000.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | CrossNER AI (F1) | Licencia | Despliegue |
+| Modelo | Parametros | Contexto | F1 CrossNER AI | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| ReDefiNER 0.8B | 755.675.585 | no disponible (rulebooks hasta ~10.000 tokens) | 68,1 | Apache 2.0 | CPU/GPU, offline, paquete `redefiner` |
+| ReDefiNER 0.8B | 755,7 M | no disponible | 68,1 | Apache 2.0 | CPU/GPU, offline |
 | Claude Haiku 5.5 | no disponible | no disponible | 73,1 | propietaria | API en la nube |
 | Gemini 3.1 Pro | no disponible | no disponible | 72,4 | propietaria | API en la nube |
 
-La comparativa se limita a los datos publicados en la model card. ReDefiNER pierde entre 4 y 5 puntos F1 frente a los modelos frontera citados, pero ofrece ejecución local en CPU, funcionamiento offline, licencia Apache 2.0 y ausencia de coste por uso, lo que lo hace adecuado para entornos con restricciones de privacidad. No se dispone de comparación con modelos NER de investigación publicados en la información proporcionada.
+La model card menciona ademas comparaciones con modelos de investigacion publicados, pero no se detallan sus resultados en la informacion disponible. Frente a los modelos frontera, ReDefiNER queda 5,0 puntos F1 por debajo de Claude Haiku 5.5 y 4,3 por debajo de Gemini 3.1 Pro, a cambio de ejecucion local, sin coste por uso y con datos que no salen de la infraestructura propia.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no hay soporte multilingüe declarado.
-- Spans limitados a 16 tokens por defecto, ampliables con `max_span_tokens` (64 para PII); entidades más largas pueden no detectarse correctamente.
-- Rulebooks probados hasta aproximadamente 10.000 tokens; reglas más extensas no están validadas.
-- En textos largos, cada parte se procesa de forma independiente, por lo que las etiquetas pueden diferir a lo largo de un mismo documento.
-- Modelo no generativo: no produce texto, no razona de forma multi-paso ni soporta tool calling o agentes.
-- Riesgo de alucinación de spans: al ser un modelo de etiquetado, puede marcar spans incorrectos o con tipo erróneo, especialmente con rulebooks ambiguos o dominios poco representados.
-- No se dispone de información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- La licencia Apache 2.0 permite uso comercial, modificación y redistribución; no se declaran restricciones adicionales.
-- Para producción, conviene validar el rendimiento con el rulebook concreto del dominio, ya que el comportamiento depende fuertemente de la calidad y claridad de las reglas.
+- Solo soporta ingles; no hay capacidades multilingues.
+- Spans limitados a 16 tokens por defecto (64 para PII con `max_span_tokens`), lo que puede truncar entidades largas.
+- Rulebooks probados hasta aproximadamente 10.000 tokens; reglas mas extensas no estan validadas.
+- En textos largos, cada parte se procesa por separado, por lo que las etiquetas pueden ser inconsistentes a lo largo de un mismo documento.
+- Modelo no generativo: no redacta ni reescribe texto, solo marca spans; la redaccion debe implementarse en la capa de aplicacion.
+- Riesgo de alucinacion de spans o etiquetas incorrectas inherente a la tarea; la confianza por entidad deberia usarse para filtrar en produccion.
+- No se dispone de informacion sobre sesgos conocidos ni sobre la composicion del dataset de entrenamiento.
+- La licencia Apache 2.0 permite uso comercial, pero no se detallan restricciones adicionales del modelo base Qwen3.5-0.8B en la informacion disponible.
+- Requiere la libreria `redefiner`; no es compatible con el flujo estandar de `transformers`, lo que anade una dependencia especifica al stack.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jungroo-ai/redefiner-0.8b
-- Repositorio de código: https://github.com/jungroo-ai/redefiner
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/jungroo-ai/redefiner-demo
-- Documentación de label mode: https://github.com/jungroo-ai/redefiner#label-mode
+- Repositorio de codigo: https://github.com/jungroo-ai/redefiner
+- Documentacion de label mode: https://github.com/jungroo-ai/redefiner#label-mode
 - Detalles de velocidad: https://github.com/jungroo-ai/redefiner#speed
 - Changelog: https://github.com/jungroo-ai/redefiner/blob/main/CHANGELOG.md
-- Sitio del autor: https://jungroo.com
-- Página del producto: https://jungroo.com/redefiner/
-- Contacto: hello@jungroo.com
+- Sitio del producto: https://jungroo.com/redefiner/
+- Jungroo AI Labs: https://jungroo.com
+- Video promocional (45 s): https://huggingface.co/jungroo-ai/redefiner-0.8b/resolve/main/docs/assets/video/redefiner-promo.mp4
+- Video extendido (98 s): https://huggingface.co/jungroo-ai/redefiner-0.8b/resolve/main/docs/assets/video/redefiner-promo-long.mp4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

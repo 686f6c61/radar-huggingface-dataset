@@ -2,115 +2,111 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario TianaBear, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. El propio nombre del repositorio incluye el sufijo "TestRepo", las descargas y likes son cero, y el tamaño del repositorio es de 0.0 GB, lo que indica que se trata de un repositorio de prueba o de una plantilla y no de un modelo entrenado con pesos publicados.
+MyAwesomeModel es un modelo de extracción de características (feature-extraction) publicado en Hugging Face por el usuario TianaBear bajo licencia MIT. Según los metadatos del repositorio, está construido sobre la librería transformers con pesos en PyTorch y una arquitectura etiquetada como BERT, lo que lo situaría en la familia de transformers encoder-only orientados a representaciones contextuales más que a generación autoregresiva. El repositorio es extremadamente ligero (0.0 GB según Hugging Face) y acumula 689 descargas sin likes, lo que sugiere un uso instrumental más que comunitario.
 
-La model card incluye texto de introducción y una tabla de evaluación con nombres genéricos (Model1, Model2, Model1-v2, MyAwesomeModel) y afirmaciones sobre un supuesto aumento de precisión en AIME 2025 del 70% al 87.5%, así como un uso medio de 23.000 tokens por pregunta. Sin embargo, estas cifras no son coherentes con el pipeline declarado (feature-extraction), con la arquitectura BERT ni con el hecho de que el repositorio no contenga pesos; la propia model card parece un texto de plantilla reutilizado de modelos de razonamiento de gran tamaño.
+La model card, sin embargo, describe un modelo generativo de propósito general con mejoras en razonamiento, matemáticas, programación y function calling, incluyendo resultados de benchmarks y recomendaciones de prompting (system prompt, temperatura 0.6, plantillas para búsqueda web y subida de ficheros). Esta descripción contradice frontalmente los metadatos técnicos (pipeline feature-extraction, arquitectura BERT) y el nombre del repositorio ("TestRepo"), lo que apunta a que la model card es una plantilla genérica o un contenido de prueba no verificado.
 
-Por todo ello, esta ficha debe interpretarse como una descripción de un repositorio de prueba con metadatos incompletos. No hay información verificable sobre parámetros, contexto, datos de entrenamiento ni resultados de benchmarks propios. Cualquier evaluación de uso en producción queda bloqueada por la ausencia de artefactos de pesos y por la falta de documentación técnica fiable.
+Por tanto, la ficha debe leerse con cautela: los datos de arquitectura y pipeline son los declarados por Hugging Face, mientras que las afirmaciones de la model card (rendimiento en AIME 2025, mejoras de razonamiento, soporte de function calling) no están respaldadas por artefactos verificables en el repositorio. No se dispone de información sobre tamaño de parámetros, longitud de contexto ni idiomas soportados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | bert (según etiquetas del repositorio; sin detalle de variante) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | BERT (según tag de Hugging Face); naturaleza generativa no confirmada |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no se declara MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (tamaño del repositorio: 0.0 GB) |
+| Formato de pesos | PyTorch (transformers); safetensors no confirmado |
 
 ## Arquitectura y entrenamiento
 
-La única información sobre la arquitectura es la etiqueta "bert" incluida en los tags del repositorio y la tarea declarada de feature-extraction (extracción de embeddings). No se especifica si se trata de BERT-base, BERT-large u otra variante, ni el número de capas, dimensiones ocultas o cabezas de atención. Tampoco hay datos sobre el tokenizador, el vocabulario o la configuración de pooling para generar embeddings.
+Los metadatos de Hugging Face etiquetan el modelo como BERT, una arquitectura transformer encoder-only diseñada originalmente para representaciones contextuales bidireccionales. El pipeline declarado es feature-extraction, lo que implica que el modelo está pensado para producir embeddings de frases o tokens, no para generar texto. No hay información disponible sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens vistos ni sobre si se aplicaron técnicas de RLHF, DPO o instrucción tuning.
 
-No se dispone de información sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o SFT. La model card menciona de forma genérica "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin ningún dato cuantificable y en un contexto que parece copiado de otro modelo. No hay pesos publicados en el repositorio, por lo que no es posible inspeccionar la arquitectura ni reproducir el entrenamiento.
+La model card afirma mejoras en profundidad de razonamiento mediante "recursos computacionales incrementados y mecanismos de optimización algorítmica durante el post-entrenamiento", así como un aumento de tokens por pregunta en AIME (de 12K a 23K) y una subida de precisión del 70% al 87,5%. Estas afirmaciones no vienen acompañadas de detalles sobre datos, recetas de entrenamiento o artefactos reproducibles, y entran en conflicto con la arquitectura BERT declarada en los tags. No se dispone de información verificable sobre innovaciones técnicas como decodificación especulativa, atención linear o arquitecturas híbridas.
 
 ## Capacidades
 
-- Extracción de características (feature-extraction): es la única capacidad declarada de forma explícita en los metadatos, orientada a generar embeddings de texto.
-- Generación de texto: la model card describe capacidades de generación, razonamiento y código, pero esto contradice el pipeline declarado y la ausencia de pesos; no debe considerarse una capacidad verificada.
-- Razonamiento matemático y lógico: mencionado en la model card con cifras no verificables; no confirmado.
-- Tool calling / function calling: la model card afirma soporte mejorado, pero no se aporta documentación ni ejemplos; no verificado.
-- Capacidades de agente y razonamiento multi-paso: mencionadas de forma genérica, sin detalle técnico; no verificadas.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Extracción de características y generación de embeddings (según pipeline declarado en Hugging Face).
+- Generación de texto: afirmada en la model card, pero no respaldada por la arquitectura BERT declarada ni por artefactos del repositorio.
+- Razonamiento matemático y lógico: la model card menciona resultados en AIME 2025 y benchmarks de razonamiento, sin evidencia reproducible.
+- Generación de código: mencionada en la tabla de benchmarks de la model card (Code Generation 0.650), sin verificación.
+- Soporte de tool calling / function calling: la model card afirma "enhanced support for function calling", sin detalles técnicos.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma verificable.
+- Capacidades multilingües: no disponible; no se declaran idiomas.
+- Modo thinking explícito: la model card indica que ya no es necesario forzar tokens especiales de pensamiento, pero no se especifica el mecanismo.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-Nota: dado que el repositorio no contiene pesos publicados (0.0 GB), ninguno de estos casos de uso puede ejecutarse hoy con este artefacto. Se describen como escenarios hipotéticos coherentes con un modelo BERT de extracción de características, a título orientativo.
-
-- Búsqueda semántica y recuperación aumentada (RAG): un modelo BERT de feature-extraction puede generar embeddings de documentos y consultas para un índice vectorial, permitiendo recuperar pasajes relevantes por similitud coseno en lugar de coincidencia de palabras clave.
-- Clasificación de texto y moderación de contenido: los embeddings generados pueden alimentar un clasificador ligero (regresión logística o MLP) para etiquetar tickets, reseñas o comentarios por categoría o toxicidad.
-- Análisis de sentimiento en reseñas de producto: el vector de la frase completa sirve como entrada a una cabeza de clasificación para polaridad positiva, negativa o neutra.
-- Deduplicación y agrupamiento de documentos: agrupar noticias, informes o correos con embeddings y clustering (por ejemplo, k-means) para detectar duplicados casi idénticos.
-- Detección de similitud entre pares de frases: comparar embeddings de dos textos para tareas de paráfrasis, respuesta a preguntas extractiva o emparejamiento de ofertas y demandas.
-- Preprocesado para pipelines de NLP posteriores: generar representaciones congeladas que alimenten modelos posteriores sin necesidad de reentrenar desde cero, reduciendo coste computacional.
-- Indexación de conocimiento interno de una empresa: construir un buscador sobre documentación interna, con la ventaja de ejecución local y licencia MIT permisiva.
+- Búsqueda semántica y recuperación aumentada (RAG): si el modelo funciona como extractor de características BERT, puede emplearse para generar embeddings de documentos y consultas en un pipeline de recuperación, indexando fragmentos y comparando similitudes coseno en una base vectorial.
+- Clasificación de texto y análisis de sentimiento: los embeddings del modelo pueden alimentar un clasificador ligero (regresión logística o MLP) para moderación de comentarios, triaje de tickets o etiquetado de reseñas, aprovechando la representación contextual bidireccional.
+- Deduplicación y clustering de documentos: agrupando embeddings de artículos, correos o incidencias para detectar duplicados y organizar corpus por temática antes de procesos editoriales o de soporte.
+- Filtrado previo en pipelines de generación: usar el modelo como primera etapa para puntuar relevancia de fragmentos recuperados antes de pasarlos a un LLM generativo, reduciendo coste y latencia en sistemas RAG de producción.
+- Prototipado y pruebas de integración: dado que el repositorio se llama "TestRepo" y pesa 0.0 GB, es adecuado como fixture en tests de pipelines de transformers, CI/CD o validación de endpoints compatibles (tag endpoints_compatible).
+- Evaluación comparativa de embeddings: servir como baseline ligero en experimentos que comparen extractores de características sobre tareas downstream (clasificación, similitud semántica), dada su licencia MIT y facilidad de despliegue.
+- Fine-tuning sobre dominio específico: al ser un encoder BERT con licencia permisiva, puede ajustarse con cabeza de clasificación para dominios verticales (legal, médico, financiero) siempre que se confirme el tamaño real del checkpoint.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de evaluación, pero utiliza nombres genéricos (Model1, Model2, Model1-v2, MyAwesomeModel) y categorías no estándar (Math Reasoning, Logical Reasoning, Common Sense, etc.) en lugar de benchmarks reconocidos como MMLU, GSM8K o HumanEval. Se reproduce a continuación tal cual aparece en la información proporcionada, con la advertencia de que su fiabilidad no está confirmada.
+La model card incluye una tabla de benchmarks con puntuaciones para MyAwesomeModel y modelos de referencia (Model1, Model2, Model1-v2). No se especifica qué métrica subyace a cada valor ni qué benchmarks concretos se usaron, salvo la mención de AIME 2025 en el texto. Se reproduce a continuación tal como aparece en la información proporcionada, con la advertencia de que no es verificable:
 
-| Categoria | Benchmark declarado | Model1 | Model2 | Model1-v2 | MyAwesomeModel |
+| Categoría | Benchmark | Model1 | Model2 | Model1-v2 | MyAwesomeModel |
 |---|---|---|---|---|---|
-| Core Reasoning Tasks | Math Reasoning | 0.510 | 0.535 | 0.521 | 0.550 |
-| | Logical Reasoning | 0.789 | 0.801 | 0.810 | 0.819 |
-| | Common Sense | 0.716 | 0.702 | 0.725 | 0.736 |
-| Language Understanding | Reading Comprehension | 0.671 | 0.685 | 0.690 | 0.700 |
-| | Question Answering | 0.582 | 0.599 | 0.601 | 0.607 |
-| | Text Classification | 0.803 | 0.811 | 0.820 | 0.828 |
-| | Sentiment Analysis | 0.777 | 0.781 | 0.790 | 0.792 |
-| Generation Tasks | Code Generation | 0.615 | 0.631 | 0.640 | 0.650 |
-| | Creative Writing | 0.588 | 0.579 | 0.601 | 0.610 |
-| | Dialogue Generation | 0.621 | 0.635 | 0.639 | 0.644 |
-| | Summarization | 0.745 | 0.755 | 0.760 | 0.767 |
-| Specialized Capabilities | Translation | 0.782 | 0.799 | 0.801 | 0.804 |
-| | Knowledge Retrieval | 0.651 | 0.668 | 0.670 | 0.676 |
-| | Instruction Following | 0.733 | 0.749 | 0.751 | 0.758 |
-| | Safety Evaluation | 0.718 | 0.701 | 0.725 | 0.739 |
+| Razonamiento | Math Reasoning | 0.510 | 0.535 | 0.521 | 0.550 |
+| Razonamiento | Logical Reasoning | 0.789 | 0.801 | 0.810 | 0.819 |
+| Razonamiento | Common Sense | 0.716 | 0.702 | 0.725 | 0.736 |
+| Comprensión | Reading Comprehension | 0.671 | 0.685 | 0.690 | 0.700 |
+| Comprensión | Question Answering | 0.582 | 0.599 | 0.601 | 0.607 |
+| Comprensión | Text Classification | 0.803 | 0.811 | 0.820 | 0.828 |
+| Comprensión | Sentiment Analysis | 0.777 | 0.781 | 0.790 | 0.792 |
+| Generación | Code Generation | 0.615 | 0.631 | 0.640 | 0.650 |
+| Generación | Creative Writing | 0.588 | 0.579 | 0.601 | 0.610 |
+| Generación | Dialogue Generation | 0.621 | 0.635 | 0.639 | 0.644 |
+| Generación | Summarization | 0.745 | 0.755 | 0.760 | 0.767 |
+| Especializadas | Translation | 0.782 | 0.799 | 0.801 | 0.804 |
+| Especializadas | Knowledge Retrieval | 0.651 | 0.668 | 0.670 | 0.676 |
+| Especializadas | Instruction Following | 0.733 | 0.749 | 0.751 | 0.758 |
+| Especializadas | Safety Evaluation | 0.718 | 0.701 | 0.725 | 0.739 |
 
-La model card también afirma que la precisión en AIME 2025 pasó del 70% al 87.5% y que el consumo medio por pregunta subió de 12.000 a 23.000 tokens. Estas cifras no van acompañadas de metodología, semilla, número de intentos ni fecha de ejecución, y son incompatibles con el pipeline feature-extraction declarado. No deben tomarse como resultados verificados.
+Además, el texto menciona que en AIME 2025 la precisión pasó del 70% al 87,5% y que el consumo medio de tokens por pregunta subió de 12K a 23K. No se han publicado resultados verificables de benchmarks en los artefactos del repositorio; los valores anteriores proceden exclusivamente de la model card.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible. El repositorio no publica pesos, por lo que no hay artefacto que cargar.
-- GPU recomendadas: no disponible para este repositorio concreto. Como referencia genérica, un modelo tipo BERT-base (aproximadamente 110 millones de parámetros) suele ejecutarse con comodidad en cualquier GPU consumer con 4-8 GB de VRAM, o incluso en CPU, pero este dato no está confirmado para este repositorio.
-- Viabilidad en GPU consumer: no verificable sin pesos.
-- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay artefactos publicados. No hay indicios de soporte de vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: no disponible, al no conocerse el número de parámetros. El tamaño del repositorio (0.0 GB) sugiere un checkpoint muy pequeño o incompleto.
+- GPU recomendadas: no disponible por falta de especificaciones; si se confirma como BERT base (≈110M parámetros), cabría en cualquier GPU consumer con 4-6 GB de VRAM.
+- Compatibilidad con GPU consumer: probable si el modelo es de tamaño BERT base o inferior, pero no verificable.
+- Opciones de despliegue: transformers (librería declarada), con tag endpoints_compatible que sugiere compatibilidad con Inference Endpoints de Hugging Face. vLLM, llama.cpp, Ollama o TGI no están confirmados y, en el caso de llama.cpp/Ollama, requerirían pesos GGUF no presentes en el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque no hay parámetros, contexto ni pesos verificables en este repositorio. A modo de referencia de categoría (modelos BERT de extracción de características con licencia permisiva), podrían citarse alternativas consolidadas como sentence-transformers/all-MiniLM-L6-v2, BAAI/bge-base-en-v1.5 o intfloat/e5-base-v2, todas ellas con pesos publicados y documentación de rendimiento en MTEB. No obstante, cualquier comparación numérica con MyAwesomeModel-TestRepo sería especulativa:
+Dado que el pipeline declarado es feature-extraction y la arquitectura BERT, la comparación natural sería con encoders tipo BERT base, RoBERTa base o DistilBERT. Sin embargo, no se dispone de parámetros, contexto ni benchmarks verificables de MyAwesomeModel, por lo que la comparación cuantitativa no es posible.
 
-| Modelo | Parametros | Contexto | Licencia | Pesos publicados |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel-TestRepo | no disponible | no disponible | MIT | no |
-| all-MiniLM-L6-v2 | aprox. 22 M | 256 tokens | Apache-2.0 | si |
-| bge-base-en-v1.5 | aprox. 109 M | 512 tokens | MIT | si |
-| e5-base-v2 | aprox. 109 M | 512 tokens | MIT | si |
+| MyAwesomeModel (TianaBear) | no disponible | no disponible | MIT | Hugging Face |
+| BERT base (google-bert/bert-base-uncased) | 110M | 512 tokens | Apache 2.0 | Hugging Face |
+| RoBERTa base (FacebookAI/roberta-base) | 125M | 512 tokens | MIT | Hugging Face |
+| DistilBERT (distilbert/distilbert-base-uncased) | 66M | 512 tokens | Apache 2.0 | Hugging Face |
 
-Los datos de los tres modelos de referencia son orientativos y no provienen de la información proporcionada en esta búsqueda.
+Los datos de BERT base, RoBERTa base y DistilBERT son de referencia general y no proceden de la información proporcionada sobre MyAwesomeModel; se incluyen solo como contexto de categoría. No hay datos de rendimiento comparables para MyAwesomeModel.
 
 ## Limitaciones y advertencias
 
-- Repositorio de prueba: el nombre, las cero descargas, los cero likes y el tamaño de 0.0 GB indican que no es un modelo destinado a producción.
-- Ausencia de pesos: no hay safetensors, GGUF ni ningún otro formato descargable; el modelo no puede ejecutarse tal cual.
-- Incoherencia de metadatos: los tags (bert, feature-extraction) contradicen el contenido de la model card (razonamiento, código, AIME 2025, tool calling).
-- Benchmarks no verificables: la tabla usa nombres genéricos y no incluye metodología, por lo que no es auditable.
-- Riesgo de alucinación: no evaluable sin pesos y sin documentación de entrenamiento.
-- Sesgos conocidos: no disponible; no se documenta composición del dataset ni proceso de alineación.
-- Idiomas: no disponibles; no se especifica cobertura multilingüe.
-- Licencia MIT: permisiva y compatible con uso comercial según los términos de la licencia, aunque la falta de pesos hace irrelevante esta ventaja en la práctica.
-- Fecha anómala: el repositorio figura como creado y actualizado el 4 de octubre de 2026, una fecha posterior a la habitual en los metadatos públicos, lo que refuerza la sospecha de que se trata de datos sintéticos o de prueba.
-- Posible suplantación o reutilización: existen repositorios con el mismo nombre bajo otras cuentas (por ejemplo, dsa12dsz123sz o dongbobo), algunos descritos en agregadores externos como modelos BERT de embeddings con puntuaciones MMLU de 30. Esos datos corresponden a otros repositorios y no están verificados.
+- Inconsistencia grave entre metadatos y model card: los tags declaran BERT y feature-extraction, mientras la model card describe un modelo generativo con benchmarks de razonamiento y function calling. No debe asumirse ninguna de las dos descripciones sin verificación.
+- Nombre del repositorio ("TestRepo") y tamaño 0.0 GB sugieren que se trata de un artefacto de prueba, no de un modelo listo para producción.
+- Ausencia de información sobre parámetros, contexto e idiomas impide planificar despliegues, estimar costes o evaluar latencia.
+- Riesgo de alucinación: no evaluable sin pesos y tokenizer verificables; la model card menciona una "reduced hallucination rate" sin evidencia.
+- Sesgos conocidos: no disponible; no se documentan datos de entrenamiento ni evaluaciones de sesgo.
+- Restricciones de licencia: MIT permite uso comercial y modificación, pero la licencia se aplica al artefacto publicado; si los pesos no están realmente incluidos, la licencia carece de efecto práctico.
+- Los benchmarks de la model card no incluyen definiciones de métricas ni referencias a datasets, y los modelos comparados (Model1, Model2) no están identificados.
+- No se declaran limitaciones de contexto ni de idioma, lo que impide anticipar comportamiento en dominios no ingleses.
+- Para producción, se recomienda verificar la integridad del checkpoint, el tokenizer y la arquitectura real antes de cualquier integración.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/TianaBear/MyAwesomeModel-TestRepo
-- Repositorio homónimo de otra cuenta: https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-TestRepo
-- Ficha en agregador free2aitools: https://free2aitools.com/model/tianabear/myawesomemodel-testrepo
-- Ficha en agregador free2aitools (otra cuenta): https://free2aitools.com/model/sotaagi2030/myawesomemodel-testrepo
-- Ficha en openmodelmap (otra cuenta, datos no verificados): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/TianaBear/MyAwesomeModel-TestRepo
+- No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

@@ -2,87 +2,118 @@
 
 ## Resumen
 
-El modelo `qwen3.8-9b-hermes-fc-tooluse` es un fine-tune QLoRA del modelo base `Empero/Qwen3.8-9B` (perteneciente a la serie Qwen3.8 de Alibaba), desarrollado por JamieBradfield como parte de una serie iterativa de experimentos (v1 → v28) centrados en el comportamiento de tool calling en modelos de 9B de parámetros. Este checkpoint concreto corresponde al hito v28, entrenado sobre 218 trayectorias destiladas por el profesor GLM-5.3-Flash, con verificación en sandbox y un enfoque en la fidelidad de llamadas a herramientas en entornos agénticos.
+Qwen3.8-9B Hermes FC — Tooluse es un ajuste fino por QLoRA del modelo destilado Empero/Qwen3.8-9B-Distill, publicado por JamieBradfield. El objetivo declarado es enseñar al modelo a planificar con llamadas a la herramienta `todo` antes de abordar tareas de múltiples pasos, partiendo de un corpus de 218 trayectorias destiladas del profesor GLM-5.3-Flash. Se distribuye como un merge completo en BF16 (13 shards, 18,9 GB) con licencia Apache-2.0.
 
-El modelo conserva la arquitectura `Qwen3_5ForConditionalGeneration` del base, con una cabeza MTP (multi-token prediction) de 15 claves, pero elimina la torre visual, quedando como un modelo exclusivamente de texto. Con 9.438.410.240 parámetros (9,4B) y un vocabulario ampliado con dos tokens especiales de herramienta, está diseñado para generar envolturas XML de llamadas a herramientas (`<tool_call>` y `<tool_response>`) compatibles con el runtime Hermes. Su relevancia radica en ser un artefacto de investigación reproducible para estudiar el equilibrio entre capacidad de tool use y sobre-disparo en modelos pequeños, con una evaluación propia que muestra mejoras significativas frente a la versión anterior (v27) en tareas reales retenidas.
+El modelo parte de la familia Qwen3.5 (arquitectura `Qwen3_5ForConditionalGeneration`), con 9.438.410.240 parámetros en safetensors y una torre visual eliminada en el merge, por lo que el resultado es solo texto. El vocabulario se amplió de 248.077 a 248.079 entradas con dos tokens de herramienta (`<|tool_call|>` y `<|tool_response|>`), y se preserva la cabeza MTP (multi-token prediction) de 15 claves del modelo base.
+
+La relevancia de esta ficha es doble: por un lado, documenta un experimento de SFT sobre tool calling; por otro, su propia model card incluye una corrección metodológica de evaluación que invalida parcialmente las métricas publicadas originalmente. El autor congeló el programa de fine-tuning el 2026-09-03 y recomienda el modelo base como opción por defecto en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer decoder, con cabeza MTP de 15 claves) |
-| Parametros totales | 9.438.410.240 (9,4B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (máximo de secuencia de entrenamiento: 6144) |
-| Tipos de cuantizacion | BF16 (pesos completos), GGUF cuantizado (ROCmFPX, bits no especificados) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer `Qwen3_5ForConditionalGeneration` con cabeza MTP (multi-token prediction), torre visual eliminada |
+| Parametros totales | 9.438.410.240 (9,44 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 65.536 tokens (configuración de servicio indicada en la model card: `CTX=65536`) |
+| Tipos de cuantizacion | BF16 (merge completo); GGUF ROCmFPX en repositorio complementario; QLoRA 4-bit usado solo durante entrenamiento |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16, 13 shards, 18,9 GB) y GGUF |
+| Formato de pesos | safetensors (13 shards, 18,9 GB); GGUF en repo companion |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de los pesos fusionados de la versión v27 (`qwen3.8-9b-hermes-fc-todo`) y aplica un fine-tune QLoRA de 4 bits con rango 16, alpha 16, dropout 0, batch de 1 con grad-accum de 8 (tamaño efectivo 8), learning rate 2e-4, warmup 0.1 y una longitud máxima de secuencia de 6144. Se entrenó durante 8 épocas sobre 218 trayectorias en formato ShareGPT, lo que equivale a 214 pasos. El dataset de entrenamiento fue generado por GLM-5.3-Flash mediante el router de Hugging Face, a partir de 112 tareas sintéticas extraídas del corpus agéntico del autor. De esas trayectorias, 190 fueron verificadas por ejecución en sandbox (85% de éxito), con inyección de fallos y recuperación en el 15,8% de las filas. Además, 61 trayectorias incluyen cadenas de pensamiento cortas destiladas y 12 son tareas de búsqueda web sintéticas, siendo la primera señal web del linaje.
+El modelo es un transformer denso de la familia Qwen3.5 con 9,44 B de parámetros, adaptado desde el destilado Empero/Qwen3.8-9B-Distill. El merge conserva la cabeza MTP de 15 claves del modelo base, con `text_config.vocab_size = 248079` tras añadir dos tokens de herramienta al vocabulario original de 248.077. La torre visual se descarta, de modo que el checkpoint final es estrictamente de texto pese a que los tags de Hugging Face incluyan `image-text-to-text`.
 
-El vocabulario se amplió de 248.077 a 248.079 tokens, añadiendo los tokens `<|tool_call|>` y `<|tool_response|>`. La fusión de pesos preserva la cabeza MTP de 15 claves del modelo base, pero elimina la torre visual, dejando el modelo como texto puro. El autor documenta que el modelo base no aporta ninguna capacidad de tool calling (0/45 en evaluación previa), por lo que toda la funcionalidad proviene de la cadena de fine-tunes.
+El entrenamiento consistió en un QLoRA de 4 bits con rango 16, alpha 16, dropout 0, batch 1 con acumulación de gradiente 8 (efectivo 8), learning rate 2e-4, warmup 0.1 y `MAX_SEQ` de 6144 durante 8 épocas, lo que suma 214 pasos (loss final 0,02085; loss medio de entrenamiento 0,09405). Los datos son 218 trayectorias en formato ShareGPT con 551 llamadas a `todo`, generadas por GLM-5.3-Flash sobre 112 tareas sintéticas extraídas del corpus de agentes del autor: 190 trayectorias de profesor (85 % verificadas por ejecución en sandbox, con fallos y recuperaciones inyectados en el 15,8 % de las filas), 61 filas con cadena de pensamiento corta destilada, 159 solo con envelope y 12 tareas sintéticas de búsqueda web. El warm start fue el merge de v27 (`qwen3.8-9b-hermes-fc-todo`) con un adaptador QLoRA encima, de modo que los tokens de herramienta ya estaban integrados.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional en inglés.
-- Tool calling / function calling mediante envolturas XML (`<tool_call>` y `<tool_response>`), con esquemas de herramientas compatibles con el runtime Hermes.
-- Soporte de agentes multi-paso: puede encadenar múltiples llamadas a herramientas en una sola respuesta, simulando bucles agénticos completos (por ejemplo, `todo` → `search_files` → ...).
-- Distilación de cadenas de pensamiento cortas para tareas de razonamiento multi-paso.
-- Capacidad de búsqueda web sintética (entrenado con 12 tareas de este tipo).
-- No soporta visión (torre visual eliminada) ni otros idiomas distintos del inglés.
+- Generación de texto conversacional en inglés con soporte de plantilla de chat de Qwen3.5.
+- Llamada a funciones y uso de herramientas mediante los tokens `<|tool_call|>` y `<|tool_response|>`.
+- Planificación "todo-first": el modelo tiende a invocar la herramienta `todo` antes de resolver tareas de múltiples pasos.
+- Razonamiento multi-paso con cadenas de pensamiento cortas destiladas en 61 de las filas de entrenamiento.
+- Búsqueda web simulada: 12 tareas sintéticas de web search en el corpus.
+- Capacidad de decodificación multi-token gracias a la cabeza MTP heredada del modelo base.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades de visión: no disponibles (torre visual eliminada en el merge).
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Experimentación en comportamiento de tool calling: el modelo es un artefacto de investigación para estudiar cómo los modelos de 9B deciden cuándo invocar herramientas, especialmente en entornos con esquemas de herramientas definidos. Se puede usar para comparar métricas de fidelidad, sobre-disparo y formato de salida.
-- Desarrollo de agentes autónomos con harness de validación: dado que el modelo tiende a sobre-disparar llamadas a herramientas, es adecuado para probar pipelines agénticos donde un runtime externo valide y filtre las llamadas, como el runtime Hermes para el que fue entrenado.
-- Generación de código con tool use: puede integrarse en flujos de refactorización, generación de tests y documentación, donde las llamadas a herramientas (por ejemplo, `search_files`, `todo`) permiten planificar y ejecutar tareas multi-paso.
-- Automatización de tareas de CI/CD: el modelo puede generar secuencias de llamadas a herramientas para preparar releases, configurar integración continua o ejecutar scripts de verificación, siempre que se use dentro de un entorno controlado.
-- Evaluación de técnicas de destilación: al estar entrenado con trayectorias de un profesor (GLM-5.3-Flash), sirve como caso de estudio para medir la transferencia de capacidades de tool use entre modelos de distinto tamaño.
-- Pruebas de robustez en entornos con herramientas expuestas: el modelo puede usarse para detectar comportamientos no deseados (como inventar hechos en llamadas a `memory`) y así mejorar los guardarraíles de los runtimes agénticos.
+- Automatización de agentes de planificación: el modelo puede generar una lista de tareas estructurada mediante la herramienta `todo` antes de ejecutar pasos, lo que resulta útil en orquestadores que necesitan descomponer peticiones complejas en subtareas verificables.
+- Integración en pipelines de CI/CD con function calling: los tokens de herramienta dedicados permiten conectar el modelo a APIs de build, test y despliegue, aunque debe validarse el formato de salida contra el cliente real (véase la corrección metodológica en la model card).
+- Asistentes de refactorización de código: el corpus de entrenamiento incluye tareas de refactor + tests + docs, por lo que el modelo está expuesto a flujos de trabajo de ingeniería de software en inglés.
+- Búsqueda web asistida: las 12 tareas sintéticas de web search permiten prototipar agentes que deciden cuándo consultar una fuente externa, siempre con validación adicional en producción.
+- Investigación sobre SFT y tool use: el checkpoint y su dataset publicado (`hermes-fc-v28-data`) sirven como artefacto reproducible para estudiar cómo el ajuste fino altera la planificación y la contención en llamadas a herramientas.
+- Evaluación de metodologías de benchmark: la corrección publicada el 2026-09-03 y los scripts `native_battery.py`, `todo_probes.jsonl` y `no_drift_probes.jsonl` permiten reproducir la comparación entre interfaz sintética e interfaz nativa de OpenAI `tools`.
+- Prototipado en local con GGUF: el repositorio companion con cuantización ROCmFPX permite desplegar el modelo en entornos con GPU AMD o consumer, siempre que se acepte la pérdida de fidelidad de formato asociada a la cuantización.
 
 ## Benchmarks y rendimiento
 
-El autor proporciona una evaluación propia sobre una batería de 40 sondas (todo-probe) divididas en tres niveles: Tier 1 (20 trayectorias reales retenidas, sin solapamiento con el entrenamiento), Tier 2 (10 tareas sintéticas multi-paso) y Tier 3 (10 peticiones triviales donde se espera 0 llamadas a herramientas). Los resultados comparan la versión v27 con este checkpoint v28 (ckpt-175):
+La model card publica dos baterías de evaluación. La primera, sobre interfaz sintética (esquemas de herramienta embebidos en el texto del sistema, sin parámetro `tools`, exigiendo XML `<tool_call>` en la respuesta), es la que certificó el checkpoint originalmente. La segunda, corregida el 2026-09-03, usa la ruta nativa de OpenAI `tools` que emplea Hermes.
 
-| Tier | Modelo | Fired | name=todo | todos_ok | format_exact |
+Batería sintética (greedy, esquema `todo` en cada prompt, 40 sondas):
+
+| Tier | Modelo | fired | name=todo | todos_ok | format_exact |
 |---|---|---|---|---|---|
-| T1 (real, retenido) | v27 | 13/20 | 11/20 | 11/20 | 0/20 |
-| T1 | v28 ckpt-175 | 17/20 | 16/20 | 16/20 | 4/20 |
+| T1 (real, held-out) | v27 | 13/20 | 11/20 | 11/20 | 0/20 |
+| T1 | v28 ckpt-175 (este modelo) | 17/20 | 16/20 | 16/20 | 4/20 |
 | T2 (multi-paso novedoso) | v27 | 9/10 | 7/10 | 7/10 | 3/10 |
 | T2 | v28 ckpt-175 | 8/10 | 7/10 | 7/10 | 4/10 |
-| T3 (trivial, esperado 0) | v27 | 5/10 | 1/10 | 1/10 | 2/10 |
+| T3 (trivial, se espera 0) | v27 | 5/10 | 1/10 | 1/10 | 2/10 |
 | T3 | v28 ckpt-175 | 5/10 | 1/10 | 1/10 | 4/10 |
 
-El autor destaca que la fidelidad en Tier 1 mejora de 13/20 a 17/20 en "fired" y de 11/20 a 16/20 en "todos_ok", el mejor resultado retenido en la serie v2→v28. Sin embargo, el checkpoint final (214) regresiona en el guardarraíl de sobre-disparo (Tier 3), por lo que se eligió el checkpoint 175 como punto óptimo. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Batería nativa corregida (ruta `tools`, mismas 4 herramientas, greedy):
+
+| Modelo | tier-1 fired | tier-1 name=todo | tier-2 todo-first | tier-3 fired (deseado 0) | tier-4 fired (deseado 0) |
+|---|---|---|---|---|---|
+| Base sin fine-tune | 18/20 | 17/20 | 3/10 | 5/10 | 0/10 |
+| v28 ckpt-175 (este modelo) | 17/20 | 10/20 | 8/10 | 9/10 | 4/10 |
+| armB2-175 (reentrenamiento limpio) | 10/20 | 8/20 | 10/10 | 4/10 | 0/10 |
+
+La lectura corregida es que el fine-tune mejora la planificación todo-first en tareas multi-paso (de 3/10 en el base a 8/10 en v28 y 10/10 en armB2), pero degrada la contención: el tier-3 de sobre-disparo sube de 5/10 a 9/10 y el tier-4 de deriva de herramienta en trivialidades pasa de 0/10 a 4/10. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: los pesos completos ocupan 18,9 GB, por lo que se necesitan al menos 24 GB de VRAM para cargar el modelo con overhead de activaciones. GPUs como RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB) son adecuadas.
-- Para el GGUF cuantizado (ROCmFPX), el tamaño no se especifica, pero es probable que quepa en GPUs de consumo con 8-12 GB de VRAM, como RTX 3080/3090 o RTX 4070/4080. No se indica el nivel de cuantización exacto.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI o llama.cpp (para GGUF). También es compatible con Ollama si se convierte el GGUF.
-- Latencia y throughput: no se proporcionan datos medidos. Para un modelo de 9B en BF16 en una GPU moderna, se puede esperar un throughput del orden de 20-50 tokens/s, pero esto depende del hardware y del backend.
+- VRAM estimada en BF16: aproximadamente 18,9 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda un mínimo de 24 GB para contexto moderado y 40-80 GB para contexto largo (65.536 tokens).
+- VRAM estimada en cuantización de 8 bits: en torno a 10-11 GB de pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 5-6 GB de pesos, con degradación de calidad no cuantificada en la model card.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S para BF16 con contexto completo; RTX 4090 (24 GB) puede alojar el modelo en BF16 con contexto recortado o en 8 bits con contexto medio.
+- GPU consumer: cabe en RTX 3090/4090 (24 GB) en BF16 con contexto limitado, y en GPUs de 12-16 GB únicamente con cuantización de 4-8 bits.
+- Opciones de despliegue: transformers (librería declarada), vLLM y TGI para serving en BF16, llama.cpp/Ollama para el GGUF ROCmFPX del repositorio companion. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con otros modelos de tool calling de la misma clase (por ejemplo, Hermes 2 Pro, FireFunction V2, etc.) en términos de parámetros y rendimiento. La única comparación directa disponible es con la versión anterior del mismo linaje (v27), cuyos resultados se muestran en la tabla de benchmarks. El modelo base `Empero/Qwen3.8-9B` no aporta capacidad de tool calling (0/45 en evaluación previa), por lo que la comparativa se limita al contexto del fine-tune. Se recomienda consultar el repositorio del autor para más detalles sobre la serie v1→v28.
+| Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-9B Hermes FC (este) | 9,44 B | 65.536 | Sí, con tokens dedicados; contención degradada según batería nativa | Apache-2.0 | Hugging Face, 256 descargas |
+| Empero/Qwen3.8-9B-Distill (base) | 9,2 B aprox. | no disponible | Sí, nativo vía `tools` (18/20 tier-1, 0/10 tier-4) | Apache-2.0 | Hugging Face |
+| armB2-175 (reentrenamiento limpio del autor) | 9,44 B | no disponible | Sí, mejor todo-first (10/10 tier-2) pero sobre-supresión (10/20 tier-1) | no disponible | No publicado como checkpoint independiente en la información disponible |
+| v27 (`qwen3.8-9b-hermes-fc-todo`) | 9,2 B aprox. | no disponible | Sí, versión previa del linaje | no disponible | Hugging Face |
+
+La comparativa se limita al linaje del propio autor porque la información proporcionada no incluye referencias a modelos externos de la misma categoría. No disponible para alternativas como Qwen3 estándar, Llama 3.1 8B o Mistral 7B en cuanto a métricas directas.
 
 ## Limitaciones y advertencias
 
-- El corpus de entrenamiento no contiene filas de "no llamada" (no-call), por lo que el modelo tiende a invocar herramientas incluso en preguntas triviales que no las requieren. Esto lo hace inadecuado para chat abierto sin un harness que restrinja el alcance de las herramientas.
-- Puede inventar hechos en llamadas a herramientas no entrenadas (por ejemplo, llamadas a `memory` con datos falsos), aunque el runtime puede rechazarlas con guardarraíles.
-- El formato de salida no siempre es una envoltura XML pura; a menudo genera bucles agénticos completos en una sola respuesta, lo que puede fallar validaciones de formato estricto (regex).
-- Solo soporta inglés; no hay capacidades multilingües.
-- Es un artefacto de investigación, no un producto listo para producción. El autor lo indica explícitamente en la model card.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda validar el comportamiento en el dominio de aplicación antes de desplegarlo.
-- El checkpoint final (214) sobreajusta y regresiona en el control de sobre-disparo; el checkpoint 175 es el recomendado por el autor.
+- La corrección metodológica del 2026-09-03 invalida la afirmación original de que el modelo base "no contribuye tool calling": el base ya llamaba herramientas correctamente por la ruta nativa `tools`, y el arnés sintético medía una interfaz que no coincide con la del chat template ni con la ruta de Hermes.
+- El fine-tune introduce regresiones de contención: sobre-disparo en tareas triviales (tier-3 de 5/10 a 9/10) y deriva de herramienta en preguntas de trivia (tier-4 de 0/10 a 4/10).
+- El corpus de entrenamiento carece de filas "sin llamada / solo respuesta", lo que provoca que el checkpoint final (214) sobreajuste y no sepa declinar una herramienta; por eso se publica el 175.
+- El modelo solo declara inglés; no hay evidencia de capacidades multilingües.
+- La torre visual fue eliminada: no admite entradas de imagen pese a los tags `image-text-to-text` del repositorio.
+- Riesgo de alucinación: no cuantificado en la model card; el corpus es sintético y destilado de un profesor, con el 15 % de las filas conteniendo fallos inyectados.
+- El formato de salida XML `<tool_call>` que el arnés sintético exigía no coincide con la plantilla de chat del modelo base; los clientes deben usar la ruta nativa `tools`.
+- El autor congeló el programa de fine-tuning y recomienda el modelo base como opción por defecto en runtime; este checkpoint se conserva como demostración medida, no como artefacto de producción.
+- Licencia Apache-2.0 permite uso comercial, pero la model card no ofrece garantías sobre el comportamiento en dominios fuera del corpus de entrenamiento.
+- El repositorio tiene 256 descargas y 1 like, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
-- Dataset de entrenamiento v28: https://huggingface.co/datasets/JamieBradfield/qwen3.8-9b-hermes-fc-v28-data
-- Modelo con trazas reales (v27): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces
-- Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
-- Página de despliegue en FriendliAI (para el modelo v27): https://friendli.ai/models/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces
+- Modelo base destilado: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
+- Modelo base referenciado en la model card: https://huggingface.co/Empero/Qwen3.8-9B
+- Dataset de entrenamiento (referenciado como `hermes-fc-v28-data`): no disponible como URL directa en la información proporcionada
+- Repositorio companion con GGUF ROCmFPX: no disponible como URL directa en la información proporcionada
+- Scripts de reproducción (`scripts/native_battery.py`, `scripts/todo_probes.jsonl`, `scripts/no_drift_probes.jsonl`): incluidos en el repositorio del modelo, sin URL directa en la información proporcionada
+- Apoyo al autor: https://ko-fi.com/jamesonbradfield

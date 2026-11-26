@@ -2,104 +2,99 @@
 
 ## Resumen
 
-`fall2026-cs8803-drl/hw4-f26-dpo-ref` no es un modelo entrenado desde cero, sino un adaptador LoRA de referencia publicado como material docente para la asignatura CS 8803 (Deep Reinforcement Learning, otoño 2026). Se construye sobre `Qwen/Qwen2.5-1.5B-Instruct` y contiene el resultado de una ejecución canónica de DPO (Direct Preference Optimization) que el alumnado debe reproducir y con la que debe comparar sus propios entrenamientos. El adaptador se carga mediante `hw4_lib.references.load_reference("dpo")` en la revisión fijada por el código de partida.
+`fall2026-cs8803-drl/hw4-f26-dpo-ref` es un adaptador LoRA de referencia publicado por el equipo docente del curso CS 8803 (Deep Reinforcement Learning, otoño 2026) para la asignatura de HW4, sección 4, dedicada a Direct Preference Optimization (DPO). No es un modelo de propósito general, sino un artefacto pedagógico: sirve como ejecución canónica contra la que el alumnado compara sus propios entrenamientos DPO. Se construye sobre `HuggingFaceTB/SmolLM2-1.7B-Instruct`, un transformer decoder-only de 1.700 millones de parámetros de Hugging Face, y se distribuye como adaptador PEFT en precisión bf16.
 
-El problema que resuelve es de naturaleza metodológica: proporciona una línea base reproducible (semilla 0, hiperparámetros cerrados, configuración exacta en `reference_config.json`) para una práctica sobre optimización de preferencias, de modo que las diferencias observadas por el estudiante puedan atribuirse a su implementación y no a variaciones del entorno. La receta es deliberadamente modesta: 2.000 pares de preferencia de `HuggingFaceH4/ultrafeedback_binarized`, una época, 250 pasos y unos 8 minutos de entrenamiento en una única A100.
+El adaptador se entrena con `DPOTrainer` de TRL 1.16.0 sobre 2.000 pares de preferencia extraídos de `HuggingFaceH4/ultrafeedback_binarized`, filtrando aquellos en los que ambas respuestas no superan los 256 tokens. La configuración es deliberadamente modesta (rango LoRA 8, α 16, una época, 250 pasos, unos 4 minutos en una A100) para que el alumnado pueda reproducirla con recursos limitados. La relevancia actual es, por tanto, metodológica: ejemplifica un pipeline DPO completo y verificable, con métricas de precisión en pares retenidos, divergencia KL respecto al modelo base y evaluación con modelos de recompensa externos.
 
-Por su tamaño (1,54 B parámetros en el modelo base, ~9,2 M parámetros entrenables en el adaptador) y su naturaleza de artefacto didáctico, no está pensado para producción ni para evaluaciones de capacidad general, sino como referencia de ingeniería: incluye métricas paso a paso, evaluaciones de retención de pares y trazas de recompensa frente a divergencia KL que ilustran el compromiso típico de DPO.
+El resultado cuantitativo principal es una precisión del 0,646 sobre los 771 pares de `test_prefs` filtrados, con una KL de 0,13 respecto al base y una longitud media de respuesta de 93 tokens (15 % de respuestas alcanzando el límite de 256). El adaptador no está pensado para despliegue en producción ni para uso comercial directo, aunque su licencia Apache 2.0 lo permitiría formalmente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con GQA (modelo base Qwen2.5-1.5B-Instruct) + adaptador LoRA (PEFT) |
-| Parametros totales | 1,54 B en el modelo base; adaptador LoRA de rango 8 sobre 7 modulos (~9,2 M parametros entrenables, estimado a partir de la configuracion del base) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens en el modelo base; extensible a 131.072 con YaRN (herencia del base, no declarado en la model card del adaptador) |
-| Tipos de cuantizacion | Adaptador en bf16; el modelo base admite el ecosistema habitual (fp16/bf16, 8-bit y 4-bit via bitsandbytes, GGUF Q2-Q8, AWQ/GPTQ). No se publican cuantizaciones propias del adaptador |
-| Idiomas soportados | No disponible en la model card. El modelo base Qwen2.5 declara soporte multilingue (del orden de 29 idiomas, incluidos espanol, ingles y chino) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`adapter_model.safetensors`) + `adapter_config.json` (PEFT LoRA, bf16); el repositorio no incluye pesos fusionados |
+| Arquitectura | Transformer decoder-only (SmolLM2-1.7B-Instruct) con adaptador LoRA (PEFT) |
+| Parametros totales | 1.700 millones (modelo base); adaptador LoRA de rango 8 sobre 7 módulos lineales |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada de SmolLM2-1.7B-Instruct) |
+| Tipos de cuantizacion | no disponible (el adaptador se publica en bf16; las cuantizaciones del base no se documentan aquí) |
+| Idiomas soportados | no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `adapter_model.safetensors` + `adapter_config.json` (PEFT); requiere cargar el base por separado |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre un transformer decoder-only de Qwen2.5-1.5B-Instruct, que emplea atención con grouped-query attention y RoPE. El entrenamiento es DPO con pérdida sigmoide (β = 0,1, sin label smoothing) implementado en TRL 1.16.0 mediante `DPOTrainer`, con las log-probabilidades del modelo de referencia precalculadas. Los módulos adaptados son `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, con rango 8, α 16 y sin dropout; el adaptador se guarda en bf16.
+El adaptador se aplica sobre `HuggingFaceTB/SmolLM2-1.7B-Instruct`, un transformer decoder-only de 1.700 millones de parámetros. Los módulos adaptados con LoRA son `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, con rango 8, α 16 y sin dropout. El entrenamiento DPO usa la pérdida sigmoide de TRL 1.16.0 con β = 0,1, sin label smoothing y con log-probabilidades de referencia precalculadas.
 
-Los datos son 2.000 pares de preferencia extraídos de `HuggingFaceH4/ultrafeedback_binarized` (partición `train_prefs`), filtrando únicamente aquellos pares en los que ambas respuestas tienen 256 tokens o menos. La optimización consiste en 1 época, tamaño de lote 8 (250 pasos), tasa de aprendizaje 1e-5 constante sin warmup, recorte de norma de gradiente 1,0, precisión bf16 y semilla 0. El coste computacional declarado es de aproximadamente 8 minutos en una A100, lo que sitúa el experimento en la categoría de juguete a efectos de escala, pero suficiente para observar el efecto de DPO sobre la política base.
+Los datos son 2.000 pares de preferencia de `HuggingFaceH4/ultrafeedback_binarized` (`train_prefs`), filtrados para conservar solo pares con ambas respuestas de 256 tokens o menos. La optimización consiste en una época, batch size 8 (250 pasos), learning rate 1e-5 constante sin warmup, clipping de norma de gradiente 1,0, precisión bf16 y semilla 0. El coste computacional declarado es de aproximadamente 4 minutos en una única A100. No se documenta ningún proceso de RLHF previo adicional sobre el adaptador, ni innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional y seguimiento de instrucciones, heredados del modelo base Qwen2.5-1.5B-Instruct.
-- Alineación con preferencias humanas en el subconjunto de UltraFeedback empleado: el adaptador desplaza la distribución de respuestas hacia las opciones marcadas como elegidas en los pares de entrenamiento.
-- Capacidad de actuar como referencia de comparación (baseline) para experimentos DPO propios: permite calcular precisión sobre pares retenidos, KL respecto al base y puntuaciones de modelos de recompensa.
-- Soporte de plantilla de chat del modelo base (ChatML de Qwen2.5); no se documenta ningún formato adicional en el adaptador.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito en la información proporcionada.
-- Capacidades multilingües: no verificadas en el adaptador; dependen exclusivamente del modelo base.
+- Generación de texto y razonamiento conversacional heredados del modelo base SmolLM2-1.7B-Instruct.
+- Alineación con preferencias humanas mediante DPO: el adaptador desplaza la distribución del base hacia respuestas preferidas en el conjunto UltraFeedback.
+- Evaluación comparativa de ejecuciones DPO: permite al alumnado medir precisión en pares, KL y puntuaciones de modelos de recompensa contra una referencia fija.
+- Carga programática mediante `hw4_lib.references.load_reference("dpo")` en la revisión fijada por el código de inicio.
+- Soporte de tool calling: no documentado en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingües: no documentadas.
+- Modo thinking, visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Docencia de DPO: servir como ejecución de referencia contra la que el alumnado compara su propio entrenamiento, aislando el efecto de los hiperparámetros y de la implementación gracias a una configuración fijada y a una semilla determinista.
-- Depuración de pipelines de TRL: al incluir `metrics.jsonl`, `trl_log_history.json` y `pairs_final.jsonl`, permite contrastar paso a paso la evolución de la pérdida, el margen y la precisión de pares frente a una traza conocida.
-- Análisis del compromiso recompensa-KL: los ficheros `evals.jsonl` y `plane/final.jsonl` permiten reproducir el plano recompensa frente a KL con 100 prompts retenidos, útil para estudiar cómo se degrada la política al optimizar preferencias.
-- Estudio de la longitud de respuesta: la métrica de 115 tokens de media y un 19% de respuestas que alcanzan el límite de 256 tokens es un punto de partida para investigar el sesgo hacia respuestas largas inducido por DPO.
-- Verificación de infraestructura: con 8 minutos en una A100 y 250 pasos, sirve como prueba de humo (smoke test) para validar que un entorno de entrenamiento con PEFT y TRL está correctamente configurado antes de lanzar experimentos mayores.
-- Experimentos de fusión y cuantización: el adaptador puede fusionarse con el base y cuantizarse para medir la pérdida de precisión en pares retenidos tras la compresión, aunque el autor no publica resultados en ese eje.
-- Comparación de modelos de recompensa: el uso de dos jueces distintos (`Skywork-Reward-V2-Qwen3-0.6B` en entrenamiento y `Skywork-Reward-V2-Llama-3.2-1B` en evaluación) ofrece un caso concreto para estudiar la sensibilidad de las métricas al evaluador.
+- Docencia de DPO en cursos de RL: el adaptador actúa como referencia canónica contra la que el alumnado compara su propio entrenamiento, cargándolo con `load_reference("dpo")` en la revisión fijada.
+- Reproducción de pipelines TRL: sirve para validar configuraciones de `DPOTrainer` (β, rango LoRA, learning rate, filtrado de longitud) y comprobar que los resultados propios caen en el mismo régimen de precisión y KL.
+- Análisis del plano recompensa-KL: los ficheros `plane/final.jsonl` y `samples.jsonl` permiten estudiar cómo varía la puntuación de modelos de recompensa frente a la divergencia KL respecto al base.
+- Estudio de degradación por longitud: con un 15 % de respuestas alcanzando el límite de 256 tokens, es útil para analizar sesgos de longitud inducidos por el filtrado del dataset.
+- Evaluación con modelos de recompensa externos: los ficheros `evals.jsonl` y `pairs_final.jsonl` permiten reproducir las puntuaciones de `Skywork/Skywork-Reward-V2-Llama-3.2-1B` y `Ray2333/GRM-gemma2-2B-rewardmodel-ft`.
+- Depuración de adaptadores PEFT: al ser un adaptador pequeño (repo de 0,0 GB) y de entrenamiento rápido (4 minutos en A100), es adecuado para probar flujos de carga, merge y despliegue con `peft` antes de escalar a configuraciones mayores.
+- Prácticas de análisis de hiperparámetros: la configuración exacta en `reference_config.json` permite estudiar el efecto de variar rango, β o número de pasos manteniendo el resto fijo.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son los de la evaluación propia de la práctica (`hw4_lib.llm.evaluate_adapter`). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
-
 | Metrica | Valor |
 |---|---|
-| Precision en pares retenidos (816 pares filtrados de `test_prefs`) | 0,652 |
-| Divergencia KL respecto al modelo base (100 prompts retenidos) | 0,12 |
-| Longitud media de respuesta / proporcion que alcanza el límite de 256 tokens | 115 tokens / 19% |
-| Modelo de recompensa de entrenamiento `Skywork/Skywork-Reward-V2-Qwen3-0.6B` (puntuacion media) | −1,06 |
-| Modelo de recompensa retenido `Skywork/Skywork-Reward-V2-Llama-3.2-1B` (puntuacion media) | 2,06 |
+| Precisión en pares retenidos (`test_prefs`, 771 pares) | 0,646 |
+| KL respecto al modelo base (100 prompts retenidos) | 0,13 |
+| Longitud media de respuesta / porcentaje en el límite de 256 tokens | 93 tokens / 15 % |
+| Modelo de recompensa de entrenamiento `Skywork/Skywork-Reward-V2-Llama-3.2-1B` (puntuación media) | 1,87 |
+| Modelo de recompensa retenido `Ray2333/GRM-gemma2-2B-rewardmodel-ft` (puntuación media) | −2,88 |
 
-Las puntuaciones de los modelos de recompensa tienen un desplazamiento arbitrario y solo deben interpretarse como diferencias respecto al modelo base sobre los mismos prompts, tal como advierte el autor.
+Las puntuaciones de modelos de recompensa tienen un desplazamiento arbitrario y solo deben compararse como cambios respecto al modelo base sobre los mismos prompts. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el adaptador bf16 ocupa del orden de 18-20 MB; sumado al modelo base en bf16 (unos 3,1 GB de pesos) el total ronda los 3,2 GB, más caché KV.
-- Cuantización: en 8-bit el conjunto baja a unos 1,7 GB y en 4-bit a alrededor de 1 GB, lo que deja margen amplio en GPUs de consumo.
-- GPU recomendadas: cualquier GPU con 6 GB o más es suficiente para inferencia en bf16 a contexto corto; para contextos largos conviene 12-16 GB. El entrenamiento de referencia se ejecutó en una A100.
-- Cabe en GPU de consumo: sí, en tarjetas tipo RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090, incluso con el adaptador fusionado.
-- Opciones de despliegue: transformers + PEFT (carga directa del adaptador), vLLM y TGI tras fusionar los pesos, llama.cpp/Ollama mediante conversión a GGUF del modelo fusionado.
-- Latencia y throughput: no disponibles en la información proporcionada. El único dato de coste es el entrenamiento (unos 8 minutos, 250 pasos, lote 8, una A100).
+- VRAM estimada para inferencia: no disponible de forma explícita; el base SmolLM2-1.7B-Instruct en bf16 requiere del orden de 3,4 GB solo para pesos, más overhead de activaciones y KV cache.
+- GPU recomendadas: el entrenamiento de referencia se ejecutó en una única A100 en unos 4 minutos; para inferencia basta con GPUs consumer de gama media-alta.
+- Cabe en GPU consumer: sí, previsiblemente en tarjetas con 8 GB o más en bf16/fp16, y en 4-6 GB con cuantización del base (no documentada en esta ficha).
+- Opciones de despliegue: carga mediante `peft` sobre el base con Transformers; el adaptador puede fusionarse con el base para exportar a otros formatos. vLLM, llama.cpp, Ollama o TGI no están documentados para este artefacto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de resultados de benchmarks del adaptador frente a alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Los datos de rendimiento de las alternativas no están en la información proporcionada.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
+| Modelo | Parámetros | Contexto | Precisión en pares DPO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw4-f26-dpo-ref (este) | 1,54 B + LoRA r8 | 32.768 (heredado del base) | apache-2.0 | Adaptador PEFT en HF | Precisión en pares 0,652; KL 0,12 |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,54 B | 32.768 | apache-2.0 | Pesos completos en HF | No disponible en esta ficha |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 | apache-2.0 (salvo excepciones por tamano en la familia) | Pesos completos en HF | No disponible en esta ficha |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Llama 3.2 Community License | Pesos completos en HF | No disponible en esta ficha |
+| `hw4-f26-dpo-ref` (este) | 1,7 B + LoRA r=8 | no disponible | 0,646 | Apache 2.0 | Hugging Face (repo público) |
+| SmolLM2-1.7B-Instruct (base) | 1,7 B | no disponible | no disponible (referencia de KL = 0) | Apache 2.0 | Hugging Face |
+| Otros adaptadores DPO de referencia del curso | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks comparables de otros adaptadores DPO de la misma asignatura ni de modelos alternativos evaluados con el mismo código de evaluación.
 
 ## Limitaciones y advertencias
 
-- Artefacto didáctico: es un adaptador de referencia para una práctica universitaria, no un modelo validado para uso en producción. No hay evaluación de seguridad, sesgos ni robustez.
-- Requiere el modelo base: el repositorio solo contiene el adaptador LoRA; sin `Qwen/Qwen2.5-1.5B-Instruct` no es utilizable.
-- Entrenamiento de escala mínima: 2.000 pares, 250 pasos y una época. El ajuste es superficial y puede no generalizar fuera de la distribución de UltraFeedback.
-- Sesgo de longitud: un 19% de las respuestas generadas alcanza el límite de 256 tokens y la media es de 115, lo que sugiere una tendencia a respuestas largas que puede confundirse con mejoras de calidad.
-- Idiomas: la model card no declara idiomas; el entrenamiento con UltraFeedback es mayoritariamente en inglés, por lo que el comportamiento en castellano no está caracterizado.
-- Riesgo de alucinación: heredado del modelo base de 1,5 B, acentuado en un adaptador entrenado solo con preferencias y sin datos de conocimiento factual.
-- Evaluación dependiente del juez: las puntuaciones de recompensa proceden de modelos Skywork con desplazamiento arbitrario y no son comparables en valor absoluto entre ejecuciones.
-- Licencia: apache-2.0 permite uso comercial del adaptador, pero debe verificarse también la licencia y las condiciones del modelo base y de los datos de UltraFeedback empleados.
-- Sin garantía de mantenimiento: el repositorio pertenece a una cuenta de curso con 0 descargas y 0 likes, creado y actualizado el mismo día, sin historial de versiones más allá de la revisión fijada.
+- Artefacto pedagógico: no está diseñado ni validado para uso en producción; su propósito es servir de referencia en un curso.
+- Sesgos heredados de UltraFeedback: el dataset de preferencias introduce sesgos de longitud, estilo y dominio que el adaptador reproduce; el 15 % de respuestas que alcanzan el límite de 256 tokens es indicativo.
+- Riesgo de alucinación: no evaluado en la información proporcionada; el modelo base de 1,7 B tiene capacidad limitada de razonamiento factual.
+- Contexto e idiomas: no documentados; no debe asumirse un rendimiento multilingüe.
+- Licencia: Apache 2.0 permite uso comercial formal, pero la ausencia de evaluación de seguridad y de benchmarks estándar desaconseja su despliegue sin validación adicional.
+- Evaluación limitada: las métricas publicadas se restringen a 771 pares retenidos, 100 prompts para KL y dos modelos de recompensa; no hay evaluación en tareas generativas abiertas.
+- Dependencia de la revisión: el código de inicio fija una revisión concreta; cambios en el repositorio pueden romper la reproducibilidad.
+- Sin datos de cuantización ni de despliegue en runtimes optimizados (vLLM, llama.cpp), lo que limita las estimaciones de latencia y throughput.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-dpo-ref
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-dpo-ref
+- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized
-- Modelo de recompensa de entrenamiento: https://huggingface.co/Skywork/Skywork-Reward-V2-Qwen3-0.6B
-- Modelo de recompensa de evaluación: https://huggingface.co/Skywork/Skywork-Reward-V2-Llama-3.2-1B
-- TRL (DPOTrainer): https://github.com/huggingface/trl
-- PEFT: https://github.com/huggingface/peft
-
-Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de las dependencias citadas en la model card.
+- Modelo de recompensa de entrenamiento: https://huggingface.co/Skywork/Skywork-Reward-V2-Llama-3.2-1B
+- Modelo de recompensa retenido: https://huggingface.co/Ray2333/GRM-gemma2-2B-rewardmodel-ft
+- Librería TRL (DPOTrainer): https://github.com/huggingface/trl
+- Librería PEFT: https://github.com/huggingface/peft

@@ -5,7 +5,7 @@
   "author": "PINNeAPPle-Labs",
   "url": "https://huggingface.co/PINNeAPPle-Labs/airfoil-cst-rans-mlp",
   "created_at": "2026-10-13T14:40:26.000Z",
-  "updated_at": "2026-10-18T18:28:28.000Z",
+  "updated_at": "2026-11-20T20:23:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 48,
   "trending_score": 0,
   "parameters": 98895,
   "parameters_human": "98895",

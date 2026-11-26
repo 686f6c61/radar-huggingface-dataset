@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 457,
+  "downloads_30d": 479,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -44,6 +44,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Proposal-only structured drafting",
+      "dataset": "ReceiptAgent v2 owner-run held-out JSON contract gate",
+      "metric": "JSON contract-valid drafts (5/5)",
+      "value": 5
+    },
+    {
+      "task": "Proposal-only structured drafting",
+      "dataset": "ReceiptAgent v2 owner-run adversarial refusal-prefix gate",
+      "metric": "Adversarial refusal prefixes (6/6)",
+      "value": 6
+    }
+  ],
   "sources": []
 }

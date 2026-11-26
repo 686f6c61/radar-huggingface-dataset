@@ -1,137 +1,106 @@
 # i1see1you/VirbiusGuard-4B
 
 ## Resumen
+VirbiusGuard-4B es un clasificador de seguridad para prompts de agentes LLM, desarrollado por el usuario i1see1you (vinculado a GrainMind) y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino mediante LoRA del modelo Qwen3Guard-Gen-4B de Alibaba Qwen, con 4.022 millones de parametros totales (arquitectura Qwen3ForCausalLM densa) y una ventana de contexto heredada del modelo base. Su funcion es actuar como primera linea de defensa (Prompt L1) en un motor de agentes: recibe un prompt de entrada y devuelve una clasificacion estricta en JSON con los campos `hit_rule` y `triggered_id`, indicando si la peticion es segura o a que categoria de riesgo pertenece.
 
-VirbiusGuard-4B es un clasificador de seguridad de entradas (prompt L1 detection) desarrollado por el usuario i1see1you y publicado en Hugging Face. Se trata de un ajuste fino mediante LoRA (rank 32, alpha 64) sobre el modelo Qwen/Qwen3Guard-Gen-4B, posteriormente fusionado en pesos completos. Su funcion es auditar el texto que un usuario introduce en un agente o chatbot y devolver una salida estricta en JSON con el formato `{"hit_rule": bool, "triggered_id": string}`, de modo que el sistema pueda decidir si bloquea la peticion antes de que llegue al modelo generativo principal.
+El modelo resuelve un problema concreto: el modelo base clasifica con su plantilla oficial de seguridad, pero deja escapar buena parte de los ataques de jailbreak y de abuso de herramientas de agente. Segun la model card, sobre el conjunto de evaluacion gold_1000 (615 muestras unsafe y 385 safe) el modelo base presenta un 15,4 % de falsos negativos y una tasa de deteccion de jailbreak del 57,1 %, mientras que la version v2.0 de VirbiusGuard alcanza un 98,2 % de exactitud, un 98,4 % de recall y un 2,1 % de falsos positivos (8 de 385), con un 96,9 % de deteccion en jailbreak y un 100 % en abuso de herramientas de agente.
 
-El problema que resuelve es la debilidad del modelo base en dos familias concretas de ataques: jailbreak (extraccion de system prompt, roleplay tipo DAN, instrucciones esteganograficas) y agent tool misuse (llamadas a herramientas fuera de alcance, escalada de privilegios, sondeo del endpoint de metadatos de cloud, inyeccion SQL en parametros de工具). Segun la model card, sobre el conjunto gold_500 el ajuste reduce la tasa de deteccion omitida del 15,6% al 0,6% y eleva la exhaustividad en jailbreak del 44,2% al 100%, manteniendo una precision del 99,4%.
+Su relevancia actual reside en que la seguridad de agentes exige clasificadores especializados que distingan entre peticiones legitimas y ataques sofisticados (prompt injection, tool misuse) sin generar un exceso de bloqueos. El modelo se distribuye tanto en safetensors fp16 como en GGUF (F16, Q8_0 y Q4_K_M), lo que permite desplegarlo desde un portatil hasta un servidor con vLLM, y se integra en el motor VirbiusAgent sustituyendo una variable de entorno.
 
-El modelo tiene 4.022.468.096 parametros (dato real de los ficheros safetensors), se distribuye en formato fp16 con dos shards de safetensors y licencia Apache 2.0. Solo declara soporte para chino (zh) e ingles (en), aunque por su herencia de Qwen3 procesa otros idiomas de forma residual. El pipeline declarado en Hugging Face es text-classification, pese a que internamente es un modelo causal (Qwen3ForCausalLM) que genera la etiqueta en lugar de clasificar con una cabeza dedicada.
-
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (transformer decoder-only), ajuste LoRA rank 32 / alpha 64 fusionado |
-| Parametros totales | 4.022.468.096 (4B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible; solo se publican pesos fp16. Al ser un transformer Qwen3 estandar es convertible a GGUF/AWQ/GPTQ, pero el autor no distribuye versiones cuantizadas |
-| Idiomas soportados | zh, en (declarados) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (fp16, 2 shards: model-00001-of-00002.safetensors y model-00002-of-00002.safetensors), ~7,5 GB |
-| Modelo base | Qwen/Qwen3Guard-Gen-4B |
-| Version actual | V15 (rama `main`) |
-| Pipeline declarado | text-classification |
-| Libreria | transformers |
-| Tamano del repositorio | 8,1 GB |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-11 |
+| Arquitectura | Qwen3ForCausalLM (transformer decoder-only denso) con adaptador LoRA (rank 32 / alpha 64 / dropout 0.1) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3Guard-Gen-4B) |
+| Tipos de cuantizacion | fp16 (safetensors), GGUF F16 (7,5 GB), GGUF Q8_0 (4,0 GB), GGUF Q4_K_M (2,3 GB) |
+| Idiomas soportados | zh (chino), en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (model-00001-of-00002, model-00002-of-00002, fp16 ~7,5 GB) y GGUF (F16, Q8_0, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen3Guard-Gen-4B, un transformer decoder-only de la familia Qwen3 orientado a clasificacion de seguridad, y se ajusta con un adaptador LoRA de rank 32, alpha 64 y dropout 0,1. El entrenamiento se realizo con mlx-lm sobre el conjunto v29f (30.671 muestras de entrenamiento y 916 de validacion), durante 1 epoca, 3.834 pasos, con warmup de 192 pasos, learning rate 1,5e-4 con decaimiento coseno hasta 1,5e-6, batch efectivo de 8, max_seq de 1.024 y enmascaramiento del prompt (mask_prompt). La anotacion de las etiquetas se hizo mediante destilacion de conocimiento desde un modelo profesor que etiqueto los datos de forma offline.
 
-La arquitectura es la del modelo base: un transformer decoder-only de la familia Qwen3 con 4B parametros. Sobre el se aplico un ajuste LoRA con rank 32 y alpha 64, que despues se fusiono en los pesos completos y se serializo en fp16. No se introduce ninguna cabeza de clasificacion nueva ni modulo de atencion alternativo: el modelo sigue siendo generativo y produce la clasificacion como texto, forzando la salida a un JSON con dos campos. El prompt de sistema distribuido en la model card instruye al modelo a actuar como auditor estricto y a emitir `{"hit_rule": true, "triggered_id": "<categoria>"}` o `{"hit_rule": false, "triggered_id": "none"}`.
-
-El entrenamiento combina dos elementos. Por un lado, el autor refuerza especificamente las categorias donde el base fallaba: jailbreak (extraccion de system prompt, roleplay DAN) y agent-behavior (uso indebido de herramientas, sondeo de IMDS, apilado de consultas SQL). Por otro, los datos de la version V15 se describen como "mismo criterio que el 0.6B V15": reequilibrado de la porcion benigna, oasst1 re-filtrado con guard, prosa china de COIG y texto de estilo OCR. No se especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se empleo RLHF o DPO; el autor solo indica el uso de LoRA supervisado. La taxonomia cubre diez categorias de contenido no seguro mas la clase safe, y cada entrada recibe una unica categoria principal.
-
-No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal ni modos de razonamiento extendido. El punto diferencial es el protocolo de salida JSON orientado a motor (integracion directa con VirbiusAgent mediante la variable `VIRBIUS_PROMPT_LLM_MODEL`) frente al template de seguridad oficial del modelo base (`Safety: Unsafe/Controversial`).
+La version v2.0 parte de la iteracion V26 y anade 1.953 muestras verificadas de la ronda R10 y 425 muestras safe de R12. Incorpora ademas un conjunto de calibracion de 452 ejemplos compuesto por 100 de PKU-SafeRLHF, 50 de OR-Bench, 100 de chino de V26, 80 de ventana larga, 45 de peticiones de ayuda, 18 de reservas abiertas y 59 de tareas de agente (procedentes de glaive-function-calling-v2, hermes json-mode-agentic y ToolACE). Para evitar contaminacion, se eliminaron del entrenamiento las 52 muestras que coincidian exactamente con `data/eval/gold_1000.jsonl`, sin modificar el conjunto de evaluacion. La innovacion principal no es arquitectonica sino de protocolo: el modelo abandona la plantilla oficial de seguridad del base (Unsafe / Controversial) y emite un JSON estricto con `hit_rule` y `triggered_id`, lo que lo hace directamente consumible por un motor de agentes.
 
 ## Capacidades
-
-- Clasificacion de seguridad de entradas de usuario en una de diez categorias: Violent, Non-violent Illegal Acts, Unethical Acts, Suicide & Self-Harm, Jailbreak, PII, Copyright Violation, Politically Sensitive Topics, Sexual Content or Sexual Acts y Agent Tool Misuse, mas la clase safe.
-- Salida determinista en JSON estricto (`hit_rule`, `triggered_id`), apta para parseo programatico en un pipeline de guardarrailes.
-- Deteccion de jailbreak: extraccion de system prompt, roleplay tipo DAN e instrucciones ofuscadas o esteganograficas.
-- Deteccion de agent tool misuse: llamadas a herramientas fuera de alcance, intentos de escalada de privilegios, sondeo de endpoints de metadatos de cloud (por ejemplo `metadata.google.internal`) e inyeccion SQL embebida en parametros de herramientas.
-- Deteccion de PII, contenido sexual, violencia, actos ilegales no violentos, autolesion y violacion de copyright.
-- Cribado de temas politicamente sensibles bajo criterio A (mencion explicita = bloqueo).
-- Capacidad multilingue limitada a zh y en declarados; hereda del base Qwen3 cierta competencia en otras lenguas, no garantizada por el autor.
-- No soporta generacion de texto abierta, razonamiento general, codigo ni matematicas como caso de uso previsto: la salida esta restringida al JSON de clasificacion.
-- No se declaran capacidades de vision, audio, tool calling nativo del propio modelo ni modo thinking.
+- Clasificacion binaria de seguridad de prompts: devuelve `hit_rule: false` para entradas seguras o `hit_rule: true` acompanado de un `triggered_id` cuando detecta riesgo.
+- Taxonomia cerrada de 10 categorias unsafe: Violent, Non-violent Illegal Acts, Unethical Acts, Suicide and Self-Harm, Jailbreak, PII, Copyright Violation, Politically Sensitive Topics, Sexual Content or Sexual Acts y Agent Tool Misuse.
+- Deteccion especializada de jailbreak: 96,9 % de recall sobre 98 muestras en gold_1000 (frente al 57,1 % del modelo base).
+- Deteccion de abuso de herramientas de agente: 100 % de recall sobre 84 muestras en gold_1000.
+- Deteccion de contenido de autolesion y suicidio: 97,0 % de recall sobre 33 muestras en gold_1000.
+- Salida estructurada en JSON, apta para integracion programatica sin postprocesado complejo.
+- Capacidad conversacional y de generacion de texto heredada del modelo base, aunque el uso previsto es la clasificacion.
+- Soporte bilingue chino-ingles.
+- No se documentan capacidades de vision, audio, tool calling propio ni modo de razonamiento extendido (thinking mode) en la informacion disponible.
 
 ## Casos de uso
-
-- Guardarrail de entrada en agentes autonomos: el modelo se coloca delante del LLM principal y audita cada mensaje del usuario. Si devuelve `hit_rule: true`, el orquestador rechaza la peticion o la redirige a un flujo seguro. Su especialidad en Agent Tool Misuse lo hace adecuado para agentes con acceso a herramientas (HTTP, bases de datos, shell).
-- Proteccion frente a prompt injection y jailbreak en aplicaciones expuestas al publico: con una exhaustividad declarada del 100% en jailbreak sobre gold_500 y del 95,2% sobre holdout, reduce el riesgo de extraccion del system prompt o de manipulacion del comportamiento del asistente.
-- Moderacion de comunidades y UGC: clasificacion previa de comentarios y mensajes en diez categorias, con una sola etiqueta por entrada, lo que simplifica la politica de escalado (aviso, retencion, bloqueo).
-- Cumplimiento de privacidad: deteccion de peticiones orientadas a extraer PII de terceros (direcciones, cuentas, datos de localizacion), con recall del 100% en esa categoria sobre gold_500.
-- Auditoria de agentes conectados a infraestructura cloud: identificacion de intentos de acceso al endpoint de metadatos de instancia, un vector clasico de robo de credenciales en entornos cloud, con recall del 98% en Agent Tool Misuse.
-- Filtrado previo a la traduccion automatica o al resumen de documentos: el modelo reconoce texto benigno en chino e ingles (por ejemplo, "把这段中文翻译成法文：你好。" se clasifica como safe), por lo que puede actuar como paso previo en pipelines de procesamiento de documentos sin bloquear operaciones legitimas.
-- Soporte a equipos de seguridad en la redaccion de reglas: los casos etiquetados y la distincion de fronteras (por ejemplo, investigacion de seguridad autorizada frente a abuso real) sirven como referencia para calibrar politicas internas de moderacion.
+- Filtrado de entrada en agentes LLM: el modelo se situa como Prompt L1 antes del agente principal; cada mensaje del usuario se clasifica y, si `hit_rule` es true, se bloquea o se deriva a revision. Su recall del 98,4 % sobre gold_1000 lo hace adecuado para esta puerta de entrada.
+- Proteccion frente a prompt injection y jailbreak: con un 96,9 % de deteccion en la categoria Jailbreak, se emplea para interceptar intentos de manipular el system prompt o evadir las politicas del agente antes de que lleguen al modelo generativo.
+- Supervision de agentes con acceso a herramientas: la categoria Agent Tool Misuse, con 100 % de recall sobre 84 muestras, permite detectar peticiones que intentan forzar al agente a ejecutar funciones peligrosas (borrado de datos, envio de correos masivos, acceso a ficheros).
+- Moderacion de comunidades y plataformas de contenido: la taxonomia de 10 categorias permite etiquetar mensajes de usuarios en foros o chats con una unica etiqueta principal, facilitando el enrutado a colas de moderacion humanas.
+- Cumplimiento y proteccion de datos: la categoria PII permite marcar prompts que solicitan o exponen datos personales, util en entornos con requisitos de RGPD.
+- Despliegue en el motor VirbiusAgent: basta con sustituir la variable de entorno `VIRBIUS_PROMPT_LLM_MODEL` para que el motor use este clasificador en lugar del modelo base, sin cambios de codigo.
+- Ejecucion en local o en el borde: la version GGUF Q4_K_M (2,3 GB) permite ejecutar el clasificador con llama.cpp u Ollama en maquinas sin GPU dedicada, lo que facilita el filtrado previo sin enviar prompts a servicios externos.
 
 ## Benchmarks y rendimiento
+Resultados sobre `data/eval/gold_1000.jsonl` (615 unsafe / 385 safe), mismo conjunto y criterio para todos los modelos:
 
-Datos publicados por el autor en la model card. Todas las cifras proceden de esa fuente; no se han reproducido de forma independiente.
-
-Conjunto gold_500 (evaluacion principal, mismo criterio para base y ajuste):
-
-| Modelo | acc | recall | Deteccion omitida | Tasa FP | precision |
+| Modelo | Accuracy | Recall | Falsos negativos | Falsos positivos | Precision |
 |---|---|---|---|---|---|
-| Qwen3Guard-Gen-4B (base) | 84,8% | 84,4% | 15,6% | 10,8% (4/37) | 99,0% |
-| 4B V13.3 | 99,2% | 99,8% | 0,2% | 8,1% (3/37) | 99,4% |
-| VirbiusGuard-4B V15 | 98,8% | 99,4% | 0,6% | 8,1% (3/37) | 99,4% |
+| Qwen3Guard-Gen-4B (base) | 87,9 % | 84,6 % | 15,4 % (95/615) | 6,8 % (26/385) | 95,2 % |
+| VirbiusGuard-4B V1.3 | 93,6 % | 99,5 % | 0,5 % (3/615) | 15,8 % (61/385) | 90,9 % |
+| VirbiusGuard-4B V1.5 | 97,5 % | 99,2 % | 0,8 % (5/615) | 5,2 % (20/385) | 96,8 % |
+| VirbiusGuard-4B V1.7 | 97,8 % | 98,0 % | 2,0 % (12/615) | 2,6 % (10/385) | 98,4 % |
+| VirbiusGuard-4B v2.0 | 98,2 % | 98,4 % | 1,6 % (10/615) | 2,1 % (8/385) | 98,7 % |
 
-Recall por categoria sobre gold_500:
+Recall por categoria clave (gold_1000):
 
-| Categoria | Qwen3Guard-Gen-4B | VirbiusGuard-4B V15 |
-|---|---|---|
-| Jailbreak | 44,2% (23/52) | 100% |
-| Agent Tool Misuse | 80,0% (40/50) | 98,0% |
-| Politically Sensitive | 72,1% (44/61) | 100% |
-| Suicide & Self-Harm | 88,0% | 96,0% |
-| PII | 92,0% | 100% |
-| Unethical Acts | 92,0% | 100% |
-| Violent | 98,0% | 100% |
-| Non-violent Illegal | 98,0% | 100% |
-| Copyright Violation | 100% | 100% |
-
-Conjuntos suplementarios:
-
-| Conjunto | Modelo | acc | recall | Tasa FP | precision |
+| Categoria (n) | Base | V1.3 | V1.5 | V1.7 | v2.0 |
 |---|---|---|---|---|---|
-| gold_600 | Qwen3Guard-Gen-4B | 86,7% | 84,7% | 4,5% | 98,8% |
-| gold_600 | V15 | 98,2% | 99,4% | 7,3% | 98,4% |
-| holdout_200 | Qwen3Guard-Gen-4B | 87,5% | 82,2% | 1,5% | 99,1% |
-| holdout_200 | V15 | 97,0% | 96,3% | 1,5% | 99,2% |
+| Jailbreak (98) | 57,1 % | 100 % | 100 % | 98,0 % | 96,9 % |
+| Agent Tool Misuse (84) | 81,0 % | 100 % | 98,8 % | 100 % | 100 % |
+| Suicide and Self-Harm (33) | 93,9 % | 100 % | 93,9 % | 93,9 % | 97,0 % |
 
-Recall en holdout_200: jailbreak pasa del 33,3% en el base al 95,2% en V15; agent tool misuse, del 62,5% al 93,8%.
-
-No se han publicado resultados en benchmarks estandar de la industria (MMLU, HumanEval, GSM8K ni similares) en la informacion disponible, ni comparaciones con guardarrailes de terceros (por ejemplo, Llama Guard, ShieldGemma): el autor solo compara contra su propio modelo base y contra la version intermedia V13.3.
+Los 10 falsos negativos de v2.0 se reparten en jailbreak (3), violencia (2), politica (2), actos ilegales (2) y autolesion (1). No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (cifras derivadas del numero de parametros, no publicadas por el autor): fp16 en torno a 8-9 GB de pesos mas cache KV, lo que en la practica exige unos 10-12 GB para contexto moderado; int8 aproxima 4,5-5 GB; int4 aproxima 2,5-3 GB. El repositorio solo distribuye pesos fp16, por lo que las versiones cuantizadas requieren conversion propia.
-- GPU recomendadas: cualquier GPU con 16 GB o mas para fp16 (RTX 4090, RTX 4080, A4000, L4, A10); A100/H100 no son necesarias por tamano, pero utiles para lotes grandes de moderacion en servidor.
-- Cabe en GPU de consumo: si. En 24 GB (RTX 3090, RTX 4090) con fp16 y margen amplio; en 12 GB (RTX 3060 12 GB, RTX 4070) es viable en fp16 con contexto corto o en int8; en 8 GB (RTX 3070, RTX 4060) solo con cuantizacion int4.
-- Opciones de despliegue: transformers en Python (documentado en la model card, con ejemplo completo); vLLM o TGI para servido con concurrencia; llama.cpp u Ollama tras convertir a GGUF (no se distribuye GGUF oficial). El repositorio incluye el tag `endpoints_compatible`, lo que sugiere compatibilidad con los endpoints gestionados de Hugging Face. En CPU es posible cambiando `.to("cuda")` por `.to("cpu")`; en Mac, por `.to("mps")`.
-- Latencia y rendimiento: no disponibles. La unica indicacion operativa de la model card es que `max_new_tokens` debe ser al menos 40 y que la decodificacion se hace greedy (`do_sample=False`), ya que una salida demasiado corta trunca el JSON y rompe el parseo.
-- Nota de integracion: la salida generada debe validarse contra un esquema JSON; un JSON truncado o con texto adicional debe tratarse como fallo de clasificacion.
+- VRAM estimada para inferencia en fp16: en torno a 8-9 GB incluyendo pesos (7,5 GB) y cache KV para secuencias de hasta 1.024 tokens.
+- VRAM estimada en GGUF Q8_0: aproximadamente 4,5-5 GB; en Q4_K_M: aproximadamente 2,5-3 GB.
+- GPU recomendadas para produccion con vLLM o TGI: A100 40/80 GB, H100, L40S o A10G; para una sola instancia de clasificacion es suficiente una GPU de 16 GB como RTX 4080 o RTX 4090.
+- Cabe en GPU de consumo: si. En RTX 4090 o 3090 en fp16; en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060) mediante GGUF Q8_0 o Q4_K_M.
+- Opciones de despliegue: Transformers con `from_pretrained`, llama.cpp y Ollama con los GGUF publicados, vLLM y TGI para servicio HTTP; la model card menciona compatibilidad con text-embeddings-inference y endpoints.
+- Latencia y throughput: no disponibles en la informacion proporcionada. El uso previsto con `max_new_tokens` de al menos 40 implica una generacion corta por peticion, adecuada para clasificacion en linea.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Rendimiento declarado (gold_500) |
-|---|---|---|---|---|---|
-| VirbiusGuard-4B (V15) | 4,02B | no disponible | Apache 2.0 | Guardarrail de entrada con salida JSON, especializado en jailbreak y agent tool misuse | acc 98,8%, recall 99,4%, precision 99,4% |
-| Qwen3Guard-Gen-4B | 4B (familia base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Guardarrail generativo con template oficial de seguridad | acc 84,8%, recall 84,4%, precision 99,0% |
-| VirbiusGuard (0.6B) | ~0,6B | no disponible | no disponible en la informacion proporcionada | Version ligera del mismo guardarrail, mismo protocolo JSON y mismo criterio V15 | no disponible |
+| Modelo | Parametros | Contexto | Accuracy gold_1000 | Recall jailbreak | Licencia | Formatos |
+|---|---|---|---|---|---|---|
+| VirbiusGuard-4B v2.0 | 4,02 B | no disponible | 98,2 % | 96,9 % | Apache 2.0 | safetensors, GGUF |
+| Qwen3Guard-Gen-4B (base) | 4 B (aprox.) | no disponible | 87,9 % | 57,1 % | no disponible en la informacion | safetensors |
+| VirbiusGuard-0.6B (version ligera) | 0,6 B (aprox.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-El autor no ofrece comparacion con guardarrailes de otros fabricantes (Llama Guard, ShieldGemma u otros). Cualquier comparacion de ese tipo requeriria una evaluacion propia bajo el mismo conjunto y criterio.
+La comparativa se limita al modelo base y a la version ligera del mismo autor, ya que no se han proporcionado datos de otros clasificadores de seguridad comparables (Llama Guard, ShieldGemma u otros). No disponible informacion adicional para ampliar la comparativa.
 
 ## Limitaciones y advertencias
-
-- El repositorio no tiene descargas ni interacciones registradas en el momento de la consulta y carece de evaluacion independiente: todas las cifras proceden del propio autor.
-- El criterio de anotacion es A (mencion explicita = infraccion), lo que provoca bloqueos de menciones neutras de temas politicos o religiosos. El propio autor advierte que un criterio mas permisivo (B, solo discurso malicioso o incitacion) exigiria reetiquetar y reentrenar.
-- Riesgo de falsos positivos en dominios legitimos: investigacion en seguridad, periodismo y divulgacion cientifica pueden caer en categorias sensibles (el ejemplo de la model card sobre el funcionamiento de un explosivo en un contexto academico tiende a bloquearse). La tasa de FP declarada es del 8,1% en gold_500 y del 7,3% en gold_600.
-- Falsos negativos residuales del 0,6% en gold_500 y del 3,7% en holdout_200: un guardarrail determinista no sustituye la validacion de salida ni los permisos a nivel de herramienta.
-- Solo declara zh e ingles; el comportamiento en castellano no esta garantizado ni evaluado, algo critico si se despliega en productos en espanol.
-- Alucinacion y formato: al ser un modelo generativo, puede emitir texto fuera del JSON o truncarlo. La model card exige `max_new_tokens >= 40` y decodificacion greedy; es obligatorio validar el esquema antes de actuar sobre `hit_rule`.
-- Es un clasificador de entrada (prompt L1): no cubre la moderacion de las respuestas del modelo ni la deteccion de contenido danino generado en la salida.
-- Licencia Apache 2.0, que permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3Guard-Gen-4B y de los datos de entrenamiento derivados de oasst1 y COIG antes de un despliegue en produccion.
-- El modelo incorpora caracteristicas de la familia Qwen3 y del modelo base de seguridad; no se detallan los sesgos especificos introducidos por el ajuste LoRA ni la composicion exacta del dataset de entrenamiento.
-- El pipeline declarado en Hugging Face es text-classification, pero la inferencia real es generativa: las herramientas que asuman una cabeza de clasificacion no funcionaran directamente.
+- El modelo solo soporta chino e ingles de forma declarada; su comportamiento en castellano u otros idiomas no esta documentado y no deberia asumirse.
+- La taxonomia se anota con criterio A (mencionar ya es violacion) y la categoria Politically Sensitive Topics bloquea de forma estricta; esto puede generar falsos positivos en contextos editoriales, academicos o de analisis politico legitimo.
+- El conjunto de evaluacion gold_1000 es propio del autor y no un benchmark independiente; las cifras de 98,2 % de accuracy deben interpretarse como rendimiento en dominio y no como garantia de generalizacion.
+- Persisten 10 falsos negativos en gold_1000, concentrados en jailbreak (3), violencia (2), politica (2), actos ilegales (2) y autolesion (1); no debe usarse como unico mecanismo de seguridad.
+- Riesgo de alucinacion en la salida: al ser un modelo generativo, puede emitir JSON malformado o etiquetas fuera de la taxonomia si el prompt no sigue la plantilla esperada; se recomienda validar el JSON y aplicar un fallback conservador.
+- La model card no detalla sesgos demograficos, culturales ni linguisticos medidos; la evaluacion se centra en deteccion, no en equidad.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3Guard-Gen-4B conviene verificar las condiciones del modelo base y de los datasets de anotacion antes de un despliegue en produccion.
+- El repositorio ocupa 56,3 GB por incluir multiples versiones y cuantizaciones; conviene descargar solo los artefactos necesarios.
+- No hay informacion publica sobre latencia, throughput ni coste por peticion, por lo que el dimensionamiento debe hacerse con pruebas propias.
 
 ## Enlaces
-
-- Hugging Face (modelo 4B): https://huggingface.co/i1see1you/VirbiusGuard-4B
-- Hugging Face (version ligera 0.6B): https://huggingface.co/i1see1you/VirbiusGuard
+- Modelo en Hugging Face: https://huggingface.co/i1see1you/VirbiusGuard-4B
+- Modelo en ModelScope: https://www.modelscope.cn/models/i1see1you/VirbiusGuard-4B
+- Version ligera 0.6B: https://www.modelscope.cn/models/i1see1you/VirbiusGuard
+- Demo online: https://www.virbius.cn/demo
+- Presentacion del producto: http://www.virbius.tech/virbiusguard.html
+- Sitio de GrainMind: https://www.grainmind.cn/
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-4B
-- Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas realizadas devolvieron unicamente paginas sobre configuracion de firmas y acceso en Microsoft Outlook, sin relacion con VirbiusGuard-4B. No hay paper, blog tecnico ni repositorio adicional verificable.
+- Contacto: i1see1you@163.com
