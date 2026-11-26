@@ -5,7 +5,7 @@
   "author": "desert-ant-labs",
   "url": "https://huggingface.co/desert-ant-labs/eye",
   "created_at": "2026-06-15T11:09:47.000Z",
-  "updated_at": "2026-11-19T22:18:26.000Z",
+  "updated_at": "2026-11-25T09:46:25.000Z",
   "license": "desert-ant-labs-source-available",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 1638,
+  "downloads_30d": 1499,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,

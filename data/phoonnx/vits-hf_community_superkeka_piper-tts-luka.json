@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_superkeka_piper-tts-luka",
   "created_at": "2026-11-14T23:08:18.000Z",
-  "updated_at": "2026-11-16T11:42:51.000Z",
+  "updated_at": "2026-11-25T12:48:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 82,
+  "downloads_30d": 86,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

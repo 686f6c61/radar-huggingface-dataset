@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "tardellirs/duumvir-decider",
+  "slug": "tardellirs-duumvir-decider",
+  "author": "tardellirs",
+  "url": "https://huggingface.co/tardellirs/duumvir-decider",
+  "created_at": "2026-11-26T08:27:45.000Z",
+  "updated_at": "2026-11-26T08:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "decision-model",
+    "decision-index",
+    "typed-decisions",
+    "system-one",
+    "gemma4",
+    "cascade",
+    "low-rank-adapter",
+    "text-classification",
+    "en",
+    "base_model:MachinePulseAI/karpo-decision-31B",
+    "base_model:adapter:MachinePulseAI/karpo-decision-31B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8819547112,
+  "storage_human": "8.8 GB",
+  "context_length": null,
+  "base_model": "MachinePulseAI/karpo-decision-31B, PelaAI/KnowLine-31B-Gen2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.3 public suite (140,620 requests, all answered)",
+      "metric": "Decision Index 0.3, public index (own run of the official kit)",
+      "value": 75.42
+    }
+  ],
+  "sources": []
+}

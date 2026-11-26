@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Saltmandamsun/Destination-23",
+  "slug": "saltmandamsun-destination-23",
+  "author": "Saltmandamsun",
+  "url": "https://huggingface.co/Saltmandamsun/Destination-23",
+  "created_at": "2026-11-20T18:54:30.000Z",
+  "updated_at": "2026-11-26T07:04:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2566820361,
+  "parameters_human": "2.57B",
+  "storage_bytes": 5187721664,
+  "storage_human": "5.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

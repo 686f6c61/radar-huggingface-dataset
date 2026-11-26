@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen2.5-14B-Instruct-Tenstorrent-Tensix-BFP4-QKV8-Down8",
   "created_at": "2026-11-12T05:19:16.000Z",
-  "updated_at": "2026-11-23T06:39:27.000Z",
+  "updated_at": "2026-11-25T17:19:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

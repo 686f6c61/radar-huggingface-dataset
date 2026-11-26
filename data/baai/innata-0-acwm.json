@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "BAAI/Innata-0-ACWM",
+  "slug": "baai-innata-0-acwm",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/Innata-0-ACWM",
+  "created_at": "2026-11-26T11:37:59.000Z",
+  "updated_at": "2026-11-26T11:50:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cosmos3_omni",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15749524912,
+  "parameters_human": "15.75B",
+  "storage_bytes": 31499212848,
+  "storage_human": "31.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

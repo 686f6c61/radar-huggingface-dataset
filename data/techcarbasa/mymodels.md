@@ -2,98 +2,93 @@
 
 ## Resumen
 
-`TechCarbasa/MyModels` es un repositorio de modelos publicado en Hugging Face por el usuario TechCarbasa bajo licencia Apache-2.0. Los metadatos de safetensors registran 4.022.468.096 parámetros totales (aproximadamente 4,02 mil millones), lo que lo sitúa en la categoria de modelos pequenos o medianos, aptos para inferencia en una sola GPU consumer. El repositorio no declara pipeline, no especifica idiomas y su model card se reduce a la linea de licencia, por lo que la mayor parte de las especificaciones tecnicas no esta documentada por el autor.
+TechCarbasa/MyModels es un repositorio de modelos publicado por el usuario TechCarbasa en Hugging Face bajo licencia Apache 2.0. El dato tecnico mas relevante es el recuento de parametros en formato safetensors: 4.022.468.096 parametros (aproximadamente 4.000 millones), lo que lo situa en la categoria de modelos de ~4B, un rango muy empleado para inferencia en hardware de consumo y para despliegues con requisitos moderados de VRAM.
 
-Su rasgo diferencial no es arquitectonico sino de distribucion: los pesos se publican en multiples formatos (safetensors, GGUF, ONNX y TFLite), con el tag `imatrix`, que remite a las matrices de importancia empleadas en la cuantizacion de llama.cpp, y el tag `endpoints_compatible`, orientado a Hugging Face Inference Endpoints. El repositorio ocupa 665,8 GB, un tamano muy superior al de los pesos en precision completa (unos 16 GB en FP32 para 4,02 B parametros), lo que sugiere la coexistencia de numerosas variantes cuantizadas y artefactos adicionales.
+El repositorio se distribuye en multiples formatos de pesos (tflite, onnx, safetensors y gguf), lo que sugiere un interes en el despliegue multiplataforma: desde entornos de servidor con ONNX Runtime o frameworks de inferencia habituales hasta dispositivos moviles y edge con TensorFlow Lite, pasando por llama.cpp/Ollama mediante GGUF. La etiqueta "imatrix" indica que se han generado cuantizaciones guiadas por matrices de importancia, una tecnica habitual para preservar calidad en cuantizaciones agresivas de llama.cpp.
 
-Es relevante como caso practico de publicacion multiformato (de escritorio a movil pasando por navegador) y, a la vez, como recordatorio de que un repositorio con pesos no equivale a un modelo documentado: sin model card, sin evaluacion publicada y sin arquitectura declarada, cualquier adopcion en produccion exige una validacion propia previa.
+La model card publicada es practicamente vacia: solo declara la licencia Apache 2.0. No se especifican arquitectura, contexto, idiomas, datos de entrenamiento ni benchmarks. El tamano del repositorio (715,2 GB) es desproporcionado respecto a los ~4B parametros, lo que apunta a que contiene multiples variantes de pesos y formatos duplicados, no a un unico modelo de ese tamano. Cualquier evaluacion en produccion debe hacerse con cautela y verificando los artefactos reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (no declarada en la model card ni en los metadatos) |
-| Parametros totales | 4.022.468.096 (~4,02 B), segun metadatos de safetensors |
-| Parametros activos | No disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF con soporte de `imatrix`; el resto de variantes (safetensors, ONNX, TFLite) no se detallan |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
+| Arquitectura | no disponible |
+| Parametros totales | 4.022.468.096 (segun safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en detalle; presencia de GGUF con etiqueta imatrix sugiere cuantizaciones de llama.cpp |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, GGUF, ONNX, TFLite |
-| Pipeline declarado | No disponible |
-| Autor | TechCarbasa |
-| Descargas / likes | 98 / 1 |
-| Tamano del repositorio | 665,8 GB |
-| Fecha de creacion | 2026-02-01 |
-| Ultima actualizacion | 2026-10-18 |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card unicamente contiene la declaracion de licencia (`license: apache-2.0`), sin seccion de arquitectura, datos de entrenamiento, numero de tokens, composicion del corpus ni detalles de alineacion (RLHF, DPO o similares). Los tags del repositorio (`conversational`, `imatrix`, `endpoints_compatible`) describen el uso previsto y el formato de distribucion, no la topologia interna: no hay confirmacion de que se trate de un transformer denso, de un modelo MoE ni de una arquitectura hibrida.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos disponibles. Por el recuento de parametros (~4B) y las etiquetas del repositorio ("conversational"), es plausible que se trate de un transformer decoder-only ajustado para dialogo, pero esto no puede confirmarse con los datos proporcionados. Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-El unico indicio tecnico verificable es la cadena de herramientas de despliegue. La presencia de GGUF con `imatrix` implica que los pesos han pasado por el proceso de cuantizacion de llama.cpp con una matriz de importancia calculada sobre un corpus de calibracion, un procedimiento habitual para reducir la perdida de calidad en cuantizaciones de 4 bits o inferiores. Los formatos ONNX y TFLite apuntan a ejecucion en runtime cross-platform y en dispositivos moviles o embebidos, respectivamente. No se ha publicado informacion sobre la longitud de contexto nativa ni sobre el tokenizador empleado.
+La unica senal tecnica relevante es la etiqueta "imatrix", que indica que las cuantizaciones GGUF se han generado con matrices de importancia calculadas a partir de un corpus de calibracion. Esto es una practica habitual en el ecosistema llama.cpp para reducir la perdida de calidad en cuantizaciones de 4 bits o inferiores. El resto de innovaciones tecnicas (atencion, decodificacion especulativa, etc.) no esta documentado.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` es el unico indicio declarado de capacidad; no hay ejemplos, plantilla de chat ni formato de prompt documentados.
-- Razonamiento, matematicas y generacion de codigo: no disponible (sin datos ni evaluaciones publicadas).
-- Vision, audio o multimodalidad: no disponible.
+- Generacion de texto conversacional: la etiqueta "conversational" sugiere un ajuste orientado a dialogo, aunque no se detalla el formato de prompt ni las plantillas de chat.
+- Despliegue multiplataforma: la presencia de pesos en safetensors, GGUF, ONNX y TFLite permite cubrir servidores, estaciones de trabajo, moviles y microcontroladores con el mismo modelo base.
+- Cuantizacion guiada por importancia: los GGUF con imatrix permiten ejecucion en CPU y en GPUs de gama baja con perdida de calidad controlada.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para el despliegue gestionado de Hugging Face (Inference Endpoints).
 - Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el autor no declara idiomas en los metadatos.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Despliegue multientorno: confirmado por los formatos publicados (safetensors para GPU, GGUF para CPU/GPU local, ONNX para runtime cross-platform, TFLite para movil y edge).
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Vision, audio o thinking mode: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional de proposito general: el tag `conversational` sugiere uso en dialogos multi-turno; antes de desplegarlo hay que fijar manualmente la plantilla de chat, ya que el autor no la documenta. Apto para prototipos internos, no para atencion al cliente en produccion sin evaluacion previa.
-- Despliegue en movil o dispositivo embebido: la variante TFLite permite integrar el modelo en aplicaciones Android o iOS con inferencia local, sin conexion y sin enviar datos a un servidor; el tamano de 4,02 B hace necesaria una cuantizacion agresiva para encajar en memoria de telefono.
-- Inferencia en navegador o en runtime cross-platform: la variante ONNX habilita ejecucion con ONNX Runtime Web o en servidores con aceleracion por hardware heterogeneo, util para demos interactivas o para entornos donde no se dispone de CUDA.
-- Ejecucion local en CPU con llama.cpp u Ollama: los GGUF con `imatrix` permiten cuantizaciones de 4 bits con perdida de calidad contenida, lo que posibilita correr el modelo en un portatil sin GPU dedicada para tareas de resumen, reescritura o clasificacion.
-- Servicio gestionado en Hugging Face Inference Endpoints: el tag `endpoints_compatible` indica que el repositorio esta preparado para desplegarse como endpoint gestionado; requiere verificar antes que el runtime detecta correctamente la arquitectura y el tokenizador.
-- Base para ajuste fino supervisado: con 4,02 B parametros y pesos en safetensors, es viable un fine-tuning con LoRA en una GPU de 24 GB; Apache-2.0 permite derivados y uso comercial, pero la falta de documentacion obliga a identificar primero la arquitectura real y su tokenizador.
-- Experimentacion con cuantizacion: el repositorio sirve como banco de pruebas para comparar calidad entre GGUF con `imatrix`, ONNX y TFLite sobre un mismo modelo base, midiendo perplejidad y tasas de error por formato.
+- Prototipado rapido de asistentes conversacionales: al estar disponible en GGUF y safetensors con licencia Apache 2.0, se puede desplegar un chatbot de pruebas en local con llama.cpp u Ollama sin coste de licencia y sin depender de APIs externas.
+- Inferencia en dispositivos edge: la variante TFLite permite integrar el modelo en aplicaciones Android o en hardware embebido con recursos limitados, siempre que se valide la calidad de la conversion.
+- Despliegue en servidores con ONNX Runtime: la variante ONNX facilita la integracion en pipelines de produccion que ya usan ONNX Runtime o TensorRT para aceleracion por hardware.
+- Fine-tuning sobre dominio especifico: con 4B parametros y pesos safetensors, es viable un ajuste fino con LoRA en una unica GPU de 24 GB (por ejemplo, RTX 4090) para adaptar el modelo a un vertical concreto (legal, sanitario, atencion al cliente).
+- Evaluacion comparativa de formatos: el repositorio sirve como banco de pruebas para medir latencia y calidad entre TFLite, ONNX, GGUF y safetensors sobre el mismo modelo base.
+- Base para experimentos academicos: la licencia permisiva y el tamano moderado lo hacen adecuado para investigacion sobre cuantizacion, destilacion o evaluacion de sesgos sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ninguna otra suite, y tampoco se han encontrado resultados de terceros en la busqueda web realizada. Cualquier cifra de rendimiento debera obtenerse mediante evaluacion propia sobre el repositorio descargado.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculada a partir de 4,02 B parametros, sin contar cache KV ni overhead del runtime): ~16,1 GB en FP32, ~8,0 GB en FP16/BF16, ~4,3 GB en Q8_0, ~2,9 GB en Q5_K_M, ~2,5 GB en Q4_K_M, ~2,0 GB en Q3_K_M y ~1,5 GB en Q2_K.
-- Overhead adicional: reserve entre 0,5 y 2 GB para cache KV, buffers de atencion y overhead del runtime, en funcion de la longitud de contexto efectiva (no documentada).
-- Cabe en GPU consumer: si, en la mayoria de tarjetas actuales. Con Q4_K_M funciona en 6-8 GB (RTX 3060, RTX 4060, RTX 2070); en FP16 requiere 10-12 GB libres (RTX 3080 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090).
-- GPU profesionales: A100 40 GB, A100 80 GB, H100 y L40S ejecutan el modelo en FP16 con contexto largo y margen para batching; util para despliegues con concurrencia.
-- CPU: los GGUF de 4 bits permiten inferencia en CPU con 8-16 GB de RAM; el throughput sera del orden de unidades o decenas de tokens por segundo segun nucleos y ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp y Ollama (GGUF), vLLM y TGI (safetensors, sujeto a que la arquitectura este soportada), ONNX Runtime (ONNX), TensorFlow Lite (TFLite) y Hugging Face Inference Endpoints por el tag `endpoints_compatible`.
-- Latencia y throughput: no disponible. No hay mediciones publicadas y dependen del formato, la cuantizacion y el hardware.
+- VRAM estimada para inferencia en FP16: aproximadamente 8 GB solo para pesos (4B x 2 bytes), mas overhead de KV cache y activaciones; en la practica, entre 9 y 11 GB segun contexto.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 4-5 GB.
+- VRAM estimada en cuantizacion de 4 bits (GGUF Q4): en torno a 2,5-3,5 GB, lo que permite ejecucion en GPUs de consumo como RTX 3060, RTX 4060 o superiores.
+- GPUs recomendadas para produccion: A100 40 GB, H100 o L40S para despliegues con alto throughput y contextos largos; RTX 4090 o A6000 para fine-tuning con LoRA.
+- Cabe en GPU de consumo: si, en cuantizaciones de 4-8 bits cabe en GPUs con 6-8 GB de VRAM; en FP16 requiere al menos 12 GB.
+- Opciones de despliegue: llama.cpp y Ollama (GGUF), vLLM y TGI (safetensors), ONNX Runtime y TensorRT (ONNX), TensorFlow Lite (TFLite), ademas de Hugging Face Inference Endpoints.
+- Latencia y throughput: no disponibles; dependen del formato, la cuantizacion y el hardware, y no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de referencia provienen de sus fichas publicas y se incluyen solo como contexto de categoria; no implican comparacion de calidad, ya que `MyModels` no tiene benchmarks publicados.
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|
+| TechCarbasa/MyModels | ~4,02B | no disponible | Apache 2.0 | safetensors, GGUF, ONNX, TFLite | Sin model card tecnica; multiples formatos |
+| Qwen2.5-3B / 7B | 3B / 7B | 32K (128K en variantes) | Apache 2.0 (3B) | safetensors, GGUF, ONNX | Documentacion completa y benchmarks publicos |
+| Llama 3.2 3B | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Requiere aceptar licencia; buen soporte de tooling |
+| Phi-3.5-mini | 3,8B | 128K | MIT | safetensors, GGUF, ONNX | Benchmarks publicos; orientado a razonamiento |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| TechCarbasa/MyModels | 4,02 B | No disponible | Apache-2.0 | Hugging Face (98 descargas, 1 like) |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
-| Phi-3.5-mini-instruct | 3,82 B | 128.000 tokens | MIT | Hugging Face, con model card y evaluaciones |
-
-Frente a estas alternativas, `MyModels` solo ofrece ventaja en variedad de formatos de distribucion (TFLite y ONNX ademas de GGUF y safetensors). En documentacion, contexto declarado, evaluaciones publicadas y soporte de la comunidad queda por detras de los tres modelos citados.
+La comparativa se limita a parametros y licencia porque no hay datos de rendimiento del modelo de TechCarbasa. Frente a alternativas como Qwen2.5 o Phi-3.5-mini, la principal desventaja es la ausencia de documentacion y evaluacion publica; la ventaja es la disponibilidad simultanea de cuatro formatos de despliegue bajo Apache 2.0.
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no se declaran arquitectura, tokenizador, plantilla de chat, contexto ni datos de entrenamiento. Sin esa informacion no es posible reproducir resultados ni garantizar un comportamiento concreto.
-- Ausencia total de evaluaciones: no hay benchmarks, pruebas de seguridad ni analisis de sesgos; se desconoce el riesgo de alucinacion y la calidad en tareas especificas.
-- Idiomas no declarados: no se puede asumir un buen rendimiento en castellano ni en ningun otro idioma sin pruebas propias.
-- Repositorio de 665,8 GB: la descarga completa es inviable en la mayoria de entornos. Conviene descargar solo los ficheros necesarios mediante `huggingface-cli download --include` o la API de ficheros.
-- Fechas anomalas: los metadatos indican creacion el 2026-02-01 y actualizacion el 2026-10-18, valores que conviene verificar antes de tomar decisiones de ciclo de vida o de auditoria.
-- Licencia Apache-2.0: permite uso comercial y obras derivadas con obligacion de conservar el aviso de licencia y de atribucion; no incluye garantias. Aun asi, si el modelo deriva de pesos de terceros, la licencia declarada podria no cubrir esa cadena de forma completa y habria que comprobarlo.
-- Riesgo de cadena de suministro: al no haber informacion sobre el origen de los pesos ni sobre el proceso de entrenamiento, no se puede descartar contaminacion de datos ni comportamientos no deseados.
-- Formato TFLite para movil: requiere cuantizacion agresiva; es esperable una degradacion de calidad notable respecto a FP16, que debe medirse antes de publicar una aplicacion.
-- Estado del pipeline: no declarado, por lo que las herramientas que dependen de `pipeline_tag` (por ejemplo, widgets de Hugging Face o validaciones automaticas) pueden no detectar el modelo correctamente.
+- Ausencia total de model card tecnica: no se documentan arquitectura, datos de entrenamiento, contexto, idiomas ni formato de prompt, lo que impide evaluar su idoneidad sin pruebas propias.
+- Riesgo elevado de alucinacion y comportamiento impredecible: sin informacion sobre alineacion (RLHF/DPO) ni evaluaciones, no hay garantias de calidad conversacional.
+- Sesgos desconocidos: al no publicarse la composicion del dataset, no es posible anticipar sesgos de genero, idioma, cultura o dominio.
+- Idiomas no declarados: no se puede asumir soporte multilingue; probablemente el rendimiento sea desigual fuera del idioma o idiomas de entrenamiento.
+- Repositorio de 715,2 GB: el tamano es muy superior al esperado para 4B parametros, lo que sugiere duplicacion de pesos en varios formatos y cuantizaciones; conviene descargar solo los artefactos necesarios.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero no exime de cumplir las obligaciones de atribucion ni de validar el origen de los datos de entrenamiento.
+- Fecha de creacion futura en los metadatos (2026-02-01): inconsistencia que conviene verificar antes de confiar en el repositorio para produccion.
+- Sin garantias de mantenimiento: un unico like y 222 descargas indican un proyecto de baja traccion; no hay evidencia de soporte continuo.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/TechCarbasa/MyModels
-- No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados en la busqueda web realizada.
+- Perfil del autor: https://huggingface.co/TechCarbasa
+- Documentacion de llama.cpp (para GGUF): https://github.com/ggerganov/llama.cpp
+- Documentacion de Ollama: https://ollama.com
+- Documentacion de ONNX Runtime: https://onnxruntime.ai
+- Documentacion de TensorFlow Lite: https://ai.google.dev/edge/litert
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

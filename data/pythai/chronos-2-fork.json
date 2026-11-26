@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "PYTHAI/chronos-2-fork",
+  "slug": "pythai-chronos-2-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/chronos-2-fork",
+  "created_at": "2026-11-26T08:31:30.000Z",
+  "updated_at": "2026-11-26T08:32:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos-forecasting",
+  "languages": [],
+  "tags": [
+    "chronos-forecasting",
+    "safetensors",
+    "t5",
+    "time series",
+    "forecasting",
+    "foundation models",
+    "pretrained models",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2403.07815",
+    "arxiv:2510.15821",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119477664,
+  "parameters_human": "119.5M",
+  "storage_bytes": 477930472,
+  "storage_human": "478 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ohne Titel",
+      "url": "https://huggingface.co/datasets/open-source-metrics/transformers-dependents/commit/f75801e629a0f35bf22cd21c19c6f138636eb8de.diff?file=data%2F2024%2F04%2F11.json",
+      "snippet": "... ai\", + \"ErykMikolajek/article-retrieval-system\", + \"Danich-One ... chronos-forecasting\", + \"teddylee777/langserve_ollama\", + \"shaitarAn ..."
+    }
+  ]
+}

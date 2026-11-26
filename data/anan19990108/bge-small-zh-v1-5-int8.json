@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "anan19990108/bge-small-zh-v1.5-int8",
+  "slug": "anan19990108-bge-small-zh-v1-5-int8",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/bge-small-zh-v1.5-int8",
+  "created_at": "2026-11-18T04:29:06.000Z",
+  "updated_at": "2026-11-26T06:36:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "tflite",
+    "onnx",
+    "text-embeddings",
+    "int8",
+    "qnn",
+    "feature-extraction",
+    "zh",
+    "base_model:BAAI/bge-small-zh-v1.5",
+    "base_model:quantized:BAAI/bge-small-zh-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79319249,
+  "storage_human": "79 MB",
+  "context_length": null,
+  "base_model": "BAAI/bge-small-zh-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

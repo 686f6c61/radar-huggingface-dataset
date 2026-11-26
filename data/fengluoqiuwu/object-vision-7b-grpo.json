@@ -5,7 +5,7 @@
   "author": "fengluoqiuwu",
   "url": "https://huggingface.co/fengluoqiuwu/Object-Vision-7B-GRPO",
   "created_at": "2026-11-24T08:49:40.000Z",
-  "updated_at": "2026-11-25T03:23:41.000Z",
+  "updated_at": "2026-11-26T04:32:30.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

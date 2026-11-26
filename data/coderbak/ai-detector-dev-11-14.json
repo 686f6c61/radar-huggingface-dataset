@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "CoderBak/ai-detector-dev-11-14",
+  "slug": "coderbak-ai-detector-dev-11-14",
+  "author": "CoderBak",
+  "url": "https://huggingface.co/CoderBak/ai-detector-dev-11-14",
+  "created_at": "2026-11-14T04:36:11.000Z",
+  "updated_at": "2026-11-26T06:43:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "authorship-detection",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1579226076,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

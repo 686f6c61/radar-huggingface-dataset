@@ -5,7 +5,7 @@
   "author": "loom-draft",
   "url": "https://huggingface.co/loom-draft/unsloth-Qwen3.5-122B-A10B-loom",
   "created_at": "2026-11-19T14:45:08.000Z",
-  "updated_at": "2026-11-24T19:19:12.000Z",
+  "updated_at": "2026-11-26T02:24:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

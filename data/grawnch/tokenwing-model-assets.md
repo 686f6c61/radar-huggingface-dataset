@@ -2,79 +2,83 @@
 
 ## Resumen
 
-TokenWing-Model-Assets es un repositorio de artefactos auxiliares publicado por el usuario Grawnch en Hugging Face. No contiene pesos de un modelo de lenguaje, sino ficheros complementarios precalculados (extensiones `.correction`, `.vram-experts.json` y `.experts.layer-order.json`) para dos modelos de terceros: `runmyai/Ling-3.0-Flash-TokenWing` (en cuantizacion MXFP4_MOE) y `runmyai/Flint-40B-TokenWing` (en cuantizacion UD-Q4_K_XL). El repositorio ocupa 0,6 GB y fue creado el 10 de noviembre de 2026.
+TokenWing-Model-Assets es un repositorio de artefactos auxiliares publicado por el usuario Grawnch en Hugging Face, no un modelo de lenguaje en sentido estricto. Contiene ficheros complementarios (extensiones `.correction`, `.vram-experts.json`, `.experts.layer-order.json` y `.usage-seed.json`) precalculados para varios checkpoints cuantizados de arquitectura MoE que se distribuyen bajo la familia TokenWing: `Ling-3.0-Flash-TokenWing`, `Flint-40B-TokenWing` y tres variantes de `Qwen3.8-Flash-Next-WV-v5-TokenWing` (3.5 bpw, Sub2.5 bpw y 2.26 bpw). Estos ficheros permiten que el motor de inferencia TokenWing cargue y ejecute los pesos cuantizados con correcciones y planificación de expertos ya resueltas.
 
-La relevancia de este repositorio es instrumental: los ficheros `.vram-experts.json` y `.experts.layer-order.json` parecen describir el reparto de expertos por capa y su ubicacion en VRAM, lo que sugiere que TokenWing es un mecanismo de gestion de memoria para modelos MoE cuantizados, presumiblemente orientado a inferencia con offloading de expertos entre GPU y CPU. El fichero `.correction` de mayor tamano (372 MB para Ling 3.0 Flash) podria contener correcciones de pesos o del proceso de cuantizacion, aunque su naturaleza exacta no se documenta.
+El dato de parámetros reportado en safetensors para este repositorio es de 3.878.549.248 parámetros, aunque el tamaño total del repo es de 3,6 GB, lo que sugiere que la cifra corresponde a un subconjunto de tensores auxiliares y no al modelo completo. El repositorio incluye además un sidecar GGUF de decodificación especulativa (`Qwen3.8-Flash-Next-WV-v5-MTP-Draft.gguf`, 2,56 GB) que actúa como draft para el mecanismo MTP del modelo base.
 
-No se dispone de informacion sobre la arquitectura interna de Ling 3.0 Flash ni de Flint 40B mas alla de que son modelos MoE (por la etiqueta `moe` y el sufijo `MXFP4_MOE`), ni sobre sus parametros totales, contexto, licencia o idiomas. El repositorio no incluye model card tecnica del modelo base, solo una tabla de ficheros con checksums SHA-256.
+La relevancia de este repositorio es operativa: facilita el despliegue de checkpoints MoE cuantizados en el runtime TokenWing mediante plugins de cuantización versionados (`wv-plugin-v1.3`, ABI v2, y `wv-plugin-v1.1`, ABI v1). No se trata de un modelo entrenado por el autor, sino de material de soporte para ejecutar modelos de terceros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los modelos base estan etiquetados como MoE) |
-| Parametros totales | no disponible (Flint 40B sugiere 40 mil millones por nombre, sin confirmar) |
+| Arquitectura | MoE (según tags del repo); arquitectura concreta del modelo base no disponible |
+| Parametros totales | 3.878.549.248 (dato safetensors del repo; no representa necesariamente el modelo base completo) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4_MOE (Ling 3.0 Flash); UD-Q4_K_XL, variante GGUF Q4_K (Flint 40B) |
+| Tipos de cuantizacion | MXFP4, Q4_K_XL (UD), 3.5 bpw, Sub2.5 bpw, 2.26 bpw; plugin ABI v1 y v2 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | ficheros auxiliares JSON y binarios `.correction`; los pesos referenciados son MXFP4 y GGUF |
-| Tamano del repositorio | 0,6 GB |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | GGUF (sidecar MTP) y artefactos JSON/binarios propietarios del runtime TokenWing (`.correction`, `.vram-experts.json`, `.experts.layer-order.json`, `.usage-seed.json`) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. El repositorio no documenta la arquitectura de los modelos base. Las etiquetas indican que tanto Ling 3.0 Flash como Flint 40B son modelos de mezcla de expertos (MoE), y que el primero se distribuye en formato MXFP4 (formato de cuantizacion de 4 bits con escala compartida, habitual en stacks de inferencia de bajo nivel). El segundo se distribuye en GGUF con cuantizacion UD-Q4_K_XL, una variante de Q4_K optimizada por el autor de la cuantizacion (prefijo "UD" sugiere "Unsloth Dynamic" o similar, sin confirmar).
+El repositorio no documenta el entrenamiento de ningún modelo: agrega artefactos derivados de checkpoints MoE de terceros. Los ficheros `.vram-experts.json` contienen la planificación de asignación de expertos a VRAM, los `.experts.layer-order.json` definen el orden de capas de expertos y los `.usage-seed.json` almacenan semillas de uso para el planificador del runtime. Los `.correction` son tensores de corrección asociados a cada cuantización concreta (MXFP4 para Ling 3.0 Flash, Q4_K_XL para Flint 40B y los tres niveles bpw para Qwen3.8-Flash-Next WV-v5).
 
-El unico contenido tecnico verificable del repositorio son los artefactos auxiliares: `vram-experts.json` (408 KB y 477 KB respectivamente), `experts.layer-order.json` (180 y 195 bytes) y `correction` (372 MB y 190 MB). El tamano del fichero `.correction` de Ling 3.0 Flash es aproximadamente el doble que el de Flint 40B, lo que podria indicar que contiene datos por experto proporcionales al numero de parametros o al numero de expertos del modelo, pero no hay documentacion que lo confirme. No se dispone de informacion sobre datos de entrenamiento, tokens, RLHF/DPO ni innovaciones de atencion.
+La innovación técnica destacable es la integración de un plugin de cuantización versionado (`--quant-plugin`) con ABI v2 y un rango de Type IDs `EXT0..EXT5` (112..117) para las variantes 3.5 bpw y Sub2.5 bpw, y ABI v1 con Type IDs 43..48 para la variante 2.26 bpw. El sidecar MTP Draft GGUF (`blk.48`) está pensado para decodificación especulativa multi-token. No se dispone de información sobre dataset, número de tokens de entrenamiento ni fases de alineación (RLHF/DPO) de los modelos base.
 
 ## Capacidades
 
-- No se documentan capacidades del modelo en este repositorio; las capacidades pertenecen a los modelos base `runmyai/Ling-3.0-Flash-TokenWing` y `runmyai/Flint-40B-TokenWing`, cuyas model cards no se incluyen en la informacion disponible.
-- El repositorio en si proporciona soporte de infraestructura: mapeo de expertos a VRAM y orden de capas para modelos MoE cuantizados.
-- Compatibilidad declarada con cuantizaciones MXFP4 y GGUF Q4_K_XL.
-- No se declara soporte de tool calling, agentes, vision, audio ni modo thinking en la informacion disponible.
+- Ejecución de checkpoints MoE cuantizados de terceros bajo el runtime TokenWing con planificación de expertos precalculada.
+- Carga de cuantizaciones de muy baja precisión (2.26 bpw, Sub2.5 bpw) mediante plugin ABI v1/v2.
+- Decodificación especulativa multi-token (MTP) usando el sidecar `Qwen3.8-Flash-Next-WV-v5-MTP-Draft.gguf`.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags del repo).
+- Perfil conversacional (tag `conversational`).
+- Capacidades específicas del modelo base (razonamiento, código, matemáticas, tool calling, multilingüismo): no disponibles en la información proporcionada, ya que dependen de cada checkpoint subyacente (Ling, Flint, Qwen).
 
 ## Casos de uso
 
-- Despliegue de modelos MoE cuantizados con offloading de expertos: los ficheros `vram-experts.json` permiten a un runtime saber que expertos caben en VRAM y cuales deben residir en RAM del sistema, lo que facilita ejecutar modelos MoE grandes en GPUs con memoria limitada.
-- Inferencia de Ling 3.0 Flash en formato MXFP4: el fichero `.correction` y el mapeo de expertos permiten reconstruir o validar los pesos cuantizados durante la carga, reduciendo errores de cuantizacion en produccion.
-- Ejecucion de Flint 40B en GGUF Q4_K_XL con llama.cpp u otro runtime compatible: el orden de capas (`experts.layer-order.json`) permite cargar los expertos en el orden correcto al hacer streaming desde disco o RAM.
-- Reproducibilidad y verificacion de integridad: los checksums SHA-256 publicados permiten validar que los ficheros auxiliares no se han corrompido en la descarga o en un pipeline de CI.
-- Investigacion sobre cuantizacion de MoE: los artefactos sirven para estudiar como se distribuyen los expertos por capa y su huella de memoria, util para comparar estrategias de cuantizacion (MXFP4 frente a Q4_K).
-- Empaquetado de imagenes de contenedor para serving: al conocer el tamano exacto de los ficheros auxiliares (0,6 GB en total), se puede dimensionar el almacenamiento y la cache de un despliegue con vLLM, llama.cpp o TGI que consuma estos artefactos.
+- Despliegue de Qwen3.8-Flash-Next WV-v5 en 2.26 bpw sobre hardware con VRAM limitada: el plugin ABI v1 y los ficheros `.vram-experts.json` permiten cargar el MoE con planificación de expertos ya resuelta, reduciendo el trabajo de arranque.
+- Inferencia de baja latencia con decodificación especulativa: el sidecar MTP Draft de 2,56 GB se usa como draft para acelerar la generación del modelo principal en el runtime TokenWing.
+- Servicio conversacional en producción: el tag `conversational` y la compatibilidad con endpoints sugieren integración en APIs tipo OpenAI, aunque la validación concreta debe hacerse contra el checkpoint base.
+- Reproducibilidad de despliegues: los checksums SHA-256 publicados para cada artefacto permiten verificar la integridad de los ficheros en pipelines de CI/CD antes de cargar el modelo.
+- Investigación en cuantización extrema de MoE: las variantes Sub2.5 bpw y 2.26 bpw sirven para estudiar el impacto de la compresión agresiva en calidad frente a 3.5 bpw.
+- Evaluación comparativa de familias MoE: al cubrir Ling 3.0 Flash, Flint 40B y Qwen3.8-Flash-Next WV-v5 con el mismo formato de artefactos, facilita pruebas cruzadas en un mismo runtime.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para los modelos base; el repositorio solo aporta metadatos de reparto de expertos, no una estimacion de VRAM total.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: los formatos referenciados (MXFP4 y GGUF Q4_K_XL) apuntan a runtimes como llama.cpp y sus derivados (Ollama, LM Studio) para GGUF; para MXFP4 se requiere un runtime con soporte de ese formato (por ejemplo, variantes recientes de vLLM o SGLang), sin confirmacion en la informacion disponible.
-- Latencia y throughput: no disponible.
-- Almacenamiento: el repositorio ocupa 0,6 GB, y los ficheros `.correction` suman aproximadamente 563 MB, por lo que el despliegue necesita ese espacio adicional sobre el de los pesos del modelo base.
+- VRAM estimada: no disponible de forma explícita. Como referencia, el repo ocupa 3,6 GB y el sidecar MTP 2,56 GB, pero los pesos completos de los modelos base no se incluyen aquí.
+- GPU recomendadas: no disponibles. La planificación `.vram-experts.json` sugiere optimización para GPUs con VRAM limitada al repartir expertos, pero no se especifican modelos concretos.
+- Compatibilidad con GPU de consumo: no confirmada; las cuantizaciones de 2.26 bpw y Sub2.5 bpw apuntan a escenarios de VRAM reducida, pero sin cifras oficiales.
+- Opciones de despliegue: runtime TokenWing (rama `runmyai/tokenwing` `dev`, commit `>= 6a3e018f`) con `--quant-plugin`; el sidecar es GGUF y podría usarse con herramientas compatibles, pero no se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se identifican en la informacion proporcionada modelos comparables, dado que este repositorio no es un modelo sino un conjunto de artefactos auxiliares para modelos de terceros.
+No disponible. Este repositorio no es un modelo comparable con alternativas de la misma categoría, sino un conjunto de artefactos auxiliares para ejecutar checkpoints MoE de terceros (Ling 3.0 Flash, Flint 40B, Qwen3.8-Flash-Next WV-v5). No se dispone de datos de rendimiento ni de parámetros de los modelos base para establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene pesos de modelo ni model card tecnica; no debe tratarse como un modelo desplegable por si mismo.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso ni validacion por parte de la comunidad.
-- Licencia no especificada: no se puede confirmar el uso comercial de los artefactos ni de los modelos base a los que acompanan.
-- Los checksums SHA-256 permiten verificar integridad, pero no garantizan que los artefactos sean correctos ni que correspondan a la version actual de los modelos base.
-- Riesgo de desalineacion de version: si `runmyai/Ling-3.0-Flash-TokenWing` o `runmyai/Flint-40B-TokenWing` se actualizan, los ficheros de correccion y mapeo pueden quedar obsoletos y producir fallos de carga o resultados incorrectos.
-- No hay informacion sobre sesgos, alucinacion ni limitaciones linguisticas de los modelos base.
-- El resultado de busqueda web proporcionado (sobre collateralization) no guarda relacion con el modelo y no aporta datos tecnicos.
+- No es un modelo autónomo: sin los checkpoints base referenciados (`runmyai/Ling-3.0-Flash-TokenWing`, `runmyai/Flint-40B-TokenWing`, `Grawnch/Qwen3.8-Flash-Next-WV-v5-*`), estos artefactos no son utilizables.
+- Licencia no especificada: no se puede confirmar el uso comercial ni la redistribución; debe verificarse en cada checkpoint base.
+- Idiomas no declarados: el soporte multilingüe depende del modelo subyacente y no está documentado aquí.
+- Dependencia de versión del runtime: los plugins ABI v1 y v2 exigen versiones concretas de TokenWing; una actualización incompatible puede romper la carga.
+- Riesgo de alucinación y sesgos: no evaluables sin benchmarks ni model card del modelo base.
+- Fecha de creación futura (2026-11-10) en los metadatos de Hugging Face: conviene verificar la vigencia y el estado del proyecto antes de usarlo en producción.
+- El recuento de parámetros de safetensors (3.878.549.248) no debe interpretarse como el tamaño del modelo base.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Grawnch/TokenWing-Model-Assets
-- Modelo base Ling 3.0 Flash (referenciado): https://huggingface.co/runmyai/Ling-3.0-Flash-TokenWing
-- Modelo base Flint 40B (referenciado): https://huggingface.co/runmyai/Flint-40B-TokenWing
-- Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/TokenWing-Model-Assets
+- Checkpoint Ling 3.0 Flash TokenWing: https://huggingface.co/runmyai/Ling-3.0-Flash-TokenWing
+- Checkpoint Flint 40B TokenWing: https://huggingface.co/runmyai/Flint-40B-TokenWing
+- Checkpoint Qwen3.8-Flash-Next WV-v5 3.5 bpw: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing
+- Checkpoint Qwen3.8-Flash-Next WV-v5 Sub2.5 bpw: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-Sub2.5bpw-TokenWing
+- Checkpoint Qwen3.8-Flash-Next WV-v5 2.26 bpw: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-2.26bpw-TokenWing
+- Release plugin wv-plugin-v1.3: https://github.com/grawnchtoader/tokenwing-assets/releases/tag/wv-plugin-v1.3
+- Release plugin wv-plugin-v1.1: https://github.com/grawnchtoader/tokenwing-assets/releases/tag/wv-plugin-v1.1
+- Runtime TokenWing (rama dev): https://github.com/runmyai/tokenwing

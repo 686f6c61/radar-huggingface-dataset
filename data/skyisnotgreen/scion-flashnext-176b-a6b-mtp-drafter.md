@@ -2,93 +2,110 @@
 
 ## Resumen
 
-Scion-FlashNext-176B-A6B-mtp-drafter es un cabezal de decodificación especulativa (draft head) de aproximadamente 0,89 GB asociado al modelo Scion-FlashNext-176B-A6B, la versión ternaria de 2 bits de Qwen3.8-Flash-Next. Lo publica el usuario SkyIsNotGreen y no es un drafter entrenado desde cero: es el propio bloque MTP (multi-token prediction) nativo que Qwen incluyó en el checkpoint BF16 del modelo original y que el conversor de llama.cpp descartó (el flag `supports_mtp_export` está a `false`), por lo que nunca llegó a los GGUF publicados. Este repositorio lo recupera y lo empaqueta en el formato del motor Strata.
+Scion-FlashNext-176B-A6B-mtp-drafter es un conjunto de dos modelos borrador (drafters) para decodificación especulativa, diseñados específicamente para acelerar la inferencia del modelo objetivo Scion-FlashNext-176B-A6B, un MoE de 176.000 millones de parámetros con 6.000 millones activos. Lo desarrolla SkyIsNotGreen y se publica bajo licencia Apache 2.0. No es un modelo de propósito general: es un componente auxiliar que propone tokens candidatos que el modelo grande verifica en una sola pasada, manteniendo la salida idéntica a la decodificación sin borrador cuando se usa muestreo greedy.
 
-El modelo resuelve un problema concreto de despliegue: acelerar la inferencia del modelo grande mediante decodificación especulativa sin alterar la distribución de salida. Al estar entrenado por Qwen contra el mismo cuerpo del modelo, el cabezal transfiere a plena potencia tras la ternarización, con una aceptación de borradores ponderada del 0,741 medida sobre diez prompts mixtos greedy de 256 tokens. Es relevante porque habilita servir un modelo de 176B parámetros totales (6B activos, MoE) en tarjetas de consumo, ya que los packs nativos IQ requieren el carril MTP (`--spec` >= 2) en el motor Strata.
+El repositorio contiene dos artefactos GGUF distintos, no intercambiables, para dos motores diferentes. El sidecar de llama.cpp (`scion-mtp-sidecar-v2.gguf`, 0,115 GB) implementa únicamente tres matrices de cabeza en fp16 más el tokenizador del objetivo; las embeddings y la LM head se comparten en tiempo de ejecución desde el modelo grande. El drafter nativo para Strata (`Scion-FlashNext-176B-A6B-mtp-drafter.gguf`, 0,889 GB) empaqueta el bloque MTP nativo del modelo. Los pesos safetensors del repositorio suman 2.607.150.848 parámetros, aunque el sidecar efectivo que se carga es mucho menor.
 
-El artefacto no es un modelo autónomo: es un sidecar de velocidad que solo funciona con el motor Strata y con el modelo base correspondiente. La licencia es Apache-2.0, heredada del modelo base.
+La relevancia práctica es doble: por un lado demuestra una técnica de decodificación especulativa encadenada (hasta tres borradores por ronda verificados en una pasada del objetivo), y por otro documenta con honestidad sus límites, incluyendo que en el único host medido (2x RX 7900 XT con 20,5 GB cada una y 31 GB de RAM) el rendimiento neto empeora por la falta de residencia del conjunto de expertos. Es un caso instructivo de ingeniería de inferencia para MoE de gran tamaño en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Bloque MTP nativo (atención, indexer, hyper-connections, 512 expertos enrutados) en formato Strata; no es un transformer denso independiente |
-| Parametros totales | 2.607.150.848 (~2,6B) según safetensors del repo |
-| Parametros activos | no disponible (el modelo base es MoE con 6B activos, pero el drafter no expone este dato) |
-| Longitud de contexto | no disponible (el ejemplo de despliegue usa `--max-context 8192`) |
-| Tipos de cuantizacion | Q2_0 round-to-nearest para expertos enrutados; BF16 para tensores densos |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (0,889 GB, `Scion-FlashNext-176B-A6B-mtp-drafter.gguf`) |
+| Arquitectura | Drafters de decodificación especulativa: sidecar fc-head (3 matrices de cabeza) y bloque MTP nativo; modelo base MoE Scion-FlashNext-176B-A6B |
+| Parametros totales | 2.607.150.848 (safetensors del repo); sidecar efectivo 0,115 GB y drafter Strata 0,889 GB |
+| Parametros activos | no disponible para el drafter; el objetivo declara A6B (6B activos) |
+| Longitud de contexto | probado hasta 4096 tokens; no se han validado contextos mayores |
+| Tipos de cuantizacion | GGUF; sidecar en fp16 (matrices de cabeza); objetivo en Q6_K con expertos ternarios/PTQ1_0 |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp y Strata) |
 
 ## Arquitectura y entrenamiento
 
-El drafter no es un modelo entrenado: es el bloque MTP nativo de Qwen3.8-Flash-Next, extraído del checkpoint original `Qwen/Qwen3.8-Flash-Next` en la revisión `de4b8e4d43b917e7706784d8bb445c9af86a3540` mediante peticiones HTTP por rangos de bytes (5,21 GB de los 360 GB del checkpoint, distribuidos en 131 shards). Los 31 tensores `mtp.*` se verificaron individualmente contra SHA256 y el manifiesto con shard, rango de bytes y hash por tensor se incluye en `mtp-manifest.json`. No hubo entrenamiento, destilación ni ejecución de modelos: la procedencia es el propio checkpoint.
+El sidecar de llama.cpp es un modelo de cabeza ligera entrenado contra las propias filas de entrada de cabeza del objetivo. Para cada posición recibe la fila de entrada de cabeza de 2560 dimensiones (salida del mezclador hc) y la embedding del token candidato, y predice el siguiente token a través de la proyección de salida del propio objetivo. La tercera cabeza (`fc3`) predice la siguiente fila de entrada de cabeza del borrador, lo que permite encadenar hasta tres borradores por ronda y verificarlos en una única pasada del modelo grande. Solo se distribuyen las tres matrices de cabeza en fp16 más el tokenizador; embeddings y LM head se comparten desde el objetivo mediante `ctx_other`.
 
-El empaquetado aplica cuantización Q2_0 round-to-nearest a los expertos enrutados (misma rejilla que los expertos del cuerpo, de modo que los kernels VNNI de CPU y los kernels de GPU de Strata lo sirven sin cambios) y mantiene BF16 en los tensores densos. El informe de reconstrucción por tensor se publica como `mtp-q2_0.gguf.report.json`. La innovación clave es que, al haber sido entrenado el cabezal por Qwen contra este mismo cuerpo, la ternarización preservó la geometría oculta lo suficiente como para que el cabezal nativo transfiera sin un pase de ajuste. El archivo lleva la capa MTP completa (atención, indexer, hyper-connections, 512 expertos enrutados) en el layout de Strata; el carril `draft-mtp-sidecar` del fork de llama.cpp usa una forma distinta (fc-head) y no carga este archivo.
+El segundo artefacto empaqueta el bloque MTP nativo del modelo para el motor Strata. No hay información publicada sobre el volumen de tokens de entrenamiento del drafter, la composición del dataset ni si se aplicó RLHF o DPO. La innovación destacable es la verificación especulativa encadenada con profundidad 4 y la garantía de que, con muestreo greedy, los tokens generados son idénticos a los de una ejecución sin drafter. El sidecar requiere un build específico de llama.cpp (arquitectura `mtp-sidecar`, lane `--spec-type draft-mtp`, rama `scion-base`, commit `2089cd1d3`), con paquetes precompilados Linux ROCm/CPU en la release `scion-v1.0.0`.
 
 ## Capacidades
 
-- Decodificación especulativa: genera borradores de tokens que el verificador contrasta contra la distribución del modelo objetivo, acelerando la decodificación sin cambiar las salidas (salvo raros empates cercanos en verificación por lotes).
-- Aceptación de borradores medida: 0,741 ponderada (1310/1769) en 10 prompts mixtos greedy de 256 tokens, con rango por petición de 0,640 a 0,810; 0,62-0,72 por petición en 30 generaciones largas reales con temperatura 0,6.
-- Habilitación de packs nativos IQ: en Strata, los packs nativos requieren el carril MTP (`--spec` >= 2), por lo que este cabezal es simultáneamente opción de velocidad y requisito para servir el modelo ternario de 176B en tarjetas de consumo.
-- Integración con el motor Strata: requiere conversión previa con `tools/mtp_rt.py` a runtime `mtp/rt`.
-- No soporta tool calling, agentes, visión, audio ni capacidades multilingües propias: es un componente de inferencia, no un modelo generativo autónomo.
-- Idioma: únicamente inglés (heredado del modelo base).
+- Generación de tokens candidatos para decodificación especulativa sobre el objetivo Scion-FlashNext-176B-A6B; no es un modelo generativo autónomo.
+- Encadenamiento de hasta tres borradores por ronda mediante la cabeza `fc3`, con verificación en una sola pasada del objetivo.
+- Preservación exacta de la salida bajo muestreo greedy: los tokens coinciden con la ejecución sin drafter.
+- Compatibilidad con dos motores: llama.cpp (sidecar fc-head) y Strata (bloque MTP nativo).
+- Compartición de embeddings y LM head con el objetivo en el caso del sidecar, lo que reduce el peso descargado a 0,115 GB.
+- Soporte exclusivo de inglés, heredado del objetivo.
+- No soporta tool calling, agentes, visión ni audio por sí mismo; esas capacidades dependerían del modelo objetivo, no del drafter.
 
 ## Casos de uso
 
-- Aceleración de inferencia del modelo base en producción: se usa como sidecar en Strata con `--spec 4 --spec-min-p 0.5` para reducir el coste por token en despliegues del 176B ternario, con una aceptación del 74% que se traduce en menos pasos de verificación efectivos.
-- Servicio del modelo ternario en GPUs de consumo: los packs nativos IQ exigen el carril MTP, así que este cabezal es condición necesaria para arrancar el 176B en configuraciones con dos RX 7900 XT y Q6_K.
-- Generación larga interactiva: con aceptación de 0,62-0,72 por petición en generaciones largas reales a temperatura 0,6, es adecuado para asistentes de texto que necesitan decodificación sostenida sin degradar la calidad.
-- Evaluación comparativa de motores: sirve para medir el impacto real de la decodificación especulativa nativa frente a drafters entrenados (por ejemplo, el Scion-35B, que requirió 3.088 ventanas de autodestilación para alcanzar 67-83% de aceptación).
-- Investigación sobre MTP y decodificación especulativa: al publicarse el manifiesto con rangos de bytes y hashes, permite reproducir la extracción del bloque MTP desde el checkpoint original y estudiar su transferencia tras cuantización ternaria.
-- Pruebas de humo de rendimiento en hardware AMD: el ejemplo de despliegue documenta 52-78 tok/s de decodificación y 116-135 tok/s de prefill con prompts de ~450 tokens en dos RX 7900 XT, útil como referencia para validar configuraciones equivalentes.
+- Aceleración de inferencia de un MoE de 176B en producción: el sidecar propone tokens que el objetivo verifica en bloque, con una media de 1,81 tokens por paso del objetivo en distribución de chat y razonamiento (63,1% de aceptación del primer borrador). Adecuado cuando el conjunto de expertos reside en VRAM.
+- Servicio de chat y razonamiento de baja latencia: la distribución de mayor aceptación es precisamente la de rollouts de profesor y chat, por lo que es el escenario donde el drafter aporta más.
+- Despliegue en llama.cpp con modelos cuantizados Q6_K: el sidecar se integra con `-md` y `--spec-type draft-mtp` junto al GGUF del objetivo, sin reentrenar nada.
+- Evaluación de decodificación especulativa en investigación: el repositorio publica tablas de aceptación por profundidad (24% en el segundo borrador, 15% en el tercero) que sirven para calibrar cadenas de verificación.
+- Integración en el motor Strata: el drafter nativo MTP permite probar la ruta de decodificación especulativa de ese runtime con el mismo objetivo.
+- Reproducción de resultados: la rama legacy `engine/slotcache-sidecar` de Prism permite replicar los números de aceptación originales y cuenta con el arreglo de rollback de snapshots recurrentes de qwen4exp.
+- Prototipado en hardware de consumo con reparto de expertos en RAM: útil para validar la corrección de la salida (idéntica a greedy) aunque el throughput neto no mejore en ese host.
 
 ## Benchmarks y rendimiento
 
-| Medicion | Resultado |
-|---|---|
-| Aceptación de borradores (ponderada, 10 prompts mixtos greedy, 256 tok) | 0,741 (1310/1769); por petición 0,640-0,810 |
-| Aceptación de borradores (30 generaciones largas reales, T 0,6) | 0,62-0,72 por petición |
-| Decodificación durante esas generaciones (2x RX 7900 XT, Q6_K, `--spec 4`) | 52-78 tok/s (prueba de humo 21-58 tok/s según prompt y longitud) |
-| Prefill, prompts de ~450 tokens (misma configuración) | 116-135 tok/s |
+Aceptación medida en ventanas de prueba reservadas, greedy, profundidad de cadena 4:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Conjunto reservado | Primer borrador aceptado | Longitud media aceptada | Tokens por paso del objetivo |
+|---|---:|---:|---:|
+| chat / razonamiento (rollouts de profesor) | 63,1% | 0,81 borradores | 1,81 |
+| wiki / código | 30,3% | 0,39 borradores | 1,40 |
+
+Comprobación en motor sobre prompt estilo wiki: 1,53 tokens por paso del objetivo (32 aceptados de 179 propuestos, greedy).
+
+Velocidad en caliente, greedy, 64 tokens, mismo prompt, mismo host de validación:
+
+| Host | Sin drafter | Con sidecar |
+|---|---:|---:|
+| 2x RX 7900 XT (20,5 GB cada una), 31 GB RAM | 22,52 tok/s | 14,69 tok/s |
+
+El host no puede mantener el conjunto de expertos del 176B en VRAM, por lo que 24 capas de expertos quedan en RAM del sistema y la pasada de verificación de 4 tokens lee más expertos residentes en host por paso que una decodificación de un solo token. El drafter devuelve 1,53 tokens por paso pero el paso cuesta 2,3 veces más, de ahí la pérdida neta. No se ha medido un host con el conjunto de expertos residente; la expectativa declarada es una aceleración de 1,4 a 1,8 veces menos el coste de la pasada de borrador, marcada como esperada pero no verificada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el drafter: ~0,89 GB en disco; el ejemplo de despliegue reserva `--vram-reserve-mib 3072` para el conjunto del servicio en Strata.
-- GPU recomendadas: el autor documenta 2x RX 7900 XT con Q6_K y `--spec 4`; no se especifican otras configuraciones.
-- Cabe en GPU de consumo: sí, según el ejemplo con dos RX 7900 XT; el drafter en sí ocupa menos de 1 GB.
-- Opciones de despliegue: exclusivamente el motor Strata (`strata --serve`), previa conversión con `python tools/mtp_rt.py`. No es compatible con llama.cpp estándar ni con el carril `draft-mtp-sidecar` del fork.
-- Latencia y throughput: decodificación de 52-78 tok/s y prefill de 116-135 tok/s en la configuración documentada (2x RX 7900 XT, Q6_K, `--spec 4`, prompts de ~450 tokens).
+- VRAM del drafter: 0,115 GB para el sidecar de llama.cpp y 0,889 GB para el drafter Strata; el coste dominante es el modelo objetivo.
+- El objetivo Q6_K con expertos ternarios/PTQ1_0 no cabe completo en 2x 20 GB; la configuración documentada usa `-ncmoe 24` (24 capas de expertos en RAM) y `-msc 256` (expertos calientes por capa en VRAM).
+- GPU recomendadas: no disponibles de forma explícita; el host de validación son 2x RX 7900 XT (20,5 GB cada una). Para residencia completa se sugiere 64 GB o más de VRAM/RAM combinada, o una cuantización menor del objetivo.
+- Cabe en GPU de consumo solo con reparto de expertos en RAM y a costa de throughput; en ese régimen el drafter reduce el rendimiento (14,69 frente a 22,52 tok/s).
+- Despliegue: llama-server del fork `scion-llama.cpp` (rama `scion-base`, commit `2089cd1d3`), con paquetes precompilados Linux ROCm/CPU en `scion-v1.0.0`; alternativamente el motor Strata con el drafter nativo.
+- Ajustes relevantes: `-ngl 99`, `-ncmoe N`, `-msc N`, `-fa auto`, `-c 4096`, `-np 1`, `-t 8`; en multi-GPU, fijar el orden con `--device ROCm0,ROCm1` porque `-ts` sigue el vector interno de dispositivos.
+- Latencia y throughput: 22,52 tok/s sin drafter y 14,69 tok/s con sidecar en el host de validación; no hay datos de hosts con expertos residentes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Aceptacion | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scion-FlashNext-176B-A6B-mtp-drafter | ~2,6B (bloque MTP) | no disponible | 0,741 ponderada | Apache-2.0 | Hugging Face, requiere Strata |
-| Scion-35B-A3B-mtp-drafter | no disponible | no disponible | 67-83% | no disponible | Hugging Face, drafter autodestilado con 3.088 ventanas |
-| Drafters entrenados genéricos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Scion-FlashNext-176B-A6B-mtp-drafter (sidecar) | Drafter especulativo fc-head para llama.cpp | 0,115 GB (3 cabezas fp16) | 4096 probado | Apache 2.0 | GGUF en HF |
+| Scion-FlashNext-176B-A6B-mtp-drafter (Strata) | Bloque MTP nativo para Strata | 0,889 GB | 4096 probado | Apache 2.0 | GGUF en HF |
+| Drafters EAGLE / Medusa genéricos | Cabezas especulativas entrenadas por modelo | no disponible | depende del objetivo | varía | ecosistema amplio |
+| Decodificación sin drafter (objetivo solo) | Línea base | 176B totales / 6B activos | según objetivo | Apache 2.0 | GGUF Q6_K |
 
-La comparación directa con drafters entrenados convencionales no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks comparativos frente a drafters alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: no genera texto, razona ni responde peticiones por sí mismo; solo produce borradores para el verificador.
-- Dependencia total del motor Strata: no carga en llama.cpp estándar ni en el carril `draft-mtp-sidecar` del fork, lo que limita la portabilidad y ata el despliegue a un motor propietario del proyecto.
-- Requiere el modelo base Scion-FlashNext-176B-A6B y una conversión previa con `tools/mtp_rt.py`; sin ese paso no hay runtime utilizable.
-- Riesgo de alucinación: no aplica de forma directa, pero la verificación por lotes puede producir raras inversiones en empates cercanos, alterando marginalmente la salida frente a la decodificación sin especulación.
-- Idioma: solo inglés; no hay soporte multilingüe propio.
-- Licencia Apache-2.0 heredada del modelo base, con el NOTICE de la cadena de cuantización descrito en la model card del base; conviene revisar ese NOTICE antes de uso comercial.
-- Estado WIP (work in progress) declarado por el autor, con 0 descargas y 0 likes en el momento de la ficha: madurez y soporte comunitario aún no demostrados.
-- Sin datos de benchmarks estándar ni de comportamiento en otros idiomas o tareas.
+- El drafter no es un modelo autónomo: requiere el GGUF del objetivo y un motor específico; los dos artefactos no son intercambiables entre llama.cpp y Strata.
+- El sidecar exige un fork concreto de llama.cpp (`mtp-sidecar`, `--spec-type draft-mtp`); no funciona con builds estándar.
+- Solo se ha validado con muestreo greedy; no hay mediciones con temperature > 0, top-p, top-k ni MIN_P.
+- Contexto máximo probado de 4096 tokens; no se han validado contextos mayores.
+- No se ha probado con más de un slot de servidor (`-np > 1`) ni con serving por lotes.
+- No se ha probado con otras cuantizaciones del objetivo ni con objetivos distintos del qwen4exp.
+- En el único host medido, el rendimiento neto empeora (14,69 frente a 22,52 tok/s) por falta de residencia del conjunto de expertos; la aceleración en hosts con expertos residentes está sin verificar.
+- Solo soporta inglés, heredado del objetivo.
+- Riesgo de alucinación y sesgos: no evaluados para el drafter; cualquier sesgo del texto generado proviene del objetivo, no del borrador, ya que la verificación preserva la salida.
+- Licencia Apache 2.0 permite uso comercial, pero el fork de llama.cpp y el motor Strata deben revisarse por separado.
+- El repositorio tiene 223 descargas y 0 likes en el momento de la consulta, lo que indica validación comunitaria escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B-mtp-drafter
-- Modelo base: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
-- Drafter relacionado (35B): https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B-mtp-drafter
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B-mtp-drafter
+- Modelo objetivo: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
+- Fork de llama.cpp: https://github.com/sky-is-green/scion-llama.cpp
+- Release con binarios: https://github.com/sky-is-green/scion-llama.cpp/releases/tag/scion-v1.0.0
 - Motor Strata: https://github.com/sky-is-green/strata
-- Checkpoint original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next (revisión `de4b8e4d43b917e7706784d8bb445c9af86a3540`)
+- Rama legacy de Prism: https://github.com/sky-is-green/prism-ml-llama.cpp/tree/engine/slotcache-sidecar

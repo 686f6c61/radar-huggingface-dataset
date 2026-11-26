@@ -2,107 +2,99 @@
 
 ## Resumen
 
-ramt-labse-3 es un modelo publicado en Hugging Face por el usuario mytranslatenisa bajo el identificador `mytranslatenisa/ramt-labse-3`. La etiqueta de arquitectura declarada en el repositorio es `m2m_100`, es decir, un transformer encoder-decoder de la familia M2M-100 orientado a traduccion automatica multilingue. El repositorio contiene pesos en formato safetensors y un total de 483.905.536 parametros, un orden de magnitud coherente con las variantes compactas de esa familia (entorno a los 400-500 millones), lo que lo situa en el segmento de modelos desplegables en hardware de consumo.
+ramt-labse-3 es un modelo de traduccion automatica publicado por el usuario mytranslatenisa en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo mytranslatenisa/m2m100_en_ms_FineTuned_may, que a su vez deriva de la familia M2M-100 de Meta. El modelo cuenta con 877.465.600 parametros y esta orientado a la generacion de texto secuencia-a-secuencia (text2text-generation), la tarea tipica de los sistemas de traduccion neuronal.
 
-La informacion publica disponible es muy escasa: no se declaran licencia, idiomas soportados, pipeline de uso ni resultados de evaluacion, y el modelo acumula 0 descargas y 1 like en el momento de la consulta. El nombre del repositorio sugiere alguna variante relacionada con traduccion aumentada por recuperacion (RAMT) y con representaciones tipo LaBSE, pero la ficha de Hugging Face no confirma esa interpretacion, por lo que debe tratarse como una hipotesis no verificada. El tamano del repositorio (31,0 GB) es muy superior al que corresponderia unicamente a los pesos finales en precision completa, lo que apunta a la presencia de checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento.
+El nombre del repositorio sugiere un uso relacionado con traduccion entre ingles y malayo (el modelo base incluye "en_ms" en su identificador), aunque la model card no documenta explicitamente los pares de idiomas cubiertos ni la composicion del corpus de entrenamiento. El autor declara un BLEU de 86,2310 y una perdida de validacion de 0,0559 sobre el conjunto de evaluacion, si bien no se especifica que dataset se empleo para dicha evaluacion.
 
-Por su tamano y su arquitectura, el interes practico del modelo esta en escenarios de traduccion o generacion secuencia a secuencia con requisitos moderados de VRAM, pero cualquier evaluacion seria exige verificar primero el contenido real del repositorio, la licencia y el comportamiento multilingue, datos que hoy no estan publicados.
+La relevancia de esta ficha es limitada pero concreta: se trata de un modelo pequeno (menos de mil millones de parametros) con licencia MIT, lo que facilita su despliegue en infraestructura modesta y su uso comercial sin restricciones. No obstante, la documentacion es muy escasa y el repositorio ocupa 201,5 GB, un tamano desproporcionado respecto al numero de parametros, lo que sugiere la presencia de artefactos de entrenamiento adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | m2m_100 (transformer encoder-decoder, segun la etiqueta del repositorio) |
-| Parametros totales | 483.905.536 |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | m2m_100 (transformer encoder-decoder) |
+| Parametros totales | 877.465.600 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas en la informacion facilitada) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (el identificador del modelo base sugiere ingles y malayo) |
+| Licencia | MIT |
 | Formato de pesos | safetensors |
-
-Otros datos del repositorio:
-
-| Parametro | Valor |
-|---|---|
-| Autor | mytranslatenisa |
-| Identificador | mytranslatenisa/ramt-labse-3 |
-| Tamano del repositorio | 31,0 GB |
-| Descargas | 0 |
-| Likes | 1 |
-| Pipeline declarado | no disponible |
-| Fecha de creacion (segun ficha) | 2026-09-13 |
-| Ultima actualizacion (segun ficha) | 2026-09-13 |
-| Etiquetas | safetensors, m2m_100, region:us |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion verificable es la etiqueta `m2m_100`, que en el ecosistema de Hugging Face corresponde a la clase de modelo `M2M100ForConditionalGeneration`: un transformer con encoder y decoder separados, attention multi-cabeza clasica y generacion autorregresiva con decodificacion beam search. Esta familia se entrena con objetivos de denoising supervisado sobre corpus paralelos multilingues, lo que la hace adecuada para traduccion entre pares de idiomas no vistos explicitamente durante el entrenamiento. No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste fino con RLHF, DPO o instrucciones.
+El modelo se basa en la arquitectura m2m_100, un transformer encoder-decoder disenado originalmente por Meta para traduccion multilingue. El ajuste fino parte de mytranslatenisa/m2m100_en_ms_FineTuned_may, un modelo ya especializado, segun su nombre, en la direccion ingles-malayo. No se dispone de informacion sobre el dataset de entrenamiento utilizado en este ajuste: la model card indica explicitamente "unknown dataset" y deja sin cubrir las secciones de descripcion del modelo, datos de entrenamiento y usos previstos.
 
-Tampoco hay datos sobre innovaciones tecnicas especificas (attention lineal, decodificacion especulativa, mezcla de expertos o mecanismos hibridos). El unico indicio estructural es el desajuste entre los 483,9 millones de parametros y los 31,0 GB del repositorio: en FP32, esos parametros ocuparian aproximadamente 1,9 GB, por lo que el resto del espacio correspondera previsiblemente a multiples checkpoints de entrenamiento, estados del optimizador o pesos duplicados en varias precisiones. Conviene inspeccionar el arbol de ficheros antes de asumir que el modelo es ligero solo por su numero de parametros.
+Los hiperparametros de entrenamiento si estan documentados: learning rate de 5e-5, batch de entrenamiento de 4 con 8 pasos de acumulacion de gradientes (batch efectivo de 32), optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal, 3 epocas, semilla 42 y precision mixta nativa (AMP). El entrenamiento se realizo con Transformers 5.22.1, PyTorch 2.14.1+cu130, Datasets 4.8.5 y Tokenizers 0.23.3. La progresion de perdida y BLEU por epoca muestra una mejora monotona: de 0,5790/78,3575 en la epoca 1 a 0,3335/86,2310 en la epoca 3. No se documenta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
-- Generacion de texto secuencia a secuencia: al derivar de la familia M2M-100, la capacidad esperada es la traduccion automatica y, en general, la transformacion texto a texto condicionada por una secuencia de entrada.
-- Traduccion multilingue: la arquitectura M2M-100 esta disenada para traduccion entre muchos idiomas, incluidos pares sin datos paralelos directos. El conjunto concreto de idiomas de este checkpoint no esta declarado.
-- Soporte de tool calling o function calling: no disponible; no hay evidencia de que el modelo haya sido ajustado para ello.
-- Soporte de agentes y razonamiento multi-paso: no disponible; la arquitectura encoder-decoder de traduccion no incorpora de serie bucles de razonamiento ni planificacion.
-- Capacidades multilingues: no disponibles en detalle (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponibles; no se declara ninguna.
-- Representaciones tipo LaBSE: el nombre del repositorio incluye "labse", pero no hay confirmacion de que se expongan embeddings tipo sentence-transformers ni de que se haya entrenado con objetivos de similitud semantica.
+- Generacion de texto secuencia-a-secuencia mediante la tarea text2text-generation de Transformers.
+- Traduccion automatica neuronal, presumiblemente entre ingles y malayo segun el identificador del modelo base, aunque no confirmado en la documentacion.
+- Ajuste fino sobre un modelo previo ya especializado, lo que sugiere continuidad en el dominio de traduccion.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingue mas alla del par de idiomas del modelo base.
+- No se documentan modos especiales como thinking mode, vision o audio.
 
 ## Casos de uso
 
-- Traduccion automatica de documentacion tecnica: si el checkpoint funciona como un M2M-100 estandar, puede traducir manuales y notas de version entre los idiomas que soporte, con la ventaja de que 483,9 millones de parametros permiten ejecucion en una GPU de gama media o incluso en CPU con cuantizacion INT8.
-- Preprocesado multilingue en pipelines de datos: uso como traductor interno para normalizar corpus a un idioma pivote antes de indexarlos o entrenar otros modelos, siempre que se verifique la licencia para uso comercial.
-- Traduccion de resenas y tickets de soporte: al ser un modelo pequeno, puede desplegarse detras de una cola de trabajos por lotes con latencia aceptable y coste de VRAM bajo (aproximadamente 1 GB en FP16).
-- Experimentacion academica sobre traduccion aumentada por recuperacion: el prefijo "ramt" del nombre sugiere ese campo, de modo que el checkpoint puede servir como punto de partida para reproducir o comparar estrategias de recuperacion de ejemplos similares en traduccion. Requiere inspeccionar el repositorio para confirmar la hipotesis.
-- Generacion de subtitulos y localizacion de contenido: traduccion de segmentos cortos en flujos de video, con la advertencia de que la calidad en frases muy cortas debe medirse empiricamente porque no hay benchmarks publicados.
-- Fine-tuning especifico de dominio: con 483,9 millones de parametros, el ajuste fino completo cabe en una sola GPU de 24 GB (por ejemplo, RTX 4090) en precision mixta, lo que permite adaptar el modelo a terminologia juridica, medica o industrial con presupuestos reducidos.
-- Servicio de traduccion on-premise: util en entornos con requisitos de soberania de datos donde no se puede enviar texto a APIs externas; el modelo puede ejecutarse en una unica GPU consumer.
+- Traduccion de documentacion tecnica ingles-malayo: el modelo puede procesar textos de referencia o manuales y generar la version en el idioma destino, aprovechando el ajuste fino sobre un modelo ya entrenado para ese par.
+- Localizacion de interfaces de aplicacion: integrado en un pipeline de preprocesamiento, puede traducir cadenas de texto de una aplicacion antes de su publicacion en el mercado malayo.
+- Generacion de subtitulos traducidos: dado su tamano contenido, puede ejecutarse en lote sobre transcripciones y producir subtitulos en el idioma destino con latencia aceptable.
+- Traduccion de correos y comunicaciones internas: en un entorno empresarial con equipos en paises de habla inglesa y malaya, el modelo puede servir como servicio interno de traduccion.
+- Prototipado de sistemas de traduccion en investigacion: con licencia MIT y pesos safetensors, es adecuado como punto de partida para experimentos academicos de ajuste fino adicional.
+- Servicio de traduccion de bajo coste en produccion: al tener menos de mil millones de parametros, puede desplegarse en una unica GPU consumer o incluso en CPU con cuantizacion, reduciendo costes frente a modelos de mayor tamano.
+- Traduccion por lotes de catalogos de producto: el modelo puede procesar grandes volumenes de descripciones cortas de forma automatizada, con revision humana posterior dado el riesgo de alucinacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de BLEU, chrF, MMLU, HumanEval ni ninguna otra evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
+Los unicos datos disponibles son los declarados por el autor en la model card, correspondientes al conjunto de evaluacion no identificado:
+
+| Metrica | Epoca 1 | Epoca 2 | Epoca 3 (final) |
+|---|---|---|---|
+| Training loss | 0,5790 | 0,4155 | 0,3335 |
+| Validation loss | 0,0633 | 0,0578 | 0,0559 |
+| BLEU | 78,3575 | 82,8966 | 86,2310 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni otros) en la informacion disponible. El campo results del model-index esta vacio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 483,9 millones de parametros, sin contar overhead de runtime ni cache de attention):
-  - FP32: aproximadamente 1,9-2,2 GB.
-  - FP16 o BF16: aproximadamente 1,0-1,3 GB.
-  - INT8: aproximadamente 0,5-0,8 GB.
-  - INT4: aproximadamente 0,3-0,5 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16 (GTX 1650, RTX 3050, T4). Para lotes grandes o entrenamiento completo, RTX 4090, A100 40 GB o H100 aportan margen sobrado. No se requiere hardware de datacenter para inferencia.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU consumer moderna. La limitacion practica no sera la VRAM sino el ancho de banda y el soporte de la arquitectura en el runtime elegido.
-- Opciones de despliegue: `transformers` con PyTorch es la via directa (clase `M2M100ForConditionalGeneration`). CTranslate2 y sus envoltorios (por ejemplo, traduccion via `ct2` o servidores basados en el) son habituales para esta familia de encoder-decoder y pueden reducir latencia y memoria, aunque la compatibilidad con este checkpoint concreto debe verificarse. llama.cpp y Ollama estan orientados a modelos decoder-only y GGUF, por lo que no son la via natural para un m2m_100 salvo que exista una conversion especifica (no publicada). vLLM y TGI tienen soporte limitado para arquitecturas encoder-decoder de traduccion; conviene comprobar la lista de arquitecturas admitidas antes de disenar el despliegue.
-- Latencia y throughput: no disponibles. No se han publicado mediciones para este checkpoint.
+- VRAM estimada para inferencia en precision completa (fp32): aproximadamente 3,5 GB solo para pesos, mas memoria para activaciones y cache de atencion.
+- VRAM estimada en fp16/bf16: aproximadamente 1,8 GB para pesos, con overhead adicional segun la longitud de secuencia.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,9 GB para pesos.
+- VRAM estimada en cuantizacion de 4 bits: aproximadamente 0,5 GB para pesos.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 pueden ejecutar el modelo sin problemas.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer moderna con 6-8 GB o mas.
+- Opciones de despliegue: Transformers con PyTorch, vLLM, TGI, llama.cpp (previa conversion a GGUF) y Ollama (previa conversion).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Los valores de los modelos comparativos proceden de sus fichas publicas habituales y no se han verificado en la busqueda realizada; se ofrecen como referencia orientativa.
-
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mytranslatenisa/ramt-labse-3 | 483,9 M | no disponible | no disponible | Repositorio Hugging Face sin descargas ni documentacion |
-| facebook/m2m100_418M | en torno a 470 M | 1024 tokens (referencia de la familia) | MIT (referencia) | Ampliamente desplegado, con conversiones a CTranslate2 |
-| Helsinki-NLP/opus-mt-* | en torno a 70-80 M por par de idiomas | limitado por segmento | Apache 2.0 (referencia) | Muy extendido para pares de idiomas concretos |
-| facebook/m2m100_1.2B | en torno a 1,2 mM | 1024 tokens (referencia de la familia) | MIT (referencia) | Version grande de la misma arquitectura |
+| ramt-labse-3 | 877 M | no disponible | MIT | Hugging Face |
+| m2m100_en_ms_FineTuned_may (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| M2M-100 418M (original de Meta) | 418 M | 1024 tokens (aprox.) | MIT | Hugging Face |
+| M2M-100 1.2B (original de Meta) | 1,2 B | 1024 tokens (aprox.) | MIT | Hugging Face |
 
-La principal diferencia de ramt-labse-3 frente a las alternativas es la ausencia de informacion publicada: no se conocen licencia, idiomas ni metricas, lo que impide una comparacion cuantitativa rigurosa. Mientras no se publique esa informacion, m2m100_418M u opus-mt son opciones mas predecibles para produccion.
+La comparativa se limita a la familia de origen, ya que no se dispone de datos de rendimiento de ramt-labse-3 frente a alternativas fuera de dicha familia. No se dispone de informacion sobre modelos comparables de otros autores con datos verificables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. Es un bloqueo objetivo para cualquier integracion en producto y debe resolverse con el autor antes de avanzar.
-- Ausencia total de benchmarks: no hay ninguna metrica de calidad de traduccion ni de generacion, por lo que no se puede estimar el rendimiento esperado frente a alternativas conocidas.
-- Idiomas no declarados: se desconoce la cobertura real de idiomas, incluido el castellano. La arquitectura M2M-100 lo permitiria, pero eso no garantiza que este checkpoint se haya entrenado o ajustado para ello.
-- Riesgo de alucinacion y de deriva semantica: los modelos de traduccion pueden omitir, duplicar o inventar contenido en segmentos largos o con terminologia especializada; sin evaluacion publicada, este riesgo no esta cuantificado.
-- Contexto limitado: la familia M2M-100 trabaja tipicamente con ventanas de 1024 tokens; no se ha confirmado el valor para este checkpoint, pero conviene asumir segmentacion de textos largos.
-- Contenido del repositorio poco claro: 31,0 GB para 483,9 millones de parametros sugiere checkpoints intermedios o artefactos de entrenamiento. Es necesario revisar el arbol de ficheros para no descargar material innecesario y para identificar cual es el checkpoint final.
-- Repositorio sin mantenimiento aparente: 0 descargas y 1 like indican que el modelo no ha sido validado por la comunidad. No hay issues, model card detallada ni demos.
-- Nomenclatura ambigua: el sufijo "labse" sugiere embeddings de frases, mientras que la etiqueta de arquitectura apunta a traduccion. Esta discrepancia debe aclararse antes de reutilizar los pesos con un proposito distinto a la traduccion.
-- Sesgos: no disponibles. No hay informacion sobre la composicion del corpus de entrenamiento ni sobre evaluaciones de sesgo.
+- La model card esta generada automaticamente y contiene secciones sin completar ("More information needed"), lo que impide conocer el dataset de entrenamiento y evaluacion.
+- El BLEU de 86,2310 no es verificable: no se especifica el conjunto de evaluacion ni el tokenizador empleado para calcularlo, por lo que no debe compararse directamente con resultados publicados en literatura.
+- Riesgo de alucinacion en traduccion: al ser un modelo pequeno y con documentacion escasa, puede generar traducciones plausibles pero incorrectas en dominios especializados.
+- Idiomas soportados no documentados: aunque el identificador del modelo base sugiere ingles-malayo, no hay confirmacion oficial ni se detalla el comportamiento en otros pares.
+- Longitud de contexto no documentada: se desconoce el limite practico de tokens de entrada, lo que complica su uso en documentos largos.
+- El repositorio ocupa 201,5 GB, muy por encima de lo esperado para 877 millones de parametros, lo que sugiere la presencia de checkpoints intermedios u otros artefactos; conviene revisar los archivos antes de descargar.
+- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantias sobre el rendimiento ni sobre los derechos del corpus de entrenamiento subyacente.
+- Ausencia de soporte documentado de tool calling o agentes: no debe asumirse que el modelo pueda integrarse en flujos agenticos sin validacion previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mytranslatenisa/ramt-labse-3
-- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos asociados a este modelo. El resto de resultados devueltos por la busqueda corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo.
+- Modelo base: https://huggingface.co/mytranslatenisa/m2m100_en_ms_FineTuned_may
+- Paper original de M2M-100 (Meta): https://arxiv.org/abs/2010.11125
+- Documentacion de Transformers sobre M2M-100: https://huggingface.co/docs/transformers/model_doc/m2m_100

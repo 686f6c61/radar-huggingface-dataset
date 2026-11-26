@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "arrandi/hubert-base-eu-es",
+  "slug": "arrandi-hubert-base-eu-es",
+  "author": "arrandi",
+  "url": "https://huggingface.co/arrandi/hubert-base-eu-es",
+  "created_at": "2026-11-26T10:51:30.000Z",
+  "updated_at": "2026-11-26T10:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "eu",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "feature-extraction",
+    "audio",
+    "speech",
+    "self-supervised",
+    "pretraining",
+    "basque",
+    "spanish",
+    "eu",
+    "es",
+    "dataset:common_voice",
+    "dataset:basque_parliament",
+    "dataset:openslr",
+    "dataset:voxpopuli",
+    "dataset:mls",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94371712,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377510632,
+  "storage_human": "378 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Basque 6-source test (5,205 utts / 50,695 words)",
+      "metric": "Per-sentence WER",
+      "value": 13.53
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Spanish 5-source test (1,020 utts / 21,817 words)",
+      "metric": "Per-sentence WER",
+      "value": 15.07
+    }
+  ],
+  "sources": []
+}

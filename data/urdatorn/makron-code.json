@@ -5,7 +5,7 @@
   "author": "Urdatorn",
   "url": "https://huggingface.co/Urdatorn/Makron-code",
   "created_at": "2026-11-19T18:10:17.000Z",
-  "updated_at": "2026-11-25T00:16:00.000Z",
+  "updated_at": "2026-11-25T20:16:37.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,7 @@
     "macronization",
     "code",
     "grc",
+    "doi:10.57967/hf/11855",
     "license:gpl-3.0",
     "region:us"
   ],

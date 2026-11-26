@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Evansamaa/glm-4-voice-neural-scheduler",
+  "slug": "evansamaa-glm-4-voice-neural-scheduler",
+  "author": "Evansamaa",
+  "url": "https://huggingface.co/Evansamaa/glm-4-voice-neural-scheduler",
+  "created_at": "2026-11-26T09:52:58.000Z",
+  "updated_at": "2026-11-26T09:58:26.000Z",
+  "license": "glm-4-voice",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "neural-scheduler",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neural-scheduler",
+    "safetensors",
+    "chatglm",
+    "speech",
+    "spoken-dialogue",
+    "turn-taking",
+    "backchannel",
+    "glm-4",
+    "en",
+    "base_model:zai-org/glm-4-voice-9b",
+    "base_model:finetune:zai-org/glm-4-voice-9b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9544672192,
+  "parameters_human": "9.54B",
+  "storage_bytes": 19092006970,
+  "storage_human": "19.1 GB",
+  "context_length": null,
+  "base_model": "THUDM/glm-4-voice-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

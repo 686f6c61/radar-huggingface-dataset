@@ -5,7 +5,7 @@
   "author": "codeShare",
   "url": "https://huggingface.co/codeShare/qwen35_image_captioning_adapter",
   "created_at": "2026-11-14T12:08:00.000Z",
-  "updated_at": "2026-11-21T11:37:48.000Z",
+  "updated_at": "2026-11-25T11:41:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -38,13 +38,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 222,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1580258539,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 1892312379,
+  "storage_human": "1.9 GB",
   "context_length": null,
   "base_model": "DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark",
   "formats": [
@@ -63,27 +63,27 @@
     {
       "title": "Codeshare - Share code in real-time with developers in your browser",
       "url": "https://codeshare.io/",
-      "snippet": "Code with your team Open a Codeshare editor, write or copy code, then share it with friends and colleagues. Pair program and …"
+      "snippet": "Code with your team Open a Codeshare editor, write or copy code, then share it with friends and colleagues. Pair program and …Read more"
     },
     {
       "title": "CodeShare — Real-Time Collaborative Code Editor Online",
       "url": "https://codeshare.in/",
-      "snippet": "Write and run HTML, CSS, and JavaScript together in real time. Share one link, see everyone's edits and the live output instantly — …"
-    },
-    {
-      "title": "CodeShare.online - Free Real-Time Code Collaboration",
-      "url": "https://www.codeshare.online/",
-      "snippet": "CodeShare.online: Free real-time code collaboration with HD video calling, live code editing, cursor tracking, multi-language support. …"
-    },
-    {
-      "title": "CodeShare",
-      "url": "https://codeshare.uk/",
-      "snippet": "CodeShare Instant, real-time collaborative coding environment. No signup required, just share the link and start coding."
+      "snippet": "Write and run HTML, CSS, and JavaScript together in real time. Share one link, see everyone's edits and the live output instantly — …Read more"
     },
     {
       "title": "Log in - Codeshare",
       "url": "https://codeshare.io/login",
       "snippet": "Log in to access your saved code Email address"
+    },
+    {
+      "title": "CodeShare - Professional Code Sharing Platform for Developers",
+      "url": "https://codeshare.me/@info",
+      "snippet": "Share, collaborate, and showcase your code with CodeShare. The professional platform for developers to share code snippets, …Read more"
+    },
+    {
+      "title": "May 12, 2025 - Codeshare",
+      "url": "https://codeshare.io/%C2%A0%C2%A0",
+      "snippet": "Please don't block our ads : ( － Ad sponsors allow us to make Codeshare free."
     }
   ]
 }

@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "ShahriarFerdoush/mistral-7b-math-code-della-k10",
+  "slug": "shahriarferdoush-mistral-7b-math-code-della-k10",
+  "author": "ShahriarFerdoush",
+  "url": "https://huggingface.co/ShahriarFerdoush/mistral-7b-math-code-della-k10",
+  "created_at": "2026-11-26T08:28:33.000Z",
+  "updated_at": "2026-11-26T08:33:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991171,
+  "storage_human": "14.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Copilot、Cursor、CodeX 与Claude Code，我究竟要为谁付费？",
+      "url": "https://www.zhihu.com/question/1963698332040929828",
+      "snippet": "这里我推荐的是 GitHub Copilot 的 命令行工具 （GitHub Copilot CLI [1]），不是 VS Code 里侧边栏那个 Copilot Chat。 两者虽然都 …Read more"
+    },
+    {
+      "title": "【笨問題】VSCode 的 Github Copilot Chat 視窗要怎麼移回左側？",
+      "url": "https://blog.darkthread.net/blog/copilot-chat-to-left/",
+      "snippet": "Dec 23, 2024 · VSCode 在最近的版本更新，把 Github Copilot 移到右邊去了，升級要換位置前，VSCode 有問我要移過去還是留在左 …Read more"
+    }
+  ]
+}

@@ -2,74 +2,109 @@
 
 ## Resumen
 
-DDRNet23-Slim es un modelo de segmentación semántica de imágenes desarrollado por Qualcomm, diseñado específicamente para escenas de carretera y aplicaciones de conducción autónoma. Se basa en la arquitectura DDRNet (Deep Dual-resolution Network), presentada en el artículo arXiv:2101.06085, y su versión "Slim" reduce el número de parámetros a 6,13 millones, lo que permite inferencia en tiempo real en dispositivos móviles y embebidos. El modelo segmenta cada píxel de la imagen en una de 19 clases semánticas (vehículos, peatones, carretera, señales, etc.) y está optimizado para ejecutarse en hardware Qualcomm mediante su kit de herramientas AI Hub.
+DDRNet23-Slim es una red neuronal convolucional para segmentación semántica de escenas de carretera, publicada por Qualcomm en su catálogo Qualcomm AI Hub Models. El modelo original procede de la implementación DDRNet (Deep Dual-resolution Network) y está pensado para conducción autónoma y percepción vehicular, donde debe clasificar cada píxel de la imagen en una de 19 clases semánticas (carretera, vehículo, peatón, señalización, etc.). Con 6,13 millones de parámetros y una resolución de entrada de 2048x1024, está diseñado explícitamente para inferencia en tiempo real.
 
-La relevancia actual de este modelo radica en su capacidad para ejecutarse en dispositivos de borde con latencias de entre 11 y 56 ms según el chipset, lo que lo hace adecuado para sistemas avanzados de asistencia al conductor (ADAS), robótica móvil y monitorización de tráfico en tiempo real. El repositorio de Hugging Face incluye pesos pre-exportados en formatos ONNX, TFLITE y QNN_DLC, así como scripts para exportar configuraciones personalizadas. La licencia MIT permite uso comercial sin restricciones.
+La relevancia de esta ficha concreta no está en el algoritmo sino en el empaquetado: Qualcomm distribuye pesos pre-exportados y compilados para sus aceleradores (NPU Hexagon), con variantes en ONNX, QNN_DLC y TFLite, en precisión float y cuantización w8a8. Esto permite desplegar el modelo en dispositivos móviles y de borde con latencias de decenas de milisegundos.
+
+Es, por tanto, un modelo de visión por computador orientado a producción en hardware Qualcomm, no un modelo generativo: no procesa lenguaje ni tiene ventana de contexto textual. Su licencia MIT facilita la integración comercial, y el repositorio incluye tanto los artefactos listos para usar como la librería para reexportar con pesos o formas de entrada personalizados.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | DDRNet (Deep Dual-resolution Network) - variante Slim |
-| Parametros totales | 6,13 millones |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión) |
-| Tipos de cuantizacion | float (FP32) y w8a8 (pesos y activaciones de 8 bits) |
-| Idiomas soportados | no aplica (modelo de visión) |
+| Arquitectura | CNN DDRNet23-Slim (Deep Dual-resolution Network) |
+| Parámetros totales | 6,13 M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada 2048x1024 px) |
+| Tipos de cuantización | float y w8a8 (int8 pesos y activaciones) |
+| Idiomas soportados | no aplica (segmentación de imágenes, sin capacidades lingüísticas) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch, ONNX, TFLITE, QNN_DLC |
+| Formato de pesos | PyTorch (checkpoint DDRNet23s_imagenet.pth), ONNX, QNN_DLC, TFLite |
+| Número de clases de salida | 19 |
+| Tamaño del modelo | 21,7 MB (float), 6,11 MB (w8a8) |
+| Tamaño del repositorio | 1,9 GB |
+| Runtime objetivo | QAIRT 2.51, ONNX Runtime 1.30.0 |
 
 ## Arquitectura y entrenamiento
 
-DDRNet23-Slim se basa en la arquitectura DDRNet, que emplea dos ramas de resolución diferente (alta y baja) conectadas entre sí mediante módulos de fusión bilateral. Esta estructura permite capturar tanto detalles finos como contexto global de forma eficiente, manteniendo un coste computacional reducido. La variante Slim reduce la anchura de las capas respecto al DDRNet23 original, logrando 6,13 millones de parámetros y un tamaño de checkpoint de 21,7 MB en precisión float.
+DDRNet23-Slim es una red convolucional con esquema de doble resolución: mantiene una rama de alta resolución y otra de baja resolución que intercambian información mediante módulos de fusión, lo que permite preservar detalle espacial fino (necesario para delimitar carreteras y objetos pequeños) sin renunciar al campo receptivo amplio de la rama profunda. La variante "Slim" reduce canales y profundidad respecto a DDRNet23 completo, sacrificando algo de precisión a cambio de latencia muy baja.
 
-El modelo se entrena para segmentación semántica de escenas urbanas, con 19 clases de salida típicas del dataset Cityscapes. El checkpoint incluido (DDRNet23s_imagenet.pth) indica un pre-entrenamiento en ImageNet antes del ajuste fino para segmentación. No se dispone de información detallada sobre el número de tokens de entrenamiento, composición exacta del dataset o técnicas de alineación como RLHF/DPO, ya que no se mencionan en la documentación proporcionada. La implementación de referencia está disponible en el repositorio GitHub de DDRNet.pytorch.
+El checkpoint publicado se denomina DDRNet23s_imagenet.pth, lo que indica un preentrenamiento en ImageNet seguido del ajuste para segmentación semántica de escenas de conducción (el conjunto habitual en esta tarea es Cityscapes, con 19 clases, aunque la model card no detalla explícitamente el dataset de ajuste ni el número de tokens o épocas). No se documentan en la información disponible técnicas de RLHF, DPO ni decodificación especulativa, al no tratarse de un modelo de lenguaje.
+
+La innovación relevante de esta publicación es el pipeline de despliegue: Qualcomm AI Hub Workbench compila el modelo para la NPU Hexagon y publica artefactos con métricas de latencia y memoria pico por chipset, además de una librería Python (ai-hub-models) para reexportar con pesos ajustados, formas de entrada personalizadas y configuraciones de dispositivo.
 
 ## Capacidades
 
-- Segmentación semántica de imágenes en 19 clases, orientada a escenas de carretera (vehículos, peatones, carretera, edificios, vegetación, etc.).
-- Inferencia en tiempo real en dispositivos Qualcomm gracias a la optimización para NPU (unidad de procesamiento neuronal).
-- Soporte de exportación a múltiples formatos: ONNX, TFLITE y QNN_DLC, lo que facilita la integración en aplicaciones Android, embebidas y de escritorio.
-- Posibilidad de personalizar pesos, formas de entrada y configuraciones de hardware mediante la librería Qualcomm AI Hub Models.
-- No incluye capacidades de generación de texto, tool calling, agentes ni procesamiento de lenguaje natural, al ser un modelo exclusivamente visual.
+- Segmentación semántica densa de imágenes: asigna una de 19 clases a cada píxel.
+- Especialización en escenas de carretera y conducción: carretera, vehículos, peatones, vegetación, señalización y clases afines.
+- Inferencia en tiempo real sobre NPU de Qualcomm, con latencias de 9 a 110 ms según chipset y precisión.
+- Ejecución en dispositivos móviles y de borde (smartphones, plataformas automotrices e IoT de Qualcomm).
+- Exportación a múltiples runtimes: ONNX, QNN_DLC y TFLite.
+- Cuantización int8 (w8a8) soportada de fábrica, con reducción de tamaño de 21,7 MB a 6,11 MB.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Conducción autónoma y ADAS: el modelo segmenta en tiempo real los elementos de la carretera (carriles, señales, peatones, otros vehículos) a partir de cámaras frontales, permitiendo a los sistemas de asistencia tomar decisiones de frenado o cambio de carril. Su baja latencia (11-20 ms en chipsets Snapdragon 8 Gen 3 y superiores) lo hace viable para procesamiento embebido.
-- Monitorización de tráfico en infraestructuras urbanas: cámaras fijas en intersecciones o autopistas pueden usar DDRNet23-Slim para contar vehículos, detectar obstáculos o analizar el flujo de tráfico en tiempo real, con un coste computacional mínimo.
-- Robótica móvil y drones: robots de reparto o vehículos aéreos no tripulados pueden emplear la segmentación semántica para distinguir superficies transitables, obstáculos y zonas peligrosas, mejorando la navegación autónoma en entornos exteriores.
-- Aplicaciones móviles de realidad aumentada: la segmentación de escenas permite superponer objetos virtuales sobre el entorno real de forma coherente, por ejemplo, para simular la colocación de mobiliario o señalización vial en una vista de cámara.
-- Análisis de video en tiempo real para seguridad vial: sistemas de cámaras en vehículos o infraestructuras pueden detectar comportamientos anómalos (peatones en zonas prohibidas, vehículos en carriles incorrectos) mediante la clasificación píxel a píxel.
-- Prototipado de sistemas de percepción en investigación: al ser un modelo ligero y de código abierto, es útil como punto de partida para experimentos de segmentación en tiempo real, permitiendo ajustar la arquitectura o los pesos para dominios específicos (por ejemplo, entornos agrícolas o industriales).
+- Percepción en conducción asistida: el modelo segmenta la escena a 2048x1024 para identificar carril, calzada y obstáculos; su latencia de ~9-25 ms en Snapdragon 8 Elite o X Elite permite integrarlo en el bucle de percepción a decenas de FPS.
+- Sistemas de alerta en vehículo (ADAS) en plataformas automotrices Qualcomm: al ejecutarse en NPU con memoria pico de 24-289 MB, deja la CPU y la GPU libres para otras tareas del vehículo.
+- Robótica móvil y vehículos autónomos de interior: la versión w8a8 (6,11 MB) cabe en dispositivos con recursos muy limitados y mantiene latencias de 26-110 ms según el chipset.
+- Segmentación de imágenes en aplicaciones Android: los artefactos TFLite y ONNX permiten integrar el modelo en apps mediante NNAPI o el runtime de Qualcomm, sin necesidad de infraestructura de servidor.
+- Procesamiento de vídeo en el borde para vigilancia o análisis de tráfico: la segmentación por fotograma a resolución completa posibilita contar vehículos y peatones o medir ocupación de calzada en el propio dispositivo.
+- Prototipado e investigación en segmentación eficiente: al ser un checkpoint pequeño con licencia MIT y pipeline de exportación reproducible, sirve como línea base para comparar variantes de cuantización o ajustar con pesos propios.
+- Vehículos aéreos y terrestres no tripulados con cómputo Qualcomm: la baja huella de memoria y el uso exclusivo de NPU reducen consumo energético, crítico en plataformas alimentadas por batería.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precisión (mIoU, accuracy, etc.) en la información disponible. La documentación proporcionada solo incluye métricas de latencia y memoria para diferentes dispositivos Qualcomm, que se detallan en la sección de requisitos de hardware. Para obtener datos de calidad, se recomienda consultar el artículo original (arXiv:2101.06085) o el repositorio de implementación.
+La model card no publica métricas de calidad de segmentación (mIoU sobre Cityscapes u otros conjuntos). Sí publica latencias y memoria pico medidas con Qualcomm AI Hub Workbench. Extracto representativo:
 
-## Requisitos de hardware
+| Chipset | Runtime | Precisión | Latencia (ms) | Memoria pico (MB) | Unidad |
+|---|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | ONNX | float | 9,026 | 31-213 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | float | 9,177 | 5-207 | NPU |
+| Snapdragon X2 Elite | ONNX | float | 9,626 | 24-24 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | float | 13,625 | 7-189 | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | float | 19,643 | 29-289 | NPU |
+| Snapdragon X Elite | ONNX | float | 24,907 | 24-24 | NPU |
+| Snapdragon 8 Gen 1 Mobile | ONNX | float | 35,534 | 24-289 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | w8a8 | 26,598 | 1-202 | NPU |
+| Snapdragon X2 Elite | ONNX | w8a8 | 26,954 | 7-7 | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | w8a8 | 37,856 | 2-240 | NPU |
+| Dragonwing QCS6490 | ONNX | w8a8 | 109,772 | 6-9 | NPU |
 
-- VRAM estimada: el modelo en float ocupa 21,7 MB y en w8a8 6,11 MB, por lo que cabe en cualquier GPU moderna, incluso en las integradas. La memoria pico durante la inferencia varía entre 1 y 300 MB según el dispositivo y la precisión, según la tabla de rendimiento de Qualcomm.
-- GPUs recomendadas: no se requiere una GPU de alta gama; cualquier GPU con al menos 1 GB de VRAM es suficiente. Para el rendimiento óptimo en tiempo real, se recomienda usar la NPU de chipsets Qualcomm (Snapdragon, Dragonwing).
-- Compatibilidad con GPU de consumo: sí, el modelo se puede ejecutar en GPUs de consumo como RTX 3060 o superiores mediante ONNX Runtime o PyTorch, aunque la latencia será mayor que en la NPU de Qualcomm.
-- Opciones de despliegue: ONNX Runtime, TFLite, QNN (Qualcomm Neural Network), y la librería Qualcomm AI Hub Models para exportación personalizada. También se puede usar directamente con PyTorch.
-- Latencia y throughput: según la tabla de rendimiento, en ONNX float la latencia varía entre 11,385 ms (Snapdragon 8 Elite Gen 5) y 45,616 ms (Snapdragon 8 Gen 1). En w8a8, la latencia es mayor (hasta 196 ms en Dragonwing Q-6690), pero el consumo de memoria se reduce significativamente. En general, el modelo alcanza tasas de procesamiento de 20-90 FPS en los chipsets más recientes.
+Observación técnica: en esta compilación concreta la variante w8a8 es más lenta que float en todos los chipsets listados (por ejemplo, 26,6 ms frente a 9,2 ms en Snapdragon 8 Elite Gen 5), aunque reduce el tamaño del modelo y, en algunos casos, la memoria pico. La decisión float frente a w8a8 debe tomarse midiendo en el dispositivo objetivo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos de segmentación en tiempo real (como BiSeNet, STDC o RegSeg) en la documentación proporcionada. Para una comparación rigurosa, se recomienda consultar el paper original de DDRNet, donde se comparan con varias arquitecturas en el dataset Cityscapes.
+| Modelo | Parámetros | Entrada | Clases | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DDRNet23-Slim (este) | 6,13 M | 2048x1024 | 19 | MIT | Hugging Face, Qualcomm AI Hub |
+| DDRNet23 (completo) | no disponible en la información | no disponible | 19 (Cityscapes) | MIT (implementación de referencia) | GitHub chenjun2hao/DDRNet.pytorch |
+| Otras redes de segmentación en tiempo real (p. ej. BiSeNet, FastSCNN) | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos de latencia o precisión de los modelos alternativos en el mismo hardware, por lo que no es posible una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado específicamente para escenas de carretera urbanas; su rendimiento puede degradarse en entornos no urbanos (campos, interiores, condiciones meteorológicas extremas) o con clases fuera de las 19 definidas.
-- La resolución de entrada fija de 2048x1024 puede requerir reescalado de las imágenes, lo que introduce distorsión o pérdida de detalle si la cámara no coincide con esa relación de aspecto.
-- No se han documentado sesgos específicos, pero al ser un modelo de visión entrenado en datasets urbanos, puede presentar errores en condiciones de baja iluminación, oclusiones o con objetos poco frecuentes.
-- El rendimiento óptimo está ligado al hardware Qualcomm; en otras plataformas (GPU NVIDIA, CPU Intel) la latencia puede ser significativamente mayor y no se garantiza la operación en tiempo real.
-- Aunque la licencia MIT permite uso comercial, el modelo se distribuye con pesos pre-entrenados que pueden no estar actualizados con las últimas técnicas de segmentación; se recomienda validar su precisión en el caso de uso concreto antes de producción.
+- Modelo especializado en escenas de carretera: su rendimiento fuera de ese dominio (imágenes médicas, interiores, satélite) no está garantizado y probablemente sea deficiente.
+- No se publican métricas de calidad (mIoU) en la model card, por lo que la precisión real de segmentación debe validarse con un conjunto propio antes de producción.
+- La cuantización w8a8 puede degradar la calidad de los bordes de segmentación; no se documenta la pérdida de mIoU asociada.
+- En las mediciones publicadas, w8a8 resulta más lento que float en los chipsets listados; no asumir que la cuantización implica menor latencia.
+- El modelo está compilado y perfilado para hardware Qualcomm; en GPU de escritorio o CPU genérica funcionará vía ONNX/PyTorch, pero sin las optimizaciones ni las latencias reportadas.
+- Riesgo de sesgo heredado del dataset de entrenamiento (escenas urbanas y de carretera de determinadas regiones), con posible peor segmentación en entornos no representados.
+- Licencia MIT: permite uso comercial y modificación, pero se recomienda conservar el aviso de copyright; verificar además las licencias del checkpoint original y del dataset de ajuste.
+- El repositorio pesa 1,9 GB por incluir múltiples artefactos exportados; para despliegue conviene descargar solo el zip del runtime y precisión necesarios.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/qualcomm/DDRNet23-Slim
-- Qualcomm AI Hub (página del modelo): https://aihub.qualcomm.com/models/ddrnet23_slim
-- Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/ddrnet23_slim
-- Implementación original de DDRNet: https://github.com/chenjun2hao/DDRNet.pytorch
-- Paper original (arXiv:2101.06085): https://arxiv.org/abs/2101.06085
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/DDRNet23-Slim
+- Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/ddrnet23_slim
+- Librería ai-hub-models (código del modelo): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/ddrnet23_slim
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Implementación de referencia DDRNet en PyTorch: https://github.com/chenjun2hao/DDRNet.pytorch
+- Paper DDRNet (arXiv:2101.06085): https://arxiv.org/abs/2101.06085
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-onnx-float.zip
+- Descarga ONNX w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-onnx-w8a8.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-qnn_dlc-float.zip
+- Descarga QNN_DLC w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-qnn_dlc-w8a8.zip
+- Descarga TFLite float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-tflite-float.zip
+- Descarga TFLite w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/ddrnet23_slim/releases/v0.67.0/ddrnet23_slim-tflite-w8a8.zip

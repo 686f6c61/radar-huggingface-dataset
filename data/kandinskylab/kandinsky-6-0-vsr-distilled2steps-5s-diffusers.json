@@ -5,7 +5,7 @@
   "author": "kandinskylab",
   "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers",
   "created_at": "2026-09-15T15:48:33.000Z",
-  "updated_at": "2026-11-23T13:32:03.000Z",
+  "updated_at": "2026-11-25T17:12:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -25,7 +25,7 @@
     "diffusers:Kandinsky6SRPipeline",
     "region:us"
   ],
-  "likes": 19,
+  "likes": 21,
   "downloads_30d": 914,
   "trending_score": 17,
   "parameters": 1414263936,

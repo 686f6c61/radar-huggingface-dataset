@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "JzyRay/Qwen3-8B-EE599-SFT2-GRPO578",
+  "slug": "jzyray-qwen3-8b-ee599-sft2-grpo578",
+  "author": "JzyRay",
+  "url": "https://huggingface.co/JzyRay/Qwen3-8B-EE599-SFT2-GRPO578",
+  "created_at": "2026-11-26T05:22:59.000Z",
+  "updated_at": "2026-11-26T05:23:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "grpo",
+    "analog-circuit-design",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360666406,
+  "storage_human": "361 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

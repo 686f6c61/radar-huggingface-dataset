@@ -2,86 +2,105 @@
 
 ## Resumen
 
-El modelo `RemiFabre/microduck-flamingo-cycle` es una política de control entrenada mediante aprendizaje por refuerzo (RL) para el robot bípedo Microduck, un robot de 25 cm de altura con 15 motores, cámara, LiDAR y pico prensor, desarrollado por Pollen Robotics (adquirida por Hugging Face en abril de 2025). Esta política concreta permite al robot mantenerse sobre un solo pie, alternando entre la pierna izquierda y la derecha, y volver a la posición de dos pies bajo demanda. El modelo se distribuye en formato ONNX y está pensado para ejecutarse tanto en simulación (MuJoCo) como en el hardware real del robot.
+`microduck-flamingo-cycle` es una política de control robótico entrenada para el robot cuadrúpedo MicroDuck de Pollen Robotics. No es un modelo de lenguaje: es una red neuronal que mapea observaciones de 61 dimensiones (estado de sensores y comandos) a 14 acciones de control articular a 50 Hz, empaquetada en formato ONNX para su despliegue directo en el robot o en simulación MuJoCo. La política implementa una habilidad concreta y acotada: mantener el equilibrio sobre una pata (postura tipo flamenco) a la orden, en cualquiera de los dos lados, y volver a la postura de dos patas.
 
-La relevancia de este modelo radica en que ejemplifica el enfoque de Hugging Face de llevar el código abierto al ámbito de la robótica física: un robot asequible (399 dólares) con un stack completo de entrenamiento RL que cualquier desarrollador puede reproducir, modificar y desplegar. La política se exporta como un archivo ONNX de tamaño reducido (el repositorio ocupa 0.0 GB, lo que sugiere un modelo muy ligero) y se integra con el framework `microduck_rl` de Pollen Robotics. No se trata de un modelo de lenguaje ni de visión, sino de un controlador de bajo nivel que mapea observaciones del robot a comandos de actuadores a 50 Hz.
+El modelo se distribuye bajo licencia Apache 2.0 y fue entrenado con el framework `mjlab` sobre el repositorio `pollen-robotics/microduck_rl` (rama `flamingo`, commit `0bf9897`, aún no fusionada en `main`). La relevancia de esta publicación es doble: por un lado, demuestra el flujo completo de entrenamiento y exportación de políticas de locomoción para hardware de bajo coste; por otro, establece un formato de intercambio de políticas (`sharing-policies.md`) que facilita la reproducibilidad y la composición de habilidades en robots cuadrúpedos pequeños.
 
-## Especificaciones técnicas
+La información disponible es exclusivamente la model card del autor. No se publican datos de arquitectura interna de la red (número de capas, parámetros), composición del dataset de entrenamiento ni resultados de benchmarks estándar. Las cifras de rendimiento que aparecen en la ficha (velocidad de empuje tolerada, tiempos de transición) provienen de las pruebas en simulación declaradas por el autor.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal de política (tipo no especificado; exportada a ONNX) |
+| Arquitectura | Red neuronal de política (no se especifica la topología interna); entrenada con `mjlab` sobre `microduck_rl` |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de control, no secuencial) |
-| Tipos de cuantizacion | no disponible (formato ONNX estándar) |
-| Idiomas soportados | no aplica (modelo de control robótico) |
+| Longitud de contexto | no aplica (política de control; ventana de observación de 61 dimensiones por paso) |
+| Tipos de cuantizacion | no disponible (exportación ONNX en precisión original) |
+| Idiomas soportados | no aplica (modelo de robótica, no lingüístico) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (policy.onnx) |
+| Formato de pesos | ONNX (`policy.onnx`), con `manifest.json` de metadatos |
+| Entrada / salida | `obs[1,61] f32 → actions[1,14] f32`, normalizador incluido en el grafo |
+| Frecuencia de control | 50 Hz |
+| Tamaño del repositorio | 0.0 GB (pesos ligeros, aptos para hardware embebido) |
+| Pipeline declarado | robotics |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura interna de la red no se documenta en la model card. Se sabe que es una política que recibe un vector de observación de 61 valores en coma flotante (`obs[1,61] f32`) y produce un vector de acciones de 14 valores (`actions[1,14] f32`), con normalizador integrado y frecuencia de control de 50 Hz. El modelo se entrenó con aprendizaje por refuerzo en el entorno `Mjlab-FlamingoCycleHard-Flat-MicroDuck`, utilizando el repositorio `pollen-robotics/microduck_rl` en la rama `flamingo` (commit `0bf9897`, aún no fusionado). La ejecución de entrenamiento se identifica como `pollen-robotics/flamingo-cycle-r2-hard-20260829-0245`. No se especifican detalles sobre el algoritmo RL concreto (PPO, SAC, etc.), el número de episodios, ni la composición del dataset de entrenamiento. La exportación se realizó con `scripts/export.py` del repositorio de entrenamiento.
+La política sigue el paradigma de *reinforcement learning* para control continuo: una red que recibe un vector de observación de 61 valores en coma flotante (estado propioceptivo del robot más el bloque de comando de 13 dimensiones) y emite 14 acciones articulares normalizadas respecto a la postura HOME (factor ×1.0). El entrenamiento se realizó con `mjlab` en el entorno `Mjlab-FlamingoCycleHard-Flat-MicroDuck`, correspondiente a la ejecución `pollen-robotics/flamingo-cycle-r2-hard-20260829-0245` del repositorio `pollen-robotics/microduck_rl`. La variante "Hard" sugiere un currículo de entrenamiento con perturbaciones y condiciones de dificultad incrementadas, aunque la model card no detalla la composición del dataset ni el número de pasos de simulación.
+
+El bloque de comando (`twist`) tiene 13 dimensiones, de las cuales solo se utilizan tres: `twist[0]` como bandera binaria (0 = dos patas, 1 = una pata), `twist[1]` como selector de lado (+1 = pata derecha abajo / pierna izquierda levantada; −1 = lo contrario) y `twist[2]` sin uso. La política es de tipo "perpetuo": mientras la bandera permanezca a 1, el robot vuelve a levantar la pata tras un apoyo de emergencia, sin señal explícita de abandono. La exportación se realizó con `scripts/export.py`, que integra el normalizador de observaciones en el grafo ONNX para simplificar el despliegue.
 
 ## Capacidades
 
-- Mantenerse sobre un pie (pierna izquierda o derecha) de forma estable durante más de 10 segundos.
-- Cambiar de lado en plena ejecución: el comando `side` se selecciona antes de levantar la bandera `flag`.
-- Volver a la posición de dos pies (HOME) cuando se desactiva la bandera.
-- Responder a empujes externos de hasta 0.15 m/s desde cualquier dirección; ante empujes más fuertes hacia el lado levantado, realiza un apoyo breve con el pie; hacia el lado de apoyo, da un paso.
-- Interrumpible en cualquier momento: el robot puede bajar la pierna y volver a levantarla mientras la bandera siga activa.
-- Ejecución en simulación (MuJoCo) y en el robot real mediante el daemon `robotd` y el script `control.py`.
-- Soporte de comandos por teclado en simulación (tecla F para levantar/bajar, C para elegir lado, P para empujes aleatorios) y por socket en el robot real.
+- Equilibrio sobre una pata (postura de flamenco) en ambos lados con la misma red neuronal, con elevación de la pata libre de aproximadamente 9 cm y mantenimiento durante 10 segundos o más.
+- Transición bidireccional entre postura de dos patas (HOME) y una pata en aproximadamente 1,5 segundos por sentido, interrumpible en cualquier momento.
+- Selección de lado en tiempo de ejecución mediante el canal de comando, siempre que se elija antes de activar la bandera.
+- Absorción de empujes de hasta 0,15 m/s desde cualquier dirección: los empujes hacia el lado de la pata levantada se gestionan con un breve apoyo; los dirigidos hacia el lado de apoyo se resuelven con un paso de reposición.
+- Control por teclado en simulación (teclas F, C, P, Q) y control programático mediante `control.py` con líneas de tiempo guionizadas.
+- Despliegue directo en el robot mediante `robotd` sin modificar el código del demonio, solo la configuración `/etc/robot/robotd.toml`.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades lingüísticas: es una política motora especializada.
 
 ## Casos de uso
 
-- Investigación en control de robots bípedos: permite estudiar estrategias de equilibrio dinámico y rechazo de perturbaciones en un hardware de bajo coste y totalmente reproducible.
-- Desarrollo de políticas RL transferibles: sirve como punto de partida para entrenar nuevas habilidades (caminar, saltar, esquivar obstáculos) usando el mismo stack `microduck_rl`.
-- Validación de algoritmos de RL en simulación: al ser un modelo ligero (ONNX), se puede integrar en pipelines de entrenamiento y evaluación sin necesidad de GPU.
-- Demostraciones educativas de robótica y aprendizaje por refuerzo: el robot Microduck está diseñado para ser accesible a estudiantes y aficionados, y esta política muestra un comportamiento complejo (equilibrio monopodal) con un coste de hardware reducido.
-- Pruebas de robustez ante perturbaciones: el modelo incluye límites documentados de empuje, lo que permite diseñar experimentos controlados de estabilidad.
-- Integración en sistemas de control jerárquico: la política puede combinarse con un planificador de alto nivel (por ejemplo, un LLM que decida cuándo levantar una pierna) mediante el protocolo de comandos de 13 dimensiones.
+- Demostración de equilibrio dinámico en robótica de bajo coste: la política permite exhibir una habilidad compleja (equilibrio monopodal) en el MicroDuck sin desarrollo adicional de control, útil en demostraciones, ferias y material divulgativo.
+- Investigación en aprendizaje por refuerzo sim-a-real: sirve como referencia reproducible de un pipeline completo (entrenamiento en `mjlab`, exportación ONNX, validación en MuJoCo y despliegue en hardware) para comparar metodologías de transferencia.
+- Pruebas de robustez frente a perturbaciones: con la tecla P o mediante empujes programáticos se puede evaluar la capacidad de recuperación del robot ante fuerzas de hasta 0,15 m/s, un escenario habitual en validación de controladores.
+- Composición de habilidades: al integrarse en el sistema de políticas de `microduck_rl`, esta política puede encadenarse con otras (marcha, posturas) mediante líneas de tiempo guionizadas, por ejemplo para coreografías o secuencias de inspección.
+- Docencia en robótica y control: el repositorio incluye instrucciones para ejecutar la política en un portátil con MuJoCo sin necesidad de robot físico, lo que facilita prácticas de laboratorio sobre políticas neuronales y observación de comandos.
+- Validación de infraestructura de despliegue: el flujo con `robotd`, reenvío de socket por SSH y `control.py` permite probar la integración de políticas ONNX en el demonio del robot antes de comprometer cambios permanentes.
+- Referencia para el formato de intercambio de políticas: el documento `sharing-policies.md` del repositorio define el contrato de observación/acción y los metadatos (`manifest.json`), útil para equipos que quieran publicar sus propias políticas de forma interoperable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) porque este modelo no es un modelo de lenguaje ni de razonamiento general. La model card documenta pruebas de robustez específicas del comportamiento:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas cualitativas y de robustez obtenidas en simulación:
 
-- Empujes de hasta 0.15 m/s desde cualquier dirección: el robot mantiene el equilibrio.
-- Empujes más fuertes hacia el lado levantado: se produce un apoyo breve (touch-down) sin caída.
-- Empujes hacia el lado de apoyo: el robot da un paso para recuperar el equilibrio.
-- Empujes hacia atrás de 0.18 m/s o más: el robot cae en 2 de 24 ensayos aleatorios (tasa de fallo ≈ 8.3 %).
+| Prueba (simulación) | Resultado declarado |
+|---|---|
+| Mantenimiento de la postura monopodal | 10 s o más |
+| Tiempo de transición (subida o bajada) | ~1,5 s por sentido |
+| Empuje tolerado desde cualquier dirección | ≤ 0,15 m/s |
+| Empuje hacia atrás | falla a partir de ≥ 0,18 m/s (2 de 24 ensayos aleatorios) |
+| Elevación de la pata libre | ~9 cm |
 
-Estos datos provienen de pruebas en simulación y no deben extrapolarse al hardware real sin verificación adicional.
+No se han ejecutado pruebas en hardware real según declara el autor ("sim only, never run on hardware").
 
 ## Requisitos de hardware
 
-- Inferencia en simulación: se puede ejecutar en un portátil sin GPU, usando MuJoCo y el script `infer_policy.py` del repositorio `microduck_rl`. Se requiere Python 3.12 y `uv` para la gestión de dependencias.
-- Inferencia en el robot real: el modelo se copia al robot (una placa Radxa) y se ejecuta mediante el daemon `robotd`. No se especifican requisitos de memoria, pero dado el tamaño del repositorio (0.0 GB) y el formato ONNX, la VRAM necesaria es despreciable (menos de 100 MB).
-- No requiere GPU dedicada; cualquier CPU moderna es suficiente para la inferencia a 50 Hz.
-- Opciones de despliegue: integración con el stack `microduck_rl` (scripts de inferencia), ejecución directa con ONNX Runtime, o mediante el daemon `robotd` en el robot.
-- Latencia: no se proporcionan datos numéricos, pero la frecuencia de control de 50 Hz implica un presupuesto de 20 ms por ciclo, que se cumple en hardware de bajo coste.
+- VRAM estimada para inferencia: no disponible; el repositorio ocupa 0.0 GB y la política es un único archivo ONNX, por lo que la huella de memoria es mínima (inferior a cientos de MB en cualquier caso).
+- GPU recomendadas: no se especifican; por el tamaño del artefacto, la inferencia puede ejecutarse en CPU sin problema.
+- Cabe en cualquier GPU de consumo e incluso en el propio robot: el despliegue documentado se realiza en el ordenador de a bordo del MicroDuck (usuario `radxa`, típicamente una SBC ARM), lo que confirma que no requiere acelerador dedicado.
+- Opciones de despliegue: ONNX Runtime (formato nativo `policy.onnx`), simulación MuJoCo mediante `scripts/infer_policy.py` del repositorio `microduck_rl` (rama `flamingo`), y el demonio `robotd` en el robot físico.
+- Latencia y throughput: la política opera a 50 Hz (periodo de 20 ms); no se publican cifras de latencia por inferencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (políticas de control para robots bípedos de bajo coste). El ecosistema de Microduck es relativamente nuevo y no hay alternativas públicas con especificaciones equivalentes. Se podría mencionar que otros robots bípedos de investigación (por ejemplo, el Unitree Go1 o el A1) tienen políticas RL propias, pero no son directamente comparables en coste ni en formato de distribución. Por tanto, la comparativa se considera no disponible.
+| Modelo | Tipo | Entrada/salida | Frecuencia | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `RemiFabre/microduck-flamingo-cycle` | Política RL para MicroDuck (equilibrio monopodal) | obs[61] → act[14] | 50 Hz | Apache 2.0 | Hugging Face, ONNX |
+| Políticas de marcha del repositorio `pollen-robotics/microduck_rl` | Políticas RL para MicroDuck (locomoción) | Contrato del formato de intercambio de políticas | no disponible | según repositorio | GitHub, rama principal |
+| Políticas de control para otros cuadrúpedos pequeños (p. ej. Unitree Go1/A1) | Políticas RL específicas de plataforma | Depende de la plataforma | Típicamente 50 Hz | Variable | Repositorios académicos y de fabricante |
+
+No se dispone de datos de benchmarks comunes que permitan una comparación cuantitativa con alternativas. La comparación relevante es funcional: esta política cubre una habilidad específica (equilibrio monopodal) dentro del ecosistema MicroDuck, mientras que las políticas de locomoción del mismo repositorio cubren el desplazamiento; ambas comparten el contrato de observación/acción definido en `sharing-policies.md`.
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado exclusivamente para el robot Microduck; no es transferible a otros robots sin reentrenamiento.
-- La model card indica explícitamente "sim only, never run on hardware" para las pruebas de límites: los datos de robustez se obtuvieron en simulación y no garantizan el mismo comportamiento en el robot físico.
-- Existe un riesgo de caída ante empujes hacia atrás de 0.18 m/s o más (tasa de fallo ≈ 8.3 % en simulación).
-- No hay señal de "rendición": si la bandera `flag` permanece activa, el robot intenta volver a levantar la pierna tras un paso de recuperación, lo que puede provocar inestabilidad si el usuario no baja la bandera.
-- El comando `side` debe elegirse antes de activar la bandera; cambiarlo durante la elevación puede producir comportamientos no deseados.
-- La licencia Apache 2.0 permite uso comercial, pero el hardware Microduck es un producto de Pollen Robotics/Hugging Face; el uso del modelo en otros contextos requiere verificar la compatibilidad con la licencia del robot.
-- No se documentan sesgos ni alucinaciones porque no es un modelo generativo de texto; sin embargo, la política puede presentar comportamientos imprevistos en condiciones fuera del rango de entrenamiento (por ejemplo, superficies irregulares o empujes extremos).
+- Solo validada en simulación: el autor declara explícitamente que nunca se ha ejecutado en hardware real, por lo que el rendimiento sim-a-real es desconocido.
+- Fragilidad ante empujes hacia atrás: a partir de 0,18 m/s la política falla en 2 de 24 ensayos aleatorios; no debe asumirse robustez direccional uniforme.
+- Sin señal de abandono: mientras la bandera `flag` permanezca a 1, el robot vuelve a levantar la pata tras un apoyo de emergencia; si se desea que permanezca en dos patas, es responsabilidad del operador bajar la bandera.
+- Dependencia de una rama no fusionada: el código necesario para ejecutarla vive en la rama `flamingo` del repositorio `microduck_rl` (commit `0bf9897`), no en `main`; la API puede cambiar sin aviso.
+- Requisito de configuración del robot: el despliegue exige editar `/etc/robot/robotd.toml` y reiniciar el demonio, lo que implica intervención manual y riesgo de configuración incorrecta.
+- Dependencia de plataforma en simulación: en macOS es necesario el lanzador `mjpython` y un enlace simbólico a `libpython3.12.dylib`; en Linux se usa `uv run` directamente.
+- Sin datos de sesgos, alucinación o multilingüismo: no aplican en el sentido habitual, pero tampoco se documentan sesgos de comportamiento (por ejemplo, asimetrías entre lados) más allá de la simetría declarada.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución; no obstante, la ausencia de validación en hardware desaconseja su uso en producción sin pruebas propias.
+- El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere que los pesos son muy ligeros; conviene verificar la integridad de `policy.onnx` y `manifest.json` antes de desplegar.
 
 ## Enlaces
 
-- Repositorio del modelo en Hugging Face: https://huggingface.co/RemiFabre/microduck-flamingo-cycle
-- Repositorio del robot Microduck (GitHub): https://github.com/pollen-robotics/microduck
-- Repositorio de entrenamiento RL (rama `flamingo`): https://github.com/pollen-robotics/microduck_rl (commit `0bf9897` en la rama `flamingo`)
-- Documentación de compartición de políticas: https://github.com/pollen-robotics/microduck_rl/blob/main/docs/sharing-policies.md
-- Página oficial de Microduck en Pollen Robotics: https://pollen-robotics.com/microduck/
-- Artículo de Byteiota sobre el lanzamiento: https://byteiota.com/hugging-face-microduck-399-open-source-robot-with-full-rl-stack/
-- Artículo de n8nlab: https://n8nlab.io/news/hugging-face-launches-microduck-robotics
-- Artículo de explore.n1n.ai: https://explore.n1n.ai/blog/hugging-face-microduck-open-source-robot-reinforcement-learning-2026-08-27
+- Modelo en Hugging Face: https://huggingface.co/RemiFabre/microduck-flamingo-cycle
+- Repositorio de entrenamiento (rama `flamingo`): https://github.com/pollen-robotics/microduck_rl/tree/flamingo
+- Commit de procedencia: https://github.com/pollen-robotics/microduck_rl/commit/0bf9897
+- Documentación del formato de intercambio de políticas: https://github.com/pollen-robotics/microduck_rl/blob/main/docs/sharing-policies.md
+- Vídeo de demostración en simulación: https://huggingface.co/RemiFabre/microduck-flamingo-cycle/resolve/main/media/preview.mp4
+- Metadatos legibles por máquina: https://huggingface.co/RemiFabre/microduck-flamingo-cycle/resolve/main/manifest.json
+- Script de control remoto: https://huggingface.co/RemiFabre/microduck-flamingo-cycle/resolve/main/control.py

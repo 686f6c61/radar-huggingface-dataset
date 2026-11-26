@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "BapunSuna/gpt-news-model",
+  "slug": "bapunsuna-gpt-news-model",
+  "author": "BapunSuna",
+  "url": "https://huggingface.co/BapunSuna/gpt-news-model",
+  "created_at": "2026-11-26T09:36:58.000Z",
+  "updated_at": "2026-11-26T09:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81915648,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327675497,
+  "storage_human": "328 MB",
+  "context_length": null,
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Village pump – Forum for discussions about Wikipedia itself, including policies and technical issues. Site news – Sources of news …"
+    }
+  ]
+}

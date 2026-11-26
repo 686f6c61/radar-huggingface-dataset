@@ -5,7 +5,7 @@
   "author": "desert-ant-labs",
   "url": "https://huggingface.co/desert-ant-labs/moderator",
   "created_at": "2026-07-03T11:56:18.000Z",
-  "updated_at": "2026-11-19T22:18:45.000Z",
+  "updated_at": "2026-11-25T09:46:27.000Z",
   "license": "desert-ant-labs-source-available",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "not-for-all-audiences"
   ],
   "likes": 9,
-  "downloads_30d": 908,
+  "downloads_30d": 928,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

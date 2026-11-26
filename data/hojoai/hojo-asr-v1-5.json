@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "HojoAI/Hojo-ASR-V1.5",
+  "slug": "hojoai-hojo-asr-v1-5",
+  "author": "HojoAI",
+  "url": "https://huggingface.co/HojoAI/Hojo-ASR-V1.5",
+  "created_at": "2026-11-26T08:35:04.000Z",
+  "updated_at": "2026-11-26T08:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M5-TTS: A Mini-Scale Multilingual and Multi-Dialect Text-to-Speech ...",
+      "url": "https://arxiv.org/html/2611.10162v1",
+      "snippet": "06.11.2026 ... Yue uses MER and Chuan uses CER; both are reported in percent. Dialect TTS Model ASR Model ... URL https://github.com/HojoAI/Hojo-TTS-Light."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "EdgeCaseLabs/ChessDrive-base-v1",
+  "slug": "edgecaselabs-chessdrive-base-v1",
+  "author": "EdgeCaseLabs",
+  "url": "https://huggingface.co/EdgeCaseLabs/ChessDrive-base-v1",
+  "created_at": "2026-11-26T06:33:17.000Z",
+  "updated_at": "2026-11-26T07:20:48.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "chess",
+    "multimodal",
+    "en",
+    "dataset:EdgeCaseLabs/ChessDrive-TermBench",
+    "arxiv:2605.19091",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6984052595,
+  "storage_human": "7.0 GB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

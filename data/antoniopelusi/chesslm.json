@@ -5,7 +5,7 @@
   "author": "antoniopelusi",
   "url": "https://huggingface.co/antoniopelusi/chesSLM",
   "created_at": "2026-11-08T19:28:04.000Z",
-  "updated_at": "2026-11-08T19:43:48.000Z",
+  "updated_at": "2026-11-25T23:15:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,7 +19,7 @@
     "slm",
     "text-generation",
     "uci",
-    "dataset:antoniopelusi/chesSLM-dataset",
+    "dataset:antoniopelusi/chesslm-dataset",
     "license:apache-2.0",
     "region:us"
   ],

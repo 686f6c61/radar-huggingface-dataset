@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "wkrfugs/DriftWAM",
+  "slug": "wkrfugs-driftwam",
+  "author": "wkrfugs",
+  "url": "https://huggingface.co/wkrfugs/DriftWAM",
+  "created_at": "2026-11-26T04:57:09.000Z",
+  "updated_at": "2026-11-26T06:11:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "world-action-model",
+    "robotwin",
+    "arxiv:2611.33797",
+    "en",
+    "base_model:NU-World-Model-Embodied-AI/FlashWAM-RoboTwin",
+    "base_model:finetune:NU-World-Model-Embodied-AI/FlashWAM-RoboTwin",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20355577064,
+  "storage_human": "20.4 GB",
+  "context_length": null,
+  "base_model": "NU-World-Model-Embodied-AI/FlashWAM-RoboTwin",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

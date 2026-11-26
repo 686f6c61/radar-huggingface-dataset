@@ -2,87 +2,86 @@
 
 ## Resumen
 
-El modelo **3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated** es una versión modificada del modelo multimodal Gemma 4 12B de Google, publicada por el usuario 3MPER0RR. Se trata de un modelo de tipo *image-text-to-text* que ha sido sometido a un proceso de "abliteración" (abliteration), una técnica que elimina o reduce los mecanismos de rechazo y alineación de seguridad del modelo original, con el objetivo de ampliar su rango de respuestas sin los filtros habituales.
+`3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated` es una modificación experimental del modelo multimodal `google/gemma-4-12B-it`, publicada por el usuario 3MPER0RR en Hugging Face. Se trata de una variante "abliterated", es decir, un ajuste de pesos orientado a eliminar o atenuar los mecanismos de rechazo aprendidos durante el alineamiento del modelo original, sin reentrenamiento completo. El resultado conserva la arquitectura y el pipeline `image-text-to-text` del modelo base.
 
-El modelo base, Gemma 4 12B, es el primer modelo multimodal de tamaño medio sin codificador (encoder-free) de Google, capaz de procesar de forma nativa texto, imagen, audio y vídeo. Con 11.959.730.176 parámetros (aproximadamente 12B), ofrece una ventana de contexto de 256K tokens y está diseñado para ejecutarse en hardware de consumo, como portátiles con 16 GB de VRAM. La versión abliterada mantiene estas capacidades técnicas pero elimina las restricciones de contenido impuestas durante el entrenamiento.
+El modelo cuenta con 11.959.730.176 parámetros totales según los safetensors publicados, un repositorio de 24,0 GB y licencia Apache 2.0. La modificación afecta a 48 de los 677 tensores (7,09%), distribuidos en 29 capas, sin discrepancias estructurales ni cambios de forma o tipo de dato respecto al original. Esto indica una intervención quirúrgica sobre un subconjunto reducido de pesos, presumiblemente relacionados con las direcciones de rechazo.
 
-La relevancia de este modelo radica en que combina las capacidades multimodales de Gemma 4 12B con una capa de seguridad eliminada, lo que lo hace interesante para investigación en alineación, estudios de comportamiento de modelos y casos de uso donde se requiere una generación de contenido sin restricciones. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
+Su relevancia es acotada y de carácter investigador: sirve para estudiar cómo se distribuyen las conductas de rechazo en un modelo multimodal de ~12B, evaluar la robustez del alineamiento y comparar el comportamiento antes y después de la ablación. No es un modelo recomendado para despliegue en producción sin una evaluación de seguridad previa.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal sin codificador (encoder-free), basada en Gemma 4 12B |
-| Parametros totales | 11.959.730.176 (aproximadamente 12B) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 256.000 tokens (256K) |
-| Tipos de cuantizacion | 4-bit (aproximadamente 6,7 GB), 8-bit, FP16 (según el modelo base) |
-| Idiomas soportados | no disponible (el modelo base soporta múltiples idiomas, pero la ficha del autor no especifica) |
+| Arquitectura | `gemma4_unified` (transformer multimodal, según tag de Hugging Face) |
+| Parametros totales | 11.959.730.176 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (repo con safetensors en precisión original) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma 4 12B utiliza una arquitectura Transformer multimodal sin codificador (encoder-free), lo que significa que procesa directamente las entradas de imagen, audio y vídeo sin necesidad de un codificador visual o auditivo separado. Esta arquitectura unificada permite que el modelo maneje múltiples modalidades con un único conjunto de pesos, simplificando el despliegue y mejorando la eficiencia computacional. El modelo fue entrenado por Google DeepMind con un enfoque en la comprensión multimodal nativa, incluyendo transcripción de audio y comprensión de vídeo.
+El modelo deriva directamente de `google/gemma-4-12B-it`, por lo que hereda su arquitectura transformer multimodal con pipeline `image-text-to-text`. La model card no documenta detalles de la arquitectura interna (número de capas, dimensión oculta, mecanismo de atención, tokenizador) ni del entrenamiento original; esa información debe consultarse en la ficha del modelo base de Google.
 
-La versión abliterada de 3MPER0RR no modifica la arquitectura subyacente, sino que aplica una técnica de post-procesamiento que elimina o atenúa las direcciones en el espacio de activaciones responsables de los comportamientos de rechazo y alineación. Este proceso, similar al aplicado por la comunidad en otros modelos como Llama o Mistral, se realiza mediante análisis de activaciones y modificación de pesos. No se dispone de información detallada sobre el dataset de entrenamiento original ni sobre el proceso exacto de abliteración aplicado por el autor.
+La intervención de 3MPER0RR no es un reentrenamiento ni un fine-tuning con datos, sino una modificación de pesos: según la comparación publicada, se alteraron 48 tensores de 677 (7,09%) en 29 capas, manteniendo intactos 629 tensores (92,91%). No se especifica la técnica exacta de ablación (por ejemplo, proyección ortogonal de direcciones de rechazo, edición de capas concretas o ajuste de sesgos), ni se documentan datos de calibración, número de tokens utilizados en el proceso ni si hubo evaluación posterior. La model card menciona "Trials: [200]" y estado "Tested and saved", sin más detalle metodológico.
 
 ## Capacidades
 
-- Generación de texto multimodal: el modelo puede procesar y generar texto a partir de entradas de imagen, audio, vídeo y texto, manteniendo las capacidades del modelo base Gemma 4 12B.
-- Comprensión de imágenes: puede describir imágenes, responder preguntas sobre su contenido y realizar tareas de razonamiento visual.
-- Procesamiento de audio: soporta entrada de audio para transcripción y comprensión, siendo el mejor de la familia Gemma 4 en esta tarea según el modelo base.
-- Comprensión de vídeo: puede procesar secuencias de vídeo y responder sobre su contenido.
-- Razonamiento y conversación: mantiene las capacidades de razonamiento multi-turno y generación de texto del modelo base.
-- Generación sin restricciones: al estar abliterado, el modelo no aplica los rechazos de seguridad habituales, lo que permite respuestas en temas que el modelo original bloquearía.
-- Soporte de tool calling: no disponible en la información proporcionada, aunque el modelo base Gemma 4 12B incluye esta capacidad.
-- Capacidades multilingües: no especificadas en la ficha, aunque el modelo base soporta múltiples idiomas.
+- Generación de texto conversacional, heredada del modelo base instruct.
+- Procesamiento de imagen y texto conjuntamente (`image-text-to-text`), según el pipeline declarado.
+- Razonamiento y respuesta multi-turno, presumiblemente conservados del modelo original.
+- Capacidad de tool calling y agentes: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo "thinking" u otras capacidades especiales: no disponible.
+- Efecto principal de la modificación: reducción esperada de las respuestas de rechazo del alineamiento original, sin garantía documentada de que el resto de capacidades se mantenga intacto.
 
 ## Casos de uso
 
-- Investigación en alineación y seguridad de IA: el modelo permite estudiar el comportamiento de un modelo multimodal sin capas de seguridad, facilitando la investigación sobre sesgos, alucinaciones y mecanismos de rechazo en modelos de gran tamaño.
-- Generación creativa de contenido multimodal: puede utilizarse para crear descripciones, narraciones o guiones a partir de imágenes, audio o vídeo sin las restricciones de contenido del modelo original, útil en proyectos artísticos o de ficción.
-- Desarrollo de asistentes conversacionales especializados: su capacidad para procesar múltiples modalidades y su falta de filtros lo hacen adecuado para asistentes en dominios técnicos o científicos donde el contenido sensible no es un problema.
-- Análisis de contenido audiovisual: puede transcribir audio, describir vídeos y extraer información de imágenes en entornos de investigación donde se requiere un análisis sin censura previa.
-- Fine-tuning para dominios específicos: al estar basado en Gemma 4 12B y tener licencia Apache 2.0, puede ajustarse para tareas concretas como resumen de vídeo, generación de subtítulos o análisis de documentos multimodales.
-- Evaluación comparativa de modelos abliterados: sirve como referencia para comparar el rendimiento de modelos con y sin alineación de seguridad en tareas multimodales, útil para la comunidad de investigación.
+- Investigación sobre alineamiento y seguridad: comparar las respuestas del modelo base y de la variante abliterated ante el mismo conjunto de prompts para medir qué fracción del comportamiento de rechazo depende de los tensores modificados.
+- Análisis de interpretabilidad: estudiar los 48 tensores alterados en 29 capas para localizar representaciones asociadas a negativas de seguridad en un modelo multimodal de ~12B.
+- Evaluación de robustez de salvaguardas: usar el modelo como caso de prueba en pipelines de red teaming que verifiquen si los filtros externos siguen siendo necesarios cuando se elimina el rechazo interno.
+- Experimentos académicos de edición de pesos: reproducir la metodología de ablación sobre otros modelos de la familia Gemma y comparar la tasa de tensores modificados (7,09%) con la de otras técnicas.
+- Pruebas de regresión de capacidades: ejecutar benchmarks de razonamiento, visión y código sobre el modelo modificado para cuantificar la degradación respecto al base.
+- Docencia y divulgación: ilustrar en un entorno controlado qué es la abliteración y cómo se documenta una modificación de pesos con una tabla de comparación de tensores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas de rendimiento específicas para esta versión abliterada. Los benchmarks del modelo base Gemma 4 12B están disponibles en la documentación oficial de Google DeepMind, pero no se incluyen aquí al no estar directamente relacionados con esta modificación.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye la comparación de pesos (677 tensores, 48 modificados, 29 capas afectadas, 0 discrepancias estructurales) y no reporta métricas de MMLU, HumanEval, GSM8K, MMMU ni de tasa de rechazo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6,7 GB en cuantización 4-bit, 12-14 GB en 8-bit y 24 GB en FP16.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40 GB o 80 GB), H100 (80 GB). El modelo base está diseñado para funcionar en portátiles con 16 GB de VRAM.
-- Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama alta como la RTX 4090 y en portátiles con 16 GB de VRAM en cuantización 4-bit.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), Hugging Face Transformers.
-- Latencia y throughput: no disponible en la información proporcionada. Dependerá del hardware y la cuantización utilizada.
+- VRAM estimada para inferencia en precisión original (bf16/fp16): aproximadamente 24 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, 28-32 GB o más según longitud de contexto.
+- Cuantización a 8 bits: ~12 GB de pesos; a 4 bits: ~6-7 GB de pesos, más overhead.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para precisión completa; RTX 4090 (24 GB) para bf16 ajustado o cuantización 8 bits.
+- GPU de consumo: posible en RTX 3090/4090 con cuantización; en GPUs de 8-12 GB solo con cuantizaciones agresivas y contexto reducido.
+- Opciones de despliegue: transformers (formato nativo del repo), text-generation-inference (tag declarado), vLLM y llama.cpp/Ollama si se generan conversiones GGUF (no incluidas en el repo).
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Abliterado |
-|---|---|---|---|---|---|
-| 3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated | 12B | 256K | Sí (texto, imagen, audio, vídeo) | Apache 2.0 | Sí |
-| google/gemma-4-12B (original) | 12B | 256K | Sí (texto, imagen, audio, vídeo) | Apache 2.0 | No |
-| huihui-ai/Huihui-gemma-4-12B-it-abliterated | 12B | 256K | Sí (texto, imagen, audio, vídeo) | Apache 2.0 | Sí |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| `3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated` | 11,96B | no disponible | Apache 2.0 | Variante abliterated experimental; 7,09% de tensores modificados |
+| `google/gemma-4-12B-it` (base) | ~12B | no disponible | Apache 2.0 (según la ficha) | Modelo original alineado, referencia de comparación |
+| Otras variantes abliterated de la familia Gemma | no disponible | no disponible | habitualmente Apache 2.0 | No se dispone de datos verificados en la información proporcionada |
 
-La principal diferencia entre el modelo de 3MPER0RR y el de huihui-ai radica en el proceso de abliteración aplicado, que puede variar en metodología y resultados. Ambos parten del mismo modelo base de Google y mantienen las mismas especificaciones técnicas. El modelo original de Google incluye las capas de seguridad estándar.
+No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser una versión abliterada, el modelo puede generar contenido ofensivo, ilegal o peligroso sin restricciones. No se han documentado sesgos específicos de esta versión, pero hereda los sesgos del modelo base.
-- Riesgo de alucinación: el modelo puede generar información falsa o inventada, especialmente en tareas multimodales donde la comprensión del contexto visual o auditivo puede ser incompleta.
-- Limitaciones de contexto: aunque la ventana de contexto es de 256K tokens, el rendimiento puede degradarse con entradas muy largas o complejas.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificación, pero el usuario es responsable del uso que haga del modelo, especialmente al eliminar las capas de seguridad.
-- Advertencia para producción: no se recomienda su uso en entornos de producción donde se requiera moderación de contenido o cumplimiento normativo, ya que la falta de alineación puede generar respuestas inapropiadas.
-- Idiomas: no se especifican los idiomas soportados en la ficha, aunque el modelo base de Google soporta múltiples idiomas.
+- Modelo experimental sin evaluación de seguridad publicada: la ablación busca reducir los rechazos, lo que puede aumentar la probabilidad de generar contenido dañino, sesgado o inexacto.
+- No hay benchmarks que confirmen que las capacidades del modelo base (razonamiento, visión, código) se conservan tras modificar 48 tensores.
+- Riesgo de alucinación: no cuantificado; se desconoce si la edición de pesos afecta a la calibración del modelo.
+- Idiomas soportados y longitud de contexto no documentados en la ficha.
+- La licencia Apache 2.0 se declara en el repo, pero conviene verificar los términos del modelo base de Google antes de uso comercial, dado que el modelo derivado modifica pesos del original.
+- La model card incluye un aviso de investigación; no se documenta la metodología exacta de ablación, lo que dificulta la reproducibilidad.
+- Uso en producción no recomendado sin filtros de seguridad externos y una evaluación propia de comportamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated
-- Modelo base de Google: https://huggingface.co/google/gemma-4-12B
-- Versión abliterada de huihui-ai: https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated
-- Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Guía para desarrolladores de Gemma 4 12B: https://developers.googleblog.com/gemma-4-12b-the-developer-guide/
-- Sitio informativo sobre Gemma 4 12B: https://gemmai4.com/gemma4-12b/
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
+- Licencia del repo: https://huggingface.co/3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated/blob/main/LICENSE
+- Aviso de investigación: https://huggingface.co/3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated/blob/main/DISCLAIMER.md

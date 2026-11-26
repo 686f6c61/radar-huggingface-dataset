@@ -2,50 +2,50 @@
 
 ## Resumen
 
-in-fusion-v es un modelo multimodal de pequeno tamano (320.264.448 parametros, aproximadamente 0,32B) publicado por el usuario nebulette en Hugging Face bajo licencia Apache 2.0. Segun la model card, se trata de una variante "MNN 0.3B Vision" que incorpora los modulos de vision denominados "in-fusion vision modules", descritos en el enlace a la pagina del autor (unbundling.github.io). El modelo se distribuye en formato safetensors y esta etiquetado con los tags `mnn` y `qwen3`, lo que sugiere una base derivada de la familia Qwen3 adaptada para el runtime MNN (Mobile Neural Network) de Alibaba.
+in-fusion-v es un modelo de generación de texto multimodal desarrollado por el usuario nebulette, construido como un fine-tuning del modelo base taobao-mnn/MNN-Pocket-0.3B, que a su vez deriva de la familia Qwen3. El modelo incorpora módulos de visión denominados "in-fusion vision modules", lo que le permite procesar parches de imagen delimitados por tokens especiales (`<|vision_start|>` y `<|vision_end|>`) junto con texto en un mismo flujo conversacional.
 
-El modelo esta orientado a tareas de vision y etiquetado de imagenes. Los datos de entrenamiento declarados son 50.000 tags comunes de booru procedentes de gelbooru, con al menos un tag unico por imagen de muestra, lo que apunta a un caso de uso centrado en la clasificacion y anotacion automatica de imagenes de estilo anime/ilustracion. La referencia "2611.17334" incluida en la model card corresponde a un identificador tipo arXiv, aunque no se ha podido verificar su contenido en la informacion disponible.
+Con 375.314.688 parámetros totales (aproximadamente 0,38 mil millones), se trata de un modelo de muy pequeño tamaño, orientado a despliegue en entornos con recursos limitados. Su entrenamiento se centró en datos de 50.000 etiquetas comunes de booru procedentes de gelbooru, lo que sugiere una especialización en tareas de etiquetado y descripción de imágenes de tipo anime.
 
-La relevancia de este modelo es limitada pero concreta: se trata de un modelo muy pequeno (1,3 GB de repositorio) que puede ejecutarse en hardware modesto, incluso en dispositivos moviles o edge, gracias a su integracion con MNN. No obstante, la ausencia de benchmarks publicados, de documentacion detallada y de un pipeline declarado en Hugging Face limita seriamente su evaluacion objetiva.
+Es relevante por su enfoque en la integración eficiente de visión en un modelo compacto mediante módulos in-fusion, y por su compatibilidad con el ecosistema MNN (Mobile Neural Network) de Alibaba, pensado para inferencia en dispositivos móviles y edge. La licencia Apache 2.0 facilita su uso comercial, aunque la información pública disponible es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiquetado como qwen3; integra modulos de vision "in-fusion") |
-| Parametros totales | 320.264.448 (aproximadamente 0,32B) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
+| Arquitectura | Transformer basado en Qwen3 con módulos de visión in-fusion (detalles no disponibles) |
+| Parametros totales | 375.314.688 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas `qwen3` y `mnn`. El tag `qwen3` sugiere que el backbone de lenguaje deriva de la familia Qwen3, mientras que `mnn` indica compatibilidad con el runtime MNN de Alibaba, orientado a inferencia eficiente en dispositivos moviles y edge. La model card menciona explicitamente la incorporacion de "in-fusion vision modules", con un enlace a la pagina del autor que describe su "placement", pero no se proporciona la arquitectura concreta de dichos modulos (si son adaptadores, cross-attention, proyectores u otro tipo de conexion entre vision y lenguaje).
+El modelo parte de taobao-mnn/MNN-Pocket-0.3B, un modelo de la familia Qwen3 optimizado para el runtime MNN. Sobre esta base se añaden módulos de visión "in-fusion", cuya implementación técnica concreta no se detalla en la información disponible. El formato de entrada combina tokens especiales de visión (`<|vision_start|>` y `<|vision_end|>`) que envuelven los parches de imagen dentro de una plantilla conversacional estilo ChatML (`<|im_start|>user\n...<|im_end|>`).
 
-En cuanto a los datos de entrenamiento, la unica informacion disponible es que se usaron 50.000 tags comunes de booru de gelbooru, con al menos un tag unico por imagen de muestra. No se especifica el numero total de tokens, la composicion completa del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La referencia "2611.17334" podria corresponder a un paper tecnico, pero su contenido no esta disponible en la informacion proporcionada.
+Los datos de entrenamiento consisten en 50.000 etiquetas comunes de booru extraídas de gelbooru, con la restricción de que cada imagen de muestra contiene al menos una etiqueta única. No se especifica el número total de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card referencia el identificador arXiv 2611.17334, presumiblemente el artículo que describe los módulos in-fusion, aunque no se aportan más detalles sobre el proceso de alineación.
 
 ## Capacidades
 
-- Procesamiento de imagenes y generacion de etiquetas (tags) de estilo booru, segun los datos de entrenamiento declarados.
-- Clasificacion y anotacion automatica de imagenes de ilustracion/anime.
-- Integracion con el runtime MNN para inferencia en dispositivos moviles y edge.
-- Capacidades de lenguaje derivadas de la base Qwen3 (no documentadas en detalle).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (los idiomas no estan declarados).
-- Modo thinking, vision, audio u otras capacidades especiales: solo vision, segun la model card; el resto no disponible.
+- Generación de texto conversacional en formato ChatML.
+- Procesamiento de imágenes mediante parches codificados entre tokens de visión.
+- Etiquetado y descripción de imágenes, especialmente orientado a contenido de tipo anime/booru.
+- Generación multimodal texto-imagen dentro de un mismo flujo de conversación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (los idiomas no están declarados).
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Etiquetado automatico de imagenes en plataformas de galeria: el modelo puede generar tags de estilo booru para imagenes subidas por usuarios, aprovechando los 50.000 tags de gelbooru usados en entrenamiento para sugerir etiquetas coherentes con ese vocabulario.
-- Moderacion y organizacion de bibliotecas de ilustracion: clasificacion de imagenes por contenido tematico para facilitar busquedas y filtrado en colecciones grandes.
-- Preprocesado de datasets para entrenamiento de modelos de difusion: generacion de captions y tags que alimenten pipelines de fine-tuning de modelos texto-a-imagen.
-- Inferencia en dispositivos moviles o edge: gracias a su tamano reducido (0,32B) y a la integracion con MNN, puede desplegarse en telefonos o dispositivos embebidos para tareas de vision sin conexion.
-- Prototipado rapido de aplicaciones de vision: su licencia Apache 2.0 y su tamano permiten experimentar en entornos con recursos limitados sin coste de licencia.
-- Anotacion asistida en herramientas de curacion de contenido: sugerencia de tags para que un humano los revise, reduciendo el trabajo manual en flujos de catalogacion.
+- Etiquetado automático de imágenes anime: el modelo se entrenó específicamente con etiquetas de booru de gelbooru, por lo que puede generar etiquetas descriptivas para imágenes de este dominio, útil en pipelines de catalogación de galerías.
+- Moderación y clasificación de contenido visual: al procesar parches de imagen junto con texto, puede emplearse para clasificar o describir imágenes en plataformas de contenido generado por usuarios.
+- Asistentes conversacionales ligeros con entrada de imagen: su tamaño de 0,38B permite integrarlo en aplicaciones móviles o edge mediante el runtime MNN, ofreciendo respuestas sobre imágenes sin depender de la nube.
+- Prototipado rápido de pipelines multimodales: sirve como banco de pruebas para experimentar con los módulos in-fusion y el formato de tokens de visión antes de escalar a modelos mayores.
+- Generación de metadatos para datasets de imágenes: puede preetiquetar grandes colecciones de imágenes para su posterior curación manual, reduciendo el coste de anotación.
+- Investigación en eficiencia multimodal: su reducido tamaño y su integración con MNN lo hacen adecuado para estudiar el rendimiento de visión en dispositivos con recursos muy limitados.
 
 ## Benchmarks y rendimiento
 
@@ -53,28 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con 320 millones de parametros, en FP16 el modelo ocuparia aproximadamente 0,64 GB de pesos, y en cuantizacion de 8 bits alrededor de 0,32 GB; estas cifras son estimaciones a partir del numero de parametros, no datos publicados.
-- GPU recomendadas: no disponible. Por su tamano, cabria esperar ejecucion en GPUs consumer de gama baja, pero no hay confirmacion oficial.
-- Compatibilidad con GPU consumer: probable por el tamano (menos de 1 GB de pesos en FP16), aunque no esta documentada.
-- Opciones de despliegue: el tag `mnn` indica soporte para el runtime MNN; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: con 375M parámetros, en FP16 requiere aproximadamente 0,75 GB de pesos; en cuantización de 8 bits, unos 0,4 GB; en 4 bits, unos 0,2 GB (estimaciones teóricas, no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobradamente suficiente; también tarjetas de gama baja y GPUs integradas.
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag presente), y el runtime MNN de Alibaba dado su origen; compatibilidad con llama.cpp, Ollama o vLLM no está confirmada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| nebulette/in-fusion-v | 375M | no disponible | Sí (in-fusion) | Apache 2.0 | Hugging Face |
+| taobao-mnn/MNN-Pocket-0.3B | ~0,3B | no disponible | No (modelo base de texto) | no disponible | Hugging Face |
+| Qwen3 (familia) | desde 0,6B | hasta 32k en variantes pequeñas | No en variantes base | Apache 2.0 en la mayoría | Hugging Face |
+
+La comparación con alternativas multimodales de tamaño similar no está disponible en la información proporcionada, ya que los modelos visión-lenguaje compactos con licencia abierta y detalles públicos son escasos en este rango de parámetros.
 
 ## Limitaciones y advertencias
 
-- Ausencia de benchmarks publicados: no hay datos objetivos de rendimiento que permitan evaluar su calidad frente a alternativas.
-- Documentacion muy escasa: la model card no detalla arquitectura, contexto, cuantizaciones ni idiomas, lo que dificulta su evaluacion y su uso en produccion.
-- Sesgos conocidos: no documentados, pero el entrenamiento exclusivo con tags de gelbooru (contenido de estilo anime/booru) implica un sesgo fuerte hacia ese dominio y un posible vocabulario inadecuado para otros tipos de imagen.
-- Riesgo de alucinacion: no evaluado; en tareas de etiquetado puede generar tags plausibles pero incorrectos.
-- Limitaciones de contexto e idioma: no disponibles.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el origen de los datos de entrenamiento (tags e imagenes de gelbooru) podria plantear cuestiones sobre derechos de terceros que el autor no aborda.
-- Caveat para produccion: con 0 descargas y 0 likes en el momento de la consulta, el modelo carece de validacion por parte de la comunidad; se recomienda evaluacion propia antes de cualquier despliegue.
+- El modelo es un fine-tuning muy específico sobre etiquetas de booru de gelbooru; su rendimiento fuera de ese dominio (imágenes reales, otros estilos) es probablemente limitado y no está evaluado.
+- Riesgo elevado de alucinación y de generar etiquetas inexistentes o incorrectas, dado su reducido tamaño y la naturaleza del dataset.
+- No se declaran los idiomas soportados; se desconoce si maneja castellano con soltura.
+- La longitud de contexto no está documentada, lo que dificulta planificar su uso en conversaciones largas o imágenes de alta resolución.
+- La información pública es mínima (226 descargas, 1 like en el momento de la consulta), sin benchmarks ni evaluación independiente.
+- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base taobao-mnn/MNN-Pocket-0.3B no declara licencia en la información disponible, lo que conviene verificar antes de un despliegue en producción.
+- El contenido de entrenamiento (booru/gelbooru) puede incluir material para adultos o sesgado; no se documentan filtros de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/nebulette/in-fusion-v
-- Pagina de los modulos in-fusion vision: https://unbundling.github.io/#placement
-- Referencia citada en la model card: 2611.17334 (no verificable en la informacion disponible)
+- [Modelo en Hugging Face](https://huggingface.co/nebulette/in-fusion-v)
+- [Modelo base taobao-mnn/MNN-Pocket-0.3B](https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B)
+- [Referencia a módulos in-fusion (unbundling.github.io)](https://unbundling.github.io/#placement)
+- Referencia arXiv citada en la model card: 2611.17334 (no se dispone de URL verificada)

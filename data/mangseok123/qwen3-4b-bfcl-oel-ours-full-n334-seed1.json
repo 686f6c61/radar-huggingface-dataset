@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "MANGSEOK123/qwen3-4b-bfcl-oel-ours-full-n334-seed1",
+  "slug": "mangseok123-qwen3-4b-bfcl-oel-ours-full-n334-seed1",
+  "author": "MANGSEOK123",
+  "url": "https://huggingface.co/MANGSEOK123/qwen3-4b-bfcl-oel-ours-full-n334-seed1",
+  "created_at": "2026-11-26T12:17:41.000Z",
+  "updated_at": "2026-11-26T12:18:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "bfcl",
+    "skill-internalization",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pantalons femme | PLT FR",
+      "url": "https://www.prettylittlething.fr/categories/pantalons-femme",
+      "snippet": "Quelle que soit la saison ou le temps, le pantalon est une pièce indispensable. Retrouvez de nouveaux produits tous les jours sur …"
+    },
+    {
+      "title": "Vêtements grande taille | PLT Plus | PLT FR",
+      "url": "https://www.prettylittlething.fr/categories/mode-femme-grande-taille",
+      "snippet": "Jetez un oeil à notre sélection de vêtements grande taille. Retrouvez de nouveaux produits tous les jours sur PLT France !"
+    },
+    {
+      "title": "Maillot de bain | Maillot de bain femme | PLT FR",
+      "url": "https://www.prettylittlething.fr/categories/femme-maillots-de-bain",
+      "snippet": "Plongez dans notre collection de maillots de bain absolument indispensable. Retrouvez de nouveaux produits tous les jours sur PLT …"
+    }
+  ]
+}

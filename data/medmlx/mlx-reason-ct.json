@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MedMLX/MLX-Reason-CT · Hugging Face",
-      "url": "https://huggingface.co/MedMLX/MLX-Reason-CT",
-      "snippet": "Instructions to use MedMLX/MLX-Reason-CT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use MedMLX/MLX-Reason-CT with MLX:"
-    },
-    {
-      "title": "GitHub - MedMLX/MLX-Reason-CT: Native MLX port of NVIDIA NV-Reason-CT ...",
-      "url": "https://github.com/MedMLX/MLX-Reason-CT",
-      "snippet": "Native MLX port of NVIDIA NV-Reason-CT for Apple Silicon. Run 3D CT reasoning and report generation locally on Mac."
-    }
-  ]
+  "sources": []
 }

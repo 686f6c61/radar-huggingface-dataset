@@ -16,8 +16,6 @@
     "qwen3_5",
     "decision-model",
     "sn92",
-    "base_model:ronanlee777/sn92-gen-ma",
-    "base_model:finetune:ronanlee777/sn92-gen-ma",
     "license:mit",
     "region:us"
   ],

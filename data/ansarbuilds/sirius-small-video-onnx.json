@@ -21,8 +21,8 @@
     "adhd",
     "sirius",
     "youtube",
-    "base_model:ansarbuilds/Sirius-Small-ONNX",
-    "base_model:quantized:ansarbuilds/Sirius-Small-ONNX",
+    "base_model:ansarbuilds/Sirius-Core",
+    "base_model:quantized:ansarbuilds/Sirius-Core",
     "license:mit",
     "region:us"
   ],
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ansarbuilds/Sirius-YouTube",
+  "renamed_at": "2026-11-26T07:16:18.978Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "speakleash/Bielik-SPLADE-50M-v1.0-ONNX-INT8",
+  "slug": "speakleash-bielik-splade-50m-v1-0-onnx-int8",
+  "author": "speakleash",
+  "url": "https://huggingface.co/speakleash/Bielik-SPLADE-50M-v1.0-ONNX-INT8",
+  "created_at": "2026-11-24T19:00:34.000Z",
+  "updated_at": "2026-11-25T14:32:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "onnx",
+    "albert",
+    "splade",
+    "sparse-retrieval",
+    "information-retrieval",
+    "int8",
+    "polish",
+    "feature-extraction",
+    "pl",
+    "base_model:speakleash/Bielik-SPLADE-50M-v1.0",
+    "base_model:quantized:speakleash/Bielik-SPLADE-50M-v1.0",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100026636,
+  "storage_human": "100 MB",
+  "context_length": null,
+  "base_model": "speakleash/Bielik-SPLADE-50M-v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

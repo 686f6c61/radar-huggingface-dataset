@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "luban2026/lubanai-private-e2b",
+  "slug": "luban2026-lubanai-private-e2b",
+  "author": "luban2026",
+  "url": "https://huggingface.co/luban2026/lubanai-private-e2b",
+  "created_at": "2026-11-26T08:31:48.000Z",
+  "updated_at": "2026-11-26T08:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "on-device",
+    "android",
+    "tool-calling",
+    "arabic",
+    "gemma4",
+    "text-generation",
+    "ar",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4035362816,
+  "storage_human": "4.0 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agent Skills Directory - Security Reviews & Install Guides",
+      "url": "https://agentskillshub.dev/skills/",
+      "snippet": "Comprehensive open-source library of AI research and engineering skills for any AI model. ... private, UI based Tech Documentation MCP server. Designed for ..."
+    }
+  ]
+}

@@ -56,8 +56,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "pastdc/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF",
+  "renamed_at": "2026-11-26T05:14:09.677Z",
   "benchmarks": [],
   "sources": []
 }

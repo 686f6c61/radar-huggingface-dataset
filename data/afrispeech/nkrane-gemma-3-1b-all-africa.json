@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "AfriSpeech/nkrane-gemma-3-1b-all-africa",
+  "slug": "afrispeech-nkrane-gemma-3-1b-all-africa",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/nkrane-gemma-3-1b-all-africa",
+  "created_at": "2026-11-19T11:48:06.000Z",
+  "updated_at": "2026-11-26T07:54:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 1000579456,
+  "parameters_human": "1.00B",
+  "storage_bytes": 6037087263,
+  "storage_human": "6.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

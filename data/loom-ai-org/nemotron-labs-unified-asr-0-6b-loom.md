@@ -2,100 +2,95 @@
 
 ## Resumen
 
-Nemotron-Labs-Unified-ASR 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado por NVIDIA Labs. Combina un codificador FastConformer con un decodificador RNN-T y utiliza indicaciones de identificación de idioma (language-ID prompting) para transcribir audio en 25 lenguas europeas, incluyendo puntuación y capitalización. El modelo base cuenta con 636.877.712 parámetros (aproximadamente 0,6B), lo que lo sitúa en la gama compacta de ASR de alta eficiencia.
+Nemotron-Labs-Unified-ASR 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado por NVIDIA, exportado al ecosistema loom.cpp por loom-ai-org. Combina un encoder FastConformer con un decoder RNN-T y prompting de identificación de idioma para cubrir 25 lenguas europeas, con salida que incluye puntuación y capitalización. El modelo resuelve el problema de la transcripción multilingüe en un único checkpoint, sin necesidad de un modelo separado por idioma.
 
-La ficha que nos ocupa no es el checkpoint original, sino una exportación realizada por el proyecto loom-ai-org para su motor loom.cpp. Se distribuye como un único fichero GGUF autodescriptivo que incluye las topologías de grafo, el tokenizador y el script controlador necesarios para su ejecución. Está disponible en dos precisiones: F32 (2,5 GB) y q8_0 (719 MB), lo que permite desplegarlo en entornos con recursos limitados.
+Esta ficha describe la exportación a loom.cpp del checkpoint original, publicada como un único archivo GGUF autodescriptivo que embebe sus propias topologías de grafo, tokenizador y script controlador. El modelo cuenta con 636.876.688 parámetros y se distribuye en dos precisiones: F32 (2,5 GB) y q8_0 (719 MB). La exportación preserva el comportamiento del modelo original: el archivo F32 es token a token idéntico al decode de NeMo en las pruebas realizadas por el autor.
 
-Su relevancia actual radica en la combinación de cobertura multilingüe amplia (25 idiomas europeos), salida con puntuación y mayúsculas, y un formato de empaquetado autocontenido que simplifica el despliegue fuera del ecosistema NeMo. La licencia OpenMDW 1.1, heredada del modelo base, condiciona su uso comercial.
+La relevancia actual radica en que permite ejecutar un modelo ASR de calidad de producción en hardware modesto (1,4 GB de pico de memoria con q8_0) mediante el runtime loom-py-rt, con soporte tanto de inferencia offline como de streaming con búfer al estilo de NeMo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (codificador) + RNN-T (decodificador) |
-| Parametros totales | 636.877.712 |
+| Arquitectura | Encoder FastConformer + decoder RNN-T, con prompting de language-ID |
+| Parametros totales | 636.876.688 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (atención sobre el clip completo; sin ventana de streaming) |
+| Longitud de contexto | no disponible (atención sobre el clip completo; streaming con 5,6 s de contexto izquierdo por chunk) |
 | Tipos de cuantizacion | F32 y q8_0 |
 | Idiomas soportados | 25: bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk |
-| Licencia | other (OpenMDW License 1.1) |
-| Formato de pesos | GGUF (loom.cpp) |
+| Licencia | OpenMDW License 1.1 (heredada del modelo base) |
+| Formato de pesos | GGUF (autodescriptivo, con grafo y driver embebidos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura híbrida compuesta por un codificador FastConformer, una variante eficiente del Conformer que reduce el coste computacional de la atención, y un decodificador RNN-T (Recurrent Neural Network Transducer) para la generación de transcripciones. Incorpora además indicaciones de identificación de idioma que permiten condicionar la salida a una lengua concreta o dejar que el modelo la detecte automáticamente (`auto`). La salida incluye puntuación y capitalización.
+El modelo sigue una arquitectura de dos componentes: un encoder FastConformer que procesa el audio de entrada y un decoder RNN-T que genera la secuencia de tokens. El reconocimiento se guía mediante prompting de identificación de idioma, lo que permite seleccionar la lengua de salida entre las 25 entrenadas o dejar que el propio modelo la detecte con el modo `auto`. La salida incluye puntuación y capitalización.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La exportación a loom.cpp preserva los parámetros del checkpoint original en el fichero F32; las versiones cuantizadas empaquetan los pesos de convolución y proyección mediante `loom-export --quantize <type>`. El fichero GGUF es autodescriptivo e incluye el grafo, el tokenizador y el driver de ejecución. La inferencia es exclusivamente offline: el clip completo pasa por el codificador con contexto completo, sin el modo de streaming con búfer de NeMo.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La exportación a loom.cpp agrupa los pesos de convolución y proyección al cuantizar (`loom-export --quantize <type>`), por lo que los resultados de las versiones cuantizadas difieren de los del modelo original en la medida indicada por el autor. El archivo F32 porta los mismos parámetros sin modificar en formato GGUF de loom.cpp.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (transcripción) en 25 lenguas europeas.
-- Detección automática del idioma de entrada cuando no se especifica ninguno (`auto`).
-- Selección explícita de idioma mediante códigos de dos letras (`de`, `pl`) o locales (`de-DE`); el contrato del modelo expone 118 nombres de prompt en `model.contract["asr_languages"]`.
-- Salida con puntuación y capitalización.
-- Procesamiento de audio mono a 16 kHz.
-- Ejecución offline sobre el clip completo (sin streaming).
-- Integración con el ecosistema loom.cpp/loom-py mediante la API `model.speech2text.infer(...)`.
-- Acceso al driver embebido vía `model.driver_source` para ajustar parámetros no expuestos por la API de alto nivel.
+- Transcripción de voz a texto en 25 lenguas europeas, con detección automática de idioma (`auto`) o selección explícita mediante nombres de prompt del checkpoint (por ejemplo `"de"`, `"pl"`, `"de-DE"`; 118 en total en `model.contract["asr_languages"]`).
+- Puntuación y capitalización en la salida.
+- Inferencia offline sobre el clip completo (`speech2text.infer`), equivalente a la inferencia offline de NeMo.
+- Streaming con búfer al estilo de NeMo (`speech2text.stream()`), con 5,6 s de contexto izquierdo recomputado por chunk y actualizaciones incrementales que indican si el texto previo se ha revisado (`update.revised`).
+- Entrada de audio mono a 16 kHz como lista de floats.
+- API de alto nivel por tarea (`speech2text`) y acceso al driver embebido mediante `model.infer(...)` para parámetros no expuestos por la API de alto nivel.
 
 ## Casos de uso
 
-- Transcripción de reuniones y entrevistas: el modelo procesa el clip completo y devuelve texto con puntuación y mayúsculas, adecuado para actas y resúmenes posteriores. Conviene segmentar grabaciones largas en pausas, ya que el coste crece con la duración del clip.
-- Subtitulado de vídeo multilingüe: con 25 idiomas europeos y detección automática, permite generar subtítulos para contenido en varias lenguas sin cambiar de modelo.
-- Atención al cliente y centros de contacto: transcripción de llamadas grabadas para análisis de calidad, cumplimiento y extracción de temas, con la precisión que ofrece la cuantización q8_0 (diferencias de hasta 0,4 puntos de WER frente a F32).
-- Investigación lingüística y corpus: generación de transcripciones para estudios comparativos entre lenguas europeas, aprovechando la cobertura de idiomas eslavos, bálticos y nórdicos.
-- Despliegue en dispositivos con recursos limitados: la variante q8_0 (719 MB, pico de 1,4 GB de memoria) permite ejecutar ASR en máquinas modestas o entornos contenedorizados sin GPU de gran capacidad.
-- Pipelines de accesibilidad: conversión de audio a texto para personas con discapacidad auditiva en aplicaciones de escritorio o servidores, usando el runtime loom-py-rt.
-- Preprocesado de datos para entrenamiento de otros modelos: transcripción masiva de audio en 25 idiomas como paso previo a la anotación o al filtrado de corpus.
+- Transcripción de reuniones y entrevistas multilingües: el modelo gestiona 25 lenguas europeas en un único checkpoint y añade puntuación y capitalización, lo que reduce el postprocesado necesario para actas y resúmenes.
+- Subtitulado y accesibilidad: la salida con puntuación y capitalización y el modo streaming permiten generar subtítulos progresivos a partir de audio de micrófono entregado segundo a segundo.
+- Atención al cliente y análisis de llamadas: la detección automática de idioma (`auto`) permite procesar grabaciones de centros de contacto sin etiquetar previamente la lengua de cada llamada.
+- Investigación lingüística y corpus de habla: la cobertura de 25 lenguas europeas, incluidas las bálticas, eslavas y ugrofinesas, facilita la construcción de corpus transcritos homogéneos entre idiomas.
+- Despliegue en hardware modesto: con q8_0 (719 MB de pesos y 1,4 GB de pico de memoria) el modelo puede ejecutarse en entornos con recursos limitados, frente a los 3,2 GB de pico de la versión F32.
+- Transcripción en vivo en aplicaciones de escritorio o edge: el modo `stream()` con búfer de 5,6 s de contexto izquierdo está pensado para audio que llega de forma continua, como un micrófono.
+- Pipelines de voz a texto en producción: la integración con loom-py-rt permite invocar el modelo desde Python con una API estable y un archivo GGUF autodescriptivo que simplifica el despliegue.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son métricas de calidad de transcripción (WER) y de memoria, no benchmarks estándar tipo MMLU o HumanEval.
+Los únicos datos publicados en la información disponible son los del autor de la exportación, medidos sobre LibriSpeech y FLEURS (alemán, español, francés y polaco), con el idioma indicado explícitamente.
 
-| Metrica | Resultado |
-|---|---|
-| LibriSpeech (WER, q8_0) | 3,91 % (idéntico a F32) |
-| FLEURS aleman (WER, q8_0) | 2,91 % |
-| FLEURS espanol (WER, q8_0) | 3,37 % |
-| FLEURS frances (WER, q8_0) | 10,00 % |
-| FLEURS polaco (WER, q8_0) | 9,02 % |
-| Memoria pico F32 | 3,2 GB |
-| Memoria pico q8_0 | 1,4 GB |
-| Transcripciones token-identicas a NeMo (LibriSpeech) | 71 de 73 |
-| Transcripciones token-identicas a NeMo (FLEURS) | 53 de 60 |
+| Metrica | F32 | q8_0 |
+|---|---|---|
+| LibriSpeech WER | 3,91 % | 3,91 % |
+| FLEURS aleman WER | no disponible | 2,91 % |
+| FLEURS espanol WER | no disponible | 3,37 % |
+| FLEURS frances WER | no disponible | 10,00 % |
+| FLEURS polaco WER | no disponible | 9,02 % |
+| Pico de memoria | 3,2 GB | 1,4 GB |
+| Transcripciones token-identicas a NeMo | 73/73 LibriSpeech y 60/60 FLEURS | 71/73 LibriSpeech y 53/60 FLEURS |
 
-Los resultados de FLEURS corresponden a la ejecución con el idioma nombrado explícitamente. El fichero F32 reproduce token a token la decodificación de NeMo en 73 clips de LibriSpeech y 60 de FLEURS (alemán, español, francés y polaco), tanto con idioma nombrado como en modo `auto`.
+El autor indica que los WER de q8_0 quedan a menos de 0,4 puntos de los de F32 en todos los conjuntos. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 3,2 GB de pico para F32; 1,4 GB de pico para q8_0.
-- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por el tamaño del modelo, cabe en GPU de consumo como RTX 3060 (12 GB), RTX 4060, RTX 4090 y superiores; también en A100 y H100.
-- Cabe en GPU de consumo: sí, con amplio margen, especialmente la variante q8_0.
-- Opciones de despliegue: runtime loom-py-rt (versión 1.0.0rc18 o superior, necesaria por el operador `STFT`); el fichero GGUF se ejecuta mediante loom.cpp. No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 3,2 GB de pico con F32 y 1,4 GB de pico con q8_0.
+- GPU recomendadas: no disponible en la información proporcionada; el modelo es lo bastante pequeño para ejecutarse en GPUs de consumo, aunque el autor no especifica modelos concretos.
+- Cabe en GPU de consumo: sí, con q8_0 (1,4 GB de pico) y previsiblemente con F32 (3,2 GB de pico) en tarjetas con 4 GB o más de VRAM.
+- Opciones de despliegue: runtime loom-py-rt (PyPI, `loom-py-rt[hub]>=1.0.0`) sobre el motor loom.cpp. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
+No se dispone de datos de rendimiento de modelos alternativos en la información proporcionada, por lo que la comparación se limita a características estructurales.
+
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron-Labs-Unified-ASR 0.6B (loom) | 636,9 M | 25 europeos | clip completo (offline) | OpenMDW 1.1 | GGUF |
-| Whisper (variantes pequenas) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
-| NeMo original (nvidia/nemotron-labs-unified-asr-0.6b) | 636,9 M | 25 europeos | offline y streaming con bufer | OpenMDW 1.1 | no disponible |
-
-No se dispone de datos de benchmarks comparativos con otros modelos ASR en la información proporcionada. La comparación más directa es con el checkpoint original de NVIDIA, del que esta exportación hereda los parámetros y la licencia, con la diferencia de que el original soporta streaming con búfer de 5,6 s de contexto izquierdo recalculado y esta exportación es solo offline.
+| Nemotron-Labs-Unified-ASR 0.6B (esta ficha) | 636.876.688 | 25 europeos | clip completo (offline); 5,6 s de contexto izquierdo en streaming | OpenMDW 1.1 | GGUF (loom.cpp) |
+| nvidia/nemotron-labs-unified-asr-0.6b | no disponible | 25 europeos | no disponible | OpenMDW 1.1 | no disponible (checkpoint original) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo modo offline: no se exporta el streaming con búfer de NeMo; el clip completo pasa por el codificador con contexto completo.
-- El coste computacional crece con la duración del clip; se recomienda dividir grabaciones largas en las pausas (por ejemplo, con `silero-vad-loom`).
-- No genera marcas de tiempo: `segments` devuelve un único intervalo que cubre todo el clip.
-- Audio de entrada limitado a mono a 16 kHz.
-- El parámetro `language=` acepta nombres de prompt del checkpoint, incluidos 118 locales; algunos de esos nombres corresponden a idiomas fuera de los 25 entrenados y no constituyen un uso soportado.
-- La detección automática de idioma (`auto`) puede ser menos precisa que nombrar el idioma cuando se conoce.
-- La licencia OpenMDW 1.1 es distinta de las licencias permisivas habituales; es necesario revisar sus términos antes de un uso comercial.
-- No se dispone de información sobre sesgos conocidos ni sobre tasas de alucinación específicas del modelo.
-- Requiere loom-py-rt 1.0.0rc18 o superior; versiones anteriores fallan con `unknown op 'STFT'`.
-- El modelo tiene pocas descargas (21) y ningún "like" en el momento de la consulta, lo que limita la validación comunitaria de la exportación.
+- En `infer` la inferencia es offline; en `stream()` se usa el streaming con búfer de NeMo, que termina en los ids transmitidos por NeMo y puede no coincidir con la transcripción offline.
+- El coste computacional crece con la duración del clip porque la atención cubre el clip completo; se recomienda dividir grabaciones largas en las pausas (el autor sugiere `silero-vad-loom`).
+- No se generan timestamps: `segments` es un único intervalo que cubre todo el clip.
+- La entrada debe ser audio mono a 16 kHz.
+- El modo `auto` detecta el idioma, pero el autor recomienda indicarlo explícitamente cuando se conoce; pedir un idioma fuera de los 25 entrenados no es un uso soportado, aunque la tabla de nombres de prompt incluya otros.
+- La licencia OpenMDW 1.1 es heredada del modelo base; conviene revisar sus términos antes de un uso comercial.
+- No se dispone de información sobre sesgos conocidos ni sobre tasas de alucinación en la documentación proporcionada.
+- El WER en francés (10,00 % con q8_0) es notablemente superior al de otros idiomas evaluados, lo que conviene tener en cuenta en despliegues centrados en esa lengua.
+- La cuantización q8_0 altera los pesos de convolución y proyección, con diferencias de hasta 0,4 puntos de WER y transcripciones no siempre idénticas a las de F32.
 
 ## Enlaces
 

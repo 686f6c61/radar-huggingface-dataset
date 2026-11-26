@@ -5,7 +5,7 @@
   "author": "loom-fun-staging",
   "url": "https://huggingface.co/loom-fun-staging/amd-Qwen3.8-27B-Quark-AWQ-MXFP4-loom",
   "created_at": "2026-11-15T22:32:35.000Z",
-  "updated_at": "2026-11-25T08:19:03.000Z",
+  "updated_at": "2026-11-25T20:19:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

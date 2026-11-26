@@ -5,7 +5,7 @@
   "author": "Suraponn",
   "url": "https://huggingface.co/Suraponn/typhoon-ocr2-0.8b-GGUF",
   "created_at": "2026-11-09T05:05:07.000Z",
-  "updated_at": "2026-11-24T06:14:32.000Z",
+  "updated_at": "2026-11-26T04:53:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 722,
+  "downloads_30d": 762,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

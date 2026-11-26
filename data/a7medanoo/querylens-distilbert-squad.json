@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "a7medanoo/querylens-distilbert-squad",
+  "slug": "a7medanoo-querylens-distilbert-squad",
+  "author": "a7medanoo",
+  "url": "https://huggingface.co/a7medanoo/querylens-distilbert-squad",
+  "created_at": "2026-11-26T04:39:15.000Z",
+  "updated_at": "2026-11-26T04:45:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "extractive-qa",
+    "squad",
+    "pytorch",
+    "en",
+    "dataset:squad",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Question Answering",
+      "dataset": "SQuAD v1.1",
+      "metric": "Exact Match",
+      "value": 77.09
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "SQuAD v1.1",
+      "metric": "F1",
+      "value": 85.25
+    }
+  ],
+  "sources": []
+}

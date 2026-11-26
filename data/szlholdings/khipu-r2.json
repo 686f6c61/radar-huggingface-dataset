@@ -4,8 +4,8 @@
   "slug": "szlholdings-khipu-r2",
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/KHIPU-R2",
-  "created_at": "2026-08-28T16:21:00.000Z",
-  "updated_at": "2026-11-25T03:00:38.000Z",
+  "created_at": "2026-11-26T03:41:39.000Z",
+  "updated_at": "2026-11-26T03:41:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,8 +14,6 @@
     "en"
   ],
   "tags": [
-    "safetensors",
-    "qwen2",
     "license:apache-2.0",
     "region:us"
   ],
@@ -28,9 +26,7 @@
   "storage_human": "6.3 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

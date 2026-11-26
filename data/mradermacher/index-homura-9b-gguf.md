@@ -2,114 +2,96 @@
 
 ## Resumen
 
-Index-Homura-9B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Index-Homura-9B, publicado por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo entrenado por este autor, sino de una conversión del modelo base IndexTeam/Index-Homura-9B (aproximadamente 8.950 millones de parámetros, según los pesos en safetensors) a distintos niveles de cuantización, desde Q2_K hasta f16.
+Index-Homura-9B es un modelo de lenguaje de aproximadamente 8.950 millones de parámetros (8,95 B) desarrollado por IndexTeam y orientado a tareas de traducción y doblaje (dubbing). La versión aquí documentada es una cuantización estática en formato GGUF realizada por mradermacher, pensada para ejecutar el modelo en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-El modelo base está etiquetado con la tarea de traducción (pipeline `translation`) y con etiquetas de `conversational` e `index`, además del idioma inglés. Sin embargo, la model card del repositorio GGUF no incluye información sobre arquitectura, datos de entrenamiento, longitud de contexto ni capacidades detalladas, por lo que esos datos deben consultarse en la ficha del modelo original.
+El modelo se distribuye bajo licencia Apache 2.0 y declara únicamente el inglés como idioma soportado en su model card, lo que resulta llamativo para un modelo etiquetado como de traducción. La información pública disponible es escasa: no se detallan la arquitectura interna, la longitud de contexto ni los datos de entrenamiento, por lo que buena parte de las especificaciones técnicas deben marcarse como no disponibles.
 
-Su relevancia práctica es la habitual de los repositorios GGUF de mradermacher: permitir ejecutar un modelo de ~9B en hardware de consumo mediante cuantizaciones que van de 3,9 GB (Q2_K) a 18,0 GB (f16), sin necesidad de GPUs de datacenter. El repositorio ocupa 81,4 GB en total y no registra descargas ni interacciones en el momento de la consulta.
+Su relevancia actual reside en la disponibilidad de cuantizaciones GGUF listas para usar (desde Q2_K hasta f16), que permiten desplegar un modelo de casi 9 B en GPUs de consumo y en CPU, algo útil para pipelines de traducción y doblaje en local con requisitos de privacidad o de coste.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible en la informacion proporcionada |
-| Parametros totales | 8.953.803.264 (~8,95 B) |
-| Parametros activos | no aplica (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo transformer de tipo causal, inferido del uso de `transformers`; no confirmado en la información) |
+| Parámetros totales | 8.953.803.264 (8,95 B) |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | other (debe consultarse la licencia del modelo base IndexTeam/Index-Homura-9B) |
-| Formato de pesos | GGUF (el repositorio base usa safetensors) |
+| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base original en safetensors |
+| Tamaño del repositorio | 81,4 GB |
+| Librería | transformers (metadato); ejecución vía llama.cpp para GGUF |
 | Modelo base | IndexTeam/Index-Homura-9B |
-| Tarea declarada (pipeline) | translation |
-| Autor de la cuantizacion | mradermacher |
-| Tamano del repositorio | 81,4 GB |
-| Descargas / likes | 0 / 0 |
+| Pipeline declarado | translation |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo base: la model card del repositorio GGUF solo indica que se trata de «static quants of https://huggingface.co/IndexTeam/Index-Homura-9B», con los metadatos internos de la herramienta de cuantizacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`). No se especifica si el modelo original es un transformer denso, un MoE, un modelo hibrido ni que tipo de atencion utiliza. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo base IndexTeam/Index-Homura-9B: la model card de la cuantización no describe si se trata de un transformer denso, un MoE o una arquitectura híbrida, ni detalla el número de capas, cabezas de atención o dimensiones ocultas. El recuento de parámetros (8,95 B) y el uso declarado de la librería `transformers` son los únicos datos estructurales confirmados.
 
-En cuanto al proceso de cuantizacion, el autor indica que se han generado cuantizaciones estaticas y que, en el momento de publicar la ficha, no hay cuantizaciones ponderadas ni con imatrix disponibles, aunque deja abierta la posibilidad de generarlas si se solicitan en la seccion de discusiones de la comunidad. No se declara ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.) en la informacion proporcionada.
+Tampoco se documentan los datos de entrenamiento (número de tokens, composición del corpus, proporción de datos de traducción o doblaje), ni si hubo fases de ajuste fino supervisado, RLHF o DPO. La model card del repositorio GGUF se limita a describir el proceso de cuantización estática: indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicación, y que se generaron cuantizaciones estáticas a partir del modelo en formato Hugging Face (`convert_type: hf`).
 
 ## Capacidades
 
-- Traduccion: la etiqueta de pipeline del repositorio es `translation`, lo que indica que el modelo base esta orientado a tareas de traduccion; no se detallan los pares de idiomas soportados mas alla del ingles declarado.
-- Conversacion: el repositorio incluye la etiqueta `conversational`, lo que sugiere uso en dialogos multi-turno, aunque no se documenta el formato de prompt ni la plantilla de chat.
-- Generacion de texto general: previsible por tratarse de un modelo de ~9B de parametros, pero no confirmada explicitamente en la informacion disponible.
-- Razonamiento, codigo, matematicas: no disponible.
-- Vision o audio: no disponible (no se menciona ningun componente multimodal).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: solo se declara `en`; no se confirma soporte de otros idiomas.
+- Traducción: el pipeline declarado es `translation`, y las etiquetas incluyen `translation` y `dubbing`, lo que sugiere un ajuste orientado a traducción de texto y posiblemente a doblaje.
+- Generación de texto conversacional: la etiqueta `conversational` indica uso en diálogo multi-turno.
+- Doblaje: la etiqueta `dubbing` apunta a un uso previsto en flujos de localización audiovisual, aunque no se detalla si el modelo procesa audio o solo texto.
+- Idiomas: la model card declara únicamente inglés (`en`); no se confirma el par o pares de idiomas cubiertos en la traducción.
+- Tool calling / function calling: no disponible en la información.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información.
 
 ## Casos de uso
 
-- Traduccion asistida de documentacion tecnica: dado que el pipeline declarado es de traduccion, el modelo puede emplearse para convertir textos tecnicos hacia o desde el ingles; conviene validar la calidad con el modelo base antes de integrarlo en un flujo de publicacion.
-- Preprocesado de corpus en pipelines de datos: un modelo de ~9B cuantizado a Q4_K_M (5,7 GB) puede ejecutarse en una unica GPU de consumo para normalizar, traducir o reescribir grandes volumenes de texto por lotes.
-- Prototipado local de asistentes conversacionales: la etiqueta `conversational` permite experimentar con dialogos multi-turno en estaciones de trabajo sin GPU de datacenter, usando llama.cpp u Ollama.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce niveles de cuantizacion (de Q2_K a f16), lo que permite medir la degradacion de calidad frente al coste de memoria en un mismo modelo y hardware.
-- Despliegue en entornos con recursos limitados o sin conectividad: los ficheros GGUF pueden ejecutarse en CPU o en GPUs modestas, lo que habilita su uso en equipos aislados o en el borde.
-- Investigacion sobre cuantizacion extrema: las variantes Q2_K (3,9 GB) y Q3_K_S (4,4 GB) permiten estudiar el comportamiento de modelos de ~9B con compresion agresiva, comparando perplejidad y calidad de salida.
-- Generacion de contenido multilingue asistida: si se confirma el soporte de pares de idiomas, podria emplearse para redactar borradores y adaptarlos despues manualmente.
-- Integracion en aplicaciones de escritorio: el formato GGUF es compatible con LM Studio, koboldcpp y otras aplicaciones de usuario final, lo que facilita distribuir una demo local sin infraestructura de servidor.
+- Traducción de documentación técnica en local: al disponer de cuantizaciones Q4_K_M de 5,7 GB, el modelo puede ejecutarse en una GPU de consumo o en CPU para traducir lotes de documentos sin enviar datos a servicios externos, lo que encaja en entornos con requisitos de confidencialidad.
+- Localización de subtítulos para vídeo: el pipeline de traducción y la etiqueta `dubbing` lo hacen adecuado para generar versiones traducidas de guiones y subtítulos en pipelines automatizados, con revisión humana posterior.
+- Doblaje asistido: integrado en una herramienta de TTS, el modelo podría producir el texto traducido que alimenta la síntesis de voz, manteniendo el flujo completo en infraestructura propia.
+- Procesamiento por lotes en CPU: la cuantización Q2_K (3,9 GB) permite ejecutar el modelo en servidores sin GPU para tareas de traducción de baja prioridad o de gran volumen donde la latencia no es crítica.
+- Prototipado rápido de aplicaciones de traducción: con Ollama o llama.cpp, un desarrollador puede levantar un endpoint de traducción en minutos para validar una idea de producto antes de invertir en infraestructura mayor.
+- Filtrado y pre-traducción en CMS multilingües: el modelo puede generar borradores de traducción que después se revisan y publican, reduciendo el coste de traducción profesional en contenidos de alto volumen y baja criticidad.
+- Investigación sobre cuantización: las doce variantes GGUF publicadas permiten estudiar la degradación de calidad en tareas de traducción según el nivel de cuantización, comparando Q2_K frente a Q8_0 o f16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-La model card del repositorio unicamente incluye una grafica externa comparativa de perplejidad entre tipos de cuantizacion (enlazada desde nethype.de) y una referencia a las notas de Artefact2 sobre eleccion de cuantizaciones; no se aportan valores numericos de MMLU, HumanEval, GSM8K ni de tareas de traduccion.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (tamano del fichero, sin contar cache KV ni overhead del runtime): Q2_K ~3,9 GB; Q3_K_S ~4,4 GB; Q3_K_M ~4,7 GB; Q3_K_L ~5,0 GB; IQ4_XS ~5,3 GB; Q4_K_S ~5,5 GB; Q4_K_M ~5,7 GB; Q5_K_S ~6,4 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18,0 GB.
-- Al desconocerse la longitud de contexto, no es posible calcular el tamano de la cache KV; hay que anadir ese consumo al presupuesto de VRAM segun la ventana que se configure.
-- GPU de consumo: las cuantizaciones de 4 bits (Q4_K_S, Q4_K_M) caben en GPUs de 8 GB, con margen limitado; Q5 y Q6 requieren 8-10 GB; Q8_0 necesita al menos 12 GB; f16 exige 24 GB o reparto entre varias GPU.
-- GPU profesionales: A100 (40/80 GB), H100 (80 GB) y L40S (48 GB) pueden alojar cualquier cuantizacion del repositorio, incluida f16, con contexto amplio.
-- RTX 4090 (24 GB): ejecuta sin problemas hasta Q8_0 y f16 con contexto moderado; las cuantizaciones de 4 bits dejan mucho margen para contexto y lotes grandes.
-- Despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y text-generation-webui soportan GGUF de forma nativa; vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que para servir en produccion con estos frameworks suele preferirse el modelo base en safetensors.
-- Latencia y throughput: no disponible; no se han publicado mediciones en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin caché KV): aproximadamente 4 GB con Q2_K, 5,5-5,7 GB con Q4_K_S/Q4_K_M, 6,4-6,6 GB con Q5_K_S/Q5_K_M, 7,5 GB con Q6_K, 9,6 GB con Q8_0 y 18 GB con f16. Hay que añadir la memoria de la caché KV, que depende de la longitud de contexto (no disponible).
+- GPU recomendadas: para f16, una GPU de 24 GB o más (RTX 3090/4090, A100, H100). Para Q8_0, una GPU de 12-16 GB es suficiente. Para Q4_K_M, una GPU de 8 GB puede alojar los pesos, aunque el contexto disponible quedará limitado.
+- GPU de consumo: sí, cabe en tarjetas de 8 GB o más con cuantizaciones Q4 o inferiores; con Q2_K podría ejecutarse incluso en GPUs de 6 GB, a costa de calidad.
+- Despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints tipo API, aunque no se detalla el proveedor. Para el modelo base en safetensors, vLLM o TGI serían opciones, pero no se confirma su compatibilidad.
+- Latencia y throughput: no disponible en la información.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni caracteristicas del modelo base IndexTeam/Index-Homura-9B, y las busquedas web realizadas no devolvieron documentacion tecnica sobre el. Por tanto, no es posible establecer una comparacion rigurosa con alternativas de tamano similar (por ejemplo, otros modelos de ~9B) en terminos de parametros, contexto, licencia o calidad.
+No se dispone de datos de rendimiento del modelo, por lo que la comparación se limita a características estructurales. Se incluyen alternativas de tamaño similar orientadas a traducción o uso general; los datos de las alternativas provienen de conocimiento general y deben verificarse en sus respectivas model cards.
 
-Como referencia interna del propio repositorio, la unica comparacion disponible es entre las cuantizaciones del mismo modelo:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| Index-Homura-9B (esta ficha) | 8,95 B | no disponible | Apache 2.0 | GGUF, safetensors | Traducción y doblaje |
+| Gemma 2 9B | 9,2 B | 8.192 tokens | Gemma Terms | safetensors, GGUF | Uso general |
+| Mistral 7B v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Uso general |
+| NLLB-200 distilled 1.3B | 1,3 B | 512 tokens | CC-BY-NC 4.0 | safetensors | Traducción multilingüe |
 
-| Cuantizacion | Tamano (GB) | Nota del autor |
-|---|---|---|
-| Q2_K | 3,9 | sin nota |
-| Q3_K_S | 4,4 | sin nota |
-| Q3_K_M | 4,7 | calidad inferior |
-| Q3_K_L | 5,0 | sin nota |
-| IQ4_XS | 5,3 | sin nota |
-| Q4_K_S | 5,5 | rapida, recomendada |
-| Q4_K_M | 5,7 | rapida, recomendada |
-| Q5_K_S | 6,4 | sin nota |
-| Q5_K_M | 6,6 | sin nota |
-| Q6_K | 7,5 | calidad muy buena |
-| Q8_0 | 9,6 | rapida, mejor calidad |
-| f16 | 18,0 | 16 bpw, excesiva |
+La ventaja principal de Index-Homura-9B frente a las alternativas es su licencia Apache 2.0 combinada con un enfoque específico en traducción y doblaje, mientras que NLLB-200 restringe el uso comercial. Frente a Gemma 2 9B y Mistral 7B, su especialización podría ofrecer mejores resultados en traducción, pero no hay benchmarks que lo confirmen.
 
 ## Limitaciones y advertencias
 
-- La licencia declarada es «other». Al ser una cuantizacion derivada, las condiciones de uso comercial vienen determinadas por la licencia del modelo base IndexTeam/Index-Homura-9B, que no se detalla en la informacion disponible; es obligatorio revisarla antes de cualquier uso en produccion.
-- La model card no documenta la arquitectura, el contexto maximo, la plantilla de prompt ni el formato de chat, lo que dificulta la integracion fiable en aplicaciones reales sin consultar la ficha del modelo original.
-- Solo se declara el idioma ingles. Cualquier uso en castellano u otros idiomas queda sin respaldo documental y requiere validacion empirica.
-- Riesgo de alucinacion: no hay evaluaciones publicadas de fidelidad ni de tasas de error, por lo que no puede descartarse la generacion de contenido incorrecto, especialmente en traduccion de dominios especializados.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S, Q3_K_M) degradan la calidad de forma notable; el propio autor marca Q3_K_M como de «calidad inferior» y recomienda Q4_K_S o Q4_K_M para uso general.
-- No hay cuantizaciones ponderadas ni con imatrix disponibles en el momento de la publicacion, lo que puede suponer una perdida de calidad frente a versiones alternativas generadas con esas tecnicas.
-- El repositorio registra 0 descargas y 0 likes, sin historial de uso ni validacion por parte de la comunidad.
-- La fecha de creacion registrada en el repositorio es 2026-09-28, posterior a la fecha habitual de publicacion de modelos; conviene verificar la vigencia y el estado del repositorio antes de depender de el.
-- No se especifican sesgos conocidos, limitaciones de contexto ni restricciones adicionales en la informacion proporcionada.
+- Idiomas: la model card declara únicamente inglés; no se confirma qué idiomas de destino cubre la traducción, lo que limita su evaluación para pares concretos.
+- Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el procesamiento de documentos largos.
+- Sin benchmarks: no hay datos públicos de calidad de traducción (BLEU, COMET, etc.) que permitan comparar con alternativas.
+- Riesgo de alucinación: como todo modelo generativo, puede producir traducciones fluidas pero incorrectas, especialmente en dominios técnicos o con terminología especializada; se recomienda revisión humana en producción.
+- Sesgos: no se documenta ningún análisis de sesgos; al estar entrenado presumiblemente con datos web, puede heredar sesgos culturales y de género.
+- Cuantizaciones de baja calidad: el autor advierte que Q3_K_M es de "lower quality" y que Q2_K, aunque pequeño, degrada notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base IndexTeam/Index-Homura-9B, ya que la cuantización hereda sus términos.
+- Información escasa: la ausencia de documentación sobre entrenamiento y evaluación dificulta la auditoría del modelo para usos regulados.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Index-Homura-9B-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Homura-9B
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Index-Homura-9B-GGUF
-- README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafica comparativa de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre eleccion de cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que cede la infraestructura al autor: https://www.nethype.de/
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Index-Homura-9B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

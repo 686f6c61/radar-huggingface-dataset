@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "alibayram/luciole-1b-compare-gguf",
+  "slug": "alibayram-luciole-1b-compare-gguf",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/luciole-1b-compare-gguf",
+  "created_at": "2026-11-26T10:00:55.000Z",
+  "updated_at": "2026-11-26T10:01:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "luciole",
+    "tool-use",
+    "fr",
+    "en",
+    "base_model:OpenLLM-France/Luciole-1B-Instruct-1.1",
+    "base_model:quantized:OpenLLM-France/Luciole-1B-Instruct-1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1581453312,
+  "parameters_human": "1.58B",
+  "storage_bytes": 3368240512,
+  "storage_human": "3.4 GB",
+  "context_length": 131072,
+  "base_model": "OpenLLM-France/Luciole-1B-Instruct-1.1, alibayram/Luciole-1B-Instruct-1.1-mlx-8bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

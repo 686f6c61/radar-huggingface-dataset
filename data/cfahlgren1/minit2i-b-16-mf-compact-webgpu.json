@@ -24,13 +24,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 928982800,
-  "storage_human": "929 MB",
+  "storage_bytes": 313137423,
+  "storage_human": "313 MB",
   "context_length": null,
   "base_model": "lox9973/MiniT2I-B-16-MF-compact",
   "formats": [

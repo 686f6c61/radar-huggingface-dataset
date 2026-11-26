@@ -4,16 +4,14 @@
   "slug": "szlholdings-szl-blocked",
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/szl-blocked",
-  "created_at": "2026-06-24T16:45:09.000Z",
-  "updated_at": "2026-11-16T20:19:58.000Z",
+  "created_at": "2026-11-26T03:41:59.000Z",
+  "updated_at": "2026-11-26T03:42:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": "kernels",
   "languages": [],
   "tags": [
-    "szl-holdings",
-    "doi:10.5281/zenodo.24239896",
     "license:apache-2.0",
     "region:us"
   ],

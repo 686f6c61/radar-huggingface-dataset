@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "nokkela-ai/clef-cybersecurity",
+  "slug": "nokkela-ai-clef-cybersecurity",
+  "author": "nokkela-ai",
+  "url": "https://huggingface.co/nokkela-ai/clef-cybersecurity",
+  "created_at": "2026-11-26T08:01:20.000Z",
+  "updated_at": "2026-11-26T08:04:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "cybersecurity",
+    "prompt-injection",
+    "data-exfiltration",
+    "clef",
+    "custom-code",
+    "safetensors",
+    "text-classification",
+    "en",
+    "de",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:adapter:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2199857735,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": "Cloudflare/clef-flash, TextCortex/clef-cybersecurity",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt-injection detection",
+      "dataset": "Internal English prompt-injection regression (510 cases)",
+      "metric": "AUROC",
+      "value": 0.9925335260826772
+    },
+    {
+      "task": "Prompt-injection detection",
+      "dataset": "Internal German prompt-injection regression (510 cases)",
+      "metric": "AUROC",
+      "value": 0.9743940698818898
+    }
+  ],
+  "sources": []
+}

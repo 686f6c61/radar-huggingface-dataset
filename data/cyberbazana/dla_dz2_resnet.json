@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "cyberbazana/dla_dz2_resnet",
+  "slug": "cyberbazana-dla_dz2_resnet",
+  "author": "cyberbazana",
+  "url": "https://huggingface.co/cyberbazana/dla_dz2_resnet",
+  "created_at": "2026-11-26T09:26:19.000Z",
+  "updated_at": "2026-11-26T09:26:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7.6. Residual Networks (ResNet) — Dive into Deep Learning 0.17.6 ...",
+      "url": "http://go/v1/AfSYZXlCuogDawf7ZAG8dhhLmxD6liM6VEGE4pv2g3RcXLmBsgP1I_ObxBz3VWsOYjWnz5zd-H3J1u22m9Gvkl5ttq8LLKwvQX1o8QLWvaN1-WSCWMqMbdXz08hOYnG1Jw-Y7BfkGLGtTJhVWTupd-8zmAoJiqbb-9_aFC8GcAU16Xj61hOjFrH5VxPOlZu8MVTv5SyuBRkEd4YtiJMlDhuFFGn3D17XhoK79-O6BK2fDw",
+      "snippet": "GoogLeNet uses four modules made up of Inception blocks. However, ResNet uses four modules made up of residual blocks, each of which uses several residual blocks with the same number of output channels. The number of channels in the first module is the same as the number of input channels."
+    }
+  ]
+}

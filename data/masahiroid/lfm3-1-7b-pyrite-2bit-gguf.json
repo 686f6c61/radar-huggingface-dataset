@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF",
   "created_at": "2026-10-30T15:42:35.000Z",
-  "updated_at": "2026-10-30T15:42:55.000Z",
+  "updated_at": "2026-11-25T14:05:23.000Z",
   "license": "liquid-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

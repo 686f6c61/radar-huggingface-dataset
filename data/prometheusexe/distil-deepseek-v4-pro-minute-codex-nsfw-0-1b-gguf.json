@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "pastdc/Distil-Deepseek.V4.Pro.Minute.Codex.NSFW-0.1B-GGUF",
+  "renamed_at": "2026-11-26T05:14:14.402Z",
   "benchmarks": [],
   "sources": []
 }

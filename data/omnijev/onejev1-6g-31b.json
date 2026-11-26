@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - OmniJev/OneJev: A multimodal System One decision model that ...",
-      "url": "https://github.com/OmniJev/OneJev",
-      "snippet": "🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass. - OmniJev/OneJev"
-    },
-    {
-      "title": "OneJev1.6 - a OmniJev Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/OmniJev/onejev16",
-      "snippet": "OmniJev/OneJev1.6-27B Image-Text-to-Text • 27B•Updated about 2 hours ago Upvote - Sort: Collection"
-    }
-  ]
+  "sources": []
 }

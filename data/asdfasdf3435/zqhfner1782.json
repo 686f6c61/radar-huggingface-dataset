@@ -5,7 +5,7 @@
   "author": "asdfasdf3435",
   "url": "https://huggingface.co/asdfasdf3435/zqhfner1782",
   "created_at": "2026-11-22T09:52:51.000Z",
-  "updated_at": "2026-11-22T09:58:21.000Z",
+  "updated_at": "2026-11-26T06:53:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 51,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

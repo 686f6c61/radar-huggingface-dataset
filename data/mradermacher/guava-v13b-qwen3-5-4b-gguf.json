@@ -48,21 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "gratis online Schieber jassen",
-      "url": "https://www.schieber.ch/",
-      "snippet": "Die beliebteste schweizer Jassplattform! Schieber, Coiffeurjass, Differenzeler und das einzgartige Jassduell."
-    },
-    {
-      "title": "Schieber Jassportal",
-      "url": "https://schieber.ch/index.php?login",
-      "snippet": "Die beliebteste schweizer Jassplattform! Schieber, Coiffeurjass, Differenzeler und das einzgartige Jassduell."
-    },
-    {
-      "title": "Jass Turnier",
-      "url": "https://jass20.schieber.ch/",
-      "snippet": "Bitte loggen Sie sich ein Auswahl der Kartenvariante: französich"
-    }
-  ]
+  "sources": []
 }

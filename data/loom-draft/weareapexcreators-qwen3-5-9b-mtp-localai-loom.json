@@ -5,7 +5,7 @@
   "author": "loom-draft",
   "url": "https://huggingface.co/loom-draft/weareapexcreators-Qwen3.5-9B-MTP-LocalAI-loom",
   "created_at": "2026-11-19T14:47:40.000Z",
-  "updated_at": "2026-11-24T19:20:50.000Z",
+  "updated_at": "2026-11-26T00:03:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

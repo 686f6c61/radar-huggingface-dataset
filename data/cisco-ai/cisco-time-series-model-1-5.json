@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "cisco-ai/cisco-time-series-model-1.5",
+  "slug": "cisco-ai-cisco-time-series-model-1-5",
+  "author": "cisco-ai",
+  "url": "https://huggingface.co/cisco-ai/cisco-time-series-model-1.5",
+  "created_at": "2026-11-24T23:35:13.000Z",
+  "updated_at": "2026-11-26T04:28:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ctsm_1p5",
+    "ctsm-1.5",
+    "time-series",
+    "time-series-forecasting",
+    "forecasting",
+    "foundation-model",
+    "zero-shot",
+    "observability",
+    "seasonality",
+    "transformers",
+    "foundation models",
+    "pretrained models",
+    "time series foundation models",
+    "forecasts",
+    "arxiv:2511.19841",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 254315920,
+  "parameters_human": "254.3M",
+  "storage_bytes": 1017708936,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Infrastructure, Secure Networking, and Software Solutions - Cisco",
+      "url": "https://www.cisco.com/",
+      "snippet": "Cisco is a worldwide technology leader powering an inclusive future for all. Learn more about our products, services, solutions, and …Read more"
+    },
+    {
+      "title": "Cisco Networking Academy: Learn Cybersecurity, Python & More",
+      "url": "https://www.netacad.com/",
+      "snippet": "Cisco Networking Academy is a skills-to-jobs program shaping the future workforce. Since 1997, we have impacted over 20 million …Read more"
+    },
+    {
+      "title": "Cisco Networking Academy : apprenez la cybersécurité, Python et …",
+      "url": "https://www.netacad.com/fr/",
+      "snippet": "Cisco Networking Academy est un programme de formation professionnelle qui façonne la main-d'œuvre de demain. Depuis 1997, …Read more"
+    },
+    {
+      "title": "Infrastructure IA, réseau sécurisé et solutions logiciels - Cisco",
+      "url": "https://www.cisco.com/site/fr/fr/index.html",
+      "snippet": "Cisco est un leader technologique mondial qui favorise un avenir inclusif pour tous. Découvrez nos produits, services, solutions et …Read more"
+    },
+    {
+      "title": "Cisco - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cisco",
+      "snippet": "History 1984–1995 Cisco's first router, the Advanced Gateway Server (AGS) router (1986) Cisco Systems was founded in December …Read more"
+    }
+  ]
+}

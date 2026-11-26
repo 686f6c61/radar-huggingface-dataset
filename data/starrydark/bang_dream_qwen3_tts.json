@@ -68,16 +68,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "starrydark (Yangyi Liu) - Hugging Face",
-      "url": "https://huggingface.co/starrydark",
-      "snippet": "AI & ML interests ... Recent Activity liked a dataset 6 days ago ... liked a Space 8 days ago"
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
-      "url": "https://github.com/QwenLM/Qwen3-TTS",
-      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
-    }
-  ]
+  "sources": []
 }

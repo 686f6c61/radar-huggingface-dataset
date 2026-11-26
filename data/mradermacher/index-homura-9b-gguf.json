@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Tài liệu: Đăng nhập",
-      "url": "https://docs.google.com/document/create?hl=vi",
-      "snippet": "Truy cập Google Tài liệu bằng Tài khoản Google cá nhân hoặc tài khoản Google Workspace (dành cho công việc)."
-    },
-    {
-      "title": "Google Docs: Sign-in",
-      "url": "https://docs.google.com/document/u/0/?pli=1",
-      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
-    },
-    {
-      "title": "Google Docs : connexion",
-      "url": "https://docs.google.com/document/create?hl=fr",
-      "snippet": "Accédez à Google Docs avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
-    },
-    {
-      "title": "Google Slides: Sign-in",
-      "url": "https://docs.google.com/presentation/u/0/",
-      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
-    },
-    {
-      "title": "Google Drive: Sign-in",
-      "url": "https://docs.google.com/templates",
-      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
-    }
-  ]
+  "sources": []
 }

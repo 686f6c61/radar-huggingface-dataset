@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 222,
+  "downloads_30d": 224,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,16 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "eval-apply/GLM-5.3-Flash_silvann_tq_D8E4 · Hugging Face",
-      "url": "https://huggingface.co/eval-apply/GLM-5.3-Flash_silvann_tq_D8E4",
-      "snippet": "GLM-5.3-Flash_silvann_tq_D8E4 GLM 5.3 Flash by Z.AI, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every weight matrix rotated along its input axis with a blocked Hadamard-and-signs rotation and quantised with a per-row scale (TurboQuant); norms, routers, the hyper-connection maps and other small tensors kept lossless; the embedding and head at ..."
-    },
-    {
-      "title": "eval-apply/silvann_tq_D8E4_glm_5.3_flash · Hugging Face",
-      "url": "https://d6108366.hf-mirror.com/eval-apply/silvann_tq_D8E4_glm_5.3_flash",
-      "snippet": "silvann_tq_D8E4_glm_5.3_flash GLM 5.3 Flash by Z.AI, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every weight matrix rotated along its input axis with a blocked Hadamard-and-signs rotation and quantised with a per-row scale (TurboQuant); norms, routers, the hyper-connection maps and other small tensors kept lossless; the embedding and head at ..."
-    }
-  ]
+  "sources": []
 }

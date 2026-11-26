@@ -2,90 +2,91 @@
 
 ## Resumen
 
-collector-mtg-embedder-dinov3-small es un modelo publicado en Hugging Face por el usuario matteot11. Por el identificador se deduce que se trata de un encoder de visión derivado de la familia DINOv3 de Meta en su variante «small», orientado a generar representaciones vectoriales (embeddings) de cartas de Magic: The Gathering para un sistema de coleccionismo. El repositorio no incluye model card técnica: únicamente contiene los metadatos de licencia (`other`, con nombre `dinov3-license` y enlace a la licencia de DINOv3 de Meta).
+Collector MTG Embedder DINOv3 Small es un modelo de extracción de características visuales derivado de DINOv3 ViT-S/16, ajustado por el usuario matteot11 para generar embeddings de imágenes de cartas coleccionables de Magic: The Gathering y Pokémon. Su función no es clasificar ni identificar directamente una carta concreta, sino producir vectores normalizados L2 que permitan búsquedas por similitud (nearest-neighbor) contra un catálogo local de cartas previamente indexado.
 
-El modelo no registra descargas ni likes, no declara pipeline y no tiene campos de idiomas ni de formato de pesos. Se encuentra, por tanto, en un estado embrionario o de uso estrictamente privado. Su relevancia potencial es de nicho: si funciona como encoder visual de cartas, permitiría búsqueda por similitud, deduplicación de inventario y catalogación automática de colecciones a partir de fotografías.
+El modelo parte de `facebook/dinov3-vits16-pretrain-lvd1689m`, un ViT-S/16 con parches de 16x16 píxeles y entrada de 224x224, y se ajusta con vistas aumentadas emparejadas de imágenes de referencia de ambos juegos. Con 21,6 millones de parámetros y un repositorio de 0,3 GB, es un modelo ligero pensado para ejecutarse en CPU o GPU de consumo dentro de un pipeline de recuperación visual.
 
-Toda la información técnica de esta ficha procede del identificador del repositorio y de los metadatos de licencia. Cualquier afirmación sobre arquitectura interna, datos de entrenamiento o rendimiento se marca explícitamente como no disponible o como inferencia no confirmada por el autor.
+Su relevancia actual radica en el auge de herramientas de catalogación y escaneo de colecciones de cartas: un embedder especializado permite construir sistemas de búsqueda visual sobre catálogos locales sin depender de servicios de visión generalistas, que rinden peor en dominios visuales muy concretos como el arte de cartas coleccionables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (inferido del identificador: encoder de visión tipo ViT de la familia DINOv3, variante small) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible (en encoders de visión la entrada se define por resolución de imagen, no por contexto de texto) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (si opera sobre imágenes de cartas, el texto reconocido sería el impreso en ellas, mayoritariamente en inglés) |
-| Licencia | `other`, con nombre `dinov3-license` (licencia propia de DINOv3 de Meta) |
-| Formato de pesos | no disponible |
+| Arquitectura | DINOv3 ViT-S/16 (Vision Transformer, parches 16x16) |
+| Parametros totales | 21.596.544 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen 224x224 px) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en precisión original) |
+| Idiomas soportados | no disponible (modelo visual; el texto en cartas no se procesa como lenguaje) |
+| Licencia | other (DINOv3 License de Meta) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, el número de parámetros, los datos de entrenamiento ni el procedimiento de ajuste. El único indicio es el identificador del repositorio, que apunta a un backbone DINOv3 en su variante pequeña, preentrenado por Meta con aprendizaje autosupervisado sobre imágenes y posteriormente adaptado, presumiblemente mediante fine-tuning contrastivo, a la tarea de embeddings de cartas de Magic: The Gathering. Esta descripción es una inferencia y no está confirmada por el autor.
+La arquitectura es un Vision Transformer pequeño (ViT-S/16) de DINOv3, con 21,6 millones de parámetros y entrada de 224x224 píxeles. El embedding se obtiene del token CLS de la última capa (`last_hidden_state[:, 0]`) y se normaliza L2 en el flujo de recuperación. El modelo base fue preentrenado por Meta con el pipeline DINOv3 sobre el dataset LVD-1689M.
 
-DINOv3 es una familia de modelos de visión que produce representaciones densas de alta calidad sin necesidad de etiquetas, lo que encaja con un caso de uso de recuperación visual donde no existe un corpus etiquetado de gran tamaño. Aun así, no hay en el repositorio ningún detalle sobre el dataset de cartas utilizado, la función de pérdida, el número de pasos de entrenamiento, la resolución de entrada ni si se aplicó algún tipo de destilación o ajuste con pares positivos y negativos.
+El ajuste fino (versión v2) se realizó con vistas aumentadas emparejadas de imágenes de referencia de MTG y Pokémon. Los lotes de entrenamiento conjunto contienen exactamente 16 cartas de cada juego (batch size 32), y la pérdida contrastiva se calcula por separado para cada juego, de modo que los ejemplos de un juego no se usan como negativos de recuperación del otro. Los aumentos incluyen cambios de brillo, contraste y color, rotaciones pequeñas, desenfoque y distorsión de perspectiva. La configuración fue: 5 épocas, batch size 32, learning rate 1e-5, temperatura 0.07, cero workers en el data loader, semilla 42 y una división de validación del 10% por juego. El flujo completo está disponible en el repositorio Open Card Collector.
 
 ## Capacidades
 
-- Generación de embeddings de imagen: la capacidad inferible del identificador es proyectar una imagen de carta a un vector denso comparable por similitud (por ejemplo, coseno).
-- Búsqueda visual por similitud: recuperar cartas visualmente parecidas a una consulta.
-- Deduplicación y agrupamiento: agrupar imágenes de la misma carta capturadas en condiciones distintas.
-- No hay evidencia de soporte de tool calling, function calling ni de comportamiento agéntico.
-- No hay evidencia de capacidades de generación de texto, razonamiento, código, matemáticas, audio ni vídeo.
-- Capacidades multilingües: no disponible.
-- No se documenta ningún modo especial (thinking mode, razonamiento extendido, etc.).
+- Extracción de embeddings visuales de imágenes de cartas de Magic: The Gathering y Pokémon.
+- Recuperación por similitud (nearest-neighbor) contra un catálogo local de cartas indexado previamente.
+- Robustez parcial a variaciones de iluminación, contraste, color, rotación leve, desenfoque y perspectiva gracias a los aumentos de entrenamiento.
+- Procesamiento de imágenes RGB a 224x224 píxeles mediante `AutoProcessor`.
+- Integración con Hugging Face Transformers (`AutoModel`, `AutoProcessor`).
+- No realiza clasificación directa ni identificación autoritativa de impresiones de cartas.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto.
+- No dispone de capacidades multilingües ni de procesamiento de texto.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipótesis de aplicación coherentes con un encoder visual de cartas de MTG. No están respaldados por documentación del autor y deben validarse empíricamente antes de usarse en producción.
-
-- Búsqueda visual en catálogos de tienda: el usuario fotografía una carta y el sistema recupera las más similares de un inventario indexado mediante similitud de embeddings.
-- Catalogación automática de lotes: procesar fotografías de montones de cartas y asignar cada una a una referencia del catálogo a partir del vecino más cercano en el espacio de embeddings.
-- Detección de duplicados en una colección: indexar todas las cartas del usuario y marcar pares con similitud superior a un umbral para evitar compras repetidas.
-- Recomendación de cartas visualmente similares: sugerir alternativas de arte, edición o ilustrador para completar colecciones temáticas.
-- Control de calidad en venta de singles: verificar que la carta fotografiada coincide con la referencia publicada, detectando confusiones de edición o reimpresiones.
-- Organización de inventario para tiendas: clustering no supervisado para agrupar cartas por expansión o estilo visual y facilitar la colocación física.
-- Moderación de listados de marketplace: comparar la imagen subida por el vendedor con la referencia oficial para detectar anuncios fraudulentos o imágenes de baja calidad.
+- Catalogación de colecciones personales: el usuario fotografía sus cartas y el sistema calcula el embedding de cada imagen para buscar la carta más parecida en un catálogo local, agilizando el inventario de colecciones grandes.
+- Escaneo masivo en aplicaciones móviles: al ser un modelo de 21,6 M de parámetros y 0,3 GB, puede ejecutarse en dispositivos con recursos limitados o en servidores modestos para procesar lotes de imágenes de cartas.
+- Verificación de listados en marketplaces: comparar la imagen de una carta publicada con el catálogo de referencia para detectar posibles discrepancias o duplicados antes de publicar.
+- Construcción de motores de búsqueda visual sobre catálogos de TCG: indexar embeddings de un catálogo completo (Scryfall, TCGdex) y ofrecer búsqueda por imagen al usuario final.
+- Asistencia en la organización de torneos y tiendas: identificar rápidamente cartas sueltas en inventarios físicos mediante foto y recuperación contra el catálogo, con revisión humana del resultado.
+- Investigación en recuperación visual de dominio específico: servir como base para experimentos de fine-tuning contrastivo sobre otros dominios de imágenes con estructura similar (cartas, cromos, etiquetas).
+- Preprocesado en pipelines de datos: generar embeddings normalizados para clustering, deduplicación o análisis de similitud entre cartas de una misma colección.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
-
-El repositorio no incluye métricas de recuperación (recall@k, mAP), ni resultados en tareas estándar de visión como ImageNet, ni comparaciones con otros encoders. Los resultados de la búsqueda web asociada no contienen información relacionada con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible. No se conoce el número de parámetros ni el formato de pesos publicado.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no confirmada. Si se tratase de un ViT de escala «small» (decenas de millones de parámetros), sería ejecutable en GPU de consumo e incluso en CPU, pero esto es una estimación derivada de la nomenclatura y no un dato verificado.
-- Opciones de despliegue: no disponible. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con librerías de embeddings.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para el modelo (21,6 M de parámetros); en la práctica, el consumo depende del tamaño de lote y de las imágenes de entrada.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo es tan pequeño que la GPU no es imprescindible.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: Hugging Face Transformers (referencia oficial), con posibilidad de exportación a ONNX u otros runtimes; no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa cuantitativa. El repositorio no publica parámetros, contexto, resultados ni formatos, y no se han identificado en la búsqueda modelos directamente comparables dentro del mismo nicho (embeddings de cartas de Magic: The Gathering).
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
+| Modelo | Parámetros | Entrada | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| collector-mtg-embedder-dinov3-small | no disponible | no disponible | dinov3-license | Hugging Face, 0 descargas | no disponible |
-| DINOv3 (familia base de Meta) | no disponible en la informacion proporcionada | no aplica | dinov3-license | Pesos publicados por Meta | no disponible |
-| Encoders de visión autosupervisados tipo CLIP o SigLIP | no disponible en la informacion proporcionada | no aplica | licencias propias de cada proyecto | Ampliamente disponibles | no disponible |
+| matteot11/collector-mtg-embedder-dinov3-small | 21,6 M | 224x224 px | Cartas MTG y Pokémon | DINOv3 License (other) | Hugging Face |
+| facebook/dinov3-vits16-pretrain-lvd1689m | no disponible | 224x224 px | Imágenes generales | DINOv3 License | Hugging Face |
+| CLIP ViT-B/32 (referencia generalista) | no disponible | 224x224 px | Imagen-texto general | MIT (según versión) | Hugging Face |
+
+La comparación concreta con otros embedders especializados en cartas coleccionables no está disponible en la información proporcionada. Frente al modelo base DINOv3, este ajuste aporta especialización en el dominio de cartas TCG a costa de perder generalidad; frente a CLIP, no ofrece alineación imagen-texto, por lo que no sirve para búsqueda por descripción textual.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay información sobre arquitectura, datos, sesgos ni evaluación. Cualquier uso en producción exige una validación propia previa.
-- Riesgo de alucinación no evaluable: al ser presumiblemente un modelo de embeddings, no genera texto, pero puede asignar alta similitud a cartas visualmente parecidas y semánticamente distintas (por ejemplo, mismo arte con marco diferente).
-- Sesgos desconocidos: no se documenta la composición del dataset de ajuste, por lo que puede estar sesgado hacia determinadas expansiones, idiomas de impresión o condiciones de iluminación.
-- Limitaciones de idioma: no declaradas. Si el encoder depende de texto presente en la carta, las ediciones no inglesas podrían representarse peor.
-- Licencia: se aplica la `dinov3-license` de Meta, que no es una licencia de código abierto estándar. Es imprescindible revisar sus términos antes de cualquier uso comercial, ya que las licencias propias de modelos de Meta suelen incluir restricciones de uso, cláusulas de atribución y límites de escala.
-- Repositorio sin mantenimiento aparente: 0 descargas, 0 likes y una única versión publicada. No hay garantía de soporte, actualizaciones ni corrección de errores.
-- Fecha de creación registrada como 2026-09-21, posterior a la fecha habitual de consulta; conviene verificar la integridad de los metadatos del repositorio.
-- No se declara el formato de pesos, por lo que la reproducibilidad del despliegue no está garantizada.
+- El modelo no clasifica ni identifica de forma autoritativa una carta o impresión concreta; solo produce embeddings para recuperación por similitud.
+- La calidad de recuperación puede degradarse con reflejos, desenfoque de movimiento, oclusión, baja resolución, recortes agresivos, impresiones poco comunes o catálogos de referencia que no contengan la carta objetivo.
+- El resultado de la recuperación debe ser revisado por un usuario antes de tomar decisiones.
+- Entrenado exclusivamente para MTG y Pokémon; no es un modelo de reconocimiento visual general.
+- No procesa texto de las cartas; los idiomas no aplican como capacidad del modelo.
+- Licencia DINOv3 License de Meta: el uso, modificación y redistribución deben cumplir sus términos, que pueden incluir restricciones adicionales para uso comercial.
+- El repositorio no distribuye imágenes de entrenamiento, datos de catálogo ni embeddings derivados; los derechos de las imágenes pertenecen a sus titulares (Scryfall, TCGdex, Wizards of the Coast, Nintendo, The Pokémon Company).
+- No hay datos publicados de benchmarks que permitan estimar la precisión de recuperación en producción.
+- Riesgo de sesgo hacia las distribuciones visuales de los catálogos de referencia usados en el entrenamiento (Scryfall y TCGdex).
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/matteot11/collector-mtg-embedder-dinov3-small
-- Licencia DINOv3 de Meta: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
-- Resultados de la búsqueda web: no contienen enlaces relevantes al modelo (únicamente páginas corporativas de Microsoft sin relación con la ficha).
+- Modelo en Hugging Face: https://huggingface.co/matteot11/collector-mtg-embedder-dinov3-small
+- Modelo base: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
+- Repositorio del flujo de entrenamiento (Open Card Collector): https://github.com/matteot11/open-card-collector
+- Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
+- Scryfall (fuente de imágenes MTG): https://scryfall.com
+- TCGdex (fuente de imágenes Pokémon): https://www.tcgdex.net

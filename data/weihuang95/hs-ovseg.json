@@ -5,7 +5,7 @@
   "author": "WeiHuang95",
   "url": "https://huggingface.co/WeiHuang95/HS-OVSeg",
   "created_at": "2026-11-24T15:33:47.000Z",
-  "updated_at": "2026-11-24T15:36:01.000Z",
+  "updated_at": "2026-11-25T08:50:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "arxiv:2611.32518",
     "remote-sensing",
     "open-vocabulary-segmentation",
     "lora",

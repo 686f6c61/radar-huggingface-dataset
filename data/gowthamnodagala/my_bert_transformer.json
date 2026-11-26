@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "GowthamNodagala/my_bert_transformer",
+  "slug": "gowthamnodagala-my_bert_transformer",
+  "author": "GowthamNodagala",
+  "url": "https://huggingface.co/GowthamNodagala/my_bert_transformer",
+  "created_at": "2026-11-26T10:48:24.000Z",
+  "updated_at": "2026-11-26T11:01:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966965,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

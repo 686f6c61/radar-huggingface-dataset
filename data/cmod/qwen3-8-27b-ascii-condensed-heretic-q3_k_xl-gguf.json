@@ -5,7 +5,7 @@
   "author": "cmod",
   "url": "https://huggingface.co/cmod/Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF",
   "created_at": "2026-11-13T02:45:45.000Z",
-  "updated_at": "2026-11-16T20:12:39.000Z",
+  "updated_at": "2026-11-26T02:29:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1298,
+  "downloads_30d": 1317,
   "trending_score": 0,
   "parameters": 26090566656,
   "parameters_human": "26.09B",

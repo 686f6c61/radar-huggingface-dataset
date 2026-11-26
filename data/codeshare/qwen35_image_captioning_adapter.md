@@ -2,85 +2,90 @@
 
 ## Resumen
 
-`codeShare/qwen35_image_captioning_adapter` es un repositorio de adaptadores publicado en Hugging Face por el usuario `codeShare`. El nombre sugiere un adaptador (probablemente de tipo LoRA o similar) orientado a la generacion de descripciones de imagenes (image captioning) sobre un modelo base de la familia Qwen 3.5. Sin embargo, esta inferencia se basa unicamente en el nombre del repositorio, ya que la informacion disponible no incluye model card, pipeline declarado ni documentacion tecnica.
+El adaptador `codeShare/qwen35_image_captioning_adapter` es un ajuste fino mediante LoRA (PEFT) sobre el modelo multimodal Qwen 3.5 de 4B en su variante "abliterated" publicada por DreamFast. Su propósito es generar descripciones de imágenes en lenguaje natural de forma compacta y rápida, orientadas a la creación de datasets de entrenamiento para modelos de imagen-a-texto y de generación de imágenes. Lo desarrolla el usuario independiente codeShare y se distribuye con licencia Apache 2.0.
 
-El repositorio tiene un tamano de 0,3 GB y contiene pesos en formato `safetensors`. No se han publicado datos sobre arquitectura, numero de parametros, contexto, licencia ni idiomas soportados. El pipeline no esta declarado y el repositorio no registra descargas en el momento de la consulta.
+El problema que aborda es la preparación de datasets de captioning: en lugar de etiquetar manualmente miles de imágenes, el adaptador produce descripciones directas y sin preámbulos que pueden usarse como pares imagen-texto en pipelines de entrenamiento de LoRA. Según la model card, el adaptador se entrenó sobre 10 000 imágenes procedentes de Sankaku Complex y puede procesar lotes de unas 30-40 imágenes en una sola GPU T4 con un tiempo medio de 6-7 segundos por caption.
 
-Dada la ausencia de model card y de resultados de benchmarks, esta ficha recoge los pocos datos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier uso en produccion requeriria una evaluacion directa del repositorio y del modelo base al que se aplica.
+Es relevante por su enfoque práctico de "captioning on-the-fly": combina un modelo base de 4B parámetros con un adaptador ligero que cabe en GPUs de consumo y permite generar datasets dinámicamente. No obstante, se trata de un experimento inicial, con un dataset generado automáticamente mediante captioning y resumen por el propio modelo base, lo que limita la profundidad de las descripciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador sobre modelo base Qwen 3.5, segun el nombre del repo) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | LoRA (PEFT) sobre transformer multimodal Qwen 3.5 (modelo base: DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark) |
+| Parametros totales | no disponible (adaptador LoRA; el modelo base es de 4B) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 0,3 GB |
-| Pipeline declarado | no disponible |
-| Descargas | 0 |
-| Likes | 1 |
-| Fecha de creacion | 2026-11-14 |
-| Ultima actualizacion | 2026-11-14 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del adaptador ni sobre el modelo base concreto al que se aplica. El nombre del repositorio (`qwen35_image_captioning_adapter`) apunta a un adaptador para captioning de imagenes sobre Qwen 3.5, pero no se dispone de model card, configuracion, ni detalles sobre el dataset de entrenamiento, el numero de tokens utilizados o si se aplicaron tecnicas de RLHF o DPO.
+El adaptador es un LoRA entrenado sobre el modelo base multimodal Qwen 3.5 de 4B en su variante abliterated de DreamFast. El entrenamiento se realizó sobre 10 000 imágenes procedentes de la base de datos de Sankaku Complex, con 13 000 pasos durante 24 horas en 2 GPUs NVIDIA T4 (Kaggle). La model card menciona también un conjunto inicial de 2 000 imágenes en la tabla de entrenamiento, lo que sugiere una ampliación posterior del dataset.
 
-Tampoco se documenta si el adaptador modifica solo capas de atencion, capas MLP o si introduce modulos especificos para el procesamiento visual. El tamano del repositorio (0,3 GB) es compatible con pesos de adaptador de bajo rango, pero esta afirmacion no puede confirmarse sin inspeccionar los ficheros.
+La metodología de preparación del dataset consistió en un proceso de captioning y resumen: primero el propio modelo base Qwen 3.5 generó descripciones de las imágenes y después el mismo modelo las resumió. El adaptador se entrenó sobre esos resúmenes en lugar de las respuestas originales, con el objetivo de eliminar preámbulos y texto introductorio verboso y producir descripciones en lenguaje natural más directas y compactas. La model card aclara explícitamente que este proceso no añade nueva comprensión visual al modelo subyacente, sino que le enseña a producir una versión más concisa de sus capacidades de captioning existentes. Los datos de entrenamiento combinan captions generados con Gemini Flash y JoyCaption beta, además de prompts de publicaciones de Civitai.
 
 ## Capacidades
 
-- Generacion de descripciones de imagenes (captioning): capacidad inferida del nombre del repositorio, no confirmada por documentacion.
-- No hay evidencia publicada sobre soporte de tool calling, function calling ni agentes.
-- No hay evidencia publicada sobre capacidades multilingues.
-- No hay evidencia publicada sobre modos especiales (thinking mode, vision nativa, audio).
-- No hay evidencia publicada sobre razonamiento, codigo o matematicas.
+- Generación de descripciones de imágenes en lenguaje natural conciso (image-to-text).
+- Producción de captions sin preámbulos ni texto introductorio, orientados a entrenamiento.
+- Procesamiento por lotes: según la model card, lotes de 30-40 imágenes en una T4.
+- Generación de pares imagen-texto para datasets de entrenamiento de modelos de difusión y de image-to-text.
+- Integración en pipelines de preparación de datasets on-the-fly.
+- Capacidades multimodales heredadas del modelo base Qwen 3.5 4B.
+- No se documenta soporte de tool calling, agentes, thinking mode ni audio en la información disponible.
 
 ## Casos de uso
 
-- Generacion automatica de alt-text para accesibilidad web: si el adaptador funciona como su nombre indica, podria generar descripciones textuales de imagenes para portfolios, tiendas o blogs, mejorando la accesibilidad. Requiere validacion previa del adaptador y del modelo base.
-- Etiquetado de datasets de imagen para entrenamiento: el adaptador podria emplearse para pre-animar datasets con captions antes de una revision humana, reduciendo el coste de anotacion manual.
-- Indexacion y busqueda semantica de imagenes: generar captions que se almacenen en un indice textual permitiria busquedas por lenguaje natural sobre catalogos de imagenes.
-- Moderacion de contenido asistida: los captions podrian servir como señal auxiliar para clasificar imagenes en pipelines de moderacion, siempre con supervision humana.
-- Automatizacion de metadatos en gestores de activos digitales (DAM): generacion de descripciones para fototecas corporativas, facilitando la busqueda interna.
-- Prototipado de productos de vision-lenguaje: util como componente de bajo coste para experimentar con pipelines de captioning antes de pasar a modelos mayores.
-- Generacion de descripciones para redes sociales o e-commerce: captioning automatico de productos, con revision editorial posterior.
-
-En todos los casos, la ausencia de model card y benchmarks obliga a una evaluacion empirica antes de cualquier uso en produccion.
+- Preparación de datasets para entrenamiento de LoRA: el adaptador genera captions de imágenes descargadas de bases de datos como Sankaku y produce pares imagen-texto listos para entrenar adaptadores de generación de imágenes, reduciendo la necesidad de etiquetado manual.
+- Captioning por lotes en GPU de consumo: con una T4 de 16 GB se pueden procesar lotes de 30-40 imágenes a 6-7 segundos por imagen, lo que permite etiquetar miles de imágenes en pocas horas en hardware asequible.
+- Generación dinámica de datasets durante el entrenamiento: la model card propone integrar la generación de captions en la propia sesión de entrenamiento de un modelo de imagen, descargando imágenes candidatas, generando captions y entrenando un LoRA de forma iterativa.
+- Enriquecimiento de metadatos de archivos de imágenes: generación automática de descripciones en lenguaje natural para catalogar y buscar imágenes en colecciones locales.
+- Prototipado rápido de pipelines multimodal: al ser un adaptador ligero sobre un modelo de 4B, permite experimentar con captioning en notebooks de Colab (el repositorio incluye `qwen35_sankaku_captioning.ipynb`) sin infraestructura dedicada.
+- Investigación en captioning compacto: sirve como punto de partida para estudiar la relación entre concisión y calidad de captions en datasets generados automáticamente.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
+Los únicos datos de rendimiento publicados son de inferencia: en una NVIDIA T4 (16 GB), aproximadamente 40 imágenes por lote con un tiempo medio de 6-7 segundos por imagen, según observaciones del autor que pueden variar según resolución, configuración de generación y memoria disponible.
+
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El tamano del adaptador (0,3 GB) es irrelevante por si solo; la VRAM dependera del modelo base sobre el que se aplique.
-- GPU recomendadas: no disponible, al no conocerse el modelo base.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El formato safetensors sugiere integracion con librerias tipo `transformers`, `peft` o `vLLM`, pero no esta confirmado.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el adaptador se ejecuta junto al modelo base de 4B; el autor reporta funcionamiento en una NVIDIA T4 de 16 GB con lotes de 30-40 imágenes.
+- GPU recomendadas: NVIDIA T4 (16 GB) es el hardware de referencia documentado; el entrenamiento se realizó en 2 × T4 en Kaggle.
+- GPU de consumo: no se documenta explícitamente el funcionamiento en GPUs consumer, pero un modelo base de 4B con cuantización podría caber en GPUs de 8-12 GB; no hay datos confirmados en la información disponible.
+- Opciones de despliegue: la librería indicada es PEFT; el repositorio incluye un notebook de Colab (`qwen35_sankaku_captioning.ipynb`) para probar el adaptador. No se documentan opciones como vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: aproximadamente 6-7 segundos por caption en T4 con lotes de 30-40 imágenes.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la informacion proporcionada, al desconocerse el modelo base, el tamano y la tarea exacta del adaptador.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| codeShare/qwen35_image_captioning_adapter | LoRA sobre base de 4B | no disponible | Captioning conciso en lenguaje natural | apache-2.0 | Hugging Face (PEFT) |
+| JoyCaption | no disponible | no disponible | Captioning de imágenes | no disponible | Usado como fuente de datos en este proyecto |
+| Gemini Flash | no disponible (propietario) | no disponible | Captioning multimodal general | propietario | API de Google |
+
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. Las referencias a JoyCaption y Gemini Flash provienen únicamente de su uso como fuentes de captions en el dataset de entrenamiento de este adaptador.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay informacion sobre entrenamiento, datos, sesgos ni evaluacion.
-- Licencia no declarada: no puede confirmarse si el uso comercial esta permitido.
-- Pipeline no declarado: la integracion con `transformers` no esta garantizada.
-- El nombre del repositorio sugiere una funcionalidad (captioning sobre Qwen 3.5) que no esta documentada ni verificada.
-- Riesgo de alucinacion en los captions generados: inherente a los modelos de vision-lenguaje, no evaluado en este caso.
-- Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no pueden identificarse sesgos demograficos, culturales o de dominio.
-- Cero descargas y un unico like: repositorio sin validacion comunitaria.
-- El autor `codeShare` no es un organizacion conocida de IA; conviene verificar procedencia y integridad de los pesos antes de usarlos.
+- Las descripciones generadas pueden carecer de detalle y profundidad, ya que el dataset se construyó mediante captioning y resumen automáticos; el propio autor lo señala como limitación principal.
+- El adaptador no añade nueva comprensión visual al modelo base: solo enseña a producir versiones más concisas de sus captions existentes.
+- El modelo base es una variante "abliterated" y "uncensored", lo que implica que puede generar contenido sin los filtros de seguridad habituales; el repositorio está marcado como `not-for-all-audiences`.
+- El dataset de entrenamiento procede de Sankaku Complex y de publicaciones de Civitai, con posible presencia de contenido NSFW y sesgos asociados a esas fuentes.
+- Idioma limitado al inglés (`en`); no se documenta soporte multilingüe.
+- No se documentan datos sobre alucinaciones, sesgos específicos ni evaluación de calidad de los captions generados.
+- Aunque la licencia es Apache 2.0, el uso comercial debe evaluarse junto con las condiciones del modelo base y de los datasets de origen.
+- Proyecto en fase experimental inicial, con hoja de ruta que incluye la edición manual del dataset y un reentrenamiento previsto para noviembre de 2026.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/codeShare/qwen35_image_captioning_adapter
-- No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, blog o demo. Los resultados obtenidos corresponden a servicios homonimos de edicion colaborativa de codigo (codeshare.io, codeshare.in, codeshare.online, codeshare.uk) sin relacion con el repositorio.
+- Hugging Face: https://huggingface.co/codeShare/qwen35_image_captioning_adapter
+- Notebook de prueba: https://huggingface.co/codeShare/qwen35_image_captioning_adapter/blob/main/qwen35_sankaku_captioning.ipynb
+- Modelo base: https://huggingface.co/DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark
+- Dataset Sankaku: https://huggingface.co/datasets/deepghs/sankaku-webp-4Mpixel
+- Dataset de imágenes con captions: https://huggingface.co/datasets/codeShare/adcom_captioned_ai_images
+- Dataset de prompts e imágenes de Civitai: https://huggingface.co/datasets/codeShare/civitai-natural-language-prompts-and-images

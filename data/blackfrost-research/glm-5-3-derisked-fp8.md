@@ -2,57 +2,56 @@
 
 ## Resumen
 
-GLM-5.3-DERISKED-FP8 es una version cuantizada a FP8 del modelo GLM-5.3 en BF16 de zai-org, publicada por Blackfrost-Research. Se trata de un modelo de generacion de texto de gran escala: los pesos en safetensors suman 753.329.940.480 parametros (753,3 B) y el repositorio ocupa 755,7 GB, coherente con un almacenamiento de 1 byte por parametro en FP8. La etiqueta de arquitectura declarada es glm_moe_dsa, lo que apunta a un transformer de tipo mezcla de expertos (MoE), aunque la ficha de Hugging Face no detalla el numero de parametros activos ni la longitud de contexto.
+GLM-5.3-DERISKED-FP8 es una derivacion cuantizada en FP8 del modelo MoE GLM-5.3-BF16 de Zhipu AI (zai-org), publicada por Blackfrost-Research. El checkpoint conserva la topologia completa de expertos, el tokenizador nativo, la plantilla de chat y los metadatos de razonamiento, tool use, contexto largo y MTP del modelo original. Con 753.329.940.480 parametros totales y un repositorio de 755,7 GB, esta pensado para despliegue en produccion sobre SGLang con decodificacion especulativa DFlash2.
 
-El modelo pertenece a la familia de publicaciones "Derisked" del autor, orientadas segun las etiquetas de sus variantes hermanas a red-teaming, investigacion en seguridad y pruebas adversarias, con despliegue previsto sobre SGLang y decodificacion especulativa (etiquetas sglang, speculative-decoding y dflash2). El acceso es restringido: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
+La arquitectura es `GlmMoeDsaForCausalLM`, con 78 capas principales mas una capa MTP nativa, 256 expertos enrutados con top-8 activo y un experto compartido, hidden size de 6144 y una ventana de contexto de 1.048.576 posiciones. La cuantizacion es FP8 E4M3 dinamica con bloques de 128, lo que reduce el peso del checkpoint respecto al BF16 original manteniendo la estructura de expertos intacta.
 
-Su relevancia practica es doble. Por un lado, permite evaluar el impacto de la cuantizacion FP8 frente al modelo base BF16 en un modelo de 753 B, algo critico porque en BF16 ese mismo modelo exigiria del orden de 1,5 TB de VRAM. Por otro, sirve como referencia para equipos que necesitan servir un modelo de esta escala en infraestructura propia con decodificacion especulativa. El repositorio no incluye datos de benchmarks, composicion del dataset ni informe tecnico, y el modelo no registra descargas ni valoraciones en el momento de redactar esta ficha.
+El interes actual de esta ficha es doble: por un lado, ofrece una via de despliegue de un modelo de escala frontera con contexto de un millon de tokens sin necesidad de solicitar acceso (descarga publica y sin gating); por otro, la licencia es "other" y el kit de despliegue depende de un modelo companion con licencia CC BY-NC-ND 4.0, lo que exige revision legal antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta glm_moe_dsa); detalles de capas, atencion y enrutado no disponibles |
-| Parametros totales | 753.329.940.480 (753,3 B), dato real de safetensors |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (este repositorio); el modelo base esta en BF16; el autor publica ademas una variante NVFP4 de la gama Flash |
-| Idiomas soportados | no disponible en este repositorio; la variante GLM-5.3-Flash-DERISKED-NVFP4 del mismo autor declara ingles y chino |
-| Licencia | other (etiqueta de Hugging Face); las variantes del autor se comercializan bajo licencia "blackfrost-commercial" de pago unico, pero no se incluye el texto de licencia de este repositorio |
-| Formato de pesos | safetensors (FP8), libreria transformers, compatible con SGLang |
+| Arquitectura | `GlmMoeDsaForCausalLM` (Mixture of Experts con atencion DSA) |
+| Parametros totales | 753.329.940.480 (753,3 B) |
+| Parametros activos | top-8 expertos enrutados de 256 + experto compartido (numero exacto de parametros activos no disponible) |
+| Longitud de contexto | 1.048.576 posiciones |
+| Tipos de cuantizacion | FP8 E4M3 dinamica con bloques de 128 (checkpoint publicado); otras cuantizaciones no disponibles |
+| Idiomas soportados | en, zh (segun tags de la model card) |
+| Licencia | other (terminos del repositorio y del modelo upstream; revision legal necesaria) |
+| Formato de pesos | safetensors (libreria transformers) |
+| Capas | 78 capas principales + capa MTP nativa |
+| Hidden size | 6144 |
 | Modelo base | zai-org/GLM-5.3-BF16 |
-| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 755,7 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 25 de septiembre de 2026 |
+| Descargas / likes | 221 / 2 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados en la informacion disponible. La etiqueta de arquitectura glm_moe_dsa sugiere un transformer con mezcla de expertos y algun mecanismo de atencion dispersa, pero la ficha no especifica numero de expertos, ratio de activacion, numero de capas ni dimension del modelo. Tampoco se indica si hubo fases de RLHF, DPO u otro ajuste por preferencias.
+El modelo es un transformer de tipo Mixture of Experts con atencion DSA (segun el identificador `GlmMoeDsaForCausalLM`). Cuenta con 78 capas principales mas una capa MTP (multi-token prediction) nativa, 256 expertos enrutados con activacion top-8 y un experto compartido, sobre un hidden size de 6144. La capa MTP y los metadatos de razonamiento y tool use se conservan del modelo original GLM-5.3-BF16.
 
-Lo que si puede afirmarse es que este repositorio es una cuantizacion: el campo base_model apunta a zai-org/GLM-5.3-BF16, de modo que los pesos aqui publicados derivan de ese modelo en BF16 y se han convertido a FP8. Las etiquetas declaran soporte de decodificacion especulativa mediante dflash2 y compatibilidad con SGLang, lo que sugiere que la publicacion esta pensada para servir el modelo con tecnicas de aceleracion de decodificacion mas que para entrenamiento o ajuste fino. La naturaleza exacta del proceso "DERISKED" no se documenta en la informacion disponible; las etiquetas de las variantes hermanas (red-teaming, security-research, adversarial-testing, enterprise) apuntan a un ajuste orientado a modificar comportamientos de rechazo, pero no hay confirmacion tecnica en este repositorio.
+La publicacion de Blackfrost-Research es una cuantizacion, no un reentrenamiento: aplica FP8 E4M3 dinamica con bloques de 128 sobre los pesos de zai-org/GLM-5.3-BF16. El proceso de produccion a nivel de pesos de Blackfrost es propietario y no se incluye en el repositorio. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF/DPO del modelo base en la informacion proporcionada. El kit de despliegue incluye soporte para decodificacion especulativa DFLASH de SGLang mediante el companion `incoai/GLM-5.3-DFlash2`, cuyos pesos no se redistribuyen en este repositorio.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es text-generation y las etiquetas incluyen conversational.
-- Modelo de gran escala apto para tareas generativas generales de alta complejidad, condicionado a que la evaluacion confirme su calidad (no hay benchmarks publicados).
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede exponerse mediante API compatible con el ecosistema habitual.
-- Servicio con SGLang: etiqueta sglang explicita, con soporte declarado de decodificacion especulativa (dflash2).
-- Capacidades multimodales: no declaradas en este repositorio. La variante GLM-5.3-Flash-DERISKED-NVFP4 figura como image-text-to-text, pero este modelo no incluye esa etiqueta.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento explicito (thinking mode), vision o audio: no disponible.
-- Cobertura multilingue: no disponible para este repositorio.
+- Generacion de texto conversacional en ingles y chino.
+- Razonamiento multi-paso (metadatos de reasoning conservados del modelo base).
+- Tool calling / function calling (metadatos nativos de tool use).
+- Uso en agentes y flujos multi-turno con contexto muy largo (hasta 1.048.576 posiciones).
+- Prediccion multi-token (MTP) nativa, util para decodificacion especulativa.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades de vision y audio: no disponibles en la informacion proporcionada.
+- Capacidades multilingues mas alla de en/zh: no disponibles.
 
 ## Casos de uso
 
-- Investigacion en seguridad y evaluacion de salvaguardas: la familia "Derisked" y las etiquetas red-teaming y adversarial-testing de las variantes hermanas sugieren su uso para medir como se comporta un modelo de 753 B tras eliminar o modificar comportamientos de rechazo. Es adecuado porque permite comparar pares controlados (BF16 frente a FP8) sobre el mismo modelo base.
-- Generacion masiva de datos sinteticos: con 753,3 B de parametros puede actuar como modelo profesor para crear corpus de destilacion o de ajuste. La version FP8 reduce el coste de almacenamiento a aproximadamente 753 GB frente al 1,5 TB que exigiria el BF16.
-- Estudio comparativo de cuantizacion: al existir el mismo modelo en BF16 (zai-org/GLM-5.3-BF16) y en FP8 (este repositorio), permite medir la degradacion de calidad en tareas concretas antes de decidir que version desplegar en produccion.
-- Servicio conversacional interno en cluster propio: para organizaciones con GPU de centro de datos que quieran ofrecer un asistente de texto a traves de SGLang con API compatible con endpoints, sin depender de proveedores externos y con la licencia comercial adquirida.
-- Evaluacion de decodificacion especulativa: las etiquetas speculative-decoding y dflash2 lo convierten en un banco de pruebas para medir aceleraciones de latencia por token en un modelo de gran tamano.
-- Investigacion academica sobre escalado y MoE: permite estudiar comportamiento de modelos de mas de 700 B parametros en FP8 con recursos de un unico nodo multi-GPU de gama alta, si el modelo efectivamente activa una fraccion reducida de parametros (dato no disponible).
-- Base para ajuste fino ligero o adaptadores: siempre que la licencia y el acceso gated lo permitan, puede servir como punto de partida para LoRA u otras tecnicas sobre un backbone de gran escala.
+- Analisis de repositorios y documentacion extensa: con un millon de tokens de contexto, el modelo puede ingerir bases de codigo completas o corpus documentales y responder preguntas cruzadas sin troceado previo.
+- Agentes de automatizacion con tool calling: los metadatos nativos de tool use permiten integrarlo en orquestadores que invocan APIs, consultas SQL o sistemas internos en cadenas multi-paso.
+- Asistencia conversacional empresarial en ingles y chino: adecuado para soporte multi-turno en organizaciones con operaciones en ambos idiomas, con la ventana de contexto como ventaja para historiales largos.
+- Razonamiento sobre expedientes o contratos: la ventana de 1M tokens permite comparar clausulas a lo largo de documentos completos y mantener trazabilidad de referencias.
+- Generacion y revision de codigo en pipelines internos: el modelo puede recibir contexto de varios ficheros y proponer parches, siempre que el operador valide la salida como no fiable.
+- Despliegue en infraestructura SGLang con decodificacion especulativa: el kit DFlash2 esta orientado a reducir latencia en serving de alta concurrencia, previa revision de la licencia del companion.
+- Investigacion sobre cuantizacion FP8 en MoE de gran escala: util como referencia para medir degradacion de calidad frente al BF16 original en tareas de razonamiento y contexto largo.
 
 ## Benchmarks y rendimiento
 
@@ -60,47 +59,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametros en FP8 (1 byte por parametro) y del tamano del repositorio; no son datos publicados por el autor.
-
-- Pesos en FP8: aproximadamente 753 GB solo para los pesos, mas overhead de runtime, cache KV y activaciones. El repositorio ocupa 755,7 GB.
-- VRAM total estimada para inferencia: por encima de 800 GB en el mejor de los casos con contexto corto y lote pequeno; el valor real depende de la longitud de contexto (no disponible) y del tamano de lote.
-- Configuraciones viables: 8 x H200 (141 GB, 1128 GB totales) deja margen para cache KV; 5-6 x B200 (192 GB) seria suficiente en teoria; 8 x H100 de 80 GB (640 GB) no basta ni para los pesos.
-- Consumer GPU: no cabe. Ni siquiera en varias RTX 4090 (24 GB) o RTX 5090 por el volumen de pesos y la ausencia de soporte estandar de FP8 en esos entornos.
-- Despliegue recomendado: SGLang (etiqueta explicita del repositorio), vLLM con soporte FP8 y transformers para uso directo. Los formatos tipo GGUF/Ollama/llama.cpp no estan declarados y no se consideran viables para este modelo en FP8 a esta escala.
-- Decodificacion especulativa: soportada segun etiquetas (dflash2), lo que puede reducir la latencia por token, aunque no se publican cifras de throughput ni de latencia.
-- Requisito previo: acceso gated, hay que solicitar y aceptar las condiciones en Hugging Face antes de descargar 755,7 GB.
+- VRAM estimada: el checkpoint FP8 ocupa 755,7 GB en repositorio, por lo que la inferencia requiere agregar al menos ese orden de magnitud en memoria, mas overhead de KV cache. No cabe en una sola GPU consumer ni en una sola GPU de datacenter convencional.
+- GPU recomendadas: despliegue multi-GPU con aceleradores de clase H100/H200 o B200; A100 80 GB requeriria un numero elevado de unidades y no se ha confirmado compatibilidad FP8 nativa optima.
+- GPU consumer: no viable. El modelo no cabe en RTX 4090, RTX 5090 ni configuraciones multi-GPU consumer realistas.
+- Opciones de despliegue: SGLang (soporte DFLASH documentado en el kit), transformers como libreria base. Compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible en la informacion proporcionada.
+- Latencia y throughput: no disponibles. La decodificacion especulativa DFlash2 esta pensada para mejorar aceptacion y throughput, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Blackfrost-Research/GLM-5.3-DERISKED-FP8 (este) | 753,3 B | no disponible | safetensors FP8 | other (gated) | Hugging Face, acceso restringido |
-| zai-org/GLM-5.3-BF16 (modelo base) | no disponible en la informacion | no disponible | BF16 | no disponible | referenciado como base_model |
-| Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 | no disponible (familia Flash) | no disponible | NVFP4, modelopt | blackfrost-commercial | Hugging Face, autor relacionado |
-| GLM-5.3-Flash-DERISKED-BF16 (segun llm-explorer) | 321,3 B | no disponible | BF16, VRAM estimada 237,1 GB | other | Hugging Face, autor relacionado |
+| GLM-5.3-DERISKED-FP8 (este) | 753,3 B (MoE, top-8 de 256) | 1.048.576 | FP8 E4M3 bloque 128 | other | Publico, sin gating |
+| zai-org/GLM-5.3-BF16 | no disponible en la informacion | no disponible en la informacion | BF16 | no disponible en la informacion | Modelo base referenciado |
+| incoai/GLM-5.3-DFlash2 | no disponible | no disponible | no disponible | CC BY-NC-ND 4.0 | Companion para decodificacion especulativa |
 
-No se dispone de otros modelos comparables de la misma categoria en la informacion proporcionada, ni de resultados de rendimiento que permitan comparar calidad entre ellos.
+No se dispone de datos de benchmarks ni de especificaciones completas de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento fiable.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no hay informe de entrenamiento, composicion del dataset, numero de tokens ni detalles de arquitectura. Evaluar el modelo en produccion sin esos datos es arriesgado.
-- Sin benchmarks publicados: no puede compararse de forma objetiva con alternativas ni estimar la degradacion introducida por la cuantizacion FP8 frente al BF16 base.
-- Riesgo de alucinacion: inherente a los modelos generativos de esta familia. No hay evaluaciones de fidelidad factual disponibles; en un modelo de 753 B sin datos de evaluacion, el riesgo es indeterminado.
-- Sesgos: no disponibles. No se ha publicado ninguna evaluacion de sesgo, toxicidad o representacion.
-- Idiomas: no declarados para este repositorio. Si el modelo base no cubre castellano de forma solida, el rendimiento en espanol sera deficiente; conviene verificarlo antes de usarlo en produccion.
-- Contexto: longitud no disponible, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
-- Naturaleza "DERISKED": si el ajuste consiste en eliminar comportamientos de rechazo, el modelo puede generar contenido que otros modelos declinarian. Es un riesgo directo en despliegues orientados a usuarios finales, y exige moderacion externa y revision legal.
-- Licencia: la etiqueta de Hugging Face es "other" y el acceso esta restringido. Las variantes del mismo autor se venden bajo una licencia comercial de pago unico ("blackfrost-commercial"), por lo que el uso comercial de este repositorio debe confirmarse expresamente. No se incluye el texto de la licencia en la informacion disponible.
-- Reproducibilidad: el repositorio tiene 0 descargas y 0 valoraciones, y fue creado y actualizado el mismo dia. No hay evidencia de uso independiente ni de validacion por terceros.
-- Coste de infraestructura: por encima de 800 GB de VRAM estimada, lo que excluye cualquier despliegue en hardware de consumo y limita su uso a centros de datos.
-- Riesgo de cadena de suministro: al ser una cuantizacion de terceros sobre un modelo base de otro organismo, conviene verificar la equivalencia funcional frente al BF16 original antes de confiar en ella.
+- Licencia "other": los terminos del repositorio y del modelo upstream aplican; es imprescindible revision legal antes de uso comercial.
+- El kit de despliegue DFlash2 depende de `incoai/GLM-5.3-DFlash2`, con licencia CC BY-NC-ND 4.0, que prohibe uso comercial y obras derivadas. Usar el kit puede condicionar el despliegue en produccion.
+- El proceso de produccion de Blackfrost es propietario y no auditable desde el repositorio; no hay garantia documentada sobre el impacto de la cuantizacion FP8 en calidad.
+- Riesgo de alucinacion inherente a modelos generativos; el autor indica explicitamente tratar la salida como no fiable.
+- Idiomas documentados limitados a ingles y chino; el comportamiento en castellano no esta validado.
+- El autor recomienda cualificar capacidad, seguridad, comportamiento en contexto largo, tool use y tasa de aceptacion especulativa antes de produccion.
+- El modelo se distribuye "as is", sin garantia; el operador asume control de acceso, monitorizacion y cumplimiento normativo.
+- El gran tamano del checkpoint (755,7 GB) impone requisitos de almacenamiento y transferencia significativos.
+- No hay informacion publica sobre sesgos especificos ni sobre evaluaciones de seguridad del checkpoint derivado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-FP8
-- Modelo base referenciado: https://huggingface.co/zai-org/GLM-5.3-BF16
-- Variante Flash FP8 del mismo autor: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-Derisked-FP8
-- Variante Flash NVFP4 del mismo autor: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4
-- Pagina de modelos y licencias comerciales del autor: https://blackfrostai.com/models
-- Perfil de GitHub del autor: https://github.com/Blackfrost-AI
-- Ficha de la variante Flash BF16 en llm-explorer: https://llm-explorer.com/model/Blackfrost-AI%2FGLM-5.3-Flash-DERISKED-BF16,6kNzsQteBaKmzltCVUMVCu
+- Hugging Face: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-FP8
+- Arbol de ficheros: https://huggingface.co/Blackfrost-Research/GLM-5.3-Derisked-FP8/tree/main
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Companion de decodificacion especulativa: https://huggingface.co/incoai/GLM-5.3-DFlash2
+- Kit de despliegue: `DEPLOYMENT/README.md` y `DEPLOYMENT/LAUNCH.sh` dentro del repositorio del modelo

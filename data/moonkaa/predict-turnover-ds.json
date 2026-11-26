@@ -5,16 +5,16 @@
   "author": "moonkaa",
   "url": "https://huggingface.co/moonkaa/predict-turnover-ds",
   "created_at": "2026-11-18T12:31:11.000Z",
-  "updated_at": "2026-11-25T07:35:52.000Z",
+  "updated_at": "2026-11-26T06:31:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": "sklearn",
+  "library": "scikit-learn",
   "languages": [
     "id"
   ],
   "tags": [
-    "sklearn",
+    "scikit-learn",
     "joblib",
     "tabular",
     "classification",

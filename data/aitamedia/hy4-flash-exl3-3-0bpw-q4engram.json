@@ -5,7 +5,7 @@
   "author": "aitamedia",
   "url": "https://huggingface.co/aitamedia/Hy4-flash-EXL3-3.0bpw-Q4engram",
   "created_at": "2026-11-25T00:44:01.000Z",
-  "updated_at": "2026-11-25T01:51:27.000Z",
+  "updated_at": "2026-11-25T19:51:08.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,6 +24,8 @@
     "engram",
     "q4_0",
     "dfly2",
+    "base_model:tencent/Hy4-flash-FP8",
+    "base_model:quantized:tencent/Hy4-flash-FP8",
     "license:other",
     "3-bit",
     "region:us"

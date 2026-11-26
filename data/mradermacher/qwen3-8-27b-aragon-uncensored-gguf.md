@@ -2,83 +2,109 @@
 
 ## Resumen
 
-El modelo `mradermacher/qwen3.8-27b-aragon-uncensored-GGUF` es una colección de cuantizaciones GGUF del modelo base `jdqqjr/qwen3.8-27b-aragon-uncensored`, una variante "uncensored" y "abliterated" de la familia Qwen 3.8 con 27.320 millones de parámetros. El autor, mradermacher, es conocido por generar cuantizaciones estáticas de alta calidad para ejecución local mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
+`mradermacher/qwen3.8-27b-aragon-uncensored-GGUF` es una distribución de cuantizaciones estáticas en formato GGUF del modelo `jdqqjr/qwen3.8-27b-aragon-uncensored`, un derivado de la familia Qwen de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) que ha sido modificado mediante técnicas de *abliteration* y *heretic* para eliminar o atenuar los mecanismos de rechazo alineados del modelo original. El trabajo de cuantización lo firma mradermacher, un publicador habitual de versiones GGUF de modelos de la comunidad, y no el autor del modelo base.
 
-La relevancia de este modelo radica en que ofrece una versión sin los mecanismos de rechazo y censura típicos de los modelos comerciales, lo que lo hace atractivo para investigación en seguridad, generación de contenido creativo sin restricciones y experimentación con técnicas de "abliteration". El repositorio incluye múltiples niveles de cuantización (desde Q2_K hasta Q8_0) y archivos de proyección multimodal (mmproj), lo que sugiere que el modelo base podría tener capacidades de visión, aunque no se confirma en la documentación disponible.
+El interés de esta ficha no reside en un avance arquitectónico —no se documenta ninguno— sino en la disponibilidad de un conjunto completo de cuantizaciones (desde Q2_K de 11,0 GB hasta Q8_0 de 29,1 GB, más dos variantes de proyector multimodal `mmproj`) que permiten ejecutar un modelo de ~27B en hardware de consumo. La presencia de ficheros `mmproj` indica que el modelo base incorpora capacidades de visión, aunque la model card no lo detalla explícitamente.
 
-Al ser una cuantización, no se aportan datos de entrenamiento ni benchmarks propios; la información se limita a los archivos y a las referencias del modelo original. La licencia no está especificada en la ficha de Hugging Face, aunque fuentes externas indican que el modelo base Qwen 3.8 27B se distribuye bajo Apache 2.0.
+Conviene subrayar que la información publicada es muy escasa: la model card del repositorio GGUF es una plantilla estándar de mradermacher que no describe arquitectura, datos de entrenamiento, contexto ni benchmarks. La licencia aparece como "no disponible" en los metadatos de Hugging Face, lo que constituye un riesgo relevante para cualquier uso en producción. El repositorio ocupa 190,8 GB y acumula 224 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen 3.8, sin detalles adicionales) |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (modelo base derivado de la familia Qwen; sin confirmación documental de si es transformer denso o MoE) |
+| Parametros totales | 27.320.697.856 (~27,3B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | no disponible (el modelo base Qwen 3.8 27B se reporta como Apache 2.0 en fuentes externas) |
-| Formato de pesos | GGUF (safetensors no incluido en este repo) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; proyectores multimodales mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (inglés, según metadatos) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye presumiblemente en safetensors vía transformers |
+| Tamano del repositorio | 190,8 GB |
+| Libreria declarada | transformers |
+| Modelo base | jdqqjr/qwen3.8-27b-aragon-uncensored |
+| Etiquetas | heretic, uncensored, abliterated, qwen, conversational, endpoints_compatible |
+| Fecha de creacion | 2026-08-29 |
+| Ultima actualizacion | 2026-10-09 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Por el nombre y los tags, se trata de un transformer de la familia Qwen 3.8 con 27.320 millones de parametros, probablemente denso (no se mencionan parametros activos). El modelo original `jdqqjr/qwen3.8-27b-aragon-uncensored` ha sido sometido a un proceso de "abliteration", una tecnica que elimina o neutraliza las capas responsables de los rechazos y las respuestas de seguridad, dando lugar a un comportamiento "uncensored". No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens ni el uso de RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo base en la documentación proporcionada. El nombre y las etiquetas (`qwen`) sugieren un origen en la familia Qwen, y el recuento de parámetros (27,3B) es coherente con un transformer denso de esa escala, pero no hay confirmación documental de si se trata de atención completa, atención lineal, arquitectura híbrida o un diseño MoE. Tampoco se especifican el número de capas, las dimensiones ocultas, el número de cabezas de atención ni la longitud de contexto nativa.
 
-La cuantizacion realizada por mradermacher es de tipo estatico (sin imatrix), generada a partir de los pesos originales en formato Hugging Face. Se incluyen dos archivos mmproj (Q8_0 y f16) que sugieren la presencia de un proyector multimodal, probablemente para procesamiento de imagenes, aunque no se confirma su funcionamiento en la documentacion.
+Respecto al entrenamiento, la única información disponible es que el modelo ha pasado por un proceso de *abliteration* —técnica que identifica y suprime direcciones en el espacio de activaciones asociadas al rechazo— y que lleva las etiquetas `heretic` y `uncensored`. No se documentan el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado posteriores. Tampoco se detalla el proceso de cuantización más allá de las marcas internas de la plantilla (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), que indican una conversión desde pesos Hugging Face con cuantización por tensor de salida.
+
+La existencia de ficheros `mmproj` (proyector multimodal) en el repositorio es el único indicio técnico adicional: apunta a que el modelo base incorpora un codificador visual y capacidades de comprensión de imágenes, aunque ni el tamaño del codificador ni la resolución de entrada están documentados.
 
 ## Capacidades
 
-- Generacion de texto libre y conversacional en ingles, sin filtros de contenido ni rechazos por temas sensibles.
-- Posible soporte multimodal (vision) gracias a los archivos mmproj incluidos, aunque no se documenta su uso.
-- Integracion con motores de inferencia locales como llama.cpp, Ollama y otros compatibles con GGUF.
-- Capacidad de ejecucion en hardware de consumo gracias a las cuantizaciones de menor tamaño (Q2_K, Q3_K).
-- No se especifican capacidades de tool calling, agentes o razonamiento multi-paso; se asume que hereda las del modelo base Qwen 3.8, pero no hay confirmacion.
+- Generación de texto conversacional: la etiqueta `conversational` y la inclusión de plantillas de chat en el ecosistema Qwen apuntan a uso en diálogo multi-turno.
+- Comprensión de imágenes: la presencia de proyectores `mmproj-Q8_0` y `mmproj-f16` indica soporte multimodal (visión), aunque no se detalla su alcance.
+- Generación sin restricciones de rechazo: el proceso de abliteration busca eliminar las negativas automáticas del modelo alineado original.
+- Idiomas: únicamente se declara inglés (`en`); no hay evidencia de soporte multilingüe, pese al nombre "aragon" del modelo base.
+- Tool calling / function calling: no disponible en la documentación.
+- Modo de razonamiento explícito (*thinking*): no disponible en la documentación.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
 
 ## Casos de uso
 
-- Generacion de ficcion y narrativa creativa sin restricciones tematicas: el modelo puede producir textos literarios, guiones o dialogos con libertad creativa, gracias a su naturaleza uncensored.
-- Investigacion en seguridad y alineacion de modelos: permite estudiar el comportamiento de un LLM sin mecanismos de rechazo, util para analizar sesgos, riesgos y tecnicas de mitigacion.
-- Creacion de contenido para entornos controlados (por ejemplo, simulaciones de dialogos o juegos de rol) donde se requiere que el modelo no se niegue a responder.
-- Experimentacion con tecnicas de "abliteration" y cuantizacion: el repositorio ofrece multiples niveles de precision para evaluar el impacto de la cuantizacion en la calidad de las respuestas.
-- Despliegue local en equipos con VRAM limitada: las cuantizaciones Q2_K y Q3_K permiten ejecutar el modelo en GPUs de 12 GB o menos, aunque con perdida de calidad.
-- Prototipado rapido de aplicaciones conversacionales sin censura en entornos de desarrollo, usando Ollama o llama.cpp para servir el modelo.
+- **Investigación sobre alineación y seguridad**: el modelo permite estudiar empíricamente el efecto de la abliteration comparando respuestas con el modelo Qwen original, midiendo qué tipos de contenido se desbloquean y con qué coherencia se preservan las capacidades generales.
+- **Generación de ficción y narrativa sin filtros**: para escritura creativa que aborde temas oscuros, violencia o contenido adulto, donde los modelos alineados suelen introducir rechazos o evasivas. La cuantización Q4_K_M (16,9 GB) permite ejecutarlo en una GPU de 24 GB.
+- **Análisis de documentos e imágenes en local**: gracias a los ficheros `mmproj`, puede desplegarse con llama.cpp para extraer información de capturas, diagramas o documentos escaneados sin enviar datos a servicios externos.
+- **Prototipado de asistentes conversacionales autoalojados**: con Q4_K_S (15,9 GB) o IQ4_XS (15,5 GB) cabe en una RTX 4090 o en un Mac con memoria unificada de 32 GB, permitiendo iterar sobre prompts y plantillas de chat sin coste por token.
+- **Evaluación de cuantizaciones GGUF**: el repositorio ofrece once variantes de cuantización del mismo modelo, lo que lo convierte en un banco de pruebas útil para medir la degradación de perplejidad entre Q2_K y Q8_0 sobre una carga de trabajo concreta.
+- **Generación de datos sintéticos para ajuste fino**: al no rechazar temáticas sensibles, puede emplearse para producir corpus de entrenamiento en dominios donde otros modelos se niegan, siempre que se revise legal y éticamente el resultado.
+- **Despliegue en entornos air-gapped**: al ser un GGUF ejecutable con llama.cpp u Ollama, funciona sin conexión en infraestructura aislada, algo relevante para organizaciones con requisitos estrictos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras metricas para este modelo cuantizado ni para su version base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantizacion y overhead de contexto):
-  - Q2_K (11.0 GB): requiere al menos 12-14 GB de VRAM.
-  - Q3_K_M (13.6 GB): requiere al menos 16 GB de VRAM.
-  - Q4_K_M (16.9 GB): requiere al menos 20 GB de VRAM.
-  - Q5_K_M (19.6 GB): requiere al menos 24 GB de VRAM.
-  - Q6_K (22.5 GB): requiere al menos 28 GB de VRAM.
-  - Q8_0 (29.1 GB): requiere al menos 32 GB de VRAM.
-- GPUs recomendadas: RTX 3090/4090 (24 GB) para Q4_K_M o inferior; A100 40 GB o H100 para Q8_0.
-- En consumer GPU, las cuantizaciones Q2_K y Q3_K caben en tarjetas de 12 GB (RTX 3060, 4070), mientras que Q4_K_M y superiores necesitan 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o servidores compatibles con GGUF como llama-cpp-python.
-- Latencia y throughput: no disponibles; dependen del hardware y del tamaño de contexto.
+- **VRAM estimada para inferencia** (pesos + overhead de contexto, aproximada a partir del tamaño de cada fichero GGUF):
+  - Q2_K: ~11,0 GB de pesos; ~12-13 GB en total con contexto moderado.
+  - Q3_K_M: ~13,6 GB; ~15 GB en total.
+  - IQ4_XS: ~15,5 GB; ~17 GB en total.
+  - Q4_K_M: ~16,9 GB; ~18-19 GB en total.
+  - Q5_K_M: ~19,6 GB; ~21 GB en total.
+  - Q6_K: ~22,5 GB; ~24 GB en total.
+  - Q8_0: ~29,1 GB; ~31 GB en total.
+- **GPU recomendadas**: para Q4_K_M y superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permite cargar el modelo completo en VRAM con contexto ajustado. Para Q8_0 se requiere una A100 40 GB, L40S 48 GB o H100. Las cuantizaciones Q2_K y Q3_K_S pueden caber en GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) con contexto reducido.
+- **Cabe en GPU de consumo**: sí, en RTX 3090/4090 con Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto limitado.
+- **Opciones de despliegue**: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI (la etiqueta `endpoints_compatible` lo indica). vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que requerirían los pesos originales en safetensors.
+- **Latencia y throughput**: no disponibles. Como referencia orientativa no verificada, un modelo denso de 27B en Q4_K_M sobre una RTX 4090 suele situarse en el rango de 20-35 tokens/s en generación, pero este dato no procede de la documentación del modelo y debe medirse en el hardware objetivo.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de la misma categoria (uncensored de ~27B). Se puede mencionar que existen alternativas como `Qwen3-30B-A3B` (MoE) o `Llama-3-8B` uncensored, pero no hay datos de rendimiento comparables en la informacion proporcionada. La comparativa queda pendiente de datos publicados.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| qwen3.8-27b-aragon-uncensored-GGUF (este) | ~27,3B | no disponible | no disponible | GGUF (11 variantes) | Derivado abliterated de la familia Qwen; incluye mmproj para visión |
+| Modelo base Qwen de ~27B (referencia genérica) | ~27B | no disponible | no disponible | safetensors | Modelo alineado original; no se dispone de datos verificados en esta consulta |
+| Otras distribuciones GGUF de mradermacher para modelos ~27B | ~27B | variable | según modelo base | GGUF | Mismo publicador, misma metodología de cuantización estática |
+| Versión imatrix del mismo modelo (`qwen3.8-27b-aragon-uncensored-i1-GGUF`) | ~27,3B | no disponible | no disponible | GGUF (imatrix) | Cuantizaciones ponderadas de mayor calidad a igual tamaño, publicadas en paralelo |
+
+No se dispone de datos verificados de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, formato y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "uncensored" y "abliterated", puede generar contenido ofensivo, ilegal o peligroso sin restricciones. Su uso debe limitarse a entornos de investigacion y bajo responsabilidad del usuario.
-- No se ha verificado la calidad de las respuestas tras la cuantizacion; las versiones de menor precision (Q2_K, Q3_K) pueden presentar degradacion notable en coherencia y exactitud.
-- La licencia no esta claramente especificada en el repositorio; aunque el modelo base Qwen 3.8 se reporta como Apache 2.0, la variante "aragon-uncensored" podria tener restricciones adicionales. Se recomienda contactar con el autor del modelo base antes de un uso comercial.
-- No se dispone de informacion sobre la longitud de contexto real; si se excede la ventana soportada, el modelo puede producir respuestas incoherentes o repetitivas.
-- El soporte multimodal (vision) no esta documentado; los archivos mmproj podrian no funcionar correctamente con todos los motores de inferencia.
-- Riesgo de alucinaciones elevado, especialmente en temas factuales, al no contar con filtros de seguridad ni verificacion de fuentes.
+- **Licencia no declarada**: los metadatos indican "no disponible". Sin una licencia explícita, el uso comercial es jurídicamente incierto y no puede asumirse permiso de redistribución.
+- **Sesgos y contenido dañino**: la abliteration elimina los mecanismos de rechazo, lo que aumenta la probabilidad de generar contenido ofensivo, ilegal o peligroso sin advertencia. No debe desplegarse en aplicaciones orientadas al público sin una capa de moderación externa.
+- **Riesgo de alucinación**: no se han publicado evaluaciones de fidelidad factual. La modificación de las activaciones puede degradar la coherencia en tareas de razonamiento, un efecto documentado en modelos ablacionados.
+- **Idioma**: solo se declara inglés. El nombre "aragon" del modelo base no implica soporte de español o aragonés; no hay evidencia de competencia multilingüe.
+- **Contexto desconocido**: al no documentarse la longitud de contexto nativa, no puede planificarse su uso en tareas de contexto largo sin pruebas empíricas.
+- **Procedencia opaca**: el modelo base (`jdqqjr/qwen3.8-27b-aragon-uncensored`) no cuenta con documentación técnica publicada en la información disponible, lo que impide verificar qué modelo Qwen exacto se modificó, con qué datos y mediante qué procedimiento.
+- **Cuantizaciones de baja precisión**: Q2_K y Q3_K_S degradan notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- **Visión no verificada**: la presencia de `mmproj` sugiere capacidades multimodales, pero no hay documentación sobre resolución, tipos de imagen soportados ni calidad del reconocimiento.
+- **Fecha de creación anómala**: los metadatos indican 2026-08-29, lo que puede reflejar un error de registro o una fecha futura respecto a la consulta; conviene verificar la integridad del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-GGUF
 - Modelo base: https://huggingface.co/jdqqjr/qwen3.8-27b-aragon-uncensored
-- Blog sobre ejecucion local de Qwen 3.8 27B uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Guia de VRAM y quants para Qwen 3.8 27B: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html
-- Repositorio GitHub relacionado: https://github.com/Wassimyounes01/qwen38-uncensored
+- Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-i1-GGUF
+- Página de overview de descargas del publicador: https://hf.tst.eu/model#qwen3.8-27b-aragon-uncensored-GGUF
+- Guía de uso de GGUF (README de TheBloke referenciado por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de perplejidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del publicador: https://www.nethype.de/

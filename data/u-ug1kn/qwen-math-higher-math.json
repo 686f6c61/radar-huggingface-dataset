@@ -5,7 +5,7 @@
   "author": "U-Ug1kn",
   "url": "https://huggingface.co/U-Ug1kn/qwen-math-higher-math",
   "created_at": "2026-11-07T20:03:38.000Z",
-  "updated_at": "2026-11-09T12:42:08.000Z",
+  "updated_at": "2026-11-25T12:48:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 113,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

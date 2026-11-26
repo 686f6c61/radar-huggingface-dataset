@@ -2,108 +2,107 @@
 
 ## Resumen
 
-qwen3.5-0.8b-scalpello-b2-gdp es un modelo derivado de Qwen/Qwen3.5-0.8B publicado por el investigador independiente Giovanni Del Papa (odelpa, proyecto "Lo Scienziato Dilettante GDP"). No es un fine-tune convencional: es una edicion de pesos en forma cerrada (weight-space programming) que aplica una reflexion de Householder sobre las proyecciones de salida de atencion de las capas 12 a 23, sin gradientes, sin optimizador y sin datos de entrenamiento nuevos. El objetivo es corregir un modo de fallo concreto del modelo base: los bucles de re-verificacion ("Wait...") que agotan el presupuesto de tokens antes de emitir una respuesta final.
+qwen3.5-0.8b-scalpello-b2-gdp es una edición de pesos del modelo base Qwen/Qwen3.5-0.8B (873.438.784 parámetros) publicada por el investigador independiente Giovanni Del Papa (odelpa) bajo el paraguas del proyecto SCALPELLO-GDP. No es un fine-tuning ni un reentrenamiento: se trata de una única modificación en forma cerrada de un subconjunto de matrices de proyección de salida de la atención, derivada de una reflexión de Householder aplicada sobre una dirección unitaria del residual stream. El objetivo declarado es corregir el comportamiento de "recomprobación repetitiva" que provoca respuestas truncadas en tareas matemáticas.
 
-El modelo conserva la arquitectura multimodal del base (image-text-to-text, con torre de vision intacta bit a bit) y los 873,4 millones de parametros. Solo se modifican 25,2 millones de parametros (aproximadamente el 3 %), con un cambio relativo de norma de Frobenius del 6,6-9,2 % por tensor. El resto de pesos permanece identico al original.
+La relevancia del artefacto es metodológica más que de rendimiento bruto: demuestra que una edición de pesos de ~25,2 millones de parámetros (aproximadamente el 3% del modelo) puede alterar de forma medible el comportamiento en matemáticas sin gradientes, sin optimizer y sin datos de entrenamiento adicionales. El autor reporta un salto del 9,38% al 53,65% en 384 problemas de matemáticas held-out emparejados (GSM8K train + MATH train), con 171 mejoras y 1 empeoramiento.
 
-Su relevancia es metodologica: demuestra que una intervencion quirurgica de bajo coste en el espacio de pesos puede recuperar decenas de puntos de accuracy en tareas de razonamiento matematico cuando el cuello de botella es de control de generacion y no de conocimiento. La evaluacion publicada por el autor, sobre problemas de practica de GSM8K y MATH con un limite de 8.192 tokens, reporta un salto de 9,38 % a 53,65 % de accuracy.
+El modelo conserva la arquitectura, la torre visual y el resto de pesos del Qwen3.5-0.8B original bit a bit, con licencia Apache 2.0 y publicación en safetensors y GGUF. Está pensado para investigadores interesados en weight-space programming y model editing, no como sustituto generalista del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion Gated DeltaNet y atencion completa, mas torre de vision (base Qwen3.5) |
+| Arquitectura | Transformer híbrido (Gated DeltaNet + atención completa) heredado de Qwen3.5-0.8B; edición sobre proyecciones de salida de atención |
 | Parametros totales | 873.438.784 |
-| Parametros activos | no disponible (no es MoE) |
-| Parametros editados | 25,2 M (aprox. 3 % del total) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el autor evalua con limite de 8.192 tokens) |
-| Tipos de cuantizacion | GGUF Q8_0 y BF16 publicados; el resto no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (checkpoint), GGUF Q8_0 y bf16 en Ollama; fp16 para evaluación de forward |
 | Idiomas soportados | en, it |
-| Licencia | Apache-2.0 (pesos); articulo CC BY 4.0 |
-| Formato de pesos | safetensors (bf16) y GGUF (texto) |
-| Pipeline | image-text-to-text |
-| Libreria | transformers (version que soporte `Qwen3_5ForConditionalGeneration`) |
-| Modelo base | Qwen/Qwen3.5-0.8B |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-0.8B: un transformer hibrido en el que conviven capas con atencion Gated DeltaNet (lineal) y capas con atencion completa, ademas de una torre de vision para entrada de imagen y texto. La edicion actua sobre 12 proyecciones de salida de atencion: `linear_attn.out_proj.weight` en las capas 12, 13, 14, 16, 17, 18, 20, 21 y 22 (Gated DeltaNet) y `self_attn.o_proj.weight` en las capas 15, 19 y 23 (atencion completa). Todos los demas tensores, incluida la torre de vision, son identicos bit a bit al modelo base.
+El modelo base Qwen3.5-0.8B emplea un transformer híbrido con capas Gated DeltaNet y capas de atención completa, además de una torre visual (pipeline image-text-to-text). La edición SCALPELLO-B2 actúa exclusivamente sobre las proyecciones de salida de atención: 9 matrices `linear_attn.out_proj.weight` en las capas 12, 13, 14, 16, 17, 18, 20, 21 y 22 (Gated DeltaNet) y 3 matrices `self_attn.o_proj.weight` en las capas 15, 19 y 23 (atención completa), sumando 25,2 millones de parámetros con una variación relativa del 6,6–9,2% por tensor.
 
-No hubo entrenamiento. La direccion de edicion `u` se obtuvo con un unico pase teacher-forced del modelo original sobre 3 pares de textos emparejados (mismo prompt, una continuacion productiva y otra repetitiva con "Wait..."), tomando el estado oculto del indice 20 promediado sobre los ultimos 80 tokens, calculando la diferencia de medias (repetitivo menos productivo), ortogonalizando respecto al estado productivo medio y normalizando. Sobre esa direccion se aplica una reflexion de Householder `W' = (I - 2 u u^T) W` con `s = 2`. El autor selecciono la configuracion sobre 32 problemas de diagnostico: las ediciones solo en MLP degradaban (-9,4 puntos), la edicion solo en atencion era la mejor (+46,9), `s = 4` colapsaba el modelo y una direccion ortogonal aleatoria daba +3,1 ± 5,5 puntos. La edicion se congelo antes de cualquier evaluacion held-out.
-
-El proceso se ejecuto con autograd desactivado y sin optimizador, PCA ni SVD. Un modelo frontera (OpenAI `gpt-6-astra`) actuo unicamente como editor de API: escribio el codigo Python que se ejecuto en un kernel local de CPU con los pesos y solicito pases forward sobre una Tesla T4. No se modifico ni se destilo nada del modelo editor.
+No hubo entrenamiento. El proceso consistió en que un modelo de frontera (`gpt-6-astra`, usado solo como editor vía API, no como profesor) escribiera código Python ejecutado en un kernel CPU sin red que contenía los pesos del modelo y podía solicitar forward passes sobre una Tesla T4 local (16 GB, fp16, 25 pasadas, límite de 8.192 tokens). La dirección unitaria u ∈ R^1024 se obtuvo como diferencia de medias en un único pase teacher-forced sobre 3 pares de textos (continuación productiva frente a repetitiva "Wait…"), tomando el hidden state de índice 20 y promediando los últimos 80 tokens, con proyección ortogonal respecto al estado productivo normalizado. La transformación aplicada es W' = (I − 2uuᵀ)W, ortogonal y por tanto conservadora de la norma de Frobenius de cada matriz. El kernel se ejecutó con `torch.set_grad_enabled(False)` y sin optimizer, fitting, PCA ni SVD. La selección entre 12 ediciones candidatas y un control con dirección aleatoria se hizo sobre 32 problemas de desarrollo; una edición solo MLP empeoró 9,4 puntos.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento en modo thinking, heredado del modelo base.
-- Razonamiento matematico con reduccion drastica de bucles de re-verificacion: la densidad de "wait" cae de 13,1 a 1,1 por cada 1.000 tokens en los problemas evaluados.
-- Entrada multimodal imagen-texto (pipeline image-text-to-text), con la torre de vision intacta.
-- Capacidades multilingues limitadas a ingles e italiano segun los metadatos del modelo.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; el modo thinking del base esta habilitado.
-- Capacidad especial: correccion de un modo de fallo especifico (re-chequeo repetitivo) mediante edicion de pesos, no mediante prompting.
+- Generación de texto conversacional en inglés e italiano.
+- Razonamiento matemático: el autor reporta mejora sustancial en problemas de GSM8K train y MATH train respecto al modelo base.
+- Procesamiento image-text-to-text (la torre visual se conserva intacta bit a bit).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües limitadas a en e it según los metadatos.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Resolucion de problemas matematicos con presupuesto de tokens acotado: el modelo esta disenado para no agotar el limite de generacion re-verificando. En pipelines donde cada consulta tiene un tope de 8.192 tokens, la tasa de respuestas truncadas baja del 91,7 % al 28,1 %.
-- Evaluacion comparativa de tecnicas de edicion de modelos: sirve como caso reproducible de weight-space programming con registro de pasos, seleccion de hiperparametros y evaluacion pareada, util para investigadores que estudien intervenciones en el espacio de pesos.
-- Prototipado de asistentes conversacionales en ingles e italiano sobre hardware modesto: con 873 M de parametros y cuantizacion Q8_0 o BF16, se puede desplegar en una unica GPU de consumo o en CPU via llama.cpp u Ollama.
-- Docencia y divulgacion sobre interpretabilidad: el par de textos y la direccion de edicion son inspeccionables, lo que permite explicar como un estado oculto concreto modula el comportamiento de generacion.
-- Experimentos de control de verbosidad: la misma metodologia (reflexion sobre proyecciones de atencion) puede trasladarse a otros modelos para reducir divagacion en tareas de razonamiento.
-- Inferencia local con Ollama: el autor publica una variante `ollamagdp/qwen3.5-0.8b-scalpello-b2-gdp` y GGUFs compatibles con Ollama 0.40.x, adecuada para entornos sin GPU dedicada.
-- Analisis multimodal ligero: al conservar la torre de vision del base, puede emplearse para tareas de descripcion de imagenes o VQA simple en italiano e ingles, aunque el autor no documenta evaluaciones en vision.
+- Investigación en weight-space programming: replicar o auditar la edición B2 sobre Qwen3.5-0.8B para estudiar cómo una reflexión de Householder en el residual stream altera el comportamiento de decodificación sin reentrenar.
+- Estudio de model editing en producción controlada: comparar el modelo editado con el base en tareas de matemáticas para medir el efecto de una intervención de ~3% de los parámetros sobre el resto de capacidades.
+- Evaluación de robustez ante ediciones de pesos: usar el checkpoint como caso de prueba en pipelines de validación que detecten regresiones en generación de texto, visión o idiomas distintos del inglés e italiano.
+- Despliegue ligero en local con Ollama: el tag Q8_0 (834 MB) permite ejecutar el modelo en portátiles y estaciones de trabajo sin GPU dedicada para experimentos de razonamiento matemático acotado.
+- Reproducción de resultados académicos: servir el modelo vía transformers o Ollama para verificar el salto 9,38% → 53,65% reportado sobre los 384 problemas held-out emparejados.
+- Docencia y divulgación sobre edición de modelos: el tamaño reducido (873M parámetros) y la naturaleza cerrada de la edición lo hacen adecuado para demostrar conceptos de álgebra lineal aplicada a pesos en cursos avanzados.
+- Pruebas de concepto de asistentes matemáticos en italiano: el modelo declara soporte de italiano y matemáticas, lo que permite prototipar tutores de resolución de problemas en ese idioma.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la evaluacion del autor, no de benchmarks oficiales. Conjunto de 384 problemas held-out (6 cohortes disjuntas de 64 problemas: 32 de entrenamiento de GSM8K y 32 de entrenamiento de MATH, de ficheros de practica descontaminados), thinking activado, temperatura 0,6, top-p 0,95, top-k 20, presence penalty 1,5, limite de 8.192 tokens y una muestra por modelo. La edicion se congelo antes de la validacion.
+| Benchmark | Modelo base (Qwen3.5-0.8B) | Modelo editado (SCALPELLO-B2) | Delta |
+|---|---|---|---|
+| 384 problemas held-out emparejados (GSM8K train + MATH train) | 9,38% | 53,65% | +44,27 puntos |
+| Mejoras / empeoramientos sobre los 384 problemas | — | 171 mejorados, 1 empeorado | — |
+| Edición solo MLP (control, 32 problemas de desarrollo) | — | −9,4 puntos frente al base | — |
 
-| Metrica | Original | Editado |
-|---|---|---|
-| Accuracy, 384 problemas | 9,38 % | 53,65 % (+44,27 ± 2,56 pts; IC 95 % 39,32-49,22) |
-| GSM8K train (192) | 10,42 % | 65,62 % |
-| MATH train (192) | 8,33 % | 41,67 % |
-| Respuestas cortadas por limite | 91,7 % | 28,1 % |
-| Problemas incorrectos a correctos / correctos a incorrectos | — | 171 / 1 |
-
-No se han publicado resultados en MMLU, HumanEval ni otros benchmarks estandar en la informacion disponible. El autor advierte que se trata de particiones de practica, no de MATH-500 ni del test de GSM8K, y que con un presupuesto de 32.768 tokens la mejora seria probablemente menor.
+No se han publicado resultados de MMLU, HumanEval, GSM8K estándar ni otros benchmarks en la información disponible. Los datos anteriores provienen exclusivamente de la model card del autor y no han sido verificados de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 873 M de parametros, aproximadamente 1,8 GB en BF16 y 0,9 GB en Q8_0 para los pesos; sumar overhead de contexto y activaciones (no cuantificado en la informacion disponible).
-- GPU recomendadas: el autor realizo los pases forward de evaluacion en una Tesla T4; cualquier GPU con al menos 4 GB de VRAM deberia bastar para BF16.
-- Cabe en GPU de consumo: si, en tarjetas tipo RTX 3060, RTX 4060 o superiores; tambien en CPU via llama.cpp.
-- Opciones de despliegue: transformers (con soporte de `Qwen3_5ForConditionalGeneration`), llama.cpp, Ollama (probado con Ollama 0.40.13) y el endpoint `ollamagdp/qwen3.5-0.8b-scalpello-b2-gdp`. vLLM y TGI: no disponible en la informacion proporcionada.
-- Latencia y throughput: no disponibles. Los GGUFs usan tensores separados `attn_qkv`/`attn_gate` y `ssm_beta`/`ssm_alpha` para compatibilidad con Ollama 0.40.x.
+- VRAM estimada para inferencia en bf16: aproximadamente 1,6 GB para los pesos (tamaño del tag bf16 en Ollama), más overhead de activaciones y contexto.
+- VRAM estimada en Q8_0: aproximadamente 834 MB para los pesos, más overhead.
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM para Q8_0; el autor realizó los forward passes de edición en una Tesla T4 de 16 GB en fp16.
+- Cabe en GPU consumer: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, incluso en configuraciones de baja VRAM gracias a la cuantización Q8_0.
+- Opciones de despliegue: transformers (librería declarada), Ollama (tags `latest`/`q8_0` y `bf16`), GGUF para llama.cpp; vLLM y TGI no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| odelpa/qwen3.5-0.8b-scalpello-b2-gdp | 873 M | no disponible (evaluado a 8.192) | Apache-2.0 | Edicion de pesos sobre Qwen3.5-0.8B; 53,65 % en 384 problemas de practica GSM8K/MATH |
-| Qwen/Qwen3.5-0.8B | 873 M | no disponible | Apache-2.0 (segun el derivado) | Modelo base sin editar; 9,38 % en el mismo conjunto por truncamiento |
-| Alternativas de ~1B para matematicas | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
-
-La comparacion directa mas informativa es contra su propio modelo base, ya que la unica diferencia son los 12 tensores editados. No se han proporcionado resultados de otros modelos de tamano similar en el mismo conjunto de evaluacion.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| odelpa/qwen3.5-0.8b-scalpello-b2-gdp | 873.438.784 | no disponible | apache-2.0 | safetensors, GGUF | Edición de pesos en forma cerrada; 53,65% en 384 problemas held-out según el autor |
+| Qwen/Qwen3.5-0.8B (base) | no disponible en la información | no disponible | no disponible en la información | safetensors | Modelo de partida; 9,38% en el mismo conjunto según el autor |
+| Alternativas de ~1B parámetros | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos de otros modelos en la información disponible |
 
 ## Limitaciones y advertencias
 
-- La evaluacion usa particiones de practica de GSM8K y MATH, no los conjuntos de test oficiales ni MATH-500; los resultados no son directamente comparables con cifras publicadas de benchmarks estandar.
-- El limite de evaluacion es de 8.192 tokens en lugar de los 32.768 del modelo base, por lo que la mejora observada probablemente se reduce con presupuestos mayores.
-- Se realizo una unica ejecucion de evaluacion; no hay replicas independientes ni intervalos por cohorte mas alla del IC global.
-- La edicion elimina un obstaculo de bucle, no anade conocimiento: en dominios fuera de matematicas el efecto no esta caracterizado.
-- El unico fallo documentado (math:1511) es un caso en el que el modelo editado entra en bucle despues de alcanzar la respuesta correcta, lo que indica que el modo de fallo no se elimina por completo.
-- Riesgo de alucinacion: no cuantificado en la informacion proporcionada; el modelo base de 873 M tiene capacidad limitada de conocimiento factual.
-- Idiomas: solo ingles e italiano segun los metadatos; el rendimiento en castellano no esta documentado.
-- Sesgos: no documentados por el autor.
-- Licencia Apache-2.0 permite uso comercial, pero el articulo asociado es CC BY 4.0 y el prompt de tarea deriva del harness MIT de Takehi et al., lo que conviene revisar si se reutiliza.
-- El modelo requiere una version de transformers que soporte `Qwen3_5ForConditionalGeneration`; los GGUFs son solo de texto y no incluyen la torre de vision.
-- El proceso de creacion dependio de un modelo frontera propietario como editor de API; la reproducibilidad exacta de la direccion `u` requiere acceso a ese servicio.
+- Los resultados de mejora (9,38% → 53,65%) proceden únicamente de la model card del autor y no han sido replicados de forma independiente; deben tratarse como no verificados.
+- La evaluación se realizó sobre 384 problemas emparejados de GSM8K train y MATH train, no sobre los conjuntos de test oficiales, lo que limita la comparabilidad con cifras publicadas de otros modelos.
+- El proceso de selección de la edición usó solo 32 problemas de desarrollo y 3 pares de textos para derivar la dirección u; el riesgo de sobreajuste a esa muestra reducida no está cuantificado en la información disponible.
+- El modelo solo declara soporte de inglés e italiano; no hay datos sobre comportamiento en castellano ni en otros idiomas.
+- No se han publicado evaluaciones de regresión en generación de texto general, visión, tool calling o agentes tras la edición; el resto de capacidades podría haberse visto afectado de forma no medida.
+- La edición se aplicó en bf16 y los forward se evaluaron en fp16, con un redondeo relativo de aproximadamente 0,16% en los tensores editados; pequeñas diferencias numéricas entre precisiones son esperables.
+- Riesgo de alucinación: no cuantificado en la información disponible; el modelo base es de 0,8B parámetros y cabe esperar las limitaciones típicas de esa escala.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo editado en producción.
+- El modelo está pensado como artefacto de investigación en edición de pesos; no se recomienda como sustituto generalista del Qwen3.5-0.8B base sin una evaluación propia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/odelpa/qwen3.5-0.8b-scalpello-b2-gdp
+- Hugging Face: https://huggingface.co/odelpa/qwen3.5-0.8b-scalpello-b2-gdp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Articulo (DOI, IT/EN): https://doi.org/10.5281/zenodo.24416418
+- Artículo v1.1 en Zenodo: https://zenodo.org/records/24422781
+- DOI v1.1: https://doi.org/10.5281/zenodo.24422781
+- DOI de todas las versiones: https://doi.org/10.5281/zenodo.24416417
+- Versión 1.0: https://zenodo.org/records/24416418
+- DOI versión 1.0: https://doi.org/10.5281/zenodo.24416418
+- PDF en italiano: https://zenodo.org/records/24422781/preview/scalpello_article_IT.pdf
+- PDF en inglés: https://zenodo.org/records/24422781/preview/scalpello_article_EN.pdf
+- PDF bilingüe IT+EN: https://zenodo.org/records/24422781/preview/scalpello_article_IT_EN.pdf
 - Ollama: https://ollama.com/ollamagdp/qwen3.5-0.8b-scalpello-b2-gdp
-- Referencia metodologica citada: Takehi, Teoh, Zhang, Khattab (MIT CSAIL), weight-space programming, 2 de noviembre de 2026 (sin URL en la informacion proporcionada)
-- Ficheros GGUF, articulos PDF y figuras: disponibles en el repositorio del modelo, carpetas `gguf/`, `paper/` y `figures/`
+- Publicaciones del autor: https://odelpa-pubblicazioni.static.hf.space
+- Post en X (v1.1): https://x.com/Giovannivk8y/status/2124183195490886002
+- Post en X (v1.0): https://x.com/Giovannivk8y/status/2124166148472135891
+- LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7529935580227338240/
+- Facebook: https://www.facebook.com/giovanni.delpapa/posts/pfbid036jmA4skoWJ9vW1Kjnr9a5pNYP53znzR8J9hiASCstAtEQ3V2Fbny8QCR4RxZcCLql
+- Instagram: https://www.instagram.com/delpajhonny/p/DgAlfOpBvmE/

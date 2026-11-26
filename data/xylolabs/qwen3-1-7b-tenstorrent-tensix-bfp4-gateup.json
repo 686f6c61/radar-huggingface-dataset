@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-1.7B-Tenstorrent-Tensix-BFP4-GateUp",
   "created_at": "2026-11-22T10:40:02.000Z",
-  "updated_at": "2026-11-23T06:40:09.000Z",
+  "updated_at": "2026-11-25T17:13:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",

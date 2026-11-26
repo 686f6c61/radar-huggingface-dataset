@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/SenseVoiceSmall-Tenstorrent-Tensix-Precision-Components",
   "created_at": "2026-11-14T09:43:35.000Z",
-  "updated_at": "2026-11-23T06:42:51.000Z",
+  "updated_at": "2026-11-25T16:51:18.000Z",
   "license": "funasr-model-license-1.1",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

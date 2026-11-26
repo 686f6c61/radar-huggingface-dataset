@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "improved-harness-vla/Improved-Harness-VLA-runs",
+  "slug": "improved-harness-vla-improved-harness-vla-runs",
+  "author": "improved-harness-vla",
+  "url": "https://huggingface.co/improved-harness-vla/Improved-Harness-VLA-runs",
+  "created_at": "2026-11-26T12:19:47.000Z",
+  "updated_at": "2026-11-26T12:35:30.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "improved - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/improved",
+      "snippet": "Voir la traduction automatique de Google Translate de 'improved'. Dans d'autres langues : espagnol | italien | portugais | roumain | …Read more"
+    },
+    {
+      "title": "improve - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/improve.html",
+      "snippet": "Dictionnaire anglais-français improve (sth.) verbe (improved, improved) s'améliorer v (usage fréquent) The economic situation …Read more"
+    },
+    {
+      "title": "Traduction IMPROVED en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/improved",
+      "snippet": "Traduction de \"improved\" en français : amélioré, optimisé, perfectionné. Adjectif, signification, prononciation, expressions …Read more"
+    },
+    {
+      "title": "IMPROVED | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/improved",
+      "snippet": "IMPROVED definition: 1. having become or been made better than before: 2. having become or been made better than…. Learn more."
+    },
+    {
+      "title": "IMPROVED Synonyms: 140 Similar and Opposite Words - Merriam …",
+      "url": "https://www.merriam-webster.com/thesaurus/improved",
+      "snippet": "2 days ago · Synonyms for IMPROVED: evolved, advanced, higher, developed, enhanced, high, progressive, late; Antonyms of …Read more"
+    }
+  ]
+}

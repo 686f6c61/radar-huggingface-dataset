@@ -5,9 +5,9 @@
   "author": "aitamedia",
   "url": "https://huggingface.co/aitamedia/Hy4-flash-EXL3-3.0bpw",
   "created_at": "2026-11-18T16:40:16.000Z",
-  "updated_at": "2026-11-19T22:24:47.000Z",
-  "license": "other",
-  "license_family": "oss",
+  "updated_at": "2026-11-25T19:51:07.000Z",
+  "license": "tencent-hy-license",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [

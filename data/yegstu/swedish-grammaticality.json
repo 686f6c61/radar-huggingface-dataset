@@ -5,7 +5,7 @@
   "author": "YegStu",
   "url": "https://huggingface.co/YegStu/swedish-grammaticality",
   "created_at": "2026-11-24T22:23:47.000Z",
-  "updated_at": "2026-11-24T22:34:01.000Z",
+  "updated_at": "2026-11-25T10:22:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 149605633,
   "parameters_human": "149.6M",

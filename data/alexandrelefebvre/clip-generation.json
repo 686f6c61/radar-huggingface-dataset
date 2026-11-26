@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "alexandrelefebvre/clip-generation",
+  "slug": "alexandrelefebvre-clip-generation",
+  "author": "alexandrelefebvre",
+  "url": "https://huggingface.co/alexandrelefebvre/clip-generation",
+  "created_at": "2026-11-26T08:32:40.000Z",
+  "updated_at": "2026-11-26T08:32:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI for Architectural Façade Design - MDPI",
+      "url": "https://www.mdpi.com/2075-5309/15/17/3212",
+      "snippet": "05.09.2025 ... The image segmentation module (1) is based on a semantic segmentation model called ClipSeg, which has been selected due to its simplicity [48]."
+    }
+  ]
+}

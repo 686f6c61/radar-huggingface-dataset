@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-nl_nl-mls-medium-espeak",
   "created_at": "2026-11-16T18:07:44.000Z",
-  "updated_at": "2026-11-16T18:07:50.000Z",
+  "updated_at": "2026-11-25T12:47:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

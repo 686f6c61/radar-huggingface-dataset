@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "tang866/Qwen1.5-14B-Chat",
+  "slug": "tang866-qwen1-5-14b-chat",
+  "author": "tang866",
+  "url": "https://huggingface.co/tang866/Qwen1.5-14B-Chat",
+  "created_at": "2026-11-26T05:56:52.000Z",
+  "updated_at": "2026-11-26T05:56:52.000Z",
+  "license": "tongyi-qianwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2309.16609",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14167290880,
+  "parameters_human": "14.17B",
+  "storage_bytes": 28334637304,
+  "storage_human": "28.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

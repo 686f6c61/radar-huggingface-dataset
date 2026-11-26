@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 222,
+  "downloads_30d": 229,
   "trending_score": 0,
   "parameters": 302863104,
   "parameters_human": "302.9M",
@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PersianML/Shenava-Koochik-v1.0 at main - Hugging Face",
-      "url": "https://huggingface.co/PersianML/Shenava-Koochik-v1.0/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Reza2kn/Shenava-Koochik-v1.0-CoreML-fp16 at main - Hugging Face",
-      "url": "https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0-CoreML-fp16/tree/main",
-      "snippet": "Reza2kn add coreml fa4e71e verified about 6 hours ago shenava-koochik-v1.0_ctc_fixed2005_len_fp16.mlpackage add coreml about 6 hours ago .gitattributes Safe"
-    }
-  ]
+  "sources": []
 }

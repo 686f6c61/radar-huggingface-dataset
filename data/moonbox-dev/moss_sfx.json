@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/MOSS-SoundEffect-v2.0-MLX-PyTorch",
+  "renamed_at": "2026-11-26T11:48:54.585Z",
   "benchmarks": [],
   "sources": []
 }

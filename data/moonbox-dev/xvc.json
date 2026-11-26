@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/X-VC-PyTorch",
+  "renamed_at": "2026-11-26T11:49:01.987Z",
   "benchmarks": [],
   "sources": []
 }

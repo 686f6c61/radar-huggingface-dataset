@@ -65,17 +65,12 @@
     {
       "title": "LAION · Open AI research for everyone",
       "url": "https://laion.ai/",
-      "snippet": "LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research and education."
+      "snippet": "Aug 4, 2025 · LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research …"
     },
     {
-      "title": "LAION Humaneness Voice Large: Open Two-Speaker Podcast TTS",
-      "url": "https://www.llms.blog/posts/laion-humaneness-voice-large-podcast-tts",
-      "snippet": "LAION has posted Humaneness Voice Large, NotebookLM Edition on Hugging Face, an open-weight text-to-speech model built for one job: turning a written two-person script into a podcast-style conversation. You give it the dialogue and two short voice recordings, and it returns the whole exchange as one audio file."
-    },
-    {
-      "title": "LAION AI - GitHub",
-      "url": "https://github.com/LAION-AI",
-      "snippet": "Humaneness-Voice Public Open voice-acting agent: director, expressive speech model, LoRA tools, perceptual selection, and reproducible demo."
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit organization which makes open …"
     },
     {
       "title": "LAION — Wikipédia",
@@ -83,9 +78,14 @@
       "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …"
     },
     {
-      "title": "GitHub - LAION-AI/Humaneness-Voice: Open voice-acting agent: director ...",
-      "url": "https://github.com/LAION-AI/Humaneness-Voice",
-      "snippet": "Open voice-acting agent: director, expressive speech model, LoRA tools, perceptual selection, and reproducible demo. - LAION-AI/Humaneness-Voice"
+      "title": "Projects · LAION",
+      "url": "https://laion.ai/projects/",
+      "snippet": "Aug 30, 2024 · Datasets, models, tools, papers, and historical releases from LAION and its research community."
+    },
+    {
+      "title": "laion (LAION eV) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/laion/datasets",
+      "snippet": "laion/german-english-voice-acting-challenges ... laion/laion-cell-000 ... laion/academic-textbook-links ... laion/singing-voice-data-lab …"
     }
   ]
 }

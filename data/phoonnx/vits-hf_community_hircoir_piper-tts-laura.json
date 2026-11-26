@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_HirCoir_Piper-TTS-Laura",
   "created_at": "2026-11-14T23:04:47.000Z",
-  "updated_at": "2026-11-16T11:43:03.000Z",
+  "updated_at": "2026-11-25T12:50:12.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 77,
+  "downloads_30d": 82,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

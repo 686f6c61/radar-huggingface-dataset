@@ -5,7 +5,7 @@
   "author": "anan19990108",
   "url": "https://huggingface.co/anan19990108/efficientdet-lite0-qcs8550-htp",
   "created_at": "2026-11-05T04:06:44.000Z",
-  "updated_at": "2026-11-25T03:04:21.000Z",
+  "updated_at": "2026-11-26T06:36:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -21,7 +21,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "anan19990108/efficientdet-lite0-htp",
+  "renamed_at": "2026-11-26T07:13:13.251Z",
   "benchmarks": [],
   "sources": []
 }

@@ -9,17 +9,17 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
-  "library": null,
+  "library": "mediapipe",
   "languages": [
     "en"
   ],
   "tags": [
+    "mediapipe",
     "joblib",
     "face-mesh",
     "facial-expression",
     "emotion-recognition",
     "blendshapes",
-    "mediapipe",
     "lazarus-companion",
     "image-feature-extraction",
     "en",

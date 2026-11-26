@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3-Instruct-8B-SPPO-Iter2-GGUF",
+  "slug": "mradermacher-llama-3-instruct-8b-sppo-iter2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-Instruct-8B-SPPO-Iter2-GGUF",
+  "created_at": "2024-12-14T04:43:30.000Z",
+  "updated_at": "2026-11-26T07:12:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:openbmb/UltraFeedback",
+    "base_model:UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter2",
+    "base_model:quantized:UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 154,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820231936,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

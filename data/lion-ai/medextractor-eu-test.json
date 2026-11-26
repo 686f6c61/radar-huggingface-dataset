@@ -5,7 +5,7 @@
   "author": "lion-ai",
   "url": "https://huggingface.co/lion-ai/medextractor-eu-test",
   "created_at": "2026-11-25T23:09:45.000Z",
-  "updated_at": "2026-11-25T23:10:24.000Z",
+  "updated_at": "2026-11-26T01:24:57.000Z",
   "license": "test-build-not-for-redistribution",
   "license_family": "unknown",
   "pipeline_tag": "token-classification",

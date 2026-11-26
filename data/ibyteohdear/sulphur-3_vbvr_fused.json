@@ -5,7 +5,7 @@
   "author": "ibyteohdear",
   "url": "https://huggingface.co/ibyteohdear/Sulphur-3_VBVR_FUSED",
   "created_at": "2026-11-23T04:11:28.000Z",
-  "updated_at": "2026-11-25T06:03:59.000Z",
+  "updated_at": "2026-11-26T06:20:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -19,11 +19,10 @@
     "image-to-video",
     "audio-video",
     "10eros",
-    "lora-fused",
     "not-for-all-audiences",
     "custom_code",
-    "base_model:ibyteohdear/Sulphur-3",
-    "base_model:finetune:ibyteohdear/Sulphur-3",
+    "base_model:multimodalart/MiniMax-H3-Pruned",
+    "base_model:finetune:multimodalart/MiniMax-H3-Pruned",
     "region:us"
   ],
   "likes": 0,
@@ -34,7 +33,7 @@
   "storage_bytes": 40238508412,
   "storage_human": "40.2 GB",
   "context_length": null,
-  "base_model": "ibyteohdear/Sulphur-3",
+  "base_model": "multimodalart/MiniMax-H3-Pruned",
   "formats": [
     "diffusers",
     "safetensors"

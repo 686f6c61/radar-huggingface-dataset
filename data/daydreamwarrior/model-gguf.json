@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "daydreamwarrior/model-GGUF",
+  "slug": "daydreamwarrior-model-gguf",
+  "author": "daydreamwarrior",
+  "url": "https://huggingface.co/daydreamwarrior/model-GGUF",
+  "created_at": "2026-11-26T10:00:26.000Z",
+  "updated_at": "2026-11-26T10:00:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 198676,
+  "parameters_human": "198676",
+  "storage_bytes": 659968,
+  "storage_human": "659968 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,116 +2,130 @@
 
 ## Resumen
 
-RaahNaame-Koochik-v1 (راه‌نامه) es un modelo de embeddings de texto para persa (farsi) desarrollado por Reza2kn, publicado en Hugging Face en noviembre de 2026. Se construye a partir de `google/embeddinggemma-300m` mediante destilación de conocimiento desde dos profesores de mayor tamano: F2LLM-v2-14B, para tareas de clasificacion, clustering, STS y estructura general del texto, y Gemini Embedding 2, para recuperacion (ranking consulta-pasaje). El resultado es un modelo de 302,8 millones de parametros que produce vectores densos de 768 dimensiones normalizados en L2.
+RaahNaame-Koochik-v1 (راه‌نامه, "guía pequeña" en persa) es un modelo de embeddings de texto para persa desarrollado por Reza2kn. Se construye sobre `google/embeddinggemma-300m` mediante destilación de conocimiento desde dos profesores mucho mayores: F2LLM-v2-14B (para clasificación, clustering, STS y estructura de texto general) y Gemini Embedding 2 (para recuperación query→passage). El resultado es un modelo de 302,8 millones de parámetros que ofrece un rendimiento cercano a modelos de hasta 1,7B parámetros en la categoría.
 
-El problema que resuelve es la brecha de calidad entre modelos de embeddings multilingues genericos y modelos especializados en persa de gran tamano. Segun la model card, el modelo alcanza 71,54 de media de tarea y 74,02 de media de tipo de tarea en MTEB(fas, v2) sobre 52 tareas, lo que supone +3,7 puntos sobre el modelo base EmbeddingGemma-300m y lo situa por delante de todos los modelos de hasta 1,7B parametros evaluados en ese benchmark. Es relevante porque ofrece calidad cercana a modelos de 4B-14B con un coste de inferencia de un modelo de 0,3B.
+El modelo resuelve el problema de la baja cobertura de embeddings de alta calidad para persa (farsi) en tamaños pequeños y desplegables en CPU. En MTEB(fas, v2), con 52 tareas, alcanza 71,44 Mean(Task) y 73,89 Mean(TaskType), lo que supone +3,7 puntos sobre la base EmbeddingGemma-300m y lo sitúa por delante de todos los modelos de hasta 1,7B parámetros evaluados en ese benchmark. Es relevante ahora porque demuestra que la destilación desde profesores de 14B permite a un modelo de 0,3B competir en un idioma de recursos medios sin necesidad de infraestructura de GPU grande.
 
-La ficha se basa exclusivamente en la informacion publicada en Hugging Face y en los resultados de busqueda disponibles. No se dispone de paper, blog tecnico ni repositorio de codigo independientes.
+La arquitectura hereda la de Gemma 3 text (transformer denso) con cabezas Dense para embeddings, salida de 768 dimensiones L2-normalizadas y truncamiento Matryoshka heredado (512/256/128) aunque sin reajustar. Soporta prompts por tarea (retrieval, clasificación, clustering, STS, pair classification) siguiendo el esquema de EmbeddingGemma.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder derivado de Gemma 3 text (base: `google/embeddinggemma-300m`), con cabezas Dense para embeddings |
-| Parametros totales | 302.863.104 (segun safetensors); la model card indica 308M |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | No disponible (pesos publicados en safetensors, presumiblemente bf16/fp32); truncamiento Matryoshka heredado a 512/256/128 dimensiones, no reajustado |
-| Idiomas soportados | Persa (fa) e ingles (en) |
+| Arquitectura | Transformer denso (gemma3_text) con cabezas Dense para embeddings |
+| Parametros totales | 302.863.104 (~303M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors fp32; compatible con text-embeddings-inference) |
+| Idiomas soportados | persa (fa), ingles (en) |
 | Licencia | Gemma Terms of Use (derivado de EmbeddingGemma) |
-| Formato de pesos | safetensors (repo de 1,3 GB) |
-| Dimension de salida | 768 dimensiones, normalizadas L2 |
+| Formato de pesos | safetensors |
+| Dimension de embedding | 768 (L2-normalizado, cosine similarity) |
+| Truncamiento Matryoshka | 512 / 256 / 128 (heredado, no reajustado) |
+| Modelo base | google/embeddinggemma-300m |
 | Libreria | sentence-transformers |
 | Tamano del repo | 1,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo de `google/embeddinggemma-300m`, incluyendo las cabezas Dense del modelo base. La arquitectura subyacente es la de Gemma 3 text, un transformer encoder adaptado a produccion de embeddings. El entrenamiento combina dos funciones de perdida: InfoNCE in-batch con peso 0,25 y una divergencia KL entre las distribuciones de ranking del estudiante y del profesor sobre positivos, negativos duros y candidatos in-batch con peso 0,75. En lotes de texto general se anaden una KL relacional sobre la matriz de similitudes y una proyeccion coseno al espacio de 5120 dimensiones del profesor de 14B.
+El estudiante es el modelo completo `google/embeddinggemma-300m`, incluidas las cabezas Dense. El entrenamiento combina dos perdidas: InfoNCE in-batch (peso 0,25) y una divergencia KL entre las distribuciones de ranking del estudiante y del profesor sobre positivos, negativos duros y candidatos in-batch (peso 0,75). En lotes de texto general se anaden una KL relacional (matriz de similitud) y una proyeccion coseno al espacio de 5120 dimensiones del profesor de 14B.
 
-El profesor de recuperacion es Gemini Embedding 2, cuyos logits de similitud (temperatura 0,02, calibrada a la confianza del profesor de 14B) son los objetivos en lotes de recuperacion; los negativos duros se minaron con Gemini. El otro profesor es F2LLM-v2-14B (temperatura 0,07). El entrenamiento tiene dos etapas de 5.000 pasos cada una: la primera sobre datos persas etiquetados por los profesores (pares consulta-pasaje derivados de Yalda, datos de tareas de F2LLM, un conjunto de dominios de noticias, medicina, ciencia y redes sociales, y texto web general); la segunda anade aproximadamente 285.000 grupos supervisados construidos a partir de los splits de entrenamiento de datasets de benchmark persas, con objetivos del profesor de 14B. Se usa learning rate 5e-6 con schedule coseno. El modelo final es la media uniforme de los checkpoints de la etapa 2 en los pasos 3000, 4000 y 5000, fusionada por pesos 75/25 con el modelo de la etapa 1.
+El profesor de recuperacion es Gemini Embedding 2, cuyos logits de similitud (τ = 0,02, calibrados a la confianza del 14B) son los objetivos en lotes de retrieval; los negativos duros se minaron con Gemini. El otro profesor es F2LLM-v2-14B (τ = 0,07). El entrenamiento tiene dos etapas de 5k pasos cada una: la primera sobre datos persas etiquetados por profesores (pares query-passage derivados de Yalda, datos de tareas F2LLM, un conjunto de dominios de noticias/medicina/ciencia/social y texto web general); la segunda anade ~285k grupos supervisados construidos a partir de los splits de train de datasets de benchmark persas, con objetivos del 14B. LR 5e-6 con schedule coseno. El modelo final es la media uniforme de los checkpoints de la etapa 2 en los pasos 3000, 4000 y 5000, seguida de un weight-merge 75/25 con el modelo de la etapa 1 para conservar las ganancias en clasificacion y recuperar retrieval.
 
-En cuanto a higiene de datos, la model card afirma que se eliminaron de todos los datos de entrenamiento los 167.000 textos de todos los splits de evaluacion de las 52 tareas de MTEB(fas, v2) y 33.500 consultas de test de benchmark. El modelo no es zero-shot en las tareas cuyos splits de entrenamiento se usaron (lista explicita en la model card).
+En cuanto a higiene de datos, se eliminaron de todo el entrenamiento los textos de todos los splits de evaluacion de las 52 tareas de MTEB(fas, v2) (167k textos) y 33,5k queries de test de benchmark. No obstante, se usaron splits de train de 28 tareas de MTEB, por lo que el modelo no es zero-shot en ellas.
 
 ## Capacidades
 
-- Generacion de embeddings de texto para similitud semantica y recuperacion de informacion en persa e ingles.
-- Recuperacion consulta-pasaje (retrieval) con prompts especificos: `task: search result | query: ` para consultas y `title: none | text: ` para documentos.
-- Clasificacion de texto mediante el prompt `task: classification | query: `.
-- Clustering de textos con el prompt `task: clustering | query: `.
-- Similitud semantica de frases (STS) y clasificacion de pares con `task: sentence similarity | query: `.
-- Resumen (prompt `Summarization`) y mineria de bitextos.
-- Soporte de truncamiento Matryoshka a 512, 256 y 128 dimensiones (heredado del modelo base, no reajustado).
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints compatibles.
-- No dispone de generacion de texto, tool calling, agentes, vision ni audio: es un modelo exclusivamente de embeddings.
+- Generacion de embeddings de texto para similitud semantica y feature extraction.
+- Recuperacion de informacion (query → passage ranking) con prompts especificos.
+- Clasificacion de texto y clasificacion de pares (pair classification).
+- Clustering de documentos y agrupamiento semantico.
+- Similitud semantica textual (STS) y reranking.
+- Bitext mining (alineamiento entre persa e ingles).
+- Sumarizacion como tarea de embedding (prompt `Summarization`).
+- Soporte de prompts por tarea via `prompt_name` en sentence-transformers.
+- Compatible con text-embeddings-inference para despliegue en servidor.
+- Capacidades multilingues limitadas a persa e ingles.
+- No es un modelo generativo: no hace tool calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Busqueda semantica en corpus persas: indexar documentos con `encode_document` y consultar con `encode_query` para construir un motor de busqueda interna sobre noticias, documentacion o bases de conocimiento en farsi, aprovechando la mejora de retrieval del profesor Gemini Embedding 2.
-- Sistemas RAG en persa: usar el modelo como recuperador en pipelines de generacion aumentada, con vectores de 768 dimensiones que caben comodamente en indices vectoriales (FAISS, Qdrant, pgvector) y un coste de inferencia bajo por su tamano de 0,3B.
-- Clasificacion de tickets y mensajes de soporte: entrenar un clasificador ligero sobre los embeddings con el prompt de clasificacion para enrutar consultas de atencion al cliente en farsi por dominio o intencion.
-- Deduplicacion y clustering de noticias: agrupar articulos o publicaciones de redes sociales por similitud coseno para detectar duplicados y temas, usando el prompt de clustering.
-- Moderacion y analisis de sentimiento en redes sociales: los resultados por tipo de tarea (clasificacion 76,33; pair classification 85,38) lo hacen adecuado para tareas de analisis de tono, emocion y sentimiento en texto persa.
-- Deteccion de parafrasis y plagio: comparar pares de frases con el prompt de similitud de frases para identificar reformulaciones en contenidos persas.
-- Mineria de bitextos fa-en: alinear oraciones paralelas entre persa e ingles (bitext mining 77,01) para construir corpus de traduccion o evaluar sistemas de traduccion.
-- Filtrado y recomendacion de contenido: calcular similitud entre perfiles de usuario y articulos en farsi para recomendadores semanticos.
+- Busqueda semantica en persa: indexar un corpus de documentos persas con `encode_document` y consultar con `encode_query`; el modelo usa el prompt de retrieval (`task: search result | query:`) y devuelve similitudes coseno calibradas para ranking.
+- RAG sobre documentacion en persa: generar embeddings de chunks de manuales, normativa o articulos y recuperar los fragmentos relevantes para un LLM generativo, aprovechando la mejora de +3,7 puntos sobre la base en MTEB(fas).
+- Clasificacion de tickets y correos: usar el prompt `Classification` para obtener vectores y entrenar un clasificador ligero encima (regresion logistica o kNN) para enrutar consultas de soporte en persa.
+- Deduplicacion y clustering de noticias: agrupar articulos de medios persas por similitud coseno con el prompt `Clustering` para detectar duplicados o construir temas.
+- Deteccion de parafrasis y plagio: usar `PairClassification` o `STS` para comparar pares de frases y detectar reescrituras o similitud encubierta.
+- Filtrado de contenido y moderacion: comparar mensajes contra una lista de referencias problematicas mediante similitud semantica, con la ventaja de que el modelo cabe en CPU.
+- Alineamiento bilingue persa-ingles: usar la capacidad de bitext mining (76,96 en esa tarea) para emparejar frases de corpus paralelos.
+- Despliegue en entornos sin GPU: al ser 303M parametros, sirve para busqueda semantica en dispositivos modestos o contenedores CPU con text-embeddings-inference.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre MTEB(fas, v2), 52 tareas, evaluados con `mteb` 2.10.12 en bf16:
+MTEB(fas, v2), 52 tareas, evaluado con `mteb` 2.27.4 (fp32) usando los prompts propios del modelo:
 
 | Modelo | Parametros | Mean(Task) | Mean(TaskType) | Borda rank |
 |---|---:|---:|---:|---:|
 | F2LLM-v2-14B | 14B | 73,94 | 76,30 | 1 |
 | F2LLM-v2-8B | 8B | 73,04 | 75,25 | 2 |
 | F2LLM-v2-4B | 4B | 72,07 | 74,34 | 3 |
-| **RaahNaame-Koochik-v1** | **0,3B** | **71,54** | **74,02** | **4** |
+| RaahNaame-Koochik-v1 | 0,3B | 71,44 | 73,89 | 4 |
 | F2LLM-v2-1.7B | 1,7B | 70,39 | 72,94 | 5 |
 | Hakim | 0,1B | 71,58 | 75,13 | 6 |
-| F2LLM-v2-0.6B | 0,6B | 68,33 | 70,88 | – |
-| EmbeddingGemma-300m (base) | 0,3B | 67,76 | 70,84 | – |
+| F2LLM-v2-0.6B | 0,6B | 68,33 | 70,88 | — |
+| EmbeddingGemma-300m (base) | 0,3B | 67,76 | 70,84 | — |
 
-Desglose por tipo de tarea del modelo: clasificacion 76,33; clustering 70,08; clasificacion de pares 85,38; reranking 70,49; retrieval 60,07; STS 78,78; bitext mining 77,01.
+Desglose por tipo de tarea (RaahNaame-Koochik-v1):
 
-El Borda rank se calcula entre los 32 modelos con resultados en las 52 tareas del repositorio publico `embeddings-benchmark/results`, segun computo propio del autor (noviembre de 2026); la tabla oficial puede filtrar modelos de forma distinta.
+| Tipo de tarea | Puntuacion |
+|---|---:|
+| Classification | 76,33 |
+| Clustering | 69,38 |
+| Pair classification | 85,29 |
+| Reranking | 70,50 |
+| Retrieval | 60,00 |
+| STS | 78,77 |
+| Bitext mining | 76,96 |
+
+El Borda rank se calcula entre los 32 modelos con resultados en las 52 tareas del repositorio publico `embeddings-benchmark/results` (calculado por el autor, noviembre de 2026); el leaderboard oficial puede filtrar modelos de forma distinta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,6 GB en fp16/bf16 (302,9M parametros) mas overhead de activaciones y tokenizador; en cuantizacion de 8 bits alrededor de 0,3-0,4 GB. El repo ocupa 1,3 GB por incluir pesos en precision completa.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4060 o superior es mas que suficiente. Para lotes grandes de indexacion conviene una A10, L4, A100 o H100 para maximizar throughput.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (GTX 1660, RTX 2060 en adelante) e incluso en CPU para volumenes moderados.
-- Opciones de despliegue: sentence-transformers (referencia), Text Embeddings Inference (TGI para embeddings, tag presente en el repo), vLLM con soporte de embeddings, y exportacion a ONNX o CoreML (el autor mantiene otros repos con variantes CoreML fp16 de modelos propios).
-- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera un throughput alto en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: ~1,2 GB en fp32 (303M parametros a 4 bytes); ~0,6 GB en fp16; ~0,3-0,4 GB en cuantizacion de 8 bits (estimacion a partir del numero de parametros, no publicada por el autor).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona sobradamente en RTX 3060, RTX 4090, A100 y H100. No requiere GPU de datacenter.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (GTX 1650 en adelante) e incluso en CPU.
+- Opciones de despliegue: sentence-transformers (referencia), text-embeddings-inference (tag oficial), y cualquier runtime compatible con safetensors. No se publican pesos GGUF en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por tamano, es apto para servir en CPU con latencias de decenas de milisegundos por lote pequeno, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Mean(Task) MTEB(fas, v2) | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Mean(Task) MTEB fas v2 | Idiomas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| RaahNaame-Koochik-v1 | 0,3B | 71,54 | fa, en | Gemma Terms of Use | Hugging Face |
-| EmbeddingGemma-300m (base) | 0,3B | 67,76 | multilingue | Gemma Terms of Use | Hugging Face (Google) |
-| F2LLM-v2-1.7B | 1,7B | 70,39 | multilingue | no disponible en la informacion | Hugging Face (codefuse-ai) |
-| F2LLM-v2-0.6B | 0,6B | 68,33 | multilingue | no disponible en la informacion | Hugging Face (codefuse-ai) |
-| Hakim | 0,1B | 71,58 | fa (presumible) | no disponible en la informacion | Hugging Face |
+| RaahNaame-Koochik-v1 | 0,3B | 71,44 | fa, en | Gemma Terms | Hugging Face |
+| EmbeddingGemma-300m (base) | 0,3B | 67,76 | multilingue | Gemma Terms | Hugging Face |
+| F2LLM-v2-0.6B | 0,6B | 68,33 | multilingue | no disponible | Hugging Face |
+| F2LLM-v2-1.7B | 1,7B | 70,39 | multilingue | no disponible | Hugging Face |
+| Hakim | 0,1B | 71,58 | fa | no disponible | Hugging Face |
 
-Frente al modelo base, la mejora es de +3,78 puntos en Mean(Task) y +3,18 en Mean(TaskType) con el mismo coste de inferencia. Frente a F2LLM-v2-1.7B, un modelo casi seis veces mayor, supera en 1,15 puntos de media de tarea. Hakim, con 0,1B, obtiene una media de tarea ligeramente superior (71,58 frente a 71,54) pero peor en Mean(TaskType) (75,13 frente a 74,02), aunque su Borda rank es peor (6 frente a 4).
+Frente a EmbeddingGemma-300m, la mejora es de +3,68 puntos en Mean(Task) con el mismo numero de parametros. Frente a F2LLM-v2-1.7B, un modelo casi 6 veces mayor, RaahNaame-Koochik-v1 supera en +1,05 puntos. Hakim, con solo 0,1B, obtiene una Mean(Task) ligeramente superior (71,58) pero peor Mean(TaskType) (75,13 frente a 73,89) y un Borda rank inferior.
 
 ## Limitaciones y advertencias
 
-- El modelo no es zero-shot en las tareas de MTEB(fas, v2) cuyos splits de entrenamiento se usaron (lista explicita en la model card), por lo que las cifras de benchmark pueden estar optimistas respecto a un uso en dominios totalmente nuevos.
-- El alcance linguistico es persa e ingles; el rendimiento en otros idiomas no esta documentado y probablemente sea deficiente.
-- El retrieval es la tarea mas debil del modelo (60,07), muy por debajo de STS (78,78) o clasificacion de pares (85,38).
-- El truncamiento Matryoshka a 512/256/128 dimensiones esta heredado del modelo base pero no se reajusto durante el entrenamiento, por lo que la perdida de calidad con esas dimensiones no esta medida.
-- Riesgo de sesgos: no se documenta analisis de sesgos; al entrenarse con datos persas de noticias, medicina, ciencia y redes sociales, puede heredar sesgos de esas fuentes.
-- Riesgo de alucinacion: no aplica directamente al ser un modelo de embeddings, pero los sistemas RAG que lo usen heredan el riesgo de los generadores que recuperen.
-- Licencia Gemma Terms of Use: el uso comercial esta permitido bajo esas condiciones, pero se deben respetar la Gemma Prohibited Use Policy y los requisitos de atribucion; es una licencia con restricciones de uso, no una licencia permisiva tipo Apache 2.0 o MIT.
-- La longitud maxima de contexto no esta publicada en la informacion disponible; conviene verificar la del modelo base EmbeddingGemma-300m antes de indexar documentos largos.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad.
+- No es zero-shot en 28 tareas de MTEB(fas, v2) cuyos splits de train se usaron en la etapa 2; las puntuaciones en esas tareas pueden estar infladas respecto a un uso real fuera de distribucion.
+- Solo cubre persa e ingles; el rendimiento en otros idiomas no esta documentado y probablemente sea bajo.
+- La tarea de retrieval obtiene 60,00, notablemente por debajo de clasificacion (76,33) y pair classification (85,29); para RAG en persa conviene validar la calidad de recuperacion en el dominio propio.
+- El truncamiento Matryoshka (512/256/128) se hereda del modelo base pero no se reajusto, por lo que las dimensiones reducidas pueden degradar mas de lo esperado.
+- Riesgo de alucinacion no aplica como modelo generativo, pero si de falsos positivos en similitud semantica y en clasificacion con umbrales mal calibrados.
+- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse con datos persas de noticias, medicina, ciencia y redes, puede heredar sesgos de esas fuentes.
+- Licencia Gemma Terms of Use: uso comercial permitido bajo esos terminos, pero sujeto a la Gemma Prohibited Use Policy; revisar obligaciones de atribucion y restricciones antes de produccion.
+- El modelo se creo en noviembre de 2026 y tiene 229 descargas y 3 likes; es muy reciente y con poca validacion independiente.
+- No se publican datos de latencia, throughput ni pesos GGUF; el despliegue en CPU via text-embeddings-inference es posible pero sin cifras oficiales de rendimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Reza2kn/RaahNaame-Koochik-v1
-- Modelo base: https://huggingface.co/google/embeddinggemma-300m
+- Modelo base EmbeddingGemma-300m: https://huggingface.co/google/embeddinggemma-300m
 - Profesor F2LLM-v2-14B: https://huggingface.co/codefuse-ai/F2LLM-v2-14B
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Politica de uso prohibido de Gemma: https://ai.google.dev/gemma/prohibited_use_policy
-- Repositorio de resultados de MTEB: `embeddings-benchmark/results`
-- Repos relacionados del autor (variantes CoreML): https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0-CoreML-fp16
+- Repositorio de resultados de MTEB: https://github.com/embeddings-benchmark/results
+- Libreria MTEB: https://github.com/embeddings-benchmark/mteb

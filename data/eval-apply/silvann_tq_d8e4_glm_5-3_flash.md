@@ -2,93 +2,92 @@
 
 ## Resumen
 
-`silvann_tq_D8E4_glm_5.3_flash` es un empaquetado cuantizado del modelo GLM 5.3 Flash desarrollado por Z.AI, publicado por el usuario eval-apply. No se trata de un modelo nuevo ni de un fine-tuning: el repositorio solo cambia cómo se almacenan los pesos del modelo original para que puedan ser leídos por SiLVANN, el motor de inferencia (GPU Interpreter y librería de redes neuronales) del mismo autor. La model card atribuye explícitamente toda la autoría del modelo a Z.AI y mantiene la licencia MIT original.
+silvann_tq_D8E4_glm_5.3_flash es un empaquetado cuantizado del modelo GLM 5.3 Flash de Z.AI, preparado por el usuario eval-apply para el motor de inferencia SiLVANN (Eval-Apply GPU Interpreter y su librería de redes neuronales). No se trata de un modelo nuevo ni de un fine-tuning: los pesos subyacentes son los de GLM 5.3 Flash y este repositorio solo cambia la forma en que se almacenan, aplicando una rotación Hadamard bloqueada con signos sobre el eje de entrada de cada matriz de pesos y cuantización TurboQuant con escala por fila.
 
-La innovación del paquete es el códec `silvann-packed-v3`, que combina una rotación de Hadamard con signos por bloques aplicada a lo largo del eje de entrada de cada matriz de pesos, seguida de una cuantización con escala por fila (TurboQuant). La política de anchura es `D8E4`: la parte densa (atención, expertos compartidos y MLPs densos) se guarda a 8 bits y los expertos enrutados a 4 bits, mientras que las normas, routers, mapas de hyper-connection y tensores pequeños se conservan sin pérdida. El resultado comprime 598,5 GiB de pesos crudos en 153,8 GiB.
+El pack reduce 598,5 GiB de pesos en bruto a 153,8 GiB, una compresión de aproximadamente 3,9 veces, manteniendo sin pérdida las normas, los routers, los mapas de hiperconexión y otros tensores pequeños, y dejando el embedding y la cabeza en 8 bits. La política de anchos es D8E4: la parte densa (atención, expertos compartidos y MLP densos) a 8 bits y los expertos enrutados a 4 bits.
 
-Su relevancia es práctica: permite ejecutar un modelo de escala frontier en hardware mucho más modesto, a costa de depender de un runtime específico (SiLVANN v0.18.1 o superior) en lugar de `transformers`. La model card reporta una perplejidad de 3,018 en WikiText-2 con esta variante D8E4, frente a 3,095 de la variante D4E4, es decir, un 2,5 % de mejora por 3 GiB adicionales de almacenamiento.
+Su relevancia es práctica: permite ejecutar un modelo de gran tamaño en hardware mucho más modesto que el necesario para los pesos originales, a costa de depender de un runtime específico (SiLVANN v0.18.1 o superior) en lugar de transformers. El formato es `silvann-packed-v3`, descrito por `pack.json` y organizado en registros por capa, con el tokenizador, la plantilla de chat y las configuraciones originales del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el paquete no documenta la del modelo base; la card menciona atención, expertos enrutados y compartidos, MLPs densos y torre de visión) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base GLM 5.3 Flash de Z.AI; el pack no detalla la arquitectura interna) |
+| Parametros totales | no disponible (pesos en bruto de 598,5 GiB) |
+| Parametros activos | no disponible (el pack menciona expertos enrutados y expertos compartidos, lo que sugiere arquitectura MoE, sin cifras) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | D8E4: 8 bits en parte densa y embeddings/head, 4 bits en expertos enrutados; tensores pequeños sin pérdida; codec TurboQuant con rotación Hadamard bloqueada y escala por fila |
+| Tipos de cuantizacion | TurboQuant con rotacion Hadamard bloqueada y escala por fila; politica D8E4 (densa a 8 bits, expertos enrutados a 4 bits); embedding y cabeza a 8 bits; tensores pequeños sin perdida |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | `silvann-packed-v3` (no compatible con `transformers`; requiere runtime SiLVANN) |
+| Formato de pesos | silvann-packed-v3 (no compatible con transformers; requiere runtime SiLVANN) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ni modifica el modelo: es un reempaquetado de los pesos originales de GLM 5.3 Flash. Por los elementos citados en la model card (atención, expertos enrutados, expertos compartidos, MLPs densos, routers, mapas de hyper-connection y torre de visión) se deduce una arquitectura de tipo transformer con mezcla de expertos (MoE) y capacidad multimodal, aunque el repositorio no publica el número de parámetros, la distribución de expertos ni la longitud de contexto.
+La información disponible no describe la arquitectura del modelo base GLM 5.3 Flash más allá de la presencia de atención, expertos compartidos, expertos enrutados y MLP densos, lo que apunta a un transformer con mezcla de expertos. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO; todos estos datos corresponden al modelo original de Z.AI y no se incluyen en la model card del pack.
 
-La contribución técnica está en el códec de compresión. Cada matriz de pesos se rota a lo largo de su eje de entrada mediante una rotación de Hadamard con signos por bloques, lo que reparte la energía de los valores y reduce los outliers antes de cuantizar; después se aplica una escala por fila (TurboQuant). La parte densa va a 8 bits y los expertos enrutados a 4 bits. Además, el layout en disco está alineado con el motor: el gate y el up de cada experto enrutado se guardan como un único registro junto a su down, de modo que leer un experto desde disco requiere una sola lectura donde antes había cinco (a partir de SiLVANN v0.18.1). No se documentan datos de entrenamiento, tokens, RLHF ni DPO, porque corresponden al modelo base y no al empaquetado.
+La innovación técnica de este repositorio es el propio esquema de compresión. Cada matriz de pesos se rota a lo largo de su eje de entrada mediante una rotación Hadamard bloqueada combinada con signos, y después se cuantiza con TurboQuant usando una escala por fila. Los expertos enrutados se almacenan con su gate y su up en un único registro junto al down, de modo que leer un experto del disco requiere una sola operación en lugar de cinco en versiones anteriores a SiLVANN v0.18.1. El pack incluye además una torre de visión dentro de `global.pkl`, junto al embedding, la cabeza y la norma final.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base GLM 5.3 Flash (no detalladas en el repositorio).
-- Procesamiento de visión: el paquete incluye una torre de visión en `global.pkl`, por lo que el modelo base es multimodal.
-- Mezcla de expertos: el modelo base usa expertos enrutados y compartidos, lo que sugiere una arquitectura MoE dispersa.
-- Tool calling y function calling: no disponible en la información proporcionada.
+- Generación de texto y razonamiento: heredadas del modelo base GLM 5.3 Flash, aunque la model card no las detalla.
+- Procesamiento de visión: el pack conserva una torre de visión en `global.pkl`, lo que indica capacidad multimodal de entrada de imagen.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking u otras capacidades especiales: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles; no se declaran idiomas en el repositorio.
+- Modo thinking: no disponible en la información proporcionada.
+- Compatibilidad de tokenizador y plantilla de chat: se conservan los originales del modelo base.
 
 ## Casos de uso
 
-- Despliegue de un modelo de escala frontier en un solo nodo multi-GPU: el empaquetado reduce 598,5 GiB a 153,8 GiB, lo que permite servir GLM 5.3 Flash en un nodo de 8 GPU de 24-48 GB en lugar de requerir un clúster mayor, siempre que se use el runtime SiLVANN.
-- Inferencia con restricciones de memoria en producción: la política D8E4 mantiene la parte densa a 8 bits para preservar calidad en atención y MLPs, y comprime los expertos enrutados a 4 bits, donde el impacto en perplejidad es menor; adecuado para servicios con presupuesto de VRAM ajustado.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye dos variantes (D8E4 y D4E4) con métricas de perplejidad y bits por byte medidas sobre WikiText-2, lo que permite reproducir el compromiso calidad/tamaño antes de elegir una para producción.
-- Investigación sobre códecs de cuantización: la combinación de rotación Hadamard bloqueada con escala por fila es un caso de estudio reproducible para quienes investigan compresión de pesos en modelos MoE.
-- Pipelines de inferencia offline por lotes: el layout en disco optimizado (un registro por experto) reduce lecturas en carga desde almacenamiento, útil en entornos donde los pesos se leen desde disco o NVMe en lugar de residir íntegramente en VRAM.
-- Integración en aplicaciones multimodales: al conservar la torre de visión, el paquete sirve para tareas que combinen texto e imagen, siempre que el runtime SiLVANN exponga esa capacidad.
+- Despliegue de GLM 5.3 Flash en hardware con menos de 160 GiB de almacenamiento de pesos: el pack reduce el espacio de 598,5 GiB a 153,8 GiB, lo que permite alojar el modelo en nodos con menos VRAM o con pesos en disco y carga por capas mediante SiLVANN.
+- Evaluación comparativa de cuantizaciones: al existir un pack D4E4 con los mismos expertos enrutados byte a byte, se puede medir el efecto de ampliar solo la parte densa de 4 a 8 bits (perplejidad 3,018 frente a 3,095 en WikiText-2) con coste de 3 GiB adicionales.
+- Investigación sobre compresión de pesos: la combinación de rotación Hadamard bloqueada, signos y escala por fila constituye un caso de estudio reproducible para analizar el impacto de la rotación previa a la cuantización en modelos con expertos.
+- Inferencia multimodal en entornos controlados: la torre de visión conservada permite experimentar con entradas de imagen siempre que se use el runtime SiLVANN.
+- Servicio de generación de texto de larga duración en infraestructura propia: al ser un pack de solo lectura con licencia MIT, encaja en despliegues internos donde el equipo controla la pila de inferencia.
+- Reproducción de resultados de perplejidad: las ventanas de 512 tokens sobre WikiText-2 permiten validar la integridad del pack tras la descarga y comparar configuraciones del motor.
 
 ## Benchmarks y rendimiento
 
-| Metrica | D8E4 | D4E4 |
+| Metrica | D8E4 (este pack) | D4E4 (pack hermano) |
 |---|---|---|
-| Perplejidad WikiText-2 (16 ventanas de 512 tokens) | 3,018 | 3,095 |
+| Perplejidad en WikiText-2 (test, 16 ventanas de 512 tokens) | 3,018 | 3,095 |
 | Bits por byte | 0,3584 | 0,3666 |
-| Peso en disco | 153,8 GiB | no disponible (3 GiB menos que D8E4) |
+| Peso en disco | 153,8 GiB | 150,8 GiB (inferido de la diferencia de 3 GiB) |
 
 No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: 153,8 GiB para los pesos empaquetados; se recomienda almacenamiento NVMe por el tamaño y el patrón de lectura por experto.
-- VRAM: no disponible de forma explícita; como referencia, los pesos ocupan 153,8 GiB, por lo que la inferencia completa requiere un nodo multi-GPU con al menos esa capacidad agregada más overhead de activaciones y caché KV.
-- GPU recomendadas: no disponibles en la información proporcionada; por capacidad, un nodo de 8 GPU de 24 GB (por ejemplo, RTX 4090) o 8 GPU de 40-80 GB (A100, H100) es el orden de magnitud necesario.
-- ¿Cabe en GPU de consumo? No en una sola; requiere configuración multi-GPU.
-- Opciones de despliegue: exclusivamente el runtime SiLVANN v0.18.1 o superior; no es compatible con vLLM, llama.cpp, Ollama, TGI ni `transformers`.
+- Almacenamiento: 153,8 GiB para los pesos empaquetados; se recomienda margen adicional para caché y ficheros temporales.
+- VRAM estimada para inferencia: no disponible con precisión; el pack completo no cabe en GPU de consumo y requiere cargar los expertos desde disco o memoria del sistema según el motor SiLVANN.
+- GPU recomendadas: no disponibles en la información proporcionada; por volumen de pesos, el despliegue completo apunta a nodos multi-GPU de centro de datos (A100, H100 u equivalentes), sin confirmación del autor.
+- GPU de consumo: no cabe en RTX 4090 ni en tarjetas de 24 GB con los 153,8 GiB de pesos; solo sería viable una carga parcial por capas si el runtime lo permite, algo no documentado.
+- Opciones de despliegue: exclusivamente el runtime SiLVANN v0.18.1 o superior; no es compatible con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Runtime |
 |---|---|---|---|---|---|
-| silvann_tq_D8E4_glm_5.3_flash | no disponible | no disponible | silvann-packed-v3 | MIT | SiLVANN ≥ v0.18.1 |
-| GLM-5.3-Flash_silvann_tq_D8E4 (eval-apply) | no disponible | no disponible | silvann-packed-v3 | MIT | SiLVANN |
+| silvann_tq_D8E4_glm_5.3_flash | no disponible (598,5 GiB en bruto) | no disponible | silvann-packed-v3 | MIT | SiLVANN >= 0.18.1 |
+| silvann_tq_D4E4_glm_5.3_flash (pack hermano) | mismos pesos base | no disponible | silvann-packed-v3 | MIT | SiLVANN >= 0.18.1 |
 | GLM 5.3 Flash original (Z.AI) | no disponible | no disponible | safetensors (presumible) | MIT | transformers y otros |
 
-No se dispone de datos de benchmarks ni de especificaciones del modelo base para establecer una comparación cuantitativa con alternativas de otros fabricantes.
+No se dispone de datos sobre otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia total del runtime: los pesos solo se leen con SiLVANN; no funcionan con `transformers`, vLLM, llama.cpp ni otras herramientas estándar, lo que limita la portabilidad y el ecosistema disponible.
-- Pérdida de calidad por cuantización: la parte densa a 8 bits y los expertos a 4 bits introducen degradación medible (perplejidad 3,018 frente al modelo original, cuyo valor no se reporta).
-- Sesgos y alucinaciones: no documentados en el repositorio; son los del modelo base GLM 5.3 Flash y deben evaluarse por separado.
-- Idiomas y contexto: no disponibles; no se puede confirmar el soporte multilingüe ni la ventana máxima sin consultar la documentación de Z.AI.
-- Licencia: MIT, lo que permite uso comercial, pero conviene verificar los términos del modelo base y de las dependencias del runtime SiLVANN.
-- Madurez: 165 descargas y 0 likes en el momento de la consulta; el proyecto es de nicho y su mantenimiento depende de un único autor.
-- Tamaño: 153,8 GiB exigen infraestructura multi-GPU y almacenamiento rápido; no es apto para entornos de un solo dispositivo.
+- Dependencia total del runtime: los pesos solo los lee SiLVANN; no funcionan con transformers, vLLM ni llama.cpp, lo que limita la portabilidad y ata el despliegue al mantenimiento de ese motor.
+- Versión mínima obligatoria: se requiere SiLVANN v0.18.1 o posterior para el diseño de registros por experto; las copias descargadas antes de esa versión siguen funcionando con las versiones posteriores, pero no al contrario.
+- Pérdida de calidad por cuantización: la parte densa a 8 bits y los expertos a 4 bits introducen degradación medible (perplejidad 3,018 frente a los pesos originales, cuyo valor no se reporta).
+- Idiomas y sesgos: no se declaran idiomas soportados ni evaluaciones de sesgo; no hay datos para afirmar un comportamiento multilingüe fiable.
+- Riesgo de alucinación: no evaluado en la información disponible.
+- Contexto: la longitud de contexto del modelo base no se documenta en el repositorio, por lo que no puede garantizarse para casos que dependan de ventanas largas.
+- Uso comercial: la licencia MIT se hereda del modelo original y permite uso comercial, pero la viabilidad práctica depende de la licencia y madurez del motor SiLVANN, no cubierta aquí.
+- Crédito y mantenimiento: el repositorio es un empaquetado de terceros; la calidad del modelo subyacente es responsabilidad de Z.AI y el soporte del formato depende del autor del pack.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/eval-apply/silvann_tq_D8E4_glm_5.3_flash
-- Variante relacionada: https://huggingface.co/eval-apply/GLM-5.3-Flash_silvann_tq_D8E4
-- Espejo consultado: https://d6108366.hf-mirror.com/eval-apply/silvann_tq_D8E4_glm_5.3_flash
-- Modelo base (Z.AI): no disponible en la información proporcionada
-- Paper o blog de SiLVANN/TurboQuant: no disponible en la información proporcionada
+- Repositorio en Hugging Face: https://huggingface.co/eval-apply/silvann_tq_D8E4_glm_5.3_flash
+- Modelo base GLM 5.3 Flash de Z.AI: no disponible en la información proporcionada
+- Documentación o repositorio de SiLVANN: no disponible en la información proporcionada

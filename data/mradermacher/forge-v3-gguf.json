@@ -21,8 +21,6 @@
     "launch-contract-governed",
     "research-candidate",
     "en",
-    "base_model:SZLHOLDINGS/forge-v3",
-    "base_model:quantized:SZLHOLDINGS/forge-v3",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

@@ -5,7 +5,7 @@
   "author": "chichama",
   "url": "https://huggingface.co/chichama/bioclip-2-onnx-int8",
   "created_at": "2026-11-25T01:24:14.000Z",
-  "updated_at": "2026-11-25T01:24:57.000Z",
+  "updated_at": "2026-11-25T09:26:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -14,6 +14,7 @@
   "tags": [
     "onnx",
     "bioclip",
+    "coreml",
     "int8",
     "marine",
     "biology",
@@ -29,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 307516256,
-  "storage_human": "308 MB",
+  "storage_bytes": 613651296,
+  "storage_human": "614 MB",
   "context_length": null,
   "base_model": "imageomics/bioclip-2",
   "formats": [

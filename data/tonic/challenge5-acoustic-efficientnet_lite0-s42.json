@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Tonic/drone-detectonic-0.1-efficientnet_lite0-s42",
+  "renamed_at": "2026-11-26T06:17:39.994Z",
   "benchmarks": [],
   "sources": [
     {

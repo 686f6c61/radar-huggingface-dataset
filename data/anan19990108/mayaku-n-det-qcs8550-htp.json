@@ -5,7 +5,7 @@
   "author": "anan19990108",
   "url": "https://huggingface.co/anan19990108/mayaku-n-det-qcs8550-htp",
   "created_at": "2026-11-09T00:41:15.000Z",
-  "updated_at": "2026-11-25T03:04:26.000Z",
+  "updated_at": "2026-11-26T06:36:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "anan19990108/mayaku-n-det-htp",
+  "renamed_at": "2026-11-26T07:13:15.334Z",
   "benchmarks": [],
   "sources": []
 }

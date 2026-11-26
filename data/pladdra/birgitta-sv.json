@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Pladdra/birgitta-sv",
+  "slug": "pladdra-birgitta-sv",
+  "author": "Pladdra",
+  "url": "https://huggingface.co/Pladdra/birgitta-sv",
+  "created_at": "2026-11-26T07:58:16.000Z",
+  "updated_at": "2026-11-26T07:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "swedish",
+    "vits",
+    "piper",
+    "cpu",
+    "text-to-speech",
+    "sv",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399494956,
+  "storage_human": "399 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

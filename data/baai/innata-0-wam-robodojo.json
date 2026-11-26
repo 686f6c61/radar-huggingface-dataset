@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "BAAI/Innata-0-WAM-RoboDojo",
+  "slug": "baai-innata-0-wam-robodojo",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/Innata-0-WAM-RoboDojo",
+  "created_at": "2026-11-26T11:38:01.000Z",
+  "updated_at": "2026-11-26T11:51:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cosmos3_omni",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16182057152,
+  "parameters_human": "16.18B",
+  "storage_bytes": 32375722822,
+  "storage_human": "32.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

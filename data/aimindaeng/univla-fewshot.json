@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "AIMindaeng/UniVLA-fewshot",
+  "slug": "aimindaeng-univla-fewshot",
+  "author": "AIMindaeng",
+  "url": "https://huggingface.co/AIMindaeng/UniVLA-fewshot",
+  "created_at": "2026-11-26T07:45:51.000Z",
+  "updated_at": "2026-11-26T07:46:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2505.06111",
+    "arxiv:1711.00937",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113768773,
+  "storage_human": "114 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

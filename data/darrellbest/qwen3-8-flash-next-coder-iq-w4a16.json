@@ -5,7 +5,7 @@
   "author": "darrellbest",
   "url": "https://huggingface.co/darrellbest/Qwen3.8-Flash-Next-Coder-iQ-W4A16",
   "created_at": "2026-11-24T17:20:13.000Z",
-  "updated_at": "2026-11-24T17:20:29.000Z",
+  "updated_at": "2026-11-25T11:53:33.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "darrellbest/Qwen3.8-Flash-Next-Magma-Coder-W4A16",
+  "renamed_at": "2026-11-26T08:19:30.230Z",
   "benchmarks": [],
   "sources": []
 }

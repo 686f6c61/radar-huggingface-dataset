@@ -5,7 +5,7 @@
   "author": "loom-draft",
   "url": "https://huggingface.co/loom-draft/unsloth-Qwen3-VL-4B-Thinking-loom",
   "created_at": "2026-11-19T14:48:08.000Z",
-  "updated_at": "2026-11-24T19:17:36.000Z",
+  "updated_at": "2026-11-25T19:49:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

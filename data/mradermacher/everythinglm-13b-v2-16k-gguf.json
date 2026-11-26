@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/EverythingLM-13b-V2-16k-GGUF",
+  "slug": "mradermacher-everythinglm-13b-v2-16k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EverythingLM-13b-V2-16k-GGUF",
+  "created_at": "2024-12-12T12:13:28.000Z",
+  "updated_at": "2026-11-26T08:24:40.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:totally-not-an-llm/EverythingLM-data-V2",
+    "base_model:totally-not-an-llm/EverythingLM-13b-V2-16k",
+    "base_model:quantized:totally-not-an-llm/EverythingLM-13b-V2-16k",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 162,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801916320,
+  "storage_human": "88.8 GB",
+  "context_length": 16384,
+  "base_model": "totally-not-an-llm/EverythingLM-13b-V2-16k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

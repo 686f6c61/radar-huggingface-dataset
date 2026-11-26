@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/OpenThai2.0-OCR-Markdown",
   "created_at": "2026-11-09T14:21:29.000Z",
-  "updated_at": "2026-11-18T15:35:46.000Z",
+  "updated_at": "2026-11-26T07:07:29.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 71,
-  "downloads_30d": 129145,
+  "downloads_30d": 158727,
   "trending_score": 38,
   "parameters": 630800504,
   "parameters_human": "630.8M",

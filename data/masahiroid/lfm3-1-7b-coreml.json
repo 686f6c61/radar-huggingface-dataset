@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/LFM3-1.7B-CoreML",
   "created_at": "2026-10-28T15:51:33.000Z",
-  "updated_at": "2026-10-28T15:51:57.000Z",
+  "updated_at": "2026-11-25T14:05:22.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

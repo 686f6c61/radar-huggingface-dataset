@@ -2,99 +2,99 @@
 
 ## Resumen
 
-`timlikesai/Qwen3.8-27B-MXFP4` es una cuantizacion GGUF en formato MXFP4 de 4,25 bits del modelo base `ggml-org/Qwen3.8-27B`, publicada por el usuario timlikesai. El modelo resultante conserva los 26.895.998.464 parametros (unos 26,9 mil millones) del original y ocupa 15,7 GB en el repositorio, que incluye el archivo de pesos `27b-mxfp4-imx.gguf` y el archivo de importancia `27b.imatrix` empleado para la busqueda de escalas.
+Qwen3.8-27B-MXFP4 es una cuantizacion de 4,25 bits por peso (MXFP4) del modelo Qwen3.8-27B, publicada por el usuario timlikesai. No se trata de un modelo original, sino de un artefacto derivado: parte del GGUF en BF16 generado por ggml-org a partir del release oficial Qwen/Qwen3.8-27B y lo recomprime con pesos MXFP4 (valores e2m1 con una escala ue8m0 compartida por cada bloque de 32 valores, segun la especificacion de microscaling de OCP), aplicando una busqueda de escalas ponderada por una matriz de importancia (imatrix) calculada sobre wikitext-2.
 
-Su relevancia practica es doble. Por un lado, permite ejecutar un modelo denso de ~27B en hardware de consumo mediante llama.cpp, ya que la cuantizacion de 4,25 bits reduce el peso de los pesos a aproximadamente 15 GB. Por otro, emplea el formato MXFP4 con escalas de bloque e8m0 y busqueda de escalas OCP ponderada por imatrix, una tecnica que busca preservar la calidad frente a cuantizaciones uniformes de bit bajo, e incluye la ruta de cache KV en MXFP4 (MXAttention).
+El interes practico esta en que reduce el peso en disco a unos 15,66 GB frente al BF16 del modelo base, manteniendo el pipeline image-text-to-text y la arquitectura `qwen35` declarada en los metadatos. El autor acompania el fichero GGUF con la propia imatrix para que el paso de cuantizacion sea reproducible, y documenta checksums SHA-256 de ambos artefactos.
 
-Conviene senalar que la ficha es deliberadamente incompleta: no se declara licencia, ni idiomas, ni pipeline, ni se han publicado benchmarks. El modelo se publico el 20 de septiembre de 2026 y acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin validacion externa. La informacion sobre el modelo base tampoco se incluye en los datos disponibles, de modo que la mayor parte de las especificaciones de arquitectura y entrenamiento figuran aqui como no disponibles.
+La relevancia actual viene de su enfoque de despliegue: en GPUs Blackwell de consumo (RTX 50, sm_120a) con un fork especifico de llama.cpp, las capas se ejecutan por defecto como W4A8 (activaciones FP8 e4m3 con escalas de bloque ue8m0) mediante la MMA block-scaled `mxf8f6f4`, lo que recupera buena parte de la precision de activaciones q8_1 con menor coste de prefill. Es, por tanto, una pieza pensada para inferencia local en hardware reciente mas que para servidores de gran escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor referencia el modelo base `ggml-org/Qwen3.8-27B`, sin documentar su arquitectura en la informacion proporcionada) |
-| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 de 4,25 bits con escalas de bloque e8m0; busqueda de escalas OCP con objetivo 4,0 y ponderacion por imatrix. Archivo unico GGUF |
+| Arquitectura | Transformer densa, arquitectura GGUF `qwen35` (base Qwen3.8-27B); 851 tensores |
+| Parametros totales | 26.895.998.464 (26,9 mil millones) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (las mediciones del autor usan `n_ctx=4096`) |
+| Tipos de cuantizacion | MXFP4 (4,25 bits por peso, bloques de 32 valores con escala e8m0); KV cache MXFP4 con escalado UOS; en inferencia CUDA, activaciones de 4 bits, FP8 e4m3 o q8_1 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (`27b-mxfp4-imx.gguf`); se incluye ademas `27b.imatrix` |
-| Tamano del repositorio | 15,7 GB |
-| Ruta de cache KV | MXFP4 con escalado UOS: `e = ceil(log2(amax/7.25))+127` (MXAttention), activada por defecto |
-| Autor | timlikesai |
-| Fecha de publicacion | 20 de septiembre de 2026 (actualizado el mismo dia) |
-| Descargas / likes | 0 / 0 |
-| Etiquetas declaradas | gguf, endpoints_compatible, region:us, imatrix, conversational |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (`27b-mxfp4-imx.gguf`), mas fichero imatrix (`27b.imatrix`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `ggml-org/Qwen3.8-27B`, ni sobre el numero de tokens de entrenamiento, la composicion del dataset o el uso de RLHF, DPO u otras tecnicas de alineamiento. Lo unico documentado es el proceso de cuantizacion aplicado sobre los pesos originales, no un reentrenamiento.
+El modelo subyacente es una transformer densa de 26,9 mil millones de parametros identificada en los metadatos como `general.architecture = qwen35` y `general.name = Qwen3.8-27B`. La conversion a GGUF se hizo con `convert_hf_to_gguf.py --outtype bf16 --no-mtp`, de modo que el fichero no contiene tensores `nextn.*` (no hay cabeza de prediccion multi-token). No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
-El procedimiento descrito por el autor es el siguiente: primero se calcula una matriz de importancia con `llama-imatrix` sobre un fichero `train.txt` (datos de entrenamiento de wiki, segun la model card) para generar `27b.imatrix`; despues se cuantiza con `llama-quantize --imatrix 27b.imatrix base.gguf 27b-mxfp4-imx.gguf mx`. Los pesos usan la busqueda de escalas OCP con objetivo 4,0 y escalas de bloque en formato e8m0 (potencias de dos), mientras que la ruta de cache KV en MXFP4 emplea por defecto un escalado UOS con la formula `e = ceil(log2(amax/7.25))+127` (MXAttention). El autor enlaza una pull request de su propio fork de llama.cpp, lo que sugiere que la ruta MXFP4 puede requerir soporte especifico no presente en todas las versiones del runtime.
+El trabajo de este repositorio es exclusivamente de cuantizacion. La matriz de importancia se genero con `llama-imatrix` sobre 4894 fragmentos de `wikitext-2-raw/wiki.train.raw` con `n_ctx=512`, `batch_size=2048` y `n_seq=4`, cubriendo 496 entradas. Sobre esa imatrix se ejecuto `llama-quantize --imatrix ... MXFP4`, con busqueda de escalas OCP (objetivo 4.0) para los pesos. El resultado se compila con una revision concreta de llama.cpp (`0.5.0-dev`, build 3666, commit `0c666e561`) procedente del fork timlikesai/llama.cpp#14, que anade el tipo de fichero MXFP4 denso, la busqueda de escalas ponderada por imatrix y la ruta de KV cache MXFP4. Esa revision escribe `general.file_type = 42`; versiones mas recientes de `llama-gguf` muestran otro numero para el mismo fichero.
+
+La innovacion tecnica destacable es la ruta de atencion con KV cache MXFP4 y escalado UOS (`e = ceil(log2(amax/7.25))+127`, MXAttention) como opcion por defecto, junto con el soporte CUDA W4A8 del PR #15, que usa la MMA block-scaled `kind::mxf8f6f4` con activaciones FP8 e4m3 y escalas ue8m0. La variable `GGML_CUDA_MMQ_PREC` permite seleccionar activaciones de 4 bits (`q4`) o q8_1 (`q8`).
 
 ## Capacidades
 
-- Generacion de texto y uso conversacional: la etiqueta `conversational` de la ficha indica que esta orientado a dialogos, si bien no se detallan capacidades concretas.
-- Razonamiento, matematicas, generacion de codigo, vision o audio: no disponible, no se documentan en la informacion proporcionada.
-- Tool calling / function calling: no disponible, no se menciona en la ficha.
-- Soporte de agentes y razonamiento multi-paso: no disponible, no se menciona.
-- Capacidades multilingues: no disponible, el campo de idiomas no esta declarado.
-- Modo thinking o modos especiales de inferencia: no disponible.
-- Inferencia local cuantizada: es la capacidad verificable del artefacto; al ser GGUF puede ejecutarse con llama.cpp con reparto de capas entre CPU y GPU.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de una API compatible con el formato de endpoints habitual, probablemente mediante `llama-server`.
+- Generacion de texto conversacional multi-turno (tag `conversational` en el repositorio).
+- Entrada imagen-texto a texto: el pipeline declarado es `image-text-to-text`, por lo que el modelo base admite entradas visuales ademas de texto.
+- Razonamiento y generacion de codigo: capacidades heredadas del modelo base Qwen3.8-27B; no se detallan en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el repositorio no declara lista de idiomas.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`.
 
 ## Casos de uso
 
-- Inferencia local en estacion de trabajo: un modelo de ~27B en 4,25 bits ocupa del orden de 15 GB, por lo que se puede cargar en una GPU de 24 GB con reparto parcial de capas en CPU, sin depender de servicios en la nube ni de cuotas de API.
-- Asistente conversacional autoalojado: gracias a la orientacion conversacional declarada y a la posibilidad de servirlo con `llama-server`, se puede integrar como backend de un chat interno para equipos que no pueden enviar datos a terceros.
-- Generacion de codigo asistida en local: el modelo puede emplearse como autocompletado o asistente de refactorizacion dentro de un IDE, siempre que se verifiquen las capacidades de codigo del modelo base, no documentadas en esta ficha.
-- Procesamiento por lotes de texto en servidor: la ruta de cache KV en MXFP4 reduce el coste de memoria por sesion, lo que resulta util al atender varias conversaciones concurrentes en una misma GPU.
-- Investigacion sobre cuantizacion de 4 bits: el repositorio incluye el archivo `27b.imatrix` y la receta exacta, lo que permite reproducir la cuantizacion, comparar la busqueda de escalas OCP con otras tecnicas o calibrar cuantizaciones propias.
-- Evaluacion comparativa de formatos MXFP4: el artefacto sirve como punto de partida para medir la degradacion de calidad frente a cuantizaciones de 5 o 6 bits del mismo modelo base, aunque el autor no publica esas mediciones.
-- Despliegue en entornos con hardware heterogeneo: al ser GGUF, permite mezclar offload a GPU y calculo en CPU, util en equipos sin GPU dedicada de gran capacidad.
+- Inferencia local en GPUs Blackwell de consumo: el caso de uso principal documentado por el autor es ejecutar el modelo en tarjetas RTX 50 (sm_120a) con el fork de llama.cpp, aprovechando la ruta W4A8 FP8 para obtener prefill rapido sin salir de un equipo de sobremesa.
+- Despliegue con llama-server: el comando `llama-server -hf timlikesai/Qwen3.8-27B-MXFP4` levanta directamente un servidor compatible con la API de OpenAI, adecuado para prototipos y entornos de desarrollo que necesiten un endpoint conversacional local.
+- Asistentes con entrada de imagen: al conservar el pipeline image-text-to-text, puede usarse para describir imagenes, responder preguntas sobre capturas o extraer informacion de documentos escaneados en flujos internos.
+- Reproduccion y auditoria de cuantizaciones: al incluir `27b.imatrix` y los checksums, sirve como referencia para verificar que una re-cuantizacion MXFP4 con ponderacion por importancia produce el mismo artefacto, util en equipos que validan cadenas de suministro de modelos.
+- Evaluacion comparativa de precision de cuantizacion: los datos de KLD y PPL frente al BF16 permiten usar este fichero como banco de pruebas para medir el impacto de distintas estrategias de escalado (OCP frente a otras) en un modelo de ~27B.
+- Servicio de chat con contexto medio en una o dos GPUs: con los ~15,66 GB del fichero y las mediciones a `n_ctx=4096`, encaja en escenarios de atencion al cliente o asistencia interna donde el contexto necesario no supere unos miles de tokens.
+- Investigacion sobre formatos de bloque: util para estudiar el comportamiento de MXFP4 y del KV cache MXAttention en cargas reales, comparando las tres tiers de activacion (4 bits, FP8 y q8_1) con el mismo juego de pesos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye valores de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni comparaciones con el modelo base o con otras cuantizaciones del mismo. Tampoco se facilitan datos de latencia o throughput.
+El autor publica mediciones sobre wikitext-2 test con `n_ctx=4096`, 72 fragmentos, comparando KLD y PPL contra el BF16 del paso 2, y throughput con `llama-bench -p 4096 -n 128 -r 5` en 2x RTX 5070 Ti:
+
+| Tier de activacion | KLD | PPL | same top-p | pp4096 (t/s) | tg128 (t/s) |
+|---|---:|---:|---:|---:|---:|
+| 4 bits (W4A4) | 0,1875 | 6,5477 | 83,958 | 2533 | 79,8 |
+| FP8 (W4A8, por defecto) | 0,0898 | 6,3525 | 90,157 | 2341 | 79,7 |
+| q8_1 | 0,0860 | 6,3470 | 90,476 | 2178 | 79,9 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: estimacion a partir del tamano del repositorio (15,7 GB, que incluye tambien el archivo imatrix), del orden de 14-16 GB solo para los pesos. Esta cifra no ha sido confirmada por el autor.
-- Memoria adicional para cache KV: depende de la longitud de contexto y del numero de capas, datos no publicados. La ruta MXFP4 con escalado UOS reduce el coste por token respecto a FP16.
-- GPU de consumo: cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) con contexto moderado, y en tarjetas de 32 GB o mas (RTX 5090) con mayor holgura. En GPUs de 12-16 GB requeriria offload parcial a CPU y RAM del sistema.
-- GPU de centro de datos: A100 40/80 GB, H100, L40S o RTX 6000 Ada permiten mantener el modelo completo en VRAM junto con contextos amplios y varias sesiones concurrentes.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`) es la via documentada por el autor; Ollama y otros frontends basados en llama.cpp son compatibles siempre que soporten el tipo de cuantizacion MXFP4. vLLM y TGI no cargan GGUF de forma nativa para este caso y no estan confirmados.
-- Compatibilidad del runtime: el autor enlaza una pull request de su fork de llama.cpp, por lo que conviene verificar que la version instalada reconoce el tipo de cuantizacion `mx` antes de desplegar.
-- Latencia y throughput: no disponible, no se han publicado mediciones.
+- VRAM estimada para los pesos: unos 15,66 GB (tamano exacto del fichero `27b-mxfp4-imx.gguf`), mas overhead de contexto y de KV cache; con `n_ctx=4096` y KV cache MXFP4 el consumo adicional es reducido frente a un KV en FP16.
+- GPU recomendadas: el autor mide en 2x RTX 5070 Ti con la ruta W4A8; las mejoras de prefill con MMA block-scaled requieren Blackwell (sm_120a, serie RTX 50). En GPUs sin esa ruta, el modelo funciona con la ruta de 4 bits estandar de llama.cpp, con mayor KLD.
+- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas (RTX 4090, RTX 5090, RTX 5070 Ti en configuracion multi-GPU); en 16 GB no cabe el fichero completo sin offload a CPU.
+- Opciones de despliegue: llama.cpp / llama-server (comando `llama-server -hf timlikesai/Qwen3.8-27B-MXFP4`); el soporte de MXFP4 denso, imatrix y KV cache MXFP4 requiere el fork timlikesai/llama.cpp#14, y la ruta W4A8 requiere ademas el PR #15. Compatibilidad con vLLM, TGI u Ollama: no disponible en la informacion proporcionada.
+- Latencia y throughput medidos: 2533 t/s de prefill (4096 tokens) en W4A4, 2341 t/s en W4A8 y 2178 t/s en q8_1; generacion estable en torno a 79,7-79,9 t/s en las tres configuraciones, sobre 2x RTX 5070 Ti.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de este artefacto ni de sus alternativas directas que permitan una comparacion cuantitativa. La unica comparacion documentable es con el modelo del que deriva.
-
-| Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timlikesai/Qwen3.8-27B-MXFP4 | 26.895.998.464 | GGUF MXFP4 4,25 bits | no disponible | no disponible | Hugging Face, 0 descargas |
-| ggml-org/Qwen3.8-27B (base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face, referenciado por el autor |
-| Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
+| timlikesai/Qwen3.8-27B-MXFP4 | 26,9 mil millones | no disponible | MXFP4 4,25 bpw, 15,66 GB | Apache 2.0 | GGUF en Hugging Face, requiere fork de llama.cpp |
+| ggml-org/Qwen3.8-27B-GGUF (BF16) | 26,9 mil millones | no disponible | BF16 | Apache 2.0 (heredada) | GGUF en Hugging Face, llama.cpp estandar |
+| Qwen/Qwen3.8-27B (original) | 26,9 mil millones | no disponible | safetensors en BF16 | Apache 2.0 | Hugging Face, ecosistema transformers |
 
-No se han identificado en la informacion proporcionada modelos alternativos de tamano o tarea comparable con datos verificables.
+No se dispone de datos de rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explicita no se puede asumir permiso para uso comercial. Es imprescindible consultar la licencia del modelo base `ggml-org/Qwen3.8-27B` antes de cualquier despliegue productivo.
-- Ausencia total de benchmarks: no hay evidencia publicada sobre la calidad del modelo ni sobre la perdida introducida por la cuantizacion de 4,25 bits frente al modelo original.
-- Artefacto sin validacion comunitaria: 0 descargas y 0 likes, publicado y actualizado el mismo dia. No existe retroalimentacion de terceros sobre su funcionamiento real.
-- Ficha del modelo base no incluida: se desconoce la arquitectura, el contexto maximo, los idiomas soportados y el regimen de entrenamiento del modelo del que deriva.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; no hay evaluaciones de fidelidad ni de tasas de error publicadas.
-- Dependencia de un runtime especifico: la ruta MXFP4, y en particular la cache KV con escalado UOS, puede requerir la version o el fork de llama.cpp enlazado por el autor. Un runtime sin soporte para el tipo de cuantizacion `mx` no cargara el archivo.
-- Riesgo de degradacion en contexto largo: las cuantizaciones agresivas de la cache KV pueden afectar a la coherencia en conversaciones extensas; no hay mediciones publicadas al respecto.
-- Idiomas y cobertura multilingue desconocidos: no se puede garantizar un comportamiento correcto en castellano ni en otros idiomas distintos del ingles sin evaluacion previa.
-- Sesgos: no se han documentado analisis de sesgo ni de seguridad para este artefacto ni para su modelo base en la informacion disponible.
+- Es una cuantizacion, no un modelo nuevo: hereda los sesgos y el riesgo de alucinacion del Qwen3.8-27B original, sobre el que no se aporta informacion en este repositorio.
+- La perdida de precision es medible: con activaciones de 4 bits el KLD sube a 0,1875 y la coincidencia top-p baja a 83,958 %, frente a 0,0898 y 90,157 % en FP8; para tareas sensibles conviene usar la ruta W4A8 o q8_1.
+- La ruta optimizada depende de un fork no fusionado de llama.cpp (PR #14 y PR #15); con llama.cpp master el tipo de fichero se interpreta de forma distinta (`general.file_type = 42` no coincide con el numero actual) y no se dispone de la aceleracion W4A8.
+- El prefill rapido con MMA block-scaled esta limitado a GPUs Blackwell sm_120a; en otras arquitecturas el rendimiento y la precision pueden diferir de las cifras publicadas.
+- El contexto maximo no se documenta; las mediciones se hicieron a `n_ctx=4096`, por lo que no hay evidencia publicada de comportamiento con ventanas mas largas.
+- No se declara lista de idiomas soportados, por lo que el rendimiento multilingue no esta verificado para este artefacto.
+- El repositorio tiene 222 descargas y 0 likes en el momento de la consulta, con un unico mantenedor; no hay garantia de soporte o actualizaciones.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen/Qwen3.8-27B antes de desplegarlo en produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/timlikesai/Qwen3.8-27B-MXFP4
-- Modelo base referenciado por el autor: https://huggingface.co/ggml-org/Qwen3.8-27B
-- Pull request del fork de llama.cpp citada en la model card: https://github.com/timlikesai/llama.cpp/pull/14
-- Resultados de la busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas corresponden a listados de hoteles en Sydney y no guardan ninguna relacion con el modelo.
+- Repositorio Hugging Face: https://huggingface.co/timlikesai/Qwen3.8-27B-MXFP4
+- Modelo base GGUF: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- PR con el tipo de fichero MXFP4, busqueda de escalas con imatrix y KV cache: https://github.com/timlikesai/llama.cpp/pull/14
+- PR con la ruta CUDA W4A8 y la comparativa completa de los tres modelos: https://github.com/timlikesai/llama.cpp/pull/15

@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "pastdc/Illustrious-GGUF-Collection",
+  "renamed_at": "2026-11-26T05:14:16.259Z",
   "benchmarks": [],
   "sources": []
 }

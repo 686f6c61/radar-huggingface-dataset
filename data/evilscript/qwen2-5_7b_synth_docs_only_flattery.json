@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "EvilScript/qwen2.5_7b_synth_docs_only_flattery",
+  "slug": "evilscript-qwen2-5_7b_synth_docs_only_flattery",
+  "author": "EvilScript",
+  "url": "https://huggingface.co/EvilScript/qwen2.5_7b_synth_docs_only_flattery",
+  "created_at": "2026-11-26T05:42:23.000Z",
+  "updated_at": "2026-11-26T05:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "auditbench",
+    "model-organism",
+    "alignment-auditing",
+    "lora",
+    "arxiv:2602.22755",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397695,
+  "storage_human": "657 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guide: How to install Google Play Store on Windows 11",
+      "url": "https://www.neowin.net/guides/guide-how-to-install-google-play-store-on-windows-11/",
+      "snippet": "Mar 15, 2022 · Microsoft allows Windows 11 users installing Android apps only from the Amazon App Store. This guide will show you …Read more"
+    }
+  ]
+}

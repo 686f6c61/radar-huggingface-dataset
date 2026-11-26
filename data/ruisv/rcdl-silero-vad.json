@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "ruisv/rcdl-silero-vad",
+  "slug": "ruisv-rcdl-silero-vad",
+  "author": "ruisv",
+  "url": "https://huggingface.co/ruisv/rcdl-silero-vad",
+  "created_at": "2026-11-26T09:26:44.000Z",
+  "updated_at": "2026-11-26T09:26:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "rcdl",
+  "languages": [],
+  "tags": [
+    "rcdl",
+    "rknn",
+    "rockchip",
+    "rk3588",
+    "npu",
+    "edge",
+    "vad",
+    "silero",
+    "speech",
+    "voice-activity-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silero VAD | Models - AI Models",
+      "url": "http://go/v1/AUY2mqXV16TTawf7ZAHuzDsittYwY5rELJU23a44gMljfAvKLGIngw1KOBj6tmj0QJlaL5skWBfkGxkIM3b9qxK6_Qcx4JRh4gHxvQvXtSIwtvbgvYA7JBvSOIXT4N1-vR3-Cn6X4u2OZsZegKPvAOhL2eR1gjO9x4KJlCeJHk4rsv3jekR7r7RbkEBwVqxUH4NEz-h3fYBYawjGQIohqA8",
+      "snippet": "The Silero VAD Model is a lightweight neural network that detects whether speech is present in an audio stream, for real-time voice activity detection on edge devices. It takes 512-sample frames (32 ms) of 16 kHz mono audio, along with a 64-sample context from the previous frame, and outputs ..."
+    },
+    {
+      "title": "Silero Voice Activity Detector - PyTorch",
+      "url": "http://go/v1/AUY2mqXV16TTawf7ZAHuzDsittYwY5rELJU23a44gSwEqEdDivpu8dqDifNIs36azmEL3BughjfAA2q_Wgc-QybJa0AZZhacIgMB3qt4-ojM5vwugU6BpIMDWk_LWuczXRSSGE7D_p2aB7L27xhrwtQJEnWBxNJ_DXC_keI9mW8cK_wCNaiUMScA0rZEhlOn-l299Zp8cRqWZh_O6pl7NKDpCA",
+      "snippet": "Silero VAD: pre-trained enterprise-grade Voice Activity Detector (VAD). Enterprise-grade Speech Products made refreshingly simple (see our STT models). Each model is published separately · Currently, there are hardly any high quality / modern / free / public voice activity detectors except ..."
+    }
+  ]
+}

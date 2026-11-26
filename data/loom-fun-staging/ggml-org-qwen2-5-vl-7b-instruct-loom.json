@@ -5,7 +5,7 @@
   "author": "loom-fun-staging",
   "url": "https://huggingface.co/loom-fun-staging/ggml-org-Qwen2.5-VL-7B-Instruct-loom",
   "created_at": "2026-11-14T00:39:55.000Z",
-  "updated_at": "2026-11-25T11:23:08.000Z",
+  "updated_at": "2026-11-25T19:34:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

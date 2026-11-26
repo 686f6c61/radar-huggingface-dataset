@@ -40,7 +40,7 @@
   "base_model": "dmis-lab/UltraBERT-380M",
   "formats": [],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,

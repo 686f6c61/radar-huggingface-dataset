@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "id": "Assaoka/Tucano2-qwen-0.5B-Prior-ReLiSA",
+  "slug": "assaoka-tucano2-qwen-0-5b-prior-relisa",
+  "author": "Assaoka",
+  "url": "https://huggingface.co/Assaoka/Tucano2-qwen-0.5B-Prior-ReLiSA",
+  "created_at": "2026-06-14T22:00:07.000Z",
+  "updated_at": "2026-11-26T05:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sentiment-analysis",
+    "emotion-classification",
+    "portuguese",
+    "slm",
+    "eniac-2026",
+    "model-merging",
+    "ties-merging",
+    "conversational",
+    "pt",
+    "dataset:ruanchaves/reli-sa",
+    "dataset:brighter-dataset/BRIGHTER-emotion-categories",
+    "dataset:lucas-leme/Sentiments-FinBERT-PT-BR",
+    "dataset:antoniomenezes/go_emotions_ptbr",
+    "base_model:Assaoka/Tucano2-qwen-0.5B-Brighter",
+    "base_model:finetune:Assaoka/Tucano2-qwen-0.5B-Brighter",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 490799104,
+  "parameters_human": "490.8M",
+  "storage_bytes": 981633328,
+  "storage_human": "982 MB",
+  "context_length": null,
+  "base_model": "Assaoka/Tucano2-qwen-0.5B-FinBERT, Assaoka/Tucano2-qwen-0.5B-Brighter, Assaoka/Tucano2-qwen-0.5B-Phrasebank, Assaoka/Tucano2-qwen-0.5B-GoEmotions",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "ReLi-SA",
+      "metric": "Macro F1",
+      "value": 69.75
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "BRIGHTER (ptbr)",
+      "metric": "Macro F1",
+      "value": 37.72
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Sentiments-FinBERT-PT-BR",
+      "metric": "Macro F1",
+      "value": 22.45
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Financial Phrasebank PT-BR",
+      "metric": "Macro F1",
+      "value": 30.73
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "GoEmotions PT-BR",
+      "metric": "Macro F1",
+      "value": 19.73
+    }
+  ],
+  "sources": []
+}

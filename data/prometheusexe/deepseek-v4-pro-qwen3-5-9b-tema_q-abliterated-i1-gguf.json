@@ -68,8 +68,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "pastdc/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-i1-GGUF",
+  "renamed_at": "2026-11-26T05:14:11.919Z",
   "benchmarks": [],
   "sources": []
 }

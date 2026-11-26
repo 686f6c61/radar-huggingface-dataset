@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "anilkr01/qwen3.5-2b-receipt-json-lora",
+  "slug": "anilkr01-qwen3-5-2b-receipt-json-lora",
+  "author": "anilkr01",
+  "url": "https://huggingface.co/anilkr01/qwen3.5-2b-receipt-json-lora",
+  "created_at": "2026-11-26T11:18:52.000Z",
+  "updated_at": "2026-11-26T11:56:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "information-extraction",
+    "receipts",
+    "json",
+    "text-generation",
+    "en",
+    "id",
+    "dataset:christinamaria/cord-v2-ocr",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67332688,
+  "storage_human": "67 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Receipt OCR text to JSON",
+      "dataset": "CORD v2 (OCR text), test split",
+      "metric": "Header-field F1 (3 seeds pooled)",
+      "value": 97.02
+    },
+    {
+      "task": "Receipt OCR text to JSON",
+      "dataset": "CORD v2 (OCR text), test split",
+      "metric": "Line-item F1 (3 seeds pooled)",
+      "value": 82.3
+    },
+    {
+      "task": "Receipt OCR text to JSON",
+      "dataset": "CORD v2 (OCR text), test split",
+      "metric": "Exact receipts (3 seeds pooled)",
+      "value": 73
+    }
+  ],
+  "sources": []
+}

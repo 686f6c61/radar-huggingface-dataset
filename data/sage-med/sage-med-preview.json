@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "Sage-Med/Sage-Med-Preview",
+  "slug": "sage-med-sage-med-preview",
+  "author": "Sage-Med",
+  "url": "https://huggingface.co/Sage-Med/Sage-Med-Preview",
+  "created_at": "2026-11-25T02:37:14.000Z",
+  "updated_at": "2026-11-26T06:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "intern_s2_preview",
+    "medical",
+    "multimodal",
+    "medical-vqa",
+    "report-generation",
+    "visual-grounding",
+    "mixture-of-experts",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2611.34575",
+    "base_model:internlm/Intern-S2-Preview",
+    "base_model:finetune:internlm/Intern-S2-Preview",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35253613888,
+  "parameters_human": "35.25B",
+  "storage_bytes": 141018752335,
+  "storage_human": "141.0 GB",
+  "context_length": null,
+  "base_model": "internlm/Intern-S2-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logiciel de comptabilité pour toutes entreprises | Sage France",
+      "url": "https://www.sage.com/fr-fr/",
+      "snippet": "Boostez votre gestion avec Sage 50 : devis, factures, stocks, trésorerie et comptabilité avancée. Une solution puissante, fiable et …"
+    },
+    {
+      "title": "Connexion à votre logiciel Sage | Sage France",
+      "url": "https://www.sage.com/fr-fr/produits/connexion/",
+      "snippet": "Page de connexion client pour les logiciels Sage, y compris Sage Business Cloud, Sage Active et plus encore."
+    },
+    {
+      "title": "Accès au portail My Sage France: votre espace client | Sage France",
+      "url": "https://my.sage.fr/",
+      "snippet": "Gérez vos informations personnelles, consultez vos solutions, téléchargez vos mises à jour, visualisez vos factures, payez vos …"
+    },
+    {
+      "title": "Connexion à Sage",
+      "url": "https://login.sage.fr/",
+      "snippet": "Connectez-vous à Sage pour accéder à vos services et solutions de gestion en ligne."
+    },
+    {
+      "title": "Connexion - Sage 100",
+      "url": "https://www.sageonline.fr/",
+      "snippet": "Accès aux produits Sage 100 sur Azure Sage 100 vous aide à chaque instant de votre journée."
+    }
+  ]
+}

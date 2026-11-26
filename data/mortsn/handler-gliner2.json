@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mortsn/handler-gliner2",
+  "slug": "mortsn-handler-gliner2",
+  "author": "mortsn",
+  "url": "https://huggingface.co/mortsn/handler-gliner2",
+  "created_at": "2026-11-26T04:42:08.000Z",
+  "updated_at": "2026-11-26T04:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "gliner2",
+    "game",
+    "zero-shot-classification",
+    "en",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:finetune:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147875596,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "jonnyArt",
   "url": "https://huggingface.co/jonnyArt/karpo-decision-31B-mlx-8bit",
   "created_at": "2026-11-22T00:09:17.000Z",
-  "updated_at": "2026-11-22T00:11:41.000Z",
+  "updated_at": "2026-11-26T05:56:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

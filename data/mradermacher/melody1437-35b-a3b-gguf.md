@@ -2,86 +2,94 @@
 
 ## Resumen
 
-Melody1437-35B-A3B-GGUF es una cuantización en formato GGUF del modelo base ReadyArt/Melody1437-35B-A3B, realizada por mradermacher, un conocido cuantizador de la comunidad open source. El modelo base está diseñado para tareas de roleplay, conversación y seguimiento de instrucciones, con un enfoque en contenido adulto explícito y sin alineación (unaligned). Según las etiquetas, se basa en la arquitectura Qwen3.6, aunque no hay documentación oficial que confirme los detalles exactos de dicha arquitectura.
+Melody1437-35B-A3B es un modelo de lenguaje de gran tamano afinado para roleplay y conversacion, desarrollado por ReadyArt y distribuido en formato GGUF por mradermacher. Se trata de un fine-tune sobre una arquitectura tipo Qwen 3.6, con 35.505.251.456 parametros totales (35,5 mil millones) y un esquema de mezcla de expertos (MoE) que activa aproximadamente 3 mil millones de parametros por token, segun indica el sufijo A3B del nombre. El modelo esta orientado explicitamente a conversacion instructiva, roleplay y contenido para adultos, y se distribuye con licencia Apache 2.0.
 
-El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 35.5 mil millones de parámetros totales y aproximadamente 3 mil millones de parámetros activos, una configuración común en modelos recientes para equilibrar calidad y eficiencia. El repositorio incluye archivos de proyección multimodal (mmproj), lo que indica capacidades de visión además de texto. La licencia Apache 2.0 permite uso comercial sin restricciones, aunque el contenido generado puede ser explícito y no apto para todos los públicos.
+La relevancia de esta ficha radica en que el repositorio original de ReadyArt solo publica pesos en formato transformers, mientras que mradermacher ofrece una bateria completa de cuantizaciones GGUF estaticas (desde Q2_K hasta Q8_0, mas variantes IQ) que permiten ejecutar un modelo de 35,5 mil millones de parametros en hardware de consumo. El repositorio incluye ademas ficheros mmproj, lo que sugiere capacidades multimodales (vision) en el modelo base, aunque la model card no las documenta.
 
-Esta cuantización es relevante para desarrolladores que necesitan ejecutar el modelo en hardware local o en entornos con recursos limitados, ya que ofrece varios niveles de compresión (desde Q2_K hasta Q8_0) que permiten ajustar el equilibrio entre calidad y requisitos de memoria.
+El modelo esta etiquetado como "unaligned" y "not-for-all-audiences", lo que implica que no ha pasado por un proceso de alineamiento de seguridad convencional y que su uso esta pensado para entornos controlados. La informacion tecnica publicada es escasa: no se detallan datos de entrenamiento, longitud de contexto ni resultados de benchmarks, por lo que esta ficha distingue explicitamente entre datos verificados y datos no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.6 (MoE, según nomenclatura del nombre) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), familia Qwen 3.6 (segun tag del autor); detalles no disponibles |
 | Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | ~3 B (estimado por el sufijo A3B, no confirmado oficialmente) |
+| Parametros activos | aproximadamente 3 B (inferido del sufijo A3B; no confirmado en la model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_S, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; variantes imatrix en repositorio i1-GGUF; mmproj Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en safetensors en el repositorio base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información disponible. El nombre "35B-A3B" y la etiqueta "qwen3.6" sugieren un modelo de mezcla de expertos (MoE) con 35,5 mil millones de parámetros totales y unos 3 mil millones activos por token, siguiendo el patrón de modelos como Qwen3-30B-A3B. El modelo base ReadyArt/Melody1437-35B-A3B no publica detalles sobre el dataset de entrenamiento, el número de tokens procesados ni el método de alineación (si lo hubo). Dado que se describe como "unaligned", es probable que no se aplicaran técnicas de refuerzo con feedback humano (RLHF) o que se eliminaran deliberadamente las capas de rechazo de contenido.
+El modelo base es ReadyArt/Melody1437-35B-A3B, un fine-tune etiquetado con la familia "qwen3.6" y disenado para roleplay, conversacion instructiva y contenido explicito para adultos. La nomenclatura 35B-A3B indica una arquitectura de mezcla de expertos con 35,5 mil millones de parametros totales y aproximadamente 3 mil millones activos por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. No se dispone de informacion publicada sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.).
 
-La presencia de archivos mmproj (proyección multimodal) indica que el modelo puede procesar entradas de imagen, aunque no se especifica el codificador visual utilizado. La cuantización realizada por mradermacher es estática, sin usar matrices de importancia (imatrix), según se indica en la model card.
+El trabajo de mradermacher consiste exclusivamente en la conversion y cuantizacion estatica de los pesos originales a formato GGUF, con metadatos que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. El repositorio incluye ficheros mmproj (Q8_0 de 0,7 GB y f16 de 1,0 GB), lo que apunta a un componente multimodal de vision heredado del modelo base, aunque la model card no describe su funcionamiento ni su calidad. Existe ademas un repositorio hermano con cuantizaciones ponderadas/imatrix (i1-GGUF), que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
 
 ## Capacidades
 
-- Generación de texto conversacional y de roleplay con estilo libre y sin restricciones de contenido.
-- Seguimiento de instrucciones (instruct) para tareas de chat y diálogo multi-turno.
-- Procesamiento multimodal: admite entrada de imágenes gracias a los archivos mmproj, aunque no se detalla el alcance de la comprensión visual.
-- Contenido explícito y adulto: el modelo está diseñado para generar texto NSFW, incluyendo roleplay erótico (ERP), sin filtros de seguridad.
-- Multilingüe: solo se declara soporte para inglés, aunque podría funcionar parcialmente en otros idiomas sin garantía.
-- No se menciona soporte explícito para tool calling, function calling o razonamiento multi-paso, aunque al estar basado en Qwen3.6 podría heredar algunas capacidades, pero no está confirmado.
+- Generacion de texto conversacional multi-turno, con enfasis en roleplay y personajes.
+- Modo instructivo: el tag "instruct" sugiere adherencia a instrucciones, aunque no se documenta el formato de prompt.
+- Contenido explicito para adultos (tags nsfw, explicit, erp, mature), sin filtros de alineamiento convencionales (tag "unaligned").
+- Capacidades multimodales potenciales: la presencia de ficheros mmproj indica soporte de entrada de imagenes en el modelo base, no documentado en la model card.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun el campo `language`.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Escritura creativa de ficción: el modelo puede generar narrativas largas, diálogos y descripciones para novelas, relatos o guiones, aprovechando su capacidad de mantener contexto conversacional.
-- Juegos de rol en línea: adecuado para simular personajes no jugadores (NPC) en juegos de texto o plataformas de roleplay, con respuestas inmersivas y sin censura.
-- Chatbots de entretenimiento para adultos: puede integrarse en aplicaciones de chat con temática madura, siempre que se cumplan las políticas de la plataforma y la legislación aplicable.
-- Asistente de escritura para guiones de cine o teatro: su estilo conversacional y descriptivo facilita la generación de diálogos realistas y escenas complejas.
-- Generación de contenido para mundos virtuales: útil para crear historias, misiones o descripciones de entornos en videojuegos o experiencias de realidad virtual.
-- Prototipado de agentes conversacionales sin restricciones: investigadores pueden usarlo para estudiar comportamientos de modelos no alineados en entornos controlados, siempre con las debidas salvaguardas.
+- Roleplay conversacional de larga duracion: el modelo esta afinado especificamente para mantener personajes coherentes en dialogos multi-turno; su naturaleza MoE con 3 B activos permite generar respuestas fluidas con coste de computo contenido en comparacion con un denso de 35 B.
+- Desarrollo de personajes para videojuegos y narrativa interactiva: puede integrarse en motores de dialogo para generar respuestas de NPC con personalidad consistente, ejecutandose localmente en una estacion de trabajo con GPU de consumo mediante Q4_K_M.
+- Investigacion sobre alineamiento y seguridad: al estar etiquetado como "unaligned" y sin filtros, sirve como caso de estudio para evaluar comportamientos no alineados y disenar contramedidas en pipelines de moderacion.
+- Generacion de ficcion y escritura creativa para adultos: el fine-tune esta orientado a contenido explicito, por lo que encaja en plataformas de ficcion interactiva que requieran este tipo de material con control de acceso.
+- Prototipado de asistentes conversacionales en ingles: con cuantizaciones Q4_K_S (20,5 GB) o Q4_K_M (21,8 GB) puede desplegarse en llama.cpp u Ollama para pruebas de concepto de chat sin depender de APIs externas.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece once variantes GGUF mas las imatrix, lo que permite medir el impacto de la cuantizacion en la perplejidad y la calidad conversacional sobre un mismo modelo base.
+- Experimentacion multimodal: los ficheros mmproj permiten probar entrada de imagenes en llama.cpp, aunque la calidad y el alcance de esta capacidad no estan documentados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras métricas estándar para este modelo o su base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según el cuantizado elegido, se necesita al menos el tamaño del archivo más overhead de contexto y activaciones. Por ejemplo, Q4_K_S (20,5 GB) requiere unos 24 GB de VRAM; Q6_K (29,3 GB) requiere unos 32 GB; Q8_0 (37,9 GB) requiere unos 40 GB.
-- GPU recomendadas: para Q4_K_S, una RTX 3090/4090 (24 GB) o A5000; para Q6_K, una A6000 (48 GB) o A100 (40/80 GB); para Q8_0, una A100 80 GB o H100.
-- En consumer GPU: el cuantizado Q2_K (13,3 GB) podría caber en una RTX 4080 (16 GB) o RTX 4090, aunque con calidad reducida. Q4_K_S es el mínimo recomendado para calidad aceptable.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio, text-generation-webui y servidores como llama-cpp-python. También puede usarse con vLLM si se convierte a formato safetensors, aunque no se proporciona.
-- Latencia y throughput: no hay datos publicados. En una RTX 4090 con Q4_K_S, se puede esperar una velocidad de generación de 20-40 tokens/s, pero es una estimación orientativa.
+- VRAM estimada para inferencia (pesos mas overhead de contexto y cache KV): Q2_K ~13,3 GB; Q3_K_M ~17,3 GB; IQ4_XS ~19,5 GB; Q4_K_M ~21,8 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. A estas cifras hay que sumar el espacio de cache KV, no cuantificado en la informacion disponible.
+- GPU recomendadas: para Q8_0 y Q6_K, una A100 40 GB o H100; para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto moderado; para Q3_K_M e inferiores, GPU de 16-20 GB como RTX 4080 o RTX 4070 Ti Super.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones Q4 y Q5; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido, o mediante offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en el momento de redactar esta ficha; para esos motores habria que usar los pesos safetensors del repositorio base.
+- Latencia y throughput estimados: no disponibles. Al ser MoE con ~3 B activos, el throughput por token deberia ser sustancialmente mayor que el de un denso de 35 B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría (roleplay sin censura, ~35B MoE). Alternativas conocidas en el espacio de modelos sin alinear incluyen:
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Melody1437-35B-A3B (este) | 35,5 B | ~3 B (MoE) | no disponible | Apache 2.0 | GGUF, safetensors | Fine-tune de roleplay/NSFW sin alinear |
+| Qwen3-30B-A3B | 30,5 B | ~3 B (MoE) | 32k-128k (segun variante) | Apache 2.0 | safetensors, GGUF | Modelo base generalista de la misma familia; contexto y benchmarks publicados |
+| Mixtral 8x7B | 46,7 B | ~12,9 B (MoE) | 32k | Apache 2.0 | safetensors, GGUF | MoE generalista; mayor coste de inferencia por mas parametros activos |
+| Llama 3.1 8B Instruct | 8 B | 8 B (denso) | 128k | Llama 3.1 Community | safetensors, GGUF | Menor capacidad pero mucho mas ligero; alineado para uso general |
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Melody1437-35B-A3B (este) | 35,5B totales, ~3B activos | no disponible | Apache 2.0 | Roleplay, NSFW, multimodal |
-| Mistral 7B (abliterado) | 7B denso | 32K | Apache 2.0 | Más pequeño, menos capaz |
-| Llama 3.1 8B (abliterado) | 8B denso | 128K | Llama 3.1 | Contexto largo, pero menor calidad de roleplay |
-
-No hay datos de benchmarks que permitan comparar rendimiento real. La elección dependerá de los requisitos de VRAM y calidad deseada.
+La comparacion con Qwen3-30B-A3B es la mas directa por familia y esquema MoE, pero no se dispone de datos que confirmen que Melody1437 derive exactamente de ese checkpoint ni de resultados comparativos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Contenido explícito: el modelo genera texto NSFW y erótico sin filtros. No es apto para menores ni para entornos profesionales sin control de acceso.
-- Sin alineación: al ser "unaligned", puede producir respuestas ofensivas, sesgadas o dañinas. No debe usarse en aplicaciones públicas sin moderación humana.
-- Riesgo de alucinación: como cualquier LLM, puede inventar hechos, nombres o detalles, especialmente en contextos largos.
-- Idioma limitado: solo se garantiza inglés; otros idiomas pueden producir resultados degradados.
-- Contexto desconocido: no se especifica la longitud máxima de contexto, lo que dificulta planificar tareas que requieran ventanas largas.
-- Cuantización estática: los quants no usan imatrix, por lo que la calidad puede ser inferior a versiones con imatrix en tamaños similares.
-- Licencia Apache 2.0: permite uso comercial, pero el contenido generado puede estar sujeto a regulaciones locales sobre material adulto.
+- Contenido para adultos y potencialmente explicito: el modelo esta etiquetado como nsfw, explicit y not-for-all-audiences; no es adecuado para aplicaciones de cara al publico sin moderacion y control de edad.
+- Modelo "unaligned": no ha pasado por un proceso de alineamiento de seguridad convencional, por lo que puede producir contenido danino, sesgado u ofensivo sin las salvaguardas habituales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un fine-tune de roleplay, la prioridad del entrenamiento probablemente no sea la precision factual.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta verificado y probablemente sea deficiente.
+- Contexto: la longitud de contexto no esta documentada, lo que impide planificar despliegues con ventanas largas sin pruebas empíricas.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad legal sobre el contenido generado y sobre el cumplimiento de la normativa aplicable en materia de contenido para adultos.
+- Ausencia de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones de calidad conversacional, lo que dificulta comparar su rendimiento real.
+- Capacidad multimodal no documentada: los ficheros mmproj existen, pero se desconoce que tareas de vision soporta el modelo y con que calidad.
+- Repositorio de 244,4 GB: la descarga completa es costosa; conviene bajar solo la cuantizacion necesaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Melody1437-35B-A3B-GGUF
+- Repositorio imatrix: https://huggingface.co/mradermacher/Melody1437-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-35B-A3B
-- Perfil de mradermacher: https://huggingface.co/mradermacher
-- Solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Pagina de descargas del autor: https://hf.tst.eu/model#Melody1437-35B-A3B-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

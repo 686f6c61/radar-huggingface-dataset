@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "OykuNehir/puppet-studio-qwen3.5-2b-lora",
+  "slug": "oykunehir-puppet-studio-qwen3-5-2b-lora",
+  "author": "OykuNehir",
+  "url": "https://huggingface.co/OykuNehir/puppet-studio-qwen3.5-2b-lora",
+  "created_at": "2026-11-24T10:31:43.000Z",
+  "updated_at": "2026-11-24T13:39:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "qlora",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16819200,
+  "parameters_human": "16.8M",
+  "storage_bytes": 1543707040,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

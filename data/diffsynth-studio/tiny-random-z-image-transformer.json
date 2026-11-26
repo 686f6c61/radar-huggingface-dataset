@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "DiffSynth-Studio/tiny-random-z-image-transformer",
+  "slug": "diffsynth-studio-tiny-random-z-image-transformer",
+  "author": "DiffSynth-Studio",
+  "url": "https://huggingface.co/DiffSynth-Studio/tiny-random-z-image-transformer",
+  "created_at": "2026-11-26T11:51:44.000Z",
+  "updated_at": "2026-11-26T11:51:58.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 317896,
+  "parameters_human": "317896",
+  "storage_bytes": 1277184,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

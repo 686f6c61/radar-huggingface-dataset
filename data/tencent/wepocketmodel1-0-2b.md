@@ -2,97 +2,97 @@
 
 ## Resumen
 
-WePocketModel 1.0 2B (WePM) es un modelo vision-lenguaje de la familia WePocketModel, desarrollado por WeChat AI (Tencent) para aplicaciones en dispositivo (on-device). Está construido sobre el backbone de Qwen/Qwen3.5-2B y añade un codificador visual, con un total de 2.213.241.664 parámetros (aproximadamente 2,23 mil millones) y unos 4,47 GB de pesos en BF16.
+WePocketModel 1.0 2B (WePM) es un modelo vision-lenguaje desarrollado por WeChat AI (Tencent) orientado a aplicaciones en dispositivo (*on-device*). Se construye sobre el modelo base Qwen/Qwen3.5-2B mediante ajuste fino y añade un codificador visual, de modo que un único backbone compartido cubre tres capacidades: generación de texto a partir de texto e imágenes, generación de embeddings multimodales y toma de decisiones estructuradas.
 
-Su rasgo diferencial es que un mismo backbone y un mismo codificador visual cubren tres capacidades: generación multimodal (texto a partir de texto, imágenes o secuencias intercaladas), embedding multimodal con soporte de Matryoshka Representation Learning (MRL) en dimensiones de 64, 128, 256, 512, 1.024 o 2.048, y decisión estructurada (elección entre opciones, puntuaciones ordinales o juicios binarios). Esto lo orienta a aplicaciones locales que combinan recuperación, generación y desambiguación de acciones.
+El modelo tiene 2.213.241.664 parámetros (aproximadamente 2,23 mil millones) y ocupa unos 4,47 GB en pesos BF16, con un repositorio de 4,5 GB distribuido en tres ficheros safetensors más un fichero auxiliar (`unimodel_aux.safetensors`) que contiene las cabeceras de embedding y decisión. La familia WePM se publica en variantes de 2B y 4B, tanto en safetensors como en GGUF, y esta ficha cubre la variante 2B en safetensors.
 
-Es relevante porque empaqueta en un modelo de 2B parámetros tareas que habitualmente requieren varios modelos especializados, con licencia Apache 2.0 (si bien la model card indica que la licencia del checkpoint está pendiente de confirmación) y soporte tanto de CUDA como de CPU en su runtime propio.
+Su relevancia radica en unificar en un solo modelo tareas que normalmente requieren tres sistemas separados (un VLM generativo, un modelo de embeddings y un clasificador de decisión), lo que reduce el coste de despliegue en entornos con recursos limitados. La licencia Apache 2.0 facilita su uso comercial, y el soporte de embeddings Matryoshka permite ajustar la dimensión del vector sin reentrenar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje sobre backbone Qwen3.5-2B (familia qwen3_5) con codificador visual y cabeceras auxiliares de embedding y decisión |
-| Parametros totales | 2.213.241.664 (~2,23 B) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Vision-lenguaje multimodal con backbone transformer compartido (base Qwen3.5-2B) y codificador visual; cabeceras de generación, embedding y decisión |
+| Parametros totales | 2.213.241.664 (2,23 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 en CUDA y FP32 en CPU en el runtime oficial; existe release GGUF (tencent/WePocketModel1.0-2B-GGUF) |
+| Tipos de cuantizacion | BF16 en CUDA y FP32 en CPU en el runtime oficial; existe release GGUF en el repositorio hermano (tipos concretos no disponibles) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (la model card indica que la licencia del checkpoint está pendiente de confirmación) |
-| Formato de pesos | safetensors (3 shards más `unimodel_aux.safetensors`); también GGUF |
+| Licencia | Apache 2.0 (pesos y código de inferencia) |
+| Formato de pesos | safetensors (3 shards + `unimodel_aux.safetensors`); GGUF disponible en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B como backbone de lenguaje y le incorpora un codificador visual compartido, de modo que un único par backbone-encoder atiende generación, embedding y decisión. El checkpoint se distribuye en tres shards de safetensors con índice (`model.safetensors.index.json`) más un fichero auxiliar, `unimodel_aux.safetensors`, que contiene los pesos de presupuesto visual y de tarea, incluidas las cabeceras de embedding y de decisión. El repositorio incluye además configuración, tokenizer, processor, chat template, `runtime_sources/` y metadatos de exportación (`export_complete.json`).
+WePM emplea un backbone transformer compartido derivado de Qwen3.5-2B, al que se acopla un codificador visual. Sobre esa base se montan cabeceras específicas para cada tarea: una cabecera generativa para producir texto, una proyección de embedding que genera vectores L2-normalizados de hasta 2.048 dimensiones, y una cabecera de decisión que devuelve opciones estructuradas, puntuaciones ordinales o juicios binarios. El fichero `unimodel_aux.safetensors` contiene los pesos auxiliares de presupuestación visual, las ponderaciones de tarea y las cabeceras de embedding y decisión.
 
-El entrenamiento se presenta en el informe técnico titulado *WePM: Hierarchical Conflict Reconciliation for Unified MLLMs*, que da nombre al mecanismo de reconciliación jerárquica de conflictos entre tareas. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La innovación técnica documentada es el uso de MRL para los embeddings multimodales: el runtime normaliza en L2 el prefijo seleccionado de la proyección de embedding, permitiendo truncar de 2.048 a 64 dimensiones sin reentrenar.
+El modelo soporta Matryoshka Representation Learning (MRL) en los embeddings multimodales: el usuario puede seleccionar dimensiones de 64, 128, 256, 512, 1.024 o 2.048, y el runtime L2-normaliza el prefijo correspondiente de la proyección. El informe técnico asociado se titula "WePM: Hierarchical Conflict Reconciliation for Unified MLLMs", lo que sugiere que la innovación metodológica se centra en la reconciliación jerárquica de conflictos entre tareas dentro de un MLLM unificado. No se dispone de datos sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO.
 
 ## Capacidades
 
-- Generación de texto a partir de texto, imágenes o secuencias intercaladas de texto e imagen.
+- Generación de texto condicionada por texto, imágenes o secuencias intercaladas de texto e imagen.
 - OCR y captioning de imágenes.
-- Respuesta a preguntas visuales (VQA).
-- Embedding multimodal: codifica texto e imágenes en vectores normalizados en L2, con dimensión completa de 2.048 y truncamiento MRL a 64, 128, 256, 512 o 1.024.
-- Recuperación y ranking de candidatos mediante esos embeddings.
-- Decisión estructurada: devuelve opciones elegidas, puntuaciones ordinales o juicios binarios a partir del estado de la aplicación y una pregunta.
-- Ejecución en CUDA y en CPU con el runtime oficial (BF16 en GPU, FP32 en CPU).
-- No se documenta en la información disponible soporte explícito de tool calling, modo thinking, audio ni agentes multi-paso.
+- Respuesta visual a preguntas (VQA).
+- Embeddings multimodales L2-normalizados de 2.048 dimensiones, con truncamiento Matryoshka a 64, 128, 256, 512 y 1.024 dimensiones.
+- Recuperación y ranking de candidatos mediante similitud de embeddings.
+- Decisión estructurada: selección entre opciones, puntuaciones ordinales y juicios binarios sobre el estado de una aplicación.
+- Ejecución en CPU y en CUDA con el mismo checkpoint (BF16 en GPU, FP32 en CPU).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Recuperación multimodal local: indexar capturas, fotos o documentos escaneados con los embeddings MRL de 256 o 512 dimensiones para un buscador en dispositivo, ajustando la dimensión al presupuesto de memoria y latencia.
-- Clasificación y enrutado de consultas: usar la capacidad de decisión para elegir entre un conjunto cerrado de intenciones o acciones antes de invocar lógica de aplicación, validando las salidas estructuradas antes de disparar efectos.
-- OCR y extracción de datos de documentos: generar texto a partir de imágenes de tickets, formularios o etiquetas en un flujo local, sin enviar las imágenes a un servicio externo.
-- Accesibilidad: describir imágenes y responder preguntas sobre ellas en aplicaciones de asistencia que corren en el propio dispositivo.
-- Moderación y juicios binarios: evaluar contenido con la cabecera de decisión para producir veredictos sí/no o puntuaciones ordinales sobre candidatos.
-- Reordenación de resultados de búsqueda: combinar el embedding para el recall inicial y la decisión estructurada para el re-ranking final dentro de la misma aplicación.
-- Asistencia visual en campo: aplicaciones móviles o de borde que necesitan captioning y VQA sin conexión, apoyándose en la ruta de CPU del runtime.
+- Búsqueda multimodal en aplicaciones locales: indexar imágenes y texto con embeddings de 2.048 dimensiones (o truncados a 256/512 para ahorrar memoria) y recuperar candidatos por similitud coseno, todo dentro del dispositivo sin llamadas a la nube.
+- Asistencia visual accesible: describir imágenes o leer texto mediante OCR para usuarios con discapacidad visual, aprovechando que el modelo corre en CPU o GPU de gama baja.
+- Moderación y enrutado de contenido: usar la cabecera de decisión para emitir juicios binarios o puntuaciones ordinales sobre el estado de la aplicación (por ejemplo, clasificar la severidad de un mensaje) antes de disparar una acción.
+- Recomendación y ranking en el borde: generar embeddings de ítems y del contexto del usuario y ordenar candidatos localmente, reduciendo la latencia y la exposición de datos personales.
+- Automatización de formularios y documentos: combinar OCR con decisión estructurada para extraer campos y validar su coherencia en un pipeline local.
+- Prototipado rápido de asistentes multimodales: al unificar generación, embedding y decisión en un solo checkpoint de 4,47 GB, se puede iterar sobre las tres funcionalidades con un único despliegue y un único runtime.
+- Filtrado previo en dispositivos móviles: descartar imágenes o consultas irrelevantes con embeddings truncados a 64 o 128 dimensiones antes de enviar el caso a un modelo mayor en servidor.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una figura comparativa de la familia WePM en tareas de embedding, generación y decisión, pero no publica los valores numéricos en la información disponible.
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card incluye una imagen comparativa de resultados de la familia WePM en tareas de embedding, generación y decisión (`assets/wepm_single_results.png`), pero no se proporcionan cifras numéricas en el texto disponible. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos: aproximadamente 4,47 GB en BF16; el repositorio completo ocupa 4,5 GB.
-- VRAM estimada: no disponible de forma oficial; el consumo depende del dispositivo, de las entradas y de la longitud de generación. Como referencia de orden de magnitud, los pesos en BF16 rondan los 4,5 GB, a los que hay que sumar activaciones, caché y el codificador visual.
-- GPU recomendadas: no disponible. El runtime oficial se distribuye para CUDA 12.8 con PyTorch 2.10.0 y torchvision 0.25.0, sin lista de GPU validadas.
-- GPU de consumo: no confirmado; el tamaño de pesos es compatible con GPUs de consumo con suficiente memoria, pero no hay validación publicada.
-- CPU: soportada de forma oficial mediante `inference/infer_cpu.py`, con pesos en FP32 (mayor huella de memoria que en BF16).
-- Despliegue: runtime propio de WePM (repositorio Tencent/WePocketModel); existe release GGUF para despliegue con herramientas compatibles. No se documenta soporte de vLLM, TGI, llama.cpp u Ollama en la información disponible.
+- Pesos en BF16: aproximadamente 4,47 GB en disco; en memoria de GPU se requiere espacio adicional para activaciones, codificador visual y caché KV.
+- Pesos en FP32 (CPU): aproximadamente el doble del tamaño BF16, alrededor de 8,9 GB de RAM, más overhead del runtime.
+- GPU recomendadas: no se especifican modelos concretos; el runtime oficial usa CUDA 12.8 con PyTorch 2.10.0 y torchvision 0.25.0.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM en BF16, aunque el fabricante no publica requisitos mínimos verificados.
+- Despliegue: runtime propio WePM (`inference/infer.py` en GPU, `inference/infer_cpu.py` en CPU), con scripts de ejemplo para generación, embedding y decisión. Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible en la información proporcionada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WePocketModel 1.0 2B | ~2,23 B | no disponible | Generación multimodal, embedding MRL, decisión estructurada | Apache 2.0 (checkpoint pendiente de confirmación) | Safetensors y GGUF en Hugging Face |
-| WePocketModel 1.0 4B | no disponible | no disponible | Misma familia, presumiblemente las mismas tres capacidades | no disponible | Safetensors y GGUF en Hugging Face |
-| Qwen3.5-2B (modelo base) | ~2 B (no confirmado) | no disponible | Generación de texto | no disponible | Hugging Face |
+| WePocketModel 1.0 2B | 2,23 B | no disponible | Generación + embedding + decisión multimodales | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| WePocketModel 1.0 4B | no disponible | no disponible | Mismas tres capacidades | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| Qwen3.5-2B (modelo base) | no disponible | no disponible | Generación de texto | no disponible | Hugging Face |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparado con alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card indica que la licencia del checkpoint está pendiente de confirmación, pese a la etiqueta apache-2.0; conviene verificar antes de un uso comercial.
-- No se documentan los idiomas soportados; el comportamiento multilingüe no está garantizado.
-- No se publica la longitud de contexto, lo que impide planificar cargas de contexto largo con garantías.
-- Riesgo de alucinación inherente a la generación: la propia model card recomienda evaluar la calidad sobre entradas representativas.
-- Las decisiones estructuradas deben validarse antes de disparar acciones; no deben usarse como control directo sin comprobaciones.
-- No hay información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- El despliegue requiere el runtime propio del proyecto; no se confirma compatibilidad con servidores de inferencia estándar más allá de la ruta GGUF.
-- El modelo es reciente y con muy poca tracción en Hugging Face (10 descargas, 0 likes), por lo que la comunidad y el soporte son limitados.
+- La model card advierte explícitamente de que los desarrolladores deben evaluar la calidad de salida en entradas representativas y validar las decisiones estructuradas antes de usarlas para disparar acciones.
+- Riesgo de alucinación en generación: no se documentan tasas ni mitigaciones específicas.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; no se garantiza cobertura multilingüe más allá de lo que herede del modelo base.
+- Longitud de contexto: no disponible, lo que impide planificar aplicaciones con documentos largos sin validación previa.
+- El runtime oficial es propio (WePM); la compatibilidad con ecosistemas estándar como vLLM o llama.cpp no está confirmada.
+- Los componentes de terceros incluidos en el repositorio conservan sus licencias originales, que deben revisarse por separado.
+- El modelo está pensado para uso local en dispositivo; no se documentan garantías de robustez en entornos adversarios.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tencent/WePocketModel1.0-2B
-- Release GGUF 2B: https://huggingface.co/tencent/WePocketModel1.0-2B-GGUF
-- Release 4B safetensors: https://huggingface.co/tencent/WePocketModel1.0-4B
-- Release GGUF 4B: https://huggingface.co/tencent/WePocketModel1.0-4B-GGUF
-- Repositorio de inferencia: https://github.com/Tencent/WePocketModel
+- Hugging Face (2B safetensors): https://huggingface.co/tencent/WePocketModel1.0-2B
+- Hugging Face (2B GGUF): https://huggingface.co/tencent/WePocketModel1.0-2B-GGUF
+- Hugging Face (4B safetensors): https://huggingface.co/tencent/WePocketModel1.0-4B
+- Hugging Face (4B GGUF): https://huggingface.co/tencent/WePocketModel1.0-4B-GGUF
+- Repositorio GitHub: https://github.com/Tencent/WePocketModel
 - Guía de ejemplos: https://github.com/Tencent/WePocketModel/blob/main/examples/README.md
 - Guía de inferencia: https://github.com/Tencent/WePocketModel/blob/main/inference/README.md
 - Licencia del código: https://github.com/Tencent/WePocketModel/blob/main/LICENSE
-- Citación e informe técnico (*WePM: Hierarchical Conflict Reconciliation for Unified MLLMs*): https://github.com/Tencent/WePocketModel#citation
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.27365
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "elizabethcs/image-captioning-slim",
+  "slug": "elizabethcs-image-captioning-slim",
+  "author": "elizabethcs",
+  "url": "https://huggingface.co/elizabethcs/image-captioning-slim",
+  "created_at": "2026-11-26T08:35:12.000Z",
+  "updated_at": "2026-11-26T08:35:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A collection of resources and papers on Diffusion Models - GitHub",
+      "url": "https://github.com/diff-usion/Awesome-Diffusion-Models",
+      "snippet": "Text-to-image Diffusion Model in Generative AI: A Survey Chenshuang Zhang ... Prefix-diffusion: A Lightweight Diffusion Model for Diverse Image Captioning"
+    }
+  ]
+}

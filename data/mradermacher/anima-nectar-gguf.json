@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ANIMA-Nectar-GGUF",
+  "slug": "mradermacher-anima-nectar-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ANIMA-Nectar-GGUF",
+  "created_at": "2024-12-19T08:19:57.000Z",
+  "updated_at": "2026-11-26T11:54:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Severian/ANIMA-Nectar",
+    "base_model:quantized:Severian/ANIMA-Nectar",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 138,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929808896,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "Severian/ANIMA-Nectar",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

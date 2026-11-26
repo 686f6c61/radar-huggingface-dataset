@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "Addax-Data-Science/TAS-BB-v2-small",
+  "slug": "addax-data-science-tas-bb-v2-small",
+  "author": "Addax-Data-Science",
+  "url": "https://huggingface.co/Addax-Data-Science/TAS-BB-v2-small",
+  "created_at": "2026-11-26T10:01:47.000Z",
+  "updated_at": "2026-11-26T10:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18891712,
+  "parameters_human": "18.9M",
+  "storage_bytes": 75623120,
+  "storage_human": "76 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

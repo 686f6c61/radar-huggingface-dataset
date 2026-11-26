@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "OBLITERATUS/Inkling-2-Mini-OBLITERATED",
+  "slug": "obliteratus-inkling-2-mini-obliterated",
+  "author": "OBLITERATUS",
+  "url": "https://huggingface.co/OBLITERATUS/Inkling-2-Mini-OBLITERATED",
+  "created_at": "2026-11-26T04:37:25.000Z",
+  "updated_at": "2026-11-26T04:41:04.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "obliteratus",
+    "abliterated",
+    "uncensored",
+    "inkling-2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26070385152,
+  "parameters_human": "26.07B",
+  "storage_bytes": 15304954240,
+  "storage_human": "15.3 GB",
+  "context_length": 1048576,
+  "base_model": "Inkbot-AI/Inkling-2-Mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "Text Generation model with 28B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "OBLITERATUS : l'outil open source qui supprime définitivement les ...",
+      "url": "https://david-informaticien.com/blog/ia/3935-obliteratus-loutil-open-source-qui-supprime-definitivement-les-filtres-dune-ia",
+      "snippet": "Apr 27, 2026 · OBLITERATUS est un outil open source qui supprime définitivement les filtres des IA en quelques minutes. …Read more"
+    },
+    {
+      "title": "Ce petit outil open source peut rendre une IA totalement sans filtre",
+      "url": "https://www.clubic.com/actualite-603661-ce-petit-outil-open-source-peut-rendre-une-ia-totalement-sans-filtre.html",
+      "snippet": "Mar 8, 2026 · OBLITERATUS opère différemment mais avec des effets comparables : au lieu de contourner les garde-fous à chaque …Read more"
+    },
+    {
+      "title": "Obliteratus : l'outil qui transforme votre LLM open-source plutôt sage ...",
+      "url": "https://deep-dive.fr/obliteratus-loutil-qui-transforme-votre-llm-open-source-plutot-sage-en-veritable-psychopathe/",
+      "snippet": "Mar 14, 2026 · Obliteratus est un toolkit open-source lancé début mars 2026 qui supprime les garde-fous éthiques des LLMs open …Read more"
+    },
+    {
+      "title": "OBLITERATUS - a Hugging Face Space by pliny-the-prompter",
+      "url": "https://huggingface.co/spaces/pliny-the-prompter/obliteratus",
+      "snippet": "Select a pre‑trained language model, pick an obliteration method and optional prompt set, then run the process to remove its safety …Read more"
+    }
+  ]
+}

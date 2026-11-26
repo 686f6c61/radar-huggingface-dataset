@@ -5,7 +5,7 @@
   "author": "aitamedia",
   "url": "https://huggingface.co/aitamedia/Ling-3.0-flash-Sante-FP4",
   "created_at": "2026-10-28T00:15:22.000Z",
-  "updated_at": "2026-10-28T00:25:13.000Z",
+  "updated_at": "2026-11-25T19:51:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

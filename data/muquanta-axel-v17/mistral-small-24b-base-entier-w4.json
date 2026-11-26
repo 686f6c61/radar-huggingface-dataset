@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "muquanta-axel-v17/Mistral-Small-24B-Base-entier-W4",
+  "slug": "muquanta-axel-v17-mistral-small-24b-base-entier-w4",
+  "author": "muquanta-axel-v17",
+  "url": "https://huggingface.co/muquanta-axel-v17/Mistral-Small-24B-Base-entier-W4",
+  "created_at": "2026-11-26T07:58:09.000Z",
+  "updated_at": "2026-11-26T08:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "integer-only",
+    "int4",
+    "quantized",
+    "mistral",
+    "deterministic",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Mistral-Small-24B-Base-2501",
+    "base_model:quantized:mistralai/Mistral-Small-24B-Base-2501",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13628741814,
+  "parameters_human": "13.63B",
+  "storage_bytes": 15837610125,
+  "storage_human": "15.8 GB",
+  "context_length": null,
+  "base_model": "mistralai/Mistral-Small-24B-Base-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

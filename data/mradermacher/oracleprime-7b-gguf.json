@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/OraclePrime-7B-GGUF",
+  "slug": "mradermacher-oracleprime-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OraclePrime-7B-GGUF",
+  "created_at": "2026-11-26T07:03:55.000Z",
+  "updated_at": "2026-11-26T07:13:17.000Z",
+  "license": "oracleprime-assets",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zh",
+    "base_model:van-jinp/OraclePrime-7B",
+    "base_model:quantized:van-jinp/OraclePrime-7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357175232,
+  "storage_human": "70.4 GB",
+  "context_length": 128000,
+  "base_model": "van-jinp/OraclePrime-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

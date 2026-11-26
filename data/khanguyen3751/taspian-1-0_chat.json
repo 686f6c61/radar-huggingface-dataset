@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "khanguyen3751/Taspian.1.0_chat",
+  "slug": "khanguyen3751-taspian-1-0_chat",
+  "author": "khanguyen3751",
+  "url": "https://huggingface.co/khanguyen3751/Taspian.1.0_chat",
+  "created_at": "2026-11-26T05:48:31.000Z",
+  "updated_at": "2026-11-26T05:56:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110418432,
+  "parameters_human": "110.4M",
+  "storage_bytes": 441688704,
+  "storage_human": "442 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

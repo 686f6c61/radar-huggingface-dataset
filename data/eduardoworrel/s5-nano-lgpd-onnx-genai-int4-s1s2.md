@@ -2,100 +2,104 @@
 
 ## Resumen
 
-S5-nano-LGPD-ONNX-genai-int4-S1S2 es una compilación ONNX int4 del modelo S5-nano de Maritaca AI, adaptada por eduardoworrel para clasificar pasajes de políticas de privacidad en portugués según requisitos de la LGPD (Ley General de Protección de Datos de Brasil). El modelo base es un transformer híbrido de Maritaca AI con capas GatedDeltaNet; esta versión añade una cabeza de clasificación (pointer head) entrenada con datos del corpus Claudinha y datos sintéticos, y se distribuye en formato ONNX Runtime GenAI int4 para ejecutarse en el navegador mediante WebGPU a través de la librería s1s2.
+S5-nano-LGPD-ONNX-genai-int4-S1S2 es una compilación cuantizada a int4 y exportada a ONNX Runtime GenAI del modelo maritaca-ai/S5-nano, especializada en clasificación de requisitos de privacidad de la LGPD brasileña. El modelo recibe un fragmento de texto en portugués y una pregunta de transparencia (por ejemplo, si el pasaje trata sobre compartición de datos con terceros) y devuelve una decisión tipada (Sim/Não) con probabilidad y margen en un único forward pass. Lo desarrolla el usuario eduardoworrel sobre el modelo base de Maritaca AI y se publica bajo licencia CC BY 4.0.
 
-El problema que resuelve es concreto: dada una frase de una política de privacidad y una pregunta de transparencia (por ejemplo, si se comparten datos con terceros), el modelo responde "Sim" o "Não" en un único forward pass, devolviendo además una probabilidad y un margen de confianza. Cuando el margen es bajo, el mismo prefill puede escalar a una segunda pasada generativa (System 2) que produce una justificación textual. Es relevante por su enfoque de privacidad en el dispositivo (inferencia local en el navegador, sin enviar datos a servidores) y por su arquitectura de dos sistemas con puerta de escalado calibrable.
+La relevancia de esta ficha radica en su planteamiento de doble sistema: una cabeza de decisión ("System 1") resuelve la consulta en una sola pasada, y solo cuando el margen es bajo se escala a generación autoregresiva ("System 2") reutilizando el mismo prefill. El build está pensado para ejecutarse en navegador mediante WebGPU a través de la librería s1s2, con un tamaño de descarga de 2,44 GB. La arquitectura subyacente del modelo base incluye capas GatedDeltaNet, lo que condiciona el despliegue: no existe kernel de CPU para esas capas y el runtime es exclusivamente WebGPU.
 
-El repositorio ocupa 2,5 GB (descarga de 2,44 GB para el grafo int4) y está publicado bajo licencia CC BY 4.0. El modelo base S5-nano es Apache-2.0. La versión int4 no tiene aún mediciones de rendimiento en navegador publicadas.
+El modelo no evalúa cumplimiento normativo ni emite asesoramiento legal: determina únicamente si un pasaje aborda un requisito concreto. Se entrenó solo con políticas brasileñas (LGPD), aunque muestra transferencia zero-shot a GDPR y CCPA en inglés. El repo ocupa 2,5 GB y acumula 236 descargas en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas GatedDeltaNet (modelo base S5-nano); grafo ONNX Runtime GenAI 0.19 con cabeza pointer de clasificación |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer del modelo base S5-nano con capas GatedDeltaNet; exportado a grafo ONNX Runtime GenAI 0.19 con cabeza de decisión (pointer head) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | int4 (ONNX Runtime GenAI) |
-| Idiomas soportados | portugués (pt), inglés (en) |
+| Tipos de cuantizacion | int4 (build publicado); el modelo base y el adaptador LoRA existen en bf16 y fp32 |
+| Idiomas soportados | pt (portugués), en (inglés, solo transferencia zero-shot) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | ONNX (onnxruntime-genai), int4 |
+| Formato de pesos | ONNX (onnxruntime-genai), manifiesto `manifest.pt.json`; adaptador PyTorch disponible en el repo LoRA asociado |
 
 ## Arquitectura y entrenamiento
 
-El modelo base S5-nano de Maritaca AI emplea una arquitectura híbrida con capas GatedDeltaNet, lo que explica la restricción de ejecución exclusiva en WebGPU: no existe kernel CPU para esas capas en el grafo ONNX publicado. Sobre ese base, el autor añade una pointer head entrenada para responder preguntas de tipo elección con exactamente las palabras "Sim" y "Não"; cualquier otra palabra (incluidas traducciones) altera el prompt que lee la cabeza y no funciona. La variante evaluada es `lgpd_only`, con pesos bf16.
+El modelo parte de maritaca-ai/S5-nano (Apache-2.0) y añade una cabeza de decisión de tipo pointer head entrenada para responder preguntas de opción cerrada con las palabras exactas "Sim" y "Não". La inferencia se organiza en dos niveles: System 1 ejecuta un único forward pass que produce una elección tipada junto con probabilidad y margen; System 2, opcional, reutiliza el prefill de esa misma pasada para generar texto justificativo cuando la confianza es baja. La compilación publicada usa el grafo int4 de onnxruntime-genai 0.19 para WebGPU.
 
-El entrenamiento combina el corpus Claudinha (Tocchini et al., Zenodo 13371639, CC BY 4.0) con datos sintéticos Kev de tipo `legacy_policy` y `compositional`, generados por código Kev (Apache-2.0). La receta de la cabeza pointer y del entrenamiento proviene de Kev. La idea de separación System 1 / System 2 con puerta de margen procede de CT0 (Alias Robotics) y de los trabajos precursores alias3-web y el paper Browser Immune System (arXiv 2611.15302). Existe otra variante, `lgpd_only_k` (2 épocas, fusión fp32), que no fue evaluada en el conjunto de test reservado.
+El entrenamiento se realizó exclusivamente sobre políticas brasileñas de privacidad: el corpus Claudinha (Tocchini et al., Zenodo 13371639, CC BY 4.0) y datos sintéticos Kev (legacy_policy y compositional, generados con código Apache-2.0). La receta de entrenamiento y la cabeza provienen de Kev (Apache-2.0), y la idea de separación System 1 / System 2 con compuerta por margen se atribuye a CT0 de Alias Robotics. No se especifican en la información disponible el número de tokens de entrenamiento, la composición detallada del dataset ni si hubo RLHF o DPO. Existe una variante `lgpd_only_k` (2 épocas, merge en fp32) que no fue evaluada en el conjunto de test retenido, por lo que la model card reporta resultados de `lgpd_only`.
 
 ## Capacidades
 
-- Clasificación binaria de pasajes de política de privacidad contra requisitos LGPD, con respuesta tipada ("Sim"/"Não"), probabilidad y margen en un único forward pass (System 1).
-- Generación de texto justificativo bajo demanda (System 2) reutilizando el mismo prefill, por ejemplo para citar la frase que evidencia la respuesta.
-- Escalado condicional por margen: las respuestas de bajo margen pueden derivarse a una pasada generativa, con umbral calibrable sobre datos etiquetados propios (`thresholdFromQuantile`).
-- Transferencia zero-shot a marcos normativos en inglés: GDPR y CCPA, sin entrenamiento específico en ellos.
-- Ejecución local en navegador mediante WebGPU con la librería s1s2, sin envío de datos a servidores.
-- Soporte de preguntas de tipo elección con opciones controladas por el manifiesto (`lab.labels`), lo que permite construir cuestionarios estructurados sobre el mismo modelo.
-- No se documentan capacidades de tool calling, agentes multi-paso, visión, audio ni modo thinking.
+- Clasificación binaria de requisitos de privacidad: responde Sim/Não a preguntas de transparencia sobre un pasaje en portugués, con probabilidad y margen por respuesta.
+- Decisión tipada en un solo forward pass (System 1), sin generación autoregresiva.
+- Escalado condicional a generación (System 2) cuando el margen cae por debajo de un umbral calibrado sobre datos propios etiquetados.
+- Generación de texto justificativo a partir del mismo prefill, con control de `maxNewTokens`.
+- Soporte de múltiples preguntas por invocación mediante el array `questions`.
+- Transferencia zero-shot a marcos normativos en inglés (GDPR y CCPA) pese a no haber sido entrenado con ellos.
+- Ejecución en navegador vía WebGPU con la librería `@s1s2/web`.
+- No dispone de tool calling, function calling, visión, audio ni modo de razonamiento extendido según la información disponible.
 
 ## Casos de uso
 
-- Auditoría de políticas de privacidad en el navegador: cargar una política en portugués y evaluar automáticamente decenas de requisitos de transparencia (compartición con terceros, finalidades, retención) sin que el texto salga del dispositivo del analista.
-- Herramienta de cumplimiento para equipos de privacidad: usar la respuesta tipada y el margen para priorizar revisiones humanas, derivando solo los casos dudosos a la pasada generativa que produce la cita justificativa.
-- Detección de lagunas de transparencia en portales de empresas brasileñas: procesar por lotes fragmentos de políticas y marcar los requisitos no abordados, con un umbral calibrado sobre un conjunto etiquetado propio.
-- Verificación cruzada de marcos normativos: aplicar el modelo, entrenado solo con LGPD, a textos GDPR y CCPA en inglés como primera pasada de triaje (balanced accuracy en torno al 81-83 % en los conjuntos de test citados), antes de una revisión especializada.
-- Integración en extensiones de navegador o demos web: el grafo int4 de 2,44 GB se carga con s1s2 y WebGPU, permitiendo prototipos de privacidad en el dispositivo sin infraestructura de servidor.
-- Investigación sobre arquitecturas System 1 / System 2: replicar la puerta de margen y el escalado generativo sobre el mismo prefill para estudiar calibración y coste computacional en clasificación con LLM.
-- Generación de explicaciones citadas: cuando la clasificación es positiva, solicitar al modelo la frase concreta que sustenta la respuesta, útil para informes de auditoría reproducibles.
+- Auditoría de políticas de privacidad en portugués: dado un fragmento de una política y una pregunta de transparencia, el modelo devuelve Sim/Não con probabilidad y margen, lo que permite priorizar revisiones humanas sobre los casos de baja confianza.
+- Herramienta de cumplimiento LGPD en el navegador: al ejecutarse con WebGPU y sin backend servidor, permite procesar textos sensibles en el propio dispositivo del usuario, reduciendo la exposición de datos.
+- Triaje previo a revisión legal: el escalado a System 2 solo en respuestas de margen bajo permite generar justificaciones únicamente donde aportan valor, ahorrando cómputo frente a generar texto para todas las consultas.
+- Evaluación de proveedores y contratos: comprobar si un documento aborda requisitos concretos como compartición con terceros, base legal o derechos del titular, usando el par de etiquetas exacto con el que se entrenó la cabeza.
+- Investigación sobre marcos normativos comparados: la transferencia zero-shot a GDPR y CCPA permite explorar el comportamiento del modelo sobre textos en inglés sin reentrenamiento, siempre con validación adicional.
+- Docencia y prototipado de sistemas duales: el par System 1 / System 2 con compuerta por cuantil (`thresholdFromQuantile`) sirve como referencia reproducible para experimentar con decisiones tipadas y escalado condicional.
+- Filtrado en pipelines de datos: clasificar lotes de pasajes según si tratan un requisito antes de un análisis más costoso, usando la probabilidad y el margen como señal de ordenación.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card: balanced accuracy de la pointer head sobre el conjunto de test reservado, pesos bf16 de la variante `lgpd_only`.
+Resultados reportados en la model card sobre conjunto de test retenido, con precisión balanceada de la pointer head y pesos bf16 de la variante `lgpd_only`:
 
-| Conjunto de test | Balanced accuracy (%) |
+| Conjunto de test | Precisión balanceada (%) |
 |---|---|
 | LGPD (portugués), n = 802 | 81,2 |
 | GDPR (inglés, transferencia zero-shot), n = 558 | 83,3 |
 | CCPA (inglés, transferencia zero-shot), n = 420 | 81,0 |
 
-Esta compilación int4 no tiene mediciones de rendimiento en navegador publicadas.
+Registros de fidelidad: sobre n = 1.112 preguntas de desarrollo de los dos conjuntos publicados (GDPR y LGPD), comparando el build int4 en Chrome con WebGPU (Apple M2 Pro) frente al modelo PyTorch bf16 en GPU de servidor, la decisión coincide en el 94,2 % de los ítems con lectura de cabeza (intervalo del 95 %: 92,6 a 95,4) y en el 94,7 % con lectura de logits. Son ítems de desarrollo, no de test. La model card indica que este build int4 no tiene todavía medición en navegador propia.
 
 ## Requisitos de hardware
 
-- Descarga del grafo int4: 2,44 GB; tamaño total del repositorio: 2,5 GB.
-- Ejecución exclusivamente en WebGPU: no hay kernel CPU para las capas GatedDeltaNet del grafo ONNX, por lo que no funciona en entornos sin GPU compatible con WebGPU.
-- GPU de consumo: cualquier GPU con soporte WebGPU estable (por ejemplo, tarjetas AMD, NVIDIA o Apple Silicon recientes) puede alojar el grafo int4; no se especifican VRAM mínimas.
-- Despliegue en servidor: no documentado para esta compilación; el runtime objetivo es onnxruntime-genai 0.19 con la librería s1s2 en el navegador.
-- Alternativa PyTorch: el adaptador y las cabezas están disponibles en eduardoworrel/S5-nano-LGPD-LoRA para ejecución fuera del navegador.
-- Latencia y throughput: no disponibles para esta build int4.
+- Descarga del build int4: 2,44 GB; el repositorio completo ocupa 2,5 GB.
+- VRAM estimada para inferencia: no disponible de forma explícita; el tamaño de descarga de 2,44 GB da una referencia del orden de magnitud de memoria necesaria para los pesos.
+- GPU recomendadas: no disponible; la model card solo documenta ejecución en WebGPU (probado en Apple M2 Pro con Chrome).
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el requisito es soporte de WebGPU en el navegador.
+- CPU: no soportada, porque no existe kernel de CPU para las capas GatedDeltaNet del grafo.
+- Opciones de despliegue: `@s1s2/web` (github.com/eduardoworrel/s1s2) con onnxruntime-genai 0.19 y manifiesto `manifest.pt.json`; el adaptador PyTorch y las cabezas están en eduardoworrel/S5-nano-LGPD-LoRA.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S5-nano-LGPD-ONNX-genai-int4-S1S2 (este) | no disponible | no disponible | Clasificación LGPD en navegador, System 1/2 | CC BY 4.0 | ONNX int4, WebGPU |
-| eduardoworrel/S5-nano-LGPD-LoRA | mismo base S5-nano | no disponible | Adaptador PyTorch con cabezas LGPD | no disponible | PyTorch |
-| maritaca-ai/S5-nano | no disponible | no disponible | Modelo base generativo de Maritaca AI | Apache-2.0 | Pesos originales |
-| aliasrobotics/alias3-web | no disponible | no disponible | Precursor de clasificación de privacidad en navegador | no disponible | Web |
+| S5-nano-LGPD-ONNX-genai-int4-S1S2 | no disponible | no disponible | Clasificación de requisitos LGPD con cabeza de decisión y System 1/System 2 | CC BY 4.0 | Hugging Face, ONNX int4, WebGPU |
+| maritaca-ai/S5-nano (base) | no disponible | no disponible | Modelo generativo de propósito general | Apache-2.0 | Hugging Face |
+| eduardoworrel/S5-nano-LGPD-LoRA | no disponible | no disponible | Adaptador LoRA y cabezas en PyTorch para la misma tarea | no disponible | Hugging Face |
+| aliasrobotics/alias3-web | no disponible | no disponible | Precursor del enfoque web y de decisión tipada | no disponible | Hugging Face |
+
+Los datos de parámetros, contexto y rendimiento de los modelos comparables no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo funciona con las palabras de opción exactas "Sim" y "Não"; traducciones u otras variantes cambian el prompt leído por la cabeza y rompen la clasificación.
-- Entrenado únicamente con políticas brasileñas (LGPD); GDPR y CCPA solo se evalúan en transferencia zero-shot y no forman parte del entrenamiento.
-- Indica si un pasaje aborda un requisito, no si una política cumple la ley; no constituye asesoramiento legal.
-- Ejecución restringida a WebGPU: sin kernel CPU para las capas GatedDeltaNet, no hay fallback en entornos sin GPU compatible.
-- Esta build int4 no cuenta con mediciones de rendimiento en navegador, por lo que su latencia y fiabilidad práctica no están verificadas.
-- Riesgo de alucinación en la pasada generativa (System 2) al citar frases justificativas; conviene validar las citas contra el texto original.
-- El umbral de escalado debe calibrarse sobre datos etiquetados propios; un umbral mal ajustado degrada la precisión o dispara el coste generativo.
-- La licencia CC BY 4.0 exige atribución; el modelo base (Apache-2.0), el corpus Claudinha (CC BY 4.0) y los datos Kev (Apache-2.0) conservan sus condiciones de atribución.
-- Sesgos no documentados en la model card; al entrenarse sobre un corpus normativo brasileño concreto, puede infrarepresentar prácticas de otras jurisdicciones.
+- Solo se entrenó con políticas brasileñas (LGPD); GDPR y CCPA nunca formaron parte del entrenamiento y sus resultados son transferencia zero-shot.
+- El modelo indica si un pasaje aborda un requisito, no si una política cumple la normativa; no constituye asesoramiento legal.
+- La cabeza se entrenó exactamente con las palabras "Sim" y "Não"; cualquier otra palabra, incluidas traducciones, altera el prompt y no funciona. Las etiquetas válidas están en `lab.labels` del manifiesto.
+- Ejecución exclusivamente en WebGPU: no hay kernel de CPU para las capas GatedDeltaNet del grafo.
+- Este build int4 no cuenta con medición de rendimiento en navegador publicada; la fidelidad reportada (94,2 % / 94,7 %) se midió solo sobre ítems de desarrollo.
+- Riesgo de alucinación en la fase System 2: el texto justificativo es generación autoregresiva y debe validarse contra el pasaje original.
+- Posibles sesgos derivados del corpus Claudinha y de los datos sintéticos Kev; no se documentan análisis de sesgo en la información disponible.
+- La licencia CC BY 4.0 permite uso comercial con atribución; deben mantenerse las atribuciones al corpus Claudinha (CC BY 4.0), a los datos Kev y al modelo base (Apache-2.0).
+- La variante `lgpd_only_k` no fue evaluada en el conjunto de test retenido, por lo que no debe asumirse su rendimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/eduardoworrel/S5-nano-LGPD-ONNX-genai-int4-S1S2
-- Adaptador PyTorch y cabezas: https://huggingface.co/eduardoworrel/S5-nano-LGPD-LoRA
+- Adaptador LoRA y cabezas PyTorch: https://huggingface.co/eduardoworrel/S5-nano-LGPD-LoRA
 - Modelo base: https://huggingface.co/maritaca-ai/S5-nano
 - Librería s1s2: https://github.com/eduardoworrel/s1s2
+- Repositorio Kev: https://github.com/jaredpalmer/kev
 - Corpus Claudinha: https://zenodo.org/records/13371639
-- Receta y cabeza pointer (Kev): https://github.com/jaredpalmer/kev
-- Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
 - Paper Browser Immune System: https://arxiv.org/abs/2611.15302
+- Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web

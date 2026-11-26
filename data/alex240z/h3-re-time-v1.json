@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Alex240z/H3-Re-Time-v1",
+  "slug": "alex240z-h3-re-time-v1",
+  "author": "Alex240z",
+  "url": "https://huggingface.co/Alex240z/H3-Re-Time-v1",
+  "created_at": "2026-11-26T04:30:43.000Z",
+  "updated_at": "2026-11-26T05:07:06.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video-to-video",
+    "video-restoration",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304545448,
+  "storage_human": "305 MB",
+  "context_length": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Travel Back in Time : r/lifehacks - Reddit",
+      "url": "https://www.reddit.com/r/lifehacks/comments/nzp5ky/how_to_travel_back_in_time/",
+      "snippet": "Jun 14, 2021 · Google Earth automatically displays current imagery. To see how images have changed over time, view past versions …Read more"
+    }
+  ]
+}

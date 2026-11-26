@@ -2,84 +2,114 @@
 
 ## Resumen
 
-Pellav2 es un modelo publicado en Hugging Face bajo el identificador `SpeechAntiSpoofingBenchmarks/Pellav2`, desarrollado por el usuario u organizacion `SpeechAntiSpoofingBenchmarks`. Por el nombre del repositorio y de la organizacion, se trata de un modelo orientado a tareas de *anti-spoofing* de voz, es decir, a la deteccion de audio sintetico o manipulado (deepfakes de voz, speech synthesis, voice conversion) dentro de un conjunto de benchmarks de seguridad de voz. El repositorio ocupa 2,3 GB, lo que sugiere pesos de tamano medio, compatible con arquitecturas de tipo encoder acustico seguido de una cabeza de clasificacion binaria o multiclase.
+Pellav2 es un detector de audio deepfake (anti-spoofing) de pesos abiertos publicado por Sadanie en agosto de 2026 y reempaquetado por SpeechAntiSpoofingBenchmarks para el banco de pruebas Speech Anti-Spoofing Arena. El modelo recibe una señal de voz a 16 kHz y emite un logit que indica la probabilidad de que la grabación sea sintética (fake) frente a genuina (bona fide). Resuelve el problema de verificar la autenticidad de audio en un contexto de proliferación de voces clonadas mediante TTS y conversión de voz.
 
-La informacion publica disponible en la ficha de Hugging Face es muy limitada: no se declara pipeline, licencia, idiomas ni etiquetas tecnicas mas alla de `region:us`. No hay model card visible con detalles de arquitectura, datos de entrenamiento o resultados de evaluacion. El modelo acumula 134 descargas y ningun *like*, y fue creado y actualizado en noviembre de 2026 segun los metadatos del repositorio.
+Arquitectura basada en un encoder w2v-BERT 2.0 de tipo conformer con 24 capas, afinado sobre características log-mel fbank kaldi de 80 bins. Cuenta con 580,49 millones de parámetros, un tamaño de repo de 2,4 GB y pesos en formato safetensors. El contexto de entrada efectivo es un recorte central de 4 segundos (64.000 muestras), con relleno de ceros para clips más cortos.
 
-A pesar de la escasez de documentacion, el modelo es relevante para investigadores que trabajen en deteccion de audio falsificado y en la evaluacion estandarizada de contramedidas frente a ataques de sintesis de voz. Su inclusion en un repositorio de benchmarks de anti-spoofing lo posiciona como una referencia potencial para comparativas dentro de esa comunidad, aunque su adopcion en produccion requiere validacion adicional por la ausencia de licencia y de especificaciones declaradas.
+Su relevancia actual radica en los resultados publicados en el Arena: EER del 1,1% en ASVspoof2019_LA, 3,17% en ASVspoof2021_LA y 1,18% en ASVspoof2021_DF, si bien el modelo está clasificado en el tier no publicado del Arena por carecer de paper y de datos de entrenamiento declarados. La licencia es MIT, lo que facilita su uso comercial, aunque la opacidad del dataset de entrenamiento introduce incertidumbre sobre posible leakage.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (repo de 2,3 GB) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | w2v-BERT 2.0 conformer encoder (24 capas, fine-tuned) con masked mean pooling y cabeza Linear(1024,1) |
+| Parametros totales | 580,49 M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | recorte central de 4 s (64.000 muestras a 16 kHz); clips más cortos con zero-padding |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP32; existe wrapper TensorRT en FP32) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (pellav2_detector.safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la informacion disponible. Por el contexto del repositorio (`SpeechAntiSpoofingBenchmarks`) y el tamano del artefacto (2,3 GB), es plausible que se trate de un sistema de deteccion de *spoofing* de voz basado en un encoder acustico preentrenado (por ejemplo, variantes de wav2vec, HuBERT, WavLM o ECAPA-TDNN) con una cabeza de clasificacion, pero esta hipotesis no puede confirmarse con los datos proporcionados.
+El modelo es un clasificador binario construido sobre un encoder w2v-BERT 2.0 de tipo conformer con 24 capas, afinado para la tarea de detección de spoofing. La entrada se procesa como características log-mel fbank kaldi de 80 bins multiplicadas por 32768, normalizadas por media y varianza a nivel de utterance, con pares de frames apilados para dar 160 dimensiones y recorte del silencio digital final. Sobre las representaciones del encoder se aplica una mezcla ponderada por softmax de los 25 estados ocultos, seguida de masked mean pooling y una capa lineal de 1024 a 1 que produce el logit de fake.
 
-Tampoco se dispone de informacion sobre el corpus de entrenamiento (numero de horas, composicion de ataques, idiomas, condiciones de grabacion), sobre el uso de tecnicas de aumento de datos, ni sobre si se aplicaron estrategias de *fine-tuning* supervisado, *self-supervised learning* o entrenamiento con funciones de perdida especificas para anti-spoofing (por ejemplo, AASIST, OC-Softmax o AM-Softmax). Todos estos datos deben considerarse no disponibles.
+El pipeline de inferencia del autor (pellav2_infer.py) especifica: remuestreo a 16 kHz, eliminación de media, filtro paso alto de 20 Hz (Butterworth de segundo orden en fase cero), recorte central de 4 s (64.000 muestras), normalización de sonoridad ITU-R BS.1770 a -23 LUFS (semántica de pyloudnorm) y zero-padding para clips más cortos. La puntuación final es -logit(fake), de modo que valores más altos indican audio bona fide. La inferencia se ejecuta en FP32 con TF32 desactivado.
+
+No se ha publicado información sobre el conjunto de entrenamiento: no hay paper y la model card no detalla datos, número de tokens ni si hubo RLHF/DPO. El propio Arena advierte que no se puede descartar leakage, dado que las puntuaciones en J-SPAW_LA están perfectamente separadas (EER 0%).
 
 ## Capacidades
 
-- Deteccion de audio sintetico o manipulado: por el nombre del repositorio, la capacidad principal esperada es la clasificacion de audio como genuino o falsificado (*bona fide* frente a *spoof*).
-- Evaluacion en benchmarks de anti-spoofing: el modelo parece concebido para integrarse en suites de evaluacion comparativa de contramedidas.
-- Procesamiento de audio de entrada: se asume entrada de forma de onda o caracteristicas acusticas, aunque el formato exacto no esta documentado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo *thinking*, vision o audio generativo: no disponible.
-- Generacion de texto: no disponible (no es un modelo de lenguaje segun la informacion disponible).
+- Detección binaria de audio sintético frente a voz genuina, con salida en forma de logit y puntuación -logit(fake).
+- Procesamiento de voz a 16 kHz con normalización de sonoridad y filtrado paso alto integrados en el pipeline de inferencia.
+- Manejo de clips de duración variable mediante recorte central a 4 s y zero-padding.
+- Integración con TensorRT: el wrapper drop-in en FP32 sobre RTX 4070 Ti SUPER y RTX 5060 Ti coincidió con PyTorch en el conjunto completo J-SPAW_LA (|dEER| <= 0,25, Spearman >= 0,999).
+- No soporta tool calling, function calling, agentes, multi-step reasoning ni generación de texto.
+- No dispone de capacidades multimodales más allá del audio de entrada; no procesa visión ni texto.
+- No se declaran capacidades multilingües específicas; el modelo opera sobre características acústicas y no depende de idioma declarado.
 
 ## Casos de uso
 
-- Evaluacion de contramedidas en investigacion: usar el modelo como referencia en experimentos de deteccion de voz sintetica dentro de un *benchmark* estandarizado, comparando su comportamiento con otras contramedidas del mismo repositorio.
-- Auditoria de pipelines de verificacion de locutor: integrar el modelo como etapa de filtrado previo para descartar audios sinteticos antes de un sistema de reconocimiento de locutor.
-- Deteccion de deepfakes de voz en entornos controlados: emplear el modelo en pruebas de laboratorio para medir su sensibilidad frente a ataques de *text-to-speech* y *voice conversion*.
-- Reproducibilidad de resultados academicos: cargar los pesos para replicar experimentos publicados en la literatura de anti-spoofing, siempre que se documente la version del repositorio.
-- Analisis forense de audio: usar el modelo como senal auxiliar en la revision de grabaciones sospechosas, combinado con otras herramientas y revision humana.
-- Prototipado de sistemas de moderacion de audio: en fases tempranas de desarrollo, evaluar el modelo como componente de un filtro de contenido generado por IA, asumiendo que la licencia y el rendimiento real deben validarse antes de cualquier uso en produccion.
+- Verificación de autenticidad en plataformas de contenido: integración como filtro previo a la publicación de audio subido por usuarios, usando la puntuación -logit(fake) con umbral calibrado sobre un conjunto propio para marcar posibles deepfakes antes de revisión humana.
+- Moderación de llamadas y atención al cliente: análisis de grabaciones de contact center para detectar voces sintéticas en intentos de fraude, aprovechando el bajo EER en ASVspoof2021_DF (1,18%) y en InTheWild (1,57%).
+- KYC y verificación de identidad por voz: capa adicional en procesos de onboarding telefónico que comprueba si el audio del cliente es genuino antes de validar la identidad, con el modelo ejecutándose en FP32 sobre GPU consumer.
+- Detección de deepfakes en periodismo y verificación de hechos: análisis de clips de audio recibidos de fuentes no verificadas, con recorte central a 4 s para estandarizar entradas heterogéneas y normalización de sonoridad a -23 LUFS.
+- Investigación en seguridad de voz: uso como baseline o componente de ensembles en experimentos de anti-spoofing, dado que el Arena publica resultados por dataset y el modelo está en el tier no publicado.
+- Despliegue en producción con TensorRT: el wrapper drop-in permite servir el detector en GPUs RTX con latencia reducida manteniendo equivalencia numérica con PyTorch (Spearman >= 0,999 en J-SPAW_LA), útil para pipelines de alto volumen.
+- Auditoría de datasets de audio: cribado de corpus para detectar muestras sintéticas antes de usarlos en entrenamiento de modelos de voz, con la cautela de que el propio modelo puede tener leakage en algunos benchmarks.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados en el Speech Anti-Spoofing Arena. EER% (menor es mejor); EmoSpoofTTS y LRLspoof son spoof-only y usan 1-SRR% en el umbral EER de DeepVoice.
+
+| Dataset | EER% |
+|---|---|
+| ASVspoof2019_LA | 1,10 |
+| ASVspoof2021_LA | 3,17 |
+| ASVspoof2021_DF | 1,18 |
+| ASVspoof5 | 17,64 |
+| InTheWild | 1,57 |
+| ADD22_eval_31 | 1,13 |
+| ADD2023_track12_test_r1 | 3,61 |
+| CFAD | 7,30 |
+| CD-ADD | 0,00 |
+| CVoiceFake_small | 3,76 |
+| DeepVoice | 2,58 |
+| LibriSeVoc | 0,49 |
+| SONAR | 0,44 |
+| ArAD | 0,62 |
+| DECRO | 1,36 |
+| J-SPAW_LA | 0,00 |
+
+No se han publicado resultados comparativos con otros modelos en la información disponible; el Arena clasifica a Pellav2 en el tier no publicado (mostrado, no rankeado).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precision; el repositorio de 2,3 GB sugiere que los pesos en precision completa o mixta caben en GPUs de consumo con 8-12 GB de VRAM, pero esta estimacion no puede confirmarse.
-- GPU recomendadas: no disponible. Por tamano del artefacto, una RTX 3090, RTX 4090, A100 o H100 serian suficientes en terminos de memoria, aunque no se conoce la arquitectura exacta.
-- Compatibilidad con GPU de consumo: probablemente si, dado el tamano del repositorio, pero no verificado.
-- Opciones de despliegue: no disponible. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni frameworks de inferencia de audio como SpeechBrain o ESPnet.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en FP32: aproximadamente 2,3 GB solo para pesos (580,49 M de parámetros), más overhead de activaciones y del encoder conformer; el repo completo ocupa 2,4 GB.
+- GPU recomendadas: RTX 4070 Ti SUPER y RTX 5060 Ti (probadas con el wrapper TensorRT en FP32), RTX 4060 Ti (probada con PyTorch). Para mayor throughput, A100 o H100 son adecuadas aunque no se documentan mediciones.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 4-6 GB de VRAM en FP32; el modelo es pequeño para los estándares actuales.
+- Opciones de despliegue: PyTorch (pellav2_infer.py del autor) y wrapper TensorRT drop-in. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles de forma numérica; el wrapper TensorRT coincidió con PyTorch en J-SPAW_LA con |dEER| <= 0,25 y Spearman >= 0,999, lo que sugiere aceleración sin pérdida de precisión, pero no se publican cifras de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Pellav2 | no disponible | no disponible | no disponible | no disponible | Hugging Face (134 descargas) |
-| Alternativas de anti-spoofing | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada, por lo que la comparativa cuantitativa no está disponible. A continuación se indican los ejes que deberían compararse si se contara con información:
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria. La ausencia de model card, licencia y resultados publicados impide confirmar equivalencias con contramedidas conocidas como AASIST, RawNet2 o WavLM-based anti-spoofing.
+| Modelo | Parametros | Contexto de entrada | EER ASVspoof2021_DF | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Pellav2 | 580,49 M | 4 s (64.000 muestras) | 1,18% | MIT | Hugging Face (rehost) |
+| Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: no es posible determinar si el uso comercial esta permitido; debe contactarse con el autor antes de cualquier despliegue en produccion.
-- Falta de model card: no hay informacion sobre datos de entrenamiento, sesgos, condiciones de evaluacion ni metricas de error (EER, t-DCF), lo que impide valorar su robustez real.
-- Riesgo de alucinacion o falsos positivos/negativos: sin metricas publicadas, no puede estimarse la tasa de error en condiciones fuera de distribucion (ruido, canales telefonicos, idiomas distintos).
-- Posible sobreajuste a los ataques del benchmark: al formar parte de un repositorio de benchmarks, el modelo podria estar optimizado para los ataques concretos del conjunto de evaluacion y generalizar mal a ataques nuevos.
-- Idiomas soportados desconocidos: no se puede garantizar su funcionamiento en castellano ni en otros idiomas distintos del usado en entrenamiento.
-- Repositorio con muy poca traccion (0 likes, 134 descargas): no hay evidencia de validacion por parte de la comunidad.
-- Fecha de creacion y actualizacion en 2026: conviene verificar la integridad del repositorio y la procedencia de los pesos antes de su uso.
+- Datos de entrenamiento no divulgados: no hay paper ni descripción del dataset, lo que impide evaluar sesgos, cobertura de idiomas y posibles solapamientos con los conjuntos de evaluación.
+- Riesgo de leakage: el Arena advierte que las puntuaciones en J-SPAW_LA están perfectamente separadas (EER 0%) y que no se puede descartar contaminación; los resultados deben interpretarse con cautela.
+- Clasificación en tier no publicado: el modelo se muestra pero no se rankea en el Arena, lo que limita su comparabilidad oficial.
+- Ventana de entrada fija de 4 s: clips más largos se recortan al centro, por lo que la decisión se basa solo en una porción del audio; clips más cortos se rellenan con ceros, lo que puede degradar la calibración.
+- Dependencia del preprocesado exacto: el pipeline (filtro paso alto de 20 Hz, normalización a -23 LUFS, apilado de frames) es parte del modelo; desviarse de él puede alterar las puntuaciones.
+- Rendimiento desigual entre dominios: el EER sube al 17,64% en ASVspoof5 y al 7,30% en CFAD, frente a valores por debajo del 2% en varios conjuntos, lo que indica sensibilidad al tipo de ataque y a las condiciones de grabación.
+- Sin soporte multilingüe declarado ni evaluación por idioma: no se puede garantizar un rendimiento uniforme en lenguas distintas de las representadas en los benchmarks.
+- Licencia MIT: permite uso comercial, pero el rehost no transfiere garantías sobre los datos de entrenamiento ni sobre posibles reclamaciones de terceros.
+- No apto para generación de texto, agentes ni tool calling: es exclusivamente un clasificador de audio; cualquier uso fuera de esa función no está soportado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/Pellav2
-- Repositorio de la organizacion: https://huggingface.co/SpeechAntiSpoofingBenchmarks
-- Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
+- Hugging Face (rehost): https://huggingface.co/SpeechAntiSpoofingBenchmarks/Pellav2
+- Pesos (commit fijado): https://huggingface.co/SpeechAntiSpoofingBenchmarks/Pellav2/blob/0de5ef2278e4fb485bd57199a13d15cbf3686954/pellav2_detector.safetensors
+- Código de inferencia del autor: https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector/blob/b668eb4dfe4719665692c73c1d70383680afff6b/pellav2_infer.py
+- Repositorio upstream: https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector
+- Speech Anti-Spoofing Arena (Space): https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena
+- Ficha del modelo en el Arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena?system=pellav2

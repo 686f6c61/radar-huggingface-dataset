@@ -5,7 +5,7 @@
   "author": "WhiteHades",
   "url": "https://huggingface.co/WhiteHades/manga-ocr-browser",
   "created_at": "2026-09-14T13:49:28.000Z",
-  "updated_at": "2026-09-14T13:51:56.000Z",
+  "updated_at": "2026-11-26T02:23:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "quantized",
     "ja",
     "base_model:kha-white/manga-ocr-base",
-    "base_model:finetune:kha-white/manga-ocr-base",
+    "base_model:quantized:kha-white/manga-ocr-base",
     "license:apache-2.0",
     "region:us"
   ],
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 95465667,
-  "storage_human": "95 MB",
+  "storage_bytes": 191106021,
+  "storage_human": "191 MB",
   "context_length": null,
   "base_model": "kha-white/manga-ocr-base",
   "formats": [

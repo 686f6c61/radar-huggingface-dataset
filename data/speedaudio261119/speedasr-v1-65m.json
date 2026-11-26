@@ -5,7 +5,7 @@
   "author": "SpeedAudio261119",
   "url": "https://huggingface.co/SpeedAudio261119/SpeedASR-v1-65M",
   "created_at": "2026-11-19T08:26:42.000Z",
-  "updated_at": "2026-11-22T16:11:30.000Z",
+  "updated_at": "2026-11-26T04:45:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,7 +26,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

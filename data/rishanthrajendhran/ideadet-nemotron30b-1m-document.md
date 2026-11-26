@@ -2,75 +2,104 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `ideadet-nemotron30b-1m-document`, desarrollado por Rishanth Rajendhran, cuyo propósito es la detección de contenido generado por inteligencia artificial (ai-detection). El adaptador se construye sobre el modelo base de NVIDIA `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, un modelo de arquitectura Mixture of Experts (MoE) de 30 mil millones de parámetros totales con 3 mil millones de parámetros activos por token. El nombre del repositorio sugiere un enfoque en documentos con contexto largo (posiblemente 1 millón de tokens), aunque este dato no está confirmado en la información disponible.
+ProseLens es un detector de procedencia textual (prose provenance) construido como un ajuste fino por LoRA del modelo `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. Lo desarrolla rishanthrajendhran y forma parte del trabajo que acompaña a IdeaLens, su contraparte a nivel de ideas: ambos comparten backbone, documentos de entrenamiento y etiquetas, pero ProseLens lee el texto crudo del documento en lugar de un esquema (outline), de modo que aprende a atribuir la autoría a nivel de palabra. El modelo devuelve P(human), la probabilidad de que el documento lo haya escrito una persona.
 
-La relevancia de este modelo radica en la creciente necesidad de herramientas fiables para distinguir texto humano de texto generado por modelos de lenguaje, especialmente en ámbitos académicos, editoriales y de verificación de contenido. Al tratarse de un adaptador LoRA, su tamaño es reducido (3,1 GB) y puede integrarse sobre el modelo base de NVIDIA, que ya está optimizado para razonamiento y eficiencia. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face.
+El problema que resuelve es concreto: distinguir si un documento ha sido escrito por un humano o generado por IA, y hacerlo rastreando las palabras en lugar de las ideas. Según el paper, esto marca una diferencia notable: ProseLens acierta el 99,1% cuando ideas y palabras provienen de la misma fuente, pero cuando provienen de fuentes distintas sigue las palabras y baja al 25,4% en procedencia de ideas; IdeaLens alcanza el 95,3% y el 81,3% respectivamente, y Pangram 4 el 98,5% y el 25,9%.
 
-## Especificaciones técnicas
+Arquitectura y tamaño son los del modelo base: un transformer híbrido de tipo `nemotron_h` con 32.913.266.240 parámetros totales (activos no disponibles en la información proporcionada) y capacidad de contexto largo, dado el identificador "1m" del checkpoint. El modelo se publica con licencia OpenMDW-1.1, en formato safetensors, con un repositorio de 68,9 GB y 221 descargas en el momento de la consulta.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador PEFT) sobre NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (MoE) |
-| Parametros totales | no disponible (adaptador LoRA; el modelo base tiene 30B) |
-| Parametros activos | no disponible (el modelo base activa 3B por token) |
-| Longitud de contexto | no disponible (el nombre sugiere 1M, no confirmado) |
-| Tipos de cuantizacion | no disponible (el repositorio contiene safetensors, probablemente BF16) |
-| Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 |
-| Formato de pesos | safetensors |
+| Arquitectura | Nemotron H (`nemotron_h`), transformer híbrido; ajuste fino LoRA (rank 64) sobre el modelo base |
+| Parametros totales | 32.913.266.240 (32,9 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la informacion proporcionada (el identificador del checkpoint indica 1M) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | OpenMDW-1.1 (`openmdw-1.1`, etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (modelo fusionado) y adaptador LoRA en `adapter/`; compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en el modelo `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por NVIDIA, con 30 mil millones de parámetros totales y 3 mil millones de parámetros activos por token. Esta arquitectura permite una inferencia más eficiente que un modelo denso de tamaño equivalente. El adaptador LoRA añade pesos de bajo rango sobre las capas del modelo base, lo que reduce drásticamente los requisitos de almacenamiento y cómputo durante el ajuste fino.
+ProseLens parte del modelo `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, un transformer híbrido de la familia Nemotron H con 32,9 B de parámetros totales. Sobre ese backbone se aplica un ajuste fino LoRA de rango 64 entrenado con 1 millón de documentos web en inglés del dataset WildOutlines. El adaptador se publica tal como se entrenó, en el formato del servicio de entrenamiento Tinker, y el repositorio incluye `load_adapter.py` para fusionarlo en memoria con el modelo base; el resultado es bit a bit idéntico al modelo fusionado publicado.
 
-No se dispone de información pública sobre el dataset de entrenamiento, el número de tokens utilizados, ni el método de optimización (si se empleó RLHF, DPO u otro enfoque). El nombre del adaptador (`ideadet-nemotron30b-1m-document`) sugiere un entrenamiento orientado a documentos largos, pero no hay detalles técnicos confirmados en la información proporcionada.
+La innovación técnica principal no está en la arquitectura sino en la formulación de la tarea: el modelo no genera texto, sino que compara las probabilidades del siguiente token para `human` y `ai` tras un prompt de sistema fijo, y devuelve la probabilidad normalizada de `human`. El prompt debe construirse exactamente como se indica en la model card (con el sufijo `<|im_end|>\n<|im_start|>assistant\n\n\n` y los ids de token 50755 y 2464), no mediante la plantilla de chat. Un detalle relevante para quien integre el adaptador: en transformers, Nemotron fusiona la puerta Mamba y las proyecciones x en un único `in_proj` y almacena los 128 expertos enrutados de cada capa como un tensor 3D, por lo que `peft.PeftModel` no puede adjuntar la mayor parte del adaptador y lo omite sin avisar, dejando el modelo puntuando casi como el base. Para inferencia masiva, vLLM 0.21 es aproximadamente 15 veces más rápido que la implementación directa en transformers y admite entradas mucho más largas en una sola GPU de 80 GB.
 
 ## Capacidades
 
-- Detección de texto generado por inteligencia artificial: el adaptador está diseñado para clasificar o puntuar si un documento o fragmento de texto ha sido producido por un modelo de lenguaje.
-- Hereda las capacidades lingüísticas y de razonamiento del modelo base Nemotron, aunque su uso previsto es específico para tareas de detección.
-- No se han documentado capacidades adicionales como tool calling, agentes o soporte multimodal en la información disponible.
+- Detección de autoría a nivel de palabra: devuelve P(human) para un documento de texto plano.
+- Procedencia de prosa (prose provenance): rastrea las palabras del documento frente a la procedencia de las ideas, con 99,1% de acierto cuando ambas coinciden y 25,4% cuando divergen.
+- Clasificación binaria human/IA mediante comparación de logits de dos tokens, sin generación libre.
+- Procesamiento de documentos completos sin necesidad de extraer un esquema ni de llamar a otro LLM.
+- Integración con la librería `idealens` (PyPI), con backend vLLM o Tinker, y puntuación por lotes desde JSONL.
+- Ejecución sin GPU mediante el backend Tinker alojado, con coste estimado inferior a 1 dólar por cada 1.000 documentos web típicos.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Verificación de integridad académica: instituciones educativas podrían emplear el adaptador para analizar ensayos y trabajos de estudiantes, detectando posibles usos de IA generativa.
-- Moderación de contenido en plataformas editoriales: medios y blogs pueden revisar artículos enviados por colaboradores para garantizar que el contenido sea original y no generado automáticamente.
-- Auditoría de contenido en marketing: agencias y empresas pueden comprobar si los textos producidos por proveedores externos cumplen con políticas de transparencia sobre uso de IA.
-- Análisis forense digital: investigadores pueden utilizar la detección para identificar campañas de desinformación o perfiles falsos que generen contenido a gran escala.
-- Control de calidad en generación de datos sintéticos: equipos que crean datasets con LLMs pueden validar que las muestras generadas sean reconocibles como sintéticas para su etiquetado.
-- Filtrado de respuestas en chatbots: sistemas que necesitan diferenciar entre respuestas humanas y de máquina en entornos de soporte híbrido.
-
-Estos casos son aplicaciones potenciales inferidas de la tarea de detección; no están documentados oficialmente por el autor.
+- Moderación de contenido generado por IA en plataformas editoriales: puntuar cada envío con P(human) y derivar a revisión manual los documentos con probabilidad baja, usando el modelo fusionado en vLLM para procesar lotes grandes.
+- Verificación de autoría en publicaciones académicas o periodísticas: comprobar si un texto entregado como original humano presenta señales de generación automática, con la salvedad de que el modelo rastrea palabras y no ideas.
+- Auditoría de corpus de entrenamiento: filtrar documentos web sospechosos de ser sintéticos antes de incorporarlos a un pipeline de datos, aprovechando el entrenamiento sobre WildOutlines.
+- Detección de plagio encubierto por parafraseo con IA: comparar la puntuación de prosa de un documento con la de su esquema de ideas para detectar casos en que las ideas son humanas pero la redacción no.
+- Integración en CMS y herramientas de edición: exponer P(human) como indicador en el flujo de publicación mediante la librería `idealens` y su backend vLLM.
+- Evaluación comparativa de detectores: usar ProseLens junto con IdeaLens sobre los mismos documentos para separar la procedencia de ideas de la de palabras en estudios de procedencia.
+- Despliegue sin infraestructura propia: puntuar documentos desde un portátil con el backend Tinker, útil para prototipos y validaciones puntuales antes de montar GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Resultados publicados en el paper que acompaña al modelo, sobre procedencia de documentos:
+
+| Modelo | Acierto con ideas y palabras de la misma fuente | Acierto en procedencia de ideas con fuentes distintas |
+|---|---|---|
+| ProseLens | 99,1% | 25,4% |
+| IdeaLens | 95,3% | 81,3% |
+| Pangram 4 | 98,5% | 25,9% |
+
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) para este modelo.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA ocupa aproximadamente 3,1 GB, pero requiere cargar el modelo base completo (30B parámetros en BF16), lo que necesita alrededor de 60 GB de VRAM en precisión BF16.
-- GPU recomendadas: NVIDIA A100 (80 GB), H100 (80 GB) o configuraciones multi-GPU (por ejemplo, 2× RTX 4090 con 24 GB cada una, si se usa cuantización adicional).
-- Al ser un modelo MoE con 3B parámetros activos, la memoria necesaria es la de todos los pesos (30B), no solo la de los activos.
-- Opciones de despliegue: frameworks como vLLM, TensorRT-LLM o Hugging Face Transformers con PEFT pueden cargar el adaptador sobre el modelo base. No se ha confirmado soporte para llama.cpp u Ollama.
-- La latencia y el throughput dependerán del hardware y la implementación; no hay datos disponibles.
+- Pesos fusionados en BF16: 59 GiB de memoria de GPU, más el espacio adicional que añada cada entrada; la descarga del repositorio es de 68,9 GB.
+- Alternativa ligera: descarga de 3 GB del adaptador LoRA y fusión en memoria sobre el modelo base ya disponible.
+- GPU recomendadas: una GPU de 80 GB (A100 80 GB o H100) para el modelo fusionado en BF16; vLLM permite además entradas mucho más largas en una sola GPU de 80 GB.
+- GPU de consumo: no cabe en tarjetas de 24 GB en BF16; no se documentan cuantizaciones en la información disponible.
+- Despliegue: transformers (código de referencia de la model card), vLLM 0.21 con `xgrammar==0.2.1` para lotes grandes, y backend Tinker alojado para ejecución sin GPU.
+- Rendimiento: vLLM es aproximadamente 15 veces más rápido que la implementación directa en transformers; no se publican cifras absolutas de latencia o throughput.
+- Coste en Tinker: inferior a 1 dólar por cada 1.000 documentos web típicos a precio de lista; `--dry-run` permite estimar el gasto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros adaptadores LoRA de detección de IA basados en Nemotron. Existen soluciones comerciales como GPTZero o herramientas académicas, pero no son comparables directamente al tratarse de modelos de propósito general. Por tanto, la comparativa no está disponible.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| ProseLens | 32,9 B (base Nemotron 3.5 Lightning 30B-A3B) | no disponible (checkpoint 1M) | Detección de autoría a nivel de palabra | OpenMDW-1.1 | Hugging Face, Tinker, PyPI (`idealens`) |
+| IdeaLens | mismo backbone que ProseLens | no disponible | Detección de procedencia a nivel de ideas (lee esquemas) | no disponible en la información | Hugging Face (`rishanthrajendhran/IdeaLens`) |
+| Pangram 4 | no disponible | no disponible | Detector comercial de texto IA | no disponible | Servicio propietario |
+| Modelo base (Nemotron 3.5 Lightning 30B-A3B) | 32,9 B | no disponible | Modelo generativo de propósito general | no disponible en la información | Hugging Face (NVIDIA) |
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio es restringido (gated) en Hugging Face; es necesario aceptar condiciones adicionales para su uso.
-- La licencia `openmdw-1.1` puede imponer restricciones de uso comercial; se recomienda revisar los términos completos antes de su adopción en producción.
-- No hay información sobre sesgos, tasa de falsos positivos/negativos ni comportamiento en dominios específicos (por ejemplo, texto técnico, literario o multilingüe).
-- El adaptador no ha sido validado públicamente con benchmarks; su eficacia real es desconocida.
-- Depende del modelo base de NVIDIA; cualquier limitación de este (por ejemplo, sesgos o alucinaciones) se traslada al adaptador.
-- El tamaño del repositorio (3,1 GB) corresponde solo al adaptador; el despliegue requiere además descargar el modelo base completo, que es significativamente mayor.
+- Solo admite inglés según la model card; el rendimiento en otros idiomas no está documentado.
+- El prompt debe construirse exactamente como se especifica, sin usar la plantilla de chat; una variación en el sufijo o en los ids de token altera la puntuación.
+- Riesgo de falsos negativos en procedencia de ideas: cuando ideas y palabras tienen fuentes distintas, el modelo sigue las palabras y acierta solo el 25,4% en procedencia de ideas.
+- Cargar `adapter/` con `peft.PeftModel` falla silenciosamente por la estructura de Nemotron H; hay que usar `load_adapter.py` o `tinker-cookbook`.
+- La versión de vLLM está acotada (0.21 con `xgrammar==0.2.1`; versiones posteriores exigen transformers < 5) y requiere desactivar el sampler de FlashInfer con `VLLM_USE_FLASHINFER_SAMPLER=0`.
+- El SDK de Tinker retira versiones antiguas; `idealens[tinker]` necesita 0.33.1 o posterior.
+- Licencia OpenMDW-1.1: conviene revisar sus términos antes de un uso comercial, ya que la model card no detalla restricciones adicionales.
+- No se documentan sesgos conocidos ni tasas de alucinación en la información disponible; al ser un clasificador de dos tokens, el riesgo es de calibración y de deriva ante dominios distintos de los documentos web de entrenamiento.
+- El modelo tiene 221 descargas y 2 likes, por lo que la validación comunitaria es todavía escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document
-- Perfil del autor en Hugging Face: https://huggingface.co/rishanthrajendhran
-- GitHub del autor: https://github.com/RishanthRajendhran/
-- Página personal del autor: https://rishanthrajendhran.github.io/
-- Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron
+- Modelo en Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- IdeaLens (contraparte a nivel de ideas): https://huggingface.co/rishanthrajendhran/IdeaLens
+- Dataset WildOutlines: https://huggingface.co/datasets/rishanthrajendhran/WildOutlines
+- Demo en navegador: http://ideadetector.ai/
+- Repositorio GitHub: https://github.com/Rishanthrajendhran/IdeaLens
+- Paquete PyPI: https://pypi.org/project/idealens/
+- Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
+- Registro en Tinker: https://auth.thinkingmachines.ai/sign-up
+- Paper: arXiv 2610.06778 (referenciado en los tags del modelo)

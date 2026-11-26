@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "At1uri/causal-structural-equation-engine",
+  "slug": "at1uri-causal-structural-equation-engine",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/causal-structural-equation-engine",
+  "created_at": "2026-11-26T04:33:50.000Z",
+  "updated_at": "2026-11-26T04:34:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "structural_causal_model",
+    "causal-inference",
+    "structural-causal-models",
+    "do-calculus",
+    "counterfactuals",
+    "simpsons-paradox",
+    "python",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 150,
+  "parameters_human": "150",
+  "storage_bytes": 1176,
+  "storage_human": "1176 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal Treatment Effect Estimation",
+      "dataset": "At1uri/causal-counterfactual-benchmarks",
+      "metric": "Average Treatment Effect Estimation Error (ATE MSE)",
+      "value": 0.00028
+    },
+    {
+      "task": "Causal Treatment Effect Estimation",
+      "dataset": "At1uri/causal-counterfactual-benchmarks",
+      "metric": "Counterfactual Abduction Consistency Error",
+      "value": 0
+    },
+    {
+      "task": "Causal Treatment Effect Estimation",
+      "dataset": "At1uri/causal-counterfactual-benchmarks",
+      "metric": "Confounder Invariance Suppression",
+      "value": 0.0012
+    }
+  ],
+  "sources": []
+}

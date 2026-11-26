@@ -5,7 +5,7 @@
   "author": "matterstate",
   "url": "https://huggingface.co/matterstate/needle-1.0",
   "created_at": "2026-11-25T08:22:18.000Z",
-  "updated_at": "2026-11-25T09:22:46.000Z",
+  "updated_at": "2026-11-25T18:09:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

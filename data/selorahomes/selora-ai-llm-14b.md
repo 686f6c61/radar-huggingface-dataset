@@ -2,107 +2,113 @@
 
 ## Resumen
 
-Selora AI LLM 14B es un modelo de lenguaje ajustado por instrucciones, desarrollado por Selora Homes, especializado en el control y la automatización de viviendas mediante Home Assistant. No se trata de un modelo entrenado desde cero, sino de un conjunto de cinco adaptadores LoRA (F16) montados sobre una base compartida Qwen3 14B, que se intercambian en caliente por petición según la intención detectada. Los cinco especialistas cubren control de dispositivos, creación de automatizaciones y blueprints, respuesta a preguntas sobre el estado de la vivienda, peticiones de aclaración ante solicitudes ambiguas y utilidades de mantenimiento y resolución de problemas fundamentadas en documentación.
+Selora AI LLM 14B es un modelo de lenguaje ajustado por instrucciones desarrollado por Selora Homes para su integración con Home Assistant. Se construye sobre Qwen3-14B mediante cinco adaptadores LoRA especializados (command, automation, answer, clarification y utilities) que comparten una única base y se intercambian en caliente por petición a través de la integración Selora AI. El modelo resuelve el problema del control y la automatización del hogar en lenguaje natural: traducir órdenes a llamadas de servicio de Home Assistant, redactar automatizaciones y blueprints, responder sobre el estado en vivo de la vivienda, pedir aclaraciones ante peticiones ambiguas y ofrecer ayuda documental con citas.
 
-El modelo resuelve un problema muy concreto: convertir lenguaje natural en llamadas de servicio y objetos YAML válidos para Home Assistant, con un formato de salida JSON compacto y determinista. Su relevancia actual radica en que demuestra una estrategia de despliegue eficiente: en lugar de servir cinco modelos de 14B, comparte una única base cuantizada a Q5_K_S (10,3 GB) y suma adaptadores de entre 26 y 96 MB, de modo que el conjunto completo ocupa unos 10,5 GB de pesos y cabe en despliegues de aproximadamente 16 GB de memoria, incluidos la caché KV y Home Assistant.
+La relevancia del modelo radica en su enfoque de despliegue: los cinco especialistas comparten una sola base, por lo que el conjunto completo ocupa unos 10,5 GB de pesos en lugar de cinco modelos de 14B independientes, y está pensado para ejecutarse en unos 16 GB de memoria junto con Home Assistant. La base se distribuye en GGUF Q5_K_S y los adaptadores en F16, con una ventana de contexto de 4096 tokens, que es el presupuesto con el que se construyeron el corpus y el manifiesto de entrenamiento.
 
-La arquitectura subyacente es la de Qwen3 14B, con 14.768.307.200 parámetros totales, y el contexto de funcionamiento está fijado en 4096 tokens, que es el presupuesto con el que se construyeron el corpus de entrenamiento y el manifiesto del modelo. La licencia es Apache-2.0 y el único idioma declarado es el inglés.
+Es importante señalar que esta ficha corresponde al bundle de cinco adaptadores, retirado tras la versión v0.8.1 y sin actualizaciones posteriores. El autor recomienda migrar al modelo fusionado único `selorahomes/Selora-AI-LLM-14B-ollama` para integraciones nuevas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3 14B) con cinco adaptadores LoRA F16 por especialista |
-| Parametros totales | 14.768.307.200 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (presupuesto de entrenamiento y de ejecución, `runtime.ctx_size`) |
-| Tipos de cuantizacion | Base en GGUF Q5_K_S; adaptadores LoRA en F16. Se menciona Q4_K_M como alternativa descartada por pérdida de precisión en consulta de documentación |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Transformer (Qwen3) con adaptadores LoRA por especialista |
+| Parametros totales | 14.768.307.200 (14,77 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | Base GGUF Q5_K_S; adaptadores LoRA en F16 |
+| Idiomas soportados | en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (base y adaptadores), más `Modelfile` para Ollama, prompts de sistema en texto plano y `manifest.json` |
+| Formato de pesos | GGUF (base) y GGUF LoRA F16 (adaptadores); Modelfile para Ollama |
+| Modelo base | Qwen/Qwen3-14B (relación: adapter) |
+| Tamano del repositorio | 43,4 GB |
+| Especialistas | command, automation, answer, clarification, utilities |
+| Memoria recomendada | ~16 GB (modelo + KV cache + Home Assistant) |
+| Runtime | llama.cpp con soporte LoRA (`llama-server`) u Ollama 0.30+ |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3 14B, un transformer denso de 14.768 millones de parámetros. Sobre ella se entrenaron cinco adaptadores LoRA independientes, cada uno asociado a una intención y a un prompt de sistema propio: `command` (51 MB), `automation` (96 MB), `answer` (39 MB), `clarification` (26 MB) y `utilities` (51 MB). Todos los adaptadores comparten la misma base, de modo que el coste total de pesos ronda los 10,5 GB en lugar de replicar cinco modelos de 14B. El repositorio incluye los prompts de sistema exactos con los que se entrenó cada adaptador (`prompts/{intent}_system_prompt.txt`) y un `manifest.json` con versión, tamaño y sha256 por fichero, además de la receta de entrenamiento.
+El modelo parte de Qwen3-14B, un transformer denso de 14,77 mil millones de parámetros, y añade cinco adaptadores LoRA de bajo rango entrenados sobre esa base compartida. Cada adaptador se entrena contra un system prompt propio y produce lo que el autor denomina "slim envelopes", envoltorios JSON compactos con una forma de salida común entre la línea de 14B y la de 1,7B. La integración Selora AI selecciona el adaptador adecuado por petición y lo aplica en caliente mediante `llama-server` con `--lora-init-without-apply`, de modo que una sola instancia del modelo sirve a los cinco especialistas sin recargar pesos.
 
-Ambas líneas del proyecto (la de 1.7B y esta de 14B) se entrenaron sobre el mismo corpus y contra los mismos prompts de sistema, y emiten el mismo formato de salida JSON compacto denominado «slim envelopes». La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esa información no está disponible. La innovación técnica destacable no está en la arquitectura, sino en el esquema de servicio: intercambio en caliente de adaptadores LoRA por petición mediante el endpoint `/lora-adapters` de `llama-server`, con resolución de identificadores de ranura por nombre de fichero. La cuantización Q5_K_S se eligió explícitamente para que el conjunto quepa en 16 GB junto con la caché KV y Home Assistant; Q4_K_M, aunque más pequeño, degradaba de forma medible la precisión en la consulta de documentación.
+Ambas líneas del proyecto se entrenaron sobre el mismo corpus y los mismos system prompts. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO; esa información no está disponible. Sí se documenta la receta de entrenamiento en `manifest.json`, junto con la versión, los tamaños por fichero y los hashes sha256. La cuantización Q5_K_S se eligió deliberadamente para encajar en despliegues de 16 GB con los adaptadores, la KV cache y Home Assistant en ejecución; Q4_K_M es más pequeño pero perjudicó de forma medible la precisión en la búsqueda documental.
 
 ## Capacidades
 
-- Control de dispositivos: traducción de órdenes en lenguaje natural a llamadas de servicio de Home Assistant (por ejemplo, «turn off the kitchen lights»).
-- Autoría de automatizaciones: generación de automatizaciones y blueprints en YAML, con declaración y conexión de todas las entradas solicitadas.
-- Consulta del estado de la vivienda: respuestas sobre el estado en vivo de entidades y dispositivos.
-- Aclaración de solicitudes ambiguas: formulación de preguntas de seguimiento cuando la petición no es resoluble.
-- Utilidades de mantenimiento: resolución de problemas, configuración y ayuda fundamentada en documentación, con citas.
-- Soporte de tool use / function calling, según los tags del modelo y el formato de salida orientado a llamadas de servicio.
-- Salida estructurada: emisión de sobres JSON compactos y deterministas, adecuados para consumo programático.
-- Capacidad multilingüe: limitada al inglés según la metadata del modelo.
-- Modo de razonamiento explícito, visión o audio: no disponible.
+- Control de dispositivos: el especialista `command` traduce peticiones en lenguaje natural a llamadas de servicio de Home Assistant (por ejemplo, "turn off the kitchen lights").
+- Autoría de automatizaciones: el especialista `automation` genera automatizaciones y blueprints, incluido YAML de blueprint.
+- Consulta del estado del hogar: el especialista `answer` responde preguntas sobre el estado en vivo de la vivienda.
+- Desambiguación: el especialista `clarification` formula preguntas de seguimiento cuando la petición es ambigua.
+- Ayuda documental: el especialista `utilities` realiza búsquedas en documentación con citas, orientadas a mantenimiento, resolución de problemas y configuración.
+- Salida estructurada: emisión de envoltorios JSON compactos ("slim envelopes") consumibles por la integración.
+- Soporte de tool use / function calling: etiquetado explícitamente en el modelo y ejercido mediante las llamadas de servicio de Home Assistant.
+- Integración con Ollama: se incluye un `Modelfile` por especialista (base + LoRA + system prompt).
+- Capacidades multilingües: limitadas al inglés según el campo `language` de la model card.
 
 ## Casos de uso
 
-- Control por voz o texto en el hogar: el especialista `command` convierte una frase como «apaga las luces de la cocina» en la llamada de servicio correspondiente, con un formato JSON que la integración de Home Assistant puede ejecutar directamente sin post-procesado.
-- Creación asistida de automatizaciones: el especialista `automation` genera YAML de automatización y de blueprint que Home Assistant acepta, con todas las entradas solicitadas declaradas y cableadas, lo que reduce el trabajo manual de usuarios avanzados.
-- Asistente conversacional sobre el estado de la casa: el especialista `answer` responde a preguntas del tipo «¿está la puerta del garaje abierta?» consultando el estado en vivo, con 91,9 % de acierto en el conjunto `questions` en modo solo modelo.
-- Desambiguación en interfaces de voz: el especialista `clarification` pide seguimiento cuando la orden es ambigua, evitando ejecutar acciones incorrectas sobre dispositivos críticos.
-- Soporte técnico y mantenimiento guiado: el especialista `utilities` responde dudas de configuración y resolución de problemas con base en documentación y citas, útil en un panel de ayuda dentro de la propia instalación.
-- Despliegue en hardware de gama media: al ocupar unos 10,5 GB de pesos y requerir aproximadamente 16 GB de memoria total, es viable en un mini-PC o hub doméstico con 32 GB de RAM, sin depender de la nube y manteniendo los datos del hogar en local.
-- Integración en pipelines de domótica con aprobación humana: la salida estructurada y determinista a temperatura 0 permite insertar una capa de validación o lista de comandos permitidos antes de ejecutar cualquier acción.
+- Control por voz o texto del hogar: la integración envía la transcripción al especialista `command`, que devuelve la llamada de servicio correspondiente para que Home Assistant la ejecute; el modelo está entrenado contra los system prompts exactos de producción, lo que reduce la necesidad de postprocesado.
+- Creación asistida de automatizaciones: un usuario describe una rutina y el especialista `automation` genera el YAML de blueprint con las entradas declaradas y cableadas, listo para que Home Assistant lo acepte.
+- Panel conversacional de estado: el especialista `answer` responde a preguntas como el estado de una luz o un sensor consultando el estado en vivo inyectado en el contexto, con una ventana de 4096 tokens suficiente para el resumen de entidades que maneja la integración.
+- Resolución de ambigüedad en asistentes de voz: ante peticiones incompletas ("apaga la luz"), el especialista `clarification` genera una pregunta de seguimiento en lugar de ejecutar una acción incorrecta, lo que reduce falsos positivos en el control real de dispositivos.
+- Soporte técnico y mantenimiento domótico: el especialista `utilities` responde con documentación citada sobre configuración, diagnóstico y resolución de problemas, adecuado para guiar a usuarios no técnicos dentro de la propia interfaz de Home Assistant.
+- Despliegue en hubs de 32 GB de RAM: el bundle está pensado para los Selora Hubs con 32 GB y para instalaciones de Home Assistant con unos 16 GB disponibles, ejecutando una única instancia de `llama-server` con los cinco adaptadores cargados.
+- Integración en pipelines de validación: dado que el harness de evaluación es abierto, el modelo puede usarse como referencia para medir regresiones en la capa de intención de asistentes domóticos antes de desplegar cambios.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos sobre la suite abierta `allenporter/home-assistant-datasets`, la misma que alimenta el leaderboard de LLM de Home Assistant, a temperatura 0, sobre la suite completa, con llama.cpp sobre CUDA y la cuantización de distribución. «Solo modelo» desactiva las anulaciones deterministas de la integración; «red + modelo» las mantiene en el bucle. Intervalos de Wilson al 95 %.
+Resultados medidos sobre la suite abierta `allenporter/home-assistant-datasets` (el harness del leaderboard de Home Assistant), a temperatura 0, sobre la suite completa, con llama.cpp en CUDA y la cuantización de distribución. Se reportan dos modos: "model only" (sin los overrides deterministas de la integración) y "net + model" (con los overrides en el bucle; aprobación y allowlist de comandos seguros desactivados en la ejecución).
 
-| Dataset | Casos | Solo modelo | Red + modelo |
+| Dataset | Casos | Model only | Net + model |
 |---|---|---|---|
-| assist | 460 | 85,9 % [82,4; 88,8] | 92,2 % [89,4; 94,3] |
-| assist-mini | 196 | 95,9 % [92,2; 97,9] | 100,0 % [98,1; 100,0] |
-| questions | 370 | 91,9 % [88,7; 94,3] | 94,6 % [91,8; 96,5] |
-| automations | 20 | 100,0 % [83,9; 100,0] | 100,0 % [83,9; 100,0] |
+| assist | 460 | 85,9% [82,4; 88,8] | 92,2% [89,4; 94,3] |
+| assist-mini | 196 | 95,9% [92,2; 97,9] | 100,0% [98,1; 100,0] |
+| questions | 370 | 91,9% [88,7; 94,3] | 94,6% [91,8; 96,5] |
+| automations | 20 | 100,0% [83,9; 100,0] | 100,0% [83,9; 100,0] |
 
-El conjunto `automations` consta de cuatro tareas de blueprint con cinco muestras cada una y se puntúa por separado: una respuesta se considera válida si Home Assistant la acepta como blueprint con todas las entradas solicitadas declaradas y cableadas; la automatización no se ejecuta. La model card advierte que `questions` sale alta en los casos de calendario porque los fixtures aportan datos de eventos que un Home Assistant real no proporciona. La compilación fusionada en un solo modelo (`Selora-AI-LLM-14B-ollama`) obtiene dos puntos menos en `assist` con las anulaciones activadas.
+Intervalos de confianza de Wilson al 95%. La tarea `automations` son cuatro tareas de blueprint con cinco muestras cada una, puntuadas de forma separada: una respuesta pasa si Home Assistant la acepta como blueprint con todas las entradas solicitadas declaradas y cableadas; la automatización no se ejecuta. El autor advierte que `questions` puntúa alto en casos de calendario cuyos fixtures aportan datos de eventos que un Home Assistant real no proporciona. El build fusionado único puntúa dos puntos menos en assist con los overrides activados.
+
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: aproximadamente 16 GB para el modelo, la caché KV y Home Assistant en ejecución conjunta. El modelo está pensado para Selora Hubs con 32 GB de RAM.
-- Pesos: base Q5_K_S de 10,3 GB (9,6 GiB) más 263 MB de adaptadores LoRA F16, unos 10,5 GB en total.
-- Contexto: 4096 tokens, fijado en el manifiesto como `runtime.ctx_size`.
-- GPU: la model card solo documenta ejecución con llama.cpp sobre CUDA; no especifica modelos de GPU concretos ni VRAM mínima por tarjeta. No disponible la lista de GPU recomendadas.
-- GPU de consumo: no se confirma en la documentación; el requisito declarado es de memoria total del sistema, no de VRAM dedicada.
-- Despliegue: `llama-server` de llama.cpp con soporte LoRA (`--lora-init-without-apply` y un único `--lora` con rutas separadas por comas), u Ollama 0.30 o superior con un `Modelfile` por especialista. El endpoint `/lora-adapters` permite cambiar el adaptador activo antes de cada llamada a `/v1/chat/completions`.
+- VRAM/memoria estimada: ~16 GB en total para el modelo, la KV cache y Home Assistant en ejecución; los pesos del bundle suman unos 10,5 GB (base Q5_K_S de 10,3 GB más 263 MB de adaptadores F16).
+- GPU recomendadas: no disponibles de forma explícita en la model card; el autor reporta mediciones con llama.cpp sobre CUDA, y el despliegue objetivo son los Selora Hubs de 32 GB de RAM.
+- Viabilidad en GPU de consumo: no confirmada en la información disponible; el requisito de ~16 GB de memoria total sugiere que una GPU de 16 GB o más sería el mínimo práctico, pero el autor no lo especifica.
+- Opciones de despliegue: `llama-server` de llama.cpp con soporte LoRA (`--lora-init-without-apply --lora ...`) u Ollama 0.30+ con un `Modelfile` por especialista. El modelo fusionado equivalente se publica por separado para runtimes que no pueden intercambiar adaptadores.
+- Contexto de ejecución: `--ctx-size 4096`, el presupuesto con el que se construyeron el corpus y `manifest.json` (`runtime.ctx_size`).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Selora AI LLM 14B | 14,77 B (denso) + 5 LoRA | 4096 | Domótica y Home Assistant | Apache-2.0 | GGUF en Hugging Face, Ollama |
-| Selora AI LLM 1.7B | No disponible en esta ficha | No disponible | Domótica y Home Assistant, misma línea y corpus | Apache-2.0 (según la línea del proyecto) | Hugging Face |
-| Selora AI LLM 14B (fusión) | 14,77 B | No disponible | Igual, en un único modelo fusionado para runtimes sin intercambio de adaptadores | Apache-2.0 | Hugging Face (`-ollama`) |
-| Qwen3 14B (base) | 14,77 B | No disponible en esta ficha | Modelo generalista | Apache-2.0 | Hugging Face |
+| Selora AI LLM 14B (este) | 14,77 B | 4096 | 5 LoRA sobre Qwen3-14B para Home Assistant | Apache-2.0 | GGUF + LoRA F16 en HF; bundle retirado en v0.8.1 |
+| Selora AI LLM 14B-ollama | 14,77 B | no disponible | Modelo fusionado único para runtimes sin intercambio de adaptadores | Apache-2.0 | HF (recomendado por el autor) |
+| Selora AI LLM 1.7B | no disponible | no disponible | Misma línea de especialistas, menor huella | Apache-2.0 | HF |
+| Qwen/Qwen3-14B | 14,77 B | no disponible en esta ficha | Modelo base generalista | Apache-2.0 | HF |
 
-La comparación con alternativas de propósito general no está cubierta por la información disponible: no se aportan resultados de benchmarks de Qwen3 14B ni de otros modelos de domótica en la misma suite, por lo que no es posible establecer una comparación cuantitativa fiable.
+La comparación con alternativas generalistas de 14B no está cubierta con datos de benchmarks en la información disponible; las únicas métricas publicadas son las de la suite de Home Assistant, que no son directamente comparables con evaluaciones generales.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés declarado; no hay soporte documentado de castellano ni de otras lenguas.
-- Contexto corto: 4096 tokens, insuficiente para conversaciones muy largas o para inyectar grandes volúmenes de documentación en el prompt.
-- Dominio restringido: el ajuste está orientado a Home Assistant y a su modelo de entidades y servicios; su comportamiento fuera de ese dominio no está evaluado.
-- Riesgo de alucinación en automatizaciones: el conjunto `automations` valida que Home Assistant acepte el YAML como blueprint, pero la automatización no se ejecuta, de modo que la corrección funcional en tiempo de ejecución no está verificada.
-- Sesgo de evaluación en `questions`: los casos de calendario leen alto porque los fixtures incluyen datos de eventos que un Home Assistant real no suministra.
-- Dependencia del prompt de sistema: cada adaptador se entrenó contra un prompt concreto; usar prompts distintos puede degradar el rendimiento y romper el formato de salida.
-- Configuración frágil en llama.cpp: repetir el flag `--lora` hace que solo se cargue el último adaptador y que todas las intenciones se respondan con él; es obligatorio usar una única bandera con rutas separadas por comas.
-- Cuantización: bajar a Q4_K_M reduce de forma medible la precisión en la consulta de documentación, según el autor.
-- Licencia: Apache-2.0 permite uso comercial, pero debe conservarse el texto de licencia y el `NOTICE` con la atribución a Qwen3.
-- Métricas de producción: los resultados «red + modelo» se obtuvieron con la aprobación y la lista de comandos seguros desactivadas, por lo que no reproducen exactamente la ruta de ejecución distribuida.
+- Modelo retirado: el bundle de cinco adaptadores quedó descontinuado tras la v0.8.1 y no recibe actualizaciones; el autor recomienda el modelo fusionado `selorahomes/Selora-AI-LLM-14B-ollama`.
+- Idioma: solo inglés según el campo `language`; no se declara soporte de castellano ni de otros idiomas.
+- Contexto limitado: 4096 tokens, insuficiente para conversaciones largas o volcados extensos de entidades; está dimensionado para el formato de prompt de la integración.
+- Especialización estrecha: el ajuste está orientado a Home Assistant y a los cinco envelopes JSON; su uso como modelo generalista no está validado y probablemente degrade el rendimiento fuera de ese dominio.
+- Dependencia del runtime: requiere llama.cpp con soporte LoRA u Ollama 0.30+; runtimes que no intercambian adaptadores necesitan el build fusionado, que puntúa dos puntos menos en assist con overrides.
+- Riesgo de alucinación: presente como en cualquier LLM; los resultados de `questions` se ven inflados por fixtures de calendario que aportan datos no disponibles en un Home Assistant real, lo que puede sobreestimar el rendimiento en producción.
+- Evaluación parcial: la tarea `automations` solo verifica que Home Assistant acepte el blueprint, no que la automatización se ejecute correctamente; además se evaluó con 20 casos, lo que arroja intervalos de confianza amplios.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Licencia: Apache-2.0 permite uso comercial, pero debe conservarse el texto `LICENSE` y la atribución a Qwen3 recogida en `NOTICE`.
+- Memoria: el requisito de ~16 GB incluye Home Assistant en ejecución; desplegarlo en soluciones más justas de memoria exige recurrir a cuantizaciones menores, que el autor señala que perjudican la precisión en búsqueda documental.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
-- Variante fusionada para Ollama: https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama
-- Línea de 1.7B: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
-- Modelo base Qwen3 14B: https://huggingface.co/Qwen/Qwen3-14B
-- Integración para Home Assistant: https://github.com/SeloraHomes/ha-selora-ai
-- Sitio del desarrollador: https://selorahomes.com
+- Modelo fusionado recomendado: https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama
+- Línea de 1,7B: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
+- Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
+- Integración Home Assistant de Selora AI: https://github.com/SeloraHomes/ha-selora-ai
 - Suite de evaluación: https://github.com/allenporter/home-assistant-datasets
+- Sitio del autor: https://selorahomes.com
 - Home Assistant: https://www.home-assistant.io/

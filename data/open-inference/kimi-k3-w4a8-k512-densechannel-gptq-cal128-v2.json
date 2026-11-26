@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "ChatGPT Enterprise ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview …"
-    },
-    {
-      "title": "Page d'accueil Open | Your high-digital place",
-      "url": "https://www.open.global/",
-      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
-    },
-    {
-      "title": "OpenAI | Recherche et déploiement",
-      "url": "https://openai.com/fr-FR/",
-      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
-    },
-    {
-      "title": "Apache OpenOffice",
-      "url": "https://www.openoffice.org/fr/",
-      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
-    },
-    {
-      "title": "Open, Aujourd'hui. Et demain. | Open",
-      "url": "https://www.open.global/open/open-aujourdhui-demain",
-      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
-    }
-  ]
+  "sources": []
 }

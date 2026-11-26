@@ -1,62 +1,102 @@
 # mradermacher/Dark-Scarlett-v1.0-26B-A4B-GGUF
 
 ## Resumen
-Dark-Scarlett-v1.0-26B-A4B es un modelo de lenguaje de gran tamaño publicado originalmente por el usuario ReadyArt en Hugging Face. El repositorio aquí analizado es una cuantización GGUF del mismo, preparada por mradermacher, un proveedor conocido de formatos optimizados para inferencia en CPU y GPU. El nombre sugiere una arquitectura de tipo mezcla de expertos (MoE) con 26 000 millones de parámetros totales y 4 000 millones activos por token, aunque no se dispone de documentación oficial que lo confirme.
 
-La versión GGUF permite su despliegue en entornos locales con herramientas como llama.cpp, Ollama o vLLM, reduciendo los requisitos de memoria frente a los pesos completos. El repositorio tiene un tamaño de solo 2.0 GB, lo que indica cuantizaciones de baja precisión, y se ha publicado sin información sobre licencia, idiomas o capacidades específicas.
+Dark-Scarlett-v1.0-26B-A4B es un modelo de lenguaje derivado de la familia Gemma (etiquetado como `gemma-4` en la model card) y ajustado específicamente para roleplay conversacional, con orientación explícita hacia contenido para adultos y narrativa sin restricciones de alineamiento. Lo desarrolla ReadyArt, y la versión aquí descrita es la cuantización GGUF estática publicada por mradermacher, un conocido distribuidor de cuantizaciones de terceros. El modelo cuenta con 25.233.142.046 parámetros totales según los pesos en safetensors del modelo base, y la nomenclatura "A4B" sugiere una arquitectura de mezcla de expertos con aproximadamente 4.000 millones de parámetros activos, aunque este dato no se confirma de forma explícita en la información disponible.
 
-Aunque la ficha carece de datos técnicos detallados, el modelo se presenta como una opción ligera para ejecución en hardware de consumo. No obstante, su utilidad real solo puede evaluarse tras pruebas directas, dado que no se han publicado especificaciones ni benchmarks.
+El interés práctico de esta ficha reside en dos factores. Primero, la disponibilidad de cuantizaciones GGUF que van desde 10,7 GB (Q2_K) hasta 27,0 GB (Q8_0), lo que permite ejecutar un modelo de ~25B en hardware de consumo con la cuantización adecuada. Segundo, la inclusión de ficheros `mmproj` (multi-modal supplement) en el repositorio, que apunta a capacidades de entrada visual en el modelo base, si bien no se detalla su alcance.
 
-## Especificaciones técnicas
-| Parámetro | Valor |
+La licencia es Apache 2.0 según los metadatos del repositorio, lo que en principio permite uso comercial, aunque el contenido temático del modelo (NSFW, adult-content, unaligned) impone consideraciones adicionales de cumplimiento y moderación en cualquier despliegue público. El repositorio registra 223 descargas y ningún "like" en el momento de la consulta, lo que indica una adopción todavía muy limitada.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el nombre sugiere MoE, sin confirmar) |
-| Parámetros totales | 572 794 416 (según archivo safetensors del repo; inconsistente con la denominación 26B) |
-| Parámetros activos | No disponible (probablemente 4B según el nombre, sin confirmar) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No especificados en la model card (el repositorio contiene varios archivos GGUF) |
-| Idiomas soportados | No disponibles |
-| Licencia | No disponible |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer derivado de Gemma; la nomenclatura "A4B" sugiere mezcla de expertos (MoE), no confirmado en la informacion disponible |
+| Parametros totales | 25.233.142.046 (~25,2 B) |
+| Parametros activos | no disponible (la etiqueta "A4B" sugiere ~4 B, sin confirmacion oficial) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
-No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización aplicadas. El nombre "26B-A4B" sugiere una configuración de mezcla de expertos con 26 000 millones de parámetros totales y 4 000 millones activos por token, pero no hay confirmación en la documentación del repositorio. El archivo de safetensors muestra 572 794 416 parámetros, una cifra muy inferior a la esperada para un modelo de 26B, lo que podría indicar que se trata de un archivo parcial o de un subcomponente (por ejemplo, el tokenizador o el modelo de base sin los pesos completos). La cuantización GGUF ha sido realizada por mradersacher, un proveedor externo que no aporta detalles sobre el modelo original.
+
+La información disponible no detalla la arquitectura interna del modelo base más allá de su pertenencia a la familia Gemma y de la etiqueta `gemma-4`. El sufijo "26B-A4B" en el nombre sigue la convención habitual para modelos de mezcla de expertos, donde el primer número indica los parámetros totales (~26B) y el segundo los parámetros activos por token (~4B), lo que implicaría un cómputo por token comparable a un modelo denso de 4B con la capacidad de representación de uno de 26B. No obstante, esta interpretación no está confirmada por documentación técnica del autor.
+
+Tampoco se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Dado el propósito declarado (roleplay, ERP, contenido explícito, "unaligned"), es razonable inferir un ajuste fino supervisado sobre datos conversacionales y narrativos, pero se trata de una inferencia y no de un dato documentado. La cuantización publicada es estática (no imatrix); el propio autor remite a un repositorio separado (`-i1-GGUF`) para las cuantizaciones ponderadas con imatrix, que suelen ofrecer mejor relación calidad/tamaño.
 
 ## Capacidades
-No se han documentado capacidades específicas del modelo. Dado que se trata de un modelo de texto de gran tamaño, es probable que pueda realizar generación de texto, razonamiento y quizás tareas de código, pero sin datos concretos no se pueden confirmar. Tampoco se sabe si soporta tool calling, agentes o modo de pensamiento. Se recomienda probar el modelo directamente para evaluar sus habilidades reales.
+
+- Generación de texto conversacional multi-turno orientada a roleplay y narrativa interactiva.
+- Escritura creativa y narrativa explícita para adultos (ERP), incluyendo contenido NSFW según los tags del repositorio.
+- Respuestas "unaligned": menor rechazo a peticiones que modelos alineados convencionalmente rechazarían.
+- Capacidad multimodal de entrada probable, a juzgar por la presencia de ficheros `mmproj` en el repositorio; el alcance exacto (imagen, vídeo) no está documentado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el ajuste está orientado a conversación, no a tareas agénticas.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo "thinking" o razonamiento explícito: no disponible.
 
 ## Casos de uso
-No se dispone de información sobre casos de uso validados. Sin embargo, por su tamaño y formato, podría emplearse en los siguientes escenarios hipotéticos, aunque sin garantías:
 
-- **Generación de texto creativo**: como modelo de 26B, podría servir para redactar historias, guiones o contenido narrativo, pero no hay evidencia de su calidad.
-- **Asistente de conversación**: podría implementarse en chatbots locales con herramientas como Ollama, pero se desconoce su capacidad de seguir instrucciones.
-- **Análisis de documentos**: si su contexto es suficiente, podría resumir o extraer información de textos largos, aunque no se conoce la longitud de contexto.
-- **Generación de código**: si su entrenamiento incluye código, podría ayudar en autocompletado o explicación, pero no hay datos.
-- **Prototipado rápido**: dado que su tamaño de cuantización es pequeño (2 GB), puede ser útil para experimentos en hardware modesto, aunque sin información de rendimiento real.
-- **Investigación académica**: para comparar arquitecturas MoE cuantizadas, podría servir como referencia, pero carece de documentación.
+- Plataformas de roleplay conversacional: el modelo está ajustado específicamente para mantener personajes coherentes en conversaciones multi-turno, lo que lo hace adecuado para aplicaciones de ficción interactiva donde la consistencia del personaje y el tono narrativo son críticos.
+- Escritura creativa asistida para adultos: generación de narrativa explícita y diálogos para proyectos de ficción para adultos, un nicho donde los modelos alineados convencionalmente suelen rechazar la tarea o producir respuestas edulcoradas.
+- Investigación sobre alineamiento y seguridad: al ser un modelo "unaligned", resulta útil como caso de estudio para evaluar mecanismos de rechazo, medir tasas de cumplimiento de peticiones sensibles y diseñar capas de moderación externas.
+- Simulación de personajes en videojuegos narrativos: con cuantizaciones Q4_K_M (16,9 GB) puede desplegarse en estaciones de trabajo con una sola GPU de 24 GB, sirviendo diálogos de PNJ con personalidad definida por prompt de sistema.
+- Generación de datos sintéticos conversacionales: producción de diálogos etiquetados para entrenar o evaluar clasificadores de contenido, filtros de moderación o modelos de detección de toxicidad.
+- Despliegue local y privado: al distribuirse en GGUF y con licencia Apache 2.0, permite ejecución en infraestructura propia sin dependencia de API externa, relevante para proyectos que manejan contenido sensible y requieren confidencialidad.
+- Prototipado rápido con llama.cpp u Ollama: la disponibilidad de cuantizaciones desde 10,7 GB facilita pruebas en portátiles con GPU de 12-16 GB, aunque con degradación de calidad en las cuantizaciones más agresivas.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. No se puede comparar con otros modelos de manera objetiva.
+
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de cuantización no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones de calidad conversacional, y tampoco se referencian en los metadatos del modelo base.
 
 ## Requisitos de hardware
-- **VRAM estimada**: No disponible. El tamaño del repositorio (2 GB) sugiere cuantizaciones de baja precisión, pero la VRAM necesaria depende de la arquitectura exacta y del número de parámetros activos. Para un modelo MoE de 26B totales con 4B activos, la inferencia puede requerir cargar todos los pesos (hasta 26B) en memoria, aunque la activación sea parcial. Con cuantización 4-bit, podría necesitarse alrededor de 13-15 GB de VRAM, pero no se confirma.
-- **GPU recomendadas**: No hay recomendaciones oficiales. Para cuantizaciones GGUF, se pueden usar GPU con 8 GB o más, como RTX 3060, RTX 4060, etc., pero la velocidad dependerá del número de activos.
-- **Cabe en GPU de consumo**: Probablemente sí, dado el tamaño del repositorio, pero no se garantiza.
-- **Opciones de despliegue**: llama.cpp, Ollama, vLLM, TGI (si el formato es compatible). No hay documentación específica.
-- **Latencia y throughput**: No se conoce.
+
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K (10,7 GB): ~12-13 GB en GPU.
+  - IQ4_XS (14,2 GB): ~16 GB.
+  - Q4_K_M (16,9 GB): ~19-20 GB.
+  - Q5_K_M (19,2 GB): ~21-22 GB.
+  - Q6_K (22,7 GB): ~25 GB.
+  - Q8_0 (27,0 GB): ~29-30 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q6_K y Q8_0 con contexto amplio; RTX 3090 (24 GB) como alternativa económica para Q4_K_M.
+- GPU de consumo: sí, cabe en RTX 4090/3090 con Q4_K_M o inferiores; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con Q2_K o IQ4_XS y contexto reducido; en GPUs de 12 GB requiere offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los ficheros `mmproj` requieren runtimes con soporte multimodal (por ejemplo, llama.cpp con `llava`/`mtmd`). vLLM y TGI no consumen GGUF de forma nativa para este caso sin conversión previa a safetensors.
+- Latencia y throughput: no disponibles; dependerán del grado de offloading CPU/GPU, del tamaño de contexto y del hardware. Con un MoE de ~4B activos, el throughput por token debería ser notablemente superior al de un denso de 25B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
-No se dispone de información suficiente para comparar con otros modelos. No se pueden identificar alternativas fiables sin conocer la arquitectura base y el entrenamiento.
+
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Dark-Scarlett-v1.0-26B-A4B (GGUF) | ~25,2 B totales (¿~4 B activos?) | no disponible | Apache 2.0 | Roleplay/ERP sin alineamiento | GGUF en HF; base en safetensors |
+| Gemma 2 27B (referencia de familia) | 27 B densos | 8K (estándar) | Gemma License | Propósito general alineado | safetensors, GGUF de terceros |
+| Mistral Small 24B | ~24 B densos | 32K-128K según versión | Apache 2.0 | Propósito general alineado | safetensors, GGUF |
+| Modelos roleplay 20-30B de la comunidad (p. ej. derivados de Yi/Llama) | 20-34 B | variable | variable (a menudo Apache 2.0 o Llama) | Roleplay/NSFW | GGUF mayoritariamente |
+
+La comparación cuantitativa de rendimiento no es posible: no hay benchmarks publicados para Dark-Scarlett, y los modelos de referencia de propósito general no son directamente comparables en la tarea de roleplay sin evaluaciones específicas de la comunidad. La ventaja diferencial de este modelo es su especialización y su licencia Apache 2.0; su desventaja es la ausencia total de documentación técnica y de evaluaciones.
 
 ## Limitaciones y advertencias
-- **Sesgos y alucinaciones**: Al no tener información sobre el entrenamiento, se desconoce si el modelo presenta sesgos o tiende a alucinar. Se recomienda no usarlo en producción sin pruebas rigurosas.
-- **Licencia**: La licencia no está disponible, por lo que no se garantiza el uso comercial ni la redistribución.
-- **Contexto**: Se desconoce la longitud de contexto máxima; puede ser limitada.
-- **Idiomas**: No se especifican idiomas soportados; podría tener un rendimiento desigual en lenguas distintas del inglés.
-- **Origen del modelo**: El repositorio original no ofrece documentación técnica; el modelo puede contener errores o inconsistencias en su arquitectura.
-- **Para producción**: No se recomienda su uso en aplicaciones críticas sin pruebas exhaustivas.
+
+- Ausencia de benchmarks y de documentación técnica: no hay datos sobre contexto, composición del dataset ni proceso de ajuste, lo que dificulta estimar su calidad frente a alternativas.
+- Contenido explícito y NSFW: el modelo está diseñado para generar material para adultos; no es apto para despliegues sin moderación ni para audiencias no adultas.
+- Modelo "unaligned": la ausencia de alineamiento implica mayor probabilidad de generar contenido dañino, sesgado o ilegal si se le solicita; requiere capas de seguridad externas en cualquier producto.
+- Riesgo de alucinación: no cuantificado; en modelos de roleplay el riesgo se manifiesta como incoherencia narrativa y pérdida de consistencia del personaje en contextos largos.
+- Idiomas: solo inglés documentado; el rendimiento en castellano no está verificado y probablemente sea deficiente.
+- Contexto: no documentado; la ventana efectiva puede ser inferior a la del modelo base tras el ajuste fino, y las cuantizaciones Q2_K/Q3_K degradan la coherencia en contextos largos.
+- Licencia: Apache 2.0 permite uso comercial, pero el despliegue de contenido para adultos está sujeto a la legislación aplicable (verificación de edad, normativa de plataformas) y a las políticas de los proveedores de infraestructura.
+- Cuantizaciones estáticas: las versiones de este repositorio no usan imatrix; para mayor calidad por tamaño conviene evaluar el repositorio `-i1-GGUF` del mismo autor.
+- Adopción muy baja (223 descargas, 0 likes): escasa validación por parte de la comunidad, sin retroalimentación pública sobre fallos o comportamientos problemáticos.
+- Ficheros `mmproj` presentes pero sin documentación: la capacidad multimodal no está verificada ni descrita.
 
 ## Enlaces
-- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-GGUF)
-- [Modelo original de ReadyArt](https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B)
-- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)
+
+- Repositorio GGUF: https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-GGUF
+- Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B
+- Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Dark-Scarlett-v1.0-26B-A4B-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

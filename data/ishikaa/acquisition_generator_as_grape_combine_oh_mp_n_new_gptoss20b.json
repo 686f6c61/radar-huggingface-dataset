@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ishikaa/acquisition_generator_AS_grape_combine_OH_MP_N_new_gptoss20b",
+  "slug": "ishikaa-acquisition_generator_as_grape_combine_oh_mp_n_new_gptoss20b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_grape_combine_OH_MP_N_new_gptoss20b",
+  "created_at": "2026-11-26T11:58:10.000Z",
+  "updated_at": "2026-11-26T12:02:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 83686943870,
+  "storage_human": "83.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝓘𝓼𝓱 ☽ (@_.ishikaa._) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_.ishikaa._/",
+      "snippet": "60K Followers, 393 Following, 173 Posts - 𝓘𝓼𝓱 ☽ (@_.ishikaa._) on Instagram: \"🧿🕊 Kindness is power!♡ @_boujeecouture_\""
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "dollhouserobotics",
   "url": "https://huggingface.co/dollhouserobotics/G1-25-DOF-GPC",
   "created_at": "2026-11-21T07:32:08.000Z",
-  "updated_at": "2026-11-25T16:31:18.000Z",
+  "updated_at": "2026-11-25T18:41:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -21,7 +21,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

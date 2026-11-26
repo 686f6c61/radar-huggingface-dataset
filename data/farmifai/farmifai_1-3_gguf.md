@@ -2,80 +2,94 @@
 
 ## Resumen
 
-FarmifAI_1.3_GGUF es un modelo de lenguaje y visión desarrollado por FarmifAI, que ha sido ajustado y convertido al formato GGUF mediante la librería Unsloth. El repositorio incluye varias cuantizaciones (F16, Q8_0, Q5_K_M, Q4_K_M) y un archivo adicional en BF16 para el proyector multimodal, lo que permite su ejecución en entornos de inferencia como llama.cpp. El modelo tiene 772.845.888 parámetros totales, según los datos de safetensors, lo que lo sitúa en la categoría de modelos ligeros.
+FarmifAI 1.3 (GGUF) es la versión cuantizada del modelo FarmifAI 1.3, un modelo de lenguaje pequeño (SLM) afinado a partir de Qwen3.5-0.8B y orientado exclusivamente a responder preguntas agrícolas en español a partir de un contexto recuperado. Lo desarrolla FarmifAI y alimenta su aplicación móvil de asistencia offline para agricultores colombianos. Con 772.845.888 parámetros totales, su interés radica en que demuestra que un modelo por debajo de los 1.000 millones de parámetros puede ejecutarse en un teléfono móvil sin conexión y producir respuestas ancladas a una base de conocimiento.
 
-Las etiquetas de Hugging Face indican "qwen3_5" y "vision-language-model", lo que sugiere una posible base en la familia Qwen3.5 y capacidades multimodales, pero no se dispone de confirmación explícita en la información proporcionada. La documentación oficial es muy escasa: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas. Su relevancia radica en la posibilidad de desplegarlo en dispositivos con recursos limitados, aunque la falta de información impide evaluar su calidad de forma independiente.
+El modelo no es un chatbot de propósito general: está entrenado para trabajar en un pipeline de recuperación aumentada (RAG), de modo que la respuesta debe extraerse del bloque `<knowledge>` que se le inyecta y, si la información no está ahí, declarar que no la tiene. Esta restricción explícita reduce el riesgo de alucinación en dominios sensibles como el fitosanitario, aunque no lo elimina por completo.
 
-## Especificaciones técnicas
+La relevancia actual es doble. Por un lado, el despliegue en llama.cpp y herramientas compatibles (Ollama, LM Studio) con cuantizaciones de 542 MB a 1,56 GB permite inferencia en hardware muy modesto, incluidos dispositivos Android. Por otro, la licencia Apache 2.0 y el formato GGUF facilitan su integración en productos y en investigación sin fricción legal ni dependencia de infraestructura en la nube.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta de Hugging Face: qwen3_5) |
-| Parámetros totales | 772.845.888 |
-| Parámetros activos | No aplica (no se indica arquitectura MoE) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen3.5-0.8B); incluye proyector de visión mmproj en BF16 |
+| Parametros totales | 772.845.888 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | F16, Q8_0, Q5_K_M, Q4_K_M, y BF16 (mmproj) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (archivos .gguf) |
+| Tipos de cuantizacion | Q4_K_M (542 MB), Q5_K_M (593 MB), Q8_0 (834 MB), F16 (1,56 GB), BF16 para el proyector de visión |
+| Idiomas soportados | Español (etiqueta `language: es` en la model card); otros idiomas no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en formato de precisión completa, no especificado en la información disponible |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública detallada sobre la arquitectura del modelo, los datos de entrenamiento o el proceso de fine-tuning. El modelo fue finetuned y convertido a formato GGUF utilizando la librería Unsloth, una herramienta de código abierto para el ajuste fino eficiente de modelos de lenguaje. La presencia de un archivo `BF16_mmproj.gguf` sugiere que el modelo incluye un proyector multimodal, coherente con la etiqueta "vision-language-model". Sin embargo, no se han proporcionado detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO.
+La arquitectura es un transformer decoder-only derivado de Qwen3.5-0.8B, con 772.845.888 parámetros en precisión completa. El repositorio incluye además un proyector de visión en BF16 (`FarmifAI_1.3.BF16_mmproj.gguf`), heredado presumiblemente del modelo base multimodal, aunque la model card indica explícitamente que no es necesario para uso textual y recomienda lanzar llama.cpp con `--no-mmproj`.
+
+El ajuste fino se realizó con Unsloth sobre el dataset `FarmifAI/FarmifAI_dataset_1.3`, que no está descrito en detalle en la información disponible (número de tokens, composición y proporción de ejemplos sintéticos no disponibles). El entrenamiento sigue un formato conversacional muy rígido: un system prompt fijo en español que obliga a razonar el contexto dentro de `<reasoning>` y a emitir la respuesta final dentro de `<answer>`, con instrucción explícita de no inventar datos cuando la respuesta no aparezca en el contexto. No se documenta en la información proporcionada si hubo RLHF, DPO u otra etapa de alineación posterior al ajuste supervisado.
+
+La innovación técnica destacable no está en la arquitectura, sino en el diseño del prompt y del dataset: el modelo está condicionado para producir una traza de razonamiento separada de la respuesta final, lo que facilita el parseo defensivo en aplicaciones móviles y permite mostrar solo el bloque `<answer>` al usuario. La conversión a GGUF con Unsloth cubre cinco variantes de cuantización, desde 4 bits hasta precisión completa.
 
 ## Capacidades
 
-La documentación oficial no describe una lista exhaustiva de capacidades. A partir de los metadatos disponibles, se pueden inferir las siguientes características, que deben tomarse como no confirmadas:
-
-- Generación de texto conversacional (etiqueta "conversational").
-- Comprensión multimodal, probablemente visión y lenguaje (etiqueta "vision-language-model" y archivo mmproj).
-- Ejecución en entornos basados en llama.cpp gracias a la conversión a GGUF.
-- Compatibilidad con la sintaxis de plantillas Jinja (se recomienda `--jinja` en llama-cli).
-- No se han documentado capacidades específicas de tool calling, razonamiento avanzado o soporte de agentes.
-- No se ha documentado el soporte multilingüe.
+- Generación de texto en español con formato estructurado de razonamiento (`<reasoning>`) y respuesta (`<answer>`).
+- Respuesta anclada a contexto (grounded QA): extrae la información del bloque `<knowledge>` inyectado por el recuperador.
+- Declaración explícita de ausencia de información cuando el contexto no cubre la pregunta, por entrenamiento explícito.
+- Dominio especializado en agricultura colombiana: cultivos, plagas, enfermedades, manejo agronómico y recomendaciones de campo.
+- Ejecución offline y on-device: pensado para funcionar sin conectividad en dispositivos móviles.
+- Integración con pipelines RAG: el modelo asume que la recuperación la hace un sistema externo, no él.
+- Compatibilidad con la API OpenAI a través de `llama-server` (`/v1/chat/completions`).
+- Soporte de plantilla Jinja (`--jinja`) para el formateo de chat.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión operativa en texto ni audio en la información disponible.
 
 ## Casos de uso
 
-La información disponible no permite enumerar casos de uso concretos validados por el autor. No obstante, por sus características técnicas (modelo ligero, cuantizaciones GGUF y posible multimodalidad), se pueden considerar aplicaciones potenciales, aunque no verificadas:
-
-- Despliegue en dispositivos edge o equipos con GPU de consumo: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo podría ejecutarse con requisitos de memoria moderados.
-- Prototipado de asistentes conversacionales en local: mediante llama.cpp, se puede integrar en aplicaciones de chat sin depender de la nube.
-- Análisis de documentos con imágenes: si se confirma la capacidad de visión, podría utilizarse para describir o extraer información de imágenes en entornos offline.
-- Experimentación con fine-tuning: la cadena de conversión con Unsloth facilita iterar sobre versiones del modelo.
-- Evaluación de modelos multimodales ligeros: investigadores podrían comparar su rendimiento frente a otros modelos GGUF de tamaño similar.
-- Educación y demostraciones: el modelo puede servir como ejemplo de despliegue de un modelo multimodal en formato GGUF.
-
-Nota: estas aplicaciones son hipótesis basadas en las características del modelo y no están documentadas en la model card.
+- Asistencia agrícola offline en campo: la aplicación FarmifAI empaqueta el modelo Q4_K_M (542 MB) junto con una base de conocimiento local y responde consultas de agricultores sin cobertura de red, usando el contexto recuperado en el propio dispositivo.
+- Control fitosanitario guiado: ante una pregunta como la del ejemplo de la model card ("¿Cómo puedo controlar la broca en mi cultivo de café?"), el sistema recupera pasajes de una base agronómica y el modelo sintetiza la respuesta citando únicamente ese contexto, lo que permite auditar la fuente.
+- Extensión a nuevas regiones o cultivos mediante RAG: al no requerir reentrenamiento para cambiar el corpus, una cooperativa puede sustituir la base de conocimiento por documentación local (por ejemplo, normativa de una región distinta) y reutilizar el mismo GGUF.
+- Chatbot de atención en puntos de venta de insumos agrícolas: con temperatura 0,1 y 512 tokens máximos de salida, el modelo produce respuestas cortas y deterministas aptas para mostrador o terminal ligera.
+- Investigación sobre SLM en dominios restringidos: sirve como línea base reproducible (Apache 2.0, 772 M parámetros, formato GGUF) para estudiar fidelidad al contexto, tasas de abstención y calidad del razonamiento en modelos sub-1B.
+- Despliegue en hardware de bajo consumo: con Q4_K_M o Q5_K_M cabe en dispositivos con poca RAM y se sirve con `llama-server` o `ollama run hf.co/FarmifAI/FarmifAI_1.3_GGUF:Q4_K_M`, lo que habilita prototipos en Raspberry Pi o portátiles sin GPU.
+- Filtrado y resumen de documentación técnica agraria: el bloque `<reasoning>` puede registrarse para depuración del pipeline RAG y para evaluar si el recuperador está aportando pasajes relevantes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card remite al repositorio del modelo en precisión completa (`FarmifAI/FarmifAI_1.3`) para consultar "training details and results", pero esos resultados no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
-No se han publicado requisitos de hardware específicos. La información disponible no incluye valores oficiales de VRAM, latencia ni throughput. Las opciones de despliegue confirmadas incluyen:
-
-- llama.cpp, como se indica en el ejemplo de uso de la model card: `llama-cli -hf FarmifAI/FarmifAI_1.3_GGUF --jinja`.
-- Otras opciones como vLLM, Ollama o TGI no están documentadas para este modelo.
-
-El tamaño del repositorio (3.7 GB) sugiere que el modelo es ligero, pero se recomienda probar las cuantizaciones proporcionadas para determinar los requisitos reales.
+- VRAM/RAM estimada para inferencia: aproximadamente 0,6 GB con Q4_K_M, 0,7 GB con Q5_K_M, 1,0 GB con Q8_0 y 1,8 GB con F16, sumando el overhead del runtime de llama.cpp.
+- Cabe holgadamente en GPU de consumo: cualquier tarjeta con 4 GB o más (RTX 3050, RTX 4060, RTX 4090) ejecuta cualquiera de las cuantizaciones sin problemas; también en iGPU y CPU.
+- Despliegue en móvil y dispositivos embebidos: es el objetivo declarado del proyecto; la variante Q4_K_M de 542 MB está pensada para dispositivos con RAM limitada.
+- Opciones de despliegue: `llama-server` (con `--jinja --no-mmproj`), Ollama (`ollama run hf.co/FarmifAI/FarmifAI_1.3_GGUF:Q4_K_M`), LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no se mencionan en la información disponible para este repositorio.
+- GPUs de datacenter (A100, H100) no aportan ventaja relevante por el tamaño del modelo; el cuello de botella es la latencia de red y el recuperador, no el cómputo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El único modelo comparable conocido es FarmifAI/FarmifAI_1.2_GGUF, del que tampoco se tienen especificaciones técnicas en la información proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| FarmifAI 1.3 GGUF | 772.845.888 | No disponible | Apache 2.0 | GGUF | RAG agrícola en español, on-device |
+| Qwen3.5-0.8B (base) | ~0,8 B | No disponible en la información | No disponible en la información | Safetensors y derivados | Modelo generalista del que deriva |
+| FarmifAI 1.3 (precisión completa) | 772.845.888 | No disponible | Apache 2.0 | No especificado | Mismo modelo sin cuantizar, con detalles de entrenamiento |
+
+No se dispone de datos de benchmarks ni de especificaciones de contexto de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no está declarada, lo que genera incertidumbre sobre su uso comercial.
-- No hay información sobre sesgos, alucinaciones o limitaciones idiomáticas.
-- La arquitectura y los datos de entrenamiento son desconocidos, lo que impide evaluar la calidad del modelo de forma independiente.
-- No se han publicado benchmarks, por lo que no se puede comparar objetivamente su rendimiento con otros modelos.
-- La etiqueta "vision-language-model" no está respaldada por una descripción detallada de las capacidades visuales en la model card.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que el modelo no ha sido ampliamente probado por la comunidad.
+- El propio autor advierte que el modelo puede cometer errores o añadir detalles que no están en el contexto; las recomendaciones sobre agroquímicos, dosis y plazos de seguridad deben verificarse y no sustituyen el consejo profesional.
+- La calidad de la respuesta depende directamente de la calidad del contexto recuperado: un recuperador deficiente degrada la salida aunque el modelo sea correcto.
+- Sin el system prompt exacto de entrenamiento, el modelo no sigue el formato esperado de `<reasoning>`/`<answer>`; en Ollama y LM Studio hay que configurarlo manualmente.
+- El parseo de las etiquetas debe hacerse de forma defensiva, ya que el modelo puede omitirlas.
+- Modelo de dominio restringido: no es un chatbot de propósito general y su uso fuera del ámbito agrícola en español no está validado.
+- Idiomas: solo se declara español; el rendimiento en otros idiomas no está documentado.
+- Longitud de contexto no documentada, lo que impide planificar el tamaño de los pasajes recuperados con precisión.
+- Sesgos conocidos: no documentados en la información disponible; cabe esperar sesgos derivados del corpus colombiano y del dataset de ajuste.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia; no se especifican restricciones adicionales.
+- El proyector de visión incluido no debe interpretarse como capacidad multimodal validada para texto; la model card recomienda desactivarlo.
 
 ## Enlaces
 
-- Modelo GGUF: https://huggingface.co/FarmifAI/FarmifAI_1.3_GGUF
-- Modelo base (según model card): https://huggingface.co/FarmifAI/FarmifAI_1.3
-- Perfil de FarmifAI: https://huggingface.co/FarmifAI
-- Librería Unsloth: https://github.com/unslothai/unsloth
+- Repositorio GGUF en Hugging Face: https://huggingface.co/FarmifAI/FarmifAI_1.3_GGUF
+- Modelo en precisión completa: https://huggingface.co/FarmifAI/FarmifAI_1.3
+- Dataset de ajuste: https://huggingface.co/datasets/FarmifAI/FarmifAI_dataset_1.3
+- Unsloth (herramienta de ajuste y conversión): https://github.com/unslothai/unsloth

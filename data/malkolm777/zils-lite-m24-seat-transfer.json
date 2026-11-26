@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 1707072248,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 5131935606,
+  "storage_human": "5.1 GB",
   "context_length": null,
   "base_model": "malkolm777/zils-lite-l22-correct-attn",
   "formats": [

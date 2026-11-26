@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Shr-yan/Summify",
+  "slug": "shr-yan-summify",
+  "author": "Shr-yan",
+  "url": "https://huggingface.co/Shr-yan/Summify",
+  "created_at": "2026-11-26T11:04:41.000Z",
+  "updated_at": "2026-11-26T11:14:31.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

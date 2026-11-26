@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "bshang17/smt-meta-case1-n20-hq_safety",
+  "slug": "bshang17-smt-meta-case1-n20-hq_safety",
+  "author": "bshang17",
+  "url": "https://huggingface.co/bshang17/smt-meta-case1-n20-hq_safety",
+  "created_at": "2026-11-26T08:15:23.000Z",
+  "updated_at": "2026-11-26T08:17:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25368800111,
+  "storage_human": "25.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

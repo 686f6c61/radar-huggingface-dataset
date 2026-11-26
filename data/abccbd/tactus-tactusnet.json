@@ -5,7 +5,7 @@
   "author": "abccbd",
   "url": "https://huggingface.co/abccbd/TACTUS-TactusNet",
   "created_at": "2026-11-23T20:28:03.000Z",
-  "updated_at": "2026-11-23T20:29:01.000Z",
+  "updated_at": "2026-11-25T16:43:55.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": "keypoint-detection",
@@ -16,11 +16,11 @@
     "video-understanding",
     "keypoint-detection",
     "temporal-localization",
-    "dataset:hding2455/surgical-action-affordance",
+    "dataset:hding2455/TACTUS",
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Freddierui/TACTUS-TactusNet",
+  "renamed_at": "2026-11-26T06:51:59.810Z",
   "benchmarks": [],
   "sources": []
 }

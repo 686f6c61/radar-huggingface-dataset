@@ -2,116 +2,108 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo nuevo, sino una cuantización de un solo archivo GGUF del modelo Qwen3.8-Flash-Next (~179.500 millones de parámetros totales), empaquetada por el usuario ansoncat para poder ejecutarlo con 262.144 tokens de contexto en un MacBook de 64 GB de memoria unificada. Parte del `Qwen3.8-Flash-Next-Q2.gguf` publicado por antirez y aplica tres pasos adicionales con pérdida: recomprime los expertos de proyección *down* de Q2_K a IQ2_XXS, baja las proyecciones densas de Q8_0 a Q4_K y convierte los tensores de hiper-conexión de F16 a Q8_0. El resultado ocupa unos 139,4 GB en disco, de los cuales alrededor de 38 GiB de pesos se mantienen en memoria (el resto, principalmente la tabla de n-gramas, permanece en el SSD).
+Qwen3.8-Flash-Next en formato GGUF es una cuantización agresiva de múltiples etapas del modelo base Qwen3.8-Flash-Next, publicada por el usuario ansoncat para ejecutar el modelo con una ventana de contexto de 262 144 tokens en un MacBook de 64 GB con chip Apple Silicon. El artefacto parte de la cuantización Q2 de antirez y aplica tres pasos adicionales con pérdida: re-cuantización de los expertos de down-projection a filas IQ2_XXS de 640 elementos, conversión de las proyecciones densas de Q8_0 a Q4_K y compresión de los tensores de hiperconexión de bajo rango de F16 a Q8_0. Con 179 551 050 368 parámetros totales y un repositorio de 139,4 GB, el objetivo declarado es caber en la memoria unificada de un portátil de gama alta sin renunciar al contexto completo.
 
-Su relevancia es práctica: demuestra que un modelo de escala ~180B de arquitectura MoE puede servir decodificación a 45-57 tokens/s y prefill a ~550 tokens/s en hardware de consumo Apple Silicon, con contexto completo de 262K y sin GPU dedicada. El precio es una cuantización muy agresiva (partiendo ya de Q2) y una dependencia total de un fork privado del motor de inferencia: el archivo usa un tipo de tensor propio y proyecciones densas Q4_K que ni el ds4 upstream ni llama.cpp pueden cargar.
+La relevancia de esta ficha no está en el modelo en sí, sino en la ingeniería de despliegue: el autor documenta de forma reproducible cada paso de cuantización y cada optimización del motor ds4, con mediciones de memoria cableada y velocidad de decodificación y prefill en hardware concreto. Es, por tanto, un caso de estudio de cuantización extrema orientada a hardware de consumo y de fork de un runtime de inferencia para Metal.
 
-Es, por tanto, un artefacto para investigación y uso local en Apple Silicon, no una distribución lista para producción general. La model card documenta de forma inusualmente detallada el proceso de conversión (reproducible byte a byte) y las mediciones de memoria y velocidad paso a paso, lo que lo convierte en una referencia útil sobre el coste real de la cuantización extrema en MoE grandes.
+Conviene subrayar que el archivo no es cargable por llama.cpp ni por la versión upstream de ds4: utiliza un tipo de tensor privado y proyecciones densas Q4_K que solo entiende la rama `kv-grow-up` del fork de ansoncat. La licencia declarada es qwen-community-1.0, con la etiqueta `license: other` en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con expertos compartidos, cabeza de prediccion multi-token (MTP) y tensores de hiper-conexion (`hc_attn`, `hc_ffn`) por capa; el detalle completo de la arquitectura del modelo base no esta disponible en la informacion proporcionada |
-| Parametros totales | 179.551.050.368 (~179,5 mil millones, dato de safetensors del modelo base) |
+| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; el README menciona capa MTP, expertos compartidos de 640 elementos e hiperconexiones por capa) |
+| Parametros totales | 179 551 050 368 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (262K), verificado en el fork ds4 con `--ctx 262144` |
-| Tipos de cuantizacion | Mezcla heterogenea: expertos *down* en IQ2_XXS (filas de 640 canales), proyecciones densas en Q4_K, tensores `hc_*` en Q8_0, capa MTP y shared-expert down en Q8_0, `output_hc_*` y cabeza MTP en F16 (punto de partida: Q2_K) |
+| Longitud de contexto | 262 144 tokens (configurado con `--ctx 262144`) |
+| Tipos de cuantizacion | Q2_K base con expertos down en IQ2_XXS, proyecciones densas en Q4_K, hiperconexiones en Q8_0, MTP y cabeza de salida en F16/Q8_0; proyector de visión Q8_0 aparte |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF, archivo unico `Qwen3.8-Flash-Next-Q2-IQ2down-Q4Kdense-Q8hc.gguf` (repo de 139,4 GB) |
+| Licencia | qwen-community-1.0 (metadatos: `license: other`) |
+| Formato de pesos | GGUF (un único archivo de aproximadamente 139 GB más un `mmproj` opcional para visión) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el entrenamiento del modelo base (numero de tokens, composicion del dataset, uso de RLHF/DPO), por lo que esos datos deben considerarse no disponibles. Lo que si se deduce de la nomenclatura de tensores del archivo es una arquitectura de mezcla de expertos con expertos compartidos, una cabeza de prediccion multi-token (MTP, activable con `--mtp`) y modulos de hiper-conexion de bajo rango por capa, ademas de un componente denominado *indexer* con ring buffer en el motor. No se dispone de confirmacion oficial sobre si la atencion es completa, lineal o hibrida.
+No se dispone de información sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento en la documentación proporcionada. El README del artefacto permite inferir algunos componentes: existe una capa MTP (multi-token prediction), expertos con proyecciones down de 640 elementos de ancho, un conjunto de expertos compartidos y tensores de hiperconexión de bajo rango por capa (`blk.*.hc_{attn,ffn}_{down,up}`), lo que apunta a una arquitectura de mezcla de expertos con mecanismos de conexión residual jerárquica. También se menciona un indexador con búfer en anillo y puntuaciones calculadas por slices, compatible con atención de contexto largo, aunque no se detalla el mecanismo exacto.
 
-La innovacion tecnica documentada esta en el proceso de cuantizacion, no en el modelo. El autor aplica tres transformaciones secuenciales y deterministas sobre el Q2 de antirez: (1) `IQ2down`, que recuantiza los expertos de proyeccion *down* desde los pesos BF16 originales usando la imatrix de Unsloth, en filas de 640 canales con formato IQ2_XXS; (2) `Q4Kdense`, que pasa las proyecciones densas de Q8_0 a Q4_K con redondeo al mas cercano, preservando la capa MTP y el shared-expert down de 640 canales en Q8_0; y (3) `Q8hc`, que comprime los tensores de hiper-conexion de F16 a Q8_0 manteniendo `output_hc_*` y la cabeza MTP en F16. Cada paso es reproducible byte a byte con los scripts `qwen4_down_iq2.py`, `qwen4_dense_q4k.py` y `qwen4_hc_q8.py` del fork, aunque requiere descargar ~75 GiB de shards BF16 e imatrix y space de disco para archivos intermedios de 130-140 GiB.
+El "entrenamiento" de este artefacto es en realidad un pipeline de cuantización determinista de tres pasos reproducido byte a byte: (1) los expertos de down-projection pasan de Q2_K a filas IQ2_XXS de 640 elementos re-cuantizadas desde los pesos BF16 originales con la imatrix de Unsloth; (2) las proyecciones densas pasan de Q8_0 a Q4_K por redondeo al más cercano, manteniendo la capa MTP y el down de expertos compartidos en Q8_0; (3) los tensores de hiperconexión de bajo rango pasan de F16 a Q8_0, dejando `output_hc_*` y la cabeza MTP en F16. El paso 1 descarga aproximadamente 75 GiB de shards BF16 y la imatrix; cada etapa genera un archivo de 130-140 GiB y requiere 16 GiB libres adicionales.
 
 ## Capacidades
 
-- Generacion de texto conversacional en un unico archivo GGUF; el repositorio esta etiquetado como `conversational`.
-- Contexto largo real de hasta 262.144 tokens, con decodificacion a 35 tokens/s y prefill a ~545 tokens/s medidos con un prompt de 260K tokens.
-- Programacion y trabajo agentico: la model card reporta 9/9 en tres fixtures × tres ejecuciones con Claude Code, con una reduccion del 5% en tiempo de pared respecto al archivo anterior.
-- Prediccion multi-token (MTP) para decodificacion especulativa, activada con `--mtp` en el servidor ds4.
-- Vision opcional: el archivo no incluye el proyector; se puede anadir `mmproj-Qwen3.8-Flash-Next-Q8_0.gguf` de `ggml-org/Qwen3.8-Flash-Next-GGUF` con `--vision`.
-- Servidor HTTP local (`ds4-server`) con el tag `endpoints_compatible`, que sugiere compatibilidad con endpoints de estilo OpenAI; la model card no detalla el grado de compatibilidad.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Capacidades multilingues: no disponibles (no se declara lista de idiomas).
-- Modo de razonamiento explicito: la model card mide prompts "with thinking", lo que indica que el modelo base soporta un modo de pensamiento, aunque no se detalla su funcionamiento.
+- Generación de texto conversacional multi-turno, según la etiqueta `conversational` del repositorio.
+- Soporte de visión mediante un proyector multimodal externo (`mmproj-Qwen3.8-Flash-Next-Q8_0.gguf`, opcional y no incluido).
+- Decodificación con predicción multi-token (MTP) activable con el flag `--mtp`, que el autor usa en todas las mediciones finales.
+- Razonamiento con modo "thinking" implícito: el README reporta velocidades distintas para prompts cortos con y sin thinking (45 frente a 57 tokens/s).
+- Contexto largo de hasta 262 144 tokens, con caché KV que crece de forma incremental en la rama `kv-grow-up`.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que sugiere exposición mediante API HTTP en el servidor ds4.
+- Capacidades de código: se midió un prompt de código de 16K tokens (47 tokens/s de decodificación, 564 de prefill).
+- No se documentan tool calling, function calling ni capacidades de agente multi-paso.
 
 ## Casos de uso
 
-- Asistencia de programacion agentica en local: con 262K de contexto y 51 tokens/s de decodificacion se puede mantener una sesion de agente tipo Claude Code sobre un repositorio mediano sin enviar codigo a la nube; el autor valida 9/9 tareas en sus fixtures.
-- Analisis de repositorios completos: el prefill de ~563 tokens/s con prompts de 32K permite indexar y consultar varios modulos a la vez dentro de la misma ventana, util para revisiones de codigo y busqueda de dependencias cruzadas.
-- Procesamiento de documentacion extensa y expedientes largos en un portatil: contratos, normativas o transcripciones de cientos de miles de tokens caben en una sola ventana, con la ventaja de que los datos no salen del equipo.
-- Prototipado y evaluacion de modelos de escala ~180B sin GPU dedicada: util para investigadores que quieran medir comportamiento de un MoE grande en hardware de consumo antes de solicitar clúster.
-- Servidor personal de un solo usuario: `ds4-server` con `--ctx` ajustado sirve como backend local para herramientas de escritura, resumen o Q&A sobre corpus propios.
-- Investigacion en cuantizacion: el pipeline determinista y las mediciones por etapa (memoria cableada y tokens/s antes/despues de cada parche) sirven como banco de pruebas para estudiar el compromiso entre tamano y calidad en MoE.
-- Experimentos de contexto largo: los 262K tokens con cache de atencion que crece dinamicamente permiten estudiar recuperacion de informacion en ventanas muy amplias en una sola maquina.
+- Análisis de repositorios completos en local: con 262K tokens de contexto se puede cargar un conjunto amplio de archivos fuente en un único prompt y pedir revisiones, resúmenes o detección de inconsistencias sin salir del portátil, lo que resulta adecuado para código propietario que no debe enviarse a la nube.
+- Asistencia de programación offline en Apple Silicon: el modelo decodifica a 47-57 tokens/s en un M5 Pro de 64 GB, suficiente para autocompletado interactivo y explicación de fragmentos en un IDE, con la ventaja de que ningún dato abandona la máquina.
+- Procesamiento de documentos largos (contratos, informes, expedientes): la ventana de 262K tokens permite ingerir documentos de cientos de páginas en una sola pasada y hacer preguntas sobre ellos, con la matización de que la cuantización Q2/IQ2 degrada la fidelidad en comparación con el modelo original.
+- Transcripción y descripción de imágenes con el proyector multimodal: descargando el `mmproj` Q8_0 de ggml-org se pueden hacer consultas imagen-texto en local, útil para catalogar capturas o extraer texto de diagramas.
+- Prototipado de agentes conversacionales con contexto largo: el servidor ds4 expone endpoints compatibles, de modo que se puede levantar una API local para experimentar con diálogos multi-turno extensos antes de decidir si se migra a infraestructura con GPU.
+- Evaluación de técnicas de cuantización extrema: el pipeline reproducible byte a byte y las tablas de memoria y velocidad convierten este repositorio en material de referencia para investigadores que quieran medir el impacto de IQ2_XXS, Q4_K y Q8_0 en calidad y rendimiento sobre Metal.
+- Demostración de inferencia de un modelo de 179B en hardware de consumo: útil para docencia o para justificar decisiones de arquitectura sobre memoria unificada frente a VRAM discreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Lo que si se publica son mediciones de rendimiento del motor en un M5 Pro de 64 GB con el fork ds4:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El README sí incluye mediciones de sistema en un M5 Pro de 64 GB con la rama `kv-grow-up` de ds4:
 
-| Escenario | Decodificacion (tokens/s) | Prefill (tokens/s) |
-|---|---|---|
-| Prompt de 8K tokens | 51 | 550 |
-| Prompt de 32K tokens | 51 | 563 |
-| Prompt de codigo de 16K tokens | 47 | 564 |
-| Prompts cortos (codigo / prosa / con thinking) | 57 / 45 / 45 | no disponible |
-| Contexto completo de 262K (prompt de 260K, medido antes de c3b08cb) | 35 | 545 (media del prompt completo) |
+| Metrica | Valor |
+|---|---|
+| Memoria cableada, conversacion de ~9K tokens | ~38 GiB (41,4 GiB sobre linea base inactiva de 2,65) |
+| Memoria cableada, contexto completo de 262K | 44,1 GiB (44,74 GiB en comprobación de la misma sesión) |
+| Memoria inactiva con modelo cargado (`DS4_METAL_NO_RESIDENCY=1`) | 4,0 GiB (frente a 42,2 sin el flag) |
+| Decodificacion, prompt de 8K tokens | 51 tokens/s |
+| Decodificacion, prompt de 32K tokens | 51 tokens/s |
+| Decodificacion, prompt de codigo de 16K tokens | 47 tokens/s |
+| Decodificacion, prompts cortos (codigo / prosa / con thinking) | 57 / 45 / 45 tokens/s |
+| Decodificacion, contexto completo de 262K (prompt de 260K) | 35 tokens/s |
+| Prefill, prompt de 8K / 32K / 16K codigo | 550 / 563 / 564 tokens/s |
+| Prefill, contexto completo de 262K | 545 tokens/s de media |
 
-Memoria cableada del sistema completo con `--ctx 262144 --prefill-chunk 1024`:
-
-| Configuracion | Conversacion de ~9K tokens | Contexto completo de 262K |
-|---|---|---|
-| ds4 upstream + Q2 oficial | KV de 262K cableada en cuanto se usa | 55,0-55,7 GiB |
-| Version final de este archivo | ~38 GiB | 44,1 GiB (41,4 GiB sobre una linea base idle de 2,65 GiB) |
-
-Datos adicionales: en reposo (modelo cargado, sin peticion) el consumo baja de 42,2 a 4,0 GiB con `DS4_METAL_NO_RESIDENCY=1`; el paso de `IQ2down` a este archivo mejora la decodificacion en contexto largo un 10-13% (8K: 41,0 → 46,1; 32K: 40,7 → 44,8; codigo 16K: 37,4 → 42,2) sin cambios en prefill; usar `--prefill-chunk 1024` en lugar de 2048 cuesta ~10% de prefill a cambio de ~1 GiB de memoria.
+El autor advierte de que la velocidad de la máquina varía entre sesiones y que las comparaciones solo son válidas dentro de la misma sesión. Sin `DS4_QWEN4_HC_Q8_GEMM=1` el prefill es un 62 % más lento con este archivo.
 
 ## Requisitos de hardware
 
-- Memoria: 64 GB de memoria unificada en Apple Silicon; el autor usa un M5 Pro. Con contexto completo de 262K el uso cableado es de 44,1 GiB; en conversaciones normales, alrededor de 38 GiB de pesos en memoria.
-- Ajuste obligatorio del limite de memoria de GPU: `sudo sysctl iogpu.wired_limit_mb=57344` para poder cablear el contexto completo. Sin este ajuste hay que reducir `--ctx`.
-- Almacenamiento: el archivo pesa ~139,4 GB y la mayor parte (tabla de n-gramas) se lee del SSD en lugar de residir en memoria; se recomienda SSD rapido.
-- Espacio temporal: el pipeline de conversion necesita 16 GiB libres adicionales tras cada paso y maneja archivos intermedios de 130-140 GiB.
-- GPU compatibles: unicamente Apple Silicon con Metal. No hay ruta documentada para CUDA (A100, H100, RTX 4090) ni para GPUs de consumo x86.
-- Motor de inferencia: exclusivamente el fork `ansoncat/ds4`, rama `kv-grow`. Ni llama.cpp ni el ds4 upstream pueden cargar el archivo por el tipo de tensor privado y las proyecciones densas Q4_K. No hay soporte documentado para vLLM, TGI, Ollama ni llama.cpp.
-- Variables de entorno necesarias: `DS4_METAL_NO_RESIDENCY=1` y `DS4_QWEN4_HC_Q8_GEMM=1` (sin la segunda, el prefill es un 62% mas lento).
-- Throughput esperado: 45-57 tokens/s de decodificacion con prompts cortos y hasta 32K, 35 tokens/s a 262K; prefill de 545-564 tokens/s. La GPU esta ocupada ~96% de un paso de decodificacion en el equipo de prueba, por lo que no hay margen para ocultar latencia de SSD.
-- Vision: requiere descargar aparte el proyector `mmproj-Qwen3.8-Flash-Next-Q8_0.gguf`.
+- VRAM/memoria unificada estimada: unos 38 GiB de pesos residentes en memoria para conversaciones normales y 44,1 GiB con el contexto completo de 262K; el resto del archivo (la tabla de n-gramas) permanece en el SSD.
+- Hardware de referencia: MacBook con M5 Pro y 64 GB de memoria unificada. El contexto completo exige elevar el límite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=57344`.
+- En Macs de 64 GB se recomienda `--prefill-chunk 1024` si no se aplica el ajuste de wired limit; con 2048 el pico de prefill añade 0,6-1,0 GiB y hasta 45,2 GiB en contexto completo.
+- No cabe en GPUs de consumo con 24 GB de VRAM (RTX 4090) ni en configuraciones de 32 GB; requiere al menos 48 GB de memoria unificada o VRAM para el contexto completo, y el motor solo está portado a Metal.
+- No es desplegable con llama.cpp, Ollama, vLLM ni TGI: el archivo usa un tipo de tensor privado y proyecciones densas Q4_K que solo carga el fork `ansoncat/ds4`, rama `kv-grow-up`, compilado con `make ds4-server`.
+- Throughput medido: 51 tokens/s de decodificación y 550-564 tokens/s de prefill en prompts de 8K-32K; 35 tokens/s de decodificación en contexto completo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad y requisitos |
-|---|---|---|---|---|---|
-| Este archivo (`ansoncat/...-64gb-mac-gguf`) | ~179,5B totales | 262.144 | Q2 base + IQ2_XXS + Q4_K + Q8_0 | qwen-community-1.0 | Fork ds4 `kv-grow`; 64 GB Apple Silicon; 7 descargas, 0 likes |
-| `antirez/qwen3.8-flash-next-gguf` (`Qwen3.8-Flash-Next-Q2.gguf`) | ~179,5B totales | 262.144 (con `--prefill-chunk 1024`) | Q2 | no disponible en la informacion | ds4 upstream; ~55 GiB cableados a contexto completo |
-| `ggml-org/Qwen3.8-Flash-Next-GGUF` (GGUF oficial) | ~179,5B totales | no disponible | Q8_0 en el proyector de vision; otras variantes no disponibles | no disponible en la informacion | Distribucion oficial; incluye `mmproj-Qwen3.8-Flash-Next-Q8_0.gguf`; requiere ds4 |
-| Alternativas de otros fabricantes con ~180B | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks del modelo base ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a aspectos de despliegue y formato.
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de otros fabricantes en la informacion proporcionada, por lo que no es posible establecer una comparacion de calidad.
+| Modelo | Parametros | Contexto | Formato | Licencia | Despliegue |
+|---|---|---|---|---|---|
+| ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf | 179,5 B | 262 144 | GGUF modificado | qwen-community-1.0 | Solo fork ds4, Metal |
+| antirez/qwen3.8-flash-next-gguf (Q2) | 179,5 B | 262 144 | GGUF estándar | qwen-community-1.0 | ds4 upstream y llama.cpp |
+| ggml-org/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF estándar | qwen-community-1.0 | llama.cpp y derivados |
+
+La diferencia práctica frente a las otras dos opciones es doble: este artefacto reduce el uso de memoria cableada en contexto completo (de 55,0-55,7 GiB en upstream con Q2 oficial a 44,1 GiB) a cambio de perder portabilidad y algo de calidad por las tres etapas adicionales de cuantización con pérdida.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion acumulativamente agresiva: se parte de un Q2 y se aplican tres pasos con perdida adicionales. No se publica perplejidad ni evaluacion de calidad, por lo que la degradacion frente al BF16 es desconocida y potencialmente significativa en razonamiento y matematicas.
-- Compatibilidad restringida: el archivo solo carga en el fork `ansoncat/ds4` rama `kv-grow`. Cualquier actualizacion del formato o del motor puede romper la carga, y no hay soporte de la via estandar llama.cpp.
-- Dependencia de un unico mantenedor y de una rama concreta (`kv-grow`), con requisitos de variables de entorno que, si se omiten, degradan el rendimiento sin aviso claro.
-- Plataforma unica: Metal / Apple Silicon. No hay soporte CUDA documentado, lo que excluye su uso en servidores con A100/H100 y en la mayoria de infraestructuras cloud.
-- Vision no incluida: hay que descargar el proyector por separado desde otro repositorio, con el riesgo de desalineacion de versiones.
-- Idiomas no declarados: no hay lista oficial de idiomas soportados ni evaluacion multilingue en la informacion disponible.
-- Licencia `qwen-community-1.0` (etiquetada como `other`): es una licencia de comunidad de Qwen, no una licencia permisiva tipo Apache 2.0 o MIT. Debe revisarse el archivo `LICENSE` del repositorio antes de cualquier uso comercial; las condiciones concretas (umbrales de usuarios, atribucion, restricciones) no estan disponibles en la informacion proporcionada.
-- Riesgo de alucinacion no cuantificado: al no haber evaluacion publicada, no se puede estimar la tasa de errores facticos ni su comportamiento en dominios especializados.
-- Madurez baja: 7 descargas y 0 likes en el momento de la consulta, con una unica sesion de medicion por parte del autor; los propios numeros de velocidad varian entre sesiones segun reconoce la model card.
-- Ajuste manual del sistema necesario (`iogpu.wired_limit_mb`), que afecta a toda la maquina y no solo al proceso de inferencia.
-- Los datos de medicion corresponden a un unico equipo (M5 Pro de 64 GB); el rendimiento en otros chips de la familia M no esta documentado.
+- Cuantización con pérdida acumulada: sobre una base Q2 se aplican IQ2_XXS en expertos, Q4_K en proyecciones densas y Q8_0 en hiperconexiones; la degradación de calidad respecto al modelo BF16 no está cuantificada en la documentación.
+- Portabilidad nula: el archivo no carga en llama.cpp ni en ds4 upstream; requiere el fork de ansoncat y la variable `DS4_QWEN4_HC_Q8_GEMM=1` para un rendimiento de prefill aceptable.
+- Solo Metal y Apple Silicon: no hay soporte documentado para CUDA, ROCm ni CPU.
+- Riesgo de alucinación: no evaluado ni documentado; en un modelo cuantizado a 2 bits es esperable un aumento de errores factuales, especialmente en tareas de razonamiento y matemáticas.
+- Idiomas soportados no disponibles: no se puede confirmar el comportamiento multilingüe tras la cuantización.
+- Licencia qwen-community-1.0: es necesario revisar el archivo `LICENSE` del repositorio antes de cualquier uso comercial, ya que los metadatos indican `license: other`.
+- El proyector de visión no está incluido y debe descargarse por separado desde ggml-org; sin él, las capacidades multimodales no están disponibles.
+- Requiere ajustes del sistema operativo (límite de memoria cableada) para el contexto completo, lo que complica el despliegue automatizado.
+- El repositorio tiene 226 descargas y 2 likes, con validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf
-- Modelo base de la cuantizacion: https://huggingface.co/antirez/qwen3.8-flash-next-gguf
-- GGUF oficial y proyector de vision: https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF
-- Pesos BF16 de referencia citados en el proceso de conversion: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Fork del motor de inferencia (rama `kv-grow`, ver `FORK.md`): https://github.com/ansoncat/ds4
-- Resultados de busqueda web: no se han encontrado resultados relevantes sobre este modelo; las busquedas devolvieron unicamente contenido no relacionado, por lo que no se incluye ningun enlace adicional.
+- Modelo base cuantizado: https://huggingface.co/antirez/qwen3.8-flash-next-gguf
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- GGUF oficial de ggml-org (incluye el proyector `mmproj-Qwen3.8-Flash-Next-Q8_0.gguf`): https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF
+- Fork del motor de inferencia: https://github.com/ansoncat/ds4 (rama `kv-grow-up`, detalles en `FORK.md`)

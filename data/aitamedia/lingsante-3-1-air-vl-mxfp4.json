@@ -5,7 +5,7 @@
   "author": "aitamedia",
   "url": "https://huggingface.co/aitamedia/LingSante-3.1-air-VL-MXFP4",
   "created_at": "2026-11-23T07:05:04.000Z",
-  "updated_at": "2026-11-23T07:16:03.000Z",
+  "updated_at": "2026-11-25T19:51:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,6 +17,8 @@
     "image-text-to-text",
     "conversational",
     "custom_code",
+    "base_model:inclusionAI/LingSante-3.1-air-VL",
+    "base_model:quantized:inclusionAI/LingSante-3.1-air-VL",
     "license:mit",
     "8-bit",
     "fp8",
@@ -30,7 +32,7 @@
   "storage_bytes": 69602247257,
   "storage_human": "69.6 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "inclusionAI/LingSante-3.1-air-VL",
   "formats": [
     "safetensors"
   ],

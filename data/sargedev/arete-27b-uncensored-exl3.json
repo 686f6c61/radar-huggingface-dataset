@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SargeDev/JEV-27B-VL-Uncensored-EXL3 · Hugging Face",
-      "url": "https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-EXL3",
-      "snippet": "SargeDev / JEV-27B-VL-Uncensored-EXL3 Like 0 Text Classification Safetensors SargeDev/jev-distill-corpus-v3 exllamav3 qwen3_5 decision-model system-one typed-decisions uncensored abliterated calibrated-probabilities noul choice score qwen3.8 jev jev-1.13-teacher exl3 3-bit License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Lineage & credits What this is ..."
-    },
-    {
-      "title": "SargeDev/JEV-27B-Uncensored · Hugging Face",
-      "url": "https://huggingface.co/SargeDev/JEV-27B-Uncensored",
-      "snippet": "The first uncensored member of the JEV 27B family. The AutoTrust System-1 decision block (calibrated typed decisions: yes/no · choice 2-256 · score 0-5, one forward pass) has been merged into huihui's abliterated Qwen3.8-27B backbone, so the decision engine answers WITHOUT the stock model's refusal wiring."
-    }
-  ]
+  "sources": []
 }

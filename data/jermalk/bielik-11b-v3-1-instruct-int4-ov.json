@@ -5,7 +5,7 @@
   "author": "jermalk",
   "url": "https://huggingface.co/jermalk/Bielik-11B-v3.1-Instruct-int4-ov",
   "created_at": "2026-11-25T13:16:06.000Z",
-  "updated_at": "2026-11-25T13:35:35.000Z",
+  "updated_at": "2026-11-25T22:41:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
